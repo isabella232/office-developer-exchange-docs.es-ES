@@ -1,0 +1,60 @@
+---
+title: EmwsUrl (POX)
+manager: sethgros
+ms.date: 09/17/2015
+ms.audience: Developer
+ms.topic: reference
+localization_priority: Normal
+ms.assetid: cad0fa91-8d75-4dde-a484-518c837ae063
+description: El elemento EmwsUrl especifica la dirección URL de la instancia de extremo procedimientos de Exchange Web Services (EWS) para un usuario habilitado para correo.
+ms.openlocfilehash: d8905d098c9978c3413f67e9a1b2443a52fb0d1f
+ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19764386"
+---
+# <a name="emwsurl-pox"></a>EmwsUrl (POX)
+
+El elemento **EmwsUrl** especifica la dirección URL de la instancia de extremo procedimientos de Exchange Web Services (EWS) para un usuario habilitado para correo. 
+  
+- [Detección automática (POX)](autodiscover-pox.md) 
+- [Respuesta (POX)](response-pox.md) 
+- [Cuenta (POX)](account-pox.md) 
+- [Protocolo (POX)](protocol-pox.md) 
+- [EmwsUrl (POX)](emwsurl-pox.md)
+  
+```XML
+<EmwsUrl/>
+```
+
+## <a name="attributes-and-elements"></a>Atributos y elementos
+
+Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+  
+### <a name="attributes"></a>Atributos
+
+Ninguno.
+  
+### <a name="child-elements"></a>Elementos secundarios
+
+Ninguno.
+  
+### <a name="parent-elements"></a>Elementos principales
+
+|**Element**|**Descripción**|
+|:-----|:-----|
+|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente en el equipo que ejecuta Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.  <br/> |
+   
+## <a name="text-value"></a>Valor de texto
+
+El valor de texto representa la dirección URL del extremo de EWS para el usuario. Es equivalente al elemento [EwsUrl (POX)](ewsurl-pox.md) . 
+  
+## <a name="remarks"></a>Notas
+
+El elemento **EmwsUrl** es un elemento secundario opcional del elemento **Protocol** . 
+  
+## <a name="see-also"></a>Ver también
+
+- [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+

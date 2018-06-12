@@ -1,0 +1,44 @@
+---
+title: Descripción (MasterMailboxType)
+manager: sethgros
+ms.date: 11/16/2014
+ms.audience: Developer
+ms.topic: reference
+ms.prod: office-online-server
+localization_priority: Normal
+ms.assetid: 22d61562-a20e-40f1-a809-7e4c16757520
+description: Elemento Description (MasterMailboxType) está pensado para uso interno únicamente.
+ms.openlocfilehash: 3de585dbee8559c048599efdf76f8b7535e8c160
+ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19764135"
+---
+# <a name="description-mastermailboxtype"></a>Descripción (MasterMailboxType)
+
+Elemento **Description (MasterMailboxType)** está pensado para uso interno únicamente. 
+
+## <a name="attributes-and-elements"></a>Atributos y elementos
+
+Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+  
+### <a name="attributes"></a>Atributos
+
+Ninguno.
+  
+### <a name="child-elements"></a>Elementos secundarios
+
+Ninguno.
+  
+### <a name="parent-elements"></a>Elementos principales
+
+Ninguno.
+  
+## <a name="remarks"></a>Observaciones
+
+Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).
+  
+El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
+  
+

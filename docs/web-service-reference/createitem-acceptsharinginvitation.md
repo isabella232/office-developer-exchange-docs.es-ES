@@ -1,0 +1,181 @@
+---
+title: CreateItem (AcceptSharingInvitation)
+manager: sethgros
+ms.date: 09/17/2015
+ms.audience: Developer
+ms.topic: reference
+ms.prod: office-online-server
+localization_priority: Normal
+api_name:
+- CreateItem
+api_type:
+- schema
+ms.assetid: 710c893a-3037-4f04-b336-aefedd36c406
+description: La operación CreateItem se usa para aceptar una invitación para compartir calendario de otro usuario o datos de los contactos.
+ms.openlocfilehash: 993ef0402e624af69f632af5bdce4c02bd9d41f3
+ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19763944"
+---
+# <a name="createitem-acceptsharinginvitation"></a>CreateItem (AcceptSharingInvitation)
+
+La operación **CreateItem** se usa para aceptar una invitación para compartir calendario de otro usuario o datos de los contactos. 
+  
+## <a name="accept-sharing-invitation-request-example"></a>Acepte el ejemplo de solicitud de invitación de uso compartido
+
+### <a name="description"></a>Descripción
+
+En el ejemplo siguiente se muestra cómo aceptar una invitación para compartir.
+  
+### <a name="code"></a>Código
+
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  <soap:Body>
+    <CreateItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+      <Items xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+        <AcceptSharingInvitation xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+          <ReferenceItemId Id="AAAlAFVzZ" ChangeKey="CwAAABYAA" />
+        </AcceptSharingInvitation>
+      </Items>
+    </CreateItem>
+  </soap:Body>
+</soap:Envelope>
+```
+
+### <a name="request-elements"></a>Elementos de solicitud
+
+En la solicitud se usan los siguientes elementos:
+  
+- [CreateItem](createitem.md)
+    
+- [Items](items.md)
+    
+- [AcceptSharingInvitation](acceptsharinginvitation.md)
+    
+- [ReferenceItemId](referenceitemid.md)
+    
+### <a name="comments"></a>Comentarios
+
+El identificador de elemento y la clave de cambio se han abreviado para conservar la legibilidad.
+  
+## <a name="successful-accept-sharing-invitation-response-example"></a>Ejemplo de respuesta correcta de aceptar la invitación de uso compartido
+
+### <a name="description"></a>Descripción
+
+En el ejemplo siguiente se muestra una respuesta a una solicitud **CreateItem** correcta. 
+  
+### <a name="code"></a>Código
+
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Header>
+    <t:ServerVersionInfo MajorVersion="14" 
+                         MinorVersion="0" 
+                         MajorBuildNumber="639" 
+                         MinorBuildNumber="11" 
+                         Version="Exchange2010" 
+                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+  </soap:Header>
+  <soap:Body>
+    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+      <m:ResponseMessages>
+        <m:CreateItemResponseMessage ResponseClass="Success">
+          <m:ResponseCode>NoError</m:ResponseCode>
+          <m:Items />
+        </m:CreateItemResponseMessage>
+      </m:ResponseMessages>
+    </CreateItemResponse>
+  </soap:Body>
+</soap:Envelope>
+```
+
+### <a name="successful-response-elements"></a>Elementos de respuesta correcta
+
+En la respuesta se usan los siguientes elementos:
+  
+- [ServerVersionInfo](serverversioninfo.md)
+    
+- [CreateItemResponse](createitemresponse.md)
+    
+- [ResponseMessages](responsemessages.md)
+    
+- [CreateItemResponseMessage](createitemresponsemessage.md)
+    
+- [ResponseCode](responsecode.md)
+    
+- [Items](items.md)
+    
+## <a name="accept-sharing-invitation-error-response-example"></a>Acepte el ejemplo de respuesta de Error de la invitación de uso compartido
+
+### <a name="description"></a>Descripción
+
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud **CreateItem** . El error se debe a un intento de aceptar una invitación para compartir que no se encuentra en el almacén de Exchange. 
+  
+### <a name="code"></a>Código
+
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Header>
+    <t:ServerVersionInfo MajorVersion="14" 
+                         MinorVersion="0" 
+                         MajorBuildNumber="639" 
+                         MinorBuildNumber="11" 
+                         Version="Exchange2010" 
+                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+  </soap:Header>
+  <soap:Body>
+    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+      <m:ResponseMessages>
+        <m:CreateItemResponseMessage ResponseClass="Error">
+          <m:MessageText>The specified object was not found in the store.</m:MessageText>
+          <m:ResponseCode>ErrorItemNotFound</m:ResponseCode>
+          <m:DescriptiveLinkKey>0</m:DescriptiveLinkKey>
+          <m:Items />
+        </m:CreateItemResponseMessage>
+      </m:ResponseMessages>
+    </CreateItemResponse>
+  </soap:Body>
+</soap:Envelope>
+```
+
+### <a name="error-response-elements"></a>Elementos de respuesta de error
+
+En la respuesta de error, se usan los siguientes elementos:
+  
+- [ServerVersionInfo](serverversioninfo.md)
+    
+- [CreateItemResponse](createitemresponse.md)
+    
+- [ResponseMessages](responsemessages.md)
+    
+- [CreateItemResponseMessage](createitemresponsemessage.md)
+    
+- [MessageText](messagetext.md)
+    
+- [ResponseCode](responsecode.md)
+    
+- [DescriptiveLinkKey](descriptivelinkkey.md)
+    
+- [Items](items.md)
+    
+## <a name="see-also"></a>Ver también
+
+
+
+[Operación CreateItem](createitem-operation.md)
+
