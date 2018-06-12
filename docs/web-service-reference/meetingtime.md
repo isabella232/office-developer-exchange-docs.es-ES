@@ -1,0 +1,92 @@
+---
+title: MeetingTime
+manager: sethgros
+ms.date: 09/17/2015
+ms.audience: Developer
+ms.topic: reference
+ms.prod: office-online-server
+localization_priority: Normal
+api_name:
+- MeetingTime
+api_type:
+- schema
+ms.assetid: 6e6d2d8b-e8a2-43e6-a715-0fc7d6dd44b9
+description: El elemento MeetingTime representa una hora de reunión sugerida.
+ms.openlocfilehash: 1ea79be394124431aa1279ee94d5e5c6331d377b
+ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19836435"
+---
+# <a name="meetingtime"></a>MeetingTime
+
+El elemento **MeetingTime** representa una hora de reunión sugerida. 
+  
+[GetUserAvailabilityResponse](getuseravailabilityresponse.md)
+  
+[SuggestionsResponse](suggestionsresponse.md)
+  
+[SuggestionDayResultArray](suggestiondayresultarray.md)
+  
+[SuggestionDayResult](suggestiondayresult.md)
+  
+[SuggestionArray](suggestionarray.md)
+  
+[Sugerencia](suggestion.md)
+  
+[MeetingTime](meetingtime.md)
+  
+```xml
+<MeetingTime>...</MeetingTime
+```
+
+ **dateTime**
+## <a name="attributes-and-elements"></a>Atributos y elementos
+
+Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+  
+### <a name="attributes"></a>Atributos
+
+Ninguno.
+  
+### <a name="child-elements"></a>Elementos secundarios
+
+Ninguno.
+  
+### <a name="parent-elements"></a>Elementos principales
+
+|**Element**|**Descripción**|
+|:-----|:-----|
+|[Sugerencia](suggestion.md) <br/> |Representa una sola sugerencia de tiempo de la reunión.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]` <br/> |
+   
+## <a name="text-value"></a>Valor de texto
+
+Se requiere un valor de texto que representa un valor **dateTime** . 
+  
+## <a name="remarks"></a>Notas
+
+El elemento [MeetingTime](meetingtime.md) es un elemento secundario necesario del elemento [Sugerencia](suggestion.md) . 
+  
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+  
+## <a name="element-information"></a>Información del elemento
+
+|||
+|:-----|:-----|
+|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Puede estar vacío  <br/> |False  <br/> |
+   
+## <a name="see-also"></a>Ver también
+
+
+
+[Operación GetUserAvailability](getuseravailability-operation.md)
+  
+[GetUserAvailabilityResponse](getuseravailabilityresponse.md)
+
+
+[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+
