@@ -1,0 +1,61 @@
+---
+title: UrlEntity
+manager: sethgros
+ms.date: 09/17/2015
+ms.audience: Developer
+ms.topic: reference
+ms.prod: office-online-server
+localization_priority: Normal
+ms.assetid: 4609903b-c071-4a16-98d2-05686828cc56
+description: El elemento UrlEntity identifica una única entidad extraída de dirección URL.
+ms.openlocfilehash: f7c3e52cd73ed231430307781d9b064077e03597
+ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19840891"
+---
+# <a name="urlentity"></a>UrlEntity
+
+El elemento **UrlEntity** identifica una única entidad extraída de dirección URL. 
+  
+```XML
+<UrlEntity>
+   <Position/>
+   <Url/>
+</UrlEntity>
+```
+
+ **UrlEntityType**
+## <a name="attributes-and-elements"></a>Atributos y elementos
+
+Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+  
+### <a name="attributes"></a>Atributos
+
+Ninguno.
+  
+### <a name="child-elements"></a>Elementos secundarios
+
+[Posición](position.md) | [dirección Url](url-ex15websvcsotherref.md)
+  
+### <a name="parent-elements"></a>Elementos principales
+
+[Direcciones URL (ArrayOfUrlEntitiesType)](urls-arrayofurlentitiestype.md)
+  
+## <a name="remarks"></a>Notas
+
+Este elemento se introdujo en Exchange Server 2013.
+  
+El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
+  
+## <a name="element-information"></a>Información del elemento
+
+|||
+|:-----|:-----|
+|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Puede estar vacío  <br/> |falso  <br/> |
+   
+
