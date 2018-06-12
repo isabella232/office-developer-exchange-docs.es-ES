@@ -1,0 +1,72 @@
+---
+title: AbsoluteYearlyRecurrence
+manager: sethgros
+ms.date: 09/17/2015
+ms.audience: Developer
+ms.topic: reference
+ms.prod: office-online-server
+localization_priority: Normal
+api_name:
+- AbsoluteYearlyRecurrence
+api_type:
+- schema
+ms.assetid: 96f53e2c-3893-4f6e-a78a-ac179f45c5db
+description: El elemento AbsoluteYearlyRecurrence representa un patrón de periodicidad anual.
+ms.openlocfilehash: 205da336a6a6ca4fd39120e83ab264e1543354e8
+ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19764526"
+---
+# <a name="absoluteyearlyrecurrence"></a>AbsoluteYearlyRecurrence
+
+El elemento **AbsoluteYearlyRecurrence** representa un patrón de periodicidad anual. 
+  
+```xml
+<AbsoluteYearlyRecurrence>
+   <DayOfMonth/>
+   <Month/>
+</AbsoluteYearlyRecurrence>
+```
+
+ **AbsoluteYearlyRecurrencePatternType**
+## <a name="attributes-and-elements"></a>Atributos y elementos
+
+Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+  
+### <a name="attributes"></a>Atributos
+
+Ninguno.
+  
+### <a name="child-elements"></a>Elementos secundarios
+
+|**Element**|**Descripción**|
+|:-----|:-----|
+|[DayOfMonth](dayofmonth.md) <br/> |Describe el día en un mes en el que se produce un elemento periódico. El intervalo de valores de esta propiedad es 1 y 31. Si para un mes determinado que este valor es mayor que el número de días del mes, se supone que el último día del mes para esta propiedad.  <br/> |
+|[Mes (elemento periodicidad)](month-item-recurrence.md) <br/> |Describe el mes en el que se produce un elemento periódico anual.  <br/> |
+   
+### <a name="parent-elements"></a>Elementos principales
+
+|**Element**|**Descripción**|
+|:-----|:-----|
+|[Periodicidad (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Contiene información sobre la periodicidad para las tareas repetitivas.  <br/> |
+|[Periodicidad (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Contiene el patrón de periodicidad para los elementos de calendario y las convocatorias de reunión.  <br/> |
+   
+## <a name="remarks"></a>Notas
+
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+  
+## <a name="element-information"></a>Información del elemento
+
+|||
+|:-----|:-----|
+|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Puede estar vacío  <br/> |False  <br/> |
+   
+## <a name="see-also"></a>Ver también
+
+- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+
