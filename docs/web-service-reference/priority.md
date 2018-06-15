@@ -1,29 +1,33 @@
 ---
-title: ErrorMessage (NonIndexableItemStatisticType)
+title: Prioridad
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
-ms.assetid: b676d5be-07f8-4b0b-80bc-28a79a4a7cf4
-description: El elemento ErrorMessage contiene el mensaje de error que describe por qué no se pueden indizar un elemento.
-ms.openlocfilehash: a33082f6a442e1720c667f1b28ed52c39fa03797
+api_name:
+- Priority
+api_type:
+- schema
+ms.assetid: e1adb8b9-e3d5-469a-b188-822733d2503e
+description: El elemento de prioridad indica el orden en el que es una regla para ejecutarse.
+ms.openlocfilehash: 49e9bda063d8766ff49c8a2e9574c986bcfdbeb2
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/15/2018
-ms.locfileid: "19764444"
+ms.locfileid: "19836888"
 ---
-# <a name="errormessage-nonindexableitemstatistictype"></a>ErrorMessage (NonIndexableItemStatisticType)
+# <a name="priority"></a>Prioridad
 
-El elemento **ErrorMessage** contiene el mensaje de error que describe por qué no se pueden indizar un elemento. 
+El elemento de **prioridad** indica el orden en el que es una regla para ejecutarse. 
   
 ```XML
-<ErrorMessage></ErrorMessage>
+<Priority/>
 ```
 
- **string**
+ **int**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -38,16 +42,16 @@ Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[NonIndexableItemStatistic](nonindexableitemstatistic.md)
-  
+|**Element**|**Descripción**|
+|:-----|:-----|
+|[Regla (RuleType)](rule-ruletype.md) <br/> |Representa una regla en el buzón del usuario.  <br/> |
+   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ErrorMessage** es un mensaje de error que describe por qué no se pueden indizar un elemento. 
+El valor de texto para el elemento de **prioridad** es un entero que indica el orden de ejecución en el que se debe ejecutar una regla. 
   
 ## <a name="remarks"></a>Notas
 
-Este elemento se introdujo en Exchange Server 2013.
-  
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
 ## <a name="element-information"></a>Información del elemento
@@ -59,4 +63,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
+## <a name="see-also"></a>Ver también
+
+
+
+- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

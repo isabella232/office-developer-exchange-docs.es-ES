@@ -1,31 +1,29 @@
 ---
-title: TelexNumbers
+title: IsExternalMailbox
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
-ms.assetid: 51992f35-54be-4424-8d3f-c3a3a1d05a4d
-description: El elemento TelexNumbers especifica una matriz de números de Telex y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: 8aaaf0db542db36b06631690937b794374036a28
+ms.assetid: 5cc83174-e684-42c8-b72a-f82d3de3bb2f
+description: El elemento IsExternalMailbox indica si el buzón de correo es externo a la organización.
+ms.openlocfilehash: cf9f71e9b955cffd1bebefd5f23acba66ba1b894
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/15/2018
-ms.locfileid: "19840636"
+ms.locfileid: "19836010"
 ---
-# <a name="telexnumbers"></a>TelexNumbers
+# <a name="isexternalmailbox"></a>IsExternalMailbox
 
-El elemento **TelexNumbers** especifica una matriz de números de Telex y los identificadores de sus atribuciones de origen para el rol asociado. 
+El elemento **IsExternalMailbox** indica si el buzón de correo es externo a la organización. 
   
 ```XML
-<TelexNumbers>
-   <PhoneNumberAttributedValue/>
-</TelexNumbers>
+<IsExternalMailbox>true | false</IsExternalMailbox>
 ```
 
- **ArrayOfPhoneNumberAttributedValuesType**
+ **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -36,11 +34,15 @@ Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[PhoneNumberAttributedValue](phonenumberattributedvalue.md)
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Rol](persona.md)
+[SearchableMailbox](searchablemailbox.md)
+  
+## <a name="text-value"></a>Valor de texto
+
+Un valor de texto de **true** para el elemento **IsExternalMailbox** indica que el buzón está en una organización externa. Un valor de **false** indica que el buzón está en la organización. 
   
 ## <a name="remarks"></a>Notas
 
@@ -55,6 +57,11 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
 |Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Puede estar vacío  <br/> |False  <br/> |
    
+## <a name="see-also"></a>Ver también
+
+
+
+- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 
