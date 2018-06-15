@@ -16,12 +16,12 @@ ms.openlocfilehash: 41f450e1d4c95f7ba389adcaa2ed7e18ea74d61c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/15/2018
 ms.locfileid: "19837339"
 ---
-# <a name="senditemresponse"></a><span data-ttu-id="98bc1-103">SendItemResponse</span><span class="sxs-lookup"><span data-stu-id="98bc1-103">SendItemResponse</span></span>
+# <a name="senditemresponse"></a><span data-ttu-id="e00df-103">SendItemResponse</span><span class="sxs-lookup"><span data-stu-id="e00df-103">SendItemResponse</span></span>
 
-<span data-ttu-id="98bc1-104">El elemento **SendItemResponse** define una respuesta a una solicitud de SendItem.</span><span class="sxs-lookup"><span data-stu-id="98bc1-104">The **SendItemResponse** element defines a response to a SendItem request.</span></span> 
+<span data-ttu-id="e00df-104">El elemento **SendItemResponse** define una respuesta a una solicitud de SendItem.</span><span class="sxs-lookup"><span data-stu-id="e00df-104">The **SendItemResponse** element defines a response to a SendItem request.</span></span> 
   
 ```xml
 <SendItemResponse>
@@ -29,46 +29,46 @@ ms.locfileid: "19837339"
 </SendItemResponse>
 ```
 
- <span data-ttu-id="98bc1-105">**SendItemResponseType**</span><span class="sxs-lookup"><span data-stu-id="98bc1-105">**SendItemResponseType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="98bc1-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="98bc1-106">Attributes and elements</span></span>
+ <span data-ttu-id="e00df-105">**SendItemResponseType**</span><span class="sxs-lookup"><span data-stu-id="e00df-105">**SendItemResponseType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="e00df-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="e00df-106">Attributes and elements</span></span>
 
-<span data-ttu-id="98bc1-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="98bc1-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="e00df-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="e00df-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="98bc1-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="98bc1-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="e00df-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="e00df-108">Attributes</span></span>
 
-<span data-ttu-id="98bc1-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="98bc1-109">None.</span></span>
+<span data-ttu-id="e00df-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="e00df-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="98bc1-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="98bc1-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="e00df-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="e00df-110">Child elements</span></span>
 
-|<span data-ttu-id="98bc1-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="98bc1-111">**Element**</span></span>|<span data-ttu-id="98bc1-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="98bc1-112">**Description**</span></span>|
+|<span data-ttu-id="e00df-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="e00df-111">**Element**</span></span>|<span data-ttu-id="e00df-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="e00df-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="98bc1-113">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="98bc1-113">ResponseMessages</span></span>](responsemessages.md) <br/> |<span data-ttu-id="98bc1-114">Contiene los mensajes de respuesta para una solicitud de servicios Web de Exchange.</span><span class="sxs-lookup"><span data-stu-id="98bc1-114">Contains the response messages for an Exchange Web Services request.</span></span>  <br/> |
+|[<span data-ttu-id="e00df-113">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="e00df-113">ResponseMessages</span></span>](responsemessages.md) <br/> |<span data-ttu-id="e00df-114">Contiene los mensajes de respuesta para una solicitud de servicios Web de Exchange.</span><span class="sxs-lookup"><span data-stu-id="e00df-114">Contains the response messages for an Exchange Web Services request.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="98bc1-115">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="98bc1-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="e00df-115">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="e00df-115">Parent elements</span></span>
 
-<span data-ttu-id="98bc1-116">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="98bc1-116">None.</span></span>
+<span data-ttu-id="e00df-116">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="e00df-116">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="98bc1-117">Observaciones</span><span class="sxs-lookup"><span data-stu-id="98bc1-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e00df-117">Observaciones</span><span class="sxs-lookup"><span data-stu-id="e00df-117">Remarks</span></span>
 
-<span data-ttu-id="98bc1-118">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="98bc1-118">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="e00df-118">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="e00df-118">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="98bc1-119">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="98bc1-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="e00df-119">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="e00df-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="98bc1-120">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="98bc1-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="98bc1-121">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="98bc1-121">Schema name</span></span>  <br/> |<span data-ttu-id="98bc1-122">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="98bc1-122">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="98bc1-123">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="98bc1-123">Validation file</span></span>  <br/> |<span data-ttu-id="98bc1-124">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="98bc1-124">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="98bc1-125">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="98bc1-125">Can be empty</span></span>  <br/> |<span data-ttu-id="98bc1-126">False</span><span class="sxs-lookup"><span data-stu-id="98bc1-126">False</span></span>  <br/> |
+|<span data-ttu-id="e00df-120">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="e00df-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="e00df-121">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="e00df-121">Schema name</span></span>  <br/> |<span data-ttu-id="e00df-122">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="e00df-122">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="e00df-123">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="e00df-123">Validation file</span></span>  <br/> |<span data-ttu-id="e00df-124">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="e00df-124">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="e00df-125">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="e00df-125">Can be empty</span></span>  <br/> |<span data-ttu-id="e00df-126">False</span><span class="sxs-lookup"><span data-stu-id="e00df-126">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="98bc1-127">Ver también</span><span class="sxs-lookup"><span data-stu-id="98bc1-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e00df-127">Ver también</span><span class="sxs-lookup"><span data-stu-id="e00df-127">See also</span></span>
 
 
 
-[<span data-ttu-id="98bc1-128">Operación SendItem</span><span class="sxs-lookup"><span data-stu-id="98bc1-128">SendItem operation</span></span>](senditem-operation.md)
+[<span data-ttu-id="e00df-128">Operación SendItem</span><span class="sxs-lookup"><span data-stu-id="e00df-128">SendItem operation</span></span>](senditem-operation.md)
   
-[<span data-ttu-id="98bc1-129">SendItem</span><span class="sxs-lookup"><span data-stu-id="98bc1-129">SendItem</span></span>](senditem.md)
+[<span data-ttu-id="e00df-129">SendItem</span><span class="sxs-lookup"><span data-stu-id="e00df-129">SendItem</span></span>](senditem.md)
 
 
-- [<span data-ttu-id="98bc1-130">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="98bc1-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="e00df-130">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="e00df-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
