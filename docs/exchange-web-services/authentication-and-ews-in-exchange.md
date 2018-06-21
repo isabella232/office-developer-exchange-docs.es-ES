@@ -10,7 +10,7 @@ ms.openlocfilehash: c81b29cbe9aa3c658a8f776876366fd0875b2669
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19762994"
 ---
 # <a name="authentication-and-ews-in-exchange"></a>Autenticación y EWS en Exchange
@@ -75,7 +75,7 @@ La autenticación básica proporciona un, bueno, nivel básico de seguridad para
    
 Debe decidir si la autenticación básica cumpla los requisitos de seguridad de la organización y los clientes. La autenticación básica puede ser la opción más adecuada si desea evitar tareas de configuración amplia, por ejemplo para prueba simple o aplicaciones de demostración.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Empezar a utilizar servicios web de Exchange](start-using-web-services-in-exchange.md)   
 - [Adición de inicio de sesión para la aplicación Web utilizando Microsoft Azure AD](http://msdn.microsoft.com/library/055e1155-2d4d-4c85-b44e-d406872ba595%28Office.15%29.aspx)    

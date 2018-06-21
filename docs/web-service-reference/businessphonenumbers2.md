@@ -12,7 +12,7 @@ ms.openlocfilehash: 8a03e102223e5542d6a672c4f47305cef84b850b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19763698"
 ---
 # <a name="businessphonenumbers2"></a>BusinessPhoneNumbers2
@@ -48,7 +48,7 @@ Ninguno.
 |:-----|:-----|
 |[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud de **GetPersona** .  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -63,7 +63,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

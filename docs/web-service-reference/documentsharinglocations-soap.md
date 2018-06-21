@@ -11,7 +11,7 @@ ms.openlocfilehash: 72d1ae9f01ad45441b4e255f2fb6353be2dc8d28
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19764260"
 ---
 # <a name="documentsharinglocations-soap"></a>DocumentSharingLocations (SOAP)
@@ -54,7 +54,7 @@ Ninguno.
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserSettings (SOAP)](getusersettings-operation-soap.md)
 - [Referencia de servicio web de detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)

@@ -16,7 +16,7 @@ ms.openlocfilehash: 49677b6d61f525b469679ec3fdcb8aadcca7239d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19837348"
 ---
 # <a name="sendnotificationresponsemessage"></a>SendNotificationResponseMessage
@@ -72,7 +72,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -85,7 +85,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [SendNotification](sendnotification.md)
 - [Operación de suscripción](subscribe-operation.md)

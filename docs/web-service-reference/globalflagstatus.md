@@ -16,7 +16,7 @@ ms.openlocfilehash: 0c560c065463b8b619f96ecef73d1120b216ca35
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19835713"
 ---
 # <a name="globalflagstatus"></a>GlobalFlagStatus
@@ -64,7 +64,7 @@ El valor de texto del elemento **GlobalFlagStatus** es el estado del indicador a
     
 - **Completo** - indica el estado del indicador completa. 
     
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda Exchange Web Services.This elemento fue introdujo en Exchange Server 2010 Service Pack 1 (SP1).
   
@@ -77,7 +77,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

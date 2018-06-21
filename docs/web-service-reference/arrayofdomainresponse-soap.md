@@ -13,7 +13,7 @@ ms.openlocfilehash: 7dec7f4e3df2fd0d7d1fcd4f08bc74a2b432af1b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19763555"
 ---
 # <a name="arrayofdomainresponse-soap"></a>ArrayOfDomainResponse (SOAP)
@@ -58,7 +58,7 @@ Ninguno.
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetDomainSettings (SOAP)](getdomainsettings-operation-soap.md)
 

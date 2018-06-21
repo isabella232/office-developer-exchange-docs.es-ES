@@ -10,7 +10,7 @@ ms.openlocfilehash: b8f402d3c4555f971b08fd891b5b64ca49a57e0d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19763293"
 ---
 # <a name="setting-up-your-ews-application"></a>Configurar una aplicación de EWS
@@ -29,7 +29,7 @@ Cuando se crea una aplicación cliente que las llamadas de servicios en Exchange
     
 - [Validar un certificado de servidor para la API administrada de EWS](how-to-validate-a-server-certificate-for-the-ews-managed-api.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Empezar a utilizar servicios web de Exchange](start-using-web-services-in-exchange.md)

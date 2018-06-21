@@ -12,7 +12,7 @@ ms.openlocfilehash: de04c50fab929e590fe4b55472a1d2fa8305c596
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19840708"
 ---
 # <a name="totalconversationsinview"></a>TotalConversationsInView
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **TotalConversationsInView** es el número de conversaciones devueltas en una respuesta de **FindConversation** . 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19840745"
 ---
 # <a name="umenabled"></a>UmEnabled
@@ -50,7 +50,7 @@ Ninguno.
 
 El valor de texto del elemento **UmEnabled** es **true** si está habilitada la mensajería unificada para la cuenta; de lo contrario, el valor es **false**.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Se requiere este elemento.
   
@@ -65,7 +65,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

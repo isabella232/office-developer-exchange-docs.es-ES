@@ -16,7 +16,7 @@ ms.openlocfilehash: d33bf22af4ddf6b2f6d8d8d434168264acfaea7c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19836881"
 ---
 # <a name="primarysmtpaddress"></a>PrimarySmtpAddress
@@ -52,7 +52,7 @@ Ninguno.
 
 Se requiere un valor de texto que representa una dirección SMTP.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Servicios Web de Exchange requiere que los buzones de correo se identificado por la dirección SMTP principal del buzón. No se aceptan direcciones alternativas o proxy.
   
@@ -67,7 +67,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

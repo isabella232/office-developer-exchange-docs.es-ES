@@ -12,7 +12,7 @@ ms.openlocfilehash: 340677a293a7c468baf5ee2f723da0b99d9afd3c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19840893"
 ---
 # <a name="user-mailboxassociationtype"></a>Usuario (MailboxAssociationType)
@@ -35,7 +35,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).
   

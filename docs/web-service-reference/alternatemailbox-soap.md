@@ -13,7 +13,7 @@ ms.openlocfilehash: 8eb53e4846ad55916e2c5876606c00c0f2e371ac
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19763483"
 ---
 # <a name="alternatemailbox-soap"></a>AlternateMailbox (SOAP)
@@ -68,7 +68,7 @@ Ninguno.
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [AlternateMailboxCollectionSetting (SOAP)](alternatemailboxcollectionsetting-soap.md)
 

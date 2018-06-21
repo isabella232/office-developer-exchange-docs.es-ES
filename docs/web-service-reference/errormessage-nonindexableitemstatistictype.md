@@ -12,7 +12,7 @@ ms.openlocfilehash: a33082f6a442e1720c667f1b28ed52c39fa03797
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19764444"
 ---
 # <a name="errormessage-nonindexableitemstatistictype"></a>ErrorMessage (NonIndexableItemStatisticType)
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **ErrorMessage** es un mensaje de error que describe por qué no se pueden indizar un elemento. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

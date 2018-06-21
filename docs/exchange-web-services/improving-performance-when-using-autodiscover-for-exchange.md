@@ -10,7 +10,7 @@ ms.openlocfilehash: d9eef3bdc76c16cf92bdbb39b36be067f0c06215
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19763236"
 ---
 # <a name="improving-performance-when-using-autodiscover-for-exchange"></a>Mejorar el rendimiento cuando se utiliza la detección automática de Exchange
@@ -49,7 +49,7 @@ Si usa el método **ExchangeService.AutodiscoverUrl** en la API administrada de 
   
 Si usa el servicio de detección automática de POX, [no puede solicitar propiedades específicas](autodiscover-for-exchange.md#bk_Options).
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Detección automática de Exchange](autodiscover-for-exchange.md)

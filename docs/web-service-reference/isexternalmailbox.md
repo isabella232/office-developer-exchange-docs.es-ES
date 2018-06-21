@@ -12,7 +12,7 @@ ms.openlocfilehash: cf9f71e9b955cffd1bebefd5f23acba66ba1b894
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19836010"
 ---
 # <a name="isexternalmailbox"></a>IsExternalMailbox
@@ -44,7 +44,7 @@ Ninguno.
 
 Un valor de texto de **true** para el elemento **IsExternalMailbox** indica que el buzón está en una organización externa. Un valor de **false** indica que el buzón está en la organización. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -59,7 +59,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 
