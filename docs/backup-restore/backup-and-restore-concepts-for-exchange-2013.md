@@ -12,7 +12,7 @@ ms.openlocfilehash: 5fa62c3d34ffbe8f0bab852c6d41c49220e2883a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762983"
 ---
 # <a name="backup-and-restore-concepts-for-exchange-2013"></a>Conceptos de copia de seguridad y restauración para Exchange 2013
@@ -68,7 +68,7 @@ Es el único método admitido de restauración de bases de datos de DAG partir d
     
 - [Escritor de Exchange en Exchange 2013](exchange-writer-in-exchange-2013.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Desarrollo de Exchange y Exchange Online](../exchange-server-development.md) 
 - [Tipos de operaciones de copia de seguridad para Exchange 2013](types-of-backup-operations-for-exchange-2013.md)

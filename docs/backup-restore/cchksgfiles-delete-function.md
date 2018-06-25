@@ -16,7 +16,7 @@ ms.openlocfilehash: 5c41007a797e5a256692b2c4bdcb3cfae82c12ab
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762978"
 ---
 # <a name="cchksgfilesdelete-function"></a>CChkSGFiles.Delete (función)
@@ -43,7 +43,7 @@ Parámetro de entrada. Un puntero a un objeto **CCheckSGFiles** existente. A con
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La función **Eliminar** libera la memoria asociada con el objeto **CCheckSGFiles** . Después de llamar a **Eliminar**, el puntero que se pasa en el parámetro *pcchecksgfiles* no será válido y no se puede realizar ninguna otra operación en ese objeto. 
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: b40f8b1a95477715b29defb4addabfb333e92d04
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762972"
 ---
 # <a name="cchksgfilesnew-function"></a>CChkSGFiles.New (función)
@@ -38,7 +38,7 @@ Ninguno.
 
 Referencia (puntero) al objeto recién creado.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La función **New** crea un objeto **CCheckSGFiles** y devuelve al llamador una referencia (puntero) a ese objeto. Debe llamar a esta función antes de llamar a cualquiera de las demás funciones en la clase **CCheckSGFiles** . 
   

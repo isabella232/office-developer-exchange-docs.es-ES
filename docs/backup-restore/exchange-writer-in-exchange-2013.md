@@ -12,7 +12,7 @@ ms.openlocfilehash: a4dc5963ab24a83969efc6e425b38a35276f3aa3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762974"
 ---
 # <a name="exchange-writer-in-exchange-2013"></a>Escritor de Exchange en Exchange 2013
@@ -75,7 +75,7 @@ Exchange 2013 no admite las copias de seguridad simultáneas de la misma base de
   
 Truncamiento de archivo de registro de transacciones iniciadas por la copia de seguridad se desencadena en función del tipo de copia de seguridad que se debe realizar. En las configuraciones que no sean DAG, el escritor de Exchange truncará los archivos de registro de transacciones en la realización de copias de seguridad completas o incrementales correctas. En DAG replicado las configuraciones, se retrasará el truncamiento del registro por el servicio de replicación hasta que todos los archivos de registro necesarios se reproducen en todas las demás copias. El servicio de replicación, eliminará la copia de seguridad de los archivos de registro que tanto desde el activo y la copia del registro las rutas de acceso de archivo después de comprobar que los archivos de registro se han aplicado correctamente a la base de datos de la copia y ambas bases de datos activo y ha pasado el punto de control de copias de base de datos los archivos de registro que se va a eliminar.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Los registros de transacciones y archivos de punto de comprobación de copia de seguridad y restauración en Exchange 2013](transaction-logs-and-checkpoint-files-for-backup-and-restore-in-exchange.md)
     

@@ -12,7 +12,7 @@ ms.openlocfilehash: 583ac5e16ab60d119c3028bf81123e9f60a58ff4
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762979"
 ---
 # <a name="cchksgfiles-class-reference"></a>Referencia de clase CChkSGFiles
@@ -73,7 +73,7 @@ La API CHKSGFILES está pensada para su uso con las versiones de Visual Studio d
     
 - [CChkSGFiles.PgnoFromFileOffset (función)](cchksgfiles-pgnofromfileoffset-function.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Desarrollo de Exchange y Exchange Online](../exchange-server-development.md)
 - [Copia de seguridad, restauración y recuperación ante desastres](http://technet.microsoft.com/en-us/library/dd876874)

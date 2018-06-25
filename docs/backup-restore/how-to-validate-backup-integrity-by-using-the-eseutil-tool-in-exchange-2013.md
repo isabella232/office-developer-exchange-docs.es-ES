@@ -12,7 +12,7 @@ ms.openlocfilehash: 03c4c23d433418911240bbe7c337308a989f3739
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762973"
 ---
 #  <a name="validate-backup-integrity-by-using-the-eseutil-tool-in-exchange-2013"></a>Validar la integridad de la copia de seguridad mediante la herramienta Eseutil en Exchange 2013
@@ -64,7 +64,7 @@ El solicitante debe comprobar que todos los valores de error ERRORLEVEL salir qu
   
 Antes de que el solicitante llama al método de **BackupComplete** , debe asegurarse de que el estado del componente de copia de seguridad refleja el resultado de la comprobación de coherencia. Si se encuentra cualquier daño, el estado será FALSE; Si no se encuentran daños, el estado será TRUE. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Validar la integridad de la copia de seguridad mediante el uso de la API CHKSGFILES en Exchange 2013](how-to-validate-backup-integrity-by-using-the-chksgfiles-api-in-exchange.md)
 - [Crear copia de seguridad y restauración de aplicaciones para Exchange 2013](build-backup-and-restore-applications-for-exchange-2013.md)

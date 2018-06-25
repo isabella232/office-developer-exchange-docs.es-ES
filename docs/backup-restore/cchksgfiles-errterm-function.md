@@ -16,7 +16,7 @@ ms.openlocfilehash: 099ec33663baa2414a0c28b90364523b6191c697
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762982"
 ---
 # <a name="cchksgfileserrterm-function"></a>CChkSGFiles.ErrTerm (función)
@@ -46,7 +46,7 @@ Parámetro de entrada opcional. Este valor está reservado para uso futuro. El v
 
 Un código de error de la enumeración [ERR](cchksgfiles-err-enumeration.md) . 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El objeto **CChkSGFiles** determina si todas las bases de datos registrados con la función **ErrInit** realmente se han activado. Este objeto usa la función **ErrCheckDbPages** para comprobar que el mismo número de páginas identificado mediante la función **ErrCheckDbHeaders** se han comprobado realmente de la base de datos. Si el número correcto de las páginas de cada base de datos no se comprueba correctamente, la función **ErrTerm** devuelve un error. 
   

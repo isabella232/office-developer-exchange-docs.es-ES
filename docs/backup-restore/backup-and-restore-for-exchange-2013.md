@@ -12,7 +12,7 @@ ms.openlocfilehash: 9eceb3d512a73ad9cb07a01864fb8b029d5b5772
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762975"
 ---
 # <a name="backup-and-restore-for-exchange"></a>Copia de seguridad y restauración para Exchange
@@ -52,7 +52,7 @@ Aunque se actualizó la arquitectura del escritor VSS de Exchange 2013, la funci
     
 - [Referencia de clase CChkSGFiles](cchksgfiles-class-reference.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Servicio de instantáneas de volumen (Windows)](http://msdn.microsoft.com/en-us/library/windows/desktop/bb968832%28v=vs.85%29.aspx)   
 - [Explore la API administrada de EWS, EWS y servicios web de Exchange](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)  
