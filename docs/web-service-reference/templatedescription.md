@@ -12,7 +12,7 @@ ms.openlocfilehash: 936dd78f1840207154d165e506140be182f58fb9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840637"
 ---
 # <a name="templatedescription"></a>DescripciónPlantilla
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **DescripciónPlantilla** es la descripción de la plantilla de Rights Management aplicada a un elemento. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

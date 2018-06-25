@@ -12,7 +12,7 @@ ms.openlocfilehash: 9815a0c4f96cf0370c0fd190b9d9e9e90fb77e07
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840694"
 ---
 # <a name="tokenvalue"></a>TokenValue
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **TokenValue** es el token de acceso de cliente codificado. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

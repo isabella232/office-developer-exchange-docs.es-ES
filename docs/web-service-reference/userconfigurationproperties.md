@@ -16,7 +16,7 @@ ms.openlocfilehash: 4f993765bb7c36f28a41a3f2fa7e28698a3f709e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840904"
 ---
 # <a name="userconfigurationproperties"></a>UserConfigurationProperties
@@ -58,7 +58,7 @@ En la siguiente tabla se enumera los valores posibles para el elemento **UserCon
 |BinaryData  <br/> |Especifica los tipos de datos binarios (propiedad).  <br/> |
 |Todos  <br/> |Especifica el identificador, diccionario, datos XML y tipos de datos binarios (propiedad).  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -71,7 +71,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

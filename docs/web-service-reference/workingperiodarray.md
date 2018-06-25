@@ -16,7 +16,7 @@ ms.openlocfilehash: 02712f05dc3373a532d769f476341b78ad25a79c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19841019"
 ---
 # <a name="workingperiodarray"></a>WorkingPeriodArray
@@ -62,7 +62,7 @@ Ninguno.
 |:-----|:-----|
 |[WorkingHours](workinghours-ex15websvcsotherref.md) <br/> |Representa la configuración de zona horaria y horario laboral para el usuario del buzón solicitado.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento es necesario si se usa el elemento [WorkingHours](workinghours-ex15websvcsotherref.md) . Todos los elementos secundarios se enumeran en la secuencia en la que se producen. 
   
@@ -77,7 +77,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

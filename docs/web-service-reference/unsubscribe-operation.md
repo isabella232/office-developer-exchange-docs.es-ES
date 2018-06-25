@@ -16,7 +16,7 @@ ms.openlocfilehash: 64514a718d473f0fd7d0320bd1ccecddb1940ac8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840797"
 ---
 # <a name="unsubscribe-operation"></a>Cancelar la operación de suscripción
@@ -147,7 +147,7 @@ En la respuesta de error, se usan los siguientes elementos:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación de suscripción](subscribe-operation.md)
 - [Operación GetEvents](getevents-operation.md)

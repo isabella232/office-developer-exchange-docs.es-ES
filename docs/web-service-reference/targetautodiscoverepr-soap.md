@@ -11,7 +11,7 @@ ms.openlocfilehash: 0b28444727e21a98925b6d1062bcbbac62c68981
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840622"
 ---
 # <a name="targetautodiscoverepr-soap"></a>TargetAutodiscoverEpr (SOAP)
@@ -45,7 +45,7 @@ Ninguno.
 
 El valor de texto para este elemento es un identificador uniforme de recursos (URI) de la relación de la organización.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento especifica la dirección URL de detección automática del servidor de la organización externa. 
   
@@ -58,7 +58,7 @@ Este elemento especifica la dirección URL de detección automática del servido
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: a7503c3896899e8d2da6aced7b8d259f9b8aaceb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840981"
 ---
 # <a name="webclienteditformquerystring"></a>WebClientEditFormQueryString
@@ -60,7 +60,7 @@ Ninguno.
 
 Si se usa este elemento, es necesario un valor de texto que representa una cadena.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Para las versiones de Exchange a partir de Exchange Server 2013, incluido Exchange Online, use la información del elemento [WebClientReadFormQueryString](webclientreadformquerystring.md) para abrir un elemento de borrador en Outlook Web App y, a continuación, usar la interfaz de usuario para editar el elemento de borrador. El elemento **WebClientEditFormQueryString** no es aplicable a las versiones de Exchange a partir de Exchange Server 2013, incluido Exchange Online. 
   
@@ -75,7 +75,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

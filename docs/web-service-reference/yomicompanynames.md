@@ -12,7 +12,7 @@ ms.openlocfilehash: 6c8ea8e8887a58e082d8a14a635ae59c6b4622b7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19841032"
 ---
 # <a name="yomicompanynames"></a>YomiCompanyNames
@@ -42,7 +42,7 @@ Ninguno.
 
 [Rol](persona.md)
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

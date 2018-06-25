@@ -16,7 +16,7 @@ ms.openlocfilehash: b33937bb09f0dcbe3d3ed61bbf5233423f320d9c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840812"
 ---
 # <a name="updatefolder-operation"></a>Operación UpdateFolder
@@ -29,7 +29,7 @@ La operación UpdateFolder se usa para modificar las propiedades de un elemento 
     
 - Una carpeta que contiene el nuevo valor del campo actualizado, si la actualización no es una eliminación.
     
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Tres acciones de actualización básica pueden realizarse en un elemento. Estas acciones se enumeran en la siguiente tabla.
   
@@ -227,7 +227,7 @@ En la respuesta de error, se usan los siguientes elementos:
     
 - [Carpetas](folders-ex15websvcsotherref.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

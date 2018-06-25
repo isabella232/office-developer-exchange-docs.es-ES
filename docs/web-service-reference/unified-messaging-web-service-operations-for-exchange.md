@@ -15,7 +15,7 @@ ms.openlocfilehash: 21d3469d752ff6cdca4ed4ea9151daca52d51e9f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840751"
 ---
 # <a name="unified-messaging-web-service-operations-for-exchange"></a>Operaciones de servicio de web de mensajería unificadas para Exchange
@@ -52,7 +52,7 @@ El servicio web de mensajería unificada proporciona muchas operaciones que perm
     
 - [Operación SetTelephoneAccessFolderEmail (servicio web de mensajería unificada)](settelephoneaccessfolderemail-operation-um-web-service.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Referencia de servicio de web de mensajería unificada de Exchange](unified-messaging-web-service-reference-for-exchange.md)
 - [Detección automática de Exchange](../exchange-web-services/autodiscover-for-exchange.md)

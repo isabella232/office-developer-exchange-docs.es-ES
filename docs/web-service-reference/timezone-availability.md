@@ -16,7 +16,7 @@ ms.openlocfilehash: dc2466e8039819edc82294ff05f1746ada64cb43
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840693"
 ---
 # <a name="timezone-availability"></a>TimeZone (disponibilidad)
@@ -55,7 +55,7 @@ Ninguno.
 |[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |Contiene los argumentos utilizados para obtener información de disponibilidad del usuario. Esto es un elemento raíz.  <br/> El elemento de la **zona horaria** en el mensaje GetUserAvailabilityRequest representa la zona horaria en la que se especifican los valores de fecha y hora de la solicitud. Los valores de fecha y hora devueltos por el servicio de disponibilidad también están en esta zona horaria.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityRequest` <br/> |
 |[WorkingHours](workinghours-ex15websvcsotherref.md) <br/> |Representa la configuración de zona horaria y horario laboral para el usuario del buzón solicitado.  <br/> El elemento de la **zona horaria** en el mensaje GetUserAvailabilityResponse representa la configuración de zona horaria del usuario de buzón solicitado.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento es necesario en el elemento [GetUserAvailabilityRequest](getuseravailabilityrequest.md) . Este elemento se produce como máximo una vez o al menos cero veces cuando el elemento primario es el elemento [WorkingHours](workinghours-ex15websvcsotherref.md) . 
   
@@ -92,7 +92,7 @@ En el ejemplo siguiente se muestra parte de una solicitud XML que identifica un 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

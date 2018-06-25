@@ -12,7 +12,7 @@ ms.openlocfilehash: 73a37524c38f26fd8b5502f9807722cf6c58583f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840689"
 ---
 # <a name="token-string"></a>Símbolo (token) (cadena)
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento de **símbolo (token)** es un símbolo (token) de refinador de búsqueda para una búsqueda de detección. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

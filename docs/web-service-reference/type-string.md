@@ -12,7 +12,7 @@ ms.openlocfilehash: b2262a01b03922e36daa3b13436f1e070918b72c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840736"
 ---
 # <a name="type-string"></a>Tipo (cadena)
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del **tipo de** elemento es el tipo de una dirección postal o el número de teléfono. Por ejemplo, los valores "Principal" o "Empresarial" son los valores esperados para el **tipo de** elemento. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

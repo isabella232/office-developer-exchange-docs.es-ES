@@ -12,7 +12,7 @@ ms.openlocfilehash: a8f1cb12578603ee457b1d2a981cd2a03fce4aa7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840639"
 ---
 # <a name="templatename"></a>Nombre de plantilla
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **TemplateName** es el nombre de la plantilla de Rights Management aplicada a un elemento. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

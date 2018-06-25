@@ -16,7 +16,7 @@ ms.openlocfilehash: 2363e243a833f580b4b5701b7d39d9ba9420f35a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840776"
 ---
 # <a name="unknownattendeeconflictdata"></a>UnknownAttendeeConflictData
@@ -62,7 +62,7 @@ Ninguno.
 |:-----|:-----|
 |[AttendeeConflictDataArray](attendeeconflictdataarray.md) <br/> |Contiene una matriz de datos en conflicto para los asistentes consultados identificados en la [operación GetUserAvailability](getuseravailability-operation.md).  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Un asistente es desconocido, si no se resuelve en un objeto de servicio de directorio de Active Directory. Un asistente está sin resolver si se no se puede determinar a ser un usuario, grupo o contacto. Por ejemplo, un asistente no se resuelven si es una carpeta pública habilitada para correo.
   
@@ -77,7 +77,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: 98b447cd49685b49f73f75f12d921a65749be245
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840788"
 ---
 # <a name="unresolvedentry"></a>UnresolvedEntry
@@ -54,7 +54,7 @@ Ninguno.
 
 El valor de texto representa el nombre de una lista de contactos o de distribución pública. La longitud mínima de la cadena es un carácter.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El valor de texto de este elemento se utiliza para resolver nombres de los campos siguientes:
   
@@ -85,7 +85,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

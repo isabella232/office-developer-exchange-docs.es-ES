@@ -16,7 +16,7 @@ ms.openlocfilehash: 716487fb7ed64dbaa6fa97caf1ea608e4673d2ef
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840652"
 ---
 # <a name="time"></a>Time
@@ -51,7 +51,7 @@ Ninguno.
 
 El valor de texto representa horas, minutos y segundos en el siguiente formato: ss.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Cuando se produce el elemento de **tiempo** en el elemento [DaylightTime](daylighttime.md) , representa la hora del día en que se produce la transición desde el horario de verano a la hora estándar. Cuando se produce el elemento de [tiempo](time.md) en el elemento [StandardTime](standardtime.md) , que representa la hora del día en que se produce la transición desde el horario estándar al horario de verano. 
   
@@ -80,7 +80,7 @@ La siguiente parte de una solicitud representa un tiempo de transición de 2 A.M
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)
 - [Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)

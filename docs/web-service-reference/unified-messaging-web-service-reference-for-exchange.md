@@ -15,7 +15,7 @@ ms.openlocfilehash: 12ee91c5a8b7e1ba23b937f142a9ae2835697fef
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840756"
 ---
 # <a name="unified-messaging-web-service-reference-for-exchange"></a>Referencia de servicio de web de mensajería unificada de Exchange
@@ -38,7 +38,7 @@ El servicio web de mensajería unificada no tiene un esquema explícito.
     
 - [Elementos XML de servicio de web de Unified Messaging para Exchange](unified-messaging-web-service-xml-elements-for-exchange.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Referencia de servicio web de detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)
 - [Detección automática de Exchange](../exchange-web-services/autodiscover-for-exchange.md)

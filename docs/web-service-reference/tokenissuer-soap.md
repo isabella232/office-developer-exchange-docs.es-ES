@@ -11,7 +11,7 @@ ms.openlocfilehash: 1c267fc6cbfdadd471c568473cc9aeeafb43ae2d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840684"
 ---
 # <a name="tokenissuer-soap"></a>TokenIssuer (SOAP)
@@ -47,7 +47,7 @@ Ninguno
 |:-----|:-----|
 |[TokenIssuers (SOAP)](tokenissuers-soap.md) <br/> |Representa una colección de servicio de token de seguridad [Uri (SOAP)](uri-soap.md) y el [Extremo (SOAP)](endpoint-soap.md).  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Use el elemento **TokenIssuer** para especificar el servicio de token de seguridad cuando se usa los tokens de seguridad. 
   
@@ -60,7 +60,7 @@ Use el elemento **TokenIssuer** para especificar el servicio de token de segurid
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

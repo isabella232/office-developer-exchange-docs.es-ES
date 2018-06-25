@@ -12,7 +12,7 @@ ms.openlocfilehash: 62a48fe3b7d2f169ba83c2a89cba3019c270555c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840884"
 ---
 # <a name="url"></a>Url
@@ -46,7 +46,7 @@ Ninguno.
 
 El valor de texto del elemento de **dirección Url** es la ubicación del cliente de servicio Web para las notificaciones de inserción. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   

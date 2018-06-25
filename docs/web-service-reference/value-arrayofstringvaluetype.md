@@ -12,7 +12,7 @@ ms.openlocfilehash: 0475dc1a58f48f1fd774d01c0da39e53dbcc4bc3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840935"
 ---
 # <a name="value-arrayofstringvaluetype"></a>Valor (ArrayOfStringValueType)
@@ -45,7 +45,7 @@ Ninguno.
 
 El valor de texto del elemento de **valor** es un valor en una matriz de las propiedades de rol asociadas con una matriz de atribuciones. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

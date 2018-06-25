@@ -11,7 +11,7 @@ ms.openlocfilehash: fa401d4c1e8c1460804f116d840fe21129957852
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840621"
 ---
 # <a name="targetapplicationuri-soap"></a>TargetApplicationUri (SOAP)
@@ -41,7 +41,7 @@ Ninguno.
 |:-----|:-----|
 |[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Representa una lista de relaciones de organización para una sola organización  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento define el identificador URI de la organización externa de destino.
   
@@ -54,7 +54,7 @@ Este elemento define el identificador URI de la organización externa de destino
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

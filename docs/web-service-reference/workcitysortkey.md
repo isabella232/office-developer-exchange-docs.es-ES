@@ -12,7 +12,7 @@ ms.openlocfilehash: 41b8821b96ad920e71bd309c8b916037fcb40303
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19841005"
 ---
 # <a name="workcitysortkey"></a>WorkCitySortKey
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **WorkCitySortKey** contiene una clave de ordenación para ordenar las propiedades de la ciudad de trabajo de los contactos que conforman un rol. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

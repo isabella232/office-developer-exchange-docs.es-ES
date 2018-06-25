@@ -12,7 +12,7 @@ ms.openlocfilehash: 23b210dcdd87f2388aecec246068f12ec6c69a78
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840650"
 ---
 # <a name="timeout-duration"></a>Tiempo de espera (duración)
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento de **tiempo de espera** es el período de tiempo, en minutos, antes de una suscripción de extracción se agotó el tiempo por el servidor. El valor mínimo es 1; el valor máximo es 1440. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

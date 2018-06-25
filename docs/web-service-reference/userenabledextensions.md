@@ -12,7 +12,7 @@ ms.openlocfilehash: 4186681fb11f92c769dd0bebc1f6e2f5cf0e03ba
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840906"
 ---
 # <a name="userenabledextensions"></a>UserEnabledExtensions
@@ -42,7 +42,7 @@ Ninguno.
 
 [UserParameters](userparameters.md)
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

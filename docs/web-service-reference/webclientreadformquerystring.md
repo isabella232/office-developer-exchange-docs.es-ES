@@ -16,7 +16,7 @@ ms.openlocfilehash: 8096c14956d132a631b0ade6f2eae12a2bff9c06
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840983"
 ---
 # <a name="webclientreadformquerystring"></a>WebClientReadFormQueryString
@@ -61,7 +61,7 @@ Ninguno.
 
 Si se usa este elemento, es necesario un valor de texto que representa una cadena.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El identificador del elemento para una dirección URL de Outlook Web App es el identificador EWS del elemento. Puede codificar como dirección URL el identificador del elemento EWS y anexarla a la cadena de consulta para obtener la dirección URL de Outlook Web App para un elemento.
   
@@ -82,7 +82,7 @@ En las versiones de Exchange anteriores a la versión principal 15, el identific
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

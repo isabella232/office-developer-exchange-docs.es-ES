@@ -16,7 +16,7 @@ ms.openlocfilehash: 0f2707bede5e49174ed62a35ba704e39c0c48e9f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19841020"
 ---
 # <a name="workingperiod"></a>WorkingPeriod
@@ -68,7 +68,7 @@ Ninguno.
 |:-----|:-----|
 |[WorkingPeriodArray](workingperiodarray.md) <br/> |Contiene información del período para el usuario del buzón de trabajar.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/WorkingPeriodArray` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Todos los elementos secundarios se enumeran en la secuencia en la que se producen. El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -81,7 +81,7 @@ Todos los elementos secundarios se enumeran en la secuencia en la que se produce
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

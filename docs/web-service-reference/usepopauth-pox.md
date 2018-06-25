@@ -13,7 +13,7 @@ ms.openlocfilehash: be03568d697b1f5461d49dba388a1d3f1008a67e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840892"
 ---
 # <a name="usepopauth-pox"></a>UsePOPAuth (POX)
@@ -56,11 +56,11 @@ Ninguno.
 
 El valor de texto indica si la información de autenticación que se proporciona para un tipo de POP3 de cuenta también se utiliza para SMTP. Los valores posibles son **encendido** y **apagado**.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **UsePOPAuth** solo se usa al [Tipo (POX)](type-pox.md) es SMTP. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

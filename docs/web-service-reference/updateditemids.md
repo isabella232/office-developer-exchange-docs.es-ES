@@ -12,7 +12,7 @@ ms.openlocfilehash: b95ebb20823706e68b1fd66dc64f756808bb7375
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840811"
 ---
 # <a name="updateditemids"></a>UpdatedItemIds
@@ -43,7 +43,7 @@ Ninguno.
 
 [PerformReminderActionResponse](performreminderactionresponse.md)
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -60,7 +60,7 @@ Si la operación [PerformReminderAction](performreminderaction-operation.md) no 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

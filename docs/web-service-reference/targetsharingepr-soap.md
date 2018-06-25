@@ -11,7 +11,7 @@ ms.openlocfilehash: 272133d4d8f6db260f37e2c6977be20f81fdc535
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840623"
 ---
 # <a name="targetsharingepr-soap"></a>TargetSharingEpr (SOAP)
@@ -42,7 +42,7 @@ Ninguno.
 |:-----|:-----|
 |[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Representa una lista de relaciones de organización para una sola organización.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento especifica la dirección URL del servidor de destino para la organización externa. 
   
@@ -55,7 +55,7 @@ Este elemento especifica la dirección URL del servidor de destino para la organ
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetOrganizationRelationshipSettings (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
 

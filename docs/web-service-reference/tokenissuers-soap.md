@@ -11,7 +11,7 @@ ms.openlocfilehash: b070d85b32d5bce8461ac4e930329f237885bad7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840696"
 ---
 # <a name="tokenissuers-soap"></a>TokenIssuers (SOAP)
@@ -45,7 +45,7 @@ Ninguno
 |:-----|:-----|
 |[GetFederationInformationResponse (SOAP)](getfederationinformationresponse-soap.md) <br/> |Contiene la respuesta de la [operación de GetFederationInformation (SOAP)](getfederationinformation-operation-soap.md) .  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El **TokenIssuers** representa una colección de elementos de [TokenIssuer (SOAP)](tokenissuer-soap.md) que se usará en la detección automática. 
   
@@ -58,7 +58,7 @@ El **TokenIssuers** representa una colección de elementos de [TokenIssuer (SOAP
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

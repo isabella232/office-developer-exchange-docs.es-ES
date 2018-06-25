@@ -16,7 +16,7 @@ ms.openlocfilehash: 1867aa781bc24f5eb3bdb4648fa494a2a7ea396a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840975"
 ---
 # <a name="watermark"></a>Marca de agua
@@ -60,7 +60,7 @@ Ninguno.
 
 Un valor de texto puede ser obligatorio u opcional dependiendo de cómo se usa este elemento.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Si una solicitud Subscribe contiene una marca de agua, se crea la suscripción de la marca de agua. Si la solicitud Subscribe contiene una marca de agua que no se encuentra en la tabla de eventos de buzón de correo, un `ErrorInvalidWatermark` error se devuelve a la aplicación cliente. Esto puede ocurrir si la marca de agua es demasiado antigua y se ha quitado de la ventana de 30 días de la tabla de eventos o si la marca de agua no fue nunca presentes en la tabla eventos. Esto puede suceder, por ejemplo, si se obtiene una marca de agua de una suscripción a diferente para un buzón de correo en una base de datos diferente. 
   
@@ -75,7 +75,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

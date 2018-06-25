@@ -16,7 +16,7 @@ ms.openlocfilehash: a48309f0b7f5c9bf667fc2eb653a0502832bc996
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840686"
 ---
 # <a name="tofolderid"></a>ToFolderId
@@ -54,7 +54,7 @@ Ninguno.
 |[MoveItem](moveitem.md) <br/> |Define una solicitud para mover un elemento en el almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/MoveItem` <br/> |
 |[CopyItem](copyitem.md) <br/> |Define una solicitud para copiar un elemento en el almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/CopyItem` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -67,7 +67,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

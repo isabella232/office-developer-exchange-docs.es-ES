@@ -12,7 +12,7 @@ ms.openlocfilehash: 84679e4850036661ebba21620882bd50aaf1fede
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840690"
 ---
 # <a name="todate"></a>ToDate
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **ToDate** es la fecha en que se recibió el mensaje. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

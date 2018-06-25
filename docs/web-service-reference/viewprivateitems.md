@@ -16,7 +16,7 @@ ms.openlocfilehash: c35f24ae79e907424cb5cfb0efeec2307334ca12
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840970"
 ---
 # <a name="viewprivateitems"></a>ViewPrivateItems
@@ -51,7 +51,7 @@ Ninguno.
 
 Un valor de **true** indica que el delegado o el cliente puede ver elementos privados en el buzón de la entidad de seguridad. Un valor de **false** indica que los elementos privados no están visibles para un cliente o un delegado. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -64,7 +64,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

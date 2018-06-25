@@ -10,7 +10,7 @@ ms.openlocfilehash: 417ade6956ee5e09fe7ad63f09e59f0079d58613
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840979"
 ---
 # <a name="web-services-reference-for-exchange"></a>Referencia de servicios Web de Exchange
@@ -36,7 +36,7 @@ Para obtener información acerca de qué conjunto de API usar, vea [información
   
 La referencia de XML de Exchange se basa en las instancias XML que se envían entre el cliente y el servidor. El código XML se describe en los archivos WSDL y XSD para los servicios de EWS y detección automática de SOAP. El servicio web de mensajería unificada y el servicio Detección automática POX no tienen archivos publicados de WSDL y el esquema que describe su estructura. La referencia XML para los servicios que no tienen archivos de esquema se basa en las instancias XML que se pueden observar y capturadas mientras se intercambian entre el cliente y el servicio.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Explore la API administrada de EWS, EWS y servicios web de Exchange](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)
 - [Empezar a utilizar servicios web de Exchange](../exchange-web-services/start-using-web-services-in-exchange.md)

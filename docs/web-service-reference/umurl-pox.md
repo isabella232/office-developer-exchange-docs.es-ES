@@ -13,7 +13,7 @@ ms.openlocfilehash: f6259430bf9c53c8d0670cdab0dcec4cc6f18213
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840744"
 ---
 # <a name="umurl-pox"></a>UMUrl (POX)
@@ -56,7 +56,7 @@ Ninguno.
 
 El valor de texto especifica la dirección URL del servidor de Exchange que tiene el rol de servidor de mensajería unificada instalado para una topología de Exchange.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

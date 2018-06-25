@@ -13,7 +13,7 @@ ms.openlocfilehash: 5fecf3103553a82ed2aeeecfc1e4e1b9fe38583c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840733"
 ---
 # <a name="ttl-pox"></a>TTL (POX)
@@ -56,11 +56,11 @@ Ninguno.
 
 El valor de texto representa el período de vida, en horas, durante el cual la configuración permanece válida. Un valor de cero indica que redescubrimiento no es necesario. Si no se especifica ningún valor, el valor predeterminado para este elemento es 1 hora.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Una vez transcurrido el tiempo que está representado por el elemento de **período de Vida** , la configuración se debe redescubrir mediante el uso de una solicitud de detección automática. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

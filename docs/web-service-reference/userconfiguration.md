@@ -16,7 +16,7 @@ ms.openlocfilehash: ce3eaa470ef592c5a8e5a7ef24c377bb2feeca2e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840901"
 ---
 # <a name="userconfiguration"></a>UserConfiguration
@@ -60,7 +60,7 @@ Ninguno.
 |[GetUserConfigurationResponseMessage](getuserconfigurationresponsemessage.md) <br/> |Representa una respuesta que devuelve un objeto de configuración de usuario.  <br/> |
 |[UpdateUserConfiguration](updateuserconfiguration.md) <br/> |Representa una solicitud para actualizar un objeto de configuración de usuario.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -73,7 +73,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

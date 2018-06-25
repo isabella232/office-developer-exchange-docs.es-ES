@@ -16,7 +16,7 @@ ms.openlocfilehash: 9da7c7ba15b3cf6b35f0489db539660aefa2e40a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840865"
 ---
 # <a name="updateuserconfiguration-operation"></a>Operación UpdateUserConfiguration
@@ -101,7 +101,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **Up
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

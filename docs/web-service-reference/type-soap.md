@@ -13,7 +13,7 @@ ms.openlocfilehash: 1aff509144492d369b2f4c71ace2972e6f0e96cf
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840739"
 ---
 # <a name="type-soap"></a>Tipo (SOAP)
@@ -56,7 +56,7 @@ El valor de texto del **tipo de** elemento es el tipo de buzón de correo altern
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

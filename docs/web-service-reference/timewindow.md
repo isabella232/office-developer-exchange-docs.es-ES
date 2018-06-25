@@ -16,7 +16,7 @@ ms.openlocfilehash: 05858b4d62b72b3ff9904c90652bb1bff78ceb41
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840677"
 ---
 # <a name="timewindow"></a>Ventana de tiempo
@@ -58,7 +58,7 @@ Ninguno.
 |:-----|:-----|
 |[FreeBusyViewOptions](freebusyviewoptions.md) <br/> |Especifica el tipo de información de libre/ocupado devuelto en la respuesta.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityRequest/FreeBusyViewOptions` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El valor máximo para este período de tiempo es 42 días. Este valor máximo puede modificarse. Las solicitudes de usuario la información de disponibilidad más allá del valor máximo devolverá un error. Si todas las citas se encuentran parcialmente en el intervalo de tiempo definido por los elementos [StartTime](starttime.md) y [EndTime](endtime.md) , esa cita se incluye en su totalidad. 
   
@@ -74,7 +74,7 @@ El valor máximo para este período de tiempo es 42 días. Este valor máximo pu
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

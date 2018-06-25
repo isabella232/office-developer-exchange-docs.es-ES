@@ -16,7 +16,7 @@ ms.openlocfilehash: 1f6de15f7a3b07714899aef2ff74a8d556f8ca1d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840595"
 ---
 # <a name="subscriptionstatus"></a>SubscriptionStatus
@@ -54,7 +54,7 @@ Se requiere un valor de texto. Los siguientes son los posibles valores de texto 
     
 - Cancelar suscripción
     
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento describe el estado de la suscripción. La aplicación de cliente de suscripción de inserción envía el estado al equipo que ejecuta Exchange 2007 que tiene el rol de servidor de acceso de cliente instalado después de cada notificación de inserción. Si el valor de **SubscriptionStatus** es igual a **Cancelar la suscripción**, el servidor de acceso de cliente detendrá enviar notificaciones y finalizar la suscripción. Si el valor de **SubscriptionStatus** es igual a **Aceptar**, el servidor de acceso de cliente continuará enviar notificaciones.
   
@@ -69,7 +69,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

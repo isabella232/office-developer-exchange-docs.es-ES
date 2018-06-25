@@ -16,14 +16,14 @@ ms.openlocfilehash: d6f966fa663300b476383a136d30cf611d6bfb9b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840840"
 ---
 # <a name="updateitem-operation-task"></a>Operación UpdateItem (tarea)
 
 La operación UpdateItem se utiliza para actualizar las propiedades del elemento de tarea en el almacén de Exchange.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 No puede usar servicios Web de Exchange para enviar solicitudes de tareas. Servicios Web de Exchange puede devolver las solicitudes de tarea que se crean de forma MicrosoftOfficeOutlook. Si ya se ha enviado una solicitud de tarea, una solicitud para actualizar la tarea devolverá un error.
   
@@ -41,7 +41,7 @@ Puede usar la [operación GetItem](getitem-operation.md) para obtener la más re
   
 Para las tareas no periódicas o la última aparición de una tarea periódica, la respuesta UpdateItem devuelve el mismo **identificador** que se pasó a ella y devuelve que el asociado actualizó **ChangeKey**.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

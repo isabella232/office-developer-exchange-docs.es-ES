@@ -12,7 +12,7 @@ ms.openlocfilehash: 84e6be6ce4e7c24a20fe9b2c2ca84e131850f9d8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840761"
 ---
 # <a name="uninstallapp"></a>UninstallApp
@@ -42,7 +42,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

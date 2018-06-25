@@ -16,7 +16,7 @@ ms.openlocfilehash: 4b8674d267b78f0384f9457e794e88ace8234826
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840960"
 ---
 # <a name="value"></a>Value
@@ -52,7 +52,7 @@ Ninguno.
 
 El valor de texto debe ser compatible con el tipo que se indica mediante el atributo PropertyType de la ExtendedFieldURI.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Un elemento de **valor** puede producirse en ambas instancias de la propiedad extendida único y de varios valores. Para las instancias de un solo valor, existe como un elemento secundario directo del elemento [ExtendedProperty](extendedproperty.md) . Para la instancia multivalor, existe como un elemento secundario directo de la colección de **valores** . 
   
@@ -67,7 +67,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

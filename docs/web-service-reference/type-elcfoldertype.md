@@ -12,7 +12,7 @@ ms.openlocfilehash: f679a9237a577d26d4b28e1b25f3e135f7193903
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840732"
 ---
 # <a name="type-elcfoldertype"></a>Tipo (ElcFolderType)
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del **tipo de** elemento es el tipo de carpeta utilizado en una directiva de retención. El valor de texto puede ser uno de los siguientes valores que representan un tipo de carpeta predeterminado: calendario, contactos, DeletedItems, borradores, Bandeja de entrada, JunkEmail, diario, notas, Bandeja de salida, elementos enviados y tareas, All, ManagedCustomFolder, RssSubscriptions, SyncIssues, ConversationHistory, Personal, RecoverableItems o NonIpmRoot 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

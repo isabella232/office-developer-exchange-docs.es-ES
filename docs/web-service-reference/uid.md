@@ -16,7 +16,7 @@ ms.openlocfilehash: b2b371c885e5656a9e2b1b5afd28f65fa7e195de
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840740"
 ---
 # <a name="uid"></a>UID
@@ -63,7 +63,7 @@ El valor de texto representa un identificador único.
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

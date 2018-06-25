@@ -16,7 +16,7 @@ ms.openlocfilehash: e67e0149226b36c22cdd00acd78f6582f826dd3e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840600"
 ---
 # <a name="suggestionquality"></a>SuggestionQuality
@@ -72,7 +72,7 @@ Se requiere un valor de texto que representa un valor de **SuggestionQuality** .
     
 - **Deficiente** Menor que el 50 por ciento de los usuarios y los recursos están disponible para el tiempo de la reunión sugerida. 
     
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El tipo de **SuggestionQuality** también es el tipo para el [DayQuality](dayquality.md) y los elementos de [MinimumSuggestionQuality](minimumsuggestionquality.md) . 
   
@@ -87,7 +87,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

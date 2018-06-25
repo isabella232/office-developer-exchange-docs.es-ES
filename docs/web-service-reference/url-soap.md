@@ -13,7 +13,7 @@ ms.openlocfilehash: cb29a4b7e6d9c18b212fb543410ddda160099d6f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840889"
 ---
 # <a name="url-soap"></a>Dirección URL (SOAP)
@@ -56,7 +56,7 @@ El valor de texto es la dirección URL de un cliente Web.
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

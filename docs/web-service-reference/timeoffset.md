@@ -16,7 +16,7 @@ ms.openlocfilehash: 46b1b2c8eec9bae871b4dafe43036e9d725075ae
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840653"
 ---
 # <a name="timeoffset"></a>TimeOffset
@@ -51,7 +51,7 @@ Ninguno.
 
 El valor de texto del elemento **TimeOffset** es una duración que especifica el desplazamiento de tiempo de la hora UTC para la transición de la zona horaria. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -64,7 +64,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

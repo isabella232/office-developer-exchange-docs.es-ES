@@ -16,7 +16,7 @@ ms.openlocfilehash: 306e5f226a56694bb1ff32362f77e7dff80865ad
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840784"
 ---
 # <a name="unknownentries"></a>UnknownEntries
@@ -51,7 +51,7 @@ Ninguno.
 |[PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) <br/> |Contiene todos los permisos que están configurados para una carpeta. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
 |[PermissionSet (CalendarPermissionSetType)](permissionset-calendarpermissionsettype.md) <br/> |Contiene todos los permisos que están configurados para una carpeta de calendario. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Puede eliminar entradas desconocidas de una carpeta mediante el uso de la operación UpdateFolder con el elemento [SetFolderField](setfolderfield.md) . Cuando se restablece el conjunto de permisos mediante la opción SetFolderField de la operación UpdateFolder, se eliminan las entradas desconocidas. Servicios Web de Exchange no es compatible con la eliminación de entradas individuales. 
   
@@ -66,7 +66,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 
