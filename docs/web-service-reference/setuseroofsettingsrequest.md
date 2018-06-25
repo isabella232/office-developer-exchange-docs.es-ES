@@ -16,12 +16,12 @@ ms.openlocfilehash: ed54bb1d066da7b15605fb81931a6ef75dfc61bf
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837474"
 ---
-# <a name="setuseroofsettingsrequest"></a><span data-ttu-id="ae5c8-103">SetUserOofSettingsRequest</span><span class="sxs-lookup"><span data-stu-id="ae5c8-103">SetUserOofSettingsRequest</span></span>
+# <a name="setuseroofsettingsrequest"></a><span data-ttu-id="fdae5-103">SetUserOofSettingsRequest</span><span class="sxs-lookup"><span data-stu-id="fdae5-103">SetUserOofSettingsRequest</span></span>
 
-<span data-ttu-id="ae5c8-104">El elemento **SetUserOofSettingsRequest** contiene los argumentos que se usa para establecer la configuración del usuario fuera de la oficina (OOF) de un buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="ae5c8-104">The **SetUserOofSettingsRequest** element contains the arguments used to set a mailbox user's Out of Office (OOF) settings.</span></span> 
+<span data-ttu-id="fdae5-104">El elemento **SetUserOofSettingsRequest** contiene los argumentos que se usa para establecer la configuración del usuario fuera de la oficina (OOF) de un buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="fdae5-104">The **SetUserOofSettingsRequest** element contains the arguments used to set a mailbox user's Out of Office (OOF) settings.</span></span> 
   
 ```xml
 <SetUserOofSettingsRequest>
@@ -30,33 +30,33 @@ ms.locfileid: "19837474"
 <SetUserOofSettingsRequest>
 ```
 
- <span data-ttu-id="ae5c8-105">**SetUserOofSettingsRequest**</span><span class="sxs-lookup"><span data-stu-id="ae5c8-105">**SetUserOofSettingsRequest**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="ae5c8-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="ae5c8-106">Attributes and elements</span></span>
+ <span data-ttu-id="fdae5-105">**SetUserOofSettingsRequest**</span><span class="sxs-lookup"><span data-stu-id="fdae5-105">**SetUserOofSettingsRequest**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="fdae5-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="fdae5-106">Attributes and elements</span></span>
 
-<span data-ttu-id="ae5c8-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="ae5c8-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="fdae5-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="fdae5-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="ae5c8-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="ae5c8-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="fdae5-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="fdae5-108">Attributes</span></span>
 
-<span data-ttu-id="ae5c8-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="ae5c8-109">None.</span></span>
+<span data-ttu-id="fdae5-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="fdae5-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="ae5c8-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="ae5c8-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="fdae5-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="fdae5-110">Child elements</span></span>
 
-|<span data-ttu-id="ae5c8-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="ae5c8-111">**Element**</span></span>|<span data-ttu-id="ae5c8-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="ae5c8-112">**Description**</span></span>|
+|<span data-ttu-id="fdae5-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="fdae5-111">**Element**</span></span>|<span data-ttu-id="fdae5-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="fdae5-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="ae5c8-113">Buzón de correo (disponibilidad)</span><span class="sxs-lookup"><span data-stu-id="ae5c8-113">Mailbox (Availability)</span></span>](mailbox-availability.md) <br/> |<span data-ttu-id="ae5c8-114">Identifica el usuario del buzón para una solicitud SetUserOofSettings o GetUserOofSettings.</span><span class="sxs-lookup"><span data-stu-id="ae5c8-114">Identifies the mailbox user for a SetUserOofSettings or GetUserOofSettings request.</span></span>  <br/> |
-|[<span data-ttu-id="ae5c8-115">UserOofSettings</span><span class="sxs-lookup"><span data-stu-id="ae5c8-115">UserOofSettings</span></span>](useroofsettings.md) <br/> |<span data-ttu-id="ae5c8-116">Especifica la configuración de fuera de la oficina.</span><span class="sxs-lookup"><span data-stu-id="ae5c8-116">Specifies the OOF settings.</span></span>  <br/> |
+|[<span data-ttu-id="fdae5-113">Buzón de correo (disponibilidad)</span><span class="sxs-lookup"><span data-stu-id="fdae5-113">Mailbox (Availability)</span></span>](mailbox-availability.md) <br/> |<span data-ttu-id="fdae5-114">Identifica el usuario del buzón para una solicitud SetUserOofSettings o GetUserOofSettings.</span><span class="sxs-lookup"><span data-stu-id="fdae5-114">Identifies the mailbox user for a SetUserOofSettings or GetUserOofSettings request.</span></span>  <br/> |
+|[<span data-ttu-id="fdae5-115">UserOofSettings</span><span class="sxs-lookup"><span data-stu-id="fdae5-115">UserOofSettings</span></span>](useroofsettings.md) <br/> |<span data-ttu-id="fdae5-116">Especifica la configuración de fuera de la oficina.</span><span class="sxs-lookup"><span data-stu-id="fdae5-116">Specifies the OOF settings.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="ae5c8-117">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="ae5c8-117">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="fdae5-117">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="fdae5-117">Parent elements</span></span>
 
-<span data-ttu-id="ae5c8-118">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="ae5c8-118">None.</span></span>
+<span data-ttu-id="fdae5-118">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="fdae5-118">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="ae5c8-119">Observaciones</span><span class="sxs-lookup"><span data-stu-id="ae5c8-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="fdae5-119">Comentarios</span><span class="sxs-lookup"><span data-stu-id="fdae5-119">Remarks</span></span>
 
-<span data-ttu-id="ae5c8-120">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="ae5c8-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="fdae5-120">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="fdae5-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="example"></a><span data-ttu-id="ae5c8-121">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="ae5c8-121">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fdae5-121">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="fdae5-121">Example</span></span>
 
-<span data-ttu-id="ae5c8-122">El siguiente ejemplo de una solicitud de SetUserOofSettings establece un valor de OOF para diez días.</span><span class="sxs-lookup"><span data-stu-id="ae5c8-122">The following example of a SetUserOofSettings request sets an OOF setting for ten days.</span></span>
+<span data-ttu-id="fdae5-122">El siguiente ejemplo de una solicitud de SetUserOofSettings establece un valor de OOF para diez días.</span><span class="sxs-lookup"><span data-stu-id="fdae5-122">The following example of a SetUserOofSettings request sets an OOF setting for ten days.</span></span>
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -87,18 +87,18 @@ ms.locfileid: "19837474"
 </soap:Envelope>
 ```
 
-## <a name="element-information"></a><span data-ttu-id="ae5c8-123">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="ae5c8-123">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="fdae5-123">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="fdae5-123">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="ae5c8-124">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="ae5c8-124">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="ae5c8-125">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="ae5c8-125">Schema Name</span></span>  <br/> |<span data-ttu-id="ae5c8-126">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="ae5c8-126">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="ae5c8-127">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="ae5c8-127">Validation File</span></span>  <br/> |<span data-ttu-id="ae5c8-128">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="ae5c8-128">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="ae5c8-129">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="ae5c8-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="ae5c8-130">False</span><span class="sxs-lookup"><span data-stu-id="ae5c8-130">False</span></span>  <br/> |
+|<span data-ttu-id="fdae5-124">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="fdae5-124">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="fdae5-125">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="fdae5-125">Schema Name</span></span>  <br/> |<span data-ttu-id="fdae5-126">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="fdae5-126">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="fdae5-127">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="fdae5-127">Validation File</span></span>  <br/> |<span data-ttu-id="fdae5-128">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="fdae5-128">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="fdae5-129">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="fdae5-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="fdae5-130">False</span><span class="sxs-lookup"><span data-stu-id="fdae5-130">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="ae5c8-131">Ver también</span><span class="sxs-lookup"><span data-stu-id="ae5c8-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fdae5-131">Vea también</span><span class="sxs-lookup"><span data-stu-id="fdae5-131">See also</span></span>
 
 
 
-[<span data-ttu-id="ae5c8-132">Operación SetUserOofSettings</span><span class="sxs-lookup"><span data-stu-id="ae5c8-132">SetUserOofSettings operation</span></span>](setuseroofsettings-operation.md)
+[<span data-ttu-id="fdae5-132">Operación SetUserOofSettings</span><span class="sxs-lookup"><span data-stu-id="fdae5-132">SetUserOofSettings operation</span></span>](setuseroofsettings-operation.md)
 

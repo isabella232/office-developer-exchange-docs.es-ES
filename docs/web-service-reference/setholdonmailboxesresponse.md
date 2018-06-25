@@ -12,12 +12,12 @@ ms.openlocfilehash: bb1d64b98f5e1ab4cdbe4a297ded46d00b27b364
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837418"
 ---
-# <a name="setholdonmailboxesresponse"></a><span data-ttu-id="49022-103">SetHoldOnMailboxesResponse</span><span class="sxs-lookup"><span data-stu-id="49022-103">SetHoldOnMailboxesResponse</span></span>
+# <a name="setholdonmailboxesresponse"></a><span data-ttu-id="afeef-103">SetHoldOnMailboxesResponse</span><span class="sxs-lookup"><span data-stu-id="afeef-103">SetHoldOnMailboxesResponse</span></span>
 
-<span data-ttu-id="49022-104">El elemento **SetHoldOnMailboxesResponse** representa una respuesta a una solicitud de **SetHoldOnMailboxes** .</span><span class="sxs-lookup"><span data-stu-id="49022-104">The **SetHoldOnMailboxesResponse** element represents a response to a **SetHoldOnMailboxes** request.</span></span> 
+<span data-ttu-id="afeef-104">El elemento **SetHoldOnMailboxesResponse** representa una respuesta a una solicitud de **SetHoldOnMailboxes** .</span><span class="sxs-lookup"><span data-stu-id="afeef-104">The **SetHoldOnMailboxesResponse** element represents a response to a **SetHoldOnMailboxes** request.</span></span> 
   
 ```XML
 <SetHoldOnMailboxesResponse>
@@ -29,36 +29,36 @@ ms.locfileid: "19837418"
 </SetHoldOnMailboxesResponse>
 ```
 
- <span data-ttu-id="49022-105">**SetHoldOnMailboxesResponseMessageType**</span><span class="sxs-lookup"><span data-stu-id="49022-105">**SetHoldOnMailboxesResponseMessageType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="49022-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="49022-106">Attributes and elements</span></span>
+ <span data-ttu-id="afeef-105">**SetHoldOnMailboxesResponseMessageType**</span><span class="sxs-lookup"><span data-stu-id="afeef-105">**SetHoldOnMailboxesResponseMessageType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="afeef-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="afeef-106">Attributes and elements</span></span>
 
-<span data-ttu-id="49022-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="49022-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="afeef-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="afeef-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="49022-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="49022-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="afeef-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="afeef-108">Attributes</span></span>
 
-<span data-ttu-id="49022-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="49022-109">None.</span></span>
+<span data-ttu-id="afeef-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="afeef-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="49022-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="49022-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="afeef-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="afeef-110">Child elements</span></span>
 
-<span data-ttu-id="49022-111">[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [MailboxHoldResult](mailboxholdresult.md)</span><span class="sxs-lookup"><span data-stu-id="49022-111">[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [MailboxHoldResult](mailboxholdresult.md)</span></span>
+<span data-ttu-id="afeef-111">[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [MailboxHoldResult](mailboxholdresult.md)</span><span class="sxs-lookup"><span data-stu-id="afeef-111">[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [MailboxHoldResult](mailboxholdresult.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="49022-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="49022-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="afeef-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="afeef-112">Parent elements</span></span>
 
-<span data-ttu-id="49022-113">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="49022-113">None.</span></span>
+<span data-ttu-id="afeef-113">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="afeef-113">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="49022-114">Observaciones</span><span class="sxs-lookup"><span data-stu-id="49022-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="afeef-114">Comentarios</span><span class="sxs-lookup"><span data-stu-id="afeef-114">Remarks</span></span>
 
-<span data-ttu-id="49022-115">Este elemento se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="49022-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="afeef-115">Este elemento se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="afeef-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="49022-116">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="49022-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="afeef-116">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="afeef-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="49022-117">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="49022-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="afeef-117">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="afeef-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="49022-118">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="49022-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="49022-119">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="49022-119">Schema name</span></span>  <br/> |<span data-ttu-id="49022-120">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="49022-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="49022-121">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="49022-121">Validation file</span></span>  <br/> |<span data-ttu-id="49022-122">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="49022-122">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="49022-123">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="49022-123">Can be empty</span></span>  <br/> |<span data-ttu-id="49022-124">falso</span><span class="sxs-lookup"><span data-stu-id="49022-124">false</span></span>  <br/> |
+|<span data-ttu-id="afeef-118">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="afeef-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="afeef-119">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="afeef-119">Schema name</span></span>  <br/> |<span data-ttu-id="afeef-120">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="afeef-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="afeef-121">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="afeef-121">Validation file</span></span>  <br/> |<span data-ttu-id="afeef-122">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="afeef-122">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="afeef-123">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="afeef-123">Can be empty</span></span>  <br/> |<span data-ttu-id="afeef-124">falso</span><span class="sxs-lookup"><span data-stu-id="afeef-124">false</span></span>  <br/> |
    
 

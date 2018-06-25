@@ -12,12 +12,12 @@ ms.openlocfilehash: 550cf984bf3df8334909dc6206799d6cf36f46c9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837089"
 ---
-# <a name="removedistributiongroupfromimlist"></a><span data-ttu-id="0c5ff-103">RemoveDistributionGroupFromImList</span><span class="sxs-lookup"><span data-stu-id="0c5ff-103">RemoveDistributionGroupFromImList</span></span>
+# <a name="removedistributiongroupfromimlist"></a><span data-ttu-id="8ef11-103">RemoveDistributionGroupFromImList</span><span class="sxs-lookup"><span data-stu-id="8ef11-103">RemoveDistributionGroupFromImList</span></span>
 
-<span data-ttu-id="0c5ff-104">El elemento **RemoveDistributionGroupFromImList** representa una solicitud para quitar un instantánea mensajería distribución lista grupo específico.</span><span class="sxs-lookup"><span data-stu-id="0c5ff-104">The **RemoveDistributionGroupFromImList** element represents a request to remove a specific instant messaging distribution list group.</span></span> 
+<span data-ttu-id="8ef11-104">El elemento **RemoveDistributionGroupFromImList** representa una solicitud para quitar un instantánea mensajería distribución lista grupo específico.</span><span class="sxs-lookup"><span data-stu-id="8ef11-104">The **RemoveDistributionGroupFromImList** element represents a request to remove a specific instant messaging distribution list group.</span></span> 
   
 ```XML
 <RemoveDistributionGroupFromImList>
@@ -25,36 +25,36 @@ ms.locfileid: "19837089"
 </RemoveDistributionGroupFromImList>
 ```
 
- <span data-ttu-id="0c5ff-105">**RemoveDistributionGroupFromImListType**</span><span class="sxs-lookup"><span data-stu-id="0c5ff-105">**RemoveDistributionGroupFromImListType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="0c5ff-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="0c5ff-106">Attributes and elements</span></span>
+ <span data-ttu-id="8ef11-105">**RemoveDistributionGroupFromImListType**</span><span class="sxs-lookup"><span data-stu-id="8ef11-105">**RemoveDistributionGroupFromImListType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="8ef11-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="8ef11-106">Attributes and elements</span></span>
 
-<span data-ttu-id="0c5ff-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="0c5ff-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="8ef11-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="8ef11-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="0c5ff-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="0c5ff-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="8ef11-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="8ef11-108">Attributes</span></span>
 
-<span data-ttu-id="0c5ff-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="0c5ff-109">None.</span></span>
+<span data-ttu-id="8ef11-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="8ef11-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="0c5ff-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="0c5ff-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="8ef11-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="8ef11-110">Child elements</span></span>
 
-[<span data-ttu-id="0c5ff-111">GroupId</span><span class="sxs-lookup"><span data-stu-id="0c5ff-111">GroupId</span></span>](groupid.md)
+[<span data-ttu-id="8ef11-111">GroupId</span><span class="sxs-lookup"><span data-stu-id="8ef11-111">GroupId</span></span>](groupid.md)
   
-### <a name="parent-elements"></a><span data-ttu-id="0c5ff-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="0c5ff-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="8ef11-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="8ef11-112">Parent elements</span></span>
 
-<span data-ttu-id="0c5ff-113">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="0c5ff-113">None.</span></span>
+<span data-ttu-id="8ef11-113">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="8ef11-113">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="0c5ff-114">Observaciones</span><span class="sxs-lookup"><span data-stu-id="0c5ff-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8ef11-114">Comentarios</span><span class="sxs-lookup"><span data-stu-id="8ef11-114">Remarks</span></span>
 
-<span data-ttu-id="0c5ff-115">Este elemento se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="0c5ff-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="8ef11-115">Este elemento se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="8ef11-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="0c5ff-116">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="0c5ff-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="8ef11-116">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="8ef11-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="0c5ff-117">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="0c5ff-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="8ef11-117">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="8ef11-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="0c5ff-118">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="0c5ff-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="0c5ff-119">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="0c5ff-119">Schema name</span></span>  <br/> |<span data-ttu-id="0c5ff-120">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="0c5ff-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="0c5ff-121">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="0c5ff-121">Validation file</span></span>  <br/> |<span data-ttu-id="0c5ff-122">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="0c5ff-122">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="0c5ff-123">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="0c5ff-123">Can be empty</span></span>  <br/> |<span data-ttu-id="0c5ff-124">falso</span><span class="sxs-lookup"><span data-stu-id="0c5ff-124">false</span></span>  <br/> |
+|<span data-ttu-id="8ef11-118">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="8ef11-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="8ef11-119">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="8ef11-119">Schema name</span></span>  <br/> |<span data-ttu-id="8ef11-120">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="8ef11-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="8ef11-121">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="8ef11-121">Validation file</span></span>  <br/> |<span data-ttu-id="8ef11-122">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="8ef11-122">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="8ef11-123">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="8ef11-123">Can be empty</span></span>  <br/> |<span data-ttu-id="8ef11-124">falso</span><span class="sxs-lookup"><span data-stu-id="8ef11-124">false</span></span>  <br/> |
    
 

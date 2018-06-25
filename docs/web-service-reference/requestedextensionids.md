@@ -12,12 +12,12 @@ ms.openlocfilehash: da7e7817179a608cff896e67d71aea992aac674e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837142"
 ---
-# <a name="requestedextensionids"></a><span data-ttu-id="42950-103">RequestedExtensionIds</span><span class="sxs-lookup"><span data-stu-id="42950-103">RequestedExtensionIds</span></span>
+# <a name="requestedextensionids"></a><span data-ttu-id="e6882-103">RequestedExtensionIds</span><span class="sxs-lookup"><span data-stu-id="e6882-103">RequestedExtensionIds</span></span>
 
-<span data-ttu-id="42950-104">El elemento **RequestedExtensionIds** contiene una matriz de identificadores de extensión.</span><span class="sxs-lookup"><span data-stu-id="42950-104">The **RequestedExtensionIds** element contains an array of extension identifiers.</span></span> 
+<span data-ttu-id="e6882-104">El elemento **RequestedExtensionIds** contiene una matriz de identificadores de extensión.</span><span class="sxs-lookup"><span data-stu-id="e6882-104">The **RequestedExtensionIds** element contains an array of extension identifiers.</span></span> 
   
 ```XML
 <RequestedExtensionIds>
@@ -25,36 +25,36 @@ ms.locfileid: "19837142"
 </RequestedExtensionIds>
 ```
 
- <span data-ttu-id="42950-105">**ArrayOfStringsType**</span><span class="sxs-lookup"><span data-stu-id="42950-105">**ArrayOfStringsType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="42950-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="42950-106">Attributes and elements</span></span>
+ <span data-ttu-id="e6882-105">**ArrayOfStringsType**</span><span class="sxs-lookup"><span data-stu-id="e6882-105">**ArrayOfStringsType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="e6882-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="e6882-106">Attributes and elements</span></span>
 
-<span data-ttu-id="42950-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="42950-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="e6882-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="e6882-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="42950-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="42950-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="e6882-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="e6882-108">Attributes</span></span>
 
-<span data-ttu-id="42950-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="42950-109">None.</span></span>
+<span data-ttu-id="e6882-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="e6882-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="42950-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="42950-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="e6882-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="e6882-110">Child elements</span></span>
 
-[<span data-ttu-id="42950-111">String</span><span class="sxs-lookup"><span data-stu-id="42950-111">String</span></span>](string.md)
+[<span data-ttu-id="e6882-111">String</span><span class="sxs-lookup"><span data-stu-id="e6882-111">String</span></span>](string.md)
   
-### <a name="parent-elements"></a><span data-ttu-id="42950-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="42950-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="e6882-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="e6882-112">Parent elements</span></span>
 
-[<span data-ttu-id="42950-113">GetClientExtension</span><span class="sxs-lookup"><span data-stu-id="42950-113">GetClientExtension</span></span>](getclientextension.md)
+[<span data-ttu-id="e6882-113">GetClientExtension</span><span class="sxs-lookup"><span data-stu-id="e6882-113">GetClientExtension</span></span>](getclientextension.md)
   
-## <a name="remarks"></a><span data-ttu-id="42950-114">Notas</span><span class="sxs-lookup"><span data-stu-id="42950-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e6882-114">Comentarios</span><span class="sxs-lookup"><span data-stu-id="e6882-114">Remarks</span></span>
 
-<span data-ttu-id="42950-115">Este elemento se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="42950-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="e6882-115">Este elemento se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="e6882-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="42950-116">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="42950-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="e6882-116">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="e6882-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="42950-117">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="42950-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="e6882-117">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="e6882-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="42950-118">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="42950-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="42950-119">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="42950-119">Schema name</span></span>  <br/> |<span data-ttu-id="42950-120">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="42950-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="42950-121">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="42950-121">Validation file</span></span>  <br/> |<span data-ttu-id="42950-122">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="42950-122">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="42950-123">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="42950-123">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="e6882-118">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="e6882-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="e6882-119">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="e6882-119">Schema name</span></span>  <br/> |<span data-ttu-id="e6882-120">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="e6882-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="e6882-121">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="e6882-121">Validation file</span></span>  <br/> |<span data-ttu-id="e6882-122">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="e6882-122">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="e6882-123">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="e6882-123">Can be empty</span></span>  <br/> ||
    
 

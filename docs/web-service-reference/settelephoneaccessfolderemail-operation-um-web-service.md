@@ -15,20 +15,20 @@ ms.openlocfilehash: 9497e58f66b8efcf7e358aa529223942298a3bed
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837459"
 ---
-# <a name="settelephoneaccessfolderemail-operation-um-web-service"></a><span data-ttu-id="624fd-103">Operación SetTelephoneAccessFolderEmail (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="624fd-103">SetTelephoneAccessFolderEmail operation (UM web service)</span></span>
+# <a name="settelephoneaccessfolderemail-operation-um-web-service"></a><span data-ttu-id="b4811-103">Operación SetTelephoneAccessFolderEmail (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="b4811-103">SetTelephoneAccessFolderEmail operation (UM web service)</span></span>
 
-<span data-ttu-id="624fd-104">La operación SetTelephoneAccessFolderEmail establece la carpeta desde la que mensajería unificada leerá atrás mensajes al usuario a través del teléfono.</span><span class="sxs-lookup"><span data-stu-id="624fd-104">The SetTelephoneAccessFolderEmail operation sets the folder from which Unified Messaging will read back messages to the user over the telephone.</span></span>
+<span data-ttu-id="b4811-104">La operación SetTelephoneAccessFolderEmail establece la carpeta desde la que mensajería unificada leerá atrás mensajes al usuario a través del teléfono.</span><span class="sxs-lookup"><span data-stu-id="b4811-104">The SetTelephoneAccessFolderEmail operation sets the folder from which Unified Messaging will read back messages to the user over the telephone.</span></span>
   
-## <a name="settelephoneaccessfolderemail-request-example"></a><span data-ttu-id="624fd-105">Ejemplo de solicitud de SetTelephoneAccessFolderEmail</span><span class="sxs-lookup"><span data-stu-id="624fd-105">SetTelephoneAccessFolderEmail request example</span></span>
+## <a name="settelephoneaccessfolderemail-request-example"></a><span data-ttu-id="b4811-105">Ejemplo de solicitud de SetTelephoneAccessFolderEmail</span><span class="sxs-lookup"><span data-stu-id="b4811-105">SetTelephoneAccessFolderEmail request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="624fd-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="624fd-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="b4811-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="b4811-106">Description</span></span>
 
-<span data-ttu-id="624fd-107">El siguiente ejemplo de una solicitud de SetTelephoneAccessFolderEmail muestra cómo formar una solicitud para establecer la carpeta desde la que va a mensajería unificada leer al usuario a través del teléfono.</span><span class="sxs-lookup"><span data-stu-id="624fd-107">The following example of a SetTelephoneAccessFolderEmail request shows how to form a request to set the folder from which Unified Messaging will read back to the user over the telephone.</span></span>
+<span data-ttu-id="b4811-107">El siguiente ejemplo de una solicitud de SetTelephoneAccessFolderEmail muestra cómo formar una solicitud para establecer la carpeta desde la que va a mensajería unificada leer al usuario a través del teléfono.</span><span class="sxs-lookup"><span data-stu-id="b4811-107">The following example of a SetTelephoneAccessFolderEmail request shows how to form a request to set the folder from which Unified Messaging will read back to the user over the telephone.</span></span>
   
-### <a name="code"></a><span data-ttu-id="624fd-108">Código</span><span class="sxs-lookup"><span data-stu-id="624fd-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="b4811-108">Código</span><span class="sxs-lookup"><span data-stu-id="b4811-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -41,13 +41,13 @@ ms.locfileid: "19837459"
 </soap:Envelope>
 ```
 
-## <a name="successful-settelephoneaccessfolderemail-response-example"></a><span data-ttu-id="624fd-109">Ejemplo de respuesta correcta de SetTelephoneAccessFolderEmail</span><span class="sxs-lookup"><span data-stu-id="624fd-109">Successful SetTelephoneAccessFolderEmail response example</span></span>
+## <a name="successful-settelephoneaccessfolderemail-response-example"></a><span data-ttu-id="b4811-109">Ejemplo de respuesta correcta de SetTelephoneAccessFolderEmail</span><span class="sxs-lookup"><span data-stu-id="b4811-109">Successful SetTelephoneAccessFolderEmail response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="624fd-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="624fd-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="b4811-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="b4811-110">Description</span></span>
 
-<span data-ttu-id="624fd-111">El siguiente ejemplo de una respuesta SetTelephoneAccessFolderEmail muestra una respuesta a la solicitud de SetTelephoneAccessFolderEmail.</span><span class="sxs-lookup"><span data-stu-id="624fd-111">The following example of a SetTelephoneAccessFolderEmail response shows a response to the SetTelephoneAccessFolderEmail request.</span></span>
+<span data-ttu-id="b4811-111">El siguiente ejemplo de una respuesta SetTelephoneAccessFolderEmail muestra una respuesta a la solicitud de SetTelephoneAccessFolderEmail.</span><span class="sxs-lookup"><span data-stu-id="b4811-111">The following example of a SetTelephoneAccessFolderEmail response shows a response to the SetTelephoneAccessFolderEmail request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="624fd-112">Código</span><span class="sxs-lookup"><span data-stu-id="624fd-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="b4811-112">Código</span><span class="sxs-lookup"><span data-stu-id="b4811-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -58,13 +58,13 @@ ms.locfileid: "19837459"
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="624fd-113">Ver también</span><span class="sxs-lookup"><span data-stu-id="624fd-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b4811-113">Vea también</span><span class="sxs-lookup"><span data-stu-id="b4811-113">See also</span></span>
 
 
 
-[<span data-ttu-id="624fd-114">SetTelephoneAccessFolderEmail (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="624fd-114">SetTelephoneAccessFolderEmail (UM web service)</span></span>](settelephoneaccessfolderemail-um-web-service.md)
+[<span data-ttu-id="b4811-114">SetTelephoneAccessFolderEmail (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="b4811-114">SetTelephoneAccessFolderEmail (UM web service)</span></span>](settelephoneaccessfolderemail-um-web-service.md)
   
-[<span data-ttu-id="624fd-115">SetTelephoneAccessFolderEmailResponse (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="624fd-115">SetTelephoneAccessFolderEmailResponse (UM web service)</span></span>](settelephoneaccessfolderemailresponse-um-web-service.md)
+[<span data-ttu-id="b4811-115">SetTelephoneAccessFolderEmailResponse (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="b4811-115">SetTelephoneAccessFolderEmailResponse (UM web service)</span></span>](settelephoneaccessfolderemailresponse-um-web-service.md)
   
-[<span data-ttu-id="624fd-116">base64FolderId (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="624fd-116">base64FolderId (UM web service)</span></span>](base64folderid-um-web-service.md)
+[<span data-ttu-id="b4811-116">base64FolderId (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="b4811-116">base64FolderId (UM web service)</span></span>](base64folderid-um-web-service.md)
 
