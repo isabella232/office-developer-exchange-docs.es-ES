@@ -12,7 +12,7 @@ ms.openlocfilehash: d6cd5aab1145f6006912541c8f8c1d0a91d1e17e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836835"
 ---
 # <a name="policytag"></a>PolicyTag
@@ -46,7 +46,7 @@ Ninguno.
 
 El valor de texto del elemento **PolicyTag** es el identificador de etiqueta de directiva. El identificador de etiqueta de directiva es un GUID. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

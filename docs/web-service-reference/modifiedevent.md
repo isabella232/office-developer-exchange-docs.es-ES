@@ -16,7 +16,7 @@ ms.openlocfilehash: fb464fb0a270d8ca7d33d40e5425e260970b2f1e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836482"
 ---
 # <a name="modifiedevent"></a>ModifiedEvent
@@ -59,7 +59,7 @@ Ninguno.
 |:-----|:-----|
 |[Notificación](notification-ex15websvcsotherref.md) <br/> |Contiene información acerca de la suscripción y los eventos que se han producido desde la última notificación.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Se generan dos eventos modificados para cada modificación de un elemento en una carpeta. Un evento es relevante para el elemento que ha cambiado. El otro evento es relevante para la carpeta principal del elemento. Esto es la misma carpeta que se creó la suscripción contra. El evento que está asociado a la carpeta se usa para comunicarse un cambio posible para la propiedad [UnreadCount](unreadcount.md) en la carpeta. 
   
@@ -74,7 +74,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

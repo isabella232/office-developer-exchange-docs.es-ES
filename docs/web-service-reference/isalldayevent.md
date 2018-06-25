@@ -16,7 +16,7 @@ ms.openlocfilehash: 81cf1e7d8338275540f264de7cbf194005e7770c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835983"
 ---
 # <a name="isalldayevent"></a>IsAllDayEvent
@@ -51,7 +51,7 @@ Ninguno.
 
 Si este elemento se incluye, se requiere un valor de texto que representa un valor de tipo Boolean. Un valor de **true** indica que el elemento representa un evento de día completo. Un valor de **false** indica que el elemento se ocupa menos de horas de trabajo de un usuario. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Un evento de día completo abarca la duración de horas de trabajo que se define para un buzón de correo.
   
@@ -66,7 +66,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

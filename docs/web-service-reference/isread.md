@@ -16,7 +16,7 @@ ms.openlocfilehash: bfa44eab1831b519aa7b515aaad456683e580299
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836096"
 ---
 # <a name="isread"></a>Estáleído
@@ -57,7 +57,7 @@ Ninguno.
 
 Un valor de texto de **true** indica que se ha leído el mensaje. Un valor de texto de **false** indica que no se ha leído el mensaje. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Si [IsReadReceiptRequested](isreadreceiptrequested.md) es **true**, al establecer **estáleído** en **true** , envía una confirmación de lectura. El destinatario puede suprimir confirmaciones de lectura al enviar el objeto de respuesta [SuppressReadReceipt](suppressreadreceipt.md) antes de establecer la propiedad **estáleído** . 
   
@@ -72,7 +72,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

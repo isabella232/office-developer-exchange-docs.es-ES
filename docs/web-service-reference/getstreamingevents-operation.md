@@ -16,7 +16,7 @@ ms.openlocfilehash: 0e93be7b14cb1ca6a2a9821b016f7bdc0e8d7772
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835673"
 ---
 # <a name="getstreamingevents-operation"></a>Operación GetStreamingEvents
@@ -153,7 +153,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **G
 </soap:Envelope>
 ```
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Cuando se procesa una solicitud de **GetStreamingEvents** , el servidor de acceso de cliente lleva a cabo los siguientes pasos: 
   
@@ -171,7 +171,7 @@ Cuando se procesa una solicitud de **GetStreamingEvents** , el servidor de acces
     
 7. Se restablece el temporizador de tiempo de espera de la suscripción.
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -15,7 +15,7 @@ ms.openlocfilehash: b55bb45d6654f57503879f33e1cd5013ddb69a2e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836818"
 ---
 # <a name="playonphone-operation-um-web-service"></a>Operación PlayOnPhone (servicio web de mensajería unificada)
@@ -61,7 +61,7 @@ El siguiente ejemplo de una respuesta PlayOnPhone muestra una respuesta a la sol
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: 3678bd94851633fcca9817c020106670b57d110c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836245"
 ---
 # <a name="location-calendareventdetails"></a>Ubicación (CalendarEventDetails)
@@ -66,7 +66,7 @@ Ninguno.
 
 Si este elemento se devuelve en la respuesta, es necesario un valor de texto. Este elemento puede contener una cadena vacía. Este elemento es opcional si se utiliza el elemento [CalendarEventDetails](calendareventdetails.md) . 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se asigna a una propiedad con nombre de MAPI PR_Location.
   
@@ -81,7 +81,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

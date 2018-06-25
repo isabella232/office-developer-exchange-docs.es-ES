@@ -13,7 +13,7 @@ ms.openlocfilehash: 4689c306bb805a40fea0d58c9e04a5a47d3bb14d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836506"
 ---
 # <a name="name-soap"></a>Nombre (SOAP)
@@ -64,7 +64,7 @@ El valor de texto del elemento **Name** es el nombre de una opción de configura
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetDomainSettings (SOAP)](getdomainsettings-operation-soap.md)
 - [Operación GetUserSettings (SOAP)](getusersettings-operation-soap.md)

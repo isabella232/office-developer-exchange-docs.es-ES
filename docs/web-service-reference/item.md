@@ -16,7 +16,7 @@ ms.openlocfilehash: 7af8e063c3bfd77bd87b80463c11c58d996626b5
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836143"
 ---
 # <a name="item"></a>Elemento
@@ -136,7 +136,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Es importante tener en cuenta que **ItemType** es el tipo base para la [tarea](task.md), [CalendarItem](calendaritem.md), [contacto](contact.md), [DistributionList](distributionlist.md)y [mensaje](message-ex15websvcsotherref.md).
   
@@ -153,7 +153,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

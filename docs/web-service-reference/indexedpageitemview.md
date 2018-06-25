@@ -16,7 +16,7 @@ ms.openlocfilehash: f1743e22087158c1889977f03774fccbc5577390
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835919"
 ---
 # <a name="indexedpageitemview"></a>IndexedPageItemView
@@ -58,7 +58,7 @@ Ninguno.
 |[FindItem](finditem.md) <br/> |Define una solicitud para buscar elementos en un buzón de correo.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/FindItem` <br/> |
 |[FindConversation](findconversation.md) <br/> |Define una solicitud para buscar las conversaciones en un buzón de correo.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Buscar desde el final implica mover para el origen identificado por el desplazamiento. Además, el puntero se mueve de nuevo el número de registros solicitados. Por ejemplo, si hay 100 registros y el desplazamiento es 25 desde el final, la búsqueda comienza desde 75. Si se devuelven 10 registros, el puntero se mueve hacia atrás un 10 adicionales a 65 de registros y devuelve los registros 65 a través de 75. El siguiente índice es 64. El desplazamiento desde el final de una página siguiente es 100 menos 64 que es igual a 36. 36 es el valor para el desvío siguiente desde el final para obtener la siguiente página indizada.
   
@@ -105,7 +105,7 @@ En el ejemplo siguiente se muestra una solicitud de [operación FindItem](findit
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 735be6a0f6ec53bd0e270fa7a4d5dc43af926b88
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836200"
 ---
 # <a name="lastattempttime"></a>LastAttemptTime
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **LastAttemptTime** representa una hora y fecha en que se realizó el último intento de índice del elemento. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

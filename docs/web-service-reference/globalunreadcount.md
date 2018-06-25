@@ -16,7 +16,7 @@ ms.openlocfilehash: fe001b70633198c0c1351e3c11c9542ed556a938
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835743"
 ---
 # <a name="globalunreadcount"></a>GlobalUnreadCount
@@ -58,7 +58,7 @@ Ninguno.
 
 El valor de texto del elemento **GlobalUnreadCount** es un valor entero que representa un recuento de todos los elementos no leídos de conversación en el buzón de correo. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda Exchange Web Services.This elemento fue introdujo en Exchange Server 2010 Service Pack 1 (SP1).
   
@@ -71,7 +71,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

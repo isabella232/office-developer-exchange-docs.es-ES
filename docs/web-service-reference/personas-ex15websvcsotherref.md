@@ -12,7 +12,7 @@ ms.openlocfilehash: 288478e74a31f60018284b07e41a0b07f38c61dc
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836737"
 ---
 # <a name="personas"></a>Personas
@@ -42,7 +42,7 @@ Ninguno.
 
 [ImItemList](imitemlist.md)
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

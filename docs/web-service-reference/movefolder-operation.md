@@ -16,14 +16,14 @@ ms.openlocfilehash: 5da6929f11ce9ba74db190db6d799f25974d2192
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836490"
 ---
 # <a name="movefolder-operation"></a>Operación MoveFolder
 
 La operación MoveFolder mueve las carpetas de una carpeta especificada y coloca en otra carpeta.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La operación MoveFolder es similar a la operación CopyFolder. No se puede mover carpetas distintivos. Puede mover varias carpetas a la vez a la carpeta de destino.
   
@@ -189,7 +189,7 @@ La respuesta de error MoveFolder incluye los siguientes elementos:
     
 - [Carpetas](folders-ex15websvcsotherref.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

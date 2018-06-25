@@ -12,7 +12,7 @@ ms.openlocfilehash: 38589f8d8efb58e109de59ebf9b5e56556ab58af
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836876"
 ---
 # <a name="preview"></a>Vista previa
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento de vista previa es los primeros 256 caracteres del elemento.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: 9457cdabe99c0adcb8183cbc039cc86db881fec7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835952"
 ---
 # <a name="internetmessageheader"></a>InternetMessageHeader
@@ -52,7 +52,7 @@ Ninguno.
 
 El valor de texto representa el valor del encabezado.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La siguiente es la API administrada de EWS extendido definición de propiedad para la propiedad **PR_TRANSPORT_MESSAGE_HEADERS** . 
   
@@ -71,7 +71,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

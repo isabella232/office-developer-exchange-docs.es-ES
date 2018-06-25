@@ -16,7 +16,7 @@ ms.openlocfilehash: 542b9fae0c36b0236bd806e8a9117753968e812c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836449"
 ---
 # <a name="mergedfreebusy"></a>MergedFreeBusy
@@ -68,7 +68,7 @@ Un valor de texto es proporcionado por el servidor si el valor para el elemento 
     
 El valor de texto es una secuencia de información de disponibilidad. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La secuencia de datos proporcionados por este elemento se define por los elementos [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) y [ventana de tiempo](timewindow.md) . El elemento de la [ventana de tiempo](timewindow.md) define el intervalo de tiempo de consulta de la disponibilidad. El elemento [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) define cómo se divide el tiempo desde el elemento de la [ventana de tiempo](timewindow.md) en intervalos devueltos en el elemento **MergedFreeBusy** . Cada número en la secuencia de **MergedFreeBusy** representa un intervalo único definido por el elemento [MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) . En la siguiente tabla se enumera los valores posibles para un intervalo individual. 
   
@@ -95,7 +95,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

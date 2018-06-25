@@ -13,7 +13,7 @@ ms.openlocfilehash: f7ec1dea29a7d3ad6d470ef7812390d179fe1d2a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836243"
 ---
 # <a name="legacydn-pox"></a>LegacyDN (POX)
@@ -47,11 +47,11 @@ Ninguno.
 
 El valor de texto representa la dirección de correo electrónico heredado de un usuario.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) es un elemento alternativo para una solicitud de detección automática. Se utiliza cuando existe un buzón de correo en un equipo que ejecuta Microsoft Exchange Server 2007. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

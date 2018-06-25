@@ -13,7 +13,7 @@ ms.openlocfilehash: a8797fe714fd23049094c3ec2475b93fec4282c0
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836867"
 ---
 # <a name="pox-autodiscover-web-service-reference-for-exchange"></a>Referencia de servicio web POX de detección automática de Exchange
@@ -38,7 +38,7 @@ Los artículos de esta sección proporcionan ejemplos y descripciones de los men
     
 - [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Referencia de servicio web de detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)
 - [Detección automática de Exchange](../exchange-web-services/autodiscover-for-exchange.md)   

@@ -12,7 +12,7 @@ ms.openlocfilehash: 3deca2419b70ac530581bd0160a3f63ea32a359d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835884"
 ---
 # <a name="imagebase64-setencryptionconfigurationtype"></a>ImageBase64 (SetEncryptionConfigurationType)
@@ -35,7 +35,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).
   

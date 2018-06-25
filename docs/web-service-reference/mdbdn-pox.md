@@ -13,7 +13,7 @@ ms.openlocfilehash: d7910cdca2e2013f6b8432c4af606c0f8354a6bb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836389"
 ---
 # <a name="mdbdn-pox"></a>MdbDN (POX)
@@ -56,7 +56,7 @@ Ninguno.
 
 El valor de texto representa el nombre distintivo (DN) de la base de datos de buzón de correo.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

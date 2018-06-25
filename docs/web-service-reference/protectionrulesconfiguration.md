@@ -16,7 +16,7 @@ ms.openlocfilehash: 9c286fcf9752d591d53323f45a264f4bdd078c1c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836912"
 ---
 # <a name="protectionrulesconfiguration"></a>ProtectionRulesConfiguration
@@ -58,7 +58,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La configuración del servicio de las reglas de protección está formada por una lista de reglas, dominios internos y un intervalo de actualización.
   
@@ -73,7 +73,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

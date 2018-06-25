@@ -12,7 +12,7 @@ ms.openlocfilehash: 11e66e61fc6f20bec8b92ac5107e82bf92daba8f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836285"
 ---
 # <a name="mailboxes-nonemptyarrayoflegacydnstype"></a>Buzones de correo (NonEmptyArrayOfLegacyDNsType)
@@ -43,7 +43,7 @@ Ninguno.
 
 [GetNonIndexableItemStatistics](getnonindexableitemstatistics.md)
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: 7c2f31aa27c1cbde6cdad2b41a341916b4bed2ce
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835669"
 ---
 # <a name="getsharingfolder"></a>GetSharingFolder
@@ -48,7 +48,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Un elemento GetSharingFolder debe contener un elemento [SmtpAddress](smtpaddress.md) . Un elemento GetSharingFolder también debe contener un elemento de [tipo de datos](datatype.md) o un elemento [SharedFolderId](sharedfolderid.md) , pero no puede contener ambas. 
   
@@ -63,7 +63,7 @@ El esquema que describe este elemento se encuentra en el directorio Virtual de I
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: 8b23f5142a15c099c30209ea48cd04f4af4e8c6a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835762"
 ---
 # <a name="groupindex"></a>GroupIndex
@@ -64,7 +64,7 @@ Ninguno.
 
 Se requiere un valor de texto. Esta propiedad es de sólo lectura.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento sólo se produce en una respuesta de [la operación FindItem](finditem-operation.md) . 
   
@@ -79,7 +79,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

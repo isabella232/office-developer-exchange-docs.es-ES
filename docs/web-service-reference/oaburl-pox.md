@@ -13,7 +13,7 @@ ms.openlocfilehash: dda622e24892f2a8f0b2186483683ff6d3c28a22
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836633"
 ---
 # <a name="oaburl-pox"></a>OABUrl (POX)
@@ -56,7 +56,7 @@ Ninguno.
 
 El valor de texto especifica la dirección URL de servidor de libreta de direcciones sin conexión configuración para una topología de Exchange.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

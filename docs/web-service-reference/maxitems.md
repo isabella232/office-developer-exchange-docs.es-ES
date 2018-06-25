@@ -12,7 +12,7 @@ ms.openlocfilehash: dffb9ba4e29915a65fe2a57b6e7a7b4468028fa1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836384"
 ---
 # <a name="maxitems"></a>MaxItems
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **MaxItems** es el número máximo de elementos para devolver en la solicitud. Este número no puede ser menor que cero o mayor que 200. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -59,7 +59,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

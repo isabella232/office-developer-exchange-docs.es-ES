@@ -16,7 +16,7 @@ ms.openlocfilehash: 7d84547eafe4e77fb23a792fbf15633dbf93d775
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836436"
 ---
 # <a name="meetingworkspaceurl"></a>MeetingWorkspaceUrl
@@ -51,7 +51,7 @@ Ninguno.
 
 Si se usa este elemento, es necesario un valor de texto que representa una dirección URL.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La propiedad MeetingWorkspaceUrl es modificable para la lectura de elemento de calendario del organizador de la. Es de sólo lectura para las convocatorias de reunión y elementos de calendario de los asistentes.
   
@@ -66,7 +66,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

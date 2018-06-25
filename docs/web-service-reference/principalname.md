@@ -16,7 +16,7 @@ ms.openlocfilehash: d8557ce0435a11a5602372517db1f576028a9c97
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836882"
 ---
 # <a name="principalname"></a>PrincipalName
@@ -50,7 +50,7 @@ Ninguno.
 
 El valor de texto representa el UPN de un usuario. Este valor existe en el objeto de usuario en el servicio de directorio de Active Directory. Contiene el nombre de inicio de sesión de usuario y un nombre de dominio que identifica el dominio en la que la cuenta de usuario se encuentra en el siguiente formato: `someone@example.com`.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -63,7 +63,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

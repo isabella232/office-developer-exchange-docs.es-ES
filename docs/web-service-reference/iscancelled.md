@@ -16,7 +16,7 @@ ms.openlocfilehash: 594b8a9ccb535f074a8cf1da060373f640231a29
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835993"
 ---
 # <a name="iscancelled"></a>IsCancelled
@@ -51,7 +51,7 @@ Ninguno.
 
 Si este elemento se incluye, se requiere un valor de texto que representa un valor de tipo Boolean. Un valor de **true** indica que se ha cancelado el elemento de calendario. Un valor de **false** indica que no se ha cancelado un elemento de calendario. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -64,7 +64,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

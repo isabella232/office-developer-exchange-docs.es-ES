@@ -16,7 +16,7 @@ ms.openlocfilehash: addb86ece2be3091ac55a52ee2f16f5c5f72ae41
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835958"
 ---
 # <a name="invalidrecipient-mailtips"></a>InvalidRecipient (sugerencias de correo electrónico)
@@ -50,7 +50,7 @@ Ninguno.
 
 El valor de texto de este elemento es **true** si el destinatario no es válido. El valor es **false** si el destinatario no es válido. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -63,7 +63,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

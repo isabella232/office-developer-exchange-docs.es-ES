@@ -12,7 +12,7 @@ ms.openlocfilehash: 683131a5cefd6757faf582324f312b01fd9ddb33
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836838"
 ---
 # <a name="policytipsenabled"></a>PolicyTipsEnabled
@@ -44,7 +44,7 @@ Ninguno.
 
 Un valor de texto de **true** para el elemento **PolicyTipsEnabled** indica que las sugerencias de directiva están habilitados para un buzón de correo. Un valor de **false** indica que las sugerencias de directivas no están habilitados para un buzón de correo. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

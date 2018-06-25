@@ -16,7 +16,7 @@ ms.openlocfilehash: 73d052ef16bc51cd574eb8b04e21546f97347258
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836476"
 ---
 # <a name="month"></a>Mes
@@ -51,7 +51,7 @@ Ninguno.
 
 Se requiere un valor de texto. El valor representa la clasificación ordinal del mes por repetición y debe ser un número comprendido entre 1 y 12. Esto es un tipo de datos entero corto.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Un elemento [StandardTime](standardtime.md) que contiene un elemento [DayOrder](dayorder.md) que tiene un valor de 5, un elemento de **mes** que tiene un valor de 10 y un elemento [DayOfWeek (TimeZone)](dayofweek-timezone.md) que tiene un valor del domingo significa la transición desde el horario estándar para horario de verano se produce el domingo quinto del décimo mes. 
   
@@ -64,7 +64,7 @@ Un elemento [StandardTime](standardtime.md) que contiene un elemento [DayOrder](
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)
 - [Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)

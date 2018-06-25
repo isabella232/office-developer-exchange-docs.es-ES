@@ -13,7 +13,7 @@ ms.openlocfilehash: 48d6c30946e75936ed93a6f4507d8a8d3ae47d40
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836865"
 ---
 # <a name="pox-autodiscover-request-for-exchange"></a>Solicitud de detección automática POX para Exchange
@@ -76,7 +76,7 @@ El encabezado X-MapiHttpCapability está disponible en Office 365, Exchange Onli
   
 El encabezado X-ClientCanHandle está disponible en Office 365, Exchange Online, locales y en versiones de Exchange inicio con compilación 15.00.0995.014.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

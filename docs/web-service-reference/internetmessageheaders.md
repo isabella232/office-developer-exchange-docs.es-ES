@@ -16,7 +16,7 @@ ms.openlocfilehash: 2da529a8a3532cebb2791b285b7673c962a2a656
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835954"
 ---
 # <a name="internetmessageheaders"></a>InternetMessageHeaders
@@ -63,7 +63,7 @@ Ninguno.
 |[Tarea](task.md) <br/> |Representa una tarea en el almacén de Exchange.  <br/> |
 |[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |Representa una respuesta a una convocatoria de reunión aceptada provisionalmente.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La siguiente es la API administrada de EWS extendido definición de propiedad para la propiedad **PR_TRANSPORT_MESSAGE_HEADERS** . 
   
@@ -82,7 +82,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

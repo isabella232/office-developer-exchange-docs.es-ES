@@ -12,7 +12,7 @@ ms.openlocfilehash: 82b4624df5b2fe7ca212fdf76248e1ccfa3a081f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836127"
 ---
 # <a name="isundecidedapprovalrequest"></a>IsUndecidedApprovalRequest
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **IsUndecidedApprovalRequest** es **true** si un mensaje de solicitud de aprobación no ha sido actúa en. Un valor de **false** indica que se haya decidido la solicitud de aprobación. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).
   
@@ -59,7 +59,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

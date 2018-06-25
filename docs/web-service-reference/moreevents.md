@@ -16,7 +16,7 @@ ms.openlocfilehash: cc3f7ed3b4b5f5ce27a9d45d508506bfa62e5086
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836489"
 ---
 # <a name="moreevents"></a>MoreEvents
@@ -50,7 +50,7 @@ Ninguno.
 
 El valor de texto representa un valor de tipo Boolean. Un valor de **true** indica que son más eventos en la cola. Un valor de **false** indica que no hay más eventos están en la cola. Esta propiedad es de sólo lectura. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 En el caso de las notificaciones de extracción, un valor **true** en este elemento indica al cliente que se debe emitir otra solicitud GetEvents para obtener los eventos restantes. Suponiendo que las especificaciones de cliente necesitan la latencia mínima para las notificaciones de eventos, Solicitudes GetEvents deberían seguir en una sucesión continua hasta que se devuelve **false** el valor de **MoreEvents** . 
   
@@ -67,7 +67,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

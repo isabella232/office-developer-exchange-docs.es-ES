@@ -16,7 +16,7 @@ ms.openlocfilehash: 60f2d42f09347611559137c494d93036f1192829
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836465"
 ---
 # <a name="mimecontent"></a>MimeContent
@@ -50,7 +50,7 @@ Ninguno.
 
 Un valor de texto que representa una secuencia MIME base64Binary es necesario si se usa este elemento.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El contenido del mensaje circula a través de los tres niveles siguientes de codificación antes de que se almacene en el valor de **MimeContent** : 
   
@@ -75,7 +75,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

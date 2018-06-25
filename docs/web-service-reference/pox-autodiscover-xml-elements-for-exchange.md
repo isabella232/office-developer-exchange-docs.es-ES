@@ -13,7 +13,7 @@ ms.openlocfilehash: 6fb7b34d366e2d1d72c32d4c3e76f4b19266a6c5
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836864"
 ---
 # <a name="pox-autodiscover-xml-elements-for-exchange"></a>Elementos de Autodiscover XML POX para Exchange
@@ -31,7 +31,7 @@ La documentación de esta sección se basa en las instancias del elemento XML de
   
 [Referencia de servicio de web de mensajería unificada de Exchange](unified-messaging-web-service-reference-for-exchange.md)
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Referencia de servicio web de detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)
 - [Detección automática de Exchange](../exchange-web-services/autodiscover-for-exchange.md)

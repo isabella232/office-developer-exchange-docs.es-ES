@@ -16,7 +16,7 @@ ms.openlocfilehash: 9003560a89b83032b4dd1b7ff54f3101819cc3c8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836266"
 ---
 # <a name="mailboxculture"></a>MailboxCulture
@@ -49,7 +49,7 @@ Ninguno.
 
 El valor de texto indica el idioma que se usa en las operaciones del servicio Web de Exchange. Los valores posibles para este elemento se describen en RFC 3066.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Exchange Server con la función de servidor de acceso de cliente instalada.
   
@@ -62,7 +62,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: a0e4f9390d5dc368388b5a20e38796c6c0157a40
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835943"
 ---
 # <a name="instancekey"></a>InstanceKey
@@ -47,7 +47,7 @@ Ninguno.
 
 El valor de texto del elemento **InstanceKey** es la clave de instancia de un elemento o conversación. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -62,7 +62,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

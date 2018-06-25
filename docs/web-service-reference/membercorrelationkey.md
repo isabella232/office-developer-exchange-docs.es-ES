@@ -12,7 +12,7 @@ ms.openlocfilehash: 4e45a86a5ead48576dcab7f3a53e1c3ad72ec173
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836445"
 ---
 # <a name="membercorrelationkey"></a>MemberCorrelationKey
@@ -43,7 +43,7 @@ Ninguno.
 
 [ImGroup](imgroup.md)
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

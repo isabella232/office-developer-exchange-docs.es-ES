@@ -16,7 +16,7 @@ ms.openlocfilehash: 60b2c018f2a05e9630e92e28de1054a421b41e52
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836303"
 ---
 # <a name="mailboxsmtpaddress"></a>MailboxSmtpAddress
@@ -53,7 +53,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El elemento **MailboxSmtpAddress** es un elemento opcional. Si se omite el elemento **MailboxSmtpAddress** , se usa la dirección del usuario que ha iniciado la sesión. 
   
@@ -68,7 +68,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación de GetInboxRules](getinboxrules-operation.md)
 - [Operación GetPasswordExpirationDate](getpasswordexpirationdate-operation.md)

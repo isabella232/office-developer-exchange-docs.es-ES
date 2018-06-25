@@ -12,7 +12,7 @@ ms.openlocfilehash: 7ffbe1727cef9e4b78b951ba5c2b3c1303502280
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836162"
 ---
 # <a name="itemversion"></a>ItemVersion
@@ -40,7 +40,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

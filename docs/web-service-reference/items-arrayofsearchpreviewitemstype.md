@@ -12,7 +12,7 @@ ms.openlocfilehash: 6c6b4410ec4f6fa3d7c49d43b515908353233794
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836153"
 ---
 # <a name="items-arrayofsearchpreviewitemstype"></a>Elementos (ArrayOfSearchPreviewItemsType)
@@ -42,7 +42,7 @@ Ninguno.
 
 [SearchMailboxesResult](searchmailboxesresult.md)
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: 1e43582bdffcf9066b33da2b0ec6b066d52e127a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836049"
 ---
 # <a name="ismeetingrequest"></a>IsMeetingRequest
@@ -51,7 +51,7 @@ Ninguno.
 
 Un valor de texto de **true** indica que el mensaje debe ser una convocatoria de reunión en orden para la condición o la excepción que se debe aplicar. Un valor de **false** indica que el mensaje no debe ser una convocatoria de reunión en orden para la condición o la excepción que se debe aplicar. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -64,7 +64,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

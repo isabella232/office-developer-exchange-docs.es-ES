@@ -13,7 +13,7 @@ ms.openlocfilehash: 8bb8f766da3419ea33f89716e588a22d3924e1a4
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835704"
 ---
 # <a name="getusersettings-operation-soap"></a>Operación GetUserSettings (SOAP)
@@ -178,7 +178,7 @@ En el cuerpo de la respuesta se usan los siguientes elementos:
     
 - [Valor (SOAP)](value-soap.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

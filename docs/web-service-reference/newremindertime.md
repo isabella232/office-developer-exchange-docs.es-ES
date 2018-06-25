@@ -12,7 +12,7 @@ ms.openlocfilehash: 9f3f509942c673c916cc646cd9519240aef6ea06
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836531"
 ---
 # <a name="newremindertime"></a>NewReminderTime
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **NewReminderTime** es una nueva hora para el aviso. El elemento **NewReminderTime** se usa cuando se establece el elemento de [ActionType](actiontype-reminderactiontype.md) para **Posponer**, con el fin de retraso el aviso. El valor de la **NewReminderTime** debe ser mayor que el [ReminderTime](remindertime.md) devuelto por la [operación de GetReminders](getreminders-operation.md).
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -59,7 +59,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

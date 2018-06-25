@@ -16,7 +16,7 @@ ms.openlocfilehash: 13a5679a03420655356269a7e8b5e22950724164
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836383"
 ---
 # <a name="maxmessagesize"></a>MaxMessageSize
@@ -51,7 +51,7 @@ Ninguno.
 
 El valor de texto es un número entero que representa el tamaño máximo de mensaje un destinatario puede aceptar. Este valor se puede medir en kilobytes o megabytes.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -64,7 +64,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

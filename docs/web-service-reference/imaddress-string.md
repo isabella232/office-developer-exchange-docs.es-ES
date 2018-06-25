@@ -12,7 +12,7 @@ ms.openlocfilehash: 3d4af2a7df14e68a2c829b1e8d0a18493fb06f55
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835860"
 ---
 # <a name="imaddress-string"></a>ImAddress (cadena)
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **ImAddress** es la dirección de mensajería instantánea principal de un rol. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

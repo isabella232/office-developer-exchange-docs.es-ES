@@ -12,7 +12,7 @@ ms.openlocfilehash: 6c7912d71eb05de3f6bd805bfb27543c543d2be4
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835859"
 ---
 # <a name="imaddress-nonemptystringtype"></a>ImAddress (NonEmptyStringType)
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **ImAddress** es una dirección de mensajería instantánea. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

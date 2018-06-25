@@ -16,7 +16,7 @@ ms.openlocfilehash: e2e04d83310e7a8a731cca655a432325574cd9e8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835671"
 ---
 # <a name="getsharingmetadata-operation"></a>Operación GetSharingMetadata
@@ -196,7 +196,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **G
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

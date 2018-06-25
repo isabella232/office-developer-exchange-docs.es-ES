@@ -12,7 +12,7 @@ ms.openlocfilehash: 409339857b727144226f4ca233075196eef4308a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836748"
 ---
 # <a name="personatype"></a>PersonaType
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **PersonaType** es el tipo de rol. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

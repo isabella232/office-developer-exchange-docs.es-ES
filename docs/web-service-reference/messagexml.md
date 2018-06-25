@@ -16,7 +16,7 @@ ms.openlocfilehash: 8b6d201fe35c99a65f920ed7f60c33a2271fbd2e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836470"
 ---
 # <a name="messagexml"></a>MessageXml
@@ -92,7 +92,7 @@ Ninguno.
 |[GetServiceConfigurationResponse](getserviceconfigurationresponse.md) <br/> |Contiene una respuesta a una solicitud de **GetServiceConfiguration** .  <br/> |
 |[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |Contiene la configuración del servicio.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento no es necesario y no se incluye en todas las respuestas. Se incluye para los mensajes de error. En las solicitudes que implican las carpetas o elementos, el elemento **MessageXML** contendrá uno o más elementos que contienen a los identificadores URI a las propiedades que causó el error. Un ejemplo de esto es el elemento [FieldURI](fielduri.md) . 
   
@@ -109,7 +109,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: bc5160480cc6881bb9d724aa61323f5717d1f2fa
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836636"
 ---
 # <a name="occurrence-time-zone-transition"></a>Aparición (transición de la zona horaria)
@@ -62,7 +62,7 @@ El valor de texto es un entero que representa la aparición del día de la seman
 |-3  <br/> |La tercera aparición de día de la semana, desde el final del mes especificado.  <br/> |
 |-4  <br/> |La cuarta aparición del día de la semana, desde el final del mes especificado.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.
   
@@ -75,7 +75,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: de9773407294bcc51fb7b3dab2e1dce0996e6edb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836677"
 ---
 # <a name="pagedirection"></a>PageDirection
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **PageDirection** es la dirección para la paginación de los resultados de búsqueda. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

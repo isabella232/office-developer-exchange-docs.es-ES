@@ -16,7 +16,7 @@ ms.openlocfilehash: 940f8e8fa0a53801ce1c3a45c3aecf1bdb6f519d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836898"
 ---
 # <a name="processrightaway"></a>ProcessRightAway
@@ -58,7 +58,7 @@ Ninguno.
 
 Un valor de texto de **true** indica que la respuesta se envía tan pronto como la acción inicia el procesamiento en el servidor. Un valor de texto de **false** indica que la respuesta se ha enviado una vez completada la acción. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda Exchange Web Services.This elemento fue introdujo en Exchange Server 2010 Service Pack 1 (SP1).
   
@@ -71,7 +71,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 36f22fee2cd8ef4743476e7d12512504daee12e4
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836683"
 ---
 # <a name="pageitemreference"></a>PageItemReference
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **PageItemReference** es la referencia para un elemento de página. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

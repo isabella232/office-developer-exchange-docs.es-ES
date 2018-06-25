@@ -16,7 +16,7 @@ ms.openlocfilehash: f97c050aec102b384fa4d98e6dee43befd4dc9ca
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836651"
 ---
 # <a name="oofstate"></a>OofState
@@ -59,7 +59,7 @@ Un valor de texto es necesario para el elemento **OofState** . En la lista sigui
     
 Un valor de **programada** indica que el estado de fuera de la oficina se establece en **habilitado** durante un período de tiempo identificado por el elemento de [duración (UserOofSettings)](duration-useroofsettings.md) . 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento es necesario en el mensaje de SetUsersOofSettingRequest y el mensaje GetUserOofSettingResponse.
   
@@ -107,7 +107,7 @@ El siguiente ejemplo de una solicitud de SetUserOofSettings permite la **OofStat
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

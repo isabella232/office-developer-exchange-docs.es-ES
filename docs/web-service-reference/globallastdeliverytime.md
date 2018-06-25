@@ -16,7 +16,7 @@ ms.openlocfilehash: fded5cd1891a406f0979cf4bec7321779d70ab3a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835733"
 ---
 # <a name="globallastdeliverytime"></a>GlobalLastDeliveryTime
@@ -58,7 +58,7 @@ Ninguno.
 
 El valor de texto del elemento **GlobalLastDeliveryTime** es la fecha y la hora del mensaje que se recibió por última vez en esta conversación a través de todas las carpetas del buzón de correo. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2010 Service Pack 1 (SP1). El esquema que describe este elemento se encuentra en el directorio virtual de IIS que aloja los servicios Web de Exchange.
   
@@ -71,7 +71,7 @@ Este elemento se introdujo en Exchange Server 2010 Service Pack 1 (SP1). El esqu
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

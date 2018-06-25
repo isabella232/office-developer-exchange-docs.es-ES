@@ -16,7 +16,7 @@ ms.openlocfilehash: 241a56ee23e87d6a4320b93cc65b1f5aa1f60120
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836163"
 ---
 # <a name="items"></a>Elementos
@@ -76,7 +76,7 @@ Ninguno.
 |[RootFolder (FindItemResponseMessage)](rootfolder-finditemresponsemessage.md) <br/> |Contiene los resultados de una búsqueda de una sola carpeta raíz durante una [operación de FindItem](finditem-operation.md).  <br/> |
 |[UpdateItemResponseMessage](updateitemresponsemessage.md) <br/> |Contiene el estado y el resultado de una solicitud de [operación UpdateItem](updateitem-operation.md) .  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Para obtener información sobre el conjunto de elementos en una solicitud de [operación CreateItem](createitem-operation.md) , vea [elementos (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md).
   
@@ -93,7 +93,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

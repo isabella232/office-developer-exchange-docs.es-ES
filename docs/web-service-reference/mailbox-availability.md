@@ -16,7 +16,7 @@ ms.openlocfilehash: 2e901ae0df56542f56f247184254294735018468
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836254"
 ---
 # <a name="mailbox-availability"></a>Buzón de correo (disponibilidad)
@@ -56,7 +56,7 @@ Ninguno.
 |[GetUserOofSettingsRequest](getuseroofsettingsrequest.md) <br/> |Se usa para obtener la configuración de fuera de oficina (OOF) y los mensajes de un usuario de buzón de correo.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserOofSettingsRequest` <br/> |
 |[SetUserOofSettingsRequest](setuseroofsettingsrequest.md) <br/> |Se usa para establecer la configuración de fuera de la oficina y los mensajes de un usuario de buzón de correo.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/SetUserOofSettingsRequest` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La dirección de correo electrónico se usa para identificar la carpeta de calendario que contiene la configuración de fuera de la oficina. 
   
@@ -71,7 +71,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserOofSettings](getuseroofsettings-operation.md)
 - [Operación SetUserOofSettings](setuseroofsettings-operation.md)

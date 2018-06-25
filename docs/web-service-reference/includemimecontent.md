@@ -16,7 +16,7 @@ ms.openlocfilehash: ddd6988be93231ac7c574a2e19c9ba4b562c7d0e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835903"
 ---
 # <a name="includemimecontent"></a>IncludeMimeContent
@@ -51,7 +51,7 @@ Ninguno.
 
 Este elemento puede ser **true** o **false**. El valor predeterminado es **false**. Esto es un tipo de datos Boolean.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento es opcional.
   

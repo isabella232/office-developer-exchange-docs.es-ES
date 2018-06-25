@@ -16,7 +16,7 @@ ms.openlocfilehash: 7f146a8472362b8f3cd4062a4af2ce452e204742
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836149"
 ---
 # <a name="itemclass"></a>ItemClass
@@ -67,7 +67,7 @@ Un valor de texto que sea coherente con el tipo del elemento puede ser necesario
   
 Se devuelve un error si el **ItemClass** se establece en un valor que no es coherente con el tipo de elemento. Por ejemplo, de un mensaje **ItemClass** no puede establecerse en el valor de **ItemClass** para una tarea. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -80,7 +80,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 9fab8254c8a91bc87c1c54d55ddfd2864583dea5
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836682"
 ---
 # <a name="pageitemsize"></a>PageItemSize
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **PageItemSize** es el número de elementos devueltos en una paginación de resultado de búsqueda. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

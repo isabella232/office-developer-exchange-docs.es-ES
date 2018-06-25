@@ -12,7 +12,7 @@ ms.openlocfilehash: 47599b6634738fd488e5b020f69e36d5fcf550a6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836466"
 ---
 # <a name="mimecontentutf8"></a>MimeContentUTF8
@@ -46,7 +46,7 @@ Ninguno.
 
 Un valor de texto que representa una secuencia MIME base64binary es necesario si se usa este elemento.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El contenido del mensaje circula a través de los tres niveles siguientes de codificación antes de que se almacene en el valor de **MimeContentUTF8** : 
   
@@ -75,7 +75,7 @@ Este elemento está disponible en las versiones de Exchange a partir de compilac
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: bb1349a8690450882e6beac0ccd84a8d03272a7d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836051"
 ---
 # <a name="ismeeting"></a>IsMeeting
@@ -51,7 +51,7 @@ Ninguno.
 
 Si este elemento se incluye, se requiere un valor de texto que representa un valor de tipo Boolean. Un valor de **true** indica que el elemento de calendario es una reunión. Un valor de **false** indica que el elemento de calendario es una cita. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -64,7 +64,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

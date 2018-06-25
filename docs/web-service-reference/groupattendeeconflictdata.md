@@ -16,7 +16,7 @@ ms.openlocfilehash: 382b4d866c95de98bd444cd6226d71813889d4f4
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835757"
 ---
 # <a name="groupattendeeconflictdata"></a>GroupAttendeeConflictData
@@ -66,7 +66,7 @@ Ninguno.
 |:-----|:-----|
 |[AttendeeConflictDataArray](attendeeconflictdataarray.md) <br/> |Contiene una matriz de datos en conflicto para los asistentes consultados identificados en la [operación GetUserAvailability](getuseravailability-operation.md).  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **GroupAttendeeConflictData** está presente en la respuesta cuando un asistente en el [GetUserAvailabilityRequest](getuseravailabilityrequest.md) se resuelve en una lista de distribución. El elemento **GroupAttendeeConflictData** identifica los tres estados para los miembros de una lista de distribución: disponibles, con conflictos, o sin datos. Expansión de la lista de distribución será compatible con un máximo de 100 miembros. Por lo tanto, el elemento de [NumberOfMembers](numberofmembers.md) puede contener un máximo de 100 miembros. Expansión de la lista de distribución es recursiva. Si una lista de distribución contiene una lista de distribución secundaria que se expande la pertenencia primario total a más de 100 miembros, la lista de distribución secundarios no se expandirán y se cuenta como una sola entrada de la cuenta de elementos [NumberOfMembersWithNoData](numberofmemberswithnodata.md) . Si se puede expandir una lista de distribución secundaria y no expandir la pertenencia de primario total a más de 100 miembros, su pertenencia al grupo se expande y se agregan los recuentos de miembros para los elementos secundarios del elemento **GroupAttendeeConflictData** . 
   
@@ -81,7 +81,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)

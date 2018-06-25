@@ -13,7 +13,7 @@ ms.openlocfilehash: d9f8a5cc86efaa4dceda7385164872ecc5409252
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836863"
 ---
 # <a name="pox-autodiscover-response-for-exchange"></a>Respuesta de detección automática POX para Exchange
@@ -159,7 +159,7 @@ En el cuerpo de la respuesta se usan los siguientes elementos:
     
 - [DebugData (POX)](debugdata-pox.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Solicitud de detección automática POX para Exchange](pox-autodiscover-request-for-exchange.md)
 - [Referencia de servicio web POX de detección automática de Exchange](pox-autodiscover-web-service-reference-for-exchange.md) 

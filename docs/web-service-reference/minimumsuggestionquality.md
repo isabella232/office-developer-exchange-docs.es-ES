@@ -16,7 +16,7 @@ ms.openlocfilehash: ac79682bd761f678f23fc2d698a50fd7704f6fab
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836468"
 ---
 # <a name="minimumsuggestionquality"></a>MinimumSuggestionQuality
@@ -63,7 +63,7 @@ Se requiere un valor de texto. En la siguiente tabla se enumera los valores posi
 |**Razonable** <br/> |El porcentaje que se considera razonable se establece mediante el elemento [GoodThreshold](goodthreshold.md) .  <br/> |
 |**Deficiente** <br/> |50% o más de los asistentes tienen un conflicto con la hora de la reunión sugerida.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento es necesario si se usa el elemento [SuggestionsViewOptions](suggestionsviewoptions.md) . 
   
@@ -79,7 +79,7 @@ Este elemento es necesario si se usa el elemento [SuggestionsViewOptions](sugges
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

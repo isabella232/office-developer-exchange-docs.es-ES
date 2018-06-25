@@ -16,7 +16,7 @@ ms.openlocfilehash: 7269587e2fa72aeb9070a7b53ee9215829729329
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836432"
 ---
 # <a name="meetingrequesttype"></a>MeetingRequestType
@@ -60,7 +60,7 @@ Se requiere un valor de texto. En la siguiente tabla se enumera los posibles val
 |PrincipalWantsCopy  <br/> |Indica que la convocatoria de reunión pertenece a una entidad de seguridad que se reenvió los mensajes de reunión a un delegado y tiene sus copias marcados como informativos.  <br/> |
 |SilentUpdate  <br/> |Identifica la convocatoria de reunión como una actualización silenciosa a una reunión existente.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -73,7 +73,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: 8044cb2b52cb572fad8731253dffa34de9d097fa
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835746"
 ---
 # <a name="goodthreshold"></a>GoodThreshold
@@ -56,7 +56,7 @@ Ninguno.
 
 Se requiere un valor de texto. Los valores enteros esperado están entre 0 y 50.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento es necesario si se usa el elemento [SuggestionsViewOptions](suggestionsviewoptions.md) . El elemento **GoodThreshold** también determina qué reuniones se consideran justo. Es que el porcentaje de los asistentes con conflictos es que menor que el umbral de buena y superiores al 50 por ciento, el tiempo de la reunión sugerida certifica como justo. El umbral de buena más de 50 es igual al porcentaje que define el umbral bueno/justo. 
   
@@ -72,7 +72,7 @@ Este elemento es necesario si se usa el elemento [SuggestionsViewOptions](sugges
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

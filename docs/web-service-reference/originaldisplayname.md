@@ -12,7 +12,7 @@ ms.openlocfilehash: e54a94688206c2cf5d1f715bd5de82f3e5ded3ae
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836667"
 ---
 # <a name="originaldisplayname"></a>OriginalDisplayName
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **OriginalDisplayName** es el nombre para mostrar original asociado con una dirección de correo electrónico. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: 406a1974899e89243f52ba7a56afcc172c4f3df6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835786"
 ---
 # <a name="groups"></a>Grupos
@@ -50,7 +50,7 @@ Ninguno.
 |:-----|:-----|
 |[RootFolder (FindItemResponseMessage)](rootfolder-finditemresponsemessage.md) <br/> |Contiene los resultados de una búsqueda de una sola carpeta raíz durante una operación de [operación FindItem](finditem-operation.md) .  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Se producirá una instancia de [GroupedItems](groupeditems.md) para cada grupo de distinto en el resultado. 
   
@@ -65,7 +65,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

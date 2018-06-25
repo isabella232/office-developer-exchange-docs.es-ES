@@ -11,7 +11,7 @@ ms.openlocfilehash: bcde002c794ac79d9515befc0755c1f954ee8706
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835781"
 ---
 # <a name="groupinginformation-pox"></a>GroupingInformation (POX)
@@ -54,11 +54,11 @@ Ninguno.
 
 El valor de texto se compara con el valor del elemento **GroupingInformation** para otros buzones de correo. Los buzones que tienen el mismo valor y usar el mismo extremo de servicios Web de Exchange (EWS) se pueden agrupar para mantener la afinidad. Para obtener más detalles, vea [mantener la afinidad entre un grupo de suscripciones y el servidor de buzones en Exchange](http://msdn.microsoft.com/library/1bda4094-88c3-4f61-9219-6ee70f6e81cf%28Office.15%29.aspx).
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **GroupingInformation** sólo es aplicable a los elementos de **protocolo** que tienen un elemento secundario de [Tipo (POX)](type-pox.md) con un valor de "EXPR". 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 - [Mantener la afinidad entre un grupo de suscripciones y el servidor de buzones de Exchange](http://msdn.microsoft.com/library/1bda4094-88c3-4f61-9219-6ee70f6e81cf%28Office.15%29.aspx)

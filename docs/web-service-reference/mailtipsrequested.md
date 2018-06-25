@@ -16,7 +16,7 @@ ms.openlocfilehash: fa2bef394ea8473aa65bdc2f1d39c0794186fdc6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836348"
 ---
 # <a name="mailtipsrequested"></a>MailTipsRequested
@@ -63,7 +63,7 @@ En la siguiente tabla se enumera los valores posibles para el elemento **MailTip
 |ModerationStatus  <br/> |Indica si el mensaje del remitente será revisado por un moderador.  <br/> |
 |InvalidRecipient  <br/> |Indica si el destinatario no es válido.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -76,7 +76,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

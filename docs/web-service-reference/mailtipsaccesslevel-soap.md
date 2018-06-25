@@ -11,7 +11,7 @@ ms.openlocfilehash: 35fb4aa56bbfa42ac4be196a379dc48aff5ec101
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836313"
 ---
 # <a name="mailtipsaccesslevel-soap"></a>MailTipsAccessLevel (SOAP)
@@ -41,7 +41,7 @@ Ninguno.
 |:-----|:-----|
 |[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Representa una lista de relaciones de organización para una sola organización.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento especifica la cantidad máxima de detalle de sugerencias de correo que se devuelve en la respuesta.
   
@@ -54,7 +54,7 @@ Este elemento especifica la cantidad máxima de detalle de sugerencias de correo
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

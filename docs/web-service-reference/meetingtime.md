@@ -16,7 +16,7 @@ ms.openlocfilehash: 1ea79be394124431aa1279ee94d5e5c6331d377b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836435"
 ---
 # <a name="meetingtime"></a>MeetingTime
@@ -64,7 +64,7 @@ Ninguno.
 
 Se requiere un valor de texto que representa un valor **dateTime** . 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento [MeetingTime](meetingtime.md) es un elemento secundario necesario del elemento [Sugerencia](suggestion.md) . 
   
@@ -79,7 +79,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: 75a734999842cc33c213e02dc114f23372ae51fd
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835691"
 ---
 # <a name="getuseroofsettings-operation"></a>Operación GetUserOofSettings
@@ -176,7 +176,7 @@ En el ejemplo siguiente se muestra una respuesta de error debida a un intento de
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -13,7 +13,7 @@ ms.openlocfilehash: ca619d4c36e17ca9a811019f0a13b45353cab1e2
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836333"
 ---
 # <a name="majorversion-soap"></a>MajorVersion (SOAP)
@@ -56,7 +56,7 @@ El valor de texto para el elemento **MajorVersion** es un entero que representa 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

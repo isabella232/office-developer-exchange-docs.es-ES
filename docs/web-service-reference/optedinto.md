@@ -12,7 +12,7 @@ ms.openlocfilehash: 0d8fb2b07c6c98ba6973ab6efabe9c35d2d1ac12
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836657"
 ---
 # <a name="optedinto"></a>OptedInto
@@ -44,7 +44,7 @@ Ninguno.
 
 Un valor de texto de **true** para el elemento **OptedInto** indica que el usuario suscrito a la directiva de retención. Un valor de **false** indica que el usuario no participar en la directiva de retención. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

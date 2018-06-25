@@ -12,7 +12,7 @@ ms.openlocfilehash: 995a6219f0a3b41bddb0d65c875d981322e1ce78
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836354"
 ---
 # <a name="markallitemsasread-operation"></a>Operación MarkAllItemsAsRead
@@ -209,7 +209,7 @@ La respuesta de error SOAP body contiene los siguientes elementos:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
     

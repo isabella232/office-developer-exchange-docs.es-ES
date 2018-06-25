@@ -12,7 +12,7 @@ ms.openlocfilehash: d17e6c10f6b84df0e3063201cccf9e1683f9ecb7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836784"
 ---
 # <a name="phoneticlastname"></a>PhoneticLastName
@@ -46,7 +46,7 @@ Ninguno.
 
 El valor de texto es una cadena que representa el apellido de un contacto, escrito fonéticamente.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -61,7 +61,7 @@ Este elemento se introdujo en Exchange Server 2010 Service Pack 2 (SP2).
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

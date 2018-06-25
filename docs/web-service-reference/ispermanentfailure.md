@@ -12,7 +12,7 @@ ms.openlocfilehash: 39592c15394a57e1c6aa1183ed0ccedeb085e6ea
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836085"
 ---
 # <a name="ispermanentfailure"></a>IsPermanentFailure
@@ -44,7 +44,7 @@ Ninguno.
 
 Un valor de texto de **true** para el elemento **IsPermanentFailure** indica que un intento anterior de índice del elemento de buzón de correo ha podido realizar. Un valor de **false** indica que un intento anterior de índice del elemento de buzón de correo se realizó correctamente. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

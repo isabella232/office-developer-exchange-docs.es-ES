@@ -16,7 +16,7 @@ ms.openlocfilehash: 18e53221ecdf60df195445ed7692c03795bdcc1e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836717"
 ---
 # <a name="percentcomplete"></a>PercentComplete
@@ -50,7 +50,7 @@ Ninguno.
 
 Se requiere un valor de texto que representa un número entero entre 0 y 100.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Si se establece **PercentComplete** en 100 tiene el mismo efecto que establecer el elemento [CompleteDate](completedate.md) o establecer el elemento de [estado](status.md) en **completada**. En una solicitud que conjuntos de al menos dos de estas propiedades, la última propiedad procesada determinará el valor que se establece para estos elementos. Por ejemplo, si **PercentComplete** es 100, [CompleteDate](completedate.md) es el 1 de enero de 2007 y [estado](status.md) es no iniciado y las propiedades se transmiten en este orden, el efecto será establecer el [estado](status.md) de la tarea en NotStarted, el [ CompleteDate](completedate.md) en **null**y **PercentComplete** en 0. 
   
@@ -65,7 +65,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

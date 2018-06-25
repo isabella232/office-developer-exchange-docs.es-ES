@@ -16,7 +16,7 @@ ms.openlocfilehash: d7232377951e8d9c8f191ac856058bc28467cadd
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836305"
 ---
 # <a name="mailboxtype"></a>MailboxType
@@ -63,7 +63,7 @@ En la siguiente tabla se enumera los valores posibles para el elemento **Mailbox
 |OneOff  <br/> |Representa a un miembro de uso único de una lista de distribución personal.  <br/> |
 |GroupMailbox  <br/> |Representa un buzón de grupo.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -76,7 +76,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

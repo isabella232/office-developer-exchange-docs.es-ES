@@ -12,7 +12,7 @@ ms.openlocfilehash: db03d1b5e79ed53313cff9677687647f24e90756
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836905"
 ---
 # <a name="proposedstart-meetingregistrationresponseobjecttype"></a>ProposedStart (MeetingRegistrationResponseObjectType)
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **ProposedStart (MeetingRegistrationResponseObjectType)** es la fecha de inicio propuesta y la hora de la reunión. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).
   
@@ -59,7 +59,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

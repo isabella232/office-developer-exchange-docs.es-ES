@@ -16,7 +16,7 @@ ms.openlocfilehash: ac5e9eadac7f45c233007ffb05f4d2430875ec52
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835955"
 ---
 # <a name="internalreply"></a>InternalReply
@@ -53,7 +53,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 |[UserOofSettings](useroofsettings.md) <br/> |Especifica la configuración de fuera de la oficina.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
 |[OofSettings](oofsettings.md) <br/> |Contiene la configuración de fuera de la oficina.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -99,7 +99,7 @@ El siguiente ejemplo de una solicitud de SetUserOofSettings la [OofState](oofsta
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

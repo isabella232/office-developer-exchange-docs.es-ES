@@ -12,7 +12,7 @@ ms.openlocfilehash: 1e904ac4d7f525b2d12cfe83f0da33b9ed474066
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836197"
 ---
 # <a name="language-discoverysearchconfigurationtype"></a>Idioma (DiscoverySearchConfigurationType)
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento de **idioma (DiscoverySearchConfigurationType)** es un idioma o referencia cultural. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento especifica el formato de los intervalos de fechas especificado en la [operación de SearchMailboxes](searchmailboxes-operation.md) o la [operación SetHoldOnMailboxes](setholdonmailboxes-operation.md).
   
@@ -61,7 +61,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

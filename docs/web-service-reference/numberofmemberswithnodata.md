@@ -16,7 +16,7 @@ ms.openlocfilehash: f73978df47bd8240dd5dabfbbf74523525e3270f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836637"
 ---
 # <a name="numberofmemberswithnodata"></a>NumberOfMembersWithNoData
@@ -64,7 +64,7 @@ Ninguno.
 |:-----|:-----|
 |[GroupAttendeeConflictData](groupattendeeconflictdata.md) <br/> |Contiene información de conflicto agregado sobre el número de usuarios que están disponibles, el número de usuarios que tienen conflictos y el número de usuarios que no tienen información de disponibilidad en una lista de distribución para una hora de reunión sugerida.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray/GroupAttendeeConflictData` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Un contacto de un grupo que no tiene un buzón de correo es un ejemplo de un miembro de la lista de distribución que no tienen datos del calendario. Un contacto también puede tener el estado de **No haber datos** por los motivos siguientes: 
   
@@ -85,7 +85,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

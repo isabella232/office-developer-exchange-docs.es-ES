@@ -12,7 +12,7 @@ ms.openlocfilehash: c2d013ce8a1f5baad058169ca3babe27466ce528
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835835"
 ---
 # <a name="homecitysortkey"></a>HomeCitySortKey
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **HomeCitySortKey** es la clave de ordenación para el nombre de la ciudad de residencia de la persona. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

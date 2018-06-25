@@ -16,7 +16,7 @@ ms.openlocfilehash: 85443c45f611a2f4bff392ffecb26029564d7558
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835715"
 ---
 # <a name="globalhasattachments"></a>GlobalHasAttachments
@@ -58,7 +58,7 @@ Ninguno.
 
 El valor del elemento **GlobalHasAttachments** indica si el elemento de al menos una conversación en un buzón de correo tiene datos adjuntos. Se requiere un valor de texto que representa un valor de tipo Boolean. Un valor de **true** significa que la conversación tiene al menos un dato adjunto visible. Un valor de **false** significa que la conversación no tiene datos adjuntos o sólo oculta los datos adjuntos. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda Exchange Web Services.This elemento fue introdujo en Exchange Server 2010 Service Pack 1 (SP1).
   
@@ -71,7 +71,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

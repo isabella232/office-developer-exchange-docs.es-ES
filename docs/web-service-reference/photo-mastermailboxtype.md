@@ -12,7 +12,7 @@ ms.openlocfilehash: 93e41e137b571403ecba9950123278b09491acbb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836783"
 ---
 # <a name="photo-mastermailboxtype"></a>Fotografías (MasterMailboxType)
@@ -35,7 +35,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).
   

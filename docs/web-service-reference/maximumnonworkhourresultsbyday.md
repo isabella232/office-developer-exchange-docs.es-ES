@@ -16,7 +16,7 @@ ms.openlocfilehash: f931dcaabda222e1579a0a4c0e0e6e49d88c6342
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836382"
 ---
 # <a name="maximumnonworkhourresultsbyday"></a>MaximumNonWorkHourResultsByDay
@@ -56,7 +56,7 @@ Ninguno.
 
 Se requiere un valor de texto. El valor de texto representa un número entero.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento es necesario si se usa el elemento [SuggestionsViewOptions](suggestionsviewoptions.md) . 
   
@@ -72,7 +72,7 @@ Este elemento es necesario si se usa el elemento [SuggestionsViewOptions](sugges
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

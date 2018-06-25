@@ -15,7 +15,7 @@ ms.openlocfilehash: 9d94a359d6b11e41762d21aa2fe5501bd9f7b577
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836107"
 ---
 # <a name="isumenabled-operation-um-web-service"></a>Operación IsUMEnabled (servicio web de mensajería unificada)
@@ -58,7 +58,7 @@ En el ejemplo siguiente se muestra una respuesta a una solicitud IsUMEnabled cor
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

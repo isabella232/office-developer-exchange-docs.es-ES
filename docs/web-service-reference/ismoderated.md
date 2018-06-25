@@ -16,7 +16,7 @@ ms.openlocfilehash: 8db234f9706bb8187978a76f745323749d7a640a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836055"
 ---
 # <a name="ismoderated"></a>IsModerated
@@ -50,7 +50,7 @@ Ninguno.
 
 El valor de texto para este elemento es **true** si se va a modera el buzón del destinatario. El valor es **false** si no se está moderado el buzón del destinatario. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -63,7 +63,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

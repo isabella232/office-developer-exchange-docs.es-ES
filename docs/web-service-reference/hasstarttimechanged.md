@@ -12,7 +12,7 @@ ms.openlocfilehash: 2096084f4ec8848a63d10e0e80fdc7a37e473cd8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835809"
 ---
 # <a name="hasstarttimechanged"></a>HasStartTimeChanged
@@ -46,7 +46,7 @@ Ninguno.
 
 Un valor de texto de **true** para el elemento **HasStartTimeChanged** indica que ha cambiado la hora de inicio para una reunión. Un valor de **false** indica que no ha cambiado la hora de inicio. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -61,7 +61,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: e2ec105accac380d27ebb4e7fc636cc538cad57f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836861"
 ---
 # <a name="postofficebox"></a>PostOfficeBox
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **PostOfficeBox** es un identificador de apartado de correos. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: e76e0ecbb357396540f0d1649cf5062edfb18660
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835801"
 ---
 # <a name="hasattachments"></a>HasAttachments
@@ -62,7 +62,7 @@ Ninguno.
 
 Se requiere un valor de texto que representa un valor de tipo Boolean. Un valor de **true** significa que el elemento o la conversación tiene al menos un dato adjunto visible. Un valor de **false** significa que la conversación o el elemento no tiene datos adjuntos o sólo se oculta los datos adjuntos. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La propiedad **HasAttachments** se calcula a partir de la propiedad Boolean MAPI **AllAttachmentsHidden** . Si un elemento no tiene datos adjuntos, la propiedad **AllAttachmentsHidden** no existe. Si se ocultan todos los datos adjuntos en el elemento, la propiedad **AllAttachmentsHidden** es **true**. La propiedad **AllAttachmentsHidden** es **false** si tiene al menos un dato adjunto y al menos uno de los datos adjuntos es visible. Utilice la propiedad **AllAttachmentsHidden** MAPI para realizar búsquedas, agrupar y ordenar los elementos. 
   
@@ -77,7 +77,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

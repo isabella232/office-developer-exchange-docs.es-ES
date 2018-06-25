@@ -16,7 +16,7 @@ ms.openlocfilehash: 4fe2cae1087ab667133ec685c3325b14c4f12088
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836330"
 ---
 # <a name="mailtipsenabled"></a>MailTipsEnabled
@@ -50,7 +50,7 @@ Ninguno.
 
 El valor de texto de este elemento es **true** si el servicio de sugerencias de correo está disponible. El valor es **false** si el servicio de sugerencias de correo no está disponible. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -63,7 +63,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: d85c0fddec244c99dfbea1f85da331fc5319536d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835753"
 ---
 # <a name="groupby"></a>GroupBy
@@ -66,7 +66,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 |:-----|:-----|
 |[FindItem](finditem.md) <br/> |Define una solicitud para buscar elementos en un buzón de correo.  <br/><br/> La siguiente es la expresión de XPath para este elemento:`/FindItem` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La respuesta FindItem contendrá una colección de grupos. Cada grupo contendrá todos los elementos que han tenido que coincidan con los valores de la propiedad **GroupBy** . La propiedad que determina la agrupación se identifica en el elemento [FieldURI](fielduri.md), [IndexedFieldURI](indexedfielduri.md)o [ExtendedFieldURI](extendedfielduri.md) . 
   
@@ -81,7 +81,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación FindItem](finditem-operation.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)

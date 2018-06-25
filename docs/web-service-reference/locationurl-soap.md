@@ -11,7 +11,7 @@ ms.openlocfilehash: a80969e532ef81fa0be2ff94d25ae604aa0c5f8c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836251"
 ---
 # <a name="locationurl-soap"></a>LocationUrl (SOAP)
@@ -54,7 +54,7 @@ El valor de texto del elemento **LocationUrl** es la dirección URL de un docume
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

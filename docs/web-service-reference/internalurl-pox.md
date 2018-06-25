@@ -11,7 +11,7 @@ ms.openlocfilehash: 3823236081961128b31bb2c0f563062897c55814
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835950"
 ---
 # <a name="internalurl-pox"></a>InternalUrl (POX)
@@ -45,13 +45,13 @@ Ninguno.
 
 El valor de texto representa una dirección URL que se puede usar para tener acceso al buzón del usuario desde dentro de la organización del usuario o un servidor de la libreta de direcciones.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **InternalUrl** puede estar presente en una respuesta que tiene un elemento de [Protocolo (POX)](protocol-pox.md) con un valor de atributo de **tipo** de "mapiHttp". 
   
 El elemento **InternalUrl** está disponible para los clientes que implementan el protocolo HTTP/MAPI y destino Exchange Online, Exchange Online como parte de Office 365, y las versiones locales de Exchange a partir creación 15.00.0847.032 (Exchange Server 2013 SP1) . 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

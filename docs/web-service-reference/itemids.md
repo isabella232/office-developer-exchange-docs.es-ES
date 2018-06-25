@@ -16,7 +16,7 @@ ms.openlocfilehash: 1bd4d6f4593a7c3b418561269d8b29707cc6030c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836155"
 ---
 # <a name="itemids"></a>ItemIds
@@ -60,7 +60,7 @@ Ninguno.
 |[MoveItem](moveitem.md) <br/> |Define una solicitud para mover los elementos en el almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/MoveItem` <br/> |
 |[CopyItem](copyitem.md) <br/> |Define una solicitud para copiar elementos en el almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/CopyItem` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -73,7 +73,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación DeleteItem](deleteitem-operation.md)
 - [Operación SendItem](senditem-operation.md) 

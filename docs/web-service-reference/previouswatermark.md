@@ -16,7 +16,7 @@ ms.openlocfilehash: 93c6f90d0866ae13618391b8544ab593fe33922b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836886"
 ---
 # <a name="previouswatermark"></a>PreviousWatermark
@@ -50,7 +50,7 @@ Ninguno.
 
 Se requiere un valor de texto. El valor de texto representa la última marca de agua. El valor de texto no puede ser una cadena vacía.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La propiedad **PreviousWatermark** es útil para el cliente en la determinación de la última notificación correcta. Por ejemplo, si una suscripción tiene tres eventos con marcas de agua de 1, 2 y 3, y se envía la notificación siguiente con un valor de **PreviousWatermark** de 3, el cliente puede comparar este valor en el valor de marca de agua de la última notificación recibida. Esto permite que el cliente garantizar la continuidad de eventos. 
   
@@ -69,7 +69,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

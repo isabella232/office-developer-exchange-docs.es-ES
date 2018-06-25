@@ -12,7 +12,7 @@ ms.openlocfilehash: ba2dcaae3befd3595815c7281858e4fa8a738e0a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835905"
 ---
 # <a name="includepersonalarchive"></a>IncludePersonalArchive
@@ -46,7 +46,7 @@ Ninguno.
 
 Un valor de texto de **true** para el elemento **IncludePersonalArchive** indica que el archivo personal está incluido en la búsqueda. Un valor de **false** indica que el archivo personal no se incluye en la búsqueda. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -59,7 +59,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

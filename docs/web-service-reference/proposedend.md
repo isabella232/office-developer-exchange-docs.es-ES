@@ -12,7 +12,7 @@ ms.openlocfilehash: fd2a6813f3a936785adc8fcea289cb547d52c8c0
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836901"
 ---
 # <a name="proposedend"></a>///ProposedEnd
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **///ProposedEnd** es la hora de finalización propuesta enviada por un Asistente para el organizador de la reunión. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

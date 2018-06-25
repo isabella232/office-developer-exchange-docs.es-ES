@@ -12,7 +12,7 @@ ms.openlocfilehash: 99f8c95aee7cc61ae7d1e8140c46d1e0ab0b14b5
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836146"
 ---
 # <a name="itemcount"></a>ItemCount
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **ItemCount** identifica el número total de elementos de un resultado de búsqueda. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

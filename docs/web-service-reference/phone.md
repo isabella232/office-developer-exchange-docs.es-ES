@@ -12,7 +12,7 @@ ms.openlocfilehash: b10a3af65784dafc4445dfcac33fb4b6372c02ce
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836747"
 ---
 # <a name="phone"></a>Teléfono
@@ -44,7 +44,7 @@ Ninguno.
 
 [PhoneNumbers (ArrayOfPhonesType)](phonenumbers-arrayofphonestype.md)
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

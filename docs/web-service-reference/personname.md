@@ -12,7 +12,7 @@ ms.openlocfilehash: 369839cd7ef49e29b570a60c12c9fcba0f6e887f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836745"
 ---
 # <a name="personname"></a>PersonName
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **PersonName** es el nombre de una persona que se encuentra como consecuencia de extracción de entidades. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

@@ -12,7 +12,7 @@ ms.openlocfilehash: 89c054186c014f9e2fc4f8116b032df91e1549b3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836680"
 ---
 # <a name="pageitemcount"></a>PageItemCount
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **PageItemCount** es el número de páginas devueltas en una paginación de resultado de búsqueda. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

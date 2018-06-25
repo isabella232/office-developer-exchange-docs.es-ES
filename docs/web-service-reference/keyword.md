@@ -12,7 +12,7 @@ ms.openlocfilehash: 4f99cb9d6c521ff4083550737b64b77927669aaf
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836188"
 ---
 # <a name="keyword"></a>Palabra clave
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento de **palabra clave** es el nombre de una sola palabra clave que representa una estadística de palabra clave única. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

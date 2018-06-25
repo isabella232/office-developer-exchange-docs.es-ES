@@ -12,7 +12,7 @@ ms.openlocfilehash: 89c9776079d686b114d6b744150f1c6df3711eab
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836293"
 ---
 # <a name="mailboxscope"></a>MailboxScope
@@ -45,7 +45,7 @@ Ninguno.
 
 El valor de texto del elemento **MailboxScope** es el ámbito de búsqueda u obtener elementos en una conversación entre ambos buzones de correo principales, archivar los buzones de correo, o ambos primaria y buzones de archivo. Un valor de texto de **PrimaryOnly** indica un ámbito que se dirige el buzón principal para un usuario. Un valor de texto de **ArchiveOnly** indica un ámbito que se dirige el buzón de archivo para un usuario. Un valor de texto de **todos los** indica un ámbito que se dirige el buzón principal y el buzón de archivo. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

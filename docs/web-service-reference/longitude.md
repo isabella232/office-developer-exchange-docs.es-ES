@@ -12,7 +12,7 @@ ms.openlocfilehash: c62e78520bc1e57822ef6d2dbfdaa8bd36e23104
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836252"
 ---
 # <a name="longitude"></a>Longitude
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento de **longitud** es las coordenadas longitudinales de la dirección postal. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

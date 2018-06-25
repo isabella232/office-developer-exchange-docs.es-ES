@@ -15,7 +15,7 @@ ms.openlocfilehash: 8878099bbd907fe0648f7d64dde3cd9600c2c45f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835678"
 ---
 # <a name="getumproperties-operation-um-web-service"></a>Operación GetUMProperties (servicio web de mensajería unificada)
@@ -64,7 +64,7 @@ El siguiente ejemplo de una respuesta GetUMProperties muestra una respuesta a la
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

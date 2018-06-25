@@ -12,7 +12,7 @@ ms.openlocfilehash: 2d8eea6418ad68866c6026c06b8a0f0f384eda6c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836290"
 ---
 # <a name="mailboxid"></a>MailboxId
@@ -45,7 +45,7 @@ Ninguno.
 
 El valor de texto del elemento **MailboxId** es el identificador de buzón de correo de un buzón de correo que se tiene acceso para la búsqueda de detección. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

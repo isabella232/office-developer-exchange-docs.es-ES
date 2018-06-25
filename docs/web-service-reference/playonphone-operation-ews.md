@@ -16,7 +16,7 @@ ms.openlocfilehash: ec77720c69862e210316d61975b0d58c9530a40c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836819"
 ---
 # <a name="playonphone-operation-ews"></a>Operación PlayOnPhone (EWS)
@@ -83,7 +83,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **Pl
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)

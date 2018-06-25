@@ -16,7 +16,7 @@ ms.openlocfilehash: c5619befb02ec20ef0911992484dcc00cc2c5e92
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836492"
 ---
 # <a name="moveitem-operation"></a>MoveItem Operation
@@ -130,7 +130,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [Items](items.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

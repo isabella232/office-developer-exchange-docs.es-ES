@@ -12,7 +12,7 @@ ms.openlocfilehash: aac3c2a599093282542025468d73c55ec4569e29
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836080"
 ---
 # <a name="isowner"></a>IsOwner
@@ -46,7 +46,7 @@ Ninguno.
 
 Un valor de texto de **true** para el elemento **IsOwner** indica que el usuario es el propietario de los derechos emitido en un elemento. Un valor de **false** indica que el usuario no es el propietario de los derechos emitido en un elemento. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -61,7 +61,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

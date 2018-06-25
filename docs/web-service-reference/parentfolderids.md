@@ -16,7 +16,7 @@ ms.openlocfilehash: 4dd23b45dcc397e29e67fc08b29dd773e50f0db1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836688"
 ---
 # <a name="parentfolderids"></a>ParentFolderIds
@@ -54,7 +54,7 @@ Ninguno.
 |[FindItem](finditem.md) <br/> |Define una solicitud para buscar elementos en un buzón de correo.  <br/> |
 |[ResolveNames](resolvenames.md) <br/> |Define una solicitud para resolver nombres ambiguos.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **ParentFolderIds** debe usar el [FolderId](folderid.md) o el elemento [DistinguishedFolderId](distinguishedfolderid.md) . Puede definirse un número ilimitado de carpetas para la búsqueda. 
   
@@ -86,7 +86,7 @@ El elemento **ParentFolderIds** debe usar el [FolderId](folderid.md) o el elemen
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación FindFolder](findfolder-operation.md)  
 - [Operación FindItem](finditem-operation.md) 

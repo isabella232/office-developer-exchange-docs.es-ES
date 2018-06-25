@@ -16,7 +16,7 @@ ms.openlocfilehash: 6d30f06c3bfd77d2715798349ab084cdf81f21a6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836505"
 ---
 # <a name="name-emailaddress"></a>Nombre (EmailAddress)
@@ -52,7 +52,7 @@ Ninguno.
 
 Si se usa este elemento, se requiere un valor de texto.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento puede aparecer como máximo una vez en el elemento de [correo electrónico (EmailAddressType)](email-emailaddresstype.md) . Este elemento no es necesario. 
   
@@ -68,7 +68,7 @@ Este elemento puede aparecer como máximo una vez en el elemento de [correo elec
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
