@@ -13,7 +13,7 @@ ms.openlocfilehash: cb5b1d6ab2109b48810b96221b76c6b8fc9803ac
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837472"
 ---
 # <a name="setting-soap"></a>Configuración (SOAP)
@@ -121,7 +121,7 @@ El valor de texto para este elemento es el valor de configuración. En la siguie
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

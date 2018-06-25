@@ -13,7 +13,7 @@ ms.openlocfilehash: fafd6684d0857bd8b7e1bac0aae0ed162a6a938a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837369"
 ---
 # <a name="server-pox"></a>Servidor (POX)
@@ -56,7 +56,7 @@ Ninguno.
 
 El valor de texto identifica el servidor. Para los protocolos, como POP3, SMTP, IMAP o NNTP, este valor será un nombre de host o una dirección IP. Para los protocolos, como DAV o WEB, será una dirección URL.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

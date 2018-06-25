@@ -12,7 +12,7 @@ ms.openlocfilehash: 750f53ae05a7ad9f5aefc9396911a23ef32cdfc2
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837211"
 ---
 # <a name="resulttype"></a>ResultType
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **ResultType** es el tipo de resultado que se devuelve para una búsqueda de detección. Un valor de texto de **StatisticsOnly** devolverá las estadísticas de búsqueda. Un valor de texto de **PreviewOnly** devolverá información de vista previa del elemento. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

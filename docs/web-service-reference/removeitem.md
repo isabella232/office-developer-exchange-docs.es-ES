@@ -16,7 +16,7 @@ ms.openlocfilehash: 6897363eba602e6a135ad255822197f9296dd44a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837108"
 ---
 # <a name="removeitem"></a>RemoveItem
@@ -53,7 +53,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 |[Elementos (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md) <br/> |Contiene una matriz de elementos que desea crear en la carpeta que se identifica con el elemento [ID (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) .  <br/> |
 |[ResponseObjects](responseobjects.md) <br/> |Contiene una colección de todos los objetos de respuesta que están asociados con un elemento en el almacén de Exchange.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
  **RemoveItem** sólo es válido para un [MeetingCancellation](meetingcancellation.md). De lo contrario, se produce un error.
   
@@ -75,7 +75,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

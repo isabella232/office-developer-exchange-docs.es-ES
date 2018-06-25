@@ -15,7 +15,7 @@ ms.openlocfilehash: ebc64d8f5e565e5efc91b4ecc52f73339aacb281
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837449"
 ---
 # <a name="setplayonphonedialstringresponse-um-web-service"></a>SetPlayOnPhoneDialStringResponse (servicio web de mensajería unificada)
@@ -58,7 +58,7 @@ Ninguno.
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

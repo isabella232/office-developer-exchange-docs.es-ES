@@ -16,7 +16,7 @@ ms.openlocfilehash: 70905dd1ae2c3df18224aceeea246b542d1338e3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837334"
 ---
 # <a name="sendersmtpaddress"></a>SenderSmtpAddress
@@ -50,7 +50,7 @@ Ninguno.
 
 Se requiere un valor de texto que representa una dirección SMTP.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio Virtual de IIS que hospeda los servicios Web Exchange del equipo que ejecuta a Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.
   
@@ -63,7 +63,7 @@ El esquema que describe este elemento se encuentra en el directorio Virtual de I
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

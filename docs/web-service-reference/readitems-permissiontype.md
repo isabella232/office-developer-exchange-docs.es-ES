@@ -16,7 +16,7 @@ ms.openlocfilehash: bf266c77106f25b90ffd174e25fb0c3972ab91cb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836961"
 ---
 # <a name="readitems-permissiontype"></a>ReadItems (PermissionType)
@@ -57,7 +57,7 @@ En la siguiente tabla se enumera los valores posibles para el elemento **ReadIte
 |None  <br/> |Indica que el usuario no tiene permiso para leer elementos de la carpeta.  <br/> |
 |FullDetails  <br/> |Indica que el usuario tiene permiso para leer todos los elementos de la carpeta.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -70,7 +70,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -15,7 +15,7 @@ ms.openlocfilehash: df28c98013e1d5c00ea120ce1aa342e9fc2c6f31
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837447"
 ---
 # <a name="setoofstatus-um-web-service"></a>SetOofStatus (servicio web de mensajería unificada)
@@ -62,7 +62,7 @@ Ninguno.
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

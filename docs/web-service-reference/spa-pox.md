@@ -13,7 +13,7 @@ ms.openlocfilehash: 1fb0f3bb40e64be89eae7dfc208d51387f532191
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837533"
 ---
 # <a name="spa-pox"></a>SPA (POX)
@@ -56,11 +56,11 @@ Ninguno.
 
 El valor de texto indica si se requiere la SPA. Si el valor de texto está **activado**, se requiere SPA.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Si este elemento no está presente, el valor predeterminado se establece en **on**.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

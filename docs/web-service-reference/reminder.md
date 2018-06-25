@@ -12,7 +12,7 @@ ms.openlocfilehash: cfa1160bd25f5045a3da5a98f081c9dcb3debe7b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837056"
 ---
 # <a name="reminder"></a>Aviso
@@ -51,7 +51,7 @@ Ninguno.
 
 [Reminders](reminders.md)
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -66,7 +66,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

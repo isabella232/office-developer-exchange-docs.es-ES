@@ -16,7 +16,7 @@ ms.openlocfilehash: 780778b1599d0d5e5f4b6e5b58b67773bbe18cda
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837336"
 ---
 # <a name="senditem-operation"></a>SendItem Operation
@@ -187,7 +187,7 @@ En la respuesta de error, se usan los siguientes elementos:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

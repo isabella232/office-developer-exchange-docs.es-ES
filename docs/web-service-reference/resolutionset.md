@@ -16,7 +16,7 @@ ms.openlocfilehash: ad7bd31c85051e8c80aea25aa9e6f2914cf0ad01
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837160"
 ---
 # <a name="resolutionset"></a>ResolutionSet
@@ -64,7 +64,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 |:-----|:-----|
 |[ResolveNamesResponseMessage](resolvenamesresponsemessage.md) <br/> |Contiene el estado y el resultado de una solicitud de ResolveNames.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Un elemento **ResolutionSet** puede contener un máximo de 100 entidades resueltos. 
   
@@ -79,7 +79,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

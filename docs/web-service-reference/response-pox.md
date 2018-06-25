@@ -13,7 +13,7 @@ ms.openlocfilehash: 0e8775c895f1b6d674b9a0141d55c64f57d236b0
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837177"
 ---
 # <a name="response-pox"></a>Respuesta (POX)
@@ -54,7 +54,7 @@ Ninguno.
 |:-----|:-----|
 |[Detección automática (POX)](autodiscover-pox.md) <br/> |El elemento raíz en una respuesta de detección automática.  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

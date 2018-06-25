@@ -16,7 +16,7 @@ ms.openlocfilehash: d40e6299bd46ede559cc2cce3bcc9d1611e96bd7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837331"
 ---
 # <a name="senderdepartments"></a>SenderDepartments
@@ -51,7 +51,7 @@ Ninguno.
 |[Condición](condition.md) <br/> |Identifica la condición que debe cumplirse para el elemento de acción de la regla que se va a ejecutar.  <br/> |
 |[Y (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |Especifica que deben coincidir con todos los elementos secundarios para evaluar en **true**. Especifica que debe haber más de una condición de secundarios de regla de protección.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -64,7 +64,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

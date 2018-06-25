@@ -12,7 +12,7 @@ ms.openlocfilehash: 8c9af251014dbddabb439ed5bf5dc35580da6a90
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837099"
 ---
 # <a name="removeimcontactfromgroup-operation"></a>Operación RemoveImContactFromGroup
@@ -147,7 +147,7 @@ La respuesta SOAP body contiene los siguientes elementos:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Las personas y los contactos de EWS en Exchange](http://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     

@@ -16,7 +16,7 @@ ms.openlocfilehash: efcea42c12ec1d26ea31fdb8de337c37a2338a96
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837492"
 ---
 # <a name="sid"></a>SID
@@ -51,7 +51,7 @@ Ninguno.
 
 El valor de texto es una representación de cadena de un SID.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Exchange Server con la función de servidor de acceso de cliente instalada.
   
@@ -64,7 +64,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

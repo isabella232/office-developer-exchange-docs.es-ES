@@ -11,7 +11,7 @@ ms.openlocfilehash: 43ebb328e31cdec11412e80b743d4d4393b7960a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837507"
 ---
 # <a name="smtpaddress-pox"></a>SmtpAddress (POX)
@@ -54,11 +54,11 @@ Ninguno.
 
 El valor de texto representa la dirección SMTP asignada a la tienda de carpeta pública configurada para el usuario. Esta dirección SMTP puede utilizarse en el elemento [EMailAddress (POX)](emailaddress-pox.md) de una solicitud de detección automática para detectar la configuración de carpetas públicas. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **SmtpAddress** es un elemento secundario necesario del elemento **PublicFolderInformation** . 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

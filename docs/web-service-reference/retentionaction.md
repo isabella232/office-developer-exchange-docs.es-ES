@@ -12,7 +12,7 @@ ms.openlocfilehash: 54a1038f2e56aad66f89522423ccfbd69dc44a80
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837215"
 ---
 # <a name="retentionaction"></a>RetentionAction
@@ -58,7 +58,7 @@ El valor de texto del elemento **RetentionAction** es la acción realizada en lo
     
 > **MoveToArchive** - el elemento se mueve al buzón de archivo. 
     
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

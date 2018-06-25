@@ -12,7 +12,7 @@ ms.openlocfilehash: c08925f5e1b251967141a7391381239f495e5fb1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837039"
 ---
 # <a name="refiners"></a>Refinadores
@@ -42,7 +42,7 @@ Ninguno.
 
 [SearchMailboxesResult](searchmailboxesresult.md)
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

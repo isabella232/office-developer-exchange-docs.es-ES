@@ -16,7 +16,7 @@ ms.openlocfilehash: c5ce52ee4643219aa31ae59e8b7d40d7a904c8ab
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837340"
 ---
 # <a name="senditem"></a>SendItem
@@ -59,7 +59,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si se envía un elemento en la carpeta Elementos enviados, se elimina el elemento enviado y se coloca una copia de él en la carpeta Elementos enviados.
   
@@ -74,7 +74,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

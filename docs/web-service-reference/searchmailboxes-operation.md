@@ -12,7 +12,7 @@ ms.openlocfilehash: 141ea466a24f3cb400a8e0b63e2162c1eae5d7f8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837296"
 ---
 # <a name="searchmailboxes-operation"></a>Operación SearchMailboxes
@@ -342,7 +342,7 @@ La respuesta de error SOAP body contiene los siguientes elementos:
     
 Para códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
     

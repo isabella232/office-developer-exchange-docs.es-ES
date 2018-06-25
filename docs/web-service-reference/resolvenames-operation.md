@@ -16,7 +16,7 @@ ms.openlocfilehash: 8443cf834dfdf104daeaaa92fdee3742c3fa3719
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837162"
 ---
 # <a name="resolvenames-operation"></a>Operación ResolveNames
@@ -27,7 +27,7 @@ La **ResolveNames** operación las direcciones de correo electrónico ambigua re
 
 Esta operación puede usarse para comprobar los alias y resolver nombres para mostrar para el usuario del buzón correspondiente. Si existen nombres ambiguos, la respuesta de la operación **ResolveNames** proporciona información acerca de cada usuario de buzón de correo para que la aplicación cliente pueda resolver los nombres. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La respuesta ResolveNames devuelve un máximo de 100 candidatos. Los candidatos de 100 que se devuelven son los 100 primeros que se encuentran en la operación de búsqueda.
   
@@ -219,7 +219,7 @@ En la respuesta de error, se usan los siguientes elementos:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

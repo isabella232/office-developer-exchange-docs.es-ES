@@ -13,7 +13,7 @@ ms.openlocfilehash: 3b634f1a3a3d44b6aae1a826a005149200641dcb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837027"
 ---
 # <a name="redirecturl-pox"></a>RedirectUrl (POX)
@@ -54,11 +54,11 @@ Ninguno.
 
 El valor de texto representa la dirección URL del servidor de acceso de cliente que se debe usar para obtener la configuración de detección automática.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La aplicación cliente debe dejar de redirigir después de 10 redirecciones.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

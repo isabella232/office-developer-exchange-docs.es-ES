@@ -13,7 +13,7 @@ ms.openlocfilehash: 5359f20b33855f4ef48566058bc46bd618e3b2ff
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837505"
 ---
 # <a name="smtplast-pox"></a>SMTPLast (POX)
@@ -56,7 +56,7 @@ Ninguno.
 
 El valor de texto especifica si el servidor SMTP requiere que el correo electrónico se descargue antes de enviar correo electrónico mediante el servidor SMTP. Los valores posibles son **encendido** y **apagado**. El valor predeterminado es **desactivado**.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

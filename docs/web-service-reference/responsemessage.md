@@ -16,7 +16,7 @@ ms.openlocfilehash: 69f1f6f12d10044045b72dd644536e742c479b9e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837191"
 ---
 # <a name="responsemessage"></a>ResponseMessage
@@ -69,7 +69,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 |[GetUserOofSettingsResponse](getuseroofsettingsresponse.md) <br/> |Contiene los resultados de la respuesta y la configuración de fuera de la oficina de un usuario.  <br/><br/> La siguiente es la expresión de XPath 2.0 para este elemento:  <br/><br/>  `/GetUserOofSettingsResponse` <br/> |
 |[SetUserOofSettingsResponse](setuseroofsettingsresponse.md) <br/> |Contiene el resultado de un mensaje de [SetUserOofSettingsRequest](setuseroofsettingsrequest.md) intentado. <br/> <br/> La siguiente es la expresión de XPath 2.0 para este elemento:  <br/><br/>  `/SetUserOofSettingsResponse` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El tipo **ResponseMessageType** es común a todas las respuestas de los servicios Web Exchange. El tipo de **ResponseMessageType** se extiende por los tipos complejos siguientes: 
   
@@ -118,7 +118,7 @@ Los tipos de **ApplyConversationActionResponseMessage** y **DeleteItemResponseMe
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)
 - [Operación SetUserOofSettings](setuseroofsettings-operation.md)

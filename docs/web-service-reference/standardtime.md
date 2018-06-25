@@ -16,7 +16,7 @@ ms.openlocfilehash: 726c31ffba06c1c437711b88444ec5eba45b520d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837546"
 ---
 # <a name="standardtime"></a>StandardTime
@@ -63,7 +63,7 @@ Ninguno.
 |:-----|:-----|
 |[TimeZone (disponibilidad)](timezone-availability.md) <br/> | Contiene elementos que identifican la información de zona horaria. Este elemento también contiene información sobre la transición entre la hora estándar y el horario de verano. <br/><br/>Los siguientes son las expresiones de XPath para este elemento: <br/> <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone` <br/> <br/> `/GetUserAvailabilityRequest/TimeZone` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **StandardTime** representa un tiempo de desfase que está representado por el elemento [Bias (UTC)](bias-utc.md) . Cuando el elemento de [inclinación](bias.md) secundario es igual a 0, el tiempo estándar es igual que el desplazamiento de diferencia de la hora UTC que está representada por el elemento [Bias (UTC)](bias-utc.md) . 
   
@@ -100,7 +100,7 @@ En el ejemplo siguiente se muestra un área donde se observa el horario de veran
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)
 - [Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)

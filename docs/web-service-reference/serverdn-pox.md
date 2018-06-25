@@ -13,7 +13,7 @@ ms.openlocfilehash: d2b9ce663d8245a78acd088b0622406c0dfcb4da
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837374"
 ---
 # <a name="serverdn-pox"></a>ServerDN (POX)
@@ -56,11 +56,11 @@ Ninguno.
 
 El valor de texto representa el nombre distintivo (DN) del servidor de Exchange.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El valor de **ServerDN** solo se usa al [Tipo (POX)](type-pox.md) es igual a cambio 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

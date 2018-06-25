@@ -12,7 +12,7 @@ ms.openlocfilehash: 7d226de908c4d5a474129e3e1f2344ec1318f538
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837413"
 ---
 # <a name="setholdonmailboxes"></a>SetHoldOnMailboxes
@@ -49,7 +49,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

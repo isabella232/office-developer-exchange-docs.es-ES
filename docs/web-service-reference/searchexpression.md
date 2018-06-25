@@ -16,7 +16,7 @@ ms.openlocfilehash: 8e0d09aec079280816cd9dfe2c1a55c88bb959a7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837286"
 ---
 # <a name="searchexpression"></a>SearchExpression
@@ -49,7 +49,7 @@ Ninguno.
 |[And](and.md) <br/> |Representa una expresión de búsqueda que le permite realizar una operación de tipo Boolean **y** entre dos o más expresiones de búsqueda. El resultado de la operación **AND** es **true** si se **cumplen**todas las expresiones de búsqueda incluidas dentro del elemento **y** .  <br/> |
 |[Or](or.md) <br/> |Representa una expresión de búsqueda que se realiza una operación de **OR** lógica en la expresión de búsqueda que contiene. **O** devolverá **true** si cualquiera de sus elementos secundarios devuelven **true**. **O** debe tener dos o más elementos secundarios.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Cualquier elemento de filtro que forma parte del grupo de sustitución SearchExpression puede aparecer en lugar del elemento SearchExpression.
   
@@ -93,7 +93,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

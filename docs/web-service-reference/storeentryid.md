@@ -12,7 +12,7 @@ ms.openlocfilehash: dfd38e445ff0c5966116e984d712a45b6b1b8485
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837600"
 ---
 # <a name="storeentryid"></a>StoreEntryId
@@ -61,7 +61,7 @@ Ninguno.
 
 El valor de texto es una cadena que representa el identificador de elemento de almacenamiento.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   

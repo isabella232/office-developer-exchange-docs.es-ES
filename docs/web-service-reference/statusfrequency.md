@@ -16,7 +16,7 @@ ms.openlocfilehash: 402f8978c0ec6b377dfa020f23595c8954509a07
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837589"
 ---
 # <a name="statusfrequency"></a>StatusFrequency
@@ -56,7 +56,7 @@ Ninguno.
 
 Si se usa este elemento, es necesario un valor de texto que representa un número entero. Los valores posibles para este elemento son 1 y 1440, ambos inclusive. Este elemento es opcional. El valor predeterminado es 30 minutos.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El valor de **StatusFrequency** se usa en el servidor para volver a intentar una notificación de inserción cuando no recibe una respuesta a una notificación de inserción o ping de estado desde el cliente. Si el servidor no recibe una respuesta, reintentos enviar la notificación de varias veces antes de que ésta detiene el envío de la notificación. En EWS, el intervalo de reintento de forma predeterminada es de 30 segundos y reintentos subsiguientes siempre son doble a la hora de último intervalo de reintento. Número de reintentos no es exacto como que se pueden retrasar debido a otras cargas que hay en el servidor. En la tabla siguiente se muestra cómo se producen los intervalos de reintento en los 30 minutos máximo permitidos por el valor de **StatusFrequency** predeterminado (suponiendo que el servidor no encuentra la los retrasos). 
   
@@ -84,7 +84,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

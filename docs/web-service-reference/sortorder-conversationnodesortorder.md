@@ -12,7 +12,7 @@ ms.openlocfilehash: 397aead62d32e72f991af783bff02e79a6e4b0fb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837520"
 ---
 # <a name="sortorder-conversationnodesortorder"></a>SortOrder (ConversationNodeSortOrder)
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **SortOrder** es el orden en que se ordenan las conversaciones. Un valor de texto de **TreeOrderAscending** indica que las conversaciones se ordenan según el árbol de la conversación en orden ascendente. Un valor de texto de **TreeOrderDescending** indica que las conversaciones se ordenan según el árbol de la conversación en orden descendente. Un valor de texto de **DateOrderAscending** indica que las conversaciones se ordenan según la fecha de conversación en orden ascendente. Un valor de texto de **DateOrderDescending** indica que las conversaciones se ordenan según la fecha de conversación en orden descendente. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

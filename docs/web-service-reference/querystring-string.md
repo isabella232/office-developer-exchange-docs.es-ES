@@ -12,7 +12,7 @@ ms.openlocfilehash: 9c5c733adcec1496e36986fd720b56b0a0274593
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836935"
 ---
 # <a name="querystring-string"></a>QueryString (cadena)
@@ -46,7 +46,7 @@ Ninguno.
 
 El valor de texto de la **cadena de consulta** representa una consulta de buzón de correo realizada mediante un subconjunto de la [Sintaxis de consulta avanzada (AQS)](http://msdn.microsoft.com/en-us/library/aa965711%28VS.85%29.aspx). Para obtener información sobre la sintaxis de este elemento, vea [QueryString (QueryStringType)](querystring-querystringtype.md).
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -59,7 +59,7 @@ Este elemento se introdujo en Exchange Server 2013.
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

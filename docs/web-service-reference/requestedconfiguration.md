@@ -16,7 +16,7 @@ ms.openlocfilehash: 1edc6394360250c9a9810fe614c975cb48eba3f0
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837130"
 ---
 # <a name="requestedconfiguration"></a>RequestedConfiguration
@@ -54,7 +54,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -67,7 +67,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

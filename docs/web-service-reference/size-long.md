@@ -12,7 +12,7 @@ ms.openlocfilehash: d69cb88b7fcbafc2fbd573acba8218152d6d1784
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837501"
 ---
 # <a name="size-long"></a>Tamaño (long)
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento de **tamaño** es el tamaño total de uno o varios elementos de buzón de correo. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

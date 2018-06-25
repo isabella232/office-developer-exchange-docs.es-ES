@@ -11,7 +11,7 @@ ms.openlocfilehash: 0a62c5145da97976de12e7cdc29800a332877b44
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837489"
 ---
 # <a name="sharingurl-pox"></a>SharingUrl (POX)
@@ -54,11 +54,11 @@ Ninguno.
 
 El valor de texto representa la dirección URL del servidor de uso compartido usado para toda la organización de uso compartido de calendarios y contactos.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **SharingUrl** es un elemento secundario opcional del elemento **Protocol** . 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

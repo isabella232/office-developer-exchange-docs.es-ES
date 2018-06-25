@@ -13,7 +13,7 @@ ms.openlocfilehash: 9a51c715032cb2af846e764d28698c5697670d98
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837537"
 ---
 # <a name="ssl-pox"></a>SSL (POX)
@@ -56,7 +56,7 @@ Ninguno.
 
 El valor de texto especifica si se requiere inicio de sesión seguro. Si no se especifica, el valor predeterminado se establece en **on**. Los valores posibles son **encendido** y **apagado**.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

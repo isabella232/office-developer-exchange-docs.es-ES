@@ -12,7 +12,7 @@ ms.openlocfilehash: 352292952c735e7d3893790a660096c6b6966536
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837315"
 ---
 # <a name="searchscope"></a>SearchScope
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **SearchScope** indica el tipo de buzón de correo que se va a buscar una búsqueda de detección. Un valor de texto de **PrimaryOnly** indica que se busca en el buzón principal. Un valor de texto de **ArchiveOnly** indica que se busca en el buzón de archivo. Indica un valor de texto de **todos los** que ambos la principal y se buscan los buzones de archivo. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

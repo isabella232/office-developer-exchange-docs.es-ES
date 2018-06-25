@@ -13,7 +13,7 @@ ms.openlocfilehash: ef0562e166094d75d0dd92f5f48bb558e11a2cad
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837391"
 ---
 # <a name="serverversion-pox"></a>ServerVersion (POX)
@@ -52,7 +52,7 @@ Ninguno.
 
 El valor de texto representa el número de versión de Exchange server.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El valor de **ServerVersion** sólo es válido si el elemento de [Tipo (POX)](type-pox.md) es igual a EXCH o EXPR. El valor de **ServerVersion** es un número hexadecimal que contiene el MajorVersion, MinorVersion, MajorBuildNumber del servidor. 
   
@@ -103,7 +103,7 @@ static void Main(string[] args)
 }
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

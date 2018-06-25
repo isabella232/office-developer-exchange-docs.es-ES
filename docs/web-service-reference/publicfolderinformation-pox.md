@@ -11,7 +11,7 @@ ms.openlocfilehash: bb4432a664024c3d1ccb17826948cfe7a1b58cdf
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836927"
 ---
 # <a name="publicfolderinformation-pox"></a>PublicFolderInformation (POX)
@@ -52,11 +52,11 @@ Ninguno.
 |:-----|:-----|
 |[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de cuenta para el usuario.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **PublicFolderInformation** es un elemento secundario opcional del elemento de **cuenta** . 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

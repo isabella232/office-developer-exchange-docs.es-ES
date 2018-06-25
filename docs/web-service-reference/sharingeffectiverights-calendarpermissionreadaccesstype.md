@@ -16,7 +16,7 @@ ms.openlocfilehash: e7d2aa061650c33d27de042ae8a6348f9a7d3430
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837480"
 ---
 # <a name="sharingeffectiverights-calendarpermissionreadaccesstype"></a>SharingEffectiveRights (CalendarPermissionReadAccessType)
@@ -57,7 +57,7 @@ En la siguiente tabla se enumera los valores posibles para el elemento **Sharing
 |TimeAndSubjectAndLocation  <br/> |Indica que el usuario tiene permiso para ver el tiempo libre/ocupada en el calendario y el asunto y la ubicación de las citas.  <br/> |
 |FullDetails  <br/> |Indica que el usuario tiene permiso para ver todos los elementos en el calendario, incluidos el tiempo libre/ocupado y asunto, ubicación y detalles de las citas.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -70,7 +70,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

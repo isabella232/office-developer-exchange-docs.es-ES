@@ -12,7 +12,7 @@ ms.openlocfilehash: accd70d36cc34e7364387b98a2e94c56b91f012f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837571"
 ---
 # <a name="state-teammailboxlifecyclestatetype"></a>Estado (TeamMailboxLifecycleStateType)
@@ -45,7 +45,7 @@ Ninguno.
 
 El valor de texto del elemento de **estado** es el estado de ciclo de vida que se haya establecido en un buzón del sitio. Un valor de texto de **activo** indica que un buzón del sitio está en uso. Un valor de texto de **cerrada** indica que un buzón del sitio se ha cerrado y no está en uso. Un valor de texto de **no vinculados** indica que un buzón del sitio no está vinculado a un entorno de colaboración basado en web. Los valores **activo**, **cerrado**y **PendingDelete** son mutuamente excluyentes, pero el valor **no vinculados** no es mutuamente exclusivos de los demás valores de la implementación. Un valor de texto de **PendingDelete** indica que un buzón del sitio está pendiente de eliminación. Tiene un buzón del sitio que se cierre antes de que se puede establecer como **PendingDelete**.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

@@ -15,7 +15,7 @@ ms.openlocfilehash: 138fee37af637298960e81640a50ee4b46cf2fac
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837436"
 ---
 # <a name="setmissedcallnotificationenabledresponse-um-web-service"></a>SetMissedCallNotificationEnabledResponse (servicio web de mensajería unificada)
@@ -58,7 +58,7 @@ Ninguno.
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

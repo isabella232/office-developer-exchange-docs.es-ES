@@ -12,7 +12,7 @@ ms.openlocfilehash: 43e422512b1e8f06e410e533e9ae1dc49283d5f6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837504"
 ---
 # <a name="sizerequested"></a>SizeRequested
@@ -56,7 +56,7 @@ El valor de texto del elemento **SizeRequested** es el tamaño de la foto solici
 |HR504x504  <br/> |La imagen es de 504 píxeles de alto y ancho de 504 píxeles.  <br/> |
 |HR648x648  <br/> |La imagen es 648 píxeles de alto y 648 píxeles de ancho.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

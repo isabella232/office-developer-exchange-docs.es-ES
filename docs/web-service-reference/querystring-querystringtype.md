@@ -16,7 +16,7 @@ ms.openlocfilehash: 410405638b3f8628dc589049873cfea1f153310c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836943"
 ---
 # <a name="querystring-querystringtype"></a>QueryString (QueryStringType)
@@ -54,7 +54,7 @@ Ninguno.
 
 El valor de texto del elemento de **cadena de consulta** representa una consulta de buzón de correo que se realiza mediante el uso de un subconjunto de la [Sintaxis de consulta avanzada (AQS)](http://msdn.microsoft.com/en-us/library/aa965711%28VS.85%29.aspx). Vea la sección Comentarios para obtener información acerca de las opciones de sintaxis admitida para cadenas de consulta.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 En Exchange Server 2010, este elemento es un tipo de cadena de esquema XML. En las versiones de Exchange Server 2013 a partir de Exchange, incluido Exchange Online, el tipo de este elemento es **QueryStringType**. Este cambio no interrumpen a los clientes existentes ya que agrega tres nuevos atributos opcionales. 
   
@@ -218,7 +218,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud.
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

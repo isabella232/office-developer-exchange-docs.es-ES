@@ -12,7 +12,7 @@ ms.openlocfilehash: 1c099fc49ec882c1672b265ff0e3aa2c71c5f95b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837298"
 ---
 # <a name="searchitemkind"></a>SearchItemKind
@@ -68,7 +68,7 @@ El valor de texto del elemento **SearchItemKind** es el tipo de elemento que se 
     
 - **Rssfeeds** - indica que se buscan las fuentes RSS para palabras clave. 
     
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

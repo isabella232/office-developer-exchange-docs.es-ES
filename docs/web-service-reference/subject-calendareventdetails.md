@@ -16,7 +16,7 @@ ms.openlocfilehash: 5303a7568e017999f2be69c50588832748b5668a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837610"
 ---
 # <a name="subject-calendareventdetails"></a>Asunto (CalendarEventDetails)
@@ -66,7 +66,7 @@ Ninguno.
 
 Si este elemento se devuelve en la respuesta, es necesario un valor de texto. Este elemento no se devolverá si el valor del elemento [IsPrivate](isprivate.md) es igual a **true**. Este elemento puede contener una cadena vacía. Este elemento es opcional si se utiliza el elemento [CalendarEventDetails](calendareventdetails.md) . 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -79,7 +79,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

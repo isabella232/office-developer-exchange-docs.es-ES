@@ -16,7 +16,7 @@ ms.openlocfilehash: a0a6cf312bcb1d4b4818a82bc8d8d3e3f33ad6f6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837255"
 ---
 # <a name="routingtype-emailaddress"></a>RoutingType (EmailAddress)
@@ -51,7 +51,7 @@ Ninguno.
 
 Un valor de texto es opcional. El único valor válido es SMTP. Si no se proporciona ningún valor, se usa el valor predeterminado de SMTP.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento puede aparecer como máximo una vez en el elemento de [correo electrónico (EmailAddressType)](email-emailaddresstype.md) . Este elemento no es necesario. Este elemento existe para la inclusión de protocolos futuros. Otro elemento de **RoutingType** se usa para obtener acceso a los elementos en el buzón del usuario. 
   
@@ -66,7 +66,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)

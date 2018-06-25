@@ -16,7 +16,7 @@ ms.openlocfilehash: 7cd8f3452a744e0c9a98fd3698dffb9ed8721a6c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837014"
 ---
 # <a name="recurringdatetransition"></a>RecurringDateTransition
@@ -57,7 +57,7 @@ Ninguno.
 |[Transiciones](transitions.md) <br/> |Representa una colección de transiciones de zona horaria.  <br/> |
 |[TransitionsGroup](transitionsgroup.md) <br/> |Representa una colección de transiciones de zona horaria.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Un ejemplo de una transición de la zona horaria que se puede representar en el elemento [RecurringDateTransition](recurringdatetransition.md) es una transición que se produce el 15 de marzo de cada año. 
   
@@ -72,7 +72,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

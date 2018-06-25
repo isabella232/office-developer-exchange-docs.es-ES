@@ -12,7 +12,7 @@ ms.openlocfilehash: da031265cad9176e8bb965c66d1bdd0b1da0dfc6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837276"
 ---
 # <a name="scope-highlighttermtype"></a>Ámbito (HighlightTermType)
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento de **ámbito** es el ámbito de un término resaltado. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

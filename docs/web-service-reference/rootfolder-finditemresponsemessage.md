@@ -16,7 +16,7 @@ ms.openlocfilehash: ea17369ef4efc4112a738b430c8f0dbab3886341
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837254"
 ---
 # <a name="rootfolder-finditemresponsemessage"></a>RootFolder (FindItemResponseMessage)
@@ -58,7 +58,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 |:-----|:-----|
 |[FindItemResponseMessage](finditemresponsemessage.md) <br/> |Contiene el estado y el resultado de una solicitud de [operación FindItem](finditem-operation.md) .  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Exchange Server con la función de servidor de acceso de cliente instalada.
   
@@ -71,7 +71,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

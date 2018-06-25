@@ -16,7 +16,7 @@ ms.openlocfilehash: 484b185db63c9692eaca7e43c49d6e95375a1a98
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837251"
 ---
 # <a name="rootitemid"></a>RootItemId
@@ -57,7 +57,7 @@ Ninguno.
 |:-----|:-----|
 |[DeleteAttachmentResponseMessage](deleteattachmentresponsemessage.md) <br/> |Contiene el estado y el resultado de una solicitud de DeleteAttachment.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **RootItemId** solo se usa en las respuestas DeleteAttachment. Esto identifica el identificador del elemento raíz y lo que es más importante, la nueva clave de cambio para el elemento primario. 
   
@@ -72,7 +72,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

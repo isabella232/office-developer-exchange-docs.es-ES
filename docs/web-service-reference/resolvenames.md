@@ -16,7 +16,7 @@ ms.openlocfilehash: e97b6e78d99cf8ffa3d680907916882d40963f59
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837172"
 ---
 # <a name="resolvenames"></a>ResolveNames
@@ -56,7 +56,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 |:-----|:-----|
 |ActiveDirectory  <br/> |Se busca en sólo el servicio de directorio de Active Directory.  <br/> |
 |ActiveDirectoryContacts  <br/> |Active Directory se busca en primer lugar y, a continuación, se buscan las carpetas de contactos que se especifican en la propiedad [ParentFolderIds](parentfolderids.md) .  <br/> |
-|Contacts  <br/> |Se buscan sólo las carpetas de contactos que se identifican mediante la propiedad [ParentFolderIds](parentfolderids.md) .  <br/> |
+|Contactos  <br/> |Se buscan sólo las carpetas de contactos que se identifican mediante la propiedad [ParentFolderIds](parentfolderids.md) .  <br/> |
 |ContactsActiveDirectory  <br/> |Carpetas de contactos que se identifican mediante la propiedad [ParentFolderIds](parentfolderids.md) se buscan en primer lugar y, a continuación, se busca en Active Directory.  <br/> |
    
 #### <a name="contactdatashape-attribute-values"></a>Valores de atributo de ContactDataShape
@@ -78,7 +78,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -91,7 +91,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

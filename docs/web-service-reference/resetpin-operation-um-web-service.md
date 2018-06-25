@@ -15,14 +15,14 @@ ms.openlocfilehash: e6417b86ce17c0d34fe857cf1209a18972cbef63
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837146"
 ---
 # <a name="resetpin-operation-um-web-service"></a>Operación ResetPIN (servicio web de mensajería unificada)
 
 La operación ResetPIN cambia el PIN (contraseña TUI) a un nuevo valor aleatorio.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La operación ResetPIN crea un nuevo NIP en función de las directivas de PIN. Si la operación se realiza correctamente, se envía un mensaje de correo electrónico que contiene el nuevo NIP para el buzón de correo del usuario. Si se produce un error en la operación, producirá una excepción que contiene información sobre el error.
   
@@ -60,7 +60,7 @@ El siguiente ejemplo de una respuesta ResetPIN muestra una respuesta a la solici
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

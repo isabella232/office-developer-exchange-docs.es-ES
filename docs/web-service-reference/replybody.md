@@ -16,7 +16,7 @@ ms.openlocfilehash: 8400dda1ee810781e129fcc44fd3cd5d6c15cbbe
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837116"
 ---
 # <a name="replybody"></a>ReplyBody
@@ -56,7 +56,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Se requiere este elemento.
   
@@ -71,7 +71,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

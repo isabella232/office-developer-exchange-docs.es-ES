@@ -12,7 +12,7 @@ ms.openlocfilehash: 0439b494db7e4e1c097039a81394af9441613555
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837274"
 ---
 # <a name="scope-clientaccesstokenrequesttype"></a>Ámbito (ClientAccessTokenRequestType)
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento de **ámbito (ClientAccessTokenRequestType)** es un ámbito de símbolo (token). 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).
   
@@ -59,7 +59,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

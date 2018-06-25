@@ -16,7 +16,7 @@ ms.openlocfilehash: ce8d2b134ce1fa34cbce8bd2fa921cab18d908a4
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837057"
 ---
 # <a name="relativeyearlyrecurrence"></a>RelativeYearlyRecurrence
@@ -57,7 +57,7 @@ Ninguno.
 |[Standard](standard.md) <br/> |Representa la fecha y hora cuando se cambia la hora del horario de verano a la hora estándar.  <br/> |
 |[Horario de verano](daylight.md) <br/> |Representa la fecha y hora en que cambia el tiempo de la hora estándar al horario de verano.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -70,7 +70,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

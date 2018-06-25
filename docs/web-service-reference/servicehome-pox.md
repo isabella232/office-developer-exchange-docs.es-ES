@@ -13,7 +13,7 @@ ms.openlocfilehash: 312eea2c021750327cc09cf65f111fc868e16608
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837388"
 ---
 # <a name="servicehome-pox"></a>ServiceHome (POX)
@@ -54,7 +54,7 @@ Ninguno.
 
 El valor de texto representa la dirección URL de la página principal del ISP.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

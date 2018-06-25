@@ -16,7 +16,7 @@ ms.openlocfilehash: a02c3b5711a657311428d67cccabd9c8c231db67
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837256"
 ---
 # <a name="routingtype-emailaddresstype"></a>RoutingType (EmailAddressType)
@@ -52,7 +52,7 @@ Ninguno.
 
 El valor de texto representa un tipo de distribución. SMTP es el valor de texto típico para este elemento.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento es opcional en el elemento de [buzón de correo](mailbox.md) . Otro elemento de [RoutingType (EmailAddress)](routingtype-emailaddress.md) se usa para operaciones de disponibilidad. 
   
@@ -67,7 +67,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: d842c54dab7950c68e26804b676834c2d95debad
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837302"
 ---
 # <a name="searchfolder"></a>SearchFolder
@@ -76,7 +76,7 @@ Ninguno.
 |[Actualización (FolderSync)](update-foldersync.md) <br/> |Identifica una sola carpeta para actualizar en el almacén de cliente local.  <br/> |
 |[Carpetas](folders-ex15websvcsotherref.md) <br/> |Contiene una matriz de carpetas que se utilizan en las operaciones de la carpeta.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
  **SearchFolder** se utiliza para las carpetas de búsqueda regular y MicrosoftOfficeOutlook y Outlook Web Access visible las carpetas de búsqueda. Para que una carpeta de búsqueda que sean visibles en Outlook y Outlook Web Access, debe crearse la carpeta bajo la carpeta distintivo SearchFolders. 
   
@@ -91,7 +91,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

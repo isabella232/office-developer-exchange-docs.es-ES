@@ -16,7 +16,7 @@ ms.openlocfilehash: c57a7fb4abc2f7ee7b599f56f016811d6ff2c21c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837277"
 ---
 # <a name="saveditemfolderid"></a>SavedItemFolderId
@@ -53,7 +53,7 @@ Ninguno.
 |[UpdateItem](updateitem.md) <br/> |Define una solicitud para actualizar un elemento en el almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/UpdateItem` <br/> |
 |[SendItem](senditem.md) <br/> |Define una solicitud para enviar un elemento en el almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/SendItem` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   

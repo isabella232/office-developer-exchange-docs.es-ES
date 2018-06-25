@@ -16,7 +16,7 @@ ms.openlocfilehash: 224b61913a5ae8e5b4aa0d756a9f2488df2741bd
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837584"
 ---
 # <a name="status"></a>Estado
@@ -60,7 +60,7 @@ Se requiere un valor de texto. Los siguientes son los posibles valores de texto 
     
 - Aplazado
     
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Configuración de [CompleteDate](completedate.md) tiene el mismo efecto que si se establece [PercentComplete](percentcomplete.md) en 100 o **estado** en **completada**. En una solicitud que conjuntos de al menos dos de estas propiedades, la última propiedad procesada determinará el valor que se establece para estos elementos. Por ejemplo, si **PercentComplete** es 100, **CompleteDate** es 1/1/2007 y **estado** es NotStarted y las propiedades se transmiten en este orden, el efecto será establecer el **estado** de la tarea en NotStarted, el **CompleteDate **en **null**y **PercentComplete** en 0. 
   
@@ -75,7 +75,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

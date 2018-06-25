@@ -13,7 +13,7 @@ ms.openlocfilehash: 5045c0c5a9f15d5a31ac2e884b942e00dfb1f520
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837037"
 ---
 # <a name="referralport-pox"></a>ReferralPort (POX)
@@ -56,11 +56,11 @@ Ninguno.
 
 El valor de texto representa el puerto que se usa para tener acceso al servidor de Exchange.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **ReferralPort** solo se usa cuando el elemento de [Tipo (POX)](type-pox.md) es igual a EXCH o EXPR. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

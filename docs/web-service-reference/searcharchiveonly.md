@@ -12,7 +12,7 @@ ms.openlocfilehash: ac9d3262784d8052486c631ef3e99e650d4757c7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837293"
 ---
 # <a name="searcharchiveonly"></a>SearchArchiveOnly
@@ -44,7 +44,7 @@ Ninguno.
 
 Un valor de texto de **true** para el elemento **SearchArchiveOnly** indica que la búsqueda no indexable elemento sólo se realiza en el buzón de archivo. Un valor de texto de **false** indica que la búsqueda se lleva a cabo contra el buzón principal y el buzón de archivo. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

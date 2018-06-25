@@ -12,7 +12,7 @@ ms.openlocfilehash: dacb3fa75611cbd6e6e29eab7c791dfd8964c9ec
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837229"
 ---
 # <a name="retentionpolicytype"></a>RetentionPolicyType
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **RetentionPolicyType** es el tipo de retención aplicado a los elementos en una conversación. El valor de texto de **Eliminar** indica que los elementos de la conversación se eliminan cuando expire la suspensión de retención. El valor de texto del **archivo** indica que los elementos de la conversación se mueven al buzón de archivo cuando expire la suspensión de retención. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

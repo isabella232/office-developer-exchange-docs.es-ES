@@ -16,7 +16,7 @@ ms.openlocfilehash: 8867b7da7c75cfd9d41f708c0481627d5186cc14
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837622"
 ---
 # <a name="subscriptionid-getevents"></a>SubscriptionId (GetEvents)
@@ -53,7 +53,7 @@ Ninguno.
 
 Se requiere un valor de texto. El valor de texto es un GUID.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El GUID que representa el identificador de suscripción es generado por el servidor de acceso de cliente cuando se crea la suscripción.
   
@@ -68,7 +68,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

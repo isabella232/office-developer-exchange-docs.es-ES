@@ -16,7 +16,7 @@ ms.openlocfilehash: e214918f9795e9e29061d4aac72ab144d2b24267
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837592"
 ---
 # <a name="statusevent"></a>Objeto StatusEvent
@@ -50,7 +50,7 @@ Ninguno.
 |:-----|:-----|
 |[Notificación](notification-ex15websvcsotherref.md) <br/> |Contiene información acerca de la suscripción y los eventos que se han producido desde la última notificación.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento de **objeto StatusEvent** se devuelve en una notificación para uno de los siguientes motivos: 
   
@@ -73,7 +73,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

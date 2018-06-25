@@ -15,7 +15,7 @@ ms.openlocfilehash: 9c85909a5a03fd4c470468bd025a4de650472423
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837154"
 ---
 # <a name="resetpinresponse-um-web-service"></a>ResetPINResponse (servicio web de mensajería unificada)
@@ -58,7 +58,7 @@ No se requiere un valor de texto.
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -13,7 +13,7 @@ ms.openlocfilehash: 6b9d31f3b7bca087652f04e4943becc5ac4e68e7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837132"
 ---
 # <a name="requestedserverversion-soap"></a>RequestedServerVersion (SOAP)
@@ -54,7 +54,7 @@ El valor de texto del elemento **RequestedServerVersion** especifica que un mét
 |Exchange2013  <br/> |Exchange Server 2013. El campo Exchange2013 es aplicable para los clientes que estén destinados a Exchange Online y versiones de Exchange a partir de Exchange Server 2013.  <br/> |
 |Exchange2013_SP1  <br/> |Exchange Server 2013 Service Pack 1 (SP1). El campo Exchange2013_SP1 es aplicable para los clientes que estén destinados a Exchange Online y versiones de Exchange a partir de Exchange Server 2013 SP1.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **RequestedServerVersion** está establecido en el encabezado SOAP. 
   

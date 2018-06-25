@@ -15,7 +15,7 @@ ms.openlocfilehash: be9479d6ed2c5238ed19c3d22e028fca62b8deed
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837434"
 ---
 # <a name="setmissedcallnotificationenabled-operation-um-web-service"></a>Operación SetMissedCallNotificationEnabled (servicio web de mensajería unificada)
@@ -58,7 +58,7 @@ El siguiente ejemplo de una respuesta PlayOnPhoneGreeting muestra una respuesta 
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

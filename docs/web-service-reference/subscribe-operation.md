@@ -16,7 +16,7 @@ ms.openlocfilehash: f6cacab80c8ca2e505ab63a162a161fcf5de8585
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837619"
 ---
 # <a name="subscribe-operation"></a>Operación de suscripción
@@ -286,7 +286,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [Marca de agua](watermark.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

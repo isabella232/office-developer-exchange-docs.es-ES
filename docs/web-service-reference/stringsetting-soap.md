@@ -13,7 +13,7 @@ ms.openlocfilehash: af2c8ed243182e3491723be172ae162554250951
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837606"
 ---
 # <a name="stringsetting-soap"></a>StringSetting (SOAP)
@@ -51,7 +51,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El tipo de **StringSetting** extiende el tipo de **UserSetting** . 
   
@@ -64,7 +64,7 @@ El tipo de **StringSetting** extiende el tipo de **UserSetting** .
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

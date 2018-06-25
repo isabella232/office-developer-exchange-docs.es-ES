@@ -13,7 +13,7 @@ ms.openlocfilehash: 1cb24a8667c71028f3dead78d9fa533dc9547a64
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837514"
 ---
 # <a name="soap-autodiscover-web-service-reference-for-exchange"></a>Referencia de servicio web de detección automática de SOAP para Exchange
@@ -46,7 +46,7 @@ En esta sección también proporciona ejemplos y descripciones de los mensajes q
     
 - [Elementos de Autodiscover XML SOAP para Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Referencia de servicio web de detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)

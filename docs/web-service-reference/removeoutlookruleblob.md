@@ -16,7 +16,7 @@ ms.openlocfilehash: 45336e296c39161704ce6e0d51fba1d2c61797b1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837102"
 ---
 # <a name="removeoutlookruleblob"></a>RemoveOutlookRuleBlob
@@ -54,7 +54,7 @@ Ninguno.
 
 Un valor de texto de **true** indica que se debe quitar el blob de regla de Outlook. Un valor de texto de **false** indica que no se debe quitar el blob de regla de Outlook. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se establece en **true** para permitir una actualización de la regla de bandeja de entrada. 
   
@@ -69,7 +69,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

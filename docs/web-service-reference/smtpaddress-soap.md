@@ -11,7 +11,7 @@ ms.openlocfilehash: a5ece8906d337f356126f1bcb2c349699f41831d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837508"
 ---
 # <a name="smtpaddress-soap"></a>SmtpAddress (SOAP)
@@ -55,7 +55,7 @@ El valor de texto del elemento **SmtpAddress** es la dirección de correo electr
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Referencia de servicio web de detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)
 - [Elementos de Autodiscover XML SOAP para Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)

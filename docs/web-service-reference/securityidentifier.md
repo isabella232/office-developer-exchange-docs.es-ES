@@ -16,7 +16,7 @@ ms.openlocfilehash: c18d7d4505c618792497c32c7499eab9ac82989e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837314"
 ---
 # <a name="securityidentifier"></a>SecurityIdentifier
@@ -47,7 +47,7 @@ Ninguno.
 |[GroupIdentifier](groupidentifier.md) <br/> |Representa un identificador de seguridad único y un atributo para un grupo de objetos de Active Directory de que la cuenta es miembro.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/SerializedSecurityContext/GroupSids/GroupIdentifier[i]` <br/> |
 |[RestrictedGroupIdentifier](restrictedgroupidentifier.md) <br/> |Representa el identificador del grupo de seguridad y los atributos de un grupo dentro de un token de usuario restringido.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se usa en el encabezado SOAP Simple Object Access Protocol ().
   
@@ -62,7 +62,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

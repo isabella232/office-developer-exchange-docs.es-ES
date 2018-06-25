@@ -16,7 +16,7 @@ ms.openlocfilehash: e4b5567f3ded003e9648eb8ebebfadf8f1748d6c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837193"
 ---
 # <a name="responsemessages-arrayofdelegateuserresponsemessagetype"></a>ResponseMessages (ArrayOfDelegateUserResponseMessageType)
@@ -53,7 +53,7 @@ Ninguno.
 |[UpdateDelegateResponse](updatedelegateresponse.md) <br/> |Contiene el estado y el resultado de una solicitud de [operación UpdateDelegate](updatedelegate-operation.md) .  <br/> |
 |[RemoveDelegateResponse](removedelegateresponse.md) <br/> |Contiene el estado y el resultado de una solicitud de [operación RemoveDelegate](removedelegate-operation.md) .  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se usa en la [operación AddDelegate](adddelegate-operation.md), la [operación de GetDelegate](getdelegate-operation.md), la [operación de UpdateDelegate](updatedelegate-operation.md)y la [operación de RemoveDelegate](removedelegate-operation.md). Las respuestas de operación de administración de delegado tienen una estructura diferente de otras respuestas. Los mensajes de respuesta de la administración de delegado tienen establecimiento inflexible de tipos.
   
@@ -68,7 +68,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

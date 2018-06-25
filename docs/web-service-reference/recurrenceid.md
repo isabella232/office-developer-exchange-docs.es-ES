@@ -16,7 +16,7 @@ ms.openlocfilehash: 078bec85e1ca1530137f9935365d7dd3e530ea34
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837005"
 ---
 # <a name="recurrenceid"></a>RecurrenceId
@@ -54,7 +54,7 @@ Ninguno.
 
 El valor de texto representa un valor de fecha y hora que identifica una ocurrencia de calendario.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Esta propiedad se utiliza con la propiedad [UID](uid.md) para identificar una instancia específica de un elemento periódico del calendario. 
   
@@ -67,7 +67,7 @@ Esta propiedad se utiliza con la propiedad [UID](uid.md) para identificar una in
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

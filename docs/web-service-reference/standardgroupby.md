@@ -16,7 +16,7 @@ ms.openlocfilehash: 8e2ec72a79ebafc2e5757d6dcebb27c0c53ec0b5
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837542"
 ---
 # <a name="standardgroupby"></a>StandardGroupBy
@@ -56,7 +56,7 @@ Ninguno.
 
 Se requiere un valor de texto. El único valor que se puede usar para este elemento es **ConversationTopic**. **ConversationTopic** grupos por mensaje: ConversationTopic y agregados en elemento: DateTimeReceived (máximo). Para obtener más información acerca de la agregación, vea [AggregateOn](aggregateon.md).
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -69,7 +69,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

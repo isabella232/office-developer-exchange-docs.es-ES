@@ -16,7 +16,7 @@ ms.openlocfilehash: fa6719b5bd2bf5388c3da6befd50f4a302d4c3d8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837482"
 ---
 # <a name="sharingsecurity"></a>SharingSecurity
@@ -44,7 +44,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio Virtual de IIS que hospeda los servicios Web Exchange del equipo que ejecuta a Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.
   
@@ -57,7 +57,7 @@ El esquema que describe este elemento se encuentra en el directorio Virtual de I
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

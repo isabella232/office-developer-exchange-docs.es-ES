@@ -12,7 +12,7 @@ ms.openlocfilehash: 85b312f0b156125a2d5395658ccea06d831abdde
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837097"
 ---
 # <a name="removeimgroup-operation"></a>Operación RemoveImGroup
@@ -183,7 +183,7 @@ La respuesta de error SOAP body contiene los siguientes elementos:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Las personas y los contactos de EWS en Exchange](http://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     

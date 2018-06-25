@@ -12,7 +12,7 @@ ms.openlocfilehash: a1d01dd24030b047bd8ad025f3e1cebed0da8e29
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837067"
 ---
 # <a name="remindermessagedata"></a>ReminderMessageData
@@ -47,7 +47,7 @@ Ninguno.
 
 [Message](message-ex15websvcsotherref.md)
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).
   
@@ -64,7 +64,7 @@ Las versiones de Exchange, comenzando por el número de compilación 15.00.0913.
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

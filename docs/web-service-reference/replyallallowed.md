@@ -12,7 +12,7 @@ ms.openlocfilehash: cf814e6f27a734afc51b633bf832126a57d7ca5f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837105"
 ---
 # <a name="replyallallowed"></a>ReplyAllAllowed
@@ -44,7 +44,7 @@ Ninguno.
 
 Un valor de texto de **true** para el elemento **ReplyAllAllowed** indica que una respuesta todos está permitido para los derechos de los datos administrados. Un valor de **false** indica que no se permite un responder a todos. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

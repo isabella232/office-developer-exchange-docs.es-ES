@@ -12,7 +12,7 @@ ms.openlocfilehash: bc527746e35311528d39068c35afbb6c3c9008c1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19837291"
 ---
 # <a name="searchid"></a>Identificador de búsqueda
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento de **identificador de búsqueda** es el identificador de búsqueda de detección. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
