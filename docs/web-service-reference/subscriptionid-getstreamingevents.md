@@ -12,61 +12,61 @@ ms.openlocfilehash: eb451e611c4922fa3b9cff7edec54dfb8260f5f5
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19840594"
 ---
-# <a name="subscriptionid-getstreamingevents"></a><span data-ttu-id="74519-103">SubscriptionId (GetStreamingEvents)</span><span class="sxs-lookup"><span data-stu-id="74519-103">SubscriptionId (GetStreamingEvents)</span></span>
+# <a name="subscriptionid-getstreamingevents"></a><span data-ttu-id="5f43a-103">SubscriptionId (GetStreamingEvents)</span><span class="sxs-lookup"><span data-stu-id="5f43a-103">SubscriptionId (GetStreamingEvents)</span></span>
 
-<span data-ttu-id="74519-104">El elemento **SubscriptionId** representa el identificador para una suscripción de transmisión por secuencias.</span><span class="sxs-lookup"><span data-stu-id="74519-104">The **SubscriptionId** element represents the identifier for a streaming subscription.</span></span> 
+<span data-ttu-id="5f43a-104">El elemento **SubscriptionId** representa el identificador para una suscripción de transmisión por secuencias.</span><span class="sxs-lookup"><span data-stu-id="5f43a-104">The **SubscriptionId** element represents the identifier for a streaming subscription.</span></span> 
   
 ```XML
 <SubscriptionId/>
 ```
 
- <span data-ttu-id="74519-105">**SubscriptionIdType**</span><span class="sxs-lookup"><span data-stu-id="74519-105">**SubscriptionIdType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="74519-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="74519-106">Attributes and elements</span></span>
+ <span data-ttu-id="5f43a-105">**SubscriptionIdType**</span><span class="sxs-lookup"><span data-stu-id="5f43a-105">**SubscriptionIdType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="5f43a-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="5f43a-106">Attributes and elements</span></span>
 
-<span data-ttu-id="74519-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="74519-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="5f43a-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="5f43a-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="74519-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="74519-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="5f43a-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="5f43a-108">Attributes</span></span>
 
-<span data-ttu-id="74519-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="74519-109">None.</span></span>
+<span data-ttu-id="5f43a-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="5f43a-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="74519-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="74519-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="5f43a-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="5f43a-110">Child elements</span></span>
 
-<span data-ttu-id="74519-111">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="74519-111">None.</span></span>
+<span data-ttu-id="5f43a-111">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="5f43a-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="74519-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="74519-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="5f43a-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="5f43a-112">Parent elements</span></span>
 
-|<span data-ttu-id="74519-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="74519-113">**Element**</span></span>|<span data-ttu-id="74519-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="74519-114">**Description**</span></span>|
+|<span data-ttu-id="5f43a-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="5f43a-113">**Element**</span></span>|<span data-ttu-id="5f43a-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="5f43a-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="74519-115">GetStreamingEvents</span><span class="sxs-lookup"><span data-stu-id="74519-115">GetStreamingEvents</span></span>](getstreamingevents.md) <br/> |<span data-ttu-id="74519-116">Representa la operación que se usa en los clientes para solicitar las notificaciones de transmisión por secuencias desde el servidor.</span><span class="sxs-lookup"><span data-stu-id="74519-116">Represents the operation that is used by clients to request streaming notifications from the server.</span></span>  <br/> |
+|[<span data-ttu-id="5f43a-115">GetStreamingEvents</span><span class="sxs-lookup"><span data-stu-id="5f43a-115">GetStreamingEvents</span></span>](getstreamingevents.md) <br/> |<span data-ttu-id="5f43a-116">Representa la operación que se usa en los clientes para solicitar las notificaciones de transmisión por secuencias desde el servidor.</span><span class="sxs-lookup"><span data-stu-id="5f43a-116">Represents the operation that is used by clients to request streaming notifications from the server.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="74519-117">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="74519-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="5f43a-117">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="5f43a-117">Text value</span></span>
 
-<span data-ttu-id="74519-118">Se requiere un valor de texto.</span><span class="sxs-lookup"><span data-stu-id="74519-118">A text value is required.</span></span> <span data-ttu-id="74519-119">El valor de texto es un GUID.</span><span class="sxs-lookup"><span data-stu-id="74519-119">The text value is a GUID.</span></span>
+<span data-ttu-id="5f43a-118">Se requiere un valor de texto.</span><span class="sxs-lookup"><span data-stu-id="5f43a-118">A text value is required.</span></span> <span data-ttu-id="5f43a-119">El valor de texto es un GUID.</span><span class="sxs-lookup"><span data-stu-id="5f43a-119">The text value is a GUID.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="74519-120">Notas</span><span class="sxs-lookup"><span data-stu-id="74519-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5f43a-120">Comentarios</span><span class="sxs-lookup"><span data-stu-id="5f43a-120">Remarks</span></span>
 
-<span data-ttu-id="74519-121">El GUID que representa el identificador de suscripción es generado por el servidor de acceso de cliente cuando se crea la suscripción.</span><span class="sxs-lookup"><span data-stu-id="74519-121">The GUID that represents the subscription identifier is generated by the Client Access server when the subscription is created.</span></span>
+<span data-ttu-id="5f43a-121">El GUID que representa el identificador de suscripción es generado por el servidor de acceso de cliente cuando se crea la suscripción.</span><span class="sxs-lookup"><span data-stu-id="5f43a-121">The GUID that represents the subscription identifier is generated by the Client Access server when the subscription is created.</span></span>
   
-<span data-ttu-id="74519-122">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="74519-122">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="5f43a-122">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="5f43a-122">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="74519-123">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="74519-123">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="5f43a-123">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="5f43a-123">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="74519-124">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="74519-124">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="74519-125">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="74519-125">Schema name</span></span>  <br/> |<span data-ttu-id="74519-126">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="74519-126">Types schema</span></span>  <br/> |
-|<span data-ttu-id="74519-127">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="74519-127">Validation file</span></span>  <br/> |<span data-ttu-id="74519-128">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="74519-128">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="74519-129">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="74519-129">Can be empty</span></span>  <br/> |<span data-ttu-id="74519-130">False</span><span class="sxs-lookup"><span data-stu-id="74519-130">False</span></span>  <br/> |
+|<span data-ttu-id="5f43a-124">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="5f43a-124">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="5f43a-125">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="5f43a-125">Schema name</span></span>  <br/> |<span data-ttu-id="5f43a-126">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="5f43a-126">Types schema</span></span>  <br/> |
+|<span data-ttu-id="5f43a-127">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="5f43a-127">Validation file</span></span>  <br/> |<span data-ttu-id="5f43a-128">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="5f43a-128">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="5f43a-129">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="5f43a-129">Can be empty</span></span>  <br/> |<span data-ttu-id="5f43a-130">False</span><span class="sxs-lookup"><span data-stu-id="5f43a-130">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="74519-131">Ver también</span><span class="sxs-lookup"><span data-stu-id="74519-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5f43a-131">Vea también</span><span class="sxs-lookup"><span data-stu-id="5f43a-131">See also</span></span>
 
 
 
-[<span data-ttu-id="74519-132">Operación GetStreamingEvents</span><span class="sxs-lookup"><span data-stu-id="74519-132">GetStreamingEvents operation</span></span>](getstreamingevents-operation.md)
+[<span data-ttu-id="5f43a-132">Operación GetStreamingEvents</span><span class="sxs-lookup"><span data-stu-id="5f43a-132">GetStreamingEvents operation</span></span>](getstreamingevents-operation.md)
 
 
-- [<span data-ttu-id="74519-133">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="74519-133">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="5f43a-133">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="5f43a-133">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
