@@ -16,20 +16,20 @@ ms.openlocfilehash: 591209165cfbafc2d5f4036dd8fab6659523a044
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763951"
 ---
-# <a name="createitem-operation-email-message"></a><span data-ttu-id="d7824-103">Operación CreateItem (mensaje de correo electrónico)</span><span class="sxs-lookup"><span data-stu-id="d7824-103">CreateItem operation (email message)</span></span>
+# <a name="createitem-operation-email-message"></a><span data-ttu-id="2a444-103">Operación CreateItem (mensaje de correo electrónico)</span><span class="sxs-lookup"><span data-stu-id="2a444-103">CreateItem operation (email message)</span></span>
 
-<span data-ttu-id="d7824-104">Se usa la operación CreateItem para crear mensajes de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="d7824-104">The CreateItem operation is used to create e-mail messages.</span></span>
+<span data-ttu-id="2a444-104">Se usa la operación CreateItem para crear mensajes de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="2a444-104">The CreateItem operation is used to create e-mail messages.</span></span>
   
-## <a name="createitem-request-example"></a><span data-ttu-id="d7824-105">Ejemplo de solicitud CreateItem</span><span class="sxs-lookup"><span data-stu-id="d7824-105">CreateItem request example</span></span>
+## <a name="createitem-request-example"></a><span data-ttu-id="2a444-105">Ejemplo de solicitud CreateItem</span><span class="sxs-lookup"><span data-stu-id="2a444-105">CreateItem request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="d7824-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="d7824-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="2a444-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="2a444-106">Description</span></span>
 
-<span data-ttu-id="d7824-107">El siguiente ejemplo de una solicitud CreateItem muestra cómo crear un nuevo mensaje de correo electrónico, envíe el mensaje y guardar una copia de él en la carpeta Borradores.</span><span class="sxs-lookup"><span data-stu-id="d7824-107">The following example of a CreateItem request shows how to create a new e-mail message, send the message, and save a copy of it in the drafts folder.</span></span>
+<span data-ttu-id="2a444-107">El siguiente ejemplo de una solicitud CreateItem muestra cómo crear un nuevo mensaje de correo electrónico, envíe el mensaje y guardar una copia de él en la carpeta Borradores.</span><span class="sxs-lookup"><span data-stu-id="2a444-107">The following example of a CreateItem request shows how to create a new e-mail message, send the message, and save a copy of it in the drafts folder.</span></span>
   
-### <a name="code"></a><span data-ttu-id="d7824-108">Código</span><span class="sxs-lookup"><span data-stu-id="d7824-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="2a444-108">Código</span><span class="sxs-lookup"><span data-stu-id="2a444-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -58,41 +58,41 @@ ms.locfileid: "19763951"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a><span data-ttu-id="d7824-109">Elementos de solicitud</span><span class="sxs-lookup"><span data-stu-id="d7824-109">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="2a444-109">Elementos de solicitud</span><span class="sxs-lookup"><span data-stu-id="2a444-109">Request elements</span></span>
 
-<span data-ttu-id="d7824-110">En la solicitud se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="d7824-110">The following elements are used in the request:</span></span> 
+<span data-ttu-id="2a444-110">En la solicitud se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="2a444-110">The following elements are used in the request:</span></span> 
   
-- [<span data-ttu-id="d7824-111">CreateItem</span><span class="sxs-lookup"><span data-stu-id="d7824-111">CreateItem</span></span>](createitem.md)
+- [<span data-ttu-id="2a444-111">CreateItem</span><span class="sxs-lookup"><span data-stu-id="2a444-111">CreateItem</span></span>](createitem.md)
     
-- [<span data-ttu-id="d7824-112">SavedItemFolderId</span><span class="sxs-lookup"><span data-stu-id="d7824-112">SavedItemFolderId</span></span>](saveditemfolderid.md)
+- [<span data-ttu-id="2a444-112">SavedItemFolderId</span><span class="sxs-lookup"><span data-stu-id="2a444-112">SavedItemFolderId</span></span>](saveditemfolderid.md)
     
-- [<span data-ttu-id="d7824-113">Elementos (NonEmptyArrayOfAllItemsType)</span><span class="sxs-lookup"><span data-stu-id="d7824-113">Items (NonEmptyArrayOfAllItemsType)</span></span>](items-nonemptyarrayofallitemstype.md)
+- [<span data-ttu-id="2a444-113">Elementos (NonEmptyArrayOfAllItemsType)</span><span class="sxs-lookup"><span data-stu-id="2a444-113">Items (NonEmptyArrayOfAllItemsType)</span></span>](items-nonemptyarrayofallitemstype.md)
     
-- [<span data-ttu-id="d7824-114">Message</span><span class="sxs-lookup"><span data-stu-id="d7824-114">Message</span></span>](message-ex15websvcsotherref.md)
+- [<span data-ttu-id="2a444-114">Message</span><span class="sxs-lookup"><span data-stu-id="2a444-114">Message</span></span>](message-ex15websvcsotherref.md)
     
-- [<span data-ttu-id="d7824-115">ItemClass</span><span class="sxs-lookup"><span data-stu-id="d7824-115">ItemClass</span></span>](itemclass.md)
+- [<span data-ttu-id="2a444-115">ItemClass</span><span class="sxs-lookup"><span data-stu-id="2a444-115">ItemClass</span></span>](itemclass.md)
     
-- [<span data-ttu-id="d7824-116">Subject</span><span class="sxs-lookup"><span data-stu-id="d7824-116">Subject</span></span>](subject.md)
+- [<span data-ttu-id="2a444-116">Subject</span><span class="sxs-lookup"><span data-stu-id="2a444-116">Subject</span></span>](subject.md)
     
-- [<span data-ttu-id="d7824-117">Body</span><span class="sxs-lookup"><span data-stu-id="d7824-117">Body</span></span>](body.md)
+- [<span data-ttu-id="2a444-117">Body</span><span class="sxs-lookup"><span data-stu-id="2a444-117">Body</span></span>](body.md)
     
-- [<span data-ttu-id="d7824-118">ToRecipients</span><span class="sxs-lookup"><span data-stu-id="d7824-118">ToRecipients</span></span>](torecipients.md)
+- [<span data-ttu-id="2a444-118">ToRecipients</span><span class="sxs-lookup"><span data-stu-id="2a444-118">ToRecipients</span></span>](torecipients.md)
     
-- [<span data-ttu-id="d7824-119">Buzón de correo</span><span class="sxs-lookup"><span data-stu-id="d7824-119">Mailbox</span></span>](mailbox.md)
+- [<span data-ttu-id="2a444-119">Buzón de correo</span><span class="sxs-lookup"><span data-stu-id="2a444-119">Mailbox</span></span>](mailbox.md)
     
-- [<span data-ttu-id="d7824-120">EmailAddress (NonEmptyStringType)</span><span class="sxs-lookup"><span data-stu-id="d7824-120">EmailAddress (NonEmptyStringType)</span></span>](emailaddress-nonemptystringtype.md)
+- [<span data-ttu-id="2a444-120">EmailAddress (NonEmptyStringType)</span><span class="sxs-lookup"><span data-stu-id="2a444-120">EmailAddress (NonEmptyStringType)</span></span>](emailaddress-nonemptystringtype.md)
     
-- [<span data-ttu-id="d7824-121">Estáleído</span><span class="sxs-lookup"><span data-stu-id="d7824-121">IsRead</span></span>](isread.md)
+- [<span data-ttu-id="2a444-121">Estáleído</span><span class="sxs-lookup"><span data-stu-id="2a444-121">IsRead</span></span>](isread.md)
     
-<span data-ttu-id="d7824-122">Para buscar otras opciones para el mensaje de solicitud de la operación CreateItem, explore la jerarquía de esquema.</span><span class="sxs-lookup"><span data-stu-id="d7824-122">To find other options for the request message of the CreateItem operation, explore the schema hierarchy.</span></span> <span data-ttu-id="d7824-123">Comenzar en el elemento de [CreateItem](createitem.md) .</span><span class="sxs-lookup"><span data-stu-id="d7824-123">Start at the [CreateItem](createitem.md) element.</span></span> 
+<span data-ttu-id="2a444-122">Para buscar otras opciones para el mensaje de solicitud de la operación CreateItem, explore la jerarquía de esquema.</span><span class="sxs-lookup"><span data-stu-id="2a444-122">To find other options for the request message of the CreateItem operation, explore the schema hierarchy.</span></span> <span data-ttu-id="2a444-123">Comenzar en el elemento de [CreateItem](createitem.md) .</span><span class="sxs-lookup"><span data-stu-id="2a444-123">Start at the [CreateItem](createitem.md) element.</span></span> 
   
-## <a name="successful-createitem-response"></a><span data-ttu-id="d7824-124">Respuesta CreateItem es correcta</span><span class="sxs-lookup"><span data-stu-id="d7824-124">Successful CreateItem Response</span></span>
+## <a name="successful-createitem-response"></a><span data-ttu-id="2a444-124">Respuesta CreateItem es correcta</span><span class="sxs-lookup"><span data-stu-id="2a444-124">Successful CreateItem Response</span></span>
 
-### <a name="description"></a><span data-ttu-id="d7824-125">Descripción</span><span class="sxs-lookup"><span data-stu-id="d7824-125">Description</span></span>
+### <a name="description"></a><span data-ttu-id="2a444-125">Descripción</span><span class="sxs-lookup"><span data-stu-id="2a444-125">Description</span></span>
 
-<span data-ttu-id="d7824-126">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateItem.</span><span class="sxs-lookup"><span data-stu-id="d7824-126">The following example shows a successful response to the CreateItem request.</span></span>
+<span data-ttu-id="2a444-126">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateItem.</span><span class="sxs-lookup"><span data-stu-id="2a444-126">The following example shows a successful response to the CreateItem request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="d7824-127">Código</span><span class="sxs-lookup"><span data-stu-id="d7824-127">Code</span></span>
+### <a name="code"></a><span data-ttu-id="2a444-127">Código</span><span class="sxs-lookup"><span data-stu-id="2a444-127">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -117,29 +117,29 @@ ms.locfileid: "19763951"
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a><span data-ttu-id="d7824-128">Elementos de respuesta correcta</span><span class="sxs-lookup"><span data-stu-id="d7824-128">Successful response elements</span></span>
+### <a name="successful-response-elements"></a><span data-ttu-id="2a444-128">Elementos de respuesta correcta</span><span class="sxs-lookup"><span data-stu-id="2a444-128">Successful response elements</span></span>
 
-<span data-ttu-id="d7824-129">En la respuesta se incluyen los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="d7824-129">The following elements are included in the response:</span></span> 
+<span data-ttu-id="2a444-129">En la respuesta se incluyen los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="2a444-129">The following elements are included in the response:</span></span> 
   
-- [<span data-ttu-id="d7824-130">CreateItemResponse</span><span class="sxs-lookup"><span data-stu-id="d7824-130">CreateItemResponse</span></span>](createitemresponse.md)
+- [<span data-ttu-id="2a444-130">CreateItemResponse</span><span class="sxs-lookup"><span data-stu-id="2a444-130">CreateItemResponse</span></span>](createitemresponse.md)
     
-- [<span data-ttu-id="d7824-131">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="d7824-131">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="2a444-131">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="2a444-131">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="d7824-132">CreateItemResponseMessage</span><span class="sxs-lookup"><span data-stu-id="d7824-132">CreateItemResponseMessage</span></span>](createitemresponsemessage.md)
+- [<span data-ttu-id="2a444-132">CreateItemResponseMessage</span><span class="sxs-lookup"><span data-stu-id="2a444-132">CreateItemResponseMessage</span></span>](createitemresponsemessage.md)
     
-- [<span data-ttu-id="d7824-133">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="d7824-133">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="2a444-133">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="2a444-133">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="d7824-134">Items</span><span class="sxs-lookup"><span data-stu-id="d7824-134">Items</span></span>](items.md)
+- [<span data-ttu-id="2a444-134">Items</span><span class="sxs-lookup"><span data-stu-id="2a444-134">Items</span></span>](items.md)
     
-<span data-ttu-id="d7824-135">Para buscar otras opciones para el mensaje de respuesta de la operación CreateItem, explore la jerarquía de esquema.</span><span class="sxs-lookup"><span data-stu-id="d7824-135">To find other options for the response message of the CreateItem operation, explore the schema hierarchy.</span></span> <span data-ttu-id="d7824-136">Comenzar en el elemento de [CreateItemResponse](createitemresponse.md) .</span><span class="sxs-lookup"><span data-stu-id="d7824-136">Start at the [CreateItemResponse](createitemresponse.md) element.</span></span> 
+<span data-ttu-id="2a444-135">Para buscar otras opciones para el mensaje de respuesta de la operación CreateItem, explore la jerarquía de esquema.</span><span class="sxs-lookup"><span data-stu-id="2a444-135">To find other options for the response message of the CreateItem operation, explore the schema hierarchy.</span></span> <span data-ttu-id="2a444-136">Comenzar en el elemento de [CreateItemResponse](createitemresponse.md) .</span><span class="sxs-lookup"><span data-stu-id="2a444-136">Start at the [CreateItemResponse](createitemresponse.md) element.</span></span> 
   
-## <a name="error-createitem-response"></a><span data-ttu-id="d7824-137">Respuesta de error CreateItem</span><span class="sxs-lookup"><span data-stu-id="d7824-137">Error CreateItem Response</span></span>
+## <a name="error-createitem-response"></a><span data-ttu-id="2a444-137">Respuesta de error CreateItem</span><span class="sxs-lookup"><span data-stu-id="2a444-137">Error CreateItem Response</span></span>
 
-### <a name="description"></a><span data-ttu-id="d7824-138">Descripción</span><span class="sxs-lookup"><span data-stu-id="d7824-138">Description</span></span>
+### <a name="description"></a><span data-ttu-id="2a444-138">Descripción</span><span class="sxs-lookup"><span data-stu-id="2a444-138">Description</span></span>
 
-<span data-ttu-id="d7824-139">En el ejemplo siguiente se muestra una respuesta de error a una solicitud CreateItem.</span><span class="sxs-lookup"><span data-stu-id="d7824-139">The following example shows an error response to a CreateItem request.</span></span>
+<span data-ttu-id="2a444-139">En el ejemplo siguiente se muestra una respuesta de error a una solicitud CreateItem.</span><span class="sxs-lookup"><span data-stu-id="2a444-139">The following example shows an error response to a CreateItem request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="d7824-140">Código</span><span class="sxs-lookup"><span data-stu-id="d7824-140">Code</span></span>
+### <a name="code"></a><span data-ttu-id="2a444-140">Código</span><span class="sxs-lookup"><span data-stu-id="2a444-140">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -166,29 +166,29 @@ ms.locfileid: "19763951"
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a><span data-ttu-id="d7824-141">Elementos de respuesta de error</span><span class="sxs-lookup"><span data-stu-id="d7824-141">Error response elements</span></span>
+### <a name="error-response-elements"></a><span data-ttu-id="2a444-141">Elementos de respuesta de error</span><span class="sxs-lookup"><span data-stu-id="2a444-141">Error response elements</span></span>
 
-<span data-ttu-id="d7824-142">En la respuesta de error, se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="d7824-142">The following elements are used in the error response:</span></span> 
+<span data-ttu-id="2a444-142">En la respuesta de error, se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="2a444-142">The following elements are used in the error response:</span></span> 
   
-- [<span data-ttu-id="d7824-143">CreateItemResponse</span><span class="sxs-lookup"><span data-stu-id="d7824-143">CreateItemResponse</span></span>](createitemresponse.md)
+- [<span data-ttu-id="2a444-143">CreateItemResponse</span><span class="sxs-lookup"><span data-stu-id="2a444-143">CreateItemResponse</span></span>](createitemresponse.md)
     
-- [<span data-ttu-id="d7824-144">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="d7824-144">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="2a444-144">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="2a444-144">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="d7824-145">CreateItemResponseMessage</span><span class="sxs-lookup"><span data-stu-id="d7824-145">CreateItemResponseMessage</span></span>](createitemresponsemessage.md)
+- [<span data-ttu-id="2a444-145">CreateItemResponseMessage</span><span class="sxs-lookup"><span data-stu-id="2a444-145">CreateItemResponseMessage</span></span>](createitemresponsemessage.md)
     
-- [<span data-ttu-id="d7824-146">MessageText</span><span class="sxs-lookup"><span data-stu-id="d7824-146">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="2a444-146">MessageText</span><span class="sxs-lookup"><span data-stu-id="2a444-146">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="d7824-147">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="d7824-147">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="2a444-147">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="2a444-147">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="d7824-148">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="d7824-148">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="2a444-148">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="2a444-148">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-- [<span data-ttu-id="d7824-149">Items</span><span class="sxs-lookup"><span data-stu-id="d7824-149">Items</span></span>](items.md)
+- [<span data-ttu-id="2a444-149">Items</span><span class="sxs-lookup"><span data-stu-id="2a444-149">Items</span></span>](items.md)
     
-<span data-ttu-id="d7824-150">Para buscar otras opciones para el mensaje de respuesta de error de la operación CreateItem, explore la jerarquía de esquema.</span><span class="sxs-lookup"><span data-stu-id="d7824-150">To find other options for the error response message of the CreateItem operation, explore the schema hierarchy.</span></span> <span data-ttu-id="d7824-151">Comenzar en el elemento de [CreateItemResponse](createitemresponse.md) .</span><span class="sxs-lookup"><span data-stu-id="d7824-151">Start at the [CreateItemResponse](createitemresponse.md) element.</span></span> 
+<span data-ttu-id="2a444-150">Para buscar otras opciones para el mensaje de respuesta de error de la operación CreateItem, explore la jerarquía de esquema.</span><span class="sxs-lookup"><span data-stu-id="2a444-150">To find other options for the error response message of the CreateItem operation, explore the schema hierarchy.</span></span> <span data-ttu-id="2a444-151">Comenzar en el elemento de [CreateItemResponse](createitemresponse.md) .</span><span class="sxs-lookup"><span data-stu-id="2a444-151">Start at the [CreateItemResponse](createitemresponse.md) element.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="d7824-152">Ver también</span><span class="sxs-lookup"><span data-stu-id="d7824-152">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2a444-152">Vea también</span><span class="sxs-lookup"><span data-stu-id="2a444-152">See also</span></span>
 
 
 
-[<span data-ttu-id="d7824-153">Operación CreateItem</span><span class="sxs-lookup"><span data-stu-id="d7824-153">CreateItem operation</span></span>](createitem-operation.md)
+[<span data-ttu-id="2a444-153">Operación CreateItem</span><span class="sxs-lookup"><span data-stu-id="2a444-153">CreateItem operation</span></span>](createitem-operation.md)
 

@@ -13,20 +13,20 @@ ms.openlocfilehash: 09b1d610cd415d2d9d7d0098354521ece86f5184
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764823"
 ---
-# <a name="getdomainsettings-operation-soap"></a><span data-ttu-id="60fc4-104">Operación GetDomainSettings (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-104">GetDomainSettings operation (SOAP)</span></span>
+# <a name="getdomainsettings-operation-soap"></a><span data-ttu-id="ca0b7-104">Operación GetDomainSettings (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-104">GetDomainSettings operation (SOAP)</span></span>
 
-<span data-ttu-id="60fc4-105">La operación **GetDomainSettings** recupera la configuración del dominio para el usuario especificada.</span><span class="sxs-lookup"><span data-stu-id="60fc4-105">The **GetDomainSettings** operation retrieves the specified settings of the domain for the user.</span></span> <span data-ttu-id="60fc4-106">Detección automática devuelve los dominios que van a ser detectado y la configuración de dichos dominios solicitada.</span><span class="sxs-lookup"><span data-stu-id="60fc4-106">Autodiscover returns the domains that are to be discovered and the requested settings of those domains.</span></span> 
+<span data-ttu-id="ca0b7-105">La operación **GetDomainSettings** recupera la configuración del dominio para el usuario especificada.</span><span class="sxs-lookup"><span data-stu-id="ca0b7-105">The **GetDomainSettings** operation retrieves the specified settings of the domain for the user.</span></span> <span data-ttu-id="ca0b7-106">Detección automática devuelve los dominios que van a ser detectado y la configuración de dichos dominios solicitada.</span><span class="sxs-lookup"><span data-stu-id="ca0b7-106">Autodiscover returns the domains that are to be discovered and the requested settings of those domains.</span></span> 
   
-## <a name="getdomainsettings-request-example"></a><span data-ttu-id="60fc4-107">Ejemplo de solicitud de GetDomainSettings</span><span class="sxs-lookup"><span data-stu-id="60fc4-107">GetDomainSettings request example</span></span>
+## <a name="getdomainsettings-request-example"></a><span data-ttu-id="ca0b7-107">Ejemplo de solicitud de GetDomainSettings</span><span class="sxs-lookup"><span data-stu-id="ca0b7-107">GetDomainSettings request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="60fc4-108">Descripción</span><span class="sxs-lookup"><span data-stu-id="60fc4-108">Description</span></span>
+### <a name="description"></a><span data-ttu-id="ca0b7-108">Descripción</span><span class="sxs-lookup"><span data-stu-id="ca0b7-108">Description</span></span>
 
-<span data-ttu-id="60fc4-109">El siguiente ejemplo de una solicitud de **GetDomainSettings** muestra una solicitud para la configuración de dominio de un usuario **ExternalEWSUrl** .</span><span class="sxs-lookup"><span data-stu-id="60fc4-109">The following example of a **GetDomainSettings** request shows a request for a user's **ExternalEWSUrl** domain settings.</span></span> <span data-ttu-id="60fc4-110">El cliente envía esta solicitud al servidor.</span><span class="sxs-lookup"><span data-stu-id="60fc4-110">The client sends this request to the server.</span></span> 
+<span data-ttu-id="ca0b7-109">El siguiente ejemplo de una solicitud de **GetDomainSettings** muestra una solicitud para la configuración de dominio de un usuario **ExternalEWSUrl** .</span><span class="sxs-lookup"><span data-stu-id="ca0b7-109">The following example of a **GetDomainSettings** request shows a request for a user's **ExternalEWSUrl** domain settings.</span></span> <span data-ttu-id="ca0b7-110">El cliente envía esta solicitud al servidor.</span><span class="sxs-lookup"><span data-stu-id="ca0b7-110">The client sends this request to the server.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="60fc4-111">Código</span><span class="sxs-lookup"><span data-stu-id="60fc4-111">Code</span></span>
+### <a name="code"></a><span data-ttu-id="ca0b7-111">Código</span><span class="sxs-lookup"><span data-stu-id="ca0b7-111">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?> 
@@ -58,29 +58,29 @@ ms.locfileid: "19764823"
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a><span data-ttu-id="60fc4-112">Elementos de solicitud</span><span class="sxs-lookup"><span data-stu-id="60fc4-112">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="ca0b7-112">Elementos de solicitud</span><span class="sxs-lookup"><span data-stu-id="ca0b7-112">Request elements</span></span>
 
-<span data-ttu-id="60fc4-113">En la solicitud se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="60fc4-113">The following elements are used in the request:</span></span>
+<span data-ttu-id="ca0b7-113">En la solicitud se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="ca0b7-113">The following elements are used in the request:</span></span>
   
-- [<span data-ttu-id="60fc4-114">GetDomainSettingsRequestMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-114">GetDomainSettingsRequestMessage (SOAP)</span></span>](getdomainsettingsrequestmessage-soap.md)
+- [<span data-ttu-id="ca0b7-114">GetDomainSettingsRequestMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-114">GetDomainSettingsRequestMessage (SOAP)</span></span>](getdomainsettingsrequestmessage-soap.md)
     
-- [<span data-ttu-id="60fc4-115">Solicitud (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-115">Request (SOAP)</span></span>](request-soap.md)
+- [<span data-ttu-id="ca0b7-115">Solicitud (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-115">Request (SOAP)</span></span>](request-soap.md)
     
-- [<span data-ttu-id="60fc4-116">Dominios (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-116">Domains (SOAP)</span></span>](domains-soap.md)
+- [<span data-ttu-id="ca0b7-116">Dominios (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-116">Domains (SOAP)</span></span>](domains-soap.md)
     
-- [<span data-ttu-id="60fc4-117">Dominio (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-117">Domain (SOAP)</span></span>](domain-soap.md)
+- [<span data-ttu-id="ca0b7-117">Dominio (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-117">Domain (SOAP)</span></span>](domain-soap.md)
     
-- [<span data-ttu-id="60fc4-118">RequestedSettings (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-118">RequestedSettings (SOAP)</span></span>](requestedsettings-soap.md)
+- [<span data-ttu-id="ca0b7-118">RequestedSettings (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-118">RequestedSettings (SOAP)</span></span>](requestedsettings-soap.md)
     
-- [<span data-ttu-id="60fc4-119">Configuración (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-119">Setting (SOAP)</span></span>](setting-soap.md)
+- [<span data-ttu-id="ca0b7-119">Configuración (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-119">Setting (SOAP)</span></span>](setting-soap.md)
     
-## <a name="getdomainsettings-response-example"></a><span data-ttu-id="60fc4-120">Ejemplo de respuesta GetDomainSettings</span><span class="sxs-lookup"><span data-stu-id="60fc4-120">GetDomainSettings response example</span></span>
+## <a name="getdomainsettings-response-example"></a><span data-ttu-id="ca0b7-120">Ejemplo de respuesta GetDomainSettings</span><span class="sxs-lookup"><span data-stu-id="ca0b7-120">GetDomainSettings response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="60fc4-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="60fc4-121">Description</span></span>
+### <a name="description"></a><span data-ttu-id="ca0b7-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="ca0b7-121">Description</span></span>
 
-<span data-ttu-id="60fc4-122">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **GetDomainSettings** que el servidor envía al cliente.</span><span class="sxs-lookup"><span data-stu-id="60fc4-122">The following example shows a successful response to the **GetDomainSettings** request that the server sends to the client.</span></span> 
+<span data-ttu-id="ca0b7-122">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **GetDomainSettings** que el servidor envía al cliente.</span><span class="sxs-lookup"><span data-stu-id="ca0b7-122">The following example shows a successful response to the **GetDomainSettings** request that the server sends to the client.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="60fc4-123">Código</span><span class="sxs-lookup"><span data-stu-id="60fc4-123">Code</span></span>
+### <a name="code"></a><span data-ttu-id="ca0b7-123">Código</span><span class="sxs-lookup"><span data-stu-id="ca0b7-123">Code</span></span>
 
 ```XML
 //www.w3.org/2005/08/addressing"> 
@@ -122,39 +122,39 @@ ms.locfileid: "19764823"
 </s:Envelope>
 ```
 
-### <a name="response-elements"></a><span data-ttu-id="60fc4-124">Elementos de respuesta</span><span class="sxs-lookup"><span data-stu-id="60fc4-124">Response elements</span></span>
+### <a name="response-elements"></a><span data-ttu-id="ca0b7-124">Elementos de respuesta</span><span class="sxs-lookup"><span data-stu-id="ca0b7-124">Response elements</span></span>
 
-<span data-ttu-id="60fc4-125">En la respuesta se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="60fc4-125">The following elements are used in the response:</span></span>
+<span data-ttu-id="ca0b7-125">En la respuesta se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="ca0b7-125">The following elements are used in the response:</span></span>
   
-- [<span data-ttu-id="60fc4-126">GetDomainSettingsResponseMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-126">GetDomainSettingsResponseMessage (SOAP)</span></span>](getdomainsettingsresponsemessage-soap.md)
+- [<span data-ttu-id="ca0b7-126">GetDomainSettingsResponseMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-126">GetDomainSettingsResponseMessage (SOAP)</span></span>](getdomainsettingsresponsemessage-soap.md)
     
-- [<span data-ttu-id="60fc4-127">Respuesta (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-127">Response (SOAP)</span></span>](response-soap.md)
+- [<span data-ttu-id="ca0b7-127">Respuesta (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-127">Response (SOAP)</span></span>](response-soap.md)
     
-- [<span data-ttu-id="60fc4-128">ErrorCode (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-128">ErrorCode (SOAP)</span></span>](errorcode-soap.md)
+- [<span data-ttu-id="ca0b7-128">ErrorCode (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-128">ErrorCode (SOAP)</span></span>](errorcode-soap.md)
     
-- [<span data-ttu-id="60fc4-129">ErrorMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-129">ErrorMessage (SOAP)</span></span>](errormessage-soap.md)
+- [<span data-ttu-id="ca0b7-129">ErrorMessage (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-129">ErrorMessage (SOAP)</span></span>](errormessage-soap.md)
     
-- [<span data-ttu-id="60fc4-130">DomainResponses (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-130">DomainResponses (SOAP)</span></span>](domainresponses-soap.md)
+- [<span data-ttu-id="ca0b7-130">DomainResponses (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-130">DomainResponses (SOAP)</span></span>](domainresponses-soap.md)
     
-- [<span data-ttu-id="60fc4-131">DomainResponse (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-131">DomainResponse (SOAP)</span></span>](domainresponse-soap.md)
+- [<span data-ttu-id="ca0b7-131">DomainResponse (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-131">DomainResponse (SOAP)</span></span>](domainresponse-soap.md)
     
-- [<span data-ttu-id="60fc4-132">DomainSettingErrors (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-132">DomainSettingErrors (SOAP)</span></span>](domainsettingerrors-soap.md)
+- [<span data-ttu-id="ca0b7-132">DomainSettingErrors (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-132">DomainSettingErrors (SOAP)</span></span>](domainsettingerrors-soap.md)
     
-- [<span data-ttu-id="60fc4-133">DomainSettings (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-133">DomainSettings (SOAP)</span></span>](domainsettings-soap.md)
+- [<span data-ttu-id="ca0b7-133">DomainSettings (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-133">DomainSettings (SOAP)</span></span>](domainsettings-soap.md)
     
-- [<span data-ttu-id="60fc4-134">DomainSetting (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-134">DomainSetting (SOAP)</span></span>](domainsetting-soap.md)
+- [<span data-ttu-id="ca0b7-134">DomainSetting (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-134">DomainSetting (SOAP)</span></span>](domainsetting-soap.md)
     
-- [<span data-ttu-id="60fc4-135">Nombre (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-135">Name (SOAP)</span></span>](name-soap.md)
+- [<span data-ttu-id="ca0b7-135">Nombre (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-135">Name (SOAP)</span></span>](name-soap.md)
     
-- [<span data-ttu-id="60fc4-136">Valor (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-136">Value (SOAP)</span></span>](value-soap.md)
+- [<span data-ttu-id="ca0b7-136">Valor (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-136">Value (SOAP)</span></span>](value-soap.md)
     
-- [<span data-ttu-id="60fc4-137">RedirectTarget (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-137">RedirectTarget (SOAP)</span></span>](redirecttarget-soap.md)
+- [<span data-ttu-id="ca0b7-137">RedirectTarget (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-137">RedirectTarget (SOAP)</span></span>](redirecttarget-soap.md)
     
-## <a name="see-also"></a><span data-ttu-id="60fc4-138">Ver también</span><span class="sxs-lookup"><span data-stu-id="60fc4-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ca0b7-138">Vea también</span><span class="sxs-lookup"><span data-stu-id="ca0b7-138">See also</span></span>
 
 
 
-[<span data-ttu-id="60fc4-139">Operación GetUserSettings (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-139">GetUserSettings operation (SOAP)</span></span>](getusersettings-operation-soap.md)
+[<span data-ttu-id="ca0b7-139">Operación GetUserSettings (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-139">GetUserSettings operation (SOAP)</span></span>](getusersettings-operation-soap.md)
   
-[<span data-ttu-id="60fc4-140">Operación GetFederationInformation (SOAP)</span><span class="sxs-lookup"><span data-stu-id="60fc4-140">GetFederationInformation operation (SOAP)</span></span>](getfederationinformation-operation-soap.md)
+[<span data-ttu-id="ca0b7-140">Operación GetFederationInformation (SOAP)</span><span class="sxs-lookup"><span data-stu-id="ca0b7-140">GetFederationInformation operation (SOAP)</span></span>](getfederationinformation-operation-soap.md)
 

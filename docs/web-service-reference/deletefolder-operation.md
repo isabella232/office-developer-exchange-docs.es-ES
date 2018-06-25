@@ -16,20 +16,20 @@ ms.openlocfilehash: 0fd7c9d4b04a706dcdb83f41087eaa4f3d45f129
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764091"
 ---
-# <a name="deletefolder-operation"></a><span data-ttu-id="c5649-103">Operación DeleteFolder</span><span class="sxs-lookup"><span data-stu-id="c5649-103">DeleteFolder operation</span></span>
+# <a name="deletefolder-operation"></a><span data-ttu-id="fb7de-103">Operación DeleteFolder</span><span class="sxs-lookup"><span data-stu-id="fb7de-103">DeleteFolder operation</span></span>
 
-<span data-ttu-id="c5649-104">La operación **DeleteFolder** elimina las carpetas de un buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="c5649-104">The **DeleteFolder** operation deletes folders from a mailbox.</span></span> 
+<span data-ttu-id="fb7de-104">La operación **DeleteFolder** elimina las carpetas de un buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="fb7de-104">The **DeleteFolder** operation deletes folders from a mailbox.</span></span> 
   
-## <a name="deletefolder-request-example"></a><span data-ttu-id="c5649-105">Ejemplo de solicitud DeleteFolder</span><span class="sxs-lookup"><span data-stu-id="c5649-105">DeleteFolder request example</span></span>
+## <a name="deletefolder-request-example"></a><span data-ttu-id="fb7de-105">Ejemplo de solicitud DeleteFolder</span><span class="sxs-lookup"><span data-stu-id="fb7de-105">DeleteFolder request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="c5649-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="c5649-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="fb7de-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="fb7de-106">Description</span></span>
 
-<span data-ttu-id="c5649-107">El siguiente ejemplo de una solicitud de **DeleteFolder** muestra cómo formar una solicitud para eliminar una carpeta.</span><span class="sxs-lookup"><span data-stu-id="c5649-107">This following example of a **DeleteFolder** request shows how to form a request to delete a folder.</span></span> 
+<span data-ttu-id="fb7de-107">El siguiente ejemplo de una solicitud de **DeleteFolder** muestra cómo formar una solicitud para eliminar una carpeta.</span><span class="sxs-lookup"><span data-stu-id="fb7de-107">This following example of a **DeleteFolder** request shows how to form a request to delete a folder.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="c5649-108">Código</span><span class="sxs-lookup"><span data-stu-id="c5649-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="fb7de-108">Código</span><span class="sxs-lookup"><span data-stu-id="fb7de-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -47,35 +47,35 @@ ms.locfileid: "19764091"
 </soap:Envelope>
 ```
 
-### <a name="comments"></a><span data-ttu-id="c5649-109">Comentarios</span><span class="sxs-lookup"><span data-stu-id="c5649-109">Comments</span></span>
+### <a name="comments"></a><span data-ttu-id="fb7de-109">Comentarios</span><span class="sxs-lookup"><span data-stu-id="fb7de-109">Comments</span></span>
 
-<span data-ttu-id="c5649-110">En este ejemplo se realiza una eliminación de disco duro en la carpeta.</span><span class="sxs-lookup"><span data-stu-id="c5649-110">This example performs a hard delete on the folder.</span></span>
+<span data-ttu-id="fb7de-110">En este ejemplo se realiza una eliminación de disco duro en la carpeta.</span><span class="sxs-lookup"><span data-stu-id="fb7de-110">This example performs a hard delete on the folder.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="c5649-111">Se ha reducido el identificador de carpeta para conservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="c5649-111">The folder ID has been shortened to preserve readability.</span></span> 
+> <span data-ttu-id="fb7de-111">Se ha reducido el identificador de carpeta para conservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="fb7de-111">The folder ID has been shortened to preserve readability.</span></span> 
   
-### <a name="request-elements"></a><span data-ttu-id="c5649-112">Elementos de solicitud</span><span class="sxs-lookup"><span data-stu-id="c5649-112">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="fb7de-112">Elementos de solicitud</span><span class="sxs-lookup"><span data-stu-id="fb7de-112">Request elements</span></span>
 
-<span data-ttu-id="c5649-113">En la solicitud se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="c5649-113">The following elements are used in the request:</span></span>
+<span data-ttu-id="fb7de-113">En la solicitud se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="fb7de-113">The following elements are used in the request:</span></span>
   
-- [<span data-ttu-id="c5649-114">DeleteFolder</span><span class="sxs-lookup"><span data-stu-id="c5649-114">DeleteFolder</span></span>](deletefolder.md)
+- [<span data-ttu-id="fb7de-114">DeleteFolder</span><span class="sxs-lookup"><span data-stu-id="fb7de-114">DeleteFolder</span></span>](deletefolder.md)
     
-- [<span data-ttu-id="c5649-115">FolderIds</span><span class="sxs-lookup"><span data-stu-id="c5649-115">FolderIds</span></span>](folderids.md)
+- [<span data-ttu-id="fb7de-115">FolderIds</span><span class="sxs-lookup"><span data-stu-id="fb7de-115">FolderIds</span></span>](folderids.md)
     
-- [<span data-ttu-id="c5649-116">FolderId</span><span class="sxs-lookup"><span data-stu-id="c5649-116">FolderId</span></span>](folderid.md)
+- [<span data-ttu-id="fb7de-116">FolderId</span><span class="sxs-lookup"><span data-stu-id="fb7de-116">FolderId</span></span>](folderid.md)
     
 > [!NOTE]
-> <span data-ttu-id="c5649-117">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="c5649-117">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2010 that has the Client Access server role installed.</span></span> 
+> <span data-ttu-id="fb7de-117">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="fb7de-117">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2010 that has the Client Access server role installed.</span></span> 
   
-<span data-ttu-id="c5649-118">Para buscar otras opciones para el mensaje de solicitud de la operación **DeleteFolder** , explore la jerarquía de esquema.</span><span class="sxs-lookup"><span data-stu-id="c5649-118">To find other options for the request message of the **DeleteFolder** operation, explore the schema hierarchy.</span></span> <span data-ttu-id="c5649-119">Comenzar en el elemento de [DeleteFolder](deletefolder.md) .</span><span class="sxs-lookup"><span data-stu-id="c5649-119">Start at the [DeleteFolder](deletefolder.md) element.</span></span> 
+<span data-ttu-id="fb7de-118">Para buscar otras opciones para el mensaje de solicitud de la operación **DeleteFolder** , explore la jerarquía de esquema.</span><span class="sxs-lookup"><span data-stu-id="fb7de-118">To find other options for the request message of the **DeleteFolder** operation, explore the schema hierarchy.</span></span> <span data-ttu-id="fb7de-119">Comenzar en el elemento de [DeleteFolder](deletefolder.md) .</span><span class="sxs-lookup"><span data-stu-id="fb7de-119">Start at the [DeleteFolder](deletefolder.md) element.</span></span> 
   
-## <a name="successful-deletefolder-response"></a><span data-ttu-id="c5649-120">Respuesta es correcta DeleteFolder</span><span class="sxs-lookup"><span data-stu-id="c5649-120">Successful DeleteFolder response</span></span>
+## <a name="successful-deletefolder-response"></a><span data-ttu-id="fb7de-120">Respuesta es correcta DeleteFolder</span><span class="sxs-lookup"><span data-stu-id="fb7de-120">Successful DeleteFolder response</span></span>
 
-### <a name="description"></a><span data-ttu-id="c5649-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="c5649-121">Description</span></span>
+### <a name="description"></a><span data-ttu-id="fb7de-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="fb7de-121">Description</span></span>
 
-<span data-ttu-id="c5649-122">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **DeleteFolder** .</span><span class="sxs-lookup"><span data-stu-id="c5649-122">The following example shows a successful response to the **DeleteFolder** request.</span></span> 
+<span data-ttu-id="fb7de-122">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **DeleteFolder** .</span><span class="sxs-lookup"><span data-stu-id="fb7de-122">The following example shows a successful response to the **DeleteFolder** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="c5649-123">Código</span><span class="sxs-lookup"><span data-stu-id="c5649-123">Code</span></span>
+### <a name="code"></a><span data-ttu-id="fb7de-123">Código</span><span class="sxs-lookup"><span data-stu-id="fb7de-123">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -100,29 +100,29 @@ ms.locfileid: "19764091"
 </soap:Envelope>
 ```
 
-### <a name="response-elements"></a><span data-ttu-id="c5649-124">Elementos de respuesta</span><span class="sxs-lookup"><span data-stu-id="c5649-124">Response elements</span></span>
+### <a name="response-elements"></a><span data-ttu-id="fb7de-124">Elementos de respuesta</span><span class="sxs-lookup"><span data-stu-id="fb7de-124">Response elements</span></span>
 
-<span data-ttu-id="c5649-125">En la respuesta se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="c5649-125">The following elements are used in the response:</span></span>
+<span data-ttu-id="fb7de-125">En la respuesta se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="fb7de-125">The following elements are used in the response:</span></span>
   
-- [<span data-ttu-id="c5649-126">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="c5649-126">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="fb7de-126">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="fb7de-126">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="c5649-127">DeleteFolderResponse</span><span class="sxs-lookup"><span data-stu-id="c5649-127">DeleteFolderResponse</span></span>](deletefolderresponse.md)
+- [<span data-ttu-id="fb7de-127">DeleteFolderResponse</span><span class="sxs-lookup"><span data-stu-id="fb7de-127">DeleteFolderResponse</span></span>](deletefolderresponse.md)
     
-- [<span data-ttu-id="c5649-128">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="c5649-128">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="fb7de-128">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="fb7de-128">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="c5649-129">DeleteFolderResponseMessage</span><span class="sxs-lookup"><span data-stu-id="c5649-129">DeleteFolderResponseMessage</span></span>](deletefolderresponsemessage.md)
+- [<span data-ttu-id="fb7de-129">DeleteFolderResponseMessage</span><span class="sxs-lookup"><span data-stu-id="fb7de-129">DeleteFolderResponseMessage</span></span>](deletefolderresponsemessage.md)
     
-- [<span data-ttu-id="c5649-130">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="c5649-130">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="fb7de-130">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="fb7de-130">ResponseCode</span></span>](responsecode.md)
     
-<span data-ttu-id="c5649-131">Para buscar otras opciones para el mensaje de respuesta de la operación **DeleteFolder** , explore la jerarquía de esquema.</span><span class="sxs-lookup"><span data-stu-id="c5649-131">To find other options for the response message of the **DeleteFolder** operation, explore the schema hierarchy.</span></span> <span data-ttu-id="c5649-132">Comenzar en el elemento de [DeleteFolderResponse](deletefolderresponse.md) .</span><span class="sxs-lookup"><span data-stu-id="c5649-132">Start at the [DeleteFolderResponse](deletefolderresponse.md) element.</span></span> 
+<span data-ttu-id="fb7de-131">Para buscar otras opciones para el mensaje de respuesta de la operación **DeleteFolder** , explore la jerarquía de esquema.</span><span class="sxs-lookup"><span data-stu-id="fb7de-131">To find other options for the response message of the **DeleteFolder** operation, explore the schema hierarchy.</span></span> <span data-ttu-id="fb7de-132">Comenzar en el elemento de [DeleteFolderResponse](deletefolderresponse.md) .</span><span class="sxs-lookup"><span data-stu-id="fb7de-132">Start at the [DeleteFolderResponse](deletefolderresponse.md) element.</span></span> 
   
-## <a name="deletefolder-error-response"></a><span data-ttu-id="c5649-133">Respuesta de error DeleteFolder</span><span class="sxs-lookup"><span data-stu-id="c5649-133">DeleteFolder error response</span></span>
+## <a name="deletefolder-error-response"></a><span data-ttu-id="fb7de-133">Respuesta de error DeleteFolder</span><span class="sxs-lookup"><span data-stu-id="fb7de-133">DeleteFolder error response</span></span>
 
-### <a name="description"></a><span data-ttu-id="c5649-134">Descripción</span><span class="sxs-lookup"><span data-stu-id="c5649-134">Description</span></span>
+### <a name="description"></a><span data-ttu-id="fb7de-134">Descripción</span><span class="sxs-lookup"><span data-stu-id="fb7de-134">Description</span></span>
 
-<span data-ttu-id="c5649-135">En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **DeleteFolder** .</span><span class="sxs-lookup"><span data-stu-id="c5649-135">The following example shows an error response to a **DeleteFolder** request.</span></span> <span data-ttu-id="c5649-136">El error se produjo por una solicitud para eliminar una carpeta que no estaba presente en el buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="c5649-136">The error was caused by a request to delete a folder that was not present in the mailbox.</span></span> 
+<span data-ttu-id="fb7de-135">En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **DeleteFolder** .</span><span class="sxs-lookup"><span data-stu-id="fb7de-135">The following example shows an error response to a **DeleteFolder** request.</span></span> <span data-ttu-id="fb7de-136">El error se produjo por una solicitud para eliminar una carpeta que no estaba presente en el buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="fb7de-136">The error was caused by a request to delete a folder that was not present in the mailbox.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="c5649-137">Código</span><span class="sxs-lookup"><span data-stu-id="c5649-137">Code</span></span>
+### <a name="code"></a><span data-ttu-id="fb7de-137">Código</span><span class="sxs-lookup"><span data-stu-id="fb7de-137">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -149,32 +149,32 @@ ms.locfileid: "19764091"
 </soap:Envelope>
 ```
 
-### <a name="comments"></a><span data-ttu-id="c5649-138">Comentarios</span><span class="sxs-lookup"><span data-stu-id="c5649-138">Comments</span></span>
+### <a name="comments"></a><span data-ttu-id="fb7de-138">Comentarios</span><span class="sxs-lookup"><span data-stu-id="fb7de-138">Comments</span></span>
 
-<span data-ttu-id="c5649-139">No se puede usar la operación **DeleteFolder** en las carpetas completas.</span><span class="sxs-lookup"><span data-stu-id="c5649-139">The **DeleteFolder** operation cannot be used on distinguished folders.</span></span> 
+<span data-ttu-id="fb7de-139">No se puede usar la operación **DeleteFolder** en las carpetas completas.</span><span class="sxs-lookup"><span data-stu-id="fb7de-139">The **DeleteFolder** operation cannot be used on distinguished folders.</span></span> 
   
-### <a name="error-response-elements"></a><span data-ttu-id="c5649-140">Elementos de respuesta de error</span><span class="sxs-lookup"><span data-stu-id="c5649-140">Error response elements</span></span>
+### <a name="error-response-elements"></a><span data-ttu-id="fb7de-140">Elementos de respuesta de error</span><span class="sxs-lookup"><span data-stu-id="fb7de-140">Error response elements</span></span>
 
-<span data-ttu-id="c5649-141">En la respuesta de error, se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="c5649-141">The following elements are used in the error response:</span></span>
+<span data-ttu-id="fb7de-141">En la respuesta de error, se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="fb7de-141">The following elements are used in the error response:</span></span>
   
-- [<span data-ttu-id="c5649-142">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="c5649-142">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="fb7de-142">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="fb7de-142">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="c5649-143">DeleteFolderResponse</span><span class="sxs-lookup"><span data-stu-id="c5649-143">DeleteFolderResponse</span></span>](deletefolderresponse.md)
+- [<span data-ttu-id="fb7de-143">DeleteFolderResponse</span><span class="sxs-lookup"><span data-stu-id="fb7de-143">DeleteFolderResponse</span></span>](deletefolderresponse.md)
     
-- [<span data-ttu-id="c5649-144">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="c5649-144">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="fb7de-144">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="fb7de-144">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="c5649-145">DeleteFolderResponseMessage</span><span class="sxs-lookup"><span data-stu-id="c5649-145">DeleteFolderResponseMessage</span></span>](deletefolderresponsemessage.md)
+- [<span data-ttu-id="fb7de-145">DeleteFolderResponseMessage</span><span class="sxs-lookup"><span data-stu-id="fb7de-145">DeleteFolderResponseMessage</span></span>](deletefolderresponsemessage.md)
     
-- [<span data-ttu-id="c5649-146">MessageText</span><span class="sxs-lookup"><span data-stu-id="c5649-146">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="fb7de-146">MessageText</span><span class="sxs-lookup"><span data-stu-id="fb7de-146">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="c5649-147">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="c5649-147">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="fb7de-147">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="fb7de-147">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="c5649-148">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="c5649-148">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="fb7de-148">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="fb7de-148">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-<span data-ttu-id="c5649-149">Para buscar otras opciones para el mensaje de respuesta de error de la operación **DeleteFolder** , explore la jerarquía de esquema.</span><span class="sxs-lookup"><span data-stu-id="c5649-149">To find other options for the error response message of the **DeleteFolder** operation, explore the schema hierarchy.</span></span> <span data-ttu-id="c5649-150">Comenzar en el elemento de [DeleteFolderResponse](deletefolderresponse.md) .</span><span class="sxs-lookup"><span data-stu-id="c5649-150">Start at the [DeleteFolderResponse](deletefolderresponse.md) element.</span></span> 
+<span data-ttu-id="fb7de-149">Para buscar otras opciones para el mensaje de respuesta de error de la operación **DeleteFolder** , explore la jerarquía de esquema.</span><span class="sxs-lookup"><span data-stu-id="fb7de-149">To find other options for the error response message of the **DeleteFolder** operation, explore the schema hierarchy.</span></span> <span data-ttu-id="fb7de-150">Comenzar en el elemento de [DeleteFolderResponse](deletefolderresponse.md) .</span><span class="sxs-lookup"><span data-stu-id="fb7de-150">Start at the [DeleteFolderResponse](deletefolderresponse.md) element.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="c5649-151">Ver también</span><span class="sxs-lookup"><span data-stu-id="c5649-151">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fb7de-151">Vea también</span><span class="sxs-lookup"><span data-stu-id="fb7de-151">See also</span></span>
 
-- [<span data-ttu-id="c5649-152">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="c5649-152">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
-- [<span data-ttu-id="c5649-153">Eliminación de carpetas</span><span class="sxs-lookup"><span data-stu-id="c5649-153">Deleting Folders</span></span>](http://msdn.microsoft.com/library/1958add5-5071-4239-adb2-40f7a7d74aee%28Office.15%29.aspx)
+- [<span data-ttu-id="fb7de-152">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="fb7de-152">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="fb7de-153">Eliminación de carpetas</span><span class="sxs-lookup"><span data-stu-id="fb7de-153">Deleting Folders</span></span>](http://msdn.microsoft.com/library/1958add5-5071-4239-adb2-40f7a7d74aee%28Office.15%29.aspx)
 

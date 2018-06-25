@@ -15,20 +15,20 @@ ms.openlocfilehash: 1e04e65fa1951a6aa46e2c8b6dd5fe524c84a8fc
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764192"
 ---
-# <a name="disconnect-operation-um-web-service"></a><span data-ttu-id="0f00a-103">(Servicio web de mensajería unificada) de la operación de desconexión</span><span class="sxs-lookup"><span data-stu-id="0f00a-103">Disconnect operation (UM web service)</span></span>
+# <a name="disconnect-operation-um-web-service"></a><span data-ttu-id="38d10-103">(Servicio web de mensajería unificada) de la operación de desconexión</span><span class="sxs-lookup"><span data-stu-id="38d10-103">Disconnect operation (UM web service)</span></span>
 
-<span data-ttu-id="0f00a-104">La operación de desconexión termina la llamada que se identifica con el especificado [CallId (servicio web de mensajería unificada)](callid-um-web-service.md).</span><span class="sxs-lookup"><span data-stu-id="0f00a-104">The Disconnect operation terminates the call that is identified by the specified [CallId (UM web service)](callid-um-web-service.md).</span></span>
+<span data-ttu-id="38d10-104">La operación de desconexión termina la llamada que se identifica con el especificado [CallId (servicio web de mensajería unificada)](callid-um-web-service.md).</span><span class="sxs-lookup"><span data-stu-id="38d10-104">The Disconnect operation terminates the call that is identified by the specified [CallId (UM web service)](callid-um-web-service.md).</span></span>
   
-## <a name="disconnect-request-example"></a><span data-ttu-id="0f00a-105">Ejemplo de solicitud de desconexión</span><span class="sxs-lookup"><span data-stu-id="0f00a-105">Disconnect request example</span></span>
+## <a name="disconnect-request-example"></a><span data-ttu-id="38d10-105">Ejemplo de solicitud de desconexión</span><span class="sxs-lookup"><span data-stu-id="38d10-105">Disconnect request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="0f00a-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="0f00a-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="38d10-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="38d10-106">Description</span></span>
 
-<span data-ttu-id="0f00a-107">El siguiente ejemplo de una solicitud de desconexión muestra cómo formar una solicitud para desconectar la llamada.</span><span class="sxs-lookup"><span data-stu-id="0f00a-107">The following example of a Disconnect request shows how to form a request to disconnect a call.</span></span>
+<span data-ttu-id="38d10-107">El siguiente ejemplo de una solicitud de desconexión muestra cómo formar una solicitud para desconectar la llamada.</span><span class="sxs-lookup"><span data-stu-id="38d10-107">The following example of a Disconnect request shows how to form a request to disconnect a call.</span></span>
   
-### <a name="code"></a><span data-ttu-id="0f00a-108">Código</span><span class="sxs-lookup"><span data-stu-id="0f00a-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="38d10-108">Código</span><span class="sxs-lookup"><span data-stu-id="38d10-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -41,13 +41,13 @@ ms.locfileid: "19764192"
 </soap:Envelope>
 ```
 
-## <a name="successful-disconnect-response-example"></a><span data-ttu-id="0f00a-109">Ejemplo de respuesta correcta de desconexión</span><span class="sxs-lookup"><span data-stu-id="0f00a-109">Successful Disconnect response example</span></span>
+## <a name="successful-disconnect-response-example"></a><span data-ttu-id="38d10-109">Ejemplo de respuesta correcta de desconexión</span><span class="sxs-lookup"><span data-stu-id="38d10-109">Successful Disconnect response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="0f00a-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="0f00a-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="38d10-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="38d10-110">Description</span></span>
 
-<span data-ttu-id="0f00a-111">El siguiente ejemplo de una respuesta de desconexión muestra una respuesta a la solicitud de desconexión.</span><span class="sxs-lookup"><span data-stu-id="0f00a-111">The following example of a Disconnect response shows a response to the Disconnect request.</span></span>
+<span data-ttu-id="38d10-111">El siguiente ejemplo de una respuesta de desconexión muestra una respuesta a la solicitud de desconexión.</span><span class="sxs-lookup"><span data-stu-id="38d10-111">The following example of a Disconnect response shows a response to the Disconnect request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="0f00a-112">Código</span><span class="sxs-lookup"><span data-stu-id="0f00a-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="38d10-112">Código</span><span class="sxs-lookup"><span data-stu-id="38d10-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -58,9 +58,9 @@ ms.locfileid: "19764192"
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="0f00a-113">Ver también</span><span class="sxs-lookup"><span data-stu-id="0f00a-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="38d10-113">Vea también</span><span class="sxs-lookup"><span data-stu-id="38d10-113">See also</span></span>
 
-- [<span data-ttu-id="0f00a-114">Desconectar (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="0f00a-114">Disconnect (UM web service)</span></span>](disconnect-um-web-service.md) 
-- [<span data-ttu-id="0f00a-115">DisconnectResponse (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="0f00a-115">DisconnectResponse (UM web service)</span></span>](disconnectresponse-um-web-service.md) 
-- [<span data-ttu-id="0f00a-116">CallId (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="0f00a-116">CallId (UM web service)</span></span>](callid-um-web-service.md)
+- [<span data-ttu-id="38d10-114">Desconectar (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="38d10-114">Disconnect (UM web service)</span></span>](disconnect-um-web-service.md) 
+- [<span data-ttu-id="38d10-115">DisconnectResponse (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="38d10-115">DisconnectResponse (UM web service)</span></span>](disconnectresponse-um-web-service.md) 
+- [<span data-ttu-id="38d10-116">CallId (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="38d10-116">CallId (UM web service)</span></span>](callid-um-web-service.md)
 
