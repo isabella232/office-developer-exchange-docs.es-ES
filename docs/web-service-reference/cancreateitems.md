@@ -16,7 +16,7 @@ ms.openlocfilehash: 313699a15ef3038dd9114c18b76b29aba15e5ab7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763727"
 ---
 # <a name="cancreateitems"></a>CanCreateItems
@@ -51,7 +51,7 @@ Ninguno.
 
 Un valor de texto de **true** indica que el usuario puede crear elementos en la carpeta. Un valor de **false** indica que el usuario no puede crear elementos en la carpeta. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -64,7 +64,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

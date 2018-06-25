@@ -10,7 +10,7 @@ ms.openlocfilehash: 1fbc1e68edbca829555fbbf1b9f0bc4723da9524
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763017"
 ---
 # <a name="ews-applications-and-the-exchange-architecture"></a>Aplicaciones de EWS y la arquitectura de Exchange
@@ -81,7 +81,7 @@ Además, las aplicaciones de EWS deben admitir los estándares de autenticación
     
 - Autenticación de token de OAuth 2.0, para las aplicaciones de socio de confianza y la interoperabilidad con Lync Server 2013 y SharePoint Server 2013.
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Empezar a utilizar servicios web de Exchange](start-using-web-services-in-exchange.md)

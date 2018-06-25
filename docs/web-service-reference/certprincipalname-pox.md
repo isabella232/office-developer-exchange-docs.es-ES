@@ -13,7 +13,7 @@ ms.openlocfilehash: d2766b16a3e8a1bcd013de332d9c07f709fcf949
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763734"
 ---
 # <a name="certprincipalname-pox"></a>CertPrincipalName (POX)
@@ -56,13 +56,13 @@ Ninguno.
 
 El valor de texto especifica el nombre de entidad de seguridad de certificados SSL que se necesita para conectarse a la organización de Microsoft Exchange mediante el uso de SSL.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Si no se especifica el elemento **CertPrincipalName** , el valor predeterminado se establece en msstd:SERVER, donde servidor es el valor que se especifica en el elemento de [Servidor (POX)](server-pox.md) . Por ejemplo, si el servidor especificado como example.com y **CertPrincipalName** se deja en blanco con [SSL (POX)](ssl-pox.md) activado, el valor predeterminado de **CertPrincipalName** sería msstd:example.com. 
   
 Si no se especifica **ninguna** , Windows validará el nombre de entidad de seguridad del certificado según la información que se encuentra en el tema de [Los nombres de entidad de seguridad](http://go.microsoft.com/fwlink/?LinkId=93417) en MSDN. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

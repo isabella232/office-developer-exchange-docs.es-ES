@@ -12,7 +12,7 @@ ms.openlocfilehash: cb1cfa8a1306c4a6cacf5c82824d19cab57e7941
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763384"
 ---
 # <a name="actiontype-holdactiontype"></a>ActionType (HoldActionType)
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **ActionType** es el tipo de espera que se establece en un buzón. Un valor de texto de **creación** indica que se creará una suspensión de buzón de correo. Un valor de texto de **actualización** indica que se actualizará una suspensión de buzón de correo. Un valor de texto de **Quitar** indica que se eliminará una suspensión de buzón de correo. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

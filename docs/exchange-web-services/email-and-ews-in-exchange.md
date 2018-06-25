@@ -10,7 +10,7 @@ ms.openlocfilehash: d222be7409a3c3f4613a2be39b83b977fabb09e8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763002"
 ---
 # <a name="email-and-ews-in-exchange"></a>Correo electrónico y EWS en Exchange
@@ -123,7 +123,7 @@ Si está actualizando un mensaje de correo electrónico, vea [de correo electró
     
 - [Mensajes de correo electrónico de proceso por lotes mediante el uso de EWS en Exchange](how-to-process-email-messages-in-batches-by-using-ews-in-exchange.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)

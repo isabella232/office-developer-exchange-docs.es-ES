@@ -16,7 +16,7 @@ ms.openlocfilehash: a078707ae6b1676ca5a32ba718add93debd498fe
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764068"
 ---
 # <a name="delegateusers"></a>DelegateUsers
@@ -52,7 +52,7 @@ Ninguno.
 |[AddDelegate](adddelegate.md) <br/> |Define una solicitud para agregar delegados a un buzón de correo. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).  <br/> |
 |[UpdateDelegate](updatedelegate.md) <br/> |Define una solicitud para actualizar los delegados en un buzón de correo. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -65,7 +65,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación AddDelegate](adddelegate-operation.md) 
 - [Operación UpdateDelegate](updatedelegate-operation.md)

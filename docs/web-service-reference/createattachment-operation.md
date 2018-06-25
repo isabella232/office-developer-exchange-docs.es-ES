@@ -16,7 +16,7 @@ ms.openlocfilehash: fed60275a007f2796c60d936def7a937e4982f29
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763913"
 ---
 # <a name="createattachment-operation"></a>Operación CreateAttachment
@@ -311,11 +311,11 @@ En la respuesta de error, se usan los siguientes elementos:
     
 - [Datos adjuntos](attachments-ex15websvcsotherref.md)
     
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Si varios datos adjuntos se adjuntan a un elemento en un solo viaje de ida, el RootItemChangeKey en el último mensaje de respuesta es la única que representa la nueva clave de cambio del elemento que tiene los datos adjuntos.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

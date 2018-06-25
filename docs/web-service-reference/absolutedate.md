@@ -16,7 +16,7 @@ ms.openlocfilehash: d14cafb08297e5be3c8620c441f8b84b46ffe53e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763476"
 ---
 # <a name="absolutedate"></a>AbsoluteDate
@@ -52,7 +52,7 @@ Ninguno.
 
 El valor de texto representa la fecha de cuando se produce el desplazamiento entre standard o del horario de verano.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -65,7 +65,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

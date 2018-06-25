@@ -16,7 +16,7 @@ ms.openlocfilehash: 28d4ded2625efc3d6eade44f5fafc06c2ffca7ae
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763391"
 ---
 # <a name="adddelegate-operation"></a>Operación AddDelegate
@@ -160,7 +160,7 @@ En el ejemplo siguiente se muestra la respuesta a una solicitud para agregar a u
 
 Si el código de respuesta ErrorDelegateAlreadyExists se devuelve cuando se intenta agregar a un delegado, use la [operación de GetDelegate](getdelegate-operation.md) para obtener todos los permisos actuales para el delegado y, a continuación, use la [operación de UpdateDelegate](updatedelegate-operation.md) para establecer los nuevos permisos. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Adición de delegados](http://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

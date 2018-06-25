@@ -10,7 +10,7 @@ ms.openlocfilehash: f37de55d6681bcdef381561b166adf209d3919a9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763072"
 ---
 # <a name="get-user-settings-from-exchange-by-using-autodiscover"></a>Obtener la configuración de usuario de Exchange mediante el uso de detección automática
@@ -338,7 +338,7 @@ En el ejemplo siguiente se muestra la respuesta POX que es devuelto por el servi
 
 Una vez que se han recuperado los detalles de configuración necesarios para el usuario desde el servidor, está listo para comunicarse con Exchange para hacer las cosas que necesita hacer la aplicación. ¿Qué hacer a continuación depende de cómo comunican con Exchange y lo que desea llevar a cabo. Si necesita inspiración, y está usando EWS, es posible que explore la [Exchange 101 ejemplos de código](http://code.msdn.microsoft.com/exchange/Exchange-2013-101-Code-3c38582c) para algunas ideas. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Detección automática de Exchange](autodiscover-for-exchange.md)

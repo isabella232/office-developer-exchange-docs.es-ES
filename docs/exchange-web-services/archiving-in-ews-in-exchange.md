@@ -10,7 +10,7 @@ ms.openlocfilehash: bc282a7774bb74e57550bc663512987839324b83
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762987"
 ---
 # <a name="archiving-in-ews-in-exchange"></a>Archivado en EWS en Exchange
@@ -30,7 +30,7 @@ En la siguiente tabla se enumera las operaciones de archivado que se introdujero
 |[ArchiveItem](http://msdn.microsoft.com/library/1af216b3-13ea-498e-b4fc-23513755d731%28Office.15%29.aspx) <br/> |Mueve un elemento desde el buzón principal para el buzón de archivo.  <br/> |
 |[CreateFolderPath](http://msdn.microsoft.com/library/5a10aa5e-3f25-4ec3-a0b9-284c30918a1f%28Office.15%29.aspx) <br/> |Crea un identificador URI que señala a la ubicación de almacenamiento para el buzón de archivo.  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
     

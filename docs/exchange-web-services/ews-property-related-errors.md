@@ -10,7 +10,7 @@ ms.openlocfilehash: f214ab40c3717178c6957a9da93bdf89999fc1d3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763008"
 ---
 # <a name="ews-property-related-errors"></a>Errores relacionados con la propiedad EWS
@@ -50,7 +50,7 @@ La mayoría de las aplicaciones de cliente EWS se usan propiedades, lo que signi
 |ErrorUnsupportedTypeForConversion  <br/> |Solicitar un tipo de propiedad que no puede convertirse en XML de EWS devolver en una respuesta.  <br/> |Actualizar el código para no solicitar la propiedad no compatible.  <br/> |
 |ErrorUpdatePropertyMismatch  <br/> |Actualizar un elemento o carpeta la descripción del cambio para que no coincide con la propiedad que se especifica para actualizarse.  <br/> |Cambiar el código para que la descripción del cambio coincide con el tipo de elemento o carpeta que se está actualizando.  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Propiedades y propiedades extendidas de EWS en Exchange](properties-and-extended-properties-in-ews-in-exchange.md)

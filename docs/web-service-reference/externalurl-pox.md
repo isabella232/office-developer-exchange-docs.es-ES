@@ -11,7 +11,7 @@ ms.openlocfilehash: 603e2109e7b3c98acdd4cbc13df81ed9717630ec
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764570"
 ---
 # <a name="externalurl-pox"></a>ExternalUrl (POX)
@@ -45,13 +45,13 @@ Ninguno.
 
 El valor de texto representa una dirección URL que se puede usar para tener acceso al buzón del usuario desde fuera de la organización del usuario o un servidor de la libreta de direcciones.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **ExternalUrl** puede estar presente en una respuesta que tiene un elemento de [Protocolo (POX)](protocol-pox.md) con un valor de atributo de **tipo** de "mapiHttp". 
   
 El elemento **ExternalUrl** está disponible para los clientes que implementan el protocolo HTTP/MAPI y destino Exchange Online, Exchange Online como parte de Office 365, y las versiones locales de Exchange a partir creación 15.00.0847.032 (Exchange Server 2013 SP1) . 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

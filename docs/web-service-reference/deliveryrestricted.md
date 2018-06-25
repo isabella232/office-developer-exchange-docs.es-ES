@@ -16,7 +16,7 @@ ms.openlocfilehash: ba1c6e00b93c9e442a427fe98a5e15bf5fe1effd
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764124"
 ---
 # <a name="deliveryrestricted"></a>DeliveryRestricted
@@ -50,7 +50,7 @@ Ninguno.
 
 El valor de texto de este elemento es **true** si las restricciones de entrega impedirá que el mensaje del remitente llegar al destinatario. El valor es **false** si las restricciones de entrega no se impide que el mensaje del remitente de llegar al destinatario. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -63,7 +63,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

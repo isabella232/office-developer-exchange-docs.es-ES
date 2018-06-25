@@ -10,7 +10,7 @@ ms.openlocfilehash: b12d6a16cc539f36b6b4dcd7274529e9def3c247
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763296"
 ---
 # <a name="pull-notifications-for-ews-deletion-related-mailbox-events-in-exchange"></a>Extraer las notificaciones de eventos de buzón de correo relacionados con la eliminación de EWS en Exchange
@@ -30,7 +30,7 @@ Cuando la [eliminación de elementos y carpetas de un buzón de correo](deleting
 |Disco duro eliminar a través de la [operación DeleteFolder](http://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx) <br/> |DeletedEvent para la carpeta.  <br/> ModifiedEvent para la carpeta principal.  <br/> |DeletedEvent para la carpeta.  <br/> ModifiedEvent para la carpeta principal.  <br/> |DeletedEvent para la carpeta.  <br/> ModifiedEvent para la carpeta principal.  <br/> |DeletedEvent para la carpeta.  <br/> ModifiedEvent para la carpeta principal.  <br/> |
 |Mover a la carpeta Elementos eliminados a través de la [operación DeleteFolder](http://msdn.microsoft.com/library/b0f92682-4895-4bcf-a4a1-e4c2e8403979%28Office.15%29.aspx) <br/> |MovedEvent para la carpeta. Esto especifica ambos identificadores de primario anterior y la nueva carpeta.  <br/> ModifiedEvent para la antigua carpeta principal.  <br/> ModifiedEvent para la nueva carpeta principal, que es la carpeta Elementos eliminados.  <br/> |MovedEvent para la carpeta. Esto especifica ambos identificadores de primario anterior y la nueva carpeta.  <br/> ModifiedEvent para la antigua carpeta principal.  <br/> ModifiedEvent para la nueva carpeta principal, que es la carpeta Elementos eliminados.  <br/> |MovedEvent para la carpeta. Esto especifica ambos identificadores de primario anterior y la nueva carpeta.  <br/> ModifiedEvent para la antigua carpeta principal.  <br/> ModifiedEvent para la nueva carpeta principal, que es la carpeta Elementos eliminados.  <br/> |ModifiedEvent para la antigua carpeta principal.  <br/> ModifiedEvent para la nueva carpeta principal que es la carpeta Elementos eliminados.  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Suscripciones de notificación de eventos de buzón de correo y EWS en Exchange](notification-subscriptions-mailbox-events-and-ews-in-exchange.md)

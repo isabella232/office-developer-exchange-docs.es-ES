@@ -16,7 +16,7 @@ ms.openlocfilehash: 97156d4a3747cacbdcf9563d21d93a0aa44c3358
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763932"
 ---
 # <a name="createfolder-operation"></a>CreateFolder Operation
@@ -204,7 +204,7 @@ En la respuesta de error, se usan los siguientes elementos:
     
 Para buscar otras opciones para el mensaje de respuesta de error de la operación CreateFolder, explore la jerarquía de esquema. Comenzar en el elemento de [CreateFolderResponse](createfolderresponse.md) . 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

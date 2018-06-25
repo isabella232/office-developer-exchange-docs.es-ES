@@ -16,7 +16,7 @@ ms.openlocfilehash: 0be2154d1ceb6a995df8b27033fdc59bca81f9ef
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764110"
 ---
 # <a name="deleteitems"></a>DeleteItems
@@ -59,7 +59,7 @@ En la siguiente tabla se enumera los valores posibles para el elemento **DeleteI
 |Propiedad  <br/> |Indica que el usuario tiene permiso para eliminar los elementos que posee el usuario en la carpeta.  <br/> |
 |Todos  <br/> |Indica que el usuario tiene permiso para eliminar todos los elementos de la carpeta.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -72,7 +72,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 - [Establecimiento de permisos de nivel de carpeta](http://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)

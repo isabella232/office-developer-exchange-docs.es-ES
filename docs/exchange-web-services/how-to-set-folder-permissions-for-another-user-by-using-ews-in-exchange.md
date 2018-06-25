@@ -10,7 +10,7 @@ ms.openlocfilehash: 5bf570612d6349628e7f3abf858daa33daa13745
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763178"
 ---
 # <a name="set-folder-permissions-for-another-user-by-using-ews-in-exchange"></a>Establecer permisos de carpeta de otro usuario mediante el uso de EWS en Exchange
@@ -599,7 +599,7 @@ Después de conceder permisos de usuario para una carpeta específica, el usuari
     
 - [Contactos de acceso como delegado mediante el uso de EWS en Exchange](how-to-access-contacts-as-a-delegate-by-using-ews-in-exchange.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Acceso delegado y EWS en Exchange](delegate-access-and-ews-in-exchange.md)   
 - [Agregar y quitar delegados mediante EWS en Exchange](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md)    

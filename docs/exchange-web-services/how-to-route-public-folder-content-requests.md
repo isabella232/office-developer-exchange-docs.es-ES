@@ -10,7 +10,7 @@ ms.openlocfilehash: ad36c1526a24d815ec690879d633774d429ed36c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763181"
 ---
 # <a name="route-public-folder-content-requests"></a>Enrutar las solicitudes de contenido de carpetas públicas
@@ -273,7 +273,7 @@ Expect: 100-continue
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Carpetas públicas en Exchange obtener acceso con EWS](public-folder-access-with-ews-in-exchange.md)    
 - [Detección automática de Exchange](autodiscover-for-exchange.md)    

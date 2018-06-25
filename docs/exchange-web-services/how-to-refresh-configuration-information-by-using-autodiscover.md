@@ -10,7 +10,7 @@ ms.openlocfilehash: ef3b61781cbafa6e7b873336a050c0b8c33a28ec
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763186"
 ---
 # <a name="refresh-configuration-information-by-using-autodiscover"></a>Actualizar información de configuración mediante el uso de detección automática
@@ -69,7 +69,7 @@ Actualizar la información de configuración almacenada en caché puede ayudar c
 |Errores de estado HTTP<br/><br/> Ejemplo: 503 Servicio no disponible  <br/> |[ServiceRemoteException](https://msdn.microsoft.com/library/Microsoft.Exchange.WebServices.Data.ServiceRemoteException.aspx) <br/> |Errores de estado HTTP pueden ocurrir por muchas razones diferentes.<br/><br/> Sin embargo, es una buena idea para probar la detección automática para ver si un nuevo extremo EWS está disponible para el usuario.  <br/> |
 |Códigos de error EWS <br/><br/> Ejemplo: ErrorConnectionFailed <br/> |[ResponseCodeType](https://msdn.microsoft.com/library/Microsoft.Exchange.WebServices.Data.ResponseCodeType.aspx) <br/> | La mayoría de los códigos de error EWS no requieran actualizar la información de configuración.<br/><br/> Sin embargo, el siguiente específicamente indica que debe actualizarse la información de configuración:<br/>- **ErrorConnectionFailed** <br/>- **ErrorMailboxMoveInProgress** <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Detección automática de Exchange](autodiscover-for-exchange.md)  
 - [Generar una lista de extremos de detección automática](how-to-generate-a-list-of-autodiscover-endpoints.md)   

@@ -10,7 +10,7 @@ ms.openlocfilehash: d8d8ea736ca3b896642ad06f5987caeba8d8d059
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763305"
 ---
 # <a name="tools-and-resources-for-troubleshooting-ews-applications-for-exchange"></a>Herramientas y recursos para solucionar problemas de aplicaciones de EWS para Exchange
@@ -87,7 +87,7 @@ Ahora que ha aprendido acerca de las herramientas y recursos que puede usar para
     
 - [Soporte técnico de Microsoft](http://support.microsoft.com/ph/730/en-us) , póngase en contacto con un profesional de soporte técnico de Microsoft para obtener ayuda. 
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 Vea los siguientes artículos:

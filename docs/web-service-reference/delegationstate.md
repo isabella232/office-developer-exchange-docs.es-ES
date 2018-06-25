@@ -16,7 +16,7 @@ ms.openlocfilehash: 00b0e41ae223f1c70f9a3a21662e8858f8690a86
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764072"
 ---
 # <a name="delegationstate"></a>DelegationState
@@ -63,7 +63,7 @@ Se trata de una propiedad de solo lectura. Los valores posibles son:
     
 - Max
     
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Servicios Web de Exchange en Microsoft Exchange Server 2007 no es compatible con las asignaciones de tareas.
   
@@ -78,7 +78,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

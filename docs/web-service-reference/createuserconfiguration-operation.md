@@ -16,7 +16,7 @@ ms.openlocfilehash: 5f0eb7d18736008af39199cbc52cc3a6e6abda09
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763971"
 ---
 # <a name="createuserconfiguration-operation"></a>Operación CreateUserConfiguration
@@ -103,7 +103,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **Cr
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

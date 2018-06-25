@@ -16,7 +16,7 @@ ms.openlocfilehash: 6e0bb90e197ce22bcd982a6d51954a88f3a2cf03
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763778"
 ---
 # <a name="connectingsid"></a>ConnectingSID
@@ -57,7 +57,7 @@ Ninguno.
 |:-----|:-----|
 |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Se usa en el encabezado SOAP de una solicitud. Cuando este elemento está presente, el autor de la llamada está intentando suplantar la cuenta que está incluida dentro del elemento **ExchangeImpersonation** .  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/ExchangeImpersonation` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La cuenta que realiza la llamada debe tener la **ms-exch-impersonation** derecha en el servidor de acceso de cliente y el **ms-exch-MayImpersonate** derecho en ya sea la base de datos de buzón de correo que contiene el buzón de correo para suplantar o el usuario de Active Directory o contacto objeto. 
   
@@ -72,7 +72,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

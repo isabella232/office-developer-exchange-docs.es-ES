@@ -16,7 +16,7 @@ ms.openlocfilehash: 69bce0f0cc7b5c986f9bf4767c3cd429a309e50d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764878"
 ---
 # <a name="getitem-operation-calendar-item"></a>Operación GetItem (elemento de calendario)
@@ -379,7 +379,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [AppointmentState](appointmentstate.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

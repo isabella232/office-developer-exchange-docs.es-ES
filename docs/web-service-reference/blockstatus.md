@@ -12,7 +12,7 @@ ms.openlocfilehash: 5733738d733578c47b849b9d7c62c9b66cd8922e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763631"
 ---
 # <a name="blockstatus"></a>BlockStatus
@@ -49,7 +49,7 @@ Ninguno.
 
 Un valor de texto de **true** para el elemento **BlockStatus** indica que un elemento está bloqueado. Un valor de **false** indica que no se bloquea un elemento. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -64,7 +64,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

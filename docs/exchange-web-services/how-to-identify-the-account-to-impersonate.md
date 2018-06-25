@@ -10,7 +10,7 @@ ms.openlocfilehash: 78df4b511a9947d4d815b2802a53ab178b14622b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763073"
 ---
 # <a name="identify-the-account-to-impersonate"></a>Identificación de la cuenta para suplantar a
@@ -109,7 +109,7 @@ En una solicitud de EWS SOAP, el elemento de [SID](http://msdn.microsoft.com/lib
 </soap:Header>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Suplantación y EWS en Exchange](impersonation-and-ews-in-exchange.md)

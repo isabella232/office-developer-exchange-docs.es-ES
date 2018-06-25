@@ -10,7 +10,7 @@ ms.openlocfilehash: f9edd8511332474a728635a6aa369a772da24786
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763155"
 ---
 # <a name="propose-a-new-meeting-time-by-using-ews-in-exchange"></a>Proponer una nueva hora de reunión mediante el uso de EWS en Exchange
@@ -205,7 +205,7 @@ La siguiente ilustración muestra el proceso que se produce entre el organizador
 
 La nueva característica de tiempo proponer se introdujo en la versión de compilación de Exchange 15.00.0800.007. En versiones anteriores de Exchange, usuarios de la aplicación de EWS tienen que enviar un correo electrónico independiente al organizador de la reunión para solicitar una hora de reunión diferente. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)

@@ -10,7 +10,7 @@ ms.openlocfilehash: fcafc799f4d35e92159d2913845474ecf7bc5657
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763014"
 ---
 # <a name="handling-autodiscover-error-messages"></a>Tratamiento de mensajes de error de detección automática
@@ -154,7 +154,7 @@ Cuando se obtiene una nueva dirección URL en una respuesta de redirección de d
     
 Si la dirección URL pasa la validación, volver a enviar la solicitud a esta nueva dirección URL.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Detección automática de Exchange](autodiscover-for-exchange.md)

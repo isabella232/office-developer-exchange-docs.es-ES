@@ -10,7 +10,7 @@ ms.openlocfilehash: b384fd5608dc647950d7cd31e861e24c12e3316f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763295"
 ---
 # <a name="persistent-application-settings-in-ews-in-exchange"></a>Configuración de aplicación persistente EWS en Exchange
@@ -90,7 +90,7 @@ La mayoría de los usuarios no son conscientes de y normalmente no tengan acceso
 
 Objetos de configuración de usuario están disponibles en Exchange Online, Exchange Online como parte de Office 365 y las versiones de Exchange a partir de Exchange 2010.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Administrar la configuración de aplicación persistente mediante el uso de EWS en Exchange](how-to-manage-persistent-application-settings-by-using-ews-in-exchange.md)

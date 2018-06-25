@@ -16,7 +16,7 @@ ms.openlocfilehash: e4654120881f81a79358e0e7c0ab016f94db3288
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764495"
 ---
 # <a name="expanddl-operation"></a>Operación de ExpandDL
@@ -46,7 +46,7 @@ Listas de distribución públicas pueden ampliarse mediante uno de los procedimi
 > [!IMPORTANT]
 > Nombres para mostrar no son únicos. Varias cuentas pueden compartir el mismo nombre para mostrar. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 No se admite la expansión de recursiva. Lista de distribución de un solo se puede expandir en una sola llamada. Si más de una lista de distribución coinciden con los criterios, el servicio Web de informes de un error. Una aplicación cliente puede usar resolución de nombres ambiguos (ANR) para encontrar la distribución ambiguo se enumera y, a continuación, eligió la dirección de correo electrónico correcta de la lista de distribución necesarios como un parámetro para la [operación de ExpandDL](expanddl-operation.md). Para obtener más información, vea [ResolveNames operación](resolvenames-operation.md).
   
@@ -272,7 +272,7 @@ En la respuesta de error, se usan los siguientes elementos:
     
 Para buscar otras opciones para el mensaje de respuesta de la operación de ExpandDL, explore la jerarquía de esquema. Comenzar en el elemento de [ExpandDLResponse](expanddlresponse.md) . 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación ResolveNames](resolvenames-operation.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)

@@ -16,7 +16,7 @@ ms.openlocfilehash: b14be22bfe5316b9ab254e63cdfa0757596b8b92
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764247"
 ---
 # <a name="distinguisheduser"></a>DistinguishedUser
@@ -50,7 +50,7 @@ Ninguno.
 
 Un valor de texto de **forma predeterminada** , describe la configuración predeterminada para los usuarios de delegado que se agregan al buzón de correo de la entidad de seguridad. Un valor de texto de **anónimo** describe la configuración de acceso de delegado que tienen los usuarios anónimos en el buzón de correo de la entidad de seguridad. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -63,7 +63,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación AddDelegate](adddelegate-operation.md)  
 - [Operación UpdateDelegate](updatedelegate-operation.md)

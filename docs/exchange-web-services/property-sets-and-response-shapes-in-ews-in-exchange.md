@@ -10,7 +10,7 @@ ms.openlocfilehash: d9fd6c155438dfd03cfc9536397316cf3faa2287
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763315"
 ---
 # <a name="property-sets-and-response-shapes-in-ews-in-exchange"></a>Conjuntos de propiedades y respuesta de formas de EWS en Exchange
@@ -125,7 +125,7 @@ Puede agregar propiedades adicionales a la propiedad establecer o incluyan propi
 |ConferenceType  <br/> |x  <br/> |||||
 |ConflictingMeetingCount  <br/> |x  <br/> |||||
 |ConflictingMeetings  <br/> |x  <br/> |||||
-|Contacts  <br/> |||||x  <br/> |
+|Contactos  <br/> |||||x  <br/> |
 |ContactSource  <br/> ||x  <br/> ||||
 |ConversationId  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
 |ConversationIndex  <br/> |||x  <br/> |x  <br/> ||
@@ -247,7 +247,7 @@ Notas:
   
 1. Incluye cuándo se [enlace a un elemento](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) y en la respuesta de la [operación GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx). No se incluyen en el resultado del método [Item.FindItems](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) o la respuesta de la [operación FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx).
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
     

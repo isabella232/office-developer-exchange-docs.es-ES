@@ -12,7 +12,7 @@ ms.openlocfilehash: 8a47e44d89bcc84bc0e8b61d45f18ff3182f7870
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763390"
 ---
 # <a name="addblanktargettolinks"></a>AddBlankTargetToLinks
@@ -47,7 +47,7 @@ Ninguno.
 
 Un valor de texto de **true** para el elemento **AddBlankTargetToLinks** indica que todos los vínculos HTML se establecerá para abrir una nueva ventana. Un valor de **false** indica que los vínculos HTML se abrirán en la ventana actual. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento es opcional.
   
@@ -64,7 +64,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

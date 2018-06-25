@@ -12,7 +12,7 @@ ms.openlocfilehash: 24d31759964ad2a303ac38f33953f91edec9c5ca
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764237"
 ---
 # <a name="displaynamefirstlastsortkey"></a>DisplayNameFirstLastSortKey
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **DisplayNameFirstLastSortKey** es la clave de ordenación para el nombre para mostrar de un rol, en el cuadro Nombre, apellidos. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

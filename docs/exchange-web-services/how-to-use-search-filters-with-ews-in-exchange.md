@@ -10,7 +10,7 @@ ms.openlocfilehash: 0652c36fd610c2f9dfe22b55323b368997137e0c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763197"
 ---
 # <a name="use-search-filters-with-ews-in-exchange"></a>Use los filtros de búsqueda con EWS en Exchange
@@ -510,7 +510,7 @@ Ahora que está familiarizado con el uso de filtros de búsqueda en las búsqued
     
 - [Realizar búsquedas paginadas mediante EWS en Exchange](how-to-perform-paged-searches-by-using-ews-in-exchange.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Búsqueda y EWS en Exchange](search-and-ews-in-exchange.md)    
 - [Realizar una búsqueda AQS mediante EWS en Exchange](how-to-perform-an-aqs-search-by-using-ews-in-exchange.md)   

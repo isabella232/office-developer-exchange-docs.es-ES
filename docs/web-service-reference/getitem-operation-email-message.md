@@ -16,7 +16,7 @@ ms.openlocfilehash: 133a893ec7cd0c206d9db573f8b952eb3c2286df
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764891"
 ---
 # <a name="getitem-operation-email-message"></a>Operación GetItem (mensaje de correo electrónico)
@@ -282,7 +282,7 @@ En la respuesta de error, se usan los siguientes elementos:
     
 - [FieldURI](fielduri.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

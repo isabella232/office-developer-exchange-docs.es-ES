@@ -10,7 +10,7 @@ ms.openlocfilehash: 03f414845674bfcacca62ef96fdb84f8b8823920
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763172"
 ---
 # <a name="update-a-recurring-series-by-using-ews-in-exchange"></a>Actualización de una serie periódica mediante el uso de EWS en Exchange
@@ -221,7 +221,7 @@ En el ejemplo siguiente se actualiza la serie periódica de las siguientes maner
 
 El servidor responde con un elemento [UpdateItemResponse](http://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) que incluye un elemento [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) con un valor de **NoError**, que indica que la actualización se realizó correctamente.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)

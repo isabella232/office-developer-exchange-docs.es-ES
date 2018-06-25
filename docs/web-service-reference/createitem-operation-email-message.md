@@ -16,7 +16,7 @@ ms.openlocfilehash: 591209165cfbafc2d5f4036dd8fab6659523a044
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763951"
 ---
 # <a name="createitem-operation-email-message"></a>Operación CreateItem (mensaje de correo electrónico)
@@ -186,7 +186,7 @@ En la respuesta de error, se usan los siguientes elementos:
     
 Para buscar otras opciones para el mensaje de respuesta de error de la operación CreateItem, explore la jerarquía de esquema. Comenzar en el elemento de [CreateItemResponse](createitemresponse.md) . 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

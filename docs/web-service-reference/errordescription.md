@@ -12,7 +12,7 @@ ms.openlocfilehash: 458604282942472d83c2794bd0b7403284ac1df1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764439"
 ---
 # <a name="errordescription"></a>ErrorDescription
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **ErrorDescription** contiene una descripción de un error de nivel de elemento. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

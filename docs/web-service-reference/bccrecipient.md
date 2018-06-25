@@ -16,7 +16,7 @@ ms.openlocfilehash: bed58536263196a61651493e92a4dcd1df3f5ec9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763608"
 ---
 # <a name="bccrecipient"></a>BccRecipient
@@ -50,7 +50,7 @@ Ninguno.
 
 Este elemento puede ser **true** o **false**. Un valor de **true** indica que el destinatario es carbón oculta copiado; un valor de **false** indica que el destinatario no es carbón oculta copiado. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -63,7 +63,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

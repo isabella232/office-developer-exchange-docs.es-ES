@@ -16,7 +16,7 @@ ms.openlocfilehash: 156d5bc58d481c9c812793da4722272ac76adaad
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764059"
 ---
 # <a name="dayquality"></a>DayQuality
@@ -62,7 +62,7 @@ Se requiere un valor de texto. Los siguientes son los valores posibles para este
 - **Razonable**    
 - **Deficiente**
     
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -75,7 +75,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)  
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)

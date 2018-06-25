@@ -16,7 +16,7 @@ ms.openlocfilehash: cc6022c28213667c40dc00b5627ed88c4f78e2f2
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764716"
 ---
 # <a name="freebusyresponsearray"></a>FreeBusyResponseArray
@@ -54,7 +54,7 @@ Ninguno.
 |:-----|:-----|
 |[GetUserAvailabilityResponse](getuseravailabilityresponse.md) <br/> |Contiene las propiedades que definen la información de disponibilidad del usuario o sugeridas información de tiempo de la reunión.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento no está incluido en una respuesta de GetUserAvailability si no se solicita información de disponibilidad.
   
@@ -69,7 +69,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

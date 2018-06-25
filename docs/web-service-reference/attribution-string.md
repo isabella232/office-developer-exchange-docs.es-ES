@@ -12,7 +12,7 @@ ms.openlocfilehash: 227379db8a77fb8cba7b4337e74d985bc5af65d2
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763579"
 ---
 # <a name="attribution-string"></a>Atribución (cadena)
@@ -46,7 +46,7 @@ Ninguno.
 
 El valor de texto del elemento **atribución** es un valor de tipo string que los atributos de un valor de propiedad para el contacto de origen. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -61,7 +61,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

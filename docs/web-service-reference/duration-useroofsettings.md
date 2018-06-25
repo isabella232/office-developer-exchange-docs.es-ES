@@ -16,7 +16,7 @@ ms.openlocfilehash: 62a5492372fd80173d58e965376b7c8c466825a6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764293"
 ---
 # <a name="duration-useroofsettings"></a>Duración (UserOofSettings)
@@ -54,7 +54,7 @@ Ninguno.
 |[OofSettings](oofsettings.md) <br/> |Contiene la configuración de fuera de la oficina.<br/><br/>La siguiente es la expresión de XPath para este elemento:<br/><br/>`/GetUserOofSettingsResponse/OofSettings` <br/> |
 |[Fuera de la oficina](outofoffice.md) <br/> |Define el mensaje de respuesta de fuera de oficina (OOF) y un tiempo de duración para enviar el mensaje de respuesta para un buzón de correo.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El tipo de **duración** también es el tipo de los elementos [DetailedSuggestionsWindow](detailedsuggestionswindow.md), [ventana de tiempo](timewindow.md)y [fuera de la oficina](outofoffice.md) . 
   
@@ -103,7 +103,7 @@ El siguiente ejemplo de una solicitud de [operación de SetUserOofSettings](setu
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserOofSettings](getuseroofsettings-operation.md)  
 - [Operación SetUserOofSettings](setuseroofsettings-operation.md)

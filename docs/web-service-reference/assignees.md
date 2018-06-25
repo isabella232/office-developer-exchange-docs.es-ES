@@ -12,7 +12,7 @@ ms.openlocfilehash: 5fc301cd77268213e95fd33a2a2f36dbe218b512
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763559"
 ---
 # <a name="assignees"></a>Usuarios asignados
@@ -48,7 +48,7 @@ Ninguno.
 |:-----|:-----|
 |[TaskSuggestion](tasksuggestion.md) <br/> |Especifica una tarea propuesta.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -63,7 +63,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

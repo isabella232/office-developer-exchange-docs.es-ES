@@ -13,7 +13,7 @@ ms.openlocfilehash: 16444b6b3e17c6774416f90a5a056d0e8025287d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764540"
 ---
 # <a name="acceptableresponseschema-pox"></a>AcceptableResponseSchema (POX)
@@ -52,7 +52,7 @@ Ninguno.
 
 El valor de texto identifica la ubicación del esquema de respuesta de detección automática.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: 03ee678611a6cf58a7256ded67ab4d0a8a06a7ee
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764056"
 ---
 # <a name="dayorder"></a>DayOrder
@@ -52,7 +52,7 @@ Ninguno.
 
 Se requiere un valor de texto. El valor para el elemento **DayOrder** puede ser 1 al 5. El valor máximo para este elemento puede ser 4 o 5, dependiendo del mes y año. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Un elemento [StandardTime](standardtime.md) que contiene un elemento **DayOrder** que tiene un valor de 5, un elemento de [mes](month.md) que tiene un valor de 10 y un elemento [DayOfWeek (TimeZone)](dayofweek-timezone.md) que tiene un valor del domingo significa la transición desde el horario estándar para horario de verano se produce el domingo quinto del décimo mes. 
   
@@ -65,7 +65,7 @@ Un elemento [StandardTime](standardtime.md) que contiene un elemento **DayOrder*
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)
 - [Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)

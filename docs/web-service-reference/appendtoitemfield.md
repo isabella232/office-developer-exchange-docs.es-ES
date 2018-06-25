@@ -16,7 +16,7 @@ ms.openlocfilehash: b432399e84ee4a3fd7edc5d3f803079435c79143
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763454"
 ---
 # <a name="appendtoitemfield"></a>AppendToItemField
@@ -73,7 +73,7 @@ Ninguno.
 |:-----|:-----|
 |[Actualizaciones (elemento)](updates-item.md) <br/> |Contiene una matriz que define append, establecer y eliminar los cambios realizados en las propiedades de elementos.  <br/> La siguiente es la expresión de XPath para este elemento:`/UpdateItem/ItemChanges/ItemChange[i]/Updates` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Sólo el soporte de ciertas propiedades anexe operaciones. Anexar a una propiedad que no es compatible con la anexión de un intento, se producirá un error.
   
@@ -93,7 +93,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación UpdateItem](updateitem-operation.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)

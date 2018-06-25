@@ -10,7 +10,7 @@ ms.openlocfilehash: 9b54bfd75f7d68f08c767171d99251b5ce86b7c4
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763009"
 ---
 # <a name="distribution-groups-and-ews-in-exchange"></a>Grupos de distribución y EWS en Exchange
@@ -109,7 +109,7 @@ Puede [usar los cmdlets del Shell de administración de Exchange](http://msdn.mi
     
 - [Expandir grupos de distribución mediante el uso de EWS en Exchange 2013](how-to-expand-distribution-groups-by-using-ews-in-exchange-2013.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)

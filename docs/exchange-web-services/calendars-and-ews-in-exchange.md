@@ -10,7 +10,7 @@ ms.openlocfilehash: bb9702118ff1db66862a5788c2d8f58dd55c4d09
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762992"
 ---
 # <a name="calendars-and-ews-in-exchange"></a>Calendarios y EWS en Exchange
@@ -115,7 +115,7 @@ Tenga en cuenta que las propiedades de periodicidad existen en todos los element
     
 - [Patrones de periodicidad y EWS](recurrence-patterns-and-ews.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)

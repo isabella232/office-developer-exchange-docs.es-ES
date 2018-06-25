@@ -12,7 +12,7 @@ ms.openlocfilehash: 4545f6e079297fb0b319d71358ec9af35c759f98
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764547"
 ---
 # <a name="externaldirectoryobjectid-getfederateddirectoryusertype"></a>ExternalDirectoryObjectId (GetFederatedDirectoryUserType)
@@ -35,7 +35,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).
   

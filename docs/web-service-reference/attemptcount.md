@@ -12,7 +12,7 @@ ms.openlocfilehash: b7ad4ce968cb71579bd174500a722df56528656a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763568"
 ---
 # <a name="attemptcount"></a>AttemptCount
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor del elemento **AttemptCount** es el número de intentos que se realizaron en un elemento de índice. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

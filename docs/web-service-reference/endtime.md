@@ -16,7 +16,7 @@ ms.openlocfilehash: 7d3d186618a7bcc05ad82532e13e03d2e67a0e40
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764428"
 ---
 # <a name="endtime"></a>Hora de finalización
@@ -54,7 +54,7 @@ Ninguno.
 
 Se requiere un valor de texto.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento [StartTime](starttime.md) representa el principio de un intervalo de tiempo. 
   
@@ -74,7 +74,7 @@ El esquema incluye muchos elementos [EndTime](endtime.md) .
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)
 - [Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)

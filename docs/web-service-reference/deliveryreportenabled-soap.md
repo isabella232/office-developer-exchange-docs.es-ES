@@ -11,7 +11,7 @@ ms.openlocfilehash: 089256a5f75ad92a4f11c5aaf3d175382eeee456
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764123"
 ---
 # <a name="deliveryreportenabled-soap"></a>DeliveryReportEnabled (SOAP)
@@ -45,7 +45,7 @@ Ninguno.
 
 Un valor de texto de true para el elemento DeliveryReportEnabled indica que se pueden usar los informes de entrega de los usuarios de la organización. Un valor de false indica que se debe suprimir los informes de entrega.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Use este elemento para permitir o suprimir informes de entrega desde el servidor.
   
@@ -58,7 +58,7 @@ Use este elemento para permitir o suprimir informes de entrega desde el servidor
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetOrganizationRelationshipSettings (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
 

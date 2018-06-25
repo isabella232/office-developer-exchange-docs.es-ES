@@ -16,7 +16,7 @@ ms.openlocfilehash: 69b27d23fd75d4c1a274f31dfa419b759dbb2bbe
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763613"
 ---
 # <a name="baseshape"></a>BaseShape
@@ -66,8 +66,8 @@ En la siguiente tabla se enumera las propiedades predeterminadas que se devuelve
 |**Folder**|**Propiedades predeterminadas**|
 |:-----|:-----|
 |Bandeja de entrada  <br/> |FolderId, nombre para mostrar, count no leído, recuento total, recuento de subcarpeta  <br/> |
-|Contacts  <br/> |FolderId, nombre para mostrar, el recuento total, el recuento de subcarpeta  <br/> |
-|Calendar  <br/> |FolderId, nombre para mostrar, el recuento de subcarpeta  <br/> |
+|Contactos  <br/> |FolderId, nombre para mostrar, el recuento total, el recuento de subcarpeta  <br/> |
+|Calendario  <br/> |FolderId, nombre para mostrar, el recuento de subcarpeta  <br/> |
 |Drafts  <br/> |FolderId, nombre para mostrar, count no leído, recuento total, recuento de subcarpeta  <br/> |
 |Elementos eliminados  <br/> |FolderId, nombre para mostrar, count no leído, recuento total, recuento de subcarpeta  <br/> |
 |Otras carpetas  <br/> |FolderId, nombre para mostrar, count no leído, recuento total, recuento de subcarpeta  <br/> |
@@ -75,7 +75,7 @@ En la siguiente tabla se enumera las propiedades predeterminadas que se devuelve
 |Tareas  <br/> |FolderId, nombre para mostrar, vencida count, recuento total, recuento de subcarpeta  <br/> |
 |Notas  <br/> |FolderId, nombre para mostrar, el recuento total, el recuento de subcarpeta  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Para devolver propiedades además de las identificado por el elemento [BaseShape](baseshape.md) , use el elemento [AdditionalProperties](additionalproperties.md) . 
   
@@ -107,7 +107,7 @@ Para devolver propiedades además de las identificado por el elemento [BaseShape
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [FolderShape](foldershape.md)
 - [ItemShape](itemshape.md)

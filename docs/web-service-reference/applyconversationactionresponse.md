@@ -16,7 +16,7 @@ ms.openlocfilehash: 39f7344596de7376e770ed98dbe372a590057deb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763528"
 ---
 # <a name="applyconversationactionresponse"></a>ApplyConversationActionResponse
@@ -54,7 +54,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2010 Service Pack 1 (SP1).
   
@@ -67,7 +67,7 @@ Este elemento se introdujo en Exchange Server 2010 Service Pack 1 (SP1).
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación ApplyConversationAction](applyconversationaction-operation.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)

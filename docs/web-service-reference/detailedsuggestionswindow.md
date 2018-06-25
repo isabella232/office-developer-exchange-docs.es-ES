@@ -16,7 +16,7 @@ ms.openlocfilehash: 8a3af0178d0c96b50f4dd641716a9f7a7be8f7a2
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764140"
 ---
 # <a name="detailedsuggestionswindow"></a>DetailedSuggestionsWindow
@@ -56,7 +56,7 @@ Ninguno.
 |:-----|:-----|
 |[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Contiene las opciones para obtener información de la sugerencia de reunión.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento no es necesario.
   
@@ -72,7 +72,7 @@ Este elemento no es necesario.
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)
 - [Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)

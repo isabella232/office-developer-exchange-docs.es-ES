@@ -16,7 +16,7 @@ ms.openlocfilehash: 1c87a51676bf6e44b2e650a4e973d0ab89a52e31
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763432"
 ---
 # <a name="allowexternaloof"></a>AllowExternalOof
@@ -60,7 +60,7 @@ Un valor de texto es necesario para este elemento. En la siguiente tabla se enum
 |**Conocidos** <br/> |Los remitentes de correo electrónico fuera de la organización del usuario de buzón de correo que envían mensajes al usuario sólo recibirá una respuesta de mensaje de fuera de la oficina externa si el remitente está en Exchange del usuario almacenan la lista de contactos.  <br/> |
 |**All** <br/> |Los remitentes de correo electrónico fuera de la organización del usuario de buzón de correo que envían mensajes al usuario recibirá una respuesta de mensaje de fuera de la oficina externa.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento comparte el mismo tipo que el elemento [ExternalAudience](externalaudience.md) . 
   
@@ -75,7 +75,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserOofSettings](getuseroofsettings-operation.md) 
 - [Operación SetUserOofSettings](setuseroofsettings-operation.md)

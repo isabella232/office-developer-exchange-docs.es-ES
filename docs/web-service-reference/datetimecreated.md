@@ -16,7 +16,7 @@ ms.openlocfilehash: 5cfd4e73295bc6823e76d901a21f4745c5fda977
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764037"
 ---
 # <a name="datetimecreated"></a>DateTimeCreated
@@ -61,7 +61,7 @@ Ninguno.
 
 El valor de texto representa la fecha y hora cuando se creó el elemento en el buzón de correo.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Uso de objetos de respuesta de calendario actualiza la propiedad [DateTimeCreated](datetimecreated.md) en el elemento de calendario asociado. El comportamiento esperado es para que la propiedad **DateTimeCreated** no se modifican. Por ejemplo, envía el usuario A una reunión de solicitar al usuario B. usuario B acepta la convocatoria de reunión con el identificador de la convocatoria de reunión. Se cambia la propiedad **DateTimeCreated** del elemento de calendario asociado. 
   
@@ -76,7 +76,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

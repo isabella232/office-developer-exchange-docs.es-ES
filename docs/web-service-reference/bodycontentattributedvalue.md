@@ -12,7 +12,7 @@ ms.openlocfilehash: f5b8f0a19b77ce550b1d7f1c415cc8ee4340863a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763656"
 ---
 # <a name="bodycontentattributedvalue"></a>BodyContentAttributedValue
@@ -48,7 +48,7 @@ Ninguno.
 |:-----|:-----|
 |[Cuerpos](bodies.md) <br/> |Especifica una matriz de elementos de **BodyContentAttributedValue** .  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -63,7 +63,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

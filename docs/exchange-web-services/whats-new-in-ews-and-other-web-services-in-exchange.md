@@ -10,7 +10,7 @@ ms.openlocfilehash: 9e848babc96707152be767f42b561a587fc6cff0
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763313"
 ---
 # <a name="whats-new-in-ews-and-other-web-services-in-exchange"></a>Novedades de EWS y otros servicios web de Exchange
@@ -163,7 +163,7 @@ La nueva característica de tiempo proponer se introdujo en la versión 15.00.08
   
 La API administrada de EWS no implementa esta funcionalidad.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Explore la API administrada de EWS, EWS y servicios web de Exchange](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)  
 - [Introducción al diseño de EWS cliente de Exchange](ews-client-design-overview-for-exchange.md)

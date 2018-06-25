@@ -15,7 +15,7 @@ ms.openlocfilehash: 7d710542418a717c6fcad243a22682e5840ebbd2
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763604"
 ---
 # <a name="base64folderid-um-web-service"></a>base64FolderId (servicio web de mensajería unificada)
@@ -53,7 +53,7 @@ Ninguno.
 
 Se requiere un valor de texto. El valor de texto representa el identificador de MAPI de la carpeta.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Para establecer la carpeta de correo electrónico de acceso telefónico, use la [operación de SetTelephoneAccessFolderEmail (servicio web de mensajería unificada)](settelephoneaccessfolderemail-operation-um-web-service.md).
   
@@ -66,7 +66,7 @@ Para establecer la carpeta de correo electrónico de acceso telefónico, use la 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

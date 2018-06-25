@@ -16,7 +16,7 @@ ms.openlocfilehash: ef93ed4684427a74a4fd2c38b4020ecb743fbaaf
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764485"
 ---
 # <a name="expanddl"></a>ExpandDL
@@ -48,7 +48,7 @@ Ninguno
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para obtener una lista de distribución única sólo se realizará una expansión de lista de distribución. Una expansión de lista de distribución no es recursiva.
   
@@ -63,7 +63,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: 1a23a9d570a4554e54becb7927f25dff89888c74
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764821"
 ---
 # <a name="getevents-operation"></a>Operación GetEvents
@@ -26,7 +26,7 @@ La operación **GetEvents** se usa en los clientes de suscripción de extracció
 > [!IMPORTANT]
 > La operación de **DeleteUserConfiguration** activará un evento de mover para el sistema de notificación de eventos. El objeto de configuración de usuario se moverán al volcado de archivos. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 En la generación de varios eventos pueden ocasionar que los cambios realizados en los elementos del calendario. Estos eventos son el resultado de elementos temporales que se crean en el buzón de correo, los elementos de almacenamiento de datos de disponibilidad que se está cambiando como parte de las operaciones de calendario normales, o ambos. Eventos de elemento de clase "IPM. SchedulePlus.FreeBusy.BinaryData"se debe omitir los clientes de servicios Web. Estos elementos temporales se eliminan después de que se crean; por lo tanto, si se realiza un intento para recuperar estos elementos, un error se devolverán que indica que no se encontró el elemento.
   
@@ -181,7 +181,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **G
 </soap:Envelope>
 ```
 
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Cuando se procesa una solicitud **GetEvents** , el servidor de acceso de cliente lleva a cabo los siguientes pasos: 
   
@@ -199,7 +199,7 @@ Cuando se procesa una solicitud **GetEvents** , el servidor de acceso de cliente
     
 7. Se restablece el temporizador de tiempo de espera de la suscripción.
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

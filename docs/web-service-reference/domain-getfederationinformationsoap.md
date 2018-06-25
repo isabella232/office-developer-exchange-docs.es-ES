@@ -13,7 +13,7 @@ ms.openlocfilehash: 240c0b7cc13257ee36833625125691d4e51a103d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764267"
 ---
 # <a name="domain-getfederationinformation-soap"></a>Dominio (GetFederationInformation) (SOAP)
@@ -56,7 +56,7 @@ El valor de texto representa el nombre de dominio del dominio que contiene la co
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetFederationInformation (SOAP)](getfederationinformation-operation-soap.md)
 

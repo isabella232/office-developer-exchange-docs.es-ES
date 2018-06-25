@@ -16,7 +16,7 @@ ms.openlocfilehash: d31f98f26f537104e40b303de4199f45c65f49c7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764094"
 ---
 # <a name="deletefolder"></a>DeleteFolder
@@ -62,7 +62,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Las opciones **MoveToDeletedItems** y **HardDelete** son transaccionales, lo que significa que el tiempo de una llamada al servicio Web completa, la base de datos ha movido el elemento a la carpeta Elementos eliminados o quita permanentemente el elemento de la base de datos de Exchange. Este comportamiento es el mismo para MicrosoftExchange Server 2007 y Exchange Server 2010. 
   
@@ -77,7 +77,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación DeleteFolder](deletefolder-operation.md)
 

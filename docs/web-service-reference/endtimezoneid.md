@@ -12,7 +12,7 @@ ms.openlocfilehash: 60d28d5ccea1e99cb8f95f52a22b6ba14bf1f349
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764413"
 ---
 # <a name="endtimezoneid"></a>EndTimeZoneId
@@ -46,7 +46,7 @@ Ninguno.
 
 El elemento **EndTimeZoneId** especifica el identificador de zona horaria. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -61,7 +61,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

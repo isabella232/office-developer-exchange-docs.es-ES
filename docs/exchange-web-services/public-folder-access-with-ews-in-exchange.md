@@ -10,7 +10,7 @@ ms.openlocfilehash: cfa089ba617dc760ed12883590e141debb5ecd9b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763300"
 ---
 # <a name="public-folder-access-with-ews-in-exchange"></a>Carpetas públicas en Exchange obtener acceso con EWS
@@ -111,7 +111,7 @@ El valor de X-AnchorMailbox y X-PublicFolderMailbox puede variar dependiendo de 
 
 En Exchange 2007 y Exchange 2010, la operación de **ConvertId** funciona según lo esperado cuando se convierte identificadores de carpetas públicas desde el identificador de EWS para el identificador de almacén. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)

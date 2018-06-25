@@ -10,7 +10,7 @@ ms.openlocfilehash: 0f5eb135142e807f30f48f01d7948fbdbf147ac2
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763066"
 ---
 # <a name="get-appointments-and-meetings-by-using-ews-in-exchange"></a>Obtener las citas y reuniones con EWS en Exchange
@@ -215,7 +215,7 @@ La carpeta de calendario es un poco diferente de otras carpetas en un buzón deb
   
 En su lugar, ¿qué desea hacer en realidad es algo parecido a la aplicación de una *Dataview* en una unión de dos tablas SQL, con un objeto [CalendarView](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) . Tenga en cuenta que por motivos de rendimiento, se recomienda que utilice la propiedad [PropertySet](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) para limitar el tamaño de la respuesta de forma que indica el número de citas o reuniones que desea devolver, así como las propiedades específicas que desee. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 <a name="bk_additional"> </a>
 
 - [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)

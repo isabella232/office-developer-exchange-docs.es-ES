@@ -11,7 +11,7 @@ ms.openlocfilehash: d8905d098c9978c3413f67e9a1b2443a52fb0d1f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764386"
 ---
 # <a name="emwsurl-pox"></a>EmwsUrl (POX)
@@ -50,11 +50,11 @@ Ninguno.
 
 El valor de texto representa la dirección URL del extremo de EWS para el usuario. Es equivalente al elemento [EwsUrl (POX)](ewsurl-pox.md) . 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **EmwsUrl** es un elemento secundario opcional del elemento **Protocol** . 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

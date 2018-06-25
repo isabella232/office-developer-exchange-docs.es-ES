@@ -16,7 +16,7 @@ ms.openlocfilehash: 72ddc313a5a76cd0345918cad63b7775ff85026b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764070"
 ---
 # <a name="delegateuser"></a>UsuarioDelegado
@@ -58,7 +58,7 @@ Ninguno.
 |[DelegateUsers](delegateusers.md) <br/> |Contiene las identidades de los delegados para agregar o actualizar en un buzón de correo.  <br/> |
 |[DelegateUserResponseMessageType](delegateuserresponsemessagetype.md) <br/> |Contiene los mensajes de respuesta para las operaciones de administración de delegado. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -71,7 +71,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación AddDelegate](adddelegate-operation.md) 
 - [Operación UpdateDelegate](updatedelegate-operation.md)

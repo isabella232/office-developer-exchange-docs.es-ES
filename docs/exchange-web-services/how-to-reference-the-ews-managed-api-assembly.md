@@ -10,7 +10,7 @@ ms.openlocfilehash: af7b1ec449c24e7fa4db89abb30e5ebc9f8d329e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763161"
 ---
 # <a name="reference-the-ews-managed-api-assembly"></a>Hacer referencia al ensamblado de la API administrada de EWS
@@ -56,7 +56,7 @@ Es la manera más común para agregar una referencia a usar Visual Studio. Se sa
     c:\Windows\Microsoft.NET\Framework\3.5\csc /target: winexe /out: build\testApplication /reference: build\Microsoft.Exchange.WebServices.dll program.cs
    ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Empezar a trabajar con aplicaciones de cliente de la API administrada de EWS](get-started-with-ews-managed-api-client-applications.md)    
 - [Configurar el entorno de desarrollo de aplicación de Exchange](setting-up-your-exchange-application-development-environment.md)   

@@ -10,7 +10,7 @@ ms.openlocfilehash: 13d7c51e55308b9e9997697a075c8a9e6b4f10d0
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763183"
 ---
 # <a name="validate-a-server-certificate-for-the-ews-managed-api"></a>Validar un certificado de servidor para la API administrada de EWS
@@ -111,7 +111,7 @@ Después de haber creado el método de devolución de llamada de validación par
     
 - [Obtener la configuración de dominio de un servidor de Exchange](how-to-get-domain-settings-from-an-exchange-server.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Configurar una aplicación de EWS](setting-up-your-ews-application.md)  
 - [Empezar a utilizar servicios web de Exchange](start-using-web-services-in-exchange.md)

@@ -12,7 +12,7 @@ ms.openlocfilehash: 41c3eacff65d797dfe7e8b587c50c35d8938664f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763442"
 ---
 # <a name="apiversionsupported"></a>ApiVersionSupported
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **ApiVersionSupported** contiene la versión de la API de JavaScript para Office compatible con el cliente. Este valor indica qué aplicación manifiestos se deben devolver al cliente en la respuesta. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).
   
@@ -57,7 +57,7 @@ Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).
 |Archivo de validación  <br/> |No disponible  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [GetAppManifests](getappmanifests.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)

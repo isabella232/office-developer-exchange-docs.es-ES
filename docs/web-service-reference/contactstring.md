@@ -12,7 +12,7 @@ ms.openlocfilehash: b65a50e167fd05c85a19e45a4453a3a36c4616e4
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763831"
 ---
 # <a name="contactstring"></a>ContactString
@@ -46,7 +46,7 @@ Ninguno.
 
 El valor de texto del elemento **ContactString** es el valor de tipo string que especifica el nombre para mostrar. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -61,7 +61,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

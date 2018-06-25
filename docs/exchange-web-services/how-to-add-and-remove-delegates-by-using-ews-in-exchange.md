@@ -10,7 +10,7 @@ ms.openlocfilehash: d55ef6c5c4e434603d293dbe30c6147ceb73b08b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763028"
 ---
 # <a name="add-and-remove-delegates-by-using-ews-in-exchange"></a>Agregar y quitar delegados mediante EWS en Exchange
@@ -305,7 +305,7 @@ Después de agregar los delegados a calendario, correo electrónico y carpetas d
     
 Si las carpetas para la que ha agregado a los delegados incluyen carpetas secundarias que se crearon antes de conceder el acceso de delegado, el delegado no podrá tener acceso a esas carpetas sin permisos adicionales. Para agregar estos permisos o modificar los permisos para todas las carpetas, vea [establecer permisos de carpeta de otro usuario mediante el uso de EWS en Exchange](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md).
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Acceso delegado y EWS en Exchange](delegate-access-and-ews-in-exchange.md)
 - [Exchange 2013: Agregar delegar a los usuarios de una cuenta de correo electrónico mediante programación](http://code.msdn.microsoft.com/exchange/Exchange-2013-Adding-1024511f)   

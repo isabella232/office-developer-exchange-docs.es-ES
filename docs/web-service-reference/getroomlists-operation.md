@@ -16,7 +16,7 @@ ms.openlocfilehash: 139a669bfc6b7c4bc9bd9c07f9f9cf52954860c0
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764962"
 ---
 # <a name="getroomlists-operation"></a>Operación GetRoomLists
@@ -149,7 +149,7 @@ En la respuesta de error, se usan los siguientes elementos:
     
 - [RoomLists](roomlists.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

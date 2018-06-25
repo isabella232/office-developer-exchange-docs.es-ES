@@ -16,7 +16,7 @@ ms.openlocfilehash: 56a7a7d256624c5103c88a333222807519d21501
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764687"
 ---
 # <a name="foldername"></a>FolderName
@@ -56,7 +56,7 @@ Ninguno.
 
 Se requiere un valor de texto. El valor de texto representa un nombre de carpeta.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Aunque puede usar servicios Web de Exchange para agregar carpetas personalizadas administradas a un buzón de correo, no puede usar la misma tecnología para tener acceso a la lista de carpetas personalizadas administradas disponibles. Puede obtener una lista de las carpetas personalizadas administradas mediante el uso de un comando de Shell de administración de Exchange o mediante el uso de una API que interactúa con el servicio de directorio de Active Directory. Nombre de la carpeta es el nombre del objeto de Active Directory correspondiente.
   
@@ -75,7 +75,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

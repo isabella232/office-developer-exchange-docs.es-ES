@@ -12,7 +12,7 @@ ms.openlocfilehash: e85a5364c40c472c9e1ea9d1d3b4e89329b1676f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762986"
 ---
 # <a name="build-backup-and-restore-applications-for-exchange-2013"></a>Crear copia de seguridad y restauración de aplicaciones para Exchange 2013
@@ -97,7 +97,7 @@ Información necesaria para finalizar la copia de seguridad correctamente y rest
     
 - [Validar la integridad de la copia de seguridad mediante la herramienta Eseutil en Exchange 2013](how-to-validate-backup-integrity-by-using-the-eseutil-tool-in-exchange-2013.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Copia de seguridad y restauración para Exchange](backup-and-restore-for-exchange-2013.md) 
 - [Referencia de clase CChkSGFiles](cchksgfiles-class-reference.md) 

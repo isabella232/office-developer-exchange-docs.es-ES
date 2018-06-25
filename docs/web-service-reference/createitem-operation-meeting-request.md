@@ -16,14 +16,14 @@ ms.openlocfilehash: a8aea688e46376906554952ce8ec45022cf613e9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763953"
 ---
 # <a name="createitem-operation-meeting-request"></a>Operación CreateItem (convocatoria de reunión)
 
 La operación CreateItem se utiliza para responder a las convocatorias de reunión.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La operación CreateItem proporciona tres opciones para responder a una convocatoria de reunión: Aceptar, Aceptar provisionalmente o rechazar. 
   
@@ -173,7 +173,7 @@ En la respuesta de error, se usan los siguientes elementos:
     
 - [Items](items.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

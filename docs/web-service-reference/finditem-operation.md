@@ -16,7 +16,7 @@ ms.openlocfilehash: b033ac2930981819a20f1336d40058a5f7c03b89
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764637"
 ---
 # <a name="finditem-operation"></a>FindItem Operation
@@ -218,7 +218,7 @@ Para ver más opciones para un mensaje de respuesta de error **FindItem** , expl
 
 Las versiones de Exchange con la versión principal 15 iniciales y finales con generación 15.0.898.11 devuelto un valor de ErrorInvalidOperation en el elemento [ResponseCode](responsecode.md) cuando la operación **FindItem** se usa para buscar en varias carpetas de un buzón de archivo. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Buscar elementos](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
     

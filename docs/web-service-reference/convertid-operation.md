@@ -16,7 +16,7 @@ ms.openlocfilehash: 5f1bcd8a9f0adc25b7c598ef10cc6bb139dfe02d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763884"
 ---
 # <a name="convertid-operation"></a>Operación ConvertId
@@ -173,7 +173,7 @@ El formato de identificador de EWS han cambiado entre la versión de lanzamiento
   
 La operación **ConvertId** convierte los identificadores de carpetas públicas desde el identificador de EWS al identificador del almacén de Exchange 2007 y Exchange 2010. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 <a name="bk_ConvertIdVersionDiff"> </a>
 
 - [Convertir identificadores](http://msdn.microsoft.com/library/a5391746-b6ef-4f48-8fc8-8255258651aa%28Office.15%29.aspx)

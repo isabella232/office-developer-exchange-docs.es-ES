@@ -16,14 +16,14 @@ ms.openlocfilehash: 4b94bfd8d6333c1f52be8ad7d0d111ab2a0552b3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764080"
 ---
 # <a name="deleteattachment-operation"></a>Operación DeleteAttachment
 
 La operación DeleteAttachment se usa para eliminar los datos adjuntos de archivo y elemento de un elemento existente en el almacén de Exchange.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Esta operación le permite eliminar uno o varios datos adjuntos por Id.
   
@@ -123,7 +123,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [RootItemId](rootitemid.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación CreateAttachment](createattachment-operation.md) 
 - [Operación GetAttachment](getattachment-operation.md)

@@ -11,7 +11,7 @@ ms.openlocfilehash: 7d2a4027fe6de0c24191272d65605310af6a16bf
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764550"
 ---
 # <a name="externalaccessallowed-soap"></a>ExternalAccessAllowed (SOAP)
@@ -54,7 +54,7 @@ El valor de tipo Boolean del elemento **ExternalAccessAllowed** indica si la ubi
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

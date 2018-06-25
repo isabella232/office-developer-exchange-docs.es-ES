@@ -11,7 +11,7 @@ ms.openlocfilehash: e02a444d6809fe70274cda2cc8db6375e868edb9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764299"
 ---
 # <a name="ecpurl-photo-pox"></a>EcpUrl-foto (POX)
@@ -54,11 +54,11 @@ Ninguno.
 
 El valor de texto representa una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que puede usarse para ver o cambiar la foto del usuario actual. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento de **foto de EcpUrl** es un elemento secundario opcional del elemento **Protocol** . 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

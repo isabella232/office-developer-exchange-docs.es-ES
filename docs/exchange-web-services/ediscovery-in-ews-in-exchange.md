@@ -10,7 +10,7 @@ ms.openlocfilehash: 6491fdd9f2246870a89bfa89bf7d97b972d67c92
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762997"
 ---
 # <a name="ediscovery-in-ews-in-exchange"></a>exhibición de documentos electrónicos en EWS en Exchange
@@ -37,7 +37,7 @@ La funcionalidad de exhibición de documentos electrónicos expuestos por EWS es
 |[SearchMailboxes](http://msdn.microsoft.com/library/8a67c1d8-d021-4e68-aa62-35f7d9c2edc7%28Office.15%29.aspx) <br/> |Busca elementos en los buzones de correo específicos que coinciden con palabras clave de consulta.  <br/> |
 |[SetHoldOnMailboxes](http://msdn.microsoft.com/library/9015a0d8-3495-461b-aa79-797d23169585%28Office.15%29.aspx) <br/> |Mantenga conjuntos basada en una consulta en los elementos.  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
     

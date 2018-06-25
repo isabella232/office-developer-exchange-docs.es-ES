@@ -10,7 +10,7 @@ ms.openlocfilehash: ac10e9b9a347abb5907b77f0e0e7315e4e86d97a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763302"
 ---
 # <a name="recurrence-patterns-and-ews"></a>Patrones de periodicidad y EWS
@@ -342,7 +342,7 @@ Todos los mismos usar operaciones y métodos para trabajar con la serie periódi
     
 - [Actualización de una serie periódica mediante el uso de EWS en Exchange](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)

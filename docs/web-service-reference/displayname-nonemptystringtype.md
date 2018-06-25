@@ -12,7 +12,7 @@ ms.openlocfilehash: b0e0697cbb5d8231ca952992bbbd9f9e44497be5
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764218"
 ---
 # <a name="displayname-nonemptystringtype"></a>DisplayName (NonEmptyStringType)
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **DisplayName** es el nombre para mostrar de un nuevo de mensajería instantánea contacto del grupo o el nombre para mostrar de un nuevo grupo de mensajería instantáneo. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

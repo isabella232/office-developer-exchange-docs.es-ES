@@ -16,7 +16,7 @@ ms.openlocfilehash: 2c2af53dc5dbe1e6fcbc7f3b1174a856e51e4905
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763967"
 ---
 # <a name="createmanagedfolder-operation"></a>Operación CreateManagedFolder
@@ -32,7 +32,7 @@ La operación CreateManagedFolder agrega una carpeta personalizada administrada 
   
 Puede utilizar las operaciones FindFolder y GetFolder para tener acceso a las carpetas administradas. FindFolder se usa para buscar las carpetas en una carpeta principal especificado. Esto se puede usar para que las carpetas administradas se pueden detectar en una carpeta antes de intentar agregar que un duplicado carpeta administrada personalizada en el mismo directorio. GetFolder se usa después de la operación FindFolder para obtener más información acerca de una carpeta personalizada administrada.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Para obtener información acerca de cómo configurar la directiva de administración (MRM) de registros de mensajería, consulte [cómo crear una directiva de buzón de carpeta administrada](http://go.microsoft.com/fwlink/?LinkId=100975).
   
@@ -188,7 +188,7 @@ En la respuesta de error, se usan los siguientes elementos:
     
 - [Carpetas](folders-ex15websvcsotherref.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

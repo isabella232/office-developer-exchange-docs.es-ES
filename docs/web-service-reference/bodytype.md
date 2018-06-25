@@ -16,7 +16,7 @@ ms.openlocfilehash: f8be2e96390b40faa367cf0d34c533accc3b8afb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763653"
 ---
 # <a name="bodytype"></a>BodyType
@@ -58,7 +58,7 @@ En la siguiente tabla se enumera los valores posibles para el elemento **BodyTyp
 |HTML  <br/> |La respuesta devolverá un cuerpo del elemento como HTML.  <br/> |
 |Texto  <br/> |La respuesta devolverá un cuerpo del elemento como texto sin formato.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Puede identificar el tipo de cuerpo devuelto en la respuesta comprobando el atributo **BodyType** del elemento [Body](body.md) . El atributo **BodyType** identificará el cuerpo como HTML o texto. 
   

@@ -10,7 +10,7 @@ ms.openlocfilehash: c03ed585ebd62802000179d8c837786ba5f9aab4
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763015"
 ---
 # <a name="add-and-remove-email-addresses-from-the-blocked-senders-list-by-using-ews-in-exchange"></a>Agregar y quitar direcciones de correo electrónico de la lista de remitentes bloqueados mediante el uso de EWS en Exchange
@@ -119,7 +119,7 @@ La respuesta SOAP de EWS siguiente muestra la respuesta correcta. El elemento [M
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Administración de la Bandeja de entrada y EWS en Exchange](inbox-management-and-ews-in-exchange.md)   
 - [ExchangeService.MarkAsJunk](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx)   

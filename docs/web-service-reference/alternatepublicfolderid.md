@@ -16,7 +16,7 @@ ms.openlocfilehash: 32e6e75eb381e479baf5fdb5ad0a40b32c1b02a9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763435"
 ---
 # <a name="alternatepublicfolderid"></a>AlternatePublicFolderId
@@ -75,7 +75,7 @@ Ninguno.
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación ConvertId](convertid-operation.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)

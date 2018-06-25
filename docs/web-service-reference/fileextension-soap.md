@@ -11,7 +11,7 @@ ms.openlocfilehash: fb3af508d3b4033871f349eac35ddc270c9d9cb6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764604"
 ---
 # <a name="fileextension-soap"></a>FileExtension (SOAP)
@@ -54,7 +54,7 @@ El valor de texto del elemento **FileExtension** es una extensión de archivo v�
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

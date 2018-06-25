@@ -16,7 +16,7 @@ ms.openlocfilehash: e1b9e337f633dbf6fda159c28725d3fb8dcd55a6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764686"
 ---
 # <a name="folders"></a>Carpetas
@@ -62,7 +62,7 @@ Ninguno.
 |[RootFolder (FindFolderResponseMessage)](rootfolder-findfolderresponsemessage.md) <br/> |Contiene los resultados de búsqueda de una sola carpeta raíz durante una [operación de FindFolder](findfolder-operation.md).  <br/> |
 |[UpdateFolderResponseMessage](updatefolderresponsemessage.md) <br/> |Contiene el estado y el resultado de una única solicitud de [operación UpdateFolder](updatefolder-operation.md) .  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento es un elemento secundario necesario del elemento [ID (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) . 
   
@@ -77,7 +77,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -13,7 +13,7 @@ ms.openlocfilehash: 961f397e053141a723c68206aa451d2b51877061
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763586"
 ---
 # <a name="autodiscover-pox"></a>Detección automática (POX)

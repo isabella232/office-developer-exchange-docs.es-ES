@@ -12,7 +12,7 @@ ms.openlocfilehash: a8189ca9915312b64fefda3091f8f81e51271ad6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763378"
 ---
 # <a name="transport-agent-namespaces-in-exchange-2013"></a>Espacios de nombres de agente en Exchange 2013 de transporte
@@ -46,7 +46,7 @@ Los siguientes espacios de nombres contienen tipos que puede usar para crear y a
 |[Microsoft.Exchange.Data.Transport.Routing](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Routing.aspx) <br/> |Contiene tipos que admiten la extensión del comportamiento de enrutamiento de transporte de Exchange 2013.  <br/> |
 |[Microsoft.Exchange.Data.Transport.Smtp](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.aspx) <br/> |Contiene tipos que admiten la extensión de transporte de Exchange 2013 comportamiento de SMTP.  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Los agentes de transporte en Exchange](transport-agents-in-exchange-2013.md)   
 - [Conceptos de agente en Exchange 2013 de transporte](transport-agent-concepts-in-exchange-2013.md) 

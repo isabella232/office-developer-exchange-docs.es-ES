@@ -12,7 +12,7 @@ ms.openlocfilehash: 81b0cb76b02fcc9145f6d70eff12a0a0ac0ad51f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763542"
 ---
 # <a name="apps"></a>Aplicaciones
@@ -41,7 +41,7 @@ Ninguno.
 
 [GetAppManifestsResponse](getappmanifestsresponse.md)
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).
   
@@ -56,7 +56,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |No disponible  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [App](app.md)
 - [GetAppManifestsResponse](getappmanifestsresponse.md)

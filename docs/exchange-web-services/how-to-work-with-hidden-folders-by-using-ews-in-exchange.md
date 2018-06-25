@@ -10,7 +10,7 @@ ms.openlocfilehash: 72efc16ecc247d307b7300526e7d345fe6bdd3ac
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763194"
 ---
 # <a name="work-with-hidden-folders-by-using-ews-in-exchange"></a>Trabajar con carpetas ocultas con EWS en Exchange
@@ -351,7 +351,7 @@ Los valores de [FolderId](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8
 
 Después de que haya ocultado o no ocultos de las carpetas, es posible que desee obtener la jerarquía de carpetas o [sincronizar la jerarquía de carpetas](how-to-synchronize-folders-by-using-ews-in-exchange.md). Los ejemplos que muestran que cómo [obtener una jerarquía de carpetas mediante el uso de la API administrada de EWS](how-to-work-with-folders-by-using-ews-in-exchange.md#bk_getfolderhierarchyewsma) u [obtener una jerarquía de carpetas mediante el uso de EWS](how-to-work-with-folders-by-using-ews-in-exchange.md#bk_getfolderhierarchyews) también indicar qué carpetas de la jerarquía están ocultos. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Las carpetas y elementos de EWS en Exchange](folders-and-items-in-ews-in-exchange.md)

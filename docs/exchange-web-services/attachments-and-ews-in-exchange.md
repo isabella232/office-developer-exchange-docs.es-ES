@@ -10,7 +10,7 @@ ms.openlocfilehash: e4a97873798b8252e6fc14003519ce8a0eab7ec8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762995"
 ---
 # <a name="attachments-and-ews-in-exchange"></a>Los datos adjuntos y EWS en Exchange
@@ -72,7 +72,7 @@ Tenga en cuenta que la propiedad de la API administrada de EWS [HasAttachments](
     
 - [Eliminar los datos adjuntos mediante el uso de EWS en Exchange](how-to-delete-attachments-by-using-ews-in-exchange.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 <a name="bk_additionalresources"> </a>
 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)

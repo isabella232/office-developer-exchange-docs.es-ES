@@ -10,7 +10,7 @@ ms.openlocfilehash: 2f44045d80a74ed6a835604d516949ca3bc27379
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763204"
 ---
 # <a name="mail-apps-for-outlook-and-ews-in-exchange"></a>Aplicaciones de correo de Outlook y EWS en Exchange
@@ -72,7 +72,7 @@ Los tokens de devolución de llamada de servicio permiten a las aplicaciones de 
   
 El token de devolución de llamada de servicio es un token de opaco que el servicio de terceros que se adjunta a la solicitud EWS en un encabezado de autenticación de portador. El token identifica la aplicación de correo y el buzón de correo para ayudar a proteger la solicitud EWS. Para obtener información sobre cómo usar tokens de devolución de llamada de servicio, vea la [aplicaciones de correo para Outlook: obtener datos adjuntos de un servidor de Exchange](http://code.msdn.microsoft.com/exchange/Mail-apps-for-Office-Get-38babdc9) ejemplo. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Controlar el acceso de la aplicación de cliente para EWS en Exchange](controlling-client-application-access-to-ews-in-exchange.md)

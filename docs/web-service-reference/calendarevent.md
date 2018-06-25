@@ -16,7 +16,7 @@ ms.openlocfilehash: f7fff7ba511ca12813dd4c2d694e89c97589ba31
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763695"
 ---
 # <a name="calendarevent"></a>CalendarEvent
@@ -68,7 +68,7 @@ Ninguno.
 |:-----|:-----|
 |[CalendarEventArray](calendareventarray.md) <br/> |Contiene un conjunto de repeticiones de elemento de calendario únicos que representan la disponibilidad del usuario solicitado.  <br/> La siguiente es la expresión de XPath 2.0 para este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Las horas de reunión y de cita se devuelven en la zona horaria del cliente. Todos los elementos secundarios se enumeran en la secuencia en la que se producen. El nivel de detalle proporcionado por este elemento depende de los permisos concedidos para el solicitante.
   
@@ -83,7 +83,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

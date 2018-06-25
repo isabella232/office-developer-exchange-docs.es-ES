@@ -16,7 +16,7 @@ ms.openlocfilehash: 5a5203202071ae9391faa9348902424317ee96d1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763954"
 ---
 # <a name="createitem-operation-task"></a>Operación CreateItem (tarea)
@@ -149,7 +149,7 @@ En la respuesta se incluyen los siguientes elementos:
     
 - [ItemId](itemid.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

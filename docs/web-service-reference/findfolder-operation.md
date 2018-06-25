@@ -16,14 +16,14 @@ ms.openlocfilehash: 655455b46d4a3192b294bee9d85352d95ded49ae
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764618"
 ---
 # <a name="findfolder-operation"></a>FindFolder Operation
 
 La operación **FindFolder** usa los servicios Web de Exchange para buscar las subcarpetas de una carpeta identificada y devuelve un conjunto de propiedades que describen el conjunto de subcarpetas. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 FindFolder devuelve sólo el primer 512 bytes de cualquier propiedad que se pueden transmitir. Para Unicode, devuelve los primeros 255 caracteres mediante el uso de una cadena Unicode terminada en null.
   
@@ -224,7 +224,7 @@ La respuesta de error **FindFolder** incluye los siguientes elementos:
     
 - Use el valor de **PropertyTag** de 0x672D con un tipo de propiedad de **entero** para identificar una carpeta administrada mediante el elemento [ExtendedFieldURI](extendedfielduri.md) . 
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

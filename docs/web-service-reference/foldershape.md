@@ -16,7 +16,7 @@ ms.openlocfilehash: 8ebdd70ef13ee9f0cce9020b9212576cba782be4
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764698"
 ---
 # <a name="foldershape"></a>FolderShape
@@ -54,7 +54,7 @@ Ninguno.
 |[GetFolder](getfolder.md) <br/> |Define una solicitud para obtener una carpeta desde el almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetFolder` <br/> |
 |[SyncFolderHierarchy](syncfolderhierarchy.md) <br/> |Define una solicitud para sincronizar una jerarquía de carpetas en un cliente.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/SyncFolderHierarchy` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **FolderShape** es un elemento secundario necesario del elemento [FindFolder](findfolder.md) . 
   
@@ -90,7 +90,7 @@ El siguiente ejemplo de una solicitud, muestra cómo buscar todas las carpetas q
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

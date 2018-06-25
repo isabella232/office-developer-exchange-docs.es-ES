@@ -10,7 +10,7 @@ ms.openlocfilehash: 65b5b2ef1eba66877d5b6f6c3d4237a26a254196
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763068"
 ---
 # <a name="export-items-by-using-ews-in-exchange"></a>Exportar elementos mediante el uso de EWS en Exchange
@@ -259,7 +259,7 @@ En el ejemplo siguiente se muestra la respuesta a una solicitud para obtener la 
 
 Después de exportar elementos, es posible que desee [Importar elementos en Exchange](how-to-import-items-by-using-ews-in-exchange.md).
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Exportación e importación de elementos mediante el uso de EWS en Exchange](exporting-and-importing-items-by-using-ews-in-exchange.md)

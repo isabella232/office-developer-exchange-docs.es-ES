@@ -10,7 +10,7 @@ ms.openlocfilehash: e38ff50fcdb5e42cea3f4b2e25345375f84ae6eb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763221"
 ---
 # <a name="work-with-search-folders-by-using-ews-in-exchange"></a>Trabajar con las carpetas de búsqueda con EWS en Exchange
@@ -466,7 +466,7 @@ Si está usando EWS, use la [operación DeleteFolder](http://msdn.microsoft.com/
 
 El servidor responde con un mensaje de [DeleteFolderResponse](http://msdn.microsoft.com/library/27578bda-ef0a-4a33-bccc-2c1bc1735424%28Office.15%29.aspx) que incluye un valor [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, lo que indica el éxito.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Búsqueda y EWS en Exchange](search-and-ews-in-exchange.md)

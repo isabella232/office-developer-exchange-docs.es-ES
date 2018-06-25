@@ -16,7 +16,7 @@ ms.openlocfilehash: b70b28bd6b3c9452f5d7f249f453218d555754da
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763723"
 ---
 # <a name="candelete"></a>CanDelete
@@ -50,7 +50,7 @@ Ninguno.
 
 Si este elemento está presente, se requiere un valor de texto que representa un valor de tipo Boolean. Un valor de **true** indica que se puede eliminar la carpeta; un valor de **false** significa que no se puede eliminar la carpeta. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Para eliminar una carpeta administrada, use la [operación DeleteFolder](deletefolder-operation.md).
   
@@ -65,7 +65,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

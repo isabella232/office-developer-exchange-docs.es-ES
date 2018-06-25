@@ -12,7 +12,7 @@ ms.openlocfilehash: b92108ecde63d4a3ac3cc80861c204c4d1950cc0
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764528"
 ---
 # <a name="extendedproperties-nonemptyarrayofextendedpropertytype"></a>ExtendedProperties (NonEmptyArrayOfExtendedPropertyType)
@@ -47,7 +47,7 @@ Ninguno.
 |[ImGroup](imgroup.md) <br/> |Representa un grupo de mensajería instantáneo.  <br/> |
 |[SearchPreviewItem](searchpreviewitem.md) <br/> |Especifica los primeros 256 caracteres de un elemento de buzón de correo para vista previa sin abrir el elemento.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -62,7 +62,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

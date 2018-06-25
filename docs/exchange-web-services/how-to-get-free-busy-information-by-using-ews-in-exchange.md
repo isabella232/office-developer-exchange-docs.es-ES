@@ -10,7 +10,7 @@ ms.openlocfilehash: 0633c204207317c03740d35b1da4b9626152d2e3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763090"
 ---
 # <a name="get-freebusy-information-by-using-ews-in-exchange"></a>Obtener información de disponibilidad con EWS en Exchange
@@ -370,7 +370,7 @@ El servidor responde a la [solicitud de GetUserAvailability](http://msdn.microso
 
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)

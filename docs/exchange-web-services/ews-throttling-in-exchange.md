@@ -10,7 +10,7 @@ ms.openlocfilehash: e7966f67753b3998235e000a022e41c90fa227b8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763061"
 ---
 # <a name="ews-throttling-in-exchange"></a>EWS limitación en Exchange
@@ -303,7 +303,7 @@ En la siguiente tabla se enumera los códigos de estado HTTP que se devuelven me
 |HTTP 500  <br/> |Indica un error de servidor interno con el código de error ErrorServerBusy. Esto indica que el cliente debe retrasar el envío de las solicitudes adicionales hasta más adelante. La respuesta puede contener una copia de sugerencia denominado BackOffMilliseconds. Si está presente, el valor de BackOffMilliseconds debe utilizarse como la duración hasta que el cliente vuelve a enviar una solicitud.  <br/> |
 |HTTP 200  <br/> |Contiene una respuesta de error basada en el esquema EWS con un código de error ErrorInternalServerError. Un código de error interno de ErrorServerBusy puede estar presente. Esto indica que el cliente debe retrasar el envío de las solicitudes adicionales hasta más adelante.  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Administración de carga de trabajo de Exchange](http://technet.microsoft.com/en-us/library/jj150503.aspx)
 - [Cmdlet New-ThrottlingPolicy](http://technet.microsoft.com/en-us/library/dd351045.aspx)

@@ -10,7 +10,7 @@ ms.openlocfilehash: 63ba8807dd63ca2d151b1c2b1277625daeed640c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763025"
 ---
 # <a name="exporting-and-importing-items-by-using-ews-in-exchange"></a>Exportación e importación de elementos mediante el uso de EWS en Exchange
@@ -59,7 +59,7 @@ Otras opciones están disponibles para exporing y elementos de importación a y 
     
 - [Importar elementos mediante el uso de EWS en Exchange](how-to-import-items-by-using-ews-in-exchange.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Copia de seguridad, restauración y recuperación ante desastres](http://technet.microsoft.com/en-us/library/dd876874%28v=exchg.150%29.aspx)

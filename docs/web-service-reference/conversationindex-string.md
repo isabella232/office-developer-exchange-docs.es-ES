@@ -12,7 +12,7 @@ ms.openlocfilehash: 7ae8083aea826726752f1cd3c9f3689fd0dd3fb5
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763874"
 ---
 # <a name="conversationindex-string"></a>ConversationIndex (cadena)
@@ -46,7 +46,7 @@ Ninguno.
 
 Valor de tipo String que representa el índice de la conversación.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Se requiere este elemento.
   
@@ -61,7 +61,7 @@ El elemento **ConversationIndex** es aplicable para los clientes que estén dest
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

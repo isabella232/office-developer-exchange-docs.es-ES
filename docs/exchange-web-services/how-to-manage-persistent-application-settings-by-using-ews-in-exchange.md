@@ -10,7 +10,7 @@ ms.openlocfilehash: ab5a9cc927bd0a6c4efacce622cc71db1a9b02a3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763102"
 ---
 # <a name="manage-persistent-application-settings-by-using-ews-in-exchange"></a>Administrar la configuración de aplicación persistente mediante el uso de EWS en Exchange
@@ -417,7 +417,7 @@ En el ejemplo siguiente se muestra la solicitud XML para eliminar un objeto de c
 
 El [XML de la respuesta](http://msdn.microsoft.com/library/93e44690-be2d-4fdb-96a8-4ded3c193aed%28Office.15%29.aspx) es simple y se indica si la solicitud de eliminación fue un éxito o si se produjo un error. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Configuración de aplicación persistente EWS en Exchange](persistent-application-settings-in-ews-in-exchange.md)
 - [Introducción al diseño de EWS cliente de Exchange](ews-client-design-overview-for-exchange.md)   

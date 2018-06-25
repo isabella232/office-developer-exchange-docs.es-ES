@@ -13,7 +13,7 @@ ms.openlocfilehash: 48ca4a93c2120079cb675eabbc460bf0e75570b2
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763590"
 ---
 # <a name="autodiscover-web-service-reference-for-exchange"></a>Referencia de servicio web de detección automática para Exchange
@@ -40,7 +40,7 @@ Esta sección contiene información de referencia para el servicio Detección au
     
 - [Referencia de servicio web POX de detección automática de Exchange](pox-autodiscover-web-service-reference-for-exchange.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Referencia de servicios Web de Exchange](web-services-reference-for-exchange.md)
 - [Servicio de detección automática (SOAP)](http://msdn.microsoft.com/library/e24d1a1f-0d20-4bd9-ae4c-9112ecacea78%28Office.15%29.aspx)

@@ -16,7 +16,7 @@ ms.openlocfilehash: c7b6d4930bc42fbe26d35264e2eae0c986cc8db7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763706"
 ---
 # <a name="calendaritem"></a>CalendarItem
@@ -218,7 +218,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Cuando se actualiza un elemento de calendario único se convierta en un elemento periódico del calendario principal, el elemento [MeetingTimeZone](meetingtimezone.md) debe especificarse con el fin de conservar la zona horaria de original del elemento de calendario. 
   
@@ -233,7 +233,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

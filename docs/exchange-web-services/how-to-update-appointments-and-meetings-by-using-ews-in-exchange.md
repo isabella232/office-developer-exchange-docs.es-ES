@@ -10,7 +10,7 @@ ms.openlocfilehash: a4265a14a46c146c584a3daa61cef5486958e14e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763177"
 ---
 # <a name="update-appointments-and-meetings-by-using-ews-in-exchange"></a>Actualizar las citas y reuniones con EWS en Exchange
@@ -272,7 +272,7 @@ En el ejemplo siguiente se muestra la solicitud XML al usar la operación [Updat
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)   
 - [Crear citas y reuniones mediante el uso de EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)   

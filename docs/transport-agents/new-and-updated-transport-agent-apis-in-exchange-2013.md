@@ -12,7 +12,7 @@ ms.openlocfilehash: 0caafaf9629da1066d14357416862a7d67b961aa
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763373"
 ---
 # <a name="new-and-updated-transport-agent-apis-in-exchange-2013"></a>Agente de transporte nuevos y actualizados API en Exchange 2013
@@ -135,7 +135,7 @@ En Exchange 2013 se han actualizado los siguientes tipos:
     
 - [SmtpSession](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpSession.aspx)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Conceptos de agente en Exchange 2013 de transporte](transport-agent-concepts-in-exchange-2013.md)  
 - [Creación de los agentes de transporte de Exchange 2013](creating-transport-agents-for-exchange-2013.md)  

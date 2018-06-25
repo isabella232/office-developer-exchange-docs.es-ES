@@ -10,7 +10,7 @@ ms.openlocfilehash: 1c840fac2ecca9fb51a28044dfac6299cb4fc038
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763056"
 ---
 # <a name="create-appointments-and-meetings-by-using-ews-in-exchange-2013"></a>Crear citas y reuniones mediante el uso de EWS en Exchange 2013
@@ -371,7 +371,7 @@ En el ejemplo siguiente se muestra la respuesta XML que es devuelto por la opera
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)  
 - [Obtener las citas y reuniones con EWS en Exchange](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)  

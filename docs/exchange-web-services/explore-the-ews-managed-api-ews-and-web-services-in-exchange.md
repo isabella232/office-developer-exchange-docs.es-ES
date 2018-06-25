@@ -10,7 +10,7 @@ ms.openlocfilehash: ef71ddd2b3225996b25bf889ad58ec64f555a753
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762999"
 ---
 # <a name="explore-the-ews-managed-api-ews-and-web-services-in-exchange"></a>Explore la API administrada de EWS, EWS y servicios web de Exchange
@@ -37,7 +37,7 @@ Use la siguiente tabla para buscar el contenido que le ayudarán a conocer y a t
 |Encuentre procedimientos información y ejemplos de código para la API administrada de EWS y EWS.  <br/> |[Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md) <br/> |
 |Buscar material de referencia.  <br/> |[Referencia de servicios Web de Exchange](../web-service-reference/web-services-reference-for-exchange.md) <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
     
 - [Suscribirse a un sitio para desarrolladores de Office 365 y Exchange Online](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/set-up-a-development-environment-for-sharepoint-add-ins-on-office-365)
     

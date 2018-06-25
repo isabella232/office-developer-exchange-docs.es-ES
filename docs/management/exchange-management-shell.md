@@ -12,7 +12,7 @@ ms.openlocfilehash: 1cb0328bdb0eebda0ce4eda929e1bfb21be451f4
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763312"
 ---
 # <a name="exchange-management-shell"></a>Shell de administración de Exchange
@@ -42,7 +42,7 @@ Los artículos de esta sección describen las características de Shell de admin
     
 - [Espacios de nombres de Shell de administración de Exchange](exchange-management-shell-namespaces.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
   
 - [Documentación de Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-6)
 - [Secuencias de comandos de PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/powershell-scripting?view=powershell-6)

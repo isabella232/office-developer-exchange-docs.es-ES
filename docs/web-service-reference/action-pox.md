@@ -13,7 +13,7 @@ ms.openlocfilehash: 118bb59f2c929e3c74683dbf3f073da34d67a3e7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764557"
 ---
 # <a name="action-pox"></a>Acción (POX)
@@ -60,7 +60,7 @@ El valor de texto representa si otra solicitud de detección automática es nece
 |redirectAddr  <br/> |Si se especifica este valor, el elemento [RedirectAddr (POX)](redirectaddr-pox.md) especifique la dirección de correo electrónico que se debe usar para una solicitud de detección automática subsiguiente.  <br/> |
 |settings  <br/> |Si se especifica este valor, la respuesta de detección automática contiene la configuración que se usa para configurar la cuenta. La mayoría de las opciones se encuentran en el elemento de [Protocolo (POX)](protocol-pox.md) .  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

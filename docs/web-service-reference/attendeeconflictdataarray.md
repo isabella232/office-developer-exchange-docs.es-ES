@@ -16,7 +16,7 @@ ms.openlocfilehash: 169312b8a3d37c014ba58fbfe094d786b134fc90
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763575"
 ---
 # <a name="attendeeconflictdataarray"></a>AttendeeConflictDataArray
@@ -70,7 +70,7 @@ Ninguno.
 |:-----|:-----|
 |[Sugerencia](suggestion.md) <br/> |Representa una sola sugerencia de tiempo de la reunión.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La posición de cada elemento en el **AttendeeConflictDataArray** corresponde a la posición de los asistentes consultados en el elemento [MailboxDataArray](mailboxdataarray.md) . Cada asistente consultado debe corresponder a uno de los elementos secundarios de **AttendeeConflictDataArray** . Estos elementos representan un único conflicto con la hora de la reunión sugerida identificada en el elemento de [Sugerencia](suggestion.md) . 
   
@@ -85,7 +85,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md) 
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)

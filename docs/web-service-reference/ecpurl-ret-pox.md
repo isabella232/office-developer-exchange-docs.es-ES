@@ -11,7 +11,7 @@ ms.openlocfilehash: 366a7a79c0f3c19b2cfef21c01826e62b0e95793
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764307"
 ---
 # <a name="ecpurl-ret-pox"></a>EcpUrl-devuelve (POX)
@@ -54,11 +54,11 @@ Ninguno.
 
 El valor de texto representa una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para tener acceso a la configuración de la etiqueta de retención para el usuario. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **devuelve EcpUrl** es un elemento secundario opcional del elemento **Protocol** . 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

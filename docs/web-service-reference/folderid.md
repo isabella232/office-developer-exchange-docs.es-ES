@@ -16,7 +16,7 @@ ms.openlocfilehash: 5764a164d5af183b8f313955ace5274dc6023a6a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764683"
 ---
 # <a name="folderid"></a>FolderId
@@ -70,7 +70,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Todos los elementos de **FolderId** son del tipo **FolderIdType** . Se requiere el elemento **FolderId** en todos los casos, excepto en los elementos cuyo tipo extiende el **BaseFolderType** o donde el elemento **FolderId** es una parte de una opción. Revise el esquema para obtener más información. 
   
@@ -85,7 +85,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 - [Creación de carpetas (servicios Web de Exchange)](http://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)

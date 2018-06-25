@@ -10,7 +10,7 @@ ms.openlocfilehash: 983431864729edbb040a7206dae416d10bfb2b7a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763174"
 ---
 # <a name="route-public-folder-hierarchy-requests"></a>Enrutar las solicitudes de jerarquía de carpetas públicas
@@ -201,7 +201,7 @@ Connection: Keep-Alive
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Carpetas públicas en Exchange obtener acceso con EWS](public-folder-access-with-ews-in-exchange.md)    
 - [Enrutar las solicitudes de contenido de carpetas públicas](how-to-route-public-folder-content-requests.md)    

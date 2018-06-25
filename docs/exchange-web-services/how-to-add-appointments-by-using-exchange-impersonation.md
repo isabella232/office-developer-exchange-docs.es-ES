@@ -10,7 +10,7 @@ ms.openlocfilehash: fe737658b88aca66d8b4c2860245db000888ba17
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763055"
 ---
 # <a name="add-appointments-by-using-exchange-impersonation"></a>Agregar citas mediante el uso de la suplantación de Exchange
@@ -186,7 +186,7 @@ En el ejemplo siguiente se muestra la respuesta XML que es devuelto por la opera
 
 Una vez más, esto es el mismo XML que se devuelve cuando se usa la operación **CreateItem** sin usar suplantación. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Suplantación y EWS en Exchange](impersonation-and-ews-in-exchange.md)

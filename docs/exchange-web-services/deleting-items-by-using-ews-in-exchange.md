@@ -10,7 +10,7 @@ ms.openlocfilehash: a475ebc6677e5f5003cc790a2d4d2b83c513f309
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763020"
 ---
 # <a name="deleting-items-by-using-ews-in-exchange"></a>Eliminación de elementos con EWS en Exchange
@@ -116,7 +116,7 @@ Algunos puntos a tener en cuenta sobre la eliminación de elementos:
     
 - [Tratamiento de errores relacionados con la eliminación de EWS en Exchange](handling-deletion-related-errors-in-ews-in-exchange.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Las carpetas y elementos de EWS en Exchange](folders-and-items-in-ews-in-exchange.md)    
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)    

@@ -10,7 +10,7 @@ ms.openlocfilehash: 1ce739f453ba1bc6f1b5d38edae3776daa562ffb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763001"
 ---
 # <a name="ews-application-types"></a>Tipos de aplicación de EWS
@@ -52,7 +52,7 @@ Una aplicación de portal extiende una página web existente o un portal para in
 
 Una aplicación de servicio suele ser un trabajo en segundo plano integrado en una aplicación existente que se extiende a Exchange para correlacionar datos entre el sistema y el almacén de Exchange. Aplicaciones de servicio normalmente no tiene una interfaz de usuario y usar suplantación o OAuth para la autenticación y el acceso. Creación de una cuenta de servicio para suplantar a los usuarios es común en las aplicaciones de servicio EWS, porque puede conceder a una cuenta única de permiso para suplantar a un conjunto de usuarios y realizar operaciones de buzón de correo para esas cuentas. Por ejemplo, una aplicación de servicio EWS puede sincronizar datos entre listas de marketing en una solución CRM y grupos de distribución de Exchange mediante el uso de una cuenta de servicio y la suplantación.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Empezar a utilizar servicios web de Exchange](start-using-web-services-in-exchange.md)

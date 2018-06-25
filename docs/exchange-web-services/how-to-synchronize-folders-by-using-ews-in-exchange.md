@@ -10,7 +10,7 @@ ms.openlocfilehash: 4b0686134d642da34b2890a0e692e3d03e4a9fb1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763182"
 ---
 # <a name="synchronize-folders-by-using-ews-in-exchange"></a>Sincronizar carpetas mediante el uso de EWS en Exchange
@@ -262,7 +262,7 @@ Si está utilizando la API administrada de EWS, después de obtener la lista de 
   
 Si está usando EWS, use la [operación GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) para obtener las propiedades en las carpetas nuevas o modificadas y actualizar o crear las carpetas en el cliente. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Sincronización de buzón de correo y EWS en Exchange](mailbox-synchronization-and-ews-in-exchange.md)   
 - [Sincronizar elementos mediante el uso de EWS en Exchange](how-to-synchronize-items-by-using-ews-in-exchange.md)   

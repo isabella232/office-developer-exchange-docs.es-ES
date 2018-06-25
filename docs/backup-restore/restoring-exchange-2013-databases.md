@@ -12,7 +12,7 @@ ms.openlocfilehash: d3ca3a884b0ad30f7d7968a9ed435b02aaf205e1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763007"
 ---
 # <a name="restoring-exchange-2013-databases"></a>Restauración de bases de datos de Exchange 2013
@@ -68,7 +68,7 @@ En algunos casos, es posible que necesite recuperar una copia de seguridad estab
   
 En estos escenarios, las rutas de acceso de archivo de la base de datos de destino, así como su GUID de objeto son diferentes de los de la base de datos original. Por lo tanto, la aplicación tiene que llamar al método [SetRestoreOptions](http://msdn.microsoft.com/en-us/library/windows/desktop/aa382856%28v=vs.85%29.aspx) con un documento XML que indica el origen y la información de la base de datos de destino y la llamada al método [AddNewTarget](http://msdn.microsoft.com/en-us/library/windows/desktop/aa382648%28v=vs.85%29.aspx) para especificar las rutas de acceso de Active directory para restaurar los archivos de copia de seguridad para . Para el escritor de Exchange, esta restauración es la misma que la restauración de una base de datos de recuperación. Para obtener más información, vea [Exchange restaurar las bases de datos a una base de datos de recuperación](restoring-exchange-2013-databases.md#bk_RecoveryDatabase) anteriormente en este artículo. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 <a name="bk_AdditionalResources"> </a>
 
 - [Tipos de operaciones de copia de seguridad para Exchange 2013](types-of-backup-operations-for-exchange-2013.md)

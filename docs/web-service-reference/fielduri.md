@@ -16,7 +16,7 @@ ms.openlocfilehash: 82d1bd49819710fe54cfd9343bdd327798709954
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764634"
 ---
 # <a name="fielduri"></a>FieldURI
@@ -414,7 +414,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este elemento es parte del grupo de sustitución de [ruta de acceso](path.md) . 
   
@@ -456,7 +456,7 @@ En el ejemplo siguiente se muestra cómo usar el elemento FieldURI.
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

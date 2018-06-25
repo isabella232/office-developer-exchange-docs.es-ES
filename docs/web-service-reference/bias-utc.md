@@ -16,7 +16,7 @@ ms.openlocfilehash: 43613593565ca15be97bd2a98dbe5c512dbe5fc7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763617"
 ---
 # <a name="bias-utc"></a>Bias (UTC)
@@ -53,7 +53,7 @@ Ninguno.
 
 Se requiere un valor de texto. El valor de texto representa un número entero.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Un segundo elemento [Bias](bias.md) en el esquema representa el desplazamiento desde el desplazamiento de hora Universal coordinada (UTC). 
   
@@ -90,7 +90,7 @@ En el ejemplo siguiente se muestra parte de una solicitud XML que identifica un 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)  
 - [Bias](bias.md)

@@ -10,7 +10,7 @@ ms.openlocfilehash: d19ab062c8d418e373e8268b1ab039e5436e71bf
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763308"
 ---
 # <a name="web-service-api-feature-availability-in-exchange-and-the-ews-managed-api"></a>Disponibilidad de característica del servicio Web de API de Exchange y la API administrada de EWS
@@ -81,7 +81,7 @@ Si desea ir más allá para entender las diferencias entre las versiones de Exch
     
 - Descargar [EWSEditor](http://ewseditor.codeplex.com/). Puede usar EWSEditor para especificar las versiones de esquema de destino diferente y enviar consultas basadas en la versión del esquema de destino.
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Introducción al diseño de EWS cliente de Exchange](ews-client-design-overview-for-exchange.md)   
 - [Empezar a trabajar con aplicaciones de cliente de la API administrada de EWS](get-started-with-ews-managed-api-client-applications.md) 

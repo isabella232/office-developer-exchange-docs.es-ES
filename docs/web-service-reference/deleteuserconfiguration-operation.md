@@ -16,7 +16,7 @@ ms.openlocfilehash: 033134a7e16aa8e7a3d6b928141012b646863a68
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764107"
 ---
 # <a name="deleteuserconfiguration-operation"></a>Operación DeleteUserConfiguration
@@ -90,7 +90,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **De
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operaciones de EWS en Exchange](ews-operations-in-exchange.md) 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)

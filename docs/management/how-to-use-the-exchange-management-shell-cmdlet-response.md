@@ -12,7 +12,7 @@ ms.openlocfilehash: 5edf75afd556f67e815bc519c87586f2f62f057b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763310"
 ---
 # <a name="use-the-exchange-management-shell-cmdlet-response"></a>Usar la respuesta de cmdlet del Shell de administración de Exchange
@@ -66,7 +66,7 @@ Next
 
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Creación de herramientas de Shell de administración de Exchange](create-exchange-management-shell-tools.md)   
 - [Obtener una lista de usuarios de correo mediante el Shell de administración de Exchange](how-to-get-a-list-of-mail-users-by-using-the-exchange-management-shell.md)

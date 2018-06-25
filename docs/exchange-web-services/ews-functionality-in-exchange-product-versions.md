@@ -10,7 +10,7 @@ ms.openlocfilehash: 6b676781f25eeeb90fd9ab075fbe63198766bd99
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763005"
 ---
 # <a name="ews-functionality-in-exchange-product-versions"></a>Funcionalidad EWS en versiones de producto de Exchange
@@ -32,7 +32,7 @@ En la siguiente tabla se enumera las versiones de Exchange que incluyan EWS y la
 |Exchange 2007 SP1  | Incluye todas las características introducidas en Exchange 2007. Las siguientes características se introdujeron en Exchange 2007 SP1:  <ul><li>  Delegar la administración</li><li>Permisos de carpeta</li><li>Carpetas públicas</li><li>Elementos para exponer</li><li>Conversión de Id.</li></ul> |
 |Exchange 2007  | Las siguientes características se introdujeron en la versión inicial de Exchange 2007:  <ul><li>  Acceso total a los elementos, carpetas y datos adjuntos (crear, Get, Update, Delete)</li><li>Disponibilidad</li><li>Fuera de la configuración de Office</li><li>Notificaciones</li><li>Sincronización</li><li>Resolución de nombres</li><li>Expansión de distribución (DL) de la lista</li><li>B?squeda</li></ul> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Empezar a utilizar servicios web de Exchange](start-using-web-services-in-exchange.md)
 - [Migrar a las tecnologías de Exchange](../migrating-to-exchange-online-and-exchange-2013-technologies.md)

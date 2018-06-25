@@ -15,7 +15,7 @@ ms.openlocfilehash: 36f9cba3690520ebb457a4cb2bfbcde3fea4b8dc
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764765"
 ---
 # <a name="getcallinfo-operation-um-web-service"></a>Operación GetCallInfo (servicio web de mensajería unificada)
@@ -63,7 +63,7 @@ El siguiente ejemplo de una respuesta GetCallInfo muestra una respuesta a una so
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

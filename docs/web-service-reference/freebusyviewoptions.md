@@ -16,7 +16,7 @@ ms.openlocfilehash: 703fc6a3625d24cf874a785600e13ee4505b506f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764721"
 ---
 # <a name="freebusyviewoptions"></a>FreeBusyViewOptions
@@ -59,7 +59,7 @@ Ninguno.
 |:-----|:-----|
 |[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |Contiene los argumentos utilizados para obtener información de disponibilidad del usuario. Esto es un elemento raíz.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityRequest` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento no es necesario y sólo puede aparecer una vez si se usa. Este valor puede ser null si el valor del elemento [SuggestionsViewOptions](suggestionsviewoptions.md) no es nulo. 
   
@@ -127,7 +127,7 @@ En el ejemplo siguiente se obtiene una lista de las reuniones y una secuencia de
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

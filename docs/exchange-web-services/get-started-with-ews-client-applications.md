@@ -10,7 +10,7 @@ ms.openlocfilehash: 911495c74f4c74114a86b1a3a98c9200db338b34
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763023"
 ---
 # <a name="get-started-with-ews-client-applications"></a>Empezar a trabajar con aplicaciones de cliente de EWS
@@ -434,7 +434,7 @@ Ahora que ya ha escrito su primera aplicación de EWS, está listo para descubri
     
 Si surge algún problema con la aplicación [envíe una pregunta o un comentario al foro](http://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrdevelopment) (y no olvide leer la primera publicación). 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Empezar a utilizar servicios web de Exchange](start-using-web-services-in-exchange.md)   
 - [Explore la API administrada de EWS, EWS y servicios web de Exchange](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md) 

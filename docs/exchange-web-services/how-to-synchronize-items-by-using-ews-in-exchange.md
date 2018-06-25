@@ -10,7 +10,7 @@ ms.openlocfilehash: ce29a77cee595c2358441e4a22d32d45e78c6e60
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763176"
 ---
 # <a name="synchronize-items-by-using-ews-in-exchange"></a>Sincronizar elementos mediante el uso de EWS en Exchange
@@ -429,7 +429,7 @@ Si se usa la API administrada de EWS, después de obtener la lista de elementos 
   
 Si está usando EWS, use la [operación GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) para obtener las propiedades en los elementos nuevos o modificados y actualizar los elementos en el cliente. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Sincronización de buzón de correo y EWS en Exchange](mailbox-synchronization-and-ews-in-exchange.md)

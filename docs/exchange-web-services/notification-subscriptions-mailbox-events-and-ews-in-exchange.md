@@ -10,7 +10,7 @@ ms.openlocfilehash: 4f466c6cc01af410807948a9fec40c2af399c3e3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763297"
 ---
 # <a name="notification-subscriptions-mailbox-events-and-ews-in-exchange"></a>Suscripciones de notificación de eventos de buzón de correo y EWS en Exchange
@@ -174,7 +174,7 @@ En una implementación local, puede limitar el número de suscripciones por usua
     
 - [Tratamiento de errores relacionados con la notificación en EWS en Exchange](handling-notification-related-errors-in-ews-in-exchange.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
 - [Referencia de servicios Web de Exchange](../web-service-reference/web-services-reference-for-exchange.md)

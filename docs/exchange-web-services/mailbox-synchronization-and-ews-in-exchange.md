@@ -10,7 +10,7 @@ ms.openlocfilehash: 7bca2f7b754dcceee99e4bc24519f6e4f6423ae7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763219"
 ---
 # <a name="mailbox-synchronization-and-ews-in-exchange"></a>Sincronización de buzón de correo y EWS en Exchange
@@ -166,7 +166,7 @@ Puede que se pregunte, ¿puedo filtrar notificaciones de mi (y, por tanto, sólo
     
 - [Tratamiento de errores relacionados con la sincronización en EWS en Exchange](handling-synchronization-related-errors-in-ews-in-exchange.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)

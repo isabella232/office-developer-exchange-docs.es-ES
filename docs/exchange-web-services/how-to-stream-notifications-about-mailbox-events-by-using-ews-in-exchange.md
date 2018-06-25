@@ -10,7 +10,7 @@ ms.openlocfilehash: aad7604511687d1482914183979e954f79572af9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763170"
 ---
 # <a name="stream-notifications-about-mailbox-events-by-using-ews-in-exchange"></a>Notificaciones de secuencia acerca de los eventos de buzón de correo mediante el uso de EWS en Exchange
@@ -203,7 +203,7 @@ Después de que ha recibido eventos desde el servidor, el [siguiente paso](how-t
 
 Una vez haya recibido las notificaciones, puede [sincronizar la jerarquía de carpetas](how-to-synchronize-folders-by-using-ews-in-exchange.md) o [sincronizar el contenido de la carpeta que ha cambiado](how-to-synchronize-items-by-using-ews-in-exchange.md).
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Suscripciones de notificación de eventos de buzón de correo y EWS en Exchange](notification-subscriptions-mailbox-events-and-ews-in-exchange.md)

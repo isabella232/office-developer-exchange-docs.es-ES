@@ -11,7 +11,7 @@ ms.openlocfilehash: 786459cab98f8c169f768b6ef850792e8111761a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764303"
 ---
 # <a name="ecpurl-tm-pox"></a>EcpUrl-tm (POX)
@@ -54,11 +54,11 @@ Ninguno.
 
 El valor de texto representa una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para tener acceso a una lista de los buzones del sitio para el usuario. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **EcpUrl tm** es un elemento secundario opcional del elemento **Protocol** . 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

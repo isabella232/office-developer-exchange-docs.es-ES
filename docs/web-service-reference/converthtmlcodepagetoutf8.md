@@ -12,7 +12,7 @@ ms.openlocfilehash: aff6579835097a273101188c02a9919003b71b58
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763889"
 ---
 # <a name="converthtmlcodepagetoutf8"></a>ConvertHtmlCodePageToUTF8
@@ -46,7 +46,7 @@ Ninguno.
 
 Un valor de texto de **true** para el elemento **ConvertHtmlCodePageToUTF8** indica que el cuerpo HTML se convierte en UTF8. Un valor de texto de **false** indica que el cuerpo HTML no se convierte en UTF8. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Se usa el valor predeterminado de **true** si el elemento **ConvertHtmlCodePageToUTF8** no está especificado en una solicitud. 
   
@@ -61,7 +61,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

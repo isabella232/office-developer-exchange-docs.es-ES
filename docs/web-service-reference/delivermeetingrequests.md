@@ -16,7 +16,7 @@ ms.openlocfilehash: 803bd2da72bdb21b507a59cc11635a40d4431acf
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764121"
 ---
 # <a name="delivermeetingrequests"></a>DeliverMeetingRequests
@@ -61,7 +61,7 @@ En la siguiente tabla se enumera los valores posibles para el elemento **Deliver
 |DelegatesAndSendInformationToMe  <br/> |Las convocatorias de reunión se transfieren al delegado y permanecerán en la carpeta Bandeja de entrada en el buzón de la entidad de seguridad, pero los botones Aceptar, provisional y rechazar no aparecen en el panel de lectura de Microsoft Office Outlook.  <br/> |
 |NoForward  <br/> |Las convocatorias de reunión no se transfieren al delegado.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La configuración de **DeliverMeetingRequests** afecta a todos los delegados en el buzón de correo de una entidad de seguridad. 
   
@@ -76,7 +76,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación AddDelegate](adddelegate-operation.md)  
 - [Operación UpdateDelegate](updatedelegate-operation.md)  

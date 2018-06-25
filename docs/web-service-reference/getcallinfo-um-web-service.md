@@ -15,7 +15,7 @@ ms.openlocfilehash: 749a47abf4dd9ac70c6b29968f36c93988a1d6fe
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764763"
 ---
 # <a name="getcallinfo-um-web-service"></a>GetCallInfo (servicio web de mensajería unificada)
@@ -62,7 +62,7 @@ Ninguno.
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

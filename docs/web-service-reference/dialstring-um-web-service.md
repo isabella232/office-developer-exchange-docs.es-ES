@@ -15,7 +15,7 @@ ms.openlocfilehash: f27934fa73ead75ab50e99a79c01cb6a1062e3d8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764152"
 ---
 # <a name="dialstring-um-web-service"></a>dialString (servicio web de mensajería unificada)
@@ -64,7 +64,7 @@ Se requiere un valor de texto. El valor de texto debe contener un número marcad
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [PlayOnPhone (servicio web de mensajería unificada)](playonphone-um-web-service.md)  
 - [Operación PlayOnPhone (servicio web de mensajería unificada)](playonphone-operation-um-web-service.md)  

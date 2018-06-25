@@ -12,7 +12,7 @@ ms.openlocfilehash: cf5571dd22a7f938097b6c38a8a3531c4ce0891a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764330"
 ---
 # <a name="emailaddress-emailaddress"></a>EmailAddress (EmailAddress)
@@ -39,7 +39,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

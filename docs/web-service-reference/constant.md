@@ -16,7 +16,7 @@ ms.openlocfilehash: 73912bc1981c5d54040f7c4a563ad805916fe721
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763779"
 ---
 # <a name="constant"></a>Constante
@@ -49,7 +49,7 @@ Ninguno.
 |[Incluye](contains.md) <br/> |Representa una expresión de búsqueda que determina si una propiedad determinada contiene el valor de cadena constante proporcionada.  <br/> |
 |[FieldURIOrConstant](fielduriorconstant.md) <br/> |Representa una propiedad o un valor constante que se usará cuando se comparan con otra propiedad.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El valor de cadena en el atributo de **valor** debe ser convertible en el tipo que intenta comparar. Por ejemplo, si se está comparando una propiedad de fecha y hora con respecto a un valor constante, el valor de cadena debe representar un fecha y hora. 
   
@@ -64,7 +64,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

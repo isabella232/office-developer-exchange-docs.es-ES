@@ -12,7 +12,7 @@ ms.openlocfilehash: 9ddee0d68c9104357f84322b2cce7c5f2576d871
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763379"
 ---
 # <a name="transport-agent-concepts-in-exchange-2013"></a>Conceptos de agente en Exchange 2013 de transporte
@@ -120,7 +120,7 @@ Los siguientes espacios de nombres contienen tipos que puede usar para leer, esc
     
 Tras escribir el agente de transporte, [instalar y administrar al agente](http://technet.microsoft.com/en-us/library/bb125175%28v=exchg.150%29.aspx) mediante el Shell de administración de Exchange. Para obtener más información, vea [crear agentes de transporte de Exchange 2013](creating-transport-agents-for-exchange-2013.md). 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Los agentes de transporte en Exchange](transport-agents-in-exchange-2013.md)    
 - [Referencia de agente de transporte de Exchange 2013](transport-agent-reference-for-exchange-2013.md)   

@@ -10,7 +10,7 @@ ms.openlocfilehash: 0c7d4c6d37b28b6797bdb638930b8582f31ffc5e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763299"
 ---
 # <a name="setting-up-your-exchange-application-development-environment"></a>Configurar el entorno de desarrollo de aplicación de Exchange
@@ -63,7 +63,7 @@ Si utiliza a un proxy generado automáticamente, desea tener un poco familiariza
 > [!NOTE]
 > Si es un programador de .NET Framework, le recomendamos que se va a usar la API administrada de EWS en lugar de servidores proxy generado automáticamente para el desarrollo en EWS. El modelo de objetos de la API administrada de EWS es más fácil de usar que los modelos de objetos de servidor proxy generado automáticamente. Además, la API administrada de EWS implementa la [detección automática](autodiscover-for-exchange.md) e incluye lógica del lado del cliente. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Configurar el entorno de desarrollo de aplicación de Exchange](setting-up-your-exchange-application-development-environment.md)

@@ -10,7 +10,7 @@ ms.openlocfilehash: 077dd923710a1a7f5cad4c822cbbd58ab3603661
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763309"
 ---
 # <a name="verifying-the-results-of-an-ews-or-ews-managed-api-call"></a>Comprobación de los resultados de una llamada de EWS o la API administrada de EWS
@@ -259,7 +259,7 @@ Además, dependiendo de lo que está intentando llevar a cabo en la solicitud, e
     
 - [Tratamiento de errores relacionados con la eliminación de EWS en Exchange](handling-deletion-related-errors-in-ews-in-exchange.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)

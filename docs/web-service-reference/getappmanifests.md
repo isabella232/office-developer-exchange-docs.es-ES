@@ -12,7 +12,7 @@ ms.openlocfilehash: dbc90b88729f7141c0cd8f741a2cd14b48724f5a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764742"
 ---
 # <a name="getappmanifests"></a>GetAppManifests
@@ -44,7 +44,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El elemento **GetAppManifests** es aplicable para los clientes que estén destinados a Exchange Online y versiones de Exchange 2013 a partir de Microsoft Exchange Server. 
   
@@ -57,7 +57,7 @@ El elemento **GetAppManifests** es aplicable para los clientes que estén destin
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

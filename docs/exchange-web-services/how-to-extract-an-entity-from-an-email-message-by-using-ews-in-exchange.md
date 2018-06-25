@@ -10,7 +10,7 @@ ms.openlocfilehash: d3d5c4b756347a4cedede184709884d5ed8f08b4
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763065"
 ---
 # <a name="extract-an-entity-from-an-email-message-by-using-ews-in-exchange"></a>Extraer una entidad de un mensaje de correo electrónico mediante el uso de EWS en Exchange
@@ -26,7 +26,7 @@ Extracción de entidades para las direcciones, los contactos, direcciones de cor
 |**Entidad extraída**|**Propiedad de la API administrada de EWS**|**Elemento EWS**|
 |:-----|:-----|:-----|
 |Direcciones  <br/> |[EntityExtractionResult.Addresses](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.entityextractionresult.addresses%28v=exchg.80%29.aspx) <br/> |[Direcciones](http://msdn.microsoft.com/library/0c1f3fd3-1b78-46ee-8dd4-b2aff51e767e%28Office.15%29.aspx) <br/> |
-|Contacts  <br/> |[EntityExtractionResult.Contacts](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.entityextractionresult.contacts%28v=exchg.80%29.aspx) <br/> |[Contacts](http://msdn.microsoft.com/library/a2c1e833-5f8c-438d-bad7-bb5dcc29ca9e%28Office.15%29.aspx) <br/> |
+|Contactos  <br/> |[EntityExtractionResult.Contacts](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.entityextractionresult.contacts%28v=exchg.80%29.aspx) <br/> |[Contacts](http://msdn.microsoft.com/library/a2c1e833-5f8c-438d-bad7-bb5dcc29ca9e%28Office.15%29.aspx) <br/> |
 |Direcciones de correo electrónico  <br/> |[EntityExtractionResult.EmailAddresses](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.entityextractionresult.emailaddresses%28v=exchg.80%29.aspx) <br/> |[EmailAddresses](http://msdn.microsoft.com/library/2fc4a8e8-5377-4059-8fb4-3fdabfd30fe3%28Office.15%29.aspx) <br/> |
 |Sugerencias de reunión  <br/> |[EntityExtractionResult.MeetingSuggestions](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.entityextractionresult.meetingsuggestions%28v=exchg.80%29.aspx) <br/> |[MeetingSuggestions](http://msdn.microsoft.com/library/c99e9a60-9e38-425d-ad03-47c8917f41da%28Office.15%29.aspx) <br/> |
 |Números de teléfono  <br/> |[EntityExtractionResult.PhoneNumbers](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.entityextractionresult.phonenumbers%28v=exchg.80%29.aspx) <br/> |[PhoneNumbers](http://msdn.microsoft.com/library/9ff6ae98-34a1-47f7-bde5-608251a789f7%28Office.15%29.aspx) <br/> |
@@ -368,7 +368,7 @@ El valor del elemento **ItemId** se acorta para mejorar la legibilidad.
 
 Tenga en cuenta que todas las direcciones, contactos, direcciones de correo electrónico, los números de teléfono, tareas y las direcciones URL se extrajeron según lo previsto. La sugerencia de reunión, sin embargo, es un poco más compleja. Aviso de la hora de inicio y hora de finalización de la sugerencia de reunión son no lo que podría esperarse. La hora de inicio en el correo electrónico era "este viernes a las 7", pero el valor extraído de la hora de inicio es 1/10/0104 2:00:00 PM. Esto es debido a que la hora de inicio y hora de finalización obtenidos por el servidor son fechas codificadas. Para obtener más información acerca de cómo interpretar los valores de **fecha y hora** en sugerencias de reunión, vea [[MS-OXCEXT]: protocolo de objetos de cliente de extensión de mensaje](http://msdn.microsoft.com/en-us/library/hh968601%28v=exchg.80%29.aspx).
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Correo electrónico y EWS en Exchange](email-and-ews-in-exchange.md)
 - [Item.EntityExtractionResult](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.entityextractionresult%28v=exchg.80%29.aspx)    

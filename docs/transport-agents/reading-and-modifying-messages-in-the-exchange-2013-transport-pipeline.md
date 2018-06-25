@@ -12,7 +12,7 @@ ms.openlocfilehash: c2a5d764140b86ddec49d51ec969aab63eb34f19
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763380"
 ---
 # <a name="reading-and-modifying-messages-in-the-exchange-2013-transport-pipeline"></a>Leer y modificar los mensajes en la canalización de transporte de Exchange 2013
@@ -216,7 +216,7 @@ La clase [TnefWriter](https://msdn.microsoft.com/library/Microsoft.Exchange.Data
 
 El espacio de nombres vCard contiene las clases, estructuras y enumeraciones utilizadas para leer y escribir información de contacto contenida en un mensaje de correo electrónico que se encuentra en el formato de datos de vCard. El espacio de nombres contiene un lector de contacto y escritor, una clase de excepción, un lector (propiedad), un lector de parámetro y compatibilidad con enumeraciones que permiten leer datos de vCard asociados con un mensaje de correo electrónico.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Los agentes de transporte en Exchange](transport-agents-in-exchange-2013.md)  
 - [Conceptos de agente en Exchange 2013 de transporte](transport-agent-concepts-in-exchange-2013.md) 

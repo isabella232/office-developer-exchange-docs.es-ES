@@ -16,7 +16,7 @@ ms.openlocfilehash: bf09074bab6dee13e97e8a59a22ae1b19522a5e5
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763940"
 ---
 # <a name="cchksgfilescmaxdbpersg-function"></a>CChkSGFiles.CMaxDbPerSG (función)
@@ -38,7 +38,7 @@ Ninguno.
 
 El número máximo de bases de datos que permite que el servidor de Exchange especificado por grupo de almacenamiento. Dado que los grupos de almacenamiento no forman parte de Exchange 2013, esta función devuelve 1.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Puede usar el objeto **CCheckSGFiles** para validar las bases de datos (y los archivos de registro de transacciones) en un solo grupo de almacenamiento, por lo que el valor devuelto por la función **CMaxDbPerSG** también representa el número máximo de bases de datos que se pueden proteger mediante un instancia de la clase **CCheckSGFiles** . 
   

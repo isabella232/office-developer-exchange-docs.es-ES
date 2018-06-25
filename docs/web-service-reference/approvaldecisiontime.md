@@ -12,7 +12,7 @@ ms.openlocfilehash: 1f5358c6bde32233eaf650e7a0677e74324e557c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763540"
 ---
 # <a name="approvaldecisiontime"></a>ApprovalDecisionTime
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **ApprovalDecisionTime** representa la hora y fecha en que se realizó la decisión de aprobación. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).
   
@@ -59,7 +59,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [ApprovalRequestData](approvalrequestdata.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)

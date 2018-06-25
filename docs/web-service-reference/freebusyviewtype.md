@@ -16,7 +16,7 @@ ms.openlocfilehash: fe965d062f72d99dff7148f4d00b12fd8c4e1366
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764733"
 ---
 # <a name="freebusyviewtype"></a>FreeBusyViewType
@@ -69,7 +69,7 @@ Se requiere un valor de texto. En la siguiente tabla se enumera los valores posi
 |Detallada  <br/> |Representa la información de estado heredado: libre, ocupado, provisional y fuera de la oficina; las horas de inicio y finalización de las citas; y varias propiedades de la cita, como el asunto, ubicación y su importancia. Esta vista solicitada devolverá la cantidad máxima de información para la que el usuario solicitante tiene privilegios. Si la información de libre/ocupado combinada sólo está disponible, como con la información que solicita a los usuarios de un bosque de Microsoft Exchange Server 2003, **MergedOnly** se devolverán. De lo contrario, se devolverán **FreeBusy** o **detallado** .  <br/> Si se especifica **Detailed** para obtener una lista de distribución, se combina la información de libre/ocupado para los miembros de la lista y se devuelve **MergedOnly** .  <br/> |
 |DetailedMerged  <br/> |Representa todas las propiedades en **Detailed** con una secuencia de información de disponibilidad de libre/ocupado combinadas. Si sólo hay información de libre/ocupado combinada está disponible, por ejemplo, si existe el buzón de correo en un equipo que ejecuta Exchange 2003, se devolverán **MergedOnly** . De lo contrario, se devolverán **FreeBusyMerged** o **DetailedMerged** .  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento es necesario si se usa el elemento [FreeBusyView](freebusyview.md) . El tipo de información de disponibilidad devuelta se designa en el elemento [RequestedView](requestedview.md) . El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente. 
   
@@ -123,7 +123,7 @@ En la siguiente tabla se muestra lo que se devuelve para los tipos de vista dife
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

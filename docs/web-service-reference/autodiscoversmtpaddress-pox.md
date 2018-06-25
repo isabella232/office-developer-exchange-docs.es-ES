@@ -11,7 +11,7 @@ ms.openlocfilehash: 6f44fc30fcf96bc059aa9412f5c3c5b8f596d2fc
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763593"
 ---
 # <a name="autodiscoversmtpaddress-pox"></a>AutoDiscoverSMTPAddress (POX)
@@ -52,11 +52,11 @@ Ninguno.
 
 El valor de texto representa la dirección del usuario SMTP que se usa para el proceso de detección automática.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **AutoDiscoverSMTPAddress** es un elemento secundario opcional del elemento de **usuario** . 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

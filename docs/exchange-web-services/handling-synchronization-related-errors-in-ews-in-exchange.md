@@ -10,7 +10,7 @@ ms.openlocfilehash: 6de27d585e467d900941f34b2210877d17205502
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763010"
 ---
 # <a name="handling-synchronization-related-errors-in-ews-in-exchange"></a>Tratamiento de errores relacionados con la sincronización en EWS en Exchange
@@ -28,7 +28,7 @@ Si la aplicación sincroniza los elementos y carpetas, debe controlar los errore
 |ErrorTimeoutExpired  <br/> |Enviar demasiadas solicitudes.  <br/> |Limitar los lotes de 10 elementos por lote para evitar que aparezcan [reducidas](ews-throttling-in-exchange.md).  <br/> |
 |[ServiceResponseException](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponseexception%28v=exchg.80%29.aspx) <br/> |Conectar a EWS cuando el servidor está desconectado o no hay un problema de conectividad.  <br/> |Comprobar la conectividad con el servidor y volver a intentar la solicitud más adelante. Es probable que esto es un error de servicio transitorios o error de red.  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Sincronización de buzón de correo y EWS en Exchange](mailbox-synchronization-and-ews-in-exchange.md)

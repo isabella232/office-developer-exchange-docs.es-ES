@@ -12,7 +12,7 @@ ms.openlocfilehash: d8a513559b7d127559537b43d7c6c0a4db121702
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763417"
 ---
 # <a name="addresslistid"></a>AddressListId
@@ -48,7 +48,7 @@ Ninguno.
 |[DestinationFolderId](destinationfolderid.md) <br/> |Indica la carpeta de destino para copiar y mover las acciones.  <br/> |
 |[MoveToFolder](movetofolder.md) <br/> |Especifica el identificador de la carpeta a la que se mueven los elementos de correo electrónico  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -63,7 +63,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

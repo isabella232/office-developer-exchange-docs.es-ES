@@ -10,7 +10,7 @@ ms.openlocfilehash: 056a1f84c4172b0404975d6fc35f9ecd7395ecdb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763173"
 ---
 # <a name="trace-requests-and-responses-to-troubleshoot-ews-managed-api-apps"></a>Seguimiento de las solicitudes y respuestas para solucionar problemas de aplicaciones de la API administrada de EWS
@@ -73,7 +73,7 @@ class TraceListener : ITraceListener
 
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Empezar a utilizar servicios web de Exchange](start-using-web-services-in-exchange.md)
 - [Administrar los mensajes de error de detección automática](handling-autodiscover-error-messages.md)    

@@ -10,7 +10,7 @@ ms.openlocfilehash: 3851709888e3a1087df02eea5d4d58888ad168e3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763006"
 ---
 # <a name="handling-delegation-related-errors-in-ews-in-exchange"></a>Tratamiento de errores relacionados con la delegación en EWS en Exchange
@@ -33,7 +33,7 @@ Si la aplicación utiliza la delegación o agrega o quita a los delegados, debe 
 |ErrorWrongServerVersionDelegate  <br/> |Realizar una solicitud de un delegado que tiene una versión de servidor diferente que el servidor de buzón de correo de la entidad de seguridad.  <br/> |Uso de un delegado o adición de un delegado cuyo buzón de correo tiene la misma versión de servidor que el propietario del buzón.  <br/> |
 |ErrorMissingEmailAddress  <br/> |Realizar una solicitud con una cuenta de delegado que no tiene un buzón de correo.  <br/> |Adición de un buzón de correo a la cuenta del delegado.  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Acceso delegado y EWS en Exchange](delegate-access-and-ews-in-exchange.md)

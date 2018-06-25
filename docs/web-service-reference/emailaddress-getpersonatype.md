@@ -12,7 +12,7 @@ ms.openlocfilehash: a28a4a61a9719875fe99e1c950bcd3ec3af9ab13
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764333"
 ---
 # <a name="emailaddress-getpersonatype"></a>EmailAddress (GetPersonaType)
@@ -47,7 +47,7 @@ Ninguno.
 
 [GetPersona](getpersona.md)
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).
   
@@ -62,7 +62,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [GetPersona](getpersona.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)

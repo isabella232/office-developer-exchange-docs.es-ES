@@ -16,7 +16,7 @@ ms.openlocfilehash: 7e1808c685cdbaa1e8867aa7425b2cc52218d001
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763955"
 ---
 # <a name="createitem-operation"></a>CreateItem Operation
@@ -35,7 +35,7 @@ Puede usar la operación CreateItem para crear lo siguiente:
     
 - Tareas
     
-- Contacts
+- Contactos
     
 Para obtener más información, vea [operación CreateItem (elemento de calendario)](createitem-operation-calendar-item.md), [operación CreateItem (mensaje de correo electrónico)](createitem-operation-email-message.md), [operación CreateItem (convocatoria de reunión)](createitem-operation-meeting-request.md), [operación CreateItem (tarea)](createitem-operation-task.md)y [operación CreateItem (contacto) ](createitem-operation-contact.md).
   
@@ -62,7 +62,7 @@ La operación CreateItem también es compatible con objetos adicionales de la re
 |Respuesta a la reunión  <br/> |Representa una respuesta a la reunión en el almacén de Exchange.  <br/> |
 |Cancelación de reunión  <br/> |Representa la cancelación de la reunión en el almacén de Exchange.  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

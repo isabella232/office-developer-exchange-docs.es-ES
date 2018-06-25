@@ -10,7 +10,7 @@ ms.openlocfilehash: e70ac499da57faa60b4bcb6082648b23d1a7e791
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763198"
 ---
 # <a name="work-with-exchange-mailbox-items-by-using-ews-in-exchange"></a>Trabajar con los elementos del buzón de Exchange mediante EWS en Exchange
@@ -408,7 +408,7 @@ Para obtener más información acerca de cómo eliminar elementos, vea [Eliminar
 
 Puede mover o copiar elementos entre buzones de correo mediante el uso de las operaciones de [ExportItems](http://msdn.microsoft.com/library/e2846abb-0b16-4732-bbd8-038a674672f6%28Office.15%29.aspx) y [UploadItems](http://msdn.microsoft.com/library/a88cbe99-7968-454d-a545-4f92c330909f%28Office.15%29.aspx) . Para obtener más información, consulte [exportación e importación de elementos mediante el uso de EWS en Exchange](exporting-and-importing-items-by-using-ews-in-exchange.md).
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Las carpetas y elementos de EWS en Exchange](folders-and-items-in-ews-in-exchange.md)    
 - [Trabajar con carpetas mediante EWS en Exchange](how-to-work-with-folders-by-using-ews-in-exchange.md)    

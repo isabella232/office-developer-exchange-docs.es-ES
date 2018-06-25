@@ -16,7 +16,7 @@ ms.openlocfilehash: 63966e95becaab4b3b1e54aa81f1b20a8b09dfd3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764391"
 ---
 # <a name="encryptedsharedfolderdata"></a>EncryptedSharedFolderData
@@ -49,7 +49,7 @@ Ninguno.
 |:-----|:-----|
 |[EncryptedSharedFolderDataCollection](encryptedsharedfolderdatacollection.md) <br/> |Representa una colección de estructuras de datos que un cliente puede usar para autorizar el uso compartido de su calendario o póngase en contacto con datos con otros clientes.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio Virtual de IIS que hospeda los servicios Web Exchange del equipo que ejecuta a Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.
   
@@ -62,7 +62,7 @@ El esquema que describe este elemento se encuentra en el directorio Virtual de I
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetSharingMetadata](getsharingmetadata-operation.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)

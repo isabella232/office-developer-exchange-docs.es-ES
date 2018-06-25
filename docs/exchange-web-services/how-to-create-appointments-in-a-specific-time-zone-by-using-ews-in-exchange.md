@@ -10,7 +10,7 @@ ms.openlocfilehash: 1725498847f89a417b62a06fb8a3109af5c4deb0
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763057"
 ---
 # <a name="create-appointments-in-a-specific-time-zone-by-using-ews-in-exchange"></a>Crear citas en una zona horaria concreta mediante el uso de EWS en Exchange
@@ -225,7 +225,7 @@ Cuando se ven las tres citas creadas por el ejemplo anterior de EWS solicitudes 
 
 Ahora que sabe cómo crear citas en zonas horarias específicas, es posible que desee para [actualizar las zonas horarias en las citas existentes](how-to-update-the-time-zone-for-an-appointment-by-using-ews-in-exchange.md) a otro. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Zonas horarias y EWS en Exchange](time-zones-and-ews-in-exchange.md)

@@ -16,7 +16,7 @@ ms.openlocfilehash: 88adbe566270d759986e9b55afd4827c0513ca43
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763998"
 ---
 # <a name="currentmeetingtime"></a>CurrentMeetingTime
@@ -52,7 +52,7 @@ Ninguno.
 |:-----|:-----|
 |[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Contiene las opciones para obtener información de la sugerencia de reunión.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento no es necesario.
   
@@ -68,7 +68,7 @@ Este elemento no es necesario.
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

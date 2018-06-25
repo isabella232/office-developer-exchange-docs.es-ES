@@ -12,7 +12,7 @@ ms.openlocfilehash: 8ed8095ca8b41e037c2c0dad319c9c4ab99ed2bb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763477"
 ---
 # <a name="actions-ruleactionstype"></a>Acciones (RuleActionsType)
@@ -54,7 +54,7 @@ Ninguno.
 
 [Regla (RuleType)](rule-ruletype.md)
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

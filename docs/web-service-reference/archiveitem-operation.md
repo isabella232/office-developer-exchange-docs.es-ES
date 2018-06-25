@@ -12,7 +12,7 @@ ms.openlocfilehash: 954943acefef8da61e92de5f8857ca023ca4fc9f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763549"
 ---
 # <a name="archiveitem-operation"></a>Operación ArchiveItem
@@ -164,7 +164,7 @@ La respuesta de error SOAP body contiene los siguientes elementos:
     
 Para códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operaciones de EWS en Exchange](ews-operations-in-exchange.md) 
 - [Archivado en EWS en Exchange](http://msdn.microsoft.com/library/78ae179b-ae4f-4f64-911a-e0c70e0fa314%28Office.15%29.aspx)

@@ -13,7 +13,7 @@ ms.openlocfilehash: 7675ef18565d27db62f5662e651e982176001815
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764334"
 ---
 # <a name="emailaddress-pox"></a>EMailAddress (POX)
@@ -50,11 +50,11 @@ Ninguno.
 
 El valor de texto representa la dirección de correo electrónico de un usuario.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento [LegacyDN (POX)](legacydn-pox.md) proporciona un elemento alternativo para una solicitud de detección automática. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

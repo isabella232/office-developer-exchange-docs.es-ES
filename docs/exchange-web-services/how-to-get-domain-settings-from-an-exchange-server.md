@@ -10,7 +10,7 @@ ms.openlocfilehash: 0dd990cc82762936e7827115685ce0178eafb5ae
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763070"
 ---
 # <a name="get-domain-settings-from-an-exchange-server"></a>Obtener la configuración de dominio de un servidor de Exchange
@@ -198,7 +198,7 @@ La configuración de dominio proporciona la información básica que su cliente 
   
 - [Obtener la configuración de usuario de Exchange mediante el uso de detección automática](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Configurar una aplicación de EWS](setting-up-your-ews-application.md)

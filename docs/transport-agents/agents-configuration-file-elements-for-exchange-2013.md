@@ -16,7 +16,7 @@ ms.openlocfilehash: dd58c4bc21a968db2ca5b13e0c53f7058b29f233
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763352"
 ---
 # <a name="agents-configuration-file-elements-for-exchange-2013"></a>Elementos del archivo de configuración de los agentes para Exchange 2013
@@ -87,7 +87,7 @@ El código siguiente muestra la jerarquía de elementos del archivo de configura
     
 - [supervisión](monitoring.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Los agentes de transporte en Exchange](transport-agents-in-exchange-2013.md)
 - [Conceptos de agente en Exchange 2013 de transporte](transport-agent-concepts-in-exchange-2013.md)

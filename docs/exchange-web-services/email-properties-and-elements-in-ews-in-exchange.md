@@ -10,7 +10,7 @@ ms.openlocfilehash: 4866c69213eb8b11c785ab14f0595c45448834d8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763024"
 ---
 # <a name="email-properties-and-elements-in-ews-in-exchange"></a>Correo electrónico de las propiedades y los elementos de EWS en Exchange
@@ -129,7 +129,7 @@ O bien, si está usando EWS, agregue los elementos al elemento [AdditionalProper
 |[TextBody](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.textbody%28v=exchg.80%29.aspx) <br/> |[TextBody](http://msdn.microsoft.com/library/bd0c0bce-3e7c-47c7-af7f-5ee5f5ad9820%28Office.15%29.aspx) <br/> |Solo lectura  <br/> |
 |[UniqueBody](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.uniquebody%28v=exchg.80%29.aspx) <br/> |[UniqueBody](http://msdn.microsoft.com/library/06bc95d7-121c-433b-bd27-c2b0eb8c011f%28Office.15%29.aspx) <br/> |Solo lectura  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Correo electrónico y EWS en Exchange](email-and-ews-in-exchange.md)

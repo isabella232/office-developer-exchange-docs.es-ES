@@ -12,7 +12,7 @@ ms.openlocfilehash: 9c919bac9ac0042890d1c439454b37e6b7c60876
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764741"
 ---
 # <a name="getappmanifests-operation"></a>Operación GetAppManifests
@@ -155,7 +155,7 @@ Los errores devueltos para esta operación están relacionados con un formato no
 
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
     

@@ -12,7 +12,7 @@ ms.openlocfilehash: a64510cacb9923682418ca8a9b203c765a129bdd
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763587"
 ---
 # <a name="attributions-arrayofvalueattributionstype"></a>Atribuciones (ArrayOfValueAttributionsType)
@@ -52,7 +52,7 @@ Ninguno.
 |[StringArrayAttributedValue](stringarrayattributedvalue.md) <br/> |Especifica una instancia de una matriz de datos de cadena de un elemento de la persona.  <br/> |
 |[StringAttributedValue](stringattributedvalue.md) <br/> |Especifica una instancia de una matriz de atributos asociados con un elemento de la persona.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -67,7 +67,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

@@ -13,7 +13,7 @@ ms.openlocfilehash: fd765049aaccd93f2d6269375420f571108825a2
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763565"
 ---
 # <a name="asurl-pox"></a>ASUrl (POX)
@@ -56,7 +56,7 @@ Ninguno.
 
 El valor de texto contiene la dirección URL que se usa para tener acceso al servicio de disponibilidad.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

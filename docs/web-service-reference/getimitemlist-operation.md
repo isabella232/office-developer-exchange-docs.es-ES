@@ -12,7 +12,7 @@ ms.openlocfilehash: 3977b0ad31e819cd973ce261ba3152b3840003b3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764874"
 ---
 # <a name="getimitemlist-operation"></a>Operación GetImItemList
@@ -458,7 +458,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación AddImGroup](addimgroup-operation.md)
     

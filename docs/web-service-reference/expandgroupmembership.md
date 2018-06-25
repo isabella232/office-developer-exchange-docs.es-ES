@@ -12,7 +12,7 @@ ms.openlocfilehash: 11bfcf6893a147c726c94df77f7d9a9dfbaa773e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764491"
 ---
 # <a name="expandgroupmembership"></a>ExpandGroupMembership
@@ -44,7 +44,7 @@ Ninguno.
 
 Un valor de texto de **true** para el elemento **ExpandGroupElement** indica que se expande la pertenencia a grupos. Un valor de **false** indica que la pertenencia al grupo no se expande para mostrar a los miembros del grupo. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

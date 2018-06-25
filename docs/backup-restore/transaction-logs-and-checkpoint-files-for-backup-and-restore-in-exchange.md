@@ -12,7 +12,7 @@ ms.openlocfilehash: 53f128348bb2e8895bc1eefaf62402fa348c81ea
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763004"
 ---
 # <a name="transaction-logs-and-checkpoint-files-for-backup-and-restore-in-exchange"></a>Los registros de transacciones y archivos de punto de comprobación de copia de seguridad y restauración de Exchange
@@ -39,7 +39,7 @@ Periódicamente, el almacén de Exchange comprueba la imagen de la base de datos
 
 Se han escrito una registros del archivo de punto de comprobación que registran las transacciones a los archivos de base de datos en disco. El punto de comprobación es avanzado cuando todas las páginas de la base de datos que se han modificado las entradas de los registros de transacciones se escriben correctamente en el disco. Debido a que el archivo de punto de comprobación registra las transacciones que ya están en la imagen de la base de datos en disco, el almacén de Exchange sólo se necesita reproducir las transacciones que se realizaron después del punto de control. Según el período de tiempo entre las copias de seguridad, esto puede disminuir considerablemente el número de transacciones que se deben reproducir en la base de datos si se produce un error del sistema.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Conceptos de copia de seguridad y restauración para Exchange 2013](backup-and-restore-concepts-for-exchange-2013.md)
 - [Tipos de operaciones de copia de seguridad para Exchange 2013](types-of-backup-operations-for-exchange-2013.md)

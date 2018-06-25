@@ -10,7 +10,7 @@ ms.openlocfilehash: 956c28faba105ecf2a6b1452abe629ea2fc930e1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763044"
 ---
 # <a name="control-access-to-ews-in-exchange"></a>Controlar el acceso a EWS en Exchange
@@ -48,7 +48,7 @@ Vamos a echar un vistazo a algunos escenarios que muestran cómo se puede contro
 |Bloquear un buzón individual de uso de EWS. | `Set-CASMailbox -Identity adam@contoso.com -EwsEnabled:$false`|
 |Permitir que un buzón individual para uso de EWS. | `Set-CASMailbox -Identity adam@contoso.com -EwsEnabled:$true`|
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Configurar una aplicación de EWS](setting-up-your-ews-application.md)    
 - [Controlar el acceso de la aplicación de cliente para EWS en Exchange](controlling-client-application-access-to-ews-in-exchange.md)   

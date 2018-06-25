@@ -10,7 +10,7 @@ ms.openlocfilehash: a3358844f2317c9b0462456ff7d2f38442c98ee3
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763034"
 ---
 # <a name="folders-and-items-in-ews-in-exchange"></a>Las carpetas y elementos de EWS en Exchange
@@ -154,7 +154,7 @@ Los elementos no han cambiado en las versiones anteriores y actual del producto.
     
 - [Exportar e importar elementos mediante el uso de EWS en Exchange](exporting-and-importing-items-by-using-ews-in-exchange.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)   
 - [Empezar a utilizar servicios web de Exchange](start-using-web-services-in-exchange.md)   

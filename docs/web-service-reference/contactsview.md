@@ -16,7 +16,7 @@ ms.openlocfilehash: e578eb4dd0042b8c478e883c7fa54d7f2e984229
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763810"
 ---
 # <a name="contactsview"></a>Contactos
@@ -55,7 +55,7 @@ Ninguno.
 |:-----|:-----|
 |[FindItem](finditem.md) <br/> |Define una solicitud para buscar elementos en un buzón de correo.<br/><br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/FindItem` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -100,7 +100,7 @@ El siguiente ejemplo de una solicitud, muestra cómo buscar los contactos a tres
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación FindItem](finditem-operation.md)
 - [Buscar elementos](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)

@@ -10,7 +10,7 @@ ms.openlocfilehash: 6a04aaf0102c149691a30c2bd2f499e03265bce8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763159"
 ---
 # <a name="pull-notifications-about-mailbox-events-by-using-ews-in-exchange"></a>Notificaciones sobre eventos de buzón de correo de extracción mediante el uso de EWS en Exchange
@@ -134,7 +134,7 @@ Una vez que se recibe un evento desde el servidor, [sincronizar los cambios real
 
 Una vez que se reciban las notificaciones, puede [sincronizar la jerarquía de carpetas](how-to-synchronize-folders-by-using-ews-in-exchange.md) o [sincronizar el contenido de la carpeta que ha cambiado](how-to-synchronize-items-by-using-ews-in-exchange.md).
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Suscripciones de notificación de eventos de buzón de correo y EWS en Exchange](notification-subscriptions-mailbox-events-and-ews-in-exchange.md)

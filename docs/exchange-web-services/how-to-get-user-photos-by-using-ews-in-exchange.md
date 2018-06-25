@@ -10,7 +10,7 @@ ms.openlocfilehash: f0f5cddd41fc563fb9ed38e75b505830a3992411
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763103"
 ---
 # <a name="get-user-photos-by-using-ews-in-exchange"></a>Obtener fotografías de usuario mediante el uso de EWS en Exchange
@@ -357,7 +357,7 @@ using (FileStream file = new FileStream(ContactName + ".jpg", FileMode.Create, S
 
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Las personas y los contactos de EWS en Exchange](people-and-contacts-in-ews-in-exchange.md)    
 - [Resolver nombres ambiguos mediante el uso de EWS en Exchange 2013](how-to-resolve-ambiguous-names-by-using-ews-in-exchange-2013.md)    

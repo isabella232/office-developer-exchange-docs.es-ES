@@ -12,7 +12,7 @@ ms.openlocfilehash: 21156e8a9aa742035f2c988828a182cfd804ccbb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764328"
 ---
 # <a name="email-string"></a>Correo electrónico (cadena)
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento de **correo electrónico** es la dirección de correo electrónico del usuario cuyo foto se solicita en la operación GetUserPhoto. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

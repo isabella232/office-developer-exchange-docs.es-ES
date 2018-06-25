@@ -12,7 +12,7 @@ ms.openlocfilehash: edc3f8ada87c64ccc3eeeb8a7467e7e050a30ce1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764729"
 ---
 # <a name="fromdate"></a>FromDate
@@ -46,7 +46,7 @@ Ninguno.
 
 El valor de texto del elemento **FromDate** es la fecha y hora en que se envió un mensaje. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -59,7 +59,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

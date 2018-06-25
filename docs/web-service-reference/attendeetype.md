@@ -16,7 +16,7 @@ ms.openlocfilehash: a08532ed78296102ee252c1e0c40beee7ca8ea5d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763578"
 ---
 # <a name="attendeetype"></a>AttendeeType
@@ -66,7 +66,7 @@ Un valor de texto es necesario para este elemento. En la siguiente tabla se enum
 |Salón  <br/> |Una entidad de buzón de correo que representa un recurso de sala utilizado para la reunión.  <br/> |
 |Recurso  <br/> |Un recurso, como una TV o proyectores que está programada para su uso en la reunión.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento es un elemento secundario necesario del elemento [MailboxData](mailboxdata.md) . Este elemento sólo puede aparecer una vez en el elemento [MailboxData](mailboxdata.md) . El esquema que describe este elemento se encuentra en el directorio /EWS/ del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente. 
   
@@ -82,7 +82,7 @@ Este elemento es un elemento secundario necesario del elemento [MailboxData](mai
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)

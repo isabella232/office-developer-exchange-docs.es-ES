@@ -12,7 +12,7 @@ ms.openlocfilehash: e2b5b612006c2ac732e5978d8a6126f9567ff17a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763539"
 ---
 # <a name="approvaldecisionmaker"></a>ApprovalDecisionMaker
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **ApprovalDecisionMaker** es un nombre para mostrar. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).
   
@@ -59,7 +59,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [ApprovalRequestData](approvalrequestdata.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)

@@ -16,7 +16,7 @@ ms.openlocfilehash: 8d946aec8ae2c5e6bb4ca3f1d8ee74250262d373
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764519"
 ---
 # <a name="extendedfielduri"></a>ExtendedFieldURI
@@ -116,7 +116,7 @@ Ninguno.
 |[Incluye](contains.md) <br/> |Representa una expresión de búsqueda que determina si una propiedad determinada contiene el valor de cadena constante proporcionada.  <br/> |
 |[FieldOrder](fieldorder.md) <br/> |Representa un solo campo por el que se va a ordenar los resultados y se indica la dirección para la ordenación.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Algunos atributos no se puede usar en combinación con otros atributos. Cualquier solicitud que viene con una combinación no válida de atributos de la propiedad extendida generará un mensaje de error.
   
@@ -178,7 +178,7 @@ El ejemplo siguiente de una solicitud, crea un elemento que tiene dos propiedade
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

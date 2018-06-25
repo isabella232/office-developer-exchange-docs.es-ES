@@ -16,7 +16,7 @@ ms.openlocfilehash: 046a985ae4696616d28a0891ffe0aa8cc0552307
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764470"
 ---
 # <a name="ews-xml-elements-in-exchange"></a>Elementos XML de EWS de Exchange
@@ -40,7 +40,7 @@ El archivo WSDL de EWS, services.wsdl, no se ajustan totalmente para el estánda
   
 El archivo de esquema messages.xsd contiene las definiciones de elemento para los elementos de nivel superior en el cuerpo SOAP. A excepción de los códigos de respuesta de error, la mayoría de las definiciones de messages.xsd es específica de una operación. El esquema types.xsd contiene las definiciones de los encabezados SOAP y todas las definiciones comunes que se comparten en operaciones.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Referencia EWS para Exchange](ews-reference-for-exchange.md)
 - [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)

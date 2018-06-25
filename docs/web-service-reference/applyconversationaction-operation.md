@@ -16,7 +16,7 @@ ms.openlocfilehash: 2a485b84ee87aec2ed807e3f4f0901b83432fa0a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763482"
 ---
 # <a name="applyconversationaction-operation"></a>Operación ApplyConversationAction
@@ -57,7 +57,7 @@ El siguiente ejemplo de una solicitud de **ApplyConversationAction** muestra có
 </soap:Envelope>
 ```
 
-### <a name="remarks"></a>Notas
+### <a name="remarks"></a>Comentarios
 
 Los identificadores de conversación y carpeta se han abreviado para conservar la legibilidad.
   
@@ -97,7 +97,7 @@ En el ejemplo siguiente se muestra una respuesta a una solicitud **ApplyConversa
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación ApplyConversationAction](applyconversationaction-operation.md)
 - [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)

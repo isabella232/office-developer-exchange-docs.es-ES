@@ -12,7 +12,7 @@ ms.openlocfilehash: 588bc0ffe896f286258006f7f123cf09d28b218c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763022"
 ---
 # <a name="types-of-backup-operations-for-exchange-2013"></a>Tipos de operaciones de copia de seguridad para Exchange 2013
@@ -126,7 +126,7 @@ Cuando se establece la enumeración [VSS_BACKUP_TYPE](http://msdn.microsoft.com/
     
 - Un archivo de registro con la ruta de acceso lógica almacén de información de Exchange Server\Microsoft\\< nombre de servidor\>\\< GUID de base de datos\>
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 <a name="bk_AdditionalResources"> </a>
 
 - [Crear copia de seguridad y restauración de aplicaciones para Exchange 2013](build-backup-and-restore-applications-for-exchange-2013.md)

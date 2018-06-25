@@ -16,7 +16,7 @@ ms.openlocfilehash: 093d2f28135c6077b6cea488591573af0182934b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763388"
 ---
 # <a name="actions"></a>Acciones
@@ -58,7 +58,7 @@ Ninguno.
 |:-----|:-----|
 |[AssignCategories](assigncategories.md) <br/> |Representa las categorías que están marcadas en mensajes de correo electrónico.  <br/> |
 |[CopyToFolder](copytofolder.md) <br/> |Identifica el identificador de la carpeta que se copiarán los elementos de correo electrónico a.  <br/> |
-|[Delete](delete.md) <br/> |Indica si los mensajes se mueven a la carpeta Elementos eliminados.  <br/> |
+|[Eliminar](delete.md) <br/> |Indica si los mensajes se mueven a la carpeta Elementos eliminados.  <br/> |
 |[ForwardAsAttachmentToRecipients](forwardasattachmenttorecipients.md) <br/> |Indica las direcciones de correo electrónico a la que los mensajes deben ser reenviado como datos adjuntos.  <br/> |
 |[ForwardToRecipients](forwardtorecipients.md) <br/> |Indica las direcciones de correo electrónico a la que los mensajes se se transfieran.  <br/> |
 |[MarkImportance](markimportance.md) <br/> |Especifica la importancia que se mostrará en los mensajes.  <br/> |
@@ -80,7 +80,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -93,7 +93,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Condiciones](conditions.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)

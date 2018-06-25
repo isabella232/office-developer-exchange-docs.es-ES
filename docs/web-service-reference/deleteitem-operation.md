@@ -16,7 +16,7 @@ ms.openlocfilehash: 87d7853daa5db0cd87b3f6469c228a584b4d9caf
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764101"
 ---
 # <a name="deleteitem-operation"></a>Operación DeleteItem
@@ -163,7 +163,7 @@ En la respuesta de error, se usan los siguientes elementos:
     
 Para buscar otras opciones para el mensaje de respuesta de error de la operación **DeleteItem** , explore la jerarquía de esquema. Comenzar en el elemento de [DeleteItemResponse](deleteitemresponse.md) . 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 - [Eliminación de contactos](http://msdn.microsoft.com/library/fcc3dc84-cd3e-455e-a1a7-ae6921c9b588%28Office.15%29.aspx)  

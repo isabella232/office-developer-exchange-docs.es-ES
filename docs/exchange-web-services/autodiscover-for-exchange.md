@@ -10,7 +10,7 @@ ms.openlocfilehash: f56717eaced5db9028c556c6c2d9aa7794f4988e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763019"
 ---
 # <a name="autodiscover-for-exchange"></a>Detección automática de Exchange
@@ -124,7 +124,7 @@ Puede acceder a Detección automática con el servicio web POX o SOAP. El métod
     
 - [Mejorar el rendimiento cuando se utiliza la detección automática de Exchange](improving-performance-when-using-autodiscover-for-exchange.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Empezar a utilizar servicios web de Exchange](start-using-web-services-in-exchange.md)    
 - [Exchange 2013: Obtener la configuración de usuario con Detección automática ](http://code.msdn.microsoft.com/Exchange-2013-Get-user-7e22c86e)

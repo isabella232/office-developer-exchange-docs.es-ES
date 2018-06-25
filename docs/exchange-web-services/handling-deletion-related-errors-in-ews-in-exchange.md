@@ -10,7 +10,7 @@ ms.openlocfilehash: 0dc16c3350bb75fb1e91650f0a0f0b7423727eeb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763003"
 ---
 # <a name="handling-deletion-related-errors-in-ews-in-exchange"></a>Tratamiento de errores relacionados con la eliminación de EWS en Exchange
@@ -32,7 +32,7 @@ Si su aplicación [elimina los elementos y carpetas](deleting-items-by-using-ews
 |ErrorItemNotFound  <br/> |Obtener acceso a un elemento eliminado de forma permanente.  <br/> |Quitar referencias a un elemento cuando se elimina de la tienda. Si se recupera un elemento, asegúrese de que restablecer las referencias necesarias al cliente.  <br/> |
 |ErrorSendMeetingCancellationsRequired  <br/> |Eliminar un elemento de calendario sin especificar si se deben enviar cancelaciones de reunión.  <br/> |Especifica que cancelaciones de reunión deben o no se deben enviar.  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Eliminación de elementos con EWS en Exchange](deleting-items-by-using-ews-in-exchange.md)

@@ -12,7 +12,7 @@ ms.openlocfilehash: 5c07941e0a79394bbdaa1a1f62b20adedfe7a9bf
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764494"
 ---
 # <a name="exportallowed"></a>ExportAllowed
@@ -46,7 +46,7 @@ Ninguno.
 
 Un valor de texto de **true** para el elemento **ExportAllowed** indica que se permite la exportación. Un valor de **false** indica que no se permite la exportación. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento es opcional.
   
@@ -63,7 +63,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

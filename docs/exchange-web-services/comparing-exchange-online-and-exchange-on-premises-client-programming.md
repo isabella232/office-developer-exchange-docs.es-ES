@@ -10,7 +10,7 @@ ms.openlocfilehash: 87c6ee476e06b50c339901bf61020b0fc98f8486
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763021"
 ---
 # <a name="comparing-exchange-online-and-exchange-on-premises-client-programming"></a>Comparación de Exchange Online y la programación de cliente de Exchange local
@@ -127,7 +127,7 @@ Puede hacer lo siguiente cuando los destinatarios de Exchange local, pero no Exc
     
 - Instalar [los agentes de transporte personalizados](../transport-agents/transport-agents-in-exchange-2013.md) que pueden afectar a la entrega y el contenido de los mensajes que cree y envíe con EWS y otros clientes. 
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Introducción al diseño de EWS cliente de Exchange](ews-client-design-overview-for-exchange.md)
 - [Comparación de Exchange Online y Exchange Server 2013](http://blogs.technet.com/b/exchange/archive/2012/09/19/comparing-exchange-online-and-exchange-server-2013.aspx)  

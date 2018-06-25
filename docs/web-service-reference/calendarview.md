@@ -16,7 +16,7 @@ ms.openlocfilehash: 79b5ad268a8013092c1122c99bdcd10d876abf2c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763717"
 ---
 # <a name="calendarview"></a>CalendarView
@@ -55,7 +55,7 @@ Ninguno.
 |:-----|:-----|
 |[FindItem](finditem.md) <br/> |Define una solicitud para buscar elementos en un buzón de correo.<br/><br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/FindItem` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Si el elemento **CalendarView** está especificado en una solicitud FindItem, el servicio Web devuelve una lista de elementos de calendario único y las apariciones de los elementos de calendario periódicos dentro del intervalo especificado por **StartDate** y **EndDate**.
   
@@ -201,7 +201,7 @@ En el ejemplo siguiente se muestra una solicitud FindItem. Una solicitud correct
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación FindItem](finditem-operation.md)
 - [Buscar elementos](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)

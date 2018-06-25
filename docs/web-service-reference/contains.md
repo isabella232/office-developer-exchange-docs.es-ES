@@ -16,7 +16,7 @@ ms.openlocfilehash: 083efdf32cd32bea6964361b5b558480aa937280
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763816"
 ---
 # <a name="contains"></a>Contains
@@ -83,7 +83,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 |[And](and.md) <br/> |Representa una expresión de búsqueda que le permite realizar una operación de tipo Boolean y entre dos o más expresiones de búsqueda. El resultado de la operación And es **true** si se **cumplen**todas las expresiones de búsqueda incluidas en el y.  <br/> |
 |[Or](or.md) <br/> |Representa una expresión de búsqueda que se realiza una operación OR lógica en la expresión de búsqueda que contiene. El elemento [o](or.md) devolverá **true** si cualquiera de sus elementos secundarios que devuelva **true**.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Los atributos se utilizan para determinar cómo se comparan los elementos.
   
@@ -98,7 +98,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

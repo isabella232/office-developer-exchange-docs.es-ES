@@ -10,7 +10,7 @@ ms.openlocfilehash: 85e166ba57d74c74382b257d01d9bff8f44bade1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763108"
 ---
 # <a name="manage-inbox-rules-by-using-ews-in-exchange"></a>Administrar reglas de bandeja de entrada mediante el uso de EWS en Exchange
@@ -905,7 +905,7 @@ private static FolderId GetFolderIdByName(ExchangeService service, WellKnownFold
 }
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Administración de la Bandeja de entrada y EWS en Exchange](inbox-management-and-ews-in-exchange.md)

@@ -16,7 +16,7 @@ ms.openlocfilehash: 86c8c61f22d8d620a9139280b2a43ed7fec4727d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763633"
 ---
 # <a name="bitmask"></a>Máscara de bits
@@ -49,7 +49,7 @@ Ninguno.
 |:-----|:-----|
 |[Excluye](excludes.md) <br/> |Realiza una máscara de bit a bit de las propiedades.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Valores hexadecimales deben tener un prefijo de 0 x o 0 X. Si este prefijo no existe, el valor se supone que para ser un número decimal.
   
@@ -64,7 +64,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

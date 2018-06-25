@@ -10,7 +10,7 @@ ms.openlocfilehash: f09babfcc420d4cbc563ed6605ba555fd9f8c7e9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763166"
 ---
 # <a name="send-email-messages-by-using-ews-in-exchange"></a>Enviar mensajes de correo electrónico mediante el uso de EWS en Exchange
@@ -289,7 +289,7 @@ En el ejemplo de código siguiente se muestra cómo usar la operación [CreateIt
 
 El servidor responde a la solicitud **CreateItem** con un mensaje de [CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) **NoError**, lo que indica que el correo electrónico se ha creado correctamente y la [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) de la recientemente mensaje de creación. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Correo electrónico y EWS en Exchange](email-and-ews-in-exchange.md)

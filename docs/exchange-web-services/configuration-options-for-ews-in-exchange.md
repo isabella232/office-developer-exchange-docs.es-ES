@@ -10,7 +10,7 @@ ms.openlocfilehash: d6c2866abf3dc16c77d84355afb9d86b0a9934c6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762998"
 ---
 # <a name="configuration-options-for-ews-in-exchange"></a>Opciones de configuración para EWS en Exchange
@@ -57,7 +57,7 @@ Mayoría de los escenarios de aplicación de cliente no requiere los cambios rea
 |Limitación  <br/> |No  <br/> |[La configuración de limitación](ews-throttling-in-exchange.md) <br/> |
 |Filtrado de agente de usuario  <br/> |Sí  <br/> |[Filtrado de agente de usuario](how-to-control-access-to-ews-in-exchange.md) <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Obtener la información de configuración de servicio mediante el uso de EWS en Exchange](how-to-get-service-configuration-information-by-using-ews-in-exchange.md)
 - [Introducción al diseño de EWS cliente de Exchange](ews-client-design-overview-for-exchange.md)   

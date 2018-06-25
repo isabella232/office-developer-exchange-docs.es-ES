@@ -12,7 +12,7 @@ ms.openlocfilehash: d1683f99fbd233c1b878eb86d529b58ea1ebd8c9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763307"
 ---
 # <a name="exchange-management-shell-namespaces"></a>Espacios de nombres de Shell de administración de Exchange
@@ -137,7 +137,7 @@ El Shell de administración de Exchange contiene los siguientes espacios de nomb
     
 - [Microsoft.Exchange.WorkloadManagement](https://msdn.microsoft.com/library/Microsoft.Exchange.WorkloadManagement.aspx)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Shell de administración de Exchange](exchange-management-shell.md)  
 - [Creación de herramientas de Shell de administración de Exchange](create-exchange-management-shell-tools.md) 

@@ -10,7 +10,7 @@ ms.openlocfilehash: e84a563bb094a2fe03e08f8e1a81b2b054d45850
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763067"
 ---
 # <a name="get-service-configuration-information-by-using-ews-in-exchange"></a>Obtener la información de configuración de servicio mediante el uso de EWS en Exchange
@@ -103,7 +103,7 @@ Después de solicitar información de configuración de servicio, use la [clase 
     
 - Si está habilitada la mensajería unificada, [Obtenga información sobre cómo reproducir los elementos del buzón](http://blogs.msdn.com/b/exchangedev/archive/2009/11/05/play-exchange-2010-mailbox-items-on-your-phone-by-using-the-ews-managed-api.aspx) a través de su teléfono. 
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Opciones de configuración para EWS en Exchange](configuration-options-for-ews-in-exchange.md)    
 - [Configurar una aplicación de EWS](setting-up-your-ews-application.md)    

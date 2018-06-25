@@ -10,7 +10,7 @@ ms.openlocfilehash: dd8e85547666ba0bf3a1a38775260268594f2a8b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763018"
 ---
 # <a name="ews-schema-versions-in-exchange"></a>Versiones de esquema EWS en Exchange
@@ -98,7 +98,7 @@ Antes de actualiza el esquema EWS para una nueva versión, la versión actual de
   
 El nombre del archivo original, a continuación, representa el esquema más reciente. Todas las características nuevas se agregan al esquema más reciente, con la excepción de las actualizaciones y revisiones a las versiones anteriores del esquema. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Versiones de esquema EWS en Exchange](ews-schema-versions-in-exchange.md) 
 - [Detección automática de Exchange](autodiscover-for-exchange.md) 

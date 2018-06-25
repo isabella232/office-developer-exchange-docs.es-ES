@@ -16,7 +16,7 @@ ms.openlocfilehash: c56c3be746138cec251836fcb61ee3738d168869
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764482"
 ---
 # <a name="ews-operations-in-exchange"></a>Operaciones de EWS en Exchange
@@ -339,7 +339,7 @@ En la siguiente tabla se enumera las operaciones de configuración de usuario.
 |[Operación GetUserConfiguration](getuserconfiguration-operation.md) <br/> |Exchange 2010  <br/> |
 |[Operación UpdateUserConfiguration](updateuserconfiguration-operation.md) <br/> |Exchange 2010  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Explore la API administrada de EWS, EWS y servicios web de Exchange](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)
 - [Empezar a utilizar servicios web de Exchange](../exchange-web-services/start-using-web-services-in-exchange.md)

@@ -16,14 +16,14 @@ ms.openlocfilehash: c2174dd806b922e640ef7afcab32b98c67c65b41
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763949"
 ---
 # <a name="createitem-operation-calendar-item"></a>Operación CreateItem (elemento de calendario)
 
 La operación CreateItem crea los elementos de calendario en el almacén de Exchange.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La operación CreateItem crea citas, reuniones y las convocatorias de reunión. Si se crea un elemento de calendario sin asistentes, se considera una cita. Si se especifican los asistentes, el elemento de calendario es una reunión. Cuando se crea una reunión mediante el uso de la operación CreateItem, las convocatorias de reunión se envían automáticamente a los asistentes identificados si se establece el atributo SendMeetingInvitations para enviar las convocatorias de reunión.
   
@@ -181,7 +181,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [ItemId](itemid.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -10,7 +10,7 @@ ms.openlocfilehash: 2c92b492d9b51d0a5ac3140af22e5527e7bf19be
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763175"
 ---
 # <a name="process-calendar-items-in-batches-in-exchange"></a>Procesar por lotes los elementos del calendario en Exchange
@@ -831,7 +831,7 @@ Para EWS, para comprobar el éxito de un proceso por lotes, consulte el atributo
 
 El atributo **ResponseClass** se establece en **Error** o **éxito** si el elemento de calendario se procesó correctamente si no se procesó correctamente. Para los elementos del calendario, no se producirá una **Advertencia** durante el procesamiento por lotes. Si la **ResponseClass** es **correcto**, el elemento [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) que sigue también siempre se establece en **NoError**. Si la **ResponseClass** es **Error**, debe comprobar los valores de los elementos [MessageText](http://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx), **ResponseCode**y [MessageXml](http://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx) para determinar la causa del problema. [DescriptiveLinkKey](http://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx) se utiliza actualmente. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)

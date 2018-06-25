@@ -12,7 +12,7 @@ ms.openlocfilehash: 97c34d7df590d20513e8f1ad476d62f16815a42b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764648"
 ---
 # <a name="findpeople-operation"></a>Operación FindPeople
@@ -204,7 +204,7 @@ La respuesta SOAP body contiene los siguientes elementos:
 
 Para los códigos de error que son genéricos de EWS, consulte [ResponseCode](responsecode.md).
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Las personas y los contactos de EWS en Exchange](http://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     

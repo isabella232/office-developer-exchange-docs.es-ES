@@ -10,7 +10,7 @@ ms.openlocfilehash: 16f0604a16785c34dd04bdabedeedd331668a479
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763140"
 ---
 # <a name="move-and-copy-email-messages-by-using-ews-in-exchange"></a>Mover y copiar los mensajes de correo electrónico mediante el uso de EWS en Exchange
@@ -138,7 +138,7 @@ También es la solicitud XML que se envía por la API administrada de EWS al lla
 
 El servidor responde a la solicitud de **CopyItem** con un mensaje de [CopyItemResponse](http://msdn.microsoft.com/library/ae402bc1-4589-45e0-a929-f368c916a7e4%28Office.15%29.aspx) que incluye un valor [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, lo que indica que el mensaje de correo electrónico se ha copiado correctamente. La respuesta incluye también la **ItemId** para el mensaje de correo electrónico en la nueva carpeta, lo que es importante para almacenar porque la **ItemId** es distinto en la nueva carpeta. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Correo electrónico y EWS en Exchange](email-and-ews-in-exchange.md)

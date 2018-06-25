@@ -10,7 +10,7 @@ ms.openlocfilehash: c09c96eff455b7584b084e71b937853abfde731d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763126"
 ---
 # <a name="import-items-by-using-ews-in-exchange"></a>Importar elementos mediante el uso de EWS en Exchange
@@ -183,7 +183,7 @@ Puede usar la operación de EWS [CreateItem](http://msdn.microsoft.com/library/7
 
 Después de importar elementos en un buzón de correo, es posible que desee [crear una carpeta personalizada para almacenar los elementos importados](how-to-work-with-folders-by-using-ews-in-exchange.md)o [sincronizar los elementos del cliente y buzón de correo](mailbox-synchronization-and-ews-in-exchange.md).
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Exportación e importación de elementos mediante el uso de EWS en Exchange](exporting-and-importing-items-by-using-ews-in-exchange.md)

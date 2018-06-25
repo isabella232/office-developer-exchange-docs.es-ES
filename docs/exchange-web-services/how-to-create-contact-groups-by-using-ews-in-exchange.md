@@ -10,7 +10,7 @@ ms.openlocfilehash: b3357f24e07a9c1b3b37ccb63b0f4f0d0a1d6fcf
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763050"
 ---
 # <a name="create-contact-groups-by-using-ews-in-exchange"></a>Crear grupos de contactos mediante el uso de EWS en Exchange
@@ -97,7 +97,7 @@ El siguiente es un ejemplo de una respuesta XML correcta para la solicitud. Teng
    </CreateItemResponse>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Grupos de distribución y EWS en Exchange](distribution-groups-and-ews-in-exchange.md)

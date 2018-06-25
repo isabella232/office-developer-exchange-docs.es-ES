@@ -16,7 +16,7 @@ ms.openlocfilehash: 8aa5c0849122f5ca83485459fce5d0fea449c974
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763572"
 ---
 # <a name="attachments"></a>Datos adjuntos
@@ -68,7 +68,7 @@ Ninguno.
 |[CreateAttachmentResponseMessage](createattachmentresponsemessage.md) <br/> |Contiene el estado y el resultado de una única solicitud CreateAttachment.  <br/> |
 |[GetAttachmentResponseMessage](getattachmentresponsemessage.md) <br/> |Contiene el estado y el resultado de una solicitud de GetAttachment.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Los elementos de **los datos adjuntos** tienen los mismos elementos secundarios pero se basan en los distintos tipos: **ArrayOfAttachmentsType** y **NonEmptyArrayOfAttachmentsType**. Los tipos de definición si se requiere un elemento secundario. El **ArrayOfAttachmentsType** solo se usa en el mensaje de respuesta. También es importante tener en cuenta que estos elementos se producen en los mensajes y tipos de espacios de nombres. 
   
@@ -83,7 +83,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

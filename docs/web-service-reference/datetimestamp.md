@@ -16,7 +16,7 @@ ms.openlocfilehash: 6b81057b0e07d0607aba6f52d54220debc38b0ff
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764049"
 ---
 # <a name="datetimestamp"></a>DateTimeStamp
@@ -64,7 +64,7 @@ El valor de texto representa un valor de fecha y hora que identifica una ocurren
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

@@ -12,7 +12,7 @@ ms.openlocfilehash: 9d9fb9cc04bcbb5846162c77c852defa51dff98b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764788"
 ---
 # <a name="getconversationitems-operation"></a>GetConversationItems operation
@@ -259,7 +259,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
     

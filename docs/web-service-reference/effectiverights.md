@@ -16,7 +16,7 @@ ms.openlocfilehash: 610d9e214a8de648ece667799bb5e67dfcc358f7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764320"
 ---
 # <a name="effectiverights"></a>EffectiveRights
@@ -51,7 +51,7 @@ Ninguno.
 |[CreateAssociated](createassociated.md) <br/> |Indica si un cliente puede crear una tabla de contenido asociada. Esta propiedad sólo se utiliza en objetos folder.  <br/> |
 |[CreateContents](createcontents.md) <br/> |Indica si un cliente puede crear una tabla de contenido. Esta propiedad sólo se utiliza en objetos folder.  <br/> |
 |[CreateHierarchy](createhierarchy.md) <br/> |Indica si un cliente puede crear una tabla de jerarquía. Esta propiedad sólo se utiliza en objetos folder.  <br/> |
-|[Delete](delete.md) <br/> |Indica si un cliente puede eliminar una carpeta o un elemento.  <br/> |
+|[Eliminar](delete.md) <br/> |Indica si un cliente puede eliminar una carpeta o un elemento.  <br/> |
 |[Modificar](modify.md) <br/> |Indica si un cliente puede modificar una carpeta o un elemento.  <br/> |
 |[Read](read.md) <br/> |Indica si un cliente puede leer una carpeta o un elemento.  <br/> |
 |[ViewPrivateItems](viewprivateitems.md) <br/> |Indica si se puede ver un elemento privado.  <br/> |
@@ -81,7 +81,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 **EffectiveRights** se admite en las respuestas GetFolder, GetItem, FindFolder, FindItem, SyncFolderHierarchy y SyncFolderItems. La propiedad **EffectiveRights** se expone en la forma **AllProperties** para carpetas y elementos. 
   
@@ -98,7 +98,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 - [Establecimiento de permisos de nivel de carpeta](http://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)

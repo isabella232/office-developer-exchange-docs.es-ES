@@ -12,7 +12,7 @@ ms.openlocfilehash: 6f64330a11e372bffbea2fcd88bcfa0231ec0f28
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763314"
 ---
 # <a name="get-a-list-of-mail-users-by-using-the-exchange-management-shell"></a>Obtener una lista de usuarios de correo mediante el Shell de administración de Exchange
@@ -251,7 +251,7 @@ End Function
 
 El método **GetUserInformation** no devolverá más de _recuento de_ usuarios del buzón. Para simplificar el código de este ejemplo, el método no filtrar o limitar en caso contrario, los usuarios de buzón de correo que se devuelven. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Creación de herramientas de Shell de administración de Exchange](create-exchange-management-shell-tools.md)   
 - [Usar la respuesta de cmdlet del Shell de administración de Exchange](how-to-use-the-exchange-management-shell-cmdlet-response.md)

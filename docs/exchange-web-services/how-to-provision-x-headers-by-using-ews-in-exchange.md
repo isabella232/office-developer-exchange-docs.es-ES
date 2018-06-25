@@ -10,7 +10,7 @@ ms.openlocfilehash: de572764921da432cfa203b3dcf166d1d34dd0cd
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763157"
 ---
 # <a name="provision-x-headers-by-using-ews-in-exchange"></a>Encabezados x de aprovisionamiento mediante el uso de EWS en Exchange
@@ -110,7 +110,7 @@ La primera vez que aprovisione un encabezado x en Exchange Online, Exchange Onli
 
 En este artículo se muestra cómo aprovisionar un encabezado x para un solo buzón mediante el envío de un correo electrónico a un usuario. También puede aprovisionar un encabezado x para muchos usuarios mediante el [envío de un correo electrónico de lote a una lista de destinatarios](how-to-process-email-messages-in-batches-by-using-ews-in-exchange.md) en la organización el autor de la llamada. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Propiedades y propiedades extendidas de EWS en Exchange](properties-and-extended-properties-in-ews-in-exchange.md)

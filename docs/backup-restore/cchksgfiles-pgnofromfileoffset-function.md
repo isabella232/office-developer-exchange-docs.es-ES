@@ -16,7 +16,7 @@ ms.openlocfilehash: d42ba7c8178c6fccdddec0b5da88a972f51184c6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762985"
 ---
 # <a name="cchksgfilespgnofromfileoffset-function"></a>CChkSGFiles.PgnoFromFileOffset (función)
@@ -43,7 +43,7 @@ Parámetro de entrada. Especifica el desplazamiento en un archivo de base de dat
 
 Número de página lógica del archivo de base de datos que incluye el desplazamiento especificado.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Si el parámetro **ibFileOffset** no es válido, la función **PgnoFromFileOffset** devuelve 0 (cero). 
   

@@ -11,7 +11,7 @@ ms.openlocfilehash: 97c33e1fed4adc8a9e8542d85e67c942118f6096
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764472"
 ---
 # <a name="ewspartnerurl-pox"></a>EwsPartnerUrl (POX)
@@ -54,11 +54,11 @@ Ninguno.
 
 El valor de texto representa la dirección URL del extremo de EWS para el usuario.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **EwsPartnerUrl** es un elemento secundario opcional del elemento **Protocol** . Es equivalente al elemento [EwsUrl (POX)](ewsurl-pox.md) . 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

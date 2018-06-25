@@ -16,7 +16,7 @@ ms.openlocfilehash: d403eb5ca15623d3a973f7b224dbcde5529cf1bc
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763915"
 ---
 # <a name="createattachment"></a>CreateAttachment
@@ -50,7 +50,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Un elemento de los datos adjuntos no existe como un elemento del almacén. Sólo existe como datos adjuntos a un elemento o en otro objeto attachment. Datos adjuntos de elemento sólo se pueden recuperar mediante el uso de la solicitud de [GetAttachment](getattachment.md) . 
   
@@ -110,7 +110,7 @@ En el ejemplo siguiente se muestra cómo crear y adjuntar un elemento a otro ele
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

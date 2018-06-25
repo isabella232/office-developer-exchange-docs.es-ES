@@ -10,7 +10,7 @@ ms.openlocfilehash: 0416ed1889a7c235a35cb49290d39d3ccfc28c49
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763012"
 ---
 # <a name="delegate-access-and-ews-in-exchange"></a>Acceso delegado y EWS en Exchange
@@ -43,13 +43,13 @@ Tenga en cuenta que también puede usar [Outlook](http://office.microsoft.com/en
 
 Acceso delegado permite a los usuarios tener acceso a algunas o todas las carpetas del propietario del buzón y actuar en nombre del propietario del buzón de correo. El propietario del buzón puede ser un usuario o un recurso, como una sala de conferencias. Por ejemplo, un recepcionista puede tener permisos de delegado a la carpeta del calendario de una sala de conferencias, para administrar las solicitudes de reserva. Puede usar la API administrada de EWS o EWS para habilitar el propietario del buzón o un administrador agregar un delegado, para especificar qué carpetas, el delegado puede tener acceso y, a continuación, especifique los permisos para esa carpeta. Los delegados se pueden conceder acceso a las siguientes carpetas: 
   
-- Calendar
+- Calendario
     
 - Tareas
     
 - Bandeja de entrada
     
-- Contacts
+- Contactos
     
 - Notas
     
@@ -159,7 +159,7 @@ Si el identificador de un elemento se ha recuperado por la operación [FindItem]
     
 - [Tratamiento de errores relacionados con la delegación en EWS en Exchange](handling-delegation-related-errors-in-ews-in-exchange.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)

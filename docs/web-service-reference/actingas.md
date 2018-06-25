@@ -16,7 +16,7 @@ ms.openlocfilehash: 9c007ed45f85dba265261dd79a6fd846dbd9d2f9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764568"
 ---
 # <a name="actingas"></a>ActingAs
@@ -52,7 +52,7 @@ Ninguno.
 |:-----|:-----|
 |[GetServiceConfiguration](getserviceconfiguration.md) <br/> |Define una solicitud **GetServiceConfiguration** .  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento es opcional. Si este elemento no está presente, el usuario autenticado se supone que el remitente. El elemento **ActingAs** debe incluirse para solicitar sugerencias de remitente. Puede devolver un error de **ErrorInvalidArgument** en una respuesta si el elemento **ActingAs** falta, no incluye un tipo de distribución, no incluye una dirección de correo electrónico, contiene una dirección de correo electrónico no válida, no se resuelve a un usuario en Active Directory Servicios de dominio (AD DS), o se resuelve a varios usuarios en AD DS. 
   
@@ -67,7 +67,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: a407019063b34970e883a00ca4f4d730935d7cba
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762984"
 ---
 # <a name="cchksgfileserrcheckdbheaders-function"></a>CChkSGFiles.ErrCheckDbHeaders (función)
@@ -58,7 +58,7 @@ Parámetro de entrada opcional. Este valor está reservado para uso futuro. El v
 
 Esta función devuelve un código de error de la [enumeración CChkSGFiles.ERR](cchksgfiles-err-enumeration.md).
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 **ErrCheckDbHeaders** comprueba que todas las bases de datos registrados con **ErrInit** tienen el mismo registro firma y base de datos de tamaño de página. También puede usar el valor del parámetro **genMin** más bajo y el valor del parámetro **genMax** más alto para determinar el conjunto de archivos de registro que son necesarios para poner todos los de las bases de datos registrados en un estado de cierre limpio. 
   

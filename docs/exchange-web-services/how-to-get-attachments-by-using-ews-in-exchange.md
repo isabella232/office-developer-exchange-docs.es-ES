@@ -10,7 +10,7 @@ ms.openlocfilehash: 2e1b3cfb346abd068695f66b01f9e34f1f5ff03f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763071"
 ---
 # <a name="get-attachments-by-using-ews-in-exchange"></a>Obtener datos adjuntos mediante el uso de EWS en Exchange
@@ -325,7 +325,7 @@ public static void SaveEmailAttachment(ExchangeService service, ItemId itemId)
 }
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Los datos adjuntos y EWS en Exchange](attachments-and-ews-in-exchange.md)

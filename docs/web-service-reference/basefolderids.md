@@ -16,7 +16,7 @@ ms.openlocfilehash: 960e4d9c1d6eb37bf988bf163e696cbba3e1ef6f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763598"
 ---
 # <a name="basefolderids"></a>BaseFolderIds
@@ -52,7 +52,7 @@ Ninguno.
 |:-----|:-----|
 |[SearchParameters](searchparameters.md) <br/> |Representa los parámetros que definen una carpeta de búsqueda.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **BaseFolderIds** debe contener al menos un elemento [FolderId](folderid.md) o [DistinguishedFolderId](distinguishedfolderid.md) . 
   
@@ -67,7 +67,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

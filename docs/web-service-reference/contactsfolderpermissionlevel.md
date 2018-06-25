@@ -16,7 +16,7 @@ ms.openlocfilehash: 4b6a109c3a38a20dc5d6f611607b16ada0e4e46b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763800"
 ---
 # <a name="contactsfolderpermissionlevel"></a>ContactsFolderPermissionLevel
@@ -62,7 +62,7 @@ En la siguiente tabla se enumera los valores de texto que representan los nivele
 |Editor  <br/> |El usuario delegado puede leer, crear y modificar elementos en la carpeta Contactos.  <br/> |
 |Personalizado  <br/> |El usuario delegado tiene permisos de acceso personalizados a la carpeta Contactos.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -75,7 +75,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

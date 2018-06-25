@@ -10,7 +10,7 @@ ms.openlocfilehash: 57ccef48a7553bcc06e3b3ae940b376b8555ef84
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763049"
 ---
 # <a name="configure-impersonation"></a>Configurar la suplantación
@@ -77,7 +77,7 @@ Antes de configurar la suplantación, necesita:
 
 Después de que el administrador conceda los permisos de suplantación, puede usar la cuenta de servicio para realizar llamadas con las cuentas de otros usuarios. Puede comprobar las asignaciones de roles mediante el cmdlet [Get-ManagementRoleAssignment](http://msdn.microsoft.com/library/a3a6ee46-061b-444a-8639-43a416309445.aspx). 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Suplantación y EWS en Exchange](impersonation-and-ews-in-exchange.md)
 - [Rol ApplicationImpersonation](http://technet.microsoft.com/en-us/library/dd776119%28v=exchg.150%29.aspx)   

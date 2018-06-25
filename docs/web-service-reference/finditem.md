@@ -16,7 +16,7 @@ ms.openlocfilehash: 9831b034be7deb0cf6e756bb585bdbe34b370afd
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764635"
 ---
 # <a name="finditem"></a>FindItem
@@ -74,7 +74,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Solo uno de los [IndexedPageItemView](indexedpageitemview.md), [FractionalPageItemView](fractionalpageitemview.md), [CalendarView](calendarview.md)o elementos de [contactos](contactsview.md) puede incluir en una solicitud **FindItem** . Solo uno de los elementos [GroupBy](groupby.md) o [DistinguishedGroupBy](distinguishedgroupby.md) puede incluirse en una solicitud **FindItem** . 
   
@@ -89,7 +89,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

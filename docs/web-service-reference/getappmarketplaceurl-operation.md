@@ -12,7 +12,7 @@ ms.openlocfilehash: 616e7f571ba5283a773e51d611cd18bb37b5bc8b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764747"
 ---
 # <a name="getappmarketplaceurl-operation"></a>Operación GetAppMarketplaceUrl
@@ -153,7 +153,7 @@ La respuesta de error SOAP body contiene los siguientes elementos:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
     

@@ -15,7 +15,7 @@ ms.openlocfilehash: 1e04e65fa1951a6aa46e2c8b6dd5fe524c84a8fc
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764192"
 ---
 # <a name="disconnect-operation-um-web-service"></a>(Servicio web de mensajería unificada) de la operación de desconexión
@@ -58,7 +58,7 @@ El siguiente ejemplo de una respuesta de desconexión muestra una respuesta a la
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Desconectar (servicio web de mensajería unificada)](disconnect-um-web-service.md) 
 - [DisconnectResponse (servicio web de mensajería unificada)](disconnectresponse-um-web-service.md) 

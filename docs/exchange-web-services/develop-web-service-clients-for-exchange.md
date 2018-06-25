@@ -10,7 +10,7 @@ ms.openlocfilehash: 2b8b032124e45dda7c83932d519ffb87bcdb5514
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762991"
 ---
 # <a name="develop-web-service-clients-for-exchange"></a>Desarrollo de clientes de servicios web de Exchange
@@ -65,7 +65,7 @@ Los artículos de esta sección explican cómo usar EWS y los servicios web en l
     
 - [Comprobación de los resultados de una llamada de EWS o la API administrada de EWS](verifying-the-results-of-an-ews-or-ews-managed-api-call.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Explore la API administrada de EWS, EWS y servicios web de Exchange](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)     
 - [Empezar a utilizar servicios web de Exchange](start-using-web-services-in-exchange.md)  

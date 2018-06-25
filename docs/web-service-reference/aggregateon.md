@@ -16,7 +16,7 @@ ms.openlocfilehash: fe14de23e6a4c90d826200cae927427acfccc3c8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763421"
 ---
 # <a name="aggregateon"></a>AggregateOn
@@ -71,7 +71,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 |:-----|:-----|
 |[GroupBy](groupby.md) <br/> |Especifica los grupos arbitrarios para las consultas de FindItem.  <br/> La siguiente es la expresión de XPath para este elemento:`/FindItem/GroupBy` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 La [operación FindItem](finditem-operation.md) puede devolver resultados agrupados. Dentro de los resultados agrupados, todos los elementos que tienen el mismo valor de una propiedad de agrupación determinada se agrupan y se presentan como elementos secundarios de ese grupo. Por ejemplo, si agrupa por remitente, todos los correos electrónicos se organizan en grupos separados en función de si son de un remitente, remitente B y así sucesivamente. Estos grupos son los elementos secundarios del grupo de remitente. 
   
@@ -201,7 +201,7 @@ Para ordenar los elementos de un grupo, use el elemento [SortOrder](sortorder.md
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación FindItem](finditem-operation.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)

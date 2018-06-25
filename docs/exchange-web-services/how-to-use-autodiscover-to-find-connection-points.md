@@ -10,7 +10,7 @@ ms.openlocfilehash: 653fcd1c094c23c3e89e903b7194b96720802b51
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763185"
 ---
 # <a name="use-autodiscover-to-find-connection-points"></a>Usar detección automática para buscar puntos de conexión
@@ -258,7 +258,7 @@ Buscar el extremo siguiendo el proceso de detección automática devuelve el dom
     
 - [Obtener la configuración de usuario de Exchange mediante el uso de detección automática](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Configurar una aplicación de EWS](setting-up-your-ews-application.md)

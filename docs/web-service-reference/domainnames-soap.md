@@ -11,7 +11,7 @@ ms.openlocfilehash: 45d256f3d5a57028a04572ad67d4be0786ca39e7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764263"
 ---
 # <a name="domainnames-soap"></a>DomainNames (SOAP)
@@ -49,7 +49,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este elemento representa los dominios SMTP de las organizaciones externas.
   
@@ -62,7 +62,7 @@ Este elemento representa los dominios SMTP de las organizaciones externas.
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetOrganizationRelationshipSettings (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: 6f0760705c05de2a615544fe52ac50b398be6040
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764499"
 ---
 # <a name="exportitems-operation"></a>Operación ExportItems
@@ -260,7 +260,7 @@ En la respuesta de error, se usan los siguientes elementos:
 > [!NOTE]
 > El elemento de **valor** no existe en el esquema. Este elemento es válido porque el elemento de [MessageXml](messagexml.md) , en el que se produce el elemento de instancia de **valor** , puede contener cualquier XML correcto. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -10,7 +10,7 @@ ms.openlocfilehash: b933bd1bdc6dfcbe4941f23dbee9a587745c7bd7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762993"
 ---
 # <a name="exchange-online-and-exchange-development"></a>Desarrollo de Exchange y Exchange Online
@@ -51,7 +51,7 @@ Exchange interactúa con las aplicaciones personalizadas de varias maneras, seg�
 |**Almacenamiento de buzones** |Exchange proporciona una estructura jerárquica de carpetas, elementos y propiedades para las aplicaciones que tienen acceso a los datos almacenados en los buzones.<br/>Puede tener acceso a esa información almacenada mediante una combinación de estilos de objeto de base de datos y componentes.<br/>Puede realizar consultas en los datos, e Exchange administra el acceso a los datos almacenados en función de los permisos de usuario y almacén.<br/>Las aplicaciones que manejan datos de los buzones suelen usan REST, EWS o API administrada EWS.|
 |**Servidor enterprise administrado** |Exchange funciona como un servidor administrado para las aplicaciones que administran servidores y almacenes de Exchange.<br/>Pueden configurar, controlar y supervisar la actividad actual y el estado de los servidores de Exchange en toda la organización.<br/>Las aplicaciones de administración de Exchange usan Shell de administración de Exchange para administrar servidores de Exchange. |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Referencia de API de servidor de Exchange](https://msdn.microsoft.com/en-us/library/dn186243(v=exchg.150).aspx)
 - [Leer sobre Exchange en los blogs de Office](https://www.microsoft.com/en-us/microsoft-365/blog/) 

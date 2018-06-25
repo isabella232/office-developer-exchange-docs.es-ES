@@ -15,7 +15,7 @@ ms.openlocfilehash: d9658dd9cb47f925e05dc21a8651c98dce1f0a2a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764769"
 ---
 # <a name="getcallinforesponse-um-web-service"></a>GetCallInfoResponse (servicio web de mensajería unificada)
@@ -64,7 +64,7 @@ Ninguno.
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

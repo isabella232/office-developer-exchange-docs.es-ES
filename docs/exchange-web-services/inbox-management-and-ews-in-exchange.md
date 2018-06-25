@@ -10,7 +10,7 @@ ms.openlocfilehash: fe06c5ee87e2679506ca7247c5fc2c96912dee86
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763193"
 ---
 # <a name="inbox-management-and-ews-in-exchange"></a>Administración de la Bandeja de entrada y EWS en Exchange
@@ -132,7 +132,7 @@ Aunque puede crear una regla que mueva todo el correo de un remitente específic
     
 - [Agregar y quitar direcciones de correo electrónico de la lista de remitentes bloqueados mediante el uso de EWS en Exchange](how-to-add-and-remove-email-addresses-from-blocked-senders-list-by-using-ews.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)

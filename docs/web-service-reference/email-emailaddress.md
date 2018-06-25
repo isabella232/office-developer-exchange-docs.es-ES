@@ -12,7 +12,7 @@ ms.openlocfilehash: 8b95aa066d545a579ec3c14627d99dd0e326477e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764325"
 ---
 # <a name="email-emailaddress"></a>Correo electrónico (EmailAddress)
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento de correo electrónico identifica un asistente devuelto en una respuesta de la operación **GetUserAvailability** . 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

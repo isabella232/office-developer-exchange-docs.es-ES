@@ -933,7 +933,7 @@
                       href: web-service-reference/contactid.md
                     - name: ContactIds
                       href: web-service-reference/contactids.md
-                    - name: Contacts
+                    - name: Contactos
                       href: web-service-reference/contacts-ex15websvcsotherref.md
                     - name: Contactos (ArrayOfContactsType)
                       href: web-service-reference/contacts-arrayofcontactstype.md

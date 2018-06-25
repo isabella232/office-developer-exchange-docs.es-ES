@@ -12,7 +12,7 @@ ms.openlocfilehash: d07f68494acd26940a4837bbbfc7a0505114bd20
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763357"
 ---
 # <a name="create-a-routingagent-transport-agent-for-exchange-2013"></a>Crear a un agente de transporte RoutingAgent para Exchange 2013
@@ -87,7 +87,7 @@ El siguiente procedimiento describe cómo crear a un agente de transporte Routin
 
    Después de definir la clase de agente, se puede agregar funcionalidad personalizada. En este ejemplo, los dos eventos [OnSubmittedMessage](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Routing.RoutingAgent.OnSubmittedMessage.aspx) y [OnRoutedMessage](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Routing.RoutingAgent.OnRoutedMessage.aspx)se redirigen a sus controladores de eventos personalizados. 
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Conceptos de agente en Exchange 2013 de transporte](transport-agent-concepts-in-exchange-2013.md)    
 - [Referencia de agente de transporte de Exchange 2013](transport-agent-reference-for-exchange-2013.md)    

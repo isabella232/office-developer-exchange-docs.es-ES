@@ -16,7 +16,7 @@ ms.openlocfilehash: 39c8c8ef84ff445e8f44ebb9f2285ccfc42353a7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764728"
 ---
 # <a name="from"></a>De
@@ -63,7 +63,7 @@ Ninguno.
 |[CancelCalendarItem](cancelcalendaritem.md) <br/> |Representa el objeto de respuesta que se usa para cancelar una reunión.  <br/> |
 |[Objeto postItem](postitem.md) <br/> |Representa un elemento para exponer en el almacén de Exchange. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se utiliza para mensajes de correo electrónico "enviar en nombre de".
   
@@ -78,7 +78,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

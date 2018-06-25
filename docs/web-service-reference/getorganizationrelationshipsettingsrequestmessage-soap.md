@@ -11,7 +11,7 @@ ms.openlocfilehash: 357f6c75ff81fdf6b31bab15f4662d0f17fbbec0
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764925"
 ---
 # <a name="getorganizationrelationshipsettingsrequestmessage-soap"></a>GetOrganizationRelationshipSettingsRequestMessage (SOAP)
@@ -52,7 +52,7 @@ Ninguno.
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

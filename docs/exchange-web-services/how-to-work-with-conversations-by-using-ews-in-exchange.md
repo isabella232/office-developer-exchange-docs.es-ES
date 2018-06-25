@@ -10,7 +10,7 @@ ms.openlocfilehash: 71ef7674086607e1544111071928f3dd74073a77
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763201"
 ---
 # <a name="work-with-conversations-by-using-ews-in-exchange"></a>Trabajar con las conversaciones con EWS en Exchange
@@ -575,7 +575,7 @@ El método de la API administrada de EWS [GetConversationItems](http://msdn.micr
   
 El método de la API administrada de EWS **FindConversation** y el método EWS **FindConversation** no están disponibles en la versión inicial de Exchange 2010 o de Exchange 2007. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Correo electrónico y EWS en Exchange](email-and-ews-in-exchange.md)
 - [Use los filtros de búsqueda con EWS en Exchange](how-to-use-search-filters-with-ews-in-exchange.md)   

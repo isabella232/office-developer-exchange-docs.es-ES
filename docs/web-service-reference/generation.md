@@ -16,7 +16,7 @@ ms.openlocfilehash: 2b6be1a96223da8c70b042475cc7c8f0a67c000b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764737"
 ---
 # <a name="generation"></a>Generación
@@ -50,7 +50,7 @@ Ninguno.
 
 Si se usa este elemento, se requiere un valor de texto.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento representa la misma información que está representada por la propiedad MAPI PR_Generation.
   
@@ -65,7 +65,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

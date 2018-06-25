@@ -10,7 +10,7 @@ ms.openlocfilehash: a9a9e5974b2751268f37a1c9faacce43a333bcdb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763207"
 ---
 # <a name="work-with-folders-by-using-ews-in-exchange"></a>Trabajar con carpetas mediante EWS en Exchange
@@ -451,7 +451,7 @@ El servidor responde a la solicitud de **DeleteFolder** con un mensaje de [Delet
 
 Después de recuperar las carpetas en el servidor, o realizado cambios en las carpetas, es posible que desee [sincronizar la jerarquía de carpetas](how-to-synchronize-folders-by-using-ews-in-exchange.md) o [suscribirse a las notificaciones sobre cambios de carpeta](notification-subscriptions-mailbox-events-and-ews-in-exchange.md) en el servidor. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Las carpetas y elementos de EWS en Exchange](folders-and-items-in-ews-in-exchange.md)   
 - [Trabajar con los elementos del buzón de Exchange mediante EWS en Exchange](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md)    

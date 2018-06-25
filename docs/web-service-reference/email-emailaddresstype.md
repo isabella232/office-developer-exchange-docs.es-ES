@@ -16,7 +16,7 @@ ms.openlocfilehash: 0e7848d7c4f5001ed86b06d11af1d7623b4bf1f0
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764327"
 ---
 # <a name="email-emailaddresstype"></a>Correo electrónico (EmailAddressType)
@@ -59,7 +59,7 @@ Ninguno.
 |:-----|:-----|
 |[MailboxData](mailboxdata.md) <br/> |Representa un usuario de buzón de correo individual y opciones para el tipo de datos que se devolverá sobre el usuario del buzón.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityRequest/MailboxDataArray[i]/MailboxData` <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio /EWS/ del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -72,7 +72,7 @@ El esquema que describe este elemento se encuentra en el directorio /EWS/ del eq
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)  
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)

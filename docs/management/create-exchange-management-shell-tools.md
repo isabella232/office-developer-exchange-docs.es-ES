@@ -12,7 +12,7 @@ ms.openlocfilehash: e8414460007f333e50c9d596bf977792977b1e4e
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763306"
 ---
 # <a name="create-exchange-management-shell-tools"></a>Creación de herramientas de Shell de administración de Exchange
@@ -42,7 +42,7 @@ Los cmdlets del Shell de administración de Exchange acepte y devolver objetos. 
 - [Usar la respuesta de cmdlet del Shell de administración de Exchange](how-to-use-the-exchange-management-shell-cmdlet-response.md)
 
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Espacios de nombres de Shell de administración de Exchange](exchange-management-shell-namespaces.md)  
 - [Exchange Server PowerShell (Shell de administración de Exchange)](https://docs.microsoft.com/en-us/powershell/exchange/exchange-server/exchange-management-shell?view=exchange-ps)  

@@ -12,7 +12,7 @@ ms.openlocfilehash: b26ce8087e6675c4dd15d81b93aab7f2392b33a2
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763752"
 ---
 # <a name="companynamesortkey"></a>CompanyNameSortKey
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **CompanyNameSortKey** es la clave de ordenación para un nombre de la compañía. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

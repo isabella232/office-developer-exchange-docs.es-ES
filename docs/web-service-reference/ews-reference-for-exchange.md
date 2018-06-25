@@ -12,7 +12,7 @@ ms.openlocfilehash: 32717929aad4af7c1ce6010b58b48d4059c91b22
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764458"
 ---
 # <a name="ews-reference-for-exchange"></a>Referencia EWS para Exchange
@@ -30,7 +30,7 @@ El contenido de la operación WSDL en esta sección proporciona información gen
     
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Referencia de servicios Web de Exchange](web-services-reference-for-exchange.md)
 - [Explore la API administrada de EWS, EWS y servicios web de Exchange](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)

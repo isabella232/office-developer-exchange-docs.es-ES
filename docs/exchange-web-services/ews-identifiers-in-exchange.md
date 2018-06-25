@@ -10,7 +10,7 @@ ms.openlocfilehash: c09b54c8ec4f443a64f8222094ccf0a5e1f750e7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763027"
 ---
 # <a name="ews-identifiers-in-exchange"></a>Identificadores EWS en Exchange
@@ -125,7 +125,7 @@ Puede usar el método o la operación de **ConvertId** para convertir varios for
 |Propiedad EntryId  <br/> |Un identificador MAPI que se conoce como la propiedad de **entrada del objeto** de un mensaje MAPI.  <br/> |
 |HexEntryId  <br/> |Una representación codificada en hexadecimal de la propiedad de **entrada del objeto** que se usa para el identificador de evento del calendario de disponibilidad. También es el formato de identificador que usa Outlook.  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)

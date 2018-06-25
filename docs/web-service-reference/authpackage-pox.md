@@ -13,7 +13,7 @@ ms.openlocfilehash: 120ec00ac82166ae2002a8fbac0edf9a1e23afc7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763584"
 ---
 # <a name="authpackage-pox"></a>AuthPackage (POX)
@@ -64,7 +64,7 @@ El valor de texto especifica el esquema de autenticación que se usa cuando se r
 - negociar
 - nego2
     
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El elemento **AuthPackage** solo se usa cuando el elemento de [Tipo (POX)](type-pox.md) tiene un valor de texto de EXCH o EXPR. 
   
@@ -72,7 +72,7 @@ El elemento **AuthPackage** solo se usa cuando el elemento de [Tipo (POX)](type-
 
 Office 365, Exchange Online y versiones locales de inicio de Exchange con creación 15.00.0995.014 devuelto un valor de "negociar" sólo si el servidor está configurado para usar la autenticación Negotiate y el cliente incluye un encabezado [X-ClientCanHandle](pox-autodiscover-request-for-exchange.md) que contiene "Negotiate". 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

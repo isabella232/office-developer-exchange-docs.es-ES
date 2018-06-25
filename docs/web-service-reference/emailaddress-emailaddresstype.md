@@ -12,7 +12,7 @@ ms.openlocfilehash: c31a37fc0dbdcc2b501b82346a17a0a3b4775556
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764332"
 ---
 # <a name="emailaddress-emailaddresstype"></a>EmailAddress (EmailAddressType)
@@ -58,7 +58,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este elemento es opcional.
   
@@ -73,7 +73,7 @@ El elemento **EmailAddress** es aplicable para los clientes que estén destinado
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

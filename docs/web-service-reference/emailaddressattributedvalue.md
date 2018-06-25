@@ -12,7 +12,7 @@ ms.openlocfilehash: 3bcbb5c0a2bc9a2dc24516b5fc62e6e3363a360b
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764349"
 ---
 # <a name="emailaddressattributedvalue"></a>EmailAddressAttributedValue
@@ -50,7 +50,7 @@ Ninguno.
 |[Emails2](emails2.md) <br/> |Especifica una matriz de valores de correo electrónico y los identificadores de sus atribuciones de origen para el rol asociado.  <br/> |
 |[Emails3](emails3.md) <br/> |Especifica una matriz de valores de correo electrónico y los identificadores de sus atribuciones de origen para el rol asociado.  <br/> |
    
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -65,7 +65,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

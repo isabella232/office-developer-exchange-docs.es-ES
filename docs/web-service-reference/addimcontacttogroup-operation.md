@@ -12,7 +12,7 @@ ms.openlocfilehash: 669d798b6cabc1cab1fc057a3e18c565467440f7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763394"
 ---
 # <a name="addimcontacttogroup-operation"></a>Operación AddImContactToGroup
@@ -144,7 +144,7 @@ La respuesta de error SOAP body contiene los siguientes elementos:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación AddImGroup](addimgroup-operation.md)
     

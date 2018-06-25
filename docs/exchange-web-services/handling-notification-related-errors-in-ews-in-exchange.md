@@ -10,7 +10,7 @@ ms.openlocfilehash: cb0c16a74e68b5a16ef0f2011f65b22675950f58
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763013"
 ---
 # <a name="handling-notification-related-errors-in-ews-in-exchange"></a>Tratamiento de errores relacionados con la notificación en EWS en Exchange
@@ -40,7 +40,7 @@ Si la aplicación se suscribe a y obtiene notificaciones, debe controlar los err
 
 Cuando una suscripción se pierda o ya no es accesible, es mejor crear una nueva suscripción y no incluir la marca de agua antigua en la nueva suscripción. Resubscribing con la marca de agua antiguo hace que un examen lineal para eventos, que resulta caro. En su lugar, crear una nueva suscripción y comparar propiedades de la carpeta para que busque cambia el contenido que se ha producido entre la suscripción pierden y la nueva suscripción. Las propiedades de carpeta extendida que se recomienda que compruebe son **PR_LOCAL_COMMIT_TIME_MAX** (0x670a0040) y **PR_DELETED_COUNT_TOTAL** (0x670b0003). Puede hacerlo mediante la [creación de una definición de propiedad extendida](properties-and-extended-properties-in-ews-in-exchange.md).
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Suscripciones de notificación de eventos de buzón de correo y EWS en Exchange](notification-subscriptions-mailbox-events-and-ews-in-exchange.md)
 - [Notificaciones de secuencia acerca de los eventos de buzón de correo mediante el uso de EWS en Exchange](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md)    

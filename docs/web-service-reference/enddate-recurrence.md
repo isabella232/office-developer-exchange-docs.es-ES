@@ -16,7 +16,7 @@ ms.openlocfilehash: b8570a069fc0a2d05044a9c85ab2d5c39d70ccdf
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764395"
 ---
 # <a name="enddate-recurrence"></a>EndDate (periodicidad)
@@ -50,7 +50,7 @@ Ninguno.
 
 Si se usa este elemento, es necesario un valor de texto que representa una fecha. El valor no puede ser mayor que 1 de septiembre, 4500 00:00:00.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
@@ -63,7 +63,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

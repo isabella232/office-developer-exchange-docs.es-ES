@@ -16,7 +16,7 @@ ms.openlocfilehash: a6a68017291ba13f45b3970307669222d583fcbb
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764058"
 ---
 # <a name="dayofweek-workingperiod"></a>DayOfWeek (WorkingPeriod)
@@ -70,7 +70,7 @@ Si el usuario del buzón tiene días que se establezca para representar la seman
     
 En ese orden, se devolverán los valores de texto.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Es importante tener en cuenta que la diferencia entre este elemento y el elemento de disponibilidad [DayOfWeek (TimeZone)](dayofweek-timezone.md) es el tipo. 
   
@@ -85,7 +85,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)  
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)

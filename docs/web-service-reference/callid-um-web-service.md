@@ -15,7 +15,7 @@ ms.openlocfilehash: 49690f41b9a002b05c7c9b1a1240073c7230ab92
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763720"
 ---
 # <a name="callid-um-web-service"></a>CallId (servicio web de mensajería unificada)
@@ -58,7 +58,7 @@ Ninguno.
 
 Se requiere un valor de texto. El valor de texto representa el identificador para una llamada.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Para inicial de una llamada, use la [operación de PlayOnPhone (servicio web de mensajería unificada)](playonphone-operation-um-web-service.md) o [PlayOnPhoneGreeting (servicio web de mensajería unificada)](playonphonegreeting-operation-um-web-service.md). Use el valor de texto que se devuelve en los elementos [PlayOnPhoneResponse (servicio web de mensajería unificada)](playonphoneresponse-um-web-service.md) o [PlayOnPhoneGreetingResponse (servicio web de mensajería unificada)](playonphonegreetingresponse-um-web-service.md) para el valor de texto del elemento **CallId** . 
   
@@ -71,7 +71,7 @@ Para inicial de una llamada, use la [operación de PlayOnPhone (servicio web de 
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

@@ -10,7 +10,7 @@ ms.openlocfilehash: 0f9186fb71b3005c71a70e89aafb674ae15e4814
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763058"
 ---
 # <a name="expand-distribution-groups-by-using-ews-in-exchange-2013"></a>Expandir grupos de distribución mediante el uso de EWS en Exchange 2013
@@ -200,7 +200,7 @@ La solicitud XML para expandir un grupo de contactos es similar a una solicitud 
 
 La estructura de la respuesta XML a una solicitud para expandir un grupo de contactos es la misma que la respuesta a una solicitud para expandir un grupo de distribución universal.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Grupos de distribución y EWS en Exchange](distribution-groups-and-ews-in-exchange.md)

@@ -10,7 +10,7 @@ ms.openlocfilehash: 59fd316d0aa0feea81b60c279040da018c51b47d
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763059"
 ---
 # <a name="find-autodiscover-endpoints-by-using-scp-lookup-in-exchange"></a>Busque los extremos de detección automática mediante el uso de búsqueda de SCP en Exchange
@@ -329,7 +329,7 @@ El siguiente paso en el proceso de detección automática es enviar solicitudes 
     
 - [Administrar los mensajes de error de detección automática](handling-autodiscover-error-messages.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Detección automática de Exchange](autodiscover-for-exchange.md)   
 - [Configurar una aplicación de EWS](setting-up-your-ews-application.md)

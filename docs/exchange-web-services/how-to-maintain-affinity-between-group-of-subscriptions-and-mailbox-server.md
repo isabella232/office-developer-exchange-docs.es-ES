@@ -10,7 +10,7 @@ ms.openlocfilehash: 7cfbfb5cc19e092c37e3d48a7fcc4f27023516e1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763088"
 ---
 # <a name="maintain-affinity-between-a-group-of-subscriptions-and-the-mailbox-server-in-exchange"></a>Mantener la afinidad entre un grupo de suscripciones y el servidor de buzones de Exchange
@@ -338,7 +338,7 @@ En Exchange 2010, el cliente sólo sabe la dirección del equilibrador de carga 
   
 Es posible que tenga en cuenta que el exchangecookie que usa Exchange 2010 sigue siendo devuelto por versiones posteriores. No hay ningún riesgo en incluidos esta cookie en las solicitudes, pero las versiones posteriores de Exchange pasar por alto.
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Suscripciones de notificación de eventos de buzón de correo y EWS en Exchange](notification-subscriptions-mailbox-events-and-ews-in-exchange.md)
 - [Notificaciones de secuencia acerca de los eventos de buzón de correo mediante el uso de EWS en Exchange](how-to-stream-notifications-about-mailbox-events-by-using-ews-in-exchange.md)

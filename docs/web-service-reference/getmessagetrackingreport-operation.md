@@ -16,14 +16,14 @@ ms.openlocfilehash: 0e2e26c2bbe98aff75817ab24f413b7f975e145a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764907"
 ---
 # <a name="getmessagetrackingreport-operation"></a>Operación GetMessageTrackingReport
 
 La operación **GetMessageTrackingReport** obtiene información acerca de los mensajes especificados de seguimiento. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)

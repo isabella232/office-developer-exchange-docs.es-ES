@@ -10,7 +10,7 @@ ms.openlocfilehash: 0c01d9bd21cbef0a3536c8dbd85e192199b7b8ab
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763298"
 ---
 # <a name="properties-and-extended-properties-in-ews-in-exchange"></a>Propiedades y propiedades extendidas de EWS en Exchange
@@ -43,7 +43,7 @@ El esquema EWS admite muchas de las restricciones administradas por la base de d
     
 - Citas
     
-- Contacts
+- Contactos
     
 - Listas de distribución
     
@@ -193,7 +193,7 @@ Si desea obtener más información acerca de cómo puede utilizar las propiedade
     
 - [Errores relacionados con la propiedad EWS](ews-property-related-errors.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Empezar a utilizar servicios web de Exchange](start-using-web-services-in-exchange.md)

@@ -10,7 +10,7 @@ ms.openlocfilehash: 2f203c5634c29105feb39220c3ebdd9624bb49ec
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763301"
 ---
 # <a name="start-using-web-services-in-exchange"></a>Empezar a usar servicios web de Exchange
@@ -71,7 +71,7 @@ Si no es un programador de .NET Framework, puede encontrar muchas bibliotecas cl
   
 Póngase en contacto con [soporte técnico de Microsoft](https://support.microsoft.com/) si necesita ayuda adicional. El equipo de soporte técnico para desarrolladores de Exchange cuenta con experimentados profesionales de TI que pueden ayudar a responder a sus preguntas sobre el desarrollo de Exchange. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Explore la API administrada de EWS, EWS y servicios web de Exchange](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md) 
 - [Introducción al diseño de EWS cliente de Exchange](ews-client-design-overview-for-exchange.md) 

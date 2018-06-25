@@ -11,7 +11,7 @@ ms.openlocfilehash: 4727e7054c02a4b5d454cb880691ecc01a075327
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764715"
 ---
 # <a name="freebusyaccessenabled-soap"></a>FreeBusyAccessEnabled (SOAP)
@@ -45,7 +45,7 @@ Ninguno.
 
 Un valor de texto de **true** para el elemento **FreeBusyAccessEnabled** indica que debe usarse la relación de uso compartida para recuperar información de disponibilidad de los usuarios de la organización. Un valor de **false** indica que se debe suprimir la relación de uso compartida. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Use este elemento para permitir o suprimir la información de libre/ocupado desde el servidor. 
   
@@ -58,7 +58,7 @@ Use este elemento para permitir o suprimir la información de libre/ocupado desd
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

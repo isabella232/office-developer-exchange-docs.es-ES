@@ -10,7 +10,7 @@ ms.openlocfilehash: ccecacc9c8beef464727efbc9d1fced7a81f9b7c
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763074"
 ---
 # <a name="generate-a-list-of-autodiscover-endpoints"></a>Generar una lista de extremos de detección automática
@@ -74,7 +74,7 @@ La aplicación de EWS en este ejemplo, prefiere el servicio web de detección au
 
 Después de generar una lista de extremos de detección automática, intente enviando [solicitudes a esos extremos](how-to-get-user-settings-from-exchange-by-using-autodiscover.md).
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Detección automática de Exchange](autodiscover-for-exchange.md)

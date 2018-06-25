@@ -10,7 +10,7 @@ ms.openlocfilehash: 29a640178afc9814a0b2232225ae4307e49afed2
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19762996"
 ---
 # <a name="controlling-client-application-access-to-ews-in-exchange"></a>Controlar el acceso de la aplicación de cliente para EWS en Exchange
@@ -77,7 +77,7 @@ Los administradores usar los siguientes cmdlets del Shell de administración de 
     
 - [Set-OrganizationConfig](http://technet.microsoft.com/en-us/library/aa997443.aspx)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Empezar a utilizar servicios web de Exchange](start-using-web-services-in-exchange.md)  
 - [Controlar el acceso a EWS en Exchange](how-to-control-access-to-ews-in-exchange.md)

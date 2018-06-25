@@ -10,7 +10,7 @@ ms.openlocfilehash: d42d3ff0b68dfbf23d5a4eebb826a6d39a4ac116
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763291"
 ---
 # <a name="office-365-rest-apis-for-mail-calendars-and-contacts"></a>API de REST de Office 365 para correo, calendarios y contactos
@@ -43,7 +43,7 @@ Puede usar la [API de REST de proveedores de archivos](http://msdn.microsoft.com
 
 Entre en la página [Desarrollo en la plataforma Office 365](http://msdn.microsoft.com/office/office365/howto/platform-development-overview%28Office.15%29.aspx) para obtener más información sobre las API de correo, calendario y contactos y consultar las instrucciones para la configuración de su entorno y la introducción a las API. Asegúrese también de desproteger los [proyectos inicial y ejemplos de código](http://msdn.microsoft.com/office/office365/howto/Starter-projects-and-code-samples%28Office.15%29.aspx) para ver estas API en acción. 
   
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 - [Desarrollo en la plataforma Office 365](http://msdn.microsoft.com/office/office365/howto/platform-development-overview%28Office.15%29.aspx)

@@ -13,7 +13,7 @@ ms.openlocfilehash: 6318894483b3f8dbcf6bde3f7b067c233048511f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764851"
 ---
 # <a name="getfederationinformationresponsemessage-soap"></a>GetFederationInformationResponseMessage (SOAP)
@@ -54,7 +54,7 @@ Ninguno.
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

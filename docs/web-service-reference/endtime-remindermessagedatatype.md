@@ -12,7 +12,7 @@ ms.openlocfilehash: 4e46f328789aca24b6d7dd86b939fefe95968a1a
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764412"
 ---
 # <a name="endtime-remindermessagedatatype"></a>EndTime (ReminderMessageDataType)
@@ -44,7 +44,7 @@ Ninguno.
 
 El valor de texto del elemento **EndTime** representa el final de un período de tiempo para consultar avisos. 
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -59,7 +59,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

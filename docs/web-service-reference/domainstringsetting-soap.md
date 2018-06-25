@@ -13,7 +13,7 @@ ms.openlocfilehash: 860a2d60f55c22e0404be5f0dd0d1fec41fe48f2
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764275"
 ---
 # <a name="domainstringsetting-soap"></a>DomainStringSetting (SOAP)
@@ -60,7 +60,7 @@ Ninguno.
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Operación GetDomainSettings (SOAP)](getdomainsettings-operation-soap.md)
 

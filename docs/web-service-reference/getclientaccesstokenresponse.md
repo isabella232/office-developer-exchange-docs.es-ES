@@ -12,7 +12,7 @@ ms.openlocfilehash: cd21bddbb300218d04cef5254a0e0107a509cbf9
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764773"
 ---
 # <a name="getclientaccesstokenresponse"></a>GetClientAccessTokenResponse
@@ -42,7 +42,7 @@ Ninguno.
 
 Ninguno.
   
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este elemento se introdujo en Exchange Server 2013.
   

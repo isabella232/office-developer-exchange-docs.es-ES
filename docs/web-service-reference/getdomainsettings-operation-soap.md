@@ -13,7 +13,7 @@ ms.openlocfilehash: 09b1d610cd415d2d9d7d0098354521ece86f5184
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764823"
 ---
 # <a name="getdomainsettings-operation-soap"></a>Operación GetDomainSettings (SOAP)
@@ -150,7 +150,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [RedirectTarget (SOAP)](redirecttarget-soap.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 
 

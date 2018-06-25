@@ -12,7 +12,7 @@ ms.openlocfilehash: 0192744516c5a6d24b95915452bfcffecc2d92b7
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19764384"
 ---
 # <a name="emptyfolder-operation"></a>Operación EmptyFolder
@@ -176,7 +176,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [Carpetas](folders-ex15websvcsotherref.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

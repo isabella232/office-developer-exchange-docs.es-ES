@@ -10,7 +10,7 @@ ms.openlocfilehash: dafc8cbbf172ad725ab83c93553464ba96ef33b8
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763026"
 ---
 # <a name="get-started-with-ews-managed-api-client-applications"></a>Empezar a trabajar con aplicaciones de cliente de la API administrada de EWS
@@ -227,7 +227,7 @@ Si surge algún problema con la aplicación [envíe una pregunta o un comentario
     
 - [Comunicarse con EWS mediante el uso de la API administrada de EWS](how-to-communicate-with-ews-by-using-the-ews-managed-api.md)
     
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Empezar a utilizar servicios web de Exchange](start-using-web-services-in-exchange.md)    
 - [Introducción al diseño de EWS cliente de Exchange](ews-client-design-overview-for-exchange.md)    

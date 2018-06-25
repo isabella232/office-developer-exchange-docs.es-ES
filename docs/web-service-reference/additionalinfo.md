@@ -12,7 +12,7 @@ ms.openlocfilehash: 6fbe24d5d3e41f2ba9c81657b2c38240d10eefed
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763405"
 ---
 # <a name="additionalinfo"></a>AdditionalInfo
@@ -47,7 +47,7 @@ Ninguno.
 
 El valor de texto del elemento AdditionalInfo es información adicional sobre el estado de espera de un buzón de correo.
   
-## <a name="remarks"></a>Notas
+## <a name="remarks"></a>Comentarios
 
 Este elemento es opcional.
   
@@ -64,7 +64,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 
