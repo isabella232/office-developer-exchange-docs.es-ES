@@ -15,20 +15,20 @@ ms.openlocfilehash: 9d94a359d6b11e41762d21aa2fe5501bd9f7b577
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19836107"
 ---
-# <a name="isumenabled-operation-um-web-service"></a><span data-ttu-id="4812e-103">Operación IsUMEnabled (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="4812e-103">IsUMEnabled operation (UM web service)</span></span>
+# <a name="isumenabled-operation-um-web-service"></a><span data-ttu-id="e8e0e-103">Operación IsUMEnabled (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="e8e0e-103">IsUMEnabled operation (UM web service)</span></span>
 
-<span data-ttu-id="4812e-104">La operación IsUMEnabled determina si un buzón de correo está habilitado para mensajería unificada.</span><span class="sxs-lookup"><span data-stu-id="4812e-104">The IsUMEnabled operation determines whether a mailbox is enabled for Unified Messaging.</span></span>
+<span data-ttu-id="e8e0e-104">La operación IsUMEnabled determina si un buzón de correo está habilitado para mensajería unificada.</span><span class="sxs-lookup"><span data-stu-id="e8e0e-104">The IsUMEnabled operation determines whether a mailbox is enabled for Unified Messaging.</span></span>
   
-## <a name="isumenabled-request-example"></a><span data-ttu-id="4812e-105">Ejemplo de solicitud de IsUMEnabled</span><span class="sxs-lookup"><span data-stu-id="4812e-105">IsUMEnabled request example</span></span>
+## <a name="isumenabled-request-example"></a><span data-ttu-id="e8e0e-105">Ejemplo de solicitud de IsUMEnabled</span><span class="sxs-lookup"><span data-stu-id="e8e0e-105">IsUMEnabled request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="4812e-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="4812e-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="e8e0e-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="e8e0e-106">Description</span></span>
 
-<span data-ttu-id="4812e-107">El siguiente ejemplo de una solicitud de IsUMEnabled muestra cómo formar una solicitud para determinar si un buzón de correo está habilitado para mensajería unificada.</span><span class="sxs-lookup"><span data-stu-id="4812e-107">The following example of an IsUMEnabled request shows how to form a request to determine whether a mailbox is enabled for Unified Messaging.</span></span>
+<span data-ttu-id="e8e0e-107">El siguiente ejemplo de una solicitud de IsUMEnabled muestra cómo formar una solicitud para determinar si un buzón de correo está habilitado para mensajería unificada.</span><span class="sxs-lookup"><span data-stu-id="e8e0e-107">The following example of an IsUMEnabled request shows how to form a request to determine whether a mailbox is enabled for Unified Messaging.</span></span>
   
-### <a name="code"></a><span data-ttu-id="4812e-108">Código</span><span class="sxs-lookup"><span data-stu-id="4812e-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="e8e0e-108">Código</span><span class="sxs-lookup"><span data-stu-id="e8e0e-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -39,13 +39,13 @@ ms.locfileid: "19836107"
 </soap:Envelope>
 ```
 
-## <a name="successful-isumenabled-response-example"></a><span data-ttu-id="4812e-109">Ejemplo de respuesta correcta de IsUMEnabled</span><span class="sxs-lookup"><span data-stu-id="4812e-109">Successful IsUMEnabled response example</span></span>
+## <a name="successful-isumenabled-response-example"></a><span data-ttu-id="e8e0e-109">Ejemplo de respuesta correcta de IsUMEnabled</span><span class="sxs-lookup"><span data-stu-id="e8e0e-109">Successful IsUMEnabled response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="4812e-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="4812e-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="e8e0e-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="e8e0e-110">Description</span></span>
 
-<span data-ttu-id="4812e-111">En el ejemplo siguiente se muestra una respuesta a una solicitud IsUMEnabled correcta.</span><span class="sxs-lookup"><span data-stu-id="4812e-111">The following example shows a successful response to an IsUMEnabled request.</span></span>
+<span data-ttu-id="e8e0e-111">En el ejemplo siguiente se muestra una respuesta a una solicitud IsUMEnabled correcta.</span><span class="sxs-lookup"><span data-stu-id="e8e0e-111">The following example shows a successful response to an IsUMEnabled request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="4812e-112">Código</span><span class="sxs-lookup"><span data-stu-id="4812e-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="e8e0e-112">Código</span><span class="sxs-lookup"><span data-stu-id="e8e0e-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -58,14 +58,14 @@ ms.locfileid: "19836107"
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="4812e-113">Ver también</span><span class="sxs-lookup"><span data-stu-id="4812e-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e8e0e-113">Vea también</span><span class="sxs-lookup"><span data-stu-id="e8e0e-113">See also</span></span>
 
 
 
-[<span data-ttu-id="4812e-114">IsUMEnabled (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="4812e-114">IsUMEnabled (UM web service)</span></span>](isumenabled-um-web-service.md)
+[<span data-ttu-id="e8e0e-114">IsUMEnabled (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="e8e0e-114">IsUMEnabled (UM web service)</span></span>](isumenabled-um-web-service.md)
   
-[<span data-ttu-id="4812e-115">IsUMEnabledResponse (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="4812e-115">IsUMEnabledResponse (UM web service)</span></span>](isumenabledresponse-um-web-service.md)
+[<span data-ttu-id="e8e0e-115">IsUMEnabledResponse (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="e8e0e-115">IsUMEnabledResponse (UM web service)</span></span>](isumenabledresponse-um-web-service.md)
 
 
-[<span data-ttu-id="4812e-116">Elementos XML de servicio de web de Unified Messaging para Exchange</span><span class="sxs-lookup"><span data-stu-id="4812e-116">Unified Messaging web service XML elements for Exchange</span></span>](unified-messaging-web-service-xml-elements-for-exchange.md)
+[<span data-ttu-id="e8e0e-116">Elementos XML de servicio de web de Unified Messaging para Exchange</span><span class="sxs-lookup"><span data-stu-id="e8e0e-116">Unified Messaging web service XML elements for Exchange</span></span>](unified-messaging-web-service-xml-elements-for-exchange.md)
 

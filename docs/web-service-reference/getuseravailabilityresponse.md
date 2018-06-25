@@ -16,12 +16,12 @@ ms.openlocfilehash: 0a30dc8ebc11b1f818b2c27b0ea68fc135ec0925
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835684"
 ---
-# <a name="getuseravailabilityresponse"></a><span data-ttu-id="9d665-103">GetUserAvailabilityResponse</span><span class="sxs-lookup"><span data-stu-id="9d665-103">GetUserAvailabilityResponse</span></span>
+# <a name="getuseravailabilityresponse"></a><span data-ttu-id="d760d-103">GetUserAvailabilityResponse</span><span class="sxs-lookup"><span data-stu-id="d760d-103">GetUserAvailabilityResponse</span></span>
 
-<span data-ttu-id="9d665-104">El elemento **GetUserAvailabilityResponse** es el elemento raíz que contiene las propiedades que definen la información de disponibilidad del usuario o sugeridas información de tiempo de la reunión.</span><span class="sxs-lookup"><span data-stu-id="9d665-104">The **GetUserAvailabilityResponse** element is the root element that contains the properties that define user availability information or suggested meeting time information.</span></span> 
+<span data-ttu-id="d760d-104">El elemento **GetUserAvailabilityResponse** es el elemento raíz que contiene las propiedades que definen la información de disponibilidad del usuario o sugeridas información de tiempo de la reunión.</span><span class="sxs-lookup"><span data-stu-id="d760d-104">The **GetUserAvailabilityResponse** element is the root element that contains the properties that define user availability information or suggested meeting time information.</span></span> 
   
 ```xml
 <GetUserAvailabilityResponse>
@@ -30,33 +30,33 @@ ms.locfileid: "19835684"
 </GetUserAvailabilityResponse>
 ```
 
- <span data-ttu-id="9d665-105">**GetUserAvailabilityResponseType**</span><span class="sxs-lookup"><span data-stu-id="9d665-105">**GetUserAvailabilityResponseType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="9d665-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="9d665-106">Attributes and elements</span></span>
+ <span data-ttu-id="d760d-105">**GetUserAvailabilityResponseType**</span><span class="sxs-lookup"><span data-stu-id="d760d-105">**GetUserAvailabilityResponseType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="d760d-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="d760d-106">Attributes and elements</span></span>
 
-<span data-ttu-id="9d665-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="9d665-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="d760d-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="d760d-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="9d665-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="9d665-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="d760d-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="d760d-108">Attributes</span></span>
 
-<span data-ttu-id="9d665-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="9d665-109">None.</span></span>
+<span data-ttu-id="d760d-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="d760d-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="9d665-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="9d665-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="d760d-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="d760d-110">Child elements</span></span>
 
-|<span data-ttu-id="9d665-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="9d665-111">**Element**</span></span>|<span data-ttu-id="9d665-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="9d665-112">**Description**</span></span>|
+|<span data-ttu-id="d760d-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="d760d-111">**Element**</span></span>|<span data-ttu-id="d760d-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="d760d-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="9d665-113">FreeBusyResponseArray</span><span class="sxs-lookup"><span data-stu-id="9d665-113">FreeBusyResponseArray</span></span>](freebusyresponsearray.md) <br/> |<span data-ttu-id="9d665-114">Contiene información sobre la disponibilidad de los usuarios solicitado y el estado de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="9d665-114">Contains the requested users' availability information and the response status.</span></span>  <br/> |
-|[<span data-ttu-id="9d665-115">SuggestionsResponse</span><span class="sxs-lookup"><span data-stu-id="9d665-115">SuggestionsResponse</span></span>](suggestionsresponse.md) <br/> |<span data-ttu-id="9d665-116">Contiene datos de sugerencia y la información de estado de respuesta para solicitado sugerencias de reunión.</span><span class="sxs-lookup"><span data-stu-id="9d665-116">Contains response status information and suggestion data for requested meeting suggestions.</span></span>  <br/> |
+|[<span data-ttu-id="d760d-113">FreeBusyResponseArray</span><span class="sxs-lookup"><span data-stu-id="d760d-113">FreeBusyResponseArray</span></span>](freebusyresponsearray.md) <br/> |<span data-ttu-id="d760d-114">Contiene información sobre la disponibilidad de los usuarios solicitado y el estado de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="d760d-114">Contains the requested users' availability information and the response status.</span></span>  <br/> |
+|[<span data-ttu-id="d760d-115">SuggestionsResponse</span><span class="sxs-lookup"><span data-stu-id="d760d-115">SuggestionsResponse</span></span>](suggestionsresponse.md) <br/> |<span data-ttu-id="d760d-116">Contiene datos de sugerencia y la información de estado de respuesta para solicitado sugerencias de reunión.</span><span class="sxs-lookup"><span data-stu-id="d760d-116">Contains response status information and suggestion data for requested meeting suggestions.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="9d665-117">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="9d665-117">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="d760d-117">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="d760d-117">Parent elements</span></span>
 
-<span data-ttu-id="9d665-118">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="9d665-118">None.</span></span>
+<span data-ttu-id="d760d-118">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="d760d-118">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="9d665-119">Observaciones</span><span class="sxs-lookup"><span data-stu-id="9d665-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d760d-119">Comentarios</span><span class="sxs-lookup"><span data-stu-id="d760d-119">Remarks</span></span>
 
-<span data-ttu-id="9d665-120">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="9d665-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="d760d-120">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="d760d-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="example"></a><span data-ttu-id="9d665-121">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="9d665-121">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d760d-121">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="d760d-121">Example</span></span>
 
-<span data-ttu-id="9d665-122">El siguiente ejemplo de una respuesta GetUserAvailability muestra una respuesta a una solicitud de GetUserAvailability.</span><span class="sxs-lookup"><span data-stu-id="9d665-122">The following example of a GetUserAvailability response shows a response to a GetUserAvailability request.</span></span>
+<span data-ttu-id="d760d-122">El siguiente ejemplo de una respuesta GetUserAvailability muestra una respuesta a una solicitud de GetUserAvailability.</span><span class="sxs-lookup"><span data-stu-id="d760d-122">The following example of a GetUserAvailability response shows a response to a GetUserAvailability request.</span></span>
   
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -118,23 +118,23 @@ ms.locfileid: "19835684"
 </GetUserAvailabilityResponse>
 ```
 
-<span data-ttu-id="9d665-123">El contenido del [identificador de](id.md) elemento se ha más cortos para conservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="9d665-123">The [ID](id.md) element contents were shortened to preserve readability.</span></span> 
+<span data-ttu-id="d760d-123">El contenido del [identificador de](id.md) elemento se ha más cortos para conservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="d760d-123">The [ID](id.md) element contents were shortened to preserve readability.</span></span> 
   
-## <a name="element-information"></a><span data-ttu-id="9d665-124">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="9d665-124">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="d760d-124">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="d760d-124">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="9d665-125">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="9d665-125">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="9d665-126">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="9d665-126">Schema Name</span></span>  <br/> |<span data-ttu-id="9d665-127">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="9d665-127">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="9d665-128">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="9d665-128">Validation File</span></span>  <br/> |<span data-ttu-id="9d665-129">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="9d665-129">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="9d665-130">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="9d665-130">Can be Empty</span></span>  <br/> |<span data-ttu-id="9d665-131">False</span><span class="sxs-lookup"><span data-stu-id="9d665-131">False</span></span>  <br/> |
+|<span data-ttu-id="d760d-125">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="d760d-125">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="d760d-126">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="d760d-126">Schema Name</span></span>  <br/> |<span data-ttu-id="d760d-127">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="d760d-127">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="d760d-128">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="d760d-128">Validation File</span></span>  <br/> |<span data-ttu-id="d760d-129">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="d760d-129">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="d760d-130">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="d760d-130">Can be Empty</span></span>  <br/> |<span data-ttu-id="d760d-131">False</span><span class="sxs-lookup"><span data-stu-id="d760d-131">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="9d665-132">Ver también</span><span class="sxs-lookup"><span data-stu-id="9d665-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d760d-132">Vea también</span><span class="sxs-lookup"><span data-stu-id="d760d-132">See also</span></span>
 
 
 
-[<span data-ttu-id="9d665-133">GetUserAvailabilityRequest</span><span class="sxs-lookup"><span data-stu-id="9d665-133">GetUserAvailabilityRequest</span></span>](getuseravailabilityrequest.md)
+[<span data-ttu-id="d760d-133">GetUserAvailabilityRequest</span><span class="sxs-lookup"><span data-stu-id="d760d-133">GetUserAvailabilityRequest</span></span>](getuseravailabilityrequest.md)
 
 
-[<span data-ttu-id="9d665-134">Obtención de disponibilidad del usuario</span><span class="sxs-lookup"><span data-stu-id="9d665-134">Getting User Availability</span></span>](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[<span data-ttu-id="d760d-134">Obtención de disponibilidad del usuario</span><span class="sxs-lookup"><span data-stu-id="d760d-134">Getting User Availability</span></span>](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

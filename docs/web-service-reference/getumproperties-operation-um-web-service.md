@@ -15,20 +15,20 @@ ms.openlocfilehash: 8878099bbd907fe0648f7d64dde3cd9600c2c45f
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835678"
 ---
-# <a name="getumproperties-operation-um-web-service"></a><span data-ttu-id="d6e83-103">Operación GetUMProperties (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="d6e83-103">GetUMProperties operation (UM web service)</span></span>
+# <a name="getumproperties-operation-um-web-service"></a><span data-ttu-id="747cb-103">Operación GetUMProperties (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="747cb-103">GetUMProperties operation (UM web service)</span></span>
 
-<span data-ttu-id="d6e83-104">La operación GetUMProperties Obtiene todas las propiedades de mensajería unificada para el buzón del usuario que realiza la solicitud.</span><span class="sxs-lookup"><span data-stu-id="d6e83-104">The GetUMProperties operation gets all the Unified Messaging properties for the mailbox of the user who is making the request.</span></span>
+<span data-ttu-id="747cb-104">La operación GetUMProperties Obtiene todas las propiedades de mensajería unificada para el buzón del usuario que realiza la solicitud.</span><span class="sxs-lookup"><span data-stu-id="747cb-104">The GetUMProperties operation gets all the Unified Messaging properties for the mailbox of the user who is making the request.</span></span>
   
-## <a name="getumproperties-request-example"></a><span data-ttu-id="d6e83-105">Ejemplo de solicitud de GetUMProperties</span><span class="sxs-lookup"><span data-stu-id="d6e83-105">GetUMProperties request example</span></span>
+## <a name="getumproperties-request-example"></a><span data-ttu-id="747cb-105">Ejemplo de solicitud de GetUMProperties</span><span class="sxs-lookup"><span data-stu-id="747cb-105">GetUMProperties request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="d6e83-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="d6e83-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="747cb-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="747cb-106">Description</span></span>
 
-<span data-ttu-id="d6e83-107">El siguiente ejemplo de una solicitud de GetUMProperties muestra cómo formar una solicitud para obtener las propiedades de mensajería unificada de un buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="d6e83-107">The following example of a GetUMProperties request shows how to form a request to get the Unified Messaging properties of a mailbox.</span></span>
+<span data-ttu-id="747cb-107">El siguiente ejemplo de una solicitud de GetUMProperties muestra cómo formar una solicitud para obtener las propiedades de mensajería unificada de un buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="747cb-107">The following example of a GetUMProperties request shows how to form a request to get the Unified Messaging properties of a mailbox.</span></span>
   
-### <a name="code"></a><span data-ttu-id="d6e83-108">Código</span><span class="sxs-lookup"><span data-stu-id="d6e83-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="747cb-108">Código</span><span class="sxs-lookup"><span data-stu-id="747cb-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -39,13 +39,13 @@ ms.locfileid: "19835678"
 </soap:Envelope>
 ```
 
-## <a name="successful-getumproperties-response-example"></a><span data-ttu-id="d6e83-109">Ejemplo de respuesta correcta de GetUMProperties</span><span class="sxs-lookup"><span data-stu-id="d6e83-109">Successful GetUMProperties response example</span></span>
+## <a name="successful-getumproperties-response-example"></a><span data-ttu-id="747cb-109">Ejemplo de respuesta correcta de GetUMProperties</span><span class="sxs-lookup"><span data-stu-id="747cb-109">Successful GetUMProperties response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="d6e83-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="d6e83-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="747cb-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="747cb-110">Description</span></span>
 
-<span data-ttu-id="d6e83-111">El siguiente ejemplo de una respuesta GetUMProperties muestra una respuesta a la solicitud de GetUMProperties.</span><span class="sxs-lookup"><span data-stu-id="d6e83-111">The following example of a GetUMProperties response shows a response to the GetUMProperties request.</span></span>
+<span data-ttu-id="747cb-111">El siguiente ejemplo de una respuesta GetUMProperties muestra una respuesta a la solicitud de GetUMProperties.</span><span class="sxs-lookup"><span data-stu-id="747cb-111">The following example of a GetUMProperties response shows a response to the GetUMProperties request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="d6e83-112">Código</span><span class="sxs-lookup"><span data-stu-id="d6e83-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="747cb-112">Código</span><span class="sxs-lookup"><span data-stu-id="747cb-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -64,11 +64,11 @@ ms.locfileid: "19835678"
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="d6e83-113">Ver también</span><span class="sxs-lookup"><span data-stu-id="d6e83-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="747cb-113">Vea también</span><span class="sxs-lookup"><span data-stu-id="747cb-113">See also</span></span>
 
 
 
-[<span data-ttu-id="d6e83-114">GetUMProperties (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="d6e83-114">GetUMProperties (UM web service)</span></span>](getumproperties-um-web-service.md)
+[<span data-ttu-id="747cb-114">GetUMProperties (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="747cb-114">GetUMProperties (UM web service)</span></span>](getumproperties-um-web-service.md)
   
-[<span data-ttu-id="d6e83-115">GetUMPropertiesResponse (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="d6e83-115">GetUMPropertiesResponse (UM web service)</span></span>](getumpropertiesresponse-um-web-service.md)
+[<span data-ttu-id="747cb-115">GetUMPropertiesResponse (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="747cb-115">GetUMPropertiesResponse (UM web service)</span></span>](getumpropertiesresponse-um-web-service.md)
 

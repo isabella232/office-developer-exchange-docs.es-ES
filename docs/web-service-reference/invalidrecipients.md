@@ -16,12 +16,12 @@ ms.openlocfilehash: 02ad8935bde347c563875bf5bfb31968b70d81b6
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "19835966"
 ---
-# <a name="invalidrecipients"></a><span data-ttu-id="c0722-103">InvalidRecipients</span><span class="sxs-lookup"><span data-stu-id="c0722-103">InvalidRecipients</span></span>
+# <a name="invalidrecipients"></a><span data-ttu-id="190fc-103">InvalidRecipients</span><span class="sxs-lookup"><span data-stu-id="190fc-103">InvalidRecipients</span></span>
 
-<span data-ttu-id="c0722-104">El elemento **InvalidRecipients** representa a los destinatarios de una solicitud de uso compartido de carpeta que no son válidos.</span><span class="sxs-lookup"><span data-stu-id="c0722-104">The **InvalidRecipients** element represents the recipients of a folder sharing request that are invalid.</span></span> 
+<span data-ttu-id="190fc-104">El elemento **InvalidRecipients** representa a los destinatarios de una solicitud de uso compartido de carpeta que no son válidos.</span><span class="sxs-lookup"><span data-stu-id="190fc-104">The **InvalidRecipients** element represents the recipients of a folder sharing request that are invalid.</span></span> 
   
 ```XML
 <InvalidRecipients>
@@ -29,47 +29,47 @@ ms.locfileid: "19835966"
 </InvalidRecipients>
 ```
 
- <span data-ttu-id="c0722-105">**ArrayOfInvalidRecipientsType**</span><span class="sxs-lookup"><span data-stu-id="c0722-105">**ArrayOfInvalidRecipientsType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="c0722-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="c0722-106">Attributes and elements</span></span>
+ <span data-ttu-id="190fc-105">**ArrayOfInvalidRecipientsType**</span><span class="sxs-lookup"><span data-stu-id="190fc-105">**ArrayOfInvalidRecipientsType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="190fc-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="190fc-106">Attributes and elements</span></span>
 
-<span data-ttu-id="c0722-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="c0722-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="190fc-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="190fc-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="c0722-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="c0722-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="190fc-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="190fc-108">Attributes</span></span>
 
-<span data-ttu-id="c0722-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="c0722-109">None.</span></span>
+<span data-ttu-id="190fc-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="190fc-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="c0722-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="c0722-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="190fc-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="190fc-110">Child elements</span></span>
 
-|<span data-ttu-id="c0722-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="c0722-111">**Element**</span></span>|<span data-ttu-id="c0722-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="c0722-112">**Description**</span></span>|
+|<span data-ttu-id="190fc-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="190fc-111">**Element**</span></span>|<span data-ttu-id="190fc-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="190fc-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="c0722-113">InvalidRecipient</span><span class="sxs-lookup"><span data-stu-id="c0722-113">InvalidRecipient</span></span>](invalidrecipient.md) <br/> |<span data-ttu-id="c0722-114">Contiene la dirección SMTP del destinatario no válido y la información acerca de por qué el destinatario no es válido.</span><span class="sxs-lookup"><span data-stu-id="c0722-114">Contains the SMTP address of the invalid recipient and information about why the recipient is invalid.</span></span>  <br/> |
+|[<span data-ttu-id="190fc-113">InvalidRecipient</span><span class="sxs-lookup"><span data-stu-id="190fc-113">InvalidRecipient</span></span>](invalidrecipient.md) <br/> |<span data-ttu-id="190fc-114">Contiene la dirección SMTP del destinatario no válido y la información acerca de por qué el destinatario no es válido.</span><span class="sxs-lookup"><span data-stu-id="190fc-114">Contains the SMTP address of the invalid recipient and information about why the recipient is invalid.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="c0722-115">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="c0722-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="190fc-115">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="190fc-115">Parent elements</span></span>
 
-|<span data-ttu-id="c0722-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="c0722-116">**Element**</span></span>|<span data-ttu-id="c0722-117">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="c0722-117">**Description**</span></span>|
+|<span data-ttu-id="190fc-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="190fc-116">**Element**</span></span>|<span data-ttu-id="190fc-117">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="190fc-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="c0722-118">GetSharingMetadataResponse</span><span class="sxs-lookup"><span data-stu-id="c0722-118">GetSharingMetadataResponse</span></span>](getsharingmetadataresponse.md) <br/> |<span data-ttu-id="c0722-119">Define una respuesta a una solicitud de [operación GetSharingMetadata](getsharingmetadata-operation.md) .</span><span class="sxs-lookup"><span data-stu-id="c0722-119">Defines a response to a [GetSharingMetadata operation](getsharingmetadata-operation.md) request.</span></span>  <br/> |
-|[<span data-ttu-id="c0722-120">GetSharingMetadataResponseMessage</span><span class="sxs-lookup"><span data-stu-id="c0722-120">GetSharingMetadataResponseMessage</span></span>](getsharingmetadataresponsemessage.md) <br/> |<span data-ttu-id="c0722-121">Contiene el estado y el resultado de una única solicitud de [operación GetSharingMetadata](getsharingmetadata-operation.md) .</span><span class="sxs-lookup"><span data-stu-id="c0722-121">Contains the status and result of a single [GetSharingMetadata operation](getsharingmetadata-operation.md) request.</span></span>  <br/> |
+|[<span data-ttu-id="190fc-118">GetSharingMetadataResponse</span><span class="sxs-lookup"><span data-stu-id="190fc-118">GetSharingMetadataResponse</span></span>](getsharingmetadataresponse.md) <br/> |<span data-ttu-id="190fc-119">Define una respuesta a una solicitud de [operación GetSharingMetadata](getsharingmetadata-operation.md) .</span><span class="sxs-lookup"><span data-stu-id="190fc-119">Defines a response to a [GetSharingMetadata operation](getsharingmetadata-operation.md) request.</span></span>  <br/> |
+|[<span data-ttu-id="190fc-120">GetSharingMetadataResponseMessage</span><span class="sxs-lookup"><span data-stu-id="190fc-120">GetSharingMetadataResponseMessage</span></span>](getsharingmetadataresponsemessage.md) <br/> |<span data-ttu-id="190fc-121">Contiene el estado y el resultado de una única solicitud de [operación GetSharingMetadata](getsharingmetadata-operation.md) .</span><span class="sxs-lookup"><span data-stu-id="190fc-121">Contains the status and result of a single [GetSharingMetadata operation](getsharingmetadata-operation.md) request.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="c0722-122">Notas</span><span class="sxs-lookup"><span data-stu-id="c0722-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="190fc-122">Comentarios</span><span class="sxs-lookup"><span data-stu-id="190fc-122">Remarks</span></span>
 
-<span data-ttu-id="c0722-123">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="c0722-123">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="190fc-123">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="190fc-123">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="c0722-124">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="c0722-124">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="190fc-124">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="190fc-124">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="c0722-125">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="c0722-125">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="c0722-126">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="c0722-126">Schema Name</span></span>  <br/> |<span data-ttu-id="c0722-127">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="c0722-127">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="c0722-128">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="c0722-128">Validation File</span></span>  <br/> |<span data-ttu-id="c0722-129">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="c0722-129">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="c0722-130">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="c0722-130">Can be Empty</span></span>  <br/> |<span data-ttu-id="c0722-131">False</span><span class="sxs-lookup"><span data-stu-id="c0722-131">False</span></span>  <br/> |
+|<span data-ttu-id="190fc-125">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="190fc-125">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="190fc-126">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="190fc-126">Schema Name</span></span>  <br/> |<span data-ttu-id="190fc-127">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="190fc-127">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="190fc-128">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="190fc-128">Validation File</span></span>  <br/> |<span data-ttu-id="190fc-129">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="190fc-129">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="190fc-130">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="190fc-130">Can be Empty</span></span>  <br/> |<span data-ttu-id="190fc-131">False</span><span class="sxs-lookup"><span data-stu-id="190fc-131">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="c0722-132">Ver también</span><span class="sxs-lookup"><span data-stu-id="c0722-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="190fc-132">Vea también</span><span class="sxs-lookup"><span data-stu-id="190fc-132">See also</span></span>
 
 
 
-[<span data-ttu-id="c0722-133">Operación GetSharingMetadata</span><span class="sxs-lookup"><span data-stu-id="c0722-133">GetSharingMetadata operation</span></span>](getsharingmetadata-operation.md)
+[<span data-ttu-id="190fc-133">Operación GetSharingMetadata</span><span class="sxs-lookup"><span data-stu-id="190fc-133">GetSharingMetadata operation</span></span>](getsharingmetadata-operation.md)
 
 
-- [<span data-ttu-id="c0722-134">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="c0722-134">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="190fc-134">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="190fc-134">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
