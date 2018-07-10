@@ -36,9 +36,9 @@ ms.locfileid: "19763204"
     
 <span data-ttu-id="15e54-117">Puede usar las aplicaciones de correo para personalizar la experiencia de Outlook Web App para los usuarios; Si desea personalizar la "apariencia" de Outlook Web App, vea estos artículos de TechNet:</span><span class="sxs-lookup"><span data-stu-id="15e54-117">You can use mail apps to customize the Outlook Web App experience for your users; if, however, you want to customize the "look and feel" of Outlook Web App, see these articles on TechNet:</span></span>
   
-- [<span data-ttu-id="15e54-118">Crear un tema de Outlook Web App</span><span class="sxs-lookup"><span data-stu-id="15e54-118">Create a theme for Outlook Web App</span></span>](http://technet.microsoft.com/en-us/library/bb201700%28v=exchg.150%29.aspx)
+- [<span data-ttu-id="15e54-118">Crear un tema de Outlook Web App</span><span class="sxs-lookup"><span data-stu-id="15e54-118">Create a theme for Outlook Web App</span></span>](http://technet.microsoft.com/es-es/library/bb201700%28v=exchg.150%29.aspx)
     
-- [<span data-ttu-id="15e54-119">Personalizar la Outlook Web App inicio de sesión, selección de idioma y las páginas de error</span><span class="sxs-lookup"><span data-stu-id="15e54-119">Customize the Outlook Web App sign-in, language selection, and error pages</span></span>](http://technet.microsoft.com/en-us/library/ee633483%28v=exchg.150%29.aspx)
+- [<span data-ttu-id="15e54-119">Personalizar la Outlook Web App inicio de sesión, selección de idioma y las páginas de error</span><span class="sxs-lookup"><span data-stu-id="15e54-119">Customize the Outlook Web App sign-in, language selection, and error pages</span></span>](http://technet.microsoft.com/es-es/library/ee633483%28v=exchg.150%29.aspx)
     
 <span data-ttu-id="15e54-120">Su organización puede instalar las aplicaciones de correo en un servidor interno para limitar el acceso a los usuarios autorizados, u otros desarrolladores de aplicaciones de correo y se pueden colocar las aplicaciones de correo en la [Tienda de Office](http://office.microsoft.com/store/) para la venta al público en general.</span><span class="sxs-lookup"><span data-stu-id="15e54-120">Your organization can install mail apps on an internal server to limit access to authorized users, or you and other mail app developers can put mail apps on the [Office Store](http://office.microsoft.com/store/) for sale to the general public.</span></span> <span data-ttu-id="15e54-121">Cualquier persona que se está ejecutando Outlook puede descargar, instalar y usar aplicaciones de correo desde el catálogo de soluciones.</span><span class="sxs-lookup"><span data-stu-id="15e54-121">Anyone who is running Outlook can download, install, and use mail apps from the marketplace.</span></span> 
   
@@ -54,7 +54,7 @@ ms.locfileid: "19763204"
   
 - <span data-ttu-id="15e54-130">[Acceso a EWS conceder](controlling-client-application-access-to-ews-in-exchange.md) al usuario de aplicaciones de correo.</span><span class="sxs-lookup"><span data-stu-id="15e54-130">[Grant EWS access](controlling-client-application-access-to-ews-in-exchange.md) to the mail apps user.</span></span> 
     
-- <span data-ttu-id="15e54-131">[Establecer "oauthauthentication" como true](http://technet.microsoft.com/en-us/library/aa997233%28v=exchg.150%29.aspx) en el directorio EWS del servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="15e54-131">[Set "OAuthAuthentication" to true](http://technet.microsoft.com/en-us/library/aa997233%28v=exchg.150%29.aspx) on the Client Access Server EWS directory.</span></span> 
+- <span data-ttu-id="15e54-131">[Establecer "oauthauthentication" como true](http://technet.microsoft.com/es-es/library/aa997233%28v=exchg.150%29.aspx) en el directorio EWS del servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="15e54-131">[Set "OAuthAuthentication" to true](http://technet.microsoft.com/es-es/library/aa997233%28v=exchg.150%29.aspx) on the Client Access Server EWS directory.</span></span> 
     
 <span data-ttu-id="15e54-132">También debe asegurarse de que la aplicación solicita el permiso de buzón de lectura y escritura en las aplicaciones para Office [modelo de permisos](http://msdn.microsoft.com/library/5bca69f2-b287-4e19-8f0f-78d896b2a3d3%28Office.15%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="15e54-132">You also need to make sure that your app requests the read/write mailbox permission in the apps for Office [permission model](http://msdn.microsoft.com/library/5bca69f2-b287-4e19-8f0f-78d896b2a3d3%28Office.15%29.aspx).</span></span>
   
@@ -87,7 +87,7 @@ ms.locfileid: "19763204"
     
 - [<span data-ttu-id="15e54-165">Uso del modelo de permisos para aplicaciones de correo en Outlook 2013 Preview</span><span class="sxs-lookup"><span data-stu-id="15e54-165">Understanding Outlook add-in permissions</span></span>](http://msdn.microsoft.com/library/5bca69f2-b287-4e19-8f0f-78d896b2a3d3%28Office.15%29.aspx)
     
-- [<span data-ttu-id="15e54-166">Set-WebServicesVirtualDirectory</span><span class="sxs-lookup"><span data-stu-id="15e54-166">Set-WebServicesVirtualDirectory</span></span>](http://technet.microsoft.com/en-us/library/aa997233%28v=exchg.150%29.aspx)
+- [<span data-ttu-id="15e54-166">Set-WebServicesVirtualDirectory</span><span class="sxs-lookup"><span data-stu-id="15e54-166">Set-WebServicesVirtualDirectory</span></span>](http://technet.microsoft.com/es-es/library/aa997233%28v=exchg.150%29.aspx)
     
 - [<span data-ttu-id="15e54-167">Aplicaciones de correo para Outlook: para realizar una solicitud EWS</span><span class="sxs-lookup"><span data-stu-id="15e54-167">Mail apps for Outlook: Make an EWS request</span></span>](http://code.msdn.microsoft.com/office/Mail-apps-for-Outlook-Make-770b2528)
     
