@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: f9701409-b620-4afe-b9ee-4c1e95507af7
 description: El elemento ExtendedProperty identifica las propiedades MAPI extendidas en carpetas y elementos.
-ms.openlocfilehash: 6a0aecc732ef634c2258127fca89b19461e25762
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 9a6c44e953cab4900e4b75eb42bdf4d8633e58f9
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764525"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353731"
 ---
 # <a name="extendedproperty"></a>ExtendedProperty
 
@@ -30,7 +30,15 @@ El elemento **ExtendedProperty** identifica las propiedades MAPI extendidas en c
 </ExtendedProperty>
 ```
 
- **ExtendedPropertyType**
+```xml
+<ExtendedProperty>
+   <ExtendedFieldURI/>
+   <Value/>
+</ExtendedProperty>
+```
+
+**ExtendedPropertyType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -82,8 +90,6 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Puede estar vacío  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Vea también
-
-
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,19 +1,19 @@
 ---
-title: Actualizar información de configuración mediante el uso de detección automática
+title: Actualizar la información de configuración mediante la detección automática
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: c2f3c6a5-e8ea-4375-b41a-686a6f238d33
 description: Obtenga información sobre cómo y cuándo para actualizar la información de configuración de la conexión de Exchange mediante el uso de detección automática.
-ms.openlocfilehash: ef3b61781cbafa6e7b873336a050c0b8c33a28ec
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 764909fbe5e4cd62ba6e05bfa4b2c417ef41a9ae
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763186"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353059"
 ---
-# <a name="refresh-configuration-information-by-using-autodiscover"></a>Actualizar información de configuración mediante el uso de detección automática
+# <a name="refresh-configuration-information-by-using-autodiscover"></a>Actualizar la información de configuración mediante la detección automática
 
 Obtenga información sobre cómo y cuándo para actualizar la información de configuración de la conexión de Exchange mediante el uso de detección automática.
   
@@ -67,7 +67,7 @@ Actualizar la información de configuración almacenada en caché puede ayudar c
 |:-----|:-----|:-----|
 |Errores de red o DNS<br/><br/> Ejemplo: No se pudo encontrar el nombre de Host.  <br/> |[ServiceRemoteException](https://msdn.microsoft.com/library/Microsoft.Exchange.WebServices.Data.ServiceRemoteException.aspx) <br/> |Es posible que se puede resolver cualquier error que indica que el servidor no se pudo encontrar o no se pudo tener acceso al tratar de detección automática. <br/><br/> El extremo EWS en caché es posible que ya no sea válido y es posible que pueda detección automática para apunte al nuevo servidor.  <br/> |
 |Errores de estado HTTP<br/><br/> Ejemplo: 503 Servicio no disponible  <br/> |[ServiceRemoteException](https://msdn.microsoft.com/library/Microsoft.Exchange.WebServices.Data.ServiceRemoteException.aspx) <br/> |Errores de estado HTTP pueden ocurrir por muchas razones diferentes.<br/><br/> Sin embargo, es una buena idea para probar la detección automática para ver si un nuevo extremo EWS está disponible para el usuario.  <br/> |
-|Códigos de error EWS <br/><br/> Ejemplo: ErrorConnectionFailed <br/> |[ResponseCodeType](https://msdn.microsoft.com/library/Microsoft.Exchange.WebServices.Data.ResponseCodeType.aspx) <br/> | La mayoría de los códigos de error EWS no requieran actualizar la información de configuración.<br/><br/> Sin embargo, el siguiente específicamente indica que debe actualizarse la información de configuración:<br/>- **ErrorConnectionFailed** <br/>- **ErrorMailboxMoveInProgress** <br/> |
+|Códigos de error EWS <br/><br/> Ejemplo: ErrorConnectionFailed <br/> |[ResponseCodeType](../web-service-reference/responsecode.md) <br/> | La mayoría de los códigos de error EWS no requieran actualizar la información de configuración.<br/><br/> Sin embargo, el siguiente específicamente indica que debe actualizarse la información de configuración:<br/>- **ErrorConnectionFailed** <br/>- **ErrorMailboxMoveInProgress** <br/> |
    
 ## <a name="see-also"></a>Vea también
 

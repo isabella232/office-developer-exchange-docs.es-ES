@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 91b86e93-bdde-41c3-9680-45cf61420592
 description: Obtenga información sobre cómo configurar el entorno de desarrollo para crear una aplicación de EWS que se comunica con Exchange.
-ms.openlocfilehash: 0c7d4c6d37b28b6797bdb638930b8582f31ffc5e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 41664304eebf44d7985c774e260038eae4f23156
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763299"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353276"
 ---
 # <a name="setting-up-your-exchange-application-development-environment"></a>Configurar el entorno de desarrollo de aplicación de Exchange
 
@@ -20,7 +20,12 @@ Obtenga información sobre cómo configurar el entorno de desarrollo para crear 
 Antes de comenzar a escribir la aplicación de servicios Web de Exchange (EWS), debe asegurarse de que el entorno de desarrollo cumple unos requisitos mínimos. Puede usar la API administrada de EWS, la API de acceso de cliente estándar para las aplicaciones de .NET Framework, para desarrollar la aplicación, o puede usar EWS en su propio, con nuestro sin un proxy generado automáticamente. En general, se recomienda que utilice la API administrada de EWS; Sin embargo, puede [Explorar la diferencia entre estas dos opciones](ews-client-design-overview-for-exchange.md) con más detalle para buscar out que uno es adecuada para usted. 
   
 > [!NOTE]
->  [!NOTA]  La API administrada EWS ya está disponible como un proyecto de código abierto en [GitHub](https://github.com/officedev/ews-managed-api). Puede usar la biblioteca de código abierto para: >  Contribuir con correcciones de errores y mejoras a la API. >  Obtener correcciones y mejoras antes de que estén disponibles en una versión oficial. >  Tener acceso a una implementación más completa y actualizada de la API, para usarla como referencia o para crear nuevas bibliotecas en nuevas plataformas. >  Le agradecemos las [aportaciones](https://github.com/OfficeDev/ews-managed-api/blob/master/CONTRIBUTING.md) que realice a través de GitHub. 
+> [!NOTA] La API administrada EWS ya está disponible como un proyecto de código abierto en [GitHub](https://github.com/officedev/ews-managed-api). Puede usar la biblioteca de código abierto para: 
+> - Contribuir con correcciones de errores y mejoras a la API. 
+> - Obtener correcciones y mejoras antes de que estén disponibles en una versión oficial. 
+> - Tener acceso a una implementación más completa y actualizada de la API, para usarla como referencia o para crear nuevas bibliotecas en nuevas plataformas. 
+> 
+>  Le agradecemos sus [contribuciones](https://github.com/OfficeDev/ews-managed-api/blob/master/CONTRIBUTING.md) a través de depósito. 
   
 ## <a name="development-environment-for-the-ews-managed-api"></a>Entorno de desarrollo para la API administrada de EWS
 <a name="bk_EWSMA"> </a>
@@ -35,7 +40,7 @@ Para crear una aplicación de API administrada de EWS, necesitará tener acceso 
     
     Puede obtener un plan de Exchange Online para la empresa, incluida una versión de prueba gratuita desde el [sitio de Office 365](http://office.microsoft.com/en-us/business/compare-office-365-for-business-plans-FX102918419.aspx#fbid=1tsGNIE7e3a). Para conectar con el buzón de correo deben tener el nombre de usuario y las credenciales de la cuenta asociada con el buzón de correo.
     
-- Una versión de Visual Studio desde Visual Studio 2005. Si actualmente no dispone de Visual Studio, puede descargar una versión gratuita de [Visual Studio 2010 Express](http://www.microsoft.com/visualstudio/eng/products/visual-studio-2010-express).
+- Una versión de Visual Studio desde Visual Studio 2005. Si actualmente no dispone de Visual Studio, puede descargar una [versión gratuita](https://visualstudio.microsoft.com/).
     
 - Una versión de .NET Framework a partir con .NET Framework 3.5. .NET Framework 3.5 se puede descargar desde el [Centro de descarga de Microsoft](http://go.microsoft.com/fwlink/?LinkId=191777).
     
@@ -54,7 +59,7 @@ Cuando se trabaja con XML sin formato, también resulta útil tener un conocimie
   
 La segunda forma de uso de EWS consiste en crear a un proxy generado automáticamente que le permite trabajar con las operaciones mediante el uso de un lenguaje de .NET como C#. Aquí es lo que necesita para que funcione con un proxy generado automáticamente:
   
-- Una versión de Visual Studio 2005, para crear una referencia de proxy a partir de Visual Studio. Puede descargar una versión gratuita de [Visual Studio 2010 Express](http://www.microsoft.com/visualstudio/eng/products/visual-studio-2010-express).
+- Una versión de Visual Studio 2005, para crear una referencia de proxy a partir de Visual Studio. Puede descargar una [versión gratuita](https://visualstudio.microsoft.com/).
     
 - Una versión de .NET Framework a partir con .NET Framework 2.0. .NET Framework 3.5 se puede descargar desde el [Centro de descarga de Microsoft](http://go.microsoft.com/fwlink/?LinkId=191777).
     
@@ -65,13 +70,9 @@ Si utiliza a un proxy generado automáticamente, desea tener un poco familiariza
   
 ## <a name="see-also"></a>Vea también
 
-
-- [Configurar el entorno de desarrollo de aplicación de Exchange](setting-up-your-exchange-application-development-environment.md)
-    
-- [Introducción al diseño de EWS cliente de Exchange](ews-client-design-overview-for-exchange.md)
-    
-- [Controlar el acceso a EWS en Exchange](how-to-control-access-to-ews-in-exchange.md)
-    
+- [Configurar el entorno de desarrollo de aplicación de Exchange](setting-up-your-exchange-application-development-environment.md)   
+- [Introducción al diseño de EWS cliente de Exchange](ews-client-design-overview-for-exchange.md)  
+- [Controlar el acceso a EWS en Exchange](how-to-control-access-to-ews-in-exchange.md)  
 - [EWS genera modelos de objetos para Exchange](https://msdn.microsoft.com/en-us/library/jj190899)
     
 

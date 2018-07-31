@@ -1,5 +1,5 @@
 ---
-title: Periodicidad (RecurrenceType)
+title: Recurrence (RecurrenceType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,14 +12,14 @@ api_type:
 - schema
 ms.assetid: 3d1c2c1c-4103-47ce-ad3c-ad16ec6e9b12
 description: El elemento de periodicidad contiene el patrón de periodicidad para los elementos de calendario y las convocatorias de reunión.
-ms.openlocfilehash: f26ccf5912848a6d7fbbfa7d0a19d41635c896e0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: d9c6009e11eb5b66cdd749b8e085935060f99ab7
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837004"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353353"
 ---
-# <a name="recurrence-recurrencetype"></a>Periodicidad (RecurrenceType)
+# <a name="recurrence-recurrencetype"></a>Recurrence (RecurrenceType)
 
 El elemento de **Periodicidad** contiene el patrón de periodicidad para los elementos de calendario y las convocatorias de reunión. 
   
@@ -30,7 +30,127 @@ El elemento de **Periodicidad** contiene el patrón de periodicidad para los ele
 </Recurrence>
 ```
 
- **RecurrenceType**
+```xml
+<Recurrence>
+      <AbsoluteMonthlyRecurrence/>
+      <NoEndRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <RelativeMonthlyRecurrence/> 
+      <NumberedRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <RelativeYearlyRecurrence/> 
+      <EndDateRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <RelativeYearlyRecurrence/> 
+      <NumberedRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <WeeklyRecurrence/> 
+      <EndDateRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <DailyRecurrence/> 
+      <NoEndRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <AbsoluteYearlyRecurrence/> 
+      <NoEndRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <DailyRecurrence/> 
+      <EndDateRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <AbsoluteYearlyRecurrence/> 
+      <NumberedRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <DailyRecurrence/> 
+      <NumberedRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <AbsoluteMonthlyRecurrence/> 
+      <EndDateRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <AbsoluteMonthlyRecurrence/> 
+      <NumberedRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <RelativeMonthlyRecurrence/> 
+      <NoEndRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <WeeklyRecurrence/> 
+      <NoEndRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <WeeklyRecurrence/> 
+      <NumberedRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <AbsoluteYearlyRecurrence/> 
+      <EndDateRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <RelativeMonthlyRecurrence/> 
+      <EndDateRecurrence/>
+</Recurrence>
+```
+
+**RecurrenceType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -76,8 +196,6 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Puede estar vacío  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Vea también
-
-
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

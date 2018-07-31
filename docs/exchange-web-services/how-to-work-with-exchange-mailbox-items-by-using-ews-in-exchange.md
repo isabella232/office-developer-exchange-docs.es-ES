@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 721deb84-f85d-45d0-84c1-0ed55f359969
 description: Obtenga información sobre cómo crear, obtener, actualizar y eliminar elementos mediante la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: e70ac499da57faa60b4bcb6082648b23d1a7e791
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: a40cd7ae682c1fb0a8d2f9cfcb10d99d4ab08052
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763198"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353969"
 ---
 # <a name="work-with-exchange-mailbox-items-by-using-ews-in-exchange"></a>Trabajar con los elementos del buzón de Exchange mediante EWS en Exchange
 
@@ -28,7 +28,7 @@ Por ejemplo, no puede usar un elemento genérico para recuperar un elemento que 
 |Crear un elemento genérico  <br/> |Ninguno. Sólo se pueden crear tipos de elemento específico mediante el uso de la API administrada de EWS; no se puede crear los elementos genéricos.  <br/> |[CreateItem](http://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) <br/> |
 |Obtener un elemento  <br/> |[Item.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) <br/> |
 |Actualizar un elemento  <br/> |[Item.Update](http://msdn.microsoft.com/en-us/library/office/dd635915%28v=exchg.80%29.aspx) <br/> |[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
-|Eliminar un elemento  <br/> |[Item.Delete](http://msdn.microsoft.com/en-us/library/office/dd635072%28v=exchg.80%29.aspx) <br/> |[DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) <br/> |
+|Eliminar un elemento  <br/> |[Item.Delete](http://msdn.microsoft.com/en-us/library/office/dd635072%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
    
 En este artículo, aprenderá cuándo se puede utilizar la clase base genérica y cuándo debe utilizar un elemento fuertemente tipado para llevar a cabo su tarea. Los ejemplos de código muestran cómo usar la clase base y qué hacer cuando no se puede usar la clase base o no ajuste a sus necesidades.
   
@@ -379,7 +379,7 @@ Para obtener más información acerca de cómo eliminar elementos, vea [Eliminar
 ## <a name="delete-an-item-by-using-ews"></a>Eliminar un elemento mediante el uso de EWS
 <a name="bk_deleteews"> </a>
 
-Puede eliminar un elemento mediante la operación [DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) . 
+Puede eliminar un elemento mediante la operación [DeleteItem](../web-service-reference/deleteitem-operation.md) . 
   
 En el ejemplo siguiente se muestra la solicitud XML que se envía al servidor para mover el mensaje de correo electrónico a la carpeta Elementos eliminados. Los valores de algunos elementos y atributos se han abreviado para mejorar la legibilidad.
   

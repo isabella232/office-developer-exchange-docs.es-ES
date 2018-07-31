@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 60ac3f7b-ba8a-4c93-99f7-c27002caff93
 description: Obtenga información sobre las opciones para administrar el acceso de la aplicación de cliente a EWS.
-ms.openlocfilehash: 29a640178afc9814a0b2232225ae4307e49afed2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: e3a0e07b733b4ebc070ab6b3fc73c8aec4b62785
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19762996"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353066"
 ---
 # <a name="controlling-client-application-access-to-ews-in-exchange"></a>Controlar el acceso de la aplicación de cliente para EWS en Exchange
 
@@ -34,7 +34,8 @@ El administrador del servidor de prueba o de producción puede configurar el con
     
 Las aplicaciones se identifican mediante la cadena de agente de usuario que se envían en la solicitud web HTTP.
   
-> [! Nota de seguridad]-nivel de la aplicación no es una característica de seguridad bloqueo. La cadena de agente de usuario es suplantar fácilmente. Si se permite el acceso a EWS en una aplicación, la aplicación debe presentar las credenciales que se autentica el servidor antes de la aplicación puede conectarse a EWS. 
+> [!IMPORTANT]
+> Bloqueo de nivel de la aplicación no es una característica de seguridad. La cadena de agente de usuario es suplantar fácilmente. Si se permite el acceso a EWS en una aplicación, la aplicación debe presentar las credenciales que se autentica el servidor antes de la aplicación puede conectarse a EWS. 
   
 Los administradores también pueden configurar el control de acceso para los propietarios de buzón de correo que se conectan a EWS de las siguientes maneras: 
   
@@ -69,12 +70,9 @@ Para habilitar cuentas de suplantación, el administrador del servidor de prueba
 
 Los administradores usar los siguientes cmdlets del Shell de administración de Exchange para configurar el acceso a controles de EWS: 
   
-- [Get-CASMailbox](http://technet.microsoft.com/en-us/library/bb124754.aspx)
-    
-- [Set-CASMailbox](http://technet.microsoft.com/en-us/library/bb125264.aspx)
-    
-- [Get-OrganizationConfig](http://technet.microsoft.com/en-us/library/aa997571.aspx)
-    
+- [Get-CASMailbox](http://technet.microsoft.com/en-us/library/bb124754.aspx)   
+- [Set-CASMailbox](http://technet.microsoft.com/en-us/library/bb125264.aspx)   
+- [Get-OrganizationConfig](http://technet.microsoft.com/en-us/library/aa997571.aspx)   
 - [Set-OrganizationConfig](http://technet.microsoft.com/en-us/library/aa997443.aspx)
     
 ## <a name="see-also"></a>Vea también

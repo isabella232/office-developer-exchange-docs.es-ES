@@ -1,5 +1,5 @@
 ---
-title: Excluye
+title: Excludes
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,14 +12,14 @@ api_type:
 - schema
 ms.assetid: bbaeddf6-9a67-4ee0-af99-7a7a5bbdc0e1
 description: El elemento excluye realiza una máscara de bit a bit de la propiedad especificada y un valor suministrado.
-ms.openlocfilehash: 73e4eb782a4f54c113ea9a9b67fcf185a9028153
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: febd4171210319d8f7e475f9879c5f895f508713
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764481"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354389"
 ---
-# <a name="excludes"></a>Excluye
+# <a name="excludes"></a>Excludes
 
 El elemento **excluye** realiza una máscara de bit a bit de la propiedad especificada y un valor suministrado. 
   
@@ -30,7 +30,22 @@ El elemento **excluye** realiza una máscara de bit a bit de la propiedad especi
 </Excludes>
 ```
 
- **ExcludesType**
+```xml
+<Excludes>
+   <ExtendedFieldURI/> 
+   <Bitmask/>
+</Excludes>
+```
+
+```xml
+<Excludes>
+   <IndexedFieldURI/> 
+   <Bitmask/>
+</Excludes>
+```
+
+**ExcludesType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -46,7 +61,7 @@ Ninguno.
 |[FieldURI](fielduri.md) <br/> |Identifica las propiedades con frecuencia que se hace referencia mediante un identificador URI.  <br/> |
 |[IndexedFieldURI](indexedfielduri.md) <br/> |Identifica a los miembros individuales de un diccionario.  <br/> |
 |[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifica las propiedades MAPI.  <br/> |
-|[Máscara de bits](bitmask.md) <br/> |Representa una máscara de hexadecimal o decimal que se utilizará durante una operación de restricción [excluye](excludes.md) . Si la máscara de bits representa un número hexadecimal, deben ir precedido por 0 x o 0 X. De lo contrario, se considerará un número decimal.  <br/> |
+|[Bitmask](bitmask.md) <br/> |Representa una máscara de hexadecimal o decimal que se utilizará durante una operación de restricción [excluye](excludes.md) . Si la máscara de bits representa un número hexadecimal, deben ir precedido por 0 x o 0 X. De lo contrario, se considerará un número decimal.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -59,13 +74,13 @@ Ninguno.
    
 ## <a name="remarks"></a>Comentarios
 
- **Excluye** se puede resolver en **true** si y realizada una operación en la siguiente se resuelve en 0: 
+**Excluye** se puede resolver en **true** si y realizada una operación en la siguiente se resuelve en 0: 
   
 1. El valor de la propiedad bit a bit
     
 2. El valor de máscara de bits para la propiedad
     
- **Excluye** solo se puede aplicar a una propiedad que tiene un valor entero. Si el tipo de propiedad no es un entero, se devuelve un código de error de **ErrorUnsupportedPathForQuery** en la respuesta. 
+**Excluye** solo se puede aplicar a una propiedad que tiene un valor entero. Si el tipo de propiedad no es un entero, se devuelve un código de error de **ErrorUnsupportedPathForQuery** en la respuesta. 
   
 Puede realizar la operación inversa mediante una llamada a Not(Excludes).
   
@@ -81,8 +96,6 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Puede estar vacío  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Vea también
-
-
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

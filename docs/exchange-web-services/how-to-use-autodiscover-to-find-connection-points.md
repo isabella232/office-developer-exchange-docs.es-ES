@@ -1,19 +1,19 @@
 ---
-title: Usar detección automática para buscar puntos de conexión
+title: Usar autodetección para buscar puntos de conexión
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 03896542-549b-4c45-973c-98f9025ea26c
 description: Descubra cómo usar el servicio Detección automática para indicar a su aplicación de cliente al servidor de Exchange correcto.
-ms.openlocfilehash: 653fcd1c094c23c3e89e903b7194b96720802b51
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: eb3fb3664e5789638c097a43cf48f757bb0713ae
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763185"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353983"
 ---
-# <a name="use-autodiscover-to-find-connection-points"></a>Usar detección automática para buscar puntos de conexión
+# <a name="use-autodiscover-to-find-connection-points"></a>Usar autodetección para buscar puntos de conexión
 
 Descubra cómo usar el servicio Detección automática para indicar a su aplicación de cliente al servidor de Exchange correcto.
   
@@ -25,24 +25,23 @@ Para obtener información acerca de cómo obtener los valores de configuración 
 > El proceso para buscar el extremo correcto es parte de la solicitud de configuración de usuario o dominio. El servicio Detección automática usa una serie de respuestas de redirección para enviar la aplicación cliente en el extremo correcto para una dirección de correo electrónico. 
   
 Puede usar una de las siguientes tecnologías de desarrollo de Exchange para tener acceso al servicio de detección automática:
-  
-> [!NOTE]
-> Para obtener más información acerca de estas tecnologías de desarrollo de Exchange, vea [Explorar la API administrada de EWS, EWS y web de servicios de Exchange](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md). 
-  
+
 - La API administrada de servicios Web Exchange (EWS)
     
 - EWS
     
-    Si usa EWS, puede usar los métodos siguientes para recuperar la configuración de usuario:
+Si usa EWS, puede usar los métodos siguientes para recuperar la configuración de usuario:
     
-  - El servicio Detección automática basado en SOAP
+- El servicio Detección automática basado en SOAP
     
-  - El servicio Detección automática XML (POX)
+- El servicio Detección automática XML (POX)
     
-  - Un proxy generado automáticamente se ha generado del servicio Detección automática de XML o SOAP
+- Un proxy generado automáticamente se ha generado del servicio Detección automática de XML o SOAP
     
-    Para obtener más información acerca de estos métodos, vea [detección automática de Exchange](autodiscover-for-exchange.md).
-    
+Para obtener más información acerca de estos métodos, vea [detección automática de Exchange](autodiscover-for-exchange.md).
+
+Para obtener más información acerca de estas tecnologías de desarrollo de Exchange, vea [Explorar la API administrada de EWS, EWS y web de servicios de Exchange](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md). 
+
 La API administrada de EWS proporciona una interfaz basada en objetos para recuperar la configuración de usuario. Si su aplicación cliente usa un código administrado, le recomendamos que use la API administrada de EWS. La interfaz de la API administrada de EWS está mejor optimizada para un modelo de objetos simples que el típico proxy de servicio web generado automáticamente.  
   
 Si está usando EWS, le sugerimos que use el servicio Detección automática de SOAP, ya que admite un conjunto superior de características que el servicio Detección automática de POX.
@@ -131,7 +130,8 @@ En el ejemplo siguiente se muestra una solicitud XML que se envía al servicio d
 
 El servicio Detección automática puede responder con una de las dos respuestas de redirección: una redirección HTTP 302 o una respuesta de redirección de SOAP. Si la respuesta del servidor de Exchange es un redireccionamiento 302 de HTTP, la aplicación cliente debe validar que la dirección de redireccionamiento es aceptable y, a continuación, siga la respuesta de redirección.
   
-> [! Nota de seguridad] para criterios para validar una respuesta de redirección, vea [detección automática de Exchange](autodiscover-for-exchange.md). 
+> [!IMPORTANT]
+> Para los criterios de validación de una respuesta de redirección, vea [detección automática de Exchange](autodiscover-for-exchange.md). 
   
 Si el servicio Detección automática devuelve una respuesta de redirección, indicada por el elemento [ErrorCode](http://msdn.microsoft.com/library/0bb00cee-c66b-4f34-b99d-355458f5e83b%28Office.15%29.aspx) del elemento **UserResponse** , la aplicación cliente debe usar el elemento **RedirectTarget** para crear una nueva solicitud de configuración que es se envían al servidor especificado en la respuesta de redirección. En el ejemplo siguiente se muestra una respuesta de redirección desde el servidor. 
   
@@ -249,24 +249,19 @@ Cuando haya se ha indicado a la aplicación cliente para el extremo correcto par
 </s:Envelope>
 ```
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 <a name="bk_Next"> </a>
 
 Buscar el extremo siguiendo el proceso de detección automática devuelve el dominio solicitado o la configuración del usuario. Para obtener información acerca de cómo realizar una solicitud para configuraciones específicas, vea los siguientes artículos:
   
-- [Obtener la configuración de dominio de un servidor de Exchange](how-to-get-domain-settings-from-an-exchange-server.md)
-    
+- [Obtener la configuración de dominio de un servidor de Exchange](how-to-get-domain-settings-from-an-exchange-server.md)    
 - [Obtener la configuración de usuario de Exchange mediante el uso de detección automática](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
     
 ## <a name="see-also"></a>Vea también
 
-
-- [Configurar una aplicación de EWS](setting-up-your-ews-application.md)
-    
-- [Detección automática de Exchange](autodiscover-for-exchange.md)
-    
-- [Referencia de servicio web de detección automática para Exchange](http://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)
-    
+- [Configurar la aplicación EWS](setting-up-your-ews-application.md)   
+- [Detección automática de Exchange](autodiscover-for-exchange.md)    
+- [Referencia de servicio web de detección automática para Exchange](http://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)    
 - [Referencia EWS para Exchange](http://msdn.microsoft.com/library/2a873474-1bb2-4cb1-a556-40e8c4159f4a%28Office.15%29.aspx)
     
 

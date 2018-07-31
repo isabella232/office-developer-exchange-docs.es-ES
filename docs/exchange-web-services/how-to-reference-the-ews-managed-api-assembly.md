@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 130990db-6297-42dc-9f5d-f68a2400872a
 description: Obtenga información acerca de cómo hacer referencia al ensamblado de la API administrada de EWS.
-ms.openlocfilehash: af7b1ec449c24e7fa4db89abb30e5ebc9f8d329e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: a08ce43d139440186f611049fa1e457ea44f0362
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763161"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353689"
 ---
 # <a name="reference-the-ews-managed-api-assembly"></a>Hacer referencia al ensamblado de la API administrada de EWS
 
@@ -20,7 +20,12 @@ Obtenga información acerca de cómo hacer referencia al ensamblado de la API ad
 La API administrada de EWS proporciona una interfaz simple y completas para desarrollar y ampliación de las aplicaciones que usan servicios Web de Exchange (EWS). Si usa Visual Studio u otro editor de código para desarrollar la aplicación de la API administrada de EWS, debe hacer referencia al ensamblado de la API administrada de EWS. Si no ha instalado la API administrada de EWS ya, asegúrese de [Descargar la API](http://aka.ms/ews-managed-api-readme).
   
 > [!NOTE]
->  [!NOTA]  La API administrada EWS ya está disponible como un proyecto de código abierto en [GitHub](https://github.com/officedev/ews-managed-api). Puede usar la biblioteca de código abierto para: >  Contribuir con correcciones de errores y mejoras a la API. >  Obtener correcciones y mejoras antes de que estén disponibles en una versión oficial. >  Tener acceso a una implementación más completa y actualizada de la API, para usarla como referencia o para crear nuevas bibliotecas en nuevas plataformas. >  Le agradecemos las [aportaciones](https://github.com/OfficeDev/ews-managed-api/blob/master/CONTRIBUTING.md) que realice a través de GitHub. 
+> [!NOTA] La API administrada EWS ya está disponible como un proyecto de código abierto en [GitHub](https://github.com/officedev/ews-managed-api). Puede usar la biblioteca de código abierto para: 
+> - Contribuir con correcciones de errores y mejoras a la API. 
+> - Obtener correcciones y mejoras antes de que estén disponibles en una versión oficial. 
+> - Tener acceso a una implementación más completa y actualizada de la API, para usarla como referencia o para crear nuevas bibliotecas en nuevas plataformas. 
+> 
+>  Le agradecemos sus [contribuciones](https://github.com/OfficeDev/ews-managed-api/blob/master/CONTRIBUTING.md) a través de depósito. 
   
 ## <a name="referencing-the-assembly"></a>Hacer referencia al ensamblado
 

@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 48e7e067-049c-4184-8026-071e6f558e8a
 description: El elemento IsEqualTo representa una expresión de búsqueda que compara una propiedad con un valor constante u otra propiedad y se evalúa como true si son iguales.
-ms.openlocfilehash: a7a7deed79c271be74bb2ff16dd86605d468721b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 733032819e6875fa878c1cd631d173a1c48ecdfe
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836013"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353164"
 ---
 # <a name="isequalto"></a>IsEqualTo
 
@@ -30,7 +30,22 @@ El elemento **IsEqualTo** representa una expresión de búsqueda que compara una
 </IsEqualTo>
 ```
 
- **IsEqualToType**
+```xml
+<IsEqualTo>
+   <ExtendedFieldURI/>
+   <FieldURIOrConstant/>
+</IsEqualTo>
+```
+
+```xml
+<IsEqualTo>
+   <IndexedFieldURI/> 
+   <FieldURIOrConstant/>
+</IsEqualTo>
+```
+
+**IsEqualToType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -73,8 +88,6 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Puede estar vacío  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Vea también
-
-
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 85284fcb-bd1e-4fda-9dab-cb4cd637cd5b
 description: El elemento SetItemField representa una actualización para una única propiedad de un elemento en una operación UpdateItem.
-ms.openlocfilehash: 012e6ae21af653b4bf12588e5a97334a62884059
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: bd3e5bca3d61325ef3f218c5ada535346247f391
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837439"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353801"
 ---
 # <a name="setitemfield"></a>SetItemField
 
@@ -30,7 +30,212 @@ El elemento **SetItemField** representa una actualización para una única propi
 </SetItemField>
 ```
 
- **SetItemFieldType**
+```xml
+<SetItemField>
+   <ExtendedFieldURI/> 
+   <Item/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <ExtendedFieldURI/> 
+   <MeetingRequest/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <ExtendedFieldURI/> 
+   <MeetingResponse/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <IndexedFieldURI/> 
+   <Contact/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <IndexedFieldURI/> 
+   <DistributionList/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <IndexedFieldURI/> 
+   <MeetingResponse/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <FieldURI/> 
+   <MeetingResponse/> 
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <FieldURI/> 
+   <MeetingRequest/> 
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <FieldURI/> 
+   <Contact/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <IndexedFieldURI/> 
+   <Message/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <ExtendedFieldURI/> 
+   <CalendarItem/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <ExtendedFieldURI/> 
+   <Task/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <ExtendedFieldURI/> 
+   <Message/> 
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <FieldURI/> 
+   <MeetingCancellation/> 
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <FieldURI/> 
+   <Task/> 
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <IndexedFieldURI/> 
+   <MeetingRequest/>  
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+    <FieldURI/> 
+    <CalendarItem/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+    <IndexedFieldURI/> 
+    <Item/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <ExtendedFieldURI/> 
+   <MeetingCancellation/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <FieldURI/> 
+   <DistributionList/> 
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <IndexedFieldURI/> 
+   <MeetingCancellation/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <ExtendedFieldURI/> 
+   <MeetingMessage/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <IndexedFieldURI/> 
+   <Task/> 
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <IndexedFieldURI/> 
+   <CalendarItem/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <FieldURI/> 
+   <MeetingMessage/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <IndexedFieldURI/> 
+   <MeetingMessage/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <FieldURI/> 
+   <Message/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <ExtendedFieldURI/> 
+   <DistributionList/>
+</SetItemField>
+```
+
+```xml
+<SetItemField>
+   <ExtendedFieldURI/> 
+   <Contact/> 
+</SetItemField>
+```
+
+
+**SetItemFieldType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -61,7 +266,7 @@ Ninguno.
 
 |**Element**|**Descripción**|
 |:-----|:-----|
-|[Actualizaciones (elemento)](updates-item.md) <br/> |Contiene un conjunto de elementos que definen append, establecer y eliminar los cambios realizados en las propiedades de elementos.  <br/> |
+|[Updates (Elemento)](updates-item.md) <br/> |Contiene un conjunto de elementos que definen append, establecer y eliminar los cambios realizados en las propiedades de elementos.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -78,7 +283,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
    
 ## <a name="see-also"></a>Vea también
 
-
-
-[Operación UpdateItem](updateitem-operation.md)
+- [Operación UpdateItem](updateitem-operation.md)
 

@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: ca1309f4-2df7-4289-811c-75c3db0e7072
 description: El elemento ModifiedEvent representa un evento en el que se modifica una carpeta o elemento.
-ms.openlocfilehash: fb464fb0a270d8ca7d33d40e5425e260970b2f1e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 2e9fb870396d49efb5cdf307a502b4111c2e507e
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836482"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353815"
 ---
 # <a name="modifiedevent"></a>ModifiedEvent
 
@@ -33,7 +33,18 @@ El elemento **ModifiedEvent** representa un evento en el que se modifica una car
 </ModifiedEvent>
 ```
 
- **ModifiedEventType**
+```xml
+<ModifiedEvent>
+   <Watermark/>
+   <TimeStamp/>
+   <ItemId/> 
+   <ParentFolderId/>
+   <UnreadCount/>
+</ModifiedEvent>
+```
+
+**ModifiedEventType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -46,11 +57,11 @@ Ninguno.
 
 |**Element**|**Descripción**|
 |:-----|:-----|
-|[Marca de agua](watermark.md) <br/> |Representa un marcador de evento en la tabla de eventos de buzón de correo.  <br/> |
-|[Marca de tiempo](timestamp.md) <br/> |Representa la marca de hora de un evento de buzón de carpeta o elemento modificado.  <br/> |
+|[Watermark](watermark.md) <br/> |Representa un marcador de evento en la tabla de eventos de buzón de correo.  <br/> |
+|[TimeStamp](timestamp.md) <br/> |Representa la marca de hora de un evento de buzón de carpeta o elemento modificado.  <br/> |
 |[FolderId](folderid.md) <br/> |Representa el identificador de la carpeta modificada.  <br/> |
 |[ItemId](itemid.md) <br/> |Representa el identificador del elemento modificado.  <br/> |
-|[Id](parentfolderid.md) <br/> |Representa el identificador de la carpeta principal de la carpeta o el elemento modificado.  <br/> |
+|[ParentFolderId](parentfolderid.md) <br/> |Representa el identificador de la carpeta principal de la carpeta o el elemento modificado.  <br/> |
 |[UnreadCount](unreadcount.md) <br/> |Representa el recuento de elementos no leídos dentro de una carpeta determinada.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
@@ -76,11 +87,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
    
 ## <a name="see-also"></a>Vea también
 
-
-
-[Operación de suscripción](subscribe-operation.md)
-  
-[Operación GetEvents](getevents-operation.md)
-  
-[Cancelar la operación de suscripción](unsubscribe-operation.md)
+- [Operación Subscribe](subscribe-operation.md)  
+- [Operación GetEvents](getevents-operation.md)  
+- [Operación Unsubscribe](unsubscribe-operation.md)
 

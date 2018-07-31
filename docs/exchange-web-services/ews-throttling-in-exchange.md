@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b4fff4c9-c625-4d2a-9d14-bb28a5da5baf
 description: Obtenga información acerca de las directivas de limitación que afectan a EWS cuando se usa Exchange.
-ms.openlocfilehash: e7966f67753b3998235e000a022e41c90fa227b8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 64393c173a6fc60cd4be969e8c7457d5b0109713
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763061"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354018"
 ---
 # <a name="ews-throttling-in-exchange"></a>EWS limitación en Exchange
 
@@ -110,9 +110,11 @@ Puede establecer la directiva en un servidor de Exchange de limitación mediante
   
 > [!TIP]
 > Se recomienda que diseñe sus aplicaciones para que se ajustan a la directiva de limitación predeterminada. Sólo puede realizar cambios en las directivas de limitación si el diseño de la aplicación de cliente no puede dar cabida a la directiva predeterminada predeterminada. Tenga en cuenta que las directivas de limitación menos restrictivas pueden afectar negativamente a la confiabilidad de los servicios. 
-  
-## <a name="throttling-considerations-for-applications-that-use-ews-impersonation"></a>Consideraciones sobre la limitación de peticiones para las aplicaciones que usan la suplantación de EWS
+
 <a name="bk_ThrottlingConsiderations"> </a>
+
+## <a name="throttling-considerations-for-applications-that-use-ews-impersonation"></a>Consideraciones sobre la limitación de peticiones para las aplicaciones que usan la suplantación de EWS
+
 
 [La suplantación](impersonation-and-ews-in-exchange.md) es un método de autorización que permite una única cuenta tener acceso a muchas cuentas. Cuando suplanta una cuenta de servicio a los usuarios, actúa como los usuarios y, por tanto, se da por supuesto los derechos que se asignan a los usuarios. Los archivos de registro registran el acceso como el usuario suplantado. Los administradores usar control de acceso basado en roles (RBAC) para configurar la suplantación a través de la consola de administración de Exchange. 
   
@@ -222,20 +224,22 @@ while (fiResults.MoreAvailable == true);
 
 Simultaneidad hace referencia al número de conexiones de un usuario específico. Una conexión se mantiene desde el momento en que se recibe una solicitud hasta que se envía una respuesta al solicitante. Si los usuarios intentan realizar más peticiones simultáneas que permite su directiva, se produce un error en el intento de conexión nueva. Sin embargo, las conexiones existentes permanecen válidas. Limitación de las directivas puede afectar a la simultaneidad en un número de formas diferentes.
   
-El parámetro de directiva de limitación de peticiones **EWSMaxConcurrency** establece el número de conexiones simultáneas que puede tener un usuario específico en un servidor de Exchange a la vez. Para determinar el número máximo de conexiones simultáneas para permitir, considere la posibilidad de las conexiones que va a usar los clientes de Outlook. Outlook 2007 y Outlook 2010 usan EWS para obtener acceso a la disponibilidad y la información de fuera de oficina (OOF). Mac Outlook 2011 usa EWS para toda la funcionalidad de acceso cliente. Según la cantidad de clientes de Outlook que se conecta activamente al buzón de un usuario, el número de conexiones simultáneas disponibles para un usuario podría estar limitado. Además, si tiene la aplicación para conectarse a varios buzones simultáneamente durante el uso de un contexto de seguridad único, es importante tener el valor de la directiva de **EWSMaxConcurrency** en cuenta. Para obtener más información acerca del uso de un contexto de seguridad único con conexiones simultáneas, vea [Consideraciones de la limitación para las aplicaciones que usan la suplantación de EWS](http://msdn.microsoft.com/library/961f773a-8b8e-4b4f-a4b9-64305e107ca4.aspx#bk_ThrottlingConsiderations) anteriormente en este artículo. 
+El parámetro de directiva de limitación de peticiones **EWSMaxConcurrency** establece el número de conexiones simultáneas que puede tener un usuario específico en un servidor de Exchange a la vez. Para determinar el número máximo de conexiones simultáneas para permitir, considere la posibilidad de las conexiones que va a usar los clientes de Outlook. Outlook 2007 y Outlook 2010 usan EWS para obtener acceso a la disponibilidad y la información de fuera de oficina (OOF). Mac Outlook 2011 usa EWS para toda la funcionalidad de acceso cliente. Según la cantidad de clientes de Outlook que se conecta activamente al buzón de un usuario, el número de conexiones simultáneas disponibles para un usuario podría estar limitado. Además, si tiene la aplicación para conectarse a varios buzones simultáneamente durante el uso de un contexto de seguridad único, es importante tener el valor de la directiva de **EWSMaxConcurrency** en cuenta. Para obtener más información acerca del uso de un contexto de seguridad único con conexiones simultáneas, vea [Consideraciones de la limitación para las aplicaciones que usan la suplantación de EWS](#bk_ThrottlingConsiderations) anteriormente en este artículo. 
   
 Aplicaciones que se conectan simultáneamente a varios buzones de correo tienen que puedan realizar un seguimiento de uso de recursos en el lado del cliente. Debido a que las operaciones de EWS están basados en solicitud/respuesta, puede asegurarse de la función de las aplicaciones también dentro del umbral de **EWSMaxConcurrency** por el número de conexiones que se producen entre el inicio de una solicitud y cuando la respuesta de seguimiento recibidos y asegurarse de que no más de diez abrir solicitudes se producen simultáneamente. 
   
 El parámetro de directiva **EWSFindCountLimit** especifica el tamaño máximo de resultados que una operación **FindItem** o **FindFolder** puede usar en un servidor de acceso de cliente al mismo tiempo para un usuario. Si una aplicación (o potencialmente varias aplicaciones) realiza dos solicitudes simultáneas de EWS **FindItem** que devuelven 100 elementos para un usuario específico, el cargo de **EWSFindCountLimit** frente a presupuesto de ese usuario específico será 200. Cuando se devuelve la primera solicitud, el presupuesto se coloca a 100 y, cuando se devuelve la segunda solicitud de, el presupuesto disminuye a cero. Si la misma aplicación eran realizar dos solicitudes simultáneas de 1000 elementos, el valor de presupuesto sería 2.000 elementos, que supera el valor de **EWSFindCountLimit** . Si presupuesto del usuario para elementos cae por debajo de cero, la siguiente solicitud da como resultado un error hasta que se recarga presupuesto del usuario a uno o más. 
+
+<a name="bk_ThrottlingNotifications"> </a>
   
 ## <a name="throttling-considerations-for-ews-notification-applications"></a>Consideraciones sobre la limitación EWS para aplicaciones de notificaciones
-<a name="bk_ThrottlingNotifications"> </a>
+
 
 Si va a crear la notificación de EWS aplicaciones hacen uso de inserción, extracción o transmisión por secuencias de notificaciones, debe tener en cuenta las implicaciones de la **EWSMaxSubscriptions** y las directivas de limitación de peticiones de **EWSMaxConcurrency** y el ** HangingConnectionLimit**. 
   
 El parámetro de directiva **EWSMaxSubscriptions** especifica el número máximo de inserción activo, de extracción y suscripciones de transmisión por secuencias que puede tener un usuario en un servidor de acceso de cliente específico al mismo tiempo. Las diferentes versiones de Exchange tienen valores predeterminados diferentes para este parámetro. Un usuario puede suscribirse a todas las carpetas de un buzón de correo mediante el uso de la propiedad **SubscribeToAllFolders** - esto usa una sola suscripción con respecto al presupuesto **EWSMaxSubscriptions** . Los usuarios pueden suscribirse a carpetas individuales, con cada carpeta suscripción contando hacia el presupuesto **EWSMaxSubscriptions** , hasta el límite establecido por el valor del parámetro **EWSMaxSubscriptions** (por ejemplo, los usuarios pueden suscribirse a calendario de 20 carpetas de buzones diferentes si **EWSMaxSubscriptions** está establecido en 20). 
   
-Para obtener información acerca de la suplantación y el parámetro **EWSMaxSubscriptions** , vea [Consideraciones de la limitación para las aplicaciones que usan la suplantación de EWS](ews-throttling-in-exchange.md#bk_ThrottlingConsiderations) anteriormente en este artículo. 
+Para obtener información acerca de la suplantación y el parámetro **EWSMaxSubscriptions** , vea [Consideraciones de la limitación para las aplicaciones que usan la suplantación de EWS](#bk_ThrottlingConsiderations) anteriormente en este artículo. 
   
 El parámetro de directiva de **EWSMaxConcurrency** también puede ser un problema para las notificaciones de EWS; Por ejemplo: 
   

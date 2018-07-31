@@ -12,22 +12,20 @@ api_type:
 - schema
 ms.assetid: 23279750-131b-4e1a-b7d1-be235c4e0891
 description: El elemento FolderChange representa una colección de los cambios que se debe realizar en una sola carpeta.
-ms.openlocfilehash: 3f8b42ff4ac88eaef53d1d4ec1d61212bc14b8c7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: f25defa9974f7b5dd0c683c7657983741890d45d
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764679"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354333"
 ---
 # <a name="folderchange"></a>FolderChange
 
 El elemento **FolderChange** representa una colección de los cambios que se debe realizar en una sola carpeta. 
   
-[UpdateFolder](updatefolder.md)
-  
-[FolderChanges](folderchanges.md)
-  
-[FolderChange](folderchange.md)
+- [UpdateFolder](updatefolder.md) 
+- [FolderChanges](folderchanges.md) 
+- [FolderChange](folderchange.md)
   
 ```xml
 <FolderChange>
@@ -36,7 +34,15 @@ El elemento **FolderChange** representa una colección de los cambios que se deb
 </FolderChange>
 ```
 
- **FolderChangeType**
+```xml
+<FolderChange>
+   <DistinguishedFolderId/>
+   <Updates/>
+</FolderChange>
+```
+
+**FolderChangeType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -51,7 +57,7 @@ Ninguno.
 |:-----|:-----|
 |[FolderId](folderid.md) <br/> |Contiene el identificador y cambiar la clave de una carpeta que se va a actualizar.  <br/> |
 |[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifica las carpetas de MicrosoftExchange Server 2007 que se pueden hacer referencia por su nombre.  <br/> |
-|[Actualizaciones (carpeta)](updates-folder.md) <br/> |Define el tipo de actualización que se lleva a cabo en una carpeta que se identifica con el elemento el [FolderId](folderid.md) o [DistinguishedFolderId](distinguishedfolderid.md) .  <br/> |
+|[Updates (Carpeta)](updates-folder.md) <br/> |Define el tipo de actualización que se lleva a cabo en una carpeta que se identifica con el elemento el [FolderId](folderid.md) o [DistinguishedFolderId](distinguishedfolderid.md) .  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -74,7 +80,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
    
 ## <a name="see-also"></a>Vea también
 
-
-
-[Operación UpdateFolder](updatefolder-operation.md)
+- [Operación UpdateFolder](updatefolder-operation.md)
 

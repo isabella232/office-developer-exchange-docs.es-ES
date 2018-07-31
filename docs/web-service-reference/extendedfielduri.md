@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: b3c6ea3a-9ead-44b9-9d99-64ecf12bde23
 description: El elemento ExtendedFieldURI identifica una propiedad MAPI extendida.
-ms.openlocfilehash: 8d946aec8ae2c5e6bb4ca3f1d8ee74250262d373
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 50ce46652863b0c534d09d58d4b9f7c8095deef2
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764519"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353794"
 ---
 # <a name="extendedfielduri"></a>ExtendedFieldURI
 
@@ -27,7 +27,8 @@ El elemento **ExtendedFieldURI** identifica una propiedad MAPI extendida.
 <ExtendedFieldURI DistinguishedPropertySetId="" PropertySetId="" PropertyTag="" PropertyName="" PropertyId="" PropertyType="" />
 ```
 
- **PathToExtendedFieldType**
+**PathToExtendedFieldType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -36,12 +37,12 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 
 |**Attribute**|**Descripción**|
 |:-----|:-----|
-|**DistinguishedPropertySetId** <br/> |Define la conocida (propiedad) establece los identificadores de las propiedades extendidas de MAPI.  <br/> Si se usa este atributo, no se puede usar los atributos **PropertySetId** y **PropertyTag** . Este atributo se debe usar con la **PropertyId** o **PropertyName** atributos y **PropertyType** .  <br/> La tabla de atributos **DistinguishedPropertySetId** más adelante en este tema enumera los valores posibles para este atributo.  <br/> Este atributo es opcional.  <br/> |
-|**PropertySetId** <br/> |Identifica una MAPI extendida de la propiedad set o espacio de nombres por su GUID que identifica.  <br/> Si se usa este atributo, no se puede usar el atributo **DistinguishedPropertySetId** y **PropertyTag** . Este atributo se debe usar con la **PropertyId** o **PropertyName** atributos y **PropertyType** .  <br/> Este atributo es opcional.  <br/> |
-|**PropertyTag** <br/> |Identifica a la etiqueta de la propiedad sin el elemento de tipo de la etiqueta. El **PropertyTag** se puede representar como valor hexadecimal o entero corto.  <br/> El intervalo entre 0 x 8000 y 0xFFFE representa el intervalo de propiedades personalizado. Cuando una base de datos de buzón de correo encuentra una propiedad personalizada por primera vez, asigna esa propiedad personalizada una etiqueta de propiedad dentro del intervalo de propiedad personalizada de 0 x 8000 0xFFFE. Es muy probable que será diferentes en una etiqueta de propiedad personalizada especificada a través de las bases de datos. Por lo tanto, una solicitud de propiedad personalizada mediante la etiqueta de la propiedad puede devolver distintas propiedades en las bases de datos diferentes. Se prohíbe el uso del atributo **PropertyTag** para las propiedades personalizadas. En su lugar, use el atributo **PropertySetId** y el atributo **PropertyName** o **PropertyId** .  <br/> > [!IMPORTANT]> Tener acceso a cualquier propiedad personalizada entre 0 x 8000 y 0xFFFE mediante el GUID + nombre o identificador.           Si se usa el atributo **PropertyTag** , no se puede usar los atributos **DistinguishedPropertySetId**, **PropertySetId**, **PropertyName**y **PropertyId** .  <br/> Este atributo es opcional.  <br/> > [!NOTE]> No puede usar un atributo de etiqueta de propiedad para las propiedades dentro del intervalo personalizado 0 x 8000 0xFFFE. En este caso debe utilizar una propiedad con nombre.           |
-|**PropertyName** <br/> |Identifica una propiedad extendida por su nombre. Esta propiedad debe ser junto con **DistinguishedPropertySetId** o **PropertySetId**.  <br/> Si se usa este atributo, no se puede usar los atributos **PropertyId** y **PropertyTag** .  <br/> Este atributo es opcional.  <br/> |
-|**PropertyId** <br/> |Identifica una propiedad extendida por su identificador de envío. El identificador de envío se puede identificar en formatos de decimales o hexadecimales. Esta propiedad debe ser junto con **DistinguishedPropertySetId** o **PropertySetId**.  <br/> Si se usa este atributo, no se puede usar los atributos **PropertyName** y **PropertyTag** .  <br/> Este atributo es opcional.  <br/> |
-|**PropertyType** <br/> |Representa el tipo de propiedad de una etiqueta de propiedad. Esto corresponde a la palabra menos significativa en una etiqueta de propiedad.  <br/> La tabla de atributos de PropertyType más adelante en este tema contiene los valores posibles para este atributo.  <br/> Este atributo es necesario.  <br/> |
+|**DistinguishedPropertySetId** <br/> |Define la conocida (propiedad) establece los identificadores de las propiedades extendidas de MAPI.<br/><br/>Si se usa este atributo, no se puede usar los atributos **PropertySetId** y **PropertyTag** . Este atributo se debe usar con la **PropertyId** o **PropertyName** atributos y **PropertyType** .<br/><br/>La tabla de atributos **DistinguishedPropertySetId** más adelante en este tema enumera los valores posibles para este atributo.<br/><br/>Este atributo es opcional.  <br/> |
+|**PropertySetId** <br/> |Identifica una MAPI extendida de la propiedad set o espacio de nombres por su GUID que identifica.<br/><br/>Si se usa este atributo, no se puede usar el atributo **DistinguishedPropertySetId** y **PropertyTag** . Este atributo se debe usar con la **PropertyId** o **PropertyName** atributos y **PropertyType** .<br/><br/>Este atributo es opcional.  <br/> |
+|**PropertyTag** <br/> |Identifica a la etiqueta de la propiedad sin el elemento de tipo de la etiqueta. El **PropertyTag** se puede representar como valor hexadecimal o entero corto.<br/><br/>El intervalo entre 0 x 8000 y 0xFFFE representa el intervalo de propiedades personalizado. Cuando una base de datos de buzón de correo encuentra una propiedad personalizada por primera vez, asigna esa propiedad personalizada una etiqueta de propiedad dentro del intervalo de propiedad personalizada de 0 x 8000 0xFFFE. Es muy probable que será diferentes en una etiqueta de propiedad personalizada especificada a través de las bases de datos. Por lo tanto, una solicitud de propiedad personalizada mediante la etiqueta de la propiedad puede devolver distintas propiedades en las bases de datos diferentes. Se prohíbe el uso del atributo **PropertyTag** para las propiedades personalizadas. En su lugar, use el atributo **PropertySetId** y el atributo **PropertyName** o **PropertyId** .<br/><br/>**Importante**: tener acceso a cualquier propiedad personalizada entre 0 x 8000 y 0xFFFE mediante el GUID + nombre o identificador. Si se usa el atributo **PropertyTag** , no se puede usar los atributos **DistinguishedPropertySetId**, **PropertySetId**, **PropertyName**y **PropertyId** .<br/><br/>Este atributo es opcional.<br/><br/>**Nota**: no puede usar un atributo de etiqueta de propiedad para las propiedades dentro del intervalo personalizado 0 x 8000 0xFFFE. En este caso debe utilizar una propiedad con nombre.           |
+|**PropertyName** <br/> |Identifica una propiedad extendida por su nombre. Esta propiedad debe ser junto con **DistinguishedPropertySetId** o **PropertySetId**.<br/><br/>Si se usa este atributo, no se puede usar los atributos **PropertyId** y **PropertyTag** .<br/><br/>Este atributo es opcional.  <br/> |
+|**PropertyId** <br/> |Identifica una propiedad extendida por su identificador de envío. El identificador de envío se puede identificar en formatos de decimales o hexadecimales. Esta propiedad debe ser junto con **DistinguishedPropertySetId** o **PropertySetId**.<br/><br/>Si se usa este atributo, no se puede usar los atributos **PropertyName** y **PropertyTag** .<br/><br/>Este atributo es opcional.  <br/> |
+|**PropertyType** <br/> |Representa el tipo de propiedad de una etiqueta de propiedad. Esto corresponde a la palabra menos significativa en una etiqueta de propiedad.<br/><br/>La tabla de atributos de PropertyType más adelante en este tema contiene los valores posibles para este atributo.<br/><br/>Este atributo es necesario.  <br/> |
    
 #### <a name="distinguishedpropertysetid-attribute"></a>Atributo DistinguishedPropertySetId
 
@@ -64,7 +65,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 |ApplicationTimeArray  <br/> |Una matriz de valores de tipo dos que se interpreta como una fecha y hora.  <br/> |
 |Binario  <br/> |Un valor binario con codificación Base64.  <br/> |
 |BinaryArray  <br/> |Una matriz de valores binarios con codificación Base64.  <br/> |
-|Boolean  <br/> |Un valor booleano **true** o **false**.  <br/> |
+|Booleano  <br/> |Un valor booleano **true** o **false**.  <br/> |
 |CLSID  <br/> |Una cadena GUID.  <br/> |
 |CLSIDArray  <br/> |Una matriz de cadenas GUID.  <br/> |
 |Moneda  <br/> |Un entero de 64 bits que se interpreta como el número de céntimos.  <br/> |
@@ -85,7 +86,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 |ShortArray  <br/> |Una matriz de enteros de 16 bits con signo.  <br/> |
 |SystemTime  <br/> |Un entero de 64 bits datos valor y hora con el formato de una estructura FILETIME.  <br/> |
 |SystemTimeArray  <br/> |Una matriz de valores de fecha y hora de entero de 64 bits con el formato de una estructura FILETIME.  <br/> |
-|Cadena  <br/> |Una cadena Unicode.  <br/> |
+|String  <br/> |Una cadena Unicode.  <br/> |
 |StringArray  <br/> |Una matriz de cadenas Unicode.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
@@ -97,7 +98,7 @@ Ninguno.
 |**Element**|**Descripción**|
 |:-----|:-----|
 |[ExtendedProperty](extendedproperty.md) <br/> |Identifica las propiedades extendidas en carpetas y elementos.  <br/> |
-|[AdditionalProperties](additionalproperties.md) <br/> | Identifica las propiedades adicionales.  <br/>  Los siguientes son las expresiones de XPath para este elemento:  <br/>  `/FindFolder/FolderShape/AdditionalProperties` <br/>  `/GetFolder/FolderShape/AdditionalProperties` <br/>  `/SyncFolderHierarchy/FolderShape/AdditionalProperties` <br/>  `/GetItem/ItemShape/AdditionalProperties` <br/>  `/FindItem/ItemShape/AdditionalProperties` <br/>  `/SyncFolderItems/ItemShape/AdditionalProperties` <br/>  `/GetAttachment/AttachmentShape/AdditionalProperties` <br/> |
+|[AdditionalProperties](additionalproperties.md) <br/> | Identifica las propiedades adicionales.<br/><br/>Los siguientes son las expresiones de XPath para este elemento:<br/><br/>`/FindFolder/FolderShape/AdditionalProperties` <br/>  `/GetFolder/FolderShape/AdditionalProperties` <br/>  `/SyncFolderHierarchy/FolderShape/AdditionalProperties` <br/>  `/GetItem/ItemShape/AdditionalProperties` <br/>  `/FindItem/ItemShape/AdditionalProperties` <br/>  `/SyncFolderItems/ItemShape/AdditionalProperties` <br/>  `/GetAttachment/AttachmentShape/AdditionalProperties` <br/> |
 |[SetItemField](setitemfield.md) <br/> |Representa una actualización para una única propiedad de un elemento en una [operación de UpdateItem](updateitem-operation.md).  <br/> |
 |[SetFolderField](setfolderfield.md) <br/> |Representa una actualización a una propiedad única en una carpeta en una [operación de UpdateFolder](updatefolder-operation.md).  <br/> |
 |[DeleteItemField](deleteitemfield.md) <br/> |Representa una operación de eliminación para eliminar una propiedad determinada de un elemento durante una [operación de UpdateItem](updateitem-operation.md).  <br/> |
@@ -112,7 +113,7 @@ Ninguno.
 |[IsLessThan](islessthan.md) <br/> |Representa una expresión de búsqueda que compara una propiedad con un valor constante u otra propiedad y devuelve **true** si la primera propiedad es menor que el segundo.  <br/> |
 |[IsLessThanOrEqualTo](islessthanorequalto.md) <br/> |Representa una expresión de búsqueda que compara una propiedad con un valor constante u otra propiedad y devuelve **true** si la primera propiedad es menor que el segundo.  <br/> |
 |[IsNotEqualTo](isnotequalto.md) <br/> |Representa una expresión de búsqueda que se compara una propiedad con un valor constante o de otra propiedad y devuelve **true** si los valores no son los mismos.  <br/> |
-|[Excluye](excludes.md) <br/> |Realiza una máscara de bit a bit de las propiedades.  <br/> |
+|[Excludes](excludes.md) <br/> |Realiza una máscara de bit a bit de las propiedades.  <br/> |
 |[Incluye](contains.md) <br/> |Representa una expresión de búsqueda que determina si una propiedad determinada contiene el valor de cadena constante proporcionada.  <br/> |
 |[FieldOrder](fieldorder.md) <br/> |Representa un solo campo por el que se va a ordenar los resultados y se indica la dirección para la ordenación.  <br/> |
    
@@ -123,7 +124,9 @@ Algunos atributos no se puede usar en combinación con otros atributos. Cualquie
 El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
   
 > [!NOTE]
-> En Microsoft. NET, un valor Long es un entero de 64 bits, mientras que en MAPI y COM, un valor Long es un entero de 32 bits. La mayoría de los desarrolladores usará Microsoft.NET Framework para desarrollar aplicaciones de cliente de servicios Web de Exchange. Por lo tanto, la nomenclatura de .NET se usa en lugar de la MAPI de nomenclatura. Por ejemplo, la propiedad MAPI PR_MESSAGE_FLAGS, 0x0E07, es un tipo PT_LONG. En. NET, esto se considera un número entero. Una propiedad extendida para PR_MESSAGE_FLAGS se define como \<t:ExtendedFieldURI PropertyTag = "0x0E07" PropertyType = "Entero" /\>. 
+> En Microsoft. NET, un valor Long es un entero de 64 bits, mientras que en MAPI y COM, un valor Long es un entero de 32 bits. La mayoría de los desarrolladores usará Microsoft.NET Framework para desarrollar aplicaciones de cliente de servicios Web de Exchange. Por lo tanto, la nomenclatura de .NET se usa en lugar de la MAPI de nomenclatura.
+> 
+> Por ejemplo, la propiedad MAPI PR_MESSAGE_FLAGS, 0x0E07, es un PTOS\_escriba durante cuánto tiempo. En. NET, esto se considera un número entero. Una propiedad extendida para PR_MESSAGE_FLAGS se define como `<t:ExtendedFieldURI PropertyTag="0x0E07" PropertyType="Integer"/>`. 
   
 ## <a name="example"></a>Ejemplo
 
@@ -180,12 +183,7 @@ El ejemplo siguiente de una solicitud, crea un elemento que tiene dos propiedade
    
 ## <a name="see-also"></a>Vea también
 
-
-
-[FieldURI](fielduri.md)
-  
-[IndexedFieldURI](indexedfielduri.md)
-
-
+- [FieldURI](fielduri.md)
+- [IndexedFieldURI](indexedfielduri.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

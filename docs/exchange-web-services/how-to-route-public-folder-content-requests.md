@@ -1,19 +1,19 @@
 ---
-title: Enrutar las solicitudes de contenido de carpetas públicas
+title: Redirigir solicitudes del contenido de carpetas públicas
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 59d2f05e-90fb-471e-ac06-70becc15b295
 description: Todas las solicitudes de información de carpetas públicas que implican el contenido de la necesidad de carpetas públicas se enrutan al buzón de carpeta pública contiene el contenido de la carpeta de destino. Para enrutar las solicitudes a ese buzón, debe establecer los encabezados X-AnchorMailbox y X-PublicFolderMailbox a valores específicos.
-ms.openlocfilehash: ad36c1526a24d815ec690879d633774d429ed36c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 64fafecb9882b17a3394e54640df78f7aa180343
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763181"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354025"
 ---
-# <a name="route-public-folder-content-requests"></a>Enrutar las solicitudes de contenido de carpetas públicas
+# <a name="route-public-folder-content-requests"></a>Redirigir solicitudes del contenido de carpetas públicas
 
 Todas las solicitudes de información de carpetas públicas que implican el contenido de la necesidad de carpetas públicas se enrutan al buzón de carpeta pública contiene el contenido de la carpeta de destino. Para enrutar las solicitudes a ese buzón, debe establecer los encabezados **X-AnchorMailbox** y **X-PublicFolderMailbox** a valores específicos. 
   
@@ -29,9 +29,11 @@ En la siguiente tabla se proporciona información general sobre el proceso:
 Una vez que haya determinado los valores de encabezado, incluirlos [cuando realiza las solicitudes de contenido de carpetas públicas](#bk_setheadervalues).
   
 Los pasos descritos en este artículo son específicos de las solicitudes de contenido de carpetas públicas. Para determinar si la solicitud es una solicitud de contenido o la jerarquía de carpetas públicas, vea [las solicitudes de carpetas públicas de enrutamiento](public-folder-access-with-ews-in-exchange.md#bk_routing).
-  
-## <a name="determine-the-guid-of-the-public-folder-mailbox-by-using-the-ews-managed-api"></a>Determinar el GUID del buzón de carpetas públicas mediante el uso de la API administrada de EWS
+
 <a name="bk_determineguidewsma"> </a>
+
+## <a name="determine-the-guid-of-the-public-folder-mailbox-by-using-the-ews-managed-api"></a>Determinar el GUID del buzón de carpetas públicas mediante el uso de la API administrada de EWS
+
 
 Para determinar el GUID del buzón de contenido de carpetas públicas, use el siguiente ejemplo de código, que hace lo siguiente: 
   
@@ -104,9 +106,10 @@ public static string CompareGuidsForEquality(List<string> list)
 Si ha recibido el error "Error en la solicitud. Se cerró la conexión subyacente: no se pude establecer una relación de confianza para el canal seguro SSL/TLS ", debe [Agregar una llamada a un método de devolución de llamada de validación](how-to-validate-a-server-certificate-for-the-ews-managed-api.md). Un marcador de posición y un comentario para este método se incluye en el ejemplo de código.
   
 Si el GUID de buzón es el mismo para todas las carpetas públicas en la raíz de la carpeta pública, en el ejemplo se indica la dirección para usar al [llamar a la detección automática](#bk_makeautodrequest) en la consola de salida y como el valor devuelto. Si el GUID de buzón no es el mismo para todas las carpetas públicas en la raíz de carpetas públicas, debe [realizar una solicitud de detección automática](#bk_makeautodrequest) en la dirección asociada a la carpeta en su solicitud de contenido. 
-  
-## <a name="determine-the-guid-of-the-public-folder-mailbox-by-using-ews"></a>Determinar el GUID del buzón de carpetas públicas mediante el uso de EWS
+
 <a name="bk_determineguidews"> </a>
+
+## <a name="determine-the-guid-of-the-public-folder-mailbox-by-using-ews"></a>Determinar el GUID del buzón de carpetas públicas mediante el uso de EWS
 
 El ejemplo de código siguiente se muestra cómo recuperar el valor de la propiedad **PR_REPLICA_LIST** (0x66980102) mediante el uso de la operación de EWS [FindFolder](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) . Para el elemento [ExtendedFieldURI](http://msdn.microsoft.com/library/b3c6ea3a-9ead-44b9-9d99-64ecf12bde23%28Office.15%29.aspx) , el atributo **PropertyTag** se establece en el valor decimal (26264) de la propiedad **PR_REPLICA_LIST** y se establece el atributo **PropertyType** en **binario**.
   
@@ -194,7 +197,7 @@ Usar la dirección devuelta por la `GetMailboxGuidAddress` método para llamar a
   
 |**Argumento**|**Descripción**|
 |:-----|:-----|
-|emailAddress  <br/> |La dirección devuelta por la `GetMailboxGuidAddress` método en [Determine el GUID del buzón de carpetas públicas](http://msdn.microsoft.com/library/bk_determineguidewsma.aspx).  <br/> |
+|emailAddress  <br/> |La dirección devuelta por la `GetMailboxGuidAddress` método en [Determine el GUID del buzón de carpetas públicas](#bk_determineguidewsma).  <br/> |
 |-skipSOAP  <br/> |Indica que las solicitudes de detección automática de POX son necesarias.  <br/> |
 |authEmailAddress - auth  <br/> |Dirección de correo electrónico del usuario de buzón de correo, que se usa para la autenticación. Se le pedirá para escribir la contraseña del usuario de buzón de correo al ejecutar el ejemplo.  <br/> |
    
@@ -232,9 +235,9 @@ Por ejemplo, dado un AutoDiscoverSMTPAddress de NewPublicFolder@contoso.com, deb
 
 **Llamadas de carpeta pública que requieren los encabezados X-AncorMailbox y X-PublicFolder**
 
-|**Métodos de la API administrada de EWS**|**Operaciones de EWS**|
+|**Métodos de la API administrada de EWS**|**Operaciones EWS**|
 |:-----|:-----|
-|[Item.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) <br/> [Item.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.update%28v=exchg.80%29.aspx) <br/> [Item.Copy](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.copy%28v=exchg.80%29.aspx) <br/> [Item.Move](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.move%28v=exchg.80%29.aspx) <br/> [Item.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.delete%28v=exchg.80%29.aspx) <br/> [Folder.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) <br/> [Folder.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) <br/> [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) <br/> [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> [CopyItem](http://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) <br/> [MoveItem](http://msdn.microsoft.com/library/dcf40fa7-7796-4a5c-bf5b-7a509a18d208%28Office.15%29.aspx) <br/> [DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) <br/> [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) <br/> [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) <br/> |
+|[Item.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) <br/> [Item.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.update%28v=exchg.80%29.aspx) <br/> [Item.Copy](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.copy%28v=exchg.80%29.aspx) <br/> [Item.Move](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.move%28v=exchg.80%29.aspx) <br/> [Item.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.delete%28v=exchg.80%29.aspx) <br/> [Folder.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) <br/> [Folder.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) <br/> [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) <br/> [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> [CopyItem](http://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) <br/> [MoveItem](http://msdn.microsoft.com/library/dcf40fa7-7796-4a5c-bf5b-7a509a18d208%28Office.15%29.aspx) <br/> [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) <br/> [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) <br/> |
    
 Para agregar estos encabezados mediante el uso de la API administrada de EWS, use el método [HttpHeaders.Add](http://msdn.microsoft.com/en-us/library/system.net.http.headers.httpheaders.add%28v=vs.118%29.aspx) . 
   

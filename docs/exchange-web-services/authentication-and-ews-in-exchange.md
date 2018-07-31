@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 9a83df96-aca0-42b3-b8f5-2b414f0363f1
 description: Obtenga información que le ayudarán a elegir el estándar de autenticación correcto para la aplicación de EWS dirigido a Exchange.
-ms.openlocfilehash: c81b29cbe9aa3c658a8f776876366fd0875b2669
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: a4aae4678f1d6ffa5c08350f0bcccce5a4885f20
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19762994"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353668"
 ---
 # <a name="authentication-and-ews-in-exchange"></a>Autenticación y EWS en Exchange
 
@@ -41,13 +41,13 @@ Se recomienda que todas las nuevas aplicaciones de usan el estándar OAuth para 
 |:-----|:-----|
 | OAuth es un protocolo de autenticación estándar del sector.<br/><br/>La autenticación está administrada por un proveedor de terceros. La aplicación no tiene que recopilar y almacenar las credenciales de Exchange.<br/><br/>Menos preocupaciones para usted, debido a que la aplicación sólo recibe un token opaco desde el proveedor de autenticación; por lo tanto, una infracción de seguridad de la aplicación sólo puede exponer el token, no las credenciales del usuario Exchange.  <br/> | OAuth se basa en un proveedor de autenticación de otros fabricantes. Esto puede suponer costes adicionales en su organización o a sus clientes.<br/><br/>El estándar OAuth es más difícil de implementar que la autenticación básica.<br/><br/>Para implementar OAuth, debe integrar la aplicación con el proveedor de autenticación y el servidor de Exchange.  <br/> |
    
-Para ayudar a minimizar las desventajas, puede usar la [Biblioteca de autenticación de AD de Microsoft Azure](http://msdn.microsoft.com/library/a03f39fa-7ba4-4182-a98e-55562a64b8f3%28Office.15%29.aspx) (ADAL) para autenticar a los usuarios a los servicios de dominio de Active Directory (AD DS) en la nube o local y, a continuación, obtener tokens de acceso para proteger las llamadas a un Servidor de Exchange. Exchange Online requiere tokens emitidos por el servicio de Azure Active Directory, que es compatible con la ADAL; Sin embargo, puede utilizar cualquier biblioteca de otro fabricante. 
+Para ayudar a minimizar las desventajas, puede usar la [Biblioteca de autenticación de AD de Microsoft Azure](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) para autenticar a los usuarios a los servicios de dominio de Active Directory (AD DS) en la nube o local y, a continuación, obtener tokens de acceso para proteger las llamadas a un Servidor de Exchange. Exchange Online requiere tokens emitidos por el servicio de Azure Active Directory, que es compatible con la ADAL; Sin embargo, puede utilizar cualquier biblioteca de otro fabricante. 
   
 Para obtener más información acerca del uso de la autenticación de OAuth en la aplicación de EWS, vea los siguientes recursos:
   
-- [Versión de evaluación de office 365](http://office.microsoft.com/compare-office-365-for-business-plans-FX102918419.aspx?CR_CC=200061904&amp;WT.srch=1&amp;WT.mc_ID=PS_bing_O365Comm_office%20365%20trial_Text), para configurar un servidor de Exchange para usar para probar la aplicación cliente.
+- [Versión de evaluación de office 365](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program), para configurar un servidor de Exchange para usar para probar la aplicación cliente.
     
-- [Biblioteca de autenticación de Azure AD para .NET](http://msdn.microsoft.com/library/a03f39fa-7ba4-4182-a98e-55562a64b8f3%28Office.15%29.aspx)
+- [Biblioteca de autenticación de Azure AD para .NET](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries)
     
 - [Configurar Azure Active Directory](http://msdn.microsoft.com/library/055e1155-2d4d-4c85-b44e-d406872ba595%28Office.15%29.aspx), para habilitar la aplicación para usar los tokens de OAuth para la autenticación.
     

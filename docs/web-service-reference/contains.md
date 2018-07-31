@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 476d059d-c243-43e9-b475-319fc413ade2
 description: El elemento contiene representa una expresión de búsqueda que determina si una propiedad determinada contiene el valor de cadena constante proporcionada.
-ms.openlocfilehash: 083efdf32cd32bea6964361b5b558480aa937280
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: b25b69aadf2c331527a17ad81ed46f61aa7b93c2
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763816"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354291"
 ---
 # <a name="contains"></a>Contains
 
@@ -30,7 +30,23 @@ El elemento **contiene** representa una expresión de búsqueda que determina si
 </Contains>
 ```
 
- **ContainsExpressionType**
+```xml
+<Contains ContainmentMode="" ContainmentComparison="">
+   <ExtendedFieldURI/>
+   <Constant/>
+</Contains>
+```
+
+```xml
+<Contains ContainmentMode="" ContainmentComparison="">
+   <IndexedFieldURI/>
+   <Constant/>
+</Contains>
+```
+
+
+**ContainsExpressionType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -99,8 +115,6 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Puede estar vacío  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Vea también
-
-
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

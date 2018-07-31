@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: b8a59740-d978-454c-9629-a10792385ba0
 description: El elemento FindFolder define una solicitud para buscar las carpetas en un buzón de correo.
-ms.openlocfilehash: d41283547c443e38e2e87379a7224df9c89f901d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 69fbaebc5615ac7d19512770658cde83e4d352df
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764617"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353535"
 ---
 # <a name="findfolder"></a>FindFolder
 
@@ -32,7 +32,17 @@ El elemento **FindFolder** define una solicitud para buscar las carpetas en un b
 </FindFolder>
 ```
 
- **FindFolderType**
+```xml
+<FindFolder Traversal="Shallow/Deep/SoftDeleted">
+   <FolderShape/>
+   <FractionalPageFolderView/>
+   <Restriction/>
+   <ParentFolderIds/>
+</FindFolder>
+```
+
+**FindFolderType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -73,7 +83,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 
 El siguiente ejemplo de una solicitud de FindFolder muestra cómo formar una solicitud para buscar todas las carpetas que se encuentra en una bandeja de entrada.
   
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
   xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
@@ -101,7 +111,5 @@ El siguiente ejemplo de una solicitud de FindFolder muestra cómo formar una sol
    
 ## <a name="see-also"></a>Vea también
 
-
-
-[Operación FindFolder](findfolder-operation.md)
+- [Operación FindFolder](findfolder-operation.md)
 

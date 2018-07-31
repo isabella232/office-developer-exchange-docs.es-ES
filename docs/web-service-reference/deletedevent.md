@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: c4565eb4-b537-466c-b1ff-11602533812b
 description: El elemento DeletedEvent representa un evento en el que se elimina un elemento o carpeta.
-ms.openlocfilehash: f06ca0727916f415c648e876f88bf7eacef5a5ff
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 5ddc909ffc9c74ea6b423610e915d5b9ff9bff43
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764085"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354410"
 ---
 # <a name="deletedevent"></a>DeletedEvent
 
@@ -28,6 +28,15 @@ El elemento **DeletedEvent** representa un evento en el que se elimina un elemen
    <Watermark/>
    <TimeStamp/>
    <ItemId/>
+   <ParentFolderId/>
+</DeletedEvent>
+```
+
+```xml
+<DeletedEvent>
+   <Watermark/>
+   <TimeStamp/>
+   <FolderId/>
    <ParentFolderId/>
 </DeletedEvent>
 ```
@@ -46,11 +55,11 @@ Ninguno.
 
 |**Element**|**Descripción**|
 |:-----|:-----|
-|[Marca de agua](watermark.md) <br/> |Representa un marcador de evento en la tabla de eventos de buzón de correo.  <br/> |
-|[Marca de tiempo](timestamp.md) <br/> |Representa la marca de hora de un evento de buzón de carpeta o elemento eliminado.  <br/> |
+|[Watermark](watermark.md) <br/> |Representa un marcador de evento en la tabla de eventos de buzón de correo.  <br/> |
+|[TimeStamp](timestamp.md) <br/> |Representa la marca de hora de un evento de buzón de carpeta o elemento eliminado.  <br/> |
 |[FolderId](folderid.md) <br/> |Representa el identificador de la carpeta eliminada.  <br/> |
 |[ItemId](itemid.md) <br/> |Representa el identificador del elemento eliminado.  <br/> |
-|[Id](parentfolderid.md) <br/> |Representa el identificador de la carpeta principal del elemento eliminado o la carpeta antes de la eliminación.  <br/> |
+|[ParentFolderId](parentfolderid.md) <br/> |Representa el identificador de la carpeta principal del elemento eliminado o la carpeta antes de la eliminación.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -73,7 +82,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
    
 ## <a name="see-also"></a>Vea también
 
-- [Operación de suscripción](subscribe-operation.md)  
+- [Operación Subscribe](subscribe-operation.md)  
 - [Operación GetEvents](getevents-operation.md)  
-- [Cancelar la operación de suscripción](unsubscribe-operation.md)
+- [Operación Unsubscribe](unsubscribe-operation.md)
 

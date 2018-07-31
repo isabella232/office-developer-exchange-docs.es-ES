@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: f9c2187b-4c60-4358-b4b4-ede50eadae48
 description: El elemento DeleteFolderField representa una operación para eliminar una propiedad determinada de una carpeta durante una llamada UpdateFolder.
-ms.openlocfilehash: d0a5fb18c5f3445982a6417007ad6af9b1b365af
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 60d4a5c19d89c109913e83fea99c2f7910566c72
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764092"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354095"
 ---
 # <a name="deletefolderfield"></a>DeleteFolderField
 
@@ -26,7 +26,7 @@ El elemento **DeleteFolderField** representa una operación para eliminar una pr
 - [UpdateFolder](updatefolder.md) 
 - [FolderChanges](folderchanges.md)  
 - [FolderChange](folderchange.md)  
-- [Actualizaciones (carpeta)](updates-folder.md) 
+- [Updates (Carpeta)](updates-folder.md) 
 - [DeleteFolderField](deletefolderfield.md)
   
 ```xml
@@ -35,7 +35,20 @@ El elemento **DeleteFolderField** representa una operación para eliminar una pr
 </DeleteFolderField>
 ```
 
- **DeleteFolderFieldType**
+```xml
+<DeleteFolderField>
+   <ExtendedFieldURI/>
+</DeleteFolderField>
+```
+
+```xml
+<DeleteFolderField>
+   <IndexedFieldURI/>
+</DeleteFolderField>
+```
+
+**DeleteFolderFieldType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -56,7 +69,7 @@ Ninguno.
 
 |**Element**|**Descripción**|
 |:-----|:-----|
-|[Actualizaciones (carpeta)](updates-folder.md) <br/> |Contiene un conjunto de elementos que definen append, establecer y eliminar los cambios realizados en las propiedades de la carpeta.  <br/> La siguiente es la expresión de XPath para este elemento:`/UpdateFolder/FolderChanges/FolderChange[i]/Updates` <br/> |
+|[Updates (Carpeta)](updates-folder.md) <br/> |Contiene un conjunto de elementos que definen append, establecer y eliminar los cambios realizados en las propiedades de la carpeta.  <br/> La siguiente es la expresión de XPath para este elemento:`/UpdateFolder/FolderChanges/FolderChange[i]/Updates` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 

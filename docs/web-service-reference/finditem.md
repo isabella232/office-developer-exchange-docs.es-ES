@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: f7624f5c-c390-4563-ab9a-08f1024fb914
 description: El elemento FindItem define una solicitud para buscar elementos en un buzón de correo.
-ms.openlocfilehash: 9831b034be7deb0cf6e756bb585bdbe34b370afd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 6664cd91007f1d39db7e8d446e0135f47d5ab932
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764635"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353927"
 ---
 # <a name="finditem"></a>FindItem
 
@@ -35,7 +35,81 @@ El elemento **FindItem** define una solicitud para buscar elementos en un buzón
 </FindItem>
 ```
 
- **FindItemType**
+```xml
+<FindItem Traversal="">
+   <ItemShape/>
+   <IndexedPageItemView/>
+   <DistinguishedGroupBy/>
+   <Restriction/>
+   <SortOrder/>
+   <ParentFolderIds/>
+   <QueryString/>
+</FindItem>
+```
+
+```xml
+<FindItem Traversal="">
+   <ItemShape/>
+   <ContactsView/>
+   <GroupBy/>
+   <Restriction/>
+   <SortOrder/>
+   <ParentFolderIds/>
+   <QueryString/>
+</FindItem>
+```
+
+```xml
+<FindItem Traversal="">
+   <ItemShape/>
+   <ContactsView/> 
+   <DistinguishedGroupBy/>
+   <Restriction/>
+   <SortOrder/>
+   <ParentFolderIds/>
+   <QueryString/>
+</FindItem>
+```
+
+```xml
+<FindItem Traversal="">
+   <ItemShape/>
+   <CalendarView/>
+   <GroupBy/>
+   <Restriction/>
+   <SortOrder/>
+   <ParentFolderIds/>
+   <QueryString/>
+</FindItem>
+```
+
+```xml
+<FindItem Traversal="">
+   <ItemShape/>
+   <FractionalPageItemView/>
+   <GroupBy/>
+   <Restriction/>
+   <SortOrder/>
+   <ParentFolderIds/>
+   <QueryString/>
+</FindItem>
+```
+
+```xml
+<FindItem Traversal="">
+   <ItemShape/>
+   <FractionalPageItemView/>
+   <DistinguishedGroupBy/>
+   <Restriction/>
+   <SortOrder/>
+   <ParentFolderIds/>
+   <QueryString/>
+</FindItem>
+```
+
+
+**FindItemType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -62,7 +136,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 |[IndexedPageItemView](indexedpageitemview.md) <br/> |Describe cómo paginada elemento de información se devuelve para una solicitud de **FindItem** . Este elemento es opcional.  <br/> |
 |[FractionalPageItemView](fractionalpageitemview.md) <br/> |Describe donde se inicia la vista de página y el número máximo de elementos devueltos en una solicitud de **FindItem** . Se describe el desplazamiento de la vista de página desde el principio del conjunto de elementos encontrados por una fracción. Este elemento es opcional.  <br/> |
 |[CalendarView](calendarview.md) <br/> |Proporciona tiempo abarcar límites para definir una búsqueda de elementos de calendario. Este elemento es opcional.  <br/> |
-|[Contactos](contactsview.md) <br/> |Define una búsqueda de elementos de contacto basándose en los nombres para mostrar alfabético. Este elemento es opcional.  <br/> |
+|[ContactsView](contactsview.md) <br/> |Define una búsqueda de elementos de contacto basándose en los nombres para mostrar alfabético. Este elemento es opcional.  <br/> |
 |[GroupBy](groupby.md) <br/> |Especifica los grupos arbitrarios para las consultas de **FindItem** . Este elemento es opcional.  <br/> |
 |[DistinguishedGroupBy](distinguishedgroupby.md) <br/> |Proporciona agrupaciones estándares para las consultas de **FindItem** . Este elemento es opcional.  <br/> |
 |[Restriction](restriction.md) <br/> |Define la restricción o la consulta que se usa para filtrar los elementos o carpetas en **FindItem**/ operaciones de carpeta**FindFolder** y búsqueda. Este elemento es opcional.  <br/> |
@@ -91,10 +165,6 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
    
 ## <a name="see-also"></a>Vea también
 
-
-
-[Operación FindItem](finditem-operation.md)
-
-
-[Buscar elementos](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+- [Operación FindItem](finditem-operation.md)
+- [Buscar elementos](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

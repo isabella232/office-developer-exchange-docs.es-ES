@@ -1,5 +1,5 @@
 ---
-title: Fuera de la oficina
+title: OutOfOffice
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,14 +12,14 @@ api_type:
 - schema
 ms.assetid: fe1256ab-5c0f-467d-abb3-b38a2dc312ae
 description: El elemento de fuera de la oficina representa el mensaje de respuesta y un tiempo de duración para enviar el mensaje de respuesta.
-ms.openlocfilehash: 4e1e06ee332c44aeba03e1343c8c3258a2c9631e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: f35b84d7a8a37c7a57b58c97fd0d37318bb50a33
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836675"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354270"
 ---
-# <a name="outofoffice"></a>Fuera de la oficina
+# <a name="outofoffice"></a>OutOfOffice
 
 El elemento de **fuera de la oficina** representa el mensaje de respuesta y un tiempo de duración para enviar el mensaje de respuesta. 
   
@@ -30,7 +30,14 @@ El elemento de **fuera de la oficina** representa el mensaje de respuesta y un t
 </OutOfOffice>
 ```
 
- **OutOfOfficeMailTip**
+```XML
+<OutOfOffice>
+   <ReplyBody/>
+</OutOfOffice>
+```
+
+**OutOfOfficeMailTip**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -44,13 +51,13 @@ Ninguno.
 |**Element**|**Descripción**|
 |:-----|:-----|
 |[ReplyBody](replybody.md) <br/> |Contiene un mensaje de fuera de oficina (OOF) y el idioma utilizado para el mensaje.  <br/> |
-|[Duración (UserOofSettings)](duration-useroofsettings.md) <br/> |Contiene la duración que está habilitado el estado de fuera de la oficina si el elemento [OofState](oofstate.md) está establecido en programado.  <br/> |
+|[Duration (UserOofSettings)](duration-useroofsettings.md) <br/> |Contiene la duración que está habilitado el estado de fuera de la oficina si el elemento [OofState](oofstate.md) está establecido en programado.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Element**|**Descripción**|
 |:-----|:-----|
-|[Sugerencias de correo electrónico](mailtips.md) <br/> |Representa los valores de distintos tipos de sugerencias de correo.  <br/> |
+|[MailTips](mailtips.md) <br/> |Representa los valores de distintos tipos de sugerencias de correo.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -70,8 +77,6 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Puede estar vacío  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Vea también
-
-
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

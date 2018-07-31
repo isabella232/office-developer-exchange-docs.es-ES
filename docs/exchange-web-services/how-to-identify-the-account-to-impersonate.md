@@ -1,19 +1,19 @@
 ---
-title: Identificación de la cuenta para suplantar a
+title: Identificar la cuenta a suplantar
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: c7749f12-b97f-48d9-88e5-a545e108efb0
 description: Obtenga información sobre cómo utiliza su aplicación de servicio EWS para identificar al usuario para suplantar.
-ms.openlocfilehash: 78df4b511a9947d4d815b2802a53ab178b14622b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 01c6ee797359c38c8539257003a2f110fdf253cf
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763073"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354298"
 ---
-# <a name="identify-the-account-to-impersonate"></a>Identificación de la cuenta para suplantar a
+# <a name="identify-the-account-to-impersonate"></a>Identificar la cuenta a suplantar
 
 Obtenga información sobre cómo utiliza su aplicación de servicio EWS para identificar al usuario para suplantar.
   
@@ -75,7 +75,7 @@ En una aplicación de API administrada de EWS, especifique el UPN junto con el v
 exchangeServiceInstance.ImpersonatedUserId = new ImpersonatedUserId(ConnectingIdType.PrincipleName, "alias@billing.contoso.com");
 ```
 
-En una solicitud SOAP de EWS, el [elemento PrincipalName (ConnectingSIDType complexType) (EWS)](http://msdn.microsoft.com/library/6aac5388-c971-817b-b0bb-095a2639c6de%28Office.15%29.aspx) elemento contiene el UPN de la cuenta de usuario. 
+En una solicitud SOAP de EWS, el [elemento PrincipalName (ConnectingSIDType complexType) (EWS)](../web-service-reference/principalname.md) elemento contiene el UPN de la cuenta de usuario. 
   
 ```XML
 <soap:Header>
@@ -114,7 +114,7 @@ En una solicitud de EWS SOAP, el elemento de [SID](http://msdn.microsoft.com/lib
 
 - [Suplantación y EWS en Exchange](impersonation-and-ews-in-exchange.md)
     
-- [Agregar citas mediante el uso de la suplantación de Exchange](how-to-add-appointments-by-using-exchange-impersonation.md)
+- [Agregar citas mediante la suplantación de Exchange](how-to-add-appointments-by-using-exchange-impersonation.md)
     
 - [Clase ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.aspx)
     

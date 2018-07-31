@@ -1,5 +1,5 @@
 ---
-title: ID (TargetFolderIdType)
+title: ParentFolderId (TargetFolderIdType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,20 +12,26 @@ api_type:
 - schema
 ms.assetid: 0e3e6e5f-06d0-499b-8ca4-d36036521658
 description: El elemento ID identifica la carpeta en que se crea una nueva carpeta o la carpeta que se va a buscar la operación FindConversation.
-ms.openlocfilehash: 61072e1dd3321beb5f3b76d9accf20530b443796
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 8e80b9b342274a8b2004838ebd16f8425a2d3fa3
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836686"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353829"
 ---
-# <a name="parentfolderid-targetfolderidtype"></a>ID (TargetFolderIdType)
+# <a name="parentfolderid-targetfolderidtype"></a>ParentFolderId (TargetFolderIdType)
 
 El elemento **ID** identifica la carpeta en que se crea una nueva carpeta o la carpeta que se va a buscar la [operación FindConversation](findconversation-operation.md).
   
 ```xml
 <ParentFolderId>
    <DistinguishedFolderId/>
+</ParentFolderId>
+```
+
+```xml
+<ParentFolderId>
+   <FolderId/> 
 </ParentFolderId>
 ```
 
@@ -77,6 +83,6 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 ## <a name="see-also"></a>Vea también
 
 - [Operación CreateFolder](createfolder-operation.md)
-- [Operación de FindConversation](findconversation-operation.md)
+- [Operación FindConversation](findconversation-operation.md)
 - [Creación de carpetas (servicios Web de Exchange)](http://msdn.microsoft.com/library/3b15b0ec-8691-45ed-9a24-a91ff732d6cf%28Office.15%29.aspx)
 

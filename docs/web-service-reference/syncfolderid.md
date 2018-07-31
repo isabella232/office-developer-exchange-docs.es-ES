@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 3645fa03-236d-4e5f-b8b9-5d98f7f35fa2
 description: El elemento SyncFolderId representa la carpeta que contiene los elementos para sincronizar.
-ms.openlocfilehash: 45a4a62c7d269861555089019db259eacab26ef0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: c90a20095ca4706f0c6edae3e98eaadd6024d817
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840611"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354403"
 ---
 # <a name="syncfolderid"></a>SyncFolderId
 
@@ -29,7 +29,14 @@ El elemento **SyncFolderId** representa la carpeta que contiene los elementos pa
 </SyncFolderId>
 ```
 
- **TargetFolderIdType**
+```xml
+<SyncFolderId>
+   <DistinguishedFolderId/> 
+</SyncFolderId>
+```
+
+**TargetFolderIdType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -67,10 +74,6 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
    
 ## <a name="see-also"></a>Vea también
 
-
-
-[Operación SyncFolderItems](syncfolderitems-operation.md)
-
-
+- [Operación SyncFolderItems](syncfolderitems-operation.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 39b6b20b-e081-4347-9e15-9b8cf829fdf0
 description: Obtenga información acerca de identificadores en Exchange y cómo se pueden usar en la API administrada de EWS y las aplicaciones de EWS.
-ms.openlocfilehash: c09b54c8ec4f443a64f8222094ccf0a5e1f750e7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: fbf6d7756f73b1c5d345f3b34deeb7ea8a347986
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763027"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353976"
 ---
 # <a name="ews-identifiers-in-exchange"></a>Identificadores EWS en Exchange
 
@@ -40,7 +40,7 @@ Son aplicables a la API administrada de EWS así como los identificadores de EWS
 |[ConversationId](http://msdn.microsoft.com/library/d5f1ddb3-9af3-4677-a6ba-111b304a951e%28Office.15%29.aspx) <br/> |El atributo **Id** contiene el identificador de la conversación que forma parte de este elemento.  <br/> |El atributo **Id** es el mismo que el EwsId para este elemento.  <br/> |
 |[AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) <br/> |Proporciona el identificador único de los datos adjuntos. El atributo [RootItemId](http://msdn.microsoft.com/library/f613c705-17ce-48ce-aa64-4dc2cea25e31%28Office.15%29.aspx) contiene el identificador único del elemento de almacén raíz al que se adjunta los datos adjuntos.  <br/> |Los datos adjuntos pueden ser otros elementos en el almacén de Exchange, en cuyo caso el [AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) es la misma que la EwsId. En todos los casos, el [RootItemId](http://msdn.microsoft.com/library/f613c705-17ce-48ce-aa64-4dc2cea25e31%28Office.15%29.aspx) es un EwsId debido a que hace referencia a un elemento en el almacén.  <br/> |
 |[PersonaId](http://msdn.microsoft.com/library/eec3a468-afd5-4d72-a61e-cd1964fb686c%28Office.15%29.aspx) <br/> |El atributo **Id** devuelve una cadena que contiene el identificador de la persona.  <br/> |El atributo **Id** es el mismo que el EwsId para el rol.  <br/> |
-|[ID de contacto](http://msdn.microsoft.com/library/86f66275-1e39-48ed-bd89-ac3bffc465a7%28Office.15%29.aspx) <br/> |El atributo **Id** devuelve una cadena que contiene el identificador del contacto.  <br/> |El atributo **Id** es el mismo que el EwsId para el contacto.  <br/> |
+|[ContactId](http://msdn.microsoft.com/library/86f66275-1e39-48ed-bd89-ac3bffc465a7%28Office.15%29.aspx) <br/> |El atributo **Id** devuelve una cadena que contiene el identificador del contacto.  <br/> |El atributo **Id** es el mismo que el EwsId para el contacto.  <br/> |
 |[GroupId](http://msdn.microsoft.com/library/656d9b9a-8a65-4a75-8466-5b0d96512dab%28Office.15%29.aspx) <br/> |El atributo **Id** devuelve una cadena que contiene el identificador del grupo.  <br/> |El atributo **Id** es el mismo que el EwsId para el grupo.  <br/> |
 |[AssociatedCalendarItemId](http://msdn.microsoft.com/library/5b29898c-ea59-4e6a-914c-c011ec754032%28Office.15%29.aspx) <br/> |El atributo **Id** identifica el elemento de calendario que está asociado con un [MeetingMessage](http://msdn.microsoft.com/library/c95956a8-7505-44b4-bea4-11d1f5182796%28Office.15%29.aspx), [MeetingRequest](http://msdn.microsoft.com/library/c44f8804-a355-473d-a837-48cc91617251%28Office.15%29.aspx), [MeetingResponse](http://msdn.microsoft.com/library/9f798e79-dafd-4d4d-9967-95fd8e5c0502%28Office.15%29.aspx)o [MeetingCancellation](http://msdn.microsoft.com/library/a9c61f7f-2ecd-4b21-9dce-24d9f61aeeea%28Office.15%29.aspx).  <br/> |El atributo **Id** es el mismo que el EwsId para el elemento de calendario.  <br/> |
 |[UserConfigurationProperties](http://msdn.microsoft.com/library/c143a6ec-62ad-4d48-b844-b1ad88054bc1%28Office.15%29.aspx) <br/> |El valor de **identificador** de este elemento especifica la propiedad del identificador.  <br/> |Este identificador no asigna directamente a la EwsId debido a que un identificador de la propiedad y no un elemento.  <br/> |
@@ -121,19 +121,15 @@ Puede usar el método o la operación de **ConvertId** para convertir varios for
 |EwsLegacyId  <br/> |El EwsId que se aplica a Exchange 2007.  <br/> |
 |EwsId  <br/> |El EwsId que se aplica a Exchange Online y versiones de Exchange a partir de Exchange 2007 SP1.  <br/> |
 |StoreId  <br/> |El identificador de almacén de Exchange donde se almacenan los elementos y carpetas.  <br/> |
-|OwaId  <br/> |El identificador de Outlook Web App que se utiliza con Outlook Web App en Exchange 2007 y Exchange 2010.  <br/> > [!NOTE]> Exchange Online y versiones de Exchange a partir de Exchange 2013 usan el EwsId para Outlook Web App.           |
+|OwaId  <br/> |El identificador de Outlook Web App que se utiliza con Outlook Web App en Exchange 2007 y Exchange 2010. <br/><br/>**Nota**: en línea de Exchange y las versiones de Exchange a partir de Exchange 2013 utilizan el EwsId para Outlook Web App.           |
 |Propiedad EntryId  <br/> |Un identificador MAPI que se conoce como la propiedad de **entrada del objeto** de un mensaje MAPI.  <br/> |
 |HexEntryId  <br/> |Una representación codificada en hexadecimal de la propiedad de **entrada del objeto** que se usa para el identificador de evento del calendario de disponibilidad. También es el formato de identificador que usa Outlook.  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-
-- [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
-    
-- [Operación ConvertId](http://msdn.microsoft.com/library/47d96cf6-9e2f-4fc0-9682-7258d3fbf918%28Office.15%29.aspx)
-    
-- [Depuracuión puede contener (enumeración)](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.serviceerror%28v=exchg.80%29.aspx)
-    
+- [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)  
+- [Operación ConvertId](http://msdn.microsoft.com/library/47d96cf6-9e2f-4fc0-9682-7258d3fbf918%28Office.15%29.aspx)  
+- [Depuracuión puede contener (enumeración)](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.serviceerror%28v=exchg.80%29.aspx) 
 - [Eliminación de elementos con EWS en Exchange](deleting-items-by-using-ews-in-exchange.md)
     
 

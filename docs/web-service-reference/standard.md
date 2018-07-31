@@ -1,5 +1,5 @@
 ---
-title: Estándar
+title: Standard
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,14 +12,14 @@ api_type:
 - schema
 ms.assetid: d598f0a6-e296-423f-8ce5-3da57cfd8189
 description: El elemento estándar representa la fecha y hora cuando se cambia la hora del horario de verano a la hora estándar.
-ms.openlocfilehash: 1c9be4cf35773583078bc8e16ddf44433d3ad98c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: c121e959f243d982cfe50ed6b4ef39a82dae2cc8
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837536"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353437"
 ---
-# <a name="standard"></a>Estándar
+# <a name="standard"></a>Standard
 
 El elemento **estándar** representa la fecha y hora cuando se cambia la hora del horario de verano a la hora estándar. 
   
@@ -31,7 +31,16 @@ El elemento **estándar** representa la fecha y hora cuando se cambia la hora de
 </Standard>
 ```
 
- **TimeChangeType**
+```xml
+<Standard TimeZoneName="">
+   <Offset/>
+   <AbsoluteDate/>
+   <Time/>
+</Standard>
+```
+
+**TimeChangeType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -49,7 +58,7 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 |[Offset](offset.md) <br/> |Describe el desplazamiento desde el [BaseOffset](baseoffset.md). Junto con el elemento **BaseOffset** , el elemento de **desplazamiento** identifica si el tiempo es la hora estándar o el horario de verano.  <br/> |
 |[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |Describe un patrón de periodicidad anual relativa para una fecha de transición de la zona horaria.  <br/> |
 |[AbsoluteDate](absolutedate.md) <br/> |Representa la fecha cuando se cambia el tiempo de hora estándar o el horario de verano.  <br/> |
-|[Tiempo (TimeChangeType)](time-timechangetype.md) <br/> |Describe la hora cuando se cambia el tiempo entre la hora estándar y el horario de verano.  <br/> |
+|[Time (TimeChangeType)](time-timechangetype.md) <br/> |Describe la hora cuando se cambia el tiempo entre la hora estándar y el horario de verano.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -71,8 +80,6 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Puede estar vacío  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Vea también
-
-
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 8e71cb44-1df6-444a-add7-0c1363863f65
 description: El elemento de las carpetas contiene una matriz de las carpetas que se usan en las operaciones de la carpeta.
-ms.openlocfilehash: e1b9e337f633dbf6fda159c28725d3fb8dcd55a6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 34372f2480825c7a9977eeae8e730c201307f36b
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764686"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353591"
 ---
 # <a name="folders"></a>Carpetas
 
@@ -29,7 +29,32 @@ El elemento de **las carpetas** contiene una matriz de las carpetas que se usan 
 </Folders>
 ```
 
- **ArrayOfFoldersType** o **NonEmptyArrayOfFoldersType**
+```xml
+<Folders>
+   <ContactsFolder/> 
+</Folders>
+```
+
+```xml
+<Folders>
+   <TasksFolder/>
+</Folders>
+```
+
+```xml
+<Folders>
+   <CalendarFolder/>
+</Folders>
+```
+
+```xml
+<Folders>
+   <SearchFolder/> 
+</Folders>
+```
+
+**ArrayOfFoldersType** o **NonEmptyArrayOfFoldersType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -58,7 +83,7 @@ Ninguno.
 |[CreateManagedFolderResponseMessage](createmanagedfolderresponsemessage.md) <br/> |Contiene el estado y el resultado de una única solicitud de [operación CreateManagedFolder](createmanagedfolder-operation.md) .  <br/> |
 |[GetFolderResponseMessage](getfolderresponsemessage.md) <br/> |Contiene el estado y el resultado de una solicitud de [operación GetFolder](getfolder-operation.md) .  <br/> |
 |[MoveFolderResponseMessage](movefolderresponsemessage.md) <br/> |Contiene el estado y el resultado de una solicitud de [operación MoveFolder](movefolder-operation.md) .  <br/> |
-|[ID (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) <br/> |Identifica la carpeta donde se crea una nueva carpeta.  <br/> |
+|[ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) <br/> |Identifica la carpeta donde se crea una nueva carpeta.  <br/> |
 |[RootFolder (FindFolderResponseMessage)](rootfolder-findfolderresponsemessage.md) <br/> |Contiene los resultados de búsqueda de una sola carpeta raíz durante una [operación de FindFolder](findfolder-operation.md).  <br/> |
 |[UpdateFolderResponseMessage](updatefolderresponsemessage.md) <br/> |Contiene el estado y el resultado de una única solicitud de [operación UpdateFolder](updatefolder-operation.md) .  <br/> |
    
@@ -79,7 +104,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
    
 ## <a name="see-also"></a>Vea también
 
-
-
-[ID (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)
+- [ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)
 

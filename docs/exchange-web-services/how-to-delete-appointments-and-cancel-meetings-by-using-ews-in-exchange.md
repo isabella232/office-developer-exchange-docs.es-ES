@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 42412265-3968-468a-a8c2-7e8af3c6deb9
 description: Obtenga información sobre cómo eliminar las citas y reuniones mediante la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: bd7eac803fedffc51133324259f68fd25652fcff
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: c71272bf753432a9f343adc917b444424fe3ba33
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763060"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354081"
 ---
 # <a name="delete-appointments-and-cancel-meetings-by-using-ews-in-exchange"></a>Eliminar las citas y cancelar reuniones mediante el uso de EWS en Exchange
 
@@ -23,13 +23,14 @@ La diferencia entre las reuniones y citas esencial es que las reuniones tienen a
 
 |**Método de la API administrada de EWS**|**Operación de EWS**|**Para qué sirve**|
 |:-----|:-----|:-----|
-|[Appointment.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) <br/> |Elimina una cita.  <br/> |
-|[Appointment.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[CreateItem (elemento de calendario)](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) <br/> |Elimina una reunión.  <br/> |
+|[Appointment.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |Elimina una cita.  <br/> |
+|[Appointment.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[CreateItem (elemento de calendario)](../web-service-reference/createitem-operation-calendar-item.md) <br/> |Elimina una reunión.  <br/> |
    
-Tenga en cuenta que al eliminar una cita mediante el uso de EWS, use la operación [DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) , pero cuando se elimina una reunión, use la operación [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) . Esto puede parecer poco intuitiva, pero es debido a que tiene que crear una reunión mensajes del objeto response para enviar la cancelación de la reunión a los asistentes. 
-  
-## <a name="delete-an-appointment-by-using-the-ews-managed-api"></a>Eliminación de una cita mediante el uso de la API administrada de EWS
+Tenga en cuenta que al eliminar una cita mediante el uso de EWS, use la operación [DeleteItem](../web-service-reference/deleteitem-operation.md) , pero cuando se elimina una reunión, use la operación [CreateItem](../web-service-reference/createitem-operation-calendar-item.md) . Esto puede parecer poco intuitiva, pero es debido a que tiene que crear una reunión mensajes del objeto response para enviar la cancelación de la reunión a los asistentes. 
+
 <a name="bk_DeleteApptEWSMA"> </a>
+
+## <a name="delete-an-appointment-by-using-the-ews-managed-api"></a>Eliminación de una cita mediante el uso de la API administrada de EWS
 
 En el ejemplo de código siguiente se muestra cómo usar el método [Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) para eliminar una cita de la carpeta Calendario y el método [ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) para comprobar que la cita se ha suprimido busca en la carpeta Elementos eliminados. 
   
@@ -63,7 +64,7 @@ Como puede ver, la eliminación de una cita es sencilla y prácticamente todo lo
 
 La solicitud y respuesta XML en los ejemplos siguientes corresponden a las llamadas realizadas por el código de la API administrada de EWS en [Eliminar una cita mediante el uso de la API administrada de EWS](#bk_DeleteApptEWSMA). La solicitud y la respuesta se muestra así como XML que comprueba que es el elemento de cita en la carpeta Elementos eliminados.
   
-En el ejemplo siguiente se muestra la solicitud XML para la operación [DeleteItem](http://msdn.microsoft.com/library/e2152410-41ce-1fe7-8169-f206d5081ebc%28Office.15%29.aspx) eliminar una cita. 
+En el ejemplo siguiente se muestra la solicitud XML para la operación [DeleteItem](../web-service-reference/deleteitem-operation.md) eliminar una cita. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -86,7 +87,7 @@ En el ejemplo siguiente se muestra la solicitud XML para la operación [DeleteIt
 
 ```
 
-En el ejemplo siguiente se muestra la respuesta XML que es devuelto por la [operación DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx). Los atributos **ItemId** y **ChangeKey** son más cortos para mejorar la legibilidad. 
+En el ejemplo siguiente se muestra la respuesta XML que es devuelto por la operación [DeleteItem](../web-service-reference/deleteitem-operation.md) . Los atributos **ItemId** y **ChangeKey** son más cortos para mejorar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

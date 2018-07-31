@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: e7998023-e5e0-465c-91fa-2aa6d1559f64
 description: El elemento ParentFolderIds identifica las carpetas para las operaciones FindItem y FindFolder buscar.
-ms.openlocfilehash: 4dd23b45dcc397e29e67fc08b29dd773e50f0db1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 7c4dcc98d1cabc8e97f2846880c73111dd307dfb
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836688"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354172"
 ---
 # <a name="parentfolderids"></a>ParentFolderIds
 
@@ -26,6 +26,12 @@ El elemento **ParentFolderIds** identifica las carpetas para las operaciones Fin
 ```xml
 <ParentFolderIds>
    <DistinguishedFolderId/>
+<ParentFolderIds>
+```
+
+```xml
+<ParentFolderIds>
+   <FolderId/> 
 <ParentFolderIds>
 ```
 

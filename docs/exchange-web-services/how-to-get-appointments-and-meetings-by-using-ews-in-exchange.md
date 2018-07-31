@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 1bae582a-8cb3-4e77-be2a-7e107fad26fe
 description: Obtenga información sobre cómo obtener las citas y reuniones con la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: 0f5eb135142e807f30f48f01d7948fbdbf147ac2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: c78d70ca2266bd192b82f644d902ad8c958d2d4a
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763066"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353696"
 ---
 # <a name="get-appointments-and-meetings-by-using-ews-in-exchange"></a>Obtener las citas y reuniones con EWS en Exchange
 
@@ -50,19 +50,24 @@ En el ejemplo de código siguiente se muestra cómo usar la API administrada de 
 
 ```
 
+<br/>
+
 El siguiente es el resultado del ejemplo de código.
   
-Las cinco primeras citas en su calendario de 21/8/2013 a 20/9/2013 son: 
+```text
+The first five appointments on your calendar from 8/21/2013 to 9/20/2013 are: 
   
-Asunto: Reuniones inicio de equipo de desarrolladores de Contoso: 21/8/2013 12:30:00 P.M. final: 21/8/2013 1:00:00 P.M.
+Subject: Contoso devs team meeting Start: 8/21/2013 12:30:00 PM End: 8/21/2013 1:00:00 PM
   
-Asunto: Reunión diaria de estado Inicio: 21/8/2013 1:00:00 P.M. final: 21/8/2013 2:00:00 P.M.
+Subject: Daily status meeting Start: 8/21/2013 1:00:00 PM End: 8/21/2013 2:00:00 PM
   
-Asunto: Almuerzo con el equipo de ventas inicio: 21/8/2013 2:30:00 P.M. final: 21/8/2013 3:30:00 P.M.
+Subject: Lunch with sales team Start: 8/21/2013 2:30:00 PM End: 8/21/2013 3:30:00 PM
   
-Asunto: Tenis en el inicio de club: 22/8/2013 11:00:00 AM final: 22/8/2013 12:00:00 P.M.
+Subject: Tennis at the club Start: 8/22/2013 11:00:00 AM End: 8/22/2013 12:00:00 PM
   
-Asunto: Formación en línea difusión por Web: 22/8/2013 2:00:00 P.M. final: 22/8/2013 3:00:00 P.M.
+Subject: Online training webcast: 8/22/2013 2:00:00 PM End: 8/22/2013 3:00:00 PM
+```
+
 ## <a name="get-appointments-by-using-ews"></a>Obtener las citas mediante el uso de EWS
 <a name="bk_xml"> </a>
 
@@ -89,6 +94,8 @@ El siguiente código XML muestra una solicitud de operación [GetFolder](http://
   </soap:Body>
 </soap:Envelope>
 ```
+
+<br/>
 
 El siguiente código XML muestra la respuesta **GetFolder** . Tenga en cuenta que los atributos **FolderID** y **ChangeKey** son más cortos para mejorar la legibilidad. 
   
@@ -119,6 +126,8 @@ El siguiente código XML muestra la respuesta **GetFolder** . Tenga en cuenta qu
 </s:Envelope>
 ```
 
+<br/>
+
 El siguiente código XML muestra la solicitud **FindItem** que se usa para devolver las citas solicitadas. Tenga en cuenta que los atributos **FolderID** y **ChangeKey** son más cortos para mejorar la legibilidad. 
   
 ```XML
@@ -148,6 +157,8 @@ El siguiente código XML muestra la solicitud **FindItem** que se usa para devol
   </soap:Body>
 </soap:Envelope>
 ```
+
+<br/>
 
 El siguiente código XML muestra la respuesta **FindItem** . Tenga en cuenta que los atributos **ItemID** y **ChangeKey** son más cortos para mejorar la legibilidad. 
   
@@ -218,14 +229,10 @@ En su lugar, ¿qué desea hacer en realidad es algo parecido a la aplicación de
 ## <a name="see-also"></a>Vea también
 <a name="bk_additional"> </a>
 
-- [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)
-    
-- [Crear citas y reuniones mediante el uso de EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
-    
-- [Actualizar las citas y reuniones con EWS en Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
-    
-- [Eliminar las citas y cancelar reuniones mediante el uso de EWS en Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
-    
+- [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)   
+- [Crear citas y reuniones mediante el uso de EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)  
+- [Actualizar las citas y reuniones con EWS en Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)  
+- [Eliminar las citas y cancelar reuniones mediante el uso de EWS en Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md) 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
     
 

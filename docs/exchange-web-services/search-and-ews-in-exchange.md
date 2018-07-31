@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 9fa5b836-857e-401d-9450-51e7dbc69104
 description: Averigüe cómo buscar elementos en Exchange mediante el uso de la API administrada de EWS o EWS.
-ms.openlocfilehash: da24258ba94b842fa97fff92148620344c939f05
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 1a8ed6be71d88a02c4ef935864ca15888df90a38
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763304"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354060"
 ---
 # <a name="search-and-ews-in-exchange"></a>Búsqueda y EWS en Exchange
 
@@ -115,8 +115,8 @@ Establecer el recorrido en la vista controla la profundidad y el ámbito de la b
 |:-----|:-----|:-----|
 |Superficial  <br/> |Los elementos y carpetas  <br/> |Realizar búsquedas superficiales están limitadas a elementos secundarios directos de la carpeta que se está buscando.  <br/> |
 |Profunda  <br/> |Elementos (sólo con las carpetas de búsqueda) y carpetas  <br/> |Búsquedas en profundidad recursivamente buscar la carpeta que se buscan y subcarpetas.  <br/> |
-|Asociado  <br/> |Elementos  <br/> |Búsquedas asociadas sólo incluyen elementos asociados de la carpeta que se está buscando. Elementos asociados son elementos ocultos dentro de la carpeta.  <br/> |
-|SoftDeleted  <br/> |Los elementos y carpetas  <br/> |Este tipo de cruce seguro de los está en desuso. Las búsquedas de SoftDeleted incluyan solo los elementos que se encuentran en el volcado de archivos. El volcado de archivos ha sido reemplazada por la [carpeta elementos recuperables](http://technet.microsoft.com/en-us/library/ee364755%28v=exchg.150%29.aspx(Office.15).aspx) en Exchange Online, Exchange Online como parte de Office 365 y las versiones de Exchange a partir de Exchange 2010.  <br/> |
+|Asociado  <br/> |Items  <br/> |Búsquedas asociadas sólo incluyen elementos asociados de la carpeta que se está buscando. Elementos asociados son elementos ocultos dentro de la carpeta.  <br/> |
+|SoftDeleted  <br/> |Los elementos y carpetas  <br/> |Este tipo de cruce seguro de los está en desuso. Las búsquedas de SoftDeleted incluyan solo los elementos que se encuentran en el volcado de archivos. El volcado de archivos ha sido reemplazada por la [carpeta elementos recuperables](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder) en Exchange Online, Exchange Online como parte de Office 365 y las versiones de Exchange a partir de Exchange 2010.  <br/> |
    
 ## <a name="managing-search-results"></a>Administración de los resultados de búsqueda
 <a name="bk_ManageSearchResults"> </a>
@@ -188,7 +188,7 @@ static void CreateSearchFolder(ExchangeService service)
 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
     
-- [Carpeta elementos recuperables](http://technet.microsoft.com/en-us/library/ee364755%28v=exchg.150%29.aspx(Office.15).aspx)
+- [Carpeta elementos recuperables](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder)
     
 - [ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)
     

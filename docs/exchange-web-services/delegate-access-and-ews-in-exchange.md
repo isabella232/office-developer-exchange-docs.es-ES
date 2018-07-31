@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 240d1776-7adc-46cd-9099-88ffeba0a8aa
 description: Descubra cómo usar la API administrada de EWS y EWS en Exchange para proporcionar acceso de delegado a buzones de los usuarios.
-ms.openlocfilehash: 0416ed1889a7c235a35cb49290d39d3ccfc28c49
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 344255d86a51e13b21f1eda5113d292395d7cb8f
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763012"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354053"
 ---
 # <a name="delegate-access-and-ews-in-exchange"></a>Acceso delegado y EWS en Exchange
 
@@ -66,7 +66,7 @@ Cuando un administrador o propietario del buzón agrega un delegado a un buzón 
 
 |**Nivel de permisos**|**Descripción**|
 |:-----|:-----|
-|None  <br/> |Esto es el valor predeterminado para todas las carpetas.  <br/> |
+|Ninguno  <br/> |Esto es el valor predeterminado para todas las carpetas.  <br/> |
 |Autor  <br/> |Un delegado puede leer y crear elementos y modificar y eliminar los elementos que se crean. Por ejemplo, un delegado puede crear solicitudes de tareas y convocatorias de reunión directamente en la carpeta de tareas o el calendario del propietario del buzón y, a continuación, enviar un elemento en el nombre del propietario del buzón.  <br/> |
 |Editor  <br/> |Un delegado puede hacer todo lo que un autor puede hacer y también modificar y eliminar los elementos creado por el propietario del buzón.  <br/> |
 |Reviewer  <br/> |Un delegado puede leer elementos. Por ejemplo, un delegado con el permiso de revisor puede leer los mensajes en la Bandeja de entrada de la otra persona.  <br/> |
@@ -142,7 +142,7 @@ Si un identificador de elemento se ha recuperado por el método [FindItems](http
   
 ### <a name="implicit-access-and-ews"></a>Acceso implícito y EWS
 
-Si el identificador de un elemento se ha recuperado por la operación [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) , ese identificador de elemento puede utilizarse en las siguientes operaciones [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) para enlazar al elemento. A continuación, puede llamar a la operación [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx), [DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx)o [CopyItem](http://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) — o cualquier operación que requiera un identificador de elemento, según sea necesario para completar la tarea. Siempre y cuando el delegado tiene los permisos adecuados a la carpeta que contiene el elemento (y, si procede, la carpeta el elemento se traslada al), el delegado puede realizar cambios según sus niveles de permisos. 
+Si el identificador de un elemento se ha recuperado por la operación [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) , ese identificador de elemento puede utilizarse en las siguientes operaciones [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) para enlazar al elemento. A continuación, puede llamar a la operación [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx), [DeleteItem](../web-service-reference/deleteitem-operation.md)o [CopyItem](http://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) — o cualquier operación que requiera un identificador de elemento, según sea necesario para completar la tarea. Siempre y cuando el delegado tiene los permisos adecuados a la carpeta que contiene el elemento (y, si procede, la carpeta el elemento se traslada al), el delegado puede realizar cambios según sus niveles de permisos. 
   
 ## <a name="in-this-section"></a>En esta sección
 <a name="bk_implicit"> </a>

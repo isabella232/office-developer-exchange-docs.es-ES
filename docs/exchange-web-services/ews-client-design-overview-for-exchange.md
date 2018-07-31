@@ -1,19 +1,19 @@
 ---
-title: Información general sobre el diseño de cliente EWS para Exchange
+title: Introducción al diseño de EWS cliente de Exchange
 manager: sethgros
 ms.date: 3/11/2016
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b26f67aa-7c66-4d7d-98b3-746f26ab37f4
 description: Obtenga información sobre las consideraciones de diseño para el desarrollo con EWS para Exchange.
-ms.openlocfilehash: ea0e1ad3f8402d19a6163f3320a2a17f08f3ea2a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 10e1c78bdd93dc5aede6e3f9337aa70b0214b770
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763011"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353906"
 ---
-# <a name="ews-client-design-overview-for-exchange"></a>Información general sobre el diseño de cliente EWS para Exchange
+# <a name="ews-client-design-overview-for-exchange"></a>Introducción al diseño de EWS cliente de Exchange
 
 Obtenga información sobre las consideraciones de diseño para el desarrollo con EWS para Exchange. 
   
@@ -120,18 +120,12 @@ Para obtener información acerca de las características que están disponibles 
 ## <a name="in-this-section"></a>En esta sección
 <a name="bk_inthissection"> </a>
 
-- [Disponibilidad de característica del servicio Web de API de Exchange y la API administrada de EWS](web-service-api-feature-availability-in-exchange-and-the-ews-managed-api.md)
-    
-- [Versiones de esquema EWS en Exchange](ews-schema-versions-in-exchange.md)
-    
-- [Opciones de configuración para EWS en Exchange](configuration-options-for-ews-in-exchange.md)
-    
-- [Comparación de Exchange Online y la programación de cliente de Exchange local](comparing-exchange-online-and-exchange-on-premises-client-programming.md)
-    
-- [EWS limitación en Exchange](ews-throttling-in-exchange.md)
-    
-- [Requisitos de redistribución para la API administrada de EWS](redistribution-requirements-for-the-ews-managed-api.md)
-    
+- [Disponibilidad de característica del servicio Web de API de Exchange y la API administrada de EWS](web-service-api-feature-availability-in-exchange-and-the-ews-managed-api.md)   
+- [Versiones de esquema EWS en Exchange](ews-schema-versions-in-exchange.md)  
+- [Opciones de configuración para EWS en Exchange](configuration-options-for-ews-in-exchange.md)  
+- [Comparación la programación de Exchange Online y el cliente de Exchange local](comparing-exchange-online-and-exchange-on-premises-client-programming.md)   
+- [EWS limitación en Exchange](ews-throttling-in-exchange.md)  
+- [Requisitos de redistribución de la API administrada de EWS](redistribution-requirements-for-the-ews-managed-api.md)  
 - [Instrumentación de las solicitudes de cliente para EWS y REST en Exchange](instrumenting-client-requests-for-ews-and-rest-in-exchange.md)
     
 ## <a name="see-also"></a>Vea también

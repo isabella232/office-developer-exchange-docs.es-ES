@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 4771668f-5623-4397-a5c0-b75a7ba01698
 description: Obtenga información sobre cómo mover y copiar los mensajes de correo electrónico mediante el uso de la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: 16f0604a16785c34dd04bdabedeedd331668a479
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 44d5834176b55ad041befbad2230b8b507a12ecc
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763140"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353472"
 ---
 # <a name="move-and-copy-email-messages-by-using-ews-in-exchange"></a>Mover y copiar los mensajes de correo electrónico mediante el uso de EWS en Exchange
 
@@ -28,7 +28,7 @@ Puede usar la API administrada de EWS o EWS para mover y copiar los mensajes en 
    
 Es importante tener en cuenta que al mover o copiar un mensaje de correo electrónico en una carpeta diferente, se crea un nuevo elemento en la nueva carpeta con un identificador de elemento único, y se elimina el mensaje original. Si está mover o copiar un mensaje de correo electrónico entre dos carpetas en el mismo buzón, se devuelve el nuevo elemento en la respuesta, que le proporciona acceso para el nuevo identificador de elemento. Sin embargo, si va a mover o copiar un mensaje de correo electrónico entre dos buzones o entre un buzón de correo y una carpeta pública, el nuevo elemento no se devuelve en la respuesta. Para obtener acceso a los mensajes que se ha movido en esa situación, utilice el método de la API administrada de EWS [FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) u operación de EWS [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) , [crear una definición de propiedad extendida](properties-and-extended-properties-in-ews-in-exchange.md) para la propiedad [PidTagSearchKey](http://msdn.microsoft.com/en-us/library/cc839918.aspx) (0x300B0102), o crear y establecer un ampliado personalizado (propiedad) y, a continuación, busque la propiedad extendida personalizada en la nueva carpeta. 
   
-Eliminación de un mensaje de correo electrónico es diferente de mover un elemento a la carpeta Elementos eliminados. Si usa el método de la API administrada de EWS [Item.Delete](http://msdn.microsoft.com/en-us/library/office/dd635072%28v=exchg.80%29.aspx) o la operación de EWS [DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) , se quita el elemento especificado en la solicitud de la carpeta original y se coloca una copia en la carpeta Elementos eliminados con un nuevo identificador de elemento. A diferencia de al mover o copiar cualquier elemento, el nuevo elemento no se devuelve en la respuesta de la operación **DeleteItem** o en el método **Delete** . Los pasos implicados en la [eliminación de un correo electrónico mediante el uso de la API administrada de EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_deleteewsma) o [EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_deleteews) son los mismos que los para eliminar cualquier elemento genérico desde el almacén de Exchange. 
+Eliminación de un mensaje de correo electrónico es diferente de mover un elemento a la carpeta Elementos eliminados. Si usa el método de la API administrada de EWS [Item.Delete](http://msdn.microsoft.com/en-us/library/office/dd635072%28v=exchg.80%29.aspx) o la operación de EWS [DeleteItem](../web-service-reference/deleteitem-operation.md) , se quita el elemento especificado en la solicitud de la carpeta original y se coloca una copia en la carpeta Elementos eliminados con un nuevo identificador de elemento. A diferencia de al mover o copiar cualquier elemento, el nuevo elemento no se devuelve en la respuesta de la operación **DeleteItem** o en el método **Delete** . Los pasos implicados en la [eliminación de un correo electrónico mediante el uso de la API administrada de EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_deleteewsma) o [EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_deleteews) son los mismos que los para eliminar cualquier elemento genérico desde el almacén de Exchange. 
   
 ## <a name="move-an-email-message-by-using-the-ews-managed-api"></a>Mover un mensaje de correo electrónico mediante el uso de la API administrada de EWS
 <a name="bk_moveewsma"> </a>

@@ -12,24 +12,21 @@ api_type:
 - schema
 ms.assetid: 48de92aa-e124-42b5-89bc-cdce5e93d78b
 description: El elemento ContextFolderId indica la carpeta que está destinada a las acciones que utilizan carpetas. Este elemento debe estar presente al copiar, eliminar, mover y establecer el estado de lectura en los elementos de una conversación en una carpeta de destino.
-ms.openlocfilehash: bd863d0395b9b9d7b437833acfb656fec4580985
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 94428a079be6da8873c777556771579a7110fb62
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763858"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354284"
 ---
 # <a name="contextfolderid"></a>ContextFolderId
 
 El elemento **ContextFolderId** indica la carpeta que está destinada a las acciones que utilizan carpetas. Este elemento debe estar presente al copiar, eliminar, mover y establecer el estado de lectura en los elementos de una conversación en una carpeta de destino. 
   
-[ApplyConversationAction](applyconversationaction.md)
-  
-[ConversationActions](conversationactions.md)
-  
-[ConversationAction](conversationaction.md)
-  
-[ContextFolderId](contextfolderid.md)
+- [ApplyConversationAction](applyconversationaction.md) 
+- [ConversationActions](conversationactions.md)
+- [ConversationAction](conversationaction.md)
+- [ContextFolderId](contextfolderid.md)
   
 ```XML
 <ContextFolderId>
@@ -37,7 +34,15 @@ El elemento **ContextFolderId** indica la carpeta que está destinada a las acci
 </ContextFolderId>
 ```
 
- **TargetFolderIdType**
+```XML
+<ContextFolderId>
+   <DistinguishedFolderId/>
+</ContextFolderId>
+```
+
+
+**TargetFolderIdType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -78,7 +83,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
    
 ## <a name="see-also"></a>Vea también
 
-
-
-[Operación ApplyConversationAction](applyconversationaction-operation.md)
+- [Operación ApplyConversationAction](applyconversationaction-operation.md)
 

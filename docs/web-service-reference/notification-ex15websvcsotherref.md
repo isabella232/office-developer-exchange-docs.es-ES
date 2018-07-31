@@ -1,5 +1,5 @@
 ---
-title: Notificación
+title: Notification
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,14 +12,14 @@ api_type:
 - schema
 ms.assetid: c9070936-0930-438e-839c-91127256a6c8
 description: El elemento de notificación contiene información acerca de la suscripción y los eventos que se han producido desde la última notificación.
-ms.openlocfilehash: a769d8988eb68d0fa0b02f3838cd891e714571b6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 942ec18521fc484a7a3aa1385fb54f480ce9d11f
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836547"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354354"
 ---
-# <a name="notification"></a>Notificación
+# <a name="notification"></a>Notification
 
 El elemento de **notificación** contiene información acerca de la suscripción y los eventos que se han producido desde la última notificación. 
   
@@ -32,7 +32,71 @@ El elemento de **notificación** contiene información acerca de la suscripción
 </Notification>
 ```
 
- **NotificationType**
+```xml
+<Notification>
+   <SubscriptionId/>
+   <PreviousWatermark/>
+   <MoreEvents/>
+   <CreatedEvent/>
+</Notification>
+```
+
+```xml
+<Notification>
+   <SubscriptionId/>
+   <PreviousWatermark/>
+   <MoreEvents/>
+   <DeletedEvent/>
+</Notification>
+```
+
+```xml
+<Notification>
+   <SubscriptionId/>
+   <PreviousWatermark/>
+   <MoreEvents/>
+   <ModifiedEvent/>
+</Notification>
+```
+
+```xml
+<Notification>
+   <SubscriptionId/>
+   <PreviousWatermark/>
+   <MoreEvents/>
+   <MovedEvent/>
+</Notification>
+```
+
+```xml
+<Notification>
+   <SubscriptionId/>
+   <PreviousWatermark/>
+   <MoreEvents/>
+   <NewMailEvent/>
+</Notification>
+```
+
+```xml
+<Notification>
+   <SubscriptionId/>
+   <PreviousWatermark/>
+   <MoreEvents/>
+   <StatusEvent/>
+</Notification>
+```
+
+```xml
+<Notification>
+   <SubscriptionId/>
+   <PreviousWatermark/>
+   <MoreEvents/>
+   <FreeBusyChangedEvent/>
+</Notification>
+```
+
+**NotificationType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -54,7 +118,7 @@ Ninguno.
 |[ModifiedEvent](modifiedevent.md) <br/> |Representa un evento en el que se modifica una carpeta o elemento.  <br/> |
 |[MovedEvent](movedevent.md) <br/> |Representa un evento en el que una carpeta o elemento se mueve de una carpeta principal a otra carpeta primaria.  <br/> |
 |[NewMailEvent](newmailevent.md) <br/> |Representa un evento que se desencadena por un nuevo elemento de correo en un buzón de correo.  <br/> |
-|[Objeto StatusEvent](statusevent.md) <br/> |Representa una notificación que no se ha producido ninguna actividad de nuevo en el buzón de correo.  <br/> |
+|[StatusEvent](statusevent.md) <br/> |Representa una notificación que no se ha producido ninguna actividad de nuevo en el buzón de correo.  <br/> |
 |[FreeBusyChangedEvent](freebusychangedevent.md) <br/> |Representa un evento en el que se ha cambiado el tiempo de disponibilidad de un elemento.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
@@ -83,13 +147,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
    
 ## <a name="see-also"></a>Vea también
 
-
-
-[Operación de suscripción](subscribe-operation.md)
-  
-[Operación GetEvents](getevents-operation.md)
-  
-[Operación GetStreamingEvents](getstreamingevents-operation.md)
-  
-[Cancelar la operación de suscripción](unsubscribe-operation.md)
+- [Operación Subscribe](subscribe-operation.md) 
+- [Operación GetEvents](getevents-operation.md) 
+- [Operación GetStreamingEvents](getstreamingevents-operation.md) 
+- [Operación Unsubscribe](unsubscribe-operation.md)
 

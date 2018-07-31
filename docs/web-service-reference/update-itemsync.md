@@ -1,5 +1,5 @@
 ---
-title: Actualización (ItemSync)
+title: Update (ItemSync)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,26 +12,22 @@ api_type:
 - schema
 ms.assetid: 4e204446-1c80-44f9-b93b-77ce630a01a5
 description: El elemento de actualización identifica un solo elemento que se debe actualizar en el almacén de cliente local.
-ms.openlocfilehash: ef1bd46906152affbe54372472766afc2a6ae8c1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: bf560f18184151a3f17d7016d05cdb725db934ae
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840803"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353633"
 ---
-# <a name="update-itemsync"></a>Actualización (ItemSync)
+# <a name="update-itemsync"></a>Update (ItemSync)
 
 El elemento **Update** identifica un solo elemento que se debe actualizar en el almacén de cliente local. 
   
-[SyncFolderItemsResponse](syncfolderitemsresponse.md)
-  
-[ResponseMessages](responsemessages.md)
-  
-[SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md)
-  
-[Cambios (elementos)](changes-items.md)
-  
-[Actualización (ItemSync)](update-itemsync.md)
+- [SyncFolderItemsResponse](syncfolderitemsresponse.md) 
+- [ResponseMessages](responsemessages.md)  
+- [SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md)  
+- [Changes (Items)](changes-items.md)  
+- [Update (ItemSync)](update-itemsync.md)
   
 ```xml
 <Update>
@@ -39,7 +35,62 @@ El elemento **Update** identifica un solo elemento que se debe actualizar en el 
 </Update>
 ```
 
- **SyncFolderItemsCreateOrUpdateType**
+```xml
+<Update>
+   <MeetingRequest/>
+</Update>
+```
+
+```xml
+<Update>
+   <MeetingCancellation/>
+</Update>
+```
+
+```xml
+<Update>
+   <Task/>
+</Update>
+```
+
+```xml
+<Update>
+   <CalendarItem/>
+</Update>
+```
+
+```xml
+<Update>
+   <MeetingResponse/>
+</Update>
+```
+
+```xml
+<Update>
+   <Message/>
+</Update>
+```
+
+```xml
+<Update>
+   <DistributionList/>
+</Update>
+```
+
+```xml
+<Update>
+   <MeetingMessage/>
+</Update>
+```
+
+```xml
+<Update>
+   <Contact/> 
+</Update>
+```
+
+**SyncFolderItemsCreateOrUpdateType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -67,7 +118,7 @@ Ninguno.
 
 |**Element**|**Descripción**|
 |:-----|:-----|
-|[Cambios (elementos)](changes-items.md) <br/> |Contiene una matriz de secuencia de tipos de cambio que representan el tipo de las diferencias entre los elementos en el cliente y los elementos en el servidor de Exchange.  <br/> |
+|[Changes (Items)](changes-items.md) <br/> |Contiene una matriz de secuencia de tipos de cambio que representan el tipo de las diferencias entre los elementos en el cliente y los elementos en el servidor de Exchange.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -84,10 +135,6 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
    
 ## <a name="see-also"></a>Vea también
 
-
-
-[Operación SyncFolderItems](syncfolderitems-operation.md)
-
-
+- [Operación SyncFolderItems](syncfolderitems-operation.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

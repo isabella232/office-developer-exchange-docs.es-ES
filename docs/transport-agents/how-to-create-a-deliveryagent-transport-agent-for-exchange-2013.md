@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4af904d7-b315-4849-92b1-66018f76ffdf
 description: Encuentre información acerca de cómo crear un agente de transporte DeliveryAgent personalizado para usar con Exchange 2013.
-ms.openlocfilehash: 44ee5dc465f4435f0b835d264331cb719fe875c1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: bc36c7b5e0fb8006c5927d423d7767dcc7382ce0
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763347"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353311"
 ---
 # <a name="create-a-deliveryagent-transport-agent-for-exchange-2013"></a>Crear a un agente de transporte DeliveryAgent para Exchange 2013
 
@@ -21,15 +21,15 @@ Encuentre información acerca de cómo crear un agente de transporte DeliveryAge
   
 **Se aplica a:** Exchange Server 2013
   
-La [DeliveryAgentFactory\<Manager\> ](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgentFactory`1.aspx) y las clases de [DeliveryAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.DeliveryType.DeliveryAgent.aspx) son las clases base para los agentes de transporte que están diseñadas para ejecutarse en el servicio de transporte en un servidor de buzones de Exchange Server 2013. Es posible que implemente los controladores en el agente de transporte DeliveryAgent para los eventos proporcionados por la clase [DeliveryAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.DeliveryType.DeliveryAgent.aspx) que se enumeran en la siguiente tabla. 
+La [DeliveryAgentFactory\<Manager\> ](https://msdn.microsoft.com/en-us/library/dd877550(v=exchg.150).aspx) y las clases de [DeliveryAgent](https://msdn.microsoft.com/en-us/library/microsoft.exchange.data.transport.delivery.deliveryagent(v=exchg.150).aspx) son las clases base para los agentes de transporte que están diseñadas para ejecutarse en el servicio de transporte en un servidor de buzones de Exchange Server 2013. Es posible que implemente los controladores en el agente de transporte DeliveryAgent para los eventos proporcionados por la clase [DeliveryAgent](https://msdn.microsoft.com/en-us/library/microsoft.exchange.data.transport.delivery.deliveryagent(v=exchg.150).aspx) que se enumeran en la siguiente tabla. 
   
 **La tabla 1. Eventos de clase DeliveryAgent**
 
 |**Evento**|**Descripción**|
 |:-----|:-----|
-|[OnCloseConnection](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgent.OnCloseConnection.aspx) <br/> |Se produce después de que se ha entregado el último elemento de correo y se cierra la conexión.  <br/> |
-|[OnDeliverMailItem](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgent.OnDeliverMailItem.aspx) <br/> |Se produce cuando un elemento de correo está listo para entregar.  <br/> |
-|[OnOpenConnection](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgent.OnOpenConnection.aspx) <br/> |Se produce cuando se abre el agente de entrega para la entrega de correo.  <br/> |
+|[OnCloseConnection](https://msdn.microsoft.com/en-us/library/microsoft.exchange.data.transport.delivery.deliveryagent.oncloseconnection(v=exchg.150).aspx) <br/> |Se produce después de que se ha entregado el último elemento de correo y se cierra la conexión.  <br/> |
+|[OnDeliverMailItem](https://msdn.microsoft.com/en-us/library/microsoft.exchange.data.transport.delivery.deliveryagent.ondelivermailitem(v=exchg.150).aspx) <br/> |Se produce cuando un elemento de correo está listo para entregar.  <br/> |
+|[OnOpenConnection](https://msdn.microsoft.com/en-us/library/microsoft.exchange.data.transport.delivery.deliveryagent.onopenconnection(v=exchg.150).aspx) <br/> |Se produce cuando se abre el agente de entrega para la entrega de correo.  <br/> |
    
 ## <a name="creating-a-custom-deliveryagent-transport-agent"></a>Creación de un agente de transporte DeliveryAgent personalizado
 
@@ -45,9 +45,9 @@ El siguiente procedimiento describe cómo crear a un agente de transporte Delive
     
    ```
 
-   Puede encontrar estos espacios de nombres en el servidor de Exchange. Mediante la adición de una referencia a estos espacios de nombres, tendrá acceso a los miembros de [DeliveryAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.DeliveryType.DeliveryAgent.aspx) . 
+   Puede encontrar estos espacios de nombres en el servidor de Exchange. Mediante la adición de una referencia a estos espacios de nombres, tendrá acceso a los miembros de [DeliveryAgent](https://msdn.microsoft.com/en-us/library/microsoft.exchange.data.transport.delivery.deliveryagent(v=exchg.150).aspx) . 
     
-2. Implementar la clase derivada de la [DeliveryAgentFactory\<Manager\> ](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgentFactory`1.aspx) clase. 
+2. Implementar la clase derivada de la [DeliveryAgentFactory\<Manager\> ](https://msdn.microsoft.com/en-us/library/dd877550(v=exchg.150).aspx) clase. 
     
    ```cs
       public class MyDeliveryAgentFactory : DeliveryAgentFactory<MyDeliveryAgentFactory.MyDeliveryAgentManager>
@@ -90,14 +90,11 @@ El siguiente procedimiento describe cómo crear a un agente de transporte Delive
   
    ```
 
-   Después de definir la clase de agente, se puede agregar funcionalidad personalizada. En este ejemplo, los tres eventos, [OnCloseConnection](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgent.OnCloseConnection.aspx) , [OnDeliverMailItem](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgent.OnDeliverMailItem.aspx) y [OnOpenConnection](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgent.OnOpenConnection.aspx) , se redirigen a sus controladores de eventos personalizados. 
+   Después de definir la clase de agente, se puede agregar funcionalidad personalizada. En este ejemplo, los tres eventos, [OnCloseConnection](https://msdn.microsoft.com/en-us/library/microsoft.exchange.data.transport.delivery.deliveryagent.oncloseconnection(v=exchg.150).aspx), [OnDeliverMailItem](https://msdn.microsoft.com/en-us/library/microsoft.exchange.data.transport.delivery.deliveryagent.ondelivermailitem(v=exchg.150).aspx)y [OnOpenConnection](https://msdn.microsoft.com/en-us/library/microsoft.exchange.data.transport.delivery.deliveryagent.onopenconnection(v=exchg.150).aspx), se redirigen a sus controladores de eventos personalizados. 
     
 ## <a name="see-also"></a>Vea también
 
 - [Conceptos de agente en Exchange 2013 de transporte](transport-agent-concepts-in-exchange-2013.md)
-- [Referencia de agente de transporte de Exchange 2013](transport-agent-reference-for-exchange-2013.md)    
-- [DeliveryAgentFactory\<Manager\>](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgentFactory`1.aspx)   
-- [DeliveryAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.DeliveryType.DeliveryAgent.aspx)    
-- [DeliveryAgentManager](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Delivery.DeliveryAgentManager.aspx)
-    
+- [Referencia de agente de transporte de Exchange 2013](transport-agent-reference-for-exchange-2013.md)          
 
+ 

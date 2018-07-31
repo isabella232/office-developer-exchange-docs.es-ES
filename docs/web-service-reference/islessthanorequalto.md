@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: b5d85eb2-5e15-4d01-ad49-6289e735ad8a
 description: El elemento IsLessThanOrEqualTo representa una expresión de búsqueda que compara una propiedad con un valor constante u otra propiedad y devuelve true si la primera propiedad es menor o igual que el segundo.
-ms.openlocfilehash: 9aeb688ec68e13635ac3083119899bcd55045f7a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 8e312505b467952b5503b8ad51ed3fd62e92ad09
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836043"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353486"
 ---
 # <a name="islessthanorequalto"></a>IsLessThanOrEqualTo
 
@@ -30,7 +30,22 @@ El elemento **IsLessThanOrEqualTo** representa una expresión de búsqueda que c
 </IsLessThanOrEqualTo>
 ```
 
- **IsLessThanOrEqualToType**
+```xml
+<IsLessThanOrEqualTo>
+   <IndexedFieldURI/> 
+   <FieldURIOrConstant/>
+</IsLessThanOrEqualTo>
+```
+
+```xml
+<IsLessThanOrEqualTo>
+   <ExtendedFieldURI/> 
+   <FieldURIOrConstant/>
+</IsLessThanOrEqualTo>
+```
+
+**IsLessThanOrEqualToType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -71,8 +86,6 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Puede estar vacío  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Vea también
-
-
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

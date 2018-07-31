@@ -1,5 +1,5 @@
 ---
-title: Periodicidad (TaskRecurrenceType)
+title: Recurrence (TaskRecurrenceType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,14 +12,14 @@ api_type:
 - schema
 ms.assetid: 99f8414a-9110-4721-a6e5-ebf225d7ed0a
 description: El elemento de periodicidad contiene información de periodicidad de las tareas repetitivas.
-ms.openlocfilehash: ae2bb35e89a0a50c7ca67cb0e580427150afb99e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 0ec43447e47050a0bd483d8441da88e4a7f08923
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837006"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21354424"
 ---
-# <a name="recurrence-taskrecurrencetype"></a>Periodicidad (TaskRecurrenceType)
+# <a name="recurrence-taskrecurrencetype"></a>Recurrence (TaskRecurrenceType)
 
 El elemento de **Periodicidad** contiene información de periodicidad de las tareas repetitivas. 
   
@@ -30,7 +30,212 @@ El elemento de **Periodicidad** contiene información de periodicidad de las tar
 </Recurrence>
 ```
 
- **TaskRecurrenceType**
+```xml
+<Recurrence>
+      <WeeklyRecurrence/> 
+      <NoEndRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <RelativeMonthlyRecurrence/> 
+      <NumberedRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <AbsoluteMonthlyRecurrence/> 
+      <EndDateRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <MonthlyRegeneration/> 
+      <NumberedRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <DailyRegeneration/> 
+      <EndDateRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+       <DailyRegeneration/> 
+       <NumberedRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <DailyRegeneration/> 
+      <NoEndRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+       <MonthlyRegeneration/> 
+       <NoEndRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <YearlyRegeneration/> 
+      <NoEndRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <YearlyRegeneration/> 
+      <EndDateRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <AbsoluteMonthlyRecurrence/> 
+      <NumberedRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <WeeklyRegeneration/> 
+      <NumberedRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <RelativeMonthlyRecurrence/> 
+      <EndDateRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <RelativeYearlyRecurrence/> 
+      <NumberedRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <WeeklyRegeneration/> 
+      <NoEndRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <AbsoluteYearlyRecurrence/> 
+      <NumberedRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <RelativeMonthlyRecurrence/> 
+      <NoEndRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <YearlyRegeneration/> 
+      <NumberedRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <WeeklyRecurrence/> 
+      <EndDateRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <RelativeYearlyRecurrence/> 
+      <EndDateRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+       <MonthlyRegeneration/> 
+       <EndDateRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <AbsoluteYearlyRecurrence/> 
+      <NoEndRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <AbsoluteMonthlyRecurrence/> 
+      <NoEndRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+       <DailyRecurrence/> 
+       <EndDateRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <WeeklyRegeneration/> 
+      <EndDateRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <AbsoluteYearlyRecurrence/> 
+      <EndDateRecurrence/> 
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <DailyRecurrence/> 
+      <NoEndRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <DailyRecurrence/> 
+      <NumberedRecurrence/>
+</Recurrence>
+```
+
+```xml
+<Recurrence>
+      <WeeklyRecurrence/> 
+      <NumberedRecurrence/>
+</Recurrence>
+```
+
+
+**TaskRecurrenceType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -77,8 +282,6 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |Puede estar vacío  <br/> |False  <br/> |
    
 ## <a name="see-also"></a>Vea también
-
-
 
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

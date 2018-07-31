@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 3893be6a-49a7-49f6-bf53-c7f819ec3f87
 description: El elemento DeleteItemField representa una operación para eliminar una propiedad determinada de un elemento durante una llamada UpdateItem.
-ms.openlocfilehash: 2388bd10379211a31890b7c4f27920431ce444c8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 571227eece8f717c1bf5da27cfab8ae50dfe3572
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764102"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353885"
 ---
 # <a name="deleteitemfield"></a>DeleteItemField
 
@@ -26,7 +26,7 @@ El elemento **DeleteItemField** representa una operación para eliminar una prop
 - [UpdateItem](updateitem.md)  
 - [ItemChanges](itemchanges.md) 
 - [ItemChange](itemchange.md) 
-- [Actualizaciones (elemento)](updates-item.md) 
+- [Updates (Elemento)](updates-item.md) 
 - [DeleteItemField](deleteitemfield.md)
   
 ```xml
@@ -35,7 +35,20 @@ El elemento **DeleteItemField** representa una operación para eliminar una prop
 </DeleteItemField>
 ```
 
- **DeleteItemFieldType**
+```xml
+<DeleteItemField>
+   <IndexedFieldURI/> 
+</DeleteItemField>
+```
+
+```xml
+<DeleteItemField>
+   <ExtendedFieldURI/>
+</DeleteItemField>
+```
+
+**DeleteItemFieldType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -56,7 +69,7 @@ Ninguno.
 
 |**Element**|**Descripción**|
 |:-----|:-----|
-|[Actualizaciones (elemento)](updates-item.md) <br/> |Contiene un conjunto de elementos que definen append, establecer y eliminar los cambios realizados en las propiedades de elementos.  <br/><br/>La siguiente es la expresión de XPath para este elemento:<br/>`/UpdateItem/ItemChanges/ItemChange[i]/Updates` <br/> |
+|[Updates (Elemento)](updates-item.md) <br/> |Contiene un conjunto de elementos que definen append, establecer y eliminar los cambios realizados en las propiedades de elementos.  <br/><br/>La siguiente es la expresión de XPath para este elemento:<br/>`/UpdateItem/ItemChanges/ItemChange[i]/Updates` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 

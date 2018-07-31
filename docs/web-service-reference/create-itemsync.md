@@ -1,5 +1,5 @@
 ---
-title: Crear (ItemSync)
+title: Create (ItemSync)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,26 +12,22 @@ api_type:
 - schema
 ms.assetid: cb5e64a2-66a5-4447-921e-7c13efb8f6bf
 description: El elemento Create identifica un solo elemento para crear en el almacén de cliente local.
-ms.openlocfilehash: 39056bcaab3577b1b729421118a45571910922fc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: d49e54c64f7bd53dcb296d998a856c20570d81be
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763911"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353948"
 ---
-# <a name="create-itemsync"></a>Crear (ItemSync)
+# <a name="create-itemsync"></a>Create (ItemSync)
 
 El elemento **Create** identifica un solo elemento para crear en el almacén de cliente local. 
   
-[SyncFolderItemsResponse](syncfolderitemsresponse.md)
-  
-[ResponseMessages](responsemessages.md)
-  
-[SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md)
-  
-[Cambios (elementos)](changes-items.md)
-  
-[Crear (ItemSync)](create-itemsync.md)
+- [SyncFolderItemsResponse](syncfolderitemsresponse.md) 
+- [ResponseMessages](responsemessages.md) 
+- [SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md) 
+- [Changes (Items)](changes-items.md) 
+- [Create (ItemSync)](create-itemsync.md)
   
 ```xml
 <Create>
@@ -39,7 +35,62 @@ El elemento **Create** identifica un solo elemento para crear en el almacén de 
 </Create>
 ```
 
- **SyncFolderItemsCreateOrUpdateType**
+```xml
+<Create>
+   <Task/> 
+</Create>
+```
+
+```xml
+<Create>
+   <MeetingResponse/>
+</Create>
+```
+
+```xml
+<Create>
+   <CalendarItem/>
+</Create>
+```
+
+```xml
+<Create>
+   <MeetingMessage/>
+</Create>
+```
+
+```xml
+<Create>
+   <DistributionList/>
+</Create>
+```
+
+```xml
+<Create>
+   <MeetingCancellation/>
+</Create>
+```
+
+```xml
+<Create>
+   <MeetingRequest/> 
+</Create>
+```
+
+```xml
+<Create>
+   <Message/> 
+</Create>
+```
+
+```xml
+<Create>
+   <Contact/> 
+</Create>
+```
+
+**SyncFolderItemsCreateOrUpdateType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -67,7 +118,7 @@ Ninguno.
 
 |**Element**|**Descripción**|
 |:-----|:-----|
-|[Cambios (elementos)](changes-items.md) <br/> |Contiene una matriz de secuencia de tipos de cambios que representan los tipos de las diferencias entre los elementos en el cliente y los elementos en el servidor de Exchange.  <br/> |
+|[Changes (Items)](changes-items.md) <br/> |Contiene una matriz de secuencia de tipos de cambios que representan los tipos de las diferencias entre los elementos en el cliente y los elementos en el servidor de Exchange.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -84,10 +135,6 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
    
 ## <a name="see-also"></a>Vea también
 
-
-
-[Operación SyncFolderItems](syncfolderitems-operation.md)
-
-
+- [Operación SyncFolderItems](syncfolderitems-operation.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 

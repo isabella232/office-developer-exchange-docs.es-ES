@@ -1,5 +1,5 @@
 ---
-title: Actualización (FolderSync)
+title: Update (FolderSync)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,26 +12,22 @@ api_type:
 - schema
 ms.assetid: 47ed8edb-2a94-471b-b965-93f91456252e
 description: El elemento de actualización identifica una sola carpeta para actualizar en el almacén de cliente local.
-ms.openlocfilehash: 6d4a6233df41ea95e1fd9b394502bfb2728bddb6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: bf49741b2478edff450f114dc1464a0528072bea
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840801"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353507"
 ---
-# <a name="update-foldersync"></a>Actualización (FolderSync)
+# <a name="update-foldersync"></a>Update (FolderSync)
 
 El elemento **Update** identifica una sola carpeta para actualizar en el almacén de cliente local. 
   
-[SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md)
-  
-[ResponseMessages](responsemessages.md)
-  
-[SyncFolderHierarchyResponseMessage](syncfolderhierarchyresponsemessage.md)
-  
-[Cambios (jerarquía)](changes-hierarchy.md)
-  
-[Actualización (FolderSync)](update-foldersync.md)
+- [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md) 
+- [ResponseMessages](responsemessages.md) 
+- [SyncFolderHierarchyResponseMessage](syncfolderhierarchyresponsemessage.md)  
+- [Changes (Hierarchy)](changes-hierarchy.md) 
+- [Update (FolderSync)](update-foldersync.md)
   
 ```xml
 <Update>
@@ -39,7 +35,32 @@ El elemento **Update** identifica una sola carpeta para actualizar en el almacé
 </Update>
 ```
 
- **SyncFolderHierarchyCreateOrUpdateType**
+```xml
+<Update>
+   <CalendarFolder/>
+</Update>
+```
+
+```xml
+<Update>
+   <ContactsFolder/>
+</Update>
+```
+
+```xml
+<Update>
+   <TasksFolder/>
+</Update>
+```
+
+```xml
+<Update>
+   <SearchFolder/>
+</Update>
+```
+
+**SyncFolderHierarchyCreateOrUpdateType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
@@ -62,7 +83,7 @@ Ninguno.
 
 |**Element**|**Descripción**|
 |:-----|:-----|
-|[Cambios (jerarquía)](changes-hierarchy.md) <br/> |Contiene una matriz de tipos de cambio que representan el tipo de las diferencias entre las carpetas en el cliente y las carpetas en el servidor de Exchange de secuenciado.  <br/> |
+|[Changes (Hierarchy)](changes-hierarchy.md) <br/> |Contiene una matriz de tipos de cambio que representan el tipo de las diferencias entre las carpetas en el cliente y las carpetas en el servidor de Exchange de secuenciado.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -79,10 +100,6 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
    
 ## <a name="see-also"></a>Vea también
 
-
-
-[Operación SyncFolderItems](syncfolderitems-operation.md)
-
-
+- [Operación SyncFolderItems](syncfolderitems-operation.md)
 - [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
 
