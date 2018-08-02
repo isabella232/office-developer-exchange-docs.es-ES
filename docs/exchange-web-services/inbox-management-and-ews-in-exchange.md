@@ -5,17 +5,17 @@ ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 3dfa0fc9-64bb-4d18-bff7-bf6b3bed4a0d
-description: Descubra cómo administrar su bandeja de entrada en la API administrada EWS o aplicación EWS por medio de reglas de bandeja de entrada y de la lista de remitentes bloqueados.
+description: Descubra cómo administrar su Bandeja de entrada en la API administrada EWS o aplicación EWS por medio de reglas de bandeja de entrada y de la lista de remitentes bloqueados.
 ms.openlocfilehash: fe06c5ee87e2679506ca7247c5fc2c96912dee86
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763193"
 ---
 # <a name="inbox-management-and-ews-in-exchange"></a>Administración de la Bandeja de entrada y EWS en Exchange
 
-Este documento puede incluir contenido relacionado con funciones o productos preliminares que pueden cambiar mucho antes del lanzamiento comercial final. Este documento se proporciona "tal cual" solamente con fines informativos y Microsoft no realiza ninguna garantía, explícita ni implícita, en el documento. Descubra cómo administrar su bandeja de entrada en la API administrada EWS o aplicación EWS por medio de reglas de bandeja de entrada y de la lista de remitentes bloqueados.
+Descubra cómo administrar su Bandeja de entrada en la API administrada EWS o aplicación EWS por medio de reglas de bandeja de entrada y de la lista de remitentes bloqueados.
   
 Los buzones de Exchange están equipados con características que ayudan a los usuarios a organizar automáticamente el correo entrante. Todas ellas funcionan en el servidor sin intervención del usuario, pero atienden a distintas necesidades. La API administrada EWS y EWS proporcionan acceso a estas características, lo que permite a los usuarios administrar sus bandejas de entrada.
   
@@ -26,12 +26,12 @@ Los buzones de Exchange están equipados con características que ayudan a los u
 |Realizar acciones con los mensajes entrantes (como moverlos a otra carpeta o eliminarlos) basándose en criterios específicos (por ejemplo, el remitente, el asunto o los datos adjuntos)  <br/> |Reglas de la Bandeja de entrada  <br/> |
 |Eliminar todo el correo entrante de un remitente determinado  <br/> |Lista de remitentes bloqueados  <br/> |
    
-## <a name="inbox-rules"></a>Reglas de la Bandeja de entrada
+## <a name="inbox-rules"></a>Reglas de la bandeja de entrada
 <a name="bk_InboxRules"> </a>
 
 Hay que reconocerlo: no todos los mensajes de correo electrónico son iguales. Por cada correo electrónico que el usuario recibe de su jefe, hay otro de una lista de distribución de vídeos de gatos a la que se suscribió hace años y de la que no ha sabido cómo salir. Aunque los vídeos de gatos son entretenidos, la cantidad de tráfico que genera la lista de distribución se puede ir de las manos, y es fácil que los mensajes importantes se pierdan en el mar de correo de la lista de distribución en esa bandeja de entrada. Muchos usuarios recurren a reglas de la Bandeja de entrada para ayudar a reducir esos mensajes y tener una Bandeja de entrada mucho más agradable. Con Exchange Web Services (EWS), su aplicación puede poner en práctica toda la potencia de las reglas.
   
-La API administrada EWS ofrece los métodos [ExchangeService.GetInboxRules](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) y [ExchangeService.UpdateInboxRules](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) para trabajar con reglas. EWS proporciona las operaciones [GetInboxRules](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) y [UpdateInboxRules](http://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx) para trabajar con reglas. Pero tenga en cuenta que la API administrada EWS y EWS tienen las siguientes limitaciones cuando trabajan con reglas de la Bandeja de entrada: 
+La API administrada EWS ofrece los métodos [ExchangeService.GetInboxRules](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) y [ExchangeService.UpdateInboxRules](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) para trabajar con reglas. EWS proporciona las operaciones [GetInboxRules](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) y [UpdateInboxRules](http://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx) para trabajar con reglas. Pero tenga en cuenta que la API administrada EWS y EWS tienen las siguientes limitaciones cuando trabajan con reglas de la Bandeja de entrada: 
   
 - EWS no puede tener acceso ni crear reglas de "solo cliente" o reglas que se establezcan en Outlook para ejecutarlas "solo en este equipo".
     
@@ -110,7 +110,7 @@ Las indicaciones para el motor de reglas son las siguientes: "Cuando llegue un m
 |Excepciones  <br/> |De "Mamá"  <br/> |
    
 > [!NOTE]
-> [!NOTA] Observe que una de las acciones de la regla resultante es "detener el procesamiento de más reglas". En general, es buena idea incluir esta acción para evitar confusiones sobre las reglas que actúan en un mensaje dado. Pero si omite esta acción y ordena correctamente las reglas, puede obtener un procesamiento más avanzado de su correo entrante. En este caso, podemos contar con que los mensajes de vídeos de gatos no necesitan un procesamiento demasiado avanzado. 
+> Observe que una de las acciones de la regla resultante es "detener el procesamiento de más reglas". En general, es buena idea incluir esta acción para evitar confusiones sobre las reglas que actúan en un mensaje dado. Pero si omite esta acción y ordena correctamente las reglas, puede obtener un procesamiento más avanzado de su correo entrante. En este caso, podemos contar con que los mensajes de vídeos de gatos no necesitan un procesamiento demasiado avanzado. 
   
 Poco después de crear esta regla, llega un nuevo mensaje. Hope, una compañera de trabajo, envía un mensaje a la lista de distribución. Si realizamos mentalmente el trabajo del motor de reglas, el mensaje cumple todas las condiciones (se ha enviado a 'Entusiastas de los vídeos de gatos') y no cumple con ninguna de las excepciones (no es de 'Mamá'), por lo que se aplica la regla y el mensaje se mueve a la carpeta 'Gatos'.
   
@@ -123,24 +123,24 @@ La figura siguiente muestra cómo se aplica la regla a un mensaje de correo entr
 ## <a name="blocking-senders"></a>Bloquear remitentes
 <a name="bk_Blocking"> </a>
 
-Aunque puede crear una regla que mueva todo el correo de un remitente específico a la carpeta de correo no deseado, también puede hacerlo mediante la lista de remitentes bloqueados en las opciones de correo electrónico no deseado. Como la cantidad de reglas que puede tener un usuario está limitada, es mejor usar la lista de remitentes bloqueados. Puede [agregar o quitar direcciones de correo electrónico específicas de la lista de remitentes bloqueados](how-to-add-and-remove-email-addresses-from-blocked-senders-list-by-using-ews.md) usando el método [ExchangeService.MarkAsJunk](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx) de la API administrada EWS o la operación [MarkAsJunk](http://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx) de EWS. Tenga en cuenta que, para que EWS pueda tener acceso a la lista de remitentes bloqueados, el buzón del usuario debe contener un mensaje de correo electrónico enviado desde la dirección de correo electrónico que desea agregar o quitar. 
+Aunque puede crear una regla que mueva todo el correo de un remitente específico a la carpeta de correo no deseado, también puede hacerlo mediante la lista de remitentes bloqueados en las opciones de correo electrónico no deseado. Como la cantidad de reglas que puede tener un usuario está limitada, es mejor usar la lista de remitentes bloqueados. Puede [agregar o quitar direcciones de correo electrónico específicas de la lista de remitentes bloqueados](how-to-add-and-remove-email-addresses-from-blocked-senders-list-by-using-ews.md) usando el método [ExchangeService.MarkAsJunk](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx) de la API administrada EWS o la operación [MarkAsJunk](http://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx) de EWS. Tenga en cuenta que, para que EWS pueda tener acceso a la lista de remitentes bloqueados, el buzón del usuario debe contener un mensaje de correo electrónico enviado desde la dirección de correo electrónico que desea agregar o quitar. 
   
 ## <a name="in-this-section"></a>En esta sección
 <a name="bk_InThisSection"> </a>
 
-- [Administrar reglas de bandeja de entrada mediante el uso de EWS en Exchange](how-to-manage-inbox-rules-by-using-ews-in-exchange.md)
+- [Administrar las reglas de la Bandeja de entrada mediante EWS en Exchange](how-to-manage-inbox-rules-by-using-ews-in-exchange.md)
     
 - [Agregar y quitar direcciones de correo electrónico de la lista de remitentes bloqueados mediante el uso de EWS en Exchange](how-to-add-and-remove-email-addresses-from-blocked-senders-list-by-using-ews.md)
     
 ## <a name="see-also"></a>Vea también
 
 
-- [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
+- [Desarrollar clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
     
 - [Operación de GetInboxRules](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx)
     
 - [Operación de UpdateInboxRules](http://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx)
     
-- [MarkAsJunk Operation](http://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx)
+- [Operación MarkAsJunk](http://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx)
     
 

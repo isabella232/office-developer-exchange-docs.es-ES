@@ -1,5 +1,5 @@
 ---
-title: Administrar reglas de bandeja de entrada mediante el uso de EWS en Exchange
+title: Administrar las reglas de la Bandeja de entrada mediante EWS en Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,37 +8,37 @@ ms.assetid: 982ddb78-5606-44b0-8aba-dbffc60d6085
 description: Obtenga información sobre cómo obtener, crear, actualizar y eliminar reglas de la Bandeja de entrada mediante la API administrada de EWS o EWS en Exchange.
 ms.openlocfilehash: 85e166ba57d74c74382b257d01d9bff8f44bade1
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763108"
 ---
-# <a name="manage-inbox-rules-by-using-ews-in-exchange"></a>Administrar reglas de bandeja de entrada mediante el uso de EWS en Exchange
+# <a name="manage-inbox-rules-by-using-ews-in-exchange"></a>Administrar las reglas de la Bandeja de entrada mediante EWS en Exchange
 
 Obtenga información sobre cómo obtener, crear, actualizar y eliminar reglas de la Bandeja de entrada mediante la API administrada de EWS o EWS en Exchange.
   
 Puede obtener, crear, actualizar y eliminar reglas de la Bandeja de entrada mediante la API administrada de EWS o EWS. Independientemente de la tecnología que use, se obtienen y modifican reglas de la Bandeja de entrada como una colección y no de manera individual. Use el mismo método u operación para crear reglas nuevas, actualizar las existentes y eliminarlas.  
   
-**La tabla 1. Métodos y operaciones para obtener y modificar las reglas de bandeja de entrada**
+**Tabla 1. Métodos y operaciones para obtener y modificar las reglas de la Bandeja de entrada**
 
-|**Con el fin...**|**Método de la API administrada de EWS**|**Operación de EWS**|
+|**Para**|**Método de la API administrada de EWS**|**Operación de EWS**|
 |:-----|:-----|:-----|
-|Obtener las reglas de la Bandeja de entrada  <br/> |[ExchangeService.GetInboxRules](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) <br/> |[GetInboxRules](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) <br/> |
-|Crear, actualizar o eliminar reglas de la Bandeja de entrada  <br/> |[ExchangeService.UpdateInboxRules](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) <br/> |[UpdateInboxRules](http://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx) <br/> |
+|Obtener las reglas de la Bandeja de entrada  <br/> |[ExchangeService.GetInboxRules](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) <br/> |[GetInboxRules](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) <br/> |
+|Crear, actualizar o eliminar reglas de la Bandeja de entrada  <br/> |[ExchangeService.UpdateInboxRules](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) <br/> |[UpdateInboxRules](http://msdn.microsoft.com/library/f982a237-471e-45c5-a2b5-468cfc53150b%28Office.15%29.aspx) <br/> |
    
-Con el fin de crear, actualizar o eliminar las reglas de bandeja de entrada mediante el uso de la API administrada de EWS o EWS, debe quitar la regla de Outlook, si existe. Si se usa la API administrada de EWS, para ello, al establecer el parámetro **removeOutlookRulesBlob** en **true** en la llamada al método **ExchangeService.UpdateInboxRules** . Si está usando EWS, establezca el valor del elemento [RemoveOutlookRuleBlob](http://msdn.microsoft.com/library/69614475-8bd3-4475-b988-614fe9cad8ef%28Office.15%29.aspx) en **true** en la operación **UpdateInboxRules** . Se recomienda que la aplicación debe comprobar la propiedad [RuleCollection.OutlookRuleBlobExists](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.rulecollection.outlookruleblobexists%28v=exchg.80%29.aspx) (si está usando la API administrada de EWS), o el elemento de [OutlookRuleBlobExists](http://msdn.microsoft.com/library/ae1bc448-deb9-4b5b-ab38-4b276abcb650%28Office.15%29.aspx) (si está utilizando EWS) antes de actualizar las reglas de bandeja de entrada. Si esta propiedad o este elemento tiene un valor de **true**, la aplicación debe avisar al usuario que cualquier reglas desactivadas se perderán como parte de la actualización y proceda sólo con sus permisos.
+Para crear, actualizar o eliminar reglas de la Bandeja de entrada mediante la API administrada de EWS o EWS, debe quitar la regla de Outlook, si existe. Si usa la API administrada de EWS, puede hacerlo estableciendo el parámetro **removeOutlookRulesBlob** en **true** en la llamada al método **ExchangeService.UpdateInboxRules**. Si usa EWS, establezca el valor del elemento [RemoveOutlookRuleBlob](http://msdn.microsoft.com/library/69614475-8bd3-4475-b988-614fe9cad8ef%28Office.15%29.aspx) en **true** en la operación **UpdateInboxRules**. Recomendamos que su aplicación compruebe la propiedad [RuleCollection.OutlookRuleBlobExists](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.rulecollection.outlookruleblobexists%28v=exchg.80%29.aspx) (si está usando la API administrada de EWS) o el elemento [OutlookRuleBlobExists](http://msdn.microsoft.com/library/ae1bc448-deb9-4b5b-ab38-4b276abcb650%28Office.15%29.aspx) (si está usando EWS) antes de actualizar las reglas de la Bandeja de entrada. Si está propiedad o elemento tiene un valor **true**, la aplicación debería avisar al usuario de que se perderá cualquier regla deshabilitada como parte de la actualización, y solo continuará con su permiso.
   
-Cuando se llama al método **UpdateInboxRules** , EWS elimina las reglas de envío del cliente. Reglas de envío del cliente se almacenan en el cliente en la regla de mensaje de la carpeta asociada información (FAI) y en ningún otro lugar. EWS elimina esta regla mensaje FAI de forma predeterminada, basándose en la expectativa que Outlook volverá a crearlo. Sin embargo, Outlook no puede volver a crear las reglas que no existen también como una regla extendida, y no existen reglas de envío del cliente como reglas extendidas. Como resultado, estas reglas se pierden. Es recomendable que considere la posibilidad de esto al diseñar la solución. 
+Cuando llama al método **UpdateInboxRules**, EWS elimina las reglas de envío del lado cliente. Las reglas de envío del lado cliente se almacenan en el cliente en el Mensaje de información asociada de carpetas (FAI) de la regla y en ningún otro lugar. EWS elimina este mensaje FAI de la regla de manera predeterminada, basándose en la expectativa de que Outlook volverá a crearlo. En cambio, Outlook no puede volver a crear reglas que tampoco existen como una regla extendida, y las reglas de envío del lado cliente no existen como reglas extendidas. Como resultado, estas reglas se pierden. Le sugerimos que considere esta posibilidad al diseñar su solución. 
   
 > [!NOTE]
-> Los ejemplos de código de API administrada de EWS en este artículo usan un [conjunto común de métodos de utilidad](how-to-manage-inbox-rules-by-using-ews-in-exchange.md#bk_UtilitySource). Estos métodos se omiten de los ejemplos de código por razones de brevedad. 
+> Los ejemplos de código de la API administrada de EWS de este artículo usan un [conjunto común de métodos de utilidad](how-to-manage-inbox-rules-by-using-ews-in-exchange.md#bk_UtilitySource). Estos métodos se omiten de los ejemplos de código para mayor brevedad. 
   
 ## <a name="get-inbox-rules-by-using-the-ews-managed-api"></a>Obtener las reglas de la Bandeja de entrada mediante la API administrada de EWS
 <a name="bk_GetRulesEWSMA"> </a>
 
-Para obtener las reglas de bandeja de entrada actuales, use el método [ExchangeService.GetInboxRules](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx) . Este método devuelve un objeto [RuleCollection](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.rulecollection%28v=exchg.80%29.aspx) que contiene todas las reglas de bandeja de entrada actuales. 
+Para obtener las reglas de bandeja de entrada actuales, utilice el método [ExchangeService.GetInboxRules](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx). Este método devuelve un objeto [RuleCollection](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.rulecollection%28v=exchg.80%29.aspx) que contiene todas las reglas de bandeja de entrada actuales. 
   
-En este ejemplo, se pasa cada regla de la Bandeja de entrada actual a una función auxiliar ( **ParseRuleDetails** ) para ver los detalles de la regla. 
+En este ejemplo, cada regla de la bandeja de entrada actual se pasa a una función auxiliar (**ParseRuleDetails**) para mostrar los detalles de la regla. 
   
 ```cs
 using System;
@@ -76,7 +76,7 @@ private static void GetInboxRules(ExchangeService service, string emailAddress)
 ## <a name="get-inbox-rules-by-using-ews"></a>Obtener las reglas de la Bandeja de entrada mediante EWS
 <a name="bk_GetRulesEWS"> </a>
 
-La siguiente solicitud SOAP de EWS usa la [operación de GetInboxRules](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) para recuperar las reglas de bandeja de entrada para sadie@contoso.com. 
+La siguiente solicitud SOAP de EWS usa [GetInboxRules operation](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx) para recuperar las reglas de la Bandeja de entrada de naiara@contoso.com. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -164,7 +164,7 @@ La siguiente respuesta SOAP de EWS contiene las reglas actuales de la Bandeja de
 ## <a name="create-inbox-rules-by-using-the-ews-managed-api"></a>Crear las reglas de la Bandeja de entrada mediante la API administrada de EWS
 <a name="bk_CreateRulesEWSMA"> </a>
 
-Para crear una regla, incluir un objeto [CreateRuleOperation](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.createruleoperation%28v=exchg.80%29.aspx) en la colección de objetos [RuleOperation](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.ruleoperation%28v=exchg.80%29.aspx) que se pasan al método [ExchangeService.UpdateInboxRules](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx) . 
+Para crear una regla, incluya un objeto [CreateRuleOperation](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.createruleoperation%28v=exchg.80%29.aspx) en la colección de objetos [RuleOperation](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.ruleoperation%28v=exchg.80%29.aspx) que se pasaron al método [ExchangeService.UpdateInboxRules](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx). 
   
 En este ejemplo, se crea una regla nueva para mover el correo que se ha enviado a una lista de distribución denominada "Ventas" a una subcarpeta de la bandeja de entrada, también denominada "Ventas".
   
@@ -299,7 +299,7 @@ La siguiente solicitud SOAP de EWS crea la regla "Ventas" en la bandeja de entra
 ## <a name="update-inbox-rules-by-using-the-ews-managed-api"></a>Actualizar las reglas de la Bandeja de entrada mediante la API administrada de EWS
 <a name="bk_UpdateRulesEWSMA"> </a>
 
-Para actualizar una regla, incluir un objeto [SetRuleOperation](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.setruleoperation%28v=exchg.80%29.aspx) en la colección de objetos **RuleOperation** que se pasan al método **UpdateInboxRules** . 
+Para actualizar una regla, incluya un objeto [SetRuleOperation](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.setruleoperation%28v=exchg.80%29.aspx) de la colección de objetos **RuleOperation** que se pasaron al método **UpdateInboxRules**. 
   
 En este ejemplo, la regla "Ventas" se actualiza para agregar una excepción. Si el asunto contiene la palabra "Urgente", los mensajes no se moverán a la subcarpeta "Ventas".
   
@@ -436,7 +436,7 @@ La siguiente solicitud SOAP de EWS actualiza la regla "Ventas" en la bandeja de 
 ## <a name="delete-inbox-rules-by-using-the-ews-managed-api"></a>Eliminar las reglas de la Bandeja de entrada mediante la API administrada de EWS
 <a name="bk_DeleteRulesEWSMA"> </a>
 
-Para eliminar una regla, incluir un objeto [DeleteRuleOperation](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.deleteruleoperation%28v=exchg.80%29.aspx) en la colección de objetos **RuleOperation** que se pasan al método **UpdateInboxRules** . 
+Para eliminar una regla, incluya un objeto [DeleteRuleOperation](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.deleteruleoperation%28v=exchg.80%29.aspx) en la colección de objetos **RuleOperation** que se pasaron al método **UpdateInboxRules**. 
   
 En este ejemplo, la regla "Ventas" se elimina.
   
@@ -910,9 +910,9 @@ private static FolderId GetFolderIdByName(ExchangeService service, WellKnownFold
 
 - [Administración de la Bandeja de entrada y EWS en Exchange](inbox-management-and-ews-in-exchange.md)
     
-- [ExchangeService.GetInboxRules (método)](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx)
+- [Método ExchangeService.GetInboxRules](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.exchangeservice.getinboxrules%28v=exchg.80%29.aspx)
     
-- [ExchangeService.UpdateInboxRules (método)](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx)
+- [Método ExchangeService.UpdateInboxRules](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.exchangeservice.updateinboxrules%28v=exchg.80%29.aspx)
     
 - [Operación de GetInboxRules](http://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx)
     

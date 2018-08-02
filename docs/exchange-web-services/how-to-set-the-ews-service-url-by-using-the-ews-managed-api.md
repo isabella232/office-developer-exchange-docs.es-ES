@@ -1,23 +1,23 @@
 ---
-title: Establecer la dirección URL de servicio EWS mediante el uso de la API administrada de EWS
+title: Establecer la dirección URL del servicio EWS usando la API administrada de EWS
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: cddf6525-1c04-484b-a911-56c2f0f1f7b6
-description: Este documento puede incluir contenido relacionado con funciones o productos preliminares que pueden cambiar mucho antes del lanzamiento comercial final. Este documento se proporciona "tal cual" solamente con fines informativos y Microsoft no realiza ninguna garantía, explícita ni implícita, en el documento. Infórmese sobre cómo establecer la dirección URL del servicio EWS en la aplicación de API administrada de EWS.
+description: Obtenga información sobre cómo configurar la dirección URL del servicio EWS en la aplicación de la API administrada de EWS.
 ms.openlocfilehash: e1a414f7c6f13bd61a58403c9d2be546c0226a69
 ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/25/2018
 ms.locfileid: "19763167"
 ---
-# <a name="set-the-ews-service-url-by-using-the-ews-managed-api"></a>Establecer la dirección URL de servicio EWS mediante el uso de la API administrada de EWS
+# <a name="set-the-ews-service-url-by-using-the-ews-managed-api"></a>Establecer la dirección URL del servicio EWS usando la API administrada de EWS
 
-Este documento puede incluir contenido relacionado con funciones o productos preliminares que pueden cambiar mucho antes del lanzamiento comercial final. Este documento se proporciona "tal cual" solamente con fines informativos y Microsoft no realiza ninguna garantía, explícita ni implícita, en el documento. Infórmese sobre cómo establecer la dirección URL del servicio EWS en la aplicación de API administrada de EWS.
+Obtenga información sobre cómo configurar la dirección URL del servicio EWS en la aplicación de la API administrada de EWS.
   
-La dirección URL del servicio es la dirección que Exchange usa para comunicarse con los servicios Web Exchange (EWS). Una vez que la aplicación de API administrada de EWS tiene esta dirección y el debido acceso para [comunicarse con EWS](how-to-communicate-with-ews-by-using-the-ews-managed-api.md), puede hacer llamadas a la [clase ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx). La URL del servicio para un servidor de Exchange local puede tener el aspecto siguiente. 
+La dirección URL del servicio es la dirección que Exchange usa para comunicarse con los servicios Web Exchange (EWS). Una vez que la aplicación de API administrada de EWS tiene esta dirección y el debido acceso para [comunicarse con EWS](how-to-communicate-with-ews-by-using-the-ews-managed-api.md), puede hacer llamadas a la [clase ExchangeService](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx). La URL del servicio para un servidor de Exchange local puede tener el aspecto siguiente. 
   
 ```HTML
 https://computer.domain.contoso.com/EWS/Exchange.asmx
@@ -28,7 +28,7 @@ La dirección URL de EWS se puede establecer en la aplicación de dos formas. Le
 ## <a name="set-the-ews-service-url-by-using-the-autodiscover-service"></a>Establecer la dirección URL del servicio EWS usando el servicio Detección automática
 <a name="bk_SetURLusingAutoDiscover"> </a>
 
-El método [AutodiscoverUrl](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.autodiscoverurl%28v=exchg.80%29.aspx) usa la dirección de correo electrónico para establecer el extremo [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) y permite a la aplicación usar los métodos incluidos en las clases proxy **ExchangeService**. El ejemplo siguiente muestra cómo usar el método **AutodiscoverURL**. 
+El método [AutodiscoverUrl](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.exchangeservice.autodiscoverurl%28v=exchg.80%29.aspx) usa la dirección de correo electrónico para establecer el extremo [ExchangeService](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) y permite a la aplicación usar los métodos incluidos en las clases proxy **ExchangeService**. El ejemplo siguiente muestra cómo usar el método **AutodiscoverURL**. 
   
 ```cs
 // Create the binding.
@@ -58,9 +58,9 @@ service.Url = new Uri("https://computername.domain.contoso.com/EWS/Exchange.asmx
 ## <a name="see-also"></a>Vea también
 
 - [Empezar a trabajar con aplicaciones de cliente de la API administrada de EWS](get-started-with-ews-managed-api-client-applications.md)   
-- [Configurar el entorno de desarrollo de aplicación de Exchange](setting-up-your-exchange-application-development-environment.md)   
+- [Configurar su entorno de desarrollo de aplicaciones de Exchange](setting-up-your-exchange-application-development-environment.md)   
 - [Controlar el acceso a EWS en Exchange](how-to-control-access-to-ews-in-exchange.md) 
-- [Comunicarse con EWS mediante el uso de la API administrada de EWS](how-to-communicate-with-ews-by-using-the-ews-managed-api.md)  
-- [Usar detección automática para buscar puntos de conexión](how-to-use-autodiscover-to-find-connection-points.md)
+- [Comunicarse con EWS mediante la API administrada de EWS](how-to-communicate-with-ews-by-using-the-ews-managed-api.md)  
+- [Usar autodetección para buscar puntos de conexión](how-to-use-autodiscover-to-find-connection-points.md)
     
 
