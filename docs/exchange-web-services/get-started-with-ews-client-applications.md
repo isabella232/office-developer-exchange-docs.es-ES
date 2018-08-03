@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: e6fd5c23-0ba5-4a7b-bdde-4a553447069f
 description: Cree su primera aplicación utilizando Servicios Web Exchange (EWS) de Exchange.
-ms.openlocfilehash: 911495c74f4c74114a86b1a3a98c9200db338b34
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
-ms.translationtype: MT
+ms.openlocfilehash: 06606bdc2b37c8bf65b8b10dc7a516bdc911b256
+ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763023"
+ms.lasthandoff: 07/28/2018
+ms.locfileid: "21353780"
 ---
 # <a name="get-started-with-ews-client-applications"></a>Empezar a trabajar con aplicaciones de cliente de EWS
 
-Este documento puede incluir contenido relacionado con funciones o productos preliminares que pueden cambiar mucho antes del lanzamiento comercial final. Este documento se proporciona "tal cual" solamente con fines informativos y Microsoft no realiza ninguna garantía, explícita ni implícita, en el documento. Cree su primera aplicación utilizando Servicios Web Exchange (EWS) de Exchange.
+Cree su primera aplicación utilizando Servicios Web Exchange (EWS) de Exchange.
   
 EWS es un servicio integral que las aplicaciones pueden usar para tener acceso a casi toda la información almacenada en un buzón de Exchange Online, Exchange Online como parte de Office 365 o Exchange local. EWS usa protocolos web estándar para proporcionar acceso a un servidor Exchange. Bibliotecas como la [API administrada de EWS](get-started-with-ews-managed-api-client-applications.md) ajustan las operaciones de EWS para proporcionar una interfaz orientada a objetos. Una vez que haya ejecutado los ejemplos de este artículo, tendrá un conocimiento básico de lo que puede hacer con EWS. 
   
@@ -25,13 +25,13 @@ Puede llamar a las operaciones de EWS desde cualquier sistema operativo o lengua
 
 Si ya tiene una cuenta de buzón de Exchange, puede omitir este paso. En caso contrario, dispone de las opciones siguientes para configurar un buzón de Exchange para su primera aplicación de EWS:
   
-- [Obtener un sitio de Office 365 Developer](http://msdn.microsoft.com/en-us/library/office/fp179924.aspx)(recomendado). Esta es la forma más rápida de configurar un buzón de Exchange.
+- [Obtener un sitio de Office 365 Developer](http://msdn.microsoft.com/es-ES/library/office/fp179924.aspx)(recomendado). Esta es la forma más rápida de configurar un buzón de Exchange.
     
 - Descargar [Exchange Server](http://office.microsoft.com/en-us/exchange/microsoft-exchange-try-or-buy-exchange-we-can-help-you-decide-FX103746846.aspx?WT%2Eintid1=ODC%5FENUS%5FFX103472230%5FXT103965589).
     
 Después de haber comprobado que puede enviar y recibir correo electrónico desde el servidor Exchange, está listo para configurar el entorno de desarrollo. Puede usar Outlook Web App para comprobar que puede enviar correo electrónico.
   
-También debe conocer la dirección URL del punto de conexión de EWS para su servidor. En una aplicación de producción, se usaría [Autodiscover](autodiscover-for-exchange.md) para determinar la dirección URL de EWS. Los ejemplos de este artículo usan la dirección URL del punto de conexión EWS de Office 365, https://outlook.office365.com/EWS/Exchange.asmx. La sección [Próximos pasos](#bk_next) contiene vínculos a más información sobre Autodiscover cuando esté listo. 
+También debe conocer la dirección URL del punto de conexión de EWS para su servidor. En una aplicación de producción, se usaría [Autodiscover](autodiscover-for-exchange.md) para determinar la dirección URL de EWS. Los ejemplos de este artículo usan la dirección URL del punto de conexión EWS de Office 365, `https://outlook.office365.com/EWS/Exchange.asmx`. La sección [Próximos pasos](#bk_next) contiene vínculos a más información sobre Autodiscover cuando esté listo. 
   
 Si está probando la aplicación mediante un servidor Exchange que tiene el certificado autofirmado predeterminado, necesitará crear un [método de validación de certificados](how-to-validate-a-server-certificate-for-the-ews-managed-api.md) que cumpla los requisitos de seguridad de su organización. 
   
@@ -420,7 +420,7 @@ var createItemSOAPRequest =
 
 <a name="bk_next"></a>
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Ahora que ya ha escrito su primera aplicación de EWS, está listo para descubrir otras formas de usar EWS. A continuación, le damos algunas ideas para empezar.
   
@@ -436,7 +436,7 @@ Si surge algún problema con la aplicación [envíe una pregunta o un comentario
   
 ## <a name="see-also"></a>Vea también
 
-- [Empezar a utilizar servicios web de Exchange](start-using-web-services-in-exchange.md)   
+- [Empezar a usar los servicios web de Exchange](start-using-web-services-in-exchange.md)   
 - [Explore la API administrada de EWS, EWS y servicios web de Exchange](explore-the-ews-managed-api-ews-and-web-services-in-exchange.md) 
 - [Introducción al diseño de EWS cliente de Exchange](ews-client-design-overview-for-exchange.md)   
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)  
