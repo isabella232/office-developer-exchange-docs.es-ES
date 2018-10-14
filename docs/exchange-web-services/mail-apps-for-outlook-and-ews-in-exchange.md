@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 821c8eb9-bb58-42e8-9a3a-61ca635cba59
 description: Obtenga información acerca de los complementos de Outlook y cómo funcionan con EWS en Exchange.
-ms.openlocfilehash: fc004108c7f31ea6475d61f4e2cd2289b13d27f5
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.openlocfilehash: 7eae834fe0bb93e2e94f094e811ab6cf002fc71b
+ms.sourcegitcommit: 42eecc78e7aed7e95f73370d6c39ab8f4e96bf68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353640"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25541641"
 ---
 # <a name="outlook-add-ins-and-ews-in-exchange"></a>Complementos de Outlook y EWS en Exchange
 
@@ -42,7 +42,7 @@ Puede usar las aplicaciones de correo para personalizar la experiencia de Outloo
 
 Su organización puede instalar las aplicaciones de correo en un servidor interno para limitar el acceso a los usuarios autorizados, u otros desarrolladores de aplicaciones de correo y se pueden colocar las aplicaciones de correo en la [Tienda de Office](http://office.microsoft.com/store/) para la venta al público en general. Cualquier persona que se está ejecutando Outlook puede descargar, instalar y usar aplicaciones de correo desde el catálogo de soluciones.
 
-Si desea obtener más información sobre la creación de aplicaciones de correo, consulte la [documentación de complementos de Outlook](/outlook/add-ins/index.md) o en el ejemplo [para realizar una solicitud EWS](http://code.msdn.microsoft.com/exchange/Mail-apps-for-Outlook-Make-770b2528) .
+Si desea obtener más información sobre la creación de aplicaciones de correo, consulte la [documentación de complementos de Outlook](/outlook/add-ins) o en el ejemplo [para realizar una solicitud EWS](http://code.msdn.microsoft.com/exchange/Mail-apps-for-Outlook-Make-770b2528) .
 
 ## <a name="ews-and-outlook-add-ins"></a>Complementos EWS y Outlook
 
@@ -79,7 +79,7 @@ El token de devolución de llamada de servicio es un token de opaco que el servi
 
 - [Método Mailbox.makeEwsRequestAsync (API de JavaScript para Office)](http://msdn.microsoft.com/library/2ec380e0-4a67-4146-92a6-6a39f65dc6f2%28Office.15%29.aspx)
 
-- [Complementos de Outlook](https://docs.microsoft.com/en-us/outlook/add-ins/)
+- [Complementos de Outlook](https://docs.microsoft.com/outlook/add-ins)
 
 - [Método Mailbox.getUserIdentityTokenAsync (API de JavaScript para Office)](http://msdn.microsoft.com/library/c658518b-6867-41a0-99cf-810303e4c539%28Office.15%29.aspx)
 
