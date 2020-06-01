@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5c1a855e-390d-4713-9d10-6e86ca392814
-description: El elemento de actualizaciones contiene un conjunto de elementos que definen append, establecer y eliminar los cambios realizados en las propiedades de elementos.
-ms.openlocfilehash: 13df458c783b942e1c868853c41b6247119cf123
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento updates contiene un conjunto de elementos que definen los cambios de las propiedades de elemento de anexión, establecimiento y eliminación.
+ms.openlocfilehash: 6902ea4d3d3d9adc074745d5642cdfa6d91a9163
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840866"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456356"
 ---
 # <a name="updates-item"></a>Actualizaciones (elemento)
 
-El elemento de **actualizaciones** contiene un conjunto de elementos que definen append, establecer y eliminar los cambios realizados en las propiedades de elementos. 
+El elemento **updates** contiene un conjunto de elementos que definen los cambios de las propiedades de elemento de anexión, establecimiento y eliminación. 
   
 - [UpdateItem](updateitem.md)
   
@@ -43,43 +43,43 @@ El elemento de **actualizaciones** contiene un conjunto de elementos que definen
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AppendToItemField](appendtoitemfield.md) <br/> |Representa los datos que se anexará a una sola propiedad de un elemento durante una [operación de UpdateItem](updateitem-operation.md).  <br/> |
-|[SetItemField](setitemfield.md) <br/> |Representa una actualización para una única propiedad de un elemento en una [operación de UpdateItem](updateitem-operation.md).  <br/> |
-|[DeleteItemField](deleteitemfield.md) <br/> |Representa una operación para eliminar una propiedad determinada de un elemento durante una [operación de UpdateItem](updateitem-operation.md).  <br/> |
+|[AppendToItemField](appendtoitemfield.md) <br/> |Representa los datos que se van a anexar a una propiedad única de un elemento durante una [operación UpdateItem](updateitem-operation.md).  <br/> |
+|[SetItemField](setitemfield.md) <br/> |Representa una actualización de una propiedad única de un elemento en una [operación UpdateItem](updateitem-operation.md).  <br/> |
+|[DeleteItemField](deleteitemfield.md) <br/> |Representa una operación para eliminar una propiedad determinada de un elemento durante una [operación UpdateItem](updateitem-operation.md).  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ItemChange](itemchange.md) <br/> |Contiene un identificador de elemento y las actualizaciones que se debe aplicar al elemento.  <br/> La siguiente es la expresión de XPath para este elemento:`/UpdateItem/ItemChanges/ItemChange[i]` <br/> |
+|[ItemChange](itemchange.md) <br/> |Contiene un identificador de elemento y las actualizaciones que se aplican al elemento.  <br/> La siguiente es la expresión XPath a este elemento:`/UpdateItem/ItemChanges/ItemChange[i]` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Las actualizaciones que se definen mediante este elemento se realizan en el elemento que se identifica con los elementos [ItemId](itemid.md), [OccurrenceItemId](occurrenceitemid.md)o [RecurringMasterItemId](recurringmasteritemid.md) . 
+Las actualizaciones que se definen mediante este elemento se realizan en el elemento identificado por los elementos [Itemid](itemid.md), [OccurrenceItemId](occurrenceitemid.md)o [RecurringMasterItemId](recurringmasteritemid.md) . 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación UpdateItem](updateitem-operation.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Identificadores de
+title: Falta
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c54cdeaf-6761-4d1a-a329-fb279f0e2a64
-description: El elemento de identificadores contiene una matriz de identificadores de definición de zona horaria.
-ms.openlocfilehash: e4f8afb1292b3cb9f3990d4613b7461050976a59
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento IDS contiene una matriz de identificadores de definición de zona horaria.
+ms.openlocfilehash: 1c5a6974c8d3abc318ff122f3db09d8c3472dc65
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835856"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457623"
 ---
-# <a name="ids"></a>Identificadores de
+# <a name="ids"></a>Falta
 
-El elemento de **identificadores** contiene una matriz de identificadores de definición de zona horaria. 
+El elemento **IDS** contiene una matriz de identificadores de definición de zona horaria. 
   
 ```XML
 <Ids>
@@ -32,36 +32,36 @@ El elemento de **identificadores** contiene una matriz de identificadores de def
  **NonEmptyArrayOfTimeZoneIdType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Identificador (TimeZone)](id-timezone.md) <br/> |El elemento que identifica la definición de una sola zona horaria.  <br/> |
+|[Identificador (TimeZone)](id-timezone.md) <br/> |Elemento que identifica una definición de zona horaria única.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetServerTimeZones](getservertimezones.md) <br/> |Define una solicitud para recuperar las definiciones de zona horaria desde el servidor de Exchange.  <br/> |
+|[GetServerTimeZones](getservertimezones.md) <br/> |Define una solicitud para recuperar definiciones de zona horaria del servidor Exchange.  <br/> |
    
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

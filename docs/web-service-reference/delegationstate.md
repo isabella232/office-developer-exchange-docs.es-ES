@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 9dbb83ed-1ded-48f3-8e06-2489fc8b28d5
 description: El elemento DelegationState representa el estado de una tarea delegada.
-ms.openlocfilehash: 00b0e41ae223f1c70f9a3a21662e8858f8690a86
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: b938b5a2240283c265006dd47cd6ff475ad80978
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764072"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457371"
 ---
 # <a name="delegationstate"></a>DelegationState
 
@@ -31,33 +31,33 @@ El elemento **DelegationState** representa el estado de una tarea delegada.
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Tarea](task.md) <br/> |Representa una tarea en el almacén de Exchange.  <br/> |
+|[Tarea](task.md) <br/> |Representa una tarea del almacén de Exchange.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se trata de una propiedad de solo lectura. Los valores posibles son:
+Se trata de una propiedad de solo lectura. Los valores posibles son los siguientes:
   
 - NoMatch
     
 - OwnNew
     
-- Propiedad
+- Estatal
     
-- Aceptado
+- Aceptadas
     
 - Rechazado
     
@@ -65,20 +65,20 @@ Se trata de una propiedad de solo lectura. Los valores posibles son:
     
 ## <a name="remarks"></a>Comentarios
 
-Servicios Web de Exchange en Microsoft Exchange Server 2007 no es compatible con las asignaciones de tareas.
+Los servicios web Exchange de Microsoft Exchange Server 2007 no admiten asignaciones de tareas.
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Exchange 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Exchange 2007 y que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

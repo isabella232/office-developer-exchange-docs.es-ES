@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a5bf44c6-c46b-442d-98d4-8b49fdf14b30
-description: El GetPersonaResponseMessage contiene los datos de la respuesta resultante de una solicitud de GetPersona.
-ms.openlocfilehash: 7d38daac9c7c3a74ba9d9670c2bd16dcf2cd47e3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: GetPersonaResponseMessage contiene los datos de respuesta resultantes de una solicitud de GetPersona.
+ms.openlocfilehash: 6391e1b6682180e292d03c5db651e8edc6f46b52
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764949"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458330"
 ---
 # <a name="getpersonaresponsemessage"></a>GetPersonaResponseMessage
 
-El **GetPersonaResponseMessage** contiene los datos de la respuesta resultante de una solicitud de **GetPersona** . 
+**GetPersonaResponseMessage** contiene los datos de respuesta resultantes de una solicitud de **GetPersona** . 
   
 ```XML
 <GetPersonaResponseMessage>
@@ -32,15 +32,15 @@ El **GetPersonaResponseMessage** contiene los datos de la respuesta resultante d
  **GetUserPhotoResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [rol](persona.md)
+[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)  |  [Persona](persona.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -56,9 +56,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

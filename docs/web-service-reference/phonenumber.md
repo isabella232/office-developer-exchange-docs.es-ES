@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d6b8a258-50a9-4105-9ede-241a5d0c31f6
 description: El elemento PhoneNumber especifica el número de teléfono predeterminado del rol asociado.
-ms.openlocfilehash: bbf04c0e6110899db0da55f2aafea23c4e45b7a8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 432aacbada4df82fe5b96cb67ca774a49b557e56
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836759"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457770"
 ---
 # <a name="phonenumber"></a>PhoneNumber
 
@@ -29,15 +29,15 @@ El elemento **PhoneNumber** especifica el número de teléfono predeterminado de
  **PersonaPhoneNumberType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Número de](number.md) | [tipo (cadena)](type-string.md)
+[Número](number.md)  |  [Tipo (cadena)](type-string.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

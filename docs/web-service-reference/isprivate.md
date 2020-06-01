@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 1712bc94-9789-4507-8521-bde1be51e331
 description: El elemento IsPrivate indica si el elemento de calendario es privado.
-ms.openlocfilehash: 37c0357b3eab2314ee74e1c98287b3dc05a3bf26
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: c36c659414700439436cd2ca903e443164c1473b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836095"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457805"
 ---
 # <a name="isprivate"></a>IsPrivate
 
@@ -46,40 +46,40 @@ El elemento **IsPrivate** indica si el elemento de calendario es privado.
  **boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarEventDetails](calendareventdetails.md) <br/> |Proporciona información adicional acerca de un evento de calendario.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
+|[CalendarEventDetails](calendareventdetails.md) <br/> |Proporciona información adicional acerca de un evento de calendario.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto que representa un valor de tipo Boolean.
+Se requiere un valor de texto que representa un valor booleano.
   
 ## <a name="remarks"></a>Comentarios
 
-Si se usa este elemento, los demás elementos en el elemento [CalendarEventDetails](calendareventdetails.md) no se incluirá en la respuesta. 
+Si se usa este elemento, los demás elementos del elemento [CalendarEventDetails](calendareventdetails.md) no se incluirán en la respuesta. 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -90,5 +90,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

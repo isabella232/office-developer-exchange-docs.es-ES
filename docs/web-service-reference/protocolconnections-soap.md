@@ -9,12 +9,12 @@ api_type:
 - schema
 ms.assetid: afcacecd-f081-4419-a6d5-e45070839f9a
 description: El elemento ProtocolConnections contiene cero o más conexiones de protocolo.
-ms.openlocfilehash: 9938669bc62d5554338e48ce59ca92755ba13d64
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 6272bdf3aec8ba6572b07659416413c393954d93
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836921"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457763"
 ---
 # <a name="protocolconnections-soap"></a>ProtocolConnections (SOAP)
 
@@ -29,35 +29,35 @@ El elemento **ProtocolConnections** contiene cero o más conexiones de protocolo
  **ProtocolConnections**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[ProtocolConnections (SOAP)](protocolconnections-soap.md) <br/> |Contiene cero o más conexiones de protocolo.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ProtocolConnectionCollectionSetting (SOAP)](protocolconnectioncollectionsetting-soap.md) <br/> |Representa una colección de configuración de conexión del protocolo de servidor.  <br/> |
+|[ProtocolConnectionCollectionSetting (SOAP)](protocolconnectioncollectionsetting-soap.md) <br/> |Representa una colección de opciones de configuración de conexión del Protocolo de servidor.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también

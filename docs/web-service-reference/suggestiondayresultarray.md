@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: eeba9eff-5eca-4002-b5a5-8fb794feaba1
-description: El elemento SuggestionDayResultArray contiene una matriz de sugerencias organizadas por fecha de reunión.
-ms.openlocfilehash: c208104356606a5d9961461ad8743a772d2410d8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SuggestionDayResultArray contiene una matriz de sugerencias de reunión organizadas por fecha.
+ms.openlocfilehash: 277d4cf71c31aba26cbff6f598eaa62769cae552
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840601"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457987"
 ---
 # <a name="suggestiondayresultarray"></a>SuggestionDayResultArray
 
-El elemento **SuggestionDayResultArray** contiene una matriz de sugerencias organizadas por fecha de reunión. 
+El elemento **SuggestionDayResultArray** contiene una matriz de sugerencias de reunión organizadas por fecha. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -38,36 +38,36 @@ El elemento **SuggestionDayResultArray** contiene una matriz de sugerencias orga
  **ArrayOfSuggestionDayResult**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SuggestionDayResult](suggestiondayresult.md) <br/> |Representa un solo día que contiene las horas de reunión sugerida.  <br/> |
+|[SuggestionDayResult](suggestiondayresult.md) <br/> |Representa un solo día que contiene las horas de reunión sugeridas.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SuggestionsResponse](suggestionsresponse.md) <br/> |Contiene los datos de información y sugerencia de la respuesta para solicitado sugerencias de reunión  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse` <br/> |
+|[SuggestionsResponse](suggestionsresponse.md) <br/> |Contiene información de respuesta y datos de sugerencias para las sugerencias de reunión solicitadas  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -78,5 +78,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

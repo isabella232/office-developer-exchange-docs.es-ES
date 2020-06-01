@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6b463d0a-70e9-40c5-ade4-c7d9a5f36bc1
-description: El elemento Create identifica una sola carpeta para crear en el almacén de cliente local.
-ms.openlocfilehash: 867eecb89c115b008d4828e162b21d078eba695c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Create identifica una única carpeta que se va a crear en el almacén de cliente local.
+ms.openlocfilehash: 43f6a6b3c084c8ecae767c512181bbdf50c7e786
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763908"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458379"
 ---
 # <a name="create-foldersync"></a>Crear (FolderSync)
 
-El elemento **Create** identifica una sola carpeta para crear en el almacén de cliente local. 
+El elemento **Create** identifica una única carpeta que se va a crear en el almacén de cliente local. 
   
 [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md)
   
@@ -46,40 +46,40 @@ El elemento **Create** identifica una sola carpeta para crear en el almacén de 
  **SyncFolderHierarchyCreateOrUpdateType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Folder](folder.md) <br/> |Define la carpeta para crear, obtener, buscar, sincronizar o actualizar.  <br/> |
-|[CalendarFolder](calendarfolder.md) <br/> |Representa una carpeta que principalmente contiene los elementos del calendario.  <br/> |
-|[ContactsFolder](contactsfolder.md) <br/> |Representa una carpeta de contactos en un buzón de correo.  <br/> |
-|[SearchFolder](searchfolder.md) <br/> |Representa una carpeta de búsqueda incluida en un buzón de correo.  <br/> |
-|[TasksFolder](tasksfolder.md) <br/> |Representa una carpeta de tarea incluida en un buzón de correo.  <br/> |
+|[Folder](folder.md) <br/> |Define la carpeta que se va a crear, obtener, buscar, sincronizar o actualizar.  <br/> |
+|[Hubiera](calendarfolder.md) <br/> |Representa una carpeta que contiene principalmente elementos de calendario.  <br/> |
+|[Hubiera](contactsfolder.md) <br/> |Representa una carpeta de contactos en un buzón.  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |Representa una carpeta de búsqueda contenida en un buzón.  <br/> |
+|[Hubiera](tasksfolder.md) <br/> |Representa una carpeta de tareas contenida en un buzón.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Cambios (jerarquía)](changes-hierarchy.md) <br/> |Contiene una matriz de secuencia de tipos de cambio que representan el tipo de las diferencias entre los elementos en el cliente y los elementos en el servidor de Exchange.  <br/> |
+|[Cambios (jerarquía)](changes-hierarchy.md) <br/> |Contiene una matriz de secuencias de tipos de cambios que representan el tipo de diferencias entre los elementos en el cliente y los elementos en el servidor de Exchange.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -88,5 +88,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [Operación SyncFolderItems](syncfolderitems-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

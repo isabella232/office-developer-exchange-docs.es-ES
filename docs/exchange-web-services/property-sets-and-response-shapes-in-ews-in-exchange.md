@@ -1,55 +1,55 @@
 ---
-title: Conjuntos de propiedades y respuesta de formas de EWS en Exchange
+title: Conjuntos de propiedades y formas de respuestas de EWS en Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 04a29804-6067-48e7-9f5c-534e253a230e
-description: Obtenga información sobre cómo administrar las formas de respuesta y conjuntos de propiedades que son devueltos por la dirección URL de EWS administran EWS y la API de Exchange.
-ms.openlocfilehash: d9fd6c155438dfd03cfc9536397316cf3faa2287
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Aprenda a administrar las formas de respuesta y los conjuntos de propiedades que devuelven la API administrada de EWS y EWS en Exchange.
+ms.openlocfilehash: 8f539a2131798e764574ef92f75deb654c02c90f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763315"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457665"
 ---
-# <a name="property-sets-and-response-shapes-in-ews-in-exchange"></a>Conjuntos de propiedades y respuesta de formas de EWS en Exchange
+# <a name="property-sets-and-response-shapes-in-ews-in-exchange"></a>Conjuntos de propiedades y formas de respuestas de EWS en Exchange
 
-Obtenga información sobre cómo administrar las formas de respuesta y conjuntos de propiedades que son devueltos por la dirección URL de EWS administran EWS y la API de Exchange.
+Aprenda a administrar las formas de respuesta y los conjuntos de propiedades que devuelven la API administrada de EWS y EWS en Exchange.
   
-El almacén de datos de Exchange proporciona una solución de almacenamiento flexible que permite almacenar elementos diferentes, como los contactos y las entradas de calendario, en la misma carpeta; Sin embargo, puede realizar difícil de administrar los datos que se devuelven desde una llamada a una operación de EWS o un método de la API administrada.
+El almacén de datos de Exchange proporciona una solución de almacenamiento flexible que permite almacenar diferentes elementos, como contactos y entradas de calendario, en la misma carpeta; sin embargo, puede dificultar la administración de los datos que se devuelven desde una llamada a una operación de EWS o un método de la API administrada de EWS.
   
-Para facilitar la administración de los datos que se devuelven por Exchange Online, Exchange Online como parte de Office 365, o la versión de Excahange iniciar con Exchange 2013, la API administrada de EWS utiliza conjuntos de propiedades, y EWS utiliza las formas de la respuesta. Estos son colecciones predefinidas que proporcionan las propiedades más comunes de un elemento del almacén. El conjunto de propiedades que se devuelve se determina por el tipo de elemento. Esto significa que, cuando se enlaza un elemento mediante el método de la API administrada de Exchange [Item.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) , obtendrá un conjunto diferente de propiedades según el tipo de elemento a la que enlazar. Enlace a un elemento de calendario devolverá un conjunto diferente de propiedades que el enlace a un elemento de contacto. Del mismo modo, si usa EWS, la [operación GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) devuelve un conjunto diferente de propiedades según el tipo de elemento que se devuelve. 
+Para que sea más fácil administrar los datos devueltos por Exchange Online, Exchange online como parte de Office 365 o la versión de Excahange a partir de Exchange 2013, la API administrada de EWS usa conjuntos de propiedades y EWS usa formas de respuesta. Estas son colecciones predefinidas que proporcionan las propiedades más comunes de un elemento de almacenamiento. El conjunto de propiedades que se devuelve está determinado por el tipo de elemento. Esto significa que, cuando se enlaza un elemento mediante el método [Item. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) de la API administrada de Exchange, se obtiene un conjunto de propiedades diferente según el tipo de elemento al que se enlace. El enlace a un elemento de calendario devolverá un conjunto diferente de propiedades que enlazar a un elemento de contacto. Del mismo modo, si está usando EWS, la [operación GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) devuelve un conjunto de propiedades diferente según el tipo de elemento que se devuelve. 
   
-Enlace a una carpeta con el método [Folder.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) o mediante la [operación GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) devuelve también distintos conjuntos de propiedades basándose en la carpeta que solicita. 
+Si se enlaza a una carpeta con el método [Folder. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) o mediante la [operación GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) , también se devolverán distintos conjuntos de propiedades en función de la carpeta que se solicite. 
   
-**La tabla 1. Formas de respuesta predefinidos**
+**Tabla 1. Formas de respuesta predefinidas**
 
-|**Forma de respuesta**|**Equivalente de la API administrada de EWS**|**Descripción**|
+|**Forma respuesta**|**Equivalente de API administrada de EWS**|**Descripción**|
 |:-----|:-----|:-----|
-|Sólo identificador  <br/> |[BasePropertySet.IdOnly](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.basepropertyset%28v=exchg.80%29.aspx) <br/> |Devuelve solo el identificador del elemento o la carpeta. Mayoría de las aplicaciones debe usar esta forma de respuesta y especificar las propiedades adicionales que son necesarias.  <br/> |
-|Default  <br/> |N/D  <br/> |Devuelve un conjunto predefinido de propiedades que son el valor predeterminado para el elemento o la carpeta (sólo EWS).  <br/> |
-|Todas las propiedades  <br/> |[BasePropertySet.FirstClassProperties](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.basepropertyset%28v=exchg.80%29.aspx) <br/> |Devuelve las propiedades que las aplicaciones cliente se usan con más frecuencia. Puede devolver propiedades adicionales mediante el uso de una ruta de acceso de propiedad.  <br/> |
+|Solo identificador  <br/> |[BasePropertySet.IdOnly](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.basepropertyset%28v=exchg.80%29.aspx) <br/> |Devuelve sólo el identificador del elemento o carpeta. La mayoría de las aplicaciones deben usar esta forma de respuesta y especificar las propiedades adicionales necesarias.  <br/> |
+|Predeterminado  <br/> |N/D  <br/> |Devuelve un conjunto predefinido de propiedades que son el valor predeterminado para el elemento o carpeta (solo EWS).  <br/> |
+|Todas las propiedades  <br/> |[BasePropertySet.FirstClassProperties](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.basepropertyset%28v=exchg.80%29.aspx) <br/> |Devuelve las propiedades que usan las aplicaciones cliente con más frecuencia. Puede devolver propiedades adicionales mediante una ruta de acceso de propiedad.  <br/> |
    
-## <a name="default-response-shapes"></a>Formas de respuesta predeterminada
+## <a name="default-response-shapes"></a>Formas de respuesta predeterminadas
 
-EWS incluye un conjunto de formas de respuesta predeterminada para las carpetas y elementos. 
+EWS incluye un conjunto de formas de respuesta predeterminadas para las carpetas y los elementos. 
   
-En la siguiente tabla se enumera las propiedades predeterminadas que se devuelven para cada carpeta por las operaciones [FindFolder](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) y [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) EWS. 
+En la siguiente tabla se enumeran las propiedades predeterminadas que se devuelven para cada carpeta en las operaciones EWS [FindFolder](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) y [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) . 
   
-**Tabla 2. Propiedades de la carpeta predeterminada**
+**Tabla 2. Propiedades de carpeta predeterminadas**
 
-|**Propiedad**|**Bandeja de entrada**|**Calendario**|**Contacts**|**Elementos eliminados**|**Borradores**|**Notas**|**Otras carpetas**|**Bandeja de salida**|
+|**Propiedad**|**Bandeja de entrada**|**Calendario**|**Contactos**|**Elementos eliminados**|**Borradores**|**Notas**|**Otras carpetas**|**Saliente**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|Nombre para mostrar  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |
-|Identificador de carpeta  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |
-|Recuento de subcarpeta  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |
+|Nombre completo (DN)  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |
+|Id. de carpeta  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |
+|Número de subcarpetas  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |
 |Recuento total  <br/> |X  <br/> ||X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |X  <br/> |
-|Recuento de no leído  <br/> |X  <br/> |||X  <br/> |X  <br/> ||X  <br/> |X  <br/> |
+|Número de no leídos  <br/> |X  <br/> |||X  <br/> |X  <br/> ||X  <br/> |X  <br/> |
    
-En la siguiente tabla se enumera las propiedades predeterminadas que se devuelven para cada tipo de elemento mediante las operaciones [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) y EWS [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) . 
+En la siguiente tabla se enumeran las propiedades predeterminadas que se devuelven para cada tipo de elemento mediante las operaciones EWS de [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) y [GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) . 
   
-**Tabla 3. Propiedades de elementos de forma predeterminada**
+**Tabla 3. Propiedades de elemento predeterminadas**
 
 |**Propiedad**|**Elemento de calendario**|**Elemento de contacto**|**Elemento de mensaje**|**Elemento de tarea**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -59,13 +59,13 @@ En la siguiente tabla se enumera las propiedades predeterminadas que se devuelve
 |CompleteName  <br/> ||x  <br/> |||
 |DateTimeCreated  <br/> |||x  <br/> ||
 |DateTimeSent  <br/> |||x  <br/> ||
-|DueDate  <br/> ||||x(2)  <br/> |
+|DueDate  <br/> ||||x (2)  <br/> |
 |EmailAddresses  <br/> ||x  <br/> |||
 |End  <br/> |x  <br/> ||||
-|Archivar como  <br/> ||x  <br/> |||
-|De  <br/> |||x  <br/> ||
+|FileAs  <br/> ||x  <br/> |||
+|From  <br/> |||x  <br/> ||
 |HasAttachments  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
-|ImAddresses  <br/> ||x  <br/> |||
+|Indirecciones  <br/> ||x  <br/> |||
 |IsAssociated  <br/> |x  <br/> ||x  <br/> ||
 |IsDeliveryReceiptRequested  <br/> |||x  <br/> ||
 |ItemId  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
@@ -78,28 +78,28 @@ En la siguiente tabla se enumera las propiedades predeterminadas que se devuelve
 |PhysicalAddresses  <br/> ||x  <br/> |||
 |ResponseObjects  <br/> |x (1)  <br/> ||x (1)  <br/> ||
 |Sensitity  <br/> |||x  <br/> ||
-|Tama?o  <br/> |||x  <br/> ||
-|StartDate  <br/> ||||x(2)  <br/> |
+|Size  <br/> |||x  <br/> ||
+|StartDate  <br/> ||||x (2)  <br/> |
 |Estado  <br/> ||||x  <br/> |
 |Subject  <br/> |x  <br/> ||x  <br/> |x  <br/> |
    
 Notas:
   
-1. Se incluyen en la respuesta de la operación **GetItem** . No se incluyen en la respuesta de la operación **FindItem** . 
+1. Se incluye en la respuesta de la operación **GetItem** . No se incluye en la respuesta de la operación **FindItem** . 
     
-2. Sólo se incluyen en la respuesta si el campo contiene datos. No se incluyen en la respuesta si el campo está en blanco.
+2. Solo se incluye en la respuesta si el campo contiene datos. No se incluye en la respuesta si el campo está en blanco.
     
-### <a name="all-properties-set-and-response-shape"></a>Todas las formas de conjunto y respuesta de propiedades
+### <a name="all-properties-set-and-response-shape"></a>Todas las propiedades set y Response Shape
 
-En la siguiente tabla se enumera las propiedades de primera clase que se devuelven mediante una llamada a la API administrada de EWS [Item.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) y métodos de la API administrada de EWS [Item.FindItems](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) y la forma de respuesta "todas las propiedades" devueltos por la [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) y [ GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) las operaciones de EWS. 
+En la siguiente tabla se enumeran las propiedades de primera clase que se devuelven al llamar a los métodos de la API administrada [Item. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) y [Item. FINDITEMS](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) de la API administrada EWS y la forma de respuesta "todas las propiedades" devueltas por las operaciones EWS de [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) y [GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) . 
   
-Puede agregar propiedades adicionales a la propiedad establecer o incluyan propiedades extendidas. Para obtener información detallada, vea [las propiedades y las propiedades extendidas de EWS en Exchange](properties-and-extended-properties-in-ews-in-exchange.md).
+Puede Agregar propiedades adicionales al conjunto de propiedades o incluir propiedades extendidas. Para obtener más información, consulte [propiedades y propiedades extendidas de EWS en Exchange](properties-and-extended-properties-in-ews-in-exchange.md).
   
 **Tabla 4. Propiedades de primera clase**
 
 |||||||
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|Property  <br/> |Elemento de calendario  <br/> |Elemento de contacto  <br/> |Elemento de mensaje  <br/> |Elemento para exponer  <br/> |Elemento de tarea  <br/> |
+|Propiedad  <br/> |Elemento de calendario  <br/> |Elemento de contacto  <br/> |Elemento de mensaje  <br/> |Elemento de exposición  <br/> |Elemento de tarea  <br/> |
 |ActualWork  <br/> |||||x  <br/> |
 |AdjacentMeetingCount  <br/> |x  <br/> |||||
 |AdjacentMeetings  <br/> |x  <br/> |||||
@@ -119,7 +119,7 @@ Puede agregar propiedades adicionales a la propiedad establecer o incluyan propi
 |CcRecipients  <br/> |||x  <br/> |||
 |ChangeCount  <br/> |||||x  <br/> |
 |Children  <br/> ||x  <br/> ||||
-|Companies  <br/> |||||x  <br/> |
+|Empresas  <br/> |||||x  <br/> |
 |CompleteDate  <br/> |||||x  <br/> |
 |CompleteName  <br/> ||x  <br/> ||||
 |ConferenceType  <br/> |x  <br/> |||||
@@ -137,7 +137,7 @@ Puede agregar propiedades adicionales a la propiedad establecer o incluyan propi
 |DateTimeStamp  <br/> |x  <br/> |||||
 |DelegationState  <br/> |||||x  <br/> |
 |Delegator  <br/> |||||x  <br/> |
-|DeletedOccurances  <br/> |x  <br/> |||||
+|DeletedOccurrences  <br/> |x  <br/> |||||
 |Departamento  <br/> ||x  <br/> ||||
 |DirectoryId  <br/> ||x  <br/> ||||
 |DirectReports  <br/> ||x  <br/> ||||
@@ -150,30 +150,30 @@ Puede agregar propiedades adicionales a la propiedad establecer o incluyan propi
 |EmailAddresses  <br/> ||x  <br/> ||||
 |End  <br/> |x  <br/> |||||
 |EndTimeZone  <br/> |x  <br/> |||||
-|Archivar como  <br/> ||x  <br/> ||||
+|FileAs  <br/> ||x  <br/> ||||
 |FileAsMapping  <br/> ||x  <br/> ||||
-|FirstOccurance  <br/> |x  <br/> |||||
-|De  <br/> |||x  <br/> |x  <br/> ||
+|FirstOccurrence  <br/> |x  <br/> |||||
+|From  <br/> |||x  <br/> |x  <br/> ||
 |Generación  <br/> ||x  <br/> ||||
 |GivenName  <br/> ||x  <br/> ||||
 |HasAttachments  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
 |HasPicture  <br/> ||x  <br/> ||||
-|ImAddresses  <br/> ||x  <br/> ||||
+|Indirecciones  <br/> ||x  <br/> ||||
 |Importancia  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
 |Iniciales  <br/> ||x  <br/> ||||
-|InReplyTo  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
+|Inreplyto  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
 |InternetMessageId  <br/> |||x  <br/> |x  <br/> ||
 |InternetMessageHeaders  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
 |IsAllDayEvent  <br/> |x  <br/> |||||
 |IsAssociated  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
 |IsCancelled  <br/> |x  <br/> |||||
-|Haya finalizado  <br/> |||||x  <br/> |
+|IsComplete  <br/> |||||x  <br/> |
 |IsDeliveryReceiptRequested  <br/> |||x  <br/> |||
 |IsDraft  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
 |IsFromMe  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
 |IsMeeting  <br/> |x  <br/> |||||
 |IsOnlineMeeting  <br/> |x  <br/> |||||
-|Estáleído  <br/> |||x  <br/> |||
+|IsRead  <br/> |||x  <br/> |||
 |IsReadReceiptRequested  <br/> |||x  <br/> |||
 |IsRecurring  <br/> |x  <br/> ||||x  <br/> |
 |IsResend  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
@@ -188,7 +188,7 @@ Puede agregar propiedades adicionales a la propiedad establecer o incluyan propi
 |LastOccurrance  <br/> |x  <br/> |||||
 |LegacyFreeBusyStatus  <br/> |x  <br/> |||||
 |Ubicación  <br/> |x  <br/> |||||
-|Administrador  <br/> ||x  <br/> ||||
+|Manager  <br/> ||x  <br/> ||||
 |MeetingRequestWasSent  <br/> |x  <br/> |||||
 |MeetingTimeZone  <br/> |x  <br/> |||||
 |MeetingWorkspaceUrl  <br/> |x  <br/> |||||
@@ -197,14 +197,14 @@ Puede agregar propiedades adicionales a la propiedad establecer o incluyan propi
 |ModifiedOccurrances  <br/> |x  <br/> |||||
 |MyResponseType  <br/> |x  <br/> |||||
 |NetShowUrl  <br/> |x  <br/> |||||
-|Alias  <br/> ||x  <br/> ||||
+|NickName  <br/> ||x  <br/> ||||
 |Notas  <br/> ||x  <br/> ||||
 |OfficeLocation  <br/> ||x  <br/> ||||
 |OptionalAttendees  <br/> |x  <br/> |||||
 |Organizador  <br/> |x  <br/> |||||
 |OriginalStart  <br/> |x  <br/> |||||
 |Owner  <br/> |||||x  <br/> |
-|Id  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
+|ParentFolderId  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
 |PercentComplete  <br/> |||||x  <br/> |
 |PhoneNumbers  <br/> ||x  <br/> ||||
 |PhoneticFirstName  <br/> ||x  <br/> ||||
@@ -228,9 +228,9 @@ Puede agregar propiedades adicionales a la propiedad establecer o incluyan propi
 |ResponseObjects  <br/> |x (1)  <br/> |x (1)  <br/> |x (1)  <br/> |x (1)  <br/> |x (1)  <br/> |
 |Remitente  <br/> |||x  <br/> |x  <br/> ||
 |Confidencialidad  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
-|Tama?o  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
-|NombreCónyuge  <br/> ||x  <br/> ||||
-|Inicio  <br/> |x  <br/> |||||
+|Size  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |x  <br/> |
+|SpouseName  <br/> ||x  <br/> ||||
+|Iniciar  <br/> |x  <br/> |||||
 |StartDate  <br/> |||||x  <br/> |
 |StartTimeZone  <br/> |x  <br/> |||||
 |Estado  <br/> |||||x  <br/> |
@@ -245,18 +245,18 @@ Puede agregar propiedades adicionales a la propiedad establecer o incluyan propi
    
 Notas:
   
-1. Incluye cuándo se [enlace a un elemento](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) y en la respuesta de la [operación GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx). No se incluyen en el resultado del método [Item.FindItems](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) o la respuesta de la [operación FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx).
+1. Se incluye al [enlazar a un elemento](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) y en la respuesta de la [operación GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx). No se incluye en el resultado del método [Item. FindItems](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) o la respuesta de la [operación FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx).
     
 ## <a name="see-also"></a>Vea también
 
-- [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
+- [Desarrollar clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
     
-- [Operación FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)
+- [Operación FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)
     
-- [Operación GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx)
+- [Operación GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx)
     
-- [Operación FindFolder](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)
+- [Operación FindFolder](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)
     
-- [Operación GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)
+- [Operación GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx)
     
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 730f008d-b624-4369-a385-69e8e5964c9c
-description: El elemento IsTranscriptionEnabledInMailboxConfig está pensado para uso interno únicamente.
-ms.openlocfilehash: b925becddedba87d38e130fda213c4f8ae4eeb70
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento IsTranscriptionEnabledInMailboxConfig está destinado sólo para uso interno.
+ms.openlocfilehash: 32cacd2f9daf71c0a26a7967c2b40ddef2e3d3a6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836106"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458246"
 ---
 # <a name="istranscriptionenabledinmailboxconfig"></a>IsTranscriptionEnabledInMailboxConfig
 
-El elemento **IsTranscriptionEnabledInMailboxConfig** está pensado para uso interno únicamente. 
+El elemento **IsTranscriptionEnabledInMailboxConfig** está destinado sólo para uso interno. 
   
 ```XML
 <IsTranscriptionEnabledInMailboxConfig />
@@ -25,15 +25,15 @@ El elemento **IsTranscriptionEnabledInMailboxConfig** está pensado para uso int
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

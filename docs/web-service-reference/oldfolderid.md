@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: da554a97-ab87-4950-9fc4-26b1972381bb
-description: El elemento OldFolderId contiene el identificador original de una carpeta que se ha movido o copiado.
-ms.openlocfilehash: ef73cad73213a1e8b5341907cd22177d8e1ba628
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento OldFolderId contiene el identificador original de una carpeta que se movió o copió.
+ms.openlocfilehash: a6713b9e0c47d68480724c3902086da6a8647dd7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836645"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458064"
 ---
 # <a name="oldfolderid"></a>OldFolderId
 
-El elemento **OldFolderId** contiene el identificador original de una carpeta que se ha movido o copiado. 
+El elemento **OldFolderId** contiene el identificador original de una carpeta que se movió o copió. 
   
 ```xml
 <OldFolderId Id="" ChangeKey=""/>
@@ -30,49 +30,49 @@ El elemento **OldFolderId** contiene el identificador original de una carpeta qu
  **FolderIdType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**Id** <br/> |Contiene una cadena que identifica una carpeta en el almacén de Exchange. Este atributo es necesario.  <br/> |
-|**ChangeKey** <br/> |Contiene una cadena que identifica una versión de una carpeta que se identifica con el atributo Id. Este atributo es opcional. Use este atributo para asegurarse de que se usa la versión correcta de una carpeta.  <br/> |
+|**Id** <br/> |Contiene una cadena que identifica una carpeta en el almacén de Exchange. Este atributo es obligatorio.  <br/> |
+|**ChangeKey** <br/> |Contiene una cadena que identifica una versión de una carpeta identificada por el atributo id. Este atributo es opcional. Use este atributo para asegurarse de que se usa la versión correcta de una carpeta.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CopiedEvent](copiedevent.md) <br/> |Representa un evento en el que se copia un elemento o carpeta.  <br/> |
-|[MovedEvent](movedevent.md) <br/> |Representa un evento en el que una carpeta o elemento se mueve de una carpeta principal a otra carpeta primaria.  <br/> |
+|[CopiedEvent](copiedevent.md) <br/> |Representa un evento en el que se copia un elemento o una carpeta.  <br/> |
+|[MovedEvent](movedevent.md) <br/> |Representa un evento en el que se mueve un elemento o una carpeta de una carpeta principal a otra carpeta principal.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Operación de suscripción](subscribe-operation.md)
+[Operación subscribe](subscribe-operation.md)
   
 [Operación GetEvents](getevents-operation.md)
   
-[Cancelar la operación de suscripción](unsubscribe-operation.md)
+[Operación unsubscribe](unsubscribe-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

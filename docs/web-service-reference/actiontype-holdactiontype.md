@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f50449b9-e73b-43c5-af96-6433bf434dce
-description: El elemento ActionType indica el tipo de acción para la suspensión.
-ms.openlocfilehash: cb1cfa8a1306c4a6cacf5c82824d19cab57e7941
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ActionType indica el tipo de acción para la retención.
+ms.openlocfilehash: 8f2796df818dac2bd285b055aa44fbcecd0de5e6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763384"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457861"
 ---
 # <a name="actiontype-holdactiontype"></a>ActionType (HoldActionType)
 
-El elemento **ActionType** indica el tipo de acción para la suspensión. 
+El elemento **ActionType** indica el tipo de acción para la retención. 
   
 ```XML
 <ActionType> Create | Update | Remove </ActionType>
@@ -26,15 +26,15 @@ El elemento **ActionType** indica el tipo de acción para la suspensión.
  **HoldActionType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ActionType** es el tipo de espera que se establece en un buzón. Un valor de texto de **creación** indica que se creará una suspensión de buzón de correo. Un valor de texto de **actualización** indica que se actualizará una suspensión de buzón de correo. Un valor de texto de **Quitar** indica que se eliminará una suspensión de buzón de correo. 
+El valor de texto del elemento **ActionType** es el tipo de retención establecido en un buzón. Un valor de texto de **Create** indica que se creará una retención de buzón. Un valor de texto de **Update** indica que se actualizará una retención de buzón. Un valor de texto **quitar** indica que se quitará una retención de buzón. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

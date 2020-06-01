@@ -1,42 +1,42 @@
 ---
-title: Creación de una serie periódica mediante EWS en Exchange
+title: Crear una serie periódica mediante EWS en Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 88ed6e87-25f7-4a54-83fa-d757a0ff2528
 description: Obtenga información sobre cómo crear reuniones periódicas mediante la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: db25fd4c97755248ebbbc7637a71749f485f8fa8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 1d04bd48c56a1a0e94eb1368166f776b3dfeb23a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763048"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456874"
 ---
-# <a name="create-a-recurring-series-by-using-ews-in-exchange"></a>Creación de una serie periódica mediante EWS en Exchange
+# <a name="create-a-recurring-series-by-using-ews-in-exchange"></a>Crear una serie periódica mediante EWS en Exchange
 
 Obtenga información sobre cómo crear reuniones periódicas mediante la API administrada de EWS o EWS en Exchange.
   
-Creación de una cita periódica o una reunión no es todo lo que muy diferente de creación de [una reunión o cita de una sola instancia](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md). Necesitará asignar valores a algunas propiedades adicionales relacionadas con la periodicidad. Esto se configura en el objeto de [Periodicidad](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.recurrence%28v=exchg.80%29.aspx) de un objeto [ExchangeService.Appointment](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) (si está utilizando la API administrada de EWS), o el elemento secundario de [Periodicidad](http://msdn.microsoft.com/library/5f164e5b-47b6-4242-b6b9-8d650090a831%28Office.15%29.aspx) de un elemento [CalendarItem](http://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) (si está utilizando EWS). Una cosa a tener en cuenta cuando se crea un periódica, en lugar de una reunión de instancia única, es que el elemento de calendario que se crea el patrón de una serie periódico. Un número de propiedades sólo se definen en un patrón periódico; Estas propiedades pueden ayudarle a encontrar, modificar o eliminar las instancias individuales de una serie. Por este motivo, podría ser útil realizar un seguimiento del identificador del patrón periódico cuando se crea una serie periódica. 
+La creación de una cita o reunión periódica no es tan grande como la creación de [una reunión o cita de instancia única](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md). Solo tiene que asignar valores a algunas propiedades adicionales relacionadas con la periodicidad. Se establecen en el objeto de [periodicidad](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.recurrence%28v=exchg.80%29.aspx) de un objeto [ExchangeService. appointment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) (si está usando la API administrada de EWS) o en el elemento secundario de [periodicidad](https://msdn.microsoft.com/library/5f164e5b-47b6-4242-b6b9-8d650090a831%28Office.15%29.aspx) de un elemento [CalendarItem](https://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) (si está usando EWS). Un aspecto que se debe tener en cuenta al crear una reunión periódica, en lugar de una única instancia, es que el elemento de calendario que se crea es el maestro periódico de una serie. Una serie de propiedades se establecen sólo en un patrón recurrente; Estas propiedades pueden ayudarle a buscar, modificar o eliminar instancias individuales de una serie. Por este motivo, puede resultar útil realizar un seguimiento del identificador de la página maestra recurrente cuando se crea una serie periódica. 
   
-**La tabla 1. Establecen propiedades en elementos periódicos del calendario principal**
+**Tabla 1. Propiedades establecidas en los elementos de calendario maestro periódico**
 
-|**Clase de la API administrada de EWS o (propiedad)**|**Elemento XML de EWS**|**Descripción**|
+|**Clase o propiedad de la API administrada de EWS**|**Elemento XML EWS**|**Descripción**|
 |:-----|:-----|:-----|
-|[Clase de periodicidad](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.recurrence%28v=exchg.80%29.aspx) <br/> La clase de **Periodicidad** es la clase base para una clase derivada de trama, [IntervalPattern](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.recurrence.intervalpattern%28v=exchg.80%29.aspx), [RelativeYearlyPattern](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.recurrence.relativeyearlypattern%28v=exchg.80%29.aspx)o [YearlyPattern](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.recurrence.yearlypattern%28v=exchg.80%29.aspx).  <br/> |[Periodicidad (RecurrenceType)](http://msdn.microsoft.com/library/3d1c2c1c-4103-47ce-ad3c-ad16ec6e9b12%28Office.15%29.aspx) <br/> |Contiene información relacionada con la periodicidad, incluyendo el patrón de periodicidad (diariamente, semanalmente, mensualmente, etc.), inicio y fin de fecha, número de repeticiones y así sucesivamente.  <br/> |
-|[FirstOccurrence (propiedad)](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.firstoccurrence%28v=exchg.80%29.aspx) <br/> |[FirstOccurrence](http://msdn.microsoft.com/library/d6748860-ce0d-4d2e-b7e4-9ed834f1e45a%28Office.15%29.aspx) <br/> |Contiene el inicio y finalización y el identificador del elemento para la primera reunión en una serie.  <br/> |
-|[LastOccurrence (propiedad)](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.lastoccurrence%28v=exchg.80%29.aspx) <br/> |[LastOccurrence](http://msdn.microsoft.com/library/c9ef0fcb-4265-4e60-9986-fff0f211d00b%28Office.15%29.aspx) <br/> |Contiene el inicio y finalización y el identificador del elemento para la última reunión en una serie.  <br/> |
-|[ModifiedOccurrences (propiedad)](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.modifiedoccurrences%28v=exchg.80%29.aspx) <br/> |[ModifiedOccurrences](http://msdn.microsoft.com/library/552932fc-b3b4-486e-8d73-32c0bb10bd68%28Office.15%29.aspx) <br/> |Contiene el conjunto de todas las reuniones de la serie que se han modificado desde el patrón de periodicidad original.  <br/> |
-|[DeletedOccurrences (propiedad)](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.deletedoccurrences%28v=exchg.80%29.aspx) <br/> |[DeletedOccurrences](http://msdn.microsoft.com/library/736fb305-9528-4be8-ad37-65d7556edbf2%28Office.15%29.aspx) <br/> |Contiene el conjunto de todas las reuniones de la serie que se han eliminado desde el patrón de periodicidad original.  <br/> |
+|[Clase recurrence](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.recurrence%28v=exchg.80%29.aspx) <br/> La clase **recurrence** es la clase base para una clase de patrón derivada, ya sea [IntervalPattern](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.recurrence.intervalpattern%28v=exchg.80%29.aspx), [RelativeYearlyPattern](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.recurrence.relativeyearlypattern%28v=exchg.80%29.aspx)o [YearlyPattern](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.recurrence.yearlypattern%28v=exchg.80%29.aspx).  <br/> |[Recurrence (RecurrenceType)](https://msdn.microsoft.com/library/3d1c2c1c-4103-47ce-ad3c-ad16ec6e9b12%28Office.15%29.aspx) <br/> |Contiene información relacionada con la periodicidad, incluido el patrón de periodicidad (diario, semanal, mensual, etc.), la fecha de inicio y de finalización, el número de repeticiones, etc.  <br/> |
+|[Propiedad FirstOccurrence](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.firstoccurrence%28v=exchg.80%29.aspx) <br/> |[FirstOccurrence](https://msdn.microsoft.com/library/d6748860-ce0d-4d2e-b7e4-9ed834f1e45a%28Office.15%29.aspx) <br/> |Contiene las horas de inicio y finalización, y el identificador de elemento de la primera reunión de una serie.  <br/> |
+|[Propiedad LastOccurrence](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.lastoccurrence%28v=exchg.80%29.aspx) <br/> |[LastOccurrence](https://msdn.microsoft.com/library/c9ef0fcb-4265-4e60-9986-fff0f211d00b%28Office.15%29.aspx) <br/> |Contiene las horas de inicio y finalización, y el identificador de elemento de la última reunión de una serie.  <br/> |
+|[Propiedad ModifiedOccurrences](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.modifiedoccurrences%28v=exchg.80%29.aspx) <br/> |[ModifiedOccurrences](https://msdn.microsoft.com/library/552932fc-b3b4-486e-8d73-32c0bb10bd68%28Office.15%29.aspx) <br/> |Contiene el conjunto de todas las reuniones de la serie que se han modificado desde el patrón de periodicidad original.  <br/> |
+|[Propiedad DeletedOccurrences](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.deletedoccurrences%28v=exchg.80%29.aspx) <br/> |[DeletedOccurrences](https://msdn.microsoft.com/library/736fb305-9528-4be8-ad37-65d7556edbf2%28Office.15%29.aspx) <br/> |Contiene el conjunto de todas las reuniones de la serie que se han eliminado del patrón de periodicidad original.  <br/> |
    
-Dado que las reuniones son esencialmente las citas que incluyen a los asistentes, los ejemplos de código en este artículo muestran cómo crear reuniones periódicas. Si desea crear una cita periódica, puede modificar los ejemplos quitando código relacionado con los asistentes.
+Como las reuniones son esencialmente citas que incluyen asistentes, los ejemplos de código de este artículo muestran cómo crear reuniones periódicas. Si desea crear una cita periódica, puede modificar los ejemplos quitando el código relacionado con los asistentes.
   
-## <a name="create-a-recurring-meeting-by-using-the-ews-managed-api"></a>Crear una reunión periódica mediante el uso de la API administrada de EWS
+## <a name="create-a-recurring-meeting-by-using-the-ews-managed-api"></a>Crear una reunión periódica mediante la API administrada de EWS
 <a name="bk_CreateMtgEWSMA"> </a>
 
-En el ejemplo de código siguiente se muestra cómo crear una reunión periódica. En primer lugar, asigne valores a las propiedades de un [objeto Appointment](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) se utiliza para crear una reunión, a continuación, utilice el método [Save](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) para guardar la serie periódica a la carpeta Calendario y enviar convocatorias de reunión a los asistentes. Por último, use el método [Appointment.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) para buscar en los valores establecidos en el patrón periódico de la serie periódica que acaba de crear. 
+En el ejemplo de código siguiente se muestra cómo crear una reunión periódica. En primer lugar, asigne valores a las propiedades de un [objeto de cita](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) que se usa para crear una reunión y, a continuación, utilice el método [Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) para guardar la serie periódica en la carpeta del calendario y enviar las convocatorias de reunión a los asistentes. Por último, use el método [appointment. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) para ver los valores establecidos en el maestro periódico de la serie periódica que acaba de crear. 
   
-En este ejemplo se supone que se han autenticado a un servidor de Exchange y ha adquirido un objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) con el nombre de **servicio**. El método en este ejemplo devuelve el [identificador de elemento](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) de patrón periódica de la serie periódica. 
+En este ejemplo se supone que se ha autenticado en un servidor de Exchange y que se ha adquirido un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) denominado **Service**. El método de este ejemplo devuelve el [identificador de elemento](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) de la serie periódica "maestro periódico. 
   
 ```cs
 public static ItemId CreateARecurringMeeting(ExchangeService service)
@@ -90,17 +90,17 @@ public static ItemId CreateARecurringMeeting(ExchangeService service)
 
 ```
 
-## <a name="create-a-recurring-meeting-by-using-ews"></a>Crear una reunión periódica mediante el uso de EWS
+## <a name="create-a-recurring-meeting-by-using-ews"></a>Crear una reunión periódica con EWS
 <a name="bk_CreateMtgEWS"> </a>
 
-La solicitud y respuesta XML en los ejemplos siguientes corresponden a las llamadas realizadas a [crear una reunión periódica mediante el uso de la API administrada de EWS](#bk_CreateMtgEWSMA). Tenga en cuenta distinto de establecimiento de valores específicos de la periodicidad en el elemento de [repetición](http://msdn.microsoft.com/library/5f164e5b-47b6-4242-b6b9-8d650090a831%28Office.15%29.aspx) , la solicitud es básicamente el mismo que el que utilizará para crear una cita de instancia única. En el ejemplo siguiente se muestra la solicitud XML al usar la operación [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) para crear una reunión. 
+El XML de solicitud y respuesta de los ejemplos siguientes corresponden a las llamadas realizadas para [crear una reunión periódica mediante la API administrada de EWS](#bk_CreateMtgEWSMA). Tenga en cuenta que, además de establecer valores específicos de periodicidad en el elemento de [periodicidad](https://msdn.microsoft.com/library/5f164e5b-47b6-4242-b6b9-8d650090a831%28Office.15%29.aspx) , la solicitud es esencialmente la misma que la que se usaría para crear una cita de instancia única. En el ejemplo siguiente se muestra el XML de la solicitud cuando se utiliza la operación [CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) para crear una reunión. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
     <t:TimeZoneContext>
@@ -201,23 +201,23 @@ La solicitud y respuesta XML en los ejemplos siguientes corresponden a las llama
 
 ```
 
- En el ejemplo siguiente se muestra la respuesta XML que es devuelto por la operación **CreateItem** . 
+ En el ejemplo siguiente se muestra el XML de respuesta que devuelve la operación **CreateItem** . 
   
-Los atributos **ItemId** y **ChangeKey** son más cortos para mejorar la legibilidad. 
+Los atributos **Itemid** y **changekey** se acortan para facilitar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="893" MinorBuildNumber="10" 
-                         Version="V2_10" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         Version="V2_10" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -234,16 +234,16 @@ Los atributos **ItemId** y **ChangeKey** son más cortos para mejorar la legibil
 
 ```
 
-En el ejemplo siguiente se muestra la solicitud de XML que se genera al usar la operación [GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) y la **ItemId** para la serie ha creado y solicitar propiedades solo establece en un patrón periódico para confirmar que la **ItemId** devuelto por el servidor de la creación de una serie periódica es para un maestro periódico. 
+En el ejemplo siguiente se muestra el XML de la solicitud que se genera cuando se usa la operación [GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) y la **Itemid** para la serie que ha creado, y las propiedades de solicitud solo se establecen en un patrón recurrente para confirmar que el **Itemid** devuelto por el servidor al crear una serie periódica es para un maestro recurrente. 
   
-Los atributos **ItemId** y **ChangeKey** son más cortos para mejorar la legibilidad. 
+Los atributos **Itemid** y **changekey** se acortan para facilitar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010" />
   </soap:Header>
@@ -270,23 +270,23 @@ Los atributos **ItemId** y **ChangeKey** son más cortos para mejorar la legibil
 
 ```
 
- En el ejemplo siguiente se muestra la respuesta XML que es devuelto por la operación **GetItem** . 
+ En el ejemplo siguiente se muestra el XML de respuesta que devuelve la operación **GetItem** . 
   
-Los atributos **ItemId** y **ChangeKey** son más cortos para mejorar la legibilidad. 
+Los atributos **Itemid** y **changekey** se acortan para facilitar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="893" MinorBuildNumber="10" 
-                         Version="V2_10" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         Version="V2_10" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -332,16 +332,16 @@ Los atributos **ItemId** y **ChangeKey** son más cortos para mejorar la legibil
 
 - [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)
     
-- [Crear citas y reuniones mediante el uso de EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
+- [Crear citas y reuniones mediante EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
     
 - [Patrones de periodicidad y EWS](recurrence-patterns-and-ews.md)
     
-- [Obtener acceso a una serie periódica mediante el uso de EWS en Exchange](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)
+- [Obtener acceso a una serie periódica mediante EWS en Exchange](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Eliminar las citas de una serie periódica mediante el uso de EWS en Exchange](how-to-delete-appointments-in-a-recurring-series-by-using-ews-in-exchange.md)
+- [Eliminar citas en una serie periódica mediante EWS en Exchange](how-to-delete-appointments-in-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Actualización de una serie periódica mediante el uso de EWS](how-to-update-a-recurring-series-by-using-ews.md)
+- [Actualizar una serie periódica mediante EWS](how-to-update-a-recurring-series-by-using-ews.md)
     
-- [Actualización de una serie periódica mediante el uso de EWS en Exchange](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
+- [Actualizar una serie periódica mediante EWS en Exchange](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
     
 

@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ecb533ba-c24a-4940-a852-7988cb385113
-description: El elemento de identidad está pensado para uso interno únicamente.
-ms.openlocfilehash: 9b970b6427575a4e96815e2388fb9ae4d545f6b5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Identity solo está destinado a uso interno.
+ms.openlocfilehash: 62764947e90d3bc7db850774870937bff084fa25
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835850"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456475"
 ---
 # <a name="identity"></a>Identidad
 
-El elemento de **identidad** está pensado para uso interno únicamente. 
+El elemento **Identity** solo está destinado a uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

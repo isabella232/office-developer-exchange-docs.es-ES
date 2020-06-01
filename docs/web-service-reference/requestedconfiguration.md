@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 24921387-f676-49e6-8d7a-ef3115024866
-description: El elemento RequestedConfiguration contiene las configuraciones del servicio solicitado.
-ms.openlocfilehash: 1edc6394360250c9a9810fe614c975cb48eba3f0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RequestedConfiguration contiene las configuraciones de servicio solicitadas.
+ms.openlocfilehash: bbc503e6d6f7c56c785365924106bc2468965d0b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837130"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457154"
 ---
 # <a name="requestedconfiguration"></a>RequestedConfiguration
 
-El elemento **RequestedConfiguration** contiene las configuraciones del servicio solicitado. 
+El elemento **RequestedConfiguration** contiene las configuraciones de servicio solicitadas. 
   
 ```XML
 <RequestedConfiguration>
@@ -32,23 +32,23 @@ El elemento **RequestedConfiguration** contiene las configuraciones del servicio
  **ArrayOfServiceConfigurationType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ConfigurationName](configurationname.md) <br/> |Especifica las configuraciones de servicio solicitado por su nombre.  <br/> |
+|[ConfigurationName](configurationname.md) <br/> |Especifica las configuraciones de servicio solicitadas por nombre.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetServiceConfiguration](getserviceconfiguration.md) <br/> |Define una solicitud GetServiceConfiguration.  <br/> |
+|[GetServiceConfiguration](getserviceconfiguration.md) <br/> |Define una solicitud de GetServiceConfiguration.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -62,14 +62,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

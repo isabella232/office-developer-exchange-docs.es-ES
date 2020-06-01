@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 764d6a6e-e13b-4cd5-ad68-60bb422eebce
-description: El elemento ubicaciones especifica una matriz de valores de ubicación y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: 308fbdda4062b418a8925aa99d025b96e096778d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento locations especifica una matriz de valores de ubicación y los identificadores de sus atribuciones de origen para el rol asociado.
+ms.openlocfilehash: d72371a6ee05b395142abca164c4fa2cc5757611
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836249"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458085"
 ---
 # <a name="locations"></a>Ubicaciones
 
-El elemento **ubicaciones** especifica una matriz de valores de ubicación y los identificadores de sus atribuciones de origen para el rol asociado. 
+El elemento **locations** especifica una matriz de valores de ubicación y los identificadores de sus atribuciones de origen para el rol asociado. 
   
 ```XML
 <Locations>
@@ -28,11 +28,11 @@ El elemento **ubicaciones** especifica una matriz de valores de ubicación y los
  **ArrayOfStringAttributedValuesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 

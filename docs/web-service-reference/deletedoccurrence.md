@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ff24ea15-0cd7-407d-a378-73ec16451870
-description: El elemento DeletedOccurrence representa una repetición eliminada de un elemento periódico del calendario.
-ms.openlocfilehash: f12a2ba20f87f7803e492d8422b68c8ecdf9d797
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DeletedOccurrence representa una ocurrencia eliminada de un elemento de calendario periódico.
+ms.openlocfilehash: 814a81934786963ae5e7ea3a40406834c27b64ce
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764084"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457840"
 ---
 # <a name="deletedoccurrence"></a>DeletedOccurrence
 
-El elemento **DeletedOccurrence** representa una repetición eliminada de un elemento periódico del calendario. 
+El elemento **DeletedOccurrence** representa una ocurrencia eliminada de un elemento de calendario periódico. 
   
 ```xml
 <DeletedOccurrence>
@@ -32,39 +32,39 @@ El elemento **DeletedOccurrence** representa una repetición eliminada de un ele
  **DeletedOccurrenceInfoType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Start](start.md) <br/> |Representa la hora de inicio de una repetición eliminada de un elemento periódico del calendario.  <br/> |
+|[Start](start.md) <br/> |Representa la hora de inicio de una ocurrencia eliminada de un elemento de calendario periódico.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[DeletedOccurrences](deletedoccurrences.md) <br/> |Contiene una matriz de eliminado apariciones de un elemento periódico del calendario.  <br/> |
+|[DeletedOccurrences](deletedoccurrences.md) <br/> |Contiene una matriz de ocurrencias eliminadas de un elemento de calendario periódico.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)  
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)  
 - [Referencia EWS para Exchange](ews-reference-for-exchange.md)
 

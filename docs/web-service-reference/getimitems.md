@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 455e5709-6c06-49fd-bfb2-403fc912287c
-description: El elemento de solicitud GetImItems define una solicitud para obtener información acerca de los grupos especificados de mensajería instantáneos y roles contactos de mensajería instantánea.
-ms.openlocfilehash: ff7d520dde44fac6e9278633c1ad46b07b38d6c4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento de solicitud GetImItems define una solicitud para obtener información sobre los grupos de mensajería instantánea especificados y los roles de contacto de mensajería instantánea.
+ms.openlocfilehash: e3973cbbf800ffe91472b9c733c4d4a927b91c9f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764871"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456454"
 ---
 # <a name="getimitems"></a>GetImItems
 
-El elemento de solicitud **GetImItems** define una solicitud para obtener información acerca de los grupos especificados de mensajería instantáneos y roles contactos de mensajería instantánea. 
+El elemento de solicitud **GetImItems** define una solicitud para obtener información sobre los grupos de mensajería instantánea especificados y los roles de contacto de mensajería instantánea. 
   
 ```XML
 <GetImItems>
@@ -30,15 +30,15 @@ El elemento de solicitud **GetImItems** define una solicitud para obtener inform
  **GetImItemsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[ContactIds](contactids.md) | [GroupIds](groupids.md) | [ExtendedProperties (NonEmptyArrayOfExtendedFieldURIs)](extendedproperties-nonemptyarrayofextendedfielduris.md)
+[ContactIds](contactids.md)  |  [GroupIds](groupids.md)  |  [ExtendedProperties (NonEmptyArrayOfExtendedFieldURIs)](extendedproperties-nonemptyarrayofextendedfielduris.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

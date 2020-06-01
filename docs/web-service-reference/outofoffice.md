@@ -1,5 +1,5 @@
 ---
-title: OutOfOffice
+title: Oficina
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: fe1256ab-5c0f-467d-abb3-b38a2dc312ae
-description: El elemento de fuera de la oficina representa el mensaje de respuesta y un tiempo de duración para enviar el mensaje de respuesta.
-ms.openlocfilehash: f35b84d7a8a37c7a57b58c97fd0d37318bb50a33
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: El elemento Oficina representa el mensaje de respuesta y una duración de tiempo para enviar el mensaje de respuesta.
+ms.openlocfilehash: 082a81b62e2b783b302b3e749e0066131a46d73e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354270"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456902"
 ---
-# <a name="outofoffice"></a>OutOfOffice
+# <a name="outofoffice"></a>Oficina
 
-El elemento de **fuera de la oficina** representa el mensaje de respuesta y un tiempo de duración para enviar el mensaje de respuesta. 
+El elemento **Oficina** representa el mensaje de respuesta y una duración de tiempo para enviar el mensaje de respuesta. 
   
 ```XML
 <OutOfOffice>
@@ -40,24 +40,24 @@ El elemento de **fuera de la oficina** representa el mensaje de respuesta y un t
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ReplyBody](replybody.md) <br/> |Contiene un mensaje de fuera de oficina (OOF) y el idioma utilizado para el mensaje.  <br/> |
-|[Duration (UserOofSettings)](duration-useroofsettings.md) <br/> |Contiene la duración que está habilitado el estado de fuera de la oficina si el elemento [OofState](oofstate.md) está establecido en programado.  <br/> |
+|[ReplyBody](replybody.md) <br/> |Contiene un mensaje de fuera de la oficina (OOF) y el idioma que se usa para el mensaje.  <br/> |
+|[Duración (UserOofSettings)](duration-useroofsettings.md) <br/> |Contiene la duración en la que se habilita el estado OOF si el elemento [OofState](oofstate.md) está establecido en programado.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[MailTips](mailtips.md) <br/> |Representa los valores de distintos tipos de sugerencias de correo.  <br/> |
+|[Sugerencias de correo electrónico](mailtips.md) <br/> |Representa los valores de distintos tipos de sugerencias de correo.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -71,12 +71,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

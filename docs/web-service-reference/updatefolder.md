@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 412d0683-2819-40c5-a0ae-f613499a7b66
-description: El elemento UpdateFolder representa la operación que se utiliza para actualizar las propiedades de una carpeta especificada.
-ms.openlocfilehash: 9a86bf6b3b5917600b3b09f23b3ee4e9cdc0364f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UpdateFolder representa la operación que se usa para actualizar las propiedades de una carpeta especificada.
+ms.openlocfilehash: 124ffd02a5ea2e7bf6f21cc7009dde08837906f9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840813"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457049"
 ---
 # <a name="updatefolder"></a>UpdateFolder
 
-El elemento **UpdateFolder** representa la operación que se utiliza para actualizar las propiedades de una carpeta especificada. 
+El elemento **UpdateFolder** representa la operación que se usa para actualizar las propiedades de una carpeta especificada. 
   
 ```xml
 <UpdateFolder>
@@ -32,15 +32,15 @@ El elemento **UpdateFolder** representa la operación que se utiliza para actual
  **UpdateFolderType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[FolderChanges](folderchanges.md) <br/> |Contiene una colección de cambios para una carpeta especificada.  <br/> |
    
@@ -50,16 +50,16 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

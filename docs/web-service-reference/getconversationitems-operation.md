@@ -1,5 +1,5 @@
 ---
-title: GetConversationItems operation
+title: Operación GetConversationItems
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,48 +7,48 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8ae00a99-b37b-4194-829c-fe300db6ab99
-description: Obtenga información acerca de la operación de GetConversationItems.
-ms.openlocfilehash: 9d9fb9cc04bcbb5846162c77c852defa51dff98b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Busca información sobre la operación GetConversationItems.
+ms.openlocfilehash: ddeb5386e56653a32ca2e6d212518704cd0f0c58
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764788"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457784"
 ---
-# <a name="getconversationitems-operation"></a>GetConversationItems operation
+# <a name="getconversationitems-operation"></a>Operación GetConversationItems
 
-Obtenga información acerca de la operación de **GetConversationItems** . 
+Busca información sobre la operación **GetConversationItems** . 
   
 La operación **GetConversationItems** obtiene uno o más conjuntos de elementos que están organizados en nodos en una conversación. 
   
 Esta operación se introdujo en Exchange Server 2013.
   
-## <a name="using-the-getconversationitems-operation"></a>Mediante la operación GetConversationItems
+## <a name="using-the-getconversationitems-operation"></a>Uso de la operación GetConversationItems
 
-Puede usar la operación de **GetConversationItems** para obtener los elementos de las conversaciones de ambos primaria y buzones de archivo. 
+Puede usar la operación **GetConversationItems** para obtener elementos en las conversaciones tanto para los buzones de correo principales como para los de archivo. 
   
-### <a name="getconversationitems-operation-soap-headers"></a>Encabezados SOAP de operación de GetConversationItems
+### <a name="getconversationitems-operation-soap-headers"></a>Encabezados SOAP de operación GetConversationItems
 
-La operación de **GetConversationItems** puede utilizar los encabezados SOAP que se enumeran en la siguiente tabla. 
+La operación **GetConversationItems** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
   
-|**Nombre de encabezado**|**Element**|**Descripción**|
+|**Nombre de encabezado**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario que está realizando la suplantación de la aplicación cliente. Este encabezado es aplicable a una solicitud.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de la operación. El valor mínimo para este elemento es **Exchange2013**. Este encabezado es aplicable a una solicitud.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que ha respondido a la solicitud. Este encabezado es aplicable a una respuesta.  <br/> |
+|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente. Este encabezado se aplica a una solicitud.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. El valor mínimo para este elemento es **Exchange2013**. Este encabezado se aplica a una solicitud.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado se aplica a una respuesta.  <br/> |
    
-## <a name="getconversationitems-operation-request-example-get-items-in-a-single-conversation"></a>Ejemplo de solicitud de operación de GetConversationItems: obtener elementos en una conversación único
+## <a name="getconversationitems-operation-request-example-get-items-in-a-single-conversation"></a>Ejemplo de solicitud de operación GetConversationItems: obtener elementos en una sola conversación
 
-El siguiente ejemplo de una solicitud de operación **GetConversationItems** muestra cómo obtener todos los elementos de una conversación en una conversación única, con la excepción de los elementos ubicados en las carpetas de borrador y elementos eliminados. Cada elemento devuelto en la respuesta contendrá un identificador de elemento, un asunto y la hora en que se recibió el artículo en el buzón de correo. 
+El siguiente ejemplo de una solicitud de operación de **GetConversationItems** muestra cómo obtener todos los elementos de la conversación en una sola conversación, con la excepción de los elementos que se encuentran en las carpetas elementos eliminados y borradores. Cada elemento devuelto en la respuesta contendrá un identificador de elemento, un asunto y la hora en que se recibió el elemento en el buzón. 
   
 > [!NOTE]
-> Todos los identificadores de artículo y cambiar claves en este artículo se han abreviado para conservar la legibilidad. 
+> Todos los identificadores de elemento y las claves de cambio de este artículo se han reducido para preservar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
@@ -77,15 +77,15 @@ El siguiente ejemplo de una solicitud de operación **GetConversationItems** mue
 </soap:Envelope>
 ```
 
-En este ejemplo de una solicitud **GetConversationItems** no incluye las siguientes opciones: 
+En este ejemplo de una solicitud **GetConversationItems** no se incluyen las siguientes opciones: 
   
-- El elemento [MaxItemsToReturn](maxitemstoreturn.md) , que establece el número máximo de elementos para devolver en la respuesta. 
+- El elemento [MaxItemsToReturn](maxitemstoreturn.md) , que establece el número máximo de elementos que se devolverá en la respuesta. 
     
-- El elemento [MailboxScope](mailboxscope.md) , que establece el ámbito de buzón de correo al que indica si la operación de **GetConversationItems** es que se debe realizar en el buzón principal, en el buzón de archivo o ambos buzones de correo. 
+- El elemento [MailboxScope](mailboxscope.md) , que establece el ámbito del buzón de correo indicando si la operación **GetConversationItems** debe realizarse en el buzón principal, el buzón de archivo o ambos buzones. 
     
-- El elemento de [estado de sincronización (base64Binary)](syncstate-base64binary.md) , que establece el estado de sincronización para obtener sólo los elementos de la conversación que son nuevos o actualizados en la conversación. Este elemento se establece para cada conversación. 
+- El elemento [SyncState (base64Binary)](syncstate-base64binary.md) , que establece el estado de sincronización para obtener solo los elementos de la conversación que son nuevos o se actualizan en la conversación. Este elemento se establece para cada conversación. 
     
-La solicitud SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de la solicitud contiene los siguientes elementos:
   
 - [GetConversationItems](getconversationitems.md)
     
@@ -109,9 +109,9 @@ La solicitud SOAP body contiene los siguientes elementos:
     
 - [ConversationId](conversationid.md)
     
-## <a name="successful-getconversationitems-operation-response"></a>Respuesta es correcta de operación GetConversationItems
+## <a name="successful-getconversationitems-operation-response"></a>Respuesta de operación GetConversationItems correcta
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación de **GetConversationItems** para obtener los elementos de una única conversación. 
+En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación de **GetConversationItems** para obtener elementos en una única conversación. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -122,15 +122,15 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
                            MajorBuildNumber="545"
                            MinorBuildNumber="11"
                            Version="Exchange2013"
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:GetConversationItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:GetConversationItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:GetConversationItemsResponseMessage ResponseClass="Success">
                <m:ResponseCode>NoError</m:ResponseCode>
@@ -201,9 +201,9 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
 </s:Envelope>
 ```
 
-Se recomienda que se guarde el estado de sincronización para las solicitudes posteriores de operación **GetConversationItems** . 
+Le recomendamos que guarde el SyncState para las solicitudes de operaciones de **GetConversationItems** posteriores. 
   
-La respuesta SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de respuesta contiene los siguientes elementos:
   
 - [GetConversationItemsResponse](getconversationitemsresponse.md)
     
@@ -217,7 +217,7 @@ La respuesta SOAP body contiene los siguientes elementos:
     
 - [ConversationId](conversationid.md)
     
-- [Estado de sincronización (base64Binary)](syncstate-base64binary.md)
+- [SyncState (base64Binary)](syncstate-base64binary.md)
     
 - [ConversationNodes](conversationnodes.md)
     
@@ -227,26 +227,26 @@ La respuesta SOAP body contiene los siguientes elementos:
     
 - [Elementos (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
-- [Message](message-ex15websvcsotherref.md)
+- [Mensaje](message-ex15websvcsotherref.md)
     
 - [ItemId](itemid.md)
     
-- [Subject](subject.md)
+- [Asunto](subject.md)
     
 - [DateTimeReceived](datetimereceived.md)
     
-## <a name="getconversationitems-operation-error-response"></a>Respuesta de error de la operación de GetConversationItems
+## <a name="getconversationitems-operation-error-response"></a>Respuesta de error de operación de GetConversationItems
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación de **GetConversationItems** para obtener los elementos en una conversación que cualquiera ya no existe en el buzón de correo, o para que todos los elementos de la conversación se encuentran en las carpetas que se pasan por alto. 
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación de **GetConversationItems** para obtener elementos de una conversación que ya no existe en el buzón o para los que todos los elementos de la conversación se encuentran en carpetas que se omiten. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="556" MinorBuildNumber="8" Version="Exchange2013" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="556" MinorBuildNumber="8" Version="Exchange2013" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetConversationItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetConversationItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetConversationItemsResponseMessage ResponseClass="Error">
           <m:MessageText>The specified object was not found in the store.</m:MessageText>
@@ -265,6 +265,6 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
     
 - [Operación ApplyConversationAction](applyconversationaction-operation.md)
     
-- [Operación de FindConversation](findconversation-operation.md)
+- [Operación FindConversation](findconversation-operation.md)
     
 

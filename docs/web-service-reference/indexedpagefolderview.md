@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c6dac232-244b-4db0-9a15-5e01b8aa7a7d
-description: El elemento IndexedPageFolderView describe cómo paginada elemento de información se devuelve en una respuesta FindFolder.
-ms.openlocfilehash: f32f778daa6fa3fea93ab2bc1951f2407dcf7f80
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento IndexedPageFolderView describe cómo se devuelve la información del elemento paginado en una respuesta FindFolder.
+ms.openlocfilehash: 6e9e2796c0bdcd9a15487f0e1bc7cbdf09d0a492
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835910"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457203"
 ---
 # <a name="indexedpagefolderview"></a>IndexedPageFolderView
 
-El elemento **IndexedPageFolderView** describe cómo paginada elemento de información se devuelve en una respuesta [FindFolder](findfolder.md) . 
+El elemento **IndexedPageFolderView** describe cómo se devuelve la información del elemento paginado en una respuesta [FindFolder](findfolder.md) . 
   
 [FindFolder](findfolder.md)
   
@@ -34,46 +34,46 @@ El elemento **IndexedPageFolderView** describe cómo paginada elemento de inform
  **IndexedPageViewType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**MaxEntriesReturned** <br/> |Describe el número máximo de carpetas para devolver en la respuesta. Este atributo es opcional.  <br/> |
-|**Offset** <br/> |Describe el desplazamiento desde el **punto base**. Desplazamiento debe ser mayor o igual que cero. Si el **punto base** es igual al principio, el desplazamiento es positivo. Si el **punto base** es igual a End, el desplazamiento se administra como si fuese negativo.  <br/> Esto identifica qué carpeta será la primera carpeta de entrega en la respuesta. Este atributo es necesario.  <br/> |
-|**Punto base** <br/> |Describe si la página de las carpetas se iniciará desde el principio o el final del conjunto de carpetas que se encuentran con los criterios de búsqueda. Buscar desde el final siempre busca hacia atrás. Este atributo es necesario.  <br/> |
+|**MaxEntriesReturned** <br/> |Describe el número máximo de carpetas que se devolverá en la respuesta. Este atributo es opcional.  <br/> |
+|**Offset** <br/> |Describe el desplazamiento desde **BasePoint**. El desplazamiento debe ser mayor o igual que cero. Si **BasePoint** es igual al principio, el desplazamiento es positivo. Si **BasePoint** es igual a end, el desplazamiento se trata como si fuera negativo.  <br/> Esto identifica la carpeta que será la primera carpeta entregada en la respuesta. Este atributo es obligatorio.  <br/> |
+|**BasePoint** <br/> |Describe si la página de carpetas se iniciará desde el principio o el final del conjunto de carpetas que se encuentren con los criterios de búsqueda. Buscar desde el final siempre busca hacia atrás. Este atributo es obligatorio.  <br/> |
    
-#### <a name="basepoint-attribute"></a>Atributo de punto base
+#### <a name="basepoint-attribute"></a>Atributo BasePoint
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Principio  <br/> |La vista de página comienza al principio del conjunto de carpetas que se encuentran.  <br/> |
-|End  <br/> |Se inicia la vista de página al final del conjunto de carpetas que se encuentran.  <br/> |
+|Empezar  <br/> |La vista paginada comienza al principio del conjunto de carpetas encontradas.  <br/> |
+|End  <br/> |La vista paginada se inicia al final del conjunto de carpetas encontradas.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FindFolder](findfolder.md) <br/> |Define una solicitud para buscar las carpetas en un buzón de correo.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/FindFolder` <br/> |
+|[FindFolder](findfolder.md) <br/> |Define una solicitud para buscar carpetas en un buzón.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/FindFolder` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Solicitando a end implica mover para el origen identificado por el desplazamiento. Además, el puntero se mueve de nuevo el número de registros solicitados. Por ejemplo, si hay 100 registros y el desplazamiento es 25 desde el final, la búsqueda comienza desde 75. Si se devuelven 10 registros, el puntero se mueve hacia atrás un 10 adicionales a 65 de registros y devuelve los registros 65 a través de 75. El siguiente índice es 64. El desplazamiento desde el final de una página siguiente es 100 menos 64 que es igual a 36. El valor para el desvío siguiente desde el final para obtener la siguiente página indizada es 36.
+La búsqueda en el final implica moverse al origen identificado por el desplazamiento. Además, el puntero se mueve hacia atrás el número de registros solicitados. Por ejemplo, si hay 100 registros y el desplazamiento es 25 desde el final, la búsqueda se inicia desde 75. Si se devuelven 10 registros, el puntero se mueve hacia atrás unos 10 registros adicionales a 65 y devuelve los registros 65 a 75. El siguiente índice es 64. El siguiente desplazamiento desde el final de una página es 100 menos 64, que es igual a 36. El valor del siguiente desplazamiento desde el final para obtener la siguiente página indizada es 36.
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 

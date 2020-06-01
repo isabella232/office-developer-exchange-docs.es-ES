@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0cc67cdf-9707-45e7-92c6-fa83a016cdbe
-description: El elemento de contactos contiene una lista de contactos que están asociados con una tarea.
-ms.openlocfilehash: da7963d30f58f7da52e76e3f7f1d0f7fd68abf74
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Contacts contiene una lista de contactos que están asociados a una tarea.
+ms.openlocfilehash: c2b7bbadd494081a3e47b7b6c489218fab31d574
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763788"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458393"
 ---
 # <a name="contacts"></a>Contactos
 
-El elemento de **contactos** contiene una lista de contactos que están asociados con una tarea. 
+El elemento **Contacts** contiene una lista de contactos que están asociados a una tarea. 
   
 ```xml
 <Contacts>
@@ -32,40 +32,40 @@ El elemento de **contactos** contiene una lista de contactos que están asociado
  **ArrayOfStringsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[String](string.md) <br/> |Representa una lista separada por comas de nombres de los contactos.  <br/> |
+|[String](string.md) <br/> |Representa una lista de nombres de contactos separados por comas.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Tarea](task.md) <br/> |Representa una tarea en el almacén de Exchange.  <br/> |
+|[Tarea](task.md) <br/> |Representa una tarea del almacén de Exchange.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

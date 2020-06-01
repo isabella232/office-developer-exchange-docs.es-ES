@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c7cfa0d1-fcb2-441f-8489-3a549da33b34
-description: El elemento ResponseMessages contiene una matriz de los mensajes de respuesta de configuración de servicio.
-ms.openlocfilehash: af8a6db8d6e9d3ec76b532a81ef2a7392dcfde7a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ResponseMessages contiene una matriz de mensajes de respuesta de configuración del servicio.
+ms.openlocfilehash: cf271224141ffeb6dc00069abf430ab33d3ca2fa
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837194"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457455"
 ---
 # <a name="responsemessages-arrayofserviceconfigurationresponsemessagetype"></a>ResponseMessages (ArrayOfServiceConfigurationResponseMessageType)
 
-El elemento **ResponseMessages** contiene una matriz de los mensajes de respuesta de configuración de servicio. 
+El elemento **ResponseMessages** contiene una matriz de mensajes de respuesta de configuración del servicio. 
   
 ```XML
 <ResponseMessages>
@@ -32,23 +32,23 @@ El elemento **ResponseMessages** contiene una matriz de los mensajes de respuest
  **ArrayOfServiceConfigurationResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |Contiene la configuración del servicio. Se requiere este elemento.  <br/> |
+|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |Contiene las opciones de configuración del servicio. Se requiere este elemento.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetServiceConfigurationResponse](getserviceconfigurationresponse.md) <br/> |Define una respuesta a una solicitud de GetServiceConfiguration.  <br/> |
+|[GetServiceConfigurationResponse](getserviceconfigurationresponse.md) <br/> |Define una respuesta a una solicitud GetServiceConfiguration.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -62,14 +62,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

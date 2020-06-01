@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: eb57dc71-96e5-4718-a51a-a1b9c62abd6f
-description: El elemento CustomMailTip representa un mensaje de sugerencia de correo personalizado.
-ms.openlocfilehash: 5f4d41334213f69e8154892231ab954f166d5bef
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento CustomMailTip representa un mensaje personalizado de sugerencia de correo.
+ms.openlocfilehash: 70810b9c2a73703586d06a4141d31c0fd39abb5d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764005"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458337"
 ---
 # <a name="custommailtip"></a>CustomMailTip
 
-El elemento **CustomMailTip** representa un mensaje de sugerencia de correo personalizado. 
+El elemento **CustomMailTip** representa un mensaje personalizado de sugerencia de correo. 
   
 ```XML
 <CustomMailTip/>
@@ -30,25 +30,25 @@ El elemento **CustomMailTip** representa un mensaje de sugerencia de correo pers
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Sugerencias de correo electrónico](mailtips.md) <br/> |Representa los valores para los distintos tipos de sugerencias de correo.  <br/> |
+|[Sugerencias de correo electrónico](mailtips.md) <br/> |Representa los valores de los distintos tipos de sugerencias de correo.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Si se usa este elemento, es necesario un valor de texto que representa una cadena.
+Si se usa este elemento, se necesita un valor de texto que represente una cadena.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -58,14 +58,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

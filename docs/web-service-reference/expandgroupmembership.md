@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8989e96b-8fa1-4858-93b2-2cbdb30b9ca9
-description: El elemento ExpandGroupMembership indica si se debe expandir la pertenencia del grupo devuelto desde una solicitud de GetSearchableMailboxes.
-ms.openlocfilehash: 11bfcf6893a147c726c94df77f7d9a9dfbaa773e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ExpandGroupMembership indica si se debe expandir la pertenencia del grupo devuelto desde una solicitud GetSearchableMailboxes.
+ms.openlocfilehash: 8a94aa3da165ecc13282127e75c8d166f3972ead
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764491"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456909"
 ---
 # <a name="expandgroupmembership"></a>ExpandGroupMembership
 
-El elemento **ExpandGroupMembership** indica si se debe expandir la pertenencia del grupo devuelto desde una solicitud de **GetSearchableMailboxes** . 
+El elemento **ExpandGroupMembership** indica si se debe expandir la pertenencia del grupo devuelto desde una solicitud **GetSearchableMailboxes** . 
   
 ```XML
 <ExpandGroupMembership>true | false</ExpandGroupMembership>
@@ -26,23 +26,23 @@ El elemento **ExpandGroupMembership** indica si se debe expandir la pertenencia 
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[GetDiscoverySearchConfiguration](getdiscoverysearchconfiguration.md) | [GetSearchableMailboxes](getsearchablemailboxes.md)
+[GetDiscoverySearchConfiguration](getdiscoverysearchconfiguration.md)  |  [GetSearchableMailboxes](getsearchablemailboxes.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **ExpandGroupElement** indica que se expande la pertenencia a grupos. Un valor de **false** indica que la pertenencia al grupo no se expande para mostrar a los miembros del grupo. 
+Un valor de texto de **true** para el elemento **ExpandGroupElement** indica que la pertenencia a grupos está expandida. Un valor de **false** indica que la pertenencia al grupo no se expande para mostrar los miembros del grupo. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

@@ -7,48 +7,51 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8a67c1d8-d021-4e68-aa62-35f7d9c2edc7
-description: Busque información sobre la EWS SearchMailboxes operación.
-ms.openlocfilehash: 141ea466a24f3cb400a8e0b63e2162c1eae5d7f8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Buscar información sobre la operación de EWS de SearchMailboxes.
+ms.openlocfilehash: 9ec7e9dd4ef17f22f236e64ca1fdbeb65e6e56fe
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837296"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456777"
 ---
 # <a name="searchmailboxes-operation"></a>Operación SearchMailboxes
 
-Obtenga información acerca de la operación de EWS **SearchMailboxes** . 
+> [!NOTE]
+> Esta operación está en desuso y Microsoft ya no la admite.  Como reemplazo, use la operación [FindItem](finditem-operation.md) .
+
+Buscar información sobre la operación de EWS de **SearchMailboxes** . 
   
-La operación **SearchMailboxes** busca en los buzones de correo para las apariciones de términos en los elementos del buzón. 
+La operación **SearchMailboxes** busca en los buzones las ocurrencias de términos en los elementos del buzón. 
   
 Esta operación se introdujo en Exchange Server 2013.
   
-## <a name="using-the-searchmailboxes-operation"></a>Mediante la operación SearchMailboxes
+## <a name="using-the-searchmailboxes-operation"></a>Uso de la operación SearchMailboxes
 
-La operación de **SearchMailboxes** puede utilizar muchas de las consultas de búsqueda simultáneas para realizar la búsqueda de detección en varios buzones de correo. Los resultados pueden ser cualquier información estadística sobre el número de veces que se producen los términos de búsqueda o una vista previa de los elementos que contienen los términos de búsqueda. 
+La operación **SearchMailboxes** puede usar muchas consultas de búsqueda simultáneas para realizar búsquedas de detección en varios buzones. Los resultados pueden ser tanto información estadística sobre el número de veces que se produzcan los términos de búsqueda, como una vista previa de los elementos que contienen los términos de búsqueda. 
   
-### <a name="searchmailboxes-operation-soap-headers"></a>Encabezados SOAP de operación de SearchMailboxes
+### <a name="searchmailboxes-operation-soap-headers"></a>Encabezados SOAP de operación SearchMailboxes
 
-La operación de **SearchMailboxes** puede utilizar los encabezados SOAP que se enumeran en la siguiente tabla. 
+La operación **SearchMailboxes** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
   
-|**Nombre de encabezado**|**Element**|**Descripción**|
+|**Nombre de encabezado**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Identifica las funciones de servidor que son necesarias en orden para el autor de la llamada realizar la solicitud. Este encabezado es aplicable a una solicitud.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de la operación. Este encabezado es aplicable a una solicitud.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que ha respondido a la solicitud. Este encabezado es aplicable a una respuesta.  <br/> |
+|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Identifica los roles de servidor que son necesarios para que el autor de la llamada realice la solicitud. Este encabezado se aplica a una solicitud.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Este encabezado se aplica a una solicitud.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado se aplica a una respuesta.  <br/> |
    
-## <a name="searchmailboxes-operation-request-example-search-mailboxes-for-number-of-search-term-hits"></a>Ejemplo de solicitud de operación de SearchMailboxes: búsqueda de buzones de correo para el número de visitas de términos de búsqueda
+## <a name="searchmailboxes-operation-request-example-search-mailboxes-for-number-of-search-term-hits"></a>Ejemplo de solicitud de operación SearchMailboxes: buzones de búsqueda para el número de aciertos de términos de búsqueda
 
-El siguiente ejemplo de una solicitud de operación **SearchMailboxes** muestra cómo usar las distintas dos consultas para buscar tres buzones diferentes para la información estadística sobre cuántas veces aparece un término en cada buzón de correo. 
+El siguiente ejemplo de una solicitud de operación de **SearchMailboxes** muestra cómo usar dos consultas diferentes para buscar en tres buzones diferentes para obtener información estadística sobre cuántas veces aparece un término en cada buzón. 
   
 > [!NOTE]
-> En este ejemplo, el elemento de [consulta](query.md) es intentionaly dejada en blanco. Se muestra cómo una solicitud correcta puede contener las condiciones de error en una base de búsqueda de buzón de correo por. 
+> En este ejemplo, el elemento [query](query.md) se deja en blanco de forma intencionada. Esto muestra cómo una solicitud correcta puede contener condiciones de error en cada búsqueda de buzón de correo. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
    </soap:Header>
@@ -85,7 +88,7 @@ El siguiente ejemplo de una solicitud de operación **SearchMailboxes** muestra 
 
 ```
 
-La solicitud SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de la solicitud contiene los siguientes elementos:
   
 - [SearchMailboxes](searchmailboxes.md)
     
@@ -93,21 +96,21 @@ La solicitud SOAP body contiene los siguientes elementos:
     
 - [MailboxQuery](mailboxquery.md)
     
-- [Consulta](query.md)
+- [Query](query.md)
     
 - [MailboxSearchScopes](mailboxsearchscopes.md)
     
 - [MailboxSearchScope](mailboxsearchscope.md)
     
-- [Buzón de correo (cadena)](mailbox-string.md)
+- [Mailbox (cadena)](mailbox-string.md)
     
 - [SearchScope](searchscope.md)
     
 - [ResultType](resulttype.md)
     
-## <a name="successful-searchmailboxes-operation-response"></a>Respuesta es correcta de operación SearchMailboxes
+## <a name="successful-searchmailboxes-operation-response"></a>Respuesta de operación SearchMailboxes correcta
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación de **SearchMailboxes** para obtener información estadística sobre el número de veces que se encuentran los términos de búsqueda en los buzones de correo de destino. La última consulta contiene un elemento vacío de **consulta** , que muestra una búsqueda de buzón de correo con errores. 
+En el siguiente ejemplo se muestra una respuesta correcta a una solicitud de operación de **SearchMailboxes** para obtener información sobre el número de veces que se encuentran los términos de búsqueda en los buzones de destino. La última consulta contiene un elemento **query** vacío, que muestra una búsqueda de buzón de correo fallida. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -118,15 +121,15 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
                            MajorBuildNumber="526" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:SearchMailboxesResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                 xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:SearchMailboxesResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                 xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:SearchMailboxesResponseMessage ResponseClass="Success">
                <m:ResponseCode>NoError</m:ResponseCode>
@@ -175,7 +178,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
 
 ```
 
-La respuesta SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de respuesta contiene los siguientes elementos:
   
 - [SearchMailboxesResponse](searchmailboxesresponse.md)
     
@@ -191,13 +194,13 @@ La respuesta SOAP body contiene los siguientes elementos:
     
 - [MailboxQuery](mailboxquery.md)
     
-- [Consulta](query.md)
+- [Query](query.md)
     
 - [MailboxSearchScopes](mailboxsearchscopes.md)
     
 - [MailboxSearchScope](mailboxsearchscope.md)
     
-- [Buzón de correo (cadena)](mailbox-string.md)
+- [Mailbox (cadena)](mailbox-string.md)
     
 - [SearchScope](searchscope.md)
     
@@ -205,7 +208,7 @@ La respuesta SOAP body contiene los siguientes elementos:
     
 - [ItemCount](itemcount.md)
     
-- [Tamaño (long)](size-long.md)
+- [Tamaño (largo)](size-long.md)
     
 - [PageItemCount](pageitemcount.md)
     
@@ -221,7 +224,7 @@ La respuesta SOAP body contiene los siguientes elementos:
     
 - [FailedMailbox](failedmailbox.md)
     
-- [Buzón de correo (cadena)](mailbox-string.md)
+- [Mailbox (cadena)](mailbox-string.md)
     
 - [ErrorCode (int)](errorcode-int.md)
     
@@ -229,9 +232,9 @@ La respuesta SOAP body contiene los siguientes elementos:
     
 - [IsArchive](isarchive.md)
     
-## <a name="searchmailboxes-operation-error-response"></a>Respuesta de error de la operación de SearchMailboxes
+## <a name="searchmailboxes-operation-error-response"></a>Respuesta de error de operación de SearchMailboxes
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **SearchMailboxes** . Esta es una respuesta a una solicitud para buscar un buzón de correo cuando el identificador de buzón de correo es incorrecto. 
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **SearchMailboxes** . Se trata de una respuesta a una solicitud de búsqueda en un buzón de correo cuando el identificador del buzón de correo es incorrecto. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -242,15 +245,15 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
                            MajorBuildNumber="526" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:SearchMailboxesResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                 xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:SearchMailboxesResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                 xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:SearchMailboxesResponseMessage ResponseClass="Error">
                <m:MessageText>No mailbox is specified for search operation. If specified in the request, 
@@ -292,7 +295,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
 
 ```
 
-La respuesta de error SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de respuesta de error contiene los siguientes elementos:
   
 - [SearchMailboxesResponse](searchmailboxesresponse.md)
     
@@ -308,13 +311,13 @@ La respuesta de error SOAP body contiene los siguientes elementos:
     
 - [MailboxQuery](mailboxquery.md)
     
-- [Consulta](query.md)
+- [Query](query.md)
     
 - [MailboxSearchScopes](mailboxsearchscopes.md)
     
 - [MailboxSearchScope](mailboxsearchscope.md)
     
-- [Buzón de correo (cadena)](mailbox-string.md)
+- [Mailbox (cadena)](mailbox-string.md)
     
 - [SearchScope](searchscope.md)
     
@@ -322,7 +325,7 @@ La respuesta de error SOAP body contiene los siguientes elementos:
     
 - [ItemCount](itemcount.md)
     
-- [Tamaño (long)](size-long.md)
+- [Tamaño (largo)](size-long.md)
     
 - [PageItemCount](pageitemcount.md)
     
@@ -332,7 +335,7 @@ La respuesta de error SOAP body contiene los siguientes elementos:
     
 - [FailedMailbox](failedmailbox.md)
     
-- [Buzón de correo (cadena)](mailbox-string.md)
+- [Mailbox (cadena)](mailbox-string.md)
     
 - [ErrorCode (int)](errorcode-int.md)
     
@@ -340,7 +343,7 @@ La respuesta de error SOAP body contiene los siguientes elementos:
     
 - [IsArchive](isarchive.md)
     
-Para códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).
+Para obtener los códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).
   
 ## <a name="see-also"></a>Vea también
 

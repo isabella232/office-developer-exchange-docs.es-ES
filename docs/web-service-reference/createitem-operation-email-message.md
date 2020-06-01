@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1
-description: Se usa la operación CreateItem para crear mensajes de correo electrónico.
-ms.openlocfilehash: 591209165cfbafc2d5f4036dd8fab6659523a044
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación CreateItem se usa para crear mensajes de correo electrónico.
+ms.openlocfilehash: 384ed8ff653029c2b7db0b36986d85842b0a06cf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763951"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457119"
 ---
 # <a name="createitem-operation-email-message"></a>Operación CreateItem (mensaje de correo electrónico)
 
-Se usa la operación CreateItem para crear mensajes de correo electrónico.
+La operación CreateItem se usa para crear mensajes de correo electrónico.
   
 ## <a name="createitem-request-example"></a>Ejemplo de solicitud CreateItem
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud CreateItem muestra cómo crear un nuevo mensaje de correo electrónico, envíe el mensaje y guardar una copia de él en la carpeta Borradores.
+El siguiente ejemplo de una solicitud CreateItem muestra cómo crear un nuevo mensaje de correo electrónico, enviar el mensaje y guardar una copia en la carpeta Borradores.
   
 ### <a name="code"></a>Código
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateItem MessageDisposition="SendAndSaveCopy" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItem MessageDisposition="SendAndSaveCopy" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <SavedItemFolderId>
         <t:DistinguishedFolderId Id="drafts" />
       </SavedItemFolderId>
@@ -60,7 +60,7 @@ El siguiente ejemplo de una solicitud CreateItem muestra cómo crear un nuevo me
 
 ### <a name="request-elements"></a>Elementos de solicitud
 
-En la solicitud se usan los siguientes elementos: 
+Los siguientes elementos se usan en la solicitud: 
   
 - [CreateItem](createitem.md)
     
@@ -68,25 +68,25 @@ En la solicitud se usan los siguientes elementos:
     
 - [Elementos (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
-- [Message](message-ex15websvcsotherref.md)
+- [Mensaje](message-ex15websvcsotherref.md)
     
 - [ItemClass](itemclass.md)
     
-- [Subject](subject.md)
+- [Asunto](subject.md)
     
 - [Body](body.md)
     
 - [ToRecipients](torecipients.md)
     
-- [Buzón de correo](mailbox.md)
+- [Buzón](mailbox.md)
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
-- [Estáleído](isread.md)
+- [IsRead](isread.md)
     
-Para buscar otras opciones para el mensaje de solicitud de la operación CreateItem, explore la jerarquía de esquema. Comenzar en el elemento de [CreateItem](createitem.md) . 
+Para buscar otras opciones para el mensaje de solicitud de la operación CreateItem, explore la jerarquía del esquema. Comience en el elemento [CreateItem](createitem.md) . 
   
-## <a name="successful-createitem-response"></a>Respuesta CreateItem es correcta
+## <a name="successful-createitem-response"></a>Respuesta de CreateItem correcta
 
 ### <a name="description"></a>Descripción
 
@@ -100,12 +100,12 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateI
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
-    <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+    <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -117,7 +117,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateI
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elementos de respuesta correcta
+### <a name="successful-response-elements"></a>Elementos Response correcto
 
 En la respuesta se incluyen los siguientes elementos: 
   
@@ -131,9 +131,9 @@ En la respuesta se incluyen los siguientes elementos:
     
 - [Items](items.md)
     
-Para buscar otras opciones para el mensaje de respuesta de la operación CreateItem, explore la jerarquía de esquema. Comenzar en el elemento de [CreateItemResponse](createitemresponse.md) . 
+Para buscar otras opciones para el mensaje de respuesta de la operación CreateItem, explore la jerarquía del esquema. Empiece en el elemento [CreateItemResponse](createitemresponse.md) . 
   
-## <a name="error-createitem-response"></a>Respuesta de error CreateItem
+## <a name="error-createitem-response"></a>Error CreateItem Response
 
 ### <a name="description"></a>Descripción
 
@@ -147,12 +147,12 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud Create
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
-    <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+    <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Error">
           <m:MessageText>The user account which was used to submit this request does not have the right to send mail on behalf of the specified sending account.</m:MessageText>
@@ -168,7 +168,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud Create
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-En la respuesta de error, se usan los siguientes elementos: 
+Los siguientes elementos se usan en la respuesta de error: 
   
 - [CreateItemResponse](createitemresponse.md)
     
@@ -184,7 +184,7 @@ En la respuesta de error, se usan los siguientes elementos:
     
 - [Items](items.md)
     
-Para buscar otras opciones para el mensaje de respuesta de error de la operación CreateItem, explore la jerarquía de esquema. Comenzar en el elemento de [CreateItemResponse](createitemresponse.md) . 
+Para buscar otras opciones para el mensaje de respuesta de error de la operación CreateItem, explore la jerarquía del esquema. Empiece en el elemento [CreateItemResponse](createitemresponse.md) . 
   
 ## <a name="see-also"></a>Vea también
 

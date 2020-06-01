@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c037de3d-7881-4de4-8f52-68d4878155eb
-description: El elemento UpdateMailboxAssociationResponse está pensado para uso interno únicamente.
-ms.openlocfilehash: f2be330ccd78c1e2765e0854d1f8f461e0bea8f8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UpdateMailboxAssociationResponse está destinado sólo para uso interno.
+ms.openlocfilehash: e4c511d75ef91f0919d5fe182e85070bdc9aae9c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840858"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457910"
 ---
 # <a name="updatemailboxassociationresponse"></a>UpdateMailboxAssociationResponse
 
-El elemento **UpdateMailboxAssociationResponse** está pensado para uso interno únicamente. 
+El elemento **UpdateMailboxAssociationResponse** está destinado sólo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

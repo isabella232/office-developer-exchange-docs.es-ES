@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9e50278d-fe6a-45e2-a72b-0fb06809e128
-description: El elemento DLExpansion contiene una matriz de los buzones de correo que están contenidos en una lista de distribución.
-ms.openlocfilehash: 06081b4aba761a7137f921b3bc1c8d6b2afab88c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DLExpansion contiene una matriz de buzones que se encuentran en una lista de distribución.
+ms.openlocfilehash: 079ad1c0f114d201f5d1b91c3fd9bb45b943cc1a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764257"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457000"
 ---
 # <a name="dlexpansion"></a>DLExpansion
 
-El elemento **DLExpansion** contiene una matriz de los buzones de correo que están contenidos en una lista de distribución. 
+El elemento **DLExpansion** contiene una matriz de buzones que se encuentran en una lista de distribución. 
   
 - [ExpandDLResponse](expanddlresponse.md) 
 - [ResponseMessages](responsemessages.md) 
@@ -37,46 +37,46 @@ El elemento **DLExpansion** contiene una matriz de los buzones de correo que est
  **ArrayOfDLExpansionType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**IndexedPagingOffset** <br/> |Representa el siguiente índice que se debe usar para la solicitud siguiente cuando se usa una vista de página indizados.  <br/> |
-|**NumeratorOffset** <br/> |Representa el nuevo valor: número que se usará para la solicitud siguiente cuando se utilizan vistas de página de fracción.  <br/> |
-|**AbsoluteDenominator** <br/> |Representa el denominador siguiente para usar para la solicitud siguiente cuando se utilizan vistas de página de fracción.  <br/> |
-|**IncludesLastItemInRange** <br/> |Indica si los resultados actuales contienen el último elemento de la consulta de modo que no es necesaria la paginación adicional.  <br/> |
-|**TotalItemsInView** <br/> |Representa el número total de elementos en la vista.  <br/> |
+|**IndexedPagingOffset** <br/> |Representa el siguiente índice que se debe usar para la siguiente solicitud cuando se usa una vista de página indizada.  <br/> |
+|**NumeratorOffset** <br/> |Representa el nuevo valor del numerador que se va a usar para la siguiente solicitud cuando se usan vistas de página de fracción.  <br/> |
+|**AbsoluteDenominator** <br/> |Representa el siguiente denominador que se va a usar para la siguiente solicitud cuando se usan vistas de página de fracción.  <br/> |
+|**IncludesLastItemInRange** <br/> |Indica si los resultados actuales contienen el último elemento de la consulta para que no sea necesario paginación adicional.  <br/> |
+|**TotalItemsInView** <br/> |Representa el número total de elementos de la vista.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Buzón de correo](mailbox.md) <br/> |Identifica un objeto de servicio de directorio de Active Directory habilitados para correo.  <br/> |
+|[Buzón](mailbox.md) <br/> |Identifica un objeto de servicio de directorio de Active Directory habilitado para correo.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ExpandDLResponseMessage](expanddlresponsemessage.md) <br/> |Contiene el estado y el resultado de una única solicitud ExpandDL.  <br/> |
+|[ExpandDLResponseMessage](expanddlresponsemessage.md) <br/> |Contiene el estado y el resultado de una sola solicitud ExpandDL.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Operación de ExpandDL](expanddl-operation.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md) 
+- [Operación ExpandDL](expanddl-operation.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md) 
 - [Referencia EWS para Exchange](ews-reference-for-exchange.md)
 

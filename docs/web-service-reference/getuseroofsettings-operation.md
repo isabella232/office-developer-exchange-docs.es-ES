@@ -11,39 +11,39 @@ api_name:
 api_type:
 - schema
 ms.assetid: 153e4440-495b-4972-9811-2fbea740142a
-description: La operación GetUserOofSettings Obtiene la configuración de fuera de oficina (OOF) y los mensajes de un usuario de buzón de correo.
-ms.openlocfilehash: 75a734999842cc33c213e02dc114f23372ae51fd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación GetUserOofSettings obtiene los mensajes y la configuración de fuera de la oficina (OOF) del usuario de un buzón.
+ms.openlocfilehash: 622faa622b0ea231a6331ff62631885d4252c1f5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835691"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457700"
 ---
 # <a name="getuseroofsettings-operation"></a>Operación GetUserOofSettings
 
-La operación **GetUserOofSettings** Obtiene la configuración de fuera de oficina (OOF) y los mensajes de un usuario de buzón de correo. 
+La operación **GetUserOofSettings** obtiene los mensajes y la configuración de fuera de la oficina (OOF) del usuario de un buzón. 
   
 ## <a name="soap-headers"></a>Encabezados SOAP
 
-La operación de **GetUserOofSettings** puede utilizar los encabezados SOAP que se enumeran y describen en la tabla siguiente. 
+La operación **GetUserOofSettings** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla. 
   
-|**Header**|**Element**|**Descripción**|
+|**Header**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario que está realizando la suplantación de la aplicación cliente.  <br/> |
-|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que ha respondido a la solicitud.  <br/> |
+|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente.  <br/> |
+|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud.  <br/> |
    
-## <a name="using-the-getuseroofsettings-operation"></a>Mediante la operación GetUserOofSettings
+## <a name="using-the-getuseroofsettings-operation"></a>Uso de la operación GetUserOofSettings
 
-La operación **GetUserOofSettings** proporciona acceso a la configuración de fuera de la oficina de un usuario. Un usuario se identifica mediante la dirección de correo electrónico del usuario. Si el mensaje de fuera de la oficina es null y OOF está habilitado, no se envía ningún mensaje de fuera de la oficina. 
+La operación **GetUserOofSettings** proporciona acceso a la configuración OOF de un usuario. Un usuario se identifica mediante la dirección de correo electrónico del usuario. Si el mensaje OOF es nulo y OOF está habilitado, no se enviará ningún mensaje OOF. 
   
 > [!IMPORTANT]
-> Si los mensajes de fuera de la oficina se establecen por MicrosoftOfficeOutlook, esta operación devolverá los mensajes de fuera de la oficina en formato HTML. 
+> Si los mensajes OOF están establecidos por MicrosoftOfficeOutlook, esta operación devolverá los mensajes OOF en formato HTML. 
   
-## <a name="getuseroofsettings-request-example"></a>Ejemplo de solicitud de GetUserOofSettings
+## <a name="getuseroofsettings-request-example"></a>Ejemplo de solicitud GetUserOofSettings
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una solicitud de **GetUserOofSettings** que obtiene información de fuera de la oficina de un único usuario. 
+En el ejemplo siguiente se muestra una solicitud de **GetUserOofSettings** que obtiene la información de OOF de un solo usuario. 
   
 ### <a name="code"></a>Código
 
@@ -53,8 +53,8 @@ En el ejemplo siguiente se muestra una solicitud de **GetUserOofSettings** que o
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <GetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns ="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns ="https://schemas.microsoft.com/exchange/services/2006/types">
         <Address>User1@example.com</Address>
       </Mailbox>
     </GetUserOofSettingsRequest>
@@ -64,19 +64,19 @@ En el ejemplo siguiente se muestra una solicitud de **GetUserOofSettings** que o
 
 ### <a name="request-elements"></a>Elementos de solicitud
 
-En la solicitud se usan los siguientes elementos:
+Los siguientes elementos se usan en la solicitud:
   
 - [GetUserOofSettingsRequest](getuseroofsettingsrequest.md)
     
 - [Buzón de correo (disponibilidad)](mailbox-availability.md)
     
-- [Dirección (cadena)](address-string.md)
+- [Address (cadena)](address-string.md)
     
-## <a name="successful-getuseroofsettings-response-example"></a>Ejemplo de respuesta correcta de GetUserOofSettings
+## <a name="successful-getuseroofsettings-response-example"></a>Ejemplo de respuesta GetUserOofSettings correcta
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra un estado OOF deshabilitado con los mensajes de fuera de la oficina.
+En el ejemplo siguiente se muestra un estado de OOF deshabilitado con los mensajes OOF.
   
 ### <a name="code"></a>Código
 
@@ -87,14 +87,14 @@ En el ejemplo siguiente se muestra un estado OOF deshabilitado con los mensajes 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetUserOofSettingsResponse xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetUserOofSettingsResponse xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseMessage ResponseClass="Success">
         <ResponseCode>NoError</ResponseCode>
       </ResponseMessage>
-      <OofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <OofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Disabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -114,7 +114,7 @@ En el ejemplo siguiente se muestra un estado OOF deshabilitado con los mensajes 
 </soap:Envelope>
 ```
 
-### <a name="successful-getuseroofsettings-response-elements"></a>Elementos de respuesta correctos de GetUserOofSettings
+### <a name="successful-getuseroofsettings-response-elements"></a>Elementos de respuesta GetUserOofSettings correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -136,21 +136,21 @@ En la respuesta se usan los siguientes elementos:
     
 - [StartTime](starttime.md)
     
-- [Hora de finalización](endtime.md)
+- [EndTime](endtime.md)
     
 - [InternalReply](internalreply.md)
     
 - [ExternalReply](externalreply.md)
     
-- [Message](message-ex15websvcsotherref.md)
+- [Mensaje](message-ex15websvcsotherref.md)
     
 - [AllowExternalOof](allowexternaloof.md)
     
-## <a name="getuseroofsettings-error-response-example"></a>Ejemplo de respuesta de GetUserOofSettings Error
+## <a name="getuseroofsettings-error-response-example"></a>Ejemplo de respuesta de error GetUserOofSettings
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta de error debida a un intento de acceso a la información de fuera de la oficina de otro usuario.
+En el ejemplo siguiente se muestra una respuesta de error causada por un intento de acceder a la información de OOF de otro usuario.
   
 ### <a name="code"></a>Código
 
@@ -161,7 +161,7 @@ En el ejemplo siguiente se muestra una respuesta de error debida a un intento de
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <soap:Fault>
@@ -169,7 +169,7 @@ En el ejemplo siguiente se muestra una respuesta de error debida a un intento de
       <faultstring>Microsoft.Exchange.Data.Storage.AccessDeniedException: User is not mailbox owner. User = S-1-5-21-3642464542-282065186-3871681729-1155, MailboxGuid = S-1-5-21-3642464542-282065186-3871681729-1156 ---> User is not mailbox owner. </faultstring>
       <faultactor>https://CAS01.example.com/EWS/Exchange.asmx</faultactor>
       <detail>
-        <ErrorCode xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">-2146233088</ErrorCode>
+        <ErrorCode xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">-2146233088</ErrorCode>
       </detail>
     </soap:Fault>
   </soap:Body>
@@ -180,5 +180,5 @@ En el ejemplo siguiente se muestra una respuesta de error debida a un intento de
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

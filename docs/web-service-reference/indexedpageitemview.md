@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6d1b0b04-cc35-4a57-bd7a-824136d14fda
-description: El elemento IndexedPageItemView describe cómo paginada conversación o elemento se devuelve información para una operación FindItem o una solicitud de operación FindConversation.
-ms.openlocfilehash: f1743e22087158c1889977f03774fccbc5577390
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento IndexedPageItemView describe la forma en que se devuelve la información de la conversación paginada o del elemento para una operación FindItem o una solicitud de operación FindConversation.
+ms.openlocfilehash: 0a66f17855fd425082e3651886d3eeec4f217ac4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835919"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456916"
 ---
 # <a name="indexedpageitemview"></a>IndexedPageItemView
 
-El elemento **IndexedPageItemView** describe cómo paginada conversación o elemento se devuelve información para una solicitud de [operación de FindItem](finditem-operation.md) o [FindConversation](findconversation-operation.md) . 
+El elemento **IndexedPageItemView** describe la forma en que se devuelve la información de la conversación paginada o del elemento para una [operación FindItem](finditem-operation.md) o una solicitud de [operación FindConversation](findconversation-operation.md) . 
   
 ```XML
 <IndexedPageViewItemView MaxEntriesReturned="" Offset="" BasePoint=""/>
@@ -30,51 +30,51 @@ El elemento **IndexedPageItemView** describe cómo paginada conversación o elem
  **IndexedPageViewType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**MaxEntriesReturned** <br/> |Describe el número máximo de elementos o conversaciones para devolver en la respuesta. Este atributo es opcional.  <br/> |
-|**Offset** <br/> |Describe el desplazamiento desde el **punto base**. Si el **punto base** es igual al principio, el desplazamiento es positivo. Si el **punto base** es igual a End, el desplazamiento se administra como si fuese negativo. Esto identifica qué elemento o conversación será la primera entregar en la respuesta. Este atributo es necesario.  <br/> |
-|**Punto base** <br/> |Describe si la página de elementos o las conversaciones se iniciará desde el principio o al final del conjunto de elementos o las conversaciones que se encuentran mediante el uso de los criterios de búsqueda. Buscar desde el final siempre busca hacia atrás. Este atributo es necesario.  <br/> |
+|**MaxEntriesReturned** <br/> |Describe el número máximo de elementos o conversaciones que se devolverá en la respuesta. Este atributo es opcional.  <br/> |
+|**Offset** <br/> |Describe el desplazamiento desde **BasePoint**. Si **BasePoint** es igual al principio, el desplazamiento es positivo. Si **BasePoint** es igual a end, el desplazamiento se trata como si fuera negativo. Esto identifica qué elemento o conversación será el primero que se entregará en la respuesta. Este atributo es obligatorio.  <br/> |
+|**BasePoint** <br/> |Describe si la página de elementos o conversaciones se iniciará desde el principio o el final del conjunto de elementos o conversaciones que se encuentren mediante los criterios de búsqueda. Buscar desde el final siempre busca hacia atrás. Este atributo es obligatorio.  <br/> |
    
-#### <a name="basepoint-attribute"></a>Atributo de punto base
+#### <a name="basepoint-attribute"></a>Atributo BasePoint
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Principio  <br/> |La vista de página comienza al principio del conjunto de conversación o elemento que se encuentra.  <br/> |
-|End  <br/> |Se inicia la vista de página al final del conjunto de conversación o elemento que se encuentra.  <br/> |
+|Empezar  <br/> |La vista paginada comienza al principio de la conversación encontrada o del conjunto de elementos.  <br/> |
+|End  <br/> |La vista paginada comienza al final de la conversación encontrada o del conjunto de elementos.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FindItem](finditem.md) <br/> |Define una solicitud para buscar elementos en un buzón de correo.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/FindItem` <br/> |
-|[FindConversation](findconversation.md) <br/> |Define una solicitud para buscar las conversaciones en un buzón de correo.  <br/> |
+|[FindItem](finditem.md) <br/> |Define una solicitud para buscar elementos en un buzón.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/FindItem` <br/> |
+|[FindConversation](findconversation.md) <br/> |Define una solicitud para buscar conversaciones en un buzón.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Buscar desde el final implica mover para el origen identificado por el desplazamiento. Además, el puntero se mueve de nuevo el número de registros solicitados. Por ejemplo, si hay 100 registros y el desplazamiento es 25 desde el final, la búsqueda comienza desde 75. Si se devuelven 10 registros, el puntero se mueve hacia atrás un 10 adicionales a 65 de registros y devuelve los registros 65 a través de 75. El siguiente índice es 64. El desplazamiento desde el final de una página siguiente es 100 menos 64 que es igual a 36. 36 es el valor para el desvío siguiente desde el final para obtener la siguiente página indizada.
+Buscar desde el final implica moverse al origen identificado por el desplazamiento. Además, el puntero se mueve hacia atrás el número de registros solicitados. Por ejemplo, si hay 100 registros y el desplazamiento es 25 desde el final, la búsqueda se inicia desde 75. Si se devuelven 10 registros, el puntero se mueve hacia atrás unos 10 registros adicionales a 65 y devuelve los registros 65 a 75. El siguiente índice es 64. El siguiente desplazamiento desde el final de una página es 100 menos 64, que es igual a 36. 36 es el valor para el siguiente desplazamiento desde el final para obtener la siguiente página indizada.
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestra una solicitud de [operación FindItem](finditem-operation.md) . Cada elemento se devuelve con su identificador y el asunto. Un máximo de seis artículos se devuelven en la respuesta, tal como se especifica mediante el atributo **MaxEntriesReturned** . Los elementos se muestran en orden ascendente agrupados por importancia. Elementos de un grupo se agregan por asunto. 
+En el siguiente ejemplo se muestra una solicitud de [operación FindItem](finditem-operation.md) . Cada elemento se devuelve con su identificador y asunto. En la respuesta se devuelven un máximo de seis elementos, como se especifica en el atributo **MaxEntriesReturned** . Los elementos se enumeran en orden ascendente agrupados por importancia. Los elementos de un grupo se agregan por asunto. 
   
 ```XML
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <FindItem Traversal="Shallow" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindItem Traversal="Shallow" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ItemShape>
         <t:BaseShape>IdOnly</t:BaseShape>
         <t:AdditionalProperties>
@@ -100,10 +100,10 @@ En el ejemplo siguiente se muestra una solicitud de [operación FindItem](findit
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -111,8 +111,8 @@ En el ejemplo siguiente se muestra una solicitud de [operación FindItem](findit
 
 [Operación FindItem](finditem-operation.md)
   
-[Operación de FindConversation](findconversation-operation.md)
+[Operación FindConversation](findconversation-operation.md)
 
 
-[Buscar elementos](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+[Buscar elementos](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

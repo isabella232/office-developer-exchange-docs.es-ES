@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 916b1cbb-f2e3-471d-84b0-e33467616652
-description: El elemento SuggestionDayResult representa un solo día que contiene las horas de reunión sugerida.
-ms.openlocfilehash: 7b75258a9e70f1ec6feed6a0b18beb76f356c7f4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SuggestionDayResult representa un solo día que contiene las horas de reunión sugeridas.
+ms.openlocfilehash: af907b62acefb4913814907722b98d326bd0535b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840599"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457994"
 ---
 # <a name="suggestiondayresult"></a>SuggestionDayResult
 
-El elemento **SuggestionDayResult** representa un solo día que contiene las horas de reunión sugerida. 
+El elemento **SuggestionDayResult** representa un solo día que contiene las horas de reunión sugeridas. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -42,38 +42,38 @@ El elemento **SuggestionDayResult** representa un solo día que contiene las hor
  **SuggestionDayResult**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Date](date.md) <br/> |Representa la fecha que contiene las horas de reunión sugerida.  <br/> |
-|[DayQuality](dayquality.md) <br/> |Representa la calidad del día para que contiene las horas de reunión sugerida de calidad.  <br/> |
+|[Date](date.md) <br/> |Representa la fecha que contiene las horas de reunión sugeridas.  <br/> |
+|[DayQuality](dayquality.md) <br/> |Representa la calidad del día para contener las horas de reunión sugeridas de calidad.  <br/> |
 |[SuggestionArray](suggestionarray.md) <br/> |Contiene una matriz de sugerencias de reunión.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SuggestionDayResultArray](suggestiondayresultarray.md) <br/> |Contiene una matriz de sugerencias organizadas por fecha de reunión.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray` <br/> |
+|[SuggestionDayResultArray](suggestiondayresultarray.md) <br/> |Contiene una matriz de sugerencias de reunión organizadas por fecha.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -84,5 +84,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

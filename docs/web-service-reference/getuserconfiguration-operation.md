@@ -11,31 +11,31 @@ api_name:
 api_type:
 - schema
 ms.assetid: 71d50e3c-92bd-435f-8118-b28bb85f8138
-description: La operación GetUserConfiguration Obtiene un objeto de configuración de usuario de una carpeta.
-ms.openlocfilehash: 6c1cdf381126e54f9b9eeaed260e7c2b23b0b2a6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación GetUserConfiguration obtiene un objeto de configuración de usuario de una carpeta.
+ms.openlocfilehash: fb28e88d1a47b0ea8f63ed33b1efacae8538e1c8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835687"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458211"
 ---
 # <a name="getuserconfiguration-operation"></a>Operación GetUserConfiguration
 
-La operación **GetUserConfiguration** Obtiene un objeto de configuración de usuario de una carpeta. 
+La operación **GetUserConfiguration** obtiene un objeto de configuración de usuario de una carpeta. 
   
-## <a name="getuserconfiguration-request-example"></a>Ejemplo de solicitud de GetUserConfiguration
+## <a name="getuserconfiguration-request-example"></a>Ejemplo de solicitud GetUserConfiguration
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud de **GetUserConfiguration** muestra cómo formar una solicitud para obtener un objeto de configuración de usuario en la carpeta Borradores. 
+El siguiente ejemplo de una solicitud **GetUserConfiguration** muestra cómo crear una solicitud para obtener un objeto de configuración de usuario en la carpeta Borradores. 
   
 ### <a name="code"></a>Código
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
@@ -56,7 +56,7 @@ El siguiente ejemplo de una solicitud de **GetUserConfiguration** muestra cómo 
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **GetUserConfiguration** . 
+En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **GetUserConfiguration** . 
   
 ### <a name="code"></a>Código
 
@@ -69,15 +69,15 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **Ge
                          MajorBuildNumber="639" 
                          MinorBuildNumber="20" 
                          Version="Exchange2010" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetUserConfigurationResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetUserConfigurationResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetUserConfigurationResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -112,5 +112,5 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **Ge
 
 [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
   
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

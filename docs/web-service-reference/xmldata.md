@@ -1,5 +1,5 @@
 ---
-title: Nota
+title: XmlData
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e47f1d32-3ee3-4a1d-b7f9-80973ed57bd4
-description: El elemento de nota contiene contenido de propiedad de datos XML para un objeto de configuración de usuario.
-ms.openlocfilehash: 6cd14d9e3873dd3aac352dce82afb2c309477214
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento XmlData contiene contenido de propiedad de datos XML para un objeto de configuración de usuario.
+ms.openlocfilehash: 2fb3e2ccbb6e9ccc409a5d0cfdd895b2a63214ff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19841024"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457021"
 ---
-# <a name="xmldata"></a>Nota
+# <a name="xmldata"></a>XmlData
 
-El elemento de **Nota** contiene contenido de propiedad de datos XML para un objeto de configuración de usuario. 
+El elemento **XMLDATA** contiene contenido de propiedad de datos XML para un objeto de configuración de usuario. 
   
 ```XML
 <XmlData/>
@@ -31,19 +31,19 @@ El elemento de **Nota** contiene contenido de propiedad de datos XML para un obj
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[UserConfiguration](userconfiguration.md) <br/> |Define un objeto de configuración de usuario único.  <br/> |
    
@@ -59,12 +59,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

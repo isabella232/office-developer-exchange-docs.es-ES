@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 81c157f0-16ae-4cd5-abf3-6aaf22ca8c70
-description: El elemento PersonaType especifica el tipo de la persona, por ejemplo, una persona o una lista de distribución.
-ms.openlocfilehash: 409339857b727144226f4ca233075196eef4308a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PersonaType especifica el tipo de rol, por ejemplo, una persona o una lista de distribución.
+ms.openlocfilehash: 9b62d2b8f1545e84a5b726fec0085dd7c9c898f5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836748"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457567"
 ---
 # <a name="personatype"></a>PersonaType
 
-El elemento **PersonaType** especifica el tipo de la persona, por ejemplo, una persona o una lista de distribución. 
+El elemento **PersonaType** especifica el tipo de rol, por ejemplo, una persona o una lista de distribución. 
   
 ```XML
 <PersonaType></PersonaType>
@@ -26,15 +26,15 @@ El elemento **PersonaType** especifica el tipo de la persona, por ejemplo, una p
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

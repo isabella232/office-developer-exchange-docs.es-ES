@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8395b45f-3b94-4473-82ac-2a12c4309170
-description: El elemento de refinador especifica un refinador de búsqueda.
-ms.openlocfilehash: aad1874760e02b2226cbe1a5bb700013d3816cc0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento refiner especifica un refinador de búsqueda.
+ms.openlocfilehash: 5be73cfd0a5005f79651e9de76fd5aaf18ba0119
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837038"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456766"
 ---
 # <a name="refiner"></a>Refinador
 
-El elemento de **refinador** especifica un refinador de búsqueda. 
+El elemento **refiner** especifica un refinador de búsqueda. 
   
 ```XML
 <Refiner>
@@ -31,15 +31,15 @@ El elemento de **refinador** especifica un refinador de búsqueda.
  **SearchRefinerItemType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Name (cadena)](name-string.md) | [valor](value.md) | [Count](count.md) | [símbolo (token) (cadena)](token-string.md)
+[Name (cadena)](name-string.md)  |  [Valor](value.md)  |  de [Número](count.md)  |  de [Token (cadena)](token-string.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

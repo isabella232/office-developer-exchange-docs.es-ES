@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f6ea8816-04cc-4ccf-8498-bc89d46a32e8
-description: El elemento ConversationShape identifica la propiedad establecida para devolver en una respuesta de la operación de FindConversation.
-ms.openlocfilehash: 2637c175fe94be4303476363cd59a1f895b9c959
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ConversationShape identifica el conjunto de propiedades que se va a devolver en una respuesta de operación FindConversation.
+ms.openlocfilehash: 18f652e7580a5521a4da25ccf19ae73e6614c3d0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763882"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457616"
 ---
 # <a name="conversationshape"></a>ConversationShape
 
-El elemento **ConversationShape** identifica la propiedad establecida para devolver en una respuesta de la operación de **FindConversation** . 
+El elemento **ConversationShape** identifica el conjunto de propiedades que se va a devolver en una respuesta de operación **FindConversation** . 
   
 ```XML
 <ConversationShape>
@@ -29,15 +29,15 @@ El elemento **ConversationShape** identifica la propiedad establecida para devol
  ****
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[BaseShape](baseshape.md) | [AdditionalProperties](additionalproperties.md)
+[BaseShape](baseshape.md)  |  [AdditionalProperties](additionalproperties.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

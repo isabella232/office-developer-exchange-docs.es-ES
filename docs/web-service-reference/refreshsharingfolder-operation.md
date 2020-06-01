@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1b047e34-40f0-459f-ac9e-e9f8e7349479
-description: La operación RefreshSharingFolder actualiza la carpeta local especificada con los datos más recientes de la carpeta que se está compartiendo.
-ms.openlocfilehash: 0037de28f0720b97cd51c58a6ee7e3c06e84d642
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación RefreshSharingFolder actualiza la carpeta local especificada con los datos más recientes de la carpeta que se comparte.
+ms.openlocfilehash: dd7136ae82353841db09497d23eabe450c1c8b13
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837041"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456772"
 ---
 # <a name="refreshsharingfolder-operation"></a>Operación RefreshSharingFolder
 
-La operación **RefreshSharingFolder** actualiza la carpeta local especificada con los datos más recientes de la carpeta que se está compartiendo. 
+La operación **RefreshSharingFolder** actualiza la carpeta local especificada con los datos más recientes de la carpeta que se comparte. 
   
 ## <a name="soap-headers"></a>Encabezados SOAP
 
-La operación de **RefreshSharingFolder** puede utilizar los encabezados SOAP que se enumeran y describen en la tabla siguiente. 
+La operación **RefreshSharingFolder** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla. 
   
-|**Header**|**Element**|**Descripción**|
+|**Header**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de la operación.  <br/> |
-|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que ha respondido a la solicitud.  <br/> |
+|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación.  <br/> |
+|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud.  <br/> |
    
-## <a name="refreshsharingfolder-request-example"></a>Ejemplo de solicitud de RefreshSharingFolder
+## <a name="refreshsharingfolder-request-example"></a>Ejemplo de solicitud RefreshSharingFolder
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra cómo formar una solicitud para actualizar la carpeta local especificada con los datos más recientes de la carpeta que se está compartiendo. El elemento [SharingFolderId](sharingfolderid.md) especifica el identificador de la carpeta local que se va a actualizar. 
+En el siguiente ejemplo, se muestra cómo crear una solicitud para actualizar la carpeta local especificada con los datos más recientes de la carpeta que se está compartiendo. El elemento [SharingFolderId](sharingfolderid.md) especifica el identificador de la carpeta local que se va a actualizar. 
   
 ### <a name="code"></a>Código
 
@@ -45,13 +45,13 @@ En el ejemplo siguiente se muestra cómo formar una solicitud para actualizar la
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010"/>
   </soap:Header>
   <soap:Body>
-    <RefreshSharingFolder xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <RefreshSharingFolder xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:SharingFolderId Id="AAMkAD=" ChangeKey="AwAAA=" />
     </RefreshSharingFolder>
   </soap:Body>
@@ -60,7 +60,7 @@ En el ejemplo siguiente se muestra cómo formar una solicitud para actualizar la
 
 ### <a name="request-elements"></a>Elementos de solicitud
 
-En la solicitud se usan los siguientes elementos:
+Los siguientes elementos se usan en la solicitud:
   
 - [RequestServerVersion](requestserverversion.md)
     
@@ -68,11 +68,11 @@ En la solicitud se usan los siguientes elementos:
     
 - [SharingFolderId](sharingfolderid.md)
     
-## <a name="successful-refreshsharingfolder-response"></a>RefreshSharingFolder la respuesta es correcta
+## <a name="successful-refreshsharingfolder-response"></a>Respuesta RefreshSharingFolder correcta
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta a una solicitud **RefreshSharingFolder** correcta. 
+En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **RefreshSharingFolder** . 
   
 ### <a name="code"></a>Código
 
@@ -87,20 +87,20 @@ En el ejemplo siguiente se muestra una respuesta a una solicitud **RefreshSharin
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <RefreshSharingFolderResponseMessage ResponseClass="Success"
-                                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</m:ResponseCode>
     </RefreshSharingFolderResponseMessage>
   </soap:Body>
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elementos de respuesta correcta
+### <a name="successful-response-elements"></a>Elementos Response correcto
 
 En la respuesta se usan los siguientes elementos:
   
@@ -114,7 +114,7 @@ En la respuesta se usan los siguientes elementos:
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **RefreshSharingFolder** . En este ejemplo, la solicitud de **RefreshSharingFolder** error porque no se encontró una suscripción que corresponde a la carpeta local especificada. 
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud **RefreshSharingFolder** . En este ejemplo, se produjo un error en la solicitud **RefreshSharingFolder** porque no se encontró una suscripción que corresponde a la carpeta local especificada. 
   
 ### <a name="code"></a>Código
 
@@ -129,13 +129,13 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **R
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <RefreshSharingFolderResponseMessage ResponseClass="Error"
-                                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:MessageText>Failed to synchronize the sharing folder.</m:MessageText>
       <m:ResponseCode>ErrorSharingSynchronizationFailed</m:ResponseCode>
       <m:DescriptiveLinkKey>0</m:DescriptiveLinkKey>
@@ -149,7 +149,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **R
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-En la respuesta de error, se usan los siguientes elementos:
+Los siguientes elementos se usan en la respuesta de error:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -178,5 +178,5 @@ En la respuesta de error, se usan los siguientes elementos:
 
 [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
   
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

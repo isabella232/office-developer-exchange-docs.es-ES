@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 15dea99c-7f5d-4af1-82ff-4255127fe567
-description: El elemento GetUserOofSettingsRequest es el elemento raíz que contiene los argumentos que se usa para obtener la configuración del usuario fuera de la oficina (OOF) de un buzón de correo.
-ms.openlocfilehash: e64818961283f90e447e2044cf7f918eccd21f06
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetUserOofSettingsRequest es el elemento raíz que contiene los argumentos usados para obtener la configuración de fuera de la oficina (OOF) del usuario de un buzón.
+ms.openlocfilehash: f515e8cf016d3aff6c652ae92a0da71a8f0a5f6b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835692"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457833"
 ---
 # <a name="getuseroofsettingsrequest"></a>GetUserOofSettingsRequest
 
-El elemento **GetUserOofSettingsRequest** es el elemento raíz que contiene los argumentos que se usa para obtener la configuración del usuario fuera de la oficina (OOF) de un buzón de correo. 
+El elemento **GetUserOofSettingsRequest** es el elemento raíz que contiene los argumentos usados para obtener la configuración de fuera de la oficina (OOF) del usuario de un buzón. 
   
 ```xml
 <GetUserOofSettingsRequest>
@@ -32,17 +32,17 @@ El elemento **GetUserOofSettingsRequest** es el elemento raíz que contiene los 
  **GetUserOofSettingsRequest**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Buzón de correo (disponibilidad)](mailbox-availability.md) <br/> |Identifica el usuario del buzón para una solicitud SetUserOofSettings o GetUserOofSettings.  <br/> |
+|[Buzón de correo (disponibilidad)](mailbox-availability.md) <br/> |Identifica al usuario del buzón de correo para una solicitud de SetUserOofSettings o GetUserOofSettings.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -50,18 +50,18 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="example"></a>Ejemplo
 
-El siguiente es un ejemplo de una solicitud de GetUserOofSettings que obtiene información de fuera de la oficina de un único usuario.
+El siguiente es un ejemplo de una solicitud de GetUserOofSettings que obtiene la información de OOF de un solo usuario.
   
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <GetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
@@ -75,10 +75,10 @@ El siguiente es un ejemplo de una solicitud de GetUserOofSettings que obtiene in
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

@@ -1,5 +1,5 @@
 ---
-title: DisconnectResponse (servicio web de mensajería unificada)
+title: DisconnectResponse (servicio Web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,19 +10,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 23806773-32d5-4283-a4d7-230ef80523bd
-description: El elemento DisconnectResponse define una respuesta a una solicitud de desconexión operación (servicio web de mensajería unificada).
-ms.openlocfilehash: 47d432065f0c983a511e2ffda1ba789546a82f2f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DisconnectResponse define una respuesta a una solicitud de desconexión (servicio Web de mensajería unificada).
+ms.openlocfilehash: bcfb778d94b19b1ab82af3e0d6420bdbeb69878e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764201"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458435"
 ---
-# <a name="disconnectresponse-um-web-service"></a>DisconnectResponse (servicio web de mensajería unificada)
+# <a name="disconnectresponse-um-web-service"></a>DisconnectResponse (servicio Web de mensajería unificada)
 
-El elemento **DisconnectResponse** define una respuesta a una solicitud de [operación de desconexión (servicio web de mensajería unificada)](disconnect-operation-um-web-service.md) . 
+El elemento **DisconnectResponse** define una respuesta a una solicitud de [desconexión (servicio Web de mensajería unificada)](disconnect-operation-um-web-service.md) . 
   
-[DisconnectResponse (servicio web de mensajería unificada)](disconnectresponse-um-web-service.md)
+[DisconnectResponse (servicio Web de mensajería unificada)](disconnectresponse-um-web-service.md)
   
 ```xml
 <DisconnectResponse />
@@ -31,34 +31,34 @@ El elemento **DisconnectResponse** define una respuesta a una solicitud de [oper
  **complexType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [(Servicio web de mensajería unificada) de la operación de desconexión](disconnect-operation-um-web-service.md)
+- [Operación Disconnect (servicio Web de mensajería unificada)](disconnect-operation-um-web-service.md)
 

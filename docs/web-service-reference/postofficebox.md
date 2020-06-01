@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a3ab9bcf-7dab-44f0-9ab6-b06543c0fdc2
-description: El elemento PostOfficeBox especifica thepost office boxportion de una dirección postal.
-ms.openlocfilehash: e2ec105accac380d27ebb4e7fc636cc538cad57f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PostOfficeBox especifica la oficina de correos boxportion de una dirección postal.
+ms.openlocfilehash: dede39a7b053172157858686f8287466f982c4ab
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836861"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458029"
 ---
 # <a name="postofficebox"></a>PostOfficeBox
 
-El elemento **PostOfficeBox** especifica la parte de "apartado de correos" de una dirección postal. 
+El elemento **PostOfficeBox** especifica la parte "Post Office Box" de una dirección postal. 
   
 ```XML
 <PostOfficeBox></PostOfficeBox>
@@ -26,23 +26,23 @@ El elemento **PostOfficeBox** especifica la parte de "apartado de correos" de un
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md) | [valor (PersonaPostalAddressType)](value-personapostaladdresstype.md)
+[PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)  |  [Valor (PersonaPostalAddressType)](value-personapostaladdresstype.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **PostOfficeBox** es un identificador de apartado de correos. 
+El valor de texto del elemento **PostOfficeBox** es un identificador de cuadro de oficina de correos. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

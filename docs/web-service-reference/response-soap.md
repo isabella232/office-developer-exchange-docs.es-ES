@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 4c2bcdeb-95ce-4ffa-bd83-118af53b534f
-description: El elemento de respuesta contiene la respuesta a una solicitud de operación (SOAP) GetFederationInformation, operación GetDomainSettings (SOAP) o una operación de GetUserSettings (SOAP).
-ms.openlocfilehash: 240c8e1f904ad685b51c1f657b2bc18e14fd985e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Response contiene la respuesta a una operación GetUserSettings (SOAP), GetDomainSettings Operation (SOAP) o una solicitud GetFederationInformation (SOAP).
+ms.openlocfilehash: 90cb29dd4ce4026211a5b592f149c8190dc81d29
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837179"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456419"
 ---
 # <a name="response-soap"></a>Respuesta (SOAP)
 
-El elemento de **respuesta** contiene la respuesta a una [operación de GetUserSettings (SOAP)](getusersettings-operation-soap.md), [operación GetDomainSettings (SOAP)](getdomainsettings-operation-soap.md)o una solicitud de [operación GetFederationInformation (SOAP)](getfederationinformation-operation-soap.md) . 
+El elemento **Response** contiene la respuesta a una [operación GetUserSettings (SOAP)](getusersettings-operation-soap.md), [GetDomainSettings Operation (SOAP)](getdomainsettings-operation-soap.md)o una solicitud [GetFederationInformation (SOAP)](getfederationinformation-operation-soap.md) . 
   
 ```XML
 <Response>
@@ -31,23 +31,23 @@ El elemento de **respuesta** contiene la respuesta a una [operación de GetUserS
  **GetUserSettingsResponse**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |Representa un código de error devuelto por el servicio Detección automática.  <br/> |
-|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |Representa un mensaje en el que está asociado con un código de error devuelto por el servicio Detección automática.  <br/> |
+|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |Representa un código de error devuelto por el servicio de detección automática.  <br/> |
+|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |Representa un mensaje que está asociado con un código de error devuelto por el servicio de detección automática.  <br/> |
 |[UserResponses (SOAP)](userresponses-soap.md) <br/> |Contiene las opciones de configuración para cada usuario solicitado.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[GetUserSettingsResponseMessage (SOAP)](getusersettingsresponsemessage-soap.md) <br/> |Define una respuesta a un [GetUserSettingsRequest (SOAP)](getusersettingsrequest-soap.md) <br/> |
 |[GetDomainSettingsResponseMessage (SOAP)](getdomainsettingsresponsemessage-soap.md) <br/> |Define una respuesta a un [GetDomainSettingsRequest (SOAP)](getdomainsettingsrequest-soap.md).  <br/> |
@@ -55,15 +55,15 @@ Ninguno.
    
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
@@ -73,7 +73,7 @@ Ninguno.
 [Operación GetUserSettings (SOAP)](getusersettings-operation-soap.md)
 
 
-[Referencia de servicio web de detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)
+[Referencia del servicio web de Detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)
   
-[Elementos de Autodiscover XML SOAP para Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[Elementos XML de detección automática de SOAP para Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

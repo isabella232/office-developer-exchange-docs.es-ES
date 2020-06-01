@@ -7,49 +7,49 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5e788016-68e0-4a3f-9243-03f6b6c6b389
-description: Busque información sobre la EWS RemoveImGroup operación.
-ms.openlocfilehash: 85b312f0b156125a2d5395658ccea06d831abdde
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Buscar información sobre la operación de EWS de RemoveImGroup.
+ms.openlocfilehash: b5e38404cbb1907a1118ab3ae8e56abb5a8d5e41
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837097"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456768"
 ---
 # <a name="removeimgroup-operation"></a>Operación RemoveImGroup
 
-Obtenga información acerca de la operación de EWS **RemoveImGroup** . 
+Buscar información sobre la operación de EWS de **RemoveImGroup** . 
   
-La operación **RemoveImGroup** quita un grupo mensajería instantáneo (IM) único de un buzón de correo. 
+La operación **RemoveImGroup** quita un solo grupo de mensajería instantánea (mi) de un buzón de correo. 
   
 Esta operación se introdujo en Exchange Server 2013.
   
-## <a name="using-the-removeimgroup-operation"></a>Mediante la operación RemoveImGroup
+## <a name="using-the-removeimgroup-operation"></a>Uso de la operación RemoveImGroup
 
-La operación **RemoveImGroup** sólo toma un argumento de identificador de grupo único. 
+La operación **RemoveImGroup** sólo toma un único argumento de identificador de grupo. 
   
-### <a name="removeimgroup-operation-soap-headers"></a>Encabezados SOAP de operación de RemoveImGroup
+### <a name="removeimgroup-operation-soap-headers"></a>Encabezados SOAP de operación RemoveImGroup
 
-La operación de **RemoveImGroup** puede utilizar los encabezados SOAP que se enumeran en la siguiente tabla. 
+La operación **RemoveImGroup** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
   
-|**Nombre de encabezado**|**Element**|**Descripción**|
+|**Nombre de encabezado**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario que está realizando la suplantación de la aplicación cliente. Este encabezado es aplicable a una solicitud.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural, como se define en RFC 3066, "Etiquetas para la identificación de idiomas," que se utilizará para acceder al buzón. Este encabezado es aplicable a una solicitud.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de la operación. Este encabezado es aplicable a una solicitud.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que ha respondido a la solicitud. Este encabezado es aplicable a una respuesta.  <br/> |
+|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente. Este encabezado se aplica a una solicitud.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural, tal y como se define en RFC 3066, "etiquetas para la identificación de idiomas", que se va a usar para obtener acceso al buzón. Este encabezado se aplica a una solicitud.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Este encabezado se aplica a una solicitud.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado se aplica a una respuesta.  <br/> |
    
-## <a name="removeimgroup-operation-request-example"></a>Ejemplo de solicitud de operación de RemoveImGroup
+## <a name="removeimgroup-operation-request-example"></a>Ejemplo de solicitud de operación RemoveImGroup
 
-El siguiente ejemplo de una solicitud de operación **RemoveImGroup** muestra cómo quitar un grupo de mensajería instantánea. 
+El siguiente ejemplo de una solicitud de operación de **RemoveImGroup** muestra cómo quitar un grupo de mensajería instantánea. 
   
 > [!NOTE]
-> El identificador de grupo se ha acortado para conservar la legibilidad. 
+> El identificador de grupo se ha reducido para preservar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
       <t:MailboxCulture>en-US</t:MailboxCulture>
@@ -63,15 +63,15 @@ El siguiente ejemplo de una solicitud de operación **RemoveImGroup** muestra c�
 </soap:Envelope>
 ```
 
-La solicitud SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de la solicitud contiene los siguientes elementos:
   
 - [RemoveImGroup](removeimgroup.md)
     
 - [GroupId](groupid.md)
     
-## <a name="successful-removeimgroup-operation-response"></a>Respuesta es correcta de operación RemoveImGroup
+## <a name="successful-removeimgroup-operation-response"></a>Respuesta de operación RemoveImGroup correcta
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación **RemoveImGroup** . 
+En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación de **RemoveImGroup** . 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -82,30 +82,30 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
                            MajorBuildNumber="349" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <RemoveImGroupResponse ResponseClass="Success" 
-                             xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                             xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
       </RemoveImGroupResponse>
    </s:Body>
 </s:Envelope>
 ```
 
-La respuesta SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de respuesta contiene los siguientes elementos:
   
 - [RemoveImGroupResponse](removeimgroupresponse.md)
     
 - [ResponseCode](responsecode.md)
     
-## <a name="removeimgroup-operation-errorinvalidimgroupid-error-response"></a>Operación RemoveImGroup respuesta de error de ErrorInvalidImGroupId
+## <a name="removeimgroup-operation-errorinvalidimgroupid-error-response"></a>RemoveImGroup Operation ErrorInvalidImGroupId error Response
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **RemoveImGroup** . La siguiente respuesta de error se produce cuando se realiza un intento para quitar un grupo que no existe en el buzón de correo. 
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **RemoveImGroup** . La siguiente respuesta de error se produce cuando se intenta quitar un grupo que no existe en el buzón de correo. 
   
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -115,15 +115,15 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
                            MajorBuildNumber="349" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <RemoveImGroupResponse ResponseClass="Error" 
-                             xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                             xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <MessageText>The specified Im Group Id is invalid.</MessageText>
          <ResponseCode>ErrorInvalidImGroupId</ResponseCode>
          <DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -132,7 +132,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
 </s:Envelope>
 ```
 
-La respuesta de error SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de respuesta de error contiene los siguientes elementos:
   
 - [RemoveImGroupResponse](removeimgroupresponse.md)
     
@@ -142,11 +142,11 @@ La respuesta de error SOAP body contiene los siguientes elementos:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Para códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).
+Para obtener los códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).
   
-## <a name="removeimgroup-operation-errorinvalididmalformed-error-response"></a>Operación RemoveImGroup respuesta de error de ErrorInvalidIdMalformed
+## <a name="removeimgroup-operation-errorinvalididmalformed-error-response"></a>RemoveImGroup Operation ErrorInvalidIdMalformed error Response
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **RemoveImGroup** . La siguiente respuesta de error se produce cuando se realiza un intento para quitar un grupo con un identificador de grupo con un formato incorrecto. 
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **RemoveImGroup** . Cuando se realiza un intento de quitar un grupo con un identificador de grupo con formato incorrecto, se produce la siguiente respuesta de error. 
   
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -156,15 +156,15 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
                            MajorBuildNumber="349" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <RemoveImGroupResponse ResponseClass="Error" 
-                             xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                             xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <MessageText>Id is malformed.</MessageText>
          <ResponseCode>ErrorInvalidIdMalformed</ResponseCode>
          <DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -173,7 +173,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
 </s:Envelope>
 ```
 
-La respuesta de error SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de respuesta de error contiene los siguientes elementos:
   
 - [RemoveImGroupResponse](removeimgroupresponse.md)
     
@@ -185,7 +185,7 @@ La respuesta de error SOAP body contiene los siguientes elementos:
     
 ## <a name="see-also"></a>Vea también
 
-- [Las personas y los contactos de EWS en Exchange](http://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
+- [Personas y contactos de EWS en Exchange](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     
 - [Operación AddImGroup](addimgroup-operation.md)
     

@@ -1,41 +1,41 @@
 ---
-title: Crear eventos de día completo mediante el uso de EWS en Exchange
+title: Crear eventos de día completo mediante EWS en Exchange
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 0fcb484b-4ffc-41a5-aeed-8c797766b70c
-description: Obtenga información sobre cómo crear eventos de día completo mediante la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: 0547fdf0ca92ba0648caeb5de6940d90d2a8ff46
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Obtenga información sobre cómo crear eventos de todo el día mediante la API administrada de EWS o EWS en Exchange.
+ms.openlocfilehash: 6be638c17cc0e0c86fa6b4217169aa7259dfd4aa
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763047"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456867"
 ---
-# <a name="create-all-day-events-by-using-ews-in-exchange"></a>Crear eventos de día completo mediante el uso de EWS en Exchange
+# <a name="create-all-day-events-by-using-ews-in-exchange"></a>Crear eventos de día completo mediante EWS en Exchange
 
-Obtenga información sobre cómo crear eventos de día completo mediante la API administrada de EWS o EWS en Exchange.
+Obtenga información sobre cómo crear eventos de todo el día mediante la API administrada de EWS o EWS en Exchange.
   
-Eventos de todo el día proporcionan una forma de representar algo que sucede para todo un día o varios días, por ejemplo, un día festivo o días de vacaciones. Crear eventos de día completo con la API administrada de EWS o EWS es un complemento. Es igual que [crear citas](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md), pero con unos pequeños cambios.
+Los eventos de todo el día proporcionan una forma de representar algo que ocurre en un solo día o en varios días (por ejemplo, un día festivo o días de vacaciones). La creación de eventos de todo el día con la API administrada de EWS o EWS es un complemento. Es igual que [crear citas](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md), pero con algunos pequeños cambios.
   
-## <a name="setting-start-and-end-times"></a>Configuración de horas de inicio y finalización
+## <a name="setting-start-and-end-times"></a>Establecer las horas de inicio y finalización
 
-Por definición, inician eventos de día completo en la medianoche en un día específico y end 24 horas (o un múltiplo de 24 horas) más adelante. Sin embargo, la API administrada de EWS y EWS permite especificar las horas que no sean medianoche al crear todos los eventos de día. Esto puede provocar un comportamiento imprevisto si no tener en cuenta cómo traducir estos tiempos en el servidor.
+Por definición, los eventos de todos los días comienzan a medianoche en un día específico y finalizan 24 horas (o un múltiplo de 24 horas) más adelante. Sin embargo, la API administrada de EWS y EWS le permiten especificar horas distintas de medianoche al crear eventos de día completo. Esto puede llevar a un comportamiento imprevisto si no tiene constancia de cómo estas horas se traducen en el servidor.
   
-Cuando se recibe una solicitud para crear un nuevo evento de día completo con los que no sean medianoche (en la [zona horaria de la solicitud o cita](time-zones-and-ews-in-exchange.md)) inicio o finalización, esas horas se ajustan a medianoche en la zona horaria adecuada según las reglas siguientes:
+Cuando se recibe una solicitud para crear un nuevo evento de día completo con una hora distinta de la medianoche (en la [zona horaria de la solicitud o la cita](time-zones-and-ews-in-exchange.md)), esas horas se ajustan a la medianoche en la zona horaria adecuada según las siguientes reglas:
   
-- Horas de inicio de la medianoche de no se ajustan a la medianoche antes de la hora especificada. Por ejemplo, 1:00 P.M. en 6 de junio obtiene ajustados a las 12:00 A.M. en 6 de junio.
+- Las horas de inicio que no sean de medianoche se ajustan a la medianoche antes de la hora especificada. Por ejemplo, 1:00 PM el 6 de junio se ajusta a 12:00 AM el 6 de junio.
     
-- Hora de finalización de la medianoche de no se ajusta a la medianoche después de la hora especificada. Por ejemplo, 1:00 P.M. en 6 de junio obtiene ajustados a las 12:00 A.M. en 7 de junio.
+- Las horas de finalización que no sean de medianoche se ajustan a la medianoche después de la hora especificada. Por ejemplo, 1:00 PM el 6 de junio se ajusta a 12:00 AM el 7 de junio.
     
-Por lo que es el evento de día completo que se crea siempre incluidos la hora de inicio y finalización que especifique, pero es posible que el tiempo adicional de notificación en el usuario del calendario de vencimiento para el cambio a partir de la medianoche. Debido a que el servidor va a ajustar la hora de inicio y final a partir de la medianoche, se recomienda que especifique la hora de inicio y final en la medianoche para evitar los cambios no deseados en los tiempos de.
+Por lo tanto, el evento de todo el día que se crea siempre está incluido en las horas de inicio y finalización especificadas, pero puede reclamar más tiempo en el calendario del usuario debido al cambio a medianoche. Como el servidor ajustará la hora de inicio y de finalización a medianoche, se recomienda especificar la hora de inicio y de finalización a medianoche para evitar cambios no deseados en las horas.
   
-También es importante tener en cuenta las zonas horarias al crear eventos de día completo. Debido a que el Exchange server impone una medianoche inicio y hora en la zona horaria de la cita o la solicitud de finalización, la visualización de ese evento de día completo en un cliente configurado para una zona horaria diferente puede producir resultados inesperados. Dependiendo del cliente, puede aparecer como un evento de día completo con días adicionales que no tenía intención de incluir o no puede aparecer como un evento de día completo totalmente. Por este motivo, se recomienda usar el preferido zona horaria del usuario siempre que sea posible crear eventos de día completo.
+También es importante tener en cuenta las zonas horarias al crear eventos de día completo. Debido a que el servidor de Exchange aplica una hora de inicio y finalización de la medianoche en la zona horaria de la solicitud o cita, ver el evento de todo el día en un cliente configurado para una zona horaria diferente puede producir resultados inesperados. Según el cliente, es posible que aparezca como un evento de todo el día con días adicionales que no pretendía incluir, o puede que no aparezca como un evento de todo el día al mismo tiempo. Por este motivo, se recomienda usar la zona horaria preferida del usuario siempre que sea posible al crear eventos de todo el día.
   
-## <a name="create-an-all-day-event-by-using-the-ews-managed-api"></a>Crear un evento de día completo mediante el uso de la API administrada de EWS
+## <a name="create-an-all-day-event-by-using-the-ews-managed-api"></a>Crear un evento de todo el día mediante la API administrada de EWS
 
-En el ejemplo siguiente se muestra cómo usar la API administrada de EWS para crear un evento de día completo, comenzando en la fecha especificada por el parámetro _startDate_ y una duración para el número de días especificado por el parámetro _numDays_ . Tenga en cuenta que se creará la cita en la zona horaria especificada por la propiedad [ExchangeService.TimeZone](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.timezone%28v=exchg.80%29.aspx) . En este ejemplo se da por supuesto que se ha inicializado el objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) pasado en el parámetro de _servicio_ con los valores válidos para las propiedades de [las credenciales](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx) y [dirección Url](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx) . 
+En el ejemplo siguiente se muestra cómo usar la API administrada de EWS para crear un evento de todo el día, a partir de la fecha especificada por el parámetro _startDate_ y que dura durante el número de días especificado por el parámetro _numDays_ . Tenga en cuenta que la cita se creará en la zona horaria especificada por la propiedad [ExchangeService. TimeZone](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.timezone%28v=exchg.80%29.aspx) . En este ejemplo se supone que el objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) pasado en el parámetro _Service_ se ha inicializado con valores válidos para las [credenciales](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx) y las propiedades de [dirección URL](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx) . 
   
 ```cs
 static void CreateAllDayAppointment(ExchangeService service, DateTime startDate, int numDays)
@@ -67,16 +67,16 @@ static void CreateAllDayAppointment(ExchangeService service, DateTime startDate,
 }
 ```
 
-## <a name="create-an-all-day-event-by-using-ews"></a>Crear un evento de día completo mediante el uso de EWS
+## <a name="create-an-all-day-event-by-using-ews"></a>Crear un evento de todo el día mediante EWS
 
-En el ejemplo siguiente se muestra una solicitud de EWS [operación CreateItem](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) para crear un evento de día completo. La cita se crea en la zona hora oriental, como se indica en el elemento [TimeZoneContext](http://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) . Tenga en cuenta que la parte de los valores de los elementos de [Inicio](http://msdn.microsoft.com/library/7cfe9979-c893-4f9b-b3a1-8f9e17515a4b%28Office.15%29.aspx) y [fin de](http://msdn.microsoft.com/library/72329821-32ff-495d-b6e5-fdc011003c2e%28Office.15%29.aspx) la hora son ambos 04:00Z, que se convierte a partir de la medianoche en la zona hora oriental durante el horario de verano. 
+En el ejemplo siguiente se muestra una solicitud de operación de EWS [CreateItem](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) para crear un evento de todo el día. La cita se crea en la zona horaria oriental, como se indica en el elemento [TimeZoneContext](https://msdn.microsoft.com/library/573c462b-aa1d-4ba0-8852-e3f48b26873b%28Office.15%29.aspx) . Observe que la parte de hora de los valores de los elementos [Start](https://msdn.microsoft.com/library/7cfe9979-c893-4f9b-b3a1-8f9e17515a4b%28Office.15%29.aspx) y [End](https://msdn.microsoft.com/library/72329821-32ff-495d-b6e5-fdc011003c2e%28Office.15%29.aspx) son tanto 04:00Z, que se convierte en la medianoche de la zona horaria Oriental durante el horario de verano. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -107,7 +107,7 @@ En el ejemplo siguiente se muestra una solicitud de EWS [operación CreateItem](
 
 - [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)
     
-- [Crear citas y reuniones mediante el uso de EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
+- [Crear citas y reuniones mediante EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
     
 - [Zonas horarias y EWS en Exchange](time-zones-and-ews-in-exchange.md)
     

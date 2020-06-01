@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f6925cc9-7f22-478f-b9ba-b77575772471
-description: El elemento de teléfono especifica un número de teléfono único que dan como resultado de una extracción de entidades de número de teléfono.
-ms.openlocfilehash: 654e8fc378ce3483cb3ebd9be33f3737ddd86bcb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Phone especifica un único número de teléfono que resulta de una extracción de entidades de números de teléfono.
+ms.openlocfilehash: eec05fbb1cbbfa5c9b47cdb3cef1af6085ab51b6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836754"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457560"
 ---
 # <a name="phone-phoneentitytype"></a>Teléfono (PhoneEntityType)
 
-El elemento de **teléfono** especifica un número de teléfono único que dan como resultado de una extracción de entidades de número de teléfono. 
+El elemento **Phone** especifica un único número de teléfono que resulta de una extracción de entidades de números de teléfono. 
   
 ```XML
 <Phone>
@@ -31,15 +31,15 @@ El elemento de **teléfono** especifica un número de teléfono único que dan c
  **PhoneEntityType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Posición](position.md) | [OriginalPhoneString](originalphonestring.md) | [PhoneString](phonestring.md) | [tipo (cadena)](type-string.md)
+[Posición](position.md)  |  [OriginalPhoneString](originalphonestring.md)  |  [PhoneString](phonestring.md)  |  [Tipo (cadena)](type-string.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

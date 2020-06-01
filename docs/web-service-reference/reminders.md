@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 19294300-ab84-4784-8aa7-3395a08de640
-description: El elemento de avisos especifica los avisos devueltos en la respuesta a una solicitud de GetReminders.
-ms.openlocfilehash: 955fc568dc919d591076271382a8c9bbd1d146ad
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Reminders especifica los avisos devueltos en la respuesta a una solicitud GetReminders.
+ms.openlocfilehash: 1ddf1c10872dcce103919dbed3d1c5e04cdfca74
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837071"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458498"
 ---
 # <a name="reminders"></a>Avisos
 
-El elemento de **avisos** especifica los avisos devueltos en la respuesta a una solicitud de **GetReminders** . 
+El elemento **Reminders** especifica los avisos devueltos en la respuesta a una solicitud **GetReminders** . 
   
 ```XML
 <Reminders>
@@ -28,11 +28,11 @@ El elemento de **avisos** especifica los avisos devueltos en la respuesta a una 
  **ArrayOfRemindersType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,10 +52,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -64,5 +64,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [GetRemindersResponse](getremindersresponse.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 643b99ab-ff90-4411-864c-1077623028d6
 description: El elemento EntityExtractionResult especifica la propiedad EntityExtractionResult de un elemento.
-ms.openlocfilehash: ef99629beb95f1e1123569fa99e3f495c1b56e95
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: f2f069717a5862adff3349090c35f95499d135f8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764429"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456958"
 ---
 # <a name="entityextractionresult"></a>EntityExtractionResult
 
@@ -34,29 +34,29 @@ El elemento **EntityExtractionResult** especifica la propiedad **EntityExtractio
  **EntityExtractionResultType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Direcciones (ArrayOfAddressEntitiesType)](addresses-arrayofaddressentitiestype.md) <br/> |Especifica una matriz de elementos de **AddressEntity** .  <br/> |
-|[MeetingSuggestions](meetingsuggestions.md) <br/> |Especifica una matriz de elementos de **MeetingSuggestion** .  <br/> |
-|[TaskSuggestions](tasksuggestions.md) <br/> |Especifica una matriz de elementos de **TaskSuggestion** .  <br/> |
-|[EmailAddresses (ArrayOfEmailAddressEntitiesType)](emailaddresses-arrayofemailaddressentitiestype.md) <br/> |Especifica una matriz de entidades de la dirección de correo electrónico.  <br/> |
-|[Contactos (ArrayOfContactsType)](contacts-arrayofcontactstype.md) <br/> |Especifica una matriz de los contactos.  <br/> |
+|[Direcciones (ArrayOfAddressEntitiesType)](addresses-arrayofaddressentitiestype.md) <br/> |Especifica una matriz de elementos **AddressEntity** .  <br/> |
+|[MeetingSuggestions](meetingsuggestions.md) <br/> |Especifica una matriz de elementos **MeetingSuggestion** .  <br/> |
+|[TaskSuggestions](tasksuggestions.md) <br/> |Especifica una matriz de elementos **TaskSuggestion** .  <br/> |
+|[EmailAddresses (ArrayOfEmailAddressEntitiesType)](emailaddresses-arrayofemailaddressentitiestype.md) <br/> |Especifica una matriz de entidades de direcciones de correo electrónico.  <br/> |
+|[Contactos (ArrayOfContactsType)](contacts-arrayofcontactstype.md) <br/> |Especifica una matriz de contactos.  <br/> |
 |[Direcciones URL (ArrayOfUrlEntitiesType)](urls-arrayofurlentitiestype.md) <br/> |Especifica una matriz de direcciones URL.  <br/> |
 |[PhoneNumbers (ArrayOfPhoneEntitiesType)](phonenumbers-arrayofphoneentitiestype.md) <br/> |Especifica una matriz de números de teléfono.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Item](item.md) <br/> |Representa un elemento genérico en el almacén de Exchange.  <br/> |
+|[Item](item.md) <br/> |Representa un elemento genérico del almacén de Exchange.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -68,14 +68,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

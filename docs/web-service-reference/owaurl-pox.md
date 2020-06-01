@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 450b86a1-1722-49f5-b541-16c1edc3db7a
-description: El elemento OWAUrl describe la dirección URL y el esquema de autenticación que se usa para tener acceso a un determinado equipo que ejecuta Microsoft Exchange Server 2007 que tiene el rol de servidor de acceso de cliente instalado que aloja Outlook Web Access.
-ms.openlocfilehash: 93d03506e2a74aa1b4ef6d2a49ccbda01cfc1f9a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento OWAUrl describe la dirección URL y el esquema de autenticación que se usa para obtener acceso a un equipo concreto que ejecuta Microsoft Exchange Server 2007 que tiene instalada la función de servidor acceso de clientes que hospeda Outlook Web Access.
+ms.openlocfilehash: c0728af063cfbf1353eb7d3b81f5fcfe8b398f7d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836673"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457266"
 ---
 # <a name="owaurl-pox"></a>OWAUrl (POX)
 
-El elemento **OWAUrl** describe la dirección URL y el esquema de autenticación que se usa para tener acceso a un determinado equipo que ejecuta Microsoft Exchange Server 2007 que tiene el rol de servidor de acceso de cliente instalado que aloja Outlook Web Access. 
+El elemento **OWAUrl** describe la dirección URL y el esquema de autenticación que se usa para obtener acceso a un equipo concreto que ejecuta Microsoft Exchange Server 2007 que tiene instalada la función de servidor acceso de clientes que hospeda Outlook Web Access. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -38,11 +38,11 @@ El elemento **OWAUrl** describe la dirección URL y el esquema de autenticación
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
 |**AuthenticationMethod** <br/> |Describe los métodos de autenticación para obtener acceso a Outlook Web Access.  <br/> |
    
@@ -50,21 +50,21 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|WindowsIntegrated  <br/> |Autenticación integrada de Windows.  <br/> |
+|WindowsIntegrated  <br/> |Autenticación de Windows integrada.  <br/> |
 |FBA  <br/> |Autenticación basada en formularios.  <br/> |
 |NTLM  <br/> |Autenticación NTLM.  <br/> |
-|Implícita  <br/> |Autenticación implícita.  <br/> |
+|Digest  <br/> |Autenticación implícita.  <br/> |
 |Básica  <br/> |Autenticación básica.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Interno (POX)](internal-pox.md) <br/> |Contiene la colección de direcciones URL de Outlook Web Access que un cliente puede conectarse a cuando está dentro del firewall.  <br/> |
+|[Interno (POX)](internal-pox.md) <br/> |Contiene la colección de direcciones URL de Outlook Web Access a las que se puede conectar un cliente cuando está dentro del firewall.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -74,5 +74,5 @@ El valor de texto representa la dirección URL del servicio de Outlook Web Acces
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

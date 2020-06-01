@@ -1,5 +1,5 @@
 ---
-title: Desconectar (servicio web de mensajería unificada)
+title: Disconnect (servicio Web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,19 +10,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2f8c1e8c-3bd4-4988-96b9-735c347b29f7
-description: El elemento Desconectar define una solicitud para desconectar la llamada.
-ms.openlocfilehash: 764532bdadd69caaa68406c84277197def3160af
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Disconnect define una solicitud para desconectar una llamada.
+ms.openlocfilehash: a00d957927a7a97d12c0d8c0c662956a18529cde
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764209"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458456"
 ---
-# <a name="disconnect-um-web-service"></a>Desconectar (servicio web de mensajería unificada)
+# <a name="disconnect-um-web-service"></a>Disconnect (servicio Web de mensajería unificada)
 
-El elemento **Desconectar** define una solicitud para desconectar la llamada. 
+El elemento **Disconnect** define una solicitud para desconectar una llamada. 
   
-- [Desconectar (servicio web de mensajería unificada)](disconnect-um-web-service.md)
+- [Disconnect (servicio Web de mensajería unificada)](disconnect-um-web-service.md)
   
 ```xml
 <Disconnect>
@@ -33,39 +33,39 @@ El elemento **Desconectar** define una solicitud para desconectar la llamada.
  **complexType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CallId (servicio web de mensajería unificada)](callid-um-web-service.md) <br/> |El identificador de la llamada a desconectar.  <br/> |
+|[CallId (servicio Web de mensajería unificada)](callid-um-web-service.md) <br/> |El identificador de la llamada a Disconnect.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [(Servicio web de mensajería unificada) de la operación de desconexión](disconnect-operation-um-web-service.md)  
-- [Operación PlayOnPhone (servicio web de mensajería unificada)](playonphone-operation-um-web-service.md) 
-- [Operación PlayOnPhoneGreeting (servicio web de mensajería unificada)](playonphonegreeting-operation-um-web-service.md)  
-- [CallId (servicio web de mensajería unificada)](callid-um-web-service.md)
+- [Operación Disconnect (servicio Web de mensajería unificada)](disconnect-operation-um-web-service.md)  
+- [Operación reproducir (servicio Web de mensajería unificada)](playonphone-operation-um-web-service.md) 
+- [Operación PlayOnPhoneGreeting (servicio Web de mensajería unificada)](playonphonegreeting-operation-um-web-service.md)  
+- [CallId (servicio Web de mensajería unificada)](callid-um-web-service.md)
 

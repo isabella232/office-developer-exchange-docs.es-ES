@@ -1,5 +1,5 @@
 ---
-title: Sobrenombres
+title: Los sobrenombres
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bbafce39-7fc6-4099-bc27-b40c0ad44c77
-description: El elemento de sobrenombres especifica una matriz de valores de alias y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: e798ce082da2ca963b4ef78a4f462a996bdff4df
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento nicknames especifica una matriz de valores de alias y los identificadores de sus atribuciones de origen para el rol asociado.
+ms.openlocfilehash: c6b7de5e1c93797603a2950b4a9527c5d370f93d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836536"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457777"
 ---
-# <a name="nicknames"></a>Sobrenombres
+# <a name="nicknames"></a>Los sobrenombres
 
-El elemento de **sobrenombres** especifica una matriz de valores de alias y los identificadores de sus atribuciones de origen para el rol asociado. 
+El elemento **nicknames** especifica una matriz de valores de alias y los identificadores de sus atribuciones de origen para el rol asociado. 
   
 ```XML
 <Nicknames>
@@ -29,11 +29,11 @@ El elemento de **sobrenombres** especifica una matriz de valores de alias y los 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

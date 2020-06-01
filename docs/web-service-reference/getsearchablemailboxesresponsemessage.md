@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f45865fd-4626-4d80-84f6-7989339fdd85
-description: El elemento GetSearchableMailboxesResponseMessage especifica el mensaje de respuesta de una solicitud de GetSearchableMailboxes.
-ms.openlocfilehash: 2a4d1fe357656fe29d8572e7f32a4bc2e4a6131e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetSearchableMailboxesResponseMessage especifica el mensaje de respuesta para una solicitud de GetSearchableMailboxes.
+ms.openlocfilehash: 69f45d87cfbd398013d021cdd39b55497d78ae04
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764974"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458260"
 ---
 # <a name="getsearchablemailboxesresponsemessage"></a>GetSearchableMailboxesResponseMessage
 
-El elemento **GetSearchableMailboxesResponseMessage** especifica el mensaje de respuesta de una solicitud de **GetSearchableMailboxes** . 
+El elemento **GetSearchableMailboxesResponseMessage** especifica el mensaje de respuesta para una solicitud de **GetSearchableMailboxes** . 
   
 ```XML
 <GetSearchableMailboxesResponseMessage ResponseClass=" Success | Warning | Error ">
@@ -32,11 +32,11 @@ El elemento **GetSearchableMailboxesResponseMessage** especifica el mensaje de r
  **GetSearchableMailboxesResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
 |ResponseClass  <br/> |Indica la clase de la respuesta.  <br/> |
    
@@ -44,25 +44,25 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Correcto  <br/> |Indica éxito.  <br/> |
+|Correcto  <br/> |Indica que se ha realizado correctamente.  <br/> |
 |Advertencia  <br/> |Indica una advertencia.  <br/> |
 |Error  <br/> |Indica un error.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SearchableMailboxes](searchablemailboxes.md) <br/> |Contiene una matriz de los buzones de correo devuelto desde una solicitud de **GetSearchableMailboxes** .  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Actualmente no utilizado y reservado para uso futuro.  <br/> |
+|[SearchableMailboxes](searchablemailboxes.md) <br/> |Contiene una matriz de los buzones devueltos por una solicitud **GetSearchableMailboxes** .  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Actualmente no está en uso y reservado para uso futuro.  <br/> |
 |[MessageText](messagetext.md) <br/> |Proporciona una descripción de texto del estado de la respuesta.  <br/> |
-|[MessageXml](messagexml.md) <br/> |Proporciona información de la respuesta de error adicionales.  <br/> |
-|[ResponseCode](responsecode.md) <br/> |Proporciona información de estado acerca de la solicitud.  <br/> |
+|[MessageXml](messagexml.md) <br/> |Proporciona información de respuesta de error adicional.  <br/> |
+|[ResponseCode](responsecode.md) <br/> |Proporciona información de estado sobre la solicitud.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta para una solicitud de servicios Web de Exchange.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta de una solicitud de servicios web Exchange.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -74,14 +74,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

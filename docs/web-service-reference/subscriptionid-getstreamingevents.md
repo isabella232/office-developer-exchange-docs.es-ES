@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3f86c178-2311-4844-82db-c2a0e469d116
-description: El elemento SubscriptionId representa el identificador para una suscripción de transmisión por secuencias.
-ms.openlocfilehash: eb451e611c4922fa3b9cff7edec54dfb8260f5f5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SubscriptionId representa el identificador de una suscripción de transmisión.
+ms.openlocfilehash: babf02c514e7fe8711f51ac52e425a18f3ab47f7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840594"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458001"
 ---
 # <a name="subscriptionid-getstreamingevents"></a>SubscriptionId (GetStreamingEvents)
 
-El elemento **SubscriptionId** representa el identificador para una suscripción de transmisión por secuencias. 
+El elemento **SubscriptionId** representa el identificador de una suscripción de transmisión. 
   
 ```XML
 <SubscriptionId/>
@@ -26,21 +26,21 @@ El elemento **SubscriptionId** representa el identificador para una suscripción
  **SubscriptionIdType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetStreamingEvents](getstreamingevents.md) <br/> |Representa la operación que se usa en los clientes para solicitar las notificaciones de transmisión por secuencias desde el servidor.  <br/> |
+|[GetStreamingEvents](getstreamingevents.md) <br/> |Representa la operación que usan los clientes para solicitar notificaciones de transmisión por secuencias desde el servidor.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -48,7 +48,7 @@ Se requiere un valor de texto. El valor de texto es un GUID.
   
 ## <a name="remarks"></a>Comentarios
 
-El GUID que representa el identificador de suscripción es generado por el servidor de acceso de cliente cuando se crea la suscripción.
+El GUID que representa el identificador de suscripción lo genera el servidor de acceso de cliente cuando se crea la suscripción.
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -56,10 +56,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -68,5 +68,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación GetStreamingEvents](getstreamingevents-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

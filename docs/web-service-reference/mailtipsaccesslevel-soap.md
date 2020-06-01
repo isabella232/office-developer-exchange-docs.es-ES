@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 730e349e-8250-4236-af53-cd9039c74d8f
-description: El elemento MailTipsAccessLevel representa la propiedad MailTipsAccessLevel. El elemento MailTipsAccessLevel es sólo para uso interno. Este elemento no se usa en los clientes.
-ms.openlocfilehash: 35fb4aa56bbfa42ac4be196a379dc48aff5ec101
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MailTipsAccessLevel representa la propiedad MailTipsAccessLevel. El elemento MailTipsAccessLevel es solo para uso interno. Los clientes no usan este elemento.
+ms.openlocfilehash: 8e3a467f7aa8484fc8a4bfb23f8b4ac4c138ccad
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836313"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458071"
 ---
 # <a name="mailtipsaccesslevel-soap"></a>MailTipsAccessLevel (SOAP)
 
-El elemento **MailTipsAccessLevel** representa la propiedad **MailTipsAccessLevel** . El elemento **MailTipsAccessLevel** es sólo para uso interno. Este elemento no se usa en los clientes. 
+El elemento **MailTipsAccessLevel** representa la propiedad **MailTipsAccessLevel** . El elemento **MailTipsAccessLevel** es solo para uso interno. Los clientes no usan este elemento. 
   
 ```XML
 <MailTipsAccessLevel/>
@@ -25,33 +25,33 @@ El elemento **MailTipsAccessLevel** representa la propiedad **MailTipsAccessLeve
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Representa una lista de relaciones de organización para una sola organización.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Este elemento especifica la cantidad máxima de detalle de sugerencias de correo que se devuelve en la respuesta.
+Este elemento especifica la cantidad máxima de detalles de sugerencias de correo que se devolverá en la respuesta.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también

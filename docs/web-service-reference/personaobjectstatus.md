@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1354c86e-7740-42c4-9e63-b372b3906846
-description: El elemento PersonaObjectStatus especifica si la información de la persona asociada es completa o parcial.
-ms.openlocfilehash: e216807f8b7d9de47b9cf40c10676579b8086547
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PersonaObjectStatus especifica si la información del rol asociado es completa o parcial.
+ms.openlocfilehash: 66dbe30cebb0aa5845d9580ad057d1cf5ab9b037
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836741"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457238"
 ---
 # <a name="personaobjectstatus"></a>PersonaObjectStatus
 
-El elemento **PersonaObjectStatus** especifica si la información de la persona asociada es completa o parcial. 
+El elemento **PersonaObjectStatus** especifica si la información del rol asociado es completa o parcial. 
   
 ```XML
 <PersonaObjectStatus></PersonaObjectStatus>
@@ -26,15 +26,15 @@ El elemento **PersonaObjectStatus** especifica si la información de la persona 
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **PersonaObjectStatus** indica si el rol tipo es completa o parcial. 
+El valor de texto del elemento **PersonaObjectStatus** indica si el rol es completo o parcial. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

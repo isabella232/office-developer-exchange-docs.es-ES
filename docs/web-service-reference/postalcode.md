@@ -1,5 +1,5 @@
 ---
-title: Código postal
+title: PostalCode
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,14 +12,14 @@ api_type:
 - schema
 ms.assetid: 35935ca3-60d5-47f0-b16d-69ab2b8fdd49
 description: El elemento PostalCode representa el código postal de un elemento de contacto.
-ms.openlocfilehash: 853c65e0ac2fe182b1d188996948eaab6a1b7165
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: edfb4590b7156229b5f6a893a96dca8d9fbea853
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836857"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457168"
 ---
-# <a name="postalcode"></a>Código postal
+# <a name="postalcode"></a>PostalCode
 
 El elemento **PostalCode** representa el código postal de un elemento de contacto. 
   
@@ -30,42 +30,42 @@ El elemento **PostalCode** representa el código postal de un elemento de contac
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Entrada (PhysicalAddress)](entry-physicaladdress.md) <br/> |Describe una sola dirección física para un elemento de contacto.  <br/> |
+|[Entrada (PhysicalAddress)](entry-physicaladdress.md) <br/> |Describe una dirección física única para un elemento de contacto.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto es un valor de tipo string que representa el código postal de un contacto.
+El valor de texto es un valor de tipo String que representa el código postal de un contacto.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c5604161-bbc0-40bc-ad75-ff7e837d745f
-description: El elemento ItemShape identifica un conjunto de propiedades para devolver en una operación GetItem, operación FindItem o SyncFolderItems respuesta de la operación.
-ms.openlocfilehash: 95174a85a8fa05cb2612e1289d46c8db32b6e052
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ItemShape identifica un conjunto de propiedades que se devolverán en una operación GetItem, la operación FindItem o la respuesta de operación SyncFolderItems.
+ms.openlocfilehash: ffb666ee331b55a4f04cad076c705e4bec980e03
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836191"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458127"
 ---
 # <a name="itemshape"></a>ItemShape
 
-El elemento **ItemShape** identifica un conjunto de propiedades para devolver una respuesta [GetItem operation](getitem-operation.md), [operación FindItem](finditem-operation.md)o [SyncFolderItems](syncfolderitems-operation.md) . 
+El elemento **ItemShape** identifica un conjunto de propiedades que se devolverán en una [operación GetItem](getitem-operation.md), la [operación FindItem](finditem-operation.md)o la respuesta de [operación SyncFolderItems](syncfolderitems-operation.md) . 
   
 ```XML
 <ItemShape>
@@ -37,30 +37,30 @@ El elemento **ItemShape** identifica un conjunto de propiedades para devolver un
  **ItemResponseShapeType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[BaseShape](baseshape.md) <br/> |Identifica la configuración básica de propiedades para devolver una respuesta de elemento o carpeta.  <br/> |
-|[IncludeMimeContent](includemimecontent.md) <br/> |Especifica si el contenido de extensiones multipropósito de correo Internet (MIME) de un elemento se devuelve en la respuesta.  <br/> |
-|[BodyType](bodytype.md) <br/> |Identifica cómo se da el formato de texto del cuerpo en la respuesta.  <br/> |
+|[BaseShape](baseshape.md) <br/> |Identifica la configuración básica de las propiedades que se devolverán en una respuesta de elemento o carpeta.  <br/> |
+|[IncludeMimeContent](includemimecontent.md) <br/> |Especifica si se devuelve el contenido de extensiones multipropósito de correo Internet (MIME) de un elemento en la respuesta.  <br/> |
+|[BodyType](bodytype.md) <br/> |Identifica cómo se aplica formato al texto del cuerpo en la respuesta.  <br/> |
 |[ConvertHtmlCodePageToUTF8](converthtmlcodepagetoutf8.md) <br/> |Indica si el cuerpo HTML del elemento se convierte en UTF8.  <br/> |
 |[FilterHtmlContent](filterhtmlcontent.md) <br/> |Especifica si está habilitado el filtrado de contenido HTML.  <br/> |
-|[AdditionalProperties](additionalproperties.md) <br/> |Identifica las propiedades adicionales para devolver en una respuesta.  <br/> |
+|[AdditionalProperties](additionalproperties.md) <br/> |Identifica las propiedades adicionales que se devolverán en una respuesta.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetItem](getitem.md) <br/> |Define una solicitud para recuperar elementos de un buzón en el almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetItem` <br/> |
-|[FindItem](finditem.md) <br/> |Define una solicitud para buscar todos los elementos que están contenidos en una carpeta.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/FindItem` <br/> |
-|[SyncFolderItems](syncfolderitems.md) <br/> |Define una solicitud para sincronizar los elementos en una carpeta de almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/SyncFolderItems` <br/> |
+|[GetItem](getitem.md) <br/> |Define una solicitud para recuperar elementos de un buzón de correo en el almacén de Exchange.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetItem` <br/> |
+|[FindItem](finditem.md) <br/> |Define una solicitud para buscar todos los elementos que se encuentran en una carpeta.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/FindItem` <br/> |
+|[SyncFolderItems](syncfolderitems.md) <br/> |Define una solicitud para sincronizar elementos en una carpeta de almacén de Exchange.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/SyncFolderItems` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -74,10 +74,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -90,5 +90,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación SyncFolderItems](syncfolderitems-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

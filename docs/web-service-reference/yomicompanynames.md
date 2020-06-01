@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5c414af9-34d0-41ce-bda9-0d4ca3f3be79
-description: El elemento YomiCompanyNames especifica una matriz de los nombres de compañías en japonés fonético y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: 6c8ea8e8887a58e082d8a14a635ae59c6b4622b7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento YomiCompanyNames especifica una matriz de nombres de compañías fonéticas de japonés y los identificadores de sus atribuciones de origen para el rol asociado.
+ms.openlocfilehash: 41b97998425926750a3ecc7e17233f2066759689
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19841032"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457868"
 ---
 # <a name="yomicompanynames"></a>YomiCompanyNames
 
-El elemento **YomiCompanyNames** especifica una matriz de los nombres de compañías en japonés fonético y los identificadores de sus atribuciones de origen para el rol asociado. 
+El elemento **YomiCompanyNames** especifica una matriz de nombres de compañías fonéticas de japonés y los identificadores de sus atribuciones de origen para el rol asociado. 
   
 ```XML
 <YomiCompanyNames>
@@ -28,11 +28,11 @@ El elemento **YomiCompanyNames** especifica una matriz de los nombres de compañ
  **ArrayOfStringAttributedValuesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

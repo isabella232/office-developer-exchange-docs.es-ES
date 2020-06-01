@@ -11,60 +11,60 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8da17226-5d3a-4525-9ffa-d83730f47bb1
-description: Busque información sobre la EWS GetUserAvailability operación.
-ms.openlocfilehash: 41246fe22bfb7444cd4aa7b1d4651d475dd9231c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Buscar información sobre la operación de EWS de GetUserAvailability.
+ms.openlocfilehash: b6d03c7da65e3f30f093b7e41448abcca2330a84
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835686"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458225"
 ---
 # <a name="getuseravailability-operation"></a>Operación GetUserAvailability
 
-Obtenga información acerca de la operación de EWS **GetUserAvailability** . 
+Buscar información sobre la operación de EWS de **GetUserAvailability** . 
   
-La operación **GetUserAvailability** proporciona información detallada acerca de la disponibilidad de un conjunto de usuarios, salones y recursos dentro de un período de tiempo especificado. 
+La operación **GetUserAvailability** proporciona información detallada sobre la disponibilidad de un conjunto de usuarios, salones y recursos en un período de tiempo especificado. 
   
-## <a name="using-the-getuseravailability-operation"></a>Mediante la operación GetUserAvailability
+## <a name="using-the-getuseravailability-operation"></a>Uso de la operación GetUserAvailability
 
-La operación **GetUserAvailability** proporciona información de disponibilidad del usuario actual en un nivel de detalle especificado. Las aplicaciones de cliente, como Outlook, Outlook Web Access, Outlook Mobile Access y otras usan direcciones SMTP para identificar la información del usuario solicitado. 
+La operación **GetUserAvailability** proporciona información actual sobre la disponibilidad del usuario en un nivel de detalle especificado. Las aplicaciones cliente como Outlook, Outlook Web Access, Outlook Mobile Access y otras usan direcciones SMTP para identificar la información de usuario solicitada. 
   
-El servicio de disponibilidad expande listas de distribución para recuperar el estado de disponibilidad para cada miembro de la lista, como el número de buzones de correo en la lista de distribución es menor que 100, que es el número máximo de identidades que la **GetUserAvailability **operación puede solicitar. Los Estados de libre/ocupado de los miembros de la lista de distribución se combinan en un único estado libre/ocupado para la lista de distribución completa. 
+El servicio de disponibilidad expande las listas de distribución para recuperar el estado de disponibilidad de cada miembro de la lista, siempre que el número de buzones de la lista de distribución sea inferior a 100, que es el número máximo de identidades que la operación **GetUserAvailability** puede solicitar. Los Estados de disponibilidad de los miembros de la lista de distribución se combinan en un solo Estado de disponibilidad para toda la lista de distribución. 
   
-Las solicitudes de aplicación de cliente especifican el período de tiempo de la consulta de disponibilidad. El valor predeterminado de período de tiempo para la información solicitada es 42 días. Si el calendario del usuario contiene las citas o reuniones que están dentro y fuera del período de tiempo definido para la consulta, se devuelve la cita. 
+Las solicitudes de aplicación de cliente especifican el período de tiempo de la consulta de disponibilidad. El período de tiempo predeterminado para la información solicitada es de 42 días. Si el calendario del usuario contiene citas o reuniones que están dentro y fuera del período de tiempo definido para la consulta, se devuelve la cita. 
   
-Las horas de citas y reuniones que se devuelven están en la misma zona horaria como la aplicación cliente que está solicitando la reunión.
+Las horas de citas y reuniones que se devuelven se encuentran en la misma zona horaria que la aplicación cliente que solicita la reunión.
   
 El servicio de disponibilidad procesa la solicitud para cada cliente. El servicio expande todas las citas periódicas y devuelve el número máximo de detalles del calendario que el cliente solicitante tiene permiso para recibir.
   
 > [!NOTE]
-> Si el buzón de destino no está disponible o no se encuentra, se produce una excepción **MailRecipientNotFoundException** . El cliente recibe un mensaje de error que indica que el destinatario de correo no se encuentra en el servicio de directorio de Active Directory o los servicios de dominio de Active Directory (AD DS). 
+> Si el buzón de destino no está disponible o no se encuentra, se produce una excepción **MailRecipientNotFoundException** . El cliente recibe un mensaje de error que indica que el destinatario de correo no se encuentra en el servicio de directorio Active Directory o en los servicios de dominio de Active Directory (AD DS). 
   
 ### <a name="getuseravailability-operation-soap-headers"></a>Encabezados SOAP de operación GetUserAvailability
 
-La operación **GetUserAvailability** puede usar los encabezados SOAP que se enumeran en la siguiente tabla. 
+La operación **GetUserAvailability** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
   
-|**Header**|**Element**|**Descripción**|
+|**Header**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario que está realizando la suplantación del cliente. Este encabezado es aplicable a una solicitud.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de la operación. Este encabezado es aplicable a una solicitud.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que ha respondido a la solicitud. Este encabezado es aplicable a una respuesta.  <br/> |
-|**TimeZoneContext** <br/> |[TimeZoneContext](timezonecontext.md) <br/> |Especifica un encabezado SOAP que identifica la zona horaria que se usará para todas las respuestas desde el servidor. Todas las veces que se devuelven desde el servidor se convertirán en la zona horaria especificada. Este encabezado es aplicable a una respuesta.  <br/> |
+|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que el cliente está suplantando. Este encabezado se aplica a una solicitud.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Este encabezado se aplica a una solicitud.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado se aplica a una respuesta.  <br/> |
+|**TimeZoneContext** <br/> |[TimeZoneContext](timezonecontext.md) <br/> |Especifica un encabezado SOAP que identifica la zona horaria que se va a usar para todas las respuestas del servidor. Todas las horas que se devuelven del servidor se convertirán en la zona horaria especificada. Este encabezado se aplica a una respuesta.  <br/> |
    
-## <a name="getuseravailability-request-example-get-availability-information"></a>Ejemplo de solicitud de GetUserAvailability: obtener la información de disponibilidad
+## <a name="getuseravailability-request-example-get-availability-information"></a>Ejemplo de solicitud GetUserAvailability: obtener información de disponibilidad
 
-El siguiente ejemplo de una solicitud de operación **GetUserAvailability** muestra cómo obtener información detallada de disponibilidad para los usuarios de dos en la zona horaria de hora del Pacífico. 
+El siguiente ejemplo de una solicitud de operación de **GetUserAvailability** muestra cómo obtener información detallada de disponibilidad para dos usuarios en la zona horaria del Pacífico. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetUserAvailabilityRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
-      <t:TimeZone xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetUserAvailabilityRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
+      <t:TimeZone xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Bias>480</Bias>
         <StandardTime>
           <Bias>0</Bias>
@@ -110,19 +110,19 @@ El siguiente ejemplo de una solicitud de operación **GetUserAvailability** mues
 </soap:Envelope>
 ```
 
-Para obtener más información acerca de cómo recuperar las reuniones sugeridas mediante el elemento [SuggestionsViewOptions](suggestionsviewoptions.md) , vea el esquema en el directorio virtual de EWS. 
+Para obtener más información sobre cómo recuperar reuniones sugeridas mediante el elemento [SuggestionsViewOptions](suggestionsviewoptions.md) , vea el esquema en el directorio virtual EWS. 
   
-La solicitud SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de la solicitud contiene los siguientes elementos:
   
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
     
-- [TimeZone (disponibilidad)](timezone-availability.md)
+- [Zona horaria (disponibilidad)](timezone-availability.md)
     
 - [Bias (UTC)](bias-utc.md)
     
-- [StandardTime](standardtime.md)
+- [Standardtime Element](standardtime.md)
     
-- [Bias](bias.md)
+- [Sesgo](bias.md)
     
 - [Time](time.md)
     
@@ -140,7 +140,7 @@ La solicitud SOAP body contiene los siguientes elementos:
     
 - [Correo electrónico (EmailAddressType)](email-emailaddresstype.md)
     
-- [Dirección (cadena)](address-string.md)
+- [Address (cadena)](address-string.md)
     
 - [AttendeeType](attendeetype.md)
     
@@ -148,18 +148,18 @@ La solicitud SOAP body contiene los siguientes elementos:
     
 - [FreeBusyViewOptions](freebusyviewoptions.md)
     
-- [Ventana de tiempo](timewindow.md)
+- [TimeWindow](timewindow.md)
     
 - [StartTime](starttime.md)
     
-- [Hora de finalización](endtime.md)
+- [EndTime](endtime.md)
     
-## <a name="successful-getuseravailability-operation-response"></a>Respuesta es correcta de operación GetUserAvailability
+## <a name="successful-getuseravailability-operation-response"></a>Respuesta de operación GetUserAvailability correcta
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de la operación **GetUserAvailability** . 
+En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de operación **GetUserAvailability** . 
   
 > [!NOTE]
-> Los identificadores de eventos de calendario se han abreviado para conservar la legibilidad. 
+> Los identificadores de eventos de calendario se han reducido para preservar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -168,19 +168,19 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de la o
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="665" MinorBuildNumber="7" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetUserAvailabilityResponse xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetUserAvailabilityResponse xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <FreeBusyResponseArray>
         <FreeBusyResponse>
           <ResponseMessage ResponseClass="Success">
             <ResponseCode>NoError</ResponseCode>
           </ResponseMessage>
           <FreeBusyView>
-            <FreeBusyViewType xmlns="http://schemas.microsoft.com/exchange/services/2006/types">DetailedMerged</FreeBusyViewType>
-            <MergedFreeBusy xmlns="http://schemas.microsoft.com/exchange/services/2006/types">000002220220000000000000</MergedFreeBusy>
-            <CalendarEventArray xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <FreeBusyViewType xmlns="https://schemas.microsoft.com/exchange/services/2006/types">DetailedMerged</FreeBusyViewType>
+            <MergedFreeBusy xmlns="https://schemas.microsoft.com/exchange/services/2006/types">000002220220000000000000</MergedFreeBusy>
+            <CalendarEventArray xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
               <CalendarEvent>
                 <StartTime>2006-10-16T06:00:00-07:00</StartTime>
                 <EndTime>2006-10-16T06:30:00-07:00</EndTime>
@@ -227,7 +227,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de la o
                 </CalendarEventDetails>
               </CalendarEvent>
             </CalendarEventArray>
-            <WorkingHours xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <WorkingHours xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
               <TimeZone>
                 <Bias>480</Bias>
                 <StandardTime>
@@ -260,16 +260,16 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de la o
             <ResponseCode>NoError</ResponseCode>
           </ResponseMessage>
           <FreeBusyView>
-            <FreeBusyViewType xmlns="http://schemas.microsoft.com/exchange/services/2006/types">FreeBusyMerged</FreeBusyViewType>
-            <MergedFreeBusy xmlns="http://schemas.microsoft.com/exchange/services/2006/types">000000001100000000000000</MergedFreeBusy>
-            <CalendarEventArray xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <FreeBusyViewType xmlns="https://schemas.microsoft.com/exchange/services/2006/types">FreeBusyMerged</FreeBusyViewType>
+            <MergedFreeBusy xmlns="https://schemas.microsoft.com/exchange/services/2006/types">000000001100000000000000</MergedFreeBusy>
+            <CalendarEventArray xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
               <CalendarEvent>
                 <StartTime>2006-10-16T09:00:00-07:00</StartTime>
                 <EndTime>2006-10-16T10:00:00-07:00</EndTime>
                 <BusyType>Tentative</BusyType>
               </CalendarEvent>
             </CalendarEventArray>
-            <WorkingHours xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <WorkingHours xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
               <TimeZone>
                 <Bias>480</Bias>
                 <StandardTime>
@@ -303,9 +303,9 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de la o
 </soap:Envelope>
 ```
 
-Aparece la información de disponibilidad para cada usuario en un único elemento de [FreeBusyResponse](freebusyresponse.md) . El orden de los usuarios en la solicitud de operación **GetUserAvailability** determina el orden de los datos de disponibilidad para cada usuario en la respuesta. 
+La información de disponibilidad de cada usuario aparece en un elemento [FreeBusyResponse](freebusyresponse.md) único. El orden de los usuarios en la solicitud de operación **GetUserAvailability** determina el orden de los datos de disponibilidad para cada usuario en la respuesta. 
   
-Si el número de citas en el período de tiempo que se define en la consulta es mayor que el número máximo de especificados por el administrador, se devolverá un error al cliente. El número máximo predeterminado de citas es 10.000 instancias únicas y expande elementos de periodicidad. Esta propiedad puede configurarse únicamente por un administrador.
+Se devolverá un error al cliente si el número de citas en el período de tiempo definido en la consulta es mayor que el número máximo especificado por el administrador. El número máximo predeterminado de citas es 10.000 instancias únicas y elementos de periodicidad ampliada. Solo un administrador puede configurar esta propiedad.
   
 En la respuesta se usan los siguientes elementos:
   
@@ -333,13 +333,13 @@ En la respuesta se usan los siguientes elementos:
     
 - [StartTime](starttime.md)
     
-- [Hora de finalización](endtime.md)
+- [EndTime](endtime.md)
     
 - [BusyType](busytype.md)
     
 - [CalendarEventDetails](calendareventdetails.md)
     
-- [ID](id.md)
+- [Id.](id.md)
     
 - [Asunto (CalendarEventDetails)](subject-calendareventdetails.md)
     
@@ -357,13 +357,13 @@ En la respuesta se usan los siguientes elementos:
     
 - [WorkingHours](workinghours-ex15websvcsotherref.md)
     
-- [TimeZone (disponibilidad)](timezone-availability.md)
+- [Zona horaria (disponibilidad)](timezone-availability.md)
     
 - [Bias (UTC)](bias-utc.md)
     
-- [StandardTime](standardtime.md)
+- [Standardtime Element](standardtime.md)
     
-- [Bias](bias.md)
+- [Sesgo](bias.md)
     
 - [Time](time.md)
     
@@ -389,6 +389,6 @@ En la respuesta se usan los siguientes elementos:
 
 - [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
     
-- [Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
     
 

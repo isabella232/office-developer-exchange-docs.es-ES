@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e05ed6eb-00ae-49c8-8341-43f6e0d728ff
-description: El elemento LobbyBypass especifica la reunión en línea para omitir la sala de espera virtual.
-ms.openlocfilehash: 9ecc920acd9e1aea3476ad1194d6c7d0529b21c7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento LobbyBypass especifica la configuración de reunión en línea para omitir la sala de espera virtual.
+ms.openlocfilehash: 6940428c944b9d4d64acc6dbbf3993576e1932eb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836246"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458099"
 ---
 # <a name="lobbybypass"></a>LobbyBypass
 
-El elemento **LobbyBypass** especifica la reunión en línea para omitir la sala de espera virtual. 
+El elemento **LobbyBypass** especifica la configuración de reunión en línea para omitir la sala de espera virtual. 
   
 ```XML
 <LobbyBypass> Disabled | EnabledForGatewayParticipants </LobbyBypass>
@@ -26,15 +26,15 @@ El elemento **LobbyBypass** especifica la reunión en línea para omitir la sala
  **LobbyBypassType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **LobbyBypass** puede ser **deshabilitado** o **EnabledForGatewayParticipants**. El valor **deshabilitado** indica que el desvío de la sala de espera está deshabilitado por lo que deben tener acceso todos los asistentes a la reunión a través de la sala de espera virtual. El valor de **EnabledForGatewayParticipants** indica que el desvío de la sala de espera está habilitado para los participantes de teléfono. 
+El valor de texto del elemento **LobbyBypass** puede estar **deshabilitado** o en **EnabledForGatewayParticipants**. El valor **Disabled** indica que la omisión de la sala de espera está deshabilitada para que todos los asistentes a la reunión deban tener acceso a través de la sala virtual. El valor **EnabledForGatewayParticipants** indica que la omisión de la sala de espera está habilitada para los participantes telefónicos. 
   
 ## <a name="remarks"></a>Comentarios
 

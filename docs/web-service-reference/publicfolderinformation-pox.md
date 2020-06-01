@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: a221aa9e-b4ac-4ec5-aa42-7e2a69e8eaa6
-description: El elemento PublicFolderInformation contiene información que los clientes pueden usar para enviar una solicitud de detección automática para detectar información de carpetas públicas para el usuario.
-ms.openlocfilehash: bb4432a664024c3d1ccb17826948cfe7a1b58cdf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PublicFolderInformation contiene información que los clientes pueden usar para enviar una solicitud de detección automática para detectar la información de las carpetas públicas del usuario.
+ms.openlocfilehash: e044a1feddfaeb4eb93c289c617dde9adc66f332
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836927"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457721"
 ---
 # <a name="publicfolderinformation-pox"></a>PublicFolderInformation (POX)
 
-El elemento **PublicFolderInformation** contiene información que los clientes pueden usar para enviar una solicitud de detección automática para detectar información de carpetas públicas para el usuario. 
+El elemento **PublicFolderInformation** contiene información que los clientes pueden usar para enviar una solicitud de detección automática para detectar la información de las carpetas públicas del usuario. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -34,31 +34,31 @@ El elemento **PublicFolderInformation** contiene información que los clientes p
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SmtpAddress (POX)](smtpaddress-pox.md) <br/> |Contiene la dirección SMTP asignada a la tienda de mensaje de carpeta pública configurada para el usuario. Esta dirección SMTP puede utilizarse en el elemento [EMailAddress (POX)](emailaddress-pox.md) de una solicitud de detección automática para detectar la configuración de carpetas públicas.  <br/> |
+|[SmtpAddress (POX)](smtpaddress-pox.md) <br/> |Contiene la dirección SMTP asignada al almacén de mensajes de carpeta pública configurado para el usuario. Esta dirección SMTP puede usarse en el elemento [EmailAddress (POX)](emailaddress-pox.md) de una solicitud de detección automática para detectar la configuración de las carpetas públicas.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de cuenta para el usuario.  <br/> |
+|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de la cuenta del usuario.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El elemento **PublicFolderInformation** es un elemento secundario opcional del elemento de **cuenta** . 
+El elemento **PublicFolderInformation** es un elemento secundario opcional del elemento **account** . 
   
 ## <a name="see-also"></a>Vea también
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

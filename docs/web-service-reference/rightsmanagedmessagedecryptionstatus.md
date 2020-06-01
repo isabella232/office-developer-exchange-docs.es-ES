@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 17c7af54-aa44-4065-86ce-ac9f2edbf464
 description: El elemento RightsManagedMessageDecryptionStatus especifica el estado de descifrado de administración de derechos de un elemento.
-ms.openlocfilehash: f01ecfbd467765c556250718bf93304d843facd6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 2d10a78b18b977518ee6c8301da40d2bd5a58900
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837235"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457427"
 ---
 # <a name="rightsmanagedmessagedecryptionstatus"></a>RightsManagedMessageDecryptionStatus
 
@@ -23,18 +23,18 @@ El elemento **RightsManagedMessageDecryptionStatus** especifica el estado de des
 <RightsManagedMessageDecryptionStatus></RightsManagedMessageDecryptionStatus>
 ```
 
- **número entero**
+ **entero**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **RightsManagedMessageDecryptionStatus** es que el estado de descifrado de los derechos de un elemento de protegida. 
+El valor de texto del elemento **RightsManagedMessageDecryptionStatus** es el estado de descifrado de un elemento protegido por derechos. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

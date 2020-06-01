@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: a76595db-7460-44ac-ac2a-53241caa33a7
-description: El elemento RelativeMonthlyRecurrence describe un patrón de periodicidad mensual relativa.
-ms.openlocfilehash: 9b695052c38e2693946837bf99f03baea093df08
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RelativeMonthlyRecurrence describe un patrón de periodicidad mensual relativo.
+ms.openlocfilehash: 90aa0e43684bfb09a3e13cf86ec96f680e80a714
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837053"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457511"
 ---
 # <a name="relativemonthlyrecurrence"></a>RelativeMonthlyRecurrence
 
-El elemento **RelativeMonthlyRecurrence** describe un patrón de periodicidad mensual relativa. 
+El elemento **RelativeMonthlyRecurrence** describe un patrón de periodicidad mensual relativo. 
   
 ```xml
 <RelativeMonthlyRecurrence>
@@ -34,43 +34,43 @@ El elemento **RelativeMonthlyRecurrence** describe un patrón de periodicidad me
  **RelativeMonthlyRecurrencePatternType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Interval](interval.md) <br/> |Define el intervalo entre dos elementos modelo periódica mensual consecutivos. El intervalo para este valor es de 1 a 99.  <br/> |
-|[DaysOfWeek (DayOfWeekType)](daysofweek-dayofweektype.md) <br/> |Se describen los días de la semana en el patrón de periodicidad mensual relativa.  <br/> |
-|[DayOfWeekIndex](dayofweekindex.md) <br/> |Describe qué semana se usa en un patrón de periodicidad mensual relativa.  <br/> |
+|[Intervalo de](interval.md) <br/> |Define el intervalo entre dos elementos de patrón periódicos mensuales consecutivos. El intervalo para este valor es de 1 a 99.  <br/> |
+|[DaysOfWeek (DayOfWeekType)](daysofweek-dayofweektype.md) <br/> |Describe qué días de la semana se encuentran en el patrón de periodicidad mensual relativo.  <br/> |
+|[DayOfWeekIndex](dayofweekindex.md) <br/> |Describe la semana que se usa en un patrón de periodicidad mensual relativo.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Periodicidad (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Contiene el patrón de periodicidad para los elementos de calendario y las convocatorias de reunión.  <br/> |
-|[Periodicidad (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Contiene información sobre la periodicidad para las tareas repetitivas.  <br/> |
+|[Recurrence (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Contiene el patrón de periodicidad para los elementos de calendario y las convocatorias de reunión.  <br/> |
+|[Periodicidad (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Contiene información de periodicidad para tareas periódicas.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

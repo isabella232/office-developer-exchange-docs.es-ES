@@ -7,34 +7,34 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 78266287-481e-43c1-b143-2cafd0063c95
-description: El elemento RelevanceScore especifica un entero que representa cómo relevantes es la persona asociada al cliente.
-ms.openlocfilehash: d5550e511753bcfb0e2aba19f1c1a52e54ddf149
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RelevanceScore especifica un número entero que indica el grado de relevancia del rol asociado con el cliente.
+ms.openlocfilehash: 54d0912d33a64e26ed415d8009561a32b97ce3f6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837059"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457497"
 ---
 # <a name="relevancescore"></a>RelevanceScore
 
-El elemento **RelevanceScore** especifica un entero que representa cómo relevantes es la persona asociada al cliente. 
+El elemento **RelevanceScore** especifica un número entero que indica el grado de relevancia del rol asociado con el cliente. 
   
 ```XML
 <RelevanceScore></RelevanceScore>
 ```
 
- **número entero**
+ **entero**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **RelevanceScore** es la determinación de cómo relevantes es un rol para el cliente. Este elemento es de sólo lectura. 
+El valor de texto del elemento **RelevanceScore** es la determinación de la relevancia que tiene un rol en el cliente. Este elemento es de sólo lectura. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

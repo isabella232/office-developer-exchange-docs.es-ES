@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c1834b40-ab2a-4c67-a93a-eaadc9523fda
-description: El elemento Keyword especifica una palabra clave única.
-ms.openlocfilehash: 4f99cb9d6c521ff4083550737b64b77927669aaf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento keyword especifica una sola palabra clave.
+ms.openlocfilehash: cdb944aa7b5a8335d840555400381f1d863ded82
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836188"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458106"
 ---
 # <a name="keyword"></a>Palabra clave
 
-El elemento **Keyword** especifica una palabra clave única. 
+El elemento **Keyword** especifica una sola palabra clave. 
   
 ```XML
 <Keyword></Keyword>
@@ -26,15 +26,15 @@ El elemento **Keyword** especifica una palabra clave única.
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **palabra clave** es el nombre de una sola palabra clave que representa una estadística de palabra clave única. 
+El valor de texto del elemento **Keyword** es el nombre de una palabra clave que representa una única estadística de palabra clave. 
   
 ## <a name="remarks"></a>Comentarios
 

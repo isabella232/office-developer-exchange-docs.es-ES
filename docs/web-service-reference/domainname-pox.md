@@ -1,5 +1,5 @@
 ---
-title: DomainName (POX)
+title: Nombredominio (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -9,22 +9,22 @@ api_type:
 - schema
 ms.assetid: 2b4af2b2-58b5-4f28-9cb3-c07a11377747
 description: El elemento DomainName especifica el dominio del usuario.
-ms.openlocfilehash: c38d2e470bd174ab6dd7e5e1dd3eee23daea5e69
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: ff38d6a876e396317dedece0a81a9f9f0db0f587
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764266"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458428"
 ---
-# <a name="domainname-pox"></a>DomainName (POX)
+# <a name="domainname-pox"></a>Nombredominio (POX)
 
-El elemento **DomainName** especifica el dominio del usuario. 
+El elemento **domainname** especifica el dominio del usuario. 
   
 - [Detección automática (POX)](autodiscover-pox.md)  
 - [Respuesta (POX)](response-pox.md)  
 - [Cuenta (POX)](account-pox.md) 
 - [Protocolo (POX)](protocol-pox.md) 
-- [DomainName (POX)](domainname-pox.md)
+- [Nombredominio (POX)](domainname-pox.md)
   
 ```xml
 <DomainName/>
@@ -32,21 +32,21 @@ El elemento **DomainName** especifica el dominio del usuario.
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente en el equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.  <br/> |
+|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -54,9 +54,9 @@ El valor de texto especifica el dominio del usuario.
   
 ## <a name="remarks"></a>Comentarios
 
-Si no se especifica ningún valor, la autenticación predeterminada es utilizar la dirección de correo electrónico como un formato de nombre principal (UPN) del usuario. Por ejemplo: \<nombre de usuario\>@\<dominio\>.
+Si no se especifica ningún valor, la autenticación predeterminada es usar la dirección de correo electrónico como un formato de nombre principal de usuario (UPN). Por ejemplo: \<Username\> @ \<Domain\> .
   
 ## <a name="see-also"></a>Vea también
 
-- [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+- [Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

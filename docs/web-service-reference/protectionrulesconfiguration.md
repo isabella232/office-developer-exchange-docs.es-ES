@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e5b4699a-476e-4053-bb52-873eb921c046
-description: El elemento ProtectionRulesConfiguration contiene información de configuración de servicio para el servicio de protección de las reglas.
-ms.openlocfilehash: 9c286fcf9752d591d53323f45a264f4bdd078c1c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ProtectionRulesConfiguration contiene información de configuración del servicio para el servicio de reglas de protección.
+ms.openlocfilehash: e664fba78f170c9f4c59b49b3a08c0dd2e4ed4cd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836912"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456775"
 ---
 # <a name="protectionrulesconfiguration"></a>ProtectionRulesConfiguration
 
-El elemento **ProtectionRulesConfiguration** contiene información de configuración de servicio para el servicio de protección de las reglas. 
+El elemento **ProtectionRulesConfiguration** contiene información de configuración del servicio para el servicio de reglas de protección. 
   
 ```XML
 <ProtectionRulesConfiguration RefreshInterval="">
@@ -33,26 +33,26 @@ El elemento **ProtectionRulesConfiguration** contiene información de configurac
  **ProtectionRulesServiceConfiguration**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**RefreshInterval** <br/> |Especifica la frecuencia, en horas completas, el cliente debería solicitar las reglas de protección desde el servidor. Este atributo es necesario y su valor debe ser un entero que es igual o mayor que 1.  <br/> |
+|**RefreshInterval** <br/> |Especifica la frecuencia, en horas completas, que el cliente debe solicitar reglas de protección del servidor. Este atributo es obligatorio y su valor debe ser un entero que sea igual o mayor que 1.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Reglas](rules-ex15websvcsotherref.md) <br/> |Una matriz de las reglas de protección. Se requiere este elemento.  <br/> |
+|[Reglas](rules-ex15websvcsotherref.md) <br/> |Una matriz de reglas de protección. Se requiere este elemento.  <br/> |
 |[InternalDomains (SmtpDomainList)](internaldomains-smtpdomainlist.md) <br/> |Identifica la lista de dominios SMTP internos de la organización. Se requiere este elemento.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |Contiene la configuración del servicio.  <br/> |
+|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |Contiene las opciones de configuración del servicio.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -60,7 +60,7 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-La configuración del servicio de las reglas de protección está formada por una lista de reglas, dominios internos y un intervalo de actualización.
+La configuración del servicio de reglas de protección se compone de una lista de reglas, dominios internos y un intervalo de actualización.
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -68,14 +68,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

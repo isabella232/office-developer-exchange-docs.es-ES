@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f30f80d9-20c8-41cc-afc7-a5eec1e0c5ea
-description: El elemento DelegateUsers contiene las identidades de delegados para agregar o actualizar en un buzón de correo. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).
-ms.openlocfilehash: a078707ae6b1676ca5a32ba718add93debd498fe
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DelegateUsers contiene las identidades de los delegados para agregar o actualizar en un buzón. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).
+ms.openlocfilehash: 69f5aab65634f41ec0f820da05dee79a300fb32e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764068"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457378"
 ---
 # <a name="delegateusers"></a>DelegateUsers
 
-El elemento **DelegateUsers** contiene las identidades de delegados para agregar o actualizar en un buzón de correo. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1). 
+El elemento **DelegateUsers** contiene las identidades de los delegados para agregar o actualizar en un buzón. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1). 
   
 ```xml
 <DelegateUsers>
@@ -33,42 +33,42 @@ El elemento **DelegateUsers** contiene las identidades de delegados para agregar
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UsuarioDelegado](delegateuser.md) <br/> |Identifica un único delegado para agregar o actualizar en un buzón de correo.  <br/> |
+|[DelegateUser](delegateuser.md) <br/> |Identifica un único delegado para agregar o actualizar en un buzón.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AddDelegate](adddelegate.md) <br/> |Define una solicitud para agregar delegados a un buzón de correo. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).  <br/> |
-|[UpdateDelegate](updatedelegate.md) <br/> |Define una solicitud para actualizar los delegados en un buzón de correo. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).  <br/> |
+|[AddDelegate](adddelegate.md) <br/> |Define una solicitud para agregar delegados a un buzón. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).  <br/> |
+|[UpdateDelegate](updatedelegate.md) <br/> |Define una solicitud para actualizar delegados en un buzón. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación AddDelegate](adddelegate-operation.md) 
 - [Operación UpdateDelegate](updatedelegate-operation.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
-- [Adición de delegados](http://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Adición de delegados](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

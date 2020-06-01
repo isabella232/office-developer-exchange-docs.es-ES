@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 90841617-3b83-4124-8125-0293c9470f4a
-description: El elemento IsUndecidedApprovalRequest especifica si un mensaje de solicitud de aprobación ha sido actúa en.
-ms.openlocfilehash: 82b4624df5b2fe7ca212fdf76248e1ccfa3a081f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento IsUndecidedApprovalRequest especifica si se ha actuado en un mensaje de solicitud de aprobación.
+ms.openlocfilehash: 0949cf64b8583c4b3fa5a1700475f01cc480f69f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836127"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458176"
 ---
 # <a name="isundecidedapprovalrequest"></a>IsUndecidedApprovalRequest
 
-El elemento **IsUndecidedApprovalRequest** especifica si un mensaje de solicitud de aprobación ha sido actúa en. 
+El elemento **IsUndecidedApprovalRequest** especifica si se ha actuado en un mensaje de solicitud de aprobación. 
   
 ```XML
 <IsUndecidedApprovalRequest> true | false </IsUndecidedApprovalRequest>
@@ -26,15 +26,15 @@ El elemento **IsUndecidedApprovalRequest** especifica si un mensaje de solicitud
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **IsUndecidedApprovalRequest** es **true** si un mensaje de solicitud de aprobación no ha sido actúa en. Un valor de **false** indica que se haya decidido la solicitud de aprobación. 
+El valor de texto del elemento **IsUndecidedApprovalRequest** es **true** si no se ha actuado en un mensaje de solicitud de aprobación. Un valor de **false** indica que se ha decidido la solicitud de aprobación. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
@@ -66,5 +66,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [ApprovalRequestData](approvalrequestdata.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

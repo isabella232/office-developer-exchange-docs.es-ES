@@ -1,5 +1,5 @@
 ---
-title: Actualizaciones (carpeta)
+title: Updates (carpeta)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b047e3a4-a5ab-4098-b7a0-273bc809e702
-description: El elemento de actualizaciones contiene un conjunto de elementos que definen append, establecer y eliminar los cambios realizados en las propiedades de la carpeta.
-ms.openlocfilehash: 31f25b1e88fb8756f189a6d75259dd4fc198582f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento updates contiene un conjunto de elementos que definen los cambios en las propiedades de la carpeta append, Set y DELETE.
+ms.openlocfilehash: 3282171dfc188a9d4735a19a97e80fe0e2f79b89
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840867"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457182"
 ---
-# <a name="updates-folder"></a>Actualizaciones (carpeta)
+# <a name="updates-folder"></a>Updates (carpeta)
 
-El elemento de **actualizaciones** contiene un conjunto de elementos que definen append, establecer y eliminar los cambios realizados en las propiedades de la carpeta. 
+El elemento **updates** contiene un conjunto de elementos que definen los cambios en las propiedades de la carpeta append, Set y DELETE. 
   
 - [UpdateFolder](updatefolder.md)
   
@@ -29,7 +29,7 @@ El elemento de **actualizaciones** contiene un conjunto de elementos que definen
   
 - [FolderChange](folderchange.md)
   
-- [Actualizaciones (carpeta)](updates-folder.md)
+- [Updates (carpeta)](updates-folder.md)
   
 ```xml
 <Updates>
@@ -43,41 +43,41 @@ El elemento de **actualizaciones** contiene un conjunto de elementos que definen
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AppendToFolderField](appendtofolderfield.md) <br/> |Representa los datos que se anexará a una propiedad de la carpeta durante una [operación de UpdateFolder](updatefolder-operation.md).  <br/> |
-|[SetFolderField](setfolderfield.md) <br/> |Representa una actualización a una propiedad única en una carpeta en una [operación de UpdateFolder](updatefolder-operation.md).  <br/> |
-|[DeleteFolderField](deletefolderfield.md) <br/> |Representa una operación para eliminar una propiedad determinada de una carpeta durante una [operación de UpdateFolder](updatefolder-operation.md).  <br/> |
+|[AppendToFolderField](appendtofolderfield.md) <br/> |Representa los datos que se van a anexar a una propiedad de carpeta durante una [operación UpdateFolder](updatefolder-operation.md).  <br/> |
+|[SetFolderField](setfolderfield.md) <br/> |Representa una actualización de una propiedad única de una carpeta en una [operación UpdateFolder](updatefolder-operation.md).  <br/> |
+|[DeleteFolderField](deletefolderfield.md) <br/> |Representa una operación para eliminar una propiedad determinada de una carpeta durante una [operación UpdateFolder](updatefolder-operation.md).  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FolderChange](folderchange.md) <br/> |Representa una colección de los cambios que se debe realizar en una sola carpeta.  <br/> La siguiente es la expresión de XPath para este elemento:`/UpdateFolder/FolderChanges/FolderChange[i]` <br/> |
+|[FolderChange](folderchange.md) <br/> |Representa una colección de cambios que se van a realizar en una sola carpeta.  <br/> La siguiente es la expresión XPath a este elemento:`/UpdateFolder/FolderChanges/FolderChange[i]` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación UpdateFolder](updatefolder-operation.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

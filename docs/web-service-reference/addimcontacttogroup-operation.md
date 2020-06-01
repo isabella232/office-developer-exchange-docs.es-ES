@@ -7,46 +7,46 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 376acc42-2684-4596-aca1-82a4a10865c9
-description: Busque información sobre la EWS AddImContactToGroup operación.
-ms.openlocfilehash: 669d798b6cabc1cab1fc057a3e18c565467440f7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Buscar información sobre la operación de EWS de AddImContactToGroup.
+ms.openlocfilehash: a69ee0b355e78e1249383cab612a75bcda8d9e8a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763394"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458414"
 ---
 # <a name="addimcontacttogroup-operation"></a>Operación AddImContactToGroup
 
-Obtenga información acerca de la operación de EWS **AddImContactToGroup** . 
+Buscar información sobre la operación de EWS de **AddImContactToGroup** . 
   
-La operación de Exchange Web Services (EWS) **AddImContactToGroup** agrega un contacto de mensajería instantánea (mi) existente a un grupo. 
+La operación de servicios web Exchange de **AddImContactToGroup** (EWS) agrega un contacto de mensajería instantánea (mi) existente a un grupo. 
   
 Esta operación se introdujo en Exchange Server 2013.
   
-## <a name="using-the-addimcontacttogroup-operation"></a>Mediante la operación AddImContactToGroup
+## <a name="using-the-addimcontacttogroup-operation"></a>Uso de la operación AddImContactToGroup
 
-La operación de **AddImContactToGroup** sólo puede aceptar los contactos de mensajería instantánea. Si desea agregar un nuevo contacto de mensajería instantánea para el almacén de contactos unificados, use la operación [AddNewImContactToGroup](addnewimcontacttogroup-operation.md) . 
+La operación **AddImContactToGroup** solo puede aceptar contactos de mensajería instantánea. Si desea agregar un nuevo contacto de mensajería instantánea al almacén de contactos unificados, use la operación [AddNewImContactToGroup](addnewimcontacttogroup-operation.md) . 
   
-La operación de **AddImContactToGroup** puede utilizar los encabezados SOAP que se enumeran en la siguiente tabla. 
+La operación **AddImContactToGroup** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
   
-**La tabla 1. Encabezados SOAP de operación de AddImContactToGroup**
+**Tabla 1. Encabezados SOAP de operación AddImContactToGroup**
 
-|**Nombre de encabezado**|**Element**|**Descripción**|
+|**Nombre de encabezado**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario que está realizando la suplantación de la aplicación cliente. Este encabezado es aplicable a una solicitud.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural, como se define en RFC 3066, "Etiquetas para la identificación de idiomas," que se utilizará para acceder al buzón. Este encabezado es aplicable a una solicitud.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de la operación. Este encabezado es aplicable a una solicitud.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que ha respondido a la solicitud. Este encabezado es aplicable a una respuesta.  <br/> |
+|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente. Este encabezado se aplica a una solicitud.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural, tal y como se define en RFC 3066, "etiquetas para la identificación de idiomas", que se va a usar para obtener acceso al buzón. Este encabezado se aplica a una solicitud.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Este encabezado se aplica a una solicitud.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado se aplica a una respuesta.  <br/> |
    
-## <a name="addimcontacttogroup-operation-request-example-add-an-existing-im-contact-to-an-im-group"></a>Ejemplo de solicitud de operación de AddImContactToGroup: agregar póngase en contacto con un mensaje instantáneo existente a un grupo de mensajería instantánea
+## <a name="addimcontacttogroup-operation-request-example-add-an-existing-im-contact-to-an-im-group"></a>Ejemplo de solicitud de operación AddImContactToGroup: agregar un contacto de mi existente a un grupo de mensajería instantánea
 
-El siguiente ejemplo de una solicitud de operación **AddImContactToGroup** muestra cómo agregar un contacto de mensajería instantánea existente un grupo de mensajería instantánea. 
+El siguiente ejemplo de una solicitud de operación de **AddImContactToGroup** muestra cómo agregar un contacto de mensajería instantánea existente a un grupo de mensajería instantánea. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
       <t:MailboxCulture>en-US</t:MailboxCulture>
@@ -62,15 +62,15 @@ El siguiente ejemplo de una solicitud de operación **AddImContactToGroup** mues
 </soap:Envelope>
 ```
 
-La solicitud SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de la solicitud contiene los siguientes elementos:
   
 - [AddImContactToGroup](addimcontacttogroup.md)
     
-- [ID de contacto](contactid.md)
+- [Contacto](contactid.md)
     
 - [GroupId](groupid.md)
     
-## <a name="successful-addimcontacttogroup-operation-response"></a>Respuesta es correcta de operación AddImContactToGroup
+## <a name="successful-addimcontacttogroup-operation-response"></a>Respuesta de operación AddImContactToGroup correcta
 
 En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación **AddImContactToGroup** . 
   
@@ -83,30 +83,30 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
                            MajorBuildNumber="349" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <AddImContactToGroupResponse ResponseClass="Success" 
-                                   xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                   xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
       </AddImContactToGroupResponse>
    </s:Body>
 </s:Envelope>
 ```
 
-La respuesta SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de respuesta contiene los siguientes elementos:
   
 - [AddImContactToGroupResponse](addimcontacttogroupresponse.md)
     
 - [ResponseCode](responsecode.md)
     
-## <a name="addimcontacttogroup-operation-errorinvalidimcontactid-error-response"></a>Operación AddImContactToGroup respuesta de error de ErrorInvalidImContactId
+## <a name="addimcontacttogroup-operation-errorinvalidimcontactid-error-response"></a>AddImContactToGroup Operation ErrorInvalidImContactId error Response
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **AddImContactToGroup** . La siguiente respuesta de error se produce cuando se realiza un intento para agregar un contacto que no es un contacto de mensajería instantánea. 
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **AddImContactToGroup** . Se produce la siguiente respuesta de error cuando se realiza un intento de agregar un contacto que no es un contacto de mensajería instantánea. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -117,15 +117,15 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
                            MajorBuildNumber="349" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <AddImContactToGroupResponse ResponseClass="Error" 
-                                   xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                   xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <MessageText>The specified Im Contact Id is invalid.</MessageText>
          <ResponseCode>ErrorInvalidImContactId</ResponseCode>
          <DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -134,7 +134,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
 </s:Envelope>
 ```
 
-La respuesta de error SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de respuesta de error contiene los siguientes elementos:
   
 - [AddImContactToGroupResponse](addimcontacttogroupresponse.md)
     
@@ -156,6 +156,6 @@ La respuesta de error SOAP body contiene los siguientes elementos:
     
 - [Operación GetImItemList](getimitemlist-operation.md)
     
-- [Las personas y los contactos de EWS en Exchange](http://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
+- [Personas y contactos de EWS en Exchange](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     
 

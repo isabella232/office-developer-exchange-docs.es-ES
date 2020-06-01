@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5e57ce96-895d-40c5-a670-19f3bc610dbd
-description: El elemento EndNodeUrl especifica la dirección URL de la aplicación de correo en la tienda de Office.
-ms.openlocfilehash: 96569bed513de136dbe975879ba41e33d99d5693
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EndNodeUrl especifica la dirección URL de la aplicación de correo en la tienda Office.
+ms.openlocfilehash: 0ace98bd41c49a31d528b08d0d0f4011d783866c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764410"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458407"
 ---
 # <a name="endnodeurl"></a>EndNodeUrl
 
-El elemento **EndNodeUrl** especifica la dirección URL de la aplicación de correo en la tienda de Office. 
+El elemento **EndNodeUrl** especifica la dirección URL de la aplicación de correo en la tienda Office. 
   
 ```XML
 <EndNodeUrl/>
@@ -26,15 +26,15 @@ El elemento **EndNodeUrl** especifica la dirección URL de la aplicación de cor
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **EndNodeUrl** es la dirección URL para la aplicación de correo en la tienda de Office. 
+El valor de texto del elemento **EndNodeUrl** es la dirección URL de la aplicación de correo en la tienda Office. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,10 +54,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> | http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> | https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |No disponible  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |No aplicable  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -66,5 +66,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Metadatos](metadata-ex15websvcsotherref.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

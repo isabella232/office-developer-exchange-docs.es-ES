@@ -1,5 +1,5 @@
 ---
-title: IsUMEnabledResponse (servicio web de mensajería unificada)
+title: IsUMEnabledResponse (servicio Web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,19 +10,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: ecb47dd5-c888-47ab-a253-fc49765f5c72
-description: El elemento IsUMEnabledResponse define una respuesta a una solicitud de IsUMEnabled operación (servicio web de mensajería unificada).
-ms.openlocfilehash: b37d2424d701130e4c9ca9e4d1a3a2f8cee60d5f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento IsUMEnabledResponse define una respuesta a una solicitud de IsUMEnabled (servicio Web de mensajería unificada).
+ms.openlocfilehash: 5b9495faf93ee4b4cf7937e413ae560b60b8b402
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836128"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458190"
 ---
-# <a name="isumenabledresponse-um-web-service"></a>IsUMEnabledResponse (servicio web de mensajería unificada)
+# <a name="isumenabledresponse-um-web-service"></a>IsUMEnabledResponse (servicio Web de mensajería unificada)
 
-El elemento **IsUMEnabledResponse** define una respuesta a una solicitud de [operación IsUMEnabled (servicio web de mensajería unificada)](isumenabled-operation-um-web-service.md) . 
+El elemento **IsUMEnabledResponse** define una respuesta a una solicitud de [IsUMEnabled (servicio Web de mensajería unificada)](isumenabled-operation-um-web-service.md) . 
   
-[IsUMEnabledResponse (servicio web de mensajería unificada)](isumenabledresponse-um-web-service.md)
+[IsUMEnabledResponse (servicio Web de mensajería unificada)](isumenabledresponse-um-web-service.md)
   
 ```xml
 <IsUMEnabledResponse/>
@@ -31,40 +31,40 @@ El elemento **IsUMEnabledResponse** define una respuesta a una solicitud de [ope
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de tipo Boolean de texto. Los valores posibles son:
+Se requiere un valor de texto booleano. Los valores posibles son los siguientes:
   
 - Verdadero
     
-- False
+- Falso
     
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Operación IsUMEnabled (servicio web de mensajería unificada)](isumenabled-operation-um-web-service.md)
+[Operación IsUMEnabled (servicio Web de mensajería unificada)](isumenabled-operation-um-web-service.md)
 

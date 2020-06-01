@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: bd0e82da-7391-4ba3-acb4-31d3517d51d0
-description: El elemento ExternalMemberCount representa el recuento de miembros externos en un grupo.
-ms.openlocfilehash: 8848a455f7562c893a0ef4bb7c92c273699ce31c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ExternalMemberCount representa el número de miembros externos de un grupo.
+ms.openlocfilehash: a01c28a009328e163e151bbf540e8298d27d998b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764567"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456923"
 ---
 # <a name="externalmembercount"></a>ExternalMemberCount
 
-El elemento **ExternalMemberCount** representa el recuento de miembros externos en un grupo. 
+El elemento **ExternalMemberCount** representa el número de miembros externos de un grupo. 
   
 ```XML
 <ExternalMemberCount/>
@@ -30,25 +30,25 @@ El elemento **ExternalMemberCount** representa el recuento de miembros externos 
  **int**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Sugerencias de correo electrónico](mailtips.md) <br/> |Representa los valores de distintos tipos de sugerencias de correo.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto es un entero que representa el número de miembros externos en un grupo.
+El valor de texto es un entero que representa el número de miembros externos de un grupo.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -58,14 +58,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7a54992d-03a6-4afc-a2e4-dcdc9ce54194
-description: El elemento GetInboxRules define una solicitud para obtener las reglas de bandeja de entrada en un buzón de correo en el almacén del servidor.
-ms.openlocfilehash: 3c3ee682dd009e5c4bec940637a7dfa3c11f8402
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetInboxRules define una solicitud para obtener las reglas de la bandeja de entrada en un buzón del almacén del servidor.
+ms.openlocfilehash: 890592fd3f87fc5592a618a2febf28e4daf0dbe4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764876"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457931"
 ---
 # <a name="getinboxrules"></a>GetInboxRules
 
-El elemento **GetInboxRules** define una solicitud para obtener las reglas de bandeja de entrada en un buzón de correo en el almacén del servidor. 
+El elemento **GetInboxRules** define una solicitud para obtener las reglas de la bandeja de entrada en un buzón del almacén del servidor. 
   
 ```XML
 <GetInboxRules>
@@ -32,17 +32,17 @@ El elemento **GetInboxRules** define una solicitud para obtener las reglas de ba
  **GetInboxRulesRequestType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[MailboxSmtpAddress](mailboxsmtpaddress.md) <br/> |Representa la dirección SMTP del usuario cuyas reglas de bandeja de entrada que se va a recuperar.  <br/> |
+|[MailboxSmtpAddress](mailboxsmtpaddress.md) <br/> |Representa la dirección SMTP del usuario cuyas reglas de la bandeja de entrada se van a recuperar.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -56,9 +56,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también

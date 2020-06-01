@@ -11,39 +11,39 @@ api_name:
 api_type:
 - schema
 ms.assetid: fe136881-a804-456a-8552-8a1bea5eb9c8
-description: La operación CreateItem se utiliza para responder a las convocatorias de reunión.
-ms.openlocfilehash: a8aea688e46376906554952ce8ec45022cf613e9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación CreateItem se usa para responder a las convocatorias de reunión.
+ms.openlocfilehash: f9e6bd1742e6a30d08736ea67c0ff80b7a18e88a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763953"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457112"
 ---
 # <a name="createitem-operation-meeting-request"></a>Operación CreateItem (convocatoria de reunión)
 
-La operación CreateItem se utiliza para responder a las convocatorias de reunión.
+La operación CreateItem se usa para responder a las convocatorias de reunión.
   
 ## <a name="remarks"></a>Comentarios
 
-La operación CreateItem proporciona tres opciones para responder a una convocatoria de reunión: Aceptar, Aceptar provisionalmente o rechazar. 
+La operación CreateItem proporciona tres opciones para responder a una convocatoria de reunión: aceptar, aceptar provisionalmente o rechazar. 
   
-## <a name="accept-meeting-request-example"></a>Acepte el ejemplo de solicitud de reunión
+## <a name="accept-meeting-request-example"></a>Ejemplo de convocatoria de reunión aceptada
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra cómo aceptar una reunión de solicitud de invitación.
+En el siguiente ejemplo, se muestra cómo aceptar una invitación a convocatoria de reunión.
   
 ### <a name="code"></a>Código
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
+    <CreateItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
                 MessageDisposition="SendAndSaveCopy">
       <Items>
-        <AcceptItem xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <AcceptItem xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <ReferenceItemId Id="AAAlAFVzZ"
                            ChangeKey="CwAAABYAA"/>
         </AcceptItem>
@@ -55,13 +55,13 @@ En el ejemplo siguiente se muestra cómo aceptar una reunión de solicitud de in
 
 ### <a name="comments"></a>Comentarios
 
-Para aceptar provisionalmente o rechazar la convocatoria de reunión, use los elementos [TentativelyAcceptItem](tentativelyacceptitem.md) o [DeclineItem](declineitem.md) en lugar del elemento [AcceptItem](acceptitem.md) . 
+Para aceptar provisionalmente o para rechazar la convocatoria de reunión, use los elementos [TentativelyAcceptItem](tentativelyacceptitem.md) o [DeclineItem](declineitem.md) en vez del elemento [AcceptItem](acceptitem.md) . 
   
-El identificador de elemento y la clave de cambio se han abreviado para conservar la legibilidad.
+El identificador de elemento y la clave de cambio se han abreviado para preservar la legibilidad.
   
-### <a name="accepting-meeting-request-elements"></a>Aceptación de los elementos de solicitud de reunión
+### <a name="accepting-meeting-request-elements"></a>Aceptar elementos de convocatoria de reunión
 
-En la solicitud se usan los siguientes elementos:
+Los siguientes elementos se usan en la solicitud:
   
 - [CreateItem](createitem.md)
     
@@ -71,7 +71,7 @@ En la solicitud se usan los siguientes elementos:
     
 - [ReferenceItemId](referenceitemid.md)
     
-## <a name="successful-accept-meeting-response-example"></a>Ejemplo de respuesta correcta de aceptar reunión
+## <a name="successful-accept-meeting-response-example"></a>Ejemplo de respuesta de aceptación de reunión correcta
 
 ### <a name="description"></a>Descripción
 
@@ -86,12 +86,12 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateI
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -103,7 +103,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateI
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elementos de respuesta correcta
+### <a name="successful-response-elements"></a>Elementos Response correcto
 
 En la respuesta se usan los siguientes elementos:
   
@@ -119,11 +119,11 @@ En la respuesta se usan los siguientes elementos:
     
 - [Items](items.md)
     
-## <a name="accept-meeting-error-response-example"></a>Acepte el ejemplo de respuesta de Error de la reunión
+## <a name="accept-meeting-error-response-example"></a>Ejemplo de respuesta de error de aceptación de reunión
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta de error a solicitud CreateItem. El error se debe a un intento de aceptar una convocatoria de reunión que no se encuentra en el almacén de Exchange.
+El ejemplo siguiente muestra una respuesta de error a la solicitud CreateItem. El error se debe a un intento de aceptar una convocatoria de reunión que no se encuentra en el almacén de Exchange.
   
 ### <a name="code"></a>Código
 
@@ -134,12 +134,12 @@ En el ejemplo siguiente se muestra una respuesta de error a solicitud CreateItem
   xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Error">
           <m:MessageText>The specified object was not found in the store.</m:MessageText>
@@ -155,7 +155,7 @@ En el ejemplo siguiente se muestra una respuesta de error a solicitud CreateItem
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-En la respuesta de error, se usan los siguientes elementos:
+Los siguientes elementos se usan en la respuesta de error:
   
 - [ServerVersionInfo](serverversioninfo.md)
     

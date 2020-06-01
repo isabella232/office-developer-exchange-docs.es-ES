@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: affd192e-8914-473f-9098-d9bdf898de2c
-description: El elemento de buzón de correo representa al usuario de buzón de correo para un SetUserOofSettings o solicitar GetUserOofSettings.
-ms.openlocfilehash: 2e901ae0df56542f56f247184254294735018468
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Mailbox representa al usuario del buzón de correo para una solicitud SetUserOofSettings o GetUserOofSettings.
+ms.openlocfilehash: 1bda6e8b90551b86b4e1c2711ac25693a65e5410
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836254"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458078"
 ---
 # <a name="mailbox-availability"></a>Buzón de correo (disponibilidad)
 
-El elemento de **buzón de correo** representa al usuario de buzón de correo para un SetUserOofSettings o solicitar GetUserOofSettings. 
+El elemento **Mailbox** representa al usuario del buzón de correo para una solicitud SetUserOofSettings o GetUserOofSettings. 
   
 ```xml
 <Mailbox>
@@ -35,41 +35,41 @@ El elemento de **buzón de correo** representa al usuario de buzón de correo pa
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Nombre (EmailAddress)](name-emailaddress.md) <br/> |Representa el nombre para mostrar del usuario de buzón de correo. Este elemento es opcional en el SetUserOofSettingsRequest. El GetUserOofSettingsRequest devolverá este elemento.  <br/> |
-|[Dirección (cadena)](address-string.md) <br/> |Representa la dirección de correo electrónico del usuario de buzón de correo. Se requiere este elemento.  <br/> |
-|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Representa el protocolo de enrutamiento para el mensaje. Este elemento es opcional en el SetUserOofSettingsRequest. El GetUserOofSettingsRequest devolverá este elemento.  <br/> |
+|[Nombre (EmailAddress)](name-emailaddress.md) <br/> |Representa el nombre para mostrar del usuario del buzón. Este elemento es opcional en SetUserOofSettingsRequest. GetUserOofSettingsRequest devolverá este elemento.  <br/> |
+|[Address (cadena)](address-string.md) <br/> |Representa la dirección de correo electrónico del usuario del buzón. Se requiere este elemento.  <br/> |
+|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Representa el protocolo de enrutamiento para el mensaje. Este elemento es opcional en SetUserOofSettingsRequest. GetUserOofSettingsRequest devolverá este elemento.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetUserOofSettingsRequest](getuseroofsettingsrequest.md) <br/> |Se usa para obtener la configuración de fuera de oficina (OOF) y los mensajes de un usuario de buzón de correo.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserOofSettingsRequest` <br/> |
-|[SetUserOofSettingsRequest](setuseroofsettingsrequest.md) <br/> |Se usa para establecer la configuración de fuera de la oficina y los mensajes de un usuario de buzón de correo.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/SetUserOofSettingsRequest` <br/> |
+|[GetUserOofSettingsRequest](getuseroofsettingsrequest.md) <br/> |Se usa para obtener los mensajes y la configuración de fuera de la oficina (OOF) del usuario de un buzón.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserOofSettingsRequest` <br/> |
+|[SetUserOofSettingsRequest](setuseroofsettingsrequest.md) <br/> |Se usa para establecer los mensajes y la configuración OOF de un usuario de buzón.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/SetUserOofSettingsRequest` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-La dirección de correo electrónico se usa para identificar la carpeta de calendario que contiene la configuración de fuera de la oficina. 
+La dirección de correo electrónico se usa para identificar la carpeta de calendario que contiene la configuración de OOF. 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

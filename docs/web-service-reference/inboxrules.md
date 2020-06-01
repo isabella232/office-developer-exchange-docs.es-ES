@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7bb9896c-bd12-49ae-842a-a10b5f9a2ef6
-description: El elemento InboxRules representa una matriz de las reglas en el buzón del usuario.
-ms.openlocfilehash: 47fcad5dde06f3af9fbae7e70adbfd8b225081c2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento InboxRules representa una matriz de reglas en el buzón de correo del usuario.
+ms.openlocfilehash: a3107c3c317a912d0bd3e60d03da4168f2f3a0a9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835899"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458274"
 ---
 # <a name="inboxrules"></a>InboxRules
 
-El elemento **InboxRules** representa una matriz de las reglas en el buzón del usuario. 
+El elemento **InboxRules** representa una matriz de reglas en el buzón de correo del usuario. 
   
 [GetInboxRulesResponse](getinboxrulesresponse.md)
   
@@ -36,23 +36,23 @@ El elemento **InboxRules** representa una matriz de las reglas en el buzón del 
  **ArrayOfRulesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Regla (RuleType)](rule-ruletype.md) <br/> |Contiene una sola regla y representa una regla en el buzón del usuario.  <br/> |
+|[Regla (RuleType)](rule-ruletype.md) <br/> |Contiene una sola regla y representa una regla en el buzón de correo del usuario.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetInboxRulesResponse](getinboxrulesresponse.md) <br/> |Define una respuesta a una solicitud de [operación GetInboxRules](getinboxrules-operation.md) .  <br/> |
+|[GetInboxRulesResponse](getinboxrulesresponse.md) <br/> |Define una respuesta a una solicitud de [operación de GetInboxRules](getinboxrules-operation.md) .  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -66,9 +66,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
@@ -80,5 +80,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación de GetInboxRules](getinboxrules-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

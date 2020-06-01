@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e7bd8ae2-2643-411e-ae08-358bac445800
-description: El elemento IsException indica si se cambia una instancia de un elemento periódico del calendario desde el maestro.
-ms.openlocfilehash: bb884110fd3642bebbc03504aef369f9e0412714
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento IsException indica si una instancia de un elemento de calendario periódico se cambia desde el patrón.
+ms.openlocfilehash: f2e45e0f1010449d4a494f5e15ecd0b22dc598e4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836009"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457588"
 ---
 # <a name="isexception"></a>IsException
 
-El elemento **IsException** indica si se cambia una instancia de un elemento periódico del calendario desde el maestro. 
+El elemento **IsException** indica si una instancia de un elemento de calendario periódico se cambia desde el patrón. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -46,38 +46,38 @@ El elemento **IsException** indica si se cambia una instancia de un elemento per
  **boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarEventDetails](calendareventdetails.md) <br/> |Proporciona información adicional acerca de un evento de calendario.  <br/> La siguiente es la expresión de XPath 2.0 para este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
+|[CalendarEventDetails](calendareventdetails.md) <br/> |Proporciona información adicional acerca de un evento de calendario.  <br/> La siguiente es la expresión XPath 2,0 a este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Si este elemento se devuelve en la respuesta, es necesario un valor de texto. Este elemento es necesario si se usa el elemento [CalendarEventDetails](calendareventdetails.md) . 
+Es necesario un valor de texto si este elemento se devuelve en la respuesta. Este elemento es obligatorio si se usa el elemento [CalendarEventDetails](calendareventdetails.md) . 
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -88,5 +88,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

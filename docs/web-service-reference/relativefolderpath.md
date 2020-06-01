@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 54e3ba52-08a6-4d48-8a44-6fd5fdbffb25
-description: El elemento RelativeFolderPath contiene una matriz de las carpetas que indique la ruta de acceso relativa de la ruta de acceso de la carpeta que se creará.
-ms.openlocfilehash: f568d282e47a41c0aaf6d70ef383e5ef3e2b54bf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RelativeFolderPath contiene una matriz de carpetas que indican la ruta de acceso de la carpeta relativa a la ruta de acceso a la carpeta que se va a crear.
+ms.openlocfilehash: 8a0fc0020943afdbe6cd4c79d51d61337f8dd329
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837051"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457161"
 ---
 # <a name="relativefolderpath"></a>RelativeFolderPath
 
-El elemento **RelativeFolderPath** contiene una matriz de las carpetas que indique la ruta de acceso relativa de la ruta de acceso de la carpeta que se creará. 
+El elemento **RelativeFolderPath** contiene una matriz de carpetas que indican la ruta de acceso de la carpeta relativa a la ruta de acceso a la carpeta que se va a crear. 
   
 ```XML
 <RelativeFolderPath>
@@ -32,15 +32,15 @@ El elemento **RelativeFolderPath** contiene una matriz de las carpetas que indiq
  **NonEmptyArrayOfFoldersType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Carpeta](folder.md) | [CalendarFolder](calendarfolder.md) | [ContactsFolder](contactsfolder.md) | [SearchFolder](searchfolder.md) | [TasksFolder](tasksfolder.md)
+[Carpeta](folder.md)  |  [Hubiera](calendarfolder.md)  |  [Hubiera](contactsfolder.md)  |  [SearchFolder](searchfolder.md)  |  [Hubiera](tasksfolder.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -56,9 +56,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

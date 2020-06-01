@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 011cb38b-da3c-4b1b-8836-a6b212b511f6
-description: El elemento GetUserOofSettingsResponse contiene el mensaje de respuesta y la configuración de fuera de oficina (OOF) para un usuario.
-ms.openlocfilehash: dc63b6d54471973ce5961a5a5ad6a23f6521fc0e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetUserOofSettingsResponse contiene el mensaje de respuesta y la configuración de fuera de la oficina (OOF) de un usuario.
+ms.openlocfilehash: f7f28c67fd36630ffb5294ab35c0fef2f467ba22
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835693"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457819"
 ---
 # <a name="getuseroofsettingsresponse"></a>GetUserOofSettingsResponse
 
-El elemento **GetUserOofSettingsResponse** contiene el mensaje de respuesta y la configuración de fuera de oficina (OOF) para un usuario. 
+El elemento **GetUserOofSettingsResponse** contiene el mensaje de respuesta y la configuración de fuera de la oficina (OOF) de un usuario. 
   
 ```xml
 <GetUserOofSettingsResponse>
@@ -34,19 +34,19 @@ El elemento **GetUserOofSettingsResponse** contiene el mensaje de respuesta y la
  **GetUserOofSettingsResponse**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseMessage](responsemessage.md) <br/> |Proporciona información descriptiva sobre el estado de respuesta.  <br/> |
-|[OofSettings](oofsettings.md) <br/> |Contiene la configuración de fuera de la oficina.  <br/> |
-|[AllowExternalOof](allowexternaloof.md) <br/> |Contiene un valor que identifica a la que se envían los mensajes externos de fuera de la oficina.  <br/> |
+|[ResponseMessage](responsemessage.md) <br/> |Proporciona información descriptiva sobre el estado de la respuesta.  <br/> |
+|[OofSettings](oofsettings.md) <br/> |Contiene la configuración de OOF.  <br/> |
+|[AllowExternalOof](allowexternaloof.md) <br/> |Contiene un valor que identifica a quién se envían los mensajes externos de OOF.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,16 +54,16 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

@@ -1,5 +1,5 @@
 ---
-title: id.
+title: Id.
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8caf922f-56bd-466a-a68f-d6cb236f2eec
-description: El elemento de identificador representa el identificador de entrada del elemento de calendario.
-ms.openlocfilehash: bdfadcbe074135aca34a408e69ed4a69974eb5d5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ID representa el identificador de entrada del elemento de calendario.
+ms.openlocfilehash: 429413bbfb0206effc3ea97eb11527449c67211c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835855"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456489"
 ---
-# <a name="id"></a>id.
+# <a name="id"></a>Id.
 
-El elemento de **identificador** representa el identificador de entrada del elemento de calendario. 
+El elemento **ID** representa el identificador de entrada del elemento de calendario. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -37,7 +37,7 @@ El elemento de **identificador** representa el identificador de entrada del elem
   
 [CalendarEventDetails](calendareventdetails.md)
   
-[ID](id.md)
+[Id.](id.md)
   
 ```xml
 <ID>...</ID>
@@ -46,38 +46,38 @@ El elemento de **identificador** representa el identificador de entrada del elem
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarEventDetails](calendareventdetails.md) <br/> |Proporciona información adicional para un evento del calendario.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
+|[CalendarEventDetails](calendareventdetails.md) <br/> |Proporciona información adicional para un evento de calendario.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Si este elemento se devuelve en la respuesta, es necesario un valor de texto. Este elemento es necesario si se usa el elemento [CalendarEventDetails](calendareventdetails.md) . 
+Es necesario un valor de texto si este elemento se devuelve en la respuesta. Este elemento es obligatorio si se usa el elemento [CalendarEventDetails](calendareventdetails.md) . 
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -88,5 +88,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

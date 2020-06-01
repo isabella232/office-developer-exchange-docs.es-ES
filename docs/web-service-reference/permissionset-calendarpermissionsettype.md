@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 75f20033-85eb-4627-b4f8-be85e4889e96
-description: El elemento PermissionSet contiene todos los permisos que están configurados para una carpeta de calendario.
-ms.openlocfilehash: b2e642fd2ee8ded4d0d4c67509a5587f7b1efa8a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PermissionSet contiene todos los permisos que se configuran para una carpeta de calendario.
+ms.openlocfilehash: 9564608397ac8a5ab0ddd4508eacd8cad665d76e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836728"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458036"
 ---
 # <a name="permissionset-calendarpermissionsettype"></a>PermissionSet (CalendarPermissionSetType)
 
-El elemento **PermissionSet** contiene todos los permisos que están configurados para una carpeta de calendario. 
+El elemento **PermissionSet** contiene todos los permisos que se configuran para una carpeta de calendario. 
   
 ```XML
 <PermissionSet>
@@ -33,24 +33,24 @@ El elemento **PermissionSet** contiene todos los permisos que están configurado
  **CalendarPermissonSetType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarPermissions](calendarpermissions.md) <br/> |Contiene una matriz de permisos para una carpeta del calendario. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
-|[UnknownEntries](unknownentries.md) <br/> |Contiene una matriz de las entradas desconocidas que no se puede resolver con el servicio de directorio de Active Directory. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
+|[CalendarPermissions](calendarpermissions.md) <br/> |Contiene una matriz de permisos de calendario para una carpeta. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
+|[UnknownEntries](unknownentries.md) <br/> |Contiene una matriz de entradas desconocidas que no se pueden resolver contra el servicio de directorio de Active Directory. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarFolder](calendarfolder.md) <br/> |Representa una carpeta que principalmente contiene los elementos del calendario.  <br/> |
+|[Hubiera](calendarfolder.md) <br/> |Representa una carpeta que contiene principalmente elementos de calendario.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -60,23 +60,23 @@ Este elemento se introdujo en Exchange Server 2007 Service Pack 1 (SP1).
   
 ### <a name="version-differences"></a>Diferencias de versión
 
-Para las aplicaciones de ese destino Exchange Online, Exchange Online como parte de Office 365 o una versión local de Exchange a partir de Exchange 2013, los permisos de carpetas no se devuelven cuando el elemento [BaseShape](baseshape.md) tiene un valor de **AllProperties** en la solicitud de operación [GetFolder](getfolder-operation.md) . Para recuperar los permisos de carpeta, agregue el elemento [PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) al elemento [AdditionalProperties](additionalproperties.md) en la solicitud de **GetFolder** . 
+Para las aplicaciones dirigidas a Exchange Online, Exchange online como parte de Office 365 o a una versión local de Exchange a partir de Exchange 2013, no se devuelven permisos de carpeta cuando el elemento [BaseShape](baseshape.md) tiene un valor de **AllProperties** en la solicitud de operación [GetFolder](getfolder-operation.md) . Para recuperar los permisos de carpeta, agregue el elemento [PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) al elemento [AdditionalProperties](additionalproperties.md) en la solicitud **GetFolder** . 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Establecimiento de permisos de nivel de carpeta](http://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+[Configuración de permisos de nivel de carpeta](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 

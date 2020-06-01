@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 502b2841-103d-4340-97d5-51a1db813fb2
-description: El elemento EmptyFolder define una solicitud para vaciar una carpeta en un buzón en el almacén de Exchange. De forma opcional, también se pueden eliminar las subcarpetas cuando se vacía la carpeta.
-ms.openlocfilehash: c72e11cea29e2e55c9c29754eec60e73bd1e4d9c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EmptyFolder define una solicitud para vaciar una carpeta de un buzón de correo en el almacén de Exchange. Opcionalmente, también se pueden eliminar subcarpetas cuando se vacía la carpeta.
+ms.openlocfilehash: a42e4e3f25741a96ee65fe6f87fc3236b68f4dc9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764385"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457280"
 ---
 # <a name="emptyfolder"></a>EmptyFolder
 
-El elemento **EmptyFolder** define una solicitud para vaciar una carpeta en un buzón en el almacén de Exchange. De forma opcional, también se pueden eliminar las subcarpetas cuando se vacía la carpeta. 
+El elemento **EmptyFolder** define una solicitud para vaciar una carpeta de un buzón de correo en el almacén de Exchange. Opcionalmente, también se pueden eliminar subcarpetas cuando se vacía la carpeta. 
   
 ```XML
 <EmptyFolder>
@@ -28,32 +28,32 @@ El elemento **EmptyFolder** define una solicitud para vaciar una carpeta en un b
  **EmptyFolderType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**DeleteType** <br/> |Especifica cómo se vacía una carpeta. Este atributo es necesario.  <br/> |
-|**DeleteSubFolders** <br/> |Especifica si las subcarpetas se va a eliminar. Este atributo es necesario.  <br/> |
+|**DeleteType** <br/> |Especifica cómo se vacía una carpeta. Este atributo es obligatorio.  <br/> |
+|**DeleteSubFolders** <br/> |Especifica si se van a eliminar las subcarpetas. Este atributo es obligatorio.  <br/> |
    
 #### <a name="deletetype-attribute"></a>Atributo DeleteType
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|HardDelete  <br/> |A los mensajes y carpetas se quitan definitivamente desde el almacén.  <br/> |
-|SoftDelete  <br/> |A los mensajes y carpetas se mueven al volcado de archivos si el volcado de archivos está habilitado.  <br/> |
-|MoveToDeletedItems  <br/> |A los mensajes y carpetas se mueven a la carpeta Elementos eliminados.  <br/> |
+|HardDelete  <br/> |Los mensajes y las carpetas se eliminan permanentemente de la tienda.  <br/> |
+|SoftDelete  <br/> |Si el contenedor está habilitado, los mensajes y las carpetas se mueven al contenedor.  <br/> |
+|MoveToDeletedItems  <br/> |Los mensajes y las carpetas se mueven a la carpeta elementos eliminados.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FolderIds](folderids.md) <br/> |Contiene una matriz de identificadores de carpeta que se usa para identificar las carpetas para eliminar.  <br/> |
+|[FolderIds](folderids.md) <br/> |Contiene una matriz de identificadores de carpeta que se usan para identificar las carpetas que se van a eliminar.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
@@ -67,10 +67,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

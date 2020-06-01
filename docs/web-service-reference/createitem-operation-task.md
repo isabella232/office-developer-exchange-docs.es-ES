@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 12c5da4d-290c-4a8a-a965-0bf5d55c7978
-description: La operación CreateItem crea los elementos de tarea en el almacén de Exchange.
-ms.openlocfilehash: 5a5203202071ae9391faa9348902424317ee96d1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación CreateItem crea elementos de tarea en el almacén de Exchange.
+ms.openlocfilehash: 502108843193e7ed8377b0fade9e106ef3d1976c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763954"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457105"
 ---
 # <a name="createitem-operation-task"></a>Operación CreateItem (tarea)
 
-La operación CreateItem crea los elementos de tarea en el almacén de Exchange.
+La operación CreateItem crea elementos de tarea en el almacén de Exchange.
   
-## <a name="task-createitem-request"></a>Solicitud de tarea CreateItem
+## <a name="task-createitem-request"></a>Solicitud CreateItem de tarea
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud CreateItem muestra cómo crear un elemento de tarea en un buzón de correo.
+El siguiente ejemplo de una solicitud CreateItem muestra cómo crear un elemento de tarea en un buzón.
   
 ### <a name="code"></a>Código
 
@@ -36,10 +36,10 @@ El siguiente ejemplo de una solicitud CreateItem muestra cómo crear un elemento
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+    <CreateItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                 MessageDisposition="SaveOnly">
       <Items>
         <t:Task>
@@ -55,31 +55,31 @@ El siguiente ejemplo de una solicitud CreateItem muestra cómo crear un elemento
 
 ### <a name="comments"></a>Comentarios
 
-Las solicitudes para las tareas repetitivas se modificarán cuando se reciben por el equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente. Se producen los siguientes cambios:
+Las solicitudes de tareas periódicas se modifican cuando las recibe el equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes. Se producen los siguientes cambios:
   
-- Se guarda sólo la fecha para la propiedad [StartDate (periodicidad)](startdate-recurrence.md) del intervalo de periodicidad de la tarea. El elemento de tiempo se trunca. 
+- Solo se guarda la fecha de la propiedad [startDate (periodicidad)](startdate-recurrence.md) del intervalo de periodicidad de la tarea. La parte Time se trunca. 
     
-- Se pueden ajustar la propiedad [StartDate (periodicidad)](startdate-recurrence.md) , según el patrón de periodicidad. Por ejemplo, si se especifica el patrón de periodicidad como todos los lunes y StartDate está establecida en 26 de octubre de 2006, que es un jueves, StartDate se ajusta a 30 de octubre de 2006, que es el próximo lunes. 
+- La propiedad [startDate (recurrence)](startdate-recurrence.md) se puede ajustar según el patrón de periodicidad. Por ejemplo, si el patrón de periodicidad se especifica como cada lunes y el StartDate está establecido en el 26 de octubre de 2006, que es un jueves, StartDate se ajusta al 30 de octubre de 2006, que es el próximo lunes. 
     
-- Si se establece la propiedad [StartDate](startdate.md) de la tarea, se actualiza para que coincida con la [StartDate (periodicidad)](startdate-recurrence.md) del intervalo de periodicidad. La propiedad [DueDate](duedate.md) de la tarea también se actualiza según el nuevo [StartDate](startdate.md).
+- Si se establece la propiedad [startDate](startdate.md) de la tarea, ésta se actualiza para coincidir con la [startDate (periodicidad)](startdate-recurrence.md) del intervalo de periodicidad. La propiedad [DueDate](duedate.md) de la tarea también se actualiza en función del nuevo [startDate](startdate.md).
     
-- Si no está establecido el [StartDate](startdate.md) , sólo la propiedad [DueDate](duedate.md) se actualiza para que coincida con la [StartDate (periodicidad)](startdate-recurrence.md) del intervalo de periodicidad. 
+- Si no se ha establecido [startDate](startdate.md) , sólo la propiedad [DueDate](duedate.md) se actualiza para coincidir con la [startDate (periodicidad)](startdate-recurrence.md) del intervalo de periodicidad. 
     
-La siguiente tabla muestran los cambios que realiza el servidor de acceso de cliente a una tarea periódica que tiene un Task.Recurrence.Pattern de todos los lunes.
+En la siguiente tabla se muestran los cambios que realiza el servidor de acceso de cliente en una tarea recurrente que tiene una tarea. recurrence. Pattern de cada lunes.
   
-**Cambios realizados en una tarea periódica**
+**Cambios en una tarea recurrente**
 
 |**Propiedad**|**Valor original**|**Valor actualizado**|
 |:-----|:-----|:-----|
-|Task.StartDate  <br/> |1 de enero de 2006  <br/> |30 de octubre de 2006  <br/> |
-|Task.DueDate  <br/> |3 de enero de 2006  <br/> |1 de noviembre de 2006  <br/> |
-|Task.Recurrence.Range.StartDate  <br/> |26 de octubre de 2006  <br/> |30 de octubre de 2006  <br/> |
+|Task. StartDate  <br/> |1 de enero de 2006  <br/> |30 de octubre de 2006  <br/> |
+|Task. DueDate  <br/> |3 de enero de 2006  <br/> |1 de noviembre de 2006  <br/> |
+|Task. recurrence. Range. StartDate  <br/> |26 de octubre de 2006  <br/> |30 de octubre de 2006  <br/> |
    
 De forma predeterminada, si no se especifica una carpeta de destino, se crean elementos de tarea en la carpeta tareas.
   
 ### <a name="request-elements"></a>Elementos de solicitud
 
-En la solicitud se usan los siguientes elementos:
+Los siguientes elementos se usan en la solicitud:
   
 - [CreateItem](createitem.md)
     
@@ -87,13 +87,13 @@ En la solicitud se usan los siguientes elementos:
     
 - [Tarea](task.md)
     
-- [Subject](subject.md)
+- [Asunto](subject.md)
     
 - [DueDate](duedate.md)
     
-- [Status](status.md)
+- [Estado](status.md)
     
-## <a name="successful-task-createitem-response"></a>Respuesta de CreateItem correcta de la tarea
+## <a name="successful-task-createitem-response"></a>Respuesta de tarea CreateItem correcta
 
 ### <a name="description"></a>Descripción
 
@@ -108,12 +108,12 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateI
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="653" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -129,7 +129,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateI
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elementos de respuesta correcta
+### <a name="successful-response-elements"></a>Elementos Response correcto
 
 En la respuesta se incluyen los siguientes elementos:
   
@@ -156,9 +156,9 @@ En la respuesta se incluyen los siguientes elementos:
 [Operación CreateItem](createitem-operation.md)
 
 
-[Creación de tareas](http://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
+[Creación de tareas](https://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
   
-[Actualización de tareas](http://msdn.microsoft.com/library/0a1bf360-d40c-4a99-929b-4c73a14394d5%28Office.15%29.aspx)
+[Actualización de tareas](https://msdn.microsoft.com/library/0a1bf360-d40c-4a99-929b-4c73a14394d5%28Office.15%29.aspx)
   
-[Eliminación de tareas](http://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
+[Eliminación de tareas](https://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
 

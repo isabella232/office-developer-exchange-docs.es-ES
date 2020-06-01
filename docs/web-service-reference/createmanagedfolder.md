@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cfdf01a9-0191-47c7-a7ad-5254d8bdee4a
-description: El elemento CreateManagedFolder define una solicitud para agregar carpetas personalizadas administradas a un buzón de correo.
-ms.openlocfilehash: 4acc931de2a8665db092c3b309d914f0a3c67558
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento CreateManagedFolder define una solicitud para agregar carpetas administradas personalizadas a un buzón de correo.
+ms.openlocfilehash: 01fe8b7341c38ad33089c56271434ad3f9a4e5f0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763966"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458365"
 ---
 # <a name="createmanagedfolder"></a>CreateManagedFolder
 
-El elemento **CreateManagedFolder** define una solicitud para agregar carpetas personalizadas administradas a un buzón de correo. 
+El elemento **CreateManagedFolder** define una solicitud para agregar carpetas administradas personalizadas a un buzón de correo. 
   
 ```xml
 <CreateManagedFolder>
@@ -33,18 +33,18 @@ El elemento **CreateManagedFolder** define una solicitud para agregar carpetas p
  **CreateManagedFolderRequestType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Nombres de carpetas](foldernames.md) <br/> |Contiene una matriz de las carpetas administradas con nombre para agregar a un buzón de correo.  <br/> |
-|[Buzón de correo](mailbox.md) <br/> |Identifica un objeto de servicio de directorio de Active Directory habilitados para correo.  <br/> |
+|[FolderNames](foldernames.md) <br/> |Contiene una matriz de carpetas administradas con nombre para agregar a un buzón de correo.  <br/> |
+|[Buzón](mailbox.md) <br/> |Identifica un objeto de servicio de directorio de Active Directory habilitado para correo.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -52,25 +52,25 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-La cuenta de la persona que realiza la solicitud debe tener permisos de FullAccess en el buzón de correo donde se crean las carpetas administradas. Puede usar el parámetro de _ _ - AccessRights con el cmdlet **Add-MailboxPermission** de Shell de administración de Exchange para asignar el permiso FullAccess. 
+La cuenta de la persona que realiza la solicitud debe tener permisos FullAccess en el buzón de correo en el que se crean las carpetas administradas. Puede usar el parámetro _-AccessRights _ con el cmdlet **Add-MailboxPermission** del shell de administración de Exchange para asignar el permiso FullAccess. 
   
-Aunque puede usar servicios Web de Exchange para agregar las carpetas administradas a un buzón de correo, no puede usar servicios Web de Exchange para tener acceso a la lista de carpetas administradas que están disponibles. Para obtener una lista de las carpetas administradas disponibles, use el cmdlet del Shell de administración de Exchange de **get-carpeta administrada** . La lista que es devuelto por el **cmdlet get-carpeta administrada** contiene carpetas personalizadas administradas y carpetas predeterminadas administradas. Sólo puede agregar carpetas de tipo **managedcustomfolder** para el buzón de correo mediante el uso de la operación CreateManagedFolder. 
+Aunque puede usar los servicios Web de Exchange para agregar carpetas administradas a un buzón de correo, no puede usar los servicios web Exchange para tener acceso a la lista de carpetas administradas que están disponibles. Para obtener una lista de las carpetas administradas disponibles, use el cmdlet **Get-managedfolder de** Shell de administración de Exchange. La lista que devuelve el **cmdlet Get-managedfolder** contendrá tanto las carpetas personalizadas administradas como las carpetas predeterminadas administradas. Solo se pueden agregar carpetas de tipo **managedcustomfolder** al buzón mediante la operación CreateManagedFolder. 
   
 > [!NOTE]
-> También puede obtener una lista de las carpetas administradas mediante el uso de la API de DirectoryServices de Microsoft .NET Framework. 
+> También puede obtener una lista de carpetas administradas mediante la API de DirectoryServices de Microsoft .NET Framework. 
   
-Puede usar la [operación FindFolder](findfolder-operation.md) para buscar las carpetas administradas en un buzón de correo. Las carpetas administradas se pueden distinguir estableciendo el elemento [BaseShape](baseshape.md) en AllProperties en la solicitud. La respuesta contendrá un elemento [ManagedFolderInformation](managedfolderinformation.md) para distinguir las carpetas administradas de las carpetas del almacén de Exchange. Puede eliminar las carpetas administradas de la misma forma que eliminar otros tipos de carpetas. 
+Puede usar la [operación FindFolder](findfolder-operation.md) para buscar carpetas administradas en un buzón. Las carpetas administradas se pueden distinguir estableciendo el elemento [BaseShape](baseshape.md) en AllProperties en la solicitud. La respuesta contendrá un elemento [ManagedFolderInformation](managedfolderinformation.md) para distinguir las carpetas administradas de las carpetas de almacén de Exchange. Las carpetas administradas se pueden eliminar de la misma manera que se eliminan otros tipos de carpetas. 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -81,7 +81,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [Operación FindFolder](findfolder-operation.md)
 
 
-[Buscar carpetas](http://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
+[Buscar carpetas](https://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
   
-[Adición de las carpetas administradas](http://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)
+[Adición de carpetas administradas](https://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)
 

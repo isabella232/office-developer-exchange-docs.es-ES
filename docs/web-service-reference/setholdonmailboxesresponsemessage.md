@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d61de0f3-24e0-434a-946a-c53d393b7d04
-description: El elemento SetHoldOnMailboxesResponseMessage especifica el mensaje de respuesta de una solicitud de SetHoldOnMailboxes.
-ms.openlocfilehash: b7cb890a71d27340e328e39c1c463fefa080b8cb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SetHoldOnMailboxesResponseMessage especifica el mensaje de respuesta para una solicitud de SetHoldOnMailboxes.
+ms.openlocfilehash: a6af4181218391bc9d3c177467295d771cce4c89
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837420"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456412"
 ---
 # <a name="setholdonmailboxesresponsemessage"></a>SetHoldOnMailboxesResponseMessage
 
-El elemento **SetHoldOnMailboxesResponseMessage** especifica el mensaje de respuesta de una solicitud de **SetHoldOnMailboxes** . 
+El elemento **SetHoldOnMailboxesResponseMessage** especifica el mensaje de respuesta para una solicitud de **SetHoldOnMailboxes** . 
   
 ```XML
 <SetHoldOnMailboxesResponseMessage>
@@ -32,15 +32,15 @@ El elemento **SetHoldOnMailboxesResponseMessage** especifica el mensaje de respu
  **SetHoldOnMailboxesResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [MailboxHoldResult](mailboxholdresult.md)
+[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)  |  [MailboxHoldResult](mailboxholdresult.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -56,9 +56,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

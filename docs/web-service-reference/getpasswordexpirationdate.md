@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f4f958ed-9cf4-4ebf-9b01-e2df9a7cbd63
-description: El elemento GetPasswordExpirationDate define una solicitud para obtener la fecha de caducidad de contraseña para una cuenta de correo electrónico. Este elemento es el elemento base para la operación de la operación de GetPasswordExpirationDate.
-ms.openlocfilehash: a9e0955566372f7b99c48c56e62ce2c5025f9f95
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetPasswordExpirationDate define una solicitud para obtener la fecha de expiración de la contraseña de una cuenta de correo electrónico. Este elemento es el elemento base para la operación de operación GetPasswordExpirationDate.
+ms.openlocfilehash: ececbf51f71c7d87705d727229fce2314d922efb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764935"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456496"
 ---
 # <a name="getpasswordexpirationdate"></a>GetPasswordExpirationDate
 
-El elemento **GetPasswordExpirationDate** define una solicitud para obtener la fecha de caducidad de contraseña para una cuenta de correo electrónico. Este elemento es el elemento base para la operación de la [operación de GetPasswordExpirationDate](getpasswordexpirationdate-operation.md) . 
+El elemento **GetPasswordExpirationDate** define una solicitud para obtener la fecha de expiración de la contraseña de una cuenta de correo electrónico. Este elemento es el elemento base para la operación de [operación GetPasswordExpirationDate](getpasswordexpirationdate-operation.md) . 
   
 ```XML
 <GetPasswordExpirationDate>
@@ -28,17 +28,17 @@ El elemento **GetPasswordExpirationDate** define una solicitud para obtener la f
  **GetPasswordExpirationDateType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Nombre del elemento**|**Descripción**|
 |:-----|:-----|
-|[MailboxSmtpAddress](mailboxsmtpaddress.md) <br/> |Representa la dirección de correo electrónico de la cuenta de correo electrónico para la que es la fecha de caducidad de contraseña que se va a devolver.  <br/> |
+|[MailboxSmtpAddress](mailboxsmtpaddress.md) <br/> |Representa la dirección de correo electrónico de la cuenta de correo electrónico para la que se va a devolver la fecha de expiración de la contraseña.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,10 +54,10 @@ Este elemento se introdujo en Exchange Server 2010 Service Pack 2 (SP2).
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -66,5 +66,5 @@ Este elemento se introdujo en Exchange Server 2010 Service Pack 2 (SP2).
 [Operación GetPasswordExpirationDate](getpasswordexpirationdate-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

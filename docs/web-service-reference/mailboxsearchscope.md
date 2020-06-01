@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ef4a4203-61e5-46b8-9fa4-d1a10e785aa2
 description: El elemento MailboxSearchScope especifica un buzón y un ámbito de búsqueda para una búsqueda de detección.
-ms.openlocfilehash: 657e6dfd4eb6c6c0eabb18546e7090c524e28e5e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 20f528ddfb4812de8468af33bcb0b47d7d851f1d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836297"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457189"
 ---
 # <a name="mailboxsearchscope"></a>MailboxSearchScope
 
@@ -30,15 +30,15 @@ El elemento **MailboxSearchScope** especifica un buzón y un ámbito de búsqued
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Buzón de correo (string)](mailbox-string.md) | [SearchScope](searchscope.md)
+[Mailbox (cadena)](mailbox-string.md)  |  [SearchScope](searchscope.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

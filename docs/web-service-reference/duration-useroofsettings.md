@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 01d67af3-658e-4acd-93e3-441ae827fdd3
-description: El elemento de duración Especifica la duración de fuera de la oficina (OOF) está habilitado si se establece el elemento OofState en programado.
-ms.openlocfilehash: 62a5492372fd80173d58e965376b7c8c466825a6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Duration especifica la duración del estado de fuera de la oficina (OOF) si el elemento OofState está establecido en programado.
+ms.openlocfilehash: 0ba0f1ea7498781c0cccb072c7ea0fa05414764c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764293"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457301"
 ---
 # <a name="duration-useroofsettings"></a>Duración (UserOofSettings)
 
-El elemento de **duración** especifica la duración de la espera del estado de la oficina (OOF) está habilitada si se establece el elemento [OofState](oofstate.md) en **programado**.
+El elemento **Duration** especifica la duración del estado de fuera de la oficina (OOF) si el elemento [OofState](oofstate.md) está establecido en **programado**.
   
 ```XML
 <Duration>
@@ -30,51 +30,51 @@ El elemento de **duración** especifica la duración de la espera del estado de 
 </Duration>
 ```
 
- **Duration**
+ **Duración**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[StartTime](starttime.md) <br/> |Representa el inicio de un período de tiempo establecido con un estado de fuera de la oficina. Se requiere este elemento.  <br/> |
-|[Hora de finalización](endtime.md) <br/> |Representa el final de un período de tiempo establecido con un estado de fuera de la oficina. Se requiere este elemento.  <br/> |
+|[StartTime](starttime.md) <br/> |Representa el inicio del intervalo de tiempo establecido con un estado de OOF. Se requiere este elemento.  <br/> |
+|[EndTime](endtime.md) <br/> |Representa el final del intervalo de tiempo establecido con un estado de OOF. Se requiere este elemento.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UserOofSettings](useroofsettings.md) <br/> |Especifica la configuración de fuera de la oficina.  <br/><br/>La siguiente es la expresión de XPath para este elemento:<br/><br/>`/SetUserOofSettingsRequest/UserOofSettings` <br/> |
-|[OofSettings](oofsettings.md) <br/> |Contiene la configuración de fuera de la oficina.<br/><br/>La siguiente es la expresión de XPath para este elemento:<br/><br/>`/GetUserOofSettingsResponse/OofSettings` <br/> |
-|[Fuera de la oficina](outofoffice.md) <br/> |Define el mensaje de respuesta de fuera de oficina (OOF) y un tiempo de duración para enviar el mensaje de respuesta para un buzón de correo.  <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |Especifica la configuración de OOF.  <br/><br/>La siguiente es la expresión XPath a este elemento:<br/><br/>`/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[OofSettings](oofsettings.md) <br/> |Contiene la configuración de OOF.<br/><br/>La siguiente es la expresión XPath a este elemento:<br/><br/>`/GetUserOofSettingsResponse/OofSettings` <br/> |
+|[Oficina](outofoffice.md) <br/> |Define el mensaje de respuesta de fuera de la oficina (OOF) y un tiempo de duración para enviar el mensaje de respuesta para un buzón de correo.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El tipo de **duración** también es el tipo de los elementos [DetailedSuggestionsWindow](detailedsuggestionswindow.md), [ventana de tiempo](timewindow.md)y [fuera de la oficina](outofoffice.md) . 
+El tipo **Duration** también es el tipo para los elementos [DetailedSuggestionsWindow](detailedsuggestionswindow.md), [TimeWindow](timewindow.md)y [Oficina](outofoffice.md) . 
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
 ## <a name="example"></a>Ejemplo
 
-El siguiente ejemplo de una solicitud de [operación de SetUserOofSettings](setuseroofsettings-operation.md) la [OofState](oofstate.md) establece en **habilitado**, los mensajes de fuera de la oficina internos y externos y establece la duración de OOF durante 10 días.
+El siguiente ejemplo de una solicitud de [operación SetUserOofSettings](setuseroofsettings-operation.md) establece el [OofState](oofstate.md) en **habilitado**, los mensajes internos y externos OOF y establece la duración de OOF durante 10 días.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <SetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
       </Mailbox>
-      <UserOofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <UserOofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Enabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -98,10 +98,10 @@ El siguiente ejemplo de una solicitud de [operación de SetUserOofSettings](setu
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

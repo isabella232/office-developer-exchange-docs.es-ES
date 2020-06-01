@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: a8209f75-0070-4424-8dcd-273cfd192728
-description: El elemento HiddenRecipient indica que el destinatario se ha agregado una directiva de la organización que debería estar oculto de los usuarios sin privilegios.
-ms.openlocfilehash: 73b2e3e39c675cf3e2bc56105b1e76009d4a2451
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento HiddenRecipient indica que el destinatario fue agregado por una directiva de la organización que debe ocultarse a los usuarios sin privilegios.
+ms.openlocfilehash: bfe57fabc02ff00c801672b71ccdb0bf1b916bd9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835810"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457644"
 ---
 # <a name="hiddenrecipient"></a>HiddenRecipient
 
-El elemento **HiddenRecipient** indica que el destinatario se ha agregado una directiva de la organización que debería estar oculto de los usuarios sin privilegios. 
+El elemento **HiddenRecipient** indica que el destinatario fue agregado por una directiva de la organización que debe ocultarse a los usuarios sin privilegios. 
   
 ```XML
 <HiddenRecipient>true | false</HiddenRecipient>
@@ -30,25 +30,25 @@ El elemento **HiddenRecipient** indica que el destinatario se ha agregado una di
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Contiene información de un solo evento de un destinatario.  <br/> |
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Contiene información de un evento único para un destinatario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Este elemento puede ser **true** o **false**. Un valor de **true** indica que el usuario se ha agregado una directiva de la organización; un valor de **false** indica que el usuario no se ha agregado una directiva de la organización. 
+Este elemento puede ser **true** o **false**. Un valor de **true** indica que una directiva de organización agregó al usuario; un valor de **false** indica que el usuario no fue agregado por una directiva de organización. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -58,14 +58,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

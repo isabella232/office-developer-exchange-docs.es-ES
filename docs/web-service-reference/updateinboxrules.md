@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d220064f-ff4d-4537-8077-adf94f2cbdbd
-description: El elemento UpdateInboxRules define una solicitud para actualizar las reglas de bandeja de entrada en un buzón en el almacén del servidor.
-ms.openlocfilehash: 73af3efcbf4320604576b724acf18530b8b86b26
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UpdateInboxRules define una solicitud para actualizar las reglas de la bandeja de entrada en un buzón de correo en el almacén del servidor.
+ms.openlocfilehash: d604604d582d28c07eaa75d3239082d1b6735e65
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840830"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456363"
 ---
 # <a name="updateinboxrules"></a>UpdateInboxRules
 
-El elemento **UpdateInboxRules** define una solicitud para actualizar las reglas de bandeja de entrada en un buzón en el almacén del servidor. 
+El elemento **UpdateInboxRules** define una solicitud para actualizar las reglas de la bandeja de entrada en un buzón de correo en el almacén del servidor. 
   
 ```XML
 <UpdateInboxRules>
@@ -34,23 +34,23 @@ El elemento **UpdateInboxRules** define una solicitud para actualizar las reglas
  **UpdateInboxRulesRequestType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[MailboxSmtpAddress](mailboxsmtpaddress.md) <br/> |Representa la dirección SMTP del usuario cuyas reglas de bandeja de entrada que se van a crear, modificar o eliminar.  <br/> |
-|[RemoveOutlookRuleBlob](removeoutlookruleblob.md) <br/> |Indica si se debe quitar el blob de regla de Microsoft Outlook.  <br/> |
-|[Operations](operations.md) <br/> |Contiene una matriz de las operaciones de la regla que se puede realizar en una bandeja de entrada.  <br/> |
+|[MailboxSmtpAddress](mailboxsmtpaddress.md) <br/> |Representa la dirección SMTP del usuario cuyas reglas de la bandeja de entrada se van a crear, modificar o eliminar.  <br/> |
+|[RemoveOutlookRuleBlob](removeoutlookruleblob.md) <br/> |Indica si se quita el BLOB de reglas de Microsoft Outlook.  <br/> |
+|[Operations](operations.md) <br/> |Contiene una matriz de operaciones de regla que se pueden realizar en una bandeja de entrada.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
@@ -64,9 +64,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
@@ -76,5 +76,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación de UpdateInboxRules](updateinboxrules-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

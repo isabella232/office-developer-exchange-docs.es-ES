@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: acbb29e4-d853-4302-8e32-7018775d54e4
-description: El elemento GetServiceConfiguration define una solicitud GetServiceConfiguration.
-ms.openlocfilehash: 7ff7124ff062f21a02fc69b86b7cc7367ba3fcb6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetServiceConfiguration define una solicitud de GetServiceConfiguration.
+ms.openlocfilehash: e9357a9e3be22e129c4910c01231f9dbd22a2dbe
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835666"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457875"
 ---
 # <a name="getserviceconfiguration"></a>GetServiceConfiguration
 
-El elemento **GetServiceConfiguration** define una solicitud GetServiceConfiguration. 
+El elemento **GetServiceConfiguration** define una solicitud de GetServiceConfiguration. 
   
 ```XML
 <GetServiceConfiguration>
@@ -33,22 +33,22 @@ El elemento **GetServiceConfiguration** define una solicitud GetServiceConfigura
  **GetServiceConfigurationType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ActingAs](actingas.md) <br/> |Identifique quién envía como el autor de la llamada. Este elemento es opcional. Si este elemento no está presente, el usuario autenticado se supone que el remitente. El elemento **ActingAs** debe incluirse para solicitar sugerencias de remitente. Puede devolver un error de ErrorInvalidArgument en una respuesta si el elemento **ActingAs** falta, no incluye un tipo de distribución, no incluye una dirección de correo electrónico, contiene una dirección de correo electrónico no válida, no se resuelve a un usuario de dominio de Active Directory Services (AD DS), o se resuelve a varios usuarios en AD DS.  <br/> |
-|[RequestedConfiguration](requestedconfiguration.md) <br/> |Contiene las configuraciones del servicio solicitado. Se requiere este elemento.  <br/> |
+|[Acciones](actingas.md) <br/> |Identifica quién envía el autor de la llamada. Este elemento es opcional. Si este elemento no está presente, se supone que el usuario autenticado es el remitente. El elemento **actual** debe incluirse para solicitar sugerencias de remitente. Se puede devolver un error ErrorInvalidArgument en una respuesta si falta el elemento **actuaas** , no incluye un tipo de enrutamiento, no incluye una dirección de correo electrónico, contiene una dirección de correo electrónico no válida, no se resuelve como un usuario de los servicios de dominio de Active Directory (AD DS) o se resuelve en varios usuarios en AD DS.  <br/> |
+|[RequestedConfiguration](requestedconfiguration.md) <br/> |Contiene las configuraciones de servicio solicitadas. Se requiere este elemento.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
@@ -62,14 +62,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

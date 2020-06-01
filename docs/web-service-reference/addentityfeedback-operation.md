@@ -7,29 +7,29 @@ ms.topic: article
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 00e40197-5794-4268-b937-bd65aa044890
-description: La operación AddEntityFeedback devuelve información de error correspondiente a los problemas del servidor.
-ms.openlocfilehash: b695806f543827d78aea139ffcbd7e4af58b9fef
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación AddEntityFeedback devuelve información de error correspondiente a problemas del lado servidor.
+ms.openlocfilehash: a1027a0a1ee06cf3e83833b1d84c13d77b07c0b9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763401"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458442"
 ---
 # <a name="addentityfeedback-operation"></a>Operación AddEntityFeedback
 
-La operación **AddEntityFeedback** devuelve información de error correspondiente a los problemas del servidor. 
+La operación **AddEntityFeedback** devuelve información de error correspondiente a problemas del lado servidor. 
   
-Esta operación se basa en el tipo de evento que se registra. Uno de los eventos más importantes es **EntityAdded**, que corresponde a una entidad que se está seleccionada. Esta operación es por lotes, por lo que se puede utilizar para registrar los lotes de entradas en una sola solicitud. 
+Esta operación depende del tipo de evento que se está registrando. Uno de los eventos más importantes es **EntityAdded**, que corresponde a una entidad seleccionada. Esta operación es un lote, por lo que se puede usar para registrar lotes de entradas en una sola solicitud. 
   
-## <a name="findpeople-request-examples"></a>Ejemplos de solicitudes FindPeople
+## <a name="findpeople-request-examples"></a>Ejemplos de solicitudes de FindPeople
 
-La operación **AddEntityFeedback** proporciona una manera para que los clientes detalles de interacción con las entidades devueltas por el servicio de registro. Esto puede usarse como una señal para mejorar la relevancia en segundo plano para cada cliente. Por ejemplo, los clientes pueden utilizar esta operación para proporcionar comentarios en las entidades de personas devueltas desde **FindPeople**.
+La operación **AddEntityFeedback** proporciona un medio para que los clientes registren detalles de interacción con entidades devueltas por el servicio. Esto puede usarse como una señal para mejorar la relevancia en segundo plano para cada cliente. Por ejemplo, los clientes pueden usar esta operación para enviar comentarios sobre entidades de personas devueltas desde **FindPeople**.
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-                             xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                             xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+                             xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                             xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
    </soap:Header>
@@ -58,25 +58,25 @@ La operación **AddEntityFeedback** proporciona una manera para que los clientes
 
 ```
 
-### <a name="the-request-soap-body-contents"></a>El contenido del cuerpo de la solicitud SOAP
+### <a name="the-request-soap-body-contents"></a>El contenido del cuerpo SOAP de la solicitud
 
-La solicitud soap contiene un solo elemento **EntityFeedbackEntries**. Esto a su vez contiene una matriz de objetos de **EntityFeedbackEntry** . Cada entrada de la matriz puede contener los siguientes elementos. 
+La solicitud SOAP contiene un elemento único **EntityFeedbackEntries**. Esto, a su vez, contiene una matriz de objetos **EntityFeedbackEntry** . Cada entrada de la matriz puede contener los siguientes elementos. 
   
-|**Parámetros de la solicitud**|**Necesario**|**Descripción**|**Tipo**|
+|**Parámetros de solicitud**|**Obligatorio**|**Descripción**|**Tipo**|
 |:-----|:-----|:-----|:-----|
-|**ClientEventTimeUtc** <br/> |Sí  <br/> |La hora UTC se produjo el evento del cliente.  <br/> |DateTime  <br/> |
-|**ClientEventTimeLocal** <br/> |Sí  <br/> |La hora local que se produjo el evento en el lado del cliente.  <br/> |DateTime  <br/> |
-|**ClientId** <br/> |Sí  <br/> |Tipo de cliente (por ejemplo, Outlook, OWA, etcetera).  <br/> |ClientIDType (enumeración)  <br/> |
+|**ClientEventTimeUtc** <br/> |Sí  <br/> |La hora UTC en que se produjo el evento en el lado cliente.  <br/> |DateTime  <br/> |
+|**ClientEventTimeLocal** <br/> |Sí  <br/> |La hora local en la que se produjo el evento en el lado cliente.  <br/> |DateTime  <br/> |
+|**ClientId** <br/> |Sí  <br/> |Tipo de cliente (por ejemplo, Outlook, OWA, etc.).  <br/> |Enumeración ClientIDType  <br/> |
 |**ClientSessionId** <br/> |Sí  <br/> |GUID que identifica el identificador de sesión. Se genera en el cliente.  <br/> |GUID  <br/> |
 |**ClientVersion** <br/> |Sí  <br/> |Versión del cliente (por ejemplo, 15.01.0101.000).  <br/> |Cadena  <br/> |
-|**EntityAddSource** <br/> |No  <br/> |Origen de EntityAded (E.g., EntityRelevanceAPI, tipos, pegados).  <br/> |EntityAddSource (enumeración)  <br/> |
-|**EntrySequenceNumber** <br/> |Sí  <br/> |Un entero incremental por sesión de cliente. Se usa para detectar la pérdida de datos.  <br/> |Int  <br/> |
-|**EventType** <br/> |Sí  <br/> |Tipo de evento (E.g., se agrega la entidad, entidad quitado).  <br/> |Cadena  <br/> |
-|**JSONPropertyBag** <br/> |No  <br/> |Propiedades adicionales asociadas con el evento (blob JSON de pares clave/valor).  <br/> |Blob JSON  <br/> |
-|**TargetEntityList** <br/> |No  <br/> |Lista de las entidades asociadas con el evento.  <br/> |Cadena JSON  <br/> |
-|**TransactionId** <br/> |No  <br/> |Identificador (GUID) correlacionar el identificador en los registros de la consulta.  <br/> |Cadena  <br/> |
+|**EntityAddSource** <br/> |No  <br/> |Origen para EntityAded (por ejemplo, EntityRelevanceAPI, Types, pegados).  <br/> |Enumeración EntityAddSource  <br/> |
+|**EntrySequenceNumber** <br/> |Sí  <br/> |Entero incremental por sesión de cliente. Se usa para detectar la pérdida de datos.  <br/> |Int  <br/> |
+|**EventType** <br/> |Sí  <br/> |Tipo de evento (por ejemplo, entidad agregada, entidad eliminada).  <br/> |Cadena  <br/> |
+|**JSONPropertyBag** <br/> |No  <br/> |Propiedades adicionales asociadas con el evento (objeto binario JSON de pares clave-valor).  <br/> |BLOB de JSON  <br/> |
+|**TargetEntityList** <br/> |No  <br/> |Lista de entidades asociadas al evento.  <br/> |Cadena JSON  <br/> |
+|**TransactionId** <br/> |No  <br/> |IDENTIFICADOR (GUID) que correlaciona el identificador en los registros de consulta.  <br/> |Cadena  <br/> |
    
-### <a name="successful-addentityfeedback-operation-response"></a>Respuesta es correcta de operación AddEntityFeedback
+### <a name="successful-addentityfeedback-operation-response"></a>Respuesta de operación AddEntityFeedback correcta
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -87,13 +87,13 @@ La solicitud soap contiene un solo elemento **EntityFeedbackEntries**. Esto a su
                                 MajorBuildNumber="228" 
                                 MinorBuildNumber="0" 
                                 Version="V2_49" 
-                                xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
+                                xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
                                 xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
     </s:Header>
     <s:Body>
         <AddEntityFeedbackResponse ResponseClass="Success" 
-                                                              xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" 
+                                                              xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" 
                                                               xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                                                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
             <ResponseCode>NoError</ResponseCode>
@@ -105,59 +105,59 @@ La solicitud soap contiene un solo elemento **EntityFeedbackEntries**. Esto a su
 
 ```
 
-### <a name="the-response-soap-body-contains-the-following-elements"></a>La respuesta SOAP body contiene los siguientes elementos
+### <a name="the-response-soap-body-contains-the-following-elements"></a>El cuerpo SOAP de respuesta contiene los siguientes elementos
 
 #### <a name="errors"></a>Errores 
   
-La API puede iniciar un lote de entradas de comentarios, se todo lo que se puede iniciar. Este campo representa el número de entradas de error que no se han iniciado.
+La API puede registrar un lote de entradas de comentarios, se registra todo lo que podemos. Este campo representa el número de entradas de error que no se registraron.
     
 #### <a name="errordetails"></a>ErrorDetails
   
-Separa los detalles relativos a los errores anteriores por `;`.
+Detalles relativos a los errores anteriores separa por `;` .
     
-### <a name="currently-supported-values"></a>Valores admitidos actualmente
+### <a name="currently-supported-values"></a>Valores actualmente admitidos
 
-|**ClientIdType (enumeración)**|
+|**Enumeración ClientIdType**|
 |:-----|
-|Escritorio  <br/> |
+|Desktop  <br/> |
 |Exchange  <br/> |
 |IMAP4  <br/> |
-|Lync  <br/> |
+|2015  <br/> |
 |MacMail  <br/> |
 |MacOutlook  <br/> |
-|Móvil  <br/> |
-|Otro  <br/> |
+|Mobile  <br/> |
+|Otros  <br/> |
 |Outlook  <br/> |
 |OutlookService  <br/> |
 |POP3  <br/> |
-|Tableta  <br/> |
+|Tablet  <br/> |
 |Web  <br/> |
    
-|**EntityAddSource (enumeración)**|
+|**Enumeración EntityAddSource**|
 |:-----|
-|ActiveDirectory  <br/> |
+|Directory  <br/> |
 |EntityRelevanceApi  <br/> |
 |EntityRelevanceApiCache  <br/> |
 |ExplicitTyping  <br/> |
 |LocalCache  <br/> |
 |LocalCacheAndEntityRelevanceAPI  <br/> |
-|None  <br/> |
-|Otro  <br/> |
-|Pegar  <br/> |
+|Ninguno  <br/> |
+|Otros  <br/> |
+|Paste  <br/> |
    
-### <a name="addentityfeedback-operation-error-response"></a>Respuesta de error de la operación de AddEntityFeedback
+### <a name="addentityfeedback-operation-error-response"></a>Respuesta de error de operación de AddEntityFeedback
 
-Para los códigos de error que son genéricos de EWS, consulte [ResponseCode](responsecode.md).
+Para los códigos de error que son genéricos para EWS, vea [ResponseCode](responsecode.md).
   
-### <a name="example-of-addentityfeedback-in-conjunction-with-findpeople"></a>Ejemplo de AddEntityFeedback junto con FindPeople
+### <a name="example-of-addentityfeedback-in-conjunction-with-findpeople"></a>Ejemplo de AddEntityFeedback en combinación con FindPeople
 
-#### <a name="findpeople-request"></a>Solicitud de FindPeople
+#### <a name="findpeople-request"></a>Solicitud FindPeople
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>
@@ -172,19 +172,19 @@ Para los códigos de error que son genéricos de EWS, consulte [ResponseCode](re
     
 ```
 
-#### <a name="findpeople-response"></a>Respuesta de FindPeople
+#### <a name="findpeople-response"></a>Respuesta FindPeople
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
     <s:Header>
-        <h:ServerVersionInfo MajorVersion="15" MinorVersion="1" MajorBuildNumber="302" MinorBuildNumber="0" Version="V2_68" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        <h:ServerVersionInfo MajorVersion="15" MinorVersion="1" MajorBuildNumber="302" MinorBuildNumber="0" Version="V2_68" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
     </s:Header>
     <s:Body>
-        <FindPeopleResponse ResponseClass="Success" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <FindPeopleResponse ResponseClass="Success" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
             <ResponseCode>NoError</ResponseCode>
             <People>
-                <Persona xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+                <Persona xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                     <PersonaId Id="AAUQAFjZ4UxX8SZCqSPFsmh0cSo=" />
                     <PersonaType>Person</PersonaType>
                     <CreationTime>2015-10-02T23:25:42</CreationTime>
@@ -202,13 +202,13 @@ Para los códigos de error que son genéricos de EWS, consulte [ResponseCode](re
 
 ```
 
-#### <a name="addentityfeedback-request"></a>Solicitud de AddEntityFeedback
+#### <a name="addentityfeedback-request"></a>Solicitud AddEntityFeedback
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
    </soap:Header>
@@ -235,18 +235,18 @@ Para los códigos de error que son genéricos de EWS, consulte [ResponseCode](re
 ```
 
 > [!NOTE]
-> Uso de FindPeople respuesta transacciones ID como la transacción de solicitud de AddEntityFeedback Id. 
+> Mediante FindPeople Response ID Transaction como el identificador de transacción de solicitud AddEntityFeedback. 
   
-#### <a name="addentityfeedback-response"></a>Respuesta de AddEntityFeedback
+#### <a name="addentityfeedback-response"></a>Respuesta AddEntityFeedback
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
     <s:Header>
-        <h:ServerVersionInfo MajorVersion="15" MinorVersion="1" MajorBuildNumber="302" MinorBuildNumber="0" Version="V2_68" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+        <h:ServerVersionInfo MajorVersion="15" MinorVersion="1" MajorBuildNumber="302" MinorBuildNumber="0" Version="V2_68" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
     </s:Header>
     <s:Body>
-        <AddEntityFeedbackResponse ResponseClass="Success" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <AddEntityFeedbackResponse ResponseClass="Success" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
             <ResponseCode>NoError</ResponseCode>
             <ErrorCount>0</ErrorCount>
             <ErrorDetails />

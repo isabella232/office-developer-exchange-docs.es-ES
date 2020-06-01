@@ -11,27 +11,27 @@ api_name:
 api_type:
 - schema
 ms.assetid: aa4a7c94-f668-4bd2-8079-c855f6ab17e1
-description: La operación CreateItem crea los elementos de calendario en el almacén de Exchange.
-ms.openlocfilehash: c2174dd806b922e640ef7afcab32b98c67c65b41
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación CreateItem crea elementos de calendario en el almacén de Exchange.
+ms.openlocfilehash: 535edf9fe567bc3063a5b853f01d604ea4c7eb95
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763949"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457504"
 ---
 # <a name="createitem-operation-calendar-item"></a>Operación CreateItem (elemento de calendario)
 
-La operación CreateItem crea los elementos de calendario en el almacén de Exchange.
+La operación CreateItem crea elementos de calendario en el almacén de Exchange.
   
 ## <a name="remarks"></a>Comentarios
 
-La operación CreateItem crea citas, reuniones y las convocatorias de reunión. Si se crea un elemento de calendario sin asistentes, se considera una cita. Si se especifican los asistentes, el elemento de calendario es una reunión. Cuando se crea una reunión mediante el uso de la operación CreateItem, las convocatorias de reunión se envían automáticamente a los asistentes identificados si se establece el atributo SendMeetingInvitations para enviar las convocatorias de reunión.
+La operación CreateItem crea citas, reuniones y convocatorias de reunión. Si se crea un elemento de calendario sin asistentes, se considera una cita. Si se especifican asistentes, el elemento de calendario es una reunión. Cuando se crea una reunión mediante la operación CreateItem, las convocatorias de reunión se envían automáticamente a los asistentes identificados si el atributo SendMeetingInvitations está configurado para enviar las convocatorias de reunión.
   
 ## <a name="createitem-calendar-item-request-example"></a>Ejemplo de solicitud CreateItem (elemento de calendario)
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud CreateItem muestra cómo crear una reunión con dos asistentes necesarios. Esta solicitud enviará las convocatorias de reunión a los asistentes de dos.
+El siguiente ejemplo de una solicitud CreateItem muestra cómo crear una reunión con dos asistentes necesarios. Esta solicitud enviará las convocatorias de reunión a los dos asistentes.
   
 ### <a name="code"></a>Código
 
@@ -39,16 +39,16 @@ El siguiente ejemplo de una solicitud CreateItem muestra cómo crear una reunió
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+    <CreateItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                 SendMeetingInvitations="SendToAllAndSaveCopy" >
       <SavedItemFolderId>
         <t:DistinguishedFolderId Id="calendar"/>
       </SavedItemFolderId>
       <Items>
-        <t:CalendarItem xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <t:CalendarItem xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <Subject>Planning Meeting</Subject>
           <Body BodyType="Text">Plan the agenda for next week's meeting.</Body>
           <ReminderIsSet>true</ReminderIsSet>
@@ -79,11 +79,11 @@ El siguiente ejemplo de una solicitud CreateItem muestra cómo crear una reunió
 
 ### <a name="comments"></a>Comentarios
 
-Para obtener un ejemplo de cómo responder a una convocatoria de reunión, vea el tema [operación CreateItem (convocatoria de reunión)](createitem-operation-meeting-request.md) . 
+Para obtener un ejemplo de cómo responder a una convocatoria de reunión, vea el tema [Operation CreateItem (solicitud de reunión)](createitem-operation-meeting-request.md) . 
   
 ### <a name="request-elements"></a>Elementos de solicitud
 
-En la solicitud se usan los siguientes elementos:
+Los siguientes elementos se usan en la solicitud:
   
 - [CreateItem](createitem.md)
     
@@ -95,7 +95,7 @@ En la solicitud se usan los siguientes elementos:
     
 - [CalendarItem](calendaritem.md)
     
-- [Subject](subject.md)
+- [Asunto](subject.md)
     
 - [Body](body.md)
     
@@ -105,23 +105,23 @@ En la solicitud se usan los siguientes elementos:
     
 - [Start](start.md)
     
-- [End](end-ex15websvcsotherref.md)
+- [Centraliza](end-ex15websvcsotherref.md)
     
 - [IsAllDayEvent](isalldayevent.md)
     
 - [LegacyFreeBusyStatus](legacyfreebusystatus.md)
     
-- [Location](location.md)
+- [Ubicación](location.md)
     
 - [RequiredAttendees](requiredattendees.md)
     
-- [Attendee](attendee.md)
+- [Asistente](attendee.md)
     
-- [Buzón de correo](mailbox.md)
+- [Buzón](mailbox.md)
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
-## <a name="successful-createitem-calendar-item-response"></a>Respuesta correcta CreateItem (elemento de calendario)
+## <a name="successful-createitem-calendar-item-response"></a>Se ha realizado correctamente CreateItem (elemento de calendario) Response
 
 ### <a name="description"></a>Descripción
 
@@ -136,12 +136,12 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateI
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -159,9 +159,9 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateI
 
 ### <a name="comments"></a>Comentarios
 
-Los atributos del elemento [ItemId](itemid.md) **identificador** y **ChangeKey** se han abreviado para conservar la legibilidad. 
+El **identificador** del elemento [Itemid](itemid.md) y los atributos **changekey** se han abreviado para preservar la legibilidad. 
   
-### <a name="successful-response-elements"></a>Elementos de respuesta correcta
+### <a name="successful-response-elements"></a>Elementos Response correcto
 
 En la respuesta se usan los siguientes elementos:
   

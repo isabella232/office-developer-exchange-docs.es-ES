@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 88d35c05-21fc-4576-b785-c4ba7b6f8d5b
-description: El elemento ProxyPartnerToken se usa en el proxy HTTP del equipo que ejecuta Microsoft Exchange Server 2010 que tenga instalado el rol de servidor de acceso de cliente. Este elemento no se usa en las operaciones de Exchange Web Services (EWS).
-ms.openlocfilehash: d21f7ab57b9abd5521a9e7551f317be41a937e12
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El proxy HTTP del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor acceso de clientes usa el elemento ProxyPartnerToken. Este elemento no lo usan las operaciones de servicios Web de Exchange (EWS).
+ms.openlocfilehash: 40716d31a26bd885553daec59ea48f90e3c57bfe
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836916"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457756"
 ---
 # <a name="proxypartnertoken"></a>ProxyPartnerToken
 
-El elemento **ProxyPartnerToken** se usa en el proxy HTTP del equipo que ejecuta Microsoft Exchange Server 2010 que tenga instalado el rol de servidor de acceso de cliente. Este elemento no se usa en las operaciones de Exchange Web Services (EWS). 
+El proxy HTTP del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor acceso de clientes usa el elemento **ProxyPartnerToken** . Este elemento no lo usan las operaciones de servicios Web de Exchange (EWS). 
   
 ```XML
 <ProxyPartnerToken/>
@@ -26,15 +26,15 @@ El elemento **ProxyPartnerToken** se usa en el proxy HTTP del equipo que ejecuta
  **ProxySecurityContextType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -50,14 +50,14 @@ Este elemento se introdujo en Exchange Server 2010 Service Pack 2 (SP2).
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Miembro	
+title: Member
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: af9c5ff8-02a4-41fc-876d-14ac05f1ee77
-description: El elemento de miembro representa a un miembro de una lista de distribución.
-ms.openlocfilehash: c38e2ed24e78b5199d4d65cce27a00a8e6704037
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Member representa a un miembro de una lista de distribución.
+ms.openlocfilehash: e84223b7c41846ca2f174293bff46a8825777a0e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836434"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457308"
 ---
-# <a name="member"></a>Miembro	
+# <a name="member"></a>Member
 
-El elemento de **miembro** representa a un miembro de una lista de distribución. 
+El elemento **member** representa a un miembro de una lista de distribución. 
   
 ```xml
 <Member Key="">
@@ -34,24 +34,24 @@ El elemento de **miembro** representa a un miembro de una lista de distribución
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|Clave  <br/> |Proporciona un identificador único para el miembro de la lista de distribución. Este atributo es opcional.  <br/> |
+|Key   <br/> |Proporciona un identificador único para el miembro de la lista de distribución. Este atributo es opcional.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Buzón de correo](mailbox.md) <br/> |Representa la dirección de correo electrónico del miembro de la lista de distribución. Este elemento es opcional.  <br/> |
+|[Buzón](mailbox.md) <br/> |Representa la dirección de correo electrónico del miembro de la lista de distribución. Este elemento es opcional.  <br/> |
 |[Estado (MemberStatusType)](status-memberstatustype.md) <br/> |Proporciona información sobre el estado de un miembro de la lista de distribución. Este elemento es opcional.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Miembros (MemberListType)](members-memberlisttype.md) <br/> |Contiene una lista de miembros de la lista de distribución.  <br/> |
    
@@ -63,12 +63,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

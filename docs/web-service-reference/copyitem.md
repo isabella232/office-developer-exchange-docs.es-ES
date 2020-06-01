@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ffb4c13e-e7ea-4e6b-87a0-509ce5371100
-description: El elemento CopyItem define una solicitud para copiar un elemento en un buzón en el almacén de Exchange.
-ms.openlocfilehash: 08cc1b67f7c7d369263acfc4b3d13e8aa70d2d5f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento CopyItem define una solicitud para copiar un elemento en un buzón de correo en el almacén de Exchange.
+ms.openlocfilehash: b9af1670fd580107de08ad3b950191399436388d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763900"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458505"
 ---
 # <a name="copyitem"></a>CopyItem
 
-El elemento **CopyItem** define una solicitud para copiar un elemento en un buzón en el almacén de Exchange. 
+El elemento **CopyItem** define una solicitud para copiar un elemento en un buzón de correo en el almacén de Exchange. 
   
 ```XML
 <CopyItem>
@@ -34,19 +34,19 @@ El elemento **CopyItem** define una solicitud para copiar un elemento en un buz�
  **CopyItemType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ToFolderId](tofolderid.md) <br/> |Representa la carpeta de destino para el elemento copiado.  <br/> |
-|[ItemId](itemids.md) <br/> |Contiene una matriz de elementos identificados a copiar en la carpeta representada por el elemento [ToFolderId](tofolderid.md) .  <br/> |
-|[ReturnNewItemIds](returnnewitemids.md) <br/> |Indica si se devuelven los identificadores de elemento de los elementos nuevos en la respuesta.  <br/> |
+|[ToFolderId](tofolderid.md) <br/> |Representa la carpeta de destino de un elemento copiado.  <br/> |
+|[ItemIds](itemids.md) <br/> |Contiene una matriz de elementos identificados que se van a copiar en la carpeta representada por el elemento [ToFolderId](tofolderid.md) .  <br/> |
+|[ReturnNewItemIds](returnnewitemids.md) <br/> |Indica si los identificadores de elemento de los nuevos elementos se devuelven en la respuesta.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -60,10 +60,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -72,5 +72,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación CopyItem](copyitem-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

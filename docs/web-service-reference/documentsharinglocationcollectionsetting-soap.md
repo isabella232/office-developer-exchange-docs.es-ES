@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0e3346f9-7a55-4e87-b121-9b1ee7f227f4
-description: El elemento DocumentSharingLocationCollectionSetting representa un usuario de configuración, es decir, una colección de documentación de uso compartido de las ubicaciones y los metadatos.
-ms.openlocfilehash: 9871e3fccdcce95fc275768d99159c70f57a07af
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DocumentSharingLocationCollectionSetting representa una configuración de usuario que es una colección de ubicaciones y metadatos de uso compartido de documentación.
+ms.openlocfilehash: 2a52f639a1f1bf638aacc78666c58aed1fae0fa0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764255"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457056"
 ---
 # <a name="documentsharinglocationcollectionsetting-soap"></a>DocumentSharingLocationCollectionSetting (SOAP)
 
-El elemento **DocumentSharingLocationCollectionSetting** representa un usuario de configuración, es decir, una colección de documentación de uso compartido de las ubicaciones y los metadatos. 
+El elemento **DocumentSharingLocationCollectionSetting** representa una configuración de usuario que es una colección de ubicaciones y metadatos de uso compartido de documentación. 
   
 [DocumentSharingLocationCollectionSetting (SOAP)](documentsharinglocationcollectionsetting-soap.md)
   
@@ -29,36 +29,36 @@ El elemento **DocumentSharingLocationCollectionSetting** representa un usuario d
  **DocumentSharingLocationCollectionSetting**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[DocumentSharingLocations (SOAP)](documentsharinglocations-soap.md) <br/> |Representa la ubicación y los metadatos para una lista de ubicaciones de uso compartido de documentos.  <br/> |
+|[DocumentSharingLocations (SOAP)](documentsharinglocations-soap.md) <br/> |Representa la ubicación y los metadatos de una lista de ubicaciones de uso compartido de documentos.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UserSettings (SOAP)](usersettings-soap.md) <br/> |Representa una colección de configuración de usuario.  <br/> |
+|[UserSettings (SOAP)](usersettings-soap.md) <br/> |Representa una colección de opciones de configuración de usuario.  <br/> |
    
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación GetUserSettings (SOAP)](getusersettings-operation-soap.md)
-- [Referencia de servicio web de detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)
-- [Elementos de Autodiscover XML SOAP para Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+- [Referencia del servicio web de Detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)
+- [Elementos XML de detección automática de SOAP para Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

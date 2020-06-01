@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ce4a2978-fd0c-41a4-ae65-aa6f5dc9a0f9
-description: El elemento HighlightTerms identifica los términos resaltados devueltos en una operación FindItem y una respuesta de la operación de FindConversation.
-ms.openlocfilehash: c075e63674bc08773925a2a540a1c2434423926d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento HighlightTerms identifica los términos resaltados que se devuelven en una operación FindItem y una respuesta de operación FindConversation.
+ms.openlocfilehash: c55ffc010dc0cfb09403433aaf8a0809a26f71a3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835808"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457637"
 ---
 # <a name="highlightterms"></a>HighlightTerms
 
-El elemento **HighlightTerms** identifica los términos resaltados devueltos en una operación **FindItem** y una respuesta de la operación de **FindConversation** . 
+El elemento **HighlightTerms** identifica los términos resaltados que se devuelven en una operación **FindItem** y una respuesta de operación **FindConversation** . 
   
 ```XML
 <HighlightTerms>
@@ -28,19 +28,19 @@ El elemento **HighlightTerms** identifica los términos resaltados devueltos en 
  **ArrayOfHighlightTermsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Término
+Term
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[FindConversationResponse](findconversationresponse.md) | [FindItemResponseMessage](finditemresponsemessage.md)
+[FindConversationResponse](findconversationresponse.md)  |  [FindItemResponseMessage](finditemresponsemessage.md)
   
 ## <a name="remarks"></a>Comentarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

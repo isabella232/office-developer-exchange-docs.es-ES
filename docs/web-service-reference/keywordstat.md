@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5af26dc5-6aaf-44a0-8d05-c1d116930a51
-description: El elemento KeywordStat especifica información sobre las estadísticas de palabras clave.
-ms.openlocfilehash: 1d40ba5dfd249df3cb7d104500efdfd187b325da
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento KeywordStat especifica información de estadísticas de palabras clave.
+ms.openlocfilehash: d9c0524de04e256e94e279fd1ae0bbfd6a5de0f9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836194"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458120"
 ---
 # <a name="keywordstat"></a>KeywordStat
 
-El elemento **KeywordStat** especifica información sobre las estadísticas de palabras clave. 
+El elemento **KeywordStat** especifica información de estadísticas de palabras clave. 
   
 ```XML
 <KeywordStat>
@@ -30,15 +30,15 @@ El elemento **KeywordStat** especifica información sobre las estadísticas de p
  **KeywordStatisticsSearchResultType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Palabra clave](keyword.md) | [ItemHits](itemhits.md) | [tamaño (long)](size-long.md)
+[Palabra clave](keyword.md)  |  [ItemHits](itemhits.md)  |  [Tamaño (largo)](size-long.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 

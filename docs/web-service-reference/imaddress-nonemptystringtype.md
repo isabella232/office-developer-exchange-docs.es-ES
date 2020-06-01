@@ -1,5 +1,5 @@
 ---
-title: ImAddress (NonEmptyStringType)
+title: IMAddress (NonEmptyStringType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 13c7b0cc-f506-490b-adaa-3d01fc2400eb
-description: El elemento de propiedad ImAddress contiene la dirección de un contacto nuevo que se agregarán a un grupo de mensajería instantáneo de mensajería instantánea.
-ms.openlocfilehash: 6c7912d71eb05de3f6bd805bfb27543c543d2be4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento IMAddress contiene la dirección de mensajería instantánea de un nuevo contacto que se agregará a un grupo de mensajería instantánea.
+ms.openlocfilehash: eac3b6494f3f52dec007171462a95f9d7306530e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835859"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457609"
 ---
-# <a name="imaddress-nonemptystringtype"></a>ImAddress (NonEmptyStringType)
+# <a name="imaddress-nonemptystringtype"></a>IMAddress (NonEmptyStringType)
 
-El elemento de **propiedad ImAddress** contiene la dirección de un contacto nuevo que se agregarán a un grupo de mensajería instantáneo de mensajería instantánea. 
+El elemento **IMAddress** contiene la dirección de mensajería instantánea de un nuevo contacto que se agregará a un grupo de mensajería instantánea. 
   
 ```XML
 <ImAddress></ImAddress>
@@ -26,15 +26,15 @@ El elemento de **propiedad ImAddress** contiene la dirección de un contacto nue
  **NonEmptyStringType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ImAddress** es una dirección de mensajería instantánea. 
+El valor de texto del elemento **IMAddress** es una dirección de mensajería instantánea. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

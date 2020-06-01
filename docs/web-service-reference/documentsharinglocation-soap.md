@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 21bc388c-33be-422b-a89d-30ade0fae8f1
-description: El elemento DocumentSharingLocation contiene la ubicación y la información de metadatos de un documento de ubicación de uso compartido.
-ms.openlocfilehash: d258efecb46d570138c7c2c78ed9d2fa9a275103
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DocumentSharingLocation contiene información de ubicación y metadatos de una ubicación de uso compartido de documentos.
+ms.openlocfilehash: 6fed933da979ab3e3fca51ba606127b7f0a4e3f8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764256"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457063"
 ---
 # <a name="documentsharinglocation-soap"></a>DocumentSharingLocation (SOAP)
 
-El elemento **DocumentSharingLocation** contiene la ubicación y la información de metadatos de un documento de ubicación de uso compartido. 
+El elemento **DocumentSharingLocation** contiene información de ubicación y metadatos de una ubicación de uso compartido de documentos. 
   
 ```XML
 <DocumentSharingLocation>
@@ -34,47 +34,47 @@ El elemento **DocumentSharingLocation** contiene la ubicación y la información
  **DocumentSharingLocation**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ServiceUrl (SOAP)](serviceurl-soap.md) <br/> |Representa la dirección URL del servicio web de uso compartido de documento.  <br/> |
+|[ServiceUrl (SOAP)](serviceurl-soap.md) <br/> |Representa la dirección URL del servicio Web de uso compartido de documentos.  <br/> |
 |[LocationUrl (SOAP)](locationurl-soap.md) <br/> |Representa la dirección URL de la ubicación de uso compartido de documentos.  <br/> |
-|[DisplayName (SOAP)](displayname-soap.md) <br/> |Representa el nombre del documento de ubicación que se usará en la interfaz de usuario de uso compartido.  <br/> |
+|[DisplayName (SOAP)](displayname-soap.md) <br/> |Representa el nombre de la ubicación de uso compartido de documentos que se va a usar en la interfaz de usuario.  <br/> |
 |[SupportedFileExtensions (SOAP)](supportedfileextensions-soap.md) <br/> |Representa las extensiones de archivo que se pueden almacenar en la ubicación de uso compartido de documentos.  <br/> |
-|[ExternalAccessAllowed (SOAP)](externalaccessallowed-soap.md) <br/> |Indica si el documento en la ubicación de uso compartido está disponible a fuera de las conexiones.  <br/> |
-|[AnonymousAccessAllowed (SOAP)](anonymousaccessallowed-soap.md) <br/> |Indica si el acceso a la ubicación de uso compartido requiere un usuario autenticado.  <br/> |
+|[ExternalAccessAllowed (SOAP)](externalaccessallowed-soap.md) <br/> |Indica si la ubicación de uso compartido de documentos está disponible para conexiones externas.  <br/> |
+|[AnonymousAccessAllowed (SOAP)](anonymousaccessallowed-soap.md) <br/> |Indica si el acceso a la ubicación compartida requiere un usuario autenticado.  <br/> |
 |[CanModifyPermissions (SOAP)](canmodifypermissions-soap.md) <br/> |Indica si el usuario puede modificar los permisos de acceso a la ubicación de uso compartido de documentos.  <br/> |
-|[IsDefault (SOAP)](isdefault-soap.md) <br/> |Indica si el documento en la ubicación de uso compartido es la predeterminada del usuario ubicación de uso compartido.  <br/> |
+|[IsDefault (SOAP)](isdefault-soap.md) <br/> |Indica si la ubicación de uso compartido de documentos es la ubicación de uso compartido predeterminada del usuario.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[DocumentSharingLocations (SOAP)](documentsharinglocations-soap.md) <br/> |Contiene una lista de uso compartido de las ubicaciones y los metadatos del documento.  <br/> |
+|[DocumentSharingLocations (SOAP)](documentsharinglocations-soap.md) <br/> |Contiene una lista de los metadatos y las ubicaciones de uso compartido de documentos.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación GetUserSettings (SOAP)](getusersettings-operation-soap.md)
-- [Referencia de servicio web de detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)
-- [Elementos de Autodiscover XML SOAP para Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+- [Referencia del servicio web de Detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)
+- [Elementos XML de detección automática de SOAP para Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

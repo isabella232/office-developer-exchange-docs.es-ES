@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 27578bda-ef0a-4a33-bccc-2c1bc1735424
-description: El elemento DeleteFolderResponse define una respuesta a una solicitud de DeleteFolder.
-ms.openlocfilehash: ca6d12c847de4cfb46c4c680558ed7b256f1ecaf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DeleteFolderResponse define una respuesta a una solicitud DeleteFolder.
+ms.openlocfilehash: 58b814662c769784c5fd682a9e039863a9787d8d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764093"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458491"
 ---
 # <a name="deletefolderresponse"></a>DeleteFolderResponse
 
-El elemento **DeleteFolderResponse** define una respuesta a una solicitud de DeleteFolder. 
+El elemento **DeleteFolderResponse** define una respuesta a una solicitud DeleteFolder. 
   
 ```xml
 <DeleteFolderResponse>
@@ -32,17 +32,17 @@ El elemento **DeleteFolderResponse** define una respuesta a una solicitud de Del
  **DeleteFolderResponseType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta para una solicitud de servicios Web de Exchange.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta de una solicitud de servicios web Exchange.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -50,20 +50,20 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación DeleteFolder](deletefolder-operation.md) 
 - [DeleteFolder](deletefolder.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

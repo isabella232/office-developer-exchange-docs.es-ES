@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8f489bd4-2434-4d0a-91fe-1b5ba7eb5765
-description: El elemento DateTimeReceived representa la fecha y hora en que se recibió un elemento en un buzón de correo.
-ms.openlocfilehash: 41f8c67cb5619b258c2190532036a60a523a0ff2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DateTimeReceived representa la fecha y la hora en que se recibió un elemento en un buzón.
+ms.openlocfilehash: ad57af46b0ff22c42bfa327532d13e79280dd8b0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764035"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456566"
 ---
 # <a name="datetimereceived"></a>DateTimeReceived
 
-El elemento **DateTimeReceived** representa la fecha y hora en que se recibió un elemento en un buzón de correo. 
+El elemento **DateTimeReceived** representa la fecha y la hora en que se recibió un elemento en un buzón. 
   
 ```xml
 <DateTimeReceived/>
@@ -31,50 +31,50 @@ El elemento **DateTimeReceived** representa la fecha y hora en que se recibió u
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Item](item.md) <br/> |Representa un elemento en el almacén de Exchange.  <br/> |
-|[RemoveItem](removeitem.md) <br/> |Quita un elemento desde el almacén de Exchange.  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange.  <br/> |
-|[Tarea](task.md) <br/> |Representa una tarea en el almacén de Exchange.  <br/> |
+|[RemoveItem](removeitem.md) <br/> |Quita un elemento del almacén de Exchange.  <br/> |
+|[Mensaje](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange.  <br/> |
+|[Tarea](task.md) <br/> |Representa una tarea del almacén de Exchange.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Representa una reunión en el almacén de Exchange.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Representa una convocatoria de reunión en el almacén de Exchange.  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta a la reunión en el almacén de Exchange.  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Representa la cancelación de la reunión en el almacén de Exchange.  <br/> |
-|[Contact](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta a una reunión en el almacén de Exchange.  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Representa una cancelación de reunión en el almacén de Exchange.  <br/> |
+|[Contacto](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Representa una lista de distribución.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa la hora en la que se recibió un elemento en un buzón de correo. Esta propiedad es de sólo lectura.
+El valor de texto representa la hora a la que se recibe un elemento en un buzón. Esta propiedad es de sólo lectura.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
