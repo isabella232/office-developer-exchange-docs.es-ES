@@ -7,38 +7,38 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6180d74d-533a-4e5c-b4c1-6a1ac394bd4d
-description: El elemento DisclaimerText (EncryptionConfigurationResponseType) está pensado para uso interno únicamente.
-ms.openlocfilehash: 0bb8ecce8396abdfb9ab4d76146856267c0810cc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DisclaimerText (EncryptionConfigurationResponseType) está destinado exclusivamente para uso interno.
+ms.openlocfilehash: 1ef078c3fbe07b56dcffdbc20c66d4ece46a30c2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764187"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455635"
 ---
-# <a name="disclaimertext-encryptionconfigurationresponsetype"></a><span data-ttu-id="67a53-103">DisclaimerText (EncryptionConfigurationResponseType)</span><span class="sxs-lookup"><span data-stu-id="67a53-103">DisclaimerText (EncryptionConfigurationResponseType)</span></span>
+# <a name="disclaimertext-encryptionconfigurationresponsetype"></a><span data-ttu-id="d7616-103">DisclaimerText (EncryptionConfigurationResponseType)</span><span class="sxs-lookup"><span data-stu-id="d7616-103">DisclaimerText (EncryptionConfigurationResponseType)</span></span>
 
-<span data-ttu-id="67a53-104">El elemento **DisclaimerText (EncryptionConfigurationResponseType)** está pensado para uso interno únicamente.</span><span class="sxs-lookup"><span data-stu-id="67a53-104">The **DisclaimerText (EncryptionConfigurationResponseType)** element is intended for internal use only.</span></span> 
+<span data-ttu-id="d7616-104">El elemento **DisclaimerText (EncryptionConfigurationResponseType)** está destinado exclusivamente para uso interno.</span><span class="sxs-lookup"><span data-stu-id="d7616-104">The **DisclaimerText (EncryptionConfigurationResponseType)** element is intended for internal use only.</span></span> 
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="67a53-105">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="67a53-105">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="d7616-105">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="d7616-105">Attributes and elements</span></span>
 
-<span data-ttu-id="67a53-106">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="67a53-106">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="d7616-106">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="d7616-106">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="67a53-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="67a53-107">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="d7616-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="d7616-107">Attributes</span></span>
 
-<span data-ttu-id="67a53-108">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="67a53-108">None.</span></span>
+<span data-ttu-id="d7616-108">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="d7616-108">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="67a53-109">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="67a53-109">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="d7616-109">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="d7616-109">Child elements</span></span>
 
-<span data-ttu-id="67a53-110">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="67a53-110">None.</span></span>
+<span data-ttu-id="d7616-110">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="d7616-110">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="67a53-111">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="67a53-111">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="d7616-111">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="d7616-111">Parent elements</span></span>
 
-<span data-ttu-id="67a53-112">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="67a53-112">None.</span></span>
+<span data-ttu-id="d7616-112">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="d7616-112">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="67a53-113">Comentarios</span><span class="sxs-lookup"><span data-stu-id="67a53-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d7616-113">Comentarios</span><span class="sxs-lookup"><span data-stu-id="d7616-113">Remarks</span></span>
 
-<span data-ttu-id="67a53-114">Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).</span><span class="sxs-lookup"><span data-stu-id="67a53-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="d7616-114">Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).</span><span class="sxs-lookup"><span data-stu-id="d7616-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
   
-<span data-ttu-id="67a53-115">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="67a53-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="d7616-115">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="d7616-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
 

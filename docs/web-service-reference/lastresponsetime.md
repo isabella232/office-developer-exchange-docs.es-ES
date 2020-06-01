@@ -12,60 +12,60 @@ api_type:
 - schema
 ms.assetid: 8e66979e-4e3b-4183-aaf5-a45d8380ede5
 description: El elemento LastResponseTime representa la fecha y hora de la última respuesta recibida.
-ms.openlocfilehash: 77f79d87be0b88f8c91c04438a2541643aad8858
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 45740d1a31d9b04bbc5062e7ff8b05629abd84c4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836205"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455383"
 ---
-# <a name="lastresponsetime"></a><span data-ttu-id="fe695-103">LastResponseTime</span><span class="sxs-lookup"><span data-stu-id="fe695-103">LastResponseTime</span></span>
+# <a name="lastresponsetime"></a><span data-ttu-id="df11d-103">LastResponseTime</span><span class="sxs-lookup"><span data-stu-id="df11d-103">LastResponseTime</span></span>
 
-<span data-ttu-id="fe695-104">El elemento **LastResponseTime** representa la fecha y hora de la última respuesta recibida.</span><span class="sxs-lookup"><span data-stu-id="fe695-104">The **LastResponseTime** element represents the date and time of the latest response received.</span></span> 
+<span data-ttu-id="df11d-104">El elemento **LastResponseTime** representa la fecha y hora de la última respuesta recibida.</span><span class="sxs-lookup"><span data-stu-id="df11d-104">The **LastResponseTime** element represents the date and time of the latest response received.</span></span> 
   
 ```xml
 <LastResponseTime/>
 ```
 
- <span data-ttu-id="fe695-105">**DateTime**</span><span class="sxs-lookup"><span data-stu-id="fe695-105">**DateTime**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="fe695-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="fe695-106">Attributes and elements</span></span>
+ <span data-ttu-id="df11d-105">**DateTime**</span><span class="sxs-lookup"><span data-stu-id="df11d-105">**DateTime**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="df11d-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="df11d-106">Attributes and elements</span></span>
 
-<span data-ttu-id="fe695-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="fe695-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="df11d-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="df11d-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="fe695-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="fe695-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="df11d-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="df11d-108">Attributes</span></span>
 
-<span data-ttu-id="fe695-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="fe695-109">None.</span></span>
+<span data-ttu-id="df11d-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="df11d-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="fe695-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="fe695-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="df11d-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="df11d-110">Child elements</span></span>
 
-<span data-ttu-id="fe695-111">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="fe695-111">None.</span></span>
+<span data-ttu-id="df11d-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="df11d-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="fe695-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="fe695-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="df11d-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="df11d-112">Parent elements</span></span>
 
-|<span data-ttu-id="fe695-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="fe695-113">**Element**</span></span>|<span data-ttu-id="fe695-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="fe695-114">**Description**</span></span>|
+|<span data-ttu-id="df11d-113">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="df11d-113">**Element**</span></span>|<span data-ttu-id="df11d-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="df11d-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="fe695-115">Attendee</span><span class="sxs-lookup"><span data-stu-id="fe695-115">Attendee</span></span>](attendee.md) <br/> |<span data-ttu-id="fe695-116">Representa los asistentes y los recursos de una reunión.</span><span class="sxs-lookup"><span data-stu-id="fe695-116">Represents attendees and resources for a meeting.</span></span>  <br/> |
+|[<span data-ttu-id="df11d-115">Asistente</span><span class="sxs-lookup"><span data-stu-id="df11d-115">Attendee</span></span>](attendee.md) <br/> |<span data-ttu-id="df11d-116">Representa los asistentes y los recursos de una reunión.</span><span class="sxs-lookup"><span data-stu-id="df11d-116">Represents attendees and resources for a meeting.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="fe695-117">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="fe695-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="df11d-117">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="df11d-117">Text value</span></span>
 
-<span data-ttu-id="fe695-118">Se requiere un valor de texto que representa la fecha y hora de la respuesta más reciente.</span><span class="sxs-lookup"><span data-stu-id="fe695-118">A text value that represents the date and time of the latest response is required.</span></span>
+<span data-ttu-id="df11d-118">Es necesario un valor de texto que representa la fecha y la hora de la última respuesta.</span><span class="sxs-lookup"><span data-stu-id="df11d-118">A text value that represents the date and time of the latest response is required.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="fe695-119">Comentarios</span><span class="sxs-lookup"><span data-stu-id="fe695-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="df11d-119">Comentarios</span><span class="sxs-lookup"><span data-stu-id="df11d-119">Remarks</span></span>
 
-<span data-ttu-id="fe695-120">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange 2007 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="fe695-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="df11d-120">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="df11d-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="fe695-121">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="fe695-121">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="df11d-121">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="df11d-121">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="fe695-122">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="fe695-122">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="fe695-123">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="fe695-123">Schema name</span></span>  <br/> |<span data-ttu-id="fe695-124">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="fe695-124">Types schema</span></span>  <br/> |
-|<span data-ttu-id="fe695-125">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="fe695-125">Validation file</span></span>  <br/> |<span data-ttu-id="fe695-126">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="fe695-126">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="fe695-127">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="fe695-127">Can be empty</span></span>  <br/> |<span data-ttu-id="fe695-128">False</span><span class="sxs-lookup"><span data-stu-id="fe695-128">False</span></span>  <br/> |
+|<span data-ttu-id="df11d-122">Namespace</span><span class="sxs-lookup"><span data-stu-id="df11d-122">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="df11d-123">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="df11d-123">Schema name</span></span>  <br/> |<span data-ttu-id="df11d-124">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="df11d-124">Types schema</span></span>  <br/> |
+|<span data-ttu-id="df11d-125">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="df11d-125">Validation file</span></span>  <br/> |<span data-ttu-id="df11d-126">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="df11d-126">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="df11d-127">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="df11d-127">Can be empty</span></span>  <br/> |<span data-ttu-id="df11d-128">Falso</span><span class="sxs-lookup"><span data-stu-id="df11d-128">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="fe695-129">Vea también</span><span class="sxs-lookup"><span data-stu-id="fe695-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="df11d-129">Vea también</span><span class="sxs-lookup"><span data-stu-id="df11d-129">See also</span></span>
 
 
 
-- [<span data-ttu-id="fe695-130">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="fe695-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="df11d-130">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="df11d-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

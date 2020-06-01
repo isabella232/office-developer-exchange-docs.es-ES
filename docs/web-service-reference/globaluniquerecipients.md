@@ -11,25 +11,25 @@ api_name:
 api_type:
 - schema
 ms.assetid: 67379c1c-85d9-4b11-8f17-ad9d24904788
-description: El elemento GlobalUniqueRecipients contiene la lista de destinatarios de una conversación agregada a través de un buzón de correo.
-ms.openlocfilehash: 5eb6e60d3ece8d8369f4603e36ffaaf72a3e459d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GlobalUniqueRecipients contiene la lista de destinatarios de una conversación agregada en un buzón.
+ms.openlocfilehash: 3481c43b99f75a05a8e7fbe5a288e04708290d83
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835742"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456041"
 ---
-# <a name="globaluniquerecipients"></a><span data-ttu-id="90f52-103">GlobalUniqueRecipients</span><span class="sxs-lookup"><span data-stu-id="90f52-103">GlobalUniqueRecipients</span></span>
+# <a name="globaluniquerecipients"></a><span data-ttu-id="d5a8a-103">GlobalUniqueRecipients</span><span class="sxs-lookup"><span data-stu-id="d5a8a-103">GlobalUniqueRecipients</span></span>
 
-<span data-ttu-id="90f52-104">El elemento **GlobalUniqueRecipients** contiene la lista de destinatarios de una conversación agregada a través de un buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="90f52-104">The **GlobalUniqueRecipients** element contains the recipient list of a conversation aggregated across a mailbox.</span></span> 
+<span data-ttu-id="d5a8a-104">El elemento **GlobalUniqueRecipients** contiene la lista de destinatarios de una conversación agregada en un buzón.</span><span class="sxs-lookup"><span data-stu-id="d5a8a-104">The **GlobalUniqueRecipients** element contains the recipient list of a conversation aggregated across a mailbox.</span></span> 
   
-[<span data-ttu-id="90f52-105">FindConversationResponse</span><span class="sxs-lookup"><span data-stu-id="90f52-105">FindConversationResponse</span></span>](findconversationresponse.md)
+[<span data-ttu-id="d5a8a-105">FindConversationResponse</span><span class="sxs-lookup"><span data-stu-id="d5a8a-105">FindConversationResponse</span></span>](findconversationresponse.md)
   
-[<span data-ttu-id="90f52-106">Conversaciones</span><span class="sxs-lookup"><span data-stu-id="90f52-106">Conversations</span></span>](conversations-ex15websvcsotherref.md)
+[<span data-ttu-id="d5a8a-106">Conversaciones</span><span class="sxs-lookup"><span data-stu-id="d5a8a-106">Conversations</span></span>](conversations-ex15websvcsotherref.md)
   
-[<span data-ttu-id="90f52-107">Conversación (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="90f52-107">Conversation (ConversationType)</span></span>](conversation-conversationtype.md)
+[<span data-ttu-id="d5a8a-107">Conversación (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="d5a8a-107">Conversation (ConversationType)</span></span>](conversation-conversationtype.md)
   
-[<span data-ttu-id="90f52-108">GlobalUniqueRecipients</span><span class="sxs-lookup"><span data-stu-id="90f52-108">GlobalUniqueRecipients</span></span>](globaluniquerecipients.md)
+[<span data-ttu-id="d5a8a-108">GlobalUniqueRecipients</span><span class="sxs-lookup"><span data-stu-id="d5a8a-108">GlobalUniqueRecipients</span></span>](globaluniquerecipients.md)
   
 ```XML
 <GlobalUniqueRecipients>
@@ -37,52 +37,52 @@ ms.locfileid: "19835742"
 </GlobalUniqueRecipients>
 ```
 
- <span data-ttu-id="90f52-109">**ArrayOfStringsType**</span><span class="sxs-lookup"><span data-stu-id="90f52-109">**ArrayOfStringsType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="90f52-110">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="90f52-110">Attributes and elements</span></span>
+ <span data-ttu-id="d5a8a-109">**ArrayOfStringsType**</span><span class="sxs-lookup"><span data-stu-id="d5a8a-109">**ArrayOfStringsType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="d5a8a-110">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="d5a8a-110">Attributes and elements</span></span>
 
-<span data-ttu-id="90f52-111">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="90f52-111">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="d5a8a-111">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="d5a8a-111">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="90f52-112">Atributos</span><span class="sxs-lookup"><span data-stu-id="90f52-112">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="d5a8a-112">Atributos</span><span class="sxs-lookup"><span data-stu-id="d5a8a-112">Attributes</span></span>
 
-<span data-ttu-id="90f52-113">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="90f52-113">None.</span></span>
+<span data-ttu-id="d5a8a-113">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="d5a8a-113">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="90f52-114">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="90f52-114">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="d5a8a-114">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="d5a8a-114">Child elements</span></span>
 
-|<span data-ttu-id="90f52-115">**Element**</span><span class="sxs-lookup"><span data-stu-id="90f52-115">**Element**</span></span>|<span data-ttu-id="90f52-116">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="90f52-116">**Description**</span></span>|
+|<span data-ttu-id="d5a8a-115">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="d5a8a-115">**Element**</span></span>|<span data-ttu-id="d5a8a-116">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="d5a8a-116">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="90f52-117">String</span><span class="sxs-lookup"><span data-stu-id="90f52-117">String</span></span>](string.md) <br/> |<span data-ttu-id="90f52-118">Contiene a un destinatario de la misma conversación.</span><span class="sxs-lookup"><span data-stu-id="90f52-118">Contains a single conversation recipient.</span></span>  <br/> |
+|[<span data-ttu-id="d5a8a-117">String</span><span class="sxs-lookup"><span data-stu-id="d5a8a-117">String</span></span>](string.md) <br/> |<span data-ttu-id="d5a8a-118">Contiene un único destinatario de la conversación.</span><span class="sxs-lookup"><span data-stu-id="d5a8a-118">Contains a single conversation recipient.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="90f52-119">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="90f52-119">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="d5a8a-119">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="d5a8a-119">Parent elements</span></span>
 
-|<span data-ttu-id="90f52-120">**Element**</span><span class="sxs-lookup"><span data-stu-id="90f52-120">**Element**</span></span>|<span data-ttu-id="90f52-121">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="90f52-121">**Description**</span></span>|
+|<span data-ttu-id="d5a8a-120">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="d5a8a-120">**Element**</span></span>|<span data-ttu-id="d5a8a-121">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="d5a8a-121">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="90f52-122">Conversación (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="90f52-122">Conversation (ConversationType)</span></span>](conversation-conversationtype.md) <br/> |<span data-ttu-id="90f52-123">Representa una sola conversación.</span><span class="sxs-lookup"><span data-stu-id="90f52-123">Represents a single conversation.</span></span>  <br/> |
+|[<span data-ttu-id="d5a8a-122">Conversación (ConversationType)</span><span class="sxs-lookup"><span data-stu-id="d5a8a-122">Conversation (ConversationType)</span></span>](conversation-conversationtype.md) <br/> |<span data-ttu-id="d5a8a-123">Representa una sola conversación.</span><span class="sxs-lookup"><span data-stu-id="d5a8a-123">Represents a single conversation.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="90f52-124">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="90f52-124">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="d5a8a-124">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="d5a8a-124">Text value</span></span>
 
-<span data-ttu-id="90f52-125">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="90f52-125">None.</span></span>
+<span data-ttu-id="d5a8a-125">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="d5a8a-125">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="90f52-126">Comentarios</span><span class="sxs-lookup"><span data-stu-id="90f52-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d5a8a-126">Comentarios</span><span class="sxs-lookup"><span data-stu-id="d5a8a-126">Remarks</span></span>
 
-<span data-ttu-id="90f52-127">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda Exchange Web Services.This elemento fue introdujo en Exchange Server 2010 Service Pack 1 (SP1).</span><span class="sxs-lookup"><span data-stu-id="90f52-127">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="d5a8a-127">El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda los servicios Web de Exchange. este elemento se introdujo en Exchange Server 2010 Service Pack 1 (SP1).</span><span class="sxs-lookup"><span data-stu-id="d5a8a-127">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.This element was introduced in Exchange Server 2010 Service Pack 1 (SP1).</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="90f52-128">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="90f52-128">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="d5a8a-128">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="d5a8a-128">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="90f52-129">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="90f52-129">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="90f52-130">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="90f52-130">Schema name</span></span>  <br/> |<span data-ttu-id="90f52-131">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="90f52-131">Types schema</span></span>  <br/> |
-|<span data-ttu-id="90f52-132">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="90f52-132">Validation file</span></span>  <br/> |<span data-ttu-id="90f52-133">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="90f52-133">types.xsd</span></span>  <br/> |
-|<span data-ttu-id="90f52-134">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="90f52-134">Can be empty</span></span>  <br/> |<span data-ttu-id="90f52-135">False</span><span class="sxs-lookup"><span data-stu-id="90f52-135">False</span></span>  <br/> |
+|<span data-ttu-id="d5a8a-129">Namespace</span><span class="sxs-lookup"><span data-stu-id="d5a8a-129">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="d5a8a-130">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="d5a8a-130">Schema name</span></span>  <br/> |<span data-ttu-id="d5a8a-131">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="d5a8a-131">Types schema</span></span>  <br/> |
+|<span data-ttu-id="d5a8a-132">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="d5a8a-132">Validation file</span></span>  <br/> |<span data-ttu-id="d5a8a-133">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="d5a8a-133">types.xsd</span></span>  <br/> |
+|<span data-ttu-id="d5a8a-134">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="d5a8a-134">Can be empty</span></span>  <br/> |<span data-ttu-id="d5a8a-135">Falso</span><span class="sxs-lookup"><span data-stu-id="d5a8a-135">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="90f52-136">Vea también</span><span class="sxs-lookup"><span data-stu-id="90f52-136">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d5a8a-136">Vea también</span><span class="sxs-lookup"><span data-stu-id="d5a8a-136">See also</span></span>
 
 
 
-[<span data-ttu-id="90f52-137">Operación de FindConversation</span><span class="sxs-lookup"><span data-stu-id="90f52-137">FindConversation operation</span></span>](findconversation-operation.md)
+[<span data-ttu-id="d5a8a-137">Operación FindConversation</span><span class="sxs-lookup"><span data-stu-id="d5a8a-137">FindConversation operation</span></span>](findconversation-operation.md)
   
-[<span data-ttu-id="90f52-138">Operación ApplyConversationAction</span><span class="sxs-lookup"><span data-stu-id="90f52-138">ApplyConversationAction operation</span></span>](applyconversationaction-operation.md)
+[<span data-ttu-id="d5a8a-138">Operación ApplyConversationAction</span><span class="sxs-lookup"><span data-stu-id="d5a8a-138">ApplyConversationAction operation</span></span>](applyconversationaction-operation.md)
 
 
-[<span data-ttu-id="90f52-139">Conversaciones de EWS</span><span class="sxs-lookup"><span data-stu-id="90f52-139">Conversations in EWS</span></span>](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+[<span data-ttu-id="d5a8a-139">Conversaciones en EWS</span><span class="sxs-lookup"><span data-stu-id="d5a8a-139">Conversations in EWS</span></span>](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 
