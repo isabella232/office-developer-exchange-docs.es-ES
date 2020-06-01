@@ -3,15 +3,15 @@ title: Detección automática de Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: da0f9402-4e35-42c7-a15e-1e9e4e966e8b
 description: Información sobre el servicio Detección automática de Exchange.
-ms.openlocfilehash: f56717eaced5db9028c556c6c2d9aa7794f4988e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: 913ec3fef93900a1b5fa7aa342e8bca149c88b7b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763019"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44437775"
 ---
 # <a name="autodiscover-for-exchange"></a>Detección automática de Exchange
 
@@ -24,7 +24,7 @@ El servicio Detección automática de Exchange proporciona una manera sencilla p
 
 Básicamente, el proceso Detección automática tiene tres fases. En la primera fase, se genera una lista de servidores de Detección automática posibles y, en la segunda fase, se prueba cada servidor de la lista hasta que se obtiene una respuesta correcta. Si ninguno de los candidatos funciona, pasa a la fase tres, que representa una intento "última zanja" de buscar un extremo de Detección automática.
   
-El método [ExchangeService.AutodiscoverUrl](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.exchangeservice.autodiscoverurl%28v=exchg.80%29.aspx) de la API administrada EWS implementa las tres fases de este proceso por lo que, si usa la API administrada EWS, no tiene que preocuparse de implementar la Detección automática. La siguiente figura muestra las tres fases del proceso Detección automática. 
+El método [ExchangeService.AutodiscoverUrl](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.autodiscoverurl%28v=exchg.80%29.aspx) de la API administrada EWS implementa las tres fases de este proceso por lo que, si usa la API administrada EWS, no tiene que preocuparse de implementar la Detección automática. La siguiente figura muestra las tres fases del proceso Detección automática. 
   
 **Figura 1. Las tres fases del proceso Detección automática**
 
@@ -40,7 +40,7 @@ Antes de poder usar Detección automática, tiene que buscar el servidor Detecci
 |**Lugar para buscar**|**Lo que puede encontrar**|
 |:-----|:-----|
 |Servicios de dominio de Active Directory (AD DS)  <br/> |Para los clientes combinados por un dominio, este es el primer lugar para buscar. Exchange publica objetos de punto de conexión de servicio (SCP) en AD DS, lo que permite que las solicitudes de Detección automática se enruten a los servidores basados en sitios de Active Directory. Los resultados de una [búsqueda SCP](how-to-find-autodiscover-endpoints-by-using-scp-lookup-in-exchange.md) deben estar en la parte superior de la lista de candidatos.  <br/><br/>**NOTA**: La búsqueda SCP no está disponible para los clientes que no están combinados en un dominio o que no tienen acceso a los servidores de Active Directory. En este caso, debe omitir la búsqueda SCP. <br/>|
-|El dominio de la dirección de correo electrónico del usuario  <br/> | La Detección automática define dos formularios de URL de extremo estándar que se derivan de la parte de dominio de la dirección de correo electrónico del usuario:  <br/>`"https://" + domain + "/autodiscover/autodiscover" +  *fileExtension*`  <br/>`"https://autodiscover." + domain + "/autodiscover/autodiscover" +  *fileExtension*`<br/><br/>  El valor de  *fileExtension*  depende del método de acceso a Detección automática que use, [SOAP](http://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx) o [POX](http://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx). El servicio SOAP usa una extensión de archivo ".svc"; POX usa ".xml".  <br/> |
+|El dominio de la dirección de correo electrónico del usuario  <br/> | La Detección automática define dos formularios de URL de extremo estándar que se derivan de la parte de dominio de la dirección de correo electrónico del usuario:  <br/>`"https://" + domain + "/autodiscover/autodiscover" +  *fileExtension*`  <br/>`"https://autodiscover." + domain + "/autodiscover/autodiscover" +  *fileExtension*`<br/><br/>  El valor de  *fileExtension*  depende del método de acceso a Detección automática que use, [SOAP](https://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx) o [POX](https://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx). El servicio SOAP usa una extensión de archivo ".svc"; POX usa ".xml".  <br/> |
    
 La siguiente figura muestra cómo generar una lista de extremos de Detección automática.
   
@@ -72,9 +72,9 @@ El tipo de solicitud que envíe depende de cómo accede al servicio Detección a
 
 |**Si usa...**|**Enviar una solicitud con...**|
 |:-----|:-----|
-|La API administrada EWS  <br/> |El método [GetUserSettings ](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx).  <br/> |
-|El servicio Detección automática de SOAP  <br/> |La operación [GetUserSettings ](http://msdn.microsoft.com/library/758d965c-ef63-4de4-9120-e293abf14ff8%28Office.15%29.aspx).  <br/> |
-|El servicio Detección automática de POX  <br/> |Un HTTP POST con un [cuerpo de solicitud de Detección automática](http://msdn.microsoft.com/library/75671b1d-f35b-497b-8d8c-706f3f2535fd%28Office.15%29.aspx).  <br/> |
+|La API administrada EWS  <br/> |El método [GetUserSettings ](https://msdn.microsoft.com/library/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx).  <br/> |
+|El servicio Detección automática de SOAP  <br/> |La operación [GetUserSettings ](https://msdn.microsoft.com/library/758d965c-ef63-4de4-9120-e293abf14ff8%28Office.15%29.aspx).  <br/> |
+|El servicio Detección automática de POX  <br/> |Un HTTP POST con un [cuerpo de solicitud de Detección automática](https://msdn.microsoft.com/library/75671b1d-f35b-497b-8d8c-706f3f2535fd%28Office.15%29.aspx).  <br/> |
    
 ### <a name="phase-3-trying-other-alternatives"></a>Fase 3: Probar otras alternativas
 <a name="bk_Phase3"> </a>
@@ -102,9 +102,9 @@ Puede acceder a Detección automática con el servicio web POX o SOAP. El métod
 
 |**Opción**|**Ventajas**|**Inconvenientes**|
 |:-----|:-----|:-----|
-|[API administrada EWS](get-started-with-ews-managed-api-client-applications.md) <br/> | Implementa el proceso Detección automática.<br/><br/>Usa los servicios Detección automática de POX y SOAP.<br/><br/>Funciona con Exchange Online, Exchange Online como parte de Office 365 o una versión de Exchange a partir de Exchange 2007 SP1.<br/><br/>Fácil de usar.  <br/> | Limitado a la configuración de usuario disponible en la enumeración [Microsoft.Exchange.WebServices.Autodiscover.UserSettingName ](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.autodiscover.usersettingname%28v=EXCHG.80%29.aspx).<br/><br/>Solo está disponible para las aplicaciones de .NET Framework.  <br/> |
-|[Detección automática de SOAP](http://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx) <br/> | Independiente de la plataforma.<br/><br/>Permite solicitar solo la configuración que le interesa.  <br/> | No está disponible en Exchange 2007.  <br/> |
-|[Detección automática de POX ](http://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx) <br/> | Independiente de la plataforma.<br/><br/>Compatible en Exchange Online y todas las versiones de Exchange a partir de Exchange 2007 SP1.  <br/> | No permite solicitar una configuración específica.  <br/> |
+|[API administrada EWS](get-started-with-ews-managed-api-client-applications.md) <br/> | Implementa el proceso Detección automática.<br/><br/>Usa los servicios Detección automática de POX y SOAP.<br/><br/>Funciona con Exchange Online, Exchange Online como parte de Office 365 o una versión de Exchange a partir de Exchange 2007 SP1.<br/><br/>Fácil de usar.  <br/> | Limitado a la configuración de usuario disponible en la enumeración [Microsoft.Exchange.WebServices.Autodiscover.UserSettingName ](https://msdn.microsoft.com/library/microsoft.exchange.webservices.autodiscover.usersettingname%28v=EXCHG.80%29.aspx).<br/><br/>Solo está disponible para las aplicaciones de .NET Framework.  <br/> |
+|[Detección automática de SOAP](https://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx) <br/> | Independiente de la plataforma.<br/><br/>Permite solicitar solo la configuración que le interesa.  <br/> | No está disponible en Exchange 2007.  <br/> |
+|[Detección automática de POX ](https://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx) <br/> | Independiente de la plataforma.<br/><br/>Compatible en Exchange Online y todas las versiones de Exchange a partir de Exchange 2007 SP1.  <br/> | No permite solicitar una configuración específica.  <br/> |
    
 ## <a name="in-this-section"></a>En esta sección
 
@@ -127,8 +127,8 @@ Puede acceder a Detección automática con el servicio web POX o SOAP. El métod
 ## <a name="see-also"></a>Vea también
 
 - [Empezar a usar los servicios web de Exchange](start-using-web-services-in-exchange.md)    
-- [Exchange 2013: Obtener la configuración de usuario con Detección automática ](http://code.msdn.microsoft.com/Exchange-2013-Get-user-7e22c86e)
-- [Ejemplo de Comprobador de Detección automática](http://code.msdn.microsoft.com/exchange/Autodiscover-Checker-e1ebca42)  
+- [Exchange 2013: Obtener la configuración de usuario con Detección automática ](https://code.msdn.microsoft.com/Exchange-2013-Get-user-7e22c86e)
+- [Ejemplo de Comprobador de Detección automática](https://code.msdn.microsoft.com/exchange/Autodiscover-Checker-e1ebca42)  
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
     
 

@@ -3,15 +3,15 @@ title: Obtener la configuración de dominio de un servidor de Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 2f9acb81-5135-4f72-94e8-65c235d725e6
 description: Aprenda a obtener la configuración del dominio de un servidor Exchange mediante el servicio Detección automática.
-ms.openlocfilehash: 0dd990cc82762936e7827115685ce0178eafb5ae
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: e77810089b77f614f6bca064b2e5cf6bde2bff7c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763070"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455810"
 ---
 # <a name="get-domain-settings-from-an-exchange-server"></a>Obtener la configuración de dominio de un servidor de Exchange
 
@@ -72,7 +72,7 @@ Antes de que use la Detección automática para obtener la configuración del do
 |[Detección automática en Exchange](autodiscover-for-exchange.md) <br/> |Proporciona información general del funcionamiento del servicio Detección automática.  <br/> |
 |[Usar autodetección para buscar puntos de conexión](how-to-use-autodiscover-to-find-connection-points.md) <br/> |Describe el proceso que ha usado el servicio Detección automática para redirigir la aplicación cliente al punto de conexión de servicio correcto.  <br/> |
    
-Si usa la API administrada de EWS, usa la clase [Microsoft.Exchange.WebServices.Data.ExchangeService](http://msdn.microsoft.com/es-ES/library/exchange/dd635811%28v=exchg.80%29.aspx) del espacio de nombres [Microsoft.Exchange.WebServices.Data](http://msdn.microsoft.com/es-ES/library/exchange/dd633907%28v=exchg.80%29.aspx) para administrar la conexión con EWS. En los ejemplos de código de esta sección se asume que hace referencia a los siguientes espacios de nombres en el código: 
+Si usa la API administrada de EWS, usa la clase [Microsoft.Exchange.WebServices.Data.ExchangeService](https://msdn.microsoft.com/library/exchange/dd635811%28v=exchg.80%29.aspx) del espacio de nombres [Microsoft.Exchange.WebServices.Data](https://msdn.microsoft.com/library/exchange/dd633907%28v=exchg.80%29.aspx) para administrar la conexión con EWS. En los ejemplos de código de esta sección se asume que hace referencia a los siguientes espacios de nombres en el código: 
   
 - **System.Net**
     
@@ -81,7 +81,7 @@ Si usa la API administrada de EWS, usa la clase [Microsoft.Exchange.WebServices.
 ## <a name="get-domain-settings-by-using-the-ews-managed-api"></a>Obtener la configuración del dominio mediante la API administrada de EWS
 <a name="bk_Managed"> </a>
 
-Si usa la API administrada de EWS, puede usar el método [Microsoft.Exchange.WebServices.Data.AutodiscoverSettings.GetUserSettings](http://msdn.microsoft.com/es-ES/library/exchange/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) del objeto [Microsoft.Exchange.WebServices.Data.AutodiscoverService ](http://msdn.microsoft.com/es-ES/library/exchange/dd634321%28v=exchg.80%29.aspx) para generar la solicitud que recupera información de configuración para un dominio, como se muestra en el ejemplo siguiente. En este ejemplo, solo se solicitan algunas de las posibles opciones de configuración del dominio, y solo las opciones de configuración solicitadas se devuelven del servidor. 
+Si usa la API administrada de EWS, puede usar el método [Microsoft.Exchange.WebServices.Data.AutodiscoverSettings.GetUserSettings](https://msdn.microsoft.com/library/exchange/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) del objeto [Microsoft.Exchange.WebServices.Data.AutodiscoverService ](https://msdn.microsoft.com/library/exchange/dd634321%28v=exchg.80%29.aspx) para generar la solicitud que recupera información de configuración para un dominio, como se muestra en el ejemplo siguiente. En este ejemplo, solo se solicitan algunas de las posibles opciones de configuración del dominio, y solo las opciones de configuración solicitadas se devuelven del servidor. 
   
 ```cs
 AutodiscoverService autodiscoverService = new AutodiscoverService("domain.contoso.com");
@@ -119,17 +119,17 @@ En el siguiente ejemplo se muestra una solicitud XML de SOAP para obtener la con
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+<soap:Envelope xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
         xmlns:wsa="http://www.w3.org/2005/08/addressing" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+        xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <a:RequestedServerVersion>Exchange2013</a:RequestedServerVersion>
-    <wsa:Action>http://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetDomainSettings</wsa:Action>
+    <wsa:Action>https://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetDomainSettings</wsa:Action>
     <wsa:To>https://autodiscover.exchange.microsoft.com/autodiscover/autodiscover.svc</wsa:To>
   </soap:Header>
   <soap:Body>
-    <a:GetDomainSettingsRequestMessage xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <a:GetDomainSettingsRequestMessage xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <a:Request>
         <a:Domains>
           <a:Domain>domain</a:Domain>
@@ -148,12 +148,12 @@ En el siguiente ejemplo se muestra una solicitud XML de SOAP para obtener la con
 En el siguiente ejemplo se muestra la respuesta XML que se ha devuelto del servidor después de que analice la solicitud del cliente.
   
 ```XML
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" 
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/" 
         xmlns:a="http://www.w3.org/2005/08/addressing">
   <s:Header>
-    <a:Action s:mustUnderstand="1">http://schemas.microsoft.com/exchange/2010/
+    <a:Action s:mustUnderstand="1">https://schemas.microsoft.com/exchange/2010/
           Autodiscover/Autodiscover/GetDomainSettingsResponse</a:Action>
-    <h:ServerVersionInfo xmlns:h="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+    <h:ServerVersionInfo xmlns:h="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
           xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
       <h:MajorVersion>15</h:MajorVersion>
       <h:MinorVersion>0</h:MinorVersion>
@@ -163,7 +163,7 @@ En el siguiente ejemplo se muestra la respuesta XML que se ha devuelto del servi
     </h:ServerVersionInfo>
   </s:Header>
   <s:Body>
-    <GetDomainSettingsResponseMessage xmlns="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <GetDomainSettingsResponseMessage xmlns="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <Response xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
         <ErrorCode>NoError</ErrorCode>
         <ErrorMessage />
@@ -203,8 +203,8 @@ La configuración de dominio proporciona la información básica que su cliente 
 
 - [Configurar la aplicación EWS](setting-up-your-ews-application.md)
     
-- [Referencia del servicio web de Detección automática para Exchange](http://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)
+- [Referencia del servicio web de Detección automática para Exchange](https://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)
     
-- [Referencia EWS para Exchange](http://msdn.microsoft.com/library/2a873474-1bb2-4cb1-a556-40e8c4159f4a%28Office.15%29.aspx)
+- [Referencia EWS para Exchange](https://msdn.microsoft.com/library/2a873474-1bb2-4cb1-a556-40e8c4159f4a%28Office.15%29.aspx)
     
 
