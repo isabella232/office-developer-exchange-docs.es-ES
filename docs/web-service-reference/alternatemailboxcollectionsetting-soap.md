@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 0ba37d5b-3c19-4fdd-a196-b4723e6ba1b0
-description: El elemento AlternateMailboxCollectionSetting contiene una colección de configuración de buzón de correo alternativas.
-ms.openlocfilehash: 4abff2a36b3937a9a24e44104d18722b5e5b5ec5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AlternateMailboxCollectionSetting contiene una colección de configuraciones de buzón de correo alternativas.
+ms.openlocfilehash: 549aa297ca44106e1539080c369d6e7060a0bd43
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763430"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456230"
 ---
 # <a name="alternatemailboxcollectionsetting-soap"></a>AlternateMailboxCollectionSetting (SOAP)
 
-El elemento **AlternateMailboxCollectionSetting** contiene una colección de configuración de buzón de correo alternativas. 
+El elemento **AlternateMailboxCollectionSetting** contiene una colección de configuraciones de buzón de correo alternativas. 
   
 ```XML
 <AlternateMailboxCollectionSetting>
@@ -29,36 +29,36 @@ El elemento **AlternateMailboxCollectionSetting** contiene una colección de con
  **AlternateMailboxCollectionSetting**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AlternateMailboxes (SOAP)](alternatemailboxes-soap.md) <br/> |Representa una colección de buzones de correo alternativas.  <br/> |
+|[AlternateMailboxes (SOAP)](alternatemailboxes-soap.md) <br/> |Representa una colección de buzones de correo alternativos.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Referencia de servicio web de detección automática de SOAP para Exchange](soap-autodiscover-web-service-reference-for-exchange.md)
+- [Referencia del servicio Web de detección automática de SOAP para Exchange](soap-autodiscover-web-service-reference-for-exchange.md)
 

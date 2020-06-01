@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c7e3035e-a4ef-4c11-8cb0-214790a554ff
-description: El elemento IsEnabled indica si está habilitada la regla.
-ms.openlocfilehash: d0f0a77ec1ec952ac1cd9d9ad686ccfcb8f70c42
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento IsEnabled indica si la regla está habilitada.
+ms.openlocfilehash: 7a150dc4a27cf4ff7da9825d1daae2b747088539
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836000"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455313"
 ---
 # <a name="isenabled"></a>IsEnabled
 
-El elemento **IsEnabled** indica si está habilitada la regla. 
+El elemento **IsEnabled** indica si la regla está habilitada. 
   
 ```XML
 <IsEnabled/>
@@ -30,21 +30,21 @@ El elemento **IsEnabled** indica si está habilitada la regla.
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Regla (RuleType)](rule-ruletype.md) <br/> |Representa una regla en el buzón del usuario.  <br/> |
+|[Regla (RuleType)](rule-ruletype.md) <br/> |Representa una regla en el buzón de correo del usuario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -58,14 +58,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

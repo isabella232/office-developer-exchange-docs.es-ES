@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 87440a49-64e2-4d97-bb1d-443c04ad24e8
-description: El elemento apellidos especifica una matriz de valores de apellido y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: ffac7c3b03a501dd11bec5d57e9e5814ff612aa7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento apellidos especifica una matriz de valores de apellidos y los identificadores de sus atribuciones de origen para el rol asociado.
+ms.openlocfilehash: 77c1278a5c7d946ded1eec9c11ffdba631f878b9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840608"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455922"
 ---
 # <a name="surnames"></a>Apellidos
 
-El elemento **Apellidos** especifica una matriz de valores de apellido y los identificadores de sus atribuciones de origen para el rol asociado. 
+El elemento **apellidos** especifica una matriz de valores de apellidos y los identificadores de sus atribuciones de origen para el rol asociado. 
   
 ```XML
 <Surnames>
@@ -28,11 +28,11 @@ El elemento **Apellidos** especifica una matriz de valores de apellido y los ide
  **ArrayOfStringAttributedValuesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

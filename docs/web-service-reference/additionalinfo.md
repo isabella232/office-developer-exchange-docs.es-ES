@@ -7,45 +7,45 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 50bebbab-2fef-4a27-a5a9-32d7200820b6
-description: El elemento AdditionalInfo especifica información adicional sobre el estado de espera de un buzón de correo.
-ms.openlocfilehash: 6fbe24d5d3e41f2ba9c81657b2c38240d10eefed
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AdditionalInfo especifica información adicional sobre el estado de conservación de un buzón.
+ms.openlocfilehash: 1911ff3ac0baf7a8854c0609e08959a54cc27b6d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763405"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455824"
 ---
 # <a name="additionalinfo"></a>AdditionalInfo
 
-El elemento **AdditionalInfo** especifica información adicional sobre el estado de espera de un buzón de correo. 
+El elemento **AdditionalInfo** especifica información adicional sobre el estado de conservación de un buzón. 
   
 ```XML
 <AdditionalInfo></AdditionalInfo>
 ```
 
- **xs: String**
+ **XS: String**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[MailboxHoldStatus](mailboxholdstatus.md) <br/> |Especifica el estado de retención del buzón.  <br/> |
-|[NonIndexableItemDetail](nonindexableitemdetail.md) <br/> |Especifica los detalles de un elemento que no se pueden indizar.  <br/> |
+|[MailboxHoldStatus](mailboxholdstatus.md) <br/> |Especifica el estado de suspensión del buzón.  <br/> |
+|[NonIndexableItemDetail](nonindexableitemdetail.md) <br/> |Especifica los detalles de un elemento que no se puede indizar.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento AdditionalInfo es información adicional sobre el estado de espera de un buzón de correo.
+El valor de texto del elemento AdditionalInfo es información adicional sobre el estado de conservación de un buzón.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -59,12 +59,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

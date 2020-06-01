@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cb18434f-5f41-4e05-a5ce-d921b2721a8c
-description: El elemento FreeBusyView contiene la información de disponibilidad para un usuario específico.
-ms.openlocfilehash: d0d603f18642a94e841a1a6bb8e8849aa6b5b273
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento FreeBusyView contiene información de disponibilidad de un usuario específico.
+ms.openlocfilehash: e5cc3bea6b57d5c400dd9be44bf9f9aaf9e43eb9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764718"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456104"
 ---
 # <a name="freebusyview"></a>FreeBusyView
 
-El elemento **FreeBusyView** contiene la información de disponibilidad para un usuario específico. 
+El elemento **FreeBusyView** contiene información de disponibilidad de un usuario específico. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -43,41 +43,41 @@ El elemento **FreeBusyView** contiene la información de disponibilidad para un 
  **FreeBusyView**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FreeBusyViewType](freebusyviewtype.md) <br/> |Representa el tipo de información de disponibilidad solicitada devuelto en la respuesta.  <br/> |
-|[MergedFreeBusy](mergedfreebusy.md) <br/> |Contiene la secuencia de libre/ocupado combinada de datos.  <br/> |
-|[CalendarEventArray](calendareventarray.md) <br/> |Contiene un conjunto de repeticiones de elemento de calendario únicos que representan la disponibilidad del usuario solicitado.  <br/> |
-|[WorkingHours](workinghours-ex15websvcsotherref.md) <br/> |Representa la configuración de zona horaria y horario laboral para el usuario del buzón solicitado.  <br/> |
+|[FreeBusyViewType](freebusyviewtype.md) <br/> |Representa el tipo de información de disponibilidad solicitada devuelta en la respuesta.  <br/> |
+|[MergedFreeBusy](mergedfreebusy.md) <br/> |Contiene la secuencia de datos de disponibilidad combinada.  <br/> |
+|[CalendarEventArray](calendareventarray.md) <br/> |Contiene un conjunto de ocurrencias de elemento de calendario únicas que representan la disponibilidad del usuario solicitado.  <br/> |
+|[WorkingHours](workinghours-ex15websvcsotherref.md) <br/> |Representa la configuración de la zona horaria y el horario laboral del usuario del buzón solicitado.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FreeBusyResponse](freebusyresponse.md) <br/> |Contiene la información de disponibilidad para un usuario de buzón único.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse` <br/> |
+|[FreeBusyResponse](freebusyresponse.md) <br/> |Contiene la información de disponibilidad de un único usuario de buzón de correo.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Todos los elementos secundarios se enumeran en la secuencia en la que se producen. El nivel de detalle proporcionado por este elemento depende de los permisos concedidos para el solicitante.
+Todos los elementos secundarios se enumeran en la secuencia en que se producen. El nivel de detalle proporcionado por este elemento depende de los permisos concedidos al solicitante.
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -88,5 +88,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

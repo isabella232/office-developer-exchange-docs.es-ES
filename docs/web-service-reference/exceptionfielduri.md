@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7afda93a-0f8c-4c9e-8e09-f1b0bfc928bf
-description: El elemento ExceptionFieldURI identifica errores particulares en una solicitud. Este elemento solo se usa como parte de una respuesta de error en el nodo MessageXml.
-ms.openlocfilehash: 79909405179cec0d0b86ad12bf52031e1daeb790
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ExceptionFieldURI identifica errores concretos en una solicitud. Este elemento solo se usa como parte de una respuesta de error en el nodo MessageXml.
+ms.openlocfilehash: a47d44098f85d8bacb1e7a2c48a33e478e56c7ac
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764466"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44454347"
 ---
 # <a name="exceptionfielduri"></a>ExceptionFieldURI
 
-El elemento **ExceptionFieldURI** identifica errores particulares en una solicitud. Este elemento solo se usa como parte de una respuesta de error en el nodo [MessageXml](messagexml.md) . 
+El elemento **ExceptionFieldURI** identifica errores concretos en una solicitud. Este elemento solo se usa como parte de una respuesta de error en el nodo [MessageXml](messagexml.md) . 
   
 ```xml
 <ExceptionFieldURI FieldURI="" />
@@ -30,54 +30,54 @@ El elemento **ExceptionFieldURI** identifica errores particulares en una solicit
  **ExceptionPropertyURIType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**FieldURI** <br/> |Identifica una propiedad de una ocurrencia de un elemento periódico. Este atributo es necesario.  <br/> |
+|**FieldURI** <br/> |Identifica una propiedad de una ocurrencia de un elemento periódico. Este atributo es obligatorio.  <br/> |
    
 #### <a name="fielduri-attribute"></a>Atributo FieldURI
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Nombre del archivo adjunto:  <br/> |Identifica el nombre de datos adjuntos como que contiene un error.  <br/> |
-|datos adjuntos: ContentType  <br/> |Identifica el tipo de contenido como que contiene un error.  <br/> |
+|datos adjuntos: nombre  <br/> |Identifica el nombre de datos adjuntos que contiene un error.  <br/> |
+|datos adjuntos: ContentType  <br/> |Identifica el tipo de contenido que contiene un error.  <br/> |
 |datos adjuntos: contenido  <br/> |Identifica el contenido como que contiene un error.  <br/> |
-|Mes de periodicidad:  <br/> |Identifica el campo mes como que contiene un error.  <br/> |
-|Periodicidad: DayOfWeekIndex  <br/> |Identifica el día de índice de la semana como que contiene un error.  <br/> |
-|Periodicidad: DaysOfWeek  <br/> |Identifica la propiedad DaysOfWeek como que contiene un error.  <br/> |
-|Periodicidad: DayOfMonth  <br/> |Identifica el DayOfMonth como que contiene un error.  <br/> |
-|Intervalo de periodicidad:  <br/> |Identifica el intervalo como que contiene un error.  <br/> |
-|Periodicidad: NumberOfOccurrences  <br/> |Identifica el número de repeticiones como que contiene un error.  <br/> |
+|periodicidad: mes  <br/> |Identifica el campo month con un error.  <br/> |
+|periodicidad: DayOfWeekIndex  <br/> |Identifica el índice del día de la semana que contiene un error.  <br/> |
+|periodicidad: DaysOfWeek  <br/> |Identifica la propiedad DaysOfWeek que contiene un error.  <br/> |
+|periodicidad: DayOfMonth  <br/> |Identifica el DayOfMonth que contiene un error.  <br/> |
+|periodicidad: intervalo  <br/> |Identifica el intervalo como que contiene un error.  <br/> |
+|periodicidad: NumberOfOccurrences  <br/> |Identifica el número de repeticiones que contienen un error.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[MessageXml](messagexml.md) <br/> |Proporciona información de la respuesta de error adicionales.  <br/> |
+|[MessageXml](messagexml.md) <br/> |Proporciona información de respuesta de error adicional.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

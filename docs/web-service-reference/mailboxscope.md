@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c9778823-f290-4827-ba19-5f391ed4f877
-description: El elemento MailboxScope identifica si una búsqueda u obtención de una conversación debe abarcar el buzón principal, buzón de archivo o ambos la principal y archivar el buzón de correo.
-ms.openlocfilehash: 89c9776079d686b114d6b744150f1c6df3711eab
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MailboxScope identifica si una búsqueda o búsqueda para una conversación debe abarcar el buzón principal, el buzón de archivo o bien el buzón de archivo y el principal.
+ms.openlocfilehash: 92823c06d4fe186917c3cfb532eda821bd6a95a7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836293"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455376"
 ---
 # <a name="mailboxscope"></a>MailboxScope
 
-El elemento **MailboxScope** identifica si una búsqueda u obtención de una conversación debe abarcar el buzón principal, buzón de archivo o ambos la principal y archivar el buzón de correo. 
+El elemento **MailboxScope** identifica si una búsqueda o búsqueda para una conversación debe abarcar el buzón principal, el buzón de archivo o bien el buzón de archivo y el principal. 
   
 ```XML
 <MailboxScope> PrimaryOnly | ArchiveOnly | All </MailboxScope>
@@ -27,23 +27,23 @@ El elemento **MailboxScope** identifica si una búsqueda u obtención de una con
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[FindConversation](findconversation.md) | [GetConversationItems](getconversationitems.md) | [conversación (ConversationType)](conversation-conversationtype.md)
+[FindConversation](findconversation.md)  |  [GetConversationItems](getconversationitems.md)  |  [Conversación (ConversationType)](conversation-conversationtype.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **MailboxScope** es el ámbito de búsqueda u obtener elementos en una conversación entre ambos buzones de correo principales, archivar los buzones de correo, o ambos primaria y buzones de archivo. Un valor de texto de **PrimaryOnly** indica un ámbito que se dirige el buzón principal para un usuario. Un valor de texto de **ArchiveOnly** indica un ámbito que se dirige el buzón de archivo para un usuario. Un valor de texto de **todos los** indica un ámbito que se dirige el buzón principal y el buzón de archivo. 
+El valor de texto del elemento **MailboxScope** es el ámbito para buscar u obtener elementos en una conversación en buzones de correo principales, buzones de correo de archivo o tanto en buzones de correo principales como de archivo. Un valor de texto de **PrimaryOnly** indica un ámbito que tiene como destino el buzón principal de un usuario. Un valor de texto de **ArchiveOnly** indica un ámbito que tiene como destino el buzón de archivo de un usuario. Un valor de texto de **All** indica un ámbito que tiene como destino el buzón principal y el buzón de archivo. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

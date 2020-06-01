@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 11ebe618-d759-4f16-be99-eaaa817ba782
-description: El elemento DisableAppResponse especifica la respuesta a una solicitud de DisableApp.
-ms.openlocfilehash: 740801fa4b60e217f0b9148bcfcc5b206e96bf31
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DisableAppResponse especifica la respuesta a una solicitud DisableApp.
+ms.openlocfilehash: cc28abf644247339e1226cd0e13824cc5f5669be
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764181"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455649"
 ---
 # <a name="disableappresponse"></a>DisableAppResponse
 
-El elemento **DisableAppResponse** especifica la respuesta a una solicitud de **DisableApp** . 
+El elemento **DisableAppResponse** especifica la respuesta a una solicitud **DisableApp** . 
   
 ```XML
 <DisableAppResponse>
@@ -31,20 +31,20 @@ El elemento **DisableAppResponse** especifica la respuesta a una solicitud de **
  **DisableAppResponseType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[MessageText](messagetext.md) <br/> |Proporciona una descripción de texto del estado de la respuesta.  <br/> |
-|[ResponseCode](responsecode.md) <br/> |Proporciona información de estado acerca de la solicitud.  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Actualmente no utilizado y reservado para uso futuro.  <br/> |
-|[MessageXml](messagexml.md) <br/> |Proporciona información de la respuesta de error adicionales.  <br/> |
+|[ResponseCode](responsecode.md) <br/> |Proporciona información de estado sobre la solicitud.  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Actualmente no está en uso y reservado para uso futuro.  <br/> |
+|[MessageXml](messagexml.md) <br/> |Proporciona información de respuesta de error adicional.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -60,12 +60,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

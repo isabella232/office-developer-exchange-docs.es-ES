@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1d758547-28c5-4649-8334-427480c282d6
-description: El elemento AttendeeConflictDataArray contiene una matriz de datos en conflicto para los asistentes consultados identificados en la operación GetUserAvailability.
-ms.openlocfilehash: 169312b8a3d37c014ba58fbfe094d786b134fc90
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AttendeeConflictDataArray contiene una matriz de datos conflictivos para los asistentes consultados identificados en la operación GetUserAvailability.
+ms.openlocfilehash: 770e8c00ca248ec3562180dc9d3626fd5b58f4d9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763575"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455803"
 ---
 # <a name="attendeeconflictdataarray"></a>AttendeeConflictDataArray
 
-El elemento **AttendeeConflictDataArray** contiene una matriz de datos en conflicto para los asistentes consultados identificados en la [operación GetUserAvailability](getuseravailability-operation.md).
+El elemento **AttendeeConflictDataArray** contiene una matriz de datos conflictivos para los asistentes consultados identificados en la [operación GetUserAvailability](getuseravailability-operation.md).
   
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -33,7 +33,7 @@ El elemento **AttendeeConflictDataArray** contiene una matriz de datos en confli
   
 - [SuggestionArray](suggestionarray.md)
   
-- [Sugerencia](suggestion.md)
+- [Alguna](suggestion.md)
   
 - [AttendeeConflictDataArray](attendeeconflictdataarray.md)
   
@@ -49,45 +49,45 @@ El elemento **AttendeeConflictDataArray** contiene una matriz de datos en confli
  **ArrayOfAttendeeConflictData**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UnknownAttendeeConflictData](unknownattendeeconflictdata.md) <br/> |Representa un asistente no se puede resolver o un asistente que no es un usuario, una lista de distribución o un contacto.  <br/> |
-|[IndividualAttendeeConflictData](individualattendeeconflictdata.md) <br/> |Contiene el estado de disponibilidad de un usuario o un contacto para una ventana de tiempo que se produce al mismo tiempo como la sugerida hora identificado en el elemento de la [Sugerencia](suggestion.md) de reunión.  <br/> |
-|[TooBigGroupAttendeeConflictData](toobiggroupattendeeconflictdata.md) <br/> |Representa a un asistente que se resuelve como una lista de distribución que era demasiado grande para expandir.  <br/> |
-|[GroupAttendeeConflictData](groupattendeeconflictdata.md) <br/> |Contiene información de conflicto agregado sobre el número de usuarios disponibles, el número de usuarios que tienen conflictos y el número de usuarios que no tienen información de disponibilidad en una lista de distribución para una hora de reunión sugerida.  <br/> |
+|[UnknownAttendeeConflictData](unknownattendeeconflictdata.md) <br/> |Representa un asistente no resuelta o un asistente que no es un usuario, una lista de distribución o un contacto.  <br/> |
+|[IndividualAttendeeConflictData](individualattendeeconflictdata.md) <br/> |Contiene el estado de disponibilidad de un usuario o contacto para una ventana de tiempo que se produce al mismo tiempo que la hora de reunión sugerida identificada en el elemento de [sugerencia](suggestion.md) .  <br/> |
+|[TooBigGroupAttendeeConflictData](toobiggroupattendeeconflictdata.md) <br/> |Representa un asistente que se resolvió como una lista de distribución demasiado grande para expandirse.  <br/> |
+|[GroupAttendeeConflictData](groupattendeeconflictdata.md) <br/> |Contiene información de conflicto de agregados sobre el número de usuarios disponibles, el número de usuarios que tienen conflictos y el número de usuarios que no tienen información de disponibilidad en una lista de distribución para una hora de reunión sugerida.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Sugerencia](suggestion.md) <br/> |Representa una sola sugerencia de tiempo de la reunión.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]` <br/> |
+|[Alguna](suggestion.md) <br/> |Representa una sugerencia de hora de reunión única.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-La posición de cada elemento en el **AttendeeConflictDataArray** corresponde a la posición de los asistentes consultados en el elemento [MailboxDataArray](mailboxdataarray.md) . Cada asistente consultado debe corresponder a uno de los elementos secundarios de **AttendeeConflictDataArray** . Estos elementos representan un único conflicto con la hora de la reunión sugerida identificada en el elemento de [Sugerencia](suggestion.md) . 
+La posición de cada elemento de **AttendeeConflictDataArray** corresponde a la posición de los asistentes consultados en el elemento [MailboxDataArray](mailboxdataarray.md) . Cada asistente consultado debe corresponder a uno de los elementos secundarios **AttendeeConflictDataArray** . Estos elementos representan un solo conflicto con la hora de reunión sugerida identificada en el elemento de [sugerencia](suggestion.md) . 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md) 
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
-- [Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2c1996b7-a711-416a-9792-998290a87835
-description: El elemento EmailAddresses especifica una matriz de direcciones de correo electrónico extraídos.
-ms.openlocfilehash: 46a6c2fb2dcd5d4587460c2d5d518a4795271da9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EmailAddresses especifica una matriz de direcciones de correo electrónico extraídas.
+ms.openlocfilehash: 2a93829d5079b5b71af7bb29124ed03ac929ab1b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764355"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456188"
 ---
 # <a name="emailaddresses-arrayofextractedemailaddresses"></a>EmailAddresses (ArrayOfExtractedEmailAddresses)
 
-El elemento **EmailAddresses** especifica una matriz de direcciones de correo electrónico extraídos. 
+El elemento **EmailAddresses** especifica una matriz de direcciones de correo electrónico extraídas. 
   
 ```XML
 <EmailAddresses>
@@ -28,11 +28,11 @@ El elemento **EmailAddresses** especifica una matriz de direcciones de correo el
  **ArrayOfExtractedEmailAddresses**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

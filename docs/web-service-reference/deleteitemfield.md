@@ -11,22 +11,22 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3893be6a-49a7-49f6-bf53-c7f819ec3f87
-description: El elemento DeleteItemField representa una operación para eliminar una propiedad determinada de un elemento durante una llamada UpdateItem.
-ms.openlocfilehash: 571227eece8f717c1bf5da27cfab8ae50dfe3572
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: El elemento DeleteItemField representa una operación para eliminar una propiedad determinada de un elemento durante una llamada a UpdateItem.
+ms.openlocfilehash: e6f5ee8a1130d7c040f3ddd94021eff6d4a758b0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353885"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455677"
 ---
 # <a name="deleteitemfield"></a>DeleteItemField
 
-El elemento **DeleteItemField** representa una operación para eliminar una propiedad determinada de un elemento durante una llamada UpdateItem. 
+El elemento **DeleteItemField** representa una operación para eliminar una propiedad determinada de un elemento durante una llamada a UpdateItem. 
  
 - [UpdateItem](updateitem.md)  
 - [ItemChanges](itemchanges.md) 
 - [ItemChange](itemchange.md) 
-- [Updates (Elemento)](updates-item.md) 
+- [Actualizaciones (elemento)](updates-item.md) 
 - [DeleteItemField](deleteitemfield.md)
   
 ```xml
@@ -51,38 +51,38 @@ El elemento **DeleteItemField** representa una operación para eliminar una prop
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifica las propiedades con frecuencia que se hace referencia mediante un identificador URI.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifica a los miembros individuales de una propiedad de diccionario.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifica las propiedades extendidas de MAPI.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifica las propiedades a las que se hace referencia con frecuencia mediante el URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifica los miembros individuales de una propiedad Dictionary.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifica las propiedades de MAPI extendida.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Updates (Elemento)](updates-item.md) <br/> |Contiene un conjunto de elementos que definen append, establecer y eliminar los cambios realizados en las propiedades de elementos.  <br/><br/>La siguiente es la expresión de XPath para este elemento:<br/>`/UpdateItem/ItemChanges/ItemChange[i]/Updates` <br/> |
+|[Actualizaciones (elemento)](updates-item.md) <br/> |Contiene un conjunto de elementos que definen los cambios de anexar, establecer y eliminar en las propiedades del elemento.  <br/><br/>La siguiente es la expresión XPath a este elemento:<br/>`/UpdateItem/ItemChanges/ItemChange[i]/Updates` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

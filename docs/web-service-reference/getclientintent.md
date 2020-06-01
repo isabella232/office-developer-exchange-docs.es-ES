@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1601ad86-d391-449f-889b-50ecbd310dd5
-description: El elemento GetClientIntent está pensado para uso interno únicamente.
-ms.openlocfilehash: f7e5abfff60edc328b2d00576093b39e849438c3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetClientIntent está destinado sólo para uso interno.
+ms.openlocfilehash: 3620511146f93a96d79a1427ab0903a8984fa500
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764775"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455642"
 ---
 # <a name="getclientintent"></a>GetClientIntent
 
-El elemento **GetClientIntent** está pensado para uso interno únicamente. 
+El elemento **GetClientIntent** está destinado sólo para uso interno. 
   
 ```XML
 <GetClientIntent />
@@ -26,15 +26,15 @@ El elemento **GetClientIntent** está pensado para uso interno únicamente.
  ****
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -50,9 +50,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -1,46 +1,46 @@
 ---
-title: Eliminar los datos adjuntos mediante el uso de EWS en Exchange
+title: Eliminar datos adjuntos mediante EWS en Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 71871ac7-ee1a-4f93-9e81-77f312d432f4
-description: Obtenga información sobre cómo eliminar los datos adjuntos de elementos mediante el uso de la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: 458331f81493283efc20d24c7e2bebe0e74bbdbd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Obtenga información sobre cómo eliminar datos adjuntos de elementos mediante la API administrada de EWS o EWS en Exchange.
+ms.openlocfilehash: 854f723e9c7452b955d0e7d7a38da7f6224dc8b1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763062"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455894"
 ---
-# <a name="delete-attachments-by-using-ews-in-exchange"></a>Eliminar los datos adjuntos mediante el uso de EWS en Exchange
+# <a name="delete-attachments-by-using-ews-in-exchange"></a>Eliminar datos adjuntos mediante EWS en Exchange
 
-Obtenga información sobre cómo eliminar los datos adjuntos de elementos mediante el uso de la API administrada de EWS o EWS en Exchange.
+Obtenga información sobre cómo eliminar datos adjuntos de elementos mediante la API administrada de EWS o EWS en Exchange.
   
-Tiene un número de opciones de lo que respecta al eliminar el archivo y los datos adjuntos de elemento de elementos mediante el uso de la API administrada de EWS. Puede eliminar todos los datos adjuntos del mensaje, para eliminar un nombre de archivo o eliminar por posición en la colección. Para cada una de estas opciones, hay un método [AttachmentCollection](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.attachmentcollection%28v=exchg.80%29.aspx) . 
+Tiene varias opciones cuando se trata de eliminar datos adjuntos de archivos y elementos de elementos mediante la API administrada de EWS. Puede eliminar todos los datos adjuntos del mensaje, eliminarlos por un nombre de archivo o eliminarlos por su posición en la colección. Para cada una de estas opciones, hay un método [AttachmentCollection](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.attachmentcollection%28v=exchg.80%29.aspx) . 
   
-Por el contrario, con la dirección URL de EWS, independientemente de si está eliminando todos los datos adjuntos de un elemento o sólo uno, la secuencia de operaciones es el misma. A diferencia de la API administrada de EWS, EWS no incluye operaciones independientes para eliminar basándose en el nombre o la posición de la matriz de datos adjuntos.
+Por el contrario, con EWS, independientemente de si está eliminando todos los datos adjuntos de un elemento o solo uno, la secuencia de operaciones es la misma. A diferencia de la API administrada de EWS, EWS no incluye operaciones independientes para eliminar según el nombre o la posición en la matriz de datos adjuntos.
   
-**La tabla 1. Métodos de la API administrada de EWS y las operaciones de EWS para eliminar los datos adjuntos**
+**Tabla 1. Métodos de API administrada de EWS y operaciones EWS para eliminar datos adjuntos**
 
 |**Tarea**|**Método de la API administrada de EWS**|**Operación de EWS**|
 |:-----|:-----|:-----|
-|Eliminar todos los datos adjuntos de un elemento.  <br/> |[Item.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx), seguido de [AttachmentCollection.Clear](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.attachmentcollection.clear%28v=exchg.80%29.aspx), seguido de [EmailMessage.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) seguido [DeleteAttachment](http://msdn.microsoft.com/library/43d0c1cb-92ca-4399-9b3a-acb2b5c22624%28Office.15%29.aspx) <br/> |
-|Eliminar datos adjuntos de un elemento por su nombre.  <br/> |[Item.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx), seguido de [AttachmentCollection.Remove](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.attachmentcollection.remove%28v=exchg.80%29.aspx), seguido de [EmailMessage.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) seguido [DeleteAttachment](http://msdn.microsoft.com/library/43d0c1cb-92ca-4399-9b3a-acb2b5c22624%28Office.15%29.aspx) <br/> |
-|Eliminar datos adjuntos de un elemento por su posición en la colección.  <br/> |[Item.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx), seguido de [AttachmentCollection.RemoveAt](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.attachmentcollection.removeat%28v=exchg.80%29.aspx), seguido de [EmailMessage.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) seguido [DeleteAttachment](http://msdn.microsoft.com/library/43d0c1cb-92ca-4399-9b3a-acb2b5c22624%28Office.15%29.aspx) <br/> |
+|Eliminar todos los datos adjuntos de un elemento.  <br/> |[Item. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx), seguido de [AttachmentCollection. Clear](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.attachmentcollection.clear%28v=exchg.80%29.aspx)y, a continuación, [EmailMessage. Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) seguido de [DeleteAttachment](https://msdn.microsoft.com/library/43d0c1cb-92ca-4399-9b3a-acb2b5c22624%28Office.15%29.aspx) <br/> |
+|Eliminar datos adjuntos de un elemento por su nombre.  <br/> |[Item. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx), seguido de [AttachmentCollection. Remove](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.attachmentcollection.remove%28v=exchg.80%29.aspx)y, a continuación, [EmailMessage. Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) seguido de [DeleteAttachment](https://msdn.microsoft.com/library/43d0c1cb-92ca-4399-9b3a-acb2b5c22624%28Office.15%29.aspx) <br/> |
+|Eliminar datos adjuntos de un elemento por su posición en la colección.  <br/> |[Item. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx), seguido de [AttachmentCollection. RemoveAt](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.attachmentcollection.removeat%28v=exchg.80%29.aspx)y, a continuación, [EmailMessage. Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) seguido de [DeleteAttachment](https://msdn.microsoft.com/library/43d0c1cb-92ca-4399-9b3a-acb2b5c22624%28Office.15%29.aspx) <br/> |
    
-## <a name="delete-all-attachments-from-an-email-by-using-the-ews-managed-api"></a>Eliminar todos los datos adjuntos de un correo electrónico mediante el uso de la API administrada de EWS
+## <a name="delete-all-attachments-from-an-email-by-using-the-ews-managed-api"></a>Eliminar todos los datos adjuntos de un correo electrónico mediante la API administrada de EWS
 <a name="bk_deleteattachewsma"> </a>
 
-En el ejemplo de código siguiente se muestra cómo eliminar todos los datos adjuntos de un correo electrónico por:
+En el siguiente ejemplo de código se muestra cómo eliminar todos los datos adjuntos de un correo electrónico por:
   
-1. Con el método [EmailMessage.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) para enlazar a un mensaje de correo electrónico existente y recuperar la colección de [datos adjuntos](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.attachments%28v=exchg.80%29.aspx).
+1. Usar el método [EmailMessage. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) para enlazar a un mensaje de correo electrónico existente y recuperar la colección de [datos adjuntos](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.attachments%28v=exchg.80%29.aspx).
     
-2. Con el método [AttachmentCollection.Clear](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.attachmentcollection.clear%28v=exchg.80%29.aspx) para eliminar todos los datos adjuntos de correo electrónico. 
+2. Usar el método [AttachmentCollection. Clear](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.attachmentcollection.clear%28v=exchg.80%29.aspx) para eliminar todos los datos adjuntos del correo electrónico. 
     
-3. Con el método [EmailMessage.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) para guardar los cambios. 
+3. Uso del método [EmailMessage. Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) para guardar los cambios. 
     
-En este ejemplo se da por supuesto que el **servicio** es un objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido, **itemId** es el [ItemId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) del mensaje desde el que se eliminarán los datos adjuntos, y que se ha autenticado el usuario a un servidor de Exchange. 
+En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido, **Itemid** es el [Itemid](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) del mensaje desde el que se eliminarán los datos adjuntos y se ha autenticado al usuario en un servidor de Exchange. 
   
 ```cs
 public static void DeleteAllAttachments(ExchangeService service, ItemId itemId)
@@ -56,18 +56,18 @@ public static void DeleteAllAttachments(ExchangeService service, ItemId itemId)
 }
 ```
 
-## <a name="delete-an-attachment-by-name-from-an-email-by-using-the-ews-managed-api"></a>Eliminar un archivo adjunto por su nombre desde un correo electrónico mediante el uso de la API administrada de EWS
+## <a name="delete-an-attachment-by-name-from-an-email-by-using-the-ews-managed-api"></a>Eliminar datos adjuntos por nombre de un correo electrónico mediante la API administrada de EWS
 <a name="bk_deleteattachewsma"> </a>
 
-El ejemplo de código siguiente se muestra cómo elimina un archivo adjunto por su nombre por:
+El siguiente ejemplo de código muestra cómo eliminar datos adjuntos por nombre:
   
-1. Con el método [EmailMessage.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) para enlazar a un mensaje de correo electrónico existente y recuperar la colección de [datos adjuntos](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.attachments%28v=exchg.80%29.aspx).
+1. Usar el método [EmailMessage. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) para enlazar a un mensaje de correo electrónico existente y recuperar la colección de [datos adjuntos](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.attachments%28v=exchg.80%29.aspx).
     
-2. Con el método [AttachmentCollection.Remove](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.attachmentcollection.remove%28v=exchg.80%29.aspx) para eliminar un archivo adjunto denominado FileAttachment.txt. 
+2. Usar el método [AttachmentCollection. Remove](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.attachmentcollection.remove%28v=exchg.80%29.aspx) para eliminar un archivo de datos adjuntos denominado FileAttachment. txt. 
     
-3. Con el método [EmailMessage.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) para guardar los cambios. 
+3. Uso del método [EmailMessage. Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) para guardar los cambios. 
     
-En este ejemplo se da por supuesto que el **servicio** es un objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido, **itemId** es el [ItemId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) del mensaje desde el que se eliminarán los datos adjuntos, y que se ha autenticado el usuario a un servidor de Exchange. 
+En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido, **Itemid** es el [Itemid](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) del mensaje desde el que se eliminarán los datos adjuntos y que el usuario se ha autenticado en un servidor de Exchange. 
   
 ```cs
 public static void DeleteNamedAttachments(ExchangeService service, ItemId itemId)
@@ -90,18 +90,18 @@ public static void DeleteNamedAttachments(ExchangeService service, ItemId itemId
 }
 ```
 
-## <a name="delete-attachments-by-position-by-using-the-ews-managed-api"></a>Eliminar los datos adjuntos por posición mediante el uso de la API administrada de EWS
+## <a name="delete-attachments-by-position-by-using-the-ews-managed-api"></a>Eliminar datos adjuntos por posición mediante la API administrada de EWS
 <a name="bk_deleteattachewsma"> </a>
 
-En el ejemplo de código siguiente se muestra cómo eliminar un archivo adjunto por posición por:
+En el ejemplo de código siguiente se muestra cómo eliminar datos adjuntos por posición:
   
-1. Con el método [EmailMessage.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) para enlazar a un mensaje de correo electrónico existente y recuperar la colección de [datos adjuntos](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.attachments%28v=exchg.80%29.aspx) y la propiedad [EmailMessage.HasAttachments](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.hasattachments%28v=exchg.80%29.aspx) . 
+1. Usar el método [EmailMessage. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) para enlazar a un mensaje de correo electrónico existente y recuperar la colección de [datos adjuntos](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.attachments%28v=exchg.80%29.aspx) y la propiedad [EmailMessage. HasAttachments](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.hasattachments%28v=exchg.80%29.aspx) . 
     
-2. Con el método [AttachmentCollection.Remove](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.attachmentcollection.remove%28v=exchg.80%29.aspx) para eliminar los primeros datos adjuntos en la colección. 
+2. Usar el método [AttachmentCollection. Remove](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.attachmentcollection.remove%28v=exchg.80%29.aspx) para eliminar los primeros datos adjuntos de la colección. 
     
-3. Con el método [EmailMessage.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) para guardar los cambios. 
+3. Uso del método [EmailMessage. Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) para guardar los cambios. 
     
-En este ejemplo se da por supuesto que el **servicio** es un objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido, **itemId** es el [ItemId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) del mensaje desde el que se eliminarán los datos adjuntos, y que se ha autenticado el usuario a un servidor de Exchange. 
+En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido, **Itemid** es el [Itemid](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) del mensaje desde el que se eliminarán los datos adjuntos y que el usuario se ha autenticado en un servidor de Exchange. 
   
 ```cs
 public static void DeleteAttachmentByPosition(ExchangeService service, ItemId itemId)
@@ -120,19 +120,19 @@ public static void DeleteAttachmentByPosition(ExchangeService service, ItemId it
 }
 ```
 
-## <a name="delete-attachments-from-an-item-by-using-ews"></a>Eliminar los datos adjuntos de un elemento mediante el uso de EWS
+## <a name="delete-attachments-from-an-item-by-using-ews"></a>Eliminar datos adjuntos de un elemento mediante EWS
 <a name="bk_deleteattachewsma"> </a>
 
-Para eliminar los datos adjuntos mediante el uso de EWS, primero debe recuperar el mensaje y la colección de datos adjuntos para determinar la [AttachmentId (GetAttachment y DeleteAttachment)](http://msdn.microsoft.com/library/4bea1cb5-0a0f-4e14-9b09-f91af8cf9899%28Office.15%29.aspx) de los datos adjuntos para eliminar. Una vez que tenga uno o más valores de **AttachmentId** para eliminar, llame a la operación [DeleteAttachment](http://msdn.microsoft.com/library/4d48e595-b98c-48e7-bbeb-cacf91d12a78%28Office.15%29.aspx) para quitar los datos adjuntos especificados desde el mensaje. 
+Para eliminar datos adjuntos mediante EWS, primero debe recuperar el mensaje y la colección de datos adjuntos para determinar la [AttachmentId (GetAttachment y DeleteAttachment)](https://msdn.microsoft.com/library/4bea1cb5-0a0f-4e14-9b09-f91af8cf9899%28Office.15%29.aspx) de los datos adjuntos que se deben eliminar. Una vez que tenga uno o más valores de **AttachmentId** que eliminar, llame a la operación [DeleteAttachment](https://msdn.microsoft.com/library/4d48e595-b98c-48e7-bbeb-cacf91d12a78%28Office.15%29.aspx) para quitar los datos adjuntos especificados del mensaje. 
   
-En el ejemplo de código siguiente se muestra cómo usar la operación [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) para obtener un mensaje de correo electrónico y la colección de datos adjuntos en el mensaje. También es la primera solicitud XML que la API administrada de EWS envía al usar la API administrada de EWS para [Eliminar todos los datos adjuntos de un correo electrónico](#bk_deleteattachewsma). Los valores de algunos atributos son más cortos para mejorar la legibilidad.
+En el ejemplo de código siguiente se muestra cómo usar la operación [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) para obtener un mensaje de correo electrónico y la colección de datos adjuntos en el mensaje. También es la primera solicitud XML que la API administrada de EWS envía cuando usa la API administrada de EWS para [eliminar todos los datos adjuntos de un correo electrónico](#bk_deleteattachewsma). Los valores de algunos atributos se acortan para facilitar la legibilidad.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -155,26 +155,26 @@ En el ejemplo de código siguiente se muestra cómo usar la operación [GetItem]
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud de **GetItem** con un mensaje de [GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) que incluye un valor de [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx) de **NoError**, lo que indica que se ha recuperado el correo electrónico y los valores de [AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) de los datos adjuntos existentes. 
+El servidor responde a la solicitud **GetItem** con un mensaje [GetItemResponse](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) de **NoError**, que indica que el correo electrónico se ha recuperado correctamente y los valores de [AttachmentId](https://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) de los datos adjuntos existentes. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="939"
                          MinorBuildNumber="12"
                          Version="V2_11"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -213,14 +213,14 @@ El servidor responde a la solicitud de **GetItem** con un mensaje de [GetItemRes
 </s:Envelope>
 ```
 
-Después de determinar qué datos adjuntos para eliminar, llamar a la operación [DeleteAttachment](http://msdn.microsoft.com/library/4d48e595-b98c-48e7-bbeb-cacf91d12a78%28Office.15%29.aspx) e incluir los valores de **AttachmentId** de los datos adjuntos para eliminar. 
+Después de determinar qué datos adjuntos se van a eliminar, llame a la operación [DeleteAttachment](https://msdn.microsoft.com/library/4d48e595-b98c-48e7-bbeb-cacf91d12a78%28Office.15%29.aspx) e incluya los valores de **AttachmentId** de los datos adjuntos que se van a eliminar. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -241,26 +241,26 @@ Después de determinar qué datos adjuntos para eliminar, llamar a la operación
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud de **DeleteAttachment** con un mensaje de [DeleteAttachmentResponse](http://msdn.microsoft.com/library/24099a88-4ab6-4bf3-8ed5-efec8e07b9b9%28Office.15%29.aspx) que incluye un valor [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx) de **NoError** para cada [DeleteAttachmentResponseMessage](http://msdn.microsoft.com/library/1edb085f-1674-48e5-8ec3-42351adeac7d%28Office.15%29.aspx), lo que indica que cada dato adjunto se ha eliminado correctamente. Los valores de algunos atributos son más cortos para mejorar la legibilidad.
+El servidor responde a la solicitud **DeleteAttachment** con un mensaje [DeleteAttachmentResponse](https://msdn.microsoft.com/library/24099a88-4ab6-4bf3-8ed5-efec8e07b9b9%28Office.15%29.aspx) que incluye un [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) valor de **NoError** para cada [DeleteAttachmentResponseMessage](https://msdn.microsoft.com/library/1edb085f-1674-48e5-8ec3-42351adeac7d%28Office.15%29.aspx), lo que indica que los datos adjuntos se han eliminado correctamente. Los valores de algunos atributos se acortan para facilitar la legibilidad.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="939"
                          MinorBuildNumber="12"
                          Version="V2_11"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:DeleteAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:DeleteAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:DeleteAttachmentResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -291,10 +291,10 @@ El servidor responde a la solicitud de **DeleteAttachment** con un mensaje de [D
 ## <a name="see-also"></a>Vea también
 
 
-- [Los datos adjuntos y EWS en Exchange](attachments-and-ews-in-exchange.md)
+- [Datos adjuntos y EWS en Exchange](attachments-and-ews-in-exchange.md)
     
-- [Agregar datos adjuntos mediante el uso de EWS en Exchange](how-to-add-attachments-by-using-ews-in-exchange.md)
+- [Adición de datos adjuntos mediante EWS en Exchange](how-to-add-attachments-by-using-ews-in-exchange.md)
     
-- [Obtener datos adjuntos mediante el uso de EWS en Exchange](how-to-get-attachments-by-using-ews-in-exchange.md)
+- [Obtener datos adjuntos mediante EWS en Exchange](how-to-get-attachments-by-using-ews-in-exchange.md)
     
 

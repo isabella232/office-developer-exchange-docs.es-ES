@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 717eb6d0-d167-4b20-92e2-5d08b96186c4
-description: El elemento de remitente representa la dirección de correo electrónico para el remitente del mensaje.
-ms.openlocfilehash: bac62412caf1044c13015f1d9d7ef63552747c1c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Sender representa la dirección de correo electrónico del remitente del mensaje.
+ms.openlocfilehash: 23a487f216a110796d40f3d3e86224c691acc004
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837320"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455327"
 ---
 # <a name="sender-emailaddresstype"></a>Remitente (EmailAddressType)
 
-El elemento de **remitente** representa la dirección de correo electrónico para el remitente del mensaje. 
+El elemento **Sender** representa la dirección de correo electrónico del remitente del mensaje. 
   
 ```XML
 <Sender>
@@ -36,29 +36,29 @@ El elemento de **remitente** representa la dirección de correo electrónico par
  **EmailAddressType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Nombre (EmailAddressType)](name-emailaddresstype.md) <br/> |Representa el nombre del usuario de buzón de correo. Este elemento es opcional.  <br/> |
-|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Define la dirección de Protocolo Simple de transferencia de correo (SMTP) principal de un usuario de buzón de correo. Este elemento es opcional.  <br/> |
+|[Nombre (EmailAddressType)](name-emailaddresstype.md) <br/> |Representa el nombre del usuario del buzón. Este elemento es opcional.  <br/> |
+|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Define la dirección principal del Protocolo simple de transferencia de correo (SMTP) de un usuario de buzón. Este elemento es opcional.  <br/> |
 |[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Representa el protocolo de enrutamiento para el destinatario. El valor predeterminado es SMTP. Este elemento es opcional.  <br/> |
-|[MailboxType](mailboxtype.md) <br/> |Representa el tipo de buzón de correo que está representada por la dirección de correo electrónico. Este elemento es opcional.  <br/> |
+|[MailboxType](mailboxtype.md) <br/> |Representa el tipo de buzón que se representa mediante la dirección de correo electrónico. Este elemento es opcional.  <br/> |
 |[ItemId](itemid.md) <br/> |Define el identificador de elemento de un contacto o una lista de distribución privada para los destinatarios de la carpeta de contactos de un usuario. Este elemento es opcional.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |Especifica los criterios para los tipos de mensajes para buscar.  <br/> |
-|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |Contiene un resultado de mensaje único para un elemento [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) .  <br/> |
-|[MessageTrackingReport](messagetrackingreport.md) <br/> |Contiene un solo mensaje que se devuelve en una [operación de GetMessageTrackingReport](getmessagetrackingreport-operation.md).  <br/> |
+|[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |Especifica los criterios para los tipos de mensajes que se van a buscar.  <br/> |
+|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |Contiene un único resultado de mensaje para un elemento [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) .  <br/> |
+|[MessageTrackingReport](messagetrackingreport.md) <br/> |Contiene un solo mensaje que se devuelve en una [operación GetMessageTrackingReport](getmessagetrackingreport-operation.md).  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -72,10 +72,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -84,5 +84,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación GetMessageTrackingReport](getmessagetrackingreport-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

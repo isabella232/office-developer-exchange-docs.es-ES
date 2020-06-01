@@ -8,39 +8,39 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: c6666a42-a18f-4e4b-beb6-b25ff62cfcc5
-description: La operación GetFederationInformation proporciona información sobre el estado de federación de la organización, como el identificador URI que se usará al solicitar tokens que van dirigidos a esta organización y el resto de los dominios que la organización tiene también de destino federados.
-ms.openlocfilehash: bf38b2f2b3db3e38b9b0157d1677efe4fc274e1b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación GetFederationInformation proporciona información sobre el estado de Federación de la organización, como el URI de destino que se va a usar al solicitar tokens destinados a esta organización, y los otros dominios que la organización también ha federado.
+ms.openlocfilehash: 533b2f6d282e3287f4945df56b169f5bc93ff445
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764850"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455628"
 ---
 # <a name="getfederationinformation-operation-soap"></a>Operación GetFederationInformation (SOAP)
 
-La operación **GetFederationInformation** proporciona información sobre el estado de federación de la organización, como el destino de URI que se utilizará al solicitar tokens que van dirigidas a esta organización y los demás dominios que la organización También se ha federados. 
+La operación **GetFederationInformation** proporciona información sobre el estado de Federación de la organización, como el URI de destino que se va a usar al solicitar tokens destinados a esta organización, y los otros dominios que la organización también ha federado. 
   
-Sólo las organizaciones federadas pueden compartir calendario, contactos y mensajes a los usuarios externos.
+Solo las organizaciones federadas pueden compartir el calendario, los contactos y los mensajes con los usuarios externos.
   
-## <a name="getfederationinformation-request-example"></a>Ejemplo de solicitud de GetFederationInformation
+## <a name="getfederationinformation-request-example"></a>Ejemplo de solicitud GetFederationInformation
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud de **GetFederationInformation** muestra una solicitud de información de la federación de un usuario. El cliente envía esta solicitud al servidor. 
+El siguiente ejemplo de una solicitud **GetFederationInformation** muestra una solicitud de información de Federación de un usuario. El cliente envía esta solicitud al servidor. 
   
 ### <a name="code"></a>Código
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?> 
-<soap:Envelope xmlns:exm="http://schemas.microsoft.com/exchange/services/2006/messages"
-           xmlns:ext="http://schemas.microsoft.com/exchange/services/2006/types"
+<soap:Envelope xmlns:exm="https://schemas.microsoft.com/exchange/services/2006/messages"
+           xmlns:ext="https://schemas.microsoft.com/exchange/services/2006/types"
            xmlns:a="http://www.w3.org/2005/08/addressing"
            xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema"> 
     <soap:Header> 
         <a:MessageID>urn:uuid:6389558d-9e05-465e-ade9-aae14c4bcd10</a:MessageID> 
-        <a:Action soap:mustUnderstand="1">http://schemas.microsoft.com/
+        <a:Action soap:mustUnderstand="1">https://schemas.microsoft.com/
             exchange/2010/Autodiscover/Autodiscover/GetFederationInformation
         </a:Action> 
         <a:To soap:mustUnderstand="1">https://autodiscover.byfcxu-
@@ -51,7 +51,7 @@ El siguiente ejemplo de una solicitud de **GetFederationInformation** muestra un
     </soap:Header> 
     <soap:Body> 
         <GetFederationInformationRequestMessage 
-            xmlns="http://schemas.microsoft.com/exchange/2010/Autodiscover"> 
+            xmlns="https://schemas.microsoft.com/exchange/2010/Autodiscover"> 
             <Request> 
                 <Domain>contoso.com</Domain> 
             </Request> 
@@ -62,7 +62,7 @@ El siguiente ejemplo de una solicitud de **GetFederationInformation** muestra un
 
 ### <a name="request-elements"></a>Elementos de solicitud
 
-En la solicitud se usan los siguientes elementos:
+Los siguientes elementos se usan en la solicitud:
   
 - [GetFederationInformationRequestMessage (SOAP)](getfederationinformationrequestmessage-soap.md)
     
@@ -74,7 +74,7 @@ En la solicitud se usan los siguientes elementos:
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **GetFederationInformation** que el servidor envía al cliente. 
+En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **GetFederationInformation** que el servidor envía al cliente. 
   
 ### <a name="code"></a>Código
 
@@ -83,12 +83,12 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **Ge
 xmlns:a="http://www.w3.org/2005/08/addressing"> 
     <s:Header> 
         <a:Action s:mustUnderstand="1">
-            http://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetFederationInformationResponse
+            https://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetFederationInformationResponse
         </a:Action> 
         <a:RelatesTo>urn:uuid:6389558d-9e05-465e-ade9-aae14c4bcd10</a:RelatesTo> 
     </s:Header> 
     <s:Body> 
-        <GetFederationInformationResponseMessage xmlns="http://schemas.microsoft.com/exchange/2010/Autodiscover"> 
+        <GetFederationInformationResponseMessage xmlns="https://schemas.microsoft.com/exchange/2010/Autodiscover"> 
             <Response xmlns:i="http://www.w3.org/2001/XMLSchema-instance"> 
                 <ErrorCode>NoError</ErrorCode> 
                 <ErrorMessage/> 

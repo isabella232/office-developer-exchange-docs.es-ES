@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 72329821-32ff-495d-b6e5-fdc011003c2e
-description: El elemento final representa el final de una duración.
-ms.openlocfilehash: 90eea4fc545fae083e5675225665e517b502ba6f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento end representa el final de una duración.
+ms.openlocfilehash: d36f555d2ac9c0c1d82053029720ec17a53f2d92
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764400"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456146"
 ---
 # <a name="end"></a>End
 
-El elemento **final** representa el final de una duración. 
+El elemento **End** representa el final de una duración. 
   
 ```xml
 <End/>
@@ -30,25 +30,25 @@ El elemento **final** representa el final de una duración.
  **DateTime**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
-|[FirstOccurrence](firstoccurrence.md) <br/> |Representa la primera aparición de un elemento periódico del calendario.  <br/> |
-|[LastOccurrence](lastoccurrence.md) <br/> |Representa la última aparición de un elemento periódico del calendario.  <br/> |
+|[FirstOccurrence](firstoccurrence.md) <br/> |Representa la primera aparición de un elemento de calendario periódico.  <br/> |
+|[LastOccurrence](lastoccurrence.md) <br/> |Representa la última repetición de un elemento de calendario periódico.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Representa una convocatoria de reunión en el almacén de Exchange.  <br/> |
-|[Repetición](occurrence.md) <br/> |Representa una sola aparición de modificación de un elemento periódico del calendario.  <br/> |
+|[Suceda](occurrence.md) <br/> |Representa una ocurrencia única modificada de un elemento de calendario periódico.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -56,20 +56,20 @@ El valor de texto representa el final de una duración.
   
 ## <a name="remarks"></a>Comentarios
 
-La operación UpdateItem puede establecer la hora de [Inicio](start.md) y **final** de un elemento del almacén de Exchange. En una solicitud UpdateItem, puede establecer la hora de [Inicio](start.md) sin establecer también la hora de **finalización** . Esto puede producir un error si la hora de [Inicio](start.md) es posterior a la hora de **finalización** . Tenga en cuenta que las aplicaciones cliente deben realizar ajustes en la hora de **finalización** cuando se cambia la hora de [Inicio](start.md) con el fin de conservar la duración. 
+La operación UpdateItem puede establecer la hora de [Inicio](start.md) y de **finalización** de un elemento de almacén de Exchange. En una solicitud UpdateItem, puede establecer la hora de [Inicio](start.md) sin establecer también la hora de **finalización** . Esto puede provocar un error si la hora de [Inicio](start.md) es posterior a la hora de **finalización** . Tenga en cuenta que las aplicaciones cliente deben realizar ajustes en la hora de **finalización** cuando se cambia la hora de [Inicio](start.md) a fin de preservar la duración. 
   
- **Nota** Si las fechas de [comienzo](start.md) y de **finalización** del elemento maestro periódico no tienen una fecha que es igual a la primera aparición de un patrón de periodicidad semanal, se pierde la información de desplazamiento de zona horaria. 
+ **Nota:** La información de desplazamiento de zona horaria se pierde si las fechas de [Inicio](start.md) y **finalización** del elemento maestro periódico no tienen una fecha igual a la primera aparición de un patrón de periodicidad semanal. 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -80,5 +80,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
  **End**
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

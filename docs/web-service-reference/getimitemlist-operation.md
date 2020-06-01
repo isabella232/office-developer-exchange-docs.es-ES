@@ -7,44 +7,44 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e31d14e1-0c1f-4b69-98b7-157d59c13698
-description: Busque información sobre la EWS GetImItemList operación.
-ms.openlocfilehash: 3977b0ad31e819cd973ce261ba3152b3840003b3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Buscar información sobre la operación de EWS de GetImItemList.
+ms.openlocfilehash: aabe84054b93e7de8af6145942493a0224932e45
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764874"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456069"
 ---
 # <a name="getimitemlist-operation"></a>Operación GetImItemList
 
-Obtenga información acerca de la operación de EWS **GetImItemList** . 
+Buscar información sobre la operación de EWS de **GetImItemList** . 
   
-## <a name="using-the-getimitemlist-operation"></a>Mediante la operación GetImItemList
+## <a name="using-the-getimitemlist-operation"></a>Uso de la operación GetImItemList
 
-La operación **GetImItemList** recupera la lista de grupos de mensajería instantánea y mensajería instantánea, póngase en contacto con los roles en un buzón de correo. La operación **GetImItemList** no toma ningún argumento. 
+La operación **GetImItemList** recupera la lista de grupos de mensajería instantánea (mi) y los roles de contactos de mensajería instantánea en un buzón. La operación **GetImItemList** no toma ningún argumento. 
   
 Esta operación se introdujo en Exchange Server 2013.
   
-### <a name="getimitemlist-operation-soap-headers"></a>Encabezados SOAP de operación de GetImItemList
+### <a name="getimitemlist-operation-soap-headers"></a>Encabezados SOAP de operación GetImItemList
 
-La operación de **GetImItemList** puede utilizar los encabezados SOAP que se enumeran en la siguiente tabla. 
+La operación **GetImItemList** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
   
-|**Nombre de encabezado**|**Element**|**Descripción**|
+|**Nombre de encabezado**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario que está realizando la suplantación de la aplicación cliente. Este encabezado es aplicable a una solicitud.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural, como se define en RFC 3066, "Etiquetas para la identificación de idiomas," que se utilizará para acceder al buzón. Este encabezado es aplicable a una solicitud.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de la operación. Este encabezado es aplicable a una solicitud.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que ha respondido a la solicitud. Este encabezado es aplicable a una respuesta.  <br/> |
+|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente. Este encabezado se aplica a una solicitud.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural, tal y como se define en RFC 3066, "etiquetas para la identificación de idiomas", que se va a usar para obtener acceso al buzón. Este encabezado se aplica a una solicitud.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Este encabezado se aplica a una solicitud.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado se aplica a una respuesta.  <br/> |
    
-## <a name="getimitemlist-operation-request-example-request-your-im-items-list"></a>Ejemplo de solicitud de operación de GetImItemList: solicitud de su lista de elementos de mensajería instantánea
+## <a name="getimitemlist-operation-request-example-request-your-im-items-list"></a>Ejemplo de solicitud de operación GetImItemList: solicitar la lista de elementos de mi
 
-El siguiente ejemplo de una solicitud de operación **GetImItemList** muestra cómo solicitar la lista de grupos de mensajería instantánea y mensajería instantánea, póngase en contacto con los roles en un buzón de correo. El elemento **GetImItemList** es la opción de elemento sólo en el cuerpo SOAP. 
+El siguiente ejemplo de una solicitud de operación de **GetImItemList** muestra cómo solicitar la lista de grupos de mensajería instantánea y los roles de contactos de mensajería instantánea en un buzón. El elemento **GetImItemList** es la única opción de elemento en el cuerpo SOAP. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
       <t:MailboxCulture>en-US</t:MailboxCulture>
@@ -55,18 +55,18 @@ El siguiente ejemplo de una solicitud de operación **GetImItemList** muestra c�
 </soap:Envelope>
 ```
 
-La solicitud SOAP body contiene el elemento siguiente:
+El cuerpo SOAP de la solicitud contiene el siguiente elemento:
   
 - [GetImItemList](getimitemlist.md)
     
-## <a name="successful-getimitemlist-operation-response"></a>Respuesta es correcta de operación GetImItemList
+## <a name="successful-getimitemlist-operation-response"></a>Respuesta de operación GetImItemList correcta
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación **GetImItemList** . La respuesta contiene cuatro grupos de mensajería instantánea. Tres de los grupos de mensajería instantánea: otros contactos, etiquetados y favoritos — son grupos de forma predeterminada en el almacén de Exchange. El grupo de MyCustomGroup2 es un grupo personalizado creado por el usuario. Los grupos de otros contactos y etiquetados no tienen miembros. El grupo de favoritos tiene un solo miembro de contacto. El MyCustomGroup2 tiene dos contactos de miembro. Los identificadores de elemento se proporcionan para que se pueden realizar las solicitudes posteriores **GetItem** para obtener más información acerca de los contactos de mensajería instantánea. 
+En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación de **GetImItemList** . La respuesta contiene cuatro grupos de mensajería instantánea. Tres de los grupos de mensajería instantánea (otros contactos, etiquetados y favoritos) son los grupos predeterminados en el almacén de Exchange. El grupo MyCustomGroup2 es un grupo personalizado creado por el usuario. Los demás contactos y los grupos etiquetados no tienen miembros. El grupo de favoritos tiene un único miembro de contacto. MyCustomGroup2 tiene dos contactos de miembros. Los identificadores de elemento se proporcionan para que se puedan realizar las siguientes solicitudes **GetItem** para obtener más información sobre los contactos de mensajería instantánea. 
   
-En este ejemplo se devuelven dos roles. El primer rol representa dos elementos de contacto: Anthony Smith y Tony Smith. Se devuelve la información de contacto combinada en el objeto de **rol** . El segundo rol representa un solo contacto con el nombre para mostrar de Terence Adams. 
+En este ejemplo se devuelven dos roles. El primer rol representa dos elementos de contacto: Anthony Martínez y Tony Smith. La información de contacto combinada se devuelve en el objeto de **rol** . El segundo rol representa un solo contacto con el nombre para mostrar de Terence Adams. 
   
 > [!NOTE]
-> Los identificadores del almacén de Exchange, los identificadores de elemento, identificadores de origen, identificadores de carpeta e identificadores de rol se han abreviado para conservar la legibilidad. 
+> Los identificadores del almacén de Exchange, los identificadores de los elementos, los identificadores de origen, los identificadores de las carpetas y los identificadores de los roles se han reducido para preservar la legibilidad. 
   
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -76,18 +76,18 @@ En este ejemplo se devuelven dos roles. El primer rol representa dos elementos d
                            MajorBuildNumber="349" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" />
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" />
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <GetImItemListResponse ResponseClass="Success" 
-                             xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                             xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
          <ImItemList>
-            <Groups xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <Groups xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <ImGroup>
                   <DisplayName>Other Contacts</DisplayName>
                   <GroupType>IPM.DistList.MOC.OtherContacts</GroupType>
@@ -123,7 +123,7 @@ En este ejemplo se devuelven dos roles. El primer rol representa dos elementos d
                   </MemberCorrelationKey>
                </ImGroup>
             </Groups>
-            <Personas xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <Personas xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <Persona>
                   <PersonaId Id="AAQkAGQ1MjJjMTBkLTc4YkZmRkYQAQAFgxE1nBcqRGgYWWorM9/+s=" />
                   <PersonaType>Person</PersonaType>
@@ -348,7 +348,7 @@ En este ejemplo se devuelven dos roles. El primer rol representa dos elementos d
 </s:Envelope>
 ```
 
-La respuesta SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de respuesta contiene los siguientes elementos:
   
 - [GetImItemListResponse](getimitemlistresponse.md)
     
@@ -378,7 +378,7 @@ La respuesta SOAP body contiene los siguientes elementos:
     
 - [DisplayNameLastFirst](displaynamelastfirst.md)
     
-- [Archivar como](fileas.md)
+- [FileAs](fileas.md)
     
 - [FileAsId](fileasid.md)
     
@@ -394,7 +394,7 @@ La respuesta SOAP body contiene los siguientes elementos:
     
 - [EmailAddresses (ArrayOfEmailAddressesType)](emailaddresses-arrayofemailaddressestype.md)
     
-- [ImAddress (cadena)](imaddress-string.md)
+- [IMAddress (cadena)](imaddress-string.md)
     
 - [RelevanceScore](relevancescore.md)
     
@@ -402,7 +402,7 @@ La respuesta SOAP body contiene los siguientes elementos:
     
 - [Atribución (PersonaAttributionType)](attribution-personaattributiontype.md)
     
-- [Identificador (cadena)](id-string.md)
+- [ID (cadena)](id-string.md)
     
 - [SourceId](sourceid.md)
     
@@ -434,24 +434,24 @@ La respuesta SOAP body contiene los siguientes elementos:
     
 - [EmailAddressAttributedValue](emailaddressattributedvalue.md)
     
-- [ImAddresses](imaddresses.md)
+- [Indirecciones](imaddresses.md)
     
 - [Valor (ExtendedPropertyType)](value-extendedpropertytype.md)
     
-## <a name="getimitemlist-operation-error-response"></a>Respuesta de error de la operación de GetImItemList
+## <a name="getimitemlist-operation-error-response"></a>Respuesta de error de operación de GetImItemList
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **GetImItemList** . Esta es una respuesta a una solicitud que contiene una versión incorrecta del servidor solicitado en el encabezado SOAP. Este error es un error de SOAP y respuesta no está representada en el esquema EWS. 
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **GetImItemList** . Se trata de una respuesta a una solicitud que contiene una versión de servidor solicitada incorrecta en el encabezado SOAP. Esta respuesta de error es un error de SOAP y no se representa en el esquema EWS. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
    <s:Body>
       <s:Fault>
-         <faultcode xmlns:a="http://schemas.microsoft.com/exchange/services/2006/types">a:ErrorIncorrectSchemaVersion</faultcode>
+         <faultcode xmlns:a="https://schemas.microsoft.com/exchange/services/2006/types">a:ErrorIncorrectSchemaVersion</faultcode>
          <faultstring xml:lang="en-US">The request is valid but does not specify the correct server version in the RequestServerVersion SOAP header.  Ensure that the RequestServerVersion SOAP header is set with the correct RequestServerVersionValue.</faultstring>
          <detail>
-            <e:ResponseCode xmlns:e="http://schemas.microsoft.com/exchange/services/2006/errors">ErrorIncorrectSchemaVersion</e:ResponseCode>
-            <e:Message xmlns:e="http://schemas.microsoft.com/exchange/services/2006/errors">The request is valid but does not specify the correct server version in the RequestServerVersion SOAP header.  Ensure that the RequestServerVersion SOAP header is set with the correct RequestServerVersionValue.</e:Message>
+            <e:ResponseCode xmlns:e="https://schemas.microsoft.com/exchange/services/2006/errors">ErrorIncorrectSchemaVersion</e:ResponseCode>
+            <e:Message xmlns:e="https://schemas.microsoft.com/exchange/services/2006/errors">The request is valid but does not specify the correct server version in the RequestServerVersion SOAP header.  Ensure that the RequestServerVersion SOAP header is set with the correct RequestServerVersionValue.</e:Message>
          </detail>
       </s:Fault>
    </s:Body>
@@ -462,7 +462,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
 
 - [Operación AddImGroup](addimgroup-operation.md)
     
-- [Las personas y los contactos de EWS en Exchange](http://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
+- [Personas y contactos de EWS en Exchange](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     
 - [Operación GetImItems](getimitems-operation.md)
     

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 48e7e067-049c-4184-8026-071e6f558e8a
-description: El elemento IsEqualTo representa una expresión de búsqueda que compara una propiedad con un valor constante u otra propiedad y se evalúa como true si son iguales.
-ms.openlocfilehash: 733032819e6875fa878c1cd631d173a1c48ecdfe
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: El elemento IsEqualTo representa una expresión de búsqueda que compara una propiedad con un valor constante u otra propiedad, y evalúa en true si son iguales.
+ms.openlocfilehash: 857192443ab0520bb26ead399bc5364cc862a4fb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353164"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455299"
 ---
 # <a name="isequalto"></a>IsEqualTo
 
-El elemento **IsEqualTo** representa una expresión de búsqueda que compara una propiedad con un valor constante u otra propiedad y se evalúa como true si son iguales. 
+El elemento **IsEqualTo** representa una expresión de búsqueda que compara una propiedad con un valor constante u otra propiedad, y evalúa en true si son iguales. 
   
 ```xml
 <IsEqualTo>
@@ -48,46 +48,46 @@ El elemento **IsEqualTo** representa una expresión de búsqueda que compara una
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifica las propiedades con frecuencia que se hace referencia mediante un identificador URI.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifica las propiedades a las que se hace referencia con frecuencia mediante el URI.  <br/> |
 |[IndexedFieldURI](indexedfielduri.md) <br/> |Identifica a los miembros individuales de un diccionario.  <br/> |
 |[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifica las propiedades MAPI.  <br/> |
-|[FieldURIOrConstant](fielduriorconstant.md) <br/> |Representa una propiedad o un valor constante que se usará cuando se comparan con otra propiedad.  <br/> |
+|[FieldURIOrConstant](fielduriorconstant.md) <br/> |Representa una propiedad o un valor constante que se utilizará al comparar con otra propiedad.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Restriction](restriction.md) <br/> |Representa la restricción o la consulta que se usa para filtrar los elementos o carpetas en las operaciones de carpeta FindItem/FindFolder y búsqueda.  <br/> |
-|[No](not.md) <br/> |Representa una expresión de búsqueda que niega el valor booleano de la expresión de búsqueda que contiene.  <br/> |
-|[And](and.md) <br/> |Representa una expresión de búsqueda que le permite realizar una operación de tipo Boolean y entre dos o más expresiones de búsqueda. El resultado de la operación And es **true** si se **cumplen**todas las expresiones de búsqueda incluidas en el y.  <br/> |
-|[Or](or.md) <br/> |Representa una expresión de búsqueda que se realiza una operación OR lógica en la expresión de búsqueda que contiene. Devuelve true si cualquiera de sus elementos secundarios que devuelva true [o](or.md) . **O** debe tener dos o más elementos secundarios.  <br/> |
+|[Restriction](restriction.md) <br/> |Representa la restricción o consulta que se usa para filtrar elementos o carpetas en las operaciones de carpeta de búsqueda FindItem/FindFolder.  <br/> |
+|[Not](not.md) <br/> |Representa una expresión de búsqueda que niega el valor booleano de la expresión de búsqueda que contiene.  <br/> |
+|[And](and.md) <br/> |Representa una expresión de búsqueda que permite realizar una operación and booleana entre dos o más expresiones de búsqueda. El resultado de la operación and es **true** si todas las expresiones de búsqueda incluidas en el y son **true**.  <br/> |
+|[Or](or.md) <br/> |Representa una expresión de búsqueda que realiza una operación lógica OR en la expresión de búsqueda que contiene. [O](or.md) devuelve true si cualquiera de sus elementos secundarios devuelve true. **O** debe tener dos o más elementos secundarios.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Para realizar comparaciones de cadenas, considere el uso del elemento [Contains](contains.md) , ya que proporciona opciones para los parámetros coincidentes, como caso y espacio en blanco. Use el elemento [no](not.md) junto con el elemento [contiene](contains.md) para negar el resultado. 
+Para realizar comparaciones de cadenas, considere la posibilidad de usar el elemento [Contains](contains.md) , ya que proporciona opciones para los parámetros coincidentes, como los espacios en blanco y los mayúsculas y minúsculas. Use el elemento [Not](not.md) en combinación con el elemento [Contains](contains.md) para negar el resultado. 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

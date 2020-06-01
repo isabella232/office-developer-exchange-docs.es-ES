@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c4397d91-43ef-40a9-a80e-d31501a33caa
-description: El elemento Eliminar identifica una sola carpeta para eliminar en el almacén de cliente local.
-ms.openlocfilehash: 5cad36c6fcff782195fdb285e2d3c4f3c5ec0f1e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Delete identifica una única carpeta que se va a eliminar en el almacén de cliente local.
+ms.openlocfilehash: 68f8687b8cf0723d7fd63a3d55da8ef7c2f98f8e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764073"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44454984"
 ---
 # <a name="delete-foldersync"></a>Eliminar (FolderSync)
 
-El elemento **Eliminar** identifica una sola carpeta para eliminar en el almacén de cliente local. 
+El elemento **Delete** identifica una única carpeta que se va a eliminar en el almacén de cliente local. 
   
 - [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md)  
 - [ResponseMessages](responsemessages.md)  
@@ -39,40 +39,40 @@ El elemento **Eliminar** identifica una sola carpeta para eliminar en el almacé
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Contiene el identificador y cambiar la clave de una carpeta.  <br/> |
+|[FolderId](folderid.md) <br/> |Contiene el identificador y la clave de cambio de una carpeta.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Cambios (jerarquía)](changes-hierarchy.md) <br/> |Contiene una matriz de tipos de cambio que representan el tipo de las diferencias entre las carpetas en el cliente y las carpetas en el equipo que ejecuta Microsoft Exchange Server 2007 secuenciada.  <br/> |
+|[Cambios (jerarquía)](changes-hierarchy.md) <br/> |Contiene una matriz secuenciada de tipos de cambio que representan el tipo de diferencias entre las carpetas en el cliente y las carpetas en el equipo que ejecuta Microsoft Exchange Server 2007.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo de Exchange 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo de Exchange 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación SyncFolderHierarchy](syncfolderhierarchy-operation.md)
 - [Referencia EWS para Exchange](ews-reference-for-exchange.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

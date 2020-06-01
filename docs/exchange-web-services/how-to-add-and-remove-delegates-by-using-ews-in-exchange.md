@@ -5,38 +5,38 @@ ms.date: 03/9/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: cc7760bf-633b-483a-84ae-b52f437af2d3
-description: Obtenga información sobre cómo agregar delegados a o quitar delegados de buzones de los usuarios mediante el uso de la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: d55ef6c5c4e434603d293dbe30c6147ceb73b08b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Obtenga información sobre cómo agregar o quitar delegados de los buzones de los usuarios mediante la API administrada de EWS o EWS en Exchange.
+ms.openlocfilehash: 9db0171db51c0847d54bbcec7e28937eaed18d43
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763028"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455341"
 ---
 # <a name="add-and-remove-delegates-by-using-ews-in-exchange"></a>Agregar y quitar delegados mediante EWS en Exchange
 
-Obtenga información sobre cómo agregar delegados a o quitar delegados de buzones de los usuarios mediante el uso de la API administrada de EWS o EWS en Exchange.
+Obtenga información sobre cómo agregar o quitar delegados de los buzones de los usuarios mediante la API administrada de EWS o EWS en Exchange.
   
-Puede usar la API administrada de EWS o EWS para habilitar delegados para actuar en nombre de un propietario del buzón o quitar el acceso de un delegado para un buzón de correo. Los usuarios que se agregan como delegado y se les deben conceder permisos, pueden realizar tareas en nombre del propietario del buzón de correo. Por ejemplo, puede crear y enviar invitaciones a reuniones, enviar mensajes de correo electrónico y responder a convocatorias de reunión en nombre del propietario del buzón. 
+Puede usar la API administrada de EWS o EWS para permitir que los delegados actúen en nombre de un propietario de buzón o quitar el acceso de un delegado a un buzón. Los usuarios que se agregan como delegado y reciben permisos pueden realizar tareas en nombre del propietario del buzón. Por ejemplo, pueden crear y enviar invitaciones a reuniones, enviar mensajes de correo electrónico y responder a convocatorias de reunión en nombre del propietario del buzón. 
   
-**La tabla 1. Métodos de la API administrada de EWS y las operaciones de EWS para la adición y eliminación de delegados**
+**Tabla 1. Métodos de la API administrada de EWS y operaciones EWS para agregar y quitar delegados**
 
 |**Tarea**|**Método de la API administrada de EWS**|**Operación de EWS**|
 |:-----|:-----|:-----|
-|Agregar delegados  <br/> |[ExchangeService.AddDelegates](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.adddelegates%28v=exchg.80%29.aspx) <br/> |[AddDelegate](http://msdn.microsoft.com/library/646fb994-229e-4d90-8b95-6541191cb3ae%28Office.15%29.aspx) <br/> |
-|Eliminación de delegados  <br/> |[ExchangeService.RemoveDelegates](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.exchangeservice.removedelegates%28v=exchg.80%29.aspx) <br/> |[RemoveDelegate](http://msdn.microsoft.com/library/f21c5171-62e7-47c8-99b1-22e1ff5883bb%28Office.15%29.aspx) <br/> |
+|Agregar delegados  <br/> |[ExchangeService. AddDelegates](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.adddelegates%28v=exchg.80%29.aspx) <br/> |[AddDelegate](https://msdn.microsoft.com/library/646fb994-229e-4d90-8b95-6541191cb3ae%28Office.15%29.aspx) <br/> |
+|Quitar delegados  <br/> |[ExchangeService. RemoveDelegates](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.removedelegates%28v=exchg.80%29.aspx) <br/> |[RemoveDelegate](https://msdn.microsoft.com/library/f21c5171-62e7-47c8-99b1-22e1ff5883bb%28Office.15%29.aspx) <br/> |
    
-Después de un delegado se concede permisos a una carpeta, puede actuar en los elementos de la carpeta y las subcarpetas, según sus [permisos de delegado](delegate-access-and-ews-in-exchange.md#bk_delegateperms). Permisos para los delegados sólo se aplican a las subcarpetas que se crean después de que se ha concedido el acceso delegado. Para actualizar los permisos de carpeta para carpetas ya existentes, o en otras carpetas, vea [establecer permisos de carpeta de otro usuario mediante el uso de EWS en Exchange](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md).
+Una vez que se conceden permisos a una carpeta a un delegado, éstos pueden actuar sobre los elementos de la carpeta y las subcarpetas, de acuerdo con sus [permisos delegados](delegate-access-and-ews-in-exchange.md#bk_delegateperms). Los permisos para delegados solo se aplican a las subcarpetas que se crean después de conceder el acceso de delegado. Para actualizar los permisos de carpeta de las carpetas preexistentes, o de otras carpetas, consulte [set Folder permissions for a otro usuario Using EWS in Exchange](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md).
   
-Tenga en cuenta que sólo se pueden agregar delegados a cuentas con buzón habilitado, incluidos los grupos de seguridad habilitados para correo. De forma predeterminada, una única llamada de acceso de delegado EWS puede tener acceso a un máximo de 255 buzones diferentes.
+Tenga en cuenta que los delegados solo se pueden agregar a las cuentas habilitadas para buzón, incluidos los grupos de seguridad habilitados para correo. De forma predeterminada, una sola llamada de acceso de delegado EWS puede tener acceso a un máximo de 255 buzones diferentes.
 
 <a name="bk_adddelegateewsma"> </a>
 
-## <a name="add-delegates-by-using-the-ews-managed-api"></a>Agregar delegados mediante el uso de la API administrada de EWS
+## <a name="add-delegates-by-using-the-ews-managed-api"></a>Agregar delegados mediante la API administrada de EWS
 
-Puede agregar delegados a un buzón de correo mediante el método de la API administrada de EWS [AddDelegates](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.adddelegates%28v=exchg.80%29.aspx) . En este ejemplo, un nuevo calendario, contactos y correo electrónico [UsuarioDelegado](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.delegateuser%28v=exchg.80%29.aspx) se crea el objeto, y cada delegado se les deben conceder [permisos de Editor](delegate-access-and-ews-in-exchange.md#bk_delegateperms) para sus respectivas carpetas. Puede modificar el ejemplo para agregar a un delegado a cualquiera de las carpetas especificadas por las [Propiedades DelegatePermissions](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.delegatepermissions_properties%28v=exchg.80%29.aspx), y puede establecer los permisos a cualquiera de los valores especificados por la enumeración [DelegateFolderPermissionLevel](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.delegatefolderpermissionlevel%28v=exchg.80%29.aspx) . 
+Puede Agregar delegados a un buzón mediante el método de la API administrada de EWS de [AddDelegates](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.adddelegates%28v=exchg.80%29.aspx) . En este ejemplo, se crea un nuevo objeto de [DelegateUser](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.delegateuser%28v=exchg.80%29.aspx) de correo, contacto y calendario, y a cada delegado se le proporcionan [permisos de editor](delegate-access-and-ews-in-exchange.md#bk_delegateperms) para su carpeta respectiva. Puede modificar el ejemplo para agregar un delegado a cualquiera de las carpetas especificadas por las [propiedades DelegatePermissions](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.delegatepermissions_properties%28v=exchg.80%29.aspx)y puede establecer los permisos para cualquiera de los valores especificados por la enumeración [DelegateFolderPermissionLevel](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.delegatefolderpermissionlevel%28v=exchg.80%29.aspx) . 
   
-En este ejemplo se da por supuesto que **servicio** es un objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido para el propietario del buzón, y que se ha autenticado el usuario a un servidor de Exchange. 
+En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido para el propietario del buzón y que el usuario se ha autenticado en un servidor de Exchange. 
   
 ```cs
 public static Collection<DelegateUserResponse> AddDelegates(ExchangeService service)
@@ -79,18 +79,18 @@ public static Collection<DelegateUserResponse> AddDelegates(ExchangeService serv
 
 <a name="bk_adddelegateews"> </a>
 
-## <a name="add-delegates-by-using-ews"></a>Agregar delegados mediante el uso de EWS
+## <a name="add-delegates-by-using-ews"></a>Agregar delegados mediante EWS
 
-En el ejemplo de código siguiente se muestra cómo agregar independiente calendario, contactos y delegados de correo electrónico mediante el uso de la operación de EWS [AddDelegate](http://msdn.microsoft.com/library/012d8cc5-648c-4ba0-a155-15c422b1e994%28Office.15%29.aspx) . El buzón de correo para modificar especificada por el elemento de [buzón de correo](http://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) , y la configuración de [permisos](delegate-access-and-ews-in-exchange.md#bk_delegateperms) para cada delegado está contenida en el elemento [UsuarioDelegado](http://msdn.microsoft.com/library/aac4e74e-f69b-4c41-a0c9-489610330fbf%28Office.15%29.aspx) . Cada uno de los delegados se han concedido permisos de Editor para su carpeta de destino. 
+En el ejemplo de código siguiente se muestra cómo agregar delegados de correo electrónico, contactos y calendario independientes mediante la operación de EWS de [AddDelegate](https://msdn.microsoft.com/library/012d8cc5-648c-4ba0-a155-15c422b1e994%28Office.15%29.aspx) . El elemento [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) especifica el buzón que se va a modificar y la configuración de [permisos](delegate-access-and-ews-in-exchange.md#bk_delegateperms) de cada delegado se encuentra en el elemento [DelegateUser](https://msdn.microsoft.com/library/aac4e74e-f69b-4c41-a0c9-489610330fbf%28Office.15%29.aspx) . A cada uno de los delegados se le han concedido permisos de editor para su carpeta de destino. 
   
-También es la solicitud XML que la API administrada de EWS envía cuando se utiliza el método **AddDelegates** para [Agregar a los delegados](#bk_adddelegateewsma).
+También es la solicitud XML que la API administrada de EWS envía cuando se usa el método **AddDelegates** para [Agregar delegados](#bk_adddelegateewsma).
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -152,27 +152,27 @@ También es la solicitud XML que la API administrada de EWS envía cuando se uti
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud de **AddDelegate** con un mensaje de [AddDelegateResponse](http://msdn.microsoft.com/library/d7e6bebb-5dbf-43c1-aacf-4b3ca6a7c429%28Office.15%29.aspx) que incluye un valor de elemento [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, lo que indica que se han creado correctamente los delegados.
+El servidor responde a la solicitud **AddDelegate** con un mensaje [AddDelegateResponse](https://msdn.microsoft.com/library/d7e6bebb-5dbf-43c1-aacf-4b3ca6a7c429%28Office.15%29.aspx) que incluye un valor de elemento [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, lo que indica que los delegados se crearon correctamente.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="888"
                          MinorBuildNumber="9"
                          Version="V2_10"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <m:AddDelegateResponse ResponseClass="Success"
-                           xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                           xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+                           xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                           xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseCode>NoError</m:ResponseCode>
       <m:ResponseMessages>
         <m:DelegateUserResponseMessageType ResponseClass="Success">
@@ -219,11 +219,11 @@ El servidor responde a la solicitud de **AddDelegate** con un mensaje de [AddDel
 
 <a name="bk_removedelegateewsma"> </a>
 
-## <a name="remove-delegates-by-using-the-ews-managed-api"></a>Eliminación de delegados mediante la API administrada de EWS
+## <a name="remove-delegates-by-using-the-ews-managed-api"></a>Quitar delegados mediante la API administrada de EWS
 
-Puede quitar delegados de un buzón de destino mediante el método de la API administrada de EWS [ExchangeService.RemoveDelegates](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.exchangeservice.removedelegates%28v=exchg.80%29.aspx) . En este ejemplo, se quitan el conjunto de permisos de delegado en el que se [Agregue un ejemplo de un delegado](#bk_adddelegateewsma) . 
+Puede quitar delegados de un buzón de correo de destino mediante el método de la API administrada de EWS [ExchangeService. RemoveDelegates](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.removedelegates%28v=exchg.80%29.aspx) . En este ejemplo, se quitan los permisos delegados establecidos en el [ejemplo Add a Delegate](#bk_adddelegateewsma) . 
   
-En este ejemplo se da por supuesto que **servicio** es un objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido para el propietario del buzón, y que se ha autenticado el usuario a un servidor de Exchange. 
+En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido para el propietario del buzón y que el usuario se ha autenticado en un servidor de Exchange. 
   
 ```cs
 public static Collection<DelegateUserResponse> RemoveDelegates(ExchangeService service)
@@ -253,18 +253,18 @@ public static Collection<DelegateUserResponse> RemoveDelegates(ExchangeService s
 
 <a name="bk_removedelegateews"> </a>
 
-## <a name="remove-delegates-by-using-ews"></a>Eliminación de delegados mediante EWS
+## <a name="remove-delegates-by-using-ews"></a>Quitar delegados mediante EWS
 
-Puede quitar delegados de un buzón de correo mediante el uso de la operación de EWS [RemoveDelegate](http://msdn.microsoft.com/library/1d42d5ff-8fde-4f8a-b18d-57b1ef7a946a%28Office.15%29.aspx) . En este ejemplo, se quitan el conjunto de permisos de delegado en el que se [Agregue un ejemplo de un delegado](#bk_adddelegateews) . 
+Puede quitar delegados de un buzón de correo mediante la operación de EWS de [RemoveDelegate](https://msdn.microsoft.com/library/1d42d5ff-8fde-4f8a-b18d-57b1ef7a946a%28Office.15%29.aspx) . En este ejemplo, se quitan los permisos delegados establecidos en el [ejemplo Add a Delegate](#bk_adddelegateews) . 
   
-También es la solicitud XML que la API administrada de EWS envía cuando se utiliza el método **RemoveDelegates** para [quitar a los delegados](#bk_removedelegateewsma).
+También es la solicitud XML que la API administrada de EWS envía cuando se usa el método **RemoveDelegates** para [quitar delegados](#bk_removedelegateewsma).
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -289,27 +289,27 @@ También es la solicitud XML que la API administrada de EWS envía cuando se uti
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud de **RemoveDelegate** con un mensaje de [AddDelegateResponse](http://msdn.microsoft.com/library/d7e6bebb-5dbf-43c1-aacf-4b3ca6a7c429%28Office.15%29.aspx) que incluye un valor de elemento [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, lo que indica que los delegados se quitaron correctamente.
+El servidor responde a la solicitud **RemoveDelegate** con un mensaje [AddDelegateResponse](https://msdn.microsoft.com/library/d7e6bebb-5dbf-43c1-aacf-4b3ca6a7c429%28Office.15%29.aspx) que incluye un valor de elemento [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, lo que indica que los delegados se quitaron correctamente.
 
 <a name="bk_nextsteps"> </a>
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-Después de agregar los delegados a calendario, correo electrónico y carpetas de tareas, el delegado puede tener acceso a los elementos en las carpetas. Para obtener más información, vea los siguientes artículos:
+Después de agregar delegados a las carpetas de calendario, correo electrónico y tareas, el delegado puede tener acceso a los elementos de las carpetas. Para obtener más información, vea los siguientes artículos:
   
-- [Correo electrónico de acceso como delegado mediante el uso de EWS en Exchange](how-to-access-email-as-a-delegate-by-using-ews-in-exchange.md)
+- [Obtener acceso al correo electrónico como delegado mediante EWS en Exchange](how-to-access-email-as-a-delegate-by-using-ews-in-exchange.md)
     
-- [Obtener acceso a un calendario como delegado mediante el uso de EWS en Exchange](how-to-access-a-calendar-as-a-delegate-by-using-ews-in-exchange.md)
+- [Obtener acceso a un calendario como delegado mediante EWS en Exchange](how-to-access-a-calendar-as-a-delegate-by-using-ews-in-exchange.md)
     
-- [Contactos de acceso como delegado mediante el uso de EWS en Exchange](how-to-access-contacts-as-a-delegate-by-using-ews-in-exchange.md)
+- [Obtener acceso a los contactos como un delegado mediante EWS en Exchange](how-to-access-contacts-as-a-delegate-by-using-ews-in-exchange.md)
     
-Si las carpetas para la que ha agregado a los delegados incluyen carpetas secundarias que se crearon antes de conceder el acceso de delegado, el delegado no podrá tener acceso a esas carpetas sin permisos adicionales. Para agregar estos permisos o modificar los permisos para todas las carpetas, vea [establecer permisos de carpeta de otro usuario mediante el uso de EWS en Exchange](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md).
+Si las carpetas para las que agregó delegados incluyen carpetas secundarias creadas antes de conceder el acceso delegado, el delegado no podrá obtener acceso a esas carpetas sin permisos adicionales. Para agregar estos permisos, o modificar permisos para otras carpetas, vea [establecer los permisos de carpeta para otro usuario mediante EWS en Exchange](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md).
   
 ## <a name="see-also"></a>Vea también
 
 - [Acceso delegado y EWS en Exchange](delegate-access-and-ews-in-exchange.md)
-- [Exchange 2013: Agregar delegar a los usuarios de una cuenta de correo electrónico mediante programación](http://code.msdn.microsoft.com/exchange/Exchange-2013-Adding-1024511f)   
-- [Exchange 2013: Los delegados de actualización asociados con las cuentas de correo electrónico mediante programación](http://code.msdn.microsoft.com/exchange/Exchange-2013-Update-b40d3bac)   
-- [Exchange 2013: Quitar delegados asociados con cuentas de correo electrónico mediante programación](http://code.msdn.microsoft.com/exchange/Exchange-2013-Remove-686f7714)
+- [Exchange 2013: agregar usuarios delegados a una cuenta de correo electrónico mediante programación](https://code.msdn.microsoft.com/exchange/Exchange-2013-Adding-1024511f)   
+- [Exchange 2013: actualizar delegados asociados con cuentas de correo electrónico mediante programación](https://code.msdn.microsoft.com/exchange/Exchange-2013-Update-b40d3bac)   
+- [Exchange 2013: quitar delegados asociados con cuentas de correo electrónico mediante programación](https://code.msdn.microsoft.com/exchange/Exchange-2013-Remove-686f7714)
     
 

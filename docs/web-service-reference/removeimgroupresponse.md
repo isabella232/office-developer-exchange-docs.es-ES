@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 55d6f802-a32c-45c6-b53c-b8b495d1e62f
-description: El elemento RemoveImGroupResponse representa una respuesta a una solicitud de RemoveImGroup.
-ms.openlocfilehash: 2f5c394ed7c6cf3d345a54e51e54f3563b3c8e92
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RemoveImGroupResponse representa una respuesta a una solicitud RemoveImGroup.
+ms.openlocfilehash: 9cff2af802392a241f2257d42741cb2f5a0e277e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837100"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456006"
 ---
 # <a name="removeimgroupresponse"></a>RemoveImGroupResponse
 
-El elemento **RemoveImGroupResponse** representa una respuesta a una solicitud de **RemoveImGroup** . 
+El elemento **RemoveImGroupResponse** representa una respuesta a una solicitud **RemoveImGroup** . 
   
 ```XML
 <RemoveImGroupResponse>
@@ -31,15 +31,15 @@ El elemento **RemoveImGroupResponse** representa una respuesta a una solicitud d
  **RemoveImGroupResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md)
+[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

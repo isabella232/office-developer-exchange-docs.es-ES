@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 531ea96a-d411-43e6-9fec-11fa2c959a30
-description: El elemento DictionaryEntry especifica el contenido de una propiedad de entrada único diccionario.
-ms.openlocfilehash: 75d7dd1aa82a4cc6c363b9c787cfb15b4d15b656
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DictionaryEntry especifica el contenido de una sola propiedad de entrada de diccionario.
+ms.openlocfilehash: 4c5d4c037f0c97b26d518d2f1386f71b31fa2d1f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764153"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455663"
 ---
 # <a name="dictionaryentry"></a>DictionaryEntry
 
-El elemento **DictionaryEntry** especifica el contenido de una propiedad de entrada único diccionario. 
+El elemento **DictionaryEntry** especifica el contenido de una sola propiedad de entrada de diccionario. 
   
 ```xml
 <DictionaryEntry>
@@ -33,24 +33,24 @@ El elemento **DictionaryEntry** especifica el contenido de una propiedad de entr
  **UserConfigurationDictionaryEntryType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[DictionaryKey](dictionarykey.md) <br/> |Especifica la clave de diccionario para una propiedad de diccionario.  <br/> |
-|[DictionaryValue](dictionaryvalue.md) <br/> |Especifica el valor de diccionario para una propiedad de diccionario.  <br/> |
+|[DictionaryKey](dictionarykey.md) <br/> |Especifica la clave de diccionario para una propiedad Dictionary.  <br/> |
+|[DictionaryValue](dictionaryvalue.md) <br/> |Especifica el valor de diccionario para una propiedad Dictionary.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Diccionario](dictionary.md) <br/> |Define un conjunto de entradas de diccionario (propiedad) para un objeto de configuración de usuario.  <br/> |
+|[Diccionario](dictionary.md) <br/> |Define un conjunto de entradas de propiedades de diccionario para un objeto de configuración de usuario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -64,12 +64,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 8e66979e-4e3b-4183-aaf5-a45d8380ede5
 description: El elemento LastResponseTime representa la fecha y hora de la última respuesta recibida.
-ms.openlocfilehash: 77f79d87be0b88f8c91c04438a2541643aad8858
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 45740d1a31d9b04bbc5062e7ff8b05629abd84c4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836205"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455383"
 ---
 # <a name="lastresponsetime"></a>LastResponseTime
 
@@ -30,42 +30,42 @@ El elemento **LastResponseTime** representa la fecha y hora de la última respue
  **DateTime**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Attendee](attendee.md) <br/> |Representa los asistentes y los recursos de una reunión.  <br/> |
+|[Asistente](attendee.md) <br/> |Representa los asistentes y los recursos de una reunión.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto que representa la fecha y hora de la respuesta más reciente.
+Es necesario un valor de texto que representa la fecha y la hora de la última respuesta.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

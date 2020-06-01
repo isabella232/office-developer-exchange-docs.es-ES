@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2a243852-362f-4bde-95ab-fe42ead61a85
-description: El elemento GetImItemList define una solicitud para obtener una lista de contactos y grupos de mensajería instantáneos.
-ms.openlocfilehash: b39a9e85c58f253511acaa21f62e1a4277fd56e8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetImItemList define una solicitud para obtener una lista de contactos y grupos de mensajería instantánea.
+ms.openlocfilehash: 435bacdc292eb8e7ea8a7822a2a4cd592598cb03
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764868"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456062"
 ---
 # <a name="getimitemlist"></a>GetImItemList
 
-El elemento **GetImItemList** define una solicitud para obtener una lista de contactos y grupos de mensajería instantáneos. 
+El elemento **GetImItemList** define una solicitud para obtener una lista de contactos y grupos de mensajería instantánea. 
   
 ```XML
 <GetImItemList>
@@ -28,11 +28,11 @@ El elemento **GetImItemList** define una solicitud para obtener una lista de con
  **GetImItemListType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> |true  <br/> |
    
 

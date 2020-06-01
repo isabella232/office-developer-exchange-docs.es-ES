@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4e657e57-528f-4250-a99c-f9850bbbcec5
-description: El elemento RequestType identifica si una solicitud de proxy es una solicitud de entre bosques o entre sitios.
-ms.openlocfilehash: 96a4d57432b15aa54fff2618df458fc75cb227f3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RequestType identifica si una solicitud de proxy es una solicitud entre sitios o entre bosques.
+ms.openlocfilehash: 278a65a1f2ce4cb433ae8099703d70d0a2cafa3b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837139"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455971"
 ---
 # <a name="requesttype"></a>RequestType
 
-El elemento **RequestType** identifica si una solicitud de proxy es una solicitud de entre bosques o entre sitios. 
+El elemento **RequestType** identifica si una solicitud de proxy es una solicitud entre sitios o entre bosques. 
   
 ```xml
 <RequestType>CrossSite or CrossForest</RequestType>
@@ -30,23 +30,23 @@ El elemento **RequestType** identifica si una solicitud de proxy es una solicitu
  **AvailabilityProxyRequestType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-Este elemento no tiene un elemento primario en el esquema. Este elemento se usa en el encabezado SOAP. Para obtener más información acerca de cómo se usa este elemento, consulte el archivo WSDL.
+Este elemento no tiene un elemento primario en el esquema. Este elemento se usa en el encabezado SOAP. Para obtener más información sobre cómo se usa este elemento, vea el archivo WSDL.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto es necesario para este elemento. Los valores posibles son:
+Se requiere un valor de texto para este elemento. Los valores posibles son los siguientes:
   
 - CrossSite
     
@@ -56,14 +56,14 @@ Un valor de texto es necesario para este elemento. Los valores posibles son:
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

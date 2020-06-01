@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 244af9e0-bf3c-46b4-8bfa-9719a1ed3107
-description: El elemento UserId identifica un usuario delegado o un usuario que tiene permisos de acceso de la carpeta.
-ms.openlocfilehash: 8e9867f5a8cdd62dd2dae55fbf527595ac14f46d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UserId identifica un usuario delegado o un usuario que tiene permisos de acceso a la carpeta.
+ms.openlocfilehash: 68075e335383835ddce9575d85ba5fa945ed305c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840909"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455544"
 ---
 # <a name="userid"></a>UserId
 
-El elemento **UserId** identifica un usuario delegado o un usuario que tiene permisos de acceso de la carpeta. 
+El elemento **userid** identifica un usuario delegado o un usuario que tiene permisos de acceso a la carpeta. 
   
 ```xml
 <UserId>
@@ -36,30 +36,30 @@ El elemento **UserId** identifica un usuario delegado o un usuario que tiene per
  **UserIdType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SID](sid.md) <br/> |Representa el formato de idioma (SDDL) de definición de descriptor de seguridad del identificador de seguridad (SID).  <br/> |
-|[PrimarySmtpAddress](primarysmtpaddress.md) <br/> |Representa la dirección de Protocolo Simple de transferencia de correo (SMTP) principal de una cuenta que se utilizará para el acceso de delegado.  <br/> |
-|[DisplayName (cadena)](displayname-string.md) <br/> |Define el nombre para mostrar de una carpeta, contacto, lista de distribución o un usuario delegado.  <br/> |
-|[DistinguishedUser](distinguisheduser.md) <br/> |Identifica las cuentas de usuario anónimo y predeterminado para el acceso de delegado.  <br/> |
-|[ExternalUserIdentity](externaluseridentity.md) <br/> |Identifica un usuario delegado externo o un usuario externo que tiene permisos de acceso de la carpeta.  <br/> |
+|[SID](sid.md) <br/> |Representa el formato de lenguaje de definición de descriptores de seguridad (SDDL) del identificador de seguridad (SID).  <br/> |
+|[PrimarySmtpAddress](primarysmtpaddress.md) <br/> |Representa la dirección de Protocolo simple de transferencia de correo (SMTP) principal de una cuenta que se va a usar para el acceso delegado.  <br/> |
+|[DisplayName (cadena)](displayname-string.md) <br/> |Define el nombre para mostrar de una carpeta, un contacto, una lista de distribución o un usuario delegado.  <br/> |
+|[DistinguishedUser](distinguisheduser.md) <br/> |Identifica cuentas de usuario anónimas y predeterminadas para el acceso delegado.  <br/> |
+|[ExternalUserIdentity](externaluseridentity.md) <br/> |Identifica un usuario delegado externo o un usuario externo que tiene permisos de acceso a la carpeta.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UsuarioDelegado](delegateuser.md) <br/> |Identifica un único delegado para agregar o actualizar en un buzón de correo.  <br/> |
-|[Permission](permission.md) <br/> |Define el acceso que tiene un usuario a una carpeta.  <br/> |
+|[DelegateUser](delegateuser.md) <br/> |Identifica un único delegado para agregar o actualizar en un buzón.  <br/> |
+|[Permiso](permission.md) <br/> |Define el acceso que un usuario tiene a una carpeta.  <br/> |
 |[CalendarPermission](calendarpermission.md) <br/> |Define el acceso que tiene un usuario a una carpeta de calendario.  <br/> |
-|[Identificadores de usuario](userids.md) <br/> |Contiene una matriz de delegado a los usuarios obtener o quitar de buzón de una entidad de seguridad.  <br/> |
+|[UserIds](userids.md) <br/> |Contiene una matriz de usuarios delegados para obtener o quitar del buzón de la entidad de la identidad.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -73,10 +73,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -87,8 +87,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación UpdateDelegate](updatedelegate-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Adición de delegados](http://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
+[Adición de delegados](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 1c4c5969-7bdd-4021-be0e-cae99e86cf2c
 description: Descubra cómo tratar los errores relacionados con la propiedad en la aplicación de EWS.
-ms.openlocfilehash: f214ab40c3717178c6957a9da93bdf89999fc1d3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 5863ab4e06bd968aa38b6fdec471e09c5e23f54a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763008"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455411"
 ---
 # <a name="ews-property-related-errors"></a>Errores relacionados con la propiedad EWS
 
@@ -42,7 +42,7 @@ La mayoría de las aplicaciones de cliente EWS se usan propiedades, lo que signi
 |ErrorNoFolderClassOverride  <br/> |Establezca la clase de carpeta en una nueva carpeta que no es el tipo de carpeta base.  <br/> |Uso de un tipo de carpeta genérico para establecer la clase de la carpeta.  <br/> |
 |ErrorNoPropertyTagForCustomProperties  <br/> |Hacer referencia a una propiedad extendida personalizada por su etiqueta de propiedad.  <br/> |Actualizar el código para hacer referencia a personalizados ampliado el identificador del conjunto de propiedad por propiedad y el nombre de la propiedad o el identificador de envío de la propiedad.  <br/> |
 |ErrorObjectTypeChanged  <br/> |Establecer o actualizar la clase de elemento en un elemento que no coincide con su tipo de esquema.  <br/> |Actualizar el código para que la clase de elemento coincide con el tipo de elemento de esquema.  <br/> |
-|ErrorPropertyUpdate  <br/> |Actualizar una propiedad con un valor de propiedad no válido.  <br/> |Comprobando el valor de la propiedad antes de enviarla en una solicitud de [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) .  <br/> |
+|ErrorPropertyUpdate  <br/> |Actualizar una propiedad con un valor de propiedad no válido.  <br/> |Comprobando el valor de la propiedad antes de enviarla en una solicitud de [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) .  <br/> |
 |ErrorRequiredPropertyMissing  <br/> |Enviar una solicitud de CreateAttachment que falta una propiedad necesaria.  <br/> |Actualizar el código para establecer la propiedad falta según lo especificado por la ruta de acceso de la propiedad devuelto en la respuesta.  <br/> |
 |ErrorUnsupportedMapiPropertyType  <br/> |Utilice la propiedad extendida de tipos de objeto de tipo, matriz de objetos, error o null.  <br/> |Actualizar el código para no usar los tipos de propiedad extendida restringidos.  <br/> |
 |ErrorUnsupportedPathForQuery  <br/> |Use una ruta de acceso de propiedad no admitido en una restricción de búsqueda.  <br/> |Cambio de la restricción de la búsqueda para excluir la ruta de acceso de propiedad no admitido.  <br/> |

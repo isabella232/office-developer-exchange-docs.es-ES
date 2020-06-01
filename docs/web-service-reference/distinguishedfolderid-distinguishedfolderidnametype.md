@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 915b2ee9-8284-4bf6-8995-1fd0785e9e48
-description: El elemento DistinguishedFolderId identifica las carpetas que se pueden hacer referencia por su nombre.
-ms.openlocfilehash: 1f5b97fc7ee7b93989762c26e4b979a8dfb884be
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DistinguishedFolderId identifica las carpetas a las que se puede hacer referencia por su nombre.
+ms.openlocfilehash: ac239ec63f78322f6c82ab4be269d6fe4380dd8d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764248"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456195"
 ---
 # <a name="distinguishedfolderid-distinguishedfolderidnametype"></a>DistinguishedFolderId (DistinguishedFolderIdNameType)
 
-El elemento **DistinguishedFolderId** identifica las carpetas que se pueden hacer referencia por su nombre. 
+El elemento **DistinguishedFolderId** identifica las carpetas a las que se puede hacer referencia por su nombre. 
   
 ```XML
 <DistinguishedFolderId> calendar | contacts | deleteditems | drafts | inbox | journal | notes | outbox | sentitems | tasks | msgfolderroot | publicfoldersroot | root | junkemail | searchfolders | voicemail | recoverableitemsroot | recoverableitemsdeletions | recoverableitemsversions | recoverableitemspurges | archiveroot | archivemsgfolderroot | archivedeleteditems | archiverecoverableitemsroot | archiverecoverableitemsdeletions | archiverecoverableitemsversions | archiverecoverableitemspurges | syncissues | conflicts | localfailures | serverfailures | recipientcache | quickcontacts | conversationhistory | adminauditlogs | todosearch | mycontacts | directory | imcontactlist | peopleconnect</DistinguishedFolderId>
@@ -26,11 +26,11 @@ El elemento **DistinguishedFolderId** identifica las carpetas que se pueden hace
  **DistinguishedFolderIdNameType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -38,56 +38,56 @@ Ninguno
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Folder](folder.md) <br/> |Especifica una carpeta genérica.  <br/> |
-|[CalendarFolder](calendarfolder.md) <br/> |Especifica una carpeta de calendario.  <br/> |
-|[ContactsFolder](contactsfolder.md) <br/> |Especifica una carpeta de contactos.  <br/> |
+|[Hubiera](calendarfolder.md) <br/> |Especifica una carpeta de calendario.  <br/> |
+|[Hubiera](contactsfolder.md) <br/> |Especifica una carpeta de contactos.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-**Valores de texto de elemento DistinguishedFolderId**
+**Valores de texto del elemento DistinguishedFolderId**
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|calendario  <br/> |Indica la dirección URL de la carpeta del calendario.  <br/> |
-|contactos  <br/> |Indica la dirección URL de la carpeta Contactos.  <br/> |
-|deleteditems  <br/> |Indica la dirección URL de la carpeta Elementos eliminados.  <br/> |
-|borradores  <br/> |Indica la dirección URL de la carpeta Borradores.  <br/> |
-|Bandeja de entrada  <br/> |Indica la dirección URL de la carpeta Bandeja de entrada.  <br/> |
-|diario  <br/> |Indica la dirección URL de la carpeta diario.  <br/> |
+|calendario  <br/> |Indica la dirección URL de la carpeta de calendario.  <br/> |
+|contacts  <br/> |Indica la dirección URL de la carpeta de contactos.  <br/> |
+|deleteditems  <br/> |Indica la dirección URL de la carpeta elementos eliminados.  <br/> |
+|drafts  <br/> |Indica la dirección URL de la carpeta Borradores.  <br/> |
+|inbox  <br/> |Indica la dirección URL de la carpeta Bandeja de entrada.  <br/> |
+|Agenda  <br/> |Indica la dirección URL de la carpeta del diario.  <br/> |
 |notas  <br/> |Indica la dirección URL de la carpeta notas.  <br/> |
-|Bandeja de salida  <br/> |Indica la dirección URL de la carpeta Bandeja de salida.  <br/> |
-|elementos enviados  <br/> |Indica la dirección URL de la carpeta Elementos enviados.  <br/> |
+|outbox  <br/> |Indica la dirección URL de la carpeta Bandeja de salida.  <br/> |
+|sentitems  <br/> |Indica la dirección URL de la carpeta elementos enviados.  <br/> |
 |tasks  <br/> |Indica la dirección URL de la carpeta tareas.  <br/> |
-|msgfolderroot  <br/> |Indica la dirección URL de la carpeta raíz de mensaje.  <br/> |
-|publicfoldersroot  <br/> |Indica la dirección URL de la carpeta raíz de las carpetas públicas.  <br/> |
+|msgfolderroot  <br/> |Indica la dirección URL de la carpeta raíz del mensaje.  <br/> |
+|publicfoldersroot  <br/> |Indica la dirección URL de la carpeta raíz de carpetas públicas.  <br/> |
 |root  <br/> |Indica la dirección URL de la carpeta raíz.  <br/> |
 |junkemail  <br/> |Indica la dirección URL de la carpeta de correo electrónico no deseado.  <br/> |
-|SearchFolders  <br/> |Indica la dirección URL de las carpetas de búsqueda.  <br/> |
+|searchfolders  <br/> |Indica la dirección URL de las carpetas de búsqueda.  <br/> |
 |correo de voz  <br/> |Indica la dirección URL de la carpeta de correo de voz.  <br/> |
 |recoverableitemsroot  <br/> |Indica la dirección URL de la carpeta raíz de elementos recuperables.  <br/> |
-|recoverableitemsdeletions  <br/> |Indica la dirección URL de la carpeta elementos recuperables eliminado.  <br/> |
-|recoverableitemsversions  <br/> |Indica la dirección URL de la carpeta de versiones de elemento recuperable.  <br/> |
+|recoverableitemsdeletions  <br/> |Indica la dirección URL de la carpeta elementos recuperables eliminados.  <br/> |
+|recoverableitemsversions  <br/> |Indica la dirección URL de la carpeta versiones de elementos recuperables.  <br/> |
 |recoverableitemspurges  <br/> |Indica la dirección URL de la carpeta elementos recuperables purgados.  <br/> |
 |archiveroot  <br/> |Indica la dirección URL de la carpeta raíz de archivo.  <br/> |
-|archivemsgfolderroot  <br/> |Indica la dirección URL de la carpeta de raíz de carpeta de mensajes archivados.  <br/> |
-|archivedeleteditems  <br/> |Indica la dirección URL de la carpeta Elementos eliminados archivados.  <br/> |
-|archiverecoverableitemsroot  <br/> |Indica la dirección URL de la carpeta raíz de los elementos recuperables archivados.  <br/> |
-|archiverecoverableitemsdeletions  <br/> |Indica la dirección URL de la carpeta Elementos eliminados recuperables archivados.  <br/> |
-|archiverecoverableitemsversions  <br/> |Indica la dirección URL de la carpeta de versiones de los elementos recuperables archivados.  <br/> |
-|archiverecoverableitemspurges  <br/> |Indica la dirección URL de la carpeta elementos recuperables purgados archivados.  <br/> |
+|archivemsgfolderroot  <br/> |Indica la dirección URL de la carpeta raíz de la carpeta de mensajes archivada.  <br/> |
+|archivedeleteditems  <br/> |Indica la dirección URL de la carpeta de elementos eliminados archivados.  <br/> |
+|archiverecoverableitemsroot  <br/> |Indica la dirección URL de la carpeta raíz de elementos recuperables archivados.  <br/> |
+|archiverecoverableitemsdeletions  <br/> |Indica la dirección URL de la carpeta de elementos eliminados recuperables archivados.  <br/> |
+|archiverecoverableitemsversions  <br/> |Indica la dirección URL de la carpeta de versiones de elementos recuperables archivados.  <br/> |
+|archiverecoverableitemspurges  <br/> |Indica la dirección URL de la carpeta de elementos recuperables depurados archivados.  <br/> |
 |syncissues  <br/> |Indica la dirección URL de la carpeta problemas de sincronización.  <br/> |
-|conflictos  <br/> |Indica la dirección URL de la carpeta conflictos.  <br/> |
+|conflicts  <br/> |Indica la dirección URL de la carpeta conflictos.  <br/> |
 |localfailures  <br/> |Indica la dirección URL de la carpeta errores locales.  <br/> |
-|serverfailures  <br/> |Indica la dirección URL de la carpeta de errores del servidor.  <br/> |
-|recipientcache  <br/> |Indica la dirección URL de la carpeta de caché del destinatario.  <br/> |
+|serverfailures  <br/> |Indica la dirección URL de la carpeta errores del servidor.  <br/> |
+|recipientcache  <br/> |Indica la dirección URL de la carpeta de la memoria caché de destinatarios.  <br/> |
 |QuickContacts  <br/> |Indica la dirección URL de la carpeta de contactos rápidos.  <br/> |
 |conversationhistory  <br/> |Indica la dirección URL de la carpeta Historial de conversaciones.  <br/> |
-|adminauditlogs  <br/> |Indica la dirección URL de la carpeta de registro de auditoría administrativas.  <br/> |
-|todosearch  <br/> |Indica la dirección URL de la carpeta de tareas pendientes de la búsqueda.  <br/> |
+|adminauditlogs  <br/> |Indica la dirección URL de la carpeta de registro de auditoría administrativa.  <br/> |
+|todosearch  <br/> |Indica la dirección URL de la carpeta de búsqueda de la tarea.  <br/> |
 |mycontacts  <br/> |Indica la dirección URL de la carpeta Mis contactos.  <br/> |
-|Active Directory  <br/> |Indica una dirección URL de la carpeta de Active directory.  <br/> |
+|Active  <br/> |Indica una dirección URL de la carpeta del directorio.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -99,12 +99,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

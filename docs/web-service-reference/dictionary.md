@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8309e468-115b-4d6e-b33c-c4719dcecc4c
-description: El elemento Dictionary define un conjunto de entradas de diccionario (propiedad) para un objeto de configuración de usuario.
-ms.openlocfilehash: 151abfe7a9a9ae05b8b61af87c33675e025920ec
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Dictionary define un conjunto de entradas de propiedades de diccionario para un objeto de configuración de usuario.
+ms.openlocfilehash: 8e5267717aab2317b2bc1581a775ead81025a08a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764151"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455670"
 ---
 # <a name="dictionary"></a>Dictionary
 
-El elemento **Dictionary** define un conjunto de entradas de diccionario (propiedad) para un objeto de configuración de usuario. 
+El elemento **Dictionary** define un conjunto de entradas de propiedades de diccionario para un objeto de configuración de usuario. 
   
 ```xml
 <Dictionary>
@@ -32,21 +32,21 @@ El elemento **Dictionary** define un conjunto de entradas de diccionario (propie
  **UserConfigurationDictionaryType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[DictionaryEntry](dictionaryentry.md) <br/> |Especifica el contenido de una propiedad de entrada único diccionario.  <br/> |
+|[DictionaryEntry](dictionaryentry.md) <br/> |Especifica el contenido de una sola propiedad de entrada de diccionario.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[UserConfiguration](userconfiguration.md) <br/> |Define un objeto de configuración de usuario único.  <br/> |
    
@@ -62,12 +62,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
