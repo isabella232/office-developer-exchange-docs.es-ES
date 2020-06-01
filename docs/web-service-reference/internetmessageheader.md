@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c70675f8-6feb-4c89-ba48-bce0479b308b
-description: El elemento InternetMessageHeader representa el encabezado del mensaje de Internet para un determinado encabezado dentro de la colección de encabezados. Para obtener la colección completa de los encabezados de mensaje de Internet, utilice la propiedad PR_TRANSPORT_MESSAGE_HEADERS. Para obtener más información acerca de los encabezados de mensaje EWS y Internet, seeGetting los encabezados de mensaje de Internet en EWS, MIME y los encabezados de mensaje de Internet que faltan.
-ms.openlocfilehash: 9457cdabe99c0adcb8183cbc039cc86db881fec7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento InternetMessageHeader representa el encabezado de un mensaje de Internet para un encabezado determinado dentro de la colección de encabezados. Para obtener toda la colección de encabezados de mensajes de Internet, use la propiedad PR_TRANSPORT_MESSAGE_HEADERS. Para obtener más información acerca de los encabezados de mensajes de Internet y EWS, Consulteobtener los encabezados de mensajes de Internet en EWS, MIME y los encabezados de mensajes de Internet que faltan.
+ms.openlocfilehash: 7b662617e0b1a1fcdcce3449b729485ba6e0956b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835952"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459310"
 ---
 # <a name="internetmessageheader"></a>InternetMessageHeader
 
-El elemento **InternetMessageHeader** representa el encabezado del mensaje de Internet para un determinado encabezado dentro de la colección de encabezados. Para obtener la colección completa de los encabezados de mensaje de Internet, utilice la propiedad **PR_TRANSPORT_MESSAGE_HEADERS** . Para obtener más información acerca de los encabezados de mensaje EWS y en Internet, vea "encabezados de mensajes de Internet de introducción de [EWS, MIME y los encabezados de mensaje de Internet que faltan](http://msdn.microsoft.com/en-us/library/exchange/hh545614%28v=exchg.140%29.aspx).
+El elemento **InternetMessageHeader** representa el encabezado de un mensaje de Internet para un encabezado determinado dentro de la colección de encabezados. Para obtener toda la colección de encabezados de mensajes de Internet, use la propiedad **PR_TRANSPORT_MESSAGE_HEADERS** . Para obtener más información acerca de los encabezados de mensajes de Internet y EWS, consulte "obtener encabezados de mensajes de Internet en [EWS, MIME y los encabezados de mensajes de Internet que faltan](https://msdn.microsoft.com/library/exchange/hh545614%28v=exchg.140%29.aspx).
   
 ```XML
 <InternetMessageHeader HeaderName=""/>
@@ -30,23 +30,23 @@ El elemento **InternetMessageHeader** representa el encabezado del mensaje de In
  **InternetHeaderType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**HeaderName** <br/> |Identifica el nombre de encabezado.  <br/> |
+|**HeaderName** <br/> |Identifica el nombre del encabezado.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[InternetMessageHeaders](internetmessageheaders.md) <br/> |Representa la colección de todos los encabezados de mensaje de Internet que están contenidos en un elemento en un buzón de correo.  <br/> |
+|[InternetMessageHeaders](internetmessageheaders.md) <br/> |Representa la colección de todos los encabezados de mensajes de Internet que contiene un elemento en un buzón.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -54,7 +54,7 @@ El valor de texto representa el valor del encabezado.
   
 ## <a name="remarks"></a>Comentarios
 
-La siguiente es la API administrada de EWS extendido definición de propiedad para la propiedad **PR_TRANSPORT_MESSAGE_HEADERS** . 
+La siguiente es la definición de propiedad extendida de la API administrada de EWS para la propiedad **PR_TRANSPORT_MESSAGE_HEADERS** . 
   
 ```cs
 ExtendedPropertyDefinition transportMsgHdr = new ExtendedPropertyDefinition(0x007D, MapiPropertyType.String);
@@ -66,17 +66,17 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
 
-[EWS, MIME y los encabezados de mensaje de Internet que faltan](http://msdn.microsoft.com/en-us/library/exchange/hh545614%28v=exchg.140%29.aspx)
+[EWS, MIME y los encabezados de mensajes de Internet que faltan](https://msdn.microsoft.com/library/exchange/hh545614%28v=exchg.140%29.aspx)
 

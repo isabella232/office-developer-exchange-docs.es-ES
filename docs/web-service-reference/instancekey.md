@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bb4dbe9b-aea0-4527-b7d6-e928066caf38
-description: El elemento InstanceKey especifica una clave de instancia de un elemento o conversación.
-ms.openlocfilehash: a0e4f9390d5dc368388b5a20e38796c6c0157a40
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento InstanceKey especifica una clave de instancia para un elemento o una conversación.
+ms.openlocfilehash: a6b55b9021fe63be7f678f0a1bcb24e88aeba005
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835943"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459976"
 ---
 # <a name="instancekey"></a>InstanceKey
 
-El elemento **InstanceKey** especifica una clave de instancia de un elemento o conversación. 
+El elemento **InstanceKey** especifica una clave de instancia para un elemento o una conversación. 
   
 ```XML
 <InstanceKey></InstanceKey>
@@ -26,26 +26,26 @@ El elemento **InstanceKey** especifica una clave de instancia de un elemento o c
  **base64Binary**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Conversación (ConversationType)](conversation-conversationtype.md) <br/> |Representa una sola conversación.  <br/> |
-|[Item](item.md) <br/> |Representa un elemento genérico en el almacén de Exchange.  <br/> |
+|[Elemento](item.md) <br/> |Representa un elemento genérico del almacén de Exchange.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **InstanceKey** es la clave de instancia de un elemento o conversación. 
+El valor de texto del elemento **InstanceKey** es la clave de instancia para un elemento o una conversación. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -57,14 +57,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

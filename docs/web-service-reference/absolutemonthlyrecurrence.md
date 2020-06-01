@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 178fa0ae-9dfc-417f-933c-d657d31c2161
 description: El elemento AbsoluteMonthlyRecurrence representa un patrón de periodicidad mensual.
-ms.openlocfilehash: f4613fa71a9164c45b60a82f675959817cd4bdd5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 3176cd30a1cfe7b2310f960ce377ab7a277e795a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764531"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460438"
 ---
 # <a name="absolutemonthlyrecurrence"></a>AbsoluteMonthlyRecurrence
 
@@ -33,40 +33,40 @@ El elemento **AbsoluteMonthlyRecurrence** representa un patrón de periodicidad 
  **AbsoluteMonthlyRecurrencePatternType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[DayOfMonth](dayofmonth.md) <br/> |Describe el día en un mes en el que se produce un elemento periódico. El intervalo de valores de esta propiedad es 1 y 31. Si para un mes determinado que este valor es mayor que el número de días del mes, se supone que el último día del mes para esta propiedad.  <br/> |
-|[Interval](interval.md) <br/> |Define el intervalo entre dos elementos periódicos consecutivos. Por ejemplo, si el elemento del **intervalo** tiene un valor de 5, el elemento periódico se produce cada 5 meses. El intervalo de valores válidos es de 1 a 99.  <br/> |
+|[DayOfMonth](dayofmonth.md) <br/> |Describe el día de un mes en que se produce un elemento periódico. El intervalo de valores para esta propiedad es de 1 a 31. Si, en un mes determinado, este valor es superior al número de días del mes, se asume el último día del mes para esta propiedad.  <br/> |
+|[Intervalo de](interval.md) <br/> |Define el intervalo entre dos elementos periódicos consecutivos. Por ejemplo, si el elemento **Interval** tiene un valor de 5, el elemento periódico se produce cada 5 meses. El intervalo de valores válidos es de 1 a 99.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Periodicidad (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Contiene información sobre la periodicidad para las tareas repetitivas.  <br/> |
-|[Periodicidad (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Contiene el patrón de periodicidad para los elementos de calendario y las convocatorias de reunión.  <br/> |
+|[Periodicidad (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Contiene información de periodicidad para tareas periódicas.  <br/> |
+|[Recurrence (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Contiene el patrón de periodicidad para los elementos de calendario y las convocatorias de reunión.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

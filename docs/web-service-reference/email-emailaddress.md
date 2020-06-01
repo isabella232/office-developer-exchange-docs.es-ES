@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5c40a6b6-e2d1-44ba-b439-5720490cbd43
-description: El elemento de correo electrónico identifica a un asistente a una reunión.
-ms.openlocfilehash: 8b95aa066d545a579ec3c14627d99dd0e326477e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento email identifica a un asistente para una reunión.
+ms.openlocfilehash: 9457ff735f4f87f59cd091b504fb8807e1aa8fa6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764325"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459240"
 ---
 # <a name="email-emailaddress"></a>Correo electrónico (EmailAddress)
 
-El elemento de **correo electrónico** identifica a un asistente a una reunión. 
+El elemento **email** identifica a un asistente para una reunión. 
   
 ```XML
 <Email></Email>
@@ -26,15 +26,15 @@ El elemento de **correo electrónico** identifica a un asistente a una reunión.
  **EmailAddress**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de correo electrónico identifica un asistente devuelto en una respuesta de la operación **GetUserAvailability** . 
+El valor de texto del elemento email identifica a un asistente devuelto en una respuesta de operación **GetUserAvailability** . 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

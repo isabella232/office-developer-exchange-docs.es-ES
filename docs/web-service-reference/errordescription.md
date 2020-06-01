@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 409c7893-7b69-4b0b-9d5b-112a0dfacde7
-description: El elemento ErrorDescription describe el error que se devuelve información acerca de un elemento que no se pueden indizar.
-ms.openlocfilehash: 458604282942472d83c2794bd0b7403284ac1df1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ErrorDescription describe el error que se devuelve en información sobre un elemento que no se puede indizar.
+ms.openlocfilehash: d12e8b3dfc377097f649ef6f863bc59c1a59df9a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764439"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460074"
 ---
 # <a name="errordescription"></a>ErrorDescription
 
-El elemento **ErrorDescription** describe el error que se devuelve información acerca de un elemento que no se pueden indizar. 
+El elemento **ErrorDescription** describe el error que se devuelve en información sobre un elemento que no se puede indizar. 
   
 ```XML
 <ErrorDescription></ErrorDescription>
@@ -26,15 +26,15 @@ El elemento **ErrorDescription** describe el error que se devuelve información 
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

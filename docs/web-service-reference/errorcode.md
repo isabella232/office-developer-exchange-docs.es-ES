@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0bb00cee-c66b-4f34-b99d-355458f5e83b
-description: El elemento ErrorCode representa un código de error de validación de regla que describe qué error de validación para cada predicado de la regla o la acción.
-ms.openlocfilehash: ed8e2fa72b0eb007925742e6d194f3a391b3f3cb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ErrorCode representa un código de error de validación de regla que describe qué error de validación para cada acción o predicado de regla.
+ms.openlocfilehash: 6432aeee786d74a9afcb346cb66765f9001257de
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764442"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460081"
 ---
 # <a name="errorcode"></a>ErrorCode
 
-El elemento **ErrorCode** representa un código de error de validación de regla que describe qué error de validación para cada predicado de la regla o la acción. 
+El elemento **ErrorCode** representa un código de error de validación de regla que describe qué error de validación para cada acción o predicado de regla. 
   
 ```XML
 <ErrorCode/>
@@ -26,25 +26,25 @@ El elemento **ErrorCode** representa un código de error de validación de regla
  **RuleValidationErrorCodeType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Error](error.md) <br/> |Representa un error de validación único en un valor de la propiedad de regla concreto, valor de la propiedad predicado o valor de la propiedad acción.  <br/> |
+|[Error](error.md) <br/> |Representa un error de validación único en un valor de propiedad de regla, un valor de propiedad de predicado o un valor de propiedad de acción específicos.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto para este elemento está restringido a una de las siguientes cadenas:
+El valor de texto de este elemento está restringido a una de las siguientes cadenas:
   
 - ADOperationFailure
     
@@ -102,14 +102,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,22 +1,22 @@
 ---
-title: EcpUrl-devuelve (POX)
+title: EcpUrl-RET (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5f090fd2-b0c4-4ca0-a959-1433d73a2069
-description: El elemento devuelve EcpUrl especifica una dirección URL parcial que se puede combinar con el valor del elemento EcpUrl (POX) para generar una dirección URL que se puede usar para tener acceso a la configuración de la etiqueta de retención para un usuario habilitado para correo.
-ms.openlocfilehash: 366a7a79c0f3c19b2cfef21c01826e62b0e95793
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EcpUrl-RET especifica una dirección URL parcial que se puede combinar con el valor del elemento EcpUrl (POX) para generar una dirección URL que se puede usar para obtener acceso a la configuración de la etiqueta de retención para un usuario habilitado para correo.
+ms.openlocfilehash: 1f6878dc58bb01fca6a56fdd645efd3363a3d442
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764307"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458694"
 ---
-# <a name="ecpurl-ret-pox"></a>EcpUrl-devuelve (POX)
+# <a name="ecpurl-ret-pox"></a>EcpUrl-RET (POX)
 
-El elemento **devuelve EcpUrl** especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para tener acceso a la configuración de la etiqueta de retención para un usuario habilitado para correo. 
+El elemento **EcpUrl-RET** especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para obtener acceso a la configuración de la etiqueta de retención para un usuario habilitado para correo. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -26,7 +26,7 @@ El elemento **devuelve EcpUrl** especifica una dirección URL parcial que se pue
   
 [Protocolo (POX)](protocol-pox.md)
   
-[EcpUrl-devuelve (POX)](ecpurl-ret-pox.md)
+[EcpUrl-RET (POX)](ecpurl-ret-pox.md)
   
 ```XML
 <EcpUrl-ret/>
@@ -34,33 +34,33 @@ El elemento **devuelve EcpUrl** especifica una dirección URL parcial que se pue
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente en el equipo que ejecuta Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.  <br/> |
+|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para tener acceso a la configuración de la etiqueta de retención para el usuario. 
+El valor de texto representa una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para obtener acceso a la configuración de la etiqueta de retención del usuario. 
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento **devuelve EcpUrl** es un elemento secundario opcional del elemento **Protocol** . 
+El elemento **EcpUrl-RET** es un elemento secundario opcional del elemento **Protocol** . 
   
 ## <a name="see-also"></a>Vea también
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

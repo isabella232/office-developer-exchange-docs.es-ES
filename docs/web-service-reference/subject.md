@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c140d6c2-deb1-4f67-a908-9397197c4ae7
-description: El elemento Subject representa la propiedad de asunto de los elementos del almacén de Exchange. El asunto está limitado a 255 caracteres.
-ms.openlocfilehash: b93d64c6f517c1cc990d697061c8dad478eb3a3f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Subject representa la propiedad Subject de los elementos del almacén de Exchange. El asunto está limitado a 255 caracteres.
+ms.openlocfilehash: c4d7c21ab70c21ceb63e53d008d25aebf8e22270
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837612"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458974"
 ---
 # <a name="subject"></a>Subject
 
-El elemento **Subject** representa la propiedad de asunto de los elementos del almacén de Exchange. El asunto está limitado a 255 caracteres. 
+El elemento **Subject** representa la propiedad Subject de los elementos del almacén de Exchange. El asunto está limitado a 255 caracteres. 
   
 ```XML
 <Subject/>
@@ -30,42 +30,42 @@ El elemento **Subject** representa la propiedad de asunto de los elementos del a
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
-|[CancelCalendarItem](cancelcalendaritem.md) <br/> |Representa un objeto de respuesta del elemento de calendario de cancelar.  <br/> |
-|[Contact](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
+|[CancelCalendarItem](cancelcalendaritem.md) <br/> |Representa un objeto de respuesta de elemento de calendario de cancelación.  <br/> |
+|[Contacto](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Representa una lista de distribución.  <br/> |
-|[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |Especifica los criterios para los tipos de mensajes para buscar.  <br/> |
-|[ForwardItem](forwarditem.md) <br/> |Representa un objeto de respuesta inteligente de elemento hacia delante.  <br/> |
-|[Item](item.md) <br/> |Representa un elemento en el almacén de Exchange.  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Representa la cancelación de la reunión en el almacén de Exchange.  <br/> |
+|[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |Especifica los criterios para los tipos de mensajes que se van a buscar.  <br/> |
+|[ForwardItem](forwarditem.md) <br/> |Representa un objeto de respuesta inteligente de elemento de reenvío.  <br/> |
+|[Elemento](item.md) <br/> |Representa un elemento en el almacén de Exchange.  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Representa una cancelación de reunión en el almacén de Exchange.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Representa un mensaje de reunión en el almacén de Exchange.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Representa una convocatoria de reunión en el almacén de Exchange.  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta a la reunión en el almacén de Exchange.  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Representa un correo electrónico en el almacén de Exchange.  <br/> |
-|[MessageTrackingReport](messagetrackingreport.md) <br/> |Contiene un solo mensaje que se devuelve en una [operación de GetMessageTrackingReport](getmessagetrackingreport-operation.md).  <br/> |
-|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |Contiene un resultado de mensaje único para un elemento [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) .  <br/> |
-|[RemoveItem](removeitem.md) <br/> |Representa un objeto de respuesta de elemento remove.  <br/> |
-|[ReplyAllToItem](replyalltoitem.md) <br/> |Representa un objeto de respuesta inteligente de responder a todos.  <br/> |
-|[ReplyToItem](replytoitem.md) <br/> |Representa un objeto de respuesta inteligente del elemento de respuesta.  <br/> |
-|[Tarea](task.md) <br/> |Representa una tarea en el almacén de Exchange.  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta a una reunión en el almacén de Exchange.  <br/> |
+|[Mensaje](message-ex15websvcsotherref.md) <br/> |Representa un correo electrónico en el almacén de Exchange.  <br/> |
+|[MessageTrackingReport](messagetrackingreport.md) <br/> |Contiene un solo mensaje que se devuelve en una [operación GetMessageTrackingReport](getmessagetrackingreport-operation.md).  <br/> |
+|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |Contiene un único resultado de mensaje para un elemento [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) .  <br/> |
+|[RemoveItem](removeitem.md) <br/> |Representa un objeto de respuesta de quitar elemento.  <br/> |
+|[ReplyAllToItem](replyalltoitem.md) <br/> |Representa un objeto de respuesta inteligente responder a todos.  <br/> |
+|[ReplyToItem](replytoitem.md) <br/> |Representa un objeto de respuesta inteligente de respuesta a elemento.  <br/> |
+|[Tarea](task.md) <br/> |Representa una tarea del almacén de Exchange.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto que contiene al asunto de un elemento de Exchange.
+Se necesita un valor de texto que contenga el asunto de un elemento de Exchange.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -75,10 +75,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -87,5 +87,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación GetMessageTrackingReport](getmessagetrackingreport-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

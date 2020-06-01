@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 107ec73e-083a-4956-9d37-33d4734cc157
-description: El elemento UnknownEntries contiene una matriz de las entradas de permiso desconocido que no se puede resolver con el servicio de directorio de Active Directory. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).
-ms.openlocfilehash: 306e5f226a56694bb1ff32362f77e7dff80865ad
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UnknownEntries contiene una matriz de entradas de permisos desconocidos que no se pueden resolver contra el servicio de directorio de Active Directory. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).
+ms.openlocfilehash: 68cb2518b895ca0a74e6b9ed649ee92b7502ab05
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840784"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459422"
 ---
 # <a name="unknownentries"></a>UnknownEntries
 
-El elemento **UnknownEntries** contiene una matriz de las entradas de permiso desconocido que no se puede resolver con el servicio de directorio de Active Directory. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1). 
+El elemento **UnknownEntries** contiene una matriz de entradas de permisos desconocidos que no se pueden resolver contra el servicio de directorio de Active Directory. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1). 
   
 ```xml
 <UnknownEntries>
@@ -32,39 +32,39 @@ El elemento **UnknownEntries** contiene una matriz de las entradas de permiso de
  **ArrayOfUnknownEntriesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UnknownEntry](unknownentry.md) <br/> |Representa una entrada de permiso desconocido único que no se puede resolver en Active Directory. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
+|[UnknownEntry](unknownentry.md) <br/> |Representa una sola entrada de permiso desconocida que no se puede resolver en Active Directory. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) <br/> |Contiene todos los permisos que están configurados para una carpeta. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
-|[PermissionSet (CalendarPermissionSetType)](permissionset-calendarpermissionsettype.md) <br/> |Contiene todos los permisos que están configurados para una carpeta de calendario. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
+|[PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) <br/> |Contiene todos los permisos que se configuran para una carpeta. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
+|[PermissionSet (CalendarPermissionSetType)](permissionset-calendarpermissionsettype.md) <br/> |Contiene todos los permisos que se configuran para una carpeta de calendario. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Puede eliminar entradas desconocidas de una carpeta mediante el uso de la operación UpdateFolder con el elemento [SetFolderField](setfolderfield.md) . Cuando se restablece el conjunto de permisos mediante la opción SetFolderField de la operación UpdateFolder, se eliminan las entradas desconocidas. Servicios Web de Exchange no es compatible con la eliminación de entradas individuales. 
+Puede eliminar entradas desconocidas de una carpeta mediante la operación UpdateFolder con el elemento [SetFolderField](setfolderfield.md) . Las entradas desconocidas se eliminan al restablecer el PermissionSet mediante la opción SetFolderField de la operación UpdateFolder. Los servicios web Exchange no admiten la eliminación de entradas individuales. 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -73,8 +73,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [Operación UpdateFolder](updatefolder-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Establecimiento de permisos de nivel de carpeta](http://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+[Configuración de permisos de nivel de carpeta](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 

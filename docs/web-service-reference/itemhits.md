@@ -7,34 +7,34 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7b0d54f5-1a04-4781-9f4a-d3e933a8b235
-description: El elemento ItemHits identifica ¿cuántas veces se encontró una palabra clave.
-ms.openlocfilehash: f980b957c3b07d8ff45c32bbbd8f0465f0d77b22
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ItemHits identifica el número de veces que se encontró una palabra clave.
+ms.openlocfilehash: a7e9165e2628fc1b66323b1d19a9c24131909e34
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836147"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460312"
 ---
 # <a name="itemhits"></a>ItemHits
 
-El elemento **ItemHits** identifica ¿cuántas veces se encontró una palabra clave. 
+El elemento **ItemHits** identifica el número de veces que se encontró una palabra clave. 
   
 ```XML
 <ItemHits></ItemHits>
 ```
 
- **número entero**
+ **entero**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ItemHits** es el número de veces que una palabra clave se encontró en una búsqueda de palabra clave. 
+El valor de texto del elemento **ItemHits** es el número de veces que se ha encontrado una palabra clave en una búsqueda de palabras clave. 
   
 ## <a name="remarks"></a>Comentarios
 

@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 013947f3-cf3c-40b1-baf6-405f26bd375e
 description: El elemento PageDirection contiene la dirección para la paginación en el resultado de la búsqueda. El valor es anterior o siguiente.
-ms.openlocfilehash: de9773407294bcc51fb7b3dab2e1dce0996e6edb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 22816ff73af49e0f029b5618fa3d45f8880d0f82
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836677"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459731"
 ---
 # <a name="pagedirection"></a>PageDirection
 
@@ -26,19 +26,19 @@ El elemento **PageDirection** contiene la dirección para la paginación en el r
  **SearchPageDirectionType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[SearchMailboxes](searchmailboxes.md) | [GetNonIndexableItemDetails](getnonindexableitemdetails.md)
+[SearchMailboxes](searchmailboxes.md)  |  [GetNonIndexableItemDetails](getnonindexableitemdetails.md)
   
 ## <a name="text-value"></a>Valor de texto
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

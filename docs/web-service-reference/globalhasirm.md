@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 425272b2-7a4e-4376-aea9-d9b10c1ad6ee
-description: El elemento GlobalHasIrm especifica si al menos un mensaje en la conversación y en todas las carpetas es un mensaje protegido de IRM.
-ms.openlocfilehash: ad3eafcb38829e7ea57cbc7535b0f5411ad595d2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GlobalHasIrm especifica si al menos un mensaje de la conversación y de todas las carpetas es un mensaje protegido por IRM.
+ms.openlocfilehash: 10b99c9a6421a89a549b69e918087f3e542ffa09
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835717"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459472"
 ---
 # <a name="globalhasirm"></a>GlobalHasIrm
 
-El elemento **GlobalHasIrm** especifica si al menos un mensaje en la conversación y en todas las carpetas es un mensaje protegido de IRM. 
+El elemento **GlobalHasIrm** especifica si al menos un mensaje de la conversación y de todas las carpetas es un mensaje protegido por IRM. 
   
 ```XML
 <GlobalHasIrm> true | false </GlobalHasIrm>
@@ -26,15 +26,15 @@ El elemento **GlobalHasIrm** especifica si al menos un mensaje en la conversaci�
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **GlobalHasIrm** es **true** si al menos un mensaje en la conversación y en todas las carpetas es un mensaje protegido de IRM. En caso contrario, el valor es **false**.
+El valor de texto del elemento **GlobalHasIrm** es **true** si al menos un mensaje en la conversación y en todas las carpetas es un mensaje protegido por IRM. De lo contrario, el valor es **false**.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
@@ -66,5 +66,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Conversación (ConversationType)](conversation-conversationtype.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Tipo de datos
+title: DataType
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 267fe5aa-f9b1-4d4c-ac11-0f2e50ec2627
-description: El tipo del elemento describe el tipo de datos que se comparten por una carpeta compartida.
-ms.openlocfilehash: b1adac8e3029abd64df96ab1560706babe4b12f2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DataType describe el tipo de datos que comparte una carpeta compartida.
+ms.openlocfilehash: a7df8d38e10f0ab31038d790d8f35208d1be66d5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764036"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458834"
 ---
-# <a name="datatype"></a>Tipo de datos
+# <a name="datatype"></a>DataType
 
-El **tipo** del elemento describe el tipo de datos que se comparten por una carpeta compartida. 
+El elemento **DataType** describe el tipo de datos que comparte una carpeta compartida. 
   
 ```xml
 <DataType>Calendar or Contacts</DataType>
@@ -31,31 +31,31 @@ El **tipo** del elemento describe el tipo de datos que se comparten por una carp
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetSharingFolder](getsharingfolder.md) <br/> |Define una solicitud para obtener el identificador de la carpeta local de una carpeta compartida especificada.  <br/> |
+|[GetSharingFolder](getsharingfolder.md) <br/> |Define una solicitud para obtener el identificador de carpeta local de una carpeta compartida especificada.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-En la siguiente tabla se enumera los valores posibles para el **tipo** del elemento. 
+En la siguiente tabla se enumeran los valores posibles para el elemento **DataType** . 
   
-**Valores del elemento de tipo de datos**
+**Valores del elemento DataType**
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Calendario  <br/> |Indica que la carpeta compartida contiene información de calendario.  <br/> |
+|Calendar  <br/> |Indica que la carpeta compartida contiene información del calendario.  <br/> |
 |Contactos  <br/> |Indica que la carpeta compartida contiene información de contacto.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
@@ -66,12 +66,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

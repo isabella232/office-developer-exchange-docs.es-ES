@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ef05bdda-7a66-44db-bb73-a2ce8316c257
-description: El elemento EndTimeInMinutes representa el final del día laborable para un usuario de buzón de correo.
-ms.openlocfilehash: 2885d810512eb0e575aa25b4f38d28332a10b8f2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EndTimeInMinutes representa el final del día laborable de un usuario de buzón de correo.
+ms.openlocfilehash: cb564f9de944848734749a30c813a94d6b5c4187
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764430"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459654"
 ---
 # <a name="endtimeinminutes"></a>EndTimeInMinutes
 
-El elemento **EndTimeInMinutes** representa el final del día laborable para un usuario de buzón de correo. 
+El elemento **EndTimeInMinutes** representa el final del día laborable de un usuario de buzón de correo. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -46,40 +46,40 @@ El elemento **EndTimeInMinutes** representa el final del día laborable para un 
  **int**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[WorkingPeriod](workingperiod.md) <br/> |Contiene la semana laboral días y las horas del usuario de buzón de correo.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/WorkingPeriodArray/WorkingPeriod[i]` <br/> |
+|[WorkingPeriod](workingperiod.md) <br/> |Contiene la semana laboral días y horas del usuario del buzón de correo.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/WorkingPeriodArray/WorkingPeriod[i]` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto. El valor de texto representa el final del día laborable por ¿cuántos minutos han transcurrido desde que empezó el día. Por ejemplo, una hora de finalización de 6 P.M. está representado por minutos 1080.
+Se requiere un valor de texto. El valor de texto representa el final del día laborable por el número de minutos que han transcurrido desde que comenzó el día. Por ejemplo, una hora de finalización de 6 P.M. se representa por 1080 minutos.
   
-El intervalo de valores posibles para este elemento es 0 y 1440.
+El intervalo de valores posibles para este elemento es de 0 a 1440.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -90,5 +90,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

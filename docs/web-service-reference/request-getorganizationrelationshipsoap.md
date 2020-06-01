@@ -1,22 +1,22 @@
 ---
-title: Solicitud (SOAP) (GetOrganizationRelationship)
+title: Request (GetOrganizationRelationship) (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 85dc155c-fad0-4756-b9a8-dedf5040a7c6
-description: El elemento de solicitud representa una solicitud de GetOrganizationRelationshipSettingsRequest (SOAP). El elemento de solicitud es sólo para uso interno. Este elemento no se usa en los clientes.
-ms.openlocfilehash: d3ae48ca403398288b8399ede82b98322a1b3260
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento request representa una solicitud GetOrganizationRelationshipSettingsRequest (SOAP). El elemento request es solo para uso interno. Los clientes no usan este elemento.
+ms.openlocfilehash: 90ccd3579c91c916ea645e6a3b466c9de4706421
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837122"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459563"
 ---
-# <a name="request-getorganizationrelationship-soap"></a>Solicitud (SOAP) (GetOrganizationRelationship)
+# <a name="request-getorganizationrelationship-soap"></a>Request (GetOrganizationRelationship) (SOAP)
 
-El elemento de **solicitud** representa una solicitud de [GetOrganizationRelationshipSettingsRequest (SOAP)](getorganizationrelationshipsettingsrequest-soap.md) . El elemento de **solicitud** es sólo para uso interno. Este elemento no se usa en los clientes. 
+El elemento **request** representa una solicitud [GetOrganizationRelationshipSettingsRequest (SOAP)](getorganizationrelationshipsettingsrequest-soap.md) . El elemento **request** es solo para uso interno. Los clientes no usan este elemento. 
   
 ```XML
 <Request>
@@ -27,35 +27,35 @@ El elemento de **solicitud** representa una solicitud de [GetOrganizationRelatio
  **GetOrganizationRelationshipSettingsRequest**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Dominios (SOAP)](domains-soap.md) <br/> |Representa los dominios para la detección automática es para ejecutarse y que van a utilizarse en una consulta.  <br/> |
+|[Dominios (SOAP)](domains-soap.md) <br/> |Representa los dominios para los que se ejecutará detección automática y que se van a usar en una consulta.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetOrganizationRelationshipSettingsRequestMessage (SOAP)](getorganizationrelationshipsettingsrequestmessage-soap.md) <br/> |Representa una solicitud de operación de la [operación de GetOrganizationRelationshipSettings (SOAP)](getorganizationrelationshipsettings-operation-soap.md) .  <br/> |
+|[GetOrganizationRelationshipSettingsRequestMessage (SOAP)](getorganizationrelationshipsettingsrequestmessage-soap.md) <br/> |Representa una solicitud de operación de [GetOrganizationRelationshipSettings (SOAP)](getorganizationrelationshipsettings-operation-soap.md) .  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
@@ -65,5 +65,5 @@ Ninguno.
 [GetOrganizationRelationshipSettingsRequest (SOAP)](getorganizationrelationshipsettingsrequest-soap.md)
 
 
-[Trabajar con detección automática](http://msdn.microsoft.com/library/39726b67-2eb2-451b-9307-cfd0b518b55c%28Office.15%29.aspx)
+[Trabajar con detección automática](https://msdn.microsoft.com/library/39726b67-2eb2-451b-9307-cfd0b518b55c%28Office.15%29.aspx)
 

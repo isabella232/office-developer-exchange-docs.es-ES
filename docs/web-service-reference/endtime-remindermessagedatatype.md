@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 771dce9c-17a7-4c1d-aab2-47b6dd48d795
-description: El elemento EndTime representa el final de un período de tiempo para consultar avisos.
-ms.openlocfilehash: 4e46f328789aca24b6d7dd86b939fefe95968a1a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EndTime representa el final del intervalo de tiempo para consultar los avisos.
+ms.openlocfilehash: 7a9eac48970d193a1a55a9e4c7934aad56058190
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764412"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459661"
 ---
 # <a name="endtime-remindermessagedatatype"></a>EndTime (ReminderMessageDataType)
 
-El elemento **EndTime** representa el final de un período de tiempo para consultar avisos. 
+El elemento **EndTime** representa el final del intervalo de tiempo para consultar los avisos. 
   
 ```XML
 <EndTime/>
@@ -26,15 +26,15 @@ El elemento **EndTime** representa el final de un período de tiempo para consul
  **dateTime**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **EndTime** representa el final de un período de tiempo para consultar avisos. 
+El valor de texto del elemento **EndTime** representa el final del intervalo de tiempo que se va a consultar para los avisos. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,10 +54,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -66,5 +66,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [ReminderMessageData](remindermessagedata.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

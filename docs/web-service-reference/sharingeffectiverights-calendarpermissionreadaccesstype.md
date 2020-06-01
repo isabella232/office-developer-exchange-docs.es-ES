@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b519f642-a9ef-4300-92e6-ed8202855fde
-description: El elemento SharingEffectiveRights indica los permisos que tiene el usuario para los datos del calendario que se está compartiendo.
-ms.openlocfilehash: e7d2aa061650c33d27de042ae8a6348f9a7d3430
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SharingEffectiveRights indica los permisos que tiene el usuario para los datos de calendario que se están compartiendo.
+ms.openlocfilehash: 5581e9cc001608a124ae94e69eba836f6fd98520
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837480"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458582"
 ---
 # <a name="sharingeffectiverights-calendarpermissionreadaccesstype"></a>SharingEffectiveRights (CalendarPermissionReadAccessType)
 
-El elemento **SharingEffectiveRights** indica los permisos que tiene el usuario para los datos del calendario que se está compartiendo. 
+El elemento **SharingEffectiveRights** indica los permisos que tiene el usuario para los datos de calendario que se están compartiendo. 
   
 ```XML
 <SharingEffectiveRights>None | TimeOnly | TimeAndSubjectAndLocation | FullDetails</SharingEffectiveRights>
@@ -30,32 +30,32 @@ El elemento **SharingEffectiveRights** indica los permisos que tiene el usuario 
  **CalendarPermissionReadAccessType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarFolder](calendarfolder.md) <br/> |Representa una carpeta que principalmente contiene los elementos del calendario.  <br/> |
+|[Hubiera](calendarfolder.md) <br/> |Representa una carpeta que contiene principalmente elementos de calendario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-En la siguiente tabla se enumera los valores posibles para el elemento **SharingEffectiveRights** . 
+En la siguiente tabla se enumeran los valores posibles para el elemento **SharingEffectiveRights** . 
   
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|None  <br/> |Indica que el usuario no tiene permiso para ver los elementos en el calendario.  <br/> |
-|TimeOnly  <br/> |Indica que el usuario tiene permiso para ver sólo horas de disponibilidad en el calendario.  <br/> |
-|TimeAndSubjectAndLocation  <br/> |Indica que el usuario tiene permiso para ver el tiempo libre/ocupada en el calendario y el asunto y la ubicación de las citas.  <br/> |
-|FullDetails  <br/> |Indica que el usuario tiene permiso para ver todos los elementos en el calendario, incluidos el tiempo libre/ocupado y asunto, ubicación y detalles de las citas.  <br/> |
+|Ninguno  <br/> |Indica que el usuario no tiene permiso para ver los elementos del calendario.  <br/> |
+|TimeOnly  <br/> |Indica que el usuario tiene permiso para ver solo la hora de disponibilidad en el calendario.  <br/> |
+|TimeAndSubjectAndLocation  <br/> |Indica que el usuario tiene permiso para ver la fecha de disponibilidad en el calendario y el asunto y la ubicación de las citas.  <br/> |
+|FullDetails  <br/> |Indica que el usuario tiene permiso para ver todos los elementos del calendario, incluidos el asunto, la ubicación y la fecha de disponibilidad de las citas.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -65,14 +65,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 82a737c7-da41-4777-8ad8-89851a0b602b
-description: El elemento GetRooms es el elemento raíz en una solicitud para obtener una lista de salas dentro de una lista de salas determinado.
-ms.openlocfilehash: a787097752cfeee9489e5f118549c2d939ba4c9a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetRooms es el elemento raíz de una solicitud para obtener una lista de salas dentro de una lista de salas determinada.
+ms.openlocfilehash: 77fde5980a03d4c0509344933b0901cb21ab7197
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764967"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458596"
 ---
 # <a name="getrooms"></a>GetRooms
 
-El elemento **GetRooms** es el elemento raíz en una solicitud para obtener una lista de salas dentro de una lista de salas determinado. 
+El elemento **GetRooms** es el elemento raíz de una solicitud para obtener una lista de salas dentro de una lista de salas determinada. 
   
 ```XML
 <GetRooms>
@@ -32,21 +32,21 @@ El elemento **GetRooms** es el elemento raíz en una solicitud para obtener una 
  **GetRoomsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[RoomList](roomlist.md) <br/> |Representa una dirección de correo electrónico que identifica una lista de las salas de reuniones  <br/> |
+|[RoomList](roomlist.md) <br/> |Representa una dirección de correo electrónico que identifica una lista de salas de reuniones  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
@@ -60,14 +60,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

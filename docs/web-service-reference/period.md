@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2f9cf6af-c531-4d7d-90c9-1a1db504d890
-description: El elemento Period define el nombre, el desplazamiento de tiempo y el identificador único para una región específica de la zona horaria.
-ms.openlocfilehash: 3b5d5877e6d9baffdfe536a0feec3b25b6d2883f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento period define el nombre, el desplazamiento de tiempo y el identificador único de una fase específica de la zona horaria.
+ms.openlocfilehash: a7c36a9de01fd0484a7df75de3b5525992ef7ee7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836726"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459724"
 ---
 # <a name="period"></a>Punto
 
-El elemento de **período** define el nombre, el desplazamiento de tiempo y el identificador único para una región específica de la zona horaria. 
+El elemento **period** define el nombre, el desplazamiento de tiempo y el identificador único de una fase específica de la zona horaria. 
   
 ```xml
 <Period Bias="" Name="" Id=""/>
@@ -30,25 +30,25 @@ El elemento de **período** define el nombre, el desplazamiento de tiempo y el i
  **PeriodType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|Bias  <br/> |Un valor de Duration que representa el desplazamiento de tiempo de la hora Universal coordinada (UTC) para el período.  <br/> |
-|Nombre  <br/> |Un valor de tipo string que representa el nombre descriptivo del período.  <br/> |
-|Id  <br/> |Un valor de tipo string que representa el identificador para el período.  <br/> |
+|Sesgo  <br/> |Un valor XS: Duration que representa el desplazamiento de tiempo desde la hora universal coordinada (UTC) para el período.  <br/> |
+|Nombre  <br/> |Un valor de tipo String que representa el nombre descriptivo del punto.  <br/> |
+|Id  <br/> |Un valor de tipo String que representa el identificador del período.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Períodos](periods.md) <br/> |Representa una matriz de los períodos que definen el desplazamiento de tiempo en diferentes fases de la zona horaria.  <br/> |
+|[Períodos](periods.md) <br/> |Representa una matriz de puntos que definen el desplazamiento de tiempo en diferentes etapas de la zona horaria.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -62,14 +62,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

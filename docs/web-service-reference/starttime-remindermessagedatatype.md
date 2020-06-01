@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: cdfc4edd-463c-409b-9bef-6fb915d00b99
-description: El elemento de StartTime (ReminderMessageDataType) especifica la hora de inicio del elemento que es un aviso de.
-ms.openlocfilehash: 2e3226d4a611a3abd46e7d6d73e800b74dd31f59
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento StartTime (ReminderMessageDataType) especifica la hora de inicio del elemento al que corresponde el aviso.
+ms.openlocfilehash: bdd940656d5441a0a36cfcef8f4e0b5db1474a7a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837561"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459002"
 ---
 # <a name="starttime-remindermessagedatatype"></a>StartTime (ReminderMessageDataType)
 
-El elemento de **StartTime (ReminderMessageDataType)** especifica la hora de inicio del elemento que es un aviso de. 
+El elemento **startTime (ReminderMessageDataType)** especifica la hora de inicio del elemento al que corresponde el aviso. 
   
 ```XML
 <StartTime/>
@@ -27,15 +27,15 @@ El elemento de **StartTime (ReminderMessageDataType)** especifica la hora de ini
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -43,7 +43,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **StartTime (ReminderMessageDataType)** es que la hora de inicio del elemento el aviso es para. 
+El valor de texto del elemento **startTime (ReminderMessageDataType)** es la hora de inicio del elemento al que se Reminder. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,13 +55,13 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [ReminderMessageData](remindermessagedata.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

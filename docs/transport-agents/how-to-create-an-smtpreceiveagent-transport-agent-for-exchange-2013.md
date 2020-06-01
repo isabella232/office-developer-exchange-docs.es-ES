@@ -1,5 +1,5 @@
 ---
-title: Crear a un agente de transporte SmtpReceiveAgent para Exchange 2013
+title: Crear un agente de transporte de SmtpReceiveAgent para Exchange 2013
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,46 +7,46 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: cdc7c462-74a7-49d6-95b2-155d783840e9
-description: Encuentre información acerca de cómo crear un agente de transporte SmtpReceiveAgent personalizado para usar con Exchange 2013.
-ms.openlocfilehash: a74d5baae6334c5e17acb6335206964b48f320e7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Descubra cómo crear un agente de transporte de SmtpReceiveAgent personalizado para usarlo con Exchange 2013.
+ms.openlocfilehash: 5ba021d02849ffc7e125029f0fd18ebf14c3f8da
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763473"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459142"
 ---
-# <a name="create-an-smtpreceiveagent-transport-agent-for-exchange-2013"></a>Crear a un agente de transporte SmtpReceiveAgent para Exchange 2013
+# <a name="create-an-smtpreceiveagent-transport-agent-for-exchange-2013"></a>Crear un agente de transporte de SmtpReceiveAgent para Exchange 2013
 
-Encuentre información acerca de cómo crear un agente de transporte SmtpReceiveAgent personalizado para usar con Exchange 2013.
+Descubra cómo crear un agente de transporte de SmtpReceiveAgent personalizado para usarlo con Exchange 2013.
   
 **Se aplica a:** Exchange Server 2013
   
-Aplicaciones de ejemplo y fragmentos de código relacionados:
+Fragmentos de código y aplicaciones de ejemplo relacionados:
 
-- [Exchange 2013: Crear a un agente de transporte de conversión de cuerpo](http://code.msdn.microsoft.com/Exchange/Exchange-2013-Build-a-body-ed36ecb0)
+- [Exchange 2013: crear un agente de transporte de conversión de cuerpo](https://code.msdn.microsoft.com/Exchange/Exchange-2013-Build-a-body-ed36ecb0)
   
-Las clases [SmtpReceiveAgentFactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx) y [SmtpReceiveAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.aspx) permiten ampliar el comportamiento del servicio de transporte Front-End en un servidor de acceso de cliente o el servicio de transporte en un servidor de buzón de correo. Puede utilizar estas clases para implementar a los agentes de transporte que están diseñados para responder a los mensajes según entran en la organización. 
+Las clases [SmtpReceiveAgentFactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx) y [SmtpReceiveAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.aspx) permiten ampliar el comportamiento del servicio de transporte front-end en un servidor de acceso de cliente o el servicio de transporte en un servidor de buzones de correo. Puede usar estas clases para implementar agentes de transporte diseñados para responder a los mensajes a medida que entran en la organización. 
   
-Las clases [SmtpReceiveAgentFactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx) y [SmtpReceiveAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.aspx) incluyen los eventos que aparecen en la siguiente tabla. 
+Las clases [SmtpReceiveAgentFactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx) y [SmtpReceiveAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.aspx) incluyen los eventos que se enumeran en la tabla siguiente. 
   
-**La tabla 1. Eventos de clase SmtpReceiveAgent**
+**Tabla 1. Eventos de la clase SmtpReceiveAgent**
 
-|**Evento**|**Descripción**|
+|**Event**|**Descripción**|
 |:-----|:-----|
-|[OnAuthCommand](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnAuthCommand.aspx) <br/> |Se usa cuando el agente requiere información que sólo se proporciona en el comando **AUTH** de SMTP, como un agente que acepta o rechaza intenta entregar un mensaje en función del tipo de método de autenticación usado.  <br/> |
-|[OnConnect](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnConnect.aspx) <br/> |Se utiliza cuando el agente requiere información que se proporciona únicamente cuando se abre una conexión a través de SMTP para el servicio de transporte Front-End, como un agente que lleva a cabo una acción basada en la dirección o el dominio del servidor SMTP remoto.  <br/> |
-|[OnDataCommand](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnDataCommand.aspx) <br/> |Utilice este evento cuando el agente requiere información que se proporciona en el comando SMTP **datos** .  <br/> |
-|[OnDisconnect](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnDisconnect.aspx) <br/> |Se utiliza cuando el agente requiere información que está disponible en el momento de desconexión, como la fecha y hora actuales, con el fin de realizar los cálculos de tiempo.  <br/> |
-|[OnEhloCommand](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnEhloCommand.aspx) <br/> |Se usa cuando el agente requiere información que se proporciona en el comando SMTP **EHLO** ; Por ejemplo, si el agente acepta o rechaza mensajes en función de la identidad proporcionada en el comando **EHLO** .  <br/> |
-|[OnEndOfAuthentication](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnEndOfAuthentication.aspx) <br/> |Se usa cuando el agente requiere información que está disponible después de que el servidor remoto finaliza el proceso de autenticación; Por ejemplo, un agente que realiza una acción en un mensaje en función de la información de autenticación proporcionada por el servidor SMTP remoto o el cliente.  <br/> |
-|[OnEndOfData](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnEndOfData.aspx) <br/> |Se utiliza cuando el agente debe llevar a cabo una acción basándose en los datos que está disponibles en el mensaje. Este evento no se desencadenará en el servicio de transporte Front-End. Si el agente de transporte tiene que usar este evento, se debe instalar en un servidor de buzón de correo.  <br/> |
-|[OnEndOfHeaders](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnEndOfHeaders.aspx) <br/> |Se utiliza cuando el agente debe llevar a cabo una acción según la información que está disponible en los encabezados del mensaje enviado.  <br/> |
+|[OnAuthCommand](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnAuthCommand.aspx) <br/> |Se usa cuando el agente requiere información que se proporciona únicamente en el comando **auth** de SMTP, como un agente que acepta o rechaza los intentos de entregar un mensaje en función del tipo de método de autenticación usado.  <br/> |
+|[OnConnect](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnConnect.aspx) <br/> |Se usa cuando el agente requiere información que se proporciona únicamente cuando se abre una conexión a través de SMTP para el servicio de transporte front-end, como un agente que realiza una acción basada en la dirección o el dominio del servidor SMTP remoto.  <br/> |
+|[OnDataCommand](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnDataCommand.aspx) <br/> |Use este evento cuando su agente requiera la información que se proporciona en el comando de **datos** SMTP.  <br/> |
+|[OnDisconnect](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnDisconnect.aspx) <br/> |Se usa cuando el agente requiere información que está disponible en el momento de la desconexión, como la fecha y la hora actuales, a fin de realizar cálculos de tiempo.  <br/> |
+|[OnEhloCommand](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnEhloCommand.aspx) <br/> |Se usa cuando el agente requiere información que se proporciona en el comando SMTP **EHLO** ; por ejemplo, si el agente acepta o rechaza mensajes en función de la identidad proporcionada en el comando **EHLO** .  <br/> |
+|[OnEndOfAuthentication](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnEndOfAuthentication.aspx) <br/> |Se usa cuando el agente requiere información que está disponible después de que el servidor remoto complete el proceso de autenticación; por ejemplo, para un agente que realiza una acción en un mensaje en función de la información de autenticación proporcionada por el servidor SMTP remoto o el cliente.  <br/> |
+|[OnEndOfData](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnEndOfData.aspx) <br/> |Se usa cuando el agente debe realizar una acción basándose en los datos que están disponibles en el mensaje. Este evento no se desencadenará en el servicio de transporte de front-end. Si el agente de transporte tiene que usar este evento, deberá instalarlo en un servidor de buzones de correo.  <br/> |
+|[OnEndOfHeaders](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnEndOfHeaders.aspx) <br/> |Se usa cuando el agente debe realizar una acción basándose en la información que está disponible en los encabezados del mensaje enviado.  <br/> |
    
-## <a name="creating-a-custom-smtpreceiveagent-transport-agent"></a>Creación de un agente de transporte SmtpReceiveAgent personalizado
+## <a name="creating-a-custom-smtpreceiveagent-transport-agent"></a>Creación de un agente de transporte de SmtpReceiveAgent personalizado
 
-El siguiente procedimiento describe cómo crear a un agente de transporte SmtpReceiveAgent personalizado. 
+El siguiente procedimiento describe cómo crear un agente de transporte de SmtpReceiveAgent personalizado. 
   
-### <a name="to-create-the-transport-agent"></a>Para crear al agente de transporte
+### <a name="to-create-the-transport-agent"></a>Para crear el agente de transporte
 
 1. Agregue referencias a los espacios de nombres.
     
@@ -58,9 +58,9 @@ El siguiente procedimiento describe cómo crear a un agente de transporte SmtpRe
   
    ```
 
-   Puede encontrar estos espacios de nombres en el servidor de Exchange 2013. Cuando se agrega una referencia a estos espacios de nombres, tendrá acceso a los miembros de [SmtpReceiveAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.aspx) así como otras clases que se usan en el [Exchange 2013: crear un agente de transporte de conversión de cuerpo](http://code.msdn.microsoft.com/Exchange/Exchange-2013-Build-a-body-ed36ecb0) ejemplo. 
+   Puede encontrar estos espacios de nombres en su servidor Exchange 2013. Al agregar una referencia a estos espacios de nombres, tendrá acceso a los miembros de [SmtpReceiveAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.aspx) , así como a otras clases usadas en la muestra de [Exchange 2013: Build a Body Conversion Transport Agent](https://code.msdn.microsoft.com/Exchange/Exchange-2013-Build-a-body-ed36ecb0) . 
     
-2. Implementar la clase derivada de la clase [SmtpReceiveAgentFactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx) . 
+2. Implemente la clase derivada para la clase [SmtpReceiveAgentFactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx) . 
     
    ```cs
       public class BodyConversionFactory : SmtpReceiveAgentFactory
@@ -78,9 +78,9 @@ El siguiente procedimiento describe cómo crear a un agente de transporte SmtpRe
   
    ```
 
-   Este código se cree una instancia de la clase derivada y reemplace el método **CreateAgent** para crear una instancia de su nuevo agente personalizado. 
+   Este código creará una instancia de la clase derivada y reemplazará el método **CreateAgent** para crear una instancia del nuevo agente personalizado. 
     
-3. Definir al agente.
+3. Definir el agente.
     
    ```cs
      public class BodyConversion : SmtpReceiveAgent
@@ -98,12 +98,12 @@ El siguiente procedimiento describe cómo crear a un agente de transporte SmtpRe
   
    ```
 
-   Después de definir la clase del agente, puede agregar la funcionalidad personalizada. En este ejemplo, el evento [OnEndOfData](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnEndOfData.aspx) se redirige a su controlador de eventos personalizado. 
+   Después de definir la clase del agente, puede agregar su funcionalidad personalizada. En este ejemplo, el evento [OnEndOfData](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.OnEndOfData.aspx) se redirige a su controlador de eventos personalizado. 
     
 ## <a name="see-also"></a>Vea también
 
-- [Conceptos de agente en Exchange 2013 de transporte](transport-agent-concepts-in-exchange-2013.md)    
-- [Referencia de agente de transporte de Exchange 2013](transport-agent-reference-for-exchange-2013.md)    
+- [Conceptos del agente de transporte en Exchange 2013](transport-agent-concepts-in-exchange-2013.md)    
+- [Referencia del agente de transporte para Exchange 2013](transport-agent-reference-for-exchange-2013.md)    
 - [SmtpReceiveAgentFactory](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgentFactory.aspx)    
 - [SmtpReceiveAgent](https://msdn.microsoft.com/library/Microsoft.Exchange.Data.Transport.Smtp.SmtpReceiveAgent.aspx)
     

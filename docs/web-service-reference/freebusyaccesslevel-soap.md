@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: a287b9c3-7fb6-4f2f-a8dc-15d4bc32394c
-description: El elemento FreeBusyAccessLevel representa la propiedad FreeBusyAccessLevel. El elemento FreeBusyAccessLevel es sólo para uso interno. Este elemento no se usa en los clientes.
-ms.openlocfilehash: c978608982a2795af1683b4b2121435a02149935
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento FreeBusyAccessLevel representa la propiedad FreeBusyAccessLevel. El elemento FreeBusyAccessLevel es solo para uso interno. Los clientes no usan este elemento.
+ms.openlocfilehash: 7ff0c6c72f924a2f1f8eee0dd152d19f6a8745e9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764714"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460053"
 ---
 # <a name="freebusyaccesslevel-soap"></a>FreeBusyAccessLevel (SOAP)
 
-El elemento **FreeBusyAccessLevel** representa la propiedad **FreeBusyAccessLevel** . El elemento **FreeBusyAccessLevel** es sólo para uso interno. Este elemento no se usa en los clientes. 
+El elemento **FreeBusyAccessLevel** representa la propiedad **FreeBusyAccessLevel** . El elemento **FreeBusyAccessLevel** es solo para uso interno. Los clientes no usan este elemento. 
   
 ```XML
 <FreeBusyAccessLevel/>
@@ -25,33 +25,33 @@ El elemento **FreeBusyAccessLevel** representa la propiedad **FreeBusyAccessLeve
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Representa una lista de relaciones de organización para una sola organización.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Este elemento especifica la cantidad máxima de todos los detalles de disponibilidad que se devuelve en la respuesta e indica el nivel de datos de disponibilidad que se comparten externamente. 
+Este elemento especifica la cantidad máxima de detalles de disponibilidad que se devolverá en la respuesta e indica el nivel de datos de disponibilidad que se comparte externamente. 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también

@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1c5181bb-0057-4e08-bed7-1bfd109b9314
-description: El elemento ExternalDirectoryObjectId está pensado para uso interno únicamente.
-ms.openlocfilehash: 1c84ab88a8c0f8488f95567ec6ba7d304d105206
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ExternalDirectoryObjectId está destinado sólo para uso interno.
+ms.openlocfilehash: eda19db35eccaa2b5b0a2008ec960da4cdd75412
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764549"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460123"
 ---
 # <a name="externaldirectoryobjectid"></a>ExternalDirectoryObjectId
 
-El elemento **ExternalDirectoryObjectId** está pensado para uso interno únicamente. 
+El elemento **ExternalDirectoryObjectId** está destinado sólo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

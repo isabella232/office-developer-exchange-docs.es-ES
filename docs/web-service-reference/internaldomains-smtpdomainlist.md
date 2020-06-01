@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 0f2cbb05-338d-4302-8871-a06e78b33f98
 description: El elemento InternalDomains identifica la lista de dominios SMTP internos de la organización.
-ms.openlocfilehash: f37a31f4348a7eb0024656489f249dec349bc67b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: ec7ef2d72ae922c751f8f50b72ff7d6b31b212ca
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835953"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459969"
 ---
 # <a name="internaldomains-smtpdomainlist"></a>InternalDomains (SmtpDomainList)
 
@@ -32,24 +32,24 @@ El elemento **InternalDomains** identifica la lista de dominios SMTP internos de
  **SmtpDomainList**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Domain](domain.md) <br/> |Identifica un único dominio SMTP.  <br/> |
+|[Dominio](domain.md) <br/> |Identifica un solo dominio SMTP.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |Contiene información de configuración de servicio para el servicio de sugerencias de correo.  <br/> |
-|[ProtectionRulesConfiguration](protectionrulesconfiguration.md) <br/> |Contiene información de configuración de servicio para el servicio de protección de las reglas.  <br/> |
+|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |Contiene información de configuración del servicio para el servicio de sugerencias de correo.  <br/> |
+|[ProtectionRulesConfiguration](protectionrulesconfiguration.md) <br/> |Contiene la información de configuración del servicio para el servicio de reglas de protección.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -65,14 +65,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

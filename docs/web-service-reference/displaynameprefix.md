@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 60363698-7603-4051-a66e-007c02db17cb
-description: El elemento DisplayNamePrefix especifica el prefijo del nombre para mostrar de la persona asociada.
-ms.openlocfilehash: 120a6402be386bc0c11f5859265098324ce4687f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DisplayNamePrefix especifica el prefijo del nombre para mostrar del rol asociado.
+ms.openlocfilehash: e7c723bb8da0834b96987f82e8f1c03c88c8d68c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764238"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458743"
 ---
 # <a name="displaynameprefix"></a>DisplayNamePrefix
 
-El elemento **DisplayNamePrefix** especifica el prefijo del nombre para mostrar de la persona asociada. 
+El elemento **DisplayNamePrefix** especifica el prefijo del nombre para mostrar del rol asociado. 
   
 ```xml
 <DisplayNamePrefix></DisplayNamePrefix>
@@ -26,25 +26,25 @@ El elemento **DisplayNamePrefix** especifica el prefijo del nombre para mostrar 
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud de **GetPersona** .  <br/> |
+|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud **GetPersona** .  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **DisplayNamePrefix** es un valor de tipo string que especifica el prefijo para el nombre para mostrar. 
+El valor de texto del elemento **DisplayNamePrefix** es un valor de cadena que especifica el prefijo del nombre para mostrar. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,12 +56,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

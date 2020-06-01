@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b70bf498-cc3a-4fa6-8236-514acb973b33
-description: El elemento TimeOffset representa el desplazamiento de tiempo de la hora Universal coordinada (UTC) para la transición de la zona horaria.
-ms.openlocfilehash: 46b1b2c8eec9bae871b4dafe43036e9d725075ae
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento TimeOffset representa el desplazamiento de tiempo desde la hora universal coordinada (UTC) para la transición de zona horaria.
+ms.openlocfilehash: 8cfd43477f0548227204da9ebc6d7e9307786845
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840653"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460291"
 ---
 # <a name="timeoffset"></a>TimeOffset
 
-El elemento **TimeOffset** representa el desplazamiento de tiempo de la hora Universal coordinada (UTC) para la transición de la zona horaria. 
+El elemento **TimeOffset** representa el desplazamiento de tiempo desde la hora universal coordinada (UTC) para la transición de zona horaria. 
   
 ```XML
 <TimeOffset/>
@@ -30,26 +30,26 @@ El elemento **TimeOffset** representa el desplazamiento de tiempo de la hora Uni
  **duration**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[RecurringDateTransition](recurringdatetransition.md) <br/> |Representa una transición de la zona horaria que se produce en una fecha específica de cada año.  <br/> |
-|[RecurringDayTransition](recurringdaytransition.md) <br/> |Representa una transición de la zona horaria que se produce en el mismo día cada año.  <br/> |
+|[RecurringDateTransition](recurringdatetransition.md) <br/> |Representa una transición de zona horaria que tiene lugar en una fecha específica cada año.  <br/> |
+|[RecurringDayTransition](recurringdaytransition.md) <br/> |Representa una transición de zona horaria que se produce el mismo día cada año.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **TimeOffset** es una duración que especifica el desplazamiento de tiempo de la hora UTC para la transición de la zona horaria. 
+El valor de texto del elemento **TimeOffset** es una duración que especifica el desplazamiento de tiempo respecto a la hora UTC para la transición de zona horaria. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -59,14 +59,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

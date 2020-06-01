@@ -1,5 +1,5 @@
 ---
-title: Correo electrónico (cadena)
+title: Email (cadena)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7e0cfa14-cdfb-4b48-b2e9-b1d866bf2c0e
-description: El elemento de correo electrónico identifica la dirección de correo electrónico del usuario cuyo foto se solicita en la operación GetUserPhoto.
-ms.openlocfilehash: 21156e8a9aa742035f2c988828a182cfd804ccbb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento email identifica la dirección de correo electrónico del usuario cuya foto se solicita en la operación GetUserPhoto.
+ms.openlocfilehash: 28fc16cee4438f6a6a87924875e029184197a426
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764328"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459226"
 ---
-# <a name="email-string"></a>Correo electrónico (cadena)
+# <a name="email-string"></a>Email (cadena)
 
-El elemento de **correo electrónico** identifica la dirección de correo electrónico del usuario cuyo foto se solicita en la operación **GetUserPhoto** . 
+El elemento **email** identifica la dirección de correo electrónico del usuario cuya foto se solicita en la operación **GetUserPhoto** . 
   
 ```XML
 <Email></Email>
@@ -26,15 +26,15 @@ El elemento de **correo electrónico** identifica la dirección de correo electr
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **correo electrónico** es la dirección de correo electrónico del usuario cuyo foto se solicita en la operación GetUserPhoto. 
+El valor de texto del elemento **email** es la dirección de correo electrónico del usuario cuya foto se solicita en la operación GetUserPhoto. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

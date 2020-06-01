@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: 75fee92a-a7f8-4a62-ad2b-17acbaada186
-description: La operación GetSharingFolder Obtiene el identificador de la carpeta local de una carpeta compartida especificada.
-ms.openlocfilehash: 23adb10b22623fcbc1dd6b33bd674afafdaa8b19
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación GetSharingFolder obtiene el identificador de la carpeta local de una carpeta compartida especificada.
+ms.openlocfilehash: cf66eb390b0287e89bb8402f26a2e728868a2b18
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835670"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460515"
 ---
 # <a name="getsharingfolder-operation"></a>Operación GetSharingFolder
 
-La operación **GetSharingFolder** Obtiene el identificador de la carpeta local de una carpeta compartida especificada. 
+La operación **GetSharingFolder** obtiene el identificador de la carpeta local de una carpeta compartida especificada. 
   
 ## <a name="soap-headers"></a>Encabezados SOAP
 
-La operación de **GetSharingFolder** puede utilizar los encabezados SOAP que se enumeran y describen en la tabla siguiente. 
+La operación **GetSharingFolder** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla. 
   
-|**Header**|**Element**|**Descripción**|
+|**Header**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de la operación.  <br/> |
-|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que ha respondido a la solicitud.  <br/> |
+|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación.  <br/> |
+|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud.  <br/> |
    
-## <a name="getsharingfolder-request-example"></a>Ejemplo de solicitud de GetSharingFolder
+## <a name="getsharingfolder-request-example"></a>Ejemplo de solicitud GetSharingFolder
 
-### <a name="getting-the-local-folder-identifier-by-specifying-the-sharedfolderid-element-of-the-folder-being-shared"></a>Obtener el identificador de la carpeta Local mediante la especificación del elemento SharedFolderId de la carpeta que se está compartida
+### <a name="getting-the-local-folder-identifier-by-specifying-the-sharedfolderid-element-of-the-folder-being-shared"></a>Obtener el identificador de la carpeta local especificando el elemento SharedFolderId de la carpeta que se va a compartir
 
-En el ejemplo de código siguiente se muestra cómo formar una solicitud para obtener el identificador de la carpeta local que corresponde a la carpeta que se está compartiendo. La carpeta que se está compartiendo se identifica con la dirección SMTP del buzón que contiene la carpeta que se está compartiendo y por el elemento [SharedFolderId](sharedfolderid.md) que representa el identificador de esa carpeta. En este ejemplo, la carpeta que se está compartiendo la propiedad user1@contoso.com. 
+En el ejemplo de código siguiente se muestra cómo crear una solicitud para obtener el identificador de la carpeta local que corresponde a la carpeta que se está compartiendo. La carpeta que se comparte se identifica por la dirección SMTP del buzón de correo que contiene la carpeta compartida y por el elemento [SharedFolderId](sharedfolderid.md) que representa el identificador de dicha carpeta. En este ejemplo, la carpeta que se comparte es propiedad de user1@contoso.com. 
   
 ### <a name="code"></a>Código
 
@@ -45,8 +45,8 @@ En el ejemplo de código siguiente se muestra cómo formar una solicitud para ob
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010"/>
   </soap:Header>
@@ -59,9 +59,9 @@ En el ejemplo de código siguiente se muestra cómo formar una solicitud para ob
 </soap:Envelope>
 ```
 
-### <a name="getting-the-local-folder-identifier-by-specifying-the-datatype-element-of-the-folder-being-shared"></a>Obtener el identificador de la carpeta Local especificando el tipo del elemento de la carpeta que se está compartida
+### <a name="getting-the-local-folder-identifier-by-specifying-the-datatype-element-of-the-folder-being-shared"></a>Obtener el identificador de la carpeta local especificando el elemento DataType de la carpeta que se va a compartir
 
-En el ejemplo de código siguiente se muestra cómo formar una solicitud para obtener el identificador de la carpeta local que corresponde a la carpeta que se está compartiendo. La carpeta que se está compartiendo se identifica con la dirección SMTP del buzón que contiene la carpeta que se está compartiendo y por el elemento de [tipo de datos](datatype.md) que representa el tipo de datos en esa carpeta. En este ejemplo, la carpeta que se está compartiendo es la carpeta de contactos cuyo propietario es user1@contoso.com. 
+En el ejemplo de código siguiente se muestra cómo crear una solicitud para obtener el identificador de la carpeta local que corresponde a la carpeta que se está compartiendo. La carpeta que se comparte se identifica por la dirección SMTP del buzón de correo que contiene la carpeta compartida y por el elemento [DataType](datatype.md) que representa el tipo de datos de esa carpeta. En este ejemplo, la carpeta que se comparte es la carpeta contactos que es propiedad de user1@contoso.com. 
   
 ### <a name="code"></a>Código
 
@@ -70,8 +70,8 @@ En el ejemplo de código siguiente se muestra cómo formar una solicitud para ob
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010"/>
   </soap:Header>
@@ -86,13 +86,13 @@ En el ejemplo de código siguiente se muestra cómo formar una solicitud para ob
 
 ### <a name="comments"></a>Comentarios
 
-Para obtener información acerca de los valores posibles del elemento de **tipo de datos** , vea el [tipo de datos](datatype.md).
+Para obtener información sobre los valores posibles del elemento **DataType** , vea [DataType](datatype.md).
   
-## <a name="successful-getsharingfolder-response"></a>GetSharingFolder la respuesta es correcta
+## <a name="successful-getsharingfolder-response"></a>Respuesta GetSharingFolder correcta
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta a una solicitud **GetSharingFolder** correcta. El atributo **Id** del elemento [SharingFolderId](sharingfolderid.md) representa el identificador de la carpeta local en la relación de uso compartida. 
+En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **GetSharingFolder** . El atributo **ID** del elemento [SharingFolderId](sharingfolderid.md) representa el identificador de la carpeta local en la relación de uso compartido. 
   
 ### <a name="code"></a>Código
 
@@ -107,13 +107,13 @@ En el ejemplo siguiente se muestra una respuesta a una solicitud **GetSharingFol
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <GetSharingFolderResponseMessage ResponseClass="Success"
-                                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</m:ResponseCode>
       <m:SharingFolderId Id="AAMkAD=" ChangeKey="AwAAA=" />
     </GetSharingFolderResponseMessage>
@@ -125,7 +125,7 @@ En el ejemplo siguiente se muestra una respuesta a una solicitud **GetSharingFol
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **GetSharingFolder** . En este ejemplo, se produjo el error debido a que la solicitud de los elementos de la [SharingFolderId](sharingfolderid.md) y el [tipo de datos](datatype.md) especificados. Tenga en cuenta que sólo uno u otro de esos dos elementos puede especificarse, pero no ambos. 
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud **GetSharingFolder** . En este ejemplo, el error se produjo porque la solicitud especificó los elementos [SharingFolderId](sharingfolderid.md) y [DataType](datatype.md) . Tenga en cuenta que solo se puede especificar uno de estos dos elementos, pero no ambos. 
   
 ### <a name="code"></a>Código
 
@@ -140,13 +140,13 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **G
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <GetSharingFolderResponseMessage ResponseClass="Error" 
-                                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:MessageText>Either DataType or SharedFolderId must be specified, but not both.</m:MessageText>
       <m:ResponseCode>ErrorInvalidGetSharingFolderRequest</m:ResponseCode>
       <m:DescriptiveLinkKey>0</m:DescriptiveLinkKey>
@@ -170,5 +170,5 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **G
 
 [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
   
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

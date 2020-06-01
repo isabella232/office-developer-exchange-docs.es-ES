@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c6ec1d8d-8dd8-4c9a-a3e1-50e24958eb0d
-description: El elemento ContainsSubjectStrings indica las cadenas que deben aparecer en el asunto de los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.
-ms.openlocfilehash: a266855effaeb34aa232305db970f97c309a2e4c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ContainsSubjectStrings indica las cadenas que deben aparecer en el asunto de los mensajes entrantes para que se aplique la condición o excepción.
+ms.openlocfilehash: 8b078f61d08864970a123f81688981ffba2864ff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763844"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458960"
 ---
 # <a name="containssubjectstrings"></a>ContainsSubjectStrings
 
-El elemento **ContainsSubjectStrings** indica las cadenas que deben aparecer en el asunto de los mensajes entrantes en orden para la condición o la excepción que se debe aplicar. 
+El elemento **ContainsSubjectStrings** indica las cadenas que deben aparecer en el asunto de los mensajes entrantes para que se aplique la condición o excepción. 
   
 ```XML
 <ContainsSubjectStrings>
@@ -32,23 +32,23 @@ El elemento **ContainsSubjectStrings** indica las cadenas que deben aparecer en 
  **ArrayOfStringsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[String](string.md) <br/> |Representa una cadena que debe aparecer en el asunto de los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
+|[String](string.md) <br/> |Representa una cadena que debe aparecer en el asunto de los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Condiciones](conditions.md) <br/> |Representa las condiciones que, cuando se cumplen los requisitos, se activará las acciones de regla para una regla.  <br/> |
+|[Condiciones](conditions.md) <br/> |Representa las condiciones que, cuando se cumplan, desencadenarán las acciones de regla de una regla.  <br/> |
 |[Excepciones](exceptions.md) <br/> |Representa las excepciones que representan todas las condiciones de excepción de regla disponibles para una regla de bandeja de entrada.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
@@ -63,14 +63,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

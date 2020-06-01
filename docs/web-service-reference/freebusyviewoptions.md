@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c07f3ddb-874b-4d30-a60e-7e5c7793bb6f
-description: El elemento FreeBusyViewOptions especifica el tipo de información de libre/ocupado devuelto en la respuesta.
-ms.openlocfilehash: 703fc6a3625d24cf874a785600e13ee4505b506f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento FreeBusyViewOptions especifica el tipo de información de disponibilidad devuelta en la respuesta.
+ms.openlocfilehash: b67d3f461e0edaa82f074f75b0c1c54efc8af4d0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764721"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459577"
 ---
 # <a name="freebusyviewoptions"></a>FreeBusyViewOptions
 
-El elemento **FreeBusyViewOptions** especifica el tipo de información de libre/ocupado devuelto en la respuesta. 
+El elemento **FreeBusyViewOptions** especifica el tipo de información de disponibilidad devuelta en la respuesta. 
   
 [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -39,44 +39,44 @@ El elemento **FreeBusyViewOptions** especifica el tipo de información de libre/
  **FreeBusyViewOptionsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Ventana de tiempo](timewindow.md) <br/> |Identifica el intervalo de tiempo de consulta para la información de disponibilidad del usuario.  <br/> |
-|[MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) <br/> |Representa la diferencia de tiempo entre dos ranuras sucesivos en la vista **FreeBusyMerged** .  <br/> |
-|[RequestedView](requestedview.md) <br/> |Define el tipo de información del calendario que solicita un cliente.  <br/> |
+|[TimeWindow](timewindow.md) <br/> |Identifica el intervalo de tiempo consultado para obtener la información de disponibilidad del usuario.  <br/> |
+|[MergedFreeBusyIntervalInMinutes](mergedfreebusyintervalinminutes.md) <br/> |Representa la diferencia de tiempo entre dos ranuras sucesivas en la vista **FreeBusyMerged** .  <br/> |
+|[RequestedView](requestedview.md) <br/> |Define el tipo de información de calendario que un cliente solicita.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |Contiene los argumentos utilizados para obtener información de disponibilidad del usuario. Esto es un elemento raíz.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityRequest` <br/> |
+|[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |Contiene los argumentos usados para obtener información de disponibilidad del usuario. Se trata de un elemento raíz.  <br/> A continuación se encuentra la expresión XPath de este elemento:  <br/>  `/GetUserAvailabilityRequest` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Este elemento no es necesario y sólo puede aparecer una vez si se usa. Este valor puede ser null si el valor del elemento [SuggestionsViewOptions](suggestionsviewoptions.md) no es nulo. 
+Este elemento no es necesario y solo se puede producir una vez si se usa. Este valor puede ser null si el valor del elemento [SuggestionsViewOptions](suggestionsviewoptions.md) no es NULL. 
   
 > [!NOTE]
-> El esquema que describe este elemento se encuentra en el directorio /epi/ del equipo que ejecuta Microsoft® Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente. 
+> El esquema que describe este elemento se encuentra en el directorio/EPI/del equipo que ejecuta Microsoft® Exchange Server 2007 que tenga instalado el rol de servidor acceso de clientes. 
   
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se obtiene una lista de las reuniones y una secuencia de libre/ocupada en intervalos de 60 minutos.
+En el siguiente ejemplo se obtiene una lista de reuniones y una secuencia de disponibilidad en intervalos de 60 minutos.
   
 ```
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <GetUserAvailabilityRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <TimeZone xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetUserAvailabilityRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <TimeZone xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Bias>480</Bias>
         <StandardTime>
           <Bias>0</Bias>
@@ -94,7 +94,7 @@ En el ejemplo siguiente se obtiene una lista de las reuniones y una secuencia de
         </DaylightTime>
       </TimeZone>
       <MailboxDataArray>
-        <MailboxData xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <MailboxData xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <Email>
             <Name></Name>
             <Address>someone@ExServer.example.com</Address>
@@ -105,7 +105,7 @@ En el ejemplo siguiente se obtiene una lista de las reuniones y una secuencia de
           <ExcludeNonWorkingHours>false</ExcludeNonWorkingHours>
         </MailboxData>
       </MailboxDataArray>
-      <FreeBusyViewOptions xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <FreeBusyViewOptions xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <TimeWindow>
           <StartTime>2006-02-06T00:00:00</StartTime>
           <EndTime>2006-02-25T23:59:59</EndTime>
@@ -122,10 +122,10 @@ En el ejemplo siguiente se obtiene una lista de las reuniones y una secuencia de
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -134,5 +134,5 @@ En el ejemplo siguiente se obtiene una lista de las reuniones y una secuencia de
 [Operación GetUserAvailability](getuseravailability-operation.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

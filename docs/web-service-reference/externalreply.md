@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cbcfa469-242c-4f98-8f4f-2c9bcbe69f5a
-description: El elemento ExternalReply contiene la espera de respuesta de la oficina (OOF) que se envía a direcciones fuera del destinatario dominio o dominios de confianza.
-ms.openlocfilehash: f318b34c98dd42487b8ca3791ba915fb91d629a5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ExternalReply contiene la respuesta de fuera de la oficina (OOF) que se envía a las direcciones fuera del dominio del destinatario o de los dominios de confianza.
+ms.openlocfilehash: c3381979e5e6aad51f9ae2bb3e661003ef793be6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764571"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458764"
 ---
 # <a name="externalreply"></a>ExternalReply
 
-El elemento **ExternalReply** contiene la espera de respuesta de la oficina (OOF) que se envía a direcciones fuera del destinatario dominio o dominios de confianza. 
+El elemento **ExternalReply** contiene la respuesta de fuera de la oficina (OOF) que se envía a las direcciones fuera del dominio del destinatario o de los dominios de confianza. 
   
 ```XML
 <ExternalReply>
@@ -32,26 +32,26 @@ El elemento **ExternalReply** contiene la espera de respuesta de la oficina (OOF
  **ReplyBody**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|XML: lang  <br/> |Especifica el lenguaje utilizado en el mensaje **ExternalReply** . Los valores posibles para este atributo se definen en IETF RFC 3066.  <br/> |
+|XML: lang  <br/> |Especifica el idioma usado en el mensaje **ExternalReply** . Los valores posibles para este atributo los define el documento RFC 3066 de IETF.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Mensaje (disponibilidad)](message-availability.md) <br/> |Contiene la respuesta de fuera de la oficina.  <br/> |
+|[Mensaje (disponibilidad)](message-availability.md) <br/> |Contiene la respuesta OOF.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UserOofSettings](useroofsettings.md) <br/> |Especifica la configuración de fuera de la oficina.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
-|[OofSettings](oofsettings.md) <br/> |Contiene la configuración de fuera de la oficina.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |Especifica la configuración de OOF.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[OofSettings](oofsettings.md) <br/> |Contiene la configuración de OOF.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -59,19 +59,19 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
   
 ## <a name="example"></a>Ejemplo
 
-El siguiente ejemplo de una solicitud de SetUserOofSettings la [OofState](oofstate.md) establece en **habilitado**, Establece la duración de OOF a 10 días y establece los mensajes de fuera de la oficina internos y externos.
+El siguiente ejemplo de una solicitud SetUserOofSettings establece la [OofState](oofstate.md) en **habilitada**, establece la duración de OOF en 10 días y establece los mensajes internos y externos de OOF.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <SetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
       </Mailbox>
-      <UserOofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <UserOofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Enabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -94,10 +94,10 @@ El siguiente ejemplo de una solicitud de SetUserOofSettings la [OofState](oofsta
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

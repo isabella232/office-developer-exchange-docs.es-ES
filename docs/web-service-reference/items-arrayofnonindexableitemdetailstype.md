@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: da795880-12b4-4341-bcb8-31616f4ba46f
-description: El elemento de elementos contiene una matriz de detalles del elemento para los elementos que no se pueden indizar.
-ms.openlocfilehash: b272479051edc70534c7b5b45410f8a9d5e3f97f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento items contiene una matriz de detalles del elemento para los elementos no indexables.
+ms.openlocfilehash: 81ca175933b0d23a939f6fdc45cb5a10e7157350
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836154"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459906"
 ---
 # <a name="items-arrayofnonindexableitemdetailstype"></a>Elementos (ArrayOfNonIndexableItemDetailsType)
 
-El elemento de **elementos** contiene una matriz de detalles del elemento para los elementos que no se pueden indizar. 
+El elemento **Items** contiene una matriz de detalles del elemento para los elementos no indexables. 
   
 ```XML
 <Items>
@@ -28,11 +28,11 @@ El elemento de **elementos** contiene una matriz de detalles del elemento para l
  **ArrayOfNonIndexableItemDetailsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,10 +52,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -64,5 +64,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación GetNonIndexableItemDetails](getnonindexableitemdetails-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9d952237-a3be-48b9-ab53-7b268db2b693
-description: El elemento DomainController (MasterMailboxType) está pensado para uso interno únicamente.
-ms.openlocfilehash: 9259cfb1c872094cfa70e6e91a139b1ea6c8b8ba
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DomainController (MasterMailboxType) está pensado solo para uso interno.
+ms.openlocfilehash: 0c05da4da746f756624acee7212014ede8e83729
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764259"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458722"
 ---
 # <a name="domaincontroller-mastermailboxtype"></a>DomainController (MasterMailboxType)
 
-El elemento **DomainController (MasterMailboxType)** está pensado para uso interno únicamente. 
+El elemento **DomainController (MasterMailboxType)** está pensado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

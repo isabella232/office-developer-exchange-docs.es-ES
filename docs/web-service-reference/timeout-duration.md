@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bb15f9a7-8ea5-4765-9877-762c3f98bf50
-description: El elemento de tiempo de espera especifica el período de tiempo antes de una suscripción de extracción se agotó el tiempo por el servidor.
-ms.openlocfilehash: 23b210dcdd87f2388aecec246068f12ec6c69a78
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento timeout especifica el período de tiempo que debe transcurrir antes de que el servidor supere el tiempo de espera de una suscripción de extracción.
+ms.openlocfilehash: b5b0e77d794080cd8e0da1e14acf4cb059b80b08
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840650"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460284"
 ---
 # <a name="timeout-duration"></a>Tiempo de espera (duración)
 
-El elemento de **tiempo de espera** especifica el período de tiempo antes de una suscripción de extracción se agotó el tiempo por el servidor. 
+El elemento **timeout** especifica el período de tiempo que debe transcurrir antes de que el servidor supere el tiempo de espera de una suscripción de extracción. 
   
 ```XML
 <Timeout></Timeout>
@@ -26,15 +26,15 @@ El elemento de **tiempo de espera** especifica el período de tiempo antes de un
  **SubscriptionTimeoutType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **tiempo de espera** es el período de tiempo, en minutos, antes de una suscripción de extracción se agotó el tiempo por el servidor. El valor mínimo es 1; el valor máximo es 1440. 
+El valor de texto del elemento **timeout** es el período de tiempo, en minutos, antes de que el servidor agote el tiempo de espera de una suscripción de extracción. El valor mínimo es 1; el valor máximo es 1440. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

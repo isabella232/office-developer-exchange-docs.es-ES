@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c4b98be7-141c-4ba8-97ef-9ad1ed19f61f
-description: El elemento de tiempo representa el tiempo de transición del día a y desde el horario estándar y del horario de verano.
-ms.openlocfilehash: 716487fb7ed64dbaa6fa97caf1ea608e4673d2ef
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Time representa la hora de transición del día a y desde la hora estándar y el horario de verano.
+ms.openlocfilehash: 97c89fbcbdb85fcdd4d32a1d44075ac42adef053
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840652"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460298"
 ---
-# <a name="time"></a>Time
+# <a name="time"></a>Hora
 
-El elemento de **tiempo** representa el tiempo de transición del día a y desde el horario estándar y del horario de verano. 
+El elemento **Time** representa la hora de transición del día a y desde la hora estándar y el horario de verano. 
   
 ```xml
 <Time>...</Time>
@@ -30,36 +30,36 @@ El elemento de **tiempo** representa el tiempo de transición del día a y desde
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[StandardTime](standardtime.md) <br/> | Representa un desplazamiento desde el momento en relación con hora Universal coordinada (UTC), representado por el elemento [Bias (UTC)](bias-utc.md) . Este elemento también contiene información sobre la transición a la hora estándar de horario de verano en regiones donde se observa el horario de verano.  <br/><br/>  Los siguientes son las expresiones de XPath para el elemento [StandardTime](standardtime.md) : <br/> <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/StandardTime`<br/> <br/>  `/GetUserAvailabilityRequest/TimeZone/StandardTime` <br/> |
-|[DaylightTime](daylighttime.md) <br/> | Representa un desplazamiento de la hora con respecto a UTC representada por el elemento [Bias (UTC)](bias-utc.md) en las regiones donde se observa el horario de verano. Este elemento también contiene información acerca de cuándo se produce la transición al horario de verano de tiempo estándar.  <br/><br/>  Los siguientes son las expresiones de XPath para el elemento [DaylightTime](daylighttime.md) :  <br/><br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/DaylightTime` <br/><br/>  `/GetUserAvailabilityRequest/TimeZone/DaylightTime` <br/> |
+|[Standardtime Element](standardtime.md) <br/> | Representa un desplazamiento del tiempo con respecto a la hora universal coordinada (UTC) representada por el elemento [Bias (UTC)](bias-utc.md) . Este elemento también contiene información sobre la transición a la hora estándar del horario de verano en regiones en las que se observa el horario de verano.  <br/><br/>  Las siguientes son las expresiones XPath para el elemento [standardtime Element](standardtime.md) : <br/> <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/StandardTime`<br/> <br/>  `/GetUserAvailabilityRequest/TimeZone/StandardTime` <br/> |
+|[DaylightTime](daylighttime.md) <br/> | Representa un desplazamiento del tiempo relativo a la hora UTC representado por el elemento [Bias (UTC)](bias-utc.md) en las regiones en las que se observa el horario de verano. Este elemento también contiene información sobre cuándo se produce la transición al horario de verano desde la hora estándar.  <br/><br/>  Las siguientes son las expresiones XPath para el elemento [DaylightTime](daylighttime.md) :  <br/><br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/DaylightTime` <br/><br/>  `/GetUserAvailabilityRequest/TimeZone/DaylightTime` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa horas, minutos y segundos en el siguiente formato: ss.
+El valor de texto representa las horas, los minutos y los segundos con el siguiente formato: HH: mm: SS.
   
 ## <a name="remarks"></a>Comentarios
 
-Cuando se produce el elemento de **tiempo** en el elemento [DaylightTime](daylighttime.md) , representa la hora del día en que se produce la transición desde el horario de verano a la hora estándar. Cuando se produce el elemento de [tiempo](time.md) en el elemento [StandardTime](standardtime.md) , que representa la hora del día en que se produce la transición desde el horario estándar al horario de verano. 
+Cuando se produce el elemento **Time** en el elemento [DaylightTime](daylighttime.md) , representa la hora del día en que se produce la transición del horario de verano a la hora estándar. Cuando se produce el elemento [Time](time.md) en el elemento [standardtime Element](standardtime.md) , representa la hora del día a la que se produce la transición de la hora estándar al horario de verano. 
   
-Este elemento tiene una repetición mínima de cero y una máxima aparición de uno.
+Este elemento tiene una ocurrencia mínima de cero y una ocurrencia máxima de uno.
   
 ## <a name="example"></a>Ejemplo
 
-La siguiente parte de una solicitud representa un tiempo de transición de 2 A.M. desde el horario estándar al horario de verano.
+La siguiente parte de una solicitud representa un tiempo de transición de 2 A.M. de la hora estándar al horario de verano.
   
 ```xml
 <StandardTime>
@@ -75,13 +75,13 @@ La siguiente parte de una solicitud representa un tiempo de transición de 2 A.M
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)
-- [Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

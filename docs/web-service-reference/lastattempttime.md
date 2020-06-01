@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: b4ffdf0f-1210-429d-8eea-665db2aad3bb
-description: El elemento LastAttemptTime contiene la hora y fecha en que se realizó el último intento de índice del elemento.
-ms.openlocfilehash: 735be6a0f6ec53bd0e270fa7a4d5dc43af926b88
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento LastAttemptTime contiene la fecha y hora en que se realizó el último intento de indizar el elemento.
+ms.openlocfilehash: 8ef7d8d436f7e12a5c1e6a1d0762fcf777a95d05
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836200"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459850"
 ---
 # <a name="lastattempttime"></a>LastAttemptTime
 
-El elemento **LastAttemptTime** contiene la hora y fecha en que se realizó el último intento de índice del elemento. 
+El elemento **LastAttemptTime** contiene la fecha y hora en que se realizó el último intento de indizar el elemento. 
   
 ```XML
 <LastAttemptTime></LastAttemptTime>
@@ -26,15 +26,15 @@ El elemento **LastAttemptTime** contiene la hora y fecha en que se realizó el �
  **dateTime**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **LastAttemptTime** representa una hora y fecha en que se realizó el último intento de índice del elemento. 
+El valor de texto del elemento **LastAttemptTime** representa la hora y la fecha en que se realizó el último intento de indizar el elemento. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

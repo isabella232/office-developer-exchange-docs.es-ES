@@ -12,16 +12,16 @@ api_type:
 - schema
 ms.assetid: 1fac7937-7a06-4d66-9d2a-14423bcb3b37
 description: El elemento StartTime representa el inicio de un intervalo de tiempo.
-ms.openlocfilehash: 4346797d755bb6e577e1cacb8bec656a7562bf1f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 16bee698b65dc512a709e2af9ddfe8629347fee3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837560"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458568"
 ---
 # <a name="starttime"></a>StartTime
 
-El elemento **StartTime** representa el inicio de un intervalo de tiempo. 
+El elemento **startTime** representa el inicio de un intervalo de tiempo. 
   
 ```xml
 <StartTime/
@@ -31,24 +31,24 @@ El elemento **StartTime** representa el inicio de un intervalo de tiempo.
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Ventana de tiempo](timewindow.md) <br/> |Identifica el intervalo de tiempo de consulta para la información de disponibilidad del usuario.  <br/><br/> La siguiente es la expresión de XPath para este elemento:  <br/><br/>  `/GetUserAvailabilityRequest/FreeBusyViewOptions/TimeWindow` <br/> |
-|[DetailedSuggestionsWindow](detailedsuggestionswindow.md) <br/> |Identifica el intervalo de tiempo que se consulta para obtener información detallada acerca de las horas de reunión sugerida.  <br/><br/> La siguiente es la expresión de XPath para este elemento: <br/> <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions/DetailedSuggestionsWindow` <br/> |
-|[Duración (UserOofSettings)](duration-useroofsettings.md) <br/> | Especifica la duración para la que está habilitado el estado de fuera de oficina (OOF) si el elemento [OofState](oofstate.md) está establecido en **programado**.  <br/><br/>  Los siguientes son las expresiones de XPath posibles para este elemento: <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/Duration` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/Duration` <br/> |
-|[CalendarEvent](calendarevent.md) <br/> |Representa una repetición del elemento de calendario único. Se utiliza para las consultas de disponibilidad. El elemento **StartTime** es necesario en el elemento **CalendarEvent** . El elemento **StartTime** en el elemento **CalendarEvent** es único para el tipo de **CalendarEvent** aunque contiene los mismos valores de faceta que contienen los elementos **StartTime** en el tipo de **duración** .  <br/><br/> La siguiente es la expresión de XPath para este elemento:  <br/> <br/> `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]` <br/> |
+|[TimeWindow](timewindow.md) <br/> |Identifica el intervalo de tiempo consultado para obtener la información de disponibilidad del usuario.  <br/><br/> La siguiente es la expresión XPath a este elemento:  <br/><br/>  `/GetUserAvailabilityRequest/FreeBusyViewOptions/TimeWindow` <br/> |
+|[DetailedSuggestionsWindow](detailedsuggestionswindow.md) <br/> |Identifica el intervalo de tiempo que se consulta para obtener información detallada sobre las horas de reunión sugeridas.  <br/><br/> La siguiente es la expresión XPath a este elemento: <br/> <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions/DetailedSuggestionsWindow` <br/> |
+|[Duración (UserOofSettings)](duration-useroofsettings.md) <br/> | Especifica el tiempo durante el que se habilita el estado fuera de la oficina si el elemento [OofState](oofstate.md) está establecido en **programado**.  <br/><br/>  Las siguientes son las posibles expresiones de XPath a este elemento: <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/Duration` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/Duration` <br/> |
+|[CalendarEvent](calendarevent.md) <br/> |Representa una ocurrencia única del elemento de calendario. Se usa para las consultas de disponibilidad. El elemento **startTime** es obligatorio en el elemento **CalendarEvent** . El elemento **startTime** del elemento **CalendarEvent** es único para el tipo **CalendarEvent** , aunque contiene los mismos valores de faceta que los elementos **startTime** en el tipo de **duración** .  <br/><br/> La siguiente es la expresión XPath a este elemento:  <br/> <br/> `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -56,24 +56,24 @@ Se requiere un valor de texto.
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento [EndTime](endtime.md) representa el final de un período de tiempo. 
+El elemento [EndTime](endtime.md) representa el final del intervalo de tiempo. 
   
-El esquema incluye muchos elementos [StartTime](starttime.md) . 
+El esquema incluye muchos elementos [startTime](starttime.md) . 
   
 > [!NOTE]
-> El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente. 
+> El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes. 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)
-- [Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

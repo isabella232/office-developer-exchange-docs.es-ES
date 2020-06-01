@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2ba50bd9-819f-4e5f-a3bb-85a0a87d8a86
-description: El elemento de permisos contiene la colección de permisos para una carpeta.
-ms.openlocfilehash: 08d015c3b1afb58fce0fb4b99466965cc5c29fc6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Permissions contiene la colección de permisos para una carpeta.
+ms.openlocfilehash: b8616cefdb8c453106753fb0788a6c7d6a0ded79
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836727"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459219"
 ---
 # <a name="permissions"></a>Permisos
 
-El elemento de **permisos** contiene la colección de permisos para una carpeta. 
+El elemento **Permissions** contiene la colección de permisos para una carpeta. 
   
 ```XML
 <Permissions>
@@ -32,23 +32,23 @@ El elemento de **permisos** contiene la colección de permisos para una carpeta.
  **PermissionType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Permission](permission.md) <br/> |Define el acceso que tiene un delegado a una carpeta. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
+|[Permiso](permission.md) <br/> |Define el acceso que un delegado tiene a una carpeta. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) <br/> |Contiene todos los permisos que están configurados para una carpeta. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
+|[PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) <br/> |Contiene todos los permisos que se configuran para una carpeta. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -58,23 +58,23 @@ Este elemento se introdujo en Exchange Server 2007 Service Pack 1 (SP1).
   
 ### <a name="version-differences"></a>Diferencias de versión
 
-Para las aplicaciones de ese destino Exchange Online, Exchange Online como parte de Office 365 o una versión local de Exchange a partir de Exchange 2013, los permisos de carpetas no se devuelven cuando el elemento [BaseShape](baseshape.md) tiene un valor de **AllProperties** en la solicitud de operación [GetFolder](getfolder-operation.md) . Para recuperar los permisos de carpeta, agregue el elemento [PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) al elemento [AdditionalProperties](additionalproperties.md) en la solicitud de **GetFolder** . 
+Para las aplicaciones dirigidas a Exchange Online, Exchange online como parte de Office 365 o a una versión local de Exchange a partir de Exchange 2013, no se devuelven permisos de carpeta cuando el elemento [BaseShape](baseshape.md) tiene un valor de **AllProperties** en la solicitud de operación [GetFolder](getfolder-operation.md) . Para recuperar los permisos de carpeta, agregue el elemento [PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) al elemento [AdditionalProperties](additionalproperties.md) en la solicitud **GetFolder** . 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Establecimiento de permisos de nivel de carpeta](http://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+[Configuración de permisos de nivel de carpeta](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bd0c0bce-3e7c-47c7-af7f-5ee5f5ad9820
-description: El elemento TextBody especifica el cuerpo de texto.
-ms.openlocfilehash: 78b18b27891d571605d2eeeeffb5c252cc790c11
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento TextBody especifica el cuerpo del texto.
+ms.openlocfilehash: c0002785fb990a251267218f7a5f232e521db41a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840640"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459486"
 ---
 # <a name="textbody"></a>TextBody
 
-El elemento **TextBody** especifica el cuerpo de texto. 
+El elemento **TextBody** especifica el cuerpo del texto. 
   
 ```XML
 <TextBody BodyTypeType=" HTML | Text" IsTruncated=" true | false"></TextBody>
@@ -26,26 +26,26 @@ El elemento **TextBody** especifica el cuerpo de texto.
  **BodyType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|BodyTypeType  <br/> |Indica el tipo de cuerpo. El valor de **texto** para el atributo **BodyTypeType** indica que el cuerpo tiene formato de texto sin formato. El valor de **HTML** para el atributo **BodyTypeType** indica que el cuerpo está en formato HTML. Se requiere el atributo **BodyTypeType** .  <br/> |
-|IsTruncated  <br/> |Indica que el contenido del cuerpo se ha truncado. Un valor de texto de **false** para el atributo **IsTruncated** indica que no se ha truncado el contenido del cuerpo. Si la longitud del texto del cuerpo es mayor que el valor establecido en el elemento [MaximumBodySize](maximumbodysize.md) , se truncará el cuerpo normalizado.  <br/> |
+|BodyTypeType  <br/> |Indica el tipo de cuerpo. El valor de **Text** para el atributo **BodyTypeType** indica que el cuerpo está en forma de texto sin formato. El valor de **HTML** para el atributo **BodyTypeType** indica que el cuerpo está en formato HTML. El atributo **BodyTypeType** es obligatorio.  <br/> |
+|IsTruncated  <br/> |Indica que se ha truncado el contenido del cuerpo. Un valor de texto **falso** para el atributo **IsTruncated** indica que el contenido del cuerpo no se ha truncado. El cuerpo normalizado se truncará si la longitud del cuerpo del texto es mayor que el valor establecido en el elemento [MaximumBodySize](maximumbodysize.md) .  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Elemento](item.md) | [contacto](contact.md) | [mensaje](message-ex15websvcsotherref.md) | [DistributionList](distributionlist.md) | [CalendarItem](calendaritem.md) | [PostItem](postitem.md) | [tarea](task.md)
+[Elemento](item.md)  |  [Contacto](contact.md)  |  [Mensaje de error](message-ex15websvcsotherref.md)  |  [DistributionList](distributionlist.md)  |  [CalendarItem](calendaritem.md)  |  [PostItem](postitem.md)  |  [Tarea](task.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **TextBody** es el cuerpo de texto del elemento. 
+El valor de texto del elemento **TextBody** es el cuerpo del texto del elemento. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -57,9 +57,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

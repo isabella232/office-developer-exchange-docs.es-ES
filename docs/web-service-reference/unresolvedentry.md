@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5ac6116a-3b24-40f8-a877-dbe9a6935919
-description: El elemento UnresolvedEntry contiene el nombre de un contacto o lista de distribución para resolver.
-ms.openlocfilehash: 98b447cd49685b49f73f75f12d921a65749be245
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UnresolvedEntry contiene el nombre de un contacto o una lista de distribución para resolverlos.
+ms.openlocfilehash: 0f157c1be6c327187456a795c4c1000b8c35b620
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840788"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459843"
 ---
 # <a name="unresolvedentry"></a>UnresolvedEntry
 
-El elemento **UnresolvedEntry** contiene el nombre de un contacto o lista de distribución para resolver. 
+El elemento **UnresolvedEntry** contiene el nombre de un contacto o una lista de distribución para resolverlos. 
   
 [ResolveNames](resolvenames.md)
   
@@ -34,35 +34,35 @@ El elemento **UnresolvedEntry** contiene el nombre de un contacto o lista de dis
  **NonEmptyStringType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[ResolveNames](resolvenames.md) <br/> |Define una solicitud para resolver nombres ambiguos.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa el nombre de una lista de contactos o de distribución pública. La longitud mínima de la cadena es un carácter.
+El valor de texto representa el nombre de un contacto público o una lista de distribución. La longitud mínima de la cadena es un carácter.
   
 ## <a name="remarks"></a>Comentarios
 
-El valor de texto de este elemento se utiliza para resolver nombres de los campos siguientes:
+El valor de texto de este elemento se usa para resolver nombres con los siguientes campos:
   
-- Nombre propio
+- Nombre
     
-- Apellido
+- Apellidos
     
-- Nombre para mostrar
+- Nombre completo (DN)
     
 - Nombre completo
     
@@ -70,9 +70,9 @@ El valor de texto de este elemento se utiliza para resolver nombres de los campo
     
 - Alias
     
-- dirección SMTP
+- Dirección SMTP
     
-Direcciones de correo electrónico con tipos de enrutamiento de prefijo, como smtp o sip, se guardan en una matriz con varios valores. La [operación ResolveNames](resolvenames-operation.md) lleva a cabo a una coincidencia parcial con respecto a cada valor de dicha matriz al agregar el tipo de distribución al principio del nombre sin resolver, como "sip:User1@Contoso.com". Si no especifica un tipo de enrutamiento, la operación **ResolveNames** de forma predeterminada en el tipo de distribución de smtp, match a una propiedad de dirección SMTP principal y no buscar en la matriz con varios valores. 
+Las direcciones de correo electrónico con tipos de enrutamiento prefijados, como SMTP o SIP, se guardan en una matriz de varios valores. La [operación ResolveNames](resolvenames-operation.md) realiza una coincidencia parcial con cada valor de la matriz cuando se agrega el tipo de enrutamiento al principio del nombre sin resolver, como "SIP:user1@Contoso.com". Si no especifica un tipo de enrutamiento, la operación **ResolveNames** se establecerá de forma predeterminada en el tipo de enrutamiento de SMTP, lo hará coincidir con una propiedad de dirección SMTP principal y no buscará en la matriz de varios valores. 
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -80,10 +80,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -92,5 +92,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación ResolveNames](resolvenames-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

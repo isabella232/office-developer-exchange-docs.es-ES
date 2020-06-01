@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 79e31a4c-fc84-4802-8761-470df8d63694
-description: El elemento PhoneCallId especifica el identificador de una llamada telefónica. Se requiere este elemento.
-ms.openlocfilehash: 1886d9510fe254c016779166efccc9882fd77d2c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PhoneCallId especifica el identificador de una llamada de teléfono. Se requiere este elemento.
+ms.openlocfilehash: 3e4b9dba5e8be6e45a0c16508531fbc6cf91c170
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836757"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459703"
 ---
 # <a name="phonecallid"></a>PhoneCallId
 
-El elemento **PhoneCallId** especifica el identificador de una llamada telefónica. Se requiere este elemento. 
+El elemento **PhoneCallId** especifica el identificador de una llamada de teléfono. Se requiere este elemento. 
   
 ```xml
 <PhoneCallId Id="" />
@@ -30,42 +30,42 @@ El elemento **PhoneCallId** especifica el identificador de una llamada telefóni
  **PhoneCallIdType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|Id  <br/> |Identifica la llamada de teléfono a desconectar. Este atributo es necesario.  <br/> |
+|Id  <br/> |Identifica la llamada telefónica que se va a desconectar. Este atributo es obligatorio.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[DisconnectPhoneCall](disconnectphonecall.md) <br/> |Representa una solicitud para desconectar la llamada.  <br/> |
-|[GetPhoneCallInformation](getphonecallinformation.md) <br/> |Representa una solicitud para obtener información de la llamada de teléfono.  <br/> |
-|[PlayOnPhoneResponse (servicios Web de Exchange)](playonphoneresponse-exchange-web-services.md) <br/> |Define una respuesta a una solicitud de PlayOnPhone.  <br/> |
+|[DisconnectPhoneCall](disconnectphonecall.md) <br/> |Representa una solicitud para desconectar una llamada.  <br/> |
+|[GetPhoneCallInformation](getphonecallinformation.md) <br/> |Representa una solicitud para obtener información sobre llamadas telefónicas.  <br/> |
+|[PlayOnPhoneResponse (servicios web Exchange)](playonphoneresponse-exchange-web-services.md) <br/> |Define una respuesta a una solicitud reproducir.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

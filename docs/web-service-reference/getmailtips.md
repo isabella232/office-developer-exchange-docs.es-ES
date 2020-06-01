@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4a24ff79-f1ae-43a1-9ac2-49baf3eaa173
-description: El elemento GetMailTips representa los destinatarios y los tipos de sugerencias de correo para recuperar.
-ms.openlocfilehash: aad3b3d9dd578d0c92bf7d48ee8b78b58c63e23d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetMailTips representa los destinatarios y los tipos de sugerencias de correo que se van a recuperar.
+ms.openlocfilehash: 8ff71ed5d52f713e11188b07c8c93aeee7dfa44d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764901"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458638"
 ---
 # <a name="getmailtips"></a>GetMailTips
 
-El elemento **GetMailTips** representa los destinatarios y los tipos de sugerencias de correo para recuperar. 
+El elemento **GetMailTips** representa los destinatarios y los tipos de sugerencias de correo que se van a recuperar. 
   
 ```XML
 <GetMailTips>
@@ -34,23 +34,23 @@ El elemento **GetMailTips** representa los destinatarios y los tipos de sugerenc
  **GetMailTipsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SendingAs](sendingas.md) <br/> |Contiene una dirección de correo electrónico que un usuario está intentando enviar como.  <br/> |
-|[Recipients (ArrayOfRecipientsType)](recipients-arrayofrecipientstype.md) <br/> |Contiene una lista de destinatarios para comprobar si las sugerencias de correo.  <br/> |
+|[Envíoas](sendingas.md) <br/> |Contiene una dirección de correo electrónico que el usuario intenta enviar como.  <br/> |
+|[Recipients (ArrayOfRecipientsType)](recipients-arrayofrecipientstype.md) <br/> |Contiene una lista de destinatarios para buscar sugerencias de correo.  <br/> |
 |[MailTipsRequested](mailtipsrequested.md) <br/> |Contiene los tipos de sugerencias de correo solicitados desde el servicio.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
@@ -64,14 +64,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

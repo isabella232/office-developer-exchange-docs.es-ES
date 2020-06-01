@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 54d14e47-a8f7-400b-a859-c7ea7ce4c6a4
-description: El elemento EndDateTime especifica la fecha de finalización y la hora para una regla o una búsqueda.
-ms.openlocfilehash: ad596c6441e7bdb10b4e886a8d0f3ba183c43c3e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EndDateTime especifica la fecha y hora de finalización de una regla o búsqueda.
+ms.openlocfilehash: 9556e4c1ef405ae66a71d19d99d9a71a61f54efc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764409"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460137"
 ---
 # <a name="enddatetime"></a>EndDateTime
 
-El elemento **EndDateTime** especifica la fecha de finalización y la hora para una regla o una búsqueda. 
+El elemento **EndDateTime** especifica la fecha y hora de finalización de una regla o búsqueda. 
   
 ```XML
 <EndDateTime/>
@@ -30,26 +30,26 @@ El elemento **EndDateTime** especifica la fecha de finalización y la hora para 
  **dateTime**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |Contiene los criterios para los tipos de mensajes para buscar.  <br/> |
-|[WithinDateRange](withindaterange.md) <br/> |Especifica el intervalo de fechas dentro del cual los mensajes entrantes tienen que se han recibido en orden para la condición o la excepción que se debe aplicar.  <br/> |
+|[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |Contiene los criterios para los tipos de mensajes que se van a buscar.  <br/> |
+|[WithinDateRange](withindaterange.md) <br/> |Especifica el intervalo de fechas en el que se deben recibir los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Si se usa este elemento, es necesario un valor de texto que representa un fecha y hora.
+Si se usa este elemento, es necesario un valor de texto que represente una fecha y hora.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -59,14 +59,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

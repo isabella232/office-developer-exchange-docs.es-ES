@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 655175bd-8a3b-4dfc-8881-84e4927c1df1
-description: El elemento GroupingAction (ItemType) está pensado para uso interno únicamente.
-ms.openlocfilehash: aa252ad41f933eeb05b722d3143b680bc3910985
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GroupingAction (ItemType) solo está destinado a uso interno.
+ms.openlocfilehash: a442800f98ca3f7691d801d33e5d28d706a34b26
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835759"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460480"
 ---
 # <a name="groupingaction-itemtype"></a>GroupingAction (ItemType)
 
-El elemento **GroupingAction (ItemType)** está pensado para uso interno únicamente. 
+El elemento **GroupingAction (ItemType)** solo está destinado a uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

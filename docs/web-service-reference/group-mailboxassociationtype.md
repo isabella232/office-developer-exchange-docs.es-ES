@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: dbf1499c-90ff-4649-a80e-f36bebb0c136
-description: El elemento de grupo (MailboxAssociationType) está pensado para uso interno únicamente.
-ms.openlocfilehash: 9f309f6f09f809e99f66a9ff098e0f257ad39b80
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Group (MailboxAssociationType) está pensado solo para uso interno.
+ms.openlocfilehash: 468cf8e6a099fb572fb14677db06f282abba3a41
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835760"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458666"
 ---
 # <a name="group-mailboxassociationtype"></a>Grupo (MailboxAssociationType)
 
-El elemento de **grupo (MailboxAssociationType)** está pensado para uso interno únicamente. 
+El elemento **Group (MailboxAssociationType)** está pensado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

@@ -7,44 +7,44 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1344a087-88ea-472a-bebf-9b45245592fb
-description: El elemento AttendeeLocation especifica la ubicación de un Asistente para un elemento de calendario.
-ms.openlocfilehash: 4670f1fa59fec4cf1e2b35a1380f6205677ce5af
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AttendeeLocation especifica la ubicación de un asistente para un elemento de calendario.
+ms.openlocfilehash: 34a4ee8ea5f4c59cce6eebd8977bd4733f7c7134
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763574"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460347"
 ---
 # <a name="attendeelocation"></a>AttendeeLocation
 
-El elemento **AttendeeLocation** especifica la ubicación de un Asistente para un elemento de calendario. 
+El elemento **AttendeeLocation** especifica la ubicación de un asistente para un elemento de calendario. 
   
 ```XML
 <AttendeeLocation></AttendeeLocation>
 ```
 
- **xs: String**
+ **XS: String**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[LocationBasedStateDefinition](locationbasedstatedefinition.md) <br/> |Especifica el estado cuando se basa en la ubicación.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento AttendeeLocation es la ubicación de asistentes.
+El valor de texto del elemento AttendeeLocation es la ubicación de asistente.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,12 +56,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

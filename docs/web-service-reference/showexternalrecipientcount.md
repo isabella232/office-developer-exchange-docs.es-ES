@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: db28dbcb-d051-4e5c-a9c2-4b8d5149b4e1
-description: El elemento ShowExternalRecipientCount indica si los consumidores de la operación de GetMailTips tienen que mostrar sugerencias de correo que indican el número de destinatarios externos a la que se envía un mensaje.
-ms.openlocfilehash: 1fd3ceb629689c560dc60afe01f0413602f79a0d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ShowExternalRecipientCount indica si los consumidores de la operación GetMailTips tienen que Mostrar sugerencias de correo que indican el número de destinatarios externos a los que se dirige un mensaje.
+ms.openlocfilehash: fc32e5c4a95f0e33b5532af9c77d31bd6446e641
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837491"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460473"
 ---
 # <a name="showexternalrecipientcount"></a>ShowExternalRecipientCount
 
-El elemento **ShowExternalRecipientCount** indica si los consumidores de la [operación de GetMailTips](getmailtips-operation.md) tienen que mostrar sugerencias de correo que indican el número de destinatarios externos a la que se envía un mensaje. 
+El elemento **ShowExternalRecipientCount** indica si los consumidores de la [operación GetMailTips](getmailtips-operation.md) tienen que Mostrar sugerencias de correo que indican el número de destinatarios externos a los que se dirige un mensaje. 
   
 ```XML
 <ShowExternalRecipientCount>true | false</ShowExternalRecipientCount>
@@ -30,25 +30,25 @@ El elemento **ShowExternalRecipientCount** indica si los consumidores de la [ope
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |Contiene información de configuración de servicio para el servicio de sugerencias de correo.  <br/> |
+|[MailTipsConfiguration (MailTipsServiceConfiguration)](mailtipsconfiguration-mailtipsserviceconfiguration.md) <br/> |Contiene información de configuración del servicio para el servicio de sugerencias de correo.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto de este elemento es **true** si los consumidores de la [operación de GetMailTips](getmailtips-operation.md) tienen que mostrar sugerencias de correo que indican el número de destinatarios externos a la que se envía un mensaje. El valor es **false** si no es necesario que los consumidores de la [operación de GetMailTips](getmailtips-operation.md) Mostrar sugerencias de correo que indican el número de destinatarios externos a la que se envía un mensaje. 
+El valor de texto de este elemento es **true** si los consumidores de la [operación GetMailTips](getmailtips-operation.md) tienen que Mostrar sugerencias de correo que indican el número de destinatarios externos a los que se dirige un mensaje. El valor es **false** si los consumidores de la [operación GetMailTips](getmailtips-operation.md) no tienen que Mostrar sugerencias de correo que indican el número de destinatarios externos a los que se dirige un mensaje. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -58,10 +58,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -70,5 +70,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación GetMailTips](getmailtips-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

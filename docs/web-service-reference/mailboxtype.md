@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 696e5fdb-d8c5-40f0-9e79-885eae65dfa4
-description: El elemento MailboxType representa el tipo de buzón de correo que está representada por la dirección de correo electrónico.
-ms.openlocfilehash: d7232377951e8d9c8f191ac856058bc28467cadd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MailboxType representa el tipo de buzón que se representa mediante la dirección de correo electrónico.
+ms.openlocfilehash: 8c322ab8a87730832f5d199698a369656b058a9a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836305"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459801"
 ---
 # <a name="mailboxtype"></a>MailboxType
 
-El elemento **MailboxType** representa el tipo de buzón de correo que está representada por la dirección de correo electrónico. 
+El elemento **MailboxType** representa el tipo de buzón que se representa mediante la dirección de correo electrónico. 
   
 ```XML
 <MailboxType>Mailbox | PublicDL | PrivateDL | Contact | PublicFolder | Unknown | OneOff | GroupMailbox</MailboxType>
@@ -31,36 +31,36 @@ El elemento **MailboxType** representa el tipo de buzón de correo que está rep
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Buzón de correo](mailbox.md) <br/> |Identifica una dirección de correo electrónico completa resuelta.  <br/> |
-|[RoomList](roomlist.md) <br/> |Identifica una lista de las salas de reuniones.  <br/> |
+|[Buzón](mailbox.md) <br/> |Identifica una dirección de correo electrónico completamente resuelta.  <br/> |
+|[RoomList](roomlist.md) <br/> |Identifica una lista de salas de reuniones.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-En la siguiente tabla se enumera los valores posibles para el elemento **MailboxType** . 
+En la siguiente tabla se enumeran los valores posibles para el elemento **MailboxType** . 
   
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Buz?n de correo  <br/> |Representa un objeto de Active Directory habilitados para correo.  <br/> |
-|PublicDL  <br/> |Representa una lista de distribución públicas.  <br/> |
-|PrivateDL  <br/> |Representa una lista de distribución privada en el buzón del usuario.  <br/> |
-|Contacto  <br/> |Representa un contacto en el buzón del usuario.  <br/> |
+|Buzón de correo  <br/> |Representa un objeto de Active Directory habilitado para correo.  <br/> |
+|PublicDL  <br/> |Representa una lista de distribución pública.  <br/> |
+|PrivateDL  <br/> |Representa una lista de distribución privada en el buzón de un usuario.  <br/> |
+|Contacto  <br/> |Representa un contacto en el buzón de un usuario.  <br/> |
 |PublicFolder  <br/> |Representa una carpeta pública.  <br/> |
-|Desconocido  <br/> |Representa un tipo desconocido de buzón de correo.  <br/> |
-|OneOff  <br/> |Representa a un miembro de uso único de una lista de distribución personal.  <br/> |
+|Desconocido  <br/> |Representa un tipo de buzón desconocido.  <br/> |
+|OneOff  <br/> |Representa un miembro de un solo uso de una lista de distribución personal.  <br/> |
 |GroupMailbox  <br/> |Representa un buzón de grupo.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
@@ -71,12 +71,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

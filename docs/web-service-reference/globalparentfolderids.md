@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8f5fcbcb-05ed-462a-99cf-a6b112a4aef6
-description: El elemento GlobalParentFolderIds especifica los identificadores de las carpetas primarias global.
-ms.openlocfilehash: b0ff9ab00f3e46351b5a2db9bc4b6282fa4385cd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GlobalParentFolderIds especifica los identificadores de las carpetas primarias globales.
+ms.openlocfilehash: 11c520fa0f4a1ed6d6c9d694b407e39cd036b9cd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835747"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459100"
 ---
 # <a name="globalparentfolderids"></a>GlobalParentFolderIds
 
-El elemento **GlobalParentFolderIds** especifica los identificadores de las carpetas primarias global. 
+El elemento **GlobalParentFolderIds** especifica los identificadores de las carpetas primarias globales. 
   
 ```XML
 <GlobalParentFolderIds>
@@ -29,22 +29,22 @@ El elemento **GlobalParentFolderIds** especifica los identificadores de las carp
  **NonEmptyArrayOfBaseFolderIdsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Contiene el identificador y cambiar la clave de una carpeta.  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifica las carpetas que se pueden hacer referencia por su nombre.  <br/> |
+|[FolderId](folderid.md) <br/> |Contiene el identificador y la clave de cambio de una carpeta.  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifica las carpetas a las que se puede hacer referencia por su nombre.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Conversación (ConversationType)](conversation-conversationtype.md) <br/> |Representa una sola conversación.  <br/> |
    
@@ -58,14 +58,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

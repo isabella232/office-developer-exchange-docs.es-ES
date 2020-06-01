@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6081777a-ae91-43d2-bf83-f3742030aa70
-description: El elemento ReminderTime especifica el tiempo para que se produzca el aviso.
-ms.openlocfilehash: b72dd8d6252f41268263579d867a03e460c4ed6a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ReminderTime especifica la hora para que se produzca el aviso.
+ms.openlocfilehash: e5a1194af43e038a608bf928313909519e7d44e7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837075"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460032"
 ---
 # <a name="remindertime"></a>ReminderTime
 
-El elemento **ReminderTime** especifica el tiempo para que se produzca el aviso. 
+El elemento **ReminderTime** especifica la hora para que se produzca el aviso. 
   
 ```XML
 <ReminderTime/>
@@ -26,15 +26,15 @@ El elemento **ReminderTime** especifica el tiempo para que se produzca el aviso.
  **dateTime**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ReminderTime** es el tiempo para que se produzca el aviso. 
+El valor de texto del elemento **ReminderTime** es la hora para que se produzca el aviso. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,10 +54,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -66,5 +66,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Aviso](reminder.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

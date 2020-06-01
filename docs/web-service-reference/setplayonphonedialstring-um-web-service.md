@@ -1,5 +1,5 @@
 ---
-title: SetPlayOnPhoneDialString (servicio web de mensajería unificada)
+title: SetPlayOnPhoneDialString (servicio Web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,19 +10,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 513a5072-c3ac-405f-98c2-0ab982d0a360
-description: El elemento SetPlayOnPhoneDialString define una solicitud para establecer la cadena de marcado predeterminado para la operación de PlayOnPhone (servicio web de mensajería unificada) y las solicitudes de PlayOnPhoneGreeting operación (servicio web de mensajería unificada).
-ms.openlocfilehash: fd82dc6ef0dd90a2318da93191f657005b7a5c87
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SetPlayOnPhoneDialString define una solicitud para establecer la cadena de marcado predeterminada para las solicitudes de reproducir operación (servicio Web de mensajería unificada) y operación PlayOnPhoneGreeting (servicio Web de mensajería unificada).
+ms.openlocfilehash: 40021e9dedafb5fafda91bf3612d8a6485dae8e7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837450"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458631"
 ---
-# <a name="setplayonphonedialstring-um-web-service"></a>SetPlayOnPhoneDialString (servicio web de mensajería unificada)
+# <a name="setplayonphonedialstring-um-web-service"></a>SetPlayOnPhoneDialString (servicio Web de mensajería unificada)
 
-El elemento **SetPlayOnPhoneDialString** define una solicitud para establecer la cadena de marcado de forma predeterminada para las solicitudes de [la operación de PlayOnPhone (servicio web de mensajería unificada)](playonphone-operation-um-web-service.md) y [PlayOnPhoneGreeting (servicio web de mensajería unificada)](playonphonegreeting-operation-um-web-service.md) . 
+El elemento **SetPlayOnPhoneDialString** define una solicitud para establecer la cadena de marcado predeterminada para las solicitudes de [reproducir operación (servicio Web de mensajería unificada)](playonphone-operation-um-web-service.md) y [operación PlayOnPhoneGreeting (servicio Web de mensajería unificada)](playonphonegreeting-operation-um-web-service.md) . 
   
-[SetPlayOnPhoneDialString (servicio web de mensajería unificada)](setplayonphonedialstring-um-web-service.md)
+[SetPlayOnPhoneDialString (servicio Web de mensajería unificada)](setplayonphonedialstring-um-web-service.md)
   
 ```xml
 <SetPlayOnPhoneDialString>
@@ -33,38 +33,38 @@ El elemento **SetPlayOnPhoneDialString** define una solicitud para establecer la
  **complexType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[dialString (servicio web de mensajería unificada)](dialstring-um-web-service.md) <br/> |El número de teléfono para establecer como la cadena de marcado de forma predeterminada.  <br/> |
+|[dialString (servicio Web de mensajería unificada)](dialstring-um-web-service.md) <br/> |El número de teléfono que se establece como la cadena de marcado predeterminada.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Operación SetPlayOnPhoneDialString (servicio web de mensajería unificada)](setplayonphonedialstring-operation-um-web-service.md)
+[Operación SetPlayOnPhoneDialString (servicio Web de mensajería unificada)](setplayonphonedialstring-operation-um-web-service.md)
 

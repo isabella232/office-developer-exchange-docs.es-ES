@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0e3f13cc-e3b3-4eea-9128-12c98b5197f4
-description: El elemento UninstallAppResponse especifica la respuesta a una solicitud de UninstallApp.
-ms.openlocfilehash: 9675b72b36fd1ac5e298b2998ed683a1ba6452f7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UninstallAppResponse especifica la respuesta a una solicitud UninstallApp.
+ms.openlocfilehash: 12d74669aed0c380e32dd568bb99b88c30fdb22d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840767"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459457"
 ---
 # <a name="uninstallappresponse"></a>UninstallAppResponse
 
-El elemento **UninstallAppResponse** especifica la respuesta a una solicitud de **UninstallApp** . 
+El elemento **UninstallAppResponse** especifica la respuesta a una solicitud **UninstallApp** . 
   
 ```XML
 <UninstallAppResponse>
@@ -31,15 +31,15 @@ El elemento **UninstallAppResponse** especifica la respuesta a una solicitud de 
  **UninstallAppResponseType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[MessageXml](messagexml.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md)
+[MessageXml](messagexml.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

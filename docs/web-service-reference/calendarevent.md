@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 91958c01-1fcb-4ac0-8601-5e5b434c988a
-description: El elemento CalendarEvent representa una repetición del elemento de calendario único.
-ms.openlocfilehash: f7fff7ba511ca12813dd4c2d694e89c97589ba31
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento CalendarEvent representa una ocurrencia única del elemento de calendario.
+ms.openlocfilehash: 8bf37c907ed726e33dd2b1eff9add5d6235704da
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763695"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459079"
 ---
 # <a name="calendarevent"></a>CalendarEvent
 
-El elemento **CalendarEvent** representa una repetición del elemento de calendario único. 
+El elemento **CalendarEvent** representa una ocurrencia única del elemento de calendario. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -47,41 +47,41 @@ El elemento **CalendarEvent** representa una repetición del elemento de calenda
  **CalendarEvent**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[StartTime](starttime.md) <br/> |Representa el inicio de un evento de calendario. Esto es un elemento secundario necesario.  <br/> |
-|[Hora de finalización](endtime.md) <br/> |Representa el final de un evento de calendario. Esto es un elemento secundario necesario.  <br/> |
-|[BusyType](busytype.md) <br/> |Representa el estado de libre/ocupado establecido para un evento del calendario. Esto es un elemento secundario necesario.  <br/> |
-|[CalendarEventDetails](calendareventdetails.md) <br/> |Proporciona información adicional para un evento del calendario. Esto es un elemento secundario opcional.  <br/> |
+|[StartTime](starttime.md) <br/> |Representa el inicio de un evento de calendario. Se trata de un elemento secundario obligatorio.  <br/> |
+|[EndTime](endtime.md) <br/> |Representa el final de un evento de calendario. Se trata de un elemento secundario obligatorio.  <br/> |
+|[BusyType](busytype.md) <br/> |Representa el conjunto de estado de disponibilidad para un evento de calendario. Se trata de un elemento secundario obligatorio.  <br/> |
+|[CalendarEventDetails](calendareventdetails.md) <br/> |Proporciona información adicional para un evento de calendario. Se trata de un elemento secundario opcional.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarEventArray](calendareventarray.md) <br/> |Contiene un conjunto de repeticiones de elemento de calendario únicos que representan la disponibilidad del usuario solicitado.  <br/> La siguiente es la expresión de XPath 2.0 para este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray` <br/> |
+|[CalendarEventArray](calendareventarray.md) <br/> |Contiene un conjunto de ocurrencias de elemento de calendario únicas que representan la disponibilidad del usuario solicitado.  <br/> La siguiente es la expresión XPath 2,0 a este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Las horas de reunión y de cita se devuelven en la zona horaria del cliente. Todos los elementos secundarios se enumeran en la secuencia en la que se producen. El nivel de detalle proporcionado por este elemento depende de los permisos concedidos para el solicitante.
+Las horas de la cita y la reunión se devuelven en la zona horaria del cliente. Todos los elementos secundarios se enumeran en la secuencia en que se producen. El nivel de detalle proporcionado por este elemento depende de los permisos concedidos al solicitante.
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -92,5 +92,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

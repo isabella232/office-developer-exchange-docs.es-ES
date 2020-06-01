@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e6f7c824-1284-4a65-a459-9fc22b66e30a
 description: El elemento PolicyNudgeRulesConfiguration contiene los datos de configuración de prevención de pérdida de datos.
-ms.openlocfilehash: ecea1dac44526fee7c439cd5e1eb318c38d274f6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: dd801fe140dee66d153e388781f97254d1a2f2ef
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836833"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459612"
 ---
 # <a name="policynudgerulesconfiguration"></a>PolicyNudgeRulesConfiguration
 
@@ -26,15 +26,15 @@ El elemento **PolicyNudgeRulesConfiguration** contiene los datos de configuraci�
  **PolicyNudgeRulesServiceConfiguration**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento **PolicyNudgeRulesConfiguration** contenido no está definido el esquema de los servicios Web Exchange. 
+El contenido del elemento **PolicyNudgeRulesConfiguration** no se define en el esquema de servicios web Exchange. 
   
 Este elemento se introdujo en Exchange Server 2013.
   
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a5c3eac6-b4e4-4155-8555-3b5df3f4da17
-description: El elemento ReminderNextTime especifica la fecha y la hora para el aviso siguiente.
-ms.openlocfilehash: 835a6a3baac7aa9fb1af298eb041d1f9aa64b06b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ReminderNextTime especifica la fecha y hora para el siguiente aviso.
+ms.openlocfilehash: ed382304435bf0c0e656848c11b6660c021b5d58
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837072"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458540"
 ---
 # <a name="remindernexttime"></a>ReminderNextTime
 
-El elemento **ReminderNextTime** especifica la fecha y la hora para el aviso siguiente. 
+El elemento **ReminderNextTime** especifica la fecha y hora para el siguiente aviso. 
   
 ```XML
 <ReminderNextTime></ReminderNextTime>
@@ -26,23 +26,23 @@ El elemento **ReminderNextTime** especifica la fecha y la hora para el aviso sig
  **dateTime**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[SearchPreviewItem](searchpreviewitem.md) | [elemento](item.md) | [contacto](contact.md) | [mensaje](message-ex15websvcsotherref.md) | [DistributionList](distributionlist.md) | [CalendarItem](calendaritem.md) | [PostItem](postitem.md) | [tarea](task.md)
+[SearchPreviewItem](searchpreviewitem.md)  |  [Elemento](item.md)  |  [Contacto](contact.md)  |  [Mensaje de error](message-ex15websvcsotherref.md)  |  [DistributionList](distributionlist.md)  |  [CalendarItem](calendaritem.md)  |  [PostItem](postitem.md)  |  [Tarea](task.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto para el elemento **ReminderNextTime** es la fecha y la hora del siguiente aviso programado. 
+El valor de texto del elemento **ReminderNextTime** es la fecha y la hora del siguiente aviso programado. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

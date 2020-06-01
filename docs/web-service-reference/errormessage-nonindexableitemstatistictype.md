@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: b676d5be-07f8-4b0b-80bc-28a79a4a7cf4
-description: El elemento ErrorMessage contiene el mensaje de error que describe por qué no se pueden indizar un elemento.
-ms.openlocfilehash: a33082f6a442e1720c667f1b28ed52c39fa03797
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ErrorMessage contiene el mensaje de error que describe por qué un elemento no es Indizable.
+ms.openlocfilehash: f476793d647554f7e4be2d8d2dd415717674597c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764444"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460067"
 ---
 # <a name="errormessage-nonindexableitemstatistictype"></a>ErrorMessage (NonIndexableItemStatisticType)
 
-El elemento **ErrorMessage** contiene el mensaje de error que describe por qué no se pueden indizar un elemento. 
+El elemento **errorMessage** contiene el mensaje de error que describe por qué un elemento no es Indizable. 
   
 ```XML
 <ErrorMessage></ErrorMessage>
@@ -26,15 +26,15 @@ El elemento **ErrorMessage** contiene el mensaje de error que describe por qué 
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ErrorMessage** es un mensaje de error que describe por qué no se pueden indizar un elemento. 
+El valor de texto del elemento **errorMessage** es un mensaje de error que describe por qué un elemento no es Indizable. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 

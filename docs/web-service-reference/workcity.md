@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c9850a25-1560-4ed8-969c-dc3e59dde207
-description: El elemento WorkCity especifica la ciudad donde trabaja el rol asociado.
-ms.openlocfilehash: 31737c4fbdd4a2e292b650f70b46a163ce11393a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento WorkCity especifica la ciudad en la que funciona el rol asociado.
+ms.openlocfilehash: 712544d60fde15b3d630ecd00b9b5dfbb16a7dd5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19841010"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459717"
 ---
 # <a name="workcity"></a>WorkCity
 
-El elemento **WorkCity** especifica la ciudad donde trabaja el rol asociado. 
+El elemento **WorkCity** especifica la ciudad en la que funciona el rol asociado. 
   
 ```XML
 <WorkCity></WorkCity>
@@ -26,15 +26,15 @@ El elemento **WorkCity** especifica la ciudad donde trabaja el rol asociado.
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **WorkCity** es la ciudad en el que trabaja la persona asociada. 
+El valor de texto del elemento **WorkCity** es la ciudad en la que funciona el rol asociado. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

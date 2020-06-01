@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 74c4b9d8-d336-4954-b9c2-7563bc7740fa
-description: El elemento CompleteFindInGALSpeechRecognitionResponse está pensado para uso interno únicamente.
-ms.openlocfilehash: 36ce4de04082af59fe2e41fe642875adb2f993d8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento CompleteFindInGALSpeechRecognitionResponse está destinado sólo para uso interno.
+ms.openlocfilehash: 659a4b6357c1095dc076e1103e91c322ca47a4c5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763753"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459030"
 ---
 # <a name="completefindingalspeechrecognitionresponse"></a>CompleteFindInGALSpeechRecognitionResponse
 
-El elemento **CompleteFindInGALSpeechRecognitionResponse** está pensado para uso interno únicamente. 
+El elemento **CompleteFindInGALSpeechRecognitionResponse** está destinado sólo para uso interno. 
   
 ```XML
 <CompleteFindInGALSpeechRecognitionResponse />
@@ -25,15 +25,15 @@ El elemento **CompleteFindInGALSpeechRecognitionResponse** está pensado para us
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -49,9 +49,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7121ba52-726f-48c1-9b32-8c8a4468d9f0
-description: El elemento RemoveImGroup representa una solicitud para quitar un grupo de mensajería instantáneo.
-ms.openlocfilehash: d60460c05ed0bbbc4864c4f806d90e7a887fb254
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RemoveImGroup representa una solicitud para quitar un grupo de mensajería instantánea.
+ms.openlocfilehash: 08b13d5474b2da52f8a56a2c2ee4434462a17dbd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837098"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460018"
 ---
 # <a name="removeimgroup"></a>RemoveImGroup
 
-El elemento **RemoveImGroup** representa una solicitud para quitar un grupo de mensajería instantáneo. 
+El elemento **RemoveImGroup** representa una solicitud para quitar un grupo de mensajería instantánea. 
   
 ```XML
 <RemoveImGroup>
@@ -28,11 +28,11 @@ El elemento **RemoveImGroup** representa una solicitud para quitar un grupo de m
  **RemoveImGroupType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

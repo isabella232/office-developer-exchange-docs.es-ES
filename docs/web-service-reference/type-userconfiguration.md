@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d09a9621-6950-451a-90dc-920af9cab35c
-description: El elemento de tipo especifica un tipo de objeto de diccionario.
-ms.openlocfilehash: 01729f0b5cb71989aef550abb08346cfe9a35789
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Type Especifica un tipo de objeto Dictionary.
+ms.openlocfilehash: ea196e070279bb809cc2e4c2a51dd2453dd9b331
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840737"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458876"
 ---
 # <a name="type-userconfiguration"></a>Tipo (UserConfiguration)
 
-El elemento de **tipo** especifica un tipo de objeto de diccionario. 
+El elemento **Type** especifica un tipo de objeto Dictionary. 
   
 ```xml
 <Type>DateTime or Boolean or Byte or String or Integer32 or UnsignedInteger32 or Integer64 or UnsignedInteger64 or StringArray or ByteArray</Type> 
@@ -30,28 +30,28 @@ El elemento de **tipo** especifica un tipo de objeto de diccionario.
  **UserConfigurationDictionaryObjectTypesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[DictionaryKey](dictionarykey.md) <br/> |Especifica la clave de diccionario para una propiedad de diccionario.  <br/> |
-|[DictionaryValue](dictionaryvalue.md) <br/> |Especifica el valor de diccionario para una propiedad de diccionario.  <br/> |
+|[DictionaryKey](dictionarykey.md) <br/> |Especifica la clave de diccionario para una propiedad Dictionary.  <br/> |
+|[DictionaryValue](dictionaryvalue.md) <br/> |Especifica el valor de diccionario para una propiedad Dictionary.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-En la siguiente tabla se enumera los valores posibles para el **tipo de** elemento. 
+En la siguiente tabla se enumeran los valores posibles para el elemento **Type** . 
   
-**Valores de tipo de elemento**
+**Valores del elemento Type**
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
@@ -68,20 +68,20 @@ En la siguiente tabla se enumera los valores posibles para el **tipo de** elemen
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

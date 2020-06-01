@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3ba300f3-3355-4cab-9e77-0dcc2902e712
-description: El elemento GlobalFlagStatus contiene el estado del indicador agregada para todos los elementos de la conversación en un buzón de correo.
-ms.openlocfilehash: 0c560c065463b8b619f96ecef73d1120b216ca35
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GlobalFlagStatus contiene el estado de marca agregada para todos los elementos de conversación en un buzón.
+ms.openlocfilehash: f9984a1bb7e8205a98dd3ef91f841b48a7ab9389
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835713"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459507"
 ---
 # <a name="globalflagstatus"></a>GlobalFlagStatus
 
-El elemento **GlobalFlagStatus** contiene el estado del indicador agregada para todos los elementos de la conversación en un buzón de correo. 
+El elemento **GlobalFlagStatus** contiene el estado de marca agregada para todos los elementos de conversación en un buzón. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -38,53 +38,53 @@ El elemento **GlobalFlagStatus** contiene el estado del indicador agregada para 
  **FlagStatusType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Conversación (ConversationType)](conversation-conversationtype.md) <br/> |Representa una sola conversación.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **GlobalFlagStatus** es el estado del indicador agregados por los elementos de conversación en la carpeta actual. Los siguientes son los valores de texto posibles: 
+El valor de texto del elemento **GlobalFlagStatus** es el estado de marca agregada para los elementos de conversación en la carpeta actual. A continuación se muestran los valores de texto posibles: 
   
-- **NotFlagged** - indica el estado de marca no. 
+- **NotFlagged** : indica el estado no marcado. 
     
-- **Marcado** - indica el estado marcado. 
+- **Marcado** : indica el estado marcado. 
     
-- **Completo** - indica el estado del indicador completa. 
+- **Completo** : indica el estado completo de la marca. 
     
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda Exchange Web Services.This elemento fue introdujo en Exchange Server 2010 Service Pack 1 (SP1).
+El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda los servicios Web de Exchange. este elemento se introdujo en Exchange Server 2010 Service Pack 1 (SP1).
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Operación de FindConversation](findconversation-operation.md)
+[Operación FindConversation](findconversation-operation.md)
   
 [Operación ApplyConversationAction](applyconversationaction-operation.md)
 
 
-[Conversaciones de EWS](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+[Conversaciones en EWS](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

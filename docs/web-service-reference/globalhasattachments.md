@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3d075e93-14bc-479d-957f-9b7873d1db39
-description: El elemento GlobalHasAttachments contiene un valor que indica si el elemento de al menos una conversación en un buzón tiene datos adjuntos.
-ms.openlocfilehash: 85443c45f611a2f4bff392ffecb26029564d7558
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GlobalHasAttachments contiene un valor que indica si al menos un elemento de conversación de un buzón tiene datos adjuntos.
+ms.openlocfilehash: e314e8e5c06ca7d7820b910c05b381765e88911f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835715"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459479"
 ---
 # <a name="globalhasattachments"></a>GlobalHasAttachments
 
-El elemento **GlobalHasAttachments** contiene un valor que indica si el elemento de al menos una conversación en un buzón tiene datos adjuntos. 
+El elemento **GlobalHasAttachments** contiene un valor que indica si al menos un elemento de conversación de un buzón tiene datos adjuntos. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -38,47 +38,47 @@ El elemento **GlobalHasAttachments** contiene un valor que indica si el elemento
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Conversación (ConversationType)](conversation-conversationtype.md) <br/> |Representa una sola conversación.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor del elemento **GlobalHasAttachments** indica si el elemento de al menos una conversación en un buzón de correo tiene datos adjuntos. Se requiere un valor de texto que representa un valor de tipo Boolean. Un valor de **true** significa que la conversación tiene al menos un dato adjunto visible. Un valor de **false** significa que la conversación no tiene datos adjuntos o sólo oculta los datos adjuntos. 
+El valor del elemento **GlobalHasAttachments** indica si al menos un elemento de la conversación de un buzón tiene datos adjuntos. Se requiere un valor de texto que representa un valor booleano. Un valor de **true** significa que la conversación tiene al menos un archivo de datos adjuntos visible. Un valor de **false** significa que la conversación no tiene datos adjuntos o solo tiene datos adjuntos ocultos. 
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda Exchange Web Services.This elemento fue introdujo en Exchange Server 2010 Service Pack 1 (SP1).
+El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda los servicios Web de Exchange. este elemento se introdujo en Exchange Server 2010 Service Pack 1 (SP1).
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Operación de FindConversation](findconversation-operation.md)
+[Operación FindConversation](findconversation-operation.md)
   
 [Operación ApplyConversationAction](applyconversationaction-operation.md)
 
 
-[Conversaciones de EWS](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+[Conversaciones en EWS](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

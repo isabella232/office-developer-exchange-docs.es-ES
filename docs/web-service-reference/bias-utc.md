@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 15790d5a-5134-457b-8f2b-d9dee1f807a2
-description: El elemento Bias representa el desplazamiento general de la hora Universal coordinada (UTC). Este valor está en minutos.
-ms.openlocfilehash: 43613593565ca15be97bd2a98dbe5c512dbe5fc7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento bias representa el desplazamiento general desde la hora universal coordinada (UTC). Este valor está en minutos.
+ms.openlocfilehash: d95284aa28e59542d1a1ee40686163138b015702
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763617"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460249"
 ---
 # <a name="bias-utc"></a>Bias (UTC)
 
-El elemento **Bias** representa el desplazamiento general de la hora Universal coordinada (UTC). Este valor está en minutos. 
+El elemento **Bias** representa el desplazamiento general desde la hora universal coordinada (UTC). Este valor está en minutos. 
   
 ```xml
 <TimeZone>
@@ -33,21 +33,21 @@ El elemento **Bias** representa el desplazamiento general de la hora Universal c
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[TimeZone (disponibilidad)](timezone-availability.md) <br/> | El contenedor que identifica la información de fecha y hora de la solicitud. Este elemento contiene información sobre la transición entre la hora estándar y el horario de verano.  <br/><br/>Los siguientes son las expresiones de XPath para este elemento:<br/><br/>   `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone` <br/><br/>`/GetUserAvailabilityRequest/TimeZone` <br/> |
+|[Zona horaria (disponibilidad)](timezone-availability.md) <br/> | Contenedor que identifica la información de fecha y hora de la solicitud. Este elemento contiene información sobre la transición entre el horario estándar y el horario de verano.  <br/><br/>Las siguientes son las expresiones XPath de este elemento:<br/><br/>   `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone` <br/><br/>`/GetUserAvailabilityRequest/TimeZone` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -55,14 +55,14 @@ Se requiere un valor de texto. El valor de texto representa un número entero.
   
 ## <a name="remarks"></a>Comentarios
 
-Un segundo elemento [Bias](bias.md) en el esquema representa el desplazamiento desde el desplazamiento de hora Universal coordinada (UTC). 
+Un segundo elemento [Bias](bias.md) en el esquema representa el desplazamiento con respecto a la hora universal coordinada (UTC). 
   
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestra parte de una solicitud XML que identifica un desplazamiento de 8 horas de la hora UTC en la aplicación cliente.
+En el ejemplo siguiente se muestra parte de una solicitud XML que identifica un desplazamiento de 8 horas a partir de UTC en la aplicación cliente.
   
 ```xml
-<TimeZone xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+<TimeZone xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
   <Bias>480</Bias>
   <StandardTime>
     <Bias>0</Bias>
@@ -85,14 +85,14 @@ En el ejemplo siguiente se muestra parte de una solicitud XML que identifica un 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)  
-- [Bias](bias.md)
-- [Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Sesgo](bias.md)
+- [Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

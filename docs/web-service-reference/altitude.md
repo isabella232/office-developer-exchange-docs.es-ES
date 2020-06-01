@@ -7,44 +7,44 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 14c2c8bd-db54-4b03-9a97-190ff9e908b3
-description: El elemento de altitud especifica la altitud de una dirección postal.
-ms.openlocfilehash: 03517dd3ffa38e435da8f4f5f3aae23f276411bf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento altitud especifica la altitud de una dirección postal.
+ms.openlocfilehash: 7cbb3872cd0ad53b1617f9f712633e19e6fe397d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763433"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458841"
 ---
 # <a name="altitude"></a>Altitude
 
-El elemento de **altitud** especifica la altitud de una dirección postal. 
+El elemento **altitud** especifica la altitud de una dirección postal. 
   
 ```XML
 <Altitude></Altitude>
 ```
 
- **xs**
+ **XS: Double**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md) <br/> |Especifica la dirección postal de la ubicación.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de altitud es la altitud de una dirección postal.
+El valor de texto del elemento altitud es la altitud de una dirección postal.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,12 +56,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

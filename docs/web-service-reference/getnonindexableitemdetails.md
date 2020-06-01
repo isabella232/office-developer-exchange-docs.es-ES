@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ce3994c1-3bb4-4571-b026-34a6c5705410
-description: El elemento GetNonIndexableItemDetails especifica una solicitud para recuperar detalles de elemento de nonindexable.
-ms.openlocfilehash: 0aeda85973aa78eff240a017db58ffb57fc0de06
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetNonIndexableItemDetails especifica una solicitud para recuperar los detalles de elementos no indizables.
+ms.openlocfilehash: 1c04b4cd7a86183210be869973c9779188fa0adf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764908"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458603"
 ---
 # <a name="getnonindexableitemdetails"></a>GetNonIndexableItemDetails
 
-El elemento **GetNonIndexableItemDetails** especifica una solicitud para recuperar detalles de elemento de nonindexable. 
+El elemento **GetNonIndexableItemDetails** especifica una solicitud para recuperar los detalles de elementos no indizables. 
   
 ```XML
 <GetNonIndexableItemDetails>
@@ -31,20 +31,20 @@ El elemento **GetNonIndexableItemDetails** especifica una solicitud para recuper
  **GetNonIndexableItemDetailsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Buzones de correo (NonEmptyArrayOfLegacyDNsType)](mailboxes-nonemptyarrayoflegacydnstype.md) <br/> |Especifica una matriz de elementos de **buzón de correo** .  <br/> |
-|[PageSize](pagesize.md) <br/> |Contiene el número de elementos que se devuelven en una sola página para un resultado de búsqueda.  <br/> |
-|[PageItemReference](pageitemreference.md) <br/> |Especifica la referencia de un elemento de página.  <br/> |
-|[PageDirection](pagedirection.md) <br/> |Contiene la dirección para la paginación en el resultado de la búsqueda.  <br/> |
+|[Buzones de correo (NonEmptyArrayOfLegacyDNsType)](mailboxes-nonemptyarrayoflegacydnstype.md) <br/> |Especifica una matriz de elementos **Mailbox** .  <br/> |
+|[PageSize](pagesize.md) <br/> |Contiene el número de elementos que se van a devolver en una sola página para un resultado de búsqueda.  <br/> |
+|[PageItemReference](pageitemreference.md) <br/> |Especifica la referencia para un elemento de página.  <br/> |
+|[PageDirection](pagedirection.md) <br/> |Contiene la dirección de paginación en el resultado de la búsqueda.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -60,14 +60,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

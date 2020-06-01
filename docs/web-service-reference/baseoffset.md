@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0ffad7a6-8e1b-452b-9d87-8e0f6c77f0a6
-description: El elemento BaseOffset representa la hourly desplazamiento de hora Universal coordinada (UTC) para la zona horaria actual.
-ms.openlocfilehash: 56fc136537b7d5370074a0e6d492f214da3fd960
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento BaseOffset representa el desplazamiento por horas de hora universal coordinada (UTC) para la zona horaria actual.
+ms.openlocfilehash: 1e29f123dfac2e29807e0a2077d47adb14844f4e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763609"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460263"
 ---
 # <a name="baseoffset"></a>BaseOffset
 
-El elemento **BaseOffset** representa la hourly desplazamiento de hora Universal coordinada (UTC) para la zona horaria actual. 
+El elemento **BaseOffset** representa el desplazamiento por horas de hora universal coordinada (UTC) para la zona horaria actual. 
   
 ```xml
 <BaseOffset/>
@@ -30,7 +30,7 @@ El elemento **BaseOffset** representa la hourly desplazamiento de hora Universal
  **duration**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
@@ -38,30 +38,30 @@ Ninguno
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[MeetingTimeZone](meetingtimezone.md) <br/> |Representa la zona horaria de la ubicación donde se hospeda la reunión.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

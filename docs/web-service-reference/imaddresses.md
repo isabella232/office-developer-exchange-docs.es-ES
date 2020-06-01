@@ -1,5 +1,5 @@
 ---
-title: ImAddresses
+title: Indirecciones
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 29f614a7-7fe6-47fa-b5f2-8feff106aa99
-description: El elemento ImAddresses representa una colección de direcciones de mensajería instantáneas para un contacto.
-ms.openlocfilehash: e8c7a22e8537a4526594042905f7bb8454238bf1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento imaddresses representa una colección de direcciones de mensajería instantánea de un contacto.
+ms.openlocfilehash: 24ff74d29c918d71116e25e097878b6e4e0a8ead
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835861"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460431"
 ---
-# <a name="imaddresses"></a>ImAddresses
+# <a name="imaddresses"></a>Indirecciones
 
-El elemento **ImAddresses** representa una colección de direcciones de mensajería instantáneas para un contacto. 
+El elemento **Imaddresses** representa una colección de direcciones de mensajería instantánea de un contacto. 
   
 ```xml
 <ImAddresses>
@@ -32,40 +32,40 @@ El elemento **ImAddresses** representa una colección de direcciones de mensajer
  **ImAddressDictionaryType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Entrada (IMAddress)](entry-imaddress.md) <br/> |Representa una dirección para un contacto de mensajería instantánea.  <br/> |
+|[Entrada (IMAddress)](entry-imaddress.md) <br/> |Representa una dirección de mensajería instantánea de un contacto.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Contact](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
+|[Contacto](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

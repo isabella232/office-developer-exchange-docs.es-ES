@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 35d2e592-38c1-4861-8293-f7fba3328f4e
-description: El elemento RemoveDistributionGroupFromImList representa una solicitud para quitar un instantánea mensajería distribución lista grupo específico.
-ms.openlocfilehash: 550cf984bf3df8334909dc6206799d6cf36f46c9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RemoveDistributionGroupFromImList representa una solicitud para quitar un grupo específico de lista de distribución de mensajería instantánea.
+ms.openlocfilehash: 0dff549c62c305a86464eaeac165d5f5bc01c9f5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837089"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459598"
 ---
 # <a name="removedistributiongroupfromimlist"></a>RemoveDistributionGroupFromImList
 
-El elemento **RemoveDistributionGroupFromImList** representa una solicitud para quitar un instantánea mensajería distribución lista grupo específico. 
+El elemento **RemoveDistributionGroupFromImList** representa una solicitud para quitar un grupo específico de lista de distribución de mensajería instantánea. 
   
 ```XML
 <RemoveDistributionGroupFromImList>
@@ -28,11 +28,11 @@ El elemento **RemoveDistributionGroupFromImList** representa una solicitud para 
  **RemoveDistributionGroupFromImListType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e7a3a16e-67a3-4083-be40-b5f72656b9ca
-description: El elemento PhotoUrl (FederatedDirectoryGroupType) está pensado para uso interno únicamente.
-ms.openlocfilehash: 9b964e8af116d8f4004a28bbac46e15162b2ed11
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PhotoUrl (FederatedDirectoryGroupType) está destinado exclusivamente para uso interno.
+ms.openlocfilehash: e7148ac706025f01809d0d3bc53fa8c31e9cfe71
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836805"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459212"
 ---
 # <a name="photourl-federateddirectorygrouptype"></a>PhotoUrl (FederatedDirectoryGroupType)
 
-El elemento **PhotoUrl (FederatedDirectoryGroupType)** está pensado para uso interno únicamente. 
+El elemento **PhotoUrl (FederatedDirectoryGroupType)** está destinado exclusivamente para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

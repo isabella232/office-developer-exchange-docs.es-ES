@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: dd8275df-11ad-4d24-95c4-291b123e8509
-description: El elemento ItemVersion está pensado para uso interno únicamente.
-ms.openlocfilehash: 7ffbe1727cef9e4b78b951ba5c2b3c1303502280
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ItemVersion está destinado sólo para uso interno.
+ms.openlocfilehash: 94d45e98f144840138ef3bc21c0a98d0196543b1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836162"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459275"
 ---
 # <a name="itemversion"></a>ItemVersion
 
-El elemento **ItemVersion** está pensado para uso interno únicamente. 
+El elemento **ItemVersion** está destinado sólo para uso interno. 
   
 ```XML
 <ItemVersion />
@@ -26,15 +26,15 @@ El elemento **ItemVersion** está pensado para uso interno únicamente.
  ****
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

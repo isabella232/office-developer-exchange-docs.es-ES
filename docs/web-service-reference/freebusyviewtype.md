@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7c7f82ba-fa52-4a3e-bec7-39d373c66fc7
-description: El elemento FreeBusyViewType representa el tipo de información de libre/ocupado devuelto en la respuesta.
-ms.openlocfilehash: fe965d062f72d99dff7148f4d00b12fd8c4e1366
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento FreeBusyViewType representa el tipo de información de disponibilidad devuelta en la respuesta.
+ms.openlocfilehash: 3556ad236693ac9aa018b8aa3af7843765da6aa4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764733"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459570"
 ---
 # <a name="freebusyviewtype"></a>FreeBusyViewType
 
-El elemento **FreeBusyViewType** representa el tipo de información de libre/ocupado devuelto en la respuesta. 
+El elemento **FreeBusyViewType** representa el tipo de información de disponibilidad devuelta en la respuesta. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -40,73 +40,73 @@ El elemento **FreeBusyViewType** representa el tipo de información de libre/ocu
  **FreeBusyViewType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FreeBusyView](freebusyview.md) <br/> |Contiene la información de disponibilidad para un usuario específico.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView` <br/> |
+|[FreeBusyView](freebusyview.md) <br/> |Contiene la información de disponibilidad de un usuario específico.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto. En la siguiente tabla se enumera los valores posibles para este elemento.
+Se requiere un valor de texto. En la siguiente tabla se enumeran los valores posibles para este elemento.
   
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|None  <br/> |Este valor no es válido para las solicitudes. Este valor es válido para las respuestas.  <br/> |
-|MergedOnly  <br/> |Representa una secuencia de libre/ocupado agregada. En los escenarios entre bosques en la que el usuario de destino en un bosque no tiene configurado un servicio de disponibilidad, el servicio de disponibilidad del solicitante recupera información de disponibilidad del usuario de destino de la carpeta pública de disponibilidad. Dado que las carpetas públicas sólo almacenan información de disponibilidad en formulario combinado, **MergedOnly** es la información sólo está disponible.  <br/> |
-|FreeBusy  <br/> |Representa la información de estado heredado: libre, ocupado, provisional y fuera de la oficina. Esto también incluye las horas de inicio y finalización de las citas. Esta vista es más completa de la libre/ocupado heredado ver porque individuales de la reunión de inicio y finalización veces se proporcionan en lugar de una secuencia de libre/ocupado agregada.  <br/> |
-|FreeBusyMerged  <br/> |Representa todas las propiedades en **FreeBusy** con una secuencia de información de disponibilidad de libre/ocupado combinadas.  <br/> |
-|Detallada  <br/> |Representa la información de estado heredado: libre, ocupado, provisional y fuera de la oficina; las horas de inicio y finalización de las citas; y varias propiedades de la cita, como el asunto, ubicación y su importancia. Esta vista solicitada devolverá la cantidad máxima de información para la que el usuario solicitante tiene privilegios. Si la información de libre/ocupado combinada sólo está disponible, como con la información que solicita a los usuarios de un bosque de Microsoft Exchange Server 2003, **MergedOnly** se devolverán. De lo contrario, se devolverán **FreeBusy** o **detallado** .  <br/> Si se especifica **Detailed** para obtener una lista de distribución, se combina la información de libre/ocupado para los miembros de la lista y se devuelve **MergedOnly** .  <br/> |
-|DetailedMerged  <br/> |Representa todas las propiedades en **Detailed** con una secuencia de información de disponibilidad de libre/ocupado combinadas. Si sólo hay información de libre/ocupado combinada está disponible, por ejemplo, si existe el buzón de correo en un equipo que ejecuta Exchange 2003, se devolverán **MergedOnly** . De lo contrario, se devolverán **FreeBusyMerged** o **DetailedMerged** .  <br/> |
+|Ninguno  <br/> |Este valor no es válido para las solicitudes. Este valor es válido para las respuestas.  <br/> |
+|MergedOnly  <br/> |Representa una secuencia de disponibilidad agregada. En escenarios entre bosques en los que el usuario de destino de un bosque no tiene un servicio de disponibilidad configurado, el servicio de disponibilidad del solicitante recupera la información de disponibilidad del usuario de destino de la carpeta pública de disponibilidad. Como las carpetas públicas solo almacenan la información de disponibilidad en formulario combinado, **MergedOnly** es la única información disponible.  <br/> |
+|FreeBusy  <br/> |Representa la información de estado heredada: libre, ocupado, provisional y OOF. Esto también incluye las horas de inicio y finalización de las citas. Esta vista es más rica que la vista disponibilidad heredada porque se proporcionan horas de inicio y finalización de una reunión individual, en lugar de una secuencia de disponibilidad agregada.  <br/> |
+|FreeBusyMerged  <br/> |Representa todas las propiedades de **FreeBusy** con una secuencia de información de disponibilidad de disponibilidad combinada.  <br/> |
+|Detallada  <br/> |Representa la información de estado heredada: libre, ocupado, provisional y OOF; las horas de inicio y finalización de las citas; y diversas propiedades de la cita, como el asunto, la ubicación y la importancia. Esta vista solicitada devolverá la cantidad máxima de información que el usuario solicitante tiene privilegio. Si la información de disponibilidad combinada solo está disponible, al igual que con la solicitud de información para los usuarios en un bosque de Microsoft Exchange Server 2003, se devolverá **MergedOnly** . De lo contrario, se devolverá **FreeBusy** o **Detailed** .  <br/> Si se especifica **Detailed** para una lista de distribución, se combina la información de disponibilidad de los miembros de la lista y se devuelve **MergedOnly** .  <br/> |
+|DetailedMerged  <br/> |Representa todas las propiedades en **detalle** con una secuencia de información de disponibilidad combinada de disponibilidad. Si solo hay disponible información de disponibilidad combinada, por ejemplo, si el buzón de correo existe en un equipo que ejecuta Exchange 2003, se devolverá **MergedOnly** . De lo contrario, se devolverá **FreeBusyMerged** o **DetailedMerged** .  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Este elemento es necesario si se usa el elemento [FreeBusyView](freebusyview.md) . El tipo de información de disponibilidad devuelta se designa en el elemento [RequestedView](requestedview.md) . El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente. 
+Este elemento es obligatorio si se usa el elemento [FreeBusyView](freebusyview.md) . El tipo de información de disponibilidad devuelta se designa en el elemento [RequestedView](requestedview.md) . El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes. 
   
-En la siguiente tabla se muestra lo que se devuelve para los tipos de vista diferentes y la propiedad correspondiente de MAPI. Cada tipo de vista se basa en el tipo de vista anterior.
+En la siguiente tabla se muestran los elementos que se devuelven para los distintos tipos de vista y la propiedad MAPI correspondiente. Cada tipo de vista se basa en el tipo de vista anterior.
   
-|**FreeBusyViewType**|**Properties**|**Calendario MAPI (propiedad)**|
+|**FreeBusyViewType**|**Propiedades**|**Propiedad Calendar de MAPI**|
 |:-----|:-----|:-----|
 |**MergedOnly** <br/> |MergedFreeBusyStream  <br/> ||
-|**FreeBusy** <br/> |Estado clásica  <br/> |PropTag (0x80860003)  <br/> |
-|**FreeBusy** <br/> |Horario laboral  <br/> ||
+|**FreeBusy** <br/> |Estado clásico  <br/> |PropTag (0x80860003)  <br/> |
+|**FreeBusy** <br/> |Horas laborables  <br/> ||
 |**FreeBusy** <br/> |Hora de inicio  <br/> |PR_START_DATE  <br/> |
 |**FreeBusy** <br/> |Hora de finalización  <br/> |PR_END_DATE  <br/> |
-|**FreeBusyMerged** <br/> |Estado clásica  <br/> |PropTag (0x80860003)  <br/> |
-|**FreeBusyMerged** <br/> |Horario laboral  <br/> ||
+|**FreeBusyMerged** <br/> |Estado clásico  <br/> |PropTag (0x80860003)  <br/> |
+|**FreeBusyMerged** <br/> |Horas laborables  <br/> ||
 |**FreeBusyMerged** <br/> |Hora de inicio  <br/> |PR_START_DATE  <br/> |
 |**FreeBusyMerged** <br/> |Hora de finalización  <br/> |PR_END_DATE  <br/> |
 |**FreeBusyMerged** <br/> |MergedFreeBusyStream  <br/> ||
-|**Detallada** <br/> |Estado clásica  <br/> |PropTag (0x80860003)  <br/> |
-|**Detallada** <br/> |Horario laboral  <br/> ||
+|**Detallada** <br/> |Estado clásico  <br/> |PropTag (0x80860003)  <br/> |
+|**Detallada** <br/> |Horas laborables  <br/> ||
 |**Detallada** <br/> |Hora de inicio  <br/> |PR_START_DATE  <br/> |
 |**Detallada** <br/> |Hora de finalización  <br/> |PR_END_DATE  <br/> |
 |**Detallada** <br/> |Subject  <br/> |PR_SUBJECT  <br/> |
 |**Detallada** <br/> |Ubicación  <br/> |PR_LOCATION  <br/> |
-|**Detallada** <br/> |Entrada Id(unless private)  <br/> ||
+|**Detallada** <br/> |Identificador de entrada (a menos que sea privado)  <br/> ||
 |**Detallada** <br/> |Marca privada  <br/> ||
 |**Detallada** <br/> |IsMeeting  <br/> ||
 |**Detallada** <br/> |IsRecurring  <br/> ||
 |**Detallada** <br/> |IsException  <br/> ||
 |**Detallada** <br/> |IsReminderSet  <br/> ||
-|**Detallada** <br/> |Fuera del mensaje de Office (si se solicita)  <br/> ||
-|**DetailedMerged** <br/> |Estado clásica  <br/> |PropTag (0x80860003)  <br/> |
-|**DetailedMerged** <br/> |Horario laboral  <br/> ||
+|**Detallada** <br/> |Mensaje de fuera de la oficina (si se solicita)  <br/> ||
+|**DetailedMerged** <br/> |Estado clásico  <br/> |PropTag (0x80860003)  <br/> |
+|**DetailedMerged** <br/> |Horas laborables  <br/> ||
 |**DetailedMerged** <br/> |Hora de inicio  <br/> |PR_START_DATE  <br/> |
 |**DetailedMerged** <br/> |Hora de finalización  <br/> |PR_END_DATE  <br/> |
 |**DetailedMerged** <br/> |Subject  <br/> |PR_SUBJECT  <br/> |
 |**DetailedMerged** <br/> |Ubicación  <br/> |PR_LOCATION  <br/> |
-|**DetailedMerged** <br/> |Entrada Id(unless private)  <br/> ||
+|**DetailedMerged** <br/> |Identificador de entrada (a menos que sea privado)  <br/> ||
 |**DetailedMerged** <br/> |Marca privada  <br/> ||
 |**DetailedMerged** <br/> |MergedFreeBusyStream  <br/> ||
 |**DetailedMerged** <br/> |IsMeeting  <br/> ||
@@ -118,10 +118,10 @@ En la siguiente tabla se muestra lo que se devuelve para los tipos de vista dife
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -132,5 +132,5 @@ En la siguiente tabla se muestra lo que se devuelve para los tipos de vista dife
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

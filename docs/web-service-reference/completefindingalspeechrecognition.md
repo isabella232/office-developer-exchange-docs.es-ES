@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 31211d0b-da0e-450c-8df2-159571fa3a19
-description: El elemento CompleteFindInGALSpeechRecognition está pensado para uso interno únicamente.
-ms.openlocfilehash: 2fe3cfef55c97b8bb827d5adf785f285481bdcbb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento CompleteFindInGALSpeechRecognition está destinado sólo para uso interno.
+ms.openlocfilehash: 11d8153f262ea115798e0f00b43bd47390b69688
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763756"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459044"
 ---
 # <a name="completefindingalspeechrecognition"></a>CompleteFindInGALSpeechRecognition
 
-El elemento **CompleteFindInGALSpeechRecognition** está pensado para uso interno únicamente. 
+El elemento **CompleteFindInGALSpeechRecognition** está destinado sólo para uso interno. 
   
 ```XML
 <CompleteFindInGALSpeechRecognition />
@@ -25,15 +25,15 @@ El elemento **CompleteFindInGALSpeechRecognition** está pensado para uso intern
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -49,9 +49,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

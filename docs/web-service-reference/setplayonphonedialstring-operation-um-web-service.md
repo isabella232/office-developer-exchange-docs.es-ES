@@ -1,5 +1,5 @@
 ---
-title: Operación SetPlayOnPhoneDialString (servicio web de mensajería unificada)
+title: Operación SetPlayOnPhoneDialString (servicio Web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,23 +10,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: a68479f2-d900-4dd8-a5ce-dbea8247e841
-description: La operación SetPlayOnPhoneDialString establece la cadena de marcado para usar como el valor predeterminado para la operación de PlayOnPhone (servicio web de mensajería unificada) y la operación de PlayOnPhoneGreeting (servicio web de mensajería unificada).
-ms.openlocfilehash: 0d1a879784740777e5eab0cbd5f85e59a6479461
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación SetPlayOnPhoneDialString establece la cadena de marcado que se usará como predeterminada para la operación reproducir (servicio Web de mensajería unificada) y la operación PlayOnPhoneGreeting (servicio Web de mensajería unificada).
+ms.openlocfilehash: 7df806eedc2d6d037394f31ec4ccbfe28aaf3372
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837446"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458645"
 ---
-# <a name="setplayonphonedialstring-operation-um-web-service"></a>Operación SetPlayOnPhoneDialString (servicio web de mensajería unificada)
+# <a name="setplayonphonedialstring-operation-um-web-service"></a>Operación SetPlayOnPhoneDialString (servicio Web de mensajería unificada)
 
-La operación SetPlayOnPhoneDialString establece la cadena de marcado para usar como el valor predeterminado para la [operación de PlayOnPhone (servicio web de mensajería unificada)](playonphone-operation-um-web-service.md) y la [operación de PlayOnPhoneGreeting (servicio web de mensajería unificada)](playonphonegreeting-operation-um-web-service.md).
+La operación SetPlayOnPhoneDialString establece la cadena de marcado que se usará como predeterminada para la [operación reproducir (servicio Web de mensajería unificada)](playonphone-operation-um-web-service.md) y la [operación PlayOnPhoneGreeting (servicio Web de mensajería unificada)](playonphonegreeting-operation-um-web-service.md).
   
-## <a name="setplayonphonedialstring-request-example"></a>Ejemplo de solicitud de SetPlayOnPhoneDialString
+## <a name="setplayonphonedialstring-request-example"></a>Ejemplo de solicitud SetPlayOnPhoneDialString
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud de SetPlayOnPhoneDialString muestra cómo formar una solicitud para establecer la cadena de marcado predeterminado para un buzón de correo.
+El siguiente ejemplo de una solicitud SetPlayOnPhoneDialString muestra cómo crear una solicitud para establecer la cadena de marcado predeterminada para un buzón de correo.
   
 ### <a name="code"></a>Código
 
@@ -34,18 +34,18 @@ El siguiente ejemplo de una solicitud de SetPlayOnPhoneDialString muestra cómo 
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetPlayOnPhoneDialString xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SetPlayOnPhoneDialString xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
         <dialString>12345</dialString>
     </SetPlayOnPhoneDialString>
   </soap:Body>
 </soap:Envelope>
 ```
 
-## <a name="successful-setplayonphonedialstring-response-example"></a>Ejemplo de respuesta correcta de SetPlayOnPhoneDialString
+## <a name="successful-setplayonphonedialstring-response-example"></a>Ejemplo de respuesta SetPlayOnPhoneDialString correcta
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una respuesta SetPlayOnePhoneDialString muestra una respuesta a la solicitud de SetPlayOnPhoneDialString.
+El siguiente ejemplo de una respuesta de SetPlayOnePhoneDialString muestra una respuesta a la solicitud SetPlayOnPhoneDialString.
   
 ### <a name="code"></a>Código
 
@@ -53,7 +53,7 @@ El siguiente ejemplo de una respuesta SetPlayOnePhoneDialString muestra una resp
 <?xml version="1.0" encoding="utf-8" ?> 
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Body>
-    <SetPlayOnPhoneDialStringResponse xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" /> 
+    <SetPlayOnPhoneDialStringResponse xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" /> 
   </soap:Body>
 </soap:Envelope>
 ```
@@ -62,9 +62,9 @@ El siguiente ejemplo de una respuesta SetPlayOnePhoneDialString muestra una resp
 
 
 
-[SetPlayOnPhoneDialString (servicio web de mensajería unificada)](setplayonphonedialstring-um-web-service.md)
+[SetPlayOnPhoneDialString (servicio Web de mensajería unificada)](setplayonphonedialstring-um-web-service.md)
   
-[SetPlayOnPhoneDialStringResponse (servicio web de mensajería unificada)](setplayonphonedialstringresponse-um-web-service.md)
+[SetPlayOnPhoneDialStringResponse (servicio Web de mensajería unificada)](setplayonphonedialstringresponse-um-web-service.md)
   
-[dialString (servicio web de mensajería unificada)](dialstring-um-web-service.md)
+[dialString (servicio Web de mensajería unificada)](dialstring-um-web-service.md)
 

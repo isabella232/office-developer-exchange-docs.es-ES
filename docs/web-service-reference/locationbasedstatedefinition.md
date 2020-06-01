@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2bb2cb78-e168-414e-8d07-414ab5c69185
-description: El elemento LocationBasedStateDefinition está pensado para uso interno únicamente.
-ms.openlocfilehash: 378d57418156e09ab0ce0bb33d4dc8e6cfdb53b1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento LocationBasedStateDefinition está destinado sólo para uso interno.
+ms.openlocfilehash: dd1e97b2071eeb82f7c9032b83ea52f83ee4a1ec
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836240"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460305"
 ---
 # <a name="locationbasedstatedefinition"></a>LocationBasedStateDefinition
 
-El elemento **LocationBasedStateDefinition** está pensado para uso interno únicamente. 
+El elemento **LocationBasedStateDefinition** está destinado sólo para uso interno. 
   
 ```XML
 <LocationBasedStateDefinition />
@@ -25,15 +25,15 @@ El elemento **LocationBasedStateDefinition** está pensado para uso interno úni
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

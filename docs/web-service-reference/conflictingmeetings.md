@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cfff7a11-7b3a-4995-9815-afedd45ebb0f
-description: El elemento ConflictingMeetings identifica todos los elementos de calendario que entre en conflicto con un tiempo de la reunión.
-ms.openlocfilehash: 1d2558dba41ec3e7ae2711bb2dc26f54cada827a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ConflictingMeetings identifica todos los elementos de calendario que entran en conflicto con una hora de reunión.
+ms.openlocfilehash: dc897c9dc33117d379d89bb9bb41104ca02def1f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763770"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460179"
 ---
 # <a name="conflictingmeetings"></a>ConflictingMeetings
 
-El elemento **ConflictingMeetings** identifica todos los elementos de calendario que entre en conflicto con un tiempo de la reunión. 
+El elemento **ConflictingMeetings** identifica todos los elementos de calendario que entran en conflicto con una hora de reunión. 
   
 ```xml
 <ConflictingMeetings>
@@ -32,21 +32,21 @@ El elemento **ConflictingMeetings** identifica todos los elementos de calendario
  **NonEmptyArrayOfAllItemsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[MeetingRequest](meetingrequest.md) <br/> |Representa una convocatoria de reunión en el almacén de Exchange.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
@@ -55,23 +55,23 @@ Ninguno.
 
 Si se usa este elemento, debe contener uno o más elementos secundarios.
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor acceso de clientes.
   
 > [!NOTE]
-> Aunque los elementos secundarios adicionales son válidos según el esquema, el elemento [CalendarItem](calendaritem.md) es el elemento secundario único que Exchange Web Services (EWS) devolverá dentro del elemento **ConflictingMeetings** . En este tema no mostrar los elementos secundarios que son válidos según el esquema, pero no será devuelto por EWS. 
+> Aunque los elementos secundarios adicionales son válidos para cada esquema, el elemento [CalendarItem](calendaritem.md) es el único elemento secundario que los servicios web Exchange (EWS) devolverán dentro del elemento **ConflictingMeetings** . En este tema no se enumeran los elementos secundarios que son válidos para cada esquema, pero que no se devolverán con EWS. 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

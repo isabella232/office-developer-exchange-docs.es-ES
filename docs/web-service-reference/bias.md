@@ -1,5 +1,5 @@
 ---
-title: Bias
+title: Sesgo
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ae10aa44-e6d3-483d-a3e6-bb9c45966810
-description: El elemento Bias representa el desplazamiento desde el desplazamiento de hora Universal coordinada (UTC) identificado por el elemento Bias (UTC) para la hora estándar y el horario de verano. Este valor está en minutos.
-ms.openlocfilehash: 770bf97b030ac1293595560bc269f54896e35a15
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento bias representa el desplazamiento del desplazamiento de la hora universal coordinada (UTC) identificado por el elemento Bias (UTC) para el horario estándar y el horario de verano. Este valor está en minutos.
+ms.openlocfilehash: 6c9dce88f3eece9c793fb018114f07a85c7cb89b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763621"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460242"
 ---
-# <a name="bias"></a>Bias
+# <a name="bias"></a>Sesgo
 
-El elemento **Bias** representa el desplazamiento desde el desplazamiento de hora Universal coordinada (UTC) identificado por el elemento [Bias (UTC)](bias-utc.md) para la hora estándar y el horario de verano. Este valor está en minutos. 
+El elemento **Bias** representa el desplazamiento del desplazamiento de la hora universal coordinada (UTC) identificado por el elemento [Bias (UTC)](bias-utc.md) para el horario estándar y el horario de verano. Este valor está en minutos. 
   
 ```xml
 <Bias>...</Bias>
@@ -31,22 +31,22 @@ El elemento **Bias** representa el desplazamiento desde el desplazamiento de hor
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[StandardTime](standardtime.md) <br/> | Representa un desplazamiento de la hora con respecto a UTC representada por el elemento [Bias (UTC)](bias-utc.md) . Este elemento también contiene información sobre la transición a la hora estándar de horario de verano en regiones donde se observa el horario de verano.<br/><br/>Los siguientes son las expresiones de XPath para el elemento [StandardTime](standardtime.md) :<br/><br/>   `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/StandardTime` <br/><br/> `/GetUserAvailabilityRequest/TimeZone/StandardTime` <br/> |
-|[DaylightTime](daylighttime.md) <br/> | Representa un desplazamiento de la hora con respecto a UTC representada por el elemento [Bias (UTC)](bias-utc.md) en las regiones donde se observa el horario de verano. Este elemento también contiene información acerca de cuándo se produce la transición al horario de verano de tiempo estándar.  <br/><br/>Los siguientes son las expresiones de XPath para el elemento [DaylightTime](daylighttime.md) :<br/><br/> `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/DaylightTime` <br/><br/> `/GetUserAvailabilityRequest/TimeZone/DaylightTime` <br/> |
+|[Standardtime Element](standardtime.md) <br/> | Representa un desplazamiento del tiempo relativo a la hora UTC representado por el elemento [Bias (UTC)](bias-utc.md) . Este elemento también contiene información sobre la transición a la hora estándar del horario de verano en regiones en las que se observa el horario de verano.<br/><br/>Las siguientes son las expresiones XPath para el elemento [standardtime Element](standardtime.md) :<br/><br/>   `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/StandardTime` <br/><br/> `/GetUserAvailabilityRequest/TimeZone/StandardTime` <br/> |
+|[DaylightTime](daylighttime.md) <br/> | Representa un desplazamiento del tiempo relativo a la hora UTC representado por el elemento [Bias (UTC)](bias-utc.md) en las regiones en las que se observa el horario de verano. Este elemento también contiene información sobre cuándo se produce la transición al horario de verano desde la hora estándar.  <br/><br/>Las siguientes son las expresiones XPath para el elemento [DaylightTime](daylighttime.md) :<br/><br/> `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone/DaylightTime` <br/><br/> `/GetUserAvailabilityRequest/TimeZone/DaylightTime` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -54,14 +54,14 @@ Se requiere un valor de texto. El valor de texto representa un número entero.
   
 ## <a name="remarks"></a>Comentarios
 
-Sólo se puede proporcionar el desplazamiento que se utiliza para determinar la hora local mediante uno de los elementos de **inclinación** . La suma de los valores del elemento Bias proporcionado por el elemento [DaylightTime](daylighttime.md) o el elemento [StandardTime](standardtime.md) además el elemento [Bias (UTC)](bias-utc.md) identifica la hora local. 
+El desplazamiento que se usa para determinar la hora local solo puede ser proporcionado por uno de los elementos **Bias** . La suma de los valores del elemento bias proporcionado por el elemento [DaylightTime](daylighttime.md) o el elemento [standardtime Element](standardtime.md) más el elemento [Bias (UTC)](bias-utc.md) identifica la hora local. 
   
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestra parte de una solicitud XML que identifica a un usuario que se observa el horario de verano ajustando el desplazamiento de la hora UTC-60 minutos. Esto eficazmente hace que la inclinación 420 minutos de la hora UTC.
+En el ejemplo siguiente se muestra parte de una solicitud XML que identifica a un usuario que observa el horario de verano mediante el ajuste del desplazamiento con respecto a la hora UTC de-60 minutos. Esto hace que la diferencia sea de 420 minutos respecto a la hora UTC.
   
 ```xml
-<TimeZone xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+<TimeZone xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
   <Bias>480</Bias>
   <StandardTime>
     <Bias>0</Bias>
@@ -84,13 +84,13 @@ En el ejemplo siguiente se muestra parte de una solicitud XML que identifica a u
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)
-- [Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

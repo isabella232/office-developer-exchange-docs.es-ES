@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 65554e4c-c0d9-485e-9f01-ed1baa8280ab
-description: El elemento AddImContactToGroup define una solicitud para agregar un contacto de mensajería instantáneo existente a un grupo de mensajería instantáneo.
-ms.openlocfilehash: 71c841ce6df2ed7dcbbf77597b26f3e3e742a7fb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AddImContactToGroup define una solicitud para agregar un contacto de mensajería instantánea existente a un grupo de mensajería instantánea.
+ms.openlocfilehash: b86b1cb69a1ebc7034e5a27047c14efbab7236ea
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763478"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459668"
 ---
 # <a name="addimcontacttogroup"></a>AddImContactToGroup
 
-El elemento **AddImContactToGroup** define una solicitud para agregar un contacto de mensajería instantáneo existente a un grupo de mensajería instantáneo. 
+El elemento **AddImContactToGroup** define una solicitud para agregar un contacto de mensajería instantánea existente a un grupo de mensajería instantánea. 
   
 ```XML
 <AddImContactToGroup>
@@ -29,15 +29,15 @@ El elemento **AddImContactToGroup** define una solicitud para agregar un contact
  **AddImContactToGroupType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[ContactId](contactid.md) | [GroupId](groupid.md)
+[ContactId](contactid.md)  |  [GROUPID](groupid.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

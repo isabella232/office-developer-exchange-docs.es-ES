@@ -1,5 +1,5 @@
 ---
-title: Marca de tiempo
+title: Marca
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5eae859a-5a74-4bf6-b196-d1b2fd38501a
-description: El elemento de marca de tiempo representa la marca de hora de un evento de buzón de correo.
-ms.openlocfilehash: d020d9a4cf3a128d26e0ff2b83be9f3deb024339
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento timestamp representa la marca de hora de un evento de buzón.
+ms.openlocfilehash: f2280d4eab67b603963c4f0a7468bf35a2b63a88
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840719"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459892"
 ---
-# <a name="timestamp"></a>Marca de tiempo
+# <a name="timestamp"></a>Marca
 
-El elemento de **marca de tiempo** representa la marca de hora de un evento de buzón de correo. 
+El elemento **timestamp** representa la marca de hora de un evento de buzón. 
   
 ```xml
 <TimeStamp/>
@@ -30,26 +30,26 @@ El elemento de **marca de tiempo** representa la marca de hora de un evento de b
  **DateTime**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CopiedEvent](copiedevent.md) <br/> |Representa un evento donde se copia una carpeta o elemento.  <br/> |
-|[CreatedEvent](createdevent.md) <br/> |Representa un evento que se crea una carpeta o elemento.  <br/> |
-|[DeletedEvent](deletedevent.md) <br/> |Representa un evento que se elimina un elemento o carpeta.  <br/> |
-|[ModifiedEvent](modifiedevent.md) <br/> |Representa un evento que se modifica una carpeta o elemento.  <br/> |
-|[MovedEvent](movedevent.md) <br/> |Representa un evento donde una carpeta o elemento se mueve desde la carpeta principal de una a otra carpeta primaria.  <br/> |
-|[NewMailEvent](newmailevent.md) <br/> |Representa un evento activado por un nuevo elemento de correo en un buzón de correo.  <br/> |
+|[CopiedEvent](copiedevent.md) <br/> |Representa un evento en el que se copia un elemento o una carpeta.  <br/> |
+|[CreatedEvent](createdevent.md) <br/> |Representa un evento en el que se crea un elemento o una carpeta.  <br/> |
+|[DeletedEvent](deletedevent.md) <br/> |Representa un evento en el que se elimina un elemento o carpeta.  <br/> |
+|[ModifiedEvent](modifiedevent.md) <br/> |Representa un evento en el que se modifica un elemento o una carpeta.  <br/> |
+|[MovedEvent](movedevent.md) <br/> |Representa un evento en el que se mueve un elemento o una carpeta de una carpeta principal a otra carpeta principal.  <br/> |
+|[NewMailEvent](newmailevent.md) <br/> |Representa un evento desencadenado por un nuevo elemento de correo en un buzón.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -57,26 +57,26 @@ Esta propiedad es de sólo lectura.
   
 ## <a name="remarks"></a>Comentarios
 
-Este elemento está principalmente disponible para su uso en la determinación de cliente de la frecuencia de los eventos. Esto no está presente en el [objeto StatusEvent](statusevent.md).
+Este elemento está disponible principalmente para su uso en el cliente que determina la frecuencia de eventos. Esto no está presente en [StatusEvent](statusevent.md).
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Operación de suscripción](subscribe-operation.md)
+[Operación subscribe](subscribe-operation.md)
   
 [Operación GetEvents](getevents-operation.md)
   
-[Cancelar la operación de suscripción](unsubscribe-operation.md)
+[Operación unsubscribe](unsubscribe-operation.md)
 

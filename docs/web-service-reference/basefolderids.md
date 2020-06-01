@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: bdaa6093-f960-469a-b338-0e75aaa536c6
-description: El elemento BaseFolderIds representa la colección de carpetas que se extraídos para determinar el contenido de una carpeta de búsqueda.
-ms.openlocfilehash: 960e4d9c1d6eb37bf988bf163e696cbba3e1ef6f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento BaseFolderIds representa la colección de carpetas que se extendrán para determinar el contenido de una carpeta de búsqueda.
+ms.openlocfilehash: 97159ec1ded685e63aafedfaf90a06eff39adaab
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763598"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460270"
 ---
 # <a name="basefolderids"></a>BaseFolderIds
 
-El elemento **BaseFolderIds** representa la colección de carpetas que se extraídos para determinar el contenido de una carpeta de búsqueda. 
+El elemento **BaseFolderIds** representa la colección de carpetas que se extendrán para determinar el contenido de una carpeta de búsqueda. 
   
 ```xml
 <BaseFolderIds>
@@ -33,22 +33,22 @@ El elemento **BaseFolderIds** representa la colección de carpetas que se extra�
  **NonEmptyArrayOfBaseFolderIdsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Contiene el identificador y cambiar la clave de una carpeta.  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifica las carpetas de MicrosoftExchange Server 2007 que se pueden hacer referencia por su nombre.  <br/> |
+|[FolderId](folderid.md) <br/> |Contiene el identificador y la clave de cambio de una carpeta.  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifica las carpetas de MicrosoftExchange Server 2007 a las que se puede hacer referencia por su nombre.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[SearchParameters](searchparameters.md) <br/> |Representa los parámetros que definen una carpeta de búsqueda.  <br/> |
    
@@ -56,20 +56,20 @@ Ninguno.
 
 El elemento **BaseFolderIds** debe contener al menos un elemento [FolderId](folderid.md) o [DistinguishedFolderId](distinguishedfolderid.md) . 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

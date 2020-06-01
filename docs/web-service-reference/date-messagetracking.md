@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3b684b12-3e43-4012-a8c9-8fb8c43387b4
-description: El elemento de fecha representa la fecha y hora en que se produjo el evento.
-ms.openlocfilehash: af5a512064e384f2f3e196c12e48be5f2d5caae2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Date representa la fecha y hora en que se produjo el evento.
+ms.openlocfilehash: 0851c0785072f24868b17a828f34a47861441d22
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764026"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459268"
 ---
 # <a name="date-messagetracking"></a>Fecha (MessageTracking)
 
-El elemento de **fecha** representa la fecha y hora en que se produjo el evento. 
+El elemento **Date** representa la fecha y hora en que se produjo el evento. 
   
 ```XML
 <Date/>
@@ -30,19 +30,19 @@ El elemento de **fecha** representa la fecha y hora en que se produjo el evento.
  **dateTime**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Contiene los detalles de un evento específico en el informe de seguimiento.  <br/> |
    
@@ -58,14 +58,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 616e9a88-afd2-4df3-aa3b-f126bdebfaec
-description: El elemento EndDate especifica que la fecha de finalización del elemento el aviso es para.
-ms.openlocfilehash: 6582447cc858e1808b32770d5a752b772d1ea9cb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EndDate especifica la fecha de finalización del elemento al que corresponde el aviso.
+ms.openlocfilehash: 37ebb31f4ff94e7e5eeacf218c9cbccdaf4f3ace
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764406"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460158"
 ---
 # <a name="enddate-remindertype"></a>EndDate (ReminderType)
 
-El elemento **EndDate** especifica que la fecha de finalización del elemento el aviso es para. 
+El elemento **EndDate** especifica la fecha de finalización del elemento al que corresponde el aviso. 
   
 ```XML
 <EndDate/>
@@ -26,15 +26,15 @@ El elemento **EndDate** especifica que la fecha de finalización del elemento el
  **dateTime**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,10 +54,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -66,5 +66,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Aviso](reminder.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

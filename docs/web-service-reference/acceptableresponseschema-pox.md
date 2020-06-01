@@ -9,12 +9,12 @@ api_type:
 - schema
 ms.assetid: 2f0f77bd-4cbe-4c02-880d-a93b387141d9
 description: El elemento AcceptableResponseSchema identifica el esquema de una respuesta de detección automática.
-ms.openlocfilehash: 16444b6b3e17c6774416f90a5a056d0e8025287d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: ffc06f33144af7c8f06e81a12bcb5077719b15b8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764540"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460410"
 ---
 # <a name="acceptableresponseschema-pox"></a>AcceptableResponseSchema (POX)
 
@@ -32,21 +32,21 @@ El elemento **AcceptableResponseSchema** identifica el esquema de una respuesta 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Solicitud (POX)](request-pox.md) <br/> |Contiene la solicitud para el servicio Detección automática.  <br/> |
+|[Solicitud (POX)](request-pox.md) <br/> |Contiene la solicitud al servicio Detección automática.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -54,5 +54,5 @@ El valor de texto identifica la ubicación del esquema de respuesta de detecció
   
 ## <a name="see-also"></a>Vea también
 
-- [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+- [Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

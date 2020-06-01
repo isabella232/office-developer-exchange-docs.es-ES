@@ -1,5 +1,5 @@
 ---
-title: Identificadores de usuario
+title: UserIds
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 78a09c3a-1646-4c55-95a2-1109fb11e1c6
-description: Elemento contiene una matriz de los identificadores de usuario delegan a los usuarios obtener o quitar de buzón de una entidad de seguridad. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).
-ms.openlocfilehash: 277ae96fdbc30f1b39ef20553e10ff1de3ff7a8b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UserIds contiene una matriz de usuarios delegados para obtener o quitar del buzón de la entidad de la identidad. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).
+ms.openlocfilehash: de4661226c154ef0d2d5ac55c57405e20c4d2aee
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840912"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459780"
 ---
-# <a name="userids"></a>Identificadores de usuario
+# <a name="userids"></a>UserIds
 
-El elemento de **identificadores de usuario** contiene una matriz de delegado a los usuarios obtener o quitar de buzón de una entidad de seguridad. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1). 
+El elemento **userids** contiene una matriz de usuarios delegados para obtener o quitar del buzón de la entidad de la identidad. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1). 
   
 ```xml
 <UserIds>
@@ -32,37 +32,37 @@ El elemento de **identificadores de usuario** contiene una matriz de delegado a 
  **ArrayOfUserIdType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UserId](userid.md) <br/> |Identifica a obtener o quitar buzón de una entidad de seguridad de un delegado. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
+|[UserId](userid.md) <br/> |Identifica un delegado para obtener o quitar del buzón de la entidad de la identidad. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetDelegate](getdelegate.md) <br/> |Define una solicitud para obtener información acerca de los delegados a un buzón de correo. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
-|[RemoveDelegate](removedelegate.md) <br/> |Define una solicitud para quitar delegados de un buzón de correo. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
+|[GetDelegate](getdelegate.md) <br/> |Define una solicitud para obtener información acerca de los delegados de un buzón. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
+|[RemoveDelegate](removedelegate.md) <br/> |Define una solicitud para quitar delegados de un buzón. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -73,5 +73,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [Operación RemoveDelegate](removedelegate-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: fee3f1f9-e868-49fa-a554-7ff096964718
-description: El elemento Status especifica el estado de suspensión para un buzón de correo.
-ms.openlocfilehash: c40dc865d2b305ac86fa40d536e2d516a14260ab
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento status especifica el estado de retención de un buzón.
+ms.openlocfilehash: cecfdfaf67b00b6f8cf02188e7a4df7062a732e4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837579"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459990"
 ---
 # <a name="status-holdstatustype"></a>Estado (HoldStatusType)
 
-El elemento **Status** especifica el estado de suspensión para un buzón de correo. 
+El elemento **status** especifica el estado de retención de un buzón. 
   
 ```XML
 <Status> NotOnHold | Pending | OnHold | PartialHold | Failed </Status>
@@ -26,15 +26,15 @@ El elemento **Status** especifica el estado de suspensión para un buzón de cor
  **HoldStatusType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,17 +42,17 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **estado** es el estado de espera de un buzón de correo. El elemento de **estado** puede tener los valores de la lista siguiente. 
+El valor de texto del elemento de **Estado** es el estado de conservación de un buzón. El elemento **status** puede tener los valores de la siguiente lista. 
   
-> NotOnHold - el buzón no está en espera.
+> NotOnHold: el buzón de correo no está en suspensión.
     
-> Pendiente: el buzón de correo está pendiente se colocan o publicado en espera. 
+> Pending: el buzón de correo está pendiente de ser colocado o lanzado en espera. 
     
-> OnHold - la suspensión se ha aplicado correctamente al buzón. 
+> Cohold: la suspensión se aplicó correctamente al buzón de correo. 
     
-> PartialHold - la suspensión se ha aplicado correctamente para algunos buzones de correo, pero no para todos los buzones.
+> PartialHold: la retención se aplicó correctamente a algunos buzones, pero no a todos los buzones.
     
-> No se pudo - la suspensión no se pudieron aplicar al buzón.
+> Failed: no se pudo aplicar la retención al buzón.
     
 ## <a name="remarks"></a>Comentarios
 
@@ -64,9 +64,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

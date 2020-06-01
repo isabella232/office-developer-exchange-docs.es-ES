@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3445ef2b-1bb1-43ea-bc93-85c72401e5b6
-description: El elemento ClientExtension contiene información de usuario y de configuración sobre una aplicación.
-ms.openlocfilehash: 5051248a2c8e664d82666bd7b42ee3c3046f43fe
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ClientExtension contiene información de usuario y configuración sobre una aplicación.
+ms.openlocfilehash: d3d9ce1d242a63f28da3464f0faff86abde502c9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763742"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460200"
 ---
 # <a name="clientextension"></a>ClientExtension
 
-El elemento **ClientExtension** contiene información de usuario y de configuración sobre una aplicación. 
+El elemento **ClientExtension** contiene información de usuario y configuración sobre una aplicación. 
   
 ```XML
 <ClientExtension IsAvailable=" true | false " IsMandatory=" true | false " IsEnabledByDefault=" true | false " Type="" Scope="" MarketplaceAssetId="" MarketplaceContentMarket="" AppStatus="" Etoken="">
@@ -29,20 +29,20 @@ El elemento **ClientExtension** contiene información de usuario y de configurac
  **ClientExtensionType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|IsAvailable  <br/> |Especifica si la aplicación está disponible. Un valor de texto de **true** para el atributo **IsAvailable** indica que la aplicación está disponible. Un valor de **false** indica que la aplicación no está disponible. Este atributo es opcional.  <br/> |
-|IsMandatory  <br/> |Especifica si la aplicación es obligatoria. Un valor de texto de **true** para el atributo **IsMandatory** indica que la aplicación es obligatoria para el buzón de correo. Un valor de **false** indica que la aplicación no es obligatoria. Este atributo es opcional.  <br/> |
+|IsAvailable  <br/> |Especifica si la aplicación está disponible. Un valor de texto de **true** para el atributo **isavailable** indica que la aplicación está disponible. Un valor de **false** indica que la aplicación no está disponible. Este atributo es opcional.  <br/> |
+|IsMandatory  <br/> |Especifica si la aplicación es obligatoria. Un valor de texto de **true** para el atributo **IsMandatory** indica que la aplicación es obligatoria para el buzón. Un valor de **false** indica que la aplicación no es obligatoria. Este atributo es opcional.  <br/> |
 |IsEnabledByDefault  <br/> |Especifica si la aplicación está habilitada de forma predeterminada. Un valor de texto de **true** para el atributo **IsEnabledByDefault** indica que la aplicación está habilitada de forma predeterminada. Un valor de **false** indica que la aplicación no está habilitada de forma predeterminada. Este atributo es opcional.  <br/> |
-|ProvidedTo  <br/> |Especifica a quien se proporciona la aplicación. Este atributo es opcional.  <br/> |
-|Tipo  <br/> |Especifica el tipo de la aplicación.  <br/> |
+|ProvidedTo  <br/> |Especifica la persona a la que se proporciona la aplicación. Este atributo es opcional.  <br/> |
+|Tipo  <br/> |Especifica el tipo de aplicación.  <br/> |
 |Ámbito  <br/> |Especifica el ámbito de la aplicación.  <br/> |
-|MarketplaceAssetId  <br/> |Especifica el identificador de activo del catálogo de soluciones de la aplicación.  <br/> |
-|MarketplaceContentMarket  <br/> |Especifica el contenido del catálogo de soluciones que un usuario ve para obtener información detallada y revisa acerca de una aplicación.  <br/> |
+|MarketplaceAssetId  <br/> |Especifica el identificador de activos del mercado de la aplicación.  <br/> |
+|MarketplaceContentMarket  <br/> |Especifica el contenido del catálogo de soluciones que un usuario ve para obtener detalles y revisiones de una aplicación.  <br/> |
 |AppStatus  <br/> |Especifica el código de estado de una aplicación de correo en un estado inesperado.  <br/> |
 |Etoken  <br/> |Especifica el token de licencia para las aplicaciones de correo de pago o de prueba.  <br/> |
    
@@ -50,31 +50,31 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Default  <br/> |Indica que la aplicación está disponible de forma predeterminada.  <br/> |
-|Privado  <br/> |Indica que la aplicación es privada.  <br/> |
-|Catálogo de soluciones  <br/> |Indica que la aplicación es una aplicación de catálogo de soluciones.  <br/> |
+|Predeterminado  <br/> |Indica que la aplicación está disponible de forma predeterminada.  <br/> |
+|Private  <br/> |Indica que la aplicación es privada.  <br/> |
+|Venta  <br/> |Indica que la aplicación es una aplicación del catálogo de soluciones.  <br/> |
    
 #### <a name="scope"></a>Ámbito
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|None  <br/> |Indica que la aplicación no tiene ningún ámbito.  <br/> |
+|Ninguno  <br/> |Indica que la aplicación no tiene ningún ámbito.  <br/> |
 |User  <br/> |Indica que la aplicación es por usuario.  <br/> |
 |Organización  <br/> |Indica que la aplicación es para una organización.  <br/> |
-|Default  <br/> |Indica que la aplicación es una aplicación predeterminada.  <br/> |
+|Predeterminado  <br/> |Indica que la aplicación es una aplicación predeterminada.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SpecificUsers](specificusers.md) <br/> |Especifica las cuentas de correo electrónico que pueden tener acceso a la aplicación.  <br/> |
-|[Manifest](manifest.md) <br/> |Contiene el archivo de manifiesto de aplicación de base-64 codificada.  <br/> |
+|[SpecificUsers](specificusers.md) <br/> |Especifica las cuentas de correo electrónico que pueden acceder a la aplicación.  <br/> |
+|[Manifiesto](manifest.md) <br/> |Contiene el archivo de manifiesto de la aplicación codificado de base 64.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ClientExtensions](clientextensions.md) <br/> |Especifica una matriz de elementos de **ClientExtension** .  <br/> |
+|[ClientExtensions](clientextensions.md) <br/> |Especifica una matriz de elementos **ClientExtension** .  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -86,14 +86,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

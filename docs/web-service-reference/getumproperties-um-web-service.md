@@ -1,5 +1,5 @@
 ---
-title: GetUMProperties (servicio web de mensajería unificada)
+title: GetUMProperties (servicio Web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,19 +10,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 19873b72-ec12-4811-ae5f-6b61f2dbf0cc
-description: El elemento GetUMProperties define una solicitud de GetUMProperties operación (servicio web de mensajería unificada).
-ms.openlocfilehash: bfae288c341bc5d3605282cf78393ef7dceed494
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetUMProperties define una solicitud de operación GetUMProperties (servicio Web de mensajería unificada).
+ms.openlocfilehash: 2cab45ec6b1058f459b65992cf7345f1be171ce7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835680"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459135"
 ---
-# <a name="getumproperties-um-web-service"></a>GetUMProperties (servicio web de mensajería unificada)
+# <a name="getumproperties-um-web-service"></a>GetUMProperties (servicio Web de mensajería unificada)
 
-El elemento **GetUMProperties** define una solicitud de [operación GetUMProperties (servicio web de mensajería unificada)](getumproperties-operation-um-web-service.md) . 
+El elemento **GetUMProperties** define una solicitud de [operación GetUMProperties (servicio Web de mensajería unificada)](getumproperties-operation-um-web-service.md) . 
   
-[GetUMProperties (servicio web de mensajería unificada)](getumproperties-um-web-service.md)
+[GetUMProperties (servicio Web de mensajería unificada)](getumproperties-um-web-service.md)
   
 ```xml
 <GetUMProperties />
@@ -31,36 +31,36 @@ El elemento **GetUMProperties** define una solicitud de [operación GetUMPropert
  **complexType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Operación GetUMProperties (servicio web de mensajería unificada)](getumproperties-operation-um-web-service.md)
+[Operación GetUMProperties (servicio Web de mensajería unificada)](getumproperties-operation-um-web-service.md)
 

@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 2dca0192-b91b-4154-aa09-84da74e875e9
 description: El elemento CalendarEventDetails proporciona información adicional acerca de un evento de calendario.
-ms.openlocfilehash: 8df4f3ed4f66c7dcba00e1f0c5b0c383075da0a0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 3e1dbba00bce4a1fdc53f3330527764c516890ab
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763697"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459072"
 ---
 # <a name="calendareventdetails"></a>CalendarEventDetails
 
@@ -53,49 +53,49 @@ El elemento **CalendarEventDetails** proporciona información adicional acerca d
  **CalendarEventDetails**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ID](id.md) <br/> |Representa el identificador de entrada del elemento de calendario.  <br/> |
-|[Asunto (CalendarEventDetails)](subject-calendareventdetails.md) <br/> |Representa al asunto del elemento de calendario.  <br/> |
-|[Ubicación (CalendarEventDetails)](location-calendareventdetails.md) <br/> |Representa el campo de ubicación del elemento de calendario.  <br/> |
+|[Id.](id.md) <br/> |Representa el identificador de entrada del elemento de calendario.  <br/> |
+|[Asunto (CalendarEventDetails)](subject-calendareventdetails.md) <br/> |Representa el asunto del elemento de calendario.  <br/> |
+|[Ubicación (CalendarEventDetails)](location-calendareventdetails.md) <br/> |Representa el campo Ubicación del elemento de calendario.  <br/> |
 |[IsMeeting (CalendarEventDetails)](ismeeting-calendareventdetails.md) <br/> |Indica si el evento de calendario es una reunión o una cita.  <br/> |
-|[IsRecurring (CalendarEventDetails)](isrecurring-calendareventdetails.md) <br/> |Indica si el evento de calendario es una instancia de un elemento periódico del calendario o un elemento de calendario único.  <br/> |
-|[IsException](isexception.md) <br/> |Indica si se cambia una instancia de un elemento periódico del calendario desde el maestro.  <br/> |
+|[IsRecurring (CalendarEventDetails)](isrecurring-calendareventdetails.md) <br/> |Indica si el evento de calendario es una instancia de un elemento de calendario periódico o un solo elemento de calendario.  <br/> |
+|[IsException](isexception.md) <br/> |Indica si se cambia la instancia de un elemento de calendario periódico desde el patrón.  <br/> |
 |[IsReminderSet](isreminderset.md) <br/> |Indica si se ha establecido un aviso para el evento de calendario.  <br/> |
 |[IsPrivate](isprivate.md) <br/> |Indica si el elemento de calendario es privado.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarEvent](calendarevent.md) <br/> |Representa una repetición del elemento de calendario único.  <br/> La siguiente es la expresión de XPath 2.0 para este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]` <br/> |
+|[CalendarEvent](calendarevent.md) <br/> |Representa una ocurrencia única del elemento de calendario.  <br/> La siguiente es la expresión XPath 2,0 a este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Todos los elementos secundarios se enumeran en la secuencia en la que se producen. 
+Todos los elementos secundarios se enumeran en la secuencia en que se producen. 
   
-Si el elemento [IsPrivate](isprivate.md) es **true**, todos los demás elementos en el elemento [CalendarEventDetails](calendareventdetails.md) no se devuelven en la respuesta. 
+Si el elemento [IsPrivate](isprivate.md) es **true**, el resto de los elementos del elemento [CalendarEventDetails](calendareventdetails.md) no se devuelven en la respuesta. 
   
-La operación GetUserAvailability no devuelve información detallada autor de la llamada a menos que el autor de la llamada tiene acceso de lectura en el calendario del usuario de destino. Puede establecer permisos de acceso mediante el Shell de administración de Exchange.
+La operación GetUserAvailability no devuelve información detallada del autor de la llamada a menos que el autor de la llamada tenga acceso de lectura en el calendario del usuario de destino. Puede establecer permisos de acceso mediante el shell de administración de Exchange.
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -106,5 +106,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

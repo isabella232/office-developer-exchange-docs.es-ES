@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c49816b1-dbb5-4716-86c7-30790e86f30e
-description: El elemento UpdateItemInRecoverableItems especifica una solicitud para actualizar un elemento de elementos recuperables.
-ms.openlocfilehash: 768de4bb8abe4780ab520405bae3149b8f17637c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UpdateItemInRecoverableItems especifica una solicitud para actualizar un elemento en elementos recuperables.
+ms.openlocfilehash: f3dae55097c613b84a80795185baad559e312b90
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840837"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459787"
 ---
 # <a name="updateiteminrecoverableitems"></a>UpdateItemInRecoverableItems
 
-El elemento **UpdateItemInRecoverableItems** especifica una solicitud para actualizar un elemento de elementos recuperables. 
+El elemento **UpdateItemInRecoverableItems** especifica una solicitud para actualizar un elemento en elementos recuperables. 
   
 ```XML
 <UpdateItemInRecoverableItems>
@@ -31,15 +31,15 @@ El elemento **UpdateItemInRecoverableItems** especifica una solicitud para actua
  **UpdateItemInRecoverableItemsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[ItemId](itemid.md) | [actualizaciones (elemento)](updates-item.md) | [datos adjuntos](attachments-ex15websvcsotherref.md) | [MakeItemImmutable](makeitemimmutable.md)
+[Itemid](itemid.md)  |  [Actualizaciones (elemento)](updates-item.md)  |  [Datos adjuntos](attachments-ex15websvcsotherref.md)  |  [MakeItemImmutable](makeitemimmutable.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

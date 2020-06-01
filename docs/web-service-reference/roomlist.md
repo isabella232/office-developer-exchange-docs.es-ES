@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cb02bdf0-df9f-4e31-b7dd-cd9f2f2cc2b2
-description: El elemento RoomList representa una dirección de correo electrónico que identifica una lista de las salas de reuniones.
-ms.openlocfilehash: 7de2c67f8001387abf463186933f0b81ee45a58a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RoomList representa una dirección de correo electrónico que identifica una lista de salas de reuniones.
+ms.openlocfilehash: 0444475cb9fffbb89ba2861096baee0c7e645995
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837262"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460522"
 ---
 # <a name="roomlist"></a>RoomList
 
-El elemento **RoomList** representa una dirección de correo electrónico que identifica una lista de las salas de reuniones. 
+El elemento **RoomList** representa una dirección de correo electrónico que identifica una lista de salas de reuniones. 
   
 [GetRooms](getrooms.md)
   
@@ -40,27 +40,27 @@ El elemento **RoomList** representa una dirección de correo electrónico que id
  **EmailAddressType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Nombre (EmailAddressType)](name-emailaddresstype.md) <br/> |Define el nombre para mostrar de la lista de salas. Este elemento es opcional.  <br/> |
-|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Define la dirección de Protocolo Simple de transferencia de correo (SMTP) de una lista de salas. Este elemento es opcional.  <br/> |
-|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Define la ruta que se usa para el buzón de correo. El valor predeterminado es SMTP. Este elemento es opcional.  <br/> |
-|[MailboxType](mailboxtype.md) <br/> |Define el tipo de buzón de correo de un usuario de buzón de correo. Este elemento es opcional.  <br/> |
+|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Define la dirección del Protocolo simple de transferencia de correo (SMTP) de una lista de salas. Este elemento es opcional.  <br/> |
+|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Define la ruta que se usa para el buzón. El valor predeterminado es SMTP. Este elemento es opcional.  <br/> |
+|[MailboxType](mailboxtype.md) <br/> |Define el tipo de buzón de un usuario de buzón. Este elemento es opcional.  <br/> |
 |[ItemId](itemid.md) <br/> |Define el identificador de elemento de un contacto o una lista de distribución privada para los destinatarios de la carpeta de contactos de un usuario. Este elemento es opcional.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetRooms](getrooms.md) <br/> |El elemento raíz en una solicitud para obtener una lista de salas dentro de una lista de salas determinado.  <br/> |
+|[GetRooms](getrooms.md) <br/> |El elemento raíz de una solicitud para obtener una lista de salas dentro de una lista de salas determinada.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -74,10 +74,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -86,5 +86,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación GetRooms](getrooms-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

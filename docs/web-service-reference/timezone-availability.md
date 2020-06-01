@@ -1,5 +1,5 @@
 ---
-title: TimeZone (disponibilidad)
+title: Zona horaria (disponibilidad)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d662ffae-1f93-4c08-85a4-c69de2f7c681
-description: El elemento TimeZone contiene elementos que identifican la información de zona horaria. Este elemento también contiene información sobre la transición entre la hora estándar y el horario de verano.
-ms.openlocfilehash: dc2466e8039819edc82294ff05f1746ada64cb43
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento TimeZone contiene elementos que identifican la información de la zona horaria. Este elemento también contiene información sobre la transición entre el horario estándar y el horario de verano.
+ms.openlocfilehash: ba4b0a4805dba54450e01e89c5e9ef746404b716
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840693"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460277"
 ---
-# <a name="timezone-availability"></a>TimeZone (disponibilidad)
+# <a name="timezone-availability"></a>Zona horaria (disponibilidad)
 
-El elemento **TimeZone** contiene elementos que identifican la información de zona horaria. Este elemento también contiene información sobre la transición entre la hora estándar y el horario de verano. 
+El elemento **TimeZone** contiene elementos que identifican la información de la zona horaria. Este elemento también contiene información sobre la transición entre el horario estándar y el horario de verano. 
   
 ```xml
 <TimeZone>
@@ -34,37 +34,37 @@ El elemento **TimeZone** contiene elementos que identifican la información de z
  **SerializableTimeZone**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Bias (UTC)](bias-utc.md) <br/> |Representa el desplazamiento general de la hora Universal coordinada (UTC). Este valor está en minutos.  <br/> |
-|[StandardTime](standardtime.md) <br/> |Representa un desplazamiento de la hora con respecto a UTC representada por el elemento [Bias (UTC)](bias-utc.md) . Este elemento también contiene información sobre la transición a la hora estándar de horario de verano en regiones donde se observa el horario de verano.  <br/> |
-|[DaylightTime](daylighttime.md) <br/> |Representa un desplazamiento de la hora con respecto a UTC representada por el elemento [Bias (UTC)](bias-utc.md) en las regiones donde se observa el horario de verano. Este elemento también contiene información acerca de cuándo se produce la transición al horario de verano de tiempo estándar.  <br/> |
+|[Bias (UTC)](bias-utc.md) <br/> |Representa el desplazamiento general desde la hora universal coordinada (UTC). Este valor está en minutos.  <br/> |
+|[Standardtime Element](standardtime.md) <br/> |Representa un desplazamiento del tiempo relativo a la hora UTC representado por el elemento [Bias (UTC)](bias-utc.md) . Este elemento también contiene información sobre la transición a la hora estándar del horario de verano en regiones en las que se observa el horario de verano.  <br/> |
+|[DaylightTime](daylighttime.md) <br/> |Representa un desplazamiento del tiempo relativo a la hora UTC representado por el elemento [Bias (UTC)](bias-utc.md) en las regiones en las que se observa el horario de verano. Este elemento también contiene información sobre cuándo se produce la transición al horario de verano desde la hora estándar.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |Contiene los argumentos utilizados para obtener información de disponibilidad del usuario. Esto es un elemento raíz.  <br/> El elemento de la **zona horaria** en el mensaje GetUserAvailabilityRequest representa la zona horaria en la que se especifican los valores de fecha y hora de la solicitud. Los valores de fecha y hora devueltos por el servicio de disponibilidad también están en esta zona horaria.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityRequest` <br/> |
-|[WorkingHours](workinghours-ex15websvcsotherref.md) <br/> |Representa la configuración de zona horaria y horario laboral para el usuario del buzón solicitado.  <br/> El elemento de la **zona horaria** en el mensaje GetUserAvailabilityResponse representa la configuración de zona horaria del usuario de buzón solicitado.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours` <br/> |
+|[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |Contiene los argumentos usados para obtener información de disponibilidad del usuario. Se trata de un elemento raíz.  <br/> El elemento **TimeZone** del mensaje GetUserAvailabilityRequest representa la zona horaria en la que se especifican los valores DATETIME de la solicitud. Los valores de fecha y hora devueltos por el servicio de disponibilidad también están en esta zona horaria.  <br/> A continuación se encuentra la expresión XPath de este elemento:  <br/>  `/GetUserAvailabilityRequest` <br/> |
+|[WorkingHours](workinghours-ex15websvcsotherref.md) <br/> |Representa la configuración de la zona horaria y el horario laboral del usuario del buzón solicitado.  <br/> El elemento **TimeZone** del mensaje GetUserAvailabilityResponse representa la configuración de la zona horaria del usuario del buzón solicitado.  <br/> A continuación se encuentra la expresión XPath de este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Este elemento es necesario en el elemento [GetUserAvailabilityRequest](getuseravailabilityrequest.md) . Este elemento se produce como máximo una vez o al menos cero veces cuando el elemento primario es el elemento [WorkingHours](workinghours-ex15websvcsotherref.md) . 
+Este elemento es obligatorio en el elemento [GetUserAvailabilityRequest](getuseravailabilityrequest.md) . Este elemento se produce al menos una vez o al menos cero veces cuando el elemento primario es el elemento [WorkingHours](workinghours-ex15websvcsotherref.md) . 
   
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestra parte de una solicitud XML que identifica un desplazamiento de la hora UTC de 8 horas en la aplicación cliente.
+En el ejemplo siguiente se muestra parte de una solicitud XML que identifica un desplazamiento respecto a la hora UTC de 8 horas en la aplicación cliente.
   
 ```XML
-<TimeZone xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+<TimeZone xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
   <Bias>480</Bias>
   <StandardTime>
     <Bias>0</Bias>
@@ -87,10 +87,10 @@ En el ejemplo siguiente se muestra parte de una solicitud XML que identifica un 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -98,8 +98,8 @@ En el ejemplo siguiente se muestra parte de una solicitud XML que identifica un 
 
 [Operación GetUserAvailability](getuseravailability-operation.md)
   
-[Bias](bias.md)
+[Sesgo](bias.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

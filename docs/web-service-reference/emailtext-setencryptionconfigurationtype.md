@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: df981e16-c8b2-416f-90dc-9732065a20bf
-description: El elemento EmailText (SetEncryptionConfigurationType) está pensado para uso interno únicamente.
-ms.openlocfilehash: 8d63aa6f640053fec91b9a4627dbef1ade127a43
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EmailText (SetEncryptionConfigurationType) está destinado exclusivamente para uso interno.
+ms.openlocfilehash: 38cf4082a47366a1549df31424cd4cdc189c6ae9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764378"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460186"
 ---
 # <a name="emailtext-setencryptionconfigurationtype"></a>EmailText (SetEncryptionConfigurationType)
 
-El elemento **EmailText (SetEncryptionConfigurationType)** está pensado para uso interno únicamente. 
+El elemento **EmailText (SetEncryptionConfigurationType)** está destinado exclusivamente para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

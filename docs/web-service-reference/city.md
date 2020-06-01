@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7497777e-4e0a-4d1d-9ea7-caf63ec415da
-description: El elemento de ciudad representa el nombre de la ciudad que está asociado con un contacto.
-ms.openlocfilehash: fa298af7cbafc031b6ba1294c8077c3d5c1a3ceb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento City representa el nombre de la ciudad que está asociado a un contacto.
+ms.openlocfilehash: 59d8dd44bbad055afb1ae973ae64313e8ed5cbfb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763745"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460207"
 ---
 # <a name="city"></a>Ciudad
 
-El elemento de **Ciudad** representa el nombre de la ciudad que está asociado con un contacto. 
+El elemento **City** representa el nombre de la ciudad que está asociado a un contacto. 
   
 ```xml
 <City/>
@@ -30,42 +30,42 @@ El elemento de **Ciudad** representa el nombre de la ciudad que está asociado c
  **String**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Entrada (PhysicalAddress)](entry-physicaladdress.md) <br/> |Describe una sola dirección física para un elemento de contacto.  <br/> |
+|[Entrada (PhysicalAddress)](entry-physicaladdress.md) <br/> |Describe una dirección física única para un elemento de contacto.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto es un valor de tipo string que representa el nombre de una ciudad.
+El valor de texto es un valor de tipo String que representa el nombre de una ciudad.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
