@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d5990c1e-c2e3-47ee-92b8-94db749ca12e
-description: El elemento GetFederatedDirectoryGroup está pensado para uso interno únicamente.
-ms.openlocfilehash: 49571eccab1240a887fc770c51075edd4ce64a35
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetFederatedDirectoryGroup está destinado sólo para uso interno.
+ms.openlocfilehash: 16711b4527142964792d2a0e06388ae84885a3e4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764837"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462853"
 ---
 # <a name="getfederateddirectorygroup"></a>GetFederatedDirectoryGroup
 
-El elemento **GetFederatedDirectoryGroup** está pensado para uso interno únicamente. 
+El elemento **GetFederatedDirectoryGroup** está destinado sólo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 89513c26-b751-4619-a300-0ed8f55b0102
-description: El elemento SearchItemKind indica el tipo de elementos que se buscan para una operación de FindMailboxStatisticsByKeyword.
-ms.openlocfilehash: 1c099fc49ec882c1672b265ff0e3aa2c71c5f95b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SearchItemKind indica el tipo de elementos que se buscan en una operación de FindMailboxStatisticsByKeyword.
+ms.openlocfilehash: e0625ac169c3083702494c094da15d38d220fe67
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837298"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464003"
 ---
 # <a name="searchitemkind"></a>SearchItemKind
 
-El elemento **SearchItemKind** indica el tipo de elementos que se buscan para una operación de **FindMailboxStatisticsByKeyword** . 
+El elemento **SearchItemKind** indica el tipo de elementos que se buscan en una operación de **FindMailboxStatisticsByKeyword** . 
   
 ```XML
 <SearchItemKind>Email | Meetings | Tasks | Notes | Docs | Journals | Contacts | Im | Voicemail | Faxes | Posts | Rssfeeds</SearchItemKind>
@@ -26,15 +26,15 @@ El elemento **SearchItemKind** indica el tipo de elementos que se buscan para un
  **SearchItemKindType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,31 +42,31 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **SearchItemKind** es el tipo de elemento que se va a buscar palabras clave. En la lista siguiente contiene los valores de texto que se pueden usar en el elemento **SearchItemKind** . 
+El valor de texto del elemento **SearchItemKind** es el tipo de elemento en el que se buscan palabras clave. La lista siguiente contiene los valores de texto que se pueden usar en el elemento **SearchItemKind** . 
   
-- **Correo electrónico** - indica que los mensajes de correo electrónico se buscan las palabras clave. 
+- **Email** -indica que se buscan palabras clave en los mensajes de correo electrónico. 
     
-- **Las reuniones** , indica que las reuniones se buscan las palabras clave. 
+- **Reuniones** : indica que se buscan palabras clave en las reuniones. 
     
-- **Tareas** - indica que las tareas se buscan las palabras clave. 
+- **Tareas** : indica que se buscan palabras clave en las tareas. 
     
-- **Notas** - indica que se buscarán palabras clave. 
+- **Notas** : indica que se buscan palabras clave en las notas. 
     
-- **Documentos** - indica que se buscan documentos para palabras clave. 
+- **Docs** : indica que se buscan palabras clave en los documentos. 
     
-- **Diarios** - indica que se buscan diarios para palabras clave. 
+- **Diarios** : indica que se buscan palabras clave en los diarios. 
     
-- **Contactos** - indica que los contactos se buscan las palabras clave. 
+- **Contacts** : indica que se buscan palabras clave en los contactos. 
     
-- **Mensajería instantánea** - indica que los mensajes instantáneos se buscan las palabras clave. 
+- **Mi** : indica que se buscan palabras clave en los mensajes instantáneos. 
     
-- **Correo de voz** - indica que los correos de voz se buscan las palabras clave. 
+- Correo **de voz: indica** que se buscan palabras clave en los correos de voz. 
     
-- **Faxes** - indica que los faxes se buscan las palabras clave. 
+- **Faxes** : indica que se buscan palabras clave en los faxes. 
     
-- **Entradas de** - indica que se desea buscar entradas de palabras clave. 
+- **Postes** : indica que se buscan palabras clave en las publicaciones. 
     
-- **Rssfeeds** - indica que se buscan las fuentes RSS para palabras clave. 
+- **RSSFeeds** : indica que se buscan palabras clave en las fuentes RSS. 
     
 ## <a name="remarks"></a>Comentarios
 
@@ -78,9 +78,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

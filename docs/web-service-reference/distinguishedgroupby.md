@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6ff3ac48-02ba-40ec-a71b-c401bb2b127c
-description: El elemento DistinguishedGroupBy proporciona agrupaciones estándares para las consultas de FindItem.
-ms.openlocfilehash: 0635366447675bf28dedf3af4f7d76094ee5e0a4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DistinguishedGroupBy proporciona agrupaciones estándar para las consultas FindItem.
+ms.openlocfilehash: 004613d55419a19f69e960203ae13d8d906b74c8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764245"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463142"
 ---
 # <a name="distinguishedgroupby"></a>DistinguishedGroupBy
 
-El elemento **DistinguishedGroupBy** proporciona agrupaciones estándares para las consultas de FindItem. 
+El elemento **DistinguishedGroupBy** proporciona agrupaciones estándar para las consultas FindItem. 
   
 - [FindItem](finditem.md) 
 - [DistinguishedGroupBy](distinguishedgroupby.md)
@@ -35,41 +35,41 @@ El elemento **DistinguishedGroupBy** proporciona agrupaciones estándares para l
  **DistinguishedGroupByType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[StandardGroupBy](standardgroupby.md) <br/> |Representa el estándar agrupar y agregar mecanismos para una operación FindItem agrupada.  <br/> |
+|[StandardGroupBy](standardgroupby.md) <br/> |Representa los mecanismos estándar de agrupación y agregación para una operación FindItem agrupada.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FindItem](finditem.md) <br/> |Define una solicitud para buscar elementos en un buzón de correo.<br/><br/>La siguiente es la expresión de XPath para este elemento:`/FindItem` <br/> |
+|[FindItem](finditem.md) <br/> |Define una solicitud para buscar elementos en un buzón.<br/><br/>La siguiente es la expresión XPath a este elemento:`/FindItem` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El elemento **DistinguishedGroupBy** puede agregarse a una operación FindItem cuando los resultados deben están respaldados agrupan y cuando uno de los grupos estándares cumple los requisitos de agrupación. Si se especifica el elemento **DistinguishedGroupBy** ni el elemento [GroupBy](groupby.md) , desagrupado FindItem resultados se activará nuevamente. 
+El elemento **DistinguishedGroupBy** se puede Agregar a una operación FindItem cuando los resultados deben ir agrupados y cuando uno de los grupos estándar cumple los requisitos de agrupación. Si no se especifica el elemento **DistinguishedGroupBy** ni el elemento [GroupBy](groupby.md) , los resultados de FindItem se desagruparán de nuevo. 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación FindItem](finditem-operation.md)
-- [Buscar elementos](http://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
+- [Buscar elementos](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

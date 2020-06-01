@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5a84c19e-57cd-448e-af4f-c8005fd5f2a2
-description: El elemento de cumpleaños especifica una matriz de cumpleaños, almacenados como cadenas y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: 2511a2acf0eb2eb24f06e98a1c660d289687bd02
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Birthdays especifica una matriz de cumpleaños, almacenada como cadenas, y los identificadores de sus atribuciones de origen para el rol asociado.
+ms.openlocfilehash: aa85febd84c32ae87e0822ce47fd99f445b6fe9e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763622"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462762"
 ---
 # <a name="birthdays"></a>Cumpleaños
 
-El elemento de **cumpleaños** especifica una matriz de cumpleaños, almacenados como cadenas y los identificadores de sus atribuciones de origen para el rol asociado. 
+El elemento **Birthdays** especifica una matriz de cumpleaños, almacenada como cadenas, y los identificadores de sus atribuciones de origen para el rol asociado. 
   
 ```XML
 <Birthdays>
@@ -28,23 +28,23 @@ El elemento de **cumpleaños** especifica una matriz de cumpleaños, almacenados
  **ArrayOfStringAttributedValuesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[StringAttributedValue](stringattributedvalue.md) <br/> |Especifica una instancia de una matriz de atributos asociados con un elemento de la persona.  <br/> |
+|[StringAttributedValue](stringattributedvalue.md) <br/> |Especifica una instancia de una matriz de atributos asociada a un elemento de rol.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud de **GetPersona** .  <br/> |
+|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud **GetPersona** .  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

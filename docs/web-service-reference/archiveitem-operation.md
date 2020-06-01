@@ -7,51 +7,51 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1af216b3-13ea-498e-b4fc-23513755d731
-description: Busque información sobre la EWS ArchiveItem operación.
-ms.openlocfilehash: 954943acefef8da61e92de5f8857ca023ca4fc9f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Buscar información sobre la operación de EWS de ArchiveItem.
+ms.openlocfilehash: d1e18122e67c36babbc8bf01d305309e2b17b568
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763549"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463436"
 ---
 # <a name="archiveitem-operation"></a>Operación ArchiveItem
 
-Obtenga información acerca de la operación de EWS **ArchiveItem** . 
+Buscar información sobre la operación de EWS de **ArchiveItem** . 
   
-La operación de **ArchiveItem** mueve un elemento en el buzón de archivo del usuario de buzón de correo. 
+La operación **ArchiveItem** mueve un elemento al buzón de archivo del usuario del buzón de correo. 
   
 Esta operación se introdujo en Exchange Server 2013.
   
-## <a name="using-the-archiveitem-operation"></a>Mediante la operación ArchiveItem
+## <a name="using-the-archiveitem-operation"></a>Uso de la operación ArchiveItem
 
-La operación **ArchiveItem** toma dos argumentos en la solicitud que identifican los elementos que desee mover el buzón de archivo y la carpeta de destino para esos elementos. Un buzón de archivo debe estar habilitado en orden para esta operación para que funcione. Para obtener información acerca de cómo habilitar un buzón de archivo, vea [Administrar en archivos locales](http://technet.microsoft.com/en-us/library/jj651146.aspx).
+La operación **ArchiveItem** toma dos argumentos en la solicitud que identifican los elementos que se van a mover al buzón de archivo y la carpeta de destino para esos elementos. Para que esta operación funcione, debe estar habilitado un buzón de archivo. Para obtener información sobre cómo habilitar un buzón de archivo, consulte [Manage in-Place archiving](https://technet.microsoft.com/library/jj651146.aspx).
   
-### <a name="archiveitem-operation-soap-headers"></a>Encabezados SOAP de operación de ArchiveItem
+### <a name="archiveitem-operation-soap-headers"></a>Encabezados SOAP de operación ArchiveItem
 
-La operación de **ArchiveItem** puede utilizar los encabezados SOAP que se enumeran en la siguiente tabla. 
+La operación **ArchiveItem** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
   
-|**Nombre de encabezado**|**Element**|**Descripción**|
+|**Nombre de encabezado**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario que está realizando la suplantación de la aplicación cliente. Este encabezado es aplicable a una solicitud.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural, como se define en RFC 3066, **etiquetas para la identificación de idiomas**, que se usará para tener acceso al buzón. Este encabezado es aplicable a una solicitud.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de la operación. Este encabezado es aplicable a una solicitud.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que ha respondido a la solicitud. Este encabezado es aplicable a una respuesta.  <br/> |
+|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente. Este encabezado se aplica a una solicitud.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural, tal y como se define en RFC 3066, **etiquetas para la identificación de idiomas**que se van a usar para obtener acceso al buzón. Este encabezado se aplica a una solicitud.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Este encabezado se aplica a una solicitud.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado se aplica a una respuesta.  <br/> |
    
-## <a name="archiveitem-operation-request-example-move-an-item-to-the-archive-inbox-folder"></a>Ejemplo de solicitud de operación de ArchiveItem: mover un elemento a la carpeta Bandeja de entrada de archivo
+## <a name="archiveitem-operation-request-example-move-an-item-to-the-archive-inbox-folder"></a>Ejemplo de solicitud de operación ArchiveItem: mover un elemento a la carpeta Bandeja de entrada de archivo
 
-El siguiente ejemplo de una solicitud de operación **ArchiveItem** muestra cómo mover un elemento a la carpeta Bandeja de entrada de archivo. 
+El siguiente ejemplo de una solicitud de operación de **ArchiveItem** muestra cómo mover un elemento a la carpeta Bandeja de entrada de archivo. 
   
 > [!NOTE]
-> Todos los identificadores de artículo y cambiar claves en este artículo se han abreviado para conservar la legibilidad. 
+> Todos los identificadores de elemento y las claves de cambio de este artículo se han reducido para preservar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013"/>
    </soap:Header>
@@ -68,17 +68,17 @@ El siguiente ejemplo de una solicitud de operación **ArchiveItem** muestra cóm
 </soap:Envelope>
 ```
 
-La solicitud SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de la solicitud contiene los siguientes elementos:
   
 - [ArchiveItem](archiveitem.md)    
 - [ArchiveSourceFolderId](archivesourcefolderid.md)    
 - [DistinguishedFolderId](distinguishedfolderid.md)    
-- [ItemId](itemids.md)   
+- [ItemIds](itemids.md)   
 - [ItemId](itemid.md)
     
-## <a name="successful-archiveitem-operation-response"></a>Respuesta es correcta de operación ArchiveItem
+## <a name="successful-archiveitem-operation-response"></a>Respuesta de operación ArchiveItem correcta
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación de **ArchiveItem** para mover un elemento a un buzón de archivo. 
+En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación **ArchiveItem** para mover un elemento a un buzón de archivo. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -89,15 +89,15 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
                            MajorBuildNumber="526" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:ArchiveItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                             xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:ArchiveItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                             xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:ArchiveItemResponseMessage ResponseClass="Success">
                <m:ResponseCode>NoError</m:ResponseCode>
@@ -109,7 +109,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
 </s:Envelope>
 ```
 
-La respuesta SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de respuesta contiene los siguientes elementos:
   
 - [ArchiveItemResponse](archiveitemresponse.md)    
 - [ResponseMessages](responsemessages.md)   
@@ -117,9 +117,9 @@ La respuesta SOAP body contiene los siguientes elementos:
 - [ResponseCode](responsecode.md)    
 - [Items](items.md)
     
-## <a name="archiveitem-operation-error-response"></a>Respuesta de error de la operación de ArchiveItem
+## <a name="archiveitem-operation-error-response"></a>Respuesta de error de operación de ArchiveItem
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **ArchiveItem** . Esta es una respuesta a una solicitud válida para archivar un elemento cuando un buzón de archivo no está habilitado para un usuario. 
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **ArchiveItem** . Se trata de una respuesta a una solicitud válida para archivar un elemento cuando un buzón de archivo no está habilitado para un usuario. 
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -130,15 +130,15 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
                            MajorBuildNumber="556" 
                            MinorBuildNumber="8" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:ArchiveItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                             xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:ArchiveItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                             xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:ArchiveItemResponseMessage ResponseClass="Error">
                <m:MessageText>Archive mailbox is not enabled for this user.</m:MessageText>
@@ -152,7 +152,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
 </s:Envelope>
 ```
 
-La respuesta de error SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de respuesta de error contiene los siguientes elementos:
   
 - [ArchiveItemResponse](archiveitemresponse.md)    
 - [ResponseMessages](responsemessages.md)    
@@ -162,11 +162,11 @@ La respuesta de error SOAP body contiene los siguientes elementos:
 - [DescriptiveLinkKey](descriptivelinkkey.md)    
 - [Items](items.md)
     
-Para códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).
+Para obtener los códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).
   
 ## <a name="see-also"></a>Vea también
 
 - [Operaciones de EWS en Exchange](ews-operations-in-exchange.md) 
-- [Archivado en EWS en Exchange](http://msdn.microsoft.com/library/78ae179b-ae4f-4f64-911a-e0c70e0fa314%28Office.15%29.aspx)
+- [Archivado en EWS en Exchange](https://msdn.microsoft.com/library/78ae179b-ae4f-4f64-911a-e0c70e0fa314%28Office.15%29.aspx)
     
 

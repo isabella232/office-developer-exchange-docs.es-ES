@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 07dedaa8-17aa-4553-b8e2-e3f82c40ae1e
-description: El elemento MarkAllItemsAsReadResponse especifica la respuesta a una solicitud de MarkAllItemsAsRead.
-ms.openlocfilehash: fc0cbc9d6e0082b92620a18c8dc707a9eaecf4c1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MarkAllItemsAsReadResponse especifica la respuesta a una solicitud MarkAllItemsAsRead.
+ms.openlocfilehash: 011aa34886b4f50542c68661d9b61be3a3ce3a1f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836345"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463891"
 ---
 # <a name="markallitemsasreadresponse"></a>MarkAllItemsAsReadResponse
 
-El elemento **MarkAllItemsAsReadResponse** especifica la respuesta a una solicitud de **MarkAllItemsAsRead** . 
+El elemento **MarkAllItemsAsReadResponse** especifica la respuesta a una solicitud **MarkAllItemsAsRead** . 
   
 ```XML
 <MarkAllItemsAsReadResponse>
@@ -28,11 +28,11 @@ El elemento **MarkAllItemsAsReadResponse** especifica la respuesta a una solicit
  **MarkAllItemsAsReadResponseType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

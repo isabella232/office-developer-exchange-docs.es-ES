@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7cd63ac2-3441-4ed4-915b-6f90af4b28fc
-description: El elemento de excepciones identifica las excepciones que representan todas las condiciones de excepción de regla disponibles para una regla de bandeja de entrada.
-ms.openlocfilehash: b875b4dc0029bb9e0bc2bb50c41569fb72ef9268
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Exceptions identifica las excepciones que representan todas las condiciones de excepción de regla disponibles para una regla de bandeja de entrada.
+ms.openlocfilehash: 1afc2980391ee588f9b9b813b87c2c699de3a6df
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764475"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463359"
 ---
 # <a name="exceptions"></a>Excepciones
 
-El elemento de **excepciones** identifica las excepciones que representan todas las condiciones de excepción de regla disponibles para una regla de bandeja de entrada. 
+El elemento **Exceptions** identifica las excepciones que representan todas las condiciones de excepción de regla disponibles para una regla de bandeja de entrada. 
   
 ```XML
 <Conditions>
@@ -65,56 +65,56 @@ El elemento de **excepciones** identifica las excepciones que representan todas 
  **RulePredicatesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Categories](categories-ex15websvcsotherref.md) <br/> |Contiene las categorías que se deben aplicar a un mensaje entrante en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[ContainsBodyStrings](containsbodystrings.md) <br/> |Indica las cadenas que deben aparecer en el cuerpo de los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[ContainsHeaderStrings](containsheaderstrings.md) <br/> |Indicaqtes las cadenas que deben aparecer en los encabezados de los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[ContainsRecipientStrings](containsrecipientstrings.md) <br/> |Indica las cadenas que deben aparecer en la **ToRecipients** o **CcRecipients** propiedades de los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[ContainsSenderStrings](containssenderstrings.md) <br/> |Indica las cadenas que deben aparecer en la propiedad **From** de los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[ContainsSubjectOrBodyStrings](containssubjectorbodystrings.md) <br/> |Indica las cadenas que deben aparecer en el cuerpo o el asunto de los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[ContainsSubjectStrings](containssubjectstrings.md) <br/> |Indica las cadenas que deben aparecer en el asunto de los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[FlaggedForAction](flaggedforaction.md) <br/> |Especifica la marca para el valor de la acción que debe aparecer en los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[FromAddresses](fromaddresses.md) <br/> |Indica las direcciones de correo electrónico desde la que se deben enviar los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[FromConnectedAccounts](fromconnectedaccounts.md) <br/> |Representa los nombres de cuenta de correo electrónico desde la que los mensajes entrantes tienen que agregadas en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[HasAttachments](hasattachments.md) <br/> |Indica si los mensajes entrantes tienen que tener los datos adjuntos en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[Importancia](importance.md) <br/> |Especifica la importancia que se mostrará en los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[IsApprovalRequest](isapprovalrequest.md) <br/> |Indica si los mensajes entrantes deben ser solicitudes de aprobación en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[IsAutomaticForward](isautomaticforward.md) <br/> |Indica si los mensajes entrantes deben ser reenvíos automáticos en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[IsAutomaticReply](isautomaticreply.md) <br/> |Indica si los mensajes entrantes deben ser las respuestas automáticas en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[IsEncrypted](isencrypted.md) <br/> |Indica si los mensajes entrantes deben ser S/MIME cifrado en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[IsMeetingRequest](ismeetingrequest.md) <br/> |Indica si los mensajes entrantes deben ser las convocatorias de reunión en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[IsMeetingResponse](ismeetingresponse.md) <br/> |Indica si los mensajes entrantes deben ser respuestas de reunión en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[IsNDR](isndr.md) <br/> |Indica si los mensajes entrantes deben ser informes de no entrega (NDR) en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[IsPermissionControlled](ispermissioncontrolled.md) <br/> |Indica si los mensajes entrantes deben ser permiso controlado (protegido con RMS) en orden para la condición o la excepción que se debe aplicar  <br/> |
-|[IsReadReceipt](isreadreceipt.md) <br/> |Indica si los mensajes entrantes deben ser confirmaciones de lectura en el orden de la condición o excepción que se debe aplicar.  <br/> |
-|[IsSigned](issigned.md) <br/> |Indica si los mensajes entrantes deben ser QUE S/MIME firmados para la condición o la excepción que se debe aplicar.  <br/> |
-|[IsVoicemail](isvoicemail.md) <br/> |Indica si los mensajes entrantes deben ser los mensajes de correo de voz en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[ItemClasses](itemclasses.md) <br/> |Representa las clases de elemento deben estar marcados en los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[MessageClassifications](messageclassifications.md) <br/> |Representa las clasificaciones de mensajes deben estar marcados en los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[NotSentToMe](notsenttome.md) <br/> |Indica si el propietario del buzón no debe estar en la propiedad **ToRecipients** de los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[SentCcMe](sentccme.md) <br/> |Indica si el propietario del buzón tiene que estar en la propiedad **CcRecipients** de los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[SentOnlyToMe](sentonlytome.md) <br/> |Indica si el propietario del buzón tiene que ser el único existente en la propiedad **ToRecipients** de los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[SentToAddresses](senttoaddresses.md) <br/> |Indica las direcciones de correo electrónico que se han enviado en orden para la condición o la excepción que se debe aplicar a los mensajes entrantes.  <br/> |
-|[SentToMe](senttome.md) <br/> |Indica si el propietario del buzón tiene que estar en la propiedad **ToRecipients** de los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[SentToOrCcMe](senttoorccme.md) <br/> |Indica si el propietario del buzón tiene que estar en un **ToRecipients** o **CcRecipients** propiedad de los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[Sensibilidad](sensitivity.md) <br/> |Indica la confidencialidad debe estar marcados en los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[WithinDateRange](withindaterange.md) <br/> |Especifica el intervalo de fechas dentro del cual los mensajes entrantes tienen que se han recibido en orden para la condición o la excepción que se debe aplicar.  <br/> |
-|[WithinSizeRange](withinsizerange.md) <br/> |Especifica los tamaños máximos y mínimos que deben ser los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.  <br/> |
+|[Categories](categories-ex15websvcsotherref.md) <br/> |Contiene las categorías que deben aplicarse a un mensaje entrante para que se aplique la condición o excepción.  <br/> |
+|[ContainsBodyStrings](containsbodystrings.md) <br/> |Indica las cadenas que deben aparecer en el cuerpo de los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[ContainsHeaderStrings](containsheaderstrings.md) <br/> |Indicaqtes las cadenas que deben aparecer en los encabezados de los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[ContainsRecipientStrings](containsrecipientstrings.md) <br/> |Indica las cadenas que deben aparecer en las propiedades **ToRecipients** o **CcRecipients** de los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[ContainsSenderStrings](containssenderstrings.md) <br/> |Indica las cadenas que deben aparecer en la propiedad **from** de los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[ContainsSubjectOrBodyStrings](containssubjectorbodystrings.md) <br/> |Indica las cadenas que deben aparecer en el cuerpo o el asunto de los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[ContainsSubjectStrings](containssubjectstrings.md) <br/> |Indica las cadenas que deben aparecer en el asunto de los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[FlaggedForAction](flaggedforaction.md) <br/> |Especifica la marca para el valor de la acción que debe aparecer en los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[FromAddresses](fromaddresses.md) <br/> |Indica las direcciones de correo electrónico desde las que se deben enviar los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[FromConnectedAccounts](fromconnectedaccounts.md) <br/> |Representa los nombres de cuenta de correo electrónico desde los que se deben agregar los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[HasAttachments](hasattachments.md) <br/> |Indica si los mensajes entrantes deben tener datos adjuntos para que se aplique la condición o excepción.  <br/> |
+|[Importance](importance.md) <br/> |Especifica la importancia que se marca en los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[IsApprovalRequest](isapprovalrequest.md) <br/> |Indica si los mensajes entrantes deben ser solicitudes de aprobación para que se aplique la condición o excepción.  <br/> |
+|[IsAutomaticForward](isautomaticforward.md) <br/> |Indica si los mensajes entrantes deben ser reenviados automáticamente para que se aplique la condición o excepción.  <br/> |
+|[IsAutomaticReply](isautomaticreply.md) <br/> |Indica si los mensajes entrantes deben ser respuestas automáticas para que se aplique la condición o excepción.  <br/> |
+|[IsEncrypted](isencrypted.md) <br/> |Indica si los mensajes entrantes deben ser cifrados con S/MIME para que se aplique la condición o excepción.  <br/> |
+|[IsMeetingRequest](ismeetingrequest.md) <br/> |Indica si los mensajes entrantes deben ser convocatorias de reunión para que se aplique la condición o excepción.  <br/> |
+|[IsMeetingResponse](ismeetingresponse.md) <br/> |Indica si los mensajes entrantes deben ser respuestas a la reunión para que se aplique la condición o excepción.  <br/> |
+|[IsNDR](isndr.md) <br/> |Indica si los mensajes entrantes deben ser informes de no entrega (NDR) para que se aplique la condición o excepción.  <br/> |
+|[IsPermissionControlled](ispermissioncontrolled.md) <br/> |Indica si los mensajes entrantes deben ser controlados por permisos (protegido por RMS) para que se aplique la condición o excepción  <br/> |
+|[IsReadReceipt](isreadreceipt.md) <br/> |Indica si los mensajes entrantes deben ser confirmaciones de lectura para que se aplique la condición o excepción.  <br/> |
+|[IsSigned](issigned.md) <br/> |Indica si los mensajes entrantes deben ser firmados con S/MIME para que se aplique la condición o excepción.  <br/> |
+|[IsVoicemail](isvoicemail.md) <br/> |Indica si los mensajes entrantes deben ser mensajes de correo de voz en orden para que se aplique la condición o excepción.  <br/> |
+|[ItemClasses](itemclasses.md) <br/> |Representa las clases de elementos que se deben estampar en los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[MessageClassifications](messageclassifications.md) <br/> |Representa las clasificaciones de mensajes que se deben marcar en los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[NotSentToMe](notsenttome.md) <br/> |Indica si el propietario del buzón no debe estar en la propiedad **ToRecipients** de los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[SentCcMe](sentccme.md) <br/> |Indica si el propietario del buzón tiene que estar en la propiedad **CcRecipients** de los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[SentOnlyToMe](sentonlytome.md) <br/> |Indica si el propietario del buzón tiene que ser el único de la propiedad **ToRecipients** de los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[SentToAddresses](senttoaddresses.md) <br/> |Indica las direcciones de correo electrónico a las que se deben enviar los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[SentToMe](senttome.md) <br/> |Indica si el propietario del buzón tiene que estar en la propiedad **ToRecipients** de los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[SentToOrCcMe](senttoorccme.md) <br/> |Indica si el propietario del buzón tiene que estar en la propiedad **ToRecipients** o **CcRecipients** de los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[Sensitivity](sensitivity.md) <br/> |Indica la sensibilidad que se debe estampar en los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[WithinDateRange](withindaterange.md) <br/> |Especifica el intervalo de fechas en el que se deben recibir los mensajes entrantes para que se aplique la condición o excepción.  <br/> |
+|[WithinSizeRange](withinsizerange.md) <br/> |Especifica los tamaños máximos y mínimos que los mensajes entrantes deben tener en orden para que se aplique la condición o excepción.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Regla (RuleType)](rule-ruletype.md) <br/> |Contiene una sola regla y representa una regla en el buzón del usuario.  <br/> |
+|[Regla (RuleType)](rule-ruletype.md) <br/> |Contiene una sola regla y representa una regla en el buzón de un usuario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -122,7 +122,7 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-Los predicados de regla se utilizan como condiciones de regla o las excepciones.
+Los predicados de regla se usan como excepciones o condiciones de regla.
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -130,9 +130,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
@@ -142,5 +142,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Condiciones](conditions.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

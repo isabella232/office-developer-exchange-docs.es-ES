@@ -1,5 +1,5 @@
 ---
-title: ID de contacto
+title: Contacto
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,14 +8,14 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 86f66275-1e39-48ed-bd89-ac3bffc465a7
 description: El elemento ContactId identifica de forma única un contacto.
-ms.openlocfilehash: 4fd3693ed89194c85e5f1770f1db3903d835f43e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 17e8012283078d5d6e2cd1d2e88eef37b008be42
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763798"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463184"
 ---
-# <a name="contactid"></a>ID de contacto
+# <a name="contactid"></a>Contacto
 
 El elemento **ContactId** identifica de forma única un contacto. 
   
@@ -26,22 +26,22 @@ El elemento **ContactId** identifica de forma única un contacto.
  **ItemIdType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|Id  <br/> |El valor de texto del atributo **Id** es el identificador del elemento de contacto.  <br/> |
-|ChangeKey  <br/> |El valor de texto del atributo **ChangeKey** es la clave de cambio del elemento de contacto.  <br/> |
+|Id  <br/> |El valor de texto del atributo **ID** es el identificador del elemento de contacto.  <br/> |
+|ChangeKey  <br/> |El valor de texto del atributo **changekey** es la clave de cambio del elemento de contacto.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[AddImContactToGroup](addimcontacttogroup.md) | [RemoveContactFromImList](removecontactfromimlist.md) | [RemoveImContactFromGroup](removeimcontactfromgroup.md)
+[AddImContactToGroup](addimcontacttogroup.md)  |  [RemoveContactFromImList](removecontactfromimlist.md)  |  [RemoveImContactFromGroup](removeimcontactfromgroup.md)
   
 ## <a name="remarks"></a>Comentarios
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

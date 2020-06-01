@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f9bd9ac1-7db3-44ea-9117-18488dddde15
-description: El elemento AssistantPhoneNumbers especifica una matriz de números de teléfono del Ayudante y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: 747835102af28d94d60b763fdbc5b2ea0947d47e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AssistantPhoneNumbers especifica una matriz de números de teléfono de asistentes y los identificadores de sus atribuciones de origen para el rol asociado.
+ms.openlocfilehash: a72c8d646750b5d7cf9ebca13a51f4df84bf7bdb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763563"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464486"
 ---
 # <a name="assistantphonenumbers"></a>AssistantPhoneNumbers
 
-El elemento **AssistantPhoneNumbers** especifica una matriz de números de teléfono del Ayudante y los identificadores de sus atribuciones de origen para el rol asociado. 
+El elemento **AssistantPhoneNumbers** especifica una matriz de números de teléfono de asistentes y los identificadores de sus atribuciones de origen para el rol asociado. 
   
 ```XML
 <AssistantPhoneNumbers>
@@ -28,23 +28,23 @@ El elemento **AssistantPhoneNumbers** especifica una matriz de números de telé
  **ArrayOfPhoneNumberAttributedValuesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[PhoneNumberAttributedValue](phonenumberattributedvalue.md) <br/> |Especifica una instancia de una matriz de números de teléfono y sus atribuciones asociados.  <br/> |
+|[PhoneNumberAttributedValue](phonenumberattributedvalue.md) <br/> |Especifica una instancia de una matriz de números de teléfono y sus atribuciones asociadas.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud de **GetPersona** .  <br/> |
+|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud **GetPersona** .  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -56,12 +56,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

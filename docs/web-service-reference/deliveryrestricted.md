@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 05989915-121c-4f26-93cc-af8d454ab442
-description: El elemento DeliveryRestricted indica si las restricciones de entrega impedirá que el mensaje del remitente llegar al destinatario.
-ms.openlocfilehash: ba1c6e00b93c9e442a427fe98a5e15bf5fe1effd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DeliveryRestricted indica si las restricciones de entrega impedirán que el mensaje del remitente llegue al destinatario.
+ms.openlocfilehash: 58fc85873326179d7745db4ba7d4854a76ced6a7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764124"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462692"
 ---
 # <a name="deliveryrestricted"></a>DeliveryRestricted
 
-El elemento **DeliveryRestricted** indica si las restricciones de entrega impedirá que el mensaje del remitente llegar al destinatario. 
+El elemento **DeliveryRestricted** indica si las restricciones de entrega impedirán que el mensaje del remitente llegue al destinatario. 
   
 ```XML
 <DeliveryRestricted>true | false</DeliveryRestricted>
@@ -30,25 +30,25 @@ El elemento **DeliveryRestricted** indica si las restricciones de entrega impedi
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Sugerencias de correo electrónico](mailtips.md) <br/> |Representa los valores de distintos tipos de sugerencias de correo.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto de este elemento es **true** si las restricciones de entrega impedirá que el mensaje del remitente llegar al destinatario. El valor es **false** si las restricciones de entrega no se impide que el mensaje del remitente de llegar al destinatario. 
+El valor de texto de este elemento es **true** si las restricciones de entrega impedirán que el mensaje del remitente llegue al destinatario. El valor es **false** si las restricciones de entrega no impedirán que el mensaje del remitente llegue al destinatario. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -58,12 +58,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

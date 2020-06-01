@@ -11,27 +11,27 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8265dd06-1752-4470-8074-5f0e3e970f52
-description: La operación GetItem se usa para obtener las tareas desde el almacén de Exchange.
-ms.openlocfilehash: 412710f32ed8702e1a28a596833c3a7e47e3ed76
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación GetItem se usa para obtener tareas del almacén de Exchange.
+ms.openlocfilehash: 17a23d4c2a35761e831610f3514c980a5a67e12b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764898"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463338"
 ---
 # <a name="getitem-operation-task"></a>Operación GetItem (tarea)
 
-La operación GetItem se usa para obtener las tareas desde el almacén de Exchange.
+La operación GetItem se usa para obtener tareas del almacén de Exchange.
   
 ## <a name="remarks"></a>Comentarios
 
-El formato de la solicitud de GetItem para las tareas es el mismo que GetItem para cualquier otro tipo de elemento. La única diferencia es que en el que se pueden solicitar propiedades adicionales dentro de la forma de respuesta. Esas propiedades adicionales deben ser propiedades relacionadas con la tarea o las propiedades extendidas.
+El formato de la solicitud GetItem para tareas es el mismo que GetItem para cualquier otro tipo de elemento. La única diferencia es que se pueden solicitar propiedades adicionales dentro de la forma de respuesta. Estas propiedades adicionales deben ser propiedades relacionadas con tareas o propiedades extendidas.
   
-## <a name="task-getitem-request-example"></a>Ejemplo de solicitud de tarea GetItem
+## <a name="task-getitem-request-example"></a>Ejemplo de solicitud GetItem de tarea
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud de GetItem muestra cómo obtener un elemento de tarea.
+El siguiente ejemplo de una solicitud GetItem muestra cómo obtener un elemento de tarea.
   
 ### <a name="code"></a>Código
 
@@ -40,10 +40,10 @@ El siguiente ejemplo de una solicitud de GetItem muestra cómo obtener un elemen
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <ItemShape>
         <t:BaseShape>AllProperties</t:BaseShape>
       </ItemShape>
@@ -58,11 +58,11 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 ### <a name="comments"></a>Comentarios
 
 > [!NOTE]
-> El identificador de elemento y la clave de cambio se han abreviado para conservar la legibilidad. 
+> El identificador de elemento y la clave de cambio se han abreviado para preservar la legibilidad. 
   
 ### <a name="request-elements"></a>Elementos de solicitud
 
-En la solicitud se usan los siguientes elementos:
+Los siguientes elementos se usan en la solicitud:
   
 - [GetItem](getitem.md)
     
@@ -70,15 +70,15 @@ En la solicitud se usan los siguientes elementos:
     
 - [BaseShape](baseshape.md)
     
-- [ItemId](itemids.md)
+- [ItemIds](itemids.md)
     
 - [ItemId](itemid.md)
     
-## <a name="task-getitem-response-example"></a>Ejemplo de respuesta de tarea GetItem
+## <a name="task-getitem-response-example"></a>Ejemplo de respuesta GetItem de tarea
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta a una solicitud de GetItem correcta.
+En el ejemplo siguiente se muestra una respuesta correcta a una solicitud GetItem.
   
 ### <a name="code"></a>Código
 
@@ -89,12 +89,12 @@ En el ejemplo siguiente se muestra una respuesta a una solicitud de GetItem corr
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="662" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                     xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -136,9 +136,9 @@ En el ejemplo siguiente se muestra una respuesta a una solicitud de GetItem corr
 ### <a name="comments"></a>Comentarios
 
 > [!NOTE]
-> Los identificadores de elemento y carpeta y cambiar claves se han abreviado para conservar la legibilidad. 
+> Los identificadores de elemento y carpeta y las claves de cambio se han abreviado para preservar la legibilidad. 
   
-### <a name="successful-response-elements"></a>Elementos de respuesta correcta
+### <a name="successful-response-elements"></a>Elementos Response correcto
 
 En la respuesta se usan los siguientes elementos:
   
@@ -158,21 +158,21 @@ En la respuesta se usan los siguientes elementos:
     
 - [ItemId](itemid.md)
     
-- [Id](parentfolderid.md)
+- [ParentFolderId](parentfolderid.md)
     
 - [ItemClass](itemclass.md)
     
-- [Subject](subject.md)
+- [Asunto](subject.md)
     
-- [Sensibilidad](sensitivity.md)
+- [Sensitivity](sensitivity.md)
     
 - [Body](body.md)
     
 - [DateTimeReceived](datetimereceived.md)
     
-- [Size](size.md)
+- [Tamaño](size.md)
     
-- [Importancia](importance.md)
+- [Importance](importance.md)
     
 - [IsSubmitted](issubmitted.md)
     
@@ -190,17 +190,17 @@ En la respuesta se usan los siguientes elementos:
     
 - [HasAttachments](hasattachments.md)
     
-- [Referencia cultural](culture.md)
+- [Culture](culture.md)
     
 - [ChangeCount](changecount.md)
     
-- [Haya finalizado](iscomplete.md)
+- [IsComplete](iscomplete.md)
     
 - [IsRecurring](isrecurring.md)
     
 - [PercentComplete](percentcomplete.md)
     
-- [Status](status.md)
+- [Estado](status.md)
     
 - [StatusDescription](statusdescription.md)
     
@@ -211,9 +211,9 @@ En la respuesta se usan los siguientes elementos:
 [Operación GetItem](getitem-operation.md)
 
 
-[Creación de tareas](http://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
+[Creación de tareas](https://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
   
-[Actualización de tareas](http://msdn.microsoft.com/library/0a1bf360-d40c-4a99-929b-4c73a14394d5%28Office.15%29.aspx)
+[Actualización de tareas](https://msdn.microsoft.com/library/0a1bf360-d40c-4a99-929b-4c73a14394d5%28Office.15%29.aspx)
   
-[Eliminación de tareas](http://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
+[Eliminación de tareas](https://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
 

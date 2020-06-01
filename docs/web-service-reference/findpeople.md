@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 12c70441-77b9-4619-8e66-1b7e3a63ba48
-description: 'El elemento FindPeople especifica un conjunto de datos usados en una solicitud de FindPeople. Los datos incluyen cero o más de los siguientes elementos: una forma de persona (opcional), una vista de elemento de página indizada, una restricción (opcional), una restricción de agregación (opcional), un criterio de ordenación (opcional), una carpeta principal identificador y una cadena de consulta (opcional).'
-ms.openlocfilehash: 79c8a4324cd217232442b781c33223296d8015e5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 'El elemento FindPeople especifica un conjunto de datos que se usa en una solicitud de FindPeople. Los datos incluyen cero o más de los siguientes elementos: una forma persona (opcional), una vista de elemento de página indizada, una restricción (opcional), una restricción de agregación (opcional), un criterio de ordenación (opcional), un identificador de carpeta principal y una cadena de consulta (opcional).'
+ms.openlocfilehash: 4777601b7146ec857b5c79fa9d4ced59a7247889
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764647"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462904"
 ---
 # <a name="findpeople"></a>FindPeople
 
-El elemento **FindPeople** especifica un conjunto de datos usados en una solicitud de FindPeople. Los datos incluyen cero o más de los siguientes elementos: una forma de persona (opcional), una vista de elemento de página indizada, una restricción (opcional), una restricción de agregación (opcional), un criterio de ordenación (opcional), una carpeta principal identificador y una cadena de consulta (opcional). 
+El elemento **FindPeople** especifica un conjunto de datos que se usa en una solicitud de FindPeople. Los datos incluyen cero o más de los siguientes elementos: una forma persona (opcional), una vista de elemento de página indizada, una restricción (opcional), una restricción de agregación (opcional), un criterio de ordenación (opcional), un identificador de carpeta principal y una cadena de consulta (opcional). 
   
 ```XML
 <FindPeople>
@@ -34,15 +34,15 @@ El elemento **FindPeople** especifica un conjunto de datos usados en una solicit
  **FindPeopleType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[PersonaShape](personashape.md) | [IndexedPageItemView](indexedpageitemview.md) | [restricción](restriction.md) | [AggregationRestriction](aggregationrestriction.md) | [SortOrder](sortorder.md) | [ID (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)  |  [ QueryString (QueryStringType)](querystring-querystringtype.md)
+[PersonaShape](personashape.md)  |  [IndexedPageItemView](indexedpageitemview.md)  |  [Restricción](restriction.md)  |  [AggregationRestriction](aggregationrestriction.md)  |  [SortOrder](sortorder.md)  |  [ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md)  |  [QueryString (QueryStringType)](querystring-querystringtype.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -58,9 +58,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2fc4a8e8-5377-4059-8fb4-3fdabfd30fe3
-description: El elemento EmailAddresses especifica una matriz de entidades de la dirección de correo electrónico.
-ms.openlocfilehash: 8d96d49ef2420f269197e47577efb956daa64e53
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EmailAddresses especifica una matriz de entidades de direcciones de correo electrónico.
+ms.openlocfilehash: bd478b369f3b359edc6007db9231af50c36877e8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764347"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463429"
 ---
 # <a name="emailaddresses-arrayofemailaddressentitiestype"></a>EmailAddresses (ArrayOfEmailAddressEntitiesType)
 
-El elemento **EmailAddresses** especifica una matriz de entidades de la dirección de correo electrónico. 
+El elemento **EmailAddresses** especifica una matriz de entidades de direcciones de correo electrónico. 
   
 ```XML
 <EmailAddresses>
@@ -28,21 +28,21 @@ El elemento **EmailAddresses** especifica una matriz de entidades de la direcci�
  **ArrayOfEmailAddressEntitiesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[EmailAddressEntity](emailaddressentity.md) <br/> |Especifica una entidad de dirección de correo electrónico única.  <br/> |
+|[EmailAddressEntity](emailaddressentity.md) <br/> |Especifica una única entidad de dirección de correo electrónico.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[EntityExtractionResult](entityextractionresult.md) <br/> |Especifica la propiedad **EntityExtractionResult** de un elemento.  <br/> |
    
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 43e12e8b-5629-4f5f-9cbd-a99084d8460f
 description: El elemento CreateUserConfiguration representa una solicitud para crear un objeto de configuración de usuario.
-ms.openlocfilehash: dcf3acc356110b993bdb7f4f83245753835f299f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 1d9194baf309936cb4be088a7ff56250dfa349cc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763981"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463779"
 ---
 # <a name="createuserconfiguration"></a>CreateUserConfiguration
 
@@ -32,21 +32,21 @@ El elemento **CreateUserConfiguration** representa una solicitud para crear un o
  **CreateUserConfigurationType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UserConfiguration](userconfiguration.md) <br/> |Representa un objeto de configuración de usuario único.  <br/> |
+|[UserConfiguration](userconfiguration.md) <br/> |Representa un objeto de configuración de un solo usuario.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
@@ -60,14 +60,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

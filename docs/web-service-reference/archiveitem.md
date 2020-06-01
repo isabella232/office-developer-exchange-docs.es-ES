@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c2172e61-876a-4f76-bc9c-263c8be11429
 description: El elemento ArchiveItem contiene el identificador de la carpeta de origen y una matriz de identificadores de elemento para el elemento de archivo asociado.
-ms.openlocfilehash: 7f2d79f5a9e6798fafcf64e8b1bb680390800992
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: e1694619c90160084980cb8f3a7c8a0ed1876295
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763546"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463408"
 ---
 # <a name="archiveitem"></a>ArchiveItem
 
@@ -29,15 +29,15 @@ El elemento **ArchiveItem** contiene el identificador de la carpeta de origen y 
  **ArchiveItemType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[ArchiveSourceFolderId](archivesourcefolderid.md) | [ItemID](itemids.md)
+[ArchiveSourceFolderId](archivesourcefolderid.md)  |  [ItemIds](itemids.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

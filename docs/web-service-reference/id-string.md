@@ -1,5 +1,5 @@
 ---
-title: Identificador (cadena)
+title: ID (cadena)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,14 +8,14 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3febe5b5-9c42-4074-b4d9-75b871b2f582
 description: El elemento ID especifica el identificador de una aplicación.
-ms.openlocfilehash: 1206cb759634ba519bfd21607b9c5e3dd680b4f8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 47d0a7d4a49c0d256640602f43df13c9ebca471e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835851"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462888"
 ---
-# <a name="id-string"></a>Identificador (cadena)
+# <a name="id-string"></a>ID (cadena)
 
 El elemento **ID** especifica el identificador de una aplicación. 
   
@@ -26,23 +26,23 @@ El elemento **ID** especifica el identificador de una aplicación.
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[DisableApp](disableapp.md) | [UninstallApp](uninstallapp.md)
+[DisableApp](disableapp.md)  |  [UninstallApp](uninstallapp.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ID** es el identificador de aplicación. 
+El valor de texto del elemento **ID** es el identificador de la aplicación. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

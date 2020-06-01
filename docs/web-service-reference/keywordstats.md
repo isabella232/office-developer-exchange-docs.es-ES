@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 79b24034-6456-4c9c-adf6-03d06024c4e8
-description: El elemento KeywordStats especifica una lista de uno o varios elementos de KeywordStat.
-ms.openlocfilehash: d1f68059375fc0359b46d60b0184adc268d8fffb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento KeywordStats especifica una lista de uno o más elementos KeywordStat.
+ms.openlocfilehash: bf471c1712a96b44dbc533a2cb26e32546a6db38
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836193"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463296"
 ---
 # <a name="keywordstats"></a>KeywordStats
 
-El elemento **KeywordStats** especifica una lista de uno o varios elementos de **KeywordStat** . 
+El elemento **KeywordStats** especifica una lista de uno o más elementos **KeywordStat** . 
   
 ```XML
 <KeywordStats>
@@ -28,11 +28,11 @@ El elemento **KeywordStats** especifica una lista de uno o varios elementos de *
  **ArrayOfKeywordStatisticsSearchResultsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 

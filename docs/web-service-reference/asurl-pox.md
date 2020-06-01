@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 6727f282-ec4c-4e61-8414-e7ba5f9865e7
-description: El elemento ASUrl especifica la dirección URL de la mejor instancia de extremo de los servicios de Web de disponibilidad de Exchange para un usuario habilitado para correo.
-ms.openlocfilehash: fd765049aaccd93f2d6269375420f571108825a2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ASUrl especifica la dirección URL de la mejor instancia de punto de conexión de los servicios Web de disponibilidad de Exchange para un usuario habilitado para correo.
+ms.openlocfilehash: 62fc3c18b2c41bb131ec5bc8546089b73f247f99
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763565"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464423"
 ---
 # <a name="asurl-pox"></a>ASUrl (POX)
 
-El elemento **ASUrl** especifica la dirección URL de la mejor instancia de extremo de los servicios de Web de disponibilidad de Exchange para un usuario habilitado para correo. 
+El elemento **ASUrl** especifica la dirección URL de la mejor instancia de punto de conexión de los servicios Web de disponibilidad de Exchange para un usuario habilitado para correo. 
   
 - [Detección automática (POX)](autodiscover-pox.md)
   
@@ -36,27 +36,27 @@ El elemento **ASUrl** especifica la dirección URL de la mejor instancia de extr
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente en el equipo que ejecuta Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.  <br/> |
+|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto contiene la dirección URL que se usa para tener acceso al servicio de disponibilidad.
+El valor de texto contiene la dirección URL que se usa para obtener acceso al servicio de disponibilidad.
   
 ## <a name="see-also"></a>Vea también
 
-- [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+- [Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

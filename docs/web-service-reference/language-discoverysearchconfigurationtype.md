@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 34eab81c-d832-4925-9f76-d69f24b36931
-description: El elemento de idioma (DiscoverySearchConfigurationType) identifica la referencia cultural que se usará para el formato de referencias culturales específicas de los intervalos de fechas. También especifica el lenguaje utilizado en una consulta de búsqueda.
-ms.openlocfilehash: 1e904ac4d7f525b2d12cfe83f0da33b9ed474066
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Language (DiscoverySearchConfigurationType) identifica la referencia cultural que se va a usar para el formato específico de la referencia cultural de los intervalos de fechas. También especifica el idioma usado en una consulta de búsqueda.
+ms.openlocfilehash: 3cf85525147bec5d6dfc6fe2b2af5916d42c44be
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836197"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463289"
 ---
 # <a name="language-discoverysearchconfigurationtype"></a>Idioma (DiscoverySearchConfigurationType)
 
-El elemento de **idioma (DiscoverySearchConfigurationType)** identifica la referencia cultural que se usará para el formato de referencias culturales específicas de los intervalos de fechas. También especifica el lenguaje utilizado en una consulta de búsqueda. 
+El elemento **Language (DiscoverySearchConfigurationType)** identifica la referencia cultural que se va a usar para el formato específico de la referencia cultural de los intervalos de fechas. También especifica el idioma usado en una consulta de búsqueda. 
   
 ```XML
 <Language />
@@ -26,15 +26,15 @@ El elemento de **idioma (DiscoverySearchConfigurationType)** identifica la refer
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,11 +42,11 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **idioma (DiscoverySearchConfigurationType)** es un idioma o referencia cultural. 
+El valor de texto del elemento **Language (DiscoverySearchConfigurationType)** es una referencia cultural o un lenguaje. 
   
 ## <a name="remarks"></a>Comentarios
 
-Este elemento especifica el formato de los intervalos de fechas especificado en la [operación de SearchMailboxes](searchmailboxes-operation.md) o la [operación SetHoldOnMailboxes](setholdonmailboxes-operation.md).
+Este elemento especifica el formato de los intervalos de fechas especificados en la [operación SearchMailboxes](searchmailboxes-operation.md) o en la [operación SetHoldOnMailboxes](setholdonmailboxes-operation.md).
   
 Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).
   
@@ -56,9 +56,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
@@ -68,5 +68,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [DiscoverySearchConfiguration](discoverysearchconfiguration.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

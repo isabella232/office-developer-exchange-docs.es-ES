@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5c31552f-22b8-4bf0-8cac-046fd92ac0d4
-description: El elemento GroupType especifica la clase de grupo de un grupo (IM) de mensajería instantánea.
-ms.openlocfilehash: 330a1567ce85877ba73c6205898ea66b59585e16
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GroupType especifica la clase de grupo de un grupo de mensajería instantánea (mi).
+ms.openlocfilehash: b8790a23507c51dfffceaddf3641ce820223c366
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835800"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462804"
 ---
 # <a name="grouptype"></a>GroupType
 
-El elemento **GroupType** especifica la clase de grupo de un grupo (IM) de mensajería instantánea. 
+El elemento **GroupType** especifica la clase de grupo de un grupo de mensajería instantánea (mi). 
   
 ```XML
 <GroupType></GroupType>
@@ -26,25 +26,25 @@ El elemento **GroupType** especifica la clase de grupo de un grupo (IM) de mensa
  **NonEmptyStringType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ImGroup](imgroup.md) <br/> |Representa un grupo de mensajería instantáneo.  <br/> |
+|[Desagrupo](imgroup.md) <br/> |Representa un grupo de mensajería instantánea.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **GroupType** es un valor de tipo string que especifica el tipo del grupo. 
+El valor de texto del elemento **GroupType** es un valor de cadena que especifica el tipo de grupo. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

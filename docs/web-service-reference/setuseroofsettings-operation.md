@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: 36277ef0-18ee-4b35-9e6e-8c321d8f5433
-description: El método SetUserOofSettings Web establece la configuración de fuera de oficina (OOF) y el mensaje de un usuario de buzón de correo.
-ms.openlocfilehash: 51c2f9488f38a4adb0e291c11adc2ebfe3426f25
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El método Web SetUserOofSettings establece un mensaje y una configuración de fuera de la oficina (OOF) de un usuario de buzón.
+ms.openlocfilehash: 88b5475dd2f0fe6d334bad51a0fe8d0beb767634
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837469"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463156"
 ---
 # <a name="setuseroofsettings-operation"></a>Operación SetUserOofSettings
 
-El método Web **SetUserOofSettings** establece la configuración de fuera de oficina (OOF) y el mensaje de un usuario de buzón de correo. 
+El método Web **SetUserOofSettings** establece un mensaje y una configuración de fuera de la oficina (OOF) de un usuario de buzón. 
   
 ## <a name="soap-headers"></a>Encabezados SOAP
 
-La operación de **SetUserOofSettings** puede utilizar los encabezados SOAP que se enumeran y describen en la tabla siguiente. 
+La operación **SetUserOofSettings** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla. 
   
-|**Header**|**Element**|**Descripción**|
+|**Header**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario que está realizando la suplantación de la aplicación cliente.  <br/> |
-|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que ha respondido a la solicitud.  <br/> |
+|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente.  <br/> |
+|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud.  <br/> |
    
-## <a name="setuseroofsettings-request-example"></a>Ejemplo de solicitud de SetUserOofSettings
+## <a name="setuseroofsettings-request-example"></a>Ejemplo de solicitud SetUserOofSettings
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud de **SetUserOofSettings** establece un valor de OOF durante 10 días. 
+El siguiente ejemplo de una solicitud **SetUserOofSettings** establece un valor OOF para 10 días. 
   
 ### <a name="code"></a>Código
 
@@ -44,13 +44,13 @@ El siguiente ejemplo de una solicitud de **SetUserOofSettings** establece un val
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <SetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>User1</Name>
         <Address>user1@example.com</Address>
         <RoutingType>SMTP</RoutingType>
       </Mailbox>
-      <UserOofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <UserOofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Enabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -71,7 +71,7 @@ El siguiente ejemplo de una solicitud de **SetUserOofSettings** establece un val
 
 ### <a name="request-elements"></a>Elementos de solicitud
 
-En la solicitud se usan los siguientes elementos:
+Los siguientes elementos se usan en la solicitud:
   
 - [SetUserOofSettingsRequest](setuseroofsettingsrequest.md)
     
@@ -79,7 +79,7 @@ En la solicitud se usan los siguientes elementos:
     
 - [Nombre (EmailAddress)](name-emailaddress.md)
     
-- [Dirección (cadena)](address-string.md)
+- [Address (cadena)](address-string.md)
     
 - [RoutingType (EmailAddress)](routingtype-emailaddress.md)
     
@@ -93,7 +93,7 @@ En la solicitud se usan los siguientes elementos:
     
 - [StartTime](starttime.md)
     
-- [Hora de finalización](endtime.md)
+- [EndTime](endtime.md)
     
 - [InternalReply](internalreply.md)
     
@@ -101,11 +101,11 @@ En la solicitud se usan los siguientes elementos:
     
 - [ExternalReply](externalreply.md)
     
-## <a name="successful-setuseroofsettings-response-example"></a>Ejemplo de respuesta correcta de SetUserOofSettings
+## <a name="successful-setuseroofsettings-response-example"></a>Ejemplo de respuesta SetUserOofSettings correcta
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **SetUserOofSettings** . 
+En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **SetUserOofSettings** . 
   
 ### <a name="code"></a>Código
 
@@ -115,10 +115,10 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **Se
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
-    <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" /> 
+    <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="685" MinorBuildNumber="8" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" /> 
   </soap:Header>
   <soap:Body>
-    <SetUserOofSettingsResponse xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SetUserOofSettingsResponse xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseMessage ResponseClass="Success">
         <ResponseCode>NoError</ResponseCode> 
       </ResponseMessage>
@@ -127,7 +127,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **Se
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elementos de respuesta correcta
+### <a name="successful-response-elements"></a>Elementos Response correcto
 
 En la respuesta se usan los siguientes elementos:
   
@@ -143,5 +143,5 @@ En la respuesta se usan los siguientes elementos:
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

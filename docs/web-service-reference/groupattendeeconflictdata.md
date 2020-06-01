@@ -11,24 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: fd8bf19a-298b-4135-93e8-ead3db7e1142
-description: El elemento GroupAttendeeConflictData contiene información de conflicto agregado sobre el número de usuarios que están disponibles, el número de usuarios que tienen conflictos y el número de usuarios que no tienen información de disponibilidad en una distribución de lista para una sugiere el momento de la reunión.
-ms.openlocfilehash: 382b4d866c95de98bd444cd6226d71813889d4f4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GroupAttendeeConflictData contiene información sobre conflictos de agregación sobre el número de usuarios que están disponibles, el número de usuarios que tienen conflictos y el número de usuarios que no tienen información de disponibilidad en una lista de distribución para una hora de reunión sugerida.
+ms.openlocfilehash: c75a4e6f8fdff7fb2514f448350fee9f1acb9775
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835757"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462932"
 ---
 # <a name="groupattendeeconflictdata"></a>GroupAttendeeConflictData
 
-El elemento **GroupAttendeeConflictData** contiene información de conflicto agregado sobre el número de usuarios que están disponibles, el número de usuarios que tienen conflictos y el número de usuarios que no tienen información de disponibilidad en una lista de distribución un período de tiempo de la reunión sugerida. 
+El elemento **GroupAttendeeConflictData** contiene información sobre conflictos de agregación sobre el número de usuarios que están disponibles, el número de usuarios que tienen conflictos y el número de usuarios que no tienen información de disponibilidad en una lista de distribución para una hora de reunión sugerida. 
   
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 - [SuggestionsResponse](suggestionsresponse.md)
 - [SuggestionDayResultArray](suggestiondayresultarray.md)
 - [SuggestionDayResult](suggestiondayresult.md)
 - [SuggestionArray](suggestionarray.md)
-- [Sugerencia](suggestion.md)
+- [Alguna](suggestion.md)
 - [AttendeeConflictDataArray](attendeeconflictdataarray.md)
 - [GroupAttendeeConflictData](groupattendeeconflictdata.md)
   
@@ -45,45 +45,45 @@ El elemento **GroupAttendeeConflictData** contiene información de conflicto agr
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[NumberOfMembers](numberofmembers.md) <br/> |Representa el número de usuarios, recursos y salas en una lista de distribución.  <br/> |
-|[NumberOfMembersAvailable](numberofmembersavailable.md) <br/> |Representa el número de miembros de la lista de distribución que están disponibles para una hora de reunión sugerida. Este elemento representa a los miembros para los que el estado es **gratuita**.  <br/> |
-|[NumberOfMembersWithConflict](numberofmemberswithconflict.md) <br/> |Representa el número de miembros de la lista de distribución que tienen un conflicto con una hora de reunión sugerida. Este elemento representa a los integrantes que tengan un estado **no disponible**, **fuera de la oficina**o **provisional** .  <br/> |
-|[NumberOfMembersWithNoData](numberofmemberswithnodata.md) <br/> |Representa el número de miembros del grupo que no tienen datos de disponibilidad publicados que se compara con una hora de reunión sugerida. Este elemento representa los miembros de una lista de distribución que es demasiado grande o los miembros que tienen el estado de **No haber datos** .  <br/> |
+|[NumberOfMembers](numberofmembers.md) <br/> |Representa el número de usuarios, recursos y salas de una lista de distribución.  <br/> |
+|[NumberOfMembersAvailable](numberofmembersavailable.md) <br/> |Representa el número de miembros de la lista de distribución que están disponibles para una hora de reunión sugerida. Este elemento representa los miembros para los que el estado es **libre**.  <br/> |
+|[NumberOfMembersWithConflict](numberofmemberswithconflict.md) <br/> |Representa el número de miembros de la lista de distribución que tienen un conflicto con la hora de reunión sugerida. Este elemento representa los miembros que tienen un estado **ocupado**, **OOF**o **provisional** .  <br/> |
+|[NumberOfMembersWithNoData](numberofmemberswithnodata.md) <br/> |Representa el número de miembros del grupo que no han publicado datos de disponibilidad para compararlos con una hora de reunión sugerida. Este elemento representa los miembros de una lista de distribución que son demasiado grandes o miembros que no tienen el estado de los **datos** .  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AttendeeConflictDataArray](attendeeconflictdataarray.md) <br/> |Contiene una matriz de datos en conflicto para los asistentes consultados identificados en la [operación GetUserAvailability](getuseravailability-operation.md).  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray` <br/> |
+|[AttendeeConflictDataArray](attendeeconflictdataarray.md) <br/> |Contiene una matriz de datos conflictivos para los asistentes consultados identificados en la [operación GetUserAvailability](getuseravailability-operation.md).  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El elemento **GroupAttendeeConflictData** está presente en la respuesta cuando un asistente en el [GetUserAvailabilityRequest](getuseravailabilityrequest.md) se resuelve en una lista de distribución. El elemento **GroupAttendeeConflictData** identifica los tres estados para los miembros de una lista de distribución: disponibles, con conflictos, o sin datos. Expansión de la lista de distribución será compatible con un máximo de 100 miembros. Por lo tanto, el elemento de [NumberOfMembers](numberofmembers.md) puede contener un máximo de 100 miembros. Expansión de la lista de distribución es recursiva. Si una lista de distribución contiene una lista de distribución secundaria que se expande la pertenencia primario total a más de 100 miembros, la lista de distribución secundarios no se expandirán y se cuenta como una sola entrada de la cuenta de elementos [NumberOfMembersWithNoData](numberofmemberswithnodata.md) . Si se puede expandir una lista de distribución secundaria y no expandir la pertenencia de primario total a más de 100 miembros, su pertenencia al grupo se expande y se agregan los recuentos de miembros para los elementos secundarios del elemento **GroupAttendeeConflictData** . 
+El elemento **GroupAttendeeConflictData** está presente en la respuesta cuando un asistente de la [GetUserAvailabilityRequest](getuseravailabilityrequest.md) se resuelve en una lista de distribución. El elemento **GroupAttendeeConflictData** identifica tres Estados para los miembros de una lista de distribución: available, conflicted o no Data. La expansión de la lista de distribución admitirá hasta 100 miembros. Por lo tanto, el elemento [NumberOfMembers](numberofmembers.md) puede contener un máximo de 100 miembros. La expansión de la lista de distribución es recurrente. Si una lista de distribución contiene una lista de distribución secundaria que expande el total de la pertenencia a 100 miembros, la lista de distribución secundaria no se expandirá y se contará como una entrada única del recuento de elementos [NumberOfMembersWithNoData](numberofmemberswithnodata.md) . Si se puede expandir una lista de distribución secundaria y la pertenencia al elemento primario total no se expande a más de 100 miembros, se expande su pertenencia y los recuentos de miembros se agregan a los elementos secundarios del elemento **GroupAttendeeConflictData** . 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
-- [Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

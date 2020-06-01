@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e898d737-b6e4-4403-9c2c-aec52a48a83d
-description: El elemento de buzón de correo contiene el identificador de buzón de correo y dirección de Protocolo Simple de transferencia de correo (SMTP) principal del usuario.
-ms.openlocfilehash: 1b6669928015bc880806479d294a4063034a559f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Mailbox contiene el identificador de buzón y la dirección principal del Protocolo simple de transferencia de correo (SMTP) del usuario.
+ms.openlocfilehash: 4dc5ee45c00945c30a699daa0158c96679189ab1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836255"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463898"
 ---
 # <a name="mailbox-previewitemmailboxtype"></a>Buzón de correo (PreviewItemMailboxType)
 
-El elemento de **buzón de correo** contiene el identificador de buzón de correo y dirección de Protocolo Simple de transferencia de correo (SMTP) principal del usuario. 
+El elemento **Mailbox** contiene el identificador de buzón y la dirección principal del Protocolo simple de transferencia de correo (SMTP) del usuario. 
   
 ```XML
 <Mailbox>
@@ -30,15 +30,15 @@ El elemento de **buzón de correo** contiene el identificador de buzón de corre
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[MailboxId](mailboxid.md) | [PrimarySmtpAddress (cadena)](primarysmtpaddress-string.md)
+[Se especifica mailboxid](mailboxid.md)  |  [PrimarySmtpAddress (cadena)](primarysmtpaddress-string.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

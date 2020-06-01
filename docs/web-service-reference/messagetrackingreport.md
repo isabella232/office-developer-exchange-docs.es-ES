@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2740bcf6-f86d-4756-a0f2-24ed6e9b75f7
-description: El elemento MessageTrackingReport contiene un solo mensaje que se devuelve en una operación de GetMessageTrackingReport.
-ms.openlocfilehash: d01e0fbf099d096c7f255a8e94070e330577e6ca
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MessageTrackingReport contiene un solo mensaje que se devuelve en una operación GetMessageTrackingReport.
+ms.openlocfilehash: fc3e56fbb1bee411fa31751f558f520874133076
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836457"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463219"
 ---
 # <a name="messagetrackingreport"></a>MessageTrackingReport
 
-El elemento **MessageTrackingReport** contiene un solo mensaje que se devuelve en una [operación de GetMessageTrackingReport](getmessagetrackingreport-operation.md).
+El elemento **MessageTrackingReport** contiene un solo mensaje que se devuelve en una [operación GetMessageTrackingReport](getmessagetrackingreport-operation.md).
   
 ```XML
 <MessageTrackingReport>
@@ -38,27 +38,27 @@ El elemento **MessageTrackingReport** contiene un solo mensaje que se devuelve e
  **MessageTrackingReportType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Remitente (EmailAddressType)](sender-emailaddresstype.md) <br/> |Contiene información de contacto para el remitente del mensaje de correo electrónico.  <br/> |
-|[PurportedSender](purportedsender.md) <br/> |Contiene información de contacto para el remitente presunta de un mensaje de correo electrónico.  <br/> |
-|[Subject](subject.md) <br/> |Contiene al asunto del mensaje de correo electrónico.  <br/> |
-|[SubmitTime](submittime.md) <br/> |Contiene la hora del día en que se envió el mensaje de correo electrónico.  <br/> |
+|[Remitente (EmailAddressType)](sender-emailaddresstype.md) <br/> |Contiene la información de contacto del remitente del mensaje de correo electrónico.  <br/> |
+|[PurportedSender](purportedsender.md) <br/> |Contiene la información de contacto del remitente de un mensaje de correo electrónico.  <br/> |
+|[Asunto](subject.md) <br/> |Contiene el asunto del mensaje de correo electrónico.  <br/> |
+|[SubmitTime](submittime.md) <br/> |Contiene la hora del día a la que se envió el mensaje de correo electrónico.  <br/> |
 |[OriginalRecipients](originalrecipients.md) <br/> |Contiene una lista de los destinatarios del mensaje de correo electrónico.  <br/> |
-|[RecipientTrackingEvents](recipienttrackingevents.md) <br/> |Contiene una lista de uno o más eventos de seguimiento para los destinatarios.  <br/> |
+|[RecipientTrackingEvents](recipienttrackingevents.md) <br/> |Contiene una lista de uno o más eventos de seguimiento de los destinatarios.  <br/> |
 |[Propiedades (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md) <br/> |Contiene una lista de una o varias propiedades de seguimiento.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[GetMessageTrackingReportResponse](getmessagetrackingreportresponse.md) <br/> |Contiene el resultado de una única solicitud de [operación GetMessageTrackingReport](getmessagetrackingreport-operation.md) .  <br/> |
    
@@ -68,16 +68,16 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda Exchange Web Services.This elemento fue introdujo en Exchange Server 2010 Service Pack 1 (SP1).
+El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda los servicios Web de Exchange. este elemento se introdujo en Exchange Server 2010 Service Pack 1 (SP1).
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -88,7 +88,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación GetMessageTrackingReport](getmessagetrackingreport-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
   
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

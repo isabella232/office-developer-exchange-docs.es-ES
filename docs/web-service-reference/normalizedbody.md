@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bfb813e4-642d-4f1b-9e91-1fee89dbd083
-description: El elemento NormalizedBody especifica una representación HTML de la propiedad de cuerpo de un elemento como un fragmento que puede insertarse en otro cuerpo HTML.
-ms.openlocfilehash: 07c2176d2c8a7473c06b7e42f8bcbbe6670581ef
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento NormalizedBody especifica una representación HTML de la propiedad Body de un elemento como un fragmento que se puede insertar en otro cuerpo HTML.
+ms.openlocfilehash: fb249794bccfeed198e7a3230ab53c66893dcf96
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836548"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462671"
 ---
 # <a name="normalizedbody"></a>NormalizedBody
 
-El elemento **NormalizedBody** especifica una representación HTML de la propiedad de **cuerpo** de un elemento como un fragmento que puede insertarse en otro cuerpo HTML. 
+El elemento **NormalizedBody** especifica una representación HTML de la propiedad **Body** de un elemento como un fragmento que se puede insertar en otro cuerpo HTML. 
   
 ```XML
 <NormalizedBody BodyType="Text | HTML" IsTruncated="true | false"></NormalizedBody>
@@ -26,26 +26,26 @@ El elemento **NormalizedBody** especifica una representación HTML de la propied
  **BodyType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|BodyType  <br/> |Indica el tipo de cuerpo. El valor de **texto** para el atributo **BodyType** indica que el cuerpo tiene formato de texto sin formato. El valor de **HTML** para el atributo **BodyType** indica que el cuerpo está en formato HTML. El atributo **BodyType** es necesario.  <br/> |
-|IsTruncated  <br/> |Indica que el contenido del cuerpo se ha truncado. Un valor de texto de **false** para el atributo **IsTruncated** indica que no se ha truncado el contenido del cuerpo. Si la longitud del cuerpo normalizado es mayor que el valor establecido en el elemento [MaximumBodySize](maximumbodysize.md) , se truncará el cuerpo normalizado.  <br/> |
+|BodyType  <br/> |Indica el tipo de cuerpo. El valor de **Text** para el atributo **BodyType** indica que el cuerpo está en forma de texto sin formato. El valor de **HTML** para el atributo **BodyType** indica que el cuerpo está en formato HTML. El atributo **BodyType** es obligatorio.  <br/> |
+|IsTruncated  <br/> |Indica que se ha truncado el contenido del cuerpo. Un valor de texto **falso** para el atributo **IsTruncated** indica que el contenido del cuerpo no se ha truncado. El cuerpo normalizado se truncará si la longitud del cuerpo normalizado es mayor que el valor establecido en el elemento [MaximumBodySize](maximumbodysize.md) .  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Elemento](item.md) | [mensaje](message-ex15websvcsotherref.md) | [MeetingMessage](meetingmessage.md) | [MeetingRequest](meetingrequest.md) | [MeetingResponse](meetingresponse.md) | [MeetingCancellation](meetingcancellation.md) | [tarea](task.md) | [PostItem ](postitem.md)  |  [CalendarItem](calendaritem.md) | [contacto](contact.md) | [DistributionList](distributionlist.md)
+[Elemento](item.md)  |  [Mensaje de error](message-ex15websvcsotherref.md)  |  [MeetingMessage](meetingmessage.md)  |  Propiedad [MeetingRequest](meetingrequest.md)  |  [MeetingResponse](meetingresponse.md)  |  [MeetingCancellation](meetingcancellation.md)  |  [Tarea](task.md)  |  [PostItem](postitem.md)  |  [CalendarItem](calendaritem.md)  |  [Contacto](contact.md)  |  [DistributionList](distributionlist.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **NormalizedBody** es el cuerpo del elemento normalizado. 
+El valor de texto del elemento **NormalizedBody** es el cuerpo normalizado del elemento. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -57,9 +57,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

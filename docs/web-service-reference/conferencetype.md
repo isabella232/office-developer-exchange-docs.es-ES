@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6bcf6c18-2695-44b1-aabe-dadc52b2633a
-description: El elemento ConferenceType describe el tipo de conferencia que se lleva a cabo con un elemento de calendario.
-ms.openlocfilehash: d312420606c5e1914fe321ae7c7c512f0833199c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ConferenceType describe el tipo de conferencia que se realiza con un elemento de calendario.
+ms.openlocfilehash: 482fc09d709e2b151b255107af59cb98de236aec
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763764"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463933"
 ---
 # <a name="conferencetype"></a>ConferenceType
 
-El elemento **ConferenceType** describe el tipo de conferencia que se lleva a cabo con un elemento de calendario. 
+El elemento **ConferenceType** describe el tipo de conferencia que se realiza con un elemento de calendario. 
   
 ```xml
 <ConferenceType/>
@@ -30,26 +30,26 @@ El elemento **ConferenceType** describe el tipo de conferencia que se lleva a ca
  **int**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Representa una convocatoria de reunión en el almacén de Exchange.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Si se usa este elemento, se requiere un valor de texto que representa un valor entero. Los siguientes son los valores posibles para este elemento:
+Si se usa este elemento, es necesario un valor de texto que represente un valor entero. A continuación se muestran los valores posibles para este elemento:
   
 - 0 = NetMeeting
     
@@ -59,22 +59,22 @@ Si se usa este elemento, se requiere un valor de texto que representa un valor e
     
 ## <a name="remarks"></a>Comentarios
 
-La propiedad **MeetingWorkspaceUrl** es modificable para la lectura de elemento de calendario del organizador de la. Es de sólo lectura para las convocatorias de reunión y elementos de calendario del asistente. 
+La propiedad **MeetingWorkspaceUrl** es de lectura y escritura para el elemento de calendario del organizador. Es de solo lectura para las convocatorias de reunión y para los elementos de calendario del asistente. 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente. 
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes. 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

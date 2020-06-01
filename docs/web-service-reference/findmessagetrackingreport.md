@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7ca6e2f7-aae1-4920-b839-73513ba8d4d8
-description: El elemento FindMessageTrackingReport especifica los criterios para los tipos de mensajes para buscar.
-ms.openlocfilehash: 77545121aa056992248c045af3f3d36566678b94
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento FindMessageTrackingReport especifica criterios para los tipos de mensajes que se van a buscar.
+ms.openlocfilehash: d30e5391bb4305cae0004a9788df971a57297cae
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764642"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462939"
 ---
 # <a name="findmessagetrackingreport"></a>FindMessageTrackingReport
 
-El elemento **FindMessageTrackingReport** especifica los criterios para los tipos de mensajes para buscar. 
+El elemento **FindMessageTrackingReport** especifica criterios para los tipos de mensajes que se van a buscar. 
   
 ```xml
 <FindMessageTrackingReport>
@@ -44,33 +44,33 @@ El elemento **FindMessageTrackingReport** especifica los criterios para los tipo
  **FindMessageTrackingReportRequestType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Ámbito (NonEmptyStringType)](scope-nonemptystringtype.md) <br/> |Representa la extensión deben ser el informe de seguimiento de mensajes.  <br/> |
-|[Dominio (el seguimiento de mensajes)](domain-message-tracking.md) <br/> |Contiene el nombre del dominio donde se ejecutan el seguimiento de mensajes.  <br/> |
-|[Remitente (EmailAddressType)](sender-emailaddresstype.md) <br/> |Contiene información de contacto para el remitente del mensaje de correo electrónico.  <br/> |
-|[PurportedSender](purportedsender.md) <br/> |Contiene información de contacto para el remitente presunta de un mensaje de correo electrónico.  <br/> |
-|[Recipient](recipient.md) <br/> |Contiene la dirección de correo electrónico para el destinatario del mensaje.  <br/> |
-|[Subject](subject.md) <br/> |Contiene al asunto del mensaje de correo electrónico.  <br/> |
-|[StartDateTime](startdatetime.md) <br/> |Contiene la fecha y la hora para la búsqueda inicial.  <br/> |
-|[EndDateTime](enddatetime.md) <br/> |Contiene la fecha final y la hora para la búsqueda.  <br/> |
+|[Ámbito (NonEmptyStringType)](scope-nonemptystringtype.md) <br/> |Representa la extensión que debe tener el informe de seguimiento de mensajes.  <br/> |
+|[Dominio (seguimiento de mensajes)](domain-message-tracking.md) <br/> |Contiene el nombre del dominio donde se ejecuta el seguimiento de mensajes.  <br/> |
+|[Remitente (EmailAddressType)](sender-emailaddresstype.md) <br/> |Contiene la información de contacto del remitente del mensaje de correo electrónico.  <br/> |
+|[PurportedSender](purportedsender.md) <br/> |Contiene la información de contacto del remitente de un mensaje de correo electrónico.  <br/> |
+|[Destinatario](recipient.md) <br/> |Contiene la dirección de correo electrónico del destinatario del mensaje.  <br/> |
+|[Asunto](subject.md) <br/> |Contiene el asunto del mensaje de correo electrónico.  <br/> |
+|[StartDateTime](startdatetime.md) <br/> |Contiene la fecha y hora de inicio de la búsqueda.  <br/> |
+|[EndDateTime](enddatetime.md) <br/> |Contiene la fecha y hora de finalización de la búsqueda.  <br/> |
 |[MessageId](messageid.md) <br/> |Contiene el identificador de mensaje para la búsqueda.  <br/> |
-|[FederatedDeliveryMailbox](federateddeliverymailbox.md) <br/> |Contiene el nombre del buzón donde se envió el mensaje entre locales.  <br/> |
+|[FederatedDeliveryMailbox](federateddeliverymailbox.md) <br/> |Contiene el nombre del buzón en el que se envió el mensaje entre locales.  <br/> |
 |[DiagnosticsLevel](diagnosticslevel.md) <br/> |Representa el nivel de detalle de los informes de diagnóstico.  <br/> |
-|[ServerHint](serverhint.md) <br/> |Representa el punto de partida para el seguimiento de un mensaje en un sitio remoto o un bosque.  <br/> |
+|[ServerHint](serverhint.md) <br/> |Representa el punto de inicio para el seguimiento de un mensaje en un sitio o bosque remoto.  <br/> |
 |[Propiedades (ArrayOfTrackingPropertiesType)](properties-arrayoftrackingpropertiestype.md) <br/> |Contiene una lista de una o varias propiedades de seguimiento. Este elemento es opcional.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
@@ -84,10 +84,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -96,5 +96,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación FindMessageTrackingReport](findmessagetrackingreport-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

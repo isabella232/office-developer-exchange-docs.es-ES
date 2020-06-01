@@ -12,30 +12,30 @@ api_type:
 - schema
 ms.assetid: eb5b8ab6-9743-481c-aac9-f9aa889bd353
 description: La operación CreateUserConfiguration crea un objeto de configuración de usuario en una carpeta.
-ms.openlocfilehash: 5f0eb7d18736008af39199cbc52cc3a6e6abda09
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 0c9233146d21c7014be15896426b968106485200
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763971"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463786"
 ---
 # <a name="createuserconfiguration-operation"></a>Operación CreateUserConfiguration
 
 La operación **CreateUserConfiguration** crea un objeto de configuración de usuario en una carpeta. 
   
-## <a name="createuserconfiguration-request-example"></a>Ejemplo de solicitud de CreateUserConfiguration
+## <a name="createuserconfiguration-request-example"></a>Ejemplo de solicitud CreateUserConfiguration
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud de **CreateUserConfiguration** muestra cómo formar una solicitud para crear un objeto de configuración de usuario en la carpeta Borradores. 
+El siguiente ejemplo de una solicitud **CreateUserConfiguration** muestra cómo crear una solicitud para crear un objeto de configuración de usuario en la carpeta Borradores. 
   
 ### <a name="code"></a>Código
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xs="http://www.w3.org/2001/XMLSchema">
   
@@ -71,7 +71,7 @@ El siguiente ejemplo de una solicitud de **CreateUserConfiguration** muestra có
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **CreateUserConfiguration** . 
+En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **CreateUserConfiguration** . 
   
 ### <a name="code"></a>Código
 
@@ -84,15 +84,15 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **Cr
                          MajorBuildNumber="639" 
                          MinorBuildNumber="20" 
                          Version="Exchange2010" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:CreateUserConfigurationResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:CreateUserConfigurationResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:CreateUserConfigurationResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -109,5 +109,5 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **Cr
 
 [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
   
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

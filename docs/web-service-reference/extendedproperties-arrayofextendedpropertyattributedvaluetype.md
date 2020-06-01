@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 262d0bf6-107e-48af-af2d-4356612154ac
-description: El elemento ExtendedProperties contiene las propiedades extendidas que se usa para un rol.
-ms.openlocfilehash: 9a1891dfee7952adc91a72fafc19e0744c3935f1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ExtendedProperties contiene las propiedades extendidas usadas para un rol.
+ms.openlocfilehash: 3a3b238fee8c0ef3f243de3eb91c1a80f5369960
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764502"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463128"
 ---
 # <a name="extendedproperties-arrayofextendedpropertyattributedvaluetype"></a>ExtendedProperties (ArrayOfExtendedPropertyAttributedValueType)
 
-El elemento **ExtendedProperties** contiene las propiedades extendidas que se usa para un rol. 
+El elemento **ExtendedProperties** contiene las propiedades extendidas usadas para un rol. 
   
 ```XML
 <ExtendedProperties>
@@ -28,11 +28,11 @@ El elemento **ExtendedProperties** contiene las propiedades extendidas que se us
  **ArrayOfExtendedPropertyAttributedValueType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

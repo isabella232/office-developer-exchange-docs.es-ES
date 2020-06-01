@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 73d7943d-d361-4f8b-9948-d85f886efa1a
-description: La operación ApplyConversationAction establece una sola vez o realizar un seguimiento de la acción de todos los elementos en una conversación. La operación de ApplyConversationAction permite clasificar, mover, copiar, eliminar y establecer el estado de lectura en todos los elementos en una conversación. También se pueden establecer acciones para mensajes nuevos en una conversación.
-ms.openlocfilehash: 2a485b84ee87aec2ed807e3f4f0901b83432fa0a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación ApplyConversationAction establece una acción de una vez o de seguimiento en todos los elementos de una conversación. La operación ApplyConversationAction permite categorizar, mover, copiar, eliminar y establecer el estado de lectura en todos los elementos de una conversación. Las acciones también se pueden establecer para nuevos mensajes en una conversación.
+ms.openlocfilehash: cdab239a5b0b1406d2ce31f4604e4737d037cd7e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763482"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463506"
 ---
 # <a name="applyconversationaction-operation"></a>Operación ApplyConversationAction
 
-La operación **ApplyConversationAction** establece una sola vez o realizar un seguimiento de la acción de todos los elementos en una conversación. La operación de **ApplyConversationAction** permite clasificar, mover, copiar, eliminar y establecer el estado de lectura en todos los elementos en una conversación. También se pueden establecer acciones para mensajes nuevos en una conversación. 
+La operación **ApplyConversationAction** establece una acción de una vez o de seguimiento en todos los elementos de una conversación. La operación **ApplyConversationAction** permite categorizar, mover, copiar, eliminar y establecer el estado de lectura en todos los elementos de una conversación. Las acciones también se pueden establecer para nuevos mensajes en una conversación. 
   
-## <a name="applyconversationaction-request-example"></a>Ejemplo de solicitud de ApplyConversationAction
+## <a name="applyconversationaction-request-example"></a>Ejemplo de solicitud ApplyConversationAction
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud de **ApplyConversationAction** muestra cómo mover los elementos de la conversación especificada a otra carpeta. Los elementos que se agregan a la conversación también se moverán a la carpeta especificada. 
+El siguiente ejemplo de una solicitud **ApplyConversationAction** muestra cómo mover los elementos de la conversación especificada a otra carpeta. Los elementos que se agregan a la conversación también se moverán a la carpeta especificada. 
   
 ### <a name="code"></a>Código
 
@@ -36,8 +36,8 @@ El siguiente ejemplo de una solicitud de **ApplyConversationAction** muestra có
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010_SP1" />
   </soap:Header>
@@ -59,13 +59,13 @@ El siguiente ejemplo de una solicitud de **ApplyConversationAction** muestra có
 
 ### <a name="remarks"></a>Comentarios
 
-Los identificadores de conversación y carpeta se han abreviado para conservar la legibilidad.
+Los identificadores de conversación y carpeta se han abreviado para preservar la legibilidad.
   
 ## <a name="applyconversationaction-response-example"></a>Ejemplo de respuesta ApplyConversationAction
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta a una solicitud **ApplyConversationAction** correcta. 
+En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **ApplyConversationAction** . 
   
 ### <a name="code"></a>Código
 
@@ -78,15 +78,15 @@ En el ejemplo siguiente se muestra una respuesta a una solicitud **ApplyConversa
                          MajorBuildNumber="91" 
                          MinorBuildNumber="0" 
                          Version="Exchange2010_SP1" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:ApplyConversationActionResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:ApplyConversationActionResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:ApplyConversationActionResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -101,6 +101,6 @@ En el ejemplo siguiente se muestra una respuesta a una solicitud **ApplyConversa
 
 - [Operación ApplyConversationAction](applyconversationaction-operation.md)
 - [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
-- [Conversaciones de EWS](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Conversaciones en EWS](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

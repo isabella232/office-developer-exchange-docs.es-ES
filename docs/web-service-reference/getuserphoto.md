@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0e524a09-86f8-4a71-ac5c-66527ae70790
 description: El elemento GetUserPhoto contiene la solicitud para obtener la foto de un usuario.
-ms.openlocfilehash: 1fa1db6d903f83ad54ffadb188ba79ee178de797
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 64b0ec67abd70fb237549eb0fed1968275c615ba
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835695"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463912"
 ---
 # <a name="getuserphoto"></a>GetUserPhoto
 
@@ -29,15 +29,15 @@ El elemento **GetUserPhoto** contiene la solicitud para obtener la foto de un us
  **GetUserPhotoType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Correo electrónico (String)](email-string.md) | [SizeRequested](sizerequested.md)
+[Email (cadena)](email-string.md)  |  [SizeRequested](sizerequested.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

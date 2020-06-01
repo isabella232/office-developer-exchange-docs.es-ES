@@ -1,5 +1,5 @@
 ---
-title: Condition
+title: Condición
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0790a3f2-cb31-4036-a757-7821aa0722cb
-description: El elemento Condition identifica la condición que debe cumplirse para el elemento de acción de la regla que se va a ejecutar.
-ms.openlocfilehash: d49f2984799b15c0499af59abecbb34abe15f7c3
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: El elemento Condition identifica la condición que debe cumplirse para que se ejecute la parte de acción de la regla.
+ms.openlocfilehash: 2aea11197f072a4dbe21292bb47075d6f273d31b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353563"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463226"
 ---
-# <a name="condition"></a>Condition
+# <a name="condition"></a>Condición
 
-El elemento **Condition** identifica la condición que debe cumplirse para el elemento de acción de la regla que se va a ejecutar. 
+El elemento **Condition** identifica la condición que debe cumplirse para que se ejecute la parte de acción de la regla. 
   
 ```xml
 <Condition>
@@ -57,25 +57,25 @@ El elemento **Condition** identifica la condición que debe cumplirse para el el
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[AllInternal](allinternal.md) <br/> |Se evalúa como **true** si todos los destinatarios de un mensaje de correo electrónico son internos a la organización del remitente.  <br/> |
-|[And (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |Especifica que deben coincidir con todos los elementos secundarios para evaluar en **true**. Especifica que debe haber más de una condición de secundarios de regla de protección.  <br/> |
-|[RecipientIs](recipientis.md) <br/> |Especifica que todos los destinatarios del mensaje de correo electrónico coincide con cualquiera de los destinatarios especificados en el [valor (ProtectionRuleValueType)](value-protectionrulevaluetype.md) los elementos secundarios.  <br/> |
-|[SenderDepartments](senderdepartments.md) <br/> |Especifica que el departamento del remitente coincide con cualquiera de los departamentos especificados en el [valor (ProtectionRuleValueType)](value-protectionrulevaluetype.md) los elementos secundarios.  <br/> |
-|[True](true.md) <br/> |Especifica una condición que siempre coincide con.  <br/> |
+|[And (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |Especifica que todos los elementos secundarios deben coincidir para evaluarse en **true**. Especifica que debe haber más de una condición secundaria de regla de protección.  <br/> |
+|[Destinatarioes](recipientis.md) <br/> |Especifica que cualquier destinatario del mensaje de correo electrónico coincide con cualquiera de los destinatarios especificados en los elementos de [valor secundario (ProtectionRuleValueType)](value-protectionrulevaluetype.md) .  <br/> |
+|[SenderDepartments](senderdepartments.md) <br/> |Especifica que el Departamento del remitente coincide con cualquiera de los departamentos especificados en los elementos de [valor secundario (ProtectionRuleValueType)](value-protectionrulevaluetype.md) .  <br/> |
+|[True](true.md) <br/> |Especifica una condición que siempre coincide.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Rule](rule.md) <br/> |Contiene una regla de protección única.  <br/> |
    
@@ -91,12 +91,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

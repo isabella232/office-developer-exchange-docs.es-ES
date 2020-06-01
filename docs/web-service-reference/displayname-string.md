@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e7efbbe1-6629-4d11-bed1-ed899e3f9d77
-description: Elemento DisplayName define el nombre para mostrar de una carpeta, contacto, lista de distribución, usuario delegado, ubicación o regla.
-ms.openlocfilehash: 53f4e083d9e6617206e383d4408e08ed7ea0fe08
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DisplayName define el nombre para mostrar de una carpeta, un contacto, una lista de distribución, un usuario delegado, una ubicación o una regla.
+ms.openlocfilehash: 9b566ec1938ec206e45cddf9c7f00083af2d8a9c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764222"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463619"
 ---
 # <a name="displayname-string"></a>DisplayName (cadena)
 
-Elemento **DisplayName** define el nombre para mostrar de una carpeta, contacto, lista de distribución, usuario delegado, ubicación o regla. 
+El elemento **displayName** define el nombre para mostrar de una carpeta, un contacto, una lista de distribución, un usuario delegado, una ubicación o una regla. 
   
 ```XML
 <DisplayName/>
@@ -30,33 +30,33 @@ Elemento **DisplayName** define el nombre para mostrar de una carpeta, contacto,
  **String**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarFolder](calendarfolder.md) <br/> |Representa una carpeta del calendario en un buzón de correo.  <br/> |
-|[Contact](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
-|[ContactsFolder](contactsfolder.md) <br/> |Representa una carpeta de contactos en un buzón de correo.  <br/> |
+|[Hubiera](calendarfolder.md) <br/> |Representa una carpeta de calendario en un buzón.  <br/> |
+|[Contacto](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
+|[Hubiera](contactsfolder.md) <br/> |Representa una carpeta de contactos en un buzón.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Representa una lista de distribución.  <br/> |
-|[Folder](folder.md) <br/> |Representa una carpeta en un buzón de correo.  <br/> |
-|[Regla (RuleType)](rule-ruletype.md) <br/> |Representa una regla en el buzón del usuario.  <br/> |
-|[SearchFolder](searchfolder.md) <br/> |Representa una carpeta de búsqueda en un buzón de correo.  <br/> |
-|[TasksFolder](tasksfolder.md) <br/> |Representa una carpeta de tareas en un buzón de correo.  <br/> |
-|[UserId](userid.md) <br/> |Identifica un usuario delegado o un usuario que tiene permisos de acceso de la carpeta.  <br/> |
+|[Folder](folder.md) <br/> |Representa una carpeta en un buzón.  <br/> |
+|[Regla (RuleType)](rule-ruletype.md) <br/> |Representa una regla en el buzón de un usuario.  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |Representa una carpeta de búsqueda en un buzón.  <br/> |
+|[Hubiera](tasksfolder.md) <br/> |Representa una carpeta de tareas en un buzón.  <br/> |
+|[UserId](userid.md) <br/> |Identifica un usuario delegado o un usuario que tiene permisos de acceso a la carpeta.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Si se usa este elemento, es necesario un valor de texto que representa el nombre para mostrar.
+Si se usa este elemento, es necesario un valor de texto que represente el nombre para mostrar.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -64,7 +64,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
   
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestra cómo crear una nueva carpeta y para establecer la propiedad DisplayName de la carpeta a "TestFolder".
+En el siguiente ejemplo se muestra cómo crear una carpeta nueva y establecer el valor de DisplayName de la carpeta en "TestFolder".
   
 ```cs
 FolderType folder = new FolderType();
@@ -75,12 +75,12 @@ folder.DisplayName = "TestFolder";
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

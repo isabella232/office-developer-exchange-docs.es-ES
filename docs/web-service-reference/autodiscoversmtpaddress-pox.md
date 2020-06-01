@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7763d11a-b338-4a02-8a01-938859c05dfb
-description: El elemento AutoDiscoverSMTPAddress contiene una dirección SMTP del usuario que se usa para el proceso de detección automática.
-ms.openlocfilehash: 6f44fc30fcf96bc059aa9412f5c3c5b8f596d2fc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AutoDiscoverSMTPAddress contiene la dirección SMTP del usuario que se usa para el proceso de detección automática.
+ms.openlocfilehash: cd40fac8b7ab4eaa9ea50e82d6fc8bdbd4c3c7b1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763593"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463954"
 ---
 # <a name="autodiscoversmtpaddress-pox"></a>AutoDiscoverSMTPAddress (POX)
 
-El elemento **AutoDiscoverSMTPAddress** contiene una dirección SMTP del usuario que se usa para el proceso de detección automática. 
+El elemento **AutoDiscoverSMTPAddress** contiene la dirección SMTP del usuario que se usa para el proceso de detección automática. 
   
 - [Detección automática (POX)](autodiscover-pox.md)
   
@@ -32,31 +32,31 @@ El elemento **AutoDiscoverSMTPAddress** contiene una dirección SMTP del usuario
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Usuario (POX)](user-pox.md) <br/> |Proporciona información específica del usuario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa la dirección del usuario SMTP que se usa para el proceso de detección automática.
+El valor de texto representa la dirección SMTP del usuario que se usa para el proceso de detección automática.
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento **AutoDiscoverSMTPAddress** es un elemento secundario opcional del elemento de **usuario** . 
+El elemento **AutoDiscoverSMTPAddress** es un elemento secundario opcional del elemento **User** . 
   
 ## <a name="see-also"></a>Vea también
 
-- [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+- [Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 86cf88f4-09c4-436a-a100-ac5cba0c4388
-description: El elemento GetAppManifestsResponse define la respuesta de una solicitud de operación GetAppManifests.
-ms.openlocfilehash: ae9d1d853023a5b42db2e8fee2ed57f585433f69
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: El elemento GetAppManifestsResponse define la respuesta para una solicitud de operación GetAppManifests.
+ms.openlocfilehash: a01f6265d6d534e2f7868b17acf19f0f5d52a01f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354151"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462967"
 ---
 # <a name="getappmanifestsresponse"></a>GetAppManifestsResponse
 
-El elemento **GetAppManifestsResponse** define la respuesta de una solicitud de operación **GetAppManifests** . 
+El elemento **GetAppManifestsResponse** define la respuesta para una solicitud de operación **GetAppManifests** . 
   
 ```xml
 <GetAppManifestsResponse>
@@ -37,15 +37,15 @@ El elemento **GetAppManifestsResponse** define la respuesta de una solicitud de 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[ResponseCode](responsecode.md) | [manifiestos](manifests.md) | [aplicaciones](apps.md)
+[ResponseCode](responsecode.md)  |  [Manifiestos](manifests.md)  |  [Aplicaciones](apps.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -61,12 +61,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

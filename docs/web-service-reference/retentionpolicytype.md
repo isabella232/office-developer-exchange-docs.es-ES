@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: abce5b3e-971d-42fc-aeea-caa7202214de
-description: El elemento RetentionPolicyType especifica el tipo de directiva de retención aplicado a los elementos en una conversación.
-ms.openlocfilehash: dacb3fa75611cbd6e6e29eab7c791dfd8964c9ec
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RetentionPolicyType especifica el tipo de directiva de retención que se aplica a los elementos de una conversación.
+ms.openlocfilehash: 3900718f10e1e11d5864ebf7e64a3e1e22aa45c7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837229"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462874"
 ---
 # <a name="retentionpolicytype"></a>RetentionPolicyType
 
-El elemento **RetentionPolicyType** especifica el tipo de directiva de retención aplicado a los elementos en una conversación. 
+El elemento **RetentionPolicyType** especifica el tipo de directiva de retención que se aplica a los elementos de una conversación. 
   
 ```XML
 <RetentionPolicyType> Delete | Archive </RetentionPolicyType>
@@ -26,15 +26,15 @@ El elemento **RetentionPolicyType** especifica el tipo de directiva de retenció
  **RetentionType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **RetentionPolicyType** es el tipo de retención aplicado a los elementos en una conversación. El valor de texto de **Eliminar** indica que los elementos de la conversación se eliminan cuando expire la suspensión de retención. El valor de texto del **archivo** indica que los elementos de la conversación se mueven al buzón de archivo cuando expire la suspensión de retención. 
+El valor de texto del elemento **RetentionPolicyType** es el tipo de retención que se aplica a los elementos de una conversación. El valor de texto de **Delete** indica que los elementos de la conversación se eliminan cuando expira la suspensión de retención. El valor de texto de **archivo** indica que los elementos de la conversación se mueven al buzón de archivo cuando expira la suspensión de retención. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 153cc420-d2fe-42f1-afb2-9a31ee09a750
-description: El elemento de notificaciones contiene una matriz de información acerca de la suscripción y los eventos que se han producido desde la última notificación.
-ms.openlocfilehash: f576bf579c91b77dcde8646a6af7fdc47145aef7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Notifications contiene una matriz de información sobre la suscripción y los eventos que se han producido desde la última notificación.
+ms.openlocfilehash: 88fc56ba6e672e3dea7a1d31f7cc1fda018b9a15
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836550"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462622"
 ---
 # <a name="notifications"></a>Notificaciones
 
-El elemento de **notificaciones** contiene una matriz de información acerca de la suscripción y los eventos que se han producido desde la última notificación. 
+El elemento **Notifications** contiene una matriz de información sobre la suscripción y los eventos que se han producido desde la última notificación. 
   
 ```xml
 <Notifications>
@@ -32,23 +32,23 @@ El elemento de **notificaciones** contiene una matriz de información acerca de 
  **NonEmptyArrayOfNotificationsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Notificación](notification-ex15websvcsotherref.md) <br/> |Contiene información acerca de la suscripción y los eventos que se han producido desde la última notificación.  <br/> |
+|[Notificación](notification-ex15websvcsotherref.md) <br/> |Contiene información sobre la suscripción y los eventos que se han producido desde la última notificación.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetStreamingEventsResponseMessage](getstreamingeventsresponsemessage.md) <br/> |Contiene el estado y el resultado de una única solicitud de [operación GetStreamingEvents](getstreamingevents-operation.md) .  <br/> |
+|[GetStreamingEventsResponseMessage](getstreamingeventsresponsemessage.md) <br/> |Contiene el estado y el resultado de una sola solicitud de [operación GetStreamingEvents](getstreamingevents-operation.md) .  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -56,16 +56,16 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda Exchange Web Services.This elemento fue introdujo en Exchange Server 2010 Service Pack 1 (SP1).
+El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda los servicios Web de Exchange. este elemento se introdujo en Exchange Server 2010 Service Pack 1 (SP1).
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages y http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de los mensajes; Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Messages.xsd; Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages y https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes; Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Messages. xsd; Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -79,5 +79,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
   
 [Operación CopyFolder](copyfolder-operation.md)
   
-[Operación de suscripción](subscribe-operation.md)
+[Operación subscribe](subscribe-operation.md)
 

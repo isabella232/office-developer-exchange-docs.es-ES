@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: c55b7bf5-3702-4923-b7c9-b0928cde1de2
-description: El elemento UMUrl especifica la dirección URL de la instancia del servicio Web de mensajería unificada para un usuario habilitado para correo de procedimientos.
-ms.openlocfilehash: f6259430bf9c53c8d0670cdab0dcec4cc6f18213
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UMUrl especifica la dirección URL de la mejor instancia del servicio Web de mensajería unificada para un usuario habilitado para correo.
+ms.openlocfilehash: c80f874e13ac3909ee51bbc63dded100a1e41524
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840744"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463030"
 ---
 # <a name="umurl-pox"></a>UMUrl (POX)
 
-El elemento **UMUrl** especifica la dirección URL de la instancia del servicio Web de mensajería unificada para un usuario habilitado para correo de procedimientos. 
+El elemento **UMUrl** especifica la dirección URL de la mejor instancia del servicio Web de mensajería unificada para un usuario habilitado para correo. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -36,29 +36,29 @@ El elemento **UMUrl** especifica la dirección URL de la instancia del servicio 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente en el equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.  <br/> |
+|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto especifica la dirección URL del servidor de Exchange que tiene el rol de servidor de mensajería unificada instalado para una topología de Exchange.
+El valor de texto especifica la dirección URL del servidor de Exchange que tiene instalada la función de servidor de mensajería unificada para una topología de Exchange.
   
 ## <a name="see-also"></a>Vea también
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

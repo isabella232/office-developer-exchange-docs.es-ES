@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e63c4f7e-77c0-4826-b4e2-43b795d03914
-description: El elemento EditAllowed especifica si se pueden editar Information Rights Management.
-ms.openlocfilehash: 48c7d751c018bf5702b05b41eeaa7ad350189e3a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EditAllowed especifica si Information Rights Management se puede editar.
+ms.openlocfilehash: 979fbaa9fcfbd1015468a8ae00628959bad0bf56
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764308"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463485"
 ---
 # <a name="editallowed"></a>EditAllowed
 
-El elemento **EditAllowed** especifica si se pueden editar Information Rights Management. 
+El elemento **EditAllowed** especifica si Information Rights Management se puede editar. 
   
 ```XML
 <EditAllowed> true | false </EditAllowed>
@@ -26,25 +26,25 @@ El elemento **EditAllowed** especifica si se pueden editar Information Rights Ma
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[RightsManagementLicenseData](rightsmanagementlicensedata.md) <br/> |Especifica información sobre la licencia de administración de derechos.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **EditAllowed** indica que se pueden editar Information Rights Management (IRM). Un valor de **false** indica que no se pueden editar IRM. 
+Un valor de texto de **true** para el elemento **EditAllowed** indica que se puede editar Information Rights Management (IRM). Un valor de **false** indica que no se puede editar IRM. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

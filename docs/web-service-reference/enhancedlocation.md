@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4fdfb74f-f33c-46ae-a7c7-451a5b0c6a59
-description: El elemento EnhancedLocation especifica la información de ubicación, como el nombre, dirección y notas opcionales sobre una ubicación.
-ms.openlocfilehash: 90397cfc622fed40c561d30c13d6617eb979a68a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EnhancedLocation especifica información de ubicación, como el nombre, la dirección y las notas opcionales de una ubicación.
+ms.openlocfilehash: 06ec800b763ef61af51da03ca8a340f6ac4d2a8e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764419"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462960"
 ---
 # <a name="enhancedlocation"></a>EnhancedLocation
 
-El elemento **EnhancedLocation** especifica la información de ubicación, como el nombre, dirección y notas opcionales sobre una ubicación. 
+El elemento **EnhancedLocation** especifica información de ubicación, como el nombre, la dirección y las notas opcionales de una ubicación. 
   
 ```XML
 <EnhancedLocation>
@@ -30,27 +30,27 @@ El elemento **EnhancedLocation** especifica la información de ubicación, como 
  **EnhancedLocationType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[DisplayName (cadena)](displayname-string.md) <br/> |Define el nombre para mostrar de una carpeta, contacto, lista de distribución, usuario delegado, ubicación o regla.  <br/> |
-|[Anotación](annotation.md) <br/> |Contiene notas opcionales agregadas por un usuario.  <br/> |
-|[PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md) <br/> |Especifica la dirección postal para un rol.  <br/> |
+|[DisplayName (cadena)](displayname-string.md) <br/> |Define el nombre para mostrar de una carpeta, un contacto, una lista de distribución, un usuario delegado, una ubicación o una regla.  <br/> |
+|[Anotación](annotation.md) <br/> |Contiene las notas opcionales agregadas por un usuario.  <br/> |
+|[PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md) <br/> |Especifica la dirección postal de un rol.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Representa la cancelación de la reunión en el almacén de Exchange.  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta a la reunión en el almacén de Exchange.  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Representa una cancelación de reunión en el almacén de Exchange.  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta a una reunión en el almacén de Exchange.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -62,14 +62,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

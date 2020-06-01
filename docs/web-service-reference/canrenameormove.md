@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: fe0cdb04-5f2b-4f1d-9d12-7ace0883cd86
-description: El elemento CanRenameOrMove indica si se puede cambiar el nombre de una carpeta administrada o movida por el cliente.
-ms.openlocfilehash: 0303499f5cd54d4a52222e43c2c5f0b389fbcf53
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento CanRenameOrMove indica si el cliente puede cambiar el nombre de una carpeta administrada o moverla.
+ms.openlocfilehash: eb6aaeb8b0edcab5b67212c426a44daf32a0cf73
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763729"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463366"
 ---
 # <a name="canrenameormove"></a>CanRenameOrMove
 
-El elemento **CanRenameOrMove** indica si se puede cambiar el nombre de una carpeta administrada o movida por el cliente. 
+El elemento **CanRenameOrMove** indica si el cliente puede cambiar el nombre de una carpeta administrada o moverla. 
   
 ```xml
 <CanRenameOrMove/>
@@ -30,42 +30,42 @@ El elemento **CanRenameOrMove** indica si se puede cambiar el nombre de una carp
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[ManagedFolderInformation](managedfolderinformation.md) <br/> |Contiene información acerca de una carpeta administrada.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa un valor de tipo Boolean. Un valor de **true** indica que se puede cambiar el nombre de la carpeta o mover; un valor de **false** indica que la carpeta no se cambia o se desplaza. 
+El valor de texto representa un valor booleano. Un valor de **true** indica que la carpeta se puede cambiar de nombre o mover; un valor de **false** indica que no se puede cambiar el nombre de la carpeta ni se puede mover. 
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

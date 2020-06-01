@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4fdb373e-bf1b-4cb0-bbfb-444c6c6cec50
-description: El elemento Condition especifica la condición que se usa para identificar el final de una búsqueda para un FindItem o una operación de FindConversation.
-ms.openlocfilehash: 513fc21be52a90698f1c292d6d20d7cdaab07371
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Condition especifica la condición que se usa para identificar el final de una búsqueda de una operación FindItem o FindConversation.
+ms.openlocfilehash: 00c5b5e615ed9b253c79dae9dc2b89c797853089
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763762"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463940"
 ---
 # <a name="condition-restrictiontype"></a>Condición (RestrictionType)
 
-El elemento **Condition** especifica la condición que se usa para identificar el final de una búsqueda para un **FindItem** o una operación de **FindConversation** . 
+El elemento **Condition** especifica la condición que se usa para identificar el final de una búsqueda de una operación **FindItem** o **FindConversation** . 
   
 ```XML
 <Condition>
@@ -28,23 +28,23 @@ El elemento **Condition** especifica la condición que se usa para identificar e
  **RestrictionType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SearchExpression](searchexpression.md) <br/> |Elemento abstracta que representa el elemento sustituido dentro de una restricción.  <br/> |
+|[SearchExpression](searchexpression.md) <br/> |Elemento abstracto que representa el elemento sustituido dentro de una restricción.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SeekToConditionPageItemView](seektoconditionpageitemview.md) <br/> |Identifica la condición que se usa para identificar el final de una búsqueda, el índice de inicio de una búsqueda, las entradas máximas para devolver y las instrucciones de búsqueda para un **FindItem** o una operación de **FindConversation** .  <br/> |
+|[SeekToConditionPageItemView](seektoconditionpageitemview.md) <br/> |Identifica la condición que se usa para identificar el final de una búsqueda, el índice inicial de una búsqueda, las entradas máximas que se devolverán y las direcciones de búsqueda de una operación **FindItem** o **FindConversation** .  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

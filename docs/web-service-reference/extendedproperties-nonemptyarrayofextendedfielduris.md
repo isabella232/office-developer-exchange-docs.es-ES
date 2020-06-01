@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 282ddb7f-00e3-4260-ab85-73fea9317c0e
-description: El elemento ExtendedProperties contiene las propiedades extendidas que se usan para las operaciones de almacén de contactos unificados.
-ms.openlocfilehash: af0ae532e578b5ec4dd5622de22a71e1929d6f7d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ExtendedProperties contiene las propiedades extendidas usadas para las operaciones de almacenamiento de contactos unificadas.
+ms.openlocfilehash: 78580e69c37657d1873ed95a6b3761c6a458e28f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764511"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463121"
 ---
 # <a name="extendedproperties-nonemptyarrayofextendedfielduris"></a>ExtendedProperties (NonEmptyArrayOfExtendedFieldURIs)
 
-El elemento **ExtendedProperties** contiene las propiedades extendidas que se usan para las operaciones de almacén de contactos unificados. 
+El elemento **ExtendedProperties** contiene las propiedades extendidas usadas para las operaciones de almacenamiento de contactos unificadas. 
   
 ```XML
 <ExtendedProperties>
@@ -28,19 +28,19 @@ El elemento **ExtendedProperties** contiene las propiedades extendidas que se us
  **NonEmptyArrayOfExtendedFieldURIs**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[ExtendedProperty (PathToExtendedFieldType)](extendedproperty-pathtoextendedfieldtype.md)
+[Las extendedproperty (PathToExtendedFieldType)](extendedproperty-pathtoextendedfieldtype.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[GetImItems](getimitems.md) | [GetImItemList](getimitemlist.md)
+[GetImItems](getimitems.md)  |  [GetImItemList](getimitemlist.md)
   
 ## <a name="remarks"></a>Comentarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

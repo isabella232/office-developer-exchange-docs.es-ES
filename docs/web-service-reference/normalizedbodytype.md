@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c6973aee-ec7b-44c1-b328-f2204d9de5d1
 description: El elemento NormalizedBodyType especifica si el cuerpo normalizado se devuelve en formato de texto o HTML.
-ms.openlocfilehash: 33575594b22f972a9eb762dfac884fa91459f04a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: e5d968673403eba24a68c67175e3ebcbb35eca39
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836554"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462664"
 ---
 # <a name="normalizedbodytype"></a>NormalizedBodyType
 
@@ -26,15 +26,15 @@ El elemento **NormalizedBodyType** especifica si el cuerpo normalizado se devuel
  **BodyTypeResponseType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,13 +42,13 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **NormalizedBodyType** indica el formato del cuerpo normalizado se devuelve en. En la siguiente tabla se enumera los valores posibles para este elemento. 
+El valor de texto del elemento **NormalizedBodyType** indica el formato en el que se devuelve el cuerpo normalizado. En la siguiente tabla se enumeran los valores posibles para este elemento. 
   
 ****
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Mejor  <br/> |La respuesta devolverá el contenido disponible más completa del texto del cuerpo. Esto es útil si se desconoce si el contenido es texto o HTML.  <br/> El cuerpo devuelto será texto si el cuerpo almacenado es texto sin formato. De lo contrario, la respuesta devolverá HTML si se encuentra el cuerpo almacenado en formato HTML o RTF.  <br/> Éste es el valor predeterminado.  <br/> |
+|Procedimientos  <br/> |La respuesta devolverá el contenido más enriquecido disponible del texto del cuerpo. Esto es útil si es desconocido si el contenido es de texto o HTML.  <br/> El cuerpo devuelto será Text si el cuerpo almacenado es texto sin formato. De lo contrario, la respuesta devolverá HTML si el cuerpo almacenado está en formato HTML o RTF.  <br/> Este es el valor predeterminado.  <br/> |
 |HTML  <br/> |La respuesta devolverá un cuerpo normalizado como HTML.  <br/> |
 |Texto  <br/> |La respuesta devolverá un cuerpo normalizado como texto sin formato.  <br/> |
    
@@ -62,9 +62,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
@@ -74,5 +74,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [ItemShape](itemshape.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

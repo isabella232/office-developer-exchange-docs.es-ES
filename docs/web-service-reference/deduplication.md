@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a38acc3d-29a8-4466-81a4-73cb30fe5e80
-description: El elemento de desduplicación indica si el resultado de búsqueda debe quitar los elementos duplicados.
-ms.openlocfilehash: 3f06bb1dccd0677b7fd43c4ad82eda54a0c3f812
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento de desduplicación indica si el resultado de la búsqueda debe quitar elementos duplicados.
+ms.openlocfilehash: c39f980658aba7036cfabb3b51af5a41005f97b6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764065"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463716"
 ---
 # <a name="deduplication"></a>Desduplicación
 
-El elemento de **desduplicación** indica si el resultado de búsqueda debe quitar los elementos duplicados. 
+El elemento de **desduplicación** indica si el resultado de la búsqueda debe quitar elementos duplicados. 
   
 ```XML
 <Deduplication> true | false </Deduplication>
@@ -27,23 +27,23 @@ El elemento de **desduplicación** indica si el resultado de búsqueda debe quit
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[SearchMailboxes](searchmailboxes.md) | [SetHoldOnMailboxes](setholdonmailboxes.md)
+[SearchMailboxes](searchmailboxes.md)  |  [SetHoldOnMailboxes](setholdonmailboxes.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento de desduplicación indica que los resultados de búsqueda no pueden contener elementos duplicados. Un valor de **false** indica que los resultados de búsqueda pueden contener elementos duplicados. 
+Un valor de texto de **true** para el elemento de desduplicación indica que los resultados de la búsqueda no pueden contener elementos duplicados. Un valor de **false** indica que los resultados de la búsqueda pueden contener elementos duplicados. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

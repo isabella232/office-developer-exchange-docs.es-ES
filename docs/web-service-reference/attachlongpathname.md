@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: b34629f3-19a8-4add-a06c-a160c4288dae
-description: El elemento AttachLongPathName está pensado para uso interno únicamente.
-ms.openlocfilehash: cb763844d66e91c8fe89efa5002890373b22ac6e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AttachLongPathName está destinado sólo para uso interno.
+ms.openlocfilehash: f8a120e56eb1d20e99f6054eef003ddade22fea2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763576"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464269"
 ---
 # <a name="attachlongpathname"></a>AttachLongPathName
 
-El elemento **AttachLongPathName** está pensado para uso interno únicamente. 
+El elemento **AttachLongPathName** está destinado sólo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

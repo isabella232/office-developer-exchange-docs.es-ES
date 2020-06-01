@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f41b5be6-9b79-4e83-8cdb-aa779e13cb3f
-description: El elemento DisableReason especifica la razón para deshabilitar una aplicación.
-ms.openlocfilehash: f900bd1b98b294900f767c778b9c5f87f74042ca
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DisableReason especifica el motivo por el que se deshabilita una aplicación.
+ms.openlocfilehash: 1406d69647bde5389dc9bb61adf7537a57d5adfc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764185"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463674"
 ---
 # <a name="disablereason"></a>DisableReason
 
-El elemento **DisableReason** especifica la razón para deshabilitar una aplicación. 
+El elemento **DisableReason** especifica el motivo por el que se deshabilita una aplicación. 
   
 ```XML
 <DisableReason> NoReason | OutlookClientPerformance | OWAClientPerformance | MobileClientPerformance </DisableReason>
@@ -26,19 +26,19 @@ El elemento **DisableReason** especifica la razón para deshabilitar una aplicac
  **DisableReasonType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[DisableApp](disableapp.md) <br/> |Especifica una solicitud para deshabilitar una aplicación.  <br/> |
    
@@ -48,10 +48,10 @@ Ninguno.
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|NoReason  <br/> |No hay motivo  <br/> |
-|OutlookClientPerformance  <br/> |Para mejorar el rendimiento del cliente de correo electrónico.  <br/> |
-|OWAClientPerformance  <br/> |Para mejorar el rendimiento de las aplicaciones cliente Web.  <br/> |
-|MobileClientPerformance  <br/> |Para mejorar el rendimiento de cliente móvil.  <br/> |
+|Noreason  <br/> |Sin motivo dado  <br/> |
+|OutlookClientPerformance  <br/> |Mejorar el rendimiento del cliente de correo electrónico.  <br/> |
+|OWAClientPerformance  <br/> |Para mejorar el rendimiento del cliente de la aplicación Web.  <br/> |
+|MobileClientPerformance  <br/> |Mejorar el rendimiento del cliente móvil.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -63,12 +63,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

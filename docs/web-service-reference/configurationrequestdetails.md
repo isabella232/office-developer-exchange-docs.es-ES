@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 545cfe9d-9995-44d6-a3d0-4d43a169cf67
-description: El elemento ConfigurationRequestDetails contiene el estado de cliente para desplazar de directiva. Las reglas que están instaladas y la versión de componente de cliente, puede incluir la información de estado.
-ms.openlocfilehash: 5195f32f6711ad565922918893209dc01d68d7c6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ConfigurationRequestDetails contiene el estado del cliente para los zumbidos de la Directiva. La información de estado puede incluir las reglas instaladas y la versión del componente de cliente.
+ms.openlocfilehash: 302327a13a108f1d87d39bdfd16346a6c43a7557
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763771"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463919"
 ---
 # <a name="configurationrequestdetails"></a>ConfigurationRequestDetails
 
-El elemento **ConfigurationRequestDetails** contiene el estado de cliente para desplazar de directiva. Las reglas que están instaladas y la versión de componente de cliente, puede incluir la información de estado. 
+El elemento **ConfigurationRequestDetails** contiene el estado del cliente para los zumbidos de la Directiva. La información de estado puede incluir las reglas instaladas y la versión del componente de cliente. 
   
 ```XML
 <ConfigurationRequestDetails></ConfigurationRequestDetails>
@@ -26,15 +26,15 @@ El elemento **ConfigurationRequestDetails** contiene el estado de cliente para d
  **ConfigurationRequestDetailsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Los elementos secundarios no están definidos en el esquema de los servicios Web Exchange.
+Los elementos secundarios no se definen en el esquema de servicios Web de Exchange.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -50,9 +50,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 04b999af-0b27-4e6d-a8b1-400955a1afaa
-description: El elemento DeliverMeetingRequests define cómo se controlan las convocatorias de reunión entre el delegado y la entidad de seguridad. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).
-ms.openlocfilehash: 803bd2da72bdb21b507a59cc11635a40d4431acf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DeliverMeetingRequests define cómo se administran las convocatorias de reunión entre el delegado y la entidad de la identidad. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).
+ms.openlocfilehash: 3998443613437bca2267678f7bc2c5584b779135
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764121"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463681"
 ---
 # <a name="delivermeetingrequests"></a>DeliverMeetingRequests
 
-El elemento **DeliverMeetingRequests** define cómo se controlan las convocatorias de reunión entre el delegado y la entidad de seguridad. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1). 
+El elemento **DeliverMeetingRequests** define cómo se administran las convocatorias de reunión entre el delegado y la entidad de la identidad. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1). 
   
 ```XML
 <DeliverMeetingRequests>DelegatesOnly or DelegatesAndMe or DelegatesAndSendInformationToMe or NoForward</DeliverMeetingRequests>
@@ -30,40 +30,40 @@ El elemento **DeliverMeetingRequests** define cómo se controlan las convocatori
  **DeliverMeetingRequestsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AddDelegate](adddelegate.md) <br/> |Define una solicitud para agregar delegados a un buzón de correo. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
-|[UpdateDelegate](updatedelegate.md) <br/> |Define una solicitud para actualizar los delegados en un buzón de correo. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
-|[GetDelegateResponse](getdelegateresponse.md) <br/> |Contiene el estado y el resultado de una solicitud de GetDelegate. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
+|[AddDelegate](adddelegate.md) <br/> |Define una solicitud para agregar delegados a un buzón. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
+|[UpdateDelegate](updatedelegate.md) <br/> |Define una solicitud para actualizar delegados en un buzón. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
+|[GetDelegateResponse](getdelegateresponse.md) <br/> |Contiene el estado y el resultado de una solicitud GetDelegate. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-En la siguiente tabla se enumera los valores posibles para el elemento **DeliverMeetingRequests** . 
+En la siguiente tabla se enumeran los valores posibles para el elemento **DeliverMeetingRequests** . 
   
-**Valores de elemento DeliverMeetingRequests**
+**Valores del elemento DeliverMeetingRequests**
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|DelegatesOnly  <br/> |Las convocatorias de reunión se transfieren al delegado y movidas a la carpeta Elementos eliminados en el buzón de la entidad de seguridad.  <br/> |
-|DelegatesAndMe  <br/> |Las convocatorias de reunión se transfieren al delegado y permanecerán en la carpeta Bandeja de entrada en el buzón de la entidad de seguridad.  <br/> |
-|DelegatesAndSendInformationToMe  <br/> |Las convocatorias de reunión se transfieren al delegado y permanecerán en la carpeta Bandeja de entrada en el buzón de la entidad de seguridad, pero los botones Aceptar, provisional y rechazar no aparecen en el panel de lectura de Microsoft Office Outlook.  <br/> |
-|NoForward  <br/> |Las convocatorias de reunión no se transfieren al delegado.  <br/> |
+|DelegatesOnly  <br/> |Las convocatorias de reunión se reenvían al delegado y se mueven a la carpeta elementos eliminados en el buzón de la entidad de la identidad.  <br/> |
+|DelegatesAndMe  <br/> |Las convocatorias de reunión se reenvían al delegado y permanecen en la carpeta Bandeja de entrada en el buzón de la entidad.  <br/> |
+|DelegatesAndSendInformationToMe  <br/> |Las convocatorias de reunión se reenvían al delegado y permanecen en la carpeta Bandeja de entrada en el buzón de correo de la entidad de la identidad, pero los botones aceptar, provisional y rechazar no aparecen en el panel de lectura de Microsoft Office Outlook.  <br/> |
+|No reenviar  <br/> |Las convocatorias de reunión no se reenvían al delegado.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-La configuración de **DeliverMeetingRequests** afecta a todos los delegados en el buzón de correo de una entidad de seguridad. 
+La configuración **DeliverMeetingRequests** afecta a todos los delegados del buzón de una entidad de identidad. 
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -71,16 +71,16 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación AddDelegate](adddelegate-operation.md)  
 - [Operación UpdateDelegate](updatedelegate-operation.md)  
 - [Operación GetDelegate](getdelegate-operation.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
-- [Adición de delegados](http://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Adición de delegados](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

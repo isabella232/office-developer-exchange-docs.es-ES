@@ -9,16 +9,16 @@ api_type:
 - schema
 ms.assetid: 0e9836a8-ccc9-4cc0-aa6a-9b299c5841d0
 description: El elemento EMailAddress identifica la dirección de correo electrónico del usuario.
-ms.openlocfilehash: 7675ef18565d27db62f5662e651e982176001815
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 207de9acd62782d651055d6f6dab12c8ebe6e807
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764334"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463443"
 ---
 # <a name="emailaddress-pox"></a>EMailAddress (POX)
 
-El elemento **EMailAddress** identifica la dirección de correo electrónico del usuario. 
+El elemento **EmailAddress** identifica la dirección de correo electrónico del usuario. 
   
 - [Detección automática (POX)](autodiscover-pox.md) 
 - [Solicitud (POX)](request-pox.md) 
@@ -30,21 +30,21 @@ El elemento **EMailAddress** identifica la dirección de correo electrónico del
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Solicitud (POX)](request-pox.md) <br/> |Contiene la solicitud para el servicio Detección automática.  <br/> |
+|[Solicitud (POX)](request-pox.md) <br/> |Contiene la solicitud al servicio Detección automática.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -56,5 +56,5 @@ El elemento [LegacyDN (POX)](legacydn-pox.md) proporciona un elemento alternativ
   
 ## <a name="see-also"></a>Vea también
 
-- [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+- [Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

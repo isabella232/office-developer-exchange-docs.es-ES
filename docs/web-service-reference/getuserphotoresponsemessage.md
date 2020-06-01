@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 54d43fe6-9f7b-4f84-920a-bd686c65b059
-description: El elemento GetUserPhotoResponseMessage contiene la respuesta a una solicitud de GetUserPhoto.
-ms.openlocfilehash: fa817b59527f616afed84d8548e3a18e6c971e2d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetUserPhotoResponseMessage contiene la respuesta a una solicitud GetUserPhoto.
+ms.openlocfilehash: a6df1204d4ac3a976694afbca008852acef6a76e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835696"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463303"
 ---
 # <a name="getuserphotoresponsemessage"></a>GetUserPhotoResponseMessage
 
-El elemento **GetUserPhotoResponseMessage** contiene la respuesta a una solicitud de GetUserPhoto. 
+El elemento **GetUserPhotoResponseMessage** contiene la respuesta a una solicitud GetUserPhoto. 
   
 ```XML
 <GetUserPhotoResponseMessage>
@@ -33,15 +33,15 @@ El elemento **GetUserPhotoResponseMessage** contiene la respuesta a una solicitu
  **GetUserPhotoResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [HasChanged](haschanged.md) | [PictureData](picturedata.md)
+[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)  |  [HasChanged](haschanged.md)  |  [PictureData](picturedata.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -57,9 +57,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

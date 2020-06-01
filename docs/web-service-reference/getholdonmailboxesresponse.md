@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8af93c14-c4f0-4ec3-a1e6-4742a0a14eee
-description: El elemento GetHoldOnMailboxes contiene la solicitud para obtener el estado de retención para un buzón de correo.
-ms.openlocfilehash: aa8f02f8bee80060c86a55c27e138be81b59706e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetHoldOnMailboxes contiene la solicitud para obtener el estado de retención de un buzón.
+ms.openlocfilehash: fee6cd4781533cb779a971ebba46707527623dcc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764860"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462839"
 ---
 # <a name="getholdonmailboxesresponse"></a>GetHoldOnMailboxesResponse
 
-El elemento **GetHoldOnMailboxes** contiene la solicitud para obtener el estado de retención para un buzón de correo. 
+El elemento **GetHoldOnMailboxes** contiene la solicitud para obtener el estado de retención de un buzón. 
   
 ```XML
 <GetHoldOnMailboxes>
@@ -28,11 +28,11 @@ El elemento **GetHoldOnMailboxes** contiene la solicitud para obtener el estado 
  **GetHoldOnMailboxesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

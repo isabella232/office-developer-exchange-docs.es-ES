@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: dc59e17e-baea-4617-8ca1-4382a89de0d7
-description: El elemento de atribución especifica una instancia de una matriz de atributos para un elemento PersonaType.
-ms.openlocfilehash: 0e800c92c75bf0c475d4bffd33d6ab49f9ad9a9a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento de atribución especifica una instancia en una matriz de atributos para un elemento PersonaType.
+ms.openlocfilehash: 05b0d41c116f2ed7b8dbb3ac44108bb879256b5c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763581"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464178"
 ---
 # <a name="attribution-personaattributiontype"></a>Atribución (PersonaAttributionType)
 
-El elemento de **atribución** especifica una instancia de una matriz de atributos para un elemento **PersonaType** . 
+El elemento de **atribución** especifica una instancia en una matriz de atributos para un elemento **PersonaType** . 
   
 ```XML
 <Attribution>
@@ -34,29 +34,29 @@ El elemento de **atribución** especifica una instancia de una matriz de atribut
  **PersonaAttributionType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Identificador (cadena)](id-string.md) <br/> |Especifica una cadena que identifica de forma exclusiva una aplicación o una atribución en un rol.  <br/> |
-|[SourceId](sourceid.md) <br/> |Especifica el identificador del contacto o destinatario de Active Directory.  <br/> |
-|[DisplayName (cadena)](displayname-string.md) <br/> |Define el nombre para mostrar de una carpeta, contacto, lista de distribución, usuario delegado o regla.  <br/> |
-|[IsWritable](iswritable.md) <br/> |Especifica si se puede escribir en el contacto subyacente o el destinatario de Active Directory.  <br/> |
+|[ID (cadena)](id-string.md) <br/> |Especifica una cadena que identifica de forma única una aplicación o una atribución en un rol.  <br/> |
+|[SourceId](sourceid.md) <br/> |Especifica el identificador del destinatario de contacto o de Active Directory.  <br/> |
+|[DisplayName (cadena)](displayname-string.md) <br/> |Define el nombre para mostrar de una carpeta, un contacto, una lista de distribución, un usuario delegado o una regla.  <br/> |
+|[IsWritable](iswritable.md) <br/> |Especifica si se puede escribir en el contacto subyacente o en el destinatario de Active Directory.  <br/> |
 |[IsQuickContact](isquickcontact.md) <br/> |Especifica un valor booleano que indica si el contacto subyacente o el destinatario de Active Directory es un contacto rápido.  <br/> |
-|[IsHidden](ishidden.md) <br/> |Contiene un valor booleano que indica si el contacto subyacente o el destinatario de Active Directory debe ser oculto o que se muestra como parte del rol.  <br/> |
-|[FolderId](folderid.md) <br/> |Contiene el identificador y cambiar la clave de una carpeta.  <br/> |
+|[IsHidden](ishidden.md) <br/> |Contiene un valor booleano que indica si el contacto subyacente o el destinatario de Active Directory se deben ocultar o mostrar como parte del rol.  <br/> |
+|[FolderId](folderid.md) <br/> |Contiene el identificador y la clave de cambio de una carpeta.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Atribuciones (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md) <br/> |Especifica una matriz de información de atribución para uno o varios de los contactos o los destinatarios de active directory (AD) agregados a la persona asociada.  <br/> |
+|[Atribuciones (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md) <br/> |Especifica una matriz de información de atribución de uno o varios de los contactos o de los destinatarios de Active Directory (AD) agregados al rol asociado.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -68,12 +68,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

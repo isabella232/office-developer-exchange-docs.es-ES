@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 04a6968d-7fb5-47ee-b66e-dc99c35dbb63
-description: El elemento HasStartTimeChanged especifica si se ha cambiado la hora de inicio para una reunión.
-ms.openlocfilehash: 2096084f4ec8848a63d10e0e80fdc7a37e473cd8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento HasStartTimeChanged especifica si la hora de inicio de una reunión ha cambiado.
+ms.openlocfilehash: 1355917005d956d05064bfc095055fb72aa16c57
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835809"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462748"
 ---
 # <a name="hasstarttimechanged"></a>HasStartTimeChanged
 
-El elemento **HasStartTimeChanged** especifica si se ha cambiado la hora de inicio para una reunión. 
+El elemento **HasStartTimeChanged** especifica si la hora de inicio de una reunión ha cambiado. 
   
 ```XML
 <HasStartTimeChanged> true | false </HasStartTimeChanged>
@@ -26,25 +26,25 @@ El elemento **HasStartTimeChanged** especifica si se ha cambiado la hora de inic
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ChangeHighlights](changehighlights.md) <br/> |Especifica qué ha cambiado entre dos versiones de una reunión de mensaje de solicitud.  <br/> |
+|[ChangeHighlights](changehighlights.md) <br/> |Especifica qué ha cambiado entre dos versiones de un mensaje de convocatoria de reunión.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **HasStartTimeChanged** indica que ha cambiado la hora de inicio para una reunión. Un valor de **false** indica que no ha cambiado la hora de inicio. 
+Un valor de texto de **true** para el elemento **HasStartTimeChanged** indica que la hora de inicio de una reunión ha cambiado. Un valor de **false** indica que la hora de inicio no ha cambiado. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

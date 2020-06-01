@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0cdabfcb-7658-4c7d-bb03-1e776ed11e43
-description: El elemento EmailAddress especifica la dirección SMTP completa resuelta para el buzón de sitio o de la persona asociada.
-ms.openlocfilehash: c31a37fc0dbdcc2b501b82346a17a0a3b4775556
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EmailAddress especifica la dirección SMTP completamente resuelta para el buzón de sitio o el rol asociado.
+ms.openlocfilehash: 8b04b75e91cc16be7f88c9a0ac08c5e36855056e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764332"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463464"
 ---
 # <a name="emailaddress-emailaddresstype"></a>EmailAddress (EmailAddressType)
 
-El elemento **EmailAddress** especifica la dirección SMTP completa resuelta para el buzón de sitio o de la persona asociada. 
+El elemento **EmailAddress** especifica la dirección SMTP completamente resuelta para el buzón de sitio o el rol asociado. 
   
 ```xml
 <EmailAddress>
@@ -32,27 +32,27 @@ El elemento **EmailAddress** especifica la dirección SMTP completa resuelta par
  **EmailAddressType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Name (cadena)](name-string.md) <br/> |Especifica un nombre de búsqueda refinador o clave o el nombre de un usuario de correo electrónico.  <br/> |
+|[Name (cadena)](name-string.md) <br/> |Especifica un nombre de refinador de búsqueda o una clave o el nombre de un usuario de correo electrónico.  <br/> |
 |[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Define la dirección SMTP principal de un usuario de buzón de correo.  <br/> |
-|[RoutingType (EmailAddressType)](routingtype-emailaddresstype.md) <br/> |Especifica el tipo de distribución de una dirección de correo electrónico.  <br/> |
-|[MailboxType](mailboxtype.md) <br/> |Representa el tipo de buzón de correo que está representada por la dirección de correo electrónico.  <br/> |
-|[ItemId](itemid.md) <br/> |Contiene el único identificador y cambiar la clave de un elemento en el almacén de Exchange.  <br/> |
+|[RoutingType (EmailAddressType)](routingtype-emailaddresstype.md) <br/> |Especifica el tipo de enrutamiento de una dirección de correo electrónico.  <br/> |
+|[MailboxType](mailboxtype.md) <br/> |Representa el tipo de buzón que se representa mediante la dirección de correo electrónico.  <br/> |
+|[ItemId](itemid.md) <br/> |Contiene el identificador único y la clave de cambio de un elemento en el almacén de Exchange.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud de **GetPersona** .  <br/> |
+|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud **GetPersona** .  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -62,18 +62,18 @@ Ninguno.
 
 Este elemento es opcional.
   
-El elemento **EmailAddress** es aplicable para los clientes que estén destinados a Exchange Online y versiones de Exchange 2013 a partir de Microsoft Exchange Server. 
+El elemento **EmailAddress** se aplica a los clientes de Exchange Online y versiones de Microsoft Exchange Server que empiecen por Exchange 2013. 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

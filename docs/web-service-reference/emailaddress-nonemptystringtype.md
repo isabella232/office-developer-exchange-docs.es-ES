@@ -11,12 +11,12 @@ api_type:
 - schema
 ms.assetid: c0c708d1-b016-4902-a294-9af44aea2050
 description: El elemento EmailAddress define la dirección SMTP principal de un usuario de buzón de correo.
-ms.openlocfilehash: fcf2839c1e2e40a22d6b6a856608f52f2c9c2a1a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: fcc3e650d5fc32344022ed6f015d4096a4461f63
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764339"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463135"
 ---
 # <a name="emailaddress-nonemptystringtype"></a>EmailAddress (NonEmptyStringType)
 
@@ -29,31 +29,31 @@ El elemento **EmailAddress** define la dirección SMTP principal de un usuario d
  **NonEmptyStringType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ActingAs](actingas.md) <br/> |Identifique quién envía como el autor de la llamada.  <br/> |
-|[Buzón de correo](mailbox.md) <br/> | Identifica una dirección de correo electrónico completa resuelta.  <br/><br/>Las siguientes son algunas expresiones de XPath para este elemento:<br/><br/>`/CreateItem/ParentFolderId/DistinguishedFolderId/Mailbox`<br/><br/>`/CreateFolder/ParentFolderId/DistinguishedFolderId/Mailbox`<br/><br/>`CreateItem/Items/AcceptItem/ToRecipients/Mailbox`<br/><br/>`SyncFolderItemsResponseMessage/Changes/Create/CalendarItem/ConflictingMeetings/AcceptItem/CcRecipients/Mailbox`<br/><br/>Los siguientes son elementos de primario adicionales del elemento de buzón de correo:<br/><br/>- [BccRecipients](bccrecipients.md) <br/>- [ReplyTo](replyto.md) <br/>- [Remitente](sender.md) <br/>- [De](from.md) <br/>- [Organizador](organizer.md) <br/>- [DistinguishedFolderId](distinguishedfolderid.md) <br/>- [Resolución](resolution.md) <br/>- [DLExpansion](dlexpansion.md) <br/>- [ATTENDEE](attendee.md) <br/> |
-|[RoomList](roomlist.md) <br/> |Identifica una lista de las salas de reuniones por dirección de correo electrónico.  <br/> |
+|[Acciones](actingas.md) <br/> |Identifica quién envía el autor de la llamada.  <br/> |
+|[Buzón](mailbox.md) <br/> | Identifica una dirección de correo electrónico completamente resuelta.  <br/><br/>Las siguientes son algunas expresiones XPath de este elemento:<br/><br/>`/CreateItem/ParentFolderId/DistinguishedFolderId/Mailbox`<br/><br/>`/CreateFolder/ParentFolderId/DistinguishedFolderId/Mailbox`<br/><br/>`CreateItem/Items/AcceptItem/ToRecipients/Mailbox`<br/><br/>`SyncFolderItemsResponseMessage/Changes/Create/CalendarItem/ConflictingMeetings/AcceptItem/CcRecipients/Mailbox`<br/><br/>Los siguientes son elementos primarios adicionales del elemento Mailbox:<br/><br/>- [BccRecipients](bccrecipients.md) <br/>- [ReplyTo](replyto.md) <br/>- [Remitente](sender.md) <br/>- [De](from.md) <br/>- [Organizador](organizer.md) <br/>- [DistinguishedFolderId](distinguishedfolderid.md) <br/>- [N](resolution.md) <br/>- [DLExpansion](dlexpansion.md) <br/>- [Asistente](attendee.md) <br/> |
+|[RoomList](roomlist.md) <br/> |Identifica una lista de salas de reuniones por dirección de correo electrónico.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto que representa una dirección SMTP.
+Se necesita un valor de texto que represente una dirección SMTP.
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento **EmailAddress** puede representar SMTP o distintivos (DN) de Exchange heredado direcciones de nombre (también conocido como DN). El elemento **EmailAddress** es el único elemento necesario de [buzón de correo](mailbox.md) . 
+El elemento **EmailAddress** puede representar direcciones SMTP o heredadas de nombres distintivos de Exchange (también conocidos como DN). El elemento **EmailAddress** es el único elemento necesario del [buzón de correo](mailbox.md) . 
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -61,9 +61,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bc04e44e-e6d1-4355-a2b1-feb6663dc647
-description: El elemento EndWallClock especifica la hora de finalización de una reunión en la zona horaria de la ubicación en la que lleva a cabo la reunión.
-ms.openlocfilehash: 10e4a2bde50354b2f2752751c01a6a70aa084d05
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EndWallClock especifica la hora de finalización de una reunión en la zona horaria de la ubicación en la que tiene lugar la reunión.
+ms.openlocfilehash: 48b762d0bfe367b966b6f1790230f6a2118c3fd6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764414"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462974"
 ---
 # <a name="endwallclock"></a>EndWallClock
 
-El elemento **EndWallClock** especifica la hora de finalización de una reunión en la zona horaria de la ubicación en la que lleva a cabo la reunión. 
+El elemento **EndWallClock** especifica la hora de finalización de una reunión en la zona horaria de la ubicación en la que tiene lugar la reunión. 
   
 ```XML
 <EndWallClock></EndWallClock>
@@ -26,25 +26,25 @@ El elemento **EndWallClock** especifica la hora de finalización de una reunión
  **dateTime**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud de **GetPersona** .  <br/> |
+|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud **GetPersona** .  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **EndWallClock** es un valor de tipo string que especifica el identificador de zona horaria. 
+El valor de texto del elemento **EndWallClock** es un valor de cadena que especifica el identificador de la zona horaria. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

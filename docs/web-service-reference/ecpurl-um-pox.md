@@ -1,22 +1,22 @@
 ---
-title: EcpUrl-mensajería unificada (POX)
+title: EcpUrl-UM (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 455c77c6-c03f-49a7-a8ca-aa0023b6e73b
-description: El elemento EcpUrl um especifica una dirección URL parcial que se puede combinar con el valor del elemento EcpUrl (POX) para generar una dirección URL que se puede usar para tener acceso a la configuración de correo de voz para un usuario habilitado para correo.
-ms.openlocfilehash: 5f9be67f02703bbdfeb114eda13c5ce59f83290d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EcpUrl-um especifica una dirección URL parcial que se puede combinar con el valor del elemento EcpUrl (POX) para generar una dirección URL que se puede usar para obtener acceso a la configuración del correo de voz para un usuario habilitado para correo.
+ms.openlocfilehash: 0fa3d42113d7d9accd6bba3d3b065477baf4d484
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764305"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463492"
 ---
-# <a name="ecpurl-um-pox"></a>EcpUrl-mensajería unificada (POX)
+# <a name="ecpurl-um-pox"></a>EcpUrl-UM (POX)
 
-El elemento **EcpUrl um** especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para tener acceso a la configuración de correo de voz para un usuario habilitado para correo. 
+El elemento **EcpUrl-um** especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para obtener acceso a la configuración del correo de voz para un usuario habilitado para correo. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -26,7 +26,7 @@ El elemento **EcpUrl um** especifica una dirección URL parcial que se puede com
   
 [Protocolo (POX)](protocol-pox.md)
   
-[EcpUrl-mensajería unificada (POX)](ecpurl-um-pox.md)
+[EcpUrl-UM (POX)](ecpurl-um-pox.md)
   
 ```XML
 <EcpUrl-um/>
@@ -34,33 +34,33 @@ El elemento **EcpUrl um** especifica una dirección URL parcial que se puede com
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente en el equipo que ejecuta Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.  <br/> |
+|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para tener acceso a la configuración de correo de voz para el usuario. 
+El valor de texto representa una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para obtener acceso a la configuración del correo de voz para el usuario. 
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento **EcpUrl-mensajería unificada** es un elemento secundario opcional del elemento **Protocol** . 
+El elemento **EcpUrl-um** es un elemento secundario opcional del elemento **Protocol** . 
   
 ## <a name="see-also"></a>Vea también
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

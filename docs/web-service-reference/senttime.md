@@ -1,5 +1,5 @@
 ---
-title: ArrivedTime
+title: SentTime
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e74b4a03-45b0-469c-8889-c7cc5aa88a68
-description: El elemento ArrivedTime especifica la hora en que se ha enviado el elemento.
-ms.openlocfilehash: 7748b18e51928af1da9718ad7c1a8ea2b59531df
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SentTime especifica la hora en que se envió el elemento.
+ms.openlocfilehash: 51404b1fe12cf31f935740dd4afe3deaab0777de
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837360"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463170"
 ---
-# <a name="senttime"></a>ArrivedTime
+# <a name="senttime"></a>SentTime
 
-El elemento **ArrivedTime** especifica la hora en que se ha enviado el elemento. 
+El elemento **SentTime** especifica la hora en que se envió el elemento. 
   
 ```XML
 <SentTime></SentTime>
@@ -26,15 +26,15 @@ El elemento **ArrivedTime** especifica la hora en que se ha enviado el elemento.
  **dateTime**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ArrivedTime** es la fecha y hora cuando se envió un elemento. 
+El valor de texto del elemento **SentTime** es la fecha y la hora en que se envió un elemento. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

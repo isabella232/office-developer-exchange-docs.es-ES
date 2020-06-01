@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f9bd7323-44db-4d2f-aaaa-94c2dfdeead6
-description: Mensaje de solicitud de la ChangeHighlights elemento especifica qué ha cambiado entre dos versiones de una reunión.
-ms.openlocfilehash: 5fe7aa95f60ae95f1af24e8f7a0463ad49716f65
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ChangeHighlights especifica lo que ha cambiado entre dos versiones de un mensaje de convocatoria de reunión.
+ms.openlocfilehash: 6c78d2c96449ee41032859f90bf51d6e0faa92ae
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763733"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463282"
 ---
 # <a name="changehighlights"></a>ChangeHighlights
 
-El elemento **ChangeHighlights** especifica qué ha cambiado entre dos versiones de una reunión de mensaje de solicitud. 
+El elemento **ChangeHighlights** especifica lo que ha cambiado entre dos versiones de un mensaje de convocatoria de reunión. 
   
 ```XML
 <ChangeHighlights>
@@ -33,26 +33,26 @@ El elemento **ChangeHighlights** especifica qué ha cambiado entre dos versiones
  **ChangeHighlightsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[HasLocationChanged](haslocationchanged.md) <br/> |Especifica si se ha cambiado la propiedad de ubicación de una reunión.  <br/> |
-|[Location](location.md) <br/> |Representa la ubicación de una reunión o una cita.  <br/> |
-|[HasStartTimeChanged](hasstarttimechanged.md) <br/> |Especifica si se ha cambiado la hora de inicio para una reunión.  <br/> |
-|[Start](start.md) <br/> |Representa el inicio de la duración.  <br/> |
-|[HasEndTimeChanged](hasendtimechanged.md) <br/> |Especifica si se ha cambiado la hora de finalización de una reunión.  <br/> |
-|[End](end-ex15websvcsotherref.md) <br/> |Representa el final de una duración.  <br/> |
+|[HasLocationChanged](haslocationchanged.md) <br/> |Especifica si la propiedad Location de una reunión ha cambiado.  <br/> |
+|[Ubicación](location.md) <br/> |Representa la ubicación de una reunión o cita.  <br/> |
+|[HasStartTimeChanged](hasstarttimechanged.md) <br/> |Especifica si la hora de inicio de una reunión ha cambiado.  <br/> |
+|[Start](start.md) <br/> |Representa el inicio de una duración.  <br/> |
+|[HasEndTimeChanged](hasendtimechanged.md) <br/> |Especifica si ha cambiado la hora de finalización de una reunión.  <br/> |
+|[Centraliza](end-ex15websvcsotherref.md) <br/> |Representa el final de una duración.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[MeetingRequest](meetingrequest.md) <br/> |Representa una convocatoria de reunión en el almacén de Exchange.  <br/> |
    
@@ -66,14 +66,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

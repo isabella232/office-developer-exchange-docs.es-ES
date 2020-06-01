@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 736be0bc-12c4-410e-bd17-a89f996ac432
 description: El elemento de atribución especifica una cadena que se usa para identificar un atributo de un rol.
-ms.openlocfilehash: 227379db8a77fb8cba7b4337e74d985bc5af65d2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 9a3243904c02c3bdeea7e4a4e7dcb240d4ad3563
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763579"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464164"
 ---
 # <a name="attribution-string"></a>Atribución (cadena)
 
@@ -23,28 +23,28 @@ El elemento de **atribución** especifica una cadena que se usa para identificar
 <Attribution></Attribution>
 ```
 
- **xs: String**
+ **XS: String**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Atribuciones (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md) <br/> |Especifica una matriz de atribuciones para su elemento de **valor** asociado.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **atribución** es un valor de tipo string que los atributos de un valor de propiedad para el contacto de origen. 
+El valor de texto del elemento de **atribución** es un valor de cadena que atribuye un valor de propiedad al contacto de origen. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,12 +56,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

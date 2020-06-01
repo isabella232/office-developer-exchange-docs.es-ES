@@ -1,22 +1,22 @@
 ---
-title: Libreta de direcciones (POX)
+title: AddressBook (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: b2d62fd0-741c-4a41-9762-cc7d0ff01c9c
-description: El elemento de la libreta de direcciones contiene las especificaciones para conectar a un cliente con el servidor de la libreta de direcciones mediante el protocolo HTTP/MAPI.
-ms.openlocfilehash: c30f0ee7c36de7e63157d07d003a11187d661fd7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AddressBook contiene las especificaciones para conectar un cliente al servidor de libreta de direcciones mediante el protocolo MAPI/HTTP.
+ms.openlocfilehash: 0967ac123cd3bb0086fd004ea0d0d37c08d2e037
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763411"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463639"
 ---
-# <a name="addressbook-pox"></a>Libreta de direcciones (POX)
+# <a name="addressbook-pox"></a>AddressBook (POX)
 
-El elemento de la **Libreta de direcciones** contiene las especificaciones para conectar a un cliente con el servidor de la libreta de direcciones mediante el protocolo HTTP/MAPI. 
+El elemento **AddressBook** contiene las especificaciones para conectar un cliente al servidor de libreta de direcciones mediante el protocolo MAPI/http. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -26,7 +26,7 @@ El elemento de la **Libreta de direcciones** contiene las especificaciones para 
   
 [Protocolo (POX)](protocol-pox.md)
   
-[Libreta de direcciones (POX)](addressbook-pox.md)
+[AddressBook (POX)](addressbook-pox.md)
   
 ```XML
 <AddressBook>
@@ -37,32 +37,32 @@ El elemento de la **Libreta de direcciones** contiene las especificaciones para 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ExternalUrl (POX)](externalurl-pox.md) <br/> |Contiene la dirección URL que se debe utilizar para tener acceso a la libreta de direcciones desde fuera de la red de la organización mediante el protocolo HTTP/MAPI.  <br/> |
-|[InternalUrl (POX)](internalurl-pox.md) <br/> |Contiene la dirección URL que se debe utilizar para tener acceso a la libreta de direcciones desde dentro de la red de la organización mediante el protocolo HTTP/MAPI.  <br/> |
+|[ExternalUrl (POX)](externalurl-pox.md) <br/> |Contiene la dirección URL que se debe usar para obtener acceso a la libreta de direcciones desde fuera de la red de la organización mediante el protocolo MAPI/HTTP.  <br/> |
+|[InternalUrl (POX)](internalurl-pox.md) <br/> |Contiene la dirección URL que se debe usar para obtener acceso a la libreta de direcciones desde el interior de la red de la organización mediante el protocolo MAPI/HTTP.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente con el servidor de acceso de cliente.  <br/> |
+|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al servidor de acceso de cliente.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El elemento de la **Libreta de direcciones** está presente en una respuesta que tiene un elemento de [Protocolo (POX)](protocol-pox.md) con un valor de atributo de **tipo** de "mapiHttp". 
+El elemento **AddressBook** está presente en una respuesta que tiene un elemento [Protocol (POX)](protocol-pox.md) con un valor de atributo de **tipo** de "mapiHttp". 
   
-El elemento de la **Libreta de direcciones** está disponible para los clientes que implementan el protocolo HTTP/MAPI y destino Exchange Online, Exchange Online como parte de Office 365, y las versiones locales de Exchange a partir creación 15.00.0847.032 (Exchange Server 2013 SP1) . 
+El elemento **AddressBook** está disponible para clientes que implementan el protocolo MAPI/http y tienen como objetivo Exchange Online, Exchange online como parte de Office 365 y versiones locales de Exchange que comienzan con la compilación 15.00.0847.032 (Exchange Server 2013 SP1). 
   
 ## <a name="see-also"></a>Vea también
 
-- [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+- [Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 837072fa-1fd9-4288-b826-5e9fdb2ea35c
-description: El elemento LegacyDN representa el nombre distintivo heredado de buzón de correo alternativas.
-ms.openlocfilehash: ae0fd3d52e8efde82a667063a604cf591ebd933e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento LegacyDN representa el nombre distintivo heredado de buzón alternativo.
+ms.openlocfilehash: de7c4f98072c325e1bac34cd552598307b5a8c00
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836236"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463247"
 ---
 # <a name="legacydn-soap"></a>LegacyDN (SOAP)
 
-El elemento **LegacyDN** representa el nombre distintivo heredado de buzón de correo alternativas. 
+El elemento **LegacyDN** representa el nombre distintivo heredado de buzón alternativo. 
   
 ```XML
 <LegacyDN/>
@@ -28,33 +28,33 @@ El elemento **LegacyDN** representa el nombre distintivo heredado de buzón de c
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AlternateMailbox (SOAP)](alternatemailbox-soap.md) <br/> |Representa un buzón de alternativo.  <br/> |
+|[AlternateMailbox (SOAP)](alternatemailbox-soap.md) <br/> |Representa un buzón de correo alternativo.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor del elemento **LegacyDN** es el nombre distintivo heredado de buzón de correo alternativas. 
+El valor del elemento **LegacyDN** es el nombre distintivo heredado de buzón alternativo. 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también

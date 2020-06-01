@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e60e525f-c136-469a-b68b-b3dc01f400a6
-description: El elemento IsReadReceipt indica si los mensajes entrantes deben ser confirmaciones de lectura en el orden de la condición o excepción que se debe aplicar.
-ms.openlocfilehash: 78714aafb116a609a69d77b3b4f0fd15695bda34
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento IsReadReceipt indica si los mensajes entrantes deben ser confirmaciones de lectura para que se aplique la condición o excepción.
+ms.openlocfilehash: e86a7776bc43204dae9fc92f21d4304255ddb888
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836094"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463905"
 ---
 # <a name="isreadreceipt"></a>IsReadReceipt
 
-El elemento **IsReadReceipt** indica si los mensajes entrantes deben ser confirmaciones de lectura en el orden de la condición o excepción que se debe aplicar. 
+El elemento **IsReadReceipt** indica si los mensajes entrantes deben ser confirmaciones de lectura para que se aplique la condición o excepción. 
   
 ```XML
 <IsReadReceipt> true | false</IsReadReceipt>
@@ -30,26 +30,26 @@ El elemento **IsReadReceipt** indica si los mensajes entrantes deben ser confirm
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Condiciones](conditions.md) <br/> |Representa las condiciones que, cuando se cumplen los requisitos, se activará las acciones de regla de esa regla.  <br/> |
+|[Condiciones](conditions.md) <br/> |Representa las condiciones que, cuando se cumplan, desencadenarán las acciones de regla para esa regla.  <br/> |
 |[Excepciones](exceptions.md) <br/> |Representa todas las condiciones de excepción de regla disponibles para la regla de bandeja de entrada.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** indica que el mensaje debe ser una confirmación de lectura en el orden de la condición o excepción que se debe aplicar. Si el mensaje no tiene que ser una confirmación de lectura para la condición o la excepción que se debe aplicar, el valor es **false**.
+Un valor de texto de **true** indica que el mensaje debe ser una confirmación de lectura para que se aplique la condición o excepción. Si el mensaje no tiene que ser una confirmación de lectura de la condición o excepción que se va a aplicar, el valor es **false**.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -59,14 +59,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

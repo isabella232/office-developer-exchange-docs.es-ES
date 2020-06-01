@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 500b0423-864e-4cde-a39b-6b5b06d1aa6a
-description: El elemento ContactSource describe si el contacto se encuentra en el almacén de Exchange o los servicios de dominio de Active Directory (AD DS).
-ms.openlocfilehash: a82b766fc81b9397fc707415ea82e2f2d63d952d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ContactSource describe si el contacto se encuentra en el almacén de Exchange o en los servicios de dominio de Active Directory (AD DS).
+ms.openlocfilehash: 5447dedf199c5ad6b944aa33e6dca03e83a3c340
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763799"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462713"
 ---
 # <a name="contactsource"></a>ContactSource
 
-El elemento **ContactSource** describe si el contacto se encuentra en el almacén de Exchange o los servicios de dominio de Active Directory (AD DS). 
+El elemento **ContactSource** describe si el contacto se encuentra en el almacén de Exchange o en los servicios de dominio de Active Directory (AD DS). 
   
 ```xml
 <ContactSource/>
@@ -30,28 +30,28 @@ El elemento **ContactSource** describe si el contacto se encuentra en el almacé
  **ContactSourceType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Contact](contact.md) <br/> |Representa un elemento de contacto en el almacén de Exchange.  <br/> |
+|[Contacto](contact.md) <br/> |Representa un elemento de contacto en el almacén de Exchange.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Representa una lista de distribución.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Los siguientes son los valores posibles para este elemento:
+A continuación se muestran los valores posibles para este elemento:
   
-- ActiveDirectory
+- Directory
     
 - Tienda
     
@@ -63,14 +63,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
