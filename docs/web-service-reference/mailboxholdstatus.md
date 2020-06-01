@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 92608b77-8aa4-403b-a4de-01e3a60af3e0
-description: El elemento MailboxHoldStatus especifica el estado de retención del buzón.
-ms.openlocfilehash: 6703c909d0a7b4e83e190807fc3202ecd4699e7f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MailboxHoldStatus especifica el estado de retención del buzón de correo.
+ms.openlocfilehash: 2ac575275fc00d2e3ba38cb4ec7335567ee82da6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836288"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468813"
 ---
-# <a name="mailboxholdstatus"></a><span data-ttu-id="2f5c8-103">MailboxHoldStatus</span><span class="sxs-lookup"><span data-stu-id="2f5c8-103">MailboxHoldStatus</span></span>
+# <a name="mailboxholdstatus"></a><span data-ttu-id="6386b-103">MailboxHoldStatus</span><span class="sxs-lookup"><span data-stu-id="6386b-103">MailboxHoldStatus</span></span>
 
-<span data-ttu-id="2f5c8-104">El elemento **MailboxHoldStatus** especifica el estado de retención del buzón.</span><span class="sxs-lookup"><span data-stu-id="2f5c8-104">The **MailboxHoldStatus** element specifies the hold status of the mailbox.</span></span> 
+<span data-ttu-id="6386b-104">El elemento **MailboxHoldStatus** especifica el estado de retención del buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="6386b-104">The **MailboxHoldStatus** element specifies the hold status of the mailbox.</span></span> 
   
 ```XML
 <MailboxHoldStatus>
@@ -27,37 +27,37 @@ ms.locfileid: "19836288"
 </MailboxHoldStatus>
 ```
 
-<span data-ttu-id="2f5c8-105">**MailboxHoldStatusType**</span><span class="sxs-lookup"><span data-stu-id="2f5c8-105">**MailboxHoldStatusType**</span></span>
+<span data-ttu-id="6386b-105">**MailboxHoldStatusType**</span><span class="sxs-lookup"><span data-stu-id="6386b-105">**MailboxHoldStatusType**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="2f5c8-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="2f5c8-106">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="6386b-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="6386b-106">Attributes and elements</span></span>
 
-<span data-ttu-id="2f5c8-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="2f5c8-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="6386b-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="6386b-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="2f5c8-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="2f5c8-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="6386b-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="6386b-108">Attributes</span></span>
 
-<span data-ttu-id="2f5c8-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="2f5c8-109">None.</span></span>
+<span data-ttu-id="6386b-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="6386b-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="2f5c8-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="2f5c8-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="6386b-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="6386b-110">Child elements</span></span>
 
-<span data-ttu-id="2f5c8-111">[Buzón de correo (string)](mailbox-string.md) | [estado (HoldStatusType)](status-holdstatustype.md) | [AdditionalInfo](additionalinfo.md)</span><span class="sxs-lookup"><span data-stu-id="2f5c8-111">[Mailbox (string)](mailbox-string.md) | [Status (HoldStatusType)](status-holdstatustype.md) | [AdditionalInfo](additionalinfo.md)</span></span>
+<span data-ttu-id="6386b-111">[Mailbox (cadena)](mailbox-string.md)  |  [Estado (HoldStatusType)](status-holdstatustype.md)  |  [AdditionalInfo](additionalinfo.md)</span><span class="sxs-lookup"><span data-stu-id="6386b-111">[Mailbox (string)](mailbox-string.md) | [Status (HoldStatusType)](status-holdstatustype.md) | [AdditionalInfo](additionalinfo.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="2f5c8-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="2f5c8-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="6386b-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="6386b-112">Parent elements</span></span>
 
-[<span data-ttu-id="2f5c8-113">MailboxHoldStatuses</span><span class="sxs-lookup"><span data-stu-id="2f5c8-113">MailboxHoldStatuses</span></span>](mailboxholdstatuses.md)
+[<span data-ttu-id="6386b-113">MailboxHoldStatuses</span><span class="sxs-lookup"><span data-stu-id="6386b-113">MailboxHoldStatuses</span></span>](mailboxholdstatuses.md)
   
-## <a name="remarks"></a><span data-ttu-id="2f5c8-114">Comentarios</span><span class="sxs-lookup"><span data-stu-id="2f5c8-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6386b-114">Comentarios</span><span class="sxs-lookup"><span data-stu-id="6386b-114">Remarks</span></span>
 
-<span data-ttu-id="2f5c8-115">Este elemento se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="2f5c8-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="6386b-115">Este elemento se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="6386b-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="2f5c8-116">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="2f5c8-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="6386b-116">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="6386b-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="2f5c8-117">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="2f5c8-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="6386b-117">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="6386b-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="2f5c8-118">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="2f5c8-118">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="2f5c8-119">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="2f5c8-119">Schema name</span></span>  <br/> |<span data-ttu-id="2f5c8-120">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="2f5c8-120">Types schema</span></span>  <br/> |
-|<span data-ttu-id="2f5c8-121">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="2f5c8-121">Validation file</span></span>  <br/> |<span data-ttu-id="2f5c8-122">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="2f5c8-122">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="2f5c8-123">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="2f5c8-123">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="6386b-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="6386b-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="6386b-119">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="6386b-119">Schema name</span></span>  <br/> |<span data-ttu-id="6386b-120">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="6386b-120">Types schema</span></span>  <br/> |
+|<span data-ttu-id="6386b-121">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="6386b-121">Validation file</span></span>  <br/> |<span data-ttu-id="6386b-122">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="6386b-122">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="6386b-123">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="6386b-123">Can be empty</span></span>  <br/> ||
    
 
