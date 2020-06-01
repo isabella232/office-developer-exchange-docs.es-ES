@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6e3136cd-9cb4-493a-aa85-9678f719002d
-description: El elemento DeleteType indica cómo se eliminan los elementos en una conversación.
-ms.openlocfilehash: abaa0c3d8b7001b2f42a38d1c82475edba32d2c5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DeleteType indica cómo se eliminan los elementos de una conversación.
+ms.openlocfilehash: 199f7afc29fe866865509d2fb90d24944113d5c0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764104"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44442636"
 ---
 # <a name="deletetype"></a>DeleteType
 
-El elemento **DeleteType** indica cómo se eliminan los elementos en una conversación. 
+El elemento **DeleteType** indica cómo se eliminan los elementos de una conversación. 
   
 - [ApplyConversationAction](applyconversationaction.md)  
 - [ConversationActions](conversationactions.md)  
@@ -35,47 +35,47 @@ El elemento **DeleteType** indica cómo se eliminan los elementos en una convers
  **DisposalType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ConversationAction](conversationaction.md) <br/> |Contiene una única acción que se aplicará a una conversación único.  <br/> |
+|[ConversationAction](conversationaction.md) <br/> |Contiene una sola acción que se aplicará a una única conversación.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **DeleteType** indica cómo se eliminan los elementos en una conversación. Los siguientes son los valores de texto posibles: 
+El valor de texto del elemento **DeleteType** indica cómo se eliminan los elementos de una conversación. A continuación se muestran los valores de texto posibles: 
   
-- HardDelete - indica que los elementos en una conversación se quitan permanentemente de la base de datos de buzón de correo.
+- HardDelete: indica que los elementos de una conversación se quitan permanentemente de la base de datos de buzones de correo.
     
-- MoveToDeleteItems - indica que se mueven los elementos en una conversación a la carpeta Elementos eliminados.
+- MoveToDeleteItems: indica que los elementos de una conversación se mueven a la carpeta elementos eliminados.
     
-- SoftDelete - indica que se mueven los elementos en una conversación para el volcado de archivos si el volcado de archivos está habilitado.
+- SoftDelete: indica que los elementos de una conversación se mueven al contenedor si el contenedor está habilitado.
     
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda Exchange Web Services.This elemento fue introdujo en Exchange Server 2010 Service Pack 1 (SP1).
+El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda los servicios Web de Exchange. este elemento se introdujo en Exchange Server 2010 Service Pack 1 (SP1).
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación ApplyConversationAction](applyconversationaction-operation.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

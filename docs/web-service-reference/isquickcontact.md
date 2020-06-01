@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1c9542d6-ef72-4743-828a-bb671e783836
 description: El elemento IsQuickContact especifica un valor booleano que indica si el contacto subyacente es un contacto rápido.
-ms.openlocfilehash: 979dbd3c0358eacd443eed79b258f7dd6bb9bc7d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: a8944be111a8dcbe914601ffc4e31794422d58aa
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836092"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44441579"
 ---
 # <a name="isquickcontact"></a>IsQuickContact
 
@@ -26,21 +26,21 @@ El elemento **IsQuickContact** especifica un valor booleano que indica si el con
  **boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Atribución (PersonaAttributionType)](attribution-personaattributiontype.md) <br/> |Especifica una instancia de una matriz de atributos de un elemento de la **Persona** .  <br/> |
+|[Atribución (PersonaAttributionType)](attribution-personaattributiontype.md) <br/> |Especifica una instancia de una matriz de atributos para un elemento de **rol** .  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

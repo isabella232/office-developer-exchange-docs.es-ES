@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: f1b812c3-ae8b-4d89-92e2-41d2fe51e32f
-description: El elemento ServiceHome contiene la dirección URL de la página principal del proveedor de servicios Internet (ISP).
-ms.openlocfilehash: 312eea2c021750327cc09cf65f111fc868e16608
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ServiceHome contiene la dirección URL de la Página principal del proveedor de servicios de Internet (ISP).
+ms.openlocfilehash: 1e4a40cbc97167dc2cf79ccbfcacff988794c3a0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837388"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44439115"
 ---
 # <a name="servicehome-pox"></a>ServiceHome (POX)
 
-El elemento **ServiceHome** contiene la dirección URL de la página principal del proveedor de servicios Internet (ISP). 
+El elemento **ServiceHome** contiene la dirección URL de la Página principal del proveedor de servicios de Internet (ISP). 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -34,29 +34,29 @@ El elemento **ServiceHome** contiene la dirección URL de la página principal d
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de cuenta para el usuario.  <br/> |
+|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de la cuenta del usuario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa la dirección URL de la página principal del ISP.
+El valor de texto representa la dirección URL de la Página principal del ISP.
   
 ## <a name="see-also"></a>Vea también
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

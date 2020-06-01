@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 022d6512-7e91-4b60-8a7b-3bcd571f3107
-description: El elemento MailboxStats especifica una lista de uno o varios elementos de MailboxStat.
-ms.openlocfilehash: d01c2b21545d4297c66f46727813513374efe540
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MailboxStats especifica una lista de uno o más elementos MailboxStat.
+ms.openlocfilehash: 1f712aa10816f100ca8092c750abfb444354c4bb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836322"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44440550"
 ---
 # <a name="mailboxstats"></a>MailboxStats
 
-El elemento **MailboxStats** especifica una lista de uno o varios elementos de **MailboxStat** . 
+El elemento **MailboxStats** especifica una lista de uno o más elementos **MailboxStat** . 
   
 ```XML
 <MailboxStats>
@@ -29,11 +29,11 @@ El elemento **MailboxStats** especifica una lista de uno o varios elementos de *
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 
