@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: fd2b9545-7213-4427-95ae-71a155b75971
-description: El elemento UploadItems representa una solicitud para cargar los elementos en un buzón de correo.
-ms.openlocfilehash: d3cd69cdb744431daeede736c2e156c8ab92a79b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UploadItems representa una solicitud para cargar elementos en un buzón.
+ms.openlocfilehash: 8fdb7253926e030085374b650e792349e598ee4a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840876"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468827"
 ---
 # <a name="uploaditems"></a>UploadItems
 
-El elemento **UploadItems** representa una solicitud para cargar los elementos en un buzón de correo. 
+El elemento **UploadItems** representa una solicitud para cargar elementos en un buzón. 
   
 [UploadItems](uploaditems.md)
   
@@ -34,21 +34,21 @@ El elemento **UploadItems** representa una solicitud para cargar los elementos e
  **UploadItemsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Elementos (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md) <br/> |Contiene una matriz de elementos que desea cargar en un buzón de correo.  <br/> |
+|[Elementos (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md) <br/> |Contiene una matriz de elementos que se van a cargar en un buzón.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
@@ -56,16 +56,16 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda Exchange Web Services.This elemento fue introdujo en Exchange Server 2010 Service Pack 1 (SP1).
+El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda los servicios Web de Exchange. este elemento se introdujo en Exchange Server 2010 Service Pack 1 (SP1).
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

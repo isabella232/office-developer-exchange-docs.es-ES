@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 145c5cc7-a894-4f0b-a6ea-358cddfb5c33
-description: El elemento PullSubscriptionRequest representa una suscripción a una suscripción de notificación de eventos basado en la extracción.
-ms.openlocfilehash: 5f757bf1f79f7e2a00fb886db50e6ea0eaed1a4a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PullSubscriptionRequest representa una suscripción a una suscripción de notificación de eventos basada en extracción.
+ms.openlocfilehash: fb9712c9e1481678c2821ee344052783d5c25bf9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836932"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468869"
 ---
 # <a name="pullsubscriptionrequest"></a>PullSubscriptionRequest
 
-El elemento **PullSubscriptionRequest** representa una suscripción a una suscripción de notificación de eventos basado en la extracción. 
+El elemento **PullSubscriptionRequest** representa una suscripción a una suscripción de notificación de eventos basada en extracción. 
   
 [Suscribirse](subscribe.md)
   
@@ -39,28 +39,28 @@ El elemento **PullSubscriptionRequest** representa una suscripción a una suscri
  **PullSubscriptionRequestType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**SubscribeToAllFolders** <br/> |Indica si se debe suscribirse a todas las carpetas disponibles. Este atributo es opcional.  <br/> |
+|**SubscribeToAllFolders** <br/> |Indica si se va a suscribir a todas las carpetas disponibles. Este atributo es opcional.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FolderIds](folderids.md) <br/> |Contiene una matriz de identificadores de carpeta que se usa para identificar las carpetas para supervisar las notificaciones de eventos.  <br/> |
-|[Debe establecer](eventtypes.md) <br/> |Contiene una colección de las notificaciones de eventos que se usan para crear una suscripción.  <br/> |
-|[Marca de agua](watermark.md) <br/> |Representa un marcador de evento en la tabla de eventos de buzón de correo. Esto se usa para crear una suscripción que se inicia en un evento que está representado por la marca de agua. Si no se encuentra la marca de agua de una solicitud Subscribe, se devolverá una respuesta de error al cliente. Este error puede producirse si la marca de agua es más antiguo que 30 días o si la marca de agua nunca estaba presente en el buzón de correo.  <br/> |
-|[Timeout](timeout.md) <br/> |Representa la duración, en minutos, que puede permanecer inactiva sin una solicitud GetEvents desde el cliente de la suscripción.  <br/> |
+|[FolderIds](folderids.md) <br/> |Contiene una matriz de identificadores de carpeta que se usan para identificar las carpetas que se van a supervisar para las notificaciones de eventos.  <br/> |
+|[EventTypes](eventtypes.md) <br/> |Contiene una colección de notificaciones de eventos que se usan para crear una suscripción.  <br/> |
+|[Watermark](watermark.md) <br/> |Representa un marcador de evento en la tabla de eventos del buzón. Se usa para crear una suscripción que comienza en un evento que está representado por la marca de agua. Si no se encuentra la marca de agua de una solicitud de suscripción, se devolverá una respuesta de error al cliente. Este error puede producirse si la marca de agua es superior a 30 días o si la marca de agua nunca estaba presente en el buzón.  <br/> |
+|[Timeout](timeout.md) <br/> |Representa la duración, en minutos, que la suscripción puede permanecer inactiva sin una solicitud GetEvents del cliente.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Suscribirse](subscribe.md) <br/> |Contiene las propiedades que se usan para crear las suscripciones.  <br/> |
+|[Suscribirse](subscribe.md) <br/> |Contiene las propiedades que se usan para crear suscripciones.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -74,10 +74,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -85,12 +85,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 [PushSubscriptionRequest](pushsubscriptionrequest.md)
   
-[Operación de suscripción](subscribe-operation.md)
+[Operación subscribe](subscribe-operation.md)
   
 [Operación GetEvents](getevents-operation.md)
   
-[Cancelar la operación de suscripción](unsubscribe-operation.md)
+[Operación unsubscribe](unsubscribe-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 92608b77-8aa4-403b-a4de-01e3a60af3e0
-description: El elemento MailboxHoldStatus especifica el estado de retención del buzón.
-ms.openlocfilehash: 6703c909d0a7b4e83e190807fc3202ecd4699e7f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MailboxHoldStatus especifica el estado de retención del buzón de correo.
+ms.openlocfilehash: 2ac575275fc00d2e3ba38cb4ec7335567ee82da6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836288"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468813"
 ---
 # <a name="mailboxholdstatus"></a>MailboxHoldStatus
 
-El elemento **MailboxHoldStatus** especifica el estado de retención del buzón. 
+El elemento **MailboxHoldStatus** especifica el estado de retención del buzón de correo. 
   
 ```XML
 <MailboxHoldStatus>
@@ -31,15 +31,15 @@ El elemento **MailboxHoldStatus** especifica el estado de retención del buzón.
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Buzón de correo (string)](mailbox-string.md) | [estado (HoldStatusType)](status-holdstatustype.md) | [AdditionalInfo](additionalinfo.md)
+[Mailbox (cadena)](mailbox-string.md)  |  [Estado (HoldStatusType)](status-holdstatustype.md)  |  [AdditionalInfo](additionalinfo.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

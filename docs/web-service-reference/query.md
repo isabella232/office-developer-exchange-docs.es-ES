@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ccb4cd62-9779-4ca7-a4fe-5a96e6af8f48
-description: El elemento de consulta contiene la consulta de búsqueda para la suspensión.
-ms.openlocfilehash: bbbbd1f6645b0a594c452a4de5e37a0496b53837
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Query contiene la consulta de búsqueda para la retención.
+ms.openlocfilehash: 52b7f58ee0304621d37fc592a0377f5fd82cea29
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836934"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468862"
 ---
 # <a name="query"></a>Consulta
 
-El elemento de **consulta** contiene la consulta de búsqueda para la suspensión. 
+El elemento **query** contiene la consulta de búsqueda para la retención. 
   
 ```XML
 <Query></Query>
@@ -26,23 +26,23 @@ El elemento de **consulta** contiene la consulta de búsqueda para la suspensió
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[SetHoldOnMailboxes](setholdonmailboxes.md) | [MailboxHoldResult](mailboxholdresult.md) | [MailboxQuery](mailboxquery.md)
+[SetHoldOnMailboxes](setholdonmailboxes.md)  |  [MailboxHoldResult](mailboxholdresult.md)  |  [MailboxQuery](mailboxquery.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **consulta** es la cadena de consulta de búsqueda para una búsqueda de detección. 
+El valor de texto del elemento **query** es la cadena de consulta de búsqueda de una búsqueda de detección. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

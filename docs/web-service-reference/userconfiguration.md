@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1811df99-ca5b-48a3-b160-b3fd70320c34
-description: El elemento UserConfiguration define un objeto de configuración de usuario único.
-ms.openlocfilehash: ce3eaa470ef592c5a8e5a7ef24c377bb2feeca2e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UserConfiguration define un único objeto de configuración de usuario.
+ms.openlocfilehash: 1217f5d591570c2d8df49a116b6bf35c243d1e0e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840901"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468911"
 ---
 # <a name="userconfiguration"></a>UserConfiguration
 
-El elemento **UserConfiguration** define un objeto de configuración de usuario único. 
+El elemento **UserConfiguration** define un único objeto de configuración de usuario. 
   
 ```XML
 <UserConfiguration>
@@ -36,25 +36,25 @@ El elemento **UserConfiguration** define un objeto de configuración de usuario 
  **UserConfigurationType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UserConfigurationName](userconfigurationname.md) <br/> |Representa el nombre de un objeto de configuración de usuario. Este elemento se debe usar al crear un objeto de configuración de usuario.  <br/> |
+|[UserConfigurationName](userconfigurationname.md) <br/> |Representa el nombre de un objeto de configuración de usuario. Este elemento debe usarse cuando se crea un objeto de configuración de usuario.  <br/> |
 |[ItemId](itemid.md) <br/> |Define el identificador de elemento de objeto de configuración de usuario.  <br/> |
-|[Diccionario](dictionary.md) <br/> |Define un conjunto de entradas de diccionario (propiedad) para un objeto de configuración de usuario.  <br/> |
-|[Nota](xmldata.md) <br/> |Contiene contenido de propiedad de datos XML para un objeto de configuración de usuario.  <br/> |
-|[BinaryData](binarydata.md) <br/> |Contiene el contenido de la propiedad de datos binarios para un objeto de configuración de usuario.  <br/> |
+|[Diccionario](dictionary.md) <br/> |Define un conjunto de entradas de propiedades de diccionario para un objeto de configuración de usuario.  <br/> |
+|[XmlData](xmldata.md) <br/> |Contiene el contenido de la propiedad de datos XML para un objeto de configuración de usuario.  <br/> |
+|[BinaryData](binarydata.md) <br/> |Contiene el contenido de la propiedad de datos binarios de un objeto de configuración de usuario.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[CreateUserConfiguration](createuserconfiguration.md) <br/> |Representa una solicitud para crear un objeto de configuración de usuario.  <br/> |
 |[GetUserConfigurationResponseMessage](getuserconfigurationresponsemessage.md) <br/> |Representa una respuesta que devuelve un objeto de configuración de usuario.  <br/> |
@@ -68,14 +68,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

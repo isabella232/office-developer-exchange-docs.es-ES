@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 9ca1584e-65b8-49ba-a408-e3e8597e6607
 description: El elemento TimeZoneDefinitions representa una matriz de definiciones de zona horaria.
-ms.openlocfilehash: 0bc1b69ef564bb4e239d9845a4b1a0133292ff12
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 16a25eb4fdcad2554ebd19626d0a0bc7f6391ac5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840678"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468764"
 ---
 # <a name="timezonedefinitions"></a>TimeZoneDefinitions
 
@@ -32,21 +32,21 @@ El elemento **TimeZoneDefinitions** representa una matriz de definiciones de zon
  **ArrayOfTimeZoneDefinitionType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Definición de zona horaria](timezonedefinition.md) <br/> |Especifica los períodos y las transiciones que definen una zona horaria.  <br/> |
+|[TimeZoneDefinition](timezonedefinition.md) <br/> |Especifica los períodos y las transiciones que definen una zona horaria.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[GetServerTimeZonesResponseMessage](getservertimezonesresponsemessage.md) <br/> |Contiene el estado y el resultado de una solicitud de [operación GetServerTimeZones](getservertimezones-operation.md) .  <br/> |
    
@@ -58,14 +58,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

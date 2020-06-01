@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7232505a-bab0-4d78-87bc-6cc4b568937a
-description: El elemento PrintAllowed especifica si está habilitada la impresión.
-ms.openlocfilehash: 85c18f3a6bd8f1705d0e21b99bae15484348f777
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PrintAllowed especifica si la impresión está habilitada.
+ms.openlocfilehash: ac38491d563916160b4d00165b743c51cb29fe00
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836880"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468750"
 ---
 # <a name="printallowed"></a>PrintAllowed
 
-El elemento **PrintAllowed** especifica si está habilitada la impresión. 
+El elemento **PrintAllowed** especifica si la impresión está habilitada. 
   
 ```XML
 <PrintAllowed> true | false </PrintAllowed>
@@ -26,15 +26,15 @@ El elemento **PrintAllowed** especifica si está habilitada la impresión.
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **PrintAllowed** indica que se permite la impresión el contenido para un elemento de derechos administrados. Un valor de **false** indica que no se permite la impresión. 
+Un valor de texto de **true** para el elemento **PrintAllowed** indica que se permite imprimir el contenido para un elemento con derechos administrados. Un valor de **false** indica que no se permite la impresión. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 
