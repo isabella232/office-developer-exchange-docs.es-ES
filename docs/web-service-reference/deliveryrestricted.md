@@ -11,59 +11,59 @@ api_name:
 api_type:
 - schema
 ms.assetid: 05989915-121c-4f26-93cc-af8d454ab442
-description: El elemento DeliveryRestricted indica si las restricciones de entrega impedirá que el mensaje del remitente llegar al destinatario.
-ms.openlocfilehash: ba1c6e00b93c9e442a427fe98a5e15bf5fe1effd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DeliveryRestricted indica si las restricciones de entrega impedirán que el mensaje del remitente llegue al destinatario.
+ms.openlocfilehash: 58fc85873326179d7745db4ba7d4854a76ced6a7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764124"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462692"
 ---
-# <a name="deliveryrestricted"></a><span data-ttu-id="03272-103">DeliveryRestricted</span><span class="sxs-lookup"><span data-stu-id="03272-103">DeliveryRestricted</span></span>
+# <a name="deliveryrestricted"></a><span data-ttu-id="4d493-103">DeliveryRestricted</span><span class="sxs-lookup"><span data-stu-id="4d493-103">DeliveryRestricted</span></span>
 
-<span data-ttu-id="03272-104">El elemento **DeliveryRestricted** indica si las restricciones de entrega impedirá que el mensaje del remitente llegar al destinatario.</span><span class="sxs-lookup"><span data-stu-id="03272-104">The **DeliveryRestricted** element indicates whether delivery restrictions will prevent the sender's message from reaching the recipient.</span></span> 
+<span data-ttu-id="4d493-104">El elemento **DeliveryRestricted** indica si las restricciones de entrega impedirán que el mensaje del remitente llegue al destinatario.</span><span class="sxs-lookup"><span data-stu-id="4d493-104">The **DeliveryRestricted** element indicates whether delivery restrictions will prevent the sender's message from reaching the recipient.</span></span> 
   
 ```XML
 <DeliveryRestricted>true | false</DeliveryRestricted>
 ```
 
- <span data-ttu-id="03272-105">**Boolean**</span><span class="sxs-lookup"><span data-stu-id="03272-105">**Boolean**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="03272-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="03272-106">Attributes and elements</span></span>
+ <span data-ttu-id="4d493-105">**Boolean**</span><span class="sxs-lookup"><span data-stu-id="4d493-105">**Boolean**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="4d493-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="4d493-106">Attributes and elements</span></span>
 
-<span data-ttu-id="03272-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="03272-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="4d493-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="4d493-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="03272-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="03272-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="4d493-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="4d493-108">Attributes</span></span>
 
-<span data-ttu-id="03272-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="03272-109">None.</span></span>
+<span data-ttu-id="4d493-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="4d493-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="03272-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="03272-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="4d493-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="4d493-110">Child elements</span></span>
 
-<span data-ttu-id="03272-111">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="03272-111">None.</span></span>
+<span data-ttu-id="4d493-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="4d493-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="03272-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="03272-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="4d493-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="4d493-112">Parent elements</span></span>
 
-|<span data-ttu-id="03272-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="03272-113">**Element**</span></span>|<span data-ttu-id="03272-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="03272-114">**Description**</span></span>|
+|<span data-ttu-id="4d493-113">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="4d493-113">**Element**</span></span>|<span data-ttu-id="4d493-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="4d493-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="03272-115">Sugerencias de correo electrónico</span><span class="sxs-lookup"><span data-stu-id="03272-115">MailTips</span></span>](mailtips.md) <br/> |<span data-ttu-id="03272-116">Representa los valores de distintos tipos de sugerencias de correo.</span><span class="sxs-lookup"><span data-stu-id="03272-116">Represents values for various types of mail tips.</span></span>  <br/> |
+|[<span data-ttu-id="4d493-115">Sugerencias de correo electrónico</span><span class="sxs-lookup"><span data-stu-id="4d493-115">MailTips</span></span>](mailtips.md) <br/> |<span data-ttu-id="4d493-116">Representa los valores de distintos tipos de sugerencias de correo.</span><span class="sxs-lookup"><span data-stu-id="4d493-116">Represents values for various types of mail tips.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="03272-117">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="03272-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="4d493-117">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="4d493-117">Text value</span></span>
 
-<span data-ttu-id="03272-118">El valor de texto de este elemento es **true** si las restricciones de entrega impedirá que el mensaje del remitente llegar al destinatario.</span><span class="sxs-lookup"><span data-stu-id="03272-118">The text value of this element is **true** if delivery restrictions will prevent the sender's message from reaching the recipient.</span></span> <span data-ttu-id="03272-119">El valor es **false** si las restricciones de entrega no se impide que el mensaje del remitente de llegar al destinatario.</span><span class="sxs-lookup"><span data-stu-id="03272-119">The value is **false** if delivery restrictions will not prevent the sender's message from reaching the recipient.</span></span> 
+<span data-ttu-id="4d493-118">El valor de texto de este elemento es **true** si las restricciones de entrega impedirán que el mensaje del remitente llegue al destinatario.</span><span class="sxs-lookup"><span data-stu-id="4d493-118">The text value of this element is **true** if delivery restrictions will prevent the sender's message from reaching the recipient.</span></span> <span data-ttu-id="4d493-119">El valor es **false** si las restricciones de entrega no impedirán que el mensaje del remitente llegue al destinatario.</span><span class="sxs-lookup"><span data-stu-id="4d493-119">The value is **false** if delivery restrictions will not prevent the sender's message from reaching the recipient.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="03272-120">Comentarios</span><span class="sxs-lookup"><span data-stu-id="03272-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="4d493-120">Comentarios</span><span class="sxs-lookup"><span data-stu-id="4d493-120">Remarks</span></span>
 
-<span data-ttu-id="03272-121">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="03272-121">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="4d493-121">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="4d493-121">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="03272-122">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="03272-122">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="4d493-122">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="4d493-122">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="03272-123">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="03272-123">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="03272-124">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="03272-124">Schema Name</span></span>  <br/> |<span data-ttu-id="03272-125">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="03272-125">Types schema</span></span>  <br/> |
-|<span data-ttu-id="03272-126">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="03272-126">Validation File</span></span>  <br/> |<span data-ttu-id="03272-127">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="03272-127">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="03272-128">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="03272-128">Can be Empty</span></span>  <br/> |<span data-ttu-id="03272-129">False</span><span class="sxs-lookup"><span data-stu-id="03272-129">False</span></span>  <br/> |
+|<span data-ttu-id="4d493-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="4d493-123">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="4d493-124">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="4d493-124">Schema Name</span></span>  <br/> |<span data-ttu-id="4d493-125">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="4d493-125">Types schema</span></span>  <br/> |
+|<span data-ttu-id="4d493-126">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="4d493-126">Validation File</span></span>  <br/> |<span data-ttu-id="4d493-127">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="4d493-127">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="4d493-128">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="4d493-128">Can be Empty</span></span>  <br/> |<span data-ttu-id="4d493-129">Falso</span><span class="sxs-lookup"><span data-stu-id="4d493-129">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="03272-130">Vea también</span><span class="sxs-lookup"><span data-stu-id="03272-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4d493-130">Vea también</span><span class="sxs-lookup"><span data-stu-id="4d493-130">See also</span></span>
 
-- [<span data-ttu-id="03272-131">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="03272-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="4d493-131">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="4d493-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

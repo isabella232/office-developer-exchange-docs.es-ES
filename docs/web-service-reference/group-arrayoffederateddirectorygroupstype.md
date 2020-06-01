@@ -7,38 +7,38 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0474a5b4-1a48-4df6-a094-baf35d9a1083
-description: El elemento de grupo (ArrayOfFederatedDirectoryGroupsType) está pensado para uso interno únicamente.
-ms.openlocfilehash: b426203a7b54cddac737e3e6a7f860b8592f6e10
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Group (ArrayOfFederatedDirectoryGroupsType) está pensado solo para uso interno.
+ms.openlocfilehash: 7938b571f7cc48dd60b14429b8e21bad1eb26300
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835752"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462832"
 ---
-# <a name="group-arrayoffederateddirectorygroupstype"></a><span data-ttu-id="992e0-103">Grupo (ArrayOfFederatedDirectoryGroupsType)</span><span class="sxs-lookup"><span data-stu-id="992e0-103">Group (ArrayOfFederatedDirectoryGroupsType)</span></span>
+# <a name="group-arrayoffederateddirectorygroupstype"></a><span data-ttu-id="ebcf3-103">Grupo (ArrayOfFederatedDirectoryGroupsType)</span><span class="sxs-lookup"><span data-stu-id="ebcf3-103">Group (ArrayOfFederatedDirectoryGroupsType)</span></span>
 
-<span data-ttu-id="992e0-104">El elemento de **grupo (ArrayOfFederatedDirectoryGroupsType)** está pensado para uso interno únicamente.</span><span class="sxs-lookup"><span data-stu-id="992e0-104">The **Group (ArrayOfFederatedDirectoryGroupsType)** element is intended for internal use only.</span></span> 
+<span data-ttu-id="ebcf3-104">El elemento **Group (ArrayOfFederatedDirectoryGroupsType)** está pensado solo para uso interno.</span><span class="sxs-lookup"><span data-stu-id="ebcf3-104">The **Group (ArrayOfFederatedDirectoryGroupsType)** element is intended for internal use only.</span></span> 
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="992e0-105">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="992e0-105">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="ebcf3-105">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="ebcf3-105">Attributes and elements</span></span>
 
-<span data-ttu-id="992e0-106">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="992e0-106">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="ebcf3-106">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="ebcf3-106">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="992e0-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="992e0-107">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="ebcf3-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="ebcf3-107">Attributes</span></span>
 
-<span data-ttu-id="992e0-108">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="992e0-108">None.</span></span>
+<span data-ttu-id="ebcf3-108">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="ebcf3-108">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="992e0-109">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="992e0-109">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="ebcf3-109">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="ebcf3-109">Child elements</span></span>
 
-<span data-ttu-id="992e0-110">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="992e0-110">None.</span></span>
+<span data-ttu-id="ebcf3-110">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="ebcf3-110">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="992e0-111">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="992e0-111">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="ebcf3-111">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="ebcf3-111">Parent elements</span></span>
 
-<span data-ttu-id="992e0-112">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="992e0-112">None.</span></span>
+<span data-ttu-id="ebcf3-112">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="ebcf3-112">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="992e0-113">Comentarios</span><span class="sxs-lookup"><span data-stu-id="992e0-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ebcf3-113">Comentarios</span><span class="sxs-lookup"><span data-stu-id="ebcf3-113">Remarks</span></span>
 
-<span data-ttu-id="992e0-114">Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).</span><span class="sxs-lookup"><span data-stu-id="992e0-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="ebcf3-114">Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).</span><span class="sxs-lookup"><span data-stu-id="ebcf3-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
   
-<span data-ttu-id="992e0-115">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="992e0-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="ebcf3-115">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="ebcf3-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
 

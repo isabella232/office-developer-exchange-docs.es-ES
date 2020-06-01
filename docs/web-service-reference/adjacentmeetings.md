@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 50a9c381-9166-476e-8421-29e51b94499b
-description: El elemento AdjacentMeetings identifica todos los elementos de calendario que están junto a una hora de reunión.
-ms.openlocfilehash: 9ab818f4f67c32c01101cc595ccb92424a872ef0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AdjacentMeetings identifica todos los elementos de calendario adyacentes a una hora de reunión.
+ms.openlocfilehash: 7c89095e24af799df22a848be06a0fd65d53be7f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763418"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463583"
 ---
-# <a name="adjacentmeetings"></a><span data-ttu-id="66d92-103">AdjacentMeetings</span><span class="sxs-lookup"><span data-stu-id="66d92-103">AdjacentMeetings</span></span>
+# <a name="adjacentmeetings"></a><span data-ttu-id="53d64-103">AdjacentMeetings</span><span class="sxs-lookup"><span data-stu-id="53d64-103">AdjacentMeetings</span></span>
 
-<span data-ttu-id="66d92-104">El elemento **AdjacentMeetings** identifica todos los elementos de calendario que están junto a una hora de reunión.</span><span class="sxs-lookup"><span data-stu-id="66d92-104">The **AdjacentMeetings** element identifies all calendar items that are adjacent to a meeting time.</span></span> 
+<span data-ttu-id="53d64-104">El elemento **AdjacentMeetings** identifica todos los elementos de calendario adyacentes a una hora de reunión.</span><span class="sxs-lookup"><span data-stu-id="53d64-104">The **AdjacentMeetings** element identifies all calendar items that are adjacent to a meeting time.</span></span> 
   
 ```xml
 <AdjacentMeetings>
@@ -29,45 +29,45 @@ ms.locfileid: "19763418"
 </AdjacentMeetings>
 ```
 
- <span data-ttu-id="66d92-105">**NonEmptyArrayOfAllItemsType**</span><span class="sxs-lookup"><span data-stu-id="66d92-105">**NonEmptyArrayOfAllItemsType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="66d92-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="66d92-106">Attributes and elements</span></span>
+ <span data-ttu-id="53d64-105">**NonEmptyArrayOfAllItemsType**</span><span class="sxs-lookup"><span data-stu-id="53d64-105">**NonEmptyArrayOfAllItemsType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="53d64-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="53d64-106">Attributes and elements</span></span>
 
-<span data-ttu-id="66d92-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="66d92-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="53d64-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="53d64-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="66d92-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="66d92-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="53d64-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="53d64-108">Attributes</span></span>
 
-<span data-ttu-id="66d92-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="66d92-109">None.</span></span>
+<span data-ttu-id="53d64-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="53d64-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="66d92-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="66d92-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="53d64-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="53d64-110">Child elements</span></span>
 
-|<span data-ttu-id="66d92-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="66d92-111">**Element**</span></span>|<span data-ttu-id="66d92-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="66d92-112">**Description**</span></span>|
+|<span data-ttu-id="53d64-111">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="53d64-111">**Element**</span></span>|<span data-ttu-id="53d64-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="53d64-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="66d92-113">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="66d92-113">CalendarItem</span></span>](calendaritem.md) <br/> |<span data-ttu-id="66d92-114">Representa un elemento de calendario de Exchange.</span><span class="sxs-lookup"><span data-stu-id="66d92-114">Represents an Exchange calendar item.</span></span>  <br/> |
+|[<span data-ttu-id="53d64-113">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="53d64-113">CalendarItem</span></span>](calendaritem.md) <br/> |<span data-ttu-id="53d64-114">Representa un elemento de calendario de Exchange.</span><span class="sxs-lookup"><span data-stu-id="53d64-114">Represents an Exchange calendar item.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="66d92-115">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="66d92-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="53d64-115">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="53d64-115">Parent elements</span></span>
 
-|<span data-ttu-id="66d92-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="66d92-116">**Element**</span></span>|<span data-ttu-id="66d92-117">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="66d92-117">**Description**</span></span>|
+|<span data-ttu-id="53d64-116">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="53d64-116">**Element**</span></span>|<span data-ttu-id="53d64-117">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="53d64-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="66d92-118">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="66d92-118">CalendarItem</span></span>](calendaritem.md) <br/> |<span data-ttu-id="66d92-119">Representa un elemento de calendario de Exchange.</span><span class="sxs-lookup"><span data-stu-id="66d92-119">Represents an Exchange calendar item.</span></span>  <br/> |
-|[<span data-ttu-id="66d92-120">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="66d92-120">MeetingRequest</span></span>](meetingrequest.md) <br/> |<span data-ttu-id="66d92-121">Representa una convocatoria de reunión en el almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="66d92-121">Represents a meeting request in the Exchange store.</span></span>  <br/> |
+|[<span data-ttu-id="53d64-118">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="53d64-118">CalendarItem</span></span>](calendaritem.md) <br/> |<span data-ttu-id="53d64-119">Representa un elemento de calendario de Exchange.</span><span class="sxs-lookup"><span data-stu-id="53d64-119">Represents an Exchange calendar item.</span></span>  <br/> |
+|[<span data-ttu-id="53d64-120">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="53d64-120">MeetingRequest</span></span>](meetingrequest.md) <br/> |<span data-ttu-id="53d64-121">Representa una convocatoria de reunión en el almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="53d64-121">Represents a meeting request in the Exchange store.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="66d92-122">Comentarios</span><span class="sxs-lookup"><span data-stu-id="66d92-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="53d64-122">Comentarios</span><span class="sxs-lookup"><span data-stu-id="53d64-122">Remarks</span></span>
 
-<span data-ttu-id="66d92-123">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="66d92-123">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2010 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="53d64-123">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="53d64-123">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2010 that has the Client Access server role installed.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="66d92-124">Aunque los elementos secundarios adicionales son válidos según el esquema, el elemento [CalendarItem](calendaritem.md) es el elemento secundario único que Exchange Web Services (EWS) devolverá dentro del elemento **AdjacentMeetings** .</span><span class="sxs-lookup"><span data-stu-id="66d92-124">Although additional child elements are valid per the schema, the [CalendarItem](calendaritem.md) element is the only child element that Exchange Web Services (EWS) will return within the **AdjacentMeetings** element.</span></span> <span data-ttu-id="66d92-125">En este tema no mostrar los elementos secundarios que son válidos según el esquema, pero no será devuelto por EWS.</span><span class="sxs-lookup"><span data-stu-id="66d92-125">This topic does not list child elements that are valid per the schema but will not be returned by EWS.</span></span> 
+> <span data-ttu-id="53d64-124">Aunque los elementos secundarios adicionales son válidos para cada esquema, el elemento [CalendarItem](calendaritem.md) es el único elemento secundario que los servicios web Exchange (EWS) devolverán dentro del elemento **AdjacentMeetings** .</span><span class="sxs-lookup"><span data-stu-id="53d64-124">Although additional child elements are valid per the schema, the [CalendarItem](calendaritem.md) element is the only child element that Exchange Web Services (EWS) will return within the **AdjacentMeetings** element.</span></span> <span data-ttu-id="53d64-125">En este tema no se enumeran los elementos secundarios que son válidos para cada esquema, pero que no se devolverán con EWS.</span><span class="sxs-lookup"><span data-stu-id="53d64-125">This topic does not list child elements that are valid per the schema but will not be returned by EWS.</span></span> 
   
-## <a name="element-information"></a><span data-ttu-id="66d92-126">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="66d92-126">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="53d64-126">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="53d64-126">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="66d92-127">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="66d92-127">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="66d92-128">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="66d92-128">Schema Name</span></span>  <br/> |<span data-ttu-id="66d92-129">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="66d92-129">Types schema</span></span>  <br/> |
-|<span data-ttu-id="66d92-130">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="66d92-130">Validation File</span></span>  <br/> |<span data-ttu-id="66d92-131">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="66d92-131">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="66d92-132">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="66d92-132">Can be Empty</span></span>  <br/> |<span data-ttu-id="66d92-133">False</span><span class="sxs-lookup"><span data-stu-id="66d92-133">False</span></span>  <br/> |
+|<span data-ttu-id="53d64-127">Namespace</span><span class="sxs-lookup"><span data-stu-id="53d64-127">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="53d64-128">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="53d64-128">Schema Name</span></span>  <br/> |<span data-ttu-id="53d64-129">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="53d64-129">Types schema</span></span>  <br/> |
+|<span data-ttu-id="53d64-130">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="53d64-130">Validation File</span></span>  <br/> |<span data-ttu-id="53d64-131">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="53d64-131">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="53d64-132">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="53d64-132">Can be Empty</span></span>  <br/> |<span data-ttu-id="53d64-133">Falso</span><span class="sxs-lookup"><span data-stu-id="53d64-133">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="66d92-134">Vea también</span><span class="sxs-lookup"><span data-stu-id="66d92-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="53d64-134">Vea también</span><span class="sxs-lookup"><span data-stu-id="53d64-134">See also</span></span>
 
-- [<span data-ttu-id="66d92-135">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="66d92-135">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="53d64-135">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="53d64-135">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

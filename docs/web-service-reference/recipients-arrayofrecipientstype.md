@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f4b71403-cbae-4176-8b2e-3597048c057b
-description: El elemento de destinatarios representa una colección de los destinatarios que reciben una copia del mensaje.
-ms.openlocfilehash: b24a029bfacd6cc40e85a201b8ca90efd7790e9f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Recipients representa una colección de destinatarios que reciben una copia del mensaje.
+ms.openlocfilehash: 0e18152a8143b888ad27f48137c06613694f5713
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836991"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44463877"
 ---
-# <a name="recipients-arrayofrecipientstype"></a><span data-ttu-id="161be-103">Recipients (ArrayOfRecipientsType)</span><span class="sxs-lookup"><span data-stu-id="161be-103">Recipients (ArrayOfRecipientsType)</span></span>
+# <a name="recipients-arrayofrecipientstype"></a><span data-ttu-id="bf328-103">Recipients (ArrayOfRecipientsType)</span><span class="sxs-lookup"><span data-stu-id="bf328-103">Recipients (ArrayOfRecipientsType)</span></span>
 
-<span data-ttu-id="161be-104">El elemento de **destinatarios** representa una colección de los destinatarios que reciben una copia del mensaje.</span><span class="sxs-lookup"><span data-stu-id="161be-104">The **Recipients** element represents a collection of recipients that receive a copy of the message.</span></span> 
+<span data-ttu-id="bf328-104">El elemento **Recipients** representa una colección de destinatarios que reciben una copia del mensaje.</span><span class="sxs-lookup"><span data-stu-id="bf328-104">The **Recipients** element represents a collection of recipients that receive a copy of the message.</span></span> 
   
 ```XML
 <Recipients>
@@ -29,47 +29,47 @@ ms.locfileid: "19836991"
 </Recipients>
 ```
 
- <span data-ttu-id="161be-105">**ArrayOfRecipientsType**</span><span class="sxs-lookup"><span data-stu-id="161be-105">**ArrayOfRecipientsType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="161be-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="161be-106">Attributes and elements</span></span>
+ <span data-ttu-id="bf328-105">**ArrayOfRecipientsType**</span><span class="sxs-lookup"><span data-stu-id="bf328-105">**ArrayOfRecipientsType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="bf328-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="bf328-106">Attributes and elements</span></span>
 
-<span data-ttu-id="161be-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="161be-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="bf328-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="bf328-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="161be-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="161be-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="bf328-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="bf328-108">Attributes</span></span>
 
-<span data-ttu-id="161be-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="161be-109">None.</span></span>
+<span data-ttu-id="bf328-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="bf328-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="161be-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="161be-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="bf328-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="bf328-110">Child elements</span></span>
 
-|<span data-ttu-id="161be-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="161be-111">**Element**</span></span>|<span data-ttu-id="161be-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="161be-112">**Description**</span></span>|
+|<span data-ttu-id="bf328-111">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="bf328-111">**Element**</span></span>|<span data-ttu-id="bf328-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="bf328-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="161be-113">Buzón de correo</span><span class="sxs-lookup"><span data-stu-id="161be-113">Mailbox</span></span>](mailbox.md) <br/> |<span data-ttu-id="161be-114">Identifica un objeto de Active Directory habilitados para correo.</span><span class="sxs-lookup"><span data-stu-id="161be-114">Identifies a mail-enabled Active Directory object.</span></span>  <br/> |
+|[<span data-ttu-id="bf328-113">Buzón</span><span class="sxs-lookup"><span data-stu-id="bf328-113">Mailbox</span></span>](mailbox.md) <br/> |<span data-ttu-id="bf328-114">Identifica un objeto de Active Directory habilitado para correo.</span><span class="sxs-lookup"><span data-stu-id="bf328-114">Identifies a mail-enabled Active Directory object.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="161be-115">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="161be-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="bf328-115">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="bf328-115">Parent elements</span></span>
 
-|<span data-ttu-id="161be-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="161be-116">**Element**</span></span>|<span data-ttu-id="161be-117">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="161be-117">**Description**</span></span>|
+|<span data-ttu-id="bf328-116">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="bf328-116">**Element**</span></span>|<span data-ttu-id="bf328-117">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="bf328-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="161be-118">GetMailTips</span><span class="sxs-lookup"><span data-stu-id="161be-118">GetMailTips</span></span>](getmailtips.md) <br/> |<span data-ttu-id="161be-119">Contiene los destinatarios y los tipos de sugerencias de correo para recuperar.</span><span class="sxs-lookup"><span data-stu-id="161be-119">Contains the recipients and types of mail tips to retrieve.</span></span>  <br/> |
+|[<span data-ttu-id="bf328-118">GetMailTips</span><span class="sxs-lookup"><span data-stu-id="bf328-118">GetMailTips</span></span>](getmailtips.md) <br/> |<span data-ttu-id="bf328-119">Contiene los destinatarios y los tipos de sugerencias de correo que se van a recuperar.</span><span class="sxs-lookup"><span data-stu-id="bf328-119">Contains the recipients and types of mail tips to retrieve.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="161be-120">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="161be-120">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="bf328-120">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="bf328-120">Text value</span></span>
 
-<span data-ttu-id="161be-121">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="161be-121">None.</span></span>
+<span data-ttu-id="bf328-121">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="bf328-121">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="161be-122">Comentarios</span><span class="sxs-lookup"><span data-stu-id="161be-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bf328-122">Comentarios</span><span class="sxs-lookup"><span data-stu-id="bf328-122">Remarks</span></span>
 
-<span data-ttu-id="161be-123">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="161be-123">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="bf328-123">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="bf328-123">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="161be-124">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="161be-124">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="bf328-124">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="bf328-124">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="161be-125">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="161be-125">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="161be-126">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="161be-126">Schema Name</span></span>  <br/> |<span data-ttu-id="161be-127">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="161be-127">Types schema</span></span>  <br/> |
-|<span data-ttu-id="161be-128">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="161be-128">Validation File</span></span>  <br/> |<span data-ttu-id="161be-129">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="161be-129">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="161be-130">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="161be-130">Can be Empty</span></span>  <br/> |<span data-ttu-id="161be-131">False</span><span class="sxs-lookup"><span data-stu-id="161be-131">False</span></span>  <br/> |
+|<span data-ttu-id="bf328-125">Namespace</span><span class="sxs-lookup"><span data-stu-id="bf328-125">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="bf328-126">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="bf328-126">Schema Name</span></span>  <br/> |<span data-ttu-id="bf328-127">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="bf328-127">Types schema</span></span>  <br/> |
+|<span data-ttu-id="bf328-128">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="bf328-128">Validation File</span></span>  <br/> |<span data-ttu-id="bf328-129">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="bf328-129">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="bf328-130">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="bf328-130">Can be Empty</span></span>  <br/> |<span data-ttu-id="bf328-131">Falso</span><span class="sxs-lookup"><span data-stu-id="bf328-131">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="161be-132">Vea también</span><span class="sxs-lookup"><span data-stu-id="161be-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bf328-132">Vea también</span><span class="sxs-lookup"><span data-stu-id="bf328-132">See also</span></span>
 
 
 
-- [<span data-ttu-id="161be-133">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="161be-133">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="bf328-133">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="bf328-133">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
