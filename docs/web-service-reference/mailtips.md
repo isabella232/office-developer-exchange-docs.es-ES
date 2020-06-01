@@ -1,5 +1,5 @@
 ---
-title: Sugerencias de correo electrónico
+title: MailTips
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: ITPro
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c1cba493-bccc-4b8e-be8e-bfa8a8b10882
-description: El elemento de sugerencias de correo electrónico representa los valores de distintos tipos de sugerencias de correo.
-ms.openlocfilehash: 3a2e95225b09fd2d81db32f821ea3069ab7e7852
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento de sugerencias de correo electrónico representa los valores para varios tipos de sugerencias de correo.
+ms.openlocfilehash: 9bacdea7b4f3108f700ed102025445e01a73e69d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836311"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44447599"
 ---
-# <a name="mailtips"></a>Sugerencias de correo electrónico
+# <a name="mailtips"></a>MailTips
 
-El elemento de **sugerencias de correo electrónico** representa los valores de distintos tipos de sugerencias de correo. 
+El elemento de **sugerencias** de correo electrónico representa los valores para varios tipos de sugerencias de correo. 
   
 ```XML
 <MailTips>
@@ -42,31 +42,31 @@ El elemento de **sugerencias de correo electrónico** representa los valores de 
  **Sugerencias de correo electrónico**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[RecipientAddress](recipientaddress.md) <br/> |Representa el buzón de correo del destinatario.  <br/> |
-|[PendingMailTips](pendingmailtips.md) <br/> |Indica que las sugerencias de correo en este elemento no se podrían evaluar antes de tiempo de espera de procesamiento del servidor.  <br/> |
-|[Fuera de la oficina](outofoffice.md) <br/> |Representa el mensaje de respuesta y un tiempo de duración para enviar el mensaje de respuesta.  <br/> |
+|[RecipientAddress](recipientaddress.md) <br/> |Representa el buzón del destinatario.  <br/> |
+|[PendingMailTips](pendingmailtips.md) <br/> |Indica que las sugerencias de correo de este elemento no se pudieron evaluar antes de que se agote el tiempo de espera de procesamiento del servidor.  <br/> |
+|[Oficina](outofoffice.md) <br/> |Representa el mensaje de respuesta y una hora de duración para el envío del mensaje de respuesta.  <br/> |
 |[MailboxFull](mailboxfull.md) <br/> |Indica si el buzón del destinatario está lleno.  <br/> |
-|[CustomMailTip](custommailtip.md) <br/> |Representa un mensaje de sugerencia de correo personalizado.  <br/> |
-|[TotalMemberCount](totalmembercount.md) <br/> |Representa el recuento de todos los miembros de un grupo.  <br/> |
-|[ExternalMemberCount](externalmembercount.md) <br/> |Representa el recuento de miembros externos en un grupo.  <br/> |
+|[CustomMailTip](custommailtip.md) <br/> |Representa un mensaje personalizado de sugerencia de correo.  <br/> |
+|[TotalMemberCount](totalmembercount.md) <br/> |Representa el número de todos los miembros de un grupo.  <br/> |
+|[ExternalMemberCount](externalmembercount.md) <br/> |Representa el número de miembros externos de un grupo.  <br/> |
 |[MaxMessageSize](maxmessagesize.md) <br/> |Representa el tamaño máximo de mensaje que puede aceptar el destinatario.  <br/> |
-|[DeliveryRestricted](deliveryrestricted.md) <br/> |Indica si las restricciones de entrega impedirá que el mensaje del remitente llegar al destinatario.  <br/> |
-|[IsModerated](ismoderated.md) <br/> |Indica si se va a modera el buzón del destinatario.  <br/> |
-|[InvalidRecipient (sugerencias de correo electrónico)](invalidrecipient-mailtips.md) <br/> |Indica si el destinatario no es válido.  <br/> |
+|[DeliveryRestricted](deliveryrestricted.md) <br/> |Indica si las restricciones de entrega impedirán que el mensaje del remitente llegue al destinatario.  <br/> |
+|[IsModerated](ismoderated.md) <br/> |Indica si el buzón del destinatario se modera.  <br/> |
+|[InvalidRecipient (sugerencias de correo)](invalidrecipient-mailtips.md) <br/> |Indica si el destinatario no es válido.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[MailTipsResponseMessageType](mailtipsresponsemessagetype.md) <br/> |Representa la configuración de sugerencias de correo.  <br/> |
    
@@ -82,14 +82,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

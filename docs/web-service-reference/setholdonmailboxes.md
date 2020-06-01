@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: fd5b9f0e-23e8-428c-8168-2d6b4ecd6beb
 description: El elemento SetHoldOnMailboxes contiene una solicitud de SetHoldOnMailboxes.
-ms.openlocfilehash: 7d226de908c4d5a474129e3e1f2344ec1318f538
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: c96ff50cb1204d86abc66829e1c5da7124f407f1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837413"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44448355"
 ---
 # <a name="setholdonmailboxes"></a>SetHoldOnMailboxes
 
@@ -35,15 +35,15 @@ El elemento **SetHoldOnMailboxes** contiene una solicitud de **SetHoldOnMailboxe
  **SetHoldOnMailboxesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[ActionType (HoldActionType)](actiontype-holdactiontype.md) | [HoldId](holdid.md) | [consulta](query.md) | [buzones (ArrayOfStringsType)](mailboxes-arrayofstringstype.md) | [idioma](language.md) | [IncludeNonIndexableItems](includenonindexableitems.md) | [desduplicación ](deduplication.md)  |  [InPlaceHoldIdentity](inplaceholdidentity.md)
+[ActionType (HoldActionType)](actiontype-holdactiontype.md)  |  [HoldId](holdid.md)  |  [Consulta](query.md)  |  [Buzones de correo (ArrayOfStringsType)](mailboxes-arrayofstringstype.md)  |  [Idioma](language.md)  |  [IncludeNonIndexableItems](includenonindexableitems.md)  |  [Desduplicación](deduplication.md)  |  [InPlaceHoldIdentity](inplaceholdidentity.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -59,9 +59,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

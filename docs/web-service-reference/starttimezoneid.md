@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f4adfc48-2d51-4d2d-9ddc-b91c3e96cb02
-description: El elemento StartTimeZoneId especifica la zona horaria en la que lleva a cabo una reunión.
-ms.openlocfilehash: d131a4cad3076c1ed4044dbcbe49f1dfa4ed5ccf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento StartTimeZoneId especifica la zona horaria en la que tiene que realizarse una reunión.
+ms.openlocfilehash: 30ccbbf75963615ba16a991370a007a46e684930
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837567"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44448124"
 ---
 # <a name="starttimezoneid"></a>StartTimeZoneId
 
-El elemento **StartTimeZoneId** especifica la zona horaria en la que lleva a cabo una reunión. 
+El elemento **StartTimeZoneId** especifica la zona horaria en la que tiene que realizarse una reunión. 
   
 ```XML
 <StartTimeZoneId></StartTimeZoneId>
@@ -27,23 +27,23 @@ El elemento **StartTimeZoneId** especifica la zona horaria en la que lleva a cab
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[CalendarItem](calendaritem.md) | [MeetingRequest](meetingrequest.md)
+[CalendarItem](calendaritem.md)  |  Propiedad [MeetingRequest](meetingrequest.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **StartTimeZoneId** es el identificador de zona horaria de la zona horaria que se utiliza en el elemento de [Inicio](start.md) . 
+El valor de texto del elemento **StartTimeZoneId** es el identificador de zona horaria de la zona horaria utilizada en el elemento [Start](start.md) . 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

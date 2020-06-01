@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6f1bcbfb-d7f6-4fa0-b6f8-681a0b067007
-description: El elemento SearchMailboxesResponseMessage especifica el mensaje de respuesta de una solicitud de SearchMailboxes.
-ms.openlocfilehash: b9e16e5b45271b366dd5cc49537085dbc8234da0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SearchMailboxesResponseMessage especifica el mensaje de respuesta para una solicitud de SearchMailboxes.
+ms.openlocfilehash: 342223b9a8cc7e91b97d637cb104f7bb160b7d5a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837297"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44448425"
 ---
 # <a name="searchmailboxesresponsemessage"></a>SearchMailboxesResponseMessage
 
-El elemento **SearchMailboxesResponseMessage** especifica el mensaje de respuesta de una solicitud de **SearchMailboxes** . 
+El elemento **SearchMailboxesResponseMessage** especifica el mensaje de respuesta para una solicitud de **SearchMailboxes** . 
   
 ```XML
 <SearchMailboxesResponseMessage>
@@ -32,15 +32,15 @@ El elemento **SearchMailboxesResponseMessage** especifica el mensaje de respuest
  **SearchMailboxesResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [SearchMailboxesResult](searchmailboxesresult.md)
+[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)  |  [SearchMailboxesResult](searchmailboxesresult.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -56,9 +56,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 
