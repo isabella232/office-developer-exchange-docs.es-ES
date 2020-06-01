@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c2f3070c-81c6-43f7-ae48-cb3d2dcfac68
-description: El elemento OtherTelephones especifica una matriz de valores de teléfono y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: 9573dce54f3c9b9d09b779e921c605077d91262e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento OtherTelephones especifica una matriz de valores telefónicos y los identificadores de sus atribuciones de origen para el rol asociado.
+ms.openlocfilehash: b47b6bac7efcfd7bd3dc1a84fa6b0b089fbeb160
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836669"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462349"
 ---
 # <a name="othertelephones"></a>OtherTelephones
 
-El elemento **OtherTelephones** especifica una matriz de valores de teléfono y los identificadores de sus atribuciones de origen para el rol asociado. 
+El elemento **OtherTelephones** especifica una matriz de valores telefónicos y los identificadores de sus atribuciones de origen para el rol asociado. 
   
 ```XML
 <OtherTelephones>
@@ -29,11 +29,11 @@ El elemento **OtherTelephones** especifica una matriz de valores de teléfono y 
  **ArrayOfPhoneNumberAttributedValuesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

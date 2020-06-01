@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e45c4451-a286-4aec-a691-119ec41c58e0
-description: El elemento SendNotification contiene las notificaciones de inserción que se envían por el equipo que ejecuta Microsoft Exchange Server 2007 a la aplicación cliente.
-ms.openlocfilehash: 2288dbb5cf97b57a64b3c645eb72836342f4c178
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SendNotification contiene las notificaciones de inserción que envía el equipo que ejecuta Microsoft Exchange Server 2007 a la aplicación cliente.
+ms.openlocfilehash: 49f2f6cb7f5c8e1171b54ff965ee1d22accc9bf2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837345"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462118"
 ---
 # <a name="sendnotification"></a>SendNotification
 
-El elemento **SendNotification** contiene las notificaciones de inserción que se envían por el equipo que ejecuta Microsoft Exchange Server 2007 a la aplicación cliente. 
+El elemento **SendNotification** contiene las notificaciones de inserción que envía el equipo que ejecuta Microsoft Exchange Server 2007 a la aplicación cliente. 
   
 ```xml
 <SendNotification>
@@ -32,17 +32,17 @@ El elemento **SendNotification** contiene las notificaciones de inserción que s
  **SendNotificationResponseType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Contiene las notificaciones de inserción que se envían por el servidor de acceso de cliente.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Contiene las notificaciones de inserción enviadas por el servidor de acceso de cliente.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -50,25 +50,25 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Notificaciones de eventos en EWS](http://msdn.microsoft.com/library/4fd4b351-d35c-4ccc-9ed9-878932ab9d50%28Office.15%29.aspx)
+[Notificaciones de eventos en EWS](https://msdn.microsoft.com/library/4fd4b351-d35c-4ccc-9ed9-878932ab9d50%28Office.15%29.aspx)
   
-[Aplicación de ejemplo de notificación de inserción](http://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx)
+[Aplicación de ejemplo de notificación de inserción](https://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx)
 

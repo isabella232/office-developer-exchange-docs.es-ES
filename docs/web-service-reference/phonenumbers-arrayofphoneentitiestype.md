@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9ff6ae98-34a1-47f7-bde5-608251a789f7
 description: El elemento PhoneNumbers especifica una matriz de números de teléfono extraídos.
-ms.openlocfilehash: 982a3cb163caf718c83844dd56c305511366ea5d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 857847a8bc202ba0d630915ac10f197264d840a3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836767"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461705"
 ---
 # <a name="phonenumbers-arrayofphoneentitiestype"></a>PhoneNumbers (ArrayOfPhoneEntitiesType)
 
@@ -28,11 +28,11 @@ El elemento **PhoneNumbers** especifica una matriz de números de teléfono extr
  **ArrayOfPhoneEntitiesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

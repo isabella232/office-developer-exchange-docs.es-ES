@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c942758e-5ff3-4acb-9080-b8672e56f696
-description: El elemento EcpUrl tmCreating especifica una dirección URL parcial que se puede combinar con el valor del elemento EcpUrl (POX) para generar una dirección URL que se puede usar para crear un nuevo buzón de sitio.
-ms.openlocfilehash: c7dbaf3f3954f9233b888957fe79bf6db7ae5880
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EcpUrl-tmCreating especifica una dirección URL parcial que se puede combinar con el valor del elemento EcpUrl (POX) para generar una dirección URL que se puede usar para crear un nuevo buzón de sitio.
+ms.openlocfilehash: 93ea3f5752dab0028c0732e5e79c5690e35bd059
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764302"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462062"
 ---
 # <a name="ecpurl-tmcreating-pox"></a>EcpUrl-tmCreating (POX)
 
-El elemento **EcpUrl tmCreating** especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para crear un nuevo buzón de sitio. 
+El elemento **EcpUrl-tmCreating** especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para crear un nuevo buzón de sitio. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -34,21 +34,21 @@ El elemento **EcpUrl tmCreating** especifica una dirección URL parcial que se p
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente en el equipo que ejecuta Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.  <br/> |
+|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -56,11 +56,11 @@ El valor de texto representa una dirección URL parcial que se puede combinar co
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento **EcpUrl tmCreating** es un elemento secundario opcional del elemento **Protocol** . 
+El elemento **EcpUrl-tmCreating** es un elemento secundario opcional del elemento **Protocol** . 
   
 ## <a name="see-also"></a>Vea también
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

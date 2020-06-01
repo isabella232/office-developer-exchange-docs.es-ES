@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 64905c0b-b923-4e31-84aa-e687eba31b17
-description: El ImageBase64 elemento (SetEncryptionConfigurationType) está pensado para uso interno únicamente.
-ms.openlocfilehash: 3deca2419b70ac530581bd0160a3f63ea32a359d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ImageBase64 (SetEncryptionConfigurationType) está destinado exclusivamente para uso interno.
+ms.openlocfilehash: f1584911b6124a4ac1688bd64899b07308ad5d68
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835884"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460907"
 ---
 # <a name="imagebase64-setencryptionconfigurationtype"></a>ImageBase64 (SetEncryptionConfigurationType)
 
-El **ImageBase64 (SetEncryptionConfigurationType)** elemento está pensado para uso interno únicamente. 
+El elemento **ImageBase64 (SetEncryptionConfigurationType)** está destinado exclusivamente para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8ea43d5a-4bcf-497e-a559-6efe94fa604b
-description: El elemento HomePhones especifica una matriz de números de teléfono particular y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: 487d37e6a18bbd480a814de7570b0789f148096e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento HomePhones especifica una matriz de números de teléfono de casa y los identificadores de sus atribuciones de origen para el rol asociado.
+ms.openlocfilehash: b55d6ca752a5b00a27eb158c6a22412a9f4ecdda
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835844"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460837"
 ---
 # <a name="homephones"></a>HomePhones
 
-El elemento **HomePhones** especifica una matriz de números de teléfono particular y los identificadores de sus atribuciones de origen para el rol asociado. 
+El elemento **HomePhones** especifica una matriz de números de teléfono de casa y los identificadores de sus atribuciones de origen para el rol asociado. 
   
 ```XML
 <HomePhones>
@@ -28,23 +28,23 @@ El elemento **HomePhones** especifica una matriz de números de teléfono partic
  **ArrayOfPhoneNumberAttributedValuesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[PhoneNumberAttributedValue](phonenumberattributedvalue.md) <br/> |Contiene un número de teléfono único de atributos para un rol.  <br/> |
+|[PhoneNumberAttributedValue](phonenumberattributedvalue.md) <br/> |Contiene un número de teléfono con atributos único para un rol.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud de **GetPersona** .  <br/> |
+|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud **GetPersona** .  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

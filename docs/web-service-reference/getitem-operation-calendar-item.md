@@ -11,32 +11,32 @@ api_name:
 api_type:
 - schema
 ms.assetid: a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8
-description: La operación GetItem obtiene los elementos del calendario desde el almacén de Exchange.
-ms.openlocfilehash: 69bce0f0cc7b5c986f9bf4767c3cd429a309e50d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación GetItem obtiene los elementos de calendario del almacén de Exchange.
+ms.openlocfilehash: 09fe92af12f03ce4cebd1e98f4e01c087ace64f9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764878"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460620"
 ---
 # <a name="getitem-operation-calendar-item"></a>Operación GetItem (elemento de calendario)
 
-La operación GetItem obtiene los elementos del calendario desde el almacén de Exchange.
+La operación GetItem obtiene los elementos de calendario del almacén de Exchange.
   
 ## <a name="getitem-request-example"></a>Ejemplo de solicitud GetItem
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud de GetItem muestra cómo formar una solicitud para obtener la identidad y el asunto de un elemento.
+El siguiente ejemplo de una solicitud GetItem muestra cómo crear una solicitud para obtener la identidad y el asunto de un elemento.
   
 ### <a name="code"></a>Código
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ItemShape>
         <t:BaseShape>IdOnly</t:BaseShape>
         <t:AdditionalProperties>
@@ -53,7 +53,7 @@ El siguiente ejemplo de una solicitud de GetItem muestra cómo formar una solici
 
 ### <a name="request-elements"></a>Elementos de solicitud
 
-En la solicitud se usan los siguientes elementos:
+Los siguientes elementos se usan en la solicitud:
   
 - [GetItem](getitem.md)
     
@@ -65,23 +65,23 @@ En la solicitud se usan los siguientes elementos:
     
 - [FieldURI](fielduri.md)
     
-- [ItemId](itemids.md)
+- [ItemIds](itemids.md)
     
 - [ItemId](itemid.md)
     
 > [!NOTE]
-> El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente. 
+> El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes. 
   
-Para buscar otras opciones para el mensaje de solicitud de la operación GetItem, explore la jerarquía de esquema. Comenzar en el elemento de [GetItem](getitem.md) . 
+Para buscar otras opciones para el mensaje de solicitud de la operación GetItem, explore la jerarquía del esquema. Comienza en el elemento [GetItem](getitem.md) . 
   
-## <a name="successful-getitem-response"></a>Respuesta es correcta GetItem
+## <a name="successful-getitem-response"></a>Respuesta GetItem correcta
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de GetItem. La solicitud que ha creado esta respuesta usa el baseshape IdOnly. En este ejemplo, la respuesta devuelve solo el identificador del elemento. 
+En el ejemplo siguiente se muestra una respuesta correcta a la solicitud GetItem. La solicitud que creó esta respuesta usó la IdOnly baseshape. En este ejemplo, la respuesta devuelve solo el identificador del elemento. 
   
 > [!NOTE]
-> El identificador de elemento y la clave de cambio se han abreviado para conservar la legibilidad. 
+> El identificador de elemento y la clave de cambio se han abreviado para preservar la legibilidad. 
   
 ### <a name="code"></a>Código
 
@@ -92,12 +92,12 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de GetI
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                   xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                   xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                   xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                   xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -115,10 +115,10 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de GetI
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de GetItem. La solicitud que ha creado esta respuesta usa el baseshape de forma predeterminada. En este ejemplo, la respuesta devuelve la forma predeterminada de un elemento de calendario.
+En el ejemplo siguiente se muestra una respuesta correcta a la solicitud GetItem. La solicitud que creó esta respuesta usó el valor predeterminado de baseshape. En este ejemplo, la respuesta devuelve la forma predeterminada para un elemento de calendario.
   
 > [!NOTE]
-> El identificador de elemento y la clave de cambio se han abreviado para conservar la legibilidad. 
+> El identificador de elemento y la clave de cambio se han abreviado para preservar la legibilidad. 
   
 ### <a name="code"></a>Código
 
@@ -129,12 +129,12 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de GetI
                 xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                     xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -166,7 +166,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de GetI
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de GetItem. La solicitud que ha creado esta respuesta usa el baseshape AllProperties. En este ejemplo, la respuesta devuelve la forma de AllProperties para un elemento de calendario.
+En el ejemplo siguiente se muestra una respuesta correcta a la solicitud GetItem. La solicitud que creó esta respuesta usó la AllProperties baseshape. En este ejemplo, la respuesta devuelve la forma AllProperties para un elemento de calendario.
   
 ### <a name="code"></a>Código
 
@@ -177,12 +177,12 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de GetI
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                     xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                     xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -265,9 +265,9 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de GetI
 
 ### <a name="comments"></a>Comentarios
 
-Para buscar otras opciones para el mensaje de respuesta de la operación GetItem, explore la jerarquía de esquema. Comenzar en el elemento de [GetItemResponse](getitemresponse.md) . 
+Para buscar otras opciones para el mensaje de respuesta de la operación GetItem, explore la jerarquía del esquema. Empiece en el elemento [GetItemResponse](getitemresponse.md) . 
   
-### <a name="successful-response-elements"></a>Elementos de respuesta correcta
+### <a name="successful-response-elements"></a>Elementos Response correcto
 
 En la respuesta se usan los siguientes elementos:
   
@@ -287,19 +287,19 @@ En la respuesta se usan los siguientes elementos:
     
 - [ItemId](itemid.md)
     
-- [Id](parentfolderid.md)
+- [ParentFolderId](parentfolderid.md)
     
 - [ItemClass](itemclass.md)
     
-- [Sensibilidad](sensitivity.md)
+- [Sensitivity](sensitivity.md)
     
 - [Body](body.md)
     
 - [DateTimeReceived](datetimereceived.md)
     
-- [Size](size.md)
+- [Tamaño](size.md)
     
-- [Importancia](importance.md)
+- [Importance](importance.md)
     
 - [IsSubmitted](issubmitted.md)
     
@@ -331,11 +331,11 @@ En la respuesta se usan los siguientes elementos:
     
 - [HasAttachments](hasattachments.md)
     
-- [Referencia cultural](culture.md)
+- [Culture](culture.md)
     
 - [Start](start.md)
     
-- [End](end-ex15websvcsotherref.md)
+- [Centraliza](end-ex15websvcsotherref.md)
     
 - [IsAllDayEvent](isalldayevent.md)
     
@@ -353,9 +353,9 @@ En la respuesta se usan los siguientes elementos:
     
 - [MyResponseType](myresponsetype.md)
     
-- [Organizer](organizer.md)
+- [Organizador](organizer.md)
     
-- [Buzón de correo](mailbox.md)
+- [Buzón](mailbox.md)
     
 - [Nombre (EmailAddressType)](name-emailaddresstype.md)
     
@@ -369,7 +369,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [ConflictingMeetings](conflictingmeetings.md)
     
-- [Location](location.md)
+- [Ubicación](location.md)
     
 - [Duración (elementos)](duration-items.md)
     

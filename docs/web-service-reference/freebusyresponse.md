@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3038d106-9ac9-4ac7-bb43-96c783edbef5
-description: El elemento FreeBusyResponse contiene la información de disponibilidad para un usuario de buzón único.
-ms.openlocfilehash: 73e3972bb53d6bf59e5156098bad06bcde5f0155
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento FreeBusyResponse contiene la información de disponibilidad de un único usuario de buzón de correo.
+ms.openlocfilehash: 45a3e12756f3cbf29b76b442f7103abc5fb9a833
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764713"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461929"
 ---
 # <a name="freebusyresponse"></a>FreeBusyResponse
 
-El elemento **FreeBusyResponse** contiene la información de disponibilidad para un usuario de buzón único. 
+El elemento **FreeBusyResponse** contiene la información de disponibilidad de un único usuario de buzón de correo. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -39,39 +39,39 @@ El elemento **FreeBusyResponse** contiene la información de disponibilidad para
  **FreeBusyResponseType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseMessage](responsemessage.md) <br/> |Proporciona información descriptiva sobre el estado de respuesta.  <br/> |
-|[FreeBusyView](freebusyview.md) <br/> |Contiene la información de disponibilidad para un usuario específico.  <br/> |
+|[ResponseMessage](responsemessage.md) <br/> |Proporciona información descriptiva sobre el estado de la respuesta.  <br/> |
+|[FreeBusyView](freebusyview.md) <br/> |Contiene la información de disponibilidad de un usuario específico.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FreeBusyResponseArray](freebusyresponsearray.md) <br/> |Contiene información sobre la disponibilidad de los usuarios solicitado y el estado de la respuesta.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray` <br/> |
+|[FreeBusyResponseArray](freebusyresponsearray.md) <br/> |Contiene la información de disponibilidad de los usuarios solicitados y el estado de la respuesta.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Este elemento no está incluido en una respuesta de GetUserAvailability si no se solicita información de disponibilidad.
+Este elemento no se incluye en una respuesta GetUserAvailability si no se solicita información de disponibilidad.
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -82,5 +82,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

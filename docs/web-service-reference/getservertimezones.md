@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2a89098b-d89b-4d01-827b-50be00f7cbe9
-description: El elemento GetServerTimeZones es el elemento raíz en una solicitud para recuperar las definiciones de zona horaria desde el servidor de Exchange.
-ms.openlocfilehash: 1ad503ff312497189f57bce9a3670571aedad5ce
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetServerTimeZones es el elemento raíz de una solicitud para recuperar definiciones de zona horaria del servidor de Exchange.
+ms.openlocfilehash: 797e4543c94b0628242bcf544fe9a735ebaa5a63
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764978"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460942"
 ---
 # <a name="getservertimezones"></a>GetServerTimeZones
 
-El elemento **GetServerTimeZones** es el elemento raíz en una solicitud para recuperar las definiciones de zona horaria desde el servidor de Exchange. 
+El elemento **GetServerTimeZones** es el elemento raíz de una solicitud para recuperar definiciones de zona horaria del servidor de Exchange. 
   
 ```xml
 <GetServerTimeZones ReturnFullTimeZoneData="">   <Ids/></GetServerTimeZones>
@@ -30,26 +30,26 @@ El elemento **GetServerTimeZones** es el elemento raíz en una solicitud para re
  **GetServerTimeZonesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**ReturnFullTimeZoneData** <br/> |Especifica si la [operación de GetServerTimeZones](getservertimezones-operation.md) devuelve la definición completa o sólo el nombre y el identificador de cada zona horaria. Este atributo es opcional. El valor predeterminado es **true**.  <br/> |
+|**ReturnFullTimeZoneData** <br/> |Especifica si la [operación GetServerTimeZones](getservertimezones-operation.md) devuelve la definición completa o solo el nombre y el identificador de cada zona horaria. Este atributo es opcional. El valor predeterminado es **true**.  <br/> |
    
 #### <a name="returnfulltimezonedata-attribute"></a>Atributo ReturnFullTimeZoneData
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|**True** <br/> |Devolver las definiciones de completadas para cada zona horaria.  <br/> |
-|**False** <br/> |Devolver solo el nombre y el identificador de cada zona horaria.  <br/> |
+|**true** <br/> |Devuelve las definiciones completas para cada zona horaria.  <br/> |
+|**false** <br/> |Devolver solo el nombre y el identificador de cada zona horaria.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Identificadores de](ids.md) <br/> |Contiene una matriz de identificadores de definición de zona horaria que especifica las definiciones de zona horaria solicitado. Este elemento es opcional. Si este elemento no está incluido en la solicitud de la [operación de GetServerTimeZones](getservertimezones-operation.md) , se devuelven todas las definiciones de zona horaria que están disponibles en el servidor en la respuesta.  <br/> |
+|[Falta](ids.md) <br/> |Contiene una matriz de identificadores de definición de zona horaria que especifica las definiciones de zona horaria solicitada. Este elemento es opcional. Si este elemento no se incluye en la solicitud de [operación GetServerTimeZones](getservertimezones-operation.md) , todas las definiciones de zona horaria que estén disponibles en el servidor se devolverán en la respuesta.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -57,16 +57,16 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -77,5 +77,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [GetServerTimeZonesResponse](getservertimezonesresponse.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

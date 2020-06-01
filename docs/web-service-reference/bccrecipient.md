@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4ef0cff5-8a5a-4d76-9d2b-938774d8fc1b
-description: El elemento BccRecipient representa un destinatario para recibir una copia oculta (CCO) del mensaje de correo electrónico.
-ms.openlocfilehash: bed58536263196a61651493e92a4dcd1df3f5ec9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento BccRecipient representa un destinatario que recibe una copia oculta (CCO) de un mensaje de correo electrónico.
+ms.openlocfilehash: 8296af1d74338bdfb1f4cb7bc7449ad91a9cd531
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763608"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461530"
 ---
 # <a name="bccrecipient"></a>BccRecipient
 
-El elemento **BccRecipient** representa un destinatario para recibir una copia oculta (CCO) del mensaje de correo electrónico. 
+El elemento **BccRecipient** representa un destinatario que recibe una copia oculta (CCO) de un mensaje de correo electrónico. 
   
 ```XML
 <BccRecipient>true | false</BccRecipient>
@@ -30,25 +30,25 @@ El elemento **BccRecipient** representa un destinatario para recibir una copia o
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Contiene información de un solo evento de un destinatario.  <br/> |
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Contiene información de un evento único para un destinatario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Este elemento puede ser **true** o **false**. Un valor de **true** indica que el destinatario es carbón oculta copiado; un valor de **false** indica que el destinatario no es carbón oculta copiado. 
+Este elemento puede ser **true** o **false**. Un valor de **true** indica que el destinatario ha copiado el carbono ciego; un valor de **false** indica que el destinatario no es una copia oculta. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -58,14 +58,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

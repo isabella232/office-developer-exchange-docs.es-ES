@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d2ec9ea4-cc25-48c3-9b35-a479a41b6b48
-description: El elemento HoldId contiene el identificador de espera de buzón de correo.
-ms.openlocfilehash: 890bcb10a084aade2b9762628f3e91851fe9e04b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento HoldId contiene el identificador de retención de buzón.
+ms.openlocfilehash: 09a8fbe7f48f409dd340d8a4d56d7feec451d5e5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835812"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460935"
 ---
 # <a name="holdid"></a>HoldId
 
-El elemento **HoldId** contiene el identificador de espera de buzón de correo. 
+El elemento **HoldId** contiene el identificador de retención de buzón. 
   
 ```XML
 <HoldId></HoldId>
@@ -26,23 +26,23 @@ El elemento **HoldId** contiene el identificador de espera de buzón de correo.
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[GetHoldOnMailboxes](getholdonmailboxes.md) | [SetHoldOnMailboxes](setholdonmailboxes.md) | [MailboxHoldResult](mailboxholdresult.md)
+[GetHoldOnMailboxes](getholdonmailboxes.md)  |  [SetHoldOnMailboxes](setholdonmailboxes.md)  |  [MailboxHoldResult](mailboxholdresult.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **HoldId** es el identificador único de una suspensión de buzón de correo. 
+El valor de texto del elemento **HoldId** es el identificador único de una retención de buzón. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: af7f202b-2889-447e-bdeb-aaad18ce6b46
-description: El elemento IncludeNonIndexableItems contiene un valor booleano para indicar si se incluyen los elementos que no se pueden indizar.
-ms.openlocfilehash: ae91a3c6db82aea1d45940603d0ff2064d29f43f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento IncludeNonIndexableItems contiene un valor booleano que indica si se deben incluir los elementos que no se pueden indizar.
+ms.openlocfilehash: eab559e938f0b949d79626ae5bf61b3d4a838924
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835904"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460627"
 ---
 # <a name="includenonindexableitems"></a>IncludeNonIndexableItems
 
-El elemento **IncludeNonIndexableItems** contiene un valor **booleano** para indicar si se incluyen los elementos que no se pueden indizar. 
+El elemento **IncludeNonIndexableItems** contiene un valor **booleano** que indica si se deben incluir los elementos que no se pueden indizar. 
   
 ```XML
 <IncludeNonIndexableItems>true | false</IncludeNonIndexableItems>
@@ -26,15 +26,15 @@ El elemento **IncludeNonIndexableItems** contiene un valor **booleano** para ind
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **IncludeNonIndexableItems** indica que los elementos que no se pueden indizar se incluyen con suspensiones de buzón de correo. Un valor de **false** indica que no se incluyen los elementos que no se pueden indizar en suspensiones de buzón de correo. 
+Un valor de texto de **true** para el elemento **IncludeNonIndexableItems** indica que los elementos que no se pueden indizar se incluyen en la retención de buzones. Un valor de **false** indica que los elementos que no se pueden indizar no se incluyen en la retención de buzones. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

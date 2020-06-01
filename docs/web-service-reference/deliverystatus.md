@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: eab55db3-affb-42be-a586-5caa04052433
 description: El elemento DeliveryStatus especifica el estado de un mensaje.
-ms.openlocfilehash: 4e6f31e8ef4f98d8e838ba91167c7dd5d6ab2590
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: ae32202284d3dd272f693fbb7b76070cb6019d28
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764122"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461404"
 ---
 # <a name="deliverystatus"></a>DeliveryStatus
 
@@ -30,35 +30,35 @@ El elemento **DeliveryStatus** especifica el estado de un mensaje.
  **MessageTrackingDeliveryStatusType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Contiene información de un solo evento de un destinatario.  <br/> |
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Contiene información de un evento único para un destinatario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-En la siguiente tabla se enumera los posibles valores de texto para el elemento **DeliveryStatus** . 
+En la siguiente tabla se enumeran los valores de texto posibles para el elemento **DeliveryStatus** . 
   
-**Valores de elemento DeliveryStatus**
+**Valores del elemento DeliveryStatus**
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Realizado correctamente  <br/> |Especifica que un mensaje no se entregó.  <br/> |
-|Pendiente  <br/> |Especifica que el mensaje está esperando la aprobación de un moderador.  <br/> |
-|Entregado  <br/> |Especifica que el mensaje se entregó a todos los destinatarios especificados.  <br/> |
-|Transfiere  <br/> |Especifica que el mensaje se ha transferido a un servidor fuera del ámbito de búsqueda.  <br/> |
-|Leído  <br/> |Especifica que el mensaje se entrega y leer los destinatarios.  <br/> |
+|Correctamente  <br/> |Especifica que no se entregó un mensaje.  <br/> |
+|Pending  <br/> |Especifica que el mensaje está esperando su aprobación de un moderador.  <br/> |
+|Pronuncia  <br/> |Especifica que el mensaje se entregó a todos los destinatarios especificados.  <br/> |
+|Transferido  <br/> |Especifica que el mensaje se transfirió a un servidor fuera del ámbito de búsqueda.  <br/> |
+|Read  <br/> |Especifica que el mensaje fue entregado y leído por los destinatarios.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -70,12 +70,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

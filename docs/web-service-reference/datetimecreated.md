@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 42ae0067-4688-49d9-93c5-c4dbeb54cee1
-description: El elemento DateTimeCreated representa la fecha y hora en que se creó el elemento en el buzón de correo.
-ms.openlocfilehash: 5cfd4e73295bc6823e76d901a21f4745c5fda977
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DateTimeCreated representa la fecha y la hora en que se creó un elemento en el buzón.
+ms.openlocfilehash: c79fe4f9288a5b636d7a85412f2410fe388272fc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764037"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461418"
 ---
 # <a name="datetimecreated"></a>DateTimeCreated
 
-El elemento **DateTimeCreated** representa la fecha y hora en que se creó el elemento en el buzón de correo. 
+El elemento **DateTimeCreated** representa la fecha y la hora en que se creó un elemento en el buzón. 
   
 ```xml
 <DateTimeCreated/>
@@ -31,52 +31,52 @@ El elemento **DateTimeCreated** representa la fecha y hora en que se creó el el
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
-|[Contact](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
+|[Contacto](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Representa una lista de distribución.  <br/> |
-|[Item](item.md) <br/> |Representa un elemento en el almacén de Exchange.  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Representa la cancelación de la reunión en el almacén de Exchange.  <br/> |
+|[Elemento](item.md) <br/> |Representa un elemento en el almacén de Exchange.  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Representa una cancelación de reunión en el almacén de Exchange.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Representa una reunión en el almacén de Exchange.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Representa una convocatoria de reunión en el almacén de Exchange.  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta a la reunión en el almacén de Exchange.  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange.  <br/> |
-|[RemoveItem](removeitem.md) <br/> |Quita un elemento desde el almacén de Exchange.  <br/> |
-|[Tarea](task.md) <br/> |Representa una tarea en el almacén de Exchange.  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta a una reunión en el almacén de Exchange.  <br/> |
+|[Mensaje](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange.  <br/> |
+|[RemoveItem](removeitem.md) <br/> |Quita un elemento del almacén de Exchange.  <br/> |
+|[Tarea](task.md) <br/> |Representa una tarea del almacén de Exchange.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa la fecha y hora cuando se creó el elemento en el buzón de correo.
+El valor de texto representa la fecha y la hora en que se creó un elemento en el buzón.
   
 ## <a name="remarks"></a>Comentarios
 
-Uso de objetos de respuesta de calendario actualiza la propiedad [DateTimeCreated](datetimecreated.md) en el elemento de calendario asociado. El comportamiento esperado es para que la propiedad **DateTimeCreated** no se modifican. Por ejemplo, envía el usuario A una reunión de solicitar al usuario B. usuario B acepta la convocatoria de reunión con el identificador de la convocatoria de reunión. Se cambia la propiedad **DateTimeCreated** del elemento de calendario asociado. 
+El uso de objetos de respuesta de calendario actualiza la propiedad [DateTimeCreated](datetimecreated.md) del elemento de calendario asociado. El comportamiento esperado es que la propiedad **DateTimeCreated** permanezca inalterada. Por ejemplo, el usuario A envía una convocatoria de reunión al usuario B. el usuario B acepta la convocatoria de reunión con el identificador de la convocatoria de reunión. Se cambia la propiedad **DateTimeCreated** del elemento de calendario asociado. 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

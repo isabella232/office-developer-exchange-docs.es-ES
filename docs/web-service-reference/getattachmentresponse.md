@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cb65f449-309b-4b6e-8d22-d1967135490c
-description: El elemento GetAttachmentResponse define una respuesta a una solicitud de GetAttachment.
-ms.openlocfilehash: 05a9e84236c791dcec99182dfca0352e44efca46
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetAttachmentResponse define una respuesta a una solicitud GetAttachment.
+ms.openlocfilehash: f0daf778f1248eabc5d51ee6155c460d9248549f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764758"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461257"
 ---
 # <a name="getattachmentresponse"></a>GetAttachmentResponse
 
-El elemento **GetAttachmentResponse** define una respuesta a una solicitud de GetAttachment. 
+El elemento **GetAttachmentResponse** define una respuesta a una solicitud GetAttachment. 
   
 ```xml
 <GetAttachmentResponse>
@@ -32,17 +32,17 @@ El elemento **GetAttachmentResponse** define una respuesta a una solicitud de Ge
  **GetAttachmentResponseType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta para una solicitud de servicios Web de Exchange.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta de una solicitud de servicios web Exchange.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -50,16 +50,16 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

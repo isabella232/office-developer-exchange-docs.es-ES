@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: c5a2cd55-ac47-43bf-94b5-3ab3a4c28a62
-description: El elemento FolderName identifica una sola carpeta personalizada administrada para agregar a un buzón de correo.
-ms.openlocfilehash: 56a7a7d256624c5103c88a333222807519d21501
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento nombreDeCarpeta identifica una única carpeta administrada administrada que se va a agregar a un buzón.
+ms.openlocfilehash: 1bb63e50c06e81337d1142a6624213fb2db12457
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764687"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461355"
 ---
 # <a name="foldername"></a>FolderName
 
-El elemento **FolderName** identifica una sola carpeta personalizada administrada para agregar a un buzón de correo. 
+El elemento **nombreDeCarpeta** identifica una única carpeta administrada administrada que se va a agregar a un buzón. 
   
 [CreateManagedFolder](createmanagedfolder.md)
   
-[Nombres de carpetas](foldernames.md)
+[FolderNames](foldernames.md)
   
 [FolderName](foldername.md)
   
@@ -36,21 +36,21 @@ El elemento **FolderName** identifica una sola carpeta personalizada administrad
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Nombres de carpetas](foldernames.md) <br/> |Contiene una matriz de con nombre carpetas personalizadas administradas para agregar a un buzón de correo.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/CreateManagedFolder/FolderNames` <br/> |
+|[FolderNames](foldernames.md) <br/> |Contiene una matriz de carpetas personalizadas administradas con nombre para agregar a un buzón de correo.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/CreateManagedFolder/FolderNames` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -58,22 +58,22 @@ Se requiere un valor de texto. El valor de texto representa un nombre de carpeta
   
 ## <a name="remarks"></a>Comentarios
 
-Aunque puede usar servicios Web de Exchange para agregar carpetas personalizadas administradas a un buzón de correo, no puede usar la misma tecnología para tener acceso a la lista de carpetas personalizadas administradas disponibles. Puede obtener una lista de las carpetas personalizadas administradas mediante el uso de un comando de Shell de administración de Exchange o mediante el uso de una API que interactúa con el servicio de directorio de Active Directory. Nombre de la carpeta es el nombre del objeto de Active Directory correspondiente.
+Aunque puede usar los servicios Web de Exchange para agregar carpetas personalizadas administradas a un buzón de correo, no puede usar la misma tecnología para tener acceso a la lista de carpetas personalizadas administradas disponibles. Puede obtener una lista de las carpetas personalizadas administradas mediante un comando del shell de administración de Exchange o mediante una API que interactúa con el servicio de directorio de Active Directory. El nombre de la carpeta es el nombre del objeto de Active Directory correspondiente.
   
-Puede usar la [operación FindFolder](findfolder-operation.md) para buscar carpetas personalizadas administradas. Usar la [operación DeleteFolder](deletefolder-operation.md) para eliminar las carpetas personalizadas administradas. 
+Puede usar la [operación FindFolder](findfolder-operation.md) para buscar carpetas personalizadas administradas. Use la [operación DeleteFolder](deletefolder-operation.md) para eliminar las carpetas personalizadas administradas. 
   
-Es importante tener en cuenta que **FolderName** es el nombre de una carpeta personalizada administrada existente en la organización. Un intento para agregar una carpeta que no está en la organización, se producirá en una respuesta de error. 
+Es importante tener en cuenta que **nombreDeCarpeta** es el nombre de una carpeta personalizada administrada existente en la organización. Si se intenta agregar una carpeta que no está en la organización, se producirá una respuesta de error. 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -82,7 +82,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [Operación FindFolder](findfolder-operation.md)
 
 
-[Buscar carpetas](http://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
+[Buscar carpetas](https://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
   
-[Adición de las carpetas administradas](http://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)
+[Adición de carpetas administradas](https://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)
 

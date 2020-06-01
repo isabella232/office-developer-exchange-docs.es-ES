@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: e9f70726-db08-4089-839e-a41007d0a473
 description: El elemento CreateRuleOperation representa una operación para crear una nueva regla de bandeja de entrada.
-ms.openlocfilehash: c531f222ffe886e6ef53a99609cfa27e84fd6107
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: df857544e6d5840a3f738740114195e4c4bb5798
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763970"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460774"
 ---
 # <a name="createruleoperation"></a>CreateRuleOperation
 
@@ -36,21 +36,21 @@ El elemento **CreateRuleOperation** representa una operación para crear una nue
  **CreateRuleOperationType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Regla (RuleType)](rule-ruletype.md) <br/> |Representa una regla que se creará en el buzón del usuario.  <br/> |
+|[Regla (RuleType)](rule-ruletype.md) <br/> |Representa una regla que se va a crear en el buzón de un usuario.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Operations](operations.md) <br/> |Contiene las operaciones que se pueden realizar en una bandeja de entrada.  <br/> |
    
@@ -66,10 +66,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -82,5 +82,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [DeleteRuleOperation](deleteruleoperation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

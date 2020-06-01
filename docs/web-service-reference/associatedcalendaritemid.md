@@ -12,16 +12,16 @@ api_type:
 - schema
 ms.assetid: 5b29898c-ea59-4e6a-914c-c011ec754032
 description: El elemento AssociatedCalendarItemId representa el elemento de calendario que está asociado con un MeetingMessage, MeetingRequest, MeetingResponse, MeetingCancellation o ReminderMessageData.
-ms.openlocfilehash: 4445da88d6fec42c1e02cd8de4d2e423485a4472
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 816372c38243ba0fe5a7606c264dd1c5107350f2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763564"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460886"
 ---
 # <a name="associatedcalendaritemid"></a>AssociatedCalendarItemId
 
-El elemento **AssociatedCalendarItemId** representa el elemento de calendario que está asociado con un [MeetingMessage](meetingmessage.md), [MeetingRequest](meetingrequest.md), [MeetingResponse](meetingresponse.md), [MeetingCancellation](meetingcancellation.md)o [ReminderMessageData](remindermessagedata.md).
+El **elemento AssociatedCalendarItemId** representa el elemento de calendario que está asociado con un [MeetingMessage](meetingmessage.md), [MeetingRequest](meetingrequest.md), [MeetingResponse](meetingresponse.md), [MeetingCancellation](meetingcancellation.md)o [ReminderMessageData](remindermessagedata.md).
   
 ```XML
 <AssociatedCalendarItemId Id="" ChangeKey=""/>
@@ -30,26 +30,26 @@ El elemento **AssociatedCalendarItemId** representa el elemento de calendario qu
  **ItemIdType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**Id** <br/> |Identifica el elemento de calendario que está asociado a la reunión.  <br/> |
-|**ChangeKey** <br/> |Identifica una versión específica del elemento de calendario que está asociado a una reunión.  <br/> |
+|**Id** <br/> |Identifica el elemento de calendario que está asociado con la reunión.  <br/> |
+|**ChangeKey** <br/> |Identifica una versión específica del elemento de calendario que está asociada a una reunión.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[MeetingMessage](meetingmessage.md) | [MeetingRequest](meetingrequest.md) | [MeetingResponse](meetingresponse.md) | [MeetingCancellation](meetingcancellation.md) | [ReminderMessageData](remindermessagedata.md)
+[MeetingMessage](meetingmessage.md)  |  Propiedad [MeetingRequest](meetingrequest.md)  |  [MeetingResponse](meetingresponse.md)  |  [MeetingCancellation](meetingcancellation.md)  |  [ReminderMessageData](remindermessagedata.md)
   
 ## <a name="remarks"></a>Comentarios
 
-Las versiones de Exchange, comenzando por el número de compilación 15.00.0913.09 pueden incluir el elemento **AssociatedCalendarItemId** como un elemento secundario del elemento **ReminderMessageData** . 
+Las versiones de Exchange que comienzan con el número de compilación 15.00.0913.09 pueden incluir el elemento **AssociatedCalendarItemId** como elemento secundario del elemento **ReminderMessageData** . 
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -57,12 +57,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

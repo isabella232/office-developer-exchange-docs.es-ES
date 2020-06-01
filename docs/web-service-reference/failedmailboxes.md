@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f34fb6f6-057e-4ae3-8e10-bc92112eafba
-description: El elemento FailedMailboxes especifica una matriz de buzones de correo con errores en la búsqueda.
-ms.openlocfilehash: f68cc29dc9da3b1b74369aa21cde65866e42f3b8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento FailedMailboxes especifica una matriz de buzones en los que se produjo un error en la búsqueda.
+ms.openlocfilehash: 10f10d3f2ac4379d7ddcb3a13019d17a17bb676a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764579"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461957"
 ---
 # <a name="failedmailboxes"></a>FailedMailboxes
 
-El elemento **FailedMailboxes** especifica una matriz de buzones de correo con errores en la búsqueda. 
+El elemento **FailedMailboxes** especifica una matriz de buzones en los que se produjo un error en la búsqueda. 
   
 ```XML
 <FailedMailboxes>
@@ -28,23 +28,23 @@ El elemento **FailedMailboxes** especifica una matriz de buzones de correo con e
  **ArrayOfFailedSearchMailboxesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FailedMailbox](failedmailbox.md) <br/> |Especifica el mensaje de error para un buzón de correo con errores en la búsqueda.  <br/> |
+|[FailedMailbox](failedmailbox.md) <br/> |Especifica el mensaje de error de un buzón en el que se produjo un error en la búsqueda.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SearchMailboxesResult](searchmailboxesresult.md) <br/> |Contiene el resultado de la solicitud de **SearchMailboxes** .  <br/> |
+|[SearchMailboxesResult](searchmailboxesresult.md) <br/> |Contiene el resultado de la solicitud **SearchMailboxes** .  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

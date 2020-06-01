@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 74d97d4a-e452-4d2e-9cd2-89e93d766fb0
-description: El elemento OtherFaxes especifica una matriz de valores de número de teléfono de fax y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: 74c275c2177a6d544ad8a3fd7ef310e484a18fdd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento OtherFaxes especifica una matriz de valores de números de teléfono de fax y los identificadores de sus atribuciones de origen para el rol asociado.
+ms.openlocfilehash: 1298f5c8d20447b31a9800be5b960a5bd96fb44b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836672"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462363"
 ---
 # <a name="otherfaxes"></a>OtherFaxes
 
-El elemento **OtherFaxes** especifica una matriz de valores de número de teléfono de fax y los identificadores de sus atribuciones de origen para el rol asociado. 
+El elemento **OtherFaxes** especifica una matriz de valores de números de teléfono de fax y los identificadores de sus atribuciones de origen para el rol asociado. 
   
 ```XML
 <OtherFaxes>
@@ -29,11 +29,11 @@ El elemento **OtherFaxes** especifica una matriz de valores de número de teléf
  **ArrayOfPhoneNumberAttributedValuesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

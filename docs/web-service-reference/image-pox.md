@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: c3dcabdb-8a29-42f8-8ab4-461bf17fb9f6
-description: El elemento de imagen contiene la ruta de acceso de una imagen que se usa para personalizar la marca de la experiencia de configuración.
-ms.openlocfilehash: 5ff2c03ab4297b0a059493ab3f7e763b804bdad7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Image contiene la ruta de acceso de una imagen que se usa para personalizar la configuración de la experiencia.
+ms.openlocfilehash: 5e981c1bb4a6029108fd442556a68356b073059d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835881"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460732"
 ---
 # <a name="image-pox"></a>Imagen (POX)
 
-El elemento de **imagen** contiene la ruta de acceso de una imagen que se usa para personalizar la marca de la experiencia de configuración. 
+El elemento **Image** contiene la ruta de acceso de una imagen que se usa para personalizar la configuración de la experiencia. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -34,29 +34,29 @@ El elemento de **imagen** contiene la ruta de acceso de una imagen que se usa pa
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de cuenta para el usuario.  <br/> |
+|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de la cuenta del usuario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa la ruta de acceso de una imagen que se usa para personalizar la marca de la experiencia de configuración.
+El valor de texto representa la ruta de acceso de una imagen que se usa para personalizar la experiencia de la configuración.
   
 ## <a name="see-also"></a>Vea también
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

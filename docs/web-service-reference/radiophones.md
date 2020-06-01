@@ -1,5 +1,5 @@
 ---
-title: RadioPhones
+title: Teléfonos
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ea650c84-0b3e-4099-bb76-9619949b4092
-description: El elemento RadioPhones especifica una matriz de números de teléfono de radio y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: 0363852de889ad92b01e40f11665fdf61ecfa073
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento radiophones especifica una matriz de números de teléfono de radio y los identificadores de sus atribuciones de origen para el rol asociado.
+ms.openlocfilehash: d77980c40e3b87bab9a3d82ead079cc5dd651d33
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836938"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461635"
 ---
-# <a name="radiophones"></a>RadioPhones
+# <a name="radiophones"></a>Teléfonos
 
-El elemento **RadioPhones** especifica una matriz de números de teléfono de radio y los identificadores de sus atribuciones de origen para el rol asociado. 
+El elemento **Radiophones** especifica una matriz de números de teléfono de radio y los identificadores de sus atribuciones de origen para el rol asociado. 
   
 ```XML
 <RadioPhones>
@@ -28,11 +28,11 @@ El elemento **RadioPhones** especifica una matriz de números de teléfono de ra
  **ArrayOfPhoneNumberAttributedValuesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

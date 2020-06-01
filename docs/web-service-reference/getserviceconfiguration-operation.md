@@ -11,31 +11,31 @@ api_name:
 api_type:
 - schema
 ms.assetid: 070cbfe5-325a-4955-8e4a-8230ea0459a7
-description: La operación GetServiceConfiguration obtiene información de configuración para el tipo de servicio especificado. Esta operación puede devolver valores de configuración de los servicios de mensajería unificada, las reglas de protección y las sugerencias de correo.
-ms.openlocfilehash: 7fdc4d8defac3d6d352c121483bf8a4c735d9629
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación GetServiceConfiguration obtiene información de configuración para el tipo de servicio especificado. Esta operación puede devolver opciones de configuración para los servicios de mensajería unificada, reglas de protección y sugerencias de correo.
+ms.openlocfilehash: b8ea2cef366a52765850dddcc8c1ef1e8fa68b22
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835667"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460914"
 ---
 # <a name="getserviceconfiguration-operation"></a>Operación GetServiceConfiguration
 
-La operación **GetServiceConfiguration** obtiene información de configuración para el tipo de servicio especificado. Esta operación puede devolver valores de configuración de los servicios de mensajería unificada, las reglas de protección y las sugerencias de correo. 
+La operación **GetServiceConfiguration** obtiene información de configuración para el tipo de servicio especificado. Esta operación puede devolver opciones de configuración para los servicios de mensajería unificada, reglas de protección y sugerencias de correo. 
   
-## <a name="getserviceconfiguration-request-example"></a>Ejemplo de solicitud de GetServiceConfiguration
+## <a name="getserviceconfiguration-request-example"></a>Ejemplo de solicitud GetServiceConfiguration
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud de **GetServiceConfiguration** muestra cómo formar una solicitud para obtener información de configuración para el servicio de mensajería unificada. 
+El siguiente ejemplo de una solicitud **GetServiceConfiguration** muestra cómo crear una solicitud para obtener información de configuración para el servicio de mensajería unificada. 
   
 ### <a name="code"></a>Código
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
@@ -55,7 +55,7 @@ El siguiente ejemplo de una solicitud de **GetServiceConfiguration** muestra có
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **GetServiceConfiguration** . 
+En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **GetServiceConfiguration** . 
   
 ### <a name="code"></a>Código
 
@@ -68,23 +68,23 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **Ge
                          MajorBuildNumber="639" 
                          MinorBuildNumber="20" 
                          Version="Exchange2010" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <GetServiceConfigurationResponse ResponseClass="Success" 
-                                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <ResponseMessages>
         <ServiceConfigurationResponseMessageType ResponseClass="Success">
           <ResponseCode>NoError</ResponseCode>
-          <m:UnifiedMessagingConfiguration xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
-            <t:UmEnabled xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">true</t:UmEnabled>
-            <t:PlayOnPhoneDialString xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">user@contoso.com</t:PlayOnPhoneDialString>
-            <t:PlayOnPhoneEnabled xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">true</t:PlayOnPhoneEnabled>
+          <m:UnifiedMessagingConfiguration xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
+            <t:UmEnabled xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">true</t:UmEnabled>
+            <t:PlayOnPhoneDialString xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">user@contoso.com</t:PlayOnPhoneDialString>
+            <t:PlayOnPhoneEnabled xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">true</t:PlayOnPhoneEnabled>
           </m:UnifiedMessagingConfiguration>
         </ServiceConfigurationResponseMessageType>
       </ResponseMessages>
@@ -93,11 +93,11 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **Ge
 </s:Envelope>
 ```
 
-## <a name="getserviceconfiguration-error-response-example"></a>Ejemplo de respuesta de GetServiceConfiguration Error
+## <a name="getserviceconfiguration-error-response-example"></a>Ejemplo de respuesta de error GetServiceConfiguration
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta de error a la solicitud de **GetServiceConfiguration** . Este error se produjo por un nombre de configuración incorrecta. 
+En el ejemplo siguiente se muestra una respuesta de error a la solicitud **GetServiceConfiguration** . Este error se ha producido por un nombre de configuración incorrecto. 
   
 ### <a name="code"></a>Código
 
@@ -106,21 +106,21 @@ En el ejemplo siguiente se muestra una respuesta de error a la solicitud de **Ge
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Body>
     <s:Fault>
-      <faultcode xmlns:a="http://schemas.microsoft.com/exchange/services/2006/types">a:ErrorSchemaValidation</faultcode>
+      <faultcode xmlns:a="https://schemas.microsoft.com/exchange/services/2006/types">a:ErrorSchemaValidation</faultcode>
       <faultstring xml:lang="en-US">The request failed schema validation: 
-      The 'http://schemas.microsoft.com/exchange/services/2006/messages:ConfigurationName' element 
+      The 'https://schemas.microsoft.com/exchange/services/2006/messages:ConfigurationName' element 
       is invalid - The value 'UUnifiedMessagingConfiguration' is invalid according to its 
-      datatype 'http://schemas.microsoft.com/exchange/services/2006/types:ServiceConfigurationType' 
+      datatype 'https://schemas.microsoft.com/exchange/services/2006/types:ServiceConfigurationType' 
       - The Enumeration constraint failed.</faultstring>
       <detail>
-        <e:ResponseCode xmlns:e="http://schemas.microsoft.com/exchange/services/2006/errors">ErrorSchemaValidation</e:ResponseCode>
-        <e:Message xmlns:e="http://schemas.microsoft.com/exchange/services/2006/errors">The request failed schema validation.</e:Message>
-        <t:MessageXml xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+        <e:ResponseCode xmlns:e="https://schemas.microsoft.com/exchange/services/2006/errors">ErrorSchemaValidation</e:ResponseCode>
+        <e:Message xmlns:e="https://schemas.microsoft.com/exchange/services/2006/errors">The request failed schema validation.</e:Message>
+        <t:MessageXml xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
           <t:LineNumber>13</t:LineNumber>
           <t:LinePosition>62</t:LinePosition>
-          <t:Violation>The 'http://schemas.microsoft.com/exchange/services/2006/messages:ConfigurationName' element 
+          <t:Violation>The 'https://schemas.microsoft.com/exchange/services/2006/messages:ConfigurationName' element 
           is invalid - The value 'UUnifiedMessagingConfiguration' is invalid according to its 
-          datatype 'http://schemas.microsoft.com/exchange/services/2006/types:ServiceConfigurationType'
+          datatype 'https://schemas.microsoft.com/exchange/services/2006/types:ServiceConfigurationType'
           - The Enumeration constraint failed.</t:Violation>
         </t:MessageXml>
       </detail>
@@ -135,5 +135,5 @@ En el ejemplo siguiente se muestra una respuesta de error a la solicitud de **Ge
 
 [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
   
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

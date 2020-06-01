@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e15dbfca-3b9d-463e-94ec-4f1b6115bee3
-description: El elemento GetDiscoverySearchConfiguration especifica una solicitud para recuperar la configuración de búsqueda de exhibición de documentos electrónicos.
-ms.openlocfilehash: 41a3cabb2822c4ee6a31aa7ff3074d62987edc92
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetDiscoverySearchConfiguration especifica una solicitud para recuperar la configuración de búsqueda de eDiscovery.
+ms.openlocfilehash: 821c5e1429c160e326f6d99df3ff4fcc831b83d1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764808"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461005"
 ---
 # <a name="getdiscoverysearchconfiguration"></a>GetDiscoverySearchConfiguration
 
-El elemento **GetDiscoverySearchConfiguration** especifica una solicitud para recuperar la configuración de búsqueda de exhibición de documentos electrónicos. 
+El elemento **GetDiscoverySearchConfiguration** especifica una solicitud para recuperar la configuración de búsqueda de eDiscovery. 
   
 ```XML
 <GetDiscoverySearchConfiguration>
@@ -29,18 +29,18 @@ El elemento **GetDiscoverySearchConfiguration** especifica una solicitud para re
  **GetDiscoverySearchConfigurationType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Identificador de búsqueda](searchid.md) <br/> |Especifica el identificador de la búsqueda.  <br/> |
-|[ExpandGroupMembership](expandgroupmembership.md) <br/> |Contiene un valor booleano que indica si se debe expandir la pertenencia del grupo devuelto desde una solicitud de **GetSearchableMailboxes** .  <br/> |
+|[SearchId](searchid.md) <br/> |Especifica el identificador de la búsqueda.  <br/> |
+|[ExpandGroupMembership](expandgroupmembership.md) <br/> |Contiene un valor booleano que indica si se va a expandir la pertenencia del grupo devuelto desde una solicitud **GetSearchableMailboxes** .  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

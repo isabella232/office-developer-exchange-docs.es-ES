@@ -1,5 +1,5 @@
 ---
-title: Miembros
+title: Members
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2099a48d-942e-4d36-b658-00c5cb108469
-description: El elemento (miembros) está pensado para uso interno únicamente.
-ms.openlocfilehash: 518c854726296d33a8a21bacee8500c7fdc40855
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Members está destinado solo para uso interno.
+ms.openlocfilehash: fbac39cc20b70446fc599898e7f2f8fbcba68d47
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836441"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462412"
 ---
-# <a name="members"></a>Miembros
+# <a name="members"></a>Members
 
-El elemento **(miembros)** está pensado para uso interno únicamente. 
+El elemento **Members** está destinado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

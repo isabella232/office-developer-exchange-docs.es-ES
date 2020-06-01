@@ -11,63 +11,63 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8bc59a26-6fe1-42e9-968c-69a94a3fb0ae
-description: El elemento AbsoluteDate representa la fecha cuando se cambia la hora del estándar o de horario de verano.
-ms.openlocfilehash: d14cafb08297e5be3c8620c441f8b84b46ffe53e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AbsoluteDate representa la fecha en que cambia el horario estándar o el horario de verano.
+ms.openlocfilehash: 1874fea02c1eeeb41522046963e1d1b2fcea645a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763476"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461733"
 ---
 # <a name="absolutedate"></a>AbsoluteDate
 
-El elemento **AbsoluteDate** representa la fecha cuando se cambia la hora del estándar o de horario de verano. 
+El elemento **AbsoluteDate** representa la fecha en que cambia el horario estándar o el horario de verano. 
   
 ```xml
 <AbsoluteDate/>
 ```
 
-**fecha**
+**date**
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Standard](standard.md) <br/> |Representa la fecha y hora cuando se cambia la hora del horario de verano a la hora estándar.  <br/> |
-|[Horario de verano](daylight.md) <br/> |Representa la fecha y hora en que cambia el tiempo de la hora estándar al horario de verano.  <br/> |
+|[Estándar](standard.md) <br/> |Representa la fecha y la hora en que cambia el horario de verano a la hora estándar.  <br/> |
+|[Horario](daylight.md) <br/> |Representa la fecha y hora en que la hora cambia de la hora estándar al horario de verano.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa la fecha de cuando se produce el desplazamiento entre standard o del horario de verano.
+El valor de texto representa la fecha en que se produce el cambio entre el horario estándar o el horario de verano.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
 
 

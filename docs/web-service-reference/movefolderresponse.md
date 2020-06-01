@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e7dd2fb8-e362-42e5-a480-4d816813526d
-description: El elemento MoveFolderResponse define una respuesta a una solicitud de MoveFolder.
-ms.openlocfilehash: 86630f39a7fb415ed57f280705f068eb50f0adb9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MoveFolderResponse define una respuesta a una solicitud MoveFolder.
+ms.openlocfilehash: 2019321dcb03ec5e63b47a6b7579c8bd46756391
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836487"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461740"
 ---
 # <a name="movefolderresponse"></a>MoveFolderResponse
 
-El elemento **MoveFolderResponse** define una respuesta a una solicitud de MoveFolder. 
+El elemento **MoveFolderResponse** define una respuesta a una solicitud MoveFolder. 
   
 ```xml
 <MoveFolderResponse>
@@ -32,17 +32,17 @@ El elemento **MoveFolderResponse** define una respuesta a una solicitud de MoveF
  **MoveFolderResponseType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta para una solicitud de servicios Web de Exchange.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta de una solicitud de servicios web Exchange.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -50,15 +50,15 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 

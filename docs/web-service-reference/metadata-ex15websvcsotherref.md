@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c1cc609b-65ff-4998-8d2b-545f0fdcb54c
-description: El elemento de metadatos contiene metadatos sobre la aplicación de correo.
-ms.openlocfilehash: 8dd3a3db5a5e0afc1a23dad44d70fa3353c796f6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento metadata contiene metadatos sobre la aplicación de correo.
+ms.openlocfilehash: b7dd13936a25a43394b9a2d5eea8808fe08b4eb6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836459"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460592"
 ---
 # <a name="metadata"></a>Metadatos
 
-El elemento de **metadatos** contiene metadatos sobre la aplicación de correo. 
+El elemento **Metadata** contiene metadatos sobre la aplicación de correo. 
   
 ```XML
 <Metadata>
@@ -29,15 +29,15 @@ El elemento de **metadatos** contiene metadatos sobre la aplicación de correo.
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[EndNodeUrl](endnodeurl.md) | [AppStatus](appstatus-ex15websvcsotherref.md) | [ActionUrl](actionurl.md)
+[EndNodeUrl](endnodeurl.md)  |  [AppStatus](appstatus-ex15websvcsotherref.md)  |  [ActionUrl](actionurl.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -53,10 +53,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> | http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> | https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |No disponible  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |No aplicable  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -65,5 +65,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [App](app.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -11,47 +11,47 @@ api_name:
 api_type:
 - schema
 ms.assetid: 849b2c9e-4685-4bd1-9adb-aba0fcc52650
-description: La operación GetDelegate recupera la configuración de delegado para un buzón especificado.
-ms.openlocfilehash: bd1a0add54ee5fd1c23b4ba09a921a9061afa394
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación GetDelegate recupera la configuración de delegado de un buzón especificado.
+ms.openlocfilehash: 400bf5d1cafcbb789aaa749c62c7a908622d4ddb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764800"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461068"
 ---
 # <a name="getdelegate-operation"></a>Operación GetDelegate
 
-La operación **GetDelegate** recupera la configuración de delegado para un buzón especificado. 
+La operación **GetDelegate** recupera la configuración de delegado de un buzón especificado. 
   
 ## <a name="soap-headers"></a>Encabezados SOAP
 
-La operación de **GetDelegate** puede utilizar los encabezados SOAP que se enumeran y describen en la tabla siguiente. 
+La operación **GetDelegate** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla. 
   
-|**Header**|**Element**|**Descripción**|
+|**Header**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario que está realizando la suplantación de la aplicación cliente.  <br/> |
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural de RFC3066 va a usar para tener acceso al buzón.  <br/> |
-|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de la operación.  <br/> |
-|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que ha respondido a la solicitud.  <br/> |
+|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente.  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural RFC3066 que se va a usar para obtener acceso al buzón.  <br/> |
+|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación.  <br/> |
+|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud.  <br/> |
    
-## <a name="getdelegate-request-example"></a>Ejemplo de solicitud de GetDelegate
+## <a name="getdelegate-request-example"></a>Ejemplo de solicitud GetDelegate
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo de código siguiente se muestra cómo recuperar la configuración de delegado de todos los delegados que se establecen en el buzón de correo del user3. Todos los permisos para cada usuario se devuelven en la respuesta.
+En el ejemplo de código siguiente se muestra cómo recuperar la configuración de delegado para todos los delegados que se establecen en el buzón de user3's. Todos los permisos para cada usuario se devuelven en la respuesta.
   
 ### <a name="code"></a>Código
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1"/>
   </soap:Header>
   <soap:Body>
-    <GetDelegate xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                 xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+    <GetDelegate xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                 xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                  IncludePermissions="true">
       <Mailbox>
         <t:EmailAddress>user3@example.com</t:EmailAddress>
@@ -63,16 +63,16 @@ En el ejemplo de código siguiente se muestra cómo recuperar la configuración 
 
 ### <a name="comments"></a>Comentarios
 
-Puede usar el elemento [UserId](userid.md) para especificar usuarios individuales en lugar de devolver todos los usuarios que tienen permisos de acceso delegado en el buzón de correo. 
+Puede usar el elemento [userid](userid.md) para especificar usuarios individuales en lugar de devolver todos los usuarios que tienen permisos de acceso delegado en el buzón. 
   
 > [!NOTE]
-> Servicios Web de Exchange (EWS) no admite a delegados de grupo de administración. EWS devolverá un error si se llama a la operación de **GetDelegate** para una entidad de seguridad que tiene un delegado de grupo de seguridad. 
+> Los servicios web Exchange (EWS) no admiten la administración de delegados de grupo. EWS devolverá un error si se llama a la operación **GetDelegate** para una entidad de seguridad que tenga un delegado de grupo de seguridad. 
   
 ## <a name="getdelegate-response-example"></a>Ejemplo de respuesta GetDelegate
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una respuesta **GetDelegate** muestra una respuesta a una solicitud **GetDelegate** correcta. La respuesta contiene información acerca de los permisos de acceso delegado, si el delegado puede ver elementos privados, si el delegado recibe copia de los mensajes de la reunión y a quién la reunión se entregaron las solicitudes. 
+El siguiente ejemplo de una respuesta de **GetDelegate** muestra una respuesta correcta a una solicitud de **GetDelegate** . La respuesta contiene información sobre los permisos de acceso delegado, si el delegado puede ver elementos privados, si el delegado recibe copias de los mensajes de reunión y a quién se entregaron las convocatorias de reunión. 
   
 ### <a name="code"></a>Código
 
@@ -87,12 +87,12 @@ El siguiente ejemplo de una respuesta **GetDelegate** muestra una respuesta a un
                          MajorBuildNumber="206" 
                          MinorBuildNumber="0" 
                          Version="Exchange2007_SP1" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <m:GetDelegateResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+    <m:GetDelegateResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                            ResponseClass="Success" 
-                           xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+                           xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</m:ResponseCode>
       <m:ResponseMessages>
         <m:DelegateUserResponseMessageType ResponseClass="Success">
@@ -122,5 +122,5 @@ El siguiente ejemplo de una respuesta **GetDelegate** muestra una respuesta a un
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

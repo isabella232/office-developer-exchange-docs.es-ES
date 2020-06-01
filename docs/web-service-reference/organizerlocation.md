@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1c76bd1d-6099-4966-a93e-865437267e33
-description: El elemento OrganizerLocation está pensado para uso interno únicamente.
-ms.openlocfilehash: d9eb88e4ac435746f5e46f7d9b7e4f8c1862b579
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento OrganizerLocation está destinado sólo para uso interno.
+ms.openlocfilehash: cd60ea3e671037509df4f52c1e34e6bdbf9fadf8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836664"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462391"
 ---
 # <a name="organizerlocation"></a>OrganizerLocation
 
-El elemento **OrganizerLocation** está pensado para uso interno únicamente. 
+El elemento **OrganizerLocation** está destinado sólo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

@@ -1,5 +1,5 @@
 ---
-title: Respuesta de detección automática POX para Exchange
+title: Respuesta de detección automática de POX para Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,29 +8,29 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 08c6c5a2-a67a-4141-a8bd-1b5d560b90a7
-description: La respuesta de detección automática contiene una respuesta a una solicitud de detección automática que se incluye una lista de direcciones URL que se usan para establecer un enlace con Exchange Web Services (EWS).
-ms.openlocfilehash: d9f8a5cc86efaa4dceda7385164872ecc5409252
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La respuesta de detección automática contiene una respuesta a una solicitud de detección automática que incluye una lista de direcciones URL que se usan para establecer un enlace con los servicios web Exchange (EWS).
+ms.openlocfilehash: 0d903d9829fa6dc1273d8b25a1eeb0b68700d5da
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836863"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462286"
 ---
-# <a name="pox-autodiscover-response-for-exchange"></a>Respuesta de detección automática POX para Exchange
+# <a name="pox-autodiscover-response-for-exchange"></a>Respuesta de detección automática de POX para Exchange
 
-La respuesta de detección automática contiene una respuesta a una solicitud de detección automática que se incluye una lista de direcciones URL que se usan para establecer un enlace con Exchange Web Services (EWS).
+La respuesta de detección automática contiene una respuesta a una solicitud de detección automática que incluye una lista de direcciones URL que se usan para establecer un enlace con los servicios web Exchange (EWS).
   
-## <a name="autodiscover-response-example"></a>Ejemplo de la respuesta de detección automática
+## <a name="autodiscover-response-example"></a>Ejemplo de respuesta de detección automática
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta de detección automática.
+En el ejemplo siguiente se muestra una respuesta de detección automática correcta.
   
 ### <a name="code"></a>Código
 
 ```XML
-<Autodiscover xmlns="http://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
-  <Response xmlns="http://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a">
+<Autodiscover xmlns="https://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
+  <Response xmlns="https://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a">
     <User>
       <DisplayName>First Last</DisplayName>
       <LegacyDN>/o=contoso/ou=First Administrative Group/cn=Recipients/cn=iuser885646</LegacyDN>
@@ -74,11 +74,11 @@ En el ejemplo siguiente se muestra una respuesta correcta de detección automát
 
 ### <a name="comments"></a>Comentarios
 
-Para enlazar a servicios Web de Exchange, utilice la dirección URL identificada por el elemento [ASUrl (POX)](asurl-pox.md) . 
+Para enlazar con los servicios Web de Exchange, use la dirección URL identificada por el elemento [ASUrl (POX)](asurl-pox.md) . 
   
 ### <a name="response-element"></a>Elemento Response
 
-En el cuerpo de la respuesta se usan los siguientes elementos:
+Los siguientes elementos se usan en el cuerpo de la respuesta:
   
 - [Detección automática (POX)](autodiscover-pox.md)
     
@@ -122,18 +122,18 @@ En el cuerpo de la respuesta se usan los siguientes elementos:
     
 - [OWAUrl (POX)](owaurl-pox.md)
     
-## <a name="autodiscover-error-response-example"></a>Ejemplo de respuesta de Error de detección automática
+## <a name="autodiscover-error-response-example"></a>Ejemplo de respuesta de error de detección automática
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta de error de detección automática.
+En el siguiente ejemplo se muestra una respuesta de error de detección automática.
   
 ### <a name="code"></a>Código
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<Autodiscover xmlns="http://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
-  <Response xmlns="http://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
+<Autodiscover xmlns="https://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
+  <Response xmlns="https://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
     <Error Time="21:25:04.8897083" Id="4130155072">
       <ErrorCode>600</ErrorCode>
       <Message>Invalid Request</Message>
@@ -145,7 +145,7 @@ En el ejemplo siguiente se muestra una respuesta de error de detección automát
 
 ### <a name="error-response-element"></a>Elemento de respuesta de error
 
-En el cuerpo de la respuesta se usan los siguientes elementos:
+Los siguientes elementos se usan en el cuerpo de la respuesta:
   
 - [Detección automática (POX)](autodiscover-pox.md)
     
@@ -161,7 +161,7 @@ En el cuerpo de la respuesta se usan los siguientes elementos:
     
 ## <a name="see-also"></a>Vea también
 
-- [Solicitud de detección automática POX para Exchange](pox-autodiscover-request-for-exchange.md)
-- [Referencia de servicio web POX de detección automática de Exchange](pox-autodiscover-web-service-reference-for-exchange.md) 
-- [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+- [Solicitud de detección automática de POX para Exchange](pox-autodiscover-request-for-exchange.md)
+- [Referencia de servicio Web de detección automática de POX para Exchange](pox-autodiscover-web-service-reference-for-exchange.md) 
+- [Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

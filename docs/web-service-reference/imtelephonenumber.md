@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 78ed7503-7d65-45e8-b1b0-d26534217058
-description: El elemento ImTelephoneNumber representa el número de teléfono de un contacto que se agrega a un grupo (IM) de mensajería instantánea.
-ms.openlocfilehash: faa92ad7a59181823cdcc0b93a0bd4e497f3c43e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ImTelephoneNumber representa el número de teléfono de un contacto que se agrega a un grupo de mensajería instantánea (mi).
+ms.openlocfilehash: df2f089b6aef9dfe6cc8aa8f3a1748029b1a37d3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835900"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460648"
 ---
 # <a name="imtelephonenumber"></a>ImTelephoneNumber
 
-El elemento **ImTelephoneNumber** representa el número de teléfono de un contacto que se agrega a un grupo (IM) de mensajería instantánea. 
+El elemento **ImTelephoneNumber** representa el número de teléfono de un contacto que se agrega a un grupo de mensajería instantánea (mi). 
   
 ```XML
 <ImTelephoneNumber></ImTelephoneNumber>
@@ -26,15 +26,15 @@ El elemento **ImTelephoneNumber** representa el número de teléfono de un conta
  **NonEmptyStringType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 

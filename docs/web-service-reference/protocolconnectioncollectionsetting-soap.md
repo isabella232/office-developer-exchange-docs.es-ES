@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 51f84364-9a5f-4ef2-ba82-f6ef7c65f7cb
-description: El elemento ProtocolConnectionCollectionSetting representa una colección de configuración de conexión del protocolo de servidor.
-ms.openlocfilehash: d0342222c0390d3e49afe572af92a903b9643a2c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ProtocolConnectionCollectionSetting representa una colección de opciones de configuración de conexión del Protocolo de servidor.
+ms.openlocfilehash: 59e082138b8a40d201791653103c79160765f2fd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836914"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462398"
 ---
 # <a name="protocolconnectioncollectionsetting-soap"></a>ProtocolConnectionCollectionSetting (SOAP)
 
-El elemento **ProtocolConnectionCollectionSetting** representa una colección de configuración de conexión del protocolo de servidor. 
+El elemento **ProtocolConnectionCollectionSetting** representa una colección de opciones de configuración de conexión del Protocolo de servidor. 
   
 ```XML
 <ProtocolConnectionCollectionSetting/>
@@ -30,34 +30,34 @@ El elemento **ProtocolConnectionCollectionSetting** representa una colección de
  **ProtocolConnectionCollectionSetting**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Nombre (SOAP)](name-soap.md) <br/> |Representa el nombre de una opción de configuración.  <br/> |
+|[Name (SOAP)](name-soap.md) <br/> |Representa el nombre de una configuración.  <br/> |
 |[ProtocolConnections (SOAP)](protocolconnections-soap.md) <br/> |Contiene cero o más conexiones de protocolo.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también

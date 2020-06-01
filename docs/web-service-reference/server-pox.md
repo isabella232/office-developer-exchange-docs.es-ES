@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 0ce51644-7f3a-408c-a398-814439b658dc
-description: El elemento de servidor especifica el nombre del servidor de correo.
-ms.openlocfilehash: fafd6684d0857bd8b7e1bac0aae0ed162a6a938a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Server especifica el nombre del servidor de correo.
+ms.openlocfilehash: 6b29b153bc75b8836bfa113e126d122d620c2984
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837369"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462013"
 ---
 # <a name="server-pox"></a>Servidor (POX)
 
-El elemento de **servidor** especifica el nombre del servidor de correo. 
+El elemento **Server** especifica el nombre del servidor de correo. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -36,29 +36,29 @@ El elemento de **servidor** especifica el nombre del servidor de correo.
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente en el equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.  <br/> |
+|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto identifica el servidor. Para los protocolos, como POP3, SMTP, IMAP o NNTP, este valor será un nombre de host o una dirección IP. Para los protocolos, como DAV o WEB, será una dirección URL.
+El valor de texto identifica el servidor. Para protocolos como POP3, SMTP, IMAP o NNTP, este valor será un nombre de host o una dirección IP. Para protocolos como DAV o WEB, será una dirección URL.
   
 ## <a name="see-also"></a>Vea también
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

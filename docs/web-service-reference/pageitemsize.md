@@ -7,34 +7,34 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7cbd6b60-69fc-4007-aeb9-bdf41c45cba3
-description: El elemento PageItemSize especifica el número de elementos que se devuelven en una paginación de resultado de búsqueda.
-ms.openlocfilehash: 9fab8254c8a91bc87c1c54d55ddfd2864583dea5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PageItemSize especifica el número de elementos que se van a devolver en una paginación de resultados de búsqueda.
+ms.openlocfilehash: e4f02d9b0012d0514903e41e74677e37b6cafcca
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836682"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462335"
 ---
 # <a name="pageitemsize"></a>PageItemSize
 
-El elemento **PageItemSize** especifica el número de elementos que se devuelven en una paginación de resultado de búsqueda. 
+El elemento **PageItemSize** especifica el número de elementos que se van a devolver en una paginación de resultados de búsqueda. 
   
 ```XML
 <PageItemSize></PageItemSize>
 ```
 
- **largo**
+ **desde**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **PageItemSize** es el número de elementos devueltos en una paginación de resultado de búsqueda. 
+El valor de texto del elemento **PageItemSize** es el número de elementos devueltos en una paginación de resultados de búsqueda. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

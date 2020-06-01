@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f331c8ac-f1c7-4248-a570-97701969d5bf
-description: El elemento DictionaryKey especifica la clave de diccionario para una propiedad de diccionario.
-ms.openlocfilehash: 7e706f16fe155278ea56f303ffbb5971c1779879
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DictionaryKey especifica la clave de Diccionario de una propiedad Dictionary.
+ms.openlocfilehash: 8d9d897c86eb5048068936433c6c0d77917ff777
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764155"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462153"
 ---
 # <a name="dictionarykey"></a>DictionaryKey
 
-El elemento **DictionaryKey** especifica la clave de diccionario para una propiedad de diccionario. 
+El elemento **DictionaryKey** especifica la clave de Diccionario de una propiedad Dictionary. 
   
 ```xml
 <DictionaryKey>
@@ -33,24 +33,24 @@ El elemento **DictionaryKey** especifica la clave de diccionario para una propie
  **UserConfigurationDictionaryObjectType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Tipo (UserConfiguration)](type-userconfiguration.md) <br/> | Especifica un tipo de objeto de diccionario.<br/><br/>El tipo puede ser uno de los siguientes valores de cadena:<br/><br/>-Fecha y hora  <br/>-Boolean  <br/>-Byte  <br/>-Cadena  <br/>-Integer32  <br/>-UnsignedInteger32  <br/>-Integer64  <br/>-UnsignedInteger64  <br/>-StringArray  <br/>-ByteArray  <br/> |
-|[Valor (UserConfiguration)](value-userconfiguration.md) <br/> |Especifica el valor del objeto diccionario como una cadena.  <br/> |
+|[Tipo (UserConfiguration)](type-userconfiguration.md) <br/> | Especifica un tipo de objeto Dictionary.<br/><br/>El tipo puede ser uno de los siguientes valores de tipo String:<br/><br/>-DateTime  <br/>-Boolean  <br/>Bytes  <br/>-String  <br/>- Integer32  <br/>- UnsignedInteger32  <br/>- Integer64  <br/>- UnsignedInteger64  <br/>- StringArray  <br/>-ByteArray  <br/> |
+|[Valor (UserConfiguration)](value-userconfiguration.md) <br/> |Especifica el valor del objeto Dictionary como una cadena.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[DictionaryEntry](dictionaryentry.md) <br/> |Especifica el contenido de una propiedad de entrada único diccionario.  <br/> |
+|[DictionaryEntry](dictionaryentry.md) <br/> |Especifica el contenido de una sola propiedad de entrada de diccionario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -64,12 +64,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Página principal
+title: HomePage
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: eec2c41e-a975-42f6-8150-caf8c6e26462
-description: El elemento de la página de inicio especifica la dirección URL que será la página principal predeterminada para la carpeta administrada.
-ms.openlocfilehash: 00dafa225b5200b9feedf8790ed784305dadf03c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento HomePage especifica la dirección URL que será la Página principal predeterminada para la carpeta administrada.
+ms.openlocfilehash: b56a273bab3ec34d03e84ba8f7e2d6feddeb3e88
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835838"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460844"
 ---
-# <a name="homepage"></a>Página principal
+# <a name="homepage"></a>HomePage
 
-El elemento de la **página de inicio** especifica la dirección URL que será la página principal predeterminada para la carpeta administrada. 
+El elemento **homepage** especifica la dirección URL que será la Página principal predeterminada para la carpeta administrada. 
   
 ```xml
 <HomePage/>
@@ -30,38 +30,38 @@ El elemento de la **página de inicio** especifica la dirección URL que será l
  **String**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[ManagedFolderInformation](managedfolderinformation.md) <br/> |Contiene información acerca de una carpeta administrada.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto es un valor de tipo string que representa una dirección URL.
+El valor de texto es un valor de cadena que representa una dirección URL.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -70,8 +70,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [Operación CreateManagedFolder](createmanagedfolder-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Adición de las carpetas administradas](http://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)
+[Adición de carpetas administradas](https://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)
 

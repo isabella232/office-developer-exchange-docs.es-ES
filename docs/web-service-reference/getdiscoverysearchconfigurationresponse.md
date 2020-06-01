@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9d963e6c-e94d-462b-8c44-95d55c848fb2
-description: El elemento GetDiscoverySearchConfigurationResponse especifica la respuesta a una solicitud de GetDiscoverySearchConfiguration.
-ms.openlocfilehash: 6f4bbc05da0c2883f78b31cb46108e993b8b8fdd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetDiscoverySearchConfigurationResponse especifica la respuesta a una solicitud GetDiscoverySearchConfiguration.
+ms.openlocfilehash: 98393943434b5e3460485b7d75c2b5285983f597
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764810"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460984"
 ---
 # <a name="getdiscoverysearchconfigurationresponse"></a>GetDiscoverySearchConfigurationResponse
 
-El elemento **GetDiscoverySearchConfigurationResponse** especifica la respuesta a una solicitud de **GetDiscoverySearchConfiguration** . 
+El elemento **GetDiscoverySearchConfigurationResponse** especifica la respuesta a una solicitud **GetDiscoverySearchConfiguration** . 
   
 ```XML
 <GetDiscoverySearchConfigurationResponse>
@@ -32,15 +32,15 @@ El elemento **GetDiscoverySearchConfigurationResponse** especifica la respuesta 
  **GetDiscoverySearchConfigurationResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [DiscoverySearchConfigurations](discoverysearchconfigurations.md)
+[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)  |  [DiscoverySearchConfigurations](discoverysearchconfigurations.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -56,9 +56,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

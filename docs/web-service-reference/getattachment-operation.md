@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 24d10a15-b942-415e-9024-a6375708f326
-description: La operación GetAttachment se usa para recuperar los datos adjuntos de existentes en los elementos en el almacén de Exchange.
-ms.openlocfilehash: c260033208bf49c60463c09041d8ffcc52a8f5c2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación GetAttachment se usa para recuperar datos adjuntos existentes en los elementos del almacén de Exchange.
+ms.openlocfilehash: ac7eafd61c62b077a8d20e5fd8d004924bf06cf1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764759"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461292"
 ---
 # <a name="getattachment-operation"></a>Operación GetAttachment
 
-La operación GetAttachment se usa para recuperar los datos adjuntos de existentes en los elementos en el almacén de Exchange.
+La operación GetAttachment se usa para recuperar datos adjuntos existentes en los elementos del almacén de Exchange.
   
-## <a name="getattachment-request-example"></a>Ejemplo de solicitud de GetAttachment
+## <a name="getattachment-request-example"></a>Ejemplo de solicitud GetAttachment
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de solicitud de GetAttachment muestra cómo obtener datos adjuntos.
+El siguiente ejemplo de solicitud GetAttachment muestra cómo obtener datos adjuntos.
   
 ### <a name="code"></a>Código
 
@@ -36,10 +36,10 @@ El siguiente ejemplo de solicitud de GetAttachment muestra cómo obtener datos a
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetAttachment xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetAttachment xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <AttachmentShape/>
       <AttachmentIds>
         <t:AttachmentId Id="AAAtAEFkbWluaX..."/>
@@ -51,30 +51,30 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 
 ### <a name="comments"></a>Comentarios
 
-El elemento [AttachmentShape](attachmentshape.md) permite especificar qué información de datos adjuntos que se debe devolver. Un elemento [AttachmentShape](attachmentshape.md) vacío es válido y representará los datos adjuntos sin contenido MIME para los datos adjuntos de elemento, con un tipo de cuerpo de texto y sin las propiedades adicionales. 
+El elemento [AttachmentShape](attachmentshape.md) permite especificar qué información de archivos adjuntos se debe devolver. Un elemento [AttachmentShape](attachmentshape.md) vacío es válido y representará los datos adjuntos sin contenido MIME para los datos adjuntos de elemento, con un tipo de cuerpo de texto y sin propiedades adicionales. 
   
-La colección de [AttachmentIds](attachmentids.md) permite especificar uno o varios identificadores de datos adjuntos para devolver. Tenga en cuenta que estos son de tipo RequestAttachmentIdType, por lo que cualquier AttachmentIds que reciba de **CreateAttachment** debe tener los atributos **RootItemId** y **RootItemChangeKey** se quita antes de pasarlas a **GetAttachment**.
+La colección [identificadores](attachmentids.md) permite especificar uno o más identificadores de datos adjuntos que se van a devolver. Tenga en cuenta que son de tipo RequestAttachmentIdType, por lo que cualquier identificadores que reciba de **CreateAttachment** debe tener los atributos **RootItemId** y **RootItemChangeKey** antes de pasarlos a **GetAttachment**.
   
 > [!NOTE]
-> El identificador de datos adjuntos y la clave de cambio se han abreviado para conservar la legibilidad. 
+> El identificador de los datos adjuntos y la clave de cambio se han abreviado para preservar la legibilidad. 
   
 ### <a name="request-elements"></a>Elementos de solicitud
 
-En la solicitud se usan los siguientes elementos:
+Los siguientes elementos se usan en la solicitud:
   
 - [GetAttachment](getattachment.md)
     
 - [AttachmentShape](attachmentshape.md)
     
-- [AttachmentIds](attachmentids.md)
+- [Identificadores](attachmentids.md)
     
 - [AttachmentId (GetAttachment y DeleteAttachment)](attachmentid-getattachment-and-deleteattachment.md)
     
-## <a name="getattachment-response-example"></a>Ejemplo de respuesta de GetAttachment
+## <a name="getattachment-response-example"></a>Ejemplo de respuesta GetAttachment
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de GetAttachment. En este ejemplo se devuelve un archivo adjunto.
+En el ejemplo siguiente se muestra una respuesta correcta a una solicitud GetAttachment. En este ejemplo se devuelven datos adjuntos de archivo.
   
 ### <a name="code"></a>Código
 
@@ -85,12 +85,12 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de Get
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="662" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <GetAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                           xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                           xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetAttachmentResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -110,9 +110,9 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de Get
 
 ### <a name="comments"></a>Comentarios
 
-Los mensajes de respuesta para GetAttachment siempre va a contener los datos adjuntos completo; es decir, todas las propiedades siempre se incluirán. Los archivos adjuntos, esas propiedades son [nombre (AttachmentType)](name-attachmenttype.md), [ContentType](contenttype.md), [ContentId](contentid.md), [ContentLocation](contentlocation.md)y [contenido](content.md). Los datos adjuntos de elemento, esas propiedades son [nombre (AttachmentType)](name-attachmenttype.md), [ContentType](contenttype.md), [ContentId](contentid.md), [ContentLocation](contentlocation.md) y todas las propiedades del elemento, tal y como si se hubiera utilizado la forma de **AllProperties** en una llamada GetItem. El elemento [AttachmentShape](attachmentshape.md) , si está presente, le permitirá que una aplicación de consumidor solicitar propiedades extendidas adicionales para los datos adjuntos del elemento. 
+Los mensajes de respuesta para GetAttachment siempre contendrán los datos adjuntos completos; es decir, siempre se incluirán todas las propiedades. Para los datos adjuntos, esas propiedades son [Name (AttachmentType)](name-attachmenttype.md), [ContentType](contenttype.md), [contentid](contentid.md), [ContentLocation](contentlocation.md)y [Content](content.md). Para los datos adjuntos de elementos, esas propiedades son [nombre (AttachmentType)](name-attachmenttype.md), [ContentType](contenttype.md), [contentid](contentid.md), [ContentLocation](contentlocation.md) y todas las propiedades del elemento, como si la forma **AllProperties** se hubiera usado en una llamada GetItem. El elemento [AttachmentShape](attachmentshape.md) , si está presente, permitirá que una aplicación de consumidor solicite propiedades extendidas adicionales para los datos adjuntos de elementos. 
   
-### <a name="successful-response-elements"></a>Elementos de respuesta correcta
+### <a name="successful-response-elements"></a>Elementos Response correcto
 
 En la respuesta se usan los siguientes elementos:
   
@@ -134,7 +134,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [Nombre (AttachmentType)](name-attachmenttype.md)
     
-- [Contenido](content.md)
+- [Content](content.md)
     
 ## <a name="see-also"></a>Vea también
 

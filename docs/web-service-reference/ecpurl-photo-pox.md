@@ -1,22 +1,22 @@
 ---
-title: EcpUrl-foto (POX)
+title: EcpUrl-Photo (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 4a37bbfb-c763-4a3c-93ea-14c2e7355dbc
-description: El elemento EcpUrl fotografías especifica una dirección URL parcial que se puede combinar con el valor del elemento EcpUrl (POX) para generar una dirección URL que puede usarse para ver o cambiar la foto actual de un usuario habilitado para correo.
-ms.openlocfilehash: e02a444d6809fe70274cda2cc8db6375e868edb9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EcpUrl-Photo especifica una dirección URL parcial que se puede combinar con el valor del elemento EcpUrl (POX) para generar una dirección URL que se puede usar para ver o cambiar la foto actual de un usuario habilitado para correo.
+ms.openlocfilehash: 2be930e8d9e4c2bbdb26eff49a429569fc0a1d5d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764299"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461285"
 ---
-# <a name="ecpurl-photo-pox"></a>EcpUrl-foto (POX)
+# <a name="ecpurl-photo-pox"></a>EcpUrl-Photo (POX)
 
-El elemento **EcpUrl fotografías** especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que puede usarse para ver o cambiar la foto actual de un usuario habilitado para correo. 
+El elemento **EcpUrl-Photo** especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para ver o cambiar la foto actual de un usuario habilitado para correo. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -26,7 +26,7 @@ El elemento **EcpUrl fotografías** especifica una dirección URL parcial que se
   
 [Protocolo (POX)](protocol-pox.md)
   
-[EcpUrl-foto (POX)](ecpurl-photo-pox.md)
+[EcpUrl-Photo (POX)](ecpurl-photo-pox.md)
   
 ```XML
 <EcpUrl-photo/>
@@ -34,33 +34,33 @@ El elemento **EcpUrl fotografías** especifica una dirección URL parcial que se
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente en el equipo que ejecuta Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.  <br/> |
+|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que puede usarse para ver o cambiar la foto del usuario actual. 
+El valor de texto representa una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para ver o cambiar la foto actual del usuario. 
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento de **foto de EcpUrl** es un elemento secundario opcional del elemento **Protocol** . 
+El elemento **EcpUrl-Photo** es un elemento secundario opcional del elemento **Protocol** . 
   
 ## <a name="see-also"></a>Vea también
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

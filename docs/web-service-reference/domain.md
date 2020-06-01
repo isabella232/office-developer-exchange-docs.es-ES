@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7e45a061-856f-4b44-b053-a7c4d5ad569e
-description: El elemento de dominio identifica un dominio SMTP único.
-ms.openlocfilehash: 78eb1edfd347a513b84b9c15d143d76425041e85
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Domain identifica un solo dominio SMTP.
+ms.openlocfilehash: 3bf8e132b5fa588171ac4f3c095692bc68394663
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764264"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461334"
 ---
 # <a name="domain"></a>Dominio
 
-El elemento de **dominio** identifica un dominio SMTP único. 
+El elemento **Domain** identifica un solo dominio SMTP. 
   
 ```xml
 <Domain Name="" IncludeSubdomains="" />
@@ -30,22 +30,22 @@ El elemento de **dominio** identifica un dominio SMTP único.
  **StmpDomain**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|Nombre  <br/> |Identifica el nombre de un dominio. Este atributo es necesario.  <br/> |
-|IncludeSubdomains  <br/> |Indica si los subdominios del dominio identificado por el atributo de **nombre** se consideran internos. Este atributo es opcional.  <br/> |
+|Nombre  <br/> |Identifica el nombre de un dominio. Este atributo es obligatorio.  <br/> |
+|IncludeSubdomains  <br/> |Indica si los subdominios del dominio identificado por el atributo **Name** se consideran internos. Este atributo es opcional.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[InternalDomains (SmtpDomainList)](internaldomains-smtpdomainlist.md) <br/> |Identifica la lista de dominios SMTP internos de la organización.  <br/> |
    
@@ -61,12 +61,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

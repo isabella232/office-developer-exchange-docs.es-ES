@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0a95ca63-660e-4cc0-82e4-3f74fb4ae21c
-description: El elemento UserOofSettings especifica la configuración de fuera de oficina (OOF).
-ms.openlocfilehash: a035fd89387ece632d83f5f72a564e4896bc6753
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UserOofSettings especifica la configuración de fuera de la oficina (OOF).
+ms.openlocfilehash: 417c3d5061a6229d41eb57f72e89f03213acf460
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840921"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461908"
 ---
 # <a name="useroofsettings"></a>UserOofSettings
 
-El elemento **UserOofSettings** especifica la configuración de fuera de oficina (OOF). 
+El elemento **UserOofSettings** especifica la configuración de fuera de la oficina (OOF). 
   
 [SetUserOofSettingsRequest](setuseroofsettingsrequest.md)
   
@@ -40,47 +40,47 @@ El elemento **UserOofSettings** especifica la configuración de fuera de oficina
  **UserOofSettings**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[OofState](oofstate.md) <br/> |Establece el estado de fuera de la oficina del usuario.  <br/> |
-|[ExternalAudience](externalaudience.md) <br/> |Establece o contiene un valor que determina a quienes se envían los mensajes externos de fuera de la oficina.  <br/> |
-|[Duración (UserOofSettings)](duration-useroofsettings.md) <br/> |Especifica la duración para la que está habilitado el estado de fuera de la oficina si el elemento [OofState](oofstate.md) está establecido en **programado**. Si el elemento de [OofState](oofstate.md) se establece en **habilitada** o **deshabilitada**, se ignora el valor de este elemento.  <br/> |
-|[InternalReply](internalreply.md) <br/> |Contiene la respuesta OOF enviada a otros usuarios de dominio o los dominios de confianza del usuario.  <br/> |
-|[ExternalReply](externalreply.md) <br/> |Contiene la respuesta OOF enviada a direcciones fuera del destinatario dominio o dominios de confianza.  <br/> |
+|[OofState](oofstate.md) <br/> |Establece el estado de OOF del usuario.  <br/> |
+|[ExternalAudience](externalaudience.md) <br/> |Establece o contiene un valor que determina a quién se envían los mensajes de OOF externos.  <br/> |
+|[Duración (UserOofSettings)](duration-useroofsettings.md) <br/> |Especifica la duración para la que está habilitado el estado OOF si el elemento [OofState](oofstate.md) está establecido en **programado**. Si el elemento [OofState](oofstate.md) está establecido en **habilitado** o **deshabilitado**, se omite el valor de este elemento.  <br/> |
+|[InternalReply](internalreply.md) <br/> |Contiene la respuesta OOF enviada a otros usuarios en el dominio del usuario o los dominios de confianza.  <br/> |
+|[ExternalReply](externalreply.md) <br/> |Contiene la respuesta OOF enviada a direcciones fuera del dominio del destinatario o de dominios de confianza.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SetUserOofSettingsRequest](setuseroofsettingsrequest.md) <br/> |Contiene los argumentos que se usa para establecer la configuración de fuera de la oficina y los mensajes de un usuario de buzón de correo.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/SetUserOofSettingsRequest` <br/> |
+|[SetUserOofSettingsRequest](setuseroofsettingsrequest.md) <br/> |Contiene los argumentos usados para establecer los mensajes y la configuración de OOF de un usuario de buzón.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/SetUserOofSettingsRequest` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="example"></a>Ejemplo
 
-El siguiente ejemplo de una solicitud de SetUserOofSettings la OoFState establece en **habilitado**, Establece la duración de OOF para 10 días y establece los mensajes de fuera de la oficina internos y externos.
+El siguiente ejemplo de una solicitud SetUserOofSettings establece la OoFState en **habilitada**, establece la duración de OOF durante 10 días y establece los mensajes OOF internos y externos.
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <SetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
       </Mailbox>
-      <UserOofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <UserOofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Enabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -103,10 +103,10 @@ El siguiente ejemplo de una solicitud de SetUserOofSettings la OoFState establec
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

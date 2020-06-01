@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 021e49c4-3019-465b-9de1-e1fa8169bea6
-description: El elemento de asociación está pensado para uso interno únicamente.
-ms.openlocfilehash: 63501f5c72340472a67ae89cdd5835025fb8c843
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Association está destinado exclusivamente para uso interno.
+ms.openlocfilehash: cd5a9cb31834121a490e974215e652de928b71c6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763566"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460879"
 ---
 # <a name="association"></a>Asociación
 
-El elemento de **asociación** está pensado para uso interno únicamente. 
+El elemento **Association** está destinado exclusivamente para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

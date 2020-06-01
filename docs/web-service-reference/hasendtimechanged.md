@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a0eb444d-8e2e-478b-b785-2b9787ffb226
-description: El elemento HasEndTimeChanged especifica si se ha cambiado la hora de finalización de una reunión.
-ms.openlocfilehash: 046bb302d6f7052c6f1757ce393583b305311e2f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento HasEndTimeChanged especifica si ha cambiado la hora de finalización de una reunión.
+ms.openlocfilehash: 15ad52c7b7581cce5ca96ba5ff4e8a1c130a02cf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835805"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461789"
 ---
 # <a name="hasendtimechanged"></a>HasEndTimeChanged
 
-El elemento **HasEndTimeChanged** especifica si se ha cambiado la hora de finalización de una reunión. 
+El elemento **HasEndTimeChanged** especifica si ha cambiado la hora de finalización de una reunión. 
   
 ```XML
 <HasEndTimeChanged>true | false</HasEndTimeChanged>
@@ -26,25 +26,25 @@ El elemento **HasEndTimeChanged** especifica si se ha cambiado la hora de finali
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ChangeHighlights](changehighlights.md) <br/> |Especifica qué ha cambiado entre dos versiones de una reunión de mensaje de solicitud.  <br/> |
+|[ChangeHighlights](changehighlights.md) <br/> |Especifica qué ha cambiado entre dos versiones de un mensaje de convocatoria de reunión.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **HasEndTimeChanged** indica que ha cambiado la hora de finalización de una reunión. Un valor de **false** indica que no ha cambiado la hora de finalización de una reunión. 
+Un valor de texto de **true** para el elemento **HasEndTimeChanged** indica que la hora de finalización de una reunión ha cambiado. Un valor de **false** indica que la hora de finalización de una reunión no ha cambiado. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

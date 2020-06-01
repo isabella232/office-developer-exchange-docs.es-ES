@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0073d195-75fd-4c89-97e0-2ad6d91f99f9
-description: El elemento ClientExtensions contiene una matriz de información de usuario y de configuración sobre las aplicaciones.
-ms.openlocfilehash: c2f2511154daaded09ba0e8d811baf9ce30ca138
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ClientExtensions contiene una matriz de información de usuario y configuración acerca de las aplicaciones.
+ms.openlocfilehash: 016b4c910f3c21a20d72b926a1c568925aa9d37e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763746"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461460"
 ---
 # <a name="clientextensions"></a>ClientExtensions
 
-El elemento **ClientExtensions** contiene una matriz de información de usuario y de configuración sobre las aplicaciones. 
+El elemento **ClientExtensions** contiene una matriz de información de usuario y configuración acerca de las aplicaciones. 
   
 ```XML
 <ClientExtensions>
@@ -28,23 +28,23 @@ El elemento **ClientExtensions** contiene una matriz de información de usuario 
  **ArrayOfClientExtensionsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ClientExtension](clientextension.md) <br/> |Contiene información de usuario y de configuración sobre una aplicación.  <br/> |
+|[ClientExtension](clientextension.md) <br/> |Contiene la información de usuario y configuración de una aplicación.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetClientExtensionResponse](getclientextensionresponse.md) <br/> |Representa una respuesta para obtener información de configuración de una aplicación.  <br/> |
+|[GetClientExtensionResponse](getclientextensionresponse.md) <br/> |Representa una respuesta para obtener la información de configuración de una aplicación.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -56,7 +56,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 ||
 |:-----|
-|Espacio de nombres  <br/> |
+|Namespace  <br/> |
 |Nombre de esquema  <br/> |
 |Archivo de validación  <br/> |
 |Puede estar vacío  <br/> |

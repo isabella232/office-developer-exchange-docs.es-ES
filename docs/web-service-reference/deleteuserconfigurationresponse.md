@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 034199c1-cdc3-48b8-a2cc-69bbfcdc5ce4
-description: El elemento DeleteUserConfigurationResponse define una respuesta a una única solicitud de DeleteUserConfiguration.
-ms.openlocfilehash: 79a700af3f5fdf8904264b90330bd4ae00553e86
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DeleteUserConfigurationResponse define una respuesta a una única solicitud DeleteUserConfiguration.
+ms.openlocfilehash: 2cf1e6d30f97d6ed819a1dc8259971ffc8c16435
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764112"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460746"
 ---
 # <a name="deleteuserconfigurationresponse"></a>DeleteUserConfigurationResponse
 
-El elemento **DeleteUserConfigurationResponse** define una respuesta a una única solicitud de **DeleteUserConfiguration** . 
+El elemento **DeleteUserConfigurationResponse** define una respuesta a una única solicitud **DeleteUserConfiguration** . 
   
 ```xml
 <DeleteUserConfigurationResponse>   <ResponseMessages/></DeleteUserConfigurationResponse>
@@ -30,21 +30,21 @@ El elemento **DeleteUserConfigurationResponse** define una respuesta a una únic
  **DeleteUserConfigurationResponseType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta para una solicitud de servicios Web de Exchange.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta de una solicitud de servicios web Exchange.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
@@ -58,12 +58,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

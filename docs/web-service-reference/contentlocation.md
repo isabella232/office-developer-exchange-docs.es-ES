@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d91cf587-24e3-4c13-8784-5ca29787cca7
-description: El elemento ContentLocation contiene el identificador uniforme de recursos (URI) que corresponde a la ubicación del contenido de un archivo adjunto.
-ms.openlocfilehash: 060dab2da653637420d5900bad3b95823c2e6ea3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ContentLocation contiene el identificador uniforme de recursos (URI) que corresponde a la ubicación del contenido de los datos adjuntos.
+ms.openlocfilehash: 01bb95da5f620fddc8777f88b1d3eb1a7e6069b1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763856"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461488"
 ---
 # <a name="contentlocation"></a>ContentLocation
 
-El elemento **ContentLocation** contiene el identificador uniforme de recursos (URI) que corresponde a la ubicación del contenido de un archivo adjunto. 
+El elemento **ContentLocation** contiene el identificador uniforme de recursos (URI) que corresponde a la ubicación del contenido de los datos adjuntos. 
   
 ```xml
 <ContentLocation/>
@@ -30,43 +30,43 @@ El elemento **ContentLocation** contiene el identificador uniforme de recursos (
  **String**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ItemAttachment](itemattachment.md) <br/> |Representa un elemento de Exchange que está vinculado a otro elemento de Exchange.  <br/> |
-|[FileAttachment](fileattachment.md) <br/> |Representa un archivo que se adjunta a un elemento en el almacén de Exchange.  <br/> |
+|[ItemAttachment](itemattachment.md) <br/> |Representa un elemento de Exchange que está adjunto a otro elemento de Exchange.  <br/> |
+|[FileAttachment](fileattachment.md) <br/> |Representa un archivo que está adjunto a un elemento en el almacén de Exchange.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto es un valor de tipo string que representa un identificador URI.
+El valor de texto es un valor de cadena que representa un identificador URI.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

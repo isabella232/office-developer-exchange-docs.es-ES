@@ -12,18 +12,18 @@ api_type:
 - schema
 ms.assetid: 6fc04e4d-657a-4999-9431-186ccb7832b5
 description: 'Última modificación: 17 de septiembre de 2015'
-ms.openlocfilehash: 342e52e879534b6a130d286d358138c6095e4563
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: b886851b9a0c17d58428f49281d664930d0e4070
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763345"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461565"
 ---
 # <a name="configuration"></a>configuración
   
 **Se aplica a:** Exchange Server 2013
   
-El elemento de **configuración** es el elemento raíz para el archivo de configuración de los agentes. 
+El elemento **Configuration** es el elemento raíz del archivo de configuración de agentes. 
   
 - [configuración](configuration.md) 
 - [mexRuntime](mexruntime.md)
@@ -38,32 +38,32 @@ El elemento de **configuración** es el elemento raíz para el archivo de config
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[mexRuntime](mexruntime.md) <br/> |Contiene elementos que definen la información de configuración de supervisión del agente y la información de configuración de SMTP y agentes de enrutamiento que se instalan.  <br/> |
+|[mexRuntime](mexruntime.md) <br/> |Contiene elementos que definen la información de configuración para la supervisión de agentes y la información de configuración para SMTP y los agentes de enrutamiento que están instalados.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |Este archivo no define un espacio de nombres.  <br/> |
-|Nombre de esquema  <br/> |No está disponible.  <br/> |
-|Archivo de validación  <br/> |No está disponible.  <br/> |
+|Namespace  <br/> |Este archivo no define un espacio de nombres.  <br/> |
+|Nombre de esquema  <br/> |No disponible.  <br/> |
+|Archivo de validación  <br/> |No disponible.  <br/> |
 |Puede estar vacío  <br/> |Falso.  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos del archivo de configuración de los agentes para Exchange 2013](agents-configuration-file-elements-for-exchange-2013.md)
+- [Elementos del archivo de configuración de agentes para Exchange 2013](agents-configuration-file-elements-for-exchange-2013.md)
 

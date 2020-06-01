@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9c604ca3-10fe-4760-b7fd-8b52f1a0c712
-description: El elemento MessageTrackingReportId representa el mensaje por su identificador de mensaje, la organización donde se ha encontrado el mensaje, el servidor en el que se envió el mensaje y un identificador interno que identifica de forma exclusiva el mensaje.
-ms.openlocfilehash: 8e0d85b203b8a34acedb5f6b9fe46359d5e0b97c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MessageTrackingReportId representa el mensaje por su identificador de mensaje, la organización donde se encontró el mensaje, el servidor en el que se envió el mensaje y un identificador interno que identifica de forma única el mensaje.
+ms.openlocfilehash: d6e92593d55608e260634602c2aab694804d716d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836456"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460599"
 ---
 # <a name="messagetrackingreportid"></a>MessageTrackingReportId
 
-El elemento **MessageTrackingReportId** representa el mensaje por su identificador de mensaje, la organización donde se ha encontrado el mensaje, el servidor en el que se envió el mensaje y un identificador interno que identifica de forma exclusiva el mensaje. 
+El elemento **MessageTrackingReportId** representa el mensaje por su identificador de mensaje, la organización donde se encontró el mensaje, el servidor en el que se envió el mensaje y un identificador interno que identifica de forma única el mensaje. 
   
 ```XML
 <MessageTrackingReportId/>
@@ -30,26 +30,26 @@ El elemento **MessageTrackingReportId** representa el mensaje por su identificad
  **NonEmptyStringType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |Contiene la solicitud para la [operación de GetMessageTrackingReport](getmessagetrackingreport-operation.md) recuperar el mensaje completo informe de seguimiento para el identificador especificado.  <br/> |
-|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |Contiene un resultado de mensaje único para un elemento [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) .  <br/> |
+|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |Contiene la solicitud de la [operación GetMessageTrackingReport](getmessagetrackingreport-operation.md) para recuperar el informe completo de seguimiento de mensajes del identificador especificado.  <br/> |
+|[MessageTrackingSearchResult](messagetrackingsearchresult.md) <br/> |Contiene un único resultado de mensaje para un elemento [FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) .  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Si se usa este elemento, es necesario un valor de texto que representa una cadena.
+Si se usa este elemento, se necesita un valor de texto que represente una cadena.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -59,10 +59,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -71,5 +71,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación GetMessageTrackingReport](getmessagetrackingreport-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

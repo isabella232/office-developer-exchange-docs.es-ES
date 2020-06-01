@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 47e42f5d-d3cb-4ee2-8370-1fd0539b6ee6
 description: El elemento ItemCount especifica el número total de elementos en un resultado de búsqueda.
-ms.openlocfilehash: 99f8c95aee7cc61ae7d1e8140c46d1e0ab0b14b5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 9635d22356e729b770505d399e91218cf1581d6e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836146"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461775"
 ---
 # <a name="itemcount"></a>ItemCount
 
@@ -23,26 +23,26 @@ El elemento **ItemCount** especifica el número total de elementos en un resulta
 <ItemCount></ItemCount>
 ```
 
- **largo**
+ **desde**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[SearchMailboxesResult](searchmailboxesresult.md) | [MailboxStat](mailboxstat.md) | [NonIndexableItemStatistic](nonindexableitemstatistic.md)
+[SearchMailboxesResult](searchmailboxesresult.md)  |  [MailboxStat](mailboxstat.md)  |  [NonIndexableItemStatistic](nonindexableitemstatistic.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ItemCount** identifica el número total de elementos de un resultado de búsqueda. 
+El valor de texto del elemento **ItemCount** identifica el número total de elementos en un resultado de búsqueda. 
   
 ## <a name="remarks"></a>Comentarios
 

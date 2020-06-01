@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 556457d5-a730-4131-853f-1198c27c5942
-description: El elemento ImItemList contiene una lista de contactos de mensajería instantánea y de grupos de mensajería instantáneos.
-ms.openlocfilehash: 490ac57da0c7ae7bedc75e94b7e21dc30c9da23f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ImItemList contiene una lista de grupos de mensajería instantánea y los contactos de mensajería instantánea.
+ms.openlocfilehash: 976897fd999b61207a94a8b1dc60cc1b1308acd8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835896"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460676"
 ---
 # <a name="imitemlist"></a>ImItemList
 
-El elemento **ImItemList** contiene una lista de contactos de mensajería instantánea y de grupos de mensajería instantáneos. 
+El elemento **ImItemList** contiene una lista de grupos de mensajería instantánea y los contactos de mensajería instantánea. 
   
 ```XML
 <ImItemList>
@@ -29,19 +29,19 @@ El elemento **ImItemList** contiene una lista de contactos de mensajería instan
  **ImItemListType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Grupos (ArrayOfImGroupType)](groups-arrayofimgrouptype.md) | [roles](personas-ex15websvcsotherref.md)
+[Grupos (ArrayOfImGroupType)](groups-arrayofimgrouptype.md)  |  [Roles](personas-ex15websvcsotherref.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[GetImItemsResponse](getimitemsresponse.md) | [GetImItemListResponse](getimitemlistresponse.md)
+[GetImItemsResponse](getimitemsresponse.md)  |  [GetImItemListResponse](getimitemlistresponse.md)
   
 ## <a name="remarks"></a>Comentarios
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

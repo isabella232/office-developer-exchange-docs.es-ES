@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 16b97e95-a980-47eb-8108-28a70d3dfea4
-description: El elemento ImageBase64 está pensado para uso interno únicamente.
-ms.openlocfilehash: 667a822359369ce332f8080dd004d1fe1b86e4fa
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ImageBase64 está destinado sólo para uso interno.
+ms.openlocfilehash: cbe36bef7ce9b9f68ebc0dff69c3c62090fce996
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835882"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460718"
 ---
 # <a name="imagebase64-encryptionconfigurationresponsetype"></a>ImageBase64 (EncryptionConfigurationResponseType)
 
-El elemento **ImageBase64** está pensado para uso interno únicamente. 
+El elemento **ImageBase64** está destinado sólo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

@@ -1,5 +1,5 @@
 ---
-title: SendingAs
+title: Envíoas
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b43ce19f-9ab0-4946-acb2-c5aafead9d35
-description: El elemento SendingAs representa una dirección de correo electrónico que un usuario está intentando enviar como.
-ms.openlocfilehash: a5468ddb8facf99038d319252f7e1c780a888ca1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento sendas representa una dirección de correo electrónico que un usuario intenta enviar como.
+ms.openlocfilehash: cd11bd60cbbe3434fcc1b0b9a1cfe0de9f0b1e21
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837338"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462139"
 ---
-# <a name="sendingas"></a>SendingAs
+# <a name="sendingas"></a>Envíoas
 
-El elemento **SendingAs** representa una dirección de correo electrónico que un usuario está intentando enviar como. 
+El **elemento** sendas representa una dirección de correo electrónico que un usuario intenta enviar como. 
   
 ```XML
 <SendingAs>
@@ -36,27 +36,27 @@ El elemento **SendingAs** representa una dirección de correo electrónico que u
  **EmailAddressType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Nombre (EmailAddressType)](name-emailaddresstype.md) <br/> |Representa el nombre del usuario de buzón de correo. Este elemento es opcional.  <br/> |
-|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Define la dirección de Protocolo Simple de transferencia de correo (SMTP) principal de un usuario de buzón de correo. Este elemento es opcional.  <br/> |
-|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Define el tipo de dirección para el buzón de correo. El valor predeterminado es SMTP. Este elemento es opcional.  <br/> |
-|[MailboxType](mailboxtype.md) <br/> |Representa el tipo de buzón de correo que está representada por un usuario de correo electrónico. Este elemento es opcional.  <br/> |
+|[Nombre (EmailAddressType)](name-emailaddresstype.md) <br/> |Representa el nombre del usuario del buzón. Este elemento es opcional.  <br/> |
+|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Define la dirección principal del Protocolo simple de transferencia de correo (SMTP) de un usuario de buzón. Este elemento es opcional.  <br/> |
+|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Define el tipo de dirección para el buzón. El valor predeterminado es SMTP. Este elemento es opcional.  <br/> |
+|[MailboxType](mailboxtype.md) <br/> |Representa el tipo de buzón que está representado por un usuario de correo electrónico. Este elemento es opcional.  <br/> |
 |[ItemId](itemid.md) <br/> |Define el identificador de elemento de un contacto o una lista de distribución privada para los destinatarios de la carpeta de contactos de un usuario. Este elemento es opcional.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetMailTips](getmailtips.md) <br/> |Contiene los destinatarios y los tipos de sugerencias de correo para recuperar.  <br/> |
+|[GetMailTips](getmailtips.md) <br/> |Contiene los destinatarios y los tipos de sugerencias de correo que se van a recuperar.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -70,14 +70,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b8a59740-d978-454c-9629-a10792385ba0
-description: El elemento FindFolder define una solicitud para buscar las carpetas en un buzón de correo.
-ms.openlocfilehash: 69fbaebc5615ac7d19512770658cde83e4d352df
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: El elemento FindFolder define una solicitud para buscar carpetas en un buzón.
+ms.openlocfilehash: 248047206a661afe723543e52c51b57847148423
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353535"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462580"
 ---
 # <a name="findfolder"></a>FindFolder
 
-El elemento **FindFolder** define una solicitud para buscar las carpetas en un buzón de correo. 
+El elemento **FindFolder** define una solicitud para buscar carpetas en un buzón. 
   
 ```xml
 <FindFolder Traversal="Shallow/Deep/SoftDeleted">
@@ -45,31 +45,31 @@ El elemento **FindFolder** define una solicitud para buscar las carpetas en un b
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|Cruce seguro del  <br/> |Define cómo se realiza una búsqueda. Este atributo es necesario.  <br/> |
+|Transversal  <br/> |Define cómo se realiza una búsqueda. Este atributo es obligatorio.  <br/> |
    
-#### <a name="traversal-attribute-values"></a>Valores de atributo recorrido
+#### <a name="traversal-attribute-values"></a>Valores de atributo de recorrido
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Superficial  <br/> |Indica a la operación de FindFolder para buscar sólo la carpeta identificada y devolver sólo la carpeta identificadores para los elementos que no se han eliminado. Esto se denomina un recorrido superficial.  <br/> |
-|Profunda  <br/> |Indica a la operación de FindFolder para buscar en todas las carpetas secundarias de la carpeta principal identificado y devolver sólo la carpeta identificadores para los elementos que no se han eliminado. Esto se denomina un recorrido profundo.  <br/> |
-|SoftDeleted  <br/> |Indica a la operación FindFolder para realizar una búsqueda de recorrido superficial de los elementos eliminados.  <br/> |
+|Profunda  <br/> |Indica a la operación FindFolder que busque sólo en la carpeta identificada y que devuelva sólo los identificadores de la carpeta para los elementos que no se han eliminado. Esto se denomina recorrido superficial.  <br/> |
+|Gran  <br/> |Indica a la operación FindFolder que busque en todas las carpetas secundarias de la carpeta principal identificada y que devuelva sólo los identificadores de carpeta de los elementos que no se han eliminado. Esto se denomina recorrido profundo.  <br/> |
+|SoftDeleted  <br/> |Indica a la operación FindFolder que realice una búsqueda de recorrido superficial para los elementos eliminados.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FolderShape](foldershape.md) <br/> |Identifica las propiedades de carpeta para incluir en una respuesta FindFolder.  <br/> |
-|[IndexedPageFolderView](indexedpagefolderview.md) <br/> |Describe cómo paginada elemento de información se devuelve en una respuesta FindFolder. Este elemento es opcional.  <br/> |
-|[FractionalPageFolderView](fractionalpagefolderview.md) <br/> |Describe donde se inicia la vista de página y devuelve el número máximo de carpetas en una solicitud FindFolder. Este elemento es opcional.  <br/> |
-|[Restriction](restriction.md) <br/> |Define una restricción o una consulta que se usa para filtrar las carpetas en una operación FindFolder. Este elemento es opcional.  <br/> |
-|[ParentFolderIds](parentfolderids.md) <br/> |Identifica las carpetas para la operación FindFolder buscar.  <br/> |
+|[FolderShape](foldershape.md) <br/> |Identifica las propiedades de carpeta que se deben incluir en una respuesta FindFolder.  <br/> |
+|[IndexedPageFolderView](indexedpagefolderview.md) <br/> |Describe cómo se devuelve la información de elementos paginados en una respuesta FindFolder. Este elemento es opcional.  <br/> |
+|[FractionalPageFolderView](fractionalpagefolderview.md) <br/> |Describe dónde se inicia la vista paginada y el número máximo de carpetas que se devuelven en una solicitud FindFolder. Este elemento es opcional.  <br/> |
+|[Restriction](restriction.md) <br/> |Define una restricción o consulta que se usa para filtrar las carpetas en una operación FindFolder. Este elemento es opcional.  <br/> |
+|[ParentFolderIds](parentfolderids.md) <br/> |Identifica las carpetas para la operación FindFolder que se va a buscar.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -77,18 +77,18 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="example"></a>Ejemplo
 
-El siguiente ejemplo de una solicitud de FindFolder muestra cómo formar una solicitud para buscar todas las carpetas que se encuentra en una bandeja de entrada.
+El siguiente ejemplo de una solicitud FindFolder muestra cómo crear una solicitud para buscar todas las carpetas que se encuentran en una bandeja de entrada.
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <FindFolder Traversal="Shallow" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindFolder Traversal="Shallow" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <FolderShape>
         <t:BaseShape>Default</t:BaseShape>
       </FolderShape>
@@ -104,10 +104,10 @@ El siguiente ejemplo de una solicitud de FindFolder muestra cómo formar una sol
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4a20c747-4fa2-4c8d-b439-816918e8ba02
-description: El elemento ClientIntent está pensado para uso interno únicamente.
-ms.openlocfilehash: 07f9508f367dcfc5c34e57224a1f669ceda3cf10
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ClientIntent está destinado sólo para uso interno.
+ms.openlocfilehash: cf791a5ddba7c3455f5738bd4bede00dc7010f0e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763744"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462188"
 ---
 # <a name="clientintent"></a>ClientIntent
 
-El elemento **ClientIntent** está pensado para uso interno únicamente. 
+El elemento **ClientIntent** está destinado sólo para uso interno. 
   
 ```XML
 <ClientIntent />
@@ -26,15 +26,15 @@ El elemento **ClientIntent** está pensado para uso interno únicamente.
  ****
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -50,9 +50,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

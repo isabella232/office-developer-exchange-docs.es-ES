@@ -1,5 +1,5 @@
 ---
-title: Operación GetUMProperties (servicio web de mensajería unificada)
+title: Operación GetUMProperties (servicio Web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,23 +10,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 301fb9a3-67df-44c4-8ffe-0600237fc344
-description: La operación GetUMProperties Obtiene todas las propiedades de mensajería unificada para el buzón del usuario que realiza la solicitud.
-ms.openlocfilehash: 8878099bbd907fe0648f7d64dde3cd9600c2c45f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación GetUMProperties obtiene todas las propiedades de mensajería unificada del buzón de correo del usuario que realiza la solicitud.
+ms.openlocfilehash: 42176d9cd0288af6515aeea616a4f216a419410c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835678"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462475"
 ---
-# <a name="getumproperties-operation-um-web-service"></a>Operación GetUMProperties (servicio web de mensajería unificada)
+# <a name="getumproperties-operation-um-web-service"></a>Operación GetUMProperties (servicio Web de mensajería unificada)
 
-La operación GetUMProperties Obtiene todas las propiedades de mensajería unificada para el buzón del usuario que realiza la solicitud.
+La operación GetUMProperties obtiene todas las propiedades de mensajería unificada del buzón de correo del usuario que realiza la solicitud.
   
-## <a name="getumproperties-request-example"></a>Ejemplo de solicitud de GetUMProperties
+## <a name="getumproperties-request-example"></a>Ejemplo de solicitud GetUMProperties
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud de GetUMProperties muestra cómo formar una solicitud para obtener las propiedades de mensajería unificada de un buzón de correo.
+El siguiente ejemplo de una solicitud GetUMProperties muestra cómo crear una solicitud para obtener las propiedades de mensajería unificada de un buzón.
   
 ### <a name="code"></a>Código
 
@@ -34,16 +34,16 @@ El siguiente ejemplo de una solicitud de GetUMProperties muestra cómo formar un
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <GetUMProperties xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" />
+    <GetUMProperties xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" />
   </soap:Body>
 </soap:Envelope>
 ```
 
-## <a name="successful-getumproperties-response-example"></a>Ejemplo de respuesta correcta de GetUMProperties
+## <a name="successful-getumproperties-response-example"></a>Ejemplo de respuesta GetUMProperties correcta
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una respuesta GetUMProperties muestra una respuesta a la solicitud de GetUMProperties.
+El siguiente ejemplo de una respuesta de GetUMProperties muestra una respuesta a la solicitud GetUMProperties.
   
 ### <a name="code"></a>Código
 
@@ -51,7 +51,7 @@ El siguiente ejemplo de una respuesta GetUMProperties muestra una respuesta a la
 <?xml version="1.0" encoding="utf-8" ?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Body>
-    <GetUMPropertiesResponse xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetUMPropertiesResponse xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <GetUMPropertiesResponse>
         <OofStatus>false</OofStatus> 
         <MissedCallNotificationEnabled>true</MissedCallNotificationEnabled> 
@@ -68,7 +68,7 @@ El siguiente ejemplo de una respuesta GetUMProperties muestra una respuesta a la
 
 
 
-[GetUMProperties (servicio web de mensajería unificada)](getumproperties-um-web-service.md)
+[GetUMProperties (servicio Web de mensajería unificada)](getumproperties-um-web-service.md)
   
-[GetUMPropertiesResponse (servicio web de mensajería unificada)](getumpropertiesresponse-um-web-service.md)
+[GetUMPropertiesResponse (servicio Web de mensajería unificada)](getumpropertiesresponse-um-web-service.md)
 

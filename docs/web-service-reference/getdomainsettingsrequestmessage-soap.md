@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 34913595-794c-4c62-9622-877f30931c73
-description: El elemento GetDomainSettingsRequestMessage representa una solicitud de operación GetDomainSettings operación (SOAP).
-ms.openlocfilehash: 24af4e3dc18c459f5669ba18f7b8c548fcc748fc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetDomainSettingsRequestMessage representa una solicitud de operación de GetDomainSettings (SOAP).
+ms.openlocfilehash: 71648e3df609edfce73ebccf372a82311c03d49d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764835"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462034"
 ---
 # <a name="getdomainsettingsrequestmessage-soap"></a>GetDomainSettingsRequestMessage (SOAP)
 
-El elemento **GetDomainSettingsRequestMessage** representa una solicitud de operación de la [operación de GetDomainSettings (SOAP)](getdomainsettings-operation-soap.md) . 
+El elemento **GetDomainSettingsRequestMessage** representa una solicitud de operación de [GetDomainSettings (SOAP)](getdomainsettings-operation-soap.md) . 
   
 ```XML
 <GetDomainSettingsRequestMessage>
@@ -28,33 +28,33 @@ El elemento **GetDomainSettingsRequestMessage** representa una solicitud de oper
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Solicitud (SOAP) (GetDomainSettings)](request-getdomainsettingssoap.md) <br/> |Contiene una solicitud para devolver la configuración de dominio.  <br/> |
+|[Request (GetDomainSettings) (SOAP)](request-getdomainsettingssoap.md) <br/> |Contiene una solicitud para devolver la configuración del dominio.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también

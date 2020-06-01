@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bc213f0e-a655-44e9-9ac9-bc1673bae1fe
-description: El elemento ExtractAllowed especifica si está habilitada la extracción de entidades.
-ms.openlocfilehash: 48584e50be0ff66d156d9a3c3768729d63a9a3fd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ExtractAllowed especifica si la extracción de entidades está habilitada.
+ms.openlocfilehash: f9fcae72d6241e51f549fbf650f5b2aebe019e46
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764577"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461985"
 ---
 # <a name="extractallowed"></a>ExtractAllowed
 
-El elemento **ExtractAllowed** especifica si está habilitada la extracción de entidades. 
+El elemento **ExtractAllowed** especifica si la extracción de entidades está habilitada. 
   
 ```XML
 <ExtractAllowed>true | false</ExtractAllowed
@@ -26,25 +26,25 @@ El elemento **ExtractAllowed** especifica si está habilitada la extracción de 
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[RightsManagementLicenseData](rightsmanagementlicensedata.md) <br/> |Especifica información sobre la licencia de administración de derechos.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **ExtractAllowed** indica que está habilitada la extracción de entidades. Un valor de **false** indica que la extracción de entidades no está habilitado. 
+Un valor de texto de **true** para el elemento **ExtractAllowed** indica que la extracción de entidades está habilitada. Un valor de **false** indica que la extracción de entidades no está habilitada. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

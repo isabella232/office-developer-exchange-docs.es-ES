@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 76c5532b-de5f-4227-9284-eab8ef076c55
-description: El elemento OOFUrl especifica la dirección URL de la instancia del servicio de disponibilidad para un usuario habilitado para correo de procedimientos.
-ms.openlocfilehash: 3e2cb8ddecb0efc43828f582a1bd8baf352117e1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento OOFUrl especifica la dirección URL de la mejor instancia del servicio de disponibilidad para un usuario habilitado para correo.
+ms.openlocfilehash: f32ec4416bc0a1a144ff21aa9d2dac89bac30495
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836646"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462524"
 ---
 # <a name="oofurl-pox"></a>OOFUrl (POX)
 
-El elemento **OOFUrl** especifica la dirección URL de la instancia del servicio de disponibilidad para un usuario habilitado para correo de procedimientos. 
+El elemento **OOFUrl** especifica la dirección URL de la mejor instancia del servicio de disponibilidad para un usuario habilitado para correo. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -36,29 +36,29 @@ El elemento **OOFUrl** especifica la dirección URL de la instancia del servicio
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente en el equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.  <br/> |
+|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto especifica la dirección URL del servidor configuración de fuera de oficina para una topología de Exchange.
+El valor de texto especifica la dirección URL del servidor de configuración de fuera de la oficina para una topología de Exchange.
   
 ## <a name="see-also"></a>Vea también
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

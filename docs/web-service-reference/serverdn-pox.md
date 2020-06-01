@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 2ef73d13-e8bb-43f6-96c7-3ee157fed739
-description: El elemento ServerDN especifica el nombre distintivo (DN) del equipo que ejecuta Microsoft Exchange Server 2007.
-ms.openlocfilehash: d2b9ce663d8245a78acd088b0622406c0dfcb4da
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ServerDN especifica el nombre distintivo del equipo que ejecuta Microsoft Exchange Server 2007.
+ms.openlocfilehash: 16c6e7368e221b7e54c8d7d63532bb29464a7e54
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837374"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461999"
 ---
 # <a name="serverdn-pox"></a>ServerDN (POX)
 
-El elemento **ServerDN** especifica el nombre distintivo (DN) del equipo que ejecuta Microsoft Exchange Server 2007. 
+El elemento **ServerDN** especifica el nombre distintivo del equipo que ejecuta Microsoft Exchange Server 2007. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -36,33 +36,33 @@ El elemento **ServerDN** especifica el nombre distintivo (DN) del equipo que eje
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente en el equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.  <br/> |
+|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa el nombre distintivo (DN) del servidor de Exchange.
+El valor de texto representa el nombre distintivo del servidor de Exchange.
   
 ## <a name="remarks"></a>Comentarios
 
-El valor de **ServerDN** solo se usa al [Tipo (POX)](type-pox.md) es igual a cambio 
+El valor **ServerDN** solo se usa cuando [Type (POX)](type-pox.md) es igual a EXCH. 
   
 ## <a name="see-also"></a>Vea también
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

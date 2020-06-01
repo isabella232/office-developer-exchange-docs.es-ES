@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: bd27f494-520a-459e-adcf-c3f505f27a69
-description: El elemento de servidor representa el servidor de buzones alternativas.
-ms.openlocfilehash: 6784877d057fb0e174d53a1d23fcbde61239d347
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Server representa el servidor de buzones de correo alternativo.
+ms.openlocfilehash: 12c5b85cf323e72a113420dac289a655143a4e22
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837373"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462006"
 ---
 # <a name="server-soap"></a>Servidor (SOAP)
 
-El elemento de **servidor** representa el servidor de buzones alternativas. 
+El elemento **Server** representa el servidor de buzones de correo alternativo. 
   
 ```XML
 <Server/>
@@ -27,40 +27,40 @@ El elemento de **servidor** representa el servidor de buzones alternativas.
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AlternateMailbox (SOAP)](alternatemailbox-soap.md) <br/> |Representa un buzón de alternativo.  <br/> |
+|[AlternateMailbox (SOAP)](alternatemailbox-soap.md) <br/> |Representa un buzón de correo alternativo.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **servidor** es el nombre del servidor de buzones alternativas. 
+El valor de texto del elemento **Server** es el nombre del servidor de buzones de correo alternativo. 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Referencia de servicio web de detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)
+[Referencia del servicio web de Detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)
   
-[Elementos de Autodiscover XML SOAP para Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[Elementos XML de detección automática de SOAP para Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

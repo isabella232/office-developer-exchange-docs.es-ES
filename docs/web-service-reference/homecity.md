@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 410efc09-5c38-46fb-85b5-eb365be0ba35
-description: El elemento HomeCity especifica la ciudad del domicilio particular del rol asociado.
-ms.openlocfilehash: 1d9c3153d3c6232082f699697fc7faf108b43c70
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento HomeCity especifica la ciudad de la dirección particular del rol asociado.
+ms.openlocfilehash: 25fccaf0441fa3d9e258ae35f938ad0fc7a5a9eb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835832"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460872"
 ---
 # <a name="homecity"></a>HomeCity
 
-El elemento **HomeCity** especifica la ciudad del domicilio particular del rol asociado. 
+El elemento **HomeCity** especifica la ciudad de la dirección particular del rol asociado. 
   
 ```XML
 <HomeCity></HomeCity>
@@ -26,25 +26,25 @@ El elemento **HomeCity** especifica la ciudad del domicilio particular del rol a
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud de **GetPersona** .  <br/> |
+|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud **GetPersona** .  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **HomeCity** es un valor de tipo string que especifica la ciudad. 
+El valor de texto del elemento **HomeCity** es un valor de cadena que especifica la ciudad. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

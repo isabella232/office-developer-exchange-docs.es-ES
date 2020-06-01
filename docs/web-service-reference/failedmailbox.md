@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3d4c9816-54bb-4932-b4ba-f057c9173a1a
-description: El elemento FailedMailbox especifica el mensaje de error para un buzón de correo con errores en la búsqueda.
-ms.openlocfilehash: a4f5cd975eba121dd1d8d918b638d34f907588a8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento FailedMailbox especifica el mensaje de error de un buzón en el que se produjo un error en la búsqueda.
+ms.openlocfilehash: 404084bc342eb555db61c4216e936bee6ced9c36
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764580"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461964"
 ---
 # <a name="failedmailbox"></a>FailedMailbox
 
-El elemento **FailedMailbox** especifica el mensaje de error para un buzón de correo con errores en la búsqueda. 
+El elemento **FailedMailbox** especifica el mensaje de error de un buzón en el que se produjo un error en la búsqueda. 
   
 ```XML
 <FailedMailbox>
@@ -31,26 +31,26 @@ El elemento **FailedMailbox** especifica el mensaje de error para un buzón de c
  **FailedSearchMailboxType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Buzón de correo (cadena)](mailbox-string.md) <br/> |Contiene un identificador para el buzón de correo.  <br/> |
-|[ErrorCode (int)](errorcode-int.md) <br/> |Especifica el código de error del buzón al que no se pudo la búsqueda.  <br/> |
+|[Mailbox (cadena)](mailbox-string.md) <br/> |Contiene un identificador para el buzón.  <br/> |
+|[ErrorCode (int)](errorcode-int.md) <br/> |Especifica el código de error del buzón de correo que produjo el error en la búsqueda.  <br/> |
 |[ErrorMessage](errormessage.md) <br/> |Representa el motivo del error de validación.  <br/> |
-|[IsArchive](isarchive.md) <br/> |Especifica un valor booleano que indica si el buzón de correo es un archivo.  <br/> |
+|[IsArchive](isarchive.md) <br/> |Especifica un valor booleano que indica si el buzón es un archivo.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FailedMailboxes](failedmailboxes.md) <br/> |Especifica una matriz de los buzones de correo con errores.  <br/> |
+|[FailedMailboxes](failedmailboxes.md) <br/> |Especifica una matriz de buzones con error.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -62,14 +62,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

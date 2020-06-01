@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5fd465b4-6070-4cd0-9ac3-ed9d2bfd5951
-description: El elemento HasLocationChanged especifica si se ha cambiado la propiedad de ubicación de una reunión.
-ms.openlocfilehash: dbb811b93149be0bb43fbb2f579a5086a396e401
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento HasLocationChanged especifica si la propiedad Location de una reunión ha cambiado.
+ms.openlocfilehash: 4f774adcf4a7666f40524931504f1172e15ba24d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835804"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462447"
 ---
 # <a name="haslocationchanged"></a>HasLocationChanged
 
-El elemento **HasLocationChanged** especifica si se ha cambiado la propiedad de ubicación de una reunión. 
+El elemento **HasLocationChanged** especifica si la propiedad Location de una reunión ha cambiado. 
   
 ```XML
 <HasLocationChanged> true | false </HasLocationChanged>
@@ -26,25 +26,25 @@ El elemento **HasLocationChanged** especifica si se ha cambiado la propiedad de 
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ChangeHighlights](changehighlights.md) <br/> |Especifica qué ha cambiado entre dos versiones de una reunión de mensaje de solicitud.  <br/> |
+|[ChangeHighlights](changehighlights.md) <br/> |Especifica qué ha cambiado entre dos versiones de un mensaje de convocatoria de reunión.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **HasLocationChanged** indica que ha cambiado la propiedad de ubicación de una reunión. Un valor **false** indica que no ha cambiado la propiedad de ubicación de una reunión. 
+Un valor de texto de **true** para el elemento **HasLocationChanged** indica que la propiedad Location de una reunión ha cambiado. Un valor **false** indica que la propiedad Location de una reunión no ha cambiado. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

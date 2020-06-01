@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 244f4f46-a33d-4764-92e3-1bddb4dc6a49
-description: El elemento FolderShape identifica las propiedades de carpeta para incluir en una respuesta GetFolder, FindFolder o SyncFolderHierarchy.
-ms.openlocfilehash: 8ebdd70ef13ee9f0cce9020b9212576cba782be4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento FolderShape identifica las propiedades de carpeta que se deben incluir en una respuesta GetFolder, FindFolder o SyncFolderHierarchy.
+ms.openlocfilehash: f841fcc4570604c474387dfa24ec07c9d2784f62
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764698"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461348"
 ---
 # <a name="foldershape"></a>FolderShape
 
-El elemento **FolderShape** identifica las propiedades de carpeta para incluir en una respuesta [GetFolder](getfolder.md), [FindFolder](findfolder.md)o [SyncFolderHierarchy](syncfolderhierarchy.md) . 
+El elemento **FolderShape** identifica las propiedades de carpeta que se deben incluir en una respuesta [GetFolder](getfolder.md), [FindFolder](findfolder.md)o [SyncFolderHierarchy](syncfolderhierarchy.md) . 
   
 ```xml
 <FolderShape>
@@ -33,43 +33,43 @@ El elemento **FolderShape** identifica las propiedades de carpeta para incluir e
  **FolderResponseShapeType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[BaseShape](baseshape.md) <br/> |Identifica la configuración básica de propiedades se devuelven en una respuesta.  <br/> |
-|[AdditionalProperties](additionalproperties.md) <br/> |Identifica las propiedades adicionales para devolver en una respuesta.  <br/> |
+|[BaseShape](baseshape.md) <br/> |Identifica la configuración básica de las propiedades que se van a devolver en una respuesta.  <br/> |
+|[AdditionalProperties](additionalproperties.md) <br/> |Identifica las propiedades adicionales que se devolverán en una respuesta.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FindFolder](findfolder.md) <br/> |Define una solicitud para identificar las carpetas de un buzón de correo.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/FindFolder` <br/> |
-|[GetFolder](getfolder.md) <br/> |Define una solicitud para obtener una carpeta desde el almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetFolder` <br/> |
-|[SyncFolderHierarchy](syncfolderhierarchy.md) <br/> |Define una solicitud para sincronizar una jerarquía de carpetas en un cliente.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/SyncFolderHierarchy` <br/> |
+|[FindFolder](findfolder.md) <br/> |Define una solicitud para identificar las carpetas en un buzón.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/FindFolder` <br/> |
+|[GetFolder](getfolder.md) <br/> |Define una solicitud para obtener una carpeta del almacén de Exchange.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetFolder` <br/> |
+|[SyncFolderHierarchy](syncfolderhierarchy.md) <br/> |Define una solicitud para sincronizar una jerarquía de carpetas en un cliente.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/SyncFolderHierarchy` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
 El elemento **FolderShape** es un elemento secundario necesario del elemento [FindFolder](findfolder.md) . 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="example"></a>Ejemplo
 
-El siguiente ejemplo de una solicitud, muestra cómo buscar todas las carpetas que se encuentra en el primer nivel de la carpeta Bandeja de entrada.
+El siguiente ejemplo de una solicitud muestra cómo buscar todas las carpetas que se encuentran en el primer nivel de la carpeta Bandeja de entrada.
   
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <FindFolder Traversal="Shallow" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindFolder Traversal="Shallow" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <FolderShape>
         <t:BaseShape>Default</t:BaseShape>
       </FolderShape>
@@ -85,10 +85,10 @@ El siguiente ejemplo de una solicitud, muestra cómo buscar todas las carpetas q
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

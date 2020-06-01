@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: fa4b1447-dc7b-47ad-a677-78fcee443dc6
-description: El elemento PolicyTag especifica el identificador de retención en una carpeta o elemento.
-ms.openlocfilehash: d6cd5aab1145f6006912541c8f8c1d0a91d1e17e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PolicyTag especifica el identificador de retención de un elemento o una carpeta.
+ms.openlocfilehash: ddc4d890d1e514586ba5ea7f6a8b541b2e4786c7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836835"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460900"
 ---
 # <a name="policytag"></a>PolicyTag
 
-El elemento **PolicyTag** especifica el identificador de retención en una carpeta o elemento. 
+El elemento **PolicyTag** especifica el identificador de retención de un elemento o una carpeta. 
   
 ```xml
 <PolicyTag IsExplicit="true | false"></PolicyTag>
@@ -26,25 +26,25 @@ El elemento **PolicyTag** especifica el identificador de retención en una carpe
  **RetentionTagType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|IsExplicit  <br/> |Indica si una etiqueta de directiva se estableció explícitamente en un elemento o carpeta.  <br/> Un valor de texto de **true** para el atributo **IsExplicit** indica que la etiqueta de directiva se establezca explícitamente en el elemento o la carpeta. Un valor de texto de **false** indica que la etiqueta de directiva implícitamente se estableció en el elemento o la carpeta en función de la etiqueta de directiva de carpeta primaria.  <br/> |
+|IsExplicit  <br/> |Indica si una etiqueta de Directiva se estableció explícitamente en un elemento o una carpeta.  <br/> Un valor de texto de **true** para el atributo **IsExplicit** indica que la etiqueta de Directiva se estableció explícitamente en el elemento o carpeta. Un valor de texto **falso** indica que la etiqueta de Directiva se ha configurado implícitamente en el elemento o la carpeta basándose en la etiqueta de directiva de carpeta principal.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[SearchPreviewItem](searchpreviewitem.md) | [elemento](item.md) | [contacto](contact.md) | [mensaje](message-ex15websvcsotherref.md) | [DistributionList](distributionlist.md) | [CalendarItem](calendaritem.md) | [PostItem](postitem.md) | [tarea](task.md)
+[SearchPreviewItem](searchpreviewitem.md)  |  [Elemento](item.md)  |  [Contacto](contact.md)  |  [Mensaje de error](message-ex15websvcsotherref.md)  |  [DistributionList](distributionlist.md)  |  [CalendarItem](calendaritem.md)  |  [PostItem](postitem.md)  |  [Tarea](task.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **PolicyTag** es el identificador de etiqueta de directiva. El identificador de etiqueta de directiva es un GUID. 
+El valor de texto del elemento **PolicyTag** es el identificador de la etiqueta de directiva. El identificador de etiqueta de directiva es un GUID. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,9 +56,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

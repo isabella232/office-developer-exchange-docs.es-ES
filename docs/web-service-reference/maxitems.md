@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4ddba6b8-0f38-42cd-96a1-0d4283f6375b
-description: El elemento de MaxItems especifica el número máximo de elementos para devolver en la solicitud.
-ms.openlocfilehash: dffb9ba4e29915a65fe2a57b6e7a7b4468028fa1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MaxItems especifica el número máximo de elementos que se devolverá en la solicitud.
+ms.openlocfilehash: f16e9d46b59c0f562aabd5383f7f445d93414f68
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836384"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461747"
 ---
 # <a name="maxitems"></a>MaxItems
 
-El elemento de **MaxItems** especifica el número máximo de elementos para devolver en la solicitud. 
+El elemento **MaxItems** especifica el número máximo de elementos que se devolverá en la solicitud. 
   
 ```XML
 <MaxItems/>
@@ -26,15 +26,15 @@ El elemento de **MaxItems** especifica el número máximo de elementos para devo
  **int**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **MaxItems** es el número máximo de elementos para devolver en la solicitud. Este número no puede ser menor que cero o mayor que 200. 
+El valor de texto del elemento **MaxItems** es el número máximo de elementos que se devuelven en la solicitud. Este número no puede ser menor que cero o mayor que 200. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,10 +54,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -66,5 +66,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [GetReminders](getreminders.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

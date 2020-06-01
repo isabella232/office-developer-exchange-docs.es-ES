@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ec7a1009-b06d-4578-8cc6-52b83684458c
-description: El elemento de propiedades está pensado para uso interno únicamente.
-ms.openlocfilehash: b6ebd0b8f20b1b7cbeda0cd6e9feb82803e1b1c0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Properties está destinado solo para uso interno.
+ms.openlocfilehash: d61a602f504b53eecc94ac79927cfc5bfecd0525
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836892"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461642"
 ---
 # <a name="properties-arrayofstringstype"></a>Propiedades (ArrayOfStringsType)
 
-El elemento de **Propiedades** está pensado para uso interno únicamente. 
+El elemento **Properties** está destinado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

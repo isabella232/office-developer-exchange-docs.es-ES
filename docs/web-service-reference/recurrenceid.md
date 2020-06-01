@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9ef3569d-ee56-4b22-b008-609fb3337da7
-description: El elemento RecurrenceId se usa para identificar una instancia específica de un elemento periódico del calendario.
-ms.openlocfilehash: 078bec85e1ca1530137f9935365d7dd3e530ea34
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RecurrenceId se usa para identificar una instancia específica de un elemento de calendario periódico.
+ms.openlocfilehash: 58a379f2cffa7ff37181e93ad1c45c9752e84f1d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837005"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461614"
 ---
 # <a name="recurrenceid"></a>RecurrenceId
 
-El elemento **RecurrenceId** se usa para identificar una instancia específica de un elemento periódico del calendario. 
+El elemento **RecurrenceId** se usa para identificar una instancia específica de un elemento de calendario periódico. 
   
 ```xml
 <RecurrenceId/>
@@ -30,46 +30,46 @@ El elemento **RecurrenceId** se usa para identificar una instancia específica d
  **dateTime**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Representa un mensaje de reunión.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Representa una convocatoria de reunión.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta a la reunión.  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Representa la cancelación de la reunión.  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Representa una cancelación de reunión.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa un valor de fecha y hora que identifica una ocurrencia de calendario.
+El valor de texto representa un valor de fecha y hora que identifica una ocurrencia del calendario.
   
 ## <a name="remarks"></a>Comentarios
 
-Esta propiedad se utiliza con la propiedad [UID](uid.md) para identificar una instancia específica de un elemento periódico del calendario. 
+Esta propiedad se utiliza con la propiedad [UID](uid.md) para identificar una instancia específica de un elemento de calendario periódico. 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

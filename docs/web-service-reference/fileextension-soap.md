@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1864182b-26f1-444e-b697-a654c2f68982
 description: El elemento FileExtension representa una extensión de archivo.
-ms.openlocfilehash: fb3af508d3b4033871f349eac35ddc270c9d9cb6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: a96a1eaa7339021188a768a980c13350be00e8ac
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764604"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461012"
 ---
 # <a name="fileextension-soap"></a>FileExtension (SOAP)
 
@@ -25,33 +25,33 @@ El elemento **FileExtension** representa una extensión de archivo.
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SupportedFileExtensions (SOAP)](supportedfileextensions-soap.md) <br/> |Contiene una lista de extensiones de archivo en un documento de ubicación de uso compartido.  <br/> |
+|[SupportedFileExtensions (SOAP)](supportedfileextensions-soap.md) <br/> |Contiene una lista de extensiones de archivo en una ubicación de uso compartido de documentos.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **FileExtension** es una extensión de archivo válido para la ubicación de uso compartido de documentos. 
+El valor de texto del elemento **FileExtension** es una extensión de archivo válida para la ubicación de uso compartido de documentos. 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
@@ -61,7 +61,7 @@ El valor de texto del elemento **FileExtension** es una extensión de archivo v�
 [Operación GetUserSettings (SOAP)](getusersettings-operation-soap.md)
 
 
-[Referencia de servicio web de detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)
+[Referencia del servicio web de Detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)
   
-[Elementos de Autodiscover XML SOAP para Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[Elementos XML de detección automática de SOAP para Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

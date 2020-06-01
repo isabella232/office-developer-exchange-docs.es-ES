@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b9364842-bbe2-4221-afef-bf5022bc89ec
-description: El elemento FieldOrder representa un solo campo por el que se va a ordenar los resultados e indica la dirección para la ordenación.
-ms.openlocfilehash: 320a7b821cc593e7dd60a8f8adb23bcd600f71f8
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: El elemento FieldOrder representa un solo campo por el que se ordenan los resultados e indica la dirección de la ordenación.
+ms.openlocfilehash: 19dee7175d541dd99b53e004ea8ccd785b619184
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353304"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461264"
 ---
 # <a name="fieldorder"></a>FieldOrder
 
-El elemento **FieldOrder** representa un solo campo por el que se va a ordenar los resultados e indica la dirección para la ordenación. 
+El elemento **FieldOrder** representa un solo campo por el que se ordenan los resultados e indica la dirección de la ordenación. 
   
 ```xml
 <FieldOrder Order="">
@@ -45,42 +45,42 @@ El elemento **FieldOrder** representa un solo campo por el que se va a ordenar l
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**Order** <br/> | Describe la dirección del criterio de ordenación.<br/><br/> Los valores posibles son: <br/> <br/>-Ascendente  <br/>-Descendente  <br/> |
+|**Order** <br/> | Describe la dirección del criterio de ordenación.<br/><br/> Los valores posibles son los siguientes: <br/> <br/>-Ascending  <br/>Descendente  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifica las propiedades con frecuencia que se hace referencia mediante un identificador URI.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifica las propiedades a las que se hace referencia con frecuencia mediante el URI.  <br/> |
 |[IndexedFieldURI](indexedfielduri.md) <br/> |Identifica a los miembros individuales de un diccionario.  <br/> |
 |[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifica las propiedades MAPI.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SortOrder](sortorder.md) <br/> |Define cómo se ordenan los elementos en una solicitud FindItem.  <br/> La siguiente es la expresión de XPath para este elemento:`/FindItem/SortOrder` <br/> |
+|[SortOrder](sortorder.md) <br/> |Define cómo se ordenan los elementos en una solicitud FindItem.  <br/> La siguiente es la expresión XPath a este elemento:`/FindItem/SortOrder` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

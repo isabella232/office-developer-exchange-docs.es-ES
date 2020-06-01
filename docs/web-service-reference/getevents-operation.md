@@ -11,39 +11,39 @@ api_name:
 api_type:
 - schema
 ms.assetid: f268efe5-9a1a-41a2-b6a6-51fcde7720a1
-description: La operación GetEvents se usa en los clientes de suscripción de extracción a las notificaciones de solicitud desde el servidor de acceso de cliente. La respuesta de la operación GetEvents devuelve una matriz de elementos y eventos que se han producido en un buzón de correo desde la última vez la notificación.
-ms.openlocfilehash: 1a23a9d570a4554e54becb7927f25dff89888c74
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación GetEvents la usan los clientes de suscripción de extracción para solicitar notificaciones del servidor de acceso de cliente. La respuesta de la operación GetEvents devuelve una matriz de elementos y eventos que se han producido en un buzón desde la última notificación.
+ms.openlocfilehash: 9258fd003c242911866aa7abbca5eba2b9582223
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764821"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462517"
 ---
 # <a name="getevents-operation"></a>Operación GetEvents
 
-La operación **GetEvents** se usa en los clientes de suscripción de extracción a las notificaciones de solicitud desde el servidor de acceso de cliente. La respuesta de la operación **GetEvents** devuelve una matriz de elementos y eventos que se han producido en un buzón de correo desde la última vez la notificación. 
+La operación **GetEvents** la usan los clientes de suscripción de extracción para solicitar notificaciones del servidor de acceso de cliente. La respuesta de la operación **GetEvents** devuelve una matriz de elementos y eventos que se han producido en un buzón desde la última notificación. 
   
 > [!IMPORTANT]
-> La operación de **DeleteUserConfiguration** activará un evento de mover para el sistema de notificación de eventos. El objeto de configuración de usuario se moverán al volcado de archivos. 
+> La operación **DeleteUserConfiguration** desencadenará un evento Move para el sistema de notificación de eventos. El objeto de configuración de usuario se moverá al contenedor. 
   
 ## <a name="remarks"></a>Comentarios
 
-En la generación de varios eventos pueden ocasionar que los cambios realizados en los elementos del calendario. Estos eventos son el resultado de elementos temporales que se crean en el buzón de correo, los elementos de almacenamiento de datos de disponibilidad que se está cambiando como parte de las operaciones de calendario normales, o ambos. Eventos de elemento de clase "IPM. SchedulePlus.FreeBusy.BinaryData"se debe omitir los clientes de servicios Web. Estos elementos temporales se eliminan después de que se crean; por lo tanto, si se realiza un intento para recuperar estos elementos, un error se devolverán que indica que no se encontró el elemento.
+Los cambios en los elementos del calendario pueden dar como resultado la generación de varios eventos. Estos eventos son el resultado de la creación de elementos temporales en el buzón, el cambio de elementos de almacenamiento de datos de disponibilidad como parte de las operaciones normales del calendario o ambos. Eventos para la clase de elemento "IPM. Los clientes del servicio Web deben omitir SchedulePlus. FreeBusy. BinaryData. Estos elementos temporales se eliminan después de su creación; por lo tanto, si se realiza un intento de recuperar estos elementos, se devolverá un error que indica que no se encontró el elemento.
   
 ## <a name="getevents-request-example"></a>Ejemplo de solicitud GetEvents
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra cómo solicitar los eventos y los elementos que están asociados con una suscripción que se identifica con el identificador de suscripción y la marca de agua.
+En el ejemplo siguiente se muestra cómo solicitar los eventos y elementos asociados a una suscripción identificada por el identificador de suscripción y la marca de agua.
   
 ### <a name="code"></a>Código
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetEvents xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetEvents xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <SubscriptionId>f6bc657d-dde1-4f94-952d-143b95d6483d</SubscriptionId>
       <Watermark>AAAAAMAGAAAAAAAAAQ==</Watermark>
     </GetEvents>
@@ -51,21 +51,21 @@ En el ejemplo siguiente se muestra cómo solicitar los eventos y los elementos q
 </soap:Envelope>
 ```
 
-### <a name="getevents-request-elements"></a>Elementos de solicitudes GetEvents
+### <a name="getevents-request-elements"></a>Elementos de solicitud GetEvents
 
-En la solicitud se usan los siguientes elementos:
+Los siguientes elementos se usan en la solicitud:
   
 - [GetEvents](getevents.md)
     
 - [SubscriptionId (GetEvents)](subscriptionid-getevents.md)
     
-- [Marca de agua](watermark.md)
+- [Watermark](watermark.md)
     
-## <a name="successful-getevents-response-example"></a>Ejemplo de respuesta correcta de GetEvents
+## <a name="successful-getevents-response-example"></a>Ejemplo de respuesta GetEvents correcta
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una respuesta muestra una notificación de la existencia de dos nuevos mensajes de correo desde que se envió la última solicitud de notificación en el servidor.
+El siguiente ejemplo de una respuesta muestra una notificación de la existencia de dos nuevos mensajes de correo desde que se envió al servidor la última solicitud de notificación.
   
 ### <a name="code"></a>Código
 
@@ -76,12 +76,12 @@ El siguiente ejemplo de una respuesta muestra una notificación de la existencia
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetEventsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                       xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetEventsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                       xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetEventsResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -112,7 +112,7 @@ El siguiente ejemplo de una respuesta muestra una notificación de la existencia
 ### <a name="comments"></a>Comentarios
 
 > [!NOTE]
-> Los identificadores de elemento y carpeta se han abreviado para conservar la legibilidad. 
+> Los identificadores de elemento y carpeta se han abreviado para preservar la legibilidad. 
   
 ### <a name="getevents-response-elements"></a>Elementos de respuesta GetEvents
 
@@ -138,21 +138,21 @@ En la respuesta se usan los siguientes elementos:
     
 - [NewMailEvent](newmailevent.md)
     
-- [Marca de agua](watermark.md)
+- [Watermark](watermark.md)
     
-- [Marca de tiempo](timestamp.md)
+- [Marca](timestamp.md)
     
 - [ItemId](itemid.md)
     
-- [Id](parentfolderid.md)
+- [ParentFolderId](parentfolderid.md)
     
-Para buscar otras opciones para el mensaje de respuesta de la operación **GetEvents** , explore la jerarquía de esquema. Comenzar en el elemento de [notificación](notification-ex15websvcsotherref.md) . 
+Para buscar otras opciones para el mensaje de respuesta de la operación **GetEvents** , explore la jerarquía del esquema. Comenzar en el elemento de [notificación](notification-ex15websvcsotherref.md) . 
   
-## <a name="getevents-error-response-example"></a>Ejemplo de respuesta de GetEvents Error
+## <a name="getevents-error-response-example"></a>Ejemplo de respuesta de error GetEvents
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **GetEvents** . 
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud **GetEvents** . 
   
 ### <a name="code"></a>Código
 
@@ -163,12 +163,12 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **G
                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="628" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <GetEventsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetEventsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:GetEventsResponseMessage ResponseClass="Error">
           <m:MessageText>Access is denied. Only the subscription owner may access the subscription.</m:MessageText>
@@ -183,19 +183,19 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **G
 
 ## <a name="remarks"></a>Comentarios
 
-Cuando se procesa una solicitud **GetEvents** , el servidor de acceso de cliente lleva a cabo los siguientes pasos: 
+Al procesar una solicitud **GetEvents** , el servidor de acceso de cliente realiza los pasos siguientes: 
   
-1. El identificador de suscripción de la solicitud es confirmado como una suscripción válida que se hospeda en el servidor de acceso de cliente. Si no es así, se produce un error en la llamada **GetEvents** . 
+1. Se confirma que el SubscriptionID de la solicitud es una suscripción válida que se hospeda en el servidor de acceso de cliente. Si no es así, se produce un error en la llamada **GetEvents** . 
     
-2. La dirección SMTP del usuario autenticado para la solicitud se compara con la dirección SMTP del usuario que creó la suscripción. Si no coinciden, se produce un error en la solicitud de **GetEvents** . 
+2. La dirección SMTP del usuario autenticado para la solicitud se compara con la dirección SMTP del usuario que creó la suscripción. Si no coinciden, se produce un error en la solicitud **GetEvents** . 
     
-3. La cola de suscripción se consulta para los eventos que se esperan que se envíen al cliente. Si la cola no está vacía, los 50 primeros eventos de la cola se extrae de la cola y codificados en una notificación.
+3. La cola de suscripción se consulta para los eventos que están a la espera de ser enviados al cliente. Si la cola no está vacía, los primeros 50 eventos de la cola se extraen de la cola y se codifican en una notificación.
     
-4. Si no se encontraron eventos en la cola, un objeto StatusEvent se genera y se codifican en una respuesta de notificación.
+4. Si no se encuentra ningún evento en la cola, se genera un StatusEvent y se codifica en una respuesta de notificación.
     
-5. La respuesta de notificación se devuelve al cliente.
+5. La respuesta de la notificación se devuelve al cliente.
     
-6. Se quitan los eventos que se incluyen en la notificación de la cola de suscripción y se establece el acceso de cliente local última marca de agua server para la suscripción a la marca de agua del último evento que se devuelve.
+6. Los eventos incluidos en la notificación se quitan de la cola de suscripción y la última marca de agua local del servidor de acceso de cliente de la suscripción se establece en la marca de agua del último evento que se devuelve.
     
 7. Se restablece el temporizador de tiempo de espera de la suscripción.
     
@@ -203,10 +203,10 @@ Cuando se procesa una solicitud **GetEvents** , el servidor de acceso de cliente
 
 
 
-[Operación de suscripción](subscribe-operation.md)
+[Operación subscribe](subscribe-operation.md)
   
-[Cancelar la operación de suscripción](unsubscribe-operation.md)
+[Operación unsubscribe](unsubscribe-operation.md)
 
 
-[Uso de las suscripciones de extracción](http://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
+[Uso de suscripciones de extracción](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
 

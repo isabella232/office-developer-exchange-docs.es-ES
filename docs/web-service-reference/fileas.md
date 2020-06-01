@@ -1,5 +1,5 @@
 ---
-title: Archivar como
+title: FileAs
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: df50524e-471c-49d2-89fe-b2d0f61a1365
-description: El elemento FileAs representa cómo se presenta una lista de contactos o de distribución en la carpeta Contactos.
-ms.openlocfilehash: dab9142eebf7691862e7970a7d1e8f5874393b94
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Fileas representa cómo se archiva un contacto o una lista de distribución en la carpeta contactos.
+ms.openlocfilehash: be756d86d7608fcb758dd54f2ada9f03a04343e2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764597"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461201"
 ---
-# <a name="fileas"></a>Archivar como
+# <a name="fileas"></a>FileAs
 
-El elemento **FileAs** representa cómo se presenta una lista de contactos o de distribución en la carpeta Contactos. 
+El elemento **fileas** representa cómo se archiva un contacto o una lista de distribución en la carpeta contactos. 
   
 ```xml
 <FileAs/>
@@ -30,45 +30,45 @@ El elemento **FileAs** representa cómo se presenta una lista de contactos o de 
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[DistributionList](distributionlist.md) <br/> |Representa una lista de distribución.  <br/> |
-|[Contact](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
+|[Contacto](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Si se usa este elemento, es necesario un valor de texto que representa una cadena.
+Si se usa este elemento, se necesita un valor de texto que represente una cadena.
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento **FileAs** se usa para ordenar los contactos y las listas de distribución por un nombre que no sea un nombre completo o el nombre de la compañía. 
+El elemento **fileas** se usa para ordenar los contactos y las listas de distribución por un nombre que no sea el nombre completo o el nombre de la compañía. 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

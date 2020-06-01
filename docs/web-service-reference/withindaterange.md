@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 226aeb15-016f-45ca-992a-c137ba09ca08
-description: El elemento WithinDateRange especifica el intervalo de fechas dentro del cual los mensajes entrantes tienen que se han recibido en orden para la condición o la excepción que se debe aplicar.
-ms.openlocfilehash: d85ef91c581008c2aafb06b1900c4514aebacd65
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento WithinDateRange especifica el intervalo de fechas en el que se deben recibir los mensajes entrantes para que se aplique la condición o excepción.
+ms.openlocfilehash: ef5fb15b64ee4f7060f907818c4ebd4367ced5e7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19841001"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461852"
 ---
 # <a name="withindaterange"></a>WithinDateRange
 
-El elemento **WithinDateRange** especifica el intervalo de fechas dentro del cual los mensajes entrantes tienen que se han recibido en orden para la condición o la excepción que se debe aplicar. 
+El elemento **WithinDateRange** especifica el intervalo de fechas en el que se deben recibir los mensajes entrantes para que se aplique la condición o excepción. 
   
 ```XML
 <WithinDateRange>
@@ -33,24 +33,24 @@ El elemento **WithinDateRange** especifica el intervalo de fechas dentro del cua
  **RulePredicateDateRangeType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[StartDateTime](startdatetime.md) <br/> |Especifica la regla de período de tiempo y se indica que se cumple la condición de regla después de este valor.  <br/> |
-|[EndDateTime](enddatetime.md) <br/> |Especifica la regla de período de tiempo y se indica que se cumple la condición de regla antes de este valor.  <br/> |
+|[StartDateTime](startdatetime.md) <br/> |Especifica el período de tiempo de la regla e indica que la condición de la regla se cumple después de este valor.  <br/> |
+|[EndDateTime](enddatetime.md) <br/> |Especifica el período de tiempo de la regla e indica que la condición de la regla se cumple antes que este valor.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Condiciones](conditions.md) <br/> |Representa las condiciones que, cuando se cumplen los requisitos, se activará las acciones de regla para una regla.  <br/> |
+|[Condiciones](conditions.md) <br/> |Representa las condiciones que, cuando se cumplan, desencadenarán las acciones de regla de una regla.  <br/> |
 |[Excepciones](exceptions.md) <br/> |Representa todas las condiciones de excepción de regla disponibles para una regla de bandeja de entrada.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
@@ -65,14 +65,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

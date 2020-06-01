@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8f5731eb-bed0-45bf-ba89-4aaf20c34a39
-description: El elemento AbsoluteDateTransition representa una transición de la zona horaria que se produce en una fecha específica y a una hora específica.
-ms.openlocfilehash: 1e9e5f3f2269814a82b827efe46c71a172e21348
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AbsoluteDateTransition representa una transición de zona horaria que se produce en una fecha específica y a una hora específica.
+ms.openlocfilehash: 514464f69c3be5496aedbe184848ef9ed9f296b9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763382"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461726"
 ---
 # <a name="absolutedatetransition"></a>AbsoluteDateTransition
 
-El elemento **AbsoluteDateTransition** representa una transición de la zona horaria que se produce en una fecha específica y a una hora específica. 
+El elemento **AbsoluteDateTransition** representa una transición de zona horaria que se produce en una fecha específica y a una hora específica. 
   
 ```xml
 <AbsoluteDateTransition>
@@ -34,22 +34,22 @@ El elemento **AbsoluteDateTransition** representa una transición de la zona hor
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[To](to.md) <br/> |Especifica el [período](period.md) o [TransitionsGroup](transitionsgroup.md) que es el destino de la transición de la zona horaria.  <br/> |
-|[DateTime](datetime.md) <br/> |Representa la fecha y hora en que se produce la transición de la zona horaria.  <br/> |
+|[To](to.md) <br/> |Especifica el [punto](period.md) o [TransitionsGroup](transitionsgroup.md) que es el destino de la transición de zona horaria.  <br/> |
+|[DateTime](datetime.md) <br/> |Representa la fecha y la hora en que se produce la transición de zona horaria.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Transiciones](transitions.md) <br/> |Representa una colección de transiciones de zona horaria.  <br/> |
 |[TransitionsGroup](transitionsgroup.md) <br/> |Representa una colección de transiciones de zona horaria.  <br/> |
@@ -62,12 +62,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
