@@ -12,68 +12,68 @@ api_type:
 - schema
 ms.assetid: 1fac7937-7a06-4d66-9d2a-14423bcb3b37
 description: El elemento StartTime representa el inicio de un intervalo de tiempo.
-ms.openlocfilehash: 4346797d755bb6e577e1cacb8bec656a7562bf1f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 16bee698b65dc512a709e2af9ddfe8629347fee3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837560"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458568"
 ---
-# <a name="starttime"></a><span data-ttu-id="e6c1c-103">StartTime</span><span class="sxs-lookup"><span data-stu-id="e6c1c-103">StartTime</span></span>
+# <a name="starttime"></a><span data-ttu-id="a4657-103">StartTime</span><span class="sxs-lookup"><span data-stu-id="a4657-103">StartTime</span></span>
 
-<span data-ttu-id="e6c1c-104">El elemento **StartTime** representa el inicio de un intervalo de tiempo.</span><span class="sxs-lookup"><span data-stu-id="e6c1c-104">The **StartTime** element represents the start of a time span.</span></span> 
+<span data-ttu-id="a4657-104">El elemento **startTime** representa el inicio de un intervalo de tiempo.</span><span class="sxs-lookup"><span data-stu-id="a4657-104">The **StartTime** element represents the start of a time span.</span></span> 
   
 ```xml
 <StartTime/
 ```
 
-<span data-ttu-id="e6c1c-105">**dateTime**</span><span class="sxs-lookup"><span data-stu-id="e6c1c-105">**dateTime**</span></span>
+<span data-ttu-id="a4657-105">**dateTime**</span><span class="sxs-lookup"><span data-stu-id="a4657-105">**dateTime**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="e6c1c-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="e6c1c-106">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="a4657-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="a4657-106">Attributes and elements</span></span>
 
-<span data-ttu-id="e6c1c-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="e6c1c-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="a4657-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="a4657-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="e6c1c-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="e6c1c-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="a4657-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="a4657-108">Attributes</span></span>
 
-<span data-ttu-id="e6c1c-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="e6c1c-109">None.</span></span>
+<span data-ttu-id="a4657-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="a4657-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="e6c1c-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="e6c1c-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="a4657-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="a4657-110">Child elements</span></span>
 
-<span data-ttu-id="e6c1c-111">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="e6c1c-111">None.</span></span>
+<span data-ttu-id="a4657-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="a4657-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="e6c1c-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="e6c1c-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="a4657-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="a4657-112">Parent elements</span></span>
 
-|<span data-ttu-id="e6c1c-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="e6c1c-113">**Element**</span></span>|<span data-ttu-id="e6c1c-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="e6c1c-114">**Description**</span></span>|
+|<span data-ttu-id="a4657-113">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="a4657-113">**Element**</span></span>|<span data-ttu-id="a4657-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="a4657-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="e6c1c-115">Ventana de tiempo</span><span class="sxs-lookup"><span data-stu-id="e6c1c-115">TimeWindow</span></span>](timewindow.md) <br/> |<span data-ttu-id="e6c1c-116">Identifica el intervalo de tiempo de consulta para la información de disponibilidad del usuario.</span><span class="sxs-lookup"><span data-stu-id="e6c1c-116">Identifies the time span queried for the user availability information.</span></span>  <br/><br/> <span data-ttu-id="e6c1c-117">La siguiente es la expresión de XPath para este elemento:</span><span class="sxs-lookup"><span data-stu-id="e6c1c-117">The following is the XPath expression to this element:</span></span>  <br/><br/>  `/GetUserAvailabilityRequest/FreeBusyViewOptions/TimeWindow` <br/> |
-|[<span data-ttu-id="e6c1c-118">DetailedSuggestionsWindow</span><span class="sxs-lookup"><span data-stu-id="e6c1c-118">DetailedSuggestionsWindow</span></span>](detailedsuggestionswindow.md) <br/> |<span data-ttu-id="e6c1c-119">Identifica el intervalo de tiempo que se consulta para obtener información detallada acerca de las horas de reunión sugerida.</span><span class="sxs-lookup"><span data-stu-id="e6c1c-119">Identifies the time span that is queried for detailed information about suggested meeting times.</span></span>  <br/><br/> <span data-ttu-id="e6c1c-120">La siguiente es la expresión de XPath para este elemento:</span><span class="sxs-lookup"><span data-stu-id="e6c1c-120">The following is the XPath expression to this element:</span></span> <br/> <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions/DetailedSuggestionsWindow` <br/> |
-|[<span data-ttu-id="e6c1c-121">Duración (UserOofSettings)</span><span class="sxs-lookup"><span data-stu-id="e6c1c-121">Duration (UserOofSettings)</span></span>](duration-useroofsettings.md) <br/> | <span data-ttu-id="e6c1c-122">Especifica la duración para la que está habilitado el estado de fuera de oficina (OOF) si el elemento [OofState](oofstate.md) está establecido en **programado**.</span><span class="sxs-lookup"><span data-stu-id="e6c1c-122">Specifies the duration for which the Out of Office (OOF) status is enabled if the [OofState](oofstate.md) element is set to **Scheduled**.</span></span>  <br/><br/>  <span data-ttu-id="e6c1c-123">Los siguientes son las expresiones de XPath posibles para este elemento:</span><span class="sxs-lookup"><span data-stu-id="e6c1c-123">The following are the possible XPath expressions to this element:</span></span> <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/Duration` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/Duration` <br/> |
-|[<span data-ttu-id="e6c1c-124">CalendarEvent</span><span class="sxs-lookup"><span data-stu-id="e6c1c-124">CalendarEvent</span></span>](calendarevent.md) <br/> |<span data-ttu-id="e6c1c-125">Representa una repetición del elemento de calendario único.</span><span class="sxs-lookup"><span data-stu-id="e6c1c-125">Represents a unique calendar item occurrence.</span></span> <span data-ttu-id="e6c1c-126">Se utiliza para las consultas de disponibilidad.</span><span class="sxs-lookup"><span data-stu-id="e6c1c-126">This is used for Availability inquiries.</span></span> <span data-ttu-id="e6c1c-127">El elemento **StartTime** es necesario en el elemento **CalendarEvent** .</span><span class="sxs-lookup"><span data-stu-id="e6c1c-127">The **StartTime** element is required in the **CalendarEvent** element.</span></span> <span data-ttu-id="e6c1c-128">El elemento **StartTime** en el elemento **CalendarEvent** es único para el tipo de **CalendarEvent** aunque contiene los mismos valores de faceta que contienen los elementos **StartTime** en el tipo de **duración** .</span><span class="sxs-lookup"><span data-stu-id="e6c1c-128">The **StartTime** element in the **CalendarEvent** element is unique to the **CalendarEvent** type although it contains the same facet values that the **StartTime** elements in the **Duration** type contain.</span></span>  <br/><br/> <span data-ttu-id="e6c1c-129">La siguiente es la expresión de XPath para este elemento:</span><span class="sxs-lookup"><span data-stu-id="e6c1c-129">The following is the XPath expression to this element:</span></span>  <br/> <br/> `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]` <br/> |
+|[<span data-ttu-id="a4657-115">TimeWindow</span><span class="sxs-lookup"><span data-stu-id="a4657-115">TimeWindow</span></span>](timewindow.md) <br/> |<span data-ttu-id="a4657-116">Identifica el intervalo de tiempo consultado para obtener la información de disponibilidad del usuario.</span><span class="sxs-lookup"><span data-stu-id="a4657-116">Identifies the time span queried for the user availability information.</span></span>  <br/><br/> <span data-ttu-id="a4657-117">La siguiente es la expresión XPath a este elemento:</span><span class="sxs-lookup"><span data-stu-id="a4657-117">The following is the XPath expression to this element:</span></span>  <br/><br/>  `/GetUserAvailabilityRequest/FreeBusyViewOptions/TimeWindow` <br/> |
+|[<span data-ttu-id="a4657-118">DetailedSuggestionsWindow</span><span class="sxs-lookup"><span data-stu-id="a4657-118">DetailedSuggestionsWindow</span></span>](detailedsuggestionswindow.md) <br/> |<span data-ttu-id="a4657-119">Identifica el intervalo de tiempo que se consulta para obtener información detallada sobre las horas de reunión sugeridas.</span><span class="sxs-lookup"><span data-stu-id="a4657-119">Identifies the time span that is queried for detailed information about suggested meeting times.</span></span>  <br/><br/> <span data-ttu-id="a4657-120">La siguiente es la expresión XPath a este elemento:</span><span class="sxs-lookup"><span data-stu-id="a4657-120">The following is the XPath expression to this element:</span></span> <br/> <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions/DetailedSuggestionsWindow` <br/> |
+|[<span data-ttu-id="a4657-121">Duración (UserOofSettings)</span><span class="sxs-lookup"><span data-stu-id="a4657-121">Duration (UserOofSettings)</span></span>](duration-useroofsettings.md) <br/> | <span data-ttu-id="a4657-122">Especifica el tiempo durante el que se habilita el estado fuera de la oficina si el elemento [OofState](oofstate.md) está establecido en **programado**.</span><span class="sxs-lookup"><span data-stu-id="a4657-122">Specifies the duration for which the Out of Office (OOF) status is enabled if the [OofState](oofstate.md) element is set to **Scheduled**.</span></span>  <br/><br/>  <span data-ttu-id="a4657-123">Las siguientes son las posibles expresiones de XPath a este elemento:</span><span class="sxs-lookup"><span data-stu-id="a4657-123">The following are the possible XPath expressions to this element:</span></span> <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/Duration` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/Duration` <br/> |
+|[<span data-ttu-id="a4657-124">CalendarEvent</span><span class="sxs-lookup"><span data-stu-id="a4657-124">CalendarEvent</span></span>](calendarevent.md) <br/> |<span data-ttu-id="a4657-125">Representa una ocurrencia única del elemento de calendario.</span><span class="sxs-lookup"><span data-stu-id="a4657-125">Represents a unique calendar item occurrence.</span></span> <span data-ttu-id="a4657-126">Se usa para las consultas de disponibilidad.</span><span class="sxs-lookup"><span data-stu-id="a4657-126">This is used for Availability inquiries.</span></span> <span data-ttu-id="a4657-127">El elemento **startTime** es obligatorio en el elemento **CalendarEvent** .</span><span class="sxs-lookup"><span data-stu-id="a4657-127">The **StartTime** element is required in the **CalendarEvent** element.</span></span> <span data-ttu-id="a4657-128">El elemento **startTime** del elemento **CalendarEvent** es único para el tipo **CalendarEvent** , aunque contiene los mismos valores de faceta que los elementos **startTime** en el tipo de **duración** .</span><span class="sxs-lookup"><span data-stu-id="a4657-128">The **StartTime** element in the **CalendarEvent** element is unique to the **CalendarEvent** type although it contains the same facet values that the **StartTime** elements in the **Duration** type contain.</span></span>  <br/><br/> <span data-ttu-id="a4657-129">La siguiente es la expresión XPath a este elemento:</span><span class="sxs-lookup"><span data-stu-id="a4657-129">The following is the XPath expression to this element:</span></span>  <br/> <br/> `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]` <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="e6c1c-130">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="e6c1c-130">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="a4657-130">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="a4657-130">Text value</span></span>
 
-<span data-ttu-id="e6c1c-131">Se requiere un valor de texto.</span><span class="sxs-lookup"><span data-stu-id="e6c1c-131">A text value is required.</span></span>
+<span data-ttu-id="a4657-131">Se requiere un valor de texto.</span><span class="sxs-lookup"><span data-stu-id="a4657-131">A text value is required.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="e6c1c-132">Comentarios</span><span class="sxs-lookup"><span data-stu-id="e6c1c-132">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a4657-132">Comentarios</span><span class="sxs-lookup"><span data-stu-id="a4657-132">Remarks</span></span>
 
-<span data-ttu-id="e6c1c-133">El elemento [EndTime](endtime.md) representa el final de un período de tiempo.</span><span class="sxs-lookup"><span data-stu-id="e6c1c-133">The [EndTime](endtime.md) element represents the end of the time span.</span></span> 
+<span data-ttu-id="a4657-133">El elemento [EndTime](endtime.md) representa el final del intervalo de tiempo.</span><span class="sxs-lookup"><span data-stu-id="a4657-133">The [EndTime](endtime.md) element represents the end of the time span.</span></span> 
   
-<span data-ttu-id="e6c1c-134">El esquema incluye muchos elementos [StartTime](starttime.md) .</span><span class="sxs-lookup"><span data-stu-id="e6c1c-134">The schema includes many [StartTime](starttime.md) elements.</span></span> 
+<span data-ttu-id="a4657-134">El esquema incluye muchos elementos [startTime](starttime.md) .</span><span class="sxs-lookup"><span data-stu-id="a4657-134">The schema includes many [StartTime](starttime.md) elements.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="e6c1c-135">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="e6c1c-135">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span> 
+> <span data-ttu-id="a4657-135">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="a4657-135">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span> 
   
-## <a name="element-information"></a><span data-ttu-id="e6c1c-136">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="e6c1c-136">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="a4657-136">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="a4657-136">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="e6c1c-137">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="e6c1c-137">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="e6c1c-138">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="e6c1c-138">Schema Name</span></span>  <br/> |<span data-ttu-id="e6c1c-139">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="e6c1c-139">Types schema</span></span>  <br/> |
-|<span data-ttu-id="e6c1c-140">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="e6c1c-140">Validation File</span></span>  <br/> |<span data-ttu-id="e6c1c-141">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="e6c1c-141">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="e6c1c-142">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="e6c1c-142">Can be Empty</span></span>  <br/> |<span data-ttu-id="e6c1c-143">False</span><span class="sxs-lookup"><span data-stu-id="e6c1c-143">False</span></span>  <br/> |
+|<span data-ttu-id="a4657-137">Namespace</span><span class="sxs-lookup"><span data-stu-id="a4657-137">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="a4657-138">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="a4657-138">Schema Name</span></span>  <br/> |<span data-ttu-id="a4657-139">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="a4657-139">Types schema</span></span>  <br/> |
+|<span data-ttu-id="a4657-140">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="a4657-140">Validation File</span></span>  <br/> |<span data-ttu-id="a4657-141">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="a4657-141">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="a4657-142">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="a4657-142">Can be Empty</span></span>  <br/> |<span data-ttu-id="a4657-143">Falso</span><span class="sxs-lookup"><span data-stu-id="a4657-143">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="e6c1c-144">Vea también</span><span class="sxs-lookup"><span data-stu-id="e6c1c-144">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a4657-144">Vea también</span><span class="sxs-lookup"><span data-stu-id="a4657-144">See also</span></span>
 
-- [<span data-ttu-id="e6c1c-145">Operación GetUserAvailability</span><span class="sxs-lookup"><span data-stu-id="e6c1c-145">GetUserAvailability operation</span></span>](getuseravailability-operation.md)
-- [<span data-ttu-id="e6c1c-146">Obtención de disponibilidad del usuario</span><span class="sxs-lookup"><span data-stu-id="e6c1c-146">Getting User Availability</span></span>](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [<span data-ttu-id="a4657-145">Operación GetUserAvailability</span><span class="sxs-lookup"><span data-stu-id="a4657-145">GetUserAvailability operation</span></span>](getuseravailability-operation.md)
+- [<span data-ttu-id="a4657-146">Obtener disponibilidad del usuario</span><span class="sxs-lookup"><span data-stu-id="a4657-146">Getting User Availability</span></span>](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

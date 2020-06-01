@@ -11,43 +11,43 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5501ddc0-3bfa-4da6-8e15-4223ca5499a3
-description: La operación GetRooms Obtiene las salas dentro de la lista de salas especificado.
-ms.openlocfilehash: 3718c476881ae8aa538646464e7c61845d849562
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación GetRooms obtiene las salas dentro de la lista de salas especificada.
+ms.openlocfilehash: 4cb124b96637b9fcdca15595faebb2ce4d304de0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764966"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460550"
 ---
-# <a name="getrooms-operation"></a><span data-ttu-id="0985a-103">Operación GetRooms</span><span class="sxs-lookup"><span data-stu-id="0985a-103">GetRooms operation</span></span>
+# <a name="getrooms-operation"></a><span data-ttu-id="43cba-103">Operación GetRooms</span><span class="sxs-lookup"><span data-stu-id="43cba-103">GetRooms operation</span></span>
 
-<span data-ttu-id="0985a-104">La operación **GetRooms** Obtiene las salas dentro de la lista de salas especificado.</span><span class="sxs-lookup"><span data-stu-id="0985a-104">The **GetRooms** operation gets the rooms within the specified room list.</span></span> 
+<span data-ttu-id="43cba-104">La operación **GetRooms** obtiene las salas dentro de la lista de salas especificada.</span><span class="sxs-lookup"><span data-stu-id="43cba-104">The **GetRooms** operation gets the rooms within the specified room list.</span></span> 
   
-## <a name="soap-headers"></a><span data-ttu-id="0985a-105">Encabezados SOAP</span><span class="sxs-lookup"><span data-stu-id="0985a-105">SOAP Headers</span></span>
+## <a name="soap-headers"></a><span data-ttu-id="43cba-105">Encabezados SOAP</span><span class="sxs-lookup"><span data-stu-id="43cba-105">SOAP Headers</span></span>
 
-<span data-ttu-id="0985a-106">La operación de **GetRooms** puede utilizar los encabezados SOAP que se enumeran y describen en la tabla siguiente.</span><span class="sxs-lookup"><span data-stu-id="0985a-106">The **GetRooms** operation can use the SOAP headers that are listed and described in the following table.</span></span> 
+<span data-ttu-id="43cba-106">La operación **GetRooms** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla.</span><span class="sxs-lookup"><span data-stu-id="43cba-106">The **GetRooms** operation can use the SOAP headers that are listed and described in the following table.</span></span> 
   
-|<span data-ttu-id="0985a-107">**Header**</span><span class="sxs-lookup"><span data-stu-id="0985a-107">**Header**</span></span>|<span data-ttu-id="0985a-108">**Element**</span><span class="sxs-lookup"><span data-stu-id="0985a-108">**Element**</span></span>|<span data-ttu-id="0985a-109">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="0985a-109">**Description**</span></span>|
+|<span data-ttu-id="43cba-107">**Header**</span><span class="sxs-lookup"><span data-stu-id="43cba-107">**Header**</span></span>|<span data-ttu-id="43cba-108">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="43cba-108">**Element**</span></span>|<span data-ttu-id="43cba-109">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="43cba-109">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="0985a-110">Suplantación</span><span class="sxs-lookup"><span data-stu-id="0985a-110">Impersonation</span></span>  <br/> |[<span data-ttu-id="0985a-111">ExchangeImpersonation</span><span class="sxs-lookup"><span data-stu-id="0985a-111">ExchangeImpersonation</span></span>](exchangeimpersonation.md) <br/> |<span data-ttu-id="0985a-112">Identifica el usuario que está realizando la suplantación de la aplicación cliente.</span><span class="sxs-lookup"><span data-stu-id="0985a-112">Identifies the user whom the client application is impersonating.</span></span>  <br/> |
-|<span data-ttu-id="0985a-113">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="0985a-113">MailboxCulture</span></span>  <br/> |[<span data-ttu-id="0985a-114">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="0985a-114">MailboxCulture</span></span>](mailboxculture.md) <br/> |<span data-ttu-id="0985a-115">Identifica la referencia cultural de RFC3066 va a usar para tener acceso al buzón.</span><span class="sxs-lookup"><span data-stu-id="0985a-115">Identifies the RFC3066 culture to be used to access the mailbox.</span></span>  <br/> |
-|<span data-ttu-id="0985a-116">RequestVersion</span><span class="sxs-lookup"><span data-stu-id="0985a-116">RequestVersion</span></span>  <br/> |[<span data-ttu-id="0985a-117">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="0985a-117">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="0985a-118">Identifica la versión del esquema para la solicitud de la operación.</span><span class="sxs-lookup"><span data-stu-id="0985a-118">Identifies the schema version for the operation request.</span></span>  <br/> |
-|<span data-ttu-id="0985a-119">ServerVersion</span><span class="sxs-lookup"><span data-stu-id="0985a-119">ServerVersion</span></span>  <br/> |[<span data-ttu-id="0985a-120">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="0985a-120">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="0985a-121">Identifica la versión del servidor que ha respondido a la solicitud.</span><span class="sxs-lookup"><span data-stu-id="0985a-121">Identifies the version of the server that responded to the request.</span></span>  <br/> |
+|<span data-ttu-id="43cba-110">Suplantación</span><span class="sxs-lookup"><span data-stu-id="43cba-110">Impersonation</span></span>  <br/> |[<span data-ttu-id="43cba-111">ExchangeImpersonation</span><span class="sxs-lookup"><span data-stu-id="43cba-111">ExchangeImpersonation</span></span>](exchangeimpersonation.md) <br/> |<span data-ttu-id="43cba-112">Identifica al usuario que está suplantando la aplicación cliente.</span><span class="sxs-lookup"><span data-stu-id="43cba-112">Identifies the user whom the client application is impersonating.</span></span>  <br/> |
+|<span data-ttu-id="43cba-113">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="43cba-113">MailboxCulture</span></span>  <br/> |[<span data-ttu-id="43cba-114">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="43cba-114">MailboxCulture</span></span>](mailboxculture.md) <br/> |<span data-ttu-id="43cba-115">Identifica la referencia cultural RFC3066 que se va a usar para obtener acceso al buzón.</span><span class="sxs-lookup"><span data-stu-id="43cba-115">Identifies the RFC3066 culture to be used to access the mailbox.</span></span>  <br/> |
+|<span data-ttu-id="43cba-116">RequestVersion</span><span class="sxs-lookup"><span data-stu-id="43cba-116">RequestVersion</span></span>  <br/> |[<span data-ttu-id="43cba-117">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="43cba-117">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="43cba-118">Identifica la versión del esquema para la solicitud de operación.</span><span class="sxs-lookup"><span data-stu-id="43cba-118">Identifies the schema version for the operation request.</span></span>  <br/> |
+|<span data-ttu-id="43cba-119">ServerVersion</span><span class="sxs-lookup"><span data-stu-id="43cba-119">ServerVersion</span></span>  <br/> |[<span data-ttu-id="43cba-120">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="43cba-120">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="43cba-121">Identifica la versión del servidor que respondió a la solicitud.</span><span class="sxs-lookup"><span data-stu-id="43cba-121">Identifies the version of the server that responded to the request.</span></span>  <br/> |
    
-## <a name="getrooms-request-example"></a><span data-ttu-id="0985a-122">Ejemplo de solicitud de GetRooms</span><span class="sxs-lookup"><span data-stu-id="0985a-122">GetRooms request example</span></span>
+## <a name="getrooms-request-example"></a><span data-ttu-id="43cba-122">Ejemplo de solicitud GetRooms</span><span class="sxs-lookup"><span data-stu-id="43cba-122">GetRooms request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="0985a-123">Descripción</span><span class="sxs-lookup"><span data-stu-id="0985a-123">Description</span></span>
+### <a name="description"></a><span data-ttu-id="43cba-123">Descripción</span><span class="sxs-lookup"><span data-stu-id="43cba-123">Description</span></span>
 
-<span data-ttu-id="0985a-124">El siguiente es un ejemplo de una solicitud de **GetRooms** que obtiene los salones que están asociados con una lista de salas.</span><span class="sxs-lookup"><span data-stu-id="0985a-124">The following is an example of a **GetRooms** request that gets the rooms that are associated with a room list.</span></span> 
+<span data-ttu-id="43cba-124">A continuación, se muestra un ejemplo de una solicitud de **GetRooms** que obtiene las salas asociadas con una lista de salas.</span><span class="sxs-lookup"><span data-stu-id="43cba-124">The following is an example of a **GetRooms** request that gets the rooms that are associated with a room list.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="0985a-125">Código</span><span class="sxs-lookup"><span data-stu-id="0985a-125">Code</span></span>
+### <a name="code"></a><span data-ttu-id="43cba-125">Código</span><span class="sxs-lookup"><span data-stu-id="43cba-125">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version ="Exchange2010_SP1"/>
   </soap:Header>
@@ -61,37 +61,37 @@ ms.locfileid: "19764966"
 
 ```
 
-### <a name="request-elements"></a><span data-ttu-id="0985a-126">Elementos de solicitud</span><span class="sxs-lookup"><span data-stu-id="0985a-126">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="43cba-126">Elementos de solicitud</span><span class="sxs-lookup"><span data-stu-id="43cba-126">Request elements</span></span>
 
-<span data-ttu-id="0985a-127">En la solicitud se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="0985a-127">The following elements are used in the request:</span></span>
+<span data-ttu-id="43cba-127">Los siguientes elementos se usan en la solicitud:</span><span class="sxs-lookup"><span data-stu-id="43cba-127">The following elements are used in the request:</span></span>
   
-- [<span data-ttu-id="0985a-128">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="0985a-128">RequestServerVersion</span></span>](requestserverversion.md)
+- [<span data-ttu-id="43cba-128">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="43cba-128">RequestServerVersion</span></span>](requestserverversion.md)
     
-- [<span data-ttu-id="0985a-129">GetRooms</span><span class="sxs-lookup"><span data-stu-id="0985a-129">GetRooms</span></span>](getrooms.md)
+- [<span data-ttu-id="43cba-129">GetRooms</span><span class="sxs-lookup"><span data-stu-id="43cba-129">GetRooms</span></span>](getrooms.md)
     
-- [<span data-ttu-id="0985a-130">RoomList</span><span class="sxs-lookup"><span data-stu-id="0985a-130">RoomList</span></span>](roomlist.md)
+- [<span data-ttu-id="43cba-130">RoomList</span><span class="sxs-lookup"><span data-stu-id="43cba-130">RoomList</span></span>](roomlist.md)
     
-- [<span data-ttu-id="0985a-131">EmailAddress (NonEmptyStringType)</span><span class="sxs-lookup"><span data-stu-id="0985a-131">EmailAddress (NonEmptyStringType)</span></span>](emailaddress-nonemptystringtype.md)
+- [<span data-ttu-id="43cba-131">EmailAddress (NonEmptyStringType)</span><span class="sxs-lookup"><span data-stu-id="43cba-131">EmailAddress (NonEmptyStringType)</span></span>](emailaddress-nonemptystringtype.md)
     
-## <a name="successful-getrooms-response-example"></a><span data-ttu-id="0985a-132">Ejemplo de respuesta correcta de GetRooms</span><span class="sxs-lookup"><span data-stu-id="0985a-132">Successful GetRooms response example</span></span>
+## <a name="successful-getrooms-response-example"></a><span data-ttu-id="43cba-132">Ejemplo de respuesta GetRooms correcta</span><span class="sxs-lookup"><span data-stu-id="43cba-132">Successful GetRooms response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="0985a-133">Descripción</span><span class="sxs-lookup"><span data-stu-id="0985a-133">Description</span></span>
+### <a name="description"></a><span data-ttu-id="43cba-133">Descripción</span><span class="sxs-lookup"><span data-stu-id="43cba-133">Description</span></span>
 
-<span data-ttu-id="0985a-134">La respuesta siguiente muestra la información de dirección de correo electrónico para los salones que están asociados con la lista de salas.</span><span class="sxs-lookup"><span data-stu-id="0985a-134">The following response shows the email address information for the rooms that are associated with the room list.</span></span>
+<span data-ttu-id="43cba-134">La siguiente respuesta muestra la información de la dirección de correo electrónico de las salas asociadas con la lista de salas.</span><span class="sxs-lookup"><span data-stu-id="43cba-134">The following response shows the email address information for the rooms that are associated with the room list.</span></span>
   
-### <a name="code"></a><span data-ttu-id="0985a-135">Código</span><span class="sxs-lookup"><span data-stu-id="0985a-135">Code</span></span>
+### <a name="code"></a><span data-ttu-id="43cba-135">Código</span><span class="sxs-lookup"><span data-stu-id="43cba-135">Code</span></span>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="14" MinorVersion="1" MajorBuildNumber="164" MinorBuildNumber="0" Version="Exchange2010_SP1" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+    <h:ServerVersionInfo MajorVersion="14" MinorVersion="1" MajorBuildNumber="164" MinorBuildNumber="0" Version="Exchange2010_SP1" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <GetRoomsResponse ResponseClass="Success" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetRoomsResponse ResponseClass="Success" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
-      <m:Rooms xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
-        <t:Room xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:Rooms xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
+        <t:Room xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
           <t:Id>
             <t:Name>Room01</t:Name>
             <t:EmailAddress>Room01@contoso.com</t:EmailAddress>
@@ -99,7 +99,7 @@ ms.locfileid: "19764966"
             <t:MailboxType>Mailbox</t:MailboxType>
           </t:Id>
         </t:Room>
-        <t:Room xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+        <t:Room xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
           <t:Id>
             <t:Name>Room02</t:Name>
             <t:EmailAddress>Room02@contoso.com</t:EmailAddress>
@@ -113,44 +113,44 @@ ms.locfileid: "19764966"
 </s:Envelope>
 ```
 
-### <a name="successful-getrooms-response-elements"></a><span data-ttu-id="0985a-136">Elementos de respuesta correctos de GetRooms</span><span class="sxs-lookup"><span data-stu-id="0985a-136">Successful GetRooms response elements</span></span>
+### <a name="successful-getrooms-response-elements"></a><span data-ttu-id="43cba-136">Elementos de respuesta GetRooms correctos</span><span class="sxs-lookup"><span data-stu-id="43cba-136">Successful GetRooms response elements</span></span>
 
-<span data-ttu-id="0985a-137">En la respuesta se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="0985a-137">The following elements are used in the response:</span></span>
+<span data-ttu-id="43cba-137">En la respuesta se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="43cba-137">The following elements are used in the response:</span></span>
   
-- [<span data-ttu-id="0985a-138">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="0985a-138">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="43cba-138">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="43cba-138">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="0985a-139">GetRoomsResponse</span><span class="sxs-lookup"><span data-stu-id="0985a-139">GetRoomsResponse</span></span>](getroomsresponse.md)
+- [<span data-ttu-id="43cba-139">GetRoomsResponse</span><span class="sxs-lookup"><span data-stu-id="43cba-139">GetRoomsResponse</span></span>](getroomsresponse.md)
     
-- [<span data-ttu-id="0985a-140">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="0985a-140">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="43cba-140">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="43cba-140">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="0985a-141">Salones</span><span class="sxs-lookup"><span data-stu-id="0985a-141">Rooms</span></span>](rooms.md)
+- [<span data-ttu-id="43cba-141">Sala</span><span class="sxs-lookup"><span data-stu-id="43cba-141">Rooms</span></span>](rooms.md)
     
-- [<span data-ttu-id="0985a-142">Salón</span><span class="sxs-lookup"><span data-stu-id="0985a-142">Room</span></span>](room.md)
+- [<span data-ttu-id="43cba-142">Sala</span><span class="sxs-lookup"><span data-stu-id="43cba-142">Room</span></span>](room.md)
     
-- [<span data-ttu-id="0985a-143">Nombre (EmailAddress)</span><span class="sxs-lookup"><span data-stu-id="0985a-143">Name (EmailAddress)</span></span>](name-emailaddress.md)
+- [<span data-ttu-id="43cba-143">Nombre (EmailAddress)</span><span class="sxs-lookup"><span data-stu-id="43cba-143">Name (EmailAddress)</span></span>](name-emailaddress.md)
     
-- [<span data-ttu-id="0985a-144">EmailAddress (NonEmptyStringType)</span><span class="sxs-lookup"><span data-stu-id="0985a-144">EmailAddress (NonEmptyStringType)</span></span>](emailaddress-nonemptystringtype.md)
+- [<span data-ttu-id="43cba-144">EmailAddress (NonEmptyStringType)</span><span class="sxs-lookup"><span data-stu-id="43cba-144">EmailAddress (NonEmptyStringType)</span></span>](emailaddress-nonemptystringtype.md)
     
-- [<span data-ttu-id="0985a-145">RoutingType (EmailAddress)</span><span class="sxs-lookup"><span data-stu-id="0985a-145">RoutingType (EmailAddress)</span></span>](routingtype-emailaddress.md)
+- [<span data-ttu-id="43cba-145">RoutingType (EmailAddress)</span><span class="sxs-lookup"><span data-stu-id="43cba-145">RoutingType (EmailAddress)</span></span>](routingtype-emailaddress.md)
     
-- [<span data-ttu-id="0985a-146">MailboxType</span><span class="sxs-lookup"><span data-stu-id="0985a-146">MailboxType</span></span>](mailboxtype.md)
+- [<span data-ttu-id="43cba-146">MailboxType</span><span class="sxs-lookup"><span data-stu-id="43cba-146">MailboxType</span></span>](mailboxtype.md)
     
-## <a name="getrooms-error-response-example"></a><span data-ttu-id="0985a-147">Ejemplo de respuesta de GetRooms Error</span><span class="sxs-lookup"><span data-stu-id="0985a-147">GetRooms Error response example</span></span>
+## <a name="getrooms-error-response-example"></a><span data-ttu-id="43cba-147">Ejemplo de respuesta de error GetRooms</span><span class="sxs-lookup"><span data-stu-id="43cba-147">GetRooms Error response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="0985a-148">Descripción</span><span class="sxs-lookup"><span data-stu-id="0985a-148">Description</span></span>
+### <a name="description"></a><span data-ttu-id="43cba-148">Descripción</span><span class="sxs-lookup"><span data-stu-id="43cba-148">Description</span></span>
 
-<span data-ttu-id="0985a-149">En el ejemplo siguiente se muestra una respuesta de error debida a un intento de obtener información sobre las salas para una lista de salas que no existe.</span><span class="sxs-lookup"><span data-stu-id="0985a-149">The following example shows an error response caused by an attempt to get room information for a nonexistent room list.</span></span>
+<span data-ttu-id="43cba-149">En el ejemplo siguiente se muestra una respuesta de error causada por un intento de obtener información de la sala para una lista de salas inexistente.</span><span class="sxs-lookup"><span data-stu-id="43cba-149">The following example shows an error response caused by an attempt to get room information for a nonexistent room list.</span></span>
   
-### <a name="code"></a><span data-ttu-id="0985a-150">Código</span><span class="sxs-lookup"><span data-stu-id="0985a-150">Code</span></span>
+### <a name="code"></a><span data-ttu-id="43cba-150">Código</span><span class="sxs-lookup"><span data-stu-id="43cba-150">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="14" MinorVersion="1" MajorBuildNumber="164" MinorBuildNumber="0" Version="Exchange2010_SP1" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+    <h:ServerVersionInfo MajorVersion="14" MinorVersion="1" MajorBuildNumber="164" MinorBuildNumber="0" Version="Exchange2010_SP1" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <GetRoomsResponse ResponseClass="Error" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetRoomsResponse ResponseClass="Error" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <MessageText>No results were found.</MessageText>
       <ResponseCode>ErrorNameResolutionNoResults</ResponseCode>
       <DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -159,22 +159,22 @@ ms.locfileid: "19764966"
 </s:Envelope>
 ```
 
-### <a name="getrooms-error-response-elements"></a><span data-ttu-id="0985a-151">Elementos de respuesta de GetRooms Error</span><span class="sxs-lookup"><span data-stu-id="0985a-151">GetRooms Error response elements</span></span>
+### <a name="getrooms-error-response-elements"></a><span data-ttu-id="43cba-151">Elementos de respuesta de error de GetRooms</span><span class="sxs-lookup"><span data-stu-id="43cba-151">GetRooms Error response elements</span></span>
 
-<span data-ttu-id="0985a-152">En la respuesta se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="0985a-152">The following elements are used in the response:</span></span>
+<span data-ttu-id="43cba-152">En la respuesta se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="43cba-152">The following elements are used in the response:</span></span>
   
-- [<span data-ttu-id="0985a-153">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="0985a-153">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="43cba-153">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="43cba-153">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="0985a-154">GetRoomsResponse</span><span class="sxs-lookup"><span data-stu-id="0985a-154">GetRoomsResponse</span></span>](getroomsresponse.md)
+- [<span data-ttu-id="43cba-154">GetRoomsResponse</span><span class="sxs-lookup"><span data-stu-id="43cba-154">GetRoomsResponse</span></span>](getroomsresponse.md)
     
-- [<span data-ttu-id="0985a-155">MessageText</span><span class="sxs-lookup"><span data-stu-id="0985a-155">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="43cba-155">MessageText</span><span class="sxs-lookup"><span data-stu-id="43cba-155">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="0985a-156">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="0985a-156">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="43cba-156">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="43cba-156">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="0985a-157">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="0985a-157">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="43cba-157">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="43cba-157">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-## <a name="see-also"></a><span data-ttu-id="0985a-158">Vea también</span><span class="sxs-lookup"><span data-stu-id="0985a-158">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="43cba-158">Vea también</span><span class="sxs-lookup"><span data-stu-id="43cba-158">See also</span></span>
 
-- [<span data-ttu-id="0985a-159">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="0985a-159">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
-- [<span data-ttu-id="0985a-160">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="0985a-160">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="43cba-159">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="43cba-159">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+- [<span data-ttu-id="43cba-160">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="43cba-160">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

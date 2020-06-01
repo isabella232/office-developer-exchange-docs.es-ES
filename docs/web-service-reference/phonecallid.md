@@ -11,61 +11,61 @@ api_name:
 api_type:
 - schema
 ms.assetid: 79e31a4c-fc84-4802-8761-470df8d63694
-description: El elemento PhoneCallId especifica el identificador de una llamada telefónica. Se requiere este elemento.
-ms.openlocfilehash: 1886d9510fe254c016779166efccc9882fd77d2c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PhoneCallId especifica el identificador de una llamada de teléfono. Se requiere este elemento.
+ms.openlocfilehash: 3e4b9dba5e8be6e45a0c16508531fbc6cf91c170
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836757"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459703"
 ---
-# <a name="phonecallid"></a><span data-ttu-id="c2ecb-104">PhoneCallId</span><span class="sxs-lookup"><span data-stu-id="c2ecb-104">PhoneCallId</span></span>
+# <a name="phonecallid"></a><span data-ttu-id="ca5e4-104">PhoneCallId</span><span class="sxs-lookup"><span data-stu-id="ca5e4-104">PhoneCallId</span></span>
 
-<span data-ttu-id="c2ecb-105">El elemento **PhoneCallId** especifica el identificador de una llamada telefónica.</span><span class="sxs-lookup"><span data-stu-id="c2ecb-105">The **PhoneCallId** element specifies the identifier of a phone call.</span></span> <span data-ttu-id="c2ecb-106">Se requiere este elemento.</span><span class="sxs-lookup"><span data-stu-id="c2ecb-106">This element is required.</span></span> 
+<span data-ttu-id="ca5e4-105">El elemento **PhoneCallId** especifica el identificador de una llamada de teléfono.</span><span class="sxs-lookup"><span data-stu-id="ca5e4-105">The **PhoneCallId** element specifies the identifier of a phone call.</span></span> <span data-ttu-id="ca5e4-106">Se requiere este elemento.</span><span class="sxs-lookup"><span data-stu-id="ca5e4-106">This element is required.</span></span> 
   
 ```xml
 <PhoneCallId Id="" />
 ```
 
- <span data-ttu-id="c2ecb-107">**PhoneCallIdType**</span><span class="sxs-lookup"><span data-stu-id="c2ecb-107">**PhoneCallIdType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="c2ecb-108">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="c2ecb-108">Attributes and elements</span></span>
+ <span data-ttu-id="ca5e4-107">**PhoneCallIdType**</span><span class="sxs-lookup"><span data-stu-id="ca5e4-107">**PhoneCallIdType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="ca5e4-108">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="ca5e4-108">Attributes and elements</span></span>
 
-<span data-ttu-id="c2ecb-109">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="c2ecb-109">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="ca5e4-109">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="ca5e4-109">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="c2ecb-110">Atributos</span><span class="sxs-lookup"><span data-stu-id="c2ecb-110">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="ca5e4-110">Atributos</span><span class="sxs-lookup"><span data-stu-id="ca5e4-110">Attributes</span></span>
 
-|<span data-ttu-id="c2ecb-111">**Attribute**</span><span class="sxs-lookup"><span data-stu-id="c2ecb-111">**Attribute**</span></span>|<span data-ttu-id="c2ecb-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="c2ecb-112">**Description**</span></span>|
+|<span data-ttu-id="ca5e4-111">**Atributo**</span><span class="sxs-lookup"><span data-stu-id="ca5e4-111">**Attribute**</span></span>|<span data-ttu-id="ca5e4-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="ca5e4-112">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="c2ecb-113">Id</span><span class="sxs-lookup"><span data-stu-id="c2ecb-113">Id</span></span>  <br/> |<span data-ttu-id="c2ecb-114">Identifica la llamada de teléfono a desconectar.</span><span class="sxs-lookup"><span data-stu-id="c2ecb-114">Identifies the phone call to disconnect.</span></span> <span data-ttu-id="c2ecb-115">Este atributo es necesario.</span><span class="sxs-lookup"><span data-stu-id="c2ecb-115">This attribute is required.</span></span>  <br/> |
+|<span data-ttu-id="ca5e4-113">Id</span><span class="sxs-lookup"><span data-stu-id="ca5e4-113">Id</span></span>  <br/> |<span data-ttu-id="ca5e4-114">Identifica la llamada telefónica que se va a desconectar.</span><span class="sxs-lookup"><span data-stu-id="ca5e4-114">Identifies the phone call to disconnect.</span></span> <span data-ttu-id="ca5e4-115">Este atributo es obligatorio.</span><span class="sxs-lookup"><span data-stu-id="ca5e4-115">This attribute is required.</span></span>  <br/> |
    
-### <a name="child-elements"></a><span data-ttu-id="c2ecb-116">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="c2ecb-116">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="ca5e4-116">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="ca5e4-116">Child elements</span></span>
 
-<span data-ttu-id="c2ecb-117">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="c2ecb-117">None.</span></span>
+<span data-ttu-id="ca5e4-117">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="ca5e4-117">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="c2ecb-118">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="c2ecb-118">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="ca5e4-118">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="ca5e4-118">Parent elements</span></span>
 
-|<span data-ttu-id="c2ecb-119">**Element**</span><span class="sxs-lookup"><span data-stu-id="c2ecb-119">**Element**</span></span>|<span data-ttu-id="c2ecb-120">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="c2ecb-120">**Description**</span></span>|
+|<span data-ttu-id="ca5e4-119">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="ca5e4-119">**Element**</span></span>|<span data-ttu-id="ca5e4-120">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="ca5e4-120">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="c2ecb-121">DisconnectPhoneCall</span><span class="sxs-lookup"><span data-stu-id="c2ecb-121">DisconnectPhoneCall</span></span>](disconnectphonecall.md) <br/> |<span data-ttu-id="c2ecb-122">Representa una solicitud para desconectar la llamada.</span><span class="sxs-lookup"><span data-stu-id="c2ecb-122">Represents a request to disconnect a call.</span></span>  <br/> |
-|[<span data-ttu-id="c2ecb-123">GetPhoneCallInformation</span><span class="sxs-lookup"><span data-stu-id="c2ecb-123">GetPhoneCallInformation</span></span>](getphonecallinformation.md) <br/> |<span data-ttu-id="c2ecb-124">Representa una solicitud para obtener información de la llamada de teléfono.</span><span class="sxs-lookup"><span data-stu-id="c2ecb-124">Represents a request to get telephone call information.</span></span>  <br/> |
-|[<span data-ttu-id="c2ecb-125">PlayOnPhoneResponse (servicios Web de Exchange)</span><span class="sxs-lookup"><span data-stu-id="c2ecb-125">PlayOnPhoneResponse (Exchange Web Services)</span></span>](playonphoneresponse-exchange-web-services.md) <br/> |<span data-ttu-id="c2ecb-126">Define una respuesta a una solicitud de PlayOnPhone.</span><span class="sxs-lookup"><span data-stu-id="c2ecb-126">Defines a response to a PlayOnPhone request.</span></span>  <br/> |
+|[<span data-ttu-id="ca5e4-121">DisconnectPhoneCall</span><span class="sxs-lookup"><span data-stu-id="ca5e4-121">DisconnectPhoneCall</span></span>](disconnectphonecall.md) <br/> |<span data-ttu-id="ca5e4-122">Representa una solicitud para desconectar una llamada.</span><span class="sxs-lookup"><span data-stu-id="ca5e4-122">Represents a request to disconnect a call.</span></span>  <br/> |
+|[<span data-ttu-id="ca5e4-123">GetPhoneCallInformation</span><span class="sxs-lookup"><span data-stu-id="ca5e4-123">GetPhoneCallInformation</span></span>](getphonecallinformation.md) <br/> |<span data-ttu-id="ca5e4-124">Representa una solicitud para obtener información sobre llamadas telefónicas.</span><span class="sxs-lookup"><span data-stu-id="ca5e4-124">Represents a request to get telephone call information.</span></span>  <br/> |
+|[<span data-ttu-id="ca5e4-125">PlayOnPhoneResponse (servicios web Exchange)</span><span class="sxs-lookup"><span data-stu-id="ca5e4-125">PlayOnPhoneResponse (Exchange Web Services)</span></span>](playonphoneresponse-exchange-web-services.md) <br/> |<span data-ttu-id="ca5e4-126">Define una respuesta a una solicitud reproducir.</span><span class="sxs-lookup"><span data-stu-id="ca5e4-126">Defines a response to a PlayOnPhone request.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="c2ecb-127">Comentarios</span><span class="sxs-lookup"><span data-stu-id="c2ecb-127">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ca5e4-127">Comentarios</span><span class="sxs-lookup"><span data-stu-id="ca5e4-127">Remarks</span></span>
 
-<span data-ttu-id="c2ecb-128">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="c2ecb-128">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2010 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="ca5e4-128">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="ca5e4-128">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2010 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="c2ecb-129">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="c2ecb-129">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="ca5e4-129">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="ca5e4-129">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="c2ecb-130">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="c2ecb-130">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="c2ecb-131">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="c2ecb-131">Schema Name</span></span>  <br/> |<span data-ttu-id="c2ecb-132">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="c2ecb-132">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="c2ecb-133">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="c2ecb-133">Validation File</span></span>  <br/> |<span data-ttu-id="c2ecb-134">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="c2ecb-134">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="c2ecb-135">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="c2ecb-135">Can be Empty</span></span>  <br/> |<span data-ttu-id="c2ecb-136">False</span><span class="sxs-lookup"><span data-stu-id="c2ecb-136">False</span></span>  <br/> |
+|<span data-ttu-id="ca5e4-130">Namespace</span><span class="sxs-lookup"><span data-stu-id="ca5e4-130">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="ca5e4-131">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="ca5e4-131">Schema Name</span></span>  <br/> |<span data-ttu-id="ca5e4-132">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="ca5e4-132">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="ca5e4-133">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="ca5e4-133">Validation File</span></span>  <br/> |<span data-ttu-id="ca5e4-134">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="ca5e4-134">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="ca5e4-135">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="ca5e4-135">Can be Empty</span></span>  <br/> |<span data-ttu-id="ca5e4-136">Falso</span><span class="sxs-lookup"><span data-stu-id="ca5e4-136">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="c2ecb-137">Vea también</span><span class="sxs-lookup"><span data-stu-id="c2ecb-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ca5e4-137">Vea también</span><span class="sxs-lookup"><span data-stu-id="ca5e4-137">See also</span></span>
 
 
 
-- [<span data-ttu-id="c2ecb-138">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="c2ecb-138">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="ca5e4-138">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="ca5e4-138">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

@@ -11,60 +11,60 @@ api_name:
 api_type:
 - schema
 ms.assetid: 62b700e1-88c7-41ef-b431-d7af4a8b54a7
-description: El elemento de símbolo (token) contiene datos cifrados que representa el símbolo (token) de identificación para los datos compartidos.
-ms.openlocfilehash: cec11d9f2c24a250483c5be6e273f981fdf0a8e6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento token contiene datos cifrados que representan el token de identificación para los datos compartidos.
+ms.openlocfilehash: c2e80082f9b4ecb96defdca8c5f0223a945661ba
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840697"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458911"
 ---
-# <a name="token"></a><span data-ttu-id="024a7-103">Token</span><span class="sxs-lookup"><span data-stu-id="024a7-103">Token</span></span>
+# <a name="token"></a><span data-ttu-id="6d1f5-103">Token</span><span class="sxs-lookup"><span data-stu-id="6d1f5-103">Token</span></span>
 
-<span data-ttu-id="024a7-104">El elemento de **símbolo (token)** contiene datos cifrados que representa el símbolo (token) de identificación para los datos compartidos.</span><span class="sxs-lookup"><span data-stu-id="024a7-104">The **Token** element contains encrypted data that represents the identification token for the shared data.</span></span> 
+<span data-ttu-id="6d1f5-104">El elemento **token** contiene datos cifrados que representan el token de identificación para los datos compartidos.</span><span class="sxs-lookup"><span data-stu-id="6d1f5-104">The **Token** element contains encrypted data that represents the identification token for the shared data.</span></span> 
   
 ```xml
 <Token/>
 ```
 
- <span data-ttu-id="024a7-105">**EncryptedDataContainerType**</span><span class="sxs-lookup"><span data-stu-id="024a7-105">**EncryptedDataContainerType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="024a7-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="024a7-106">Attributes and elements</span></span>
+ <span data-ttu-id="6d1f5-105">**EncryptedDataContainerType**</span><span class="sxs-lookup"><span data-stu-id="6d1f5-105">**EncryptedDataContainerType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="6d1f5-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="6d1f5-106">Attributes and elements</span></span>
 
-<span data-ttu-id="024a7-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="024a7-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="6d1f5-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="6d1f5-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="024a7-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="024a7-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="6d1f5-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="6d1f5-108">Attributes</span></span>
 
-<span data-ttu-id="024a7-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="024a7-109">None.</span></span>
+<span data-ttu-id="6d1f5-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="6d1f5-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="024a7-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="024a7-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="6d1f5-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="6d1f5-110">Child elements</span></span>
 
-<span data-ttu-id="024a7-111">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="024a7-111">None.</span></span>
+<span data-ttu-id="6d1f5-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="6d1f5-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="024a7-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="024a7-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="6d1f5-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="6d1f5-112">Parent elements</span></span>
 
-|<span data-ttu-id="024a7-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="024a7-113">**Element**</span></span>|<span data-ttu-id="024a7-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="024a7-114">**Description**</span></span>|
+|<span data-ttu-id="6d1f5-113">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="6d1f5-113">**Element**</span></span>|<span data-ttu-id="6d1f5-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="6d1f5-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="024a7-115">EncryptedSharedFolderData</span><span class="sxs-lookup"><span data-stu-id="024a7-115">EncryptedSharedFolderData</span></span>](encryptedsharedfolderdata.md) <br/> |<span data-ttu-id="024a7-116">Contiene los datos cifrados que un cliente puede usar para autorizar el uso compartido de su calendario o póngase en contacto con datos con otros clientes.</span><span class="sxs-lookup"><span data-stu-id="024a7-116">Contains the encrypted data that a client can use to authorize the sharing of its calendar or contact data with other clients.</span></span>  <br/> |
+|[<span data-ttu-id="6d1f5-115">EncryptedSharedFolderData</span><span class="sxs-lookup"><span data-stu-id="6d1f5-115">EncryptedSharedFolderData</span></span>](encryptedsharedfolderdata.md) <br/> |<span data-ttu-id="6d1f5-116">Contiene los datos cifrados que un cliente puede usar para autorizar el uso compartido de sus datos de contacto o calendario con otros clientes.</span><span class="sxs-lookup"><span data-stu-id="6d1f5-116">Contains the encrypted data that a client can use to authorize the sharing of its calendar or contact data with other clients.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="024a7-117">Comentarios</span><span class="sxs-lookup"><span data-stu-id="024a7-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6d1f5-117">Comentarios</span><span class="sxs-lookup"><span data-stu-id="6d1f5-117">Remarks</span></span>
 
-<span data-ttu-id="024a7-118">El esquema que describe este elemento se encuentra en el directorio Virtual de IIS que hospeda los servicios Web Exchange del equipo que ejecuta a Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="024a7-118">The schema that describes this element is located in the IIS Virtual directory that hosts Exchange Web Services of the computer that is running Microsoft Exchange Server that has the Client Access server role installed.</span></span>
+<span data-ttu-id="6d1f5-118">El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda los servicios Web de Exchange del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="6d1f5-118">The schema that describes this element is located in the IIS Virtual directory that hosts Exchange Web Services of the computer that is running Microsoft Exchange Server that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="024a7-119">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="024a7-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="6d1f5-119">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="6d1f5-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="024a7-120">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="024a7-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="024a7-121">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="024a7-121">Schema Name</span></span>  <br/> |<span data-ttu-id="024a7-122">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="024a7-122">Types schema</span></span>  <br/> |
-|<span data-ttu-id="024a7-123">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="024a7-123">Validation File</span></span>  <br/> |<span data-ttu-id="024a7-124">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="024a7-124">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="024a7-125">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="024a7-125">Can be Empty</span></span>  <br/> |<span data-ttu-id="024a7-126">False</span><span class="sxs-lookup"><span data-stu-id="024a7-126">False</span></span>  <br/> |
+|<span data-ttu-id="6d1f5-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="6d1f5-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="6d1f5-121">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="6d1f5-121">Schema Name</span></span>  <br/> |<span data-ttu-id="6d1f5-122">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="6d1f5-122">Types schema</span></span>  <br/> |
+|<span data-ttu-id="6d1f5-123">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="6d1f5-123">Validation File</span></span>  <br/> |<span data-ttu-id="6d1f5-124">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="6d1f5-124">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="6d1f5-125">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="6d1f5-125">Can be Empty</span></span>  <br/> |<span data-ttu-id="6d1f5-126">Falso</span><span class="sxs-lookup"><span data-stu-id="6d1f5-126">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="024a7-127">Vea también</span><span class="sxs-lookup"><span data-stu-id="024a7-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6d1f5-127">Vea también</span><span class="sxs-lookup"><span data-stu-id="6d1f5-127">See also</span></span>
 
 
 
-[<span data-ttu-id="024a7-128">Operación GetSharingMetadata</span><span class="sxs-lookup"><span data-stu-id="024a7-128">GetSharingMetadata operation</span></span>](getsharingmetadata-operation.md)
+[<span data-ttu-id="6d1f5-128">Operación GetSharingMetadata</span><span class="sxs-lookup"><span data-stu-id="6d1f5-128">GetSharingMetadata operation</span></span>](getsharingmetadata-operation.md)
 
 
-- [<span data-ttu-id="024a7-129">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="024a7-129">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="6d1f5-129">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="6d1f5-129">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

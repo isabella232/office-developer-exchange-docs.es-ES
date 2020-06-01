@@ -1,5 +1,5 @@
 ---
-title: Identificadores de usuario
+title: UserIds
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 78a09c3a-1646-4c55-95a2-1109fb11e1c6
-description: Elemento contiene una matriz de los identificadores de usuario delegan a los usuarios obtener o quitar de buzón de una entidad de seguridad. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).
-ms.openlocfilehash: 277ae96fdbc30f1b39ef20553e10ff1de3ff7a8b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UserIds contiene una matriz de usuarios delegados para obtener o quitar del buzón de la entidad de la identidad. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).
+ms.openlocfilehash: de4661226c154ef0d2d5ac55c57405e20c4d2aee
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840912"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459780"
 ---
-# <a name="userids"></a><span data-ttu-id="7cabf-104">Identificadores de usuario</span><span class="sxs-lookup"><span data-stu-id="7cabf-104">UserIds</span></span>
+# <a name="userids"></a><span data-ttu-id="c405c-104">UserIds</span><span class="sxs-lookup"><span data-stu-id="c405c-104">UserIds</span></span>
 
-<span data-ttu-id="7cabf-105">El elemento de **identificadores de usuario** contiene una matriz de delegado a los usuarios obtener o quitar de buzón de una entidad de seguridad.</span><span class="sxs-lookup"><span data-stu-id="7cabf-105">The **UserIds** element contains an array of delegate users to get or remove from a principal's mailbox.</span></span> <span data-ttu-id="7cabf-106">Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).</span><span class="sxs-lookup"><span data-stu-id="7cabf-106">This element was introduced in Microsoft Exchange Server 2007 Service Pack 1 (SP1).</span></span> 
+<span data-ttu-id="c405c-105">El elemento **userids** contiene una matriz de usuarios delegados para obtener o quitar del buzón de la entidad de la identidad.</span><span class="sxs-lookup"><span data-stu-id="c405c-105">The **UserIds** element contains an array of delegate users to get or remove from a principal's mailbox.</span></span> <span data-ttu-id="c405c-106">Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).</span><span class="sxs-lookup"><span data-stu-id="c405c-106">This element was introduced in Microsoft Exchange Server 2007 Service Pack 1 (SP1).</span></span> 
   
 ```xml
 <UserIds>
@@ -29,49 +29,49 @@ ms.locfileid: "19840912"
 </UserIds>
 ```
 
- <span data-ttu-id="7cabf-107">**ArrayOfUserIdType**</span><span class="sxs-lookup"><span data-stu-id="7cabf-107">**ArrayOfUserIdType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="7cabf-108">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="7cabf-108">Attributes and elements</span></span>
+ <span data-ttu-id="c405c-107">**ArrayOfUserIdType**</span><span class="sxs-lookup"><span data-stu-id="c405c-107">**ArrayOfUserIdType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="c405c-108">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="c405c-108">Attributes and elements</span></span>
 
-<span data-ttu-id="7cabf-109">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="7cabf-109">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="c405c-109">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="c405c-109">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="7cabf-110">Atributos</span><span class="sxs-lookup"><span data-stu-id="7cabf-110">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="c405c-110">Atributos</span><span class="sxs-lookup"><span data-stu-id="c405c-110">Attributes</span></span>
 
-<span data-ttu-id="7cabf-111">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="7cabf-111">None.</span></span>
+<span data-ttu-id="c405c-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="c405c-111">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="7cabf-112">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="7cabf-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="c405c-112">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="c405c-112">Child elements</span></span>
 
-|<span data-ttu-id="7cabf-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="7cabf-113">**Element**</span></span>|<span data-ttu-id="7cabf-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="7cabf-114">**Description**</span></span>|
+|<span data-ttu-id="c405c-113">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="c405c-113">**Element**</span></span>|<span data-ttu-id="c405c-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="c405c-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="7cabf-115">UserId</span><span class="sxs-lookup"><span data-stu-id="7cabf-115">UserId</span></span>](userid.md) <br/> |<span data-ttu-id="7cabf-116">Identifica a obtener o quitar buzón de una entidad de seguridad de un delegado.</span><span class="sxs-lookup"><span data-stu-id="7cabf-116">Identifies a delegate to get or remove from a principal's mailbox.</span></span> <span data-ttu-id="7cabf-117">Este elemento se introdujo en Exchange 2007 SP1.</span><span class="sxs-lookup"><span data-stu-id="7cabf-117">This element was introduced in Exchange 2007 SP1.</span></span>  <br/> |
+|[<span data-ttu-id="c405c-115">UserId</span><span class="sxs-lookup"><span data-stu-id="c405c-115">UserId</span></span>](userid.md) <br/> |<span data-ttu-id="c405c-116">Identifica un delegado para obtener o quitar del buzón de la entidad de la identidad.</span><span class="sxs-lookup"><span data-stu-id="c405c-116">Identifies a delegate to get or remove from a principal's mailbox.</span></span> <span data-ttu-id="c405c-117">Este elemento se introdujo en Exchange 2007 SP1.</span><span class="sxs-lookup"><span data-stu-id="c405c-117">This element was introduced in Exchange 2007 SP1.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="7cabf-118">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="7cabf-118">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="c405c-118">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="c405c-118">Parent elements</span></span>
 
-|<span data-ttu-id="7cabf-119">**Element**</span><span class="sxs-lookup"><span data-stu-id="7cabf-119">**Element**</span></span>|<span data-ttu-id="7cabf-120">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="7cabf-120">**Description**</span></span>|
+|<span data-ttu-id="c405c-119">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="c405c-119">**Element**</span></span>|<span data-ttu-id="c405c-120">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="c405c-120">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="7cabf-121">GetDelegate</span><span class="sxs-lookup"><span data-stu-id="7cabf-121">GetDelegate</span></span>](getdelegate.md) <br/> |<span data-ttu-id="7cabf-122">Define una solicitud para obtener información acerca de los delegados a un buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="7cabf-122">Defines a request to get information about delegates to a mailbox.</span></span> <span data-ttu-id="7cabf-123">Este elemento se introdujo en Exchange 2007 SP1.</span><span class="sxs-lookup"><span data-stu-id="7cabf-123">This element was introduced in Exchange 2007 SP1.</span></span>  <br/> |
-|[<span data-ttu-id="7cabf-124">RemoveDelegate</span><span class="sxs-lookup"><span data-stu-id="7cabf-124">RemoveDelegate</span></span>](removedelegate.md) <br/> |<span data-ttu-id="7cabf-125">Define una solicitud para quitar delegados de un buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="7cabf-125">Defines a request to remove delegates from a mailbox.</span></span> <span data-ttu-id="7cabf-126">Este elemento se introdujo en Exchange 2007 SP1.</span><span class="sxs-lookup"><span data-stu-id="7cabf-126">This element was introduced in Exchange 2007 SP1.</span></span>  <br/> |
+|[<span data-ttu-id="c405c-121">GetDelegate</span><span class="sxs-lookup"><span data-stu-id="c405c-121">GetDelegate</span></span>](getdelegate.md) <br/> |<span data-ttu-id="c405c-122">Define una solicitud para obtener información acerca de los delegados de un buzón.</span><span class="sxs-lookup"><span data-stu-id="c405c-122">Defines a request to get information about delegates to a mailbox.</span></span> <span data-ttu-id="c405c-123">Este elemento se introdujo en Exchange 2007 SP1.</span><span class="sxs-lookup"><span data-stu-id="c405c-123">This element was introduced in Exchange 2007 SP1.</span></span>  <br/> |
+|[<span data-ttu-id="c405c-124">RemoveDelegate</span><span class="sxs-lookup"><span data-stu-id="c405c-124">RemoveDelegate</span></span>](removedelegate.md) <br/> |<span data-ttu-id="c405c-125">Define una solicitud para quitar delegados de un buzón.</span><span class="sxs-lookup"><span data-stu-id="c405c-125">Defines a request to remove delegates from a mailbox.</span></span> <span data-ttu-id="c405c-126">Este elemento se introdujo en Exchange 2007 SP1.</span><span class="sxs-lookup"><span data-stu-id="c405c-126">This element was introduced in Exchange 2007 SP1.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="7cabf-127">Comentarios</span><span class="sxs-lookup"><span data-stu-id="7cabf-127">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c405c-127">Comentarios</span><span class="sxs-lookup"><span data-stu-id="c405c-127">Remarks</span></span>
 
-<span data-ttu-id="7cabf-128">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="7cabf-128">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="c405c-128">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="c405c-128">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="7cabf-129">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="7cabf-129">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="c405c-129">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="c405c-129">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="7cabf-130">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="7cabf-130">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="7cabf-131">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="7cabf-131">Schema Name</span></span>  <br/> |<span data-ttu-id="7cabf-132">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="7cabf-132">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="7cabf-133">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="7cabf-133">Validation File</span></span>  <br/> |<span data-ttu-id="7cabf-134">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="7cabf-134">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="7cabf-135">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="7cabf-135">Can be Empty</span></span>  <br/> |<span data-ttu-id="7cabf-136">False</span><span class="sxs-lookup"><span data-stu-id="7cabf-136">False</span></span>  <br/> |
+|<span data-ttu-id="c405c-130">Namespace</span><span class="sxs-lookup"><span data-stu-id="c405c-130">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="c405c-131">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="c405c-131">Schema Name</span></span>  <br/> |<span data-ttu-id="c405c-132">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="c405c-132">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="c405c-133">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="c405c-133">Validation File</span></span>  <br/> |<span data-ttu-id="c405c-134">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="c405c-134">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="c405c-135">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="c405c-135">Can be Empty</span></span>  <br/> |<span data-ttu-id="c405c-136">Falso</span><span class="sxs-lookup"><span data-stu-id="c405c-136">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="7cabf-137">Vea también</span><span class="sxs-lookup"><span data-stu-id="7cabf-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c405c-137">Vea también</span><span class="sxs-lookup"><span data-stu-id="c405c-137">See also</span></span>
 
 
 
-[<span data-ttu-id="7cabf-138">Operación GetDelegate</span><span class="sxs-lookup"><span data-stu-id="7cabf-138">GetDelegate operation</span></span>](getdelegate-operation.md)
+[<span data-ttu-id="c405c-138">Operación GetDelegate</span><span class="sxs-lookup"><span data-stu-id="c405c-138">GetDelegate operation</span></span>](getdelegate-operation.md)
   
-[<span data-ttu-id="7cabf-139">Operación RemoveDelegate</span><span class="sxs-lookup"><span data-stu-id="7cabf-139">RemoveDelegate operation</span></span>](removedelegate-operation.md)
+[<span data-ttu-id="c405c-139">Operación RemoveDelegate</span><span class="sxs-lookup"><span data-stu-id="c405c-139">RemoveDelegate operation</span></span>](removedelegate-operation.md)
 
 
-- [<span data-ttu-id="7cabf-140">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="7cabf-140">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="c405c-140">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="c405c-140">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

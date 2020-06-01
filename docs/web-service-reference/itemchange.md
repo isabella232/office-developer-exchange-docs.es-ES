@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5cb43b02-d444-4d9c-9075-cdc5a4427daf
-description: El elemento ItemChange contiene un identificador de elemento y las actualizaciones que se debe aplicar al elemento.
-ms.openlocfilehash: 42484c8deecb106e05023215342af3c7d996d852
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: El elemento ItemChange contiene un identificador de elemento y las actualizaciones que se aplican al elemento.
+ms.openlocfilehash: 916ef1ba2c7a709ec1fd80ababd72999506773c4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353514"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459920"
 ---
-# <a name="itemchange"></a><span data-ttu-id="1609a-103">ItemChange</span><span class="sxs-lookup"><span data-stu-id="1609a-103">ItemChange</span></span>
+# <a name="itemchange"></a><span data-ttu-id="02b78-103">ItemChange</span><span class="sxs-lookup"><span data-stu-id="02b78-103">ItemChange</span></span>
 
-<span data-ttu-id="1609a-104">El elemento **ItemChange** contiene un identificador de elemento y las actualizaciones que se debe aplicar al elemento.</span><span class="sxs-lookup"><span data-stu-id="1609a-104">The **ItemChange** element contains an item identifier and the updates to apply to the item.</span></span> 
+<span data-ttu-id="02b78-104">El elemento **ItemChange** contiene un identificador de elemento y las actualizaciones que se aplican al elemento.</span><span class="sxs-lookup"><span data-stu-id="02b78-104">The **ItemChange** element contains an item identifier and the updates to apply to the item.</span></span> 
   
-- [<span data-ttu-id="1609a-105">UpdateItem</span><span class="sxs-lookup"><span data-stu-id="1609a-105">UpdateItem</span></span>](updateitem.md) 
-- [<span data-ttu-id="1609a-106">ItemChanges</span><span class="sxs-lookup"><span data-stu-id="1609a-106">ItemChanges</span></span>](itemchanges.md)
-- [<span data-ttu-id="1609a-107">ItemChange</span><span class="sxs-lookup"><span data-stu-id="1609a-107">ItemChange</span></span>](itemchange.md)
+- [<span data-ttu-id="02b78-105">UpdateItem</span><span class="sxs-lookup"><span data-stu-id="02b78-105">UpdateItem</span></span>](updateitem.md) 
+- [<span data-ttu-id="02b78-106">ItemChanges</span><span class="sxs-lookup"><span data-stu-id="02b78-106">ItemChanges</span></span>](itemchanges.md)
+- [<span data-ttu-id="02b78-107">ItemChange</span><span class="sxs-lookup"><span data-stu-id="02b78-107">ItemChange</span></span>](itemchange.md)
   
 ```xml
 <ItemChange>
@@ -48,47 +48,47 @@ ms.locfileid: "21353514"
 </ItemChange>
 ```
 
-<span data-ttu-id="1609a-108">**ItemChangeType**</span><span class="sxs-lookup"><span data-stu-id="1609a-108">**ItemChangeType**</span></span>
+<span data-ttu-id="02b78-108">**ItemChangeType**</span><span class="sxs-lookup"><span data-stu-id="02b78-108">**ItemChangeType**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="1609a-109">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="1609a-109">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="02b78-109">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="02b78-109">Attributes and elements</span></span>
 
-<span data-ttu-id="1609a-110">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="1609a-110">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="02b78-110">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="02b78-110">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="1609a-111">Atributos</span><span class="sxs-lookup"><span data-stu-id="1609a-111">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="02b78-111">Atributos</span><span class="sxs-lookup"><span data-stu-id="02b78-111">Attributes</span></span>
 
-<span data-ttu-id="1609a-112">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="1609a-112">None.</span></span>
+<span data-ttu-id="02b78-112">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="02b78-112">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="1609a-113">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="1609a-113">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="02b78-113">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="02b78-113">Child elements</span></span>
 
-|<span data-ttu-id="1609a-114">**Element**</span><span class="sxs-lookup"><span data-stu-id="1609a-114">**Element**</span></span>|<span data-ttu-id="1609a-115">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="1609a-115">**Description**</span></span>|
+|<span data-ttu-id="02b78-114">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="02b78-114">**Element**</span></span>|<span data-ttu-id="02b78-115">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="02b78-115">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="1609a-116">ItemId</span><span class="sxs-lookup"><span data-stu-id="1609a-116">ItemId</span></span>](itemid.md) <br/> |<span data-ttu-id="1609a-117">Contiene el único identificador y cambiar la clave de un elemento en el almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="1609a-117">Contains the unique identifier and change key of an item in the Exchange store.</span></span> <span data-ttu-id="1609a-118">Este elemento es necesario si no se usa el elemento [OccurrenceItemId](occurrenceitemid.md) o [RecurringMasterItemId](recurringmasteritemid.md) .</span><span class="sxs-lookup"><span data-stu-id="1609a-118">This element is required if the [OccurrenceItemId](occurrenceitemid.md) or [RecurringMasterItemId](recurringmasteritemid.md) element is not used.</span></span>  <br/> |
-|[<span data-ttu-id="1609a-119">OccurrenceItemId</span><span class="sxs-lookup"><span data-stu-id="1609a-119">OccurrenceItemId</span></span>](occurrenceitemid.md) <br/> |<span data-ttu-id="1609a-120">Identifica una sola aparición de un elemento periódico.</span><span class="sxs-lookup"><span data-stu-id="1609a-120">Identifies a single occurrence of a recurring item.</span></span> <span data-ttu-id="1609a-121">Este elemento es necesario si utiliza.</span><span class="sxs-lookup"><span data-stu-id="1609a-121">This element is required if used.</span></span> <span data-ttu-id="1609a-122">Este elemento es necesario si no se usa el elemento [RecurringMasterItemId](recurringmasteritemid.md) o [ItemId](itemid.md) .</span><span class="sxs-lookup"><span data-stu-id="1609a-122">This element is required if the [RecurringMasterItemId](recurringmasteritemid.md) or [ItemId](itemid.md) element is not used.</span></span>  <br/> |
-|[<span data-ttu-id="1609a-123">RecurringMasterItemId</span><span class="sxs-lookup"><span data-stu-id="1609a-123">RecurringMasterItemId</span></span>](recurringmasteritemid.md) <br/> |<span data-ttu-id="1609a-124">Identifica un elemento de patrón de periodicidad mediante la identificación de uno de los identificadores de los elementos de su aparición relacionados.</span><span class="sxs-lookup"><span data-stu-id="1609a-124">Identifies a recurrence master item by identifying one of its related occurrence items' identifiers.</span></span> <span data-ttu-id="1609a-125">Este elemento es necesario si utiliza.</span><span class="sxs-lookup"><span data-stu-id="1609a-125">This element is required if used.</span></span> <span data-ttu-id="1609a-126">Este elemento es necesario si no se usa el elemento [OccurrenceItemId](occurrenceitemid.md) o [ItemId](itemid.md) .</span><span class="sxs-lookup"><span data-stu-id="1609a-126">This element is required if the [OccurrenceItemId](occurrenceitemid.md) or [ItemId](itemid.md) element is not used.</span></span>  <br/> |
-|[<span data-ttu-id="1609a-127">Updates (Elemento)</span><span class="sxs-lookup"><span data-stu-id="1609a-127">Updates (Item)</span></span>](updates-item.md) <br/> |<span data-ttu-id="1609a-128">Contiene una matriz que define append, establecer y eliminar los cambios realizados en las propiedades de elementos.</span><span class="sxs-lookup"><span data-stu-id="1609a-128">Contains an array that defines append, set, and delete changes to item properties.</span></span> <span data-ttu-id="1609a-129">Se requiere este elemento.</span><span class="sxs-lookup"><span data-stu-id="1609a-129">This element is required.</span></span>  <br/> |
+|[<span data-ttu-id="02b78-116">ItemId</span><span class="sxs-lookup"><span data-stu-id="02b78-116">ItemId</span></span>](itemid.md) <br/> |<span data-ttu-id="02b78-117">Contiene el identificador único y la clave de cambio de un elemento en el almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="02b78-117">Contains the unique identifier and change key of an item in the Exchange store.</span></span> <span data-ttu-id="02b78-118">Este elemento es obligatorio si no se usa el elemento [OccurrenceItemId](occurrenceitemid.md) o [RecurringMasterItemId](recurringmasteritemid.md) .</span><span class="sxs-lookup"><span data-stu-id="02b78-118">This element is required if the [OccurrenceItemId](occurrenceitemid.md) or [RecurringMasterItemId](recurringmasteritemid.md) element is not used.</span></span>  <br/> |
+|[<span data-ttu-id="02b78-119">OccurrenceItemId</span><span class="sxs-lookup"><span data-stu-id="02b78-119">OccurrenceItemId</span></span>](occurrenceitemid.md) <br/> |<span data-ttu-id="02b78-120">Identifica una única ocurrencia de un elemento periódico.</span><span class="sxs-lookup"><span data-stu-id="02b78-120">Identifies a single occurrence of a recurring item.</span></span> <span data-ttu-id="02b78-121">Este elemento es obligatorio si se usa.</span><span class="sxs-lookup"><span data-stu-id="02b78-121">This element is required if used.</span></span> <span data-ttu-id="02b78-122">Este elemento es obligatorio si no se usa el elemento [RecurringMasterItemId](recurringmasteritemid.md) o [Itemid](itemid.md) .</span><span class="sxs-lookup"><span data-stu-id="02b78-122">This element is required if the [RecurringMasterItemId](recurringmasteritemid.md) or [ItemId](itemid.md) element is not used.</span></span>  <br/> |
+|[<span data-ttu-id="02b78-123">RecurringMasterItemId</span><span class="sxs-lookup"><span data-stu-id="02b78-123">RecurringMasterItemId</span></span>](recurringmasteritemid.md) <br/> |<span data-ttu-id="02b78-124">Identifica un elemento principal de periodicidad mediante la identificación de uno de los identificadores de elementos de ocurrencia relacionados.</span><span class="sxs-lookup"><span data-stu-id="02b78-124">Identifies a recurrence master item by identifying one of its related occurrence items' identifiers.</span></span> <span data-ttu-id="02b78-125">Este elemento es obligatorio si se usa.</span><span class="sxs-lookup"><span data-stu-id="02b78-125">This element is required if used.</span></span> <span data-ttu-id="02b78-126">Este elemento es obligatorio si no se usa el elemento [OccurrenceItemId](occurrenceitemid.md) o [Itemid](itemid.md) .</span><span class="sxs-lookup"><span data-stu-id="02b78-126">This element is required if the [OccurrenceItemId](occurrenceitemid.md) or [ItemId](itemid.md) element is not used.</span></span>  <br/> |
+|[<span data-ttu-id="02b78-127">Actualizaciones (elemento)</span><span class="sxs-lookup"><span data-stu-id="02b78-127">Updates (Item)</span></span>](updates-item.md) <br/> |<span data-ttu-id="02b78-128">Contiene una matriz que define los cambios de anexión, establecimiento y eliminación en las propiedades de elemento.</span><span class="sxs-lookup"><span data-stu-id="02b78-128">Contains an array that defines append, set, and delete changes to item properties.</span></span> <span data-ttu-id="02b78-129">Se requiere este elemento.</span><span class="sxs-lookup"><span data-stu-id="02b78-129">This element is required.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="1609a-130">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="1609a-130">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="02b78-130">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="02b78-130">Parent elements</span></span>
 
-|<span data-ttu-id="1609a-131">**Element**</span><span class="sxs-lookup"><span data-stu-id="1609a-131">**Element**</span></span>|<span data-ttu-id="1609a-132">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="1609a-132">**Description**</span></span>|
+|<span data-ttu-id="02b78-131">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="02b78-131">**Element**</span></span>|<span data-ttu-id="02b78-132">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="02b78-132">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="1609a-133">ItemChanges</span><span class="sxs-lookup"><span data-stu-id="1609a-133">ItemChanges</span></span>](itemchanges.md) <br/> |<span data-ttu-id="1609a-134">Contiene una matriz de elementos de [ItemChange](itemchange.md) que identifican los elementos y las actualizaciones que se debe aplicar a los elementos.</span><span class="sxs-lookup"><span data-stu-id="1609a-134">Contains an array of [ItemChange](itemchange.md) elements that identify items and the updates to apply to the items.</span></span>  <br/> <span data-ttu-id="1609a-135">La siguiente es la expresión de XPath para este elemento:</span><span class="sxs-lookup"><span data-stu-id="1609a-135">The following is the XPath expression to this element:</span></span>  <br/>  `/UpdateItem/ItemChanges` <br/> |
+|[<span data-ttu-id="02b78-133">ItemChanges</span><span class="sxs-lookup"><span data-stu-id="02b78-133">ItemChanges</span></span>](itemchanges.md) <br/> |<span data-ttu-id="02b78-134">Contiene una matriz de elementos [ItemChange](itemchange.md) que identifican los elementos y las actualizaciones que se aplican a los elementos.</span><span class="sxs-lookup"><span data-stu-id="02b78-134">Contains an array of [ItemChange](itemchange.md) elements that identify items and the updates to apply to the items.</span></span>  <br/> <span data-ttu-id="02b78-135">La siguiente es la expresión XPath a este elemento:</span><span class="sxs-lookup"><span data-stu-id="02b78-135">The following is the XPath expression to this element:</span></span>  <br/>  `/UpdateItem/ItemChanges` <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="1609a-136">Comentarios</span><span class="sxs-lookup"><span data-stu-id="1609a-136">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="02b78-136">Comentarios</span><span class="sxs-lookup"><span data-stu-id="02b78-136">Remarks</span></span>
 
-<span data-ttu-id="1609a-137">Sólo un elemento [ItemId](itemid.md), [OccurrenceItemId](occurrenceitemid.md)o [RecurringMasterItemId](recurringmasteritemid.md) único puede usarse en un elemento **ItemChange** .</span><span class="sxs-lookup"><span data-stu-id="1609a-137">Only a single [ItemId](itemid.md), [OccurrenceItemId](occurrenceitemid.md), or [RecurringMasterItemId](recurringmasteritemid.md) element can be used in an **ItemChange** element.</span></span> 
+<span data-ttu-id="02b78-137">Solo se puede usar un elemento [Itemid](itemid.md), [OccurrenceItemId](occurrenceitemid.md)o [RecurringMasterItemId](recurringmasteritemid.md) en un elemento **ItemChange** .</span><span class="sxs-lookup"><span data-stu-id="02b78-137">Only a single [ItemId](itemid.md), [OccurrenceItemId](occurrenceitemid.md), or [RecurringMasterItemId](recurringmasteritemid.md) element can be used in an **ItemChange** element.</span></span> 
   
-<span data-ttu-id="1609a-138">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="1609a-138">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="02b78-138">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="02b78-138">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="1609a-139">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="1609a-139">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="02b78-139">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="02b78-139">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="1609a-140">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="1609a-140">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="1609a-141">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="1609a-141">Schema Name</span></span>  <br/> |<span data-ttu-id="1609a-142">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="1609a-142">Types schema</span></span>  <br/> |
-|<span data-ttu-id="1609a-143">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="1609a-143">Validation File</span></span>  <br/> |<span data-ttu-id="1609a-144">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="1609a-144">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="1609a-145">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="1609a-145">Can be Empty</span></span>  <br/> |<span data-ttu-id="1609a-146">False</span><span class="sxs-lookup"><span data-stu-id="1609a-146">False</span></span>  <br/> |
+|<span data-ttu-id="02b78-140">Namespace</span><span class="sxs-lookup"><span data-stu-id="02b78-140">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="02b78-141">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="02b78-141">Schema Name</span></span>  <br/> |<span data-ttu-id="02b78-142">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="02b78-142">Types schema</span></span>  <br/> |
+|<span data-ttu-id="02b78-143">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="02b78-143">Validation File</span></span>  <br/> |<span data-ttu-id="02b78-144">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="02b78-144">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="02b78-145">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="02b78-145">Can be Empty</span></span>  <br/> |<span data-ttu-id="02b78-146">Falso</span><span class="sxs-lookup"><span data-stu-id="02b78-146">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="1609a-147">Vea también</span><span class="sxs-lookup"><span data-stu-id="1609a-147">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="02b78-147">Vea también</span><span class="sxs-lookup"><span data-stu-id="02b78-147">See also</span></span>
 
-- [<span data-ttu-id="1609a-148">Operación UpdateItem</span><span class="sxs-lookup"><span data-stu-id="1609a-148">UpdateItem operation</span></span>](updateitem-operation.md)
+- [<span data-ttu-id="02b78-148">Operación UpdateItem</span><span class="sxs-lookup"><span data-stu-id="02b78-148">UpdateItem operation</span></span>](updateitem-operation.md)
 

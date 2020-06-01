@@ -1,5 +1,5 @@
 ---
-title: Marca de tiempo
+title: Marca
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,72 +11,72 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5eae859a-5a74-4bf6-b196-d1b2fd38501a
-description: El elemento de marca de tiempo representa la marca de hora de un evento de buzón de correo.
-ms.openlocfilehash: d020d9a4cf3a128d26e0ff2b83be9f3deb024339
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento timestamp representa la marca de hora de un evento de buzón.
+ms.openlocfilehash: f2280d4eab67b603963c4f0a7468bf35a2b63a88
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840719"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44459892"
 ---
-# <a name="timestamp"></a><span data-ttu-id="019bc-103">Marca de tiempo</span><span class="sxs-lookup"><span data-stu-id="019bc-103">TimeStamp</span></span>
+# <a name="timestamp"></a><span data-ttu-id="7efea-103">Marca</span><span class="sxs-lookup"><span data-stu-id="7efea-103">TimeStamp</span></span>
 
-<span data-ttu-id="019bc-104">El elemento de **marca de tiempo** representa la marca de hora de un evento de buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="019bc-104">The **Timestamp** element represents the timestamp of a mailbox event.</span></span> 
+<span data-ttu-id="7efea-104">El elemento **timestamp** representa la marca de hora de un evento de buzón.</span><span class="sxs-lookup"><span data-stu-id="7efea-104">The **Timestamp** element represents the timestamp of a mailbox event.</span></span> 
   
 ```xml
 <TimeStamp/>
 ```
 
- <span data-ttu-id="019bc-105">**DateTime**</span><span class="sxs-lookup"><span data-stu-id="019bc-105">**DateTime**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="019bc-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="019bc-106">Attributes and elements</span></span>
+ <span data-ttu-id="7efea-105">**DateTime**</span><span class="sxs-lookup"><span data-stu-id="7efea-105">**DateTime**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="7efea-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="7efea-106">Attributes and elements</span></span>
 
-<span data-ttu-id="019bc-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="019bc-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="7efea-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="7efea-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="019bc-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="019bc-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="7efea-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="7efea-108">Attributes</span></span>
 
-<span data-ttu-id="019bc-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="019bc-109">None.</span></span>
+<span data-ttu-id="7efea-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="7efea-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="019bc-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="019bc-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="7efea-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="7efea-110">Child elements</span></span>
 
-<span data-ttu-id="019bc-111">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="019bc-111">None.</span></span>
+<span data-ttu-id="7efea-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="7efea-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="019bc-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="019bc-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="7efea-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="7efea-112">Parent elements</span></span>
 
-|<span data-ttu-id="019bc-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="019bc-113">**Element**</span></span>|<span data-ttu-id="019bc-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="019bc-114">**Description**</span></span>|
+|<span data-ttu-id="7efea-113">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="7efea-113">**Element**</span></span>|<span data-ttu-id="7efea-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="7efea-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="019bc-115">CopiedEvent</span><span class="sxs-lookup"><span data-stu-id="019bc-115">CopiedEvent</span></span>](copiedevent.md) <br/> |<span data-ttu-id="019bc-116">Representa un evento donde se copia una carpeta o elemento.</span><span class="sxs-lookup"><span data-stu-id="019bc-116">Represents an event where an item or folder is copied.</span></span>  <br/> |
-|[<span data-ttu-id="019bc-117">CreatedEvent</span><span class="sxs-lookup"><span data-stu-id="019bc-117">CreatedEvent</span></span>](createdevent.md) <br/> |<span data-ttu-id="019bc-118">Representa un evento que se crea una carpeta o elemento.</span><span class="sxs-lookup"><span data-stu-id="019bc-118">Represents an event where an item or folder is created.</span></span>  <br/> |
-|[<span data-ttu-id="019bc-119">DeletedEvent</span><span class="sxs-lookup"><span data-stu-id="019bc-119">DeletedEvent</span></span>](deletedevent.md) <br/> |<span data-ttu-id="019bc-120">Representa un evento que se elimina un elemento o carpeta.</span><span class="sxs-lookup"><span data-stu-id="019bc-120">Represents an event where an item or folder is deleted.</span></span>  <br/> |
-|[<span data-ttu-id="019bc-121">ModifiedEvent</span><span class="sxs-lookup"><span data-stu-id="019bc-121">ModifiedEvent</span></span>](modifiedevent.md) <br/> |<span data-ttu-id="019bc-122">Representa un evento que se modifica una carpeta o elemento.</span><span class="sxs-lookup"><span data-stu-id="019bc-122">Represents an event where an item or folder is modified.</span></span>  <br/> |
-|[<span data-ttu-id="019bc-123">MovedEvent</span><span class="sxs-lookup"><span data-stu-id="019bc-123">MovedEvent</span></span>](movedevent.md) <br/> |<span data-ttu-id="019bc-124">Representa un evento donde una carpeta o elemento se mueve desde la carpeta principal de una a otra carpeta primaria.</span><span class="sxs-lookup"><span data-stu-id="019bc-124">Represents an event where an item or folder is moved from one parent folder to another parent folder.</span></span>  <br/> |
-|[<span data-ttu-id="019bc-125">NewMailEvent</span><span class="sxs-lookup"><span data-stu-id="019bc-125">NewMailEvent</span></span>](newmailevent.md) <br/> |<span data-ttu-id="019bc-126">Representa un evento activado por un nuevo elemento de correo en un buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="019bc-126">Represents an event triggered by a new mail item in a mailbox.</span></span>  <br/> |
+|[<span data-ttu-id="7efea-115">CopiedEvent</span><span class="sxs-lookup"><span data-stu-id="7efea-115">CopiedEvent</span></span>](copiedevent.md) <br/> |<span data-ttu-id="7efea-116">Representa un evento en el que se copia un elemento o una carpeta.</span><span class="sxs-lookup"><span data-stu-id="7efea-116">Represents an event where an item or folder is copied.</span></span>  <br/> |
+|[<span data-ttu-id="7efea-117">CreatedEvent</span><span class="sxs-lookup"><span data-stu-id="7efea-117">CreatedEvent</span></span>](createdevent.md) <br/> |<span data-ttu-id="7efea-118">Representa un evento en el que se crea un elemento o una carpeta.</span><span class="sxs-lookup"><span data-stu-id="7efea-118">Represents an event where an item or folder is created.</span></span>  <br/> |
+|[<span data-ttu-id="7efea-119">DeletedEvent</span><span class="sxs-lookup"><span data-stu-id="7efea-119">DeletedEvent</span></span>](deletedevent.md) <br/> |<span data-ttu-id="7efea-120">Representa un evento en el que se elimina un elemento o carpeta.</span><span class="sxs-lookup"><span data-stu-id="7efea-120">Represents an event where an item or folder is deleted.</span></span>  <br/> |
+|[<span data-ttu-id="7efea-121">ModifiedEvent</span><span class="sxs-lookup"><span data-stu-id="7efea-121">ModifiedEvent</span></span>](modifiedevent.md) <br/> |<span data-ttu-id="7efea-122">Representa un evento en el que se modifica un elemento o una carpeta.</span><span class="sxs-lookup"><span data-stu-id="7efea-122">Represents an event where an item or folder is modified.</span></span>  <br/> |
+|[<span data-ttu-id="7efea-123">MovedEvent</span><span class="sxs-lookup"><span data-stu-id="7efea-123">MovedEvent</span></span>](movedevent.md) <br/> |<span data-ttu-id="7efea-124">Representa un evento en el que se mueve un elemento o una carpeta de una carpeta principal a otra carpeta principal.</span><span class="sxs-lookup"><span data-stu-id="7efea-124">Represents an event where an item or folder is moved from one parent folder to another parent folder.</span></span>  <br/> |
+|[<span data-ttu-id="7efea-125">NewMailEvent</span><span class="sxs-lookup"><span data-stu-id="7efea-125">NewMailEvent</span></span>](newmailevent.md) <br/> |<span data-ttu-id="7efea-126">Representa un evento desencadenado por un nuevo elemento de correo en un buzón.</span><span class="sxs-lookup"><span data-stu-id="7efea-126">Represents an event triggered by a new mail item in a mailbox.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="019bc-127">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="019bc-127">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="7efea-127">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="7efea-127">Text value</span></span>
 
-<span data-ttu-id="019bc-128">Esta propiedad es de sólo lectura.</span><span class="sxs-lookup"><span data-stu-id="019bc-128">This property is read-only.</span></span>
+<span data-ttu-id="7efea-128">Esta propiedad es de sólo lectura.</span><span class="sxs-lookup"><span data-stu-id="7efea-128">This property is read-only.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="019bc-129">Comentarios</span><span class="sxs-lookup"><span data-stu-id="019bc-129">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7efea-129">Comentarios</span><span class="sxs-lookup"><span data-stu-id="7efea-129">Remarks</span></span>
 
-<span data-ttu-id="019bc-130">Este elemento está principalmente disponible para su uso en la determinación de cliente de la frecuencia de los eventos.</span><span class="sxs-lookup"><span data-stu-id="019bc-130">This element is primarily available for use in client determination of event frequency.</span></span> <span data-ttu-id="019bc-131">Esto no está presente en el [objeto StatusEvent](statusevent.md).</span><span class="sxs-lookup"><span data-stu-id="019bc-131">This is not present in [StatusEvent](statusevent.md).</span></span>
+<span data-ttu-id="7efea-130">Este elemento está disponible principalmente para su uso en el cliente que determina la frecuencia de eventos.</span><span class="sxs-lookup"><span data-stu-id="7efea-130">This element is primarily available for use in client determination of event frequency.</span></span> <span data-ttu-id="7efea-131">Esto no está presente en [StatusEvent](statusevent.md).</span><span class="sxs-lookup"><span data-stu-id="7efea-131">This is not present in [StatusEvent](statusevent.md).</span></span>
   
-<span data-ttu-id="019bc-132">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="019bc-132">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="7efea-132">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="7efea-132">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="019bc-133">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="019bc-133">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="7efea-133">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="7efea-133">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="019bc-134">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="019bc-134">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="019bc-135">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="019bc-135">Schema name</span></span>  <br/> |<span data-ttu-id="019bc-136">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="019bc-136">Types schema</span></span>  <br/> |
-|<span data-ttu-id="019bc-137">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="019bc-137">Validation file</span></span>  <br/> |<span data-ttu-id="019bc-138">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="019bc-138">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="019bc-139">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="019bc-139">Can be empty</span></span>  <br/> |<span data-ttu-id="019bc-140">False</span><span class="sxs-lookup"><span data-stu-id="019bc-140">False</span></span>  <br/> |
+|<span data-ttu-id="7efea-134">Namespace</span><span class="sxs-lookup"><span data-stu-id="7efea-134">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="7efea-135">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="7efea-135">Schema name</span></span>  <br/> |<span data-ttu-id="7efea-136">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="7efea-136">Types schema</span></span>  <br/> |
+|<span data-ttu-id="7efea-137">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="7efea-137">Validation file</span></span>  <br/> |<span data-ttu-id="7efea-138">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="7efea-138">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="7efea-139">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="7efea-139">Can be empty</span></span>  <br/> |<span data-ttu-id="7efea-140">Falso</span><span class="sxs-lookup"><span data-stu-id="7efea-140">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="019bc-141">Vea también</span><span class="sxs-lookup"><span data-stu-id="019bc-141">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7efea-141">Vea también</span><span class="sxs-lookup"><span data-stu-id="7efea-141">See also</span></span>
 
 
 
-[<span data-ttu-id="019bc-142">Operación de suscripción</span><span class="sxs-lookup"><span data-stu-id="019bc-142">Subscribe operation</span></span>](subscribe-operation.md)
+[<span data-ttu-id="7efea-142">Operación subscribe</span><span class="sxs-lookup"><span data-stu-id="7efea-142">Subscribe operation</span></span>](subscribe-operation.md)
   
-[<span data-ttu-id="019bc-143">Operación GetEvents</span><span class="sxs-lookup"><span data-stu-id="019bc-143">GetEvents operation</span></span>](getevents-operation.md)
+[<span data-ttu-id="7efea-143">Operación GetEvents</span><span class="sxs-lookup"><span data-stu-id="7efea-143">GetEvents operation</span></span>](getevents-operation.md)
   
-[<span data-ttu-id="019bc-144">Cancelar la operación de suscripción</span><span class="sxs-lookup"><span data-stu-id="019bc-144">Unsubscribe operation</span></span>](unsubscribe-operation.md)
+[<span data-ttu-id="7efea-144">Operación unsubscribe</span><span class="sxs-lookup"><span data-stu-id="7efea-144">Unsubscribe operation</span></span>](unsubscribe-operation.md)
 
