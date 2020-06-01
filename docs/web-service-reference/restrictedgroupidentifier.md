@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: a3ea3c81-9f99-4836-8cb4-2384ea63f093
-description: El elemento RestrictGroupIdentifier representa los atributos de un grupo restringido dentro de un símbolo (token) de usuario y el identificador del grupo de seguridad (SID).
-ms.openlocfilehash: c6db8672b2afa855e83f2e9a2bf84c9ff33bdc7a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RestrictGroupIdentifier representa el identificador de seguridad (SID) de grupo y los atributos de un grupo restringido dentro de un token de usuario.
+ms.openlocfilehash: c95af4e09324e96f4551a05490dc200aec0cbd46
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837206"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465369"
 ---
 # <a name="restrictedgroupidentifier"></a>RestrictedGroupIdentifier
 
-El elemento **RestrictGroupIdentifier** representa los atributos de un grupo restringido dentro de un símbolo (token) de usuario y el identificador del grupo de seguridad (SID). 
+El elemento **RestrictGroupIdentifier** representa el identificador de seguridad (SID) de grupo y los atributos de un grupo restringido dentro de un token de usuario. 
   
 ```xml
 <RestrictedGroupIdentifier Attributes="">
@@ -32,42 +32,42 @@ El elemento **RestrictGroupIdentifier** representa los atributos de un grupo res
  **SidAndAttributesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**Attributes** <br/> |Contiene los atributos de grupo.  <br/> |
+|**Atributos** <br/> |Contiene los atributos de grupo.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SecurityIdentifier](securityidentifier.md) <br/> |Representa el formato de idioma (SDDL) de definición de descriptor de seguridad de un identificador de seguridad.  <br/> |
+|[SecurityIdentifier](securityidentifier.md) <br/> |Representa el formato de lenguaje de definición de descriptores de seguridad (SDDL) de un identificador de seguridad.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[RestrictedGroupSids](restrictedgroupsids.md) <br/> |Representa una colección de grupos restringidos dentro de un símbolo (token) de usuario. No se admite la serialización de token.  <br/> |
+|[RestrictedGroupSids](restrictedgroupsids.md) <br/> |Representa una colección de grupos restringidos dentro de un token de usuario. No se admite la serialización de tokens.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

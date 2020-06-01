@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c99e9a60-9e38-425d-ad03-47c8917f41da
-description: El elemento MeetingSuggestions especifica una matriz de elementos de MeetingSuggestion que contienen resultados de la extracción de entidad.
-ms.openlocfilehash: b2b3e93101a9ae2ad4241e6aad79825c190c5222
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MeetingSuggestions especifica una matriz de elementos MeetingSuggestion que contienen resultados de extracción de entidades.
+ms.openlocfilehash: 9e0753919dcfaa3a20b88403085b2951706324bb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836437"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466293"
 ---
 # <a name="meetingsuggestions"></a>MeetingSuggestions
 
-El elemento **MeetingSuggestions** especifica una matriz de elementos de **MeetingSuggestion** que contienen resultados de la extracción de entidad. 
+El elemento **MeetingSuggestions** especifica una matriz de elementos **MeetingSuggestion** que contienen resultados de extracción de entidades. 
   
 ```XML
 <MeetingSuggestions>
@@ -28,11 +28,11 @@ El elemento **MeetingSuggestions** especifica una matriz de elementos de **Meeti
  **ArrayOfMeetingSuggestionsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

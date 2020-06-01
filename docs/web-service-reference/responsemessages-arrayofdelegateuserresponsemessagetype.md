@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 14819975-ce54-4f0e-9f90-d4b275895ea0
-description: El elemento ResponseMessages contiene los mensajes de respuesta para una solicitud de administración de servicios Web de Exchange delegado.
-ms.openlocfilehash: e4b5567f3ded003e9648eb8ebebfadf8f1748d6c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ResponseMessages contiene los mensajes de respuesta para una solicitud de administración de delegado de servicios Web de Exchange.
+ms.openlocfilehash: 6b035f4ee46af1750a275e2c61b2cddea06b37a1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837193"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465460"
 ---
 # <a name="responsemessages-arrayofdelegateuserresponsemessagetype"></a>ResponseMessages (ArrayOfDelegateUserResponseMessageType)
 
-El elemento **ResponseMessages** contiene los mensajes de respuesta para una solicitud de administración de servicios Web de Exchange delegado. 
+El elemento **ResponseMessages** contiene los mensajes de respuesta para una solicitud de administración de delegado de servicios Web de Exchange. 
   
 ```
 <ResponseMessages>
@@ -32,21 +32,21 @@ El elemento **ResponseMessages** contiene los mensajes de respuesta para una sol
  **ArrayOfDelegateUserResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[DelegateUserResponseMessageType](delegateuserresponsemessagetype.md) <br/> |Contiene los mensajes de respuesta para las operaciones de administración de delegado.  <br/> |
+|[DelegateUserResponseMessageType](delegateuserresponsemessagetype.md) <br/> |Contiene mensajes de respuesta para las operaciones de administración de delegado.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[AddDelegateResponse](adddelegateresponse.md) <br/> |Contiene el estado y el resultado de una solicitud de [operación AddDelegate](adddelegate-operation.md) .  <br/> |
 |[GetDelegateResponse](getdelegateresponse.md) <br/> |Contiene el estado y el resultado de una solicitud de [operación GetDelegate](getdelegate-operation.md) .  <br/> |
@@ -55,18 +55,18 @@ Ninguno.
    
 ## <a name="remarks"></a>Comentarios
 
-Este elemento se usa en la [operación AddDelegate](adddelegate-operation.md), la [operación de GetDelegate](getdelegate-operation.md), la [operación de UpdateDelegate](updatedelegate-operation.md)y la [operación de RemoveDelegate](removedelegate-operation.md). Las respuestas de operación de administración de delegado tienen una estructura diferente de otras respuestas. Los mensajes de respuesta de la administración de delegado tienen establecimiento inflexible de tipos.
+Este elemento se usa en la [operación AddDelegate](adddelegate-operation.md), en la operación [GetDelegate](getdelegate-operation.md), en la [operación UpdateDelegate](updatedelegate-operation.md)y en la [operación RemoveDelegate](removedelegate-operation.md). Las respuestas de la operación de administración de delegado tienen una estructura distinta que otras respuestas. Los mensajes de respuesta de administración de delegado tienen establecimiento inflexible de tipos.
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Exchange Server con la función de servidor de acceso de cliente instalada.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Exchange Server con el rol de servidor acceso de clientes instalado.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -81,5 +81,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [Operación RemoveDelegate](removedelegate-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

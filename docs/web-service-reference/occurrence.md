@@ -1,5 +1,5 @@
 ---
-title: Repetición
+title: Suceda
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d292b99c-b896-40b7-be5d-2cb314c9481f
-description: El elemento de repetición representa una sola aparición de modificación de un elemento periódico del calendario.
-ms.openlocfilehash: 5a40faa9b885a235d30e7f41830d1eefe2ed23c3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Representation representa una única ocurrencia modificada de un elemento de calendario periódico.
+ms.openlocfilehash: c3a6bcce23f0bb1125dbd2a5bb86e9b20039a4e1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836653"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466321"
 ---
-# <a name="occurrence"></a>Repetición
+# <a name="occurrence"></a>Suceda
 
-El elemento de **repetición** representa una sola aparición de modificación de un elemento periódico del calendario. 
+El **elemento** Representation representa una única ocurrencia modificada de un elemento de calendario periódico. 
   
 ```xml
 <Occurrence>
@@ -36,41 +36,41 @@ El elemento de **repetición** representa una sola aparición de modificación d
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ItemId](itemid.md) <br/> |Contiene la clave exclusiva de identificador y el cambio de una ocurrencia modificada de un elemento periódico del calendario.  <br/> |
-|[Start](start.md) <br/> |Representa la hora de inicio de una repetición modificada de un elemento periódico del calendario.  <br/> |
-|[End](end-ex15websvcsotherref.md) <br/> |Representa la hora de finalización de una ocurrencia modificada de un elemento periódico del calendario.  <br/> |
-|[OriginalStart](originalstart.md) <br/> |Representa la hora de inicio original de una ocurrencia modificada de un elemento periódico del calendario.  <br/> |
+|[ItemId](itemid.md) <br/> |Contiene el identificador único y la clave de cambio de una repetición modificada de un elemento de calendario periódico.  <br/> |
+|[Start](start.md) <br/> |Representa la hora de inicio de una repetición modificada de un elemento de calendario periódico.  <br/> |
+|[Centraliza](end-ex15websvcsotherref.md) <br/> |Representa la hora de finalización de una repetición modificada de un elemento de calendario periódico.  <br/> |
+|[OriginalStart](originalstart.md) <br/> |Representa la hora de inicio original de una repetición modificada de un elemento de calendario periódico.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ModifiedOccurrences](modifiedoccurrences.md) <br/> |Contiene una colección de periódica repeticiones del elemento de calendario que se han modificado para que sean diferentes que el elemento de patrón de periodicidad.  <br/> |
+|[ModifiedOccurrences](modifiedoccurrences.md) <br/> |Contiene una colección de repeticiones de elementos de calendario periódicas que se han modificado para que sean diferentes del elemento principal de periodicidad.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

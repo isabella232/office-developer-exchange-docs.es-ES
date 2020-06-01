@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e7998023-e5e0-465c-91fa-2aa6d1559f64
-description: El elemento ParentFolderIds identifica las carpetas para las operaciones FindItem y FindFolder buscar.
-ms.openlocfilehash: 7c4dcc98d1cabc8e97f2846880c73111dd307dfb
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: El elemento ParentFolderIds identifica las carpetas para las operaciones FindItem y FindFolder que se van a buscar.
+ms.openlocfilehash: 6bc4b9cfe96c6c83cbeb623ec176e33177356bbc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354172"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465432"
 ---
 # <a name="parentfolderids"></a>ParentFolderIds
 
-El elemento **ParentFolderIds** identifica las carpetas para las operaciones FindItem y FindFolder buscar. 
+El elemento **ParentFolderIds** identifica las carpetas para las operaciones FindItem y FindFolder que se van a buscar. 
   
 ```xml
 <ParentFolderIds>
@@ -39,39 +39,39 @@ El elemento **ParentFolderIds** identifica las carpetas para las operaciones Fin
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Contiene el identificador y cambiar la clave de una carpeta. El elemento **ParentFolderIds** debe usar este elemento o el elemento [DistinguishedFolderId](distinguishedfolderid.md) .  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifica las carpetas de Microsoft Exchange Server 2007 que se pueden hacer referencia por su nombre. El elemento **ParentFolderIds** debe usar este elemento o el elemento [FolderId](folderid.md) .  <br/> |
+|[FolderId](folderid.md) <br/> |Contiene el identificador y la clave de cambio de una carpeta. El elemento **ParentFolderIds** debe usar este elemento o el elemento [DistinguishedFolderId](distinguishedfolderid.md) .  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifica las carpetas de Microsoft Exchange Server 2007 a las que se puede hacer referencia por su nombre. El elemento **ParentFolderIds** debe usar este elemento o el elemento [FolderId](folderid.md) .  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FindFolder](findfolder.md) <br/> |Define una solicitud para identificar las carpetas de un buzón de correo.  <br/> |
-|[FindItem](finditem.md) <br/> |Define una solicitud para buscar elementos en un buzón de correo.  <br/> |
+|[FindFolder](findfolder.md) <br/> |Define una solicitud para identificar las carpetas en un buzón.  <br/> |
+|[FindItem](finditem.md) <br/> |Define una solicitud para buscar elementos en un buzón.  <br/> |
 |[ResolveNames](resolvenames.md) <br/> |Define una solicitud para resolver nombres ambiguos.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El elemento **ParentFolderIds** debe usar el [FolderId](folderid.md) o el elemento [DistinguishedFolderId](distinguishedfolderid.md) . Puede definirse un número ilimitado de carpetas para la búsqueda. 
+El elemento **ParentFolderIds** debe usar el elemento [FolderId](folderid.md) o [DistinguishedFolderId](distinguishedfolderid.md) . Se puede definir un número ilimitado de carpetas para la búsqueda. 
   
 ## <a name="example"></a>Ejemplo
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <FindFolder Traversal="Shallow" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <FindFolder Traversal="Shallow" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <FolderShape>
         <t:BaseShape>Default</t:BaseShape>
       </FolderShape>
@@ -87,10 +87,10 @@ El elemento **ParentFolderIds** debe usar el [FolderId](folderid.md) o el elemen
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

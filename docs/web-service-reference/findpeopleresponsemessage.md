@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ba686738-e654-404d-ab54-83c71d030350
-description: El elemento FindPeopleResponseMessage especifica el mensaje de respuesta de una solicitud de FindPeople.
-ms.openlocfilehash: 205f20b26b5097d24de45c5a5f9681f3557a6f87
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento FindPeopleResponseMessage especifica el mensaje de respuesta para una solicitud de FindPeople.
+ms.openlocfilehash: 5a2ce7b8643fff9d4a93b62459638d3a99605c98
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764655"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466377"
 ---
 # <a name="findpeopleresponsemessage"></a>FindPeopleResponseMessage
 
-El elemento **FindPeopleResponseMessage** especifica el mensaje de respuesta de una solicitud de **FindPeople** . 
+El elemento **FindPeopleResponseMessage** especifica el mensaje de respuesta para una solicitud de **FindPeople** . 
   
 ```XML
 <FindPeopleResponseMessage>
@@ -33,15 +33,15 @@ El elemento **FindPeopleResponseMessage** especifica el mensaje de respuesta de 
  **FindPeopleResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [personas](people.md) | [TotalNumberOfPeopleInView](totalnumberofpeopleinview.md)
+[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)  |  [Personas](people.md)  |  [TotalNumberOfPeopleInView](totalnumberofpeopleinview.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -57,9 +57,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

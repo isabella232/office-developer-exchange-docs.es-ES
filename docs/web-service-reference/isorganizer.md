@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a31ac268-5061-4272-a433-ffaea2fbcfa9
 description: El elemento IsOrganizer especifica un valor booleano que indica si esta persona es el organizador de la reunión.
-ms.openlocfilehash: 5fd775cfc0a296c08d19d0468d96aa36ba67ddd0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 45b7a66068dc00f6e60b7380240bea6836282fd4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836063"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44466566"
 ---
 # <a name="isorganizer"></a>IsOrganizer
 
@@ -26,26 +26,26 @@ El elemento **IsOrganizer** especifica un valor booleano que indica si esta pers
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Representa un mensaje de reunión.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **IsOrganizer** indica que el mensaje de reunión o elemento de calendario creado por el usuario. Un valor de **false** indica que el mensaje de reunión o elemento de calendario no se ha creado el usuario bv. 
+Un valor de texto de **true** para el elemento **IsOrganizer** indica que el elemento de calendario o el mensaje de reunión fue creado por el usuario. Un valor de **false** indica que no se ha creado el elemento de calendario o el mensaje de reunión BV al usuario. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -57,14 +57,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

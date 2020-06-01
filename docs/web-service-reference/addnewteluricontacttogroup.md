@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: cff8ef19-3e19-4107-9b35-c8a2b87a41bc
-description: El elemento AddNewTelUriContactToGroup especifica los datos de entrada para la operación WSDL AddNewTelUriContactToGroup.
-ms.openlocfilehash: d99d557530397aa9edd2c23b595bdcb348783dd4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AddNewTelUriContactToGroup especifica los datos de entrada para la operación WSDL de AddNewTelUriContactToGroup.
+ms.openlocfilehash: 151c5b1dab7a3ffc9630fb4e4192b90bd1d4ae38
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763408"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464934"
 ---
 # <a name="addnewteluricontacttogroup"></a>AddNewTelUriContactToGroup
 
-El elemento **AddNewTelUriContactToGroup** especifica los datos de entrada para la operación de WSDL **AddNewTelUriContactToGroup** . 
+El elemento **AddNewTelUriContactToGroup** especifica los datos de entrada para la operación WSDL de **AddNewTelUriContactToGroup** . 
   
 ```XML
 <AddNewTelUriContactToGroup>
@@ -31,15 +31,15 @@ El elemento **AddNewTelUriContactToGroup** especifica los datos de entrada para 
  **AddNewTelUriContactToGroupType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[TelUriAddress](teluriaddress.md) | [ImContactSipUriAddress](imcontactsipuriaddress.md) | [ImTelephoneNumber](imtelephonenumber.md) | [GroupId](groupid.md)
+[TelUriAddress](teluriaddress.md)  |  [ImContactSipUriAddress](imcontactsipuriaddress.md)  |  [ImTelephoneNumber](imtelephonenumber.md)  |  [GROUPID](groupid.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,13 +55,13 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación AddNewTelUriContactToGroup](addnewteluricontacttogroup-operation.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

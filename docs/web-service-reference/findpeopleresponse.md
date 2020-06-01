@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 95f016a9-002f-4be3-abd6-f5e3528afd44
-description: El elemento FindPeopleResponse especifica la respuesta a una solicitud de FindPeople.
-ms.openlocfilehash: 4f2c2f6069a515d5153ea488b35182d8b35f029f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento FindPeopleResponse especifica la respuesta a una solicitud FindPeople.
+ms.openlocfilehash: b969ac3f7bc2bbd3fc77bf753a15696c3b6d8216
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764649"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466405"
 ---
 # <a name="findpeopleresponse"></a>FindPeopleResponse
 
-El elemento **FindPeopleResponse** especifica la respuesta a una solicitud de **FindPeople** . 
+El elemento **FindPeopleResponse** especifica la respuesta a una solicitud **FindPeople** . 
   
 ```XML
 <FindPeopleResponse ResponseClass=" Success | Warning | Error ">
@@ -33,11 +33,11 @@ El elemento **FindPeopleResponse** especifica la respuesta a una solicitud de **
  **FindPeopleResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
 |ResponseClass  <br/> |Especifica la clase de respuesta.  <br/> |
    
@@ -45,26 +45,26 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Correcto  <br/> |Indica éxito.  <br/> |
+|Correcto  <br/> |Indica que se ha realizado correctamente.  <br/> |
 |Advertencia  <br/> |Indica una advertencia.  <br/> |
 |Error  <br/> |Indica un error.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Personas](people.md) <br/> |Especifica una matriz de datos de rol devueltos como resultado de una solicitud de **FindPeople** .  <br/> |
-|[TotalNumberOfPeopleInView](totalnumberofpeopleinview.md) <br/> |Especifica el número total de roles almacenados en un servidor que se devuelven por una solicitud de **FindPeople** .  <br/> |
+|[Personas](people.md) <br/> |Especifica una matriz de datos de rol devueltos como resultado de una solicitud **FindPeople** .  <br/> |
+|[TotalNumberOfPeopleInView](totalnumberofpeopleinview.md) <br/> |Especifica el número total de roles almacenados en un servidor devueltos por una solicitud **FindPeople** .  <br/> |
 |[MessageText](messagetext.md) <br/> |Proporciona una descripción de texto del estado de la respuesta.  <br/> |
-|[ResponseCode](responsecode.md) <br/> |Proporciona información de estado acerca de la solicitud.  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Actualmente no utilizado y reservado para uso futuro.  <br/> |
-|[MessageXml](messagexml.md) <br/> |Proporciona información de la respuesta de error adicionales.  <br/> |
+|[ResponseCode](responsecode.md) <br/> |Proporciona información de estado sobre la solicitud.  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Actualmente no está en uso y reservado para uso futuro.  <br/> |
+|[MessageXml](messagexml.md) <br/> |Proporciona información de respuesta de error adicional.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Especifica una matriz de los mensajes de respuesta.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Especifica una matriz de mensajes de respuesta.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -76,14 +76,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

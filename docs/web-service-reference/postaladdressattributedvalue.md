@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0f92aa41-1499-4d96-a973-24529ec64d24
-description: El elemento PostalAddressAttributedValue especifica una instancia de una matriz de direcciones postales y sus atribuciones asociados.
-ms.openlocfilehash: f2b8b9818e39780b934522910d016875dbe5af2e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PostalAddressAttributedValue especifica una instancia de una matriz de direcciones postales y sus atribuciones asociadas.
+ms.openlocfilehash: bf5becca8ee0f143728010c5d0b1ed5a380838ff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836854"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465383"
 ---
 # <a name="postaladdressattributedvalue"></a>PostalAddressAttributedValue
 
-El elemento **PostalAddressAttributedValue** especifica una instancia de una matriz de direcciones postales y sus atribuciones asociados. 
+El elemento **PostalAddressAttributedValue** especifica una instancia de una matriz de direcciones postales y sus atribuciones asociadas. 
   
 ```XML
 <PostalAddressAttributedValue>
@@ -29,19 +29,19 @@ El elemento **PostalAddressAttributedValue** especifica una instancia de una mat
  **PostalAddressAttributedValueType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Valor (PersonaPostalAddressType)](value-personapostaladdresstype.md) | [atribuciones (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
+[Valor (PersonaPostalAddressType)](value-personapostaladdresstype.md)  |  [Atribuciones (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[BusinessAddresses](businessaddresses.md) | [HomeAddresses](homeaddresses.md) | [OtherAddresses](otheraddresses.md)
+[BusinessAddresses](businessaddresses.md)  |  [HomeAddresses](homeaddresses.md)  |  [OtherAddresses](otheraddresses.md)
   
 ## <a name="remarks"></a>Comentarios
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

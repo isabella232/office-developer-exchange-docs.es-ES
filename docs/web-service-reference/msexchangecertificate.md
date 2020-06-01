@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c514f22f-be3e-4cad-ac56-bdff6bafcee6
-description: El elemento MSExchangeCertificate contiene un valor que se codifica el certificado de Microsoft Exchange de un contacto.
-ms.openlocfilehash: 8d07198012485b5c6d22e1fb4721890bf9a5eb39
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MSExchangeCertificate contiene un valor que codifica el certificado de Microsoft Exchange de un contacto.
+ms.openlocfilehash: 60bbcfb45e52dc92140d03cdd24a251ea84217b1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836498"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465677"
 ---
 # <a name="msexchangecertificate"></a>MSExchangeCertificate
 
-El elemento **MSExchangeCertificate** contiene un valor que se codifica el certificado de Microsoft Exchange de un contacto. 
+El elemento **MSExchangeCertificate** contiene un valor que codifica el certificado de Microsoft Exchange de un contacto. 
   
 ```XML
 <MSExchangeCertificate/>
@@ -26,23 +26,23 @@ El elemento **MSExchangeCertificate** contiene un valor que se codifica el certi
  **ArrayOfBinaryType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Nombre del elemento**|**Descripción**|
 |:-----|:-----|
-|[Base64Binary](base64binary.md) <br/> |Contiene un valor con codificación Base64.  <br/> |
+|[Base64Binary](base64binary.md) <br/> |Contiene un valor codificado en Base64.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Nombre del elemento**|**Descripción**|
 |:-----|:-----|
-|[Contact](contact.md) <br/> |Representa un elemento de contacto en el almacén de Exchange.  <br/> |
+|[Contacto](contact.md) <br/> |Representa un elemento de contacto en el almacén de Exchange.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -58,17 +58,17 @@ Este elemento se introdujo en Exchange Server 2010 Service Pack 2 (SP2).
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Creación de contactos (servicios Web de Exchange)](http://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
+[Creación de contactos (servicios Web de Exchange)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
 

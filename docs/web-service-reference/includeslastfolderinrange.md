@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 95837904-17be-49b7-831c-de4fb20fccfb
-description: El elemento IncludesLastFolderInRange indica si el último elemento para sincronizar se ha incluido en la respuesta.
-ms.openlocfilehash: 6c4af5b394ee2fab6bc98f7bb6afa9ee80551869
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento IncludesLastFolderInRange indica si el último elemento que se va a sincronizar se ha incluido en la respuesta.
+ms.openlocfilehash: 9ba401cf639ef7988fa7a1437a64d09ff54c5960
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835908"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466454"
 ---
 # <a name="includeslastfolderinrange"></a>IncludesLastFolderInRange
 
-El elemento **IncludesLastFolderInRange** indica si el último elemento para sincronizar se ha incluido en la respuesta. 
+El elemento **IncludesLastFolderInRange** indica si el último elemento que se va a sincronizar se ha incluido en la respuesta. 
   
 [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md)
   
@@ -38,38 +38,38 @@ El elemento **IncludesLastFolderInRange** indica si el último elemento para sin
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SyncFolderHierarchyResponseMessage](syncfolderhierarchyresponsemessage.md) <br/> |Contiene el estado y el resultado de una solicitud de SyncFolderHierarchy.  <br/> |
+|[SyncFolderHierarchyResponseMessage](syncfolderhierarchyresponsemessage.md) <br/> |Contiene el estado y el resultado de una solicitud SyncFolderHierarchy.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto que representa un valor de tipo Boolean.
+Se requiere un valor de texto que representa un valor booleano.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -80,5 +80,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 
 [Referencia EWS para Exchange](ews-reference-for-exchange.md)
   
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

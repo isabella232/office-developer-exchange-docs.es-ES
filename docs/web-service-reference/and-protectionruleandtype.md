@@ -1,5 +1,5 @@
 ---
-title: Y (ProtectionRuleAndType)
+title: And (ProtectionRuleAndType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7fafd1c8-cd29-43a0-b383-f6595f934f48
-description: El elemento y especifica que todos los elementos secundarios deben coincidir para que se evalúa como verdadero.
-ms.openlocfilehash: 9e0128ee3fa2b6ffdc5975946694475afec53c25
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento y especifica que todos los elementos secundarios deben coincidir para que se evalúen como true.
+ms.openlocfilehash: ba898ccd77518971afaf713d1c7c7955f46465d5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763437"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464738"
 ---
-# <a name="and-protectionruleandtype"></a>Y (ProtectionRuleAndType)
+# <a name="and-protectionruleandtype"></a>And (ProtectionRuleAndType)
 
-El elemento **y** especifica que todos los elementos secundarios deben coincidir para que se evalúa como **true**.
+El elemento **y** especifica que todos los elementos secundarios deben coincidir para que se evalúen como **true**.
   
 ```xml
 <And>
@@ -36,28 +36,28 @@ El elemento **y** especifica que todos los elementos secundarios deben coincidir
  **ProtectionRuleAndType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[AllInternal](allinternal.md) <br/> |Se evalúa como **true** si todos los destinatarios de un mensaje de correo electrónico son internos a la organización del remitente.  <br/> |
-|**And** <br/> |Especifica que deben coincidir con todos los elementos secundarios para evaluar en **true**.  <br/> |
-|[RecipientIs](recipientis.md) <br/> |Especifica que todos los destinatarios del mensaje de correo electrónico coincide con cualquiera de los destinatarios especificados en el [valor (ProtectionRuleValueType)](value-protectionrulevaluetype.md) los elementos secundarios.  <br/> |
-|[SenderDepartments](senderdepartments.md) <br/> |Especifica que el departamento del remitente coincide con cualquiera de los departamentos especificados en el [valor (ProtectionRuleValueType)](value-protectionrulevaluetype.md) los elementos secundarios.  <br/> |
-|[True](true.md) <br/> |Especifica una condición que siempre coincide con.  <br/> |
+|**And** <br/> |Especifica que todos los elementos secundarios deben coincidir para evaluarse en **true**.  <br/> |
+|[Destinatarioes](recipientis.md) <br/> |Especifica que cualquier destinatario del mensaje de correo electrónico coincide con cualquiera de los destinatarios especificados en los elementos de [valor secundario (ProtectionRuleValueType)](value-protectionrulevaluetype.md) .  <br/> |
+|[SenderDepartments](senderdepartments.md) <br/> |Especifica que el Departamento del remitente coincide con cualquiera de los departamentos especificados en los elementos de [valor secundario (ProtectionRuleValueType)](value-protectionrulevaluetype.md) .  <br/> |
+|[True](true.md) <br/> |Especifica una condición que siempre coincide.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Condición](condition.md) <br/> |Identifica la condición que debe cumplirse para el elemento de acción de la regla que se va a ejecutar.  <br/> |
-|**And** <br/> |Especifica que deben coincidir con todos los elementos secundarios para evaluar en **true**.  <br/> |
+|[Condición](condition.md) <br/> |Identifica la condición que debe cumplirse para que se ejecute la parte de acción de la regla.  <br/> |
+|**And** <br/> |Especifica que todos los elementos secundarios deben coincidir para evaluarse en **true**.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -71,12 +71,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

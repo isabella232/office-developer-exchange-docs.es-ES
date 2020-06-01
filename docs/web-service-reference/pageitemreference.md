@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: efeb5a93-c77f-44f1-b9af-8759acd2c8b5
-description: El elemento PageItemReference especifica la referencia de un elemento de página.
-ms.openlocfilehash: 36f22fee2cd8ef4743476e7d12512504daee12e4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PageItemReference especifica la referencia para un elemento de página.
+ms.openlocfilehash: ff53f82f6346e24f7d73373330ce4f5abb5ec475
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836683"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465649"
 ---
 # <a name="pageitemreference"></a>PageItemReference
 
-El elemento **PageItemReference** especifica la referencia de un elemento de página. 
+El elemento **PageItemReference** especifica la referencia para un elemento de página. 
   
 ```XML
 <PageItemReference></PageItemReference>
@@ -26,15 +26,15 @@ El elemento **PageItemReference** especifica la referencia de un elemento de pá
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **PageItemReference** es la referencia para un elemento de página. 
+El valor de texto del elemento **PageItemReference** es la referencia de un elemento de página. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: d913a70d-5a85-4b6e-becc-2fb9334b6088
-description: El elemento AlternateMailbox representa un buzón de alternativo.
-ms.openlocfilehash: 8eb53e4846ad55916e2c5876606c00c0f2e371ac
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AlternateMailbox representa un buzón de correo alternativo.
+ms.openlocfilehash: 9019f85a373cc186cc9dadddceee3dc9d11b3854
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763483"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44466160"
 ---
 # <a name="alternatemailbox-soap"></a>AlternateMailbox (SOAP)
 
-El elemento **AlternateMailbox** representa un buzón de alternativo. 
+El elemento **AlternateMailbox** representa un buzón de correo alternativo. 
   
 ```XML
 <AlternateMailbox>
@@ -33,39 +33,39 @@ El elemento **AlternateMailbox** representa un buzón de alternativo.
  **AlternateMailbox**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Tipo (SOAP)](type-soap.md) <br/> |Representa el tipo de buzón de correo alternativas.  <br/> |
-|[DisplayName (SOAP)](displayname-soap.md) <br/> |Representa el nombre para mostrar de buzón de correo alternativas.  <br/> |
-|[LegacyDN (SOAP)](legacydn-soap.md) <br/> |Representa el nombre distintivo heredado de buzón de correo alternativas.  <br/> |
-|[Servidor (SOAP)](server-soap.md) <br/> |Representa el servidor de buzones alternativas.  <br/> |
-|[SmtpAddress (SOAP)](smtpaddress-soap.md) <br/> |Representa la dirección SMTP del buzón de correo alternativa.  <br/> |
+|[Tipo (SOAP)](type-soap.md) <br/> |Representa el tipo de buzón alternativo.  <br/> |
+|[DisplayName (SOAP)](displayname-soap.md) <br/> |Representa el nombre para mostrar del buzón alternativo.  <br/> |
+|[LegacyDN (SOAP)](legacydn-soap.md) <br/> |Representa el nombre distintivo heredado de buzón alternativo.  <br/> |
+|[Servidor (SOAP)](server-soap.md) <br/> |Representa el servidor de buzones de correo alternativo.  <br/> |
+|[SmtpAddress (SOAP)](smtpaddress-soap.md) <br/> |Representa la dirección SMTP de buzón alternativa.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AlternateMailboxes (SOAP)](alternatemailboxes-soap.md) <br/> |Representa una colección de buzones de correo alternativas.  <br/> |
+|[AlternateMailboxes (SOAP)](alternatemailboxes-soap.md) <br/> |Representa una colección de buzones de correo alternativos.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también

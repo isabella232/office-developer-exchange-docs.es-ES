@@ -7,44 +7,44 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e0392635-9d0f-46d5-84ef-0a8a3036479a
-description: El elemento de anotación contiene notas opcionales agregadas por un usuario.
-ms.openlocfilehash: e0170ef9940b64d4c6a10a08182189571f2beb5a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Annotation contiene las notas opcionales agregadas por un usuario.
+ms.openlocfilehash: 291d875085f9bc13e92a14b844b66878f5e6eb2a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763436"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44466118"
 ---
 # <a name="annotation"></a>Anotación
 
-El elemento de **anotación** contiene notas opcionales agregadas por un usuario. 
+El elemento **Annotation** contiene las notas opcionales agregadas por un usuario. 
   
 ```XML
 <Annotation></Annotation>
 ```
 
- **xs: String**
+ **XS: String**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[EnhancedLocation](enhancedlocation.md) <br/> |Especifica la información de ubicación, como el nombre, dirección y notas opcionales sobre una ubicación.  <br/> |
+|[EnhancedLocation](enhancedlocation.md) <br/> |Especifica la información de ubicación, como el nombre, la dirección y las notas opcionales de una ubicación.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de anotación es una usuario ha agregado una nota acerca de una ubicación.
+El valor de texto del elemento Annotation es una nota agregada por el usuario acerca de una ubicación.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,12 +56,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

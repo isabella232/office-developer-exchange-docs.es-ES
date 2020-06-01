@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 28f552d8-6bb8-49b4-a45c-b2053670f1cc
-description: El elemento UsePOPAuth indica si la información de autenticación que se proporciona para un tipo de POP3 de cuenta también se usa para el protocolo Simple de transferencia de correo (SMTP).
-ms.openlocfilehash: be03568d697b1f5461d49dba388a1d3f1008a67e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UsePOPAuth indica si la información de autenticación que se proporciona para un tipo de cuenta POP3 también se usa para el Protocolo simple de transferencia de correo (SMTP).
+ms.openlocfilehash: 8d5bfffaab31c382ad43915e18b8a7a2b2737c21
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840892"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466510"
 ---
 # <a name="usepopauth-pox"></a>UsePOPAuth (POX)
 
-El elemento **UsePOPAuth** indica si la información de autenticación que se proporciona para un tipo de POP3 de cuenta también se usa para el protocolo Simple de transferencia de correo (SMTP). 
+El elemento **UsePOPAuth** indica si la información de autenticación que se proporciona para un tipo de cuenta POP3 también se usa para el Protocolo simple de transferencia de correo (SMTP). 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -36,33 +36,33 @@ El elemento **UsePOPAuth** indica si la información de autenticación que se pr
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente en el equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.  <br/> |
+|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto indica si la información de autenticación que se proporciona para un tipo de POP3 de cuenta también se utiliza para SMTP. Los valores posibles son **encendido** y **apagado**.
+El valor de texto indica si la información de autenticación que se proporciona para un tipo de cuenta POP3 también se usa para SMTP. Los valores posibles son **activado** y **desactivado**.
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento **UsePOPAuth** solo se usa al [Tipo (POX)](type-pox.md) es SMTP. 
+El elemento **UsePOPAuth** solo se usa cuando el [tipo (POX)](type-pox.md) es SMTP. 
   
 ## <a name="see-also"></a>Vea también
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

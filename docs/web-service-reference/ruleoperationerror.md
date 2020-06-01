@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b447e610-d37c-40d3-9158-aa108a9f248e
-description: El elemento RuleOperationError representa un error de la operación de regla.
-ms.openlocfilehash: ff42addea0f55b13794e2c910d4d865ad0b17bc3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RuleOperationError representa un error de operación de regla.
+ms.openlocfilehash: b5e0105a1fdb1564b3115a4c3a8411019f725483
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837265"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44464962"
 ---
 # <a name="ruleoperationerror"></a>RuleOperationError
 
-El elemento **RuleOperationError** representa un error de la operación de regla. 
+El elemento **RuleOperationError** representa un error de operación de regla. 
   
 ```XML
 <RuleOperationError>
@@ -33,24 +33,24 @@ El elemento **RuleOperationError** representa un error de la operación de regla
  **RuleOperationErrorType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[OperationIndex](operationindex.md) <br/> |Indica el índice de la operación en la solicitud que provocó el error de la operación de regla.  <br/> |
-|[ValidationErrors](validationerrors.md) <br/> |Representa una matriz de errores de validación de la regla en cada campo de regla que tiene un error.  <br/> |
+|[OperationIndex](operationindex.md) <br/> |Indica el índice de la operación en la solicitud que causó el error de la operación de la regla.  <br/> |
+|[ValidationErrors](validationerrors.md) <br/> |Representa una matriz de errores de validación de regla en cada campo de regla que tiene un error.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[RuleOperationErrors](ruleoperationerrors.md) <br/> |Representa una matriz de errores de validación de la regla en cada campo de regla que tiene un error.  <br/> |
+|[RuleOperationErrors](ruleoperationerrors.md) <br/> |Representa una matriz de errores de validación de regla en cada campo de regla que tiene un error.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -64,14 +64,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

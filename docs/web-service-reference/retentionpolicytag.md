@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f46679d0-9236-41e2-8624-72300079c67c
-description: El elemento RetentionPolicyTag especifica la directiva de retención para un elemento de buzón de correo.
-ms.openlocfilehash: 2525f6d7a0ca583342d28dd9f4857a69b3a8c05a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RetentionPolicyTag especifica la Directiva de retención de un elemento de buzón.
+ms.openlocfilehash: 3ece841e14e6cf11ab15e4a4d8b83a778ae32e46
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837226"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465180"
 ---
 # <a name="retentionpolicytag"></a>RetentionPolicyTag
 
-El elemento **RetentionPolicyTag** especifica la directiva de retención para un elemento de buzón de correo. 
+El elemento **RetentionPolicyTag** especifica la Directiva de retención de un elemento de buzón. 
   
 ```XML
 <RetentionPolicyTag>
@@ -36,15 +36,15 @@ El elemento **RetentionPolicyTag** especifica la directiva de retención para un
  **RetentionPolicyTagType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[DisplayName (string)](displayname-string.md) | [RetentionId](retentionid.md) | [RetentionPeriod](retentionperiod.md) | [tipo (ElcFolderType)](type-elcfoldertype.md) | [RetentionAction](retentionaction.md) | [Descripción](description.md) | [IsVisible](isvisible.md)  |  [OptedInto](optedinto.md) | [IsArchive](isarchive.md)
+[DisplayName (cadena)](displayname-string.md)  |  [RetentionId](retentionid.md)  |  [RetentionPeriod](retentionperiod.md)  |  [Tipo (ElcFolderType)](type-elcfoldertype.md)  |  [RetentionAction](retentionaction.md)  |  [Descripción](description.md)  |  [IsVisible](isvisible.md)  |  [OptedInto](optedinto.md)  |  [IsArchive](isarchive.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -60,9 +60,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

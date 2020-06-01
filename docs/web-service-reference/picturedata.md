@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1124eac3-ebf2-4b81-96d3-96838c840433
-description: El elemento PictureData contiene la secuencia de datos de imagen.
-ms.openlocfilehash: fb1dcd6ba2ea2b84cd7abd460adc31d3d86e8d87
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PictureData contiene la secuencia de datos de la imagen.
+ms.openlocfilehash: 1d131e88a4927b0b0d3d873ea73973389b46e615
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836822"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466258"
 ---
 # <a name="picturedata"></a>PictureData
 
-El elemento **PictureData** contiene la secuencia de datos de imagen. 
+El elemento **PictureData** contiene la secuencia de datos de la imagen. 
   
 ```XML
 <PictureData></PictureData>
@@ -26,15 +26,15 @@ El elemento **PictureData** contiene la secuencia de datos de imagen.
  **base64Binary**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **PictureData** es la secuencia con codificación base64 de los datos de imagen. 
+El valor de texto del elemento **PictureData** es la secuencia codificada en Base64 de los datos de la imagen. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -1,5 +1,5 @@
 ---
-title: Usuarios asignados
+title: Asigna una
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 20ef18c2-daa0-4f65-a515-e84e9993a77f
-description: El elemento Assignees especifica las personas a quienes se asigna una tarea.
-ms.openlocfilehash: 5fc301cd77268213e95fd33a2a2f36dbe218b512
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Assignments especifica las personas a las que se asigna una tarea.
+ms.openlocfilehash: 3e98273e859dbe2128b0ad3b4df42c8016fd3bc5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763559"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464717"
 ---
-# <a name="assignees"></a>Usuarios asignados
+# <a name="assignees"></a>Asigna una
 
-El elemento **Assignees** especifica las personas a quienes se asigna una tarea. 
+El elemento **Assignments** especifica las personas a las que se asigna una tarea. 
   
 ```XML
 <Assignees>
@@ -29,22 +29,22 @@ El elemento **Assignees** especifica las personas a quienes se asigna una tarea.
  **EmailUserType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Nombre (EmailAddress)](name-emailaddress.md) <br/> |Representa el nombre para mostrar del usuario de buzón de correo.  <br/> |
+|[Nombre (EmailAddress)](name-emailaddress.md) <br/> |Representa el nombre para mostrar del usuario del buzón.  <br/> |
 |[UserId (cadena)](userid-string.md) <br/> |Especifica el identificador de usuario de un usuario de correo electrónico.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[TaskSuggestion](tasksuggestion.md) <br/> |Especifica una tarea propuesta.  <br/> |
    
@@ -58,12 +58,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

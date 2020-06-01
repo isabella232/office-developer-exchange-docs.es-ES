@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 8949a9b7-1871-4031-9a86-61636e695e4c
-description: El elemento OABUrl especifica la dirección URL de servidor de libreta de direcciones sin conexión configuración para una topología de Exchange.
-ms.openlocfilehash: dda622e24892f2a8f0b2186483683ff6d3c28a22
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento OABUrl especifica la dirección URL del servidor de configuración de la libreta de direcciones sin conexión para una topología de Exchange.
+ms.openlocfilehash: ea6efc3160a130a2293fa09534bfd0f76171e7cd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836633"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465894"
 ---
 # <a name="oaburl-pox"></a>OABUrl (POX)
 
-El elemento **OABUrl** especifica la dirección URL de servidor de libreta de direcciones sin conexión configuración para una topología de Exchange. 
+El elemento **OABUrl** especifica la dirección URL del servidor de configuración de la libreta de direcciones sin conexión para una topología de Exchange. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -36,29 +36,29 @@ El elemento **OABUrl** especifica la dirección URL de servidor de libreta de di
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente en el equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.  <br/> |
+|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto especifica la dirección URL de servidor de libreta de direcciones sin conexión configuración para una topología de Exchange.
+El valor de texto especifica la dirección URL del servidor de configuración de la libreta de direcciones sin conexión para una topología de Exchange.
   
 ## <a name="see-also"></a>Vea también
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

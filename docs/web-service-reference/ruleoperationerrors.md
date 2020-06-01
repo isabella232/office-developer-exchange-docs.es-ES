@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f15c7b9e-a670-4a11-bb62-2a298c91f142
-description: El elemento RuleOperationErrors representa una matriz de errores de validación de la regla en cada campo de regla que tiene un error.
-ms.openlocfilehash: 7dc85b5cd84af5ad00511a3df2b31ee3541e12b7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RuleOperationErrors representa una matriz de errores de validación de regla en cada campo de regla que tiene un error.
+ms.openlocfilehash: d547155f3cbf9eedd0f9bfac7bf3768b3630b50e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837261"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44464955"
 ---
 # <a name="ruleoperationerrors"></a>RuleOperationErrors
 
-El elemento **RuleOperationErrors** representa una matriz de errores de validación de la regla en cada campo de regla que tiene un error. 
+El elemento **RuleOperationErrors** representa una matriz de errores de validación de regla en cada campo de regla que tiene un error. 
   
 [UpdateInboxRulesResponse](updateinboxrulesresponse.md)
   
@@ -32,23 +32,23 @@ El elemento **RuleOperationErrors** representa una matriz de errores de validaci
  **ArrayOfRuleOperationErrorsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[RuleOperationError](ruleoperationerror.md) <br/> |Representa un error de la operación de regla.  <br/> |
+|[RuleOperationError](ruleoperationerror.md) <br/> |Representa un error de operación de regla.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UpdateInboxRulesResponse](updateinboxrulesresponse.md) <br/> |Define una respuesta a una solicitud de [UpdateInboxRules](updateinboxrules.md) .  <br/> |
+|[UpdateInboxRulesResponse](updateinboxrulesresponse.md) <br/> |Define una respuesta a una solicitud [UpdateInboxRules](updateinboxrules.md) .  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -62,9 +62,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
@@ -74,5 +74,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [UpdateInboxRules](updateinboxrules.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

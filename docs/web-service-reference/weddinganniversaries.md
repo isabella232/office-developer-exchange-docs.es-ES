@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9e1388cc-ddc4-42f7-889b-17d781e80ace
-description: El elemento WeddingAnniversaries especifica una matriz de las fechas de aniversario de despedida, almacenados como cadenas y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: c8671541c31fe1d3ea9408c7128aea1955a3f0a1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento WeddingAnniversaries especifica una matriz de fechas de aniversario de boda, almacenada como cadenas, y los identificadores de sus atribuciones de origen para el rol asociado.
+ms.openlocfilehash: 0aa55af7a546a7a403a75e2dabb753bb8d76ece7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840988"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464885"
 ---
 # <a name="weddinganniversaries"></a>WeddingAnniversaries
 
-El elemento **WeddingAnniversaries** especifica una matriz de las fechas de aniversario de despedida, almacenados como cadenas y los identificadores de sus atribuciones de origen para el rol asociado. 
+El elemento **WeddingAnniversaries** especifica una matriz de fechas de aniversario de boda, almacenada como cadenas, y los identificadores de sus atribuciones de origen para el rol asociado. 
   
 ```XML
 <WeddingAnniversaries>
@@ -28,11 +28,11 @@ El elemento **WeddingAnniversaries** especifica una matriz de las fechas de aniv
  **ArrayOfStringAttributedValuesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -1,5 +1,5 @@
 ---
-title: PlayOnPhoneDialString (servicios Web de Exchange)
+title: PlayOnPhoneDialString (servicios web Exchange)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 02b77f6a-042d-49a9-9445-342885c43e99
-description: El elemento PlayOnPhoneDialString identifica la cadena de marcado de reproducir en teléfono.
-ms.openlocfilehash: 0bc61d6dc32cd0db80599348f1d04c62774954d7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PlayOnPhoneDialString identifica la cadena de marcado de reproducción en teléfono.
+ms.openlocfilehash: 310934895295af179e651b94c33dfb86d0f94e1d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836827"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466223"
 ---
-# <a name="playonphonedialstring-exchange-web-services"></a>PlayOnPhoneDialString (servicios Web de Exchange)
+# <a name="playonphonedialstring-exchange-web-services"></a>PlayOnPhoneDialString (servicios web Exchange)
 
-El elemento **PlayOnPhoneDialString** identifica la cadena de marcado de reproducir en teléfono. 
+El elemento **PlayOnPhoneDialString** identifica la cadena de marcado de reproducción en teléfono. 
   
 ```XML
 <PlayOnPhoneDialString/>
@@ -30,25 +30,25 @@ El elemento **PlayOnPhoneDialString** identifica la cadena de marcado de reprodu
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Contiene información de configuración de servicio para el servicio de mensajería unificada.  <br/> |
+|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Contiene información de configuración del servicio para el servicio de mensajería unificada.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto para este elemento es la cadena de marcado de reproducir en teléfono.
+El valor de texto de este elemento es la cadena de marcado de reproducción en teléfono.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -60,14 +60,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

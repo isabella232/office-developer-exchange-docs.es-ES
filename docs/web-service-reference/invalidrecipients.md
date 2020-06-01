@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e4e7b50e-2fa9-4649-94a6-6002f341ecc4
-description: El elemento InvalidRecipients representa a los destinatarios de una solicitud de uso compartido de carpeta que no son válidos.
-ms.openlocfilehash: 02ad8935bde347c563875bf5bfb31968b70d81b6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento InvalidRecipients representa los destinatarios de una solicitud de uso compartido de carpetas que no son válidos.
+ms.openlocfilehash: 99e0817f0ff873c4732b03cc7d68aa8e0070813c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835966"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465565"
 ---
 # <a name="invalidrecipients"></a>InvalidRecipients
 
-El elemento **InvalidRecipients** representa a los destinatarios de una solicitud de uso compartido de carpeta que no son válidos. 
+El elemento **InvalidRecipients** representa los destinatarios de una solicitud de uso compartido de carpetas que no son válidos. 
   
 ```XML
 <InvalidRecipients>
@@ -32,24 +32,24 @@ El elemento **InvalidRecipients** representa a los destinatarios de una solicitu
  **ArrayOfInvalidRecipientsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[InvalidRecipient](invalidrecipient.md) <br/> |Contiene la dirección SMTP del destinatario no válido y la información acerca de por qué el destinatario no es válido.  <br/> |
+|[InvalidRecipient](invalidrecipient.md) <br/> |Contiene la dirección SMTP del destinatario no válido e información sobre por qué el destinatario no es válido.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetSharingMetadataResponse](getsharingmetadataresponse.md) <br/> |Define una respuesta a una solicitud de [operación GetSharingMetadata](getsharingmetadata-operation.md) .  <br/> |
-|[GetSharingMetadataResponseMessage](getsharingmetadataresponsemessage.md) <br/> |Contiene el estado y el resultado de una única solicitud de [operación GetSharingMetadata](getsharingmetadata-operation.md) .  <br/> |
+|[GetSharingMetadataResponse](getsharingmetadataresponse.md) <br/> |Define una respuesta a una solicitud de [operación de GetSharingMetadata](getsharingmetadata-operation.md) .  <br/> |
+|[GetSharingMetadataResponseMessage](getsharingmetadataresponsemessage.md) <br/> |Contiene el estado y el resultado de una sola solicitud de [operación GetSharingMetadata](getsharingmetadata-operation.md) .  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -59,10 +59,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -71,5 +71,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación GetSharingMetadata](getsharingmetadata-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

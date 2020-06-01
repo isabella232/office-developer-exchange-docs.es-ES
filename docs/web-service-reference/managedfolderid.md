@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3efb7abb-0e91-4d8a-9fa2-3dec8bd17c30
-description: El elemento ManagedFolderId contiene el identificador de la carpeta de la carpeta administrada.
-ms.openlocfilehash: acdb69f82678633baff12c46494c39015c36d233
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ManagedFolderId contiene el identificador de carpeta de la carpeta administrada.
+ms.openlocfilehash: eacfe580342e6667fd9fc84ad953a5e4070b6ed7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836340"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465824"
 ---
 # <a name="managedfolderid"></a>ManagedFolderId
 
-El elemento **ManagedFolderId** contiene el identificador de la carpeta de la carpeta administrada. 
+El elemento **ManagedFolderId** contiene el identificador de carpeta de la carpeta administrada. 
   
 ```xml
 <ManagedFolderId/>
@@ -30,40 +30,40 @@ El elemento **ManagedFolderId** contiene el identificador de la carpeta de la ca
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[ManagedFolderInformation](managedfolderinformation.md) <br/> |Contiene información acerca de una carpeta administrada.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto es necesario para este elemento.
+Se requiere un valor de texto para este elemento.
   
 ## <a name="remarks"></a>Comentarios
 
-El valor de identificador de **ManagedFolderId** es el equivalente de la propiedad **Guid** que se recupera mediante la `Get-ManagedFolder` comando de Microsoft Windows Powershell. También es el valor del atributo **GUID de objeto** para la carpeta administrada en el servicio de directorio de Active Directory. 
+El valor de identificador **ManagedFolderId** es el equivalente de la propiedad **GUID** que recupera el comando de `Get-ManagedFolder` Microsoft Windows PowerShell. También es el valor del atributo **objectGUID** para la carpeta administrada en el servicio de directorio de Active Directory. 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -72,10 +72,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [Operación CreateManagedFolder](createmanagedfolder-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Eliminación de carpetas](http://msdn.microsoft.com/library/1958add5-5071-4239-adb2-40f7a7d74aee%28Office.15%29.aspx)
+[Eliminar carpetas](https://msdn.microsoft.com/library/1958add5-5071-4239-adb2-40f7a7d74aee%28Office.15%29.aspx)
   
-[Adición de las carpetas administradas](http://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)
+[Adición de carpetas administradas](https://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)
 

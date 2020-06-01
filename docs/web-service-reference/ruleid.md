@@ -1,5 +1,5 @@
 ---
-title: Identificador de regla
+title: RuleId
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 456e3c34-e536-456a-ac40-7fd4f94c0bad
-description: El elemento de identificador de regla especifica un identificador de regla.
-ms.openlocfilehash: 4dfa71c9fb6ee362d776487952199f2430e5e4a9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ID de regla especifica un identificador de regla.
+ms.openlocfilehash: 28fda7abbbbfd43be38d1ac4e5c37d37037993bc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837260"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44464997"
 ---
-# <a name="ruleid"></a>Identificador de regla
+# <a name="ruleid"></a>RuleId
 
-El elemento de **identificador de regla** especifica un identificador de regla. 
+El elemento ID de regla especifica un **identificador de regla** . 
   
 ```XML
 <RuleId/>
@@ -30,26 +30,26 @@ El elemento de **identificador de regla** especifica un identificador de regla.
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Regla (RuleType)](rule-ruletype.md) <br/> |Representa una regla en el buzón del usuario.  <br/> |
+|[Regla (RuleType)](rule-ruletype.md) <br/> |Representa una regla en el buzón de correo del usuario.  <br/> |
 |[DeleteRuleOperation](deleteruleoperation.md) <br/> |Representa la operación para eliminar una regla de bandeja de entrada existente.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto es un valor de tipo string que representa la regla.
+El valor de texto es un valor de cadena que representa la regla.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -59,14 +59,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

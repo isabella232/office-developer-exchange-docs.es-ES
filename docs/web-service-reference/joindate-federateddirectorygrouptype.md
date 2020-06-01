@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: dc85d67d-7637-433b-b4b6-c44faf247464
-description: El elemento JoinDate (FederatedDirectoryGroupType) está pensado para uso interno únicamente.
-ms.openlocfilehash: 73ffab47ffe34dcea1fc0fad0608c535d655ab62
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento JoinDate (FederatedDirectoryGroupType) está destinado exclusivamente para uso interno.
+ms.openlocfilehash: 1dbce71c6e5ccfb7dcbc6795e37310b283e849f4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836181"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466433"
 ---
 # <a name="joindate-federateddirectorygrouptype"></a>JoinDate (FederatedDirectoryGroupType)
 
-El elemento **JoinDate (FederatedDirectoryGroupType)** está pensado para uso interno únicamente. 
+El elemento **JoinDate (FederatedDirectoryGroupType)** está destinado exclusivamente para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

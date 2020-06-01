@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7cbdbc21-5405-4cbc-8ca0-d7b0257927aa
-description: El elemento NonIndexableItemDetailsResult especifica los resultados de la operación WSDL GetNonIndexableItemDetails.
-ms.openlocfilehash: 6e271f2cf0e37f26b945332c94167b6a42354115
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento NonIndexableItemDetailsResult especifica los resultados de la operación WSDL de GetNonIndexableItemDetails.
+ms.openlocfilehash: 647f58b5e7285af70bbfb3a203ba71c9a3ccebcc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836535"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465446"
 ---
 # <a name="nonindexableitemdetailsresult"></a>NonIndexableItemDetailsResult
 
-El elemento **NonIndexableItemDetailsResult** especifica los resultados de la operación de WSDL **GetNonIndexableItemDetails** . 
+El elemento **NonIndexableItemDetailsResult** especifica los resultados de la operación WSDL de **GetNonIndexableItemDetails** . 
   
 ```XML
 <NonIndexableItemDetailsResult>
@@ -29,15 +29,15 @@ El elemento **NonIndexableItemDetailsResult** especifica los resultados de la op
  **NonIndexableItemDetailResultType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Elementos (ArrayOfNonIndexableItemDetailsType)](items-arrayofnonindexableitemdetailstype.md) , [FailedMailboxes](failedmailboxes.md)
+[Items (ArrayOfNonIndexableItemDetailsType)](items-arrayofnonindexableitemdetailstype.md) , [FailedMailboxes](failedmailboxes.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -53,10 +53,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -65,5 +65,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación GetNonIndexableItemDetails](getnonindexableitemdetails-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

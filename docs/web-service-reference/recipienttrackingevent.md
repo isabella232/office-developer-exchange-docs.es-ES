@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2bffdac7-c2f5-4805-ae7e-bd865301acb6
-description: El elemento RecipientTrackingEvent contiene información de un solo evento de un destinatario.
-ms.openlocfilehash: c5488ba105f9a853a490d6f0f4ff9ff15b537e23
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RecipientTrackingEvent contiene información de un evento único para un destinatario.
+ms.openlocfilehash: e9a014cdfac122f112205cfa5032535a770f9d82
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836989"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465488"
 ---
 # <a name="recipienttrackingevent"></a>RecipientTrackingEvent
 
-El elemento **RecipientTrackingEvent** contiene información de un solo evento de un destinatario. 
+El elemento **RecipientTrackingEvent** contiene información de un evento único para un destinatario. 
   
 ```XML
 <RecipientTrackingEvent>
@@ -43,18 +43,18 @@ El elemento **RecipientTrackingEvent** contiene información de un solo evento d
  **RecipientTrackingEventType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Fecha (MessageTracking)](date-messagetracking.md) <br/> |Se requiere este elemento.  <br/> |
-|[Recipient](recipient.md) <br/> |Se requiere este elemento.  <br/> |
+|[Destinatario](recipient.md) <br/> |Se requiere este elemento.  <br/> |
 |[DeliveryStatus](deliverystatus.md) <br/> |Se requiere este elemento.  <br/> |
 |[EventDescription](eventdescription.md) <br/> |Se requiere este elemento.  <br/> |
 |[EventData](eventdata.md) <br/> |Este elemento es opcional.  <br/> |
@@ -68,9 +68,9 @@ Ninguno.
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[RecipientTrackingEvents](recipienttrackingevents.md) <br/> |Contiene una lista de uno o más eventos de seguimiento para un destinatario.  <br/> |
+|[RecipientTrackingEvents](recipienttrackingevents.md) <br/> |Contiene una lista de uno o más eventos de seguimiento de un destinatario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -84,10 +84,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -96,5 +96,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación GetMessageTrackingReport](getmessagetrackingreport-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

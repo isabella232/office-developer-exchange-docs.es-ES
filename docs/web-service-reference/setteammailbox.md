@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5d6ee7cc-8f88-4de2-ae5c-cabf2f2193d0
-description: El elemento SetTeamMailbox contiene una solicitud para establecer un buzón del sitio.
-ms.openlocfilehash: 708863168f4e89775deee8c5d66427df41515089
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SetTeamMailbox contiene una solicitud para establecer un buzón de sitio.
+ms.openlocfilehash: e4b7ebd308f4b58b6b6491289f24b9176c5dcf15
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837455"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465264"
 ---
 # <a name="setteammailbox"></a>SetTeamMailbox
 
-El elemento **SetTeamMailbox** contiene una solicitud para establecer un buzón del sitio. 
+El elemento **SetTeamMailbox** contiene una solicitud para establecer un buzón de sitio. 
   
 ```XML
 <SetTeamMailbox>
@@ -30,15 +30,15 @@ El elemento **SetTeamMailbox** contiene una solicitud para establecer un buzón 
  **SetTeamMailboxRequestType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[EmailAddress (EmailAddressType)](emailaddress-emailaddresstype.md) | [SharePointSiteUrl](sharepointsiteurl.md) | [estado (TeamMailboxLifecycleStateType)](state-teammailboxlifecyclestatetype.md)
+[EmailAddress (EmailAddressType)](emailaddress-emailaddresstype.md)  |  [SharePointSiteUrl](sharepointsiteurl.md)  |  [State (TeamMailboxLifecycleStateType)](state-teammailboxlifecyclestatetype.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

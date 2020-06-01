@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 52adbb30-3bfd-48aa-9ea8-9f7d3b4bee44
-description: El elemento de destinatario representa al destinatario para el que se produjo el evento.
-ms.openlocfilehash: e8e8f9d6031d27c7441017c85eb26a143258b183
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento recipient representa el destinatario para el que se ha producido el evento.
+ms.openlocfilehash: eb7e85acf3c2b898b3f0bff4b63168d344e1daa8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836971"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465859"
 ---
 # <a name="recipient"></a>Destinatario
 
-El elemento de **destinatario** representa al destinatario para el que se produjo el evento. 
+El elemento **Recipient** representa el destinatario para el que se ha producido el evento. 
   
 ```XML
 <Recipient>
@@ -36,28 +36,28 @@ El elemento de **destinatario** representa al destinatario para el que se produj
  **EmailAddressType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Nombre (EmailAddressType)](name-emailaddresstype.md) <br/> |Representa el nombre del usuario de buzón de correo. Este elemento es opcional.  <br/> |
-|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Define la dirección de Protocolo Simple de transferencia de correo (SMTP) principal de un usuario de buzón de correo. Este elemento es opcional.  <br/> |
-|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Define la ruta que se usa para el buzón de correo. El valor predeterminado es SMTP. Este elemento es opcional.  <br/> |
-|[MailboxType](mailboxtype.md) <br/> |Representa el tipo de buzón de correo que está representada por la dirección de correo electrónico. Este elemento es opcional.  <br/> |
+|[Nombre (EmailAddressType)](name-emailaddresstype.md) <br/> |Representa el nombre del usuario del buzón. Este elemento es opcional.  <br/> |
+|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Define la dirección principal del Protocolo simple de transferencia de correo (SMTP) de un usuario de buzón. Este elemento es opcional.  <br/> |
+|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Define la ruta que se usa para el buzón. El valor predeterminado es SMTP. Este elemento es opcional.  <br/> |
+|[MailboxType](mailboxtype.md) <br/> |Representa el tipo de buzón que se representa mediante la dirección de correo electrónico. Este elemento es opcional.  <br/> |
 |[ItemId](itemid.md) <br/> |Define el identificador de elemento de un contacto o una lista de distribución privada para los destinatarios de la carpeta de contactos de un usuario. Este elemento es opcional.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Contiene información de un solo evento de un destinatario.  <br/> |
-|[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |Especifica los criterios para los tipos de mensajes para buscar.  <br/> |
+|[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Contiene información de un evento único para un destinatario.  <br/> |
+|[FindMessageTrackingReport](findmessagetrackingreport.md) <br/> |Especifica los criterios para los tipos de mensajes que se van a buscar.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -71,14 +71,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

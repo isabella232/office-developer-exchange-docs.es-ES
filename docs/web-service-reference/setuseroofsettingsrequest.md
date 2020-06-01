@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 628acf0b-3ebc-42f1-8ce2-7a02b4c8141f
-description: El elemento SetUserOofSettingsRequest contiene los argumentos que se usa para establecer la configuración del usuario fuera de la oficina (OOF) de un buzón de correo.
-ms.openlocfilehash: ed54bb1d066da7b15605fb81931a6ef75dfc61bf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SetUserOofSettingsRequest contiene los argumentos usados para establecer la configuración de fuera de la oficina (OOF) de un usuario de buzón.
+ms.openlocfilehash: 10edc9809fd72f80c316de1c6688eaedec4f93df
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837474"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466153"
 ---
 # <a name="setuseroofsettingsrequest"></a>SetUserOofSettingsRequest
 
-El elemento **SetUserOofSettingsRequest** contiene los argumentos que se usa para establecer la configuración del usuario fuera de la oficina (OOF) de un buzón de correo. 
+El elemento **SetUserOofSettingsRequest** contiene los argumentos usados para establecer la configuración de fuera de la oficina (OOF) de un usuario de buzón. 
   
 ```xml
 <SetUserOofSettingsRequest>
@@ -33,18 +33,18 @@ El elemento **SetUserOofSettingsRequest** contiene los argumentos que se usa par
  **SetUserOofSettingsRequest**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Buzón de correo (disponibilidad)](mailbox-availability.md) <br/> |Identifica el usuario del buzón para una solicitud SetUserOofSettings o GetUserOofSettings.  <br/> |
-|[UserOofSettings](useroofsettings.md) <br/> |Especifica la configuración de fuera de la oficina.  <br/> |
+|[Buzón de correo (disponibilidad)](mailbox-availability.md) <br/> |Identifica al usuario del buzón de correo para una solicitud de SetUserOofSettings o GetUserOofSettings.  <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |Especifica la configuración de OOF.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -52,23 +52,23 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="example"></a>Ejemplo
 
-El siguiente ejemplo de una solicitud de SetUserOofSettings establece un valor de OOF para diez días.
+El siguiente ejemplo de una solicitud SetUserOofSettings establece un valor OOF para diez días.
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <SetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
       </Mailbox>
-      <UserOofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <UserOofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Enabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -91,10 +91,10 @@ El siguiente ejemplo de una solicitud de SetUserOofSettings establece un valor d
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

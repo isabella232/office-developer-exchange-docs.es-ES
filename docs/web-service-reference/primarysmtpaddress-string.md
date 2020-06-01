@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 706c6387-c648-4ccc-85e6-12a07b66da2f
-description: El elemento PrimarySmtpAddress especifica la dirección de Protocolo Simple de transferencia de correo (SMTP) principal del buzón.
-ms.openlocfilehash: a103513c7cac94bd4923c12ed402b81c5d794e1f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PrimarySmtpAddress especifica la dirección del Protocolo simple de transferencia de correo (SMTP) principal del buzón.
+ms.openlocfilehash: 5881e3f7cff709318d38943799d5f9c0f3779c15
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836878"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466195"
 ---
 # <a name="primarysmtpaddress-string"></a>PrimarySmtpAddress (cadena)
 
-El elemento **PrimarySmtpAddress** especifica la dirección de Protocolo Simple de transferencia de correo (SMTP) principal del buzón. 
+El elemento **PrimarySmtpAddress** especifica la dirección del Protocolo simple de transferencia de correo (SMTP) principal del buzón. 
   
 ```XML
 <PrimarySmtpAddress></PrimarySmtpAddress>
@@ -26,19 +26,19 @@ El elemento **PrimarySmtpAddress** especifica la dirección de Protocolo Simple 
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[UserId (string)](userid-string.md) | [buzón (PreviewItemMailboxType)](mailbox-previewitemmailboxtype.md) | [SearchableMailbox](searchablemailbox.md)
+[Userid (cadena)](userid-string.md)  |  [Buzón de correo (PreviewItemMailboxType)](mailbox-previewitemmailboxtype.md)  |  [SearchableMailbox](searchablemailbox.md)
   
 ## <a name="text-value"></a>Valor de texto
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

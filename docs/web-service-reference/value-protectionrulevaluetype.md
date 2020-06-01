@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b039bd6e-2198-47cf-9c78-a5e8b9d51c98
-description: El elemento de valor identifica un solo departamento de remitente o destinatario.
-ms.openlocfilehash: 6173f94dcfb83eafd62e35f185a5e8c669d50f6c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Value identifica un único destinatario o departamento de remitentes.
+ms.openlocfilehash: 908ea451800abc343fb6e4d4a4ed98d57223bd23
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840951"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465243"
 ---
 # <a name="value-protectionrulevaluetype"></a>Valor (ProtectionRuleValueType)
 
-El elemento de **valor** identifica un solo departamento de remitente o destinatario. 
+El elemento **Value** identifica un único destinatario o departamento de remitentes. 
   
 ```XML
 <Value/>
@@ -31,26 +31,26 @@ El elemento de **valor** identifica un solo departamento de remitente o destinat
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[RecipientIs](recipientis.md) <br/> |Especifica que todos los destinatarios del mensaje de correo electrónico coincide con cualquiera de los destinatarios especificados en el **valor de** los elementos secundarios.  <br/> |
-|[SenderDepartments](senderdepartments.md) <br/> |Especifica que el departamento del remitente coincide con cualquiera de los departamentos especificados en el **valor de** los elementos secundarios.  <br/> |
+|[Destinatarioes](recipientis.md) <br/> |Especifica que cualquier destinatario del mensaje de correo electrónico coincide con cualquiera de los destinatarios especificados en los elementos secundarios de **valor** .  <br/> |
+|[SenderDepartments](senderdepartments.md) <br/> |Especifica que el Departamento del remitente coincide con cualquiera de los departamentos especificados en los elementos secundarios de **valor** .  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Este elemento debe contener un valor de cadena vacía.
+Este elemento debe contener un valor de cadena no vacío.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -60,12 +60,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

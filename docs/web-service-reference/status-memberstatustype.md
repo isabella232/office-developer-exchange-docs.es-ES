@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4f8a860b-0a48-4a0d-9a7a-69a0304aa747
-description: El elemento de estado proporciona información sobre el estado de un miembro de la lista de distribución en el servidor.
-ms.openlocfilehash: ef062433c80f0cca413c33012e1164b17e226faf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento status proporciona información sobre el estado de un miembro de la lista de distribución en el servidor.
+ms.openlocfilehash: bfa0c349d6af51c1b2238c9749d2656541d31906
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837580"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465467"
 ---
 # <a name="status-memberstatustype"></a>Estado (MemberStatusType)
 
-El elemento de **estado** proporciona información sobre el estado de un miembro de la lista de distribución en el servidor. 
+El elemento **status** proporciona información sobre el estado de un miembro de la lista de distribución en el servidor. 
   
 ```
 <Status>Unrecognized or Normal or Demoted</Status>
@@ -30,50 +30,50 @@ El elemento de **estado** proporciona información sobre el estado de un miembro
  **MemberStatusType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Elemento](member-ex15websvcsotherref.md) <br/> |Representa a un miembro de una lista de distribución.  <br/> |
+|[Miembro](member-ex15websvcsotherref.md) <br/> |Representa un miembro de una lista de distribución.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-En la siguiente tabla se enumera los valores posibles para el elemento **Status** . 
+En la siguiente tabla se enumeran los valores posibles para el elemento **status** . 
   
-**Valores de estado de elemento**
+**Valores del elemento status**
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|No reconocido  <br/> |Información de miembro no es válido o no reconocido.  <br/> |
-|Importance  <br/> |Información de miembros en una lista de distribución está sincronizada con el objeto de referencia.  <br/> |
-|Cuyo nivel ha disminuido  <br/> |Objeto que se hace referencia no está disponible.  <br/> |
+|No reconocido  <br/> |La información del miembro no es válida o no se reconoce.  <br/> |
+|Normal  <br/> |La información de los miembros de una lista de distribución está sincronizada con el objeto al que se hace referencia.  <br/> |
+|Disminuido  <br/> |El objeto al que se hace referencia no está disponible.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

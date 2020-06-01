@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d5eea7a8-c40d-42a6-8e0d-67f3252496cf
-description: El elemento de tipo especifica el tipo de postal dirección o número de teléfono, por ejemplo, HomeorBusiness.
-ms.openlocfilehash: b2262a01b03922e36daa3b13436f1e070918b72c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Type Especifica el tipo de dirección postal o número de teléfono, por ejemplo, HomeorBusiness.
+ms.openlocfilehash: 83dd6576e8a365be61c4e6d2f3afc8a59aba92a6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840736"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465719"
 ---
 # <a name="type-string"></a>Tipo (cadena)
 
-El elemento de **tipo** especifica el tipo de dirección postal o el número de teléfono, por ejemplo, "Principal" o "Empresarial". 
+El elemento **Type** especifica el tipo de dirección postal o número de teléfono (por ejemplo, "Home" o "Business"). 
   
 ```XML
 <Type></Type>
@@ -26,23 +26,23 @@ El elemento de **tipo** especifica el tipo de dirección postal o el número de 
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Teléfono](phone.md) | [PhoneNumber](phonenumber.md) | [valor (PersonaPostalAddressType)](value-personapostaladdresstype.md) | [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
+[Teléfono](phone.md)  |  [PhoneNumber](phonenumber.md)  |  [Valor (PersonaPostalAddressType)](value-personapostaladdresstype.md)  |  [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del **tipo de** elemento es el tipo de una dirección postal o el número de teléfono. Por ejemplo, los valores "Principal" o "Empresarial" son los valores esperados para el **tipo de** elemento. 
+El valor de texto del elemento **Type** es el tipo de una dirección postal o un número de teléfono. Por ejemplo, los valores "Home" o "Business" son valores esperados para el elemento **Type** . 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

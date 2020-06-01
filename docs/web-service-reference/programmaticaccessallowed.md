@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a1fc7dff-a303-4809-b7f4-9672f86c183c
-description: El elemento ProgrammaticAccessAllowed especifica si está habilitado el acceso mediante programación para datos administrados con derechos.
-ms.openlocfilehash: 50bcce745bd94bf9c2e5ced93825722307e0a096
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ProgrammaticAccessAllowed especifica si el acceso mediante programación está habilitado para los datos con derechos administrados.
+ms.openlocfilehash: 8a5cf4e57a97807e5940a0402768d7123b9912d2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836889"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465642"
 ---
 # <a name="programmaticaccessallowed"></a>ProgrammaticAccessAllowed
 
-El elemento **ProgrammaticAccessAllowed** especifica si está habilitado el acceso mediante programación para datos administrados con derechos. 
+El elemento **ProgrammaticAccessAllowed** especifica si el acceso mediante programación está habilitado para los datos con derechos administrados. 
   
 ```XML
 <ProgrammaticAccessAllowed> true | false </ProgrammaticAccessAllowed>
@@ -26,15 +26,15 @@ El elemento **ProgrammaticAccessAllowed** especifica si está habilitado el acce
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **ProgrammaticAccessAllowed** indica que los datos son accesibles mediante programación. Un valor de **false** indica que los datos no son accesibles mediante programación. 
+Un valor de texto de **true** para el elemento **ProgrammaticAccessAllowed** indica que se puede obtener acceso A los datos mediante programación. Un valor de **false** indica que no se puede tener acceso A los datos mediante programación. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

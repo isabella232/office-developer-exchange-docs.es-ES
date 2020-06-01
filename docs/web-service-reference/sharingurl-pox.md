@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: d590188a-5aa6-46c6-ab5f-2a0dd6793109
-description: El elemento SharingUrl contiene la dirección URL del servidor de uso compartido usado para toda la organización de uso compartido de calendarios y contactos.
-ms.openlocfilehash: 0a62c5145da97976de12e7cdc29800a332877b44
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SharingUrl contiene la dirección URL del servidor de uso compartido que se usa para compartir entre organizaciones los calendarios y los contactos.
+ms.openlocfilehash: 9c793935808dbd20d2dc0631b82ee74db3f8a19f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837489"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465257"
 ---
 # <a name="sharingurl-pox"></a>SharingUrl (POX)
 
-El elemento **SharingUrl** contiene la dirección URL del servidor de uso compartido usado para toda la organización de uso compartido de calendarios y contactos. 
+El elemento **SharingUrl** contiene la dirección URL del servidor de uso compartido que se usa para compartir entre organizaciones los calendarios y los contactos. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -34,25 +34,25 @@ El elemento **SharingUrl** contiene la dirección URL del servidor de uso compar
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente en el equipo que ejecuta Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.  <br/> |
+|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa la dirección URL del servidor de uso compartido usado para toda la organización de uso compartido de calendarios y contactos.
+El valor de texto representa la dirección URL del servidor de uso compartido que se usa para compartir entre organizaciones los calendarios y los contactos.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -62,5 +62,5 @@ El elemento **SharingUrl** es un elemento secundario opcional del elemento **Pro
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

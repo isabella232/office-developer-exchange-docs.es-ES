@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c39744ea-0cee-4954-8653-8279d6b10161
-description: El elemento de las direcciones URL especifica una matriz de direcciones URL que son el resultado de la extracción de entidades de un elemento en el buzón de correo.
-ms.openlocfilehash: 2a0c1305050a638d0e125ab2740eb0799d30350a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento URLs especifica una matriz de direcciones URL que son el resultado de la extracción de entidades de un elemento en el buzón.
+ms.openlocfilehash: 0d30c05c23f8d2c9617244c40dc36f6faa222312
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840894"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466531"
 ---
 # <a name="urls-arrayofurlentitiestype"></a>Direcciones URL (ArrayOfUrlEntitiesType)
 
-El elemento de **las direcciones URL** especifica una matriz de direcciones URL que son el resultado de la extracción de entidades de un elemento en el buzón de correo. 
+El elemento **URLs** especifica una matriz de direcciones URL que son el resultado de la extracción de entidades de un elemento en el buzón. 
   
 ```XML
 <Urls>
@@ -28,11 +28,11 @@ El elemento de **las direcciones URL** especifica una matriz de direcciones URL 
  **ArrayOfUrlEntitiesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

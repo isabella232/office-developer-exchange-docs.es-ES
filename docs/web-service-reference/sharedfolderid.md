@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 21181ba3-9626-4284-9717-0b1c16948e8f
-description: El elemento SharedFolderId representa el identificador de la carpeta compartida que se debe devolver el identificador de la carpeta local para la que una solicitud de operación GetSharingFolder.
-ms.openlocfilehash: 6d4e541ef3cae89e413efa8cc5f1beaf651dc4dd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SharedFolderId representa el identificador de la carpeta compartida cuyo identificador de carpeta local debe ser devuelto por una solicitud de operación GetSharingFolder.
+ms.openlocfilehash: 546e148540708725bcf335f39bf69d193124d210
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837477"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466125"
 ---
 # <a name="sharedfolderid"></a>SharedFolderId
 
-El elemento **SharedFolderId** representa el identificador de la carpeta compartida que se debe devolver el identificador de la carpeta local para la que una solicitud de [operación GetSharingFolder](getsharingfolder-operation.md) . 
+El elemento **SharedFolderId** representa el identificador de la carpeta compartida cuyo identificador de carpeta local debe ser devuelto por una solicitud de [operación GetSharingFolder](getsharingfolder-operation.md) . 
   
 ```xml
 <SharedFolderId/>
@@ -30,25 +30,25 @@ El elemento **SharedFolderId** representa el identificador de la carpeta compart
  **NonEmptyStringType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetSharingFolder](getsharingfolder.md) <br/> |Define una solicitud para obtener el identificador de la carpeta local de una carpeta compartida especificada.  <br/> |
+|[GetSharingFolder](getsharingfolder.md) <br/> |Define una solicitud para obtener el identificador de carpeta local de una carpeta compartida especificada.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto es una cadena que representa el identificador de la carpeta compartida que se debe devolver el identificador de la carpeta local para la que una solicitud de [operación GetSharingFolder](getsharingfolder-operation.md) . 
+El valor de texto es una cadena que representa el identificador de la carpeta compartida cuyo identificador de carpeta local debe ser devuelto por una solicitud de [operación GetSharingFolder](getsharingfolder-operation.md) . 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -58,10 +58,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -70,5 +70,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación GetSharingFolder](getsharingfolder-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

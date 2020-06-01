@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3a3f6393-eacc-4734-b6c9-b67023fe2830
-description: El elemento WorkingPeriodArray contiene información del período para el usuario del buzón de trabajar.
-ms.openlocfilehash: 02712f05dc3373a532d769f476341b78ad25a79c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento WorkingPeriodArray contiene la información del período de trabajo para el usuario del buzón.
+ms.openlocfilehash: a9ca55866a574c5208d8561fca6daf417867fef6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19841019"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465201"
 ---
 # <a name="workingperiodarray"></a>WorkingPeriodArray
 
-El elemento **WorkingPeriodArray** contiene información del período para el usuario del buzón de trabajar. 
+El elemento **WorkingPeriodArray** contiene la información del período de trabajo para el usuario del buzón. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -44,38 +44,38 @@ El elemento **WorkingPeriodArray** contiene información del período para el us
  **ArrayOfWorkingPeriod**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[WorkingPeriod](workingperiod.md) <br/> |Contiene la semana laboral días y las horas del usuario de buzón de correo.  <br/> |
+|[WorkingPeriod](workingperiod.md) <br/> |Contiene la semana laboral días y horas del usuario del buzón de correo.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[WorkingHours](workinghours-ex15websvcsotherref.md) <br/> |Representa la configuración de zona horaria y horario laboral para el usuario del buzón solicitado.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours` <br/> |
+|[WorkingHours](workinghours-ex15websvcsotherref.md) <br/> |Representa la configuración de la zona horaria y el horario laboral del usuario del buzón solicitado.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Este elemento es necesario si se usa el elemento [WorkingHours](workinghours-ex15websvcsotherref.md) . Todos los elementos secundarios se enumeran en la secuencia en la que se producen. 
+Este elemento es obligatorio si se usa el elemento [WorkingHours](workinghours-ex15websvcsotherref.md) . Todos los elementos secundarios se enumeran en la secuencia en que se producen. 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -86,5 +86,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

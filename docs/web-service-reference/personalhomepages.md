@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 61f7ad65-9d40-4d3b-9e76-64b05bd59210
-description: El elemento PersonalHomePages especifica una matriz de las páginas principales y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: a801abc56dea7becbb9deeefd4c44194ed5f515e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PersonalHomePages especifica una matriz de páginas principales y los identificadores de sus atribuciones de origen para el rol asociado.
+ms.openlocfilehash: 062fe0b4d62639604f0c923d37bd90fe1465163b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836744"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465873"
 ---
 # <a name="personalhomepages"></a>PersonalHomePages
 
-El elemento **PersonalHomePages** especifica una matriz de las páginas principales y los identificadores de sus atribuciones de origen para el rol asociado. 
+El elemento **PersonalHomePages** especifica una matriz de páginas principales y los identificadores de sus atribuciones de origen para el rol asociado. 
   
 ```XML
 <PersonalHomePages>
@@ -28,11 +28,11 @@ El elemento **PersonalHomePages** especifica una matriz de las páginas principa
  **ArrayOfStringAttributedValuesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

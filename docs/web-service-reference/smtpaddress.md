@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 779305a6-ad1e-424e-8a69-4e3bef61d787
-description: El elemento SmtpAddress representa la dirección de Protocolo Simple de transferencia de correo (SMTP) de una cuenta que se usará para la suplantación o una dirección de destinatario de Protocolo Simple de transferencia de correo (SMTP) de un calendario o un contacto solicitud para compartir.
-ms.openlocfilehash: 39588f0892cdcec819a1972547155730be5785f4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SmtpAddress representa la dirección del Protocolo simple de transferencia de correo (SMTP) de una cuenta que se va a usar para la suplantación o la dirección del destinatario del Protocolo simple de transferencia de correo (SMTP) de una solicitud de uso compartido de contactos o calendario.
+ms.openlocfilehash: 915ff328cc384c1f2884e9fbea8c10c1ebc79288
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837511"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466692"
 ---
 # <a name="smtpaddress"></a>SmtpAddress
 
-El elemento **SmtpAddress** representa la dirección de Protocolo Simple de transferencia de correo (SMTP) de una cuenta que se usará para la suplantación o una dirección de destinatario de Protocolo Simple de transferencia de correo (SMTP) de un calendario o un contacto solicitud para compartir. 
+El elemento **SmtpAddress** representa la dirección del Protocolo simple de transferencia de correo (SMTP) de una cuenta que se va a usar para la suplantación o la dirección del destinatario del Protocolo simple de transferencia de correo (SMTP) de una solicitud de uso compartido de contactos o calendario. 
   
 ```xml
 <SmtpAddress/>
@@ -31,43 +31,43 @@ El elemento **SmtpAddress** representa la dirección de Protocolo Simple de tran
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ConnectingSID](connectingsid.md) <br/> |Representa una cuenta para suplantar a cuando se usa el encabezado SOAP ExchangeImpersonation.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/ExchangeImpersonation/ConnectingSID` <br/> |
-|[InvalidRecipient](invalidrecipient.md) <br/> |Representa a un destinatario no válido para un uso compartido del calendario o un contacto mensaje para compartir.  <br/> |
-|[Recipients (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md) <br/> |Representa una colección de destinatarios que se concederá acceso a la carpeta compartida.  <br/> |
-|[GetSharingFolder](getsharingfolder.md) <br/> |Define una solicitud para obtener el identificador de la carpeta local de una carpeta compartida especificada.  <br/> |
+|[ConnectingSID](connectingsid.md) <br/> |Representa una cuenta que se va a suplantar cuando se usa el encabezado SOAP ExchangeImpersonation.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/ExchangeImpersonation/ConnectingSID` <br/> |
+|[InvalidRecipient](invalidrecipient.md) <br/> |Representa un destinatario no válido para un mensaje de uso compartido de calendarios o contactos.  <br/> |
+|[Recipients (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md) <br/> |Representa una colección de destinatarios a los que se concederá acceso a la carpeta compartida.  <br/> |
+|[GetSharingFolder](getsharingfolder.md) <br/> |Define una solicitud para obtener el identificador de carpeta local de una carpeta compartida especificada.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto que representa una dirección SMTP.
+Se necesita un valor de texto que represente una dirección SMTP.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio Virtual de IIS que hospeda los servicios Web Exchange del equipo que ejecuta a Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda los servicios Web de Exchange del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

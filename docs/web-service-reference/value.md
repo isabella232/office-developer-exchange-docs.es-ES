@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9a30cadd-909e-41b1-b4e9-291643dd89c6
-description: El elemento de valor contiene el valor de una propiedad extendida.
-ms.openlocfilehash: 4b8674d267b78f0384f9457e794e88ace8234826
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Value contiene el valor de una propiedad extendida.
+ms.openlocfilehash: 5de1528dda6d58ea772d050e709c0720e389fae6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840960"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465215"
 ---
-# <a name="value"></a>Value
+# <a name="value"></a>Valor
 
-El elemento de **valor** contiene el valor de una propiedad extendida. 
+El elemento **Value** contiene el valor de una propiedad extendida. 
   
 ```xml
 <Value/>
@@ -31,43 +31,43 @@ El elemento de **valor** contiene el valor de una propiedad extendida.
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Values](values.md) <br/> |Contiene una colección de valores para una propiedad extendida.  <br/> |
-|[ExtendedProperty](extendedproperty.md) <br/> |Identifica las propiedades extendidas en carpetas y elementos.  <br/> |
+|[Valores](values.md) <br/> |Contiene una colección de valores para una propiedad extendida.  <br/> |
+|[Las extendedproperty](extendedproperty.md) <br/> |Identifica las propiedades extendidas de las carpetas y los elementos.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto debe ser compatible con el tipo que se indica mediante el atributo PropertyType de la ExtendedFieldURI.
+El valor de texto debe ser compatible con el tipo que indica el atributo PropertyType de ExtendedFieldURI.
   
 ## <a name="remarks"></a>Comentarios
 
-Un elemento de **valor** puede producirse en ambas instancias de la propiedad extendida único y de varios valores. Para las instancias de un solo valor, existe como un elemento secundario directo del elemento [ExtendedProperty](extendedproperty.md) . Para la instancia multivalor, existe como un elemento secundario directo de la colección de **valores** . 
+Un elemento **Value** puede producirse en instancias de propiedades extendidas simples y con varios valores. Para instancias de valor único, existe como un elemento secundario directo del elemento [las extendedproperty](extendedproperty.md) . Para una instancia multivalor, existe como elemento secundario directo de la colección de **valores** . 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 53f59054-8f68-4eaa-be9c-ccfc9383bcf2
-description: El elemento reglas contiene una matriz de las reglas de protección.
-ms.openlocfilehash: 5d511f977f3eb3273dc43f56356a059985b2a929
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento rules contiene una matriz de reglas de protección.
+ms.openlocfilehash: d848abfe0c97d07836f28bc75806f506c5433d44
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837269"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464941"
 ---
 # <a name="rules"></a>Reglas
 
-El elemento **reglas** contiene una matriz de las reglas de protección. 
+El elemento **rules** contiene una matriz de reglas de protección. 
   
 ```xml
 <Rules>   <Rule/></Rules>
@@ -30,40 +30,40 @@ El elemento **reglas** contiene una matriz de las reglas de protección.
  **ArrayOfProtectionRulesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Rule](rule.md) <br/> |Contiene una regla de protección única. Este elemento puede aparecer cero o más veces. Este elemento produce cero veces cuando no hay reglas de protección se definen por la organización. Se produce una o varias veces, si se define al menos una regla por la organización.  <br/> |
+|[Rule](rule.md) <br/> |Contiene una regla de protección única. Este elemento se puede producir cero o más veces. Este elemento se produce cero veces cuando la organización no define ninguna regla de protección. Se produce una o varias veces si la organización define al menos una regla.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ProtectionRulesConfiguration](protectionrulesconfiguration.md) <br/> |Contiene la configuración del servicio para el servicio de protección de las reglas.  <br/> |
+|[ProtectionRulesConfiguration](protectionrulesconfiguration.md) <br/> |Contiene la configuración del servicio para el servicio de reglas de protección.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

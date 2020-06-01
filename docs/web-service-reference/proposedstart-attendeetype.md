@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 94a233d8-2eb4-4cec-913d-965aca4c975b
-description: El elemento ProposedStart (AttendeeType) especifica la hora de inicio propuesta de un Asistente para una reunión.
-ms.openlocfilehash: ce5ff1b0f617a04812999e32a974a1896f274e62
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ProposedStart (AttendeeType) especifica la hora de inicio propuesta de un asistente para una reunión.
+ms.openlocfilehash: cf5b6492ae21d5e2722f0b87cd4c6c0908f8df59
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836910"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465614"
 ---
 # <a name="proposedstart-attendeetype"></a>ProposedStart (AttendeeType)
 
-El elemento **ProposedStart (AttendeeType)** especifica la hora de inicio propuesta de un Asistente para una reunión. 
+El elemento **ProposedStart (AttendeeType)** especifica la hora de inicio propuesta de un asistente para una reunión. 
   
 ```XML
 <ProposedStart/>
@@ -26,23 +26,23 @@ El elemento **ProposedStart (AttendeeType)** especifica la hora de inicio propue
  **dateTime**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Attendee](attendee.md)
+[Asistente](attendee.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ProposedStart (AttendeeType)** es una fecha de inicio propuesta y una hora para una reunión. 
+El valor de texto del elemento **ProposedStart (AttendeeType)** es una fecha y hora de inicio propuestas para una reunión. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,17 +54,17 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Attendee](attendee.md)
+[Asistente](attendee.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

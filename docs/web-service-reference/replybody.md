@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: bb184144-3e4b-4419-a883-cc9fab1085e6
-description: El elemento ReplyBody contiene un mensaje de fuera de oficina (OOF) y el idioma utilizado para el mensaje.
-ms.openlocfilehash: 8400dda1ee810781e129fcc44fd3cd5d6c15cbbe
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ReplyBody contiene un mensaje de fuera de la oficina (OOF) y el idioma usado para el mensaje.
+ms.openlocfilehash: 496d336d1f87d9ea493ba7da362eef5a416fd899
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837116"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465306"
 ---
 # <a name="replybody"></a>ReplyBody
 
-El elemento **ReplyBody** contiene un mensaje de fuera de oficina (OOF) y el idioma utilizado para el mensaje. 
+El elemento **ReplyBody** contiene un mensaje de fuera de la oficina (OOF) y el idioma usado para el mensaje. 
   
 ```XML
 <ReplyBody xml:lang="">
@@ -32,25 +32,25 @@ El elemento **ReplyBody** contiene un mensaje de fuera de oficina (OOF) y el idi
  **ReplyBody**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|XML: lang  <br/> |Especifica el lenguaje utilizado en el contenido de **ReplyBody** . Este atributo es opcional. Los valores posibles de este atributo se definen en IETF RFC 3066.  <br/> |
+|XML: lang  <br/> |Especifica el idioma usado en el contenido de **ReplyBody** . Este atributo es opcional. Los valores posibles de este atributo los define el documento RFC 3066 de IETF.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Mensaje (disponibilidad)](message-availability.md) <br/> |Contiene la espera de respuesta de la oficina (OOF).  <br/> |
+|[Mensaje (disponibilidad)](message-availability.md) <br/> |Contiene la respuesta de fuera de la oficina (OOF).  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Fuera de la oficina](outofoffice.md) <br/> |Define el mensaje de respuesta de fuera de la oficina y un tiempo de duración para enviar el mensaje de respuesta para un buzón de correo.  <br/> |
+|[Oficina](outofoffice.md) <br/> |Define el mensaje de respuesta OOF y un tiempo de duración para enviar el mensaje de respuesta de un buzón.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -66,14 +66,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

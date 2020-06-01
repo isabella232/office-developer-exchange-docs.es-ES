@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 96259756-322e-4c24-ac76-0cd9c32e0d6d
-description: El elemento UpdateItemInRecoverableItemsResponseMessage especifica la respuesta a una solicitud de UpdateItemInRecoverableItems.
-ms.openlocfilehash: 598d91a4fbd4d241b75aea4c155caca68f120b3f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UpdateItemInRecoverableItemsResponseMessage especifica la respuesta a una solicitud UpdateItemInRecoverableItems.
+ms.openlocfilehash: 021631f5c30eebbf4d7ae0aad35a85b99a23925f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840844"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466538"
 ---
 # <a name="updateiteminrecoverableitemsresponsemessage"></a>UpdateItemInRecoverableItemsResponseMessage
 
-El elemento **UpdateItemInRecoverableItemsResponseMessage** especifica la respuesta a una solicitud de **UpdateItemInRecoverableItems** . 
+El elemento **UpdateItemInRecoverableItemsResponseMessage** especifica la respuesta a una solicitud **UpdateItemInRecoverableItems** . 
   
 ```XML
 <UpdateItemInRecoverableItemsResponseMessage>
@@ -34,15 +34,15 @@ El elemento **UpdateItemInRecoverableItemsResponseMessage** especifica la respue
  **UpdateItemInRecoverableItemsResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [elementos](items.md) | [datos adjuntos](attachments-ex15websvcsotherref.md) | [ConflictResults](conflictresults.md)
+[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)  |  [Elementos](items.md)  |  [Datos adjuntos](attachments-ex15websvcsotherref.md)  |  [ConflictResults](conflictresults.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -58,9 +58,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/message  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
-|Archivo de validación  <br/> |Message.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/message  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Mensaje. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

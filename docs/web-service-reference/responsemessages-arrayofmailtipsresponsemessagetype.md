@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 00878187-fac2-45b9-ba1c-df7ffac71089
 description: El elemento ResponseMessages representa una lista de los mensajes de respuesta de sugerencias de correo.
-ms.openlocfilehash: 80610af191f3fa600abe2ba8dbba2aac63f3ab1e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 2db58029ead9332b832006bc81d751d77df54b07
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837192"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465453"
 ---
 # <a name="responsemessages-arrayofmailtipsresponsemessagetype"></a>ResponseMessages (ArrayOfMailTipsResponseMessageType)
 
@@ -32,23 +32,23 @@ El elemento **ResponseMessages** representa una lista de los mensajes de respues
  **ArrayOfMailTipsResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[MailTipsResponseMessageType](mailtipsresponsemessagetype.md) <br/> |Representa la configuración de sugerencias de correo.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetMailTipsResponse](getmailtipsresponse.md) <br/> |Representa el mensaje de respuesta para la [operación de GetMailTips](getmailtips-operation.md).  <br/> |
+|[GetMailTipsResponse](getmailtipsresponse.md) <br/> |Representa el mensaje de respuesta para la [operación GetMailTips](getmailtips-operation.md).  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -62,10 +62,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -74,5 +74,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación GetMailTips](getmailtips-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

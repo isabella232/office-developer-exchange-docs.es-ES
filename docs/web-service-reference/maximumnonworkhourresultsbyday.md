@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9fb7314d-779c-4b1f-9d7c-b5cb092ed134
-description: El elemento MaximumNonWorkHourResultsByDay especifica el número de resultados sugeridos para horas fuera del horario normal de trabajo por día de la reunión.
-ms.openlocfilehash: f931dcaabda222e1579a0a4c0e0e6e49d88c6342
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MaximumNonWorkHourResultsByDay especifica el número de resultados sugeridos para las horas de reunión fuera del horario laboral normal por día.
+ms.openlocfilehash: 410d6bd84838d979af6bc53ca47f445ae55a09e6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836382"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465502"
 ---
 # <a name="maximumnonworkhourresultsbyday"></a>MaximumNonWorkHourResultsByDay
 
-El elemento **MaximumNonWorkHourResultsByDay** especifica el número de resultados sugeridos para horas fuera del horario normal de trabajo por día de la reunión. 
+El elemento **MaximumNonWorkHourResultsByDay** especifica el número de resultados sugeridos para las horas de reunión fuera del horario laboral normal por día. 
   
 [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -36,21 +36,21 @@ El elemento **MaximumNonWorkHourResultsByDay** especifica el número de resultad
  **int**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Contiene las opciones para obtener información de la sugerencia de reunión.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
+|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Contiene las opciones para obtener información sobre las sugerencias de la reunión.  <br/> A continuación se encuentra la expresión XPath de este elemento:  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -58,19 +58,19 @@ Se requiere un valor de texto. El valor de texto representa un número entero.
   
 ## <a name="remarks"></a>Comentarios
 
-Este elemento es necesario si se usa el elemento [SuggestionsViewOptions](suggestionsviewoptions.md) . 
+Este elemento es obligatorio si se usa el elemento [SuggestionsViewOptions](suggestionsviewoptions.md) . 
   
 > [!NOTE]
-> El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente. 
+> El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes. 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -79,5 +79,5 @@ Este elemento es necesario si se usa el elemento [SuggestionsViewOptions](sugges
 [Operación GetUserAvailability](getuseravailability-operation.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0043abd5-ba9c-4d67-8832-325f32bf7651
-description: El elemento SourceIds contiene los identificadores de origen para convertir.
-ms.openlocfilehash: c9ee9fd01367f714e1cb3770e2be5161cb45d98f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SourceIds contiene los identificadores de origen que se van a convertir.
+ms.openlocfilehash: 1c4990f2185788c5cfaab5483cb6a54a0d850596
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837522"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466111"
 ---
 # <a name="sourceids"></a>SourceIds
 
-El elemento **SourceIds** contiene los identificadores de origen para convertir. 
+El elemento **SourceIds** contiene los identificadores de origen que se van a convertir. 
   
 [ConvertId](convertid.md)
   
@@ -38,38 +38,38 @@ El elemento **SourceIds** contiene los identificadores de origen para convertir.
  **NonEmptyArrayOfAlternateIdsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AlternateId](alternateid.md) <br/> |Describe un identificador de elemento o carpeta para convertir.  <br/> |
-|[AlternatePublicFolderId](alternatepublicfolderid.md) <br/> |Describe un identificador de carpeta pública para convertir.  <br/> |
-|[AlternatePublicFolderItemId](alternatepublicfolderitemid.md) <br/> |Se describe un identificador de elemento de la carpeta pública para convertir.  <br/> |
+|[AlternateId](alternateid.md) <br/> |Describe un identificador de elemento o carpeta que se va a convertir.  <br/> |
+|[AlternatePublicFolderId](alternatepublicfolderid.md) <br/> |Describe un identificador de carpeta pública que se va a convertir.  <br/> |
+|[AlternatePublicFolderItemId](alternatepublicfolderitemid.md) <br/> |Describe un identificador de elemento de carpeta pública que se va a convertir.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ConvertId](convertid.md) <br/> |Define una solicitud para convertir los identificadores de elemento y carpeta entre formatos compatibles de Exchange.  <br/> |
+|[ConvertId](convertid.md) <br/> |Define una solicitud para convertir los identificadores de elemento y carpeta entre los formatos admitidos por Exchange.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Exchange Server que tiene instalada la función del servidor acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Exchange Server que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -78,8 +78,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [Operación ConvertId](convertid-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Convertir identificadores](http://msdn.microsoft.com/library/a5391746-b6ef-4f48-8fc8-8255258651aa%28Office.15%29.aspx)
+[Convertir identificadores](https://msdn.microsoft.com/library/a5391746-b6ef-4f48-8fc8-8255258651aa%28Office.15%29.aspx)
 

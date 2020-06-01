@@ -1,5 +1,5 @@
 ---
-title: Operación PlayOnPhone (servicio web de mensajería unificada)
+title: Operación reproducir (servicio Web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,23 +10,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7d55be55-f8b6-4e96-a61e-26fa190217fd
-description: La operación PlayOnPhone realiza una llamada saliente y reproduce un mensaje especificado a través del teléfono que es especificado por el elemento DialString.
-ms.openlocfilehash: b55bb45d6654f57503879f33e1cd5013ddb69a2e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación reproducir realiza una llamada saliente y reproduce un mensaje especificado a través del teléfono especificado por el elemento DialString.
+ms.openlocfilehash: c5ff82bcd822aa2c659d1782ea4a1349d198bc80
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836818"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466237"
 ---
-# <a name="playonphone-operation-um-web-service"></a>Operación PlayOnPhone (servicio web de mensajería unificada)
+# <a name="playonphone-operation-um-web-service"></a>Operación reproducir (servicio Web de mensajería unificada)
 
-La operación PlayOnPhone realiza una llamada saliente y reproduce un mensaje especificado a través del teléfono que es especificado por el elemento **DialString** . 
+La operación reproducir realiza una llamada saliente y reproduce un mensaje especificado a través del teléfono especificado por el elemento **DialString** . 
   
-## <a name="playonphone-request-example"></a>Ejemplo de solicitud de PlayOnPhone
+## <a name="playonphone-request-example"></a>Ejemplo de solicitud reproducir
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud PlayOnPhone muestra cómo formar una solicitud para realizar una llamada saliente y reproducir un mensaje.
+El siguiente ejemplo de una solicitud reproducir muestra cómo crear una solicitud para realizar una llamada saliente y reproducir un mensaje.
   
 ### <a name="code"></a>Código
 
@@ -34,7 +34,7 @@ El siguiente ejemplo de una solicitud PlayOnPhone muestra cómo formar una solic
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <PlayOnPhone xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <PlayOnPhone xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <entryId>AAAAAGsd2rbQLVtLobUGbrq/9IUHAEX2ikn/L8JJtI5WHI0FAW8AAAFXHhsAACxVpEl+KVVLl957wp//x6UAGAetcDUAAA==</entryId>
       <DialString>12345</DialString>
     </PlayOnPhone>
@@ -42,11 +42,11 @@ El siguiente ejemplo de una solicitud PlayOnPhone muestra cómo formar una solic
 </soap:Envelope>
 ```
 
-## <a name="successful-playonphone-response-example"></a>Ejemplo de respuesta correcta de PlayOnPhone
+## <a name="successful-playonphone-response-example"></a>Ejemplo de respuesta reproducir correcta
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una respuesta PlayOnPhone muestra una respuesta a la solicitud de PlayOnPhone.
+El siguiente ejemplo de una respuesta de reproducir muestra una respuesta a la solicitud reproducir.
   
 ### <a name="code"></a>Código
 
@@ -54,7 +54,7 @@ El siguiente ejemplo de una respuesta PlayOnPhone muestra una respuesta a la sol
 <?xml version="1.0" encoding="utf-8" ?> 
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Body>
-    <PlayOnPhoneResponse xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <PlayOnPhoneResponse xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <PlayOnPhoneResponse>NDEzYjEzNmMtZTE2Zi00NTJlLWI3YzctNDhkMTE3MDE3YjlmQGRmLWV1bS0wMS5leGNoYW5nZS5jb3JwLm1pY3Jvc29mdC5jb20=</PlayOnPhoneResponse> 
     </PlayOnPhoneResponse>
   </soap:Body>
@@ -65,9 +65,9 @@ El siguiente ejemplo de una respuesta PlayOnPhone muestra una respuesta a la sol
 
 
 
-[PlayOnPhone (servicio web de mensajería unificada)](playonphone-um-web-service.md)
+[Reproducir (servicio Web de mensajería unificada)](playonphone-um-web-service.md)
   
-[PlayOnPhoneResponse (servicio web de mensajería unificada)](playonphoneresponse-um-web-service.md)
+[PlayOnPhoneResponse (servicio Web de mensajería unificada)](playonphoneresponse-um-web-service.md)
   
-[Operación PlayOnPhoneGreeting (servicio web de mensajería unificada)](playonphonegreeting-operation-um-web-service.md)
+[Operación PlayOnPhoneGreeting (servicio Web de mensajería unificada)](playonphonegreeting-operation-um-web-service.md)
 

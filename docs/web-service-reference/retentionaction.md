@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3bdf5955-1212-48a1-b3b5-743086866c91
-description: El elemento RetentionAction especifica la acción realizada en los elementos con la etiqueta de retención.
-ms.openlocfilehash: 54a1038f2e56aad66f89522423ccfbd69dc44a80
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RetentionAction especifica la acción que se realiza en los elementos con la etiqueta de retención.
+ms.openlocfilehash: c16988413e732ddc3cd6ebc355cb73c4d96550c7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837215"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465236"
 ---
 # <a name="retentionaction"></a>RetentionAction
 
-El elemento **RetentionAction** especifica la acción realizada en los elementos con la etiqueta de retención. 
+El elemento **RetentionAction** especifica la acción que se realiza en los elementos con la etiqueta de retención. 
   
 ```XML
 <RetentionAction> None | MoveToDeletedItems | MoveToFolder | DeleteAndAllowRecovery | PermanentlyDelete | MarkAsPastRetentionLimit | MoveToArchive <RetentionAction>
@@ -26,15 +26,15 @@ El elemento **RetentionAction** especifica la acción realizada en los elementos
  **RetentionActionType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,21 +42,21 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **RetentionAction** es la acción realizada en los elementos. En la lista siguiente contiene los valores de texto para el elemento **RetentionAction** . 
+El valor de texto del elemento **RetentionAction** es la acción que se realiza en los elementos. La lista siguiente contiene los valores de texto para el elemento **RetentionAction** . 
   
-> **Ninguno** : ninguna acción se realiza en el elemento. 
+> **None** : no se realiza ninguna acción en el elemento. 
     
-> **MoveToDeletedItems** - el elemento se mueve a la carpeta Elementos eliminados de forma predeterminada. 
+> **MoveToDeletedItems** : el elemento se mueve a la carpeta elementos eliminados de forma predeterminada. 
     
-> **MoveToFolder** - el elemento se mueve a una carpeta especificada. 
+> **MoveToFolder** : el elemento se mueve a una carpeta especificada. 
     
-> **DeleteAndAllowRecovery** - el elemento se elimina y se coloca el volcado de archivos. 
+> **DeleteAndAllowRecovery** : el elemento se elimina y se coloca en el contenedor. 
     
-> **PermanentlyDelete** - el elemento se elimina de manera permanente del buzón de correo. 
+> **PermanentlyDelete** : el elemento se elimina de forma permanente del buzón de correo. 
     
-> **MarkAsPastRetentionLimit** - el elemento está marcado como que se ha excedido el límite de tiempo de retención. 
+> **MarkAsPastRetentionLimit** : el elemento se marca como superado el límite de tiempo de retención. 
     
-> **MoveToArchive** - el elemento se mueve al buzón de archivo. 
+> **MoveToArchive** : el elemento se mueve al buzón de archivo. 
     
 ## <a name="remarks"></a>Comentarios
 
@@ -68,9 +68,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

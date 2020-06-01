@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c143a6ec-62ad-4d48-b844-b1ad88054bc1
-description: El elemento UserConfigurationProperties especifica los tipos de propiedad para obtener en una operación de GetUserConfiguration.
-ms.openlocfilehash: 4f993765bb7c36f28a41a3f2fa7e28698a3f709e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UserConfigurationProperties especifica los tipos de propiedad que se van a obtener en una operación GetUserConfiguration.
+ms.openlocfilehash: af6bee64516a7410d96ecc7581e8e819f550ddc1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840904"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466496"
 ---
 # <a name="userconfigurationproperties"></a>UserConfigurationProperties
 
-El elemento **UserConfigurationProperties** especifica los tipos de propiedad para obtener en una operación de GetUserConfiguration. 
+El elemento **UserConfigurationProperties** especifica los tipos de propiedad que se van a obtener en una operación GetUserConfiguration. 
   
 ```xml
 <UserConfigurationProperties>Id | Dictionary | XmlData | BinaryData | All</UserConfigurationProperties>
@@ -30,33 +30,33 @@ El elemento **UserConfigurationProperties** especifica los tipos de propiedad pa
  **UserConfigurationPropertyType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[GetUserConfiguration](getuserconfiguration.md) <br/> |Especifica una solicitud para obtener un objeto de configuración de usuario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-En la siguiente tabla se enumera los valores posibles para el elemento **UserConfigurationProperties** . 
+En la siguiente tabla se enumeran los valores posibles para el elemento **UserConfigurationProperties** . 
   
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Id  <br/> |Especifica la propiedad del identificador.  <br/> |
-|Dictionary  <br/> |Especifica los tipos de propiedad de diccionario.  <br/> |
-|Nota  <br/> |Especifica los tipos de propiedad de datos XML.  <br/> |
-|BinaryData  <br/> |Especifica los tipos de datos binarios (propiedad).  <br/> |
-|Todos  <br/> |Especifica el identificador, diccionario, datos XML y tipos de datos binarios (propiedad).  <br/> |
+|Id  <br/> |Especifica la propiedad de identificador.  <br/> |
+|Dictionary  <br/> |Especifica los tipos de propiedades de diccionario.  <br/> |
+|XmlData  <br/> |Especifica los tipos de propiedades de datos XML.  <br/> |
+|BinaryData  <br/> |Especifica los tipos de propiedades de datos binarios.  <br/> |
+|Todo  <br/> |Especifica los tipos de propiedad de identificador, diccionario, datos XML y datos binarios.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -66,14 +66,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,5 +1,5 @@
 ---
-title: MailboxId
+title: Se especifica mailboxid
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bcef790d-094f-40ba-b4cf-8abd9c79cc7a
-description: El elemento MailboxId especifica un identificador para el buzón de correo que se tiene acceso mediante la búsqueda de detección.
-ms.openlocfilehash: 2d8eea6418ad68866c6026c06b8a0f0f384eda6c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento se especifica mailboxid especifica un identificador para el buzón al que se obtiene acceso mediante la búsqueda de detección.
+ms.openlocfilehash: 7ec43492010dfb54f3e847d037425f9ed919559c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836290"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466370"
 ---
-# <a name="mailboxid"></a>MailboxId
+# <a name="mailboxid"></a>Se especifica mailboxid
 
-El elemento **MailboxId** especifica un identificador para el buzón de correo que se tiene acceso mediante la búsqueda de detección. 
+El elemento **se especifica mailboxid** especifica un identificador para el buzón al que se obtiene acceso mediante la búsqueda de detección. 
   
 ```XML
 <MailboxId></MailboxId>
@@ -27,23 +27,23 @@ El elemento **MailboxId** especifica un identificador para el buzón de correo q
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[MailboxStat](mailboxstat.md) | [buzón (PreviewItemMailboxType)](mailbox-previewitemmailboxtype.md)
+[MailboxStat](mailboxstat.md)  |  [Buzón de correo (PreviewItemMailboxType)](mailbox-previewitemmailboxtype.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **MailboxId** es el identificador de buzón de correo de un buzón de correo que se tiene acceso para la búsqueda de detección. 
+El valor de texto del elemento **se especifica mailboxid** es el identificador de buzón al que se tiene acceso para la búsqueda de detección. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

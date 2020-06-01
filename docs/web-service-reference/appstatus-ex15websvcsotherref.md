@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f3ab8bf1-abc5-45cf-a2e1-d7602f2c24ec
 description: El valor del elemento AppStatus indica el estado de la aplicación de correo.
-ms.openlocfilehash: cf213fc3d7be02c411e9c2e83a4ff153dbefe098
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: d833947fd62d500418f257829d241a2e0b3bca9c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763543"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464780"
 ---
 # <a name="appstatus"></a>AppStatus
 
@@ -26,15 +26,15 @@ El valor del elemento **AppStatus** indica el estado de la aplicación de correo
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -44,22 +44,22 @@ Ninguno.
 
 El valor de texto del elemento **AppStatus** indica el estado de la aplicación de correo. Si el usuario puede corregir un problema relacionado con el estado de la aplicación de correo, el elemento [ActionUrl](actionurl.md) proporciona la dirección URL para realizar la corrección. 
   
-**La tabla 1. Valores de AppStatus**
+**Tabla 1. Valores de AppStatus**
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
 |Null o 0  <br/> |La aplicación de correo tiene un estado correcto.  <br/> |
-|1.0  <br/> |No se pudo actualizar automáticamente la aplicación de correo. La aplicación de correo debe estar instalado volver a desde el almacén de Office.  <br/> |
-|1.1  <br/> |No se pudo actualizar automáticamente la aplicación de correo. La aplicación de correo requiere permisos mayor, y esto requiere la revisión y la confirmación para instalar.  <br/> |
-|1.2  <br/> |La aplicación de correo no se ha podido actualizarse automáticamente. La licencia actual ha expirado o no es válida. Por favor, actualice la aplicación de correo desde la tienda de Office.  <br/> |
-|2.0  <br/> |No se pudo actualizar automáticamente la licencia de la aplicación de correo. Se necesita la licencia para la aplicación de correo que se va a recuperar de la tienda Office.  <br/> |
-|2.1  <br/> |No se pudo actualizar automáticamente la licencia de la aplicación de correo. La licencia actual ha caducado. Una nueva licencia para esta aplicación debe instalarse desde la tienda de Office.  <br/> |
-|3.0  <br/> |Ha cambiado el estado del almacén de Office para la aplicación de correo. Esto puede indicar que hay un problema con la aplicación de correo. Vaya a la página de la aplicación de correo en la tienda de Office para obtener más información.  <br/> |
-|3.1  <br/> |La aplicación de correo se ha quitado de la tienda de Office.  <br/> |
-|3.2  <br/> |Se ha detectado un problema con la aplicación de correo y temporalmente haya sido retirado de la tienda Office.  <br/> |
-|3.3  <br/> |La aplicación de correo se quitarán de la tienda Office dentro de 30 días.  <br/> |
-|4.0  <br/> |La aplicación de correo está deshabilitada automáticamente por el cliente de correo.  <br/> |
-|4.1  <br/> |La aplicación de correo está deshabilitada por Outlook por motivos de rendimiento.  <br/> |
+|1.0  <br/> |La aplicación de correo no se pudo actualizar automáticamente. La aplicación de correo debe volver a instalarse desde la tienda Office.  <br/> |
+|1.1  <br/> |La aplicación de correo no se pudo actualizar automáticamente. La aplicación de correo requiere mayor cantidad de permisos y esto requiere la revisión y la confirmación de la instalación.  <br/> |
+|1.2  <br/> |La aplicación de correo no se pudo actualizar automáticamente. La licencia actual ha expirado o no es válida. Actualice la aplicación de correo desde la tienda Office.  <br/> |
+|2.0  <br/> |La licencia de la aplicación de correo no se pudo actualizar automáticamente. La licencia de la aplicación de correo debe recuperarse de la tienda Office.  <br/> |
+|2.1  <br/> |La licencia de la aplicación de correo no se pudo actualizar automáticamente. La licencia actual ha expirado. Se debe instalar una nueva licencia para esta aplicación desde la tienda Office.  <br/> |
+|3,0  <br/> |El estado de la tienda Office de la aplicación de correo ha cambiado. Esto puede indicar que hay un problema con la aplicación de correo. Vaya a la página de la aplicación de correo en la tienda Office para obtener más información.  <br/> |
+|3.1  <br/> |La aplicación de correo se ha quitado de la tienda Office.  <br/> |
+|3.2  <br/> |Se ha detectado un problema con la aplicación de correo y se ha retirado temporalmente de la tienda Office.  <br/> |
+|3.3  <br/> |La aplicación de correo se quitará de la tienda Office en un plazo de 30 días.  <br/> |
+|4,0  <br/> |El cliente de correo ha deshabilitado automáticamente la aplicación de correo.  <br/> |
+|4.1  <br/> |Outlook ha deshabilitado la aplicación de correo por motivos de rendimiento.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -71,13 +71,13 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> | http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> | https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |No disponible  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |No aplicable  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Metadatos](metadata-ex15websvcsotherref.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

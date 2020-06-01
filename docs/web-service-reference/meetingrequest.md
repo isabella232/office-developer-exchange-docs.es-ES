@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: c44f8804-a355-473d-a837-48cc91617251
 description: El elemento MeetingRequest representa una convocatoria de reunión en el almacén de Exchange.
-ms.openlocfilehash: 3e290613293cb6ad1563912e5015742ffc503d08
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 7b39ec52d2b4fe8b3cdd2b6fd5e7ba97cfa69c7e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836450"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44465831"
 ---
 # <a name="meetingrequest"></a>MeetingRequest
 
@@ -129,131 +129,131 @@ El elemento **MeetingRequest** representa una convocatoria de reunión en el alm
  **MeetingRequestMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[MimeContent](mimecontent.md) <br/> |Contiene la secuencia de extensiones multipropósito de correo Internet (MIME) nativo de un objeto representado en formato base64Binary.  <br/> |
-|[ItemId](itemid.md) <br/> |Contiene el único identificador y cambiar la clave de un elemento en el almacén de Exchange. Esta propiedad es de sólo lectura.  <br/> |
-|[Id](parentfolderid.md) <br/> |Representa el identificador de la carpeta primaria que contiene el elemento o la carpeta. Esta propiedad es de sólo lectura.  <br/> |
+|[MimeContent](mimecontent.md) <br/> |Contiene la secuencia nativa de extensiones multipropósito de correo Internet (MIME) de un objeto representado en formato base64Binary.  <br/> |
+|[ItemId](itemid.md) <br/> |Contiene el identificador único y la clave de cambio de un elemento en el almacén de Exchange. Esta propiedad es de sólo lectura.  <br/> |
+|[ParentFolderId](parentfolderid.md) <br/> |Representa el identificador de la carpeta principal que contiene el elemento o carpeta. Esta propiedad es de sólo lectura.  <br/> |
 |[ItemClass](itemclass.md) <br/> |Representa la clase de mensaje de un elemento.  <br/> |
-|[Subject](subject.md) <br/> |Representa al asunto de los elementos del almacén de Exchange y objetos de respuesta. El asunto está limitado a 255 caracteres.  <br/> |
-|[Sensibilidad](sensitivity.md) <br/> |Indica el nivel de confidencialidad de un elemento.  <br/> |
-|[Body](body.md) <br/> |Representa el contenido real del cuerpo de un mensaje.  <br/> |
-|[Datos adjuntos](attachments-ex15websvcsotherref.md) <br/> |Contiene los elementos o archivos que se adjuntan a un elemento en el almacén de Exchange.  <br/> |
-|[DateTimeReceived](datetimereceived.md) <br/> |Representa los datos y la hora en que se recibió un elemento en un buzón de correo.  <br/> |
-|[Size](size.md) <br/> |Representa el tamaño en bytes de un elemento. Esta propiedad es de sólo lectura.  <br/> |
-|[Categories](categories-ex15websvcsotherref.md) <br/> |Representa una colección de cadenas que identifican a qué categorías pertenece un elemento en el buzón de correo.  <br/> |
-|[Importancia](importance.md) <br/> |Describe la importancia de un elemento.  <br/> |
-|[InReplyTo](inreplyto.md) <br/> |Representa el identificador del elemento al que este elemento es una respuesta.  <br/> |
-|[IsSubmitted](issubmitted.md) <br/> |Indica si un elemento se ha enviado a la carpeta predeterminada Bandeja de salida.  <br/> |
-|[IsDraft](isdraft.md) <br/> |Indica si un elemento no se ha enviado todavía.  <br/> |
-|[IsFromMe](isfromme.md) <br/> |Indica si un usuario envía un elemento a sí mismo.  <br/> |
-|[IsResend](isresend.md) <br/> |Indica si el elemento se había enviado anteriormente.  <br/> |
-|[IsUnmodified](isunmodified.md) <br/> |Indica si el elemento se ha modificado.  <br/> |
-|[InternetMessageHeaders](internetmessageheaders.md) <br/> |Representa la colección de todos los encabezados de mensaje de Internet dentro de un elemento en un buzón de correo.  <br/> |
-|[DateTimeSent](datetimesent.md) <br/> |Representa la fecha y hora en que se envió un elemento en un buzón de correo.  <br/> |
-|[DateTimeCreated](datetimecreated.md) <br/> |Representa la fecha y hora en que se creó un elemento determinado en el buzón de correo.  <br/> |
-|[ResponseObjects](responseobjects.md) <br/> |Contiene una colección de todos los objetos de respuesta que están asociados con un elemento en el almacén de Exchange.  <br/> |
-|[ReminderDueBy](reminderdueby.md) <br/> |Representa la fecha y hora cuando se produce el evento. Esto se usa en el elemento [ReminderMinutesBeforeStart](reminderminutesbeforestart.md) para determinar cuándo se muestra el aviso.  <br/> |
+|[Asunto](subject.md) <br/> |Representa el asunto de los elementos de almacén de Exchange y los objetos de respuesta. El asunto está limitado a 255 caracteres.  <br/> |
+|[Sensitivity](sensitivity.md) <br/> |Indica el nivel de confidencialidad de un elemento.  <br/> |
+|[Body](body.md) <br/> |Representa el contenido del cuerpo real de un mensaje.  <br/> |
+|[Datos adjuntos](attachments-ex15websvcsotherref.md) <br/> |Contiene los elementos o archivos adjuntos a un elemento en el almacén de Exchange.  <br/> |
+|[DateTimeReceived](datetimereceived.md) <br/> |Representa los datos y la hora en que se recibió un elemento en un buzón.  <br/> |
+|[Tamaño](size.md) <br/> |Representa el tamaño en bytes de un elemento. Esta propiedad es de sólo lectura.  <br/> |
+|[Categorías](categories-ex15websvcsotherref.md) <br/> |Representa una colección de cadenas que identifican a qué categorías pertenece un elemento del buzón.  <br/> |
+|[Importance](importance.md) <br/> |Describe la importancia de un elemento.  <br/> |
+|[Inreplyto](inreplyto.md) <br/> |Representa el identificador del elemento al que se reenviará este elemento.  <br/> |
+|[IsSubmitted](issubmitted.md) <br/> |Indica si un elemento se ha enviado a la carpeta predeterminada de la bandeja de salida.  <br/> |
+|[IsDraft](isdraft.md) <br/> |Indica si todavía no se ha enviado un elemento.  <br/> |
+|[IsFromMe](isfromme.md) <br/> |Indica si un usuario envió un elemento a sí mismo.  <br/> |
+|[IsResend](isresend.md) <br/> |Indica si el elemento se ha enviado previamente.  <br/> |
+|[IsUnmodified](isunmodified.md) <br/> |Indica si se ha modificado el elemento.  <br/> |
+|[InternetMessageHeaders](internetmessageheaders.md) <br/> |Representa la colección de todos los encabezados de mensajes de Internet contenidos en un elemento de un buzón.  <br/> |
+|[DateTimeSent](datetimesent.md) <br/> |Representa la fecha y la hora en que se envió un elemento en un buzón.  <br/> |
+|[DateTimeCreated](datetimecreated.md) <br/> |Representa la fecha y la hora en que se creó un elemento determinado en el buzón.  <br/> |
+|[ResponseObjects](responseobjects.md) <br/> |Contiene una colección de todos los objetos de respuesta que están asociados a un elemento en el almacén de Exchange.  <br/> |
+|[ReminderDueBy](reminderdueby.md) <br/> |Representa la fecha y la hora en que se produce el evento. El elemento [ReminderMinutesBeforeStart](reminderminutesbeforestart.md) lo usa para determinar cuándo se muestra el aviso.  <br/> |
 |[ReminderIsSet](reminderisset.md) <br/> |Indica si se ha establecido un aviso para un elemento en el almacén de Exchange.  <br/> |
 |[ReminderMinutesBeforeStart](reminderminutesbeforestart.md) <br/> |Representa el número de minutos antes de un evento cuando se muestra un aviso.  <br/> |
-|[DisplayCc](displaycc.md) <br/> |Representa la cadena para mostrar que se usa para el contenido de la línea CC. Ésta es la cadena concatenada de todos los nombres de presentación de los destinatarios de CC.  <br/> |
-|[DisplayTo](displayto.md) <br/> |Representa la cadena para mostrar que se usa para el contenido de la línea para. Ésta es la cadena concatenada de todos los nombres de presentación de los destinatarios.  <br/> |
-|[HasAttachments](hasattachments.md) <br/> |Representa una propiedad que se establece en **true** si un elemento tiene al menos un dato adjunto visible. Esta propiedad es de sólo lectura.  <br/> |
-|[ExtendedProperty](extendedproperty.md) <br/> |Identifica las propiedades extendidas en carpetas y elementos.  <br/> |
-|[Referencia cultural](culture.md) <br/> |Representa la referencia cultural para un elemento determinado en un buzón de correo.  <br/> |
-|[Sender](sender.md) <br/> |Identifica el remitente de un elemento.  <br/> |
+|[DisplayCc](displaycc.md) <br/> |Representa la cadena para mostrar que se usa para el contenido de la línea CC. Esta es la cadena concatenada de todos los nombres para mostrar de los destinatarios en CC.  <br/> |
+|[DisplayTo](displayto.md) <br/> |Representa la cadena para mostrar que se usa para el contenido de la línea para. Esta es la cadena concatenada de todos los nombres para mostrar de destinatarios.  <br/> |
+|[HasAttachments](hasattachments.md) <br/> |Representa una propiedad que se establece en **true** si un elemento tiene al menos un archivo de datos adjuntos visible. Esta propiedad es de sólo lectura.  <br/> |
+|[Las extendedproperty](extendedproperty.md) <br/> |Identifica las propiedades extendidas de las carpetas y los elementos.  <br/> |
+|[Culture](culture.md) <br/> |Representa la referencia cultural de un elemento determinado en un buzón.  <br/> |
+|[Sender](sender.md) <br/> |Identifica al remitente de un elemento.  <br/> |
 |[ToRecipients](torecipients.md) <br/> |Contiene un conjunto de destinatarios de un mensaje.  <br/> |
-|[CcRecipients](ccrecipients.md) <br/> |Representa una colección de los destinatarios que recibirán una copia del mensaje.  <br/> |
+|[CcRecipients](ccrecipients.md) <br/> |Representa una colección de destinatarios que recibirán una copia del mensaje.  <br/> |
 |[BccRecipients](bccrecipients.md) <br/> |Representa una colección de destinatarios para recibir una copia oculta (CCO) de un correo electrónico.  <br/> |
 |[IsReadReceiptRequested](isreadreceiptrequested.md) <br/> |Indica si el remitente de un elemento solicita una confirmación de lectura.  <br/> |
 |[IsDeliveryReceiptRequested](isdeliveryreceiptrequested.md) <br/> |Indica si el remitente de un elemento solicita una confirmación de entrega.  <br/> |
-|[ConversationIndex](conversationindex.md) <br/> |Contiene un identificador binario que representa el subproceso al que pertenece este mensaje.  <br/> |
-|[ConversationTopic](conversationtopic.md) <br/> |Representa el identificador de conversación.  <br/> |
-|[From](from.md) <br/> |Representa al destinatario de la que se envió el mensaje.  <br/> |
+|[ConversationIndex](conversationindex.md) <br/> |Contiene un identificador binario que representa el subproceso al que pertenece el mensaje.  <br/> |
+|[ConversationTopic](conversationtopic.md) <br/> |Representa el identificador de la conversación.  <br/> |
+|[From](from.md) <br/> |Representa el destinatario del remitente del mensaje.  <br/> |
 |[InternetMessageId](internetmessageid.md) <br/> |Representa el identificador de mensaje de Internet de un elemento.  <br/> |
-|[Estáleído](isread.md) <br/> |Indica si se ha leído un mensaje.  <br/> |
-|[IsResponseRequested](isresponserequested.md) <br/> |Indica si se ha solicitado una respuesta a un mensaje de correo electrónico.  <br/> |
-|[Referencias](references.md) <br/> |Representa el encabezado de Usenet que se usa para correlacionar las respuestas con sus mensajes originales.  <br/> |
-|[ReplyTo](replyto.md) <br/> |Identifica un conjunto de direcciones a la que se deben enviar las respuestas.  <br/> |
+|[IsRead](isread.md) <br/> |Indica si se ha leído un mensaje.  <br/> |
+|[IsResponseRequested](isresponserequested.md) <br/> |Indica si se solicita una respuesta a un mensaje de correo electrónico.  <br/> |
+|[References](references.md) <br/> |Representa el encabezado Usenet que se usa para correlacionar las respuestas con sus mensajes originales.  <br/> |
+|[ReplyTo](replyto.md) <br/> |Identifica un conjunto de direcciones a las que se deben enviar las respuestas.  <br/> |
 |[AssociatedCalendarItemId](associatedcalendaritemid.md) <br/> |Representa el elemento de calendario que está asociado con un [MeetingMessage](meetingmessage.md).  <br/> |
-|[IsDelegated](isdelegated.md) <br/> |Indica si una reunión se ha controlado por una cuenta con acceso de delegado.  <br/> |
-|[IsOutOfDate](isoutofdate.md) <br/> |Indica si un mensaje de reunión no está actualizado.  <br/> |
-|[HasBeenProcessed](hasbeenprocessed.md) <br/> |Indica si un mensaje de reunión item se han procesado.  <br/> |
-|[ResponseType](responsetype.md) <br/> |Representa el tipo de destinatario respuesta que se recibió para una reunión.  <br/> |
-|[MeetingRequestType](meetingrequesttype.md) <br/> |Describe el tipo de la convocatoria de reunión.  <br/> |
-|[IntendedFreeBusyStatus](intendedfreebusystatus.md) <br/> |Representa el estado deseado para el elemento de calendario que está asociado con la convocatoria de reunión.  <br/> |
-|[Start](start.md) <br/> |Representa el inicio de un elemento de calendario. Este elemento solo se aplica a una sola aparición de un elemento de calendario.  <br/> |
-|[End](end-ex15websvcsotherref.md) <br/> |Representa el final de una duración. Este elemento solo se aplica a una sola aparición de un elemento de calendario.  <br/> |
+|[IsDelegated](isdelegated.md) <br/> |Indica si una reunión se controló mediante una cuenta con acceso de delegado.  <br/> |
+|[IsOutOfDate](isoutofdate.md) <br/> |Indica si un mensaje de reunión está obsoleto.  <br/> |
+|[HasBeenProcessed](hasbeenprocessed.md) <br/> |Indica si se ha procesado un elemento de mensaje de reunión.  <br/> |
+|[ResponseType](responsetype.md) <br/> |Representa el tipo de respuesta de destinatario que se recibe para una reunión.  <br/> |
+|[MeetingRequestType](meetingrequesttype.md) <br/> |Describe el tipo de convocatoria de reunión.  <br/> |
+|[IntendedFreeBusyStatus](intendedfreebusystatus.md) <br/> |Representa el estado previsto para el elemento de calendario que está asociado a la convocatoria de reunión.  <br/> |
+|[Start](start.md) <br/> |Representa el inicio de un elemento de calendario. Este elemento solo se aplica a una única ocurrencia de un elemento de calendario.  <br/> |
+|[Centraliza](end-ex15websvcsotherref.md) <br/> |Representa el final de una duración. Este elemento solo se aplica a una única ocurrencia de un elemento de calendario.  <br/> |
 |[OriginalStart](originalstart.md) <br/> |Representa la hora de inicio original de un elemento de calendario.  <br/> |
-|[IsAllDayEvent](isalldayevent.md) <br/> |Indica si una convocatoria de reunión o elemento de calendario representa un evento de día completo.  <br/> |
+|[IsAllDayEvent](isalldayevent.md) <br/> |Indica si un elemento de calendario o una convocatoria de reunión representa un evento de todo el día.  <br/> |
 |[LegacyFreeBusyStatus](legacyfreebusystatus.md) <br/> |Representa el estado de disponibilidad del elemento de calendario.  <br/> |
-|[Location](location.md) <br/> |Representa la ubicación de una reunión o una cita.  <br/> |
-|[When](when.md) <br/> |Proporciona una descripción de cuándo se produce una reunión.  <br/> |
+|[Ubicación](location.md) <br/> |Representa la ubicación de una reunión o cita.  <br/> |
+|[When](when.md) <br/> |Proporciona una descripción de Cuándo tiene lugar una reunión.  <br/> |
 |[IsMeeting](ismeeting.md) <br/> |Indica si el elemento de calendario es una reunión o una cita.  <br/> |
-|[IsCancelled](iscancelled.md) <br/> |Indica si se ha cancelado una reunión o cita.  <br/> |
+|[IsCancelled](iscancelled.md) <br/> |Indica si se ha cancelado una cita o una reunión.  <br/> |
 |[IsRecurring](isrecurring.md) <br/> |Indica si un elemento de calendario es parte de un elemento periódico. Este elemento es de sólo lectura.  <br/> |
 |[MeetingRequestWasSent](meetingrequestwassent.md) <br/> |Indica si se ha enviado una convocatoria de reunión a los asistentes solicitados.  <br/> |
-|[CalendarItemType](calendaritemtype.md) <br/> |Representa el tipo de aparición de un elemento de calendario.  <br/> |
-|[MyResponseType](myresponsetype.md) <br/> |Contiene el estado de o la respuesta a un elemento de calendario.  <br/> |
-|[Organizer](organizer.md) <br/> |Representa el organizador de una reunión.  <br/> |
+|[CalendarItemType](calendaritemtype.md) <br/> |Representa el tipo de ocurrencia de un elemento de calendario.  <br/> |
+|[MyResponseType](myresponsetype.md) <br/> |Contiene el estado o la respuesta a un elemento de calendario.  <br/> |
+|[Organizador](organizer.md) <br/> |Representa al organizador de una reunión.  <br/> |
 |[RequiredAttendees](requiredattendees.md) <br/> |Representa a los asistentes necesarios para asistir a una reunión.  <br/> |
-|[OptionalAttendees](optionalattendees.md) <br/> |Representa a los asistentes que no sean necesarios para asistir a una reunión.  <br/> |
-|[Recursos](resources.md) <br/> |Representa un recurso para una reunión programado.  <br/> |
-|[ConflictingMeetingCount](conflictingmeetingcount.md) <br/> |Representa el número de las reuniones que entre en conflicto con la convocatoria de reunión.  <br/> |
-|[AdjacentMeetingCount](adjacentmeetingcount.md) <br/> |Representa el número total de elementos de calendario que están junto a una hora de reunión.  <br/> |
-|[ConflictingMeetings](conflictingmeetings.md) <br/> |Identifica todos los elementos que entran en conflicto con un tiempo de la reunión.  <br/> |
-|[AdjacentMeetings](adjacentmeetings.md) <br/> |Describe todos los elementos de calendario que están junto a una hora de reunión.  <br/> |
+|[OptionalAttendees](optionalattendees.md) <br/> |Representa a los asistentes que no necesitan asistir a una reunión.  <br/> |
+|[Recursos](resources.md) <br/> |Representa un recurso programado para una reunión.  <br/> |
+|[ConflictingMeetingCount](conflictingmeetingcount.md) <br/> |Representa el número de reuniones que entran en conflicto con la convocatoria de reunión.  <br/> |
+|[AdjacentMeetingCount](adjacentmeetingcount.md) <br/> |Representa el número total de elementos de calendario adyacentes a una hora de reunión.  <br/> |
+|[ConflictingMeetings](conflictingmeetings.md) <br/> |Identifica todos los elementos que entran en conflicto con una hora de reunión.  <br/> |
+|[AdjacentMeetings](adjacentmeetings.md) <br/> |Describe todos los elementos de calendario adyacentes a una hora de reunión.  <br/> |
 |[Duración (elementos)](duration-items.md) <br/> |Representa la duración de un elemento de calendario.  <br/> |
 |[TimeZone (elemento)](timezone-item.md) <br/> |Proporciona una descripción de texto de una zona horaria.  <br/> |
-|[AppointmentReplyTime](appointmentreplytime.md) <br/> |Representa la fecha y hora cuando se responde un asistente a una convocatoria de reunión.  <br/> |
+|[AppointmentReplyTime](appointmentreplytime.md) <br/> |Representa la fecha y la hora en que un asistente respondió a una convocatoria de reunión.  <br/> |
 |[AppointmentSequenceNumber](appointmentsequencenumber.md) <br/> |Especifica el número de secuencia de una versión de una cita.  <br/> |
 |[AppointmentState](appointmentstate.md) <br/> |Especifica el estado de la cita.  <br/> |
-|[Periodicidad (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Contiene el patrón de periodicidad para los elementos de calendario y las convocatorias de reunión.  <br/> |
-|[FirstOccurrence](firstoccurrence.md) <br/> |Representa la primera aparición de un elemento periódico del calendario.  <br/> Este elemento es válida si [CalendarItemType](calendaritemtype.md) tiene el valor RecurringMaster.  <br/> |
-|[LastOccurrence](lastoccurrence.md) <br/> |Representa la última aparición de un elemento periódico del calendario.  <br/> Este elemento es válida si [CalendarItemType](calendaritemtype.md) tiene el valor RecurringMaster.  <br/> |
-|[ModifiedOccurrences](modifiedoccurrences.md) <br/> |Contiene una matriz de periódica repeticiones del elemento de calendario que se han modificado para que sean diferentes que el elemento de patrón de periodicidad.  <br/> Este elemento es válida si [CalendarItemType](calendaritemtype.md) tiene el valor RecurringMaster.  <br/> |
-|[DeletedOccurrences](deletedoccurrences.md) <br/> |Contiene una matriz de eliminado apariciones de un elemento periódico del calendario.  <br/> Este elemento es válida si [CalendarItemType](calendaritemtype.md) tiene el valor RecurringMaster.  <br/> |
+|[Recurrence (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Contiene el patrón de periodicidad para los elementos de calendario y las convocatorias de reunión.  <br/> |
+|[FirstOccurrence](firstoccurrence.md) <br/> |Representa la primera aparición de un elemento de calendario periódico.  <br/> Este elemento es válido si [CalendarItemType](calendaritemtype.md) tiene el valor RecurringMaster.  <br/> |
+|[LastOccurrence](lastoccurrence.md) <br/> |Representa la última repetición de un elemento de calendario periódico.  <br/> Este elemento es válido si [CalendarItemType](calendaritemtype.md) tiene el valor RecurringMaster.  <br/> |
+|[ModifiedOccurrences](modifiedoccurrences.md) <br/> |Contiene una matriz de repeticiones de elementos de calendario periódicas que se han modificado para que sean diferentes que el elemento del patrón de periodicidad.  <br/> Este elemento es válido si [CalendarItemType](calendaritemtype.md) tiene el valor RecurringMaster.  <br/> |
+|[DeletedOccurrences](deletedoccurrences.md) <br/> |Contiene una matriz de ocurrencias eliminadas de un elemento de calendario periódico.  <br/> Este elemento es válido si [CalendarItemType](calendaritemtype.md) tiene el valor RecurringMaster.  <br/> |
 |[MeetingTimeZone](meetingtimezone.md) <br/> |Representa la zona horaria de la ubicación donde se hospeda la reunión.  <br/> |
-|[StartTimeZone](starttimezone.md) <br/> |Representa la zona de hora de inicio del elemento de calendario.  <br/> |
-|[EndTimeZone](endtimezone.md) <br/> |Representa la zona horaria de final del elemento de calendario.  <br/> |
-|[ConferenceType](conferencetype.md) <br/> |Describe el tipo de conferencia que se lleva a cabo con un elemento de calendario.  <br/> |
+|[StartTimeZone](starttimezone.md) <br/> |Representa la zona horaria de inicio del elemento de calendario.  <br/> |
+|[EndTimeZone](endtimezone.md) <br/> |Representa la zona horaria de finalización del elemento de calendario.  <br/> |
+|[ConferenceType](conferencetype.md) <br/> |Describe el tipo de conferencia que se realiza con un elemento de calendario.  <br/> |
 |[AllowNewTimeProposal](allownewtimeproposal.md) <br/> |Representa si se puede proponer una nueva hora de reunión para una reunión.  <br/> |
 |[IsOnlineMeeting](isonlinemeeting.md) <br/> |Indica si la reunión está en línea.  <br/> |
-|[MeetingWorkspaceUrl](meetingworkspaceurl.md) <br/> |Contiene la dirección URL para el área de reuniones que está vinculado el elemento de calendario.  <br/> |
-|[NetShowUrl](netshowurl.md) <br/> |Especifica la dirección URL de una reunión en línea de Microsoft Netshow.  <br/> |
-|[EffectiveRights](effectiverights.md) <br/> |Contiene los derechos del cliente en función de la configuración de permisos para el elemento o la carpeta. Este elemento es de sólo lectura.  <br/> |
-|[LastModifiedName](lastmodifiedname.md) <br/> |Contiene el nombre para mostrar del último usuario para modificar un elemento.  <br/> |
+|[MeetingWorkspaceUrl](meetingworkspaceurl.md) <br/> |Contiene la dirección URL del área de reuniones que está vinculada al elemento de calendario.  <br/> |
+|[NetShowUrl](netshowurl.md) <br/> |Especifica la dirección URL de una reunión en línea de Microsoft NetShow.  <br/> |
+|[EffectiveRights](effectiverights.md) <br/> |Contiene los derechos del cliente en función de la configuración de los permisos del elemento o carpeta. Este elemento es de sólo lectura.  <br/> |
+|[LastModifiedName](lastmodifiedname.md) <br/> |Contiene el nombre para mostrar del último usuario que modificó un elemento.  <br/> |
 |[LastModifiedTime](lastmodifiedtime.md) <br/> |Indica cuándo se modificó por última vez un elemento.  <br/> |
 |[IsAssociated](isassociated.md) <br/> |Indica si el elemento está asociado a una carpeta.  <br/> |
-|[WebClientReadFormQueryString](webclientreadformquerystring.md) <br/> |Representa una dirección URL a concatene al extremo de Microsoft Office Outlook Web App para leer un elemento en Outlook Web App.  <br/> |
-|[WebClientEditFormQueryString](webclienteditformquerystring.md) <br/> |Representa una dirección URL a concatene al extremo de Outlook Web App para editar un elemento en Outlook Web App.  <br/> |
-|[ConversationId](conversationid.md) <br/> |Contiene el identificador de un elemento o conversación.  <br/> |
-|[UniqueBody](uniquebody.md) <br/> |Representa un fragmento HTML o texto sin formato que representa el cuerpo único de esta conversación.  <br/> |
-|[UID](uid.md) <br/> |Identifica un elemento de calendario.  <br/> |
-|[RecurrenceId](recurrenceid.md) <br/> |Se usa para identificar una instancia específica de un elemento periódico del calendario.  <br/> |
-|[DateTimeStamp](datetimestamp.md) <br/> |Indica la fecha y hora en que se ha creado una instancia de un objeto de iCalendar.  <br/> |
+|[WebClientReadFormQueryString](webclientreadformquerystring.md) <br/> |Representa una dirección URL que se va a concatenar con el punto de conexión de Microsoft Office Outlook Web App para leer un elemento en Outlook Web App.  <br/> |
+|[WebClientEditFormQueryString](webclienteditformquerystring.md) <br/> |Representa una dirección URL que se va a concatenar con el punto de conexión de Outlook Web App para editar un elemento en Outlook Web App.  <br/> |
+|[ConversationId](conversationid.md) <br/> |Contiene el identificador de un elemento o una conversación.  <br/> |
+|[UniqueBody](uniquebody.md) <br/> |Representa un fragmento HTML o texto sin formato que representa el único cuerpo de esta conversación.  <br/> |
+|[EXCLUSIVO](uid.md) <br/> |Identifica un elemento de calendario.  <br/> |
+|[RecurrenceId](recurrenceid.md) <br/> |Se usa para identificar una instancia específica de un elemento de calendario periódico.  <br/> |
+|[DateTimeStamp](datetimestamp.md) <br/> |Indica la fecha y la hora en que se creó una instancia de un objeto iCalendar.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AdjacentMeetings](adjacentmeetings.md) <br/> |Identifica todos los elementos de calendario que están junto a una hora de reunión.  <br/> |
-|[AppendToItemField](appendtoitemfield.md) <br/> |Identifica los datos que se anexará a una sola propiedad de un elemento durante una [operación de UpdateItem](updateitem-operation.md).  <br/> |
-|[ConflictingMeetings](conflictingmeetings.md) <br/> |Identifica todos los elementos que entran en conflicto con un tiempo de la reunión.  <br/> |
-|[Crear (ItemSync)](create-itemsync.md) <br/> |Identifica un solo elemento para crear en el almacén de cliente local.  <br/> |
+|[AdjacentMeetings](adjacentmeetings.md) <br/> |Identifica todos los elementos del calendario adyacentes a una hora de reunión.  <br/> |
+|[AppendToItemField](appendtoitemfield.md) <br/> |Identifica los datos que se van a anexar a una sola propiedad de un elemento durante una [operación UpdateItem](updateitem-operation.md).  <br/> |
+|[ConflictingMeetings](conflictingmeetings.md) <br/> |Identifica todos los elementos que entran en conflicto con una hora de reunión.  <br/> |
+|[Crear (ItemSync)](create-itemsync.md) <br/> |Identifica un solo elemento que se va a crear en el almacén de cliente local.  <br/> |
 |[Items](items.md) <br/> |Contiene una matriz de elementos.  <br/> |
-|[Elementos (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md) <br/> |Contiene una matriz de elementos que desea crear.  <br/> |
-|[ItemAttachment](itemattachment.md) <br/> |Representa un elemento de Exchange que está vinculado a otro elemento de Exchange.  <br/> |
-|[SetItemField](setitemfield.md) <br/> |Representa una actualización para una única propiedad de un elemento en una [operación de UpdateItem](updateitem-operation.md).  <br/> |
-|[Actualización (ItemSync)](update-itemsync.md) <br/> |Identifica un solo elemento que se debe actualizar en el almacén de cliente local.  <br/> |
+|[Elementos (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md) <br/> |Contiene una matriz de elementos que se van a crear.  <br/> |
+|[ItemAttachment](itemattachment.md) <br/> |Representa un elemento de Exchange que está adjunto a otro elemento de Exchange.  <br/> |
+|[SetItemField](setitemfield.md) <br/> |Representa una actualización de una propiedad única de un elemento en una [operación UpdateItem](updateitem-operation.md).  <br/> |
+|[Actualización (ItemSync)](update-itemsync.md) <br/> |Identifica un elemento único para actualizar en el almacén de cliente local.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -267,14 +267,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3f25e673-0df0-4285-bf03-a083a395cdab
-description: El elemento ModifyRecipientsAllowed especifica si está habilitada la modificación de los destinatarios.
-ms.openlocfilehash: 2b07c7fa8e6b5872621c8b019b60584abbf98e3c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ModifyRecipientsAllowed especifica si la modificación de los destinatarios está habilitada.
+ms.openlocfilehash: 3154ec3aceb2da7911002d505e0c452bf920d71f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836473"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465698"
 ---
 # <a name="modifyrecipientsallowed"></a>ModifyRecipientsAllowed
 
-El elemento **ModifyRecipientsAllowed** especifica si está habilitada la modificación de los destinatarios. 
+El elemento **ModifyRecipientsAllowed** especifica si la modificación de los destinatarios está habilitada. 
   
 ```XML
 <ModifyRecipientsAllowed> true | false </ModifyRecipientsAllowed>
@@ -26,15 +26,15 @@ El elemento **ModifyRecipientsAllowed** especifica si está habilitada la modifi
  **boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **ModifyRecipientsAllowed** indica que la lista de destinatarios del elemento es modificable para un elemento con administración de derechos habilitada en él. Un valor de **false** indica que la lista de destinatarios no es modificable. 
+Un valor de texto de **true** para el elemento **ModifyRecipientsAllowed** indica que la lista de destinatarios de elementos es modificable para un elemento con Rights Management habilitada. Un valor de **false** indica que la lista de destinatarios no es modificable. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

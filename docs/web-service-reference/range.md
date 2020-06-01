@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ee2891e4-3aa6-4258-9727-1f2ee9622508
-description: El elemento de intervalo especifica el intervalo de repeticiones del elemento de calendario para un elemento de calendario periódico.
-ms.openlocfilehash: 0264c541604808b46a50e292b8ff75f205796295
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Range especifica un intervalo de repeticiones de elementos de calendario para un elemento de calendario que se repite.
+ms.openlocfilehash: b5fb41709905290326b47e2662383031c34fd9c9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836946"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465313"
 ---
 # <a name="range"></a>Rango
 
-El elemento **Range** especifica el intervalo de repeticiones del elemento de calendario para un elemento de calendario periódico. 
+El elemento **Range** especifica un intervalo de repeticiones de elementos de calendario para un elemento de calendario que se repite. 
   
 ```XML
 <Range Start="" End="" Count="" CompareOriginalStartTime=""/>
@@ -26,20 +26,20 @@ El elemento **Range** especifica el intervalo de repeticiones del elemento de ca
  **OccurrencesRangeType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**Start** <br/> |El valor de texto del atributo **Iniciar** es la fecha de inicio del intervalo de elemento periódico. Esto es un valor de **fecha y hora** .  <br/> |
-|**End** <br/> |El valor de texto del atributo **final** es la fecha de finalización del intervalo de elemento periódico. Esto es un valor de **fecha y hora** .  <br/> |
-|**Count** <br/> |El valor de texto del atributo **Count** es el número de repeticiones del elemento periódico. Esto es un valor **entero** .  <br/> |
-|**CompareOriginalStartTime** <br/> |El valor de texto de **true** para el atributo **CompareOriginalStartTime** indica que el cliente debe comparar la hora de inicio original con la nueva hora de inicio. Un valor de **false** indica que el cliente no es necesario comparar la hora de inicio original con la nueva hora de inicio.  <br/> |
+|**Start** <br/> |El valor de texto del atributo **Start** es la fecha de inicio del intervalo de elementos periódicos. Se trata de un valor de **fecha y hora** .  <br/> |
+|**End** <br/> |El valor de texto del atributo **final** es la fecha de finalización del intervalo de elementos periódicos. Se trata de un valor de **fecha y hora** .  <br/> |
+|**Count** <br/> |El valor de texto del atributo **Count** es el número de repeticiones del elemento periódico. Se trata de un valor **entero** .  <br/> |
+|**CompareOriginalStartTime** <br/> |El valor de texto de **true** para el atributo **CompareOriginalStartTime** indica que el cliente debe comparar la hora de inicio original con la nueva hora de inicio. Un valor de **false** indica que el cliente no tiene que comparar la hora de inicio original con la nueva hora de inicio.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

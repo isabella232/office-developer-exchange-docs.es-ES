@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8aa4025b-38df-4d63-a6a5-c3b932bec26e
-description: El elemento SetUserOofSettingsResponse contiene el resultado de un intento de mensaje SetUserOofSettingsRequest.
-ms.openlocfilehash: ab2eaaad1b7b094baad724ec56f4c26280f1f15f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SetUserOofSettingsResponse contiene el resultado de un intento de mensaje de SetUserOofSettingsRequest.
+ms.openlocfilehash: 9b02d905f82488965f5ae0514a52eb6062aaff7d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837471"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466132"
 ---
 # <a name="setuseroofsettingsresponse"></a>SetUserOofSettingsResponse
 
-El elemento **SetUserOofSettingsResponse** contiene el resultado de un intento de mensaje [SetUserOofSettingsRequest](setuseroofsettingsrequest.md) . 
+El elemento **SetUserOofSettingsResponse** contiene el resultado de un intento de mensaje de [SetUserOofSettingsRequest](setuseroofsettingsrequest.md) . 
   
 ```xml
 <SetUserOofSettingsResponse>
@@ -32,17 +32,17 @@ El elemento **SetUserOofSettingsResponse** contiene el resultado de un intento d
  **SetUserOofSettingsResponse**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseMessage](responsemessage.md) <br/> |Proporciona información descriptiva sobre el estado de respuesta.  <br/> |
+|[ResponseMessage](responsemessage.md) <br/> |Proporciona información descriptiva sobre el estado de la respuesta.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -50,16 +50,16 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

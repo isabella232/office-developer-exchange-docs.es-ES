@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: de1d2a60-aeeb-4625-8b11-23c42e1e7bae
-description: El elemento MakeItemImmutable especifica un valor booleano que indica si se debe realizar un elemento de sólo lectura.
-ms.openlocfilehash: 63c05fd3572c7b4ab93fe098d9165a117849ef02
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MakeItemImmutable especifica un valor booleano que indica si un elemento se debe establecer como de solo lectura.
+ms.openlocfilehash: 05c6e3343b8ba892048174ad98c9d31fe8da685b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836337"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465866"
 ---
 # <a name="makeitemimmutable"></a>MakeItemImmutable
 
-El elemento **MakeItemImmutable** especifica un valor booleano que indica si se debe realizar un elemento de sólo lectura. 
+El elemento **MakeItemImmutable** especifica un valor booleano que indica si un elemento se debe establecer como de solo lectura. 
   
 ```XML
 <MakeItemImmutable>true | false</MakeItemImmutable>
@@ -26,15 +26,15 @@ El elemento **MakeItemImmutable** especifica un valor booleano que indica si se 
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **MakeItemImmutable** indica que se debe realizar el elemento de solo lectura. Un valor de **false** indica que el elemento permite el acceso de lectura y escritura. 
+Un valor de texto de **true** para el elemento **MakeItemImmutable** indica que el elemento se debe establecer como de solo lectura. Un valor de **false** indica que el elemento permite el acceso de lectura y escritura. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

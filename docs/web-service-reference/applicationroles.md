@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 00003b9b-f8f1-4452-a0af-157f789f8892
-description: El elemento ApplicationRoles especifica las funciones de aplicación que la aplicación de socio llamada se usa para la llamada actual.
-ms.openlocfilehash: ff32b693dae573416263bcb7c0fbb552a933b8d6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ApplicationRoles especifica los roles de aplicación que usa la aplicación de asociado de llamada para la llamada actual.
+ms.openlocfilehash: 8dfe5c745896d02217cbf91375d355954a4e22eb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763450"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464703"
 ---
 # <a name="applicationroles"></a>ApplicationRoles
 
-El elemento **ApplicationRoles** especifica las funciones de aplicación que la aplicación de socio llamada se usa para la llamada actual. 
+El elemento **ApplicationRoles** especifica los roles de aplicación que usa la aplicación de asociado de llamada para la llamada actual. 
   
 ```XML
 <ApplicationRoles>
@@ -28,23 +28,23 @@ El elemento **ApplicationRoles** especifica las funciones de aplicación que la 
  **NonEmptyArrayOfRoleType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Role](role.md) <br/> |Especifica una cadena que representa un rol de administración.  <br/> |
+|[Rol](role.md) <br/> |Especifica una cadena que representa una función de administración.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ManagementRole](managementrole.md) <br/> |Especifica la función de administración.  <br/> |
+|[ManagementRole](managementrole.md) <br/> |Especifica el rol de administración.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -56,12 +56,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

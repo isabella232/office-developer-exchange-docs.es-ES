@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4b806441-0429-44c4-90b7-1ae5c6ab9128
-description: El elemento SetImListMigrationCompleted representa una solicitud para indicar si el almacén de Exchange contiene los elementos de mensajería instantáneos utilizados por los clientes de mensajería instantánea.
-ms.openlocfilehash: 602583594aa171d49a1af2b70664301bf8ff1244
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SetImListMigrationCompleted representa una solicitud para indicar si el almacén de Exchange contiene los elementos de mensajería instantánea usados por los clientes de mensajería instantánea.
+ms.openlocfilehash: e5b16044ee72a9e931a2707d3f7823931f8a642a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837431"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464829"
 ---
 # <a name="setimlistmigrationcompleted"></a>SetImListMigrationCompleted
 
-El elemento **SetImListMigrationCompleted** representa una solicitud para indicar si el almacén de Exchange contiene los elementos de mensajería instantáneos utilizados por los clientes de mensajería instantánea. 
+El elemento **SetImListMigrationCompleted** representa una solicitud para indicar si el almacén de Exchange contiene los elementos de mensajería instantánea usados por los clientes de mensajería instantánea. 
   
 ```XML
 <SetImListMigrationCompleted>
@@ -28,11 +28,11 @@ El elemento **SetImListMigrationCompleted** representa una solicitud para indica
  **SetImListMigrationCompletedType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

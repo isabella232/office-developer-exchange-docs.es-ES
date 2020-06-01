@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6d5977ac-484e-4e53-92ba-58a868eb3395
-description: El elemento ProposeNewTime especifica un objeto de respuesta que indica que el Asistente de la reunión puede proponer una nueva hora de reunión.
-ms.openlocfilehash: 4a0238d94b29993def8009fae62380bb2c02e8b6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ProposeNewTime especifica un objeto Response que indica que el Asistente de la reunión puede proponer una nueva hora de reunión.
+ms.openlocfilehash: 76f590db760826aa2cd26938947a9b0e02a603f7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836904"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465544"
 ---
 # <a name="proposenewtime"></a>ProposeNewTime
 
-El elemento **ProposeNewTime** especifica un objeto de respuesta que indica que el Asistente de la reunión puede proponer una nueva hora de reunión. 
+El elemento **ProposeNewTime** especifica un objeto Response que indica que el Asistente de la reunión puede proponer una nueva hora de reunión. 
   
 ```XML
 <ProposeNewTime ObjectName=""></ProposeNewTime>
@@ -26,19 +26,19 @@ El elemento **ProposeNewTime** especifica un objeto de respuesta que indica que 
  **ProposeNewTimeType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
 ****
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|ObjectName  <br/> |El nombre del objeto de respuesta.  <br/> |
+|ObjectName  <br/> |Nombre del objeto de respuesta.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
@@ -66,5 +66,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [ResponseObjects](responseobjects.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Operación ResetPIN (servicio web de mensajería unificada)
+title: Operación ResetPIN (servicio Web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,27 +10,27 @@ api_name:
 api_type:
 - schema
 ms.assetid: c0f14a15-3389-4311-8bac-f87930c5f5d4
-description: La operación ResetPIN cambia el PIN (contraseña TUI) a un nuevo valor aleatorio.
-ms.openlocfilehash: e6417b86ce17c0d34fe857cf1209a18972cbef63
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación ResetPIN cambia el PIN (TUI contraseña) a un nuevo valor aleatorio.
+ms.openlocfilehash: 8de64ce7a47e9c426f8eb9298e1ca00508fb616c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837146"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44465495"
 ---
-# <a name="resetpin-operation-um-web-service"></a>Operación ResetPIN (servicio web de mensajería unificada)
+# <a name="resetpin-operation-um-web-service"></a>Operación ResetPIN (servicio Web de mensajería unificada)
 
-La operación ResetPIN cambia el PIN (contraseña TUI) a un nuevo valor aleatorio.
+La operación ResetPIN cambia el PIN (TUI contraseña) a un nuevo valor aleatorio.
   
 ## <a name="remarks"></a>Comentarios
 
-La operación ResetPIN crea un nuevo NIP en función de las directivas de PIN. Si la operación se realiza correctamente, se envía un mensaje de correo electrónico que contiene el nuevo NIP para el buzón de correo del usuario. Si se produce un error en la operación, producirá una excepción que contiene información sobre el error.
+La operación ResetPIN crea un nuevo PIN en función de las directivas de PIN. Si la operación se realiza correctamente, se envía un mensaje de correo electrónico que contiene el nuevo PIN al buzón del usuario. Si se produce un error en la operación, se producirá una excepción que contiene información sobre el error.
   
-## <a name="resetpin-request-example"></a>Ejemplo de solicitud de ResetPIN
+## <a name="resetpin-request-example"></a>Ejemplo de solicitud ResetPIN
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud de ResetPIN muestra cómo formar una solicitud para restablecer el NIP de un buzón de correo.
+El siguiente ejemplo de una solicitud ResetPIN muestra cómo crear una solicitud para restablecer el PIN de un buzón.
   
 ### <a name="code"></a>Código
 
@@ -38,16 +38,16 @@ El siguiente ejemplo de una solicitud de ResetPIN muestra cómo formar una solic
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <ResetPIN xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" />
+    <ResetPIN xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" />
   </soap:Body>
 </soap:Envelope>
 ```
 
-## <a name="successful-resetpin-response-example"></a>Ejemplo de respuesta correcta de ResetPIN
+## <a name="successful-resetpin-response-example"></a>Ejemplo de respuesta ResetPIN correcta
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una respuesta ResetPIN muestra una respuesta a la solicitud de ResetPIN.
+El siguiente ejemplo de una respuesta de ResetPIN muestra una respuesta a la solicitud ResetPIN.
   
 ### <a name="code"></a>Código
 
@@ -55,7 +55,7 @@ El siguiente ejemplo de una respuesta ResetPIN muestra una respuesta a la solici
 <?xml version="1.0" encoding="utf-8" ?> 
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Body>
-    <ResetPINResponse xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" /> 
+    <ResetPINResponse xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" /> 
   </soap:Body>
 </soap:Envelope>
 ```
@@ -64,7 +64,7 @@ El siguiente ejemplo de una respuesta ResetPIN muestra una respuesta a la solici
 
 
 
-[ResetPIN (servicio web de mensajería unificada)](resetpin-um-web-service.md)
+[ResetPIN (servicio Web de mensajería unificada)](resetpin-um-web-service.md)
   
-[ResetPINResponse (servicio web de mensajería unificada)](resetpinresponse-um-web-service.md)
+[ResetPINResponse (servicio Web de mensajería unificada)](resetpinresponse-um-web-service.md)
 

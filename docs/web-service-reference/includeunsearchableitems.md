@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9a9bd2dc-f5b9-4b82-a6a0-f643d2951080
-description: El elemento IncludeUnsearchableItems especifica si se incluyen los elementos que no se puede buscar.
-ms.openlocfilehash: 4c6b9b3752330bf914c9901d2e8f69e93546fec6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento IncludeUnsearchableItems especifica si se deben incluir los elementos que no se pueden buscar.
+ms.openlocfilehash: 19fe450f5b1647be2df75138dbe67dd9e1c05c21
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835907"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465705"
 ---
 # <a name="includeunsearchableitems"></a>IncludeUnsearchableItems
 
-El elemento **IncludeUnsearchableItems** especifica si se incluyen los elementos que no se puede buscar. 
+El elemento **IncludeUnsearchableItems** especifica si se deben incluir los elementos que no se pueden buscar. 
   
 ```XML
 <IncludeUnsearchableItems>true | false</IncludeUnsearchableItems>
@@ -26,25 +26,25 @@ El elemento **IncludeUnsearchableItems** especifica si se incluyen los elementos
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md) <br/> |Especifica una solicitud para buscar las estadísticas de buzón de correo por palabra clave.  <br/> |
+|[FindMailboxStatisticsByKeywords](findmailboxstatisticsbykeywords.md) <br/> |Especifica una solicitud para buscar estadísticas de buzón por palabra clave.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **IncludeUnsearchableItems** indica que no se incluyen para los elementos que no se pueden buscar las estadísticas. Un valor de **false** indica que las estadísticas se incluyen para los elementos que no se pueden buscar. 
+Un valor de texto de **true** para el elemento **IncludeUnsearchableItems** indica que no se incluyen estadísticas para los elementos que no se pueden buscar. Un valor de **false** indica que se incluyen estadísticas para los elementos que no se pueden buscar. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

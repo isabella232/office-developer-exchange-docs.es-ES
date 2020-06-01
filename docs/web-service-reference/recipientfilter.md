@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 956c287a-a38a-49a7-a877-6d2088dfbc06
-description: El elemento RecipientFilter representa una dirección de destinatario para usar con el informe de seguimiento de mensajes especificado.
-ms.openlocfilehash: c31ed469132b110a690416b112d5e4e96e44c501
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RecipientFilter representa la dirección de un destinatario que se va a usar con el informe de seguimiento de mensajes especificado.
+ms.openlocfilehash: 945adf9155434e0690debfccc7caf70ba0cb94ec
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836972"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465810"
 ---
 # <a name="recipientfilter"></a>RecipientFilter
 
-El elemento **RecipientFilter** representa una dirección de destinatario para usar con el informe de seguimiento de mensajes especificado. 
+El elemento **RecipientFilter** representa la dirección de un destinatario que se va a usar con el informe de seguimiento de mensajes especificado. 
   
 ```XML
  <RecipientFilter>
@@ -36,27 +36,27 @@ El elemento **RecipientFilter** representa una dirección de destinatario para u
  **EmailAddressType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Nombre (EmailAddressType)](name-emailaddresstype.md) <br/> |Representa el nombre del usuario de buzón de correo. Este elemento es opcional.  <br/> |
-|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Define la dirección de Protocolo Simple de transferencia de correo (SMTP) principal de un usuario de buzón de correo. Este elemento es opcional.  <br/> |
+|[Nombre (EmailAddressType)](name-emailaddresstype.md) <br/> |Representa el nombre del usuario del buzón. Este elemento es opcional.  <br/> |
+|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Define la dirección principal del Protocolo simple de transferencia de correo (SMTP) de un usuario de buzón. Este elemento es opcional.  <br/> |
 |[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Representa el protocolo de enrutamiento para este destinatario. El valor predeterminado es SMTP. Este elemento es opcional.  <br/> |
-|[MailboxType](mailboxtype.md) <br/> |Representa el tipo de buzón de correo que está representada por la dirección de correo electrónico. Este elemento es opcional.  <br/> |
+|[MailboxType](mailboxtype.md) <br/> |Representa el tipo de buzón que se representa mediante la dirección de correo electrónico. Este elemento es opcional.  <br/> |
 |[ItemId](itemid.md) <br/> |Define el identificador de elemento de un contacto o una lista de distribución privada para los destinatarios de la carpeta de contactos de un usuario. Este elemento es opcional.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |Contiene la solicitud para la [operación de GetMessageTrackingReport](getmessagetrackingreport-operation.md) recuperar el mensaje completo informe de seguimiento para el identificador especificado.  <br/> |
+|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |Contiene la solicitud de la [operación GetMessageTrackingReport](getmessagetrackingreport-operation.md) para recuperar el informe completo de seguimiento de mensajes del identificador especificado.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -70,10 +70,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -82,5 +82,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación GetMessageTrackingReport](getmessagetrackingreport-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

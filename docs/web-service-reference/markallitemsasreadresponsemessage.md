@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e52f56d4-c6a3-458a-8abb-4e0c19d32341
-description: El elemento MarkAllItemsAsReadResponseMessage especifica el mensaje de respuesta de una solicitud de MarkAllItemsAsRead.
-ms.openlocfilehash: e1e0ba3748fe12b6c7f54f0acaa5e1f699a4869a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MarkAllItemsAsReadResponseMessage especifica el mensaje de respuesta para una solicitud de MarkAllItemsAsRead.
+ms.openlocfilehash: a3609f356dd20e121105b5ca57b389d492e852ff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836349"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465817"
 ---
 # <a name="markallitemsasreadresponsemessage"></a>MarkAllItemsAsReadResponseMessage
 
-El elemento **MarkAllItemsAsReadResponseMessage** especifica el mensaje de respuesta de una solicitud de **MarkAllItemsAsRead** . 
+El elemento **MarkAllItemsAsReadResponseMessage** especifica el mensaje de respuesta para una solicitud de **MarkAllItemsAsRead** . 
   
 ```XML
 <MarkAllItemsAsReadResponseMessage>
@@ -31,15 +31,15 @@ El elemento **MarkAllItemsAsReadResponseMessage** especifica el mensaje de respu
  ****
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md)
+[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

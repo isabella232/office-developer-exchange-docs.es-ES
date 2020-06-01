@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: fef0db2a-f126-4a38-b433-64194b22eab4
-description: El elemento MaxItemsToReturn identifica el número máximo de los elementos de las conversaciones para devolver en una respuesta de GetConversationItems.
-ms.openlocfilehash: 7d7ac1734ad2d266ca427c34619e7f3bc11824e8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MaxItemsToReturn identifica el número máximo de elementos de conversaciones que se devolverán en una respuesta de GetConversationItems.
+ms.openlocfilehash: 5d3c509a35c3b7abc42fc7e0ec0d8447eaf5a977
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836385"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466342"
 ---
 # <a name="maxitemstoreturn"></a>MaxItemsToReturn
 
-El elemento **MaxItemsToReturn** identifica el número máximo de los elementos de las conversaciones para devolver en una respuesta de **GetConversationItems** . 
+El elemento **MaxItemsToReturn** identifica el número máximo de elementos de conversaciones que se devolverán en una respuesta de **GetConversationItems** . 
   
 ```XML
 <MaxItemsToReturn></MaxItemsToReturn>
@@ -26,15 +26,15 @@ El elemento **MaxItemsToReturn** identifica el número máximo de los elementos 
  **int**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **MaxItemsToReturn** es el número máximo de elementos de la conversación para devolver en una respuesta. 
+El valor de texto del elemento **MaxItemsToReturn** es el número máximo de elementos de conversación que se devolverán en una respuesta. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

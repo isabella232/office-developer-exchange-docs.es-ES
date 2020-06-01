@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c5e0582d-c1e1-453b-93ed-c31165c82697
-description: El elemento InstallAppResponse especifica la respuesta a una solicitud de InstallApp.
-ms.openlocfilehash: 8e8da720b3a38e979b3d83810bb798350822146c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento InstallAppResponse especifica la respuesta a una solicitud InstallApp.
+ms.openlocfilehash: 0f7690e2df7e71c4e478dec191671af24f96294b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835942"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465670"
 ---
 # <a name="installappresponse"></a>InstallAppResponse
 
-El elemento **InstallAppResponse** especifica la respuesta a una solicitud de **InstallApp** . 
+El elemento **InstallAppResponse** especifica la respuesta a una solicitud **InstallApp** . 
   
 ```xml
 <InstallAppResponse ResponseClass="">
@@ -31,11 +31,11 @@ El elemento **InstallAppResponse** especifica la respuesta a una solicitud de **
  **InstallAppResponseType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
 |ResponseClass  <br/> |Indica la clase de la respuesta.  <br/> |
    
@@ -43,24 +43,24 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Correcto  <br/> |Indica éxito.  <br/> |
+|Correcto  <br/> |Indica que se ha realizado correctamente.  <br/> |
 |Advertencia  <br/> |Indica una advertencia.  <br/> |
 |Error  <br/> |Indica un error.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Actualmente no utilizado y reservado para uso futuro.  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Actualmente no está en uso y reservado para uso futuro.  <br/> |
 |[MessageText](messagetext.md) <br/> |Proporciona una descripción de texto del estado de la respuesta.  <br/> |
-|[MessageXml](messagexml.md) <br/> |Proporciona información de la respuesta de error adicionales.  <br/> |
-|[ResponseCode](responsecode.md) <br/> |Proporciona información de estado acerca de la solicitud.  <br/> |
+|[MessageXml](messagexml.md) <br/> |Proporciona información de respuesta de error adicional.  <br/> |
+|[ResponseCode](responsecode.md) <br/> |Proporciona información de estado sobre la solicitud.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta para una solicitud de servicios Web de Exchange.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta de una solicitud de servicios web Exchange.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -68,20 +68,20 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento **GetAppManifestsResponseMessage** es aplicable para los clientes que estén destinados a Exchange Online y versiones de Exchange 2013 a partir de Microsoft Exchange Server. 
+El elemento **GetAppManifestsResponseMessage** se aplica a los clientes de Exchange Online y versiones de Microsoft Exchange Server que empiecen por Exchange 2013. 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

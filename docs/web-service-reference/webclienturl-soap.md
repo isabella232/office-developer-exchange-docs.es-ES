@@ -9,12 +9,12 @@ api_type:
 - schema
 ms.assetid: 7f8cb6d6-4aac-4a1f-8bec-2dcb90fc1df6
 description: El elemento WebClientUrl representa la dirección URL de un cliente web de Exchange.
-ms.openlocfilehash: 649845018acee1706a96f9e37475a6d5c5fa0aa7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: bcf9c8d4fe80de8af4c9500e5e850558a8451d4e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840990"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464976"
 ---
 # <a name="webclienturl-soap"></a>WebClientUrl (SOAP)
 
@@ -36,39 +36,39 @@ El elemento **WebClientUrl** representa la dirección URL de un cliente web de E
  **WebClientUrl**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AuthenticationMethods (SOAP)](authenticationmethods-soap.md) <br/> |Representa el método de autenticación que se utilizará al obtener acceso a la dirección URL especificada.  <br/> |
-|[Dirección URL (SOAP)](url-soap.md) <br/> |Representa la dirección web para la dirección URL.  <br/> |
+|[AuthenticationMethods (SOAP)](authenticationmethods-soap.md) <br/> |Representa el método de autenticación que se va a usar para obtener acceso a la dirección URL especificada.  <br/> |
+|[URL (SOAP)](url-soap.md) <br/> |Representa la dirección Web de la dirección URL.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[WebClientUrls (SOAP)](webclienturls-soap.md) <br/> |Representa una configuración de usuario que contiene una colección de elementos de **WebClientUrl** .  <br/> |
+|[WebClientUrls (SOAP)](webclienturls-soap.md) <br/> |Representa una configuración de usuario que contiene una colección de elementos **WebClientUrl** .  <br/> |
    
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Dirección URL (SOAP)](url-soap.md)
+[URL (SOAP)](url-soap.md)
   
 [WebClientUrls (SOAP)](webclienturls-soap.md)
 

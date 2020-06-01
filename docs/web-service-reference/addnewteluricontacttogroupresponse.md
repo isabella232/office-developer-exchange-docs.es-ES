@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: abff2306-a3a7-489a-b548-2edbc1eb5cc4
-description: El elemento AddNewTelUriContactToGroupResponse especifica los datos de resultado de la operación WSDL AddNewTelUriContactToGroup.
-ms.openlocfilehash: ddf038af2f4dec8cff98c4453e867af1fe7b8076
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AddNewTelUriContactToGroupResponse especifica los datos de resultado para la operación WSDL de AddNewTelUriContactToGroup.
+ms.openlocfilehash: dfbf208cd5fc59902b16661658985442d4fa57e8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763412"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464920"
 ---
 # <a name="addnewteluricontacttogroupresponse"></a>AddNewTelUriContactToGroupResponse
 
-El elemento **AddNewTelUriContactToGroupResponse** especifica los datos de resultado de la operación de WSDL **AddNewTelUriContactToGroup** . 
+El elemento **AddNewTelUriContactToGroupResponse** especifica los datos de resultado para la operación WSDL de **AddNewTelUriContactToGroup** . 
   
 ```XML
 <AddNewTelUriContactToGroupResponse>
@@ -31,15 +31,15 @@ El elemento **AddNewTelUriContactToGroupResponse** especifica los datos de resul
  **AddNewTelUriContactToGroupResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Rol](persona.md) | [MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md)
+[Persona](persona.md)  |  [MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,13 +55,13 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación AddNewTelUriContactToGroup](addnewteluricontacttogroup-operation.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

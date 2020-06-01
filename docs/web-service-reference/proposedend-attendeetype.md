@@ -1,5 +1,5 @@
 ---
-title: ///ProposedEnd (AttendeeType)
+title: ProposedEnd (AttendeeType)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: fc9c0a57-f8b0-440f-97dd-88af47840625
-description: El elemento ///ProposedEnd (AttendeeType) especifica la hora de finalización propuesta de un Asistente para una reunión.
-ms.openlocfilehash: 7a785d675306bf9174f74bc6518905a212f10d06
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ProposedEnd (AttendeeType) especifica la hora de finalización propuesta de un asistente para una reunión.
+ms.openlocfilehash: 892a80197a269f806fe7520d6660d09e1cfb38ff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836895"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465572"
 ---
-# <a name="proposedend-attendeetype"></a>///ProposedEnd (AttendeeType)
+# <a name="proposedend-attendeetype"></a>ProposedEnd (AttendeeType)
 
-El elemento **///ProposedEnd (AttendeeType)** especifica la hora de finalización propuesta de un Asistente para una reunión. 
+El elemento **ProposedEnd (AttendeeType)** especifica la hora de finalización propuesta de un asistente para una reunión. 
   
 ```XML
 <ProposedEnd/>
@@ -26,23 +26,23 @@ El elemento **///ProposedEnd (AttendeeType)** especifica la hora de finalizació
  **dateTime**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Attendee](attendee.md)
+[Asistente](attendee.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **///ProposedEnd (AttendeeType)** es la fecha de finalización propuesta y la hora para una reunión. 
+El valor de texto del elemento **ProposedEnd (AttendeeType)** es la fecha y hora finales propuestas para una reunión. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,17 +54,17 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Attendee](attendee.md)
+[Asistente](attendee.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -11,47 +11,47 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1d42d5ff-8fde-4f8a-b18d-57b1ef7a946a
-description: La operación RemoveDelegate quita a uno o varios delegados de buzón de un usuario.
-ms.openlocfilehash: 6f3371d19bd8a7fd967d4959d85037ae6b51f6aa
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación RemoveDelegate quita uno o más delegados del buzón de un usuario.
+ms.openlocfilehash: b2e342225e7e79c44dcd86b76b4b7d47b16b860b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837088"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466601"
 ---
 # <a name="removedelegate-operation"></a>Operación RemoveDelegate
 
-La operación **RemoveDelegate** quita a uno o varios delegados de buzón de un usuario. 
+La operación **RemoveDelegate** quita uno o más delegados del buzón de un usuario. 
   
 ## <a name="soap-headers"></a>Encabezados SOAP
 
-La operación de **RemoveDelegate** puede utilizar los encabezados SOAP que se enumeran y describen en la tabla siguiente. 
+La operación **RemoveDelegate** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla. 
   
-|**Header**|**Element**|**Descripción**|
+|**Header**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario que está realizando la suplantación de la aplicación cliente.  <br/> |
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural de RFC3066 va a usar para tener acceso al buzón.  <br/> |
-|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de la operación.  <br/> |
-|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que ha respondido a la solicitud.  <br/> |
+|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente.  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural RFC3066 que se va a usar para obtener acceso al buzón.  <br/> |
+|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación.  <br/> |
+|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud.  <br/> |
    
-## <a name="removedelegate-request-example"></a>Ejemplo de solicitud de RemoveDelegate
+## <a name="removedelegate-request-example"></a>Ejemplo de solicitud RemoveDelegate
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo de código siguiente se muestra cómo quitar a dos delegados de buzón de user1. En este ejemplo, se quita un delegado mediante el uso de una dirección SMTP principal del delegado y el otro se se quita mediante el uso de identificador de seguridad del delegado (SID).
+En el ejemplo de código siguiente se muestra cómo quitar dos delegados del buzón de correo de Usuario1. En este ejemplo, se quita un delegado mediante la dirección SMTP principal del delegado y el otro se quita mediante el identificador de seguridad (SID) del delegado.
   
 ### <a name="code"></a>Código
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1"/>
   </soap:Header>
   <soap:Body>
-    <RemoveDelegate xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <RemoveDelegate xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <Mailbox>
         <t:EmailAddress>user1@example.com</t:EmailAddress>
       </Mailbox>
@@ -70,13 +70,13 @@ En el ejemplo de código siguiente se muestra cómo quitar a dos delegados de bu
 
 ### <a name="comments"></a>Comentarios
 
-La operación **RemoveDelegate** no requieren que el usuario delegado especificado que tenga un buzón o que exista en el servicio de directorio de Active Directory. La operación de **RemoveDelegate** se realizará correctamente si la entrada de delegado es huérfana. 
+La operación **RemoveDelegate** no requiere que el usuario delegado especificado tenga un buzón de correo o exista en el servicio de directorio de Active Directory. La operación **RemoveDelegate** se realizará correctamente si la entrada de delegado está huérfana. 
   
 ## <a name="removedelegate-response-example"></a>Ejemplo de respuesta RemoveDelegate
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una respuesta **RemoveDelegate** muestra una respuesta a una solicitud **RemoveDelegate** correcta. La respuesta contiene un elemento **DelegateUserResponseMessageType** para cada delegado que se ha quitado del buzón de correo. 
+El siguiente ejemplo de una respuesta de **RemoveDelegate** muestra una respuesta correcta a una solicitud de **RemoveDelegate** . La respuesta contiene un elemento **DelegateUserResponseMessageType** para cada delegado que se quita del buzón. 
   
 ### <a name="code"></a>Código
 
@@ -91,12 +91,12 @@ El siguiente ejemplo de una respuesta **RemoveDelegate** muestra una respuesta a
                          MajorBuildNumber="206" 
                          MinorBuildNumber="0" 
                          Version="Exchange2007_SP1" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <m:RemoveDelegateResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+    <m:RemoveDelegateResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                               ResponseClass="Success" 
-                              xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+                              xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</m:ResponseCode>
       <m:ResponseMessages>
         <m:DelegateUserResponseMessageType ResponseClass="Success">
@@ -111,11 +111,11 @@ El siguiente ejemplo de una respuesta **RemoveDelegate** muestra una respuesta a
 </soap:Envelope>
 ```
 
-## <a name="removedelegate-error-response-example"></a>Ejemplo de respuesta de RemoveDelegate Error
+## <a name="removedelegate-error-response-example"></a>Ejemplo de respuesta de error RemoveDelegate
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una respuesta de error **RemoveDelegate** muestra los resultados de una solicitud para quitar a un delegado que no existe. 
+El siguiente ejemplo de una respuesta de error **RemoveDelegate** muestra los resultados de una solicitud para quitar un delegado que no existe. 
   
 ### <a name="code"></a>Código
 
@@ -130,12 +130,12 @@ El siguiente ejemplo de una respuesta de error **RemoveDelegate** muestra los re
                          MajorBuildNumber="206"
                          MinorBuildNumber="0"
                          Version="Exchange2007_SP1"
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <m:RemoveDelegateResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+    <m:RemoveDelegateResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                               ResponseClass="Success"
-                              xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+                              xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</m:ResponseCode>
       <m:ResponseMessages>
         <m:DelegateUserResponseMessageType ResponseClass="Error">
@@ -153,5 +153,5 @@ El siguiente ejemplo de una respuesta de error **RemoveDelegate** muestra los re
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

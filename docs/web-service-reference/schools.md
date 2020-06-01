@@ -1,5 +1,5 @@
 ---
-title: Escuelas
+title: Centros educativos
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,14 +8,14 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 486a0340-3163-4905-abd5-1372995c9a3a
 description: El elemento escuelas especifica una matriz de nombres de escuela y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: 484412811533a62ecccaaf21d984376ad5f59c49
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: e24d5318a38aa0a902d4976d7b31a376399d2cfd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837273"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465271"
 ---
-# <a name="schools"></a>Escuelas
+# <a name="schools"></a>Centros educativos
 
 El elemento **escuelas** especifica una matriz de nombres de escuela y los identificadores de sus atribuciones de origen para el rol asociado. 
   
@@ -28,11 +28,11 @@ El elemento **escuelas** especifica una matriz de nombres de escuela y los ident
  **ArrayOfStringAttributedValuesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

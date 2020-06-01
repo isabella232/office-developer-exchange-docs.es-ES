@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c5aa96b1-2d8b-422f-8c2f-f118572ab23f
-description: El elemento Actions representa el conjunto de acciones que están disponibles para ser tomadas en un mensaje cuando se cumplen las condiciones.
-ms.openlocfilehash: 093d2f28135c6077b6cea488591573af0182934b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Actions representa el conjunto de acciones que están disponibles para su realización en un mensaje cuando se cumplan las condiciones.
+ms.openlocfilehash: 2ac53778b583595fa8be07f2c5110a9e2df16eca
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763388"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465068"
 ---
 # <a name="actions"></a>Acciones
 
-El elemento **Actions** representa el conjunto de acciones que están disponibles para ser tomadas en un mensaje cuando se cumplen las condiciones. 
+El elemento **Actions** representa el conjunto de acciones que están disponibles para su realización en un mensaje cuando se cumplan las condiciones. 
   
 [Regla (RuleType)](rule-ruletype.md)
   
@@ -46,35 +46,35 @@ El elemento **Actions** representa el conjunto de acciones que están disponible
  **RuleActionsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AssignCategories](assigncategories.md) <br/> |Representa las categorías que están marcadas en mensajes de correo electrónico.  <br/> |
-|[CopyToFolder](copytofolder.md) <br/> |Identifica el identificador de la carpeta que se copiarán los elementos de correo electrónico a.  <br/> |
-|[Eliminar](delete.md) <br/> |Indica si los mensajes se mueven a la carpeta Elementos eliminados.  <br/> |
-|[ForwardAsAttachmentToRecipients](forwardasattachmenttorecipients.md) <br/> |Indica las direcciones de correo electrónico a la que los mensajes deben ser reenviado como datos adjuntos.  <br/> |
-|[ForwardToRecipients](forwardtorecipients.md) <br/> |Indica las direcciones de correo electrónico a la que los mensajes se se transfieran.  <br/> |
-|[MarkImportance](markimportance.md) <br/> |Especifica la importancia que se mostrará en los mensajes.  <br/> |
-|[MarkAsRead](markasread.md) <br/> |Indica si los mensajes se marcan como leídos.  <br/> |
-|[MoveToFolder](movetofolder.md) <br/> |Identifica el identificador de la carpeta que se moverán los elementos de correo electrónico a.  <br/> |
-|[PermanentDelete](permanentdelete.md) <br/> |Indica si los mensajes se eliminan permanentemente y no se ha guardado en la carpeta Elementos eliminados.  <br/> |
-|[RedirectToRecipients](redirecttorecipients.md) <br/> |Indica las direcciones de correo electrónico a la que los mensajes se que se redirija.  <br/> |
-|[SendSMSAlertToRecipients](sendsmsalerttorecipients.md) <br/> |Indica el número de teléfono móvil a los que es una alerta de servicio de mensajes cortos (SMS) que se envíen.  <br/> |
-|[ServerReplyWithMessage](serverreplywithmessage.md) <br/> |Indica. el identificador del mensaje de plantilla que se envía como una respuesta a los mensajes entrantes.  <br/> |
-|[StopProcessingRules](stopprocessingrules.md) <br/> |Indica si las reglas que siguen son que se deben evaluar.  <br/> |
+|[AssignCategories](assigncategories.md) <br/> |Representa las categorías que se marcan en los mensajes de correo electrónico.  <br/> |
+|[CopyToFolder](copytofolder.md) <br/> |Identifica el identificador de la carpeta en la que se copiarán los elementos de correo electrónico.  <br/> |
+|[Eliminar](delete.md) <br/> |Indica si los mensajes se moverán a la carpeta elementos eliminados.  <br/> |
+|[ForwardAsAttachmentToRecipients](forwardasattachmenttorecipients.md) <br/> |Indica las direcciones de correo electrónico a las que se deben reenviar los mensajes como datos adjuntos.  <br/> |
+|[ForwardToRecipients](forwardtorecipients.md) <br/> |Indica las direcciones de correo electrónico a las que se van a reenviar los mensajes.  <br/> |
+|[MarkImportance](markimportance.md) <br/> |Especifica la importancia que se va a estampar en los mensajes.  <br/> |
+|[MarkAsRead](markasread.md) <br/> |Indica si los mensajes se deben marcar como leídos.  <br/> |
+|[MoveToFolder](movetofolder.md) <br/> |Identifica el identificador de la carpeta a la que se moverán los elementos de correo electrónico.  <br/> |
+|[PermanentDelete](permanentdelete.md) <br/> |Indica si los mensajes se eliminan permanentemente y no se guardan en la carpeta elementos eliminados.  <br/> |
+|[RedirectToRecipients](redirecttorecipients.md) <br/> |Indica las direcciones de correo electrónico a las que se van a redirigir los mensajes.  <br/> |
+|[SendSMSAlertToRecipients](sendsmsalerttorecipients.md) <br/> |Indica los números de teléfono móvil a los que se enviará una alerta de servicio de mensajes cortos (SMS).  <br/> |
+|[ServerReplyWithMessage](serverreplywithmessage.md) <br/> |Indicar. IDENTIFICADOR del mensaje de plantilla que se va a enviar como respuesta a los mensajes entrantes.  <br/> |
+|[StopProcessingRules](stopprocessingrules.md) <br/> |Indica si las reglas posteriores se deben evaluar.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Regla (RuleType)](rule-ruletype.md) <br/> |Representa una sola regla en el buzón del usuario.  <br/> |
+|[Regla (RuleType)](rule-ruletype.md) <br/> |Representa una sola regla en el buzón de un usuario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -88,13 +88,13 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Condiciones](conditions.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6faad98f-1a92-4373-bde5-dd12af61765f
-description: El elemento de tipo especifica el tipo de carpeta que se utiliza en una directiva de retención.
-ms.openlocfilehash: f679a9237a577d26d4b28e1b25f3e135f7193903
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Type Especifica el tipo de carpeta que se usa en una directiva de retención.
+ms.openlocfilehash: f6fcc7942a530ada2d6e72c3e38286a7595b09ec
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840732"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465110"
 ---
 # <a name="type-elcfoldertype"></a>Tipo (ElcFolderType)
 
-El elemento de **tipo** especifica el tipo de carpeta que se utiliza en una directiva de retención. 
+El elemento **Type** especifica el tipo de carpeta que se usa en una directiva de retención. 
   
 ```XML
 <Type> Calendar | Contacts | DeletedItems | Drafts | Inbox | JunkEmail | Journal | Notes | Outbox | SentItems | Tasks | All | ManagedCustomFolder | RssSubscriptions | SyncIssues | ConversationHistory | Personal | RecoverableItems | NonIpmRoot <Type>
@@ -26,15 +26,15 @@ El elemento de **tipo** especifica el tipo de carpeta que se utiliza en una dire
  **ElcFolderType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del **tipo de** elemento es el tipo de carpeta utilizado en una directiva de retención. El valor de texto puede ser uno de los siguientes valores que representan un tipo de carpeta predeterminado: calendario, contactos, DeletedItems, borradores, Bandeja de entrada, JunkEmail, diario, notas, Bandeja de salida, elementos enviados y tareas, All, ManagedCustomFolder, RssSubscriptions, SyncIssues, ConversationHistory, Personal, RecoverableItems o NonIpmRoot 
+El valor de texto del elemento **Type** es el tipo de carpeta usado en una directiva de retención. El valor de texto puede ser uno de los siguientes valores que representan un tipo de carpeta predeterminado: calendario, contactos, DeletedItems, borradores, bandeja de entrada, JunkEmail, diario, notas, bandeja de salida, SentItems, tareas, todos, ManagedCustomFolder, RssSubscriptions, SyncIssues, ConversationHistory, personal, RecoverableItems o NonIpmRoot 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

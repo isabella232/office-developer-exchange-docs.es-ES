@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: dd6900e4-e4a3-471a-909d-7240ebec501b
-description: El elemento IsMeeting indica si el evento de calendario es una reunión o una cita.
-ms.openlocfilehash: f3f6e0cc5fbfe29e5a818d69794cbaf5b6855962
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento IsMeeting indica si el evento del calendario es una reunión o una cita.
+ms.openlocfilehash: b75dfba203177d6451f3847bf8d1f68014612e1c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836046"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465999"
 ---
 # <a name="ismeeting-calendareventdetails"></a>IsMeeting (CalendarEventDetails)
 
-El elemento **IsMeeting** indica si el evento de calendario es una reunión o una cita. 
+El elemento **IsMeeting** indica si el evento del calendario es una reunión o una cita. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -46,40 +46,40 @@ El elemento **IsMeeting** indica si el evento de calendario es una reunión o un
  **boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarEventDetails](calendareventdetails.md) <br/> |Proporciona información adicional para un evento del calendario.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
+|[CalendarEventDetails](calendareventdetails.md) <br/> |Proporciona información adicional para un evento de calendario.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Si este elemento se devuelve en la respuesta, es necesario un valor de texto. Este elemento es necesario si se usa el elemento [CalendarEventDetails](calendareventdetails.md) . 
+Es necesario un valor de texto si este elemento se devuelve en la respuesta. Este elemento es obligatorio si se usa el elemento [CalendarEventDetails](calendareventdetails.md) . 
   
 ## <a name="remarks"></a>Comentarios
 
-La diferencia entre una reunión y una cita es que una reunión es un elemento de calendario que incluye a los asistentes; una cita es un elemento de calendario que no incluye a los asistentes.
+La diferencia entre una reunión y una cita es que una reunión es un elemento de calendario que incluye asistentes; una cita es un elemento de calendario que no incluye asistentes.
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -90,5 +90,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

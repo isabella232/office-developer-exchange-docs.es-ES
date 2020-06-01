@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 86ef6012-2d3c-4058-9c43-5ddbea25f6ce
-description: El elemento YomiFirstName representa el nombre que se usa en Japón para la ortografía fonética o que admite búsqueda para un nombre en japonés.
-ms.openlocfilehash: afcc91055d357c935c33c246e43e12bafd48ad10
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento YomiFirstName representa el nombre que se usa en Japón para la ortografía o búsqueda fonética para un nombre en japonés.
+ms.openlocfilehash: b059059fde9d5a455ea32113fa454de254598d29
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19841038"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465131"
 ---
 # <a name="yomifirstname"></a>YomiFirstName
 
-El elemento **YomiFirstName** representa el nombre que se usa en Japón para la ortografía fonética o que admite búsqueda para un nombre en japonés. 
+El elemento **YomiFirstName** representa el nombre que se usa en Japón para la ortografía o búsqueda fonética para un nombre en japonés. 
   
 ```xml
 <YomiFirstName/>
@@ -30,41 +30,41 @@ El elemento **YomiFirstName** representa el nombre que se usa en Japón para la 
  **String**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[CompleteName](completename.md) <br/> |Representa el nombre completo de un contacto.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Creación de contactos (servicios Web de Exchange)](http://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
+[Creación de contactos (servicios Web de Exchange)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
 

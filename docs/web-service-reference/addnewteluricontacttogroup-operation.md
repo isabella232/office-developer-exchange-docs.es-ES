@@ -7,49 +7,49 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c9688ce8-2465-45bb-8bd2-94b32ed4885c
-description: Obtenga información sobre cómo usar la operación de EWS AddNewTelUriContactToGroup.
-ms.openlocfilehash: 34450171776b4215d9c0a39700a309e2e2d755dd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Busque información sobre cómo usar la operación de EWS de AddNewTelUriContactToGroup.
+ms.openlocfilehash: 91228ec627ad928d2f1837c135af24846f811b1c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763410"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464948"
 ---
 # <a name="addnewteluricontacttogroup-operation"></a>Operación AddNewTelUriContactToGroup
 
-Obtenga información sobre cómo usar la operación de EWS **AddNewTelUriContactToGroup** . 
+Busque información sobre cómo usar la operación de EWS de **AddNewTelUriContactToGroup** . 
   
 La operación **AddNewTelUriContactToGroup** agrega un nuevo contacto a un grupo basado en el número de teléfono de un contacto. 
   
 Esta operación se introdujo en Exchange Server 2013.
   
-## <a name="using-the-addnewteluricontacttogroup-operation"></a>Mediante la operación AddNewTelUriContactToGroup
+## <a name="using-the-addnewteluricontacttogroup-operation"></a>Uso de la operación AddNewTelUriContactToGroup
 
-Una solicitud de operación **AddNewTelUriContactToGroup** envía URI de TEL de un contacto, el URI del SIP, número de teléfono y el grupo para agregar el contacto a. Una respuesta de la operación de **AddNewTelUriContactToGroup** crea un rol para el nuevo contacto. Esta operación permite a los clientes agregar un nuevo contacto, incluso si el contacto no tiene un nombre. 
+Una solicitud de operación **AddNewTelUriContactToGroup** envía el URI de Tel de un contacto, el URI de SIP, el número de teléfono y el grupo al que se va a agregar el contacto. Una respuesta de operación **AddNewTelUriContactToGroup** crea un rol para el nuevo contacto. Esta operación permite a los clientes agregar un nuevo contacto incluso si el contacto no tiene un nombre. 
   
-### <a name="addnewteluricontacttogroup-operation-soap-headers"></a>Encabezados SOAP de operación de AddNewTelUriContactToGroup
+### <a name="addnewteluricontacttogroup-operation-soap-headers"></a>Encabezados SOAP de operación AddNewTelUriContactToGroup
 
-La operación de **AddNewTelUriContactToGroup** puede utilizar los encabezados SOAP que se enumeran en la siguiente tabla. 
+La operación **AddNewTelUriContactToGroup** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
   
-|**Nombre de encabezado**|**Element**|**Descripción**|
+|**Nombre de encabezado**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario que está realizando la suplantación de la aplicación cliente. Este encabezado es aplicable a una solicitud.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural, como se define en RFC 3066, "Etiquetas para la identificación de idiomas," que se utilizará para acceder al buzón. Este encabezado es aplicable a una solicitud.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de la operación. Este encabezado es aplicable a una solicitud.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que ha respondido a la solicitud. Este encabezado es aplicable a una respuesta.  <br/> |
+|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente. Este encabezado se aplica a una solicitud.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural, tal y como se define en RFC 3066, "etiquetas para la identificación de idiomas", que se va a usar para obtener acceso al buzón. Este encabezado se aplica a una solicitud.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Este encabezado se aplica a una solicitud.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado se aplica a una respuesta.  <br/> |
    
-## <a name="addnewteluricontacttogroup-operation-request-example-add-a-new-contact-to-a-group"></a>Ejemplo de solicitud de operación de AddNewTelUriContactToGroup: agregar un nuevo contacto a un grupo
+## <a name="addnewteluricontacttogroup-operation-request-example-add-a-new-contact-to-a-group"></a>Ejemplo de solicitud de operación AddNewTelUriContactToGroup: agregar un nuevo contacto a un grupo
 
-El siguiente ejemplo de una solicitud de operación **AddNewTelUriContactToGroup** muestra cómo crear un nuevo contacto y agregar el nuevo contacto a un grupo de (IM) de mensajería instantáneo mediante el uso de TEL y el URI de SIP del contacto. 
+En el siguiente ejemplo de una solicitud de operación de **AddNewTelUriContactToGroup** se muestra cómo crear un nuevo contacto y agregar el nuevo contacto a un grupo de mensajería instantánea (mi) mediante los URI de teléfono y SIP del contacto. 
   
 > [!NOTE]
-> Todos los identificadores de artículo y cambiar claves en este artículo se han abreviado para conservar la legibilidad. 
+> Todos los identificadores de elemento y las claves de cambio de este artículo se han reducido para preservar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
       <t:MailboxCulture>en-US</t:MailboxCulture>
@@ -65,7 +65,7 @@ El siguiente ejemplo de una solicitud de operación **AddNewTelUriContactToGroup
 </soap:Envelope>
 ```
 
-La solicitud SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de la solicitud contiene los siguientes elementos:
   
 - [AddNewTelUriContactToGroup](addnewteluricontacttogroup.md)
     
@@ -77,28 +77,28 @@ La solicitud SOAP body contiene los siguientes elementos:
     
 - [GroupId](groupid.md)
     
-## <a name="successful-addnewteluricontacttogroup-operation-response"></a>Respuesta es correcta de operación AddNewTelUriContactToGroup
+## <a name="successful-addnewteluricontacttogroup-operation-response"></a>Respuesta de operación AddNewTelUriContactToGroup correcta
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación de **AddNewTelUriContactToGroup** para crear un contacto. La respuesta contiene el identificador de rol asociado para el contacto, el nombre para mostrar del rol, que en este caso se basa en el número de teléfono del contacto, y el identificador del elemento del contacto, que se muestra como parte de la atribución de identificador de origen. 
+En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación de **AddNewTelUriContactToGroup** para crear un contacto. La respuesta contiene el identificador de rol asociado del contacto, el nombre para mostrar del rol, que en este caso se basa en el número de teléfono del contacto y el identificador de elemento del contacto, que se muestra como parte de la atribución del identificador de origen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"                           
             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+            xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
    <s:Header>
       <h:ServerVersionInfo MajorVersion="15" 
                            MinorVersion="0" 
                            MajorBuildNumber="545" 
                            MinorBuildNumber="11" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" />
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" />
    </s:Header>
    <s:Body>
       <AddNewTelUriContactToGroupResponse ResponseClass="Success" 
-                                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
          <Persona>
             <t:PersonaId Id="AAQkADE686dX3s="/>
@@ -145,7 +145,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
 </s:Envelope>
 ```
 
-Contiene la respuesta SOAP body siguientes elementos:
+El cuerpo SOAP de respuesta contiene los siguientes elementos:
   
 - [AddNewTelUriContactToGroupResponse](addnewteluricontacttogroupresponse.md)
     
@@ -165,7 +165,7 @@ Contiene la respuesta SOAP body siguientes elementos:
     
 - [DisplayNameLastFirst](displaynamelastfirst.md)
     
-- [Archivar como](fileas.md)
+- [FileAs](fileas.md)
     
 - [FileAsId](fileasid.md)
     
@@ -175,7 +175,7 @@ Contiene la respuesta SOAP body siguientes elementos:
     
 - [Atribución (PersonaAttributionType)](attribution-personaattributiontype.md)
     
-- [Identificador (cadena)](id-string.md)
+- [ID (cadena)](id-string.md)
     
 - [SourceId](sourceid.md)
     
@@ -203,7 +203,7 @@ Contiene la respuesta SOAP body siguientes elementos:
     
 - [Valor](value.md)
     
-- [Número](number.md)
+- [Number](number.md)
     
 - [Tipo (cadena)](type-string.md)
     
@@ -211,9 +211,9 @@ Contiene la respuesta SOAP body siguientes elementos:
     
 - [Atribución (cadena)](attribution-string.md)
     
-## <a name="addnewteluricontacttogroup-operation-error-response-example"></a>Ejemplo de respuesta de error de operación de AddNewTelUriContactToGroup
+## <a name="addnewteluricontacttogroup-operation-error-response-example"></a>Ejemplo de respuesta de error de operación AddNewTelUriContactToGroup
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **AddNewTelUriContactToGroup** cuando el identificador de grupo contiene un valor correcto que no identifica un grupo en el buzón de correo. 
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **AddNewTelUriContactToGroup** cuando el identificador de grupo contiene un valor bien formado que no identifica a un grupo en el buzón. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -224,15 +224,15 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
                            MajorBuildNumber="545" 
                            MinorBuildNumber="11" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <AddNewTelUriContactToGroupResponse ResponseClass="Error" 
-                                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <MessageText>The specified object was not found in the store.</MessageText>
          <ResponseCode>ErrorItemNotFound</ResponseCode>
          <DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -242,7 +242,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
 
 ```
 
-La respuesta de error SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de respuesta de error contiene los siguientes elementos:
   
 - [AddNewTelUriContactToGroupResponse](addnewteluricontacttogroupresponse.md)
     
@@ -256,6 +256,6 @@ La respuesta de error SOAP body contiene los siguientes elementos:
 
 - [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
     
-- [Las personas y los contactos de EWS en Exchange](http://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
+- [Personas y contactos de EWS en Exchange](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     
 

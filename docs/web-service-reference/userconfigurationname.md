@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 6947dd03-9727-4379-9b9d-42373fa120c7
 description: El elemento UserConfigurationName representa el nombre de un objeto de configuración de usuario. El nombre del objeto de configuración de usuario es el identificador de un objeto de configuración de usuario.
-ms.openlocfilehash: 33b3fc316a06b8088eb20a71788a9e6a3394d0d4
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+ms.openlocfilehash: 020b55919f7f81602a5eb072652d82168607d306
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354305"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466034"
 ---
 # <a name="userconfigurationname"></a>UserConfigurationName
 
@@ -39,24 +39,24 @@ El elemento **UserConfigurationName** representa el nombre de un objeto de confi
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**Name** <br/> |Contiene un valor de tipo string que representa el nombre de un objeto de configuración de usuario. Este atributo es necesario.  <br/> |
+|**Name** <br/> |Contiene un valor de tipo String que representa el nombre de un objeto de configuración de usuario. Este atributo es obligatorio.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Representa el identificador de la carpeta de la carpeta que contiene el objeto de configuración de usuario.  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Representa un nombre distintivo (DN) de carpeta de la carpeta que contiene el objeto de configuración de usuario.  <br/> |
+|[FolderId](folderid.md) <br/> |Representa el identificador de la carpeta que contiene el objeto de configuración de usuario.  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Representa un nombre de carpeta distinguido de la carpeta que contiene el objeto de configuración de usuario.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[DeleteUserConfiguration](deleteuserconfiguration.md) <br/> |Representa una solicitud para eliminar un objeto de configuración de usuario.  <br/> |
 |[GetUserConfiguration](getuserconfiguration.md) <br/> |Representa una solicitud para obtener un objeto de configuración de usuario.  <br/> |
@@ -74,12 +74,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

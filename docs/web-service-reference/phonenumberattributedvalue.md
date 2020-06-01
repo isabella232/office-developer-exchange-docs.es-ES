@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8bf16552-b672-424a-91b6-6470e20a49ad
-description: El elemento PhoneNumberAttributedValue especifica una instancia de una matriz de números de teléfono y sus atribuciones asociados.
-ms.openlocfilehash: a2cc2685e804b3bf6dd5f9083b31a4bd137f8aac
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PhoneNumberAttributedValue especifica una instancia de una matriz de números de teléfono y sus atribuciones asociadas.
+ms.openlocfilehash: b1597ea33973d0dde5bd528061cf732101582c9d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836771"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465628"
 ---
 # <a name="phonenumberattributedvalue"></a>PhoneNumberAttributedValue
 
-El elemento **PhoneNumberAttributedValue** especifica una instancia de una matriz de números de teléfono y sus atribuciones asociados. 
+El elemento **PhoneNumberAttributedValue** especifica una instancia de una matriz de números de teléfono y sus atribuciones asociadas. 
   
 ```XML
 <PhoneNumberAttributedValue>
@@ -29,19 +29,19 @@ El elemento **PhoneNumberAttributedValue** especifica una instancia de una matri
  **PhoneNumberAttributedValueType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Valor (PersonaPhoneNumberType)](value-personaphonenumbertype.md) | [atribuciones (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
+[Valor (PersonaPhoneNumberType)](value-personaphonenumbertype.md)  |  [Atribuciones (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[BusinessPhoneNumbers](businessphonenumbers.md) | [BusinessPhoneNumbers2](businessphonenumbers2.md) | [HomePhones](homephones.md) | [HomePhones2](homephones2.md) | [MobilePhones](mobilephones.md) | [MobilePhones2](mobilephones2.md) | [AssistantPhoneNumbers ](assistantphonenumbers.md)  |  [CallbackPhones](callbackphones.md) | [CarPhones](carphones.md) | [HomeFaxes](homefaxes.md) | [OrganizationMainPhones](organizationmainphones.md) | [OtherFaxes](otherfaxes.md) | [OtherTelephones](othertelephones.md)  |  [OtherPhones2](otherphones2.md) | [localizadores](pagers.md) | [RadioPhones](radiophones.md) | [TelexNumbers](telexnumbers.md) | [TTYTDDPhoneNumbers](ttytddphonenumbers.md) | [WorkFaxes](workfaxes.md)
+[BusinessPhoneNumbers](businessphonenumbers.md)  |  [BusinessPhoneNumbers2](businessphonenumbers2.md)  |  [HomePhones](homephones.md)  |  [HomePhones2](homephones2.md)  |  [MobilePhones](mobilephones.md)  |  [MobilePhones2](mobilephones2.md)  |  [AssistantPhoneNumbers](assistantphonenumbers.md)  |  [CallbackPhones](callbackphones.md)  |  [CarPhones](carphones.md)  |  [HomeFaxes](homefaxes.md)  |  [OrganizationMainPhones](organizationmainphones.md)  |  [OtherFaxes](otherfaxes.md)  |  [OtherTelephones](othertelephones.md)  |  [OtherPhones2](otherphones2.md)  |  [Buscapersonas](pagers.md)  |  [Teléfonos](radiophones.md)  |  [TelexNumbers](telexnumbers.md)  |  [TTYTDDPhoneNumbers](ttytddphonenumbers.md)  |  [WorkFaxes](workfaxes.md)
   
 ## <a name="remarks"></a>Comentarios
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

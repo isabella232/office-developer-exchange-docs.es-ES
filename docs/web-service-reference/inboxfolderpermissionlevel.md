@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f250d31b-9193-4c1c-8350-900dead3a023
-description: El elemento InboxFolderPermissionLevel contiene los permisos para la carpeta de la Bandeja de entrada predeterminada. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).
-ms.openlocfilehash: 59d0432fe9c49fdc1c4a470e1f3273c203b2ec4b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento InboxFolderPermissionLevel contiene los permisos para la carpeta Bandeja de entrada predeterminada. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).
+ms.openlocfilehash: 8a497a38a58e6455f2bd754aa8da97b421a2bca3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835902"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465712"
 ---
 # <a name="inboxfolderpermissionlevel"></a>InboxFolderPermissionLevel
 
-El elemento **InboxFolderPermissionLevel** contiene los permisos para la carpeta de la Bandeja de entrada predeterminada. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1). 
+El elemento **InboxFolderPermissionLevel** contiene los permisos para la carpeta Bandeja de entrada predeterminada. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1). 
   
 ```xml
 <InboxFolderPermissionLevel>
@@ -32,48 +32,48 @@ El elemento **InboxFolderPermissionLevel** contiene los permisos para la carpeta
  **DelegateFolderPermissionLevelType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[DelegatePermissions](delegatepermissions.md) <br/> |Contiene la configuración de nivel de permisos de delegado de un usuario. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
+|[DelegatePermissions](delegatepermissions.md) <br/> |Contiene la configuración del nivel de permisos de delegado de un usuario. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-En la siguiente tabla se enumera los valores de texto que representan los niveles de permisos.
+En la siguiente tabla se enumeran los valores de texto que representan los niveles de permisos.
   
 **Valores de texto de nivel de permisos**
 
 |**Nivel de permisos**|**Descripción**|
 |:-----|:-----|
-|None  <br/> |El usuario delegado no tiene ningún permiso de acceso a la carpeta Bandeja de entrada.  <br/> |
-|Reviewer  <br/> |El usuario delegado puede leer elementos de la carpeta Bandeja de entrada.  <br/> |
+|Ninguno  <br/> |El usuario delegado no tiene permisos de acceso a la carpeta Bandeja de entrada.  <br/> |
+|Reviewer  <br/> |El usuario delegado puede leer los elementos de la carpeta Bandeja de entrada.  <br/> |
 |Autor  <br/> |El usuario delegado puede leer y crear elementos en la carpeta Bandeja de entrada.  <br/> |
-|Editor  <br/> |El usuario delegado puede leer, crear y modificar elementos en la carpeta Bandeja de entrada.  <br/> |
+|Editor  <br/> |El usuario delegado puede leer, crear y modificar los elementos de la carpeta Bandeja de entrada.  <br/> |
 |Personalizado  <br/> |El usuario delegado tiene permisos de acceso personalizados a la carpeta Bandeja de entrada.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -84,8 +84,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [Operación UpdateDelegate](updatedelegate-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Adición de delegados](http://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
+[Adición de delegados](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

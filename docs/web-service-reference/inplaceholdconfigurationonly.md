@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 921ecc73-b7e2-40a7-8458-68f18dd5a13b
-description: El elemento InPlaceHoldConfigurationOnly especifica si para incluir la conservación local configuración.
-ms.openlocfilehash: 3ad020a10e43d8f54e3d603906c856e01b1956eb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento InPlaceHoldConfigurationOnly especifica si se debe incluir la configuración de la conservación local.
+ms.openlocfilehash: ca364ee7d8a9e2e4a608f8f6c4ca5851fa7d4b64
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835934"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466104"
 ---
 # <a name="inplaceholdconfigurationonly"></a>InPlaceHoldConfigurationOnly
 
-El elemento **InPlaceHoldConfigurationOnly** especifica si para incluir la conservación local configuración. 
+El elemento **InPlaceHoldConfigurationOnly** especifica si se debe incluir la configuración de la conservación local. 
   
 ```XML
 <InPlaceHoldConfigurationOnly>true | false</InPlaceHoldConfigurationOnly>
@@ -26,15 +26,15 @@ El elemento **InPlaceHoldConfigurationOnly** especifica si para incluir la conse
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **InPlaceHoldConfigurationOnly** indica que se incluye la configuración de suspensión en contexto. Un valor de **false** indica que no se incluye la configuración de suspensión en contexto. 
+Un valor de texto de **true** para el elemento **InPlaceHoldConfigurationOnly** indica que se incluye la configuración de conservación local. Un valor de **false** indica que no se incluye la configuración de la retención local. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

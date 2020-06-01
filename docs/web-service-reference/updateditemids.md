@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9199aeb2-abdf-40c5-8743-40b61853c951
-description: El elemento UpdatedItemIds especifica los identificadores de elementos de aviso actualizado.
-ms.openlocfilehash: b95ebb20823706e68b1fd66dc64f756808bb7375
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UpdatedItemIds especifica los identificadores de los elementos de aviso actualizados.
+ms.openlocfilehash: 4a87bf50f90e80c0c887ee3a66b9f201ea1c8440
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840811"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465039"
 ---
 # <a name="updateditemids"></a>UpdatedItemIds
 
-El elemento **UpdatedItemIds** especifica los identificadores de elementos de aviso actualizado. 
+El elemento **UpdatedItemIds** especifica los identificadores de los elementos de aviso actualizados. 
   
 ```XML
 <UpdatedItemIds>
@@ -29,11 +29,11 @@ El elemento **UpdatedItemIds** especifica los identificadores de elementos de av
  **NonEmptyArrayOfItemIdsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -49,15 +49,15 @@ Este elemento se introdujo en Exchange Server 2013.
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
-Si la operación [PerformReminderAction](performreminderaction-operation.md) no se completó correctamente o no se realizaron cambios en el servidor, se devuelve el elemento **UpdatedItemIds** como un valor vacío. 
+Si la operación [PerformReminderAction](performreminderaction-operation.md) no se completó correctamente o no se realizaron cambios en el servidor, el elemento **UpdatedItemIds** se devuelve como un valor vacío. 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
@@ -67,5 +67,5 @@ Si la operación [PerformReminderAction](performreminderaction-operation.md) no 
 [PerformReminderActionResponse](performreminderactionresponse.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

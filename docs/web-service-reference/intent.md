@@ -1,5 +1,5 @@
 ---
-title: Intención
+title: Objetivo
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1e9a5bae-5b24-43cd-9b83-a21da58c9fdd
-description: El elemento Intent está pensado para uso interno únicamente.
-ms.openlocfilehash: 4a9fe2dcabc3124f3f21a8edce46bf6e1591cc06
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Intent está pensado solo para uso interno.
+ms.openlocfilehash: bf82e7f1054a20de7e5ce8b9b0d5889669570a63
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835948"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465607"
 ---
-# <a name="intent"></a>Intención
+# <a name="intent"></a>Objetivo
 
-El elemento **intención** está pensado para uso interno únicamente. 
+El elemento **Intent** está pensado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -45,9 +45,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

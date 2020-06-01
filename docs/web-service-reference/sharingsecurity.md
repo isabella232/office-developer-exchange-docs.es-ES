@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d4831cac-a8f9-419a-ac42-481e34230cba
-description: El elemento de SharingSecurity se usa en el encabezado de protocolo de acceso de objeto Simple (SOAP) para el calendario o uso compartido de contactos.
-ms.openlocfilehash: fa6719b5bd2bf5388c3da6befd50f4a302d4c3d8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SharingSecurity se usa en el encabezado del Protocolo simple de acceso a objetos (SOAP) para el uso compartido de calendarios o contactos.
+ms.openlocfilehash: 456190079cc539c170aa96e795031071b5d9f1ad
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837482"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466713"
 ---
 # <a name="sharingsecurity"></a>SharingSecurity
 
-El elemento de **SharingSecurity** se usa en el encabezado de protocolo de acceso de objeto Simple (SOAP) para el calendario o uso compartido de contactos. 
+El elemento **SharingSecurity** se usa en el encabezado del Protocolo simple de acceso a objetos (SOAP) para el uso compartido de calendarios o contactos. 
   
 ```xml
 <SharingSecurity/>
@@ -30,15 +30,15 @@ El elemento de **SharingSecurity** se usa en el encabezado de protocolo de acces
  **EncryptedDataContainerType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -46,20 +46,20 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio Virtual de IIS que hospeda los servicios Web Exchange del equipo que ejecuta a Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda los servicios Web de Exchange del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

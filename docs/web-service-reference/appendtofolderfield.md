@@ -11,31 +11,31 @@ api_name:
 api_type:
 - schema
 ms.assetid: 816da395-1488-4996-8b4d-e82407319e91
-description: El elemento AppendToFolderField no está implementado. Cualquier solicitud que usa este elemento siempre devolverá una respuesta de error.
-ms.openlocfilehash: 501bb243335561241cff207ec34ffad7023113e4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AppendToFolderField no está implementado. Cualquier solicitud que use este elemento siempre devolverá una respuesta de error.
+ms.openlocfilehash: aca49b8dfd54e32d0930c51b672c50c9ffdd89cf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763451"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464710"
 ---
 # <a name="appendtofolderfield"></a>AppendToFolderField
 
-El elemento **AppendToFolderField** no está implementado. Cualquier solicitud que usa este elemento siempre devolverá una respuesta de error. 
+El elemento **AppendToFolderField** no está implementado. Cualquier solicitud que use este elemento siempre devolverá una respuesta de error. 
 
 **AppendToFolderFieldType**
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -43,18 +43,18 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

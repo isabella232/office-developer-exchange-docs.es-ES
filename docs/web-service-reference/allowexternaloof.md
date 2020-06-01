@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e5387172-5b92-4bb1-8394-180e9c7ff771
-description: El elemento AllowExternalOof contiene un valor que identifica a la que se envían los mensajes externos de fuera de oficina (OOF).
-ms.openlocfilehash: 1c87a51676bf6e44b2e650a4e973d0ab89a52e31
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AllowExternalOof contiene un valor que identifica a quién se envían los mensajes fuera de la oficina (OOF) externos.
+ms.openlocfilehash: e4934bc4bc86e1f9f764279a13ecaeca073d9e5d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763432"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464815"
 ---
 # <a name="allowexternaloof"></a>AllowExternalOof
 
-El elemento **AllowExternalOof** contiene un valor que identifica a la que se envían los mensajes externos de fuera de oficina (OOF). 
+El elemento **AllowExternalOof** contiene un valor que identifica a quién se envían los mensajes fuera de la oficina (OOF) externos. 
   
 - [GetUserOofSettingsResponse](getuseroofsettingsresponse.md)
   
@@ -34,46 +34,46 @@ El elemento **AllowExternalOof** contiene un valor que identifica a la que se en
  **ExternalAudience**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetUserOofSettingsResponse](getuseroofsettingsresponse.md) <br/> |Contiene los resultados de la respuesta y la configuración de fuera de la oficina de un usuario.  <br/> |
+|[GetUserOofSettingsResponse](getuseroofsettingsresponse.md) <br/> |Contiene los resultados de la respuesta y la configuración de OOF para un usuario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto es necesario para este elemento. En la siguiente tabla se enumera los valores posibles para este elemento.
+Se requiere un valor de texto para este elemento. En la siguiente tabla se enumeran los valores posibles para este elemento.
   
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|**None** <br/> |Los remitentes de correo electrónico fuera de la organización del usuario de buzón de correo que envían mensajes al usuario no recibirá una respuesta de mensaje de fuera de la oficina externa.  <br/> |
-|**Conocidos** <br/> |Los remitentes de correo electrónico fuera de la organización del usuario de buzón de correo que envían mensajes al usuario sólo recibirá una respuesta de mensaje de fuera de la oficina externa si el remitente está en Exchange del usuario almacenan la lista de contactos.  <br/> |
-|**All** <br/> |Los remitentes de correo electrónico fuera de la organización del usuario de buzón de correo que envían mensajes al usuario recibirá una respuesta de mensaje de fuera de la oficina externa.  <br/> |
+|**Ninguno** <br/> |Los remitentes de correo electrónico que se encuentran fuera de la organización del usuario del buzón que envían mensajes al usuario no recibirán una respuesta de mensaje OOF externa.  <br/> |
+|**Válida** <br/> |Los remitentes de correo electrónico que se encuentran fuera de la organización del usuario del buzón de correo que envían mensajes al usuario solo recibirán una respuesta de mensaje de OOF externa si el remitente está en la lista de contactos del almacén de Exchange del usuario.  <br/> |
+|**All** <br/> |Los remitentes de correo electrónico que se encuentran fuera de la organización del usuario del buzón de correo que envían mensajes al usuario recibirán una respuesta de mensaje OOF externa.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
 Este elemento comparte el mismo tipo que el elemento [ExternalAudience](externalaudience.md) . 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

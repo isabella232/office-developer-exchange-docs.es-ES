@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 69d22417-320c-4c6f-9fb4-2020f2480bb2
-description: El elemento ReturnQueueEvents indica que la persona que está ejecutando la tarea está en una función con privilegios.
-ms.openlocfilehash: 02f4ca86ffa14117105ec186ae039065cb626670
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ReturnQueueEvents indica que la persona que ejecuta la tarea está en un rol privilegiado.
+ms.openlocfilehash: 9d07bc8c3d32f1cd532febaf4ae04e4a2d31d243
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837233"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466594"
 ---
 # <a name="returnqueueevents"></a>ReturnQueueEvents
 
-El elemento **ReturnQueueEvents** indica que la persona que está ejecutando la tarea está en una función con privilegios. 
+El elemento **ReturnQueueEvents** indica que la persona que ejecuta la tarea está en un rol privilegiado. 
   
 ```XML
 <ReturnQueueEvents>true | false</ReturnQueueEvents>
@@ -30,25 +30,25 @@ El elemento **ReturnQueueEvents** indica que la persona que está ejecutando la 
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |Contiene la solicitud para la [operación de GetMessageTrackingReport](getmessagetrackingreport-operation.md) recuperar el mensaje completo informe de seguimiento para el identificador especificado.  <br/> |
+|[GetMessageTrackingReport](getmessagetrackingreport.md) <br/> |Contiene la solicitud de la [operación GetMessageTrackingReport](getmessagetrackingreport-operation.md) para recuperar el informe completo de seguimiento de mensajes del identificador especificado.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto que representa un valor de tipo Boolean. Un valor de **true** indica que la persona que está ejecutando la tarea está en una función con privilegios; un valor de **false** indica que la persona que ejecuta la tarea no está en una función que tiene privilegios. 
+Se requiere un valor de texto que representa un valor booleano. Un valor de **true** indica que la persona que ejecuta la tarea está en una función privilegiada; un valor de **false** indica que la persona que ejecuta la tarea no tiene un rol privilegiado. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -58,10 +58,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -70,5 +70,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación GetMessageTrackingReport](getmessagetrackingreport-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

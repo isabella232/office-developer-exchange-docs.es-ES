@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5ff4e97e-c64c-4742-88ca-7cbe39e597e1
-description: El elemento Actions identifica una matriz de acciones que se va a realizar en una extensión de cliente.
-ms.openlocfilehash: 3a4d1ccf1fe880fa689bd1ff8651409eebe48f46
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Actions identifica una matriz de acciones que se van a realizar en una extensión de cliente.
+ms.openlocfilehash: 1790907f40bd839ffa56ad7ae45c0cc7f3fa412d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763383"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465075"
 ---
 # <a name="actions-arrayofsetclientextensionactionstype"></a>Acciones (ArrayOfSetClientExtensionActionsType)
 
-El elemento **Actions** identifica una matriz de acciones que se va a realizar en una extensión de cliente. 
+El elemento **Actions** identifica una matriz de acciones que se van a realizar en una extensión de cliente. 
   
 ```XML
 <Actions>
@@ -28,11 +28,11 @@ El elemento **Actions** identifica una matriz de acciones que se va a realizar e
  **ArrayOfSetClientExtensionActionsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

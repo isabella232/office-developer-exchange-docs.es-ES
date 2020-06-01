@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 542e7b90-eafe-4711-a9d7-71bbc30d9646
 description: El elemento IsPartiallyIndexed indica si el elemento está indizado parcialmente.
-ms.openlocfilehash: e780fac23aeec1d80e547a47b322073fecdc2a0b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 4bf0c3e5dd7b75a90ac087958fbceda334306af1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836082"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466489"
 ---
 # <a name="ispartiallyindexed"></a>IsPartiallyIndexed
 
@@ -26,15 +26,15 @@ El elemento **IsPartiallyIndexed** indica si el elemento está indizado parcialm
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **IsPartiallyIndexed** indica que el elemento de buzón de correo se indiza parcialmente. Un valor de **false** indica que el elemento de buzón de correo no se indiza parcialmente. 
+Un valor de texto de **true** para el elemento **IsPartiallyIndexed** indica que el elemento de buzón está indizado parcialmente. Un valor de **false** indica que el elemento de buzón no está indizado parcialmente. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

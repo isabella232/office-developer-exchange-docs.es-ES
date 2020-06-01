@@ -1,5 +1,5 @@
 ---
-title: Definición de zona horaria
+title: TimeZoneDefinition
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b005a80c-addb-4409-beff-e5162076752c
-description: El elemento de la definición de zona horaria especifica los períodos y las transiciones que definen una zona horaria.
-ms.openlocfilehash: ffd5ed0c862af794e4aff2387f508849b1d5fd5d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento TimeZoneDefinition especifica los períodos y las transiciones que definen una zona horaria.
+ms.openlocfilehash: 58d34556686bfc77244b5829798eada51a1df843
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840688"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466069"
 ---
-# <a name="timezonedefinition"></a>Definición de zona horaria
+# <a name="timezonedefinition"></a>TimeZoneDefinition
 
-El elemento de la **definición de zona horaria** especifica los períodos y las transiciones que definen una zona horaria. 
+El elemento **TimeZoneDefinition** especifica los períodos y las transiciones que definen una zona horaria. 
   
 ```XML
 <TimeZoneDefinition Id="" Name="">
@@ -35,29 +35,29 @@ El elemento de la **definición de zona horaria** especifica los períodos y las
  **TimeZoneDefinitionType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
 |Id  <br/> |Representa el identificador único de la zona horaria.  <br/> |
 |Nombre  <br/> |Representa el nombre descriptivo de la zona horaria.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Períodos](periods.md) <br/> |Representa una matriz de elementos de [período](period.md) que definen el desplazamiento de tiempo en diferentes fases de la zona horaria.  <br/> |
-|[TransitionsGroups](transitionsgroups.md) <br/> |Representa una matriz de elementos de [TransitionsGroup](transitionsgroup.md) que especifican las transiciones de zona horaria.  <br/> |
-|[Transiciones](transitions.md) <br/> |Representa una matriz de las transiciones de zona horaria.  <br/> |
+|[Períodos](periods.md) <br/> |Representa una matriz de elementos [period](period.md) que define el desplazamiento de tiempo en diferentes etapas de la zona horaria.  <br/> |
+|[TransitionsGroups](transitionsgroups.md) <br/> |Representa una matriz de elementos [TransitionsGroup](transitionsgroup.md) que especifican las transiciones de la zona horaria.  <br/> |
+|[Transiciones](transitions.md) <br/> |Representa una matriz de transiciones de zona horaria.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[TimeZoneDefinitions](timezonedefinitions.md) <br/> |Representa una matriz de definiciones de zona horaria.  <br/> |
-|[TimeZoneContext](timezonecontext.md) <br/> |Representa la definición de zona horaria predeterminada que se utiliza para definir el ámbito de las propiedades de fecha y hora de objetos que se crean, actualizan y recuperados mediante servicios Web de Exchange (EWS).  <br/> |
+|[TimeZoneContext](timezonecontext.md) <br/> |Representa la definición de zona horaria predeterminada que se va a usar para establecer el ámbito de las propiedades DateTime de los objetos que se crean, actualizan y recuperan mediante los servicios web Exchange (EWS).  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -67,14 +67,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

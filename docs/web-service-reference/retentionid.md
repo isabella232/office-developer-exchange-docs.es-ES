@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 07be3c51-6537-49b5-b25d-ff51759aba1f
-description: El elemento RetentionId especifica el identificador de etiqueta de retención.
-ms.openlocfilehash: fdbf263288c7909a73616b81a92632bd8c097111
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RetentionId especifica el identificador de la etiqueta de retención.
+ms.openlocfilehash: f32fa0ceb301fca88cb0275e99ee9417dea87d2e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837219"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465222"
 ---
 # <a name="retentionid"></a>RetentionId
 
-El elemento **RetentionId** especifica el identificador de etiqueta de retención. 
+El elemento **RetentionId** especifica el identificador de la etiqueta de retención. 
   
 ```XML
 <RetentionId></RetentionId>
@@ -26,15 +26,15 @@ El elemento **RetentionId** especifica el identificador de etiqueta de retenció
  **GuidType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **RetentionId** es el identificador de etiqueta de retención en forma de GUID. 
+El valor de texto del elemento **RetentionId** es el identificador de la etiqueta de retención en forma de GUID. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

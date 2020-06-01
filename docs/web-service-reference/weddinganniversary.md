@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 75e3add5-a08f-4a5c-a34c-c36b8291d187
-description: El elemento WeddingAnniversary contiene el aniversario despedida de un contacto.
-ms.openlocfilehash: a0b8333c776195dc53973c6663a4f91f4d8c9aba
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento WeddingAnniversary contiene el aniversario de boda de un contacto.
+ms.openlocfilehash: 784e4da9587a4153871e0c20f84c4cb1cfb381fc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840991"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44464878"
 ---
 # <a name="weddinganniversary"></a>WeddingAnniversary
 
-El elemento **WeddingAnniversary** contiene el aniversario despedida de un contacto. 
+El elemento **WeddingAnniversary** contiene el aniversario de boda de un contacto. 
   
 ```xml
 <WeddingAnniversary/>
@@ -30,42 +30,42 @@ El elemento **WeddingAnniversary** contiene el aniversario despedida de un conta
  **dateTime**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Contact](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
+|[Contacto](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa la fecha de aniversario de despedida de un contacto.
+El valor de texto representa la fecha del aniversario de boda de un contacto.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

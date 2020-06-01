@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6a08c48a-7b32-4754-8940-adbda55e8133
-description: El elemento FlaggedForAction especifica la marca para el valor de la acción que debe aparecer en los mensajes entrantes en orden para la condición o la excepción que se debe aplicar.
-ms.openlocfilehash: 5b6e714512edcf12ded2c04f414d047b8622d305
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento FlaggedForAction especifica la marca para el valor de la acción que debe aparecer en los mensajes entrantes para que se aplique la condición o excepción.
+ms.openlocfilehash: f996dc4bcf30db32e1d73fb302ab137f0a6ad4d4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764671"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466244"
 ---
 # <a name="flaggedforaction"></a>FlaggedForAction
 
-El elemento **FlaggedForAction** especifica la marca para el valor de la acción que debe aparecer en los mensajes entrantes en orden para la condición o la excepción que se debe aplicar. 
+El elemento **FlaggedForAction** especifica la marca para el valor de la acción que debe aparecer en los mensajes entrantes para que se aplique la condición o excepción. 
   
 ```XML
 <FlaggedForAction/>
@@ -30,48 +30,48 @@ El elemento **FlaggedForAction** especifica la marca para el valor de la acción
  **FlaggedForActionType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Condiciones](conditions.md) <br/> |Representa las condiciones que, cuando se cumplen los requisitos, se activará las acciones de regla para una regla.  <br/> |
+|[Condiciones](conditions.md) <br/> |Representa las condiciones que, cuando se cumplan, desencadenarán las acciones de regla de una regla.  <br/> |
 |[Excepciones](exceptions.md) <br/> |Representa las excepciones que representan todas las condiciones de excepción de regla disponibles para una regla de bandeja de entrada.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto. Los siguientes son los posibles valores de texto para este elemento:
+Se requiere un valor de texto. A continuación se muestran los valores de texto posibles para este elemento:
   
 - Cualquiera
     
-- Llamada
+- Llamar
     
 - DoNotForward
     
-- Realizar su seguimiento
+- Realizar
     
-- PARA SU INFORMACIÓN
+- FYI
     
-- Forward
+- Reenviar
     
 - NoResponseNecessary
     
-- Leído
+- Read
     
 - Responder
     
 - ReplyToAll
     
-- Revisión
+- Revisar
     
 ## <a name="remarks"></a>Comentarios
 
@@ -81,14 +81,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

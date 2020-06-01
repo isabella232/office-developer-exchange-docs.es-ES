@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 2dff4e8f-4812-4fcf-8915-d64a69c89120
-description: El elemento IPv4End identifica el final de un intervalo de IP versión 4 (IPv4) las direcciones que se usan para identificar un equipo en la red.
-ms.openlocfilehash: 14e4cd23da4b737613311fa7ce24e129a496bb03
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento IPv4End identifica el final de un intervalo de direcciones IP versión 4 (IPv4) que se usan para identificar un equipo en la red.
+ms.openlocfilehash: 296ea87436364b71e541f97c687a8f25e7f353a7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835968"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44465558"
 ---
 # <a name="ipv4end-pox"></a>IPv4End (POX)
 
-El elemento **IPv4End** identifica el final de un intervalo de IP versión 4 (IPv4) las direcciones que se usan para identificar un equipo en la red. 
+El elemento **IPv4End** identifica el final de un intervalo de direcciones IP versión 4 (IPv4) que se usan para identificar un equipo en la red. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -38,21 +38,21 @@ El elemento **IPv4End** identifica el final de un intervalo de IP versión 4 (IP
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[NetworkRequirements (POX)](networkrequirements-pox.md) <br/> |Contiene los criterios que se usan para determinar si el equipo cliente está en una red que cumple con el proveedor de servicios Internet (ISP) los requisitos para conectarse al servidor.  <br/> |
+|[NetworkRequirements (POX)](networkrequirements-pox.md) <br/> |Contiene los criterios que se usan para determinar si el equipo cliente está en una red que cumple con los requisitos del proveedor de servicios de Internet (ISP) para conectarse al servidor.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -62,5 +62,5 @@ El valor de texto representa una dirección IPv4.
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 
