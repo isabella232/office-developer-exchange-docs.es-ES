@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: dd16d1fb-d82d-42e5-b64a-bc6c19c48fa8
-description: El elemento GetNonIndexableItemStatistics especifica una solicitud para recuperar las estadísticas de elemento nonindexable.
-ms.openlocfilehash: 4e6f9a0ba94e9946a3910661810bc2c9e748ba9f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetNonIndexableItemStatistics especifica una solicitud para recuperar las estadísticas de elementos no indizables.
+ms.openlocfilehash: 4b605379f20f5558566f1cfbad9ef1aa33b6fce6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764914"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44452793"
 ---
 # <a name="getnonindexableitemstatistics"></a>GetNonIndexableItemStatistics
 
-El elemento **GetNonIndexableItemStatistics** especifica una solicitud para recuperar las estadísticas de elemento nonindexable. 
+El elemento **GetNonIndexableItemStatistics** especifica una solicitud para recuperar las estadísticas de elementos no indizables. 
   
 ```XML
 <GetNonIndexableItemStatistics>
@@ -28,17 +28,17 @@ El elemento **GetNonIndexableItemStatistics** especifica una solicitud para recu
  **GetNonIndexableItemStatisticsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Buzones de correo (NonEmptyArrayOfLegacyDNsType)](mailboxes-nonemptyarrayoflegacydnstype.md) <br/> |Especifica una matriz de elementos de **buzón de correo** .  <br/> |
+|[Buzones de correo (NonEmptyArrayOfLegacyDNsType)](mailboxes-nonemptyarrayoflegacydnstype.md) <br/> |Especifica una matriz de elementos **Mailbox** .  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,14 +54,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

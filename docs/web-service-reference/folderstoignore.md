@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: b5d18516-a617-4daf-8baf-c7ce29c76f6b
-description: El elemento FoldersToIgnore identifica una lista de carpetas que se pasan por alto al obtener elementos en una conversación. Todos los elementos de conversación de las carpetas omitidos no se devuelven en una respuesta de GetConversationItems.
-ms.openlocfilehash: 96c094996c601e685dc1c7e6b869a790ce7d74a1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento FoldersToIgnore identifica una lista de carpetas que se ignoran al obtener elementos en una conversación. No se devuelven todos los elementos de conversación en las carpetas omitidas en una respuesta GetConversationItems.
+ms.openlocfilehash: 07813a54a9a3afa3de23ae94f1c9b191d1cb6fac
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764696"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44453360"
 ---
 # <a name="folderstoignore"></a>FoldersToIgnore
 
-El elemento **FoldersToIgnore** identifica una lista de carpetas que se pasan por alto al obtener elementos en una conversación. Todos los elementos de conversación de las carpetas omitidos no se devuelven en una respuesta de **GetConversationItems** . 
+El elemento **FoldersToIgnore** identifica una lista de carpetas que se ignoran al obtener elementos en una conversación. No se devuelven todos los elementos de conversación en las carpetas omitidas en una respuesta **GetConversationItems** . 
   
 ```XML
 <FoldersToIgnore>
@@ -29,15 +29,15 @@ El elemento **FoldersToIgnore** identifica una lista de carpetas que se pasan po
  **NonEmptyArrayOfBaseFolderIdsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[FolderId](folderid.md) | [DistinguishedFolderId](distinguishedfolderid.md)
+[FolderId](folderid.md)  |  [DistinguishedFolderId](distinguishedfolderid.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

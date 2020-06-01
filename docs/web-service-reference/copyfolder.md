@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7d5cd08a-fe81-4cb6-a5a0-6dec2d3c93d4
-description: El elemento CopyFolder define una solicitud para copiar las carpetas de un buzón en el almacén de Exchange.
-ms.openlocfilehash: 7bcfcc7f4212b3a3bd339fa5863df2990eb20d6d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento CopyFolder define una solicitud para copiar carpetas en un buzón de correo en el almacén de Exchange.
+ms.openlocfilehash: fa75272540169a96d5567181d27b8a8f056cce42
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763896"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44452513"
 ---
 # <a name="copyfolder"></a>CopyFolder
 
-El elemento **CopyFolder** define una solicitud para copiar las carpetas de un buzón en el almacén de Exchange. 
+El elemento **CopyFolder** define una solicitud para copiar carpetas en un buzón de correo en el almacén de Exchange. 
   
 ```xml
 <CopyFolder>
@@ -33,18 +33,18 @@ El elemento **CopyFolder** define una solicitud para copiar las carpetas de un b
  **CopyFolderType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ToFolderId](tofolderid.md) <br/> |Representa la carpeta de destino para una carpeta copiada.  <br/> |
-|[FolderIds](folderids.md) <br/> |Contiene una matriz de carpetas que se copian a la carpeta identificada por el elemento [ToFolderId](tofolderid.md) .  <br/> |
+|[ToFolderId](tofolderid.md) <br/> |Representa la carpeta de destino de una carpeta copiada.  <br/> |
+|[FolderIds](folderids.md) <br/> |Contiene una matriz de carpetas para copiar a la carpeta identificada por el elemento [ToFolderId](tofolderid.md) .  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -52,16 +52,16 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

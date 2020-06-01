@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8649ea14-672f-43c9-b10a-a2b02efd5867
-description: El elemento ForwardAsAttachmentToRecipients indica las direcciones de correo electrónico a la que los mensajes deben ser reenviado como datos adjuntos.
-ms.openlocfilehash: 04d4f9c6228e6d0ab34a6eff5d5751f461a57e19
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ForwardAsAttachmentToRecipients indica las direcciones de correo electrónico a las que se deben reenviar los mensajes como datos adjuntos.
+ms.openlocfilehash: bf8c3563460eea811602074bf16f9253b4610832
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764699"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44453339"
 ---
 # <a name="forwardasattachmenttorecipients"></a>ForwardAsAttachmentToRecipients
 
-El elemento **ForwardAsAttachmentToRecipients** indica las direcciones de correo electrónico a la que los mensajes deben ser reenviado como datos adjuntos. 
+El elemento **ForwardAsAttachmentToRecipients** indica las direcciones de correo electrónico a las que se deben reenviar los mensajes como datos adjuntos. 
   
 ```XML
 <ForwardAsAttachmentToRecipients>
@@ -32,23 +32,23 @@ El elemento **ForwardAsAttachmentToRecipients** indica las direcciones de correo
  **ArrayOfEmailAddressesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Dirección (EmailAddressType)](address-emailaddresstype.md) <br/> |Representa una dirección de correo electrónico completa resuelta.  <br/> |
+|[Dirección (EmailAddressType)](address-emailaddresstype.md) <br/> |Representa una dirección de correo electrónico completamente resuelta.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Acciones](actions.md) <br/> |Representa el conjunto de acciones que están disponibles para ser tomadas en un mensaje cuando se cumplen las condiciones.  <br/> |
+|[Actions](actions.md) <br/> |Representa el conjunto de acciones que se pueden realizar en un mensaje cuando se cumplen las condiciones.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -62,14 +62,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

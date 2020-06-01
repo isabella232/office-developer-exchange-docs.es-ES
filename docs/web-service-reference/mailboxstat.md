@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5f24dc30-3ac2-4c82-9dfc-be9dbdb585be
-description: El elemento MailboxStat especifica las estadísticas de un buzón de correo buscado por la búsqueda de detección.
-ms.openlocfilehash: 692f15904467ce192074b14f7c2a742b3e76de8e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MailboxStat especifica las estadísticas de un buzón buscado por la búsqueda de detección.
+ms.openlocfilehash: 417f63f5e1aa34c2157b1d5ad868461113afec7b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836296"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44451435"
 ---
 # <a name="mailboxstat"></a>MailboxStat
 
-El elemento **MailboxStat** especifica las estadísticas de un buzón de correo buscado por la búsqueda de detección. 
+El elemento **MailboxStat** especifica las estadísticas de un buzón buscado por la búsqueda de detección. 
   
 ```XML
 <MailboxStat>
@@ -32,15 +32,15 @@ El elemento **MailboxStat** especifica las estadísticas de un buzón de correo 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[MailboxId](mailboxid.md) | [DisplayName (string)](displayname-string.md) | [ItemCount](itemcount.md) | [tamaño (long)](size-long.md)
+[Se especifica mailboxid](mailboxid.md)  |  [DisplayName (cadena)](displayname-string.md)  |  [ItemCount](itemcount.md)  |  [Tamaño (largo)](size-long.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -56,9 +56,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

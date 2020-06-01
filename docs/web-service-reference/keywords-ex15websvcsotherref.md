@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c466c845-9806-4a9a-8ba6-ee908b80d012
-description: El elemento de palabras clave especifica las palabras clave para una búsqueda de la operación de FindMailboxStatisticsByKeywords.
-ms.openlocfilehash: fc12756c54bfc457e8b9124d932ff7c5178719b2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Keywords especifica palabras clave para una búsqueda de operación de FindMailboxStatisticsByKeywords.
+ms.openlocfilehash: d23840c4b651f5d4f42f36a0307a0fe5b25471f4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836192"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44451638"
 ---
 # <a name="keywords"></a>Palabras clave
 
-El elemento de **palabras clave** especifica las palabras clave para una búsqueda de la operación de **FindMailboxStatisticsByKeywords** . 
+El elemento **Keywords** especifica palabras clave para una búsqueda de operación de **FindMailboxStatisticsByKeywords** . 
   
 ```XML
 <KeyWords>
@@ -28,11 +28,11 @@ El elemento de **palabras clave** especifica las palabras clave para una búsque
  **ArrayOfStringsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
