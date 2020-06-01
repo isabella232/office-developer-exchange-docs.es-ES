@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 173148af-5dda-4322-8d0c-da3ba3780a43
-description: El elemento de ubicación (ReminderMessageDataType) especifica la ubicación del elemento de calendario que es un aviso de.
-ms.openlocfilehash: 88cc01e42f01f09933fd060080139a69bec104cc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Location (ReminderMessageDataType) especifica la ubicación del elemento de calendario al que corresponde el aviso.
+ms.openlocfilehash: 16474c1b635a3e2337a89b98b6660293276774bf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836242"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44433724"
 ---
 # <a name="location-remindermessagedatatype"></a>Ubicación (ReminderMessageDataType)
 
-El elemento de **ubicación (ReminderMessageDataType)** especifica la ubicación del elemento de calendario que es un aviso de. 
+El elemento **Location (ReminderMessageDataType)** especifica la ubicación del elemento de calendario al que corresponde el aviso. 
   
 ```xml
 <Location/>
@@ -26,15 +26,15 @@ El elemento de **ubicación (ReminderMessageDataType)** especifica la ubicación
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **ubicación** es la ubicación del elemento de calendario. 
+El valor de texto del elemento **Location** es la ubicación del elemento de calendario. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
@@ -66,5 +66,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Aviso](reminder.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

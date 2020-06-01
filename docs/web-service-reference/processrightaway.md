@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f6bba68b-ae4f-41c1-b3e7-c8a31cdb1b0c
-description: El elemento ProcessRightAway indica si la respuesta se envía tan pronto como la acción inicia el procesamiento en el servidor o si la respuesta se ha enviado una vez completada la acción. Este elemento debe estar presente para la respuesta que se envíen asincrónica a la acción solicitada.
-ms.openlocfilehash: 940f8e8fa0a53801ce1c3a45c3aecf1bdb6f519d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ProcessRightAway indica si la respuesta se envía en cuanto la acción comienza a procesarse en el servidor o si la respuesta se envía una vez completada la acción. Este elemento debe estar presente para que la respuesta se envíe asincrónica a la acción solicitada.
+ms.openlocfilehash: 58d2b926c48db5e7395df64e1f8ee9d6a8f0e73c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836898"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44434074"
 ---
 # <a name="processrightaway"></a>ProcessRightAway
 
-El elemento **ProcessRightAway** indica si la respuesta se envía tan pronto como la acción inicia el procesamiento en el servidor o si la respuesta se ha enviado una vez completada la acción. Este elemento debe estar presente para la respuesta que se envíen asincrónica a la acción solicitada. 
+El elemento **ProcessRightAway** indica si la respuesta se envía en cuanto la acción comienza a procesarse en el servidor o si la respuesta se envía una vez completada la acción. Este elemento debe estar presente para que la respuesta se envíe asincrónica a la acción solicitada. 
   
 [ApplyConversationAction](applyconversationaction.md)
   
@@ -35,41 +35,41 @@ El elemento **ProcessRightAway** indica si la respuesta se envía tan pronto com
 <ProcessRightAway/>
 ```
 
- **xs: Boolean**
+ **XS: Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ConversationAction](conversationaction.md) <br/> |Contiene una única acción que se aplicará a una conversación único.  <br/> |
+|[ConversationAction](conversationaction.md) <br/> |Contiene una sola acción que se aplicará a una única conversación.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** indica que la respuesta se envía tan pronto como la acción inicia el procesamiento en el servidor. Un valor de texto de **false** indica que la respuesta se ha enviado una vez completada la acción. 
+Un valor de texto de **true** indica que la respuesta se envía en cuanto la acción comienza el procesamiento en el servidor. Un valor de texto de **false** indica que la respuesta se envía una vez completada la acción. 
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda Exchange Web Services.This elemento fue introdujo en Exchange Server 2010 Service Pack 1 (SP1).
+El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda los servicios Web de Exchange. este elemento se introdujo en Exchange Server 2010 Service Pack 1 (SP1).
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -78,5 +78,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación ApplyConversationAction](applyconversationaction-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

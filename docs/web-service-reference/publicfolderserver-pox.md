@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 37ad46ab-7817-4fdd-ad2d-26cb525cd96b
-description: El elemento PublicFolderServer contiene el nombre de dominio completo (FQDN) del servidor de carpetas públicas para el usuario.
-ms.openlocfilehash: 6fb2f1a97279ee7f2e94c008474ddfed088faea1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PublicFolderServer contiene el nombre de dominio completo (FQDN) del servidor de carpetas públicas del usuario.
+ms.openlocfilehash: 868eab83d05387f570bc033522121f25f09817c4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836928"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44433689"
 ---
 # <a name="publicfolderserver-pox"></a>PublicFolderServer (POX)
 
-El elemento **PublicFolderServer** contiene el nombre de dominio completo (FQDN) del servidor de carpetas públicas para el usuario. 
+El elemento **PublicFolderServer** contiene el nombre de dominio completo (FQDN) del servidor de carpetas públicas del usuario. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -34,25 +34,25 @@ El elemento **PublicFolderServer** contiene el nombre de dominio completo (FQDN)
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente en el equipo que ejecuta Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.  <br/> |
+|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa el FQDN del servidor de carpetas públicas para el usuario.
+El valor de texto representa el FQDN del servidor de carpetas públicas del usuario.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -62,5 +62,5 @@ El elemento **PublicFolderServer** es un elemento secundario opcional del elemen
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

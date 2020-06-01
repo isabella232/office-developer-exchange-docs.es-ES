@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: dbd102b8-db70-4196-affe-d7ed66bf3371
-description: El elemento PersonName especifica el nombre de una persona que se encuentra por medio de extracción de entidades.
-ms.openlocfilehash: 369839cd7ef49e29b570a60c12c9fcba0f6e887f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PersonName especifica el nombre de una persona encontrada por medio de la extracción de entidades.
+ms.openlocfilehash: 7784cf1abb9098c181450baeb80468faf46c7d99
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836745"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44434088"
 ---
 # <a name="personname"></a>PersonName
 
-El elemento **PersonName** especifica el nombre de una persona que se encuentra por medio de extracción de entidades. 
+El elemento **PersonName** especifica el nombre de una persona encontrada por medio de la extracción de entidades. 
   
 ```XML
 <PersonName></PersonName>
@@ -26,15 +26,15 @@ El elemento **PersonName** especifica el nombre de una persona que se encuentra 
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **PersonName** es el nombre de una persona que se encuentra como consecuencia de extracción de entidades. 
+El valor de texto del elemento **PersonName** es el nombre de una persona que se ha encontrado como resultado de la extracción de entidades. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bdc36e39-56ec-4a52-b4c2-614487a5fb84
-description: El elemento AddItemToMyCalendar está pensado para uso interno únicamente.
-ms.openlocfilehash: c48c1b417a7bc592778db1e5101042a99fff38ca
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AddItemToMyCalendar está destinado sólo para uso interno.
+ms.openlocfilehash: 310842eca68fc3987e0a0374c6b7bd5bc686c6d8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763402"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44435040"
 ---
 # <a name="additemtomycalendar"></a>AddItemToMyCalendar
 
-El elemento **AddItemToMyCalendar** está pensado para uso interno únicamente. 
+El elemento **AddItemToMyCalendar** está destinado sólo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e335b166-3ddc-469e-81cb-5679bfad5c14
-description: El elemento SetClientExtensionResponse contiene la respuesta a una solicitud de SetClientExtension.
-ms.openlocfilehash: 0d321dd6e1278cf7510858f1c2ea008d809a8b0e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SetClientExtensionResponse contiene la respuesta a una solicitud SetClientExtension.
+ms.openlocfilehash: 97c3a54c6bbaeb1bf22bc87505d7f7f59d10c20b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837397"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44438092"
 ---
 # <a name="setclientextensionresponse"></a>SetClientExtensionResponse
 
-El elemento **SetClientExtensionResponse** contiene la respuesta a una solicitud de **SetClientExtension** . 
+El elemento **SetClientExtensionResponse** contiene la respuesta a una solicitud **SetClientExtension** . 
   
 ```XML
 <SetClientExtensionResponse>
@@ -28,11 +28,11 @@ El elemento **SetClientExtensionResponse** contiene la respuesta a una solicitud
  **SetClientExtensionResponseType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

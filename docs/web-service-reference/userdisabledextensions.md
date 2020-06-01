@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c8294eee-6588-4e42-965d-c8261a4770c9
-description: El elemento UserDisabledExtensions enumera las aplicaciones de deshabilitado.
-ms.openlocfilehash: 4d2935779626337c2b5132fe0556a6d707516223
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UserDisabledExtensions enumera las aplicaciones deshabilitadas.
+ms.openlocfilehash: 42fd16f342e8c5a4f7a5526cb7513cf77ba8246f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840902"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44433682"
 ---
 # <a name="userdisabledextensions"></a>UserDisabledExtensions
 
-El elemento **UserDisabledExtensions** enumera las aplicaciones de deshabilitado. 
+El elemento **UserDisabledExtensions** enumera las aplicaciones deshabilitadas. 
   
 ```XML
 <UserDisabledExtensions>
@@ -28,11 +28,11 @@ El elemento **UserDisabledExtensions** enumera las aplicaciones de deshabilitado
  **ArrayOfStringsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d5562b38-6a3e-49e0-b1db-ec8cd0683863
-description: El elemento SetImGroupResponse representa una respuesta a una solicitud de SetImGroup.
-ms.openlocfilehash: 92c08bc8dd9fc0f5bef6eefd0ee81453cc12a7b0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SetImGroupResponse representa una respuesta a una solicitud SetImGroup.
+ms.openlocfilehash: 9c5f6bb5c2a4ffe4626f242ec06b7e022ef21bbf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837424"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44438057"
 ---
 # <a name="setimgroupresponse"></a>SetImGroupResponse
 
-El elemento **SetImGroupResponse** representa una respuesta a una solicitud de **SetImGroup** . 
+El elemento **SetImGroupResponse** representa una respuesta a una solicitud **SetImGroup** . 
   
 ```XML
 <SetImGroupResponse>
@@ -31,15 +31,15 @@ El elemento **SetImGroupResponse** representa una respuesta a una solicitud de *
  **SetImGroupResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md)
+[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

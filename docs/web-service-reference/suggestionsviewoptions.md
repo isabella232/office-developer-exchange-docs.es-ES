@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: bb04ae38-e62d-4a69-a479-8ff326ca726e
-description: El elemento SuggestionsViewOptions contiene las opciones para obtener información de la sugerencia de reunión.
-ms.openlocfilehash: 09ff317ae0b2ebf1eadc89dc3bb1cf5b3ae19dcb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SuggestionsViewOptions contiene las opciones para obtener información sobre las sugerencias de la reunión.
+ms.openlocfilehash: f584b19997f98760bd4e438dcd48a5c18cc63e4b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840603"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44433997"
 ---
 # <a name="suggestionsviewoptions"></a>SuggestionsViewOptions
 
-El elemento **SuggestionsViewOptions** contiene las opciones para obtener información de la sugerencia de reunión. 
+El elemento **SuggestionsViewOptions** contiene las opciones para obtener información sobre las sugerencias de la reunión. 
   
 [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -44,46 +44,46 @@ El elemento **SuggestionsViewOptions** contiene las opciones para obtener inform
  **SuggestionsViewOptionsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GoodThreshold](goodthreshold.md) <br/> |Especifica el porcentaje de los asistentes que debe tener el período de tiempo abierto para que el período de tiempo calificar como una hora de reunión sugerida buena.  <br/> |
-|[MaximumResultsByDay](maximumresultsbyday.md) <br/> |Especifica el número de veces que la reunión sugerida por día devuelto en la respuesta.  <br/> |
-|[MaximumNonWorkHourResultsByDay](maximumnonworkhourresultsbyday.md) <br/> |Especifica el número de resultados sugeridos para horas fuera del horario normal de trabajo por día de la reunión.  <br/> |
-|[MeetingDurationInMinutes](meetingdurationinminutes.md) <br/> |Especifica la longitud de la reunión que sugerir.  <br/> |
-|[MinimumSuggestionQuality](minimumsuggestionquality.md) <br/> |Especifica la calidad de sugerencias de reunión que se devuelve en la respuesta.  <br/> |
-|[DetailedSuggestionsWindow](detailedsuggestionswindow.md) <br/> |Identifica el intervalo de tiempo que se consulta para obtener información detallada acerca de las horas de reunión sugerida.  <br/> |
-|[CurrentMeetingTime](currentmeetingtime.md) <br/> |Los resultados de tiempo representa la hora de inicio de una reunión que desee actualizar con la reunión sugerida.  <br/> |
-|[GlobalObjectId](globalobjectid.md) <br/> |No se usa este elemento.  <br/> |
+|[GoodThreshold](goodthreshold.md) <br/> |Especifica el porcentaje de asistentes que deben tener el período de tiempo abierto durante el período de tiempo para calificarse como una buena hora de reunión.  <br/> |
+|[MaximumResultsByDay](maximumresultsbyday.md) <br/> |Especifica el número de horas sugeridas de reuniones por día devueltas en la respuesta.  <br/> |
+|[MaximumNonWorkHourResultsByDay](maximumnonworkhourresultsbyday.md) <br/> |Especifica el número de resultados sugeridos para las horas de reunión fuera del horario laboral normal por día.  <br/> |
+|[MeetingDurationInMinutes](meetingdurationinminutes.md) <br/> |Especifica la duración de la reunión que se va a sugerir.  <br/> |
+|[MinimumSuggestionQuality](minimumsuggestionquality.md) <br/> |Especifica la calidad de las sugerencias de reunión que se devolverán en la respuesta.  <br/> |
+|[DetailedSuggestionsWindow](detailedsuggestionswindow.md) <br/> |Identifica el intervalo de tiempo que se consulta para obtener información detallada sobre las horas de reunión sugeridas.  <br/> |
+|[CurrentMeetingTime](currentmeetingtime.md) <br/> |Representa la hora de inicio de una reunión que desea actualizar con los resultados de la hora de la reunión sugerida.  <br/> |
+|[GlobalObjectId](globalobjectid.md) <br/> |Este elemento no se usa.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |Contiene los argumentos utilizados para obtener información de disponibilidad del usuario. Esto es un elemento raíz.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityRequest` <br/> |
+|[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |Contiene los argumentos usados para obtener información de disponibilidad del usuario. Se trata de un elemento raíz.  <br/> A continuación se encuentra la expresión XPath de este elemento:  <br/>  `/GetUserAvailabilityRequest` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Este elemento no es necesario y sólo puede aparecer una vez si se usa. Este valor puede ser null si el valor del elemento [FreeBusyViewOptions](freebusyviewoptions.md) no es nulo. 
+Este elemento no es necesario y solo se puede producir una vez si se usa. Este valor puede ser null si el valor del elemento [FreeBusyViewOptions](freebusyviewoptions.md) no es NULL. 
   
 > [!NOTE]
-> El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente. 
+> El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes. 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -92,5 +92,5 @@ Este elemento no es necesario y sólo puede aparecer una vez si se usa. Este val
 [Operación GetUserAvailability](getuseravailability-operation.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 
