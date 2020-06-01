@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4c7af00c-8dca-40f4-9420-e042a0b5303c
 description: El elemento OnlineMeetingSettings especifica la configuración de las reuniones en línea.
-ms.openlocfilehash: dd830330ba1a09f04aca933853f4169e0cd78838
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: a89b89d2fa602e46925bcdae51631df0d9573300
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836647"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467210"
 ---
 # <a name="onlinemeetingsettings"></a>OnlineMeetingSettings
 
@@ -30,15 +30,15 @@ El elemento **OnlineMeetingSettings** especifica la configuración de las reunio
  **OnlineMeetingSettingsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[LobbyBypass](lobbybypass.md) | [AccessLevel](accesslevel.md) | [los moderadores](presenters.md)
+[LobbyBypass](lobbybypass.md)  |  [AccessLevel](accesslevel.md)  |  [Moderadores](presenters.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

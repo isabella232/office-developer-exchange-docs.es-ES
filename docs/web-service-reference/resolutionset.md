@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 43d5b876-0e87-4414-9b1d-bff1c1ec825c
-description: El elemento ResolutionSet contiene una matriz de soluciones para un nombre ambiguo.
-ms.openlocfilehash: ad7bd31c85051e8c80aea25aa9e6f2914cf0ad01
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ResolutionSet contiene una matriz de resoluciones para un nombre ambiguo.
+ms.openlocfilehash: 483a096a7fcedbabe25758ebcaa31c83405a0ad4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837160"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467175"
 ---
 # <a name="resolutionset"></a>ResolutionSet
 
-El elemento **ResolutionSet** contiene una matriz de soluciones para un nombre ambiguo. 
+El elemento **ResolutionSet** contiene una matriz de resoluciones para un nombre ambiguo. 
   
 [ResolveNamesResponse](resolvenamesresponse.md)
   
@@ -40,44 +40,44 @@ El elemento **ResolutionSet** contiene una matriz de soluciones para un nombre a
  **ArrayOfResolutionType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**IndexedPagingOffset** <br/> |Representa el siguiente índice que se debe usar para la solicitud siguiente cuando se usa una vista de página indizados.  <br/> |
-|**NumeratorOffset** <br/> |Representa el nuevo valor: número que se usará para la solicitud siguiente cuando se utilizan vistas de página de fracción.  <br/> |
-|**AbsoluteDenominator** <br/> |Representa el denominador siguiente para usar para la solicitud siguiente cuando se utilizan vistas de página de fracción.  <br/> |
-|**IncludesLastItemInRange** <br/> |Este atributo será true si los resultados actuales contienen el último elemento de la consulta, por lo que no es necesaria la paginación adicional.  <br/> |
-|**TotalItemsInView** <br/> |Representa el número total de elementos en la vista.  <br/> |
+|**IndexedPagingOffset** <br/> |Representa el siguiente índice que se debe usar para la siguiente solicitud cuando se usa una vista de página indizada.  <br/> |
+|**NumeratorOffset** <br/> |Representa el nuevo valor del numerador que se va a usar para la siguiente solicitud cuando se usan vistas de página de fracción.  <br/> |
+|**AbsoluteDenominator** <br/> |Representa el siguiente denominador que se va a usar para la siguiente solicitud cuando se usan vistas de página de fracción.  <br/> |
+|**IncludesLastItemInRange** <br/> |Este atributo será true si los resultados actuales contienen el último elemento de la consulta, por lo que no se necesita ninguna paginación adicional.  <br/> |
+|**TotalItemsInView** <br/> |Representa el número total de elementos de la vista.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Resoluci?n](resolution.md) <br/> |Contiene una única entidad resuelta.  <br/> |
+|[Resolución](resolution.md) <br/> |Contiene una única entidad resuelta.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResolveNamesResponseMessage](resolvenamesresponsemessage.md) <br/> |Contiene el estado y el resultado de una solicitud de ResolveNames.  <br/> |
+|[ResolveNamesResponseMessage](resolvenamesresponsemessage.md) <br/> |Contiene el estado y el resultado de una solicitud ResolveNames.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Un elemento **ResolutionSet** puede contener un máximo de 100 entidades resueltos. 
+Un elemento **ResolutionSet** puede contener un máximo de 100 entidades resueltas. 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -90,5 +90,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [Operación ResolveNames](resolvenames-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

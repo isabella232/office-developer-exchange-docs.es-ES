@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d18f3b60-ebb6-4133-b895-a6ec8942d039
-description: El elemento StreamingSubscriptionRequest representa una suscripción a una suscripción de notificación de evento transmisión por secuencias.
-ms.openlocfilehash: 088ec3b8048d70803b4837548ca918c0005d91bb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento StreamingSubscriptionRequest representa una suscripción a una suscripción de notificación de eventos de streaming.
+ms.openlocfilehash: b469ba7598420189c1db0e2fe676a279390eb6bf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837601"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468232"
 ---
 # <a name="streamingsubscriptionrequest"></a>StreamingSubscriptionRequest
 
-El elemento **StreamingSubscriptionRequest** representa una suscripción a una suscripción de notificación de evento transmisión por secuencias. 
+El elemento **StreamingSubscriptionRequest** representa una suscripción a una suscripción de notificación de eventos de streaming. 
   
 [Suscribirse](subscribe.md)
   
@@ -37,26 +37,26 @@ El elemento **StreamingSubscriptionRequest** representa una suscripción a una s
  **StreamingSubscriptionRequest**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**SubscribeToAllFolders** <br/> |Indica si el servidor se suscribirá a todas las carpetas en el buzón del usuario. Un valor de **true** indica que el servidor se suscribirá.  <br/> |
+|**SubscribeToAllFolders** <br/> |Indica si el servidor se suscribirá a todas las carpetas del buzón de correo del usuario. Un valor de **true** indica que se suscribirá el servidor.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FolderIds](folderids.md) <br/> |Contiene una matriz de identificadores de carpeta que se usa para identificar las carpetas para supervisar las notificaciones de eventos.  <br/> |
-|[Debe establecer](eventtypes.md) <br/> |Contiene una colección de las notificaciones de eventos que se usan para crear una suscripción.  <br/> |
+|[FolderIds](folderids.md) <br/> |Contiene una matriz de identificadores de carpeta que se usan para identificar las carpetas que se van a supervisar para las notificaciones de eventos.  <br/> |
+|[EventTypes](eventtypes.md) <br/> |Contiene una colección de notificaciones de eventos que se usan para crear una suscripción.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Suscribirse](subscribe.md) <br/> |Contiene las propiedades que se usan para crear las suscripciones.  <br/> |
+|[Suscribirse](subscribe.md) <br/> |Contiene las propiedades que se usan para crear suscripciones.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -64,26 +64,26 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda Exchange Web Services.This elemento fue introdujo en Exchange Server 2010 Service Pack 1 (SP1).
+El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda los servicios Web de Exchange. este elemento se introdujo en Exchange Server 2010 Service Pack 1 (SP1).
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Operación de suscripción](subscribe-operation.md)
+[Operación subscribe](subscribe-operation.md)
   
 [Operación GetEvents](getevents-operation.md)
   
 [Operación GetStreamingEvents](getstreamingevents-operation.md)
   
-[Cancelar la operación de suscripción](unsubscribe-operation.md)
+[Operación unsubscribe](unsubscribe-operation.md)
 

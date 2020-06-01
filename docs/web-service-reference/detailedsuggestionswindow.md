@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7b348d63-6a7d-45f4-9562-5c42243d63a5
-description: El elemento DetailedSuggestionsWindow identifica el intervalo de tiempo que se consulta para obtener información detallada acerca de las horas de reunión sugerida.
-ms.openlocfilehash: 8a3af0178d0c96b50f4dd641716a9f7a7be8f7a2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DetailedSuggestionsWindow identifica el intervalo de tiempo que se consulta para obtener información detallada sobre las horas de reunión sugeridas.
+ms.openlocfilehash: 45d582f2642c0e3d8f6330b09946230c8842618d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764140"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467847"
 ---
 # <a name="detailedsuggestionswindow"></a>DetailedSuggestionsWindow
 
-El elemento **DetailedSuggestionsWindow** identifica el intervalo de tiempo que se consulta para obtener información detallada acerca de las horas de reunión sugerida. 
+El elemento **DetailedSuggestionsWindow** identifica el intervalo de tiempo que se consulta para obtener información detallada sobre las horas de reunión sugeridas. 
   
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md) 
 - [SuggestionsViewOptions](suggestionsviewoptions.md) 
@@ -34,46 +34,46 @@ El elemento **DetailedSuggestionsWindow** identifica el intervalo de tiempo que 
 </DetailedSuggestionsWindow>
 ```
 
- **Duration**
+ **Duración**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[StartTime](starttime.md) <br/> |Representa el inicio de un período de tiempo de consulta para obtener información detallada acerca de las horas de reunión sugerida.  <br/> |
-|[Hora de finalización](endtime.md) <br/> |Representa el final de un período de tiempo de consulta para obtener información detallada acerca de las horas de reunión sugerida.  <br/> |
+|[StartTime](starttime.md) <br/> |Representa el inicio del intervalo de tiempo consultado para obtener información detallada sobre las horas de reunión sugeridas.  <br/> |
+|[EndTime](endtime.md) <br/> |Representa el final del intervalo de tiempo consultado para obtener información detallada sobre las horas de reunión sugeridas.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Contiene las opciones para obtener información de la sugerencia de reunión.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
+|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Contiene las opciones para obtener información sobre las sugerencias de la reunión.  <br/> A continuación se encuentra la expresión XPath de este elemento:  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Este elemento no es necesario.
+Este elemento no es obligatorio.
   
 > [!NOTE]
-> El esquema que describe este elemento se encuentra en el directorio /EWS/ del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente. 
+> El esquema que describe este elemento se encuentra en el directorio/EWS/del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes. 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)
-- [Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

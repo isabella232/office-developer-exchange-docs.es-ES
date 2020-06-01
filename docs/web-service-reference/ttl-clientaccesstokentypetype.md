@@ -7,42 +7,42 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: cc8f8caa-fced-49b6-9861-d112590b218a
-description: El elemento TTL indica la hora a live valor para el token.
-ms.openlocfilehash: 04bd8124c7bd2b02e2ab1cc47ee1d4dca4847079
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento TTL indica el valor de tiempo para Live para el token.
+ms.openlocfilehash: 0275e97ce02e41cc377f4003aee12c6fff0995e2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840731"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467392"
 ---
 # <a name="ttl-clientaccesstokentypetype"></a>TTL (ClientAccessTokenTypeType)
 
-El elemento **TTL** indica la hora a live valor para el token. 
+El elemento **TTL** indica el valor de tiempo para Live para el token. 
   
 ```XML
 <TTL></TTL>
 ```
 
- **número entero**
+ **entero**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[TokenRequest](tokenrequest.md) | [símbolo (token)](token.md)
+[TokenRequest](tokenrequest.md)  |  [Token](token.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto para el elemento **TTL** indica cuánto tiempo permanece válido el token. 
+El valor de texto del elemento **TTL** indica el tiempo que el token sigue siendo válido. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

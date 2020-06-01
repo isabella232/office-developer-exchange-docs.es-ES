@@ -11,44 +11,44 @@ api_name:
 api_type:
 - schema
 ms.assetid: 53b22647-1453-4707-9ea0-6a8369748d56
-description: El elemento UnreadCount contiene el recuento de elementos no leídos dentro de una carpeta.
-ms.openlocfilehash: fbe887f8f6d83fbcf48ed9593b3d19322a7f48be
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UnreadCount contiene el número de elementos no leídos dentro de una carpeta.
+ms.openlocfilehash: 72e5d47eac7618408e46ad11eb19eaebf9835502
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840790"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467224"
 ---
 # <a name="unreadcount"></a>UnreadCount
 
-El elemento **UnreadCount** contiene el recuento de elementos no leídos dentro de una carpeta. 
+El elemento **UnreadCount** contiene el número de elementos no leídos dentro de una carpeta. 
   
 ```XML
 <UnreadCount/>
 ```
 
- **xs: int**
+ **XS: int**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Conversación (ConversationType)](conversation-conversationtype.md) <br/> |Representa una sola conversación.  <br/> |
-|[Folder](folder.md) <br/> |Representa una carpeta en un buzón de correo.  <br/> |
-|[ModifiedEvent](modifiedevent.md) <br/> |Representa un evento que se modifica una carpeta o elemento.  <br/> |
-|[SearchFolder](searchfolder.md) <br/> |Representa una carpeta de búsqueda en un buzón de correo.  <br/> |
-|[TasksFolder](tasksfolder.md) <br/> |Representa una carpeta de tareas en un buzón de correo.  <br/> |
+|[Folder](folder.md) <br/> |Representa una carpeta en un buzón.  <br/> |
+|[ModifiedEvent](modifiedevent.md) <br/> |Representa un evento en el que se modifica un elemento o una carpeta.  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |Representa una carpeta de búsqueda en un buzón.  <br/> |
+|[Hubiera](tasksfolder.md) <br/> |Representa una carpeta de tareas en un buzón.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -62,14 +62,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

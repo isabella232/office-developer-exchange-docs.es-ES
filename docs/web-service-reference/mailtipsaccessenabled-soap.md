@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 205606b0-8b39-4acf-941a-e544efcedd6c
-description: El elemento MailTipsAccessEnabled representa la marca MailTipsAccessEnabled(). El elemento MailTipsAccessEnabled es sólo para uso interno. Este elemento no se usa en los clientes.
-ms.openlocfilehash: 86739b6d3f2d900844ad762fba62d8704b9f8670
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MailTipsAccessEnabled representa la marca MailTipsAccessEnabled (). El elemento MailTipsAccessEnabled es solo para uso interno. Los clientes no usan este elemento.
+ms.openlocfilehash: 72476d72a3b5faef358bba52f6038c065d51ff6f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836306"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467798"
 ---
 # <a name="mailtipsaccessenabled-soap"></a>MailTipsAccessEnabled (SOAP)
 
-El elemento **MailTipsAccessEnabled** representa la marca **MailTipsAccessEnabled()** . El elemento **MailTipsAccessEnabled** es sólo para uso interno. Este elemento no se usa en los clientes. 
+El elemento **MailTipsAccessEnabled** representa la marca **MailTipsAccessEnabled ()** . El elemento **MailTipsAccessEnabled** es solo para uso interno. Los clientes no usan este elemento. 
   
 ```XML
 <MailTipsAccessEnabled>true | false</ MailTipsAccessEnabled>
@@ -25,19 +25,19 @@ El elemento **MailTipsAccessEnabled** representa la marca **MailTipsAccessEnable
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Representa una lista de relaciones de organización para una sola organización.  <br/> |
    
@@ -45,9 +45,9 @@ Ninguno.
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también

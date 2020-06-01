@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: f77e4d66-6fdd-4999-9339-f7d7f9c86f44
-description: El elemento de protocolo contiene las especificaciones para conectar a un cliente en el equipo que ejecuta Exchange Server que tiene instalada la función del servidor acceso de cliente.
-ms.openlocfilehash: e58ae82ea5ec9d39db0f9219f6019df7da24a343
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Protocol contiene las especificaciones para conectar un cliente al equipo que ejecuta Exchange Server que tiene instalado el rol de servidor acceso de clientes.
+ms.openlocfilehash: 6fca347f49e27958ecb16cce345387b6a2146979
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836926"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44467763"
 ---
 # <a name="protocol-pox"></a>Protocolo (POX)
 
-El elemento de **protocolo** contiene las especificaciones para conectar a un cliente en el equipo que ejecuta Exchange Server que tiene instalada la función del servidor acceso de cliente. 
+El elemento **Protocol** contiene las especificaciones para conectar un cliente al equipo que ejecuta Exchange Server que tiene instalado el rol de servidor acceso de clientes. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -81,79 +81,79 @@ El elemento de **protocolo** contiene las especificaciones para conectar a un cl
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|Tipo  <br/> |Indica el tipo de protocolo que se describe mediante este elemento de **protocolo** . El valor sólo es válido para este atributo es "mapiHttp". Este atributo es sólo está presente si la detección automática de solicitudes que corresponde a esta respuesta [incluye un encabezado X-MapiHttpCapability](pox-autodiscover-request-for-exchange.md). Este atributo es aplicable a los clientes que implementan el protocolo HTTP/MAPI y destino Exchange Online, Exchange Online como parte de Office 365, o versiones locales de Exchange a partir de con compilación 15.00.0847.032 (Exchange Server 2013 SP1).  <br/> |
-|Versión  <br/> |Indica la versión del protocolo que se describe mediante este elemento de **protocolo** . El valor sólo es válido para este atributo es "1". Este atributo sólo está presente si la solicitud de detección automática que corresponde a esta respuesta incluido un encabezado **X-MapiHttpCapability** . Este atributo es aplicable a los clientes que implementan el protocolo HTTP/MAPI y destino Exchange Online, Exchange Online como parte de Office 365, o versiones locales de Exchange a partir de con compilación 15.00.0847.032 (Exchange Server 2013 SP1).  <br/> |
+|Tipo  <br/> |Indica el tipo de protocolo descrito por este elemento **Protocol** . El único valor válido para este atributo es "mapiHttp". Este atributo solo está presente si la solicitud de detección automática que corresponde a esta respuesta [incluye un encabezado X-MapiHttpCapability](pox-autodiscover-request-for-exchange.md). Este atributo es aplicable a los clientes que implementan el protocolo MAPI/HTTP y tienen como objetivo Exchange Online, Exchange online como parte de Office 365 o versiones locales de Exchange que comienzan con la compilación 15.00.0847.032 (Exchange Server 2013 SP1).  <br/> |
+|Versión  <br/> |Indica la versión del protocolo descrito por este elemento **Protocol** . El único valor válido para este atributo es "1". Este atributo solo está presente si la solicitud de detección automática que corresponde a esta respuesta incluye un encabezado **X-MapiHttpCapability** . Este atributo es aplicable a los clientes que implementan el protocolo MAPI/HTTP y tienen como objetivo Exchange Online, Exchange online como parte de Office 365 o versiones locales de Exchange que comienzan con la compilación 15.00.0847.032 (Exchange Server 2013 SP1).  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Tipo (POX)](type-pox.md) <br/> |Identifica el tipo de la cuenta de correo configurada.  <br/> |
-|[Interno (POX)](internal-pox.md) <br/> |Contiene una colección de direcciones URL que puede utilizar un cliente para conectarse a Exchange desde dentro de la red de la organización.  <br/> |
-|[Externo (POX)](external-pox.md) <br/> |Contiene una colección de direcciones URL que puede utilizar un cliente para conectarse a Exchange desde fuera de la red de la organización.  <br/> |
-|[TTL (POX)](ttl-pox.md) <br/> |Especifica el período de vida, en horas, durante el cual la configuración permanece válida.  <br/> |
+|[Tipo (POX)](type-pox.md) <br/> |Identifica el tipo de cuenta de correo configurada.  <br/> |
+|[Interno (POX)](internal-pox.md) <br/> |Contiene una colección de direcciones URL que puede usar un cliente para conectarse a Exchange desde dentro de la red de la organización.  <br/> |
+|[Externa (POX)](external-pox.md) <br/> |Contiene una colección de direcciones URL que puede usar un cliente para conectarse a Exchange desde fuera de la red de la organización.  <br/> |
+|[TTL (POX)](ttl-pox.md) <br/> |Especifica el período de vida, en horas, durante el cual la configuración sigue siendo válida.  <br/> |
 |[Servidor (POX)](server-pox.md) <br/> |Especifica el nombre del servidor de correo.  <br/> |
-|[ServerDN (POX)](serverdn-pox.md) <br/> |Especifica el nombre distintivo (DN) de Exchange Server.  <br/> |
+|[ServerDN (POX)](serverdn-pox.md) <br/> |Especifica el nombre distintivo del servidor de Exchange.  <br/> |
 |[ServerVersion (POX)](serverversion-pox.md) <br/> |Representa el número de versión de Exchange Server.  <br/> |
-|[MdbDN (POX)](mdbdn-pox.md) <br/> |Representa el nombre distintivo (DN) de la base de datos de buzón de correo.  <br/> |
-|[PublicFolderServer (POX)](publicfolderserver-pox.md) <br/> |Contiene el nombre de dominio completo (FQDN) del servidor de carpetas públicas para el usuario.  <br/> |
-|[Puerto (POX)](port-pox.md) <br/> |Especifica el puerto que se usa para conectarse a la tienda.  <br/> |
-|[DirectoryPort (POX)](directoryport-pox.md) <br/> |Especifica el puerto que se usa para conectarse al directorio cuando se usa el protocolo de interfaz de proveedor de servicio de nombres (NSPI).  <br/> |
-|[ReferralPort (POX)](referralport-pox.md) <br/> |Especifica el puerto que se utiliza para obtener una referencia a un directorio.  <br/> |
-|[ASUrl (POX)](asurl-pox.md) <br/> |Especifica la dirección URL de la instancia de procedimientos de los servicios Web de Exchange para un usuario habilitado para correo.  <br/> |
-|[EwsUrl (POX)](ewsurl-pox.md) <br/> |Especifica la dirección URL de la instancia de extremo procedimientos de Exchange Web Services (EWS) para un usuario habilitado para correo.  <br/> |
-|[EmwsUrl (POX)](emwsurl-pox.md) <br/> |Especifica la dirección URL de la instancia de extremo procedimientos de Exchange Web Services (EWS) para un usuario habilitado para correo.  <br/> |
-|[SharingUrl (POX)](sharingurl-pox.md) <br/> |Contiene la dirección URL del servidor de uso compartido usado para toda la organización de uso compartido de calendarios y contactos.  <br/> |
-|[EcpUrl (POX)](ecpurl-pox.md) <br/> |Especifica la dirección URL del Panel de Control de Exchange para un usuario habilitado para correo.  <br/> |
-|[EcpUrl-mensajería unificada (POX)](ecpurl-um-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para tener acceso a la configuración de correo de voz para un usuario habilitado para correo.  <br/> |
+|[MdbDN (POX)](mdbdn-pox.md) <br/> |Representa el nombre distintivo de la base de datos de buzones.  <br/> |
+|[PublicFolderServer (POX)](publicfolderserver-pox.md) <br/> |Contiene el nombre de dominio completo (FQDN) del servidor de carpetas públicas del usuario.  <br/> |
+|[Puerto (POX)](port-pox.md) <br/> |Especifica el puerto que se usa para conectarse al almacén.  <br/> |
+|[DirectoryPort (POX)](directoryport-pox.md) <br/> |Especifica el puerto que se usa para conectarse al directorio cuando se utiliza el protocolo de interfaz del proveedor de servicio de nombres (NSPI).  <br/> |
+|[ReferralPort (POX)](referralport-pox.md) <br/> |Especifica el puerto que se usa para obtener una referencia a un directorio.  <br/> |
+|[ASUrl (POX)](asurl-pox.md) <br/> |Especifica la dirección URL de la mejor instancia de los servicios Web de Exchange para un usuario habilitado para correo.  <br/> |
+|[EwsUrl (POX)](ewsurl-pox.md) <br/> |Especifica la dirección URL de la mejor instancia de punto de conexión para los servicios web Exchange (EWS) para un usuario habilitado para correo.  <br/> |
+|[EmwsUrl (POX)](emwsurl-pox.md) <br/> |Especifica la dirección URL de la mejor instancia de punto de conexión para los servicios web Exchange (EWS) para un usuario habilitado para correo.  <br/> |
+|[SharingUrl (POX)](sharingurl-pox.md) <br/> |Contiene la dirección URL del servidor de uso compartido usado para compartir entre organizaciones los calendarios y los contactos.  <br/> |
+|[EcpUrl (POX)](ecpurl-pox.md) <br/> |Especifica la dirección URL del panel de control de Exchange para un usuario habilitado para correo.  <br/> |
+|[EcpUrl-UM (POX)](ecpurl-um-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para obtener acceso a la configuración del correo de voz para un usuario habilitado para correo.  <br/> |
 |[EcpUrl-aggr (POX)](ecpurl-aggr-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para tener acceso a la configuración de agregación de correo electrónico para un usuario habilitado para correo.  <br/> |
-|[EcpUrl-mt (POX)](ecpurl-mt-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para tener acceso a la configuración de un usuario habilitado para correo de seguimiento de mensajes de correo electrónico.  <br/> |
-|[EcpUrl-devuelve (POX)](ecpurl-ret-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para tener acceso a la configuración de la etiqueta de retención para un usuario habilitado para correo.  <br/> |
-|[EcpUrl-sms (POX)](ecpurl-sms-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para tener acceso a la configuración del servicio de mensajes cortos (SMS) para un usuario habilitado para correo.  <br/> |
-|[EcpUrl-publicar (POX)](ecpurl-publish-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para tener acceso a la configuración de publicación de calendario de un usuario habilitado para correo.  <br/> |
-|[EcpUrl-foto (POX)](ecpurl-photo-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que puede usarse para ver o cambiar la foto actual de un usuario habilitado para correo.  <br/> |
-|[EcpUrl-tm (POX)](ecpurl-tm-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para tener acceso a una lista de todos los buzones del sitio de que un usuario habilitado para correo actualmente es un miembro.  <br/> |
+|[EcpUrl-MT (POX)](ecpurl-mt-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para obtener acceso a la configuración de seguimiento de mensajes de correo electrónico para un usuario habilitado para correo.  <br/> |
+|[EcpUrl-RET (POX)](ecpurl-ret-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para obtener acceso a la configuración de la etiqueta de retención para un usuario habilitado para correo.  <br/> |
+|[EcpUrl-SMS (POX)](ecpurl-sms-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para obtener acceso a la configuración del servicio de mensajes cortos (SMS) para un usuario habilitado para correo.  <br/> |
+|[EcpUrl-publicación (POX)](ecpurl-publish-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para obtener acceso a la configuración de publicación del calendario para un usuario habilitado para correo.  <br/> |
+|[EcpUrl-Photo (POX)](ecpurl-photo-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para ver o cambiar la foto actual de un usuario habilitado para correo.  <br/> |
+|[EcpUrl-TM (POX)](ecpurl-tm-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para tener acceso a una lista de todos los buzones de sitio de los que un usuario habilitado para correo es actualmente miembro.  <br/> |
 |[EcpUrl-tmCreating (POX)](ecpurl-tmcreating-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para crear un nuevo buzón de sitio.  <br/> |
-|[EcpUrl-tmHiding (POX)](ecpurl-tmhiding-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para cancelar la suscripción al usuario de un buzón del sitio.  <br/> |
+|[EcpUrl-tmHiding (POX)](ecpurl-tmhiding-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para cancelar la suscripción del usuario a un buzón del sitio.  <br/> |
 |[EcpUrl-tmEditing (POX)](ecpurl-tmediting-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para editar un buzón de sitio existente.  <br/> |
-|[EcpUrl-extinstall (POX)](ecpurl-extinstall-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que puede usarse para ver o cambiar las aplicaciones de correo instaladas actualmente en el buzón del usuario.  <br/> |
-|[OOFUrl (POX)](oofurl-pox.md) <br/> |Especifica la dirección URL de la instancia del servicio de disponibilidad para un usuario habilitado para correo de procedimientos.  <br/> |
-|[OABUrl (POX)](oaburl-pox.md) <br/> |Especifica la dirección URL de servidor de libreta de direcciones sin conexión configuración para una topología de Exchange.  <br/> |
-|[UMUrl (POX)](umurl-pox.md) <br/> |Especifica la dirección URL de la instancia del servicio Web de mensajería unificada para un usuario habilitado para correo de procedimientos.  <br/> |
-|[EwsPartnerUrl (POX)](ewspartnerurl-pox.md) <br/> |Especifica la dirección URL de la instancia de extremo procedimientos de Exchange Web Services (EWS) para un usuario habilitado para correo.  <br/> |
+|[EcpUrl-extinstall (POX)](ecpurl-extinstall-pox.md) <br/> |Especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para ver o cambiar las aplicaciones de correo actualmente instaladas en el buzón del usuario.  <br/> |
+|[OOFUrl (POX)](oofurl-pox.md) <br/> |Especifica la dirección URL de la mejor instancia del servicio de disponibilidad para un usuario habilitado para correo.  <br/> |
+|[OABUrl (POX)](oaburl-pox.md) <br/> |Especifica la dirección URL del servidor de configuración de la libreta de direcciones sin conexión para una topología de Exchange.  <br/> |
+|[UMUrl (POX)](umurl-pox.md) <br/> |Especifica la dirección URL de la mejor instancia del servicio Web de mensajería unificada para un usuario habilitado para correo.  <br/> |
+|[EwsPartnerUrl (POX)](ewspartnerurl-pox.md) <br/> |Especifica la dirección URL de la mejor instancia de punto de conexión para los servicios web Exchange (EWS) para un usuario habilitado para correo.  <br/> |
 |[LoginName (POX)](loginname-pox.md) <br/> |Especifica el nombre de inicio de sesión del usuario.  <br/> |
-|[Domain (POX)](domainrequired-pox.md) <br/> |Indica si el dominio es necesario para la autenticación.  <br/> |
-|[DomainName (POX)](domainname-pox.md) <br/> |Especifica el dominio del usuario.  <br/> |
-|[SPA (POX)](spa-pox.md) <br/> |Indica si se requiere autenticación de contraseña segura.  <br/> |
-|[AuthPackage (POX)](authpackage-pox.md) <br/> |Especifica el esquema de autenticación que se usa al autenticarse en el equipo de Exchange 2007 que tenga instalado el rol de servidor de buzón de correo.  <br/> |
-|[CertPrincipalName (POX)](certprincipalname-pox.md) <br/> |Especifica el nombre de entidad de seguridad de certificado de capa de Sockets seguros (SSL) que es necesario para conectarse a la organización de Microsoft Exchange mediante el uso de SSL.  <br/> |
-|[SSL (POX)](ssl-pox.md) <br/> |Especifica si se necesita el inicio de sesión seguro.  <br/> |
+|[DomainRequired (POX)](domainrequired-pox.md) <br/> |Indica si el dominio es necesario para la autenticación.  <br/> |
+|[Nombredominio (POX)](domainname-pox.md) <br/> |Especifica el dominio del usuario.  <br/> |
+|[SPA (POX)](spa-pox.md) <br/> |Indica si se requiere la autenticación de contraseña segura.  <br/> |
+|[AuthPackage (POX)](authpackage-pox.md) <br/> |Especifica el esquema de autenticación que se usa al autenticar en el equipo con Exchange 2007 que tiene instalado el rol de servidor buzón de correo.  <br/> |
+|[CertPrincipalName (POX)](certprincipalname-pox.md) <br/> |Especifica el nombre principal del certificado de capa de sockets seguros (SSL) que se necesita para conectarse a la organización de Microsoft Exchange mediante SSL.  <br/> |
+|[SSL (POX)](ssl-pox.md) <br/> |Especifica si el inicio de sesión seguro es necesario.  <br/> |
 |[AuthRequired (POX)](authrequired-pox.md) <br/> |Especifica si se requiere autenticación.  <br/> |
-|[UsePOPAuth (POX)](usepopauth-pox.md) <br/> |Indica si la información de autenticación que se proporciona para un tipo de POP3 de cuenta también se usa para el protocolo Simple de transferencia de correo (SMTP).  <br/> |
-|[SMTPLast (POX)](smtplast-pox.md) <br/> |Especifica si el servidor SMTP requiere que el correo electrónico se descargue antes de enviar correo electrónico mediante el servidor SMTP.  <br/> |
-|[NetworkRequirements (POX)](networkrequirements-pox.md) <br/> |Contiene los criterios que se usan para determinar si el equipo cliente está en una red que cumpla los requisitos del proveedor de servicios de Internet para conectarse al servidor.  <br/> |
-|[Libreta de direcciones (POX)](addressbook-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente con el servidor de la libreta de direcciones mediante el protocolo HTTP/MAPI. Este elemento sólo está presente si el atributo de **tipo** en el elemento de **protocolo** está presente y establecido en "mapiHttp". El elemento de la **Libreta de direcciones** es aplicable a los clientes que implementan el protocolo HTTP/MAPI y Exchange Online de destino y versiones de Exchange a partir de 15.00.0847.032.  <br/> |
-|[Almacenamiento de correo (POX)](mailstore-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente con el buzón del usuario mediante el protocolo HTTP/MAPI. Este elemento sólo está presente si el atributo de **tipo** en el elemento de **protocolo** está presente y establecido en "mapiHttp". El elemento de **almacenamiento de correo** es aplicable a los clientes que implementan el protocolo HTTP/MAPI y Exchange Online de destino y versiones de Exchange a partir de 15.00.0847.032.  <br/> |
+|[UsePOPAuth (POX)](usepopauth-pox.md) <br/> |Indica si la información de autenticación que se proporciona para un tipo de cuenta POP3 también se usa para el Protocolo simple de transferencia de correo (SMTP).  <br/> |
+|[SMTPLast (POX)](smtplast-pox.md) <br/> |Especifica si el servidor SMTP requiere que se descargue el correo electrónico antes de enviar correo electrónico mediante el servidor SMTP.  <br/> |
+|[NetworkRequirements (POX)](networkrequirements-pox.md) <br/> |Contiene los criterios que se usan para determinar si el equipo cliente está en una red que cumple con los requisitos del proveedor de servicios Internet para conectarse al servidor.  <br/> |
+|[AddressBook (POX)](addressbook-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al servidor de libreta de direcciones mediante el protocolo MAPI/HTTP. Este elemento solo está presente si el atributo **Type** del elemento **Protocol** está presente y se establece en "mapiHttp". El elemento **AddressBook** es aplicable a los clientes que implementan el protocolo MAPI/http y tienen como objetivo Exchange Online y las versiones de Exchange que comienzan con 15.00.0847.032.  <br/> |
+|[MailStore (POX)](mailstore-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al buzón de correo del usuario mediante el protocolo MAPI/HTTP. Este elemento solo está presente si el atributo **Type** del elemento **Protocol** está presente y se establece en "mapiHttp". El elemento **MailStore** se aplica a los clientes que implementan el protocolo MAPI/http y tienen como objetivo Exchange Online y las versiones de Exchange que comienzan con 15.00.0847.032.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de cuenta para el usuario.  <br/> |
+|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de la cuenta del usuario.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El elemento de **protocolo** está presente en una respuesta que tiene un valor de [Acción (POX)](action-pox.md) es igual a la **configuración**.
+El elemento **Protocol** está presente en una respuesta que tiene un valor de [acción (POX)](action-pox.md) que es igual a **Settings**.
   
 ## <a name="see-also"></a>Vea también
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 02c42828-0d52-4007-bbed-e6571fd31cbe
-description: El elemento OriginalPhoneString especifica el número de teléfono original para un contacto o un rol.
-ms.openlocfilehash: fc372cd30648a939ec4344b3ceb44f2bc0576fe4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento OriginalPhoneString especifica el número de teléfono original de un contacto o un rol.
+ms.openlocfilehash: 172a69ec088440ece80a2807b97171ebf81b97d3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836666"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467042"
 ---
 # <a name="originalphonestring"></a>OriginalPhoneString
 
-El elemento **OriginalPhoneString** especifica el número de teléfono original para un contacto o un rol. 
+El elemento **OriginalPhoneString** especifica el número de teléfono original de un contacto o un rol. 
   
 ```XML
 <OriginalPhoneString></OriginalPhoneString>
@@ -26,23 +26,23 @@ El elemento **OriginalPhoneString** especifica el número de teléfono original 
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Teléfono](phone.md) | [teléfono (PhoneEntityType)](phone-phoneentitytype.md)
+[Teléfono](phone.md)  |  [Teléfono (PhoneEntityType)](phone-phoneentitytype.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **OriginalPhoneString** es el número de teléfono original para un contacto o un rol. 
+El valor de texto del elemento **OriginalPhoneString** es el número de teléfono original de un contacto o un rol. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

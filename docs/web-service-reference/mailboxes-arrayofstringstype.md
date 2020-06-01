@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 20596ebd-ed0f-4ad0-8631-e504220f1016
-description: El elemento de buzones de correo contiene una lista de los buzones afectados por la suspensión.
-ms.openlocfilehash: 8572c97d6de3045c4295ce39358c8acdc5eaea4e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento mailboxes contiene una lista de buzones que se ven afectados por la retención.
+ms.openlocfilehash: 376bd1f007e4b3d27bc44076a7b09993c49bd416
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836279"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468162"
 ---
 # <a name="mailboxes-arrayofstringstype"></a>Buzones de correo (ArrayOfStringsType)
 
-El elemento de **buzones de correo** contiene una lista de los buzones afectados por la suspensión. 
+El elemento **mailboxes** contiene una lista de buzones que se ven afectados por la retención. 
   
 ```XML
 <Mailboxes>
@@ -29,11 +29,11 @@ El elemento de **buzones de correo** contiene una lista de los buzones afectados
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

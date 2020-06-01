@@ -1,5 +1,5 @@
 ---
-title: Vista previa
+title: Preview
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5d33f557-c9d5-4f7f-82c0-d800412f8b7e
-description: El elemento de vista previa especifica los primeros 256 caracteres de un elemento para la presentación.
-ms.openlocfilehash: 38589f8d8efb58e109de59ebf9b5e56556ab58af
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Preview especifica los primeros 256 caracteres de un elemento para su presentación.
+ms.openlocfilehash: 883a9b7ed45add423cbe942d1eabb90c53ac1ddf
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836876"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468113"
 ---
-# <a name="preview"></a>Vista previa
+# <a name="preview"></a>Preview
 
-El elemento de la **vista previa de** especifica los primeros 256 caracteres de un elemento para la presentación. 
+El elemento **Preview** especifica los primeros 256 caracteres de un elemento para su presentación. 
   
 ```XML
 <Preview></Preview>
@@ -26,23 +26,23 @@ El elemento de la **vista previa de** especifica los primeros 256 caracteres de 
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Conversación (ConversationType)](conversation-conversationtype.md) | [SearchPreviewItem](searchpreviewitem.md) | [elemento](item.md) | [contacto](contact.md) | [mensaje](message-ex15websvcsotherref.md) | [DistributionList](distributionlist.md) | [CalendarItem](calendaritem.md)  |  [Objeto postItem](postitem.md)  |  [Tarea](task.md)
+[Conversación (ConversationType)](conversation-conversationtype.md)  |  [SearchPreviewItem](searchpreviewitem.md)  |  [Elemento](item.md)  |  [Contacto](contact.md)  |  [Mensaje de error](message-ex15websvcsotherref.md)  |  [DistributionList](distributionlist.md)  |  [CalendarItem](calendaritem.md)  |  [PostItem](postitem.md)  |  [Tarea](task.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de vista previa es los primeros 256 caracteres del elemento.
+El valor de texto del elemento de vista previa es el primer carácter de 256 del elemento.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

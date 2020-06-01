@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 204da113-539b-403d-8316-f43d7428fc61
-description: El elemento de SearchQuery especifica la consulta de búsqueda de detección.
-ms.openlocfilehash: 082bfb0a1093d171e135fde2c05c67c072ffbf16
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SearchQuery especifica la consulta de búsqueda de detección.
+ms.openlocfilehash: 53f26651c84e4bea8cd06224dcdb39935336bde8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837319"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466895"
 ---
 # <a name="searchquery"></a>SearchQuery
 
-El elemento de **SearchQuery** especifica la consulta de búsqueda de detección. 
+El elemento **SearchQuery** especifica la consulta de búsqueda de detección. 
   
 ```XML
 <SearchQuery></SearchQuery>
@@ -26,15 +26,15 @@ El elemento de **SearchQuery** especifica la consulta de búsqueda de detección
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -1,5 +1,5 @@
 ---
-title: Títulos
+title: Tratamiento
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8f4fa52b-e98e-4678-90cc-299bcbb7bac3
-description: El elemento de títulos especifica una matriz de los títulos de trabajo y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: d0d5e14594178138ea5f099e53bce07f56d8ed0a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento titles especifica una matriz de puestos de trabajo y los identificadores de sus atribuciones de origen para el rol asociado.
+ms.openlocfilehash: 0c61c0eb317209020ce194d2a7fae21709cbc592
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840683"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467882"
 ---
-# <a name="titles"></a>Títulos
+# <a name="titles"></a>Tratamiento
 
-El elemento de **títulos** especifica una matriz de los títulos de trabajo y los identificadores de sus atribuciones de origen para el rol asociado. 
+El elemento **titles** especifica una matriz de puestos de trabajo y los identificadores de sus atribuciones de origen para el rol asociado. 
   
 ```XML
 <Titles>
@@ -28,11 +28,11 @@ El elemento de **títulos** especifica una matriz de los títulos de trabajo y l
  **ArrayOfStringAttributedValuesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

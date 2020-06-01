@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 87382d9b-0c02-49ec-85dc-3f5918df3195
-description: El elemento UmEnabled indica si está habilitada la mensajería unificada para una cuenta.
-ms.openlocfilehash: 8324e02136adc6704bc0badb77131e9671ee569f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UmEnabled indica si la mensajería unificada está habilitada para una cuenta.
+ms.openlocfilehash: 7ba7be69868cb439177702f74ff4a2f12875b7ff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840745"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468358"
 ---
 # <a name="umenabled"></a>UmEnabled
 
-El elemento **UmEnabled** indica si está habilitada la mensajería unificada para una cuenta. 
+El elemento **UmEnabled** indica si la mensajería unificada está habilitada para una cuenta. 
   
 ```XML
 <UmEnabled>true | false</UmEnabled>
@@ -30,25 +30,25 @@ El elemento **UmEnabled** indica si está habilitada la mensajería unificada pa
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Contiene información de configuración de servicio para el servicio de mensajería unificada.  <br/> |
+|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Contiene información de configuración del servicio para el servicio de mensajería unificada.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **UmEnabled** es **true** si está habilitada la mensajería unificada para la cuenta; de lo contrario, el valor es **false**.
+El valor de texto del elemento **UmEnabled** es **true** si la mensajería unificada está habilitada para la cuenta; de lo contrario, el valor es **false**.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -60,14 +60,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

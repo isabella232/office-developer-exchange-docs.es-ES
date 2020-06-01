@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 183f4a06-c056-4770-b00b-ad850b97e03d
-description: El elemento PreviewItemResponseShape contiene el conjunto de propiedades solicitado que se devolverán en una búsqueda de detección.
-ms.openlocfilehash: 7d6abb232225a6807abe988846eccdd8e265fede
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PreviewItemResponseShape contiene el conjunto de propiedades solicitado que se va a devolver en una búsqueda de detección.
+ms.openlocfilehash: 6f00849cdd564a45084b64704e36a6cd09c698f9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836871"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468099"
 ---
 # <a name="previewitemresponseshape"></a>PreviewItemResponseShape
 
-El elemento **PreviewItemResponseShape** contiene el conjunto de propiedades solicitado que se devolverán en una búsqueda de detección. 
+El elemento **PreviewItemResponseShape** contiene el conjunto de propiedades solicitado que se va a devolver en una búsqueda de detección. 
   
 ```XML
 <PreviewItemResponseShape>
@@ -29,15 +29,15 @@ El elemento **PreviewItemResponseShape** contiene el conjunto de propiedades sol
  **PreviewItemResponseShapeType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[BaseShape (PreviewItemBaseShapeType)](baseshape-previewitembaseshapetype.md) | [AdditionalProperties](additionalproperties.md)
+[BaseShape (PreviewItemBaseShapeType)](baseshape-previewitembaseshapetype.md)  |  [AdditionalProperties](additionalproperties.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

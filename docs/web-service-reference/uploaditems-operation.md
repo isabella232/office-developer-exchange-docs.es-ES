@@ -12,25 +12,25 @@ api_type:
 - schema
 ms.assetid: a88cbe99-7968-454d-a545-4f92c330909f
 description: La operación UploadItems carga una secuencia de elementos en un buzón de Exchange.
-ms.openlocfilehash: 6b002d531c7011b18ae1f88adfc2923d5a51e81c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 57e722c7775baa090736875077781cee869c3b01
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840874"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468505"
 ---
 # <a name="uploaditems-operation"></a>Operación UploadItems
 
 La operación **UploadItems** carga una secuencia de elementos en un buzón de Exchange. 
   
 > [!IMPORTANT]
-> La operación **UploadItems** está restringida en MicrosoftExchange Server 2010 Service Pack 1 (SP1) a una carga de importación máximo de 25 MB de datos con codificación base64. La configuración se puede modificar en el archivo web.config. 
+> La operación **UploadItems** está restringida en MicrosoftExchange Server 2010 Service Pack 1 (SP1) a una carga máxima de importación de 25 MB de datos codificados con Base64. La configuración se puede modificar en el archivo Web. config. 
   
-## <a name="uploaditems-request-example"></a>Ejemplo de solicitud de UploadItems
+## <a name="uploaditems-request-example"></a>Ejemplo de solicitud UploadItems
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud de **UploadItems** muestra cómo cargar dos elementos en un buzón de correo. El primer elemento es un nuevo elemento. El segundo elemento es una versión actualizada de un elemento existente en el buzón de correo. 
+El siguiente ejemplo de una solicitud **UploadItems** muestra cómo cargar dos elementos en un buzón. El primer elemento es un nuevo elemento. El segundo elemento es una versión actualizada de un elemento existente en el buzón. 
   
 ### <a name="code"></a>Código
 
@@ -39,8 +39,8 @@ El siguiente ejemplo de una solicitud de **UploadItems** muestra cómo cargar do
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010_SP1" />
   </soap:Header>
@@ -80,11 +80,11 @@ El siguiente ejemplo de una solicitud de **UploadItems** muestra cómo cargar do
 
 ### <a name="comments"></a>Comentarios
 
-Identificadores y los datos de elemento se han abreviado para conservar la legibilidad.
+Los identificadores y los datos de elemento se acortan para preservar la legibilidad.
   
 ### <a name="request-elements"></a>Elementos de solicitud
 
-En la solicitud se usan los siguientes elementos:
+Los siguientes elementos se usan en la solicitud:
   
 - [RequestServerVersion](requestserverversion.md)
     
@@ -92,19 +92,19 @@ En la solicitud se usan los siguientes elementos:
     
 - [Elementos (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md)
     
-- [Elemento (UploadItemType)](item-uploaditemtype.md)
+- [Item (UploadItemType)](item-uploaditemtype.md)
     
-- [Id](parentfolderid.md)
+- [ParentFolderId](parentfolderid.md)
     
 - [Datos (base64Binary)](data-base64binary.md)
     
 - [ItemId](itemid.md)
     
-## <a name="successful-uploaditems-response-example"></a>Ejemplo de respuesta correcta de UploadItems
+## <a name="successful-uploaditems-response-example"></a>Ejemplo de respuesta UploadItems correcta
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **UploadItems** . 
+En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **UploadItems** . 
   
 ### <a name="code"></a>Código
 
@@ -117,15 +117,15 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **Up
                          MajorBuildNumber="164"
                          MinorBuildNumber="0"
                          Version="Exchange2010_SP1"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:UploadItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                           xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:UploadItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                           xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:UploadItemsResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -143,7 +143,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **Up
 
 ### <a name="comments"></a>Comentarios
 
-Identificadores de elemento se han abreviado para conservar la legibilidad.
+Los identificadores de elemento se han abreviado para preservar la legibilidad.
   
 ### <a name="response-elements"></a>Elementos de respuesta
 
@@ -161,11 +161,11 @@ En la respuesta se usan los siguientes elementos:
     
 - [ItemId](itemid.md)
     
-## <a name="uploaditems-error-response-example"></a>Ejemplo de respuesta de UploadItems Error
+## <a name="uploaditems-error-response-example"></a>Ejemplo de respuesta de error UploadItems
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta a la solicitud de **UploadItems** que contiene un error debido a un intento de actualizar un elemento que no se encuentra en el buzón de correo. 
+En el ejemplo siguiente se muestra una respuesta a la solicitud **UploadItems** que contiene un error provocado por un intento de actualizar un elemento que no se encuentra en el buzón de correo. 
   
 ### <a name="code"></a>Código
 
@@ -178,15 +178,15 @@ En el ejemplo siguiente se muestra una respuesta a la solicitud de **UploadItems
                          MajorBuildNumber="164" 
                          MinorBuildNumber="0" 
                          Version="Exchange2010_SP1" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:UploadItemsResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                           xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:UploadItemsResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                           xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:UploadItemsResponseMessage ResponseClass="Error">
           <m:MessageText>The specified object was not found in the store.</m:MessageText>
@@ -201,7 +201,7 @@ En el ejemplo siguiente se muestra una respuesta a la solicitud de **UploadItems
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-En la respuesta de error, se usan los siguientes elementos:
+Los siguientes elementos se usan en la respuesta de error:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -226,5 +226,5 @@ En la respuesta de error, se usan los siguientes elementos:
 
 [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
   
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

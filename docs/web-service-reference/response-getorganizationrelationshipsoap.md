@@ -1,22 +1,22 @@
 ---
-title: Respuesta (GetOrganizationRelationship) (SOAP)
+title: Response (GetOrganizationRelationship) (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e6bbe800-3cbc-48b2-87b3-2043f575e88b
-description: El elemento de respuesta contiene la información de respuesta GetOrganizationRelationshipSettings operación (SOAP). El elemento de respuesta es sólo para uso interno. Este elemento no se usa en los clientes.
-ms.openlocfilehash: 97bef9ab9f0b860e62646703c35d539b7922a65a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Response contiene la información de respuesta de la operación GetOrganizationRelationshipSettings (SOAP). El elemento Response es solo para uso interno. Los clientes no usan este elemento.
+ms.openlocfilehash: 55f8cd549f40b780b2e7438634a851a2c3854f40
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837174"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467945"
 ---
-# <a name="response-getorganizationrelationship-soap"></a>Respuesta (GetOrganizationRelationship) (SOAP)
+# <a name="response-getorganizationrelationship-soap"></a>Response (GetOrganizationRelationship) (SOAP)
 
-El elemento de **respuesta** contiene la información de respuesta de la [operación de GetOrganizationRelationshipSettings (SOAP)](getorganizationrelationshipsettings-operation-soap.md) . El elemento de **respuesta** es sólo para uso interno. Este elemento no se usa en los clientes. 
+El elemento **Response** contiene la información de respuesta de la [operación GetOrganizationRelationshipSettings (SOAP)](getorganizationrelationshipsettings-operation-soap.md) . El elemento **Response** es solo para uso interno. Los clientes no usan este elemento. 
   
 ```XML
 <GetOrganizationRelationshipSettingsResponse>
@@ -29,35 +29,35 @@ El elemento de **respuesta** contiene la información de respuesta de la [operac
  **GetOrganizationRelationshipSettingsResponse**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |Representa un código de error devuelto por el servicio Detección automática.  <br/> |
-|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |Representa un mensaje en el que está asociado con un código de error devuelto por el servicio Detección automática.  <br/> |
+|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |Representa un código de error devuelto por el servicio de detección automática.  <br/> |
+|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |Representa un mensaje que está asociado con un código de error devuelto por el servicio de detección automática.  <br/> |
 |[OrganizationRelationshipSettingsCollection (SOAP)](organizationrelationshipsettingscollection-soap.md) <br/> |Representa una lista de relaciones de organización que coinciden con la consulta.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también

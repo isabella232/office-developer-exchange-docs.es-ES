@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d4af8eee-7001-4a8e-b9bd-d14882f2406b
-description: El elemento IsWritable especifica si se puede escribir en el contacto subyacente o el destinatario de Active Directory.
-ms.openlocfilehash: 03f258d01ecfc12dfa4e09ac88f4a75340d2acf3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento IsWritable especifica si se puede escribir en el contacto subyacente o en el destinatario de Active Directory.
+ms.openlocfilehash: 96075adc1772027456f8829eee43bdc734644c09
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836158"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467574"
 ---
 # <a name="iswritable"></a>IsWritable
 
-El elemento **IsWritable** especifica si se puede escribir en el contacto subyacente o el destinatario de Active Directory. 
+El elemento **IsWritable** especifica si se puede escribir en el contacto subyacente o en el destinatario de Active Directory. 
   
 ```XML
 <IsWritable> true | false </IsWritable>
@@ -26,15 +26,15 @@ El elemento **IsWritable** especifica si se puede escribir en el contacto subyac
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **IsWritable** indica que el contacto o el objeto de Active Directory está disponible para el acceso de escritura. Un valor de **false** indica que el contacto o el objeto de Active Directory no está disponible para el acceso de escritura. 
+Un valor de texto de **true** para el elemento **IsWritable** indica que el objeto de contacto o de Active Directory está disponible para el acceso de escritura. Un valor de **false** indica que el contacto o el objeto de Active Directory no está disponible para el acceso de escritura. 
   
 ## <a name="remarks"></a>Comentarios
 

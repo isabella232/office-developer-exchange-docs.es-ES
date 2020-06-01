@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0480b7f5-9312-4efe-bb37-9fffcd7e7a9d
 description: El elemento LocationUri contiene una cadena que especifica un identificador uniforme de recursos (URI) de la dirección postal asociada.
-ms.openlocfilehash: 19fe76e98a49d5badab0bb3f7604dccb72b9d668
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 1cf857e29b67fdacdb73fc5bd921973d7dbd481e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836298"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467098"
 ---
 # <a name="locationuri"></a>LocationUri
 
@@ -26,23 +26,23 @@ El elemento **LocationUri** contiene una cadena que especifica un identificador 
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Valor (PersonaPostalAddressType)](value-personapostaladdresstype.md) | [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
+[Valor (PersonaPostalAddressType)](value-personapostaladdresstype.md)  |  [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **LocationUri** es una cadena que especifica un identificador URI para obtener información acerca de una dirección postal. 
+El valor de texto del elemento **LocationUri** es una cadena que especifica un identificador URI a información sobre una dirección postal. 
   
 ## <a name="remarks"></a>Comentarios
 

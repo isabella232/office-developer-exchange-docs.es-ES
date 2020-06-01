@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e8bd1ace-28ba-493f-8d9c-cbaaec166a6f
-description: No se usa el elemento RawMasterTableXml.
-ms.openlocfilehash: 1a69ab315f14226fb495785e5c4ce1d9104fccd5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RawMasterTableXml no se usa.
+ms.openlocfilehash: 83f763944f23195b01f473ed8363b96d13949d1e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836941"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466979"
 ---
 # <a name="rawmastertablexml"></a>RawMasterTableXml
 
-No se usa el elemento **RawMasterTableXml** . 
+El elemento **RawMasterTableXml** no se usa. 
   
 ```XML
 <RawMastTableXml></RawMastTableXml>
@@ -26,15 +26,15 @@ No se usa el elemento **RawMasterTableXml** .
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -50,9 +50,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

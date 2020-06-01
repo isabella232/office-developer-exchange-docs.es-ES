@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 98c58c53-9acc-4e89-9fcf-03f1b05abee1
 description: El elemento Name representa el nombre de un usuario de buzón de correo.
-ms.openlocfilehash: b140fd46608a04f9aaba17f917cc4171c056dcf2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: db6eb547b5c848dc31bbaa377692989b16771673
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836504"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44466930"
 ---
 # <a name="name-emailaddresstype"></a>Nombre (EmailAddressType)
 
@@ -31,30 +31,30 @@ El elemento **Name** representa el nombre de un usuario de buzón de correo.
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Buzón de correo](mailbox.md) <br/> |Identifica una dirección de correo electrónico completa resuelta.  <br/> |
-|[RoomList](roomlist.md) <br/> |Identifica una lista de las salas de reuniones.  <br/> |
+|[Buzón](mailbox.md) <br/> |Identifica una dirección de correo electrónico completamente resuelta.  <br/> |
+|[RoomList](roomlist.md) <br/> |Identifica una lista de salas de reuniones.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Si se usa este elemento, es necesario un valor de texto que representa una cadena.
+Si se usa este elemento, se necesita un valor de texto que represente una cadena.
   
 ## <a name="remarks"></a>Comentarios
 
-Este elemento es opcional. El elemento **Name** existe en los tipos de **AttachmentType**, **EmailAddressType**y **EmailAddress** . El elemento **nombre** en el tipo de **EmailAddress** se describe en el tema de elemento [nombre (EmailAddress)](name-emailaddress.md) . 
+Este elemento es opcional. El elemento **Name** existe en los tipos **AttachmentType**, **EmailAddressType**y **EmailAddress** . El elemento **Name** en el tipo **EmailAddress** se describe en el tema del elemento [Name (EmailAddress)](name-emailaddress.md) . 
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -62,12 +62,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

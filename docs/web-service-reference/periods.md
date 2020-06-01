@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7920d81d-abba-4232-8bfe-49267b6c9a36
-description: El elemento de períodos representa una matriz de los períodos que definen el desplazamiento de tiempo en diferentes fases de la zona horaria.
-ms.openlocfilehash: f2f9cf7c724b453d2b1975fcf72c55bc02caa54b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento periods representa una matriz de puntos que definen el desplazamiento de tiempo en diferentes etapas de la zona horaria.
+ms.openlocfilehash: 773457a6e4c0237eaeaf23109a7022427cc7dd0d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836729"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467777"
 ---
 # <a name="periods"></a>Períodos
 
-El elemento de **períodos** representa una matriz de los períodos que definen el desplazamiento de tiempo en diferentes fases de la zona horaria. 
+El elemento **periods** representa una matriz de puntos que definen el desplazamiento de tiempo en diferentes etapas de la zona horaria. 
   
 ```xml
 <Periods>
@@ -32,42 +32,42 @@ El elemento de **períodos** representa una matriz de los períodos que definen 
  **NonEmptyArrayOfPeriodsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Period](period.md) <br/> |Define el nombre, el desplazamiento de tiempo y el identificador único para una región específica de la zona horaria.  <br/> |
+|[Period](period.md) <br/> |Define el nombre, el desplazamiento de tiempo y el identificador único de una fase específica de la zona horaria.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[StartTimeZone](starttimezone.md) <br/> |Define la zona horaria de la hora de inicio de un [CalendarItem](calendaritem.md) o [MeetingRequest](meetingrequest.md).  <br/> |
-|[EndTimeZone](endtimezone.md) <br/> |Define la zona horaria de la hora de finalización de un [CalendarItem](calendaritem.md) o [MeetingRequest](meetingrequest.md).  <br/> |
-|[Definición de zona horaria](timezonedefinition.md) <br/> |Define una zona horaria.  <br/> |
+|[EndTimeZone](endtimezone.md) <br/> |Define la zona horaria de la hora de finalización de [CalendarItem](calendaritem.md) o [MeetingRequest](meetingrequest.md).  <br/> |
+|[TimeZoneDefinition](timezonedefinition.md) <br/> |Define una zona horaria.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

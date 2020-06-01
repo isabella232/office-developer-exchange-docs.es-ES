@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0370b1c0-b7e5-46e0-ac11-3fe801709fc8
-description: El elemento de ámbito (ClientAccessTokenRequestType) especifica un ámbito de símbolo (token).
-ms.openlocfilehash: 0439b494db7e4e1c097039a81394af9441613555
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Scope (ClientAccessTokenRequestType) especifica un ámbito de token.
+ms.openlocfilehash: 99700b032e6971a403f2bc87a6c73a01e53ab2c7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837274"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466951"
 ---
 # <a name="scope-clientaccesstokenrequesttype"></a>Ámbito (ClientAccessTokenRequestType)
 
-El elemento de **ámbito (ClientAccessTokenRequestType)** especifica un ámbito de símbolo (token). 
+El elemento **Scope (ClientAccessTokenRequestType)** especifica un ámbito de token. 
   
 ```XML
 <Scope/>
@@ -26,15 +26,15 @@ El elemento de **ámbito (ClientAccessTokenRequestType)** especifica un ámbito 
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **ámbito (ClientAccessTokenRequestType)** es un ámbito de símbolo (token). 
+El valor de texto del elemento **Scope (ClientAccessTokenRequestType)** es un ámbito de token. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
@@ -66,5 +66,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [TokenRequest](tokenrequest.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

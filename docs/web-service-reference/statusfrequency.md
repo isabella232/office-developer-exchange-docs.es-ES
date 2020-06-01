@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 917474e2-a426-4166-b825-53783a41dad4
-description: El elemento StatusFrequency representa el valor de tiempo de espera máximo, en minutos, en el que se ha tratado de reintentos por el servidor.
-ms.openlocfilehash: 402f8978c0ec6b377dfa020f23595c8954509a07
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento StatusFrequency representa el valor de tiempo de espera máximo, en minutos, en el que el servidor intenta realizar reintentos.
+ms.openlocfilehash: db14ecfd54584188b3da16bb369db6c8089c70f4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837589"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468246"
 ---
 # <a name="statusfrequency"></a>StatusFrequency
 
-El elemento **StatusFrequency** representa el valor de tiempo de espera máximo, en minutos, en el que se ha tratado de reintentos por el servidor. 
+El elemento **StatusFrequency** representa el valor de tiempo de espera máximo, en minutos, en el que el servidor intenta realizar reintentos. 
   
 [Suscribirse](subscribe.md)
   
@@ -36,42 +36,42 @@ El elemento **StatusFrequency** representa el valor de tiempo de espera máximo,
  **SubscriptionStatusFrequencyType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |Representa una suscripción a una suscripción de notificación de evento basada en inserción.  <br/> |
+|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |Representa una suscripción a una suscripción de notificación de eventos basada en inserción.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Si se usa este elemento, es necesario un valor de texto que representa un número entero. Los valores posibles para este elemento son 1 y 1440, ambos inclusive. Este elemento es opcional. El valor predeterminado es 30 minutos.
+Es necesario un valor de texto que representa un entero si se usa este elemento. Los valores posibles para este elemento son de 1 a 1440, ambos incluidos. Este elemento es opcional. El valor predeterminado es de 30 minutos.
   
 ## <a name="remarks"></a>Comentarios
 
-El valor de **StatusFrequency** se usa en el servidor para volver a intentar una notificación de inserción cuando no recibe una respuesta a una notificación de inserción o ping de estado desde el cliente. Si el servidor no recibe una respuesta, reintentos enviar la notificación de varias veces antes de que ésta detiene el envío de la notificación. En EWS, el intervalo de reintento de forma predeterminada es de 30 segundos y reintentos subsiguientes siempre son doble a la hora de último intervalo de reintento. Número de reintentos no es exacto como que se pueden retrasar debido a otras cargas que hay en el servidor. En la tabla siguiente se muestra cómo se producen los intervalos de reintento en los 30 minutos máximo permitidos por el valor de **StatusFrequency** predeterminado (suponiendo que el servidor no encuentra la los retrasos). 
+El servidor usa el valor **StatusFrequency** para volver a intentar una notificación de inserción cuando no recibe una respuesta a una notificación de inserción o ping de estado del cliente. Si el servidor no recibe una respuesta, vuelve a intentar enviar la notificación varias veces antes de dejar de enviar la notificación. En EWS, el intervalo de reintento predeterminado es de 30 segundos y los reintentos siguientes siempre se duplican en el momento del último intervalo de reintento. Las horas de reintento no son exactas, ya que se pueden retrasar debido a otras cargas en el servidor. En la tabla siguiente se muestra cómo se producen los intervalos de reintento en los 30 minutos asignados por el valor de **StatusFrequency** predeterminado (si el servidor no ha encontrado ningún retraso). 
   
 |**Reintentar**|**Segundos**|**Time**|
 |:-----|:-----|:-----|
-|0  <br/> |0  <br/> |Sincronización inicial  <br/> |
-|1  <br/> |30  <br/> |00:30  <br/> |
-|2  <br/> |60  <br/> |01:00  <br/> |
+|comprendi  <br/> |comprendi  <br/> |Sincronización inicial  <br/> |
+|1   <br/> |semestre  <br/> |00:30  <br/> |
+|segundo  <br/> |60  <br/> |01:00  <br/> |
 |3  <br/> |120  <br/> |02:00  <br/> |
-|4  <br/> |240  <br/> |04:00  <br/> |
-|5  <br/> |480  <br/> |08:00  <br/> |
-|6  <br/> |960  <br/> |16:00  <br/> |
-|7  <br/> |1920  <br/> |32:00 - **StatusFrequency** valor de predeterminado de 30 superado, reintento no enviado  <br/> |
+|4   <br/> |240  <br/> |04:00  <br/> |
+|5   <br/> |480  <br/> |08:00  <br/> |
+|6   <br/> |960  <br/> |16:00  <br/> |
+|7   <br/> |1920  <br/> |32:00- **StatusFrequency** valor predeterminado de 30 superado, reintentar no enviado  <br/> |
    
-Si el cliente no recibe los mensajes de notificación desde el servidor durante un período de tiempo que supere los dos veces el tiempo especificado por **StatusFrequency**, el cliente debe realizar una acción como volver a crear la suscripción. 
+Si el cliente no recibe mensajes de notificación del servidor durante un período de tiempo superior al doble del tiempo especificado por **StatusFrequency**, el cliente debe realizar una acción, como volver a crear la suscripción. 
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -79,20 +79,20 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Operación de suscripción](subscribe-operation.md)
+[Operación subscribe](subscribe-operation.md)
   
 [Operación GetEvents](getevents-operation.md)
   
-[Cancelar la operación de suscripción](unsubscribe-operation.md)
+[Operación unsubscribe](unsubscribe-operation.md)
   
-[Marca de agua](watermark.md)
+[Watermark](watermark.md)
 

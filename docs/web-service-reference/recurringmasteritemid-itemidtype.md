@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 48d831cf-10d8-480b-86d2-f9c0b14b8167
-description: El elemento RecurringMasterItemId (ItemIdType) identifica un elemento de patrón de periodicidad mediante la identificación de los identificadores de uno de sus elementos de repetición relacionados.
-ms.openlocfilehash: 89089067963e99ac1a6cae6ea6e1e8350d148e82
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RecurringMasterItemId (ItemIdType) identifica un elemento principal de periodicidad mediante la identificación de los identificadores de uno de los elementos de repeticiones relacionados.
+ms.openlocfilehash: c725998ad3a728ef1f47ff6491592b461753b895
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837010"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468442"
 ---
 # <a name="recurringmasteritemid-itemidtype"></a>RecurringMasterItemId (ItemIdType)
 
-El elemento **RecurringMasterItemId (ItemIdType)** identifica un elemento de patrón de periodicidad mediante la identificación de los identificadores de uno de sus elementos de repetición relacionados. 
+El elemento **RecurringMasterItemId (ItemIdType)** identifica un elemento principal de periodicidad mediante la identificación de los identificadores de uno de los elementos de repeticiones relacionados. 
   
 ```XML
 <RecurringMasterItemId Id="" ChangeKey=""/>
@@ -26,20 +26,20 @@ El elemento **RecurringMasterItemId (ItemIdType)** identifica un elemento de pat
  **ItemIdType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
 ****
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|Id  <br/> |Identifica una sola aparición de un elemento maestro periódico. Este atributo es necesario.  <br/> |
-|ChangeKey  <br/> |Identifica una versión específica de una sola aparición de un elemento maestro periódico. Además, el elemento maestro periódico también se identifica porque se y la aparición único va a contener la misma clave de cambio. Este atributo es opcional.  <br/> |
+|Id  <br/> |Identifica una única ocurrencia de un elemento maestro periódico. Este atributo es obligatorio.  <br/> |
+|ChangeKey  <br/> |Identifica una versión específica de una ocurrencia única de un elemento maestro periódico. Además, el elemento maestro periódico también se identifica porque éste y la única instancia contendrán la misma clave de cambio. Este atributo es opcional.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
@@ -67,5 +67,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Aviso](reminder.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

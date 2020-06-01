@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d22f68cf-b18b-45d0-a9ff-414b7db0e67e
-description: El elemento ReplyAllAllowed especifica si una respuesta todos se permite para derechos de datos administrados.
-ms.openlocfilehash: cf814e6f27a734afc51b633bf832126a57d7ca5f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ReplyAllAllowed especifica si se permite responder a todos para los datos con derechos administrados.
+ms.openlocfilehash: 56dfe7670ed87581999bfe0a340bcc72c99d04ea
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837105"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467917"
 ---
 # <a name="replyallallowed"></a>ReplyAllAllowed
 
-El elemento **ReplyAllAllowed** especifica si una respuesta todos se permite para derechos de datos administrados. 
+El elemento **ReplyAllAllowed** especifica si se permite responder a todos para los datos con derechos administrados. 
   
 ```XML
 <ReplyAllAllowed> true | false </ReplyAllAllowed>
@@ -26,15 +26,15 @@ El elemento **ReplyAllAllowed** especifica si una respuesta todos se permite par
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **ReplyAllAllowed** indica que una respuesta todos está permitido para los derechos de los datos administrados. Un valor de **false** indica que no se permite un responder a todos. 
+Un valor de texto de **true** para el elemento **ReplyAllAllowed** indica que se permite responder a todos para los datos administrados con derechos. Un valor de **false** indica que no se permite responder a todos. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

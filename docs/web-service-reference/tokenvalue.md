@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ad333be3-1bd9-4e4a-a17d-9fcf7131cf76
 description: El elemento TokenValue especifica el token de acceso de cliente codificado.
-ms.openlocfilehash: 9815a0c4f96cf0370c0fd190b9d9e9e90fb77e07
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 7aa544cb8b63face7cd41054eebb55b0ed84b35d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840694"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467861"
 ---
 # <a name="tokenvalue"></a>TokenValue
 
@@ -26,19 +26,19 @@ El elemento **TokenValue** especifica el token de acceso de cliente codificado.
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Símbolo (token) (ClientAccessTokenType)](token-clientaccesstokentype.md)
+[Token (ClientAccessTokenType)](token-clientaccesstokentype.md)
   
 ## <a name="text-value"></a>Valor de texto
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

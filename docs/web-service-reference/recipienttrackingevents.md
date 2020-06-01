@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: c4f729aa-674e-43b2-97f2-bf49740b0a34
 description: El elemento RecipientTrackingEvents representa una colección de uno o más eventos para un mensaje.
-ms.openlocfilehash: 5fa5df422eff533891d021b77d5443b314d36244
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: c0b25a0e22d13bc1f26768b9b7089d96eb2e8cfc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836993"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468484"
 ---
 # <a name="recipienttrackingevents"></a>RecipientTrackingEvents
 
@@ -32,23 +32,23 @@ El elemento **RecipientTrackingEvents** representa una colección de uno o más 
  **ArrayOfRecipientTrackingEventType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[RecipientTrackingEvent](recipienttrackingevent.md) <br/> |Contiene los detalles de un evento específico en el informe de seguimiento.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[MessageTrackingReport](messagetrackingreport.md) <br/> |Contiene un solo mensaje que se devuelve en una [operación de GetMessageTrackingReport](getmessagetrackingreport-operation.md).  <br/> |
+|[MessageTrackingReport](messagetrackingreport.md) <br/> |Contiene un solo mensaje que se devuelve en una [operación GetMessageTrackingReport](getmessagetrackingreport-operation.md).  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -58,10 +58,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -70,5 +70,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación GetMessageTrackingReport](getmessagetrackingreport-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

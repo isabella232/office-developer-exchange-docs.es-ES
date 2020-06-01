@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 26f38f1c-96a3-440e-805c-1437886d11c5
-description: El elemento transiciones representa una matriz de las transiciones de zona horaria.
-ms.openlocfilehash: df7cacdef71c3fdfaa3ecadb486843ea30e6109d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Transitions representa una matriz de transiciones de zona horaria.
+ms.openlocfilehash: d48fb8872b2f7e052f733c32e5dd1c9b4d04d898
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840723"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467441"
 ---
 # <a name="transitions"></a>Transiciones
 
-El elemento **transiciones** representa una matriz de las transiciones de zona horaria. 
+El elemento **Transitions** representa una matriz de transiciones de zona horaria. 
   
 ```xml
 <Transitions Id="">
@@ -35,30 +35,30 @@ El elemento **transiciones** representa una matriz de las transiciones de zona h
  **ArrayOfTransitionsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
 |Id  <br/> |Representa el identificador único de la definición de zona horaria.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AbsoluteDateTransition](absolutedatetransition.md) <br/> |Representa una transición de la zona horaria que se produce en una fecha específica y a una hora específica.  <br/> |
-|[RecurringDayTransition](recurringdaytransition.md) <br/> |Representa una transición de la zona horaria que se produce en el mismo día cada año.  <br/> |
-|[RecurringDateTransition](recurringdatetransition.md) <br/> |Representa una transición de la zona horaria que se produce en un día del año especificado.  <br/> |
-|[Transición](transition.md) <br/> |Representa una transición de la zona horaria.  <br/> |
+|[AbsoluteDateTransition](absolutedatetransition.md) <br/> |Representa una transición de zona horaria que se produce en una fecha específica y a una hora específica.  <br/> |
+|[RecurringDayTransition](recurringdaytransition.md) <br/> |Representa una transición de zona horaria que se produce el mismo día cada año.  <br/> |
+|[RecurringDateTransition](recurringdatetransition.md) <br/> |Representa una transición de zona horaria que se produce en un día del año especificado.  <br/> |
+|[Transición](transition.md) <br/> |Representa una transición de zona horaria.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[StartTimeZone](starttimezone.md) <br/> |Define la zona horaria de la hora de inicio de un [CalendarItem](calendaritem.md) o [MeetingRequest](meetingrequest.md).  <br/> |
-|[EndTimeZone](endtimezone.md) <br/> |Define la zona horaria de la hora de finalización de un [CalendarItem](calendaritem.md) o [MeetingRequest](meetingrequest.md).  <br/> |
-|[Definición de zona horaria](timezonedefinition.md) <br/> |Define una zona horaria.  <br/> |
+|[EndTimeZone](endtimezone.md) <br/> |Define la zona horaria de la hora de finalización de [CalendarItem](calendaritem.md) o [MeetingRequest](meetingrequest.md).  <br/> |
+|[TimeZoneDefinition](timezonedefinition.md) <br/> |Define una zona horaria.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -72,14 +72,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7d3c6314-2a5c-4fc3-b5f9-ae6d4946aac3
-description: El elemento TaskSuggestions especifica una matriz de sugerencias de tarea extraídas de un elemento.
-ms.openlocfilehash: 9ddddb088450e234c0c206db58db3db1534a29d0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento TaskSuggestions especifica una matriz de sugerencias de tareas extraídas de un elemento.
+ms.openlocfilehash: 024f8daff6dd61d6563fff4849ed09602c95efb5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840628"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468120"
 ---
 # <a name="tasksuggestions"></a>TaskSuggestions
 
-El elemento **TaskSuggestions** especifica una matriz de sugerencias de tarea extraídas de un elemento. 
+El elemento **TaskSuggestions** especifica una matriz de sugerencias de tareas extraídas de un elemento. 
   
 ```XML
 <TaskSuggestions>
@@ -29,11 +29,11 @@ El elemento **TaskSuggestions** especifica una matriz de sugerencias de tarea ex
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

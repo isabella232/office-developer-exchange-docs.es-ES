@@ -9,12 +9,12 @@ api_type:
 - schema
 ms.assetid: 3e403e81-290b-42f6-9e79-15135fc58c4b
 description: El elemento AutodiscoverRequest representa el elemento base para todas las solicitudes de detección automática.
-ms.openlocfilehash: bb8c252b84578443f0d6da0acf02f57ecd7caf6e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: ed7d4095dafaba6a7800927f2d3ece412b57ae36
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763596"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466853"
 ---
 # <a name="autodiscoverrequest-soap"></a>AutodiscoverRequest (SOAP)
 
@@ -27,19 +27,19 @@ El elemento **AutodiscoverRequest** representa el elemento base para todas las s
  **AutodiscoverRequest**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
@@ -47,15 +47,15 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-Nunca se usa el elemento global **AutodiscoverRequest** . 
+El elemento global **AutodiscoverRequest** no se usa nunca. 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |True  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Verdadero  <br/> |
    
 

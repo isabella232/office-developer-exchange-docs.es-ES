@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3dc4ab23-26b0-42b3-8930-f1c7eefecdeb
-description: El elemento SortBy contiene una propiedad de elemento que se utiliza para ordenar los resultados de búsqueda.
-ms.openlocfilehash: 357958e393ba9331d23ee48661f21e2afe00cf01
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SortBy contiene una propiedad de elemento usada para ordenar los resultados de búsqueda.
+ms.openlocfilehash: cf2b1e633bc66e526028078833afade363e4c5e0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837518"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468400"
 ---
 # <a name="sortby"></a>SortBy
 
-El elemento **SortBy** contiene una propiedad de elemento que se utiliza para ordenar los resultados de búsqueda. 
+El elemento **sortBy** contiene una propiedad de elemento usada para ordenar los resultados de búsqueda. 
   
 ```XML
 <SortBy Order="">
@@ -29,17 +29,17 @@ El elemento **SortBy** contiene una propiedad de elemento que se utiliza para or
  **FieldOrderType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|Order  <br/> |El valor de texto del atributo **orden** es el criterio de ordenación. Un valor de texto de **ascendente** indica que los resultados están en orden ascendente. Un valor de texto de **descendente** indica que los resultados están en orden descendente.  <br/> |
+|Order  <br/> |El valor de texto del atributo **Order** es el criterio de ordenación. Un valor de texto **ascendente** indica que los resultados están en orden ascendente. Un valor de texto **descendente** indica que los resultados están en orden descendente.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-[FieldURI](fielduri.md) | [IndexedFieldURI](indexedfielduri.md)
+[FieldURI](fielduri.md)  |  [IndexedFieldURI](indexedfielduri.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

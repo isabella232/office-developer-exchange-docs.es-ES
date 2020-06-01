@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 3b0f5841-0c8f-4a9d-be75-cdf6cc2c35ab
-description: El elemento GetFederationInformationRequestMessage prepara una llamada al servidor para solicitar los datos de configuración para el servicio de token de seguridad (STS).
-ms.openlocfilehash: f684c41e495d7878058615aa6257e1af5d83f396
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetFederationInformationRequestMessage prepara una llamada al servidor para solicitar datos de configuración para el servicio de token de seguridad (STS).
+ms.openlocfilehash: cc1e4d67f5bba6e571aeb94d3f27b67baac4c224
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764853"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467028"
 ---
 # <a name="getfederationinformationrequestmessage-soap"></a>GetFederationInformationRequestMessage (SOAP)
 
-El elemento **GetFederationInformationRequestMessage** prepara una llamada al servidor para solicitar los datos de configuración para el servicio de token de seguridad (STS). 
+El elemento **GetFederationInformationRequestMessage** prepara una llamada al servidor para solicitar datos de configuración para el servicio de token de seguridad (STS). 
   
 ```XML
 <GetFederationInformationRequestMessage>
@@ -29,33 +29,33 @@ El elemento **GetFederationInformationRequestMessage** prepara una llamada al se
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Solicitud (SOAP) (GetFederationInformation)](request-getfederationinformationsoap.md) <br/> |Representa una solicitud de **GetFederationInformation** .  <br/> |
+|[Request (GetFederationInformation) (SOAP)](request-getfederationinformationsoap.md) <br/> |Representa una solicitud de **GetFederationInformation** .  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: bbe97777-f728-46c5-b2aa-565112c24f3a
-description: El elemento WorkingHours representa la configuración de zona horaria y horario laboral para el usuario del buzón solicitado.
-ms.openlocfilehash: c53779422b87adebed370a1ed88e4e91c7a2dcaf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento WorkingHours representa la configuración de la zona horaria y el horario laboral del usuario del buzón solicitado.
+ms.openlocfilehash: 9cb21e72f7024b96b4b5f252a8a3b85bb704e67c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19841008"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468344"
 ---
 # <a name="workinghours"></a>WorkingHours
 
-El elemento **WorkingHours** representa la configuración de zona horaria y horario laboral para el usuario del buzón solicitado. 
+El elemento **WorkingHours** representa la configuración de la zona horaria y el horario laboral del usuario del buzón solicitado. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -43,39 +43,39 @@ El elemento **WorkingHours** representa la configuración de zona horaria y hora
  **WorkingHours**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[TimeZone (disponibilidad)](timezone-availability.md) <br/> |Contiene elementos que identifican la información de zona horaria. Este elemento también contiene información sobre la transición entre la hora estándar y el horario de verano. Este elemento es necesario si se usa el elemento **WorkingHours** .  <br/> |
-|[WorkingPeriodArray](workingperiodarray.md) <br/> |Contiene información del período para el usuario del buzón de trabajar. Este elemento es necesario si se usa el elemento **WorkingHours** .  <br/> |
+|[Zona horaria (disponibilidad)](timezone-availability.md) <br/> |Contiene los elementos que identifican la información de la zona horaria. Este elemento también contiene información sobre la transición entre el horario estándar y el horario de verano. Este elemento es obligatorio si se usa el elemento **WorkingHours** .  <br/> |
+|[WorkingPeriodArray](workingperiodarray.md) <br/> |Contiene la información del período de trabajo del usuario del buzón. Este elemento es obligatorio si se usa el elemento **WorkingHours** .  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FreeBusyView](freebusyview.md) <br/> |Contiene la información de disponibilidad para un usuario específico.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/` <br/> |
+|[FreeBusyView](freebusyview.md) <br/> |Contiene la información de disponibilidad de un usuario específico.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Todos los elementos secundarios se enumeran en la secuencia en la que se producen. El nivel de detalle proporcionado por este elemento depende de los permisos concedidos para el solicitante.
+Todos los elementos secundarios se enumeran en la secuencia en que se producen. El nivel de detalle proporcionado por este elemento depende de los permisos concedidos al solicitante.
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -86,5 +86,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

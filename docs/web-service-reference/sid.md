@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2f33b29b-163b-4106-a74d-6fb76ec38951
-description: El elemento de SID representa el formulario de idioma (SDDL) de definición de descriptor de seguridad del identificador de seguridad (SID) para que la cuenta a utilizar para la suplantación o delegación de acceso.
-ms.openlocfilehash: efcea42c12ec1d26ea31fdb8de337c37a2338a96
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SID representa el formato de lenguaje de definición de descriptores de seguridad (SDDL) del identificador de seguridad (SID) de la cuenta que se va a usar para la suplantación o el acceso delegado.
+ms.openlocfilehash: 0e3f740e9a056f7c0042049d97757b5f2d3c441d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837492"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468050"
 ---
 # <a name="sid"></a>SID
 
-El elemento de **SID** representa el formulario de idioma (SDDL) de definición de descriptor de seguridad del identificador de seguridad (SID) para que la cuenta a utilizar para la suplantación o delegación de acceso. 
+El elemento **SID** representa el formato de lenguaje de definición de descriptores de seguridad (SDDL) del identificador de seguridad (SID) de la cuenta que se va a usar para la suplantación o el acceso delegado. 
   
 ```xml
 <SID/>
@@ -30,22 +30,22 @@ El elemento de **SID** representa el formulario de idioma (SDDL) de definición 
  **SIDType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ConnectingSID](connectingsid.md) <br/> |Representa una cuenta para suplantar a cuando se usa el encabezado SOAP ExchangeImpersonation.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/ExchangeImpersonation/ConnectingSID` <br/> |
-|[UserId](userid.md) <br/> |Identifica un usuario delegado o un usuario con permisos de acceso de la carpeta.  <br/> |
+|[ConnectingSID](connectingsid.md) <br/> |Representa una cuenta que se va a suplantar al usar el encabezado SOAP ExchangeImpersonation.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/ExchangeImpersonation/ConnectingSID` <br/> |
+|[UserId](userid.md) <br/> |Identifica un usuario delegado o un usuario con permisos de acceso a la carpeta.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -53,20 +53,20 @@ El valor de texto es una representación de cadena de un SID.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Exchange Server con la función de servidor de acceso de cliente instalada.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Exchange Server con el rol de servidor acceso de clientes instalado.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

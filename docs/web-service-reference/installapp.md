@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: fc2ca69e-eea7-4334-b046-ec0b04d8f8c6
-description: El elemento InstallApp especifica la solicitud para instalar una aplicación.
-ms.openlocfilehash: d9b7412865c003b89eccbdd92aa6ff9968048191
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento InstallApp especifica la solicitud de instalar una aplicación.
+ms.openlocfilehash: 003a72507813677484b2d6ee75f8ff577df169e3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835949"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468008"
 ---
 # <a name="installapp"></a>InstallApp
 
-El elemento **InstallApp** especifica la solicitud para instalar una aplicación. 
+El elemento **InstallApp** especifica la solicitud de instalar una aplicación. 
   
 ```XML
 <InstallApp>
@@ -28,17 +28,17 @@ El elemento **InstallApp** especifica la solicitud para instalar una aplicación
  **InstallAppType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Manifest](manifest.md) <br/> |Contiene el archivo de manifiesto de aplicación con codificación base64.  <br/> |
+|[Manifiesto](manifest.md) <br/> |Contiene el archivo de manifiesto de la aplicación con codificación Base64.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,14 +54,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

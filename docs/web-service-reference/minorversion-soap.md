@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 2ef4e181-7324-4c88-94a9-1cffefc8c008
-description: El elemento MinorVersion representa el número de versión secundaria para el servidor.
-ms.openlocfilehash: f1958aca014f3d8012201c74f817e8efcbb942ec
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MinorVersion representa el número de versión secundaria del servidor.
+ms.openlocfilehash: 79e617e65e7cecffa1b8ca7ccfe9ac799bb475b9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836475"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467756"
 ---
 # <a name="minorversion-soap"></a>MinorVersion (SOAP)
 
-El elemento **MinorVersion** representa el número de versión secundaria para el servidor. 
+El elemento **MinorVersion** representa el número de versión secundaria del servidor. 
   
 ```XML
 <MinorVersion/>
@@ -27,33 +27,33 @@ El elemento **MinorVersion** representa el número de versión secundaria para e
  **int**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |Contiene la versión del servidor que procesa la solicitud.  <br/> |
+|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |Contiene la versión del servidor que ha procesado la solicitud.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor entero que representa el número de versión secundaria del servidor que procesa la solicitud.
+Un valor entero que representa el número de versión secundaria del servidor que procesó la solicitud.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |True  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Verdadero  <br/> |
    
 

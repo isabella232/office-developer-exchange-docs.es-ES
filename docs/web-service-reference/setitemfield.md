@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 85284fcb-bd1e-4fda-9dab-cb4cd637cd5b
-description: El elemento SetItemField representa una actualización para una única propiedad de un elemento en una operación UpdateItem.
-ms.openlocfilehash: bd3e5bca3d61325ef3f218c5ada535346247f391
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: El elemento SetItemField representa una actualización de una propiedad única de un elemento en una operación de UpdateItem.
+ms.openlocfilehash: b4606eb7d94b9d0c4c5bcd5a2b56d73a4d4270cb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353801"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467427"
 ---
 # <a name="setitemfield"></a>SetItemField
 
-El elemento **SetItemField** representa una actualización para una única propiedad de un elemento en una [operación de UpdateItem](updateitem-operation.md).
+El elemento **SetItemField** representa una actualización de una propiedad única de un elemento en una [operación de UpdateItem](updateitem-operation.md).
   
 ```xml
 <SetItemField>
@@ -238,48 +238,48 @@ El elemento **SetItemField** representa una actualización para una única propi
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifica las propiedades con frecuencia que se hace referencia mediante un identificador URI.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifica las propiedades a las que se hace referencia con frecuencia mediante el URI.  <br/> |
 |[IndexedFieldURI](indexedfielduri.md) <br/> |Identifica a los miembros individuales de un diccionario.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifica las propiedades extendidas de MAPI para establecer.  <br/> |
-|[Item](item.md) <br/> |Representa un elemento en el almacén de Exchange.  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange para actualizar.  <br/> |
-|[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange para actualizar.  <br/> |
-|[Contact](contact.md) <br/> |Representa un elemento de contacto de Exchange para actualizar.  <br/> |
-|[DistributionList](distributionlist.md) <br/> |Representa una lista de distribución que se debe actualizar.  <br/> |
-|[MeetingMessage](meetingmessage.md) <br/> |Representa un mensaje de reunión que se debe actualizar.  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |Representa una convocatoria de reunión que se debe actualizar.  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta a la reunión que se debe actualizar.  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Representa una cancelación de reunión que se debe actualizar.  <br/> |
-|[Tarea](task.md) <br/> |Representa una tarea que se debe actualizar.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifica las propiedades MAPI extendidas que se van a establecer.  <br/> |
+|[Elemento](item.md) <br/> |Representa un elemento en el almacén de Exchange.  <br/> |
+|[Mensaje](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange que se va a actualizar.  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange que se va a actualizar.  <br/> |
+|[Contacto](contact.md) <br/> |Representa un elemento de contacto de Exchange que se va a actualizar.  <br/> |
+|[DistributionList](distributionlist.md) <br/> |Representa una lista de distribución que se va a actualizar.  <br/> |
+|[MeetingMessage](meetingmessage.md) <br/> |Representa un mensaje de reunión que se va a actualizar.  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |Representa una convocatoria de reunión que se va a actualizar.  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta de reunión que se va a actualizar.  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Representa una cancelación de reunión que se va a actualizar.  <br/> |
+|[Tarea](task.md) <br/> |Representa una tarea que se va a actualizar.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Updates (Elemento)](updates-item.md) <br/> |Contiene un conjunto de elementos que definen append, establecer y eliminar los cambios realizados en las propiedades de elementos.  <br/> |
+|[Actualizaciones (elemento)](updates-item.md) <br/> |Contiene un conjunto de elementos que definen los cambios de anexar, establecer y eliminar en las propiedades del elemento.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

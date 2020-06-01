@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 178eefa1-995c-4bea-930b-e51293961191
-description: El elemento TTL especifica el período de vida, en horas, durante el cual la configuración permanece válida.
-ms.openlocfilehash: 5fecf3103553a82ed2aeeecfc1e4e1b9fe38583c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento TTL especifica el tiempo de vida, en horas, durante el cual la configuración sigue siendo válida.
+ms.openlocfilehash: 9a17cbe4e669d1afe9f3ef4a24f2a9a2889a7d52
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840733"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467385"
 ---
 # <a name="ttl-pox"></a>TTL (POX)
 
-El elemento **TTL** especifica el período de vida, en horas, durante el cual la configuración permanece válida. 
+El elemento **TTL** especifica el tiempo de vida, en horas, durante el cual la configuración sigue siendo válida. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -36,33 +36,33 @@ El elemento **TTL** especifica el período de vida, en horas, durante el cual la
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente con el equipo de Exchange Server 2007 en la que está instalado el rol de servidor de acceso de cliente.  <br/> |
+|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo con Exchange Server 2007 en el que está instalado el rol de servidor acceso de clientes.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa el período de vida, en horas, durante el cual la configuración permanece válida. Un valor de cero indica que redescubrimiento no es necesario. Si no se especifica ningún valor, el valor predeterminado para este elemento es 1 hora.
+El valor de texto representa el período de vida, en horas, durante el cual la configuración sigue siendo válida. Un valor de cero indica que no se requiere rediscovery. Si no se especifica ningún valor, el valor predeterminado de este elemento es 1 hora.
   
 ## <a name="remarks"></a>Comentarios
 
-Una vez transcurrido el tiempo que está representado por el elemento de **período de Vida** , la configuración se debe redescubrir mediante el uso de una solicitud de detección automática. 
+Una vez transcurrida la hora que se representa en el elemento **TTL** , la configuración debe volver a detectarse mediante una solicitud de detección automática. 
   
 ## <a name="see-also"></a>Vea también
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

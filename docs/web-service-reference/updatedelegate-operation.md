@@ -11,47 +11,47 @@ api_name:
 api_type:
 - schema
 ms.assetid: 03f618ac-ad1a-4772-9b81-c5bb0f12d6ab
-description: La operación UpdateDelegate actualiza delegar permisos de buzón de correo de una entidad de seguridad.
-ms.openlocfilehash: 9f69d784617d10d8902a260bbf6639703dd33b6d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación UpdateDelegate actualiza los permisos de delegado en el buzón de una entidad de identidad.
+ms.openlocfilehash: b7cf5325d925f8d6588115a8657a2077e940f9d2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840805"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468561"
 ---
 # <a name="updatedelegate-operation"></a>Operación UpdateDelegate
 
-La operación **UpdateDelegate** actualiza delegar permisos de buzón de correo de una entidad de seguridad. 
+La operación **UpdateDelegate** actualiza los permisos de delegado en el buzón de una entidad de identidad. 
   
 ## <a name="soap-headers"></a>Encabezados SOAP
 
-La operación de **UpdateDelegate** puede utilizar los encabezados SOAP que se enumeran y describen en la tabla siguiente. 
+La operación **UpdateDelegate** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla. 
   
-|**Header**|**Element**|**Descripción**|
+|**Header**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario que está realizando la suplantación de la aplicación cliente.  <br/> |
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural de RFC3066 va a usar para tener acceso al buzón.  <br/> |
-|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de la operación.  <br/> |
-|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que ha respondido a la solicitud.  <br/> |
+|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente.  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural RFC3066 que se va a usar para obtener acceso al buzón.  <br/> |
+|RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación.  <br/> |
+|ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud.  <br/> |
    
-## <a name="updatedelegate-request-example"></a>Ejemplo de solicitud de UpdateDelegate
+## <a name="updatedelegate-request-example"></a>Ejemplo de solicitud UpdateDelegate
 
 ### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud de **UpdateDelegate** muestra cómo actualizar los permisos de delegado en la cuenta de Usuario1. El usuario 2 se concede ninguna permiso de nivel de la carpeta tareas y se le concede permiso para ver elementos privados. User3 se conceden permisos de revisor para la carpeta diario. Las convocatorias de reunión se envían a los delegados y obtener información acerca de la solicitud se envía al Usuario1. 
+En el siguiente ejemplo de una solicitud de **UpdateDelegate** se muestra cómo actualizar los permisos de delegado en la cuenta de Usuario1. Al usuario2 se le concede el nivel de permisos ninguno para la carpeta tareas y se le concede permiso para ver los elementos privados. Usuario3 tiene concedidos permisos de revisor para la carpeta diario. Las convocatorias de reunión se envían a los delegados y la información sobre la solicitud se envía a user1. 
   
 ### <a name="code"></a>Código
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1"/>
   </soap:Header>
   <soap:Body>
-    <UpdateDelegate xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <UpdateDelegate xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <Mailbox>
         <t:EmailAddress>user1@example.com</t:EmailAddress>
       </Mailbox>
@@ -82,13 +82,13 @@ El siguiente ejemplo de una solicitud de **UpdateDelegate** muestra cómo actual
 
 ### <a name="comments"></a>Comentarios
 
-La solicitud [UpdateDelegate](updatedelegate.md) no requiere que las actualizaciones se aplica a los delegados. Los clientes pueden cambiar únicamente la configuración de **DeliverMeetingMessage** . 
+La solicitud [UpdateDelegate](updatedelegate.md) no requiere que las actualizaciones se apliquen a los delegados. Los clientes solo pueden cambiar la configuración de **DeliverMeetingMessage** . 
   
 ## <a name="updatedelegate-response-example"></a>Ejemplo de respuesta UpdateDelegate
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta para una operación de **UpdateDelegate** . 
+En el ejemplo siguiente se muestra una respuesta correcta a una operación **UpdateDelegate** . 
   
 ### <a name="code"></a>Código
 
@@ -103,12 +103,12 @@ En el ejemplo siguiente se muestra una respuesta correcta para una operación de
                          MajorBuildNumber="206"
                          MinorBuildNumber="0"
                          Version="Exchange2007_SP1"
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <m:UpdateDelegateResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+    <m:UpdateDelegateResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                               ResponseClass="Success"
-                              xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+                              xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</m:ResponseCode>
       <m:ResponseMessages>
         <m:DelegateUserResponseMessageType ResponseClass="Success">
@@ -141,11 +141,11 @@ En el ejemplo siguiente se muestra una respuesta correcta para una operación de
 </soap:Envelope>
 ```
 
-## <a name="updatedelegate-error-response-example"></a>Ejemplo de respuesta de UpdateDelegate Error
+## <a name="updatedelegate-error-response-example"></a>Ejemplo de respuesta de error UpdateDelegate
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **UpdateDelegate** . Se generó el error porque el delegado no existe en la lista de delegados de la entidad de seguridad. 
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud **UpdateDelegate** . El error se ha generado porque el delegado no existe en la lista de delegados de la entidad de la identidad. 
   
 ### <a name="code"></a>Código
 
@@ -160,12 +160,12 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **U
                          MajorBuildNumber="206" 
                          MinorBuildNumber="0" 
                          Version="Exchange2007_SP1" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <m:UpdateDelegateResponse xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+    <m:UpdateDelegateResponse xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                               ResponseClass="Success" 
-                              xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+                              xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</m:ResponseCode>
       <m:ResponseMessages>
         <m:DelegateUserResponseMessageType ResponseClass="Error">
@@ -183,5 +183,5 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **U
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

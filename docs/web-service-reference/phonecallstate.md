@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ac009eb3-6334-49ce-82be-48fe83577f9c
-description: El elemento PhoneCallState especifica el estado actual de una llamada telefónica.
-ms.openlocfilehash: 184a7400810711442e565d1ef37094bd63b00914
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PhoneCallState especifica el estado actual de una llamada de teléfono.
+ms.openlocfilehash: d2088b9b2811befe80684188d49c8034c577cc55
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836761"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468533"
 ---
 # <a name="phonecallstate"></a>PhoneCallState
 
-El elemento **PhoneCallState** especifica el estado actual de una llamada telefónica. 
+El elemento **PhoneCallState** especifica el estado actual de una llamada de teléfono. 
   
 ```xml
 <PhoneCallState>Idle or Connecting or Alerted or Connected or Disconnected or Incoming or Transferring or Forwarding</PhoneCallState>
@@ -30,55 +30,55 @@ El elemento **PhoneCallState** especifica el estado actual de una llamada telef�
  **PhoneCallStateType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[PhoneCallInformation](phonecallinformation.md) <br/> |Especifica la información de estado para una llamada de teléfono.  <br/> |
+|[PhoneCallInformation](phonecallinformation.md) <br/> |Especifica la información de estado de una llamada telefónica.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-En la siguiente tabla se enumera los valores posibles para el elemento **PhoneCallState** . 
+En la siguiente tabla se enumeran los valores posibles para el elemento **PhoneCallState** . 
   
-**Valores de elemento PhoneCallState**
+**Valores del elemento PhoneCallState**
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Inactividad  <br/> |Estado de llamada inicial.  <br/> |
-|Conectando  <br/> |El sistema está marcando esta llamada.  <br/> |
-|Una alerta  <br/> |La llamada está en estado de alerta (teléfono está sonando).  <br/> |
-|Conectado  <br/> |La llamada se encuentra en el estado de la conexión.  <br/> |
-|Desconectado  <br/> |Se desconectó la llamada.  <br/> |
-|Entrante  <br/> |La llamada es entrante.  <br/> |
-|Transferir  <br/> |La llamada se transfiere a otro destino.  <br/> |
-|Desvío de llamadas  <br/> |La llamada es se reenvíen a otro destino.  <br/> |
+|Usado  <br/> |Estado de la llamada inicial.  <br/> |
+|Conectando  <br/> |El sistema está llamando a esta llamada.  <br/> |
+|Alertas  <br/> |La llamada está en estado de alerta (el teléfono está sonando).  <br/> |
+|Conectado  <br/> |La llamada está en estado conectado.  <br/> |
+|Desconectado  <br/> |La llamada está desconectada.  <br/> |
+|Entra  <br/> |La llamada es entrante.  <br/> |
+|Transferencia  <br/> |La llamada se está transfiriendo a otro destino.  <br/> |
+|Reenvío  <br/> |La llamada se está reenviando a otro destino.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio /ews/ del equipo que ejecuta Microsoft Exchange Server 2010 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio/EWS/del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

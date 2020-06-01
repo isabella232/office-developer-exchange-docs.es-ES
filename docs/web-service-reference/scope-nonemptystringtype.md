@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7efb6fd9-1615-469e-96f6-0f7846ad9b44
-description: El elemento de ámbito especifica el ámbito del informe de seguimiento de mensajes.
-ms.openlocfilehash: 534ed23916a60b246c7cb5be4a59d086980a7c37
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Scope especifica el ámbito del informe de seguimiento de mensajes.
+ms.openlocfilehash: f86f6198e84e094e61ee569f6d005549316bbb9b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837280"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466944"
 ---
 # <a name="scope-nonemptystringtype"></a>Ámbito (NonEmptyStringType)
 
-El elemento de **ámbito** especifica el ámbito del informe de seguimiento de mensajes. 
+El elemento **Scope** especifica el ámbito del informe de seguimiento de mensajes. 
   
 ```XML
 <Scope>Organization | Forest | Site</Scope>
@@ -30,29 +30,29 @@ El elemento de **ámbito** especifica el ámbito del informe de seguimiento de m
  **NonEmptyStringType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[FindMessageTrackingReport](findmessagetrackingreport.md) | [GetMessageTrackingReport](getmessagetrackingreport.md)
+[FindMessageTrackingReport](findmessagetrackingreport.md)  |  [GetMessageTrackingReport](getmessagetrackingreport.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-En la siguiente tabla se enumera los valores posibles para el elemento de **ámbito** . 
+En la siguiente tabla se enumeran los valores posibles para el elemento **Scope** . 
   
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Organización  <br/> |Los ámbitos de seguimiento de mensajes se extiende en una organización.  <br/> |
-|Bosque  <br/> |Los ámbitos de seguimiento de mensajes se extiende en un bosque.  <br/> |
-|Sitio  <br/> |Los ámbitos de seguimiento de mensajes se extiende en un sitio.  <br/> |
+|Organización  <br/> |Los ámbitos de seguimiento de mensajes abarcan en toda la organización.  <br/> |
+|Bosque  <br/> |Los ámbitos de seguimiento de mensajes se extienden por un bosque.  <br/> |
+|Site   <br/> |Los ámbitos de seguimiento de mensajes se extienden en un sitio.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -62,14 +62,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

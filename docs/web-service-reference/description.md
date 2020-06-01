@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6e4cd194-0696-4fec-8ab0-e1d349ed0be0
-description: El elemento de descripción Especifica el texto descriptivo para la directiva de retención.
-ms.openlocfilehash: e001733e7011610dc09c2cce389104d74894772d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Description especifica el texto descriptivo de la Directiva de retención.
+ms.openlocfilehash: a399d4072220e3fa9199f0a3eb760e886b7b4ee6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764136"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467889"
 ---
 # <a name="description"></a>Descripción
 
-El elemento de **Descripción** especifica el texto descriptivo para la directiva de retención. 
+El elemento **Description** especifica el texto descriptivo de la Directiva de retención. 
   
 ```XML
 <Description></Description>
@@ -26,25 +26,25 @@ El elemento de **Descripción** especifica el texto descriptivo para la directiv
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[RetentionPolicyTag](retentionpolicytag.md) <br/> |Especifica la directiva de retención para un elemento de buzón de correo.  <br/> |
+|[RetentionPolicyTag](retentionpolicytag.md) <br/> |Especifica la Directiva de retención de un elemento de buzón.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **Description** es un valor de tipo string que describe la directiva de retención. 
+El valor de texto del elemento **Description** es un valor de cadena que describe la Directiva de retención. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,12 +56,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

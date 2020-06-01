@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: c04a6872-ca27-432b-aac2-36b023d0afc6
 description: El elemento ServerVersionInfo representa el número de versión de Microsoft Exchange Server.
-ms.openlocfilehash: aff8a6542e2ae6fb1148dd29051b7b33ad90eeff
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 5bd1fbd8fdee584a9d272fa8ab82f2a31c1357fe
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837389"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466832"
 ---
 # <a name="serverversioninfo"></a>ServerVersionInfo
 
@@ -29,21 +29,21 @@ El elemento **ServerVersionInfo** representa el número de versión de Microsoft
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
 |MajorVersion  <br/> |Describe el número de versión principal.  <br/> |
 |MinorVersion  <br/> |Describe el número de versión secundaria.  <br/> |
-|MajorBuildNumber  <br/> |Describe el número de versión de compilación principal.  <br/> |
+|MajorBuildNumber  <br/> |Describe el número de compilación principal.  <br/> |
 |MinorBuildNumber  <br/> |Describe el número de compilación secundaria.  <br/> |
-|Versión  <br/> |Describe la versión de esquema de Exchange Web Services (EWS).  <br/> |
+|Versión  <br/> |Describe la versión del esquema de los servicios Web de Exchange (EWS).  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -51,22 +51,22 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-Este elemento se devuelve en el encabezado SOAP de un mensaje de respuesta de los servicios Web Exchange.
+Este elemento se devuelve en el encabezado SOAP de un mensaje de respuesta de servicios Web de Exchange.
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente. 
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes. 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

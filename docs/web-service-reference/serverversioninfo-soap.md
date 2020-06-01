@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 8662647b-e50a-4774-9ba3-a951ae6df781
-description: El elemento ServerVersionInfo contiene la versión del servidor que procesa la solicitud.
-ms.openlocfilehash: b02071e4997aba91fb538d52df2612fe6fd32800
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ServerVersionInfo contiene la versión del servidor que ha procesado la solicitud.
+ms.openlocfilehash: b54b4833361ec78c7f8213473af4638965c7ddae
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837385"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467651"
 ---
 # <a name="serverversioninfo-soap"></a>ServerVersionInfo (SOAP)
 
-El elemento **ServerVersionInfo** contiene la versión del servidor que procesa la solicitud. 
+El elemento **ServerVersionInfo** contiene la versión del servidor que ha procesado la solicitud. 
   
 ```XML
 <ServerVersionInfo>
@@ -33,21 +33,21 @@ El elemento **ServerVersionInfo** contiene la versión del servidor que procesa 
  **ServerVersionInfo**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[MajorVersion (SOAP)](majorversion-soap.md) <br/> |El número de versión principal para el servidor.  <br/> |
-|[MinorVersion (SOAP)](minorversion-soap.md) <br/> |El número de versión secundaria para el servidor.  <br/> |
-|[MajorBuildNumber (SOAP)](majorbuildnumber-soap.md) <br/> |El número de versión de compilación principal para el servidor.  <br/> |
-|[MinorBuildNumber (SOAP)](minorbuildnumber-soap.md) <br/> |El número de compilación secundaria para el servidor.  <br/> |
-|[Versión (SOAP)](version-soap.md) <br/> |Una descripción de la versión del producto de servidor.  <br/> |
+|[MajorVersion (SOAP)](majorversion-soap.md) <br/> |Número de versión principal del servidor.  <br/> |
+|[MinorVersion (SOAP)](minorversion-soap.md) <br/> |Número de versión secundaria del servidor.  <br/> |
+|[MajorBuildNumber (SOAP)](majorbuildnumber-soap.md) <br/> |El número de compilación principal del servidor.  <br/> |
+|[MinorBuildNumber (SOAP)](minorbuildnumber-soap.md) <br/> |Número de compilación secundaria del servidor.  <br/> |
+|[Versión (SOAP)](version-soap.md) <br/> |Una descripción de la versión del producto del servidor.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -61,9 +61,9 @@ Este elemento se devuelve en el encabezado SOAP.
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |True  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Verdadero  <br/> |
    
 

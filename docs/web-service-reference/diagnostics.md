@@ -1,5 +1,5 @@
 ---
-title: Diagnósticos
+title: Diagnóstico
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: fecea440-970a-49da-9796-534ca470cbd6
-description: El elemento de diagnóstico proporciona información de rendimiento y control de tiempo que se usa para la creación de informes en un centro de datos.
-ms.openlocfilehash: 2b9cac54a683967ec274b8681fb9a0c8a844205e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Diagnostics proporciona información sobre el rendimiento y el tiempo que se usa para los informes en un centro de datos.
+ms.openlocfilehash: 9eb46ef7ceb877372aff9b029190af8c8d8115cd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764144"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467840"
 ---
-# <a name="diagnostics"></a>Diagnósticos
+# <a name="diagnostics"></a>Diagnóstico
 
-El elemento de **diagnóstico** proporciona información de rendimiento y control de tiempo que se usa para la creación de informes en un centro de datos. 
+El elemento **Diagnostics** proporciona información sobre el rendimiento y el tiempo que se usa para los informes en un centro de datos. 
   
 ```XML
 <Diagnostics>
@@ -33,24 +33,24 @@ El elemento de **diagnóstico** proporciona información de rendimiento y contro
  **ArrayOfStringsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[String](string.md) <br/> |Contiene una cadena que se usa en los elementos, contactos, tareas y las conversaciones.  <br/> |
+|[String](string.md) <br/> |Contiene una cadena que usan los elementos, contactos, tareas y conversaciones.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) <br/> |Contiene el estado y el resultado de una única solicitud de [operación FindMessageTrackingReport](findmessagetrackingreport-operation.md) .  <br/> |
-|[GetMessageTrackingReportResponse](getmessagetrackingreportresponse.md) <br/> |Contiene la respuesta de la [operación de GetMessageTrackingReport](getmessagetrackingreport-operation.md).  <br/> |
+|[FindMessageTrackingReportResponse](findmessagetrackingreportresponse.md) <br/> |Contiene el estado y el resultado de una sola solicitud de [operación FindMessageTrackingReport](findmessagetrackingreport-operation.md) .  <br/> |
+|[GetMessageTrackingReportResponse](getmessagetrackingreportresponse.md) <br/> |Contiene la respuesta para la [operación GetMessageTrackingReport](getmessagetrackingreport-operation.md).  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -64,14 +64,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación FindMessageTrackingReport](findmessagetrackingreport-operation.md)
 - [Operación GetMessageTrackingReport](getmessagetrackingreport-operation.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

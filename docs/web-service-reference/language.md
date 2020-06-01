@@ -1,5 +1,5 @@
 ---
-title: Language
+title: Idioma
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8e24e672-7b17-49c8-b368-a078ca1d4dd1
-description: El elemento de idioma contiene el idioma utilizado para la consulta de búsqueda.
-ms.openlocfilehash: 735a962e6abca5ff81194242ea747a05bf92424e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Language contiene el idioma usado para la consulta de búsqueda.
+ms.openlocfilehash: 3d1843ea5d38f5efee8453623f450a4486e4d18b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836225"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468701"
 ---
-# <a name="language"></a>Language
+# <a name="language"></a>Idioma
 
-El elemento de **idioma** contiene el idioma utilizado para la consulta de búsqueda. 
+El elemento **Language** contiene el idioma usado para la consulta de búsqueda. 
   
 ```XML
 <Language></Language>
@@ -26,23 +26,23 @@ El elemento de **idioma** contiene el idioma utilizado para la consulta de búsq
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[SetHoldOnMailboxes](setholdonmailboxes.md) | [SearchMailboxes](searchmailboxes.md)
+[SetHoldOnMailboxes](setholdonmailboxes.md)  |  [SearchMailboxes](searchmailboxes.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **lenguaje** es el lenguaje utilizado en una búsqueda de detección. 
+El valor de texto del elemento **Language** es el idioma que se usa en una búsqueda de detección. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

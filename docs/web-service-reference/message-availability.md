@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 1eec24dd-c981-41f4-a2f0-c51d43f1d7c0
-description: El elemento de mensaje contiene la espera de respuesta de la oficina (OOF).
-ms.openlocfilehash: 9facd04767fdcc0fd9dfd84fc6badb1a7633d2b5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento message contiene la respuesta de fuera de la oficina (OOF).
+ms.openlocfilehash: 13d118422ccb5a2897c21b6d124f170bf461dbf6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836452"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44467007"
 ---
 # <a name="message-availability"></a>Mensaje (disponibilidad)
 
-El elemento de **mensaje** contiene la espera de respuesta de la oficina (OOF). 
+El elemento **Message** contiene la respuesta de fuera de la oficina (OOF). 
   
 ```xml
 <Message/> 
@@ -30,27 +30,27 @@ El elemento de **mensaje** contiene la espera de respuesta de la oficina (OOF).
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[InternalReply](internalreply.md) <br/> | Contiene el mensaje OOF enviado a otros usuarios en el dominio del remitente. <br/> <br/>  Los siguientes son las expresiones de XPath posibles para este elemento: <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/InternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/InternalReply` <br/> |
-|[ExternalReply](externalreply.md) <br/> | Contiene el mensaje de fuera de la oficina que se envía a direcciones fuera del dominio de la dirección del remitente.  <br/> <br/> Los siguientes son las expresiones de XPath posibles para este elemento:  <br/><br/>  `/SetUserOofSettingsRequest/UserOofSettings/ExternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/ExternalReply` <br/> |
-|[ReplyBody](replybody.md) <br/> |Contiene un mensaje de fuera de la oficina y el idioma utilizado para el mensaje.  <br/> |
+|[InternalReply](internalreply.md) <br/> | Contiene el mensaje OOF enviado a otros usuarios en el dominio del remitente. <br/> <br/>  Las siguientes son las posibles expresiones de XPath a este elemento: <br/> <br/>  `/SetUserOofSettingsRequest/UserOofSettings/InternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/InternalReply` <br/> |
+|[ExternalReply](externalreply.md) <br/> | Contiene el mensaje OOF que se envía a las direcciones fuera del dominio del remitente.  <br/> <br/> Las siguientes son las posibles expresiones de XPath a este elemento:  <br/><br/>  `/SetUserOofSettingsRequest/UserOofSettings/ExternalReply` <br/><br/>  `/GetUserOofSettingsResponse/OofSettings/ExternalReply` <br/> |
+|[ReplyBody](replybody.md) <br/> |Contiene un mensaje OOF y el idioma que se usa para el mensaje.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto para establecer el mensaje de fuera de la oficina.
+Se necesita un valor de texto para establecer el mensaje OOF.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -58,19 +58,19 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
   
 ## <a name="example"></a>Ejemplo
 
-El siguiente ejemplo de una solicitud de [operación de SetUserOofSettings](setuseroofsettings-operation.md) el [OofState](oofstate.md) establece en **habilitado**, Establece la duración de OOF a 10 días y establece los mensajes de fuera de la oficina internos y externos.
+En el siguiente ejemplo de una solicitud de [operación de SetUserOofSettings](setuseroofsettings-operation.md) se establece el [OofState](oofstate.md) en **habilitado**, se establece la duración de OOF en 10 días y se establecen los mensajes OOF internos y externos.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <SetUserOofSettingsRequest xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
-      <Mailbox xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+    <SetUserOofSettingsRequest xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+      <Mailbox xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <Name>David Alexander</Name>
         <Address>someone@example.com</Address>
         <RoutingType>SMTP</RoutingType>
       </Mailbox>
-      <UserOofSettings xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+      <UserOofSettings xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
         <OofState>Enabled</OofState>
         <ExternalAudience>All</ExternalAudience>
         <Duration>
@@ -93,13 +93,13 @@ El siguiente ejemplo de una solicitud de [operación de SetUserOofSettings](setu
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación SetUserOofSettings](setuseroofsettings-operation.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

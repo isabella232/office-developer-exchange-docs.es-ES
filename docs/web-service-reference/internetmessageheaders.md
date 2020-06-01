@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 4dcf8671-96df-4a2d-9836-7e8e3a67e0db
-description: El elemento InternetMessageHeaders contiene una colección de algunos de los encabezados de mensaje de Internet que están contenidos en un elemento en un buzón de correo. Para obtener la colección completa de los encabezados de mensaje de Internet, utilice la propiedad PR_TRANSPORT_MESSAGE_HEADERS. Para obtener más información acerca de EWS y encabezados de mensajes de Internet, headersin de mensaje de Internet seeGetting EWS, MIME y los encabezados de mensaje de Internet que faltan.
-ms.openlocfilehash: 2da529a8a3532cebb2791b285b7673c962a2a656
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento InternetMessageHeaders contiene una colección de algunos encabezados de mensajes de Internet incluidos en un elemento de un buzón. Para obtener toda la colección de encabezados de mensajes de Internet, use la propiedad PR_TRANSPORT_MESSAGE_HEADERS. Para obtener más información sobre los encabezados de mensajes de EWS e Internet, Consulteobtener Internet Message headersin EWS, MIME y los encabezados de mensajes de Internet que faltan.
+ms.openlocfilehash: 4719050c02590e021b29173c234466de3fdc58a4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835954"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467329"
 ---
 # <a name="internetmessageheaders"></a>InternetMessageHeaders
 
-El elemento **InternetMessageHeaders** contiene una colección de algunos de los encabezados de mensaje de Internet que están contenidos en un elemento en un buzón de correo. Para obtener la colección completa de los encabezados de mensaje de Internet, utilice la propiedad **PR_TRANSPORT_MESSAGE_HEADERS** . Para obtener más información acerca de los encabezados de mensaje EWS y en Internet, vea "Encabezados de mensaje de Internet de introducción" en [EWS, MIME y los encabezados de mensaje de Internet que faltan](http://msdn.microsoft.com/en-us/library/exchange/hh545614%28v=exchg.140%29.aspx).
+El elemento **InternetMessageHeaders** contiene una colección de algunos encabezados de mensajes de Internet incluidos en un elemento de un buzón. Para obtener toda la colección de encabezados de mensajes de Internet, use la propiedad **PR_TRANSPORT_MESSAGE_HEADERS** . Para obtener más información acerca de los encabezados de mensajes de Internet y EWS, vea "obtener encabezados de mensajes de Internet" en [EWS, MIME y los encabezados de mensajes de Internet que faltan](https://msdn.microsoft.com/library/exchange/hh545614%28v=exchg.140%29.aspx).
   
 ```XML
 <InternetMessageHeaders>
@@ -32,40 +32,40 @@ El elemento **InternetMessageHeaders** contiene una colección de algunos de los
  **NonEmptyArrayOfInternetHeadersType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[InternetMessageHeader](internetmessageheader.md) <br/> |Representa el encabezado del mensaje de Internet para un determinado encabezado dentro de la colección de encabezados.  <br/> |
+|[InternetMessageHeader](internetmessageheader.md) <br/> |Representa el encabezado de un mensaje de Internet para un encabezado determinado dentro de la colección de encabezados.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AcceptItem](acceptitem.md) <br/> |Representa una respuesta a Aceptar a una convocatoria de reunión.  <br/> |
+|[AcceptItem](acceptitem.md) <br/> |Representa una respuesta de aceptación para una convocatoria de reunión.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
-|[Contact](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
+|[Contacto](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
 |[DeclineItem](declineitem.md) <br/> |Representa una respuesta de rechazo a una convocatoria de reunión.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Representa una lista de distribución.  <br/> |
-|[Item](item.md) <br/> |Representa un elemento en el almacén de Exchange.  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Representa la cancelación de la reunión en el almacén de Exchange.  <br/> |
+|[Elemento](item.md) <br/> |Representa un elemento en el almacén de Exchange.  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Representa una cancelación de reunión en el almacén de Exchange.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Representa una reunión en el almacén de Exchange.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Representa una convocatoria de reunión en el almacén de Exchange.  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta a la reunión en el almacén de Exchange.  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange.  <br/> |
-|[RemoveItem](removeitem.md) <br/> |Quita un elemento desde el almacén de Exchange.  <br/> |
-|[Tarea](task.md) <br/> |Representa una tarea en el almacén de Exchange.  <br/> |
-|[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |Representa una respuesta a una convocatoria de reunión aceptada provisionalmente.  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta a una reunión en el almacén de Exchange.  <br/> |
+|[Mensaje](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange.  <br/> |
+|[RemoveItem](removeitem.md) <br/> |Quita un elemento del almacén de Exchange.  <br/> |
+|[Tarea](task.md) <br/> |Representa una tarea del almacén de Exchange.  <br/> |
+|[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |Representa una respuesta aceptada provisionalmente a una convocatoria de reunión.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-La siguiente es la API administrada de EWS extendido definición de propiedad para la propiedad **PR_TRANSPORT_MESSAGE_HEADERS** . 
+La siguiente es la definición de propiedad extendida de la API administrada de EWS para la propiedad **PR_TRANSPORT_MESSAGE_HEADERS** . 
   
 ```cs
 ExtendedPropertyDefinition transportMsgHdr = new ExtendedPropertyDefinition(0x007D, MapiPropertyType.String);
@@ -77,17 +77,17 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
 
-[EWS, MIME y los encabezados de mensaje de Internet que faltan](http://msdn.microsoft.com/en-us/library/exchange/hh545614%28v=exchg.140%29.aspx)
+[EWS, MIME y los encabezados de mensajes de Internet que faltan](https://msdn.microsoft.com/library/exchange/hh545614%28v=exchg.140%29.aspx)
 

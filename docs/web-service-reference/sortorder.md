@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: c2413f0b-8c03-46ae-9990-13338b3c53a6
 description: El elemento SortOrder define cómo se ordenan los elementos en una solicitud FindItem o FindConversation.
-ms.openlocfilehash: e20e5eab7972616c90079786abd78a0f7fedfebe
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: b520bb3ca6daadc777e7235b2b7420a12e425048
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837519"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468372"
 ---
 # <a name="sortorder"></a>SortOrder
 
@@ -32,24 +32,24 @@ El elemento **SortOrder** define cómo se ordenan los elementos en una solicitud
  **NonEmptyArrayOfFieldOrdersType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FieldOrder](fieldorder.md) <br/> |Representa un solo campo por el que se va a ordenar los resultados y se indica la dirección para la ordenación. Pueden incluir uno o varios de estos elementos. [FieldOrder](fieldorder.md) elementos se aplican en el orden especificado para la ordenación.  <br/> |
+|[FieldOrder](fieldorder.md) <br/> |Representa un solo campo por el que se ordenan los resultados e indica la dirección de la ordenación. Se pueden incluir uno o varios de estos elementos. Los elementos [FieldOrder](fieldorder.md) se aplican en el orden especificado para la ordenación.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FindItem](finditem.md) <br/> |Define una solicitud para buscar elementos en un buzón de correo.  <br/> La siguiente es la expresión de XPath para este elemento:`/FindItem` <br/> |
-|[FindConversation](findconversation.md) <br/> |Define una solicitud para buscar las conversaciones en un buzón de correo.  <br/> |
+|[FindItem](finditem.md) <br/> |Define una solicitud para buscar elementos en un buzón.  <br/> La siguiente es la expresión XPath a este elemento:`/FindItem` <br/> |
+|[FindConversation](findconversation.md) <br/> |Define una solicitud para buscar conversaciones en un buzón.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -63,10 +63,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -74,8 +74,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 [Operación FindItem](finditem-operation.md)
   
-[Operación de FindConversation](findconversation-operation.md)
+[Operación FindConversation](findconversation-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

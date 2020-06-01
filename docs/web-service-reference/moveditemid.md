@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7d5425ab-1e75-43d1-b801-802ff5139df6
-description: El elemento MovedItemId especifica el identificador del elemento que se ha movido por la operación de MarkAsJunk.
-ms.openlocfilehash: 17e20e8ca81f97b419fc4a2b413e21322e828ec9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MovedItemId especifica el identificador del elemento movido por la operación MarkAsJunk.
+ms.openlocfilehash: 5cf8800ec672278691348bbcd8c6c8cc7a12905b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836484"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468617"
 ---
 # <a name="moveditemid"></a>MovedItemId
 
-El elemento **MovedItemId** especifica el identificador del elemento que se ha movido por la operación de **MarkAsJunk** . 
+El elemento **MovedItemId** especifica el identificador del elemento movido por la operación **MarkAsJunk** . 
   
 ```XML
 <MovedItemId Id="" ChangeKey=""/>
@@ -26,18 +26,18 @@ El elemento **MovedItemId** especifica el identificador del elemento que se ha m
  **ItemIdType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|Id  <br/> |El valor del atributo **Id** es el identificador de elemento del elemento que se mueve por la operación de **MarkAsJunk** . El identificador del elemento permanecerá igual después del movimiento.  <br/> |
-|ChangeKey  <br/> |El valor del atributo **ChangeKey** es la clave de cambio del elemento que se ha movido. La clave de cambio cambia después de que el elemento se mueve por la operación de **MarkAsJunk** .  <br/> |
+|Id  <br/> |El valor del atributo **ID** es el identificador de elemento del elemento que se mueve mediante la operación **MarkAsJunk** . El identificador de elemento permanecerá igual después del movimiento.  <br/> |
+|ChangeKey  <br/> |El valor del atributo **changekey** es la clave de cambio del elemento que se ha movido. La clave de cambio cambia después de que la operación **MarkAsJunk** mueva el elemento.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

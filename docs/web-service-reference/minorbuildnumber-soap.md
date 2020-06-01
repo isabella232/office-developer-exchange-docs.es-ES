@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 3d2b9edc-8e57-44dc-b63b-75a2eb47c84e
-description: El elemento MinorBuildNumber representa el número de compilación secundaria para el servidor.
-ms.openlocfilehash: 4b6fb9b16bd2b4e2c25d36074c5935135d1794f6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MinorBuildNumber representa el número de compilación secundaria del servidor.
+ms.openlocfilehash: d5e4d80c448180baa18d2d90eb0440e12c2ed02b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836467"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466993"
 ---
 # <a name="minorbuildnumber-soap"></a>MinorBuildNumber (SOAP)
 
-El elemento **MinorBuildNumber** representa el número de compilación secundaria para el servidor. 
+El elemento **MinorBuildNumber** representa el número de compilación secundaria del servidor. 
   
 ```XML
 <MinorBuildNumber/>
@@ -27,33 +27,33 @@ El elemento **MinorBuildNumber** representa el número de compilación secundari
  **int**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |Contiene la versión del servidor que procesa la solicitud.  <br/> |
+|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |Contiene la versión del servidor que ha procesado la solicitud.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor entero que representa el menor número del servidor que procesa la solicitud de compilación.
+Valor entero que representa el número de compilación secundaria del servidor que procesó la solicitud.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |True  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Verdadero  <br/> |
    
 

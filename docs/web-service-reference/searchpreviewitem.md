@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 59b0b2db-a0ae-4162-a2cb-5f37f42fe872
-description: El elemento SearchPreviewItem especifica la vista previa de elemento para una búsqueda de detección.
-ms.openlocfilehash: 46b9d6049f856ce6e93b9e49e07516ec4b52d932
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SearchPreviewItem especifica la vista previa del elemento para una búsqueda de detección.
+ms.openlocfilehash: ab48353b0ffaf4bc3b9409f1a620d145bffc7a13
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837308"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466937"
 ---
 # <a name="searchpreviewitem"></a>SearchPreviewItem
 
-El elemento **SearchPreviewItem** especifica la vista previa de elemento para una búsqueda de detección. 
+El elemento **SearchPreviewItem** especifica la vista previa del elemento para una búsqueda de detección. 
   
 ```XML
 <SearchPreviewItem>
@@ -48,15 +48,15 @@ El elemento **SearchPreviewItem** especifica la vista previa de elemento para un
  **SearchPreviewItemType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Identificador (ItemIdType)](id-itemidtype.md) | [buzón (PreviewItemMailboxType)](mailbox-previewitemmailboxtype.md) | [ParentId](parentid.md) | [ItemClass](itemclass.md) | [UniqueHash](uniquehash.md) | [SortValue](sortvalue.md) | [OwaLink](owalink.md)  |  [ Remitente (string)](sender-string.md) | [ToRecipients (ArrayOfSmtpAddressType)](torecipients-arrayofsmtpaddresstype.md) | [CcRecipients](ccrecipients.md) | [BccRecipients](bccrecipients.md) | [CreatedTime](createdtime.md) | [ReceivedTime](receivedtime.md)  |  [ArrivedTime](senttime.md)  |  [Asunto](subject.md) | [tamaño (long)](size-long.md) | [Preview](preview-ex15websvcsotherref.md) | [importancia](importance.md) | [lectura](read.md) | [HasAttachment](hasattachment.md) | [() ExtendedProperties NonEmptyArrayOfExtendedPropertyType)](extendedproperties-nonemptyarrayofextendedpropertytype.md)
+[Identificador (ItemIdType)](id-itemidtype.md)  |  [Buzón de correo (PreviewItemMailboxType)](mailbox-previewitemmailboxtype.md)  |  [ParentId](parentid.md)  |  [ItemClass](itemclass.md)  |  [UniqueHash](uniquehash.md)  |  [SortValue](sortvalue.md)  |  [OwaLink](owalink.md)  |  [Sender (cadena)](sender-string.md)  |  [ToRecipients (ArrayOfSmtpAddressType)](torecipients-arrayofsmtpaddresstype.md)  |  [CcRecipients](ccrecipients.md)  |  [BccRecipients](bccrecipients.md)  |  [CreatedTime](createdtime.md)  |  [ReceivedTime](receivedtime.md)  |  [SentTime](senttime.md)  |  [Asunto](subject.md)  |  [Tamaño (largo)](size-long.md)  |  [Vista previa](preview-ex15websvcsotherref.md)  |  [Importancia](importance.md)  |  [Lectura](read.md)  |  [HasAttachment](hasattachment.md)  |  [ExtendedProperties (NonEmptyArrayOfExtendedPropertyType)](extendedproperties-nonemptyarrayofextendedpropertytype.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -72,9 +72,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

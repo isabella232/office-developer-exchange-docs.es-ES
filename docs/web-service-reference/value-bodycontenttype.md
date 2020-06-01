@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 53d86631-58b0-4cfd-8209-0ce65e259f16
-description: El elemento de valor especifica el valor de un elemento BodyContentAttributedValue.
-ms.openlocfilehash: 055d737ed5f7cd08f16d40366e76dcb5573fa3a7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Value especifica el valor de un elemento BodyContentAttributedValue.
+ms.openlocfilehash: 7846302f0c2b3bad37cc55de752ca775e63b644b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840939"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467609"
 ---
 # <a name="value-bodycontenttype"></a>Valor (BodyContentType)
 
-El elemento de **valor** especifica el valor de un elemento **BodyContentAttributedValue** . 
+El elemento **Value** especifica el valor de un elemento **BodyContentAttributedValue** . 
   
 ```XML
 <Value>
@@ -30,15 +30,15 @@ El elemento de **valor** especifica el valor de un elemento **BodyContentAttribu
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Valor](value.md) | [BodyType](bodytype.md)
+[Valor](value.md)  |  de [BodyType](bodytype.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

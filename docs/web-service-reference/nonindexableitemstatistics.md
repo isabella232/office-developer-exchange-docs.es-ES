@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 12f2934a-008c-4236-b8b3-7c7b6b5707e2
-description: El elemento NonIndexableItemStatistics contiene una matriz de estadísticas de los elementos que no se pueden indizar.
-ms.openlocfilehash: 1414053b6d39f4cd08ccfd1a11faaf1b13c2052b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento NonIndexableItemStatistics contiene una matriz de estadísticas para los elementos que no se pudieron indizar.
+ms.openlocfilehash: 5a11bd4d7ef0c574f26580613063a885530176f9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836544"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466734"
 ---
 # <a name="nonindexableitemstatistics"></a>NonIndexableItemStatistics
 
-El elemento **NonIndexableItemStatistics** contiene una matriz de estadísticas de los elementos que no se pueden indizar. 
+El elemento **NonIndexableItemStatistics** contiene una matriz de estadísticas para los elementos que no se pudieron indizar. 
   
 ```XML
 <NonIndexableItemStatistics>
@@ -28,11 +28,11 @@ El elemento **NonIndexableItemStatistics** contiene una matriz de estadísticas 
  **ArrayOfNonIndexableItemStatisticsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,10 +52,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -64,5 +64,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación GetNonIndexableItemStatistics](getnonindexableitemstatistics-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

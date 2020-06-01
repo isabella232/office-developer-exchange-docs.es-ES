@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ade9ea3b-bdf1-4999-ac7d-44c6452cef36
-description: El elemento TaskSuggestion contiene una sugerencia de tarea que se esperó desde una entidad extraída de un elemento.
-ms.openlocfilehash: bf12c3dc8b58b6be873e0a9b0863c80051eb4e11
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento TaskSuggestion contiene una sugerencia de tarea que resulta de una entidad extraída de un elemento.
+ms.openlocfilehash: 49564c246596dabbf7fbacf2924eeb877698ea1a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840627"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468127"
 ---
 # <a name="tasksuggestion"></a>TaskSuggestion
 
-El elemento **TaskSuggestion** contiene una sugerencia de tarea que se esperó desde una entidad extraída de un elemento. 
+El elemento **TaskSuggestion** contiene una sugerencia de tarea que resulta de una entidad extraída de un elemento. 
   
 ```XML
 <TaskSuggestion>
@@ -31,15 +31,15 @@ El elemento **TaskSuggestion** contiene una sugerencia de tarea que se esperó d
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Posición](position.md) | [TaskString](taskstring.md) | [Assignees](assignees.md)
+[Posición](position.md)  |  [TaskString](taskstring.md)  |  Usuarios [asignados](assignees.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

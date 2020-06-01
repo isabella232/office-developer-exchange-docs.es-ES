@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a62b0640-9800-45a6-a297-2105ff36881e
-description: El elemento RemoveImContactFromGroup define una solicitud para quitar una contacto de un grupo de mensajería instantáneo de mensajería instantánea.
-ms.openlocfilehash: 402cbd6929428d410ce5701b0c1afa901703bc29
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RemoveImContactFromGroup define una solicitud para quitar un contacto de mensajería instantánea de un grupo de mensajería instantánea.
+ms.openlocfilehash: 379994ad5832b05e9f7da61d752f7660a6eec5ad
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837094"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466965"
 ---
 # <a name="removeimcontactfromgroup"></a>RemoveImContactFromGroup
 
-El elemento **RemoveImContactFromGroup** define una solicitud para quitar una contacto de un grupo de mensajería instantáneo de mensajería instantánea. 
+El elemento **RemoveImContactFromGroup** define una solicitud para quitar un contacto de mensajería instantánea de un grupo de mensajería instantánea. 
   
 ```XML
 <RemoveImContactFromGroup>
@@ -29,15 +29,15 @@ El elemento **RemoveImContactFromGroup** define una solicitud para quitar una co
  **RemoveImContactFromGroupType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[ContactId](contactid.md) | [GroupId](groupid.md)
+[ContactId](contactid.md)  |  [GROUPID](groupid.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

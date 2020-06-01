@@ -1,5 +1,5 @@
 ---
-title: Aparición (transición de la zona horaria)
+title: Aparición (transición de zona horaria)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5c1142b1-c51f-42e1-bbb2-57e00cad0fdb
-description: El elemento de repetición representa la aparición del día de la semana del mes en el que se produce la transición de la zona horaria.
-ms.openlocfilehash: bc5160480cc6881bb9d724aa61323f5717d1f2fa
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Representation representa la ocurrencia del día de la semana del mes en que se produce la transición de zona horaria.
+ms.openlocfilehash: 846f6b22f43bcda07b9408d768d0845a5acfe668
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836636"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467980"
 ---
-# <a name="occurrence-time-zone-transition"></a>Aparición (transición de la zona horaria)
+# <a name="occurrence-time-zone-transition"></a>Aparición (transición de zona horaria)
 
-El elemento de **repetición** representa la aparición del día de la semana del mes en el que se produce la transición de la zona horaria. 
+El **elemento** Representation representa la ocurrencia del día de la semana del mes en que se produce la transición de zona horaria. 
   
 ```xml
 <Occurrence/>
@@ -31,51 +31,51 @@ El elemento de **repetición** representa la aparición del día de la semana de
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[RecurringDayTransition](recurringdaytransition.md) <br/> |Representa una transición de la zona horaria que se produce en el mismo día cada año.  <br/> |
+|[RecurringDayTransition](recurringdaytransition.md) <br/> |Representa una transición de zona horaria que se produce el mismo día cada año.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto es un entero que representa la aparición del día de la semana del mes en el que se produce la transición de la zona horaria. En la siguiente tabla se enumera los valores posibles.
+El valor de texto es un entero que representa la ocurrencia del día de la semana del mes en que se produce la transición de zona horaria. En la siguiente tabla se enumeran los valores posibles.
   
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|1  <br/> |La primera aparición del día de la semana desde el comienzo del mes especificado.  <br/> |
-|2  <br/> |La segunda aparición del día de la semana desde el comienzo del mes especificado.  <br/> |
-|3  <br/> |La tercera aparición de día de la semana desde el comienzo del mes especificado.  <br/> |
-|4  <br/> |La aparición cuarto de día de la semana desde el comienzo del mes especificado.  <br/> |
-|-1  <br/> |La primera aparición del día de la semana, desde el final del mes especificado.  <br/> |
-|-2  <br/> |La segunda aparición del día de la semana, desde el final del mes especificado.  <br/> |
-|-3  <br/> |La tercera aparición de día de la semana, desde el final del mes especificado.  <br/> |
-|-4  <br/> |La cuarta aparición del día de la semana, desde el final del mes especificado.  <br/> |
+|1  <br/> |Primera aparición del día de la semana especificado desde el principio del mes.  <br/> |
+|segundo  <br/> |Segunda aparición del día de la semana especificado desde el principio del mes.  <br/> |
+|3  <br/> |La tercera repetición del día de la semana especificado desde el principio del mes.  <br/> |
+|4   <br/> |La cuarta aparición del día de la semana especificado desde el principio del mes.  <br/> |
+|-1  <br/> |Primera aparición del día de la semana especificado a partir del final del mes.  <br/> |
+|-2  <br/> |Segunda aparición del día de la semana especificado a partir del final del mes.  <br/> |
+|-3  <br/> |Tercera aparición del día de la semana especificado a partir del final del mes.  <br/> |
+|-4  <br/> |La cuarta aparición del día de la semana especificado a partir del final del mes.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

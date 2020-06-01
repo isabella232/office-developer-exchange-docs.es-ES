@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ab2ebd9c-388e-45f1-abf9-56e293ef123b
-description: El elemento NoEndRecurrence describe la fecha de inicio de un patrón de periodicidad de elemento que no tiene una fecha de finalización definidas.
-ms.openlocfilehash: fc3eae170f5c07e31d7a80b45836efd07d74e543
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento NoEndRecurrence describe la fecha de inicio de un patrón de periodicidad de un elemento que no tiene una fecha de finalización definida.
+ms.openlocfilehash: 31a3bd6ae2d7ce94debbeebc4fd4f536447433a7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836537"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44466797"
 ---
 # <a name="noendrecurrence"></a>NoEndRecurrence
 
-El elemento **NoEndRecurrence** describe la fecha de inicio de un patrón de periodicidad de elemento que no tiene una fecha de finalización definidas. 
+El elemento **NoEndRecurrence** describe la fecha de inicio de un patrón de periodicidad de un elemento que no tiene una fecha de finalización definida. 
   
 ```xml
 <NoEndRecurrence>
@@ -32,41 +32,41 @@ El elemento **NoEndRecurrence** describe la fecha de inicio de un patrón de per
  **NoEndRecurrenceRangeType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[StartDate (periodicidad)](startdate-recurrence.md) <br/> |Representa la fecha de comienzo de una tarea periódica o elemento de calendario.  <br/> |
+|[StartDate (periodicidad)](startdate-recurrence.md) <br/> |Representa la fecha de inicio de una tarea periódica o un elemento de calendario.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Periodicidad (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Contiene el patrón de periodicidad para los elementos de calendario y las convocatorias de reunión.  <br/> |
-|[Periodicidad (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Contiene información sobre la periodicidad para las tareas repetitivas.  <br/> |
+|[Recurrence (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Contiene el patrón de periodicidad para los elementos de calendario y las convocatorias de reunión.  <br/> |
+|[Periodicidad (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Contiene información de periodicidad para tareas periódicas.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

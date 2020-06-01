@@ -1,5 +1,5 @@
 ---
-title: SetTelephoneAccessFolderEmail (servicio web de mensajería unificada)
+title: SetTelephoneAccessFolderEmail (servicio Web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,19 +10,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 90759da7-6dba-499e-b8c8-e44a016b3198
-description: El elemento SetTelephoneAccessFolderEmail define una solicitud para establecer la carpeta de correo electrónico predeterminada desde la que mensajería unificada va a leer los mensajes a través del teléfono.
-ms.openlocfilehash: e19f151e364411717d5129cbef8c5cc097689f89
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SetTelephoneAccessFolderEmail define una solicitud para establecer la carpeta de correo electrónico predeterminada desde la que la mensajería unificada leerá los mensajes a través del teléfono.
+ms.openlocfilehash: 806bdb1f0c7930a9e89555192aa32ad997716e7e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837461"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467322"
 ---
-# <a name="settelephoneaccessfolderemail-um-web-service"></a>SetTelephoneAccessFolderEmail (servicio web de mensajería unificada)
+# <a name="settelephoneaccessfolderemail-um-web-service"></a>SetTelephoneAccessFolderEmail (servicio Web de mensajería unificada)
 
-El elemento **SetTelephoneAccessFolderEmail** define una solicitud para establecer la carpeta de correo electrónico predeterminada desde la que mensajería unificada va a leer los mensajes a través del teléfono. 
+El elemento **SetTelephoneAccessFolderEmail** define una solicitud para establecer la carpeta de correo electrónico predeterminada desde la que la mensajería unificada leerá los mensajes a través del teléfono. 
   
-[SetTelephoneAccessFolderEmail (servicio web de mensajería unificada)](settelephoneaccessfolderemail-um-web-service.md)
+[SetTelephoneAccessFolderEmail (servicio Web de mensajería unificada)](settelephoneaccessfolderemail-um-web-service.md)
   
 ```xml
 <SetTelephoneAccessFolderEmail>
@@ -33,38 +33,38 @@ El elemento **SetTelephoneAccessFolderEmail** define una solicitud para establec
  **complexType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[base64FolderId (servicio web de mensajería unificada)](base64folderid-um-web-service.md) <br/> |El identificador de la carpeta de correo electrónico.  <br/> |
+|[base64FolderId (servicio Web de mensajería unificada)](base64folderid-um-web-service.md) <br/> |El identificador de la carpeta de correo electrónico.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Operación SetTelephoneAccessFolderEmail (servicio web de mensajería unificada)](settelephoneaccessfolderemail-operation-um-web-service.md)
+[Operación SetTelephoneAccessFolderEmail (servicio Web de mensajería unificada)](settelephoneaccessfolderemail-operation-um-web-service.md)
 

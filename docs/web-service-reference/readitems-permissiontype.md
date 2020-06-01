@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 0a11a802-28e2-436b-b5a9-30fd064675a6
 description: El elemento ReadItems indica si un usuario tiene permiso para leer elementos dentro de una carpeta. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).
-ms.openlocfilehash: bf266c77106f25b90ffd174e25fb0c3972ab91cb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: af6ef5107b5e4f2b3071c0bc9b4b528efea6dcca
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836961"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468274"
 ---
 # <a name="readitems-permissiontype"></a>ReadItems (PermissionType)
 
@@ -30,52 +30,52 @@ El elemento **ReadItems** indica si un usuario tiene permiso para leer elementos
  **PermissionReadAccessType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Permission](permission.md) <br/> |Define el acceso que tiene un usuario a una carpeta. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
+|[Permiso](permission.md) <br/> |Define el acceso que un usuario tiene a una carpeta. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-En la siguiente tabla se enumera los valores posibles para el elemento **ReadItems** . 
+En la siguiente tabla se enumeran los valores posibles para el elemento **ReadItems** . 
   
-**Valores de texto de elemento ReadItems**
+**Valores de texto del elemento ReadItems**
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|None  <br/> |Indica que el usuario no tiene permiso para leer elementos de la carpeta.  <br/> |
+|Ninguno  <br/> |Indica que el usuario no tiene permiso para leer los elementos de la carpeta.  <br/> |
 |FullDetails  <br/> |Indica que el usuario tiene permiso para leer todos los elementos de la carpeta.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Establecimiento de permisos de nivel de carpeta](http://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+[Configuración de permisos de nivel de carpeta](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 

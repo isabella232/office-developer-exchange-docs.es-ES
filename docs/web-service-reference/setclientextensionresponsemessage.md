@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3365e58c-adb3-4d92-92cc-acc95ce36cca
-description: El elemento SetClientExtensionResponseMessage especifica el mensaje de respuesta de una solicitud de SetClientExtension.
-ms.openlocfilehash: 29d126c84f2db6f9c674a5840547451847442e15
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SetClientExtensionResponseMessage especifica el mensaje de respuesta para una solicitud de SetClientExtension.
+ms.openlocfilehash: 3743d2f1643bece044ff7b7c8ccac95bbd7401ea
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837405"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468722"
 ---
 # <a name="setclientextensionresponsemessage"></a>SetClientExtensionResponseMessage
 
-El elemento **SetClientExtensionResponseMessage** especifica el mensaje de respuesta de una solicitud de **SetClientExtension** . 
+El elemento **SetClientExtensionResponseMessage** especifica el mensaje de respuesta para una solicitud de **SetClientExtension** . 
   
 ```XML
 <SetClientExtensionResponseMessage>
@@ -31,15 +31,15 @@ El elemento **SetClientExtensionResponseMessage** especifica el mensaje de respu
  **ResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md)
+[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

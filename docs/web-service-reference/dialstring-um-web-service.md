@@ -1,5 +1,5 @@
 ---
-title: dialString (servicio web de mensajería unificada)
+title: dialString (servicio Web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,22 +10,22 @@ api_name:
 api_type:
 - schema
 ms.assetid: d1e3cd23-48fe-4ebc-a5c5-2226d223f800
-description: El elemento dialString contiene el valor para el número de teléfono a marcar.
-ms.openlocfilehash: f27934fa73ead75ab50e99a79c01cb6a1062e3d8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento dialString contiene el valor del número de teléfono que se marca.
+ms.openlocfilehash: 028ea789efabf49a64bc1d5022d9eb2d8df61c51
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764152"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467826"
 ---
-# <a name="dialstring-um-web-service"></a>dialString (servicio web de mensajería unificada)
+# <a name="dialstring-um-web-service"></a>dialString (servicio Web de mensajería unificada)
 
-El elemento **dialString** contiene el valor para el número de teléfono a marcar. 
+El elemento **dialString** contiene el valor del número de teléfono que se marca. 
   
-- [PlayOnPhone (servicio web de mensajería unificada)](playonphone-um-web-service.md) 
-- [dialString (servicio web de mensajería unificada)](dialstring-um-web-service.md) 
-- [PlayOnPhoneGreeting (servicio web de mensajería unificada)](playonphonegreeting-um-web-service.md) 
-- [dialString (servicio web de mensajería unificada)](dialstring-um-web-service.md)
+- [Reproducir (servicio Web de mensajería unificada)](playonphone-um-web-service.md) 
+- [dialString (servicio Web de mensajería unificada)](dialstring-um-web-service.md) 
+- [PlayOnPhoneGreeting (servicio Web de mensajería unificada)](playonphonegreeting-um-web-service.md) 
+- [dialString (servicio Web de mensajería unificada)](dialstring-um-web-service.md)
   
 ```xml
 <dialString/>
@@ -34,40 +34,40 @@ El elemento **dialString** contiene el valor para el número de teléfono a marc
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[PlayOnPhone (servicio web de mensajería unificada)](playonphone-um-web-service.md) <br/> |Define una solicitud para reproducir un mensaje en un teléfono.  <br/> |
-|[PlayOnPhoneGreeting (servicio web de mensajería unificada)](playonphonegreeting-um-web-service.md) <br/> |Define una solicitud a reproducir un saludo en un teléfono.  <br/> |
+|[Reproducir (servicio Web de mensajería unificada)](playonphone-um-web-service.md) <br/> |Define una solicitud para reproducir un mensaje en un teléfono.  <br/> |
+|[PlayOnPhoneGreeting (servicio Web de mensajería unificada)](playonphonegreeting-um-web-service.md) <br/> |Define una solicitud para reproducir un saludo en un teléfono.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto. El valor de texto debe contener un número marcado válido.
+Se requiere un valor de texto. El valor de texto debe contener un número de marcado válido.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [PlayOnPhone (servicio web de mensajería unificada)](playonphone-um-web-service.md)  
-- [Operación PlayOnPhone (servicio web de mensajería unificada)](playonphone-operation-um-web-service.md)  
-- [PlayOnPhoneGreeting (servicio web de mensajería unificada)](playonphonegreeting-um-web-service.md)  
-- [Operación PlayOnPhoneGreeting (servicio web de mensajería unificada)](playonphonegreeting-operation-um-web-service.md)
+- [Reproducir (servicio Web de mensajería unificada)](playonphone-um-web-service.md)  
+- [Operación reproducir (servicio Web de mensajería unificada)](playonphone-operation-um-web-service.md)  
+- [PlayOnPhoneGreeting (servicio Web de mensajería unificada)](playonphonegreeting-um-web-service.md)  
+- [Operación PlayOnPhoneGreeting (servicio Web de mensajería unificada)](playonphonegreeting-operation-um-web-service.md)
 

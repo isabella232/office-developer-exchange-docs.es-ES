@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4ac8fb39-6b92-4a88-bc13-17715ef6b63c
-description: El elemento NewDisplayName contiene el nombre para mostrar actualizado de un grupo de mensajería instantáneo.
-ms.openlocfilehash: c440feb0cef3600d7ee0c2081da59af9df816841
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento NewDisplayName contiene el nombre para mostrar actualizado de un grupo de mensajería instantánea.
+ms.openlocfilehash: e3355cfd990eb9c00ccd514dcc914a3e3831b08f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836528"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44466846"
 ---
 # <a name="newdisplayname"></a>NewDisplayName
 
-El elemento **NewDisplayName** contiene el nombre para mostrar actualizado de un grupo de mensajería instantáneo. 
+El elemento **NewDisplayName** contiene el nombre para mostrar actualizado de un grupo de mensajería instantánea. 
   
 ```XML
 <NewDisplayName></NewDisplayName>
@@ -26,15 +26,15 @@ El elemento **NewDisplayName** contiene el nombre para mostrar actualizado de un
  **NonEmptyStringType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **NewDisplayName** es el nombre para mostrar actualizado de un grupo de mensajería instantáneo. 
+El valor de texto del elemento **NewDisplayName** es el nombre para mostrar actualizado de un grupo de mensajería instantánea. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

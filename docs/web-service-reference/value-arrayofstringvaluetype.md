@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 83865da6-0bcd-445a-ba3c-0eff481b14ab
-description: El elemento de valor especifica un valor en una matriz de las propiedades de rol asociadas con una matriz de atribuciones.
-ms.openlocfilehash: 0475dc1a58f48f1fd774d01c0da39e53dbcc4bc3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Value especifica un valor en una matriz de propiedades de rol asociadas con una matriz de atribuciones.
+ms.openlocfilehash: ceca9290ea93a505709d6046d1b6ab8e2c32f4ea
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840935"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467623"
 ---
 # <a name="value-arrayofstringvaluetype"></a>Valor (ArrayOfStringValueType)
 
-El elemento de **valor** especifica un valor en una matriz de las propiedades de rol asociadas con una matriz de atribuciones. 
+El elemento **Value** especifica un valor en una matriz de propiedades de rol asociadas con una matriz de atribuciones. 
   
 ```XML
 <Value></Value>
@@ -27,23 +27,23 @@ El elemento de **valor** especifica un valor en una matriz de las propiedades de
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Valores (ArrayOfStringValueType)](values-arrayofstringvaluetype.md)
+[Values (ArrayOfStringValueType)](values-arrayofstringvaluetype.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **valor** es un valor en una matriz de las propiedades de rol asociadas con una matriz de atribuciones. 
+El valor de texto del elemento **Value** es un valor en una matriz de propiedades de rol asociadas con una matriz de atribuciones. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

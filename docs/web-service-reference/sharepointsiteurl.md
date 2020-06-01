@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: de9a7e43-518e-49aa-9826-f54bab4279a3
-description: El elemento SharePointSiteURL contiene el localizador uniforme de recursos (URL) del sitio de SharePoint que está vinculado con el buzón de sitio.
-ms.openlocfilehash: 34f9a04ef8b0f46bb14ec467b0fdd7db8882430e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SharePointSiteURL contiene el localizador uniforme de recursos (URL) del sitio de SharePoint vinculado con el buzón del sitio.
+ms.openlocfilehash: 461ca904e9a050d20b9e067cb40875939608c101
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837473"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467308"
 ---
 # <a name="sharepointsiteurl"></a>SharePointSiteUrl
 
-El elemento **SharePointSiteURL** contiene el localizador uniforme de recursos (URL) del sitio de SharePoint que está vinculado con el buzón de sitio. 
+El elemento **SharePointSiteURL** contiene el localizador uniforme de recursos (URL) del sitio de SharePoint vinculado con el buzón del sitio. 
   
 ```XML
 <SharePointSiteURL></SharePointSiteURL>
@@ -27,15 +27,15 @@ El elemento **SharePointSiteURL** contiene el localizador uniforme de recursos (
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -43,7 +43,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **SharePointSiteURL** es la dirección URL del sitio de SharePoint que está vinculada con el buzón de sitio. 
+El valor de texto del elemento **SharePointSiteURL** es la dirección URL del sitio de SharePoint vinculado con el buzón del sitio. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

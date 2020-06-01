@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: a14af788-beee-452c-b5d0-37bcb4ef02ff
-description: El elemento MailboxDataArray contiene una lista de buzones de correo para consultar la información de disponibilidad.
-ms.openlocfilehash: b76e71ee9127dc2221e0065a27d3c781f8b5786a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MailboxDataArray contiene una lista de buzones para consultar la información de disponibilidad.
+ms.openlocfilehash: 894bf97a0d633d7eef0434331ccf1580fcba386e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836283"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468197"
 ---
 # <a name="mailboxdataarray"></a>MailboxDataArray
 
-El elemento **MailboxDataArray** contiene una lista de buzones de correo para consultar la información de disponibilidad. 
+El elemento **MailboxDataArray** contiene una lista de buzones para consultar la información de disponibilidad. 
   
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -39,40 +39,40 @@ El elemento **MailboxDataArray** contiene una lista de buzones de correo para co
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[MailboxData](mailboxdata.md) <br/> |Representa un usuario de buzón de correo individual y opciones para el tipo de datos que se devolverá sobre el usuario del buzón.  <br/> |
+|[MailboxData](mailboxdata.md) <br/> |Representa un usuario de buzón individual y opciones para el tipo de datos que se devolverán sobre el usuario del buzón.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |Contiene los argumentos utilizados para obtener información de disponibilidad del usuario. Esto es un elemento raíz.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityRequest` <br/> |
+|[GetUserAvailabilityRequest](getuseravailabilityrequest.md) <br/> |Contiene los argumentos usados para obtener información de disponibilidad del usuario. Se trata de un elemento raíz.  <br/> A continuación se encuentra la expresión XPath de este elemento:  <br/>  `/GetUserAvailabilityRequest` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft® Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft® Exchange Server 2007 que tenga instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)
 - [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
-- [Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ead22eab-f1e7-48b4-a165-db0e49fe86a8
-description: El elemento AddressEntity especifica una entidad única dirección.
-ms.openlocfilehash: 6a46a64c9824efdd8df6a08fe1a159e7e42b3731
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AddressEntity especifica una única entidad de dirección.
+ms.openlocfilehash: c597557fe02a9c0ff7ed3c9862e1662cfbae596a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763424"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466909"
 ---
 # <a name="addressentity"></a>AddressEntity
 
-El elemento **AddressEntity** especifica una entidad única dirección. 
+El elemento **AddressEntity** especifica una única entidad de dirección. 
   
 ```XML
 <AddressEntity>
@@ -29,24 +29,24 @@ El elemento **AddressEntity** especifica una entidad única dirección.
  **AddressEntityType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Dirección (cadena)](address-string.md) <br/> |Especifica una dirección.  <br/> |
+|[Address (cadena)](address-string.md) <br/> |Especifica una dirección.  <br/> |
 |[Position](position.md) <br/> |Especifica la posición en un mensaje de correo electrónico.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Direcciones (ArrayOfAddressEntitiesType)](addresses-arrayofaddressentitiestype.md) <br/> |Especifica una matriz de elementos de **AddressEntity** .  <br/> |
+|[Direcciones (ArrayOfAddressEntitiesType)](addresses-arrayofaddressentitiestype.md) <br/> |Especifica una matriz de elementos **AddressEntity** .  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -62,12 +62,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

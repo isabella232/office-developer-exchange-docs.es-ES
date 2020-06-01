@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 40238799-25f0-431c-91be-34b915110f03
-description: El elemento InlineImageUrlTemplate especifica una plantilla para una dirección URL de imagen de en línea.
-ms.openlocfilehash: 3e989a285d0f571656b7e50c2f2b59928bfa3081
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento InlineImageUrlTemplate especifica una plantilla para una dirección URL de imagen incorporada.
+ms.openlocfilehash: 2cb9cd31d1adf0c6fecf803a8b42bc88330a14d1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835933"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468736"
 ---
 # <a name="inlineimageurltemplate"></a>InlineImageUrlTemplate
 
-El elemento **InlineImageUrlTemplate** especifica una plantilla para una dirección URL de imagen de en línea. 
+El elemento **InlineImageUrlTemplate** especifica una plantilla para una dirección URL de imagen incorporada. 
   
 ```XML
 <InlineImageUrlTemplate></InlineImageUrlTemplate>
@@ -26,25 +26,25 @@ El elemento **InlineImageUrlTemplate** especifica una plantilla para una direcci
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ItemShape](itemshape.md) <br/> |Identifica un conjunto de propiedades para devolver una respuesta [GetItem operation](getitem-operation.md), [operación FindItem](finditem-operation.md)o [SyncFolderItems](syncfolderitems-operation.md) .  <br/> |
+|[ItemShape](itemshape.md) <br/> |Identifica un conjunto de propiedades que se devolverán en una [operación GetItem](getitem-operation.md), la [operación FindItem](finditem-operation.md)o la respuesta de [operación SyncFolderItems](syncfolderitems-operation.md) .  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **InlineImageUrlTemplate** especifica una plantilla para una dirección URL de imagen de en línea. 
+El valor de texto del elemento **InlineImageUrlTemplate** especifica una plantilla para una dirección URL de imagen incorporada. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

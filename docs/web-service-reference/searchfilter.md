@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1a7ee364-b7da-4197-aab2-57134537109a
-description: El elemento SearchFilter contiene la cadena de consulta para filtrar los buzones de correo que se devuelven de una solicitud de GetSearchableMailboxes.
-ms.openlocfilehash: b71d8dd862e9338afc145545df4cd29e8bcc3dc8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SearchFilter contiene la cadena de consulta para filtrar los buzones que se van a devolver desde una solicitud GetSearchableMailboxes.
+ms.openlocfilehash: 5bc7389ecc54dd6d1c97debdb97e6fce42517ef4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837285"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467434"
 ---
 # <a name="searchfilter"></a>SearchFilter
 
-El elemento **SearchFilter** contiene la cadena de consulta para filtrar los buzones de correo que se devuelven de una solicitud de **GetSearchableMailboxes** . 
+El elemento **SearchFilter** contiene la cadena de consulta para filtrar los buzones que se van a devolver desde una solicitud **GetSearchableMailboxes** . 
   
 ```XML
 <SearchFilter></SearchFilter>
@@ -26,15 +26,15 @@ El elemento **SearchFilter** contiene la cadena de consulta para filtrar los buz
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **SearchFilter** es una cadena de consulta a buzones de correo de filtro para la búsqueda de detección. 
+El valor de texto del elemento **SearchFilter** es una cadena de consulta para filtrar buzones para la búsqueda de detección. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: fba018d5-0c65-4e1b-9767-d1ce8b356278
-description: El elemento SPA indica si se requiere la autenticación de contraseña segura (SPA).
-ms.openlocfilehash: 1fb0f3bb40e64be89eae7dfc208d51387f532191
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SPA indica si se requiere autenticación de contraseña segura (SPA).
+ms.openlocfilehash: cf57b3a6046b1b9b030b7cae81381189eee92c1c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837533"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467644"
 ---
 # <a name="spa-pox"></a>SPA (POX)
 
-El elemento **SPA** indica si se requiere la autenticación de contraseña segura (SPA). 
+El elemento **Spa** indica si se requiere autenticación de contraseña segura (Spa). 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -36,25 +36,25 @@ El elemento **SPA** indica si se requiere la autenticación de contraseña segur
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar a un cliente en el equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.  <br/> |
+|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto indica si se requiere la SPA. Si el valor de texto está **activado**, se requiere SPA.
+El valor de texto indica si se requiere SPA. Si el valor de texto está **activado**, se requiere Spa.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -64,5 +64,5 @@ Si este elemento no está presente, el valor predeterminado se establece en **on
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

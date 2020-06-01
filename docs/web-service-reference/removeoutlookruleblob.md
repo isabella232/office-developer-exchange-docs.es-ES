@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 69614475-8bd3-4475-b988-614fe9cad8ef
-description: El elemento RemoveOutlookRuleBlob indica si se debe quitar el blob de regla de Microsoft Outlook.
-ms.openlocfilehash: 45336e296c39161704ce6e0d51fba1d2c61797b1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RemoveOutlookRuleBlob indica si se debe quitar el objeto binario de la regla de Microsoft Outlook.
+ms.openlocfilehash: b4202ab52bf16d1ad1546ec963cd8b9dacd2bd63
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837102"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467672"
 ---
 # <a name="removeoutlookruleblob"></a>RemoveOutlookRuleBlob
 
-El elemento **RemoveOutlookRuleBlob** indica si se debe quitar el blob de regla de Microsoft Outlook. 
+El elemento **RemoveOutlookRuleBlob** indica si se debe quitar el objeto binario de la regla de Microsoft Outlook. 
   
 [UpdateInboxRules](updateinboxrules.md)
   
@@ -34,29 +34,29 @@ El elemento **RemoveOutlookRuleBlob** indica si se debe quitar el blob de regla 
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UpdateInboxRules](updateinboxrules.md) <br/> |Define una solicitud para actualizar las reglas de bandeja de entrada en un buzón en el almacén del servidor.  <br/> |
+|[UpdateInboxRules](updateinboxrules.md) <br/> |Define una solicitud para actualizar las reglas de la bandeja de entrada en un buzón de correo en el almacén del servidor.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** indica que se debe quitar el blob de regla de Outlook. Un valor de texto de **false** indica que no se debe quitar el blob de regla de Outlook. 
+Un valor de texto de **true** indica que se debe quitar el BLOB de regla de Outlook. Un valor de texto **falso** indica que el BLOB de la regla de Outlook no se debe quitar. 
   
 ## <a name="remarks"></a>Comentarios
 
-Este elemento se establece en **true** para permitir una actualización de la regla de bandeja de entrada. 
+Establezca este elemento en **true** para permitir una actualización de la regla de la bandeja de entrada. 
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -64,9 +64,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
@@ -76,5 +76,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación de UpdateInboxRules](updateinboxrules-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

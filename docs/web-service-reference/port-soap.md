@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 7db8ceb3-0bca-4822-a1aa-f0947b770f26
-description: El elemento de puerto representa el número de puerto que se usará para el protocolo.
-ms.openlocfilehash: 2213dc1ba9f604f515c8b6ccf013dc44fa541a67
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Port representa el número de puerto que se va a usar para el protocolo.
+ms.openlocfilehash: 8ed75cbbfbc111e17ef08acbd71329a419b4e285
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836841"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467728"
 ---
 # <a name="port-soap"></a>Puerto (SOAP)
 
-El elemento de **puerto** representa el número de puerto que se usará para el protocolo. 
+El elemento **Port** representa el número de puerto que se va a usar para el protocolo. 
   
 ```XML
 <Port/>
@@ -27,33 +27,33 @@ El elemento de **puerto** representa el número de puerto que se usará para el 
  **int**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ProtocolConnection (SOAP)](protocolconnection-soap.md) <br/> |Representa la conexión de protocolo del cliente de servidor Web.  <br/> |
+|[ProtocolConnection (SOAP)](protocolconnection-soap.md) <br/> |Representa la conexión de protocolo del cliente web del servidor.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor es el número de puerto que se usará para el protocolo.
+El valor es el número de puerto que se va a usar para el protocolo.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también

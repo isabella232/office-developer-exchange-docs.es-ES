@@ -1,5 +1,5 @@
 ---
-title: Standard
+title: Estándar
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d598f0a6-e296-423f-8ce5-3da57cfd8189
-description: El elemento estándar representa la fecha y hora cuando se cambia la hora del horario de verano a la hora estándar.
-ms.openlocfilehash: c121e959f243d982cfe50ed6b4ef39a82dae2cc8
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: El elemento estándar representa la fecha y hora cuando cambia el horario de verano a la hora estándar.
+ms.openlocfilehash: 1214a1debb53c9a31ca7c92a0c9e5c0722960d75
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353437"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467567"
 ---
-# <a name="standard"></a>Standard
+# <a name="standard"></a>Estándar
 
-El elemento **estándar** representa la fecha y hora cuando se cambia la hora del horario de verano a la hora estándar. 
+El elemento **estándar** representa la fecha y hora cuando cambia el horario de verano a la hora estándar. 
   
 ```xml
 <Standard TimeZoneName="">
@@ -43,43 +43,43 @@ El elemento **estándar** representa la fecha y hora cuando se cambia la hora de
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
 |**TimeZoneName** <br/> |Describe el nombre de la zona horaria.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Offset](offset.md) <br/> |Describe el desplazamiento desde el [BaseOffset](baseoffset.md). Junto con el elemento **BaseOffset** , el elemento de **desplazamiento** identifica si el tiempo es la hora estándar o el horario de verano.  <br/> |
-|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |Describe un patrón de periodicidad anual relativa para una fecha de transición de la zona horaria.  <br/> |
-|[AbsoluteDate](absolutedate.md) <br/> |Representa la fecha cuando se cambia el tiempo de hora estándar o el horario de verano.  <br/> |
-|[Time (TimeChangeType)](time-timechangetype.md) <br/> |Describe la hora cuando se cambia el tiempo entre la hora estándar y el horario de verano.  <br/> |
+|[Offset](offset.md) <br/> |Describe el desplazamiento desde [BaseOffset](baseoffset.md). Junto con el elemento **BaseOffset** , el elemento **offset** identifica si la hora es estándar o el horario de verano.  <br/> |
+|[RelativeYearlyRecurrence](relativeyearlyrecurrence.md) <br/> |Describe un patrón de periodicidad anual relativo para una fecha de transición de zona horaria.  <br/> |
+|[AbsoluteDate](absolutedate.md) <br/> |Representa la fecha en que cambia el horario estándar o el horario de verano.  <br/> |
+|[Hora (TimeChangeType)](time-timechangetype.md) <br/> |Describe el momento en que cambia el tiempo entre el horario estándar y el horario de verano.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[MeetingTimeZone](meetingtimezone.md) <br/> |Representa la zona horaria de la ubicación donde se hospeda la reunión.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

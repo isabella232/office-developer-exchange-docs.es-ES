@@ -1,5 +1,5 @@
 ---
-title: Objeto StatusEvent
+title: StatusEvent
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d3901818-2640-4bed-aad8-21a61aee62a1
-description: El elemento de objeto StatusEvent representa una notificación que no se ha producido ninguna actividad de nuevo en el buzón de correo.
-ms.openlocfilehash: e214918f9795e9e29061d4aac72ab144d2b24267
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento StatusEvent representa una notificación de que no se ha producido ninguna actividad nueva en el buzón.
+ms.openlocfilehash: 8158a47937a810be2ea22346384b4e61da56ac48
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837592"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44468260"
 ---
-# <a name="statusevent"></a>Objeto StatusEvent
+# <a name="statusevent"></a>StatusEvent
 
-El elemento de **objeto StatusEvent** representa una notificación que no se ha producido ninguna actividad de nuevo en el buzón de correo. 
+El elemento **StatusEvent** representa una notificación de que no se ha producido ninguna actividad nueva en el buzón. 
   
 ```xml
 <StatusEvent>
@@ -32,54 +32,54 @@ El elemento de **objeto StatusEvent** representa una notificación que no se ha 
  **BaseNotificationEventType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Marca de agua](watermark.md) <br/> |Representa la última marca de agua válido para una suscripción a.  <br/> |
+|[Watermark](watermark.md) <br/> |Representa la última marca de agua válida para una suscripción.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Notificación](notification-ex15websvcsotherref.md) <br/> |Contiene información acerca de la suscripción y los eventos que se han producido desde la última notificación.  <br/> |
+|[Notificación](notification-ex15websvcsotherref.md) <br/> |Contiene información sobre la suscripción y los eventos que se han producido desde la última notificación.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El elemento de **objeto StatusEvent** se devuelve en una notificación para uno de los siguientes motivos: 
+El elemento **StatusEvent** se devuelve en una notificación por una de las siguientes razones: 
   
-- Un cliente de extracción emite una solicitud GetEvents en una suscripción que no tiene ninguna actividad.
+- Un cliente de extracción emite una solicitud GetEvents en una suscripción que no tiene actividad.
     
 - Un cliente de inserción no tiene eventos en la cola cuando se ha alcanzado el [StatusFrequency](statusfrequency.md) . 
     
-El **objeto StatusEvent**[marca de agua](watermark.md) se usa en una aplicación cliente de la misma manera que las demás marcas de agua de tipo de evento. Sin embargo, la marca de agua para el **objeto StatusEvent** no es el mismo que las marcas de agua que se usa para otros eventos. Por ejemplo, una suscripción tiene eventos con marcas de agua de 1, 2 y 3 y los eventos se han comunicado correctamente en una notificación. Se produce un período de inactividad y se envía una solicitud de **GetEvents** . El servidor de acceso de cliente (CAS) devuelve un evento de estado e incluye la última marca de agua, 3, como la [PreviousWatermark](previouswatermark.md) y la actual [marca de agua](watermark.md).
+La **StatusEvent**[marca de agua](watermark.md) StatusEvent se usa en una aplicación cliente de la misma manera que las marcas de agua de otro tipo de evento. Sin embargo, la marca de agua de **StatusEvent** no es la misma que las marcas de agua usadas para otros eventos. Por ejemplo, una suscripción tiene eventos con marcas de agua de 1, 2 y 3, y estos eventos se han comunicado correctamente en una notificación. Se produce un período de inactividad y se envía una solicitud **GetEvents** . El servidor de acceso de cliente (CAS) devuelve un evento status e incluye la última marca de agua, 3, como [PreviousWatermark](previouswatermark.md) y la [marca de agua](watermark.md)actual.
   
-La marca de agua no seguirá siendo la misma en todos los casos. Entradas de eventos se mantienen durante 30 días. Para mantener una suscripción activa, las entidades Emisoras actualizan periódicamente las marcas de agua para las colas de suscripción. Las marcas de agua actualizados se envían a los clientes para mantener una suscripción activa.
+La marca de agua no seguirá siendo la misma en todos los casos. Las entradas del evento se mantienen durante 30 días. Para mantener una suscripción activa, las entidades de certificación actualizan periódicamente las marcas de agua de las colas de suscripción. Las marcas de agua actualizadas se envían a los clientes para mantener una suscripción activa.
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Operación de suscripción](subscribe-operation.md)
+[Operación subscribe](subscribe-operation.md)
   
 [Operación GetEvents](getevents-operation.md)
   
-[Cancelar la operación de suscripción](unsubscribe-operation.md)
+[Operación unsubscribe](unsubscribe-operation.md)
 

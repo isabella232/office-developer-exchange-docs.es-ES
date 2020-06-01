@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3725cbd4-9bc1-4f7d-8929-b2c68cb46114
-description: El elemento MinimumSuggestionQuality define la calidad de sugerencias de reunión que se devuelve en la respuesta.
-ms.openlocfilehash: ac79682bd761f678f23fc2d698a50fd7704f6fab
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MinimumSuggestionQuality define la calidad de las sugerencias de reunión que se devolverán en la respuesta.
+ms.openlocfilehash: c85cbf65a63ac0b09408c14e01889f97a05b27b0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836468"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467483"
 ---
 # <a name="minimumsuggestionquality"></a>MinimumSuggestionQuality
 
-El elemento **MinimumSuggestionQuality** define la calidad de sugerencias de reunión que se devuelve en la respuesta. 
+El elemento **MinimumSuggestionQuality** define la calidad de las sugerencias de reunión que se devolverán en la respuesta. 
   
 [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -36,48 +36,48 @@ El elemento **MinimumSuggestionQuality** define la calidad de sugerencias de reu
  **SuggestionQuality**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Contiene las opciones para obtener información de la sugerencia de reunión.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
+|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Contiene las opciones para obtener información sobre las sugerencias de la reunión.  <br/> A continuación se encuentra la expresión XPath de este elemento:  <br/>  `/GetUserAvailabilityRequest/SuggestionViewOptions` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto. En la siguiente tabla se enumera los valores posibles para este elemento:
+Se requiere un valor de texto. En la siguiente tabla se enumeran los valores posibles para este elemento:
   
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|**Excelente** <br/> |0% de los asistentes tienen un conflicto con la hora de la reunión sugerida.  <br/> |
-|**Buena** <br/> |El porcentaje que se considera una buena se establece mediante el elemento [GoodThreshold](goodthreshold.md) .  <br/> |
-|**Razonable** <br/> |El porcentaje que se considera razonable se establece mediante el elemento [GoodThreshold](goodthreshold.md) .  <br/> |
-|**Deficiente** <br/> |50% o más de los asistentes tienen un conflicto con la hora de la reunión sugerida.  <br/> |
+|**Excelente** <br/> |el 0% de los asistentes tiene un conflicto con la hora de reunión sugerida.  <br/> |
+|**Good** <br/> |El porcentaje que se considera correcto se establece mediante el elemento [GoodThreshold](goodthreshold.md) .  <br/> |
+|**Imparcial** <br/> |El porcentaje que se considera justo se establece mediante el elemento [GoodThreshold](goodthreshold.md) .  <br/> |
+|**Deficiente** <br/> |el 50% o más de los asistentes tienen un conflicto con la hora de reunión sugerida.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Este elemento es necesario si se usa el elemento [SuggestionsViewOptions](suggestionsviewoptions.md) . 
+Este elemento es obligatorio si se usa el elemento [SuggestionsViewOptions](suggestionsviewoptions.md) . 
   
 > [!NOTE]
-> El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente. 
+> El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes. 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -86,5 +86,5 @@ Este elemento es necesario si se usa el elemento [SuggestionsViewOptions](sugges
 [Operación GetUserAvailability](getuseravailability-operation.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: b0124b70-28ab-4484-ac81-465a42f42776
-description: El elemento de mensaje contiene el mensaje de error de un error de respuesta de detección automática.
-ms.openlocfilehash: fdcf2f4c7021948aad1ad25392c91203656aaa75
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento message contiene el mensaje de error de una respuesta de detección automática de errores.
+ms.openlocfilehash: 5e2f9d5b2f9ad45359f180f1121a34ccf9cd89cc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836448"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44467994"
 ---
 # <a name="message-pox"></a>Mensaje (POX)
 
-El elemento de **mensaje** contiene el mensaje de error de un error de respuesta de detección automática. 
+El elemento **Message** contiene el mensaje de error de una respuesta de detección automática de errores. 
   
 [Error (POX)](error-pox.md)
   
@@ -30,29 +30,29 @@ El elemento de **mensaje** contiene el mensaje de error de un error de respuesta
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Error (POX)](error-pox.md) <br/> |Contiene una respuesta de error de detección automática.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa el mensaje de error para el error de respuesta de detección automática.
+El valor de texto representa el mensaje de error de la respuesta de detección automática de errores.
   
 ## <a name="see-also"></a>Vea también
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

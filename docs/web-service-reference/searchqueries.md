@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 67328dab-321b-45ad-929e-cd83e65ad87e
-description: El elemento SearchQueries contiene una lista de buzones de correo y consultas asociadas para la búsqueda de detección.
-ms.openlocfilehash: 182f1ba63b4226ea4ff6445ae9f039197dec38a5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SearchQueries contiene una lista de buzones y consultas asociadas para la búsqueda de detección.
+ms.openlocfilehash: 66015d71238b4a1055a71aff539ca50150f2a247
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837316"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466916"
 ---
 # <a name="searchqueries"></a>SearchQueries
 
-El elemento **SearchQueries** contiene una lista de buzones de correo y consultas asociadas para la búsqueda de detección. 
+El elemento **SearchQueries** contiene una lista de buzones y consultas asociadas para la búsqueda de detección. 
   
 ```XML
 <SearchQueries>
@@ -28,11 +28,11 @@ El elemento **SearchQueries** contiene una lista de buzones de correo y consulta
  ****
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -40,7 +40,7 @@ Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[SearchMailboxes](searchmailboxes.md) | [SearchMailboxesResult](searchmailboxesresult.md)
+[SearchMailboxes](searchmailboxes.md)  |  [SearchMailboxesResult](searchmailboxesresult.md)
   
 ## <a name="remarks"></a>Comentarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

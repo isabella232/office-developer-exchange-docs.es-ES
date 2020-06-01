@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: be003e12-3496-468d-a61c-48af0b819654
-description: El elemento UserRoles especifica las funciones de usuario que el usuario realiza la llamada, o el usuario que la aplicación de socio llamada actúa como, desea aplicar a la llamada actual.
-ms.openlocfilehash: 19dc1a7e00decb9141326b53b650d72101013c11
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UserRoles especifica las funciones de usuario que el usuario que realiza la llamada o el usuario en el que actúa la aplicación de socio de llamada desea aplicar a la llamada actual.
+ms.openlocfilehash: 5155b82781321b16d1b58fdcaffe7b8cf2372717
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840926"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467133"
 ---
 # <a name="userroles"></a>UserRoles
 
-El elemento **UserRoles** especifica las funciones de usuario que el usuario realiza la llamada, o el usuario que la aplicación de socio llamada actúa como, desea aplicar a la llamada actual. 
+El elemento **UserRoles** especifica las funciones de usuario que el usuario que realiza la llamada o el usuario en el que actúa la aplicación de socio de llamada desea aplicar a la llamada actual. 
   
 ```XML
 <UserRoles>
@@ -28,15 +28,15 @@ El elemento **UserRoles** especifica las funciones de usuario que el usuario rea
  **NonEmptyArrayOfRoleType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Role](role.md)
+[Rol](role.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

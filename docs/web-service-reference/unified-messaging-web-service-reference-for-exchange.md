@@ -1,5 +1,5 @@
 ---
-title: Referencia de servicio de web de mensajería unificada de Exchange
+title: Referencia del servicio Web de mensajería unificada para Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,39 +10,39 @@ api_name:
 api_type:
 - schema
 ms.assetid: 83afea8a-c716-41df-9eb2-e1000357afb6
-description: Buscar contenido de referencia para el servicio web de mensajería unificada (UM) de Exchange.
-ms.openlocfilehash: 9e124f504ecee517edc51610696f06729904d75f
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Busque contenido de referencia para el servicio Web de mensajería unificada (UM) en Exchange.
+ms.openlocfilehash: e4bb63f34650dae8fc28016196c97a6b79e69df0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354277"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467378"
 ---
-# <a name="unified-messaging-web-service-reference-for-exchange"></a>Referencia de servicio de web de mensajería unificada de Exchange
+# <a name="unified-messaging-web-service-reference-for-exchange"></a>Referencia del servicio Web de mensajería unificada para Exchange
 
-Buscar contenido de referencia para el servicio web de mensajería unificada (UM) de Exchange.
+Busque contenido de referencia para el servicio Web de mensajería unificada (UM) en Exchange.
   
-El servicio web de mensajería unificada (UM) proporciona un punto de extensibilidad que permite a los clientes leer y cambiar la información acerca de las propiedades de mensajería unificada y solicitar que los elementos del almacén de buzón se analizado y determinados a través de un dispositivo de telefonía. Esta sección contiene información acerca de las operaciones y los elementos que componen los mensajes XML para el servicio web de mensajería unificada. Este contenido se aplica a la dirección URL de extremo de servicio que es similar a https://\<yourclientaccessserver\>.com/EWS/UM2007Legacy.asmx. 
+El servicio Web de mensajería unificada (UM) proporciona un punto de extensibilidad que permite a los clientes leer y cambiar información acerca de las propiedades de mensajería unificada y solicitar que los elementos del almacén de buzones se analicen y dicten a través de un dispositivo de telefonía. Esta sección contiene información sobre las operaciones y los elementos que conforman los mensajes XML para el servicio Web de mensajería unificada. Este contenido se aplica a la dirección URL del punto de conexión de servicio que es similar a https:// \<yourclientaccessserver\> . com/EWS/UM2007Legacy. asmx. 
   
-Puede usar el servicio Detección automática para obtener la dirección URL para el extremo de servicio web de mensajería unificada. Para obtener más información acerca de la detección automática, vea [detección automática de Exchange](../exchange-web-services/autodiscover-for-exchange.md).
+Puede usar el servicio de detección automática para obtener la dirección URL del extremo del servicio Web de mensajería unificada. Para obtener más información acerca de la detección automática, consulte [detección automática de Exchange](../exchange-web-services/autodiscover-for-exchange.md).
   
 > [!NOTE]
->  Para las versiones de Exchange a partir de Exchange 2010, se recomienda que use las operaciones de mensajería unificada que están disponibles en [Exchange Web Services (EWS)](http://msdn.microsoft.com/library/60285497-0c4e-4e51-84e1-34dd6d89a5d8%28Office.15%29.aspx) en lugar del servicio web de mensajería unificada, por los motivos siguientes: 
-> - Las características de mensajería unificada basada en EWS tienen soporte de primera clase en la API administrada de EWS. 
-> - En las versiones de Exchange a partir de Exchange 2010, se agregan nuevas características de mensajería unificada para EWS, pero no para el servicio web de mensajería unificada. 
+>  Para las versiones de Exchange a partir de Exchange 2010, le recomendamos que use las operaciones de mensajería unificada que están disponibles en los [servicios web Exchange (EWS)](https://msdn.microsoft.com/library/60285497-0c4e-4e51-84e1-34dd6d89a5d8%28Office.15%29.aspx) en lugar del servicio Web de mensajería unificada, por los siguientes motivos: 
+> - Las características de mensajería unificada basadas en EWS tienen compatibilidad de primera clase en la API administrada de EWS. 
+> - En las versiones de Exchange a partir de Exchange 2010, se agregan nuevas características de mensajería unificada a EWS, pero no al servicio Web de mensajería unificada. 
   
-El servicio web de mensajería unificada no tiene un esquema explícito.
+El servicio Web de mensajería unificada no tiene un esquema explícito.
   
 ## <a name="in-this-section"></a>En esta sección
 <a name="bk_InThisSection"> </a>
 
-- [Operaciones de servicio de web de mensajería unificadas para Exchange](unified-messaging-web-service-operations-for-exchange.md)   
-- [Elementos XML de servicio de web de Unified Messaging para Exchange](unified-messaging-web-service-xml-elements-for-exchange.md)
+- [Operaciones del servicio Web de mensajería unificada para Exchange](unified-messaging-web-service-operations-for-exchange.md)   
+- [Elementos XML de servicio Web de mensajería unificada para Exchange](unified-messaging-web-service-xml-elements-for-exchange.md)
     
 ## <a name="see-also"></a>Vea también
 
-- [Referencia de servicio web de detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)
-- [Detección automática de Exchange](../exchange-web-services/autodiscover-for-exchange.md)
-- [Empezar a utilizar servicios web de Exchange](../exchange-web-services/start-using-web-services-in-exchange.md)
+- [Referencia del servicio web de Detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)
+- [Detección automática en Exchange](../exchange-web-services/autodiscover-for-exchange.md)
+- [Empezar a usar los servicios web de Exchange](../exchange-web-services/start-using-web-services-in-exchange.md)
     
 

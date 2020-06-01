@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 78e0784b-8fe8-42f1-aa6f-4f4a0bc2505e
-description: El elemento SetTeamMailboxResponse representa una respuesta a una solicitud de SetTeamMailbox.
-ms.openlocfilehash: 4b1ea132a86197e104b3e8873801f73876fdb289
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SetTeamMailboxResponse representa una respuesta a una solicitud SetTeamMailbox.
+ms.openlocfilehash: 38754cd03ab82e83b28192f6b0a3fd9e7fe87333
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837456"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467343"
 ---
 # <a name="setteammailboxresponse"></a>SetTeamMailboxResponse
 
-El elemento **SetTeamMailboxResponse** representa una respuesta a una solicitud de **SetTeamMailbox** . 
+El elemento **SetTeamMailboxResponse** representa una respuesta a una solicitud **SetTeamMailbox** . 
   
 ```XML
 <SetTeamMailboxResponse>
@@ -31,15 +31,15 @@ El elemento **SetTeamMailboxResponse** representa una respuesta a una solicitud 
  **SetTeamMailboxResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md)
+[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

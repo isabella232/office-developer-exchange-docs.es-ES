@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: c54f310f-8c99-4c37-8e73-ac87722b6229
-description: El elemento RedirectUrl contiene la dirección URL del equipo que ejecuta Microsoft Exchange Server 2007 que tiene el rol de servidor de acceso de cliente instalado que se debe usar para obtener la configuración de detección automática.
-ms.openlocfilehash: 3b634f1a3a3d44b6aae1a826a005149200641dcb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RedirectUrl contiene la dirección URL del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes que se debe usar para obtener la configuración de detección automática.
+ms.openlocfilehash: 5400b1e7a4bb7ebebc58b6a0f1fc9bf37f5a2e22
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837027"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468092"
 ---
 # <a name="redirecturl-pox"></a>RedirectUrl (POX)
 
-El elemento **RedirectUrl** contiene la dirección URL del equipo que ejecuta Microsoft Exchange Server 2007 que tiene el rol de servidor de acceso de cliente instalado que se debe usar para obtener la configuración de detección automática. 
+El elemento **RedirectURL** contiene la dirección URL del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes que se debe usar para obtener la configuración de detección automática. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -34,21 +34,21 @@ El elemento **RedirectUrl** contiene la dirección URL del equipo que ejecuta Mi
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de cuenta para el usuario.  <br/> |
+|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de la cuenta del usuario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -62,5 +62,5 @@ La aplicación cliente debe dejar de redirigir después de 10 redirecciones.
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

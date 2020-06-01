@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 121b0063-5447-4063-8e54-d3fcbb8cd2be
-description: El elemento SpecificUsers especifica las cuentas de correo electrónico que pueden tener acceso a la aplicación.
-ms.openlocfilehash: 59b99ab165e7a099816fb07e126ac912f0858c9c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SpecificUsers especifica las cuentas de correo electrónico que pueden acceder a la aplicación.
+ms.openlocfilehash: ef003b6da20031f82d9a8be1dc1d1187288d6f60
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837529"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467637"
 ---
 # <a name="specificusers"></a>SpecificUsers
 
-El elemento **SpecificUsers** especifica las cuentas de correo electrónico que pueden tener acceso a la aplicación. 
+El elemento **SpecificUsers** especifica las cuentas de correo electrónico que pueden acceder a la aplicación. 
   
 ```XML
 <SpecificUsers>
@@ -28,11 +28,11 @@ El elemento **SpecificUsers** especifica las cuentas de correo electrónico que 
  **ArrayOfStringsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

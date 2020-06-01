@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f3488d56-a00d-4c41-a348-45aad4af6439
-description: El elemento OfficeLocations especifica una matriz de ubicaciones de office y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: 4083688e9e19d6f7b6663515ee3d848371d1beea
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento OfficeLocations especifica una matriz de ubicaciones de oficina y los identificadores de sus atribuciones de origen para el rol asociado.
+ms.openlocfilehash: 57493c69288b3d6cfb5e2df311d8d311b87507cd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836640"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467063"
 ---
 # <a name="officelocations"></a>OfficeLocations
 
-El elemento **OfficeLocations** especifica una matriz de ubicaciones de office y los identificadores de sus atribuciones de origen para el rol asociado. 
+El elemento **OfficeLocations** especifica una matriz de ubicaciones de oficina y los identificadores de sus atribuciones de origen para el rol asociado. 
   
 ```XML
 <OfficeLocations>   
@@ -28,11 +28,11 @@ El elemento **OfficeLocations** especifica una matriz de ubicaciones de office y
  **ArrayOfStringAttributedValuesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

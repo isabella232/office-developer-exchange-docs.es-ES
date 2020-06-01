@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 0303600d-16d8-4685-88f2-980c5ca7e9a6
 description: El elemento NewBodyContent representa el nuevo contenido del cuerpo de un mensaje.
-ms.openlocfilehash: b87393e460b1eee1c13efebf38e898d17915bd71
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: dcfa927bb284ff00e510d8c7b4b31910a70b3cbb
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836516"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466860"
 ---
 # <a name="newbodycontent"></a>NewBodyContent
 
@@ -30,34 +30,34 @@ El elemento **NewBodyContent** representa el nuevo contenido del cuerpo de un me
  **BodyType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**BodyType** <br/> |Representa el contenido real del cuerpo de un mensaje.  <br/> |
+|**BodyType** <br/> |Representa el contenido del cuerpo real de un mensaje.  <br/> |
    
 #### <a name="bodytype-attribute"></a>Atributo BodyType
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
 |**HTML** <br/> |Convierte todos los cuerpos en HTML.  <br/> |
-|**Text** <br/> |Todos los cuerpos se convierte en texto sin formato.  <br/> |
+|**Text** <br/> |Convierte todos los cuerpos en texto sin formato.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[ReplyToItem](replytoitem.md) <br/> |Contiene una respuesta al remitente de un elemento en el almacén de Exchange.  <br/> |
-|[ReplyAllToItem](replyalltoitem.md) <br/> |Contiene una respuesta para el remitente y el identificado todos los destinatarios de un elemento en el almacén de Exchange.  <br/> |
-|[ForwardItem](forwarditem.md) <br/> |Contiene un elemento del almacén de Exchange reenviar a los destinatarios.  <br/> |
+|[ReplyAllToItem](replyalltoitem.md) <br/> |Contiene una respuesta al remitente y a todos los destinatarios identificados de un elemento en el almacén de Exchange.  <br/> |
+|[ForwardItem](forwarditem.md) <br/> |Contiene un elemento de almacén de Exchange que se va a reenviar a los destinatarios.  <br/> |
 |[CancelCalendarItem](cancelcalendaritem.md) <br/> |Representa el objeto de respuesta que se usa para cancelar una reunión.  <br/> |
-|[PostReplyItem](postreplyitem.md) <br/> |Contiene una respuesta a un elemento para exponer. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).  <br/> |
+|[PostReplyItem](postreplyitem.md) <br/> |Contiene una respuesta a un elemento post. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -65,20 +65,20 @@ El valor de texto representa el nuevo contenido del cuerpo de un mensaje.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del servidor Exchange que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del servidor de Exchange que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e1a1c5fa-9e1e-4ee7-bb19-77c29b47ecbb
-description: El elemento AddNewImContactToGroupResponse define una respuesta a una solicitud de AddNewImContactToGroup.
-ms.openlocfilehash: dedd5587fd4deef1287b377084c1a4bcfc91e80c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AddNewImContactToGroupResponse define una respuesta a una solicitud AddNewImContactToGroup.
+ms.openlocfilehash: 6c8f0f2330e4394a7657ddeef0df93f1c75c7001
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763407"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44467714"
 ---
 # <a name="addnewimcontacttogroupresponse"></a>AddNewImContactToGroupResponse
 
-El elemento **AddNewImContactToGroupResponse** define una respuesta a una solicitud de **AddNewImContactToGroup** . 
+El elemento **AddNewImContactToGroupResponse** define una respuesta a una solicitud **AddNewImContactToGroup** . 
   
 ```XML
 <AddNewImContactToGroupResponse>
@@ -32,15 +32,15 @@ El elemento **AddNewImContactToGroupResponse** define una respuesta a una solici
  **AddNewImContactToGroupResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[MessageText](messagetext.md) | [ResponseCode](responsecode.md) | [DescriptiveLinkKey](descriptivelinkkey.md) | [MessageXml](messagexml.md) | [rol](persona.md)
+[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)  |  [Persona](persona.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -56,9 +56,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

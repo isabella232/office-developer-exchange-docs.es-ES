@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 339005cd-a3b9-47dd-bc7b-a860b699625b
-description: El elemento SearchableMailbox especifica un buzón de correo devuelto desde una solicitud de GetSearchableMailboxes.
-ms.openlocfilehash: 0d0981d050fa388e83eaa8408b60d305296c1f36
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SearchableMailbox especifica un buzón devuelto desde una solicitud GetSearchableMailboxes.
+ms.openlocfilehash: f790d9a707f10f64a776b2fc35255c233ad854b6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837284"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44467455"
 ---
 # <a name="searchablemailbox"></a>SearchableMailbox
 
-El elemento **SearchableMailbox** especifica un buzón de correo devuelto desde una solicitud de **GetSearchableMailboxes** . 
+El elemento **SearchableMailbox** especifica un buzón devuelto desde una solicitud **GetSearchableMailboxes** . 
   
 ```XML
 <SearchableMailbox>
@@ -34,15 +34,15 @@ El elemento **SearchableMailbox** especifica un buzón de correo devuelto desde 
  **SearchableMailboxType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[GUID](guid-ex15websvcsotherref.md) | [PrimarySmtpAddress (string)](primarysmtpaddress-string.md) | [IsExternalMailbox](isexternalmailbox.md) | [ExternalEmailAddress](externalemailaddress.md) | [DisplayName (string)](displayname-string.md) | [IsMembershipGroup](ismembershipgroup.md)  |  [ ReferenceId](referenceid.md)
+[GUID](guid-ex15websvcsotherref.md)  |  [PrimarySmtpAddress (cadena)](primarysmtpaddress-string.md)  |  [IsExternalMailbox](isexternalmailbox.md)  |  [ExternalEmailAddress](externalemailaddress.md)  |  [DisplayName (cadena)](displayname-string.md)  |  [IsMembershipGroup](ismembershipgroup.md)  |  [Identificador](referenceid.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -58,9 +58,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

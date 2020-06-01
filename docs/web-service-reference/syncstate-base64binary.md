@@ -1,5 +1,5 @@
 ---
-title: Estado de sincronización (base64Binary)
+title: SyncState (base64Binary)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 89650cd4-c790-4a37-b5e5-46a57501e100
-description: El elemento de estado de sincronización especifica el estado de sincronización de una conversación.
-ms.openlocfilehash: 18fb4fe60085c9ae2f84adc0d4a6df514302d759
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SyncState especifica el estado de sincronización de una conversación.
+ms.openlocfilehash: 85c525176931b66354ebdd8873673f04c6a722f3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840617"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468141"
 ---
-# <a name="syncstate-base64binary"></a>Estado de sincronización (base64Binary)
+# <a name="syncstate-base64binary"></a>SyncState (base64Binary)
 
-El elemento de **estado de sincronización** especifica el estado de sincronización de una conversación. 
+El elemento **SyncState** especifica el estado de sincronización de una conversación. 
   
 ```XML
 <SyncState></SyncState>
@@ -26,23 +26,23 @@ El elemento de **estado de sincronización** especifica el estado de sincronizac
  **base64Binary**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Conversación (ConversationRequestType)](conversation-conversationrequesttype.md) | [conversación (ConversationResponseType)](conversation-conversationresponsetype.md)
+[Conversación (ConversationRequestType)](conversation-conversationrequesttype.md)  |  [Conversación (ConversationResponseType)](conversation-conversationresponsetype.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **estado de sincronización** es el estado de sincronización para mantener una conversación. 
+El valor de texto del elemento **SyncState** es el estado de sincronización de una conversación. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

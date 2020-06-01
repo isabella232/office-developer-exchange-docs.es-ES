@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8f37d174-db11-427c-bbed-fdde754a60c7
-description: El elemento OofSettings contiene la configuración de fuera de oficina (OOF).
-ms.openlocfilehash: d71f068ff24af22da98b6b4de090ab26d3f74f26
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento OofSettings contiene la configuración de fuera de la oficina (OOF).
+ms.openlocfilehash: c1b214fd8bfab5b7a82d41a5187cf6e0fc4ba79c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836649"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467196"
 ---
 # <a name="oofsettings"></a>OofSettings
 
-El elemento **OofSettings** contiene la configuración de fuera de oficina (OOF). 
+El elemento **OofSettings** contiene la configuración de fuera de la oficina (OOF). 
   
 [GetUserOofSettingsResponse](getuseroofsettingsresponse.md)
   
@@ -40,40 +40,40 @@ El elemento **OofSettings** contiene la configuración de fuera de oficina (OOF)
  **UserOofSettings**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[OofState](oofstate.md) <br/> |Contiene el estado de fuera de la oficina del usuario.  <br/> |
-|[ExternalAudience](externalaudience.md) <br/> |Contiene un valor que determina a quienes se envían los mensajes externos de fuera de la oficina.  <br/> |
-|[Duración (UserOofSettings)](duration-useroofsettings.md) <br/> |Contiene la duración para la que está habilitado el estado de fuera de la oficina si el elemento [OofState](oofstate.md) está establecido en **programado**. Si el elemento de [OofState](oofstate.md) se establece en **habilitada** o **deshabilitada**, se ignora el valor de este elemento.  <br/> |
-|[InternalReply](internalreply.md) <br/> |Contiene la respuesta OOF enviada a otros usuarios de dominio o los dominios de confianza del usuario.  <br/> |
-|[ExternalReply](externalreply.md) <br/> |Contiene la respuesta OOF enviada a direcciones fuera del destinatario dominio o dominios de confianza.  <br/> |
+|[OofState](oofstate.md) <br/> |Contiene el estado de OOF del usuario.  <br/> |
+|[ExternalAudience](externalaudience.md) <br/> |Contiene un valor que determina a quién se envían los mensajes de OOF externos.  <br/> |
+|[Duración (UserOofSettings)](duration-useroofsettings.md) <br/> |Contiene la duración para la que está habilitado el estado OOF si el elemento [OofState](oofstate.md) está establecido en **programado**. Si el elemento [OofState](oofstate.md) está establecido en **habilitado** o **deshabilitado**, se omite el valor de este elemento.  <br/> |
+|[InternalReply](internalreply.md) <br/> |Contiene la respuesta OOF enviada a otros usuarios en el dominio del usuario o en un dominio de confianza.  <br/> |
+|[ExternalReply](externalreply.md) <br/> |Contiene la respuesta OOF enviada a direcciones fuera del dominio del destinatario o de dominios de confianza.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetUserOofSettingsResponse](getuseroofsettingsresponse.md) <br/> |Contiene los resultados de la respuesta y la configuración de fuera de la oficina de un usuario.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserOofSettingsResponse` <br/> |
+|[GetUserOofSettingsResponse](getuseroofsettingsresponse.md) <br/> |Contiene los resultados de la respuesta y la configuración de OOF para un usuario.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserOofSettingsResponse` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

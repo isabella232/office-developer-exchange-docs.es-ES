@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: fc4d77d5-6200-4cf3-848a-1088fec0e0d6
 description: El elemento LocationSource especifica información sobre el origen de la dirección postal asociada, por ejemplo, un contacto o una libreta de teléfonos.
-ms.openlocfilehash: 7f5cf5fcca0a72287593349fcf5090a74225d012
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: ceba52c43d1c798bb8f5492b779c7c45d7d00b0b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836248"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467105"
 ---
 # <a name="locationsource"></a>LocationSource
 
@@ -26,34 +26,34 @@ El elemento **LocationSource** especifica información sobre el origen de la dir
  **LocationSourceType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Valor (PersonaPostalAddressType)](value-personapostaladdresstype.md) | [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
+[Valor (PersonaPostalAddressType)](value-personapostaladdresstype.md)  |  [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-Los valores de texto para el elemento de **LocationSource** se enumeran en la siguiente tabla: 
+En la tabla siguiente se enumeran los valores de texto para el elemento **LocationSource** : 
   
-**Valores de texto de elemento LocationSource**
+**Valores de texto del elemento LocationSource**
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|None  <br/> |No hay ningún origen de la ubicación.  <br/> |
-|LocationServices  <br/> |La información obtenida de los servicios de ubicación.  <br/> |
-|PhonebookServices  <br/> |La información obtenida de los servicios de libreta de teléfonos.  <br/> |
-|Dispositivo  <br/> |Se obtuvo la información desde el dispositivo.  <br/> |
-|Contacto  <br/> |La información obtenida de un contacto.  <br/> |
-|Recurso  <br/> |La información obtenida de un recurso.  <br/> |
+|Ninguno  <br/> |No hay origen de la ubicación.  <br/> |
+|LocationServices  <br/> |La información se obtuvo de los servicios de ubicación.  <br/> |
+|PhonebookServices  <br/> |La información se obtuvo de los servicios de la libreta de teléfonos.  <br/> |
+|Dispositivo  <br/> |La información se obtuvo del dispositivo.  <br/> |
+|Contacto  <br/> |La información se obtuvo de un contacto.  <br/> |
+|Resource  <br/> |La información se obtuvo de un recurso.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 

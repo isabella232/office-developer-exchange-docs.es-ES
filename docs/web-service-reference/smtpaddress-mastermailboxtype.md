@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0d1b8a68-9f91-4f6f-9b0e-d86a9ea46489
-description: El elemento SmtpAddress (MasterMailboxType) está pensado para uso interno únicamente.
-ms.openlocfilehash: 0ccea2444fbd30627d932ca109fa8a5508c9f86c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SmtpAddress (MasterMailboxType) está pensado solo para uso interno.
+ms.openlocfilehash: a9bd9cae206026124216289db8b1e1a47856ecc8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837506"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467266"
 ---
 # <a name="smtpaddress-mastermailboxtype"></a>SmtpAddress (MasterMailboxType)
 
-El elemento **SmtpAddress (MasterMailboxType)** está pensado para uso interno únicamente. 
+El elemento **SmtpAddress (MasterMailboxType)** está pensado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f1037fef-628b-4e44-96e7-a701a9ca8404
-description: El elemento TotalNumberOfPeopleInView especifica el número total de roles devueltas en una respuesta de FindPeople.
-ms.openlocfilehash: 5f45bb928a363c218271281c013a5af2155c6e53
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento TotalNumberOfPeopleInView especifica el número total de roles devueltos en una respuesta FindPeople.
+ms.openlocfilehash: d89aa65d595814a7277f85e569ca10f9058c6aac
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840713"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467511"
 ---
 # <a name="totalnumberofpeopleinview"></a>TotalNumberOfPeopleInView
 
-El elemento **TotalNumberOfPeopleInView** especifica el número total de roles devueltas en una respuesta de **FindPeople** . 
+El elemento **TotalNumberOfPeopleInView** especifica el número total de roles devueltos en una respuesta **FindPeople** . 
   
 ```XML
 <TotalNumberOfPeopleInView></TotalNumberOfPeopleInView>
@@ -26,15 +26,15 @@ El elemento **TotalNumberOfPeopleInView** especifica el número total de roles d
  **int**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **TotalNumberOfPeopleInView** es el número total de roles devueltas en una respuesta de **FindPeople** . 
+El valor de texto del elemento **TotalNumberOfPeopleInView** es el número total de roles devueltos en una respuesta **FindPeople** . 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

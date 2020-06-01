@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0308b71c-d4ff-44a8-b9ca-d5965291ee1d
-description: El elemento de conversación representa una sola conversación devuelta en una respuesta de GetConversationItems.
-ms.openlocfilehash: ef56e26fda7d2bf6556069355918aa576ce14cb6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Conversation representa una única conversación devuelta en una respuesta GetConversationItems.
+ms.openlocfilehash: 925fd6fce83cad36f4a0e95bb6228ba65e4e9c43
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763862"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466783"
 ---
 # <a name="conversation-conversationrequesttype"></a>Conversación (ConversationRequestType)
 
-El elemento de **conversación** representa una sola conversación devuelta en una respuesta de **GetConversationItems** . 
+El elemento **Conversation** representa una única conversación devuelta en una respuesta **GetConversationItems** . 
   
 ```XML
 <Conversation>
@@ -29,15 +29,15 @@ El elemento de **conversación** representa una sola conversación devuelta en u
  ****
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[ConversationId](conversationid.md) | [estado de sincronización (base64Binary)](syncstate-base64binary.md)
+[ConversationId](conversationid.md)  |  [SyncState (base64Binary)](syncstate-base64binary.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -53,9 +53,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 
