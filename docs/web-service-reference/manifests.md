@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 650d9fc0-1504-4db4-95d6-d3ba86df66ca
-description: El elemento de manifiestos contiene una colección de manifiestos de aplicaciones con codificación base64 que estén instalados para la cuenta de correo electrónico.
-ms.openlocfilehash: 3877841c097e6b968d0af51ae5261e5b4336c7ce
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Manifests contiene una colección de manifiestos de aplicaciones codificadas en Base64 que se instalan para la cuenta de correo electrónico.
+ms.openlocfilehash: 91239e2337f7a1886d8947f558a86110755a93df
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836362"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44450819"
 ---
 # <a name="manifests"></a>Manifiestos
 
-El elemento **manifiestos** contiene una colección de manifiestos de aplicaciones con codificación base64 que estén instalados para la cuenta de correo electrónico. 
+El elemento **Manifests** contiene una colección de manifiestos de aplicaciones codificadas en Base64 que se instalan para la cuenta de correo electrónico. 
   
 ```XML
 <Manifests>
@@ -28,15 +28,15 @@ El elemento **manifiestos** contiene una colección de manifiestos de aplicacion
  **ArrayOfAppManifestsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Manifest](manifest.md)
+[Manifiesto](manifest.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

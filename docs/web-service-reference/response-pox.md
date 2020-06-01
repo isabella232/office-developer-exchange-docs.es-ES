@@ -8,19 +8,19 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 002b72f2-f94d-467c-8e6c-b3818f7e51dc
-description: 'Hace referencia a:'
-ms.openlocfilehash: 0e8775c895f1b6d674b9a0141d55c64f57d236b0
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: 'Se aplica a:'
+ms.openlocfilehash: 30f6a5c2c6e3034fde8849ab1fced3519029b1f9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837177"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44448978"
 ---
 # <a name="response-pox"></a>Respuesta (POX)
 
 
   
-El elemento de **respuesta** contiene la respuesta del servicio Detección automática. 
+El elemento **Response** contiene la respuesta del servicio de detección automática. 
   
 [Detección automática (POX)](autodiscover-pox.md)
   
@@ -35,28 +35,28 @@ El elemento de **respuesta** contiene la respuesta del servicio Detección autom
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Usuario (POX)](user-pox.md) <br/> |Proporciona información específica del usuario. Este elemento es opcional.  <br/> |
-|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de cuenta para el usuario.  <br/> |
+|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de la cuenta del usuario.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Detección automática (POX)](autodiscover-pox.md) <br/> |El elemento raíz en una respuesta de detección automática.  <br/> |
+|[Detección automática (POX)](autodiscover-pox.md) <br/> |El elemento raíz de una respuesta de detección automática.  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+[Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 
