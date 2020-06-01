@@ -3,85 +3,85 @@ title: Obtener la configuración de dominio de un servidor de Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 2f9acb81-5135-4f72-94e8-65c235d725e6
 description: Aprenda a obtener la configuración del dominio de un servidor Exchange mediante el servicio Detección automática.
-ms.openlocfilehash: 0dd990cc82762936e7827115685ce0178eafb5ae
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: e77810089b77f614f6bca064b2e5cf6bde2bff7c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763070"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455810"
 ---
-# <a name="get-domain-settings-from-an-exchange-server"></a><span data-ttu-id="dc4c3-103">Obtener la configuración de dominio de un servidor de Exchange</span><span class="sxs-lookup"><span data-stu-id="dc4c3-103">How to: Get domain settings from an Exchange server</span></span>
+# <a name="get-domain-settings-from-an-exchange-server"></a><span data-ttu-id="7d03d-103">Obtener la configuración de dominio de un servidor de Exchange</span><span class="sxs-lookup"><span data-stu-id="7d03d-103">Get domain settings from an Exchange server</span></span>
 
-<span data-ttu-id="dc4c3-104">Aprenda a obtener la configuración del dominio de un servidor Exchange mediante el servicio Detección automática.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-104">Learn how to get domain settings from an Exchange server by using the Autodiscover service.</span></span>
+<span data-ttu-id="7d03d-104">Aprenda a obtener la configuración del dominio de un servidor Exchange mediante el servicio Detección automática.</span><span class="sxs-lookup"><span data-stu-id="7d03d-104">Learn how to get domain settings from an Exchange server by using the Autodiscover service.</span></span>
   
-<span data-ttu-id="dc4c3-p101">Puede recuperar información de configuración de un dominio de correo electrónico mediante el servicio Detección automática. El servicio Detección automática proporciona un proceso a la aplicación para conectarse al punto de conexión del servicio correcto de un dominio específico.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-p101">You can retrieve configuration information for an email domain by using the Autodiscover service. The Autodiscover service provides your application with a process for connecting to the correct service endpoint for a specific domain.</span></span>
+<span data-ttu-id="7d03d-p101">Puede recuperar información de configuración de un dominio de correo electrónico mediante el servicio Detección automática. El servicio Detección automática proporciona un proceso a la aplicación para conectarse al punto de conexión del servicio correcto de un dominio específico.</span><span class="sxs-lookup"><span data-stu-id="7d03d-p101">You can retrieve configuration information for an email domain by using the Autodiscover service. The Autodiscover service provides your application with a process for connecting to the correct service endpoint for a specific domain.</span></span>
   
-<span data-ttu-id="dc4c3-107">Puede usar una de las siguientes tecnologías de desarrollo para tener acceso al servicio Detección automática:</span><span class="sxs-lookup"><span data-stu-id="dc4c3-107">You can use one of the following development technologies to access the Autodiscover service:</span></span>
+<span data-ttu-id="7d03d-107">Puede usar una de las siguientes tecnologías de desarrollo para tener acceso al servicio Detección automática:</span><span class="sxs-lookup"><span data-stu-id="7d03d-107">You can use one of the following development technologies to access the Autodiscover service:</span></span>
   
-- <span data-ttu-id="dc4c3-108">La API administrada de servicios Web Exchange (EWS)</span><span class="sxs-lookup"><span data-stu-id="dc4c3-108">The Exchange Web Services (EWS) Managed API</span></span>
+- <span data-ttu-id="7d03d-108">La API administrada de servicios Web Exchange (EWS)</span><span class="sxs-lookup"><span data-stu-id="7d03d-108">The Exchange Web Services (EWS) Managed API</span></span>
     
-- <span data-ttu-id="dc4c3-109">EWS</span><span class="sxs-lookup"><span data-stu-id="dc4c3-109">EWS</span></span>
+- <span data-ttu-id="7d03d-109">EWS</span><span class="sxs-lookup"><span data-stu-id="7d03d-109">EWS</span></span>
     
-    <span data-ttu-id="dc4c3-110">Si usa EWS, puede usar los métodos siguientes para recuperar la configuración de usuario:</span><span class="sxs-lookup"><span data-stu-id="dc4c3-110">If you are using EWS, you can use the following methods to retrieve user settings:</span></span>
+    <span data-ttu-id="7d03d-110">Si usa EWS, puede usar los métodos siguientes para recuperar la configuración de usuario:</span><span class="sxs-lookup"><span data-stu-id="7d03d-110">If you are using EWS, you can use the following methods to retrieve user settings:</span></span>
     
-  - <span data-ttu-id="dc4c3-111">El servicio Detección automática basado en SOAP</span><span class="sxs-lookup"><span data-stu-id="dc4c3-111">The SOAP-based Autodiscover service</span></span>
+  - <span data-ttu-id="7d03d-111">El servicio Detección automática basado en SOAP</span><span class="sxs-lookup"><span data-stu-id="7d03d-111">The SOAP-based Autodiscover service</span></span>
     
-  - <span data-ttu-id="dc4c3-112">El servicio Detección automática XML (POX)</span><span class="sxs-lookup"><span data-stu-id="dc4c3-112">The XML (POX) Autodiscover service</span></span>
+  - <span data-ttu-id="7d03d-112">El servicio Detección automática XML (POX)</span><span class="sxs-lookup"><span data-stu-id="7d03d-112">The XML (POX) Autodiscover service</span></span>
     
-  - <span data-ttu-id="dc4c3-113">Un proxy generado automáticamente se ha generado del servicio Detección automática de XML o SOAP</span><span class="sxs-lookup"><span data-stu-id="dc4c3-113">An autogenerated proxy generated from the SOAP or XML Autodiscover service</span></span>
+  - <span data-ttu-id="7d03d-113">Un proxy generado automáticamente se ha generado del servicio Detección automática de XML o SOAP</span><span class="sxs-lookup"><span data-stu-id="7d03d-113">An autogenerated proxy generated from the SOAP or XML Autodiscover service</span></span>
     
-    <span data-ttu-id="dc4c3-114">Para obtener más información sobre estos métodos, vea [Detección automática en Exchange](autodiscover-for-exchange.md).</span><span class="sxs-lookup"><span data-stu-id="dc4c3-114">For more information about these methods, see [Autodiscover in Exchange 2013](autodiscover-for-exchange.md).</span></span>
+    <span data-ttu-id="7d03d-114">Para obtener más información sobre estos métodos, vea [Detección automática en Exchange](autodiscover-for-exchange.md).</span><span class="sxs-lookup"><span data-stu-id="7d03d-114">For more information about these methods, see [Autodiscover for Exchange](autodiscover-for-exchange.md).</span></span>
     
-<span data-ttu-id="dc4c3-p102">La API administrada de EWS proporciona una interfaz basada en objetos para recuperar la configuración de usuario. Si su aplicación cliente usa un código administrado, le recomendamos que use la API administrada de EWS. La interfaz de la API administrada de EWS está mejor optimizada para un modelo de objetos simples que el típico proxy de servicio web generado automáticamente. </span><span class="sxs-lookup"><span data-stu-id="dc4c3-p102">The EWS Managed API provides an object-based interface for retrieving user settings. If your client application uses managed code, we recommend that you use the EWS Managed API. The EWS Managed API interface is better optimized for a simple object model than the typical autogenerated web service proxy.</span></span> 
+<span data-ttu-id="7d03d-p102">La API administrada de EWS proporciona una interfaz basada en objetos para recuperar la configuración de usuario. Si su aplicación cliente usa un código administrado, le recomendamos que use la API administrada de EWS. La interfaz de la API administrada de EWS está mejor optimizada para un modelo de objetos simples que el típico proxy de servicio web generado automáticamente. </span><span class="sxs-lookup"><span data-stu-id="7d03d-p102">The EWS Managed API provides an object-based interface for retrieving user settings. If your client application uses managed code, we recommend that you use the EWS Managed API. The EWS Managed API interface is better optimized for a simple object model than the typical autogenerated web service proxy.</span></span> 
   
-<span data-ttu-id="dc4c3-118">Si está usando EWS, le sugerimos que use el servicio Detección automática de SOAP, ya que admite un conjunto superior de características que el servicio Detección automática de POX.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-118">If you are using EWS, we suggest that you use the SOAP Autodiscover service, because it supports a richer set of features than the POX Autodiscover service.</span></span>
+<span data-ttu-id="7d03d-118">Si está usando EWS, le sugerimos que use el servicio Detección automática de SOAP, ya que admite un conjunto superior de características que el servicio Detección automática de POX.</span><span class="sxs-lookup"><span data-stu-id="7d03d-118">If you are using EWS, we suggest that you use the SOAP Autodiscover service, because it supports a richer set of features than the POX Autodiscover service.</span></span>
   
-<span data-ttu-id="dc4c3-p103">El servicio Detección automática solo devuelve las opciones de configuración solicitadas. En la siguiente tabla se enumeran las opciones de configuración de dominio que puede devolver el servicio Detección automática.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-p103">The Autodiscover service returns only the requested configuration settings. The following table lists the domain configuration settings that the Autodiscover service can return.</span></span>
+<span data-ttu-id="7d03d-p103">El servicio Detección automática solo devuelve las opciones de configuración solicitadas. En la siguiente tabla se enumeran las opciones de configuración de dominio que puede devolver el servicio Detección automática.</span><span class="sxs-lookup"><span data-stu-id="7d03d-p103">The Autodiscover service returns only the requested configuration settings. The following table lists the domain configuration settings that the Autodiscover service can return.</span></span>
   
-<span data-ttu-id="dc4c3-121">**Tabla 1: Opciones de configuración de dominio**</span><span class="sxs-lookup"><span data-stu-id="dc4c3-121">**Table 1:  Domain configuration settings**</span></span>
+<span data-ttu-id="7d03d-121">**Tabla 1: Opciones de configuración de dominio**</span><span class="sxs-lookup"><span data-stu-id="7d03d-121">**Table 1: Domain configuration settings**</span></span>
 
-|<span data-ttu-id="dc4c3-122">**Opción de configuración**</span><span class="sxs-lookup"><span data-stu-id="dc4c3-122">**Configuration setting**</span></span>|<span data-ttu-id="dc4c3-123">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="dc4c3-123">**Description**</span></span>|
+|<span data-ttu-id="7d03d-122">**Opción de configuración**</span><span class="sxs-lookup"><span data-stu-id="7d03d-122">**Configuration setting**</span></span>|<span data-ttu-id="7d03d-123">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="7d03d-123">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="dc4c3-124">ExternalEwsUrl</span><span class="sxs-lookup"><span data-stu-id="dc4c3-124">ExternalEwsUrl</span></span>  <br/> |<span data-ttu-id="dc4c3-125">La dirección URL externa para EWS.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-125">The external URL for EWS.</span></span>  <br/> |
-|<span data-ttu-id="dc4c3-126">ExternalEwsVersion</span><span class="sxs-lookup"><span data-stu-id="dc4c3-126">ExternalEwsVersion</span></span>  <br/> |<span data-ttu-id="dc4c3-127">La versión del servidor Exchange que hospeda la dirección URL de EWS.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-127">The version of the Exchange server that hosts the EWS URL.</span></span>  <br/> |
+|<span data-ttu-id="7d03d-124">ExternalEwsUrl</span><span class="sxs-lookup"><span data-stu-id="7d03d-124">ExternalEwsUrl</span></span>  <br/> |<span data-ttu-id="7d03d-125">La dirección URL externa para EWS.</span><span class="sxs-lookup"><span data-stu-id="7d03d-125">The external URL for EWS.</span></span>  <br/> |
+|<span data-ttu-id="7d03d-126">ExternalEwsVersion</span><span class="sxs-lookup"><span data-stu-id="7d03d-126">ExternalEwsVersion</span></span>  <br/> |<span data-ttu-id="7d03d-127">La versión del servidor Exchange que hospeda la dirección URL de EWS.</span><span class="sxs-lookup"><span data-stu-id="7d03d-127">The version of the Exchange server that hosts the EWS URL.</span></span>  <br/> |
    
-## <a name="prerequisites-for-getting-domain-settings"></a><span data-ttu-id="dc4c3-128">Requisitos previos para obtener la configuración del dominio</span><span class="sxs-lookup"><span data-stu-id="dc4c3-128">Prerequisites for getting domain settings</span></span>
-<span data-ttu-id="dc4c3-129"><a name="bk_Prereq"> </a></span><span class="sxs-lookup"><span data-stu-id="dc4c3-129"></span></span>
+## <a name="prerequisites-for-getting-domain-settings"></a><span data-ttu-id="7d03d-128">Requisitos previos para obtener la configuración del dominio</span><span class="sxs-lookup"><span data-stu-id="7d03d-128">Prerequisites for getting domain settings</span></span>
+<span data-ttu-id="7d03d-129"><a name="bk_Prereq"> </a></span><span class="sxs-lookup"><span data-stu-id="7d03d-129"><a name="bk_Prereq"> </a></span></span>
 
-<span data-ttu-id="dc4c3-130">Antes de crear una aplicación que se conecte al servicio Detección automática para obtener la configuración del dominio, asegúrese de que tiene acceso a lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="dc4c3-130">Before you create an application that connects to the Autodiscover service to get domain settings, make sure that you have access to the following:</span></span>
+<span data-ttu-id="7d03d-130">Antes de crear una aplicación que se conecte al servicio Detección automática para obtener la configuración del dominio, asegúrese de que tiene acceso a lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="7d03d-130">Before you create an application that connects to the Autodiscover service to get domain settings, make sure that you have access to the following:</span></span>
   
-- <span data-ttu-id="dc4c3-p104">Exchange Online, Exchange Online como parte de Office 365 o un servidor que ejecuta una versión de Exchange a partir de Exchange 2007. Si está usando el servicio Detección automática basado en SOAP de EWS, un servidor que ejecuta una versión de Exchange a partir de Exchange 2010.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-p104">Exchange Online, Exchange Online as part of Office 365, or a server running a version of Exchange starting with Exchange 2007. If you are using the EWS SOAP-based Autodiscover service, a server running a version of Exchange starting with Exchange 2010.</span></span>
+- <span data-ttu-id="7d03d-p104">Exchange Online, Exchange Online como parte de Office 365 o un servidor que ejecuta una versión de Exchange a partir de Exchange 2007. Si está usando el servicio Detección automática basado en SOAP de EWS, un servidor que ejecuta una versión de Exchange a partir de Exchange 2010.</span><span class="sxs-lookup"><span data-stu-id="7d03d-p104">Exchange Online, Exchange Online as part of Office 365, or a server running a version of Exchange starting with Exchange 2007. If you are using the EWS SOAP-based Autodiscover service, a server running a version of Exchange starting with Exchange 2010.</span></span>
     
-- <span data-ttu-id="dc4c3-133">Un servidor Exchange que está configurado para aceptar conexiones de su aplicación cliente.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-133">An Exchange server that is configured to accept connections from your client application. For information about how to configure your Exchange server, see EWS client application access.</span></span> <span data-ttu-id="dc4c3-134">Para obtener información sobre cómo configurar su servidor de Exchange, vea [Controlar el acceso de la aplicación de cliente a EWS en Exchange](controlling-client-application-access-to-ews-in-exchange.md).</span><span class="sxs-lookup"><span data-stu-id="dc4c3-134">For information about how to configure your Exchange server, see [Controlling client application access to EWS in Exchange](controlling-client-application-access-to-ews-in-exchange.md).</span></span>
+- <span data-ttu-id="7d03d-133">Un servidor Exchange que está configurado para aceptar conexiones de su aplicación cliente.</span><span class="sxs-lookup"><span data-stu-id="7d03d-133">An Exchange server that is configured to accept connections from your client application.</span></span> <span data-ttu-id="7d03d-134">Para obtener información sobre cómo configurar su servidor de Exchange, vea [Controlar el acceso de la aplicación de cliente a EWS en Exchange](controlling-client-application-access-to-ews-in-exchange.md).</span><span class="sxs-lookup"><span data-stu-id="7d03d-134">For information about how to configure your Exchange server, see [Controlling client application access to EWS in Exchange](controlling-client-application-access-to-ews-in-exchange.md).</span></span>
     
-- <span data-ttu-id="dc4c3-135">Una cuenta que esté autorizada para usar EWS.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-135">An account that is authorized to use EWS.</span></span> <span data-ttu-id="dc4c3-136">Para obtener información sobre cómo configurar una cuenta, vea [Controlar el acceso de la aplicación de cliente a EWS en Exchange](controlling-client-application-access-to-ews-in-exchange.md).</span><span class="sxs-lookup"><span data-stu-id="dc4c3-136">For information about how to configure an account, see [Controlling client application access to EWS in Exchange](controlling-client-application-access-to-ews-in-exchange.md).</span></span>
+- <span data-ttu-id="7d03d-135">Una cuenta que esté autorizada para usar EWS.</span><span class="sxs-lookup"><span data-stu-id="7d03d-135">An account that is authorized to use EWS.</span></span> <span data-ttu-id="7d03d-136">Para obtener información sobre cómo configurar una cuenta, vea [Controlar el acceso de la aplicación de cliente a EWS en Exchange](controlling-client-application-access-to-ews-in-exchange.md).</span><span class="sxs-lookup"><span data-stu-id="7d03d-136">For information about how to configure an account, see [Controlling client application access to EWS in Exchange](controlling-client-application-access-to-ews-in-exchange.md).</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="dc4c3-137">Si está usando la API administrada de EWS, debe proporcionar una devolución de llamada de validación de certificado en algunas circunstancias.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-137">If you are using the EWS Managed API, you must provide a certificate validation callback in some circumstances.</span></span> <span data-ttu-id="dc4c3-138">También puede necesitar una devolución de llamada de validación de certificado con algunas bibliotecas de proxy generadas, como las que se han creado mediante Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-138">You may also need a certificate validation callback with some generated proxy libraries, such as those created by Visual Studio.</span></span> <span data-ttu-id="dc4c3-139">Para obtener más información, vea [Validar un certificado de servidor de la API de administración de EWS](how-to-validate-a-server-certificate-for-the-ews-managed-api.md).</span><span class="sxs-lookup"><span data-stu-id="dc4c3-139">For more information, see [Validate a server certificate for the EWS Managed API](how-to-validate-a-server-certificate-for-the-ews-managed-api.md).</span></span> 
+> <span data-ttu-id="7d03d-137">Si está usando la API administrada de EWS, debe proporcionar una devolución de llamada de validación de certificado en algunas circunstancias.</span><span class="sxs-lookup"><span data-stu-id="7d03d-137">If you are using the EWS Managed API, you must provide a certificate validation callback in some circumstances.</span></span> <span data-ttu-id="7d03d-138">También puede necesitar una devolución de llamada de validación de certificado con algunas bibliotecas de proxy generadas, como las que se han creado mediante Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="7d03d-138">You may also need a certificate validation callback with some generated proxy libraries, such as those created by Visual Studio.</span></span> <span data-ttu-id="7d03d-139">Para obtener más información, vea [Validar un certificado de servidor de la API de administración de EWS](how-to-validate-a-server-certificate-for-the-ews-managed-api.md).</span><span class="sxs-lookup"><span data-stu-id="7d03d-139">For more information, see [Validate a server certificate for the EWS Managed API](how-to-validate-a-server-certificate-for-the-ews-managed-api.md).</span></span> 
   
-### <a name="core-concepts-for-getting-domain-settings"></a><span data-ttu-id="dc4c3-140">Conceptos básicos para obtener la configuración del dominio</span><span class="sxs-lookup"><span data-stu-id="dc4c3-140">Core concepts for getting domain settings</span></span>
-<span data-ttu-id="dc4c3-141"><a name="bk_Core"> </a></span><span class="sxs-lookup"><span data-stu-id="dc4c3-141"></span></span>
+### <a name="core-concepts-for-getting-domain-settings"></a><span data-ttu-id="7d03d-140">Conceptos básicos para obtener la configuración del dominio</span><span class="sxs-lookup"><span data-stu-id="7d03d-140">Core concepts for getting domain settings</span></span>
+<span data-ttu-id="7d03d-141"><a name="bk_Core"> </a></span><span class="sxs-lookup"><span data-stu-id="7d03d-141"><a name="bk_Core"> </a></span></span>
 
-<span data-ttu-id="dc4c3-142">Antes de que use la Detección automática para obtener la configuración del dominio, debería familiarizarse con los conceptos que se enumeran en la siguiente tabla.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-142">Before you use Autodiscover to get domain settings, you should be familiar with the concepts listed in the following table.</span></span>
+<span data-ttu-id="7d03d-142">Antes de que use la Detección automática para obtener la configuración del dominio, debería familiarizarse con los conceptos que se enumeran en la siguiente tabla.</span><span class="sxs-lookup"><span data-stu-id="7d03d-142">Before you use Autodiscover to get domain settings, you should be familiar with the concepts listed in the following table.</span></span>
   
-|<span data-ttu-id="dc4c3-143">**Concepto**</span><span class="sxs-lookup"><span data-stu-id="dc4c3-143">**Concept**</span></span>|<span data-ttu-id="dc4c3-144">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="dc4c3-144">**Description**</span></span>|
+|<span data-ttu-id="7d03d-143">**Concepto**</span><span class="sxs-lookup"><span data-stu-id="7d03d-143">**Concept**</span></span>|<span data-ttu-id="7d03d-144">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="7d03d-144">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="dc4c3-145">Detección automática en Exchange</span><span class="sxs-lookup"><span data-stu-id="dc4c3-145">Autodiscover for Exchange</span></span>](autodiscover-for-exchange.md) <br/> |<span data-ttu-id="dc4c3-146">Proporciona información general del funcionamiento del servicio Detección automática.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-146">Provides an overview of how the Autodiscover service works.</span></span>  <br/> |
-|[<span data-ttu-id="dc4c3-147">Usar autodetección para buscar puntos de conexión</span><span class="sxs-lookup"><span data-stu-id="dc4c3-147">How to: Use Autodiscover to find connection points</span></span>](how-to-use-autodiscover-to-find-connection-points.md) <br/> |<span data-ttu-id="dc4c3-148">Describe el proceso que ha usado el servicio Detección automática para redirigir la aplicación cliente al punto de conexión de servicio correcto.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-148">Describes the process used by the Autodiscover service to redirect your client application to the correct service endpoint.</span></span>  <br/> |
+|[<span data-ttu-id="7d03d-145">Detección automática en Exchange</span><span class="sxs-lookup"><span data-stu-id="7d03d-145">Autodiscover for Exchange</span></span>](autodiscover-for-exchange.md) <br/> |<span data-ttu-id="7d03d-146">Proporciona información general del funcionamiento del servicio Detección automática.</span><span class="sxs-lookup"><span data-stu-id="7d03d-146">Provides an overview of how the Autodiscover service works.</span></span>  <br/> |
+|[<span data-ttu-id="7d03d-147">Usar autodetección para buscar puntos de conexión</span><span class="sxs-lookup"><span data-stu-id="7d03d-147">Use Autodiscover to find connection points</span></span>](how-to-use-autodiscover-to-find-connection-points.md) <br/> |<span data-ttu-id="7d03d-148">Describe el proceso que ha usado el servicio Detección automática para redirigir la aplicación cliente al punto de conexión de servicio correcto.</span><span class="sxs-lookup"><span data-stu-id="7d03d-148">Describes the process used by the Autodiscover service to redirect your client application to the correct service endpoint.</span></span>  <br/> |
    
-<span data-ttu-id="dc4c3-149">Si usa la API administrada de EWS, usa la clase [Microsoft.Exchange.WebServices.Data.ExchangeService](http://msdn.microsoft.com/es-ES/library/exchange/dd635811%28v=exchg.80%29.aspx) del espacio de nombres [Microsoft.Exchange.WebServices.Data](http://msdn.microsoft.com/es-ES/library/exchange/dd633907%28v=exchg.80%29.aspx) para administrar la conexión con EWS.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-149">If you are using the EWS Managed API, you use the [Microsoft.Exchange.WebServices.Data.ExchangeServicehttp://msdn.microsoft.com/en-us/library/exchange/dd635811(v=exchg.80).aspx](http://msdn.microsoft.com/es-ES/library/exchange/dd635811%28v=exchg.80%29.aspx) class in the  [Microsoft.Exchange.WebServices.Datahttp://msdn.microsoft.com/en-us/library/exchange/dd633907(v=exchg.80).aspx](http://msdn.microsoft.com/es-ES/library/exchange/dd633907%28v=exchg.80%29.aspx) namespace to manage your connection to EWS. The code examples in this section assume that you reference the following namespaces in your code:</span></span> <span data-ttu-id="dc4c3-150">En los ejemplos de código de esta sección se asume que hace referencia a los siguientes espacios de nombres en el código:</span><span class="sxs-lookup"><span data-stu-id="dc4c3-150">The code examples in this section assume that you reference the following namespaces in your code:</span></span> 
+<span data-ttu-id="7d03d-149">Si usa la API administrada de EWS, usa la clase [Microsoft.Exchange.WebServices.Data.ExchangeService](https://msdn.microsoft.com/library/exchange/dd635811%28v=exchg.80%29.aspx) del espacio de nombres [Microsoft.Exchange.WebServices.Data](https://msdn.microsoft.com/library/exchange/dd633907%28v=exchg.80%29.aspx) para administrar la conexión con EWS.</span><span class="sxs-lookup"><span data-stu-id="7d03d-149">If you are using the EWS Managed API, you use the [Microsoft.Exchange.WebServices.Data.ExchangeService](https://msdn.microsoft.com/library/exchange/dd635811%28v=exchg.80%29.aspx) class in the [Microsoft.Exchange.WebServices.Data](https://msdn.microsoft.com/library/exchange/dd633907%28v=exchg.80%29.aspx) namespace to manage your connection to EWS.</span></span> <span data-ttu-id="7d03d-150">En los ejemplos de código de esta sección se asume que hace referencia a los siguientes espacios de nombres en el código:</span><span class="sxs-lookup"><span data-stu-id="7d03d-150">The code examples in this section assume that you reference the following namespaces in your code:</span></span> 
   
-- <span data-ttu-id="dc4c3-151">**System.Net**</span><span class="sxs-lookup"><span data-stu-id="dc4c3-151">**System.Net**</span></span>
+- <span data-ttu-id="7d03d-151">**System.Net**</span><span class="sxs-lookup"><span data-stu-id="7d03d-151">**System.Net**</span></span>
     
-- <span data-ttu-id="dc4c3-152">**Microsoft.Exchange.WebServices.Data.ExchangeService**</span><span class="sxs-lookup"><span data-stu-id="dc4c3-152">**Microsoft.Exchange.WebServices.Data.ExchangeService**</span></span>
+- <span data-ttu-id="7d03d-152">**Microsoft.Exchange.WebServices.Data.ExchangeService**</span><span class="sxs-lookup"><span data-stu-id="7d03d-152">**Microsoft.Exchange.WebServices.Data.ExchangeService**</span></span>
     
-## <a name="get-domain-settings-by-using-the-ews-managed-api"></a><span data-ttu-id="dc4c3-153">Obtener la configuración del dominio mediante la API administrada de EWS</span><span class="sxs-lookup"><span data-stu-id="dc4c3-153">Get domain settings by using the EWS Managed API</span></span>
-<span data-ttu-id="dc4c3-154"><a name="bk_Managed"> </a></span><span class="sxs-lookup"><span data-stu-id="dc4c3-154"></span></span>
+## <a name="get-domain-settings-by-using-the-ews-managed-api"></a><span data-ttu-id="7d03d-153">Obtener la configuración del dominio mediante la API administrada de EWS</span><span class="sxs-lookup"><span data-stu-id="7d03d-153">Get domain settings by using the EWS Managed API</span></span>
+<span data-ttu-id="7d03d-154"><a name="bk_Managed"> </a></span><span class="sxs-lookup"><span data-stu-id="7d03d-154"><a name="bk_Managed"> </a></span></span>
 
-<span data-ttu-id="dc4c3-155">Si usa la API administrada de EWS, puede usar el método [Microsoft.Exchange.WebServices.Data.AutodiscoverSettings.GetUserSettings](http://msdn.microsoft.com/es-ES/library/exchange/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) del objeto [Microsoft.Exchange.WebServices.Data.AutodiscoverService ](http://msdn.microsoft.com/es-ES/library/exchange/dd634321%28v=exchg.80%29.aspx) para generar la solicitud que recupera información de configuración para un dominio, como se muestra en el ejemplo siguiente.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-155">If you are using the EWS Managed API, you can use the [Microsoft.Exchange.WebServices.Data.AutodiscoverSettings.GetUserSettingshttp://msdn.microsoft.com/en-us/library/exchange/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings(v=exchg.80).aspx](http://msdn.microsoft.com/es-ES/library/exchange/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) method of the  [Microsoft.Exchange.WebServices.Data.AutodiscoverServicehttp://msdn.microsoft.com/en-us/library/exchange/dd634321(v=exchg.80).aspx](http://msdn.microsoft.com/es-ES/library/exchange/dd634321%28v=exchg.80%29.aspx) object to generate the request that retrieves configuration information for a domain, as shown in the following example. In this example, only some of the possible domain settings are requested, and only the requested settings are returned from the server.</span></span> <span data-ttu-id="dc4c3-156">En este ejemplo, solo se solicitan algunas de las posibles opciones de configuración del dominio, y solo las opciones de configuración solicitadas se devuelven del servidor.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-156">In this example, only some of the possible domain settings are requested, and only the requested settings are returned from the server.</span></span> 
+<span data-ttu-id="7d03d-155">Si usa la API administrada de EWS, puede usar el método [Microsoft.Exchange.WebServices.Data.AutodiscoverSettings.GetUserSettings](https://msdn.microsoft.com/library/exchange/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) del objeto [Microsoft.Exchange.WebServices.Data.AutodiscoverService ](https://msdn.microsoft.com/library/exchange/dd634321%28v=exchg.80%29.aspx) para generar la solicitud que recupera información de configuración para un dominio, como se muestra en el ejemplo siguiente.</span><span class="sxs-lookup"><span data-stu-id="7d03d-155">If you are using the EWS Managed API, you can use the [Microsoft.Exchange.WebServices.Data.AutodiscoverSettings.GetUserSettings](https://msdn.microsoft.com/library/exchange/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) method of the [Microsoft.Exchange.WebServices.Data.AutodiscoverService](https://msdn.microsoft.com/library/exchange/dd634321%28v=exchg.80%29.aspx) object to generate the request that retrieves configuration information for a domain, as shown in the following example.</span></span> <span data-ttu-id="7d03d-156">En este ejemplo, solo se solicitan algunas de las posibles opciones de configuración del dominio, y solo las opciones de configuración solicitadas se devuelven del servidor.</span><span class="sxs-lookup"><span data-stu-id="7d03d-156">In this example, only some of the possible domain settings are requested, and only the requested settings are returned from the server.</span></span> 
   
 ```cs
 AutodiscoverService autodiscoverService = new AutodiscoverService("domain.contoso.com");
@@ -95,7 +95,7 @@ GetDomainSettingsResponse domainresponse = autodiscoverService.GetDomainSettings
     DomainSettingName.ExternalEwsVersion);
 ```
 
-<span data-ttu-id="dc4c3-p110">Puede analizar la colección que se ha devuelto para tener acceso a cada par clave-valor. En el siguiente ejemplo se muestra cómo analizar mediante cada elemento devuelto y mostrar el nombre y el valor de cada par clave-valor.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-p110">You can parse the collection returned to access each key/value pair. The following example shows how to parse through each returned element and display the name and value of each key/value pair.</span></span>
+<span data-ttu-id="7d03d-p110">Puede analizar la colección que se ha devuelto para tener acceso a cada par clave-valor. En el siguiente ejemplo se muestra cómo analizar mediante cada elemento devuelto y mostrar el nombre y el valor de cada par clave-valor.</span><span class="sxs-lookup"><span data-stu-id="7d03d-p110">You can parse the collection returned to access each key/value pair. The following example shows how to parse through each returned element and display the name and value of each key/value pair.</span></span>
   
 ```cs
 // Display each retrieved value. The settings are part of a key/value pair.
@@ -105,31 +105,31 @@ foreach (KeyValuePair<DomainSettingName, Object> domainsetting in domainresponse
 }
 ```
 
-<span data-ttu-id="dc4c3-159">De manera alternativa, puede obtener el valor de una configuración específica.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-159">Alternatively, you can obtain the value of a specific setting. In the following example, the ExternalEwsUrl setting is to be displayed.</span></span> <span data-ttu-id="dc4c3-160">En el siguiente ejemplo, se va a mostrar la configuración **ExternalEwsUrl**.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-160">Alternatively, you can obtain the value of a specific setting. In the following example, the **ExternalEwsUrl** setting is to be displayed.</span></span> 
+<span data-ttu-id="7d03d-159">De manera alternativa, puede obtener el valor de una configuración específica.</span><span class="sxs-lookup"><span data-stu-id="7d03d-159">Alternatively, you can obtain the value of a specific setting.</span></span> <span data-ttu-id="7d03d-160">En el siguiente ejemplo, se va a mostrar la configuración **ExternalEwsUrl**.</span><span class="sxs-lookup"><span data-stu-id="7d03d-160">In the following example, the **ExternalEwsUrl** setting is to be displayed.</span></span> 
   
 ```cs
 // Display a specific setting, such as ExternalEwsUrl.
 Console.WriteLine(domainresponse.Settings[DomainSettingName.ExternalEwsUrl]);
 ```
 
-## <a name="get-user-settings-by-using-ews-soap-autodiscover"></a><span data-ttu-id="dc4c3-161">Obtener la configuración de usuario mediante la Detección automática SOAP de EWS</span><span class="sxs-lookup"><span data-stu-id="dc4c3-161">Get user settings by using EWS SOAP Autodiscover</span></span>
-<span data-ttu-id="dc4c3-162"><a name="bk_SOAP"> </a></span><span class="sxs-lookup"><span data-stu-id="dc4c3-162"></span></span>
+## <a name="get-user-settings-by-using-ews-soap-autodiscover"></a><span data-ttu-id="7d03d-161">Obtener la configuración de usuario mediante la Detección automática SOAP de EWS</span><span class="sxs-lookup"><span data-stu-id="7d03d-161">Get user settings by using EWS SOAP Autodiscover</span></span>
+<span data-ttu-id="7d03d-162"><a name="bk_SOAP"> </a></span><span class="sxs-lookup"><span data-stu-id="7d03d-162"><a name="bk_SOAP"> </a></span></span>
 
-<span data-ttu-id="dc4c3-163">En el siguiente ejemplo se muestra una solicitud XML de SOAP para obtener la configuración de dominio del servicio Detección automática.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-163">The following example shows a SOAP XML request to get both domain settings from the Autodiscover service.</span></span>
+<span data-ttu-id="7d03d-163">En el siguiente ejemplo se muestra una solicitud XML de SOAP para obtener la configuración de dominio del servicio Detección automática.</span><span class="sxs-lookup"><span data-stu-id="7d03d-163">The following example shows a SOAP XML request to get both domain settings from the Autodiscover service.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+<soap:Envelope xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
         xmlns:wsa="http://www.w3.org/2005/08/addressing" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+        xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <a:RequestedServerVersion>Exchange2013</a:RequestedServerVersion>
-    <wsa:Action>http://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetDomainSettings</wsa:Action>
+    <wsa:Action>https://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetDomainSettings</wsa:Action>
     <wsa:To>https://autodiscover.exchange.microsoft.com/autodiscover/autodiscover.svc</wsa:To>
   </soap:Header>
   <soap:Body>
-    <a:GetDomainSettingsRequestMessage xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <a:GetDomainSettingsRequestMessage xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <a:Request>
         <a:Domains>
           <a:Domain>domain</a:Domain>
@@ -145,15 +145,15 @@ Console.WriteLine(domainresponse.Settings[DomainSettingName.ExternalEwsUrl]);
 </soap:Envelope>
 ```
 
-<span data-ttu-id="dc4c3-164">En el siguiente ejemplo se muestra la respuesta XML que se ha devuelto del servidor después de que analice la solicitud del cliente.</span><span class="sxs-lookup"><span data-stu-id="dc4c3-164">The following example shows the XML response that is returned by the server after it parses the request from the client.</span></span>
+<span data-ttu-id="7d03d-164">En el siguiente ejemplo se muestra la respuesta XML que se ha devuelto del servidor después de que analice la solicitud del cliente.</span><span class="sxs-lookup"><span data-stu-id="7d03d-164">The following example shows the XML response that is returned by the server after it parses the request from the client.</span></span>
   
 ```XML
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" 
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/" 
         xmlns:a="http://www.w3.org/2005/08/addressing">
   <s:Header>
-    <a:Action s:mustUnderstand="1">http://schemas.microsoft.com/exchange/2010/
+    <a:Action s:mustUnderstand="1">https://schemas.microsoft.com/exchange/2010/
           Autodiscover/Autodiscover/GetDomainSettingsResponse</a:Action>
-    <h:ServerVersionInfo xmlns:h="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+    <h:ServerVersionInfo xmlns:h="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
           xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
       <h:MajorVersion>15</h:MajorVersion>
       <h:MinorVersion>0</h:MinorVersion>
@@ -163,7 +163,7 @@ Console.WriteLine(domainresponse.Settings[DomainSettingName.ExternalEwsUrl]);
     </h:ServerVersionInfo>
   </s:Header>
   <s:Body>
-    <GetDomainSettingsResponseMessage xmlns="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <GetDomainSettingsResponseMessage xmlns="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <Response xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
         <ErrorCode>NoError</ErrorCode>
         <ErrorMessage />
@@ -191,20 +191,20 @@ Console.WriteLine(domainresponse.Settings[DomainSettingName.ExternalEwsUrl]);
 </s:Envelope>
 ```
 
-## <a name="next-steps"></a><span data-ttu-id="dc4c3-165">Siguientes pasos</span><span class="sxs-lookup"><span data-stu-id="dc4c3-165">Next steps</span></span>
-<span data-ttu-id="dc4c3-166"><a name="bk_Next"> </a></span><span class="sxs-lookup"><span data-stu-id="dc4c3-166"></span></span>
+## <a name="next-steps"></a><span data-ttu-id="7d03d-165">Siguientes pasos</span><span class="sxs-lookup"><span data-stu-id="7d03d-165">Next steps</span></span>
+<span data-ttu-id="7d03d-166"><a name="bk_Next"> </a></span><span class="sxs-lookup"><span data-stu-id="7d03d-166"><a name="bk_Next"> </a></span></span>
 
-<span data-ttu-id="dc4c3-p112">La configuración de dominio proporciona la información básica que su cliente necesita para conectarse a EWS. Puede usar esta información para conectarse a EWS, o puede recuperar las opciones de configuración adicionales de una cuenta de correo electrónico del servidor. Para obtener más información, vea el siguiente artículo:</span><span class="sxs-lookup"><span data-stu-id="dc4c3-p112">Domain settings provide the basic information that your client needs to connect to EWS. You can use this information to connect to EWS, or you can retrieve additional configuration settings for an email account from the server. For more information, see the following article:</span></span>
+<span data-ttu-id="7d03d-p112">La configuración de dominio proporciona la información básica que su cliente necesita para conectarse a EWS. Puede usar esta información para conectarse a EWS, o puede recuperar las opciones de configuración adicionales de una cuenta de correo electrónico del servidor. Para obtener más información, vea el siguiente artículo:</span><span class="sxs-lookup"><span data-stu-id="7d03d-p112">Domain settings provide the basic information that your client needs to connect to EWS. You can use this information to connect to EWS, or you can retrieve additional configuration settings for an email account from the server. For more information, see the following article:</span></span>
   
-- [<span data-ttu-id="dc4c3-170">Obtener la configuración de usuario de Exchange mediante el uso de detección automática</span><span class="sxs-lookup"><span data-stu-id="dc4c3-170">How to: Get user settings from Exchange by using Autodiscover</span></span>](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
+- [<span data-ttu-id="7d03d-170">Obtener la configuración de usuario de Exchange mediante el uso de detección automática</span><span class="sxs-lookup"><span data-stu-id="7d03d-170">Get user settings from Exchange by using Autodiscover</span></span>](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
     
-## <a name="see-also"></a><span data-ttu-id="dc4c3-171">Vea también</span><span class="sxs-lookup"><span data-stu-id="dc4c3-171">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7d03d-171">Vea también</span><span class="sxs-lookup"><span data-stu-id="7d03d-171">See also</span></span>
 
 
-- [<span data-ttu-id="dc4c3-172">Configurar la aplicación EWS</span><span class="sxs-lookup"><span data-stu-id="dc4c3-172">Setting up your EWS application</span></span>](setting-up-your-ews-application.md)
+- [<span data-ttu-id="7d03d-172">Configurar la aplicación EWS</span><span class="sxs-lookup"><span data-stu-id="7d03d-172">Setting up your EWS application</span></span>](setting-up-your-ews-application.md)
     
-- [<span data-ttu-id="dc4c3-173">Referencia del servicio web de Detección automática para Exchange</span><span class="sxs-lookup"><span data-stu-id="dc4c3-173">Autodiscover web service reference for Exchange</span></span>](http://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)
+- [<span data-ttu-id="7d03d-173">Referencia del servicio web de Detección automática para Exchange</span><span class="sxs-lookup"><span data-stu-id="7d03d-173">Autodiscover web service reference for Exchange</span></span>](https://msdn.microsoft.com/library/a01124a8-a8cf-4b80-8625-d7ee05690bca%28Office.15%29.aspx)
     
-- [<span data-ttu-id="dc4c3-174">Referencia EWS para Exchange</span><span class="sxs-lookup"><span data-stu-id="dc4c3-174">EWS reference for Exchange</span></span>](http://msdn.microsoft.com/library/2a873474-1bb2-4cb1-a556-40e8c4159f4a%28Office.15%29.aspx)
+- [<span data-ttu-id="7d03d-174">Referencia EWS para Exchange</span><span class="sxs-lookup"><span data-stu-id="7d03d-174">EWS reference for Exchange</span></span>](https://msdn.microsoft.com/library/2a873474-1bb2-4cb1-a556-40e8c4159f4a%28Office.15%29.aspx)
     
 
