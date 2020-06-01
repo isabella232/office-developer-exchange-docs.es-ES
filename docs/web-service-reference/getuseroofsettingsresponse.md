@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 011cb38b-da3c-4b1b-8836-a6b212b511f6
-description: El elemento GetUserOofSettingsResponse contiene el mensaje de respuesta y la configuración de fuera de oficina (OOF) para un usuario.
-ms.openlocfilehash: dc63b6d54471973ce5961a5a5ad6a23f6521fc0e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetUserOofSettingsResponse contiene el mensaje de respuesta y la configuración de fuera de la oficina (OOF) de un usuario.
+ms.openlocfilehash: f7f28c67fd36630ffb5294ab35c0fef2f467ba22
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835693"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457819"
 ---
-# <a name="getuseroofsettingsresponse"></a><span data-ttu-id="c87f4-103">GetUserOofSettingsResponse</span><span class="sxs-lookup"><span data-stu-id="c87f4-103">GetUserOofSettingsResponse</span></span>
+# <a name="getuseroofsettingsresponse"></a><span data-ttu-id="771b9-103">GetUserOofSettingsResponse</span><span class="sxs-lookup"><span data-stu-id="771b9-103">GetUserOofSettingsResponse</span></span>
 
-<span data-ttu-id="c87f4-104">El elemento **GetUserOofSettingsResponse** contiene el mensaje de respuesta y la configuración de fuera de oficina (OOF) para un usuario.</span><span class="sxs-lookup"><span data-stu-id="c87f4-104">The **GetUserOofSettingsResponse** element contains the response message and the Out of Office (OOF) settings for a user.</span></span> 
+<span data-ttu-id="771b9-104">El elemento **GetUserOofSettingsResponse** contiene el mensaje de respuesta y la configuración de fuera de la oficina (OOF) de un usuario.</span><span class="sxs-lookup"><span data-stu-id="771b9-104">The **GetUserOofSettingsResponse** element contains the response message and the Out of Office (OOF) settings for a user.</span></span> 
   
 ```xml
 <GetUserOofSettingsResponse>
@@ -31,45 +31,45 @@ ms.locfileid: "19835693"
 </GetUserOofSettingsResponse>
 ```
 
- <span data-ttu-id="c87f4-105">**GetUserOofSettingsResponse**</span><span class="sxs-lookup"><span data-stu-id="c87f4-105">**GetUserOofSettingsResponse**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="c87f4-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="c87f4-106">Attributes and elements</span></span>
+ <span data-ttu-id="771b9-105">**GetUserOofSettingsResponse**</span><span class="sxs-lookup"><span data-stu-id="771b9-105">**GetUserOofSettingsResponse**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="771b9-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="771b9-106">Attributes and elements</span></span>
 
-<span data-ttu-id="c87f4-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="c87f4-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="771b9-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="771b9-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="c87f4-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="c87f4-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="771b9-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="771b9-108">Attributes</span></span>
 
-<span data-ttu-id="c87f4-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="c87f4-109">None.</span></span>
+<span data-ttu-id="771b9-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="771b9-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="c87f4-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="c87f4-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="771b9-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="771b9-110">Child elements</span></span>
 
-|<span data-ttu-id="c87f4-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="c87f4-111">**Element**</span></span>|<span data-ttu-id="c87f4-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="c87f4-112">**Description**</span></span>|
+|<span data-ttu-id="771b9-111">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="771b9-111">**Element**</span></span>|<span data-ttu-id="771b9-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="771b9-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="c87f4-113">ResponseMessage</span><span class="sxs-lookup"><span data-stu-id="c87f4-113">ResponseMessage</span></span>](responsemessage.md) <br/> |<span data-ttu-id="c87f4-114">Proporciona información descriptiva sobre el estado de respuesta.</span><span class="sxs-lookup"><span data-stu-id="c87f4-114">Provides descriptive information about the response status.</span></span>  <br/> |
-|[<span data-ttu-id="c87f4-115">OofSettings</span><span class="sxs-lookup"><span data-stu-id="c87f4-115">OofSettings</span></span>](oofsettings.md) <br/> |<span data-ttu-id="c87f4-116">Contiene la configuración de fuera de la oficina.</span><span class="sxs-lookup"><span data-stu-id="c87f4-116">Contains the OOF settings.</span></span>  <br/> |
-|[<span data-ttu-id="c87f4-117">AllowExternalOof</span><span class="sxs-lookup"><span data-stu-id="c87f4-117">AllowExternalOof</span></span>](allowexternaloof.md) <br/> |<span data-ttu-id="c87f4-118">Contiene un valor que identifica a la que se envían los mensajes externos de fuera de la oficina.</span><span class="sxs-lookup"><span data-stu-id="c87f4-118">Contains a value that identifies to whom external OOF messages are sent.</span></span>  <br/> |
+|[<span data-ttu-id="771b9-113">ResponseMessage</span><span class="sxs-lookup"><span data-stu-id="771b9-113">ResponseMessage</span></span>](responsemessage.md) <br/> |<span data-ttu-id="771b9-114">Proporciona información descriptiva sobre el estado de la respuesta.</span><span class="sxs-lookup"><span data-stu-id="771b9-114">Provides descriptive information about the response status.</span></span>  <br/> |
+|[<span data-ttu-id="771b9-115">OofSettings</span><span class="sxs-lookup"><span data-stu-id="771b9-115">OofSettings</span></span>](oofsettings.md) <br/> |<span data-ttu-id="771b9-116">Contiene la configuración de OOF.</span><span class="sxs-lookup"><span data-stu-id="771b9-116">Contains the OOF settings.</span></span>  <br/> |
+|[<span data-ttu-id="771b9-117">AllowExternalOof</span><span class="sxs-lookup"><span data-stu-id="771b9-117">AllowExternalOof</span></span>](allowexternaloof.md) <br/> |<span data-ttu-id="771b9-118">Contiene un valor que identifica a quién se envían los mensajes externos de OOF.</span><span class="sxs-lookup"><span data-stu-id="771b9-118">Contains a value that identifies to whom external OOF messages are sent.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="c87f4-119">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="c87f4-119">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="771b9-119">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="771b9-119">Parent elements</span></span>
 
-<span data-ttu-id="c87f4-120">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="c87f4-120">None.</span></span>
+<span data-ttu-id="771b9-120">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="771b9-120">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="c87f4-121">Comentarios</span><span class="sxs-lookup"><span data-stu-id="c87f4-121">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="771b9-121">Comentarios</span><span class="sxs-lookup"><span data-stu-id="771b9-121">Remarks</span></span>
 
-<span data-ttu-id="c87f4-122">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="c87f4-122">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="771b9-122">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="771b9-122">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="c87f4-123">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="c87f4-123">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="771b9-123">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="771b9-123">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="c87f4-124">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="c87f4-124">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="c87f4-125">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="c87f4-125">Schema Name</span></span>  <br/> |<span data-ttu-id="c87f4-126">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="c87f4-126">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="c87f4-127">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="c87f4-127">Validation File</span></span>  <br/> |<span data-ttu-id="c87f4-128">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="c87f4-128">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="c87f4-129">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="c87f4-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="c87f4-130">False</span><span class="sxs-lookup"><span data-stu-id="c87f4-130">False</span></span>  <br/> |
+|<span data-ttu-id="771b9-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="771b9-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="771b9-125">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="771b9-125">Schema Name</span></span>  <br/> |<span data-ttu-id="771b9-126">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="771b9-126">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="771b9-127">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="771b9-127">Validation File</span></span>  <br/> |<span data-ttu-id="771b9-128">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="771b9-128">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="771b9-129">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="771b9-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="771b9-130">Falso</span><span class="sxs-lookup"><span data-stu-id="771b9-130">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="c87f4-131">Vea también</span><span class="sxs-lookup"><span data-stu-id="c87f4-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="771b9-131">Vea también</span><span class="sxs-lookup"><span data-stu-id="771b9-131">See also</span></span>
 
 
 
-[<span data-ttu-id="c87f4-132">Operación GetUserOofSettings</span><span class="sxs-lookup"><span data-stu-id="c87f4-132">GetUserOofSettings operation</span></span>](getuseroofsettings-operation.md)
+[<span data-ttu-id="771b9-132">Operación GetUserOofSettings</span><span class="sxs-lookup"><span data-stu-id="771b9-132">GetUserOofSettings operation</span></span>](getuseroofsettings-operation.md)
   
-[<span data-ttu-id="c87f4-133">Operación SetUserOofSettings</span><span class="sxs-lookup"><span data-stu-id="c87f4-133">SetUserOofSettings operation</span></span>](setuseroofsettings-operation.md)
+[<span data-ttu-id="771b9-133">Operación SetUserOofSettings</span><span class="sxs-lookup"><span data-stu-id="771b9-133">SetUserOofSettings operation</span></span>](setuseroofsettings-operation.md)
 

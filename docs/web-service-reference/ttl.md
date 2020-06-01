@@ -8,55 +8,55 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: cfefc053-1e3c-46fb-8014-b56a654f2fb3
 description: El elemento TTL especifica el tiempo, en minutos, que el token es válido.
-ms.openlocfilehash: 004c8ebe04ec5f1e1aeb8b961b0708f05295d8d8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 3d5b4ec7e2184035737dbc94f3bb1ad83eb3fef4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840734"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456398"
 ---
-# <a name="ttl"></a><span data-ttu-id="6ac1e-103">TTL</span><span class="sxs-lookup"><span data-stu-id="6ac1e-103">TTL</span></span>
+# <a name="ttl"></a><span data-ttu-id="2bba1-103">TTL</span><span class="sxs-lookup"><span data-stu-id="2bba1-103">TTL</span></span>
 
-<span data-ttu-id="6ac1e-104">El elemento **TTL** especifica el tiempo, en minutos, que el token es válido.</span><span class="sxs-lookup"><span data-stu-id="6ac1e-104">The **TTL** element specifies the time, in minutes, that the token is valid.</span></span> 
+<span data-ttu-id="2bba1-104">El elemento **TTL** especifica el tiempo, en minutos, que el token es válido.</span><span class="sxs-lookup"><span data-stu-id="2bba1-104">The **TTL** element specifies the time, in minutes, that the token is valid.</span></span> 
   
 ```XML
 <TTL></TTL>
 ```
 
- <span data-ttu-id="6ac1e-105">**número entero**</span><span class="sxs-lookup"><span data-stu-id="6ac1e-105">**integer**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="6ac1e-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="6ac1e-106">Attributes and elements</span></span>
+ <span data-ttu-id="2bba1-105">**entero**</span><span class="sxs-lookup"><span data-stu-id="2bba1-105">**integer**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="2bba1-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="2bba1-106">Attributes and elements</span></span>
 
-<span data-ttu-id="6ac1e-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="6ac1e-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="2bba1-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="2bba1-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="6ac1e-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="6ac1e-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="2bba1-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="2bba1-108">Attributes</span></span>
 
-<span data-ttu-id="6ac1e-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="6ac1e-109">None.</span></span>
+<span data-ttu-id="2bba1-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="2bba1-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="6ac1e-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="6ac1e-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="2bba1-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="2bba1-110">Child elements</span></span>
 
-<span data-ttu-id="6ac1e-111">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="6ac1e-111">None.</span></span>
+<span data-ttu-id="2bba1-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="2bba1-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="6ac1e-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="6ac1e-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="2bba1-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="2bba1-112">Parent elements</span></span>
 
-[<span data-ttu-id="6ac1e-113">Token</span><span class="sxs-lookup"><span data-stu-id="6ac1e-113">Token</span></span>](token.md)
+[<span data-ttu-id="2bba1-113">Token</span><span class="sxs-lookup"><span data-stu-id="2bba1-113">Token</span></span>](token.md)
   
-## <a name="text-value"></a><span data-ttu-id="6ac1e-114">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="6ac1e-114">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="2bba1-114">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="2bba1-114">Text value</span></span>
 
-<span data-ttu-id="6ac1e-115">El valor de texto del elemento **TTL** es el tiempo en minutos que el token es válido.</span><span class="sxs-lookup"><span data-stu-id="6ac1e-115">The text value of the **TTL** element is the time in minutes that the token is valid.</span></span> 
+<span data-ttu-id="2bba1-115">El valor de texto del elemento **TTL** es el tiempo en minutos que el token es válido.</span><span class="sxs-lookup"><span data-stu-id="2bba1-115">The text value of the **TTL** element is the time in minutes that the token is valid.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="6ac1e-116">Comentarios</span><span class="sxs-lookup"><span data-stu-id="6ac1e-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2bba1-116">Comentarios</span><span class="sxs-lookup"><span data-stu-id="2bba1-116">Remarks</span></span>
 
-<span data-ttu-id="6ac1e-117">Este elemento se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="6ac1e-117">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="2bba1-117">Este elemento se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="2bba1-117">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="6ac1e-118">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="6ac1e-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="2bba1-118">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="2bba1-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="6ac1e-119">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="6ac1e-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="2bba1-119">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="2bba1-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="6ac1e-120">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="6ac1e-120">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="6ac1e-121">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="6ac1e-121">Schema name</span></span>  <br/> |<span data-ttu-id="6ac1e-122">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="6ac1e-122">Types schema</span></span>  <br/> |
-|<span data-ttu-id="6ac1e-123">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="6ac1e-123">Validation file</span></span>  <br/> |<span data-ttu-id="6ac1e-124">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="6ac1e-124">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="6ac1e-125">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="6ac1e-125">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="2bba1-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="2bba1-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="2bba1-121">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="2bba1-121">Schema name</span></span>  <br/> |<span data-ttu-id="2bba1-122">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="2bba1-122">Types schema</span></span>  <br/> |
+|<span data-ttu-id="2bba1-123">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="2bba1-123">Validation file</span></span>  <br/> |<span data-ttu-id="2bba1-124">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="2bba1-124">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="2bba1-125">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="2bba1-125">Can be empty</span></span>  <br/> ||
    
 

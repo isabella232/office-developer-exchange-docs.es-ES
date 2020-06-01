@@ -7,48 +7,51 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8a67c1d8-d021-4e68-aa62-35f7d9c2edc7
-description: Busque información sobre la EWS SearchMailboxes operación.
-ms.openlocfilehash: 141ea466a24f3cb400a8e0b63e2162c1eae5d7f8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Buscar información sobre la operación de EWS de SearchMailboxes.
+ms.openlocfilehash: 9ec7e9dd4ef17f22f236e64ca1fdbeb65e6e56fe
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837296"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456777"
 ---
-# <a name="searchmailboxes-operation"></a><span data-ttu-id="460fa-103">Operación SearchMailboxes</span><span class="sxs-lookup"><span data-stu-id="460fa-103">SearchMailboxes operation</span></span>
+# <a name="searchmailboxes-operation"></a><span data-ttu-id="312df-103">Operación SearchMailboxes</span><span class="sxs-lookup"><span data-stu-id="312df-103">SearchMailboxes operation</span></span>
 
-<span data-ttu-id="460fa-104">Obtenga información acerca de la operación de EWS **SearchMailboxes** .</span><span class="sxs-lookup"><span data-stu-id="460fa-104">Find information about the **SearchMailboxes** EWS operation.</span></span> 
-  
-<span data-ttu-id="460fa-105">La operación **SearchMailboxes** busca en los buzones de correo para las apariciones de términos en los elementos del buzón.</span><span class="sxs-lookup"><span data-stu-id="460fa-105">The **SearchMailboxes** operation searches mailboxes for occurrences of terms in mailbox items.</span></span> 
-  
-<span data-ttu-id="460fa-106">Esta operación se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="460fa-106">This operation was introduced in Exchange Server 2013.</span></span>
-  
-## <a name="using-the-searchmailboxes-operation"></a><span data-ttu-id="460fa-107">Mediante la operación SearchMailboxes</span><span class="sxs-lookup"><span data-stu-id="460fa-107">Using the SearchMailboxes operation</span></span>
+> [!NOTE]
+> <span data-ttu-id="312df-104">Esta operación está en desuso y Microsoft ya no la admite.</span><span class="sxs-lookup"><span data-stu-id="312df-104">This operation is deprecated, and no longer supported by Microsoft.</span></span>  <span data-ttu-id="312df-105">Como reemplazo, use la operación [FindItem](finditem-operation.md) .</span><span class="sxs-lookup"><span data-stu-id="312df-105">As a replacement, please use the [FindItem](finditem-operation.md) operation.</span></span>
 
-<span data-ttu-id="460fa-108">La operación de **SearchMailboxes** puede utilizar muchas de las consultas de búsqueda simultáneas para realizar la búsqueda de detección en varios buzones de correo.</span><span class="sxs-lookup"><span data-stu-id="460fa-108">The **SearchMailboxes** operation can use many simultaneous search queries to perform discovery search on multiple mailboxes.</span></span> <span data-ttu-id="460fa-109">Los resultados pueden ser cualquier información estadística sobre el número de veces que se producen los términos de búsqueda o una vista previa de los elementos que contienen los términos de búsqueda.</span><span class="sxs-lookup"><span data-stu-id="460fa-109">The results can be either statistical information about the number of times search terms occur, or a preview of the items that contain the search terms.</span></span> 
+<span data-ttu-id="312df-106">Buscar información sobre la operación de EWS de **SearchMailboxes** .</span><span class="sxs-lookup"><span data-stu-id="312df-106">Find information about the **SearchMailboxes** EWS operation.</span></span> 
   
-### <a name="searchmailboxes-operation-soap-headers"></a><span data-ttu-id="460fa-110">Encabezados SOAP de operación de SearchMailboxes</span><span class="sxs-lookup"><span data-stu-id="460fa-110">SearchMailboxes operation SOAP headers</span></span>
+<span data-ttu-id="312df-107">La operación **SearchMailboxes** busca en los buzones las ocurrencias de términos en los elementos del buzón.</span><span class="sxs-lookup"><span data-stu-id="312df-107">The **SearchMailboxes** operation searches mailboxes for occurrences of terms in mailbox items.</span></span> 
+  
+<span data-ttu-id="312df-108">Esta operación se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="312df-108">This operation was introduced in Exchange Server 2013.</span></span>
+  
+## <a name="using-the-searchmailboxes-operation"></a><span data-ttu-id="312df-109">Uso de la operación SearchMailboxes</span><span class="sxs-lookup"><span data-stu-id="312df-109">Using the SearchMailboxes operation</span></span>
 
-<span data-ttu-id="460fa-111">La operación de **SearchMailboxes** puede utilizar los encabezados SOAP que se enumeran en la siguiente tabla.</span><span class="sxs-lookup"><span data-stu-id="460fa-111">The **SearchMailboxes** operation can use the SOAP headers that are listed in the following table.</span></span> 
+<span data-ttu-id="312df-110">La operación **SearchMailboxes** puede usar muchas consultas de búsqueda simultáneas para realizar búsquedas de detección en varios buzones.</span><span class="sxs-lookup"><span data-stu-id="312df-110">The **SearchMailboxes** operation can use many simultaneous search queries to perform discovery search on multiple mailboxes.</span></span> <span data-ttu-id="312df-111">Los resultados pueden ser tanto información estadística sobre el número de veces que se produzcan los términos de búsqueda, como una vista previa de los elementos que contienen los términos de búsqueda.</span><span class="sxs-lookup"><span data-stu-id="312df-111">The results can be either statistical information about the number of times search terms occur, or a preview of the items that contain the search terms.</span></span> 
   
-|<span data-ttu-id="460fa-112">**Nombre de encabezado**</span><span class="sxs-lookup"><span data-stu-id="460fa-112">**Header name**</span></span>|<span data-ttu-id="460fa-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="460fa-113">**Element**</span></span>|<span data-ttu-id="460fa-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="460fa-114">**Description**</span></span>|
+### <a name="searchmailboxes-operation-soap-headers"></a><span data-ttu-id="312df-112">Encabezados SOAP de operación SearchMailboxes</span><span class="sxs-lookup"><span data-stu-id="312df-112">SearchMailboxes operation SOAP headers</span></span>
+
+<span data-ttu-id="312df-113">La operación **SearchMailboxes** puede usar los encabezados SOAP que se enumeran en la tabla siguiente.</span><span class="sxs-lookup"><span data-stu-id="312df-113">The **SearchMailboxes** operation can use the SOAP headers that are listed in the following table.</span></span> 
+  
+|<span data-ttu-id="312df-114">**Nombre de encabezado**</span><span class="sxs-lookup"><span data-stu-id="312df-114">**Header name**</span></span>|<span data-ttu-id="312df-115">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="312df-115">**Element**</span></span>|<span data-ttu-id="312df-116">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="312df-116">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="460fa-115">**ManagementRole**</span><span class="sxs-lookup"><span data-stu-id="460fa-115">**ManagementRole**</span></span> <br/> |[<span data-ttu-id="460fa-116">ManagementRole</span><span class="sxs-lookup"><span data-stu-id="460fa-116">ManagementRole</span></span>](managementrole.md) <br/> |<span data-ttu-id="460fa-117">Identifica las funciones de servidor que son necesarias en orden para el autor de la llamada realizar la solicitud.</span><span class="sxs-lookup"><span data-stu-id="460fa-117">Identifies the server roles that are necessary in order for the caller to make the request.</span></span> <span data-ttu-id="460fa-118">Este encabezado es aplicable a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="460fa-118">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="460fa-119">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="460fa-119">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="460fa-120">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="460fa-120">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="460fa-121">Identifica la versión del esquema para la solicitud de la operación.</span><span class="sxs-lookup"><span data-stu-id="460fa-121">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="460fa-122">Este encabezado es aplicable a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="460fa-122">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="460fa-123">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="460fa-123">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="460fa-124">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="460fa-124">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="460fa-125">Identifica la versión del servidor que ha respondido a la solicitud.</span><span class="sxs-lookup"><span data-stu-id="460fa-125">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="460fa-126">Este encabezado es aplicable a una respuesta.</span><span class="sxs-lookup"><span data-stu-id="460fa-126">This header is applicable to a response.</span></span>  <br/> |
+|<span data-ttu-id="312df-117">**ManagementRole**</span><span class="sxs-lookup"><span data-stu-id="312df-117">**ManagementRole**</span></span> <br/> |[<span data-ttu-id="312df-118">ManagementRole</span><span class="sxs-lookup"><span data-stu-id="312df-118">ManagementRole</span></span>](managementrole.md) <br/> |<span data-ttu-id="312df-119">Identifica los roles de servidor que son necesarios para que el autor de la llamada realice la solicitud.</span><span class="sxs-lookup"><span data-stu-id="312df-119">Identifies the server roles that are necessary in order for the caller to make the request.</span></span> <span data-ttu-id="312df-120">Este encabezado se aplica a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="312df-120">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="312df-121">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="312df-121">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="312df-122">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="312df-122">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="312df-123">Identifica la versión del esquema para la solicitud de operación.</span><span class="sxs-lookup"><span data-stu-id="312df-123">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="312df-124">Este encabezado se aplica a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="312df-124">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="312df-125">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="312df-125">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="312df-126">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="312df-126">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="312df-127">Identifica la versión del servidor que respondió a la solicitud.</span><span class="sxs-lookup"><span data-stu-id="312df-127">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="312df-128">Este encabezado se aplica a una respuesta.</span><span class="sxs-lookup"><span data-stu-id="312df-128">This header is applicable to a response.</span></span>  <br/> |
    
-## <a name="searchmailboxes-operation-request-example-search-mailboxes-for-number-of-search-term-hits"></a><span data-ttu-id="460fa-127">Ejemplo de solicitud de operación de SearchMailboxes: búsqueda de buzones de correo para el número de visitas de términos de búsqueda</span><span class="sxs-lookup"><span data-stu-id="460fa-127">SearchMailboxes operation request example: Search mailboxes for number of search term hits</span></span>
+## <a name="searchmailboxes-operation-request-example-search-mailboxes-for-number-of-search-term-hits"></a><span data-ttu-id="312df-129">Ejemplo de solicitud de operación SearchMailboxes: buzones de búsqueda para el número de aciertos de términos de búsqueda</span><span class="sxs-lookup"><span data-stu-id="312df-129">SearchMailboxes operation request example: Search mailboxes for number of search term hits</span></span>
 
-<span data-ttu-id="460fa-128">El siguiente ejemplo de una solicitud de operación **SearchMailboxes** muestra cómo usar las distintas dos consultas para buscar tres buzones diferentes para la información estadística sobre cuántas veces aparece un término en cada buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="460fa-128">The following example of a **SearchMailboxes** operation request shows how to use two different queries to search three different mailboxes for statistical information about how many times a term appears in each mailbox.</span></span> 
+<span data-ttu-id="312df-130">El siguiente ejemplo de una solicitud de operación de **SearchMailboxes** muestra cómo usar dos consultas diferentes para buscar en tres buzones diferentes para obtener información estadística sobre cuántas veces aparece un término en cada buzón.</span><span class="sxs-lookup"><span data-stu-id="312df-130">The following example of a **SearchMailboxes** operation request shows how to use two different queries to search three different mailboxes for statistical information about how many times a term appears in each mailbox.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="460fa-129">En este ejemplo, el elemento de [consulta](query.md) es intentionaly dejada en blanco.</span><span class="sxs-lookup"><span data-stu-id="460fa-129">In this example, the [Query](query.md) element is intentionaly left blank.</span></span> <span data-ttu-id="460fa-130">Se muestra cómo una solicitud correcta puede contener las condiciones de error en una base de búsqueda de buzón de correo por.</span><span class="sxs-lookup"><span data-stu-id="460fa-130">This shows how a successful request can contain error conditions on a per mailbox search basis.</span></span> 
+> <span data-ttu-id="312df-131">En este ejemplo, el elemento [query](query.md) se deja en blanco de forma intencionada.</span><span class="sxs-lookup"><span data-stu-id="312df-131">In this example, the [Query](query.md) element is intentionaly left blank.</span></span> <span data-ttu-id="312df-132">Esto muestra cómo una solicitud correcta puede contener condiciones de error en cada búsqueda de buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="312df-132">This shows how a successful request can contain error conditions on a per mailbox search basis.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
    </soap:Header>
@@ -85,29 +88,29 @@ ms.locfileid: "19837296"
 
 ```
 
-<span data-ttu-id="460fa-131">La solicitud SOAP body contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="460fa-131">The request SOAP body contains the following elements:</span></span>
+<span data-ttu-id="312df-133">El cuerpo SOAP de la solicitud contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="312df-133">The request SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="460fa-132">SearchMailboxes</span><span class="sxs-lookup"><span data-stu-id="460fa-132">SearchMailboxes</span></span>](searchmailboxes.md)
+- [<span data-ttu-id="312df-134">SearchMailboxes</span><span class="sxs-lookup"><span data-stu-id="312df-134">SearchMailboxes</span></span>](searchmailboxes.md)
     
-- [<span data-ttu-id="460fa-133">SearchQueries</span><span class="sxs-lookup"><span data-stu-id="460fa-133">SearchQueries</span></span>](searchqueries.md)
+- [<span data-ttu-id="312df-135">SearchQueries</span><span class="sxs-lookup"><span data-stu-id="312df-135">SearchQueries</span></span>](searchqueries.md)
     
-- [<span data-ttu-id="460fa-134">MailboxQuery</span><span class="sxs-lookup"><span data-stu-id="460fa-134">MailboxQuery</span></span>](mailboxquery.md)
+- [<span data-ttu-id="312df-136">MailboxQuery</span><span class="sxs-lookup"><span data-stu-id="312df-136">MailboxQuery</span></span>](mailboxquery.md)
     
-- [<span data-ttu-id="460fa-135">Consulta</span><span class="sxs-lookup"><span data-stu-id="460fa-135">Query</span></span>](query.md)
+- [<span data-ttu-id="312df-137">Query</span><span class="sxs-lookup"><span data-stu-id="312df-137">Query</span></span>](query.md)
     
-- [<span data-ttu-id="460fa-136">MailboxSearchScopes</span><span class="sxs-lookup"><span data-stu-id="460fa-136">MailboxSearchScopes</span></span>](mailboxsearchscopes.md)
+- [<span data-ttu-id="312df-138">MailboxSearchScopes</span><span class="sxs-lookup"><span data-stu-id="312df-138">MailboxSearchScopes</span></span>](mailboxsearchscopes.md)
     
-- [<span data-ttu-id="460fa-137">MailboxSearchScope</span><span class="sxs-lookup"><span data-stu-id="460fa-137">MailboxSearchScope</span></span>](mailboxsearchscope.md)
+- [<span data-ttu-id="312df-139">MailboxSearchScope</span><span class="sxs-lookup"><span data-stu-id="312df-139">MailboxSearchScope</span></span>](mailboxsearchscope.md)
     
-- [<span data-ttu-id="460fa-138">Buzón de correo (cadena)</span><span class="sxs-lookup"><span data-stu-id="460fa-138">Mailbox (string)</span></span>](mailbox-string.md)
+- [<span data-ttu-id="312df-140">Mailbox (cadena)</span><span class="sxs-lookup"><span data-stu-id="312df-140">Mailbox (string)</span></span>](mailbox-string.md)
     
-- [<span data-ttu-id="460fa-139">SearchScope</span><span class="sxs-lookup"><span data-stu-id="460fa-139">SearchScope</span></span>](searchscope.md)
+- [<span data-ttu-id="312df-141">SearchScope</span><span class="sxs-lookup"><span data-stu-id="312df-141">SearchScope</span></span>](searchscope.md)
     
-- [<span data-ttu-id="460fa-140">ResultType</span><span class="sxs-lookup"><span data-stu-id="460fa-140">ResultType</span></span>](resulttype.md)
+- [<span data-ttu-id="312df-142">ResultType</span><span class="sxs-lookup"><span data-stu-id="312df-142">ResultType</span></span>](resulttype.md)
     
-## <a name="successful-searchmailboxes-operation-response"></a><span data-ttu-id="460fa-141">Respuesta es correcta de operación SearchMailboxes</span><span class="sxs-lookup"><span data-stu-id="460fa-141">Successful SearchMailboxes operation response</span></span>
+## <a name="successful-searchmailboxes-operation-response"></a><span data-ttu-id="312df-143">Respuesta de operación SearchMailboxes correcta</span><span class="sxs-lookup"><span data-stu-id="312df-143">Successful SearchMailboxes operation response</span></span>
 
-<span data-ttu-id="460fa-142">En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación de **SearchMailboxes** para obtener información estadística sobre el número de veces que se encuentran los términos de búsqueda en los buzones de correo de destino.</span><span class="sxs-lookup"><span data-stu-id="460fa-142">The following example shows a successful response to a **SearchMailboxes** operation request to get statistical information about the number of times search terms are found in the target mailboxes.</span></span> <span data-ttu-id="460fa-143">La última consulta contiene un elemento vacío de **consulta** , que muestra una búsqueda de buzón de correo con errores.</span><span class="sxs-lookup"><span data-stu-id="460fa-143">The last query contains an empty **Query** element, which shows a failed mailbox search.</span></span> 
+<span data-ttu-id="312df-144">En el siguiente ejemplo se muestra una respuesta correcta a una solicitud de operación de **SearchMailboxes** para obtener información sobre el número de veces que se encuentran los términos de búsqueda en los buzones de destino.</span><span class="sxs-lookup"><span data-stu-id="312df-144">The following example shows a successful response to a **SearchMailboxes** operation request to get statistical information about the number of times search terms are found in the target mailboxes.</span></span> <span data-ttu-id="312df-145">La última consulta contiene un elemento **query** vacío, que muestra una búsqueda de buzón de correo fallida.</span><span class="sxs-lookup"><span data-stu-id="312df-145">The last query contains an empty **Query** element, which shows a failed mailbox search.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -118,15 +121,15 @@ ms.locfileid: "19837296"
                            MajorBuildNumber="526" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:SearchMailboxesResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                 xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:SearchMailboxesResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                 xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:SearchMailboxesResponseMessage ResponseClass="Success">
                <m:ResponseCode>NoError</m:ResponseCode>
@@ -175,63 +178,63 @@ ms.locfileid: "19837296"
 
 ```
 
-<span data-ttu-id="460fa-144">La respuesta SOAP body contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="460fa-144">The response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="312df-146">El cuerpo SOAP de respuesta contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="312df-146">The response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="460fa-145">SearchMailboxesResponse</span><span class="sxs-lookup"><span data-stu-id="460fa-145">SearchMailboxesResponse</span></span>](searchmailboxesresponse.md)
+- [<span data-ttu-id="312df-147">SearchMailboxesResponse</span><span class="sxs-lookup"><span data-stu-id="312df-147">SearchMailboxesResponse</span></span>](searchmailboxesresponse.md)
     
-- [<span data-ttu-id="460fa-146">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="460fa-146">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="312df-148">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="312df-148">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="460fa-147">SearchMailboxesResponseMessage</span><span class="sxs-lookup"><span data-stu-id="460fa-147">SearchMailboxesResponseMessage</span></span>](searchmailboxesresponsemessage.md)
+- [<span data-ttu-id="312df-149">SearchMailboxesResponseMessage</span><span class="sxs-lookup"><span data-stu-id="312df-149">SearchMailboxesResponseMessage</span></span>](searchmailboxesresponsemessage.md)
     
-- [<span data-ttu-id="460fa-148">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="460fa-148">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="312df-150">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="312df-150">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="460fa-149">SearchMailboxesResult</span><span class="sxs-lookup"><span data-stu-id="460fa-149">SearchMailboxesResult</span></span>](searchmailboxesresult.md)
+- [<span data-ttu-id="312df-151">SearchMailboxesResult</span><span class="sxs-lookup"><span data-stu-id="312df-151">SearchMailboxesResult</span></span>](searchmailboxesresult.md)
     
-- [<span data-ttu-id="460fa-150">SearchQueries</span><span class="sxs-lookup"><span data-stu-id="460fa-150">SearchQueries</span></span>](searchqueries.md)
+- [<span data-ttu-id="312df-152">SearchQueries</span><span class="sxs-lookup"><span data-stu-id="312df-152">SearchQueries</span></span>](searchqueries.md)
     
-- [<span data-ttu-id="460fa-151">MailboxQuery</span><span class="sxs-lookup"><span data-stu-id="460fa-151">MailboxQuery</span></span>](mailboxquery.md)
+- [<span data-ttu-id="312df-153">MailboxQuery</span><span class="sxs-lookup"><span data-stu-id="312df-153">MailboxQuery</span></span>](mailboxquery.md)
     
-- [<span data-ttu-id="460fa-152">Consulta</span><span class="sxs-lookup"><span data-stu-id="460fa-152">Query</span></span>](query.md)
+- [<span data-ttu-id="312df-154">Query</span><span class="sxs-lookup"><span data-stu-id="312df-154">Query</span></span>](query.md)
     
-- [<span data-ttu-id="460fa-153">MailboxSearchScopes</span><span class="sxs-lookup"><span data-stu-id="460fa-153">MailboxSearchScopes</span></span>](mailboxsearchscopes.md)
+- [<span data-ttu-id="312df-155">MailboxSearchScopes</span><span class="sxs-lookup"><span data-stu-id="312df-155">MailboxSearchScopes</span></span>](mailboxsearchscopes.md)
     
-- [<span data-ttu-id="460fa-154">MailboxSearchScope</span><span class="sxs-lookup"><span data-stu-id="460fa-154">MailboxSearchScope</span></span>](mailboxsearchscope.md)
+- [<span data-ttu-id="312df-156">MailboxSearchScope</span><span class="sxs-lookup"><span data-stu-id="312df-156">MailboxSearchScope</span></span>](mailboxsearchscope.md)
     
-- [<span data-ttu-id="460fa-155">Buzón de correo (cadena)</span><span class="sxs-lookup"><span data-stu-id="460fa-155">Mailbox (string)</span></span>](mailbox-string.md)
+- [<span data-ttu-id="312df-157">Mailbox (cadena)</span><span class="sxs-lookup"><span data-stu-id="312df-157">Mailbox (string)</span></span>](mailbox-string.md)
     
-- [<span data-ttu-id="460fa-156">SearchScope</span><span class="sxs-lookup"><span data-stu-id="460fa-156">SearchScope</span></span>](searchscope.md)
+- [<span data-ttu-id="312df-158">SearchScope</span><span class="sxs-lookup"><span data-stu-id="312df-158">SearchScope</span></span>](searchscope.md)
     
-- [<span data-ttu-id="460fa-157">ResultType</span><span class="sxs-lookup"><span data-stu-id="460fa-157">ResultType</span></span>](resulttype.md)
+- [<span data-ttu-id="312df-159">ResultType</span><span class="sxs-lookup"><span data-stu-id="312df-159">ResultType</span></span>](resulttype.md)
     
-- [<span data-ttu-id="460fa-158">ItemCount</span><span class="sxs-lookup"><span data-stu-id="460fa-158">ItemCount</span></span>](itemcount.md)
+- [<span data-ttu-id="312df-160">ItemCount</span><span class="sxs-lookup"><span data-stu-id="312df-160">ItemCount</span></span>](itemcount.md)
     
-- [<span data-ttu-id="460fa-159">Tamaño (long)</span><span class="sxs-lookup"><span data-stu-id="460fa-159">Size (long)</span></span>](size-long.md)
+- [<span data-ttu-id="312df-161">Tamaño (largo)</span><span class="sxs-lookup"><span data-stu-id="312df-161">Size (long)</span></span>](size-long.md)
     
-- [<span data-ttu-id="460fa-160">PageItemCount</span><span class="sxs-lookup"><span data-stu-id="460fa-160">PageItemCount</span></span>](pageitemcount.md)
+- [<span data-ttu-id="312df-162">PageItemCount</span><span class="sxs-lookup"><span data-stu-id="312df-162">PageItemCount</span></span>](pageitemcount.md)
     
-- [<span data-ttu-id="460fa-161">KeywordStats</span><span class="sxs-lookup"><span data-stu-id="460fa-161">KeywordStats</span></span>](keywordstats.md)
+- [<span data-ttu-id="312df-163">KeywordStats</span><span class="sxs-lookup"><span data-stu-id="312df-163">KeywordStats</span></span>](keywordstats.md)
     
-- [<span data-ttu-id="460fa-162">KeywordStat</span><span class="sxs-lookup"><span data-stu-id="460fa-162">KeywordStat</span></span>](keywordstat.md)
+- [<span data-ttu-id="312df-164">KeywordStat</span><span class="sxs-lookup"><span data-stu-id="312df-164">KeywordStat</span></span>](keywordstat.md)
     
-- [<span data-ttu-id="460fa-163">Palabra clave</span><span class="sxs-lookup"><span data-stu-id="460fa-163">Keyword</span></span>](keyword.md)
+- [<span data-ttu-id="312df-165">Palabra clave</span><span class="sxs-lookup"><span data-stu-id="312df-165">Keyword</span></span>](keyword.md)
     
-- [<span data-ttu-id="460fa-164">ItemHits</span><span class="sxs-lookup"><span data-stu-id="460fa-164">ItemHits</span></span>](itemhits.md)
+- [<span data-ttu-id="312df-166">ItemHits</span><span class="sxs-lookup"><span data-stu-id="312df-166">ItemHits</span></span>](itemhits.md)
     
-- [<span data-ttu-id="460fa-165">FailedMailboxes</span><span class="sxs-lookup"><span data-stu-id="460fa-165">FailedMailboxes</span></span>](failedmailboxes.md)
+- [<span data-ttu-id="312df-167">FailedMailboxes</span><span class="sxs-lookup"><span data-stu-id="312df-167">FailedMailboxes</span></span>](failedmailboxes.md)
     
-- [<span data-ttu-id="460fa-166">FailedMailbox</span><span class="sxs-lookup"><span data-stu-id="460fa-166">FailedMailbox</span></span>](failedmailbox.md)
+- [<span data-ttu-id="312df-168">FailedMailbox</span><span class="sxs-lookup"><span data-stu-id="312df-168">FailedMailbox</span></span>](failedmailbox.md)
     
-- [<span data-ttu-id="460fa-167">Buzón de correo (cadena)</span><span class="sxs-lookup"><span data-stu-id="460fa-167">Mailbox (string)</span></span>](mailbox-string.md)
+- [<span data-ttu-id="312df-169">Mailbox (cadena)</span><span class="sxs-lookup"><span data-stu-id="312df-169">Mailbox (string)</span></span>](mailbox-string.md)
     
-- [<span data-ttu-id="460fa-168">ErrorCode (int)</span><span class="sxs-lookup"><span data-stu-id="460fa-168">ErrorCode (int)</span></span>](errorcode-int.md)
+- [<span data-ttu-id="312df-170">ErrorCode (int)</span><span class="sxs-lookup"><span data-stu-id="312df-170">ErrorCode (int)</span></span>](errorcode-int.md)
     
-- [<span data-ttu-id="460fa-169">ErrorMessage</span><span class="sxs-lookup"><span data-stu-id="460fa-169">ErrorMessage</span></span>](errormessage.md)
+- [<span data-ttu-id="312df-171">ErrorMessage</span><span class="sxs-lookup"><span data-stu-id="312df-171">ErrorMessage</span></span>](errormessage.md)
     
-- [<span data-ttu-id="460fa-170">IsArchive</span><span class="sxs-lookup"><span data-stu-id="460fa-170">IsArchive</span></span>](isarchive.md)
+- [<span data-ttu-id="312df-172">IsArchive</span><span class="sxs-lookup"><span data-stu-id="312df-172">IsArchive</span></span>](isarchive.md)
     
-## <a name="searchmailboxes-operation-error-response"></a><span data-ttu-id="460fa-171">Respuesta de error de la operación de SearchMailboxes</span><span class="sxs-lookup"><span data-stu-id="460fa-171">SearchMailboxes operation error response</span></span>
+## <a name="searchmailboxes-operation-error-response"></a><span data-ttu-id="312df-173">Respuesta de error de operación de SearchMailboxes</span><span class="sxs-lookup"><span data-stu-id="312df-173">SearchMailboxes operation error response</span></span>
 
-<span data-ttu-id="460fa-172">En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **SearchMailboxes** .</span><span class="sxs-lookup"><span data-stu-id="460fa-172">The following example shows an error response to a **SearchMailboxes** operation request.</span></span> <span data-ttu-id="460fa-173">Esta es una respuesta a una solicitud para buscar un buzón de correo cuando el identificador de buzón de correo es incorrecto.</span><span class="sxs-lookup"><span data-stu-id="460fa-173">This is a response to a request to search a mailbox when the mailbox identifier is incorrect.</span></span> 
+<span data-ttu-id="312df-174">En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **SearchMailboxes** .</span><span class="sxs-lookup"><span data-stu-id="312df-174">The following example shows an error response to a **SearchMailboxes** operation request.</span></span> <span data-ttu-id="312df-175">Se trata de una respuesta a una solicitud de búsqueda en un buzón de correo cuando el identificador del buzón de correo es incorrecto.</span><span class="sxs-lookup"><span data-stu-id="312df-175">This is a response to a request to search a mailbox when the mailbox identifier is incorrect.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -242,15 +245,15 @@ ms.locfileid: "19837296"
                            MajorBuildNumber="526" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:SearchMailboxesResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                 xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:SearchMailboxesResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                 xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:SearchMailboxesResponseMessage ResponseClass="Error">
                <m:MessageText>No mailbox is specified for search operation. If specified in the request, 
@@ -292,70 +295,70 @@ ms.locfileid: "19837296"
 
 ```
 
-<span data-ttu-id="460fa-174">La respuesta de error SOAP body contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="460fa-174">The error response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="312df-176">El cuerpo SOAP de respuesta de error contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="312df-176">The error response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="460fa-175">SearchMailboxesResponse</span><span class="sxs-lookup"><span data-stu-id="460fa-175">SearchMailboxesResponse</span></span>](searchmailboxesresponse.md)
+- [<span data-ttu-id="312df-177">SearchMailboxesResponse</span><span class="sxs-lookup"><span data-stu-id="312df-177">SearchMailboxesResponse</span></span>](searchmailboxesresponse.md)
     
-- [<span data-ttu-id="460fa-176">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="460fa-176">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="312df-178">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="312df-178">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="460fa-177">SearchMailboxesResponseMessage</span><span class="sxs-lookup"><span data-stu-id="460fa-177">SearchMailboxesResponseMessage</span></span>](searchmailboxesresponsemessage.md)
+- [<span data-ttu-id="312df-179">SearchMailboxesResponseMessage</span><span class="sxs-lookup"><span data-stu-id="312df-179">SearchMailboxesResponseMessage</span></span>](searchmailboxesresponsemessage.md)
     
-- [<span data-ttu-id="460fa-178">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="460fa-178">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="312df-180">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="312df-180">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="460fa-179">SearchMailboxesResult</span><span class="sxs-lookup"><span data-stu-id="460fa-179">SearchMailboxesResult</span></span>](searchmailboxesresult.md)
+- [<span data-ttu-id="312df-181">SearchMailboxesResult</span><span class="sxs-lookup"><span data-stu-id="312df-181">SearchMailboxesResult</span></span>](searchmailboxesresult.md)
     
-- [<span data-ttu-id="460fa-180">SearchQueries</span><span class="sxs-lookup"><span data-stu-id="460fa-180">SearchQueries</span></span>](searchqueries.md)
+- [<span data-ttu-id="312df-182">SearchQueries</span><span class="sxs-lookup"><span data-stu-id="312df-182">SearchQueries</span></span>](searchqueries.md)
     
-- [<span data-ttu-id="460fa-181">MailboxQuery</span><span class="sxs-lookup"><span data-stu-id="460fa-181">MailboxQuery</span></span>](mailboxquery.md)
+- [<span data-ttu-id="312df-183">MailboxQuery</span><span class="sxs-lookup"><span data-stu-id="312df-183">MailboxQuery</span></span>](mailboxquery.md)
     
-- [<span data-ttu-id="460fa-182">Consulta</span><span class="sxs-lookup"><span data-stu-id="460fa-182">Query</span></span>](query.md)
+- [<span data-ttu-id="312df-184">Query</span><span class="sxs-lookup"><span data-stu-id="312df-184">Query</span></span>](query.md)
     
-- [<span data-ttu-id="460fa-183">MailboxSearchScopes</span><span class="sxs-lookup"><span data-stu-id="460fa-183">MailboxSearchScopes</span></span>](mailboxsearchscopes.md)
+- [<span data-ttu-id="312df-185">MailboxSearchScopes</span><span class="sxs-lookup"><span data-stu-id="312df-185">MailboxSearchScopes</span></span>](mailboxsearchscopes.md)
     
-- [<span data-ttu-id="460fa-184">MailboxSearchScope</span><span class="sxs-lookup"><span data-stu-id="460fa-184">MailboxSearchScope</span></span>](mailboxsearchscope.md)
+- [<span data-ttu-id="312df-186">MailboxSearchScope</span><span class="sxs-lookup"><span data-stu-id="312df-186">MailboxSearchScope</span></span>](mailboxsearchscope.md)
     
-- [<span data-ttu-id="460fa-185">Buzón de correo (cadena)</span><span class="sxs-lookup"><span data-stu-id="460fa-185">Mailbox (string)</span></span>](mailbox-string.md)
+- [<span data-ttu-id="312df-187">Mailbox (cadena)</span><span class="sxs-lookup"><span data-stu-id="312df-187">Mailbox (string)</span></span>](mailbox-string.md)
     
-- [<span data-ttu-id="460fa-186">SearchScope</span><span class="sxs-lookup"><span data-stu-id="460fa-186">SearchScope</span></span>](searchscope.md)
+- [<span data-ttu-id="312df-188">SearchScope</span><span class="sxs-lookup"><span data-stu-id="312df-188">SearchScope</span></span>](searchscope.md)
     
-- [<span data-ttu-id="460fa-187">ResultType</span><span class="sxs-lookup"><span data-stu-id="460fa-187">ResultType</span></span>](resulttype.md)
+- [<span data-ttu-id="312df-189">ResultType</span><span class="sxs-lookup"><span data-stu-id="312df-189">ResultType</span></span>](resulttype.md)
     
-- [<span data-ttu-id="460fa-188">ItemCount</span><span class="sxs-lookup"><span data-stu-id="460fa-188">ItemCount</span></span>](itemcount.md)
+- [<span data-ttu-id="312df-190">ItemCount</span><span class="sxs-lookup"><span data-stu-id="312df-190">ItemCount</span></span>](itemcount.md)
     
-- [<span data-ttu-id="460fa-189">Tamaño (long)</span><span class="sxs-lookup"><span data-stu-id="460fa-189">Size (long)</span></span>](size-long.md)
+- [<span data-ttu-id="312df-191">Tamaño (largo)</span><span class="sxs-lookup"><span data-stu-id="312df-191">Size (long)</span></span>](size-long.md)
     
-- [<span data-ttu-id="460fa-190">PageItemCount</span><span class="sxs-lookup"><span data-stu-id="460fa-190">PageItemCount</span></span>](pageitemcount.md)
+- [<span data-ttu-id="312df-192">PageItemCount</span><span class="sxs-lookup"><span data-stu-id="312df-192">PageItemCount</span></span>](pageitemcount.md)
     
-- [<span data-ttu-id="460fa-191">PageItemSize</span><span class="sxs-lookup"><span data-stu-id="460fa-191">PageItemSize</span></span>](pageitemsize.md)
+- [<span data-ttu-id="312df-193">PageItemSize</span><span class="sxs-lookup"><span data-stu-id="312df-193">PageItemSize</span></span>](pageitemsize.md)
     
-- [<span data-ttu-id="460fa-192">FailedMailboxes</span><span class="sxs-lookup"><span data-stu-id="460fa-192">FailedMailboxes</span></span>](failedmailboxes.md)
+- [<span data-ttu-id="312df-194">FailedMailboxes</span><span class="sxs-lookup"><span data-stu-id="312df-194">FailedMailboxes</span></span>](failedmailboxes.md)
     
-- [<span data-ttu-id="460fa-193">FailedMailbox</span><span class="sxs-lookup"><span data-stu-id="460fa-193">FailedMailbox</span></span>](failedmailbox.md)
+- [<span data-ttu-id="312df-195">FailedMailbox</span><span class="sxs-lookup"><span data-stu-id="312df-195">FailedMailbox</span></span>](failedmailbox.md)
     
-- [<span data-ttu-id="460fa-194">Buzón de correo (cadena)</span><span class="sxs-lookup"><span data-stu-id="460fa-194">Mailbox (string)</span></span>](mailbox-string.md)
+- [<span data-ttu-id="312df-196">Mailbox (cadena)</span><span class="sxs-lookup"><span data-stu-id="312df-196">Mailbox (string)</span></span>](mailbox-string.md)
     
-- [<span data-ttu-id="460fa-195">ErrorCode (int)</span><span class="sxs-lookup"><span data-stu-id="460fa-195">ErrorCode (int)</span></span>](errorcode-int.md)
+- [<span data-ttu-id="312df-197">ErrorCode (int)</span><span class="sxs-lookup"><span data-stu-id="312df-197">ErrorCode (int)</span></span>](errorcode-int.md)
     
-- [<span data-ttu-id="460fa-196">ErrorMessage</span><span class="sxs-lookup"><span data-stu-id="460fa-196">ErrorMessage</span></span>](errormessage.md)
+- [<span data-ttu-id="312df-198">ErrorMessage</span><span class="sxs-lookup"><span data-stu-id="312df-198">ErrorMessage</span></span>](errormessage.md)
     
-- [<span data-ttu-id="460fa-197">IsArchive</span><span class="sxs-lookup"><span data-stu-id="460fa-197">IsArchive</span></span>](isarchive.md)
+- [<span data-ttu-id="312df-199">IsArchive</span><span class="sxs-lookup"><span data-stu-id="312df-199">IsArchive</span></span>](isarchive.md)
     
-<span data-ttu-id="460fa-198">Para códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).</span><span class="sxs-lookup"><span data-stu-id="460fa-198">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
+<span data-ttu-id="312df-200">Para obtener los códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).</span><span class="sxs-lookup"><span data-stu-id="312df-200">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="460fa-199">Vea también</span><span class="sxs-lookup"><span data-stu-id="460fa-199">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="312df-201">Vea también</span><span class="sxs-lookup"><span data-stu-id="312df-201">See also</span></span>
 
-- [<span data-ttu-id="460fa-200">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="460fa-200">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+- [<span data-ttu-id="312df-202">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="312df-202">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
     
-- [<span data-ttu-id="460fa-201">Operación GetSearchableMailboxes</span><span class="sxs-lookup"><span data-stu-id="460fa-201">GetSearchableMailboxes operation</span></span>](getsearchablemailboxes-operation.md)
+- [<span data-ttu-id="312df-203">Operación GetSearchableMailboxes</span><span class="sxs-lookup"><span data-stu-id="312df-203">GetSearchableMailboxes operation</span></span>](getsearchablemailboxes-operation.md)
     
-- [<span data-ttu-id="460fa-202">Operación SetHoldOnMailboxes</span><span class="sxs-lookup"><span data-stu-id="460fa-202">SetHoldOnMailboxes operation</span></span>](setholdonmailboxes-operation.md)
+- [<span data-ttu-id="312df-204">Operación SetHoldOnMailboxes</span><span class="sxs-lookup"><span data-stu-id="312df-204">SetHoldOnMailboxes operation</span></span>](setholdonmailboxes-operation.md)
     
-- [<span data-ttu-id="460fa-203">Operación GetHoldOnMailboxes</span><span class="sxs-lookup"><span data-stu-id="460fa-203">GetHoldOnMailboxes operation</span></span>](getholdonmailboxes-operation.md)
+- [<span data-ttu-id="312df-205">Operación GetHoldOnMailboxes</span><span class="sxs-lookup"><span data-stu-id="312df-205">GetHoldOnMailboxes operation</span></span>](getholdonmailboxes-operation.md)
     
-- [<span data-ttu-id="460fa-204">Operación GetDiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="460fa-204">GetDiscoverySearchConfiguration operation</span></span>](getdiscoverysearchconfiguration-operation.md)
+- [<span data-ttu-id="312df-206">Operación GetDiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="312df-206">GetDiscoverySearchConfiguration operation</span></span>](getdiscoverysearchconfiguration-operation.md)
     
-- [<span data-ttu-id="460fa-205">Operación GetNonIndexableItemDetails</span><span class="sxs-lookup"><span data-stu-id="460fa-205">GetNonIndexableItemDetails operation</span></span>](getnonindexableitemdetails-operation.md)
+- [<span data-ttu-id="312df-207">Operación GetNonIndexableItemDetails</span><span class="sxs-lookup"><span data-stu-id="312df-207">GetNonIndexableItemDetails operation</span></span>](getnonindexableitemdetails-operation.md)
     
-- [<span data-ttu-id="460fa-206">Operación GetNonIndexableItemStatistics</span><span class="sxs-lookup"><span data-stu-id="460fa-206">GetNonIndexableItemStatistics operation</span></span>](getnonindexableitemstatistics-operation.md)
+- [<span data-ttu-id="312df-208">Operación GetNonIndexableItemStatistics</span><span class="sxs-lookup"><span data-stu-id="312df-208">GetNonIndexableItemStatistics operation</span></span>](getnonindexableitemstatistics-operation.md)
     
 

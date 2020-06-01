@@ -1,5 +1,5 @@
 ---
-title: ATTENDEE
+title: Asistente
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 393c3d7e-7416-458a-b976-270b88eaaa03
-description: El elemento de Attendee representa los asistentes y los recursos de una reunión.
-ms.openlocfilehash: 60cb0839c2f6de69b833c11f4594d40c14cd8887
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Attendee representa los asistentes y los recursos de una reunión.
+ms.openlocfilehash: f376e59b27017e0a9d27692cb1a4ae759cd1af0e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763573"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457651"
 ---
-# <a name="attendee"></a><span data-ttu-id="8a23e-103">ATTENDEE</span><span class="sxs-lookup"><span data-stu-id="8a23e-103">Attendee</span></span>
+# <a name="attendee"></a><span data-ttu-id="3185a-103">Asistente</span><span class="sxs-lookup"><span data-stu-id="3185a-103">Attendee</span></span>
 
-<span data-ttu-id="8a23e-104">El elemento de **Attendee** representa los asistentes y los recursos de una reunión.</span><span class="sxs-lookup"><span data-stu-id="8a23e-104">The **Attendee** element represents attendees and resources for a meeting.</span></span> 
+<span data-ttu-id="3185a-104">El elemento **Attendee** representa los asistentes y los recursos de una reunión.</span><span class="sxs-lookup"><span data-stu-id="3185a-104">The **Attendee** element represents attendees and resources for a meeting.</span></span> 
   
 ```xml
 <Attendee>
@@ -31,45 +31,47 @@ ms.locfileid: "19763573"
 </Attendee>
 ```
 
- <span data-ttu-id="8a23e-105">**AttendeeType**</span><span class="sxs-lookup"><span data-stu-id="8a23e-105">**AttendeeType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="8a23e-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="8a23e-106">Attributes and elements</span></span>
+ <span data-ttu-id="3185a-105">**AttendeeType**</span><span class="sxs-lookup"><span data-stu-id="3185a-105">**AttendeeType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="3185a-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="3185a-106">Attributes and elements</span></span>
 
-<span data-ttu-id="8a23e-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="8a23e-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="3185a-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="3185a-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="8a23e-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="8a23e-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="3185a-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="3185a-108">Attributes</span></span>
 
-<span data-ttu-id="8a23e-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="8a23e-109">None.</span></span>
+<span data-ttu-id="3185a-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="3185a-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="8a23e-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="8a23e-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="3185a-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="3185a-110">Child elements</span></span>
 
-|<span data-ttu-id="8a23e-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="8a23e-111">**Element**</span></span>|<span data-ttu-id="8a23e-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="8a23e-112">**Description**</span></span>|
+|<span data-ttu-id="3185a-111">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="3185a-111">**Element**</span></span>|<span data-ttu-id="3185a-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="3185a-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="8a23e-113">Buzón de correo</span><span class="sxs-lookup"><span data-stu-id="8a23e-113">Mailbox</span></span>](mailbox.md) <br/> |<span data-ttu-id="8a23e-114">Identifica una dirección de correo electrónico completa resuelta.</span><span class="sxs-lookup"><span data-stu-id="8a23e-114">Identifies a fully resolved e-mail address.</span></span>  <br/> |
-|[<span data-ttu-id="8a23e-115">ResponseType</span><span class="sxs-lookup"><span data-stu-id="8a23e-115">ResponseType</span></span>](responsetype.md) <br/> |<span data-ttu-id="8a23e-116">Representa el tipo de respuesta de destinatarios que se recibe de una reunión.</span><span class="sxs-lookup"><span data-stu-id="8a23e-116">Represents the type of recipient response that is received for a meeting.</span></span> <span data-ttu-id="8a23e-117">Esta propiedad sólo es relevante para el elemento de calendario del organizador de una reunión.</span><span class="sxs-lookup"><span data-stu-id="8a23e-117">This property is only relevant to a meeting organizer's calendar item.</span></span>  <br/> |
-|[<span data-ttu-id="8a23e-118">LastResponseTime</span><span class="sxs-lookup"><span data-stu-id="8a23e-118">LastResponseTime</span></span>](lastresponsetime.md) <br/> |<span data-ttu-id="8a23e-119">Representa la fecha y hora de la respuesta más reciente que se recibe.</span><span class="sxs-lookup"><span data-stu-id="8a23e-119">Represents the date and time of the latest response that is received.</span></span>  <br/> |
+|[<span data-ttu-id="3185a-113">Buzón</span><span class="sxs-lookup"><span data-stu-id="3185a-113">Mailbox</span></span>](mailbox.md) <br/> |<span data-ttu-id="3185a-114">Identifica una dirección de correo electrónico completamente resuelta.</span><span class="sxs-lookup"><span data-stu-id="3185a-114">Identifies a fully resolved e-mail address.</span></span>  <br/> |
+|[<span data-ttu-id="3185a-115">ResponseType</span><span class="sxs-lookup"><span data-stu-id="3185a-115">ResponseType</span></span>](responsetype.md) <br/> |<span data-ttu-id="3185a-116">Representa el tipo de respuesta de destinatario que se recibe para una reunión.</span><span class="sxs-lookup"><span data-stu-id="3185a-116">Represents the type of recipient response that is received for a meeting.</span></span> <span data-ttu-id="3185a-117">Esta propiedad sólo es relevante para el elemento de calendario de un organizador de la reunión.</span><span class="sxs-lookup"><span data-stu-id="3185a-117">This property is only relevant to a meeting organizer's calendar item.</span></span>  <br/> |
+|[<span data-ttu-id="3185a-118">LastResponseTime</span><span class="sxs-lookup"><span data-stu-id="3185a-118">LastResponseTime</span></span>](lastresponsetime.md) <br/> |<span data-ttu-id="3185a-119">Representa la fecha y la hora de la última respuesta que se ha recibido.</span><span class="sxs-lookup"><span data-stu-id="3185a-119">Represents the date and time of the latest response that is received.</span></span>  <br/> |
+|[<span data-ttu-id="3185a-120">ProposedStart</span><span class="sxs-lookup"><span data-stu-id="3185a-120">ProposedStart</span></span>](proposedstart-attendeetype.md) <br/> |<span data-ttu-id="3185a-121">Representa la hora de inicio propuesta de un asistente para una reunión.</span><span class="sxs-lookup"><span data-stu-id="3185a-121">Represents an attendee's proposed start time for a meeting.</span></span> <br/> |
+|[<span data-ttu-id="3185a-122">ProposedEnd</span><span class="sxs-lookup"><span data-stu-id="3185a-122">ProposedEnd</span></span>](proposedend-attendeetype.md) <br/> |<span data-ttu-id="3185a-123">Representa la hora de finalización propuesta de un asistente para una reunión.</span><span class="sxs-lookup"><span data-stu-id="3185a-123">Represents an attendee's proposed end time for a meeting.</span></span> <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="8a23e-120">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="8a23e-120">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="3185a-124">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="3185a-124">Parent elements</span></span>
 
-|<span data-ttu-id="8a23e-121">**Element**</span><span class="sxs-lookup"><span data-stu-id="8a23e-121">**Element**</span></span>|<span data-ttu-id="8a23e-122">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="8a23e-122">**Description**</span></span>|
+|<span data-ttu-id="3185a-125">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="3185a-125">**Element**</span></span>|<span data-ttu-id="3185a-126">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="3185a-126">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="8a23e-123">RequiredAttendees</span><span class="sxs-lookup"><span data-stu-id="8a23e-123">RequiredAttendees</span></span>](requiredattendees.md) <br/> |<span data-ttu-id="8a23e-124">Representa a los asistentes necesarios para asistir a una reunión.</span><span class="sxs-lookup"><span data-stu-id="8a23e-124">Represents attendees that are required to attend a meeting.</span></span>  <br/> |
-|[<span data-ttu-id="8a23e-125">OptionalAttendees</span><span class="sxs-lookup"><span data-stu-id="8a23e-125">OptionalAttendees</span></span>](optionalattendees.md) <br/> |<span data-ttu-id="8a23e-126">Representa a los asistentes que no sean necesarios para asistir a una reunión.</span><span class="sxs-lookup"><span data-stu-id="8a23e-126">Represents attendees that are not required to attend a meeting.</span></span>  <br/> |
-|[<span data-ttu-id="8a23e-127">Recursos</span><span class="sxs-lookup"><span data-stu-id="8a23e-127">Resources</span></span>](resources.md) <br/> |<span data-ttu-id="8a23e-128">Representa un recurso para una reunión programado.</span><span class="sxs-lookup"><span data-stu-id="8a23e-128">Represents a scheduled resource for a meeting.</span></span>  <br/> |
+|[<span data-ttu-id="3185a-127">RequiredAttendees</span><span class="sxs-lookup"><span data-stu-id="3185a-127">RequiredAttendees</span></span>](requiredattendees.md) <br/> |<span data-ttu-id="3185a-128">Representa a los asistentes necesarios para asistir a una reunión.</span><span class="sxs-lookup"><span data-stu-id="3185a-128">Represents attendees that are required to attend a meeting.</span></span>  <br/> |
+|[<span data-ttu-id="3185a-129">OptionalAttendees</span><span class="sxs-lookup"><span data-stu-id="3185a-129">OptionalAttendees</span></span>](optionalattendees.md) <br/> |<span data-ttu-id="3185a-130">Representa a los asistentes que no necesitan asistir a una reunión.</span><span class="sxs-lookup"><span data-stu-id="3185a-130">Represents attendees that are not required to attend a meeting.</span></span>  <br/> |
+|[<span data-ttu-id="3185a-131">Recursos</span><span class="sxs-lookup"><span data-stu-id="3185a-131">Resources</span></span>](resources.md) <br/> |<span data-ttu-id="3185a-132">Representa un recurso programado para una reunión.</span><span class="sxs-lookup"><span data-stu-id="3185a-132">Represents a scheduled resource for a meeting.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="8a23e-129">Comentarios</span><span class="sxs-lookup"><span data-stu-id="8a23e-129">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3185a-133">Comentarios</span><span class="sxs-lookup"><span data-stu-id="3185a-133">Remarks</span></span>
 
-<span data-ttu-id="8a23e-130">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="8a23e-130">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="3185a-134">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="3185a-134">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="8a23e-131">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="8a23e-131">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="3185a-135">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="3185a-135">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="8a23e-132">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="8a23e-132">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="8a23e-133">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="8a23e-133">Schema name</span></span>  <br/> |<span data-ttu-id="8a23e-134">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="8a23e-134">Types schema</span></span>  <br/> |
-|<span data-ttu-id="8a23e-135">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="8a23e-135">Validation file</span></span>  <br/> |<span data-ttu-id="8a23e-136">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="8a23e-136">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="8a23e-137">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="8a23e-137">Can be empty</span></span>  <br/> |<span data-ttu-id="8a23e-138">False</span><span class="sxs-lookup"><span data-stu-id="8a23e-138">False</span></span>  <br/> |
+|<span data-ttu-id="3185a-136">Namespace</span><span class="sxs-lookup"><span data-stu-id="3185a-136">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="3185a-137">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="3185a-137">Schema name</span></span>  <br/> |<span data-ttu-id="3185a-138">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="3185a-138">Types schema</span></span>  <br/> |
+|<span data-ttu-id="3185a-139">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="3185a-139">Validation file</span></span>  <br/> |<span data-ttu-id="3185a-140">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="3185a-140">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="3185a-141">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="3185a-141">Can be empty</span></span>  <br/> |<span data-ttu-id="3185a-142">Falso</span><span class="sxs-lookup"><span data-stu-id="3185a-142">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="8a23e-139">Vea también</span><span class="sxs-lookup"><span data-stu-id="8a23e-139">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3185a-143">Vea también</span><span class="sxs-lookup"><span data-stu-id="3185a-143">See also</span></span>
 
-- [<span data-ttu-id="8a23e-140">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="8a23e-140">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="3185a-144">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="3185a-144">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

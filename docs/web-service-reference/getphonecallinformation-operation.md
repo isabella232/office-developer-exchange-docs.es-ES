@@ -11,31 +11,31 @@ api_name:
 api_type:
 - schema
 ms.assetid: 418bd6ca-39d9-49a9-841e-7a71ede1fa51
-description: La operación GetPhoneCallInformation devuelve información acerca de la llamada de teléfono especificada.
-ms.openlocfilehash: 8f98ca5dd304eadffc307fa47620b7db6401c782
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación GetPhoneCallInformation devuelve información sobre la llamada telefónica especificada.
+ms.openlocfilehash: 231b160713526f44433188e2b1e3bd98012370b1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764952"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44458316"
 ---
-# <a name="getphonecallinformation-operation"></a><span data-ttu-id="07c45-103">Operación GetPhoneCallInformation</span><span class="sxs-lookup"><span data-stu-id="07c45-103">GetPhoneCallInformation operation</span></span>
+# <a name="getphonecallinformation-operation"></a><span data-ttu-id="a7b42-103">Operación GetPhoneCallInformation</span><span class="sxs-lookup"><span data-stu-id="a7b42-103">GetPhoneCallInformation operation</span></span>
 
-<span data-ttu-id="07c45-104">La operación **GetPhoneCallInformation** devuelve información acerca de la llamada de teléfono especificada.</span><span class="sxs-lookup"><span data-stu-id="07c45-104">The **GetPhoneCallInformation** operation returns information about the specified telephone call.</span></span> 
+<span data-ttu-id="a7b42-104">La operación **GetPhoneCallInformation** devuelve información sobre la llamada telefónica especificada.</span><span class="sxs-lookup"><span data-stu-id="a7b42-104">The **GetPhoneCallInformation** operation returns information about the specified telephone call.</span></span> 
   
-## <a name="getphonecallinformation-request-example"></a><span data-ttu-id="07c45-105">Ejemplo de solicitud de GetPhoneCallInformation</span><span class="sxs-lookup"><span data-stu-id="07c45-105">GetPhoneCallInformation request example</span></span>
+## <a name="getphonecallinformation-request-example"></a><span data-ttu-id="a7b42-105">Ejemplo de solicitud GetPhoneCallInformation</span><span class="sxs-lookup"><span data-stu-id="a7b42-105">GetPhoneCallInformation request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="07c45-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="07c45-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="a7b42-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="a7b42-106">Description</span></span>
 
-<span data-ttu-id="07c45-107">El siguiente ejemplo de una solicitud de **GetPhoneCallInformation** muestra cómo formar una solicitud para obtener información acerca de una llamada telefónica específica.</span><span class="sxs-lookup"><span data-stu-id="07c45-107">The following example of a **GetPhoneCallInformation** request shows how to form a request to get information about a specific telephone call.</span></span> 
+<span data-ttu-id="a7b42-107">El siguiente ejemplo de una solicitud **GetPhoneCallInformation** muestra cómo crear una solicitud para obtener información sobre una llamada telefónica específica.</span><span class="sxs-lookup"><span data-stu-id="a7b42-107">The following example of a **GetPhoneCallInformation** request shows how to form a request to get information about a specific telephone call.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="07c45-108">Código</span><span class="sxs-lookup"><span data-stu-id="07c45-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="a7b42-108">Código</span><span class="sxs-lookup"><span data-stu-id="a7b42-108">Code</span></span>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
@@ -49,13 +49,13 @@ ms.locfileid: "19764952"
 </soap:Envelope>
 ```
 
-## <a name="getphonecallinformation-response-example"></a><span data-ttu-id="07c45-109">Ejemplo de respuesta GetPhoneCallInformation</span><span class="sxs-lookup"><span data-stu-id="07c45-109">GetPhoneCallInformation response example</span></span>
+## <a name="getphonecallinformation-response-example"></a><span data-ttu-id="a7b42-109">Ejemplo de respuesta GetPhoneCallInformation</span><span class="sxs-lookup"><span data-stu-id="a7b42-109">GetPhoneCallInformation response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="07c45-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="07c45-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="a7b42-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="a7b42-110">Description</span></span>
 
-<span data-ttu-id="07c45-111">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **GetPhoneCallInformation** .</span><span class="sxs-lookup"><span data-stu-id="07c45-111">The following example shows a successful response to the **GetPhoneCallInformation** request.</span></span> <span data-ttu-id="07c45-112">La respuesta representa una llamada de teléfono que está conectada actualmente.</span><span class="sxs-lookup"><span data-stu-id="07c45-112">The response represents a telephone call that is currently connected.</span></span> 
+<span data-ttu-id="a7b42-111">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **GetPhoneCallInformation** .</span><span class="sxs-lookup"><span data-stu-id="a7b42-111">The following example shows a successful response to the **GetPhoneCallInformation** request.</span></span> <span data-ttu-id="a7b42-112">La respuesta representa una llamada telefónica que está conectada actualmente.</span><span class="sxs-lookup"><span data-stu-id="a7b42-112">The response represents a telephone call that is currently connected.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="07c45-113">Código</span><span class="sxs-lookup"><span data-stu-id="07c45-113">Code</span></span>
+### <a name="code"></a><span data-ttu-id="a7b42-113">Código</span><span class="sxs-lookup"><span data-stu-id="a7b42-113">Code</span></span>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -66,27 +66,27 @@ ms.locfileid: "19764952"
                          MajorBuildNumber="639" 
                          MinorBuildNumber="20" 
                          Version="Exchange2010" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <GetPhoneCallInformationResponse ResponseClass="Success" 
-                                     xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                     xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
-      <m:PhoneCallInformation xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
-        <t:PhoneCallState xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">Connected</t:PhoneCallState>
-        <t:ConnectionFailureCause xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">None</t:ConnectionFailureCause>
+      <m:PhoneCallInformation xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
+        <t:PhoneCallState xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">Connected</t:PhoneCallState>
+        <t:ConnectionFailureCause xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">None</t:ConnectionFailureCause>
       </m:PhoneCallInformation>
     </GetPhoneCallInformationResponse>
   </s:Body>
 </s:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="07c45-114">Vea también</span><span class="sxs-lookup"><span data-stu-id="07c45-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a7b42-114">Vea también</span><span class="sxs-lookup"><span data-stu-id="a7b42-114">See also</span></span>
 
-- [<span data-ttu-id="07c45-115">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="07c45-115">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
-- [<span data-ttu-id="07c45-116">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="07c45-116">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="a7b42-115">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="a7b42-115">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+- [<span data-ttu-id="a7b42-116">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="a7b42-116">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

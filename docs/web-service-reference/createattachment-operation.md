@@ -11,35 +11,35 @@ api_name:
 api_type:
 - schema
 ms.assetid: e066db95-6963-4507-a8d0-8efad287f550
-description: La operación CreateAttachment crea un elemento o un archivo de datos adjuntos y lo adjunta al elemento especificado.
-ms.openlocfilehash: fed60275a007f2796c60d936def7a937e4982f29
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación CreateAttachment crea un elemento o datos adjuntos de archivo y lo adjunta al elemento especificado.
+ms.openlocfilehash: 8028c56aa306774b54b39e5ee1ac0382b9113fa0
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763913"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456573"
 ---
-# <a name="createattachment-operation"></a><span data-ttu-id="7db13-103">Operación CreateAttachment</span><span class="sxs-lookup"><span data-stu-id="7db13-103">CreateAttachment operation</span></span>
+# <a name="createattachment-operation"></a><span data-ttu-id="136ef-103">Operación CreateAttachment</span><span class="sxs-lookup"><span data-stu-id="136ef-103">CreateAttachment operation</span></span>
 
-<span data-ttu-id="7db13-104">La operación CreateAttachment crea un elemento o un archivo de datos adjuntos y lo adjunta al elemento especificado.</span><span class="sxs-lookup"><span data-stu-id="7db13-104">The CreateAttachment operation creates either an item or file attachment and attaches it to the specified item.</span></span>
+<span data-ttu-id="136ef-104">La operación CreateAttachment crea un elemento o datos adjuntos de archivo y lo adjunta al elemento especificado.</span><span class="sxs-lookup"><span data-stu-id="136ef-104">The CreateAttachment operation creates either an item or file attachment and attaches it to the specified item.</span></span>
   
-## <a name="file-createattachment-request-example"></a><span data-ttu-id="7db13-105">Ejemplo de solicitud de archivo CreateAttachment</span><span class="sxs-lookup"><span data-stu-id="7db13-105">File CreateAttachment request example</span></span>
+## <a name="file-createattachment-request-example"></a><span data-ttu-id="136ef-105">Ejemplo de solicitud de CreateAttachment de archivo</span><span class="sxs-lookup"><span data-stu-id="136ef-105">File CreateAttachment request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="7db13-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="7db13-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="136ef-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="136ef-106">Description</span></span>
 
-<span data-ttu-id="7db13-107">El siguiente ejemplo de una solicitud de CreateAttachment muestra cómo crear un archivo adjunto.</span><span class="sxs-lookup"><span data-stu-id="7db13-107">The following example of a CreateAttachment request shows how to create a file attachment.</span></span>
+<span data-ttu-id="136ef-107">El siguiente ejemplo de una solicitud CreateAttachment muestra cómo crear un archivo adjunto.</span><span class="sxs-lookup"><span data-stu-id="136ef-107">The following example of a CreateAttachment request shows how to create a file attachment.</span></span>
   
-### <a name="code"></a><span data-ttu-id="7db13-108">Código</span><span class="sxs-lookup"><span data-stu-id="7db13-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="136ef-108">Código</span><span class="sxs-lookup"><span data-stu-id="136ef-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
 <soap:Body>
-  <CreateAttachment xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  <CreateAttachment xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
     <ParentItemId Id="AAAtAE..." ChangeKey="CQAAABYA..."/>
     <Attachments>
       <t:FileAttachment>
@@ -52,36 +52,36 @@ ms.locfileid: "19763913"
 </soap:Envelope>
 ```
 
-### <a name="comment"></a><span data-ttu-id="7db13-109">Comment</span><span class="sxs-lookup"><span data-stu-id="7db13-109">Comment</span></span>
+### <a name="comment"></a><span data-ttu-id="136ef-109">Comentario</span><span class="sxs-lookup"><span data-stu-id="136ef-109">Comment</span></span>
 
-<span data-ttu-id="7db13-110">Debe proporcionar un nombre para los datos adjuntos.</span><span class="sxs-lookup"><span data-stu-id="7db13-110">A name for the attachment must be provided.</span></span>
+<span data-ttu-id="136ef-110">Se debe proporcionar un nombre para los datos adjuntos.</span><span class="sxs-lookup"><span data-stu-id="136ef-110">A name for the attachment must be provided.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="7db13-111">El identificador del elemento primario y la clave de cambio se han abreviado para conservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="7db13-111">The parent item identifier and change key have been shortened to preserve readability.</span></span> 
+> <span data-ttu-id="136ef-111">El identificador de elemento primario y la clave de cambio se han abreviado para preservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="136ef-111">The parent item identifier and change key have been shortened to preserve readability.</span></span> 
   
-### <a name="request-elements"></a><span data-ttu-id="7db13-112">Elementos de solicitud</span><span class="sxs-lookup"><span data-stu-id="7db13-112">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="136ef-112">Elementos de solicitud</span><span class="sxs-lookup"><span data-stu-id="136ef-112">Request elements</span></span>
 
-<span data-ttu-id="7db13-113">En la solicitud se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="7db13-113">The following elements are used in the request:</span></span>
+<span data-ttu-id="136ef-113">Los siguientes elementos se usan en la solicitud:</span><span class="sxs-lookup"><span data-stu-id="136ef-113">The following elements are used in the request:</span></span>
   
-- [<span data-ttu-id="7db13-114">CreateAttachment</span><span class="sxs-lookup"><span data-stu-id="7db13-114">CreateAttachment</span></span>](createattachment.md)
+- [<span data-ttu-id="136ef-114">CreateAttachment</span><span class="sxs-lookup"><span data-stu-id="136ef-114">CreateAttachment</span></span>](createattachment.md)
     
-- [<span data-ttu-id="7db13-115">ParentItemId</span><span class="sxs-lookup"><span data-stu-id="7db13-115">ParentItemId</span></span>](parentitemid.md)
+- [<span data-ttu-id="136ef-115">ParentItemId</span><span class="sxs-lookup"><span data-stu-id="136ef-115">ParentItemId</span></span>](parentitemid.md)
     
-- [<span data-ttu-id="7db13-116">Datos adjuntos</span><span class="sxs-lookup"><span data-stu-id="7db13-116">Attachments</span></span>](attachments-ex15websvcsotherref.md)
+- [<span data-ttu-id="136ef-116">Datos adjuntos</span><span class="sxs-lookup"><span data-stu-id="136ef-116">Attachments</span></span>](attachments-ex15websvcsotherref.md)
     
-- [<span data-ttu-id="7db13-117">FileAttachment</span><span class="sxs-lookup"><span data-stu-id="7db13-117">FileAttachment</span></span>](fileattachment.md)
+- [<span data-ttu-id="136ef-117">FileAttachment</span><span class="sxs-lookup"><span data-stu-id="136ef-117">FileAttachment</span></span>](fileattachment.md)
     
-- [<span data-ttu-id="7db13-118">Nombre (AttachmentType)</span><span class="sxs-lookup"><span data-stu-id="7db13-118">Name (AttachmentType)</span></span>](name-attachmenttype.md)
+- [<span data-ttu-id="136ef-118">Nombre (AttachmentType)</span><span class="sxs-lookup"><span data-stu-id="136ef-118">Name (AttachmentType)</span></span>](name-attachmenttype.md)
     
-- [<span data-ttu-id="7db13-119">Contenido</span><span class="sxs-lookup"><span data-stu-id="7db13-119">Content</span></span>](content.md)
+- [<span data-ttu-id="136ef-119">Content</span><span class="sxs-lookup"><span data-stu-id="136ef-119">Content</span></span>](content.md)
     
-## <a name="successful-file-createattachment-response-example"></a><span data-ttu-id="7db13-120">Ejemplo de respuesta correcta de archivo CreateAttachment</span><span class="sxs-lookup"><span data-stu-id="7db13-120">Successful File CreateAttachment response example</span></span>
+## <a name="successful-file-createattachment-response-example"></a><span data-ttu-id="136ef-120">Ejemplo de archivo con éxito CreateAttachment Response</span><span class="sxs-lookup"><span data-stu-id="136ef-120">Successful File CreateAttachment response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="7db13-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="7db13-121">Description</span></span>
+### <a name="description"></a><span data-ttu-id="136ef-121">Descripción</span><span class="sxs-lookup"><span data-stu-id="136ef-121">Description</span></span>
 
-<span data-ttu-id="7db13-122">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de CreateAttachment.</span><span class="sxs-lookup"><span data-stu-id="7db13-122">The following example shows a successful response to the CreateAttachment request.</span></span>
+<span data-ttu-id="136ef-122">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateAttachment.</span><span class="sxs-lookup"><span data-stu-id="136ef-122">The following example shows a successful response to the CreateAttachment request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="7db13-123">Código</span><span class="sxs-lookup"><span data-stu-id="7db13-123">Code</span></span>
+### <a name="code"></a><span data-ttu-id="136ef-123">Código</span><span class="sxs-lookup"><span data-stu-id="136ef-123">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -90,12 +90,12 @@ ms.locfileid: "19763913"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="653" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <CreateAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                              xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                              xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                              xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                              xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateAttachmentResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -111,47 +111,47 @@ ms.locfileid: "19763913"
 </soap:Envelope>
 ```
 
-### <a name="comment"></a><span data-ttu-id="7db13-124">Comment</span><span class="sxs-lookup"><span data-stu-id="7db13-124">Comment</span></span>
+### <a name="comment"></a><span data-ttu-id="136ef-124">Comentario</span><span class="sxs-lookup"><span data-stu-id="136ef-124">Comment</span></span>
 
-<span data-ttu-id="7db13-125">La respuesta contiene el identificador del archivo adjunto.</span><span class="sxs-lookup"><span data-stu-id="7db13-125">The response contains the identifier of the attached file.</span></span> <span data-ttu-id="7db13-126">También contiene el identificador y cambiar la clave del elemento raíz.</span><span class="sxs-lookup"><span data-stu-id="7db13-126">It also contains the identifier and change key of the root item.</span></span> <span data-ttu-id="7db13-127">Los identificadores de elemento y cambiar la clave se han abreviado para conservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="7db13-127">The item identifiers and change key have been shortened to preserve readability.</span></span>
+<span data-ttu-id="136ef-125">La respuesta contiene el identificador del archivo adjunto.</span><span class="sxs-lookup"><span data-stu-id="136ef-125">The response contains the identifier of the attached file.</span></span> <span data-ttu-id="136ef-126">También contiene el identificador y la clave de cambio del elemento raíz.</span><span class="sxs-lookup"><span data-stu-id="136ef-126">It also contains the identifier and change key of the root item.</span></span> <span data-ttu-id="136ef-127">Los identificadores de elemento y la clave de cambio se han abreviado para preservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="136ef-127">The item identifiers and change key have been shortened to preserve readability.</span></span>
   
-### <a name="successful-response-elements"></a><span data-ttu-id="7db13-128">Elementos de respuesta correcta</span><span class="sxs-lookup"><span data-stu-id="7db13-128">Successful response elements</span></span>
+### <a name="successful-response-elements"></a><span data-ttu-id="136ef-128">Elementos Response correcto</span><span class="sxs-lookup"><span data-stu-id="136ef-128">Successful response elements</span></span>
 
-<span data-ttu-id="7db13-129">En la respuesta se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="7db13-129">The following elements are used in the response:</span></span>
+<span data-ttu-id="136ef-129">En la respuesta se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="136ef-129">The following elements are used in the response:</span></span>
   
-- [<span data-ttu-id="7db13-130">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="7db13-130">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="136ef-130">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="136ef-130">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="7db13-131">CreateAttachmentResponse</span><span class="sxs-lookup"><span data-stu-id="7db13-131">CreateAttachmentResponse</span></span>](createattachmentresponse.md)
+- [<span data-ttu-id="136ef-131">CreateAttachmentResponse</span><span class="sxs-lookup"><span data-stu-id="136ef-131">CreateAttachmentResponse</span></span>](createattachmentresponse.md)
     
-- [<span data-ttu-id="7db13-132">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="7db13-132">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="136ef-132">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="136ef-132">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="7db13-133">CreateAttachmentResponseMessage</span><span class="sxs-lookup"><span data-stu-id="7db13-133">CreateAttachmentResponseMessage</span></span>](createattachmentresponsemessage.md)
+- [<span data-ttu-id="136ef-133">CreateAttachmentResponseMessage</span><span class="sxs-lookup"><span data-stu-id="136ef-133">CreateAttachmentResponseMessage</span></span>](createattachmentresponsemessage.md)
     
-- [<span data-ttu-id="7db13-134">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="7db13-134">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="136ef-134">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="136ef-134">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="7db13-135">Datos adjuntos</span><span class="sxs-lookup"><span data-stu-id="7db13-135">Attachments</span></span>](attachments-ex15websvcsotherref.md)
+- [<span data-ttu-id="136ef-135">Datos adjuntos</span><span class="sxs-lookup"><span data-stu-id="136ef-135">Attachments</span></span>](attachments-ex15websvcsotherref.md)
     
-- [<span data-ttu-id="7db13-136">FileAttachment</span><span class="sxs-lookup"><span data-stu-id="7db13-136">FileAttachment</span></span>](fileattachment.md)
+- [<span data-ttu-id="136ef-136">FileAttachment</span><span class="sxs-lookup"><span data-stu-id="136ef-136">FileAttachment</span></span>](fileattachment.md)
     
-- [<span data-ttu-id="7db13-137">AttachmentId</span><span class="sxs-lookup"><span data-stu-id="7db13-137">AttachmentId</span></span>](attachmentid.md)
+- [<span data-ttu-id="136ef-137">AttachmentId</span><span class="sxs-lookup"><span data-stu-id="136ef-137">AttachmentId</span></span>](attachmentid.md)
     
-## <a name="item-createattachment-request-example"></a><span data-ttu-id="7db13-138">Ejemplo de solicitud de elemento CreateAttachment</span><span class="sxs-lookup"><span data-stu-id="7db13-138">Item CreateAttachment request example</span></span>
+## <a name="item-createattachment-request-example"></a><span data-ttu-id="136ef-138">Ejemplo de solicitud de CreateAttachment de elemento</span><span class="sxs-lookup"><span data-stu-id="136ef-138">Item CreateAttachment request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="7db13-139">Descripción</span><span class="sxs-lookup"><span data-stu-id="7db13-139">Description</span></span>
+### <a name="description"></a><span data-ttu-id="136ef-139">Descripción</span><span class="sxs-lookup"><span data-stu-id="136ef-139">Description</span></span>
 
-<span data-ttu-id="7db13-140">El siguiente ejemplo de una solicitud de CreateAttachment muestra cómo crear un elemento de datos adjuntos.</span><span class="sxs-lookup"><span data-stu-id="7db13-140">The following example of a CreateAttachment request shows how to create an item attachment.</span></span>
+<span data-ttu-id="136ef-140">El siguiente ejemplo de una solicitud CreateAttachment muestra cómo crear un elemento adjunto.</span><span class="sxs-lookup"><span data-stu-id="136ef-140">The following example of a CreateAttachment request shows how to create an item attachment.</span></span>
   
-### <a name="code"></a><span data-ttu-id="7db13-141">Código</span><span class="sxs-lookup"><span data-stu-id="7db13-141">Code</span></span>
+### <a name="code"></a><span data-ttu-id="136ef-141">Código</span><span class="sxs-lookup"><span data-stu-id="136ef-141">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <CreateAttachment xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <CreateAttachment xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <ParentItemId Id="AAAtAE=" ChangeKey="CQAAABYA"/>
       <Attachments>
         <t:ItemAttachment>
@@ -166,37 +166,37 @@ ms.locfileid: "19763913"
 </soap:Envelope>
 ```
 
-### <a name="comment"></a><span data-ttu-id="7db13-142">Comment</span><span class="sxs-lookup"><span data-stu-id="7db13-142">Comment</span></span>
+### <a name="comment"></a><span data-ttu-id="136ef-142">Comentario</span><span class="sxs-lookup"><span data-stu-id="136ef-142">Comment</span></span>
 
-<span data-ttu-id="7db13-143">Debe proporcionar un nombre para los datos adjuntos.</span><span class="sxs-lookup"><span data-stu-id="7db13-143">A name for the attachment must be provided.</span></span>
+<span data-ttu-id="136ef-143">Se debe proporcionar un nombre para los datos adjuntos.</span><span class="sxs-lookup"><span data-stu-id="136ef-143">A name for the attachment must be provided.</span></span>
   
- <span data-ttu-id="7db13-144">**Nota** El identificador del elemento primario y la clave de cambio se han abreviado para conservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="7db13-144">**Note** The parent item identifier and change key have been shortened to preserve readability.</span></span> 
+ <span data-ttu-id="136ef-144">**Nota:** El identificador de elemento primario y la clave de cambio se han abreviado para preservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="136ef-144">**Note** The parent item identifier and change key have been shortened to preserve readability.</span></span> 
   
-### <a name="request-elements"></a><span data-ttu-id="7db13-145">Elementos de solicitud</span><span class="sxs-lookup"><span data-stu-id="7db13-145">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="136ef-145">Elementos de solicitud</span><span class="sxs-lookup"><span data-stu-id="136ef-145">Request elements</span></span>
 
-<span data-ttu-id="7db13-146">En la solicitud se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="7db13-146">The following elements are used in the request:</span></span>
+<span data-ttu-id="136ef-146">Los siguientes elementos se usan en la solicitud:</span><span class="sxs-lookup"><span data-stu-id="136ef-146">The following elements are used in the request:</span></span>
   
-- [<span data-ttu-id="7db13-147">CreateAttachment</span><span class="sxs-lookup"><span data-stu-id="7db13-147">CreateAttachment</span></span>](createattachment.md)
+- [<span data-ttu-id="136ef-147">CreateAttachment</span><span class="sxs-lookup"><span data-stu-id="136ef-147">CreateAttachment</span></span>](createattachment.md)
     
-- [<span data-ttu-id="7db13-148">ParentItemId</span><span class="sxs-lookup"><span data-stu-id="7db13-148">ParentItemId</span></span>](parentitemid.md)
+- [<span data-ttu-id="136ef-148">ParentItemId</span><span class="sxs-lookup"><span data-stu-id="136ef-148">ParentItemId</span></span>](parentitemid.md)
     
-- [<span data-ttu-id="7db13-149">Datos adjuntos</span><span class="sxs-lookup"><span data-stu-id="7db13-149">Attachments</span></span>](attachments-ex15websvcsotherref.md)
+- [<span data-ttu-id="136ef-149">Datos adjuntos</span><span class="sxs-lookup"><span data-stu-id="136ef-149">Attachments</span></span>](attachments-ex15websvcsotherref.md)
     
-- [<span data-ttu-id="7db13-150">ItemAttachment</span><span class="sxs-lookup"><span data-stu-id="7db13-150">ItemAttachment</span></span>](itemattachment.md)
+- [<span data-ttu-id="136ef-150">ItemAttachment</span><span class="sxs-lookup"><span data-stu-id="136ef-150">ItemAttachment</span></span>](itemattachment.md)
     
-- [<span data-ttu-id="7db13-151">Nombre (AttachmentType)</span><span class="sxs-lookup"><span data-stu-id="7db13-151">Name (AttachmentType)</span></span>](name-attachmenttype.md)
+- [<span data-ttu-id="136ef-151">Nombre (AttachmentType)</span><span class="sxs-lookup"><span data-stu-id="136ef-151">Name (AttachmentType)</span></span>](name-attachmenttype.md)
     
-- [<span data-ttu-id="7db13-152">Message</span><span class="sxs-lookup"><span data-stu-id="7db13-152">Message</span></span>](message-ex15websvcsotherref.md)
+- [<span data-ttu-id="136ef-152">Mensaje</span><span class="sxs-lookup"><span data-stu-id="136ef-152">Message</span></span>](message-ex15websvcsotherref.md)
     
-- [<span data-ttu-id="7db13-153">Subject</span><span class="sxs-lookup"><span data-stu-id="7db13-153">Subject</span></span>](subject.md)
+- [<span data-ttu-id="136ef-153">Asunto</span><span class="sxs-lookup"><span data-stu-id="136ef-153">Subject</span></span>](subject.md)
     
-## <a name="successful-item-createattachment-response-example"></a><span data-ttu-id="7db13-154">Ejemplo de respuesta correcta de elemento CreateAttachment</span><span class="sxs-lookup"><span data-stu-id="7db13-154">Successful Item CreateAttachment response example</span></span>
+## <a name="successful-item-createattachment-response-example"></a><span data-ttu-id="136ef-154">Ejemplo de respuesta de CreateAttachment de elemento correcta</span><span class="sxs-lookup"><span data-stu-id="136ef-154">Successful Item CreateAttachment response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="7db13-155">Descripción</span><span class="sxs-lookup"><span data-stu-id="7db13-155">Description</span></span>
+### <a name="description"></a><span data-ttu-id="136ef-155">Descripción</span><span class="sxs-lookup"><span data-stu-id="136ef-155">Description</span></span>
 
-<span data-ttu-id="7db13-156">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de CreateAttachment.</span><span class="sxs-lookup"><span data-stu-id="7db13-156">The following example shows a successful response to the CreateAttachment request.</span></span>
+<span data-ttu-id="136ef-156">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateAttachment.</span><span class="sxs-lookup"><span data-stu-id="136ef-156">The following example shows a successful response to the CreateAttachment request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="7db13-157">Código</span><span class="sxs-lookup"><span data-stu-id="7db13-157">Code</span></span>
+### <a name="code"></a><span data-ttu-id="136ef-157">Código</span><span class="sxs-lookup"><span data-stu-id="136ef-157">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -205,12 +205,12 @@ ms.locfileid: "19763913"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="653" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <CreateAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                              xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                              xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                              xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                              xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateAttachmentResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -226,37 +226,37 @@ ms.locfileid: "19763913"
 </soap:Envelope>
 ```
 
-### <a name="comment"></a><span data-ttu-id="7db13-158">Comment</span><span class="sxs-lookup"><span data-stu-id="7db13-158">Comment</span></span>
+### <a name="comment"></a><span data-ttu-id="136ef-158">Comentario</span><span class="sxs-lookup"><span data-stu-id="136ef-158">Comment</span></span>
 
-<span data-ttu-id="7db13-159">La respuesta contiene el identificador de los nuevos datos adjuntos.</span><span class="sxs-lookup"><span data-stu-id="7db13-159">The response contains the identifier of the new attachment.</span></span> <span data-ttu-id="7db13-160">También contiene el identificador y cambiar la clave del elemento raíz.</span><span class="sxs-lookup"><span data-stu-id="7db13-160">It also contains the identifier and change key of the root item.</span></span> <span data-ttu-id="7db13-161">El elemento raíz es el elemento que contiene los datos adjuntos.</span><span class="sxs-lookup"><span data-stu-id="7db13-161">The root item is the item that contains the attachment.</span></span> <span data-ttu-id="7db13-162">Los identificadores de elemento y cambiar la clave se han abreviado para conservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="7db13-162">The item identifiers and change key have been shortened to preserve readability.</span></span>
+<span data-ttu-id="136ef-159">La respuesta contiene el identificador de los datos adjuntos nuevos.</span><span class="sxs-lookup"><span data-stu-id="136ef-159">The response contains the identifier of the new attachment.</span></span> <span data-ttu-id="136ef-160">También contiene el identificador y la clave de cambio del elemento raíz.</span><span class="sxs-lookup"><span data-stu-id="136ef-160">It also contains the identifier and change key of the root item.</span></span> <span data-ttu-id="136ef-161">El elemento raíz es el elemento que contiene los datos adjuntos.</span><span class="sxs-lookup"><span data-stu-id="136ef-161">The root item is the item that contains the attachment.</span></span> <span data-ttu-id="136ef-162">Los identificadores de elemento y la clave de cambio se han abreviado para preservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="136ef-162">The item identifiers and change key have been shortened to preserve readability.</span></span>
   
-### <a name="successful-response-elements"></a><span data-ttu-id="7db13-163">Elementos de respuesta correcta</span><span class="sxs-lookup"><span data-stu-id="7db13-163">Successful response elements</span></span>
+### <a name="successful-response-elements"></a><span data-ttu-id="136ef-163">Elementos Response correcto</span><span class="sxs-lookup"><span data-stu-id="136ef-163">Successful response elements</span></span>
 
-<span data-ttu-id="7db13-164">En la respuesta se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="7db13-164">The following elements are used in the response:</span></span>
+<span data-ttu-id="136ef-164">En la respuesta se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="136ef-164">The following elements are used in the response:</span></span>
   
-- [<span data-ttu-id="7db13-165">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="7db13-165">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="136ef-165">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="136ef-165">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="7db13-166">CreateAttachmentResponse</span><span class="sxs-lookup"><span data-stu-id="7db13-166">CreateAttachmentResponse</span></span>](createattachmentresponse.md)
+- [<span data-ttu-id="136ef-166">CreateAttachmentResponse</span><span class="sxs-lookup"><span data-stu-id="136ef-166">CreateAttachmentResponse</span></span>](createattachmentresponse.md)
     
-- [<span data-ttu-id="7db13-167">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="7db13-167">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="136ef-167">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="136ef-167">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="7db13-168">CreateAttachmentResponseMessage</span><span class="sxs-lookup"><span data-stu-id="7db13-168">CreateAttachmentResponseMessage</span></span>](createattachmentresponsemessage.md)
+- [<span data-ttu-id="136ef-168">CreateAttachmentResponseMessage</span><span class="sxs-lookup"><span data-stu-id="136ef-168">CreateAttachmentResponseMessage</span></span>](createattachmentresponsemessage.md)
     
-- [<span data-ttu-id="7db13-169">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="7db13-169">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="136ef-169">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="136ef-169">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="7db13-170">Datos adjuntos</span><span class="sxs-lookup"><span data-stu-id="7db13-170">Attachments</span></span>](attachments-ex15websvcsotherref.md)
+- [<span data-ttu-id="136ef-170">Datos adjuntos</span><span class="sxs-lookup"><span data-stu-id="136ef-170">Attachments</span></span>](attachments-ex15websvcsotherref.md)
     
-- [<span data-ttu-id="7db13-171">ItemAttachment</span><span class="sxs-lookup"><span data-stu-id="7db13-171">ItemAttachment</span></span>](itemattachment.md)
+- [<span data-ttu-id="136ef-171">ItemAttachment</span><span class="sxs-lookup"><span data-stu-id="136ef-171">ItemAttachment</span></span>](itemattachment.md)
     
-- [<span data-ttu-id="7db13-172">AttachmentId</span><span class="sxs-lookup"><span data-stu-id="7db13-172">AttachmentId</span></span>](attachmentid.md)
+- [<span data-ttu-id="136ef-172">AttachmentId</span><span class="sxs-lookup"><span data-stu-id="136ef-172">AttachmentId</span></span>](attachmentid.md)
     
-## <a name="createattachment-error-response-example"></a><span data-ttu-id="7db13-173">Ejemplo de respuesta de CreateAttachment Error</span><span class="sxs-lookup"><span data-stu-id="7db13-173">CreateAttachment Error response example</span></span>
+## <a name="createattachment-error-response-example"></a><span data-ttu-id="136ef-173">Ejemplo de respuesta de error CreateAttachment</span><span class="sxs-lookup"><span data-stu-id="136ef-173">CreateAttachment Error response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="7db13-174">Descripción</span><span class="sxs-lookup"><span data-stu-id="7db13-174">Description</span></span>
+### <a name="description"></a><span data-ttu-id="136ef-174">Descripción</span><span class="sxs-lookup"><span data-stu-id="136ef-174">Description</span></span>
 
-<span data-ttu-id="7db13-175">En el ejemplo siguiente se muestra una respuesta de error a la solicitud de CreateAttachment.</span><span class="sxs-lookup"><span data-stu-id="7db13-175">The following example shows an error response to the CreateAttachment request.</span></span> <span data-ttu-id="7db13-176">El error es debido a que no se especificó el nombre de los datos adjuntos.</span><span class="sxs-lookup"><span data-stu-id="7db13-176">The error is due to the fact that the name of the attachment was not specified.</span></span>
+<span data-ttu-id="136ef-175">En el ejemplo siguiente se muestra una respuesta de error a la solicitud CreateAttachment.</span><span class="sxs-lookup"><span data-stu-id="136ef-175">The following example shows an error response to the CreateAttachment request.</span></span> <span data-ttu-id="136ef-176">El error se debe a que no se ha especificado el nombre de los datos adjuntos.</span><span class="sxs-lookup"><span data-stu-id="136ef-176">The error is due to the fact that the name of the attachment was not specified.</span></span>
   
-### <a name="code"></a><span data-ttu-id="7db13-177">Código</span><span class="sxs-lookup"><span data-stu-id="7db13-177">Code</span></span>
+### <a name="code"></a><span data-ttu-id="136ef-177">Código</span><span class="sxs-lookup"><span data-stu-id="136ef-177">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -265,12 +265,12 @@ ms.locfileid: "19763913"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="653" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <CreateAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                              xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                              xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <CreateAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                              xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                              xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:CreateAttachmentResponseMessage ResponseClass="Error">
           <m:MessageText>Required property is missing.</m:MessageText>
@@ -287,39 +287,39 @@ ms.locfileid: "19763913"
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a><span data-ttu-id="7db13-178">Elementos de respuesta de error</span><span class="sxs-lookup"><span data-stu-id="7db13-178">Error response elements</span></span>
+### <a name="error-response-elements"></a><span data-ttu-id="136ef-178">Elementos de respuesta de error</span><span class="sxs-lookup"><span data-stu-id="136ef-178">Error response elements</span></span>
 
-<span data-ttu-id="7db13-179">En la respuesta de error, se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="7db13-179">The following elements are used in the error response:</span></span>
+<span data-ttu-id="136ef-179">Los siguientes elementos se usan en la respuesta de error:</span><span class="sxs-lookup"><span data-stu-id="136ef-179">The following elements are used in the error response:</span></span>
   
-- [<span data-ttu-id="7db13-180">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="7db13-180">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="136ef-180">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="136ef-180">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="7db13-181">CreateAttachmentResponse</span><span class="sxs-lookup"><span data-stu-id="7db13-181">CreateAttachmentResponse</span></span>](createattachmentresponse.md)
+- [<span data-ttu-id="136ef-181">CreateAttachmentResponse</span><span class="sxs-lookup"><span data-stu-id="136ef-181">CreateAttachmentResponse</span></span>](createattachmentresponse.md)
     
-- [<span data-ttu-id="7db13-182">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="7db13-182">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="136ef-182">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="136ef-182">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="7db13-183">CreateAttachmentResponseMessage</span><span class="sxs-lookup"><span data-stu-id="7db13-183">CreateAttachmentResponseMessage</span></span>](createattachmentresponsemessage.md)
+- [<span data-ttu-id="136ef-183">CreateAttachmentResponseMessage</span><span class="sxs-lookup"><span data-stu-id="136ef-183">CreateAttachmentResponseMessage</span></span>](createattachmentresponsemessage.md)
     
-- [<span data-ttu-id="7db13-184">MessageText</span><span class="sxs-lookup"><span data-stu-id="7db13-184">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="136ef-184">MessageText</span><span class="sxs-lookup"><span data-stu-id="136ef-184">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="7db13-185">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="7db13-185">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="136ef-185">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="136ef-185">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="7db13-186">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="7db13-186">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="136ef-186">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="136ef-186">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-- [<span data-ttu-id="7db13-187">MessageXml</span><span class="sxs-lookup"><span data-stu-id="7db13-187">MessageXml</span></span>](messagexml.md)
+- [<span data-ttu-id="136ef-187">MessageXml</span><span class="sxs-lookup"><span data-stu-id="136ef-187">MessageXml</span></span>](messagexml.md)
     
-- [<span data-ttu-id="7db13-188">ExceptionFieldURI</span><span class="sxs-lookup"><span data-stu-id="7db13-188">ExceptionFieldURI</span></span>](exceptionfielduri.md)
+- [<span data-ttu-id="136ef-188">ExceptionFieldURI</span><span class="sxs-lookup"><span data-stu-id="136ef-188">ExceptionFieldURI</span></span>](exceptionfielduri.md)
     
-- [<span data-ttu-id="7db13-189">Datos adjuntos</span><span class="sxs-lookup"><span data-stu-id="7db13-189">Attachments</span></span>](attachments-ex15websvcsotherref.md)
+- [<span data-ttu-id="136ef-189">Datos adjuntos</span><span class="sxs-lookup"><span data-stu-id="136ef-189">Attachments</span></span>](attachments-ex15websvcsotherref.md)
     
-## <a name="remarks"></a><span data-ttu-id="7db13-190">Comentarios</span><span class="sxs-lookup"><span data-stu-id="7db13-190">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="136ef-190">Comentarios</span><span class="sxs-lookup"><span data-stu-id="136ef-190">Remarks</span></span>
 
-<span data-ttu-id="7db13-191">Si varios datos adjuntos se adjuntan a un elemento en un solo viaje de ida, el RootItemChangeKey en el último mensaje de respuesta es la única que representa la nueva clave de cambio del elemento que tiene los datos adjuntos.</span><span class="sxs-lookup"><span data-stu-id="7db13-191">If multiple attachments are attached to an item in a single round trip, the RootItemChangeKey in the last response message is the one that represents the new change key of the item that has the attachments.</span></span>
+<span data-ttu-id="136ef-191">Si se adjuntan varios datos adjuntos a un elemento en una sola acción de ida y vuelta, el RootItemChangeKey del último mensaje de respuesta es el que representa la nueva clave de cambio del elemento que tiene los datos adjuntos.</span><span class="sxs-lookup"><span data-stu-id="136ef-191">If multiple attachments are attached to an item in a single round trip, the RootItemChangeKey in the last response message is the one that represents the new change key of the item that has the attachments.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="7db13-192">Vea también</span><span class="sxs-lookup"><span data-stu-id="7db13-192">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="136ef-192">Vea también</span><span class="sxs-lookup"><span data-stu-id="136ef-192">See also</span></span>
 
 
 
-[<span data-ttu-id="7db13-193">Operación DeleteAttachment</span><span class="sxs-lookup"><span data-stu-id="7db13-193">DeleteAttachment operation</span></span>](deleteattachment-operation.md)
+[<span data-ttu-id="136ef-193">Operación DeleteAttachment</span><span class="sxs-lookup"><span data-stu-id="136ef-193">DeleteAttachment operation</span></span>](deleteattachment-operation.md)
   
-[<span data-ttu-id="7db13-194">Operación GetAttachment</span><span class="sxs-lookup"><span data-stu-id="7db13-194">GetAttachment operation</span></span>](getattachment-operation.md)
+[<span data-ttu-id="136ef-194">Operación GetAttachment</span><span class="sxs-lookup"><span data-stu-id="136ef-194">GetAttachment operation</span></span>](getattachment-operation.md)
 

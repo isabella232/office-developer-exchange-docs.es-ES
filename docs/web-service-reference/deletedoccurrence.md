@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ff24ea15-0cd7-407d-a378-73ec16451870
-description: El elemento DeletedOccurrence representa una repetición eliminada de un elemento periódico del calendario.
-ms.openlocfilehash: f12a2ba20f87f7803e492d8422b68c8ecdf9d797
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DeletedOccurrence representa una ocurrencia eliminada de un elemento de calendario periódico.
+ms.openlocfilehash: 814a81934786963ae5e7ea3a40406834c27b64ce
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764084"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44457840"
 ---
-# <a name="deletedoccurrence"></a><span data-ttu-id="cc0e0-103">DeletedOccurrence</span><span class="sxs-lookup"><span data-stu-id="cc0e0-103">DeletedOccurrence</span></span>
+# <a name="deletedoccurrence"></a><span data-ttu-id="62017-103">DeletedOccurrence</span><span class="sxs-lookup"><span data-stu-id="62017-103">DeletedOccurrence</span></span>
 
-<span data-ttu-id="cc0e0-104">El elemento **DeletedOccurrence** representa una repetición eliminada de un elemento periódico del calendario.</span><span class="sxs-lookup"><span data-stu-id="cc0e0-104">The **DeletedOccurrence** element represents a deleted occurrence of a recurring calendar item.</span></span> 
+<span data-ttu-id="62017-104">El elemento **DeletedOccurrence** representa una ocurrencia eliminada de un elemento de calendario periódico.</span><span class="sxs-lookup"><span data-stu-id="62017-104">The **DeletedOccurrence** element represents a deleted occurrence of a recurring calendar item.</span></span> 
   
 ```xml
 <DeletedOccurrence>
@@ -29,42 +29,42 @@ ms.locfileid: "19764084"
 </DeletedOccurrence>
 ```
 
- <span data-ttu-id="cc0e0-105">**DeletedOccurrenceInfoType**</span><span class="sxs-lookup"><span data-stu-id="cc0e0-105">**DeletedOccurrenceInfoType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="cc0e0-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="cc0e0-106">Attributes and elements</span></span>
+ <span data-ttu-id="62017-105">**DeletedOccurrenceInfoType**</span><span class="sxs-lookup"><span data-stu-id="62017-105">**DeletedOccurrenceInfoType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="62017-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="62017-106">Attributes and elements</span></span>
 
-<span data-ttu-id="cc0e0-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="cc0e0-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="62017-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="62017-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="cc0e0-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="cc0e0-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="62017-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="62017-108">Attributes</span></span>
 
-<span data-ttu-id="cc0e0-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="cc0e0-109">None.</span></span>
+<span data-ttu-id="62017-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="62017-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="cc0e0-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="cc0e0-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="62017-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="62017-110">Child elements</span></span>
 
-|<span data-ttu-id="cc0e0-111">**Element**</span><span class="sxs-lookup"><span data-stu-id="cc0e0-111">**Element**</span></span>|<span data-ttu-id="cc0e0-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="cc0e0-112">**Description**</span></span>|
+|<span data-ttu-id="62017-111">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="62017-111">**Element**</span></span>|<span data-ttu-id="62017-112">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="62017-112">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="cc0e0-113">Start</span><span class="sxs-lookup"><span data-stu-id="cc0e0-113">Start</span></span>](start.md) <br/> |<span data-ttu-id="cc0e0-114">Representa la hora de inicio de una repetición eliminada de un elemento periódico del calendario.</span><span class="sxs-lookup"><span data-stu-id="cc0e0-114">Represents the start time of a deleted occurrence of a recurring calendar item.</span></span>  <br/> |
+|[<span data-ttu-id="62017-113">Start</span><span class="sxs-lookup"><span data-stu-id="62017-113">Start</span></span>](start.md) <br/> |<span data-ttu-id="62017-114">Representa la hora de inicio de una ocurrencia eliminada de un elemento de calendario periódico.</span><span class="sxs-lookup"><span data-stu-id="62017-114">Represents the start time of a deleted occurrence of a recurring calendar item.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="cc0e0-115">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="cc0e0-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="62017-115">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="62017-115">Parent elements</span></span>
 
-|<span data-ttu-id="cc0e0-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="cc0e0-116">**Element**</span></span>|<span data-ttu-id="cc0e0-117">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="cc0e0-117">**Description**</span></span>|
+|<span data-ttu-id="62017-116">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="62017-116">**Element**</span></span>|<span data-ttu-id="62017-117">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="62017-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="cc0e0-118">DeletedOccurrences</span><span class="sxs-lookup"><span data-stu-id="cc0e0-118">DeletedOccurrences</span></span>](deletedoccurrences.md) <br/> |<span data-ttu-id="cc0e0-119">Contiene una matriz de eliminado apariciones de un elemento periódico del calendario.</span><span class="sxs-lookup"><span data-stu-id="cc0e0-119">Contains an array of deleted occurrences of a recurring calendar item.</span></span>  <br/> |
+|[<span data-ttu-id="62017-118">DeletedOccurrences</span><span class="sxs-lookup"><span data-stu-id="62017-118">DeletedOccurrences</span></span>](deletedoccurrences.md) <br/> |<span data-ttu-id="62017-119">Contiene una matriz de ocurrencias eliminadas de un elemento de calendario periódico.</span><span class="sxs-lookup"><span data-stu-id="62017-119">Contains an array of deleted occurrences of a recurring calendar item.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="cc0e0-120">Comentarios</span><span class="sxs-lookup"><span data-stu-id="cc0e0-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="62017-120">Comentarios</span><span class="sxs-lookup"><span data-stu-id="62017-120">Remarks</span></span>
 
-<span data-ttu-id="cc0e0-121">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="cc0e0-121">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="62017-121">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="62017-121">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="cc0e0-122">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="cc0e0-122">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="62017-122">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="62017-122">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="cc0e0-123">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="cc0e0-123">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="cc0e0-124">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="cc0e0-124">Schema name</span></span>  <br/> |<span data-ttu-id="cc0e0-125">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="cc0e0-125">Types schema</span></span>  <br/> |
-|<span data-ttu-id="cc0e0-126">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="cc0e0-126">Validation file</span></span>  <br/> |<span data-ttu-id="cc0e0-127">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="cc0e0-127">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="cc0e0-128">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="cc0e0-128">Can be empty</span></span>  <br/> |<span data-ttu-id="cc0e0-129">False</span><span class="sxs-lookup"><span data-stu-id="cc0e0-129">False</span></span>  <br/> |
+|<span data-ttu-id="62017-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="62017-123">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="62017-124">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="62017-124">Schema name</span></span>  <br/> |<span data-ttu-id="62017-125">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="62017-125">Types schema</span></span>  <br/> |
+|<span data-ttu-id="62017-126">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="62017-126">Validation file</span></span>  <br/> |<span data-ttu-id="62017-127">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="62017-127">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="62017-128">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="62017-128">Can be empty</span></span>  <br/> |<span data-ttu-id="62017-129">Falso</span><span class="sxs-lookup"><span data-stu-id="62017-129">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="cc0e0-130">Vea también</span><span class="sxs-lookup"><span data-stu-id="cc0e0-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="62017-130">Vea también</span><span class="sxs-lookup"><span data-stu-id="62017-130">See also</span></span>
 
-- [<span data-ttu-id="cc0e0-131">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="cc0e0-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)  
-- [<span data-ttu-id="cc0e0-132">Referencia EWS para Exchange</span><span class="sxs-lookup"><span data-stu-id="cc0e0-132">EWS reference for Exchange</span></span>](ews-reference-for-exchange.md)
+- [<span data-ttu-id="62017-131">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="62017-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)  
+- [<span data-ttu-id="62017-132">Referencia EWS para Exchange</span><span class="sxs-lookup"><span data-stu-id="62017-132">EWS reference for Exchange</span></span>](ews-reference-for-exchange.md)
 
