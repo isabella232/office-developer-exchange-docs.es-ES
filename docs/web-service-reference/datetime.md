@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9c6ecd4c-779c-4fa5-8082-dd2bc0a751f4
-description: El elemento de fecha y hora representa la fecha y hora en que se produce la transición de la zona horaria.
-ms.openlocfilehash: e8212e375a691a00b8d830dbd34c87a8eef91e53
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DateTime representa la fecha y hora en que se produce la transición de zona horaria.
+ms.openlocfilehash: 109fc1107ddf59d3e8aea12b267775503ac462ce
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764032"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44442881"
 ---
 # <a name="datetime"></a>DateTime
 
-El elemento de **fecha y hora** representa la fecha y hora en que se produce la transición de la zona horaria. 
+El elemento **DateTime** representa la fecha y hora en que se produce la transición de zona horaria. 
   
 ```xml
 <DateTime/>
@@ -31,25 +31,25 @@ El elemento de **fecha y hora** representa la fecha y hora en que se produce la 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AbsoluteDateTransition](absolutedatetransition.md) <br/> |Representa una transición de la zona horaria que se produce en una fecha específica y a una hora específica.  <br/> |
+|[AbsoluteDateTransition](absolutedatetransition.md) <br/> |Representa una transición de zona horaria que se produce en una fecha específica y a una hora específica.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **fecha y hora** representa la fecha y hora en que se produce la transición de la zona horaria. 
+El valor de texto del elemento **DateTime** representa la fecha y la hora en que se produce la transición de zona horaria. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -59,12 +59,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

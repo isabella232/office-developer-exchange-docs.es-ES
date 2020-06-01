@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 09b7504e-08d8-42f9-88cc-a2a37a2e2b8b
-description: El elemento DayOfMonth describe el día en un mes en el que se produce un elemento periódico.
-ms.openlocfilehash: 0d0d95849a2562e06b88872b2857cc5e6ca67af3
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DayOfMonth describe el día de un mes en que se produce un elemento periódico.
+ms.openlocfilehash: dc333a46283d5e8eba3a79f62f8c22c22f56e190
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764048"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44442832"
 ---
 # <a name="dayofmonth"></a>DayOfMonth
 
-El elemento **DayOfMonth** describe el día en un mes en el que se produce un elemento periódico. 
+El elemento **DayOfMonth** describe el día de un mes en que se produce un elemento periódico. 
   
 ```xml
 <DayOfMonth/>
@@ -31,41 +31,41 @@ El elemento **DayOfMonth** describe el día en un mes en el que se produce un el
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[AbsoluteYearlyRecurrence](absoluteyearlyrecurrence.md) <br/> |Representa un patrón de periodicidad anual.  <br/> |
 |[AbsoluteMonthlyRecurrence](absolutemonthlyrecurrence.md) <br/> |Representa un patrón de periodicidad mensual.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto que representa un número entero en el intervalo de 1 a 31. Si para un mes determinado que este valor es mayor que el número de días del mes, se supone que el último día del mes.
+Un valor de texto que representa un número entero en el intervalo de 1 a 31 es obligatorio. Si, en un mes determinado, este valor es superior al número de días del mes, se supone el último día del mes.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

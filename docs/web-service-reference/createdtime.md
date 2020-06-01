@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7055c86f-c364-42d3-87b4-c741ccb15c57
-description: El elemento CreatedTime especifica la hora a la que se creó el elemento.
-ms.openlocfilehash: 5e542f750e83f0fe6a078bf6230ffe1d0cc6680d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento CreatedTime especifica la hora en la que se creó el elemento.
+ms.openlocfilehash: 709e6021e48a9f2b4857b9283750306d5e513c72
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763925"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44445317"
 ---
 # <a name="createdtime"></a>CreatedTime
 
-El elemento **CreatedTime** especifica la hora a la que se creó el elemento. 
+El elemento **CreatedTime** especifica la hora en la que se creó el elemento. 
   
 ```xml
 <CreatedTime></CreatedTime>
@@ -26,25 +26,25 @@ El elemento **CreatedTime** especifica la hora a la que se creó el elemento.
  **dateTime**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SearchPreviewItem](searchpreviewitem.md) <br/> |Especifica los primeros 256 caracteres de un elemento de buzón de correo para vista previa sin abrir el elemento.  <br/> |
+|[SearchPreviewItem](searchpreviewitem.md) <br/> |Especifica los primeros 256 caracteres de un elemento de buzón de correo para la vista previa sin abrir el elemento.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento CreatedTime es la hora en que se creó el elemento. 
+El valor de texto del elemento CreatedTime es la hora en la que se creó el elemento. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

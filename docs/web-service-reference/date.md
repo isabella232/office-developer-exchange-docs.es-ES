@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 2f6bc090-fff4-45b1-8d7e-8fd6e060cce2
-description: El elemento de fecha representa la fecha que contiene las horas de reunión sugerida.
-ms.openlocfilehash: 98dc9d6c599222c819b2c9ed1bacd05758ae1655
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Date representa la fecha que contiene las horas de reunión sugeridas.
+ms.openlocfilehash: bcc152ed6aba94907189b5579b998815be45db16
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764027"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44443791"
 ---
 # <a name="date"></a>Fecha
 
-El elemento de **fecha** representa la fecha que contiene las horas de reunión sugerida. 
+El elemento **Date** representa la fecha que contiene las horas de reunión sugeridas. 
   
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md) 
 - [SuggestionsResponse](suggestionsresponse.md) 
 - [SuggestionDayResultArray](suggestiondayresultarray.md)  
 - [SuggestionDayResult](suggestiondayresult.md)  
-- [Date](date.md)
+- [Fecha](date.md)
   
 ```xml
 <Date>...</Date>
@@ -37,42 +37,42 @@ El elemento de **fecha** representa la fecha que contiene las horas de reunión 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SuggestionDayResult](suggestiondayresult.md) <br/> |Representa un solo día que contiene las horas de reunión sugerida.  <br/><br/>La siguiente es la expresión de XPath 2.0 para este elemento:<br/><br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]` <br/> |
+|[SuggestionDayResult](suggestiondayresult.md) <br/> |Representa un solo día que contiene las horas de reunión sugeridas.  <br/><br/>La siguiente es la expresión XPath 2,0 a este elemento:<br/><br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto. Revise las recomendaciones de tipo de datos de esquema de World Wide Web Consortium (W3C) para el formato del tipo de datos dateTime primitivo.
+Se requiere un valor de texto. Revise las recomendaciones de tipos de texto del esquema del Consorcio World Wide Web (W3C) para el formato del tipo de texto primitivo dateTime.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md) 
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
-- [Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+- [Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 
