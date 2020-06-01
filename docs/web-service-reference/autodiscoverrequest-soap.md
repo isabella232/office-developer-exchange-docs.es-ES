@@ -9,53 +9,53 @@ api_type:
 - schema
 ms.assetid: 3e403e81-290b-42f6-9e79-15135fc58c4b
 description: El elemento AutodiscoverRequest representa el elemento base para todas las solicitudes de detección automática.
-ms.openlocfilehash: bb8c252b84578443f0d6da0acf02f57ecd7caf6e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: ed7d4095dafaba6a7800927f2d3ece412b57ae36
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763596"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44466853"
 ---
-# <a name="autodiscoverrequest-soap"></a><span data-ttu-id="5f2d2-103">AutodiscoverRequest (SOAP)</span><span class="sxs-lookup"><span data-stu-id="5f2d2-103">AutodiscoverRequest (SOAP)</span></span>
+# <a name="autodiscoverrequest-soap"></a><span data-ttu-id="fbde2-103">AutodiscoverRequest (SOAP)</span><span class="sxs-lookup"><span data-stu-id="fbde2-103">AutodiscoverRequest (SOAP)</span></span>
 
-<span data-ttu-id="5f2d2-104">El elemento **AutodiscoverRequest** representa el elemento base para todas las solicitudes de detección automática.</span><span class="sxs-lookup"><span data-stu-id="5f2d2-104">The **AutodiscoverRequest** element represents the base element for all Autodiscover requests.</span></span> 
+<span data-ttu-id="fbde2-104">El elemento **AutodiscoverRequest** representa el elemento base para todas las solicitudes de detección automática.</span><span class="sxs-lookup"><span data-stu-id="fbde2-104">The **AutodiscoverRequest** element represents the base element for all Autodiscover requests.</span></span> 
   
 ```XML
 <AutodiscoverRequest/>
 ```
 
- <span data-ttu-id="5f2d2-105">**AutodiscoverRequest**</span><span class="sxs-lookup"><span data-stu-id="5f2d2-105">**AutodiscoverRequest**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="5f2d2-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="5f2d2-106">Attributes and elements</span></span>
+ <span data-ttu-id="fbde2-105">**AutodiscoverRequest**</span><span class="sxs-lookup"><span data-stu-id="fbde2-105">**AutodiscoverRequest**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="fbde2-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="fbde2-106">Attributes and elements</span></span>
 
-<span data-ttu-id="5f2d2-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="5f2d2-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="fbde2-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="fbde2-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="5f2d2-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="5f2d2-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="fbde2-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="fbde2-108">Attributes</span></span>
 
-<span data-ttu-id="5f2d2-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="5f2d2-109">None.</span></span>
+<span data-ttu-id="fbde2-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="fbde2-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="5f2d2-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="5f2d2-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="fbde2-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="fbde2-110">Child elements</span></span>
 
-<span data-ttu-id="5f2d2-111">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="5f2d2-111">None.</span></span>
+<span data-ttu-id="fbde2-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="fbde2-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="5f2d2-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="5f2d2-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="fbde2-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="fbde2-112">Parent elements</span></span>
 
-<span data-ttu-id="5f2d2-113">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="5f2d2-113">None.</span></span>
+<span data-ttu-id="fbde2-113">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="fbde2-113">None.</span></span>
   
-## <a name="text-value"></a><span data-ttu-id="5f2d2-114">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="5f2d2-114">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="fbde2-114">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="fbde2-114">Text value</span></span>
 
-<span data-ttu-id="5f2d2-115">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="5f2d2-115">None.</span></span>
+<span data-ttu-id="fbde2-115">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="fbde2-115">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="5f2d2-116">Comentarios</span><span class="sxs-lookup"><span data-stu-id="5f2d2-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="fbde2-116">Comentarios</span><span class="sxs-lookup"><span data-stu-id="fbde2-116">Remarks</span></span>
 
-<span data-ttu-id="5f2d2-117">Nunca se usa el elemento global **AutodiscoverRequest** .</span><span class="sxs-lookup"><span data-stu-id="5f2d2-117">The **AutodiscoverRequest** global element is never used.</span></span> 
+<span data-ttu-id="fbde2-117">El elemento global **AutodiscoverRequest** no se usa nunca.</span><span class="sxs-lookup"><span data-stu-id="fbde2-117">The **AutodiscoverRequest** global element is never used.</span></span> 
   
-## <a name="element-information"></a><span data-ttu-id="5f2d2-118">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="5f2d2-118">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="fbde2-118">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="fbde2-118">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="5f2d2-119">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="5f2d2-119">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
-|<span data-ttu-id="5f2d2-120">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="5f2d2-120">Schema Name</span></span>  <br/> |<span data-ttu-id="5f2d2-121">Esquema de detección automática</span><span class="sxs-lookup"><span data-stu-id="5f2d2-121">Autodiscover schema</span></span>  <br/> |
-|<span data-ttu-id="5f2d2-122">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="5f2d2-122">Validation File</span></span>  <br/> |<span data-ttu-id="5f2d2-123">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="5f2d2-123">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="5f2d2-124">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="5f2d2-124">Can be Empty</span></span>  <br/> |<span data-ttu-id="5f2d2-125">True</span><span class="sxs-lookup"><span data-stu-id="5f2d2-125">True</span></span>  <br/> |
+|<span data-ttu-id="fbde2-119">Namespace</span><span class="sxs-lookup"><span data-stu-id="fbde2-119">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|<span data-ttu-id="fbde2-120">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="fbde2-120">Schema Name</span></span>  <br/> |<span data-ttu-id="fbde2-121">Esquema de detección automática</span><span class="sxs-lookup"><span data-stu-id="fbde2-121">Autodiscover schema</span></span>  <br/> |
+|<span data-ttu-id="fbde2-122">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="fbde2-122">Validation File</span></span>  <br/> |<span data-ttu-id="fbde2-123">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="fbde2-123">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="fbde2-124">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="fbde2-124">Can be Empty</span></span>  <br/> |<span data-ttu-id="fbde2-125">Verdadero</span><span class="sxs-lookup"><span data-stu-id="fbde2-125">True</span></span>  <br/> |
    
 

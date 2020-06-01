@@ -12,65 +12,65 @@ api_type:
 - schema
 ms.assetid: af0095da-e5bb-4138-a01c-c203f1a5a33f
 description: El elemento IsTeamTask indica si la tarea es propiedad de un equipo.
-ms.openlocfilehash: 25a60b44dbdca89d431dc202f06acb3055958a72
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 27b5efbac028dbe7cf5858b198e3a33f9f6cdc86
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836109"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44468449"
 ---
-# <a name="isteamtask"></a><span data-ttu-id="99afa-103">IsTeamTask</span><span class="sxs-lookup"><span data-stu-id="99afa-103">IsTeamTask</span></span>
+# <a name="isteamtask"></a><span data-ttu-id="af9e9-103">IsTeamTask</span><span class="sxs-lookup"><span data-stu-id="af9e9-103">IsTeamTask</span></span>
 
-<span data-ttu-id="99afa-104">El elemento **IsTeamTask** indica si la tarea es propiedad de un equipo.</span><span class="sxs-lookup"><span data-stu-id="99afa-104">The **IsTeamTask** element indicates whether the task is owned by a team.</span></span> 
+<span data-ttu-id="af9e9-104">El elemento **IsTeamTask** indica si la tarea es propiedad de un equipo.</span><span class="sxs-lookup"><span data-stu-id="af9e9-104">The **IsTeamTask** element indicates whether the task is owned by a team.</span></span> 
   
 ```xml
 <IsTeamTask/>
 ```
 
- <span data-ttu-id="99afa-105">**Boolean**</span><span class="sxs-lookup"><span data-stu-id="99afa-105">**Boolean**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="99afa-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="99afa-106">Attributes and elements</span></span>
+ <span data-ttu-id="af9e9-105">**Boolean**</span><span class="sxs-lookup"><span data-stu-id="af9e9-105">**Boolean**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="af9e9-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="af9e9-106">Attributes and elements</span></span>
 
-<span data-ttu-id="99afa-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="99afa-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="af9e9-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="af9e9-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="99afa-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="99afa-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="af9e9-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="af9e9-108">Attributes</span></span>
 
-<span data-ttu-id="99afa-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="99afa-109">None.</span></span>
+<span data-ttu-id="af9e9-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="af9e9-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="99afa-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="99afa-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="af9e9-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="af9e9-110">Child elements</span></span>
 
-<span data-ttu-id="99afa-111">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="99afa-111">None.</span></span>
+<span data-ttu-id="af9e9-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="af9e9-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="99afa-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="99afa-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="af9e9-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="af9e9-112">Parent elements</span></span>
 
-|<span data-ttu-id="99afa-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="99afa-113">**Element**</span></span>|<span data-ttu-id="99afa-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="99afa-114">**Description**</span></span>|
+|<span data-ttu-id="af9e9-113">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="af9e9-113">**Element**</span></span>|<span data-ttu-id="af9e9-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="af9e9-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="99afa-115">Tarea</span><span class="sxs-lookup"><span data-stu-id="99afa-115">Task</span></span>](task.md) <br/> |<span data-ttu-id="99afa-116">Representa una tarea en el almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="99afa-116">Represents a task in the Exchange store.</span></span>  <br/> |
+|[<span data-ttu-id="af9e9-115">Tarea</span><span class="sxs-lookup"><span data-stu-id="af9e9-115">Task</span></span>](task.md) <br/> |<span data-ttu-id="af9e9-116">Representa una tarea del almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="af9e9-116">Represents a task in the Exchange store.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="99afa-117">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="99afa-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="af9e9-117">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="af9e9-117">Text value</span></span>
 
-<span data-ttu-id="99afa-118">El valor de texto representa un valor booleano que indica si una tarea es propiedad de un equipo.</span><span class="sxs-lookup"><span data-stu-id="99afa-118">The text value represents a Boolean value that indicates whether a task is owned by a team.</span></span> <span data-ttu-id="99afa-119">Se trata de una propiedad de solo lectura.</span><span class="sxs-lookup"><span data-stu-id="99afa-119">This is a read-only property.</span></span>
+<span data-ttu-id="af9e9-118">El valor de texto representa un valor booleano que indica si una tarea es propiedad de un equipo.</span><span class="sxs-lookup"><span data-stu-id="af9e9-118">The text value represents a Boolean value that indicates whether a task is owned by a team.</span></span> <span data-ttu-id="af9e9-119">Se trata de una propiedad de solo lectura.</span><span class="sxs-lookup"><span data-stu-id="af9e9-119">This is a read-only property.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="99afa-120">Comentarios</span><span class="sxs-lookup"><span data-stu-id="99afa-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="af9e9-120">Comentarios</span><span class="sxs-lookup"><span data-stu-id="af9e9-120">Remarks</span></span>
 
-<span data-ttu-id="99afa-121">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="99afa-121">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="af9e9-121">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="af9e9-121">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="99afa-122">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="99afa-122">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="af9e9-122">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="af9e9-122">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="99afa-123">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="99afa-123">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="99afa-124">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="99afa-124">Schema Name</span></span>  <br/> |<span data-ttu-id="99afa-125">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="99afa-125">Types schema</span></span>  <br/> |
-|<span data-ttu-id="99afa-126">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="99afa-126">Validation File</span></span>  <br/> |<span data-ttu-id="99afa-127">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="99afa-127">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="99afa-128">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="99afa-128">Can be Empty</span></span>  <br/> |<span data-ttu-id="99afa-129">False</span><span class="sxs-lookup"><span data-stu-id="99afa-129">False</span></span>  <br/> |
+|<span data-ttu-id="af9e9-123">Namespace</span><span class="sxs-lookup"><span data-stu-id="af9e9-123">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="af9e9-124">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="af9e9-124">Schema Name</span></span>  <br/> |<span data-ttu-id="af9e9-125">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="af9e9-125">Types schema</span></span>  <br/> |
+|<span data-ttu-id="af9e9-126">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="af9e9-126">Validation File</span></span>  <br/> |<span data-ttu-id="af9e9-127">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="af9e9-127">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="af9e9-128">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="af9e9-128">Can be Empty</span></span>  <br/> |<span data-ttu-id="af9e9-129">Falso</span><span class="sxs-lookup"><span data-stu-id="af9e9-129">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="99afa-130">Vea también</span><span class="sxs-lookup"><span data-stu-id="99afa-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="af9e9-130">Vea también</span><span class="sxs-lookup"><span data-stu-id="af9e9-130">See also</span></span>
 
 
 
-- [<span data-ttu-id="99afa-131">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="99afa-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="af9e9-131">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="af9e9-131">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
 
-[<span data-ttu-id="99afa-132">Creación de tareas</span><span class="sxs-lookup"><span data-stu-id="99afa-132">Creating Tasks</span></span>](http://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
+[<span data-ttu-id="af9e9-132">Creación de tareas</span><span class="sxs-lookup"><span data-stu-id="af9e9-132">Creating Tasks</span></span>](https://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
   
-[<span data-ttu-id="99afa-133">Eliminación de tareas</span><span class="sxs-lookup"><span data-stu-id="99afa-133">Deleting Tasks</span></span>](http://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
+[<span data-ttu-id="af9e9-133">Eliminación de tareas</span><span class="sxs-lookup"><span data-stu-id="af9e9-133">Deleting Tasks</span></span>](https://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
 

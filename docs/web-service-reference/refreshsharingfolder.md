@@ -11,57 +11,57 @@ api_name:
 api_type:
 - schema
 ms.assetid: 14571c28-effa-430a-802e-82fb99bafa7f
-description: El elemento RefreshSharingFolder define una solicitud para actualizar la carpeta local especificada. Éste es el elemento base para la operación RefreshSharingFolder.
-ms.openlocfilehash: b09e311d0ba38b0cdcc9fe0864ed3e2b0151b0fd
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento RefreshSharingFolder define una solicitud para actualizar la carpeta local especificada. Es el elemento base para la operación RefreshSharingFolder.
+ms.openlocfilehash: 4454607fa2c3114cc7279fd7c30f8aee74707baa
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837043"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44467931"
 ---
-# <a name="refreshsharingfolder"></a><span data-ttu-id="ed08e-104">RefreshSharingFolder</span><span class="sxs-lookup"><span data-stu-id="ed08e-104">RefreshSharingFolder</span></span>
+# <a name="refreshsharingfolder"></a><span data-ttu-id="c089f-104">RefreshSharingFolder</span><span class="sxs-lookup"><span data-stu-id="c089f-104">RefreshSharingFolder</span></span>
 
-<span data-ttu-id="ed08e-105">El elemento **RefreshSharingFolder** define una solicitud para actualizar la carpeta local especificada.</span><span class="sxs-lookup"><span data-stu-id="ed08e-105">The **RefreshSharingFolder** element defines a request to refresh the specified local folder.</span></span> <span data-ttu-id="ed08e-106">Éste es el elemento base para la [operación de RefreshSharingFolder](refreshsharingfolder-operation.md).</span><span class="sxs-lookup"><span data-stu-id="ed08e-106">It is the base element for the [RefreshSharingFolder operation](refreshsharingfolder-operation.md).</span></span>
+<span data-ttu-id="c089f-105">El elemento **RefreshSharingFolder** define una solicitud para actualizar la carpeta local especificada.</span><span class="sxs-lookup"><span data-stu-id="c089f-105">The **RefreshSharingFolder** element defines a request to refresh the specified local folder.</span></span> <span data-ttu-id="c089f-106">Es el elemento base para la [operación RefreshSharingFolder](refreshsharingfolder-operation.md).</span><span class="sxs-lookup"><span data-stu-id="c089f-106">It is the base element for the [RefreshSharingFolder operation](refreshsharingfolder-operation.md).</span></span>
   
 ```xml
 <RefreshSharingFolder>   <SharingFolderId/></RefreshSharingFolder>
 ```
 
- <span data-ttu-id="ed08e-107">**RefreshSharingFolderType**</span><span class="sxs-lookup"><span data-stu-id="ed08e-107">**RefreshSharingFolderType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="ed08e-108">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="ed08e-108">Attributes and elements</span></span>
+ <span data-ttu-id="c089f-107">**RefreshSharingFolderType**</span><span class="sxs-lookup"><span data-stu-id="c089f-107">**RefreshSharingFolderType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="c089f-108">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="c089f-108">Attributes and elements</span></span>
 
-<span data-ttu-id="ed08e-109">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="ed08e-109">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="c089f-109">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="c089f-109">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="ed08e-110">Atributos</span><span class="sxs-lookup"><span data-stu-id="ed08e-110">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="c089f-110">Atributos</span><span class="sxs-lookup"><span data-stu-id="c089f-110">Attributes</span></span>
 
-<span data-ttu-id="ed08e-111">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="ed08e-111">None.</span></span>
+<span data-ttu-id="c089f-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="c089f-111">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="ed08e-112">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="ed08e-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="c089f-112">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="c089f-112">Child elements</span></span>
 
-|<span data-ttu-id="ed08e-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="ed08e-113">**Element**</span></span>|<span data-ttu-id="ed08e-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="ed08e-114">**Description**</span></span>|
+|<span data-ttu-id="c089f-113">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="c089f-113">**Element**</span></span>|<span data-ttu-id="c089f-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="c089f-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="ed08e-115">SharingFolderId</span><span class="sxs-lookup"><span data-stu-id="ed08e-115">SharingFolderId</span></span>](sharingfolderid.md) <br/> |<span data-ttu-id="ed08e-116">Representa el identificador de la carpeta local en una relación de uso compartida.</span><span class="sxs-lookup"><span data-stu-id="ed08e-116">Represents the identifier of the local folder in a sharing relationship.</span></span>  <br/> |
+|[<span data-ttu-id="c089f-115">SharingFolderId</span><span class="sxs-lookup"><span data-stu-id="c089f-115">SharingFolderId</span></span>](sharingfolderid.md) <br/> |<span data-ttu-id="c089f-116">Representa el identificador de la carpeta local en una relación de uso compartido.</span><span class="sxs-lookup"><span data-stu-id="c089f-116">Represents the identifier of the local folder in a sharing relationship.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="ed08e-117">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="ed08e-117">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="c089f-117">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="c089f-117">Parent elements</span></span>
 
-<span data-ttu-id="ed08e-118">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="ed08e-118">None.</span></span>
+<span data-ttu-id="c089f-118">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="c089f-118">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="ed08e-119">Comentarios</span><span class="sxs-lookup"><span data-stu-id="ed08e-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c089f-119">Comentarios</span><span class="sxs-lookup"><span data-stu-id="c089f-119">Remarks</span></span>
 
-<span data-ttu-id="ed08e-120">El esquema que describe este elemento se encuentra en el directorio Virtual de IIS que hospeda los servicios Web Exchange del equipo que ejecuta a Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="ed08e-120">The schema that describes this element is located in the IIS Virtual directory that hosts Exchange Web Services of the computer that is running Microsoft Exchange Server that has the Client Access server role installed.</span></span>
+<span data-ttu-id="c089f-120">El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda los servicios Web de Exchange del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="c089f-120">The schema that describes this element is located in the IIS Virtual directory that hosts Exchange Web Services of the computer that is running Microsoft Exchange Server that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="ed08e-121">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="ed08e-121">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="c089f-121">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="c089f-121">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="ed08e-122">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="ed08e-122">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="ed08e-123">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="ed08e-123">Schema Name</span></span>  <br/> |<span data-ttu-id="ed08e-124">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="ed08e-124">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="ed08e-125">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="ed08e-125">Validation File</span></span>  <br/> |<span data-ttu-id="ed08e-126">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="ed08e-126">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="ed08e-127">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="ed08e-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="ed08e-128">False</span><span class="sxs-lookup"><span data-stu-id="ed08e-128">False</span></span>  <br/> |
+|<span data-ttu-id="c089f-122">Namespace</span><span class="sxs-lookup"><span data-stu-id="c089f-122">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="c089f-123">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="c089f-123">Schema Name</span></span>  <br/> |<span data-ttu-id="c089f-124">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="c089f-124">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="c089f-125">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="c089f-125">Validation File</span></span>  <br/> |<span data-ttu-id="c089f-126">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="c089f-126">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="c089f-127">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="c089f-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="c089f-128">Falso</span><span class="sxs-lookup"><span data-stu-id="c089f-128">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="ed08e-129">Vea también</span><span class="sxs-lookup"><span data-stu-id="ed08e-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c089f-129">Vea también</span><span class="sxs-lookup"><span data-stu-id="c089f-129">See also</span></span>
 
 
 
-- [<span data-ttu-id="ed08e-130">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="ed08e-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="c089f-130">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="c089f-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
