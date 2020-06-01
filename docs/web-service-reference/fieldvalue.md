@@ -8,60 +8,60 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8dfda53f-658c-4bc9-8950-f7f572c850eb
 description: El elemento FieldValue representa el valor del campo que causó el error de validación.
-ms.openlocfilehash: 26517598d49865d2a925b436a0691fe548228955
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: fe407fd0aca2850e07bf1c734a64c5bee03d142c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764584"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461215"
 ---
-# <a name="fieldvalue"></a><span data-ttu-id="1ec2c-103">FieldValue</span><span class="sxs-lookup"><span data-stu-id="1ec2c-103">FieldValue</span></span>
+# <a name="fieldvalue"></a><span data-ttu-id="e8e16-103">FieldValue</span><span class="sxs-lookup"><span data-stu-id="e8e16-103">FieldValue</span></span>
 
-<span data-ttu-id="1ec2c-104">El elemento **FieldValue** representa el valor del campo que causó el error de validación.</span><span class="sxs-lookup"><span data-stu-id="1ec2c-104">The **FieldValue** element represents the value of the field that caused the validation error.</span></span> 
+<span data-ttu-id="e8e16-104">El elemento **FieldValue** representa el valor del campo que causó el error de validación.</span><span class="sxs-lookup"><span data-stu-id="e8e16-104">The **FieldValue** element represents the value of the field that caused the validation error.</span></span> 
   
 ```XML
 <FieldValue/>
 ```
 
- <span data-ttu-id="1ec2c-105">**String**</span><span class="sxs-lookup"><span data-stu-id="1ec2c-105">**String**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="1ec2c-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="1ec2c-106">Attributes and elements</span></span>
+ <span data-ttu-id="e8e16-105">**String**</span><span class="sxs-lookup"><span data-stu-id="e8e16-105">**String**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="e8e16-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="e8e16-106">Attributes and elements</span></span>
 
-<span data-ttu-id="1ec2c-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="1ec2c-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="e8e16-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="e8e16-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="1ec2c-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="1ec2c-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="e8e16-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="e8e16-108">Attributes</span></span>
 
-<span data-ttu-id="1ec2c-109">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="1ec2c-109">None.</span></span>
+<span data-ttu-id="e8e16-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="e8e16-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="1ec2c-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="1ec2c-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="e8e16-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="e8e16-110">Child elements</span></span>
 
-<span data-ttu-id="1ec2c-111">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="1ec2c-111">None.</span></span>
+<span data-ttu-id="e8e16-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="e8e16-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="1ec2c-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="1ec2c-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="e8e16-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="e8e16-112">Parent elements</span></span>
 
-|<span data-ttu-id="1ec2c-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="1ec2c-113">**Element**</span></span>|<span data-ttu-id="1ec2c-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="1ec2c-114">**Description**</span></span>|
+|<span data-ttu-id="e8e16-113">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="e8e16-113">**Element**</span></span>|<span data-ttu-id="e8e16-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="e8e16-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="1ec2c-115">Error</span><span class="sxs-lookup"><span data-stu-id="1ec2c-115">Error</span></span>](error.md) <br/> |<span data-ttu-id="1ec2c-116">Representa un error de validación único en un valor de la propiedad de regla concreto, valor de la propiedad predicado o valor de la propiedad acción.</span><span class="sxs-lookup"><span data-stu-id="1ec2c-116">Represents a single validation error on a particular rule property value, predicate property value, or action property value.</span></span>  <br/> |
+|[<span data-ttu-id="e8e16-115">Error</span><span class="sxs-lookup"><span data-stu-id="e8e16-115">Error</span></span>](error.md) <br/> |<span data-ttu-id="e8e16-116">Representa un error de validación único en un valor de propiedad de regla, un valor de propiedad de predicado o un valor de propiedad de acción específicos.</span><span class="sxs-lookup"><span data-stu-id="e8e16-116">Represents a single validation error on a particular rule property value, predicate property value, or action property value.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="1ec2c-117">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="1ec2c-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="e8e16-117">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="e8e16-117">Text value</span></span>
 
-<span data-ttu-id="1ec2c-118">Ninguno</span><span class="sxs-lookup"><span data-stu-id="1ec2c-118">None</span></span>
+<span data-ttu-id="e8e16-118">Ninguno</span><span class="sxs-lookup"><span data-stu-id="e8e16-118">None</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="1ec2c-119">Observaciones</span><span class="sxs-lookup"><span data-stu-id="1ec2c-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e8e16-119">Comentarios</span><span class="sxs-lookup"><span data-stu-id="e8e16-119">Remarks</span></span>
 
-<span data-ttu-id="1ec2c-120">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="1ec2c-120">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="e8e16-120">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="e8e16-120">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="1ec2c-121">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="1ec2c-121">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="e8e16-121">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="e8e16-121">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="1ec2c-122">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="1ec2c-122">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="1ec2c-123">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="1ec2c-123">Schema Name</span></span>  <br/> |<span data-ttu-id="1ec2c-124">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="1ec2c-124">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="1ec2c-125">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="1ec2c-125">Validation File</span></span>  <br/> |<span data-ttu-id="1ec2c-126">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="1ec2c-126">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="1ec2c-127">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="1ec2c-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="1ec2c-128">Verdadero</span><span class="sxs-lookup"><span data-stu-id="1ec2c-128">True</span></span>  <br/> |
+|<span data-ttu-id="e8e16-122">Namespace</span><span class="sxs-lookup"><span data-stu-id="e8e16-122">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="e8e16-123">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="e8e16-123">Schema Name</span></span>  <br/> |<span data-ttu-id="e8e16-124">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="e8e16-124">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="e8e16-125">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="e8e16-125">Validation File</span></span>  <br/> |<span data-ttu-id="e8e16-126">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="e8e16-126">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="e8e16-127">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="e8e16-127">Can be Empty</span></span>  <br/> |<span data-ttu-id="e8e16-128">Verdadero</span><span class="sxs-lookup"><span data-stu-id="e8e16-128">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="1ec2c-129">Vea también</span><span class="sxs-lookup"><span data-stu-id="1ec2c-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e8e16-129">Vea también</span><span class="sxs-lookup"><span data-stu-id="e8e16-129">See also</span></span>
 
 
 
-- [<span data-ttu-id="1ec2c-130">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="1ec2c-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="e8e16-130">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="e8e16-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

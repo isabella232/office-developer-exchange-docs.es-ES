@@ -12,57 +12,57 @@ api_type:
 - schema
 ms.assetid: 4bea1cb5-0a0f-4e14-9b09-f91af8cf9899
 description: El elemento AttachmentId identifica un solo dato adjunto.
-ms.openlocfilehash: b0355b4a387c65e97fe973a1667e6b0a517ebf7e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 1096487490f6066f70d2da861b3015f0fbf5a68f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763569"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44460858"
 ---
-# <a name="attachmentid-getattachment-and-deleteattachment"></a><span data-ttu-id="cb5b6-103">AttachmentId (GetAttachment y DeleteAttachment)</span><span class="sxs-lookup"><span data-stu-id="cb5b6-103">AttachmentId (GetAttachment and DeleteAttachment)</span></span>
+# <a name="attachmentid-getattachment-and-deleteattachment"></a><span data-ttu-id="6b145-103">AttachmentId (GetAttachment y DeleteAttachment)</span><span class="sxs-lookup"><span data-stu-id="6b145-103">AttachmentId (GetAttachment and DeleteAttachment)</span></span>
 
-<span data-ttu-id="cb5b6-104">El elemento **AttachmentId** identifica un solo dato adjunto.</span><span class="sxs-lookup"><span data-stu-id="cb5b6-104">The **AttachmentId** element identifies a single attachment.</span></span> 
+<span data-ttu-id="6b145-104">El elemento **AttachmentId** identifica un solo dato adjunto.</span><span class="sxs-lookup"><span data-stu-id="6b145-104">The **AttachmentId** element identifies a single attachment.</span></span> 
   
 ```xml
 <AttachmentId Id="" />
 ```
 
- <span data-ttu-id="cb5b6-105">**RequestAttachmentIdType**</span><span class="sxs-lookup"><span data-stu-id="cb5b6-105">**RequestAttachmentIdType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="cb5b6-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="cb5b6-106">Attributes and elements</span></span>
+ <span data-ttu-id="6b145-105">**RequestAttachmentIdType**</span><span class="sxs-lookup"><span data-stu-id="6b145-105">**RequestAttachmentIdType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="6b145-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="6b145-106">Attributes and elements</span></span>
 
-<span data-ttu-id="cb5b6-107">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="cb5b6-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="6b145-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="6b145-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="cb5b6-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="cb5b6-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="6b145-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="6b145-108">Attributes</span></span>
 
-|<span data-ttu-id="cb5b6-109">**Attribute**</span><span class="sxs-lookup"><span data-stu-id="cb5b6-109">**Attribute**</span></span>|<span data-ttu-id="cb5b6-110">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="cb5b6-110">**Description**</span></span>|
+|<span data-ttu-id="6b145-109">**Atributo**</span><span class="sxs-lookup"><span data-stu-id="6b145-109">**Attribute**</span></span>|<span data-ttu-id="6b145-110">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="6b145-110">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="cb5b6-111">**Id**</span><span class="sxs-lookup"><span data-stu-id="cb5b6-111">**Id**</span></span> <br/> |<span data-ttu-id="cb5b6-112">Especifica el identificador de datos adjuntos.</span><span class="sxs-lookup"><span data-stu-id="cb5b6-112">Specifies the attachment identifier.</span></span>  <br/> |
+|<span data-ttu-id="6b145-111">**Id**</span><span class="sxs-lookup"><span data-stu-id="6b145-111">**Id**</span></span> <br/> |<span data-ttu-id="6b145-112">Especifica el identificador de datos adjuntos.</span><span class="sxs-lookup"><span data-stu-id="6b145-112">Specifies the attachment identifier.</span></span>  <br/> |
    
-### <a name="child-elements"></a><span data-ttu-id="cb5b6-113">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="cb5b6-113">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="6b145-113">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="6b145-113">Child elements</span></span>
 
-<span data-ttu-id="cb5b6-114">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="cb5b6-114">None.</span></span>
+<span data-ttu-id="6b145-114">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="6b145-114">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="cb5b6-115">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="cb5b6-115">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="6b145-115">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="6b145-115">Parent elements</span></span>
 
-|<span data-ttu-id="cb5b6-116">**Element**</span><span class="sxs-lookup"><span data-stu-id="cb5b6-116">**Element**</span></span>|<span data-ttu-id="cb5b6-117">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="cb5b6-117">**Description**</span></span>|
+|<span data-ttu-id="6b145-116">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="6b145-116">**Element**</span></span>|<span data-ttu-id="6b145-117">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="6b145-117">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="cb5b6-118">AttachmentIds</span><span class="sxs-lookup"><span data-stu-id="cb5b6-118">AttachmentIds</span></span>](attachmentids.md) <br/> | <span data-ttu-id="cb5b6-119">Contiene una matriz de identificadores de los datos adjuntos.</span><span class="sxs-lookup"><span data-stu-id="cb5b6-119">Contains an array of attachment identifiers.</span></span><br/><br/>  <span data-ttu-id="cb5b6-120">Los siguientes son las expresiones de XPath para este elemento:</span><span class="sxs-lookup"><span data-stu-id="cb5b6-120">The following are the XPath expressions to this element:</span></span><br/><br/>`/DeleteAttachment/AttachmentIds`<br/><br/>`/GetAttachment/AttachmentIds` <br/> |
+|[<span data-ttu-id="6b145-118">Identificadores</span><span class="sxs-lookup"><span data-stu-id="6b145-118">AttachmentIds</span></span>](attachmentids.md) <br/> | <span data-ttu-id="6b145-119">Contiene una matriz de identificadores de datos adjuntos.</span><span class="sxs-lookup"><span data-stu-id="6b145-119">Contains an array of attachment identifiers.</span></span><br/><br/>  <span data-ttu-id="6b145-120">Las siguientes son las expresiones XPath de este elemento:</span><span class="sxs-lookup"><span data-stu-id="6b145-120">The following are the XPath expressions to this element:</span></span><br/><br/>`/DeleteAttachment/AttachmentIds`<br/><br/>`/GetAttachment/AttachmentIds` <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="cb5b6-121">Comentarios</span><span class="sxs-lookup"><span data-stu-id="cb5b6-121">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6b145-121">Comentarios</span><span class="sxs-lookup"><span data-stu-id="6b145-121">Remarks</span></span>
 
-<span data-ttu-id="cb5b6-122">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="cb5b6-122">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="6b145-122">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="6b145-122">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="cb5b6-123">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="cb5b6-123">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="6b145-123">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="6b145-123">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="cb5b6-124">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="cb5b6-124">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="cb5b6-125">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="cb5b6-125">Schema Name</span></span>  <br/> |<span data-ttu-id="cb5b6-126">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="cb5b6-126">Types schema</span></span>  <br/> |
-|<span data-ttu-id="cb5b6-127">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="cb5b6-127">Validation File</span></span>  <br/> |<span data-ttu-id="cb5b6-128">Types.xsd</span><span class="sxs-lookup"><span data-stu-id="cb5b6-128">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="cb5b6-129">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="cb5b6-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="cb5b6-130">False</span><span class="sxs-lookup"><span data-stu-id="cb5b6-130">False</span></span>  <br/> |
+|<span data-ttu-id="6b145-124">Namespace</span><span class="sxs-lookup"><span data-stu-id="6b145-124">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="6b145-125">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="6b145-125">Schema Name</span></span>  <br/> |<span data-ttu-id="6b145-126">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="6b145-126">Types schema</span></span>  <br/> |
+|<span data-ttu-id="6b145-127">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="6b145-127">Validation File</span></span>  <br/> |<span data-ttu-id="6b145-128">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="6b145-128">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="6b145-129">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="6b145-129">Can be Empty</span></span>  <br/> |<span data-ttu-id="6b145-130">Falso</span><span class="sxs-lookup"><span data-stu-id="6b145-130">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="cb5b6-131">Vea también</span><span class="sxs-lookup"><span data-stu-id="cb5b6-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6b145-131">Vea también</span><span class="sxs-lookup"><span data-stu-id="6b145-131">See also</span></span>
 
-- [<span data-ttu-id="cb5b6-132">Operación DeleteAttachment</span><span class="sxs-lookup"><span data-stu-id="cb5b6-132">DeleteAttachment operation</span></span>](deleteattachment-operation.md)
-- [<span data-ttu-id="cb5b6-133">Operación GetAttachment</span><span class="sxs-lookup"><span data-stu-id="cb5b6-133">GetAttachment operation</span></span>](getattachment-operation.md)
+- [<span data-ttu-id="6b145-132">Operación DeleteAttachment</span><span class="sxs-lookup"><span data-stu-id="6b145-132">DeleteAttachment operation</span></span>](deleteattachment-operation.md)
+- [<span data-ttu-id="6b145-133">Operación GetAttachment</span><span class="sxs-lookup"><span data-stu-id="6b145-133">GetAttachment operation</span></span>](getattachment-operation.md)
 

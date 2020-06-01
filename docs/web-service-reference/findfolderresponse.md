@@ -11,19 +11,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: f5dd813c-9698-4a39-8fca-3a825df365ed
-description: El elemento FindFolderResponse define una respuesta a una solicitud de FindFolder.
-ms.openlocfilehash: 3bf0509acd5a3928eb29015c39c18bb779c1dfce
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento FindFolderResponse define una respuesta a una solicitud FindFolder.
+ms.openlocfilehash: 365e4e81b04419ed42f0bd9c8e022b6f8e559a2a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764614"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44462573"
 ---
-# <a name="findfolderresponse"></a><span data-ttu-id="e1230-103">FindFolderResponse</span><span class="sxs-lookup"><span data-stu-id="e1230-103">FindFolderResponse</span></span>
+# <a name="findfolderresponse"></a><span data-ttu-id="a900e-103">FindFolderResponse</span><span class="sxs-lookup"><span data-stu-id="a900e-103">FindFolderResponse</span></span>
 
-<span data-ttu-id="e1230-104">El elemento **FindFolderResponse** define una respuesta a una solicitud de FindFolder.</span><span class="sxs-lookup"><span data-stu-id="e1230-104">The **FindFolderResponse** element defines a response to a FindFolder request.</span></span> 
+<span data-ttu-id="a900e-104">El elemento **FindFolderResponse** define una respuesta a una solicitud FindFolder.</span><span class="sxs-lookup"><span data-stu-id="a900e-104">The **FindFolderResponse** element defines a response to a FindFolder request.</span></span> 
   
-[<span data-ttu-id="e1230-105">FindFolderResponse</span><span class="sxs-lookup"><span data-stu-id="e1230-105">FindFolderResponse</span></span>](findfolderresponse.md)
+[<span data-ttu-id="a900e-105">FindFolderResponse</span><span class="sxs-lookup"><span data-stu-id="a900e-105">FindFolderResponse</span></span>](findfolderresponse.md)
   
 ```xml
 <FindFolderResponse>
@@ -31,44 +31,44 @@ ms.locfileid: "19764614"
 </FindFolderResponse>
 ```
 
- <span data-ttu-id="e1230-106">**FindFolderResponseType**</span><span class="sxs-lookup"><span data-stu-id="e1230-106">**FindFolderResponseType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="e1230-107">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="e1230-107">Attributes and elements</span></span>
+ <span data-ttu-id="a900e-106">**FindFolderResponseType**</span><span class="sxs-lookup"><span data-stu-id="a900e-106">**FindFolderResponseType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="a900e-107">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="a900e-107">Attributes and elements</span></span>
 
-<span data-ttu-id="e1230-108">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="e1230-108">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="a900e-108">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="a900e-108">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="e1230-109">Atributos</span><span class="sxs-lookup"><span data-stu-id="e1230-109">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="a900e-109">Atributos</span><span class="sxs-lookup"><span data-stu-id="a900e-109">Attributes</span></span>
 
-<span data-ttu-id="e1230-110">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="e1230-110">None.</span></span>
+<span data-ttu-id="a900e-110">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="a900e-110">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="e1230-111">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="e1230-111">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="a900e-111">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="a900e-111">Child elements</span></span>
 
-|<span data-ttu-id="e1230-112">**Element**</span><span class="sxs-lookup"><span data-stu-id="e1230-112">**Element**</span></span>|<span data-ttu-id="e1230-113">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="e1230-113">**Description**</span></span>|
+|<span data-ttu-id="a900e-112">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="a900e-112">**Element**</span></span>|<span data-ttu-id="a900e-113">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="a900e-113">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="e1230-114">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="e1230-114">ResponseMessages</span></span>](responsemessages.md) <br/> |<span data-ttu-id="e1230-115">Contiene los mensajes de respuesta para una solicitud de servicios Web de Exchange.</span><span class="sxs-lookup"><span data-stu-id="e1230-115">Contains the response messages for an Exchange Web Services request.</span></span>  <br/> |
+|[<span data-ttu-id="a900e-114">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="a900e-114">ResponseMessages</span></span>](responsemessages.md) <br/> |<span data-ttu-id="a900e-115">Contiene los mensajes de respuesta de una solicitud de servicios web Exchange.</span><span class="sxs-lookup"><span data-stu-id="a900e-115">Contains the response messages for an Exchange Web Services request.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="e1230-116">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="e1230-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="a900e-116">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="a900e-116">Parent elements</span></span>
 
-<span data-ttu-id="e1230-117">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="e1230-117">None.</span></span>
+<span data-ttu-id="a900e-117">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="a900e-117">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="e1230-118">Comentarios</span><span class="sxs-lookup"><span data-stu-id="e1230-118">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a900e-118">Comentarios</span><span class="sxs-lookup"><span data-stu-id="a900e-118">Remarks</span></span>
 
-<span data-ttu-id="e1230-119">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="e1230-119">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="a900e-119">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="a900e-119">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="e1230-120">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="e1230-120">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="a900e-120">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="a900e-120">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="e1230-121">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="e1230-121">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="e1230-122">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="e1230-122">Schema name</span></span>  <br/> |<span data-ttu-id="e1230-123">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="e1230-123">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="e1230-124">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="e1230-124">Validation file</span></span>  <br/> |<span data-ttu-id="e1230-125">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="e1230-125">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="e1230-126">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="e1230-126">Can be empty</span></span>  <br/> |<span data-ttu-id="e1230-127">False</span><span class="sxs-lookup"><span data-stu-id="e1230-127">False</span></span>  <br/> |
+|<span data-ttu-id="a900e-121">Namespace</span><span class="sxs-lookup"><span data-stu-id="a900e-121">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="a900e-122">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="a900e-122">Schema name</span></span>  <br/> |<span data-ttu-id="a900e-123">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="a900e-123">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="a900e-124">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="a900e-124">Validation file</span></span>  <br/> |<span data-ttu-id="a900e-125">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="a900e-125">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="a900e-126">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="a900e-126">Can be empty</span></span>  <br/> |<span data-ttu-id="a900e-127">Falso</span><span class="sxs-lookup"><span data-stu-id="a900e-127">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="e1230-128">Vea también</span><span class="sxs-lookup"><span data-stu-id="e1230-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a900e-128">Vea también</span><span class="sxs-lookup"><span data-stu-id="a900e-128">See also</span></span>
 
 
 
-[<span data-ttu-id="e1230-129">Operación FindFolder</span><span class="sxs-lookup"><span data-stu-id="e1230-129">FindFolder operation</span></span>](findfolder-operation.md)
+[<span data-ttu-id="a900e-129">Operación FindFolder</span><span class="sxs-lookup"><span data-stu-id="a900e-129">FindFolder operation</span></span>](findfolder-operation.md)
 
 
-[<span data-ttu-id="e1230-130">Buscar carpetas</span><span class="sxs-lookup"><span data-stu-id="e1230-130">Finding Folders</span></span>](http://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
+[<span data-ttu-id="a900e-130">Buscar carpetas</span><span class="sxs-lookup"><span data-stu-id="a900e-130">Finding Folders</span></span>](https://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
 

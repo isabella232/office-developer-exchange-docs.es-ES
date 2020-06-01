@@ -7,51 +7,51 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8a54a6dc-110c-4972-a8bc-5ddb43c4b857
-description: Busque información sobre la EWS GetDiscoverySearchConfiguration operación.
-ms.openlocfilehash: a50463e575bf5a4ffdafc357d91563b0ca0486f4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Buscar información sobre la operación de EWS de GetDiscoverySearchConfiguration.
+ms.openlocfilehash: 4db435988a9954b921e7851986b6f92ffedbad94
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764805"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44461026"
 ---
-# <a name="getdiscoverysearchconfiguration-operation"></a><span data-ttu-id="705c4-103">Operación GetDiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="705c4-103">GetDiscoverySearchConfiguration operation</span></span>
+# <a name="getdiscoverysearchconfiguration-operation"></a><span data-ttu-id="a3b9a-103">Operación GetDiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="a3b9a-103">GetDiscoverySearchConfiguration operation</span></span>
 
-<span data-ttu-id="705c4-104">Obtenga información acerca de la operación de EWS **GetDiscoverySearchConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="705c4-104">Find information about the **GetDiscoverySearchConfiguration** EWS operation.</span></span> 
+<span data-ttu-id="a3b9a-104">Buscar información sobre la operación de EWS de **GetDiscoverySearchConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="a3b9a-104">Find information about the **GetDiscoverySearchConfiguration** EWS operation.</span></span> 
   
-<span data-ttu-id="705c4-105">La operación **GetDiscoverySearchConfiguration** devuelve contiene información de configuración de en contexto, guarda las búsquedas de detección y los buzones de correo que están habilitados para la búsqueda de detección.</span><span class="sxs-lookup"><span data-stu-id="705c4-105">The **GetDiscoverySearchConfiguration** operation returns configuration information for in-place holds, saved discovery searches, and the mailboxes that are enabled for discovery search.</span></span> 
+<span data-ttu-id="a3b9a-105">La operación **GetDiscoverySearchConfiguration** devuelve información de configuración para las suspensiones locales, las búsquedas de detección guardadas y los buzones que están habilitados para la búsqueda de detección.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-105">The **GetDiscoverySearchConfiguration** operation returns configuration information for in-place holds, saved discovery searches, and the mailboxes that are enabled for discovery search.</span></span> 
   
-<span data-ttu-id="705c4-106">Esta operación se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="705c4-106">This operation was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="a3b9a-106">Esta operación se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-106">This operation was introduced in Exchange Server 2013.</span></span>
   
-## <a name="using-the-getdiscoverysearchconfiguration-operation"></a><span data-ttu-id="705c4-107">Mediante la operación GetDiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="705c4-107">Using the GetDiscoverySearchConfiguration operation</span></span>
+## <a name="using-the-getdiscoverysearchconfiguration-operation"></a><span data-ttu-id="a3b9a-107">Uso de la operación GetDiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="a3b9a-107">Using the GetDiscoverySearchConfiguration operation</span></span>
 
-<span data-ttu-id="705c4-108">La operación **GetDiscoverySearchConfiguration** proporciona información de configuración de búsqueda de detección.</span><span class="sxs-lookup"><span data-stu-id="705c4-108">The **GetDiscoverySearchConfiguration** operation provides configuration information for discovery search.</span></span> <span data-ttu-id="705c4-109">Las solicitudes de pueden contener uno o varios de los argumentos siguientes:</span><span class="sxs-lookup"><span data-stu-id="705c4-109">Requests can contain one or more of the following arguments:</span></span> 
+<span data-ttu-id="a3b9a-108">La operación **GetDiscoverySearchConfiguration** proporciona información de configuración para la búsqueda de detección.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-108">The **GetDiscoverySearchConfiguration** operation provides configuration information for discovery search.</span></span> <span data-ttu-id="a3b9a-109">Las solicitudes pueden contener uno o varios de los siguientes argumentos:</span><span class="sxs-lookup"><span data-stu-id="a3b9a-109">Requests can contain one or more of the following arguments:</span></span> 
   
-1. <span data-ttu-id="705c4-110">[El identificador de búsqueda](searchid.md) : identifica una búsqueda de descubrimiento guardados.</span><span class="sxs-lookup"><span data-stu-id="705c4-110">[SearchId](searchid.md) — Identifies a saved discovery search.</span></span> <span data-ttu-id="705c4-111">Si este argumento se envía en la solicitud, se omiten los valores de los demás argumentos.</span><span class="sxs-lookup"><span data-stu-id="705c4-111">If this argument is sent in the request, the values of the other arguments are ignored.</span></span> 
+1. <span data-ttu-id="a3b9a-110">[SearchId](searchid.md) : identifica una búsqueda de detección guardada.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-110">[SearchId](searchid.md) — Identifies a saved discovery search.</span></span> <span data-ttu-id="a3b9a-111">Si se envía este argumento en la solicitud, se omiten los valores de los demás argumentos.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-111">If this argument is sent in the request, the values of the other arguments are ignored.</span></span> 
     
-2. <span data-ttu-id="705c4-112">[ExpandGroupMembership](expandgroupmembership.md) : indica si se expande la pertenencia a grupos en la respuesta.</span><span class="sxs-lookup"><span data-stu-id="705c4-112">[ExpandGroupMembership](expandgroupmembership.md) — Indicates whether group membership is expanded in the response.</span></span> <span data-ttu-id="705c4-113">Un valor de **true** indica que se expande la pertenencia a grupos para que se devuelvan todos los buzones que se puede buscar en la respuesta.</span><span class="sxs-lookup"><span data-stu-id="705c4-113">A value of **true** indicates that group membership is expanded so that all searchable mailboxes are returned in the response.</span></span> <span data-ttu-id="705c4-114">Un valor de **false** indica que se devuelve sólo el grupo en la respuesta.</span><span class="sxs-lookup"><span data-stu-id="705c4-114">A value of **false** indicates that only the group is returned in the response.</span></span> 
+2. <span data-ttu-id="a3b9a-112">[ExpandGroupMembership](expandgroupmembership.md) : indica si la pertenencia al grupo se expande en la respuesta.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-112">[ExpandGroupMembership](expandgroupmembership.md) — Indicates whether group membership is expanded in the response.</span></span> <span data-ttu-id="a3b9a-113">Un valor de **true** indica que la pertenencia a grupos se expande para que todos los buzones de correo que se pueden buscar se devuelvan en la respuesta.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-113">A value of **true** indicates that group membership is expanded so that all searchable mailboxes are returned in the response.</span></span> <span data-ttu-id="a3b9a-114">Un valor de **false** indica que solo se devuelve el grupo en la respuesta.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-114">A value of **false** indicates that only the group is returned in the response.</span></span> 
     
-3. <span data-ttu-id="705c4-115">[InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md) : indica si se devuelven todos los buzones que admite búsquedos además de la configuración de suspensión en contexto.</span><span class="sxs-lookup"><span data-stu-id="705c4-115">[InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md) — Indicates whether all searchable mailboxes are returned in addition to the in-place hold configuration.</span></span> <span data-ttu-id="705c4-116">Un valor de **true** indica que se devuelven sólo las configuraciones de suspensión en contexto.</span><span class="sxs-lookup"><span data-stu-id="705c4-116">A value of **true** indicates that only the in-place hold configurations are returned.</span></span> <span data-ttu-id="705c4-117">Un valor de **false** indica que se devuelven todos los identificadores de buzón de correo que admite búsquedas además de los identificadores de suspensión en contexto.</span><span class="sxs-lookup"><span data-stu-id="705c4-117">A value of **false** indicates that all searchable mailbox identifiers are returned in addition to the in-place hold identifiers.</span></span> <span data-ttu-id="705c4-118">Si este elemento no está presente, el comportamiento predeterminado es el equivalente del valor **false**.</span><span class="sxs-lookup"><span data-stu-id="705c4-118">If this element is not present, the default behavior is the equivalent of the value **false**.</span></span> 
+3. <span data-ttu-id="a3b9a-115">[InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md) : indica si todos los buzones de correo que se pueden buscar se devuelven además de la configuración de conservación local.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-115">[InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md) — Indicates whether all searchable mailboxes are returned in addition to the in-place hold configuration.</span></span> <span data-ttu-id="a3b9a-116">Un valor de **true** indica que solo se devuelven las configuraciones de conservación local.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-116">A value of **true** indicates that only the in-place hold configurations are returned.</span></span> <span data-ttu-id="a3b9a-117">Un valor de **false** indica que se devuelven todos los identificadores de buzones de correo que se pueden buscar, además de los identificadores de retención local.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-117">A value of **false** indicates that all searchable mailbox identifiers are returned in addition to the in-place hold identifiers.</span></span> <span data-ttu-id="a3b9a-118">Si este elemento no está presente, el comportamiento predeterminado es el equivalente del valor **false**.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-118">If this element is not present, the default behavior is the equivalent of the value **false**.</span></span> 
     
-### <a name="getdiscoverysearchconfiguration-operation-soap-headers"></a><span data-ttu-id="705c4-119">Encabezados SOAP de operación de GetDiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="705c4-119">GetDiscoverySearchConfiguration operation SOAP headers</span></span>
+### <a name="getdiscoverysearchconfiguration-operation-soap-headers"></a><span data-ttu-id="a3b9a-119">Encabezados SOAP de operación GetDiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="a3b9a-119">GetDiscoverySearchConfiguration operation SOAP headers</span></span>
 
-<span data-ttu-id="705c4-120">La operación de **GetDiscoverySearchConfiguration** puede utilizar los encabezados SOAP que se enumeran en la siguiente tabla.</span><span class="sxs-lookup"><span data-stu-id="705c4-120">The **GetDiscoverySearchConfiguration** operation can use the SOAP headers that are listed in the following table.</span></span> 
+<span data-ttu-id="a3b9a-120">La operación **GetDiscoverySearchConfiguration** puede usar los encabezados SOAP que se enumeran en la tabla siguiente.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-120">The **GetDiscoverySearchConfiguration** operation can use the SOAP headers that are listed in the following table.</span></span> 
   
-|<span data-ttu-id="705c4-121">**Nombre de encabezado**</span><span class="sxs-lookup"><span data-stu-id="705c4-121">**Header name**</span></span>|<span data-ttu-id="705c4-122">**Element**</span><span class="sxs-lookup"><span data-stu-id="705c4-122">**Element**</span></span>|<span data-ttu-id="705c4-123">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="705c4-123">**Description**</span></span>|
+|<span data-ttu-id="a3b9a-121">**Nombre de encabezado**</span><span class="sxs-lookup"><span data-stu-id="a3b9a-121">**Header name**</span></span>|<span data-ttu-id="a3b9a-122">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="a3b9a-122">**Element**</span></span>|<span data-ttu-id="a3b9a-123">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="a3b9a-123">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="705c4-124">**ManagementRole**</span><span class="sxs-lookup"><span data-stu-id="705c4-124">**ManagementRole**</span></span> <br/> |[<span data-ttu-id="705c4-125">ManagementRole</span><span class="sxs-lookup"><span data-stu-id="705c4-125">ManagementRole</span></span>](managementrole.md) <br/> |<span data-ttu-id="705c4-126">Identifica las funciones de servidor que son necesarias en orden para el autor de la llamada realizar la solicitud.</span><span class="sxs-lookup"><span data-stu-id="705c4-126">Identifies the server roles that are necessary in order for the caller to make the request.</span></span> <span data-ttu-id="705c4-127">Este encabezado es aplicable a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="705c4-127">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="705c4-128">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="705c4-128">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="705c4-129">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="705c4-129">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="705c4-130">Identifica la versión del esquema para la solicitud de la operación.</span><span class="sxs-lookup"><span data-stu-id="705c4-130">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="705c4-131">Este encabezado es aplicable a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="705c4-131">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="705c4-132">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="705c4-132">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="705c4-133">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="705c4-133">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="705c4-134">Identifica la versión del servidor que ha respondido a la solicitud.</span><span class="sxs-lookup"><span data-stu-id="705c4-134">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="705c4-135">Este encabezado es aplicable a una respuesta.</span><span class="sxs-lookup"><span data-stu-id="705c4-135">This header is applicable to a response.</span></span>  <br/> |
+|<span data-ttu-id="a3b9a-124">**ManagementRole**</span><span class="sxs-lookup"><span data-stu-id="a3b9a-124">**ManagementRole**</span></span> <br/> |[<span data-ttu-id="a3b9a-125">ManagementRole</span><span class="sxs-lookup"><span data-stu-id="a3b9a-125">ManagementRole</span></span>](managementrole.md) <br/> |<span data-ttu-id="a3b9a-126">Identifica los roles de servidor que son necesarios para que el autor de la llamada realice la solicitud.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-126">Identifies the server roles that are necessary in order for the caller to make the request.</span></span> <span data-ttu-id="a3b9a-127">Este encabezado se aplica a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-127">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="a3b9a-128">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="a3b9a-128">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="a3b9a-129">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="a3b9a-129">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="a3b9a-130">Identifica la versión del esquema para la solicitud de operación.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-130">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="a3b9a-131">Este encabezado se aplica a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-131">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="a3b9a-132">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="a3b9a-132">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="a3b9a-133">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="a3b9a-133">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="a3b9a-134">Identifica la versión del servidor que respondió a la solicitud.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-134">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="a3b9a-135">Este encabezado se aplica a una respuesta.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-135">This header is applicable to a response.</span></span>  <br/> |
    
-## <a name="getdiscoverysearchconfiguration-operation-request-example-get-the-discovery-search-configuration-for-a-saved-search"></a><span data-ttu-id="705c4-136">Ejemplo de solicitud de operación de GetDiscoverySearchConfiguration: obtener la configuración de búsqueda de detección para una búsqueda guardada</span><span class="sxs-lookup"><span data-stu-id="705c4-136">GetDiscoverySearchConfiguration operation request example: Get the discovery search configuration for a saved search</span></span>
+## <a name="getdiscoverysearchconfiguration-operation-request-example-get-the-discovery-search-configuration-for-a-saved-search"></a><span data-ttu-id="a3b9a-136">Ejemplo de solicitud de operación GetDiscoverySearchConfiguration: obtener la configuración de búsqueda de detección para una búsqueda guardada</span><span class="sxs-lookup"><span data-stu-id="a3b9a-136">GetDiscoverySearchConfiguration operation request example: Get the discovery search configuration for a saved search</span></span>
 
-<span data-ttu-id="705c4-137">El siguiente ejemplo de una solicitud de operación **GetDiscoverySearchConfiguration** muestra cómo solicitar la configuración de una búsqueda guardada que se denomina "MyDiscSearchFor-sbrown".</span><span class="sxs-lookup"><span data-stu-id="705c4-137">The following example of a **GetDiscoverySearchConfiguration** operation request shows how to request the configuration of a saved search called "MyDiscSearchFor-sbrown".</span></span> <span data-ttu-id="705c4-138">Se omiten los argumentos para los elementos de [InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md) y [ExpandGroupMembership](expandgroupmembership.md) .</span><span class="sxs-lookup"><span data-stu-id="705c4-138">The arguments for the [ExpandGroupMembership](expandgroupmembership.md) and [InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md) elements are ignored.</span></span> 
+<span data-ttu-id="a3b9a-137">El siguiente ejemplo de una solicitud de operación de **GetDiscoverySearchConfiguration** muestra cómo solicitar la configuración de una búsqueda guardada denominada "MyDiscSearchFor-sbrown".</span><span class="sxs-lookup"><span data-stu-id="a3b9a-137">The following example of a **GetDiscoverySearchConfiguration** operation request shows how to request the configuration of a saved search called "MyDiscSearchFor-sbrown".</span></span> <span data-ttu-id="a3b9a-138">Se omiten los argumentos de los elementos [ExpandGroupMembership](expandgroupmembership.md) y [InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md) .</span><span class="sxs-lookup"><span data-stu-id="a3b9a-138">The arguments for the [ExpandGroupMembership](expandgroupmembership.md) and [InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md) elements are ignored.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
    </soap:Header>
@@ -66,31 +66,31 @@ ms.locfileid: "19764805"
 
 ```
 
-<span data-ttu-id="705c4-139">La solicitud SOAP body contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="705c4-139">The request SOAP body contains the following elements:</span></span>
+<span data-ttu-id="a3b9a-139">El cuerpo SOAP de la solicitud contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="a3b9a-139">The request SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="705c4-140">GetDiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="705c4-140">GetDiscoverySearchConfiguration</span></span>](getdiscoverysearchconfiguration.md)
+- [<span data-ttu-id="a3b9a-140">GetDiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="a3b9a-140">GetDiscoverySearchConfiguration</span></span>](getdiscoverysearchconfiguration.md)
     
-- [<span data-ttu-id="705c4-141">Identificador de búsqueda</span><span class="sxs-lookup"><span data-stu-id="705c4-141">SearchId</span></span>](searchid.md)
+- [<span data-ttu-id="a3b9a-141">SearchId</span><span class="sxs-lookup"><span data-stu-id="a3b9a-141">SearchId</span></span>](searchid.md)
     
-- [<span data-ttu-id="705c4-142">ExpandGroupMembership</span><span class="sxs-lookup"><span data-stu-id="705c4-142">ExpandGroupMembership</span></span>](expandgroupmembership.md)
+- [<span data-ttu-id="a3b9a-142">ExpandGroupMembership</span><span class="sxs-lookup"><span data-stu-id="a3b9a-142">ExpandGroupMembership</span></span>](expandgroupmembership.md)
     
-- [<span data-ttu-id="705c4-143">InPlaceHoldConfigurationOnly</span><span class="sxs-lookup"><span data-stu-id="705c4-143">InPlaceHoldConfigurationOnly</span></span>](inplaceholdconfigurationonly.md)
+- [<span data-ttu-id="a3b9a-143">InPlaceHoldConfigurationOnly</span><span class="sxs-lookup"><span data-stu-id="a3b9a-143">InPlaceHoldConfigurationOnly</span></span>](inplaceholdconfigurationonly.md)
     
-## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-a-single-saved-search"></a><span data-ttu-id="705c4-144">La respuesta es correcta de operación GetDiscoverySearchConfiguration: solicitud para una sola búsqueda guardada</span><span class="sxs-lookup"><span data-stu-id="705c4-144">Successful GetDiscoverySearchConfiguration operation response: Request for a single saved search</span></span>
+## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-a-single-saved-search"></a><span data-ttu-id="a3b9a-144">Respuesta de operación GetDiscoverySearchConfiguration correcta: solicitud de una búsqueda guardada única</span><span class="sxs-lookup"><span data-stu-id="a3b9a-144">Successful GetDiscoverySearchConfiguration operation response: Request for a single saved search</span></span>
 
-<span data-ttu-id="705c4-145">En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación de **GetDiscoverySearchConfiguration** para obtener la configuración de una búsqueda guardada que se denomina "MyDiscSearchFor-sbrown".</span><span class="sxs-lookup"><span data-stu-id="705c4-145">The following example shows a successful response to a **GetDiscoverySearchConfiguration** operation request to get the configuration of a saved search called "MyDiscSearchFor-sbrown".</span></span> 
+<span data-ttu-id="a3b9a-145">En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación **GetDiscoverySearchConfiguration** para obtener la configuración de una búsqueda guardada denominada "MyDiscSearchFor-sbrown".</span><span class="sxs-lookup"><span data-stu-id="a3b9a-145">The following example shows a successful response to a **GetDiscoverySearchConfiguration** operation request to get the configuration of a saved search called "MyDiscSearchFor-sbrown".</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
-    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="526" MinorBuildNumber="0" Version="Exchange2013" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="526" MinorBuildNumber="0" Version="Exchange2013" xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" xmlns="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <GetDiscoverySearchConfigurationResponse ResponseClass="Success" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <GetDiscoverySearchConfigurationResponse ResponseClass="Success" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <DiscoverySearchConfigurations>
-        <DiscoverySearchConfiguration xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+        <DiscoverySearchConfiguration xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
           <SearchId>MyDiscSearchFor-sbrown</SearchId>
           <SearchQuery>test item</SearchQuery>
           <SearchableMailboxes>
@@ -111,41 +111,41 @@ ms.locfileid: "19764805"
 </s:Envelope>
 ```
 
-<span data-ttu-id="705c4-146">La respuesta SOAP body contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="705c4-146">The response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="a3b9a-146">El cuerpo SOAP de respuesta contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="a3b9a-146">The response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="705c4-147">GetDiscoverySearchConfigurationResponse</span><span class="sxs-lookup"><span data-stu-id="705c4-147">GetDiscoverySearchConfigurationResponse</span></span>](getdiscoverysearchconfigurationresponse.md)
+- [<span data-ttu-id="a3b9a-147">GetDiscoverySearchConfigurationResponse</span><span class="sxs-lookup"><span data-stu-id="a3b9a-147">GetDiscoverySearchConfigurationResponse</span></span>](getdiscoverysearchconfigurationresponse.md)
     
-- [<span data-ttu-id="705c4-148">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="705c4-148">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="a3b9a-148">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="a3b9a-148">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="705c4-149">DiscoverySearchConfigurations</span><span class="sxs-lookup"><span data-stu-id="705c4-149">DiscoverySearchConfigurations</span></span>](discoverysearchconfigurations.md)
+- [<span data-ttu-id="a3b9a-149">DiscoverySearchConfigurations</span><span class="sxs-lookup"><span data-stu-id="a3b9a-149">DiscoverySearchConfigurations</span></span>](discoverysearchconfigurations.md)
     
-- [<span data-ttu-id="705c4-150">DiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="705c4-150">DiscoverySearchConfiguration</span></span>](discoverysearchconfiguration.md)
+- [<span data-ttu-id="a3b9a-150">DiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="a3b9a-150">DiscoverySearchConfiguration</span></span>](discoverysearchconfiguration.md)
     
-- [<span data-ttu-id="705c4-151">Identificador de búsqueda</span><span class="sxs-lookup"><span data-stu-id="705c4-151">SearchId</span></span>](searchid.md)
+- [<span data-ttu-id="a3b9a-151">SearchId</span><span class="sxs-lookup"><span data-stu-id="a3b9a-151">SearchId</span></span>](searchid.md)
     
-- [<span data-ttu-id="705c4-152">SearchQuery</span><span class="sxs-lookup"><span data-stu-id="705c4-152">SearchQuery</span></span>](searchquery.md)
+- [<span data-ttu-id="a3b9a-152">SearchQuery</span><span class="sxs-lookup"><span data-stu-id="a3b9a-152">SearchQuery</span></span>](searchquery.md)
     
-- [<span data-ttu-id="705c4-153">SearchableMailboxes</span><span class="sxs-lookup"><span data-stu-id="705c4-153">SearchableMailboxes</span></span>](searchablemailboxes.md)
+- [<span data-ttu-id="a3b9a-153">SearchableMailboxes</span><span class="sxs-lookup"><span data-stu-id="a3b9a-153">SearchableMailboxes</span></span>](searchablemailboxes.md)
     
-- [<span data-ttu-id="705c4-154">SearchableMailbox</span><span class="sxs-lookup"><span data-stu-id="705c4-154">SearchableMailbox</span></span>](searchablemailbox.md)
+- [<span data-ttu-id="a3b9a-154">SearchableMailbox</span><span class="sxs-lookup"><span data-stu-id="a3b9a-154">SearchableMailbox</span></span>](searchablemailbox.md)
     
-- [<span data-ttu-id="705c4-155">GUID</span><span class="sxs-lookup"><span data-stu-id="705c4-155">Guid</span></span>](guid-ex15websvcsotherref.md)
+- [<span data-ttu-id="a3b9a-155">Guid</span><span class="sxs-lookup"><span data-stu-id="a3b9a-155">Guid</span></span>](guid-ex15websvcsotherref.md)
     
-- [<span data-ttu-id="705c4-156">PrimarySmtpAddress (cadena)</span><span class="sxs-lookup"><span data-stu-id="705c4-156">PrimarySmtpAddress (string)</span></span>](primarysmtpaddress-string.md)
+- [<span data-ttu-id="a3b9a-156">PrimarySmtpAddress (cadena)</span><span class="sxs-lookup"><span data-stu-id="a3b9a-156">PrimarySmtpAddress (string)</span></span>](primarysmtpaddress-string.md)
     
-- [<span data-ttu-id="705c4-157">IsExternalMailbox</span><span class="sxs-lookup"><span data-stu-id="705c4-157">IsExternalMailbox</span></span>](isexternalmailbox.md)
+- [<span data-ttu-id="a3b9a-157">IsExternalMailbox</span><span class="sxs-lookup"><span data-stu-id="a3b9a-157">IsExternalMailbox</span></span>](isexternalmailbox.md)
     
-- [<span data-ttu-id="705c4-158">ExternalEmailAddress</span><span class="sxs-lookup"><span data-stu-id="705c4-158">ExternalEmailAddress</span></span>](externalemailaddress.md)
+- [<span data-ttu-id="a3b9a-158">ExternalEmailAddress</span><span class="sxs-lookup"><span data-stu-id="a3b9a-158">ExternalEmailAddress</span></span>](externalemailaddress.md)
     
-- [<span data-ttu-id="705c4-159">DisplayName (cadena)</span><span class="sxs-lookup"><span data-stu-id="705c4-159">DisplayName (string)</span></span>](displayname-string.md)
+- [<span data-ttu-id="a3b9a-159">DisplayName (cadena)</span><span class="sxs-lookup"><span data-stu-id="a3b9a-159">DisplayName (string)</span></span>](displayname-string.md)
     
-- [<span data-ttu-id="705c4-160">IsMembershipGroup</span><span class="sxs-lookup"><span data-stu-id="705c4-160">IsMembershipGroup</span></span>](ismembershipgroup.md)
+- [<span data-ttu-id="a3b9a-160">IsMembershipGroup</span><span class="sxs-lookup"><span data-stu-id="a3b9a-160">IsMembershipGroup</span></span>](ismembershipgroup.md)
     
-- [<span data-ttu-id="705c4-161">ReferenceId</span><span class="sxs-lookup"><span data-stu-id="705c4-161">ReferenceId</span></span>](referenceid.md)
+- [<span data-ttu-id="a3b9a-161">ReferenceId</span><span class="sxs-lookup"><span data-stu-id="a3b9a-161">ReferenceId</span></span>](referenceid.md)
     
-## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-in-place-holds"></a><span data-ttu-id="705c4-162">La respuesta es correcta de operación GetDiscoverySearchConfiguration: solicitud de suspensiones en contexto</span><span class="sxs-lookup"><span data-stu-id="705c4-162">Successful GetDiscoverySearchConfiguration operation response: Request for in-place holds</span></span>
+## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-in-place-holds"></a><span data-ttu-id="a3b9a-162">Respuesta de operación GetDiscoverySearchConfiguration correcta: solicitud de retenciones locales</span><span class="sxs-lookup"><span data-stu-id="a3b9a-162">Successful GetDiscoverySearchConfiguration operation response: Request for in-place holds</span></span>
 
-<span data-ttu-id="705c4-163">En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación de **GetDiscoverySearchConfiguration** para sólo obtener en contexto contiene.</span><span class="sxs-lookup"><span data-stu-id="705c4-163">The following example shows a successful response to a **GetDiscoverySearchConfiguration** operation request to only get in-place holds.</span></span> 
+<span data-ttu-id="a3b9a-163">En el siguiente ejemplo se muestra una respuesta correcta a una solicitud de operación **GetDiscoverySearchConfiguration** para obtener solo las suspensiones locales.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-163">The following example shows a successful response to a **GetDiscoverySearchConfiguration** operation request to only get in-place holds.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -156,24 +156,24 @@ ms.locfileid: "19764805"
                            MajorBuildNumber="526" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <GetDiscoverySearchConfigurationResponse ResponseClass="Success" 
-                                               xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                               xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
          <DiscoverySearchConfigurations>
-            <DiscoverySearchConfiguration xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <DiscoverySearchConfiguration xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <SearchId>MyDiscSearchFor-sbrown</SearchId>
                <SearchQuery>test item</SearchQuery>
                <InPlaceHoldIdentity>3f37d90f53144558a80814ef0272749a9</InPlaceHoldIdentity>
                <ManagedByOrganization/>
             </DiscoverySearchConfiguration>
-            <DiscoverySearchConfiguration xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <DiscoverySearchConfiguration xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <SearchId>MyDiscSearch</SearchId>
                <SearchQuery>test</SearchQuery>
                <InPlaceHoldIdentity>6ea486f0f3f140efb044682a2e782abdf</InPlaceHoldIdentity>
@@ -186,27 +186,27 @@ ms.locfileid: "19764805"
 
 ```
 
-<span data-ttu-id="705c4-164">La respuesta SOAP body contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="705c4-164">The response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="a3b9a-164">El cuerpo SOAP de respuesta contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="a3b9a-164">The response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="705c4-165">GetDiscoverySearchConfigurationResponse</span><span class="sxs-lookup"><span data-stu-id="705c4-165">GetDiscoverySearchConfigurationResponse</span></span>](getdiscoverysearchconfigurationresponse.md)
+- [<span data-ttu-id="a3b9a-165">GetDiscoverySearchConfigurationResponse</span><span class="sxs-lookup"><span data-stu-id="a3b9a-165">GetDiscoverySearchConfigurationResponse</span></span>](getdiscoverysearchconfigurationresponse.md)
     
-- [<span data-ttu-id="705c4-166">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="705c4-166">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="a3b9a-166">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="a3b9a-166">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="705c4-167">DiscoverySearchConfigurations</span><span class="sxs-lookup"><span data-stu-id="705c4-167">DiscoverySearchConfigurations</span></span>](discoverysearchconfigurations.md)
+- [<span data-ttu-id="a3b9a-167">DiscoverySearchConfigurations</span><span class="sxs-lookup"><span data-stu-id="a3b9a-167">DiscoverySearchConfigurations</span></span>](discoverysearchconfigurations.md)
     
-- [<span data-ttu-id="705c4-168">DiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="705c4-168">DiscoverySearchConfiguration</span></span>](discoverysearchconfiguration.md)
+- [<span data-ttu-id="a3b9a-168">DiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="a3b9a-168">DiscoverySearchConfiguration</span></span>](discoverysearchconfiguration.md)
     
-- [<span data-ttu-id="705c4-169">Identificador de búsqueda</span><span class="sxs-lookup"><span data-stu-id="705c4-169">SearchId</span></span>](searchid.md)
+- [<span data-ttu-id="a3b9a-169">SearchId</span><span class="sxs-lookup"><span data-stu-id="a3b9a-169">SearchId</span></span>](searchid.md)
     
-- [<span data-ttu-id="705c4-170">SearchQuery</span><span class="sxs-lookup"><span data-stu-id="705c4-170">SearchQuery</span></span>](searchquery.md)
+- [<span data-ttu-id="a3b9a-170">SearchQuery</span><span class="sxs-lookup"><span data-stu-id="a3b9a-170">SearchQuery</span></span>](searchquery.md)
     
-- [<span data-ttu-id="705c4-171">InPlaceHoldIdentity</span><span class="sxs-lookup"><span data-stu-id="705c4-171">InPlaceHoldIdentity</span></span>](inplaceholdidentity.md)
+- [<span data-ttu-id="a3b9a-171">InPlaceHoldIdentity</span><span class="sxs-lookup"><span data-stu-id="a3b9a-171">InPlaceHoldIdentity</span></span>](inplaceholdidentity.md)
     
-- [<span data-ttu-id="705c4-172">ManagedByOrganization</span><span class="sxs-lookup"><span data-stu-id="705c4-172">ManagedByOrganization</span></span>](managedbyorganization.md)
+- [<span data-ttu-id="a3b9a-172">ManagedByOrganization</span><span class="sxs-lookup"><span data-stu-id="a3b9a-172">ManagedByOrganization</span></span>](managedbyorganization.md)
     
-## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-all-saved-discovery-search-configurations"></a><span data-ttu-id="705c4-173">La respuesta es correcta de operación GetDiscoverySearchConfiguration: solicitud de todos los guardan detección configuraciones de búsqueda</span><span class="sxs-lookup"><span data-stu-id="705c4-173">Successful GetDiscoverySearchConfiguration operation response: Request for all saved discovery search configurations</span></span>
+## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-all-saved-discovery-search-configurations"></a><span data-ttu-id="a3b9a-173">Respuesta de operación GetDiscoverySearchConfiguration correcta: solicitud de todas las configuraciones de búsqueda de detección guardadas</span><span class="sxs-lookup"><span data-stu-id="a3b9a-173">Successful GetDiscoverySearchConfiguration operation response: Request for all saved discovery search configurations</span></span>
 
-<span data-ttu-id="705c4-174">En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación de **GetDiscoverySearchConfiguration** para obtener todas las búsquedas de descubrimiento guardados.</span><span class="sxs-lookup"><span data-stu-id="705c4-174">The following example shows a successful response to a **GetDiscoverySearchConfiguration** operation request to get all saved discovery searches.</span></span> 
+<span data-ttu-id="a3b9a-174">En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación **GetDiscoverySearchConfiguration** para obtener todas las búsquedas de detección guardadas.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-174">The following example shows a successful response to a **GetDiscoverySearchConfiguration** operation request to get all saved discovery searches.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -217,18 +217,18 @@ ms.locfileid: "19764805"
                            MajorBuildNumber="526" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <GetDiscoverySearchConfigurationResponse ResponseClass="Success" 
-                                               xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                               xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
          <DiscoverySearchConfigurations>
-            <DiscoverySearchConfiguration xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <DiscoverySearchConfiguration xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <SearchId>MyDiscSearchFor-sbrown</SearchId>
                <SearchQuery>test item</SearchQuery>
                <SearchableMailboxes>
@@ -243,7 +243,7 @@ ms.locfileid: "19764805"
                   </SearchableMailbox>
                </SearchableMailboxes>
             </DiscoverySearchConfiguration>
-            <DiscoverySearchConfiguration xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <DiscoverySearchConfiguration xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <SearchId>MyDiscSearch</SearchId>
                <SearchQuery>test</SearchQuery>
                <SearchableMailboxes>
@@ -273,41 +273,41 @@ ms.locfileid: "19764805"
 </s:Envelope>
 ```
 
-<span data-ttu-id="705c4-175">La respuesta SOAP body contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="705c4-175">The response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="a3b9a-175">El cuerpo SOAP de respuesta contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="a3b9a-175">The response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="705c4-176">GetDiscoverySearchConfigurationResponse</span><span class="sxs-lookup"><span data-stu-id="705c4-176">GetDiscoverySearchConfigurationResponse</span></span>](getdiscoverysearchconfigurationresponse.md)
+- [<span data-ttu-id="a3b9a-176">GetDiscoverySearchConfigurationResponse</span><span class="sxs-lookup"><span data-stu-id="a3b9a-176">GetDiscoverySearchConfigurationResponse</span></span>](getdiscoverysearchconfigurationresponse.md)
     
-- [<span data-ttu-id="705c4-177">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="705c4-177">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="a3b9a-177">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="a3b9a-177">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="705c4-178">DiscoverySearchConfigurations</span><span class="sxs-lookup"><span data-stu-id="705c4-178">DiscoverySearchConfigurations</span></span>](discoverysearchconfigurations.md)
+- [<span data-ttu-id="a3b9a-178">DiscoverySearchConfigurations</span><span class="sxs-lookup"><span data-stu-id="a3b9a-178">DiscoverySearchConfigurations</span></span>](discoverysearchconfigurations.md)
     
-- [<span data-ttu-id="705c4-179">DiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="705c4-179">DiscoverySearchConfiguration</span></span>](discoverysearchconfiguration.md)
+- [<span data-ttu-id="a3b9a-179">DiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="a3b9a-179">DiscoverySearchConfiguration</span></span>](discoverysearchconfiguration.md)
     
-- [<span data-ttu-id="705c4-180">Identificador de búsqueda</span><span class="sxs-lookup"><span data-stu-id="705c4-180">SearchId</span></span>](searchid.md)
+- [<span data-ttu-id="a3b9a-180">SearchId</span><span class="sxs-lookup"><span data-stu-id="a3b9a-180">SearchId</span></span>](searchid.md)
     
-- [<span data-ttu-id="705c4-181">SearchQuery</span><span class="sxs-lookup"><span data-stu-id="705c4-181">SearchQuery</span></span>](searchquery.md)
+- [<span data-ttu-id="a3b9a-181">SearchQuery</span><span class="sxs-lookup"><span data-stu-id="a3b9a-181">SearchQuery</span></span>](searchquery.md)
     
-- [<span data-ttu-id="705c4-182">SearchableMailboxes</span><span class="sxs-lookup"><span data-stu-id="705c4-182">SearchableMailboxes</span></span>](searchablemailboxes.md)
+- [<span data-ttu-id="a3b9a-182">SearchableMailboxes</span><span class="sxs-lookup"><span data-stu-id="a3b9a-182">SearchableMailboxes</span></span>](searchablemailboxes.md)
     
-- [<span data-ttu-id="705c4-183">SearchableMailbox</span><span class="sxs-lookup"><span data-stu-id="705c4-183">SearchableMailbox</span></span>](searchablemailbox.md)
+- [<span data-ttu-id="a3b9a-183">SearchableMailbox</span><span class="sxs-lookup"><span data-stu-id="a3b9a-183">SearchableMailbox</span></span>](searchablemailbox.md)
     
-- [<span data-ttu-id="705c4-184">GUID</span><span class="sxs-lookup"><span data-stu-id="705c4-184">Guid</span></span>](guid-ex15websvcsotherref.md)
+- [<span data-ttu-id="a3b9a-184">Guid</span><span class="sxs-lookup"><span data-stu-id="a3b9a-184">Guid</span></span>](guid-ex15websvcsotherref.md)
     
-- [<span data-ttu-id="705c4-185">PrimarySmtpAddress (cadena)</span><span class="sxs-lookup"><span data-stu-id="705c4-185">PrimarySmtpAddress (string)</span></span>](primarysmtpaddress-string.md)
+- [<span data-ttu-id="a3b9a-185">PrimarySmtpAddress (cadena)</span><span class="sxs-lookup"><span data-stu-id="a3b9a-185">PrimarySmtpAddress (string)</span></span>](primarysmtpaddress-string.md)
     
-- [<span data-ttu-id="705c4-186">IsExternalMailbox</span><span class="sxs-lookup"><span data-stu-id="705c4-186">IsExternalMailbox</span></span>](isexternalmailbox.md)
+- [<span data-ttu-id="a3b9a-186">IsExternalMailbox</span><span class="sxs-lookup"><span data-stu-id="a3b9a-186">IsExternalMailbox</span></span>](isexternalmailbox.md)
     
-- [<span data-ttu-id="705c4-187">ExternalEmailAddress</span><span class="sxs-lookup"><span data-stu-id="705c4-187">ExternalEmailAddress</span></span>](externalemailaddress.md)
+- [<span data-ttu-id="a3b9a-187">ExternalEmailAddress</span><span class="sxs-lookup"><span data-stu-id="a3b9a-187">ExternalEmailAddress</span></span>](externalemailaddress.md)
     
-- [<span data-ttu-id="705c4-188">DisplayName (cadena)</span><span class="sxs-lookup"><span data-stu-id="705c4-188">DisplayName (string)</span></span>](displayname-string.md)
+- [<span data-ttu-id="a3b9a-188">DisplayName (cadena)</span><span class="sxs-lookup"><span data-stu-id="a3b9a-188">DisplayName (string)</span></span>](displayname-string.md)
     
-- [<span data-ttu-id="705c4-189">IsMembershipGroup</span><span class="sxs-lookup"><span data-stu-id="705c4-189">IsMembershipGroup</span></span>](ismembershipgroup.md)
+- [<span data-ttu-id="a3b9a-189">IsMembershipGroup</span><span class="sxs-lookup"><span data-stu-id="a3b9a-189">IsMembershipGroup</span></span>](ismembershipgroup.md)
     
-- [<span data-ttu-id="705c4-190">ReferenceId</span><span class="sxs-lookup"><span data-stu-id="705c4-190">ReferenceId</span></span>](referenceid.md)
+- [<span data-ttu-id="a3b9a-190">ReferenceId</span><span class="sxs-lookup"><span data-stu-id="a3b9a-190">ReferenceId</span></span>](referenceid.md)
     
-## <a name="getdiscoverysearchconfiguration-operation-error-response"></a><span data-ttu-id="705c4-191">Respuesta de error de la operación de GetDiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="705c4-191">GetDiscoverySearchConfiguration operation error response</span></span>
+## <a name="getdiscoverysearchconfiguration-operation-error-response"></a><span data-ttu-id="a3b9a-191">Respuesta de error de operación de GetDiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="a3b9a-191">GetDiscoverySearchConfiguration operation error response</span></span>
 
-<span data-ttu-id="705c4-192">En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **GetDiscoverySearchConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="705c4-192">The following example shows an error response to a **GetDiscoverySearchConfiguration** operation request.</span></span> <span data-ttu-id="705c4-193">Esta es una respuesta a una solicitud para obtener una búsqueda guardada que no se encuentra en el servidor.</span><span class="sxs-lookup"><span data-stu-id="705c4-193">This is a response to a request to get a saved search that is not found on the server.</span></span> 
+<span data-ttu-id="a3b9a-192">En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **GetDiscoverySearchConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="a3b9a-192">The following example shows an error response to a **GetDiscoverySearchConfiguration** operation request.</span></span> <span data-ttu-id="a3b9a-193">Se trata de una respuesta a una solicitud para obtener una búsqueda guardada que no se encuentra en el servidor.</span><span class="sxs-lookup"><span data-stu-id="a3b9a-193">This is a response to a request to get a saved search that is not found on the server.</span></span> 
   
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -317,15 +317,15 @@ ms.locfileid: "19764805"
                            MajorBuildNumber="526" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <GetDiscoverySearchConfigurationResponse ResponseClass="Error" 
-                                               xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                               xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <MessageText>Search configuration corresponding to the search id was not found.</MessageText>
          <ResponseCode>ErrorInvalidArgument</ResponseCode>
          <DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -336,34 +336,34 @@ ms.locfileid: "19764805"
 
 ```
 
-<span data-ttu-id="705c4-194">La respuesta de error SOAP body contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="705c4-194">The error response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="a3b9a-194">El cuerpo SOAP de respuesta de error contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="a3b9a-194">The error response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="705c4-195">GetDiscoverySearchConfigurationResponse</span><span class="sxs-lookup"><span data-stu-id="705c4-195">GetDiscoverySearchConfigurationResponse</span></span>](getdiscoverysearchconfigurationresponse.md)
+- [<span data-ttu-id="a3b9a-195">GetDiscoverySearchConfigurationResponse</span><span class="sxs-lookup"><span data-stu-id="a3b9a-195">GetDiscoverySearchConfigurationResponse</span></span>](getdiscoverysearchconfigurationresponse.md)
     
-- [<span data-ttu-id="705c4-196">MessageText</span><span class="sxs-lookup"><span data-stu-id="705c4-196">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="a3b9a-196">MessageText</span><span class="sxs-lookup"><span data-stu-id="a3b9a-196">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="705c4-197">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="705c4-197">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="a3b9a-197">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="a3b9a-197">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="705c4-198">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="705c4-198">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="a3b9a-198">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="a3b9a-198">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-- [<span data-ttu-id="705c4-199">DiscoverySearchConfigurations</span><span class="sxs-lookup"><span data-stu-id="705c4-199">DiscoverySearchConfigurations</span></span>](discoverysearchconfigurations.md)
+- [<span data-ttu-id="a3b9a-199">DiscoverySearchConfigurations</span><span class="sxs-lookup"><span data-stu-id="a3b9a-199">DiscoverySearchConfigurations</span></span>](discoverysearchconfigurations.md)
     
-<span data-ttu-id="705c4-200">Para códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).</span><span class="sxs-lookup"><span data-stu-id="705c4-200">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
+<span data-ttu-id="a3b9a-200">Para obtener los códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).</span><span class="sxs-lookup"><span data-stu-id="a3b9a-200">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="705c4-201">Vea también</span><span class="sxs-lookup"><span data-stu-id="705c4-201">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a3b9a-201">Vea también</span><span class="sxs-lookup"><span data-stu-id="a3b9a-201">See also</span></span>
 
-- [<span data-ttu-id="705c4-202">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="705c4-202">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+- [<span data-ttu-id="a3b9a-202">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="a3b9a-202">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
     
-- [<span data-ttu-id="705c4-203">GetSearchableMailboxes</span><span class="sxs-lookup"><span data-stu-id="705c4-203">GetSearchableMailboxes</span></span>](getsearchablemailboxes.md)
+- [<span data-ttu-id="a3b9a-203">GetSearchableMailboxes</span><span class="sxs-lookup"><span data-stu-id="a3b9a-203">GetSearchableMailboxes</span></span>](getsearchablemailboxes.md)
     
-- [<span data-ttu-id="705c4-204">SearchMailboxes</span><span class="sxs-lookup"><span data-stu-id="705c4-204">SearchMailboxes</span></span>](searchmailboxes.md)
+- [<span data-ttu-id="a3b9a-204">SearchMailboxes</span><span class="sxs-lookup"><span data-stu-id="a3b9a-204">SearchMailboxes</span></span>](searchmailboxes.md)
     
-- [<span data-ttu-id="705c4-205">GetHoldOnMailboxes</span><span class="sxs-lookup"><span data-stu-id="705c4-205">GetHoldOnMailboxes</span></span>](getholdonmailboxes.md)
+- [<span data-ttu-id="a3b9a-205">GetHoldOnMailboxes</span><span class="sxs-lookup"><span data-stu-id="a3b9a-205">GetHoldOnMailboxes</span></span>](getholdonmailboxes.md)
     
-- [<span data-ttu-id="705c4-206">SetHoldOnMailboxes</span><span class="sxs-lookup"><span data-stu-id="705c4-206">SetHoldOnMailboxes</span></span>](setholdonmailboxes.md)
+- [<span data-ttu-id="a3b9a-206">SetHoldOnMailboxes</span><span class="sxs-lookup"><span data-stu-id="a3b9a-206">SetHoldOnMailboxes</span></span>](setholdonmailboxes.md)
     
-- [<span data-ttu-id="705c4-207">GetNonIndexableItemDetails</span><span class="sxs-lookup"><span data-stu-id="705c4-207">GetNonIndexableItemDetails</span></span>](getnonindexableitemdetails.md)
+- [<span data-ttu-id="a3b9a-207">GetNonIndexableItemDetails</span><span class="sxs-lookup"><span data-stu-id="a3b9a-207">GetNonIndexableItemDetails</span></span>](getnonindexableitemdetails.md)
     
-- [<span data-ttu-id="705c4-208">GetNonIndexableItemStatistics</span><span class="sxs-lookup"><span data-stu-id="705c4-208">GetNonIndexableItemStatistics</span></span>](getnonindexableitemstatistics.md)
+- [<span data-ttu-id="a3b9a-208">GetNonIndexableItemStatistics</span><span class="sxs-lookup"><span data-stu-id="a3b9a-208">GetNonIndexableItemStatistics</span></span>](getnonindexableitemstatistics.md)
     
 
