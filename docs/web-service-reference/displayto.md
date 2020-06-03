@@ -16,63 +16,63 @@ ms.openlocfilehash: 3bc0b322d6a4f00388247bebcf8e3e7fb110da1d
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461362"
 ---
-# <a name="displayto"></a><span data-ttu-id="fe951-104">DisplayTo</span><span class="sxs-lookup"><span data-stu-id="fe951-104">DisplayTo</span></span>
+# <a name="displayto"></a><span data-ttu-id="e4f4e-104">DisplayTo</span><span class="sxs-lookup"><span data-stu-id="e4f4e-104">DisplayTo</span></span>
 
-<span data-ttu-id="fe951-105">El elemento **displayto** representa la cadena para mostrar que se usa para el contenido del cuadro para.</span><span class="sxs-lookup"><span data-stu-id="fe951-105">The **DisplayTo** element represents the display string that is used for the contents of the To box.</span></span> <span data-ttu-id="fe951-106">Esta es la cadena concatenada de todos los nombres para mostrar de destinatarios.</span><span class="sxs-lookup"><span data-stu-id="fe951-106">This is the concatenated string of all To recipient display names.</span></span> 
+<span data-ttu-id="e4f4e-105">El elemento **displayto** representa la cadena para mostrar que se usa para el contenido del cuadro para.</span><span class="sxs-lookup"><span data-stu-id="e4f4e-105">The **DisplayTo** element represents the display string that is used for the contents of the To box.</span></span> <span data-ttu-id="e4f4e-106">Esta es la cadena concatenada de todos los nombres para mostrar de destinatarios.</span><span class="sxs-lookup"><span data-stu-id="e4f4e-106">This is the concatenated string of all To recipient display names.</span></span> 
   
 ```xml
 <DisplayTo/>
 ```
 
- <span data-ttu-id="fe951-107">**String**</span><span class="sxs-lookup"><span data-stu-id="fe951-107">**String**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="fe951-108">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="fe951-108">Attributes and elements</span></span>
+ <span data-ttu-id="e4f4e-107">**String**</span><span class="sxs-lookup"><span data-stu-id="e4f4e-107">**String**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="e4f4e-108">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="e4f4e-108">Attributes and elements</span></span>
 
-<span data-ttu-id="fe951-109">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="fe951-109">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="e4f4e-109">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="e4f4e-109">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="fe951-110">Atributos</span><span class="sxs-lookup"><span data-stu-id="fe951-110">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="e4f4e-110">Atributos</span><span class="sxs-lookup"><span data-stu-id="e4f4e-110">Attributes</span></span>
 
-<span data-ttu-id="fe951-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="fe951-111">None.</span></span>
+<span data-ttu-id="e4f4e-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="e4f4e-111">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="fe951-112">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="fe951-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="e4f4e-112">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="e4f4e-112">Child elements</span></span>
 
-<span data-ttu-id="fe951-113">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="fe951-113">None.</span></span>
+<span data-ttu-id="e4f4e-113">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="e4f4e-113">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="fe951-114">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="fe951-114">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="e4f4e-114">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="e4f4e-114">Parent elements</span></span>
 
-|<span data-ttu-id="fe951-115">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="fe951-115">**Element**</span></span>|<span data-ttu-id="fe951-116">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="fe951-116">**Description**</span></span>|
+|<span data-ttu-id="e4f4e-115">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="e4f4e-115">**Element**</span></span>|<span data-ttu-id="e4f4e-116">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="e4f4e-116">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="fe951-117">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="fe951-117">CalendarItem</span></span>](calendaritem.md) <br/> |<span data-ttu-id="fe951-118">Representa un elemento de calendario de Exchange.</span><span class="sxs-lookup"><span data-stu-id="fe951-118">Represents an Exchange calendar item.</span></span>  <br/> |
-|[<span data-ttu-id="fe951-119">Contacto</span><span class="sxs-lookup"><span data-stu-id="fe951-119">Contact</span></span>](contact.md) <br/> |<span data-ttu-id="fe951-120">Representa un elemento de contacto de Exchange.</span><span class="sxs-lookup"><span data-stu-id="fe951-120">Represents an Exchange contact item.</span></span>  <br/> |
-|[<span data-ttu-id="fe951-121">DistributionList</span><span class="sxs-lookup"><span data-stu-id="fe951-121">DistributionList</span></span>](distributionlist.md) <br/> |<span data-ttu-id="fe951-122">Representa una lista de distribución.</span><span class="sxs-lookup"><span data-stu-id="fe951-122">Represents a distribution list.</span></span>  <br/> |
-|[<span data-ttu-id="fe951-123">Elemento</span><span class="sxs-lookup"><span data-stu-id="fe951-123">Item</span></span>](item.md) <br/> |<span data-ttu-id="fe951-124">Representa un elemento en el almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="fe951-124">Represents an item in the Exchange store.</span></span>  <br/> |
-|[<span data-ttu-id="fe951-125">MeetingCancellation</span><span class="sxs-lookup"><span data-stu-id="fe951-125">MeetingCancellation</span></span>](meetingcancellation.md) <br/> |<span data-ttu-id="fe951-126">Representa una cancelación de reunión en el almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="fe951-126">Represents a meeting cancellation in the Exchange store.</span></span>  <br/> |
-|[<span data-ttu-id="fe951-127">MeetingMessage</span><span class="sxs-lookup"><span data-stu-id="fe951-127">MeetingMessage</span></span>](meetingmessage.md) <br/> |<span data-ttu-id="fe951-128">Representa una reunión en el almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="fe951-128">Represents a meeting in the Exchange store.</span></span>  <br/> |
-|[<span data-ttu-id="fe951-129">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="fe951-129">MeetingRequest</span></span>](meetingrequest.md) <br/> |<span data-ttu-id="fe951-130">Representa una convocatoria de reunión en el almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="fe951-130">Represents a meeting request in the Exchange store.</span></span>  <br/> |
-|[<span data-ttu-id="fe951-131">MeetingResponse</span><span class="sxs-lookup"><span data-stu-id="fe951-131">MeetingResponse</span></span>](meetingresponse.md) <br/> |<span data-ttu-id="fe951-132">Representa una respuesta a una reunión en el almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="fe951-132">Represents a meeting response in the Exchange store.</span></span>  <br/> |
-|[<span data-ttu-id="fe951-133">Mensaje</span><span class="sxs-lookup"><span data-stu-id="fe951-133">Message</span></span>](message-ex15websvcsotherref.md) <br/> |<span data-ttu-id="fe951-134">Representa un mensaje de correo electrónico de Exchange.</span><span class="sxs-lookup"><span data-stu-id="fe951-134">Represents an Exchange e-mail message.</span></span>  <br/> |
-|[<span data-ttu-id="fe951-135">Tarea</span><span class="sxs-lookup"><span data-stu-id="fe951-135">Task</span></span>](task.md) <br/> |<span data-ttu-id="fe951-136">Representa una tarea del almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="fe951-136">Represents a task in the Exchange store.</span></span>  <br/> |
+|[<span data-ttu-id="e4f4e-117">CalendarItem</span><span class="sxs-lookup"><span data-stu-id="e4f4e-117">CalendarItem</span></span>](calendaritem.md) <br/> |<span data-ttu-id="e4f4e-118">Representa un elemento de calendario de Exchange.</span><span class="sxs-lookup"><span data-stu-id="e4f4e-118">Represents an Exchange calendar item.</span></span>  <br/> |
+|[<span data-ttu-id="e4f4e-119">Contacto</span><span class="sxs-lookup"><span data-stu-id="e4f4e-119">Contact</span></span>](contact.md) <br/> |<span data-ttu-id="e4f4e-120">Representa un elemento de contacto de Exchange.</span><span class="sxs-lookup"><span data-stu-id="e4f4e-120">Represents an Exchange contact item.</span></span>  <br/> |
+|[<span data-ttu-id="e4f4e-121">DistributionList</span><span class="sxs-lookup"><span data-stu-id="e4f4e-121">DistributionList</span></span>](distributionlist.md) <br/> |<span data-ttu-id="e4f4e-122">Representa una lista de distribución.</span><span class="sxs-lookup"><span data-stu-id="e4f4e-122">Represents a distribution list.</span></span>  <br/> |
+|[<span data-ttu-id="e4f4e-123">Elemento</span><span class="sxs-lookup"><span data-stu-id="e4f4e-123">Item</span></span>](item.md) <br/> |<span data-ttu-id="e4f4e-124">Representa un elemento en el almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="e4f4e-124">Represents an item in the Exchange store.</span></span>  <br/> |
+|[<span data-ttu-id="e4f4e-125">MeetingCancellation</span><span class="sxs-lookup"><span data-stu-id="e4f4e-125">MeetingCancellation</span></span>](meetingcancellation.md) <br/> |<span data-ttu-id="e4f4e-126">Representa una cancelación de reunión en el almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="e4f4e-126">Represents a meeting cancellation in the Exchange store.</span></span>  <br/> |
+|[<span data-ttu-id="e4f4e-127">MeetingMessage</span><span class="sxs-lookup"><span data-stu-id="e4f4e-127">MeetingMessage</span></span>](meetingmessage.md) <br/> |<span data-ttu-id="e4f4e-128">Representa una reunión en el almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="e4f4e-128">Represents a meeting in the Exchange store.</span></span>  <br/> |
+|[<span data-ttu-id="e4f4e-129">MeetingRequest</span><span class="sxs-lookup"><span data-stu-id="e4f4e-129">MeetingRequest</span></span>](meetingrequest.md) <br/> |<span data-ttu-id="e4f4e-130">Representa una convocatoria de reunión en el almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="e4f4e-130">Represents a meeting request in the Exchange store.</span></span>  <br/> |
+|[<span data-ttu-id="e4f4e-131">MeetingResponse</span><span class="sxs-lookup"><span data-stu-id="e4f4e-131">MeetingResponse</span></span>](meetingresponse.md) <br/> |<span data-ttu-id="e4f4e-132">Representa una respuesta a una reunión en el almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="e4f4e-132">Represents a meeting response in the Exchange store.</span></span>  <br/> |
+|[<span data-ttu-id="e4f4e-133">Message</span><span class="sxs-lookup"><span data-stu-id="e4f4e-133">Message</span></span>](message-ex15websvcsotherref.md) <br/> |<span data-ttu-id="e4f4e-134">Representa un mensaje de correo electrónico de Exchange.</span><span class="sxs-lookup"><span data-stu-id="e4f4e-134">Represents an Exchange e-mail message.</span></span>  <br/> |
+|[<span data-ttu-id="e4f4e-135">Tarea</span><span class="sxs-lookup"><span data-stu-id="e4f4e-135">Task</span></span>](task.md) <br/> |<span data-ttu-id="e4f4e-136">Representa una tarea del almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="e4f4e-136">Represents a task in the Exchange store.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="fe951-137">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="fe951-137">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="e4f4e-137">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="e4f4e-137">Text value</span></span>
 
-<span data-ttu-id="fe951-138">El valor de texto representa la cadena para mostrar que se usa para el contenido del cuadro para.</span><span class="sxs-lookup"><span data-stu-id="fe951-138">The text value represents the display string that is used for the contents of the To box.</span></span>
+<span data-ttu-id="e4f4e-138">El valor de texto representa la cadena para mostrar que se usa para el contenido del cuadro para.</span><span class="sxs-lookup"><span data-stu-id="e4f4e-138">The text value represents the display string that is used for the contents of the To box.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="fe951-139">Comentarios</span><span class="sxs-lookup"><span data-stu-id="fe951-139">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e4f4e-139">Comentarios</span><span class="sxs-lookup"><span data-stu-id="e4f4e-139">Remarks</span></span>
 
-<span data-ttu-id="fe951-140">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="fe951-140">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="e4f4e-140">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="e4f4e-140">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="fe951-141">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="fe951-141">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="e4f4e-141">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="e4f4e-141">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="fe951-142">Namespace</span><span class="sxs-lookup"><span data-stu-id="fe951-142">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="fe951-143">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="fe951-143">Schema Name</span></span>  <br/> |<span data-ttu-id="fe951-144">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="fe951-144">Types schema</span></span>  <br/> |
-|<span data-ttu-id="fe951-145">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="fe951-145">Validation File</span></span>  <br/> |<span data-ttu-id="fe951-146">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="fe951-146">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="fe951-147">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="fe951-147">Can be Empty</span></span>  <br/> |<span data-ttu-id="fe951-148">Falso</span><span class="sxs-lookup"><span data-stu-id="fe951-148">False</span></span>  <br/> |
+|<span data-ttu-id="e4f4e-142">Namespace</span><span class="sxs-lookup"><span data-stu-id="e4f4e-142">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="e4f4e-143">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="e4f4e-143">Schema Name</span></span>  <br/> |<span data-ttu-id="e4f4e-144">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="e4f4e-144">Types schema</span></span>  <br/> |
+|<span data-ttu-id="e4f4e-145">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="e4f4e-145">Validation File</span></span>  <br/> |<span data-ttu-id="e4f4e-146">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="e4f4e-146">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="e4f4e-147">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="e4f4e-147">Can be Empty</span></span>  <br/> |<span data-ttu-id="e4f4e-148">Falso</span><span class="sxs-lookup"><span data-stu-id="e4f4e-148">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="fe951-149">Vea también</span><span class="sxs-lookup"><span data-stu-id="fe951-149">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e4f4e-149">Vea también</span><span class="sxs-lookup"><span data-stu-id="e4f4e-149">See also</span></span>
 
-- [<span data-ttu-id="fe951-150">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="fe951-150">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="e4f4e-150">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="e4f4e-150">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

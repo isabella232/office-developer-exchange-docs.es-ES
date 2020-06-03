@@ -16,20 +16,20 @@ ms.openlocfilehash: ec07700a5ebbdc8774aa2134919634b8dfd02406
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462181"
 ---
-# <a name="copyitem-operation"></a><span data-ttu-id="2b14f-103">Operación CopyItem</span><span class="sxs-lookup"><span data-stu-id="2b14f-103">CopyItem operation</span></span>
+# <a name="copyitem-operation"></a><span data-ttu-id="1a3af-103">Operación CopyItem</span><span class="sxs-lookup"><span data-stu-id="1a3af-103">CopyItem operation</span></span>
 
-<span data-ttu-id="2b14f-104">La operación **CopyItem** copia elementos y coloca los elementos en una carpeta diferente.</span><span class="sxs-lookup"><span data-stu-id="2b14f-104">The **CopyItem** operation copies items and puts the items in a different folder.</span></span> 
+<span data-ttu-id="1a3af-104">La operación **CopyItem** copia elementos y coloca los elementos en una carpeta diferente.</span><span class="sxs-lookup"><span data-stu-id="1a3af-104">The **CopyItem** operation copies items and puts the items in a different folder.</span></span> 
   
-## <a name="copyitem-request-example"></a><span data-ttu-id="2b14f-105">Ejemplo de solicitud CopyItem</span><span class="sxs-lookup"><span data-stu-id="2b14f-105">CopyItem request example</span></span>
+## <a name="copyitem-request-example"></a><span data-ttu-id="1a3af-105">Ejemplo de solicitud CopyItem</span><span class="sxs-lookup"><span data-stu-id="1a3af-105">CopyItem request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="2b14f-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="2b14f-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="1a3af-106">Description</span><span class="sxs-lookup"><span data-stu-id="1a3af-106">Description</span></span>
 
-<span data-ttu-id="2b14f-107">El siguiente ejemplo de una solicitud **CopyItem** muestra cómo crear una solicitud para copiar un elemento en la bandeja de entrada.</span><span class="sxs-lookup"><span data-stu-id="2b14f-107">The following example of a **CopyItem** request shows how to form a request to copy an item to the Inbox.</span></span> 
+<span data-ttu-id="1a3af-107">El siguiente ejemplo de una solicitud **CopyItem** muestra cómo crear una solicitud para copiar un elemento en la bandeja de entrada.</span><span class="sxs-lookup"><span data-stu-id="1a3af-107">The following example of a **CopyItem** request shows how to form a request to copy an item to the Inbox.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="2b14f-108">Código</span><span class="sxs-lookup"><span data-stu-id="2b14f-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="1a3af-108">Código</span><span class="sxs-lookup"><span data-stu-id="1a3af-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -48,39 +48,39 @@ ms.locfileid: "44462181"
 </soap:Envelope>
 ```
 
-### <a name="comments"></a><span data-ttu-id="2b14f-109">Comentarios</span><span class="sxs-lookup"><span data-stu-id="2b14f-109">Comments</span></span>
+### <a name="comments"></a><span data-ttu-id="1a3af-109">Comentarios</span><span class="sxs-lookup"><span data-stu-id="1a3af-109">Comments</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2b14f-110">El identificador de la carpeta y la clave de cambio se han abreviado para preservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="2b14f-110">The folder ID and the change key have been shortened to preserve readability.</span></span> 
+> <span data-ttu-id="1a3af-110">El identificador de la carpeta y la clave de cambio se han abreviado para preservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="1a3af-110">The folder ID and the change key have been shortened to preserve readability.</span></span> 
   
-### <a name="request-elements"></a><span data-ttu-id="2b14f-111">Elementos de solicitud</span><span class="sxs-lookup"><span data-stu-id="2b14f-111">Request elements</span></span>
+### <a name="request-elements"></a><span data-ttu-id="1a3af-111">Elementos de solicitud</span><span class="sxs-lookup"><span data-stu-id="1a3af-111">Request elements</span></span>
 
-<span data-ttu-id="2b14f-112">Los siguientes elementos se usan en la solicitud:</span><span class="sxs-lookup"><span data-stu-id="2b14f-112">The following elements are used in the request:</span></span>
+<span data-ttu-id="1a3af-112">Los siguientes elementos se usan en la solicitud:</span><span class="sxs-lookup"><span data-stu-id="1a3af-112">The following elements are used in the request:</span></span>
   
-- [<span data-ttu-id="2b14f-113">CopyItem</span><span class="sxs-lookup"><span data-stu-id="2b14f-113">CopyItem</span></span>](copyitem.md)
+- [<span data-ttu-id="1a3af-113">CopyItem</span><span class="sxs-lookup"><span data-stu-id="1a3af-113">CopyItem</span></span>](copyitem.md)
     
-- [<span data-ttu-id="2b14f-114">ToFolderId</span><span class="sxs-lookup"><span data-stu-id="2b14f-114">ToFolderId</span></span>](tofolderid.md)
+- [<span data-ttu-id="1a3af-114">ToFolderId</span><span class="sxs-lookup"><span data-stu-id="1a3af-114">ToFolderId</span></span>](tofolderid.md)
     
-- [<span data-ttu-id="2b14f-115">DistinguishedFolderId</span><span class="sxs-lookup"><span data-stu-id="2b14f-115">DistinguishedFolderId</span></span>](distinguishedfolderid.md)
+- [<span data-ttu-id="1a3af-115">DistinguishedFolderId</span><span class="sxs-lookup"><span data-stu-id="1a3af-115">DistinguishedFolderId</span></span>](distinguishedfolderid.md)
     
-- [<span data-ttu-id="2b14f-116">ItemIds</span><span class="sxs-lookup"><span data-stu-id="2b14f-116">ItemIds</span></span>](itemids.md)
+- [<span data-ttu-id="1a3af-116">ItemIds</span><span class="sxs-lookup"><span data-stu-id="1a3af-116">ItemIds</span></span>](itemids.md)
     
-- [<span data-ttu-id="2b14f-117">ItemId</span><span class="sxs-lookup"><span data-stu-id="2b14f-117">ItemId</span></span>](itemid.md)
+- [<span data-ttu-id="1a3af-117">ItemId</span><span class="sxs-lookup"><span data-stu-id="1a3af-117">ItemId</span></span>](itemid.md)
     
 > [!NOTE]
-> <span data-ttu-id="2b14f-118">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="2b14f-118">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2010 that has the Client Access server role installed.</span></span> 
+> <span data-ttu-id="1a3af-118">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="1a3af-118">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2010 that has the Client Access server role installed.</span></span> 
   
-<span data-ttu-id="2b14f-119">Para buscar otras opciones para el mensaje de solicitud de la operación **CopyItem** , explore la jerarquía del esquema.</span><span class="sxs-lookup"><span data-stu-id="2b14f-119">To find other options for the request message of the **CopyItem** operation, explore the schema hierarchy.</span></span> <span data-ttu-id="2b14f-120">Empiece en el elemento [CopyItem](copyitem.md) .</span><span class="sxs-lookup"><span data-stu-id="2b14f-120">Start at the [CopyItem](copyitem.md) element.</span></span> 
+<span data-ttu-id="1a3af-119">Para buscar otras opciones para el mensaje de solicitud de la operación **CopyItem** , explore la jerarquía del esquema.</span><span class="sxs-lookup"><span data-stu-id="1a3af-119">To find other options for the request message of the **CopyItem** operation, explore the schema hierarchy.</span></span> <span data-ttu-id="1a3af-120">Empiece en el elemento [CopyItem](copyitem.md) .</span><span class="sxs-lookup"><span data-stu-id="1a3af-120">Start at the [CopyItem](copyitem.md) element.</span></span> 
   
-## <a name="successful-copyitem-response"></a><span data-ttu-id="2b14f-121">Respuesta CopyItem correcta</span><span class="sxs-lookup"><span data-stu-id="2b14f-121">Successful CopyItem Response</span></span>
+## <a name="successful-copyitem-response"></a><span data-ttu-id="1a3af-121">Respuesta CopyItem correcta</span><span class="sxs-lookup"><span data-stu-id="1a3af-121">Successful CopyItem Response</span></span>
 
-### <a name="description"></a><span data-ttu-id="2b14f-122">Descripción</span><span class="sxs-lookup"><span data-stu-id="2b14f-122">Description</span></span>
+### <a name="description"></a><span data-ttu-id="1a3af-122">Description</span><span class="sxs-lookup"><span data-stu-id="1a3af-122">Description</span></span>
 
-<span data-ttu-id="2b14f-123">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **CopyItem** .</span><span class="sxs-lookup"><span data-stu-id="2b14f-123">The following example shows a successful response to the **CopyItem** request.</span></span> 
+<span data-ttu-id="1a3af-123">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **CopyItem** .</span><span class="sxs-lookup"><span data-stu-id="1a3af-123">The following example shows a successful response to the **CopyItem** request.</span></span> 
   
-<span data-ttu-id="2b14f-124">El identificador de elemento del nuevo elemento se devuelve en el mensaje de respuesta.</span><span class="sxs-lookup"><span data-stu-id="2b14f-124">The item identifier of the new item is returned in the response message.</span></span> <span data-ttu-id="2b14f-125">Los identificadores de elemento no se devuelven en las respuestas para operaciones entre buzones de correo o buzones de correo en las operaciones de la carpeta pública **CopyItem** .</span><span class="sxs-lookup"><span data-stu-id="2b14f-125">Item identifiers are not returned in responses for cross-mailbox or mailbox to public folder **CopyItem** operations.</span></span> 
+<span data-ttu-id="1a3af-124">El identificador de elemento del nuevo elemento se devuelve en el mensaje de respuesta.</span><span class="sxs-lookup"><span data-stu-id="1a3af-124">The item identifier of the new item is returned in the response message.</span></span> <span data-ttu-id="1a3af-125">Los identificadores de elemento no se devuelven en las respuestas para operaciones entre buzones de correo o buzones de correo en las operaciones de la carpeta pública **CopyItem** .</span><span class="sxs-lookup"><span data-stu-id="1a3af-125">Item identifiers are not returned in responses for cross-mailbox or mailbox to public folder **CopyItem** operations.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="2b14f-126">Código</span><span class="sxs-lookup"><span data-stu-id="2b14f-126">Code</span></span>
+### <a name="code"></a><span data-ttu-id="1a3af-126">Código</span><span class="sxs-lookup"><span data-stu-id="1a3af-126">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -110,31 +110,31 @@ ms.locfileid: "44462181"
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a><span data-ttu-id="2b14f-127">Elementos Response correcto</span><span class="sxs-lookup"><span data-stu-id="2b14f-127">Successful response elements</span></span>
+### <a name="successful-response-elements"></a><span data-ttu-id="1a3af-127">Elementos Response correcto</span><span class="sxs-lookup"><span data-stu-id="1a3af-127">Successful response elements</span></span>
 
-<span data-ttu-id="2b14f-128">En la respuesta se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="2b14f-128">The following elements are used in the response:</span></span>
+<span data-ttu-id="1a3af-128">En la respuesta se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="1a3af-128">The following elements are used in the response:</span></span>
   
-- [<span data-ttu-id="2b14f-129">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="2b14f-129">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="1a3af-129">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="1a3af-129">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="2b14f-130">CopyItemResponse</span><span class="sxs-lookup"><span data-stu-id="2b14f-130">CopyItemResponse</span></span>](copyitemresponse.md)
+- [<span data-ttu-id="1a3af-130">CopyItemResponse</span><span class="sxs-lookup"><span data-stu-id="1a3af-130">CopyItemResponse</span></span>](copyitemresponse.md)
     
-- [<span data-ttu-id="2b14f-131">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="2b14f-131">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="1a3af-131">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="1a3af-131">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="2b14f-132">CopyItemResponseMessage</span><span class="sxs-lookup"><span data-stu-id="2b14f-132">CopyItemResponseMessage</span></span>](copyitemresponsemessage.md)
+- [<span data-ttu-id="1a3af-132">CopyItemResponseMessage</span><span class="sxs-lookup"><span data-stu-id="1a3af-132">CopyItemResponseMessage</span></span>](copyitemresponsemessage.md)
     
-- [<span data-ttu-id="2b14f-133">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="2b14f-133">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="1a3af-133">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="1a3af-133">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="2b14f-134">Items</span><span class="sxs-lookup"><span data-stu-id="2b14f-134">Items</span></span>](items.md)
+- [<span data-ttu-id="1a3af-134">Items</span><span class="sxs-lookup"><span data-stu-id="1a3af-134">Items</span></span>](items.md)
     
-<span data-ttu-id="2b14f-135">Para buscar otras opciones para el mensaje de respuesta de la operación **CopyItem** , explore la jerarquía del esquema.</span><span class="sxs-lookup"><span data-stu-id="2b14f-135">To find other options for the response message of the **CopyItem** operation, explore the schema hierarchy.</span></span> <span data-ttu-id="2b14f-136">Empiece en el elemento [CopyItemResponse](copyitemresponse.md) .</span><span class="sxs-lookup"><span data-stu-id="2b14f-136">Start at the [CopyItemResponse](copyitemresponse.md) element.</span></span> 
+<span data-ttu-id="1a3af-135">Para buscar otras opciones para el mensaje de respuesta de la operación **CopyItem** , explore la jerarquía del esquema.</span><span class="sxs-lookup"><span data-stu-id="1a3af-135">To find other options for the response message of the **CopyItem** operation, explore the schema hierarchy.</span></span> <span data-ttu-id="1a3af-136">Empiece en el elemento [CopyItemResponse](copyitemresponse.md) .</span><span class="sxs-lookup"><span data-stu-id="1a3af-136">Start at the [CopyItemResponse](copyitemresponse.md) element.</span></span> 
   
-## <a name="copyitem-error-response"></a><span data-ttu-id="2b14f-137">Respuesta de error de CopyItem</span><span class="sxs-lookup"><span data-stu-id="2b14f-137">CopyItem error response</span></span>
+## <a name="copyitem-error-response"></a><span data-ttu-id="1a3af-137">Respuesta de error de CopyItem</span><span class="sxs-lookup"><span data-stu-id="1a3af-137">CopyItem error response</span></span>
 
-### <a name="description"></a><span data-ttu-id="2b14f-138">Descripción</span><span class="sxs-lookup"><span data-stu-id="2b14f-138">Description</span></span>
+### <a name="description"></a><span data-ttu-id="1a3af-138">Description</span><span class="sxs-lookup"><span data-stu-id="1a3af-138">Description</span></span>
 
-<span data-ttu-id="2b14f-139">En el ejemplo siguiente se muestra una respuesta de error a una solicitud **CopyItem** .</span><span class="sxs-lookup"><span data-stu-id="2b14f-139">The following example shows an error response to a **CopyItem** request.</span></span> 
+<span data-ttu-id="1a3af-139">En el ejemplo siguiente se muestra una respuesta de error a una solicitud **CopyItem** .</span><span class="sxs-lookup"><span data-stu-id="1a3af-139">The following example shows an error response to a **CopyItem** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="2b14f-140">Código</span><span class="sxs-lookup"><span data-stu-id="2b14f-140">Code</span></span>
+### <a name="code"></a><span data-ttu-id="1a3af-140">Código</span><span class="sxs-lookup"><span data-stu-id="1a3af-140">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -162,31 +162,31 @@ ms.locfileid: "44462181"
 </soap:Envelope>
 ```
 
-### <a name="error-response-elements"></a><span data-ttu-id="2b14f-141">Elementos de respuesta de error</span><span class="sxs-lookup"><span data-stu-id="2b14f-141">Error response elements</span></span>
+### <a name="error-response-elements"></a><span data-ttu-id="1a3af-141">Elementos de respuesta de error</span><span class="sxs-lookup"><span data-stu-id="1a3af-141">Error response elements</span></span>
 
-<span data-ttu-id="2b14f-142">Los siguientes elementos se usan en la respuesta de error:</span><span class="sxs-lookup"><span data-stu-id="2b14f-142">The following elements are used in the error response:</span></span>
+<span data-ttu-id="1a3af-142">Los siguientes elementos se usan en la respuesta de error:</span><span class="sxs-lookup"><span data-stu-id="1a3af-142">The following elements are used in the error response:</span></span>
   
-- [<span data-ttu-id="2b14f-143">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="2b14f-143">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="1a3af-143">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="1a3af-143">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="2b14f-144">CopyItemResponse</span><span class="sxs-lookup"><span data-stu-id="2b14f-144">CopyItemResponse</span></span>](copyitemresponse.md)
+- [<span data-ttu-id="1a3af-144">CopyItemResponse</span><span class="sxs-lookup"><span data-stu-id="1a3af-144">CopyItemResponse</span></span>](copyitemresponse.md)
     
-- [<span data-ttu-id="2b14f-145">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="2b14f-145">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="1a3af-145">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="1a3af-145">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="2b14f-146">CopyItemResponseMessage</span><span class="sxs-lookup"><span data-stu-id="2b14f-146">CopyItemResponseMessage</span></span>](copyitemresponsemessage.md)
+- [<span data-ttu-id="1a3af-146">CopyItemResponseMessage</span><span class="sxs-lookup"><span data-stu-id="1a3af-146">CopyItemResponseMessage</span></span>](copyitemresponsemessage.md)
     
-- [<span data-ttu-id="2b14f-147">MessageText</span><span class="sxs-lookup"><span data-stu-id="2b14f-147">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="1a3af-147">MessageText</span><span class="sxs-lookup"><span data-stu-id="1a3af-147">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="2b14f-148">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="2b14f-148">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="1a3af-148">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="1a3af-148">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="2b14f-149">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="2b14f-149">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="1a3af-149">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="1a3af-149">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-- [<span data-ttu-id="2b14f-150">Items</span><span class="sxs-lookup"><span data-stu-id="2b14f-150">Items</span></span>](items.md)
+- [<span data-ttu-id="1a3af-150">Items</span><span class="sxs-lookup"><span data-stu-id="1a3af-150">Items</span></span>](items.md)
     
-<span data-ttu-id="2b14f-151">Para buscar otras opciones para el mensaje de respuesta de error de la operación **CopyItem** , explore la jerarquía del esquema.</span><span class="sxs-lookup"><span data-stu-id="2b14f-151">To find other options for the error response message of the **CopyItem** operation, explore the schema hierarchy.</span></span> <span data-ttu-id="2b14f-152">Empiece en el elemento [CopyItemResponse](copyitemresponse.md) .</span><span class="sxs-lookup"><span data-stu-id="2b14f-152">Start at the [CopyItemResponse](copyitemresponse.md) element.</span></span> 
+<span data-ttu-id="1a3af-151">Para buscar otras opciones para el mensaje de respuesta de error de la operación **CopyItem** , explore la jerarquía del esquema.</span><span class="sxs-lookup"><span data-stu-id="1a3af-151">To find other options for the error response message of the **CopyItem** operation, explore the schema hierarchy.</span></span> <span data-ttu-id="1a3af-152">Empiece en el elemento [CopyItemResponse](copyitemresponse.md) .</span><span class="sxs-lookup"><span data-stu-id="1a3af-152">Start at the [CopyItemResponse](copyitemresponse.md) element.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="2b14f-153">Vea también</span><span class="sxs-lookup"><span data-stu-id="2b14f-153">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1a3af-153">Vea también</span><span class="sxs-lookup"><span data-stu-id="1a3af-153">See also</span></span>
 
 
 
-- [<span data-ttu-id="2b14f-154">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="2b14f-154">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="1a3af-154">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="1a3af-154">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
