@@ -1,42 +1,42 @@
 ---
-title: Mensajes de correo electrónico de proceso por lotes mediante el uso de EWS en Exchange
+title: Procesar mensajes de correo electrónico en lotes mediante EWS en Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 96390f92-cab1-4de6-9ec2-a55678fc20af
-description: Obtenga información sobre cómo crear, obtener, actualizar y eliminar lotes de mensajes de correo electrónico en una sola llamada mediante la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: b7dcc8f0961a34061b0476e2136193bf21731d99
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Obtenga información sobre cómo crear, obtener, actualizar y eliminar lotes de mensajes de correo electrónico en una sola llamada usando la API administrada de EWS o EWS en Exchange.
+localization_priority: Priority
+ms.openlocfilehash: 2592076c9c5b57356d96872f006dd7b0abfc328a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354046"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527778"
 ---
-# <a name="process-email-messages-in-batches-by-using-ews-in-exchange"></a>Mensajes de correo electrónico de proceso por lotes mediante el uso de EWS en Exchange
+# <a name="process-email-messages-in-batches-by-using-ews-in-exchange"></a>Procesar mensajes de correo electrónico en lotes mediante EWS en Exchange
 
-Obtenga información sobre cómo crear, obtener, actualizar y eliminar lotes de mensajes de correo electrónico en una sola llamada mediante la API administrada de EWS o EWS en Exchange.
-  
-Puede usar la API administrada de EWS o realiza EWS para trabajar con lotes de mensajes de correo electrónico para reducir el número de llamadas de un cliente a un servidor de Exchange. Cuando se usa la API administrada de EWS para crear, obtener, actualizar, eliminar y enviar mensajes por lotes, use métodos del objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) , mientras que cuando se trabaja con los mensajes de correo electrónico única, use métodos del objeto [EmailMessage](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) . Si usa EWS, use las mismas operaciones para trabajar con un solo y lotes de mensajes de correo electrónico. 
-  
-**La tabla 1. Métodos de la API administrada de EWS y las operaciones de EWS para trabajar con lotes de mensajes de correo electrónico**
+Obtenga información sobre cómo crear, obtener, actualizar y eliminar lotes de mensajes de correo electrónico en una sola llamada usando la API administrada de EWS o EWS en Exchange.
 
-|**Con el fin...**|**Use este método de la API administrada de EWS**|**Use esta operación de EWS**|
+Puede usar la API administrada de EWS o EWS para trabajar con lotes de mensajes de correo electrónico para reducir el número de llamadas que un cliente realiza a un servidor de Exchange. Cuando se usa la API administrada de EWS para crear, obtener, actualizar, eliminar y enviar mensajes por lotes, se usan los métodos del objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) , mientras que cuando se trabaja con mensajes de correo electrónico individuales, se usan los métodos del objeto [EmailMessage](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) . Si usa EWS, use las mismas operaciones para trabajar con los mensajes de correo electrónico individuales y de lotes.
+
+**Tabla 1. Métodos de API administrada de EWS y operaciones EWS para trabajar con lotes de mensajes de correo electrónico**
+
+|**Para**|**Usar este método de API administrada de EWS**|**Usar esta operación de EWS**|
 |:-----|:-----|:-----|
-|Crear mensajes de correo electrónico por lotes  <br/> |[ExchangeService.CreateItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
-|Obtener mensajes de correo electrónico por lotes  <br/> |[ExchangeService.BindToItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) <br/> |
-|Mensajes de correo electrónico de actualización por lotes  <br/> |[ExchangeService.UpdateItems](http://msdn.microsoft.com/en-us/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
-|Eliminar mensajes de correo electrónico por lotes  <br/> |[ExchangeService.DeleteItems](http://msdn.microsoft.com/en-us/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
-   
-En este artículo, aprenderá cómo completar tareas básicas de lotes de mensajes de correo electrónico mediante el uso de la API administrada de EWS o EWS.
-  
-## <a name="create-email-messages-in-batches-by-using-the-ews-managed-api"></a>Crear mensajes de correo electrónico en lotes mediante el uso de la API administrada de EWS
+|Crear mensajes de correo electrónico por lotes  <br/> |[ExchangeService. CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
+|Obtener mensajes de correo electrónico por lotes  <br/> |[ExchangeService. BindToItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) <br/> |
+|Actualizar mensajes de correo electrónico por lotes  <br/> |[ExchangeService. UpdateItems](https://msdn.microsoft.com/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
+|Eliminar mensajes de correo electrónico por lotes  <br/> |[ExchangeService. DeleteItems](https://msdn.microsoft.com/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
+
+En este artículo, aprenderá a completar tareas básicas para lotes de mensajes de correo electrónico mediante la API administrada de EWS o EWS.
+
+## <a name="create-email-messages-in-batches-by-using-the-ews-managed-api"></a>Crear mensajes de correo electrónico en lotes mediante la API administrada de EWS
 <a name="bk_createewsma"> </a>
 
-Puede crear mensajes por lotes con el método de la API administrada de EWS **CreateItems** , tal como se muestra en el siguiente ejemplo. En este ejemplo se crean tres objetos [EmailMessage](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) localmente, agrega cada mensaje a una colección, a continuación, se llama al método **CreateItems** en la colección de mensajes. 
-  
-En este ejemplo se da por supuesto que **servicio** es un objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que se ha autenticado el usuario a un servidor de Exchange. 
-  
+Puede crear mensajes en lotes con el método **CreateItems** de la API administrada de EWS, como se muestra en el ejemplo siguiente. En este ejemplo se crean tres objetos [EmailMessage](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) de forma local, se agrega cada mensaje a una colección y, a continuación, se llama al método **CreateItems** en la colección de mensajes.
+
+En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un servidor de Exchange.
+
 ```cs
 public static Collection<ItemId> CreateDraftEmailInBatch(ExchangeService service)
 {
@@ -86,7 +86,7 @@ public static Collection<ItemId> CreateDraftEmailInBatch(ExchangeService service
             Console.WriteLine("All locally created messages were successfully saved to the Drafts folder.");
             Console.WriteLine("\r\n");
     }
-   
+
     // If the method did not return success, print the result message for each email.
     else
     {
@@ -105,19 +105,19 @@ public static Collection<ItemId> CreateDraftEmailInBatch(ExchangeService service
 }
 ```
 
-Tenga en cuenta que en el ejemplo se guarda sólo los mensajes en la carpeta Borradores; no envía los mensajes. Para obtener más información acerca de cómo enviar los mensajes, vea [enviar mensajes de correo electrónico en lotes mediante el uso de la API administrada de EWS](#bk_sendewsma).
-  
+Tenga en cuenta que en el ejemplo solo se guardan los mensajes en la carpeta Borradores; no envía los mensajes. Para obtener más información sobre cómo enviar los mensajes, vea [enviar mensajes de correo electrónico en lotes mediante la API administrada de EWS](#bk_sendewsma).
+
 ## <a name="create-email-messages-in-batches-by-using-ews"></a>Crear mensajes de correo electrónico en lotes mediante EWS
 <a name="bk_createews"> </a>
 
-Puede crear mensajes de correo electrónico en lotes mediante la operación [CreateItem](http://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) EWS, tal como se muestra en el siguiente ejemplo de código. También es la solicitud XML que la API administrada de EWS envía al usar la API administrada de EWS para [crear mensajes de correo electrónico en lotes](#bk_createewsma). 
-  
+Puede crear mensajes de correo electrónico en lotes mediante la operación de EWS del [CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) , como se muestra en el siguiente ejemplo de código. También es la solicitud XML que la API administrada de EWS envía cuando usa la API administrada de EWS para [crear mensajes de correo electrónico en lotes](#bk_createewsma).
+
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -160,26 +160,26 @@ Puede crear mensajes de correo electrónico en lotes mediante la operación [Cre
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud **CreateItem** con un mensaje de [CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError** para cada uno de los mensajes nuevos, lo que indica que cada correo electrónico se ha creado y guardado correctamente . 
-  
-Tenga en cuenta que en el ejemplo se guarda sólo los mensajes en la carpeta Borradores; no envía los mensajes. Para obtener más información acerca de cómo enviar los mensajes, vea [enviar mensajes de correo electrónico en lotes mediante el uso de EWS](#bk_sendews).
-  
-## <a name="send-email-messages-in-batches-by-using-the-ews-managed-api"></a>Enviar mensajes de correo electrónico en lotes mediante el uso de la API administrada de EWS
+El servidor responde a la solicitud **CreateItem** con un mensaje [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError** para cada uno de los nuevos mensajes, lo que indica que cada mensaje se creó y guardó correctamente.
+
+Tenga en cuenta que en el ejemplo solo se guardan los mensajes en la carpeta Borradores; no envía los mensajes. Para obtener más información sobre cómo enviar los mensajes, consulte [enviar mensajes de correo electrónico en lotes mediante EWS](#bk_sendews).
+
+## <a name="send-email-messages-in-batches-by-using-the-ews-managed-api"></a>Enviar mensajes de correo electrónico por lotes mediante la API administrada de EWS
 <a name="bk_sendewsma"> </a>
 
-Usar el mismo código para enviar mensajes de correo electrónico en lotes que usar para crear mensajes de correo electrónico en lotes, excepto en que algunos de los parámetros del método [CreateItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) cambiar. Por lo tanto, para enviar mensajes de correo electrónico mediante el uso de la API administrada de EWS, use el código que se utiliza para [crear mensajes de correo electrónico en lotes](#bk_createewsma)y reemplace la llamada al método **CreateItems** con la llamada en el siguiente ejemplo. En este ejemplo, los mensajes se crean en la carpeta Elementos enviados y la disposición de mensaje se cambia a [MessageDisposition.SendAndSaveCopy](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.messagedisposition%28v=exchg.80%29.aspx), por lo que se envía el mensaje y no sólo guardado localmente.
-  
+Se usa el mismo código para enviar mensajes de correo electrónico en lotes que se usan para crear mensajes de correo electrónico en lotes, excepto en que algunos de los parámetros del método [CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) cambian. Por lo tanto, para enviar mensajes de correo electrónico mediante la API administrada de EWS, use el código que usa para [crear mensajes de correo electrónico en lotes](#bk_createewsma)y reemplace la llamada al método **CreateItems** por la llamada en el ejemplo siguiente. En este ejemplo, los mensajes se crean en la carpeta elementos enviados y la disposición del mensaje se cambia a [MessageDisposition. SendAndSaveCopy](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.messagedisposition%28v=exchg.80%29.aspx), de modo que el mensaje se envía y no se acaba de guardar localmente.
+
 ```cs
 // Create and send the batch of email messages on the server.
 // This method call results in an CreateItem call to EWS.
 ServiceResponseCollection<ServiceResponse> response = service.CreateItems(messageItems, WellKnownFolderName.SentItems, MessageDisposition.SendAndSaveCopy, null);
 ```
 
-## <a name="send-email-messages-in-batches-by-using-ews"></a>Enviar mensajes de correo electrónico en lotes mediante el uso de EWS
+## <a name="send-email-messages-in-batches-by-using-ews"></a>Enviar mensajes de correo electrónico por lotes mediante EWS
 <a name="bk_sendews"> </a>
 
-Usar el mismo código para enviar mensajes de correo electrónico en lotes que usar para crear mensajes de correo electrónico en lotes, excepto en que algunos de los valores de atributo cambiar para la operación **CreateItem** . Por lo tanto, para enviar mensajes de correo electrónico mediante el uso de EWS, use el código que use para [crear el mensaje de correo electrónico en lotes](#bk_createews)y cambie el valor de **MessageDisposition** a "SendAndSaveCopy" y cambie el [DistinguishedFolderId](http://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx) a "elementos enviados", como se muestra en el ejemplo de código siguiente. 
-  
+Se usa el mismo código para enviar mensajes de correo electrónico en lotes que se usan para crear mensajes de correo electrónico en lotes, excepto en que algunos de los valores de atributo cambian para la operación **CreateItem** . Por lo tanto, para enviar mensajes de correo electrónico con EWS, use el código que usa para [crear mensajes de correo electrónico por lotes](#bk_createews)y cambie el valor de **MessageDisposition** a "SendAndSaveCopy" y cambie el [DistinguishedFolderId](https://msdn.microsoft.com/library/50018162-2941-4227-8a5b-d6b4686bb32f%28Office.15%29.aspx) a "sentitems", como se muestra en el siguiente ejemplo de código.
+
 ```XML
 <m:CreateItem MessageDisposition="SendAndSaveCopy">
   <m:SavedItemFolderId>
@@ -187,15 +187,15 @@ Usar el mismo código para enviar mensajes de correo electrónico en lotes que u
   </m:SavedItemFolderId>
 ```
 
-El servidor responde a la solicitud **CreateItem** con un mensaje de [CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError** para cada uno de los mensajes nuevos, lo que indica que se ha creado y se ha enviado correctamente cada correo electrónico. 
-  
-## <a name="get-email-messages-in-batches-by-using-the-ews-managed-api"></a>Obtener mensajes de correo electrónico en lotes mediante el uso de la API administrada de EWS
+El servidor responde a la solicitud **CreateItem** con un mensaje [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError** para cada uno de los nuevos mensajes, lo que indica que cada mensaje de correo electrónico se ha creado y enviado correctamente.
+
+## <a name="get-email-messages-in-batches-by-using-the-ews-managed-api"></a>Obtener mensajes de correo electrónico en lotes mediante la API administrada de EWS
 <a name="bk_getewsma"> </a>
 
-Para obtener los mensajes de correo electrónico en lotes mediante el método de la API administrada de EWS [BindToItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) , tal como se muestra en el siguiente ejemplo. 
-  
-En este ejemplo se da por supuesto que **servicio** es un objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que se ha autenticado el usuario a un servidor de Exchange. 
-  
+Puede obtener mensajes de correo electrónico en lotes con el método [BindToItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) de la API administrada de EWS, como se muestra en el ejemplo siguiente.
+
+En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un servidor de Exchange.
+
 ```cs
 public static Collection<EmailMessage> BatchGetEmailItems(ExchangeService service, Collection<ItemId> itemIds)
 {
@@ -204,7 +204,7 @@ public static Collection<EmailMessage> BatchGetEmailItems(ExchangeService servic
     // Get the items from the server.
     // This method call results in a GetItem call to EWS.
     ServiceResponseCollection<GetItemResponse> response = service.BindToItems(itemIds, propSet);
-           
+
     // Instantiate a collection of EmailMessage objects to populate from the values that are returned by the Exchange server.
     Collection<EmailMessage> messageItems = new Collection<EmailMessage>();
     foreach (GetItemResponse getItemResponse in response)
@@ -232,19 +232,19 @@ public static Collection<EmailMessage> BatchGetEmailItems(ExchangeService servic
 }
 ```
 
-## <a name="get-email-messages-in-batches-by-using-ews"></a>Obtener mensajes de correo electrónico en lotes mediante el uso de EWS
+## <a name="get-email-messages-in-batches-by-using-ews"></a>Obtener mensajes de correo electrónico en lotes mediante EWS
 <a name="bk_getews"> </a>
 
-Puede obtener mensajes de correo electrónico en lotes mediante la operación de EWS [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) y el código en el siguiente ejemplo. También es la solicitud XML que la API administrada de EWS envía al usar la API administrada de EWS para [obtener los mensajes de correo electrónico en lotes](#bk_getewsma). 
-  
-Los atributos **ItemId** y **ChangeKey** se han abreviado para mejorar la legibilidad. 
-  
+Puede obtener mensajes de correo electrónico en lotes mediante la operación EWS de [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) y el código del siguiente ejemplo. También es la solicitud XML que la API administrada de EWS envía cuando usa la API administrada de EWS para [obtener mensajes de correo electrónico en lotes](#bk_getewsma).
+
+Los atributos **Itemid** y **changekey** se han abreviado para facilitar su lectura.
+
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -270,19 +270,19 @@ Los atributos **ItemId** y **ChangeKey** se han abreviado para mejorar la legibi
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud de **GetItem** con un mensaje de [GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) que incluye las [Propiedades de primera clase](email-properties-and-elements-in-ews-in-exchange.md) para cada uno de los mensajes solicitados. 
-  
-## <a name="update-email-messages-in-batches-by-using-the-ews-managed-api"></a>Mensajes de correo electrónico de actualización por lotes mediante el uso de la API administrada de EWS
+El servidor responde a la solicitud **GetItem** con un mensaje [GetItemResponse](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) que incluye las propiedades de la [primera clase](email-properties-and-elements-in-ews-in-exchange.md) para cada uno de los mensajes solicitados.
+
+## <a name="update-email-messages-in-batches-by-using-the-ews-managed-api"></a>Actualizar mensajes de correo electrónico en lotes mediante la API administrada de EWS
 <a name="bk_updateewsma"> </a>
 
-Para obtener los mensajes de correo electrónico en lotes mediante el método de la API administrada de EWS [UpdateItems](http://msdn.microsoft.com/en-us/library/dd634705%28v=exchg.80%29.aspx) , tal como se muestra en el siguiente ejemplo. 
-  
-Para obtener una lista de propiedades del mensaje de correo electrónico puede escribir, vea [de correo electrónico las propiedades y los elementos de EWS en Exchange](email-properties-and-elements-in-ews-in-exchange.md).
-  
-Para obtener información detallada acerca de cómo enviar un mensaje de borrador después de que se ha actualizado, consulte [envío de mensajes de correo electrónico mediante el uso de la API administrada de EWS](#bk_sendewsma).
-  
-En este ejemplo se da por supuesto que **servicio** es un objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que se ha autenticado el usuario a un servidor de Exchange. 
-  
+Puede obtener mensajes de correo electrónico en lotes con el método [UpdateItems](https://msdn.microsoft.com/library/dd634705%28v=exchg.80%29.aspx) de la API administrada de EWS, como se muestra en el ejemplo siguiente.
+
+Para obtener una lista de las propiedades de mensajes de correo electrónico que se puede escribir, consulte [email Properties and Elements in EWS in Exchange](email-properties-and-elements-in-ews-in-exchange.md).
+
+Para obtener información detallada sobre cómo enviar un borrador de mensaje una vez actualizado, vea [enviar mensajes de correo electrónico mediante la API administrada de EWS](#bk_sendewsma).
+
+En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un servidor de Exchange.
+
 ```cs
 public static Collection<EmailMessage> BatchUpdateEmailItems(ExchangeService service, Collection<EmailMessage> messageItems)
 {
@@ -316,24 +316,24 @@ public static Collection<EmailMessage> BatchUpdateEmailItems(ExchangeService ser
         }
     }
     return messageItems;
-}    
+}
 ```
 
-## <a name="update-email-messages-in-batches-by-using-ews"></a>Mensajes de correo electrónico de actualización por lotes mediante el uso de EWS
+## <a name="update-email-messages-in-batches-by-using-ews"></a>Actualizar mensajes de correo electrónico en lotes mediante EWS
 <a name="bk_updateews"> </a>
 
-Puede actualizar los mensajes de correo electrónico en lotes mediante la operación de EWS [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) , tal como se muestra en el siguiente ejemplo de código. También es la solicitud XML que la API administrada de EWS envía al usar la API administrada de EWS para [actualizar los mensajes de correo electrónico en lotes](#bk_updateewsma).
-  
-Para obtener una lista de elementos de mensaje de correo electrónico puede escribir, vea [de correo electrónico las propiedades y los elementos de EWS en Exchange](email-properties-and-elements-in-ews-in-exchange.md).
-  
-Para obtener información detallada acerca de cómo enviar un mensaje de borrador después de que se ha actualizado, vea [Enviar un borrador de mensaje de correo electrónico mediante el uso de EWS](how-to-send-email-messages-by-using-ews-in-exchange.md#bk_senddraftews).
-  
+Puede actualizar los mensajes de correo electrónico en lotes mediante la operación de EWS de [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) , tal como se muestra en el siguiente ejemplo de código. También es la solicitud XML que la API administrada de EWS envía cuando usa la API administrada de EWS para [actualizar los mensajes de correo electrónico en lotes](#bk_updateewsma).
+
+Para obtener una lista de los elementos de mensajes de correo electrónico que se puede escribir, consulte [email Properties and Elements in EWS in Exchange](email-properties-and-elements-in-ews-in-exchange.md).
+
+Para obtener información detallada sobre cómo enviar un borrador de mensaje una vez actualizado, vea [Enviar un borrador de mensaje de correo electrónico mediante EWS](how-to-send-email-messages-by-using-ews-in-exchange.md#bk_senddraftews).
+
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -386,22 +386,22 @@ Para obtener información detallada acerca de cómo enviar un mensaje de borrado
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud de **UpdateItem** con un mensaje de [UpdateItemResponse](http://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) que incluye un valor [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, lo que indica que cada una de las actualizaciones se guardó correctamente en el servidor. Se informa de los conflictos en el elemento [ConflictResult](http://msdn.microsoft.com/library/08cdd547-4de7-4c7a-b60f-e618dc217d20%28Office.15%29.aspx) . 
-  
+El servidor responde a la solicitud **UpdateItem** con un mensaje [UpdateItemResponse](https://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) que incluye un [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) valor de **NoError**, lo que indica que cada una de las actualizaciones se guardaron correctamente en el servidor. Los conflictos se notifican en el elemento [ConflictResult](https://msdn.microsoft.com/library/08cdd547-4de7-4c7a-b60f-e618dc217d20%28Office.15%29.aspx) .
+
 ## <a name="delete-email-messages-in-batches-by-using-the-ews-managed-api"></a>Eliminar mensajes de correo electrónico en lotes mediante la API administrada de EWS
 <a name="bk_deleteewsma"> </a>
 
-Puede eliminar mensajes por lotes con el método de la API administrada de EWS [DeleteItems](http://msdn.microsoft.com/en-us/library/dd635460%28v=exchg.80%29.aspx) , tal como se muestra en el siguiente ejemplo. 
-  
-En este ejemplo se da por supuesto que **servicio** es un objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que se ha autenticado el usuario a un servidor de Exchange. 
-  
+Puede eliminar mensajes en lotes con el método [DeleteItems](https://msdn.microsoft.com/library/dd635460%28v=exchg.80%29.aspx) de la API administrada de EWS, como se muestra en el ejemplo siguiente.
+
+En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un servidor de Exchange.
+
 ```cs
 public static void BatchDeleteEmailItems(ExchangeService service, Collection<ItemId> itemIds)
 {
     // Delete the batch of email message objects.
     // This method call results in an DeleteItem call to EWS.
     ServiceResponseCollection<ServiceResponse> response = service.DeleteItems(itemIds, DeleteMode.SoftDelete, null, AffectedTaskOccurrence.AllOccurrences);
-    
+
     // Check for success of the DeleteItems method call.
     // DeleteItems returns success even if it does not find all the item IDs.
     if (response.OverallResult == ServiceResult.Success)
@@ -419,14 +419,14 @@ public static void BatchDeleteEmailItems(ExchangeService service, Collection<Ite
 ## <a name="delete-email-messages-in-batches-by-using-ews"></a>Eliminar mensajes de correo electrónico en lotes mediante EWS
 <a name="bk_deleteews"> </a>
 
-Puede eliminar mensajes de correo electrónico en lotes mediante la operación de EWS [DeleteItem](../web-service-reference/deleteitem-operation.md) , tal como se muestra en el siguiente ejemplo de código. También es la solicitud XML que la API administrada de EWS envía al usar la API administrada de EWS para [Eliminar mensajes de correo electrónico en lotes](#bk_deleteewsma).
-  
+Puede eliminar mensajes de correo electrónico en lotes mediante la operación de EWS [DeleteItem](../web-service-reference/deleteitem-operation.md) , tal como se muestra en el siguiente ejemplo de código. También es la solicitud XML que la API administrada de EWS envía cuando usa la API administrada de EWS para [eliminar mensajes de correo electrónico en lotes](#bk_deleteewsma).
+
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -446,29 +446,29 @@ Puede eliminar mensajes de correo electrónico en lotes mediante la operación d
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud de **DeleteItem** con un mensaje de [DeleteItemResponse](http://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx) que incluye un valor [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError** para cada elemento que se ha quitado. Tenga en cuenta que la operación también devuelve success si no se pudo encontrar el identificador de elemento. 
-  
-## <a name="verifying-that-a-batch-process-completed-successfully"></a>Comprobar que un proceso por lotes se completó correctamente
+El servidor responde a la solicitud **DeleteItem** con un mensaje [DeleteItemResponse](https://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError** para cada elemento que se ha quitado. Tenga en cuenta que la operación también devuelve SUCCESS si no se encuentra el identificador de elemento.
+
+## <a name="verifying-that-a-batch-process-completed-successfully"></a>Comprobación de la finalización correcta de un proceso por lotes
 <a name="bk_successful"> </a>
 
-Cuando no se puede procesar uno o más mensajes de correo electrónico en una solicitud por lotes como se ha solicitado, se devuelve un error de cada mensaje de correo electrónico que no se pudo, y el resto de los mensajes de correo electrónico en el lote se procesan según lo previsto. Pueden producirse errores en el procesamiento por lotes si el elemento se ha eliminado y por lo tanto, no se envía, recuperar o actualizado, o si el elemento movido a una carpeta diferente y por lo tanto, tiene un nuevo identificador de elemento y no se puede modificar con el identificador de elemento que se envía. La información de esta sección muestra cómo obtener los detalles del error acerca de los errores de procesamiento por lotes de mensaje de correo electrónico.
-  
-Para comprobar el éxito de un proceso por lotes mediante el uso de la API administrada de EWS, puede comprobar que la propiedad [OverallResult](http://msdn.microsoft.com/en-us/library/dd634515%28v=exchg.80%29.aspx) de la [ServiceResponseCollection](http://msdn.microsoft.com/en-us/library/dd633715%28v=exchg.80%29.aspx) es igual a [ServiceResult.Success](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx). Si es así, todos los correos electrónicos se procesan correctamente. Si el **OverallResult** no es igual a **ServiceResult.Success**, uno o varios de los mensajes de correo electrónico no se procesó correctamente. Cada uno de los objetos devueltos en la **ServiceResponseCollection** contiene las siguientes propiedades: 
-  
-- [ErrorCode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errorcode%28v=exchg.80%29.aspx)
-    
-- [ErrorDetails](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errordetails%28v=exchg.80%29.aspx)
-    
-- [ErrorMessage](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errormessage%28v=exchg.80%29.aspx)
-    
-- [ErrorProperties](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceresponse.errorproperties%28v=exchg.80%29.aspx)
-    
-- [Resultado](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.serviceresponse.result%28v=exchg.80%29.aspx)
-    
-Estas propiedades contienen información acerca de por qué los mensajes de correo electrónico no se podrían procesar como se solicitó. Los ejemplos de este artículo imprimen los **resultados**, **ErrorCode**y **ErrorMessage** para cada mensaje de error. Puede utilizar estos resultados para investigar el problema. 
-  
-Para EWS, para comprobar el éxito de un proceso por lotes, consulte el atributo [ResponseClass](http://msdn.microsoft.com/library/bf57265a-d354-4cd7-bbfc-d93e19cbede6%28Office.15%29.aspx) para cada elemento que se está procesando. La siguiente es la estructura básica de la **ResponseMessageType**, el tipo base de qué respuesta todos los mensajes se derivan. 
-  
+Cuando no se pueden procesar uno o varios mensajes de correo electrónico en una solicitud por lotes como se solicitó, se devuelve un error para cada mensaje de correo electrónico en el que se ha producido un error y el resto de los correos electrónicos del lote se procesan como se esperaba. Los errores en el procesamiento por lotes pueden producirse si el elemento se eliminó y, por lo tanto, no se puede enviar, recuperar o actualizar, o si el elemento se movió a una carpeta diferente y, por lo tanto, tiene un identificador de elemento nuevo y no se puede modificar con el identificador de elemento enviado. La información de esta sección muestra cómo obtener detalles de error sobre los errores en el procesamiento por lotes del mensaje de correo electrónico.
+
+Para comprobar que el proceso por lotes se ha realizado correctamente mediante la API administrada de EWS, puede comprobar que la propiedad [OverallResult](https://msdn.microsoft.com/library/dd634515%28v=exchg.80%29.aspx) de [ServiceResponseCollection](https://msdn.microsoft.com/library/dd633715%28v=exchg.80%29.aspx) es igual a [ServiceResult. Success](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx). Si es así, todos los correos electrónicos se procesaron correctamente. Si **OverallResult** no es igual a **ServiceResult. Success**, no se procesaron correctamente uno o más de los mensajes de correo electrónico. Cada uno de los objetos devueltos en **ServiceResponseCollection** contiene las siguientes propiedades:
+
+- [ErrorCode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errorcode%28v=exchg.80%29.aspx)
+
+- [ErrorDetails](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errordetails%28v=exchg.80%29.aspx)
+
+- [ErrorMessage](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errormessage%28v=exchg.80%29.aspx)
+
+- [ErrorProperties](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errorproperties%28v=exchg.80%29.aspx)
+
+- [Resultado](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.serviceresponse.result%28v=exchg.80%29.aspx)
+
+Estas propiedades contienen información sobre por qué los mensajes de correo electrónico no se pudieron procesar como se ha solicitado. Los ejemplos de este artículo imprimen el **resultado**, **ErrorCode**y **errorMessage** de cada mensaje con errores. Puede usar estos resultados para investigar el problema.
+
+Para EWS, para comprobar que el proceso por lotes se ha realizado correctamente, compruebe el atributo [ResponseClass](https://msdn.microsoft.com/library/bf57265a-d354-4cd7-bbfc-d93e19cbede6%28Office.15%29.aspx) para cada elemento que se está procesando. La siguiente es la estructura básica de **ResponseMessageType**, el tipo base del que se derivan todos los mensajes de respuesta.
+
 ```XML
 <ResponseMessage ResponseClass="Success | Warning | Error">
             <MessageText/>
@@ -478,19 +478,17 @@ Para EWS, para comprobar el éxito de un proceso por lotes, consulte el atributo
 </ResponseMessage>
 ```
 
-El atributo **ResponseClass** se establece en **correcto** si el correo electrónico se procesó correctamente, o el **Error** si el correo electrónico no se procesó correctamente. Para los mensajes de correo electrónico, no se producirá una **Advertencia** durante el procesamiento por lotes. Si la **ResponseClass** es **correcto**, el elemento [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) que sigue también siempre se establece en **NoError**. Si la **ResponseClass** es **Error**, debe comprobar los valores de los elementos [MessageText](http://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx), **ResponseCode**y [MessageXml](http://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx) para determinar la causa del problema. [DescriptiveLinkKey](http://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx) se utiliza actualmente. 
-  
+El atributo **ResponseClass** se establece en **Success** si el correo electrónico se ha procesado correctamente, o **error** si el correo electrónico no se ha procesado correctamente. Para los mensajes de correo electrónico, no encontrará ninguna **ADVERTENCIA** durante el procesamiento por lotes. Si el **ResponseClass** es **correcto**, el elemento [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) que sigue también se establece siempre en **NoError**. Si el **ResponseClass** es **error**, debe comprobar los valores de los elementos [MessageText](https://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx), **ResponseCode**y [MessageXml](https://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx) para determinar la causa del problema. [DescriptiveLinkKey](https://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx) actualmente no está en uso.
+
 ## <a name="see-also"></a>Vea también
 
 
 - [Correo electrónico y EWS en Exchange](email-and-ews-in-exchange.md)
-    
-- [Enviar mensajes de correo electrónico mediante el uso de EWS en Exchange](how-to-send-email-messages-by-using-ews-in-exchange.md)
-    
-- [Responder a mensajes de correo electrónico mediante el uso de EWS en Exchange](how-to-respond-to-email-messages-by-using-ews-in-exchange.md)
-    
-- [Mover y copiar los mensajes de correo electrónico mediante el uso de EWS en Exchange](how-to-move-and-copy-email-messages-by-using-ews-in-exchange.md)
-    
-- [Limitación de implicaciones para las solicitudes de lote EWS](ews-throttling-in-exchange.md#bk_ThrottlingBatch)
-    
 
+- [Enviar mensajes de correo electrónico mediante EWS en Exchange](how-to-send-email-messages-by-using-ews-in-exchange.md)
+
+- [Responder a mensajes de correo electrónico mediante EWS en Exchange](how-to-respond-to-email-messages-by-using-ews-in-exchange.md)
+
+- [Mover y copiar mensajes de correo electrónico mediante EWS en Exchange](how-to-move-and-copy-email-messages-by-using-ews-in-exchange.md)
+
+- [Implicaciones de limitación de solicitudes por lotes de EWS](ews-throttling-in-exchange.md#throttling-implications-for-ews-batch-requests)

@@ -1,51 +1,51 @@
 ---
-title: Trabajar con los elementos del buzón de Exchange mediante EWS en Exchange
+title: Trabajar con elementos de buzón de Exchange mediante EWS en Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 721deb84-f85d-45d0-84c1-0ed55f359969
-description: Obtenga información sobre cómo crear, obtener, actualizar y eliminar elementos mediante la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: a40cd7ae682c1fb0a8d2f9cfcb10d99d4ab08052
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Obtenga información sobre cómo crear, obtener, actualizar y eliminar elementos con la API administrada de EWS o EWS en Exchange.
+localization_priority: Priority
+ms.openlocfilehash: e86affbe8efe0dfc312f5ed5fadec2547f1352ea
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353969"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527589"
 ---
-# <a name="work-with-exchange-mailbox-items-by-using-ews-in-exchange"></a>Trabajar con los elementos del buzón de Exchange mediante EWS en Exchange
+# <a name="work-with-exchange-mailbox-items-by-using-ews-in-exchange"></a>Trabajar con elementos de buzón de Exchange mediante EWS en Exchange
 
-Obtenga información sobre cómo crear, obtener, actualizar y eliminar elementos mediante la API administrada de EWS o EWS en Exchange.
+Obtenga información sobre cómo crear, obtener, actualizar y eliminar elementos con la API administrada de EWS o EWS en Exchange.
   
-Puede usar la API administrada de EWS o EWS para trabajar con elementos de un buzón de correo. Puede usar los elementos genéricos: objetos de [elemento](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item%28v=exchg.80%29.aspx) de API administrada de EWS o tipos de [elemento](http://msdn.microsoft.com/library/4dfe8f48-e7b4-444d-bdf9-a34e180f598b%28Office.15%29.aspx) EWS: para realizar algunas operaciones (obtención de un elemento o eliminación de un elemento con el identificador del elemento); Sin embargo, la mayor parte de la hora en que tendrá que usar un [elemento con establecimiento inflexible de tipos](folders-and-items-in-ews-in-exchange.md#bk_item) para llevar a cabo una operación get o la operación de actualización debido a que tendrá acceso a las propiedades que son específicas para el elemento fuertemente tipado. 
+Puede usar la API administrada de EWS o EWS para trabajar con elementos en un buzón. Puede usar elementos genéricos (objetos de [elemento](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item%28v=exchg.80%29.aspx) de la API administrada de EWS o tipos de [elementos](https://msdn.microsoft.com/library/4dfe8f48-e7b4-444d-bdf9-a34e180f598b%28Office.15%29.aspx) EWS) para realizar algunas operaciones (obtener un elemento o eliminar un elemento mediante el identificador del elemento); sin embargo, la mayoría de las veces tendrá que usar un [elemento con establecimiento inflexible de tipos](folders-and-items-in-ews-in-exchange.md#bk_item) para realizar una operación de obtención o actualización, ya que necesitará tener acceso a las propiedades que son específicas del elemento con establecimiento inflexible de tipos. 
 
-Por ejemplo, no puede usar un elemento genérico para recuperar un elemento que contiene un inicio y fecha de finalización: necesita un objeto de la API administrada de EWS [cita](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) o un tipo de EWS [CalendarItem](http://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) para hacerlo. Y si se usa la API administrada de EWS, siempre debe crear elementos fuertemente tipados, porque la clase de **elemento** genérica no tiene un constructor. Si está trabajando con un elemento que no está fuertemente tipado, siempre puede usar la clase de **elemento** base para trabajar con el elemento. 
+Por ejemplo, no puede usar un elemento genérico para recuperar un elemento que contenga una fecha de inicio y de finalización, necesita un objeto de [cita](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) de API administrada EWS o un tipo [CalendarItem](https://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) de EWS para ello. Y, si usa la API administrada de EWS, siempre tendrá que crear elementos con establecimiento inflexible de tipos, ya que la clase de **elemento** genérico no tiene un constructor. Si está trabajando con un elemento que no tiene establecimiento inflexible de tipos, puede usar siempre la clase de **elemento** base para trabajar con el elemento. 
   
-**La tabla 1. Métodos de la API administrada de EWS y las operaciones de EWS para trabajar con elementos**
+**Tabla 1. Métodos de API administrada de EWS y operaciones de EWS para trabajar con elementos**
 
-|**Con el fin...**|**Método de la API administrada de EWS**|**Operación de EWS**|
+|**Para**|**Método de la API administrada de EWS**|**Operación de EWS**|
 |:-----|:-----|:-----|
-|Crear un elemento genérico  <br/> |Ninguno. Sólo se pueden crear tipos de elemento específico mediante el uso de la API administrada de EWS; no se puede crear los elementos genéricos.  <br/> |[CreateItem](http://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) <br/> |
-|Obtener un elemento  <br/> |[Item.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) <br/> |
-|Actualizar un elemento  <br/> |[Item.Update](http://msdn.microsoft.com/en-us/library/office/dd635915%28v=exchg.80%29.aspx) <br/> |[UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
-|Eliminar un elemento  <br/> |[Item.Delete](http://msdn.microsoft.com/en-us/library/office/dd635072%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
+|Crear un elemento genérico  <br/> |Ninguna. Solo se pueden crear tipos de elementos específicos mediante la API administrada de EWS; no se pueden crear elementos genéricos.  <br/> |[CreateItem](https://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) <br/> |
+|Obtener un elemento  <br/> |[Item. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) <br/> |
+|Actualizar un elemento  <br/> |[Item. Update](https://msdn.microsoft.com/library/office/dd635915%28v=exchg.80%29.aspx) <br/> |[UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
+|Eliminar un elemento  <br/> |[Item. Delete](https://msdn.microsoft.com/library/office/dd635072%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
    
-En este artículo, aprenderá cuándo se puede utilizar la clase base genérica y cuándo debe utilizar un elemento fuertemente tipado para llevar a cabo su tarea. Los ejemplos de código muestran cómo usar la clase base y qué hacer cuando no se puede usar la clase base o no ajuste a sus necesidades.
+En este artículo, aprenderá a usar la clase base genérica y cuando necesite usar un elemento con establecimiento inflexible de tipos para completar la tarea. En los ejemplos de código se muestra cómo usar la clase base y qué hacer cuando no se puede usar la clase base o no se ajusta a sus necesidades.
   
-## <a name="create-an-item-by-using-the-ews-managed-api"></a>Crear un elemento mediante el uso de la API administrada de EWS
+## <a name="create-an-item-by-using-the-ews-managed-api"></a>Crear un elemento mediante la API administrada de EWS
 <a name="bk_createewsma"> </a>
 
-La API administrada de EWS no tiene un constructor públicamente disponible para la clase de [elemento](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item%28v=exchg.80%29.aspx) , por lo que debe usar el constructor para el tipo de elemento específico que desea crear con el fin de crear un elemento. Por ejemplo, use el [constructor de la clase EmailMessage](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.emailmessage%28v=exchg.80%29.aspx) para crear un nuevo mensaje de correo electrónico y [póngase en contacto con el constructor de clase](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.contact%28v=exchg.80%29.aspx) para crear un nuevo contacto. Del mismo modo, el servidor nunca devuelve objetos de **elemento** genéricos de respuestas; todos los elementos genéricos se devuelven como objetos **EmailMessage** . 
+La API administrada de EWS no tiene un constructor disponible públicamente para la clase de [elemento](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item%28v=exchg.80%29.aspx) , por lo que debe usar el constructor para el tipo de elemento específico que desea crear para crear un elemento. Por ejemplo, use el [constructor de la clase EmailMessage](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.emailmessage%28v=exchg.80%29.aspx) para crear un nuevo mensaje de correo electrónico y el [constructor de clase Contact](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contact%28v=exchg.80%29.aspx) para crear un contacto nuevo. Del mismo modo, el servidor nunca devuelve objetos de **elementos** genéricos en las respuestas; todos los elementos genéricos se devuelven como objetos **EmailMessage** . 
   
-Cuando conoce el tipo de elemento que se va a crear, puede completar la tarea en unos cuantos pasos. Los pasos son similares para todos los tipos de elemento:
+Cuando conoce el tipo de elemento que se va a crear, puede completar la tarea en tan solo unos pocos pasos. Los pasos son similares para todos los tipos de elementos:
   
-1. Inicializar una nueva instancia de una de las clases de [elemento](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item%28v=exchg.80%29.aspx) con el objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) como un parámetro. 
+1. Inicialice una nueva instancia de una de las clases de [elemento](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item%28v=exchg.80%29.aspx) con el objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) como parámetro. 
     
-2. Establecer propiedades en el elemento. Los esquemas son diferentes para cada tipo de elemento, por lo que distintas propiedades están disponibles para elementos diferentes.
+2. Establecer propiedades en el elemento. Los esquemas son distintos para cada tipo de elemento, por lo que hay distintas propiedades disponibles para los distintos elementos.
     
-3. Guardar el elemento, o guardar y enviar el elemento.
+3. Guarda el elemento o guarda y envía el elemento.
     
-Por ejemplo, puede crear un objeto [EmailMessage](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) , establezca las propiedades de [ToRecipients](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.torecipients%28v=exchg.80%29.aspx) , el [cuerpo](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.body%28v=exchg.80%29.aspx)y el [asunto](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.subject%28v=exchg.80%29.aspx)y, a continuación, enviarlo mediante el método [EmailMessage.SendAndSaveCopy](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.sendandsavecopy%28v=exchg.80%29.aspx) . 
+Por ejemplo, puede crear un objeto [EmailMessage](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) , establecer las propiedades [Subject](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.subject%28v=exchg.80%29.aspx), [Body](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.body%28v=exchg.80%29.aspx)y [ToRecipients](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.torecipients%28v=exchg.80%29.aspx) y, a continuación, enviarlo mediante el método [EmailMessage. SendAndSaveCopy](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.sendandsavecopy%28v=exchg.80%29.aspx) . 
   
 ```cs
 // Create an email message and provide it with connection 
@@ -60,27 +60,27 @@ message.ToRecipients.Add("sadie@contoso.com");
 message.SendAndSaveCopy();
 ```
 
-Para obtener información sobre cómo crear un elemento de cita o reunión mediante el uso de la API administrada de EWS, consulte [crear citas y reuniones mediante el uso de EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md).
+Para obtener información sobre cómo crear un elemento de reunión o cita mediante la API administrada de EWS, vea [crear citas y reuniones mediante EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md).
   
-## <a name="create-an-item-by-using-ews"></a>Crear un elemento mediante el uso de EWS
+## <a name="create-an-item-by-using-ews"></a>Crear un elemento mediante EWS
 <a name="bk_createews"> </a>
 
-Puede crear un elemento genérico o un elemento fuertemente tipado mediante el uso de EWS. Los pasos son similares para todos los tipos de elemento:
+Puede crear un elemento genérico o un elemento con establecimiento inflexible de tipos mediante EWS. Los pasos son similares para todos los tipos de elementos:
   
-1. Use la operación [CreateItem](http://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) para crear un elemento en el almacén de Exchange. 
+1. Use la operación [CreateItem](https://msdn.microsoft.com/library/bcc68f9e-d511-4c29-bba6-ed535524624a%28Office.15%29.aspx) para crear un elemento en el almacén de Exchange. 
     
-2. Use el elemento de [los elementos](http://msdn.microsoft.com/library/0811a73e-bf1f-4889-9219-73902dd47639%28Office.15%29.aspx) que contienen uno o más elementos para crear. 
+2. Use el elemento [Items](https://msdn.microsoft.com/library/0811a73e-bf1f-4889-9219-73902dd47639%28Office.15%29.aspx) para contener uno o más elementos que se van a crear. 
     
 3. Establecer propiedades en el elemento.
     
-Por ejemplo, puede crear un mensaje de correo electrónico y enviar mediante el código en el siguiente ejemplo. También es la solicitud XML que la API administrada de EWS envía cuando se llama al método [SendAndSaveCopy](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage.sendandsavecopy%28v=exchg.80%29.aspx) . 
+Por ejemplo, puede crear un mensaje de correo electrónico y enviarlo mediante el código del ejemplo siguiente. También es la solicitud XML que la API administrada de EWS envía cuando se llama al método [SendAndSaveCopy](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.sendandsavecopy%28v=exchg.80%29.aspx) . 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -105,16 +105,16 @@ Por ejemplo, puede crear un mensaje de correo electrónico y enviar mediante el 
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud **CreateItem** con un mensaje de [CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx) **NoError**, lo que indica que el correo electrónico se ha creado correctamente y la [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) de la recientemente mensaje de creación. 
+El servidor responde a la solicitud **CreateItem** con un mensaje [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) de **NoError**, que indica que el correo electrónico se ha creado correctamente y el [Itemid](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) del mensaje recién creado. 
   
-Para obtener información sobre cómo crear un elemento de cita o reunión mediante el uso de EWS, consulte [crear citas y reuniones mediante el uso de EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md).
+Para obtener información sobre cómo crear un elemento de cita o reunión con EWS, vea [crear citas y reuniones mediante EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md).
   
-## <a name="get-an-item-by-using-the-ews-managed-api"></a>Obtener un elemento mediante el uso de la API administrada de EWS
+## <a name="get-an-item-by-using-the-ews-managed-api"></a>Obtener un elemento mediante la API administrada de EWS
 <a name="bk_getewsma"> </a>
 
-Para usar la API administrada de EWS para obtener un elemento si conoce el [Item.Id](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) del elemento para recuperar, simplemente llama a uno de los métodos de [enlace](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) en el elemento y el elemento se recuperará. Como procedimiento recomendado, se recomienda limitar las propiedades devueltas a aquellos que son necesarios. En este ejemplo se devuelve la propiedad de **identificador** de elemento y la propiedad **Subject** . 
+Para usar la API administrada de EWS para obtener un elemento si conoce el [Item.ID](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) del elemento que se va a recuperar, simplemente debe llamar a uno de los métodos de [enlace](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) en el elemento y se recuperará el elemento. Como práctica recomendada, le recomendamos que limite las propiedades que se devuelven solo a las que son necesarias. En este ejemplo se devuelven la propiedad **ID** del elemento y la propiedad **Subject** . 
   
-En este ejemplo se da por supuesto que **servicio** es un objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que se ha autenticado el usuario a un servidor de Exchange. La variable local *itemId* es el [identificador](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) del elemento que se debe actualizar. 
+En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un servidor de Exchange. La variable local *Itemid* es el [identificador](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) del elemento que se va a actualizar. 
   
 ```cs
 // As a best practice, limit the properties returned to only those that are required.
@@ -125,17 +125,17 @@ Item item = Item.Bind(service, itemId, propSet);
 
 ```
 
-Si está buscando un elemento que cumple determinados criterios, realice lo siguiente:
+Si está buscando un elemento que cumpla determinados criterios, haga lo siguiente:
   
-1. Enlazar a la carpeta que contiene los elementos que desea obtener.
+1. Enlazar a la carpeta que contiene los elementos que se van a obtener.
     
-2. Crear una instancia de un [SearchFilter.SearchFilterCollection](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.searchfiltercollection%28v=exchg.80%29.aspx) o un [PropertySet](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) para filtrar los elementos para devolver. 
+2. Crea una instancia de [SearchFilter. SearchFilterCollection](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.searchfiltercollection%28v=exchg.80%29.aspx) o un [PropertySet](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) para filtrar los elementos que se van a devolver. 
     
-3. Crear una instancia de un objeto [CalendarView](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) o de [artículoVer](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.itemview%28v=EXCHG.80%29.aspx) para especificar el número de elementos para devolver. 
+3. Cree una instancia de un objeto [ItemView](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.itemview%28v=EXCHG.80%29.aspx) o [CalendarView](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) para especificar el número de elementos que se van a devolver. 
     
-4. Llame al método [ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) o [ExchangeService.FindAppointments](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.findappointments%28v=exchg.80%29.aspx) . 
+4. Llame al método [ExchangeService. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) o [ExchangeService. FindAppointments](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findappointments%28v=exchg.80%29.aspx) . 
     
-Por ejemplo, si desea recuperar los mensajes de correo electrónico no leído en la Bandeja de entrada, use el código en el siguiente ejemplo. En este ejemplo se usa un **SearchFilterCollection** para limitar los resultados del método **FindItems** a los mensajes no leídos y se limita el **artículoVer** para limitar los resultados a un elemento. Este código determinado sólo funciona en objetos [EmailMessage](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) debido a que el valor de [EmailMessageSchema.IsRead](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessageschema.isread%28v=exchg.80%29.aspx) es parte de la **SearchFilter**. 
+Por ejemplo, si desea recuperar los mensajes de correo electrónico no leídos en la bandeja de entrada, use el código del ejemplo siguiente. En este ejemplo se usa un **SearchFilterCollection** para limitar los resultados del método **FindItems** a mensajes no leídos y se limita el **ItemView** para limitar los resultados a un elemento. Este código en concreto solo funciona en objetos [EmailMessage](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) porque el valor [EmailMessageSchema. IsRead](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessageschema.isread%28v=exchg.80%29.aspx) forma parte de la **SearchFilter**. 
   
 ```cs
 // Bind the Inbox folder to the service object.
@@ -148,7 +148,7 @@ ItemView view = new ItemView(1);
 FindItemsResults<Item> findResults = service.FindItems(WellKnownFolderName.Inbox, sf, view);
 ```
 
-Como alternativa, puede usar un [PropertySet](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) para limitar los resultados de la búsqueda, tal como se muestra en el siguiente ejemplo de código. En este ejemplo se usa el método [FindAppointments](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.findappointments%28v=exchg.80%29.aspx) para recuperar hasta cinco las citas que se producen en los próximos 30 días. Evidentemente este código sólo funciona en los elementos del calendario. 
+Como alternativa, puedes usar un [PropertySet](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) para limitar los resultados de la búsqueda, como se muestra en el siguiente ejemplo de código. En este ejemplo, se usa el método [FindAppointments](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findappointments%28v=exchg.80%29.aspx) para recuperar hasta cinco citas que se producen en los próximos 30 días. Este código de curso solo funciona en los elementos de calendario. 
   
 ```cs
 // Initialize values for the start and end times, and the number of appointments to retrieve.
@@ -167,23 +167,23 @@ cView.PropertySet = new PropertySet(AppointmentSchema.Subject, AppointmentSchema
 FindItemsResults<Appointment> appointments = calendar.FindAppointments(cView);
 ```
 
-Tenga en cuenta que la información del servidor se devuelve en la respuesta de método **enlazar** es diferente de la información que el servidor devuelve una respuesta de método **FindItem** o **FindAppointment** . El método **Bind** puede devolver todas las propiedades esquematizadas, mientras que los métodos **FindItem** y **FindAppointment** no devuelven todas las propiedades esquematizadas. Por lo que si necesita acceso total al elemento, debe usar el método **Bind** . Si no tiene el elemento **Id** del elemento que le gustaría recuperar, use los métodos **FindItem** o **FindAppointment** para recuperar el identificador y, a continuación, utilice el método **Bind** para recuperar las propiedades que necesita. 
+Tenga en cuenta que la información que devuelve el servidor en la respuesta del método de **enlace** es diferente de la información que devuelve el servidor para una respuesta del método **FindItem** o **FindAppointment** . El método **BIND** puede devolver todas las propiedades esquematizado, mientras que los métodos **FindItem** y **FindAppointment** no devuelven todas las propiedades de esquematizado. Por lo tanto, si necesita acceso total al elemento, tendrá que usar el método **BIND** . Si no tiene el **identificador** de elemento del elemento que le gustaría recuperar, use los métodos **FindItem** o **FindAppointment** para recuperar el identificador y, a continuación, use el método **BIND** para recuperar las propiedades que necesita. 
   
-Para obtener información sobre cómo obtener un elemento de cita o reunión mediante el uso de la API administrada de EWS, vea [obtener las citas y reuniones mediante el uso de EWS en Exchange](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md).
+Para obtener información sobre cómo obtener un elemento de reunión o cita mediante la API administrada de EWS, vea [obtener citas y reuniones mediante EWS en Exchange](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md).
   
-## <a name="get-an-item-by-using-ews"></a>Obtener un elemento mediante el uso de EWS
+## <a name="get-an-item-by-using-ews"></a>Obtener un elemento mediante EWS
 <a name="bk_getews"> </a>
 
-Si conoce el [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) del elemento para recuperar, puede obtener el elemento mediante la operación [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) . 
+Si conoce el elemento [Itemid](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) del elemento que se va a recuperar, puede obtener el elemento mediante la operación [GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) . 
   
-En el ejemplo siguiente se muestra la solicitud XML para obtener el [asunto](http://msdn.microsoft.com/library/c140d6c2-deb1-4f67-a908-9397197c4ae7%28Office.15%29.aspx) de un elemento con un determinado **ItemId**. También es la solicitud XML que la API administrada de EWS envía al llamar al método [enlazar](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) en un **ItemId**. Los valores de algunos elementos y atributos se han abreviado para mejorar la legibilidad.
+En el ejemplo siguiente se muestra la solicitud XML para obtener el [asunto](https://msdn.microsoft.com/library/c140d6c2-deb1-4f67-a908-9397197c4ae7%28Office.15%29.aspx) de un elemento con un **Itemid**específico. También es la solicitud XML que la API administrada de EWS envía cuando llama al método [BIND](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) en un **Itemid**. Los valores de algunos atributos y elementos se han abreviado para facilitar su lectura.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>
@@ -203,26 +203,26 @@ En el ejemplo siguiente se muestra la solicitud XML para obtener el [asunto](htt
 </soap:Envelope>
 ```
 
-En el ejemplo siguiente se muestra la respuesta XML que el servidor devuelve una vez que procesa la operación **GetItem** . La respuesta indica que el elemento se recuperó correctamente. Los valores de algunos elementos y atributos se han abreviado para mejorar la legibilidad. 
+En el ejemplo siguiente se muestra la respuesta XML que devuelve el servidor después de procesar la operación **GetItem** . La respuesta indica que el elemento se recuperó correctamente. Los valores de algunos atributos y elementos se han abreviado para facilitar su lectura. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" 
                          MinorVersion="0" 
                          MajorBuildNumber="815" 
                          MinorBuildNumber="6" 
                          Version="V2_7" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -239,16 +239,16 @@ En el ejemplo siguiente se muestra la respuesta XML que el servidor devuelve una
 </s:Envelope>
 ```
 
-Si no conoce el **ItemId** del elemento que desea recuperar, puede usar la operación [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) para buscar el elemento. Para poder usar la operación **FindItem** , primero debe identificar la carpeta que se va a buscar. Puede identificar la carpeta mediante el uso de su **DistinguinguishedFolderName** o mediante el [FolderId](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx). Puede usar las operaciones de la [FindFolder](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) o [SyncFolderHierarchy](http://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx) para obtener el **FolderId** necesita. A continuación, use la operación **FindItem** para buscar esa carpeta para obtener los resultados que coinciden con el filtro de búsqueda. A diferencia de la API administrada de EWS, EWS no proporciona una operación de búsqueda independiente para las citas. La operación **FindItem** recupera los elementos de todos los tipos. 
+Si no conoce el elemento **Itemid** del elemento que desea recuperar, puede usar la operación [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) para buscar el elemento. Para poder usar la operación **FindItem** , primero debe identificar la carpeta en la que está buscando. Puede identificar la carpeta con su **DistinguinguishedFolderName** o con el [FolderId](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx). Puede usar las operaciones [FindFolder](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) o [SyncFolderHierarchy](https://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx) para obtener la **FolderId** que necesita. A continuación, use la operación **FindItem** para buscar en esa carpeta los resultados que coinciden con el filtro de búsqueda. A diferencia de la API administrada de EWS, EWS no proporciona una operación de búsqueda independiente para las citas. La operación **FindItem** recupera elementos de todos los tipos. 
   
-En el ejemplo siguiente se muestra la solicitud de operación XML **FindItem** que se envía al servidor para buscar citas en la carpeta de calendario que se producen en los próximos 30 días. Los valores de algunos elementos y atributos se han abreviado para mejorar la legibilidad. 
+En el siguiente ejemplo se muestra la solicitud de operación de **FINDITEM** XML que se envía al servidor para buscar citas en la carpeta calendario que se producen en los próximos 30 días. Los valores de algunos atributos y elementos se han abreviado para facilitar su lectura. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -271,26 +271,26 @@ En el ejemplo siguiente se muestra la solicitud de operación XML **FindItem** q
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud de **FindItem** con un mensaje de [FindItemResponse](http://msdn.microsoft.com/library/c8b316df-d4ab-49b8-96d4-8e9a016730ef%28Office.15%29.aspx) que incluye el valor [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, lo que indica que la operación que se realizó correctamente. Si los elementos de calendario cumplen los criterios de filtrado, se incluyen en la respuesta.
+El servidor responde a la solicitud **FindItem** con un mensaje [FindItemResponse](https://msdn.microsoft.com/library/c8b316df-d4ab-49b8-96d4-8e9a016730ef%28Office.15%29.aspx) que incluye el valor [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, que indica que la operación se completó correctamente. Si alguno de los elementos del calendario cumple los criterios de filtrado, se incluyen en la respuesta.
   
-Tenga en cuenta que la información del servidor se devuelve en la respuesta de la operación **GetItem** es diferente de la información que el servidor devuelve en una **FindItem** o una respuesta de la operación de **FindAppointment** . La operación **GetItem** puede devolver todas las propiedades esquematizadas, mientras que las operaciones **FindItem** y **FindAppointment** no devuelven todas las propiedades esquematizadas. Por lo que si necesita acceso total al elemento, debe usar la operación **GetItem** . Si no dispone de la **ItemId** del elemento que le gustaría recuperar, use las operaciones **FindItem** o **FindAppointment** para recuperar la **ItemId**y, a continuación, use la operación **GetItem** para recuperar los elementos que necesita. 
+Tenga en cuenta que la información que devuelve el servidor en la respuesta de la operación **GetItem** es diferente de la información que devuelve el servidor en una respuesta de operación **FindItem** o **FindAppointment** . La operación **GetItem** puede devolver todas las propiedades esquematizado, mientras que las operaciones **FindItem** y **FindAppointment** no devuelven todas las propiedades de esquematizado. Por lo tanto, si necesita acceso total al elemento, tendrá que usar la operación **GetItem** . Si no tiene el elemento **Itemid** del elemento que quiere recuperar, use las operaciones **FindItem** o **FindAppointment** para recuperar el **Itemid**y, a continuación, use la operación **GetItem** para recuperar los elementos que necesita. 
   
-Para obtener información sobre cómo obtener un elemento de cita o reunión mediante el uso de EWS, vea [obtener las citas y reuniones mediante el uso de EWS en Exchange](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md).
+Para obtener información sobre cómo obtener un elemento de reunión o cita con EWS, vea [obtener citas y reuniones mediante EWS en Exchange](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md).
   
-## <a name="update-an-item-by-using-the-ews-managed-api"></a>Actualizar un elemento mediante el uso de la API administrada de EWS
+## <a name="update-an-item-by-using-the-ews-managed-api"></a>Actualizar un elemento mediante la API administrada de EWS
 <a name="bk_updateewsma"> </a>
 
-Los pasos para actualizar un elemento mediante la API administrada de EWS son similares para todos los tipos de elemento; Sin embargo, las propiedades de elemento son diferentes para cada tipo de elemento y el método de [actualización](http://msdn.microsoft.com/en-us/library/office/dd635915%28v=exchg.80%29.aspx) tiene muchos métodos sobrecargados para elegir. Para actualizar un elemento: 
+Los pasos para actualizar un elemento mediante la API administrada de EWS son similares para todos los tipos de elementos; sin embargo, las propiedades de elemento son diferentes para cada tipo de elemento y el método [Update](https://msdn.microsoft.com/library/office/dd635915%28v=exchg.80%29.aspx) tiene muchos métodos sobrecargados para elegir. Para actualizar un elemento: 
   
-1. Utilice el método [Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) para obtener la versión más reciente del elemento, a menos que ya tiene. Para actualizar propiedades específicas a un elemento fuertemente tipado, tendrá que enlazar a ese tipo de elemento. Para actualizar las propiedades disponibles en el tipo de elemento genérico, se puede enlazar al objeto de [elemento](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item%28v=exchg.80%29.aspx) . 
+1. Use el método [BIND](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) para obtener la versión más reciente del elemento, a menos que ya la tenga. Para actualizar las propiedades específicas de un elemento con establecimiento inflexible de tipos, tendrá que enlazar a ese tipo de elemento. Para actualizar las propiedades disponibles en el tipo de elemento genérico, puede enlazar al objeto de [elemento](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item%28v=exchg.80%29.aspx) . 
     
-2. Actualizar las propiedades en el elemento.
+2. Actualice las propiedades del elemento.
     
-3. Llame al método **Update** . 
+3. Llamar al método **Update** . 
     
-Por ejemplo, puede actualizar al asunto de un correo electrónico con el tipo de elemento genérico, como se muestra en el código en el siguiente ejemplo.
+Por ejemplo, puede actualizar el asunto de un mensaje de correo electrónico usando el tipo de elemento genérico, como se muestra en el código del siguiente ejemplo.
   
-En este ejemplo se da por supuesto que **servicio** es un objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que se ha autenticado el usuario a un servidor de Exchange. La variable local *itemId* es el [identificador](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) del elemento que se debe actualizar. 
+En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un servidor de Exchange. La variable local *Itemid* es el [identificador](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) del elemento que se va a actualizar. 
   
 ```cs
 // Bind to the existing item, using the ItemId.
@@ -303,22 +303,22 @@ item.Subject = "New subject";
 item.Update(ConflictResolutionMode.AlwaysOverwrite);
 ```
 
-Para obtener información sobre cómo actualizar un elemento de cita o reunión mediante el uso de la API administrada de EWS, consulte [actualizar las citas y reuniones mediante el uso de EWS en Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md).
+Para obtener información sobre cómo actualizar un elemento de reunión o cita mediante la API administrada de EWS, vea [actualizar citas y reuniones mediante EWS en Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md).
   
-## <a name="update-an-item-by-using-ews"></a>Actualizar un elemento mediante el uso de EWS
+## <a name="update-an-item-by-using-ews"></a>Actualizar un elemento mediante EWS
 <a name="bk_updateews"> </a>
 
-Para actualizar un elemento mediante el uso de EWS, haga lo siguiente:
+Para actualizar un elemento mediante EWS, haga lo siguiente:
   
-1. Use la operación [GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) para obtener la versión más reciente del elemento, a menos que ya tiene. 
+1. Use la operación [GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) para obtener la versión más reciente del elemento, a menos que ya la tenga. 
     
-2. Use la operación [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) para especificar campos para actualizar y asignar nuevos valores a esos campos. 
+2. Use la operación [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) para especificar los campos que se actualizarán y asigne nuevos valores a esos campos. 
     
-En el ejemplo siguiente se muestra la solicitud de operación XML **UpdateItem** que se envía al servidor para actualizar el valor de [asunto](http://msdn.microsoft.com/library/c140d6c2-deb1-4f67-a908-9397197c4ae7%28Office.15%29.aspx) del mensaje de correo electrónico. Los valores de algunos elementos y atributos se han abreviado para mejorar la legibilidad. 
+En el ejemplo siguiente se muestra la solicitud de operación XML **UpdateItem** que se envía al servidor para actualizar el valor de [asunto](https://msdn.microsoft.com/library/c140d6c2-deb1-4f67-a908-9397197c4ae7%28Office.15%29.aspx) del mensaje de correo electrónico. Los valores de algunos atributos y elementos se han abreviado para facilitar su lectura. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010_SP1" />
   </soap:Header>
@@ -342,28 +342,28 @@ En el ejemplo siguiente se muestra la solicitud de operación XML **UpdateItem**
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud de **UpdateItem** con un mensaje de [UpdateItemResponse](http://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) que incluye el valor [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx) **NoError**, que indica que la actualización de elemento se realizó correctamente.
+El servidor responde a la solicitud **UpdateItem** con un mensaje [UpdateItemResponse](https://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) que incluye el valor [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) de **NoError**, que indica que la actualización del elemento se realizó correctamente.
   
-Para obtener información sobre cómo actualizar un elemento de cita o reunión mediante el uso de EWS, consulte [actualizar las citas y reuniones mediante el uso de EWS en Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md).
+Para obtener información sobre cómo actualizar un elemento de reunión o cita mediante EWS, consulte [actualizar citas y reuniones mediante EWS en Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md).
   
-## <a name="delete-an-item-by-using-the-ews-managed-api"></a>Eliminar un elemento mediante el uso de la API administrada de EWS
+## <a name="delete-an-item-by-using-the-ews-managed-api"></a>Eliminar un elemento mediante la API administrada de EWS
 <a name="bk_deleteewsma"> </a>
 
-Puede eliminar elementos moviendo a la carpeta Elementos eliminados o al volcado de archivos. Si conoce el [ItemId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) del elemento para eliminar, simplemente llame al método [Delete](http://msdn.microsoft.com/en-us/library/office/dd635072%28v=exchg.80%29.aspx) en el elemento. 
+Puede eliminar elementos moviéndolos a la carpeta elementos eliminados o al contenedor. Si conoce el elemento [Itemid](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) del elemento que se va a eliminar, solo tiene que llamar al método [Delete](https://msdn.microsoft.com/library/office/dd635072%28v=exchg.80%29.aspx) en el elemento. 
   
-Si necesita buscar el elemento antes de eliminarla, haga lo siguiente:
+Si necesita buscar el elemento antes de eliminarlo, haga lo siguiente:
   
-1. Llame al método [FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) o [FindAppointments](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.findappointments%28v=exchg.80%29.aspx) para buscar el elemento que desea eliminar. 
+1. Llame al método [FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) o [FindAppointments](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findappointments%28v=exchg.80%29.aspx) para buscar el elemento que se va a eliminar. 
     
-1. Crear una instancia de un [PropertySet](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) y limitar a las propiedades para devolver o utilizar una [SearchFilterCollection](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.searchfiltercollection%28v=exchg.80%29.aspx) para buscar elementos específicos. 
+1. Crea una instancia de una [PropertySet](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) y la limita a las propiedades que se van a devolver, o usa una [SearchFilterCollection](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.searchfiltercollection%28v=exchg.80%29.aspx) para buscar elementos específicos. 
     
-2. Crear una instancia de un [artículoVer](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.itemview%28v=EXCHG.80%29.aspx) o [CalendarView](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) para especificar el número de elementos para devolver. 
+2. Cree una instancia de [ItemView](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.itemview%28v=EXCHG.80%29.aspx) o [CalendarView](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) para especificar el número de elementos que se devolverán. 
     
-2. Llamar al método [Delete](http://msdn.microsoft.com/en-us/library/office/dd635072%28v=exchg.80%29.aspx) . 
+2. Llamar al método [Delete](https://msdn.microsoft.com/library/office/dd635072%28v=exchg.80%29.aspx) . 
     
-Por ejemplo, el código siguiente muestra cómo mover un mensaje de correo electrónico a la carpeta Elementos eliminados.
+Por ejemplo, el siguiente código muestra cómo mover un mensaje de correo electrónico a la carpeta elementos eliminados.
   
-En este ejemplo se da por supuesto que **servicio** es un objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que se ha autenticado el usuario a un servidor de Exchange. La variable local *itemId* es el [identificador](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) del elemento que se debe actualizar. 
+En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un servidor de Exchange. La variable local *Itemid* es el [identificador](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) del elemento que se va a actualizar. 
   
 ```cs
 // Bind to the existing item, using the ItemId.
@@ -374,18 +374,18 @@ Item item = Item.Bind(service, itemId);
 item.Delete(DeleteMode.MoveToDeletedItems);
 ```
 
-Para obtener más información acerca de cómo eliminar elementos, vea [Eliminar elementos mediante el uso de EWS en Exchange](deleting-items-by-using-ews-in-exchange.md). Para obtener información sobre cómo eliminar un elemento de cita o reunión mediante el uso de la API administrada de EWS, vea [Eliminar citas y cancelar reuniones mediante el uso de EWS en Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md).
+Para obtener más información sobre cómo eliminar elementos, vea [eliminar elementos mediante EWS en Exchange](deleting-items-by-using-ews-in-exchange.md). Para obtener información sobre cómo eliminar una reunión o un elemento de cita mediante la API administrada de EWS, vea [eliminar citas y cancelar reuniones mediante EWS en Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md).
   
-## <a name="delete-an-item-by-using-ews"></a>Eliminar un elemento mediante el uso de EWS
+## <a name="delete-an-item-by-using-ews"></a>Eliminar un elemento mediante EWS
 <a name="bk_deleteews"> </a>
 
 Puede eliminar un elemento mediante la operación [DeleteItem](../web-service-reference/deleteitem-operation.md) . 
   
-En el ejemplo siguiente se muestra la solicitud XML que se envía al servidor para mover el mensaje de correo electrónico a la carpeta Elementos eliminados. Los valores de algunos elementos y atributos se han abreviado para mejorar la legibilidad.
+En el ejemplo siguiente se muestra la solicitud XML que se envía al servidor para mover el mensaje de correo electrónico a la carpeta elementos eliminados. Los valores de algunos atributos y elementos se han abreviado para facilitar su lectura.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010_SP1" />
   </soap:Header>
@@ -399,19 +399,19 @@ En el ejemplo siguiente se muestra la solicitud XML que se envía al servidor pa
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud de **DeleteItem** con un mensaje de [DeleteItemResponse](http://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx) que incluye el valor [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx) **NoError**, que indica que la eliminación del elemento se realizó correctamente.
+El servidor responde a la solicitud **DeleteItem** con un mensaje [DeleteItemResponse](https://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx) que incluye el valor [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) de **NoError**, lo que indica que la eliminación del elemento se ha realizado correctamente.
   
-Para obtener más información acerca de cómo eliminar elementos, vea [Eliminar elementos mediante el uso de EWS en Exchange](deleting-items-by-using-ews-in-exchange.md). Para obtener información sobre cómo eliminar un elemento de cita o reunión mediante el uso de EWS, vea [Eliminar citas y cancelar reuniones mediante el uso de EWS en Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md).
+Para obtener más información sobre cómo eliminar elementos, vea [eliminar elementos mediante EWS en Exchange](deleting-items-by-using-ews-in-exchange.md). Para obtener información sobre cómo eliminar una reunión o un elemento de cita mediante EWS, vea [eliminar citas y cancelar reuniones mediante EWS en Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md).
   
 ## <a name="move-or-copy-items-to-another-mailbox"></a>Mover o copiar elementos a otro buzón
 <a name="bk_movecopybtnmailboxes"> </a>
 
-Puede mover o copiar elementos entre buzones de correo mediante el uso de las operaciones de [ExportItems](http://msdn.microsoft.com/library/e2846abb-0b16-4732-bbd8-038a674672f6%28Office.15%29.aspx) y [UploadItems](http://msdn.microsoft.com/library/a88cbe99-7968-454d-a545-4f92c330909f%28Office.15%29.aspx) . Para obtener más información, consulte [exportación e importación de elementos mediante el uso de EWS en Exchange](exporting-and-importing-items-by-using-ews-in-exchange.md).
+Puede mover o copiar elementos entre buzones de correo mediante el uso de las operaciones [ExportItems](https://msdn.microsoft.com/library/e2846abb-0b16-4732-bbd8-038a674672f6%28Office.15%29.aspx) y [UploadItems](https://msdn.microsoft.com/library/a88cbe99-7968-454d-a545-4f92c330909f%28Office.15%29.aspx) . Para obtener más información, vea [exportar e importar elementos mediante EWS en Exchange](exporting-and-importing-items-by-using-ews-in-exchange.md).
   
 ## <a name="see-also"></a>Vea también
 
-- [Las carpetas y elementos de EWS en Exchange](folders-and-items-in-ews-in-exchange.md)    
+- [Carpetas y elementos de EWS en Exchange](folders-and-items-in-ews-in-exchange.md)    
 - [Trabajar con carpetas mediante EWS en Exchange](how-to-work-with-folders-by-using-ews-in-exchange.md)    
-- [Eliminación de elementos con EWS en Exchange](deleting-items-by-using-ews-in-exchange.md)
+- [Eliminación de elementos mediante EWS en Exchange](deleting-items-by-using-ews-in-exchange.md)
     
 

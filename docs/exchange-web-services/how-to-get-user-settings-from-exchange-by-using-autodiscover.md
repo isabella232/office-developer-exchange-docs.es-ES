@@ -3,50 +3,50 @@ title: Obtener la configuración de usuario de Exchange mediante el uso de detec
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 6d90c305-4802-4e18-8d52-f60349feaa8d
-description: Obtenga información sobre cómo obtener los valores de configuración de usuario desde un servidor de Exchange mediante el uso de detección automática.
-ms.openlocfilehash: f37de55d6681bcdef381561b166adf209d3919a9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Obtenga información sobre cómo obtener la configuración de usuario de un servidor de Exchange mediante detección automática.
+localization_priority: Priority
+ms.openlocfilehash: 5f7ea04e6b04f674d4cb481cf9243d46437d6950
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763072"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528002"
 ---
 # <a name="get-user-settings-from-exchange-by-using-autodiscover"></a>Obtener la configuración de usuario de Exchange mediante el uso de detección automática
 
-Obtenga información sobre cómo obtener los valores de configuración de usuario desde un servidor de Exchange mediante el uso de detección automática.
+Obtenga información sobre cómo obtener la configuración de usuario de un servidor de Exchange mediante detección automática.
   
-Detección automática simplifica la configuración de la aplicación, ya que proporciona un acceso sencillo a la información de configuración de usuario utilizando sólo la dirección de correo electrónico del usuario y la contraseña. Un [número de opciones de configuración de usuario](http://msdn.microsoft.com/library/43db26e1-f7be-49fd-b26b-fc1b10bd3458%28Office.15%29.aspx) están disponibles a través de detección automática, como nombre para mostrar o la dirección URL del servicio web externo del usuario. 
+La detección automática simplifica la configuración de las aplicaciones al facilitar el acceso a la información de configuración del usuario usando solo la dirección de correo electrónico y la contraseña del usuario. Hay disponible una [serie de opciones de configuración de usuario](https://msdn.microsoft.com/library/43db26e1-f7be-49fd-b26b-fc1b10bd3458%28Office.15%29.aspx) a través de la detección automática, como el nombre para mostrar del usuario o la dirección URL del servicio Web externo. 
   
-Puede usar una de las siguientes tecnologías de desarrollo para recuperar la configuración de usuario desde el servicio Detección automática:
+Puede usar una de las siguientes tecnologías de desarrollo para recuperar la configuración de usuario del servicio Detección automática:
   
-- La [Introducción a las aplicaciones cliente de API administrada de EWS](get-started-with-ews-managed-api-client-applications.md)
+- Introducción [a las aplicaciones de cliente de la API administrada de EWS](get-started-with-ews-managed-api-client-applications.md)
     
-- El [servicio web de detección automática de SOAP](http://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx)
+- El [servicio Web de detección automática de SOAP](https://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx)
     
-- El [servicio web de detección automática de POX](http://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx)
+- El [servicio Web detección automática de POX](https://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx)
     
-La API administrada de EWS proporciona una interfaz basada en objetos para recuperar la configuración del usuario. Si la aplicación cliente usa código administrado, se recomienda que utilice la API administrada de EWS. Si está utilizando la API administrada de EWS, determine si la configuración que necesita está disponible en la enumeración [Microsoft.Exchange.WebServices.Autodiscover.UserSettingName](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.autodiscover.usersettingname%28v=EXCHG.80%29.aspx) . Si no lo son, es posible que desee usar los servicios SOAP o detección automática POX. 
+La API administrada de EWS proporciona una interfaz basada en objetos para recuperar la configuración de usuario. Si su aplicación cliente usa un código administrado, le recomendamos que use la API administrada de EWS. Si usa la API administrada de EWS, determine si la configuración que necesita está disponible en la enumeración [Microsoft. Exchange. webservices. Autodiscover. UserSettingName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.autodiscover.usersettingname%28v=EXCHG.80%29.aspx) . Si no es así, es posible que quiera usar los servicios de detección automática de POX o SOAP. 
   
-Si está utilizando un servicio web, es recomendable que use el servicio de detección automática de SOAP, ya que admite un conjunto más amplio de características que el servicio Detección automática POX. Si el servicio Detección automática de SOAP no está disponible, el servicio de detección automática de POX es una buena alternativa.
+Si usa un servicio Web, le sugerimos que use el servicio de detección automática de SOAP, ya que admite un conjunto de características más amplio que el servicio Detección automática de POX. Si el servicio Detección automática de SOAP no está disponible, el servicio Detección automática de POX es una buena alternativa.
   
 ## <a name="set-up-to-get-user-settings"></a>Configurar para obtener la configuración del usuario
 <a name="bk_Prereq"> </a>
 
-Antes de obtener la configuración de usuario mediante el servicio de detección automática, asegúrese de que tiene acceso a la siguiente:
+Antes de obtener la configuración de usuario mediante el servicio Detección automática, asegúrese de que tiene acceso a lo siguiente:
   
-- Si está usando la API administrada de EWS o el servicio Detección automática basada en POX, Exchange Online, Exchange Online como parte de Office 365 o un servidor que está ejecutando una versión de Exchange a partir de Exchange 2007 SP1. 
+- Si usa la API administrada de EWS o el servicio de detección automática basado en POX, Exchange Online, Exchange online como parte de Office 365, o un servidor que ejecute una versión de Exchange a partir de Exchange 2007 SP1. 
     
-- Si está usando el servicio Detección automática basada en SOAP, Exchange Online o una versión de Exchange a partir de Exchange 2010.
+- Si usa el servicio de detección automática basado en SOAP, Exchange online o una versión de Exchange que empiece por Exchange 2010.
     
 > [!NOTE]
-> Si está utilizando la API administrada de EWS, debe [proporcionar un método de devolución de llamada de validación de certificados](how-to-validate-a-server-certificate-for-the-ews-managed-api.md) en algunas circunstancias. También puede que necesite un método de devolución de llamada de validación de certificados con algunas bibliotecas proxy generado, como las creadas por Visual Studio. 
+> Si usa la API administrada de EWS, tendrá que [proporcionar un método de devolución de llamada de validación de certificados](how-to-validate-a-server-certificate-for-the-ews-managed-api.md) en algunas circunstancias. También es posible que necesite un método de devolución de llamada de validación de certificados con algunas bibliotecas de proxy generadas, como las creadas por Visual Studio. 
   
-## <a name="get-user-settings-by-using-the-ews-managed-api"></a>Obtener la configuración de usuario mediante el uso de la API administrada de EWS
+## <a name="get-user-settings-by-using-the-ews-managed-api"></a>Obtener la configuración de usuario mediante la API administrada de EWS
 <a name="bk_Managed"> </a>
 
-Puede usar el método [GetUserSettings](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) para recuperar información de configuración para un usuario, como se muestra en el siguiente ejemplo. En este ejemplo, puede especificar una matriz de configuración de usuario para devolver (de aquellas disponibles en la enumeración [UserSettingName](http://msdn.microsoft.com/en-us/library/exchange/microsoft.exchange.webservices.autodiscover.usersettingname%28v=exchg.80%29.aspx) ) y el método seguirá las respuestas de redirección desde el servidor de Exchange. 
+Puede usar el método [GetUserSettings](https://msdn.microsoft.com/library/microsoft.exchange.webservices.autodiscover.autodiscoverservice.getusersettings%28v=exchg.80%29.aspx) para recuperar la información de configuración de un usuario, como se muestra en el ejemplo siguiente. En este ejemplo, puede especificar una matriz de opciones de configuración de usuario para devolver (de la que están disponibles en la enumeración [UserSettingName](https://msdn.microsoft.com/library/exchange/microsoft.exchange.webservices.autodiscover.usersettingname%28v=exchg.80%29.aspx) ) y el método seguirá las respuestas de redirección del servidor de Exchange. 
   
 ```cs
 using System;
@@ -82,7 +82,7 @@ public static GetUserSettingsResponse GetUserSettings(
 }
 ```
 
-Puede analizar la colección devuelta para tener acceso a cada par de clave y valor de la matriz de configuración de usuario. En el ejemplo siguiente se muestra cómo analizar a través de cada elemento devuelto y mostrar el nombre y el valor de cada par de clave y valor.
+Puede analizar la colección devuelta para obtener acceso a cada par clave-valor de la matriz de configuración del usuario. En el siguiente ejemplo se muestra cómo analizar mediante cada elemento devuelto y mostrar el nombre y el valor de cada par clave-valor.
   
 ```cs
 // Display each retrieved value. The settings are part of a key/value pair.
@@ -93,35 +93,35 @@ foreach (KeyValuePair<UserSettingName, Object> usersetting in userresponse.Setti
 }
 ```
 
-Como alternativa, puede obtener el valor de una configuración específica. En el siguiente ejemplo, el valor de **UserDisplayName** es que se mostrará. 
+De manera alternativa, puede obtener el valor de una configuración específica. En el siguiente ejemplo, se muestra la configuración **UserDisplayName** . 
   
 ```cs
 // Display a specific setting, such as UserDisplayName.
 Console.WriteLine(userresponse.Settings[UserSettingName.UserDisplayName]);
 ```
 
-## <a name="get-user-settings-by-using-soap-autodiscover"></a>Obtener la configuración de usuario mediante el uso de detección automática de SOAP
+## <a name="get-user-settings-by-using-soap-autodiscover"></a>Obtener la configuración del usuario mediante la detección automática de SOAP
 <a name="bk_SOAP"> </a>
 
-Si no usa la API administrada de EWS, se recomienda que utilice el servicio web de detección automática de SOAP. Usar el servicio de web de detección automática de POX únicamente si el servicio web de detección automática de SOAP, se produce un error o no está disponible. 
+Si no está usando la API administrada de EWS, le recomendamos que use el servicio Web de detección automática de SOAP. Use el servicio Web de detección automática de POX si el servicio Web de detección automática de SOAP produce un error o no está disponible. 
   
-Para obtener la configuración de usuario, use la [operación de GetUserSettings (SOAP)](http://msdn.microsoft.com/library/758d965c-ef63-4de4-9120-e293abf14ff8%28Office.15%29.aspx). La configuración solicitada se devuelve como [elementos de UserSetting](http://msdn.microsoft.com/library/aac6dc31-edd2-49d7-b845-1df4d77da58c%28Office.15%29.aspx).
+Para obtener la configuración del usuario, use la [operación GetUserSettings (SOAP)](https://msdn.microsoft.com/library/758d965c-ef63-4de4-9120-e293abf14ff8%28Office.15%29.aspx). La configuración solicitada se devuelve como [elementos UserSetting](https://msdn.microsoft.com/library/aac6dc31-edd2-49d7-b845-1df4d77da58c%28Office.15%29.aspx).
   
-En el ejemplo siguiente se muestra una solicitud de detección automática de SOAP para obtener la configuración del usuario desde el servidor.
+En el ejemplo siguiente se muestra una solicitud de detección automática de SOAP para obtener la configuración del usuario del servidor.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+<soap:Envelope xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
         xmlns:wsa="http://www.w3.org/2005/08/addressing" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+        xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <a:RequestedServerVersion>Exchange2013</a:RequestedServerVersion>
-    <wsa:Action>http://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettings</wsa:Action>
+    <wsa:Action>https://schemas.microsoft.com/exchange/2010/Autodiscover/Autodiscover/GetUserSettings</wsa:Action>
     <wsa:To>https://autodiscover.exchange.microsoft.com/autodiscover/autodiscover.svc</wsa:To>
   </soap:Header>
   <soap:Body>
-    <a:GetUserSettingsRequestMessage xmlns:a="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <a:GetUserSettingsRequestMessage xmlns:a="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <a:Request>
         <a:Users>
           <a:User>
@@ -151,14 +151,14 @@ En el ejemplo siguiente se muestra una solicitud de detección automática de SO
 </soap:Envelope>
 ```
 
-En el ejemplo siguiente se muestra la respuesta SOAP que es devuelto por el servidor después de que analiza la solicitud desde el cliente. La respuesta contiene sólo la configuración que se solicita, si existen.
+En el ejemplo siguiente se muestra la respuesta SOAP que devuelve el servidor después de analizar la solicitud del cliente. La respuesta contiene solo la configuración solicitada, si existe.
   
 ```XML
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:a="http://www.w3.org/2005/08/addressing">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/" xmlns:a="http://www.w3.org/2005/08/addressing">
   <s:Header>
-    <a:Action s:mustUnderstand="1">http://schemas.microsoft.com/exchange/2010/
+    <a:Action s:mustUnderstand="1">https://schemas.microsoft.com/exchange/2010/
         Autodiscover/Autodiscover/GetUserSettingsResponse</a:Action>
-    <h:ServerVersionInfo xmlns:h="http://schemas.microsoft.com/exchange/2010/Autodiscover" 
+    <h:ServerVersionInfo xmlns:h="https://schemas.microsoft.com/exchange/2010/Autodiscover" 
         xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
       <h:MajorVersion>15</h:MajorVersion>
       <h:MinorVersion>0</h:MinorVersion>
@@ -168,7 +168,7 @@ En el ejemplo siguiente se muestra la respuesta SOAP que es devuelto por el serv
     </h:ServerVersionInfo>
   </s:Header>
   <s:Body>
-    <GetUserSettingsResponseMessage xmlns="http://schemas.microsoft.com/exchange/2010/Autodiscover">
+    <GetUserSettingsResponseMessage xmlns="https://schemas.microsoft.com/exchange/2010/Autodiscover">
       <Response xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
         <ErrorCode>NoError</ErrorCode>
         <ErrorMessage />
@@ -249,29 +249,29 @@ En el ejemplo siguiente se muestra la respuesta SOAP que es devuelto por el serv
 </s:Envelope
 ```
 
-## <a name="get-user-settings-by-using-pox-autodiscover"></a>Obtener la configuración de usuario mediante el uso de detección automática de POX
+## <a name="get-user-settings-by-using-pox-autodiscover"></a>Obtener la configuración de usuario mediante detección automática de POX
 <a name="bk_POX"> </a>
 
-Aunque se recomienda que utilice el servicio web de detección automática de SOAP, el servicio web de detección automática de POX es una buena opción copia de seguridad para los momentos cuando SOAP no está disponible. Por ejemplo, Exchange 2007 hace no compatibilidad con la detección automática de SOAP de servicio web, por lo que si se establece como destino de Exchange 2007, se debe usar el servicio web de detección automática de POX. A diferencia del servicio web de detección automática de SOAP, el servicio Detección automática POX no permite solicitar una configuración específica. En su lugar, el servidor devuelve una lista completa de opciones disponibles como elementos secundarios del [elemento Protocol](http://msdn.microsoft.com/library/f77e4d66-6fdd-4999-9339-f7d7f9c86f44%28Office.15%29.aspx).
+Aunque se recomienda usar el servicio Web de detección automática de SOAP, el servicio Web de detección automática de POX es una buena opción de copia de seguridad para los momentos en los que SOAP no está disponible. Por ejemplo, Exchange 2007 no admite el servicio Web de detección automática de SOAP, por lo que si el destino es Exchange 2007, tiene que usar el servicio Web detección automática de POX. A diferencia del servicio Web de detección automática de SOAP, el servicio Detección automática de POX no permite solicitar una configuración específica. En su lugar, el servidor devuelve una lista completa de las opciones de configuración disponibles como elementos secundarios del [elemento Protocol](https://msdn.microsoft.com/library/f77e4d66-6fdd-4999-9339-f7d7f9c86f44%28Office.15%29.aspx).
   
-En el ejemplo siguiente se muestra una solicitud de detección automática de POX para obtener la configuración del usuario desde el servidor. El siguiente código XML se envía al servidor a través de un HTTP POST.
+En el ejemplo siguiente se muestra una solicitud de detección automática de POX para obtener la configuración del usuario del servidor. El siguiente XML se envía al servidor a través de un HTTP POST.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<Autodiscover xmlns="http://schemas.microsoft.com/exchange/autodiscover/outlook/requestschema/2006">
+<Autodiscover xmlns="https://schemas.microsoft.com/exchange/autodiscover/outlook/requestschema/2006">
   <Request>
     <EMailAddress>mara@contoso.com</EMailAddress>
-    <AcceptableResponseSchema>http://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a</AcceptableResponseSchema>
+    <AcceptableResponseSchema>https://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a</AcceptableResponseSchema>
   </Request>
 </Autodiscover>
 ```
 
-En el ejemplo siguiente se muestra la respuesta POX que es devuelto por el servidor.
+En el ejemplo siguiente se muestra la respuesta de POX que devuelve el servidor.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<Autodiscover xmlns="http://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
-  <Response xmlns="http://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a">
+<Autodiscover xmlns="https://schemas.microsoft.com/exchange/autodiscover/responseschema/2006">
+  <Response xmlns="https://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a">
     <User>
       <DisplayName>Mara Whitley</DisplayName>
       <LegacyDN>/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f5eeabead90d4b6fb51d6379474692cd-Mara</LegacyDN>
@@ -336,17 +336,17 @@ En el ejemplo siguiente se muestra la respuesta POX que es devuelto por el servi
 ## <a name="next-steps"></a>Siguientes pasos
 <a name="bk_Next"> </a>
 
-Una vez que se han recuperado los detalles de configuración necesarios para el usuario desde el servidor, está listo para comunicarse con Exchange para hacer las cosas que necesita hacer la aplicación. ¿Qué hacer a continuación depende de cómo comunican con Exchange y lo que desea llevar a cabo. Si necesita inspiración, y está usando EWS, es posible que explore la [Exchange 101 ejemplos de código](http://code.msdn.microsoft.com/exchange/Exchange-2013-101-Code-3c38582c) para algunas ideas. 
+Una vez que haya recuperado los detalles de configuración necesarios para el usuario desde el servidor, estará preparado para comunicarse con Exchange y realizar las acciones que debe realizar la aplicación. Lo que haga a continuación depende de cómo se comunique con Exchange y lo que desea conseguir. Si necesita cierta inspiración y está usando EWS, puede explorar los ejemplos de código de [Exchange 101](https://code.msdn.microsoft.com/exchange/Exchange-2013-101-Code-3c38582c) para algunas ideas. 
   
 ## <a name="see-also"></a>Vea también
 
 
-- [Detección automática de Exchange](autodiscover-for-exchange.md)
+- [Detección automática en Exchange](autodiscover-for-exchange.md)
     
-- [Servicios Web Exchange (EWS) de API administrada](http://msdn.microsoft.com/en-us/library/exchange/jj220535%28v=exchg.80%29.aspx)
+- [API administrada Servicios Web Exchange (EWS)](https://msdn.microsoft.com/library/exchange/jj220535%28v=exchg.80%29.aspx)
     
-- [Referencia de servicio web de detección automática de SOAP para Exchange](http://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx)
+- [Referencia del servicio Web de detección automática de SOAP para Exchange](https://msdn.microsoft.com/library/61c21ea9-7fea-4f56-8ada-bf80e1e6b074%28Office.15%29.aspx)
     
-- [Referencia de servicio web POX de detección automática de Exchange](http://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx)
+- [Referencia de servicio Web de detección automática de POX para Exchange](https://msdn.microsoft.com/library/877152f0-f4b1-4f63-b2ce-924f4bdf2d20%28Office.15%29.aspx)
     
 

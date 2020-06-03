@@ -1,36 +1,36 @@
 ---
-title: Obtener acceso a un calendario como delegado mediante el uso de EWS en Exchange
+title: Obtener acceso a un calendario como delegado mediante EWS en Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: d7db4a1e-9ed6-41da-8529-a73ca285cdf2
 description: Obtenga información sobre cómo obtener acceso a un calendario como delegado mediante la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: 609e5f0bb22c78174289a2eb10210999c8391a3d
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+localization_priority: Priority
+ms.openlocfilehash: 20ec294ddc4ccf014f0b2148c786c8c3ef8a6069
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353843"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528296"
 ---
-#  <a name="access-a-calendar-as-a-delegate-by-using-ews-in-exchange"></a>Obtener acceso a un calendario como delegado mediante el uso de EWS en Exchange
+#  <a name="access-a-calendar-as-a-delegate-by-using-ews-in-exchange"></a>Obtener acceso a un calendario como delegado mediante EWS en Exchange
 
 Obtenga información sobre cómo obtener acceso a un calendario como delegado mediante la API administrada de EWS o EWS en Exchange.
   
-Puede usar la API administrada de EWS o EWS para dar a un usuario delegar el acceso a la carpeta del calendario del propietario del buzón. El delegado puede, a continuación, crear convocatorias de reunión en nombre del propietario del buzón de correo, crear citas, responder a las convocatorias de reunión y recuperar, actualizar y eliminar las reuniones de la carpeta del calendario del propietario del buzón, en función de sus permisos.
+Puede usar la API administrada de EWS o EWS para conceder a un usuario acceso delegado a la carpeta de calendario de un propietario del buzón. A continuación, el delegado puede crear convocatorias de reunión en nombre del propietario del buzón, crear citas, responder a convocatorias de reunión y recuperar, actualizar y eliminar reuniones de la carpeta calendario del propietario del buzón, en función de sus permisos.
   
-Como delegado, use los mismos métodos y operaciones para tener acceso a la carpeta de calendario de un propietario buzón de correo que use para tener acceso a su propia carpeta de calendario. La diferencia principal es que se debe usar [acceso explícito](delegate-access-and-ews-in-exchange.md#bk_explicit) para buscar o crear un elemento de calendario o una subcarpeta de calendario y, a continuación, después de identificar el identificador de elemento o carpeta, puede usar [acceso implícito](delegate-access-and-ews-in-exchange.md#bk_implicit) para obtener, actualizar o eliminar el elemento. 
+Como delegado, se usan los mismos métodos y operaciones para tener acceso a la carpeta Calendario de un propietario del buzón que se usa para tener acceso a su propia carpeta calendario. La principal diferencia es que tiene que usar el [acceso explícito](delegate-access-and-ews-in-exchange.md#bk_explicit) para buscar o crear un elemento de calendario o una subcarpeta de calendario y, después, después de identificar el identificador de elemento o la carpeta, puede usar el [acceso implícito](delegate-access-and-ews-in-exchange.md#bk_implicit) para obtener, actualizar o eliminar el elemento. 
   
-**La tabla 1. Métodos de la API administrada de EWS y las operaciones de EWS para obtener acceso a un calendario como delegado**
+**Tabla 1. Métodos de la API administrada de EWS y operaciones EWS para tener acceso a un calendario como delegado**
 
-|**Si quiere...**|**Use este método de la API administrada de EWS...**|**Use esta operación de EWS...**|
+|**Si quiere...**|**Use este método de API administrada de EWS...**|**Usar esta operación de EWS...**|
 |:-----|:-----|:-----|
-|Crear una reunión o cita como delegado  <br/> |[Appointment.Save](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) donde el parámetro [FolderId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) proporciona [acceso explícito](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) a la carpeta del calendario del propietario del buzón  <br/> |[CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) donde el elemento de [buzón de correo](http://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) especifica la [EmailAddress](http://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) del propietario del buzón  <br/> |
-|Crear varias reuniones o citas como delegado  <br/> |[ExchangeService.CreateItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) donde el parámetro **FolderId** proporciona [acceso explícito](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) a la carpeta del calendario del propietario del buzón  <br/> |[CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) donde el elemento de [buzón de correo](http://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) especifica la [EmailAddress](http://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) del propietario del buzón  <br/> |
-|Buscar o buscar una cita o reunión como delegado  <br/> |[ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) donde el parámetro **FolderId** proporciona [acceso explícito](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) a la carpeta del calendario del propietario del buzón  <br/> |[FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) donde el elemento de [buzón de correo](http://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) especifica la [EmailAddress](http://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) del propietario del buzón  <br/> |
-|Obtener una cita o reunión como delegado  <br/> |[Appointment.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |
-|Actualización de una cita o reunión como delegado  <br/> |[Appointment.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) seguido de [Appointment.Update](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.update%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) seguido [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
-|Eliminación de una cita o reunión como delegado  <br/> |[Appointment.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) seguido de [Appointment.Delete](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) seguido [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
+|Crear una reunión o una cita como delegado  <br/> |[Appointment. Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) donde el parámetro [FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) proporciona [acceso explícito](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) a la carpeta de calendario del propietario del buzón de correo  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) donde el elemento [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) especifica el [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) del propietario del buzón de correo  <br/> |
+|Crear varias reuniones o citas como delegado  <br/> |[ExchangeService. CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) donde el parámetro **FolderId** proporciona [acceso explícito](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) a la carpeta de calendario del propietario del buzón de correo  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) donde el elemento [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) especifica el [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) del propietario del buzón de correo  <br/> |
+|Buscar o buscar una cita o reunión como delegado  <br/> |[ExchangeService. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) donde el parámetro **FolderId** proporciona [acceso explícito](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) a la carpeta de calendario del propietario del buzón de correo  <br/> |[FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) donde el elemento [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) especifica el [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) del propietario del buzón.  <br/> |
+|Obtener una cita o reunión como delegado  <br/> |[Appointment. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |
+|Actualizar una cita o una reunión como delegado  <br/> |[Appointment. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) seguido de [appointment. Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.update%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) seguido de [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
+|Eliminar una cita o una reunión como delegado  <br/> |[Appointment. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) seguido de [appointment. Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) seguido de [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
    
 > [!NOTE]
 > En los ejemplos de código de este artículo, primary@contoso.com es el propietario del buzón. 
@@ -38,18 +38,18 @@ Como delegado, use los mismos métodos y operaciones para tener acceso a la carp
 ## <a name="prerequisite-tasks"></a>Tareas de requisitos previos
 <a name="bk_prereq"> </a>
 
-Antes de que un usuario puede obtener acceso a la carpeta de calendario de un propietario buzón de correo como delegado, el usuario debe ser [agregado como delegado con permisos](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md) para la carpeta del calendario del propietario del buzón. 
+Para que un usuario pueda tener acceso a la carpeta del calendario de un propietario del buzón como delegado, el usuario debe [agregarse como delegado con permisos](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md) para la carpeta de calendario del propietario del buzón. 
   
-Un delegado debe tener un buzón vinculado a su cuenta para actualizar el calendario de un propietario del buzón.
+Un delegado debe tener un buzón adjunto a su cuenta para actualizar el calendario de un propietario del buzón.
   
-Si un delegado necesita para trabajar con convocatorias de reunión y las respuestas sólo, se puede agregar al delegado a la carpeta Calendario y usar el valor de enumeración de API administrada de EWS de [MeetingRequestsDeliveryScope.DelegatesAndSendInformationToMe](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.meetingrequestsdeliveryscope%28v=exchg.80%29.aspx) predeterminado o la [ DeliverMeetingRequests](http://msdn.microsoft.com/library/04b999af-0b27-4e6d-a8b1-400955a1afaa%28Office.15%29.aspx) valor de elemento EWS de **DelegatesAndSendInformationToMe** para enviar las solicitudes al delegado y los mensajes informativos al propietario del buzón. A continuación, el delegado no necesita tener acceso a la carpeta de bandeja de entrada del propietario del buzón. 
+Si un delegado solo tiene que trabajar con convocatorias de reunión y respuestas, puede Agregar el delegado a la carpeta calendario y usar el valor predeterminado [MeetingRequestsDeliveryScope. DelegatesAndSendInformationToMe](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.meetingrequestsdeliveryscope%28v=exchg.80%29.aspx) de la enumeración de API administrada EWS o el valor [DeliverMeetingRequests](https://msdn.microsoft.com/library/04b999af-0b27-4e6d-a8b1-400955a1afaa%28Office.15%29.aspx) del elemento EWS de **DelegatesAndSendInformationToMe** para enviar las solicitudes al delegado y los mensajes informativos al propietario del buzón. A continuación, no es necesario dar acceso al delegado a la carpeta Bandeja de entrada del propietario del buzón. 
   
-## <a name="create-a-meeting-or-appointment-as-a-delegate-by-using-the-ews-managed-api"></a>Crear una reunión o cita como delegado mediante el uso de la API administrada de EWS
+## <a name="create-a-meeting-or-appointment-as-a-delegate-by-using-the-ews-managed-api"></a>Crear una reunión o una cita como delegado mediante la API administrada de EWS
 <a name="bk_createewsma"> </a>
 
-La API administrada de EWS le permite usar el objeto de servicio para el usuario delegado para crear elementos de calendario para el propietario del buzón. En este ejemplo se muestra cómo utilizar el método [Save](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) para crear una reunión y enviar convocatorias de reunión a los asistentes. 
+La API administrada de EWS permite usar el objeto de servicio para que el usuario delegado cree elementos de calendario para el propietario del buzón. En este ejemplo se muestra cómo usar el método [Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) para crear una reunión y enviar las convocatorias de reunión a los asistentes. 
   
-En este ejemplo se da por supuesto que **servicio** es un objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido para el delegado y que el delegado se ha concedido los permisos adecuados para la carpeta del calendario del propietario del buzón. 
+En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido para el delegado y que se han concedido al delegado los permisos adecuados para la carpeta de calendario del propietario del buzón. 
   
 ```cs
 private static void DelegateAccessCreateMeeting(ExchangeService service)
@@ -75,14 +75,14 @@ private static void DelegateAccessCreateMeeting(ExchangeService service)
 }
 ```
 
-Tenga en cuenta que cuando se guarda el elemento, la llamada al método [Save](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) debe identificar carpeta del calendario del propietario del buzón. Si no se especifica la carpeta del calendario del propietario del buzón, la convocatoria de reunión obtiene guardan en el calendario del delegado y no la carpeta de calendario del propietario del buzón. Puede incluir la carpeta del calendario del propietario del buzón en la llamada al método **Guardar** de dos maneras. Se recomienda que se cree una instancia de una nueva instancia del objeto [FolderId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) mediante el uso de la [WellKnownFolderName](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) y la dirección SMTP del propietario del buzón. 
+Tenga en cuenta que, al guardar el elemento, la llamada al método [Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) debe identificar la carpeta de calendario del propietario del buzón. Si no se especifica la carpeta calendario del propietario del buzón, la convocatoria de reunión se guarda en el calendario del delegado y no en la carpeta calendario del propietario del buzón. Puede incluir la carpeta de calendario del propietario del buzón de correo en la llamada al método **Save** de dos maneras. Se recomienda crear una instancia de una nueva instancia del objeto [FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) con el [WellKnownFolderName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) y la dirección SMTP del propietario del buzón. 
   
 ```cs
 meeting.Save(new FolderId(WellKnownFolderName.Calendar,
     "primary@contoso.com"), SendInvitationsMode.SendToAllAndSaveCopy);
 ```
 
-Sin embargo, también puede [enlazar](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) a la carpeta Calendario en primer lugar y, a continuación, use el identificador de la carpeta en la llamada al método **Save** . Tenga en cuenta, sin embargo, esto crea una llamada EWS adicional. 
+Sin embargo, también puede [enlazar](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.bind%28v=exchg.80%29.aspx) a la carpeta de calendario y, a continuación, usar el identificador de la carpeta en la llamada al método **Save** . Sin embargo, tenga en cuenta que esto crea una llamada a EWS adicional. 
   
 ```cs
     // Identify the mailbox owner's SMTP address
@@ -96,21 +96,21 @@ Sin embargo, también puede [enlazar](http://msdn.microsoft.com/en-us/library/mi
         SendInvitationsMode.SendToAllAndSaveCopy);
 ```
 
-## <a name="create-a-meeting-or-appointment-as-a-delegate-by-using-ews"></a>Crear una reunión o cita como delegado mediante el uso de EWS
+## <a name="create-a-meeting-or-appointment-as-a-delegate-by-using-ews"></a>Crear una reunión o una cita como delegado mediante EWS
 <a name="bk_createews"> </a>
 
-EWS le permite usar el objeto de servicio para el usuario delegado para crear elementos de calendario para el propietario del buzón. En este ejemplo se muestra cómo usar la operación [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) para crear una reunión y enviar convocatorias de reunión a los asistentes. 
+EWS permite usar el objeto de servicio para que el usuario delegado cree elementos de calendario para el propietario del buzón. En este ejemplo se muestra cómo usar la operación [CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) para crear una reunión y enviar las convocatorias de reunión a los asistentes. 
   
-También es la solicitud XML que la API administrada de EWS envía cuando se utiliza el método **Save** para [crear una reunión o cita como delegado](#bk_createewsma).
+También es la solicitud XML que la API administrada de EWS envía cuando se usa el método **Save** para [crear una reunión o cita como delegado](#bk_createewsma).
   
-El encabezado SOAP se ha quitado el siguiente ejemplo para mayor brevedad.
+El encabezado SOAP se ha quitado del ejemplo siguiente por motivos de brevedad.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-         xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-         xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+         xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+         xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
 …
   <soap:Body>
     <m:CreateItem SendMeetingInvitations="SendToAllAndSaveCopy">
@@ -145,12 +145,12 @@ El encabezado SOAP se ha quitado el siguiente ejemplo para mayor brevedad.
 
 ```
 
-El servidor responde a la solicitud **CreateItem** con un mensaje de [CreateItemResponse](http://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor de elemento [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, lo que indica que la reunión se ha creado correctamente. La respuesta también contiene el identificador de elemento de la reunión recién creado.
+El servidor responde a la solicitud **CreateItem** con un mensaje [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor de elemento [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, que indica que la reunión se ha creado correctamente. La respuesta también contiene el identificador de elemento de la reunión recién creada.
   
-## <a name="search-for-a-meeting-or-appointment-as-a-delegate-by-using-the-ews-managed-api"></a>Búsqueda de una reunión o cita como delegado mediante el uso de la API administrada de EWS
+## <a name="search-for-a-meeting-or-appointment-as-a-delegate-by-using-the-ews-managed-api"></a>Buscar una reunión o una cita como delegado mediante la API administrada de EWS
 <a name="bk_searchewsma"> </a>
 
-Para buscar una reunión, debe usar uno de los métodos de [ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) que incluya un parámetro [FolderId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) , por lo que puede especificar la carpeta del calendario del propietario del buzón. 
+Para buscar una reunión, debe usar uno de los métodos [ExchangeService. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) que incluya un parámetro [FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) , de modo que pueda especificar la carpeta de calendario del propietario del buzón. 
   
 ```cs
 static void DelegateAccessSearchWithFilter
@@ -190,21 +190,21 @@ static void DelegateAccessSearchWithFilter
 }
 ```
 
-Después de la llamada **FindItems** devuelve una respuesta con el identificador, puede obtener, actualizar o eliminar dicha reunión mediante el identificador y el [acceso implícito](delegate-access-and-ews-in-exchange.md#bk_implicit) , y no es necesario especificar la dirección de SMTP del propietario del buzón. 
+Una vez que la llamada de **FindItems** devuelve una respuesta con un identificador, puede obtener, actualizar o eliminar esa reunión con el identificador y el [acceso implícito](delegate-access-and-ews-in-exchange.md#bk_implicit) , y no es necesario especificar la dirección SMTP del propietario del buzón. 
   
-## <a name="search-for-a-meeting-or-appointment-as-a-delegate-by-using-ews"></a>Búsqueda de una reunión o cita como delegado mediante el uso de EWS
+## <a name="search-for-a-meeting-or-appointment-as-a-delegate-by-using-ews"></a>Buscar una reunión o una cita como delegado mediante EWS
 <a name="bk_searchews"> </a>
 
-EWS le permite usar el objeto de servicio para el usuario delegado para buscar las citas y reuniones que cumplen un conjunto de criterios de búsqueda. En este ejemplo se muestra cómo usar la operación [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) para buscar las reuniones en la carpeta del calendario del propietario del buzón que contengan la palabra "building" en el asunto. 
+EWS permite usar el objeto de servicio para que el usuario delegado busque citas y reuniones que cumplan un conjunto de criterios de búsqueda. En este ejemplo se muestra cómo usar la operación [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) para buscar reuniones en la carpeta calendario del propietario del buzón que contengan la palabra "Building" en el asunto. 
   
-También es la solicitud XML que la API administrada de EWS envía cuando se utiliza el método **FindItem** a la [búsqueda de una reunión o cita como delegado](#bk_searchewsma).
+También es la solicitud XML que la API administrada de EWS envía cuando se usa el método **FindItem** para [buscar una reunión o cita como delegado](#bk_searchewsma).
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -245,27 +245,27 @@ También es la solicitud XML que la API administrada de EWS envía cuando se uti
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud de **FindItem** con un mensaje de [FindItemResponse](http://msdn.microsoft.com/library/c8b316df-d4ab-49b8-96d4-8e9a016730ef%28Office.15%29.aspx) que incluye un valor de elemento [ResponseCode](http://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, lo que indica que la búsqueda que se realizó correctamente. La respuesta contiene un [CalendarItem](http://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) para cualquier citas o reuniones que cumplen los criterios de búsqueda. En este caso, se ha encontrado sólo una de las reuniones. 
+El servidor responde a la solicitud **FindItem** con un mensaje [FindItemResponse](https://msdn.microsoft.com/library/c8b316df-d4ab-49b8-96d4-8e9a016730ef%28Office.15%29.aspx) que incluye un valor de elemento [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, lo que indica que la búsqueda se ha completado correctamente. La respuesta contiene un [CalendarItem](https://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) para las citas o reuniones que cumplen los criterios de búsqueda. En este caso, solo se encuentra una reunión. 
   
-El valor del elemento [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) se ha acortado para mejorar la legibilidad. 
+El valor del elemento [Itemid](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) se ha abreviado para facilitar su lectura. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="893"
                          MinorBuildNumber="10"
                          Version="V2_10"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body>
-    <m:FindItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:FindItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:FindItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -288,39 +288,39 @@ El valor del elemento [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4
 </s:Envelope>
 ```
 
-Ahora que tiene la **ItemId** para la reunión que cumpla los criterios, obtener, actualizar o eliminar dicha reunión mediante el [acceso implícito](delegate-access-and-ews-in-exchange.md#bk_implicit) y **ItemId** , y no es necesario especificar la dirección de SMTP del propietario del buzón. 
+Ahora que tiene el **Itemid** para la reunión que cumple con los criterios, puede obtener, actualizar o eliminar esa reunión mediante el uso de **Itemid** y el [acceso implícito](delegate-access-and-ews-in-exchange.md#bk_implicit) , y no es necesario especificar la dirección SMTP del propietario del buzón. 
   
-## <a name="get-update-or-delete-calendar-items-as-a-delegate-by-using-the-ews-managed-api"></a>Obtener, actualizar o eliminar elementos de calendario como delegado mediante el uso de la API administrada de EWS
+## <a name="get-update-or-delete-calendar-items-as-a-delegate-by-using-the-ews-managed-api"></a>Obtener, actualizar o eliminar elementos de calendario como delegado mediante la API administrada de EWS
 <a name="bk_geteswma"> </a>
 
-Puede usar la API administrada de EWS para obtener, actualizar o eliminar una reunión o una cita de la misma manera que se realizan estas acciones cuando no está utilizando acceso delegado. La única diferencia es que el objeto de servicio para el usuario delegado. El identificador de elemento incluido en la llamada al método **enlazar** de forma única identifica el elemento en el almacén de buzón de correo, en la carpeta del calendario del propietario del buzón. 
+Puede usar la API administrada de EWS para obtener, actualizar o eliminar una reunión o cita de la misma manera en que realiza estas acciones cuando no usa el acceso de delegado. La única diferencia es que el objeto de servicio es para el usuario delegado. El identificador de elemento incluido en la llamada al método **BIND** identifica de forma única el elemento en el almacén de buzones, en la carpeta calendario del propietario del buzón. 
   
-**Tabla 2. Métodos de la API administrada de EWS para trabajar con las citas y reuniones como delegado**
+**Tabla 2. Métodos de la API administrada de EWS para trabajar con citas y reuniones como delegado**
 
-|**Tarea**|**Método de la API administrada de EWS**|**Code example**|
+|**Tarea**|**Método de la API administrada de EWS**|**Ejemplo de código**|
 |:-----|:-----|:-----|
-|Obtener una cita o reunión  <br/> |[Enlazar](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) <br/> |[Obtener un elemento mediante el uso de la API administrada de EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getewsma) <br/> |
-|Actualización de una cita o reunión  <br/> |[Enlazar](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) seguido de [actualización](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.update%28v=exchg.80%29.aspx) <br/> |[Actualización de una reunión mediante el uso de la API administrada de EWS](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md#bk_UpdateMtgEWSMA) <br/> |
-|Eliminar una reunión o cita  <br/> |[Enlazar](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) seguido de [Eliminar](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[Eliminar una reunión mediante el uso de la API administrada de EWS](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md#bk_DeleteMtgEWSMA) <br/> |
+|Obtener una cita o una reunión  <br/> |[BIND](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) <br/> |[Obtener un elemento mediante la API administrada de EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getewsma) <br/> |
+|Actualizar una cita o una reunión  <br/> |[Enlazar](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) seguido de [Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.update%28v=exchg.80%29.aspx) <br/> |[Actualizar una reunión mediante la API administrada de EWS](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md#bk_UpdateMtgEWSMA) <br/> |
+|Eliminar una cita o una reunión  <br/> |[Enlazar](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) seguida de [eliminar](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.delete%28v=exchg.80%29.aspx) <br/> |[Eliminar una reunión mediante la API administrada de EWS](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md#bk_DeleteMtgEWSMA) <br/> |
    
-## <a name="get-update-or-delete-calendar-items-as-a-delegate-by-using-ews"></a>Obtener, actualizar o eliminar elementos de calendario como delegado mediante el uso de EWS
+## <a name="get-update-or-delete-calendar-items-as-a-delegate-by-using-ews"></a>Obtener, actualizar o eliminar elementos de calendario como delegado mediante EWS
 <a name="bk_getews"> </a>
 
-Puede usar EWS para obtener, actualizar o eliminar una reunión o una cita de la misma manera que se realizan estas acciones cuando no está utilizando acceso delegado. La única diferencia es que el objeto de servicio para el usuario delegado. El identificador de elemento incluido en la llamada al método [GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) identifica de forma exclusiva identifica el elemento en el almacén de buzón de correo, en la carpeta del calendario del propietario del buzón. 
+Puede usar EWS para obtener, actualizar o eliminar una reunión o cita de la misma manera en que realiza estas acciones cuando no está usando acceso delegado. La única diferencia es que el objeto de servicio es para el usuario delegado. El identificador de elemento incluido en la llamada al método [GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) identifica de forma única el elemento en el almacén de buzones, en la carpeta calendario del propietario del buzón. 
   
-**Tabla 3. Operaciones de EWS para trabajar con las citas y reuniones como delegado**
+**Tabla 3. Operaciones de EWS para trabajar con citas y reuniones como delegado**
 
-|**Tarea**|**Operación de EWS**|**Code example**|
+|**Tarea**|**Operación de EWS**|**Ejemplo de código**|
 |:-----|:-----|:-----|
-|Obtener una cita o reunión  <br/> |[GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |[Obtener un elemento mediante el uso de EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getews) <br/> |
-|Actualización de una cita o reunión  <br/> |[GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) seguido [UpdateItem](http://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |[Actualización de una reunión mediante el uso de EWS](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md#bk_UpdateMtgEWS) <br/> |
-|Eliminar una reunión o cita  <br/> |[GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) seguido [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |[](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md#bk_DeleteMtgEWSMA) <br/> |
+|Obtener una cita o una reunión  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |[Obtener un elemento mediante EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getews) <br/> |
+|Actualizar una cita o una reunión  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) seguido de [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |[Actualizar una reunión con EWS](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md#bk_UpdateMtgEWS) <br/> |
+|Eliminar una cita o una reunión  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) seguido de [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |[](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md#bk_DeleteMtgEWSMA) <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Acceso delegado y EWS en Exchange](delegate-access-and-ews-in-exchange.md)   
 - [Agregar y quitar delegados mediante EWS en Exchange](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md)
-- [Establecer permisos de carpeta de otro usuario mediante el uso de EWS en Exchange](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md) 
+- [Establecer los permisos de carpeta para otro usuario mediante EWS en Exchange](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md) 
 - [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)
     
 

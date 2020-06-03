@@ -1,37 +1,37 @@
 ---
-title: Crear citas y reuniones mediante el uso de EWS en Exchange 2013
+title: Crear citas y reuniones mediante EWS en Exchange 2013
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: fdea70a4-9267-4e5d-9152-b749e2acc3b0
-description: Aprenda a crear las citas y reuniones mediante la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: 1c840fac2ecca9fb51a28044dfac6299cb4fc038
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Obtenga información sobre cómo crear citas y reuniones mediante la API administrada de EWS o EWS en Exchange.
+localization_priority: Priority
+ms.openlocfilehash: b617519b839fb5ad310fbcaf6fae065f71f0f165
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763056"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528233"
 ---
-# <a name="create-appointments-and-meetings-by-using-ews-in-exchange-2013"></a>Crear citas y reuniones mediante el uso de EWS en Exchange 2013
+# <a name="create-appointments-and-meetings-by-using-ews-in-exchange-2013"></a>Crear citas y reuniones mediante EWS en Exchange 2013
 
-Aprenda a crear las citas y reuniones mediante la API administrada de EWS o EWS en Exchange.
+Obtenga información sobre cómo crear citas y reuniones mediante la API administrada de EWS o EWS en Exchange.
   
-La diferencia entre las reuniones y citas esencial es que las reuniones tienen asistentes, y no las citas. Las citas y reuniones pueden ser instancias únicas o parte de una serie periódica pero, debido a que las citas no incluyen los asistentes, salas o recursos, no requieren que se envíe un mensaje. Internamente, Exchange utiliza el mismo objeto para las reuniones y citas. Usar la API administrada de EWS [clase de cita](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) o el elemento EWS [CalendarItem](http://msdn.microsoft.com/library/Title Topic ID Project Name Writer Editor Publish Preview.aspx) para trabajar con las reuniones y citas. 
+La diferencia fundamental entre las reuniones y las citas es que las reuniones tienen asistentes y las citas no. Las citas y las reuniones pueden ser únicas o formar parte de una serie periódica, pero debido a que las citas no incluyen asistentes, salones o recursos, no necesitan que se envíe un mensaje. Internamente, Exchange usa el mismo objeto para las reuniones y las citas. Use la [clase de cita](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) de API administrada EWS o el elemento [CalendarItem](https://msdn.microsoft.com/library/Title Topic ID Project Name Writer Editor Publish Preview.aspx) de EWS para trabajar con reuniones y citas. 
   
-**La tabla 1. Métodos de la API administrada de EWS y las operaciones de EWS para trabajar con las citas y reuniones**
+**Tabla 1. Métodos de API administrada de EWS y operaciones de EWS para trabajar con citas y reuniones**
 
 |**Método de la API administrada de EWS**|**Operación de EWS**|
 |:-----|:-----|
-|[Appointment.Save](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) <br/> |[Operación CreateItem (elemento de calendario)](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) <br/> |
-|[Item.Bind](http://msdn.microsoft.com/en-us/library/dd634410%28v=exchg.80%29.aspx) <br/> |[Operación GetItem (elemento de calendario)](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |
+|[Appointment. Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) <br/> |[Operación CreateItem (elemento de calendario)](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) <br/> |
+|[Item. bind](https://msdn.microsoft.com/library/dd634410%28v=exchg.80%29.aspx) <br/> |[Operación GetItem (elemento de calendario)](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |
    
-## <a name="create-an-appointment-by-using-the-ews-managed-api"></a>Crear una cita mediante el uso de la API administrada de EWS
+## <a name="create-an-appointment-by-using-the-ews-managed-api"></a>Crear una cita mediante la API administrada de EWS
 <a name="bk_CreateApptEWSMA"> </a>
 
-En el ejemplo de código siguiente se muestra cómo usar el [objeto Appointment](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) para crear una cita, el método [Save](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) para guardar en la carpeta Calendario y el método [Item.Bind](http://msdn.microsoft.com/en-us/library/dd634410%28v=exchg.80%29.aspx) para comprobar que se ha creado la cita. 
+En el siguiente ejemplo de código se muestra cómo usar el [objeto appointment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) para crear una cita, el método [Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) para guardarlo en la carpeta del calendario y el método [Item. bind](https://msdn.microsoft.com/library/dd634410%28v=exchg.80%29.aspx) para comprobar que la cita se ha creado. 
   
-En este ejemplo se supone que se han autenticado a un servidor de Exchange y ha adquirido un objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) con el nombre de **servicio**. 
+En este ejemplo se supone que se ha autenticado en un servidor de Exchange y que se ha adquirido un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) denominado **Service**. 
   
 ```cs
 Appointment appointment = new Appointment(service);
@@ -50,23 +50,23 @@ Console.WriteLine("\nAppointment created: " + item.Subject + "\n");
 
 ```
 
-Después de establecer las propiedades en el objeto de cita, guarde la cita a la carpeta Calendario mediante el método de [Guardar](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) del objeto cita. 
+Después de establecer las propiedades del objeto appointment, guarde la cita en la carpeta calendario mediante el método [Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) del objeto appointment. 
   
-Tenga en cuenta que en el paso de comprobación, use el elemento de [identificador](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) asociado con la cita para comprobar que la cita se encuentra en la carpeta del calendario. Como procedimiento recomendado, limitar las propiedades devueltas por el servidor para que sólo lo que necesita, en este caso, la cita del asunto. 
+Tenga en cuenta que en el paso de comprobación, use el [identificador](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) de elemento asociado a la cita para comprobar que la cita se encuentra en la carpeta calendario. Como práctica recomendada, limite las propiedades devueltas por el servidor solo a lo que necesita, en este caso, el asunto de la cita. 
   
-## <a name="create-an-appointment-by-using-ews"></a>Crear una cita mediante el uso de EWS
+## <a name="create-an-appointment-by-using-ews"></a>Crear una cita mediante EWS
 <a name="bk_CreateApptEWS"> </a>
 
-La solicitud y respuesta XML en los ejemplos siguientes corresponden a las llamadas realizadas por el código de la API administrada de EWS en [crear una cita mediante el uso de la API administrada de EWS](#bk_CreateApptEWSMA). Así, se muestran la solicitud y respuesta XML que comprueba que los elementos de cita se encuentran en la carpeta del calendario.
+El XML de solicitud y respuesta de los ejemplos siguientes corresponden a las llamadas realizadas por el código de la API administrada de EWS en [crear una cita mediante la API administrada de EWS](#bk_CreateApptEWSMA). El XML de solicitud y respuesta que comprueba que los elementos de cita están en la carpeta calendario también se muestran.
   
-En el ejemplo siguiente se muestra la solicitud XML al usar la operación [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) para crear una cita. 
+En el ejemplo siguiente se muestra el XML de la solicitud cuando se utiliza la operación [CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) para crear una cita. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+       xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+       xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -91,24 +91,24 @@ En el ejemplo siguiente se muestra la solicitud XML al usar la operación [Creat
 </soap:Envelope>
 ```
 
- En el ejemplo siguiente se muestra la respuesta XML que es devuelto por la operación **CreateItem** . 
+ En el ejemplo siguiente se muestra el XML de respuesta que devuelve la operación **CreateItem** . 
   
 > [!NOTE]
-> Los atributos **ItemId** y **ChangeKey** se han abreviado para mejorar la legibilidad. 
+> Los atributos **Itemid** y **changekey** se han abreviado para facilitar su lectura. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="775" MinorBuildNumber="7" Version="V2_4" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -125,17 +125,17 @@ En el ejemplo siguiente se muestra la solicitud XML al usar la operación [Creat
 
 ```
 
-En el ejemplo siguiente se muestra la solicitud de XML que se genera cuando se usa la operación [GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) para comprobar que la cita se creó. 
+En el ejemplo siguiente se muestra el XML de la solicitud que se genera al usar la operación [GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) para comprobar que la cita se ha creado. 
   
 > [!NOTE]
-> Los atributos **ItemId** y **ChangeKey** se han abreviado para mejorar la legibilidad. 
+> Los atributos **Itemid** y **changekey** se han abreviado para facilitar su lectura. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+       xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+       xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -159,23 +159,23 @@ En el ejemplo siguiente se muestra la solicitud de XML que se genera cuando se u
 
 ```
 
- En el ejemplo siguiente se muestra la respuesta XML que es devuelto por la operación **GetItem** . 
+ En el ejemplo siguiente se muestra el XML de respuesta que devuelve la operación **GetItem** . 
   
 > [!NOTE]
-> Los atributos **ItemId** y **ChangeKey** se han abreviado para mejorar la legibilidad. 
+> Los atributos **Itemid** y **changekey** se han abreviado para facilitar su lectura. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="775" MinorBuildNumber="7" Version="V2_4" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -192,12 +192,12 @@ En el ejemplo siguiente se muestra la solicitud de XML que se genera cuando se u
 </s:Envelope>
 ```
 
-## <a name="create-a-meeting-by-using-the-ews-managed-api"></a>Crear una reunión mediante el uso de la API administrada de EWS
+## <a name="create-a-meeting-by-using-the-ews-managed-api"></a>Crear una reunión mediante la API administrada de EWS
 <a name="bk_CreateMtgEWSMA"> </a>
 
-Cuando se crea una reunión, además de guardar un elemento en la carpeta del calendario, normalmente también desea enviar convocatorias de reunión a los asistentes. En el ejemplo de código siguiente se muestra cómo crear una reunión y enviar convocatorias de reunión.
+Al crear una reunión, además de guardar un elemento en la carpeta calendario, también suele ser conveniente enviar las convocatorias de reunión a los asistentes. En el ejemplo de código siguiente se muestra cómo crear una reunión y enviar convocatorias de reunión.
   
-En este ejemplo se supone que se han autenticado a un servidor de Exchange y ha adquirido un objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) con el nombre de **servicio**. 
+En este ejemplo se supone que se ha autenticado en un servidor de Exchange y que se ha adquirido un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) denominado **Service**. 
   
 ```cs
 Appointment meeting = new Appointment(service);
@@ -219,21 +219,21 @@ Console.WriteLine("\nMeeting created: " + item.Subject + "\n");
 
 ```
 
-Después de establecer las propiedades en el objeto de [cita](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) , guardar la reunión a la carpeta Calendario mediante el método [Save](http://msdn.microsoft.com/en-us/library/dd635394%28v=exchg.80%29.aspx) . Cuando se establece el valor de la enumeración [SendInvitationsMode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.sendinvitationsmode%28v=exchg.80%29.aspx) a **SendOnlyToAll** o **SendToAllAndSaveCopy**, se envían invitaciones a los asistentes.
+Después de establecer las propiedades del objeto [appointment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) , guarde la reunión en la carpeta calendario mediante el método [Save](https://msdn.microsoft.com/library/dd635394%28v=exchg.80%29.aspx) . Cuando se establece el valor de enumeración [SendInvitationsMode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.sendinvitationsmode%28v=exchg.80%29.aspx) en **SendOnlyToAll** o **SendToAllAndSaveCopy**, se envían invitaciones a los asistentes.
   
-Use el elemento de [identificador](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) asociado con la reunión para comprobar que se guardó en la carpeta Calendario. Como procedimiento recomendado, limite las propiedades devueltas por el servidor a sólo lo que necesita - en este caso, el asunto de la reunión. 
+Use el [identificador](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) de elemento asociado a la reunión para comprobar que se ha guardado en la carpeta calendario. Como práctica recomendada, limite las propiedades devueltas por el servidor solo a lo que necesita, en este caso, el asunto de la reunión. 
   
-## <a name="create-a-meeting-by-using-ews"></a>Crear una reunión mediante el uso de EWS
+## <a name="create-a-meeting-by-using-ews"></a>Crear una reunión con EWS
 <a name="bk_CreateMtgEWS"> </a>
 
-La solicitud y respuesta XML en los ejemplos siguientes corresponden a las llamadas realizadas por el código de la API administrada de EWS en [crear una reunión mediante el uso de la API administrada de EWS](#bk_CreateMtgEWSMA). Así, se muestran la solicitud y respuesta XML que comprueba que los elementos de reunión están en la carpeta del calendario.
+El XML de solicitud y respuesta de los ejemplos siguientes corresponden a las llamadas realizadas por el código de la API administrada de EWS en [crear una reunión mediante la API administrada de EWS](#bk_CreateMtgEWSMA). El XML de solicitud y respuesta que comprueba que los elementos de la reunión están en la carpeta calendario también se muestran.
   
-En el ejemplo siguiente se muestra la solicitud XML al usar la operación [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) para crear una reunión. 
+En el ejemplo siguiente se muestra el XML de la solicitud cuando se utiliza la operación [CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) para crear una reunión. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -277,22 +277,22 @@ En el ejemplo siguiente se muestra la solicitud XML al usar la operación [Creat
 </soap:Envelope>
 ```
 
-En el ejemplo siguiente se muestra la respuesta XML que es devuelto por la operación **CreateItem** . 
+En el ejemplo siguiente se muestra el XML de respuesta que devuelve la operación **CreateItem** . 
   
 > [!NOTE]
-> Los atributos **ItemId** y **ChangeKey** se han abreviado para mejorar la legibilidad. 
+> Los atributos **Itemid** y **changekey** se han abreviado para facilitar su lectura. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="775" MinorBuildNumber="7" Version="V2_4" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -308,15 +308,15 @@ En el ejemplo siguiente se muestra la respuesta XML que es devuelto por la opera
 </s:Envelope>
 ```
 
-En el ejemplo siguiente se muestra la solicitud XML generado por la operación [GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) cuando compruebe que se ha creado la reunión. 
+En el ejemplo siguiente se muestra el XML de la solicitud que genera la operación [GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) al comprobar que la reunión se ha creado. 
   
 > [!NOTE]
-> Los atributos **ItemId** y **ChangeKey** se han abreviado para mejorar la legibilidad. 
+> Los atributos **Itemid** y **changekey** se han abreviado para facilitar su lectura. 
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -339,22 +339,22 @@ En el ejemplo siguiente se muestra la solicitud XML generado por la operación [
 </soap:Envelope>
 ```
 
-En el ejemplo siguiente se muestra la respuesta XML que es devuelto por la operación **GetItem** . 
+En el ejemplo siguiente se muestra el XML de respuesta que devuelve la operación **GetItem** . 
   
 > [!NOTE]
-> Los atributos **ItemId** y **ChangeKey** se han abreviado para mejorar la legibilidad. 
+> Los atributos **Itemid** y **changekey** se han abreviado para facilitar su lectura. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="775" MinorBuildNumber="7" Version="V2_4" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -374,9 +374,9 @@ En el ejemplo siguiente se muestra la respuesta XML que es devuelto por la opera
 ## <a name="see-also"></a>Vea también
 
 - [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)  
-- [Obtener las citas y reuniones con EWS en Exchange](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)  
-- [Actualizar las citas y reuniones con EWS en Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md) 
-- [Eliminar las citas y cancelar reuniones mediante el uso de EWS en Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md) 
-- [Proponer una nueva hora de reunión mediante el uso de EWS en Exchange](how-to-propose-a-new-meeting-time-by-using-ews-in-exchange.md)
+- [Obtener citas y reuniones mediante EWS en Exchange](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)  
+- [Actualizar citas y reuniones mediante EWS en Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md) 
+- [Eliminar citas y cancelar reuniones mediante EWS en Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md) 
+- [Proponer una nueva hora de reunión mediante EWS en Exchange](how-to-propose-a-new-meeting-time-by-using-ews-in-exchange.md)
     
 

@@ -1,37 +1,37 @@
 ---
-title: Obtener datos adjuntos mediante el uso de EWS en Exchange
+title: Obtener datos adjuntos mediante EWS en Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 12ce3cc0-a201-42e4-93e1-1f57961ff711
-description: Obtenga información sobre cómo obtener datos adjuntos de elementos EWS mediante el uso de la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: 2e1b3cfb346abd068695f66b01f9e34f1f5ff03f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Obtenga información sobre cómo obtener datos adjuntos de los elementos de EWS mediante la API administrada de EWS o EWS en Exchange.
+localization_priority: Priority
+ms.openlocfilehash: de3e3ebfbcb16935130203dfed50f255bd59be7b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763071"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528086"
 ---
-# <a name="get-attachments-by-using-ews-in-exchange"></a>Obtener datos adjuntos mediante el uso de EWS en Exchange
+# <a name="get-attachments-by-using-ews-in-exchange"></a>Obtener datos adjuntos mediante EWS en Exchange
 
-Obtenga información sobre cómo obtener datos adjuntos de elementos EWS mediante el uso de la API administrada de EWS o EWS en Exchange.
+Obtenga información sobre cómo obtener datos adjuntos de los elementos de EWS mediante la API administrada de EWS o EWS en Exchange.
   
-Puede obtener datos adjuntos de un elemento mediante el uso de la API administrada de EWS o EWS. Dado que la llamada inicial para obtener un elemento sólo incluye metadatos acerca de la colección de datos adjuntos en el elemento, recuperación de datos adjuntos es siempre un proceso de dos pasos. En primer lugar, recupere el elemento. A continuación, recuperar los datos adjuntos.
+Puede obtener datos adjuntos de un elemento mediante la API administrada de EWS o EWS. Debido a que la llamada inicial para obtener un elemento solo incluye metadatos sobre la colección de datos adjuntos en el elemento, la recuperación de datos adjuntos es siempre un proceso de dos pasos. En primer lugar, recupere el elemento. A continuación, recupere los datos adjuntos.
   
-**La tabla 1. Métodos de la API administrada de EWS y las operaciones de EWS para agregar datos adjuntos**
+**Tabla 1. Métodos de la API administrada de EWS y operaciones EWS para agregar datos adjuntos**
 
 |**Tarea**|**Método de la API administrada de EWS**|**Operación de EWS**|
 |:-----|:-----|:-----|
-|Obtener datos adjuntos de elemento  <br/> |[Item.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) seguido de [ItemAttachment.Load](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.itemattachment.load%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) seguido de [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) <br/> |
-|Obtener archivos adjuntos  <br/> |[Item.Bind](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) seguido de [FileAttachment.Load](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.fileattachment.load%28v=exchg.80%29.aspx) <br/> |[GetItem](http://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) seguido de [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) <br/> |
+|Obtener datos adjuntos de elementos  <br/> |[Item. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) seguido de [ItemAttachment. Load](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.itemattachment.load%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) seguido de [GetAttachment](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) <br/> |
+|Obtener archivos adjuntos  <br/> |[Item. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.bind%28v=exchg.80%29.aspx) seguido de [FileAttachment. Load](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.fileattachment.load%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/e3590b8b-c2a7-4dad-a014-6360197b68e4%28Office.15%29.aspx) seguido de [GetAttachment](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) <br/> |
    
-## <a name="get-attachments-from-an-email-by-using-the-ews-managed-api"></a>Obtener datos adjuntos de un correo electrónico mediante el uso de la API administrada de EWS
+## <a name="get-attachments-from-an-email-by-using-the-ews-managed-api"></a>Obtener datos adjuntos de un correo electrónico mediante la API administrada de EWS
 <a name="bk_getattachewsma"> </a>
 
-En el ejemplo de código siguiente se muestra cómo obtener un objeto [EmailMessage](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) mediante el método **Bind** , a continuación, realice una iteración por la colección de datos adjuntos y llame al método **FileAttachment.Load** o **ItemAttachment.Load** en cada uno datos adjuntos según corresponda. Cada archivo adjunto se guarda en la carpeta C:\temp\, y cada elemento de los datos adjuntos se cargan en memoria. Para obtener información acerca de cómo guardar datos adjuntos del elemento, consulte [Guardar un correo electrónico adjunto mediante el uso de la API administrada de EWS](#bk_saveitemattach).
+En el siguiente ejemplo de código se muestra cómo obtener un objeto [EmailMessage](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) mediante el método **BIND** y, a continuación, recorrer en iteración la colección de datos adjuntos y llamar al método **FileAttachment. Load** o **ItemAttachment. Load** en cada adjunto según corresponda. Cada archivo de datos adjuntos se guarda en la carpeta C:\temp\ y cada elemento adjunto se carga en la memoria. Para obtener información sobre cómo guardar datos adjuntos de un elemento, vea [guardar un correo electrónico adjunto mediante la API administrada de EWS](#bk_saveitemattach).
   
-En este ejemplo se supone que **servicio** es un válido [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) de objetos, que **itemId** es el [ItemId](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) del mensaje desde el que se va a recuperar los datos adjuntos, y que se ha autenticado el usuario a un servidor de Exchange. 
+En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido, que **Itemid** es el [Itemid](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.itemid%28v=exchg.80%29.aspx) del mensaje desde el que se recuperarán los datos adjuntos y que el usuario se ha autenticado en un servidor de Exchange. 
   
 ```cs
 public static void GetAttachmentsFromEmail(ExchangeService service, ItemId itemId)
@@ -64,19 +64,19 @@ public static void GetAttachmentsFromEmail(ExchangeService service, ItemId itemI
 }
 ```
 
-## <a name="get-an-attachment-from-an-email-by-using-ews"></a>Obtener datos adjuntos de un correo electrónico mediante el uso de EWS
+## <a name="get-an-attachment-from-an-email-by-using-ews"></a>Obtener datos adjuntos de un correo electrónico mediante EWS
 <a name="bk_getattachewsma"> </a>
 
-Para obtener datos adjuntos mediante el uso de EWS, primero debe recuperar el mensaje y la colección de datos adjuntos para obtener la [AttachmentId (GetAttachment y DeleteAttachment)](http://msdn.microsoft.com/library/4bea1cb5-0a0f-4e14-9b09-f91af8cf9899%28Office.15%29.aspx) de los datos adjuntos para recuperar. Una vez que tenga uno o más valores de **AttachmentId** para recuperar, llame a la operación [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) para cargar todas las propiedades de los datos adjuntos. 
+Para obtener datos adjuntos mediante EWS, primero debe recuperar el mensaje y la colección de datos adjuntos para obtener [AttachmentId (GetAttachment y DeleteAttachment)](https://msdn.microsoft.com/library/4bea1cb5-0a0f-4e14-9b09-f91af8cf9899%28Office.15%29.aspx) de los datos adjuntos que se van a recuperar. Una vez que tenga uno o más valores de **AttachmentId** que recuperar, llame a la operación [GetAttachment](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) para cargar todas las propiedades de los datos adjuntos. 
   
-En el ejemplo de código siguiente se muestra cómo usar la operación [GetItem](http://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) para obtener un mensaje de correo electrónico y la colección de datos adjuntos en el mensaje. También es la primera solicitud XML que la API administrada de EWS envía al usar la API administrada de EWS para [obtener todos los datos adjuntos de un correo electrónico](#bk_getattachewsma). Los valores de algunos atributos son más cortos para mejorar la legibilidad.
+En el ejemplo de código siguiente se muestra cómo usar la operación [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) para obtener un mensaje de correo electrónico y la colección de datos adjuntos en el mensaje. También es la primera solicitud XML que la API administrada de EWS envía cuando usa la API administrada de EWS para [obtener todos los datos adjuntos de un correo electrónico](#bk_getattachewsma). Los valores de algunos atributos se acortan para facilitar la legibilidad.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange207_SP1" />
   </soap:Header>
@@ -96,26 +96,26 @@ En el ejemplo de código siguiente se muestra cómo usar la operación [GetItem]
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud de **GetItem** con un mensaje de [GetItemResponse](http://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) que incluye un valor de [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx) de **NoError**, lo que indica que se ha recuperado el correo electrónico y los valores de [AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) de los datos adjuntos existentes. 
+El servidor responde a la solicitud **GetItem** con un mensaje [GetItemResponse](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) de **NoError**, que indica que el correo electrónico se ha recuperado correctamente y los valores de [AttachmentId](https://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) de los datos adjuntos existentes. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="939"
                          MinorBuildNumber="12"
                          Version="V2_11"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -150,14 +150,14 @@ El servidor responde a la solicitud de **GetItem** con un mensaje de [GetItemRes
 
 ```
 
-Ahora que tiene los valores de [AttachmentId](http://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) , llame [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) en cada dato adjunto que desea recuperar. 
+Ahora que tiene los valores de [AttachmentId](https://msdn.microsoft.com/library/55a5fd77-60d1-40fa-8144-770600cedc6a%28Office.15%29.aspx) , llame a [GetAttachment](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) en todos los datos adjuntos que desee recuperar. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -171,26 +171,26 @@ Ahora que tiene los valores de [AttachmentId](http://msdn.microsoft.com/library/
 </soap:Envelope>
 ```
 
-Al recuperar un elemento de datos adjuntos, el servidor responde a la solicitud de **GetAttachment** con un mensaje de [GetAttachmentResponse](http://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx) que incluye un valor [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx) de **NoError**, lo que indica que se ha recuperado los datos adjuntos correctamente y todos los elementos para el elemento adjunto, que en este caso es un mensaje de correo electrónico.
+Al recuperar datos adjuntos de un elemento, el servidor responde a la solicitud **GetAttachment** con un mensaje [GetAttachmentResponse](https://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) de **NoError**, lo que indica que los datos adjuntos se recuperaron correctamente y todos los elementos del elemento adjunto, que en este caso es un mensaje de correo electrónico.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="939"
                          MinorBuildNumber="12"
                          Version="V2_11"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                             xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                             xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetAttachmentResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -259,26 +259,26 @@ Al recuperar un elemento de datos adjuntos, el servidor responde a la solicitud 
 </s:Envelope>
 ```
 
-Al recuperar un archivo adjunto, el servidor responde a la solicitud de **GetAttachment** con un mensaje de [GetAttachmentResponse](http://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx) que incluye un valor [ResponseCode](http://msdn.microsoft.com/en-us/library/aa580757%28v=exchg.150%29.aspx) de **NoError**, lo que indica que se ha recuperado los datos adjuntos correctamente y todos los elementos de los datos adjuntos de archivo.
+Al recuperar un archivo adjunto, el servidor responde a la solicitud **GetAttachment** con un mensaje [GetAttachmentResponse](https://msdn.microsoft.com/library/cb65f449-309b-4b6e-8d22-d1967135490c%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) de **NoError**, lo que indica que los datos adjuntos se recuperaron correctamente y todos los elementos del archivo adjunto.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
                          MinorVersion="0"
                          MajorBuildNumber="939"
                          MinorBuildNumber="12"
                          Version="V2_11"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                             xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                             xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetAttachmentResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -296,12 +296,12 @@ Al recuperar un archivo adjunto, el servidor responde a la solicitud de **GetAtt
 </s:Envelope>
 ```
 
-## <a name="save-an-attached-email-by-using-the-ews-managed-api"></a>Guardar un correo electrónico adjunto mediante el uso de la API administrada de EWS
+## <a name="save-an-attached-email-by-using-the-ews-managed-api"></a>Guardar un correo electrónico adjunto mediante la API administrada de EWS
 <a name="bk_saveitemattach"> </a>
 
-Para poder guardar el contenido de datos adjuntos de correo electrónico con la API administrada de EWS, debe guardar la [MimeContent](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) a un archivo. De esta manera, se perderán las propiedades extendidas que se establezca en el elemento, como las marcas de seguimiento y las categorías. En este ejemplo se guardan los datos adjuntos de correo electrónico a la a la carpeta C:\temp\. 
+Para guardar el contenido de un archivo adjunto de correo electrónico mediante la API administrada de EWS, debe guardar el [MimeContent](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) en un archivo. Al hacerlo, perderá las propiedades extendidas establecidas en el elemento, como marcas de seguimiento y categorías. En este ejemplo se guardan los datos adjuntos de correo electrónico en la carpeta C:\temp\. 
   
-Tenga en cuenta que no se puede mover o copiar los datos adjuntos del elemento a otra carpeta debido a que los datos adjuntos del elemento no son un elemento de establecimiento inflexible de tipos, por lo que si se va a mover los datos adjuntos a una carpeta diferente, use el siguiente ejemplo de código y, a continuación, [importar el archivo](how-to-import-items-by-using-ews-in-exchange.md) a un carpeta diferente. 
+Tenga en cuenta que no se puede mover o copiar el elemento adjunto a otra carpeta porque el elemento adjunto no es un elemento con establecimiento inflexible de tipos, por lo que si está intentando mover datos adjuntos a una carpeta diferente, use el siguiente ejemplo de código y, a continuación, [Importe el archivo](how-to-import-items-by-using-ews-in-exchange.md) en una carpeta diferente. 
   
 ```cs
 public static void SaveEmailAttachment(ExchangeService service, ItemId itemId)
@@ -328,10 +328,10 @@ public static void SaveEmailAttachment(ExchangeService service, ItemId itemId)
 ## <a name="see-also"></a>Vea también
 
 
-- [Los datos adjuntos y EWS en Exchange](attachments-and-ews-in-exchange.md)
+- [Datos adjuntos y EWS en Exchange](attachments-and-ews-in-exchange.md)
     
-- [Agregar datos adjuntos mediante el uso de EWS en Exchange](how-to-add-attachments-by-using-ews-in-exchange.md)
+- [Adición de datos adjuntos mediante EWS en Exchange](how-to-add-attachments-by-using-ews-in-exchange.md)
     
-- [Eliminar los datos adjuntos mediante el uso de EWS en Exchange](how-to-delete-attachments-by-using-ews-in-exchange.md)
+- [Eliminar datos adjuntos mediante EWS en Exchange](how-to-delete-attachments-by-using-ews-in-exchange.md)
     
 

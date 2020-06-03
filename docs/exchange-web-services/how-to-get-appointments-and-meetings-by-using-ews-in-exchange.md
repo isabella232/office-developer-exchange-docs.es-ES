@@ -1,28 +1,28 @@
 ---
-title: Obtener las citas y reuniones con EWS en Exchange
+title: Obtener citas y reuniones mediante EWS en Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 1bae582a-8cb3-4e77-be2a-7e107fad26fe
-description: Obtenga información sobre cómo obtener las citas y reuniones con la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: c78d70ca2266bd192b82f644d902ad8c958d2d4a
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Obtenga información sobre cómo obtener citas y reuniones mediante la API administrada de EWS o EWS en Exchange.
+localization_priority: Priority
+ms.openlocfilehash: d951bfeccdf50ae1397ecdd4887ed05548b25001
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353696"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528093"
 ---
-# <a name="get-appointments-and-meetings-by-using-ews-in-exchange"></a>Obtener las citas y reuniones con EWS en Exchange
+# <a name="get-appointments-and-meetings-by-using-ews-in-exchange"></a>Obtener citas y reuniones mediante EWS en Exchange
 
-Obtenga información sobre cómo obtener las citas y reuniones con la API administrada de EWS o EWS en Exchange.
+Obtenga información sobre cómo obtener citas y reuniones mediante la API administrada de EWS o EWS en Exchange.
   
-Puede recuperar las citas y reuniones desde una carpeta Calendario mediante el método de la API administrada de EWS [CalendarFolder.FindAppointments](http://msdn.microsoft.com/en-us/library/dd636179%28v=exchg.80%29.aspx) o la operación de EWS [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) . 
+Puede recuperar las citas y las reuniones de una carpeta de calendario con el método de la API administrada de EWS [hubiera. FindAppointments](https://msdn.microsoft.com/library/dd636179%28v=exchg.80%29.aspx) o la operación de EWS de [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) . 
   
-## <a name="get-appointments-by-using-the-ews-managed-api"></a>Obtener las citas mediante el uso de la API administrada de EWS
+## <a name="get-appointments-by-using-the-ews-managed-api"></a>Obtener citas mediante la API administrada de EWS
 <a name="bk_retrieveappsEWSMA"> </a>
 
-En el ejemplo de código siguiente se muestra cómo usar la API administrada de EWS para recuperar las citas de un usuario que se dividen entre un inicio especificada y la hora de finalización.
+En el siguiente ejemplo de código se muestra cómo usar la API administrada de EWS para recuperar las citas de un usuario que se encuentran entre una hora de inicio y una hora de finalización especificadas.
   
 ```cs
        // Initialize values for the start and end times, and the number of appointments to retrieve.
@@ -52,7 +52,7 @@ En el ejemplo de código siguiente se muestra cómo usar la API administrada de 
 
 <br/>
 
-El siguiente es el resultado del ejemplo de código.
+A continuación, se muestra el resultado del ejemplo de código.
   
 ```text
 The first five appointments on your calendar from 8/21/2013 to 9/20/2013 are: 
@@ -68,17 +68,17 @@ Subject: Tennis at the club Start: 8/22/2013 11:00:00 AM End: 8/22/2013 12:00:00
 Subject: Online training webcast: 8/22/2013 2:00:00 PM End: 8/22/2013 3:00:00 PM
 ```
 
-## <a name="get-appointments-by-using-ews"></a>Obtener las citas mediante el uso de EWS
+## <a name="get-appointments-by-using-ews"></a>Obtener citas con EWS
 <a name="bk_xml"> </a>
 
-El siguiente código XML muestra una solicitud de operación [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) para devolver un identificador de la carpeta para la operación [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) . 
+El siguiente XML muestra una solicitud de operación [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) para devolver un identificador de carpeta para la operación [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) . 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+       xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+       xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -97,20 +97,20 @@ El siguiente código XML muestra una solicitud de operación [GetFolder](http://
 
 <br/>
 
-El siguiente código XML muestra la respuesta **GetFolder** . Tenga en cuenta que los atributos **FolderID** y **ChangeKey** son más cortos para mejorar la legibilidad. 
+El siguiente XML muestra la respuesta **GetFolder** . Tenga en cuenta que los atributos **folderId** y **changekey** se acortan para facilitar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="731" MinorBuildNumber="10" Version="V2_3" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
- xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -128,14 +128,14 @@ El siguiente código XML muestra la respuesta **GetFolder** . Tenga en cuenta qu
 
 <br/>
 
-El siguiente código XML muestra la solicitud **FindItem** que se usa para devolver las citas solicitadas. Tenga en cuenta que los atributos **FolderID** y **ChangeKey** son más cortos para mejorar la legibilidad. 
+El siguiente XML muestra la solicitud **FindItem** usada para devolver las citas solicitadas. Tenga en cuenta que los atributos **folderId** y **changekey** se acortan para facilitar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+       xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+       xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -160,21 +160,21 @@ El siguiente código XML muestra la solicitud **FindItem** que se usa para devol
 
 <br/>
 
-El siguiente código XML muestra la respuesta **FindItem** . Tenga en cuenta que los atributos **ItemID** y **ChangeKey** son más cortos para mejorar la legibilidad. 
+El siguiente XML muestra la respuesta de **FindItem** . Tenga en cuenta que los atributos **Itemid** y **changekey** se acortan para facilitar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="731" MinorBuildNumber="10" Version="V2_3" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:FindItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:FindItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:FindItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -219,20 +219,20 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 </s:Envelope>
 ```
 
-## <a name="recurring-meetings-and-the-calendar-view"></a>Reuniones periódicas y la vista de calendario
+## <a name="recurring-meetings-and-the-calendar-view"></a>Reuniones periódicas y la vista Calendario
 <a name="bk_recurring"> </a>
 
-La carpeta de calendario es un poco diferente de otras carpetas en un buzón debido a que no son elementos real en el buzón de repeticiones en una serie periódica y las excepciones de una serie periódica, pero en su lugar se almacenan internamente como datos adjuntos a un maestro periódico. Esto significa, si bien puede crear una solicitud de EWS devuelve valores entre un conjunto de **start** y **end** valores mediante el uso de uno de la API administrada de EWS **FindItems** sobrecargan métodos, como [ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) o la [EWS FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) operación, EWS no tendría un aspecto a través de la tabla de datos adjuntos de todos los elementos de calendario para buscar excepciones y repeticiones. 
+La carpeta calendario es un poco diferente de otras carpetas de un buzón, ya que las repeticiones de una serie periódica y las excepciones a una serie periódica no son elementos reales en el buzón, sino que se almacenan internamente como datos adjuntos a un maestro recurrente. Esto significa que, aunque se puede crear una solicitud de EWS que devuelve valores entre un conjunto de valores de **Inicio** y **finalización** mediante uno de los métodos de sobrecarga de **FindItems** de la API administrada de EWS, como [ExchangeService. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) o la operación [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) de EWS, EWS no buscaba en la tabla de datos adjuntos de todos los elementos de calendario para encontrar excepciones y ocurrencias. 
   
-En su lugar, ¿qué desea hacer en realidad es algo parecido a la aplicación de una *Dataview* en una unión de dos tablas SQL, con un objeto [CalendarView](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) . Tenga en cuenta que por motivos de rendimiento, se recomienda que utilice la propiedad [PropertySet](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) para limitar el tamaño de la respuesta de forma que indica el número de citas o reuniones que desea devolver, así como las propiedades específicas que desee. 
+En su lugar, lo que realmente desea hacer es algo parecido a aplicar una *DataView* en una Unión de dos tablas de SQL, utilizando un objeto [CalendarView](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) . Tenga en cuenta que, por motivos de rendimiento, le recomendamos que use la propiedad [PropertySet](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) para limitar el tamaño de la respuesta indicando el número de citas o reuniones que desea que se devuelvan, así como las propiedades específicas que desee. 
   
 ## <a name="see-also"></a>Vea también
 <a name="bk_additional"> </a>
 
 - [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)   
-- [Crear citas y reuniones mediante el uso de EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)  
-- [Actualizar las citas y reuniones con EWS en Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)  
-- [Eliminar las citas y cancelar reuniones mediante el uso de EWS en Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md) 
+- [Crear citas y reuniones mediante EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)  
+- [Actualizar citas y reuniones mediante EWS en Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)  
+- [Eliminar citas y cancelar reuniones mediante EWS en Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md) 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
     
 
