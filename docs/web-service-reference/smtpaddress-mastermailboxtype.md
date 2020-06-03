@@ -12,33 +12,33 @@ ms.openlocfilehash: a9bd9cae206026124216289db8b1e1a47856ecc8
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467266"
 ---
-# <a name="smtpaddress-mastermailboxtype"></a><span data-ttu-id="98466-103">SmtpAddress (MasterMailboxType)</span><span class="sxs-lookup"><span data-stu-id="98466-103">SmtpAddress (MasterMailboxType)</span></span>
+# <a name="smtpaddress-mastermailboxtype"></a><span data-ttu-id="c0d72-103">SmtpAddress (MasterMailboxType)</span><span class="sxs-lookup"><span data-stu-id="c0d72-103">SmtpAddress (MasterMailboxType)</span></span>
 
-<span data-ttu-id="98466-104">El elemento **SmtpAddress (MasterMailboxType)** está pensado solo para uso interno.</span><span class="sxs-lookup"><span data-stu-id="98466-104">The **SmtpAddress (MasterMailboxType)** element is intended for internal use only.</span></span> 
+<span data-ttu-id="c0d72-104">El elemento **SmtpAddress (MasterMailboxType)** está pensado solo para uso interno.</span><span class="sxs-lookup"><span data-stu-id="c0d72-104">The **SmtpAddress (MasterMailboxType)** element is intended for internal use only.</span></span> 
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="98466-105">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="98466-105">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="c0d72-105">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="c0d72-105">Attributes and elements</span></span>
 
-<span data-ttu-id="98466-106">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="98466-106">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="c0d72-106">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="c0d72-106">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="98466-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="98466-107">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="c0d72-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="c0d72-107">Attributes</span></span>
 
-<span data-ttu-id="98466-108">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="98466-108">None.</span></span>
+<span data-ttu-id="c0d72-108">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="c0d72-108">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="98466-109">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="98466-109">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="c0d72-109">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="c0d72-109">Child elements</span></span>
 
-<span data-ttu-id="98466-110">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="98466-110">None.</span></span>
+<span data-ttu-id="c0d72-110">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="c0d72-110">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="98466-111">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="98466-111">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="c0d72-111">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="c0d72-111">Parent elements</span></span>
 
-<span data-ttu-id="98466-112">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="98466-112">None.</span></span>
+<span data-ttu-id="c0d72-112">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="c0d72-112">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="98466-113">Comentarios</span><span class="sxs-lookup"><span data-stu-id="98466-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c0d72-113">Comentarios</span><span class="sxs-lookup"><span data-stu-id="c0d72-113">Remarks</span></span>
 
-<span data-ttu-id="98466-114">Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).</span><span class="sxs-lookup"><span data-stu-id="98466-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="c0d72-114">Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).</span><span class="sxs-lookup"><span data-stu-id="c0d72-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
   
-<span data-ttu-id="98466-115">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="98466-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="c0d72-115">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="c0d72-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
 

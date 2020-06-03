@@ -15,20 +15,20 @@ ms.openlocfilehash: 2311b6137ac25d15ad3d06668450c1d0f7ec1fad
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467357"
 ---
-# <a name="setoofstatus-operation-um-web-service"></a><span data-ttu-id="f2f88-103">Operación SetOofStatus (servicio Web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="f2f88-103">SetOofStatus operation (UM web service)</span></span>
+# <a name="setoofstatus-operation-um-web-service"></a><span data-ttu-id="73531-103">Operación SetOofStatus (servicio Web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="73531-103">SetOofStatus operation (UM web service)</span></span>
 
-<span data-ttu-id="f2f88-104">La operación SetOofStatus establece un valor que indica si se debe reproducir el saludo de fuera de la oficina (OOF) para el usuario que realiza la solicitud.</span><span class="sxs-lookup"><span data-stu-id="f2f88-104">The SetOofStatus operation sets a value that indicates whether the Out of Office (OOF) greeting should be played for the user who makes the request.</span></span>
+<span data-ttu-id="73531-104">La operación SetOofStatus establece un valor que indica si se debe reproducir el saludo de fuera de la oficina (OOF) para el usuario que realiza la solicitud.</span><span class="sxs-lookup"><span data-stu-id="73531-104">The SetOofStatus operation sets a value that indicates whether the Out of Office (OOF) greeting should be played for the user who makes the request.</span></span>
   
-## <a name="setoofstatus-request-example"></a><span data-ttu-id="f2f88-105">Ejemplo de solicitud SetOofStatus</span><span class="sxs-lookup"><span data-stu-id="f2f88-105">SetOofStatus request example</span></span>
+## <a name="setoofstatus-request-example"></a><span data-ttu-id="73531-105">Ejemplo de solicitud SetOofStatus</span><span class="sxs-lookup"><span data-stu-id="73531-105">SetOofStatus request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="f2f88-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="f2f88-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="73531-106">Description</span><span class="sxs-lookup"><span data-stu-id="73531-106">Description</span></span>
 
-<span data-ttu-id="f2f88-107">El siguiente ejemplo de una solicitud SetOofStatus muestra cómo crear una solicitud para habilitar el saludo de fuera de la oficina para un buzón.</span><span class="sxs-lookup"><span data-stu-id="f2f88-107">The following example of a SetOofStatus request shows how to form a request to enable the Out of Office greeting for a mailbox.</span></span>
+<span data-ttu-id="73531-107">El siguiente ejemplo de una solicitud SetOofStatus muestra cómo crear una solicitud para habilitar el saludo de fuera de la oficina para un buzón.</span><span class="sxs-lookup"><span data-stu-id="73531-107">The following example of a SetOofStatus request shows how to form a request to enable the Out of Office greeting for a mailbox.</span></span>
   
-### <a name="code"></a><span data-ttu-id="f2f88-108">Código</span><span class="sxs-lookup"><span data-stu-id="f2f88-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="73531-108">Código</span><span class="sxs-lookup"><span data-stu-id="73531-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -41,13 +41,13 @@ ms.locfileid: "44467357"
 </soap:Envelope>
 ```
 
-## <a name="successful-setoofstatus-response-example"></a><span data-ttu-id="f2f88-109">Ejemplo de respuesta SetOofStatus correcta</span><span class="sxs-lookup"><span data-stu-id="f2f88-109">Successful SetOofStatus response example</span></span>
+## <a name="successful-setoofstatus-response-example"></a><span data-ttu-id="73531-109">Ejemplo de respuesta SetOofStatus correcta</span><span class="sxs-lookup"><span data-stu-id="73531-109">Successful SetOofStatus response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="f2f88-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="f2f88-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="73531-110">Description</span><span class="sxs-lookup"><span data-stu-id="73531-110">Description</span></span>
 
-<span data-ttu-id="f2f88-111">El siguiente ejemplo de una respuesta de SetOofStatus muestra una respuesta a la solicitud SetOofStatus.</span><span class="sxs-lookup"><span data-stu-id="f2f88-111">The following example of a SetOofStatus response shows a response to the SetOofStatus request.</span></span>
+<span data-ttu-id="73531-111">El siguiente ejemplo de una respuesta de SetOofStatus muestra una respuesta a la solicitud SetOofStatus.</span><span class="sxs-lookup"><span data-stu-id="73531-111">The following example of a SetOofStatus response shows a response to the SetOofStatus request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="f2f88-112">Código</span><span class="sxs-lookup"><span data-stu-id="f2f88-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="73531-112">Código</span><span class="sxs-lookup"><span data-stu-id="73531-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -58,13 +58,13 @@ ms.locfileid: "44467357"
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="f2f88-113">Vea también</span><span class="sxs-lookup"><span data-stu-id="f2f88-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="73531-113">Vea también</span><span class="sxs-lookup"><span data-stu-id="73531-113">See also</span></span>
 
 
 
-[<span data-ttu-id="f2f88-114">SetOofStatus (servicio Web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="f2f88-114">SetOofStatus (UM web service)</span></span>](setoofstatus-um-web-service.md)
+[<span data-ttu-id="73531-114">SetOofStatus (servicio Web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="73531-114">SetOofStatus (UM web service)</span></span>](setoofstatus-um-web-service.md)
   
-[<span data-ttu-id="f2f88-115">SetOofStatusResponse (servicio Web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="f2f88-115">SetOofStatusResponse (UM web service)</span></span>](setoofstatusresponse-um-web-service.md)
+[<span data-ttu-id="73531-115">SetOofStatusResponse (servicio Web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="73531-115">SetOofStatusResponse (UM web service)</span></span>](setoofstatusresponse-um-web-service.md)
   
-[<span data-ttu-id="f2f88-116">Estado (servicio Web de mensajería unificada-SetOofStatus)</span><span class="sxs-lookup"><span data-stu-id="f2f88-116">Status (UM web service - SetOofStatus)</span></span>](status-um-web-servicesetoofstatus.md)
+[<span data-ttu-id="73531-116">Estado (servicio Web de mensajería unificada-SetOofStatus)</span><span class="sxs-lookup"><span data-stu-id="73531-116">Status (UM web service - SetOofStatus)</span></span>](status-um-web-servicesetoofstatus.md)
 

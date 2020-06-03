@@ -16,79 +16,79 @@ ms.openlocfilehash: b75dfba203177d6451f3847bf8d1f68014612e1c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465999"
 ---
-# <a name="ismeeting-calendareventdetails"></a><span data-ttu-id="6233b-103">IsMeeting (CalendarEventDetails)</span><span class="sxs-lookup"><span data-stu-id="6233b-103">IsMeeting (CalendarEventDetails)</span></span>
+# <a name="ismeeting-calendareventdetails"></a><span data-ttu-id="85771-103">IsMeeting (CalendarEventDetails)</span><span class="sxs-lookup"><span data-stu-id="85771-103">IsMeeting (CalendarEventDetails)</span></span>
 
-<span data-ttu-id="6233b-104">El elemento **IsMeeting** indica si el evento del calendario es una reunión o una cita.</span><span class="sxs-lookup"><span data-stu-id="6233b-104">The **IsMeeting** element indicates whether the calendar event is a meeting or an appointment.</span></span> 
+<span data-ttu-id="85771-104">El elemento **IsMeeting** indica si el evento del calendario es una reunión o una cita.</span><span class="sxs-lookup"><span data-stu-id="85771-104">The **IsMeeting** element indicates whether the calendar event is a meeting or an appointment.</span></span> 
   
-[<span data-ttu-id="6233b-105">GetUserAvailabilityResponse</span><span class="sxs-lookup"><span data-stu-id="6233b-105">GetUserAvailabilityResponse</span></span>](getuseravailabilityresponse.md)
+[<span data-ttu-id="85771-105">GetUserAvailabilityResponse</span><span class="sxs-lookup"><span data-stu-id="85771-105">GetUserAvailabilityResponse</span></span>](getuseravailabilityresponse.md)
   
-[<span data-ttu-id="6233b-106">FreeBusyResponseArray</span><span class="sxs-lookup"><span data-stu-id="6233b-106">FreeBusyResponseArray</span></span>](freebusyresponsearray.md)
+[<span data-ttu-id="85771-106">FreeBusyResponseArray</span><span class="sxs-lookup"><span data-stu-id="85771-106">FreeBusyResponseArray</span></span>](freebusyresponsearray.md)
   
-[<span data-ttu-id="6233b-107">FreeBusyResponse</span><span class="sxs-lookup"><span data-stu-id="6233b-107">FreeBusyResponse</span></span>](freebusyresponse.md)
+[<span data-ttu-id="85771-107">FreeBusyResponse</span><span class="sxs-lookup"><span data-stu-id="85771-107">FreeBusyResponse</span></span>](freebusyresponse.md)
   
-[<span data-ttu-id="6233b-108">FreeBusyView</span><span class="sxs-lookup"><span data-stu-id="6233b-108">FreeBusyView</span></span>](freebusyview.md)
+[<span data-ttu-id="85771-108">FreeBusyView</span><span class="sxs-lookup"><span data-stu-id="85771-108">FreeBusyView</span></span>](freebusyview.md)
   
-[<span data-ttu-id="6233b-109">CalendarEventArray</span><span class="sxs-lookup"><span data-stu-id="6233b-109">CalendarEventArray</span></span>](calendareventarray.md)
+[<span data-ttu-id="85771-109">CalendarEventArray</span><span class="sxs-lookup"><span data-stu-id="85771-109">CalendarEventArray</span></span>](calendareventarray.md)
   
-[<span data-ttu-id="6233b-110">CalendarEvent</span><span class="sxs-lookup"><span data-stu-id="6233b-110">CalendarEvent</span></span>](calendarevent.md)
+[<span data-ttu-id="85771-110">CalendarEvent</span><span class="sxs-lookup"><span data-stu-id="85771-110">CalendarEvent</span></span>](calendarevent.md)
   
-[<span data-ttu-id="6233b-111">CalendarEventDetails</span><span class="sxs-lookup"><span data-stu-id="6233b-111">CalendarEventDetails</span></span>](calendareventdetails.md)
+[<span data-ttu-id="85771-111">CalendarEventDetails</span><span class="sxs-lookup"><span data-stu-id="85771-111">CalendarEventDetails</span></span>](calendareventdetails.md)
   
-[<span data-ttu-id="6233b-112">IsMeeting (CalendarEventDetails)</span><span class="sxs-lookup"><span data-stu-id="6233b-112">IsMeeting (CalendarEventDetails)</span></span>](ismeeting-calendareventdetails.md)
+[<span data-ttu-id="85771-112">IsMeeting (CalendarEventDetails)</span><span class="sxs-lookup"><span data-stu-id="85771-112">IsMeeting (CalendarEventDetails)</span></span>](ismeeting-calendareventdetails.md)
   
 ```xml
 <IsMeeting>true or false</IsMeeting>
 ```
 
- <span data-ttu-id="6233b-113">**boolean**</span><span class="sxs-lookup"><span data-stu-id="6233b-113">**boolean**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="6233b-114">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="6233b-114">Attributes and elements</span></span>
+ <span data-ttu-id="85771-113">**boolean**</span><span class="sxs-lookup"><span data-stu-id="85771-113">**boolean**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="85771-114">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="85771-114">Attributes and elements</span></span>
 
-<span data-ttu-id="6233b-115">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="6233b-115">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="85771-115">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="85771-115">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="6233b-116">Atributos</span><span class="sxs-lookup"><span data-stu-id="6233b-116">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="85771-116">Atributos</span><span class="sxs-lookup"><span data-stu-id="85771-116">Attributes</span></span>
 
-<span data-ttu-id="6233b-117">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="6233b-117">None.</span></span>
+<span data-ttu-id="85771-117">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="85771-117">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="6233b-118">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="6233b-118">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="85771-118">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="85771-118">Child elements</span></span>
 
-<span data-ttu-id="6233b-119">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="6233b-119">None.</span></span>
+<span data-ttu-id="85771-119">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="85771-119">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="6233b-120">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="6233b-120">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="85771-120">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="85771-120">Parent elements</span></span>
 
-|<span data-ttu-id="6233b-121">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="6233b-121">**Element**</span></span>|<span data-ttu-id="6233b-122">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="6233b-122">**Description**</span></span>|
+|<span data-ttu-id="85771-121">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="85771-121">**Element**</span></span>|<span data-ttu-id="85771-122">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="85771-122">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="6233b-123">CalendarEventDetails</span><span class="sxs-lookup"><span data-stu-id="6233b-123">CalendarEventDetails</span></span>](calendareventdetails.md) <br/> |<span data-ttu-id="6233b-124">Proporciona información adicional para un evento de calendario.</span><span class="sxs-lookup"><span data-stu-id="6233b-124">Provides additional information for a calendar event.</span></span>  <br/> <span data-ttu-id="6233b-125">La siguiente es la expresión XPath a este elemento:</span><span class="sxs-lookup"><span data-stu-id="6233b-125">The following is the XPath expression to this element:</span></span>  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
+|[<span data-ttu-id="85771-123">CalendarEventDetails</span><span class="sxs-lookup"><span data-stu-id="85771-123">CalendarEventDetails</span></span>](calendareventdetails.md) <br/> |<span data-ttu-id="85771-124">Proporciona información adicional para un evento de calendario.</span><span class="sxs-lookup"><span data-stu-id="85771-124">Provides additional information for a calendar event.</span></span>  <br/> <span data-ttu-id="85771-125">La siguiente es la expresión XPath a este elemento:</span><span class="sxs-lookup"><span data-stu-id="85771-125">The following is the XPath expression to this element:</span></span>  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="6233b-126">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="6233b-126">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="85771-126">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="85771-126">Text value</span></span>
 
-<span data-ttu-id="6233b-127">Es necesario un valor de texto si este elemento se devuelve en la respuesta.</span><span class="sxs-lookup"><span data-stu-id="6233b-127">A text value is required if this element is returned in the response.</span></span> <span data-ttu-id="6233b-128">Este elemento es obligatorio si se usa el elemento [CalendarEventDetails](calendareventdetails.md) .</span><span class="sxs-lookup"><span data-stu-id="6233b-128">This element is required if the [CalendarEventDetails](calendareventdetails.md) element is used.</span></span> 
+<span data-ttu-id="85771-127">Es necesario un valor de texto si este elemento se devuelve en la respuesta.</span><span class="sxs-lookup"><span data-stu-id="85771-127">A text value is required if this element is returned in the response.</span></span> <span data-ttu-id="85771-128">Este elemento es obligatorio si se usa el elemento [CalendarEventDetails](calendareventdetails.md) .</span><span class="sxs-lookup"><span data-stu-id="85771-128">This element is required if the [CalendarEventDetails](calendareventdetails.md) element is used.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="6233b-129">Comentarios</span><span class="sxs-lookup"><span data-stu-id="6233b-129">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="85771-129">Comentarios</span><span class="sxs-lookup"><span data-stu-id="85771-129">Remarks</span></span>
 
-<span data-ttu-id="6233b-130">La diferencia entre una reunión y una cita es que una reunión es un elemento de calendario que incluye asistentes; una cita es un elemento de calendario que no incluye asistentes.</span><span class="sxs-lookup"><span data-stu-id="6233b-130">The difference between a meeting and an appointment is that a meeting is a calendar item that includes attendees; an appointment is a calendar item that does not include attendees.</span></span>
+<span data-ttu-id="85771-130">La diferencia entre una reunión y una cita es que una reunión es un elemento de calendario que incluye asistentes; una cita es un elemento de calendario que no incluye asistentes.</span><span class="sxs-lookup"><span data-stu-id="85771-130">The difference between a meeting and an appointment is that a meeting is a calendar item that includes attendees; an appointment is a calendar item that does not include attendees.</span></span>
   
-<span data-ttu-id="6233b-131">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="6233b-131">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="85771-131">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="85771-131">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="6233b-132">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="6233b-132">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="85771-132">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="85771-132">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="6233b-133">Namespace</span><span class="sxs-lookup"><span data-stu-id="6233b-133">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="6233b-134">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="6233b-134">Schema Name</span></span>  <br/> |<span data-ttu-id="6233b-135">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="6233b-135">Types schema</span></span>  <br/> |
-|<span data-ttu-id="6233b-136">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="6233b-136">Validation File</span></span>  <br/> |<span data-ttu-id="6233b-137">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="6233b-137">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="6233b-138">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="6233b-138">Can be Empty</span></span>  <br/> |<span data-ttu-id="6233b-139">Falso</span><span class="sxs-lookup"><span data-stu-id="6233b-139">False</span></span>  <br/> |
+|<span data-ttu-id="85771-133">Namespace</span><span class="sxs-lookup"><span data-stu-id="85771-133">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="85771-134">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="85771-134">Schema Name</span></span>  <br/> |<span data-ttu-id="85771-135">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="85771-135">Types schema</span></span>  <br/> |
+|<span data-ttu-id="85771-136">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="85771-136">Validation File</span></span>  <br/> |<span data-ttu-id="85771-137">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="85771-137">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="85771-138">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="85771-138">Can be Empty</span></span>  <br/> |<span data-ttu-id="85771-139">Falso</span><span class="sxs-lookup"><span data-stu-id="85771-139">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="6233b-140">Vea también</span><span class="sxs-lookup"><span data-stu-id="6233b-140">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="85771-140">Vea también</span><span class="sxs-lookup"><span data-stu-id="85771-140">See also</span></span>
 
 
 
-[<span data-ttu-id="6233b-141">Operación GetUserAvailability</span><span class="sxs-lookup"><span data-stu-id="6233b-141">GetUserAvailability operation</span></span>](getuseravailability-operation.md)
+[<span data-ttu-id="85771-141">Operación GetUserAvailability</span><span class="sxs-lookup"><span data-stu-id="85771-141">GetUserAvailability operation</span></span>](getuseravailability-operation.md)
   
-[<span data-ttu-id="6233b-142">GetUserAvailabilityResponse</span><span class="sxs-lookup"><span data-stu-id="6233b-142">GetUserAvailabilityResponse</span></span>](getuseravailabilityresponse.md)
+[<span data-ttu-id="85771-142">GetUserAvailabilityResponse</span><span class="sxs-lookup"><span data-stu-id="85771-142">GetUserAvailabilityResponse</span></span>](getuseravailabilityresponse.md)
 
 
-[<span data-ttu-id="6233b-143">Obtener disponibilidad del usuario</span><span class="sxs-lookup"><span data-stu-id="6233b-143">Getting User Availability</span></span>](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[<span data-ttu-id="85771-143">Obtener disponibilidad del usuario</span><span class="sxs-lookup"><span data-stu-id="85771-143">Getting User Availability</span></span>](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 
