@@ -12,52 +12,52 @@ ms.openlocfilehash: c530e0c1a9efb5da3a0e147de3a3ec6e0d7569fc
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456930"
 ---
-# <a name="externalemailaddress"></a><span data-ttu-id="53c23-103">ExternalEmailAddress</span><span class="sxs-lookup"><span data-stu-id="53c23-103">ExternalEmailAddress</span></span>
+# <a name="externalemailaddress"></a><span data-ttu-id="f8bfc-103">ExternalEmailAddress</span><span class="sxs-lookup"><span data-stu-id="f8bfc-103">ExternalEmailAddress</span></span>
 
-<span data-ttu-id="53c23-104">El elemento **ExternalEmailAddress** contiene la dirección de correo electrónico externa del buzón.</span><span class="sxs-lookup"><span data-stu-id="53c23-104">The **ExternalEmailAddress** element contains the external email address of the mailbox.</span></span> 
+<span data-ttu-id="f8bfc-104">El elemento **ExternalEmailAddress** contiene la dirección de correo electrónico externa del buzón.</span><span class="sxs-lookup"><span data-stu-id="f8bfc-104">The **ExternalEmailAddress** element contains the external email address of the mailbox.</span></span> 
   
 ```XML
 <ExternalEmailAddress></ExternalEmailAddress>
 ```
 
-<span data-ttu-id="53c23-105">**string**</span><span class="sxs-lookup"><span data-stu-id="53c23-105">**string**</span></span>
+<span data-ttu-id="f8bfc-105">**string**</span><span class="sxs-lookup"><span data-stu-id="f8bfc-105">**string**</span></span>
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="53c23-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="53c23-106">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="f8bfc-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="f8bfc-106">Attributes and elements</span></span>
 
-<span data-ttu-id="53c23-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="53c23-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="f8bfc-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="f8bfc-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="53c23-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="53c23-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="f8bfc-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="f8bfc-108">Attributes</span></span>
 
-<span data-ttu-id="53c23-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="53c23-109">None.</span></span>
+<span data-ttu-id="f8bfc-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="f8bfc-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="53c23-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="53c23-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="f8bfc-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="f8bfc-110">Child elements</span></span>
 
-<span data-ttu-id="53c23-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="53c23-111">None.</span></span>
+<span data-ttu-id="f8bfc-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="f8bfc-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="53c23-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="53c23-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="f8bfc-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="f8bfc-112">Parent elements</span></span>
 
-[<span data-ttu-id="53c23-113">SearchableMailbox</span><span class="sxs-lookup"><span data-stu-id="53c23-113">SearchableMailbox</span></span>](searchablemailbox.md)
+[<span data-ttu-id="f8bfc-113">SearchableMailbox</span><span class="sxs-lookup"><span data-stu-id="f8bfc-113">SearchableMailbox</span></span>](searchablemailbox.md)
   
-## <a name="text-value"></a><span data-ttu-id="53c23-114">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="53c23-114">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="f8bfc-114">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="f8bfc-114">Text value</span></span>
 
-<span data-ttu-id="53c23-115">El valor de texto del elemento **ExternalEmailAddress** es la dirección de correo electrónico externa del buzón.</span><span class="sxs-lookup"><span data-stu-id="53c23-115">The text value of the **ExternalEmailAddress** element is the external email address of the mailbox.</span></span> 
+<span data-ttu-id="f8bfc-115">El valor de texto del elemento **ExternalEmailAddress** es la dirección de correo electrónico externa del buzón.</span><span class="sxs-lookup"><span data-stu-id="f8bfc-115">The text value of the **ExternalEmailAddress** element is the external email address of the mailbox.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="53c23-116">Comentarios</span><span class="sxs-lookup"><span data-stu-id="53c23-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f8bfc-116">Comentarios</span><span class="sxs-lookup"><span data-stu-id="f8bfc-116">Remarks</span></span>
 
-<span data-ttu-id="53c23-117">Este elemento se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="53c23-117">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="f8bfc-117">Este elemento se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f8bfc-117">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="53c23-118">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="53c23-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="f8bfc-118">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="f8bfc-118">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="53c23-119">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="53c23-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="f8bfc-119">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="f8bfc-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="53c23-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="53c23-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="53c23-121">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="53c23-121">Schema name</span></span>  <br/> |<span data-ttu-id="53c23-122">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="53c23-122">Types schema</span></span>  <br/> |
-|<span data-ttu-id="53c23-123">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="53c23-123">Validation file</span></span>  <br/> |<span data-ttu-id="53c23-124">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="53c23-124">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="53c23-125">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="53c23-125">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="f8bfc-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="f8bfc-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="f8bfc-121">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="f8bfc-121">Schema name</span></span>  <br/> |<span data-ttu-id="f8bfc-122">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="f8bfc-122">Types schema</span></span>  <br/> |
+|<span data-ttu-id="f8bfc-123">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="f8bfc-123">Validation file</span></span>  <br/> |<span data-ttu-id="f8bfc-124">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="f8bfc-124">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="f8bfc-125">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="f8bfc-125">Can be empty</span></span>  <br/> ||
    
 

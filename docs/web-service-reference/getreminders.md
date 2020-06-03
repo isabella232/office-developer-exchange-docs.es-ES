@@ -12,12 +12,12 @@ ms.openlocfilehash: 8b869730f39876b838fbcbef3c39661238ed203c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458302"
 ---
-# <a name="getreminders"></a><span data-ttu-id="d076d-103">GetReminders</span><span class="sxs-lookup"><span data-stu-id="d076d-103">GetReminders</span></span>
+# <a name="getreminders"></a><span data-ttu-id="d8082-103">GetReminders</span><span class="sxs-lookup"><span data-stu-id="d8082-103">GetReminders</span></span>
 
-<span data-ttu-id="d076d-104">El elemento **GetReminders** especifica una solicitud para obtener avisos.</span><span class="sxs-lookup"><span data-stu-id="d076d-104">The **GetReminders** element specifies a request to get reminders.</span></span> 
+<span data-ttu-id="d8082-104">El elemento **GetReminders** especifica una solicitud para obtener avisos.</span><span class="sxs-lookup"><span data-stu-id="d8082-104">The **GetReminders** element specifies a request to get reminders.</span></span> 
   
 ```XML
 <GetReminders>
@@ -29,41 +29,41 @@ ms.locfileid: "44458302"
 
 ```
 
- <span data-ttu-id="d076d-105">**GetRemindersType**</span><span class="sxs-lookup"><span data-stu-id="d076d-105">**GetRemindersType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="d076d-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="d076d-106">Attributes and elements</span></span>
+ <span data-ttu-id="d8082-105">**GetRemindersType**</span><span class="sxs-lookup"><span data-stu-id="d8082-105">**GetRemindersType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="d8082-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="d8082-106">Attributes and elements</span></span>
 
-<span data-ttu-id="d076d-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="d076d-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="d8082-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="d8082-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="d076d-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="d076d-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="d8082-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="d8082-108">Attributes</span></span>
 
-<span data-ttu-id="d076d-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="d076d-109">None.</span></span>
+<span data-ttu-id="d8082-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="d8082-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="d076d-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="d076d-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="d8082-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="d8082-110">Child elements</span></span>
 
-<span data-ttu-id="d076d-111">[BeginTime](begintime.md)  |  [EndTime (ReminderMessageDataType)](endtime-remindermessagedatatype.md)  |  [MaxItems](maxitems.md)  |  [ReminderType](remindertype.md)</span><span class="sxs-lookup"><span data-stu-id="d076d-111">[BeginTime](begintime.md) | [EndTime (ReminderMessageDataType)](endtime-remindermessagedatatype.md) | [MaxItems](maxitems.md) | [ReminderType](remindertype.md)</span></span>
+<span data-ttu-id="d8082-111">[BeginTime](begintime.md)  |  [EndTime (ReminderMessageDataType)](endtime-remindermessagedatatype.md)  |  [MaxItems](maxitems.md)  |  [ReminderType](remindertype.md)</span><span class="sxs-lookup"><span data-stu-id="d8082-111">[BeginTime](begintime.md) | [EndTime (ReminderMessageDataType)](endtime-remindermessagedatatype.md) | [MaxItems](maxitems.md) | [ReminderType](remindertype.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="d076d-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="d076d-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="d8082-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="d8082-112">Parent elements</span></span>
 
-<span data-ttu-id="d076d-113">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="d076d-113">None.</span></span>
+<span data-ttu-id="d8082-113">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="d8082-113">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="d076d-114">Comentarios</span><span class="sxs-lookup"><span data-stu-id="d076d-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d8082-114">Comentarios</span><span class="sxs-lookup"><span data-stu-id="d8082-114">Remarks</span></span>
 
-<span data-ttu-id="d076d-115">Este elemento se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="d076d-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="d8082-115">Este elemento se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="d8082-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="d076d-116">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="d076d-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="d8082-116">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="d8082-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="d076d-117">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="d076d-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="d8082-117">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="d8082-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="d076d-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="d076d-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="d076d-119">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="d076d-119">Schema Name</span></span>  <br/> |<span data-ttu-id="d076d-120">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="d076d-120">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="d076d-121">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="d076d-121">Validation File</span></span>  <br/> |<span data-ttu-id="d076d-122">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="d076d-122">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="d076d-123">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="d076d-123">Can be Empty</span></span>  <br/> |<span data-ttu-id="d076d-124">Verdadero</span><span class="sxs-lookup"><span data-stu-id="d076d-124">True</span></span>  <br/> |
+|<span data-ttu-id="d8082-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="d8082-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="d8082-119">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="d8082-119">Schema Name</span></span>  <br/> |<span data-ttu-id="d8082-120">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="d8082-120">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="d8082-121">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="d8082-121">Validation File</span></span>  <br/> |<span data-ttu-id="d8082-122">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="d8082-122">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="d8082-123">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="d8082-123">Can be Empty</span></span>  <br/> |<span data-ttu-id="d8082-124">Verdadero</span><span class="sxs-lookup"><span data-stu-id="d8082-124">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="d076d-125">Vea también</span><span class="sxs-lookup"><span data-stu-id="d076d-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d8082-125">Vea también</span><span class="sxs-lookup"><span data-stu-id="d8082-125">See also</span></span>
 
 
 
-- [<span data-ttu-id="d076d-126">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="d076d-126">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="d8082-126">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="d8082-126">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
