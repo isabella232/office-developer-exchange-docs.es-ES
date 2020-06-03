@@ -11,42 +11,42 @@ api_name:
 api_type:
 - schema
 ms.assetid: eaf29427-ecf8-4a5e-9a54-db2e6414b35e
-description: La operación GetSharingMetadata Obtiene un token de autenticación opaco que identifica una invitación para compartir.
-ms.openlocfilehash: e2e04d83310e7a8a731cca655a432325574cd9e8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación GetSharingMetadata obtiene un token de autenticación opaco que identifica una invitación de uso compartido.
+ms.openlocfilehash: 0390b9caa7b2e9847b1e8dcdc1b911a35e3c5864
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835671"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530186"
 ---
-# <a name="getsharingmetadata-operation"></a><span data-ttu-id="61120-103">Operación GetSharingMetadata</span><span class="sxs-lookup"><span data-stu-id="61120-103">GetSharingMetadata operation</span></span>
+# <a name="getsharingmetadata-operation"></a><span data-ttu-id="eb638-103">Operación GetSharingMetadata</span><span class="sxs-lookup"><span data-stu-id="eb638-103">GetSharingMetadata operation</span></span>
 
-<span data-ttu-id="61120-104">La operación **GetSharingMetadata** Obtiene un token de autenticación opaco que identifica una invitación para compartir.</span><span class="sxs-lookup"><span data-stu-id="61120-104">The **GetSharingMetadata** operation gets an opaque authentication token that identifies a sharing invitation.</span></span> 
+<span data-ttu-id="eb638-104">La operación **GetSharingMetadata** obtiene un token de autenticación opaco que identifica una invitación de uso compartido.</span><span class="sxs-lookup"><span data-stu-id="eb638-104">The **GetSharingMetadata** operation gets an opaque authentication token that identifies a sharing invitation.</span></span> 
   
-## <a name="soap-headers"></a><span data-ttu-id="61120-105">Encabezados SOAP</span><span class="sxs-lookup"><span data-stu-id="61120-105">SOAP Headers</span></span>
+## <a name="soap-headers"></a><span data-ttu-id="eb638-105">Encabezados SOAP</span><span class="sxs-lookup"><span data-stu-id="eb638-105">SOAP Headers</span></span>
 
-<span data-ttu-id="61120-106">La operación de **GetSharingMetadata** puede utilizar los encabezados SOAP que se enumeran y describen en la tabla siguiente.</span><span class="sxs-lookup"><span data-stu-id="61120-106">The **GetSharingMetadata** operation can use the SOAP headers that are listed and described in the following table.</span></span> 
+<span data-ttu-id="eb638-106">La operación **GetSharingMetadata** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla.</span><span class="sxs-lookup"><span data-stu-id="eb638-106">The **GetSharingMetadata** operation can use the SOAP headers that are listed and described in the following table.</span></span> 
   
-|<span data-ttu-id="61120-107">**Header**</span><span class="sxs-lookup"><span data-stu-id="61120-107">**Header**</span></span>|<span data-ttu-id="61120-108">**Element**</span><span class="sxs-lookup"><span data-stu-id="61120-108">**Element**</span></span>|<span data-ttu-id="61120-109">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="61120-109">**Description**</span></span>|
+|<span data-ttu-id="eb638-107">**Header**</span><span class="sxs-lookup"><span data-stu-id="eb638-107">**Header**</span></span>|<span data-ttu-id="eb638-108">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="eb638-108">**Element**</span></span>|<span data-ttu-id="eb638-109">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="eb638-109">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="61120-110">RequestVersion</span><span class="sxs-lookup"><span data-stu-id="61120-110">RequestVersion</span></span>  <br/> |[<span data-ttu-id="61120-111">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="61120-111">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="61120-112">Identifica la versión del esquema para la solicitud de la operación.</span><span class="sxs-lookup"><span data-stu-id="61120-112">Identifies the schema version for the operation request.</span></span>  <br/> |
-|<span data-ttu-id="61120-113">ServerVersion</span><span class="sxs-lookup"><span data-stu-id="61120-113">ServerVersion</span></span>  <br/> |[<span data-ttu-id="61120-114">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="61120-114">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="61120-115">Identifica la versión del servidor que ha respondido a la solicitud.</span><span class="sxs-lookup"><span data-stu-id="61120-115">Identifies the version of the server that responded to the request.</span></span>  <br/> |
+|<span data-ttu-id="eb638-110">RequestVersion</span><span class="sxs-lookup"><span data-stu-id="eb638-110">RequestVersion</span></span>  <br/> |[<span data-ttu-id="eb638-111">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="eb638-111">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="eb638-112">Identifica la versión del esquema para la solicitud de operación.</span><span class="sxs-lookup"><span data-stu-id="eb638-112">Identifies the schema version for the operation request.</span></span>  <br/> |
+|<span data-ttu-id="eb638-113">ServerVersion</span><span class="sxs-lookup"><span data-stu-id="eb638-113">ServerVersion</span></span>  <br/> |[<span data-ttu-id="eb638-114">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="eb638-114">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="eb638-115">Identifica la versión del servidor que respondió a la solicitud.</span><span class="sxs-lookup"><span data-stu-id="eb638-115">Identifies the version of the server that responded to the request.</span></span>  <br/> |
    
-## <a name="getsharingmetadata-request-example"></a><span data-ttu-id="61120-116">Ejemplo de solicitud de GetSharingMetadata</span><span class="sxs-lookup"><span data-stu-id="61120-116">GetSharingMetadata request example</span></span>
+## <a name="getsharingmetadata-request-example"></a><span data-ttu-id="eb638-116">Ejemplo de solicitud GetSharingMetadata</span><span class="sxs-lookup"><span data-stu-id="eb638-116">GetSharingMetadata request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="61120-117">Descripción</span><span class="sxs-lookup"><span data-stu-id="61120-117">Description</span></span>
+### <a name="description"></a><span data-ttu-id="eb638-117">Description</span><span class="sxs-lookup"><span data-stu-id="eb638-117">Description</span></span>
 
-<span data-ttu-id="61120-118">En el ejemplo siguiente se muestra cómo formar una solicitud para obtener un token de autenticación opaco que identifica una invitación para compartir.</span><span class="sxs-lookup"><span data-stu-id="61120-118">The following example shows how to form a request to get an opaque authentication token that identifies a sharing invitation.</span></span> <span data-ttu-id="61120-119">En este ejemplo, user1@contoso.com desea compartir la carpeta que se especifica mediante el elemento de [IdOfFolderToShare](idoffoldertoshare.md) con user1@fabikam.com y user2@test.com.</span><span class="sxs-lookup"><span data-stu-id="61120-119">In this example, user1@contoso.com wants to share the folder that is specified by the [IdOfFolderToShare](idoffoldertoshare.md) element with user1@fabikam.com and user2@test.com.</span></span> 
+<span data-ttu-id="eb638-118">En el siguiente ejemplo se muestra cómo crear una solicitud para obtener un token de autenticación opaco que identifique una invitación de uso compartido.</span><span class="sxs-lookup"><span data-stu-id="eb638-118">The following example shows how to form a request to get an opaque authentication token that identifies a sharing invitation.</span></span> <span data-ttu-id="eb638-119">En este ejemplo, user1@contoso.com desea compartir la carpeta especificada por el elemento [IdOfFolderToShare](idoffoldertoshare.md) con user1@fabikam.com y user2@test.com.</span><span class="sxs-lookup"><span data-stu-id="eb638-119">In this example, user1@contoso.com wants to share the folder that is specified by the [IdOfFolderToShare](idoffoldertoshare.md) element with user1@fabikam.com and user2@test.com.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="61120-120">Código</span><span class="sxs-lookup"><span data-stu-id="61120-120">Code</span></span>
+### <a name="code"></a><span data-ttu-id="eb638-120">Código</span><span class="sxs-lookup"><span data-stu-id="eb638-120">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2010"/>
   </soap:Header>
@@ -63,17 +63,17 @@ ms.locfileid: "19835671"
 </soap:Envelope>
 ```
 
-### <a name="comments"></a><span data-ttu-id="61120-121">Comentarios</span><span class="sxs-lookup"><span data-stu-id="61120-121">Comments</span></span>
+### <a name="comments"></a><span data-ttu-id="eb638-121">Comentarios</span><span class="sxs-lookup"><span data-stu-id="eb638-121">Comments</span></span>
 
-<span data-ttu-id="61120-122">El elemento de [destinatarios (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md) contiene un elemento [SmtpAddress](smtpaddress.md) para cada destinatario de la invitación para compartir.</span><span class="sxs-lookup"><span data-stu-id="61120-122">The [Recipients (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md) element contains one [SmtpAddress](smtpaddress.md) element for each intended recipient of the sharing invitation.</span></span> 
+<span data-ttu-id="eb638-122">El elemento [Recipients (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md) contiene un elemento [SmtpAddress](smtpaddress.md) para cada destinatario previsto de la invitación para uso compartido.</span><span class="sxs-lookup"><span data-stu-id="eb638-122">The [Recipients (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md) element contains one [SmtpAddress](smtpaddress.md) element for each intended recipient of the sharing invitation.</span></span> 
   
-## <a name="successful-getsharingmetadata-response"></a><span data-ttu-id="61120-123">GetSharingMetadata la respuesta es correcta</span><span class="sxs-lookup"><span data-stu-id="61120-123">Successful GetSharingMetadata Response</span></span>
+## <a name="successful-getsharingmetadata-response"></a><span data-ttu-id="eb638-123">Respuesta GetSharingMetadata correcta</span><span class="sxs-lookup"><span data-stu-id="eb638-123">Successful GetSharingMetadata Response</span></span>
 
-### <a name="description"></a><span data-ttu-id="61120-124">Descripción</span><span class="sxs-lookup"><span data-stu-id="61120-124">Description</span></span>
+### <a name="description"></a><span data-ttu-id="eb638-124">Description</span><span class="sxs-lookup"><span data-stu-id="eb638-124">Description</span></span>
 
-<span data-ttu-id="61120-125">En el ejemplo siguiente se muestra una respuesta a una solicitud **GetSharingMetadata** correcta.</span><span class="sxs-lookup"><span data-stu-id="61120-125">The following example shows a successful response to a **GetSharingMetadata** request.</span></span> <span data-ttu-id="61120-126">En este ejemplo, se han especificado los dos destinatarios en la solicitud **GetSharingMetadata** correspondiente: user1@fabrikam.com y user2@test.com.</span><span class="sxs-lookup"><span data-stu-id="61120-126">In this example, two recipients were specified in the corresponding **GetSharingMetadata** request: user1@fabrikam.com and user2@test.com.</span></span> 
+<span data-ttu-id="eb638-125">En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **GetSharingMetadata** .</span><span class="sxs-lookup"><span data-stu-id="eb638-125">The following example shows a successful response to a **GetSharingMetadata** request.</span></span> <span data-ttu-id="eb638-126">En este ejemplo, se han especificado dos destinatarios en la solicitud **GetSharingMetadata** correspondiente: user1@fabrikam.com y user2@test.com.</span><span class="sxs-lookup"><span data-stu-id="eb638-126">In this example, two recipients were specified in the corresponding **GetSharingMetadata** request: user1@fabrikam.com and user2@test.com.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="61120-127">Código</span><span class="sxs-lookup"><span data-stu-id="61120-127">Code</span></span>
+### <a name="code"></a><span data-ttu-id="eb638-127">Código</span><span class="sxs-lookup"><span data-stu-id="eb638-127">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -86,13 +86,13 @@ ms.locfileid: "19835671"
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <GetSharingMetadataResponseMessage ResponseClass="Success" 
-                                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseCode>NoError</ResponseCode>
       <m:EncryptedSharedFolderDataCollection>
         <t:EncryptedSharedFolderData>
@@ -154,21 +154,21 @@ ms.locfileid: "19835671"
 </soap:Envelope>
 ```
 
-### <a name="comments"></a><span data-ttu-id="61120-128">Comentarios</span><span class="sxs-lookup"><span data-stu-id="61120-128">Comments</span></span>
+### <a name="comments"></a><span data-ttu-id="eb638-128">Comentarios</span><span class="sxs-lookup"><span data-stu-id="eb638-128">Comments</span></span>
 
-<span data-ttu-id="61120-129">La respuesta contiene un elemento [EncryptedSharedFolderData](encryptedsharedfolderdata.md) para cada organización que está representada por destinatarios válidos que se especifican en la solicitud **GetSharingMetadata** .</span><span class="sxs-lookup"><span data-stu-id="61120-129">The response contains one [EncryptedSharedFolderData](encryptedsharedfolderdata.md) element for each organization that is represented by valid recipients that are specified in the **GetSharingMetadata** request.</span></span> 
+<span data-ttu-id="eb638-129">La respuesta contiene un elemento [EncryptedSharedFolderData](encryptedsharedfolderdata.md) para cada organización representada por destinatarios válidos que se especifican en la solicitud **GetSharingMetadata** .</span><span class="sxs-lookup"><span data-stu-id="eb638-129">The response contains one [EncryptedSharedFolderData](encryptedsharedfolderdata.md) element for each organization that is represented by valid recipients that are specified in the **GetSharingMetadata** request.</span></span> 
   
-<span data-ttu-id="61120-130">La solicitud de **GetSharingMetadata** se realizará correctamente, incluso si se especifican los destinatarios no válidos en la solicitud.</span><span class="sxs-lookup"><span data-stu-id="61120-130">The **GetSharingMetadata** request will succeed even if invalid recipients are specified in the request.</span></span> <span data-ttu-id="61120-131">El elemento [InvalidRecipients](invalidrecipients.md) contiene información acerca de los destinatarios no válidos.</span><span class="sxs-lookup"><span data-stu-id="61120-131">The [InvalidRecipients](invalidrecipients.md) element contains information about invalid recipients.</span></span> <span data-ttu-id="61120-132">Para obtener información acerca de los motivos por qué un destinatario podría no ser válido, vea [ResponseCode (InvalidRecipientResponseCodeType)](responsecode-invalidrecipientresponsecodetype.md).</span><span class="sxs-lookup"><span data-stu-id="61120-132">For information about the reasons why a recipient might be invalid, see [ResponseCode (InvalidRecipientResponseCodeType)](responsecode-invalidrecipientresponsecodetype.md).</span></span>
+<span data-ttu-id="eb638-130">La solicitud **GetSharingMetadata** se realizará correctamente incluso si se especifican destinatarios no válidos en la solicitud.</span><span class="sxs-lookup"><span data-stu-id="eb638-130">The **GetSharingMetadata** request will succeed even if invalid recipients are specified in the request.</span></span> <span data-ttu-id="eb638-131">El elemento [InvalidRecipients](invalidrecipients.md) contiene información sobre los destinatarios no válidos.</span><span class="sxs-lookup"><span data-stu-id="eb638-131">The [InvalidRecipients](invalidrecipients.md) element contains information about invalid recipients.</span></span> <span data-ttu-id="eb638-132">Para obtener información sobre los motivos por los que un destinatario podría no ser válido, vea [ResponseCode (InvalidRecipientResponseCodeType)](responsecode-invalidrecipientresponsecodetype.md).</span><span class="sxs-lookup"><span data-stu-id="eb638-132">For information about the reasons why a recipient might be invalid, see [ResponseCode (InvalidRecipientResponseCodeType)](responsecode-invalidrecipientresponsecodetype.md).</span></span>
   
-<span data-ttu-id="61120-133">Si todos los destinatarios a los que no son válidos, el elemento [EncryptedSharedFolderDataCollection](encryptedsharedfolderdatacollection.md) estará vacío.</span><span class="sxs-lookup"><span data-stu-id="61120-133">If all intended recipients are invalid, the [EncryptedSharedFolderDataCollection](encryptedsharedfolderdatacollection.md) element will be empty.</span></span> 
+<span data-ttu-id="eb638-133">Si todos los destinatarios previstos no son válidos, el elemento [EncryptedSharedFolderDataCollection](encryptedsharedfolderdatacollection.md) estará vacío.</span><span class="sxs-lookup"><span data-stu-id="eb638-133">If all intended recipients are invalid, the [EncryptedSharedFolderDataCollection](encryptedsharedfolderdatacollection.md) element will be empty.</span></span> 
   
-## <a name="getsharingmetadata-error-response"></a><span data-ttu-id="61120-134">Respuesta de error de GetSharingMetadata</span><span class="sxs-lookup"><span data-stu-id="61120-134">GetSharingMetadata error response</span></span>
+## <a name="getsharingmetadata-error-response"></a><span data-ttu-id="eb638-134">Respuesta de error de GetSharingMetadata</span><span class="sxs-lookup"><span data-stu-id="eb638-134">GetSharingMetadata error response</span></span>
 
-### <a name="description"></a><span data-ttu-id="61120-135">Descripción</span><span class="sxs-lookup"><span data-stu-id="61120-135">Description</span></span>
+### <a name="description"></a><span data-ttu-id="eb638-135">Description</span><span class="sxs-lookup"><span data-stu-id="eb638-135">Description</span></span>
 
-<span data-ttu-id="61120-136">En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **GetSharingMetadata** .</span><span class="sxs-lookup"><span data-stu-id="61120-136">The following example shows an error response to a **GetSharingMetadata** request.</span></span> 
+<span data-ttu-id="eb638-136">En el ejemplo siguiente se muestra una respuesta de error a una solicitud **GetSharingMetadata** .</span><span class="sxs-lookup"><span data-stu-id="eb638-136">The following example shows an error response to a **GetSharingMetadata** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="61120-137">Código</span><span class="sxs-lookup"><span data-stu-id="61120-137">Code</span></span>
+### <a name="code"></a><span data-ttu-id="eb638-137">Código</span><span class="sxs-lookup"><span data-stu-id="eb638-137">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -181,13 +181,13 @@ ms.locfileid: "19835671"
                          MajorBuildNumber="639" 
                          MinorBuildNumber="11" 
                          Version="Exchange2010" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
     <GetSharingMetadataResponseMessage ResponseClass="Error" 
-                                xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-                                xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                                xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+                                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                                xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:MessageText>The SMTP address format is invalid.</MessageText>
       <m:ResponseCode>ErrorInvalidSmtpAddress</ResponseCode>
       <m:DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -196,20 +196,20 @@ ms.locfileid: "19835671"
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="61120-138">Vea también</span><span class="sxs-lookup"><span data-stu-id="61120-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="eb638-138">Vea también</span><span class="sxs-lookup"><span data-stu-id="eb638-138">See also</span></span>
 
 
 
-[<span data-ttu-id="61120-139">GetSharingMetadata</span><span class="sxs-lookup"><span data-stu-id="61120-139">GetSharingMetadata</span></span>](getsharingmetadata.md)
+[<span data-ttu-id="eb638-139">GetSharingMetadata</span><span class="sxs-lookup"><span data-stu-id="eb638-139">GetSharingMetadata</span></span>](getsharingmetadata.md)
   
-[<span data-ttu-id="61120-140">GetSharingMetadataType</span><span class="sxs-lookup"><span data-stu-id="61120-140">GetSharingMetadataType</span></span>](https://msdn.microsoft.com/library/ExchangeWebServices.GetSharingMetadataType.aspx)
+[<span data-ttu-id="eb638-140">GetSharingMetadataType</span><span class="sxs-lookup"><span data-stu-id="eb638-140">GetSharingMetadataType</span></span>](https://msdn.microsoft.com/library/ExchangeWebServices.GetSharingMetadataType.aspx)
   
-[<span data-ttu-id="61120-141">GetSharingMetadataResponseMessage</span><span class="sxs-lookup"><span data-stu-id="61120-141">GetSharingMetadataResponseMessage</span></span>](getsharingmetadataresponsemessage.md)
+[<span data-ttu-id="eb638-141">GetSharingMetadataResponseMessage</span><span class="sxs-lookup"><span data-stu-id="eb638-141">GetSharingMetadataResponseMessage</span></span>](getsharingmetadataresponsemessage.md)
   
-[<span data-ttu-id="61120-142">GetSharingMetadataResponseMessageType</span><span class="sxs-lookup"><span data-stu-id="61120-142">GetSharingMetadataResponseMessageType</span></span>](https://msdn.microsoft.com/library/ExchangeWebServices.GetSharingMetadataResponseMessageType.aspx)
+[<span data-ttu-id="eb638-142">GetSharingMetadataResponseMessageType</span><span class="sxs-lookup"><span data-stu-id="eb638-142">GetSharingMetadataResponseMessageType</span></span>](https://msdn.microsoft.com/library/ExchangeWebServices.GetSharingMetadataResponseMessageType.aspx)
 
 
-[<span data-ttu-id="61120-143">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="61120-143">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+[<span data-ttu-id="eb638-143">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="eb638-143">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
   
-- [<span data-ttu-id="61120-144">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="61120-144">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="eb638-144">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="eb638-144">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

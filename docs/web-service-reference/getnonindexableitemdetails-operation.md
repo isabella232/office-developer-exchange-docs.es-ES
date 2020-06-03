@@ -7,51 +7,51 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9279c3ad-f7c8-4bbc-b0a7-2c78416cb39a
-description: Busque información sobre la EWS GetNonIndexableItemDetails operación.
-ms.openlocfilehash: 6b0c5afd54ac98f89bc6c5199300c20862c6f207
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Buscar información sobre la operación de EWS de GetNonIndexableItemDetails.
+ms.openlocfilehash: a443e04b0622ddbaaeb1bc8c04bfd05679c6207e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764915"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530214"
 ---
-# <a name="getnonindexableitemdetails-operation"></a><span data-ttu-id="71bf0-103">Operación GetNonIndexableItemDetails</span><span class="sxs-lookup"><span data-stu-id="71bf0-103">GetNonIndexableItemDetails operation</span></span>
+# <a name="getnonindexableitemdetails-operation"></a><span data-ttu-id="89b01-103">Operación GetNonIndexableItemDetails</span><span class="sxs-lookup"><span data-stu-id="89b01-103">GetNonIndexableItemDetails operation</span></span>
 
-<span data-ttu-id="71bf0-104">Obtenga información acerca de la operación de EWS **GetNonIndexableItemDetails** .</span><span class="sxs-lookup"><span data-stu-id="71bf0-104">Find information about the **GetNonIndexableItemDetails** EWS operation.</span></span> 
+<span data-ttu-id="89b01-104">Buscar información sobre la operación de EWS de **GetNonIndexableItemDetails** .</span><span class="sxs-lookup"><span data-stu-id="89b01-104">Find information about the **GetNonIndexableItemDetails** EWS operation.</span></span> 
   
-<span data-ttu-id="71bf0-105">La operación **GetNonIndexableItemDetails** recupera los detalles acerca de los elementos que no se pueden indizar.</span><span class="sxs-lookup"><span data-stu-id="71bf0-105">The **GetNonIndexableItemDetails** operation retrieves details about items that cannot be indexed.</span></span> <span data-ttu-id="71bf0-106">Esto incluye, pero no se limita a, el identificador de elemento, un código de error, una descripción del error, cuando se ha intentado el elemento y obtener información adicional acerca del archivo de índice.</span><span class="sxs-lookup"><span data-stu-id="71bf0-106">This includes, but is not limited to, the item identifier, an error code, an error description, when an attempt was made to index the item, and additional information about the file.</span></span> 
+<span data-ttu-id="89b01-105">La operación **GetNonIndexableItemDetails** recupera detalles sobre los elementos que no se pueden indizar.</span><span class="sxs-lookup"><span data-stu-id="89b01-105">The **GetNonIndexableItemDetails** operation retrieves details about items that cannot be indexed.</span></span> <span data-ttu-id="89b01-106">Esto incluye, entre otros, el identificador de elemento, un código de error, una descripción de error, cuando se realizó un intento de indizar el elemento e información adicional sobre el archivo.</span><span class="sxs-lookup"><span data-stu-id="89b01-106">This includes, but is not limited to, the item identifier, an error code, an error description, when an attempt was made to index the item, and additional information about the file.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="71bf0-107">Aunque el esquema indica que se puede buscar más de un buzón, en la versión inicial de Exchange 2013, el servicio sólo admite obtener detalles de elemento para los elementos de nonindexable de un solo buzón.</span><span class="sxs-lookup"><span data-stu-id="71bf0-107">Although the schema indicates that more than one mailbox can be searched, in the initial release version of Exchange 2013, the service only supports getting item details for nonindexable items in a single mailbox.</span></span> 
+> <span data-ttu-id="89b01-107">Aunque el esquema indica que se puede buscar en más de un buzón de correo, en la versión de lanzamiento inicial de Exchange 2013, el servicio solo admite la obtención de detalles de elementos para elementos no indizables en un único buzón.</span><span class="sxs-lookup"><span data-stu-id="89b01-107">Although the schema indicates that more than one mailbox can be searched, in the initial release version of Exchange 2013, the service only supports getting item details for nonindexable items in a single mailbox.</span></span> 
   
-<span data-ttu-id="71bf0-108">Esta operación se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="71bf0-108">This operation was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="89b01-108">Esta operación se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="89b01-108">This operation was introduced in Exchange Server 2013.</span></span>
   
-## <a name="using-the-getnonindexableitemdetails-operation"></a><span data-ttu-id="71bf0-109">Mediante la operación GetNonIndexableItemDetails</span><span class="sxs-lookup"><span data-stu-id="71bf0-109">Using the GetNonIndexableItemDetails operation</span></span>
+## <a name="using-the-getnonindexableitemdetails-operation"></a><span data-ttu-id="89b01-109">Uso de la operación GetNonIndexableItemDetails</span><span class="sxs-lookup"><span data-stu-id="89b01-109">Using the GetNonIndexableItemDetails operation</span></span>
 
-<span data-ttu-id="71bf0-110">La operación **GetNonIndexableItemDetails** identifica los elementos de buzón de correo que no se pueden indizar y proporciona información acerca de por qué no se pueden indizar los elementos.</span><span class="sxs-lookup"><span data-stu-id="71bf0-110">The **GetNonIndexableItemDetails** operation identifies mailbox items that cannot be indexed and provides information about why the items cannot be indexed.</span></span> <span data-ttu-id="71bf0-111">No se buscan los elementos que no se pueden indizar durante una búsqueda de detección.</span><span class="sxs-lookup"><span data-stu-id="71bf0-111">Items that cannot be indexed are not searched during a discovery search.</span></span> 
+<span data-ttu-id="89b01-110">La operación **GetNonIndexableItemDetails** identifica los elementos del buzón que no se pueden indizar y proporciona información sobre por qué los elementos no se pueden indizar.</span><span class="sxs-lookup"><span data-stu-id="89b01-110">The **GetNonIndexableItemDetails** operation identifies mailbox items that cannot be indexed and provides information about why the items cannot be indexed.</span></span> <span data-ttu-id="89b01-111">No se busca en los elementos que no se pueden indizar durante una búsqueda de detección.</span><span class="sxs-lookup"><span data-stu-id="89b01-111">Items that cannot be indexed are not searched during a discovery search.</span></span> 
   
-### <a name="getnonindexableitemdetails-operation-soap-headers"></a><span data-ttu-id="71bf0-112">Encabezados SOAP de operación de GetNonIndexableItemDetails</span><span class="sxs-lookup"><span data-stu-id="71bf0-112">GetNonIndexableItemDetails operation SOAP headers</span></span>
+### <a name="getnonindexableitemdetails-operation-soap-headers"></a><span data-ttu-id="89b01-112">Encabezados SOAP de operación GetNonIndexableItemDetails</span><span class="sxs-lookup"><span data-stu-id="89b01-112">GetNonIndexableItemDetails operation SOAP headers</span></span>
 
-<span data-ttu-id="71bf0-113">La operación de **GetNonIndexableItemDetails** puede utilizar los encabezados SOAP que se enumeran en la siguiente tabla.</span><span class="sxs-lookup"><span data-stu-id="71bf0-113">The **GetNonIndexableItemDetails** operation can use the SOAP headers that are listed in the following table.</span></span> 
+<span data-ttu-id="89b01-113">La operación **GetNonIndexableItemDetails** puede usar los encabezados SOAP que se enumeran en la tabla siguiente.</span><span class="sxs-lookup"><span data-stu-id="89b01-113">The **GetNonIndexableItemDetails** operation can use the SOAP headers that are listed in the following table.</span></span> 
   
-|<span data-ttu-id="71bf0-114">**Nombre de encabezado**</span><span class="sxs-lookup"><span data-stu-id="71bf0-114">**Header name**</span></span>|<span data-ttu-id="71bf0-115">**Element**</span><span class="sxs-lookup"><span data-stu-id="71bf0-115">**Element**</span></span>|<span data-ttu-id="71bf0-116">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="71bf0-116">**Description**</span></span>|
+|<span data-ttu-id="89b01-114">**Nombre de encabezado**</span><span class="sxs-lookup"><span data-stu-id="89b01-114">**Header name**</span></span>|<span data-ttu-id="89b01-115">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="89b01-115">**Element**</span></span>|<span data-ttu-id="89b01-116">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="89b01-116">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="71bf0-117">**ManagementRole**</span><span class="sxs-lookup"><span data-stu-id="71bf0-117">**ManagementRole**</span></span> <br/> |[<span data-ttu-id="71bf0-118">ManagementRole</span><span class="sxs-lookup"><span data-stu-id="71bf0-118">ManagementRole</span></span>](managementrole.md) <br/> |<span data-ttu-id="71bf0-119">Identifica las funciones de servidor que son necesarias en orden para el autor de la llamada realizar la solicitud.</span><span class="sxs-lookup"><span data-stu-id="71bf0-119">Identifies the server roles that are necessary in order for the caller to make the request.</span></span> <span data-ttu-id="71bf0-120">Este encabezado es aplicable a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="71bf0-120">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="71bf0-121">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="71bf0-121">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="71bf0-122">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="71bf0-122">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="71bf0-123">Identifica la versión del esquema para la solicitud de la operación.</span><span class="sxs-lookup"><span data-stu-id="71bf0-123">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="71bf0-124">Este encabezado es aplicable a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="71bf0-124">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="71bf0-125">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="71bf0-125">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="71bf0-126">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="71bf0-126">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="71bf0-127">Identifica la versión del servidor que ha respondido a la solicitud.</span><span class="sxs-lookup"><span data-stu-id="71bf0-127">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="71bf0-128">Este encabezado es aplicable a una respuesta.</span><span class="sxs-lookup"><span data-stu-id="71bf0-128">This header is applicable to a response.</span></span>  <br/> |
+|<span data-ttu-id="89b01-117">**ManagementRole**</span><span class="sxs-lookup"><span data-stu-id="89b01-117">**ManagementRole**</span></span> <br/> |[<span data-ttu-id="89b01-118">ManagementRole</span><span class="sxs-lookup"><span data-stu-id="89b01-118">ManagementRole</span></span>](managementrole.md) <br/> |<span data-ttu-id="89b01-119">Identifica los roles de servidor que son necesarios para que el autor de la llamada realice la solicitud.</span><span class="sxs-lookup"><span data-stu-id="89b01-119">Identifies the server roles that are necessary in order for the caller to make the request.</span></span> <span data-ttu-id="89b01-120">Este encabezado se aplica a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="89b01-120">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="89b01-121">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="89b01-121">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="89b01-122">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="89b01-122">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="89b01-123">Identifica la versión del esquema para la solicitud de operación.</span><span class="sxs-lookup"><span data-stu-id="89b01-123">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="89b01-124">Este encabezado se aplica a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="89b01-124">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="89b01-125">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="89b01-125">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="89b01-126">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="89b01-126">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="89b01-127">Identifica la versión del servidor que respondió a la solicitud.</span><span class="sxs-lookup"><span data-stu-id="89b01-127">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="89b01-128">Este encabezado se aplica a una respuesta.</span><span class="sxs-lookup"><span data-stu-id="89b01-128">This header is applicable to a response.</span></span>  <br/> |
    
-## <a name="getnonindexableitemdetails-operation-request-example-get-the-details-of-an-item-that-cannot-be-indexed"></a><span data-ttu-id="71bf0-129">Ejemplo de solicitud de operación de GetNonIndexableItemDetails: obtener los detalles de un elemento que no se pueden indizar</span><span class="sxs-lookup"><span data-stu-id="71bf0-129">GetNonIndexableItemDetails operation request example: Get the details of an item that cannot be indexed</span></span>
+## <a name="getnonindexableitemdetails-operation-request-example-get-the-details-of-an-item-that-cannot-be-indexed"></a><span data-ttu-id="89b01-129">Ejemplo de solicitud de operación GetNonIndexableItemDetails: obtener los detalles de un elemento que no se puede indizar</span><span class="sxs-lookup"><span data-stu-id="89b01-129">GetNonIndexableItemDetails operation request example: Get the details of an item that cannot be indexed</span></span>
 
-<span data-ttu-id="71bf0-130">El siguiente ejemplo de una solicitud de operación **GetNonIndexableItemDetails** muestra cómo solicitar los detalles de los elementos que no se pueden indizar para un solo buzón.</span><span class="sxs-lookup"><span data-stu-id="71bf0-130">The following example of a **GetNonIndexableItemDetails** operation request shows how to request the details for items that cannot be indexed for a single mailbox.</span></span> <span data-ttu-id="71bf0-131">La búsqueda se realiza a través de ambos primaria y buzones de archivo.</span><span class="sxs-lookup"><span data-stu-id="71bf0-131">The search is performed across both primary and archive mailboxes.</span></span> 
+<span data-ttu-id="89b01-130">El siguiente ejemplo de una solicitud de operación de **GetNonIndexableItemDetails** muestra cómo solicitar los detalles de los elementos que no se pueden indizar para un único buzón.</span><span class="sxs-lookup"><span data-stu-id="89b01-130">The following example of a **GetNonIndexableItemDetails** operation request shows how to request the details for items that cannot be indexed for a single mailbox.</span></span> <span data-ttu-id="89b01-131">La búsqueda se realiza en los buzones de correo principales y de archivo.</span><span class="sxs-lookup"><span data-stu-id="89b01-131">The search is performed across both primary and archive mailboxes.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="71bf0-132">Todos los nombres de dominio heredado en este ejemplo se han abreviado para conservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="71bf0-132">All legacy domain names in this example have be shortened to preserve readability.</span></span> 
+> <span data-ttu-id="89b01-132">Todos los nombres de dominio heredados en este ejemplo se acortan para preservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="89b01-132">All legacy domain names in this example have be shortened to preserve readability.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
    </soap:Header>
@@ -67,19 +67,19 @@ ms.locfileid: "19764915"
 
 ```
 
-<span data-ttu-id="71bf0-133">La solicitud SOAP body contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="71bf0-133">The request SOAP body contains the following elements:</span></span>
+<span data-ttu-id="89b01-133">El cuerpo SOAP de la solicitud contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="89b01-133">The request SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="71bf0-134">GetNonIndexableItemDetails</span><span class="sxs-lookup"><span data-stu-id="71bf0-134">GetNonIndexableItemDetails</span></span>](getnonindexableitemdetails.md)
+- [<span data-ttu-id="89b01-134">GetNonIndexableItemDetails</span><span class="sxs-lookup"><span data-stu-id="89b01-134">GetNonIndexableItemDetails</span></span>](getnonindexableitemdetails.md)
     
-- [<span data-ttu-id="71bf0-135">Buzones de correo (NonEmptyArrayOfLegacyDNsType)</span><span class="sxs-lookup"><span data-stu-id="71bf0-135">Mailboxes (NonEmptyArrayOfLegacyDNsType)</span></span>](mailboxes-nonemptyarrayoflegacydnstype.md)
+- [<span data-ttu-id="89b01-135">Buzones de correo (NonEmptyArrayOfLegacyDNsType)</span><span class="sxs-lookup"><span data-stu-id="89b01-135">Mailboxes (NonEmptyArrayOfLegacyDNsType)</span></span>](mailboxes-nonemptyarrayoflegacydnstype.md)
     
-- [<span data-ttu-id="71bf0-136">LegacyDN</span><span class="sxs-lookup"><span data-stu-id="71bf0-136">LegacyDN</span></span>](legacydn.md)
+- [<span data-ttu-id="89b01-136">LegacyDN</span><span class="sxs-lookup"><span data-stu-id="89b01-136">LegacyDN</span></span>](legacydn.md)
     
-- [<span data-ttu-id="71bf0-137">SearchArchiveOnly</span><span class="sxs-lookup"><span data-stu-id="71bf0-137">SearchArchiveOnly</span></span>](searcharchiveonly.md)
+- [<span data-ttu-id="89b01-137">SearchArchiveOnly</span><span class="sxs-lookup"><span data-stu-id="89b01-137">SearchArchiveOnly</span></span>](searcharchiveonly.md)
     
-## <a name="successful-getnonindexableitemdetails-operation-response"></a><span data-ttu-id="71bf0-138">Respuesta es correcta de operación GetNonIndexableItemDetails</span><span class="sxs-lookup"><span data-stu-id="71bf0-138">Successful GetNonIndexableItemDetails operation response</span></span>
+## <a name="successful-getnonindexableitemdetails-operation-response"></a><span data-ttu-id="89b01-138">Respuesta de operación GetNonIndexableItemDetails correcta</span><span class="sxs-lookup"><span data-stu-id="89b01-138">Successful GetNonIndexableItemDetails operation response</span></span>
 
-<span data-ttu-id="71bf0-139">En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación de **GetNonIndexableItemDetails** para obtener los elementos que no se pueden indizar para un solo buzón.</span><span class="sxs-lookup"><span data-stu-id="71bf0-139">The following example shows a successful response to a **GetNonIndexableItemDetails** operation request to get items that cannot be indexed for a single mailbox.</span></span> <span data-ttu-id="71bf0-140">El elemento en este ejemplo que no se pueden indizar es el archivo binaryfile.abc, que es un formato desconocido.</span><span class="sxs-lookup"><span data-stu-id="71bf0-140">The item in this example that cannot be indexed is the binaryfile.abc file, which is of an unknown format.</span></span> 
+<span data-ttu-id="89b01-139">En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación de **GetNonIndexableItemDetails** para obtener elementos que no se pueden indizar para un único buzón.</span><span class="sxs-lookup"><span data-stu-id="89b01-139">The following example shows a successful response to a **GetNonIndexableItemDetails** operation request to get items that cannot be indexed for a single mailbox.</span></span> <span data-ttu-id="89b01-140">El elemento de este ejemplo que no se puede indizar es el archivo binaryfile. ABC, que tiene un formato desconocido.</span><span class="sxs-lookup"><span data-stu-id="89b01-140">The item in this example that cannot be indexed is the binaryfile.abc file, which is of an unknown format.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -90,18 +90,18 @@ ms.locfileid: "19764915"
                            MajorBuildNumber="526" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <GetNonIndexableItemDetailsResponse ResponseClass="Success" 
-                                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
          <NonIndexableItemDetailsResult>
-            <Items xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <Items xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <NonIndexableItemDetail>
                   <ItemId Id="AQMkAGVmNDAyOQAAAY2fUAAAAA==" ChangeKey="CQAAAA=="/>
                   <ErrorCode>DocumentParserFailure</ErrorCode>
@@ -121,37 +121,37 @@ ms.locfileid: "19764915"
 
 ```
 
-<span data-ttu-id="71bf0-141">La respuesta SOAP body contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="71bf0-141">The response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="89b01-141">El cuerpo SOAP de respuesta contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="89b01-141">The response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="71bf0-142">GetNonIndexableItemDetailsResponse</span><span class="sxs-lookup"><span data-stu-id="71bf0-142">GetNonIndexableItemDetailsResponse</span></span>](getnonindexableitemdetailsresponse.md)
+- [<span data-ttu-id="89b01-142">GetNonIndexableItemDetailsResponse</span><span class="sxs-lookup"><span data-stu-id="89b01-142">GetNonIndexableItemDetailsResponse</span></span>](getnonindexableitemdetailsresponse.md)
     
-- [<span data-ttu-id="71bf0-143">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="71bf0-143">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="89b01-143">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="89b01-143">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="71bf0-144">NonIndexableItemDetailsResult</span><span class="sxs-lookup"><span data-stu-id="71bf0-144">NonIndexableItemDetailsResult</span></span>](nonindexableitemdetailsresult.md)
+- [<span data-ttu-id="89b01-144">NonIndexableItemDetailsResult</span><span class="sxs-lookup"><span data-stu-id="89b01-144">NonIndexableItemDetailsResult</span></span>](nonindexableitemdetailsresult.md)
     
-- [<span data-ttu-id="71bf0-145">NonIndexableItemDetail</span><span class="sxs-lookup"><span data-stu-id="71bf0-145">NonIndexableItemDetail</span></span>](nonindexableitemdetail.md)
+- [<span data-ttu-id="89b01-145">NonIndexableItemDetail</span><span class="sxs-lookup"><span data-stu-id="89b01-145">NonIndexableItemDetail</span></span>](nonindexableitemdetail.md)
     
-- [<span data-ttu-id="71bf0-146">ItemId</span><span class="sxs-lookup"><span data-stu-id="71bf0-146">ItemId</span></span>](itemid.md)
+- [<span data-ttu-id="89b01-146">ItemId</span><span class="sxs-lookup"><span data-stu-id="89b01-146">ItemId</span></span>](itemid.md)
     
-- [<span data-ttu-id="71bf0-147">ErrorCode (ItemIndexErrorType)</span><span class="sxs-lookup"><span data-stu-id="71bf0-147">ErrorCode (ItemIndexErrorType)</span></span>](errorcode-itemindexerrortype.md)
+- [<span data-ttu-id="89b01-147">ErrorCode (ItemIndexErrorType)</span><span class="sxs-lookup"><span data-stu-id="89b01-147">ErrorCode (ItemIndexErrorType)</span></span>](errorcode-itemindexerrortype.md)
     
-- [<span data-ttu-id="71bf0-148">ErrorDescription</span><span class="sxs-lookup"><span data-stu-id="71bf0-148">ErrorDescription</span></span>](errordescription.md)
+- [<span data-ttu-id="89b01-148">ErrorDescription</span><span class="sxs-lookup"><span data-stu-id="89b01-148">ErrorDescription</span></span>](errordescription.md)
     
-- [<span data-ttu-id="71bf0-149">IsPartiallyIndexed</span><span class="sxs-lookup"><span data-stu-id="71bf0-149">IsPartiallyIndexed</span></span>](ispartiallyindexed.md)
+- [<span data-ttu-id="89b01-149">IsPartiallyIndexed</span><span class="sxs-lookup"><span data-stu-id="89b01-149">IsPartiallyIndexed</span></span>](ispartiallyindexed.md)
     
-- [<span data-ttu-id="71bf0-150">IsPermanentFailure</span><span class="sxs-lookup"><span data-stu-id="71bf0-150">IsPermanentFailure</span></span>](ispermanentfailure.md)
+- [<span data-ttu-id="89b01-150">IsPermanentFailure</span><span class="sxs-lookup"><span data-stu-id="89b01-150">IsPermanentFailure</span></span>](ispermanentfailure.md)
     
-- [<span data-ttu-id="71bf0-151">SortValue</span><span class="sxs-lookup"><span data-stu-id="71bf0-151">SortValue</span></span>](sortvalue.md)
+- [<span data-ttu-id="89b01-151">SortValue</span><span class="sxs-lookup"><span data-stu-id="89b01-151">SortValue</span></span>](sortvalue.md)
     
-- [<span data-ttu-id="71bf0-152">AttemptCount</span><span class="sxs-lookup"><span data-stu-id="71bf0-152">AttemptCount</span></span>](attemptcount.md)
+- [<span data-ttu-id="89b01-152">AttemptCount</span><span class="sxs-lookup"><span data-stu-id="89b01-152">AttemptCount</span></span>](attemptcount.md)
     
-- [<span data-ttu-id="71bf0-153">LastAttemptTime</span><span class="sxs-lookup"><span data-stu-id="71bf0-153">LastAttemptTime</span></span>](lastattempttime.md)
+- [<span data-ttu-id="89b01-153">LastAttemptTime</span><span class="sxs-lookup"><span data-stu-id="89b01-153">LastAttemptTime</span></span>](lastattempttime.md)
     
-- [<span data-ttu-id="71bf0-154">AdditionalInfo</span><span class="sxs-lookup"><span data-stu-id="71bf0-154">AdditionalInfo</span></span>](additionalinfo.md)
+- [<span data-ttu-id="89b01-154">AdditionalInfo</span><span class="sxs-lookup"><span data-stu-id="89b01-154">AdditionalInfo</span></span>](additionalinfo.md)
     
-## <a name="getnonindexableitemdetails-operation-error-response"></a><span data-ttu-id="71bf0-155">Respuesta de error de la operación de GetNonIndexableItemDetails</span><span class="sxs-lookup"><span data-stu-id="71bf0-155">GetNonIndexableItemDetails operation error response</span></span>
+## <a name="getnonindexableitemdetails-operation-error-response"></a><span data-ttu-id="89b01-155">Respuesta de error de operación de GetNonIndexableItemDetails</span><span class="sxs-lookup"><span data-stu-id="89b01-155">GetNonIndexableItemDetails operation error response</span></span>
 
-<span data-ttu-id="71bf0-156">En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **GetNonIndexableItemDetails** .</span><span class="sxs-lookup"><span data-stu-id="71bf0-156">The following example shows an error response to a **GetNonIndexableItemDetails** operation request.</span></span> <span data-ttu-id="71bf0-157">Esta es una respuesta a una solicitud para obtener detalles de elemento para los elementos que no se pueden indizar desde más de un buzón.</span><span class="sxs-lookup"><span data-stu-id="71bf0-157">This is a response to a request to get item details for items that cannot be indexed from more than one mailbox.</span></span> 
+<span data-ttu-id="89b01-156">En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **GetNonIndexableItemDetails** .</span><span class="sxs-lookup"><span data-stu-id="89b01-156">The following example shows an error response to a **GetNonIndexableItemDetails** operation request.</span></span> <span data-ttu-id="89b01-157">Se trata de una respuesta a una solicitud para obtener detalles del elemento para los elementos que no se pueden indizar desde más de un buzón.</span><span class="sxs-lookup"><span data-stu-id="89b01-157">This is a response to a request to get item details for items that cannot be indexed from more than one mailbox.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -162,13 +162,13 @@ ms.locfileid: "19764915"
                            MajorBuildNumber="526" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <GetNonIndexableItemDetailsResponse ResponseClass="Error" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+      <GetNonIndexableItemDetailsResponse ResponseClass="Error" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <MessageText>Multiple mailboxes is currently not supported, only single mailbox is supported.</MessageText>
          <ResponseCode>ErrorInvalidArgument</ResponseCode>
          <DescriptiveLinkKey>0</DescriptiveLinkKey>
@@ -177,32 +177,32 @@ ms.locfileid: "19764915"
 </s:Envelope>
 ```
 
-<span data-ttu-id="71bf0-158">La respuesta de error SOAP body contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="71bf0-158">The error response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="89b01-158">El cuerpo SOAP de respuesta de error contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="89b01-158">The error response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="71bf0-159">GetNonIndexableItemDetailsResponse</span><span class="sxs-lookup"><span data-stu-id="71bf0-159">GetNonIndexableItemDetailsResponse</span></span>](getnonindexableitemdetailsresponse.md)
+- [<span data-ttu-id="89b01-159">GetNonIndexableItemDetailsResponse</span><span class="sxs-lookup"><span data-stu-id="89b01-159">GetNonIndexableItemDetailsResponse</span></span>](getnonindexableitemdetailsresponse.md)
     
-- [<span data-ttu-id="71bf0-160">MessageText</span><span class="sxs-lookup"><span data-stu-id="71bf0-160">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="89b01-160">MessageText</span><span class="sxs-lookup"><span data-stu-id="89b01-160">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="71bf0-161">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="71bf0-161">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="89b01-161">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="89b01-161">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="71bf0-162">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="71bf0-162">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="89b01-162">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="89b01-162">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-<span data-ttu-id="71bf0-163">Para códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).</span><span class="sxs-lookup"><span data-stu-id="71bf0-163">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
+<span data-ttu-id="89b01-163">Para obtener los códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).</span><span class="sxs-lookup"><span data-stu-id="89b01-163">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="71bf0-164">Vea también</span><span class="sxs-lookup"><span data-stu-id="71bf0-164">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="89b01-164">Vea también</span><span class="sxs-lookup"><span data-stu-id="89b01-164">See also</span></span>
 
-- [<span data-ttu-id="71bf0-165">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="71bf0-165">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+- [<span data-ttu-id="89b01-165">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="89b01-165">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
     
-- [<span data-ttu-id="71bf0-166">Operación GetSearchableMailboxes</span><span class="sxs-lookup"><span data-stu-id="71bf0-166">GetSearchableMailboxes operation</span></span>](getsearchablemailboxes-operation.md)
+- [<span data-ttu-id="89b01-166">Operación GetSearchableMailboxes</span><span class="sxs-lookup"><span data-stu-id="89b01-166">GetSearchableMailboxes operation</span></span>](getsearchablemailboxes-operation.md)
     
-- [<span data-ttu-id="71bf0-167">Operación SearchMailboxes</span><span class="sxs-lookup"><span data-stu-id="71bf0-167">SearchMailboxes operation</span></span>](searchmailboxes-operation.md)
+- [<span data-ttu-id="89b01-167">Operación SearchMailboxes</span><span class="sxs-lookup"><span data-stu-id="89b01-167">SearchMailboxes operation</span></span>](searchmailboxes-operation.md)
     
-- [<span data-ttu-id="71bf0-168">Operación GetHoldOnMailboxes</span><span class="sxs-lookup"><span data-stu-id="71bf0-168">GetHoldOnMailboxes operation</span></span>](getholdonmailboxes-operation.md)
+- [<span data-ttu-id="89b01-168">Operación GetHoldOnMailboxes</span><span class="sxs-lookup"><span data-stu-id="89b01-168">GetHoldOnMailboxes operation</span></span>](getholdonmailboxes-operation.md)
     
-- [<span data-ttu-id="71bf0-169">Operación SetHoldOnMailboxes</span><span class="sxs-lookup"><span data-stu-id="71bf0-169">SetHoldOnMailboxes operation</span></span>](setholdonmailboxes-operation.md)
+- [<span data-ttu-id="89b01-169">Operación SetHoldOnMailboxes</span><span class="sxs-lookup"><span data-stu-id="89b01-169">SetHoldOnMailboxes operation</span></span>](setholdonmailboxes-operation.md)
     
-- [<span data-ttu-id="71bf0-170">Operación GetDiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="71bf0-170">GetDiscoverySearchConfiguration operation</span></span>](getdiscoverysearchconfiguration-operation.md)
+- [<span data-ttu-id="89b01-170">Operación GetDiscoverySearchConfiguration</span><span class="sxs-lookup"><span data-stu-id="89b01-170">GetDiscoverySearchConfiguration operation</span></span>](getdiscoverysearchconfiguration-operation.md)
     
-- [<span data-ttu-id="71bf0-171">Operación GetNonIndexableItemStatistics</span><span class="sxs-lookup"><span data-stu-id="71bf0-171">GetNonIndexableItemStatistics operation</span></span>](getnonindexableitemstatistics-operation.md)
+- [<span data-ttu-id="89b01-171">Operación GetNonIndexableItemStatistics</span><span class="sxs-lookup"><span data-stu-id="89b01-171">GetNonIndexableItemStatistics operation</span></span>](getnonindexableitemstatistics-operation.md)
     
 

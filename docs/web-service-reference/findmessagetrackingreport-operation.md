@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 12942f24-2a8e-4d7f-a137-8da5932a6b46
-description: La operación FindMessageTrackingReport busca los mensajes que cumplen los criterios especificados.
-ms.openlocfilehash: 103655b1c190f43bd11cfd3bfeabc22422d726a1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación FindMessageTrackingReport encuentra mensajes que cumplen los criterios especificados.
+ms.openlocfilehash: ec3073da4cf3961d3f2fe2727bf0cf0533e0ffb6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764643"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530919"
 ---
-# <a name="findmessagetrackingreport-operation"></a><span data-ttu-id="953dc-103">Operación FindMessageTrackingReport</span><span class="sxs-lookup"><span data-stu-id="953dc-103">FindMessageTrackingReport operation</span></span>
+# <a name="findmessagetrackingreport-operation"></a><span data-ttu-id="35f7d-103">Operación FindMessageTrackingReport</span><span class="sxs-lookup"><span data-stu-id="35f7d-103">FindMessageTrackingReport operation</span></span>
 
-<span data-ttu-id="953dc-104">La operación **FindMessageTrackingReport** busca los mensajes que cumplen los criterios especificados.</span><span class="sxs-lookup"><span data-stu-id="953dc-104">The **FindMessageTrackingReport** operation finds messages that meet the specified criteria.</span></span> 
+<span data-ttu-id="35f7d-104">La operación **FindMessageTrackingReport** encuentra mensajes que cumplen los criterios especificados.</span><span class="sxs-lookup"><span data-stu-id="35f7d-104">The **FindMessageTrackingReport** operation finds messages that meet the specified criteria.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="953dc-105">Vea también</span><span class="sxs-lookup"><span data-stu-id="953dc-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="35f7d-105">Vea también</span><span class="sxs-lookup"><span data-stu-id="35f7d-105">See also</span></span>
 
-- [<span data-ttu-id="953dc-106">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="953dc-106">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+- [<span data-ttu-id="35f7d-106">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="35f7d-106">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
   
-- [<span data-ttu-id="953dc-107">Elementos XML de EWS de Exchange</span><span class="sxs-lookup"><span data-stu-id="953dc-107">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="35f7d-107">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="35f7d-107">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

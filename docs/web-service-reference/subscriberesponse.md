@@ -11,19 +11,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: fd87e9b7-c231-44fa-9f5b-19ae96cda5cc
-description: El elemento SubscribeResponse define una respuesta a una solicitud Subscribe.
-ms.openlocfilehash: 9c4fb0e9282acd2dfd8dcb66669815edcbd69ff2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SubscribeResponse define una respuesta a una solicitud subscribe.
+ms.openlocfilehash: 1f7079694c873aacbf44b1030e495cbe2f48d163
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837615"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530954"
 ---
-# <a name="subscriberesponse"></a><span data-ttu-id="96d6d-103">SubscribeResponse</span><span class="sxs-lookup"><span data-stu-id="96d6d-103">SubscribeResponse</span></span>
+# <a name="subscriberesponse"></a><span data-ttu-id="59b95-103">SubscribeResponse</span><span class="sxs-lookup"><span data-stu-id="59b95-103">SubscribeResponse</span></span>
 
-<span data-ttu-id="96d6d-104">El elemento **SubscribeResponse** define una respuesta a una solicitud Subscribe.</span><span class="sxs-lookup"><span data-stu-id="96d6d-104">The **SubscribeResponse** element defines a response to a Subscribe request.</span></span> 
+<span data-ttu-id="59b95-104">El elemento **SubscribeResponse** define una respuesta a una solicitud subscribe.</span><span class="sxs-lookup"><span data-stu-id="59b95-104">The **SubscribeResponse** element defines a response to a Subscribe request.</span></span> 
   
-[<span data-ttu-id="96d6d-105">SubscribeResponse</span><span class="sxs-lookup"><span data-stu-id="96d6d-105">SubscribeResponse</span></span>](subscriberesponse.md)
+[<span data-ttu-id="59b95-105">SubscribeResponse</span><span class="sxs-lookup"><span data-stu-id="59b95-105">SubscribeResponse</span></span>](subscriberesponse.md)
   
 ```xml
 <SubscribeResponse>
@@ -31,41 +31,41 @@ ms.locfileid: "19837615"
 </SubscribeResponse>
 ```
 
- <span data-ttu-id="96d6d-106">**SubscribeResponseType**</span><span class="sxs-lookup"><span data-stu-id="96d6d-106">**SubscribeResponseType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="96d6d-107">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="96d6d-107">Attributes and elements</span></span>
+ <span data-ttu-id="59b95-106">**SubscribeResponseType**</span><span class="sxs-lookup"><span data-stu-id="59b95-106">**SubscribeResponseType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="59b95-107">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="59b95-107">Attributes and elements</span></span>
 
-<span data-ttu-id="96d6d-108">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="96d6d-108">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="59b95-108">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="59b95-108">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="96d6d-109">Atributos</span><span class="sxs-lookup"><span data-stu-id="96d6d-109">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="59b95-109">Atributos</span><span class="sxs-lookup"><span data-stu-id="59b95-109">Attributes</span></span>
 
-<span data-ttu-id="96d6d-110">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="96d6d-110">None.</span></span>
+<span data-ttu-id="59b95-110">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="59b95-110">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="96d6d-111">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="96d6d-111">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="59b95-111">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="59b95-111">Child elements</span></span>
 
-|<span data-ttu-id="96d6d-112">**Element**</span><span class="sxs-lookup"><span data-stu-id="96d6d-112">**Element**</span></span>|<span data-ttu-id="96d6d-113">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="96d6d-113">**Description**</span></span>|
+|<span data-ttu-id="59b95-112">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="59b95-112">**Element**</span></span>|<span data-ttu-id="59b95-113">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="59b95-113">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="96d6d-114">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="96d6d-114">ResponseMessages</span></span>](responsemessages.md) <br/> |<span data-ttu-id="96d6d-115">Contiene los mensajes de respuesta para una solicitud de servicios Web de Exchange.</span><span class="sxs-lookup"><span data-stu-id="96d6d-115">Contains the response messages for an Exchange Web Services request.</span></span>  <br/> |
+|[<span data-ttu-id="59b95-114">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="59b95-114">ResponseMessages</span></span>](responsemessages.md) <br/> |<span data-ttu-id="59b95-115">Contiene los mensajes de respuesta de una solicitud de servicios web Exchange.</span><span class="sxs-lookup"><span data-stu-id="59b95-115">Contains the response messages for an Exchange Web Services request.</span></span>  <br/> |
    
-### <a name="parent-elements"></a><span data-ttu-id="96d6d-116">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="96d6d-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="59b95-116">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="59b95-116">Parent elements</span></span>
 
-<span data-ttu-id="96d6d-117">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="96d6d-117">None.</span></span>
+<span data-ttu-id="59b95-117">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="59b95-117">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="96d6d-118">Comentarios</span><span class="sxs-lookup"><span data-stu-id="96d6d-118">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="59b95-118">Comentarios</span><span class="sxs-lookup"><span data-stu-id="59b95-118">Remarks</span></span>
 
-<span data-ttu-id="96d6d-119">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.</span><span class="sxs-lookup"><span data-stu-id="96d6d-119">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="59b95-119">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="59b95-119">The schema that describes this element is located in the EWS virtual directory of the computer that is running Microsoft Exchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="96d6d-120">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="96d6d-120">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="59b95-120">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="59b95-120">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="96d6d-121">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="96d6d-121">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="96d6d-122">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="96d6d-122">Schema name</span></span>  <br/> |<span data-ttu-id="96d6d-123">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="96d6d-123">Messages schema</span></span>  <br/> |
-|<span data-ttu-id="96d6d-124">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="96d6d-124">Validation file</span></span>  <br/> |<span data-ttu-id="96d6d-125">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="96d6d-125">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="96d6d-126">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="96d6d-126">Can be empty</span></span>  <br/> |<span data-ttu-id="96d6d-127">Verdadero</span><span class="sxs-lookup"><span data-stu-id="96d6d-127">True</span></span>  <br/> |
+|<span data-ttu-id="59b95-121">Namespace</span><span class="sxs-lookup"><span data-stu-id="59b95-121">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="59b95-122">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="59b95-122">Schema name</span></span>  <br/> |<span data-ttu-id="59b95-123">Esquema de mensajes</span><span class="sxs-lookup"><span data-stu-id="59b95-123">Messages schema</span></span>  <br/> |
+|<span data-ttu-id="59b95-124">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="59b95-124">Validation file</span></span>  <br/> |<span data-ttu-id="59b95-125">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="59b95-125">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="59b95-126">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="59b95-126">Can be empty</span></span>  <br/> |<span data-ttu-id="59b95-127">Verdadero</span><span class="sxs-lookup"><span data-stu-id="59b95-127">True</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="96d6d-128">Vea también</span><span class="sxs-lookup"><span data-stu-id="96d6d-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="59b95-128">Vea también</span><span class="sxs-lookup"><span data-stu-id="59b95-128">See also</span></span>
 
 
 
-[<span data-ttu-id="96d6d-129">Operación de suscripción</span><span class="sxs-lookup"><span data-stu-id="96d6d-129">Subscribe operation</span></span>](subscribe-operation.md)
+[<span data-ttu-id="59b95-129">Operación subscribe</span><span class="sxs-lookup"><span data-stu-id="59b95-129">Subscribe operation</span></span>](subscribe-operation.md)
 
