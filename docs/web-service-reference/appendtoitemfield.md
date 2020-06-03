@@ -16,7 +16,7 @@ ms.openlocfilehash: 902239155bff45d6f81989de954c9459cf012288
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466048"
 ---
 # <a name="appendtoitemfield"></a>AppendToItemField
@@ -57,7 +57,7 @@ Ninguna.
 |[IndexedFieldURI](indexedfielduri.md) <br/> |Identifica a los miembros individuales de un diccionario.  <br/> |
 |[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifica las propiedades MAPI extendidas que se van a anexar.  <br/> |
 |[Elemento](item.md) <br/> |Representa un elemento en el almacén de Exchange.  <br/> |
-|[Mensaje](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange.  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
 |[Contacto](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Representa una lista de distribución.  <br/> |

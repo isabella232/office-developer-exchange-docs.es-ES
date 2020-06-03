@@ -15,7 +15,7 @@ ms.openlocfilehash: ca4942942a81bc187e8e18a5e6f003f8587f79d1
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467399"
 ---
 # <a name="setmissedcallnotificationenabled-operation-um-web-service"></a>Operación SetMissedCallNotificationEnabled (servicio Web de mensajería unificada)
@@ -24,7 +24,7 @@ La operación SetMissedCallNotificationEnabled habilita o deshabilita las notifi
   
 ## <a name="setmissedcallnotificationenabled-request-example"></a>Ejemplo de solicitud SetMissedCallNotificationEnabled
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud SetMissedCallNotificationEnabled muestra cómo crear una solicitud para habilitar las notificaciones de llamadas perdidas.
   
@@ -43,7 +43,7 @@ El siguiente ejemplo de una solicitud SetMissedCallNotificationEnabled muestra c
 
 ## <a name="successful-setmissedcallnotificationenabled-response-example"></a>Ejemplo de respuesta SetMissedCallNotificationEnabled correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una respuesta de PlayOnPhoneGreeting muestra una respuesta a la solicitud SetMissedCallNotificationEnabled.
   

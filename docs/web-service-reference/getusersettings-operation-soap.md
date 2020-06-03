@@ -13,7 +13,7 @@ ms.openlocfilehash: e274fd4e1ca954ea25ea91a52e363c9a434b290a
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466146"
 ---
 # <a name="getusersettings-operation-soap"></a>Operación GetUserSettings (SOAP)
@@ -22,7 +22,7 @@ La operación **GetUserSettings** contiene una consulta para la configuración d
   
 ## <a name="getusersettings-request-example"></a>Ejemplo de solicitud GetUserSettings
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de XML muestra un cuerpo de solicitud de detección automática que solicita el nombre para mostrar, el nombre distintivo, el identificador de implementación, el servidor de buzones, el nombre distintivo de buzón, el servidor de Active Directory, la versión del servidor de acceso de cliente y los esquemas de servicios Web de Exchange admitidos del usuario.
   
@@ -86,7 +86,7 @@ Los siguientes elementos se usan en el cuerpo de la solicitud:
     
 ## <a name="getusersettings-response-example"></a>Ejemplo de respuesta GetUserSettings
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta **GetUserSettings** correcta. 
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: c40e0e434f698c6535ff5d03fd4d45a453959dd6
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467049"
 ---
 # <a name="subscribe-operation"></a>Operación subscribe
@@ -25,7 +25,7 @@ La operación subscribe se usa para suscribir las aplicaciones cliente a las not
   
 ## <a name="pull-subscription-subscribe-request-example"></a>Ejemplo de solicitud subscribe de suscripción de extracción
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo de código siguiente se muestra cómo suscribirse a una suscripción de notificación de evento de extracción. La suscripción informa a la aplicación cliente si se agrega correo nuevo a la bandeja de entrada y si un elemento se elimina de la bandeja de entrada. Se agotará el tiempo de espera de la suscripción si el cliente no solicita información sobre los eventos en 10 minutos. Si la suscripción expira, se debe establecer una nueva suscripción para seguir solicitando notificaciones.
   
@@ -74,7 +74,7 @@ Para buscar otras opciones para el mensaje de solicitud de la operación de susc
   
 ## <a name="successful-pull-subscription-subscribe-response-example"></a>Ejemplo de respuesta de suscripción de suscripción de extracción correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de suscripción de extracción correcta. La respuesta contiene el identificador y la marca de agua de la suscripción que se usa para obtener la matriz de eventos asociados a una suscripción. El identificador de suscripción también se usa para cancelar la suscripción de un cliente desde una suscripción.
   
@@ -125,7 +125,7 @@ En la respuesta se usan los siguientes elementos:
     
 ## <a name="pull-subscription-subscribe-error-response-example"></a>Ejemplo de respuesta de error suscribirse a suscripción de extracción
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a una solicitud subscribe. El error se produce al intentar suscribirse a las notificaciones mediante el acceso delegado.
   
@@ -176,7 +176,7 @@ Los siguientes elementos se usan en la respuesta de error:
     
 ## <a name="push-subscription-request-example"></a>Ejemplo de solicitud de suscripción de inserción
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo de código siguiente se muestra cómo suscribirse a una suscripción de notificación de evento de inserción. La solicitud identifica las carpetas que se van a supervisar, los tipos de eventos que se van a supervisar, la frecuencia de las notificaciones de estado y la dirección URL del servicio Web de cliente que escucha las notificaciones de inserción.
   
@@ -237,7 +237,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="successful-push-subscription-response-example"></a>Ejemplo de respuesta de suscripción de inserción correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de suscripción de inserción correcta. 
   

@@ -15,7 +15,7 @@ ms.openlocfilehash: 2311b6137ac25d15ad3d06668450c1d0f7ec1fad
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467357"
 ---
 # <a name="setoofstatus-operation-um-web-service"></a>Operación SetOofStatus (servicio Web de mensajería unificada)
@@ -24,7 +24,7 @@ La operación SetOofStatus establece un valor que indica si se debe reproducir e
   
 ## <a name="setoofstatus-request-example"></a>Ejemplo de solicitud SetOofStatus
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud SetOofStatus muestra cómo crear una solicitud para habilitar el saludo de fuera de la oficina para un buzón.
   
@@ -43,7 +43,7 @@ El siguiente ejemplo de una solicitud SetOofStatus muestra cómo crear una solic
 
 ## <a name="successful-setoofstatus-response-example"></a>Ejemplo de respuesta SetOofStatus correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una respuesta de SetOofStatus muestra una respuesta a la solicitud SetOofStatus.
   

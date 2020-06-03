@@ -15,7 +15,7 @@ ms.openlocfilehash: a2bb630f812ca811b4cbe68db1308dc18e5d3ba0
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467336"
 ---
 # <a name="settelephoneaccessfolderemail-operation-um-web-service"></a>Operación SetTelephoneAccessFolderEmail (servicio Web de mensajería unificada)
@@ -24,7 +24,7 @@ La operación SetTelephoneAccessFolderEmail establece la carpeta desde la que la
   
 ## <a name="settelephoneaccessfolderemail-request-example"></a>Ejemplo de solicitud SetTelephoneAccessFolderEmail
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el siguiente ejemplo de una solicitud de SetTelephoneAccessFolderEmail se muestra cómo realizar una solicitud para establecer la carpeta desde la que se leerá la mensajería unificada al usuario por teléfono.
   
@@ -43,7 +43,7 @@ En el siguiente ejemplo de una solicitud de SetTelephoneAccessFolderEmail se mue
 
 ## <a name="successful-settelephoneaccessfolderemail-response-example"></a>Ejemplo de respuesta SetTelephoneAccessFolderEmail correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una respuesta de SetTelephoneAccessFolderEmail muestra una respuesta a la solicitud SetTelephoneAccessFolderEmail.
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: 80adbe71d69be1025dc9593c6a9002bc68fdcb76
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466517"
 ---
 # <a name="adddelegate-operation"></a>Operación AddDelegate
@@ -36,7 +36,7 @@ La operación **AddDelegate** puede usar los encabezados SOAP que se enumeran y 
    
 ## <a name="adddelegate-request-example"></a>Ejemplo de solicitud AddDelegate
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **AddDelegate** muestra un intento de conceder a user1 permisos delegar en carpetas que son propiedad del usuario2. User1 tiene permisos de autor para user2's la carpeta calendario y los permisos de nivel de revisor en la carpeta contactos de user2's. User1 no recibirá copias de los mensajes de reunión y no podrá ver los elementos privados en el buzón de user2's. Las convocatorias de reunión se enviarán tanto a user1 como a usuario2. 
   
@@ -75,7 +75,7 @@ El siguiente ejemplo de una solicitud **AddDelegate** muestra un intento de conc
 
 ## <a name="adddelegate-response-example"></a>Ejemplo de respuesta AddDelegate
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una respuesta de **AddDelegate** muestra una respuesta correcta a una solicitud de **AddDelegate** . 
   
@@ -120,7 +120,7 @@ El siguiente ejemplo de una respuesta de **AddDelegate** muestra una respuesta c
 
 ## <a name="adddelegate-error-response-example"></a>Ejemplo de respuesta de error AddDelegate
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra la respuesta a una solicitud para agregar un delegado que ya se ha agregado al buzón de la entidad de la identidad.
   

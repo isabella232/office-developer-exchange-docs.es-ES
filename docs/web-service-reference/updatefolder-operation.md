@@ -16,7 +16,7 @@ ms.openlocfilehash: fb894d9f42358b67f81e9fe8ae41ba61e6f46460
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467364"
 ---
 # <a name="updatefolder-operation"></a>Operación UpdateFolder
@@ -41,7 +41,7 @@ Se pueden realizar tres acciones de actualización básicas en un elemento. Esta
    
 ## <a name="updatefolder-request-example"></a>Ejemplo de solicitud UpdateFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud UpdateFolder muestra cómo actualizar un nombre para mostrar de la carpeta. 
   
@@ -108,7 +108,7 @@ Vea el esquema para ver los elementos adicionales que puede usar para formar una
   
 ## <a name="updatefolder-response-example"></a>Ejemplo de respuesta UpdateFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud UpdateFolder. En este ejemplo, se devuelve la nueva clave de cambio para reflejar el estado actualizado de la carpeta.
   
@@ -171,7 +171,7 @@ En la respuesta se usan los siguientes elementos:
     
 ## <a name="updatefolder-error-response-example"></a>Ejemplo de respuesta de error UpdateFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a una solicitud UpdateFolder.
   

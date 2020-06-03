@@ -16,7 +16,7 @@ ms.openlocfilehash: b2e342225e7e79c44dcd86b76b4b7d47b16b860b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44466601"
 ---
 # <a name="removedelegate-operation"></a>Operación RemoveDelegate
@@ -36,7 +36,7 @@ La operación **RemoveDelegate** puede usar los encabezados SOAP que se enumeran
    
 ## <a name="removedelegate-request-example"></a>Ejemplo de solicitud RemoveDelegate
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo de código siguiente se muestra cómo quitar dos delegados del buzón de correo de Usuario1. En este ejemplo, se quita un delegado mediante la dirección SMTP principal del delegado y el otro se quita mediante el identificador de seguridad (SID) del delegado.
   
@@ -74,7 +74,7 @@ La operación **RemoveDelegate** no requiere que el usuario delegado especificad
   
 ## <a name="removedelegate-response-example"></a>Ejemplo de respuesta RemoveDelegate
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una respuesta de **RemoveDelegate** muestra una respuesta correcta a una solicitud de **RemoveDelegate** . La respuesta contiene un elemento **DelegateUserResponseMessageType** para cada delegado que se quita del buzón. 
   
@@ -113,7 +113,7 @@ El siguiente ejemplo de una respuesta de **RemoveDelegate** muestra una respuest
 
 ## <a name="removedelegate-error-response-example"></a>Ejemplo de respuesta de error RemoveDelegate
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una respuesta de error **RemoveDelegate** muestra los resultados de una solicitud para quitar un delegado que no existe. 
   
