@@ -1,5 +1,5 @@
 ---
-title: PlayOnPhoneGreetingResponse (servicio web de mensajería unificada)
+title: PlayOnPhoneGreetingResponse (servicio Web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,63 +10,63 @@ api_name:
 api_type:
 - schema
 ms.assetid: 7189d69a-9288-4fc8-8d78-4977ee1a7253
-description: El elemento PlayOnPhoneGreetingResponse define una respuesta a una solicitud de PlayOnPhoneGreeting operación (servicio web de mensajería unificada).
-ms.openlocfilehash: abae8dad57a5bc13b17e8f5a7a1ca41bf0586a3a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PlayOnPhoneGreetingResponse define una respuesta a una solicitud de PlayOnPhoneGreeting (servicio Web de mensajería unificada).
+ms.openlocfilehash: ca448860ef0e59607f73421c71d9c8f75c740773
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836837"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528856"
 ---
-# <a name="playonphonegreetingresponse-um-web-service"></a><span data-ttu-id="85e9d-103">PlayOnPhoneGreetingResponse (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="85e9d-103">PlayOnPhoneGreetingResponse (UM web service)</span></span>
+# <a name="playonphonegreetingresponse-um-web-service"></a><span data-ttu-id="a345e-103">PlayOnPhoneGreetingResponse (servicio Web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="a345e-103">PlayOnPhoneGreetingResponse (UM web service)</span></span>
 
-<span data-ttu-id="85e9d-104">El elemento **PlayOnPhoneGreetingResponse** define una respuesta a una solicitud de [operación PlayOnPhoneGreeting (servicio web de mensajería unificada)](playonphonegreeting-operation-um-web-service.md) .</span><span class="sxs-lookup"><span data-stu-id="85e9d-104">The **PlayOnPhoneGreetingResponse** element defines a response to a [PlayOnPhoneGreeting operation (UM web service)](playonphonegreeting-operation-um-web-service.md) request.</span></span> 
+<span data-ttu-id="a345e-104">El elemento **PlayOnPhoneGreetingResponse** define una respuesta a una solicitud de [PlayOnPhoneGreeting (servicio Web de mensajería unificada)](playonphonegreeting-operation-um-web-service.md) .</span><span class="sxs-lookup"><span data-stu-id="a345e-104">The **PlayOnPhoneGreetingResponse** element defines a response to a [PlayOnPhoneGreeting operation (UM web service)](playonphonegreeting-operation-um-web-service.md) request.</span></span> 
   
-[<span data-ttu-id="85e9d-105">PlayOnPhoneGreetingResponse (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="85e9d-105">PlayOnPhoneGreetingResponse (UM web service)</span></span>](playonphonegreetingresponse-um-web-service.md)
+[<span data-ttu-id="a345e-105">PlayOnPhoneGreetingResponse (servicio Web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="a345e-105">PlayOnPhoneGreetingResponse (UM web service)</span></span>](playonphonegreetingresponse-um-web-service.md)
   
 ```xml
 <PlayOnPhoneGreetingResponse />
 ```
 
- <span data-ttu-id="85e9d-106">**string**</span><span class="sxs-lookup"><span data-stu-id="85e9d-106">**string**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="85e9d-107">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="85e9d-107">Attributes and elements</span></span>
+ <span data-ttu-id="a345e-106">**string**</span><span class="sxs-lookup"><span data-stu-id="a345e-106">**string**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="a345e-107">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="a345e-107">Attributes and elements</span></span>
 
-<span data-ttu-id="85e9d-108">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="85e9d-108">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="a345e-108">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="a345e-108">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="85e9d-109">Atributos</span><span class="sxs-lookup"><span data-stu-id="85e9d-109">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="a345e-109">Atributos</span><span class="sxs-lookup"><span data-stu-id="a345e-109">Attributes</span></span>
 
-<span data-ttu-id="85e9d-110">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="85e9d-110">None.</span></span>
+<span data-ttu-id="a345e-110">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="a345e-110">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="85e9d-111">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="85e9d-111">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="a345e-111">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="a345e-111">Child elements</span></span>
 
-<span data-ttu-id="85e9d-112">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="85e9d-112">None.</span></span>
+<span data-ttu-id="a345e-112">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="a345e-112">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="85e9d-113">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="85e9d-113">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="a345e-113">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="a345e-113">Parent elements</span></span>
 
-<span data-ttu-id="85e9d-114">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="85e9d-114">None.</span></span>
+<span data-ttu-id="a345e-114">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="a345e-114">None.</span></span>
   
-## <a name="text-value"></a><span data-ttu-id="85e9d-115">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="85e9d-115">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="a345e-115">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="a345e-115">Text value</span></span>
 
-<span data-ttu-id="85e9d-116">Se requiere un valor de texto.</span><span class="sxs-lookup"><span data-stu-id="85e9d-116">A text value is required.</span></span> <span data-ttu-id="85e9d-117">El valor de texto contiene el valor que se usará para el valor de [CallId (servicio web de mensajería unificada)](callid-um-web-service.md) en una solicitud de [operación GetCallInfo (servicio web de mensajería unificada)](getcallinfo-operation-um-web-service.md) o una solicitud de [operación de desconexión (servicio web de mensajería unificada)](disconnect-operation-um-web-service.md) .</span><span class="sxs-lookup"><span data-stu-id="85e9d-117">The text value contains the value to use for the value of [CallId (UM web service)](callid-um-web-service.md) in a [GetCallInfo operation (UM web service)](getcallinfo-operation-um-web-service.md) request or a [Disconnect operation (UM web service)](disconnect-operation-um-web-service.md) request.</span></span> 
+<span data-ttu-id="a345e-116">Se requiere un valor de texto.</span><span class="sxs-lookup"><span data-stu-id="a345e-116">A text value is required.</span></span> <span data-ttu-id="a345e-117">El valor de texto contiene el valor que se va a usar para el valor de [CallId (servicio Web de mensajería unificada)](callid-um-web-service.md) en una solicitud de [GetCallInfo (servicio Web de mensajería unificada)](getcallinfo-operation-um-web-service.md) o una solicitud de [desconexión (servicio Web de mensajería unificada)](disconnect-operation-um-web-service.md) .</span><span class="sxs-lookup"><span data-stu-id="a345e-117">The text value contains the value to use for the value of [CallId (UM web service)](callid-um-web-service.md) in a [GetCallInfo operation (UM web service)](getcallinfo-operation-um-web-service.md) request or a [Disconnect operation (UM web service)](disconnect-operation-um-web-service.md) request.</span></span> 
   
-## <a name="element-information"></a><span data-ttu-id="85e9d-118">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="85e9d-118">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="a345e-118">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="a345e-118">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="85e9d-119">Espacio de nombres</span><span class="sxs-lookup"><span data-stu-id="85e9d-119">Namespace</span></span>  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|<span data-ttu-id="85e9d-120">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="85e9d-120">Schema Name</span></span>  <br/> |<span data-ttu-id="85e9d-121">Mensajes</span><span class="sxs-lookup"><span data-stu-id="85e9d-121">Messages</span></span>  <br/> |
-|<span data-ttu-id="85e9d-122">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="85e9d-122">Validation File</span></span>  <br/> |<span data-ttu-id="85e9d-123">Messages.xsd</span><span class="sxs-lookup"><span data-stu-id="85e9d-123">Messages.xsd</span></span>  <br/> |
-|<span data-ttu-id="85e9d-124">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="85e9d-124">Can be Empty</span></span>  <br/> |<span data-ttu-id="85e9d-125">False</span><span class="sxs-lookup"><span data-stu-id="85e9d-125">False</span></span>  <br/> |
+|<span data-ttu-id="a345e-119">Namespace</span><span class="sxs-lookup"><span data-stu-id="a345e-119">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|<span data-ttu-id="a345e-120">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="a345e-120">Schema Name</span></span>  <br/> |<span data-ttu-id="a345e-121">Mensajes</span><span class="sxs-lookup"><span data-stu-id="a345e-121">Messages</span></span>  <br/> |
+|<span data-ttu-id="a345e-122">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="a345e-122">Validation File</span></span>  <br/> |<span data-ttu-id="a345e-123">Messages. xsd</span><span class="sxs-lookup"><span data-stu-id="a345e-123">Messages.xsd</span></span>  <br/> |
+|<span data-ttu-id="a345e-124">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="a345e-124">Can be Empty</span></span>  <br/> |<span data-ttu-id="a345e-125">Falso</span><span class="sxs-lookup"><span data-stu-id="a345e-125">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="85e9d-126">Vea también</span><span class="sxs-lookup"><span data-stu-id="85e9d-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a345e-126">Vea también</span><span class="sxs-lookup"><span data-stu-id="a345e-126">See also</span></span>
 
 
 
-[<span data-ttu-id="85e9d-127">Operación PlayOnPhoneGreeting (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="85e9d-127">PlayOnPhoneGreeting operation (UM web service)</span></span>](playonphonegreeting-operation-um-web-service.md)
+[<span data-ttu-id="a345e-127">Operación PlayOnPhoneGreeting (servicio Web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="a345e-127">PlayOnPhoneGreeting operation (UM web service)</span></span>](playonphonegreeting-operation-um-web-service.md)
   
-[<span data-ttu-id="85e9d-128">CallId (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="85e9d-128">CallId (UM web service)</span></span>](callid-um-web-service.md)
+[<span data-ttu-id="a345e-128">CallId (servicio Web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="a345e-128">CallId (UM web service)</span></span>](callid-um-web-service.md)
   
-[<span data-ttu-id="85e9d-129">Operación GetCallInfo (servicio web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="85e9d-129">GetCallInfo operation (UM web service)</span></span>](getcallinfo-operation-um-web-service.md)
+[<span data-ttu-id="a345e-129">Operación GetCallInfo (servicio Web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="a345e-129">GetCallInfo operation (UM web service)</span></span>](getcallinfo-operation-um-web-service.md)
   
-[<span data-ttu-id="85e9d-130">(Servicio web de mensajería unificada) de la operación de desconexión</span><span class="sxs-lookup"><span data-stu-id="85e9d-130">Disconnect operation (UM web service)</span></span>](disconnect-operation-um-web-service.md)
+[<span data-ttu-id="a345e-130">Operación Disconnect (servicio Web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="a345e-130">Disconnect operation (UM web service)</span></span>](disconnect-operation-um-web-service.md)
 
