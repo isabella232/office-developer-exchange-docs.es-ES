@@ -16,7 +16,7 @@ ms.openlocfilehash: 231b160713526f44433188e2b1e3bd98012370b1
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458316"
 ---
 # <a name="getphonecallinformation-operation"></a>Operación GetPhoneCallInformation
@@ -25,7 +25,7 @@ La operación **GetPhoneCallInformation** devuelve información sobre la llamada
   
 ## <a name="getphonecallinformation-request-example"></a>Ejemplo de solicitud GetPhoneCallInformation
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **GetPhoneCallInformation** muestra cómo crear una solicitud para obtener información sobre una llamada telefónica específica. 
   
@@ -51,7 +51,7 @@ El siguiente ejemplo de una solicitud **GetPhoneCallInformation** muestra cómo 
 
 ## <a name="getphonecallinformation-response-example"></a>Ejemplo de respuesta GetPhoneCallInformation
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **GetPhoneCallInformation** . La respuesta representa una llamada telefónica que está conectada actualmente. 
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: 489e34ad0e4bcc2520febb3c213db970fa496051
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458134"
 ---
 # <a name="items"></a>Elementos
@@ -53,7 +53,7 @@ Ninguna.
 |**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Item](item.md) <br/> |Representa un elemento en el almacén de Exchange.  <br/> |
-|[Mensaje](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange.  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
 |[Contacto](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Representa una lista de distribución.  <br/> |

@@ -16,7 +16,7 @@ ms.openlocfilehash: 622faa622b0ea231a6331ff62631885d4252c1f5
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457700"
 ---
 # <a name="getuseroofsettings-operation"></a>Operación GetUserOofSettings
@@ -41,7 +41,7 @@ La operación **GetUserOofSettings** proporciona acceso a la configuración OOF 
   
 ## <a name="getuseroofsettings-request-example"></a>Ejemplo de solicitud GetUserOofSettings
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una solicitud de **GetUserOofSettings** que obtiene la información de OOF de un solo usuario. 
   
@@ -74,7 +74,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="successful-getuseroofsettings-response-example"></a>Ejemplo de respuesta GetUserOofSettings correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra un estado de OOF deshabilitado con los mensajes OOF.
   
@@ -142,13 +142,13 @@ En la respuesta se usan los siguientes elementos:
     
 - [ExternalReply](externalreply.md)
     
-- [Mensaje](message-ex15websvcsotherref.md)
+- [Message](message-ex15websvcsotherref.md)
     
 - [AllowExternalOof](allowexternaloof.md)
     
 ## <a name="getuseroofsettings-error-response-example"></a>Ejemplo de respuesta de error GetUserOofSettings
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error causada por un intento de acceder a la información de OOF de otro usuario.
   

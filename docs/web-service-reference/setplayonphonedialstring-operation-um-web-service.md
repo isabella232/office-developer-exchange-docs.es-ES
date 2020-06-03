@@ -15,7 +15,7 @@ ms.openlocfilehash: 7df806eedc2d6d037394f31ec4ccbfe28aaf3372
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458645"
 ---
 # <a name="setplayonphonedialstring-operation-um-web-service"></a>Operación SetPlayOnPhoneDialString (servicio Web de mensajería unificada)
@@ -24,7 +24,7 @@ La operación SetPlayOnPhoneDialString establece la cadena de marcado que se usa
   
 ## <a name="setplayonphonedialstring-request-example"></a>Ejemplo de solicitud SetPlayOnPhoneDialString
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud SetPlayOnPhoneDialString muestra cómo crear una solicitud para establecer la cadena de marcado predeterminada para un buzón de correo.
   
@@ -43,7 +43,7 @@ El siguiente ejemplo de una solicitud SetPlayOnPhoneDialString muestra cómo cre
 
 ## <a name="successful-setplayonphonedialstring-response-example"></a>Ejemplo de respuesta SetPlayOnPhoneDialString correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una respuesta de SetPlayOnePhoneDialString muestra una respuesta a la solicitud SetPlayOnPhoneDialString.
   

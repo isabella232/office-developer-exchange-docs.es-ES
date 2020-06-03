@@ -16,7 +16,7 @@ ms.openlocfilehash: 6481272c61aab3dc9aeb2fd988e3544169306f06
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457469"
 ---
 # <a name="responsecode"></a>ResponseCode
@@ -101,7 +101,7 @@ Ninguna.
 
 Es necesario un valor de texto si se usa este elemento. En la tabla siguiente se describen los valores que se devuelven con este elemento.
   
-|Valor|Descripción|
+|Valor|Description|
 |:-----|:-----|
 |NoError  <br/> |No se ha producido ningún error en la solicitud.  <br/> |
 |ErrorAccessDenied  <br/> |Este error se produce cuando la cuenta que realiza la llamada no tiene los derechos necesarios para realizar la acción solicitada.  <br/> |

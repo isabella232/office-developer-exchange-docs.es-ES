@@ -16,7 +16,7 @@ ms.openlocfilehash: 125a6d212e5eaf85ace71c048de809f3a05ba9b6
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457553"
 ---
 # <a name="createfolder-operation"></a>Operación CreateFolder
@@ -25,7 +25,7 @@ La operación CreateFolder crea carpetas, carpetas de calendario, carpetas de co
   
 ## <a name="createfolder-request-example"></a>Ejemplo de solicitud CreateFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud CreateFolder muestra cómo formar una solicitud para crear dos nuevas carpetas en la raíz del buzón.
   
@@ -81,7 +81,7 @@ La operación CreateFolder admite la creación de una clase de carpeta personali
   
 ## <a name="successful-createfolder-response-example"></a>Ejemplo de respuesta CreateFolder correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateFolder. En este ejemplo, la respuesta devuelve los identificadores de las nuevas carpetas.
   
@@ -150,7 +150,7 @@ Para buscar otras opciones para el mensaje de respuesta de la operación CreateF
   
 ## <a name="createfolder-error-response"></a>Respuesta de error CreateFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a una solicitud CreateFolder.
   

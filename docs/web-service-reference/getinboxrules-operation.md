@@ -16,7 +16,7 @@ ms.openlocfilehash: f4c4c03f55c9f32be4a067024f4387888edd5fe9
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457938"
 ---
 # <a name="getinboxrules-operation"></a>Operación de GetInboxRules
@@ -25,7 +25,7 @@ La operación **GetInboxRules** usa los servicios web Exchange para recuperar la
   
 ## <a name="getinboxrules-request-example"></a>Ejemplo de solicitud GetInboxRules
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra el XML de la solicitud que el cliente envía al servidor. La solicitud identifica al usuario en el elemento [MailboxSmtpAddress](mailboxsmtpaddress.md) . Todas las reglas de la bandeja de entrada para el usuario identificado deben devolverse en la respuesta. 
   
@@ -56,7 +56,7 @@ La solicitud incluye el siguiente elemento opcional:
     
 ## <a name="successful-getinboxrules-response-example"></a>Ejemplo de respuesta GetInboxRules correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo del cuerpo del Protocolo simple de acceso a objetos (SOAP) muestra una respuesta correcta a la solicitud **GetInboxRules** . En este ejemplo, la respuesta incluye una regla. 
   

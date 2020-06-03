@@ -16,7 +16,7 @@ ms.openlocfilehash: 1d34ce4c5ba1d955989a35dafb8ab3c5d229d505
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457336"
 ---
 # <a name="deleteattachment-operation"></a>Operación DeleteAttachment
@@ -29,7 +29,7 @@ Esta operación permite eliminar uno o más datos adjuntos por identificador.
   
 ## <a name="deleteattachment-request-example"></a>Ejemplo de solicitud DeleteAttachment
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud DeleteAttachment muestra cómo eliminar un elemento adjunto.
   
@@ -68,7 +68,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="deleteattachment-response-example"></a>Ejemplo de respuesta DeleteAttachment
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a una solicitud DeleteAttachment.
   

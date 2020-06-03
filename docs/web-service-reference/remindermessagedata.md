@@ -12,7 +12,7 @@ ms.openlocfilehash: f2632062cd02581c426f7dbfa2a33d53e5594d72
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458554"
 ---
 # <a name="remindermessagedata"></a>ReminderMessageData
@@ -45,7 +45,7 @@ Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Mensaje](message-ex15websvcsotherref.md)
+[Message](message-ex15websvcsotherref.md)
   
 ## <a name="remarks"></a>Comentarios
 
@@ -68,7 +68,7 @@ Las versiones de Exchange que comienzan con el número de compilación 15.00.091
 
 
 
-[Mensaje](message-ex15websvcsotherref.md)
+[Message](message-ex15websvcsotherref.md)
 
 
 - [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)

@@ -16,7 +16,7 @@ ms.openlocfilehash: 535edf9fe567bc3063a5b853f01d604ea4c7eb95
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457504"
 ---
 # <a name="createitem-operation-calendar-item"></a>Operación CreateItem (elemento de calendario)
@@ -29,7 +29,7 @@ La operación CreateItem crea citas, reuniones y convocatorias de reunión. Si s
   
 ## <a name="createitem-calendar-item-request-example"></a>Ejemplo de solicitud CreateItem (elemento de calendario)
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud CreateItem muestra cómo crear una reunión con dos asistentes necesarios. Esta solicitud enviará las convocatorias de reunión a los dos asistentes.
   
@@ -123,7 +123,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="successful-createitem-calendar-item-response"></a>Se ha realizado correctamente CreateItem (elemento de calendario) Response
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateItem.
   

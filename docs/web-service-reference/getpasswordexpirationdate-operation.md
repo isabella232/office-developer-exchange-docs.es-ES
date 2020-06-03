@@ -12,7 +12,7 @@ ms.openlocfilehash: 4184092cf98161e4c2f74446cef5439722ae71a1
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457896"
 ---
 # <a name="getpasswordexpirationdate-operation"></a>Operación GetPasswordExpirationDate
@@ -32,7 +32,7 @@ La operación **GetPasswordExpirationDate** puede usar los encabezados SOAP que 
    
 ## <a name="getpasswordexpirationdate-operation-request-example"></a>Ejemplo de solicitud de operación GetPasswordExpirationDate
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud de operación de **GetPasswordExpirationDate** muestra cómo obtener la fecha de expiración de la contraseña de una cuenta de correo electrónico. 
   

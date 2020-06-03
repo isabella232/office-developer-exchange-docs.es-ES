@@ -16,7 +16,7 @@ ms.openlocfilehash: fb28e88d1a47b0ea8f63ed33b1efacae8538e1c8
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458211"
 ---
 # <a name="getuserconfiguration-operation"></a>Operación GetUserConfiguration
@@ -25,7 +25,7 @@ La operación **GetUserConfiguration** obtiene un objeto de configuración de us
   
 ## <a name="getuserconfiguration-request-example"></a>Ejemplo de solicitud GetUserConfiguration
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **GetUserConfiguration** muestra cómo crear una solicitud para obtener un objeto de configuración de usuario en la carpeta Borradores. 
   
@@ -54,7 +54,7 @@ El siguiente ejemplo de una solicitud **GetUserConfiguration** muestra cómo cre
 
 ## <a name="getuserconfiguration-response-example"></a>Ejemplo de respuesta GetUserConfiguration
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **GetUserConfiguration** . 
   

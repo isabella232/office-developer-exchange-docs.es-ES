@@ -16,7 +16,7 @@ ms.openlocfilehash: d1393a6a5e99b7e0a7e354d2b7dd035d04356ec2
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458281"
 ---
 # <a name="getroomlists-operation"></a>Operación GetRoomLists
@@ -36,7 +36,7 @@ La operación **GetRoomLists** puede usar los encabezados SOAP que se enumeran y
    
 ## <a name="getroomlists-request-example"></a>Ejemplo de solicitud GetRoomLists
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente es un ejemplo de una solicitud de **GetRoomLists** que devuelve las listas de salas que están disponibles en el servidor. 
   
@@ -66,7 +66,7 @@ El siguiente elemento se usa en la solicitud:
     
 ## <a name="successful-getroomlists-response-example"></a>Ejemplo de respuesta GetRoomLists correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente es un ejemplo de respuesta a una solicitud de **GetRoomLists** . Esta respuesta muestra una lista de salas en el servidor. 
   
@@ -115,7 +115,7 @@ En la respuesta se usan los siguientes elementos:
     
 ### <a name="getroomlists-error-response-example"></a>Ejemplo de respuesta de error GetRoomLists
 
-#### <a name="description"></a>Descripción
+#### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra la respuesta a un intento de obtener listas de salas de un servidor que no tiene definida ninguna lista de salas.
   

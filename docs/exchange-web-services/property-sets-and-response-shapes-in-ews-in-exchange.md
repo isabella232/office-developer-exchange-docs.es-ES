@@ -10,7 +10,7 @@ ms.openlocfilehash: 8f539a2131798e764574ef92f75deb654c02c90f
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457665"
 ---
 # <a name="property-sets-and-response-shapes-in-ews-in-exchange"></a>Conjuntos de propiedades y formas de respuestas de EWS en Exchange

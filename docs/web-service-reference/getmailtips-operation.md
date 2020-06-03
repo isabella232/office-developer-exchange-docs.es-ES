@@ -16,7 +16,7 @@ ms.openlocfilehash: 41a4bb99ee7ae4e416ec8a106968bb7869e60345
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44458659"
 ---
 # <a name="getmailtips-operation"></a>Operación GetMailTips
@@ -25,7 +25,7 @@ La operación **GetMailTips** obtiene la información de sugerencias de correo p
   
 ## <a name="getmailtips-request-example"></a>Ejemplo de solicitud GetMailTips
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El cliente crea el XML de la solicitud y lo envía al servidor. La solicitud identifica quién envía el cliente como, el buzón para el que se recuperan las sugerencias de correo y qué sugerencias de correo se solicitan. En este ejemplo, el cliente solicita que se devuelvan todas las sugerencias de correo para el buzón seleccionado.
   
@@ -72,7 +72,7 @@ Los siguientes elementos se incluyen en la solicitud:
     
 ## <a name="successful-getmailtips-response-example"></a>Ejemplo de respuesta GetMailTips correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo del cuerpo del Protocolo simple de acceso a objetos (SOAP) muestra una respuesta correcta a la solicitud **GetMailTips** . 
   

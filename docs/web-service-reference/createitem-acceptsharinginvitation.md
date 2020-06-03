@@ -16,7 +16,7 @@ ms.openlocfilehash: eda846b72f42fe886497b355d9cddade7c5f4044
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457518"
 ---
 # <a name="createitem-acceptsharinginvitation"></a>CreateItem (AcceptSharingInvitation)
@@ -25,7 +25,7 @@ La operación **CreateItem** se usa para aceptar una invitación para compartir 
   
 ## <a name="accept-sharing-invitation-request-example"></a>Ejemplo de solicitud para aceptar una invitación de uso compartido
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra cómo aceptar una invitación de uso compartido.
   
@@ -65,7 +65,7 @@ El identificador de elemento y la clave de cambio se han abreviado para preserva
   
 ## <a name="successful-accept-sharing-invitation-response-example"></a>Ejemplo de respuesta de invitación para uso compartido aceptada correctamente
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **CreateItem** . 
   
@@ -117,7 +117,7 @@ En la respuesta se usan los siguientes elementos:
     
 ## <a name="accept-sharing-invitation-error-response-example"></a>Ejemplo de respuesta de error de aceptación de uso compartido
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a una solicitud **CreateItem** . El error se debe a un intento de aceptar una invitación para compartir que no se encuentra en el almacén de Exchange. 
   
