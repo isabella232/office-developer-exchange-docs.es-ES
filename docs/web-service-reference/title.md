@@ -16,59 +16,59 @@ ms.openlocfilehash: a9948d7a9d48e8cdb03d676992cad342861bb211
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468757"
 ---
-# <a name="title"></a><span data-ttu-id="0deac-103">Título</span><span class="sxs-lookup"><span data-stu-id="0deac-103">Title</span></span>
+# <a name="title"></a><span data-ttu-id="afe25-103">Título</span><span class="sxs-lookup"><span data-stu-id="afe25-103">Title</span></span>
 
-<span data-ttu-id="0deac-104">El elemento **title** representa el título de un contacto.</span><span class="sxs-lookup"><span data-stu-id="0deac-104">The **Title** element represents the title of a contact.</span></span> 
+<span data-ttu-id="afe25-104">El elemento **title** representa el título de un contacto.</span><span class="sxs-lookup"><span data-stu-id="afe25-104">The **Title** element represents the title of a contact.</span></span> 
   
 ```xml
 <Title/>
 ```
 
- <span data-ttu-id="0deac-105">**String**</span><span class="sxs-lookup"><span data-stu-id="0deac-105">**String**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="0deac-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="0deac-106">Attributes and elements</span></span>
+ <span data-ttu-id="afe25-105">**String**</span><span class="sxs-lookup"><span data-stu-id="afe25-105">**String**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="afe25-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="afe25-106">Attributes and elements</span></span>
 
-<span data-ttu-id="0deac-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="0deac-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="afe25-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="afe25-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="0deac-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="0deac-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="afe25-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="afe25-108">Attributes</span></span>
 
-<span data-ttu-id="0deac-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="0deac-109">None.</span></span>
+<span data-ttu-id="afe25-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="afe25-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="0deac-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="0deac-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="afe25-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="afe25-110">Child elements</span></span>
 
-<span data-ttu-id="0deac-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="0deac-111">None.</span></span>
+<span data-ttu-id="afe25-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="afe25-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="0deac-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="0deac-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="afe25-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="afe25-112">Parent elements</span></span>
 
-|<span data-ttu-id="0deac-113">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="0deac-113">**Element**</span></span>|<span data-ttu-id="0deac-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="0deac-114">**Description**</span></span>|
+|<span data-ttu-id="afe25-113">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="afe25-113">**Element**</span></span>|<span data-ttu-id="afe25-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="afe25-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="0deac-115">CompleteName</span><span class="sxs-lookup"><span data-stu-id="0deac-115">CompleteName</span></span>](completename.md) <br/> |<span data-ttu-id="0deac-116">Representa el nombre completo de un contacto.</span><span class="sxs-lookup"><span data-stu-id="0deac-116">Represents the complete name of a contact.</span></span>  <br/> |
+|[<span data-ttu-id="afe25-115">CompleteName</span><span class="sxs-lookup"><span data-stu-id="afe25-115">CompleteName</span></span>](completename.md) <br/> |<span data-ttu-id="afe25-116">Representa el nombre completo de un contacto.</span><span class="sxs-lookup"><span data-stu-id="afe25-116">Represents the complete name of a contact.</span></span>  <br/> |
    
-## <a name="text-value"></a><span data-ttu-id="0deac-117">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="0deac-117">Text value</span></span>
+## <a name="text-value"></a><span data-ttu-id="afe25-117">Valor de texto</span><span class="sxs-lookup"><span data-stu-id="afe25-117">Text value</span></span>
 
-<span data-ttu-id="0deac-118">El valor de texto es una cadena que representa el título de un contacto.</span><span class="sxs-lookup"><span data-stu-id="0deac-118">The text value is a string that represents the title of a contact.</span></span>
+<span data-ttu-id="afe25-118">El valor de texto es una cadena que representa el título de un contacto.</span><span class="sxs-lookup"><span data-stu-id="afe25-118">The text value is a string that represents the title of a contact.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="0deac-119">Comentarios</span><span class="sxs-lookup"><span data-stu-id="0deac-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="afe25-119">Comentarios</span><span class="sxs-lookup"><span data-stu-id="afe25-119">Remarks</span></span>
 
-<span data-ttu-id="0deac-120">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="0deac-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="afe25-120">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="afe25-120">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="0deac-121">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="0deac-121">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="afe25-121">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="afe25-121">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="0deac-122">Namespace</span><span class="sxs-lookup"><span data-stu-id="0deac-122">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="0deac-123">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="0deac-123">Schema name</span></span>  <br/> |<span data-ttu-id="0deac-124">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="0deac-124">Types schema</span></span>  <br/> |
-|<span data-ttu-id="0deac-125">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="0deac-125">Validation file</span></span>  <br/> |<span data-ttu-id="0deac-126">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="0deac-126">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="0deac-127">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="0deac-127">Can be empty</span></span>  <br/> |<span data-ttu-id="0deac-128">Falso</span><span class="sxs-lookup"><span data-stu-id="0deac-128">False</span></span>  <br/> |
+|<span data-ttu-id="afe25-122">Namespace</span><span class="sxs-lookup"><span data-stu-id="afe25-122">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="afe25-123">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="afe25-123">Schema name</span></span>  <br/> |<span data-ttu-id="afe25-124">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="afe25-124">Types schema</span></span>  <br/> |
+|<span data-ttu-id="afe25-125">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="afe25-125">Validation file</span></span>  <br/> |<span data-ttu-id="afe25-126">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="afe25-126">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="afe25-127">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="afe25-127">Can be empty</span></span>  <br/> |<span data-ttu-id="afe25-128">Falso</span><span class="sxs-lookup"><span data-stu-id="afe25-128">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="0deac-129">Vea también</span><span class="sxs-lookup"><span data-stu-id="0deac-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="afe25-129">Vea también</span><span class="sxs-lookup"><span data-stu-id="afe25-129">See also</span></span>
 
 
 
-- [<span data-ttu-id="0deac-130">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="0deac-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="afe25-130">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="afe25-130">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
 
-[<span data-ttu-id="0deac-131">Creación de contactos (servicios Web de Exchange)</span><span class="sxs-lookup"><span data-stu-id="0deac-131">Creating Contacts (Exchange Web Services)</span></span>](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
+[<span data-ttu-id="afe25-131">Creación de contactos (servicios Web de Exchange)</span><span class="sxs-lookup"><span data-stu-id="afe25-131">Creating Contacts (Exchange Web Services)</span></span>](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
 

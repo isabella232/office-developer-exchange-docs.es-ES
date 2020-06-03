@@ -7,38 +7,38 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 709a5c5b-394b-449b-8550-d05025deb840
-description: El elemento ExternalDirectoryObjectId (GetFederatedDirectoryUserType) está pensado para uso interno únicamente.
-ms.openlocfilehash: 4545f6e079297fb0b319d71358ec9af35c759f98
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ExternalDirectoryObjectId (GetFederatedDirectoryUserType) está destinado exclusivamente para uso interno.
+ms.openlocfilehash: 2a8058197421e6d31c5a383c508f27443a062ffe
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764547"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526021"
 ---
-# <a name="externaldirectoryobjectid-getfederateddirectoryusertype"></a><span data-ttu-id="3b076-103">ExternalDirectoryObjectId (GetFederatedDirectoryUserType)</span><span class="sxs-lookup"><span data-stu-id="3b076-103">ExternalDirectoryObjectId (GetFederatedDirectoryUserType)</span></span>
+# <a name="externaldirectoryobjectid-getfederateddirectoryusertype"></a><span data-ttu-id="85020-103">ExternalDirectoryObjectId (GetFederatedDirectoryUserType)</span><span class="sxs-lookup"><span data-stu-id="85020-103">ExternalDirectoryObjectId (GetFederatedDirectoryUserType)</span></span>
 
-<span data-ttu-id="3b076-104">El elemento **ExternalDirectoryObjectId (GetFederatedDirectoryUserType)** está pensado para uso interno únicamente.</span><span class="sxs-lookup"><span data-stu-id="3b076-104">The **ExternalDirectoryObjectId (GetFederatedDirectoryUserType)** element is intended for internal use only.</span></span> 
+<span data-ttu-id="85020-104">El elemento **ExternalDirectoryObjectId (GetFederatedDirectoryUserType)** está destinado exclusivamente para uso interno.</span><span class="sxs-lookup"><span data-stu-id="85020-104">The **ExternalDirectoryObjectId (GetFederatedDirectoryUserType)** element is intended for internal use only.</span></span> 
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="3b076-105">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="3b076-105">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="85020-105">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="85020-105">Attributes and elements</span></span>
 
-<span data-ttu-id="3b076-106">Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="3b076-106">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="85020-106">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="85020-106">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="3b076-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="3b076-107">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="85020-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="85020-107">Attributes</span></span>
 
-<span data-ttu-id="3b076-108">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="3b076-108">None.</span></span>
+<span data-ttu-id="85020-108">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="85020-108">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="3b076-109">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="3b076-109">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="85020-109">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="85020-109">Child elements</span></span>
 
-<span data-ttu-id="3b076-110">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="3b076-110">None.</span></span>
+<span data-ttu-id="85020-110">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="85020-110">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="3b076-111">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="3b076-111">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="85020-111">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="85020-111">Parent elements</span></span>
 
-<span data-ttu-id="3b076-112">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="3b076-112">None.</span></span>
+<span data-ttu-id="85020-112">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="85020-112">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="3b076-113">Comentarios</span><span class="sxs-lookup"><span data-stu-id="3b076-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="85020-113">Comentarios</span><span class="sxs-lookup"><span data-stu-id="85020-113">Remarks</span></span>
 
-<span data-ttu-id="3b076-114">Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).</span><span class="sxs-lookup"><span data-stu-id="3b076-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="85020-114">Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).</span><span class="sxs-lookup"><span data-stu-id="85020-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
   
-<span data-ttu-id="3b076-115">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="3b076-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="85020-115">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="85020-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
 

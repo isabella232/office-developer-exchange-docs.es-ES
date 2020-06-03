@@ -16,20 +16,20 @@ ms.openlocfilehash: 054f89af1ba5c780c7de5016a6dfe34086c97f02
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468029"
 ---
-# <a name="unsubscribe-operation"></a><span data-ttu-id="4bea9-105">Operación unsubscribe</span><span class="sxs-lookup"><span data-stu-id="4bea9-105">Unsubscribe operation</span></span>
+# <a name="unsubscribe-operation"></a><span data-ttu-id="a006d-105">Operación unsubscribe</span><span class="sxs-lookup"><span data-stu-id="a006d-105">Unsubscribe operation</span></span>
 
-<span data-ttu-id="4bea9-106">La operación unsubscribe se usa para finalizar una suscripción de notificación de extracción.</span><span class="sxs-lookup"><span data-stu-id="4bea9-106">The Unsubscribe operation is used to end a pull notification subscription.</span></span> <span data-ttu-id="4bea9-107">Use esta operación en lugar de permitir un tiempo de espera de suscripción.</span><span class="sxs-lookup"><span data-stu-id="4bea9-107">Use this operation rather than letting a subscription timeout.</span></span> <span data-ttu-id="4bea9-108">Esta operación solo es válida para las notificaciones de extracción.</span><span class="sxs-lookup"><span data-stu-id="4bea9-108">This operation is only valid for pull notifications.</span></span>
+<span data-ttu-id="a006d-106">La operación unsubscribe se usa para finalizar una suscripción de notificación de extracción.</span><span class="sxs-lookup"><span data-stu-id="a006d-106">The Unsubscribe operation is used to end a pull notification subscription.</span></span> <span data-ttu-id="a006d-107">Use esta operación en lugar de permitir un tiempo de espera de suscripción.</span><span class="sxs-lookup"><span data-stu-id="a006d-107">Use this operation rather than letting a subscription timeout.</span></span> <span data-ttu-id="a006d-108">Esta operación solo es válida para las notificaciones de extracción.</span><span class="sxs-lookup"><span data-stu-id="a006d-108">This operation is only valid for pull notifications.</span></span>
   
-## <a name="unsubscribe-request-example"></a><span data-ttu-id="4bea9-109">Ejemplo de solicitud de cancelación de suscripción</span><span class="sxs-lookup"><span data-stu-id="4bea9-109">Unsubscribe request example</span></span>
+## <a name="unsubscribe-request-example"></a><span data-ttu-id="a006d-109">Ejemplo de solicitud de cancelación de suscripción</span><span class="sxs-lookup"><span data-stu-id="a006d-109">Unsubscribe request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="4bea9-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="4bea9-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="a006d-110">Description</span><span class="sxs-lookup"><span data-stu-id="a006d-110">Description</span></span>
 
-<span data-ttu-id="4bea9-111">En el ejemplo siguiente se muestra el mensaje XML de SOAP que se envía para cancelar la suscripción de un cliente desde el servicio de notificación.</span><span class="sxs-lookup"><span data-stu-id="4bea9-111">The following example shows the SOAP XML message that is sent to unsubscribe a client from the Notification service.</span></span>
+<span data-ttu-id="a006d-111">En el ejemplo siguiente se muestra el mensaje XML de SOAP que se envía para cancelar la suscripción de un cliente desde el servicio de notificación.</span><span class="sxs-lookup"><span data-stu-id="a006d-111">The following example shows the SOAP XML message that is sent to unsubscribe a client from the Notification service.</span></span>
   
-### <a name="code"></a><span data-ttu-id="4bea9-112">Código</span><span class="sxs-lookup"><span data-stu-id="4bea9-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="a006d-112">Código</span><span class="sxs-lookup"><span data-stu-id="a006d-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -43,21 +43,21 @@ ms.locfileid: "44468029"
 </soap:Envelope>
 ```
 
-### <a name="unsubscribe-request-elements"></a><span data-ttu-id="4bea9-113">Elementos de solicitud de cancelación de suscripción</span><span class="sxs-lookup"><span data-stu-id="4bea9-113">Unsubscribe request elements</span></span>
+### <a name="unsubscribe-request-elements"></a><span data-ttu-id="a006d-113">Elementos de solicitud de cancelación de suscripción</span><span class="sxs-lookup"><span data-stu-id="a006d-113">Unsubscribe request elements</span></span>
 
-<span data-ttu-id="4bea9-114">Los siguientes elementos se usan en la solicitud:</span><span class="sxs-lookup"><span data-stu-id="4bea9-114">The following elements are used in the request:</span></span>
+<span data-ttu-id="a006d-114">Los siguientes elementos se usan en la solicitud:</span><span class="sxs-lookup"><span data-stu-id="a006d-114">The following elements are used in the request:</span></span>
   
-- [<span data-ttu-id="4bea9-115">Unsubscribe</span><span class="sxs-lookup"><span data-stu-id="4bea9-115">Unsubscribe</span></span>](unsubscribe.md)
+- [<span data-ttu-id="a006d-115">Unsubscribe</span><span class="sxs-lookup"><span data-stu-id="a006d-115">Unsubscribe</span></span>](unsubscribe.md)
     
-- [<span data-ttu-id="4bea9-116">SubscriptionId (GetEvents)</span><span class="sxs-lookup"><span data-stu-id="4bea9-116">SubscriptionId (GetEvents)</span></span>](subscriptionid-getevents.md)
+- [<span data-ttu-id="a006d-116">SubscriptionId (GetEvents)</span><span class="sxs-lookup"><span data-stu-id="a006d-116">SubscriptionId (GetEvents)</span></span>](subscriptionid-getevents.md)
     
-## <a name="successful-unsubscribe-response-example"></a><span data-ttu-id="4bea9-117">Ejemplo de respuesta de cancelación de suscripción correcta</span><span class="sxs-lookup"><span data-stu-id="4bea9-117">Successful Unsubscribe response example</span></span>
+## <a name="successful-unsubscribe-response-example"></a><span data-ttu-id="a006d-117">Ejemplo de respuesta de cancelación de suscripción correcta</span><span class="sxs-lookup"><span data-stu-id="a006d-117">Successful Unsubscribe response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="4bea9-118">Descripción</span><span class="sxs-lookup"><span data-stu-id="4bea9-118">Description</span></span>
+### <a name="description"></a><span data-ttu-id="a006d-118">Description</span><span class="sxs-lookup"><span data-stu-id="a006d-118">Description</span></span>
 
-<span data-ttu-id="4bea9-119">En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de cancelación de suscripción.</span><span class="sxs-lookup"><span data-stu-id="4bea9-119">The following example shows a successful response to an Unsubscribe request.</span></span>
+<span data-ttu-id="a006d-119">En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de cancelación de suscripción.</span><span class="sxs-lookup"><span data-stu-id="a006d-119">The following example shows a successful response to an Unsubscribe request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="4bea9-120">Código</span><span class="sxs-lookup"><span data-stu-id="4bea9-120">Code</span></span>
+### <a name="code"></a><span data-ttu-id="a006d-120">Código</span><span class="sxs-lookup"><span data-stu-id="a006d-120">Code</span></span>
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -82,27 +82,27 @@ ms.locfileid: "44468029"
 </soap:Envelope>
 ```
 
-### <a name="unsubscribe-response-elements"></a><span data-ttu-id="4bea9-121">Elementos de respuesta unsubscribe</span><span class="sxs-lookup"><span data-stu-id="4bea9-121">Unsubscribe response elements</span></span>
+### <a name="unsubscribe-response-elements"></a><span data-ttu-id="a006d-121">Elementos de respuesta unsubscribe</span><span class="sxs-lookup"><span data-stu-id="a006d-121">Unsubscribe response elements</span></span>
 
-<span data-ttu-id="4bea9-122">En la respuesta se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="4bea9-122">The following elements are used in the response:</span></span>
+<span data-ttu-id="a006d-122">En la respuesta se usan los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="a006d-122">The following elements are used in the response:</span></span>
   
-- [<span data-ttu-id="4bea9-123">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="4bea9-123">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="a006d-123">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="a006d-123">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="4bea9-124">Unsubscribe</span><span class="sxs-lookup"><span data-stu-id="4bea9-124">Unsubscribe</span></span>](unsubscribe.md)
+- [<span data-ttu-id="a006d-124">Unsubscribe</span><span class="sxs-lookup"><span data-stu-id="a006d-124">Unsubscribe</span></span>](unsubscribe.md)
     
-- [<span data-ttu-id="4bea9-125">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="4bea9-125">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="a006d-125">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="a006d-125">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="4bea9-126">UnsubscribeResponseMessage</span><span class="sxs-lookup"><span data-stu-id="4bea9-126">UnsubscribeResponseMessage</span></span>](unsubscriberesponsemessage.md)
+- [<span data-ttu-id="a006d-126">UnsubscribeResponseMessage</span><span class="sxs-lookup"><span data-stu-id="a006d-126">UnsubscribeResponseMessage</span></span>](unsubscriberesponsemessage.md)
     
-- [<span data-ttu-id="4bea9-127">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="4bea9-127">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="a006d-127">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="a006d-127">ResponseCode</span></span>](responsecode.md)
     
-## <a name="unsubscribe-error-response-example"></a><span data-ttu-id="4bea9-128">Ejemplo de respuesta de error de cancelación de suscripción</span><span class="sxs-lookup"><span data-stu-id="4bea9-128">Unsubscribe Error response example</span></span>
+## <a name="unsubscribe-error-response-example"></a><span data-ttu-id="a006d-128">Ejemplo de respuesta de error de cancelación de suscripción</span><span class="sxs-lookup"><span data-stu-id="a006d-128">Unsubscribe Error response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="4bea9-129">Descripción</span><span class="sxs-lookup"><span data-stu-id="4bea9-129">Description</span></span>
+### <a name="description"></a><span data-ttu-id="a006d-129">Description</span><span class="sxs-lookup"><span data-stu-id="a006d-129">Description</span></span>
 
-<span data-ttu-id="4bea9-130">El siguiente ejemplo de respuesta de error de cancelación de suscripción se produce en respuesta a un intento de cancelar la suscripción mediante un identificador de suscripción que no se encuentra en el almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="4bea9-130">The following example of an Unsubscribe error response occurs in response to an attempt to unsubscribe by using a subscription identifier that cannot be located in the Exchange store.</span></span>
+<span data-ttu-id="a006d-130">El siguiente ejemplo de respuesta de error de cancelación de suscripción se produce en respuesta a un intento de cancelar la suscripción mediante un identificador de suscripción que no se encuentra en el almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="a006d-130">The following example of an Unsubscribe error response occurs in response to an attempt to unsubscribe by using a subscription identifier that cannot be located in the Exchange store.</span></span>
   
-### <a name="code"></a><span data-ttu-id="4bea9-131">Código</span><span class="sxs-lookup"><span data-stu-id="4bea9-131">Code</span></span>
+### <a name="code"></a><span data-ttu-id="a006d-131">Código</span><span class="sxs-lookup"><span data-stu-id="a006d-131">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -129,27 +129,27 @@ ms.locfileid: "44468029"
 </soap:Envelope>
 ```
 
-### <a name="unsubscribe-error-response-elements"></a><span data-ttu-id="4bea9-132">Elementos de respuesta de error de cancelación de suscripción</span><span class="sxs-lookup"><span data-stu-id="4bea9-132">Unsubscribe Error response elements</span></span>
+### <a name="unsubscribe-error-response-elements"></a><span data-ttu-id="a006d-132">Elementos de respuesta de error de cancelación de suscripción</span><span class="sxs-lookup"><span data-stu-id="a006d-132">Unsubscribe Error response elements</span></span>
 
-<span data-ttu-id="4bea9-133">Los siguientes elementos se usan en la respuesta de error:</span><span class="sxs-lookup"><span data-stu-id="4bea9-133">The following elements are used in the error response:</span></span>
+<span data-ttu-id="a006d-133">Los siguientes elementos se usan en la respuesta de error:</span><span class="sxs-lookup"><span data-stu-id="a006d-133">The following elements are used in the error response:</span></span>
   
-- [<span data-ttu-id="4bea9-134">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="4bea9-134">ServerVersionInfo</span></span>](serverversioninfo.md)
+- [<span data-ttu-id="a006d-134">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="a006d-134">ServerVersionInfo</span></span>](serverversioninfo.md)
     
-- [<span data-ttu-id="4bea9-135">UnsubscribeResponse</span><span class="sxs-lookup"><span data-stu-id="4bea9-135">UnsubscribeResponse</span></span>](unsubscriberesponse.md)
+- [<span data-ttu-id="a006d-135">UnsubscribeResponse</span><span class="sxs-lookup"><span data-stu-id="a006d-135">UnsubscribeResponse</span></span>](unsubscriberesponse.md)
     
-- [<span data-ttu-id="4bea9-136">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="4bea9-136">ResponseMessages</span></span>](responsemessages.md)
+- [<span data-ttu-id="a006d-136">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="a006d-136">ResponseMessages</span></span>](responsemessages.md)
     
-- [<span data-ttu-id="4bea9-137">UnsubscribeResponseMessage</span><span class="sxs-lookup"><span data-stu-id="4bea9-137">UnsubscribeResponseMessage</span></span>](unsubscriberesponsemessage.md)
+- [<span data-ttu-id="a006d-137">UnsubscribeResponseMessage</span><span class="sxs-lookup"><span data-stu-id="a006d-137">UnsubscribeResponseMessage</span></span>](unsubscriberesponsemessage.md)
     
-- [<span data-ttu-id="4bea9-138">MessageText</span><span class="sxs-lookup"><span data-stu-id="4bea9-138">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="a006d-138">MessageText</span><span class="sxs-lookup"><span data-stu-id="a006d-138">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="4bea9-139">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="4bea9-139">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="a006d-139">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="a006d-139">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="4bea9-140">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="4bea9-140">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="a006d-140">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="a006d-140">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-## <a name="see-also"></a><span data-ttu-id="4bea9-141">Vea también</span><span class="sxs-lookup"><span data-stu-id="4bea9-141">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a006d-141">Vea también</span><span class="sxs-lookup"><span data-stu-id="a006d-141">See also</span></span>
 
-- [<span data-ttu-id="4bea9-142">Operación subscribe</span><span class="sxs-lookup"><span data-stu-id="4bea9-142">Subscribe operation</span></span>](subscribe-operation.md)
-- [<span data-ttu-id="4bea9-143">Operación GetEvents</span><span class="sxs-lookup"><span data-stu-id="4bea9-143">GetEvents operation</span></span>](getevents-operation.md)
-- [<span data-ttu-id="4bea9-144">Uso de suscripciones de extracción</span><span class="sxs-lookup"><span data-stu-id="4bea9-144">Using Pull Subscriptions</span></span>](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
+- [<span data-ttu-id="a006d-142">Operación subscribe</span><span class="sxs-lookup"><span data-stu-id="a006d-142">Subscribe operation</span></span>](subscribe-operation.md)
+- [<span data-ttu-id="a006d-143">Operación GetEvents</span><span class="sxs-lookup"><span data-stu-id="a006d-143">GetEvents operation</span></span>](getevents-operation.md)
+- [<span data-ttu-id="a006d-144">Uso de suscripciones de extracción</span><span class="sxs-lookup"><span data-stu-id="a006d-144">Using Pull Subscriptions</span></span>](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
 

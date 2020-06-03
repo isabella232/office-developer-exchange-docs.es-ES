@@ -16,20 +16,20 @@ ms.openlocfilehash: 18af810160e72856599f296c4faa83cf9c73c393
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467959"
 ---
-# <a name="playonphone-operation-ews"></a><span data-ttu-id="7c19e-103">Operación reproducir (EWS)</span><span class="sxs-lookup"><span data-stu-id="7c19e-103">PlayOnPhone operation (EWS)</span></span>
+# <a name="playonphone-operation-ews"></a><span data-ttu-id="025d5-103">Operación reproducir (EWS)</span><span class="sxs-lookup"><span data-stu-id="025d5-103">PlayOnPhone operation (EWS)</span></span>
 
-<span data-ttu-id="7c19e-104">La operación **reproducir** inicia una llamada saliente y reproduce un mensaje a través del teléfono.</span><span class="sxs-lookup"><span data-stu-id="7c19e-104">The **PlayOnPhone** operation initiates an outbound call and plays a message over the telephone.</span></span> 
+<span data-ttu-id="025d5-104">La operación **reproducir** inicia una llamada saliente y reproduce un mensaje a través del teléfono.</span><span class="sxs-lookup"><span data-stu-id="025d5-104">The **PlayOnPhone** operation initiates an outbound call and plays a message over the telephone.</span></span> 
   
-## <a name="playonphone-request-example"></a><span data-ttu-id="7c19e-105">Ejemplo de solicitud reproducir</span><span class="sxs-lookup"><span data-stu-id="7c19e-105">PlayOnPhone request example</span></span>
+## <a name="playonphone-request-example"></a><span data-ttu-id="025d5-105">Ejemplo de solicitud reproducir</span><span class="sxs-lookup"><span data-stu-id="025d5-105">PlayOnPhone request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="7c19e-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="7c19e-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="025d5-106">Description</span><span class="sxs-lookup"><span data-stu-id="025d5-106">Description</span></span>
 
-<span data-ttu-id="7c19e-107">El siguiente ejemplo de una solicitud **reproducir** muestra cómo crear una solicitud para reproducir un mensaje en un teléfono.</span><span class="sxs-lookup"><span data-stu-id="7c19e-107">The following example of a **PlayOnPhone** request shows how to form a request to play a message on a phone.</span></span> 
+<span data-ttu-id="025d5-107">El siguiente ejemplo de una solicitud **reproducir** muestra cómo crear una solicitud para reproducir un mensaje en un teléfono.</span><span class="sxs-lookup"><span data-stu-id="025d5-107">The following example of a **PlayOnPhone** request shows how to form a request to play a message on a phone.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="7c19e-108">Código</span><span class="sxs-lookup"><span data-stu-id="7c19e-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="025d5-108">Código</span><span class="sxs-lookup"><span data-stu-id="025d5-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -50,13 +50,13 @@ ms.locfileid: "44467959"
 </soap:Envelope>
 ```
 
-## <a name="playonphone-response-example"></a><span data-ttu-id="7c19e-109">Ejemplo de respuesta reproducir</span><span class="sxs-lookup"><span data-stu-id="7c19e-109">PlayOnPhone response example</span></span>
+## <a name="playonphone-response-example"></a><span data-ttu-id="025d5-109">Ejemplo de respuesta reproducir</span><span class="sxs-lookup"><span data-stu-id="025d5-109">PlayOnPhone response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="7c19e-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="7c19e-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="025d5-110">Description</span><span class="sxs-lookup"><span data-stu-id="025d5-110">Description</span></span>
 
-<span data-ttu-id="7c19e-111">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **reproducir** .</span><span class="sxs-lookup"><span data-stu-id="7c19e-111">The following example shows a successful response to the **PlayOnPhone** request.</span></span> 
+<span data-ttu-id="025d5-111">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **reproducir** .</span><span class="sxs-lookup"><span data-stu-id="025d5-111">The following example shows a successful response to the **PlayOnPhone** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="7c19e-112">Código</span><span class="sxs-lookup"><span data-stu-id="7c19e-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="025d5-112">Código</span><span class="sxs-lookup"><span data-stu-id="025d5-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,8 +83,8 @@ ms.locfileid: "44467959"
 </s:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="7c19e-113">Vea también</span><span class="sxs-lookup"><span data-stu-id="7c19e-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="025d5-113">Vea también</span><span class="sxs-lookup"><span data-stu-id="025d5-113">See also</span></span>
 
-- [<span data-ttu-id="7c19e-114">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="7c19e-114">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
-- [<span data-ttu-id="7c19e-115">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="7c19e-115">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="025d5-114">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="025d5-114">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+- [<span data-ttu-id="025d5-115">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="025d5-115">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
