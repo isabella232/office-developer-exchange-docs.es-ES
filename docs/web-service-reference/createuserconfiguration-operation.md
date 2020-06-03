@@ -16,20 +16,20 @@ ms.openlocfilehash: 0c9233146d21c7014be15896426b968106485200
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463786"
 ---
-# <a name="createuserconfiguration-operation"></a><span data-ttu-id="4bc98-103">Operación CreateUserConfiguration</span><span class="sxs-lookup"><span data-stu-id="4bc98-103">CreateUserConfiguration operation</span></span>
+# <a name="createuserconfiguration-operation"></a><span data-ttu-id="e6ea3-103">Operación CreateUserConfiguration</span><span class="sxs-lookup"><span data-stu-id="e6ea3-103">CreateUserConfiguration operation</span></span>
 
-<span data-ttu-id="4bc98-104">La operación **CreateUserConfiguration** crea un objeto de configuración de usuario en una carpeta.</span><span class="sxs-lookup"><span data-stu-id="4bc98-104">The **CreateUserConfiguration** operation creates a user configuration object on a folder.</span></span> 
+<span data-ttu-id="e6ea3-104">La operación **CreateUserConfiguration** crea un objeto de configuración de usuario en una carpeta.</span><span class="sxs-lookup"><span data-stu-id="e6ea3-104">The **CreateUserConfiguration** operation creates a user configuration object on a folder.</span></span> 
   
-## <a name="createuserconfiguration-request-example"></a><span data-ttu-id="4bc98-105">Ejemplo de solicitud CreateUserConfiguration</span><span class="sxs-lookup"><span data-stu-id="4bc98-105">CreateUserConfiguration request example</span></span>
+## <a name="createuserconfiguration-request-example"></a><span data-ttu-id="e6ea3-105">Ejemplo de solicitud CreateUserConfiguration</span><span class="sxs-lookup"><span data-stu-id="e6ea3-105">CreateUserConfiguration request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="4bc98-106">Descripción</span><span class="sxs-lookup"><span data-stu-id="4bc98-106">Description</span></span>
+### <a name="description"></a><span data-ttu-id="e6ea3-106">Description</span><span class="sxs-lookup"><span data-stu-id="e6ea3-106">Description</span></span>
 
-<span data-ttu-id="4bc98-107">El siguiente ejemplo de una solicitud **CreateUserConfiguration** muestra cómo crear una solicitud para crear un objeto de configuración de usuario en la carpeta Borradores.</span><span class="sxs-lookup"><span data-stu-id="4bc98-107">The following example of a **CreateUserConfiguration** request shows how to form a request to create a user configuration object on the Drafts folder.</span></span> 
+<span data-ttu-id="e6ea3-107">El siguiente ejemplo de una solicitud **CreateUserConfiguration** muestra cómo crear una solicitud para crear un objeto de configuración de usuario en la carpeta Borradores.</span><span class="sxs-lookup"><span data-stu-id="e6ea3-107">The following example of a **CreateUserConfiguration** request shows how to form a request to create a user configuration object on the Drafts folder.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="4bc98-108">Código</span><span class="sxs-lookup"><span data-stu-id="4bc98-108">Code</span></span>
+### <a name="code"></a><span data-ttu-id="e6ea3-108">Código</span><span class="sxs-lookup"><span data-stu-id="e6ea3-108">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -67,13 +67,13 @@ ms.locfileid: "44463786"
 </soap:Envelope>
 ```
 
-## <a name="createuserconfiguration-response-example"></a><span data-ttu-id="4bc98-109">Ejemplo de respuesta CreateUserConfiguration</span><span class="sxs-lookup"><span data-stu-id="4bc98-109">CreateUserConfiguration response example</span></span>
+## <a name="createuserconfiguration-response-example"></a><span data-ttu-id="e6ea3-109">Ejemplo de respuesta CreateUserConfiguration</span><span class="sxs-lookup"><span data-stu-id="e6ea3-109">CreateUserConfiguration response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="4bc98-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="4bc98-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="e6ea3-110">Description</span><span class="sxs-lookup"><span data-stu-id="e6ea3-110">Description</span></span>
 
-<span data-ttu-id="4bc98-111">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **CreateUserConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="4bc98-111">The following example shows a successful response to the **CreateUserConfiguration** request.</span></span> 
+<span data-ttu-id="e6ea3-111">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **CreateUserConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="e6ea3-111">The following example shows a successful response to the **CreateUserConfiguration** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="4bc98-112">Código</span><span class="sxs-lookup"><span data-stu-id="4bc98-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="e6ea3-112">Código</span><span class="sxs-lookup"><span data-stu-id="e6ea3-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -103,11 +103,11 @@ ms.locfileid: "44463786"
 </s:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="4bc98-113">Vea también</span><span class="sxs-lookup"><span data-stu-id="4bc98-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e6ea3-113">Vea también</span><span class="sxs-lookup"><span data-stu-id="e6ea3-113">See also</span></span>
 
 
 
-[<span data-ttu-id="4bc98-114">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="4bc98-114">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+[<span data-ttu-id="e6ea3-114">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="e6ea3-114">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
   
-- [<span data-ttu-id="4bc98-115">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="4bc98-115">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="e6ea3-115">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="e6ea3-115">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 

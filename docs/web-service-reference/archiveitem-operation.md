@@ -12,38 +12,38 @@ ms.openlocfilehash: d1e18122e67c36babbc8bf01d305309e2b17b568
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463436"
 ---
-# <a name="archiveitem-operation"></a><span data-ttu-id="9c83e-103">Operación ArchiveItem</span><span class="sxs-lookup"><span data-stu-id="9c83e-103">ArchiveItem operation</span></span>
+# <a name="archiveitem-operation"></a><span data-ttu-id="6fb6d-103">Operación ArchiveItem</span><span class="sxs-lookup"><span data-stu-id="6fb6d-103">ArchiveItem operation</span></span>
 
-<span data-ttu-id="9c83e-104">Buscar información sobre la operación de EWS de **ArchiveItem** .</span><span class="sxs-lookup"><span data-stu-id="9c83e-104">Find information about the **ArchiveItem** EWS operation.</span></span> 
+<span data-ttu-id="6fb6d-104">Buscar información sobre la operación de EWS de **ArchiveItem** .</span><span class="sxs-lookup"><span data-stu-id="6fb6d-104">Find information about the **ArchiveItem** EWS operation.</span></span> 
   
-<span data-ttu-id="9c83e-105">La operación **ArchiveItem** mueve un elemento al buzón de archivo del usuario del buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="9c83e-105">The **ArchiveItem** operation moves an item into the mailbox user's archive mailbox.</span></span> 
+<span data-ttu-id="6fb6d-105">La operación **ArchiveItem** mueve un elemento al buzón de archivo del usuario del buzón de correo.</span><span class="sxs-lookup"><span data-stu-id="6fb6d-105">The **ArchiveItem** operation moves an item into the mailbox user's archive mailbox.</span></span> 
   
-<span data-ttu-id="9c83e-106">Esta operación se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="9c83e-106">This operation was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="6fb6d-106">Esta operación se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="6fb6d-106">This operation was introduced in Exchange Server 2013.</span></span>
   
-## <a name="using-the-archiveitem-operation"></a><span data-ttu-id="9c83e-107">Uso de la operación ArchiveItem</span><span class="sxs-lookup"><span data-stu-id="9c83e-107">Using the ArchiveItem operation</span></span>
+## <a name="using-the-archiveitem-operation"></a><span data-ttu-id="6fb6d-107">Uso de la operación ArchiveItem</span><span class="sxs-lookup"><span data-stu-id="6fb6d-107">Using the ArchiveItem operation</span></span>
 
-<span data-ttu-id="9c83e-108">La operación **ArchiveItem** toma dos argumentos en la solicitud que identifican los elementos que se van a mover al buzón de archivo y la carpeta de destino para esos elementos.</span><span class="sxs-lookup"><span data-stu-id="9c83e-108">The **ArchiveItem** operation takes two arguments in the request that identify the items to move to the archive mailbox and the destination folder for those items.</span></span> <span data-ttu-id="9c83e-109">Para que esta operación funcione, debe estar habilitado un buzón de archivo.</span><span class="sxs-lookup"><span data-stu-id="9c83e-109">An archive mailbox must be enabled in order for this operation to work.</span></span> <span data-ttu-id="9c83e-110">Para obtener información sobre cómo habilitar un buzón de archivo, consulte [Manage in-Place archiving](https://technet.microsoft.com/library/jj651146.aspx).</span><span class="sxs-lookup"><span data-stu-id="9c83e-110">For information about how to enable an archive mailbox, see [Manage In-Place Archives](https://technet.microsoft.com/library/jj651146.aspx).</span></span>
+<span data-ttu-id="6fb6d-108">La operación **ArchiveItem** toma dos argumentos en la solicitud que identifican los elementos que se van a mover al buzón de archivo y la carpeta de destino para esos elementos.</span><span class="sxs-lookup"><span data-stu-id="6fb6d-108">The **ArchiveItem** operation takes two arguments in the request that identify the items to move to the archive mailbox and the destination folder for those items.</span></span> <span data-ttu-id="6fb6d-109">Para que esta operación funcione, debe estar habilitado un buzón de archivo.</span><span class="sxs-lookup"><span data-stu-id="6fb6d-109">An archive mailbox must be enabled in order for this operation to work.</span></span> <span data-ttu-id="6fb6d-110">Para obtener información sobre cómo habilitar un buzón de archivo, consulte [Manage in-Place archiving](https://technet.microsoft.com/library/jj651146.aspx).</span><span class="sxs-lookup"><span data-stu-id="6fb6d-110">For information about how to enable an archive mailbox, see [Manage In-Place Archives](https://technet.microsoft.com/library/jj651146.aspx).</span></span>
   
-### <a name="archiveitem-operation-soap-headers"></a><span data-ttu-id="9c83e-111">Encabezados SOAP de operación ArchiveItem</span><span class="sxs-lookup"><span data-stu-id="9c83e-111">ArchiveItem operation SOAP headers</span></span>
+### <a name="archiveitem-operation-soap-headers"></a><span data-ttu-id="6fb6d-111">Encabezados SOAP de operación ArchiveItem</span><span class="sxs-lookup"><span data-stu-id="6fb6d-111">ArchiveItem operation SOAP headers</span></span>
 
-<span data-ttu-id="9c83e-112">La operación **ArchiveItem** puede usar los encabezados SOAP que se enumeran en la tabla siguiente.</span><span class="sxs-lookup"><span data-stu-id="9c83e-112">The **ArchiveItem** operation can use the SOAP headers that are listed in the following table.</span></span> 
+<span data-ttu-id="6fb6d-112">La operación **ArchiveItem** puede usar los encabezados SOAP que se enumeran en la tabla siguiente.</span><span class="sxs-lookup"><span data-stu-id="6fb6d-112">The **ArchiveItem** operation can use the SOAP headers that are listed in the following table.</span></span> 
   
-|<span data-ttu-id="9c83e-113">**Nombre de encabezado**</span><span class="sxs-lookup"><span data-stu-id="9c83e-113">**Header name**</span></span>|<span data-ttu-id="9c83e-114">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="9c83e-114">**Element**</span></span>|<span data-ttu-id="9c83e-115">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="9c83e-115">**Description**</span></span>|
+|<span data-ttu-id="6fb6d-113">**Nombre de encabezado**</span><span class="sxs-lookup"><span data-stu-id="6fb6d-113">**Header name**</span></span>|<span data-ttu-id="6fb6d-114">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="6fb6d-114">**Element**</span></span>|<span data-ttu-id="6fb6d-115">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="6fb6d-115">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="9c83e-116">**Suplantación**</span><span class="sxs-lookup"><span data-stu-id="9c83e-116">**Impersonation**</span></span> <br/> |[<span data-ttu-id="9c83e-117">ExchangeImpersonation</span><span class="sxs-lookup"><span data-stu-id="9c83e-117">ExchangeImpersonation</span></span>](exchangeimpersonation.md) <br/> |<span data-ttu-id="9c83e-118">Identifica al usuario que está suplantando la aplicación cliente.</span><span class="sxs-lookup"><span data-stu-id="9c83e-118">Identifies the user whom the client application is impersonating.</span></span> <span data-ttu-id="9c83e-119">Este encabezado se aplica a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="9c83e-119">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="9c83e-120">**MailboxCulture**</span><span class="sxs-lookup"><span data-stu-id="9c83e-120">**MailboxCulture**</span></span> <br/> |[<span data-ttu-id="9c83e-121">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="9c83e-121">MailboxCulture</span></span>](mailboxculture.md) <br/> |<span data-ttu-id="9c83e-122">Identifica la referencia cultural, tal y como se define en RFC 3066, **etiquetas para la identificación de idiomas**que se van a usar para obtener acceso al buzón.</span><span class="sxs-lookup"><span data-stu-id="9c83e-122">Identifies the culture, as defined in RFC 3066, **Tags for the Identification of Languages**, to be used to access the mailbox.</span></span> <span data-ttu-id="9c83e-123">Este encabezado se aplica a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="9c83e-123">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="9c83e-124">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="9c83e-124">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="9c83e-125">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="9c83e-125">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="9c83e-126">Identifica la versión del esquema para la solicitud de operación.</span><span class="sxs-lookup"><span data-stu-id="9c83e-126">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="9c83e-127">Este encabezado se aplica a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="9c83e-127">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="9c83e-128">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="9c83e-128">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="9c83e-129">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="9c83e-129">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="9c83e-130">Identifica la versión del servidor que respondió a la solicitud.</span><span class="sxs-lookup"><span data-stu-id="9c83e-130">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="9c83e-131">Este encabezado se aplica a una respuesta.</span><span class="sxs-lookup"><span data-stu-id="9c83e-131">This header is applicable to a response.</span></span>  <br/> |
+|<span data-ttu-id="6fb6d-116">**Suplantación**</span><span class="sxs-lookup"><span data-stu-id="6fb6d-116">**Impersonation**</span></span> <br/> |[<span data-ttu-id="6fb6d-117">ExchangeImpersonation</span><span class="sxs-lookup"><span data-stu-id="6fb6d-117">ExchangeImpersonation</span></span>](exchangeimpersonation.md) <br/> |<span data-ttu-id="6fb6d-118">Identifica al usuario que está suplantando la aplicación cliente.</span><span class="sxs-lookup"><span data-stu-id="6fb6d-118">Identifies the user whom the client application is impersonating.</span></span> <span data-ttu-id="6fb6d-119">Este encabezado se aplica a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="6fb6d-119">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="6fb6d-120">**MailboxCulture**</span><span class="sxs-lookup"><span data-stu-id="6fb6d-120">**MailboxCulture**</span></span> <br/> |[<span data-ttu-id="6fb6d-121">MailboxCulture</span><span class="sxs-lookup"><span data-stu-id="6fb6d-121">MailboxCulture</span></span>](mailboxculture.md) <br/> |<span data-ttu-id="6fb6d-122">Identifica la referencia cultural, tal y como se define en RFC 3066, **etiquetas para la identificación de idiomas**que se van a usar para obtener acceso al buzón.</span><span class="sxs-lookup"><span data-stu-id="6fb6d-122">Identifies the culture, as defined in RFC 3066, **Tags for the Identification of Languages**, to be used to access the mailbox.</span></span> <span data-ttu-id="6fb6d-123">Este encabezado se aplica a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="6fb6d-123">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="6fb6d-124">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="6fb6d-124">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="6fb6d-125">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="6fb6d-125">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="6fb6d-126">Identifica la versión del esquema para la solicitud de operación.</span><span class="sxs-lookup"><span data-stu-id="6fb6d-126">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="6fb6d-127">Este encabezado se aplica a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="6fb6d-127">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="6fb6d-128">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="6fb6d-128">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="6fb6d-129">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="6fb6d-129">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="6fb6d-130">Identifica la versión del servidor que respondió a la solicitud.</span><span class="sxs-lookup"><span data-stu-id="6fb6d-130">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="6fb6d-131">Este encabezado se aplica a una respuesta.</span><span class="sxs-lookup"><span data-stu-id="6fb6d-131">This header is applicable to a response.</span></span>  <br/> |
    
-## <a name="archiveitem-operation-request-example-move-an-item-to-the-archive-inbox-folder"></a><span data-ttu-id="9c83e-132">Ejemplo de solicitud de operación ArchiveItem: mover un elemento a la carpeta Bandeja de entrada de archivo</span><span class="sxs-lookup"><span data-stu-id="9c83e-132">ArchiveItem operation request example: Move an item to the archive inbox folder</span></span>
+## <a name="archiveitem-operation-request-example-move-an-item-to-the-archive-inbox-folder"></a><span data-ttu-id="6fb6d-132">Ejemplo de solicitud de operación ArchiveItem: mover un elemento a la carpeta Bandeja de entrada de archivo</span><span class="sxs-lookup"><span data-stu-id="6fb6d-132">ArchiveItem operation request example: Move an item to the archive inbox folder</span></span>
 
-<span data-ttu-id="9c83e-133">El siguiente ejemplo de una solicitud de operación de **ArchiveItem** muestra cómo mover un elemento a la carpeta Bandeja de entrada de archivo.</span><span class="sxs-lookup"><span data-stu-id="9c83e-133">The following example of an **ArchiveItem** operation request shows how to move an item to the archive Inbox folder.</span></span> 
+<span data-ttu-id="6fb6d-133">El siguiente ejemplo de una solicitud de operación de **ArchiveItem** muestra cómo mover un elemento a la carpeta Bandeja de entrada de archivo.</span><span class="sxs-lookup"><span data-stu-id="6fb6d-133">The following example of an **ArchiveItem** operation request shows how to move an item to the archive Inbox folder.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="9c83e-134">Todos los identificadores de elemento y las claves de cambio de este artículo se han reducido para preservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="9c83e-134">All item identifiers and change keys in this article have been shortened to preserve readability.</span></span> 
+> <span data-ttu-id="6fb6d-134">Todos los identificadores de elemento y las claves de cambio de este artículo se han reducido para preservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="6fb6d-134">All item identifiers and change keys in this article have been shortened to preserve readability.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -68,17 +68,17 @@ ms.locfileid: "44463436"
 </soap:Envelope>
 ```
 
-<span data-ttu-id="9c83e-135">El cuerpo SOAP de la solicitud contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="9c83e-135">The request SOAP body contains the following elements:</span></span>
+<span data-ttu-id="6fb6d-135">El cuerpo SOAP de la solicitud contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="6fb6d-135">The request SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="9c83e-136">ArchiveItem</span><span class="sxs-lookup"><span data-stu-id="9c83e-136">ArchiveItem</span></span>](archiveitem.md)    
-- [<span data-ttu-id="9c83e-137">ArchiveSourceFolderId</span><span class="sxs-lookup"><span data-stu-id="9c83e-137">ArchiveSourceFolderId</span></span>](archivesourcefolderid.md)    
-- [<span data-ttu-id="9c83e-138">DistinguishedFolderId</span><span class="sxs-lookup"><span data-stu-id="9c83e-138">DistinguishedFolderId</span></span>](distinguishedfolderid.md)    
-- [<span data-ttu-id="9c83e-139">ItemIds</span><span class="sxs-lookup"><span data-stu-id="9c83e-139">ItemIds</span></span>](itemids.md)   
-- [<span data-ttu-id="9c83e-140">ItemId</span><span class="sxs-lookup"><span data-stu-id="9c83e-140">ItemId</span></span>](itemid.md)
+- [<span data-ttu-id="6fb6d-136">ArchiveItem</span><span class="sxs-lookup"><span data-stu-id="6fb6d-136">ArchiveItem</span></span>](archiveitem.md)    
+- [<span data-ttu-id="6fb6d-137">ArchiveSourceFolderId</span><span class="sxs-lookup"><span data-stu-id="6fb6d-137">ArchiveSourceFolderId</span></span>](archivesourcefolderid.md)    
+- [<span data-ttu-id="6fb6d-138">DistinguishedFolderId</span><span class="sxs-lookup"><span data-stu-id="6fb6d-138">DistinguishedFolderId</span></span>](distinguishedfolderid.md)    
+- [<span data-ttu-id="6fb6d-139">ItemIds</span><span class="sxs-lookup"><span data-stu-id="6fb6d-139">ItemIds</span></span>](itemids.md)   
+- [<span data-ttu-id="6fb6d-140">ItemId</span><span class="sxs-lookup"><span data-stu-id="6fb6d-140">ItemId</span></span>](itemid.md)
     
-## <a name="successful-archiveitem-operation-response"></a><span data-ttu-id="9c83e-141">Respuesta de operación ArchiveItem correcta</span><span class="sxs-lookup"><span data-stu-id="9c83e-141">Successful ArchiveItem operation response</span></span>
+## <a name="successful-archiveitem-operation-response"></a><span data-ttu-id="6fb6d-141">Respuesta de operación ArchiveItem correcta</span><span class="sxs-lookup"><span data-stu-id="6fb6d-141">Successful ArchiveItem operation response</span></span>
 
-<span data-ttu-id="9c83e-142">En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación **ArchiveItem** para mover un elemento a un buzón de archivo.</span><span class="sxs-lookup"><span data-stu-id="9c83e-142">The following example shows a successful response to an **ArchiveItem** operation request to move an item to an archive mailbox.</span></span> 
+<span data-ttu-id="6fb6d-142">En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación **ArchiveItem** para mover un elemento a un buzón de archivo.</span><span class="sxs-lookup"><span data-stu-id="6fb6d-142">The following example shows a successful response to an **ArchiveItem** operation request to move an item to an archive mailbox.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -109,17 +109,17 @@ ms.locfileid: "44463436"
 </s:Envelope>
 ```
 
-<span data-ttu-id="9c83e-143">El cuerpo SOAP de respuesta contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="9c83e-143">The response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="6fb6d-143">El cuerpo SOAP de respuesta contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="6fb6d-143">The response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="9c83e-144">ArchiveItemResponse</span><span class="sxs-lookup"><span data-stu-id="9c83e-144">ArchiveItemResponse</span></span>](archiveitemresponse.md)    
-- [<span data-ttu-id="9c83e-145">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="9c83e-145">ResponseMessages</span></span>](responsemessages.md)   
-- [<span data-ttu-id="9c83e-146">ArchiveItemResponseMessage</span><span class="sxs-lookup"><span data-stu-id="9c83e-146">ArchiveItemResponseMessage</span></span>](archiveitemresponsemessage.md)    
-- [<span data-ttu-id="9c83e-147">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="9c83e-147">ResponseCode</span></span>](responsecode.md)    
-- [<span data-ttu-id="9c83e-148">Items</span><span class="sxs-lookup"><span data-stu-id="9c83e-148">Items</span></span>](items.md)
+- [<span data-ttu-id="6fb6d-144">ArchiveItemResponse</span><span class="sxs-lookup"><span data-stu-id="6fb6d-144">ArchiveItemResponse</span></span>](archiveitemresponse.md)    
+- [<span data-ttu-id="6fb6d-145">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="6fb6d-145">ResponseMessages</span></span>](responsemessages.md)   
+- [<span data-ttu-id="6fb6d-146">ArchiveItemResponseMessage</span><span class="sxs-lookup"><span data-stu-id="6fb6d-146">ArchiveItemResponseMessage</span></span>](archiveitemresponsemessage.md)    
+- [<span data-ttu-id="6fb6d-147">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="6fb6d-147">ResponseCode</span></span>](responsecode.md)    
+- [<span data-ttu-id="6fb6d-148">Items</span><span class="sxs-lookup"><span data-stu-id="6fb6d-148">Items</span></span>](items.md)
     
-## <a name="archiveitem-operation-error-response"></a><span data-ttu-id="9c83e-149">Respuesta de error de operación de ArchiveItem</span><span class="sxs-lookup"><span data-stu-id="9c83e-149">ArchiveItem operation error response</span></span>
+## <a name="archiveitem-operation-error-response"></a><span data-ttu-id="6fb6d-149">Respuesta de error de operación de ArchiveItem</span><span class="sxs-lookup"><span data-stu-id="6fb6d-149">ArchiveItem operation error response</span></span>
 
-<span data-ttu-id="9c83e-150">En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **ArchiveItem** .</span><span class="sxs-lookup"><span data-stu-id="9c83e-150">The following example shows an error response to an **ArchiveItem** operation request.</span></span> <span data-ttu-id="9c83e-151">Se trata de una respuesta a una solicitud válida para archivar un elemento cuando un buzón de archivo no está habilitado para un usuario.</span><span class="sxs-lookup"><span data-stu-id="9c83e-151">This is a response to a valid request to archive an item when an archive mailbox is not enabled for a user.</span></span> 
+<span data-ttu-id="6fb6d-150">En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **ArchiveItem** .</span><span class="sxs-lookup"><span data-stu-id="6fb6d-150">The following example shows an error response to an **ArchiveItem** operation request.</span></span> <span data-ttu-id="6fb6d-151">Se trata de una respuesta a una solicitud válida para archivar un elemento cuando un buzón de archivo no está habilitado para un usuario.</span><span class="sxs-lookup"><span data-stu-id="6fb6d-151">This is a response to a valid request to archive an item when an archive mailbox is not enabled for a user.</span></span> 
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -152,21 +152,21 @@ ms.locfileid: "44463436"
 </s:Envelope>
 ```
 
-<span data-ttu-id="9c83e-152">El cuerpo SOAP de respuesta de error contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="9c83e-152">The error response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="6fb6d-152">El cuerpo SOAP de respuesta de error contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="6fb6d-152">The error response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="9c83e-153">ArchiveItemResponse</span><span class="sxs-lookup"><span data-stu-id="9c83e-153">ArchiveItemResponse</span></span>](archiveitemresponse.md)    
-- [<span data-ttu-id="9c83e-154">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="9c83e-154">ResponseMessages</span></span>](responsemessages.md)    
-- [<span data-ttu-id="9c83e-155">ArchiveItemResponseMessage</span><span class="sxs-lookup"><span data-stu-id="9c83e-155">ArchiveItemResponseMessage</span></span>](archiveitemresponsemessage.md)    
-- [<span data-ttu-id="9c83e-156">MessageText</span><span class="sxs-lookup"><span data-stu-id="9c83e-156">MessageText</span></span>](messagetext.md)    
-- [<span data-ttu-id="9c83e-157">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="9c83e-157">ResponseCode</span></span>](responsecode.md)    
-- [<span data-ttu-id="9c83e-158">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="9c83e-158">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)    
-- [<span data-ttu-id="9c83e-159">Items</span><span class="sxs-lookup"><span data-stu-id="9c83e-159">Items</span></span>](items.md)
+- [<span data-ttu-id="6fb6d-153">ArchiveItemResponse</span><span class="sxs-lookup"><span data-stu-id="6fb6d-153">ArchiveItemResponse</span></span>](archiveitemresponse.md)    
+- [<span data-ttu-id="6fb6d-154">ResponseMessages</span><span class="sxs-lookup"><span data-stu-id="6fb6d-154">ResponseMessages</span></span>](responsemessages.md)    
+- [<span data-ttu-id="6fb6d-155">ArchiveItemResponseMessage</span><span class="sxs-lookup"><span data-stu-id="6fb6d-155">ArchiveItemResponseMessage</span></span>](archiveitemresponsemessage.md)    
+- [<span data-ttu-id="6fb6d-156">MessageText</span><span class="sxs-lookup"><span data-stu-id="6fb6d-156">MessageText</span></span>](messagetext.md)    
+- [<span data-ttu-id="6fb6d-157">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="6fb6d-157">ResponseCode</span></span>](responsecode.md)    
+- [<span data-ttu-id="6fb6d-158">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="6fb6d-158">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)    
+- [<span data-ttu-id="6fb6d-159">Items</span><span class="sxs-lookup"><span data-stu-id="6fb6d-159">Items</span></span>](items.md)
     
-<span data-ttu-id="9c83e-160">Para obtener los códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).</span><span class="sxs-lookup"><span data-stu-id="9c83e-160">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
+<span data-ttu-id="6fb6d-160">Para obtener los códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).</span><span class="sxs-lookup"><span data-stu-id="6fb6d-160">For additional error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="9c83e-161">Vea también</span><span class="sxs-lookup"><span data-stu-id="9c83e-161">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6fb6d-161">Vea también</span><span class="sxs-lookup"><span data-stu-id="6fb6d-161">See also</span></span>
 
-- [<span data-ttu-id="9c83e-162">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="9c83e-162">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md) 
-- [<span data-ttu-id="9c83e-163">Archivado en EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="9c83e-163">Archiving in EWS in Exchange</span></span>](https://msdn.microsoft.com/library/78ae179b-ae4f-4f64-911a-e0c70e0fa314%28Office.15%29.aspx)
+- [<span data-ttu-id="6fb6d-162">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="6fb6d-162">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md) 
+- [<span data-ttu-id="6fb6d-163">Archivado en EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="6fb6d-163">Archiving in EWS in Exchange</span></span>](https://msdn.microsoft.com/library/78ae179b-ae4f-4f64-911a-e0c70e0fa314%28Office.15%29.aspx)
     
 

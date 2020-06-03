@@ -15,24 +15,24 @@ ms.openlocfilehash: 8de64ce7a47e9c426f8eb9298e1ca00508fb616c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465495"
 ---
-# <a name="resetpin-operation-um-web-service"></a><span data-ttu-id="fe217-103">Operación ResetPIN (servicio Web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="fe217-103">ResetPIN operation (UM web service)</span></span>
+# <a name="resetpin-operation-um-web-service"></a><span data-ttu-id="7e1ae-103">Operación ResetPIN (servicio Web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="7e1ae-103">ResetPIN operation (UM web service)</span></span>
 
-<span data-ttu-id="fe217-104">La operación ResetPIN cambia el PIN (TUI contraseña) a un nuevo valor aleatorio.</span><span class="sxs-lookup"><span data-stu-id="fe217-104">The ResetPIN operation changes the PIN (TUI password) to a new random value.</span></span>
+<span data-ttu-id="7e1ae-104">La operación ResetPIN cambia el PIN (TUI contraseña) a un nuevo valor aleatorio.</span><span class="sxs-lookup"><span data-stu-id="7e1ae-104">The ResetPIN operation changes the PIN (TUI password) to a new random value.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="fe217-105">Comentarios</span><span class="sxs-lookup"><span data-stu-id="fe217-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7e1ae-105">Comentarios</span><span class="sxs-lookup"><span data-stu-id="7e1ae-105">Remarks</span></span>
 
-<span data-ttu-id="fe217-106">La operación ResetPIN crea un nuevo PIN en función de las directivas de PIN.</span><span class="sxs-lookup"><span data-stu-id="fe217-106">The ResetPIN operation creates a new PIN based on the PIN policies.</span></span> <span data-ttu-id="fe217-107">Si la operación se realiza correctamente, se envía un mensaje de correo electrónico que contiene el nuevo PIN al buzón del usuario.</span><span class="sxs-lookup"><span data-stu-id="fe217-107">If the operation is successful, an e-mail message that contains the new PIN is sent to the mailbox of the user.</span></span> <span data-ttu-id="fe217-108">Si se produce un error en la operación, se producirá una excepción que contiene información sobre el error.</span><span class="sxs-lookup"><span data-stu-id="fe217-108">If the operation fails, it will throw an exception that contains information about the failure.</span></span>
+<span data-ttu-id="7e1ae-106">La operación ResetPIN crea un nuevo PIN en función de las directivas de PIN.</span><span class="sxs-lookup"><span data-stu-id="7e1ae-106">The ResetPIN operation creates a new PIN based on the PIN policies.</span></span> <span data-ttu-id="7e1ae-107">Si la operación se realiza correctamente, se envía un mensaje de correo electrónico que contiene el nuevo PIN al buzón del usuario.</span><span class="sxs-lookup"><span data-stu-id="7e1ae-107">If the operation is successful, an e-mail message that contains the new PIN is sent to the mailbox of the user.</span></span> <span data-ttu-id="7e1ae-108">Si se produce un error en la operación, se producirá una excepción que contiene información sobre el error.</span><span class="sxs-lookup"><span data-stu-id="7e1ae-108">If the operation fails, it will throw an exception that contains information about the failure.</span></span>
   
-## <a name="resetpin-request-example"></a><span data-ttu-id="fe217-109">Ejemplo de solicitud ResetPIN</span><span class="sxs-lookup"><span data-stu-id="fe217-109">ResetPIN request example</span></span>
+## <a name="resetpin-request-example"></a><span data-ttu-id="7e1ae-109">Ejemplo de solicitud ResetPIN</span><span class="sxs-lookup"><span data-stu-id="7e1ae-109">ResetPIN request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="fe217-110">Descripción</span><span class="sxs-lookup"><span data-stu-id="fe217-110">Description</span></span>
+### <a name="description"></a><span data-ttu-id="7e1ae-110">Description</span><span class="sxs-lookup"><span data-stu-id="7e1ae-110">Description</span></span>
 
-<span data-ttu-id="fe217-111">El siguiente ejemplo de una solicitud ResetPIN muestra cómo crear una solicitud para restablecer el PIN de un buzón.</span><span class="sxs-lookup"><span data-stu-id="fe217-111">The following example of a ResetPIN request shows how to form a request to reset the PIN for a mailbox.</span></span>
+<span data-ttu-id="7e1ae-111">El siguiente ejemplo de una solicitud ResetPIN muestra cómo crear una solicitud para restablecer el PIN de un buzón.</span><span class="sxs-lookup"><span data-stu-id="7e1ae-111">The following example of a ResetPIN request shows how to form a request to reset the PIN for a mailbox.</span></span>
   
-### <a name="code"></a><span data-ttu-id="fe217-112">Código</span><span class="sxs-lookup"><span data-stu-id="fe217-112">Code</span></span>
+### <a name="code"></a><span data-ttu-id="7e1ae-112">Código</span><span class="sxs-lookup"><span data-stu-id="7e1ae-112">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -43,13 +43,13 @@ ms.locfileid: "44465495"
 </soap:Envelope>
 ```
 
-## <a name="successful-resetpin-response-example"></a><span data-ttu-id="fe217-113">Ejemplo de respuesta ResetPIN correcta</span><span class="sxs-lookup"><span data-stu-id="fe217-113">Successful ResetPIN response example</span></span>
+## <a name="successful-resetpin-response-example"></a><span data-ttu-id="7e1ae-113">Ejemplo de respuesta ResetPIN correcta</span><span class="sxs-lookup"><span data-stu-id="7e1ae-113">Successful ResetPIN response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="fe217-114">Descripción</span><span class="sxs-lookup"><span data-stu-id="fe217-114">Description</span></span>
+### <a name="description"></a><span data-ttu-id="7e1ae-114">Description</span><span class="sxs-lookup"><span data-stu-id="7e1ae-114">Description</span></span>
 
-<span data-ttu-id="fe217-115">El siguiente ejemplo de una respuesta de ResetPIN muestra una respuesta a la solicitud ResetPIN.</span><span class="sxs-lookup"><span data-stu-id="fe217-115">The following example of a ResetPIN response shows a response to the ResetPIN request.</span></span>
+<span data-ttu-id="7e1ae-115">El siguiente ejemplo de una respuesta de ResetPIN muestra una respuesta a la solicitud ResetPIN.</span><span class="sxs-lookup"><span data-stu-id="7e1ae-115">The following example of a ResetPIN response shows a response to the ResetPIN request.</span></span>
   
-### <a name="code"></a><span data-ttu-id="fe217-116">Código</span><span class="sxs-lookup"><span data-stu-id="fe217-116">Code</span></span>
+### <a name="code"></a><span data-ttu-id="7e1ae-116">Código</span><span class="sxs-lookup"><span data-stu-id="7e1ae-116">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -60,11 +60,11 @@ ms.locfileid: "44465495"
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="fe217-117">Vea también</span><span class="sxs-lookup"><span data-stu-id="fe217-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7e1ae-117">Vea también</span><span class="sxs-lookup"><span data-stu-id="7e1ae-117">See also</span></span>
 
 
 
-[<span data-ttu-id="fe217-118">ResetPIN (servicio Web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="fe217-118">ResetPIN (UM web service)</span></span>](resetpin-um-web-service.md)
+[<span data-ttu-id="7e1ae-118">ResetPIN (servicio Web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="7e1ae-118">ResetPIN (UM web service)</span></span>](resetpin-um-web-service.md)
   
-[<span data-ttu-id="fe217-119">ResetPINResponse (servicio Web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="fe217-119">ResetPINResponse (UM web service)</span></span>](resetpinresponse-um-web-service.md)
+[<span data-ttu-id="7e1ae-119">ResetPINResponse (servicio Web de mensajería unificada)</span><span class="sxs-lookup"><span data-stu-id="7e1ae-119">ResetPINResponse (UM web service)</span></span>](resetpinresponse-um-web-service.md)
 

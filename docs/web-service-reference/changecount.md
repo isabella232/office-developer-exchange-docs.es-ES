@@ -16,52 +16,52 @@ ms.openlocfilehash: faf653fb0c594cbb79f52e1abdac50e542dcb92a
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463324"
 ---
-# <a name="changecount"></a><span data-ttu-id="ef90a-103">ChangeCount</span><span class="sxs-lookup"><span data-stu-id="ef90a-103">ChangeCount</span></span>
+# <a name="changecount"></a><span data-ttu-id="b87c8-103">ChangeCount</span><span class="sxs-lookup"><span data-stu-id="b87c8-103">ChangeCount</span></span>
 
-<span data-ttu-id="ef90a-104">El elemento **ChangeCount** especifica la versión de la tarea.</span><span class="sxs-lookup"><span data-stu-id="ef90a-104">The **ChangeCount** element specifies the version of the task.</span></span> 
+<span data-ttu-id="b87c8-104">El elemento **ChangeCount** especifica la versión de la tarea.</span><span class="sxs-lookup"><span data-stu-id="b87c8-104">The **ChangeCount** element specifies the version of the task.</span></span> 
   
 ```xml
 <ChangeCount/>
 ```
 
- <span data-ttu-id="ef90a-105">**int**</span><span class="sxs-lookup"><span data-stu-id="ef90a-105">**int**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="ef90a-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="ef90a-106">Attributes and elements</span></span>
+ <span data-ttu-id="b87c8-105">**int**</span><span class="sxs-lookup"><span data-stu-id="b87c8-105">**int**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="b87c8-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="b87c8-106">Attributes and elements</span></span>
 
-<span data-ttu-id="ef90a-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="ef90a-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="b87c8-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="b87c8-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="ef90a-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="ef90a-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="b87c8-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="b87c8-108">Attributes</span></span>
 
-<span data-ttu-id="ef90a-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="ef90a-109">None.</span></span>
+<span data-ttu-id="b87c8-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="b87c8-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="ef90a-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="ef90a-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="b87c8-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="b87c8-110">Child elements</span></span>
 
-<span data-ttu-id="ef90a-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="ef90a-111">None.</span></span>
+<span data-ttu-id="b87c8-111">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="b87c8-111">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="ef90a-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="ef90a-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="b87c8-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="b87c8-112">Parent elements</span></span>
 
-|<span data-ttu-id="ef90a-113">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="ef90a-113">**Element**</span></span>|<span data-ttu-id="ef90a-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="ef90a-114">**Description**</span></span>|
+|<span data-ttu-id="b87c8-113">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="b87c8-113">**Element**</span></span>|<span data-ttu-id="b87c8-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="b87c8-114">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="ef90a-115">Tarea</span><span class="sxs-lookup"><span data-stu-id="ef90a-115">Task</span></span>](task.md) <br/> |<span data-ttu-id="ef90a-116">Representa una tarea del almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="ef90a-116">Represents a task in the Exchange store.</span></span>  <br/> |
+|[<span data-ttu-id="b87c8-115">Tarea</span><span class="sxs-lookup"><span data-stu-id="b87c8-115">Task</span></span>](task.md) <br/> |<span data-ttu-id="b87c8-116">Representa una tarea del almacén de Exchange.</span><span class="sxs-lookup"><span data-stu-id="b87c8-116">Represents a task in the Exchange store.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="ef90a-117">Comentarios</span><span class="sxs-lookup"><span data-stu-id="ef90a-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b87c8-117">Comentarios</span><span class="sxs-lookup"><span data-stu-id="b87c8-117">Remarks</span></span>
 
-<span data-ttu-id="ef90a-118">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="ef90a-118">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
+<span data-ttu-id="b87c8-118">El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.</span><span class="sxs-lookup"><span data-stu-id="b87c8-118">The schema that describes this element is located in the EWS virtual directory of the computer that is running MicrosoftExchange Server 2007 that has the Client Access server role installed.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="ef90a-119">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="ef90a-119">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="b87c8-119">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="b87c8-119">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="ef90a-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="ef90a-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="ef90a-121">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="ef90a-121">Schema name</span></span>  <br/> |<span data-ttu-id="ef90a-122">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="ef90a-122">Types schema</span></span>  <br/> |
-|<span data-ttu-id="ef90a-123">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="ef90a-123">Validation file</span></span>  <br/> |<span data-ttu-id="ef90a-124">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="ef90a-124">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="ef90a-125">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="ef90a-125">Can be empty</span></span>  <br/> |<span data-ttu-id="ef90a-126">Falso</span><span class="sxs-lookup"><span data-stu-id="ef90a-126">False</span></span>  <br/> |
+|<span data-ttu-id="b87c8-120">Namespace</span><span class="sxs-lookup"><span data-stu-id="b87c8-120">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="b87c8-121">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="b87c8-121">Schema name</span></span>  <br/> |<span data-ttu-id="b87c8-122">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="b87c8-122">Types schema</span></span>  <br/> |
+|<span data-ttu-id="b87c8-123">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="b87c8-123">Validation file</span></span>  <br/> |<span data-ttu-id="b87c8-124">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="b87c8-124">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="b87c8-125">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="b87c8-125">Can be empty</span></span>  <br/> |<span data-ttu-id="b87c8-126">Falso</span><span class="sxs-lookup"><span data-stu-id="b87c8-126">False</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="ef90a-127">Vea también</span><span class="sxs-lookup"><span data-stu-id="ef90a-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b87c8-127">Vea también</span><span class="sxs-lookup"><span data-stu-id="b87c8-127">See also</span></span>
 
 
 
-- [<span data-ttu-id="ef90a-128">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="ef90a-128">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="b87c8-128">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="b87c8-128">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
