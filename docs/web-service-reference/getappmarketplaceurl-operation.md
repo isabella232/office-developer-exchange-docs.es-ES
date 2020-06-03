@@ -12,33 +12,33 @@ ms.openlocfilehash: 6797af44c3aaa6653c440b3d53a282d8c90a4381
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459528"
 ---
-# <a name="getappmarketplaceurl-operation"></a><span data-ttu-id="cd79c-103">Operación GetAppMarketplaceUrl</span><span class="sxs-lookup"><span data-stu-id="cd79c-103">GetAppMarketplaceUrl operation</span></span>
+# <a name="getappmarketplaceurl-operation"></a><span data-ttu-id="fbc57-103">Operación GetAppMarketplaceUrl</span><span class="sxs-lookup"><span data-stu-id="fbc57-103">GetAppMarketplaceUrl operation</span></span>
 
-<span data-ttu-id="cd79c-104">Buscar información sobre la operación de EWS de **GetAppMarketplaceUrl** .</span><span class="sxs-lookup"><span data-stu-id="cd79c-104">Find information about the **GetAppMarketplaceUrl** EWS operation.</span></span> 
+<span data-ttu-id="fbc57-104">Buscar información sobre la operación de EWS de **GetAppMarketplaceUrl** .</span><span class="sxs-lookup"><span data-stu-id="fbc57-104">Find information about the **GetAppMarketplaceUrl** EWS operation.</span></span> 
   
-<span data-ttu-id="cd79c-105">La operación **GetAppMarketplaceUrl** recupera la dirección URL del Marketplace de aplicaciones que un cliente puede visitar para adquirir aplicaciones que se van a instalar en un buzón.</span><span class="sxs-lookup"><span data-stu-id="cd79c-105">The **GetAppMarketplaceUrl** operation retrieves the URL for the app marketplace that a client can visit to acquire apps to install in a mailbox.</span></span> 
+<span data-ttu-id="fbc57-105">La operación **GetAppMarketplaceUrl** recupera la dirección URL del Marketplace de aplicaciones que un cliente puede visitar para adquirir aplicaciones que se van a instalar en un buzón.</span><span class="sxs-lookup"><span data-stu-id="fbc57-105">The **GetAppMarketplaceUrl** operation retrieves the URL for the app marketplace that a client can visit to acquire apps to install in a mailbox.</span></span> 
   
-<span data-ttu-id="cd79c-106">Esta operación se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="cd79c-106">This operation was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="fbc57-106">Esta operación se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="fbc57-106">This operation was introduced in Exchange Server 2013.</span></span>
   
-## <a name="using-the-getappmarketplaceurl-operation"></a><span data-ttu-id="cd79c-107">Uso de la operación GetAppMarketplaceUrl</span><span class="sxs-lookup"><span data-stu-id="cd79c-107">Using the GetAppMarketplaceUrl operation</span></span>
+## <a name="using-the-getappmarketplaceurl-operation"></a><span data-ttu-id="fbc57-107">Uso de la operación GetAppMarketplaceUrl</span><span class="sxs-lookup"><span data-stu-id="fbc57-107">Using the GetAppMarketplaceUrl operation</span></span>
 
-<span data-ttu-id="cd79c-108">La operación **GetAppMarketplaceUrl** no toma ningún argumento para solicitar la dirección URL del mercado desde el que un cliente puede instalar aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="cd79c-108">The **GetAppMarketplaceUrl** operation does not take any arguments to request the URL for the marketplace from which a client can install apps.</span></span> <span data-ttu-id="cd79c-109">La respuesta contendrá una dirección URL para el Marketplace de la aplicación.</span><span class="sxs-lookup"><span data-stu-id="cd79c-109">The response will contain a URL to the app marketplace.</span></span> 
+<span data-ttu-id="fbc57-108">La operación **GetAppMarketplaceUrl** no toma ningún argumento para solicitar la dirección URL del mercado desde el que un cliente puede instalar aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="fbc57-108">The **GetAppMarketplaceUrl** operation does not take any arguments to request the URL for the marketplace from which a client can install apps.</span></span> <span data-ttu-id="fbc57-109">La respuesta contendrá una dirección URL para el Marketplace de la aplicación.</span><span class="sxs-lookup"><span data-stu-id="fbc57-109">The response will contain a URL to the app marketplace.</span></span> 
   
-### <a name="getappmarketplaceurl-operation-soap-headers"></a><span data-ttu-id="cd79c-110">Encabezados SOAP de operación GetAppMarketplaceUrl</span><span class="sxs-lookup"><span data-stu-id="cd79c-110">GetAppMarketplaceUrl operation SOAP headers</span></span>
+### <a name="getappmarketplaceurl-operation-soap-headers"></a><span data-ttu-id="fbc57-110">Encabezados SOAP de operación GetAppMarketplaceUrl</span><span class="sxs-lookup"><span data-stu-id="fbc57-110">GetAppMarketplaceUrl operation SOAP headers</span></span>
 
-<span data-ttu-id="cd79c-111">La operación **GetAppMarketplaceUrl** puede usar los encabezados SOAP que se enumeran en la tabla siguiente.</span><span class="sxs-lookup"><span data-stu-id="cd79c-111">The **GetAppMarketplaceUrl** operation can use the SOAP headers that are listed in the following table.</span></span> 
+<span data-ttu-id="fbc57-111">La operación **GetAppMarketplaceUrl** puede usar los encabezados SOAP que se enumeran en la tabla siguiente.</span><span class="sxs-lookup"><span data-stu-id="fbc57-111">The **GetAppMarketplaceUrl** operation can use the SOAP headers that are listed in the following table.</span></span> 
   
-|<span data-ttu-id="cd79c-112">**Nombre de encabezado**</span><span class="sxs-lookup"><span data-stu-id="cd79c-112">**Header name**</span></span>|<span data-ttu-id="cd79c-113">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="cd79c-113">**Element**</span></span>|<span data-ttu-id="cd79c-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="cd79c-114">**Description**</span></span>|
+|<span data-ttu-id="fbc57-112">**Nombre de encabezado**</span><span class="sxs-lookup"><span data-stu-id="fbc57-112">**Header name**</span></span>|<span data-ttu-id="fbc57-113">**Elemento**</span><span class="sxs-lookup"><span data-stu-id="fbc57-113">**Element**</span></span>|<span data-ttu-id="fbc57-114">**Descripción**</span><span class="sxs-lookup"><span data-stu-id="fbc57-114">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="cd79c-115">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="cd79c-115">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="cd79c-116">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="cd79c-116">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="cd79c-117">Identifica la versión del esquema para la solicitud de operación.</span><span class="sxs-lookup"><span data-stu-id="cd79c-117">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="cd79c-118">Este encabezado se aplica a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="cd79c-118">This header is applicable to a request.</span></span>  <br/> |
-|<span data-ttu-id="cd79c-119">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="cd79c-119">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="cd79c-120">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="cd79c-120">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="cd79c-121">Identifica la versión del servidor que respondió a la solicitud.</span><span class="sxs-lookup"><span data-stu-id="cd79c-121">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="cd79c-122">Este encabezado se aplica a una respuesta.</span><span class="sxs-lookup"><span data-stu-id="cd79c-122">This header is applicable to a response.</span></span>  <br/> |
+|<span data-ttu-id="fbc57-115">**RequestVersion**</span><span class="sxs-lookup"><span data-stu-id="fbc57-115">**RequestVersion**</span></span> <br/> |[<span data-ttu-id="fbc57-116">RequestServerVersion</span><span class="sxs-lookup"><span data-stu-id="fbc57-116">RequestServerVersion</span></span>](requestserverversion.md) <br/> |<span data-ttu-id="fbc57-117">Identifica la versión del esquema para la solicitud de operación.</span><span class="sxs-lookup"><span data-stu-id="fbc57-117">Identifies the schema version for the operation request.</span></span> <span data-ttu-id="fbc57-118">Este encabezado se aplica a una solicitud.</span><span class="sxs-lookup"><span data-stu-id="fbc57-118">This header is applicable to a request.</span></span>  <br/> |
+|<span data-ttu-id="fbc57-119">**ServerVersion**</span><span class="sxs-lookup"><span data-stu-id="fbc57-119">**ServerVersion**</span></span> <br/> |[<span data-ttu-id="fbc57-120">ServerVersionInfo</span><span class="sxs-lookup"><span data-stu-id="fbc57-120">ServerVersionInfo</span></span>](serverversioninfo.md) <br/> |<span data-ttu-id="fbc57-121">Identifica la versión del servidor que respondió a la solicitud.</span><span class="sxs-lookup"><span data-stu-id="fbc57-121">Identifies the version of the server that responded to the request.</span></span> <span data-ttu-id="fbc57-122">Este encabezado se aplica a una respuesta.</span><span class="sxs-lookup"><span data-stu-id="fbc57-122">This header is applicable to a response.</span></span>  <br/> |
    
-## <a name="getappmarketplaceurl-operation-request-example-get-the-app-marketplace-url-for-a-mailbox"></a><span data-ttu-id="cd79c-123">Ejemplo de solicitud de operación GetAppMarketplaceUrl: obtener la dirección URL del catálogo de soluciones de la aplicación para un buzón</span><span class="sxs-lookup"><span data-stu-id="cd79c-123">GetAppMarketplaceUrl operation request example: Get the app marketplace URL for a mailbox</span></span>
+## <a name="getappmarketplaceurl-operation-request-example-get-the-app-marketplace-url-for-a-mailbox"></a><span data-ttu-id="fbc57-123">Ejemplo de solicitud de operación GetAppMarketplaceUrl: obtener la dirección URL del catálogo de soluciones de la aplicación para un buzón</span><span class="sxs-lookup"><span data-stu-id="fbc57-123">GetAppMarketplaceUrl operation request example: Get the app marketplace URL for a mailbox</span></span>
 
-<span data-ttu-id="cd79c-124">El siguiente ejemplo de una solicitud de operación de **GetAppMarketplaceUrl** muestra cómo obtener la dirección URL del catálogo de soluciones de la aplicación de un buzón.</span><span class="sxs-lookup"><span data-stu-id="cd79c-124">The following example of a **GetAppMarketplaceUrl** operation request shows how to get the app marketplace URL for a mailbox.</span></span> 
+<span data-ttu-id="fbc57-124">El siguiente ejemplo de una solicitud de operación de **GetAppMarketplaceUrl** muestra cómo obtener la dirección URL del catálogo de soluciones de la aplicación de un buzón.</span><span class="sxs-lookup"><span data-stu-id="fbc57-124">The following example of a **GetAppMarketplaceUrl** operation request shows how to get the app marketplace URL for a mailbox.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -62,20 +62,20 @@ ms.locfileid: "44459528"
 
 ```
 
-<span data-ttu-id="cd79c-125">El cuerpo SOAP de la solicitud contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="cd79c-125">The request SOAP body contains the following elements:</span></span>
+<span data-ttu-id="fbc57-125">El cuerpo SOAP de la solicitud contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="fbc57-125">The request SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="cd79c-126">GetAppMarketplaceUrl</span><span class="sxs-lookup"><span data-stu-id="cd79c-126">GetAppMarketplaceUrl</span></span>](getappmarketplaceurl.md)
+- [<span data-ttu-id="fbc57-126">GetAppMarketplaceUrl</span><span class="sxs-lookup"><span data-stu-id="fbc57-126">GetAppMarketplaceUrl</span></span>](getappmarketplaceurl.md)
     
-- [<span data-ttu-id="cd79c-127">ApiVersionSupported</span><span class="sxs-lookup"><span data-stu-id="cd79c-127">ApiVersionSupported</span></span>](apiversionsupported.md)
+- [<span data-ttu-id="fbc57-127">ApiVersionSupported</span><span class="sxs-lookup"><span data-stu-id="fbc57-127">ApiVersionSupported</span></span>](apiversionsupported.md)
     
-- [<span data-ttu-id="cd79c-128">SchemaVersionSupported</span><span class="sxs-lookup"><span data-stu-id="cd79c-128">SchemaVersionSupported</span></span>](schemaversionsupported.md)
+- [<span data-ttu-id="fbc57-128">SchemaVersionSupported</span><span class="sxs-lookup"><span data-stu-id="fbc57-128">SchemaVersionSupported</span></span>](schemaversionsupported.md)
     
-## <a name="successful-getappmarketplaceurl-operation-response"></a><span data-ttu-id="cd79c-129">Respuesta de operación GetAppMarketplaceUrl correcta</span><span class="sxs-lookup"><span data-stu-id="cd79c-129">Successful GetAppMarketplaceUrl operation response</span></span>
+## <a name="successful-getappmarketplaceurl-operation-response"></a><span data-ttu-id="fbc57-129">Respuesta de operación GetAppMarketplaceUrl correcta</span><span class="sxs-lookup"><span data-stu-id="fbc57-129">Successful GetAppMarketplaceUrl operation response</span></span>
 
-<span data-ttu-id="cd79c-130">En el siguiente ejemplo se muestra una respuesta correcta a una solicitud de operación de **GetAppMarketplaceUrl** para obtener la dirección URL del catálogo de soluciones de la aplicación de un buzón.</span><span class="sxs-lookup"><span data-stu-id="cd79c-130">The following example shows a successful response to a **GetAppMarketplaceUrl** operation request to get the app marketplace URL for a mailbox.</span></span> 
+<span data-ttu-id="fbc57-130">En el siguiente ejemplo se muestra una respuesta correcta a una solicitud de operación de **GetAppMarketplaceUrl** para obtener la dirección URL del catálogo de soluciones de la aplicación de un buzón.</span><span class="sxs-lookup"><span data-stu-id="fbc57-130">The following example shows a successful response to a **GetAppMarketplaceUrl** operation request to get the app marketplace URL for a mailbox.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="cd79c-131">La dirección URL del catálogo de soluciones de la aplicación se ha modificado para preservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="cd79c-131">The app marketplace URL has been altered to preserve readability.</span></span> 
+> <span data-ttu-id="fbc57-131">La dirección URL del catálogo de soluciones de la aplicación se ha modificado para preservar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="fbc57-131">The app marketplace URL has been altered to preserve readability.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -103,19 +103,19 @@ ms.locfileid: "44459528"
 
 ```
 
-<span data-ttu-id="cd79c-132">El cuerpo SOAP de respuesta contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="cd79c-132">The response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="fbc57-132">El cuerpo SOAP de respuesta contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="fbc57-132">The response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="cd79c-133">GetAppMarketplaceUrlResponse</span><span class="sxs-lookup"><span data-stu-id="cd79c-133">GetAppMarketplaceUrlResponse</span></span>](getappmarketplaceurlresponse.md)
+- [<span data-ttu-id="fbc57-133">GetAppMarketplaceUrlResponse</span><span class="sxs-lookup"><span data-stu-id="fbc57-133">GetAppMarketplaceUrlResponse</span></span>](getappmarketplaceurlresponse.md)
     
-- [<span data-ttu-id="cd79c-134">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="cd79c-134">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="fbc57-134">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="fbc57-134">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="cd79c-135">AppMarketplaceUrl</span><span class="sxs-lookup"><span data-stu-id="cd79c-135">AppMarketplaceUrl</span></span>](appmarketplaceurl.md)
+- [<span data-ttu-id="fbc57-135">AppMarketplaceUrl</span><span class="sxs-lookup"><span data-stu-id="fbc57-135">AppMarketplaceUrl</span></span>](appmarketplaceurl.md)
     
-## <a name="getappmarketplaceurl-operation-error-response"></a><span data-ttu-id="cd79c-136">Respuesta de error de operación de GetAppMarketPlaceUrl</span><span class="sxs-lookup"><span data-stu-id="cd79c-136">GetAppMarketPlaceUrl operation error response</span></span>
+## <a name="getappmarketplaceurl-operation-error-response"></a><span data-ttu-id="fbc57-136">Respuesta de error de operación de GetAppMarketPlaceUrl</span><span class="sxs-lookup"><span data-stu-id="fbc57-136">GetAppMarketPlaceUrl operation error response</span></span>
 
-<span data-ttu-id="cd79c-137">Los errores devueltos para esta operación están relacionados con una configuración de servicio incorrecta o son errores genéricos de EWS.</span><span class="sxs-lookup"><span data-stu-id="cd79c-137">Errors returned for this operation are either related to an incorrect service configuration or are generic EWS errors.</span></span> <span data-ttu-id="cd79c-138">Para los códigos de error que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).</span><span class="sxs-lookup"><span data-stu-id="cd79c-138">For error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span> 
+<span data-ttu-id="fbc57-137">Los errores devueltos para esta operación están relacionados con una configuración de servicio incorrecta o son errores genéricos de EWS.</span><span class="sxs-lookup"><span data-stu-id="fbc57-137">Errors returned for this operation are either related to an incorrect service configuration or are generic EWS errors.</span></span> <span data-ttu-id="fbc57-138">Para los códigos de error que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).</span><span class="sxs-lookup"><span data-stu-id="fbc57-138">For error codes that are generic to EWS and specific to this operation, see [ResponseCode](responsecode.md).</span></span> 
   
-<span data-ttu-id="cd79c-139">En el ejemplo siguiente se muestra una respuesta de error que se devuelve cuando el panel de control de Exchange externo (ECP) no está configurado.</span><span class="sxs-lookup"><span data-stu-id="cd79c-139">The following example shows an error response that is returned when external Exchange Control Panel (ECP) is not configured.</span></span>
+<span data-ttu-id="fbc57-139">En el ejemplo siguiente se muestra una respuesta de error que se devuelve cuando el panel de control de Exchange externo (ECP) no está configurado.</span><span class="sxs-lookup"><span data-stu-id="fbc57-139">The following example shows an error response that is returned when external Exchange Control Panel (ECP) is not configured.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -143,26 +143,26 @@ ms.locfileid: "44459528"
 </s:Envelope>
 ```
 
-<span data-ttu-id="cd79c-140">El cuerpo SOAP de respuesta de error contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="cd79c-140">The error response SOAP body contains the following elements:</span></span>
+<span data-ttu-id="fbc57-140">El cuerpo SOAP de respuesta de error contiene los siguientes elementos:</span><span class="sxs-lookup"><span data-stu-id="fbc57-140">The error response SOAP body contains the following elements:</span></span>
   
-- [<span data-ttu-id="cd79c-141">GetAppMarketplaceUrlResponse</span><span class="sxs-lookup"><span data-stu-id="cd79c-141">GetAppMarketplaceUrlResponse</span></span>](getappmarketplaceurlresponse.md)
+- [<span data-ttu-id="fbc57-141">GetAppMarketplaceUrlResponse</span><span class="sxs-lookup"><span data-stu-id="fbc57-141">GetAppMarketplaceUrlResponse</span></span>](getappmarketplaceurlresponse.md)
     
-- [<span data-ttu-id="cd79c-142">MessageText</span><span class="sxs-lookup"><span data-stu-id="cd79c-142">MessageText</span></span>](messagetext.md)
+- [<span data-ttu-id="fbc57-142">MessageText</span><span class="sxs-lookup"><span data-stu-id="fbc57-142">MessageText</span></span>](messagetext.md)
     
-- [<span data-ttu-id="cd79c-143">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="cd79c-143">ResponseCode</span></span>](responsecode.md)
+- [<span data-ttu-id="fbc57-143">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="fbc57-143">ResponseCode</span></span>](responsecode.md)
     
-- [<span data-ttu-id="cd79c-144">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="cd79c-144">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
+- [<span data-ttu-id="fbc57-144">DescriptiveLinkKey</span><span class="sxs-lookup"><span data-stu-id="fbc57-144">DescriptiveLinkKey</span></span>](descriptivelinkkey.md)
     
-## <a name="see-also"></a><span data-ttu-id="cd79c-145">Vea también</span><span class="sxs-lookup"><span data-stu-id="cd79c-145">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fbc57-145">Vea también</span><span class="sxs-lookup"><span data-stu-id="fbc57-145">See also</span></span>
 
-- [<span data-ttu-id="cd79c-146">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="cd79c-146">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+- [<span data-ttu-id="fbc57-146">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="fbc57-146">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
     
-- [<span data-ttu-id="cd79c-147">Operación DisableApp</span><span class="sxs-lookup"><span data-stu-id="cd79c-147">DisableApp operation</span></span>](disableapp-operation.md)
+- [<span data-ttu-id="fbc57-147">Operación DisableApp</span><span class="sxs-lookup"><span data-stu-id="fbc57-147">DisableApp operation</span></span>](disableapp-operation.md)
     
-- [<span data-ttu-id="cd79c-148">Operación InstallApp</span><span class="sxs-lookup"><span data-stu-id="cd79c-148">InstallApp operation</span></span>](installapp-operation.md)
+- [<span data-ttu-id="fbc57-148">Operación InstallApp</span><span class="sxs-lookup"><span data-stu-id="fbc57-148">InstallApp operation</span></span>](installapp-operation.md)
     
-- [<span data-ttu-id="cd79c-149">Operación UninstallApp</span><span class="sxs-lookup"><span data-stu-id="cd79c-149">UninstallApp operation</span></span>](uninstallapp-operation.md)
+- [<span data-ttu-id="fbc57-149">Operación UninstallApp</span><span class="sxs-lookup"><span data-stu-id="fbc57-149">UninstallApp operation</span></span>](uninstallapp-operation.md)
     
-- [<span data-ttu-id="cd79c-150">Operación GetAppManifests</span><span class="sxs-lookup"><span data-stu-id="cd79c-150">GetAppManifests operation</span></span>](getappmanifests-operation.md)
+- [<span data-ttu-id="fbc57-150">Operación GetAppManifests</span><span class="sxs-lookup"><span data-stu-id="fbc57-150">GetAppManifests operation</span></span>](getappmanifests-operation.md)
     
 

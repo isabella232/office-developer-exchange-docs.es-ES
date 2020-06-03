@@ -16,20 +16,20 @@ ms.openlocfilehash: b8ea2cef366a52765850dddcc8c1ef1e8fa68b22
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460914"
 ---
-# <a name="getserviceconfiguration-operation"></a><span data-ttu-id="1ad10-104">Operación GetServiceConfiguration</span><span class="sxs-lookup"><span data-stu-id="1ad10-104">GetServiceConfiguration operation</span></span>
+# <a name="getserviceconfiguration-operation"></a><span data-ttu-id="6767a-104">Operación GetServiceConfiguration</span><span class="sxs-lookup"><span data-stu-id="6767a-104">GetServiceConfiguration operation</span></span>
 
-<span data-ttu-id="1ad10-105">La operación **GetServiceConfiguration** obtiene información de configuración para el tipo de servicio especificado.</span><span class="sxs-lookup"><span data-stu-id="1ad10-105">The **GetServiceConfiguration** operation gets configuration information for the specified type of service.</span></span> <span data-ttu-id="1ad10-106">Esta operación puede devolver opciones de configuración para los servicios de mensajería unificada, reglas de protección y sugerencias de correo.</span><span class="sxs-lookup"><span data-stu-id="1ad10-106">This operation can return configuration settings for the Unified Messaging, Protection Rules, and Mail Tips services.</span></span> 
+<span data-ttu-id="6767a-105">La operación **GetServiceConfiguration** obtiene información de configuración para el tipo de servicio especificado.</span><span class="sxs-lookup"><span data-stu-id="6767a-105">The **GetServiceConfiguration** operation gets configuration information for the specified type of service.</span></span> <span data-ttu-id="6767a-106">Esta operación puede devolver opciones de configuración para los servicios de mensajería unificada, reglas de protección y sugerencias de correo.</span><span class="sxs-lookup"><span data-stu-id="6767a-106">This operation can return configuration settings for the Unified Messaging, Protection Rules, and Mail Tips services.</span></span> 
   
-## <a name="getserviceconfiguration-request-example"></a><span data-ttu-id="1ad10-107">Ejemplo de solicitud GetServiceConfiguration</span><span class="sxs-lookup"><span data-stu-id="1ad10-107">GetServiceConfiguration request example</span></span>
+## <a name="getserviceconfiguration-request-example"></a><span data-ttu-id="6767a-107">Ejemplo de solicitud GetServiceConfiguration</span><span class="sxs-lookup"><span data-stu-id="6767a-107">GetServiceConfiguration request example</span></span>
 
-### <a name="description"></a><span data-ttu-id="1ad10-108">Descripción</span><span class="sxs-lookup"><span data-stu-id="1ad10-108">Description</span></span>
+### <a name="description"></a><span data-ttu-id="6767a-108">Description</span><span class="sxs-lookup"><span data-stu-id="6767a-108">Description</span></span>
 
-<span data-ttu-id="1ad10-109">El siguiente ejemplo de una solicitud **GetServiceConfiguration** muestra cómo crear una solicitud para obtener información de configuración para el servicio de mensajería unificada.</span><span class="sxs-lookup"><span data-stu-id="1ad10-109">The following example of a **GetServiceConfiguration** request shows how to form a request to get configuration information for the Unified Messaging service.</span></span> 
+<span data-ttu-id="6767a-109">El siguiente ejemplo de una solicitud **GetServiceConfiguration** muestra cómo crear una solicitud para obtener información de configuración para el servicio de mensajería unificada.</span><span class="sxs-lookup"><span data-stu-id="6767a-109">The following example of a **GetServiceConfiguration** request shows how to form a request to get configuration information for the Unified Messaging service.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="1ad10-110">Código</span><span class="sxs-lookup"><span data-stu-id="1ad10-110">Code</span></span>
+### <a name="code"></a><span data-ttu-id="6767a-110">Código</span><span class="sxs-lookup"><span data-stu-id="6767a-110">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -51,13 +51,13 @@ ms.locfileid: "44460914"
 </soap:Envelope>
 ```
 
-## <a name="getserviceconfiguration-response-example"></a><span data-ttu-id="1ad10-111">Ejemplo de respuesta GetServiceConfiguration</span><span class="sxs-lookup"><span data-stu-id="1ad10-111">GetServiceConfiguration response example</span></span>
+## <a name="getserviceconfiguration-response-example"></a><span data-ttu-id="6767a-111">Ejemplo de respuesta GetServiceConfiguration</span><span class="sxs-lookup"><span data-stu-id="6767a-111">GetServiceConfiguration response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="1ad10-112">Descripción</span><span class="sxs-lookup"><span data-stu-id="1ad10-112">Description</span></span>
+### <a name="description"></a><span data-ttu-id="6767a-112">Description</span><span class="sxs-lookup"><span data-stu-id="6767a-112">Description</span></span>
 
-<span data-ttu-id="1ad10-113">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **GetServiceConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="1ad10-113">The following example shows a successful response to the **GetServiceConfiguration** request.</span></span> 
+<span data-ttu-id="6767a-113">En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **GetServiceConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="6767a-113">The following example shows a successful response to the **GetServiceConfiguration** request.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="1ad10-114">Código</span><span class="sxs-lookup"><span data-stu-id="1ad10-114">Code</span></span>
+### <a name="code"></a><span data-ttu-id="6767a-114">Código</span><span class="sxs-lookup"><span data-stu-id="6767a-114">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -93,13 +93,13 @@ ms.locfileid: "44460914"
 </s:Envelope>
 ```
 
-## <a name="getserviceconfiguration-error-response-example"></a><span data-ttu-id="1ad10-115">Ejemplo de respuesta de error GetServiceConfiguration</span><span class="sxs-lookup"><span data-stu-id="1ad10-115">GetServiceConfiguration Error response example</span></span>
+## <a name="getserviceconfiguration-error-response-example"></a><span data-ttu-id="6767a-115">Ejemplo de respuesta de error GetServiceConfiguration</span><span class="sxs-lookup"><span data-stu-id="6767a-115">GetServiceConfiguration Error response example</span></span>
 
-### <a name="description"></a><span data-ttu-id="1ad10-116">Descripción</span><span class="sxs-lookup"><span data-stu-id="1ad10-116">Description</span></span>
+### <a name="description"></a><span data-ttu-id="6767a-116">Description</span><span class="sxs-lookup"><span data-stu-id="6767a-116">Description</span></span>
 
-<span data-ttu-id="1ad10-117">En el ejemplo siguiente se muestra una respuesta de error a la solicitud **GetServiceConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="1ad10-117">The following example shows an error response to the **GetServiceConfiguration** request.</span></span> <span data-ttu-id="1ad10-118">Este error se ha producido por un nombre de configuración incorrecto.</span><span class="sxs-lookup"><span data-stu-id="1ad10-118">This error was caused by an incorrect configuration name.</span></span> 
+<span data-ttu-id="6767a-117">En el ejemplo siguiente se muestra una respuesta de error a la solicitud **GetServiceConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="6767a-117">The following example shows an error response to the **GetServiceConfiguration** request.</span></span> <span data-ttu-id="6767a-118">Este error se ha producido por un nombre de configuración incorrecto.</span><span class="sxs-lookup"><span data-stu-id="6767a-118">This error was caused by an incorrect configuration name.</span></span> 
   
-### <a name="code"></a><span data-ttu-id="1ad10-119">Código</span><span class="sxs-lookup"><span data-stu-id="1ad10-119">Code</span></span>
+### <a name="code"></a><span data-ttu-id="6767a-119">Código</span><span class="sxs-lookup"><span data-stu-id="6767a-119">Code</span></span>
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -129,11 +129,11 @@ ms.locfileid: "44460914"
 </s:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="1ad10-120">Vea también</span><span class="sxs-lookup"><span data-stu-id="1ad10-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6767a-120">Vea también</span><span class="sxs-lookup"><span data-stu-id="6767a-120">See also</span></span>
 
 
 
-[<span data-ttu-id="1ad10-121">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="1ad10-121">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
+[<span data-ttu-id="6767a-121">Operaciones de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="6767a-121">EWS operations in Exchange</span></span>](ews-operations-in-exchange.md)
   
-- [<span data-ttu-id="1ad10-122">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="1ad10-122">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
+- [<span data-ttu-id="6767a-122">Elementos XML de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="6767a-122">EWS XML elements in Exchange</span></span>](ews-xml-elements-in-exchange.md)
 
