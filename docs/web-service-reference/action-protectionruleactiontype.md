@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ca090dec-e2c5-49c8-a057-8d1f2409147f
-description: El elemento de acción identifica qué acción se debe ejecutar si coincide con la parte de la condición de la regla.
-ms.openlocfilehash: 8f699e698d3159c5ff2636da506542da3b218251
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Action identifica qué acción debe ejecutarse si la parte de condición de la regla coincide.
+ms.openlocfilehash: 220a6fea16abb9ea823ae6239537b8c121702589
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764562"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527512"
 ---
 # <a name="action-protectionruleactiontype"></a>Acción (ProtectionRuleActionType)
 
-El elemento de **acción** identifica qué acción se debe ejecutar si coincide con la parte de la condición de la regla. 
+El elemento **Action** identifica qué acción debe ejecutarse si la parte de condición de la regla coincide. 
   
 ```xml
 <Action Name="">
@@ -33,23 +33,23 @@ El elemento de **acción** identifica qué acción se debe ejecutar si coincide 
  **ProtectionRuleActionType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
 |**Name** <br/> |Identifica el nombre de la acción.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Argumento](argument.md) <br/> |Especifica los argumentos para la acción. Este elemento no se producirá si la acción especificada no requiere argumentos que se especifique. Este elemento puede producirse una o varias veces, si una acción requiere uno o más argumentos. La acción **RightsProtectMessage** contendrá un único argumento.  <br/> |
+|[Argumento](argument.md) <br/> |Especifica los argumentos de la acción. Este elemento no se producirá si la acción especificada no requiere que se especifiquen argumentos. Este elemento puede producirse una o varias veces si una acción requiere uno o más argumentos. La acción **RightsProtectMessage** contendrá un solo argumento.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Rule](rule.md) <br/> |Contiene una regla de protección única.  <br/> |
    
@@ -61,12 +61,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 54fd2192-54ca-4e42-b630-a3fbdd8e4239
 description: El elemento PhoneString especifica el número de teléfono de un contacto extraído.
-ms.openlocfilehash: 83f8a4f08df00de9721ee9648876718ac593210b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: cc528b74034d1fd76c19247e72bb5ac00e7734d9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836769"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528893"
 ---
 # <a name="phonestring"></a>PhoneString
 
@@ -26,19 +26,19 @@ El elemento **PhoneString** especifica el número de teléfono de un contacto ex
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Teléfono](phone.md) | [teléfono (PhoneEntityType)](phone-phoneentitytype.md)
+[Teléfono](phone.md)  |  [Teléfono (PhoneEntityType)](phone-phoneentitytype.md)
   
 ## <a name="text-value"></a>Valor de texto
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

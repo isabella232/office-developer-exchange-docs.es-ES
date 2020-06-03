@@ -11,38 +11,38 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3e26c416-fa12-476e-bfd2-5c1f4bb7b348
-description: La operación DeleteItem elimina los elementos en el almacén de Exchange.
-ms.openlocfilehash: 87d7853daa5db0cd87b3f6469c228a584b4d9caf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación DeleteItem elimina elementos en el almacén de Exchange.
+ms.openlocfilehash: f068e08ef0d0f590c9ed8274f77d4dae9f942995
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764101"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526938"
 ---
 # <a name="deleteitem-operation"></a>Operación DeleteItem
 
-La operación **DeleteItem** elimina los elementos en el almacén de Exchange. 
+La operación **DeleteItem** elimina elementos en el almacén de Exchange. 
   
 > [!NOTE]
-> Se devuelve una respuesta de error que incluye el código de error de ErrorCannotDeleteObject para una operación de **DeleteItem** cuando un delegado intenta eliminar un elemento en el buzón de la entidad de seguridad mediante la configuración de la DisposalType a MoveToDeletedItems. Para eliminar un elemento moviendo a la carpeta Elementos eliminados, un delegado debe usar la [operación MoveItem](moveitem-operation.md). 
+> Se devolverá una respuesta de error que incluye el código de error ErrorCannotDeleteObject para una operación **DeleteItem** cuando un delegado intenta eliminar un elemento en el buzón de la entidad de identidad al configurar DisposalType en MoveToDeletedItems. Para eliminar un elemento moviéndolo a la carpeta elementos eliminados, un delegado debe usar la [operación MoveItem](moveitem-operation.md). 
   
 ## <a name="deleteitem-request-example"></a>Ejemplo de solicitud DeleteItem
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud de **DeleteItem** muestra cómo realizar una eliminación de disco duro de un elemento de un buzón de correo. 
+El siguiente ejemplo de una solicitud **DeleteItem** muestra cómo realizar una eliminación de un elemento de un buzón. 
   
 > [!NOTE]
-> El identificador de elemento se ha acortado para conservar la legibilidad. 
+> El identificador de elemento se ha abreviado para preservar la legibilidad. 
   
 ### <a name="code"></a>Código
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <DeleteItem DeleteType="HardDelete" xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <DeleteItem DeleteType="HardDelete" xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ItemIds>
         <t:ItemId Id="AS4AUn=="/>
       </ItemIds>
@@ -53,21 +53,21 @@ El siguiente ejemplo de una solicitud de **DeleteItem** muestra cómo realizar u
 
 ### <a name="request-elements"></a>Elementos de solicitud
 
-En la solicitud se usan los siguientes elementos:
+Los siguientes elementos se usan en la solicitud:
   
 - [DeleteItem](deleteitem.md)
     
-- [ItemId](itemids.md)
+- [ItemIds](itemids.md)
     
 - [ItemId](itemid.md)
     
-Para buscar otras opciones para el mensaje de solicitud de la operación **DeleteItem** , explore la jerarquía de esquema. Comenzar en el elemento de [DeleteItem](deleteitem.md) . 
+Para buscar otras opciones para el mensaje de solicitud de la operación **DeleteItem** , explore la jerarquía del esquema. Comienza en el elemento [DeleteItem](deleteitem.md) . 
   
-## <a name="successful-deleteitem-response"></a>Respuesta DeleteItem es correcta
+## <a name="successful-deleteitem-response"></a>Respuesta DeleteItem correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **DeleteItem** . 
+En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **DeleteItem** . 
   
 ### <a name="code"></a>Código
 
@@ -78,12 +78,12 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **De
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <DeleteItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <DeleteItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:DeleteItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -94,7 +94,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **De
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elementos de respuesta correcta
+### <a name="successful-response-elements"></a>Elementos Response correcto
 
 En la respuesta se usan los siguientes elementos:
   
@@ -108,13 +108,13 @@ En la respuesta se usan los siguientes elementos:
     
 - [ResponseCode](responsecode.md)
     
-Para buscar otras opciones para el mensaje de respuesta de la operación **DeleteItem** , explore la jerarquía de esquema. Comenzar en el elemento de [DeleteItemResponse](deleteitemresponse.md) . 
+Para buscar otras opciones para el mensaje de respuesta de la operación **DeleteItem** , explore la jerarquía del esquema. Empiece en el elemento [DeleteItemResponse](deleteitemresponse.md) . 
   
 ## <a name="deleteitem-error-response"></a>Respuesta de error DeleteItem
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **DeleteItem** . Se creó el error debido a que la operación intentó eliminar un elemento que no se encontró en el almacén de Exchange. 
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud **DeleteItem** . El error se creó porque la operación intentó eliminar un elemento que no se encontró en el almacén de Exchange. 
   
 ### <a name="code"></a>Código
 
@@ -125,12 +125,12 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **D
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="595" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <DeleteItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                        xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <DeleteItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                        xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:DeleteItemResponseMessage ResponseClass="Error">
           <m:MessageText>The specified object was not found in the store.</m:MessageText>
@@ -145,7 +145,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de **D
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-En la respuesta de error, se usan los siguientes elementos:
+Los siguientes elementos se usan en la respuesta de error:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -161,12 +161,12 @@ En la respuesta de error, se usan los siguientes elementos:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Para buscar otras opciones para el mensaje de respuesta de error de la operación **DeleteItem** , explore la jerarquía de esquema. Comenzar en el elemento de [DeleteItemResponse](deleteitemresponse.md) . 
+Para buscar otras opciones para el mensaje de respuesta de error de la operación **DeleteItem** , explore la jerarquía del esquema. Empiece en el elemento [DeleteItemResponse](deleteitemresponse.md) . 
   
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
-- [Eliminación de contactos](http://msdn.microsoft.com/library/fcc3dc84-cd3e-455e-a1a7-ae6921c9b588%28Office.15%29.aspx)  
-- [Eliminación de mensajes de correo electrónico](http://msdn.microsoft.com/library/c40f2f0b-dae0-412f-b716-727e8c0949b4%28Office.15%29.aspx) 
-- [Eliminación de tareas](http://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Eliminación de contactos](https://msdn.microsoft.com/library/fcc3dc84-cd3e-455e-a1a7-ae6921c9b588%28Office.15%29.aspx)  
+- [Eliminación de mensajes de correo electrónico](https://msdn.microsoft.com/library/c40f2f0b-dae0-412f-b716-727e8c0949b4%28Office.15%29.aspx) 
+- [Eliminación de tareas](https://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
 

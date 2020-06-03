@@ -12,30 +12,30 @@ api_type:
 - schema
 ms.assetid: b42fb512-2ae4-4072-906a-ccebb85edb84
 description: La operación DisconnectPhoneCall finaliza la llamada telefónica.
-ms.openlocfilehash: 4bd68dd40f831794072263b487255330ea31d7bf
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: e337185bc2d5c4d2d4e010605816eacea8dfa0ee
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764197"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529066"
 ---
 # <a name="disconnectphonecall-operation"></a>Operación DisconnectPhoneCall
 
 La operación **DisconnectPhoneCall** finaliza la llamada telefónica. 
   
-## <a name="disconnectphonecall-request-example"></a>Ejemplo de solicitud de DisconnectPhoneCall
+## <a name="disconnectphonecall-request-example"></a>Ejemplo de solicitud DisconnectPhoneCall
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud de **DisconnectPhoneCall** muestra cómo formar una solicitud para desconectar una llamada de teléfono. 
+El siguiente ejemplo de una solicitud de **DisconnectPhoneCall** muestra cómo crear una solicitud para desconectar una llamada telefónica. 
   
 ### <a name="code"></a>Código
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
                xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
@@ -51,9 +51,9 @@ El siguiente ejemplo de una solicitud de **DisconnectPhoneCall** muestra cómo f
 
 ## <a name="disconnectphonecall-response-example"></a>Ejemplo de respuesta DisconnectPhoneCall
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **DisconnectPhoneCall** . 
+En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **DisconnectPhoneCall** . 
   
 ### <a name="code"></a>Código
 
@@ -66,15 +66,15 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **Di
                          MajorBuildNumber="639" 
                          MinorBuildNumber="20" 
                          Version="Exchange2010" 
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <DisconnectPhoneCallResponse ResponseClass="Success" 
-                                 xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                 xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
     </DisconnectPhoneCallResponse>
   </s:Body>
@@ -84,5 +84,5 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud de **Di
 ## <a name="see-also"></a>Vea también
 
 - [Operaciones de EWS en Exchange](ews-operations-in-exchange.md) 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ae1bc448-deb9-4b5b-ab38-4b276abcb650
-description: El elemento OutlookRuleBlobExists indica si existe un blob de regla de Microsoft Outlook en el buzón del usuario.
-ms.openlocfilehash: a738377cd3c1d69b90ac39ca479b03b3220d5bc5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento OutlookRuleBlobExists indica si existe un BLOB de regla de Microsoft Outlook en el buzón de correo del usuario.
+ms.openlocfilehash: 6a5c2a2ec0246d38b22279b86772972ea81922c7
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836679"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529031"
 ---
 # <a name="outlookruleblobexists"></a>OutlookRuleBlobExists
 
-El elemento **OutlookRuleBlobExists** indica si existe un blob de regla de Microsoft Outlook en el buzón del usuario. 
+El elemento **OutlookRuleBlobExists** indica si existe un BLOB de regla de Microsoft Outlook en el buzón de correo del usuario. 
   
 [GetInboxRulesResponse](getinboxrulesresponse.md)
   
@@ -34,25 +34,25 @@ El elemento **OutlookRuleBlobExists** indica si existe un blob de regla de Micro
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[GetInboxRulesResponse](getinboxrulesresponse.md) <br/> |Representa una respuesta a una solicitud de [operación GetInboxRules](getinboxrules-operation.md) .  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** indica que existe un blob de regla de Outlook. Un valor de texto de **false** indica que no existe un blob de regla de Outlook. 
+Un valor de texto de **true** indica que existe un BLOB de regla de Outlook. Un valor de texto de **false** indica que no existe un BLOB de regla de Outlook. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -62,14 +62,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

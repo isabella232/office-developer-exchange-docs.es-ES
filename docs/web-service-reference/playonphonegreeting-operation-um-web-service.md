@@ -1,5 +1,5 @@
 ---
-title: Operación PlayOnPhoneGreeting (servicio web de mensajería unificada)
+title: Operación PlayOnPhoneGreeting (servicio Web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,23 +10,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6deafc40-290b-4bce-9914-b6bcc529f38a
-description: La operación PlayOnPhoneGreeting realiza una llamada saliente y reproduce uno de los mensajes de saludo de dos en el teléfono.
-ms.openlocfilehash: 85ba76c7638911678c1ef1aef88f47fdab2c6a4e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación PlayOnPhoneGreeting realiza una llamada saliente y reproduce uno de los dos mensajes de saludo en el teléfono.
+ms.openlocfilehash: 3af120b9ac8d7a368742fad2850c924228488662
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836828"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528898"
 ---
-# <a name="playonphonegreeting-operation-um-web-service"></a>Operación PlayOnPhoneGreeting (servicio web de mensajería unificada)
+# <a name="playonphonegreeting-operation-um-web-service"></a>Operación PlayOnPhoneGreeting (servicio Web de mensajería unificada)
 
-La operación PlayOnPhoneGreeting realiza una llamada saliente y reproduce uno de los mensajes de saludo de dos en el teléfono.
+La operación PlayOnPhoneGreeting realiza una llamada saliente y reproduce uno de los dos mensajes de saludo en el teléfono.
   
-## <a name="playonphonegreeting-request-example"></a>Ejemplo de solicitud de PlayOnPhoneGreeting
+## <a name="playonphonegreeting-request-example"></a>Ejemplo de solicitud PlayOnPhoneGreeting
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud de PlayOnPhoneGreeting muestra cómo formar una solicitud para realizar una llamada saliente y reproducir el mensaje de saludo normal en un teléfono.
+El siguiente ejemplo de una solicitud de PlayOnPhoneGreeting muestra cómo crear una solicitud para realizar una llamada saliente y reproducir el mensaje de saludo normal en un teléfono.
   
 ### <a name="code"></a>Código
 
@@ -34,7 +34,7 @@ El siguiente ejemplo de una solicitud de PlayOnPhoneGreeting muestra cómo forma
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <PlayOnPhoneGreeting xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <PlayOnPhoneGreeting xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <GreetingType>NormalCustom</GreetingType>
       <DialString>12345</DialString>
     </PlayOnPhoneGreeting>
@@ -42,11 +42,11 @@ El siguiente ejemplo de una solicitud de PlayOnPhoneGreeting muestra cómo forma
 </soap:Envelope>
 ```
 
-## <a name="successful-playonphonegreeting-response-example"></a>Ejemplo de respuesta correcta de PlayOnPhoneGreeting
+## <a name="successful-playonphonegreeting-response-example"></a>Ejemplo de respuesta PlayOnPhoneGreeting correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
-El siguiente ejemplo de una respuesta PlayOnPhoneGreeting muestra una respuesta a la solicitud de PlayOnPhoneGreeting.
+El siguiente ejemplo de una respuesta de PlayOnPhoneGreeting muestra una respuesta a la solicitud PlayOnPhoneGreeting.
   
 ### <a name="code"></a>Código
 
@@ -54,7 +54,7 @@ El siguiente ejemplo de una respuesta PlayOnPhoneGreeting muestra una respuesta 
 <?xml version="1.0" encoding="utf-8" ?> 
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Body>
-    <PlayOnPhoneGreetingResponse xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <PlayOnPhoneGreetingResponse xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
     <PlayOnPhoneGreetingResponse>MjA4MTQ5MmItMTBmZC00ZGFmLThiMzEtNDllNDJjM2Y3MjIxQGRmLWV1bS0wMS5leGNoYW5nZS5jb3JwLm1pY3Jvc29mdC5jb20=</PlayOnPhoneGreetingResponse> 
     </PlayOnPhoneGreetingResponse>
   </soap:Body>
@@ -65,11 +65,11 @@ El siguiente ejemplo de una respuesta PlayOnPhoneGreeting muestra una respuesta 
 
 
 
-[PlayOnPhoneGreeting (servicio web de mensajería unificada)](playonphonegreeting-um-web-service.md)
+[PlayOnPhoneGreeting (servicio Web de mensajería unificada)](playonphonegreeting-um-web-service.md)
   
-[PlayOnPhoneGreetingResponse (servicio web de mensajería unificada)](playonphonegreetingresponse-um-web-service.md)
+[PlayOnPhoneGreetingResponse (servicio Web de mensajería unificada)](playonphonegreetingresponse-um-web-service.md)
   
-[GreetingType (servicio web de mensajería unificada)](greetingtype-um-web-service.md)
+[GreetingType (servicio Web de mensajería unificada)](greetingtype-um-web-service.md)
   
-[dialString (servicio web de mensajería unificada)](dialstring-um-web-service.md)
+[dialString (servicio Web de mensajería unificada)](dialstring-um-web-service.md)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a573b4af-9bed-41cf-aea4-5f9cc0ab43a6
-description: El elemento de rangos especifica una matriz de rangos de periodicidad.
-ms.openlocfilehash: d38d55740da13047be6a97b375c612eb07717909
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Ranges especifica una matriz de intervalos de periodicidad.
+ms.openlocfilehash: 884ef5d8ffbc5dd0fbc153a7b17430ccc7e131c5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836944"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528882"
 ---
 # <a name="ranges"></a>Rangos
 
-El elemento de **rangos** especifica una matriz de rangos de periodicidad. 
+El elemento **Ranges** especifica una matriz de intervalos de periodicidad. 
   
 ```XML
 <Ranges>
@@ -28,15 +28,15 @@ El elemento de **rangos** especifica una matriz de rangos de periodicidad.
  **ArrayOfOccurrenceRangesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Intervalo](range.md)
+[Range](range.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

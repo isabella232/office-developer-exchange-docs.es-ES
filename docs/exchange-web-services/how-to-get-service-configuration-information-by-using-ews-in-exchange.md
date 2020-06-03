@@ -1,39 +1,39 @@
 ---
-title: Obtener la información de configuración de servicio mediante el uso de EWS en Exchange
+title: Obtener información de configuración de servicio mediante EWS en Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 9379740a-96e1-490d-a229-0f9937c548d2
-description: Averigüe cómo obtener información de configuración de servicio de mensajería unificada, desplazar de directiva, las sugerencias de correo y las reglas de protección de EWS en Exchange.
-ms.openlocfilehash: e84a563bb094a2fe03e08f8e1a81b2b054d45850
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Descubra cómo obtener información de configuración del servicio para mensajería unificada, zumbidos de la Directiva, sugerencias de correo y reglas de protección de EWS en Exchange.
+ms.openlocfilehash: 7546d9524f1e004eda2bdc55687fb44beafa44af
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763067"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528009"
 ---
-# <a name="get-service-configuration-information-by-using-ews-in-exchange"></a>Obtener la información de configuración de servicio mediante el uso de EWS en Exchange
+# <a name="get-service-configuration-information-by-using-ews-in-exchange"></a>Obtener información de configuración de servicio mediante EWS en Exchange
 
-Averigüe cómo obtener información de configuración de servicio de mensajería unificada, desplazar de directiva, las sugerencias de correo y las reglas de protección de EWS en Exchange.
+Descubra cómo obtener información de configuración del servicio para mensajería unificada, zumbidos de la Directiva, sugerencias de correo y reglas de protección de EWS en Exchange.
   
-¿La aplicación EWS funciona con mensajería unificada (UM), desplazar de directiva, las sugerencias de correo o las reglas de protección? Si es así, la aplicación deberá llamar a la [operación de GetServiceConfiguration](http://msdn.microsoft.com/library/070cbfe5-325a-4955-8e4a-8230ea0459a7%28Office.15%29.aspx) para obtener la información de configuración de servicio que necesita. La operación **GetServiceConfiguration** devuelve información de configuración que es específica de cada una de estas características EWS. 
+¿Funciona la aplicación de EWS con la mensajería unificada, los zumbidos de la Directiva, las sugerencias de correo o las reglas de protección? Si es así, la aplicación tendrá que llamar a la [operación GetServiceConfiguration](https://msdn.microsoft.com/library/070cbfe5-325a-4955-8e4a-8230ea0459a7%28Office.15%29.aspx) para obtener la información de configuración del servicio que necesita. La operación **GetServiceConfiguration** devuelve información de configuración específica para cada una de estas características de EWS. 
   
 > [!NOTE]
 > La API administrada de EWS no implementa esta funcionalidad. 
   
-**La tabla 1. Información de configuración que devuelve la operación GetServiceConfiguration**
+**Tabla 1. Información de configuración que devuelve la operación GetServiceConfiguration**
 
-|Característica EWS|Devuelve la operación GetServiceConfiguration...|
+|Característica EWS|La operación GetServiceConfiguration devuelve...|
 |:-----|:-----|
-|MENSAJERÍA UNIFICADA  <br/> | <ul><li>Un valor que indica si está habilitada la mensajería unificada.</li><li>Un valor que indica si está habilitada la reproducir en el teléfono.</li><li>Reproducir en la cadena de marcado de teléfono.</li></ul> |
-|Desplazar de directiva  <br/> | <ul><li>Directiva se desplazará para mostrarla en el cliente.</li></ul> |
-|Sugerencias de correo  <br/> | <ul><li>Un valor que indica si están habilitadas las sugerencias de correo.</li><li>El número máximo de destinatarios por solicitud.</li><li>El tamaño máximo de mensaje.</li><li>Umbral de la audiencia de gran tamaño.</li><li>Un valor que indica si se muestra el número de destinatarios externos.</li><li>Una lista de los dominios internos.</li><li>Un valor que indica si están habilitadas las sugerencias de directiva.</li><li>El umbral del límite audiencia grandes para que indica si el correo se considera que tiene un gran número de destinatarios.  </li></ul>|
-|Reglas de protección  <br/> | <ul><li>Configuración de reglas de protección de su cliente.</li><li>Una lista de dominios que son internos a la organización.  </li></ul> |
+|MU  <br/> | <ul><li>Un valor que indica si la mensajería unificada está habilitada.</li><li>Un valor que indica si está habilitada la función reproducir en teléfono.</li><li>La cadena de marcado de reproducir en teléfono.</li></ul> |
+|Zumbidos de Directiva  <br/> | <ul><li>La Directiva zumbidos para mostrar en el cliente.</li></ul> |
+|Sugerencias de correo electrónico  <br/> | <ul><li>Un valor que indica si las sugerencias de correo están habilitadas.</li><li>El número máximo de destinatarios por solicitud.</li><li>El tamaño máximo del mensaje.</li><li>El umbral de gran audiencia.</li><li>Un valor que indica si se muestra el número de destinatarios externos.</li><li>Una lista de dominios internos.</li><li>Un valor que indica si las sugerencias de directiva están habilitadas.</li><li>El umbral de la punta de la audiencia grande para indicar si el correo se considera que tiene un gran número de destinatarios.  </li></ul>|
+|Reglas de protección  <br/> | <ul><li>Configuración de reglas de protección para el cliente.</li><li>Una lista de los dominios internos de la organización.  </li></ul> |
    
-## <a name="code-example-get-service-configuration-information-for-mail-tips-by-using-ews"></a>Ejemplo de código: obtener la información de configuración de servicio para las sugerencias de correo mediante el uso de EWS
+## <a name="code-example-get-service-configuration-information-for-mail-tips-by-using-ews"></a>Ejemplo de código: obtener información de configuración del servicio para sugerencias de correo mediante EWS
 
-En el ejemplo de código siguiente se usa la [operación de GetServiceConfiguration](http://msdn.microsoft.com/library/070cbfe5-325a-4955-8e4a-8230ea0459a7%28Office.15%29.aspx) para solicitar información de configuración de servicio para las sugerencias de correo. Puede solicitar información de configuración de servicios adicionales mediante la adición de más elementos [ConfigurationName](http://msdn.microsoft.com/library/3b524a2f-9c6b-4550-9f3d-f78d176b0f7b%28Office.15%29.aspx) con valores diferentes. 
+En el ejemplo de código siguiente se usa la [operación GetServiceConfiguration](https://msdn.microsoft.com/library/070cbfe5-325a-4955-8e4a-8230ea0459a7%28Office.15%29.aspx) para solicitar información de configuración del servicio para sugerencias de correo. Puede solicitar información de configuración del servicio adicional agregando más elementos [ConfigurationName](https://msdn.microsoft.com/library/3b524a2f-9c6b-4550-9f3d-f78d176b0f7b%28Office.15%29.aspx) con valores diferentes. 
   
 ```cs
 private static void GetServiceConfiguration(ExchangeService service, NetworkCredential creds)
@@ -42,9 +42,9 @@ private static void GetServiceConfiguration(ExchangeService service, NetworkCred
   const string getServiceConfigurationRequest = 
     "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" +
     "<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n" +
-    "               xmlns:m=\"http://schemas.microsoft.com/exchange/services/2006/messages\"\n" +
-    "               xmlns:t=\"http://schemas.microsoft.com/exchange/services/2006/types\" \n" +
-    "               xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"\n" +
+    "               xmlns:m=\"https://schemas.microsoft.com/exchange/services/2006/messages\"\n" +
+    "               xmlns:t=\"https://schemas.microsoft.com/exchange/services/2006/types\" \n" +
+    "               xmlns:soap=\"https://schemas.xmlsoap.org/soap/envelope/\"\n" +
     "               xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\n" +
     "  <soap:Header>\n" +
     "    <t:RequestServerVersion Version=\"Exchange2013\" />\n" +
@@ -97,16 +97,16 @@ private static void GetServiceConfiguration(ExchangeService service, NetworkCred
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-Después de solicitar información de configuración de servicio, use la [clase XmlDocument](http://msdn.microsoft.com/en-us/library/system.xml.xmldocument.aspx) para cargar el XML de la respuesta de manera que se puede analizar. A continuación, dependiendo de su situación, puede hacer una de las siguientes: 
+Una vez solicitada la información de configuración del servicio, use la [clase XmlDocument](https://msdn.microsoft.com/library/system.xml.xmldocument.aspx) para cargar el XML de respuesta para que pueda analizarlo. A continuación, según el escenario, puede realizar una de las siguientes acciones: 
   
-- Use la [operación de GetMailTips](http://msdn.microsoft.com/library/025483ec-a9f3-4735-8a95-d26e30ea7974%28Office.15%29.aspx) para obtener sugerencias de correo para las aplicaciones de cliente mostrar a los usuarios. 
+- Use la [operación GetMailTips](https://msdn.microsoft.com/library/025483ec-a9f3-4735-8a95-d26e30ea7974%28Office.15%29.aspx) para obtener sugerencias de correo para que las aplicaciones cliente se muestren a los usuarios. 
     
-- Si está habilitada la mensajería unificada, [Obtenga información sobre cómo reproducir los elementos del buzón](http://blogs.msdn.com/b/exchangedev/archive/2009/11/05/play-exchange-2010-mailbox-items-on-your-phone-by-using-the-ews-managed-api.aspx) a través de su teléfono. 
+- Si la mensajería unificada está habilitada, [obtenga información sobre cómo reproducir elementos de buzón](https://blogs.msdn.com/b/exchangedev/archive/2009/11/05/play-exchange-2010-mailbox-items-on-your-phone-by-using-the-ews-managed-api.aspx) a través del teléfono. 
     
 ## <a name="see-also"></a>Vea también
 
-- [Opciones de configuración para EWS en Exchange](configuration-options-for-ews-in-exchange.md)    
-- [Configurar una aplicación de EWS](setting-up-your-ews-application.md)    
+- [Opciones de configuración de EWS en Exchange](configuration-options-for-ews-in-exchange.md)    
+- [Configurar la aplicación EWS](setting-up-your-ews-application.md)    
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
     
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9c01fdc3-4adf-4e23-bc33-45d2a45ea08b
-description: El elemento AlternateId describe un identificador para convertir en una solicitud y los resultados de un identificador convertido en la respuesta.
-ms.openlocfilehash: e4d29087b63b52638dd93e4e3b643cdee39a5b97
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AlternateId describe un identificador que se va a convertir en una solicitud y los resultados de un identificador convertido en la respuesta.
+ms.openlocfilehash: 26df68bd814c2d323630c6bb40b4c31745017c71
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763428"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527456"
 ---
 # <a name="alternateid"></a>AlternateId
 
-El elemento **AlternateId** describe un identificador para convertir en una solicitud y los resultados de un identificador convertido en la respuesta. 
+El elemento **AlternateId** describe un identificador que se va a convertir en una solicitud y los resultados de un identificador convertido en la respuesta. 
   
 ```XML
 <AlternateId Id="" Format="" Mailbox="" IsArchive=""/>
@@ -30,38 +30,38 @@ El elemento **AlternateId** describe un identificador para convertir en una soli
  **AlternateIdType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|Id  <br/> |Describe el identificador de origen en una solicitud de [operación de ConvertId](convertid-operation.md) y el identificador de destino en una respuesta de la [operación de ConvertId](convertid-operation.md) .  <br/> |
-|Format  <br/> |Describe el formato de origen en una solicitud de [operación de ConvertId](convertid-operation.md) y se describe el formato de destino en una respuesta de la [operación de ConvertId](convertid-operation.md) . Se describe el formato de destino mediante el atributo **DestinationFormat** del elemento [ConvertId](convertid.md) en la solicitud. Este atributo es del tipo **IdFormatType**.  <br/> |
-|Buz?n de correo  <br/> |Describe la dirección de Protocolo Simple de transferencia de correo (SMTP) principal de buzón de correo que contiene los identificadores para traducir.  <br/> |
-|IsArchive  <br/> |Indica si el identificador representa una carpeta o elemento archivado. Un valor de **true** indica que el identificador representa una carpeta o elemento archivado. Este atributo es opcional.  <br/> |
+|Id  <br/> |Describe el identificador de origen en una solicitud de [operación ConvertId](convertid-operation.md) y describe el identificador de destino en una respuesta de [operación ConvertId](convertid-operation.md) .  <br/> |
+|Formato  <br/> |Describe el formato de origen en una solicitud de [operación ConvertId](convertid-operation.md) y describe el formato de destino en una respuesta de [operación ConvertId](convertid-operation.md) . El formato de destino se describe mediante el atributo **DestinationFormat** del elemento [ConvertId](convertid.md) en la solicitud. Este atributo es del tipo **IdFormatType**.  <br/> |
+|Buzón de correo  <br/> |Describe la dirección del Protocolo simple de transferencia de correo (SMTP) principal del buzón que contiene los identificadores que se van a traducir.  <br/> |
+|IsArchive  <br/> |Indica si el identificador representa un elemento o una carpeta archivados. Un valor de **true** indica que el identificador representa un elemento o una carpeta archivados. Este atributo es opcional.  <br/> |
    
-#### <a name="format-attribute-values"></a>Valores de atributos de formato
+#### <a name="format-attribute-values"></a>Valores de atributo de formato
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|EwsLegacyId  <br/> |Describe identificadores producidos por servicios Web de Exchange en la versión inicial de Exchange 2007.  <br/> |
-|EwsId  <br/> |Describe identificadores producidos por los servicios Web Exchange comenzando con Exchange 2007 SP1.  <br/> |
-|Propiedad EntryId  <br/> |Describe identificadores de MAPI, como se muestra en la propiedad de **entrada del objeto** .  <br/> |
-|HexEntryId  <br/> |Describe una representación codificada en hexadecimal de la propiedad de **entrada del objeto** . Éste es el formato de los identificadores de eventos de calendario de disponibilidad.  <br/> |
-|StoreId  <br/> |Describe identificadores de almacén de Exchange.  <br/> |
-|OwaId  <br/> |Se describe un identificador de Outlook Web App.  <br/> |
+|EwsLegacyId  <br/> |Describe los identificadores producidos por los servicios Web de Exchange en la versión de lanzamiento inicial de Exchange 2007.  <br/> |
+|EwsId  <br/> |Describe los identificadores que crean los servicios Web de Exchange a partir de Exchange 2007 SP1.  <br/> |
+|EntryId  <br/> |Describe los identificadores de MAPI, como en la propiedad **PR_ENTRYID** .  <br/> |
+|HexEntryId  <br/> |Describe una representación codificada en hexadecimal de la propiedad **PR_ENTRYID** . Este es el formato de los identificadores de evento de calendario de disponibilidad.  <br/> |
+|StoreId  <br/> |Describe los identificadores de almacén de Exchange.  <br/> |
+|OwaId  <br/> |Describe un identificador de Outlook Web App.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[ConvertIdResponseMessage](convertidresponsemessage.md) <br/> |Contiene el estado y el resultado de una solicitud de [operación ConvertId](convertid-operation.md) .  <br/> |
-|[SourceIds](sourceids.md) <br/> |Contiene los identificadores de origen para convertir.  <br/> |
+|[SourceIds](sourceids.md) <br/> |Contiene los identificadores de origen que se van a convertir.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -69,7 +69,7 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento **AlternateId** describe dos identificadores, el identificador de origen que se convierte en la solicitud de la [operación de ConvertId](convertid-operation.md) y el identificador convertido en el elemento [ConvertIdResponse](convertidresponse.md) . 
+El elemento **AlternateId** describe dos identificadores, el identificador de origen que se va a convertir en la solicitud de [operación ConvertId](convertid-operation.md) y el identificador convertido en el elemento [ConvertIdResponse](convertidresponse.md) . 
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -77,14 +77,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 ||||
 |:-----|:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación ConvertId](convertid-operation.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
-- [Convertir identificadores](http://msdn.microsoft.com/library/a5391746-b6ef-4f48-8fc8-8255258651aa%28Office.15%29.aspx)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Convertir identificadores](https://msdn.microsoft.com/library/a5391746-b6ef-4f48-8fc8-8255258651aa%28Office.15%29.aspx)
 

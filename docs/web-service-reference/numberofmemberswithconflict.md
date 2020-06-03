@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: e61154f7-d262-43ec-b2bf-1ba6804b28dc
-description: El elemento NumberOfMembersWithConflict representa el número de miembros de la lista de distribución que tienen un conflicto con una hora de reunión sugerida. Este elemento representa a los integrantes que tengan un estado de ocupado, fuera de la oficina o provisional.
-ms.openlocfilehash: 227783b4bed32686e8e098f88498fe8ebb25e3cc
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento NumberOfMembersWithConflict representa el número de miembros de la lista de distribución que tienen un conflicto con la hora de reunión sugerida. Este elemento representa los miembros que tienen un estado de ocupado, OOF o provisional.
+ms.openlocfilehash: 3ed81fc8adece140e8a94b08a9c2d94c2d9787c9
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836634"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529038"
 ---
 # <a name="numberofmemberswithconflict"></a>NumberOfMembersWithConflict
 
-El elemento **NumberOfMembersWithConflict** representa el número de miembros de la lista de distribución que tienen un conflicto con una hora de reunión sugerida. Este elemento representa a los integrantes que tengan un estado de **ocupado**, **fuera de la oficina**o **provisional**.
+El elemento **NumberOfMembersWithConflict** representa el número de miembros de la lista de distribución que tienen un conflicto con la hora de reunión sugerida. Este elemento representa los miembros que tienen un estado de **ocupado**, **OOF**o **provisional**.
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -33,7 +33,7 @@ El elemento **NumberOfMembersWithConflict** representa el número de miembros de
   
 [SuggestionArray](suggestionarray.md)
   
-[Sugerencia](suggestion.md)
+[Alguna](suggestion.md)
   
 [AttendeeConflictDataArray](attendeeconflictdataarray.md)
   
@@ -48,34 +48,34 @@ El elemento **NumberOfMembersWithConflict** representa el número de miembros de
  **int**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GroupAttendeeConflictData](groupattendeeconflictdata.md) <br/> |Contiene información de conflicto agregado sobre el número de usuarios que están disponibles, el número de usuarios que tienen conflictos y el número de usuarios que no tienen información de disponibilidad en una lista de distribución para una hora de reunión sugerida.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray/GroupAttendeeConflictData[i]` <br/> |
+|[GroupAttendeeConflictData](groupattendeeconflictdata.md) <br/> |Contiene información de conflictos de agregados sobre el número de usuarios que están disponibles, el número de usuarios que tienen conflictos y el número de usuarios que no tienen información de disponibilidad en una lista de distribución para una hora de reunión sugerida.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray/GroupAttendeeConflictData[i]` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -86,5 +86,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

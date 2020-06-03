@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: c5e251af-f795-43cc-baaf-95d84475677c
 description: El elemento DeleteRuleOperation contiene una operación para eliminar una regla de bandeja de entrada existente.
-ms.openlocfilehash: 3410361e0b896fb0ef01c1873c9f8b0ac99afe58
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 6b17f7f99f1fd9b9889db00fdf55fba5eef5aba8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764109"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526924"
 ---
 # <a name="deleteruleoperation"></a>DeleteRuleOperation
 
@@ -35,23 +35,23 @@ El elemento **DeleteRuleOperation** contiene una operación para eliminar una re
  **DeleteRuleOperationType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Identificador de regla](ruleid.md) <br/> |Especifica el identificador de la regla para eliminar.  <br/> |
+|[RuleId](ruleid.md) <br/> |Especifica el identificador de la regla que se va a eliminar.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Operations](operations.md) <br/> |Contiene una matriz de las operaciones de la regla que se puede realizar en una bandeja de entrada.  <br/> |
+|[Operations](operations.md) <br/> |Contiene una matriz de operaciones de regla que se pueden realizar en una bandeja de entrada.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -65,15 +65,15 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [UpdateInboxRules](updateinboxrules.md) 
 - [SetRuleOperation](setruleoperation.md) 
 - [CreateRuleOperation](createruleoperation.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

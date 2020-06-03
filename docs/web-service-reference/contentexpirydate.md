@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 475351f7-e8c1-4494-92e5-83bdb4bf2eaf
-description: El elemento ContentExpiryDate especifica la fecha de caducidad del contenido.
-ms.openlocfilehash: b344cbda67aaa26ed58519741c7b833cc4cfed1d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ContentExpiryDate especifica la fecha de expiración del contenido.
+ms.openlocfilehash: 80081de9cd45d8d63b8a1a1e29da38514f2c2d82
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763842"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527113"
 ---
 # <a name="contentexpirydate"></a>ContentExpiryDate
 
-El elemento **ContentExpiryDate** especifica la fecha de caducidad del contenido. 
+El elemento **ContentExpiryDate** especifica la fecha de expiración del contenido. 
   
 ```XML
 <ContentExpiryDate></ContentExpiryDate>
@@ -26,25 +26,25 @@ El elemento **ContentExpiryDate** especifica la fecha de caducidad del contenido
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[RightsManagementLicenseData](rightsmanagementlicensedata.md) <br/> |Especifica información sobre la licencia de administración de derechos.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ContentExpiryDate** es una cadena que especifica la fecha de caducidad del contenido. 
+El valor de texto del elemento **ContentExpiryDate** es una cadena que especifica la fecha de expiración del contenido. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

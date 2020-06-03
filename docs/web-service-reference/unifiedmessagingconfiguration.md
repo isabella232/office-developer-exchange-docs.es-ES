@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: cbdb4268-077e-44ed-8ec2-9d759c84cc6d
-description: El elemento UnifiedMessagingConfiguration contiene información de configuración de servicio para el servicio de mensajería unificada.
-ms.openlocfilehash: 3ad8f66ecdf21062c00c2a6ac6f65fac875da38c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UnifiedMessagingConfiguration contiene información de configuración del servicio para el servicio de mensajería unificada.
+ms.openlocfilehash: 3f9f4ed65721929c552615c07e2239f48ef837f3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840757"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528695"
 ---
 # <a name="unifiedmessagingconfiguration"></a>UnifiedMessagingConfiguration
 
-El elemento **UnifiedMessagingConfiguration** contiene información de configuración de servicio para el servicio de mensajería unificada. 
+El elemento **UnifiedMessagingConfiguration** contiene información de configuración del servicio para el servicio de mensajería unificada. 
   
 ```XML
 <UnifiedMessagingConfiguration>
@@ -34,25 +34,25 @@ El elemento **UnifiedMessagingConfiguration** contiene información de configura
  **UnifiedMessageServiceConfiguration**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UmEnabled](umenabled.md) <br/> |Indica si está habilitada la mensajería unificada para una cuenta. Se requiere este elemento.  <br/> |
-|[PlayOnPhoneDialString (servicios Web de Exchange)](playonphonedialstring-exchange-web-services.md) <br/> |Identifica la cadena de marcado de reproducir en teléfono. Se requiere este elemento.  <br/> |
-|[PlayOnPhoneEnabled](playonphoneenabled.md) <br/> |Indica si está habilitada la característica Reproducir en teléfono. Se requiere este elemento.  <br/> |
+|[UmEnabled](umenabled.md) <br/> |Indica si la mensajería unificada está habilitada para una cuenta. Se requiere este elemento.  <br/> |
+|[PlayOnPhoneDialString (servicios web Exchange)](playonphonedialstring-exchange-web-services.md) <br/> |Identifica la cadena de marcado de reproducción en teléfono. Se requiere este elemento.  <br/> |
+|[PlayOnPhoneEnabled](playonphoneenabled.md) <br/> |Indica si está habilitada la característica de reproducción en teléfono. Se requiere este elemento.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |Contiene la configuración del servicio.  <br/> |
+|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |Contiene las opciones de configuración del servicio.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -66,14 +66,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

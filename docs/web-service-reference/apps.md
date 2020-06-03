@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f6f0a2ca-22dd-4789-9eed-f0c1ec9036c4
-description: El elemento de aplicaciones contiene información acerca de todos los archivos de manifiesto de XML para las aplicaciones que se instalan en un buzón de correo.
-ms.openlocfilehash: 81b0cb76b02fcc9145f6d70eff12a0a0ac0ad51f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento apps contiene información sobre todos los archivos de manifiesto XML para las aplicaciones instaladas en un buzón.
+ms.openlocfilehash: b2d6f13241f68cbed449a9f9821f9a6ec6ff687a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763542"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527449"
 ---
 # <a name="apps"></a>Aplicaciones
 
-El elemento de **aplicaciones** contiene información acerca de todos los archivos de manifiesto de XML para las aplicaciones que se instalan en un buzón de correo. 
+El elemento **apps** contiene información sobre todos los archivos de manifiesto XML para las aplicaciones instaladas en un buzón. 
   
 ```XML
 <Apps>
@@ -27,11 +27,11 @@ El elemento de **aplicaciones** contiene información acerca de todos los archiv
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -51,14 +51,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |No disponible  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |No aplicable  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [App](app.md)
 - [GetAppManifestsResponse](getappmanifestsresponse.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

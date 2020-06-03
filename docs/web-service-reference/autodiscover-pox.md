@@ -1,5 +1,5 @@
 ---
-title: AutoDiscover (POX)
+title: Detección automática (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -8,19 +8,19 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 611fcf5f-780a-42ea-bccb-9462a2f0c095
-description: El elemento de detección automática es el elemento raíz en una solicitud de detección automática o la respuesta.
-ms.openlocfilehash: 0ac0daf20686e627905e9fe3a06722b7a681f3c9
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: El elemento Autodiscover es el elemento raíz en una respuesta o solicitud de detección automática.
+ms.openlocfilehash: 6fc889dc700a9fb068949d3ba5e4e6907b839f3c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353500"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44527435"
 ---
-# <a name="autodiscover-pox"></a>AutoDiscover (POX)
+# <a name="autodiscover-pox"></a>Detección automática (POX)
 
-El elemento de **detección automática** es el elemento raíz en una solicitud de detección automática o la respuesta. 
+El elemento **Autodiscover** es el elemento raíz en una respuesta o solicitud de detección automática. 
   
-- [AutoDiscover (POX)](autodiscover-pox.md)
+- [Detección automática (POX)](autodiscover-pox.md)
   
 ```xml
  <Autodiscover>
@@ -36,18 +36,18 @@ El elemento de **detección automática** es el elemento raíz en una solicitud 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Request (POX)](request-pox.md) <br/> |Contiene la solicitud para el servicio Detección automática.  <br/> |
-|[Response (POX)](response-pox.md) <br/> |Contiene la respuesta del servicio Detección automática.  <br/> |
+|[Solicitud (POX)](request-pox.md) <br/> |Contiene la solicitud al servicio Detección automática.  <br/> |
+|[Respuesta (POX)](response-pox.md) <br/> |Contiene la respuesta del servicio Detección automática.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,5 +55,5 @@ Ninguno.
   
 ## <a name="see-also"></a>Vea también
 
-- [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+- [Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

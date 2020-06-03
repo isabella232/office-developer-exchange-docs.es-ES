@@ -1,31 +1,31 @@
 ---
-title: Eliminar las citas de una serie periódica mediante el uso de EWS en Exchange
+title: Eliminar citas en una serie periódica mediante EWS en Exchange
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a9d5244a-bc4a-4e9c-9c6c-ff361e04cbf8
-description: Obtenga información sobre cómo eliminar las citas de una serie periódica mediante el uso de la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: 5e4d95058808adf8db159000bdf90c1f92945338
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Obtenga información sobre cómo eliminar citas en una serie periódica mediante la API administrada de EWS o EWS en Exchange.
+ms.openlocfilehash: 5646a30d218ed4d795044aefe5efea1399d19a79
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763076"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528128"
 ---
-# <a name="delete-appointments-in-a-recurring-series-by-using-ews-in-exchange"></a>Eliminar las citas de una serie periódica mediante el uso de EWS en Exchange
+# <a name="delete-appointments-in-a-recurring-series-by-using-ews-in-exchange"></a>Eliminar citas en una serie periódica mediante EWS en Exchange
 
-Obtenga información sobre cómo eliminar las citas de una serie periódica mediante el uso de la API administrada de EWS o EWS en Exchange.
+Obtenga información sobre cómo eliminar citas en una serie periódica mediante la API administrada de EWS o EWS en Exchange.
   
-Puede usar la API administrada de EWS o EWS para eliminar una serie de citas o reuniones, o de una sola instancia de la serie. El proceso que se utiliza para eliminar una serie completa es básicamente el mismo que el proceso que se utiliza para eliminar solo una sola aparición. Use los mismos métodos de API administrada de EWS u operaciones de EWS que se usa para [Eliminar una reunión o cita de una sola instancia](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md). La diferencia está en el identificador del elemento que se incluye en el método o la operación. Vamos a iniciar observando cómo ambos escenarios son los mismos. 
+Puede usar la API administrada de EWS o EWS para eliminar una serie de citas o reuniones, o solo una instancia de la serie. El proceso que se usa para eliminar una serie completa es esencialmente el mismo que el proceso que se usa para eliminar una sola ocurrencia. Use los mismos métodos de API administrada de EWS o las operaciones de EWS que usa para [eliminar una reunión o cita de instancia única](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md). La diferencia se encuentra en el identificador de elemento que se incluye en el método o en la operación. Comencemos observando el funcionamiento de ambos escenarios. 
   
-Para eliminar una serie periódica o una sola aparición de una serie periódica, necesita encontrar la aparición o la serie que desea eliminar y, a continuación, llamar al método apropiado u operación para quitarlo. Mientras que simplemente puede eliminar cualquier tipo de cita, se recomienda mantener actualizados de los asistentes o el organizador y cancelar las reuniones organizadas por el usuario y Rechazar convocatorias de reunión que el usuario no organizar.
+Para eliminar una serie periódica o una sola repetición en una serie periódica, debe buscar la ocurrencia o la serie que desea eliminar y, a continuación, llamar al método o la operación apropiados para quitarla. Aunque simplemente puede eliminar cualquier tipo de cita, le recomendamos que mantenga a los asistentes o al organizador al día y que cancele las reuniones que el usuario haya organizado y declinando las reuniones que el usuario no haya organizado.
   
-¿Cómo los escenarios son diferentes? Todos los detalles sobre el objeto de [cita](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) que se usa para invocar el método (para la API administrada de EWS) o el identificador de elemento incluirlo en la solicitud de operación (de EWS). Para eliminar una serie completa, necesita el identificador de objeto o el elemento de **cita** para el patrón de periódico. Para eliminar una sola aparición, necesita el identificador de objeto o el elemento de **cita** para la repetición. 
+¿En qué se diferencian los escenarios? Todo el objeto [appointment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) se usa para invocar el método (para la API administrada EWS) o el identificador de elemento incluido en la solicitud de operación (para EWS). Para eliminar una serie completa, necesitará el objeto de **cita** o el identificador de elemento del patrón recurrente. Para eliminar una sola repetición, necesitará el objeto de **cita** o identificador de elemento para la ocurrencia. 
   
-## <a name="delete-a-recurring-appointment-by-using-the-ews-managed-api"></a>Eliminación de una cita periódica mediante el uso de la API administrada de EWS
+## <a name="delete-a-recurring-appointment-by-using-the-ews-managed-api"></a>Eliminar una cita periódica mediante la API administrada de EWS
 
-En este ejemplo se supone que se han autenticado a un servidor de Exchange y ha adquirido un objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) con el nombre de **servicio**. El parámetro _recurringItem_ es un objeto de **cita** para el patrón de periódico o una sola aparición. El parámetro _deleteEntireSeries_ indica si se debe eliminar toda la serie que forma parte de la _recurringItem_ . 
+En este ejemplo se supone que se ha autenticado en un servidor de Exchange y que se ha adquirido un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) denominado **Service**. El parámetro _recurringItem_ es un objeto de **cita** para el patrón periódico o una sola ocurrencia. El parámetro _deleteEntireSeries_ indica si se va a eliminar la serie completa de la que forma parte _recurringItem_ . 
   
 ```cs
 public static bool DeleteRecurringItem(ExchangeService service, Appointment recurringItem, bool deleteEntireSeries)
@@ -114,23 +114,23 @@ public static bool DeleteRecurringItem(ExchangeService service, Appointment recu
 }
 ```
 
-Para poder utilizar este ejemplo, necesita [enlazar a una ocurrencia o el patrón periódico](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)y pase el objeto de **cita** resultante al método. Tenga en cuenta que si tiene acceso a las citas mediante el uso de una clase [CalendarView](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) , los elementos resultantes son todas las apariciones único. Por el contrario, si usa la clase [artículoVer](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.itemview%28v=exchg.80%29.aspx) , los elementos resultantes son todos los patrones periódicos. 
+Para usar este ejemplo, debe [enlazar a una ocurrencia o a un patrón recurrente](how-to-access-a-recurring-series-by-using-ews-in-exchange.md), y pasar el objeto **appointment** resultante al método. Tenga en cuenta que si tiene acceso a las citas mediante una clase [CalendarView](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) , los elementos resultantes son todas las ocurrencias únicas. Por el contrario, si usa la clase [ItemView](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.itemview%28v=exchg.80%29.aspx) , los elementos resultantes son todos los maestros periódicos. 
   
-## <a name="delete-a-recurring-appointment-by-using-ews"></a>Eliminación de una cita periódica mediante el uso de EWS
+## <a name="delete-a-recurring-appointment-by-using-ews"></a>Eliminar una cita periódica mediante EWS
 
-Eliminación de una serie periódica mediante el uso de EWS es lo mismo que [Eliminar una reunión de instancia única](how-to-delete-appointments-in-a-recurring-series-by-using-ews-in-exchange.md). De hecho, las solicitudes SOAP tienen el mismo formato. Una vez más, la clave es el identificador de elemento utilizado en la solicitud. Si el identificador de elemento corresponde al patrón de periódica, se eliminará toda la serie. Si el identificador de elemento corresponde a una sola aparición, se eliminará la única aparición.
+Eliminar una serie periódica mediante EWS es lo mismo que [eliminar una reunión de instancia única](how-to-delete-appointments-in-a-recurring-series-by-using-ews-in-exchange.md). De hecho, las solicitudes SOAP tienen el mismo formato. Una vez más, la clave es el identificador de elemento usado en la solicitud. Si el identificador de elemento corresponde al patrón recurrente, se eliminará toda la serie. Si el identificador de elemento corresponde a una sola ocurrencia, solo se eliminará esa repetición.
   
 > [!NOTE]
-> En los ejemplos de código siguientes, se acortan los atributos **ItemId**, **ChangeKey**y **RecurringMasterId** para mejorar la legibilidad. 
+> En los ejemplos de código siguientes, los atributos **Itemid**, **changekey**y **RecurringMasterId** se acortan para facilitar su lectura. 
   
-En este ejemplo se usa la [operación CreateItem](http://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) con un elemento de [CancelCalendarItem](http://msdn.microsoft.com/library/a2046402-a176-44d5-b4b3-adb696581935%28Office.15%29.aspx) para cancelar una reunión para la que el usuario es el organizador. El valor del elemento [ReferenceItemId](http://msdn.microsoft.com/library/8fd4bb12-a94b-43f5-be3b-f435684e311d%28Office.15%29.aspx) indica el elemento que se va a cancelar, y puede ser el identificador de elemento de un patrón periódico o una sola aparición. 
+En este ejemplo, se usa la [operación CreateItem](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) con un elemento [CancelCalendarItem](https://msdn.microsoft.com/library/a2046402-a176-44d5-b4b3-adb696581935%28Office.15%29.aspx) para cancelar una reunión para la que el usuario es el organizador. El valor del elemento [ReferenceItemId](https://msdn.microsoft.com/library/8fd4bb12-a94b-43f5-be3b-f435684e311d%28Office.15%29.aspx) indica el elemento que se va a cancelar, y puede ser el identificador de elemento de un patrón recurrente o una sola ocurrencia. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -150,14 +150,14 @@ En este ejemplo se usa la [operación CreateItem](http://msdn.microsoft.com/libr
 </soap:Envelope>
 ```
 
-En este ejemplo se usa la **operación CreateItem** con un elemento de [DeclineItem](http://msdn.microsoft.com/library/2d8d2389-924e-4d03-a324-35d56cf0d6b1%28Office.15%29.aspx) para rechazar una reunión para la que el usuario no es el organizador. Como se muestra en el ejemplo anterior, el valor del elemento **ReferenceItemId** indica el elemento que se va a rechazar, y puede ser el identificador de elemento de un patrón periódico o una sola aparición. 
+En este ejemplo se utiliza la **operación CreateItem** con un elemento [DeclineItem](https://msdn.microsoft.com/library/2d8d2389-924e-4d03-a324-35d56cf0d6b1%28Office.15%29.aspx) para rechazar una reunión para la que el usuario no es el organizador. Como en el ejemplo anterior, el valor del elemento **ReferenceItemId** indica el elemento que se va a rechazar, y puede ser el identificador de elemento de un patrón recurrente o una sola ocurrencia. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -176,14 +176,14 @@ En este ejemplo se usa la **operación CreateItem** con un elemento de [DeclineI
 </soap:Envelope>
 ```
 
-En este ejemplo se usa la [operación DeleteItem](http://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) para eliminar una sola aparición de una cita sin asistentes. La aparición para eliminar se especifica mediante el elemento [OccurrenceItemId](http://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) , que se construye a partir del identificador de elemento del patrón periódico y el índice de la aparición. 
+En este ejemplo se usa la [operación DeleteItem](https://msdn.microsoft.com/library/3e26c416-fa12-476e-bfd2-5c1f4bb7b348%28Office.15%29.aspx) para eliminar una única ocurrencia de una cita sin asistentes. La repetición que se va a eliminar se especifica mediante el elemento [OccurrenceItemId](https://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) , que se crea a partir del identificador de elemento del patrón recurrente y el índice de la ocurrencia. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -200,7 +200,7 @@ En este ejemplo se usa la [operación DeleteItem](http://msdn.microsoft.com/libr
 </soap:Envelope>
 ```
 
-Tenga en cuenta que puede obtener el mismo resultado mediante el reemplazo del elemento **OccurrenceItemId** con un elemento de [ItemId](http://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) que contiene el identificador de elemento de la aparición, tal como se muestra. 
+Tenga en cuenta que puede obtener el mismo resultado si reemplaza el elemento **OccurrenceItemId** con un elemento [Itemid](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) que contenga el identificador de elemento de la ocurrencia, tal como se muestra. 
   
 ```XML
 <m:ItemIds>
@@ -214,18 +214,18 @@ Tenga en cuenta que puede obtener el mismo resultado mediante el reemplazo del e
 
 - [Patrones de periodicidad y EWS](recurrence-patterns-and-ews.md)
     
-- [Obtener acceso a una serie periódica mediante el uso de EWS en Exchange](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)
+- [Obtener acceso a una serie periódica mediante EWS en Exchange](how-to-access-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Creación de una serie periódica mediante EWS en Exchange](how-to-create-a-recurring-series-by-using-ews-in-exchange.md)
+- [Crear una serie periódica mediante EWS en Exchange](how-to-create-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Actualización de una serie periódica mediante el uso de EWS](how-to-update-a-recurring-series-by-using-ews.md)
+- [Actualizar una serie periódica mediante EWS](how-to-update-a-recurring-series-by-using-ews.md)
     
-- [Actualización de una serie periódica mediante el uso de EWS en Exchange](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
+- [Actualizar una serie periódica mediante EWS en Exchange](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
     
 - [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)
     
-- [Crear citas y reuniones mediante el uso de EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
+- [Crear citas y reuniones mediante EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
     
-- [Eliminar las citas y cancelar reuniones mediante el uso de EWS en Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
+- [Eliminar citas y cancelar reuniones mediante EWS en Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
     
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ed08dee7-ba01-4b10-a53a-d28b8e1c3bf9
-description: El elemento PhoneticFullName contiene el nombre completo de un contacto, incluido el nombre y el apellido, escrito fonéticamente.
-ms.openlocfilehash: 496d0a58ebec68c2292088f87ba4aec336c23d80
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PhoneticFullName contiene el nombre completo de un contacto, incluidos el nombre y los apellidos, deletreados fonéticamente.
+ms.openlocfilehash: a206a33742499858066acd91f02529d35f22b001
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836780"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528843"
 ---
 # <a name="phoneticfullname"></a>PhoneticFullName
 
-El elemento **PhoneticFullName** contiene el nombre completo de un contacto, incluido el nombre y el apellido, escrito fonéticamente. 
+El elemento **PhoneticFullName** contiene el nombre completo de un contacto, incluidos el nombre y los apellidos, deletreados fonéticamente. 
   
 ```XML
 <PhoneticFullName/>
@@ -26,25 +26,25 @@ El elemento **PhoneticFullName** contiene el nombre completo de un contacto, inc
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Nombre del elemento**|**Descripción**|
 |:-----|:-----|
-|[Contact](contact.md) <br/> |Representa un elemento de contacto en el almacén de Exchange.  <br/> |
+|[Contacto](contact.md) <br/> |Representa un elemento de contacto en el almacén de Exchange.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto es una cadena que representa el nombre completo de un contacto, incluido el nombre y el apellido, escrito fonéticamente.
+El valor de texto es una cadena que representa el nombre completo de un contacto, incluidos el nombre y los apellidos, deletreados fonéticamente.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,17 +56,17 @@ Este elemento se introdujo en Exchange Server 2010 Service Pack 2 (SP2).
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Creación de contactos (servicios Web de Exchange)](http://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
+[Creación de contactos (servicios Web de Exchange)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
 
