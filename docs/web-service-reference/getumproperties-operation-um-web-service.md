@@ -15,7 +15,7 @@ ms.openlocfilehash: 42176d9cd0288af6515aeea616a4f216a419410c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462475"
 ---
 # <a name="getumproperties-operation-um-web-service"></a>Operación GetUMProperties (servicio Web de mensajería unificada)
@@ -24,7 +24,7 @@ La operación GetUMProperties obtiene todas las propiedades de mensajería unifi
   
 ## <a name="getumproperties-request-example"></a>Ejemplo de solicitud GetUMProperties
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud GetUMProperties muestra cómo crear una solicitud para obtener las propiedades de mensajería unificada de un buzón.
   
@@ -41,7 +41,7 @@ El siguiente ejemplo de una solicitud GetUMProperties muestra cómo crear una so
 
 ## <a name="successful-getumproperties-response-example"></a>Ejemplo de respuesta GetUMProperties correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una respuesta de GetUMProperties muestra una respuesta a la solicitud GetUMProperties.
   

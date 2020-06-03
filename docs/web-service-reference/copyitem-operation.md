@@ -16,7 +16,7 @@ ms.openlocfilehash: ec07700a5ebbdc8774aa2134919634b8dfd02406
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462181"
 ---
 # <a name="copyitem-operation"></a>Operación CopyItem
@@ -25,7 +25,7 @@ La operación **CopyItem** copia elementos y coloca los elementos en una carpeta
   
 ## <a name="copyitem-request-example"></a>Ejemplo de solicitud CopyItem
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **CopyItem** muestra cómo crear una solicitud para copiar un elemento en la bandeja de entrada. 
   
@@ -74,7 +74,7 @@ Para buscar otras opciones para el mensaje de solicitud de la operación **CopyI
   
 ## <a name="successful-copyitem-response"></a>Respuesta CopyItem correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **CopyItem** . 
   
@@ -130,7 +130,7 @@ Para buscar otras opciones para el mensaje de respuesta de la operación **CopyI
   
 ## <a name="copyitem-error-response"></a>Respuesta de error de CopyItem
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a una solicitud **CopyItem** . 
   

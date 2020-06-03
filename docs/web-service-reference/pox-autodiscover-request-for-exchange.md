@@ -13,7 +13,7 @@ ms.openlocfilehash: b2138f9813c7b75aef9afb90089b9b874aac7532
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461670"
 ---
 # <a name="pox-autodiscover-request-for-exchange"></a>Solicitud de detección automática de POX para Exchange
@@ -22,7 +22,7 @@ La solicitud de detección automática contiene una consulta para la configuraci
   
 ## <a name="autodiscover-request-example"></a>Ejemplo de solicitud de detección automática
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de XML muestra un cuerpo de solicitud de detección automática.
   

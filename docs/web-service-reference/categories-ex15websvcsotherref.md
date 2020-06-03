@@ -16,7 +16,7 @@ ms.openlocfilehash: 0d9f7068aa81306a10436ed0ca0d45f6d3b2c3a3
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462216"
 ---
 # <a name="categories"></a>Categorías
@@ -50,7 +50,7 @@ Ninguna.
 |:-----|:-----|
 |[Item](item.md) <br/> |Representa un elemento en el almacén de Exchange.  <br/> |
 |[RemoveItem](removeitem.md) <br/> |Quita un elemento del almacén de Exchange.  <br/> |
-|[Mensaje](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange.  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange.  <br/> |
 |[Tarea](task.md) <br/> |Representa una tarea del almacén de Exchange.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
 |[Conversación (ConversationType)](conversation-conversationtype.md) <br/> |Representa una sola conversación.  <br/> |

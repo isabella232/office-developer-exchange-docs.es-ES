@@ -16,7 +16,7 @@ ms.openlocfilehash: f1cc199bdaf684d8d74687ed7f064eb66fee48ff
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462587"
 ---
 # <a name="findfolder-operation"></a>Operación FindFolder
@@ -47,7 +47,7 @@ La operación **FindFolder** puede usar los encabezados SOAP que se enumeran y d
    
 ## <a name="findfolder-request-example"></a>Ejemplo de solicitud FindFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **FindFolder** muestra cómo crear una solicitud para buscar todas las carpetas que se encuentran en una bandeja de entrada. 
   
@@ -92,7 +92,7 @@ Esta solicitud de **FindFolder** incluye los siguientes elementos:
   
 ## <a name="findfolder-response-example"></a>Ejemplo de respuesta FindFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo del cuerpo del Protocolo simple de acceso a objetos (SOAP) muestra una respuesta correcta a la solicitud **FindFolder** . La respuesta contiene los elementos que se devuelven cuando se usa el valor predeterminado para [BaseShape](baseshape.md) . 
   
@@ -171,7 +171,7 @@ Las propiedades que se devuelven en la respuesta las determina [BaseShape](bases
   
 ## <a name="findfolder-error-response-example"></a>Ejemplo de respuesta de error FindFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de cuerpo SOAP muestra una respuesta de error que se produce al buscar una carpeta identificada por un identificador de carpeta con formato incorrecto.
   

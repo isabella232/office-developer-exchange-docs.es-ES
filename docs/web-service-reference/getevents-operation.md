@@ -16,7 +16,7 @@ ms.openlocfilehash: 9258fd003c242911866aa7abbca5eba2b9582223
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462517"
 ---
 # <a name="getevents-operation"></a>Operación GetEvents
@@ -32,7 +32,7 @@ Los cambios en los elementos del calendario pueden dar como resultado la generac
   
 ## <a name="getevents-request-example"></a>Ejemplo de solicitud GetEvents
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra cómo solicitar los eventos y elementos asociados a una suscripción identificada por el identificador de suscripción y la marca de agua.
   
@@ -63,7 +63,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="successful-getevents-response-example"></a>Ejemplo de respuesta GetEvents correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una respuesta muestra una notificación de la existencia de dos nuevos mensajes de correo desde que se envió al servidor la última solicitud de notificación.
   
@@ -150,7 +150,7 @@ Para buscar otras opciones para el mensaje de respuesta de la operación **GetEv
   
 ## <a name="getevents-error-response-example"></a>Ejemplo de respuesta de error GetEvents
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a una solicitud **GetEvents** . 
   

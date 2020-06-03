@@ -12,7 +12,7 @@ ms.openlocfilehash: 62fb259672c47242a57b939deb4887e1e5519e2a
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461761"
 ---
 # <a name="transport-agents-in-exchange"></a>Agentes de transporte en Exchange
@@ -46,7 +46,7 @@ Exchange 2013 proporciona una biblioteca de clases que admiten la extensión del
 ## <a name="see-also"></a>Vea también
 
 - [Desarrollo de Exchange y Exchange Online](../exchange-server-development.md)    
-- [Explorar la API administrada de EWS, EWS y servicios web de Exchange](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)   
+- [Explorar la API administrada de EWS, EWS y servicios web en Exchange](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)   
 - [Copia de seguridad y restauración para Exchange](../backup-restore/backup-and-restore-for-exchange-2013.md) 
     
 

@@ -16,7 +16,7 @@ ms.openlocfilehash: ac7eafd61c62b077a8d20e5fd8d004924bf06cf1
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461292"
 ---
 # <a name="getattachment-operation"></a>Operación GetAttachment
@@ -25,7 +25,7 @@ La operación GetAttachment se usa para recuperar datos adjuntos existentes en l
   
 ## <a name="getattachment-request-example"></a>Ejemplo de solicitud GetAttachment
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de solicitud GetAttachment muestra cómo obtener datos adjuntos.
   
@@ -72,7 +72,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="getattachment-response-example"></a>Ejemplo de respuesta GetAttachment
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a una solicitud GetAttachment. En este ejemplo se devuelven datos adjuntos de archivo.
   

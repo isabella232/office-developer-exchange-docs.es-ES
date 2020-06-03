@@ -16,7 +16,7 @@ ms.openlocfilehash: ef768807431ff3e02c6af7277c1c2a750607ed92
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462657"
 ---
 # <a name="findconversation-operation"></a>Operación FindConversation
@@ -25,7 +25,7 @@ La operación **FindConversation** enumera una lista de conversaciones en una ca
   
 ## <a name="findconversation-request-example"></a>Ejemplo de solicitud FindConversation
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **FindConversation** muestra cómo crear una solicitud para buscar la primera conversación en la carpeta Bandeja de entrada. 
   
@@ -68,7 +68,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="successful-findconversation-response-example"></a>Ejemplo de respuesta FindConversation correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **FindConversation** . 
   
@@ -212,7 +212,7 @@ En la respuesta se usan los siguientes elementos:
     
 ## <a name="findconversation-error-response-example"></a>Ejemplo de respuesta de error FindConversation
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a la solicitud **FindConversation** causada por un error de validación de esquema. 
   

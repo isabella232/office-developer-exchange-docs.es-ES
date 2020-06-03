@@ -16,7 +16,7 @@ ms.openlocfilehash: 88b5475dd2f0fe6d334bad51a0fe8d0beb767634
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463156"
 ---
 # <a name="setuseroofsettings-operation"></a>Operación SetUserOofSettings
@@ -34,7 +34,7 @@ La operación **SetUserOofSettings** puede usar los encabezados SOAP que se enum
    
 ## <a name="setuseroofsettings-request-example"></a>Ejemplo de solicitud SetUserOofSettings
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **SetUserOofSettings** establece un valor OOF para 10 días. 
   
@@ -103,7 +103,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="successful-setuseroofsettings-response-example"></a>Ejemplo de respuesta SetUserOofSettings correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **SetUserOofSettings** . 
   

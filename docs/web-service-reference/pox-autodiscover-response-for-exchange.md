@@ -13,7 +13,7 @@ ms.openlocfilehash: 0d903d9829fa6dc1273d8b25a1eeb0b68700d5da
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462286"
 ---
 # <a name="pox-autodiscover-response-for-exchange"></a>Respuesta de detección automática de POX para Exchange
@@ -22,7 +22,7 @@ La respuesta de detección automática contiene una respuesta a una solicitud de
   
 ## <a name="autodiscover-response-example"></a>Ejemplo de respuesta de detección automática
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de detección automática correcta.
   
@@ -124,7 +124,7 @@ Los siguientes elementos se usan en el cuerpo de la respuesta:
     
 ## <a name="autodiscover-error-response-example"></a>Ejemplo de respuesta de error de detección automática
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el siguiente ejemplo se muestra una respuesta de error de detección automática.
   

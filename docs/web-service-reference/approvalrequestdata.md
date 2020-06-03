@@ -12,7 +12,7 @@ ms.openlocfilehash: decbd4d646a56b9810387adcdb6a9049da89bc38
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44462307"
 ---
 # <a name="approvalrequestdata"></a>ApprovalRequestData
@@ -43,7 +43,7 @@ Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Mensaje](message-ex15websvcsotherref.md)
+[Message](message-ex15websvcsotherref.md)
   
 ## <a name="remarks"></a>Comentarios
 
@@ -62,6 +62,6 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
    
 ## <a name="see-also"></a>Vea también
 
-- [Mensaje](message-ex15websvcsotherref.md)
+- [Message](message-ex15websvcsotherref.md)
 - [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

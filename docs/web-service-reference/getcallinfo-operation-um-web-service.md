@@ -15,7 +15,7 @@ ms.openlocfilehash: 6b5664dfe16f9c74cc7175098145141b815a6355
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44461243"
 ---
 # <a name="getcallinfo-operation-um-web-service"></a>Operación GetCallInfo (servicio Web de mensajería unificada)
@@ -24,7 +24,7 @@ La operación GetCallInfo devuelve el estado de la llamada saliente especificada
   
 ## <a name="getcallinfo-request-example"></a>Ejemplo de solicitud GetCallInfo
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud GetCallInfo muestra cómo crear una solicitud para obtener información sobre una llamada saliente especificada.
   
@@ -43,7 +43,7 @@ El siguiente ejemplo de una solicitud GetCallInfo muestra cómo crear una solici
 
 ## <a name="successful-getcallinfo-response-example"></a>Ejemplo de respuesta GetCallInfo correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una respuesta de GetCallInfo muestra una respuesta a una solicitud de GetCallInfo.
   
