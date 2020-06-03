@@ -16,7 +16,7 @@ ms.openlocfilehash: 6a455e483ad2e5c84b91cfaa7562f4f1ec46a112
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465684"
 ---
 # <a name="moveitem-operation"></a>Operación MoveItem
@@ -25,7 +25,7 @@ La operación **MoveItem** se usa para mover uno o más elementos a una única c
   
 ## <a name="moveitem-request-example"></a>Ejemplo de solicitud MoveItem
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **MoveItem** muestra cómo mover un elemento a la carpeta Borradores. 
   
@@ -74,7 +74,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="moveitem-response-example"></a>Ejemplo de respuesta MoveItem
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **MoveItem** . 
   

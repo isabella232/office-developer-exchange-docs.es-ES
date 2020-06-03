@@ -16,7 +16,7 @@ ms.openlocfilehash: cdab239a5b0b1406d2ce31f4604e4737d037cd7e
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463506"
 ---
 # <a name="applyconversationaction-operation"></a>Operación ApplyConversationAction
@@ -25,7 +25,7 @@ La operación **ApplyConversationAction** establece una acción de una vez o de 
   
 ## <a name="applyconversationaction-request-example"></a>Ejemplo de solicitud ApplyConversationAction
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **ApplyConversationAction** muestra cómo mover los elementos de la conversación especificada a otra carpeta. Los elementos que se agregan a la conversación también se moverán a la carpeta especificada. 
   
@@ -63,7 +63,7 @@ Los identificadores de conversación y carpeta se han abreviado para preservar l
   
 ## <a name="applyconversationaction-response-example"></a>Ejemplo de respuesta ApplyConversationAction
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **ApplyConversationAction** . 
   

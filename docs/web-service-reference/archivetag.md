@@ -12,7 +12,7 @@ ms.openlocfilehash: 23167f3c96a6756fe4c6d915a4de91e815e620d9
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44464766"
 ---
 # <a name="archivetag"></a>ArchiveTag
@@ -49,7 +49,7 @@ Ninguna.
 |[DistributionList](distributionlist.md) <br/> |Representa una lista de distribución.  <br/> |
 |[Folder](folder.md) <br/> |Define una carpeta para crear, obtener, buscar, sincronizar o actualizar.  <br/> |
 |[Elemento](item.md) <br/> |Representa un elemento genérico del almacén de Exchange.  <br/> |
-|[Mensaje](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Microsoft Exchange.  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Microsoft Exchange.  <br/> |
 |[PostItem](postitem.md) <br/> |Representa un elemento post en el almacén de Exchange.  <br/> |
 |[SearchFolder](searchfolder.md) <br/> |Representa una carpeta de búsqueda contenida en un buzón.  <br/> |
 |[Tarea](task.md) <br/> |Representa una tarea del almacén de Exchange.  <br/> |

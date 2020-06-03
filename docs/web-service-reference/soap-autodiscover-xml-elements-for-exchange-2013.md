@@ -13,7 +13,7 @@ ms.openlocfilehash: 3b88429488dbecd4ed7c3adf56462f34fa0d4b17
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465187"
 ---
 # <a name="soap-autodiscover-xml-elements-for-exchange-2013"></a>Elementos XML de detección automática de SOAP para Exchange 2013

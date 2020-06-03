@@ -16,7 +16,7 @@ ms.openlocfilehash: 0c9233146d21c7014be15896426b968106485200
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463786"
 ---
 # <a name="createuserconfiguration-operation"></a>Operación CreateUserConfiguration
@@ -25,7 +25,7 @@ La operación **CreateUserConfiguration** crea un objeto de configuración de us
   
 ## <a name="createuserconfiguration-request-example"></a>Ejemplo de solicitud CreateUserConfiguration
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **CreateUserConfiguration** muestra cómo crear una solicitud para crear un objeto de configuración de usuario en la carpeta Borradores. 
   
@@ -69,7 +69,7 @@ El siguiente ejemplo de una solicitud **CreateUserConfiguration** muestra cómo 
 
 ## <a name="createuserconfiguration-response-example"></a>Ejemplo de respuesta CreateUserConfiguration
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **CreateUserConfiguration** . 
   

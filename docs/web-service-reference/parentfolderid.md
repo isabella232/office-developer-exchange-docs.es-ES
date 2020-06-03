@@ -16,7 +16,7 @@ ms.openlocfilehash: 3bad638aa21019472df8f487f1e065d2e725e750
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44465754"
 ---
 # <a name="parentfolderid"></a>ParentFolderId
@@ -63,7 +63,7 @@ Ninguna.
 |[MeetingMessage](meetingmessage.md) <br/> |Representa un mensaje de reunión en un buzón.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Representa una convocatoria de reunión en un buzón.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta a una reunión en un buzón.  <br/> |
-|[Mensaje](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico en un buzón.  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico en un buzón.  <br/> |
 |[ModifiedEvent](modifiedevent.md) <br/> |Representa un evento en el que se modifica un elemento o una carpeta.  <br/> |
 |[MovedEvent](movedevent.md) <br/> |Representa un evento en el que se mueve un elemento o una carpeta de una carpeta principal a otra carpeta principal.  <br/> |
 |[NewMailEvent](newmailevent.md) <br/> |Representa un evento desencadenado por un nuevo elemento de correo en un buzón.  <br/> |

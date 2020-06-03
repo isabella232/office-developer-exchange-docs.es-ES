@@ -16,7 +16,7 @@ ms.openlocfilehash: 17a23d4c2a35761e831610f3514c980a5a67e12b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44463338"
 ---
 # <a name="getitem-operation-task"></a>Operación GetItem (tarea)
@@ -29,7 +29,7 @@ El formato de la solicitud GetItem para tareas es el mismo que GetItem para cual
   
 ## <a name="task-getitem-request-example"></a>Ejemplo de solicitud GetItem de tarea
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud GetItem muestra cómo obtener un elemento de tarea.
   
@@ -76,7 +76,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="task-getitem-response-example"></a>Ejemplo de respuesta GetItem de tarea
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a una solicitud GetItem.
   
