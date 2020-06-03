@@ -16,7 +16,7 @@ ms.openlocfilehash: 8028c56aa306774b54b39e5ee1ac0382b9113fa0
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456573"
 ---
 # <a name="createattachment-operation"></a>Operación CreateAttachment
@@ -25,7 +25,7 @@ La operación CreateAttachment crea un elemento o datos adjuntos de archivo y lo
   
 ## <a name="file-createattachment-request-example"></a>Ejemplo de solicitud de CreateAttachment de archivo
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud CreateAttachment muestra cómo crear un archivo adjunto.
   
@@ -77,7 +77,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="successful-file-createattachment-response-example"></a>Ejemplo de archivo con éxito CreateAttachment Response
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateAttachment.
   
@@ -137,7 +137,7 @@ En la respuesta se usan los siguientes elementos:
     
 ## <a name="item-createattachment-request-example"></a>Ejemplo de solicitud de CreateAttachment de elemento
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud CreateAttachment muestra cómo crear un elemento adjunto.
   
@@ -186,13 +186,13 @@ Los siguientes elementos se usan en la solicitud:
     
 - [Nombre (AttachmentType)](name-attachmenttype.md)
     
-- [Mensaje](message-ex15websvcsotherref.md)
+- [Message](message-ex15websvcsotherref.md)
     
 - [Asunto](subject.md)
     
 ## <a name="successful-item-createattachment-response-example"></a>Ejemplo de respuesta de CreateAttachment de elemento correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateAttachment.
   
@@ -252,7 +252,7 @@ En la respuesta se usan los siguientes elementos:
     
 ## <a name="createattachment-error-response-example"></a>Ejemplo de respuesta de error CreateAttachment
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a la solicitud CreateAttachment. El error se debe a que no se ha especificado el nombre de los datos adjuntos.
   

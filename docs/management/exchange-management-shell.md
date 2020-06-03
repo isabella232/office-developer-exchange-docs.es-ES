@@ -12,7 +12,7 @@ ms.openlocfilehash: 38e75339a4ad97cf8ff99e1cbe9c01059e157941
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44435810"
 ---
 # <a name="exchange-management-shell"></a>Shell de administración de Exchange
@@ -32,7 +32,7 @@ El shell de administración de Exchange proporciona un amplio conjunto de comand
 |Las pruebas y las herramientas de depuración disponibles  <br/> |Puede usar una de las muchas aplicaciones de terceros para probar y depurar scripts del shell de administración de Exchange.  <br/> Puede usar Visual Studio y herramientas de terceros para probar y depurar aplicaciones de Shell de administración de Exchange administradas.  <br/> |
 |Requisitos de plataforma del servidor  <br/> |Puede usar el shell de administración de Exchange en cualquier servidor de Exchange que tenga instalado Windows PowerShell 2,0.  <br/> |
 |Requisitos de plataforma del cliente  <br/> |Las aplicaciones cliente de Shell de administración de Exchange requieren Windows PowerShell 2,0.  <br/> |
-|Permisos  <br/> |Ejecutar una aplicación Shell de administración de Exchange requiere que el usuario tenga derechos de control de acceso basados en roles en los datos afectados del almacén de Exchange.<br/>Para obtener más información acerca del control de acceso basado en roles, consulte [Understanding role based access control](https://technet.microsoft.com/library/dd298183.aspx).  <br/> |
+|Permissions  <br/> |Ejecutar una aplicación Shell de administración de Exchange requiere que el usuario tenga derechos de control de acceso basados en roles en los datos afectados del almacén de Exchange.<br/>Para obtener más información acerca del control de acceso basado en roles, consulte [Understanding role based access control](https://technet.microsoft.com/library/dd298183.aspx).  <br/> |
    
 En los artículos de esta sección se describen las características de Shell de administración de Exchange que son importantes para crear herramientas de administración de Exchange. Para obtener información acerca de cómo planear, configurar o mantener Exchange, consulte el sitio de [Exchange](https://docs.microsoft.com/exchange/) .
   

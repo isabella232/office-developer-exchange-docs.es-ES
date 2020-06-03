@@ -10,7 +10,7 @@ ms.openlocfilehash: 25a54ca5c836715cfdde5ac44dafb383e851107d
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456111"
 ---
 # <a name="develop-web-service-clients-for-exchange"></a>Desarrollo de clientes de servicios web de Exchange

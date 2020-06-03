@@ -16,7 +16,7 @@ ms.openlocfilehash: 8edaf057538e2c1136465f0ff7937c14477b2c47
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44454053"
 ---
 # <a name="expanddl-operation"></a>Operación ExpandDL
@@ -58,7 +58,7 @@ Para los contactos o listas de distribución privadas, los identificadores de el
   
 ## <a name="expanddl-private-distribution-list-request-example"></a>Ejemplo de solicitud de lista de distribución privada de ExpandDL
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud ExpandDL muestra cómo crear una solicitud para expandir una lista de distribución privada.
   
@@ -86,7 +86,7 @@ Para expandir una lista de distribución privada, el elemento [Mailbox](mailbox.
   
 ## <a name="expanddl-public-distribution-list-request-example"></a>Ejemplo de solicitud de lista de distribución pública de ExpandDL
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud ExpandDL muestra cómo crear una solicitud para expandir una lista de distribución pública. En el ejemplo se muestra el uso de un nombre para mostrar para expandir una lista de distribución.
   
@@ -126,7 +126,7 @@ Los siguientes elementos se usan en la solicitud:
   
 ## <a name="successful-expanddl-response-example"></a>Ejemplo de respuesta ExpandDL correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una respuesta de ExpandDL muestra una respuesta a la solicitud descrita anteriormente. La expansión de la lista de distribución describe lo siguiente: 
   
@@ -221,7 +221,7 @@ Para buscar otras opciones para el mensaje de respuesta de la operación ExpandD
   
 ## <a name="expanddl-error-response"></a>Respuesta de error de ExpandDL
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a una solicitud ExpandDL.
   

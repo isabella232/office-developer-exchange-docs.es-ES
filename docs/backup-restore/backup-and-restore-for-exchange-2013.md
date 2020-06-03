@@ -12,7 +12,7 @@ ms.openlocfilehash: 1c5d99be60501fd1c4414ea22294bd05645bb0a7
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455243"
 ---
 # <a name="backup-and-restore-for-exchange"></a>Copia de seguridad y restauración para Exchange
@@ -55,7 +55,7 @@ Aunque la arquitectura del escritor de VSS se actualizó en Exchange 2013, la fu
 ## <a name="see-also"></a>Vea también
 
 - [Servicio de instantáneas de volumen (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb968832%28v=vs.85%29.aspx)   
-- [Explorar la API administrada de EWS, EWS y servicios web de Exchange](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)  
+- [Explorar la API administrada de EWS, EWS y servicios web en Exchange](../exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange.md)  
 - [Exchange Management Shell](../management/exchange-management-shell.md)   
 - [Agentes de transporte en Exchange](../transport-agents/transport-agents-in-exchange-2013.md) 
     

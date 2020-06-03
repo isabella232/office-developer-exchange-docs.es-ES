@@ -16,7 +16,7 @@ ms.openlocfilehash: e9bb9199027c2af2cbbb664ef7ad4fa70b7ef718
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455747"
 ---
 # <a name="deletefolder-operation"></a>Operación DeleteFolder
@@ -25,7 +25,7 @@ La operación **DeleteFolder** elimina carpetas de un buzón.
   
 ## <a name="deletefolder-request-example"></a>Ejemplo de solicitud DeleteFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el siguiente ejemplo de una solicitud de **DeleteFolder** se muestra cómo crear una solicitud para eliminar una carpeta. 
   
@@ -71,7 +71,7 @@ Para buscar otras opciones para el mensaje de solicitud de la operación **Delet
   
 ## <a name="successful-deletefolder-response"></a>Respuesta DeleteFolder correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **DeleteFolder** . 
   
@@ -118,7 +118,7 @@ Para buscar otras opciones para el mensaje de respuesta de la operación **Delet
   
 ## <a name="deletefolder-error-response"></a>Respuesta de error de DeleteFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a una solicitud **DeleteFolder** . El error se ha producido por una solicitud para eliminar una carpeta que no estaba presente en el buzón. 
   

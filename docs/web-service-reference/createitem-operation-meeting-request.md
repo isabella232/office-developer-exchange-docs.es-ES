@@ -16,7 +16,7 @@ ms.openlocfilehash: f9e6bd1742e6a30d08736ea67c0ff80b7a18e88a
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457112"
 ---
 # <a name="createitem-operation-meeting-request"></a>Operación CreateItem (convocatoria de reunión)
@@ -29,7 +29,7 @@ La operación CreateItem proporciona tres opciones para responder a una convocat
   
 ## <a name="accept-meeting-request-example"></a>Ejemplo de convocatoria de reunión aceptada
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el siguiente ejemplo, se muestra cómo aceptar una invitación a convocatoria de reunión.
   
@@ -73,7 +73,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="successful-accept-meeting-response-example"></a>Ejemplo de respuesta de aceptación de reunión correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateItem.
   
@@ -121,7 +121,7 @@ En la respuesta se usan los siguientes elementos:
     
 ## <a name="accept-meeting-error-response-example"></a>Ejemplo de respuesta de error de aceptación de reunión
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El ejemplo siguiente muestra una respuesta de error a la solicitud CreateItem. El error se debe a un intento de aceptar una convocatoria de reunión que no se encuentra en el almacén de Exchange.
   

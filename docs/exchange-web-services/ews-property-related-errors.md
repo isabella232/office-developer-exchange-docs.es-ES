@@ -10,7 +10,7 @@ ms.openlocfilehash: 5863ab4e06bd968aa38b6fdec471e09c5e23f54a
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455411"
 ---
 # <a name="ews-property-related-errors"></a>Errores relacionados con la propiedad EWS
@@ -55,7 +55,7 @@ La mayoría de las aplicaciones de cliente EWS se usan propiedades, lo que signi
 
 - [Propiedades y propiedades extendidas de EWS en Exchange](properties-and-extended-properties-in-ews-in-exchange.md)
     
-- [Empezar a utilizar servicios web de Exchange](start-using-web-services-in-exchange.md)
+- [Empezar a usar los servicios web de Exchange](start-using-web-services-in-exchange.md)
     
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
     

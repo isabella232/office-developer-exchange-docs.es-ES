@@ -10,7 +10,7 @@ ms.openlocfilehash: dd225030d62a2e8211b7063ee78a59fd1a070263
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455859"
 ---
 # <a name="trace-requests-and-responses-to-troubleshoot-ews-managed-api-apps"></a>Seguimiento de solicitudes y respuestas para solucionar problemas de aplicaciones de la API administrada de EWS

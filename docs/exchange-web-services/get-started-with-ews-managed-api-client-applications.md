@@ -10,7 +10,7 @@ ms.openlocfilehash: 45c1f1c794fc505d1dc3d059d5bde106dc37009f
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455397"
 ---
 # <a name="get-started-with-ews-managed-api-client-applications"></a>Empezar a trabajar con aplicaciones de cliente de la API administrada de EWS

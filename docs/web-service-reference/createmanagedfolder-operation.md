@@ -16,7 +16,7 @@ ms.openlocfilehash: 779c730b55b9b441644108a6837f9e22d39cc2f4
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44444596"
 ---
 # <a name="createmanagedfolder-operation"></a>Operación CreateManagedFolder
@@ -40,7 +40,7 @@ Para obtener información acerca de cómo quitar las carpetas personalizadas adm
   
 ## <a name="createmanagedfolder-request-example"></a>Ejemplo de solicitud CreateManagedFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud de CreateManagedFolder muestra cómo agregar una carpeta administrada llamada test Managed Folder a un buzón de correo.
   
@@ -79,7 +79,7 @@ Para buscar otras opciones para el mensaje de solicitud de la operación CreateM
   
 ## <a name="successful-createmanagedfolder-response"></a>Respuesta CreateManagedFolder correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo de código siguiente se muestra una respuesta correcta a una solicitud CreateManagedFolder.
   
@@ -138,7 +138,7 @@ Para buscar otras opciones de los mensajes de respuesta de la operación CreateM
   
 ## <a name="createmanagedfolder-error-response"></a>Respuesta de error de CreateManagedFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de código muestra una respuesta de error a una solicitud CreateManagedFolder.
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: 064e1ace2c2f51783431ce42670b2a4fd8146b54
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44451470"
 ---
 # <a name="deleteuserconfiguration-operation"></a>Operación DeleteUserConfiguration
@@ -28,7 +28,7 @@ La operación **DeleteUserConfiguration** elimina un objeto de configuración de
   
 ## <a name="deleteuserconfiguration-request-example"></a>Ejemplo de solicitud DeleteUserConfiguration
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **DeleteUserConfiguration** muestra cómo crear una solicitud para eliminar un objeto de configuración de usuario de la carpeta Borradores. 
   
@@ -56,7 +56,7 @@ El siguiente ejemplo de una solicitud **DeleteUserConfiguration** muestra cómo 
 
 ## <a name="deleteuserconfiguration-response-example"></a>Ejemplo de respuesta DeleteUserConfiguration
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **DeleteUserConfiguration** . 
   

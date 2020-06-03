@@ -10,7 +10,7 @@ ms.openlocfilehash: 3d77c0d4efb8fc853eea64ff2429af5c3dbead27
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456757"
 ---
 # <a name="pull-notifications-about-mailbox-events-by-using-ews-in-exchange"></a>Extraer notificaciones sobre eventos de buzón de correo mediante EWS en Exchange
@@ -129,7 +129,7 @@ El siguiente ejemplo de XML muestra el mensaje de respuesta **GetEvents** que se
 
 Después de recibir un evento del servidor, [sincronice los cambios en el cliente](how-to-pull-notifications-about-mailbox-events-by-using-ews-in-exchange.md#bk_nextsteps). Use la [operación unsubscribe](https://msdn.microsoft.com/library/994a9d2b-1501-4804-90f0-12bd914496ec%28Office.15%29.aspx) para finalizar la suscripción con el servidor cuando ya no se necesite la suscripción. 
   
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 <a name="bk_nextsteps"> </a>
 
 Una vez que haya recibido las notificaciones, puede [sincronizar la jerarquía de carpetas](how-to-synchronize-folders-by-using-ews-in-exchange.md) o [sincronizar el contenido de la carpeta que ha cambiado](how-to-synchronize-items-by-using-ews-in-exchange.md).

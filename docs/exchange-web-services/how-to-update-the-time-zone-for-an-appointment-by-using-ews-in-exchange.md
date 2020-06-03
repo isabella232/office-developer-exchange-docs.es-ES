@@ -10,7 +10,7 @@ ms.openlocfilehash: 064f99997b7c3d1197cb8d1ee6a24f8fb874f706
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455845"
 ---
 # <a name="update-the-time-zone-for-an-appointment-by-using-ews-in-exchange"></a>Actualizar la zona horaria de una cita mediante EWS en Exchange

@@ -12,7 +12,7 @@ ms.openlocfilehash: fd35699839af105dd3fe285776b071c1d03d58dd
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44437987"
 ---
 # <a name="backup-and-restore-concepts-for-exchange-2013"></a>Conceptos de copia de seguridad y restauración para Exchange 2013
@@ -29,7 +29,7 @@ Exchange 2013 incluye compatibilidad con hasta 100 bases de datos. Cada base de 
   
 **Tabla 1. Archivos de base de datos de Exchange 2013**
 
-|Tipo de archivo|Extensión|Descripción|
+|Tipo de archivo|Extensión|Description|
 |:-----|:-----|:-----|
 |Archivo de base de datos  <br/> |\*. edb  <br/> |Registra todos los cambios que se han confirmado en la base de datos en memoria.  <br/> |
 |Secuencia de registro de transacciones  <br/> |\*. log  <br/> |Registra las operaciones, como la creación o modificación de un mensaje, que se confirmarán en la base de datos. Tiene un tamaño limitado de 1 MB cada uno.  <br/> |

@@ -12,7 +12,7 @@ ms.openlocfilehash: ac239ec63f78322f6c82ab4be269d6fe4380dd8d
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456195"
 ---
 # <a name="distinguishedfolderid-distinguishedfolderidnametype"></a>DistinguishedFolderId (DistinguishedFolderIdNameType)
@@ -34,7 +34,7 @@ Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno
+None
   
 ### <a name="parent-elements"></a>Elementos principales
 

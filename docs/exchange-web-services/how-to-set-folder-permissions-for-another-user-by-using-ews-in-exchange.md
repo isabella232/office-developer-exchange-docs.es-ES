@@ -10,7 +10,7 @@ ms.openlocfilehash: e25f1a49a430e8c95829d404fa53451b76cab167
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455873"
 ---
 # <a name="set-folder-permissions-for-another-user-by-using-ews-in-exchange"></a>Establecer los permisos de carpeta para otro usuario mediante EWS en Exchange
@@ -56,7 +56,7 @@ Están disponibles los siguientes permisos individuales:
     
 Además, están disponibles los siguientes niveles de permisos, que definen un subconjunto de valores y permisos individuales, como se muestra en la tabla 2:
   
-- Ninguno    
+- None    
 - Owner    
 - Publishingeditorcreateitems    
 - Editor    
@@ -75,13 +75,13 @@ En la siguiente tabla se muestran los permisos individuales que se aplican de fo
 
 |Nivel de permisos|Puede crear elementos|Puede crear subcarpetas|Es el propietario de la carpeta|La carpeta es visible|Es contacto de carpeta|Editar elementos|Eliminar elementos|Puede leer elementos|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|Ninguno  <br/> |Falso  <br/> |Falso  <br/> |Falso  <br/> |Falso  <br/> |Falso  <br/> |Ninguno  <br/> |Ninguno  <br/> |Ninguno  <br/> |
+|None  <br/> |Falso  <br/> |Falso  <br/> |Falso  <br/> |Falso  <br/> |Falso  <br/> |Ninguno  <br/> |Ninguno  <br/> |Ninguno  <br/> |
 |Owner  <br/> |True  <br/> |True  <br/> |True  <br/> |True  <br/> |Verdadero  <br/> |Todo  <br/> |Todo  <br/> |FullDetails  <br/> |
 |Publishingeditorcreateitems  <br/> |True  <br/> |Verdadero  <br/> |False  <br/> |True  <br/> |Falso  <br/> |Todo  <br/> |Todo  <br/> |FullDetails  <br/> |
 |Editor  <br/> |Verdadero  <br/> |Falso  <br/> |False  <br/> |True  <br/> |Falso  <br/> |Todo  <br/> |Todo  <br/> |FullDetails  <br/> |
 |Publishingauthorcreateitems  <br/> |True  <br/> |Verdadero  <br/> |False  <br/> |True  <br/> |Falso  <br/> |Estatal  <br/> |Estatal  <br/> |FullDetails  <br/> |
 |Autor  <br/> |Verdadero  <br/> |Falso  <br/> |False  <br/> |True  <br/> |Falso  <br/> |Estatal  <br/> |Estatal  <br/> |FullDetails  <br/> |
-|Noneditingauthorcreateitems  <br/> |Verdadero  <br/> |Falso  <br/> |False  <br/> |True  <br/> |Falso  <br/> |Ninguno  <br/> |Estatal  <br/> |FullDetails  <br/> |
+|Noneditingauthorcreateitems  <br/> |Verdadero  <br/> |Falso  <br/> |False  <br/> |True  <br/> |Falso  <br/> |None  <br/> |Estatal  <br/> |FullDetails  <br/> |
 |Reviewer  <br/> |Falso  <br/> |Falso  <br/> |False  <br/> |True  <br/> |Falso  <br/> |Ninguno  <br/> |Ninguno  <br/> |FullDetails  <br/> |
 |Colaborador  <br/> |Verdadero  <br/> |Falso  <br/> |False  <br/> |True  <br/> |Falso  <br/> |Ninguno  <br/> |Ninguno  <br/> |Ninguno  <br/> |
    
@@ -589,7 +589,7 @@ Estas son las mismas dos operaciones que se usan para [Habilitar](#bk_enableews)
   
 Si intenta agregar dos conjuntos de permisos para el mismo usuario, recibirá un valor **ResponseCode** de **ErrorDuplicateUserIdsSpecified**. En ese caso, quite el valor de permiso obsoleto del usuario de la solicitud y, a continuación, vuelva a intentar la solicitud.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de conceder a un usuario permiso para una carpeta específica, el usuario puede tener acceso a la carpeta como delegado. Para más información, consulte lo siguiente:
   

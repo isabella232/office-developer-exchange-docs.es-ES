@@ -16,7 +16,7 @@ ms.openlocfilehash: e1d78392b94d328cf687655cd93e6c9568f6274f
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457126"
 ---
 # <a name="createitem-operation-contact"></a>Operación CreateItem (contacto)
@@ -29,7 +29,7 @@ No se admite la creación de listas de distribución privadas. Todas las propied
   
 ## <a name="createitem-request-example"></a>Ejemplo de solicitud CreateItem
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud SOAP de CreateItem válida muestra cómo crear un contacto en la carpeta de contactos predeterminada.
   
@@ -120,7 +120,7 @@ En la respuesta se usan los siguientes elementos:
     
 ## <a name="successful-createitem-request"></a>Solicitud CreateItem correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateItem que creó un contacto. En este ejemplo, la respuesta contiene el identificador del elemento que se acaba de crear.
   
@@ -180,7 +180,7 @@ En la respuesta se usan los siguientes elementos:
     
 ## <a name="invalid-createitem-request-example"></a>Ejemplo de solicitud CreateItem no válida
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una solicitud que contiene código XML válido, pero con instrucciones incompatibles. No se puede crear un contacto en una carpeta de búsqueda.
   
@@ -208,7 +208,7 @@ En el ejemplo siguiente se muestra una solicitud que contiene código XML válid
 
 ## <a name="createitem-contact-error-response"></a>CreateItem (contacto) respuesta de error
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El ejemplo siguiente muestra una respuesta de error a una solicitud CreateItem (contact).
   

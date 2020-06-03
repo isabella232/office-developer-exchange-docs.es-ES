@@ -16,7 +16,7 @@ ms.openlocfilehash: 384ed8ff653029c2b7db0b36986d85842b0a06cf
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457119"
 ---
 # <a name="createitem-operation-email-message"></a>Operación CreateItem (mensaje de correo electrónico)
@@ -25,7 +25,7 @@ La operación CreateItem se usa para crear mensajes de correo electrónico.
   
 ## <a name="createitem-request-example"></a>Ejemplo de solicitud CreateItem
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud CreateItem muestra cómo crear un nuevo mensaje de correo electrónico, enviar el mensaje y guardar una copia en la carpeta Borradores.
   
@@ -68,7 +68,7 @@ Los siguientes elementos se usan en la solicitud:
     
 - [Elementos (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
-- [Mensaje](message-ex15websvcsotherref.md)
+- [Message](message-ex15websvcsotherref.md)
     
 - [ItemClass](itemclass.md)
     
@@ -88,7 +88,7 @@ Para buscar otras opciones para el mensaje de solicitud de la operación CreateI
   
 ## <a name="successful-createitem-response"></a>Respuesta de CreateItem correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateItem.
   
@@ -135,7 +135,7 @@ Para buscar otras opciones para el mensaje de respuesta de la operación CreateI
   
 ## <a name="error-createitem-response"></a>Error CreateItem Response
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a una solicitud CreateItem.
   

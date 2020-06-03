@@ -16,7 +16,7 @@ ms.openlocfilehash: 1c7ad2413064161ba54e8a7a30bfcd6f23f218bd
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456433"
 ---
 # <a name="syncfolderhierarchy-operation"></a>Operación SyncFolderHierarchy
@@ -28,7 +28,7 @@ La operación SyncFolderHierarchy sincroniza las carpetas entre el equipo que ej
   
 ## <a name="syncfolderhierarchy-request-example"></a>Ejemplo de solicitud SyncFolderHierarchy
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el siguiente ejemplo de una solicitud de SyncFolderHierarchy se muestra cómo sincronizar una jerarquía de carpetas de cliente con el servidor de Exchange. En este ejemplo se muestra una jerarquía de carpetas que ya se ha sincronizado al menos una vez. El elemento [SyncState](syncstate-ex15websvcsotherref.md) no se incluye en la solicitud para el primer intento de sincronizar un cliente con el servidor Exchange. La primera solicitud devolverá todas las carpetas del buzón. El elemento [SyncState](syncstate-ex15websvcsotherref.md) se devolverá en [SyncFolderHierarchyResponse](syncfolderhierarchyresponse.md). Este elemento se usa para sincronizar el estado de las siguientes solicitudes SyncFolderHierarchy.
   
@@ -70,7 +70,7 @@ Los siguientes elementos se usan en la solicitud:
   
 ## <a name="successful-syncfolderhierarchy-response"></a>Respuesta SyncFolderHierarchy correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud SyncFolderHierarchy. En este ejemplo, se ha sincronizado una nueva carpeta.
   
@@ -159,7 +159,7 @@ En la respuesta se usan los siguientes elementos:
     
 ## <a name="syncfolderhierarchy-error-response"></a>Respuesta de error de SyncFolderHierarchy
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a una solicitud SyncFolderHierarchy. Este error se debió a un SyncState no válido.
   

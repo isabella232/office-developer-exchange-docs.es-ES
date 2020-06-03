@@ -16,7 +16,7 @@ ms.openlocfilehash: 502108843193e7ed8377b0fade9e106ef3d1976c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44457105"
 ---
 # <a name="createitem-operation-task"></a>Operación CreateItem (tarea)
@@ -25,7 +25,7 @@ La operación CreateItem crea elementos de tarea en el almacén de Exchange.
   
 ## <a name="task-createitem-request"></a>Solicitud CreateItem de tarea
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud CreateItem muestra cómo crear un elemento de tarea en un buzón.
   
@@ -95,7 +95,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="successful-task-createitem-response"></a>Respuesta de tarea CreateItem correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateItem.
   

@@ -13,7 +13,7 @@ ms.openlocfilehash: 533b2f6d282e3287f4945df56b169f5bc93ff445
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44455628"
 ---
 # <a name="getfederationinformation-operation-soap"></a>Operación GetFederationInformation (SOAP)
@@ -24,7 +24,7 @@ Solo las organizaciones federadas pueden compartir el calendario, los contactos 
   
 ## <a name="getfederationinformation-request-example"></a>Ejemplo de solicitud GetFederationInformation
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **GetFederationInformation** muestra una solicitud de información de Federación de un usuario. El cliente envía esta solicitud al servidor. 
   
@@ -72,7 +72,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="getfederationinformation-response-example"></a>Ejemplo de respuesta GetFederationInformation
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **GetFederationInformation** que el servidor envía al cliente. 
   

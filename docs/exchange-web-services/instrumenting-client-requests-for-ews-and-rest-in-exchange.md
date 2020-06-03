@@ -10,7 +10,7 @@ ms.openlocfilehash: 3a8ce889ec7a6b9e70ec25a95ac248902f48ca6c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456307"
 ---
 # <a name="instrumenting-client-requests-for-ews-and-rest-in-exchange"></a>Instrumentar solicitudes de cliente para EWS y REST en Exchange
@@ -59,7 +59,7 @@ Si la aplicación usa la API administrada de EWS o EWS para conectarse a Exchang
   
 Mantenemos informes para estas latencias y los usamos para mejorar de forma continua los servicios EWS en Exchange Online.
   
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 <a name="bk_ReportLatency"> </a>
 
 Una vez que haya agregado la instrumentación del cliente a la aplicación, es mejor preparado si algo va mal. Si esto ocurre, puede usar los datos de instrumentación para [solucionar los problemas de la aplicación](tools-and-resources-for-troubleshooting-ews-applications-for-exchange.md).

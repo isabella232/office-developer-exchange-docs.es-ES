@@ -16,7 +16,7 @@ ms.openlocfilehash: dd7136ae82353841db09497d23eabe450c1c8b13
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44456772"
 ---
 # <a name="refreshsharingfolder-operation"></a>Operación RefreshSharingFolder
@@ -34,7 +34,7 @@ La operación **RefreshSharingFolder** puede usar los encabezados SOAP que se en
    
 ## <a name="refreshsharingfolder-request-example"></a>Ejemplo de solicitud RefreshSharingFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el siguiente ejemplo, se muestra cómo crear una solicitud para actualizar la carpeta local especificada con los datos más recientes de la carpeta que se está compartiendo. El elemento [SharingFolderId](sharingfolderid.md) especifica el identificador de la carpeta local que se va a actualizar. 
   
@@ -70,7 +70,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="successful-refreshsharingfolder-response"></a>Respuesta RefreshSharingFolder correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **RefreshSharingFolder** . 
   
@@ -112,7 +112,7 @@ En la respuesta se usan los siguientes elementos:
     
 ## <a name="refreshsharingfolder-error-response"></a>Respuesta de error de RefreshSharingFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a una solicitud **RefreshSharingFolder** . En este ejemplo, se produjo un error en la solicitud **RefreshSharingFolder** porque no se encontró una suscripción que corresponde a la carpeta local especificada. 
   
