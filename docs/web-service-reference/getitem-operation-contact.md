@@ -16,7 +16,7 @@ ms.openlocfilehash: 93e8dbe28e130ab64d4b8d12d2befde1f77ae8fa
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460025"
 ---
 # <a name="getitem-operation-contact"></a>Operación GetItem (contacto)
@@ -25,7 +25,7 @@ La operación GetItem se usa para obtener los elementos de contacto del almacén
   
 ## <a name="getitem-contact-request-example"></a>Ejemplo de solicitud GetItem (contacto)
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el siguiente ejemplo, se muestra cómo obtener un elemento del almacén de Exchange.
   
@@ -72,7 +72,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="successful-getitem-contact-response"></a>Respuesta GetItem (contacto) correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo de código siguiente se muestra una respuesta GetItem correcta para el **AllProperties**[BaseShape](baseshape.md).
   
@@ -253,7 +253,7 @@ Los siguientes elementos se usan en la respuesta de una solicitud GetItem con un
     
 ## <a name="invalid-getitem-contact-request-example"></a>Ejemplo de solicitud de GetItem (contacto) no válido
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo de código siguiente se muestra una solicitud no válida.
   
@@ -284,7 +284,7 @@ Los identificadores de elemento se han abreviado para preservar la legibilidad.
   
 ## <a name="getitem-contact-error-response"></a>Respuesta de error de GetItem (contacto)
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de código muestra una respuesta de error a una solicitud GetItem (contacto).
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: 66e1b91ea3154d8a501339aed7b398970e8f5392
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459829"
 ---
 # <a name="updateitem-operation-contact"></a>Operación UpdateItem (contacto)
@@ -25,7 +25,7 @@ La operación UpdateItem se usa para actualizar las propiedades de los elementos
   
 ## <a name="updateitem-contact-request-example"></a>Ejemplo de solicitud de UpdateItem (contact)
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo de código siguiente se muestra cómo actualizar la dirección de correo electrónico de un contacto.
   
@@ -90,7 +90,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="successful-updateitem-contact-response"></a>Respuesta de UpdateItem (contacto) correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo de código siguiente se muestra una respuesta UpdateItem correcta.
   
@@ -150,7 +150,7 @@ En la respuesta se usan los siguientes elementos:
     
 ## <a name="invalid-updateitem-contact-request-example"></a>Ejemplo de solicitud de UpdateItem (contacto) no válida
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo de código siguiente se muestra una solicitud no válida.
   
@@ -191,7 +191,7 @@ El identificador de elemento se ha abreviado para preservar la legibilidad.
   
 ## <a name="updateitem-contact-error-response"></a>Respuesta de error de UpdateItem (contacto)
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de código muestra una respuesta de error a una solicitud de UpdateItem (contacto).
   

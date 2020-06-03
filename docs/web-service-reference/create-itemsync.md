@@ -16,7 +16,7 @@ ms.openlocfilehash: b9c0f28333594a6c17ee9581a227fc4773874fd6
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460802"
 ---
 # <a name="create-itemsync"></a>Crear (ItemSync)
@@ -104,7 +104,7 @@ Ninguna.
 |**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Item](item.md) <br/> |Representa un elemento de Exchange genérico que se va a crear.  <br/> |
-|[Mensaje](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange que se va a crear.  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange que se va a crear.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange que se va a crear.  <br/> |
 |[Contacto](contact.md) <br/> |Representa un elemento de contacto de Exchange que se va a crear.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Representa una lista de distribución que se va a crear.  <br/> |

@@ -16,7 +16,7 @@ ms.openlocfilehash: 09fe92af12f03ce4cebd1e98f4e01c087ace64f9
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460620"
 ---
 # <a name="getitem-operation-calendar-item"></a>Operación GetItem (elemento de calendario)
@@ -25,7 +25,7 @@ La operación GetItem obtiene los elementos de calendario del almacén de Exchan
   
 ## <a name="getitem-request-example"></a>Ejemplo de solicitud GetItem
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud GetItem muestra cómo crear una solicitud para obtener la identidad y el asunto de un elemento.
   
@@ -76,7 +76,7 @@ Para buscar otras opciones para el mensaje de solicitud de la operación GetItem
   
 ## <a name="successful-getitem-response"></a>Respuesta GetItem correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud GetItem. La solicitud que creó esta respuesta usó la IdOnly baseshape. En este ejemplo, la respuesta devuelve solo el identificador del elemento. 
   

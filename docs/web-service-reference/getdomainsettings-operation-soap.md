@@ -13,7 +13,7 @@ ms.openlocfilehash: fd655e088b73372bc1dd68a740ebc2b516d1804a
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460970"
 ---
 # <a name="getdomainsettings-operation-soap"></a>Operación GetDomainSettings (SOAP)
@@ -22,7 +22,7 @@ La operación **GetDomainSettings** recupera la configuración especificada del 
   
 ## <a name="getdomainsettings-request-example"></a>Ejemplo de solicitud GetDomainSettings
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud de **GetDomainSettings** muestra una solicitud para la configuración de dominio de **ExternalEWSUrl** de un usuario. El cliente envía esta solicitud al servidor. 
   
@@ -76,7 +76,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="getdomainsettings-response-example"></a>Ejemplo de respuesta GetDomainSettings
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **GetDomainSettings** que el servidor envía al cliente. 
   

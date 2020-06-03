@@ -16,7 +16,7 @@ ms.openlocfilehash: b8ea2cef366a52765850dddcc8c1ef1e8fa68b22
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460914"
 ---
 # <a name="getserviceconfiguration-operation"></a>Operación GetServiceConfiguration
@@ -25,7 +25,7 @@ La operación **GetServiceConfiguration** obtiene información de configuración
   
 ## <a name="getserviceconfiguration-request-example"></a>Ejemplo de solicitud GetServiceConfiguration
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **GetServiceConfiguration** muestra cómo crear una solicitud para obtener información de configuración para el servicio de mensajería unificada. 
   
@@ -53,7 +53,7 @@ El siguiente ejemplo de una solicitud **GetServiceConfiguration** muestra cómo 
 
 ## <a name="getserviceconfiguration-response-example"></a>Ejemplo de respuesta GetServiceConfiguration
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **GetServiceConfiguration** . 
   
@@ -95,7 +95,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **GetSe
 
 ## <a name="getserviceconfiguration-error-response-example"></a>Ejemplo de respuesta de error GetServiceConfiguration
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a la solicitud **GetServiceConfiguration** . Este error se ha producido por un nombre de configuración incorrecto. 
   

@@ -16,7 +16,7 @@ ms.openlocfilehash: cf66eb390b0287e89bb8402f26a2e728868a2b18
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460515"
 ---
 # <a name="getsharingfolder-operation"></a>Operación GetSharingFolder
@@ -90,7 +90,7 @@ Para obtener información sobre los valores posibles del elemento **DataType** ,
   
 ## <a name="successful-getsharingfolder-response"></a>Respuesta GetSharingFolder correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **GetSharingFolder** . El atributo **ID** del elemento [SharingFolderId](sharingfolderid.md) representa el identificador de la carpeta local en la relación de uso compartido. 
   
@@ -123,7 +123,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **GetS
 
 ## <a name="getsharingfolder-error-response"></a>Respuesta de error de GetSharingFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a una solicitud **GetSharingFolder** . En este ejemplo, el error se produjo porque la solicitud especificó los elementos [SharingFolderId](sharingfolderid.md) y [DataType](datatype.md) . Tenga en cuenta que solo se puede especificar uno de estos dos elementos, pero no ambos. 
   

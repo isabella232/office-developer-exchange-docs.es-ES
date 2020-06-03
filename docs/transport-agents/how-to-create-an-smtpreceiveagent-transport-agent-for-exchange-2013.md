@@ -12,7 +12,7 @@ ms.openlocfilehash: 5ba021d02849ffc7e125029f0fd18ebf14c3f8da
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459142"
 ---
 # <a name="create-an-smtpreceiveagent-transport-agent-for-exchange-2013"></a>Crear un agente de transporte de SmtpReceiveAgent para Exchange 2013

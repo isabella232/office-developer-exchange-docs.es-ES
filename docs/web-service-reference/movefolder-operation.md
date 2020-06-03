@@ -16,7 +16,7 @@ ms.openlocfilehash: dc572130ca3b2f2b152abbb4a8b68cc6f67790e8
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460585"
 ---
 # <a name="movefolder-operation"></a>Operación MoveFolder
@@ -29,7 +29,7 @@ La operación MoveFolder es similar a la operación CopyFolder. No se pueden mov
   
 ## <a name="movefolder-request-example"></a>Ejemplo de solicitud MoveFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el siguiente ejemplo de una solicitud de MoveFolder se muestra cómo crear una solicitud para mover una carpeta identificada por el [FolderId](folderid.md) y colocar la carpeta en la carpeta completa de correo no deseado. 
   
@@ -78,7 +78,7 @@ Vea el esquema para ver los elementos adicionales que puede usar para formar una
   
 ## <a name="successful-movefolder-response-example"></a>Ejemplo de respuesta MoveFolder correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud MoveFolder. 
   
@@ -139,7 +139,7 @@ La respuesta MoveFolder incluye los siguientes elementos:
     
 ## <a name="movefolder-error-response-example"></a>Ejemplo de respuesta de error MoveFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error que se produce al intentar mover una carpeta distintiva.
   

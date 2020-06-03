@@ -10,7 +10,7 @@ ms.openlocfilehash: 681dfee7e0a66a483b8638810da5e4e0ac0f05ac
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459331"
 ---
 # <a name="recurrence-patterns-and-ews"></a>Patrones de periodicidad y EWS
@@ -347,7 +347,7 @@ Use los mismos métodos y operaciones para trabajar con series periódicas mient
 
 - [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)
     
-- [Desarrollar clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
+- [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
     
 - [Obtener citas y reuniones mediante EWS en Exchange](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)
     

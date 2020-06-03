@@ -16,7 +16,7 @@ ms.openlocfilehash: c001b7656862144023e9704cb04e6b4c0030f9df
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44459394"
 ---
 # <a name="updateitem-operation"></a>Operación UpdateItem
@@ -46,7 +46,7 @@ Cuando se actualiza un solo elemento de calendario para convertirlo en un elemen
   
 ## <a name="setitemfield-request-example"></a>Ejemplo de solicitud SetItemField
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **UpdateItem** muestra cómo establecer la propiedad SENSITIVITY en un elemento. 
   
@@ -101,13 +101,13 @@ Los siguientes elementos se usan en la solicitud:
     
 - [FieldURI](fielduri.md)
     
-- [Mensaje](message-ex15websvcsotherref.md)
+- [Message](message-ex15websvcsotherref.md)
     
 - [Sensitivity](sensitivity.md)
     
 ## <a name="appendtoitemfield-request-example"></a>Ejemplo de solicitud AppendToItemField
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **UpdateItem** muestra cómo anexar texto a la propiedad Body en un elemento. 
   
@@ -170,13 +170,13 @@ Los siguientes elementos se usan en la solicitud:
     
 - [FieldURI](fielduri.md)
     
-- [Mensaje](message-ex15websvcsotherref.md)
+- [Message](message-ex15websvcsotherref.md)
     
 - [Body](body.md)
     
 ## <a name="deleteitemfield-request-example"></a>Ejemplo de solicitud DeleteItemField
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **UpdateItem** muestra cómo eliminar una propiedad de un elemento. 
   
@@ -229,7 +229,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="successful-response-example"></a>Ejemplo de respuesta correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **UpdateItem** . 
   
@@ -283,7 +283,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [Items](items.md)
     
-- [Mensaje](message-ex15websvcsotherref.md)
+- [Message](message-ex15websvcsotherref.md)
     
 - [ItemId](itemid.md)
     

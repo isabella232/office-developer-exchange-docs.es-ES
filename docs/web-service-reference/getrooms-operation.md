@@ -16,7 +16,7 @@ ms.openlocfilehash: 4cb124b96637b9fcdca15595faebb2ce4d304de0
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44460550"
 ---
 # <a name="getrooms-operation"></a>Operación GetRooms
@@ -36,7 +36,7 @@ La operación **GetRooms** puede usar los encabezados SOAP que se enumeran y des
    
 ## <a name="getrooms-request-example"></a>Ejemplo de solicitud GetRooms
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 A continuación, se muestra un ejemplo de una solicitud de **GetRooms** que obtiene las salas asociadas con una lista de salas. 
   
@@ -75,7 +75,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="successful-getrooms-response-example"></a>Ejemplo de respuesta GetRooms correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 La siguiente respuesta muestra la información de la dirección de correo electrónico de las salas asociadas con la lista de salas.
   
@@ -137,7 +137,7 @@ En la respuesta se usan los siguientes elementos:
     
 ## <a name="getrooms-error-response-example"></a>Ejemplo de respuesta de error GetRooms
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error causada por un intento de obtener información de la sala para una lista de salas inexistente.
   
