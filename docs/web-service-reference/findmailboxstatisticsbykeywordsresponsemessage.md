@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d3835800-8887-43db-9a8a-fe3cfea7a863
-description: El elemento FindMailboxStatisticsByKeywordsResponseMessage especifica el mensaje de respuesta de una solicitud de FindMailboxStatisticsByKeywords.
-ms.openlocfilehash: 9479252ed53335d07a6402707bc69e5eaadfa7c8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento FindMailboxStatisticsByKeywordsResponseMessage especifica el mensaje de respuesta para una solicitud de FindMailboxStatisticsByKeywords.
+ms.openlocfilehash: 704eebbf82db2871ab36be8e5b30c88c6959baa5
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764640"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44525979"
 ---
 # <a name="findmailboxstatisticsbykeywordsresponsemessage"></a>FindMailboxStatisticsByKeywordsResponseMessage
 
-El elemento **FindMailboxStatisticsByKeywordsResponseMessage** especifica el mensaje de respuesta de una solicitud de **FindMailboxStatisticsByKeywords** . 
+El elemento **FindMailboxStatisticsByKeywordsResponseMessage** especifica el mensaje de respuesta para una solicitud de **FindMailboxStatisticsByKeywords** . 
   
 ```XML
 <FindMailboxStatisticsByKeywordsResponseMessage ResponseClass=" Success | Warning | Error ">
@@ -32,11 +32,11 @@ El elemento **FindMailboxStatisticsByKeywordsResponseMessage** especifica el men
  **FindMailboxStatisticsByKeywordsResponseMessageType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
 |ResponseClass  <br/> |Especifica la clase de respuesta.  <br/> |
    
@@ -44,25 +44,25 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Correcto  <br/> |Indica éxito.  <br/> |
+|Correcto  <br/> |Indica que se ha realizado correctamente.  <br/> |
 |Advertencia  <br/> |Indica una advertencia.  <br/> |
 |Error  <br/> |Indica un error.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[MailboxStatisticsSearchResult](mailboxstatisticssearchresult.md) <br/> |Especifica el resultado de una búsqueda de buzón de correo.  <br/> |
+|[MailboxStatisticsSearchResult](mailboxstatisticssearchresult.md) <br/> |Especifica el resultado de una búsqueda de buzones.  <br/> |
 |[MessageText](messagetext.md) <br/> |Proporciona una descripción de texto del estado de la respuesta.  <br/> |
-|[ResponseCode](responsecode.md) <br/> |Proporciona información de estado acerca de la solicitud.  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Actualmente no utilizado y reservado para uso futuro.  <br/> |
-|[MessageXml](messagexml.md) <br/> |Proporciona información de la respuesta de error adicionales.  <br/> |
+|[ResponseCode](responsecode.md) <br/> |Proporciona información de estado sobre la solicitud.  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Actualmente no está en uso y reservado para uso futuro.  <br/> |
+|[MessageXml](messagexml.md) <br/> |Proporciona información de respuesta de error adicional.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Especifica una matriz de los mensajes de respuesta.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Especifica una matriz de mensajes de respuesta.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -74,14 +74,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

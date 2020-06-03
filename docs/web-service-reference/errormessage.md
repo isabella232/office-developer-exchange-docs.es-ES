@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0cec33a6-4b10-4259-8ac3-3f39a642b34c
-description: El elemento ErrorMessage representa la razón para el error de validación.
-ms.openlocfilehash: d1869041254ef7c661fb2acb7c9c2ccaf628b394
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ErrorMessage representa el motivo del error de validación.
+ms.openlocfilehash: a35dc6af12e71c8437c13024a254000e8f477a15
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764448"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526196"
 ---
 # <a name="errormessage"></a>ErrorMessage
 
-El elemento **ErrorMessage** representa la razón para el error de validación. 
+El elemento **errorMessage** representa el motivo del error de validación. 
   
 ```XML
 <ErrorMessage/>
@@ -26,25 +26,25 @@ El elemento **ErrorMessage** representa la razón para el error de validación.
  **String**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Error](error.md) <br/> |Representa un error de validación único en un valor de la propiedad de regla concreto, valor de la propiedad predicado o valor de la propiedad acción.  <br/> |
+|[Error](error.md) <br/> |Representa un error de validación único en un valor de propiedad de regla, un valor de propiedad de predicado o un valor de propiedad de acción específicos.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El mensaje de error asociado al error de validación de regla.
+Mensaje de error asociado al error de validación de regla.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,14 +54,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

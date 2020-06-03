@@ -16,7 +16,7 @@ ms.openlocfilehash: 1f9a7a3f3ede2d3cf8f9d41677d8ce0487266f17
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468897"
 ---
 # <a name="copyfolder-operation"></a>Operación CopyFolder
@@ -29,7 +29,7 @@ La operación CopyFolder es similar a la [operación MoveFolder](movefolder-oper
   
 ## <a name="copyfolder-request-example"></a>Ejemplo de solicitud CopyFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud CopyFolder muestra cómo copiar carpetas en la carpeta Bandeja de entrada.
   
@@ -81,7 +81,7 @@ Para buscar otras opciones para el mensaje de solicitud de la operación CopyFol
   
 ## <a name="successful-copyfolder-response"></a>Respuesta CopyFolder correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CopyFolder. 
   
@@ -146,7 +146,7 @@ Para buscar otras opciones para el mensaje de respuesta de la operación CopyFol
   
 ## <a name="copyfolder-error-response"></a>Respuesta de error de CopyFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a una solicitud CopyFolder. El error se produjo porque ya existe una carpeta con el mismo nombre para mostrar.
   

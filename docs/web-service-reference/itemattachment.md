@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 089ee599-f45e-46f5-a18a-5cfb3d2851ff
-description: El elemento ItemAttachment representa un elemento de Exchange que está vinculado a otro elemento de Exchange.
-ms.openlocfilehash: 7bd3d22430fe04f1b28ae240102500609fe8d703
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: El elemento ItemAttachment representa un elemento de Exchange que está adjunto a otro elemento de Exchange.
+ms.openlocfilehash: c3a07fa091c05654a03cbff58fb20204c26c9061
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353150"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526441"
 ---
 # <a name="itemattachment"></a>ItemAttachment
 
-El elemento **ItemAttachment** representa un elemento de Exchange que está vinculado a otro elemento de Exchange. 
+El elemento **ItemAttachment** representa un elemento de Exchange que está adjunto a otro elemento de Exchange. 
   
 ```xml
 <ItemAttachment>
@@ -153,39 +153,39 @@ El elemento **ItemAttachment** representa un elemento de Exchange que está vinc
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[AttachmentId](attachmentid.md) <br/> |Identifica los datos adjuntos.  <br/> |
-|[Name (AttachmentType)](name-attachmenttype.md) <br/> |Representa el nombre de los datos adjuntos.  <br/> |
-|[ContentType](contenttype.md) <br/> |Describe el tipo de extensiones multipropósito de correo Internet (MIME) del contenido de los datos adjuntos.  <br/> |
-|[ContentId](contentid.md) <br/> |Representa un identificador para el contenido de los datos adjuntos. [ContentId](contentid.md) se puede establecer en cualquier valor de cadena. Las aplicaciones pueden usar [ContentId](contentid.md) para implementar sus propios mecanismos de identificación.  <br/> |
+|[Nombre (AttachmentType)](name-attachmenttype.md) <br/> |Representa el nombre de los datos adjuntos.  <br/> |
+|[ContentType](contenttype.md) <br/> |Describe el tipo de extensiones multipropósito de correo Internet (MIME) del contenido de datos adjuntos.  <br/> |
+|[ContentId](contentid.md) <br/> |Representa un identificador para el contenido de los datos adjuntos. [Contentid](contentid.md) se puede establecer en cualquier valor de cadena. Las aplicaciones pueden usar [contentid](contentid.md) para implementar sus propios mecanismos de identificación.  <br/> |
 |[ContentLocation](contentlocation.md) <br/> |Contiene el identificador uniforme de recursos (URI) que corresponde a la ubicación del contenido de los datos adjuntos.  <br/> |
-|[Size](size.md) <br/> |Representa el tamaño en bytes del archivo adjunto.  <br/> |
-|[LastModifiedTime](lastmodifiedtime.md) <br/> |Representa cuando se modificó por última vez los datos adjuntos.  <br/> |
-|[IsInline](isinline.md) <br/> |Representa si el archivo adjunto aparece en línea dentro de un elemento.  <br/> |
-|[Item](item.md) <br/> |Representa los datos adjuntos un elemento genérico de Exchange.  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Representa los datos adjuntos un mensaje de correo electrónico de Exchange.  <br/> |
-|[CalendarItem](calendaritem.md) <br/> |Representa los datos adjuntos un elemento de calendario de Exchange.  <br/> |
-|[Contact](contact.md) <br/> |Representa datos adjuntos del elemento de contacto de Exchange.  <br/> |
-|[Tarea](task.md) <br/> |Representa datos adjuntos de tareas de Exchange.  <br/> |
+|[Tamaño](size.md) <br/> |Representa el tamaño en bytes de los datos adjuntos del archivo.  <br/> |
+|[LastModifiedTime](lastmodifiedtime.md) <br/> |Representa Cuándo se modificó por última vez los datos adjuntos.  <br/> |
+|[IsInline](isinline.md) <br/> |Indica si los datos adjuntos aparecen en línea dentro de un elemento.  <br/> |
+|[Elemento](item.md) <br/> |Representa un elemento de Exchange genérico adjunto.  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |Representa un dato adjunto de un mensaje de correo electrónico de Exchange.  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Representa un dato adjunto de elemento de calendario de Exchange.  <br/> |
+|[Contacto](contact.md) <br/> |Representa un elemento adjunto de un elemento de contacto de Exchange.  <br/> |
+|[Tarea](task.md) <br/> |Representa un archivo adjunto de tarea de Exchange.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Representa una reunión en el almacén de Exchange.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Representa una convocatoria de reunión en el almacén de Exchange.  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta a la reunión en el almacén de Exchange.  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Representa la cancelación de la reunión en el almacén de Exchange.  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta a una reunión en el almacén de Exchange.  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Representa una cancelación de reunión en el almacén de Exchange.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Datos adjuntos](attachments-ex15websvcsotherref.md) <br/> |Contiene los elementos o archivos que están adjuntos a un elemento en el almacén de Exchange.  <br/> |
+|[Datos adjuntos](attachments-ex15websvcsotherref.md) <br/> |Contiene los elementos o los archivos que están adjuntos a un elemento en el almacén de Exchange.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -199,12 +199,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

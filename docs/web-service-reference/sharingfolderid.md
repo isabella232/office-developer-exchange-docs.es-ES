@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 5ad37ceb-2922-4420-9051-c29d0d57c420
-description: El elemento SharingFolderId representa el identificador de la carpeta local en una relación de uso compartida.
-ms.openlocfilehash: e0eb1fbd7155040508daf253f5eb4b1352d7426d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SharingFolderId representa el identificador de la carpeta local en una relación de uso compartido.
+ms.openlocfilehash: 02780251639ee651ca65d8eadded43260852aaf8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837485"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526581"
 ---
 # <a name="sharingfolderid"></a>SharingFolderId
 
-El elemento **SharingFolderId** representa el identificador de la carpeta local en una relación de uso compartida. 
+El elemento **SharingFolderId** representa el identificador de la carpeta local en una relación de uso compartido. 
   
 ```xml
 <SharingFolderId Id="" ChangeKey="" />
@@ -30,43 +30,43 @@ El elemento **SharingFolderId** representa el identificador de la carpeta local 
  **FolderIdType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|Id  <br/> |Contiene una cadena que identifica una carpeta en el almacén de Exchange. Este atributo es necesario.  <br/> |
-|ChangeKey  <br/> |Contiene una cadena que identifica una versión de una carpeta que se identifica con el atributo Id. Este atributo es opcional. Use este atributo para asegurarse de que se usa la versión correcta de una carpeta.  <br/> |
+|Id  <br/> |Contiene una cadena que identifica una carpeta en el almacén de Exchange. Este atributo es obligatorio.  <br/> |
+|ChangeKey  <br/> |Contiene una cadena que identifica una versión de una carpeta identificada por el atributo id. Este atributo es opcional. Use este atributo para asegurarse de que se usa la versión correcta de una carpeta.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[RefreshSharingFolder](refreshsharingfolder.md) <br/> |Define una solicitud para actualizar la carpeta local especificada.  <br/> |
-|[GetSharingFolderResponse](getsharingfolderresponse.md) <br/> |Define una respuesta a una solicitud de [operación GetSharingFolder](getsharingfolder-operation.md) .  <br/> |
-|[GetSharingFolderResponseMessage](getsharingfolderresponsemessage.md) <br/> |Contiene el estado y el resultado de una única solicitud de [operación GetSharingFolder](getsharingfolder-operation.md) .  <br/> |
+|[GetSharingFolderResponse](getsharingfolderresponse.md) <br/> |Define una respuesta a una solicitud de [operación de GetSharingFolder](getsharingfolder-operation.md) .  <br/> |
+|[GetSharingFolderResponseMessage](getsharingfolderresponsemessage.md) <br/> |Contiene el estado y el resultado de una sola solicitud de [operación GetSharingFolder](getsharingfolder-operation.md) .  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio Virtual de IIS que hospeda los servicios Web Exchange del equipo que ejecuta a Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda los servicios Web de Exchange del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

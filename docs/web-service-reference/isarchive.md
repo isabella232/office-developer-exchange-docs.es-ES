@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: b89d8a78-5c18-4547-aaf4-4b16a93190a7
-description: El elemento IsArchive especifica un valor booleano que indica si el buzón de correo es un buzón de archivo.
-ms.openlocfilehash: 417afd1afc25e5872d1f511feff34494fe6b7b62
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento IsArchive especifica un valor booleano que indica si el buzón es un buzón de archivo.
+ms.openlocfilehash: 6d0be0eb283de3f4d8f786ff96f4a0d4f49e2009
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835990"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526518"
 ---
 # <a name="isarchive"></a>IsArchive
 
-El elemento **IsArchive** especifica un valor booleano que indica si el buzón de correo es un buzón de archivo. 
+El elemento **IsArchive** especifica un valor booleano que indica si el buzón es un buzón de archivo. 
   
 ```XML
 <IsArchive>true | false</IsArchive>
@@ -26,23 +26,23 @@ El elemento **IsArchive** especifica un valor booleano que indica si el buzón d
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[FailedMailbox](failedmailbox.md) | [RetentionPolicyTag](retentionpolicytag.md)
+[FailedMailbox](failedmailbox.md)  |  [RetentionPolicyTag](retentionpolicytag.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **IsArchive** indica que el buzón de destino es un buzón de archivo. Un valor de **false** indica que el buzón de destino no es un buzón de archivo. 
+Un valor de texto de **true** para el elemento **IsArchive** indica que el buzón de destino es un buzón de archivo. Un valor de **false** indica que el buzón de correo de destino no es un buzón de archivo. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,14 +54,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

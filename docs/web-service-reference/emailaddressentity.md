@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 20049467-c01a-4c7d-8ada-ca1801cc95ed
-description: El elemento EmailAddressEntity especifica una entidad de dirección de correo electrónico única.
-ms.openlocfilehash: c149ee69c1ed08c33d0341c8dfdac3bcda040afb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EmailAddressEntity especifica una sola entidad de dirección de correo electrónico.
+ms.openlocfilehash: b76b08f93e60c8492906f3cc94e60f5725c8a9dc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764348"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526224"
 ---
 # <a name="emailaddressentity"></a>EmailAddressEntity
 
-El elemento **EmailAddressEntity** especifica una entidad de dirección de correo electrónico única. 
+El elemento **EmailAddressEntity** especifica una sola entidad de dirección de correo electrónico. 
   
 ```XML
 <EmailAddressEntity>
@@ -28,23 +28,23 @@ El elemento **EmailAddressEntity** especifica una entidad de dirección de corre
  **EmailAddressEntityType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[EmailAddress (cadena)](emailaddress-string.md) <br/> |Especifica una dirección de correo electrónico única.  <br/> |
+|[EmailAddress (cadena)](emailaddress-string.md) <br/> |Especifica una sola dirección de correo electrónico.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[EmailAddresses (ArrayOfEmailAddressEntitiesType)](emailaddresses-arrayofemailaddressentitiestype.md) <br/> |Especifica una matriz de entidades de la dirección de correo electrónico.  <br/> |
+|[EmailAddresses (ArrayOfEmailAddressEntitiesType)](emailaddresses-arrayofemailaddressentitiestype.md) <br/> |Especifica una matriz de entidades de direcciones de correo electrónico.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

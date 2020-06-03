@@ -16,7 +16,7 @@ ms.openlocfilehash: 51728addddd2bfb9d35b874ae8c11e83a4c8629b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468281"
 ---
 # <a name="resolvenames-operation"></a>Operación ResolveNames
@@ -37,7 +37,7 @@ Solo se puede especificar un nombre ambiguo en una sola solicitud. En primer lug
   
 ## <a name="resolvenames-request-example"></a>Ejemplo de solicitud ResolveNames
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **ResolveNames** muestra cómo resolver la entrada del usuario.
   
@@ -84,7 +84,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="successful-resolvenames-operation-response-example"></a>Ejemplo de respuesta de operación ResolveNames correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **ResolveNames** . 
   
@@ -170,7 +170,7 @@ En la respuesta se usan los siguientes elementos:
     
 ## <a name="resolvenames-operation-error-response"></a>Respuesta de error de operación de ResolveNames
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a una solicitud **ResolveNames** . El error se produce al intentar resolver un nombre que no se puede resolver. 
   

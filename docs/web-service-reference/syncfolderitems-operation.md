@@ -16,7 +16,7 @@ ms.openlocfilehash: 1a28d895eda11dd43f77ec2662a60a426cfc463c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468148"
 ---
 # <a name="syncfolderitems-operation"></a>Operación SyncFolderItems
@@ -31,7 +31,7 @@ SyncFolderItems es similar a la operación FindItem en que no puede devolver pro
   
 ## <a name="syncfolderitems-request-example"></a>Ejemplo de solicitud SyncFolderItems
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud SyncFolderItems muestra cómo sincronizar elementos de una carpeta. En este ejemplo se muestra la sincronización de un elemento de carpeta que no es la primera sincronización que se ha producido para la carpeta elementos enviados. El elemento [SyncState](syncstate-ex15websvcsotherref.md) no se incluye en la solicitud para el primer intento de sincronizar un cliente con el servidor Exchange. El primer intento de sincronizar los elementos de una jerarquía de carpetas devolverá todos los elementos del buzón, excepto los elementos identificados en el elemento [Ignore](ignore.md) . Esta solicitud de SyncFolderItems intentará sincronizar todos los cambios en los elementos de la carpeta desde la última sincronización. Esta solicitud pasará por alto el intento de sincronizar el elemento identificado en el elemento [Ignore](ignore.md) . 
   
@@ -87,7 +87,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="successful-syncfolderitems-response"></a>Respuesta SyncFolderItems correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud SyncFolderItems. En este ejemplo, se sincroniza una convocatoria de reunión desde la carpeta elementos enviados.
   
@@ -202,7 +202,7 @@ En la respuesta se usan los siguientes elementos:
     
 ## <a name="syncfolderitems-error-response"></a>Respuesta de error de SyncFolderItems
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a una solicitud SyncFolderItems. Este error se debió a un SyncState no válido.
   

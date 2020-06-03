@@ -16,7 +16,7 @@ ms.openlocfilehash: eb69aa493d5ba8b0497fde4c52ad80fe17c92f1c
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468022"
 ---
 # <a name="isfromme"></a>IsFromMe
@@ -52,7 +52,7 @@ Ninguna.
 |[MeetingMessage](meetingmessage.md) <br/> |Representa una reunión en el almacén de Exchange.  <br/> |
 |[MeetingRequest](meetingrequest.md) <br/> |Representa una convocatoria de reunión en el almacén de Exchange.  <br/> |
 |[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta a una reunión en el almacén de Exchange.  <br/> |
-|[Mensaje](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange.  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange.  <br/> |
 |[RemoveItem](removeitem.md) <br/> |Quita un elemento del almacén de Exchange.  <br/> |
 |[Tarea](task.md) <br/> |Representa una tarea del almacén de Exchange.  <br/> |
    

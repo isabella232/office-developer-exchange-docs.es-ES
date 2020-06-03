@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5b847017-fa89-4094-bfa1-cc436b760207
-description: El elemento EmailAddress especifica una dirección de correo electrónico única.
-ms.openlocfilehash: a2a1472e2315d31748fb4367edac3f45dda59d5c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento EmailAddress especifica una sola dirección de correo electrónico.
+ms.openlocfilehash: b245611868d473e35f96e0d0b37f7cb4fbe9c94c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764340"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526231"
 ---
 # <a name="emailaddress-string"></a>EmailAddress (cadena)
 
-El elemento **EmailAddress** especifica una dirección de correo electrónico única. 
+El elemento **EmailAddress** especifica una sola dirección de correo electrónico. 
   
 ```XML
 <EmailAddress></EmailAddress>
@@ -26,25 +26,25 @@ El elemento **EmailAddress** especifica una dirección de correo electrónico ú
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[EmailAddressEntity](emailaddressentity.md) <br/> |Especifica una entidad de dirección de correo electrónico única.  <br/> |
+|[EmailAddressEntity](emailaddressentity.md) <br/> |Especifica una única entidad de dirección de correo electrónico.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **EmailAddress** es un valor de tipo string que especifica la dirección de correo electrónico. 
+El valor de texto del elemento **EmailAddress** es un valor de cadena que especifica la dirección de correo electrónico. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,12 +56,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

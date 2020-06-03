@@ -16,7 +16,7 @@ ms.openlocfilehash: 57e722c7775baa090736875077781cee869c3b01
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468505"
 ---
 # <a name="uploaditems-operation"></a>Operación UploadItems
@@ -28,7 +28,7 @@ La operación **UploadItems** carga una secuencia de elementos en un buzón de E
   
 ## <a name="uploaditems-request-example"></a>Ejemplo de solicitud UploadItems
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **UploadItems** muestra cómo cargar dos elementos en un buzón. El primer elemento es un nuevo elemento. El segundo elemento es una versión actualizada de un elemento existente en el buzón. 
   
@@ -102,7 +102,7 @@ Los siguientes elementos se usan en la solicitud:
     
 ## <a name="successful-uploaditems-response-example"></a>Ejemplo de respuesta UploadItems correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **UploadItems** . 
   
@@ -163,7 +163,7 @@ En la respuesta se usan los siguientes elementos:
     
 ## <a name="uploaditems-error-response-example"></a>Ejemplo de respuesta de error UploadItems
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta a la solicitud **UploadItems** que contiene un error provocado por un intento de actualizar un elemento que no se encuentra en el buzón de correo. 
   

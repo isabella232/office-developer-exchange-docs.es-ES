@@ -16,7 +16,7 @@ ms.openlocfilehash: 12248cbbd5d47a19e36d49fcebe6d4753a2e162f
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468890"
 ---
 # <a name="update-itemsync"></a>Actualización (ItemSync)
@@ -104,7 +104,7 @@ Ninguna.
 |**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Item](item.md) <br/> |Representa un elemento de Exchange genérico que se va a actualizar.  <br/> |
-|[Mensaje](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange que se va a actualizar.  <br/> |
+|[Message](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange que se va a actualizar.  <br/> |
 |[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange que se va a actualizar.  <br/> |
 |[Contacto](contact.md) <br/> |Representa un elemento de contacto de Exchange que se va a actualizar.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Representa una lista de distribución que se va a actualizar.  <br/> |

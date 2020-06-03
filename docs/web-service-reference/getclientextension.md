@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c96c2b4c-45cb-482a-a3bb-7a11a0fff43b
 description: El elemento GetClientExtension representa una solicitud para obtener una extensión de cliente.
-ms.openlocfilehash: 9d3abb4572a5f74f24925d24a2fbbe8ded593731
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: caa069195a3b82af4e5b5984dcb6e4124b11899b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764778"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44526343"
 ---
 # <a name="getclientextension"></a>GetClientExtension
 
@@ -30,15 +30,15 @@ El elemento **GetClientExtension** representa una solicitud para obtener una ext
  ****
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[RequestedExtensionIds](requestedextensionids.md) | [UserParameters](userparameters.md) | [IsDebug](isdebug.md)
+[RequestedExtensionIds](requestedextensionids.md)  |  [UserParameters](userparameters.md)  |  [IsDebug](isdebug.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

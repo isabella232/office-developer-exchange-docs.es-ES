@@ -16,7 +16,7 @@ ms.openlocfilehash: 95fe6518fa30104463ec7f0aec8f786183eb513b
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468547"
 ---
 # <a name="updateuserconfiguration-operation"></a>Operación UpdateUserConfiguration
@@ -25,7 +25,7 @@ La operación **UpdateUserConfiguration** actualiza un objeto de configuración 
   
 ## <a name="updateuserconfiguration-request-example"></a>Ejemplo de solicitud UpdateUserConfiguration
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **UpdateUserConfiguration** muestra cómo crear una solicitud para actualizar un objeto de configuración de usuario en la carpeta Borradores. 
   
@@ -67,7 +67,7 @@ El siguiente ejemplo de una solicitud **UpdateUserConfiguration** muestra cómo 
 
 ## <a name="updateuserconfiguration-response-example"></a>Ejemplo de respuesta UpdateUserConfiguration
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **UpdateUserConfiguration** . 
   

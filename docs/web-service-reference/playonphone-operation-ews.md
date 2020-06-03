@@ -16,7 +16,7 @@ ms.openlocfilehash: 18af810160e72856599f296c4faa83cf9c73c393
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467959"
 ---
 # <a name="playonphone-operation-ews"></a>Operación reproducir (EWS)
@@ -25,7 +25,7 @@ La operación **reproducir** inicia una llamada saliente y reproduce un mensaje 
   
 ## <a name="playonphone-request-example"></a>Ejemplo de solicitud reproducir
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 El siguiente ejemplo de una solicitud **reproducir** muestra cómo crear una solicitud para reproducir un mensaje en un teléfono. 
   
@@ -52,7 +52,7 @@ El siguiente ejemplo de una solicitud **reproducir** muestra cómo crear una sol
 
 ## <a name="playonphone-response-example"></a>Ejemplo de respuesta reproducir
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **reproducir** . 
   

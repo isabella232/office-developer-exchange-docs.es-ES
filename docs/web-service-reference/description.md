@@ -1,5 +1,5 @@
 ---
-title: Descripción
+title: Description
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -12,10 +12,10 @@ ms.openlocfilehash: a399d4072220e3fa9199f0a3eb760e886b7b4ee6
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44467889"
 ---
-# <a name="description"></a>Descripción
+# <a name="description"></a>Description
 
 El elemento **Description** especifica el texto descriptivo de la Directiva de retención. 
   

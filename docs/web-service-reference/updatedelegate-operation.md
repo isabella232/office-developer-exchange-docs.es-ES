@@ -16,7 +16,7 @@ ms.openlocfilehash: b7cf5325d925f8d6588115a8657a2077e940f9d2
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44468561"
 ---
 # <a name="updatedelegate-operation"></a>Operación UpdateDelegate
@@ -36,7 +36,7 @@ La operación **UpdateDelegate** puede usar los encabezados SOAP que se enumeran
    
 ## <a name="updatedelegate-request-example"></a>Ejemplo de solicitud UpdateDelegate
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el siguiente ejemplo de una solicitud de **UpdateDelegate** se muestra cómo actualizar los permisos de delegado en la cuenta de Usuario1. Al usuario2 se le concede el nivel de permisos ninguno para la carpeta tareas y se le concede permiso para ver los elementos privados. Usuario3 tiene concedidos permisos de revisor para la carpeta diario. Las convocatorias de reunión se envían a los delegados y la información sobre la solicitud se envía a user1. 
   
@@ -86,7 +86,7 @@ La solicitud [UpdateDelegate](updatedelegate.md) no requiere que las actualizaci
   
 ## <a name="updatedelegate-response-example"></a>Ejemplo de respuesta UpdateDelegate
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a una operación **UpdateDelegate** . 
   
@@ -143,7 +143,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una operación **Upd
 
 ## <a name="updatedelegate-error-response-example"></a>Ejemplo de respuesta de error UpdateDelegate
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta de error a una solicitud **UpdateDelegate** . El error se ha generado porque el delegado no existe en la lista de delegados de la entidad de la identidad. 
   
