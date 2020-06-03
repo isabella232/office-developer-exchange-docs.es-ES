@@ -12,33 +12,33 @@ ms.openlocfilehash: 2e47a5ae6943ecf3a2317a68ea38894bb1f7d3bd
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44435495"
 ---
-# <a name="ismember"></a><span data-ttu-id="ec559-103">IsMember</span><span class="sxs-lookup"><span data-stu-id="ec559-103">IsMember</span></span>
+# <a name="ismember"></a><span data-ttu-id="1f369-103">IsMember</span><span class="sxs-lookup"><span data-stu-id="1f369-103">IsMember</span></span>
 
-<span data-ttu-id="ec559-104">El elemento **IsMember** está destinado sólo para uso interno.</span><span class="sxs-lookup"><span data-stu-id="ec559-104">The **IsMember** element is intended for internal use only.</span></span> 
+<span data-ttu-id="1f369-104">El elemento **IsMember** está destinado sólo para uso interno.</span><span class="sxs-lookup"><span data-stu-id="1f369-104">The **IsMember** element is intended for internal use only.</span></span> 
 
-## <a name="attributes-and-elements"></a><span data-ttu-id="ec559-105">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="ec559-105">Attributes and elements</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="1f369-105">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="1f369-105">Attributes and elements</span></span>
 
-<span data-ttu-id="ec559-106">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="ec559-106">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="1f369-106">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="1f369-106">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="ec559-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="ec559-107">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="1f369-107">Atributos</span><span class="sxs-lookup"><span data-stu-id="1f369-107">Attributes</span></span>
 
-<span data-ttu-id="ec559-108">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="ec559-108">None.</span></span>
+<span data-ttu-id="1f369-108">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="1f369-108">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="ec559-109">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="ec559-109">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="1f369-109">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="1f369-109">Child elements</span></span>
 
-<span data-ttu-id="ec559-110">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="ec559-110">None.</span></span>
+<span data-ttu-id="1f369-110">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="1f369-110">None.</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="ec559-111">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="ec559-111">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="1f369-111">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="1f369-111">Parent elements</span></span>
 
-<span data-ttu-id="ec559-112">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="ec559-112">None.</span></span>
+<span data-ttu-id="1f369-112">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="1f369-112">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="ec559-113">Comentarios</span><span class="sxs-lookup"><span data-stu-id="ec559-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1f369-113">Comentarios</span><span class="sxs-lookup"><span data-stu-id="1f369-113">Remarks</span></span>
 
-<span data-ttu-id="ec559-114">Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).</span><span class="sxs-lookup"><span data-stu-id="ec559-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
+<span data-ttu-id="1f369-114">Este elemento se incorporó en Exchange Server 2013 Service Pack 1 (SP1).</span><span class="sxs-lookup"><span data-stu-id="1f369-114">This element was introduced in Exchange Server 2013 Service Pack 1 (SP1).</span></span>
   
-<span data-ttu-id="ec559-115">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="ec559-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="1f369-115">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="1f369-115">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
 

@@ -12,12 +12,12 @@ ms.openlocfilehash: 4e4ac1b38869d3c5dabe142c63b2aac9477036fd
 ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2020
+ms.lasthandoff: 06/03/2020
 ms.locfileid: "44450917"
 ---
-# <a name="managementrole"></a><span data-ttu-id="9fd31-103">ManagementRole</span><span class="sxs-lookup"><span data-stu-id="9fd31-103">ManagementRole</span></span>
+# <a name="managementrole"></a><span data-ttu-id="ce9c8-103">ManagementRole</span><span class="sxs-lookup"><span data-stu-id="ce9c8-103">ManagementRole</span></span>
 
-<span data-ttu-id="9fd31-104">El elemento **ManagementRole** especifica una lista de funciones de administración de usuarios y aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="9fd31-104">The **ManagementRole** element specifies a list of user and application management roles.</span></span> 
+<span data-ttu-id="ce9c8-104">El elemento **ManagementRole** especifica una lista de funciones de administración de usuarios y aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="ce9c8-104">The **ManagementRole** element specifies a list of user and application management roles.</span></span> 
   
 ```XML
 <ManagementRole>
@@ -26,36 +26,36 @@ ms.locfileid: "44450917"
 </ManagementRole>
 ```
 
- <span data-ttu-id="9fd31-105">**ManagementRoleType**</span><span class="sxs-lookup"><span data-stu-id="9fd31-105">**ManagementRoleType**</span></span>
-## <a name="attributes-and-elements"></a><span data-ttu-id="9fd31-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="9fd31-106">Attributes and elements</span></span>
+ <span data-ttu-id="ce9c8-105">**ManagementRoleType**</span><span class="sxs-lookup"><span data-stu-id="ce9c8-105">**ManagementRoleType**</span></span>
+## <a name="attributes-and-elements"></a><span data-ttu-id="ce9c8-106">Atributos y elementos</span><span class="sxs-lookup"><span data-stu-id="ce9c8-106">Attributes and elements</span></span>
 
-<span data-ttu-id="9fd31-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="9fd31-107">The following sections describe attributes, child elements, and parent elements.</span></span>
+<span data-ttu-id="ce9c8-107">En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.</span><span class="sxs-lookup"><span data-stu-id="ce9c8-107">The following sections describe attributes, child elements, and parent elements.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="9fd31-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="9fd31-108">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="ce9c8-108">Atributos</span><span class="sxs-lookup"><span data-stu-id="ce9c8-108">Attributes</span></span>
 
-<span data-ttu-id="9fd31-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="9fd31-109">None.</span></span>
+<span data-ttu-id="ce9c8-109">Ninguna.</span><span class="sxs-lookup"><span data-stu-id="ce9c8-109">None.</span></span>
   
-### <a name="child-elements"></a><span data-ttu-id="9fd31-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="9fd31-110">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="ce9c8-110">Elementos secundarios</span><span class="sxs-lookup"><span data-stu-id="ce9c8-110">Child elements</span></span>
 
-<span data-ttu-id="9fd31-111">[UserRoles](userroles.md)  |  [ApplicationRoles](applicationroles.md)</span><span class="sxs-lookup"><span data-stu-id="9fd31-111">[UserRoles](userroles.md) | [ApplicationRoles](applicationroles.md)</span></span>
+<span data-ttu-id="ce9c8-111">[UserRoles](userroles.md)  |  [ApplicationRoles](applicationroles.md)</span><span class="sxs-lookup"><span data-stu-id="ce9c8-111">[UserRoles](userroles.md) | [ApplicationRoles](applicationroles.md)</span></span>
   
-### <a name="parent-elements"></a><span data-ttu-id="9fd31-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="9fd31-112">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="ce9c8-112">Elementos principales</span><span class="sxs-lookup"><span data-stu-id="ce9c8-112">Parent elements</span></span>
 
-<span data-ttu-id="9fd31-113">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="9fd31-113">None.</span></span>
+<span data-ttu-id="ce9c8-113">Ninguno.</span><span class="sxs-lookup"><span data-stu-id="ce9c8-113">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="9fd31-114">Comentarios</span><span class="sxs-lookup"><span data-stu-id="9fd31-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ce9c8-114">Comentarios</span><span class="sxs-lookup"><span data-stu-id="ce9c8-114">Remarks</span></span>
 
-<span data-ttu-id="9fd31-115">Este elemento se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="9fd31-115">This element was introduced in Exchange Server 2013.</span></span>
+<span data-ttu-id="ce9c8-115">Este elemento se introdujo en Exchange Server 2013.</span><span class="sxs-lookup"><span data-stu-id="ce9c8-115">This element was introduced in Exchange Server 2013.</span></span>
   
-<span data-ttu-id="9fd31-116">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="9fd31-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
+<span data-ttu-id="ce9c8-116">El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.</span><span class="sxs-lookup"><span data-stu-id="ce9c8-116">The schema that describes this element is located in the IIS virtual directory that hosts Exchange Web Services.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="9fd31-117">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="9fd31-117">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="ce9c8-117">Información del elemento</span><span class="sxs-lookup"><span data-stu-id="ce9c8-117">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="9fd31-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="9fd31-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|<span data-ttu-id="9fd31-119">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="9fd31-119">Schema name</span></span>  <br/> |<span data-ttu-id="9fd31-120">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="9fd31-120">Types schema</span></span>  <br/> |
-|<span data-ttu-id="9fd31-121">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="9fd31-121">Validation file</span></span>  <br/> |<span data-ttu-id="9fd31-122">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="9fd31-122">Types.xsd</span></span>  <br/> |
-|<span data-ttu-id="9fd31-123">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="9fd31-123">Can be empty</span></span>  <br/> ||
+|<span data-ttu-id="ce9c8-118">Namespace</span><span class="sxs-lookup"><span data-stu-id="ce9c8-118">Namespace</span></span>  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|<span data-ttu-id="ce9c8-119">Nombre de esquema</span><span class="sxs-lookup"><span data-stu-id="ce9c8-119">Schema name</span></span>  <br/> |<span data-ttu-id="ce9c8-120">Esquema de tipos</span><span class="sxs-lookup"><span data-stu-id="ce9c8-120">Types schema</span></span>  <br/> |
+|<span data-ttu-id="ce9c8-121">Archivo de validación</span><span class="sxs-lookup"><span data-stu-id="ce9c8-121">Validation file</span></span>  <br/> |<span data-ttu-id="ce9c8-122">Types. xsd</span><span class="sxs-lookup"><span data-stu-id="ce9c8-122">Types.xsd</span></span>  <br/> |
+|<span data-ttu-id="ce9c8-123">Puede estar vacío</span><span class="sxs-lookup"><span data-stu-id="ce9c8-123">Can be empty</span></span>  <br/> ||
    
 
