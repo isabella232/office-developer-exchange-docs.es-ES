@@ -1,5 +1,5 @@
 ---
-title: PlayOnPhoneGreeting (servicio web de mensajería unificada)
+title: PlayOnPhoneGreeting (servicio Web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -10,19 +10,19 @@ api_name:
 api_type:
 - schema
 ms.assetid: 43eda596-3609-4e1b-8502-1db2636535cf
-description: El elemento PlayOnPhoneGreeting define una solicitud para reproducir un mensajería unificada en un teléfono de saludo.
-ms.openlocfilehash: c30140fc60b9e902517b4cc18deb9b61efa61e0c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PlayOnPhoneGreeting define una solicitud para reproducir un saludo de mensajería unificada en un teléfono.
+ms.openlocfilehash: 197e4ba671e1711b73b1e7c239339db589357581
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836836"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529927"
 ---
-# <a name="playonphonegreeting-um-web-service"></a>PlayOnPhoneGreeting (servicio web de mensajería unificada)
+# <a name="playonphonegreeting-um-web-service"></a>PlayOnPhoneGreeting (servicio Web de mensajería unificada)
 
-El elemento **PlayOnPhoneGreeting** define una solicitud para reproducir un mensajería unificada en un teléfono de saludo. 
+El elemento **PlayOnPhoneGreeting** define una solicitud para reproducir un saludo de mensajería unificada en un teléfono. 
   
-[PlayOnPhoneGreeting (servicio web de mensajería unificada)](playonphonegreeting-um-web-service.md)
+[PlayOnPhoneGreeting (servicio Web de mensajería unificada)](playonphonegreeting-um-web-service.md)
   
 ```xml
 <PlayOnPhoneGreeting>
@@ -34,39 +34,39 @@ El elemento **PlayOnPhoneGreeting** define una solicitud para reproducir un mens
  **complexType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GreetingType (servicio web de mensajería unificada)](greetingtype-um-web-service.md) <br/> |Define el tipo de saludo para usar en una solicitud de [operación PlayOnPhoneGreeting (servicio web de mensajería unificada)](playonphonegreeting-operation-um-web-service.md) .  <br/> |
-|[dialString (servicio web de mensajería unificada)](dialstring-um-web-service.md) <br/> |Contiene el valor para el número de teléfono a marcar.  <br/> |
+|[GreetingType (servicio Web de mensajería unificada)](greetingtype-um-web-service.md) <br/> |Define el tipo de saludo que se debe usar en una solicitud de [operación de PlayOnPhoneGreeting (servicio Web de mensajería unificada)](playonphonegreeting-operation-um-web-service.md) .  <br/> |
+|[dialString (servicio Web de mensajería unificada)](dialstring-um-web-service.md) <br/> |Contiene el valor del número de teléfono que se marca.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Operación PlayOnPhoneGreeting (servicio web de mensajería unificada)](playonphonegreeting-operation-um-web-service.md)
+[Operación PlayOnPhoneGreeting (servicio Web de mensajería unificada)](playonphonegreeting-operation-um-web-service.md)
 

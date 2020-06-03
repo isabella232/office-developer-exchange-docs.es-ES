@@ -7,34 +7,34 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 98161486-e2f2-480f-8d5d-708ba81b208a
-description: La operación EmptyFolder vacía carpetas en un buzón de correo. De forma opcional, esta operación le permite eliminar las subcarpetas de la carpeta especificada. Cuando se elimina una subcarpeta, se eliminan la subcarpeta y los mensajes dentro de la subcarpeta.
-ms.openlocfilehash: 0192744516c5a6d24b95915452bfcffecc2d92b7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación EmptyFolder vacía carpetas en un buzón. Opcionalmente, esta operación permite eliminar las subcarpetas de la carpeta especificada. Cuando se elimina una subcarpeta, se eliminan la subcarpeta y los mensajes dentro de la subcarpeta.
+ms.openlocfilehash: 1913db74d33f1e6750cd158df5870f257d0e7839
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764384"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530687"
 ---
 # <a name="emptyfolder-operation"></a>Operación EmptyFolder
 
-La operación **EmptyFolder** vacía carpetas en un buzón de correo. De forma opcional, esta operación le permite eliminar las subcarpetas de la carpeta especificada. Cuando se elimina una subcarpeta, se eliminan la subcarpeta y los mensajes dentro de la subcarpeta. 
+La operación **EmptyFolder** vacía carpetas en un buzón. Opcionalmente, esta operación permite eliminar las subcarpetas de la carpeta especificada. Cuando se elimina una subcarpeta, se eliminan la subcarpeta y los mensajes dentro de la subcarpeta. 
   
 ## <a name="emptyfolder-request-example"></a>Ejemplo de solicitud EmptyFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud **EmptyFolder** muestra cómo formar una solicitud para vaciar una carpeta. En este ejemplo se eliminan todas las subcarpetas de la carpeta identificada. 
+En el siguiente ejemplo de una solicitud de **EmptyFolder** se muestra cómo crear una solicitud para vaciar una carpeta. En este ejemplo se eliminan todas las subcarpetas de la carpeta identificada. 
   
 > [!NOTE]
-> Los valores del **identificador** y los atributos **ChangeKey** del elemento [FolderId](folderid.md) se han abreviado para mejorar la legibilidad. 
+> Los valores de los atributos **ID** y **changekey** del elemento [FolderId](folderid.md) se han abreviado para facilitar su lectura. 
   
 ### <a name="code"></a>Código
 
 ```XML
 <soap:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
   <soap:Header>
     <t:RequestServerVersion Version ="Exchange2010_SP1"/>
     </soap:Header>
@@ -53,11 +53,11 @@ El siguiente ejemplo de una solicitud **EmptyFolder** muestra cómo formar una s
 
 En este ejemplo se realiza una eliminación de disco duro en la carpeta.
   
-Las carpetas se pueden identificar por el elemento [DistinguishedFolderId](distinguishedfolderid.md) o el elemento [FolderId](folderid.md) para su uso en el elemento [FolderIds](folderids.md) . 
+Las carpetas pueden identificarse mediante el elemento [DistinguishedFolderId](distinguishedfolderid.md) o el elemento [FolderId](folderid.md) para su uso en el elemento [FolderIds](folderids.md) . 
   
 ### <a name="request-elements"></a>Elementos de solicitud
 
-En la solicitud se usan los siguientes elementos:
+Los siguientes elementos se usan en la solicitud:
   
 - [EmptyFolder](emptyfolder.md)
     
@@ -65,9 +65,9 @@ En la solicitud se usan los siguientes elementos:
     
 - [FolderId](folderid.md)
     
-## <a name="successful-emptyfolder-response"></a>Respuesta es correcta EmptyFolder
+## <a name="successful-emptyfolder-response"></a>Respuesta EmptyFolder correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **EmptyFolder** . 
   
@@ -82,15 +82,15 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **Empty
                          MajorBuildNumber="164" 
                          MinorBuildNumber="0" 
                          Version="Exchange2010_SP1"
-                         xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types"
-                         xmlns="http://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types"
+                         xmlns="https://schemas.microsoft.com/exchange/services/2006/types"
                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                          xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:EmptyFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-                           xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:EmptyFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+                           xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:EmptyFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -102,7 +102,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **Empty
 
 ```
 
-### <a name="successful-response-elements"></a>Elementos de respuesta correcta
+### <a name="successful-response-elements"></a>Elementos Response correcto
 
 En la respuesta se usan los siguientes elementos:
   
@@ -116,11 +116,11 @@ En la respuesta se usan los siguientes elementos:
     
 - [ResponseCode](responsecode.md)
     
-## <a name="emptyfolder-error-response"></a>Respuesta de error EmptyFolder
+## <a name="emptyfolder-error-response"></a>Respuesta de error de EmptyFolder
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud **Emptyfolder** . Se creó el error debido a que la operación intentó vaciar una carpeta que no se encontró en el almacén de Exchange. 
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud **Emptyfolder** . El error se creó porque la operación intentó vaciar una carpeta que no se encontró en el almacén de Exchange. 
   
 ### <a name="code"></a>Código
 
@@ -133,16 +133,16 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud **Empt
             MajorBuildNumber="164" 
             MinorBuildNumber="0" 
             Version="Exchange2010_SP1" 
-            xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-            xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+            xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+            xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
             xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
             xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <m:GetFolderResponse 
-          xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-          xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+          xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+          xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetFolderResponseMessage ResponseClass="Error">
           <m:MessageText>Id is malformed.</m:MessageText>
@@ -174,9 +174,9 @@ En la respuesta se usan los siguientes elementos:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-- [Carpetas](folders-ex15websvcsotherref.md)
+- [Folders](folders-ex15websvcsotherref.md)
     
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

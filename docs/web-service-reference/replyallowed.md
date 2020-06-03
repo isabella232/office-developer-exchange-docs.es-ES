@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 880af57e-0fa1-473c-b87c-f02f1133ba5e
-description: El elemento ReplyAllowed especifica si se permite una respuesta de derechos de datos administrados.
-ms.openlocfilehash: c774836ac6e72648d6a6c017d41fcafdb64d116c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ReplyAllowed especifica si se permite una respuesta para los datos con derechos administrados.
+ms.openlocfilehash: f9aa97fc5d85837323d6d9e3e1e13c7b9fd11715
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837107"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529864"
 ---
 # <a name="replyallowed"></a>ReplyAllowed
 
-El elemento **ReplyAllowed** especifica si se permite una respuesta de derechos de datos administrados. 
+El elemento **ReplyAllowed** especifica si se permite una respuesta para los datos con derechos administrados. 
   
 ```XML
 <ReplyAllowed> true | false </ReplyAllowed>
@@ -26,15 +26,15 @@ El elemento **ReplyAllowed** especifica si se permite una respuesta de derechos 
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **ReplyAllowed** indica que se permiten las respuestas de los derechos de datos administrados. Un valor de **false** indica que no se permiten las respuestas. 
+Un valor de texto de **true** para el elemento **ReplyAllowed** indica que se permiten las respuestas a los datos con derechos administrados. Un valor de **false** indica que no se permiten las respuestas. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 51116adc-1f59-429b-b1a7-e9ada92c366f
-description: El patrón de elemento está pensado para uso interno únicamente.
-ms.openlocfilehash: df6746b07d50fb2dfc2460991f582600fac59b63
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Master solo está destinado a uso interno.
+ms.openlocfilehash: 38d33770d7b2222d4b852521a680eec185f54321
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836359"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530526"
 ---
 # <a name="master"></a>Master
 
-El elemento de **patrón** está pensado para uso interno únicamente. 
+El elemento **Master** solo está destinado a uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

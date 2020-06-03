@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 7642cb03-71b1-4773-9508-4fbe3a5dcdf4
 description: El elemento EventDescription
-ms.openlocfilehash: d496e6d2a61b4a72954b25fe3c5362f82aabf143
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 5f61a4eea945193d672afbcd2c693502ccf3e4e1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764456"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530638"
 ---
 # <a name="eventdescription"></a>EventDescription
 
@@ -30,34 +30,34 @@ El elemento **EventDescription**
  **MessageTrackingEventDescriptionType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[RecipientTrackingEvent](recipienttrackingevent.md) <br/> ||
    
 ## <a name="text-value"></a>Valor de texto
 
-En la siguiente tabla se enumera los valores posibles para el elemento **EventDescription** . 
+En la siguiente tabla se enumeran los valores posibles para el elemento **EventDescription** . 
   
-**Valores de elemento EventDescription**
+**Valores del elemento EventDescription**
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
 |Submitted  <br/> ||
-|Resolver  <br/> ||
-|Expandido  <br/> ||
-|Entregado  <br/> ||
+|Resuelto  <br/> ||
+|Expanded  <br/> ||
+|Pronuncia  <br/> ||
 |MovedToFolderByInboxRule  <br/> ||
 |RulesCc  <br/> ||
 |FailedGeneral  <br/> ||
@@ -67,8 +67,8 @@ En la siguiente tabla se enumera los valores posibles para el elemento **EventDe
 |SmtpSendCrossSite  <br/> ||
 |SmtpSendCrossForest  <br/> ||
 |SmtpReceive  <br/> ||
-|Reenviar  <br/> ||
-|Pendiente  <br/> ||
+|Reenviado  <br/> ||
+|Pending  <br/> ||
 |PendingModeration  <br/> ||
 |ApprovedModeration  <br/> ||
 |QueueRetry  <br/> ||
@@ -78,25 +78,25 @@ En la siguiente tabla se enumera los valores posibles para el elemento **EventDe
 |TransferredToPartnerOrg  <br/> ||
 |TransferredToLegacyExchangeServer  <br/> ||
 |DelayedAfterTransferToPartnerOrg  <br/> ||
-|Leído  <br/> ||
-|NotRead  <br/> ||
+|Read  <br/> ||
+|Nohuella  <br/> ||
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

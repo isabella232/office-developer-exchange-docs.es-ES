@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c0d41b95-36b9-4e7a-a442-cdea37467abd
-description: El elemento Url representa la ubicación del cliente de servicio Web para las notificaciones de inserción.
-ms.openlocfilehash: 62a48fe3b7d2f169ba83c2a89cba3019c270555c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento URL representa la ubicación del servicio Web de cliente para las notificaciones de inserción.
+ms.openlocfilehash: 62e139c441eef68db5cf13226d15a83f67135026
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840884"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530933"
 ---
 # <a name="url"></a>Url
 
-El elemento **Url** representa la ubicación del cliente de servicio Web para las notificaciones de inserción. 
+El elemento **URL** representa la ubicación del servicio Web de cliente para las notificaciones de inserción. 
   
 ```XML
 <Url></Url>
@@ -26,25 +26,25 @@ El elemento **Url** representa la ubicación del cliente de servicio Web para la
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |Representa una suscripción a una suscripción de notificación de evento basada en inserción.  <br/> |
+|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |Representa una suscripción a una suscripción de notificación de eventos basada en inserción.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **dirección Url** es la ubicación del cliente de servicio Web para las notificaciones de inserción. 
+El valor de texto del elemento **URL** es la ubicación del servicio Web de cliente para las notificaciones de inserción. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,7 +54,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 ||
 |:-----|
-|Espacio de nombres  <br/> |
+|Namespace  <br/> |
 |Nombre de esquema  <br/> |
 |Archivo de validación  <br/> |
 |Puede estar vacío  <br/> |

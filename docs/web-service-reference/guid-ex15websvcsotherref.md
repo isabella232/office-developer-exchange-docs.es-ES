@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 49dcf69f-bf8d-4be6-a24c-03bbd13f4fe5
-description: El elemento Guid especifica el identificador único global del buzón.
-ms.openlocfilehash: 35307a706523fc5c2916767c7508dec07deb8d09
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GUID especifica el identificador único global del buzón.
+ms.openlocfilehash: 4db66b5ae2c67f64f75c69a3d77cfa2b587775be
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835799"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530778"
 ---
 # <a name="guid"></a>Guid
 
-El elemento **Guid** especifica el identificador único global del buzón. 
+El elemento **GUID** especifica el identificador único global del buzón. 
   
 ```XML
 <Guid></Guid>
@@ -26,25 +26,25 @@ El elemento **Guid** especifica el identificador único global del buzón.
  **GuidType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SearchableMailbox](searchablemailbox.md) <br/> |Especifica un buzón de correo devuelto desde una solicitud de **GetSearchableMailboxes** .  <br/> |
+|[SearchableMailbox](searchablemailbox.md) <br/> |Especifica un buzón devuelto desde una solicitud **GetSearchableMailboxes** .  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **Guid** es un valor GUID que identifica de forma exclusiva un buzón de correo. 
+El valor de texto del elemento **GUID** es un valor GUID que identifica de forma exclusiva a un buzón de correo. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,14 +56,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

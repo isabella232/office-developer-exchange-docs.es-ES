@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1a4726e5-bace-4399-8b36-a0de1e35d3bc
-description: El elemento GroupType (MasterMailboxType) está pensado para uso interno únicamente.
-ms.openlocfilehash: 0f52d31f7fee94b492924b67215e970573850705
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GroupType (MasterMailboxType) está pensado solo para uso interno.
+ms.openlocfilehash: a1ddb85e4aaf762a4148ca2ecb139b69b7d676fe
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835785"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530060"
 ---
 # <a name="grouptype-mastermailboxtype"></a>GroupType (MasterMailboxType)
 
-El elemento **GroupType (MasterMailboxType)** está pensado para uso interno únicamente. 
+El elemento **GroupType (MasterMailboxType)** está pensado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

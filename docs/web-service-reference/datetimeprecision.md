@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 822dc5a6-2d57-474b-8a7d-da150898e5b6
-description: El elemento DateTimePrecision especifica la precisión para valores de fecha y hora devuelto.
-ms.openlocfilehash: 4d11598628228b41adf021adbbaa77e6348534bb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DateTimePrecision especifica la precisión de los valores de fecha y hora devueltos.
+ms.openlocfilehash: 9d245dfb0123daae42ba9b9b4e98aff872b67d80
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764034"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529227"
 ---
 # <a name="datetimeprecision"></a>DateTimePrecision
 
-El elemento **DateTimePrecision** especifica la precisión para valores de fecha y hora devuelto. 
+El elemento **DateTimePrecision** especifica la precisión de los valores de fecha y hora devueltos. 
   
 ```XML
 <DateTimePrecision />
@@ -27,7 +27,7 @@ El elemento **DateTimePrecision** especifica la precisión para valores de fecha
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
@@ -35,7 +35,7 @@ Ninguno
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -43,7 +43,7 @@ El elemento **DateTimePrecision** se encuentra en el encabezado SOAP.
   
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto. Los valores posibles son:
+Se requiere un valor de texto. Los valores posibles son los siguientes:
   
 - Segundos
     
@@ -51,7 +51,7 @@ Se requiere un valor de texto. Los valores posibles son:
     
 ## <a name="remarks"></a>Comentarios
 
-Fecha y hora cuando se usa un encabezado SOAP con el elemento **DateTimePrecision** establecido en "Segundos", se devuelven valores a los más cercanos segundos (00: 00:00). Fecha y hora cuando se usan "Milisegundos", se devuelven valores al milisegundo más próximo (00:00:00.0000). 
+Cuando se usa un encabezado SOAP con el elemento **DateTimePrecision** establecido en "seconds", los valores de fecha y hora se devuelven a los segundos más próximos (00:00:00). Cuando se usa "Milliseconds", los valores de fecha y hora se devuelven al milisegundo más cercano (00:00:00.0000). 
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -61,9 +61,9 @@ Este elemento se introdujo en Exchange Server 2010 Service Pack 2 (SP2).
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 

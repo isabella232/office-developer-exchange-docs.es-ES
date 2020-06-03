@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: b8769d30-045a-4fa7-814d-d00702f0c258
-description: El elemento ParentInternetMessageId especifica el identificador de mensaje de Internet del mensaje primario en una conversación.
-ms.openlocfilehash: 6e3c8aec4d3a556782b51e25c53da4f2959e44c1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ParentInternetMessageId especifica el identificador del mensaje de Internet del mensaje primario de una conversación.
+ms.openlocfilehash: c53bc8c74f2b352d12880c885ebbe626693a54d2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836695"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529976"
 ---
 # <a name="parentinternetmessageid"></a>ParentInternetMessageId
 
-El elemento **ParentInternetMessageId** especifica el identificador de mensaje de Internet del mensaje primario en una conversación. 
+El elemento **ParentInternetMessageId** especifica el identificador del mensaje de Internet del mensaje primario de una conversación. 
   
 ```XML
 <ParentInternetMessageId></ParentInternetMessageId>
@@ -27,15 +27,15 @@ El elemento **ParentInternetMessageId** especifica el identificador de mensaje d
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -43,7 +43,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ParentInternetMessageId** es el identificador de mensaje de Internet del mensaje primario en la conversación. 
+El valor de texto del elemento **ParentInternetMessageId** es el identificador del mensaje de Internet del mensaje primario de la conversación. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,9 +55,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

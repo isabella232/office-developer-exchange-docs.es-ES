@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 832a9211-d2d5-4a49-bcb3-1dc6dc3904ed
-description: El elemento GetUserSettingsRequest representa una solicitud para recuperar la configuración especificada para uno o varios usuarios.
-ms.openlocfilehash: dc22570144a6947dc6e7042326c7416422680cc1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetUserSettingsRequest representa una solicitud para recuperar la configuración especificada de uno o más usuarios.
+ms.openlocfilehash: 353facb5d0bbf922a23b33cbaf6f9d2e7d82bd6b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835702"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530165"
 ---
 # <a name="getusersettingsrequest-soap"></a>GetUserSettingsRequest (SOAP)
 
-El elemento **GetUserSettingsRequest** representa una solicitud para recuperar la configuración especificada para uno o varios usuarios. 
+El elemento **GetUserSettingsRequest** representa una solicitud para recuperar la configuración especificada de uno o más usuarios. 
   
 ```XML
 <GetUserSettingsRequest>
@@ -31,35 +31,35 @@ El elemento **GetUserSettingsRequest** representa una solicitud para recuperar l
  **GetUserSettingsRequest**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Usuarios (SOAP)](users-soap.md) <br/> |Representa una colección de direcciones de correo electrónico de los usuarios para el que se debe recuperar la configuración.  <br/> |
-|[RequestedSettings (SOAP)](requestedsettings-soap.md) <br/> |Contiene los nombres de las opciones de configuración solicitado.  <br/> |
-|[RequestedVersion (SOAP)](requestedversion-soap.md) <br/> |Especifica la versión de servidor específico que le gustaría usar el proveedor.  <br/> |
+|[Usuarios (SOAP)](users-soap.md) <br/> |Representa una colección de direcciones de correo electrónico de los usuarios para los que se debe recuperar la configuración.  <br/> |
+|[RequestedSettings (SOAP)](requestedsettings-soap.md) <br/> |Contiene los nombres de las opciones de configuración solicitadas.  <br/> |
+|[RequestedVersion (SOAP)](requestedversion-soap.md) <br/> |Especifica la versión de servidor específica que el proveedor desea usar.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también

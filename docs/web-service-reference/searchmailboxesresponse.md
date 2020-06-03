@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: b4a8914b-3e5e-4766-adf8-6b4f80a65e35
-description: El elemento SearchMailboxesResponse contiene la respuesta a una solicitud de operación WSDL SearchMailboxes.
-ms.openlocfilehash: 8addb7de3848e626511cf92ea1c7e69022d9750e
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SearchMailboxesResponse contiene la respuesta a una solicitud de operación WSDL de SearchMailboxes.
+ms.openlocfilehash: 5d704c584e75cab967ae3d2dff234059d12b88b8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837301"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530327"
 ---
 # <a name="searchmailboxesresponse"></a>SearchMailboxesResponse
 
-El elemento **SearchMailboxesResponse** contiene la respuesta a una solicitud de operación WSDL **SearchMailboxes** . 
+El elemento **SearchMailboxesResponse** contiene la respuesta a una solicitud de operación WSDL de **SearchMailboxes** . 
   
 ```XML
 <SearchMailboxesResponse>
@@ -28,11 +28,11 @@ El elemento **SearchMailboxesResponse** contiene la respuesta a una solicitud de
  **SearchMailboxesResponseType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |falso  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |false  <br/> |
    
 

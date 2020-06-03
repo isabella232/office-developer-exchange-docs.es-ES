@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d2160c8a-015c-4964-b7f7-93478764a173
-description: El elemento ConnectionFailureCause especifica la razón de una desconexión de una llamada telefónica.
-ms.openlocfilehash: 54b4f5b89efdb42ef82dbef8f1af14a39c0ccc6a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ConnectionFailureCause especifica el motivo por el que se ha desconectado una llamada telefónica.
+ms.openlocfilehash: 6385641eaee140a114906703232974d51d5ce344
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763774"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529451"
 ---
 # <a name="connectionfailurecause"></a>ConnectionFailureCause
 
-El elemento **ConnectionFailureCause** especifica la razón de una desconexión de una llamada telefónica. 
+El elemento **ConnectionFailureCause** especifica el motivo por el que se ha desconectado una llamada telefónica. 
   
 ```xml
 <ConnectionFailureCause>None or UserBusy or NoAnswer or Unavailable or Other</ConnectionFailureCause>
@@ -30,35 +30,35 @@ El elemento **ConnectionFailureCause** especifica la razón de una desconexión 
  **ConnectionFailureCauseType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[PhoneCallInformation](phonecallinformation.md) <br/> |Especifica la información de estado para una llamada de teléfono.  <br/> |
+|[PhoneCallInformation](phonecallinformation.md) <br/> |Especifica la información de estado de una llamada telefónica.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-En la siguiente tabla se enumera los valores posibles para el elemento **ConnectionFailureCause** . 
+En la siguiente tabla se enumeran los valores posibles para el elemento **ConnectionFailureCause** . 
   
-**Valores de elemento ConnectionFailureCause**
+**Valores del elemento ConnectionFailureCause**
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|None  <br/> |Estado de llamada no está desconectado o no se conoce la razón por la desconexión.  <br/> |
-|UserBusy  <br/> |La línea de terceros llamada estaba ocupada.  <br/> |
-|NoAnswer  <br/> |El receptor no ha respondido.  <br/> |
-|No disponible  <br/> |El número de receptor no estaba disponible.  <br/> |
-|Otro  <br/> |Denominaba por otros motivos desconectar.  <br/> |
+|Ninguno  <br/> |El estado de la llamada no se desconecta o no se conoce el motivo de la desconexión.  <br/> |
+|UserBusy  <br/> |La línea de parte llamada estaba ocupada.  <br/> |
+|Noanswer  <br/> |La parte llamada no responde.  <br/> |
+|Momentos  <br/> |El número de la parte llamada no estaba disponible.  <br/> |
+|Otros  <br/> |Comodín para otros motivos de desconexión.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -68,14 +68,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7851ea9b-9f87-4adc-a26f-7a27df4a9bca
-description: El elemento Body especifica el cuerpo de un elemento.
-ms.openlocfilehash: a4803c0e5ac3b027396983a5524241590eac35f6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento BODY especifica el cuerpo de un elemento.
+ms.openlocfilehash: c565c5701ae5bc210cf0a9dc694108752860e24b
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763641"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529493"
 ---
 # <a name="body"></a>Cuerpo
 
@@ -26,37 +26,37 @@ El elemento **Body** especifica el cuerpo de un elemento.
  **BodyType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|BodyType  <br/> |Especifica el tipo del cuerpo.  <br/> |
-|IsTruncated  <br/> |Valor booleano que indica si el cuerpo se trunca.  <br/> |
+|BodyType  <br/> |Especifica el tipo de cuerpo.  <br/> |
+|IsTruncated  <br/> |Valor booleano que indica si el cuerpo está truncado.  <br/> |
    
 #### <a name="bodytype"></a>BodyType
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|HTML  <br/> |Indica que el cuerpo en HTML.  <br/> |
-|Texto  <br/> |Indica que es el cuerpo de texto.  <br/> |
+|HTML  <br/> |Indica que el cuerpo está en HTML.  <br/> |
+|Texto  <br/> |Indica que el cuerpo está en el texto.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
-|[Contact](contact.md) <br/> |Representa un elemento de contacto en el almacén de Exchange.  <br/> |
+|[Contacto](contact.md) <br/> |Representa un elemento de contacto en el almacén de Exchange.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Representa una lista de distribución.  <br/> |
-|[Item](item.md) <br/> |Representa un elemento genérico en el almacén de Exchange.  <br/> |
+|[Elemento](item.md) <br/> |Representa un elemento genérico del almacén de Exchange.  <br/> |
 |[Message](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Microsoft Exchange.  <br/> |
-|[Objeto postItem](postitem.md) <br/> |Representa un elemento para exponer en el almacén de Exchange.  <br/> |
-|[Tarea](task.md) <br/> |Representa una tarea en el almacén de Exchange.  <br/> |
+|[PostItem](postitem.md) <br/> |Representa un elemento post en el almacén de Exchange.  <br/> |
+|[Tarea](task.md) <br/> |Representa una tarea del almacén de Exchange.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -72,14 +72,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 69c41dd5-597c-45bc-be3f-e2f2b5615aa3
 description: El elemento WeeklyRecurrence describe un patrón de periodicidad semanal.
-ms.openlocfilehash: 78bc76dd63c6737786df02f336217dc8de9a3a67
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 5006238590c4cd7556a92fb1fbe13292383412b8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840993"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530369"
 ---
 # <a name="weeklyrecurrence"></a>WeeklyRecurrence
 
@@ -34,26 +34,26 @@ El elemento **WeeklyRecurrence** describe un patrón de periodicidad semanal.
  **WeeklyRecurrencePatternType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Interval](interval.md) <br/> |Define el intervalo de semanas entre dos consecutivos elementos de patrón de periodicidad semanal. El valor puede ser comprendido entre 1 y 99.  <br/> |
-|[DaysOfWeek (DaysOfWeekType)](daysofweek-daysofweektype.md) <br/> |Se describen los días de la semana en el patrón de periodicidad semanal.  <br/> |
+|[Intervalo de](interval.md) <br/> |Define el intervalo, en semanas, entre dos elementos de patrón de periodicidad semanal consecutivos. El valor puede estar comprendido entre 1 y 99.  <br/> |
+|[DaysOfWeek (DaysOfWeekType)](daysofweek-daysofweektype.md) <br/> |Describe qué días de la semana hay en el patrón de periodicidad semanal.  <br/> |
 |[FirstDayOfWeek](firstdayofweek.md) <br/> |Especifica el primer día de la semana.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Periodicidad (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Contiene información sobre la periodicidad para las tareas repetitivas.  <br/> |
-|[Periodicidad (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Contiene el patrón de periodicidad para los elementos de calendario y las convocatorias de reunión.  <br/> |
+|[Periodicidad (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Contiene información de periodicidad para tareas periódicas.  <br/> |
+|[Recurrence (RecurrenceType)](recurrence-recurrencetype.md) <br/> |Contiene el patrón de periodicidad para los elementos de calendario y las convocatorias de reunión.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -61,7 +61,7 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-Si las fechas de [comienzo](start.md) y de [finalización](end-ex15websvcsotherref.md) del elemento maestro periódico no tienen una fecha que es igual a la primera aparición de un patrón de periodicidad semanal, se pierde la información de desplazamiento de zona horaria. 
+La información de desplazamiento de zona horaria se pierde si las fechas de [Inicio](start.md) y [finalización](end-ex15websvcsotherref.md) del elemento maestro periódico no tienen una fecha igual a la primera aparición de un patrón de periodicidad semanal. 
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -69,14 +69,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

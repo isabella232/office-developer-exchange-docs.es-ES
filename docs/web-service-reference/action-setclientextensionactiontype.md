@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c5624a87-3436-40ce-8d6b-cc01eecab64d
-description: El elemento de acción contiene la acción que debe realizar el servidor de Exchange en una aplicación.
-ms.openlocfilehash: a231cedfa6e4759dabfcbecfbe9a9b851f834247
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Action contiene la acción que el servidor Exchange debe realizar en una aplicación.
+ms.openlocfilehash: 29579e26377edacb5fb0bb8406144eeb116b8d15
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763389"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529689"
 ---
 # <a name="action-setclientextensionactiontype"></a>Acción (SetClientExtensionActionType)
 
-El elemento de **acción** contiene la acción que debe realizar el servidor de Exchange en una aplicación. 
+El elemento **Action** contiene la acción que el servidor Exchange debe realizar en una aplicación. 
   
 ```XML
 <Action ActionId="" ExtensionId="">
@@ -28,13 +28,13 @@ El elemento de **acción** contiene la acción que debe realizar el servidor de 
  **SetClientExtensionActionType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|ActionId  <br/> |Especifica el identificador de la acción. Este atributo es necesario.  <br/> |
+|ActionId  <br/> |Especifica el identificador de la acción. Este atributo es obligatorio.  <br/> |
 |ExtensionId  <br/> |Especifica el identificador de la extensión. Este atributo es opcional.  <br/> |
    
 #### <a name="actionid"></a>ActionId
@@ -43,19 +43,19 @@ Las secciones siguientes describen los atributos, elementos secundarios y elemen
 |:-----|:-----|
 |Configurar  <br/> |Indica una acción de configuración.  <br/> |
 |Instalar  <br/> |Indica una acción de instalación.  <br/> |
-|Desinstalar  <br/> |Indica una acción de desinstalación.  <br/> |
+|Uninstall  <br/> |Indica una acción de desinstalación.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ClientExtension](clientextension.md) <br/> |Contiene información de usuario y de configuración sobre una aplicación.  <br/> |
+|[ClientExtension](clientextension.md) <br/> |Contiene la información de usuario y configuración de una aplicación.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Acciones (ArrayOfSetClientExtensionActionsType)](actions-arrayofsetclientextensionactionstype.md) <br/> |Especifica una matriz de elementos de **acción** .  <br/> |
+|[Acciones (ArrayOfSetClientExtensionActionsType)](actions-arrayofsetclientextensionactionstype.md) <br/> |Especifica una matriz de elementos **Action** .  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -67,12 +67,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

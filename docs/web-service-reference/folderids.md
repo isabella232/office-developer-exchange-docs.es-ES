@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 3ff9d15a-7220-4785-ae6b-583a7eb82005
-description: El elemento FolderIds contiene una matriz de identificadores de carpeta que se usa para identificar las carpetas para copiar, mover, obtener, eliminar o supervisar para las notificaciones de eventos.
-ms.openlocfilehash: 911a74ca778ee988c270c16c67620a40656d82d8
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento FolderIds contiene una matriz de identificadores de carpeta que se usan para identificar las carpetas que se van a copiar, mover, obtener, eliminar o supervisar las notificaciones de eventos.
+ms.openlocfilehash: ff0476f72c7da088bd2b39f58ab560dcc82197e4
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764681"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530996"
 ---
 # <a name="folderids"></a>FolderIds
 
-El elemento **FolderIds** contiene una matriz de identificadores de carpeta que se usa para identificar las carpetas para copiar, mover, obtener, eliminar o supervisar para las notificaciones de eventos. 
+El elemento **FolderIds** contiene una matriz de identificadores de carpeta que se usan para identificar las carpetas que se van a copiar, mover, obtener, eliminar o supervisar las notificaciones de eventos. 
   
 ```xml
 <FolderIds>
@@ -33,43 +33,43 @@ El elemento **FolderIds** contiene una matriz de identificadores de carpeta que 
  **NonEmptyArrayOfBaseFolderIdsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Contiene el identificador y cambiar la clave de una carpeta.  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifica las carpetas de Microsoft Exchange Server que se pueden hacer referencia por su nombre.  <br/> |
+|[FolderId](folderid.md) <br/> |Contiene el identificador y la clave de cambio de una carpeta.  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifica las carpetas de Microsoft Exchange Server a las que se puede hacer referencia por su nombre.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetFolder](getfolder.md) <br/> |Define una solicitud para obtener una carpeta desde el almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:`/GetFolder` <br/> |
-|[DeleteFolder](deletefolder.md) <br/> |Define una solicitud para eliminar las carpetas del almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:`/DeleteFolder` <br/> |
-|[EmptyFolder](emptyfolder.md) <br/> |Define una solicitud para eliminar las carpetas del almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:`/EmptyFolder` <br/> |
-|[MoveFolder](movefolder.md) <br/> |Define una solicitud para mover una carpeta en el almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:`/MoveFolder` <br/> |
-|[CopyFolder](copyfolder.md) <br/> |Define una solicitud para copiar una carpeta en el almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:`/CopyFolder` <br/> |
-|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |Representa una suscripción a una suscripción de notificación de evento basada en inserción.  <br/> |
-|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |Representa una suscripción a una suscripción de notificación de eventos basado en la extracción.  <br/> |
+|[GetFolder](getfolder.md) <br/> |Define una solicitud para obtener una carpeta del almacén de Exchange.  <br/> La siguiente es la expresión XPath a este elemento:`/GetFolder` <br/> |
+|[DeleteFolder](deletefolder.md) <br/> |Define una solicitud para eliminar carpetas del almacén de Exchange.  <br/> La siguiente es la expresión XPath a este elemento:`/DeleteFolder` <br/> |
+|[EmptyFolder](emptyfolder.md) <br/> |Define una solicitud para eliminar carpetas del almacén de Exchange.  <br/> La siguiente es la expresión XPath a este elemento:`/EmptyFolder` <br/> |
+|[MoveFolder](movefolder.md) <br/> |Define una solicitud para mover una carpeta en el almacén de Exchange.  <br/> La siguiente es la expresión XPath a este elemento:`/MoveFolder` <br/> |
+|[CopyFolder](copyfolder.md) <br/> |Define una solicitud para copiar una carpeta en el almacén de Exchange.  <br/> La siguiente es la expresión XPath a este elemento:`/CopyFolder` <br/> |
+|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |Representa una suscripción a una suscripción de notificación de eventos basada en inserción.  <br/> |
+|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |Representa una suscripción a una suscripción de notificación de eventos basada en extracción.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalada la función del servidor acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages y http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de los mensajes; Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Messages.xsd; Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages y https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensajes; Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Messages. xsd; Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -83,5 +83,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
   
 [Operación CopyFolder](copyfolder-operation.md)
   
-[Operación de suscripción](subscribe-operation.md)
+[Operación subscribe](subscribe-operation.md)
 

@@ -7,46 +7,46 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 57c6ff23-5c2c-42ee-824b-5a1b6dafab8c
-description: Busque información sobre la EWS GetUserRetentionPolicyTags operación.
-ms.openlocfilehash: faf3553c5dd426b522659029bda6819c55f2708d
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Buscar información sobre la operación de EWS de GetUserRetentionPolicyTags.
+ms.openlocfilehash: 6505945f8ad110af714da1a3011c2d504acdc75f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353234"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530835"
 ---
 # <a name="getuserretentionpolicytags-operation"></a>Operación GetUserRetentionPolicyTags
 
-Obtenga información acerca de la operación de EWS **GetUserRetentionPolicyTags** . 
+Buscar información sobre la operación de EWS de **GetUserRetentionPolicyTags** . 
   
-La operación **GetUserRetentionPolicyTags** Obtiene una lista de todos los de forma predeterminada, carpeta del sistema y etiquetas personales que se asocian a un usuario por medio de una directiva del sistema o que se han aplicado por el usuario. 
+La operación **GetUserRetentionPolicyTags** obtiene una lista de todas las etiquetas predeterminadas, carpetas del sistema y personales asociadas a un usuario por medio de una directiva del sistema o aplicada por el usuario. 
   
 Esta operación se introdujo en Exchange Server 2013.
   
-## <a name="using-the-getuserretentionpolicytags-operation"></a>Mediante la operación GetUserRetentionPolicyTags
+## <a name="using-the-getuserretentionpolicytags-operation"></a>Uso de la operación GetUserRetentionPolicyTags
 
-Esta operación devuelve el nombre para mostrar, identificador de retención, período de retención, tipo de retención, acción de retención y las etiquetas de descripción y los valores de las propiedades **IsVisible**, **OptedInto**y **IsArchive** . 
+Esta operación devuelve el nombre para mostrar, el identificador de retención, el período de retención, el tipo de retención, la acción de retención y las etiquetas de descripción, y los valores de las propiedades **IsVisible**, **OptedInto**y **IsArchive** . 
   
-### <a name="getuserretentionpolicytags-operation-soap-headers"></a>Encabezados SOAP de operación de GetUserRetentionPolicyTags
+### <a name="getuserretentionpolicytags-operation-soap-headers"></a>Encabezados SOAP de operación GetUserRetentionPolicyTags
 
-La operación de **GetUserRetentionPolicyTags** puede utilizar los encabezados SOAP que se enumeran en la siguiente tabla. 
+La operación **GetUserRetentionPolicyTags** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
   
-|**Nombre de encabezado**|**Element**|**Descripción**|
+|**Nombre de encabezado**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de la operación. Esto es aplicable a una solicitud.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que ha respondido a la solicitud. Esto es aplicable a una respuesta.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Esto es aplicable a una solicitud.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Esto es aplicable a una respuesta.  <br/> |
    
-## <a name="getuserretentionpolicytags-operation-request-example"></a>Ejemplo de solicitud de operación de GetUserRetentionPolicyTags
+## <a name="getuserretentionpolicytags-operation-request-example"></a>Ejemplo de solicitud de operación GetUserRetentionPolicyTags
 
-El siguiente ejemplo de una solicitud de operación **GetUserRetentionPolicyTags** muestra cómo obtener una lista de etiquetas para el usuario actual. 
+El siguiente ejemplo de una solicitud de operación de **GetUserRetentionPolicyTags** muestra cómo obtener una lista de etiquetas para el usuario actual. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
    </soap:Header>
@@ -56,13 +56,13 @@ El siguiente ejemplo de una solicitud de operación **GetUserRetentionPolicyTags
 </soap:Envelope>
 ```
 
-La solicitud SOAP body contiene el elemento siguiente:
+El cuerpo SOAP de la solicitud contiene el siguiente elemento:
   
 - [GetUserRetentionPolicyTags](getuserretentionpolicytags.md)
     
-## <a name="successful-getuserretentionpolicytags-operation-response"></a>Respuesta es correcta de operación GetUserRetentionPolicyTags
+## <a name="successful-getuserretentionpolicytags-operation-response"></a>Respuesta de operación GetUserRetentionPolicyTags correcta
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación **GetUserRetentionPolicyTags** . 
+En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación de **GetUserRetentionPolicyTags** . 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -73,18 +73,18 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
                            MajorBuildNumber="179" 
                            MinorBuildNumber="0" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <GetUserRetentionPolicyTagsResponse ResponseClass="Success" 
-                                          xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+                                          xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
          <ResponseCode>NoError</ResponseCode>
          <RetentionPolicyTags>
-            <RetentionPolicyTag xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <RetentionPolicyTag xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <DisplayName>1 Year Delete</DisplayName>
                <RetentionId>e66252f9-794f-4b36-b55e-d6d95fdf87a3</RetentionId>
                <RetentionPeriod>365</RetentionPeriod>
@@ -95,7 +95,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
                <OptedInto>false</OptedInto>
                <IsArchive>false</IsArchive>
             </RetentionPolicyTag>
-            <RetentionPolicyTag xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <RetentionPolicyTag xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <DisplayName>Personal 1 year move to archive</DisplayName>
                <RetentionId>b2a29464-649c-4174-932b-6aaac9811c89</RetentionId>
                <RetentionPeriod>365</RetentionPeriod>
@@ -106,7 +106,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
                <OptedInto>false</OptedInto>
                <IsArchive>true</IsArchive>
             </RetentionPolicyTag>
-            <RetentionPolicyTag xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <RetentionPolicyTag xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <DisplayName>Sent Items</DisplayName>
                <RetentionId>b0d32f1b-fbd0-4c1d-ba3e-ddd1086ea1d3</RetentionId>
                <RetentionPeriod>365</RetentionPeriod>
@@ -117,7 +117,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
                <OptedInto>false</OptedInto>
                <IsArchive>false</IsArchive>
             </RetentionPolicyTag>
-            <RetentionPolicyTag xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <RetentionPolicyTag xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <DisplayName>Default 1 year delete</DisplayName>
                <RetentionId>29fc9b9d-98b0-4c01-acf8-3996e2afce98</RetentionId>
                <RetentionPeriod>365</RetentionPeriod>
@@ -128,7 +128,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
                <OptedInto>false</OptedInto>
                <IsArchive>false</IsArchive>
             </RetentionPolicyTag>
-            <RetentionPolicyTag xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <RetentionPolicyTag xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <DisplayName>Two Year Retention</DisplayName>
                <RetentionId>a1a38957-2557-404e-9f32-53d77c948f62</RetentionId>
                <RetentionPeriod>730</RetentionPeriod>
@@ -139,7 +139,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
                <OptedInto>true</OptedInto>
                <IsArchive>false</IsArchive>
             </RetentionPolicyTag>
-            <RetentionPolicyTag xmlns="http://schemas.microsoft.com/exchange/services/2006/types">
+            <RetentionPolicyTag xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
                <DisplayName>Default two year move to archive</DisplayName>
                <RetentionId>75bc8dbe-a0e8-4e09-9fa3-fd4c21f49318</RetentionId>
                <RetentionPeriod>730</RetentionPeriod>
@@ -157,7 +157,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
 
 ```
 
-La respuesta SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de respuesta contiene los siguientes elementos:
   
 - [GetUserRetentionPolicyTagsResponse](getuserretentionpolicytagsresponse.md)
     
@@ -173,7 +173,7 @@ La respuesta SOAP body contiene los siguientes elementos:
     
 - [RetentionPeriod](retentionperiod.md)
     
-- [Type (ElcFolderType)](type-elcfoldertype.md)
+- [Tipo (ElcFolderType)](type-elcfoldertype.md)
     
 - [RetentionAction](retentionaction.md)
     
@@ -185,7 +185,7 @@ La respuesta SOAP body contiene los siguientes elementos:
     
 - [IsArchive](isarchive.md)
     
-## <a name="getuserretentionpolicytags-operation-error-response"></a>Respuesta de error de la operación de GetUserRetentionPolicyTags
+## <a name="getuserretentionpolicytags-operation-error-response"></a>Respuesta de error de operación de GetUserRetentionPolicyTags
 
-Para los códigos de error que son genéricos de EWS, consulte [ResponseCode](responsecode.md).
+Para los códigos de error que son genéricos para EWS, vea [ResponseCode](responsecode.md).
   

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 9f46ed05-5370-46ee-80f5-83f97224c76e
-description: El elemento UniqueRecipients contiene la lista de destinatarios de una conversación en una carpeta determinada. Este elemento es de sólo lectura.
-ms.openlocfilehash: 710559e599c6cec1db371165f01187f8960024f6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UniqueRecipients contiene la lista de destinatarios de una conversación en una carpeta concreta. Este elemento es de sólo lectura.
+ms.openlocfilehash: d7f6b0aa01aceb6a251fb0c46d89b34cad260acd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840782"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530729"
 ---
 # <a name="uniquerecipients"></a>UniqueRecipients
 
-El elemento **UniqueRecipients** contiene la lista de destinatarios de una conversación en una carpeta determinada. Este elemento es de sólo lectura. 
+El elemento **UniqueRecipients** contiene la lista de destinatarios de una conversación en una carpeta concreta. Este elemento es de sólo lectura. 
   
 [FindConversationResponse](findconversationresponse.md)
   
@@ -40,21 +40,21 @@ El elemento **UniqueRecipients** contiene la lista de destinatarios de una conve
  **ArrayOfStringsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[String](string.md) <br/> |Representa a un único destinatario de una conversación. Este elemento es de sólo lectura.  <br/> |
+|[String](string.md) <br/> |Representa un destinatario único de una conversación. Este elemento es de sólo lectura.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Conversación (ConversationType)](conversation-conversationtype.md) <br/> |Representa una sola conversación.  <br/> |
    
@@ -64,23 +64,23 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda Exchange Web Services.This elemento fue introdujo en Exchange Server 2010 Service Pack 1 (SP1).
+El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda los servicios Web de Exchange. este elemento se introdujo en Exchange Server 2010 Service Pack 1 (SP1).
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Operación de FindConversation](findconversation-operation.md)
+[Operación FindConversation](findconversation-operation.md)
 
 
-[Conversaciones de EWS](http://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
+[Conversaciones en EWS](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

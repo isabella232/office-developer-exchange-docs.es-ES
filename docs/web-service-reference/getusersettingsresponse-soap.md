@@ -8,13 +8,13 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: e7cd470d-5861-41e7-9e66-73ef7a59700b
-description: El elemento GetUserSettingsResponse representa una respuesta a una solicitud de operación (SOAP) GetUserSettings.
-ms.openlocfilehash: 24dbfb1582f628fd0130aa82ea5f1beedd31b156
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GetUserSettingsResponse representa una respuesta a una solicitud de operación GetUserSettings (SOAP).
+ms.openlocfilehash: a41a195a003789ddaef81f844e47aad689df0937
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835705"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530151"
 ---
 # <a name="getusersettingsresponse-soap"></a>GetUserSettingsResponse (SOAP)
 
@@ -31,35 +31,35 @@ El elemento **GetUserSettingsResponse** representa una respuesta a una solicitud
  **GetUserSettingsResponse**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |Representa un código de error devuelto por el servicio Detección automática.  <br/> |
-|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |Representa un mensaje en el que está asociado con un código de error devuelto por el servicio Detección automática.  <br/> |
+|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |Representa un código de error devuelto por el servicio de detección automática.  <br/> |
+|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |Representa un mensaje que está asociado con un código de error devuelto por el servicio de detección automática.  <br/> |
 |[UserResponses (SOAP)](userresponses-soap.md) <br/> |Contiene las opciones de configuración para cada usuario solicitado.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también

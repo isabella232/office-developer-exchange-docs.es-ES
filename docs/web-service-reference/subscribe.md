@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6c2ee57d-e216-4a94-92db-faa3cb0e244a
-description: El elemento de Subscribe contiene las propiedades usadas para crear las suscripciones.
-ms.openlocfilehash: 9f23f566f9105c655b289ed9b434c5e7b917207f
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento subscribe contiene las propiedades que se usan para crear suscripciones.
+ms.openlocfilehash: f60e67654fb6af76e8081036a3463f5be401862d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837618"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530961"
 ---
 # <a name="subscribe"></a>Suscribirse
 
-El elemento de **Subscribe** contiene las propiedades usadas para crear las suscripciones. 
+El elemento **subscribe** contiene las propiedades que se usan para crear suscripciones. 
   
 ```XML
 <Subscribe>
@@ -34,19 +34,19 @@ El elemento de **Subscribe** contiene las propiedades usadas para crear las susc
  **SubscribeType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |Representa una suscripción a una notificación de eventos basado en la extracción.  <br/> |
+|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |Representa una suscripción a una notificación de evento basada en extracción.  <br/> |
 |[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |Representa una suscripción a una notificación de evento basada en inserción.  <br/> |
-|[StreamingSubscriptionRequest](streamingsubscriptionrequest.md) <br/> |Representa una suscripción a una notificación de evento de transmisión por secuencias.  <br/> |
+|[StreamingSubscriptionRequest](streamingsubscriptionrequest.md) <br/> |Representa una suscripción a una notificación de eventos de transmisión por secuencias.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -60,20 +60,20 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Operación de suscripción](subscribe-operation.md)
+[Operación subscribe](subscribe-operation.md)
   
 [Operación GetEvents](getevents-operation.md)
   
 [Operación GetStreamingEvents](getstreamingevents-operation.md)
   
-[Cancelar la operación de suscripción](unsubscribe-operation.md)
+[Operación unsubscribe](unsubscribe-operation.md)
 

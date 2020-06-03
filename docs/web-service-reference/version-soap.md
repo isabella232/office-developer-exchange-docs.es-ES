@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 47c9216e-6bfe-48c8-a27a-26f70db8e8d5
-description: El elemento Version representa una descripción de la versión del producto de servidor.
-ms.openlocfilehash: b8284880646cb82e6af6715523467021f080b8e7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento version representa una descripción de la versión del producto del servidor.
+ms.openlocfilehash: d7e6983c837b2818b7d11e1777015ec583968242
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840969"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44531031"
 ---
 # <a name="version-soap"></a>Versión (SOAP)
 
-El elemento **Version** representa una descripción de la versión del producto de servidor. 
+El elemento **version** representa una descripción de la versión del producto del servidor. 
   
 ```XML
 <Version/>
@@ -27,37 +27,37 @@ El elemento **Version** representa una descripción de la versión del producto 
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |Contiene la versión del servidor que procesa la solicitud.  <br/> |
+|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |Contiene la versión del servidor que ha procesado la solicitud.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor del elemento de **versión** es una descripción de la versión del producto de servidor. 
+El valor del elemento **version** es una descripción de la versión del producto del servidor. 
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento de la **versión** incluido en el encabezado SOAP de una respuesta. 
+El elemento **version** se incluye en el encabezado SOAP de una respuesta. 
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también

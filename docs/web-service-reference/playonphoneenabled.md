@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6f800912-be4c-46f9-aa1e-dff0bbf877c5
-description: El elemento PlayOnPhoneEnabled indica si está habilitada la característica Reproducir en teléfono.
-ms.openlocfilehash: 1a6c5c41a4fe723f37d07ad0151dfbd6512cf4f7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PlayOnPhoneEnabled indica si está habilitada la característica de reproducción en el teléfono.
+ms.openlocfilehash: 8342e2bcc9c767903e0f6c180000a0f00eccc311
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836829"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529934"
 ---
 # <a name="playonphoneenabled"></a>PlayOnPhoneEnabled
 
-El elemento **PlayOnPhoneEnabled** indica si está habilitada la característica Reproducir en teléfono. 
+El elemento **PlayOnPhoneEnabled** indica si está habilitada la característica de reproducción en el teléfono. 
   
 ```XML
 <PlayOnPhoneEnabled>true | false</PlayOnPhoneEnabled>
@@ -30,25 +30,25 @@ El elemento **PlayOnPhoneEnabled** indica si está habilitada la característica
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Contiene información de configuración para el servicio de mensajería unificada.  <br/> |
+|[UnifiedMessagingConfiguration](unifiedmessagingconfiguration.md) <br/> |Contiene la información de configuración del servicio de mensajería unificada.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El elemento **PlayOnPhoneEnabled** tiene un valor de **true** si reproducir en teléfono está habilitado para la cuenta; de lo contrario, el valor es **false**.
+El elemento **PlayOnPhoneEnabled** tiene un valor de **true** si Play-on-Phone está habilitado para la cuenta; de lo contrario, el valor es **false**.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -60,14 +60,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

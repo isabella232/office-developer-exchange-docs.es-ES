@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: a3462c6b-453c-462a-830d-f29ee4a2babb
-description: El elemento de acción proporciona información que se utiliza para determinar si se requiere otra solicitud de detección automática para devolver la información de configuración de usuario.
-ms.openlocfilehash: 118bb59f2c929e3c74683dbf3f073da34d67a3e7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Action proporciona información que se usa para determinar si se requiere otra solicitud de detección automática para devolver la información de configuración del usuario.
+ms.openlocfilehash: f6d542b908948d09020b850b60ca1bdb025dd342
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764557"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529696"
 ---
 # <a name="action-pox"></a>Acción (POX)
 
-El elemento de **acción** proporciona información que se utiliza para determinar si se requiere otra solicitud de detección automática para devolver la información de configuración de usuario. 
+El elemento **Action** proporciona información que se usa para determinar si se requiere otra solicitud de detección automática para devolver la información de configuración del usuario. 
   
 - [Detección automática (POX)](autodiscover-pox.md)
   
@@ -34,33 +34,33 @@ El elemento de **acción** proporciona información que se utiliza para determin
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de cuenta para el usuario.  <br/> |
+|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de la cuenta del usuario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa si otra solicitud de detección automática es necesario para recuperar información de configuración del usuario. En la siguiente tabla se enumera los valores posibles.
+El valor de texto representa si es necesaria otra solicitud de detección automática para recuperar la información de configuración del usuario. En la siguiente tabla se enumeran los valores posibles.
   
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|redirectUrl  <br/> |Si se especifica este valor, el elemento [RedirectUrl (POX)](redirecturl-pox.md) especifique la dirección URL del servidor acceso de cliente que se utilizará en la siguiente solicitud de detección automática. La aplicación cliente debe dejar de redirigir después de 10 redirecciones.  <br/> |
-|redirectAddr  <br/> |Si se especifica este valor, el elemento [RedirectAddr (POX)](redirectaddr-pox.md) especifique la dirección de correo electrónico que se debe usar para una solicitud de detección automática subsiguiente.  <br/> |
-|settings  <br/> |Si se especifica este valor, la respuesta de detección automática contiene la configuración que se usa para configurar la cuenta. La mayoría de las opciones se encuentran en el elemento de [Protocolo (POX)](protocol-pox.md) .  <br/> |
+|redirectUrl  <br/> |Si se especifica este valor, el elemento [RedirectURL (POX)](redirecturl-pox.md) especificará la dirección URL del servidor de acceso de cliente que se usará en la siguiente solicitud de detección automática. La aplicación cliente debe dejar de redirigir después de 10 redirecciones.  <br/> |
+|redirectAddr  <br/> |Si se especifica este valor, el elemento [RedirectAddr (POX)](redirectaddr-pox.md) especificará la dirección de correo electrónico que se debe usar para una solicitud de detección automática subsiguiente.  <br/> |
+|settings  <br/> |Si se especifica este valor, la respuesta de detección automática contiene la configuración que se usa para configurar la cuenta. La mayoría de las opciones de configuración se encuentran en el elemento [Protocolo (POX)](protocol-pox.md) .  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Elementos de Autodiscover XML POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
+- [Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

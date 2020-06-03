@@ -1,5 +1,5 @@
 ---
-title: SendItem Operation
+title: Operación SendItem
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,23 +11,23 @@ api_name:
 api_type:
 - schema
 ms.assetid: 337b89ef-e1b7-45ed-92f3-8abe4200e4c7
-description: La operación de SendItem se utiliza para enviar mensajes de correo electrónico que se encuentran en el almacén de Exchange.
-ms.openlocfilehash: 780778b1599d0d5e5f4b6e5b58b67773bbe18cda
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación SendItem se usa para enviar mensajes de correo electrónico que se encuentran en el almacén de Exchange.
+ms.openlocfilehash: 9136379e50723211fe5a483c7f113da4fa125fc1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837336"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530341"
 ---
-# <a name="senditem-operation"></a>SendItem Operation
+# <a name="senditem-operation"></a>Operación SendItem
 
-La operación de SendItem se utiliza para enviar mensajes de correo electrónico que se encuentran en el almacén de Exchange.
+La operación SendItem se usa para enviar mensajes de correo electrónico que se encuentran en el almacén de Exchange.
   
 ## <a name="senditem-e-mail-message-request-example"></a>Ejemplo de solicitud de SendItem (mensaje de correo electrónico)
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra cómo enviar un mensaje de correo electrónico.
+En el siguiente ejemplo, se muestra cómo enviar un mensaje de correo electrónico.
   
 ### <a name="code"></a>Código
 
@@ -35,9 +35,9 @@ En el ejemplo siguiente se muestra cómo enviar un mensaje de correo electrónic
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <SendItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" 
+    <SendItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" 
               SaveItemToFolder="true">
       <ItemIds>
         <t:ItemId Id="AAAtAEF=" ChangeKey="CQAAABY+T" />
@@ -49,23 +49,23 @@ En el ejemplo siguiente se muestra cómo enviar un mensaje de correo electrónic
 
 ### <a name="comments"></a>Comentarios
 
-El identificador del elemento se ha acortado para conservar la legibilidad.
+El identificador de elemento se ha abreviado para preservar la legibilidad.
   
 ### <a name="request-elements"></a>Elementos de solicitud
 
-En la solicitud se usan los siguientes elementos:
+Los siguientes elementos se usan en la solicitud:
   
 - [SendItem](senditem.md)
     
-- [ItemId](itemids.md)
+- [ItemIds](itemids.md)
     
 - [ItemId](itemid.md)
     
-## <a name="successful-senditem-e-mail-message-response"></a>Respuesta correcta SendItem (mensaje de correo electrónico)
+## <a name="successful-senditem-e-mail-message-response"></a>Respuesta SendItem (mensaje de correo electrónico) correcta
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta correcta de SendItem.
+En el ejemplo siguiente se muestra una respuesta SendItem correcta.
   
 ### <a name="code"></a>Código
 
@@ -76,12 +76,12 @@ En el ejemplo siguiente se muestra una respuesta correcta de SendItem.
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SendItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SendItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:SendItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -92,7 +92,7 @@ En el ejemplo siguiente se muestra una respuesta correcta de SendItem.
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elementos de respuesta correcta
+### <a name="successful-response-elements"></a>Elementos Response correcto
 
 En la respuesta se usan los siguientes elementos:
   
@@ -108,15 +108,15 @@ En la respuesta se usan los siguientes elementos:
     
 ### <a name="comments"></a>Comentarios
 
-Un delegado que intenta enviar un mensaje de correo electrónico que se encuentra en la carpeta Borradores de la entidad de seguridad con la opción SendAndSaveCopy para guardar una copia en la carpeta distintivo (DN) se producirá un error en modo silencioso para mover una copia del elemento enviado a los elementos enviados distintivo (DN) de elementos enviados carpeta. El elemento permanecerá en la carpeta Borradores de la entidad de seguridad. La solución alternativa para este problema es especificar el buzón de correo de la entidad de seguridad en el elemento [DistinguishedFolderId](distinguishedfolderid.md) . 
+Un delegado que intenta enviar un mensaje de correo electrónico que se encuentra en la carpeta de borradores de la entidad de identidad con la opción SendAndSaveCopy establecida para guardar una copia en la carpeta completa de elementos enviados no podrá mover una copia del elemento enviado a la carpeta de elementos enviados. El elemento permanecerá en la carpeta Borradores de la entidad de identidad. La solución para este problema es especificar el buzón de la entidad de identidad en el elemento [DistinguishedFolderId](distinguishedfolderid.md) . 
   
-Un escenario adicional que se deben considerar es cuando un delegado crea un mensaje de correo electrónico y guarda en la carpeta Borradores del buzón de correo del delegado. Si el delegado intenta enviar el elemento y guardar una copia en la carpeta distintivo (DN) de la entidad de seguridad elementos enviados, el mensaje se envía correctamente, que el mensaje de borrador permanece en la carpeta de borradores del delegado, no aparece el mensaje enviado en del delegado o en la entidad de seguridad Carpeta Elementos enviados, y la respuesta es un éxito.
+Un escenario adicional que se debe considerar es cuando un delegado crea un mensaje de correo electrónico y lo guarda en la carpeta Borradores del buzón de correo del delegado. Si el delegado intenta enviar el elemento y guardar una copia en la carpeta de elementos enviados de la entidad de la identidad, el mensaje se envía correctamente, el borrador permanece en la carpeta Borradores del delegado, el mensaje enviado no aparece en la carpeta elementos enviados del delegado o del principal, y la respuesta es un éxito.
   
-## <a name="invalid-senditem-e-mail-message-request-example"></a>Ejemplo de solicitud no válido de SendItem (mensaje de correo electrónico)
+## <a name="invalid-senditem-e-mail-message-request-example"></a>Ejemplo de solicitud de SendItem (mensaje de correo electrónico) no válido
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
-El ejemplo de código siguiente muestra un ejemplo de una solicitud con un identificador no válido.
+En el ejemplo de código siguiente se muestra un ejemplo de una solicitud con un identificador no válido.
   
 ### <a name="code"></a>Código
 
@@ -124,9 +124,9 @@ El ejemplo de código siguiente muestra un ejemplo de una solicitud con un ident
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <SendItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages" 
+    <SendItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages" 
               SaveItemToFolder="true">
       <ItemIds>
         <t:ItemId Id="%BadItemId%" ChangeKey="CQAAABYAAA" />
@@ -138,9 +138,9 @@ El ejemplo de código siguiente muestra un ejemplo de una solicitud con un ident
 
 ## <a name="senditem-e-mail-message-error-response"></a>Respuesta de error de SendItem (mensaje de correo electrónico)
 
-### <a name="description"></a>Descripción
+### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de SendItem que contiene un identificador no válido.
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud SendItem que contiene un identificador no válido.
   
 ### <a name="code"></a>Código
 
@@ -151,12 +151,12 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de Sen
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="602" MinorBuildNumber="0" 
-                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" />
+                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" />
   </soap:Header>
   <soap:Body>
-    <SendItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+    <SendItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:SendItemResponseMessage ResponseClass="Error">
           <m:MessageText>Id is malformed.</m:MessageText>
@@ -171,7 +171,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de Sen
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-En la respuesta de error, se usan los siguientes elementos:
+Los siguientes elementos se usan en la respuesta de error:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -196,5 +196,5 @@ En la respuesta de error, se usan los siguientes elementos:
  **SendItemType**
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

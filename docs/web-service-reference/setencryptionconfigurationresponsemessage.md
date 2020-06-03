@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bb0f0eec-be1e-42cc-9426-d98a491debec
-description: El elemento SetEncryptionConfigurationResponseMessage está pensado para uso interno únicamente.
-ms.openlocfilehash: 88b77acc917b7c7b6876bbb8dbf91314474b8544
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SetEncryptionConfigurationResponseMessage está destinado sólo para uso interno.
+ms.openlocfilehash: ad32b7f1da07e6f22a15e2571ec2b1cc5533e499
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837409"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530334"
 ---
 # <a name="setencryptionconfigurationresponsemessage"></a>SetEncryptionConfigurationResponseMessage
 
-El elemento **SetEncryptionConfigurationResponseMessage** está pensado para uso interno únicamente. 
+El elemento **SetEncryptionConfigurationResponseMessage** está destinado sólo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

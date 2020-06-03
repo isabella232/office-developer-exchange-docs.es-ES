@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: f875e6c2-be18-439a-a7b1-bb49a149b538
-description: El elemento de datos contiene datos cifrados que representa los datos compartidos.
-ms.openlocfilehash: acd66691f16d11f41dee5efb9de03c129ff416c2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Data contiene datos cifrados que representan los datos compartidos.
+ms.openlocfilehash: cd13d68afcd0f40486865887676d2b5669c276f8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764017"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529220"
 ---
 # <a name="data"></a>Datos
 
-El elemento de **datos** contiene datos cifrados que representa los datos compartidos. 
+El elemento **Data** contiene datos cifrados que representan los datos compartidos. 
   
 - [EncryptedSharedFolderData](encryptedsharedfolderdata.md)  
 - [Datos](data.md)
@@ -34,21 +34,21 @@ El elemento de **datos** contiene datos cifrados que representa los datos compar
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[EncryptedSharedFolderData](encryptedsharedfolderdata.md) <br/> |Contiene los datos cifrados que un cliente puede usar para autorizar el uso compartido de su calendario o póngase en contacto con datos con otros clientes.  <br/> |
+|[EncryptedSharedFolderData](encryptedsharedfolderdata.md) <br/> |Contiene los datos cifrados que un cliente puede usar para autorizar el uso compartido de sus datos de contacto o calendario con otros clientes.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -62,13 +62,13 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación GetSharingMetadata](getsharingmetadata-operation.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

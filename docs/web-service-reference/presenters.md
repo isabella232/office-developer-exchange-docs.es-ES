@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 01057872-4f1a-4246-86ba-73d10ef854a0
-description: El elemento de moderadores especifica los moderadores para una reunión en línea.
-ms.openlocfilehash: f62b458759e0d8199c98827602d6c3fe16aebeea
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Presenter especifica los moderadores de una reunión en línea.
+ms.openlocfilehash: 0236457020dfc4684569e84d3d54e357af00d102
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836875"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529913"
 ---
 # <a name="presenters"></a>Moderadores
 
-El elemento de **moderadores** especifica los moderadores para una reunión en línea. 
+El elemento **Presenter** especifica los moderadores de una reunión en línea. 
   
 ```XML
 <Presenters> Disabled | Internal | Everyone </Presenters>
@@ -26,15 +26,15 @@ El elemento de **moderadores** especifica los moderadores para una reunión en l
  **PresentersType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,15 +42,15 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **moderadores** es el tipo de usuarios que puede ser un moderador para una reunión en línea. En la siguiente tabla, se describen los valores de texto para el elemento de **moderadores** . 
+El valor de texto del elemento **presenters** es el tipo de usuario que puede ser un moderador para una reunión en línea. En la tabla siguiente se describen los valores de texto para el elemento **Presenter** . 
   
-**Valores de texto del elemento de moderadores**
+**Valores de texto del elemento Presenter**
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Deshabilitado  <br/> |Se deshabilitan los moderadores.  <br/> |
-|Interno  <br/> |Sólo los participantes internos pueden ser moderadores.  <br/> |
-|Todos los usuarios  <br/> |Cualquier participante puede ser un moderador.  <br/> |
+|Deshabilitado  <br/> |Los moderadores están deshabilitados.  <br/> |
+|Interno  <br/> |Solo los participantes internos pueden ser moderadores.  <br/> |
+|Todos  <br/> |Cualquier participante puede ser un moderador.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -62,9 +62,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

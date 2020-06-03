@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 82fe0644-1756-40b2-955c-20c01110660c
-description: El elemento SyncFolderItemsResponse define una respuesta a una solicitud de SyncFolderItems.
-ms.openlocfilehash: e6145a1757d67c1d4a2e50b74204e4a79bdb6df9
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SyncFolderItemsResponse define una respuesta a una solicitud SyncFolderItems.
+ms.openlocfilehash: 694730a5ead8b875da9b3544099d0b20a478a627
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840615"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530235"
 ---
 # <a name="syncfolderitemsresponse"></a>SyncFolderItemsResponse
 
-El elemento **SyncFolderItemsResponse** define una respuesta a una solicitud de SyncFolderItems. 
+El elemento **SyncFolderItemsResponse** define una respuesta a una solicitud SyncFolderItems. 
   
 ```xml
 <SyncFolderItemsResponse>
@@ -32,17 +32,17 @@ El elemento **SyncFolderItemsResponse** define una respuesta a una solicitud de 
  **SyncFolderItemsResponseType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta para una solicitud de servicios Web de Exchange.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta de una solicitud de servicios web Exchange.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -50,15 +50,15 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 

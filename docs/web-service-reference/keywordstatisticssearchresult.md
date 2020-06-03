@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d0278642-2b15-4605-974e-325b829a0528
-description: El elemento KeywordStatisticsSearchResult contiene un resultado de búsqueda de palabra clave única.
-ms.openlocfilehash: 39aa873dfea15e6df5ac42a804931e7199cff541
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento KeywordStatisticsSearchResult contiene un único resultado de búsqueda de palabras clave.
+ms.openlocfilehash: f433640aecb10a01c66f890bb30b7a120df3298f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836195"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530039"
 ---
 # <a name="keywordstatisticssearchresult"></a>KeywordStatisticsSearchResult
 
-El elemento **KeywordStatisticsSearchResult** contiene un resultado de búsqueda de palabra clave única. 
+El elemento **KeywordStatisticsSearchResult** contiene un único resultado de búsqueda de palabras clave. 
   
 
   
@@ -32,15 +32,15 @@ El elemento **KeywordStatisticsSearchResult** contiene un resultado de búsqueda
  **KeywordStatisticsSearchResultType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Palabra clave](keyword.md) | [ItemHits](itemhits.md) | [tamaño (long)](size-long.md)
+[Palabra clave](keyword.md)  |  [ItemHits](itemhits.md)  |  [Tamaño (largo)](size-long.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -56,9 +56,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

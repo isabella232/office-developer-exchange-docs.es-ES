@@ -7,48 +7,48 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ea5b1cb6-6998-46fb-a99c-a6d3da77591f
-description: Busque información sobre la EWS MarkAllItemsAsRead operación.
-ms.openlocfilehash: 995a6219f0a3b41bddb0d65c875d981322e1ce78
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Buscar información sobre la operación de EWS de MarkAllItemsAsRead.
+ms.openlocfilehash: aeeacea1cd5eed723f93027dd1ef75b34605fdfd
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836354"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530533"
 ---
 # <a name="markallitemsasread-operation"></a>Operación MarkAllItemsAsRead
 
-Obtenga información acerca de la operación de EWS **MarkAllItemsAsRead** . 
+Buscar información sobre la operación de EWS de **MarkAllItemsAsRead** . 
   
-La operación **MarkAllItemsAsRead** establece la propiedad [estáleído](isread.md) en todos los elementos, en una o varias carpetas, para indicar que todos los elementos son leídos o no leídos. 
+La operación **MarkAllItemsAsRead** establece la propiedad [IsRead](isread.md) en todos los elementos de una o varias carpetas para indicar que todos los elementos son leídos o no leídos. 
   
 Esta operación se introdujo en Exchange Server 2013.
   
-## <a name="using-the-markallitemsasread-operation"></a>Mediante la operación MarkAllItemsAsRead
+## <a name="using-the-markallitemsasread-operation"></a>Uso de la operación MarkAllItemsAsRead
 
-La operación de **MarkAllItemsAsRead** puede establecer la propiedad [estáleído](isread.md) en todos los elementos en carpetas identificados por el identificador de la carpeta de Exchange Web Services (EWS) o el nombre de la carpeta de Exchange de forma predeterminada. La operación de **MarkAllItemsAsRead** también puede suprimir el envío de confirmaciones de lectura para los elementos marcados como leídos. 
+La operación **MarkAllItemsAsRead** puede establecer la propiedad [IsRead](isread.md) en todos los elementos de las carpetas identificadas por el identificador de la carpeta de servicios web Exchange (EWS) o el nombre de la carpeta de Exchange predeterminada. La operación **MarkAllItemsAsRead** también puede suprimir el envío de confirmaciones de lectura para los elementos marcados como leídos. 
   
-### <a name="markallitemsasread-operation-soap-headers"></a>Encabezados SOAP de operación de MarkAllItemsAsRead
+### <a name="markallitemsasread-operation-soap-headers"></a>Encabezados SOAP de operación MarkAllItemsAsRead
 
-La operación de **MarkAllItemsAsRead** puede utilizar los encabezados SOAP que se enumeran en la siguiente tabla. 
+La operación **MarkAllItemsAsRead** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
   
-|**Nombre de encabezado**|**Element**|**Descripción**|
+|**Nombre de encabezado**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario que está realizando la suplantación de la aplicación cliente. Este encabezado es aplicable a una solicitud.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural, como se define en RFC 3066, "Etiquetas para la identificación de idiomas," que se utilizará para acceder al buzón. Este encabezado es aplicable a una solicitud.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de la operación. Este encabezado es aplicable a una solicitud.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que ha respondido a la solicitud. Este encabezado es aplicable a una respuesta.  <br/> |
+|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente. Este encabezado se aplica a una solicitud.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural, tal y como se define en RFC 3066, "etiquetas para la identificación de idiomas", que se va a usar para obtener acceso al buzón. Este encabezado se aplica a una solicitud.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Este encabezado se aplica a una solicitud.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado se aplica a una respuesta.  <br/> |
    
-## <a name="markallitemsasread-operation-request-example-mark-all-items-in-a-folder-as-read"></a>Ejemplo de solicitud de operación de MarkAllItemsAsRead: marcar todos los elementos de una carpeta como leídos
+## <a name="markallitemsasread-operation-request-example-mark-all-items-in-a-folder-as-read"></a>Ejemplo de solicitud de operación MarkAllItemsAsRead: marcar todos los elementos de una carpeta como leídos
 
-El siguiente ejemplo de una solicitud de operación **MarkAllItemsAsRead** muestra cómo establecer la propiedad [estáleído](isread.md) , que también se llama a la marca de lectura, en **true** en todos los elementos de una carpeta. En este ejemplo se muestra también que se leen confirmaciones no se envían en respuesta a las solicitudes de confirmación de lectura. 
+El siguiente ejemplo de una solicitud de operación de **MarkAllItemsAsRead** muestra cómo establecer la propiedad [IsRead](isread.md) , que también se denomina marca de lectura, en **true** en todos los elementos de una carpeta. En este ejemplo también se muestra que no se envían confirmaciones de lectura en respuesta a las solicitudes de confirmación de lectura. 
   
 > [!NOTE]
-> Todos los identificadores de artículo y cambiar claves en este artículo se han abreviado para conservar la legibilidad. Cambiar claves no son necesarias para esta operación. 
+> Todos los identificadores de elemento y las claves de cambio de este artículo se han reducido para preservar la legibilidad. Las claves de cambio no son necesarias para esta operación. 
   
 ```XML
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
@@ -66,7 +66,7 @@ El siguiente ejemplo de una solicitud de operación **MarkAllItemsAsRead** muest
 </soap:Envelope>
 ```
 
-La solicitud SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de la solicitud contiene los siguientes elementos:
   
 - [MarkAllItemsAsRead](markallitemsasread.md)
     
@@ -78,9 +78,9 @@ La solicitud SOAP body contiene los siguientes elementos:
     
 - [FolderId](folderid.md)
     
-## <a name="successful-markallitemsasread-operation-response"></a>Respuesta es correcta de operación MarkAllItemsAsRead
+## <a name="successful-markallitemsasread-operation-response"></a>Respuesta de operación MarkAllItemsAsRead correcta
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación de **MarkAllItemsAsRead** para marcar todos los elementos de una carpeta como leídos. 
+En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación **MarkAllItemsAsRead** para marcar todos los elementos de una carpeta como leídos. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -91,15 +91,15 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
                            MajorBuildNumber="545" 
                            MinorBuildNumber="11" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:MarkAllItemsAsReadResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:MarkAllItemsAsReadResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:MarkAllItemsAsReadResponseMessage ResponseClass="Success">
                <m:ResponseCode>NoError</m:ResponseCode>
@@ -110,7 +110,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
 </s:Envelope>
 ```
 
-La respuesta SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de respuesta contiene los siguientes elementos:
   
 - [MarkAllItemsAsReadResponse](markallitemsasreadresponse.md)
     
@@ -120,15 +120,15 @@ La respuesta SOAP body contiene los siguientes elementos:
     
 - [ResponseCode](responsecode.md)
     
-## <a name="markallitemsasread-operation-request-example-mark-all-items-in-a-folder-as-unread"></a>Ejemplo de solicitud de operación de MarkAllItemsAsRead: marcar todos los elementos de una carpeta como no leídos
+## <a name="markallitemsasread-operation-request-example-mark-all-items-in-a-folder-as-unread"></a>Ejemplo de solicitud de operación MarkAllItemsAsRead: marcar todos los elementos de una carpeta como no leídos
 
-El siguiente ejemplo de una solicitud de operación **MarkAllItemsAsRead** muestra cómo establecer la propiedad [estáleído](isread.md) en **false** en todos los elementos de una carpeta. En este ejemplo se muestra también que se leen confirmaciones no se envían en respuesta a las solicitudes de confirmación de lectura. 
+El siguiente ejemplo de una solicitud de operación de **MarkAllItemsAsRead** muestra cómo establecer la propiedad [IsRead](isread.md) en **false** en todos los elementos de una carpeta. En este ejemplo también se muestra que no se envían confirmaciones de lectura en respuesta a las solicitudes de confirmación de lectura. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
                xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013" />
@@ -146,9 +146,9 @@ El siguiente ejemplo de una solicitud de operación **MarkAllItemsAsRead** muest
 </soap:Envelope>
 ```
 
-Una respuesta correcta a una solicitud para marcar todos los elementos como leídos es el mismo que la respuesta a una solicitud para marcar todos los elementos como no leídos.
+Una respuesta correcta a una solicitud para marcar todos los elementos como leídos es la misma que la respuesta a una solicitud para marcar todos los elementos como no leídos.
   
-La solicitud SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de la solicitud contiene los siguientes elementos:
   
 - [MarkAllItemsAsRead](markallitemsasread.md)
     
@@ -160,9 +160,9 @@ La solicitud SOAP body contiene los siguientes elementos:
     
 - [FolderId](folderid.md)
     
-## <a name="markallitemsasread-operation-error-response"></a>Respuesta de error de la operación de MarkAllItemsAsRead
+## <a name="markallitemsasread-operation-error-response"></a>Respuesta de error de operación de MarkAllItemsAsRead
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación de **MarkAllItemsAsRead** para marcar todos los elementos de una carpeta como leídos o no leídos cuando la carpeta no existe en el buzón de correo. 
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **MarkAllItemsAsRead** para marcar todos los elementos de una carpeta como leídos o no leídos cuando la carpeta no existe en el buzón. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -173,15 +173,15 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
                            MajorBuildNumber="545" 
                            MinorBuildNumber="11" 
                            Version="Exchange2013" 
-                           xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-                           xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+                           xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
                            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
    </s:Header>
    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <m:MarkAllItemsAsReadResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-                                    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:MarkAllItemsAsReadResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+                                    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
          <m:ResponseMessages>
             <m:MarkAllItemsAsReadResponseMessage ResponseClass="Error">
                <m:MessageText>The specified object was not found in the store.</m:MessageText>
@@ -195,7 +195,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
 
 ```
 
-La respuesta de error SOAP body contiene los siguientes elementos:
+El cuerpo SOAP de respuesta de error contiene los siguientes elementos:
   
 - [MarkAllItemsAsReadResponse](markallitemsasreadresponse.md)
     

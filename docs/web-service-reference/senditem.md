@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: a966da19-b05a-4504-ac98-91acc1667b9a
-description: El elemento de SendItem es el elemento raíz en una solicitud para enviar un elemento en el almacén de Exchange.
-ms.openlocfilehash: c5ce52ee4643219aa31ae59e8b7d40d7a904c8ab
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SendItem es el elemento raíz de una solicitud para enviar un elemento en el almacén de Exchange.
+ms.openlocfilehash: 28f0d484dd079146c998cb7317bd2d80c6739e19
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837340"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530568"
 ---
 # <a name="senditem"></a>SendItem
 
-El elemento de **SendItem** es el elemento raíz en una solicitud para enviar un elemento en el almacén de Exchange. 
+El elemento **SendItem** es el elemento raíz de una solicitud para enviar un elemento en el almacén de Exchange. 
   
 ```xml
 <SendItem SaveItemToFolder="">
@@ -33,27 +33,27 @@ El elemento de **SendItem** es el elemento raíz en una solicitud para enviar un
  **SendItemType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-|**Attribute**|**Descripción**|
+|**Atributo**|**Descripción**|
 |:-----|:-----|
-|**SaveItemToFolder** <br/> |Identifica si se guarda una copia del elemento enviado. La operación de guardar acción depende del valor de **SaveItemToFolder** y si está presente en la solicitud de un elemento [SavedItemFolderId](saveditemfolderid.md) . Se requiere este elemento.  <br/> |
+|**SaveItemToFolder** <br/> |Identifica si se guarda una copia del elemento enviado. La acción guardar depende del valor de **SaveItemToFolder** y de si un elemento [SavedItemFolderId](saveditemfolderid.md) está presente en la solicitud. Se requiere este elemento.  <br/> |
    
 #### <a name="saveitemtofolder-attribute"></a>Atributo SaveItemToFolder
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|**True** <br/> |Si el elemento [SavedItemFolderId](saveditemfolderid.md) no está presente, el elemento se guarda en la carpeta Elementos enviados. Si el elemento [SavedItemFolderId](saveditemfolderid.md) está presente, el elemento se guarda en la carpeta que se especifica mediante el elemento [SavedItemFolderId](saveditemfolderid.md) .  <br/> |
-|**False** <br/> |Si el elemento [SavedItemFolderId](saveditemfolderid.md) no está presente, no se guarda el elemento. Si el elemento [SavedItemFolderId](saveditemfolderid.md) está presente, se devolverá una respuesta de error con un elemento [ResponseCode](responsecode.md) que contiene el valor de **ErrorInvalidSendItemSaveSettings** .  <br/> |
+|**true** <br/> |Si el elemento [SavedItemFolderId](saveditemfolderid.md) no está presente, el elemento se guarda en la carpeta elementos enviados. Si el elemento [SavedItemFolderId](saveditemfolderid.md) está presente, el elemento se guarda en la carpeta especificada por el elemento [SavedItemFolderId](saveditemfolderid.md) .  <br/> |
+|**false** <br/> |Si el elemento [SavedItemFolderId](saveditemfolderid.md) no está presente, no se guarda el elemento. Si el elemento [SavedItemFolderId](saveditemfolderid.md) está presente, se devolverá una respuesta de error con un elemento [ResponseCode](responsecode.md) que contiene el valor **ErrorInvalidSendItemSaveSettings** .  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ItemId](itemids.md) <br/> |Contiene las identidades únicas de los elementos, elementos de aparición y elementos maestros periódicos que se usan para eliminar, enviar, obtener, mover o copiar elementos en el almacén de Exchange.  <br/> |
-|[SavedItemFolderId](saveditemfolderid.md) <br/> |Identifica la carpeta de destino para las operaciones que actualizar, enviar y crear elementos en el almacén de Exchange.  <br/> |
+|[ItemIds](itemids.md) <br/> |Contiene las identidades únicas de los elementos, los elementos de ocurrencia y los elementos maestros periódicos que se usan para eliminar, enviar, obtener, mover o copiar elementos en el almacén de Exchange.  <br/> |
+|[SavedItemFolderId](saveditemfolderid.md) <br/> |Identifica la carpeta de destino para las operaciones que actualizan, envían y crean elementos en el almacén de Exchange.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -61,18 +61,18 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-Si se envía un elemento en la carpeta Elementos enviados, se elimina el elemento enviado y se coloca una copia de él en la carpeta Elementos enviados.
+Si se envía un elemento de la carpeta elementos enviados, se elimina el elemento enviado y se coloca una copia en la carpeta elementos enviados.
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

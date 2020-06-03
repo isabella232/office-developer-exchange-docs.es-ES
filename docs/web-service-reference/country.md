@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f012c2e3-9719-47fc-81ef-ba613263779b
-description: El elemento de país identifica un identificador de país en una dirección postal.
-ms.openlocfilehash: 83462afedc542fa69cbb8c54c91d0bbc8c746fb4
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Country identifica un identificador de país en una dirección postal.
+ms.openlocfilehash: 7f5a67128c314d8a6f546735c00966319e64ea36
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763910"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529234"
 ---
 # <a name="country"></a>País
 
-El elemento de **país** identifica un identificador de país en una dirección postal. 
+El elemento **Country** identifica un identificador de país en una dirección postal. 
   
 ```XML
 <Country></Country>
@@ -26,15 +26,15 @@ El elemento de **país** identifica un identificador de país en una dirección 
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **país** es un identificador de país. 
+El valor de texto del elemento **Country** es un identificador de país. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

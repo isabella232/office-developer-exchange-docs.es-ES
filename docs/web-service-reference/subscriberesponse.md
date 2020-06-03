@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: fd87e9b7-c231-44fa-9f5b-19ae96cda5cc
-description: El elemento SubscribeResponse define una respuesta a una solicitud Subscribe.
-ms.openlocfilehash: 9c4fb0e9282acd2dfd8dcb66669815edcbd69ff2
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SubscribeResponse define una respuesta a una solicitud subscribe.
+ms.openlocfilehash: 1f7079694c873aacbf44b1030e495cbe2f48d163
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837615"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530954"
 ---
 # <a name="subscriberesponse"></a>SubscribeResponse
 
-El elemento **SubscribeResponse** define una respuesta a una solicitud Subscribe. 
+El elemento **SubscribeResponse** define una respuesta a una solicitud subscribe. 
   
 [SubscribeResponse](subscriberesponse.md)
   
@@ -34,17 +34,17 @@ El elemento **SubscribeResponse** define una respuesta a una solicitud Subscribe
  **SubscribeResponseType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta para una solicitud de servicios Web de Exchange.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta de una solicitud de servicios web Exchange.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -52,20 +52,20 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Operación de suscripción](subscribe-operation.md)
+[Operación subscribe](subscribe-operation.md)
 

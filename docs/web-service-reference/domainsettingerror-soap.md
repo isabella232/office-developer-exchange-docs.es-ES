@@ -8,17 +8,17 @@ localization_priority: Normal
 api_type:
 - schema
 ms.assetid: 48c3f7b5-2ee0-42ce-97a1-a881e2f60327
-description: El elemento DomainSettingError representa un error que se produjo durante la recuperación de una configuración de dominio. Esto representa un error de una solicitud de GetDomainSettings.
-ms.openlocfilehash: 08b0a47acea8d35ec78efd701168a251771effac
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DomainSettingError representa un error que se produjo al recuperar una configuración de dominio. Esto representa un error de una solicitud GetDomainSettings.
+ms.openlocfilehash: 189a614e7629033c8db2f60b8fd3679835a696ed
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764274"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530715"
 ---
 # <a name="domainsettingerror-soap"></a>DomainSettingError (SOAP)
 
-El elemento **DomainSettingError** representa un error que se produjo durante la recuperación de una configuración de dominio. Esto representa un error de una solicitud de **GetDomainSettings** . 
+El elemento **DomainSettingError** representa un error que se produjo al recuperar una configuración de dominio. Esto representa un error de una solicitud **GetDomainSettings** . 
   
 ```XML
 <DomainSettingError>
@@ -31,37 +31,37 @@ El elemento **DomainSettingError** representa un error que se produjo durante la
  **DomainSettingError**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |Identifica el código de error que está asociado a la solicitud específico.  <br/> |
-|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |Contiene el mensaje de error que está asociado a la solicitud específico.  <br/> |
-|[NombreDeOpción (SOAP)](settingname-soap.md) <br/> |Representa el nombre de la configuración.  <br/> |
+|[ErrorCode (SOAP)](errorcode-soap.md) <br/> |Identifica el código de error que está asociado con la solicitud específica.  <br/> |
+|[ErrorMessage (SOAP)](errormessage-soap.md) <br/> |Contiene el mensaje de error que está asociado con la solicitud específica.  <br/> |
+|[SettingName (SOAP)](settingname-soap.md) <br/> |Representa el nombre de la configuración.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[DomainSettingErrors (SOAP)](domainsettingerrors-soap.md) <br/> |Contiene información de error de configuración que no se pudo devolver.  <br/> |
+|[DomainSettingErrors (SOAP)](domainsettingerrors-soap.md) <br/> |Contiene información de error de la configuración que no se pudo devolver.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Ninguno.
+Ninguna.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 ## <a name="see-also"></a>Vea también

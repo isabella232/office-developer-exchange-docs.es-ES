@@ -1,5 +1,5 @@
 ---
-title: Nombres de carpetas
+title: FolderNames
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 6cbe4083-5705-4695-a54e-8dab3e472662
-description: El elemento de los nombres de carpetas contiene una matriz de las carpetas administradas con nombre para agregar a un buzón de correo.
-ms.openlocfilehash: 819b3c2df1cfcae3a5d4a48539e369a00b1f7229
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento FolderNames contiene una matriz de carpetas administradas con nombre para agregar a un buzón de correo.
+ms.openlocfilehash: 00cb1a81f420469033ccbc745313d2719b155aff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764684"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530989"
 ---
-# <a name="foldernames"></a>Nombres de carpetas
+# <a name="foldernames"></a>FolderNames
 
-El elemento de **los nombres de carpetas** contiene una matriz de las carpetas administradas con nombre para agregar a un buzón de correo. 
+El elemento **FolderNames** contiene una matriz de carpetas administradas con nombre para agregar a un buzón de correo. 
   
 [CreateManagedFolder](createmanagedfolder.md)
   
-[Nombres de carpetas](foldernames.md)
+[FolderNames](foldernames.md)
   
 ```xml
 <FolderNames>
@@ -36,36 +36,36 @@ El elemento de **los nombres de carpetas** contiene una matriz de las carpetas a
  **NonEmptyArrayOfFolderNamesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FolderName](foldername.md) <br/> |Identifica una sola carpeta administrada para agregar al buzón de correo.  <br/> |
+|[FolderName](foldername.md) <br/> |Identifica una única carpeta administrada para agregar al buzón.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CreateManagedFolder](createmanagedfolder.md) <br/> |El elemento raíz en una solicitud para agregar una carpeta administrada a un buzón de correo.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/CreateManagedFolder` <br/> |
+|[CreateManagedFolder](createmanagedfolder.md) <br/> |El elemento raíz de una solicitud para agregar una carpeta administrada a un buzón de correo.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/CreateManagedFolder` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -74,7 +74,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [Operación FindFolder](findfolder-operation.md)
 
 
-[Buscar carpetas](http://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
+[Buscar carpetas](https://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
   
-[Adición de las carpetas administradas](http://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)
+[Adición de carpetas administradas](https://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)
 

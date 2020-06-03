@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9d91aa89-9f9f-4877-846d-aaf48bbeec7c
-description: El elemento ReadFlag indica el estado de lectura para establecer en elementos de una carpeta.
-ms.openlocfilehash: f3156a51fbdd3372dd28f2065499d26a50b3d497
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento ReadFlag indica el estado de lectura que se establece en los elementos de una carpeta.
+ms.openlocfilehash: 1d3b9f3fe199ed2e63bdb632135120a5f89f4d1f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836954"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529899"
 ---
 # <a name="readflag"></a>ReadFlag
 
-El elemento **ReadFlag** indica el estado de lectura para establecer en elementos de una carpeta. 
+El elemento **ReadFlag** indica el estado de lectura que se establece en los elementos de una carpeta. 
   
 ```XML
 <ReadFlag>true | false</ReadFlag>
@@ -26,15 +26,15 @@ El elemento **ReadFlag** indica el estado de lectura para establecer en elemento
  **Boolean**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **ReadFlag** indica que los elementos de la carpeta se marcarán como lectura. Un valor de **false** indica que los elementos de la carpeta se marcarán como no leídos. 
+Un valor de texto de **true** para el elemento **ReadFlag** indica que los elementos de la carpeta se marcarán como leídos. Un valor de **false** indica que los elementos de la carpeta se marcarán como no leídos. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

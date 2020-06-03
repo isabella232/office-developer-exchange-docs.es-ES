@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2866b1ec-64ba-4d18-9152-a09568d45aa7
-description: Elemento DisplayName (MasterMailboxType) está pensado para uso interno únicamente.
-ms.openlocfilehash: b90906f5bdd14f78110fbb26edde880659c02d22
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DisplayName (MasterMailboxType) está pensado solo para uso interno.
+ms.openlocfilehash: 2026ad1cde13b11af9bcc2d8c81da5c8b23344e3
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764217"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530722"
 ---
 # <a name="displayname-mastermailboxtype"></a>DisplayName (MasterMailboxType)
 
-Elemento **DisplayName (MasterMailboxType)** está pensado para uso interno únicamente. 
+El elemento **displayName (MasterMailboxType)** está pensado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

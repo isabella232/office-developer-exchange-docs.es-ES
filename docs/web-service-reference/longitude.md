@@ -7,42 +7,42 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5c000b36-13b6-4ce2-a686-6e0bc207553d
-description: El elemento de longitud especifica la longitud de la ubicación de la dirección postal asociada.
-ms.openlocfilehash: c62e78520bc1e57822ef6d2dbfdaa8bd36e23104
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento longitud especifica la longitud de la ubicación de la dirección postal asociada.
+ms.openlocfilehash: a226d907ddf124c8e38d3d56da81cadde1abd70e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836252"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530757"
 ---
 # <a name="longitude"></a>Longitude
 
-El elemento de **longitud** especifica la longitud de la ubicación de la dirección postal asociada. 
+El elemento **longitud** especifica la longitud de la ubicación de la dirección postal asociada. 
   
 ```XML
 <Longitude></Longitude>
 ```
 
- **doble**
+ **hacer**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Valor (PersonaPostalAddressType)](value-personapostaladdresstype.md) | [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
+[Valor (PersonaPostalAddressType)](value-personapostaladdresstype.md)  |  [PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **longitud** es las coordenadas longitudinales de la dirección postal. 
+El valor de texto del elemento **longitud** es las coordenadas longitudinales de la dirección postal. 
   
 ## <a name="remarks"></a>Comentarios
 

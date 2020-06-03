@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: b016cdde-d597-40ac-87c4-63ca68bd539d
-description: El elemento SenderDepartments especifica que el departamento del remitente coincide con cualquiera de los departamentos especificados en los elementos de valor (ProtectionRuleValueType) secundarios.
-ms.openlocfilehash: d40e6299bd46ede559cc2cce3bcc9d1611e96bd7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento SenderDepartments especifica que el Departamento del remitente coincide con cualquiera de los departamentos especificados en los elementos de valor secundario (ProtectionRuleValueType).
+ms.openlocfilehash: cf15b974b9c0cfb09767661f17334defc4041e43
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837331"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530348"
 ---
 # <a name="senderdepartments"></a>SenderDepartments
 
-El elemento **SenderDepartments** especifica que el departamento del remitente coincide con cualquiera de los departamentos especificados en el [valor (ProtectionRuleValueType)](value-protectionrulevaluetype.md) los elementos secundarios. 
+El elemento **SenderDepartments** especifica que el Departamento del remitente coincide con cualquiera de los departamentos especificados en los elementos de [valor secundario (ProtectionRuleValueType)](value-protectionrulevaluetype.md) . 
   
 ```XML
 <SenderDepartments>
@@ -32,24 +32,24 @@ El elemento **SenderDepartments** especifica que el departamento del remitente c
  **ProtectionRuleSenderDepartmentsType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Valor (ProtectionRuleValueType)](value-protectionrulevaluetype.md) <br/> |Identifica un departamento único remitente.  <br/> |
+|[Valor (ProtectionRuleValueType)](value-protectionrulevaluetype.md) <br/> |Identifica un único departamento de remitentes.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Condición](condition.md) <br/> |Identifica la condición que debe cumplirse para el elemento de acción de la regla que se va a ejecutar.  <br/> |
-|[Y (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |Especifica que deben coincidir con todos los elementos secundarios para evaluar en **true**. Especifica que debe haber más de una condición de secundarios de regla de protección.  <br/> |
+|[Condición](condition.md) <br/> |Identifica la condición que debe cumplirse para que se ejecute la parte de acción de la regla.  <br/> |
+|[And (ProtectionRuleAndType)](and-protectionruleandtype.md) <br/> |Especifica que todos los elementos secundarios deben coincidir para evaluarse en **true**. Especifica que debe haber más de una condición secundaria de regla de protección.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -59,14 +59,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

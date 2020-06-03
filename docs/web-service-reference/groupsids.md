@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: ebb00653-83f0-4080-a902-c38df6719800
-description: El elemento GroupSids representa una colección de identificadores de seguridad de objeto de grupo servicio de directorio de Active Directory.
-ms.openlocfilehash: c24c8ea3c3b7d37f41986997ed924c951b4a48ef
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento GroupSids representa una colección de identificadores de seguridad de objetos de grupo del servicio de directorio de Active Directory.
+ms.openlocfilehash: 40f36176fcaa3e2160237f269fb2dc3b12bf8af2
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835790"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530067"
 ---
 # <a name="groupsids"></a>GroupSids
 
-El elemento **GroupSids** representa una colección de identificadores de seguridad de objeto de grupo servicio de directorio de Active Directory. 
+El elemento **GroupSids** representa una colección de identificadores de seguridad de objetos de grupo del servicio de directorio de Active Directory. 
   
 ```xml
 <GroupSids>
@@ -32,40 +32,40 @@ El elemento **GroupSids** representa una colección de identificadores de seguri
  **NonEmptyArrayOfGroupIdentifiersType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GroupIdentifier](groupidentifier.md) <br/> |Representa un identificador de seguridad único y un atributo para un grupo de objetos de Active Directory de que la cuenta es miembro.  <br/> |
+|[GroupIdentifier](groupidentifier.md) <br/> |Representa un único identificador de seguridad y un atributo para un grupo de objetos de Active Directory del que es miembro la cuenta.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SerializedSecurityContext](serializedsecuritycontext.md) <br/> |Se usa en el encabezado de protocolo de acceso de objeto Simple (SOAP) para la serialización de token de autenticación de servidor a servidor. No se admite la serialización de token.  <br/> |
+|[SerializedSecurityContext](serializedsecuritycontext.md) <br/> |Se usa en el encabezado del Protocolo simple de acceso a objetos (SOAP) para la serialización de tokens en la autenticación de servidor a servidor. No se admite la serialización de tokens.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

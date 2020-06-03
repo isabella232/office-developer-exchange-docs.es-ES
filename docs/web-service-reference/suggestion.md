@@ -1,5 +1,5 @@
 ---
-title: Sugerencia
+title: Alguna
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 040a5c8f-b62f-4d1d-9d2c-dc3c5e01481f
-description: El elemento Sugerencia representa una sugerencia de reunión única.
-ms.openlocfilehash: 24e2db1e0eabe35f7c971b0f1dbcbd333358f171
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento de sugerencia representa una sola sugerencia de reunión.
+ms.openlocfilehash: 25821abd5463ddba86a487709c8d2f8d928a94cc
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840597"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530383"
 ---
-# <a name="suggestion"></a>Sugerencia
+# <a name="suggestion"></a>Alguna
 
-El elemento **Sugerencia** representa una sugerencia de reunión única. 
+El elemento de **sugerencia** representa una sola sugerencia de reunión. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -33,7 +33,7 @@ El elemento **Sugerencia** representa una sugerencia de reunión única.
   
 [SuggestionArray](suggestionarray.md)
   
-[Sugerencia](suggestion.md)
+[Alguna](suggestion.md)
   
 ```xml
 <Suggestion>
@@ -44,42 +44,42 @@ El elemento **Sugerencia** representa una sugerencia de reunión única.
 </Suggestion>
 ```
 
- **Sugerencia**
+ **Alguna**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[MeetingTime](meetingtime.md) <br/> |Representa una hora de reunión sugerida.  <br/> |
-|[IsWorkTime](isworktime.md) <br/> |Representa si el tiempo de la reunión sugerida se produce durante las horas de trabajo programadas.  <br/> |
-|[SuggestionQuality](suggestionquality.md) <br/> |Representa la calidad de la hora de la reunión sugerida.  <br/> |
-|[AttendeeConflictDataArray](attendeeconflictdataarray.md) <br/> |Contiene una matriz de la información que describe los conflictos entre los usuarios y recursos y el tiempo de la reunión sugerida.  <br/> |
+|[IsWorkTime](isworktime.md) <br/> |Representa si la hora de reunión sugerida se produce durante las horas laborables programadas.  <br/> |
+|[SuggestionQuality](suggestionquality.md) <br/> |Representa la calidad de la hora de reunión sugerida.  <br/> |
+|[AttendeeConflictDataArray](attendeeconflictdataarray.md) <br/> |Contiene una matriz de información que describe los conflictos entre los usuarios y los recursos y la hora de reunión sugerida.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SuggestionArray](suggestionarray.md) <br/> |Contiene una matriz de las horas de reunión sugerida.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray` <br/> |
+|[SuggestionArray](suggestionarray.md) <br/> |Contiene una matriz de horas sugeridas para las reuniones.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -90,5 +90,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
 
 
-[Obtención de disponibilidad del usuario](http://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
+[Obtener disponibilidad del usuario](https://msdn.microsoft.com/library/d4133fcb-9b0f-4e6b-aadf-a389da83516a%28Office.15%29.aspx)
 

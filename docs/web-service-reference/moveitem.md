@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: a4593377-22dd-415f-b01d-387389ef650f
 description: El elemento MoveItem define una solicitud para mover un elemento en el almacén de Exchange.
-ms.openlocfilehash: cd7f35bdabe8a596f4c186df1c8cd54e0ea1c540
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+ms.openlocfilehash: 61dbb91cc20a71f50999241b3daa21bf8ebfbcc8
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836486"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530404"
 ---
 # <a name="moveitem"></a>MoveItem
 
@@ -34,23 +34,23 @@ El elemento **MoveItem** define una solicitud para mover un elemento en el almac
  **MoveItemType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ToFolderId](tofolderid.md) <br/> |Representa la carpeta de destino para un elemento que se ha movido.  <br/> |
-|[ItemId](itemids.md) <br/> |Contiene una matriz de elementos identificados para mover a la carpeta representada por el elemento [ToFolderId](tofolderid.md) .  <br/> |
-|[ReturnNewItemIds](returnnewitemids.md) <br/> |Indica si se devuelven los identificadores de elemento de los elementos nuevos en la respuesta.  <br/> |
+|[ToFolderId](tofolderid.md) <br/> |Representa la carpeta de destino de un elemento movido.  <br/> |
+|[ItemIds](itemids.md) <br/> |Contiene una matriz de elementos identificados para mover a la carpeta representada por el elemento [ToFolderId](tofolderid.md) .  <br/> |
+|[ReturnNewItemIds](returnnewitemids.md) <br/> |Indica si los identificadores de elemento de los nuevos elementos se devuelven en la respuesta.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
@@ -64,10 +64,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
@@ -76,5 +76,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 [Operación MoveItem](moveitem-operation.md)
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

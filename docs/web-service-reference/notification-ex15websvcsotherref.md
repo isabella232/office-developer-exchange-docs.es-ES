@@ -1,5 +1,5 @@
 ---
-title: Notification
+title: Notificación
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: c9070936-0930-438e-839c-91127256a6c8
-description: El elemento de notificación contiene información acerca de la suscripción y los eventos que se han producido desde la última notificación.
-ms.openlocfilehash: 942ec18521fc484a7a3aa1385fb54f480ce9d11f
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: El elemento Notification contiene información sobre la suscripción y los eventos que se han producido desde la última notificación.
+ms.openlocfilehash: c4a5206c14985ec46cf40162a9ce4eaec68242ff
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354354"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530390"
 ---
-# <a name="notification"></a>Notification
+# <a name="notification"></a>Notificación
 
-El elemento de **notificación** contiene información acerca de la suscripción y los eventos que se han producido desde la última notificación. 
+El elemento **Notification** contiene información sobre la suscripción y los eventos que se han producido desde la última notificación. 
   
 ```xml
 <Notification>
@@ -99,34 +99,34 @@ El elemento de **notificación** contiene información acerca de la suscripción
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SubscriptionId (GetEvents)](subscriptionid-getevents.md) <br/> |Representa el identificador para una suscripción a.  <br/> |
-|[PreviousWatermark](previouswatermark.md) <br/> |Representa la marca de agua del evento más reciente que se ha comunicado correctamente al cliente para la suscripción.  <br/> |
-|[MoreEvents](moreevents.md) <br/> |Indica si hay más eventos en la cola para entregar al cliente.  <br/> |
-|[CopiedEvent](copiedevent.md) <br/> |Representa un evento en el que se copia un elemento o carpeta.  <br/> |
-|[CreatedEvent](createdevent.md) <br/> |Representa un evento en el que se crea una carpeta o elemento.  <br/> |
-|[DeletedEvent](deletedevent.md) <br/> |Representa un evento en el que se elimina un elemento o carpeta.  <br/> |
-|[ModifiedEvent](modifiedevent.md) <br/> |Representa un evento en el que se modifica una carpeta o elemento.  <br/> |
-|[MovedEvent](movedevent.md) <br/> |Representa un evento en el que una carpeta o elemento se mueve de una carpeta principal a otra carpeta primaria.  <br/> |
-|[NewMailEvent](newmailevent.md) <br/> |Representa un evento que se desencadena por un nuevo elemento de correo en un buzón de correo.  <br/> |
-|[StatusEvent](statusevent.md) <br/> |Representa una notificación que no se ha producido ninguna actividad de nuevo en el buzón de correo.  <br/> |
-|[FreeBusyChangedEvent](freebusychangedevent.md) <br/> |Representa un evento en el que se ha cambiado el tiempo de disponibilidad de un elemento.  <br/> |
+|[SubscriptionId (GetEvents)](subscriptionid-getevents.md) <br/> |Representa el identificador de una suscripción.  <br/> |
+|[PreviousWatermark](previouswatermark.md) <br/> |Representa la marca de agua del último evento que se comunicó correctamente al cliente para la suscripción.  <br/> |
+|[MoreEvents](moreevents.md) <br/> |Indica si hay más eventos en la cola que se entreguen al cliente.  <br/> |
+|[CopiedEvent](copiedevent.md) <br/> |Representa un evento en el que se copia un elemento o una carpeta.  <br/> |
+|[CreatedEvent](createdevent.md) <br/> |Representa un evento en el que se crea un elemento o una carpeta.  <br/> |
+|[DeletedEvent](deletedevent.md) <br/> |Representa un evento en el que se elimina un elemento o una carpeta.  <br/> |
+|[ModifiedEvent](modifiedevent.md) <br/> |Representa un evento en el que se modifica un elemento o una carpeta.  <br/> |
+|[MovedEvent](movedevent.md) <br/> |Representa un evento en el que se mueve un elemento o una carpeta de una carpeta principal a otra carpeta principal.  <br/> |
+|[NewMailEvent](newmailevent.md) <br/> |Representa un evento desencadenado por un nuevo elemento de correo en un buzón.  <br/> |
+|[StatusEvent](statusevent.md) <br/> |Representa una notificación de que no se ha producido ninguna actividad nueva en el buzón.  <br/> |
+|[FreeBusyChangedEvent](freebusychangedevent.md) <br/> |Representa un evento en el que ha cambiado la hora de disponibilidad de un elemento.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetEventsResponseMessage](geteventsresponsemessage.md) <br/> |Contiene el estado y el resultado de una única solicitud GetEvents.  <br/> |
-|[SendNotificationResponseMessage](sendnotificationresponsemessage.md) <br/> |Contiene el estado y el resultado de una única solicitud de SendNotification.  <br/> |
+|[GetEventsResponseMessage](geteventsresponsemessage.md) <br/> |Contiene el estado y el resultado de una sola solicitud GetEvents.  <br/> |
+|[SendNotificationResponseMessage](sendnotificationresponsemessage.md) <br/> |Contiene el estado y el resultado de una sola solicitud SendNotification.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -140,15 +140,15 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
-- [Operación Subscribe](subscribe-operation.md) 
+- [Operación subscribe](subscribe-operation.md) 
 - [Operación GetEvents](getevents-operation.md) 
 - [Operación GetStreamingEvents](getstreamingevents-operation.md) 
-- [Operación Unsubscribe](unsubscribe-operation.md)
+- [Operación unsubscribe](unsubscribe-operation.md)
 

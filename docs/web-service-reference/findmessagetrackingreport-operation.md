@@ -11,21 +11,21 @@ api_name:
 api_type:
 - schema
 ms.assetid: 12942f24-2a8e-4d7f-a137-8da5932a6b46
-description: La operación FindMessageTrackingReport busca los mensajes que cumplen los criterios especificados.
-ms.openlocfilehash: 103655b1c190f43bd11cfd3bfeabc22422d726a1
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: La operación FindMessageTrackingReport encuentra mensajes que cumplen los criterios especificados.
+ms.openlocfilehash: ec3073da4cf3961d3f2fe2727bf0cf0533e0ffb6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764643"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530919"
 ---
 # <a name="findmessagetrackingreport-operation"></a>Operación FindMessageTrackingReport
 
-La operación **FindMessageTrackingReport** busca los mensajes que cumplen los criterios especificados. 
+La operación **FindMessageTrackingReport** encuentra mensajes que cumplen los criterios especificados. 
   
 ## <a name="see-also"></a>Vea también
 
 - [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
   
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 734914b5-3a16-4744-90a5-741fd30c4676
-description: El elemento AttachmentShape identifica propiedades adicionales para devolver en una respuesta a una solicitud de GetAttachment.
-ms.openlocfilehash: dc6769faa5fd28ce31b796f86c507aec54abff7a
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento AttachmentShape identifica propiedades adicionales que se van a devolver en una respuesta a una solicitud GetAttachment.
+ms.openlocfilehash: e70fbaad0f649c5afdc151b777efef0f8927ba1c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763571"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529668"
 ---
 # <a name="attachmentshape"></a>AttachmentShape
 
-El elemento **AttachmentShape** identifica propiedades adicionales para devolver en una respuesta a una solicitud de [GetAttachment](getattachment.md) . 
+El elemento **AttachmentShape** identifica propiedades adicionales que se van a devolver en una respuesta a una solicitud [GetAttachment](getattachment.md) . 
   
 - [GetAttachment](getattachment.md)
   
@@ -39,26 +39,26 @@ El elemento **AttachmentShape** identifica propiedades adicionales para devolver
  **AttachmentResponseShapeType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[IncludeMimeContent](includemimecontent.md) <br/> |Especifica si el contenido de extensiones multipropósito de correo Internet (MIME) de un elemento o datos adjuntos se devuelve en la respuesta. Este elemento es opcional.  <br/> |
-|[BodyType](bodytype.md) <br/> |Identifica cómo se da el formato de texto del cuerpo en la respuesta. Este elemento es opcional.  <br/> |
-|[FilterHtmlContent](filterhtmlcontent.md) <br/> |Especifica si el contenido HTML potencialmente no segura se filtra desde un archivo adjunto. Este elemento es opcional.  <br/> |
-|[AdditionalProperties](additionalproperties.md) <br/> |Identifica las propiedades adicionales para devolver en una respuesta. Este elemento es opcional.  <br/> |
+|[IncludeMimeContent](includemimecontent.md) <br/> |Especifica si se devuelve el contenido de extensiones multipropósito de correo Internet (MIME) de un elemento o datos adjuntos en la respuesta. Este elemento es opcional.  <br/> |
+|[BodyType](bodytype.md) <br/> |Identifica cómo se aplica formato al texto del cuerpo en la respuesta. Este elemento es opcional.  <br/> |
+|[FilterHtmlContent](filterhtmlcontent.md) <br/> |Especifica si se filtra contenido HTML potencialmente no seguro de datos adjuntos. Este elemento es opcional.  <br/> |
+|[AdditionalProperties](additionalproperties.md) <br/> |Identifica las propiedades adicionales que se devolverán en una respuesta. Este elemento es opcional.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetAttachment](getattachment.md) <br/> |El elemento que define una solicitud para obtener datos adjuntos de un buzón en el almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/GetAttachment` <br/> |
+|[GetAttachment](getattachment.md) <br/> |Elemento que define una solicitud para obtener datos adjuntos de un buzón de correo en el almacén de Exchange.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetAttachment` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -72,13 +72,13 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación GetAttachment](getattachment-operation.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

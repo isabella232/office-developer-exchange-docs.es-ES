@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 29ded9e5-f191-4aa3-bc3e-500de2fc8818
-description: El elemento debe establecer contiene una colección de tipos de notificación de evento que se usan para crear una suscripción.
-ms.openlocfilehash: 7ea783dc0bf73abf992616b1f86c7621c5b36fc8
-ms.sourcegitcommit: 25cbbc6707e4ec0621c5c46baf7fe49be42d3297
+description: El elemento EventTypes contiene una colección de tipos de notificación de eventos que se usan para crear una suscripción.
+ms.openlocfilehash: 45ce1ed0699c8140029ae3fb7f667a5132f4731e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/07/2018
-ms.locfileid: "25440840"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530631"
 ---
 # <a name="eventtypes"></a>EventTypes
 
-El elemento **debe establecer** contiene una colección de tipos de notificación de evento que se usan para crear una suscripción. 
+El elemento **EventTypes** contiene una colección de tipos de notificación de eventos que se usan para crear una suscripción. 
   
 ```xml
 <EventTypes>
@@ -32,25 +32,25 @@ El elemento **debe establecer** contiene una colección de tipos de notificació
  **NonEmptyArrayOfNotificationEventTypesType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[EventType](eventtype.md) <br/> |Representa un tipo de notificación de evento solicitado que se usa para crear una suscripción.  <br/> |
+|[EventType](eventtype.md) <br/> |Representa un tipo de notificación de eventos solicitado que se usa para crear una suscripción.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |Representa una suscripción a una suscripción de notificación de eventos basado en la extracción.  <br/> |
-|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |Representa una suscripción a una suscripción de notificación de evento basada en inserción.  <br/> |
-|[StreamingSubscriptionRequest](streamingsubscriptionrequest.md) <br/> |Representa una suscripción a una suscripción de notificación de evento transmisión por secuencias.  <br/> |
+|[PullSubscriptionRequest](pullsubscriptionrequest.md) <br/> |Representa una suscripción a una suscripción de notificación de eventos basada en extracción.  <br/> |
+|[PushSubscriptionRequest](pushsubscriptionrequest.md) <br/> |Representa una suscripción a una suscripción de notificación de eventos basada en inserción.  <br/> |
+|[StreamingSubscriptionRequest](streamingsubscriptionrequest.md) <br/> |Representa una suscripción a una suscripción de notificación de eventos de transmisión por secuencias.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -64,20 +64,20 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-[Operación Subscribe](subscribe-operation.md)
+[Operación subscribe](subscribe-operation.md)
   
 [Operación GetEvents](getevents-operation.md)
   
 [Operación GetStreamingEvents](getstreamingevents-operation.md)
   
-[Operación Unsubscribe](unsubscribe-operation.md)
+[Operación unsubscribe](unsubscribe-operation.md)
 

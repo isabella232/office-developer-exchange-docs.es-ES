@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: afd3a2ff-b20e-47b8-9053-bcace2d77c56
-description: El elemento Groups (ArrayOfFederatedDirectoryGroupsType) está pensado para uso interno únicamente.
-ms.openlocfilehash: bbee0671d77dbf208448b1a0c10def71e17e8f08
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Groups (ArrayOfFederatedDirectoryGroupsType) está pensado solo para uso interno.
+ms.openlocfilehash: 1fcb34cea099347ceabe267dd64791006b5498c1
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19835783"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530799"
 ---
 # <a name="groups-arrayoffederateddirectorygroupstype"></a>Grupos (ArrayOfFederatedDirectoryGroupsType)
 
-El elemento **Groups (ArrayOfFederatedDirectoryGroupsType)** está pensado para uso interno únicamente. 
+El elemento **Groups (ArrayOfFederatedDirectoryGroupsType)** está pensado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 0cd70eea-8d36-4b1b-bf80-5edf359e7ba7
-description: El elemento PendingMailTips indica que no se podrían evaluar las sugerencias de correo en este elemento antes de tiempo de espera de procesamiento del servidor.
-ms.openlocfilehash: 73d597f6534ea29f7d26d6526c48631251521ae5
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento PendingMailTips indica que las sugerencias de correo de este elemento no se pudieron evaluar antes de que se agote el tiempo de espera de procesamiento del servidor.
+ms.openlocfilehash: 715d68b367c3b7251c7406c10c1ec52dcd992a59
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836704"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529969"
 ---
 # <a name="pendingmailtips"></a>PendingMailTips
 
-El elemento **PendingMailTips** indica que no se podrían evaluar las sugerencias de correo en este elemento antes de tiempo de espera de procesamiento del servidor. 
+El elemento **PendingMailTips** indica que las sugerencias de correo de este elemento no se pudieron evaluar antes de que se agote el tiempo de espera de procesamiento del servidor. 
   
 ```XML
 <PendingMailTips>All | OutOfOfficeMessage | MailboxFullStatus | CustomMailTip | ExternalMemberCount | TotalMemberCount | MaxMessageSize | DeliveryRestriction | ModerateStatus | InvalidRecipient</PendingMailTips>
@@ -30,36 +30,36 @@ El elemento **PendingMailTips** indica que no se podrían evaluar las sugerencia
  **MailTipTypes**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Sugerencias de correo electrónico](mailtips.md) <br/> |Representa los valores de distintos tipos de sugerencias de correo.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-En la siguiente tabla se enumera los valores posibles para el elemento **PendingMailTips** . 
+En la siguiente tabla se enumeran los valores posibles para el elemento **PendingMailTips** . 
   
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Todos  <br/> |Representa todas las sugerencias de correo disponibles.  <br/> |
-|OutOfOfficeMessage  <br/> |Representa el mensaje de fuera de oficina (OOF).  <br/> |
-|MailboxFullStatus  <br/> |Representa el estado de un buzón que se está completa.  <br/> |
-|CustomMailTip  <br/> |Representa una sugerencia de correo personalizado.  <br/> |
-|ExternalMemberCount  <br/> |Representa el recuento de miembros externos.  <br/> |
-|TotalMemberCount  <br/> |Representa el recuento de todos los miembros.  <br/> |
+|Todo  <br/> |Representa todas las sugerencias de correo disponibles.  <br/> |
+|OutOfOfficeMessage  <br/> |Representa el mensaje de fuera de la oficina (OOF).  <br/> |
+|MailboxFullStatus  <br/> |Representa el estado de un buzón de correo lleno.  <br/> |
+|CustomMailTip  <br/> |Representa una sugerencia de correo personalizada.  <br/> |
+|ExternalMemberCount  <br/> |Representa el número de miembros externos.  <br/> |
+|TotalMemberCount  <br/> |Representa el número de todos los miembros.  <br/> |
 |MaxMessageSize  <br/> |Representa el tamaño máximo de mensaje que puede aceptar un destinatario.  <br/> |
-|DeliveryRestriction  <br/> |Indica si las restricciones de entrega impedirá que el mensaje del remitente llegar al destinatario.  <br/> |
+|DeliveryRestriction  <br/> |Indica si las restricciones de entrega impedirán que el mensaje del remitente llegue al destinatario.  <br/> |
 |ModerationStatus  <br/> |Indica si el mensaje del remitente será revisado por un moderador.  <br/> |
 |InvalidRecipient  <br/> |Indica si el destinatario no es válido.  <br/> |
    
@@ -71,14 +71,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

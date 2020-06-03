@@ -1,5 +1,5 @@
 ---
-title: Fotografías (MasterMailboxType)
+title: Foto (MasterMailboxType)
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 10cdefab-2c21-4a7d-b534-e1aa1d209476
-description: El elemento de fotografías (MasterMailboxType) está pensado para uso interno únicamente.
-ms.openlocfilehash: 93e41e137b571403ecba9950123278b09491acbb
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Photo (MasterMailboxType) está destinado exclusivamente para uso interno.
+ms.openlocfilehash: b088f4310ba27e6fae2db096e3bad5270bac4c9c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836783"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44529941"
 ---
-# <a name="photo-mastermailboxtype"></a>Fotografías (MasterMailboxType)
+# <a name="photo-mastermailboxtype"></a>Foto (MasterMailboxType)
 
-El elemento de **fotografías (MasterMailboxType)** está pensado para uso interno únicamente. 
+El elemento **Photo (MasterMailboxType)** está destinado exclusivamente para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 

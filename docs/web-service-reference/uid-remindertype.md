@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 169e7825-4480-46d2-9f84-cdab27c8bcfb
-description: El elemento UID (ReminderType) identifica el elemento de calendario asociado a un aviso.
-ms.openlocfilehash: e0ad877eee29937b93e2659f84769938c983f11d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento UID (ReminderType) identifica el elemento de calendario asociado con un aviso.
+ms.openlocfilehash: ab7e59725a87ff21bb2df052b5893abf6217f78a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19840742"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530376"
 ---
 # <a name="uid-remindertype"></a>UID (ReminderType)
 
-El elemento **UID (ReminderType)** identifica el elemento de calendario asociado a un aviso. 
+El elemento **UID (ReminderType)** identifica el elemento de calendario asociado con un aviso. 
   
 ```XML
 <UID />
@@ -26,15 +26,15 @@ El elemento **UID (ReminderType)** identifica el elemento de calendario asociado
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
@@ -50,14 +50,14 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3b16170c-cb46-4ac5-9ce1-884f1b00b974
-description: El elemento de ámbito especifica la cadena que se resaltan.
-ms.openlocfilehash: da031265cad9176e8bb965c66d1bdd0b1da0dfc6
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Scope especifica la cadena que se va a resaltar.
+ms.openlocfilehash: 6cd8035831bae4f9e1e73ebe2238e5eb89b7d31c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837276"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530362"
 ---
 # <a name="scope-highlighttermtype"></a>Ámbito (HighlightTermType)
 
-El elemento de **ámbito** especifica la cadena que se resaltan. 
+El elemento **Scope** especifica la cadena que se va a resaltar. 
   
 ```XML
 <Scope></Scope>
@@ -26,15 +26,15 @@ El elemento de **ámbito** especifica la cadena que se resaltan.
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **ámbito** es el ámbito de un término resaltado. 
+El valor de texto del elemento **Scope** es el ámbito de un term resaltado. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 69d88bb1-397c-4fb8-bd2b-21cccc5bb35d
-description: El elemento de remitentes especifica una matriz de direcciones de Protocolo Simple de transferencia de correo (SMTP).
-ms.openlocfilehash: 0794b042c00183d56b2fb2aefe8587e0fdf1344d
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento Senders especifica una matriz de direcciones de Protocolo simple de transferencia de correo (SMTP).
+ms.openlocfilehash: 125d448be53b2ae297cd1e7249a04da6eda5d960
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19837329"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530575"
 ---
 # <a name="senders"></a>Remitentes
 
-El elemento de **remitentes** especifica una matriz de direcciones de Protocolo Simple de transferencia de correo (SMTP). 
+El elemento **Senders** especifica una matriz de direcciones de Protocolo simple de transferencia de correo (SMTP). 
   
 ```XML
 <Senders>
@@ -28,11 +28,11 @@ El elemento de **remitentes** especifica una matriz de direcciones de Protocolo 
  **ArrayOfSmtpAddressType**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,9 +52,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

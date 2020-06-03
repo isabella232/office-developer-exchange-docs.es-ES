@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: 8c69db7b-54b5-4ae2-abca-4d6e0937a790
-description: El elemento SetFolderField representa una actualización que establece el valor de una propiedad única en una carpeta en una operación UpdateFolder.
-ms.openlocfilehash: ed5c055c697865d5eb728d269c6f4c7ce60f4b5c
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: El elemento SetFolderField representa una actualización que establece el valor de una propiedad única en una carpeta de una operación de UpdateFolder.
+ms.openlocfilehash: ab75a3862801b9a7b3369d9a4116c653b461781c
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353290"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530320"
 ---
 # <a name="setfolderfield"></a>SetFolderField
 
-El elemento **SetFolderField** representa una actualización que establece el valor de una propiedad única en una carpeta en una operación UpdateFolder. 
+El elemento **SetFolderField** representa una actualización que establece el valor de una propiedad única en una carpeta de una operación de UpdateFolder. 
 
 ```xml
 <SetFolderField>
@@ -133,48 +133,48 @@ El elemento **SetFolderField** representa una actualización que establece el va
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifica las propiedades con frecuencia que se hace referencia mediante un identificador URI.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifica las propiedades a las que se hace referencia con frecuencia mediante el URI.  <br/> |
 |[IndexedFieldURI](indexedfielduri.md) <br/> |Identifica a los miembros individuales de un diccionario.  <br/> |
-|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifica las propiedades extendidas de MAPI.  <br/> |
-|[Folder](folder.md) <br/> |Identifica una carpeta que se debe actualizar.  <br/> |
-|[CalendarFolder](calendarfolder.md) <br/> |Representa una carpeta que principalmente contiene los elementos del calendario.  <br/> |
-|[ContactsFolder](contactsfolder.md) <br/> |Representa una carpeta de contactos en un buzón de correo.  <br/> |
-|[SearchFolder](searchfolder.md) <br/> |Representa una carpeta de búsqueda que se encuentra en un buzón de correo.  <br/> |
-|[TasksFolder](tasksfolder.md) <br/> |Representa una carpeta de tareas que se encuentra en un buzón de correo.  <br/> |
+|[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifica las propiedades de MAPI extendida.  <br/> |
+|[Folder](folder.md) <br/> |Identifica una carpeta que se va a actualizar.  <br/> |
+|[Hubiera](calendarfolder.md) <br/> |Representa una carpeta que contiene principalmente elementos de calendario.  <br/> |
+|[Hubiera](contactsfolder.md) <br/> |Representa una carpeta de contactos en un buzón.  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |Representa una carpeta de búsqueda contenida en un buzón.  <br/> |
+|[Hubiera](tasksfolder.md) <br/> |Representa una carpeta de tareas contenida en un buzón.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Updates (Carpeta)](updates-folder.md) <br/> |Contiene un conjunto de elementos que define append, establecer y eliminar los cambios realizados en las propiedades de la carpeta.  <br/> |
+|[Updates (carpeta)](updates-folder.md) <br/> |Contiene un conjunto de elementos que define los cambios de anexar, establecer y eliminar en las propiedades de la carpeta.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Si la propiedad existe, el valor de la propiedad se establece en el valor especificado. Si la propiedad no existe, se crea la propiedad con el valor especificado.
+Si la propiedad existe, el valor de la propiedad se establece en el valor especificado. Si la propiedad no existe, la propiedad se crea con el valor especificado.
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 - [Operación UpdateFolder](updatefolder-operation.md)
-- [Elementos XML de EWS de Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
 

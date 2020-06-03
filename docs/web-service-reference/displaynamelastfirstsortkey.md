@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 113b049f-69a1-40a3-ab98-8a2facd32391
-description: El elemento DisplayNameLastFirstSortKey contiene la clave de ordenación para un nombre para mostrar en Apellidos, nombre de la primera orden.
-ms.openlocfilehash: e5373c1c8c5615c6f949964f4a62b740594f072b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento DisplayNameLastFirstSortKey contiene la clave de ordenación para un nombre para mostrar en el apellido, el orden de los nombres.
+ms.openlocfilehash: 04f6ea5ab128a2ce9f7e6090ac260eae0ee4c722
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19764240"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530870"
 ---
 # <a name="displaynamelastfirstsortkey"></a>DisplayNameLastFirstSortKey
 
-El elemento **DisplayNameLastFirstSortKey** contiene la clave de ordenación para un nombre para mostrar en Apellidos, nombre de la primera orden. 
+El elemento **DisplayNameLastFirstSortKey** contiene la clave de ordenación para un nombre para mostrar en el apellido, el orden de los nombres. 
   
 ```XML
 <DisplayNameLastFirstSortKey></DisplayNameLastFirstSortKey>
@@ -26,15 +26,15 @@ El elemento **DisplayNameLastFirstSortKey** contiene la clave de ordenación par
  **string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **DisplayNameLastFirstSortKey** es la clave de ordenación para el nombre de un rol en Apellidos, nombre de la primera orden. 
+El valor de texto del elemento **DisplayNameLastFirstSortKey** es la clave de ordenación para el nombre de un rol en el apellido, el orden de los nombres. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

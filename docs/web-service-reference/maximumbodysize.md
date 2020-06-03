@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: cc52f7f5-c2a8-4cfb-937b-dfec6cd3ea0f
-description: El elemento MaximumBodySize especifica el tamaño máximo del cuerpo del elemento para devolver en una respuesta.
-ms.openlocfilehash: 803a004f3eda1066be073b076fbdaa76699e3e7b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: El elemento MaximumBodySize especifica el tamaño máximo del cuerpo del elemento que se devolverá en una respuesta.
+ms.openlocfilehash: 21958c87aafc12a7369f957c87f86f80116cdf69
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19836392"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44530519"
 ---
 # <a name="maximumbodysize"></a>MaximumBodySize
 
-El elemento **MaximumBodySize** especifica el tamaño máximo del cuerpo del elemento para devolver en una respuesta. 
+El elemento **MaximumBodySize** especifica el tamaño máximo del cuerpo del elemento que se devolverá en una respuesta. 
   
 ```XML
 <MaximumBodySize></MaximumBodySize>
@@ -26,15 +26,15 @@ El elemento **MaximumBodySize** especifica el tamaño máximo del cuerpo del ele
  **int**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguno.
+Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **MaximumBodySize** indica el tamaño máximo de la propiedad [Body](body.md) devuelto en la respuesta. Esto se mide en kilobytes. 
+El valor de texto del elemento **MaximumBodySize** indica el tamaño máximo de la propiedad [Body](body.md) devuelta en la respuesta. Se mide en kilobytes. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/types  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types.xsd  <br/> |
+|Archivo de validación  <br/> |Types. xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 
