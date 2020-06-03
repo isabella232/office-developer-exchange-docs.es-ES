@@ -1,28 +1,28 @@
 ---
-title: Obtener las citas y reuniones con EWS en Exchange
+title: Obtener citas y reuniones mediante EWS en Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 1bae582a-8cb3-4e77-be2a-7e107fad26fe
-description: Obtenga información sobre cómo obtener las citas y reuniones con la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: c78d70ca2266bd192b82f644d902ad8c958d2d4a
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Obtenga información sobre cómo obtener citas y reuniones mediante la API administrada de EWS o EWS en Exchange.
+localization_priority: Priority
+ms.openlocfilehash: d951bfeccdf50ae1397ecdd4887ed05548b25001
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353696"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528093"
 ---
-# <a name="get-appointments-and-meetings-by-using-ews-in-exchange"></a><span data-ttu-id="653ce-103">Obtener las citas y reuniones con EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="653ce-103">Get appointments and meetings by using EWS in Exchange</span></span>
+# <a name="get-appointments-and-meetings-by-using-ews-in-exchange"></a><span data-ttu-id="0646b-103">Obtener citas y reuniones mediante EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="0646b-103">Get appointments and meetings by using EWS in Exchange</span></span>
 
-<span data-ttu-id="653ce-104">Obtenga información sobre cómo obtener las citas y reuniones con la API administrada de EWS o EWS en Exchange.</span><span class="sxs-lookup"><span data-stu-id="653ce-104">Learn how to get appointments and meetings by using the EWS Managed API or EWS in Exchange.</span></span>
+<span data-ttu-id="0646b-104">Obtenga información sobre cómo obtener citas y reuniones mediante la API administrada de EWS o EWS en Exchange.</span><span class="sxs-lookup"><span data-stu-id="0646b-104">Learn how to get appointments and meetings by using the EWS Managed API or EWS in Exchange.</span></span>
   
-<span data-ttu-id="653ce-105">Puede recuperar las citas y reuniones desde una carpeta Calendario mediante el método de la API administrada de EWS [CalendarFolder.FindAppointments](http://msdn.microsoft.com/en-us/library/dd636179%28v=exchg.80%29.aspx) o la operación de EWS [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) .</span><span class="sxs-lookup"><span data-stu-id="653ce-105">You can retrieve appointments and meetings from a calendar folder by using the [CalendarFolder.FindAppointments](http://msdn.microsoft.com/en-us/library/dd636179%28v=exchg.80%29.aspx) EWS Managed API method or the [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) EWS operation.</span></span> 
+<span data-ttu-id="0646b-105">Puede recuperar las citas y las reuniones de una carpeta de calendario con el método de la API administrada de EWS [hubiera. FindAppointments](https://msdn.microsoft.com/library/dd636179%28v=exchg.80%29.aspx) o la operación de EWS de [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) .</span><span class="sxs-lookup"><span data-stu-id="0646b-105">You can retrieve appointments and meetings from a calendar folder by using the [CalendarFolder.FindAppointments](https://msdn.microsoft.com/library/dd636179%28v=exchg.80%29.aspx) EWS Managed API method or the [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) EWS operation.</span></span> 
   
-## <a name="get-appointments-by-using-the-ews-managed-api"></a><span data-ttu-id="653ce-106">Obtener las citas mediante el uso de la API administrada de EWS</span><span class="sxs-lookup"><span data-stu-id="653ce-106">Get appointments by using the EWS Managed API</span></span>
-<span data-ttu-id="653ce-107"><a name="bk_retrieveappsEWSMA"> </a></span><span class="sxs-lookup"><span data-stu-id="653ce-107"></span></span>
+## <a name="get-appointments-by-using-the-ews-managed-api"></a><span data-ttu-id="0646b-106">Obtener citas mediante la API administrada de EWS</span><span class="sxs-lookup"><span data-stu-id="0646b-106">Get appointments by using the EWS Managed API</span></span>
+<span data-ttu-id="0646b-107"><a name="bk_retrieveappsEWSMA"> </a></span><span class="sxs-lookup"><span data-stu-id="0646b-107"><a name="bk_retrieveappsEWSMA"> </a></span></span>
 
-<span data-ttu-id="653ce-108">En el ejemplo de código siguiente se muestra cómo usar la API administrada de EWS para recuperar las citas de un usuario que se dividen entre un inicio especificada y la hora de finalización.</span><span class="sxs-lookup"><span data-stu-id="653ce-108">The following code example shows how to use the EWS Managed API to retrieve a user's appointments that fall between a specified start and end time.</span></span>
+<span data-ttu-id="0646b-108">En el siguiente ejemplo de código se muestra cómo usar la API administrada de EWS para recuperar las citas de un usuario que se encuentran entre una hora de inicio y una hora de finalización especificadas.</span><span class="sxs-lookup"><span data-stu-id="0646b-108">The following code example shows how to use the EWS Managed API to retrieve a user's appointments that fall between a specified start and end time.</span></span>
   
 ```cs
        // Initialize values for the start and end times, and the number of appointments to retrieve.
@@ -52,7 +52,7 @@ ms.locfileid: "21353696"
 
 <br/>
 
-<span data-ttu-id="653ce-109">El siguiente es el resultado del ejemplo de código.</span><span class="sxs-lookup"><span data-stu-id="653ce-109">The following is the output from the code example.</span></span>
+<span data-ttu-id="0646b-109">A continuación, se muestra el resultado del ejemplo de código.</span><span class="sxs-lookup"><span data-stu-id="0646b-109">The following is the output from the code example.</span></span>
   
 ```text
 The first five appointments on your calendar from 8/21/2013 to 9/20/2013 are: 
@@ -68,17 +68,17 @@ Subject: Tennis at the club Start: 8/22/2013 11:00:00 AM End: 8/22/2013 12:00:00
 Subject: Online training webcast: 8/22/2013 2:00:00 PM End: 8/22/2013 3:00:00 PM
 ```
 
-## <a name="get-appointments-by-using-ews"></a><span data-ttu-id="653ce-110">Obtener las citas mediante el uso de EWS</span><span class="sxs-lookup"><span data-stu-id="653ce-110">Get appointments by using EWS</span></span>
-<span data-ttu-id="653ce-111"><a name="bk_xml"> </a></span><span class="sxs-lookup"><span data-stu-id="653ce-111"></span></span>
+## <a name="get-appointments-by-using-ews"></a><span data-ttu-id="0646b-110">Obtener citas con EWS</span><span class="sxs-lookup"><span data-stu-id="0646b-110">Get appointments by using EWS</span></span>
+<span data-ttu-id="0646b-111"><a name="bk_xml"> </a></span><span class="sxs-lookup"><span data-stu-id="0646b-111"><a name="bk_xml"> </a></span></span>
 
-<span data-ttu-id="653ce-112">El siguiente código XML muestra una solicitud de operación [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) para devolver un identificador de la carpeta para la operación [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) .</span><span class="sxs-lookup"><span data-stu-id="653ce-112">The following XML shows a [GetFolder](http://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) operation request to return a folder ID for the [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) operation.</span></span> 
+<span data-ttu-id="0646b-112">El siguiente XML muestra una solicitud de operación [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) para devolver un identificador de carpeta para la operación [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) .</span><span class="sxs-lookup"><span data-stu-id="0646b-112">The following XML shows a [GetFolder](https://msdn.microsoft.com/library/355bcf93-dc71-4493-b177-622afac5fdb9%28Office.15%29.aspx) operation request to return a folder ID for the [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) operation.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+       xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+       xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -97,20 +97,20 @@ Subject: Online training webcast: 8/22/2013 2:00:00 PM End: 8/22/2013 3:00:00 PM
 
 <br/>
 
-<span data-ttu-id="653ce-113">El siguiente código XML muestra la respuesta **GetFolder** .</span><span class="sxs-lookup"><span data-stu-id="653ce-113">The following XML shows the **GetFolder** response.</span></span> <span data-ttu-id="653ce-114">Tenga en cuenta que los atributos **FolderID** y **ChangeKey** son más cortos para mejorar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="653ce-114">Note that the **FolderID** and **ChangeKey** attributes are shortened for readability.</span></span> 
+<span data-ttu-id="0646b-113">El siguiente XML muestra la respuesta **GetFolder** .</span><span class="sxs-lookup"><span data-stu-id="0646b-113">The following XML shows the **GetFolder** response.</span></span> <span data-ttu-id="0646b-114">Tenga en cuenta que los atributos **folderId** y **changekey** se acortan para facilitar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="0646b-114">Note that the **FolderID** and **ChangeKey** attributes are shortened for readability.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="731" MinorBuildNumber="10" Version="V2_3" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
- xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetFolderResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetFolderResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -128,14 +128,14 @@ Subject: Online training webcast: 8/22/2013 2:00:00 PM End: 8/22/2013 3:00:00 PM
 
 <br/>
 
-<span data-ttu-id="653ce-115">El siguiente código XML muestra la solicitud **FindItem** que se usa para devolver las citas solicitadas.</span><span class="sxs-lookup"><span data-stu-id="653ce-115">The following XML shows the **FindItem** request used to return the requested appointments.</span></span> <span data-ttu-id="653ce-116">Tenga en cuenta que los atributos **FolderID** y **ChangeKey** son más cortos para mejorar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="653ce-116">Note that the **FolderID** and **ChangeKey** attributes are shortened for readability.</span></span> 
+<span data-ttu-id="0646b-115">El siguiente XML muestra la solicitud **FindItem** usada para devolver las citas solicitadas.</span><span class="sxs-lookup"><span data-stu-id="0646b-115">The following XML shows the **FindItem** request used to return the requested appointments.</span></span> <span data-ttu-id="0646b-116">Tenga en cuenta que los atributos **folderId** y **changekey** se acortan para facilitar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="0646b-116">Note that the **FolderID** and **ChangeKey** attributes are shortened for readability.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+       xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+       xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
   </soap:Header>
@@ -160,21 +160,21 @@ Subject: Online training webcast: 8/22/2013 2:00:00 PM End: 8/22/2013 3:00:00 PM
 
 <br/>
 
-<span data-ttu-id="653ce-117">El siguiente código XML muestra la respuesta **FindItem** .</span><span class="sxs-lookup"><span data-stu-id="653ce-117">The following XML shows the **FindItem** response.</span></span> <span data-ttu-id="653ce-118">Tenga en cuenta que los atributos **ItemID** y **ChangeKey** son más cortos para mejorar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="653ce-118">Note that the **ItemID** and **ChangeKey** attributes are shortened for readability.</span></span> 
+<span data-ttu-id="0646b-117">El siguiente XML muestra la respuesta de **FindItem** .</span><span class="sxs-lookup"><span data-stu-id="0646b-117">The following XML shows the **FindItem** response.</span></span> <span data-ttu-id="0646b-118">Tenga en cuenta que los atributos **Itemid** y **changekey** se acortan para facilitar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="0646b-118">Note that the **ItemID** and **ChangeKey** attributes are shortened for readability.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="731" MinorBuildNumber="10" Version="V2_3" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:FindItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:FindItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:FindItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -219,20 +219,20 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 </s:Envelope>
 ```
 
-## <a name="recurring-meetings-and-the-calendar-view"></a><span data-ttu-id="653ce-119">Reuniones periódicas y la vista de calendario</span><span class="sxs-lookup"><span data-stu-id="653ce-119">Recurring meetings and the calendar view</span></span>
-<span data-ttu-id="653ce-120"><a name="bk_recurring"> </a></span><span class="sxs-lookup"><span data-stu-id="653ce-120"></span></span>
+## <a name="recurring-meetings-and-the-calendar-view"></a><span data-ttu-id="0646b-119">Reuniones periódicas y la vista Calendario</span><span class="sxs-lookup"><span data-stu-id="0646b-119">Recurring meetings and the calendar view</span></span>
+<span data-ttu-id="0646b-120"><a name="bk_recurring"> </a></span><span class="sxs-lookup"><span data-stu-id="0646b-120"><a name="bk_recurring"> </a></span></span>
 
-<span data-ttu-id="653ce-121">La carpeta de calendario es un poco diferente de otras carpetas en un buzón debido a que no son elementos real en el buzón de repeticiones en una serie periódica y las excepciones de una serie periódica, pero en su lugar se almacenan internamente como datos adjuntos a un maestro periódico.</span><span class="sxs-lookup"><span data-stu-id="653ce-121">The calendar folder is a little different from other folders in a mailbox because occurrences in a recurring series and exceptions to a recurring series are not actual items in the mailbox, but rather are stored internally as attachments to a recurring master.</span></span> <span data-ttu-id="653ce-122">Esto significa, si bien puede crear una solicitud de EWS devuelve valores entre un conjunto de **start** y **end** valores mediante el uso de uno de la API administrada de EWS **FindItems** sobrecargan métodos, como [ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) o la [EWS FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) operación, EWS no tendría un aspecto a través de la tabla de datos adjuntos de todos los elementos de calendario para buscar excepciones y repeticiones.</span><span class="sxs-lookup"><span data-stu-id="653ce-122">This means that although you can create an EWS request that returns values between a set of **start** and **end** values by using one of the EWS Managed API **FindItems** overload methods, such as [ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) or the EWS [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) operation, EWS would not look through the attachment table of every calendar item to find exceptions and occurrences.</span></span> 
+<span data-ttu-id="0646b-121">La carpeta calendario es un poco diferente de otras carpetas de un buzón, ya que las repeticiones de una serie periódica y las excepciones a una serie periódica no son elementos reales en el buzón, sino que se almacenan internamente como datos adjuntos a un maestro recurrente.</span><span class="sxs-lookup"><span data-stu-id="0646b-121">The calendar folder is a little different from other folders in a mailbox because occurrences in a recurring series and exceptions to a recurring series are not actual items in the mailbox, but rather are stored internally as attachments to a recurring master.</span></span> <span data-ttu-id="0646b-122">Esto significa que, aunque se puede crear una solicitud de EWS que devuelve valores entre un conjunto de valores de **Inicio** y **finalización** mediante uno de los métodos de sobrecarga de **FindItems** de la API administrada de EWS, como [ExchangeService. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) o la operación [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) de EWS, EWS no buscaba en la tabla de datos adjuntos de todos los elementos de calendario para encontrar excepciones y ocurrencias.</span><span class="sxs-lookup"><span data-stu-id="0646b-122">This means that although you can create an EWS request that returns values between a set of **start** and **end** values by using one of the EWS Managed API **FindItems** overload methods, such as [ExchangeService.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) or the EWS [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) operation, EWS would not look through the attachment table of every calendar item to find exceptions and occurrences.</span></span> 
   
-<span data-ttu-id="653ce-123">En su lugar, ¿qué desea hacer en realidad es algo parecido a la aplicación de una *Dataview* en una unión de dos tablas SQL, con un objeto [CalendarView](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) .</span><span class="sxs-lookup"><span data-stu-id="653ce-123">Instead, what you really want to do is something akin to applying a  *Dataview*  onto a union of two SQL tables, using a [CalendarView](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) object.</span></span> <span data-ttu-id="653ce-124">Tenga en cuenta que por motivos de rendimiento, se recomienda que utilice la propiedad [PropertySet](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) para limitar el tamaño de la respuesta de forma que indica el número de citas o reuniones que desea devolver, así como las propiedades específicas que desee.</span><span class="sxs-lookup"><span data-stu-id="653ce-124">Note that for performance reasons, we recommend that you use the [PropertySet](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) property to limit the size of the response by indicating the number of appointments or meetings you want returned, as well as the specific properties you want.</span></span> 
+<span data-ttu-id="0646b-123">En su lugar, lo que realmente desea hacer es algo parecido a aplicar una *DataView* en una Unión de dos tablas de SQL, utilizando un objeto [CalendarView](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) .</span><span class="sxs-lookup"><span data-stu-id="0646b-123">Instead, what you really want to do is something akin to applying a  *Dataview*  onto a union of two SQL tables, using a [CalendarView](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.calendarview%28v=exchg.80%29.aspx) object.</span></span> <span data-ttu-id="0646b-124">Tenga en cuenta que, por motivos de rendimiento, le recomendamos que use la propiedad [PropertySet](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) para limitar el tamaño de la respuesta indicando el número de citas o reuniones que desea que se devuelvan, así como las propiedades específicas que desee.</span><span class="sxs-lookup"><span data-stu-id="0646b-124">Note that for performance reasons, we recommend that you use the [PropertySet](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) property to limit the size of the response by indicating the number of appointments or meetings you want returned, as well as the specific properties you want.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="653ce-125">Vea también</span><span class="sxs-lookup"><span data-stu-id="653ce-125">See also</span></span>
-<span data-ttu-id="653ce-126"><a name="bk_additional"> </a></span><span class="sxs-lookup"><span data-stu-id="653ce-126"></span></span>
+## <a name="see-also"></a><span data-ttu-id="0646b-125">Vea también</span><span class="sxs-lookup"><span data-stu-id="0646b-125">See also</span></span>
+<span data-ttu-id="0646b-126"><a name="bk_additional"> </a></span><span class="sxs-lookup"><span data-stu-id="0646b-126"><a name="bk_additional"> </a></span></span>
 
-- [<span data-ttu-id="653ce-127">Calendarios y EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="653ce-127">Calendars and EWS in Exchange</span></span>](calendars-and-ews-in-exchange.md)   
-- [<span data-ttu-id="653ce-128">Crear citas y reuniones mediante el uso de EWS en Exchange 2013</span><span class="sxs-lookup"><span data-stu-id="653ce-128">Create appointments and meetings by using EWS in Exchange 2013</span></span>](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)  
-- [<span data-ttu-id="653ce-129">Actualizar las citas y reuniones con EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="653ce-129">Update appointments and meetings by using EWS in Exchange</span></span>](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)  
-- [<span data-ttu-id="653ce-130">Eliminar las citas y cancelar reuniones mediante el uso de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="653ce-130">Delete appointments and cancel meetings by using EWS in Exchange</span></span>](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md) 
-- [<span data-ttu-id="653ce-131">Desarrollo de clientes de servicios web de Exchange</span><span class="sxs-lookup"><span data-stu-id="653ce-131">Develop web service clients for Exchange</span></span>](develop-web-service-clients-for-exchange.md)
+- [<span data-ttu-id="0646b-127">Calendarios y EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="0646b-127">Calendars and EWS in Exchange</span></span>](calendars-and-ews-in-exchange.md)   
+- [<span data-ttu-id="0646b-128">Crear citas y reuniones mediante EWS en Exchange 2013</span><span class="sxs-lookup"><span data-stu-id="0646b-128">Create appointments and meetings by using EWS in Exchange 2013</span></span>](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)  
+- [<span data-ttu-id="0646b-129">Actualizar citas y reuniones mediante EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="0646b-129">Update appointments and meetings by using EWS in Exchange</span></span>](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)  
+- [<span data-ttu-id="0646b-130">Eliminar citas y cancelar reuniones mediante EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="0646b-130">Delete appointments and cancel meetings by using EWS in Exchange</span></span>](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md) 
+- [<span data-ttu-id="0646b-131">Desarrollo de clientes de servicios web de Exchange</span><span class="sxs-lookup"><span data-stu-id="0646b-131">Develop web service clients for Exchange</span></span>](develop-web-service-clients-for-exchange.md)
     
 

@@ -1,183 +1,304 @@
 ---
-title: Autenticar una aplicación EWS mediante OAuth
+title: Autenticar una aplicación de EWS mediante OAuth
 manager: sethgros
-ms.date: 07/27/2018
+ms.date: 05/17/2019
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 1d8d57f9-4df5-4f21-9bbb-a89e0e259052
-description: Obtenga información sobre cómo usar la autenticación de OAuth con las aplicaciones de la API administrada de EWS.
-ms.openlocfilehash: 8b6a3fd72e42a36e31f261205292de28ef341270
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Obtenga información sobre cómo usar la autenticación OAuth con sus aplicaciones de API administrada de EWS.
+localization_priority: Priority
+ms.openlocfilehash: e2bcb339ddac51b888660b6f982a8377591b1a29
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353584"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528254"
 ---
-# <a name="authenticate-an-ews-application-by-using-oauth"></a><span data-ttu-id="9a9b8-103">Autenticar una aplicación EWS mediante OAuth</span><span class="sxs-lookup"><span data-stu-id="9a9b8-103">Authenticate an EWS application by using OAuth</span></span>
+<!-- markdownlint-disable MD025 -->
+# <a name="authenticate-an-ews-application-by-using-oauth"></a><span data-ttu-id="60ce7-103">Autenticar una aplicación de EWS mediante OAuth</span><span class="sxs-lookup"><span data-stu-id="60ce7-103">Authenticate an EWS application by using OAuth</span></span>
+<!-- markdownlint-enable MD025 -->
 
-<span data-ttu-id="9a9b8-104">Obtenga información sobre cómo usar la autenticación de OAuth con las aplicaciones de la API administrada de EWS.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-104">Learn how to use OAuth authentication with your EWS Managed API applications.</span></span>
-  
-<span data-ttu-id="9a9b8-105">Puede usar el servicio de autenticación de OAuth proporcionado por Azure Active Directory para integrar las aplicaciones de la API administrada de EWS con el mismo modelo de autenticación usado por la API de REST de Office 365.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-105">You can use the OAuth authentication service provided by Azure Active Directory to integrate your EWS Managed API applications with the same authentication model used by the Office 365 REST APIs.</span></span> <span data-ttu-id="9a9b8-106">Para usar OAuth con la aplicación, necesitará:</span><span class="sxs-lookup"><span data-stu-id="9a9b8-106">To use OAuth with your application you will need to:</span></span>
-  
-1. <span data-ttu-id="9a9b8-107">[Registrar la aplicación](#bk_register) con Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-107">[Register your application](#bk_register) with Azure Active Directory.</span></span> 
-    
-2. <span data-ttu-id="9a9b8-108">[Agregar código para obtener un token de autenticación](#bk_getToken) para obtener una autenticación símbolo (token) de un servidor de token.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-108">[Add code to get an authentication token](#bk_getToken) to get an authentication token from a token server.</span></span> 
-    
-3. <span data-ttu-id="9a9b8-109">[Agregar un token de autenticación para las solicitudes EWS](#bk_useToken) que envíe.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-109">[Add an authentication token to EWS requests](#bk_useToken) that you send.</span></span> 
-    
+<span data-ttu-id="60ce7-104">Obtenga información sobre cómo usar la autenticación OAuth con sus aplicaciones de API administrada de EWS.</span><span class="sxs-lookup"><span data-stu-id="60ce7-104">Learn how to use OAuth authentication with your EWS Managed API applications.</span></span>
+
+<span data-ttu-id="60ce7-105">Puede usar el servicio de autenticación OAuth proporcionado por Azure Active Directory para permitir que las aplicaciones de la API administrada de EWS obtengan acceso a Exchange online en Office 365.</span><span class="sxs-lookup"><span data-stu-id="60ce7-105">You can use the OAuth authentication service provided by Azure Active Directory to enable your EWS Managed API applications to access Exchange Online in Office 365.</span></span> <span data-ttu-id="60ce7-106">Para usar OAuth con la aplicación, deberá:</span><span class="sxs-lookup"><span data-stu-id="60ce7-106">To use OAuth with your application you will need to:</span></span>
+
+1. <span data-ttu-id="60ce7-107">[Registre la aplicación](#register-your-application) con Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="60ce7-107">[Register your application](#register-your-application) with Azure Active Directory.</span></span>
+
+2. <span data-ttu-id="60ce7-108">[Agregue código para obtener un token de autenticación](#add-code-to-get-an-authentication-token) para obtener un token de autenticación de un servidor de tokens.</span><span class="sxs-lookup"><span data-stu-id="60ce7-108">[Add code to get an authentication token](#add-code-to-get-an-authentication-token) to get an authentication token from a token server.</span></span>
+
+3. <span data-ttu-id="60ce7-109">[Agregue un token de autenticación a las solicitudes de EWS](#add-an-authentication-token-to-ews-requests) que envíe.</span><span class="sxs-lookup"><span data-stu-id="60ce7-109">[Add an authentication token to EWS requests](#add-an-authentication-token-to-ews-requests) that you send.</span></span>
+
 > [!NOTE]
-> <span data-ttu-id="9a9b8-110">Autenticación de OAuth para EWS sólo está disponible en Exchange como parte de Office 365.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-110">OAuth authentication for EWS is only available in Exchange as part of Office 365.</span></span> <span data-ttu-id="9a9b8-111">Las aplicaciones de EWS requieren el permiso "Acceso total al buzón del usuario".</span><span class="sxs-lookup"><span data-stu-id="9a9b8-111">EWS applications require the "Full access to user's mailbox" permission.</span></span> 
-  
-<span data-ttu-id="9a9b8-112">Para usar el código de este artículo, necesita tener acceso a la siguiente:</span><span class="sxs-lookup"><span data-stu-id="9a9b8-112">To use the code in this article, you will need to have access to the following:</span></span>
-  
-- <span data-ttu-id="9a9b8-113">Una [cuenta de desarrollador de Office 365](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program).</span><span class="sxs-lookup"><span data-stu-id="9a9b8-113">An [Office 365 developer account](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program).</span></span> <span data-ttu-id="9a9b8-114">Puede usar una cuenta de prueba para probar la aplicación.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-114">You can use a trial account to test your application.</span></span>
-    
-- <span data-ttu-id="9a9b8-115">La [biblioteca de autenticación de Azure AD para. NET](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries).</span><span class="sxs-lookup"><span data-stu-id="9a9b8-115">The [Azure AD Authentication Library for .NET](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries).</span></span>
-    
-- <span data-ttu-id="9a9b8-116">[API administrada de EWS](https://github.com/officedev/ews-managed-api.aspx).</span><span class="sxs-lookup"><span data-stu-id="9a9b8-116">[The EWS Managed API](https://github.com/officedev/ews-managed-api.aspx).</span></span>
+> <span data-ttu-id="60ce7-110">La autenticación OAuth para EWS solo está disponible en Exchange como parte de Office 365.</span><span class="sxs-lookup"><span data-stu-id="60ce7-110">OAuth authentication for EWS is only available in Exchange as part of Office 365.</span></span> <span data-ttu-id="60ce7-111">Las aplicaciones de EWS que usan OAuth deben registrarse con Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="60ce7-111">EWS applications that use OAuth must be registered with Azure Active Directory.</span></span>
 
-<span data-ttu-id="9a9b8-117"><a name="bk_register"> </a></span><span class="sxs-lookup"><span data-stu-id="9a9b8-117"></span></span>
+<span data-ttu-id="60ce7-112">Para usar el código de este artículo, tendrá que tener acceso a lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="60ce7-112">To use the code in this article, you will need to have access to the following:</span></span>
 
-## <a name="register-your-application"></a><span data-ttu-id="9a9b8-118">Registrar la aplicación</span><span class="sxs-lookup"><span data-stu-id="9a9b8-118">Register your application</span></span>
+- <span data-ttu-id="60ce7-113">Una cuenta de Office 365 con un buzón de correo de Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="60ce7-113">An Office 365 account with an Exchange Online mailbox.</span></span> <span data-ttu-id="60ce7-114">Si no tiene una cuenta de Office 365, puede [registrarse para el programa de desarrolladores de office 365](https://developer.microsoft.com/office/dev-program) para obtener una suscripción gratuita a Office 365.</span><span class="sxs-lookup"><span data-stu-id="60ce7-114">If you do not have an Office 365 account, you can [sign up for the Office 365 Developer Program](https://developer.microsoft.com/office/dev-program) to get a free Office 365 subscription.</span></span>
 
-<span data-ttu-id="9a9b8-119">Para usar OAuth, una aplicación debe tener un identificador de cliente y un URI que identifica la aplicación de aplicación.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-119">To use OAuth, an application must have a client identifier and an application URI that identifies the application.</span></span> <span data-ttu-id="9a9b8-120">Si aún no ha registrado su aplicación con servicios de Azure Active Directory, debe agregar manualmente la aplicación siguiendo los pasos indicados en [registrar la aplicación](https://apps.dev.microsoft.com/#/appList).</span><span class="sxs-lookup"><span data-stu-id="9a9b8-120">If you have not yet registered your application with Azure Active Directory Services, you'll need to manually add your application by following the steps at [Register your app](https://apps.dev.microsoft.com/#/appList).</span></span>
+- <span data-ttu-id="60ce7-115">La [biblioteca de autenticación de Microsoft para .net](/dotnet/api/microsoft.identity.client?view=azure-dotnet).</span><span class="sxs-lookup"><span data-stu-id="60ce7-115">The [Microsoft Authentication Library for .NET](/dotnet/api/microsoft.identity.client?view=azure-dotnet).</span></span>
 
-<span data-ttu-id="9a9b8-121"><a name="bk_getToken"> </a></span><span class="sxs-lookup"><span data-stu-id="9a9b8-121"></span></span>
+- <span data-ttu-id="60ce7-116">La [API administrada EWS](https://github.com/officedev/ews-managed-api).</span><span class="sxs-lookup"><span data-stu-id="60ce7-116">The [EWS Managed API](https://github.com/officedev/ews-managed-api).</span></span>
 
-## <a name="add-code-to-get-an-authentication-token"></a><span data-ttu-id="9a9b8-122">Agregar código para obtener un token de autenticación</span><span class="sxs-lookup"><span data-stu-id="9a9b8-122">Add code to get an authentication token</span></span>
 
-<span data-ttu-id="9a9b8-123">La biblioteca de autenticación de AD Azure para .NET simplifica la obtención de un token de autenticación de Azure Active Directory para que se puede utilizar el token en la aplicación.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-123">The Azure AD Authentication Library for .NET simplifies getting an authentication token from Azure Active Directory so that you can use the token in your application.</span></span> <span data-ttu-id="9a9b8-124">Debe proporcionar cuatro fragmentos de información para obtener el token:</span><span class="sxs-lookup"><span data-stu-id="9a9b8-124">You need to provide four pieces of information to get the token:</span></span>
-  
-1. <span data-ttu-id="9a9b8-125">El URI del servidor de símbolo (token).</span><span class="sxs-lookup"><span data-stu-id="9a9b8-125">The URI of the token server.</span></span> <span data-ttu-id="9a9b8-126">El servidor de token es la **entidad de certificación** que autentica al usuario y devuelve un símbolo (token) que la aplicación puede utilizar para tener acceso a EWS.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-126">The token server is the **authority** that authenticates the user and returns a token that your application can use to access EWS.</span></span> 
-    
-2. <span data-ttu-id="9a9b8-127">El identificador de cliente de aplicación que se crea al registrar la aplicación con Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-127">The application client ID created when you registered your application with Azure Active Directory.</span></span>
-    
-3. <span data-ttu-id="9a9b8-128">El cliente de aplicación de URI que se crean al registrar la aplicación con Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-128">The application client URI created when you registered your application with Azure Active Directory.</span></span>
-    
-4. <span data-ttu-id="9a9b8-129">El URI del servidor EWS y el URI del extremo de EWS.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-129">The URI of the EWS server and the URI of the EWS endpoint.</span></span> <span data-ttu-id="9a9b8-130">Para Exchange como parte de Office 365, será `https://<server name>/ews/exchange.asmx`.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-130">For Exchange as part of Office 365, this will be  `https://<server name>/ews/exchange.asmx`.</span></span>
-    
-<span data-ttu-id="9a9b8-131">El código siguiente muestra cómo usar la biblioteca de autenticación de AD Azure para obtener un token de autenticación.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-131">The following code shows how to use the Azure AD Authentication Library to get an authentication token.</span></span> <span data-ttu-id="9a9b8-132">Se supone que la información necesaria para realizar la solicitud de autenticación se almacena en el archivo de App.config de la aplicación.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-132">It assumes that the information required to make the authentication request is stored in the application's App.config file.</span></span> <span data-ttu-id="9a9b8-133">En este ejemplo no incluyen comprobación de errores, vea el [ejemplo de código](#bk_codeSample) para el código completo.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-133">This example does not include error checking, see the [Code sample](#bk_codeSample) for the complete code.</span></span> 
-  
+<span data-ttu-id="60ce7-117">Hay dos tipos de permisos de OAuth que se pueden usar para acceder a las API de EWS en Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="60ce7-117">There are two types of OAuth permissions that can be used to access EWS APIs in Exchange Online.</span></span> <span data-ttu-id="60ce7-118">Antes de continuar con el tutorial, deberá elegir el tipo de permiso específico que se va a usar.</span><span class="sxs-lookup"><span data-stu-id="60ce7-118">Before you proceed with the tutorial, you will need to choose the specific permission type to use.</span></span>
+
+* <span data-ttu-id="60ce7-119">Los **permisos delegados** los usan las aplicaciones en las que un usuario debe haber iniciado sesión.</span><span class="sxs-lookup"><span data-stu-id="60ce7-119">**Delegated permissions** are used by apps that have a signed-in user present.</span></span> <span data-ttu-id="60ce7-120">Para estas aplicaciones, el usuario o un administrador confirman los permisos que la aplicación solicita y la aplicación puede actuar como el usuario que ha iniciado sesión al realizar llamadas a la API.</span><span class="sxs-lookup"><span data-stu-id="60ce7-120">For these apps, either the user or an administrator consents to the permissions that the app requests and the app can act as the signed-in user when making API calls.</span></span> 
+* <span data-ttu-id="60ce7-121">**Los permisos de aplicación** se usan en aplicaciones que se ejecutan sin la presencia de un usuario que ha iniciado sesión; por ejemplo, aplicaciones que se ejecutan como daemons o servicios en segundo plano y que pueden tener acceso a varios buzones.</span><span class="sxs-lookup"><span data-stu-id="60ce7-121">**Application permissions** are used by apps that run without a signed-in user present; for example, apps that run as background services or daemons and can access multiple mailboxes.</span></span>
+
+## <a name="register-your-application"></a><span data-ttu-id="60ce7-122">Registrar la aplicación</span><span class="sxs-lookup"><span data-stu-id="60ce7-122">Register your application</span></span>
+
+<span data-ttu-id="60ce7-123">Para usar OAuth, una aplicación debe tener un identificador de aplicación emitido por Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="60ce7-123">To use OAuth, an application must have an application ID issued by Azure Active Directory.</span></span> <span data-ttu-id="60ce7-124">En este tutorial, se da por supuesto que la aplicación es una aplicación de consola, por lo que debe registrar la aplicación como cliente público con Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="60ce7-124">In this tutorial, it is assumed that the application is a console application, so you need to register your application as a public client with Azure Active Directory.</span></span>
+
+1. <span data-ttu-id="60ce7-125">Abra un explorador y vaya al [centro de administración de Azure Active Directory](https://aad.portal.azure.com) e inicie sesión con una **cuenta personal** (también conocida como: cuenta Microsoft) o una **cuenta profesional o educativa**.</span><span class="sxs-lookup"><span data-stu-id="60ce7-125">Open a browser and navigate to the [Azure Active Directory admin center](https://aad.portal.azure.com) and login using a **personal account** (aka: Microsoft Account) or **Work or School Account**.</span></span>
+
+1. <span data-ttu-id="60ce7-126">Seleccione **Azure Active Directory** en el panel de navegación de la izquierda y, después, seleccione **registros de aplicaciones** en **administrar**.</span><span class="sxs-lookup"><span data-stu-id="60ce7-126">Select **Azure Active Directory** in the left-hand navigation, then select **App registrations** under **Manage**.</span></span>
+
+1. <span data-ttu-id="60ce7-127">Seleccione **Nuevo registro**.</span><span class="sxs-lookup"><span data-stu-id="60ce7-127">Select **New registration**.</span></span> <span data-ttu-id="60ce7-128">En la página **Registrar una aplicación**, establezca los valores siguientes.</span><span class="sxs-lookup"><span data-stu-id="60ce7-128">On the **Register an application** page, set the values as follows.</span></span>
+
+    - <span data-ttu-id="60ce7-129">Establezca **Name** en un nombre descriptivo para la aplicación.</span><span class="sxs-lookup"><span data-stu-id="60ce7-129">Set **Name** to a friendly name for your app.</span></span>
+    - <span data-ttu-id="60ce7-130">Establezca los **tipos de cuenta admitidos** en la opción adecuada para su escenario.</span><span class="sxs-lookup"><span data-stu-id="60ce7-130">Set **Supported account types** to the choice that makes sense for your scenario.</span></span>
+    - <span data-ttu-id="60ce7-131">Para el **URI de redireccionamiento**, cambie la lista desplegable a **cliente público (móvil & escritorio)** y establezca el valor en `urn:ietf:wg:oauth:2.0:oob` .</span><span class="sxs-lookup"><span data-stu-id="60ce7-131">For **Redirect URI**, change the dropdown to **Public client (mobile & desktop)** and set the value to `urn:ietf:wg:oauth:2.0:oob`.</span></span>
+
+1. <span data-ttu-id="60ce7-132">Elija **Registrar**.</span><span class="sxs-lookup"><span data-stu-id="60ce7-132">Choose **Register**.</span></span> <span data-ttu-id="60ce7-133">En la página siguiente, copie el valor del identificador de la **aplicación (cliente)** y guárdelo, lo necesitará más adelante.</span><span class="sxs-lookup"><span data-stu-id="60ce7-133">On the next page, copy the value of the **Application (client) ID** and save it, you will need it later.</span></span>
+
+1. <span data-ttu-id="60ce7-134">Seleccione **permisos de API** en el panel de navegación izquierdo en **administrar**.</span><span class="sxs-lookup"><span data-stu-id="60ce7-134">Select **API permissions** in the left-hand navigation under **Manage**.</span></span> 
+
+1. <span data-ttu-id="60ce7-135">Seleccione **Agregar un permiso**.</span><span class="sxs-lookup"><span data-stu-id="60ce7-135">Select **Add a permission**.</span></span> <span data-ttu-id="60ce7-136">En la página **solicitar permisos de API** , seleccione **Exchange** en **API heredadas admitidas**.</span><span class="sxs-lookup"><span data-stu-id="60ce7-136">On the **Request API permissions** page, select **Exchange** under **Supported legacy APIs**.</span></span> 
+
+1. <span data-ttu-id="60ce7-137">Para usar permisos delegados, seleccione **permisos delegados** y, después, seleccione **EWS. AccessAsUser. All** en **EWS**.</span><span class="sxs-lookup"><span data-stu-id="60ce7-137">To use Delegated permissions, select **Delegated permissions** and then select **EWS.AccessAsUser.All** under **EWS**.</span></span> <span data-ttu-id="60ce7-138">Haga clic en **Agregar permisos**.</span><span class="sxs-lookup"><span data-stu-id="60ce7-138">Click on **Add permissions**.</span></span> 
+
+<span data-ttu-id="60ce7-139">Para usar los permisos de la aplicación, siga estos pasos adicionales.</span><span class="sxs-lookup"><span data-stu-id="60ce7-139">To use Application permissions, follow these additional steps.</span></span>
+
+1. <span data-ttu-id="60ce7-140">Seleccione **permisos** de la aplicación y, a continuación, seleccione **full_access_as_app**.</span><span class="sxs-lookup"><span data-stu-id="60ce7-140">Select **Application permissions** and then select **full_access_as_app**.</span></span> <span data-ttu-id="60ce7-141">Haga clic en **Agregar permisos**.</span><span class="sxs-lookup"><span data-stu-id="60ce7-141">Click on **Add permissions**.</span></span>
+
+1. <span data-ttu-id="60ce7-142">Seleccione **conceder consentimiento de administrador para org** y acepte el cuadro de diálogo de consentimiento.</span><span class="sxs-lookup"><span data-stu-id="60ce7-142">Select **Grant admin consent for org** and accept the consent dialog.</span></span> 
+
+1. <span data-ttu-id="60ce7-143">Seleccione **certificados & secretos** en el panel de navegación izquierdo en **administrar**.</span><span class="sxs-lookup"><span data-stu-id="60ce7-143">Select **Certificates & Secrets** in the left-hand navigation under **Manage**.</span></span> 
+
+1. <span data-ttu-id="60ce7-144">Seleccione **nuevo secreto de cliente**, escriba una descripción breve y seleccione **Agregar**.</span><span class="sxs-lookup"><span data-stu-id="60ce7-144">Select **New client secret**, enter a short description and select **Add**.</span></span>
+
+1. <span data-ttu-id="60ce7-145">Copie el **valor** del secreto de cliente recién agregado y guárdelo, lo necesitará más adelante.</span><span class="sxs-lookup"><span data-stu-id="60ce7-145">Copy the **Value** of the newly added client secret and save it, you will need it later.</span></span> 
+
+## <a name="add-code-to-get-an-authentication-token"></a><span data-ttu-id="60ce7-146">Agregar código para obtener un token de autenticación</span><span class="sxs-lookup"><span data-stu-id="60ce7-146">Add code to get an authentication token</span></span>
+
+<span data-ttu-id="60ce7-147">Los fragmentos de código siguientes muestran cómo usar la biblioteca de autenticación de Microsoft para obtener tokens de autenticación para permisos delegados y permisos de aplicación.</span><span class="sxs-lookup"><span data-stu-id="60ce7-147">The following code snippets show how to use the Microsoft Authentication Library to get authentication tokens for delegated permissions and application permissions.</span></span> <span data-ttu-id="60ce7-148">En estos fragmentos de código se presupone que la información necesaria para realizar la solicitud de autenticación se almacena en el archivo **app. config** de la aplicación.</span><span class="sxs-lookup"><span data-stu-id="60ce7-148">These snippets assume that the information required to make the authentication request is stored in the application's **App.config** file.</span></span> <span data-ttu-id="60ce7-149">Estos ejemplos no incluyen la comprobación de errores, vea los [ejemplos de código](#code-samples) para obtener el código completo.</span><span class="sxs-lookup"><span data-stu-id="60ce7-149">These examples do not include error checking, see the [Code samples](#code-samples) for the complete code.</span></span>
+
+### <a name="delegated-permissions"></a><span data-ttu-id="60ce7-150">Permisos delegados</span><span class="sxs-lookup"><span data-stu-id="60ce7-150">Delegated permissions</span></span>
+
 ```cs
-string authority = ConfigurationManager.AppSettings["authority"];
-string clientID = ConfigurationManager.AppSettings["clientID"];
-Uri clientAppUri = new Uri(ConfigurationManager.AppSettings["clientAppUri"];
-string serverName = ConfigurationManager.AppSettings["serverName"];
-AuthenticationContext authenticationContext = new AuthenticationContext(authority, false);
-AuthenticationResult authenticationResult = authenticationContext.AcquireToken(serverName, clientId, clientAppUri);
+// Configure the MSAL client to get tokens
+var pcaOptions = new PublicClientApplicationOptions
+{
+    ClientId = ConfigurationManager.AppSettings["appId"],
+    TenantId = ConfigurationManager.AppSettings["tenantId"]
+};
+
+var pca = PublicClientApplicationBuilder
+    .CreateWithApplicationOptions(pcaOptions).Build();
+
+// The permission scope required for EWS access
+var ewsScopes = new string[] { "https://outlook.office.com/EWS.AccessAsUser.All" };
+
+// Make the interactive token request
+var authResult = await pca.AcquireTokenInteractive(ewsScopes).ExecuteAsync();
+```
+
+### <a name="application-permissions"></a><span data-ttu-id="60ce7-151">Permisos de la aplicación</span><span class="sxs-lookup"><span data-stu-id="60ce7-151">Application permissions</span></span>
+
+```cs
+// Configure the MSAL client to get tokens
+var app = ConfidentialClientApplicationBuilder
+    .Create(ConfigurationManager.AppSettings["appId"])
+    .WithAuthority(AzureCloudInstance.AzurePublic, ConfigurationManager.AppSettings["tenantId"])
+    .WithClientSecret(ConfigurationManager.AppSettings["clientSecret"]).Build();
+
+// The permission scope required for EWS access
+var ewsScopes = new string[] { "https://outlook.office.com/.default" };
+
+//Make the toekn request
+AuthenticationResult authResult = await app.AcquireTokenForClient(ewsScopes).ExecuteAsync();
 
 ```
 
-<span data-ttu-id="9a9b8-134"><a name="bk_useToken"> </a></span><span class="sxs-lookup"><span data-stu-id="9a9b8-134"></span></span>
+## <a name="add-an-authentication-token-to-ews-requests"></a><span data-ttu-id="60ce7-152">Adición de un token de autenticación a las solicitudes de EWS</span><span class="sxs-lookup"><span data-stu-id="60ce7-152">Add an authentication token to EWS requests</span></span>
 
-## <a name="add-an-authentication-token-to-ews-requests"></a><span data-ttu-id="9a9b8-135">Agregar un token de autenticación para las solicitudes EWS</span><span class="sxs-lookup"><span data-stu-id="9a9b8-135">Add an authentication token to EWS requests</span></span>
+<span data-ttu-id="60ce7-153">Una vez que haya recibido el objeto **AuthenticationResult** , puede usar la propiedad **AccessToken** para obtener el token emitido por el servicio de token.</span><span class="sxs-lookup"><span data-stu-id="60ce7-153">After you've received the **AuthenticationResult** object you can use the **AccessToken** property to get the token issued by the token service.</span></span>
 
-<span data-ttu-id="9a9b8-136">Una vez que ha recibido el objeto **AuthenticationResult** puede usar la propiedad **AccessToken** para obtener el token emitido por el servicio de token.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-136">After you've received the **AuthenticationResult** object you can use the **AccessToken** property to get the token issued by the token service.</span></span> 
-  
 ```cs
-ExchangeService exchangeService = new ExchangeService(ExchangeVersion.Exchange2013);
-exchangeService.Url = new Uri(ConfigurationManager.AppSettings["serverName"]+"ews/exchange.asmx");
-exchangeService.TraceEnabled = true;
-exchangeService.TraceFlags = TraceFlags.All;
-exchangeService.Credentials = new OAuthCredentials(authenticationResult.AccessToken));
-exchangeService.FindFolders(WellKnownFolderName.Root, new Folderview(10));
+// Configure the ExchangeService with the access token
+var ewsClient = new ExchangeService();
+ewsClient.Url = new Uri("https://outlook.office365.com/EWS/Exchange.asmx");
+ewsClient.Credentials = new OAuthCredentials(authResult.AccessToken);
 ```
 
-<span data-ttu-id="9a9b8-137"><a name="bk_codeSample"> </a></span><span class="sxs-lookup"><span data-stu-id="9a9b8-137"></span></span>
+<span data-ttu-id="60ce7-154">Para usar los permisos de la aplicación, también tendrá que suplantar explícitamente un buzón al que desee tener acceso.</span><span class="sxs-lookup"><span data-stu-id="60ce7-154">To use Application permissions, you will also need to explictly impersonate a mailbox that you would like to access.</span></span> 
 
-## <a name="code-sample"></a><span data-ttu-id="9a9b8-138">Ejemplo de código</span><span class="sxs-lookup"><span data-stu-id="9a9b8-138">Code sample</span></span>
-
-<span data-ttu-id="9a9b8-139">El siguiente es el ejemplo de código completo que muestra cómo realizar una solicitud de autenticación de OAuth EWS.</span><span class="sxs-lookup"><span data-stu-id="9a9b8-139">The following is the complete code sample that demonstrates making an OAuth-authenticated EWS request.</span></span>
-  
 ```cs
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Web.Script.Serialization;
-using Microsoft.Exchange.WebServices.Autodiscover;
+//Impersonate the mailbox you'd like to access.
+ewsClient.ImpersonatedUserId = new ImpersonatedUserId(ConnectingIdType.SmtpAddress, "test@demotenant.onmicrosoft.com");
+```
+
+## <a name="code-samples"></a><span data-ttu-id="60ce7-155">Ejemplos de código</span><span class="sxs-lookup"><span data-stu-id="60ce7-155">Code samples</span></span>
+
+### <a name="delegated-permissions"></a><span data-ttu-id="60ce7-156">Permisos delegados</span><span class="sxs-lookup"><span data-stu-id="60ce7-156">Delegated permissions</span></span>
+
+<span data-ttu-id="60ce7-157">El siguiente es el ejemplo de código completo que muestra cómo realizar una solicitud EWS autenticada con OAuth mediante permisos delegados.</span><span class="sxs-lookup"><span data-stu-id="60ce7-157">The following is the complete code sample that demonstrates making an OAuth-authenticated EWS request using Delegated permissions.</span></span>
+
+```cs
 using Microsoft.Exchange.WebServices.Data;
-using Microsoft.IdentityModel.Clients.ActiveDirectory;
-namespace TestV1App
+using Microsoft.Identity.Client;
+using System;
+using System.Configuration;
+
+namespace EwsOAuth
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var t = new Thread(Run);
-            t.SetApartmentState(ApartmentState.STA);
-            t.Start();
-            t.Join();
+            MainAsync(args).Wait();
+
+            if (System.Diagnostics.Debugger.IsAttached)
+            {
+                Console.WriteLine("Hit any key to exit...");
+                Console.ReadKey();
+            }
         }
-        static void Run()
+
+        static async System.Threading.Tasks.Task MainAsync(string[] args)
         {
-           string authority = ConfigurationManager.AppSettings["authority"];
-           string clientID = ConfigurationManager.AppSettings["clientID"];
-           Uri clientAppUri = new Uri(ConfigurationManager.AppSettings["clientAppUri"];
-           string serverName = ConfigurationManager.AppSettings["serverName"];
-            AuthenticationResult authenticationResult = null;
-            AuthenticationContext authenticationContext = new AuthenticationContext(authority, false);
-            
-            string errorMessage = null;
+            // Configure the MSAL client to get tokens
+            var pcaOptions = new PublicClientApplicationOptions
+            {
+                ClientId = ConfigurationManager.AppSettings["appId"],
+                TenantId = ConfigurationManager.AppSettings["tenantId"]
+            };
+
+            var pca = PublicClientApplicationBuilder
+                .CreateWithApplicationOptions(pcaOptions).Build();
+
+            var ewsScopes = new string[] { "https://outlook.office.com/EWS.AccessAsUser.All" };
+
             try
             {
-                Console.WriteLine("Trying to acquire token");
-                authenticationResult = authenticationContext.AcquireToken(serverName, clientId, clientAppUri);
-            }
-                catch (AdalException ex)
-            {
-                errorMessage = ex.Message;
-                if (ex.InnerException != null)
+                // Make the interactive token request
+                var authResult = await pca.AcquireTokenInteractive(ewsScopes).ExecuteAsync();
+
+                // Configure the ExchangeService with the access token
+                var ewsClient = new ExchangeService();
+                ewsClient.Url = new Uri("https://outlook.office365.com/EWS/Exchange.asmx");
+                ewsClient.Credentials = new OAuthCredentials(authResult.AccessToken);
+
+                // Make an EWS call
+                var folders = ewsClient.FindFolders(WellKnownFolderName.MsgFolderRoot, new FolderView(10));
+                foreach(var folder in folders)
                 {
-                    errorMessage += "\nInnerException : " + ex.InnerException.Message;
+                    Console.WriteLine($"Folder: {folder.DisplayName}");
                 }
             }
-            catch (ArgumentException ex)
+            catch (MsalException ex)
             {
-                errorMessage = ex.Message;
+                Console.WriteLine($"Error acquiring access token: {ex.ToString()}");
             }
-            if (!string.IsNullOrEmpty(errorMessage))
+            catch (Exception ex)
             {
-                Console.WriteLine("Failed: {0}" + errorMessage);
-                return;
+                Console.WriteLine($"Error: {ex.ToString()}");
             }
-            Console.WriteLine("\nMaking the protocol call\n");
-            ExchangeService exchangeService = new ExchangeService(ExchangeVersion.Exchange2013);
-            exchangeService.Url = new Uri(resource + "ews/exchange.asmx");
-            exchangeService.TraceEnabled = true;
-            exchangeService.TraceFlags = TraceFlags.All;
-            exchangeService.Credentials = new OAuthCredentials(authenticationResult.AccessToken);
-            exchangeService.FindFolders(WellKnownFolderName.Root, new FolderView(10));
         }
     }
 }
-
 ```
 
-<span data-ttu-id="9a9b8-140">El código de ejemplo requiere un archivo App.config con las siguientes entradas:</span><span class="sxs-lookup"><span data-stu-id="9a9b8-140">The sample code requires an App.config file with the following entries:</span></span>
-  
+### <a name="application-permissions"></a><span data-ttu-id="60ce7-158">Permisos de la aplicación</span><span class="sxs-lookup"><span data-stu-id="60ce7-158">Application permissions</span></span>
+
+<span data-ttu-id="60ce7-159">El siguiente es el ejemplo de código completo que muestra cómo realizar una solicitud EWS autenticada con OAuth mediante permisos de aplicación.</span><span class="sxs-lookup"><span data-stu-id="60ce7-159">The following is the complete code sample that demonstrates making an OAuth-authenticated EWS request using Application permissions.</span></span>
+
+```cs
+using System;
+using System.Configuration;
+using Microsoft.Exchange.WebServices.Data;
+using Microsoft.Identity.Client;
+
+namespace ews_oauth_samples
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            MainAsync(args).Wait();
+
+            if (System.Diagnostics.Debugger.IsAttached)
+            {
+                Console.WriteLine("Hit any key to exit...");
+                Console.ReadKey();
+            }
+        }
+        
+        static async System.Threading.Tasks.Task MainAsync(string[] args)
+        {
+            // Configure the MSAL client to get tokens
+            var ewsScopes = new string[] { "https://outlook.office.com/.default" };
+
+            var app = ConfidentialClientApplicationBuilder.Create(ConfigurationManager.AppSettings["appId"])
+                .WithAuthority(AzureCloudInstance.AzurePublic, ConfigurationManager.AppSettings["tenantId"])
+                .WithClientSecret(ConfigurationManager.AppSettings["clientSecret"])
+                .Build();
+
+            AuthenticationResult result = null;
+
+            try
+            {
+                // Make the interactive token request
+                result = await app.AcquireTokenForClient(ewsScopes)
+                    .ExecuteAsync();
+
+                // Configure the ExchangeService with the access token
+                var ewsClient = new ExchangeService();
+                ewsClient.Url = new Uri("https://outlook.office365.com/EWS/Exchange.asmx");
+                ewsClient.Credentials = new OAuthCredentials(result.AccessToken);
+
+                //Impersonate the mailbox you'd like to access.
+                ewsClient.ImpersonatedUserId = new ImpersonatedUserId(ConnectingIdType.SmtpAddress, "test@demotenant.onmicrosoft.com");
+
+                // Make an EWS call
+                var folders = ewsClient.FindFolders(WellKnownFolderName.MsgFolderRoot, new FolderView(10));
+                foreach (var folder in folders)
+                {
+                    Console.WriteLine($"Folder: {folder.DisplayName}");
+                }
+            }
+            catch (MsalException ex)
+            {
+                Console.WriteLine($"Error acquiring access token: {ex.ToString()}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.ToString()}");
+            }
+        }
+    }
+}
+```
+
+<span data-ttu-id="60ce7-160">En ambos casos, el código de ejemplo requiere un archivo **app. config** con las siguientes entradas:</span><span class="sxs-lookup"><span data-stu-id="60ce7-160">The sample code in both cases requires an **App.config** file with the following entries:</span></span>
+
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
   <startup>
-    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
   </startup>
   <appSettings>
-    <add key="authority" value="http://login.windows.net/<devAccountName>.onmicrosoft.com" />
-    <add key="clientId" value="<ID generated by Azure Active Directory"/>
-    <add key="clientAppUri" value="<URI registered with Azure Active Directory"/>
-    <add key="serverName" value="outlook.office365.com" />
+    <!-- The application ID from your app registration -->
+    <add key="appId" value="YOUR_APP_ID_HERE" />
+    <!-- If you registered your app to support only users in your organization, change the value
+           of this key to your tenant ID -->
+    <add key="tenantId" value="common"/>
+    <!-- The application's client secret from your app registration. Needed for application permission access -->
+    <add key="clientSecret" value="YOUR_CLIENT_SECRET_HERE"/>
   </appSettings>
 </configuration>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="9a9b8-141">Vea también</span><span class="sxs-lookup"><span data-stu-id="9a9b8-141">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="60ce7-161">Vea también</span><span class="sxs-lookup"><span data-stu-id="60ce7-161">See also</span></span>
 
-- [<span data-ttu-id="9a9b8-142">Autenticación y EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="9a9b8-142">Authentication and EWS in Exchange</span></span>](authentication-and-ews-in-exchange.md)    
-
-    
-
+- [<span data-ttu-id="60ce7-162">Autenticación y EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="60ce7-162">Authentication and EWS in Exchange</span></span>](authentication-and-ews-in-exchange.md)

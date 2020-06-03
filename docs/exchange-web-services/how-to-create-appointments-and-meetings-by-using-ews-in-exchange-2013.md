@@ -1,37 +1,37 @@
 ---
-title: Crear citas y reuniones mediante el uso de EWS en Exchange 2013
+title: Crear citas y reuniones mediante EWS en Exchange 2013
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: fdea70a4-9267-4e5d-9152-b749e2acc3b0
-description: Aprenda a crear las citas y reuniones mediante la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: 1c840fac2ecca9fb51a28044dfac6299cb4fc038
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Obtenga información sobre cómo crear citas y reuniones mediante la API administrada de EWS o EWS en Exchange.
+localization_priority: Priority
+ms.openlocfilehash: b617519b839fb5ad310fbcaf6fae065f71f0f165
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763056"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44528233"
 ---
-# <a name="create-appointments-and-meetings-by-using-ews-in-exchange-2013"></a><span data-ttu-id="c6157-103">Crear citas y reuniones mediante el uso de EWS en Exchange 2013</span><span class="sxs-lookup"><span data-stu-id="c6157-103">Create appointments and meetings by using EWS in Exchange 2013</span></span>
+# <a name="create-appointments-and-meetings-by-using-ews-in-exchange-2013"></a><span data-ttu-id="446bd-103">Crear citas y reuniones mediante EWS en Exchange 2013</span><span class="sxs-lookup"><span data-stu-id="446bd-103">Create appointments and meetings by using EWS in Exchange 2013</span></span>
 
-<span data-ttu-id="c6157-104">Aprenda a crear las citas y reuniones mediante la API administrada de EWS o EWS en Exchange.</span><span class="sxs-lookup"><span data-stu-id="c6157-104">Learn how to create appointments and meetings by using the EWS Managed API or EWS in Exchange.</span></span>
+<span data-ttu-id="446bd-104">Obtenga información sobre cómo crear citas y reuniones mediante la API administrada de EWS o EWS en Exchange.</span><span class="sxs-lookup"><span data-stu-id="446bd-104">Learn how to create appointments and meetings by using the EWS Managed API or EWS in Exchange.</span></span>
   
-<span data-ttu-id="c6157-105">La diferencia entre las reuniones y citas esencial es que las reuniones tienen asistentes, y no las citas.</span><span class="sxs-lookup"><span data-stu-id="c6157-105">The essential difference between meetings and appointments is that meetings have attendees, and appointments don't.</span></span> <span data-ttu-id="c6157-106">Las citas y reuniones pueden ser instancias únicas o parte de una serie periódica pero, debido a que las citas no incluyen los asistentes, salas o recursos, no requieren que se envíe un mensaje.</span><span class="sxs-lookup"><span data-stu-id="c6157-106">Both appointments and meetings can be single instances or part of a recurring series, but because appointments don't include attendees, rooms, or resources, they do not require a message to be sent.</span></span> <span data-ttu-id="c6157-107">Internamente, Exchange utiliza el mismo objeto para las reuniones y citas.</span><span class="sxs-lookup"><span data-stu-id="c6157-107">Internally, Exchange uses the same object for both meetings and appointments.</span></span> <span data-ttu-id="c6157-108">Usar la API administrada de EWS [clase de cita](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) o el elemento EWS [CalendarItem](http://msdn.microsoft.com/library/Title Topic ID Project Name Writer Editor Publish Preview.aspx) para trabajar con las reuniones y citas.</span><span class="sxs-lookup"><span data-stu-id="c6157-108">You use the EWS Managed API [Appointment class](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) or the EWS [CalendarItem](http://msdn.microsoft.com/library/Title Topic ID Project Name Writer Editor Publish Preview.aspx) element to work with meetings and appointments.</span></span> 
+<span data-ttu-id="446bd-105">La diferencia fundamental entre las reuniones y las citas es que las reuniones tienen asistentes y las citas no.</span><span class="sxs-lookup"><span data-stu-id="446bd-105">The essential difference between meetings and appointments is that meetings have attendees, and appointments don't.</span></span> <span data-ttu-id="446bd-106">Las citas y las reuniones pueden ser únicas o formar parte de una serie periódica, pero debido a que las citas no incluyen asistentes, salones o recursos, no necesitan que se envíe un mensaje.</span><span class="sxs-lookup"><span data-stu-id="446bd-106">Both appointments and meetings can be single instances or part of a recurring series, but because appointments don't include attendees, rooms, or resources, they do not require a message to be sent.</span></span> <span data-ttu-id="446bd-107">Internamente, Exchange usa el mismo objeto para las reuniones y las citas.</span><span class="sxs-lookup"><span data-stu-id="446bd-107">Internally, Exchange uses the same object for both meetings and appointments.</span></span> <span data-ttu-id="446bd-108">Use la [clase de cita](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) de API administrada EWS o el elemento [CalendarItem](https://msdn.microsoft.com/library/Title Topic ID Project Name Writer Editor Publish Preview.aspx) de EWS para trabajar con reuniones y citas.</span><span class="sxs-lookup"><span data-stu-id="446bd-108">You use the EWS Managed API [Appointment class](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) or the EWS [CalendarItem](https://msdn.microsoft.com/library/Title Topic ID Project Name Writer Editor Publish Preview.aspx) element to work with meetings and appointments.</span></span> 
   
-<span data-ttu-id="c6157-109">**La tabla 1. Métodos de la API administrada de EWS y las operaciones de EWS para trabajar con las citas y reuniones**</span><span class="sxs-lookup"><span data-stu-id="c6157-109">**Table 1. EWS Managed API methods and EWS operations for working with appointments and meetings**</span></span>
+<span data-ttu-id="446bd-109">**Tabla 1. Métodos de API administrada de EWS y operaciones de EWS para trabajar con citas y reuniones**</span><span class="sxs-lookup"><span data-stu-id="446bd-109">**Table 1. EWS Managed API methods and EWS operations for working with appointments and meetings**</span></span>
 
-|<span data-ttu-id="c6157-110">**Método de la API administrada de EWS**</span><span class="sxs-lookup"><span data-stu-id="c6157-110">**EWS Managed API method**</span></span>|<span data-ttu-id="c6157-111">**Operación de EWS**</span><span class="sxs-lookup"><span data-stu-id="c6157-111">**EWS operation**</span></span>|
+|<span data-ttu-id="446bd-110">**Método de la API administrada de EWS**</span><span class="sxs-lookup"><span data-stu-id="446bd-110">**EWS Managed API method**</span></span>|<span data-ttu-id="446bd-111">**Operación de EWS**</span><span class="sxs-lookup"><span data-stu-id="446bd-111">**EWS operation**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="c6157-112">Appointment.Save</span><span class="sxs-lookup"><span data-stu-id="c6157-112">Appointment.Save</span></span>](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) <br/> |[<span data-ttu-id="c6157-113">Operación CreateItem (elemento de calendario)</span><span class="sxs-lookup"><span data-stu-id="c6157-113">CreateItem operation (calendar item)</span></span>](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) <br/> |
-|[<span data-ttu-id="c6157-114">Item.Bind</span><span class="sxs-lookup"><span data-stu-id="c6157-114">Item.Bind</span></span>](http://msdn.microsoft.com/es-es/library/dd634410%28v=exchg.80%29.aspx) <br/> |[<span data-ttu-id="c6157-115">Operación GetItem (elemento de calendario)</span><span class="sxs-lookup"><span data-stu-id="c6157-115">GetItem operation (calendar item)</span></span>](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |
+|[<span data-ttu-id="446bd-112">Appointment. Save</span><span class="sxs-lookup"><span data-stu-id="446bd-112">Appointment.Save</span></span>](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) <br/> |[<span data-ttu-id="446bd-113">Operación CreateItem (elemento de calendario)</span><span class="sxs-lookup"><span data-stu-id="446bd-113">CreateItem operation (calendar item)</span></span>](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) <br/> |
+|[<span data-ttu-id="446bd-114">Item. bind</span><span class="sxs-lookup"><span data-stu-id="446bd-114">Item.Bind</span></span>](https://msdn.microsoft.com/library/dd634410%28v=exchg.80%29.aspx) <br/> |[<span data-ttu-id="446bd-115">Operación GetItem (elemento de calendario)</span><span class="sxs-lookup"><span data-stu-id="446bd-115">GetItem operation (calendar item)</span></span>](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |
    
-## <a name="create-an-appointment-by-using-the-ews-managed-api"></a><span data-ttu-id="c6157-116">Crear una cita mediante el uso de la API administrada de EWS</span><span class="sxs-lookup"><span data-stu-id="c6157-116">Create an appointment by using the EWS Managed API</span></span>
-<span data-ttu-id="c6157-117"><a name="bk_CreateApptEWSMA"> </a></span><span class="sxs-lookup"><span data-stu-id="c6157-117"></span></span>
+## <a name="create-an-appointment-by-using-the-ews-managed-api"></a><span data-ttu-id="446bd-116">Crear una cita mediante la API administrada de EWS</span><span class="sxs-lookup"><span data-stu-id="446bd-116">Create an appointment by using the EWS Managed API</span></span>
+<span data-ttu-id="446bd-117"><a name="bk_CreateApptEWSMA"> </a></span><span class="sxs-lookup"><span data-stu-id="446bd-117"><a name="bk_CreateApptEWSMA"> </a></span></span>
 
-<span data-ttu-id="c6157-118">En el ejemplo de código siguiente se muestra cómo usar el [objeto Appointment](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) para crear una cita, el método [Save](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) para guardar en la carpeta Calendario y el método [Item.Bind](http://msdn.microsoft.com/es-es/library/dd634410%28v=exchg.80%29.aspx) para comprobar que se ha creado la cita.</span><span class="sxs-lookup"><span data-stu-id="c6157-118">The following code example shows how to use the [Appointment object](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) to create an appointment, the [Save](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) method to save it to your calendar folder, and the [Item.Bind](http://msdn.microsoft.com/es-es/library/dd634410%28v=exchg.80%29.aspx) method to verify that the appointment was created.</span></span> 
+<span data-ttu-id="446bd-118">En el siguiente ejemplo de código se muestra cómo usar el [objeto appointment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) para crear una cita, el método [Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) para guardarlo en la carpeta del calendario y el método [Item. bind](https://msdn.microsoft.com/library/dd634410%28v=exchg.80%29.aspx) para comprobar que la cita se ha creado.</span><span class="sxs-lookup"><span data-stu-id="446bd-118">The following code example shows how to use the [Appointment object](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) to create an appointment, the [Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) method to save it to your calendar folder, and the [Item.Bind](https://msdn.microsoft.com/library/dd634410%28v=exchg.80%29.aspx) method to verify that the appointment was created.</span></span> 
   
-<span data-ttu-id="c6157-119">En este ejemplo se supone que se han autenticado a un servidor de Exchange y ha adquirido un objeto [ExchangeService](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) con el nombre de **servicio**.</span><span class="sxs-lookup"><span data-stu-id="c6157-119">This example assumes that you have authenticated to an Exchange server and have acquired an [ExchangeService](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) object named **service**.</span></span> 
+<span data-ttu-id="446bd-119">En este ejemplo se supone que se ha autenticado en un servidor de Exchange y que se ha adquirido un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) denominado **Service**.</span><span class="sxs-lookup"><span data-stu-id="446bd-119">This example assumes that you have authenticated to an Exchange server and have acquired an [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) object named **service**.</span></span> 
   
 ```cs
 Appointment appointment = new Appointment(service);
@@ -50,23 +50,23 @@ Console.WriteLine("\nAppointment created: " + item.Subject + "\n");
 
 ```
 
-<span data-ttu-id="c6157-120">Después de establecer las propiedades en el objeto de cita, guarde la cita a la carpeta Calendario mediante el método de [Guardar](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) del objeto cita.</span><span class="sxs-lookup"><span data-stu-id="c6157-120">After setting the properties on the appointment object, you save the appointment to the calendar folder by using the appointment object's [Save](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) method.</span></span> 
+<span data-ttu-id="446bd-120">Después de establecer las propiedades del objeto appointment, guarde la cita en la carpeta calendario mediante el método [Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) del objeto appointment.</span><span class="sxs-lookup"><span data-stu-id="446bd-120">After setting the properties on the appointment object, you save the appointment to the calendar folder by using the appointment object's [Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) method.</span></span> 
   
-<span data-ttu-id="c6157-121">Tenga en cuenta que en el paso de comprobación, use el elemento de [identificador](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) asociado con la cita para comprobar que la cita se encuentra en la carpeta del calendario.</span><span class="sxs-lookup"><span data-stu-id="c6157-121">Note that in the verification step, you use the item [Id](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) associated with the appointment to verify that the appointment is in the calendar folder.</span></span> <span data-ttu-id="c6157-122">Como procedimiento recomendado, limitar las propiedades devueltas por el servidor para que sólo lo que necesita, en este caso, la cita del asunto.</span><span class="sxs-lookup"><span data-stu-id="c6157-122">As a best practice, limit the properties returned by the server to only what you need — in this case, the appointment's subject.</span></span> 
+<span data-ttu-id="446bd-121">Tenga en cuenta que en el paso de comprobación, use el [identificador](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) de elemento asociado a la cita para comprobar que la cita se encuentra en la carpeta calendario.</span><span class="sxs-lookup"><span data-stu-id="446bd-121">Note that in the verification step, you use the item [Id](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) associated with the appointment to verify that the appointment is in the calendar folder.</span></span> <span data-ttu-id="446bd-122">Como práctica recomendada, limite las propiedades devueltas por el servidor solo a lo que necesita, en este caso, el asunto de la cita.</span><span class="sxs-lookup"><span data-stu-id="446bd-122">As a best practice, limit the properties returned by the server to only what you need — in this case, the appointment's subject.</span></span> 
   
-## <a name="create-an-appointment-by-using-ews"></a><span data-ttu-id="c6157-123">Crear una cita mediante el uso de EWS</span><span class="sxs-lookup"><span data-stu-id="c6157-123">Create an appointment by using EWS</span></span>
-<span data-ttu-id="c6157-124"><a name="bk_CreateApptEWS"> </a></span><span class="sxs-lookup"><span data-stu-id="c6157-124"></span></span>
+## <a name="create-an-appointment-by-using-ews"></a><span data-ttu-id="446bd-123">Crear una cita mediante EWS</span><span class="sxs-lookup"><span data-stu-id="446bd-123">Create an appointment by using EWS</span></span>
+<span data-ttu-id="446bd-124"><a name="bk_CreateApptEWS"> </a></span><span class="sxs-lookup"><span data-stu-id="446bd-124"><a name="bk_CreateApptEWS"> </a></span></span>
 
-<span data-ttu-id="c6157-125">La solicitud y respuesta XML en los ejemplos siguientes corresponden a las llamadas realizadas por el código de la API administrada de EWS en [crear una cita mediante el uso de la API administrada de EWS](#bk_CreateApptEWSMA).</span><span class="sxs-lookup"><span data-stu-id="c6157-125">The request and response XML in the following examples correspond to calls made by the EWS Managed API code in [Create an appointment by using the EWS Managed API](#bk_CreateApptEWSMA).</span></span> <span data-ttu-id="c6157-126">Así, se muestran la solicitud y respuesta XML que comprueba que los elementos de cita se encuentran en la carpeta del calendario.</span><span class="sxs-lookup"><span data-stu-id="c6157-126">The request and response XML that verifies that the appointment items are in the calendar folder are shown as well.</span></span>
+<span data-ttu-id="446bd-125">El XML de solicitud y respuesta de los ejemplos siguientes corresponden a las llamadas realizadas por el código de la API administrada de EWS en [crear una cita mediante la API administrada de EWS](#bk_CreateApptEWSMA).</span><span class="sxs-lookup"><span data-stu-id="446bd-125">The request and response XML in the following examples correspond to calls made by the EWS Managed API code in [Create an appointment by using the EWS Managed API](#bk_CreateApptEWSMA).</span></span> <span data-ttu-id="446bd-126">El XML de solicitud y respuesta que comprueba que los elementos de cita están en la carpeta calendario también se muestran.</span><span class="sxs-lookup"><span data-stu-id="446bd-126">The request and response XML that verifies that the appointment items are in the calendar folder are shown as well.</span></span>
   
-<span data-ttu-id="c6157-127">En el ejemplo siguiente se muestra la solicitud XML al usar la operación [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) para crear una cita.</span><span class="sxs-lookup"><span data-stu-id="c6157-127">The following example shows the request XML when you use the [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) operation to create an appointment.</span></span> 
+<span data-ttu-id="446bd-127">En el ejemplo siguiente se muestra el XML de la solicitud cuando se utiliza la operación [CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) para crear una cita.</span><span class="sxs-lookup"><span data-stu-id="446bd-127">The following example shows the request XML when you use the [CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) operation to create an appointment.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+       xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+       xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -91,24 +91,24 @@ Console.WriteLine("\nAppointment created: " + item.Subject + "\n");
 </soap:Envelope>
 ```
 
- <span data-ttu-id="c6157-128">En el ejemplo siguiente se muestra la respuesta XML que es devuelto por la operación **CreateItem** .</span><span class="sxs-lookup"><span data-stu-id="c6157-128">The following example shows the response XML that is returned by the **CreateItem** operation.</span></span> 
+ <span data-ttu-id="446bd-128">En el ejemplo siguiente se muestra el XML de respuesta que devuelve la operación **CreateItem** .</span><span class="sxs-lookup"><span data-stu-id="446bd-128">The following example shows the response XML that is returned by the **CreateItem** operation.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="c6157-129">Los atributos **ItemId** y **ChangeKey** se han abreviado para mejorar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="c6157-129">The **ItemId** and **ChangeKey** attributes have been shortened for readability.</span></span> 
+> <span data-ttu-id="446bd-129">Los atributos **Itemid** y **changekey** se han abreviado para facilitar su lectura.</span><span class="sxs-lookup"><span data-stu-id="446bd-129">The **ItemId** and **ChangeKey** attributes have been shortened for readability.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="775" MinorBuildNumber="7" Version="V2_4" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -125,17 +125,17 @@ Console.WriteLine("\nAppointment created: " + item.Subject + "\n");
 
 ```
 
-<span data-ttu-id="c6157-130">En el ejemplo siguiente se muestra la solicitud de XML que se genera cuando se usa la operación [GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) para comprobar que la cita se creó.</span><span class="sxs-lookup"><span data-stu-id="c6157-130">The following example shows the request XML that is generated when you use the [GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) operation to verify that the appointment was created.</span></span> 
+<span data-ttu-id="446bd-130">En el ejemplo siguiente se muestra el XML de la solicitud que se genera al usar la operación [GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) para comprobar que la cita se ha creado.</span><span class="sxs-lookup"><span data-stu-id="446bd-130">The following example shows the request XML that is generated when you use the [GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) operation to verify that the appointment was created.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="c6157-131">Los atributos **ItemId** y **ChangeKey** se han abreviado para mejorar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="c6157-131">The **ItemId** and **ChangeKey** attributes have been shortened for readability.</span></span> 
+> <span data-ttu-id="446bd-131">Los atributos **Itemid** y **changekey** se han abreviado para facilitar su lectura.</span><span class="sxs-lookup"><span data-stu-id="446bd-131">The **ItemId** and **ChangeKey** attributes have been shortened for readability.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+       xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+       xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -159,23 +159,23 @@ Console.WriteLine("\nAppointment created: " + item.Subject + "\n");
 
 ```
 
- <span data-ttu-id="c6157-132">En el ejemplo siguiente se muestra la respuesta XML que es devuelto por la operación **GetItem** .</span><span class="sxs-lookup"><span data-stu-id="c6157-132">The following example shows the response XML that is returned by the **GetItem** operation.</span></span> 
+ <span data-ttu-id="446bd-132">En el ejemplo siguiente se muestra el XML de respuesta que devuelve la operación **GetItem** .</span><span class="sxs-lookup"><span data-stu-id="446bd-132">The following example shows the response XML that is returned by the **GetItem** operation.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="c6157-133">Los atributos **ItemId** y **ChangeKey** se han abreviado para mejorar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="c6157-133">The **ItemId** and **ChangeKey** attributes have been shortened for readability.</span></span> 
+> <span data-ttu-id="446bd-133">Los atributos **Itemid** y **changekey** se han abreviado para facilitar su lectura.</span><span class="sxs-lookup"><span data-stu-id="446bd-133">The **ItemId** and **ChangeKey** attributes have been shortened for readability.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="775" MinorBuildNumber="7" Version="V2_4" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -192,12 +192,12 @@ Console.WriteLine("\nAppointment created: " + item.Subject + "\n");
 </s:Envelope>
 ```
 
-## <a name="create-a-meeting-by-using-the-ews-managed-api"></a><span data-ttu-id="c6157-134">Crear una reunión mediante el uso de la API administrada de EWS</span><span class="sxs-lookup"><span data-stu-id="c6157-134">Create a meeting by using the EWS Managed API</span></span>
-<span data-ttu-id="c6157-135"><a name="bk_CreateMtgEWSMA"> </a></span><span class="sxs-lookup"><span data-stu-id="c6157-135"></span></span>
+## <a name="create-a-meeting-by-using-the-ews-managed-api"></a><span data-ttu-id="446bd-134">Crear una reunión mediante la API administrada de EWS</span><span class="sxs-lookup"><span data-stu-id="446bd-134">Create a meeting by using the EWS Managed API</span></span>
+<span data-ttu-id="446bd-135"><a name="bk_CreateMtgEWSMA"> </a></span><span class="sxs-lookup"><span data-stu-id="446bd-135"><a name="bk_CreateMtgEWSMA"> </a></span></span>
 
-<span data-ttu-id="c6157-136">Cuando se crea una reunión, además de guardar un elemento en la carpeta del calendario, normalmente también desea enviar convocatorias de reunión a los asistentes.</span><span class="sxs-lookup"><span data-stu-id="c6157-136">When you create a meeting, in addition to saving an item to the calendar folder, you also typically want to send meeting requests to attendees.</span></span> <span data-ttu-id="c6157-137">En el ejemplo de código siguiente se muestra cómo crear una reunión y enviar convocatorias de reunión.</span><span class="sxs-lookup"><span data-stu-id="c6157-137">The following code example shows how to create a meeting and send meeting requests.</span></span>
+<span data-ttu-id="446bd-136">Al crear una reunión, además de guardar un elemento en la carpeta calendario, también suele ser conveniente enviar las convocatorias de reunión a los asistentes.</span><span class="sxs-lookup"><span data-stu-id="446bd-136">When you create a meeting, in addition to saving an item to the calendar folder, you also typically want to send meeting requests to attendees.</span></span> <span data-ttu-id="446bd-137">En el ejemplo de código siguiente se muestra cómo crear una reunión y enviar convocatorias de reunión.</span><span class="sxs-lookup"><span data-stu-id="446bd-137">The following code example shows how to create a meeting and send meeting requests.</span></span>
   
-<span data-ttu-id="c6157-138">En este ejemplo se supone que se han autenticado a un servidor de Exchange y ha adquirido un objeto [ExchangeService](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) con el nombre de **servicio**.</span><span class="sxs-lookup"><span data-stu-id="c6157-138">This example assumes that you have authenticated to an Exchange server and have acquired an [ExchangeService](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) object named **service**.</span></span> 
+<span data-ttu-id="446bd-138">En este ejemplo se supone que se ha autenticado en un servidor de Exchange y que se ha adquirido un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) denominado **Service**.</span><span class="sxs-lookup"><span data-stu-id="446bd-138">This example assumes that you have authenticated to an Exchange server and have acquired an [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) object named **service**.</span></span> 
   
 ```cs
 Appointment meeting = new Appointment(service);
@@ -219,21 +219,21 @@ Console.WriteLine("\nMeeting created: " + item.Subject + "\n");
 
 ```
 
-<span data-ttu-id="c6157-139">Después de establecer las propiedades en el objeto de [cita](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) , guardar la reunión a la carpeta Calendario mediante el método [Save](http://msdn.microsoft.com/es-es/library/dd635394%28v=exchg.80%29.aspx) .</span><span class="sxs-lookup"><span data-stu-id="c6157-139">After setting the properties on the [Appointment](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) object, save the meeting to your calendar folder by using the [Save](http://msdn.microsoft.com/es-es/library/dd635394%28v=exchg.80%29.aspx) method.</span></span> <span data-ttu-id="c6157-140">Cuando se establece el valor de la enumeración [SendInvitationsMode](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.sendinvitationsmode%28v=exchg.80%29.aspx) a **SendOnlyToAll** o **SendToAllAndSaveCopy**, se envían invitaciones a los asistentes.</span><span class="sxs-lookup"><span data-stu-id="c6157-140">When you set the [SendInvitationsMode](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.sendinvitationsmode%28v=exchg.80%29.aspx) enumeration value to **SendOnlyToAll** or **SendToAllAndSaveCopy**, invitations are sent to attendees.</span></span>
+<span data-ttu-id="446bd-139">Después de establecer las propiedades del objeto [appointment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) , guarde la reunión en la carpeta calendario mediante el método [Save](https://msdn.microsoft.com/library/dd635394%28v=exchg.80%29.aspx) .</span><span class="sxs-lookup"><span data-stu-id="446bd-139">After setting the properties on the [Appointment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) object, save the meeting to your calendar folder by using the [Save](https://msdn.microsoft.com/library/dd635394%28v=exchg.80%29.aspx) method.</span></span> <span data-ttu-id="446bd-140">Cuando se establece el valor de enumeración [SendInvitationsMode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.sendinvitationsmode%28v=exchg.80%29.aspx) en **SendOnlyToAll** o **SendToAllAndSaveCopy**, se envían invitaciones a los asistentes.</span><span class="sxs-lookup"><span data-stu-id="446bd-140">When you set the [SendInvitationsMode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.sendinvitationsmode%28v=exchg.80%29.aspx) enumeration value to **SendOnlyToAll** or **SendToAllAndSaveCopy**, invitations are sent to attendees.</span></span>
   
-<span data-ttu-id="c6157-141">Use el elemento de [identificador](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) asociado con la reunión para comprobar que se guardó en la carpeta Calendario.</span><span class="sxs-lookup"><span data-stu-id="c6157-141">Use the item [Id](http://msdn.microsoft.com/es-es/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) associated with the meeting to verify that it was saved in the calendar folder.</span></span> <span data-ttu-id="c6157-142">Como procedimiento recomendado, limite las propiedades devueltas por el servidor a sólo lo que necesita - en este caso, el asunto de la reunión.</span><span class="sxs-lookup"><span data-stu-id="c6157-142">As a best practice, limit the properties returned by the server to only what you need - in this case, the meeting's subject.</span></span> 
+<span data-ttu-id="446bd-141">Use el [identificador](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) de elemento asociado a la reunión para comprobar que se ha guardado en la carpeta calendario.</span><span class="sxs-lookup"><span data-stu-id="446bd-141">Use the item [Id](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) associated with the meeting to verify that it was saved in the calendar folder.</span></span> <span data-ttu-id="446bd-142">Como práctica recomendada, limite las propiedades devueltas por el servidor solo a lo que necesita, en este caso, el asunto de la reunión.</span><span class="sxs-lookup"><span data-stu-id="446bd-142">As a best practice, limit the properties returned by the server to only what you need - in this case, the meeting's subject.</span></span> 
   
-## <a name="create-a-meeting-by-using-ews"></a><span data-ttu-id="c6157-143">Crear una reunión mediante el uso de EWS</span><span class="sxs-lookup"><span data-stu-id="c6157-143">Create a meeting by using EWS</span></span>
-<span data-ttu-id="c6157-144"><a name="bk_CreateMtgEWS"> </a></span><span class="sxs-lookup"><span data-stu-id="c6157-144"></span></span>
+## <a name="create-a-meeting-by-using-ews"></a><span data-ttu-id="446bd-143">Crear una reunión con EWS</span><span class="sxs-lookup"><span data-stu-id="446bd-143">Create a meeting by using EWS</span></span>
+<span data-ttu-id="446bd-144"><a name="bk_CreateMtgEWS"> </a></span><span class="sxs-lookup"><span data-stu-id="446bd-144"><a name="bk_CreateMtgEWS"> </a></span></span>
 
-<span data-ttu-id="c6157-145">La solicitud y respuesta XML en los ejemplos siguientes corresponden a las llamadas realizadas por el código de la API administrada de EWS en [crear una reunión mediante el uso de la API administrada de EWS](#bk_CreateMtgEWSMA).</span><span class="sxs-lookup"><span data-stu-id="c6157-145">The request and response XML in the following examples correspond to calls made by the EWS Managed API code in [Create a meeting by using the EWS Managed API](#bk_CreateMtgEWSMA).</span></span> <span data-ttu-id="c6157-146">Así, se muestran la solicitud y respuesta XML que comprueba que los elementos de reunión están en la carpeta del calendario.</span><span class="sxs-lookup"><span data-stu-id="c6157-146">The request and response XML that verifies that the meeting items are in the calendar folder are shown as well.</span></span>
+<span data-ttu-id="446bd-145">El XML de solicitud y respuesta de los ejemplos siguientes corresponden a las llamadas realizadas por el código de la API administrada de EWS en [crear una reunión mediante la API administrada de EWS](#bk_CreateMtgEWSMA).</span><span class="sxs-lookup"><span data-stu-id="446bd-145">The request and response XML in the following examples correspond to calls made by the EWS Managed API code in [Create a meeting by using the EWS Managed API](#bk_CreateMtgEWSMA).</span></span> <span data-ttu-id="446bd-146">El XML de solicitud y respuesta que comprueba que los elementos de la reunión están en la carpeta calendario también se muestran.</span><span class="sxs-lookup"><span data-stu-id="446bd-146">The request and response XML that verifies that the meeting items are in the calendar folder are shown as well.</span></span>
   
-<span data-ttu-id="c6157-147">En el ejemplo siguiente se muestra la solicitud XML al usar la operación [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) para crear una reunión.</span><span class="sxs-lookup"><span data-stu-id="c6157-147">The following example shows the request XML when you use the [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) operation to create a meeting.</span></span> 
+<span data-ttu-id="446bd-147">En el ejemplo siguiente se muestra el XML de la solicitud cuando se utiliza la operación [CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) para crear una reunión.</span><span class="sxs-lookup"><span data-stu-id="446bd-147">The following example shows the request XML when you use the [CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) operation to create a meeting.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -277,22 +277,22 @@ Console.WriteLine("\nMeeting created: " + item.Subject + "\n");
 </soap:Envelope>
 ```
 
-<span data-ttu-id="c6157-148">En el ejemplo siguiente se muestra la respuesta XML que es devuelto por la operación **CreateItem** .</span><span class="sxs-lookup"><span data-stu-id="c6157-148">The following example shows the response XML that is returned by the **CreateItem** operation.</span></span> 
+<span data-ttu-id="446bd-148">En el ejemplo siguiente se muestra el XML de respuesta que devuelve la operación **CreateItem** .</span><span class="sxs-lookup"><span data-stu-id="446bd-148">The following example shows the response XML that is returned by the **CreateItem** operation.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="c6157-149">Los atributos **ItemId** y **ChangeKey** se han abreviado para mejorar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="c6157-149">The **ItemId** and **ChangeKey** attributes have been shortened for readability.</span></span> 
+> <span data-ttu-id="446bd-149">Los atributos **Itemid** y **changekey** se han abreviado para facilitar su lectura.</span><span class="sxs-lookup"><span data-stu-id="446bd-149">The **ItemId** and **ChangeKey** attributes have been shortened for readability.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="775" MinorBuildNumber="7" Version="V2_4" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -308,15 +308,15 @@ Console.WriteLine("\nMeeting created: " + item.Subject + "\n");
 </s:Envelope>
 ```
 
-<span data-ttu-id="c6157-150">En el ejemplo siguiente se muestra la solicitud XML generado por la operación [GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) cuando compruebe que se ha creado la reunión.</span><span class="sxs-lookup"><span data-stu-id="c6157-150">The following example shows the request XML that is generated by the [GetItem](http://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) operation when you verify that the meeting was created.</span></span> 
+<span data-ttu-id="446bd-150">En el ejemplo siguiente se muestra el XML de la solicitud que genera la operación [GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) al comprobar que la reunión se ha creado.</span><span class="sxs-lookup"><span data-stu-id="446bd-150">The following example shows the request XML that is generated by the [GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) operation when you verify that the meeting was created.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="c6157-151">Los atributos **ItemId** y **ChangeKey** se han abreviado para mejorar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="c6157-151">The **ItemId** and **ChangeKey** attributes have been shortened for readability.</span></span> 
+> <span data-ttu-id="446bd-151">Los atributos **Itemid** y **changekey** se han abreviado para facilitar su lectura.</span><span class="sxs-lookup"><span data-stu-id="446bd-151">The **ItemId** and **ChangeKey** attributes have been shortened for readability.</span></span> 
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2007_SP1" />
     <t:TimeZoneContext>
@@ -339,22 +339,22 @@ Console.WriteLine("\nMeeting created: " + item.Subject + "\n");
 </soap:Envelope>
 ```
 
-<span data-ttu-id="c6157-152">En el ejemplo siguiente se muestra la respuesta XML que es devuelto por la operación **GetItem** .</span><span class="sxs-lookup"><span data-stu-id="c6157-152">The following example shows the response XML that is returned by the **GetItem** operation.</span></span> 
+<span data-ttu-id="446bd-152">En el ejemplo siguiente se muestra el XML de respuesta que devuelve la operación **GetItem** .</span><span class="sxs-lookup"><span data-stu-id="446bd-152">The following example shows the response XML that is returned by the **GetItem** operation.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="c6157-153">Los atributos **ItemId** y **ChangeKey** se han abreviado para mejorar la legibilidad.</span><span class="sxs-lookup"><span data-stu-id="c6157-153">The **ItemId** and **ChangeKey** attributes have been shortened for readability.</span></span> 
+> <span data-ttu-id="446bd-153">Los atributos **Itemid** y **changekey** se han abreviado para facilitar su lectura.</span><span class="sxs-lookup"><span data-stu-id="446bd-153">The **ItemId** and **ChangeKey** attributes have been shortened for readability.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="775" MinorBuildNumber="7" Version="V2_4" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -371,12 +371,12 @@ Console.WriteLine("\nMeeting created: " + item.Subject + "\n");
 </s:Envelope>
 ```
 
-## <a name="see-also"></a><span data-ttu-id="c6157-154">Vea también</span><span class="sxs-lookup"><span data-stu-id="c6157-154">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="446bd-154">Vea también</span><span class="sxs-lookup"><span data-stu-id="446bd-154">See also</span></span>
 
-- [<span data-ttu-id="c6157-155">Calendarios y EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="c6157-155">Calendars and EWS in Exchange</span></span>](calendars-and-ews-in-exchange.md)  
-- [<span data-ttu-id="c6157-156">Obtener las citas y reuniones con EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="c6157-156">Get appointments and meetings by using EWS in Exchange</span></span>](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)  
-- [<span data-ttu-id="c6157-157">Actualizar las citas y reuniones con EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="c6157-157">Update appointments and meetings by using EWS in Exchange</span></span>](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md) 
-- [<span data-ttu-id="c6157-158">Eliminar las citas y cancelar reuniones mediante el uso de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="c6157-158">Delete appointments and cancel meetings by using EWS in Exchange</span></span>](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md) 
-- [<span data-ttu-id="c6157-159">Proponer una nueva hora de reunión mediante el uso de EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="c6157-159">Propose a new meeting time by using EWS in Exchange</span></span>](how-to-propose-a-new-meeting-time-by-using-ews-in-exchange.md)
+- [<span data-ttu-id="446bd-155">Calendarios y EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="446bd-155">Calendars and EWS in Exchange</span></span>](calendars-and-ews-in-exchange.md)  
+- [<span data-ttu-id="446bd-156">Obtener citas y reuniones mediante EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="446bd-156">Get appointments and meetings by using EWS in Exchange</span></span>](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)  
+- [<span data-ttu-id="446bd-157">Actualizar citas y reuniones mediante EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="446bd-157">Update appointments and meetings by using EWS in Exchange</span></span>](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md) 
+- [<span data-ttu-id="446bd-158">Eliminar citas y cancelar reuniones mediante EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="446bd-158">Delete appointments and cancel meetings by using EWS in Exchange</span></span>](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md) 
+- [<span data-ttu-id="446bd-159">Proponer una nueva hora de reunión mediante EWS en Exchange</span><span class="sxs-lookup"><span data-stu-id="446bd-159">Propose a new meeting time by using EWS in Exchange</span></span>](how-to-propose-a-new-meeting-time-by-using-ews-in-exchange.md)
     
 
