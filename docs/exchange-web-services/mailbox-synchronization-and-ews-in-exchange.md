@@ -1,182 +1,182 @@
 ---
-title: Sincronización de buzón de correo y EWS en Exchange
+title: Sincronización de buzones de correo y EWS en Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: decf1eee-9743-44f3-9333-b3a01af3683e
-description: Obtenga información acerca de cómo funciona la sincronización de buzón de correo cuando se usa EWS para tener acceso a Exchange.
-ms.openlocfilehash: 7bca2f7b754dcceee99e4bc24519f6e4f6423ae7
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Descubra cómo funciona la sincronización de buzones de correo al usar EWS para tener acceso a Exchange.
+localization_priority: Priority
+ms.openlocfilehash: 5dc700c7feb9fce6121a27ee73fc1a58e88e643a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763219"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456263"
 ---
-# <a name="mailbox-synchronization-and-ews-in-exchange"></a>Sincronización de buzón de correo y EWS en Exchange
+# <a name="mailbox-synchronization-and-ews-in-exchange"></a>Sincronización de buzones de correo y EWS en Exchange
 
-Obtenga información acerca de cómo funciona la sincronización de buzón de correo cuando se usa EWS para tener acceso a Exchange.
+Descubra cómo funciona la sincronización de buzones de correo al usar EWS para tener acceso a Exchange.
   
-EWS en Exchange usa dos tipos de sincronización para recuperar contenido de los buzones y los cambios en el contenido del buzón:
+EWS en Exchange usa dos tipos de sincronización para recuperar el contenido de los buzones y los cambios en el contenido del buzón:
   
 - Sincronización de carpetas
     
 - Sincronización de elementos
     
-En este artículo, obtendrá información sobre los tipos de sincronización, cómo funciona la sincronización, modelos de diseño de la sincronización y procedimientos recomendados de sincronización.
+En este artículo, obtendrá información sobre ambos tipos de sincronización, cómo funciona la sincronización, los patrones de diseño de sincronización y los procedimientos recomendados de sincronización.
   
 ## <a name="folder-and-item-synchronization"></a>Sincronización de carpetas y elementos
 <a name="bk_typesofsyncs"> </a>
 
-Sincronización de carpetas sincroniza una estructura de carpetas, o la jerarquía de carpetas. Sincronización de elementos sincroniza los elementos dentro de una carpeta. Cuando se sincronizan los artículos, se debe sincronizar cada carpeta en el buzón de forma independiente. Puede utilizar EWS o la API administrada de EWS en su aplicación para implementar carpeta y sincronización de elemento.
+La sincronización de carpetas sincroniza una estructura de carpetas o una jerarquía de carpetas. La sincronización de elementos sincroniza los elementos dentro de una carpeta. Al sincronizar los elementos, tiene que sincronizar cada carpeta en el buzón de forma independiente. Puede usar EWS o la API administrada de EWS en su aplicación para implementar la sincronización de carpetas y elementos.
   
-**La tabla 1. Las operaciones de EWS y métodos de la API administrada de EWS para sincronizar las carpetas y elementos**
+**Tabla 1. Operaciones de EWS y métodos de API administrada de EWS para sincronizar carpetas y elementos**
 
 |**Operación de EWS**|**Método de la API administrada de EWS**|
 |:-----|:-----|
-|[SyncFolderHierarchy](http://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx) <br/> |[ExchangeService.SyncFolderHierarchy (método)](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderhierarchy%28v=exchg.80%29.aspx) <br/> |
-|[SyncFolderItems](http://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) <br/> |[ExchangeService.SyncFolderItems (método)](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) <br/> |
+|[SyncFolderHierarchy](https://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx) <br/> |[Método ExchangeService. SyncFolderHierarchy](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderhierarchy%28v=exchg.80%29.aspx) <br/> |
+|[SyncFolderItems](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) <br/> |[Método ExchangeService. SyncFolderItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) <br/> |
    
-El ámbito de la sincronización que se produce es diferente dependiendo de si es un inicial o una sincronización continuada, como se indica a continuación:
+El ámbito de la sincronización que se realiza difiere en función de si es una sincronización inicial o en curso, de la siguiente manera:
   
-- Una sincronización inicial sincroniza todas las carpetas o elementos en el servidor al cliente. Después de la sincronización inicial, el cliente tiene un estado de sincronización que almacena para futuras sincronizaciones. El estado de sincronización representa todos los cambios en el servidor que el servidor se comunica al cliente.
+- Una sincronización inicial sincroniza todas las carpetas o elementos del servidor con el cliente. Después de la sincronización inicial, el cliente tiene un estado de sincronización que almacena para futuras sincronizaciones. El estado de sincronización representa todos los cambios en el servidor que el servidor comunicó al cliente.
     
-- Las sincronizaciones del curso sincronización los elementos o carpetas que se han agregado, eliminadas o cambiado desde la última sincronización. El servidor usa el estado de sincronización para calcular los cambios para informar al cliente durante cada uno de los bucles de sincronización en proceso.
+- Las sincronizaciones continuas sincronizan los elementos o carpetas que se han agregado, eliminado o cambiado desde la sincronización anterior. El servidor usa el estado de sincronización para calcular los cambios que se van a notificar al cliente durante cada uno de los bucles de sincronización en curso.
     
-Cada método de sincronización o la operación devuelve una lista de los cambios, no la carpeta real o un mensaje que ha cambiado. Se informa de los cambios realizados en los elementos y las carpetas por medio de los siguientes tipos de cambio:
+Cada operación o método de sincronización devuelve una lista de cambios, no la carpeta o el mensaje real que ha cambiado. Los cambios en los elementos y las carpetas se notifican por medio de los siguientes tipos de cambio:
   
-- Crear: Indica que se debe crear un nuevo elemento o una carpeta en el cliente.
+- Crear: indica que se debe crear un nuevo elemento o una carpeta en el cliente.
     
-- Update: Indica que se debe cambiar una carpeta o elemento en el cliente.
+- Actualizar: indica que se debe cambiar un elemento o una carpeta en el cliente.
     
-- Eliminar: Indica que se debe eliminar una carpeta o elemento en el cliente.
+- Eliminar: indica que un elemento o carpeta debe eliminarse en el cliente.
     
-- ReadStateChange para EWS o ReadFlagChange para la API administrada de EWS: indica que el estado del elemento ha cambiado, ya sea de no leído para leer o lectura a no leídos.
+- ReadStateChange para EWS o ReadFlagChange para la API administrada de EWS: indica que el estado de lectura del elemento ha cambiado, ya sea de no leído a leído o de lectura a no leído.
     
-En Exchange Online, Exchange Online como parte de Office 365 y las versiones de Exchange a partir de con Service Pack 2 de Exchange 2010, los elementos y las carpetas se devuelven en orden del más reciente al más antiguo. En las versiones anteriores de Exchange, se devuelven los elementos y carpetas desde la más antigua a más reciente.
+En Exchange Online, Exchange online como parte de Office 365 y las versiones de Exchange que comienzan con Exchange 2010 SP2, los elementos y las carpetas se devuelven en orden del más reciente al más antiguo. En versiones anteriores de Exchange, los elementos y las carpetas se devuelven de más antiguo a más reciente.
   
 ## <a name="how-does-ews-synchronization-work"></a>¿Cómo funciona la sincronización de EWS?
 <a name="bk_howdoesitwork"> </a>
 
-En resumen, si sincroniza un buzón de correo por primera vez, use el proceso tal como se muestra en la figura 1. Aunque puede usar otros [patrones de diseño de la sincronización](mailbox-synchronization-and-ews-in-exchange.md#bk_syncpatterns), se recomienda este enfoque para aplicaciones escalables.
+En Resumen, si está sincronizando un buzón por primera vez, use el proceso como se muestra en la figura 1. Aunque puede usar otros [patrones de diseño de sincronización](mailbox-synchronization-and-ews-in-exchange.md#bk_syncpatterns), recomendamos este enfoque para las aplicaciones escalables.
   
-**En la figura 1. Modelo de diseño de la sincronización inicial**
+**Figura 1. Modelo de diseño de sincronización inicial**
 
 ![Ilustración que muestra el patrón de diseño de la sincronización inicial. El cliente llama a SyncFolderHierarchy y Load o GetItem para obtener las carpetas y después, llama a SyncFolderItems y LoadPropertiesForItems o GetItem para obtener los elementos de cada carpeta.](media/Exchange2013_SyncInitial.png)
   
-Si utiliza un estado de sincronización existente en el cliente para sincronizar un buzón de correo, se recomienda implementar el modelo de diseño tal como se muestra en la figura 2. 
+Si está usando un estado de sincronización existente en el cliente para sincronizar un buzón de correo, le recomendamos que implemente el patrón de diseño como se muestra en la figura 2. 
   
-**La figura 2. Modelo de diseño de la sincronización actual**
+**Figura 2. Modelo de diseño de sincronización continua**
 
 ![Ilustración que muestra el patrón de diseño de la sincronización continua. Un cliente recibe una notificación y llama a SyncFolderHierarchy o SyncFolderItems, obtiene las propiedades y después, actualiza el cliente o simplemente actualiza la marca de lectura en el cliente.](media/Exchange2013_Sync_Ongoing.png)
   
-## <a name="synchronization-design-patterns"></a>Modelos de diseño de la sincronización
+## <a name="synchronization-design-patterns"></a>Patrones de diseño de sincronización
 <a name="bk_syncpatterns"> </a>
 
-Puede usar uno de los dos modelos de diseño de sincronización en la aplicación para mantener actualizados los buzones de correo: sincronización de notificación, o el método de sincronización.
+Puede usar uno de los dos patrones de diseño de sincronización en su aplicación para mantener sus buzones actualizados: sincronización basada en notificaciones o el método de sincronización.
   
-Sincronización basada en notificación, tal como se ilustra en [la figura 2](mailbox-synchronization-and-ews-in-exchange.md#bk_howdoesitwork), se basa en notificaciones para el cliente para realizar una llamada a los métodos de la API administrada de EWS [SyncFolderItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) o [SyncFolderHierarchy](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderhierarchy%28v=exchg.80%29.aspx) o la dirección URL de EWS [SyncFolderHierarchy de alerta ](http://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx)o [SyncFolderItems](http://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) operaciones. Por lo general se recomienda este tipo de sincronización para aplicaciones escalables, pero podría no ser el mejor enfoque para todos los usuarios. Sincronización de notificación tiene la ventaja de la siguiente: 
+La sincronización basada en notificaciones, tal como se muestra en la [figura 2](mailbox-synchronization-and-ews-in-exchange.md#bk_howdoesitwork), se basa en notificaciones para avisar al cliente de que realice una llamada a los métodos [SyncFolderItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx) o [SyncFolderHierarchy](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderhierarchy%28v=exchg.80%29.aspx) de la API administrada de EWS o a las operaciones [SyncFolderHierarchy](https://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx) o [SyncFolderItems](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx) de EWS. Este tipo de sincronización se suele recomendar para aplicaciones escalables, pero es posible que no sea el mejor enfoque para todos los usuarios. La sincronización basada en notificaciones tiene la siguiente ventaja: 
   
-- Las notificaciones están optimizadas para reducir las llamadas a la base de datos de Exchange de back-end. Las suscripciones y las colas de evento son administradas por el servidor de buzones (o el servidor de acceso de cliente de Exchange 2010 y Exchange 2007); Sin embargo, la administración de los eventos y las suscripciones utiliza menos recursos que la alternativa, que es más frecuentes de las llamadas de sincronización a la base de datos de Exchange. Además, Exchange tiene específicos de [las directivas de limitación](ews-throttling-in-exchange.md) para que las notificaciones y suscripciones proteger el consumo de recursos. 
+- Las notificaciones están optimizadas para reducir las llamadas a la base de datos de Exchange back-end. Las colas de eventos y las suscripciones se administran mediante el servidor de buzones (o el servidor de acceso de cliente de Exchange 2010 y Exchange 2007); sin embargo, la administración de los eventos y las suscripciones utiliza menos recursos que la alternativa, lo que hace llamadas de sincronización más frecuentes a la base de datos de Exchange. Además, Exchange tiene directivas de [limitación](ews-throttling-in-exchange.md) específicas para notificaciones y suscripciones, para proteger el consumo de recursos. 
     
-Sin embargo, también hay inconvenientes usa la sincronización de notificación:
+Sin embargo, también hay algunas desventajas en el uso de la sincronización basada en notificaciones:
   
-- Las notificaciones son ruidosas debido a que la mayoría de los escenarios implica varias notificaciones de la intención de un usuario. Esto es especialmente así de la carpeta Calendario. Por ejemplo, cuando se recibe una convocatoria de reunión única, se crean varias notificaciones de elemento y carpeta, incluida una notificación para crear el elemento y otro para modificar el elemento. Una forma de mitigar este inconveniente es crear un retraso de unos segundos en la llamada de [carga](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.serviceobject.load%28v=exchg.80%29.aspx), [LoadPropertiesForItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.loadpropertiesforitems%28v=exchg.80%29.aspx), [GetItem](http://msdn.microsoft.com/en-us/library/exchange/aa565934%28v=exchg.150%29.aspx.aspx)o [GetFolder](http://msdn.microsoft.com/en-us/library/exchange/aa580274%28v=exchg.150%29.aspx.aspx) . En el caso de una convocatoria de reunión, si se han realizado las llamadas a la operación **GetItem** inmediatamente, puede que tenga una llamada para crear el elemento y otro para modificar el elemento. En su lugar, retrasar la llamada, puede llamar a la operación **GetItem** una vez y obtener los cambios que abarcan la creación y la modificación del elemento al mismo tiempo. 
+- Las notificaciones tienen ruido porque la mayoría de los escenarios implican varias notificaciones de un propósito del usuario. Esto es especialmente cierto en la carpeta calendario. Por ejemplo, cuando se recibe una sola convocatoria de reunión, se crean varias notificaciones de elementos y carpetas, incluida una notificación para crear el elemento y otra para modificarlo. Una forma de mitigar este inconveniente es crear un retraso de unos segundos en la llamada [Load](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceobject.load%28v=exchg.80%29.aspx), [LoadPropertiesForItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.loadpropertiesforitems%28v=exchg.80%29.aspx), [GetItem](https://msdn.microsoft.com/library/exchange/aa565934%28v=exchg.150%29.aspx.aspx)o [GetFolder](https://msdn.microsoft.com/library/exchange/aa580274%28v=exchg.150%29.aspx.aspx) . En el caso de una convocatoria de reunión, si ha realizado llamadas a la operación **GetItem** inmediatamente, es posible que tenga una llamada para crear el elemento y otra para modificar el elemento. En su lugar, al retrasar la llamada, puede llamar a la operación **GetItem** una vez y obtener los cambios que abarcan la creación y la modificación del elemento al mismo tiempo. 
     
-- Las notificaciones se ponen en cola en el servidor de buzón de correo y las suscripciones se guardan en el servidor de buzón de correo. Si el servidor de buzones que administra la suscripción no está disponible, se pierden cualquier nuevas notificaciones, no sincronizar su buzón de correo y tendrá que volver a suscribirse a las notificaciones.
+- Las notificaciones se ponen en cola en el servidor de buzones de correo y las suscripciones se guardan en el servidor de buzones. Si el servidor de buzones de correo que administra la suscripción no está disponible, perderá las notificaciones nuevas, el buzón no se sincronizará y tendrá que volver a suscribirse a las notificaciones.
     
-- Debe planear las estrategias de mitigación en caso de que se producirá un error en las notificaciones. De este modo, el segundo enfoque, el modelo de diseño solo sincronización, es más resistente que la sincronización basada en notificación, debido a que sólo requiere que el cliente de mantener el estado de sincronización: no hay ningún problema con afinidad con el servidor de buzones administración de la suscripción.
+- Deberá planear las estrategias de mitigación en el caso de que se produzca un error en las notificaciones. De esta forma, el segundo enfoque, el patrón de diseño de solo sincronización, es más resistente que la sincronización basada en notificaciones, ya que solo requiere que el cliente mantenga el estado de sincronización; no hay problemas con la afinidad con el servidor de buzones de correo que administra la suscripción.
     
-Si se implementa como se recomienda, el modelo de diseño basada en notificación de suscripción se basa en: 
+Si se implementa como se recomienda, el patrón de diseño de la suscripción basada en notificaciones se basa en: 
   
-- Notificaciones para determinar *cuándo* ha cambiado los datos. 
+- Notificaciones para determinar *Cuándo* se modificaron los datos. 
     
-- La API administrada de EWS **SyncFolderHierarchy** o métodos **SyncFolderItems** , o el EWS **SyncFolderHierarchy** **SyncFolderItems** operaciones para determinar *qué* cambiar o, la optimización del número de eventos de sincronización devueltos. ¿Era un nuevo elemento crea, actualiza o elimina? Eso es todo lo que necesita saber de estos métodos, no se basan en ellos para la lista de propiedades de los cambios. (No se hace una llamada de **LoadPropertiesForItems** en todos los elementos o carpetas devueltos o **GetItem** ). 
+- Los métodos **SyncFolderHierarchy** o **SYNCFOLDERITEMS** de la API administrada de EWS, o las operaciones **SyncFolderHierarchy** o **SyncFolderItems** de EWS para determinar *lo que* ha cambiado, optimizando el número de eventos de sincronización devueltos. ¿Se ha creado, actualizado o eliminado un nuevo elemento? Esto es todo lo que necesita saber de estos métodos, no confíe en ellos para la lista de propiedades de los cambios. (No haga una llamada a **GetItem** o **LoadPropertiesForItems** en todos los elementos o carpetas devueltos). 
     
-- Uso de los métodos de **carga** o **LoadPropertiesForItems** en la API administrada de EWS, o la operación de EWS **GetItem** para determinar *cómo* los datos ha cambiado y para recuperar las propiedades desde el servidor según sea necesario, organizar solicitudes por lotes en función de en la cantidad de datos que se devolverán. Esto es seguido de una comparación de las propiedades en el cliente y los acaba devueltos desde el servidor y, finalmente, la creación, eliminación o modificación del elemento o la carpeta en el cliente. 
+- Usar los métodos **Load** o **LOADPROPERTIESFORITEMS** en la API administrada de EWS, o la operación de **GetItem** de EWS para determinar *Cómo* los datos cambiaron y recuperar propiedades del servidor según sea necesario, organizando las solicitudes por lotes en función de la cantidad de datos que se devolverán. Esto va seguido de una comparación de las propiedades en el cliente y las que se devuelven desde el servidor, y en última instancia, la creación, eliminación o modificación del elemento o carpeta en el cliente. 
     
-El método de sincronización depende completamente los métodos **SyncFolderItems** y la API administrada de EWS **SyncFolderHierarchy** , o el **SyncFolderHierarchy** o **SyncFolderItems** EWS operaciones, que puede llamar a ya sea continuamente, o como un evento con hora. Existen ventajas e inconvenientes de esta opción también. El método de sincronización es más resistente debido a que el estado de sincronización se almacena en el cliente en el nivel de buzón de correo y una relación única entre el estado de sincronización y cualquier el servidor de buzón de correo que se mantiene la suscripción de notificación no es necesario. El enfoque de sincronización puede sobrevivir a un buzón de correo de conmutación por error debido a su independencia desde el servidor de buzón de correo. Sin embargo, el método de sincronización aumenta la latencia para el usuario debido a que los elementos se sincronizan de forma intermitente o programada, no en tiempo de real cuando se reciben elementos. Este enfoque también es más costosa, debido a que está realizando llamadas a la base de datos de Exchange cuando es posible que no ha habido cambios. 
+El método de sincronización solo depende completamente de los métodos de la API administrada de EWS **SyncFolderItems** y **SyncFolderHierarchy** , o de las operaciones de EWS **SyncFolderHierarchy** o **SyncFolderItems** , a las que puede llamar de forma continua o como un evento con hora. Esta opción también tiene ventajas y desventajas. El método de sincronización es más resistente porque el estado de sincronización se almacena en el cliente en el nivel de buzón y una relación única entre el estado de sincronización y cualquier servidor de buzones de correo que mantiene la suscripción de notificación no es necesaria. El método de sincronización puede sobrevivir a una conmutación por error de buzón debido a su independencia del servidor de buzones de correo. Sin embargo, el enfoque de sincronización aumenta la latencia del usuario porque los elementos se sincronizan una vez que se realiza un período de tiempo o de forma intermitente (no en tiempo real al recibir los elementos). Este enfoque también es más costoso, porque realiza llamadas a la base de datos de Exchange cuando es posible que no se hayan producido cambios. 
   
 ## <a name="synchronization-best-practices"></a>Procedimientos recomendados de sincronización
 <a name="bk_bestpractices"> </a>
 
-Para las aplicaciones altamente escalables, se recomienda que se aplican los siguientes procedimientos recomendados para sincronizar los buzones en su aplicación:
+Para las aplicaciones altamente escalables, le recomendamos que aplique los siguientes procedimientos recomendados para sincronizar los buzones de la aplicación:
   
-- Cuando una llamada al método de la API administrada de EWS **SyncFolderItems** o **SyncFolderHierarchy** usa el valor de _IdOnly_ para el parámetro _propertySet_ , o cuando se usa la dirección URL de EWS **SyncFolderHierarchy** o **SyncFolderItems** operaciones de usar el valor de **IdOnly** para el valor de [BaseShape](http://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) para reducir las llamadas a la base de datos de Exchange. Llamar a las propiedades más solicitudes en el conjunto de propiedades de la **SyncFolderItems** o **SyncFolderHierarchy** , el back-end más se crean las llamadas. Se realiza una llamada RPC nuevo para cada valor de la propiedad solicitada, mientras que se realiza sólo una llamada RPC para recuperar todos los el **ItemID** para una solicitud - independientemente del lugar en el número de resultados para el informe. Por lo que produce una solicitud de **IdOnly** en llamada de una base de datos, mientras que los resultados de una solicitud de contenedor de propiedad para el asunto y el remitente en tres llamadas de base de datos: uno para el **asunto**, uno para el **remitente**y otro para el **ItemId**.
+- Al llamar al método **SyncFolderItems** o **SYNCFOLDERHIERARCHY** de la API administrada de EWS, use el valor _IdOnly_ para el parámetro _PropertySet_ , o cuando use las operaciones **SyncFolderHierarchy** o **SyncFolderItems** de EWS, use el valor **IdOnly** para el valor [BaseShape](https://msdn.microsoft.com/library/42c04f3b-abaa-4197-a3d6-d21677ffb1c0%28Office.15%29.aspx) para reducir las llamadas a la base de datos de Exchange. Cuanto más propiedades solicite en el conjunto de propiedades de la llamada **SyncFolderItems** o **SyncFolderHierarchy** , se crearán más llamadas de back-end. Se realiza una nueva llamada RPC para cada valor de propiedad solicitado, mientras que solo se realiza una llamada RPC para recuperar todos los **ItemIds** de la solicitud, independientemente del número de resultados que se van a notificar. Por lo tanto, una solicitud de **IdOnly** da como resultado una llamada de base de datos, mientras que una solicitud de contenedor de propiedades para el asunto y el remitente da como resultado tres llamadas a la base de datos: una para el **asunto**, otra para el **remitente**y otra para **Itemid**.
     
-- No llame a los métodos de la API administrada de EWS **carga** o **LoadPropertiesForItems** , o el EWS **GetItem** **GetFolder** operaciones o, en todos los elementos de una respuesta de sincronización. En su lugar, analizar los resultados; like se busca los cambios que no requieren todas las propiedades que se recuperarán, lea los cambios de estado. Si una respuesta incluye un cambio de estado de lectura, simplemente actualice la marca en el cliente y haya terminado; no es necesario para obtener todas las propiedades del elemento. Y asegúrese de que no duplica el esfuerzo mediante la realización de los cambios que se ha originado desde el mismo cliente. Por ejemplo, si la respuesta de sincronización incluye la eliminación de un elemento y la eliminación ha ocurrido en el cliente local, no es necesario eliminar el mensaje de nuevo u obtener todas las propiedades para ese elemento. 
+- No llame a los métodos LoadPropertiesForItems **Load** o **LoadPropertiesForItems** de la API administrada de EWS, ni a las operaciones **GetItem** o **GetFolder** de EWS, en cada elemento de una respuesta de sincronización. En su lugar, analice los resultados; Busque cambios que no requieran que se recuperen todas las propiedades, como los cambios de estado de lectura. Si una respuesta incluye un cambio de estado de lectura, simplemente actualice la marca en el cliente y ya ha terminado; no es necesario obtener todas las propiedades del elemento. Y asegúrese de no duplicar el esfuerzo realizando cambios que provienen del mismo cliente. Por ejemplo, si la respuesta de sincronización incluye la eliminación de un elemento y la eliminación se produjo en el cliente local, no es necesario volver a eliminar el mensaje ni obtener todas las propiedades de ese elemento. 
     
-- Evitar la introducción reducidas, haciendo lo siguiente:
+- Para evitar obtener un límite, haga lo siguiente:
     
-  - Cuando se llama al método de la API administrada de EWS **LoadPropertiesForItems** o la operación de EWS **GetItem** para obtener los elementos de un lote, no por lotes demasiados elementos en la solicitud; de lo contrario, es posible que obtenga [reducidas](ews-throttling-in-exchange.md). Se recomienda que incluya 10 elementos por lote.
+  - Cuando llame al método **LoadPropertiesForItems** de la API administrada de EWS o a la operación de **GetItem** de EWS para obtener los elementos de un lote, no se deben procesar demasiados elementos en la solicitud; de lo contrario, puede obtener una [limitación](ews-throttling-in-exchange.md). Se recomienda incluir 10 elementos por lote.
     
-  - No se realiza demasiadas solicitudes en muy poco tiempo. Esto se también provocar limitación y aumentar el tiempo de respuesta, en lugar de acortarlo. 
+  - No realice demasiadas solicitudes en un momento muy corto. Esto también provocará una limitación y aumentará el tiempo de respuesta, en lugar de acortarlo. 
     
-  - Si el procesamiento por lotes de elementos, por lotes de todos los elementos con los mismos valores para los atributos **Id** y **ChangeKey** del elemento [FolderId](http://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) . 
+  - Si está procesando elementos por lotes, lote todos los elementos con los mismos valores para los atributos **ID** y **changekey** del elemento [FolderId](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) . 
     
-  - Si limita a obtener, dejar de enviar las solicitudes. Volver a enviar solicitudes va a prolongar los esfuerzos de recuperación. En su lugar, espere a que la devolución de tiempo a punto de caducar y, a continuación, intente volver a enviar las solicitudes de sincronización.
+  - Si obtiene limitaciones, detenga el envío de solicitudes. Las solicitudes que se reenvíen prolongarán el esfuerzo de recuperación. En su lugar, espere a que expire el tiempo de espera y, a continuación, intente enviar de nuevo las solicitudes de sincronización.
     
-- Según el tipo de [evento de notificación](notification-subscriptions-mailbox-events-and-ews-in-exchange.md#bk_eventtypes) recibido: 
+- Según el tipo de evento de [notificación](notification-subscriptions-mailbox-events-and-ews-in-exchange.md#bk_eventtypes) que se haya recibido: 
     
-  - Para los eventos **NewMail** o **modificado** , llame al método de la API administrada de EWS **SyncFolderItems** o la operación de EWS **SyncFolderItems** debido a que las notificaciones no proporcionan un **ChangeKey**y el estado de lectura no llame a las notificaciones cambios.
+  - Para los eventos de **NewMail** o **Modified** , llame al método **SyncFolderItems** de la API administrada de EWS o a la operación de **SyncFolderItems** de EWS porque las notificaciones no proporcionan un **changekey**y las notificaciones no llaman a los cambios de estado de lectura.
     
-  - Para los eventos de **Deleted** , si la suscripción de notificación estaba activa antes de la sincronización anterior, simplemente elimine el evento localmente. No es necesario llamar al método de la API administrada de EWS **SyncFolderItems** o la operación de EWS **SyncFolderItems** inmediatamente después de la eliminación. 
+  - Para los eventos **eliminados** , si la suscripción de notificación estaba activa antes de la sincronización anterior, elimine el evento localmente. No es necesario llamar al método **SyncFolderItems** de la API administrada de EWS o a la operación **SyncFolderItems** de EWS inmediatamente después de la eliminación. 
     
-  - Si se produjo un evento **modificado** por un cambio de estado de lectura, no llame al método de la API administrada de EWS **LoadPropertiesForItems** o la operación de EWS **GetItem** , sólo debe cambiar la marca en el elemento. 
+  - Si un evento **modificado** fue causado por un cambio de estado de lectura, no llame al método **LOADPROPERTIESFORITEMS** de la API administrada de EWS o a la operación **GetItem** de EWS; solo tiene que cambiar la marca en el elemento. 
     
-- Cuando se sincroniza los datos del calendario, realice lo siguiente:
+- Al sincronizar datos de calendario, realice lo siguiente:
     
-  - Usa un enfoque similar a la sincronización de notificación. Debido a que **SyncFolderItem** no incluye ninguna lógica de calendario, use el método de la API administrada de EWS [FindAppointments](http://msdn.microsoft.com/en-us/library/dd633767%28v=exchg.80%29.aspx) , o la [operación FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) EWS con el elemento [CalendarView](http://msdn.microsoft.com/library/a4a953b8-0710-416c-95ef-59e51eba9982%28Office.15%29.aspx) para ver citas entre dos fechas y, a continuación, Llame al método de la API administrada de EWS **LoadPropertiesForItems** , o la operación de EWS **GetItem** para recuperar las propiedades de elemento para el elemento de calendario. 
+  - Use un método similar a la sincronización basada en notificaciones. Dado que **SyncFolderItem** no incluye ninguna lógica de calendario, use el método [FINDAPPOINTMENTS](https://msdn.microsoft.com/library/dd633767%28v=exchg.80%29.aspx) de la API administrada EWS o la [operación de FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) de EWS con el elemento [CalendarView](https://msdn.microsoft.com/library/a4a953b8-0710-416c-95ef-59e51eba9982%28Office.15%29.aspx) para ver las citas entre dos fechas y, a continuación, llame al método **LoadPropertiesForItems** de la API administrada EWS o a la operación de **GetItem** de EWS para recuperar las propiedades de elemento del elemento de calendario. 
     
-  - No hay sondeo utilizando el método de la API administrada de EWS **FindAppointments** , o la operación de EWS **FindItem** con un elemento **CalendarView** . 
+  - No sondee con el método **FindAppointments** de la API administrada de EWS ni la operación **FindItem** de EWS con un elemento **CalendarView** . 
     
-- Al sincronizar las carpetas de búsqueda:
+- Al sincronizar carpetas de búsqueda:
     
-  - Usa un enfoque similar a la sincronización de notificación. 
+  - Use un método similar a la sincronización basada en notificaciones. 
     
-  - Usar notificaciones para determinar cuando cambian los datos.
+  - Usar notificaciones para determinar cuándo cambian los datos.
     
-  - Debido a que no se puede usar **SyncFolderItem** en una carpeta de búsqueda, use una operación de EWS **FindItem** o método de API administrada de EWS [FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) ordenado y paginado con el conjunto de elemento [FractionalPageItemView](http://msdn.microsoft.com/library/4111afec-35e7-4c6f-b291-9bbba603f633%28Office.15%29.aspx) y [SortOrder](http://msdn.microsoft.com/library/c2413f0b-8c03-46ae-9990-13338b3c53a6%28Office.15%29.aspx) , para determinar ¿Qué ha cambiado. 
+  - Como no puede usar **SyncFolderItem** en una carpeta de búsqueda, use un método [FINDITEMS](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) de la API administrada de EWS ordenado y paginado, o una operación de **FindItem** de EWS con el conjunto de elementos [FractionalPageItemView](https://msdn.microsoft.com/library/4111afec-35e7-4c6f-b291-9bbba603f633%28Office.15%29.aspx) y [SortOrder](https://msdn.microsoft.com/library/c2413f0b-8c03-46ae-9990-13338b3c53a6%28Office.15%29.aspx) , para determinar qué ha cambiado. 
     
-  - Utilice el método de la API administrada de EWS **LoadPropertiesForItems** o la operación de EWS **GetItem** para recuperar datos. 
+  - Use el método **LoadPropertiesForItems** de la API administrada de EWS o la operación de **GetItem** de EWS para recuperar datos. 
     
 ## <a name="filtered-synchronization"></a>Sincronización filtrada
 <a name="bk_filteredsync"> </a>
 
-El método de la API administrada de EWS **SyncFolderItems** y la operación de EWS **SyncFolderItems** permiten omitir elementos específicos, según sus ItemID, estableciendo el parámetro _ignoreItemIds_ en la API administrada de EWS o el [Omitir](http://msdn.microsoft.com/library/7789eec5-ceec-43f2-84d5-d0d15b734076%28Office.15%29.aspx) elemento de EWS. Esto es ideal cuando, por ejemplo, las personas empiezan a responder a un mensaje de correo electrónico enviado a todos los usuarios de la compañía todos los. 
+El método **SyncFolderItems** de la API administrada de EWS y la operación **SyncFolderItems** de EWS permiten omitir elementos específicos en función de su ItemIds, estableciendo el parámetro _ignoreItemIds_ en la API administrada de EWS o en el elemento [Ignore](https://msdn.microsoft.com/library/7789eec5-ceec-43f2-84d5-d0d15b734076%28Office.15%29.aspx) de EWS. Esto es ideal cuando, por ejemplo, los individuos comienzan a responder a todos a un mensaje de correo electrónico que se envía a todos los usuarios de la compañía. 
   
-Puede que se pregunte, ¿puedo filtrar notificaciones de mi (y, por tanto, sólo se desencadenan sincronización) si cambian propiedades específicas? Aunque parece razonable, debido a que las suscripciones de notificación se basan en el tipo de cambio (crear, actualizar, eliminar), y no la propiedad que se está actualizando, no se puede filtrar las notificaciones de esta forma. En su lugar, puede hacer lo siguiente:
+Puede que se pregunte si se filtran las notificaciones (y, por lo tanto, solo la sincronización) si cambian las propiedades específicas. Aunque parece razonable, porque las suscripciones de notificación se basan en el tipo de cambio (crear, actualizar, eliminar) y no en la propiedad que se está actualizando, no se pueden filtrar las notificaciones de esta manera. En su lugar, puede hacer lo siguiente:
   
-- Usar el modelo de diseño basada en notificación de suscripción.
+- Use el modelo de diseño de la suscripción basada en notificaciones.
     
-- Llamar a la API administrada de EWS **SyncFolderItems** y **SyncFolderHierarchy** métodos repetidamente con el parámetro de _propertySet_ establecido en _IdOnly_ para que su estado de sincronización actual. O si el uso de EWS, llame a las operaciones de **SyncFolderItems** y **SyncFolderHierarchy** repetidamente con el valor de **BaseShape** establecido en **IdOnly**. 
+- Llame repetidamente a los métodos **SyncFolderItems** y **SYNCFOLDERHIERARCHY** de la API administrada de EWS con el parámetro _propertySet_ establecido en _IdOnly_ para que su estado de sincronización sea actual. O bien, si usa EWS, llame repetidamente a las operaciones **SyncFolderHierarchy** y **SyncFolderItems** con el valor **BaseShape** establecido en **IdOnly**. 
     
-- Descartar la respuesta (no analizarlo o hacer cualquier propiedad comparaciones).
+- Descartar la respuesta (no la analiza ni realiza ninguna comparación de propiedades).
     
-- Use el método de la API administrada de EWS **FindItems** o la operación de EWS **FindItem** y ordenar y página para rellenar automáticamente los elementos en el ámbito filtrado que le interesa. 
+- Use el método **FindItems** de la API administrada de EWS o la operación **FindItem** de EWS y Sort and Page para rellenar previamente los elementos en el ámbito filtrado que le interesa. 
     
-- Use su estado de sincronización para seguir llame al método de la API administrada de EWS **SyncFolderItems** o la operación de EWS **SyncFolderItems** , pero sólo supervisar los cambios en el conjunto de elementos filtrados. Si se crean nuevos elementos, debe ver si esos elementos están dentro de su ámbito filtrado. 
+- Use el estado de sincronización para seguir llamando al método **SyncFolderItems** de la API administrada de EWS o a la operación de **SyncFolderItems** de EWS, pero solo supervise los cambios en el conjunto de elementos filtrados. Si se crean nuevos elementos, tendrá que ver si esos nuevos elementos están dentro del ámbito filtrado. 
     
 ## <a name="in-this-section"></a>En esta sección
 <a name="bk_filteredsync"> </a>
 
-- [Sincronizar carpetas mediante el uso de EWS en Exchange](how-to-synchronize-folders-by-using-ews-in-exchange.md)
+- [Sincronización de carpetas mediante EWS en Exchange](how-to-synchronize-folders-by-using-ews-in-exchange.md)
     
-- [Sincronizar elementos mediante el uso de EWS en Exchange](how-to-synchronize-items-by-using-ews-in-exchange.md)
+- [Sincronizar elementos mediante EWS en Exchange](how-to-synchronize-items-by-using-ews-in-exchange.md)
     
-- [Tratamiento de errores relacionados con la sincronización en EWS en Exchange](handling-synchronization-related-errors-in-ews-in-exchange.md)
+- [Controlar errores relacionados con la sincronización en EWS en Exchange](handling-synchronization-related-errors-in-ews-in-exchange.md)
     
 ## <a name="see-also"></a>Vea también
 
 
-- [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
+- [Desarrollar clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
     
-- [SyncFolderItems (método)](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx)
+- [Método SyncFolderItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderitems%28v=exchg.80%29.aspx)
     
-- [SyncFolderHierarchy (método)](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderhierarchy%28v=exchg.80%29.aspx)
+- [Método SyncFolderHierarchy](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.syncfolderhierarchy%28v=exchg.80%29.aspx)
     
-- [Operación SyncFolderHierarchy](http://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx)
+- [Operación SyncFolderHierarchy](https://msdn.microsoft.com/library/b31916b1-bc6c-4451-a475-b7c5417f752d%28Office.15%29.aspx)
     
-- [Operación SyncFolderItems](http://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx)
+- [Operación SyncFolderItems](https://msdn.microsoft.com/library/7f0de089-8876-47ec-a871-df118ceae75d%28Office.15%29.aspx)
     
 

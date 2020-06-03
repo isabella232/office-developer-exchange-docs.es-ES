@@ -1,94 +1,93 @@
 ---
-title: EWS limitación en Exchange
+title: Limitación de EWS en Exchange
 manager: sethgros
-ms.date: 09/17/2015
+ms.date: 05/10/2019
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: b4fff4c9-c625-4d2a-9d14-bb28a5da5baf
-description: Obtenga información acerca de las directivas de limitación que afectan a EWS cuando se usa Exchange.
-ms.openlocfilehash: 64393c173a6fc60cd4be969e8c7457d5b0109713
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Obtenga información sobre las directivas de limitación que afectan a EWS cuando se usa Exchange.
+localization_priority: Priority
+ms.openlocfilehash: 0c6ac49629ad4cdb4419cc8638d8e60ecb6509d6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354018"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455404"
 ---
-# <a name="ews-throttling-in-exchange"></a>EWS limitación en Exchange
+# <a name="ews-throttling-in-exchange"></a>Limitación de EWS en Exchange
 
-Obtenga información acerca de las directivas de limitación que afectan a EWS cuando se usa Exchange.
-  
-**Proporcionado por:** Escalas de Glen; Michael Mainer, Microsoft Corporation 
-  
-El artículo proporciona información acerca de EWS limitación en Exchange Online, Exchange Online como parte de Office 365, locales y en las versiones de Exchange a partir de Exchange 2010. Limitación en Exchange ayuda a garantizar la confiabilidad del servidor y el tiempo de actividad si limita la cantidad de recursos de servidor que puede consumir un solo usuario o una aplicación. Limitación de peticiones es una respuesta reactiva para uso excesivo de recursos del sistema que pueden afectar a la funcionalidad y confiabilidad de los servicios. Exchange supervisa constantemente el estado crítico de recursos de infraestructura, como bases de datos de buzón de correo. Cuando se detectan los factores de carga elevada que degradar el rendimiento de estos recursos, conexiones de EWS se aceleran de forma proporcional en función de la cantidad que cada autor de la llamada ha contribuido a esta condición de carga elevada. El resultado es que un usuario puede estar dentro de su límite de limitación de peticiones y sigue teniendo una ralentización hasta que el estado del recurso es nuevamente en los niveles operativos.
-  
-Cada protocolo de acceso de cliente de Exchange, incluidos EWS, tiene una directiva de limitación. Al diseñar las aplicaciones que usan EWS, es importante tener en cuenta para que las directivas de limitación de peticiones, para ayudar a garantizar la confiabilidad de la aplicación y el estado de su servidor de Exchange. En este artículo identifica los límites de servicio y diferentes directivas de limitación de EWS, si identificación de Exchange Online o versiones de Exchange local empezando con Exchange Server 2010. Según corresponda, en este artículo se identifica las diferencias en la limitación de las directivas de diferentes versiones de Exchange.
-  
+Obtenga información sobre las directivas de limitación que afectan a EWS cuando se usa Exchange.
+
+**Proporcionado por:** Escalas de Glen; Michael Mainer, Microsoft Corporation
+
+En este artículo se proporciona información sobre la limitación de EWS en Exchange Online, Exchange online como parte de Office 365 y las versiones locales de Exchange a partir de Exchange 2010. La limitación en Exchange ayuda a garantizar la confiabilidad y el tiempo de actividad del servidor limitando la cantidad de recursos de servidor que un solo usuario o aplicación puede consumir. La limitación es una respuesta reactiva al uso excesivo de los recursos del sistema que pueden afectar a la confiabilidad y la funcionalidad del servicio. Exchange supervisa constantemente el estado de los recursos de infraestructura críticos, como las bases de datos de buzones de correo. Cuando se detectan factores de carga elevados que degradan el rendimiento de estos recursos, las conexiones de EWS se limitan proporcionalmente en función de la cantidad que cada autor de llamada contribuye a la condición de carga alta. El resultado es que un usuario puede encontrarse dentro del límite de limitación y seguir experimentando la ralentización hasta que el estado del recurso vuelve a los niveles operativos.
+
+Cada protocolo de acceso de cliente de Exchange, incluido EWS, tiene una directiva de limitación. Al diseñar aplicaciones que usan EWS, es importante tener en cuenta las directivas de limitación, para ayudar a garantizar la confiabilidad de la aplicación y el estado de su servidor de Exchange. En este artículo se identifican las diferentes directivas de limitación y límites de servicio para EWS, tanto si se destina a Exchange online como a versiones de Exchange locales a partir de Exchange Server 2010. Según corresponda, este artículo también identifica las diferencias en las directivas de limitación en las diferentes versiones de Exchange.
+
 > [!IMPORTANT]
-> El valor predeterminado de directiva de limitación, acceso a la directiva de limitación y configuración de la directiva de limitación difiere entre Exchange Online y Exchange local. Valores de configuración de limitación de peticiones específicos sólo son precisos para una versión específica de Exchange. Debido a que los valores de configuración pueden variar entre versiones y debido a que los administradores de Exchange pueden cambiar la directivas para las implementaciones locales de limitación predeterminada, este artículo no proporciona los valores de configuración el valor predeterminado. Es más importante que debe tener en cuenta las consideraciones para el diseño de una aplicación que funciona dentro de los límites de limitación y reacciona adecuadamente para escenarios de limitación. 
-  
-Si es un desarrollador de aplicaciones, necesita factor de limitación en el diseño de la aplicación. Las diferentes versiones de Exchange tienen valores predeterminados diferentes para los parámetros de limitación de peticiones de EWS. Las aplicaciones cliente y el servicio que se han diseñado para tener acceso a las diferentes versiones de Exchange se deben tener en cuenta para estas configuraciones, ya sean valores predeterminados, valores personalizados establecidos por un administrador de Exchange, o bien, como para Exchange Online, establece de forma predeterminada y no que se pueda detectar. Debido a que la limitación de los valores de parámetro no se puede detectar mediante programación, las especificaciones de diseño de cliente deben incluir un plan para la aplicación para adaptarse a diferente potencial superado la limitación. Al diseñar aplicaciones multiproceso que tendrán acceso a un gran número de buzones de correo, o cuando muchos clientes se tenga acceso al buzón mismo, tenga en cuenta los límites de simultaneidad que la directiva predeterminada se aplica a Exchange. 
-  
+> La Directiva de limitación predeterminada, el acceso a la Directiva de limitación y la configuración de la Directiva de limitación difiere entre Exchange Online y Exchange local. Los valores de configuración de limitación específicos solo son precisos para una versión específica de Exchange. Debido a que la configuración de valores varía entre versiones y los administradores de Exchange pueden cambiar las directivas de limitación predeterminadas para implementaciones locales, este artículo no proporciona los valores de configuración predeterminados. Es más importante tener en cuenta las consideraciones que hay que tener en cuenta al diseñar una aplicación que funcione dentro de límites de limitación y que reaccione adecuadamente a los escenarios de limitación.
+
+Si es desarrollador de aplicaciones, tiene que factorizar la limitación en el diseño de la aplicación. Las diferentes versiones de Exchange tienen valores predeterminados diferentes para los parámetros de limitación de EWS. Las aplicaciones de servicio y cliente diseñadas para tener acceso a diferentes versiones de Exchange deberán tener en cuenta esta configuración, si son valores predeterminados, valores personalizados definidos por un administrador de Exchange o, como en Exchange Online, establecidos de forma predeterminada y no se pueden detectar. Dado que los valores de los parámetros de limitación no se pueden descubrir mediante programación, las especificaciones de diseño de clientes deben incluir un plan para que la aplicación se adapte a límites de limitación potenciales diferentes. Al diseñar aplicaciones multiproceso que tengan acceso a un gran número de buzones de correo o cuando muchos clientes obtengan acceso al mismo buzón, tenga en cuenta los límites de simultaneidad que la directiva predeterminada aplica a Exchange.
+
 ## <a name="throttling-policies-that-affect-ews"></a>Directivas de limitación que afectan a EWS
-<a name="bk_PolicyParameters"> </a>
 
-La limitación de directivas en afectan de Exchange no solo EWS, sino también todas las conexiones de cliente en el servidor de Exchange, incluidos los protocolos utilizan por Office Outlook, Outlook Web App y Exchange ActiveSync. 
-  
-El **CPUStartPercent** directiva de limitación puede afectar al rendimiento de EWS cuando se ejecutan Exchange 2010. Cuando el uso de CPU promedio de Exchange procesos que se ejecutan en el servidor de acceso de cliente, incluidos, pero sin limitarse a, el proceso de EWS: supera el valor especificado por esta directiva, se retrasarán las solicitudes entrantes para reducir el uso de la CPU. No se puede cambiar el valor de esta directiva, pero conocer acerca de él puede ayudarle a solucionar problemas de rendimiento. La lógica de muestreo que realiza el servidor de acceso de cliente para este valor es una media de un segundo 10 ventana con desplazamiento. Esto permite que el proceso de responder adecuadamente a rápido picos de uso de CPU. Cuando se supera este umbral, se retrasarán las conexiones entrantes a EWS. Este retraso se restringe al 500 milisegundos (ms) con un uso de CPU del 100% teórico por solicitud EWS. Si se pasa una solicitud EWS por lotes para obtener elementos de 100, el servidor comprobará el uso de CPU 100 veces (una vez por cada elemento) para un retraso máximo de 50 segundos. El tiempo de retraso es linealmente proporcional al uso de la CPU. En **CPUStartPercent**, el retraso es 0 (el rendimiento de un subproceso) y aumenta linealmente hasta llegar a 500 ms con 100% de uso de CPU. Debido a que las directivas de limitación de peticiones se aplican a todos los usuarios de Exchange, es poco probable que el uso de CPU excede el límite de **CPUStartPercent** en un servidor de acceso de cliente de Exchange, debido a que los usuarios individuales o aplicaciones no pueden obtener suficiente utilización de la CPU afecte a operación del servidor. 
-  
-En la siguiente tabla se enumera los parámetros de directiva de limitación que afectan a las aplicaciones que usan EWS.
-  
-**Tabla 1: Limitación de los parámetros de directiva que afectan a EWS**
+Las directivas de limitación de Exchange no afectan solo EWS, sino también todas las conexiones de cliente al servidor Exchange, incluidos los protocolos usados por Office Outlook, Outlook Web App y Exchange ActiveSync.
 
-|**Nombre de parámetro de la directiva de limitación**|**Se aplica a**|**Descripción**|
+La Directiva de limitación de **CPUStartPercent** puede afectar al rendimiento de EWS al ejecutar Exchange 2010. Cuando el uso medio de CPU de los procesos de Exchange que se ejecutan en el servidor de acceso de cliente (incluido, entre otros, el proceso de EWS) supera el valor especificado por esta Directiva, las solicitudes de entrada se retrasarán para reducir el uso de la CPU. No puede cambiar el valor de esta Directiva, pero saber sobre ella puede ayudarle a solucionar problemas de rendimiento. La lógica de muestreo que el servidor de acceso de cliente realiza para este valor es un promedio de una ventana graduada de 10 segundos. Esto permite que el proceso responda adecuadamente a los picos rápidos de uso de la CPU. Cuando se supera este umbral, se retrasan las conexiones entrantes a EWS. Este retraso se limita a 500 milisegundos (mseg) a un uso teórico de la CPU 100% por cada solicitud de EWS. Si se pasa una solicitud EWS de lote para obtener 100 elementos, el servidor comprobará el uso de CPU 100 veces (una vez por elemento) durante un retraso máximo de 50 segundos. El tiempo de retraso es linealmente proporcional al uso de la CPU. En **CPUStartPercent**, el retraso es 0 (un rendimiento del subproceso) y aumenta linealmente hasta 500 ms en el 100% de uso de CPU. Como las directivas de limitación se aplican a todos los usuarios de Exchange, es improbable que el uso de la CPU supere el límite de **CPUStartPercent** en un servidor de acceso de cliente de Exchange, ya que los usuarios individuales o las aplicaciones no pueden obtener suficiente uso de CPU para afectar al funcionamiento del servidor.
+
+En la siguiente tabla se enumeran los parámetros de la Directiva de limitación que afectan a las aplicaciones que usan EWS.
+
+**Tabla 1: parámetros de la Directiva de limitación que afectan a EWS**
+
+|**Nombre del parámetro de la Directiva de limitación**|**Se aplica a**|**Descripción**|
 |:-----|:-----|:-----|
-|**DiscoveryMaxConcurrency** <br/> |Exchange 2013  <br/> Exchange Online  <br/> |Especifica el número de conexiones de búsqueda de detección simultáneas que un usuario puede tener al mismo tiempo.  <br/> |
+|**DiscoveryMaxConcurrency** <br/> |Exchange 2013  <br/> Exchange Online  <br/> |Especifica el número de conexiones de búsqueda de detección simultáneas que un usuario puede realizar a la vez.  <br/> |
 |**DiscoveryMaxKeywords** <br/> |Exchange 2013  <br/> Exchange Online  <br/> |Especifica el número máximo de palabras clave que un usuario puede incluir en una búsqueda de detección.  <br/> |
-|**DiscoveryMaxKeywordsPerPage** <br/> |Exchange 2013  <br/> Exchange Online  <br/> |Especifica el número de palabras clave que se va a mostrar las estadísticas.  <br/> |
+|**DiscoveryMaxKeywordsPerPage** <br/> |Exchange 2013  <br/> Exchange Online  <br/> |Especifica el número de palabras clave para las que se deben mostrar estadísticas.  <br/> |
 |**DiscoveryMaxMailboxes** <br/> |Exchange 2013  <br/> Exchange Online  <br/> |Especifica el número máximo de buzones de origen que un usuario puede incluir en una búsqueda de detección.  <br/> |
-|**DiscoveryMaxMailboxesResultsOnly** <br/> |Exchange 2013  <br/> Exchange Online  <br/> |Especifica el número máximo de buzones puede buscar en una exhibición de documentos electrónicos en contexto de búsqueda sin poder ver las estadísticas.  <br/> |
+|**DiscoveryMaxMailboxesResultsOnly** <br/> |Exchange 2013  <br/> Exchange Online  <br/> |Especifica el número máximo de buzones que puede buscar en una búsqueda de exhibición de documentos electrónicos local sin que sea posible ver las estadísticas.  <br/> |
 |**DiscoveryPreviewSearchResultsPageSize** <br/> |Exchange 2013  <br/> Exchange Online  <br/> |Especifica el número de mensajes devueltos en una respuesta de vista previa de búsqueda de exhibición de documentos electrónicos.  <br/> |
-|**EwsCutoffBalance** <br/> |Exchange 2013  <br/> Exchange Online  <br/> |Define los límites de consumo de recursos para el usuario EWS antes de que el usuario está bloqueado completamente de realizar operaciones en un componente específico.  <br/> |
-|**EwsMaxBurst** <br/> |Exchange 2013  <br/> Exchange Online  <br/> |Define la cantidad de tiempo que un usuario EWS puede consumir una cantidad de recursos con privilegios elevados antes de que se está limitado. Esto se mide en milisegundos. Este valor está establecido por separado para cada componente.  <br/> |
-|**EwsRechargeRate** <br/> |Exchange 2013  <br/> Exchange Online  <br/> |Define la velocidad a la que se recarga presupuesto de un usuario EWS (el presupuesto aumenta) durante el tiempo de presupuesto.  <br/> |
-|**EWSMaxSubscriptions** <br/> |Exchange 2010  <br/> Exchange 2013  <br/> Exchange Online  <br/> |Define el número máximo de inserción activo, de extracción y transmisión por secuencias de suscripciones de notificación de que un usuario puede tener a la vez en un servidor de acceso de cliente específico. Es presupuestado de manera diferente para distintas versiones de Exchange.  <br/> |
-|**EWSFastSearchTimeoutInSeconds** <br/> |Exchange 2010  <br/> |Define la cantidad de tiempo en segundos que fast búsquedas realizadas mediante el uso de búsqueda de Exchange en EWS continuar antes de que el tiempo de espera. Búsquedas Fast utilizan realizados mediante una cadena de consulta de sintaxis de consulta avanzada (AQS) en una [operación de FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx).  <br/> |
-|**EWSFindCountLimit** <br/> |Exchange 2010  <br/> Exchange 2013  <br/> Exchange Online  <br/> |Define el número máximo de elementos de una [operación de FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) u [FindFolder operación](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) que pueden existir en la memoria en el servidor de acceso de cliente a la vez para un usuario. El valor predeterminado de esta propiedad es 1000. El [valor de reserva](http://technet.microsoft.com/en-us/library/dd297964%28v=exchg.141%29.aspx#fallback)para este valor es 1000.  <br/> En Exchange Online y versiones locales de Exchange a partir de Exchange 2013, esta directiva de limitación no se puede ser consultada o configurada por un cmdlet. En las versiones de Exchange Online y local de Exchange a partir de con Exchange 2013, la EWSFindCountLimit para la [búsqueda AQS](how-to-perform-an-aqs-search-by-using-ews-in-exchange.md) y cualquier Exchange search con una restricción es 250 resultados. Una búsqueda de Exchange sin una restricción devolverá hasta 1000 resultados.  <br/> |
+|**EwsCutoffBalance** <br/> |Exchange 2013  <br/> Exchange Online  <br/> |Define los límites de consumo de recursos para el usuario de EWS antes de bloquearlo completamente a fin de realizar operaciones en un componente específico.  <br/> |
+|**EwsMaxBurst** <br/> |Exchange 2013  <br/> Exchange Online  <br/> |Define la cantidad de tiempo que un usuario de EWS puede consumir una cantidad elevada de recursos antes de limitarse. Este valor se mide en milisegundos. y se establece por separado para cada componente.  <br/> |
+|**EwsRechargeRate** <br/> |Exchange 2013  <br/> Exchange Online  <br/> |Define la velocidad con la que se vuelve a cargar el presupuesto de un usuario de EWS (el presupuesto aumenta) durante el tiempo de duración del presupuesto.  <br/> |
+|**EWSMaxSubscriptions** <br/> |Exchange 2010  <br/> Exchange 2013  <br/> Exchange Online  <br/> |Define el número máximo de suscripciones de notificación de inserción, extracción y transmisión activas que un usuario puede tener en un servidor de acceso de cliente específico al mismo tiempo. Esta se ha presupuestado de forma diferente para diferentes versiones de Exchange.  <br/> |
+|**EWSFastSearchTimeoutInSeconds** <br/> |Exchange 2010  <br/> |Define la cantidad de tiempo en segundos que las búsquedas rápidas realizadas mediante la búsqueda de Exchange en EWS continúan antes de que se agote el tiempo de espera. Las búsquedas rápidas son búsquedas realizadas mediante una cadena de consulta de sintaxis de consulta avanzada (AQS) en una [operación FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx).  <br/> |
+|**EWSFindCountLimit** <br/> |Exchange 2010  <br/> Exchange 2013  <br/> Exchange Online  <br/> |Define el número máximo de elementos desde una operación [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) o [FindFolder](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx) que puede haber en la memoria del servidor de acceso de cliente al mismo tiempo para un usuario. El valor predeterminado de esta propiedad es 1000. El [valor de retroceso](https://technet.microsoft.com/library/dd297964%28v=exchg.141%29.aspx#fallback)para este valor es 1000.  <br/> En Exchange Online y versiones locales de Exchange a partir de Exchange 2013, un cmdlet no puede consultar ni configurar esta directiva de limitación. En Exchange Online y versiones locales de Exchange a partir de Exchange 2013, la EWSFindCountLimit para la [búsqueda de AQS](how-to-perform-an-aqs-search-by-using-ews-in-exchange.md) y cualquier búsqueda de Exchange con una restricción es de 250 resultados. Una búsqueda de Exchange sin una restricción devolverá hasta 1000 resultados.  <br/> |
 |**EWSPercentTimeInAD** <br/> |Exchange 2010  <br/> |Define el porcentaje de tiempo por minuto durante el cual un usuario específico puede ejecutar solicitudes de Active Directory.  <br/> |
-|**EWSPercentTimeInCAS** <br/> |Exchange 2010  <br/> |Define el porcentaje de tiempo por minuto durante el cual un usuario específico puede ejecutar código de servidor de acceso de cliente.  <br/> |
-|**EWSPercentTimeInMailboxRPC** <br/> |Exchange 2010  <br/> |Define el porcentaje de tiempo por minuto durante el cual un usuario específico puede ejecutar las solicitudes RPC de buzón de correo  <br/> |
-|**EWSMaxConcurrency** <br/> |Exchange 2010  <br/> Exchange 2013  <br/> Exchange Online  <br/> |Define el número de conexiones simultáneas de open que puede tener un usuario específico en un servidor de Exchange que está usando EWS al mismo tiempo. El valor predeterminado de Exchange 2010 es 10. El valor predeterminado de Exchange 2013 y Exchange Online es 27.  <br/> Esta directiva se aplica a todas las operaciones excepto la transmisión por secuencias de notificaciones. Las notificaciones de transmisión por secuencias utilizan la **HangingConnectionLimit** para indicar el número de conexiones de evento transmisiones abiertas que están disponibles. Para obtener más información, vea [qué valores limitación es necesario tener en cuenta?](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md#bk_throttling).  <br/> |
-|**MessageRateLimit** <br/> |Exchange 2010  <br/> Exchange 2013  <br/> Exchange Online  <br/> |Define el número de mensajes por minuto que se pueda enviar.  <br/> |
-|**RecipientRateLimit** <br/> |Exchange 2010  <br/> Exchange 2013  <br/> Exchange Online  <br/> |Define el límite para el número de destinatarios que un usuario puede tratar en un período de 24 horas.  <br/> |
-|**ForwardeeLimit** <br/> |Exchange 2010  <br/> Exchange 2013  <br/> Exchange Online  <br/> |Define el límite para el número de destinatarios para acciones de avance/redireccionamiento de bandeja de entrada en un período de 24 horas.  <br/> |
-   
-> [!CAUTION]
-> No establezca directivas de limitación en **null**. Esto establecerá la directiva para que sea ilimitado, que indica que no se ha establecido una directiva de limitación. 
-  
-## <a name="displaying-the-policies-that-apply-to-exchange-mailboxes"></a>Visualización de las directivas que se aplican a los buzones de Exchange
-<a name="bk_PolicyCmdlets"> </a>
+|**EWSPercentTimeInCAS** <br/> |Exchange 2010  <br/> |Define el porcentaje de tiempo por minuto durante el cual un usuario específico puede ejecutar el código del servidor de acceso de cliente.  <br/> |
+|**EWSPercentTimeInMailboxRPC** <br/> |Exchange 2010  <br/> |Define el porcentaje de tiempo por minuto durante el cual un usuario específico puede ejecutar solicitudes RPC de buzón de correo.  <br/> |
+|**EWSMaxConcurrency** <br/> |Exchange 2010  <br/> Exchange 2013  <br/> Exchange Online  <br/> |Define el número de conexiones abiertas simultáneas que un usuario específico puede tener en un servidor de Exchange que usa EWS al mismo tiempo. El valor predeterminado de Exchange 2010 es 10. El valor predeterminado de Exchange 2013 y Exchange Online es 27.  <br/> Esta Directiva se aplica a todas las operaciones excepto para las notificaciones de streaming. Las notificaciones de streaming usan el **HangingConnectionLimit** para indicar el número de conexiones de eventos de transmisión de apertura que están disponibles. Para obtener más información, vea [¿qué valores de limitación se deben tener en cuenta?](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md#bk_throttling).  <br/> |
+|**MessageRateLimit** <br/> |Exchange 2010  <br/> Exchange 2013  <br/> Exchange Online  <br/> |Define el número de mensajes por minuto que se puede enviar.  <br/> |
+|**RecipientRateLimit** <br/> |Exchange 2010  <br/> Exchange 2013  <br/> Exchange Online  <br/> |Define el límite para el número de destinatarios que un usuario puede direccionar en un período de 24 horas.  <br/> |
+|**ForwardeeLimit** <br/> |Exchange 2010  <br/> Exchange 2013  <br/> Exchange Online  <br/> |Define el límite para el número de destinatarios de las acciones de redirección y redireccionamiento de la bandeja de entrada en un período de 24 horas.  <br/> |
+|**ConcurrentSyncCalls** <br/> |Exchange 2019  <br/> Exchange 2016  <br/> Exchange Online  <br/> |Define el límite para el número de llamadas de sincronización simultáneas (SyncFolderHierarchy, SyncFolderItems) para un usuario. <br/> |
 
-Exchange local proporciona cmdlets del Shell de administración de Exchange que puede usar para establecer y obtener la directiva de limitación. Exchange Online no proporciona acceso a los cmdlets de directiva de limitación de peticiones.
-  
-Puede usar los siguientes cmdlets para mostrar la limitación de directivas para una implementación de Exchange Server local:
-  
-- **Get-ThrottlingPolicy** : Obtiene el cliente de la configuración para uno o varios de limitación directivas de limitación. Para obtener más información, vea [Get-ThrottlingPolicy](http://technet.microsoft.com/en-us/library/dd351264.aspx) en TechNet. 
-    
-- **Get-ThrottlingPolicyAssociation** : permite ver la relación entre un objeto y sus directivas de limitación asociadas. El objeto puede ser un usuario con un buzón de correo, un usuario sin un buzón o a un contacto. Para obtener más información, vea [Get-ThrottlingPolicyAssociation](http://technet.microsoft.com/en-us/library/ff459241.aspx) en TechNet. 
-    
-Use el siguiente comando para mostrar la directiva de Exchange 2010 de limitación predeterminada.
-  
-**Get-ThrottlingPolicy | Where-Object {$_. IsDefault - eq "True"} | formato de lista**
-  
-Use el siguiente comando para mostrar la directiva de limitación global (que equivale a la directiva de limitación predeterminada en Exchange 2010) en Exchange 2013.
-  
-**Get-ThrottlingPolicy | Where-Object {$_. ThrottlingPolicyScope - eq "Global"} | formato de lista**
-  
-Use el siguiente comando para mostrar la directiva asociado con un usuario en Exchange 2010 o Exchange 2013 de limitación de peticiones. Reemplace el nombre de usuario john@contoso.com con el nombre de usuario del usuario de destino para el que desea obtener información de la directiva de limitación.
-  
-**Get-ThrottlingPolicyAssociation john@contoso.com | formato de lista**
-  
-Ejecutando este comando en Exchange Management Shell da como resultado un resultado similar al siguiente.
-  
+> [!CAUTION]
+> No establezca las directivas de limitación en **null**. Esto establecerá que la Directiva sea igual a ilimitada, lo que indica que no se ha establecido una directiva de limitación.
+
+## <a name="displaying-the-policies-that-apply-to-exchange-mailboxes"></a>Visualización de las directivas que se aplican a los buzones de Exchange
+
+Exchange local proporciona los cmdlets del shell de administración de Exchange que puede usar para establecer y obtener la Directiva de limitación. Exchange online no proporciona acceso a los cmdlets de la Directiva de limitación.
+
+Puede usar los siguientes cmdlets para mostrar las directivas de limitación de peticiones para una implementación local de Exchange Server:
+
+- **Get-ThrottlingPolicy** : obtiene la configuración de limitación de clientes para una o más directivas de limitación. Para obtener más información, vea [Get-ThrottlingPolicy](https://technet.microsoft.com/library/dd351264.aspx) en TechNet.
+
+- **Get-ThrottlingPolicyAssociation** : permite ver la relación entre un objeto y sus directivas de limitación asociadas. El objeto puede ser un usuario con un buzón, un usuario sin buzón o un contacto. Para obtener más información, vea [Get-ThrottlingPolicyAssociation](https://technet.microsoft.com/library/ff459241.aspx) en TechNet.
+
+Use el siguiente comando para mostrar la Directiva de limitación predeterminada para Exchange 2010.
+
+**Get-ThrottlingPolicy | Where-Object {$ _. IsDefault-EQ "true"} | Format-List**
+
+Use el siguiente comando para mostrar la Directiva de limitación global (que equivale a la Directiva de limitación predeterminada en Exchange 2010) en Exchange 2013.
+
+**Get-ThrottlingPolicy | Where-Object {$ _. ThrottlingPolicyScope-EQ "global"} | Format-List**
+
+Use el siguiente comando para mostrar la Directiva de limitación de peticiones asociada a un usuario en Exchange 2010 o Exchange 2013. Reemplace el nombre de usuario john@contoso.com por el nombre de usuario del usuario de destino para el que desea obtener información sobre la Directiva de limitación.
+
+**Get-ThrottlingPolicyAssociation john@contoso.com | Format-List**
+
+Al ejecutar este comando en el shell de administración de Exchange, se obtiene una salida similar a la siguiente.
+
 ```powershell
 PS C:\>Get-ThrottlingPolicyAssociation john@contoso.com
 RunspaceId               : 72153d6-9dce-2fae-8dbd-5ca5f760g2df
@@ -104,112 +103,107 @@ Guid                     : 2c10dab6-de28-1937-ad8g-535832613a08
 ```
 
 > [!NOTE]
-> Cuando la propiedad **ThrottlingPolicyId** está en blanco, se aplica la directiva predeterminada para el buzón de correo. 
-  
-Puede establecer la directiva en un servidor de Exchange de limitación mediante el uso de los cmdlets [Set-ThrottlingPolicy](http://technet.microsoft.com/en-us/library/dd298094.aspx) y [Set-ThrottlingPolicyAssociation](http://technet.microsoft.com/en-us/library/ff459231.aspx) . Puede crear y quitar directivas de limitación mediante el uso de los cmdlets [New-ThrottlingPolicy](http://technet.microsoft.com/en-us/library/dd351045.aspx) y [Remove-ThrottlingPolicy](http://technet.microsoft.com/en-us/library/dd351178.aspx) distinta de la predeterminada. 
-  
+> Cuando la propiedad **ThrottlingPolicyId** está en blanco, se aplica la directiva predeterminada al buzón.
+
+Puede establecer la Directiva de limitación en un servidor de Exchange mediante los cmdlets [set-ThrottlingPolicy](https://technet.microsoft.com/library/dd298094.aspx) y [set-ThrottlingPolicyAssociation](https://technet.microsoft.com/library/ff459231.aspx) . Puede crear y quitar directivas de limitación no predeterminadas con los cmdlets [New-ThrottlingPolicy](https://technet.microsoft.com/library/dd351045.aspx) y [Remove-ThrottlingPolicy](https://technet.microsoft.com/library/dd351178.aspx) .
+
 > [!TIP]
-> Se recomienda que diseñe sus aplicaciones para que se ajustan a la directiva de limitación predeterminada. Sólo puede realizar cambios en las directivas de limitación si el diseño de la aplicación de cliente no puede dar cabida a la directiva predeterminada predeterminada. Tenga en cuenta que las directivas de limitación menos restrictivas pueden afectar negativamente a la confiabilidad de los servicios. 
+> Le recomendamos que diseñe sus aplicaciones para que cumplan la Directiva de limitación de peticiones predeterminada. Solo realice cambios en las directivas de limitación predeterminadas si el diseño de la aplicación cliente no puede acomodar la directiva predeterminada. Tenga en cuenta que las directivas de limitación menos restrictivas pueden afectar negativamente la confiabilidad del servicio.
 
-<a name="bk_ThrottlingConsiderations"> </a>
+## <a name="throttling-considerations-for-applications-that-use-ews-impersonation"></a>Consideraciones de limitación para las aplicaciones que usan la suplantación de EWS
 
-## <a name="throttling-considerations-for-applications-that-use-ews-impersonation"></a>Consideraciones sobre la limitación de peticiones para las aplicaciones que usan la suplantación de EWS
+La [suplantación](impersonation-and-ews-in-exchange.md) es un método de autorización que permite que una única cuenta tenga acceso a muchas cuentas. Cuando una cuenta de servicio suplanta a los usuarios, actúa como los usuarios y, por lo tanto, asume los derechos asignados a dichos usuarios. Los archivos de registro registran el acceso como usuario suplantado. Los administradores usan el control de acceso basado en roles (RBAC) para configurar la suplantación a través del shell de administración de Exchange.
 
+Cuando se usa la suplantación, los presupuestos de todos los umbrales de limitación se aplican de forma diferente en función de la versión de Exchange. El presupuesto se calcula en función de la cuenta que se suplanta, o bien de la cuenta de servicio. Si la aplicación es multiproceso y realiza solicitudes simultáneas en varios buzones, debe tener en cuenta cómo el umbral de limitación afectará al rendimiento de la aplicación. En general, tenga en cuenta los siguientes límites en las cuentas de servicio al crear una aplicación basada en servicios que use la suplantación para obtener acceso a todos los buzones de correo:
 
-[La suplantación](impersonation-and-ews-in-exchange.md) es un método de autorización que permite una única cuenta tener acceso a muchas cuentas. Cuando suplanta una cuenta de servicio a los usuarios, actúa como los usuarios y, por tanto, se da por supuesto los derechos que se asignan a los usuarios. Los archivos de registro registran el acceso como el usuario suplantado. Los administradores usar control de acceso basado en roles (RBAC) para configurar la suplantación a través de la consola de administración de Exchange. 
-  
-Cuando se utiliza la suplantación, los presupuestos de los umbrales de limitación de peticiones se aplican de manera diferente dependiendo de la versión de Exchange. O bien se calcula el presupuesto frente a la cuenta que se suplanta o la cuenta de servicio. Si la aplicación es multiproceso y realiza solicitudes simultáneas frente a varios buzones, debe tener en cuenta cómo el umbral de limitación de peticiones se afectan al rendimiento de la aplicación. En general, tenga en cuenta los siguientes límites en las cuentas de servicio cuando se crea una aplicación de servicio que emplea la suplantación para tener acceso a todos los buzones: 
-  
-- Cuando se utiliza la suplantación, la cuenta de servicio tiene un presupuesto independiente de los siguientes parámetros de directiva:
-    
+- Cuando se usa la suplantación, la cuenta de servicio tiene un presupuesto independiente para los siguientes parámetros de directiva:
+
   - **EWSMaxConcurrency**
-    
+
   - **EWSPercentTimeInAD**
-    
+
   - **EWSPercentTimeInCAS**
-    
+
   - **EWSPercentTimeInMailboxRPC**
-    
+
   - **EWSMaxSubscriptions**
-    
+
   - **EWSFastSearchTimeoutInSeconds**
-    
+
   - **EWSFindCountLimit**
-    
-- El presupuesto de **EWSMaxConcurrency** se comparte para la cuenta de servicio y la cuenta suplantado para todas las conexiones a las versiones de Exchange anteriores a Service Pack 2 (SP2) de Exchange 2010 acumulativo de actualizaciones 4 (RU4). Empezando con Exchange 2010 SP2 RU4 e incluido Exchange Online, el acceso de la cuenta de servicio usa un presupuesto independiente desde el presupuesto de **EWSMaxConcurrency** de usuario. Para obtener más información acerca de la actualización para la directiva de limitación de conexiones simultáneas de Exchange para EWS, consulte [Descripción de actualización de paquete acumulativo de actualizaciones 4 para Exchange Server 2010 Service Pack 2](http://support.microsoft.com/kb/2706690).
-    
-    EWS transmisión por secuencias notificaciones en las versiones de Exchange comenzando con Exchange 2010 e incluido Exchange Online, tener un presupuesto de **EWSMaxConcurrency** clonado adicional de todas las otras conexiones de cliente EWS. Transmisión por secuencias de las conexiones de notificación se cuentan con un presupuesto independiente que todas las otras operaciones de EWS. El presupuesto de simultaneidad máximo de notificación transmisión por secuencias es realmente dos presupuestos diferentes: un presupuesto es para todas las cuentas de servicio, y un presupuesto para la cuenta que se suplanta. Transmisión por secuencias de notificaciones en Exchange Online y versiones de Exchange a partir de Exchange 2013 usan el [HangingConnectionLimit](ews-throttling-in-exchange.md#bk_ThrottlingNotifications) para limitar el número de conexiones. 
-    
-    Por ejemplo, supongamos que **EWSMaxConcurrency** es igual a cinco. Un usuario puede tener cinco conexiones de notificación de extracción abierto, mientras que una cuenta de servicio puede tener cinco conexiones de notificación de extracción simultáneas contra el buzón del usuario al mismo tiempo que el usuario. 
-    
-- En la siguiente tabla identifica cómo se calculan los presupuestos de limitación de peticiones de **EWSMaxSubscriptions** entre la cuenta de servicio y la cuenta para suplantar. 
-    
-   **La tabla 2: Contabilidad de presupuesto EWSMaxSubscriptions**
 
-   |**Versión de Exchange**|**EWSMaxSubscriptions limitación de contabilidad de presupuesto**|
+- El presupuesto de **EWSMaxConcurrency** se comparte para la cuenta de servicio y la cuenta que se suplanta para todas las conexiones a las versiones de Exchange anteriores a Exchange 2010 Service Pack 2 (SP2) paquete acumulativo de actualizaciones 4 (RU4). A partir de Exchange 2010 SP2 RU4 e incluir Exchange Online, el acceso a la cuenta de servicio usa un presupuesto independiente del presupuesto de **EWSMaxConcurrency** de usuario. Para obtener más información acerca de la actualización de la Directiva de limitación de conexiones simultáneas de Exchange para EWS, consulte [Descripción del paquete acumulativo de actualizaciones 4 para Exchange Server 2010 Service Pack 2](https://support.microsoft.com/kb/2706690).
+
+    Las notificaciones de streaming de EWS en versiones de Exchange a partir de Exchange 2010 e incluyen Exchange Online, tienen un presupuesto **EWSMaxConcurrency** clonado adicional desde el resto de conexiones de cliente de EWS. Las conexiones de notificación de transmisión por secuencias se cuentan con un presupuesto independiente que todas las demás operaciones de EWS. El presupuesto de simultaneidad máximo de la notificación de transmisión por secuencias es, en realidad, dos presupuestos distintos: un presupuesto es para todas las cuentas de servicio y un presupuesto para la cuenta que se va a suplantar. Las notificaciones de streaming en Exchange Online y las versiones de Exchange a partir de Exchange 2013 usan [HangingConnectionLimit](#throttling-considerations-for-ews-notification-applications) para limitar el número de conexiones.
+
+    Por ejemplo, supongamos que **EWSMaxConcurrency** es igual a cinco. Un usuario puede tener cinco conexiones de notificación de extracción abiertas, mientras que una cuenta de servicio puede tener cinco conexiones de notificación de extracción simultáneas en el buzón del usuario al mismo tiempo que el usuario.
+
+- En la siguiente tabla se identifica cómo se calculan los presupuestos de limitación de **EWSMaxSubscriptions** entre la cuenta de servicio y la cuenta que se va a suplantar.
+
+   **Tabla 2: contabilidad del presupuesto de EWSMaxSubscriptions**
+
+   |**Versión de Exchange**|**EWSMaxSubscriptions la Contabilidad presupuestaria del límite**|
    |:-----|:-----|
-   |Exchange Online  <br/> |Carga contra el buzón de destino.  <br/> |
-   |Exchange 2013  <br/> |Carga contra el buzón de destino.  <br/> |
-   |SP3 de Exchange 2010  <br/> |Carga contra el buzón de destino.  <br/> |
-   |Exchange 2010 SP2  <br/> |Atribuyen a la cuenta que llama. A partir de Exchange 2010 SP2 RU4, se carga el presupuesto con el buzón de destino.  <br/> |
-   |Exchange 2010 SP1  <br/> |Atribuyen a la cuenta que llama.  <br/> |
-   |Exchange 2010  <br/> |Atribuyen a la cuenta que llama.  <br/> |
-   
-- Debido a que la **EWSMaxSubscriptions** limitación presupuestado se atribuyen a la cuenta que se suplanta, no hay ningún límite en el número de buzones de correo de una cuenta de servicio puede suscribirse a y recibir notificaciones de transmisión por secuencias para, siempre que sea de suplantación se utiliza. Para la cuenta que se suplanta, no puede tener más de solicitudes simultáneas de _n_ por buzón de destino, donde _n_ es el valor de **EWSMaxSubscriptions** . Si no se utiliza la suplantación, la misma cuenta de servicio podría no tener más de solicitudes simultáneas de _n_ totales. Por lo tanto, la conclusión es que mediante la suplantación en una cuenta de servicio, forma exponencial aumenta el número de buzones que puede dar servicio. Para obtener más información, vea [mantener la afinidad entre un grupo de suscripciones y el servidor de buzones en Exchange](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md).
-    
-- Los parámetros de directiva **EWSPercentTimeInMailboxRPC**, **EWSPercentTimeInCAS**y **EWSPercentTimeInAD** hacen referencia a las acciones realizadas por un único subproceso. Cuando una aplicación realiza varias operaciones simultáneas, debe contabilizar el efecto acumulativo de estas operaciones en el presupuesto de recurso de usuario. 
-    
-## <a name="throttling-implications-for-ews-batch-requests"></a>Limitación de implicaciones para las solicitudes de lote EWS
-<a name="bk_ThrottlingBatch"> </a>
+   |Exchange Online  <br/> |Se carga en el buzón de correo de destino.  <br/> |
+   |Exchange 2013  <br/> |Se carga en el buzón de correo de destino.  <br/> |
+   |Exchange 2010 SP3  <br/> |Se carga en el buzón de correo de destino.  <br/> |
+   |Exchange 2010 SP2  <br/> |Se cargan en la cuenta de llamada. A partir de Exchange 2010 SP2 RU4, el presupuesto se carga en el buzón de correo de destino.  <br/> |
+   |Exchange 2010 SP1  <br/> |Se cargan en la cuenta de llamada.  <br/> |
+   |Exchange 2010  <br/> |Se cargan en la cuenta de llamada.  <br/> |
 
-EWS permite por lotes varias solicitudes de elemento en una única solicitud que se ejecuta el servidor de acceso de cliente. Esto permite la mayor eficacia y rendimiento. Cuando un servidor de Exchange ejecuta una solicitud por lotes, comprueba presupuesto del usuario después de la ejecución de cada elemento dentro del lote. Si la aplicación está por encima del presupuesto, se retrasa el procesamiento del siguiente elemento en el lote hasta que se ha cargado el presupuesto de dicho usuario. Para asegurarse de que las aplicaciones que usan las operaciones por lotes se ejecutarán correctamente, limitar el número de solicitudes de elemento que se puede incluir en un único lote y dividir lotes grandes a través de varios lotes más pequeños para aumentar la confiabilidad de los resultados. El efecto que tiene una operación por lotes los umbrales de limitación de peticiones determinado depende del tipo de la solicitud, el tamaño de los elementos que va a procesar (por ejemplo, en las operaciones de **UploadItems** o **ExportItems** ) y el contenido de los buzones. Directivas de limitación afecta a las operaciones por lotes por lo que provoca que la solicitud a tardar más en proceso. El autor de la llamada, por tanto, tendrá que esperar la respuesta ya, y porque EWS limita el tiempo de ejecución de una solicitud por lotes a un minuto, la llamada podría tiempo de espera. 
-  
-Para determinar el tamaño de lote óptimo para una aplicación, realizar pruebas utilizando una unidad que diversas entradas establece para asegurarse de que la aplicación no producen errores en un entorno de producción. 
-  
-## <a name="throttling-policy-parameters-that-affect-ews-search-operations"></a>Operaciones de búsqueda de la limitación de los parámetros de directiva que afectan a EWS
-<a name="bk_ThrottlingSearch"> </a>
+- Debido a que el presupuesto de limitación de **EWSMaxSubscriptions** se carga en la cuenta que se suplanta, no hay ningún límite en el número de buzones a los que puede suscribir y recibir notificaciones de transmisión por secuencias una cuenta de servicio, siempre que se use la suplantación. Para la cuenta que se va a suplantar, no puede tener más de _n_ solicitudes simultáneas por buzón de correo de destino, donde _n_ es el valor de **EWSMaxSubscriptions** . Si no estaba usando la suplantación, la misma cuenta de servicio no podría tener más de _n_ total de solicitudes simultáneas. Por lo tanto, la ventaja es que, al usar la suplantación en una cuenta de servicio, se aumenta exponencialmente el número de buzones a los que se puede atender. Para obtener más información, vea [mantener la afinidad entre un grupo de suscripciones y el servidor de buzones de Exchange](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md).
 
-[Operaciones de búsqueda en EWS](search-and-ews-in-exchange.md) puede requerir grandes cantidades de tiempo y recursos, dependiendo de cómo se ejecuta la búsqueda y qué información se solicita. Para controlar el uso de recursos durante las búsquedas, dos parámetros de directiva surtan efecto: **EWSFastSearchTimeoutInSeconds** y **EWSFindCountLimit**. 
-  
-El parámetro de directiva **EWSFastSearchTimeoutInSeconds** especifica la cantidad de tiempo, en segundos, que las búsquedas fast de EWS (también conocido como contenido de búsqueda indización) ejecutar antes de que se agote el tiempo. Una búsqueda rápida es una búsqueda realizada mediante el uso de una cadena de consulta de sintaxis de consulta avanzada (AQS) en una [operación de FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx).
-  
-Puede buscar en una carpeta de buzón de correo de Exchange de dos maneras:
-  
-- Mediante el uso de una búsqueda de almacén de Exchange, que realiza un examen secuencial de todos los mensajes en el ámbito de búsqueda de destino.
-    
-- Con el servicio de búsqueda de Exchange (indización de contenido).
-    
-Estos dos tipos de búsquedas pueden provocar tiempos de espera. Cuando sea posible, utilice el servicio de búsqueda de Exchange debido a que estas búsquedas en índices de buzón de correo a menudo destinadas y utilizar las consultas AQS. En el ejemplo siguiente se muestra cómo se realiza una búsqueda de AQS de la Bandeja de entrada mediante el uso de EWS y el servicio de búsqueda de Exchange.
-  
+- Los parámetros de directiva **EWSPercentTimeInMailboxRPC**, **EWSPercentTimeInCAS**y **EWSPercentTimeInAD** hacen referencia a acciones realizadas por un único hilo. Cuando una aplicación realiza varias operaciones simultáneas, debe tener en cuenta el efecto acumulado de estas operaciones en el presupuesto de recursos de usuario.
+
+## <a name="throttling-implications-for-ews-batch-requests"></a>Implicaciones de limitación de solicitudes por lotes de EWS
+
+EWS permite procesar en lote varias solicitudes de elementos en una única solicitud ejecutada por el servidor de acceso de cliente. Esto permite una mayor eficiencia y rendimiento. Cuando un servidor de Exchange ejecuta una solicitud por lotes, comprueba el presupuesto del usuario tras la ejecución de cada elemento del lote. Si la aplicación está por encima del presupuesto, el procesamiento del siguiente elemento del lote se retrasa hasta que el presupuesto de ese usuario se haya recargado. Para asegurarse de que las aplicaciones que usan operaciones por lotes se ejecutan correctamente, limite el número de solicitudes de elementos que se pueden incluir en un solo lote y divida los lotes grandes en varios lotes más pequeños para aumentar la confiabilidad de los resultados. El efecto que tiene una operación por lotes en umbrales de limitación específicos depende del tipo de solicitud, el tamaño de los elementos que se van a procesar (por ejemplo, en las operaciones **UploadItems** o **ExportItems** ) y el contenido del buzón. Las directivas de limitación afectan a las operaciones por lotes haciendo que la solicitud tarde más tiempo en procesarse. Por lo tanto, el autor de la llamada tendrá que esperar más tiempo para la respuesta y, debido a que EWS limita el tiempo de ejecución de una solicitud por lotes a un minuto, la llamada podría agotar el tiempo de espera.
+
+Para determinar el tamaño de lote óptimo para una aplicación, realice pruebas unitarias con varios conjuntos de entrada para asegurarse de que la aplicación no encuentra ningún error en un entorno de producción.
+
+## <a name="throttling-policy-parameters-that-affect-ews-search-operations"></a>Parámetros de directivas de limitación que afectan a las operaciones de búsqueda de EWS
+
+[Las operaciones de búsqueda en EWS](search-and-ews-in-exchange.md) pueden requerir grandes cantidades de tiempo y recursos, según el modo en que se ejecuta la búsqueda y la información que se solicita. Para controlar el uso de recursos durante las búsquedas, se aplican dos parámetros de directiva: **EWSFastSearchTimeoutInSeconds** y **EWSFindCountLimit**.
+
+El parámetro de directiva **EWSFastSearchTimeoutInSeconds** especifica la cantidad de tiempo, en segundos, que se ejecutan las búsquedas rápidas de EWS (también conocido como búsqueda de indización de contenido) antes de que se agote el tiempo de espera. Una búsqueda rápida es una búsqueda realizada mediante una cadena de consulta de sintaxis de consulta avanzada (AQS) en una [operación FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx).
+
+Puede buscar en una carpeta de buzón de Exchange de dos maneras:
+
+- Mediante una búsqueda de almacén de Exchange, que realiza un análisis secuencial de todos los mensajes en el ámbito de la búsqueda de destino.
+
+- Mediante el servicio de búsqueda de Exchange (indización de contenido).
+
+Estos dos tipos de búsquedas pueden tener como resultado tiempos de espera. Cuando sea posible, use el servicio de búsqueda de Exchange, ya que estas búsquedas se destinan a índices de buzón y usan consultas AQS. En el siguiente ejemplo, se muestra cómo realizar una búsqueda AQS de la bandeja de entrada mediante EWS y el servicio de búsqueda de Exchange.
+
 ```cs
 ItemView iv = new ItemView(1000);
 FindItemsResults<Item> fiitems = service.FindItems(WellKnownFolderName.Inbox, "subject:football", iv);
 ```
 
-Si no se puede usar una búsqueda AQS, evitar el uso de filtros de búsqueda demasiado compleja. También intenta evitar la creación de filtros de búsqueda basándose en valores calculados si la consulta implica las propiedades extendidas de MAPI. Búsqueda AQS se introdujo en Exchange 2010.
-  
+Si no puedes usar una búsqueda AQS, evita el uso de filtros de búsqueda demasiado complejos. Intente evitar también la creación de filtros de búsqueda basados en valores calculados si la consulta incluye propiedades MAPI extendidas. La búsqueda de AQS se introdujo en Exchange 2010.
+
 > [!NOTE]
-> La primera vez que ejecute una consulta de búsqueda de almacén de Exchange compleja, se ejecuta muy lentamente y es posible que el tiempo de espera. Después de, la consulta va a responder más rápidamente. Para obtener más información sobre el back-end Exchange los procesos del servidor que se producen durante Exchange almacenar las consultas de búsqueda, vea la [Descripción de las vistas restringidas y rendimiento impacto de alta recuentos de artículos](http://technet.microsoft.com/en-us/library/cc535025%28EXCHG.80%29.aspx) en TechNet. Uso de un **SearchFilter** crea una restricción dinámica que ayuda a consultas similares en el futuro, pero debido a que estas restricciones son de naturaleza dinámica, no son permanentes o confiable y se eliminan después de un máximo de tres días. 
-  
-El parámetro de directiva **EWSFindCountLimit** especifica el número máximo de elementos de los resultados de una operación **FindItem** o **FindFolder** que pueden existir en la memoria en un servidor de acceso de cliente al mismo tiempo para un usuario. Cada elemento o carpeta que procesa EWS en una solicitud **FindItem** o **FindFolder** se cuenta con respecto al presupuesto especificado en el elemento **EWSFindCountLimit** . Cuando se envía la respuesta de vuelta al solicitante, se libera el cargo de recuento de búsqueda para la llamada actual. La respuesta que devuelve el servidor a un solicitante cuando se supere el presupuesto se basa en el valor del elemento **RequestServerVersion** y si el solicitante especificado paginación. Cuando el valor del elemento **RequestServerVersion** indica Exchange 2010 o una versión anterior de Exchange, el servidor envía una respuesta de error con el código de error **ErrorServerBusy**. Si el valor del elemento **RequestServerVersion** indica una versión de Exchange a partir de Exchange 2010 SP1 o Exchange Online y el cliente está usando la paginación, EWS puede devolver un resultado parcial establecido en lugar de un error. La aplicación debe esperar que EWS no puede devolver todos los elementos. Si el valor del elemento **IncludesLastItemInRange** es false, la aplicación debe realizar otra solicitud **FindItem** o **FindFolder** con el nuevo desplazamiento y seguir hasta que el elemento **IncludesLastItemInRange** devuelve el valor true. 
-  
-Cuando se usa una operación **FindItem** o **FindFolder** , es importante utilizar la paginación. La API administrada de EWS exige el uso de paginación, pero si está utilizando otros métodos, como los objetos de servidor proxy EWS o SOAP sin procesar, debe establecer explícitamente la paginación. En el ejemplo siguiente se muestra cómo utilizar la paginación en la API administrada de EWS. 
-  
+> La primera vez que se ejecuta una consulta de búsqueda compleja del almacén de Exchange, se ejecuta muy despacio y puede agotar el tiempo de espera. A continuación, la consulta responderá con mayor rapidez. Para obtener más información acerca de los procesos de back-end de Exchange Server que se producen durante las consultas de búsqueda del almacén de Exchange, vea [Understanding the performance Impact of High Item Counts and Restricted views](https://technet.microsoft.com/library/cc535025%28EXCHG.80%29.aspx) on technet. El uso de un **SearchFilter** crea una restricción dinámica que ayuda a realizar consultas similares en el futuro, pero debido a que estas restricciones son de naturaleza dinámica, no son permanentes ni confiables y se eliminan después de un máximo de tres días.
+
+El parámetro de directiva **EWSFindCountLimit** especifica el número máximo de elementos a partir de los resultados de una operación **FindItem** o **FindFolder** que puede existir en la memoria de un servidor de acceso de cliente al mismo tiempo para un usuario. Cada elemento o carpeta que procesa EWS en una solicitud **FindItem** o **FindFolder** se cuenta con el presupuesto especificado en el elemento **EWSFindCountLimit** . Cuando la respuesta se envía de vuelta al solicitante, se suelta la carga del recuento de búsqueda de la llamada actual. La respuesta que devuelve el servidor a un solicitante cuando se excede el presupuesto se basa en el valor del elemento **RequestServerVersion** y si el solicitante especificó la paginación. Cuando el valor del elemento **RequestServerVersion** indica Exchange 2010 o una versión anterior de Exchange, el servidor envía una respuesta de error con el código de error **ErrorServerBusy**. Si el valor del elemento **RequestServerVersion** indica una versión de Exchange que empieza con Exchange 2010 SP1 o Exchange Online, y el cliente usa la paginación, EWS puede devolver un conjunto de resultados parciales en lugar de un error. La aplicación debe esperar que EWS no puede devolver todos los elementos. Si el valor del elemento **IncludesLastItemInRange** es false, la aplicación debe realizar otra solicitud **FindItem** o **FindFolder** con el nuevo desplazamiento y continuar hasta que el elemento **IncludesLastItemInRange** devuelva true.
+
+Cuando se usa una operación **FindItem** o **FindFolder** , es importante usar la paginación. La API administrada de EWS fuerza el uso de la paginación, pero si usa otros métodos, como objetos proxy de EWS o SOAP sin procesar, debe establecer la paginación explícitamente. En el ejemplo siguiente se muestra cómo usar la paginación en la API administrada de EWS.
+
 ```cs
 ItemView iv = new ItemView(1000);
 FindItemsResults<Item> fiFindItemResults = service.FindItems(WellKnownFolderName.Inbox, iv);
 ```
 
 > [!NOTE]
-> La directiva predeterminada de Exchange limita el tamaño de página a 1000 elementos. Si se establece el tamaño de página en un valor que es mayor que este número no tiene ningún efecto práctico. 
-  
-Aplicaciones también deben tener en cuenta el hecho de que la _EWSFindCountLimit_ en el valor del parámetro de limitación puede producir en un conjunto que se devuelve para aplicaciones que realizan solicitudes simultáneas de resultados parcial. En el ejemplo siguiente se muestra cómo usar la propiedad **MoreAvailable** de la API administrada de EWS para asegurarse de que todos los resultados se encuentran en una consulta. 
-  
+> La directiva predeterminada de Exchange limita el tamaño de página a 1000 elementos. Establecer el tamaño de página en un valor mayor que este número no tiene ningún efecto práctico.
+
+Las aplicaciones también deben tener en cuenta el hecho de que el valor del parámetro de limitación _EWSFindCountLimit_ puede dar como resultado la devolución de un conjunto de resultados parcial para las aplicaciones que realizan solicitudes simultáneas. En el siguiente ejemplo se muestra cómo usar la propiedad **MoreAvailable** en la API administrada de EWS para asegurarse de que todos los resultados se incluyen en una consulta.
+
 ```cs
 ItemView iv = new ItemView(1000);
 service.TraceEnabled = false;
 FindItemsResults<Item> fiResults = null;
-Do 
+Do
 {
     fiResults = service.FindItems(WellKnownFolderName.Inbox, iv);
     PropertySet itItemPropSet = new PropertySet(BasePropertySet.IdOnly) { EmailMessageSchema.Body };
@@ -219,105 +213,97 @@ Do
 while (fiResults.MoreAvailable == true);
 ```
 
-## <a name="throttling-policies-and-concurrency"></a>Directivas de limitación y simultaneidad
-<a name="bk_ThrottlingConcurrency"> </a>
+## <a name="throttling-policies-and-concurrency"></a>Directivas de limitación de peticiones y concurrencia
 
-Simultaneidad hace referencia al número de conexiones de un usuario específico. Una conexión se mantiene desde el momento en que se recibe una solicitud hasta que se envía una respuesta al solicitante. Si los usuarios intentan realizar más peticiones simultáneas que permite su directiva, se produce un error en el intento de conexión nueva. Sin embargo, las conexiones existentes permanecen válidas. Limitación de las directivas puede afectar a la simultaneidad en un número de formas diferentes.
-  
-El parámetro de directiva de limitación de peticiones **EWSMaxConcurrency** establece el número de conexiones simultáneas que puede tener un usuario específico en un servidor de Exchange a la vez. Para determinar el número máximo de conexiones simultáneas para permitir, considere la posibilidad de las conexiones que va a usar los clientes de Outlook. Outlook 2007 y Outlook 2010 usan EWS para obtener acceso a la disponibilidad y la información de fuera de oficina (OOF). Mac Outlook 2011 usa EWS para toda la funcionalidad de acceso cliente. Según la cantidad de clientes de Outlook que se conecta activamente al buzón de un usuario, el número de conexiones simultáneas disponibles para un usuario podría estar limitado. Además, si tiene la aplicación para conectarse a varios buzones simultáneamente durante el uso de un contexto de seguridad único, es importante tener el valor de la directiva de **EWSMaxConcurrency** en cuenta. Para obtener más información acerca del uso de un contexto de seguridad único con conexiones simultáneas, vea [Consideraciones de la limitación para las aplicaciones que usan la suplantación de EWS](#bk_ThrottlingConsiderations) anteriormente en este artículo. 
-  
-Aplicaciones que se conectan simultáneamente a varios buzones de correo tienen que puedan realizar un seguimiento de uso de recursos en el lado del cliente. Debido a que las operaciones de EWS están basados en solicitud/respuesta, puede asegurarse de la función de las aplicaciones también dentro del umbral de **EWSMaxConcurrency** por el número de conexiones que se producen entre el inicio de una solicitud y cuando la respuesta de seguimiento recibidos y asegurarse de que no más de diez abrir solicitudes se producen simultáneamente. 
-  
-El parámetro de directiva **EWSFindCountLimit** especifica el tamaño máximo de resultados que una operación **FindItem** o **FindFolder** puede usar en un servidor de acceso de cliente al mismo tiempo para un usuario. Si una aplicación (o potencialmente varias aplicaciones) realiza dos solicitudes simultáneas de EWS **FindItem** que devuelven 100 elementos para un usuario específico, el cargo de **EWSFindCountLimit** frente a presupuesto de ese usuario específico será 200. Cuando se devuelve la primera solicitud, el presupuesto se coloca a 100 y, cuando se devuelve la segunda solicitud de, el presupuesto disminuye a cero. Si la misma aplicación eran realizar dos solicitudes simultáneas de 1000 elementos, el valor de presupuesto sería 2.000 elementos, que supera el valor de **EWSFindCountLimit** . Si presupuesto del usuario para elementos cae por debajo de cero, la siguiente solicitud da como resultado un error hasta que se recarga presupuesto del usuario a uno o más. 
+La concurrencia hace referencia al número de conexiones de un usuario específico. Una conexión se mantiene desde el momento en que se recibe una solicitud hasta que se envía una respuesta al solicitante. Si los usuarios intentan efectuar más solicitudes simultáneas de las que permite su directiva, el nuevo intento de conexión dará error. Sin embargo, las conexiones existentes siguen siendo válidas. Las directivas de limitación pueden afectar a la simultaneidad de varias formas.
 
-<a name="bk_ThrottlingNotifications"> </a>
-  
-## <a name="throttling-considerations-for-ews-notification-applications"></a>Consideraciones sobre la limitación EWS para aplicaciones de notificaciones
+El parámetro de la Directiva de limitación **EWSMaxConcurrency** establece el número de conexiones simultáneas que un usuario específico puede tener en un servidor de Exchange al mismo tiempo. Para determinar el número máximo de conexiones simultáneas que se permiten, tenga en cuenta las conexiones que usarán los clientes de Outlook. Outlook 2007 y Outlook 2010 usan EWS para tener acceso a la información de disponibilidad y fuera de la oficina (OOF). Mac Outlook 2011 usa EWS para todas las funciones de acceso de cliente. Según el número de clientes de Outlook que se conectan de forma activa al buzón de un usuario, el número de conexiones simultáneas disponibles para un usuario puede ser limitado. Además, si la aplicación tiene que conectarse a varios buzones de forma simultánea mientras usa un solo contexto de seguridad, es importante tener en cuenta el valor de la directiva **EWSMaxConcurrency** . Para obtener más información sobre el uso de un solo contexto de seguridad con conexiones simultáneas, vea [consideraciones sobre limitación de aplicaciones que usan la suplantación de EWS](#throttling-considerations-for-applications-that-use-ews-impersonation) anteriormente en este artículo.
 
+Las aplicaciones que se conectan a la vez a varios buzones de correo tienen que poder realizar un seguimiento del uso de recursos en el lado cliente. Como las operaciones de EWS se basan en solicitudes/respuestas, puede asegurarse de que funcionan correctamente en el umbral de **EWSMaxConcurrency** mediante el seguimiento del número de conexiones que se producen entre el inicio de una solicitud y el momento en que se recibe la respuesta, y que garantiza que no se produzcan más de diez solicitudes abiertas al mismo tiempo.
 
-Si va a crear la notificación de EWS aplicaciones hacen uso de inserción, extracción o transmisión por secuencias de notificaciones, debe tener en cuenta las implicaciones de la **EWSMaxSubscriptions** y las directivas de limitación de peticiones de **EWSMaxConcurrency** y el ** HangingConnectionLimit**. 
-  
-El parámetro de directiva **EWSMaxSubscriptions** especifica el número máximo de inserción activo, de extracción y suscripciones de transmisión por secuencias que puede tener un usuario en un servidor de acceso de cliente específico al mismo tiempo. Las diferentes versiones de Exchange tienen valores predeterminados diferentes para este parámetro. Un usuario puede suscribirse a todas las carpetas de un buzón de correo mediante el uso de la propiedad **SubscribeToAllFolders** - esto usa una sola suscripción con respecto al presupuesto **EWSMaxSubscriptions** . Los usuarios pueden suscribirse a carpetas individuales, con cada carpeta suscripción contando hacia el presupuesto **EWSMaxSubscriptions** , hasta el límite establecido por el valor del parámetro **EWSMaxSubscriptions** (por ejemplo, los usuarios pueden suscribirse a calendario de 20 carpetas de buzones diferentes si **EWSMaxSubscriptions** está establecido en 20). 
-  
-Para obtener información acerca de la suplantación y el parámetro **EWSMaxSubscriptions** , vea [Consideraciones de la limitación para las aplicaciones que usan la suplantación de EWS](#bk_ThrottlingConsiderations) anteriormente en este artículo. 
-  
-El parámetro de directiva de **EWSMaxConcurrency** también puede ser un problema para las notificaciones de EWS; Por ejemplo: 
-  
-- Cuando EWS incrementa el recuento de conexión para el propietario de la suscripción mientras se genera la notificación por una suscripción de inserción.
-    
-- Cuando una aplicación está diseñada para escuchar a los buzones de los usuarios de varios, y los usuarios reciben notificaciones simultáneas para una instancia de un mensaje que se envía a una lista de distribución.
-    
-Si la aplicación de notificación es multiproceso y hace que las solicitudes de conexión simultáneas para obtener más información acerca de un mensaje concreto que se ha recibido por una cuenta de usuario, puede ser se ha excedido el límite de la directiva de **EWSMaxConcurrency** . Para tener en cuenta para esto, considere la posibilidad de supervisar las conexiones simultáneas en la aplicación, los que podría ser utilizado por el servidor incluidos e implementación de solicitud de puesta en cola en el cliente. 
-  
-El **HangingConnectionLimit** sólo es aplicable a la transmisión por secuencias de notificaciones. Este límite se establece en el archivo web.config, lo que significa que un administrador de Exchange puede establecer este valor en un servidor de Exchange local, pero los buzones de Exchange Online deben usar el valor predeterminado de este límite, que es 3 para Exchange Online y Exchange 2013. Para obtener más información, vea [qué valores limitación es necesario tener en cuenta?](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md#bk_throttling).
-  
-## <a name="throttling-policy-and-application-performance"></a>Rendimiento de la aplicación y de directiva de limitación
-<a name="bk_PercentTimeIn"> </a>
+El parámetro de directiva **EWSFindCountLimit** especifica el tamaño máximo de resultado que puede usar una operación **FindItem** o **FindFolder** en un servidor de acceso de cliente al mismo tiempo para un usuario. Si una aplicación (o posiblemente varias aplicaciones) realiza dos solicitudes **FindItem** de EWS simultáneas que devuelven 100 elementos para un usuario específico, la carga de la **EWSFindCountLimit** con el presupuesto del usuario específico será 200. Cuando se devuelve la primera solicitud, el presupuesto desciende a 100 y, cuando se devuelve la segunda solicitud, el presupuesto disminuye a cero. Si la misma aplicación realizara dos solicitudes simultáneas de 1000 elementos, el valor de presupuesto sería 2000 elementos, lo que supera el valor de **EWSFindCountLimit** . Si el presupuesto del usuario para los elementos desciende por debajo de cero, la siguiente solicitud genera un error hasta que el presupuesto del usuario recarga a uno o más.
 
-Los siguientes tres parámetros de la **PercentTimeIn** directiva de limitación afecta a la cantidad de tiempo que puede consumir una aplicación de EWS en un servidor de acceso de cliente: 
-  
+## <a name="throttling-considerations-for-ews-notification-applications"></a>Consideraciones sobre la limitación de solicitudes de notificaciones de EWS
+
+Si va a compilar aplicaciones de notificación de EWS que usan las notificaciones de inserción, extracción o transmisión por secuencias, debe tener en cuenta las implicaciones de las directivas de limitación de peticiones de **EWSMaxSubscriptions** y **EWSMaxConcurrency** , y el **HangingConnectionLimit**.
+
+El parámetro de directiva **EWSMaxSubscriptions** especifica el número máximo de suscripciones de inserción, extracción y transmisión activas que un usuario puede tener en un servidor de acceso de cliente específico al mismo tiempo. Las diferentes versiones de Exchange tienen valores predeterminados diferentes para este parámetro. Un usuario puede suscribirse a todas las carpetas de un buzón mediante la propiedad **SubscribeToAllFolders** , que usa una única suscripción contra el presupuesto **EWSMaxSubscriptions** . Los usuarios pueden suscribirse a carpetas individuales, con cada suscripción de carpeta contando hacia el presupuesto de **EWSMaxSubscriptions** , hasta el límite establecido por el valor del parámetro **EWSMaxSubscriptions** (por ejemplo, los usuarios pueden suscribirse a 20 carpetas de calendario en buzones diferentes si **EWSMaxSubscriptions** se establece en 20).
+
+Para obtener información sobre la suplantación y el parámetro **EWSMaxSubscriptions** , vea [consideraciones sobre limitación de aplicaciones que usan la suplantación de EWS](#throttling-considerations-for-applications-that-use-ews-impersonation) anteriormente en este artículo.
+
+El parámetro de directiva **EWSMaxConcurrency** también puede ser un problema de las notificaciones de EWS; por ejemplo:
+
+- Cuando EWS incrementa el número de conexiones para el propietario de la suscripción mientras la notificación se genera mediante una suscripción de inserción.
+
+- Cuando una aplicación está diseñada para escuchar buzones de varios usuarios y los usuarios reciben notificaciones simultáneas para una instancia de un mensaje que se envía a una lista de distribución.
+
+Si la aplicación de notificaciones es multiproceso y realiza solicitudes de conexión simultáneas para obtener más información acerca de un mensaje en particular recibido por una cuenta de usuario, se puede superar el límite de directivas de **EWSMaxConcurrency** . Para tener esto en cuenta, considere la posibilidad de supervisar las conexiones simultáneas en la aplicación, incluidas las que puede usar el servidor y la implementación de la cola de solicitudes en el cliente.
+
+**HangingConnectionLimit** solo se aplica a las notificaciones de transmisión por secuencias. Este límite se establece en el archivo Web. config, lo que significa que un administrador de Exchange puede establecer este valor en un servidor de Exchange local, pero los buzones de correo de Exchange Online deben usar el valor predeterminado para este límite, que es 3 tanto para Exchange online como para Exchange 2013. Para obtener más información, vea [¿qué valores de limitación se deben tener en cuenta?](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md#bk_throttling).
+
+## <a name="throttling-policy-and-application-performance"></a>Rendimiento de la aplicación y la Directiva de limitación
+
+Los tres parámetros siguientes de la Directiva de limitación **PercentTimeIn** afectan a la cantidad de tiempo que puede consumir una aplicación EWS en un servidor de acceso de cliente:
+
 - **EWSPercentTimeInAD**
-    
+
 - **EWSPercentTimeInCAS**
-    
+
 - **EWSPercentTimeInMailboxRPC**
-    
-Los valores especificados en los parámetros de directiva **PercentTimeIn** indican la cantidad de tiempo que se asigna un subproceso realiza una solicitud. Por ejemplo, suponiendo que un valor de **EWSPercentTimeInCAS** de 90, si hace que un proceso de dos solicitudes simultáneas que dedican 54 segundos cada código que se está ejecutando en el servidor de acceso de cliente, el proceso utiliza 108 segundos en un segundo 60 ventana. Esto representa un valor del parámetro **EWSPercentTimeInCAS** por ciento de 180. 
-  
+
+Los valores especificados en los parámetros de directiva **PercentTimeIn** indican la cantidad de tiempo que se asigna un subproceso que realiza una solicitud. Por ejemplo, suponiendo un valor de **EWSPercentTimeInCAS** de 90, si un proceso realiza dos solicitudes simultáneas que pasan 54 segundos cada ejecución de código en el servidor de acceso de cliente, el proceso usa 108 segundos en una ventana de 60. Esto representa un valor de parámetro **EWSPercentTimeInCAS** de 180 por ciento.
+
 > [!NOTE]
-> El valor del parámetro **EWSPercentTimeInCAS** es un superconjunto de los valores de parámetro **EWSPercentTimeInAD** y **EWSPercentTimeInMailboxRPC** superpuesta. Esto significa que los gastos en tiempo de procesamiento en el servidor de acceso de cliente siempre será mayor que los gastos en **EWSPercentTimeInAD** y **EWSPercentTimeInMailboxRPC**. Esto es porque para que el componente de Exchange hacer un Active Directory o RPC de llamadas, debe ya se está ejecutando el código del servidor de acceso de cliente. Además, los gastos en tiempo de procesamiento para **EWSPercentTimeInCAS** no se detención mientras LDAP o se realizan llamadas RPC. Aunque la solicitud esté sincrónicamente esperando una respuesta de los servicios de dominio de Active Directory (AD DS) o el almacén de Exchange, el proceso aún está consumiendo un subproceso en el servidor y, por lo tanto, debe seguir el subproceso cargará para que el uso de. 
-  
-La cantidad de tiempo de CPU que una aplicación puede tardar en un período de 60 segundos es posible que exceden estos límites; por lo tanto, es importante tener en cuenta el volumen y el tipo de solicitudes que se realizan. Por ejemplo, un lote de gran tamaño de **ResolveNames** operaciones que se realizan simultáneamente puede superar el valor del parámetro **EWSPercentTimeInAD** directiva. Los valores de directiva que están contenidos en la directiva de limitación predeterminada están diseñados para permitir que la mayoría de las aplicaciones de EWS funcionar sin problemas; Sin embargo, cuando las aplicaciones de gran volumen multiproceso poner un gran volumen de solicitudes en un determinado servidor de acceso de cliente, puede crear problemas. Para evitar este problema, considere la posibilidad de limitar el tamaño de los lotes que se va a ejecutar en el servidor. 
-  
-## <a name="throttling-policies-and-applications-that-send-a-large-volume-of-email"></a>Limitación de las directivas y las aplicaciones que envían un gran volumen de correo electrónico
-<a name="bk_RateLimits"> </a>
+> El valor del parámetro **EWSPercentTimeInCAS** es un supraconjunto superpuestos de los valores de los parámetros **EWSPercentTimeInAD** y **EWSPercentTimeInMailboxRPC** . Esto significa que el gasto en el tiempo de procesamiento del servidor de acceso de clientes será siempre mayor que los gastos en **EWSPercentTimeInAD** y **EWSPercentTimeInMailboxRPC**. Esto se debe a que para que el componente de Exchange realice una llamada de Active Directory o RPC, ya debe estar ejecutando el código del servidor de acceso de cliente. Además, los gastos en el tiempo de procesamiento de **EWSPercentTimeInCAS** no se detienen mientras se realizan llamadas LDAP o RPC. Aunque la solicitud podría esperar de forma sincrónica una respuesta de servicios de dominio de Active Directory (AD DS) o del almacén de Exchange, el proceso todavía está consumiendo un subproceso en el servidor y, por lo tanto, el subproceso debe seguir cobrando por ese uso.
 
-Las directivas de limitación predeterminada incluyen tres parámetros de directiva de límite de velocidad que pueden afectar a las aplicaciones que usan EWS para enviar un gran volumen de mensajes o enviar mensajes en lotes grandes en un breve período de tiempo. 
-  
+La cantidad de tiempo de CPU que puede tardar una aplicación en un período de 60-segundo puede superar estos límites de limitación; por lo tanto, es importante tener en cuenta el volumen y el tipo de solicitudes que se realizan. Por ejemplo, un lote grande de operaciones de **ResolveNames** que se realizan simultáneamente puede exceder el valor del parámetro de directiva **EWSPercentTimeInAD** . Los valores de directiva contenidos en la Directiva de limitación predeterminada están diseñados para permitir que la mayoría de las aplicaciones de EWS funcionen sin problemas; sin embargo, cuando las aplicaciones multiprocesos de alto volumen colocan un gran volumen de solicitudes en un servidor de acceso de cliente en particular, esto puede crear problemas. Para evitarlo, considere limitar el tamaño de los lotes que se van a ejecutar en el servidor.
+
+## <a name="throttling-policies-and-applications-that-send-a-large-volume-of-email"></a>Limitación de las directivas y aplicaciones que envían un gran volumen de correo electrónico
+
+Las directivas de limitación predeterminadas incluyen tres parámetros de directiva de límite de velocidad que pueden afectar a las aplicaciones que usan EWS para enviar un gran volumen de mensajes o enviar mensajes en lotes grandes en un breve período de tiempo.
+
 > [!NOTE]
-> En general, se recomienda que no use EWS para enviar correo electrónico masivo. Use un host SMTP que está especializado en servicios de correo masivo para enviar mensajes de correo masivo de gran tamaño frecuentes. 
-  
-El parámetro de directiva **MessageRateLimit** especifica el número de mensajes por minuto que se pueden enviar por cualquier cliente de Exchange, incluidos EWS. De forma predeterminada, esta directiva se establece en 30 mensajes por minuto. Para los usuarios normales, esto es suele ser suficiente. Sin embargo, pueden ejecutar aplicaciones que envían lotes de gran tamaño de los mensajes de correo electrónico, por ejemplo como parte de un programa de facturación, problemas. Cuando se excede este límite de directiva, se retrasa la entrega de mensajes para el buzón de correo. En concreto, los mensajes aparecerán en la carpeta Bandeja de salida o borradores durante largos períodos de tiempo cuando un usuario o una aplicación envía un número mayor de mensajes que el valor especificado por el parámetro **MessageRateLimit** . Asegúrese de tener en cuenta esto cuando está desarrollando una entrega seguimiento del sistema, especialmente si la aplicación utiliza un buzón de correo que los usuarios se conectan a través de Outlook. Cuando diferidos elementos se almacenan en la carpeta Bandeja de salida o borradores, los usuarios podrían interpretar como un error. 
-  
-El parámetro de directiva **RecipientRateLimit** especifica el límite en el número de destinatarios que un usuario puede tratar en un período de 24 horas. Por ejemplo, si este valor se establece en 500, significa que una única cuenta de buzón de correo de Exchange puede enviar mensajes a ningún día de más de 500 destinatarios cada. Este límite se aplica a los mensajes a los destinatarios que están dentro y fuera de la organización. Este límite predeterminado puede causar problemas en algunas aplicaciones de línea de negocio que no se ejecuta de factura de fin de mes y necesitan para enviar mensajes a más de este número de destinatarios. Puede usar los servicios externos que permiten el procesamiento por lotes de mensajes o independiente en retransmisión saliente las soluciones locales para evitar esta limitación. 
-  
-El parámetro de directiva **ForwardeeLimit** especifica el número máximo de destinatarios que se pueden reenviar los mensajes o redirige a por medio de las reglas de bandeja de entrada. Este parámetro no limita el número de mensajes que se pueden reenviar o redirige a los destinatarios. 
-  
-## <a name="errors-generated-when-throttling-limits-are-exceeded"></a>Se superan los errores generados cuando superado la limitación
-<a name="bk_ThrottlingErrors"> </a>
+> En general, se recomienda no usar EWS para enviar correo electrónico masivo. Use un host SMTP especializado en servicios de correo masivo para enviar mensajes de correo electrónico masivos de gran tamaño.
 
-Limitación de directivas cuando se superan, EWS genera uno de los errores que aparecen en la siguiente tabla.
-  
-**La tabla 3: Errores de límite de limitación**
+El parámetro de directiva **MessageRateLimit** especifica el número de mensajes por minuto que puede enviar cualquier cliente de Exchange, incluido EWS. De forma predeterminada, esta directiva está configurada en 30 mensajes por minuto. Para los usuarios normales, suele ser suficiente. Sin embargo, las aplicaciones que envían lotes de mensajes de correo electrónico de gran tamaño, por ejemplo, como parte de un programa de facturación, pueden tener problemas. Cuando se supera el límite de esta Directiva, se retrasa la entrega de mensajes para el buzón. En concreto, los mensajes aparecerán en la carpeta Bandeja de salida o borradores durante períodos de tiempo más prolongados en los que un usuario o aplicación envía un número de mensajes mayor que el valor especificado por el parámetro **MessageRateLimit** . No olvide tener esto en cuenta al desarrollar un sistema de seguimiento de entregas, especialmente si la aplicación usa un buzón al que los usuarios se conectan a través de Outlook. Cuando los elementos aplazados se almacenan en la carpeta Bandeja de salida o borradores, los usuarios pueden interpretarlo como un error.
 
-|**Error**|**Parámetro de la directiva de limitación**|**Descripción**|
+El parámetro de directiva **RecipientRateLimit** especifica el límite en el número de destinatarios que un usuario puede direccionar en un período de 24 horas. Por ejemplo, si este valor se establece en 500, significa que una sola cuenta de buzón de Exchange puede enviar mensajes a un máximo de 500 destinatarios cada día. Este límite se aplica a los mensajes a destinatarios que están dentro y fuera de la organización. Este límite predeterminado puede causar problemas para algunas aplicaciones de línea de negocio que realizan facturas de fin de mes y que necesitan enviar mensajes a más de este número de destinatarios. Puede usar servicios externos que permitan el procesamiento por lotes de mensajes o soluciones de retransmisión de salida local independientes para evitar esta limitación.
+
+El parámetro de directiva **ForwardeeLimit** especifica el número máximo de destinatarios a los que se pueden reenviar o redirigir los mensajes mediante reglas de la bandeja de entrada. Este parámetro no limita el número de mensajes que se pueden reenviar o redirigir a los destinatarios.
+
+## <a name="errors-generated-when-throttling-limits-are-exceeded"></a>Errores generados al superar los límites de limitación
+
+Cuando se superan las directivas de limitación, EWS genera uno de los errores enumerados en la siguiente tabla.
+
+**Tabla 3: errores de límite de limitación**
+
+|**Error**|**Parámetro de la Directiva de limitación**|**Descripción**|
 |:-----|:-----|:-----|
-|ErrorExceededConnectionCount  <br/> |**EWSMaxConcurrency** <br/> |Indica que no hay más peticiones simultáneas en el servidor de los permitidos por la directiva de un usuario.  <br/> |
-|ErrorExceededSubscriptionCount  <br/> |**EWSMaxSubscriptions** <br/> |Indica que un usuario de la limitación de directiva se ha superado el número máximo de suscripciones.  <br/> |
-|ErrorExceededFindCountLimit  <br/> |**EWSFindCountLimit** <br/> |Indica que una llamada de la operación de búsqueda ha superado el número total de elementos que se pueden devolver.  <br/> |
-|ErrorServerBusy  <br/> |**EWSPercentTimeInMailboxRPC** **EWSPercentTimeInCAS** **EWSPercentTimeInAD**                   <br/> |Se produce cuando el servidor está ocupado. El valor de BackOffMilliseconds devuelto con errores ErrorServerBusy indica al cliente la cantidad de tiempo que debe esperar hasta que debe volver a enviar la solicitud que ha provocado la respuesta que devuelve este código de error.  <br/> |
-   
-En la siguiente tabla se enumera los códigos de estado HTTP que se devuelven mediante la limitación de errores.
-  
-**Tabla 4: Códigos de estado HTTP devueltos por la limitación de errores**
+|ErrorExceededConnectionCount  <br/> |**EWSMaxConcurrency** <br/> |Indica que hay más solicitudes simultáneas en el servidor de las permitidas por la Directiva de un usuario.  <br/> |
+|ErrorExceededSubscriptionCount  <br/> |**EWSMaxSubscriptions** <br/> |Indica que se ha superado el número máximo de suscripciones de la Directiva de limitación de un usuario.  <br/> |
+|ErrorExceededFindCountLimit  <br/> |**EWSFindCountLimit** <br/> |Indica que una llamada a una operación de búsqueda ha superado el número total de elementos que se pueden devolver.  <br/> |
+|ErrorServerBusy  <br/> |**EWSPercentTimeInMailboxRPC**         **EWSPercentTimeInCAS**         **EWSPercentTimeInAD** <br/> |Se produce cuando el servidor está ocupado. El valor BackOffMilliseconds devuelto con ErrorServerBusy errores indica al cliente la cantidad de tiempo que debe esperar hasta que deba volver a enviar la solicitud que causó la respuesta que ha devuelto el código de error.  <br/> |
+
+En la siguiente tabla se enumeran los códigos de Estado HTTP que se devuelven al limitar los errores.
+
+**Tabla 4: códigos de Estado HTTP devueltos por errores de limitación**
 
 |**Código de estado HTTP**|**Descripción**|
 |:-----|:-----|
-|HTTP 503  <br/> |Indica que las solicitudes EWS se puesta en cola con IIS. El cliente debe retrasar el envío de las solicitudes adicionales hasta más adelante.  <br/> |
-|HTTP 500  <br/> |Indica un error de servidor interno con el código de error ErrorServerBusy. Esto indica que el cliente debe retrasar el envío de las solicitudes adicionales hasta más adelante. La respuesta puede contener una copia de sugerencia denominado BackOffMilliseconds. Si está presente, el valor de BackOffMilliseconds debe utilizarse como la duración hasta que el cliente vuelve a enviar una solicitud.  <br/> |
-|HTTP 200  <br/> |Contiene una respuesta de error basada en el esquema EWS con un código de error ErrorInternalServerError. Un código de error interno de ErrorServerBusy puede estar presente. Esto indica que el cliente debe retrasar el envío de las solicitudes adicionales hasta más adelante.  <br/> |
-   
+|HTTP 503  <br/> |Indica que las solicitudes de EWS se encuentran en la cola de IIS. El cliente debe retrasar el envío de solicitudes adicionales hasta un momento posterior.  <br/> |
+|HTTP 500  <br/> |Indica un error interno del servidor con el código de error ErrorServerBusy. Esto indica que el cliente debe retrasar el envío de solicitudes adicionales hasta un momento posterior. La respuesta puede contener una sugerencia de deshacer llamada BackOffMilliseconds. Si está presente, el valor de BackOffMilliseconds debe usarse como duración hasta que el cliente reenvíe una solicitud.  <br/> |
+|HTTP 200  <br/> |Contiene una respuesta de error basada en esquema EWS con un código de error ErrorInternalServerError. Es posible que haya un código de error ErrorServerBusy interno. Esto indica que el cliente debe retrasar el envío de solicitudes adicionales hasta un momento posterior.  <br/> |
+
 ## <a name="see-also"></a>Vea también
 
-- [Administración de carga de trabajo de Exchange](http://technet.microsoft.com/en-us/library/jj150503.aspx)
-- [Cmdlet New-ThrottlingPolicy](http://technet.microsoft.com/en-us/library/dd351045.aspx)
-- [Descripción de las directivas de limitación](http://technet.microsoft.com/en-us/library/dd297964.aspx)
-- [Clase ThrottlingPolicy](http://msdn.microsoft.com/en-us/library/ff342496%28v=EXCHG.140%29.aspx)
-- [Directivas de limitación y el EWSFindCountLimit](http://blogs.msdn.com/b/exchangedev/archive/2010/03/12/throttling-policies-and-the-ewsfindcountlimit.aspx)
-- [Instantáneas de presupuesto en los registros de IIS](http://blogs.msdn.com/b/exchangedev/archive/2010/03/10/budget-snapshots-in-the-iis-logs.aspx)
-- [Efectos de limitación de la implementación de Exchange 2010 SP1](http://msexchangeteam.com/archive/2010/08/27/456040.aspx)
-- [Limitación de las asociaciones de directivas de Exchange 2010 SP1](http://msexchangeteam.com/archive/2010/08/02/455707.aspx)
-- [Directivas de limitación y CPUStartPercent](http://blogs.msdn.com/b/exchangedev/archive/2010/03/11/throttling-policies-and-cpustartpercent.aspx)
-- [Suplantación y EWS en Exchange](impersonation-and-ews-in-exchange.md)
-    
+- [Administración de la carga de trabajo de Exchange](https://technet.microsoft.com/library/jj150503.aspx)
+- [New-ThrottlingPolicy cmdlet](https://technet.microsoft.com/library/dd351045.aspx)
+- [Descripción de las directivas de limitación de clientes](https://technet.microsoft.com/library/dd297964.aspx)
+- [Clase ThrottlingPolicy](https://msdn.microsoft.com/library/ff342496%28v=EXCHG.140%29.aspx)
+- [Directivas de limitación de peticiones y EWSFindCountLimit](https://blogs.msdn.com/b/exchangedev/archive/2010/03/12/throttling-policies-and-the-ewsfindcountlimit.aspx)
+- [Instantáneas de presupuesto en los registros de IIS](https://blogs.msdn.com/b/exchangedev/archive/2010/03/10/budget-snapshots-in-the-iis-logs.aspx)
 
+- [Efectos de la limitación en su implementación en Exchange 2010 SP1](http://msexchangeteam.com/archive/2010/08/27/456040.aspx)
+- [Asociaciones de directivas de limitación de peticiones en Exchange 2010 SP1](http://msexchangeteam.com/archive/2010/08/02/455707.aspx)
+- [Directivas de limitación de peticiones y CPUStartPercent](https://blogs.msdn.com/b/exchangedev/archive/2010/03/11/throttling-policies-and-cpustartpercent.aspx)
+- [Suplantación y EWS en Exchange](impersonation-and-ews-in-exchange.md)

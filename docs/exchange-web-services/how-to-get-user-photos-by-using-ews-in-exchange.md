@@ -1,51 +1,51 @@
 ---
-title: Obtener fotografías de usuario mediante el uso de EWS en Exchange
+title: Obtener fotos de usuario mediante EWS en Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: f86d1099-1f57-47dc-abf2-4d5ae4e900a9
-description: Obtenga información sobre cómo obtener fotografías de usuario que están asociadas con un buzón de correo o póngase en contacto con mediante el uso de la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: f0f5cddd41fc563fb9ed38e75b505830a3992411
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Obtenga información sobre cómo obtener las fotos del usuario que están asociadas a un buzón o contacto mediante la API administrada de EWS o EWS en Exchange.
+localization_priority: Priority
+ms.openlocfilehash: 14f2bc6bef1ce3c3529f03e213e3ada7c45a5a71
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763103"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455789"
 ---
-# <a name="get-user-photos-by-using-ews-in-exchange"></a>Obtener fotografías de usuario mediante el uso de EWS en Exchange
+# <a name="get-user-photos-by-using-ews-in-exchange"></a>Obtener fotos de usuario mediante EWS en Exchange
 
-Obtenga información sobre cómo obtener fotografías de usuario que están asociadas con un buzón de correo o póngase en contacto con mediante el uso de la API administrada de EWS o EWS en Exchange.
+Obtenga información sobre cómo obtener las fotos del usuario que están asociadas a un buzón o contacto mediante la API administrada de EWS o EWS en Exchange.
   
-Es interesante poner una cara a un nombre. Si le gusta a los usuarios colocar los nombres a las caras, la aplicación puede solicitar una imagen, normalmente una foto, de Exchange que representa una cuenta de correo electrónico. Puede obtener una foto de usuario almacenada en un servidor de Exchange para un buzón de correo, o puede obtener una foto de contacto de los contactos que se almacenan en su buzón de correo.
+Es estupendo colocar una cara a un nombre. Si los usuarios desean poner los nombres en caras, la aplicación puede solicitar una imagen, normalmente una foto, de Exchange que represente una cuenta de correo electrónico. Puede obtener una foto de usuario almacenada en un servidor de Exchange para un buzón de correo o puede obtener una foto de contacto de los contactos almacenados en el buzón de correo.
   
-Puede usar varias tecnologías distintas para obtener fotos de los buzones de correo o los servicios de dominio de Active Directory (AD DS). La mejor manera de obtener una foto depende del tipo de contacto que se desea obtener una foto de. 
+Puede usar varias tecnologías diferentes para obtener fotos de los buzones de correo o los servicios de dominio de Active Directory (AD DS). La mejor forma de obtener una foto depende del tipo de contacto del que deseas obtener una foto. 
   
-**La tabla 1. Tecnologías a usar para obtener fotos de usuario según el tipo de contacto**
+**Tabla 1. Tecnologías que se deben usar para obtener las fotos del usuario según el tipo de contacto**
 
-|**Tipo de contacto**|**Para usar las tecnologías**|
+|**Tipo de contacto**|**Tecnologías para usar**|
 |:-----|:-----|
-|Foto de usuario de buzón de correo  <br/> |[Obtener una foto de usuario de buzón de correo con REST](#bk_REST)<br/><br/> [Obtener una foto de usuario mediante el uso de EWS](#bk_EWS) <br/> |
-|Foto de contacto de usuario  <br/> |[Obtener una foto de usuario de contacto mediante el uso de API administrada de EWS](#bk_EWSMA)<br/><br/> [Obtener una foto de usuario mediante el uso de EWS](#bk_EWS) <br/> |
+|Foto del usuario del buzón  <br/> |[Obtener una foto de usuario de buzón de correo con REST](#bk_REST)<br/><br/> [Obtener una foto de usuario mediante EWS](#bk_EWS) <br/> |
+|Foto de contacto del usuario  <br/> |[Obtener una foto de contacto del usuario mediante la API administrada de EWS](#bk_EWSMA)<br/><br/> [Obtener una foto de usuario mediante EWS](#bk_EWS) <br/> |
 
 <a name="bk_REST"> </a>
 
 ## <a name="get-a-mailbox-user-photo-by-using-rest"></a>Obtener una foto de usuario de buzón de correo con REST
 
-Puede solicitar fotografías de usuario desde un servidor de Exchange mediante el uso de una solicitud HTTPS **obtener** estándar. En la solicitud, especifique la dirección de la cuenta de correo electrónico y un código de tamaño de la imagen, tal como se muestra en el siguiente ejemplo. 
+Puede solicitar fotos de usuario de un servidor de Exchange mediante una solicitud HTTP **Get** estándar. En la solicitud, especifique la dirección de la cuenta de correo electrónico y un código de tamaño para la imagen, como se muestra en el ejemplo siguiente. 
   
 ```HTML
 https://Exchange Server/ews/Exchange.asmx/s/GetUserPhoto?email=email address&amp;size=size code
 ```
 
-Use la operación de [GetUserSettings](how-to-get-user-settings-from-exchange-by-using-autodiscover.md) del servicio de detección automática para recuperar la configuración de **ExternalEwsUrl** , que contiene la dirección URL del extremo de servicios Web de Exchange (EWS) y la ubicación del controlador **Exchange.asmx** HTTP que devuelve el fotos de usuario. 
+Use la operación [GetUserSettings](how-to-get-user-settings-from-exchange-by-using-autodiscover.md) del servicio Detección automática para recuperar la configuración de **ExternalEwsUrl** , que contiene la dirección URL del extremo de los servicios web Exchange (EWS) y la ubicación del controlador HTTP de **Exchange. asmx** que devuelve las fotos del usuario. 
   
-Cada código de tamaño indica el alto y el ancho de la imagen en píxeles. Por ejemplo, el código de tamaño **HR48x48** devuelve una imagen que es 48 píxeles de alto por 48 píxeles de ancho. Los valores posibles para el parámetro de código de tamaño son los mismos que los valores posibles para el elemento [SizeRequested](http://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx) . Si la solicitud especifica un tamaño que no está disponible, se devolverá la foto disponible más grande. Si no hay foto se almacena en el servidor de Exchange, se devolverá la imagen en miniatura que se almacena en AD DS para la cuenta. 
+Cada código de tamaño indica el alto y el ancho de la imagen en píxeles. Por ejemplo, el código de tamaño **HR48x48** devuelve una imagen de 48 píxeles de alto por 48 píxeles de ancho. Los valores posibles para el parámetro de código de tamaño son los mismos que los valores posibles para el elemento [SizeRequested](https://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx) . Si la solicitud especifica un tamaño que no está disponible, se devolverá la foto más grande disponible. Si no hay ninguna foto almacenada en el servidor Exchange, se devolverá la imagen en miniatura almacenada en AD DS para la cuenta. 
   
 > [!NOTE]
-> El código de tamaño **HR48x48** siempre devuelve la imagen en miniatura de AD DS, si está disponible. 
+> El código de tamaño **HR48x48** siempre devuelve la imagen en miniatura de AD DS si está disponible. 
   
-En el ejemplo siguiente se muestra cómo puede usar la solicitud GET para recuperar la foto de usuario para Sadie y guárdelo en su equipo local.
+El siguiente ejemplo muestra cómo se puede usar la solicitud GET para recuperar la foto de usuario para Sadie y guardarla en el equipo local.
   
 ```cs
 // Create the web request with the REST URL.
@@ -64,27 +64,27 @@ using (HttpWebResponse resp = request.GetResponse() as HttpWebResponse)
 
 La solicitud devolverá una respuesta HTTP. 
   
-**Tabla 2. Códigos de respuesta para una solicitud de GetUserPhoto**
+**Tabla 2. Códigos de respuesta para una solicitud GetUserPhoto**
 
 |**Código de respuesta**|**Descripción**|
 |:-----|:-----|
-|200  <br/> |Una imagen está disponible para la cuenta de correo electrónico especificada y la imagen binaria se encuentra en la respuesta.  <br/> |
-|304  <br/> |La imagen no ha cambiado desde la última vez que se devolvió el **ETag** a la aplicación.  <br/> |
-|404  <br/> |No hay ninguna imagen está disponible para la cuenta de correo electrónico especificada.  <br/> |
+|200  <br/> |Hay una imagen disponible para la cuenta de correo electrónico especificada y la imagen binaria está contenida en la respuesta.  <br/> |
+|304  <br/> |La imagen no ha cambiado desde la última vez que la **ETag** se devolvió a la aplicación.  <br/> |
+|404  <br/> |No hay ninguna imagen disponible para la cuenta de correo electrónico especificada.  <br/> |
 
 <a name="bk_REST"> </a>
 
-## <a name="cache-user-photos"></a>Fotos de usuario de la memoria caché
+## <a name="cache-user-photos"></a>Almacenar en caché fotos de usuario
 
-Exchange devuelve los datos con un tipo de contenido de imagen/jpeg, junto con una colección de valores de encabezado. El encabezado **ETag** es similar a una clave de cambio. El valor es una cadena que representa la última vez que se actualizó la foto. El **valor ETag** sigue siendo la misma para la foto de usuario hasta que se modifica la foto. Puede enviar este valor de **ETag** para el servidor en la solicitud HTTPS **obtener** en un encabezado **If--Match** . Si la foto no ha cambiado desde la última solicitud, el servidor responde con una respuesta HTTP 304 que se indica como tales. Esto significa que se puede utilizar la foto de usuario que solicita y guardado previamente en lugar de procesar una nueva. 
+Exchange devuelve los datos con un tipo de contenido image/JPEG, junto con una colección de valores de encabezado. El encabezado **ETag** es similar a una clave de cambio. El valor es una cadena que representa la última vez que se actualizó la foto. La **ETag** sigue siendo la misma para la foto del usuario hasta que se modifique la foto. Puede enviar este valor de **ETag** al servidor en la solicitud HTTPS **Get** en un encabezado **If-None-Match** . Si la foto no se ha modificado desde la última solicitud, el servidor responderá con una respuesta HTTP 304 que indique como tal. Esto significa que puede usar la foto de usuario que solicitó y guardó anteriormente en lugar de procesar una nueva. 
 
 <a name="bk_EWSMA"> </a>
 
-## <a name="get-a-contact-user-photo-by-using-ews-managed-api"></a>Obtener una foto de usuario de contacto mediante el uso de API administrada de EWS
+## <a name="get-a-contact-user-photo-by-using-ews-managed-api"></a>Obtener una foto de contacto del usuario mediante la API administrada de EWS
 
-La aplicación puede utilizar la API administrada de EWS para recuperar las fotos de contactos, si el contacto se almacena en una carpeta de contactos en el buzón del usuario. Para ello, en primer lugar, busque la **ItemId** para el contacto que desee usar. A continuación, después de enlazar a ese contacto, cargarlo a la colección attachments. Si el contacto tiene una foto, la foto será uno de los datos adjuntos. Recorrer en iteración la colección de datos adjuntos, comprobar el valor de la propiedad **IsContactPhoto** . Cuando encuentre la foto del contacto, puede guardar en el equipo local y la aplicación puede tener acceso a él. 
+La aplicación puede usar la API administrada de EWS para recuperar las fotos de los contactos, si el contacto se almacena en una carpeta de contactos en el buzón del usuario. Para ello, en primer lugar, busque el **Itemid** del contacto que desea usar. A continuación, después de enlazar a ese contacto, cárguelo a la colección Attachments. Si el contacto tiene una foto, la foto será uno de los datos adjuntos. Recorrer en bucle la colección Attachments, comprobando el valor de la propiedad **IsContactPhoto** . Cuando encuentre la foto del contacto, puede guardarla en el equipo local y su aplicación puede acceder a ella. 
   
-En el ejemplo siguiente se muestra este proceso. En este ejemplo se da por supuesto que **servicio** es un objeto [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que se ha autenticado el usuario a un servidor de Exchange. 
+En el ejemplo siguiente se muestra este proceso. En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un servidor de Exchange. 
   
 ```cs
 private static void GetContactPhoto(ExchangeService service, string ItemId)
@@ -114,21 +114,21 @@ private static void GetContactPhoto(ExchangeService service, string ItemId)
 
 <a name="bk_EWS"> </a>
 
-## <a name="get-a-user-photo-by-using-ews"></a>Obtener una foto de usuario mediante el uso de EWS
+## <a name="get-a-user-photo-by-using-ews"></a>Obtener una foto de usuario mediante EWS
 
-Si va a recibir una foto de usuario de AD DS, puede usar la operación de [GetUserPhoto](http://msdn.microsoft.com/library/f6e8143d-4235-428e-8f9c-ab6e9b1cfa6e%28Office.15%29.aspx) (si conoce la dirección de correo electrónico) o la operación [ResolveNames](http://msdn.microsoft.com/library/6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb%28Office.15%29.aspx) (si no conoce la dirección de correo electrónico). Si va a recibir una foto de usuario desde una carpeta de contactos en el buzón de correo, use la operación de [GetItem](http://msdn.microsoft.com/library/6b96dace-1260-4b83-869a-7c31c5583daa%28Office.15%29.aspx) seguida de la operación [GetAttachment](http://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) . En cualquier caso, la foto se devuelve como una cadena con codificación Base64 en la respuesta XML. 
+Si está recibiendo una foto de usuario de AD DS, puede usar la operación [GetUserPhoto](https://msdn.microsoft.com/library/f6e8143d-4235-428e-8f9c-ab6e9b1cfa6e%28Office.15%29.aspx) (si conoce la dirección de correo electrónico) o la operación [ResolveNames](https://msdn.microsoft.com/library/6b4eb4b3-9ad6-4804-a09f-7e20cfea4dbb%28Office.15%29.aspx) (si no conoce la dirección de correo electrónico). Si va a obtener una foto de usuario de una carpeta de contactos en el buzón de correo, use la operación [GetItem](https://msdn.microsoft.com/library/6b96dace-1260-4b83-869a-7c31c5583daa%28Office.15%29.aspx) seguida de la operación [GetAttachment](https://msdn.microsoft.com/library/24d10a15-b942-415e-9024-a6375708f326%28Office.15%29.aspx) . En cualquier caso, la foto se devuelve como una cadena codificada en Base64 en la respuesta XML. 
   
-### <a name="get-a-mailbox-user-photo-by-using-the-getuserphoto-operation"></a>Obtener una foto de usuario de buzón de correo mediante el uso de la operación de GetUserPhoto
+### <a name="get-a-mailbox-user-photo-by-using-the-getuserphoto-operation"></a>Obtener una foto de usuario de buzón de correo mediante la operación GetUserPhoto
 
-Mediante la operación de **GetUserPhoto** es un proceso sencillo. En la solicitud XML, especifique la dirección de correo electrónico del usuario y el [tamaño de la foto](http://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx) para devolver (en el elemento [SizeRequested](http://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx) ). El siguiente ejemplo de solicitud XML muestra cómo obtener una foto para Sadie Daniels que es 360 píxeles de ancho por 360 píxeles de alto. 
+El uso de la operación **GetUserPhoto** es sencillo. En la solicitud XML, especifique la dirección de correo electrónico del usuario y el [tamaño de la foto](https://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx) que se va a devolver (en el elemento [SizeRequested](https://msdn.microsoft.com/library/e86f98b6-83b5-4530-80eb-dc5df42e2c62%28Office.15%29.aspx) ). El siguiente ejemplo de solicitud XML muestra cómo obtener una foto para Sadie Daniels de 360 píxeles de ancho por 360 píxeles de alto. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
-               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages">
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"
+               xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages">
    <soap:Header>
       <t:RequestServerVersion Version="Exchange2013 "/>
    </soap:Header>
@@ -142,15 +142,15 @@ Mediante la operación de **GetUserPhoto** es un proceso sencillo. En la solicit
 
 ```
 
-La siguiente es la respuesta XML. La foto con codificación Base64 está contenida en el elemento [PictureData](http://msdn.microsoft.com/library/1124eac3-ebf2-4b81-96d3-96838c840433%28Office.15%29.aspx) (el contenido se ha acortado para mejorar la legibilidad). 
+A continuación se encuentra la respuesta XML. La foto codificada en Base64 se incluye en el elemento [PictureData](https://msdn.microsoft.com/library/1124eac3-ebf2-4b81-96d3-96838c840433%28Office.15%29.aspx) (el contenido se ha abreviado para facilitar la lectura). 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <GetUserPhotoResponse ResponseClass="Success" 
-         xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+         xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
       <ResponseCode>NoError</ResponseCode>
       <HasChanged>true</HasChanged>
       <PictureData>/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAg... wATRRRSuB//2Q==</PictureData>
@@ -160,17 +160,17 @@ La siguiente es la respuesta XML. La foto con codificación Base64 está conteni
 
 ```
 
-### <a name="get-a-mailbox-user-photo-by-using-the-resolvenames-operation"></a>Obtener una foto de usuario de buzón de correo mediante el uso de la operación ResolveNames
+### <a name="get-a-mailbox-user-photo-by-using-the-resolvenames-operation"></a>Obtener una foto de usuario de buzón de correo mediante la operación ResolveNames
 
-Si no conoce la dirección de correo electrónico del usuario para el que va a obtener una foto, puede [usar la operación ResolveNames](how-to-resolve-ambiguous-names-by-using-ews-in-exchange-2013.md) para obtener a candidatos para una coincidencia de posible. Si se especifica "AllProperties" para el atributo **ContactDataShape** del elemento [ResolveNames](http://msdn.microsoft.com/library/c85207e1-1315-443b-94ec-2b58f405076b%28Office.15%29.aspx) , se devolverá una gran cantidad de datos, incluidas las fotos de usuario, para cada candidato. En el ejemplo siguiente se muestra la solicitud XML para resolver el nombre "Sadie" y devolver todas las propiedades para cada candidato. 
+Si no conoce la dirección de correo electrónico del usuario para el que obtiene una foto, puede [usar la operación ResolveNames](how-to-resolve-ambiguous-names-by-using-ews-in-exchange-2013.md) para obtener candidatos para una posible coincidencia. Si especifica "AllProperties" para el atributo **ContactDataShape** del elemento [ResolveNames](https://msdn.microsoft.com/library/c85207e1-1315-443b-94ec-2b58f405076b%28Office.15%29.aspx) , se devolverán muchos datos, incluidas las fotos de los usuarios, para cada candidato. En el ejemplo siguiente se muestra la solicitud XML para resolver el nombre "Sadie" y devolver todas las propiedades de cada candidato. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
 <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>  
@@ -182,15 +182,15 @@ xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
 </soap:Envelope>
 ```
 
-Se devuelve una gran cantidad de datos en la respuesta. En el ejemplo siguiente se muestra sólo los datos que es relevantes para la foto de usuario. El elemento de **foto** contiene la foto de usuario con codificación Base64 (el contenido se ha acortado para mejorar la legibilidad). 
+Se devolverá una gran cantidad de datos en la respuesta. En el ejemplo siguiente se muestran solo los datos relevantes para la foto del usuario. El elemento **Photo** contiene la foto de usuario con codificación base64 (el contenido se ha reducido para facilitar la lectura). 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:ResolveNamesResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:ResolveNamesResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:ResolveNamesResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -221,18 +221,18 @@ Se devuelve una gran cantidad de datos en la respuesta. En el ejemplo siguiente 
 
 ```
 
-### <a name="get-a-contact-user-photo-by-using-the-getattachment-operation"></a>Obtener una foto de usuario de contacto mediante el uso de la operación GetAttachment
+### <a name="get-a-contact-user-photo-by-using-the-getattachment-operation"></a>Obtener una foto de contacto del usuario mediante la operación GetAttachment
 
-Puede usar EWS para obtener fotos de contactos almacenados en su buzón de correo. En primer lugar, use la operación **GetItem** para devolver todas las propiedades, por lo que puede buscar las fotografías. En el ejemplo siguiente se muestra una solicitud XML para obtener un elemento de contacto. El identificador de elemento se ha acortado para mejorar la legibilidad. 
+Puede usar EWS para obtener fotos de los contactos almacenados en su buzón de correo. En primer lugar, use la operación **GetItem** para devolver todas las propiedades para que pueda buscar fotografías. En el ejemplo siguiente se muestra una solicitud XML para obtener un elemento de contacto. El identificador de elemento se ha abreviado para facilitar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetItem xmlns='http://schemas.microsoft.com/exchange/services/2006/messages'>
+    <GetItem xmlns='https://schemas.microsoft.com/exchange/services/2006/messages'>
       <ItemShape>
         <t:BaseShape>AllProperties</t:BaseShape>
       </ItemShape>
@@ -245,15 +245,15 @@ Puede usar EWS para obtener fotos de contactos almacenados en su buzón de corre
 
 ```
 
-Busque el elemento [HasPicture](http://msdn.microsoft.com/library/922a43fe-01bd-49f2-9261-e00e4699b8da%28Office.15%29.aspx) comprobar que el contacto tiene una foto asociada. A continuación, mire a través de la colección de datos adjuntos para uno que tenga el valor true para el elemento [IsContactPhoto](http://msdn.microsoft.com/library/ae36b5f9-a787-4863-9dbc-258ad724801d%28Office.15%29.aspx) . El siguiente ejemplo de respuesta muestra sólo los datos relevantes. Los valores de ID se acortan para mejorar la legibilidad. 
+Busque el elemento [HasPicture](https://msdn.microsoft.com/library/922a43fe-01bd-49f2-9261-e00e4699b8da%28Office.15%29.aspx) para comprobar que el contacto tiene una foto asociada. A continuación, busque en la colección de datos adjuntos uno que tenga un valor de true para el elemento [IsContactPhoto](https://msdn.microsoft.com/library/ae36b5f9-a787-4863-9dbc-258ad724801d%28Office.15%29.aspx) . El siguiente ejemplo de respuesta muestra solo los datos relevantes. Los valores de ID se acortan para facilitar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -287,17 +287,17 @@ Busque el elemento [HasPicture](http://msdn.microsoft.com/library/922a43fe-01bd-
 
 ```
 
-A continuación, use la operación **GetAttachment** con el **AttachmentId** para solicitar los datos adjuntos que tiene la foto del contacto. En el ejemplo siguiente se muestra la solicitud XML para obtener los datos adjuntos. El identificador es más cortos para mejorar la legibilidad. 
+A continuación, use la operación **GetAttachment** con **AttachmentId** para solicitar los datos adjuntos que tienen la foto de contacto. En el ejemplo siguiente se muestra la solicitud XML para obtener los datos adjuntos. El identificador se acorta para facilitar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <GetAttachment xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <GetAttachment xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <AttachmentShape/>
       <AttachmentIds>
          <t:AttachmentId Id="1LGlhgpgoA="/>
@@ -308,15 +308,15 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 
 ```
 
-En el ejemplo siguiente se muestra la respuesta XML con la información acerca de los datos adjuntos que ha solicitado. El elemento de [contenido](http://msdn.microsoft.com/library/24f8c54a-505f-4fc0-b7e7-93ad50b97070%28Office.15%29.aspx) contiene la cadena con codificación Base64 para la foto de usuario más cortos en este ejemplo para mejorar la legibilidad. 
+En el ejemplo siguiente se muestra la respuesta XML con información sobre los datos adjuntos solicitados. El elemento [Content](https://msdn.microsoft.com/library/24f8c54a-505f-4fc0-b7e7-93ad50b97070%28Office.15%29.aspx) contiene la cadena codificada en base64 para la foto del usuario, abreviada en este ejemplo para facilitar su lectura. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:GetAttachmentResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:GetAttachmentResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:GetAttachmentResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -337,9 +337,9 @@ En el ejemplo siguiente se muestra la respuesta XML con la información acerca d
 
 <a name="bk_EWS"> </a>
 
-## <a name="decode-a-base64-encoded-string"></a>Descodifica una cadena con codificación Base64
+## <a name="decode-a-base64-encoded-string"></a>Descodificar una cadena codificada en Base64
 
-Independientemente de la operación que se utiliza para obtener una foto de usuario, debe descodificar dicha cadena, por lo que puede usar en la aplicación. En el ejemplo siguiente se muestra cómo descodificar la cadena y, a continuación, guárdelo en el equipo local para su aplicación puede tener acceso a él más adelante.
+Independientemente de la operación que use para obtener una foto del usuario, debe descodificar esa cadena para poder usarla en la aplicación. En el siguiente ejemplo, se muestra cómo descodificar la cadena y, a continuación, guardarla en el equipo local para que la aplicación pueda tener acceso a ella más adelante.
   
 ```cs
 // Convert the encoded string into a byte array.
@@ -359,8 +359,8 @@ using (FileStream file = new FileStream(ContactName + ".jpg", FileMode.Create, S
 
 ## <a name="see-also"></a>Vea también
 
-- [Las personas y los contactos de EWS en Exchange](people-and-contacts-in-ews-in-exchange.md)    
-- [Resolver nombres ambiguos mediante el uso de EWS en Exchange 2013](how-to-resolve-ambiguous-names-by-using-ews-in-exchange-2013.md)    
-- [Contactos de proceso por lotes mediante EWS en Exchange](how-to-process-contacts-in-batches-by-using-ews-in-exchange.md)
+- [Personas y contactos de EWS en Exchange](people-and-contacts-in-ews-in-exchange.md)    
+- [Resolver nombres ambiguos mediante EWS en Exchange 2013](how-to-resolve-ambiguous-names-by-using-ews-in-exchange-2013.md)    
+- [Procesar contactos en lotes mediante EWS en Exchange](how-to-process-contacts-in-batches-by-using-ews-in-exchange.md)
     
 

@@ -3,21 +3,21 @@ title: Empezar a trabajar con aplicaciones de cliente de la API administrada de 
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: c2267733-6f4f-49e5-9614-1e4a24c3af1a
 description: Desarrolle una sencilla aplicación cliente de correo electrónico Hola a todos para Exchange mediante la API administrada EWS.
-ms.openlocfilehash: b4254ab80b4dfc2c8fadf90c79d57517c3a0bb16
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
-ms.translationtype: HT
+localization_priority: Priority
+ms.openlocfilehash: 45c1f1c794fc505d1dc3d059d5bde106dc37009f
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353990"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455397"
 ---
 # <a name="get-started-with-ews-managed-api-client-applications"></a>Empezar a trabajar con aplicaciones de cliente de la API administrada de EWS
 
 Desarrolle una sencilla aplicación cliente de correo electrónico Hola a todos para Exchange mediante la API administrada EWS. 
   
-La [API administrada EWS](http://aka.ms/ews-managed-api-readme) proporciona un modelo de objetos intuitivo y fácil de usar para enviar y recibir mensajes de servicios web desde aplicaciones cliente, aplicaciones de portal y aplicaciones de servicio. Puede tener acceso a casi toda la información almacenada en un buzón de correo de Exchange Online, Exchange Online como parte de Office 365 o Exchange Server mediante la API administrada EWS. Puede usar la información de este artículo como ayuda para desarrollar su primera aplicación cliente de la API administrada EWS. 
+La [API administrada EWS](https://aka.ms/ews-managed-api-readme) proporciona un modelo de objetos intuitivo y fácil de usar para enviar y recibir mensajes de servicios web desde aplicaciones cliente, aplicaciones de portal y aplicaciones de servicio. Puede tener acceso a casi toda la información almacenada en un buzón de correo de Exchange Online, Exchange Online como parte de Office 365 o Exchange Server mediante la API administrada EWS. Puede usar la información de este artículo como ayuda para desarrollar su primera aplicación cliente de la API administrada EWS. 
   
 > [!NOTE]
 > La API administrada EWS ya está disponible como proyecto de código abierto en [GitHub](https://github.com/officedev/ews-managed-api). Puede usar la biblioteca de código abierto para: 
@@ -32,25 +32,26 @@ La [API administrada EWS](http://aka.ms/ews-managed-api-readme) proporciona un m
 
 Si ya tiene una cuenta de buzón de Exchange, puede omitir esta sección. En caso contrario, dispone de las opciones siguientes para configurar un buzón de Exchange para su primera aplicación cliente EWS:
   
-- Obtener un [sitio para desarrolladores de Office 365](http://msdn.microsoft.com/es-ES/library/office/fp179924.aspx) (recomendado). Esta es la forma más rápida de configurar un buzón de Exchange. 
+- Obtener un [sitio para desarrolladores de Office 365](https://msdn.microsoft.com/library/office/fp179924.aspx) (recomendado). Esta es la forma más rápida de configurar un buzón de Exchange. 
+
+- Descargar [Exchange Server](https://office.microsoft.com/exchange/microsoft-exchange-try-or-buy-exchange-we-can-help-you-decide-FX103746846.aspx?WT%2Eintid1=ODC%5FENUS%5FFX103472230%5FXT103965589).
+
     
-- Descargar [Exchange Server](http://office.microsoft.com/en-us/exchange/microsoft-exchange-try-or-buy-exchange-we-can-help-you-decide-FX103746846.aspx?WT%2Eintid1=ODC%5FENUS%5FFX103472230%5FXT103965589).
-    
-Una vez que haya comprobado que puede enviar y recibir correo electrónico desde Exchange, estará listo para configurar el entorno de desarrollo. Puede usar [Outlook Web App](http://technet.microsoft.com/es-ES/library/jj657718%28v=exchg.150%29.aspx) del cliente web de Exchange para comprobar que puede enviar correo electrónico. 
+Una vez que haya comprobado que puede enviar y recibir correo electrónico desde Exchange, estará listo para configurar el entorno de desarrollo. Puede usar [Outlook Web App](https://technet.microsoft.com/library/jj657718%28v=exchg.150%29.aspx) del cliente web de Exchange para comprobar que puede enviar correo electrónico. 
   
 ## <a name="set-up-your-development-environment"></a>Configurar el entorno de desarrollo
 <a name="Setup"> </a>
 
 Asegúrese de que tiene acceso a los siguientes elementos:
   
-- Cualquier versión de [Visual Studio](http://www.visualstudio.com/es-ES/downloads/download-visual-studio-vs.aspx) que sea compatible con .NET Framework 4. Aunque técnicamente no se necesita Visual Studio porque se puede usar cualquier compilador de C#, recomendamos que lo use. 
+- Cualquier versión de [Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) que sea compatible con .NET Framework 4. Aunque técnicamente no se necesita Visual Studio porque se puede usar cualquier compilador de C#, recomendamos que lo use. 
     
-- La [API administrada EWS](http://aka.ms/ews-managed-api-readme). Puede usar la versión de 64 o 32 bits, en función de su sistema. Use la ubicación de instalación predeterminada. 
+- La [API administrada EWS](https://aka.ms/ews-managed-api-readme). Puede usar la versión de 64 o 32 bits, en función de su sistema. Use la ubicación de instalación predeterminada. 
     
 ## <a name="create-your-first-ews-managed-api-application"></a>Crear la primera aplicación de API administrada EWS
 <a name="Create"> </a>
 
-En estos pasos se da por supuesto que ha configurado un sitio para desarrolladores de Office 365. Si ha descargado e instalado Exchange, deberá [instalar un certificado válido](http://technet.microsoft.com/es-ES/library/bb310769%28v=exchg.141%29.aspx) en el servidor de Exchange o [implementar una devolución de llamada de validación de certificado](how-to-validate-a-server-certificate-for-the-ews-managed-api.md) para un certificado autofirmado proporcionado de forma predeterminada. Tenga en cuenta también que estos pasos pueden variar ligeramente según la versión de Visual Studio que use. 
+En estos pasos se da por supuesto que ha configurado un sitio para desarrolladores de Office 365. Si ha descargado e instalado Exchange, deberá [instalar un certificado válido](https://technet.microsoft.com/library/bb310769%28v=exchg.141%29.aspx) en el servidor de Exchange o [implementar una devolución de llamada de validación de certificado](how-to-validate-a-server-certificate-for-the-ews-managed-api.md) para un certificado autofirmado proporcionado de forma predeterminada. Tenga en cuenta también que estos pasos pueden variar ligeramente según la versión de Visual Studio que use. 
   
 ### <a name="step-1-create-a-project-in-visual-studio"></a>Paso 1: crear un proyecto en Visual Studio
 
@@ -68,7 +69,7 @@ Visual Studio crea el proyecto y abre la ventana de documento de código Program
     
 2. En el **Explorador de soluciones** y en el proyecto **HelloWorld**, abra el menú contextual (botón derecho) de **Referencias** y elija **Agregar referencia** en el menú contextual. Se abrirá un cuadro de diálogo para administrar las referencias del proyecto. 
     
-3. Elija la opción **Examinar**. Vaya a la ubicación donde instaló el archivo DLL de la API administrada EWS. La ruta de acceso predeterminada que establece el programa de instalación es la siguiente: C:\Archivos de programa\Microsoft\Exchange\Web Services\<versión>\. La ruta de acceso puede variar en función de si descarga la versión de 32 o de 64 bits del archivo Microsoft.Exchange.WebServices.dll. Elija **Microsoft.Exchange.WebServices.dll** y seleccione **Aceptar** o **Agregar**. Esto agrega la referencia de la API administrada EWS a su proyecto. 
+3. Elija la opción **Examinar**. Vaya a la ubicación donde instaló el archivo DLL de la API administrada EWS. La ruta de acceso predeterminada establecida por el instalador es la siguiente: C:\Archivos de Files\Microsoft\Exchange\Web Services\<version>\. La ruta de acceso puede variar en función de si descarga la versión de 32 o de 64 bits del archivo Microsoft.Exchange.WebServices.dll. Elija **Microsoft.Exchange.WebServices.dll** y seleccione **Aceptar** o **Agregar**. Esto agrega la referencia de la API administrada EWS a su proyecto. 
     
 4. Si usa la API administrada 2.0 EWS, cambie el destino del proyecto HelloWorld a .NET Framework 4. Otras versiones de la API administrada EWS podrían usar una versión de destino diferente de .NET Framework.
     
@@ -106,7 +107,7 @@ Esta devolución de llamada de validación se pasará al objeto **ExchangeServic
     using Microsoft.Exchange.WebServices.Data;
    ```
 
-2. En el método **Main**, cree una instancia del objeto [ExchangeService](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) con la versión del servicio que quiere tener como destino. En este ejemplo el destino es la versión más antigua del esquema EWS. 
+2. En el método **Main**, cree una instancia del objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) con la versión del servicio que quiere tener como destino. En este ejemplo el destino es la versión más antigua del esquema EWS. 
     
    ```cs
     ExchangeService service = new ExchangeService(ExchangeVersion.Exchange2007_SP1);
@@ -124,7 +125,7 @@ Esta devolución de llamada de validación se pasará al objeto **ExchangeServic
     service.UseDefaultCredentials = true;
    ```
 
-   Si el cliente tiene como destino un buzón del sitio para desarrolladores de Exchange Online u Office 365, compruebe que [UseDefaultCredentials](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.exchangeservicebase.usedefaultcredentials%28v=exchg.80%29.aspx) esté establecido en **false**, que es el valor predeterminado. El cliente está listo para realizar la primera llamada al servicio Detección automática para obtener la dirección URL del servicio para realizar llamadas al servicio EWS.
+   Si el cliente tiene como destino un buzón del sitio para desarrolladores de Exchange Online u Office 365, compruebe que [UseDefaultCredentials](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservicebase.usedefaultcredentials%28v=exchg.80%29.aspx) esté establecido en **false**, que es el valor predeterminado. El cliente está listo para realizar la primera llamada al servicio Detección automática para obtener la dirección URL del servicio para realizar llamadas al servicio EWS.
     
 5. El método **AutodiscoverUrl** del objeto **ExchangeService** realiza una serie de llamadas al servicio Detección automática para obtener la dirección URL del servicio. Si esta llamada de método se realiza correctamente, la propiedad URL del objeto **ExchangeService** se establecerá con la dirección URL del servicio. Pase la dirección de correo electrónico del usuario y el objeto **RedirectionUrlValidationCallback** al método **AutodiscoverUrl**. Agregue el código siguiente después de especificar las credenciales en el paso 3 o 4. Cambie  `user1@contoso.com` a su dirección de correo electrónico de modo que el servicio Detección automática encuentre su extremo EWS. 
     
@@ -132,7 +133,7 @@ Esta devolución de llamada de validación se pasará al objeto **ExchangeServic
     service.AutodiscoverUrl("user1@contoso.com", RedirectionUrlValidationCallback);
    ```
 
-En este momento, el cliente está configurado para hacer llamadas a EWS para tener acceso a los datos del buzón. Si ejecuta ahora el código, comprobará que la llamada de método **AutodiscoverUrl** funcionó si examina el contenido de la propiedad [ExchangeService.Url](http://msdn.microsoft.com/es-ES/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx). Si esta propiedad contiene una dirección URL, la llamada se ha realizado correctamente. Esto significa que la aplicación se autenticó correctamente con el servicio y que detectó el extremo EWS de su buzón. Ahora ya puede realizar las primeras llamadas a EWS. Consulte [Establecer la dirección URL del servicio EWS usando la API administrada de EWS](how-to-set-the-ews-service-url-by-using-the-ews-managed-api.md) para obtener más información sobre cómo configurar la dirección URL de EWS. 
+En este momento, el cliente está configurado para hacer llamadas a EWS para tener acceso a los datos del buzón. Si ejecuta ahora el código, comprobará que la llamada de método **AutodiscoverUrl** funcionó si examina el contenido de la propiedad [ExchangeService.Url](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx). Si esta propiedad contiene una dirección URL, la llamada se ha realizado correctamente. Esto significa que la aplicación se autenticó correctamente con el servicio y que detectó el extremo EWS de su buzón. Ahora ya puede realizar las primeras llamadas a EWS. Consulte [Establecer la dirección URL del servicio EWS usando la API administrada de EWS](how-to-set-the-ews-service-url-by-using-the-ews-managed-api.md) para obtener más información sobre cómo configurar la dirección URL de EWS. 
 
 ### <a name="step-6-create-your-first-hello-world-email-message"></a>Paso 6: crear el primer mensaje de correo electrónico de Hola a todos
 
@@ -215,11 +216,11 @@ namespace HelloWorld
 
 Si quiere ir más allá con su primera aplicación cliente de la API administrada EWS, explore los siguientes recursos:
   
-- [Exchange 2013: 101 code samples (Exchange 2013: 101 ejemplos de código)](http://code.msdn.microsoft.com/exchange/Exchange-2013-101-Code-3c38582c)   
+- [Exchange 2013: 101 code samples (Exchange 2013: 101 ejemplos de código)](https://code.msdn.microsoft.com/exchange/Exchange-2013-101-Code-3c38582c)   
 - [Carpetas y elementos](folders-and-items-in-ews-in-exchange.md)    
 - [EWSEditor](http://ewseditor.codeplex.com/)
     
-Si surge algún problema con la aplicación [envíe una pregunta o un comentario al foro](http://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrdevelopment) (y no olvide leer la publicación de más arriba). 
+Si surge algún problema con la aplicación [envíe una pregunta o un comentario al foro](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrdevelopment) (y no olvide leer la publicación de más arriba). 
   
 ## <a name="in-this-section"></a>En esta sección
 <a name="Next"> </a>

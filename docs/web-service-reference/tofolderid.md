@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: bd6a4265-ad40-43f6-bcc4-0bf5df4e984c
-description: El elemento ToFolderId representa la carpeta de destino para un elemento que se ha movido o copiado o una carpeta.
-ms.openlocfilehash: 9d2fd6c177711cfe3a5d3415320440259e2f5289
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: El elemento ToFolderId representa la carpeta de destino de un elemento o carpeta que se ha copiado o movido.
+ms.openlocfilehash: c9cceb17fd55b7357d54b37bf4c8da1137d39b6a
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353661"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44468778"
 ---
 # <a name="tofolderid"></a>ToFolderId
 
-El elemento **ToFolderId** representa la carpeta de destino para un elemento que se ha movido o copiado o una carpeta. 
+El elemento **ToFolderId** representa la carpeta de destino de un elemento o carpeta que se ha copiado o movido. 
   
 ```xml
 <ToFolderId>
@@ -39,40 +39,40 @@ El elemento **ToFolderId** representa la carpeta de destino para un elemento que
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
-Las secciones siguientes describen los atributos, elementos secundarios y elementos primarios.
+En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguno.
+Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Contiene el identificador de una carpeta de destino para un elemento que se ha movido o copiado o una carpeta.  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifica una carpeta de destino con nombre para un elemento que se ha movido o copiado o una carpeta.  <br/> |
+|[FolderId](folderid.md) <br/> |Contiene el identificador de una carpeta de destino para un elemento o carpeta que se ha copiado o movido.  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifica una carpeta de destino con nombre para un elemento o carpeta que se ha copiado o movido.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-|**Element**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
-|[MoveFolder](movefolder.md) <br/> |Define una solicitud para mover una carpeta en el almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/MoveFolder` <br/> |
-|[CopyFolder](copyfolder.md) <br/> |Define una solicitud para copiar una carpeta en el almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/CopyFolder` <br/> |
-|[MoveItem](moveitem.md) <br/> |Define una solicitud para mover un elemento en el almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/MoveItem` <br/> |
-|[CopyItem](copyitem.md) <br/> |Define una solicitud para copiar un elemento en el almacén de Exchange.  <br/> La siguiente es la expresión de XPath para este elemento:  <br/>  `/CopyItem` <br/> |
+|[MoveFolder](movefolder.md) <br/> |Define una solicitud para mover una carpeta en el almacén de Exchange.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/MoveFolder` <br/> |
+|[CopyFolder](copyfolder.md) <br/> |Define una solicitud para copiar una carpeta en el almacén de Exchange.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/CopyFolder` <br/> |
+|[MoveItem](moveitem.md) <br/> |Define una solicitud para mover un elemento en el almacén de Exchange.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/MoveItem` <br/> |
+|[CopyItem](copyitem.md) <br/> |Define una solicitud para copiar un elemento en el almacén de Exchange.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/CopyItem` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que está ejecutando MicrosoftExchange Server 2007 que tenga instalado el rol de servidor de acceso de cliente.
+El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |http://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |False  <br/> |
+|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 

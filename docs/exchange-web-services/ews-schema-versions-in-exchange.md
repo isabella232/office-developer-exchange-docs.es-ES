@@ -1,39 +1,39 @@
 ---
-title: Versiones de esquema EWS en Exchange
+title: Versiones del esquema EWS en Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: d1ab6f9c-ea91-4022-830d-7f7b759e3935
-description: Obtenga información sobre la dirección URL de EWS esquema y el diseño de la aplicación para que funcione con él, así como las características que están disponibles con cada versión del esquema y cómo se relaciona con el esquema a la versión de servicio de Exchange.
-ms.openlocfilehash: dd8e85547666ba0bf3a1a38775260268594f2a8b
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Obtenga información sobre el esquema EWS y cómo diseñar la aplicación para que funcione con ella, así como las características que están disponibles con cada versión del esquema y cómo se relaciona el esquema con la versión del servicio de Exchange.
+localization_priority: Priority
+ms.openlocfilehash: 6afef658e747b11d9aa5fb7d7a88ba8f5c57ac82
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763018"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456017"
 ---
-# <a name="ews-schema-versions-in-exchange"></a>Versiones de esquema EWS en Exchange
+# <a name="ews-schema-versions-in-exchange"></a>Versiones del esquema EWS en Exchange
 
-Obtenga información sobre la dirección URL de EWS esquema y el diseño de la aplicación para que funcione con él, así como las características que están disponibles con cada versión del esquema y cómo se relaciona con el esquema a la versión de servicio de Exchange.
+Obtenga información sobre el esquema EWS y cómo diseñar la aplicación para que funcione con ella, así como las características que están disponibles con cada versión del esquema y cómo se relaciona el esquema con la versión del servicio de Exchange.
   
-El esquema EWS define las estructuras de datos que se pueden enviar a y devueltas por Exchange. Cada nueva versión de Exchange que contiene un cambio significativo a la funcionalidad EWS contendrá un nuevo esquema. EWS y el esquema EWS son ambos con versiones anteriores y en algunos casos, compatible con el reenvío - aplicaciones diseñadas para versiones anteriores de EWS funcionará, en la mayoría de los casos, con las versiones posteriores de EWS, y las aplicaciones que estén destinados a versiones posteriores de EWS funcionará si el mismo la funcionalidad se ha incluido en una versión anterior. En este artículo le ayudará a comprender la función del esquema EWS, cómo funciona el control de versiones de esquema, la relación entre la versión del esquema y la versión de servicio y el diseño de la aplicación para que funcione con el esquema EWS. 
+El esquema EWS define las estructuras de datos que se pueden enviar y devolver por Exchange. Cada nueva versión de Exchange que contenga un cambio significativo en la funcionalidad de EWS contendrá un nuevo esquema. EWS y el esquema EWS están a la inversa y, en algunos casos, el reenvío de aplicaciones compatibles diseñadas para versiones anteriores de EWS funcionará, en la mayoría de los casos, con versiones posteriores de EWS y las aplicaciones destinadas a versiones posteriores de EWS funcionarán si la misma funcionalidad se incluyó en una versión anterior. Este artículo le ayudará a comprender el rol del esquema EWS, cómo funciona el control de versiones del esquema, la relación entre la versión del esquema y la versión del servicio, y cómo diseñar la aplicación para que funcione con el esquema EWS. 
   
 ## <a name="role-of-the-ews-schema"></a>Rol del esquema EWS
 
 El esquema EWS hace lo siguiente:
   
-- Define el conjunto de características que está disponible para un cliente. Un cliente puede obtener la lista de las versiones de esquema compatibles con el [servicio de detección automática](autodiscover-for-exchange.md)SOAP. El cliente, a continuación, puede determinar las características que puede obtener acceso, ya que cada versión del esquema representa un [conjunto de características EWS](ews-schema-versions-in-exchange.md#bk_features). Cada nuevo esquema publicado para EWS contiene las entidades de esquema de la versión anterior además de las definiciones de esquema para cualquier nueva funcionalidad. De este modo, EWS es compatible con las aplicaciones que estén destinados a una versión anterior de EWS.
+- Define el conjunto de características que está disponible para un cliente. Un cliente puede obtener la lista de las versiones del esquema admitidas mediante el [servicio Detección automática](autodiscover-for-exchange.md)de SOAP. A continuación, el cliente puede determinar a qué características puede tener acceso, ya que cada versión del esquema representa un [conjunto de características de EWS](ews-schema-versions-in-exchange.md#bk_features). Cada nuevo esquema que se publica para EWS contiene las entidades de esquema de la versión anterior, además de las definiciones de esquema de cualquier nueva funcionalidad. De este modo, EWS admite aplicaciones destinadas a una versión anterior de EWS.
     
-- Proporciona una descripción general del contrato de API. Puede usar este contrato para determinar las estructuras de datos que se pueden enviar a y recibidas de Exchange.
+- Proporciona una descripción general del contrato de la API. Puede usar este contrato para determinar las estructuras de datos que se pueden enviar y recibir desde Exchange.
     
-- Proporciona un mecanismo de control de versiones para el envío de solicitudes. El servidor de Exchange contiene todas las versiones de esquema EWS compatibles en su directorio virtual. 
+- Proporciona un mecanismo de control de versiones para enviar solicitudes. El servidor de Exchange contiene todas las versiones de esquema EWS compatibles en su directorio virtual. 
     
-## <a name="designing-your-application-with-schema-version-in-mind"></a>Diseño de la aplicación con la versión del esquema en mente
+## <a name="designing-your-application-with-schema-version-in-mind"></a>Diseño de la aplicación teniendo en cuenta la versión de esquema
 
-Al diseñar su aplicación para que funcione con distintas versiones del esquema EWS, tenga en cuenta los puntos siguientes:
+Tenga en cuenta los siguientes puntos a la vez que diseña la aplicación para que funcione con diferentes versiones del esquema EWS:
   
-- Activar o desactivar la funcionalidad basada en la versión del esquema. Desea asignar la funcionalidad de cliente a la versión del esquema y, en algunos casos, a la versión del servicio. En el ejemplo siguiente, se devolverá que un [PropertySet](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) en función de la versión del esquema y de servicio. 
+- Activa o desactiva la funcionalidad en función de la versión del esquema. Querrá asignar la funcionalidad del cliente a la versión del esquema y, en algunos casos, a la versión del servicio. En el siguiente ejemplo, se devuelve un [PropertySet](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.propertyset%28v=exchg.80%29.aspx) basado en la versión del esquema y el servicio. 
     
   ```cs
   private static PropertySet InitPropertySetByVersion(ExchangeService service)
@@ -56,52 +56,52 @@ Al diseñar su aplicación para que funcione con distintas versiones del esquema
   }
   ```
 
-- Versión de las solicitudes con la versión más antigua del esquema EWS que admite la funcionalidad que desea usar. Esto hará que el cliente aplicables a un número mayor de posibles servidores de Exchange. Esto es menos importante si está desarrollando una aplicación de línea de negocio a sólo los servidores de la organización de destino, pero es muy importante si va a crear una aplicación para un público más amplio de Exchange.
+- Versión sus solicitudes con la versión más antigua del esquema EWS que admite la funcionalidad que desea usar. Esto hará que el cliente sea aplicable a un número mayor de servidores de Exchange potenciales. Esto es menos importante si está desarrollando una aplicación de línea de negocio solo para dirigirse a los servidores de la organización, pero es muy importante si está creando una aplicación para una audiencia de Exchange más amplia.
     
-## <a name="features-by-schema-version"></a>Características por versión del esquema
+## <a name="features-by-schema-version"></a>Características por versión de esquema
 <a name="bk_features"> </a>
 
-Se identifican las versiones de esquema que están disponibles para un cliente en el tipo simple de **ExchangeVersionType** que se encuentra en el esquema de types.xsd. El **ExchangeVersionType** se implementa mediante el elemento [RequestServerVersion](http://msdn.microsoft.com/library/af4032d5-42b3-463e-9d0a-8236d78e5b75%28Office.15%29.aspx) . El elemento **RequestServerVersion** se envía en todas las solicitudes EWS para indicar al servidor de la versión del esquema de los destinos de cliente. Esto identifica a su vez el conjunto de características que está disponible para el cliente. 
+Las versiones del esquema que están disponibles para un cliente se identifican en el tipo simple **ExchangeVersionType** ubicado en el esquema Types. xsd. El elemento [RequestServerVersion](https://msdn.microsoft.com/library/af4032d5-42b3-463e-9d0a-8236d78e5b75%28Office.15%29.aspx) implementa **ExchangeVersionType** . El elemento **RequestServerVersion** se envía en todas las solicitudes EWS para indicar al servidor la versión del esquema a la que se destina el cliente. Esto, a su vez, identifica el conjunto de características que está disponible para el cliente. 
   
-**Tabla 1: Características EWS por versión del producto y esquema**
+**Tabla 1: características de EWS por versión de producto y esquema**
 
-|**Versión del producto**|**Versión del esquema asociado**|**Características**|
+|**Versión del producto**|**Versión de esquema asociada**|**Funciones**|
 |:-----|:-----|:-----|
-|Exchange Online  |La versión más reciente del esquema.  |Incluye todas las características de la versión actual de Exchange, además de todas las características nuevas que se agregan para los clientes en línea. |
-|Exchange 2013 SP1 |Exchange2013_SP1 | Incluye todas las características de Exchange 2013.<br/><br/>Las siguientes características se introdujeron en Exchange 2013 SP1: <ul><li>[Directiva de retención de buzón de correo](http://msdn.microsoft.com/en-us/library/office/microsoft.exchange.webservices.data.exchangeservice.setholdonmailboxes%28v=exchg.80%29.aspx) </li><li> [Proponer una nueva hora](how-to-propose-a-new-meeting-time-by-using-ews-in-exchange.md) </li><li>  Actualizaciones de confirmación de [actualización](http://msdn.microsoft.com/EN-US/library/office/dn600559%28v=exchg.80%29.aspx) y [eliminación de](http://msdn.microsoft.com/EN-US/library/office/dn600557%28v=exchg.80%29.aspx) elementos de lectura  </li><li> Actualización de la [información de IRM](http://msdn.microsoft.com/EN-US/library/office/microsoft.exchange.webservices.data.conversation.hasirm%28v=exchg.80%29.aspx) para las conversaciones  </li></ul> |
-|Exchange 2013   |Exchange2013   | Incluye todas las características introducidas en Exchange 2007 y Exchange 2010. <br/><br/>Las siguientes características se introdujeron en Exchange 2013:<ul><li>Archivado  </li><li>  eDiscovery  </li><li>  Personas  </li><li>  Directivas de retención  </li><li>  Almacén de contactos unificados  </li><li>  Fotos de usuario  </li></ul> |
-|Exchange 2010 SP2   |Exchange2010_SP2 | Incluye todas las características introducidas en Exchange 2010 SP1. <br/><br/>Las siguientes características se introdujeron en Exchange 2010 SP2:<ul><li>Obtener la expiración de contraseña  </li><li>  Precisión de fecha y hora  </li><li>  Identificadores de propiedad actualizada para los contactos  </li><li>  Nuevos escenarios de suplantación  </li></ul> |
-|Exchange 2010 SP1  |Exchange2010_SP1   | Incluye todas las características introducidas en Exchange 2010. <br/><br/>Las siguientes características se introdujeron en Exchange 2010 SP1:<ul><li>Crear, recuperar y modificar las reglas de bandeja de entrada  </li><li>  Acceso mediante programación a buzón de archivo  </li><li>  Acciones de conversaciones  </li><li>  Recorrido de las notificaciones del Firewall  </li><li>  Características de administración mejoradas  </li><li>  Compatibilidad de versión mixta mejorada  </li><li>  Limitación de peticiones de soporte técnico de protección  </li><li>  Control de acceso de la aplicación a EWS  </li><li>  Compatibilidad con la autenticación de certificado de cliente  </li></ul> |
-|Exchange 2010  |Exchange2010   | Incluye todas las características introducidas en Exchange 2007 SP1. <br/><br/>Las siguientes características se introdujeron en la versión inicial de Exchange 2010:<ul><li>Lista de distribución privada completa  </li><li>  Objetos de configuración de usuario  </li><li>  Carpeta elementos asociados  </li><li>  Seguimiento de mensajes  </li><li>  Mensajería unificada  </li><li>  Detección automática de SOAP  </li><li>  Compatibilidad mejorada con la zona horaria  </li><li>  Información de disponibilidad de recursos de sala  </li><li>  Búsqueda indizado  </li><li>  Acceso de volcado de archivos  </li><li>  Información de sugerencias de correo electrónico  </li></ul> |
-|Exchange 2007 SP1   |Exchange2007_SP1  | Incluye todas las características introducidas en Exchange 2007. <br/><br/>Las siguientes características se introdujeron en Exchange 2007 SP1:<ul><li>Delegar la administración  </li><li>  Permisos de carpeta  </li><li>  Carpetas públicas  </li><li>  Elementos para exponer  </li><li>  Conversión de Id.  </li></ul>|
-|Exchange 2007  |Exchange2007 | Las siguientes características se introdujeron en la versión inicial de Exchange 2007:<ul><li>Acceso total a los elementos, carpetas y datos adjuntos (crear, Get, Update, Delete)  </li><li>  Disponibilidad  </li><li>  Fuera de la configuración de Office  </li><li>  Notificaciones  </li><li>  Sincronización  </li><li>  Resolución de nombres  </li><li>  Expansión de distribución (DL) de la lista  </li><li>  B?squeda  </li></ul> |
+|Exchange Online  |La última versión del esquema.  |Incluye todas las características de la versión actual de Exchange además de las nuevas características que se agregan a los clientes en línea. |
+|Exchange 2013 SP1 |Exchange2013_SP1 | Incluye todas las características de Exchange 2013.<br/><br/>Las siguientes características se introdujeron en Exchange 2013 SP1: <ul><li>[Directiva de retención de buzones](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.setholdonmailboxes%28v=exchg.80%29.aspx) </li><li> [Proponer nueva hora](how-to-propose-a-new-meeting-time-by-using-ews-in-exchange.md) </li><li>  Actualizaciones de confirmación de lectura para [Actualizar](https://msdn.microsoft.com/library/office/dn600559%28v=exchg.80%29.aspx) y [eliminar](https://msdn.microsoft.com/library/office/dn600557%28v=exchg.80%29.aspx) elementos  </li><li> Actualización de [información de IRM](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.conversation.hasirm%28v=exchg.80%29.aspx) para conversaciones  </li></ul> |
+|Exchange 2013   |Exchange2013   | Incluye todas las características incorporadas en Exchange 2007 y Exchange 2010. <br/><br/>Las siguientes características se introdujeron en Exchange 2013:<ul><li>Archivado  </li><li>  eDiscovery  </li><li>  Roles  </li><li>  Directivas de retención  </li><li>  Almacén de contactos unificado  </li><li>  Fotos de usuario  </li></ul> |
+|Exchange 2010 SP2   |Exchange2010_SP2 | Incluye todas las características incorporadas en Exchange 2010 SP1. <br/><br/>Las siguientes características se introdujeron en Exchange 2010 SP2:<ul><li>Obtener expiración de contraseña  </li><li>  Precisión DateTime  </li><li>  Identificadores de propiedad actualizados para contactos  </li><li>  Nuevos escenarios de suplantación  </li></ul> |
+|Exchange 2010 SP1  |Exchange2010_SP1   | Incluye todas las características incorporadas en Exchange 2010. <br/><br/>Las siguientes características se introdujeron en Exchange 2010 SP1:<ul><li>Crear, recuperar y modificar reglas de la bandeja de entrada  </li><li>  Acceso mediante programación al buzón de archivo  </li><li>  Acciones de conversaciones  </li><li>  Notificaciones de recorrido de Firewall  </li><li>  Características de administración mejoradas  </li><li>  Compatibilidad de versiones mixtas mejorada  </li><li>  Compatibilidad con la protección de limitación  </li><li>  Control del acceso de la aplicación a EWS  </li><li>  Compatibilidad con la autenticación de certificados de cliente  </li></ul> |
+|Exchange 2010  |Exchange2010   | Incluye todas las características incorporadas en Exchange 2007 SP1. <br/><br/>Las siguientes características se introdujeron en la versión de lanzamiento inicial de Exchange 2010:<ul><li>Lista de distribución privada completa  </li><li>  Objetos de configuración de usuario  </li><li>  Elementos asociados a la carpeta  </li><li>  Seguimiento de mensajes  </li><li>  Mensajería unificada  </li><li>  Detección automática de SOAP  </li><li>  Compatibilidad mejorada de la zona horaria  </li><li>  Información de disponibilidad de recursos de sala  </li><li>  Búsqueda indizada  </li><li>  Acceso a la papelera  </li><li>  Información de sugerencias de correo  </li></ul> |
+|Exchange 2007 SP1   |Exchange2007_SP1  | Incluye todas las características incorporadas en Exchange 2007. <br/><br/>Las siguientes características se introdujeron en Exchange 2007 SP1:<ul><li>Delegación de la administración  </li><li>  Permisos de carpeta  </li><li>  Carpetas públicas  </li><li>  Elementos para exponer  </li><li>  Conversión de IDENTIFICADOres  </li></ul>|
+|Exchange 2007  |Exchange2007 | Las siguientes características se introdujeron en la versión de lanzamiento inicial de Exchange 2007:<ul><li>Acceso completo a elementos, carpetas y datos adjuntos (crear, obtener, actualizar, eliminar)  </li><li>  Disponibilidad  </li><li>  Configuración de fuera de la oficina  </li><li>  Notificaciones  </li><li>  Sincronización  </li><li>  Resolución de nombres  </li><li>  Expansión de la lista de distribución (DL)  </li><li>  Búsqueda  </li></ul> |
    
-## <a name="relationship-between-the-ews-schema-and-the-service-version"></a>Relación entre el esquema de EWS y la versión de servicio
+## <a name="relationship-between-the-ews-schema-and-the-service-version"></a>Relación entre el esquema EWS y la versión del servicio
 <a name="bk_features"> </a>
 
-La versión del esquema EWS está relacionada con la versión del servicio de EWS que ejecuta el servidor. El modelo de nomenclatura para el esquema EWS está relacionada con las versiones locales de Exchange. Por ejemplo, la versión inicial de Exchange 2013 tiene una versión de servicio de 15.00.0516.032 y el nombre de esquema **Exchange2013**. Debido a que el esquema se ha actualizado para Exchange 2013, Exchange 2013 y Exchange Online con una versión de servicio de 15.00.0516.032 y versiones posteriores tienen el mismo nombre de la versión para el esquema más reciente. En versiones anteriores de Exchange, el esquema EWS no se actualizó con actualizaciones acumulativas (anteriormente denominado paquetes acumulativos de actualizaciones). Pero, debido a que Exchange se actualiza con más frecuencia para admitir Exchange Online, actualizaciones acumulativas ahora contienen las actualizaciones del esquema de EWS. Los nombres de archivo de esquema y el nombre de la versión de esquema asociado, sólo se actualizan con service Pack o las versiones principales de Exchange local.
+La versión del esquema EWS está relacionada con la versión del servicio EWS que se está ejecutando en el servidor. El patrón de nomenclatura para el esquema EWS está relacionado con las versiones locales de Exchange. Por ejemplo, la versión inicial de Exchange 2013 tiene una versión de servicio de 15.00.0516.032 y el nombre de esquema **Exchange2013**. Debido a que el esquema se actualizó para Exchange 2013, tanto Exchange 2013 como Exchange Online con una versión de servicio de 15.00.0516.032 y versiones posteriores tienen el mismo nombre de versión para el último esquema. En versiones anteriores de Exchange, el esquema EWS no se actualizaba con las actualizaciones acumulativas (anteriormente conocidas como Rollup). Pero como Exchange se actualiza con más frecuencia para admitir Exchange Online, las actualizaciones acumulativas ahora contienen actualizaciones de esquema para EWS. Los nombres de archivo de esquema y el nombre de versión de esquema asociado solo se actualizan con Service Packs o versiones principales de Exchange local.
   
-Mientras que el esquema EWS define el contrato, en algunos casos, la versión de servicio es la única forma para que un cliente determinar cómo debe para interactuar con el servicio. Sólo se pueden determinar los cambios de comportamiento de servicio que no se reflejen en el esquema de la versión de servicio devuelto en todas las respuestas EWS. Por ejemplo, cuando se han vuelto a diseñar [las carpetas públicas](public-folder-access-with-ews-in-exchange.md) en Exchange 2013, las operaciones que se usan para mover y copiar carpetas públicas ha cambiado. Si ha diseñado un cliente para copiar las carpetas públicas en Exchange 2010, necesitará actualizar para usar diferentes operaciones para obtener el mismo resultado en Exchange 2013. 
+Mientras que el esquema EWS define el contrato, en algunos escenarios, la versión del servicio es la única forma de que un cliente determine cómo debe interactuar con el servicio. Los cambios de comportamiento del servicio que no se reflejan en el esquema solo pueden estar determinados por la versión del servicio devuelta en todas las respuestas de EWS. Por ejemplo, cuando se rediseñaron [carpetas públicas](public-folder-access-with-ews-in-exchange.md) en Exchange 2013, las operaciones que se usan para mover y copiar carpetas públicas han cambiado. Si ha diseñado un cliente para copiar carpetas públicas en Exchange 2010, deberá actualizarla para que use distintas operaciones para obtener el mismo resultado en Exchange 2013. 
   
-## <a name="how-the-ews-schema-is-updated"></a>¿Cómo se actualiza el esquema EWS
+## <a name="how-the-ews-schema-is-updated"></a>Cómo se actualiza el esquema EWS
 <a name="bk_features"> </a>
 
-Servidores de Exchange que ejecutan versiones de Exchange 2007 a partir de Exchange incluyen el esquema EWS en el directorio virtual que hospeda el servicio EWS. La versión actual del esquema siempre está representada por los archivos types.xsd y messages.xsd. La figura 1 muestra cómo se bifurca el esquema messages.xsd cuando se ha desarrollado una nueva versión del esquema. Antes de agrega la nueva funcionalidad, una copia del esquema messages.xsd original se incluyen y nombre se ha cambiado para representar la versión anterior del esquema. El archivo messages.xsd, a continuación, se actualiza con la descripción del servicio para la nueva versión.
+Los servidores de Exchange que ejecutan versiones de Exchange a partir de Exchange 2007 incluyen el esquema EWS en el directorio virtual que hospeda el servicio EWS. La versión del esquema actual siempre está representada por los archivos Types. xsd y messages. xsd. La figura 1 muestra cómo se bifurca el esquema messages. xsd cuando se desarrolla una nueva versión del esquema. Antes de que se agregue nueva funcionalidad, se incluye una copia del esquema messages. xsd original que se cambia para representar la versión anterior del esquema. A continuación, el archivo messages. xsd se actualiza con la descripción del servicio de la nueva versión.
   
-**En la figura 1. ¿Cómo se actualiza el esquema EWS**
+**Figura 1. Cómo se actualiza el esquema EWS**
 
 ![Ilustración que muestra cómo se actualiza el esquema de EWS. La última versión del esquema se bifurca y se le cambia el nombre para representar la versión anterior, y el último nombre de archivo representa la versión actual.](media/Ex15_EWS_Schema_Update1.png)
   
-Antes de actualiza el esquema EWS para una nueva versión, la versión actual del esquema se bifurca y nombre se ha cambiado con la siguiente convención:
+Antes de actualizar el esquema EWS para una nueva versión, la versión actual del esquema se bifurca y se cambia de nombre con la Convención siguiente:
   
 `<schemaname>-<majorserverversion><servicepack>.xsd`
   
-El nombre del archivo original, a continuación, representa el esquema más reciente. Todas las características nuevas se agregan al esquema más reciente, con la excepción de las actualizaciones y revisiones a las versiones anteriores del esquema. 
+A continuación, el nombre del archivo original representa el último esquema. Todas las nuevas características se agregan al esquema más reciente, con la excepción de las actualizaciones y las correcciones de las versiones anteriores del esquema. 
   
 ## <a name="see-also"></a>Vea también
 
-- [Versiones de esquema EWS en Exchange](ews-schema-versions-in-exchange.md) 
-- [Detección automática de Exchange](autodiscover-for-exchange.md) 
+- [Versiones del esquema EWS en Exchange](ews-schema-versions-in-exchange.md) 
+- [Detección automática en Exchange](autodiscover-for-exchange.md) 
 - [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
     
 

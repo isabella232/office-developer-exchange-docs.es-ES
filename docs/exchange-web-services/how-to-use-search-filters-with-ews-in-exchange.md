@@ -1,62 +1,62 @@
 ---
-title: Use los filtros de búsqueda con EWS en Exchange
+title: Usar filtros de búsqueda con EWS en Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 20fc6d2d-41c2-4490-98b8-c52513977fef
 description: Descubra cómo usar filtros de búsqueda con la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: 0652c36fd610c2f9dfe22b55323b368997137e0c
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+localization_priority: Priority
+ms.openlocfilehash: 04a74ec92d4bced8abd58d164a1c186d6405e679
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19763197"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455838"
 ---
-# <a name="use-search-filters-with-ews-in-exchange"></a>Use los filtros de búsqueda con EWS en Exchange
+# <a name="use-search-filters-with-ews-in-exchange"></a>Usar filtros de búsqueda con EWS en Exchange
 
 Descubra cómo usar filtros de búsqueda con la API administrada de EWS o EWS en Exchange.
   
-Filtros de búsqueda es la principal herramienta para expresar los criterios de búsqueda en la API administrada de EWS o aplicación de EWS. Se recomienda que utilice filtros de búsqueda, a diferencia de [las cadenas de consulta](how-to-perform-an-aqs-search-by-using-ews-in-exchange.md), para hacer lo siguiente:
+Los filtros de búsqueda son la herramienta principal para expresar los criterios de búsqueda en la API administrada de EWS o en la aplicación de EWS. Se recomienda usar filtros de búsqueda, en lugar de [cadenas de consulta](how-to-perform-an-aqs-search-by-using-ews-in-exchange.md), para hacer lo siguiente:
   
-- Buscar en una propiedad concreta o un conjunto de propiedades.  
-- La búsqueda con varios criterios de búsqueda.
+- Busca en una propiedad específica o un conjunto de propiedades.  
+- Buscar con varios criterios de búsqueda.
     
-Filtros de búsqueda es la única opción si está realizando una de las siguientes:
+Los filtros de búsqueda son la única opción si está realizando alguna de las siguientes acciones:
   
-- Búsqueda de propiedades personalizadas.  
-- Busca en la realización de cadena entre mayúsculas y minúsculas.  
-- Busca en la realización de prefijo o cadena de coincidencia exacta. 
-- Busca en la realización de máscara de bits.
-- Busca los elementos que tienen una propiedad concreta se establece, independientemente del valor.
-- Búsqueda de carpetas.
-- Creación de las carpetas de búsqueda.
+- Buscar propiedades personalizadas.  
+- Realizar búsquedas de cadenas con distinción entre mayúsculas y minúsculas.  
+- Realizar búsquedas de cadena de coincidencia exacta o prefijo. 
+- Realizar búsquedas de máscara de la máscara.
+- Buscar elementos que tienen un conjunto específico de propiedades, independientemente de su valor.
+- Buscar carpetas.
+- Crear carpetas de búsqueda.
     
-## <a name="determine-what-type-of-search-filter-you-need"></a>Determinar qué tipo de filtro de búsqueda necesita
+## <a name="determine-what-type-of-search-filter-you-need"></a>Determinación del tipo de filtro de búsqueda que se necesita
 <a name="bk_SelectFilter"> </a>
 
-Antes de crear un filtro de búsqueda, en primer lugar determine qué tipo de filtro que necesita. Los tipos de filtro se implementan como clases descendientes de la clase [SearchFilter](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter%28v=exchg.80%29.aspx) en la API administrada de EWS y como elementos secundarios del elemento de [restricción](http://msdn.microsoft.com/library/77f19014-d112-4999-8e83-ecc32a117a73%28Office.15%29.aspx) de EWS. 
+Antes de crear un filtro de búsqueda, determine primero qué tipo de filtro necesita. Los tipos de filtro se implementan como clases descendientes de la clase [SearchFilter](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter%28v=exchg.80%29.aspx) en la API administrada de EWS y como elementos secundarios del elemento [Restriction](https://msdn.microsoft.com/library/77f19014-d112-4999-8e83-ecc32a117a73%28Office.15%29.aspx) en EWS. 
   
-**La tabla 1. Tipos de filtros de búsqueda**
+**Tabla 1. Tipos de filtros de búsqueda**
 
-|**Tipo de filtro**|**Clase de la API administrada de EWS**|**Elemento EWS**|**Descripción**|
+|**Tipo de filtro**|**Clase de API administrada de EWS**|**Elemento EWS**|**Descripción**|
 |:-----|:-----|:-----|:-----|
-|Contiene el filtro  <br/> |[ContainsSubstring](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.containssubstring%28v=exchg.80%29.aspx) <br/> |[Incluye](http://msdn.microsoft.com/library/476d059d-c243-43e9-b475-319fc413ade2%28Office.15%29.aspx) <br/> |El mejor tipo de filtro que se usará para las comparaciones de cadenas. Permite controlar la distinción de mayúsculas y, si se debe omitir espacios en blanco y establecer el modo de contención.  <br/> |
-|Filtro de máscara de bits  <br/> |[ExcludesBitmask](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.excludesbitmask%28v=exchg.80%29.aspx) <br/> |[Excluye](http://msdn.microsoft.com/library/bbaeddf6-9a67-4ee0-af99-7a7a5bbdc0e1%28Office.15%29.aspx) <br/> |Permite buscar propiedades de entero como máscaras de bits y sólo devolverá los resultados que tienen bits correspondiente a la máscara de bits especificado no establecido.  <br/> |
-|Existe filtro  <br/> |[Existe](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.exists%28v=exchg.80%29.aspx) <br/> |[Existe](http://msdn.microsoft.com/library/55d568bd-8dbc-4d50-b9d7-54b74a54d4b5%28Office.15%29.aspx) <br/> |Devuelve todos los elementos que tienen la propiedad especificada está presente, independientemente del valor.  <br/> |
-|Filtro de igualdad  <br/> |[IsEqualTo](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.isequalto%28v=exchg.80%29.aspx) <br/> [IsNotEqualTo](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.isnotequalto%28v=exchg.80%29.aspx) <br/> |[IsEqualTo](http://msdn.microsoft.com/library/48e7e067-049c-4184-8026-071e6f558e8a%28Office.15%29.aspx) <br/> [IsNotEqualTo](http://msdn.microsoft.com/library/e2eff26c-3403-45cd-bb74-1eb98c7dbfcd%28Office.15%29.aspx) <br/> |Compara el valor de la propiedad especificada con un valor constante especificado o el valor de otra propiedad y devolver todos los elementos que tienen un valor igual (en el caso de un filtro **IsEqualTo** ) o un valor que no sean igual (en el caso de un **IsNotEqualTo **filtro).  <br/> |
-|Filtro de prueba relacional  <br/> |[IsGreaterThan](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.isgreaterthan%28v=exchg.80%29.aspx) <br/> [IsGreaterThanOrEqualTo](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.isgreaterthanorequalto%28v=exchg.80%29.aspx) <br/> [IsLessThan](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.islessthan%28v=exchg.80%29.aspx) <br/> [IsLessThanOrEqualTo](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.islessthanorequalto%28v=exchg.80%29.aspx) <br/> |[IsGreaterThan](http://msdn.microsoft.com/library/a6e9d462-cfa7-40ec-903e-128c95050352%28Office.15%29.aspx) <br/> [IsGreaterThanOrEqualTo](http://msdn.microsoft.com/library/373cc954-314d-40e2-be03-cc08aefc0d5b%28Office.15%29.aspx) <br/> [IsLessThan](http://msdn.microsoft.com/library/2550469b-6e5d-45a5-9ecc-090d1b409296%28Office.15%29.aspx) <br/> [IsLessThanOrEqualTo](http://msdn.microsoft.com/library/b5d85eb2-5e15-4d01-ad49-6289e735ad8a%28Office.15%29.aspx) <br/> |Devuelve todos los elementos que tienen un valor para la propiedad especificada en la relación correspondiente a un valor constante especificado u otra propiedad. Por ejemplo, un filtro **IsGreaterThan** devuelve todos los elementos que tienen un valor que es mayor que el valor especificado en la propiedad especificada.  <br/> |
-|Filtro de negación  <br/> |[No](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.not%28v=exchg.80%29.aspx) <br/> |[No](http://msdn.microsoft.com/library/1aa16318-7e90-4b19-bce8-dd1a20a66223%28Office.15%29.aspx) <br/> |Niega el resultado de los otros filtros.  <br/> |
-|Filtro de compuestos  <br/> |[SearchFilterCollection](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.searchfiltercollection%28v=exchg.80%29.aspx) <br/> |[And](http://msdn.microsoft.com/library/790246c2-37ad-49a8-91b9-6186d743b011%28Office.15%29.aspx) <br/> [Or](http://msdn.microsoft.com/library/4876d83a-73a3-4953-9d95-3048e6b76ccb%28Office.15%29.aspx) <br/> |Combina varios filtros, lo que permite los criterios de búsqueda más complejos.  <br/> |
+|Contiene el filtro  <br/> |[ContainsSubstring](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.containssubstring%28v=exchg.80%29.aspx) <br/> |[Contains](https://msdn.microsoft.com/library/476d059d-c243-43e9-b475-319fc413ade2%28Office.15%29.aspx) <br/> |El mejor tipo de filtro que se debe usar para las comparaciones de cadenas. Permite controlar la distinción entre mayúsculas y minúsculas, si se debe omitir el espacio en blanco y establecer el modo de contención.  <br/> |
+|Filtro de máscara de máscara  <br/> |[ExcludesBitmask](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.excludesbitmask%28v=exchg.80%29.aspx) <br/> |[Excluye](https://msdn.microsoft.com/library/bbaeddf6-9a67-4ee0-af99-7a7a5bbdc0e1%28Office.15%29.aspx) <br/> |Permite buscar propiedades enteras como máscaras de bits y devolver solo los resultados que tienen bits correspondientes a la máscara de bits especificada sin establecer.  <br/> |
+|Filtro EXISTS  <br/> |[Exists](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.exists%28v=exchg.80%29.aspx) <br/> |[Exists](https://msdn.microsoft.com/library/55d568bd-8dbc-4d50-b9d7-54b74a54d4b5%28Office.15%29.aspx) <br/> |Devuelve todos los elementos que tienen la propiedad especificada presente, independientemente de Value.  <br/> |
+|Filtro de igualdad  <br/> |[IsEqualTo](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.isequalto%28v=exchg.80%29.aspx) <br/> [IsNotEqualTo](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.isnotequalto%28v=exchg.80%29.aspx) <br/> |[IsEqualTo](https://msdn.microsoft.com/library/48e7e067-049c-4184-8026-071e6f558e8a%28Office.15%29.aspx) <br/> [IsNotEqualTo](https://msdn.microsoft.com/library/e2eff26c-3403-45cd-bb74-1eb98c7dbfcd%28Office.15%29.aspx) <br/> |Compara el valor de la propiedad especificada con un valor constante especificado o el valor de otra propiedad y devuelve todos los elementos que tienen un valor igual (en el caso de un filtro **IsEqualTo** ) o un valor no igual (en el caso de un filtro **IsNotEqualTo** ).  <br/> |
+|Filtro de pruebas relacionales  <br/> |[IsGreaterThan](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.isgreaterthan%28v=exchg.80%29.aspx) <br/> [IsGreaterThanOrEqualTo](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.isgreaterthanorequalto%28v=exchg.80%29.aspx) <br/> [IsLessThan](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.islessthan%28v=exchg.80%29.aspx) <br/> [IsLessThanOrEqualTo](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.islessthanorequalto%28v=exchg.80%29.aspx) <br/> |[IsGreaterThan](https://msdn.microsoft.com/library/a6e9d462-cfa7-40ec-903e-128c95050352%28Office.15%29.aspx) <br/> [IsGreaterThanOrEqualTo](https://msdn.microsoft.com/library/373cc954-314d-40e2-be03-cc08aefc0d5b%28Office.15%29.aspx) <br/> [IsLessThan](https://msdn.microsoft.com/library/2550469b-6e5d-45a5-9ecc-090d1b409296%28Office.15%29.aspx) <br/> [IsLessThanOrEqualTo](https://msdn.microsoft.com/library/b5d85eb2-5e15-4d01-ad49-6289e735ad8a%28Office.15%29.aspx) <br/> |Devuelve todos los elementos que tienen un valor para la propiedad especificada en la relación correspondiente a un valor constante especificado u otra propiedad. Por ejemplo, un filtro **IsGreaterThan** devuelve todos los elementos que tienen un valor mayor que el valor especificado en la propiedad especificada.  <br/> |
+|Niega el filtro  <br/> |[Not](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.not%28v=exchg.80%29.aspx) <br/> |[Not](https://msdn.microsoft.com/library/1aa16318-7e90-4b19-bce8-dd1a20a66223%28Office.15%29.aspx) <br/> |Niega el resultado de los otros filtros.  <br/> |
+|Filtro compuesto  <br/> |[SearchFilterCollection](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.searchfiltercollection%28v=exchg.80%29.aspx) <br/> |[And](https://msdn.microsoft.com/library/790246c2-37ad-49a8-91b9-6186d743b011%28Office.15%29.aspx) <br/> [Or](https://msdn.microsoft.com/library/4876d83a-73a3-4953-9d95-3048e6b76ccb%28Office.15%29.aspx) <br/> |Combina varios filtros, lo que permite criterios de búsqueda más complejos.  <br/> |
    
 ### <a name="contains-filter"></a>Contiene el filtro
 
-Contiene un filtro es la mejor opción para la búsqueda de propiedades de cadena. Con un contiene filtro, puede controlar aspectos de coincidencia de cadena, como entre mayúsculas y minúsculas y cómo se tratan los espacios en blanco, estableciendo el modo de contención y el modo de comparación.
+Un filtro Contains es la mejor opción para buscar propiedades de cadena. Con un filtro Contains, puede controlar aspectos de coincidencia de cadenas, como la distinción entre mayúsculas y minúsculas y el tratamiento del espacio en blanco, estableciendo el modo de contención y el modo de comparación.
   
-#### <a name="contains-filter-in-the-ews-managed-api"></a>Contiene el filtro en la API administrada de EWS
+#### <a name="contains-filter-in-the-ews-managed-api"></a>Contiene un filtro en la API administrada de EWS
 <a name="bk_ContainsEWSMA"> </a>
 
-Si se usa la API administrada de EWS, establezca el modo de contención mediante el uso de la propiedad [ContainmentMode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.containssubstring.containmentmode%28v=exchg.80%29.aspx) de la clase [ContainsSubstring](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.containssubstring%28v=exchg.80%29.aspx) y establecer el modo de comparación mediante el uso de la propiedad [ComparisonMode](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter.containssubstring.comparisonmode%28v=exchg.80%29.aspx) de la ** ContainsSubstring** clase. En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda que busca en el campo Asunto de los elementos de la subcadena "notas de la reunión". En este ejemplo se omite el caso, pero no omite el espacio en blanco. 
+Si está usando la API administrada de EWS, establezca el modo de contención mediante la propiedad [ContainmentMode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.containssubstring.containmentmode%28v=exchg.80%29.aspx) de la clase [ContainsSubstring](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.containssubstring%28v=exchg.80%29.aspx) y establezca el modo de comparación mediante la propiedad [ComparisonMode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter.containssubstring.comparisonmode%28v=exchg.80%29.aspx) de la clase **ContainsSubstring** . En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda que busque en el campo Subject de los elementos la subcadena "Notas de la reunión". En este ejemplo se omite la distinción entre mayúsculas y minúsculas, pero no se omite el espacio. 
   
 ```cs
 // Find all items with a subject that contain the substring
@@ -69,10 +69,10 @@ SearchFilter.ContainsSubstring subjectFilter = new SearchFilter.ContainsSubstrin
     "meeting notes", ContainmentMode.Substring, ComparisonMode.IgnoreCase);
 ```
 
-#### <a name="contains-filter-in-ews"></a>Contiene el filtro de EWS
+#### <a name="contains-filter-in-ews"></a>Contiene un filtro en EWS
 <a name="bk_ContainsEWSMA"> </a>
 
-En EWS, se establece el modo de contención mediante el atributo **ContainmentMode** en el elemento [Contains](http://msdn.microsoft.com/library/476d059d-c243-43e9-b475-319fc413ade2%28Office.15%29.aspx) y establecer el modo de comparación mediante el atributo **ContainmentComparison** en el elemento **contiene** . En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para buscar en el campo Asunto de los elementos de la subcadena "notas de la reunión". En este ejemplo se omite el caso, pero no omite el espacio en blanco. 
+En EWS, se establece el modo de contención mediante el atributo **ContainmentMode** en el elemento [Contains](https://msdn.microsoft.com/library/476d059d-c243-43e9-b475-319fc413ade2%28Office.15%29.aspx) y se establece el modo de comparación usando el atributo **ContainmentComparison** en el elemento **Contains** . En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para buscar en el campo de asunto de los elementos de la subcadena "Notas de la reunión". En este ejemplo se omite la distinción entre mayúsculas y minúsculas, pero no se omite el espacio. 
   
 ```XML
 <t:Contains ContainmentMode="Substring" ContainmentComparison="IgnoreCase">
@@ -81,13 +81,13 @@ En EWS, se establece el modo de contención mediante el atributo **ContainmentMo
 </t:Contains>
 ```
 
-### <a name="bitmask-filter"></a>Filtro de máscara de bits
+### <a name="bitmask-filter"></a>Filtro de máscara de máscara
 
-Un filtro de máscara de bits permite buscar propiedades de entero como máscaras de bits y devolver resultados donde bits específicos no se establecen en el valor de la propiedad especificada.
+Un filtro de máscara de bits permite buscar propiedades de enteros como máscaras de bits y devolver resultados en los que no se establecen bits específicos en el valor de la propiedad especificada.
   
-#### <a name="bitmask-filter-in-the-ews-managed-api"></a>Filtro de máscara de bits en la API administrada de EWS
+#### <a name="bitmask-filter-in-the-ews-managed-api"></a>Filtro de máscara de máscara en la API administrada de EWS
 
-En el ejemplo siguiente se muestra cómo usar la API administrada de EWS para crear un filtro de búsqueda para devolver todos los elementos que tienen un valor en la propiedad personalizada **ItemIndex** (definido en la [ejemplo: buscar elementos mediante el uso de un filtro de búsqueda y la API administrada de EWS](#bk_ExampleEWSMA) sección de este artículo) que no tienen el segundo bit (10 en binario) establecer. 
+El siguiente ejemplo muestra cómo usar la API administrada de EWS para crear un filtro de búsqueda para devolver todos los elementos que tienen un valor en la propiedad personalizada **itemIndex** (definida en el [ejemplo: buscar elementos mediante un filtro de búsqueda y la sección API administrada de EWS](#bk_ExampleEWSMA) de este artículo) que no tienen el segundo bit (10 en binario) establecido. 
   
 ```cs
 // Find all items with a value of the custom property that does not
@@ -102,9 +102,9 @@ SearchFilter.ExcludesBitmask bit2NotSetFilter =
     new SearchFilter.ExcludesBitmask(customPropDefinition, 2);
 ```
 
-#### <a name="bitmask-filter-in-ews"></a>Filtro de máscara de bits de EWS
+#### <a name="bitmask-filter-in-ews"></a>Filtro de máscara de máscara en EWS
 
-En el ejemplo siguiente se muestra cómo usar EWS para crear un filtro de búsqueda para devolver todos los elementos que tienen un valor en la propiedad personalizada **ItemIndex** (definido en la [ejemplo: buscar elementos mediante el uso de un filtro de búsqueda y la API administrada de EWS](#bk_ExampleEWSMA) sección de este artículo) que no tienen el segundo bit (10 en binario) establecer. 
+El siguiente ejemplo muestra cómo usar EWS para crear un filtro de búsqueda para devolver todos los elementos que tienen un valor en la propiedad personalizada **itemIndex** (definida en el [ejemplo: buscar elementos mediante un filtro de búsqueda y la sección API administrada de EWS](#bk_ExampleEWSMA) de este artículo) que no tienen el segundo bit (10 en binario) establecido. 
   
 ```XML
 <t:Excludes>
@@ -113,13 +113,13 @@ En el ejemplo siguiente se muestra cómo usar EWS para crear un filtro de búsqu
 </t:Excludes>
 ```
 
-### <a name="exists-filter"></a>Existe filtro
+### <a name="exists-filter"></a>Filtro EXISTS
 
-Un existe filtro le permite buscar los elementos que tienen una propiedad concreta que se establezca en ellos, independientemente del valor.
+Un filtro EXISTS permite buscar elementos que tienen una propiedad específica establecida en ellos, independientemente del valor.
   
-#### <a name="exists-filter-in-the-ews-managed-api"></a>Existe el filtro en la API administrada de EWS
+#### <a name="exists-filter-in-the-ews-managed-api"></a>Filtro EXISTS en la API administrada de EWS
 
-En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devolver todos los elementos que tienen establecida la propiedad **ItemIndex** personalizada. 
+En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devolver todos los elementos que tienen el conjunto de propiedades personalizadas **itemIndex** . 
   
 ```cs
 // Find all items that have the custom property set.
@@ -127,9 +127,9 @@ SearchFilter.Exists customPropSetFilter =
     new SearchFilter.Exists(customPropDefinition);
 ```
 
-#### <a name="exists-filter-in-ews"></a>Existe el filtro de EWS
+#### <a name="exists-filter-in-ews"></a>Filtro EXISTS en EWS
 
-En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devolver todos los elementos que tienen establecida la propiedad **ItemIndex** personalizada. 
+En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devolver todos los elementos que tienen el conjunto de propiedades personalizadas **itemIndex** . 
   
 ```XML
 <t:Exists>
@@ -139,7 +139,7 @@ En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devol
 
 ### <a name="equality-filter"></a>Filtro de igualdad
 
-Filtros de igualdad permiten buscar todos los elementos que tienen un valor para la propiedad especificada que es igual a un valor específico o que no es igual a un valor específico. El valor se va a comparar con puede ser un valor constante o el valor de otra propiedad en cada elemento.
+Los filtros de igualdad permiten buscar todos los elementos que tienen un valor para la propiedad especificada que sea igual a un valor específico o que no sea igual a un valor específico. El valor con el que se va a comparar puede ser un valor constante o el valor de otra propiedad en cada elemento.
   
 #### <a name="equality-filter-in-the-ews-managed-api"></a>Filtro de igualdad en la API administrada de EWS
 
@@ -151,7 +151,7 @@ SearchFilter.IsEqualTo unreadFilter =
     new SearchFilter.IsEqualTo(EmailMessageSchema.IsRead, false);
 ```
 
-En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devolver todos los elementos que tienen un valor en la propiedad **ItemIndex** que no es igual que el tamaño del elemento. 
+En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devolver todos los elementos que tienen un valor en la propiedad **itemIndex** que no es igual al tamaño del elemento. 
   
 ```cs
 // Find all items that are marked as read.
@@ -172,7 +172,7 @@ En el ejemplo siguiente se muestra cómo usar EWS para crear un filtro de búsqu
 </t:IsEqualTo>
 ```
 
-En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devolver todos los elementos que tienen un valor en la propiedad **ItemIndex** que no es igual que el tamaño del elemento. 
+En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devolver todos los elementos que tienen un valor en la propiedad **itemIndex** que no es igual al tamaño del elemento. 
   
 ```XML
 <t:IsNotEqualTo>
@@ -183,13 +183,13 @@ En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devol
 </t:IsNotEqualTo>
 ```
 
-### <a name="relational-testing-filter"></a>Filtro de prueba relacional
+### <a name="relational-testing-filter"></a>Filtro de pruebas relacionales
 
-Filtros pruebas relacionales permiten buscar todos los elementos que tienen un valor en la propiedad especificada que es mayor que (\>), mayor o igual que (\>=), menor que (\<), o menor o igual que (\<=) un valor especificado. El valor se va a comparar con puede ser un valor constante o el valor de otra propiedad en cada elemento.
+Los filtros de pruebas relacionales permiten buscar todos los elementos que tienen un valor en la propiedad especificada que sea mayor que ( \> ), mayor o igual que ( \> =), menor que ( \< ) o menor o igual que ( \< =) un valor especificado. El valor con el que se va a comparar puede ser un valor constante o el valor de otra propiedad en cada elemento.
   
-#### <a name="relational-testing-filter-in-the-ews-managed-api"></a>Filtro de prueba relacional en la API administrada de EWS
+#### <a name="relational-testing-filter-in-the-ews-managed-api"></a>Filtro de pruebas relacionales en la API administrada de EWS
 
-En el ejemplo siguiente se muestra cómo usar la API administrada de EWS para crear filtros de búsqueda para devolver todos los elementos con un valor de la propiedad **ItemIndex** que tiene la relación especificada con el valor constante 3. 
+En el ejemplo siguiente se muestra cómo usar la API administrada de EWS para crear filtros de búsqueda para devolver todos los elementos con un valor en la propiedad **itemIndex** que tiene la relación especificada con el valor constante 3. 
   
 ```cs
 // Find all items where the custom property value is > 3.
@@ -206,9 +206,9 @@ SearchFilter.IsLessThanOrEqualTo lessThanOrEqualFilter =
     new SearchFilter.IsLessThanOrEqualTo(customPropDefinition, 3);
 ```
 
-#### <a name="relational-testing-filter-in-ews"></a>Filtro de prueba relacional de EWS
+#### <a name="relational-testing-filter-in-ews"></a>Filtro de pruebas relacionales en EWS
 
-En el ejemplo siguiente se muestra cómo usar EWS para crear un filtro de búsqueda para devolver todos los elementos con un valor de la propiedad **ItemIndex** que es mayor que el valor constante 3. 
+En el ejemplo siguiente se muestra cómo usar EWS para crear un filtro de búsqueda para devolver todos los elementos con un valor en la propiedad **itemIndex** que sea mayor que el valor constante 3. 
   
 ```XML
 <t:IsGreaterThan>
@@ -219,7 +219,7 @@ En el ejemplo siguiente se muestra cómo usar EWS para crear un filtro de búsqu
 </t:IsGreaterThan>
 ```
 
-En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devolver todos los elementos con un valor de la propiedad **ItemIndex** que es mayor o igual que el valor constante 3. 
+En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devolver todos los elementos con un valor en la propiedad **itemIndex** que sea mayor o igual que el valor constante 3. 
   
 ```XML
 <t:IsGreaterThanOrEqualTo>
@@ -230,7 +230,7 @@ En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devol
 </t:IsGreaterThanOrEqualTo>
 ```
 
-En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devolver todos los elementos con un valor de la propiedad **ItemIndex** que es menor que el valor constante 3. 
+En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devolver todos los elementos con un valor en la propiedad **itemIndex** que sea menor que el valor constante 3. 
   
 ```XML
 <t:IsLessThan>
@@ -241,7 +241,7 @@ En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devol
 </t:IsLessThan>
 ```
 
-En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devolver todos los elementos con un valor de la propiedad **ItemIndex** que es menor o igual que el valor constante 3. 
+En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devolver todos los elementos con un valor de la propiedad **itemIndex** que sea menor o igual que el valor constante 3. 
   
 ```XML
 <t:IsLessThanOrEqualTo>
@@ -252,13 +252,13 @@ En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devol
 </t:IsLessThanOrEqualTo>
 ```
 
-### <a name="negating-filter"></a>Filtro de negación
+### <a name="negating-filter"></a>Niega el filtro
 
-Un filtro negating permite negar otro filtro y obtener los resultados de búsqueda opuesto. Mientras que otros filtros devuelven resultados que coincidan con criterios específicos, un filtro negating devuelve resultados que no coinciden con los criterios especificados por el filtro se aplica a.
+Un filtro de negación permite negar otro filtro y obtener los resultados de búsqueda opuestos. Mientras que otros filtros devuelven resultados que coinciden con criterios específicos, un filtro de negación devuelve resultados que no coinciden con los criterios especificados por el filtro al que se aplica.
   
-#### <a name="negating-filter-in-the-ews-managed-api"></a>Negación filtro en la API administrada de EWS
+#### <a name="negating-filter-in-the-ews-managed-api"></a>Niega el filtro en la API administrada de EWS
 
-En el ejemplo siguiente se muestra cómo usar la API administrada de EWS para crear un filtro de búsqueda para devolver todos los elementos que no tienen la subcadena "notas de la reunión" en el asunto.
+El siguiente ejemplo muestra cómo usar la API administrada de EWS para crear un filtro de búsqueda para devolver todos los elementos que no tienen la subcadena "Notas de la reunión" en el asunto.
   
 ```cs
 SearchFilter.ContainsSubstring subjectFilter = new SearchFilter.ContainsSubstring(ItemSchema.Subject,
@@ -267,9 +267,9 @@ SearchFilter.Not subjectNotFilter =
     new SearchFilter.Not(subjectFilter);
 ```
 
-#### <a name="negating-filter-in-ews"></a>Filtro de negación de EWS
+#### <a name="negating-filter-in-ews"></a>Niega el filtro en EWS
 
-En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devolver todos los elementos que no tienen la subcadena "notas de la reunión" en el asunto.
+En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devolver todos los elementos que no tienen la subcadena "Notas de la reunión" en el asunto.
   
 ```XML
 <t:Not>
@@ -280,13 +280,13 @@ En el ejemplo siguiente se muestra cómo crear un filtro de búsqueda para devol
 </t:Not>
 ```
 
-### <a name="compound-filter"></a>Filtro de compuestos
+### <a name="compound-filter"></a>Filtro compuesto
 
-Un filtro de compuestos permite combinar varios filtros para crear criterios de búsqueda más complejos. Puede combinar los criterios mediante el uso de los operadores lógicos y o OR. De este modo, puede realizar búsquedas al igual que "todo el correo de Sadie Daniels que contiene 'notas de la reunión' en el asunto".
+Un filtro compuesto permite combinar varios filtros para crear criterios de búsqueda más complejos. Puede combinar criterios usando los operadores lógicos AND u OR. De este modo, puede realizar búsquedas como "todo el correo de Sadie Daniels que contiene" Notas de la reunión "en el asunto".
   
-#### <a name="compound-filter-in-the-ews-managed-api"></a>Filtro de compuestos en la API administrada de EWS
+#### <a name="compound-filter-in-the-ews-managed-api"></a>Filtro compuesto en la API administrada de EWS
 
-En el ejemplo siguiente se muestra cómo usar la API administrada de EWS para crear un filtro de búsqueda que devuelve todos los elementos que se envían desde Sadie Daniels y contienen "notas de la reunión" en el asunto.
+El siguiente ejemplo muestra cómo usar la API administrada de EWS para crear un filtro de búsqueda que devuelve todos los elementos que se envían desde Sadie Daniels y contienen "Notas de la reunión" en el asunto.
   
 ```cs
 SearchFilter.ContainsSubstring subjectFilter = new SearchFilter.ContainsSubstring(ItemSchema.Subject,
@@ -298,9 +298,9 @@ SearchFilter.SearchFilterCollection compoundFilter =
     new SearchFilter.SearchFilterCollection(LogicalOperator.And, subjectFilter, fromManagerFilter);
 ```
 
-#### <a name="compound-filter-in-ews"></a>Filtro de compuestos en EWS
+#### <a name="compound-filter-in-ews"></a>Filtro compuesto en EWS
 
-En el ejemplo siguiente se muestra cómo usar EWS para crear un filtro de búsqueda que devuelve todos los elementos que se envían desde Sadie Daniels y contienen "notas de la reunión" en el asunto.
+En el ejemplo siguiente se muestra cómo usar EWS para crear un filtro de búsqueda que devuelve todos los elementos que se envían desde Sadie Daniels y contienen "Notas de la reunión" en el asunto.
   
 ```XML
 <t:And>
@@ -317,17 +317,17 @@ En el ejemplo siguiente se muestra cómo usar EWS para crear un filtro de búsqu
 </t:And>
 ```
 
-## <a name="example-find-items-by-using-a-search-filter-and-the-ews-managed-api"></a>Ejemplo: Buscar elementos mediante el uso de un filtro de búsqueda y la API administrada de EWS
+## <a name="example-find-items-by-using-a-search-filter-and-the-ews-managed-api"></a>Ejemplo: buscar elementos mediante un filtro de búsqueda y la API administrada EWS
 <a name="bk_ExampleEWSMA"> </a>
 
-Los siguientes métodos de la API administrada de EWS utilizar filtros de búsqueda:
+Los siguientes métodos de la API administrada de EWS usan filtros de búsqueda:
   
-- [ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)
-- [ExchangeService.FindFolders](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)
-- [Folder.FindFolders](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx)
-- [Folder.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx)
+- [ExchangeService. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)
+- [ExchangeService. FindFolders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)
+- [Folder. FindFolders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx)
+- [Folder. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx)
     
-En el ejemplo siguiente se utiliza el método **ExchangeService.FindItems** ; Sin embargo, las mismas reglas y los conceptos se aplican a todos los métodos. En este ejemplo, se define un método denominado **SearchWithFilter** . Toma un objetos [ExchangeService](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) , [WellKnownFolderName](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) y [SearchFilter](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.searchfilter%28v=exchg.80%29.aspx) como parámetros. En este ejemplo se da por supuesto que se ha inicializado el objeto **ExchangeService** con valores válidos en las propiedades de [las credenciales](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx) y [dirección Url](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx) . La clase **SearchFilter** es la clase base para todos los filtros de búsqueda diferentes. 
+En el ejemplo siguiente se usa el método **ExchangeService. FindItems** ; sin embargo, las mismas reglas y conceptos se aplican a todos los métodos. En este ejemplo, se define un método denominado **SearchWithFilter** . Toma un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) , un objeto [WellKnownFolderName](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.wellknownfoldername%28v=exchg.80%29.aspx) y un objeto [SearchFilter](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfilter%28v=exchg.80%29.aspx) como parámetros. En este ejemplo se supone que el objeto **ExchangeService** se ha inicializado con valores válidos en las propiedades [Credentials](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservicebase.credentials%28v=exchg.80%29.aspx) y [URL](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.url%28v=exchg.80%29.aspx) . La clase **SearchFilter** es la clase base para todos los distintos filtros de búsqueda. 
   
 ```cs
 using Microsoft.Exchange.WebServices.Data
@@ -372,7 +372,7 @@ static void SearchWithFilter(ExchangeService service, WellKnownFolderName folder
 }
 ```
 
-Puede usar esta función con cualquiera de los filtros de búsqueda que se muestra en los ejemplos de este artículo. En este ejemplo se usa un filtro de compuestos para devolver todos los elementos de la Bandeja de entrada de Sadie Daniels con "notas de la reunión" en el asunto.
+Puede usar esta función con cualquiera de los filtros de búsqueda que se muestran en los ejemplos de este artículo. En este ejemplo se usa un filtro compuesto para devolver todos los elementos de la bandeja de entrada de Sadie Daniels con "Notas de la reunión" en el asunto.
   
 ```cs
 SearchFilter.ContainsSubstring subjectFilter = new SearchFilter.ContainsSubstring(ItemSchema.Subject,
@@ -385,22 +385,22 @@ SearchFilter.SearchFilterCollection compoundFilter =
 SearchWithFilter(service, WellKnownFolderName.Inbox, compoundFilter);
 ```
 
-## <a name="example-find-an-item-by-using-a-search-filter-and-ews"></a>Ejemplo: Buscar un elemento mediante el uso de un filtro de búsqueda y EWS
+## <a name="example-find-an-item-by-using-a-search-filter-and-ews"></a>Ejemplo: buscar un elemento mediante un filtro de búsqueda y EWS
 <a name="bk_ExampleEWS"> </a>
 
-Las siguientes operaciones de EWS usar filtros de búsqueda:
+Las siguientes operaciones de EWS usan filtros de búsqueda:
   
-- [FindFolder](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)
-- [FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)
+- [FindFolder](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)
+- [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)
     
-En el ejemplo siguiente se utiliza la operación **FindItem** ; Sin embargo, las mismas reglas y los conceptos se aplican a ambas operaciones. Filtros de búsqueda se encuentran en el elemento de [restricción](http://msdn.microsoft.com/library/77f19014-d112-4999-8e83-ecc32a117a73%28Office.15%29.aspx) en las solicitudes SOAP. En este ejemplo se envía una solicitud SOAP que es equivalente a la búsqueda que se muestra en el ejemplo anterior de la API administrada de EWS. 
+En el siguiente ejemplo, se usa la operación **FindItem** ; sin embargo, se aplican las mismas reglas y conceptos a ambas operaciones. Los filtros de búsqueda están incluidos en el elemento [Restriction](https://msdn.microsoft.com/library/77f19014-d112-4999-8e83-ecc32a117a73%28Office.15%29.aspx) de las solicitudes SOAP. En este ejemplo se envía una solicitud SOAP que es equivalente a la búsqueda que se muestra en el ejemplo anterior de la API administrada de EWS. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+    xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
   </soap:Header>
@@ -443,20 +443,20 @@ En el ejemplo siguiente se utiliza la operación **FindItem** ; Sin embargo, las
 </soap:Envelope>
 ```
 
-En el ejemplo siguiente se muestra la respuesta del servidor, incluidos los resultados de búsqueda.
+En el ejemplo siguiente se muestra la respuesta del servidor, incluidos los resultados de la búsqueda.
   
 ```XML
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="712" MinorBuildNumber="22" Version="V2_3" 
-        xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
-        xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+        xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
         xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:FindItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-        xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:FindItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+        xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:FindItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -504,7 +504,7 @@ En el ejemplo siguiente se muestra la respuesta del servidor, incluidos los resu
 ## <a name="next-steps"></a>Siguientes pasos
 <a name="bk_ExampleEWS"> </a>
 
-Ahora que está familiarizado con el uso de filtros de búsqueda en las búsquedas básicas, puede mover a técnicas más avanzadas de búsqueda.
+Ahora que está familiarizado con el uso de filtros de búsqueda en las búsquedas básicas, puede pasar a técnicas de búsqueda más avanzadas.
   
 - [Realizar búsquedas agrupadas mediante EWS en Exchange](how-to-perform-grouped-searches-by-using-ews-in-exchange.md)
     
@@ -513,12 +513,12 @@ Ahora que está familiarizado con el uso de filtros de búsqueda en las búsqued
 ## <a name="see-also"></a>Vea también
 
 - [Búsqueda y EWS en Exchange](search-and-ews-in-exchange.md)    
-- [Realizar una búsqueda AQS mediante EWS en Exchange](how-to-perform-an-aqs-search-by-using-ews-in-exchange.md)   
-- [ExchangeService.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)    
-- [ExchangeService.FindFolders](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)    
-- [Folder.FindFolders](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx)    
-- [Folder.FindItems](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx)    
-- [Operación FindFolder](http://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)   
-- [Operación FindItem](http://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)
+- [Realizar una búsqueda AQS con EWS en Exchange](how-to-perform-an-aqs-search-by-using-ews-in-exchange.md)   
+- [ExchangeService. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx)    
+- [ExchangeService. FindFolders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx)    
+- [Folder. FindFolders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx)    
+- [Folder. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.finditems%28v=exchg.80%29.aspx)    
+- [Operación FindFolder](https://msdn.microsoft.com/library/7a9855aa-06cc-45ba-ad2a-645c15b7d031%28Office.15%29.aspx)   
+- [Operación FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx)
     
 

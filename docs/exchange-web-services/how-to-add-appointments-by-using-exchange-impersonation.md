@@ -1,43 +1,43 @@
 ---
-title: Agregar citas mediante la suplantación de Exchange
+title: Adición de citas mediante la suplantación de Exchange
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 78d5e51b-900f-4302-b9a8-fdc9aa4b65a5
-description: Obtenga información sobre cómo usar suplantación con la API administrada de EWS o EWS en Exchange para agregar citas a los calendarios de los usuarios.
-ms.openlocfilehash: ab10a7d65a5603a84e12d918dd54198927d88b8a
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+description: Obtenga información sobre cómo usar la suplantación con la API administrada de EWS o EWS en Exchange para agregar citas a los calendarios de los usuarios.
+localization_priority: Priority
+ms.openlocfilehash: b1473d72113f8cc07d05364a4d87fedf23c7351d
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21353458"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44455334"
 ---
-# <a name="add-appointments-by-using-exchange-impersonation"></a>Agregar citas mediante la suplantación de Exchange
+# <a name="add-appointments-by-using-exchange-impersonation"></a>Adición de citas mediante la suplantación de Exchange
 
-Obtenga información sobre cómo usar suplantación con la API administrada de EWS o EWS en Exchange para agregar citas a los calendarios de los usuarios.
+Obtenga información sobre cómo usar la suplantación con la API administrada de EWS o EWS en Exchange para agregar citas a los calendarios de los usuarios.
   
-Puede crear una aplicación de servicio que inserta citas directamente en un calendario de Exchange mediante el uso de una cuenta de servicio que tiene la **AppplicationImpersonation**[habilitada la función](how-to-configure-impersonation.md). Cuando se utiliza la suplantación, la aplicación actúa como el usuario; es como si el usuario agrega la cita al calendario mediante el uso de un cliente como Outlook. 
+Puede crear una aplicación de servicio que inserte citas directamente en un calendario de Exchange mediante una cuenta de servicio que tenga [habilitada la función](how-to-configure-impersonation.md) **ApplicationImpersonation** . Cuando se utiliza la suplantación, la aplicación actúa como usuario; es como si el usuario agregara la cita al calendario mediante un cliente como Outlook. 
   
-Cuando se utiliza la suplantación, tenga en cuenta lo siguiente:
+Cuando use la suplantación, tenga en cuenta lo siguiente:
   
-- El objeto [ExchangeService](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.aspx) debe estar enlazado a la cuenta de servicio. Puede usar el mismo objeto **ExchangeService** para suplantar a varias cuentas cambiando la propiedad [ImpersonatedUserId](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid.aspx) para cada cuenta que se va a suplantar. 
+- El objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.aspx) debe estar enlazado a la cuenta de servicio. Puede usar el mismo objeto **ExchangeService** para representar varias cuentas cambiando la propiedad [ImpersonatedUserId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid.aspx) para cada cuenta que desee suplantar. 
     
-- Cualquier elemento que guarde en una cuenta suplantada sólo se puede usar una vez. Si desea guardar la cita de la misma en varias cuentas, por ejemplo, se debe crear un objeto de [cita](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.aspx) para cada cuenta de. 
+- Cualquier elemento que guarde en una cuenta suplantada solo puede usarse una vez. Si desea guardar la misma cita en varias cuentas, por ejemplo, tiene que crear un objeto de [cita](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.aspx) para cada cuenta. 
     
 ## <a name="prerequisites"></a>Requisitos previos
 
-La aplicación necesita una cuenta para usar para conectarse al servidor de Exchange antes de que puede usar la suplantación. Es recomendable que use una cuenta de servicio para la aplicación que se ha concedido a la función de suplantación de la aplicación para las cuentas que se va a obtener acceso a. Para obtener más información, vea [Configure suplantación](how-to-configure-impersonation.md)
+La aplicación necesita una cuenta para conectarse con el servidor de Exchange antes de poder usar la suplantación. Le recomendamos que use una cuenta de servicio para la aplicación a la que se le haya concedido el rol de suplantación de aplicaciones para las cuentas a las que tendrá acceso. Para obtener más información, vea [configurar la suplantación](how-to-configure-impersonation.md)
   
-## <a name="add-appointments-by-using-impersonation-with-the-ews-managed-api"></a>Agregar citas mediante la suplantación con la API administrada de EWS
+## <a name="add-appointments-by-using-impersonation-with-the-ews-managed-api"></a>Agregar citas con la suplantación con la API administrada de EWS
 
-En el ejemplo siguiente se agrega una reunión o cita en el calendario de una o más cuentas de Exchange. El método toma tres parámetros.
+En el siguiente ejemplo se agrega una cita o una reunión al calendario de una o varias cuentas de Exchange. El método toma tres parámetros.
   
--  _servicio_ : un objeto **ExchangeService** enlazado a la cuenta de la aplicación de servicio en el servidor de Exchange. 
+-  _servicio_ : objeto **ExchangeService** enlazado a la cuenta de la aplicación de servicio en el servidor Exchange. 
     
--  _emailAddresses_ : un objeto [System.List](http://msdn.microsoft.com/library/6sh2ey19.aspx) que contiene una lista de cadenas de dirección de correo electrónico SMTP. 
+-  _emailAddresses_ : un objeto [System. List](https://msdn.microsoft.com/library/6sh2ey19.aspx) que contiene una lista de cadenas de direcciones de correo electrónico SMTP. 
     
--  _configuración de fábrica_ , un objeto que implementa la interfaz **IAppointmentFactory** . Esta interfaz tiene un método, **GetAppointment** que toma un objeto **ExchangeService** como un parámetro y devuelve un objeto de la **cita** . Se define la interfaz **IAppointmentFactory** [interfaz IAppointmentFactory](#bk_IAppointmentFactory).
+-  _Factory_ : un objeto que implementa la interfaz **IAppointmentFactory** . Esta interfaz tiene un método, **GetAppointment** , que toma un objeto **ExchangeService** como parámetro y devuelve un objeto **appointment** . La interfaz **IAppointmentFactory** está definida [IAppointmentFactory interfaz](#bk_IAppointmentFactory).
     
 ```cs
 private static void CreateAppointments(ExchangeService service, List<string> emailAddresses, IAppointmentFactory factory)
@@ -73,12 +73,12 @@ private static void CreateAppointments(ExchangeService service, List<string> ema
 }
 ```
 
-Cuando se guarda la cita, el código comprueba para determinar si los asistentes que se han agregado a la propiedad [RequiredAttendees](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.requiredattendees.aspx) . Si tienen, se llama al método de [Appointment.Save](http://msdn.microsoft.com/library/dd635394.aspx) con el valor de la enumeración [SendToAllAndSaveCopy](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.sendinvitationsmode.aspx) para que los asistentes reciban las convocatorias de reunión; de lo contrario, se llama al método de **Appointment.Save** con el valor de la enumeración [SendToNone](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.sendinvitationsmode.aspx) para que la cita se guarda en el calendario del usuario suplantado con la propiedad [Appointment.IsMeeting](http://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.ismeeting.aspx) establecida en **false**.
+Al guardar la cita, el código comprueba si se ha agregado algún asistente a la propiedad [RequiredAttendees](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.requiredattendees.aspx) . Si es así, se llama al método [appointment. Save](https://msdn.microsoft.com/library/dd635394.aspx) con el valor de enumeración [SendToAllAndSaveCopy](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.sendinvitationsmode.aspx) para que los asistentes reciban las convocatorias de reunión; de lo contrario, se llama al método **appointment. Save** con el valor de enumeración [SendToNone](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.sendinvitationsmode.aspx) para que la cita se guarde en el calendario del usuario suplantado con la propiedad [appointment. IsMeeting](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.ismeeting.aspx) establecida en **false**.
   
 ### <a name="iappointmentfactory-interface"></a>Interfaz IAppointmentFactory
 <a name="bk_IAppointmentFactory"> </a>
 
-Debido a que se necesita un nuevo objeto de **cita** cada vez que se desea guardar una cita en el calendario de un usuario suplantado, la interfaz **IAppointmentFactory** resume el objeto que se utiliza para rellenar cada objeto de la **cita** . Esta versión es una interfaz simple que contiene un solo método, **GetAppointment**, que toma un objeto **ExchangeService** como un parámetro y devuelve un nuevo objeto de **cita** enlazado a ese objeto **ExchangeService** . 
+Debido a que necesita un nuevo objeto **appointment** cada vez que desea guardar una cita en el calendario de un usuario suplantado, la interfaz **IAppointmentFactory** abstrae el objeto que se usa para rellenar cada objeto **appointment** . Esta versión es una interfaz simple que contiene un solo método, **GetAppointment**, que toma un objeto **ExchangeService** como un parámetro y devuelve un nuevo objeto **appointment** enlazado a dicho objeto **ExchangeService** . 
   
 ```cs
 interface IAppointmentFactory
@@ -87,7 +87,7 @@ interface IAppointmentFactory
 }
 ```
 
-El siguiente ejemplo de clase de **AppointmentFactory** se muestra una implementación de la interfaz **IAppointmentFactory** que devuelve una cita simple que se produce tres días desde ahora. Si quita el comentario de la `appointment.RequiredAttendees.Add` línea, el método **GetAppointment** devolverá una reunión y la dirección de correo electrónico especificada en que la línea recibirán una convocatoria de reunión con el usuario suplantado aparece como el organizador. 
+El siguiente ejemplo de clase **AppointmentFactory** muestra una implementación de la interfaz **IAppointmentFactory** que devuelve una cita sencilla que se produce tres días a partir de ahora. Si quita la marca de comentario de la `appointment.RequiredAttendees.Add` línea, el método **GetAppointment** devolverá una reunión y la dirección de correo electrónico especificada en esa línea recibirá una convocatoria de reunión con el usuario suplantado que se muestra como organizador. 
   
 ```cs
 class AppointmentFactory : IAppointmentFactory
@@ -109,16 +109,16 @@ class AppointmentFactory : IAppointmentFactory
 
 ```
 
-## <a name="add-appointments-by-using-impersonation-with-ews"></a>Agregue citas con suplantación de EWS
+## <a name="add-appointments-by-using-impersonation-with-ews"></a>Agregar citas mediante la suplantación con EWS
 
-EWS habilita la aplicación para usar suplantación para agregar elementos a un calendario en nombre propietario del calendario. En este ejemplo se muestra cómo usar la operación [CreateItem](http://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) para agregar una cita en el calendario de una cuenta suplantada. 
+EWS permite que la aplicación use la suplantación para agregar elementos a un calendario en nombre del propietario del calendario. En este ejemplo se muestra cómo usar la operación [CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) para agregar una cita al calendario de una cuenta suplantada. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
-       xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+       xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
+       xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
     <t:RequestServerVersion Version="Exchange2013" />
     <t:TimeZoneContext>
@@ -148,26 +148,26 @@ EWS habilita la aplicación para usar suplantación para agregar elementos a un 
 </soap:Envelope>
 ```
 
-Tenga en cuenta que no sea la adición del elemento **ExchangeImpersonation** en el encabezado SOAP para especificar la cuenta que nos estamos suplantación, esto es la misma solicitud XML usada para crear una cita sin usar suplantación. 
+Tenga en cuenta que, aparte de la adición del elemento **ExchangeImpersonation** en el encabezado SOAP para especificar la cuenta que se va a suplantar, esta es la misma solicitud XML que se usa para crear una cita sin usar suplantación. 
   
-En el ejemplo siguiente se muestra la respuesta XML que es devuelto por la operación **CreateItem** . 
+En el ejemplo siguiente se muestra el XML de respuesta que devuelve la operación **CreateItem** . 
   
 > [!NOTE]
-> Los atributos **ItemId** y **ChangeKey** son más cortos para mejorar la legibilidad. 
+> Los atributos **Itemid** y **changekey** se acortan para facilitar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15" MinorVersion="0" MajorBuildNumber="775" MinorBuildNumber="7" Version="V2_4" 
- xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" 
- xmlns="http://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns:h="https://schemas.microsoft.com/exchange/services/2006/types" 
+ xmlns="https://schemas.microsoft.com/exchange/services/2006/types" 
  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
   </s:Header>
   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <m:CreateItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
-  xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+    <m:CreateItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
+  xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
       <m:ResponseMessages>
         <m:CreateItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -184,23 +184,23 @@ En el ejemplo siguiente se muestra la respuesta XML que es devuelto por la opera
 
 ```
 
-Una vez más, esto es el mismo XML que se devuelve cuando se usa la operación **CreateItem** sin usar suplantación. 
+De nuevo, este es el mismo XML que se devuelve cuando se utiliza la operación **CreateItem** sin usar la suplantación. 
   
 ## <a name="see-also"></a>Vea también
 
 
 - [Suplantación y EWS en Exchange](impersonation-and-ews-in-exchange.md)
     
-- [Rol ApplicationImpersonation](http://technet.microsoft.com/en-us/library/dd776119%28v=exchg.150%29.aspx)
+- [Rol ApplicationImpersonation](https://technet.microsoft.com/library/dd776119%28v=exchg.150%29.aspx)
     
 - [Configurar la suplantación](how-to-configure-impersonation.md)
     
-- [Identificar la cuenta a suplantar](how-to-identify-the-account-to-impersonate.md)
+- [Identificación de la cuenta que se va a suplantar](how-to-identify-the-account-to-impersonate.md)
     
-- [Crear citas y reuniones mediante el uso de EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
+- [Crear citas y reuniones mediante EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
     
 - [Operación CreateItem (elemento de calendario)](../web-service-reference/createitem-operation-calendar-item.md)
     
-- [ExchangeService.ImpersonatedUserId (propiedad)](https://docs.microsoft.com/en-us/dotnet/api/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid?view=exchange-ews-api)
+- [Propiedad ExchangeService. ImpersonatedUserId](https://docs.microsoft.com/dotnet/api/microsoft.exchange.webservices.data.exchangeservice.impersonateduserid?view=exchange-ews-api)
     
 

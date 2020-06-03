@@ -1,31 +1,31 @@
 ---
-title: Obtener una lista de usuarios de correo mediante el Shell de administración de Exchange
+title: Obtener una lista de usuarios de correo mediante el shell de administración de Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
 ms.assetid: 8b790dc8-5c4f-4acf-bbe7-63523395fbe7
 description: Aprenda a usar los cmdlets del Shell de administración de Exchange para crear una herramienta que devuelva una lista de los usuarios de buzones de correo de Exchange.
-ms.openlocfilehash: e9493571e98760e5a11674db9a552111c1ec29b2
-ms.sourcegitcommit: 9061fcf40c218ebe88911783f357b7df278846db
+localization_priority: Priority
+ms.openlocfilehash: 817d92ef1bb88017f471681b448c052ecaa54e7e
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/28/2018
-ms.locfileid: "21354004"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44435712"
 ---
-# <a name="get-a-list-of-mail-users-by-using-the-exchange-management-shell"></a>Obtener una lista de usuarios de correo mediante el Shell de administración de Exchange
+# <a name="get-a-list-of-mail-users-by-using-the-exchange-management-shell"></a>Obtener una lista de usuarios de correo mediante el shell de administración de Exchange
 
 Aprenda a usar los cmdlets del Shell de administración de Exchange para crear una herramienta que devuelva una lista de los usuarios de buzones de correo de Exchange.
   
 **Se aplica a:** Exchange Online | Exchange Server 2013 | Office 365 
   
-Obtener una lista de usuarios de Exchange Online, Exchange Online como parte de Office 365, o una versión de Exchange a partir de Exchange 2013 mediante el uso de una herramienta administrada que llama a un cmdlet del Shell de administración de Exchange es un proceso de dos pasos. En primer lugar, establecer un espacio de ejecución remoto en un servidor de Exchange; a continuación, ejecute el cmdlet para recuperar la información del usuario en el espacio de ejecución remoto. 
+Conseguir una lista de usuarios de Exchange Online, Exchange Online como parte de Office 365, o una versión de Exchange a partir de Exchange 2013 usando una herramienta administrada que invoque un cmdlet del Shell de administración de Exchange es un proceso dividido en dos pasos. En primer lugar, establezca un espacio de ejecución remoto en un servidor de Exchange; a continuación, ejecute el cmdlet para obtener la información de usuario en el espacio de ejecución remoto. 
 
-Para conectar con el espacio de ejecución remoto, se debe autenticar con el servidor de Exchange mediante el esquema de autenticación que cumpla los requisitos de seguridad de la organización. 
+Para conectar con el espacio de ejecución remoto, tendrá que autenticarse con el servidor de Exchange mediante el esquema de autenticación que cumpla los requisitos de seguridad de la organización. 
 
-En este artículo se proporcionan ejemplos de código que puede usar para establecer un espacio de ejecución remoto y ejecutar un cmdlet del Shell de administración de Exchange para obtener una lista de usuarios desde un servidor de Exchange.
+Este artículo proporciona ejemplos de código que puede utilizar para configurar un espacio de ejecución remoto y ejecutar un cmdlet del Shell de administración de Exchange para conseguir una lista de usuarios desde un servidor Exchange.
 
 <a name="bk_prerequisites"> </a>
 
@@ -33,17 +33,17 @@ En este artículo se proporcionan ejemplos de código que puede usar para establ
 
 Para realizar esta tarea, se necesita una referencia para los siguientes espacios de nombres:
   
-- **System.Collections.ObjectModel**
-- **System.Management.Automation**
-- **System.Management.Automation.Remoting**
-- **System.Management.Automation.Runspaces**
+- **System. Collections. ObjectModel**
+- **System. Management. Automation**
+- **System. Management. Automation. Remoting**
+- **System. Management. Automation. espacios de**
     
 > [!NOTE]
 >  Cuando utiliza Visual Studio para crear una aplicación, debe agregar una referencia al ensamblado System.Management.Automation.dll para el proyecto. El ensamblado puede encontrarse en una de las siguientes ubicaciones:
 > - En los sistemas operativos Windows XP y Windows Vista, el directorio de instalación de Windows PowerShell ($PSHOME).
 > - En los sistemas operativos Windows 7 y Windows 8, la siguiente carpeta: Windows\assembly\GAC_MSIL\System.Management.Automation. 
   
-No se cargue el complemento de administración de Exchange 2013 en el espacio de ejecución en los equipos que ejecutan aplicaciones que automatizan los cmdlets del Shell de administración de Exchange. La aplicación en su lugar, debe crear un espacio de ejecución remoto, tal como se describe más adelante en este artículo.
+No cargue el complemento de administración de Exchange 2013 en el espacio de ejecución en los equipos que ejecutan aplicaciones que automatizan los cmdlets del shell de administración de Exchange. La aplicación debe crear en su lugar un espacio de ejecución remoto, tal como se describe más adelante en este artículo.
 
 <a name="bk_gettinglistmailbox"> </a>
 
@@ -65,13 +65,13 @@ El siguiente ejemplo de código define el método **GetUsersUsingBasicAuth**, qu
   
 Este método requiere los siguientes parámetros:
   
--  **liveIDConnectionUri** &ndash; Una cadena que contiene el identificador URI del servidor de Exchange Online que va a realizar la autenticación de la aplicación. Si se está ejecutando Exchange Online en Office 365, el URI es `https://outlook.office365.com/PowerShell-LiveID`; de lo contrario, el URI es `https://<servername>/PowerShell-LiveID`. 
+-  **liveIDConnectionUri** &ndash; Una cadena que contiene el URI del servidor de Exchange online que autenticará la aplicación. Si Exchange Online se está ejecutando en Office 365, el URI es `https://outlook.office365.com/PowerShell-LiveID` ; de lo contrario, el URI es `https://<servername>/PowerShell-LiveID` . 
     
--  **schemaUri** &ndash; Una cadena que contiene el URI del documento de esquema que define el esquema de Shell de administración de Exchange. El esquema de URI es `http://schemas.microsoft.com/powershell/Microsoft.Exchange`. 
+-  **schemaUri** &ndash; Una cadena que contiene el URI del documento de esquema que define el esquema del shell de administración de Exchange. El URI del esquema es `https://schemas.microsoft.com/powershell/Microsoft.Exchange` . 
     
--  **credenciales** &ndash; Un objeto [PSCredential](http://msdn.microsoft.com/en-us/library/system.management.automation.pscredential%28VS.85%29.aspx) que contiene las credenciales del usuario que está ejecutando la aplicación. 
+-  **credenciales** &ndash; Un objeto [PSCredential](https://msdn.microsoft.com/library/system.management.automation.pscredential%28VS.85%29.aspx) que contiene las credenciales del usuario que está ejecutando la aplicación. 
     
--  **recuento** &ndash; El número de usuarios de buzón de correo de Exchange para devolver. 
+-  **número** &ndash; de Número de usuarios de buzones de Exchange que se van a devolver. 
     
 ```cs
 public Collection<PSObject> GetUsersUsingBasicAuth(
@@ -113,19 +113,19 @@ Este método requiere los siguientes parámetros:
   
 -  **huella digital** &ndash; Una cadena que contiene la huella digital del certificado que se usa para autenticar la aplicación. 
     
--  **certConnectionUri** &ndash; Una cadena que contiene el identificador URI del servidor que se va a autenticar el certificado. El identificador URI será uno de los que se indican en la siguiente tabla. 
+-  **certConnectionUri** &ndash; Una cadena que contiene el URI del servidor que va a autenticar el certificado. El URI será uno de los recogidos en la tabla siguiente. 
     
-    **La tabla 1. certConnectionUri los URI**
+    **Tabla 1. URI de certConnectionUri**
 
-    |**Server**|**URI**|
+    |**Servidor**|**URI**|
     |:-----|:-----|
     |Servidor Exchange sin SSL  <br/> |`http://<servername>/PowerShell`  <br/> |
     |Servidor Exchange con SSL  <br/> |`https://<servername>/PowerShell`  <br/> |
     |Exchange Online como parte de Office 365  <br/> |`https://outlook.office365.com/PowerShell`  <br/> |
    
-- **schemaUri** &ndash; Una cadena que contiene el URI del documento de esquema que define el esquema de Shell de administración de Exchange. El esquema de URI es http://schemas.microsoft.com/powershell/Microsoft.Exchange. 
+- **schemaUri** &ndash; Una cadena que contiene el URI del documento de esquema que define el esquema del shell de administración de Exchange. El URI del esquema es https://schemas.microsoft.com/powershell/Microsoft.Exchange . 
     
-- **recuento** &ndash; El número de usuarios de buzón de correo de Exchange para devolver. 
+- **número** &ndash; de Número de usuarios de buzones de Exchange que se van a devolver. 
     
 ```cs
 public Collection<PSObject> GetUsersUsingCertificate(
@@ -164,20 +164,20 @@ El siguiente ejemplo de código define el método **GetUsersUsingKerberos**, que
   
 Este método requiere los siguientes parámetros:
   
-- **kerberosUri** &ndash; Una cadena que contiene el identificador URI del servidor de Kerberos que se autenticará a la aplicación. El identificador URI será uno de los que se indican en la siguiente tabla. 
+- **kerberosUri** &ndash; Una cadena que contiene el URI del servidor Kerberos que autenticará la aplicación. El URI será uno de los recogidos en la tabla siguiente. 
     
-    **Tabla 2. kerberosUri los URI**
+    **Tabla 2. URI de kerberosUri**
 
-    |**Server**|**URI**|
+    |**Servidor**|**URI**|
     |:-----|:-----|
     |Servidor Exchange sin SSL  <br/> |`http://<servername>/PowerShell`  <br/> |
     |Servidor Exchange con SSL  <br/> |`https://<servername>/PowerShell`  <br/> |
    
-- **schemaUri** &ndash; Una cadena que contiene el URI del documento de esquema que define el esquema de Shell de administración de Exchange. El esquema de URI es http://schemas.microsoft.com/powershell/Microsoft.Exchange. 
+- **schemaUri** &ndash; Una cadena que contiene el URI del documento de esquema que define el esquema del shell de administración de Exchange. El URI del esquema es https://schemas.microsoft.com/powershell/Microsoft.Exchange . 
     
-- **credenciales** &ndash; Un objeto [PSCredential](http://msdn.microsoft.com/en-us/library/system.management.automation.pscredential%28VS.85%29.aspx) que contiene las credenciales del usuario que está ejecutando la aplicación. 
+- **credenciales** &ndash; Un objeto [PSCredential](https://msdn.microsoft.com/library/system.management.automation.pscredential%28VS.85%29.aspx) que contiene las credenciales del usuario que está ejecutando la aplicación. 
     
-- **recuento** &ndash; El número de usuarios de buzón de correo de Exchange para devolver. 
+- **número** &ndash; de Número de usuarios de buzones de Exchange que se van a devolver. 
     
 ```cs
 public Collection<PSObject> GetUsersUsingKerberos(
@@ -212,13 +212,13 @@ public Collection<PSObject> GetUsersUsingKerberos(
 
 ## <a name="get-a-list-of-mailbox-users-from-a-remote-runspace"></a>Conseguir una lista de los usuarios de buzones de correo desde un espacio de ejecución remoto
 
-En el ejemplo de código siguiente se define el método **GetUserInformation** , que devuelve una colección de instancias de [PSObject](http://msdn.microsoft.com/en-us/library/system.management.automation.pscredential%28VS.85%29.aspx) que representan los usuarios del buzón de Exchange. Este método es invocado por los métodos **GetUsersUsingBasicAuth**, **GetUsersUsingCertificate**y **GetUsersUsingKerberos** para devolver la lista de usuarios desde el servidor remoto. 
+El siguiente ejemplo de código define el método **GetUserInformation** , que devuelve una colección de instancias de [PSObject](https://msdn.microsoft.com/library/system.management.automation.pscredential%28VS.85%29.aspx) que representan usuarios de buzones de correo de Exchange. También se puede invocar este método mediante los métodos **GetUsersUsingBasicAuth**, **GetUsersUsingCertificate** y **GetUsersUsingKerberos** para obtener la lista de usuarios desde el servidor remoto. 
   
 Este método requiere los siguientes parámetros:
   
-- **recuento** &ndash; El número de usuarios de buzón de correo de Exchange para devolver. 
+- **número** &ndash; de Número de usuarios de buzones de Exchange que se van a devolver. 
     
-- **espacio de ejecución** &ndash; El espacio de ejecución remoto que se haya establecido para el servidor de Exchange remoto. 
+- **runspace** &ndash; El espacio de ejecución remoto que se establece para el servidor remoto de Exchange. 
     
 ```cs
 public Collection<PSObject> GetUserInformation(int count, Runspace runspace)
@@ -249,11 +249,11 @@ End Function
 
 ```
 
-El método **GetUserInformation** no devolverá más de _recuento de_ usuarios del buzón. Para simplificar el código de este ejemplo, el método no filtrar o limitar en caso contrario, los usuarios de buzón de correo que se devuelven. 
+El método **GetUserInformation** no devolverá más que el _número_ de usuarios de buzones. Para simplificar el código de este ejemplo, el método no filtra ni limita a los usuarios del buzón de correo que se obtienen. 
   
 ## <a name="see-also"></a>Vea también
 
 - [Crear herramientas de Shell de administración de Exchange](create-exchange-management-shell-tools.md)   
-- [Usar la respuesta de cmdlet del Shell de administración de Exchange](how-to-use-the-exchange-management-shell-cmdlet-response.md)
+- [Usar la respuesta del cmdlet de Shell de administración de Exchange](how-to-use-the-exchange-management-shell-cmdlet-response.md)
     
 

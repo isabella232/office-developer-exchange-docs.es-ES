@@ -3,33 +3,33 @@ title: Calendarios y EWS en Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: b87b0180-f5b5-44e4-b6ac-4f23e476b03b
-description: Obtenga información sobre los calendarios, las carpetas de calendario y los elementos, las citas y reuniones en Exchange.
-ms.openlocfilehash: bb9702118ff1db66862a5788c2d8f58dd55c4d09
-ms.sourcegitcommit: 34041125dc8c5f993b21cebfc4f8b72f0fd2cb6f
+description: Obtenga información sobre calendarios, carpetas y elementos de calendario, citas y reuniones en Exchange.
+localization_priority: Priority
+ms.openlocfilehash: 3312ebb4deeb6645ccd7048564d61c3db5ea4b94
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "19762992"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44456202"
 ---
 # <a name="calendars-and-ews-in-exchange"></a>Calendarios y EWS en Exchange
 
-Obtenga información sobre los calendarios, las carpetas de calendario y los elementos, las citas y reuniones en Exchange.
+Obtenga información sobre calendarios, carpetas y elementos de calendario, citas y reuniones en Exchange.
   
-Es probablemente familiarizado con muchas de las características de calendario en los clientes de correo electrónico como Outlook, lo que permite realizar un seguimiento de las citas, programar reuniones, comprobar la disponibilidad de las personas, invitar a los asistentes y cambiar o cancelar las reuniones.
+Probablemente esté familiarizado con muchas de las características de calendario de los clientes de correo electrónico como Outlook, lo que le permite realizar un seguimiento de las citas, programar reuniones, comprobar la disponibilidad de los usuarios, invitar a los asistentes y cambiar o cancelar reuniones.
   
-Características relacionadas con el calendario de Exchange son un poco diferentes de lo que se ve en un cliente como Outlook. En lugar de mostrar información, EWS en Exchange le permite realizar tareas como crear, almacenar, enviar o cambiar la información. Para usar EWS para trabajar con los calendarios, debe estar familiarizado con los conceptos de almacenamiento de información, la hora, periodicidad y flujo de mensajes. Más concretamente, deberá estar familiarizado con lo siguiente:
+Las características relacionadas con el calendario de Exchange son un poco diferentes de las que se ven en un cliente como Outlook. En lugar de Mostrar información, EWS en Exchange le permite hacer cosas como crear, almacenar, enviar o cambiar la información. Para usar EWS para trabajar con calendarios, debe estar familiarizado con los conceptos, como el almacenamiento de la información, el tiempo, la periodicidad y el flujo de mensajes. Más concretamente, debe estar familiarizado con lo siguiente:
   
-- Las carpetas de calendario, elementos de calendario y vistas de calendario
+- Carpetas de calendario, elementos de calendario y vistas de calendario
     
-- Las convocatorias de reunión, respuestas, programación, los asistentes, recursos, salones y disponibilidad
+- Convocatorias de reunión, respuestas, programación, asistentes, recursos, salas y disponibilidad
     
-- Duraciones de tiempo, zonas horarias y horas de comienzo y finalización de las reuniones y citas
+- Duraciones de tiempo, zonas horarias y horas de inicio y finalización de reuniones y citas
     
-- Serie periódica, patrones de periodicidad, excepciones y las citas de instancia única y las reuniones
+- Series periódicas, patrones de periodicidad, excepciones y citas y reuniones de instancia única
     
-Afortunadamente, EWS y la API administrada de EWS proporcionan un amplio conjunto de operaciones y métodos que permiten realizar una amplia variedad de tareas relacionadas con el calendario. Por ejemplo, mediante la API administrada de EWS, puede crear una reunión y enviar invitaciones a los asistentes con unas pocas líneas de código, tal como se muestra en el siguiente ejemplo.
+Afortunadamente, EWS y la API administrada de EWS proporcionan un amplio conjunto de operaciones y métodos que permiten realizar una amplia variedad de tareas relacionadas con el calendario. Por ejemplo, mediante la API administrada de EWS, puede crear una reunión y enviar invitaciones a los asistentes con unas pocas líneas de código, como se muestra en el ejemplo siguiente.
   
 ```cs
             Appointment meeting = new Appointment(service);
@@ -48,79 +48,79 @@ Afortunadamente, EWS y la API administrada de EWS proporcionan un amplio conjunt
 
 ```
 
-## <a name="calendar-folders-and-calendar-items"></a>Las carpetas de calendario y elementos de calendario
+## <a name="calendar-folders-and-calendar-items"></a>Carpetas de calendario y elementos de calendario
 <a name="bk_CalendarFolder"> </a>
 
-Las carpetas de calendario contienen elementos de calendario. Las carpetas de calendario tienen una [clase de carpeta](http://msdn.microsoft.com/library/0041d135-2869-4612-89a5-d1aa86aa1093%28Office.15%29.aspx) de **IPF. Cita**y puede incluir sólo los elementos definidos por la propiedad de API administrada de EWS [ItemClass](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.item.itemclass%28v=exchg.80%29.aspx) , que está asociada a un objeto de [Clase de la cita](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) o el elemento EWS [CalendarItemType](http://msdn.microsoft.com/library/1feb0788-adf7-4a7c-830c-005214ad930f%28Office.15%29.aspx) . 
+Las carpetas de calendario contienen elementos de calendario. Las carpetas de calendarios tienen una [clase de carpeta](https://msdn.microsoft.com/library/0041d135-2869-4612-89a5-d1aa86aa1093%28Office.15%29.aspx) de **ipf. Cita**y puede incluir solo los elementos definidos por la propiedad de la API administrada de EWS de [ItemClass](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.itemclass%28v=exchg.80%29.aspx) , que está asociada con un objeto de [clase de cita](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) o el elemento [CalendarItemType](https://msdn.microsoft.com/library/1feb0788-adf7-4a7c-830c-005214ad930f%28Office.15%29.aspx) de EWS. 
   
-Los elementos de una carpeta Calendario son un poco diferentes de elementos en otras carpetas de un buzón de correo porque repeticiones en una serie periódica y las excepciones de una serie periódica no son elementos real en el buzón de correo, pero en su lugar se almacenan internamente como datos adjuntos a una periódica patrón. Por lo tanto, con el fin de recuperar todas las citas de un intervalo de fechas determinado, debe utilizar una vista de calendario. Para obtener más información acerca de cómo recuperar las citas y vistas del calendario, vea [obtener las citas y reuniones mediante el uso de EWS en Exchange](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md).
+Los elementos de una carpeta calendario son ligeramente diferentes de los elementos de otras carpetas de un buzón, ya que las repeticiones de una serie periódica y las excepciones a una serie periódica no son elementos reales en el buzón de correo, sino que se almacenan internamente como datos adjuntos en un maestro recurrente. Por lo tanto, para poder recuperar todas las citas de un intervalo de fechas determinado, debe usar una vista de calendario. Para obtener más información sobre cómo recuperar las citas y las vistas de calendario, vea [obtener citas y reuniones mediante EWS en Exchange](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md).
   
 ## <a name="meetings-and-appointments"></a>Reuniones y citas
 <a name="bk_meetings"> </a>
 
-La diferencia entre las reuniones y citas esencial es que las reuniones tienen asistentes, y no las citas. Internamente, Exchange utiliza el mismo objeto para las reuniones y citas. Usar la API administrada de EWS [clase de cita](http://msdn.microsoft.com/en-us/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) o el elemento EWS [CalendarItem](http://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) para trabajar con las reuniones y citas. 
+La diferencia fundamental entre las reuniones y las citas es que las reuniones tienen asistentes y las citas no. Internamente, Exchange usa el mismo objeto para las reuniones y las citas. Use la [clase de cita](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) de API administrada EWS o el elemento [CalendarItem](https://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) de EWS para trabajar con reuniones y citas. 
   
-Las citas y reuniones pueden ser instancias únicas o parte de una [serie periódica](recurrence-patterns-and-ews.md)pero, debido a que las citas no incluyen los asistentes, salas o recursos, no requieren que se envíe un mensaje.
+Las citas y las reuniones pueden ser únicas o formar parte de una [serie periódica](recurrence-patterns-and-ews.md), pero debido a que las citas no incluyen asistentes, salones o recursos, no necesitan que se envíe un mensaje.
   
-Debido a que las reuniones incluyen enviar y responder a las solicitudes y las actualizaciones, que implican algo más que obtener acceso a los elementos de una carpeta de calendario. También tienen un flujo de trabajo asociado. Se deben programar reuniones cuando los asistentes están disponibles y también pueden implicar la reserva una sala de reuniones, o los recursos, como un proyector u otros equipos.
+Debido a que las reuniones incluyen el envío y la respuesta a solicitudes y actualizaciones, implican algo más que obtener acceso a los elementos de una carpeta de calendario. También tienen un flujo de trabajo asociado. Las reuniones deben programarse cuando los asistentes están disponibles, y también pueden implicar la reserva de una sala de reuniones o recursos como un proyector u otro equipo.
   
-Normalmente, el flujo de trabajo de reunión implica los siguientes pasos:
+El flujo de trabajo de reuniones suele implicar los siguientes pasos:
   
-1. Se crea una reunión y se rellena con información como el inicio y la hora de finalización, la ubicación y un cuerpo del mensaje.
+1. Una reunión se crea y se rellena con información como la hora de inicio y finalización, la ubicación y el cuerpo de un mensaje.
     
-2. Se crea una lista de posibles asistentes, recursos y salas.
+2. Se crea una lista de los asistentes, los recursos y las salas potenciales.
     
 3. Se comprueba el estado de disponibilidad de los asistentes. 
     
 4. Se envía una convocatoria de reunión a los asistentes.
     
-5. Respondan a los asistentes a la reunión con su intención de asistir o no. Los asistentes también pueden proponer una nueva hora para la reunión.
+5. Los asistentes responden a la reunión con su intención de asistir o no. Los asistentes también pueden proponer una nueva hora para la reunión.
     
-6. Las reuniones se pueden cancelar o actualizar, que normalmente desencadenar nuevos mensajes que se envíen a los asistentes.
+6. Las reuniones se pueden cancelar o actualizar, lo que normalmente desencadena que se envíen nuevos mensajes a los asistentes.
     
-## <a name="calendars-and-time"></a>Calendarios y la hora
+## <a name="calendars-and-time"></a>Calendarios y hora
 <a name="bk_Time"> </a>
 
-Funcionalidad relacionada con el tiempo es parte integral de calendario. Las citas y reuniones tienen inicio y finalización, duraciones y otras propiedades relacionadas con el tiempo, como la hora a la que un mensaje creado, enviado y recibido. Las reuniones y las citas existentes se pueden recuperar desde una carpeta de calendario en función de una hora de inicio y final. Serie periódica tiene comienzo y al final. Y las reuniones se producen dentro de una zona horaria determinada, que es cada vez más importante en una economía global.
+La funcionalidad relacionada con el tiempo es fundamental para el calendario. Las citas y las reuniones tienen horas de inicio y finalización, duraciones y otras propiedades relacionadas con el tiempo, como la hora en la que se crea, envía y recibe un mensaje. Las citas y reuniones existentes se pueden recuperar de una carpeta de calendario a partir de una hora de inicio y de finalización. Las series periódicas tienen principio y fin. Las reuniones se producen dentro de una zona horaria determinada, que es cada vez más importante en una economía global.
   
-Horas se almacenan internamente en un servidor de Exchange en hora Universal coordinada (UTC). Exchange convierte a la zona horaria local en función de la configuración del cliente. Propiedades de [fecha y hora](http://msdn.microsoft.com/library/9c6ecd4c-779c-4fa5-8082-dd2bc0a751f4%28Office.15%29.aspx) se aplican a la zona de hora local del equipo. 
+Las horas se almacenan internamente en un servidor de Exchange en la hora universal coordinada (UTC). Exchange los convierte en la zona horaria local según la configuración del cliente. Las propiedades [DateTime](https://msdn.microsoft.com/library/9c6ecd4c-779c-4fa5-8082-dd2bc0a751f4%28Office.15%29.aspx) tienen un ámbito de la zona horaria local del equipo. 
   
 ## <a name="recurring-series"></a>Serie periódica
 <a name="bk_recurrence"> </a>
 
-Una serie de citas o reuniones periódicas se compone de un patrón periódico, un conjunto de elementos de repetición y, opcionalmente, un conjunto de elementos de la excepción. Información sobre la periodicidad se almacena en el elemento maestro periódico. El elemento EWS [RecurringMasterItemId](http://msdn.microsoft.com/library/5800b58c-f3d7-4d8f-acc0-d13e02f4e258%28Office.15%29.aspx) está asociado con las repeticiones y excepciones en una serie, o puede usar el método de la API administrada de EWS [Appointment.BindToRecurringMaster](http://msdn.microsoft.com/en-us/library/dd635978%28v=EXCHG.80%29.aspx) para obtener la periódica maestra. Uso de una instancia de una serie, puede encontrar todos los elementos y la información asociada con la serie. 
+Una serie de citas o reuniones periódicas consta de un maestro recurrente, un conjunto de elementos de repeticiones y, opcionalmente, un conjunto de elementos de excepción. La información de periodicidad se almacena en el elemento maestro periódico. El elemento EWS [RecurringMasterItemId](https://msdn.microsoft.com/library/5800b58c-f3d7-4d8f-acc0-d13e02f4e258%28Office.15%29.aspx) está asociado a ocurrencias y excepciones en una serie, o bien puede usar el método de API administrada de EWS [appointment. BindToRecurringMaster](https://msdn.microsoft.com/library/dd635978%28v=EXCHG.80%29.aspx) para obtener el patrón recurrente. Mediante el uso de una instancia de una serie, puede encontrar todos los elementos e información asociados a la serie. 
   
-Tenga en cuenta que las propiedades de periodicidad existen en todos los elementos de calendario, pero se rellenan sólo en los elementos maestros periódicos. Además de un índice de todas las apariciones de una serie, el patrón periódico tiene una referencia a las apariciones modificadas y eliminadas y el patrón de periodicidad de una serie (por ejemplo, diariamente, semanalmente, mensualmente o anualmente).
+Tenga en cuenta que las propiedades de periodicidad existen en todos los elementos de calendario, pero solo se rellenan en elementos maestros periódicos. Además de un índice de todas las apariciones de una serie, el patrón recurrente tiene una referencia a repeticiones modificadas y eliminadas, así como el patrón de periodicidad de una serie (por ejemplo, diaria, semanal, mensual o anual).
   
 ## <a name="in-this-section"></a>En esta sección
 <a name="bk_inthissection"> </a>
 
-- [Crear citas y reuniones mediante el uso de EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
+- [Crear citas y reuniones mediante EWS en Exchange 2013](how-to-create-appointments-and-meetings-by-using-ews-in-exchange-2013.md)
     
-- [Crear eventos de día completo mediante el uso de EWS en Exchange](how-to-create-all-day-events-by-using-ews-in-exchange.md)
+- [Crear eventos de día completo mediante EWS en Exchange](how-to-create-all-day-events-by-using-ews-in-exchange.md)
     
-- [Obtener las citas y reuniones con EWS en Exchange](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)
+- [Obtener citas y reuniones mediante EWS en Exchange](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)
     
-- [Actualizar las citas y reuniones con EWS en Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
+- [Actualizar citas y reuniones mediante EWS en Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
     
-- [Eliminar las citas y cancelar reuniones mediante el uso de EWS en Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
+- [Eliminar citas y cancelar reuniones mediante EWS en Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
     
-- [Obtener listas de las salas mediante el uso de EWS en Exchange](how-to-get-room-lists-by-using-ews-in-exchange.md)
+- [Obtener listas de salas con EWS en Exchange](how-to-get-room-lists-by-using-ews-in-exchange.md)
     
-- [Obtener información de disponibilidad con EWS en Exchange](how-to-get-free-busy-information-by-using-ews-in-exchange.md)
+- [Obtener información de disponibilidad mediante EWS en Exchange](how-to-get-free-busy-information-by-using-ews-in-exchange.md)
     
-- [Proponer una nueva hora de reunión mediante el uso de EWS en Exchange](how-to-propose-a-new-meeting-time-by-using-ews-in-exchange.md)
+- [Proponer una nueva hora de reunión mediante EWS en Exchange](how-to-propose-a-new-meeting-time-by-using-ews-in-exchange.md)
     
-- [Procesar por lotes los elementos del calendario en Exchange](how-to-process-calendar-items-in-batches-in-exchange.md)
+- [Procesar elementos de calendario en lotes en Exchange](how-to-process-calendar-items-in-batches-in-exchange.md)
     
 - [Patrones de periodicidad y EWS](recurrence-patterns-and-ews.md)
     
 ## <a name="see-also"></a>Vea también
 
 
-- [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
+- [Desarrollar clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
     
-- [Empezar a utilizar servicios web de Exchange](start-using-web-services-in-exchange.md)
+- [Empezar a usar los servicios web de Exchange](start-using-web-services-in-exchange.md)
     
 - [Introducción al diseño de EWS cliente de Exchange](ews-client-design-overview-for-exchange.md)
     
