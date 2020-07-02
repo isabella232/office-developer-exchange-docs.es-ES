@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: 4b3eb746-74c4-42a0-aa2c-742c147f1871
 description: Obtenga información sobre cómo crear, obtener, actualizar y eliminar carpetas con la API administrada de EWS o EWS en Exchange.
 localization_priority: Priority
-ms.openlocfilehash: a184d8da4d6949f01f47afc6a9fb7ed30729fd3b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: c09c0c76edda4af025a6ac7121fdf9ab9660fcab
+ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456384"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45012548"
 ---
 # <a name="work-with-folders-by-using-ews-in-exchange"></a>Trabajar con carpetas mediante EWS en Exchange
 
@@ -38,7 +38,7 @@ En el siguiente ejemplo de código se muestra cómo usar la clase [Folder](https
   
 En estos ejemplos se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un servidor de Exchange. 
   
-```cs
+```csharp
 // Create a custom folder.
 Folder folder = new Folder(service);
 folder.DisplayName = "Custom Folder";
@@ -49,7 +49,7 @@ folder.Save(WellKnownFolderName.Inbox);
 
 Para crear un tipo de carpeta diferente, como [hubiera](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.calendarfolder%28v=exchg.80%29.aspx), [hubiera](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contactsfolder%28v=exchg.80%29.aspx), [SearchFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.searchfolder%28v=exchg.80%29.aspx)o [hubiera](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.tasksfolder%28v=exchg.80%29.aspx), cree una nueva instancia de la clase específica (en lugar de la clase de **carpeta** genérica) y no establezca la propiedad **FolderClass** . Por ejemplo, en el siguiente ejemplo de código se muestra cómo crear un nuevo [hubiera](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.tasksfolder%28v=exchg.80%29.aspx).
   
-```cs
+```csharp
 // Create a custom Tasks folder.
 TasksFolder folder = new TasksFolder(service);
 folder.DisplayName = "Custom Tasks";
@@ -71,7 +71,7 @@ Para crear una sola carpeta, envíe un mensaje de solicitud de operación [Creat
   
 También es la solicitud XML que la API administrada de EWS envía cuando se crea una nueva carpeta y se llama al método [Folder. Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.save%28v=exchg.80%29.aspx) . 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
@@ -115,7 +115,7 @@ En el ejemplo de código siguiente se muestra cómo usar el método [Folder. bin
   
 En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un servidor de Exchange. 
   
-```cs
+```csharp
 // As a best practice, limit the properties returned to only those that are required.
 // In this scenario, you only need the FolderId.
 PropertySet propSet = new PropertySet(BasePropertySet.IdOnly);
@@ -139,7 +139,7 @@ También es la solicitud XML que la API administrada de EWS envía cuando se enl
   
 Para obtener varias carpetas, incluya varios elementos [FolderIds](https://msdn.microsoft.com/library/812948d8-c7db-45ce-bb3a-77233a53a974%28Office.15%29.aspx) en el mensaje de solicitud de la operación **GetFolder** . 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
@@ -160,7 +160,7 @@ Para obtener varias carpetas, incluya varios elementos [FolderIds](https://msdn.
 
 El siguiente ejemplo de XML muestra el mensaje [GetFolderResponse](https://msdn.microsoft.com/library/47abeec8-78dd-4297-8525-099174ec880d%28Office.15%29.aspx) que se envía desde el servidor al cliente en respuesta a la solicitud de operación **GetFolder** . Solo contiene el valor [FolderId](https://msdn.microsoft.com/library/00d14e3e-4365-4f21-8f88-eaeea73b9bf7%28Office.15%29.aspx) de la carpeta Bandeja de entrada. Los valores de algunos atributos y elementos se han abreviado para facilitar su lectura. 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
@@ -202,7 +202,7 @@ En este ejemplo, se crea un objeto de clase [FolderView](https://msdn.microsoft.
   
 En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un servidor de Exchange. 
   
-```XML
+```csharp
 // Create a new folder view, and pass in the maximum number of folders to return.
 FolderView view = new FolderView(folderViewSize);
 // Create an extended property definition for the PR_ATTR_HIDDEN property,
@@ -226,7 +226,7 @@ Los siguientes ejemplos de XML muestran cómo usar la operación [FindFolder](ht
   
 También es la solicitud XML que la API administrada de EWS envía cuando se llama al método [FindFolders](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findfolders%28v=exchg.80%29.aspx) . 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages"
@@ -260,7 +260,7 @@ El siguiente ejemplo de XML muestra el mensaje [FindFolderResponse](https://msdn
   
 También es la respuesta XML que la API administrada de EWS envía cuando se obtienen varias carpetas mediante el método [FindFolder](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.findfolders%28v=exchg.80%29.aspx) . Los valores de algunos atributos y elementos se han abreviado para facilitar la legibilidad y no se han incluido algunas carpetas por motivos de brevedad. 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?><s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <h:ServerVersionInfo MajorVersion="15"
@@ -368,7 +368,7 @@ A continuación, envíe un mensaje de solicitud de operación de [UpdateFolder](
   
 También es la solicitud XML que la API administrada de EWS envía cuando actualiza una carpeta con el método [Folder. Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.update%28v=exchg.80%29.aspx) . Los valores de algunos atributos y elementos se han abreviado para facilitar su lectura. 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
   <soap:Header>
@@ -425,7 +425,7 @@ A continuación, envíe un mensaje de solicitud de operación de [DeleteFolder](
   
 También es la solicitud XML que la API administrada de EWS envía cuando se elimina una carpeta con el método [Folder. Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folder.delete%28v=exchg.80%29.aspx) . Los valores de algunos atributos y elementos se han abreviado para facilitar su lectura. 
   
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
@@ -446,7 +446,7 @@ También es la solicitud XML que la API administrada de EWS envía cuando se eli
 
 El servidor responde a la solicitud **DeleteFolder** con un mensaje [DeleteFolderResponse](https://msdn.microsoft.com/library/27578bda-ef0a-4a33-bccc-2c1bc1735424%28Office.15%29.aspx) que incluye el valor [ResponseCode](https://msdn.microsoft.com/library/aa580757%28v=exchg.150%29.aspx) de **NoError**, lo que indica que la eliminación de la carpeta se ha realizado correctamente.
   
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 <a name="bk_nextsteps"> </a>
 
 Una vez que haya recuperado las carpetas en el servidor, o haya realizado cambios en las carpetas, es posible que desee [sincronizar la jerarquía de carpetas](how-to-synchronize-folders-by-using-ews-in-exchange.md) o [suscribirse a notificaciones sobre cambios de carpetas](notification-subscriptions-mailbox-events-and-ews-in-exchange.md) en el servidor. 

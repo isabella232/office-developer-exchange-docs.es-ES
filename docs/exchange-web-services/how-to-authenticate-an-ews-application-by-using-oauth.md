@@ -1,20 +1,20 @@
 ---
-title: Autenticar una aplicación de EWS mediante OAuth
+title: Autenticar una aplicación EWS mediante OAuth
 manager: sethgros
 ms.date: 05/17/2019
 ms.audience: Developer
 ms.assetid: 1d8d57f9-4df5-4f21-9bbb-a89e0e259052
 description: Obtenga información sobre cómo usar la autenticación OAuth con sus aplicaciones de API administrada de EWS.
 localization_priority: Priority
-ms.openlocfilehash: e2bcb339ddac51b888660b6f982a8377591b1a29
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0375095faac918859354da026118ea4ccfd6792b
+ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528254"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45012569"
 ---
 <!-- markdownlint-disable MD025 -->
-# <a name="authenticate-an-ews-application-by-using-oauth"></a>Autenticar una aplicación de EWS mediante OAuth
+# <a name="authenticate-an-ews-application-by-using-oauth"></a>Autenticar una aplicación EWS mediante OAuth
 <!-- markdownlint-enable MD025 -->
 
 Obtenga información sobre cómo usar la autenticación OAuth con sus aplicaciones de API administrada de EWS.
@@ -80,7 +80,7 @@ Para usar los permisos de la aplicación, siga estos pasos adicionales.
 
 ## <a name="add-code-to-get-an-authentication-token"></a>Agregar código para obtener un token de autenticación
 
-Los fragmentos de código siguientes muestran cómo usar la biblioteca de autenticación de Microsoft para obtener tokens de autenticación para permisos delegados y permisos de aplicación. En estos fragmentos de código se presupone que la información necesaria para realizar la solicitud de autenticación se almacena en el archivo **app. config** de la aplicación. Estos ejemplos no incluyen la comprobación de errores, vea los [ejemplos de código](#code-samples) para obtener el código completo.
+Los fragmentos de código siguientes muestran cómo usar la biblioteca de autenticación de Microsoft para obtener tokens de autenticación para permisos delegados y permisos de aplicación. En estos fragmentos de código se presupone que la información necesaria para realizar la solicitud de autenticación se almacena en el archivo de **App.config** de la aplicación. Estos ejemplos no incluyen la comprobación de errores, vea los [ejemplos de código](#code-samples) para obtener el código completo.
 
 ### <a name="delegated-permissions"></a>Permisos delegados
 
@@ -114,7 +114,7 @@ var app = ConfidentialClientApplicationBuilder
 // The permission scope required for EWS access
 var ewsScopes = new string[] { "https://outlook.office.com/.default" };
 
-//Make the toekn request
+//Make the token request
 AuthenticationResult authResult = await app.AcquireTokenForClient(ewsScopes).ExecuteAsync();
 
 ```
@@ -137,7 +137,7 @@ Para usar los permisos de la aplicación, también tendrá que suplantar explíc
 ewsClient.ImpersonatedUserId = new ImpersonatedUserId(ConnectingIdType.SmtpAddress, "test@demotenant.onmicrosoft.com");
 ```
 
-## <a name="code-samples"></a>Ejemplos de código
+## <a name="code-samples"></a>Muestras de código
 
 ### <a name="delegated-permissions"></a>Permisos delegados
 
@@ -279,7 +279,7 @@ namespace ews_oauth_samples
 }
 ```
 
-En ambos casos, el código de ejemplo requiere un archivo **app. config** con las siguientes entradas:
+En ambos casos, el código de ejemplo requiere un archivo **App.config** con las siguientes entradas:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
