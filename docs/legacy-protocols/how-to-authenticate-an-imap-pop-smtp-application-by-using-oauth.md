@@ -4,12 +4,12 @@ description: Obtenga información sobre cómo usar la autenticación OAuth con l
 author: svpsiva
 ms.date: 02/19/2020
 ms.audience: Developer
-ms.openlocfilehash: f83a932790cde558e741ece1e87403103aff18fd
-ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
+ms.openlocfilehash: fbe4eaefc5befcc173096c9b8526adebf74a0aad
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45012562"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44438439"
 ---
 # <a name="authenticate-an-imap-pop-or-smtp-connection-using-oauth"></a>Autenticar una conexión IMAP, POP o SMTP mediante OAuth
 
@@ -91,10 +91,6 @@ Después de la codificación Base64, esto se traduce en la siguiente cadena. Ten
 dXNlcj10ZXN0QGNvbnRvc28ub25taWNyb3NvZnQuY29tAWF1dGg9QmVhcmVy
 IEV3QkFBbDNCQUFVRkZwVUFvN0ozVmUwYmpMQldaV0NjbFJDM0VvQUEBAQ==
 ```
-
-### <a name="sasl-xoauth2-authentication-for-shared-mailboxes-in-office-365"></a>XOAUTH2 de la autenticación de SASL para buzones compartidos en Office 365
-
-En caso de acceso a buzones compartidos mediante OAuth, la aplicación necesita obtener el token de acceso en nombre de un usuario, pero reemplazar el campo userName en la cadena con codificación SASL XOAUTH2 con la dirección de correo electrónico del buzón compartido. 
 
 ### <a name="imap-protocol-exchange"></a>Intercambio de protocolo IMAP
 
@@ -192,7 +188,7 @@ l0Q2cBAQ==
 S: 535 5.7.3 Authentication unsuccessful [SN2PR00CA0018.namprd00.prod.outlook.com]
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Autenticación y EWS en Exchange](../exchange-web-services/authentication-and-ews-in-exchange.md)
 - [Configuración de la conexión de POP IMAP](https://support.office.com/article/pop-and-imap-email-settings-for-outlook-8361e398-8af4-4e97-b147-6c6c4ac95353)

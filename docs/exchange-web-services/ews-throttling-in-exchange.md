@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: b4fff4c9-c625-4d2a-9d14-bb28a5da5baf
 description: Obtenga información sobre las directivas de limitación que afectan a EWS cuando se usa Exchange.
 localization_priority: Priority
-ms.openlocfilehash: 27db12c01180abbaf92b5b9a09a072212b6012ec
-ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
+ms.openlocfilehash: 0c6ac49629ad4cdb4419cc8638d8e60ecb6509d6
+ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45012555"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44455404"
 ---
 # <a name="ews-throttling-in-exchange"></a>Limitación de EWS en Exchange
 
@@ -239,7 +239,7 @@ El parámetro de directiva **EWSMaxConcurrency** también puede ser un problema 
 
 Si la aplicación de notificaciones es multiproceso y realiza solicitudes de conexión simultáneas para obtener más información acerca de un mensaje en particular recibido por una cuenta de usuario, se puede superar el límite de directivas de **EWSMaxConcurrency** . Para tener esto en cuenta, considere la posibilidad de supervisar las conexiones simultáneas en la aplicación, incluidas las que puede usar el servidor y la implementación de la cola de solicitudes en el cliente.
 
-**HangingConnectionLimit** solo se aplica a las notificaciones de transmisión por secuencias. Este límite se establece en el archivo de web.config, lo que significa que un administrador de Exchange puede establecer este valor en un servidor de Exchange local, pero los buzones de correo de Exchange Online deben usar el valor predeterminado para este límite, que es 10 para Exchange Online, Exchange 2019, Exchange 2016 y 3 para Exchange 2013. Para obtener más información, vea [¿qué valores de limitación se deben tener en cuenta?](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md#bk_throttling).
+**HangingConnectionLimit** solo se aplica a las notificaciones de transmisión por secuencias. Este límite se establece en el archivo Web. config, lo que significa que un administrador de Exchange puede establecer este valor en un servidor de Exchange local, pero los buzones de correo de Exchange Online deben usar el valor predeterminado para este límite, que es 3 tanto para Exchange online como para Exchange 2013. Para obtener más información, vea [¿qué valores de limitación se deben tener en cuenta?](how-to-maintain-affinity-between-group-of-subscriptions-and-mailbox-server.md#bk_throttling).
 
 ## <a name="throttling-policy-and-application-performance"></a>Rendimiento de la aplicación y la Directiva de limitación
 
