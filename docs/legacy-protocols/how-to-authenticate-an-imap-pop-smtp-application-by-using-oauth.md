@@ -4,18 +4,18 @@ description: Obtenga información sobre cómo usar la autenticación OAuth con l
 author: svpsiva
 ms.date: 02/19/2020
 ms.audience: Developer
-ms.openlocfilehash: f83a932790cde558e741ece1e87403103aff18fd
-ms.sourcegitcommit: eeda51cb037aa25566adb293f25574674fdb2d9e
+ms.openlocfilehash: e1bef8e35d78c35693dadc94b24b6aeecaf4e439
+ms.sourcegitcommit: 636c05a929279812c6ef87d75b01c166a4a05584
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45012562"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47254989"
 ---
 # <a name="authenticate-an-imap-pop-or-smtp-connection-using-oauth"></a>Autenticar una conexión IMAP, POP o SMTP mediante OAuth
 
 Obtenga información sobre cómo usar la autenticación de OAuth para conectarse con protocolos IMAP, POP o SMTP y obtener acceso a datos de correo electrónico para usuarios de Office 365.
 
-> La compatibilidad de OAuth2 con los protocolos IMAP, POP y SMTP, tal y como se describe a continuación, no es compatible con los usuarios de Outlook.com.
+> La compatibilidad de OAuth2 con los protocolos IMAP, POP y SMTP, como se describe a continuación, es compatible con Microsoft 365 (que incluye Office en la web) y los usuarios de Outlook.com.
 
 Si no está familiarizado con OAuth 2,0, empiece por leer la [Introducción a la plataforma de identidad de Microsoft (v 2.0)](/azure/active-directory/develop/v2-overview). Este documento presenta diferentes componentes de la plataforma de identidad de Microsoft, incluidos los SDK.
 
@@ -192,7 +192,7 @@ l0Q2cBAQ==
 S: 535 5.7.3 Authentication unsuccessful [SN2PR00CA0018.namprd00.prod.outlook.com]
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Autenticación y EWS en Exchange](../exchange-web-services/authentication-and-ews-in-exchange.md)
 - [Configuración de la conexión de POP IMAP](https://support.office.com/article/pop-and-imap-email-settings-for-outlook-8361e398-8af4-4e97-b147-6c6c4ac95353)

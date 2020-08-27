@@ -1,17 +1,17 @@
 ---
 title: Empezar a trabajar con aplicaciones de cliente de EWS
 manager: sethgros
-ms.date: 11/16/2014
+ms.date: 8/26/2020
 ms.audience: Developer
 ms.assetid: e6fd5c23-0ba5-4a7b-bdde-4a553447069f
 description: Cree su primera aplicación utilizando Servicios Web Exchange (EWS) de Exchange.
 localization_priority: Priority
-ms.openlocfilehash: fd02c46777dabd04b492ba3c4420a0737640c5eb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
-ms.translationtype: MT
+ms.openlocfilehash: 81d4cb69d20f17945658ab4ad16c9fe3a47d4eec
+ms.sourcegitcommit: 636c05a929279812c6ef87d75b01c166a4a05584
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528401"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47254982"
 ---
 # <a name="get-started-with-ews-client-applications"></a>Empezar a trabajar con aplicaciones de cliente de EWS
 
@@ -25,7 +25,7 @@ Puede llamar a las operaciones de EWS desde cualquier sistema operativo o lengua
 
 Si ya tiene una cuenta de buzón de Exchange, puede omitir este paso. En caso contrario, dispone de las opciones siguientes para configurar un buzón de Exchange para su primera aplicación de EWS:
   
-- [Obtener un sitio de Office 365 Developer](https://msdn.microsoft.com/library/office/fp179924.aspx)(recomendado). Esta es la forma más rápida de configurar un buzón de Exchange.
+- [Obtener un sitio de Office 365 Developer](https://developer.microsoft.com/microsoft-365/dev-program)(recomendado). Esta es la forma más rápida de configurar un buzón de Exchange.
     
 - Descargar [Exchange Server](https://office.microsoft.com/exchange/microsoft-exchange-try-or-buy-exchange-we-can-help-you-decide-FX103746846.aspx?WT%2Eintid1=ODC%5FENUS%5FFX103472230%5FXT103965589).
 
