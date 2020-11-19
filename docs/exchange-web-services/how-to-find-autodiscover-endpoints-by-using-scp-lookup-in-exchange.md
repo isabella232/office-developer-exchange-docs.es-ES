@@ -1,84 +1,84 @@
 ---
-title: Buscar Autodisover extremos mediante el uso de búsqueda de SCP en Exchange
+title: Buscar puntos de conexión de Detección automática mediante el uso de búsqueda de SCP en Exchange
 manager: kelbow
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.assetid: b24228a8-5127-4bac-aef0-9c9e8843c9ff
-description: Descubra cómo encontrar los objetos SCP de detección automática en servicios de dominio de Active Directory (AD DS) y úselos para buscar direcciones URL de extremo de detección automática para usarlas con el servicio Detección automática de Exchange.
+description: Obtenga información acerca de cómo localizar objetos SCP de Detección automática en servicios de dominio de Active Directory (AD DS) y usarlos para encontrar las direcciones URL del punto de conexión de Detección automática para usarlas con el servicio Detección automática de Exchange.
 localization_priority: Priority
-ms.openlocfilehash: c0c0364a7d69364e12db902f1f22d65c4b5a0cc5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
-ms.translationtype: MT
+ms.openlocfilehash: 5468c18b6d614016915c292c2e02c1a4b570ae37
+ms.sourcegitcommit: 37d4ecd4f469690ba1de87baad2f2f58c40c96ba
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455880"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49348811"
 ---
-# <a name="find-autodiscover-endpoints-by-using-scp-lookup-in-exchange"></a>Buscar Autodisover extremos mediante el uso de búsqueda de SCP en Exchange
+# <a name="find-autodiscover-endpoints-by-using-scp-lookup-in-exchange"></a>Buscar puntos de conexión de Detección automática mediante el uso de búsqueda de SCP en Exchange
 
-Descubra cómo encontrar los objetos SCP de detección automática en servicios de dominio de Active Directory (AD DS) y úselos para buscar direcciones URL de extremo de detección automática para usarlas con el servicio Detección automática de Exchange.
+Obtenga información acerca de cómo localizar objetos SCP de Detección automática en servicios de dominio de Active Directory (AD DS) y usarlos para encontrar las direcciones URL del punto de conexión de Detección automática para usarlas con el servicio Detección automática de Exchange.
   
-La detección automática facilita la recuperación de la información que necesita para conectarse a los buzones de los servidores de Exchange. Sin embargo, para poder usar detección automática, necesita una forma de encontrar los servidores de detección automática apropiados para el usuario al que está recuperando la configuración. Los objetos de punto de conexión de servicio (SCP) en AD DS proporcionan una forma fácil de que los clientes Unidos a un dominio busquen servidores de detección automática. 
+Detección automática facilita la recuperación de la información que necesita para conectarse a buzones de servidores Exchange. Sin embargo, para usar Detección automática, necesita un modo de encontrar los servidores de detección automática que sean adecuados para el usuario al que está recuperando la configuración. Y los objetos de punto de conexión de servicio (SCP) en AD DS proporcionan una forma fácil de que los clientes unidos a un dominio busquen servidores de Detección automática. 
   
-## <a name="get-set-up-to-find-autodiscover-endpoints"></a>Preparar los puntos de conexión de detección automática
+## <a name="get-set-up-to-find-autodiscover-endpoints"></a>Obtener la configuración para encontrar puntos de conexión de Detección automática
 <a name="bk_PreReqs"> </a>
 
-Para buscar objetos SCP de detección automática en AD DS, necesita tener acceso a lo siguiente:
+Para localizar objetos SCP de Detección automática en AD DS, debe tener acceso a lo siguiente:
   
-- Un servidor que ejecuta una versión de Exchange local a partir de Exchange 2007 SP1.
+- Un servidor en el que se ejecuta una versión de Exchange local empezando con Exchange 2007 SP1.
     
-- Un equipo cliente que se ha unido al dominio en el que está instalado el servidor de Exchange.
+- Un equipo cliente que se une al dominio en el que está instalado el servidor de Exchange.
     
-- Una cuenta de usuario que tiene un buzón en el servidor de Exchange. 
+- Una cuenta de usuario que tenga un buzón en el servidor de Exchange. 
     
-Además, antes de empezar, querrá conocer algunos conceptos básicos. Estos son algunos de los recursos que le resultarán útiles.
+Asimismo, antes de empezar, le recomendamos que esté familiarizado con algunos conceptos básicos. Estos son algunos recursos que le resultarán útiles.
   
 **Tabla 1. Artículos relacionados para buscar puntos de conexión de detección automática de objetos SCP**
 
-|**Lea este artículo**|**Para obtener información sobre...**|
+|**Lea este artículo:**|**Obtenga información sobre...**|
 |:-----|:-----|
-|[Detección automática en Exchange](autodiscover-for-exchange.md) <br/> |Funcionamiento del servicio Detección automática.  <br/> |
-|[Publicación con puntos de conexión de servicio](https://msdn.microsoft.com/library/3544aa64-ecb0-48a1-ae49-05247a983842%28Office.15%29.aspx) <br/> |Cómo se usan los objetos SCP para publicar datos específicos del servicio.  <br/> |
+|[Detección automática en Exchange](autodiscover-for-exchange.md) <br/> |Cómo funciona el servicio Detección automática  <br/> |
+|[Publicación con puntos de conexión de servicio](https://msdn.microsoft.com/library/3544aa64-ecb0-48a1-ae49-05247a983842%28Office.15%29.aspx) <br/> |Cómo se usan los objetos SCP para publicar datos específicos de un servicio  <br/> |
    
 ## <a name="locate-autodiscover-scp-objects-in-ad-ds"></a>Buscar objetos SCP de detección automática en AD DS
 <a name="bk_LocateScpObjects"> </a>
 
-El primer paso para encontrar los puntos de conexión de detección automática publicados en AD DS es buscar los objetos SCP de detección automática. Exchange publica dos tipos de objetos SCP para la detección automática:
+El primer paso para encontrar los puntos de conexión de Detección automática publicados en AD DS es encontrar los objetos SCP de Detección automática. Exchange publica dos tipos de objetos SCP para Detección automática:
   
-- **Punteros de SCP** : contienen información que apunta a servidores LDAP específicos que se deben usar para buscar objetos SCP de detección automática para el dominio del usuario. Los punteros de SCP se marcan con el siguiente GUID: 67661d7F-8FC4-4fa7-BFAC-E1D7794C1F68. 
+- **Punteros de SCP**: contiene información que apunta a servidores de LDAP específicos que se deben usar para buscar objetos SCP de Detección automática para el dominio del usuario. Los punteros de SCP se marcan con el siguiente GUID: 67661d7F-8FC4-4fa7-BFAC-E1D7794C1F68. 
     
-- **URL de SCP** : contienen direcciones URL para puntos de conexión de detección automática. Las direcciones URL de SCP se marcan con el siguiente GUID: 77378F46-2C66-4aa9-A6A6-3E7A48B19596. 
+- **Direcciones URL de SCP**: contienen las URL de los puntos de conexión de Detección automática. Las direcciones URL de SCP se marcan con el siguiente GUID: 77378F46-2C66-4aa9-A6A6-3E7A48B19596. 
     
-### <a name="to-locate-autodiscover-scp-objects"></a>Para buscar objetos SCP de detección automática
+### <a name="to-locate-autodiscover-scp-objects"></a>Buscar objetos SCP de Detección automática en AD DS
 
-1. Lea la propiedad **configurationNamingContext** de la entrada DSE raíz en AD DS para obtener la ruta de acceso al contexto de nomenclatura de configuración para el dominio. Para ello, puede usar la clase [DirectoryEntry](https://msdn2.microsoft.com/library/z9cddzaa) o cualquier otra API que pueda acceder a AD DS. 
+1. Lea la propiedad **configurationNamingContext** de la entrada DSE raíz en AD DS para obtener la ruta de acceso al contexto de nomenclatura de configuración del dominio. Para ello, puede usar la clase [DirectoryEntry](https://msdn2.microsoft.com/library/z9cddzaa), o cualquier otra API que pueda acceder a AD DS. 
     
-2. Buscar objetos SCP en el contexto de nomenclatura de configuración que tiene el GUID de puntero SCP o el GUID de la URL de SCP en la propiedad **Keywords** . 
+2. Busque objetos SCP en el contexto de nomenclatura de configuración que tenga el GUID de puntero SCP o el GUID de la URL del SCP en la propiedad **Keywords**. 
     
-3. Compruebe los objetos SCP que encontró para un puntero SCP que está en el ámbito del dominio del usuario; para ello, Compruebe la propiedad **Keywords** de una entrada igual a `"Domain=<domain>"` . Por ejemplo, si la dirección de correo electrónico del usuario es elvin@contoso.com, buscará un puntero SCP con una entrada en la propiedad **Keywords** que sea igual a `"Domain=contoso.com"` . Si se encuentra un puntero SCP coincidentes, descarte el conjunto de objetos SCP y comience de nuevo en el paso 1 con el valor de la propiedad **serviceBindingInformation** como servidor al que se va a conectar para la entrada DSE raíz. 
+3. Compruebe los objetos SCP que encontró para un puntero SCP que está en el ámbito del dominio del usuario; para ello, marque la propiedad **Keywords** de la entrada igual a `"Domain=<domain>"`. Por ejemplo, si la dirección de correo electrónico del usuario es elvin@contoso.com, buscaría un puntero SCP con una entrada en la propiedad **keywords** que es igual a `"Domain=contoso.com"`. Si se encuentra un puntero SCP coincidente, descarte el conjunto de objetos SCP y vuelva a empezar en el paso 1 con el valor de la propiedad **serviceBindingInformation** como servidor con el que se conectará para la entrada DSE raíz. 
     
 4. Si no encuentra ningún puntero SCP en el ámbito del dominio del usuario, compruebe si hay punteros SCP que no estén en el ámbito de cualquier dominio y guarde el valor de la propiedad **serviceBindingInformation** como un servidor de "reserva", en caso de que el servidor actual no le dé resultados. 
     
-5. Si no encuentra ningún puntero SCP en el ámbito del dominio, está listo para continuar con el paso siguiente: generando una lista de puntos de conexión de detección automática con prioridad de los resultados.
+5. Si no encuentra ningún puntero SCP en el ámbito del dominio, estará listo para pasar al siguiente paso: generar una lista con prioridades de los puntos de conexión de Detección automática de los resultados.
     
-## <a name="generate-a-prioritized-list-of-autodiscover-endpoints"></a>Generar una lista de extremos de detección automática con prioridad
+## <a name="generate-a-prioritized-list-of-autodiscover-endpoints"></a>Generar una lista con prioridades de puntos de conexión de Detección automática
 <a name="bk_GenerateList"> </a>
 
-Puede generar una lista de direcciones URL de punto de conexión de detección automática con prioridad mediante el conjunto de objetos SCP que encontró; para ello, haga lo siguiente:
+Puede crear una lista con prioridades de direcciones URL de puntos de conexión de Detección automática, con el conjunto de objetos SCP que encontró, de la siguiente manera:
   
-1. Obtenga el nombre del sitio de Active Directory del equipo cliente.
+1. Obtener el nombre del sitio de Active Directory del equipo cliente.
     
-2. Compruebe la propiedad **Keywords** en cada dirección URL del SCP en el conjunto de objetos SCP que encontró y asigne una prioridad a la dirección URL en función de las siguientes reglas: 
+2. Compruebe la propiedad **Keywords** en cada URL de SCP en el conjunto de objetos SCP que encontró y asigne una prioridad a la dirección URL en función de las reglas siguientes: 
     
-  - Si la propiedad **Keywords** contiene un valor de `"Site=<site name>"` , donde `<site name>` es el nombre del sitio de Active Directory que recuperó en el paso anterior, asigne a la dirección URL una prioridad de 1. 
+  - Si la propiedad **keywords** contiene un valor de `"Site=<site name>"`, en el que `<site name>` es igual al nombre del sitio de Active Directory que recuperó en el paso anterior, asigne a la URL una prioridad de 1. 
     
-  - Si la propiedad **Keywords** no contiene una entrada con un valor que comienza por `"Site="` , asigne a la dirección URL una prioridad de 2. 
+  - Si la propiedad **Keywords** no contiene una entrada con un valor que comience por `"Site="`, asigne a la URL una prioridad 2. 
     
-  - Si la propiedad **Keywords** contiene un valor de `"Site=<site name>` , donde `<site name>` no es el mismo nombre que el sitio de Active Directory que recuperó en el paso anterior, asigne a la dirección URL una prioridad de 3. 
+  - Si la propiedad **keywords** contiene un valor de `"Site=<site name>`, en el que `<site name>` no es igual al nombre del sitio de Active Directory que recuperó en el paso anterior, asigne a la URL una prioridad de 3. 
     
-## <a name="code-example-performing-an-scp-lookup"></a>Ejemplo de código: realización de una búsqueda de SCP
+## <a name="code-example-performing-an-scp-lookup"></a>Ejemplo de código: realización de una búsqueda SCP
 <a name="bk_CodeExample"> </a>
 
-En el siguiente ejemplo de código, verá cómo buscar objetos SCP de detección automática y generar una lista priorizada de extremos de detección automática.
+En el siguiente ejemplo de código, verá cómo localizar objetos SCP de Detección automática y generar una lista con prioridades de los puntos de conexión de Detección automática.
   
 ```cs
 using System;
@@ -173,7 +173,7 @@ namespace ScpLookup
                     {
                         // Save the first SCP pointer that is not scoped to a domain as a fallback
                         // in case you do not get any results from this server.
-                        if (entryKeywords.Count == 1 &amp;&amp; string.IsNullOrEmpty(fallBackLdapPath))
+                        if (entryKeywords.Count == 1 && string.IsNullOrEmpty(fallBackLdapPath))
                         {
                             fallBackLdapPath = ptrLdapPath;
                             Console.WriteLine("Saved fallback SCP pointer: " + fallBackLdapPath);
@@ -283,7 +283,7 @@ namespace ScpLookup
                 }
                 // If after all this, you still have no URLs in your list,
                 // try the fallback SCP pointer, if you have one.
-                if (scpUrlList.Count == 0 &amp;&amp; fallBackLdapPath != null)
+                if (scpUrlList.Count == 0 && fallBackLdapPath != null)
                 {
                     return GetScpUrls(fallBackLdapPath, domain);
                 }
@@ -323,13 +323,13 @@ namespace ScpLookup
 ## <a name="next-steps"></a>Siguientes pasos
 <a name="bk_NextSteps"> </a>
 
-El siguiente paso del proceso de detección automática es enviar solicitudes de detección automática a las direcciones URL encontradas, comenzando con las direcciones URL de prioridad 1, las URL de prioridad 2 y, por último, las direcciones URL de prioridad 3. Para obtener más información sobre cómo enviar solicitudes de detección automática y controlar respuestas, lea los siguientes artículos:
+El siguiente paso del proceso de Detección automática consiste en enviar solicitudes de Detección automática a las direcciones URL que encontró, empezando por direcciones URL de prioridad 1, luego de prioridad 2 y, por último, de prioridad 3. Para obtener más información sobre cómo enviar solicitudes de Detección automática y administrar respuestas, consulte los artículos siguientes:
   
-- [Obtener la configuración de usuario de Exchange mediante el uso de detección automática](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
+- [Obtener la configuración de usuario de Exchange mediante el uso de Detección automática](how-to-get-user-settings-from-exchange-by-using-autodiscover.md)
     
-- [Administrar los mensajes de error de detección automática](handling-autodiscover-error-messages.md)
+- [Administrar los mensajes de error de Detección automática](handling-autodiscover-error-messages.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Detección automática en Exchange](autodiscover-for-exchange.md)   
 - [Configurar la aplicación EWS](setting-up-your-ews-application.md)
