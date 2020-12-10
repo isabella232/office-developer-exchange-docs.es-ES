@@ -1,17 +1,17 @@
 ---
 title: Autenticar una aplicación EWS mediante OAuth
 manager: sethgros
-ms.date: 11/19/2020
+ms.date: 11/25/2020
 ms.audience: Developer
 ms.assetid: 1d8d57f9-4df5-4f21-9bbb-a89e0e259052
 description: Obtenga información sobre cómo usar la autenticación OAuth con las aplicaciones de la API administrada de EWS.
 localization_priority: Priority
-ms.openlocfilehash: c52b254f14cadd287a709bb68f8464e7cfe1837a
-ms.sourcegitcommit: 2d16ba247a8cb4b6c8ca9941cb079f75202aae1e
+ms.openlocfilehash: a7b1d2a099cf5f3c95f8453605363de12ff33c54
+ms.sourcegitcommit: 843a2e030a94b12aec70c553ca4e06e39ac02d82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356496"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49603830"
 ---
 <!-- markdownlint-disable MD025 -->
 # <a name="authenticate-an-ews-application-by-using-oauth"></a>Autenticar una aplicación EWS mediante OAuth
@@ -23,12 +23,12 @@ Puede usar el servicio de autenticación OAuth proporcionado por Azure Active Di
 
 1. [Registrar la aplicación](#register-your-application) con Azure Active Directory.
 1. [Agregar código para obtener un token de autenticación](#add-code-to-get-an-authentication-token) para obtener un token de autenticación de un servidor de tokens.
-1. [Agregar un token de autenticación a las solicitudes de EWS](#add-an-authentication-token-to-ews-requests) enviadas.
+1. [Agregar un token de autenticación a las solicitudes de EWS](#add-an-authentication-token-to-ews-requests) que envíe.
 
 > [!NOTE]
 > La autenticación OAuth para EWS solo está disponible en Exchange como parte de Microsoft 365. Las aplicaciones de EWS que usan OAuth deben registrarse con Azure Active Directory.
 
-Para usar el código de este artículo, necesitará tener acceso a lo siguiente:
+Para usar el código de este artículo, tendrá que tener acceso a lo siguiente:
 
 - Una cuenta de Microsoft 365 con un buzón de Exchange Online. Si no tiene una cuenta de Microsoft 365, puede [registrarse en el Programa de desarrolladores de Microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program) para obtener una suscripción gratuita.
 - La [Biblioteca de autenticación de Microsoft para .NET](/dotnet/api/microsoft.identity.client).
@@ -41,9 +41,9 @@ Hay dos tipos de permisos OAuth que se pueden usar para obtener acceso a las API
 
 ## <a name="register-your-application"></a>Registrar su aplicación
 
-Para usar OAuth, una aplicación debe tener un Id. de aplicación emitido por Azure Active Directory. En este tutorial, se presupone que la aplicación es una aplicación de consola, por lo que es necesario que registre la aplicación como cliente público con Azure Active Directory. Puede registrar una aplicación en el Centro de administración de Azure Active Directory o a través de Microsoft Graph.
+Para usar OAuth, una aplicación debe tener un Id. de aplicación emitido por Azure Active Directory. En este tutorial, se presupone que la aplicación es una aplicación de consola, por lo que necesita registrar la aplicación como cliente público con Azure Active Directory. Puede registrar una aplicación en el Centro de administración de Azure Active Directory o a través de Microsoft Graph.
 
-1. Abra un explorador, navegue hasta el [Centro de administración de Azure Active Directory](https://aad.portal.azure.com) e inicie sesión con una **cuenta personal** (también conocida como: cuenta Microsoft) o una **cuenta profesional o educativa**.
+1. Abra un explorador y vaya al [centro de administración de Azure Active Directory](https://aad.portal.azure.com) e inicie sesión con una **cuenta personal** (también conocida como: cuenta Microsoft) o una **cuenta profesional o educativa**.
 
 1. Seleccione **Azure Active Directory** en el panel de navegación izquierdo y, a continuación, seleccione **Registros de aplicaciones** en **Administrar**.
 
@@ -57,7 +57,7 @@ Para usar OAuth, una aplicación debe tener un Id. de aplicación emitido por Az
 
 ### <a name="configure-for-delegated-authentication"></a>Configurar para la autenticación delegada
 
-Si la aplicación usa una autenticación delegada, no es necesario realizar ninguna configuración adicional. La [Plataforma de identidad de Microsoft] permite que las aplicaciones soliciten permisos de forma dinámica, por lo que no es necesario que configure previamente los permisos en el registro de la aplicación. Sin embargo, en algunos casos (como en el del [flujo en nombre de](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)) se necesitan permisos para la configuración previa. Siga los siguientes pasos para configurar previamente los permisos de EWS.
+Si la aplicación usa una autenticación delegada, no es necesario realizar ninguna configuración adicional. La [Plataforma de identidad de Microsoft](/azure/active-directory/develop/v2-overview) permite que las aplicaciones soliciten permisos de forma dinámica, por lo que no es necesario que configure previamente los permisos en el registro de la aplicación. Sin embargo, en algunos casos (como en el del [flujo con derechos delegados](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)) se necesitan permisos para la configuración previa. Siga los siguientes pasos para configurar previamente los permisos de EWS.
 
 1. Seleccione **Manifiesto** en el panel de navegación izquierdo, debajo de **Administrar**.
 
@@ -103,7 +103,7 @@ Para usar los permisos de la aplicación, siga estos pasos adicionales.
 
 1. Seleccione **Permisos de las API** en **Administrar**. Confirme que aparezca el permiso **full_access_as_app**.
 
-1. Seleccione **Conceder consentimiento de administrador para la organización** y acepte el cuadro de diálogo de consentimiento.
+1. Seleccione **Conceder consentimiento de administrador para organización** y acepte el cuadro de diálogo de consentimiento.
 
 1. Seleccione **Certificados y secretos** en el panel de navegación de la parte izquierda, en **Administrar**.
 
@@ -113,18 +113,25 @@ Para usar los permisos de la aplicación, siga estos pasos adicionales.
 
 ## <a name="add-code-to-get-an-authentication-token"></a>Agregar código para obtener un token de autenticación
 
-Los siguientes fragmentos de código muestran cómo usar la Biblioteca de autenticación de Microsoft para obtener los tokens de autenticación de los permisos delegados y los permisos de aplicación. En estos fragmentos se presupone que la información necesaria para realizar la solicitud de autenticación está almacenada en el archivo **App.config** de la aplicación. Estos ejemplos no incluyen la comprobación de errores. Consulte los [Ejemplos de código](#code-samples) para ver el código completo.
+Los siguientes fragmentos de código muestran cómo usar la Biblioteca de autenticación de Microsoft para obtener los tokens de autenticación de los permisos delegados y los permisos de aplicación. En estos fragmentos se presupone que la información necesaria para realizar la solicitud de autenticación está almacenada en el archivo **App.config** de la aplicación. Entre estos ejemplos no se incluyen la comprobación de errores. Consulte los [Ejemplos de código](#code-samples) para el código completo.
 
 ### <a name="get-a-token-with-delegated-auth"></a>Obtener un token con la autenticación delegada
 
 ```cs
 // Using Microsoft.Identity.Client 4.22.0
+
+// Configure the MSAL client to get tokens
+var pcaOptions = new PublicClientApplicationOptions
+{
+    ClientId = ConfigurationManager.AppSettings["appId"],
+    TenantId = ConfigurationManager.AppSettings["tenantId"]
+};
+
 var pca = PublicClientApplicationBuilder
-    .Create(ConfigurationManager.AppSettings["appId"])
-    .Build();
+    .CreateWithApplicationOptions(pcaOptions).Build();
 
 // The permission scope required for EWS access
-var ewsScopes = new string[] { "EWS.AccessAsUser.All" };
+var ewsScopes = new string[] { "https://outlook.office365.com/EWS.AccessAsUser.All" };
 
 // Make the interactive token request
 var authResult = await pca.AcquireTokenInteractive(ewsScopes).ExecuteAsync();
@@ -144,12 +151,12 @@ var cca = ConfidentialClientApplicationBuilder
 var ewsScopes = new string[] { "https://outlook.office365.com/.default" };
 
 //Make the token request
-var authResult = await app.AcquireTokenForClient(ewsScopes).ExecuteAsync();
+var authResult = await cca.AcquireTokenForClient(ewsScopes).ExecuteAsync();
 ```
 
 ## <a name="add-an-authentication-token-to-ews-requests"></a>Agregar un token de autenticación a las solicitudes de EWS
 
-Tras recibir el objeto **AuthenticationResult**, podrá usar la propiedad **AccessToken** para obtener el token emitido por el servicio de token.
+Tras recibir el objeto **AuthenticationResult**, puede usar la propiedad **AccessToken** para obtener el token emitido por el servicio de token.
 
 ```cs
 // Configure the ExchangeService with the access token
@@ -184,11 +191,19 @@ namespace EwsOAuth
         static async System.Threading.Tasks.Task Main(string[] args)
         {
             // Using Microsoft.Identity.Client 4.22.0
-            var pca = PublicClientApplicationBuilder
-                .Create(ConfigurationManager.AppSettings["appId"])
-                .Build();
 
-            var ewsScopes = new string[] { "EWS.AccessAsUser.All" };
+            // Configure the MSAL client to get tokens
+            var pcaOptions = new PublicClientApplicationOptions
+            {
+                ClientId = ConfigurationManager.AppSettings["appId"],
+                TenantId = ConfigurationManager.AppSettings["tenantId"]
+            };
+
+            var pca = PublicClientApplicationBuilder
+                .CreateWithApplicationOptions(pcaOptions).Build();
+
+            // The permission scope required for EWS access
+            var ewsScopes = new string[] { "https://outlook.office365.com/EWS.AccessAsUser.All" };
 
             try
             {
@@ -295,7 +310,7 @@ namespace EwsOAuth
 }
 ```
 
-En ambos casos, el código de muestra requiere de un archivo **App.config** con las siguientes entradas:
+En ambos casos, el ejemplo de código requiere un archivo **App.config** con las entradas siguientes:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
