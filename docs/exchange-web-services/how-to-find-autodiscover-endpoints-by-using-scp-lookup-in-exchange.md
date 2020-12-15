@@ -320,7 +320,7 @@ namespace ScpLookup
 }
 ```
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 <a name="bk_NextSteps"> </a>
 
 El siguiente paso del proceso de Detección automática consiste en enviar solicitudes de Detección automática a las direcciones URL que encontró, empezando por direcciones URL de prioridad 1, luego de prioridad 2 y, por último, de prioridad 3. Para obtener más información sobre cómo enviar solicitudes de Detección automática y administrar respuestas, consulte los artículos siguientes:

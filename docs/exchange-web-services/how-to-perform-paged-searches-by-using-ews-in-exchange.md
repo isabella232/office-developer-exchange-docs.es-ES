@@ -87,7 +87,7 @@ En este punto, es posible que se pregunte si esto es un problema. Después de to
   
 **Ilustración 3. Solicitud de 10 elementos en el desplazamiento 10 desde el principio de una lista de 16 elementos, siendo nuevo el elemento 16 de la lista**
 
-![Diagrama que muestra los resultados de solicitar 10 elementos en el desplazamiento 10 desde el principio de una lista de 16 elementos cuando el elemento 16 se agregó al final de la lista.](media/Ex15_PagedSearch_SecondPage_NewItemEnd.png)
+![Diagrama que muestra los resultados de la solicitud de 10 elementos con un desplazamiento 10 desde el principio de una lista de 16 elementos cuando el elemento número 16 se agregó al final de la lista.](media/Ex15_PagedSearch_SecondPage_NewItemEnd.png)
   
 Si la lista está ordenada para que los elementos más nuevos sean los primeros, cambia la historia. En este caso, el primer elemento de la segunda solicitud sería el último elemento de la solicitud anterior más los cinco elementos restantes de los 15 originales. Para decirlo en términos de nuestra ventana mágica imaginaria, cambió su ventana 10 posiciones, pero las vallas publicitarias también avanzaron una posición.
   
