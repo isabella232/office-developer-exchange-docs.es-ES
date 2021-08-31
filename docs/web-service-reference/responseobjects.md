@@ -11,23 +11,24 @@ api_name:
 api_type:
 - schema
 ms.assetid: ad29e064-3f3d-4b7b-aa4c-9ec27326381d
-description: El elemento ResponseObjects contiene una colección de todos los objetos de respuesta que están asociados a un elemento en el almacén de Exchange.
-ms.openlocfilehash: 675bfda4addb38535736efc0c790577ff4739108
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ResponseObjects contiene una colección de todos los objetos de respuesta asociados con un elemento del Exchange almacén.
+ms.openlocfilehash: 9f80fd9703dcd7d9293a3a51eccb6cf2b6903064
+ms.sourcegitcommit: 357b882a02e37b380a23b8a45b15f9c006a40b02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457441"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58764584"
 ---
 # <a name="responseobjects"></a>ResponseObjects
 
-El elemento **ResponseObjects** contiene una colección de todos los objetos de respuesta que están asociados a un elemento en el almacén de Exchange. 
+El **elemento ResponseObjects** contiene una colección de todos los objetos de respuesta asociados con un elemento del Exchange almacén. 
   
 ```XML
 <ResponseObjects>
    <AcceptItem/>
    <TentativelyAcceptItem/>
    <DeclineItem/>
+   <ProposeNewTime>
    <ReplyToItem/>
    <ForwardItem/>
    <ReplyAllToItem/>
@@ -46,39 +47,40 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AcceptItem](acceptitem.md) <br/> |Representa una respuesta de aceptación para una convocatoria de reunión.  <br/> |
-|[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |Representa una respuesta provisional a una convocatoria de reunión.  <br/> |
-|[DeclineItem](declineitem.md) <br/> |Representa una respuesta de rechazo a una convocatoria de reunión.  <br/> |
-|[ReplyToItem](replytoitem.md) <br/> |Contiene una respuesta al creador de un elemento en el almacén de Exchange.  <br/> |
-|[ForwardItem](forwarditem.md) <br/> |Contiene un elemento de almacén de Exchange que se va a reenviar a los destinatarios.  <br/> |
-|[ReplyAllToItem](replyalltoitem.md) <br/> |Contiene una respuesta a todos los destinatarios identificados de un elemento en el almacén de Exchange.  <br/> |
+|[AcceptItem](acceptitem.md) <br/> |Representa una respuesta Accept a una solicitud de reunión.  <br/> |
+|[TentativelyAcceptItem](tentativelyacceptitem.md) <br/> |Representa una respuesta provisional a una solicitud de reunión.  <br/> |
+|[DeclineItem](declineitem.md) <br/> |Representa una respuesta de declinación a una solicitud de reunión.  <br/> |
+|[ProposeNewTime](proposenewtime.md) <br/> |Indica que el asistente a la reunión puede proponer una nueva hora de reunión. Este elemento se introdujo en Microsoft Exchange Server 2013 Service Pack 1 (SP1).  <br/> |
+|[ReplyToItem](replytoitem.md) <br/> |Contiene una respuesta al creador de un elemento en el Exchange almacén.  <br/> |
+|[ForwardItem](forwarditem.md) <br/> |Contiene un Exchange almacén para reenviar a los destinatarios.  <br/> |
+|[ReplyAllToItem](replyalltoitem.md) <br/> |Contiene una respuesta a todos los destinatarios identificados de un elemento en el Exchange almacén.  <br/> |
 |[CancelCalendarItem](cancelcalendaritem.md) <br/> |Representa el objeto de respuesta usado para cancelar una reunión.  <br/> |
-|[RemoveItem](removeitem.md) <br/> |Quita un elemento del almacén de Exchange.  <br/> |
-|[PostReplyItem](postreplyitem.md) <br/> |Contiene una respuesta a un elemento post. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).  <br/> |
-|[SuppressReadReceipt](suppressreadreceipt.md) <br/> |Se usa para suprimir solicitudes de confirmación de lectura.  <br/> |
-|[AcceptSharingInvitation](acceptsharinginvitation.md) <br/> |Se usa para aceptar una invitación que permite el acceso al calendario o los datos de contactos de otro usuario.  <br/> |
+|[RemoveItem](removeitem.md) <br/> |Quita un elemento de la Exchange almacén.  <br/> |
+|[PostReplyItem](postreplyitem.md) <br/> |Contiene una respuesta a un elemento de publicación. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).  <br/> |
+|[SuppressReadReceipt](suppressreadreceipt.md) <br/> |Se usa para suprimir las solicitudes de recibo de lectura.  <br/> |
+|[AcceptSharingInvitation](acceptsharinginvitation.md) <br/> |Se usa para aceptar una invitación que permite el acceso a los datos de calendario o contactos de otro usuario.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
-|[Contacto](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Representa un Exchange de calendario.  <br/> |
+|[Contact](contact.md) <br/> |Representa un Exchange de contacto.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Representa una lista de distribución.  <br/> |
-|[Elemento](item.md) <br/> |Representa un elemento en el almacén de Exchange.  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Representa una cancelación de reunión en el almacén de Exchange.  <br/> |
-|[MeetingMessage](meetingmessage.md) <br/> |Representa una reunión en el almacén de Exchange.  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |Representa una convocatoria de reunión en el almacén de Exchange.  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta a una reunión en el almacén de Exchange.  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Exchange.  <br/> |
-|[RemoveItem](removeitem.md) <br/> |Quita un elemento del almacén de Exchange.  <br/> |
-|[Tarea](task.md) <br/> |Representa una tarea del almacén de Exchange.  <br/> |
+|[Elemento](item.md) <br/> |Representa un elemento en el Exchange almacén.  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Representa una cancelación de reunión en el Exchange local.  <br/> |
+|[MeetingMessage](meetingmessage.md) <br/> |Representa una reunión en el Exchange almacén.  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |Representa una solicitud de reunión en Exchange almacén.  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta de reunión en Exchange almacén.  <br/> |
+|[Mensaje](message-ex15websvcsotherref.md) <br/> |Representa un Exchange de correo electrónico.  <br/> |
+|[RemoveItem](removeitem.md) <br/> |Quita un elemento de la Exchange almacén.  <br/> |
+|[Tarea](task.md) <br/> |Representa una tarea en el Exchange almacén.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -90,12 +92,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

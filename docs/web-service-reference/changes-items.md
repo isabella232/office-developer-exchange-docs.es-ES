@@ -1,5 +1,5 @@
 ---
-title: Cambios (elementos)
+title: Changes (Items)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -11,17 +11,17 @@ api_name:
 api_type:
 - schema
 ms.assetid: d3139fef-0455-4b89-babd-5d6783b50a58
-description: El elemento Changes contiene una matriz de secuencia de tipos de cambio que representan los tipos de diferencias entre los elementos en el cliente y los elementos en el servidor de Exchange.
-ms.openlocfilehash: 6fda7b5602f172bae84ad7b211db2811def4f883
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Changes contiene una matriz de secuencias de tipos de cambio que representan los tipos de diferencias entre los elementos del cliente y los elementos del Exchange servidor.
+ms.openlocfilehash: ede81d8ecae9751c477ae05cbd13f914fedf8e0f
+ms.sourcegitcommit: 357b882a02e37b380a23b8a45b15f9c006a40b02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463268"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "58764633"
 ---
-# <a name="changes-items"></a>Cambios (elementos)
+# <a name="changes-items"></a>Changes (Items)
 
-El elemento **Changes** contiene una matriz de secuencia de tipos de cambio que representan los tipos de diferencias entre los elementos en el cliente y los elementos en el servidor de Exchange. 
+El **elemento Changes** contiene una matriz de secuencias de tipos de cambio que representan los tipos de diferencias entre los elementos del cliente y los elementos del Exchange servidor. 
   
 [SyncFolderItemsResponse](syncfolderitemsresponse.md)
   
@@ -29,13 +29,14 @@ El elemento **Changes** contiene una matriz de secuencia de tipos de cambio que 
   
 [SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md)
   
-[Cambios (elementos)](changes-items.md)
+[Changes (Items)](changes-items.md)
   
 ```xml
 <Changes>
    <Create/>
    <Update/>
    <Delete/>
+   <ReadFlagChange/>
 </Changes>
 ```
 
@@ -46,34 +47,34 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Crear (ItemSync)](create-itemsync.md) <br/> |Identifica un solo elemento que se va a crear en el almacén de cliente local.  <br/> |
-|[Actualización (ItemSync)](update-itemsync.md) <br/> |Identifica un elemento único para actualizar en el almacén de cliente local.  <br/> |
-|[Eliminar (ItemSync)](delete-itemsync.md) <br/> |Identifica un solo elemento que se va a eliminar en el almacén de cliente local.  <br/> |
-|[ReadFlagChange](readflagchange.md) <br/> |Devuelto en respuestas de [operación de SyncFolderItems](syncfolderitems-operation.md) cuando se ha leído un elemento. Esta propiedad es de sólo lectura.  <br/> |
+|[Create (ItemSync)](create-itemsync.md) <br/> |Identifica un solo elemento para crear en el almacén de cliente local.  <br/> |
+|[Update (ItemSync)](update-itemsync.md) <br/> |Identifica un solo elemento para actualizar en el almacén de cliente local.  <br/> |
+|[Delete (ItemSync)](delete-itemsync.md) <br/> |Identifica un único elemento que se debe eliminar en el almacén de cliente local.  <br/> |
+|[ReadFlagChange](readflagchange.md) <br/> |Se devuelve en las respuestas de la operación [SyncFolderItems](syncfolderitems-operation.md) cuando se ha leído un elemento. Esta propiedad es de sólo lectura.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md) <br/> |Contiene el estado y el resultado de una solicitud de [operación SyncFolderItems](syncfolderitems-operation.md) .  <br/> |
+|[SyncFolderItemsResponseMessage](syncfolderitemsresponsemessage.md) <br/> |Contiene el estado y el resultado de una [solicitud de operación SyncFolderItems.](syncfolderitems-operation.md)  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
 ## <a name="see-also"></a>Vea también
@@ -83,5 +84,5 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 [Operación SyncFolderItems](syncfolderitems-operation.md)
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 
