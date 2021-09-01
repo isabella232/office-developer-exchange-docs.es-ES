@@ -7,20 +7,22 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 70c324d5-2196-406d-a674-73323f8d8b92
-description: El elemento ManagerMailbox contiene información SMTP que identifica el buzón de correo del administrador del contacto.
-ms.openlocfilehash: da9e26c3efdd22000694839f5962a6bb0256f748
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ManagerMailbox contiene información SMTP que identifica el buzón del administrador del contacto.
+ms.openlocfilehash: c30a343ad7071e92c826925407f8447ae6baccae
+ms.sourcegitcommit: 63e48eaf2891a6db1a718b55cd69e3a0433c4a9c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44453969"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "58851117"
 ---
 # <a name="managermailbox"></a>ManagerMailbox
 
-El elemento **ManagerMailbox** contiene información SMTP que identifica el buzón de correo del administrador del contacto. 
+El **elemento ManagerMailbox** contiene información SMTP que identifica el buzón del administrador del contacto. 
   
 ```XML
-<ManagerMailbox/>
+<ManagerMailbox>
+   <Mailbox/>
+</ManagerMailbox>
 ```
 
  **SingleRecipientType**
@@ -30,22 +32,20 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+|**Elemento**|**Descripción**|
+|:-----|:-----|
+|[Buzón](mailbox.md) <br/> |Identifica un objeto de Active Directory habilitado para correo que identifica al remitente.  <br/> |
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Nombre del elemento**|**Descripción**|
 |:-----|:-----|
-|[Contacto](contact.md) <br/> |Representa un elemento de contacto en el almacén de Exchange.  <br/> |
-   
-## <a name="text-value"></a>Valor de texto
+|[Contact](contact.md) <br/> |Representa un elemento de contacto en el Exchange almacén.  <br/> |
 
-Ninguno.
-  
 ## <a name="remarks"></a>Comentarios
 
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
@@ -57,16 +57,16 @@ Este elemento se introdujo en Exchange Server 2010 Service Pack 2 (SP2).
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Creación de contactos (servicios Web de Exchange)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
+[Creación de contactos (Exchange Web Services)](https://msdn.microsoft.com/library/4845917e-70d1-481c-bbd7-011ec6571789%28Office.15%29.aspx)
 
