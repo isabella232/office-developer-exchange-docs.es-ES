@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5d6ee7cc-8f88-4de2-ae5c-cabf2f2193d0
 description: El elemento SetTeamMailbox contiene una solicitud para establecer un buzón de sitio.
-ms.openlocfilehash: e4b7ebd308f4b58b6b6491289f24b9176c5dcf15
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 99b6edb891c593d7f686fbe1bceb1c0668d9251e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465264"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540478"
 ---
 # <a name="setteammailbox"></a>SetTeamMailbox
 
-El elemento **SetTeamMailbox** contiene una solicitud para establecer un buzón de sitio. 
+El **elemento SetTeamMailbox** contiene una solicitud para establecer un buzón de sitio. 
   
 ```XML
 <SetTeamMailbox>
@@ -34,11 +34,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[EmailAddress (EmailAddressType)](emailaddress-emailaddresstype.md)  |  [SharePointSiteUrl](sharepointsiteurl.md)  |  [State (TeamMailboxLifecycleStateType)](state-teammailboxlifecyclestatetype.md)
+[EmailAddress (EmailAddressType)](emailaddress-emailaddresstype.md)  |  [SharePointSiteUrl](sharepointsiteurl.md)  |  [Estado (TeamMailboxLifecycleStateType)](state-teammailboxlifecyclestatetype.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

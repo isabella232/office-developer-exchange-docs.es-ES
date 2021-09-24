@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 90709f5b-4a1d-49d2-9236-ecd02bb3cdf8
 description: El elemento LargeAudienceCap especifica el número máximo de destinatarios de un mensaje de correo electrónico.
-ms.openlocfilehash: 932cac7ac1a62de7066573bbb2db3d0a338b2379
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 71644e297595273a8025c8efd6d685f5da2591df
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460109"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514427"
 ---
 # <a name="largeaudiencecap"></a>LargeAudienceCap
 
-El elemento **LargeAudienceCap** especifica el número máximo de destinatarios de un mensaje de correo electrónico. 
+El **elemento LargeAudienceCap** especifica el número máximo de destinatarios de un mensaje de correo electrónico. 
   
 ```XML
 <LargeAudienceCap></LargeAudienceCap>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **LargeAudienceCap** es el número máximo de destinatarios que se pueden tratar en un mensaje de correo electrónico. 
+El valor de texto del **elemento LargeAudienceCap** es el número máximo de destinatarios que se pueden abordar en un mensaje de correo electrónico. 
   
 ## <a name="remarks"></a>Comentarios
 

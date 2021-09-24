@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d730e3af-3102-4242-a2f1-c2873af188f9
-description: El elemento BodyType especifica el tipo de cuerpo del elemento.
-ms.openlocfilehash: e9e09ea01477558f3a12abbee3d028b9268ac7eb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento BodyType especifica el tipo del cuerpo del elemento.
+ms.openlocfilehash: 7d687dea668b9ac21f9cbf88ca0bcad6e3f66d03
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461509"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514840"
 ---
 # <a name="bodytype-bodytypetype"></a>BodyType (BodyTypeType)
 
-El elemento **BodyType** especifica el tipo de cuerpo del elemento. 
+El **elemento BodyType** especifica el tipo del cuerpo del elemento. 
   
 ```XML
 <BodyType> HTML | Text</BodyType>
@@ -30,17 +30,17 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Body](body.md) <br/> |Especifica el cuerpo de un elemento.  <br/> |
+|[Cuerpo](body.md) <br/> |Especifica el cuerpo de un elemento.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -63,12 +63,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

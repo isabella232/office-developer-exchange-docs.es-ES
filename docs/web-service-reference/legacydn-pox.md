@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 9fb9529f-52c5-4907-a84b-935b78de16c3
-description: El elemento LegacyDN identifica el buzón de un usuario mediante el nombre distintivo heredado.
-ms.openlocfilehash: b9af4278a5421dc932573396c3563a64a78de41e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento LegacyDN identifica el buzón de un usuario por nombre distintivo heredado.
+ms.openlocfilehash: bd65e18daf1b05f66ebd767635cbe6a3135f1abf
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526385"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540835"
 ---
 # <a name="legacydn-pox"></a>LegacyDN (POX)
 
-El elemento **LegacyDN** identifica el buzón de un usuario mediante el nombre distintivo heredado. 
+El **elemento LegacyDN** identifica el buzón de un usuario por nombre distintivo heredado. 
   
 ```xml
 <LegacyDN/>
@@ -30,28 +30,28 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Solicitud (POX)](request-pox.md) <br/> |Contiene la solicitud al servicio Detección automática.  <br/> |
-|[Usuario (POX)](user-pox.md) <br/> |Proporciona información específica del usuario.  <br/> |
+|[Request (POX)](request-pox.md) <br/> |Contiene la solicitud al servicio de detección automática.  <br/> |
+|[User (POX)](user-pox.md) <br/> |Proporciona información específica del usuario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa una dirección de correo electrónico heredada de un usuario.
+El valor de texto representa la dirección de correo electrónico heredada de un usuario.
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) es un elemento alternativo para una solicitud de detección automática. Se usa cuando existe un buzón de correo en un equipo que ejecuta Microsoft Exchange Server 2007. 
+El [elemento EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) es un elemento alternativo para una solicitud de detección automática. Se usa cuando existe un buzón en un equipo que se ejecuta Microsoft Exchange Server 2007. 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

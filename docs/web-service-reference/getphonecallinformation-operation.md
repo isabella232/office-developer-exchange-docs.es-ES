@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetPhoneCallInformation
 api_type:
 - schema
 ms.assetid: 418bd6ca-39d9-49a9-841e-7a71ede1fa51
 description: La operación GetPhoneCallInformation devuelve información sobre la llamada telefónica especificada.
-ms.openlocfilehash: 231b160713526f44433188e2b1e3bd98012370b1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7cb9ecbb30e6cdd4d85b60215f40e0be5f4aaa84
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458316"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539960"
 ---
 # <a name="getphonecallinformation-operation"></a>Operación GetPhoneCallInformation
 
-La operación **GetPhoneCallInformation** devuelve información sobre la llamada telefónica especificada. 
+La **operación GetPhoneCallInformation** devuelve información sobre la llamada telefónica especificada. 
   
 ## <a name="getphonecallinformation-request-example"></a>Ejemplo de solicitud GetPhoneCallInformation
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud **GetPhoneCallInformation** muestra cómo crear una solicitud para obtener información sobre una llamada telefónica específica. 
+En el siguiente ejemplo de una **solicitud GetPhoneCallInformation** se muestra cómo formar una solicitud para obtener información sobre una llamada telefónica específica. 
   
 ### <a name="code"></a>Código
 
@@ -53,7 +53,7 @@ El siguiente ejemplo de una solicitud **GetPhoneCallInformation** muestra cómo 
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **GetPhoneCallInformation** . La respuesta representa una llamada telefónica que está conectada actualmente. 
+En el ejemplo siguiente se muestra una respuesta correcta a la **solicitud GetPhoneCallInformation.** La respuesta representa una llamada telefónica que está conectada actualmente. 
   
 ### <a name="code"></a>Código
 
@@ -85,8 +85,8 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **GetPh
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Operaciones ews en Exchange](ews-operations-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

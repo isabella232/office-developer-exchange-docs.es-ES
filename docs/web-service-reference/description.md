@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6e4cd194-0696-4fec-8ab0-e1d349ed0be0
-description: El elemento Description especifica el texto descriptivo de la Directiva de retención.
-ms.openlocfilehash: a399d4072220e3fa9199f0a3eb760e886b7b4ee6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Description especifica el texto descriptivo de la directiva de retención.
+ms.openlocfilehash: a3937c415b89dede8ab02c75cc67506a49b12a74
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467889"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540176"
 ---
 # <a name="description"></a>Description
 
-El elemento **Description** especifica el texto descriptivo de la Directiva de retención. 
+El **elemento Description** especifica el texto descriptivo de la directiva de retención. 
   
 ```XML
 <Description></Description>
@@ -30,21 +30,21 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[RetentionPolicyTag](retentionpolicytag.md) <br/> |Especifica la Directiva de retención de un elemento de buzón.  <br/> |
+|[RetentionPolicyTag](retentionpolicytag.md) <br/> |Especifica la directiva de retención de un elemento de buzón.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **Description** es un valor de cadena que describe la Directiva de retención. 
+El valor de texto del **elemento Description** es un valor de cadena que describe la directiva de retención. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -58,10 +58,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

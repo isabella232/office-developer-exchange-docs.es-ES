@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2f61b038-eba0-40fc-8af2-c3db5cc5a420
 description: El elemento UpdateItemInRecoverableItemsResponse especifica la respuesta a una solicitud UpdateItemInRecoverableItems.
-ms.openlocfilehash: 02e030774949e895bc89579cb9364d08c7844ce3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: e5020ac3c8263d0b837636f998302754aafb8687
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466559"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514035"
 ---
 # <a name="updateiteminrecoverableitemsresponse"></a>UpdateItemInRecoverableItemsResponse
 
-El elemento **UpdateItemInRecoverableItemsResponse** especifica la respuesta a una solicitud **UpdateItemInRecoverableItems** . 
+El **elemento UpdateItemInRecoverableItemsResponse** especifica la respuesta a una solicitud **UpdateItemInRecoverableItems.** 
   
 ```XML
 <UpdateItemInRecoverableItemsResponse>
@@ -38,7 +38,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -59,8 +59,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

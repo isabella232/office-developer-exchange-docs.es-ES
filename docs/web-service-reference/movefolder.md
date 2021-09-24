@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MoveFolder
 api_type:
 - schema
 ms.assetid: f2bb0a73-94d7-4bc7-8902-bd9c69120221
-description: El elemento MoveFolder define una solicitud para mover una carpeta en el almacén de Exchange.
-ms.openlocfilehash: d2fe33a6d7893d45fa116a1516fcc6ab2dea3bcf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento MoveFolder define una solicitud para mover una carpeta en el Exchange almacén.
+ms.openlocfilehash: 5fab9fab243d0720166f2eecdb3d0eee04110235
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457294"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515547"
 ---
 # <a name="movefolder"></a>MoveFolder
 
-El elemento **MoveFolder** define una solicitud para mover una carpeta en el almacén de Exchange. 
+El **elemento MoveFolder** define una solicitud para mover una carpeta en el Exchange almacén. 
   
 ```xml
 <MoveFolder>
@@ -37,14 +37,14 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ToFolderId](tofolderid.md) <br/> |Representa la carpeta de destino de una carpeta que se ha movido.  <br/> |
-|[FolderIds](folderids.md) <br/> |Contiene una matriz de carpetas para desplazarse a la carpeta identificada por el elemento [ToFolderId](tofolderid.md) .  <br/> |
+|[ToFolderId](tofolderid.md) <br/> |Representa la carpeta de destino de una carpeta movida.  <br/> |
+|[FolderIds](folderids.md) <br/> |Contiene una matriz de carpetas para mover a la carpeta identificada por el [elemento ToFolderId.](tofolderid.md)  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -52,7 +52,7 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -60,10 +60,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

@@ -5,32 +5,32 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetRooms
 api_type:
 - schema
 ms.assetid: 5501ddc0-3bfa-4da6-8e15-4223ca5499a3
 description: La operación GetRooms obtiene las salas dentro de la lista de salas especificada.
-ms.openlocfilehash: 4cb124b96637b9fcdca15595faebb2ce4d304de0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: dc5cf71ed0731d2674ecead1153447090b43bd9a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460550"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539922"
 ---
 # <a name="getrooms-operation"></a>Operación GetRooms
 
-La operación **GetRooms** obtiene las salas dentro de la lista de salas especificada. 
+La **operación GetRooms** obtiene las salas dentro de la lista de salas especificada. 
   
 ## <a name="soap-headers"></a>Encabezados SOAP
 
-La operación **GetRooms** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla. 
+La **operación GetRooms** puede usar los encabezados SOAP que se enumeran y se describen en la tabla siguiente. 
   
 |**Header**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente.  <br/> |
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural RFC3066 que se va a usar para obtener acceso al buzón.  <br/> |
+|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario al que la aplicación cliente está suplantando.  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural RFC3066 que se usará para tener acceso al buzón.  <br/> |
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud.  <br/> |
    
@@ -38,7 +38,7 @@ La operación **GetRooms** puede usar los encabezados SOAP que se enumeran y des
 
 ### <a name="description"></a>Description
 
-A continuación, se muestra un ejemplo de una solicitud de **GetRooms** que obtiene las salas asociadas con una lista de salas. 
+A continuación se muestra un ejemplo de una **solicitud GetRooms** que obtiene las salas asociadas a una lista de salas. 
   
 ### <a name="code"></a>Código
 
@@ -61,9 +61,9 @@ A continuación, se muestra un ejemplo de una solicitud de **GetRooms** que obti
 
 ```
 
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [RequestServerVersion](requestserverversion.md)
     
@@ -77,7 +77,7 @@ Los siguientes elementos se usan en la solicitud:
 
 ### <a name="description"></a>Description
 
-La siguiente respuesta muestra la información de la dirección de correo electrónico de las salas asociadas con la lista de salas.
+La siguiente respuesta muestra la información de la dirección de correo electrónico de las salas asociadas a la lista de salas.
   
 ### <a name="code"></a>Código
 
@@ -123,11 +123,11 @@ En la respuesta se usan los siguientes elementos:
     
 - [ResponseCode](responsecode.md)
     
-- [Sala](rooms.md)
+- [Rooms](rooms.md)
     
 - [Sala](room.md)
     
-- [Nombre (EmailAddress)](name-emailaddress.md)
+- [Name (EmailAddress)](name-emailaddress.md)
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
@@ -135,11 +135,11 @@ En la respuesta se usan los siguientes elementos:
     
 - [MailboxType](mailboxtype.md)
     
-## <a name="getrooms-error-response-example"></a>Ejemplo de respuesta de error GetRooms
+## <a name="getrooms-error-response-example"></a>Ejemplo de respuesta de error de GetRooms
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta de error causada por un intento de obtener información de la sala para una lista de salas inexistente.
+En el ejemplo siguiente se muestra una respuesta de error causada por un intento de obtener información de sala para una lista de sala inexistente.
   
 ### <a name="code"></a>Código
 
@@ -173,8 +173,8 @@ En la respuesta se usan los siguientes elementos:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Operaciones ews en Exchange](ews-operations-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

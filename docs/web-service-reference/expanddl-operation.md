@@ -5,41 +5,41 @@ ms.date: 07/27/2018
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ExpandDL
 api_type:
 - schema
 ms.assetid: 1f7837e7-9eff-4e10-9577-c40f7ed6af94
-description: La operación ExpandDL expone toda la pertenencia a listas de distribución.
-ms.openlocfilehash: 8edaf057538e2c1136465f0ff7937c14477b2c47
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación ExpandDL expone la pertenencia completa a las listas de distribución.
+ms.openlocfilehash: 9878ecff0eeee1ef386c7bb26a092eec47f471de
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44454053"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513783"
 ---
 # <a name="expanddl-operation"></a>Operación ExpandDL
 
-La operación ExpandDL expone toda la pertenencia a listas de distribución.
+La operación ExpandDL expone la pertenencia completa a las listas de distribución.
   
-## <a name="using-the-expanddl-web-method"></a>Uso del método Web ExpandDL
+## <a name="using-the-expanddl-web-method"></a>Uso del método web ExpandDL
 
-La operación ExpandDL usa el servicio Web que se encuentra en Exchange. asmx. Este método de servicio web acepta un elemento [Mailbox](mailbox.md) que puede contener un elemento secundario [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) para una expansión de una lista de distribución pública o un elemento secundario [Itemid](itemid.md) para la expansión de una lista de distribución privada. 
+La operación ExpandDL usa el servicio web que se encuentra en Exchange.asmx. Este método de servicio web acepta un elemento [Mailbox](mailbox.md) que puede contener un elemento secundario [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) para una expansión de una lista de distribución pública o un elemento secundario [ItemId](itemid.md) para la expansión de una lista de distribución privada. 
   
-Las listas de distribución públicas se pueden expandir con una de las siguientes opciones:
+Las listas de distribución pública se pueden expandir mediante una de las siguientes opciones:
   
 1. Alias de lista de distribución
     
 2. Dirección del protocolo simple de transferencia de correo (SMTP)
     
-3. X.400
+3. X400
     
 4. X500
     
-5. Dirección heredada de Exchange
+5. Exchange Dirección heredada
     
-6. El nombre de la lista de distribución
+6. Nombre de la lista de distribución
     
 7. El nombre para mostrar
     
@@ -48,19 +48,19 @@ Las listas de distribución públicas se pueden expandir con una de las siguient
   
 ## <a name="remarks"></a>Comentarios
 
-No se admite la expansión recursiva. Solo se puede expandir una lista de distribución en una sola llamada. Si hay más de una lista de distribución que coincide con los criterios, el servicio Web notifica un error. Una aplicación cliente puede usar la resolución de nombres ambiguos (ANR) para buscar listas de distribución ambiguas y, a continuación, elegir la dirección de correo electrónico correcta de la lista de distribución requerida como un parámetro para la [operación ExpandDL](expanddl-operation.md). Para obtener más información, vea [operación ResolveNames](resolvenames-operation.md).
+No se admite la expansión recursiva. Solo se puede expandir una lista de distribución en una sola llamada. Si más de una lista de distribución coincide con los criterios, el servicio web notifica un error. Una aplicación cliente puede usar una resolución de nombres ambigua (ANR) para buscar listas de distribución ambiguas y, a continuación, elegir la dirección de correo electrónico correcta de la lista de distribución necesaria como parámetro para la operación [ExpandDL](expanddl-operation.md). Para obtener más información, vea [ResolveNames operation](resolvenames-operation.md).
   
-Las listas de distribución pública se encuentran en Active Directory. Pueden ser cualquier grupo de distribución dinámico o habilitado para correo. El grupo no debe estar oculto en la lista de direcciones y cada miembro debe tener una dirección de correo electrónico no vacía. Los miembros de la lista de distribución pueden estar habilitados para correo y contactos, carpetas públicas y listas de distribución habilitadas para correo y grupos dinámicos.
+Las listas de distribución pública se encuentran en Active Directory. Pueden ser cualquier grupo de distribución dinámico o habilitado para correo. El grupo no debe estar oculto en la lista de direcciones y cada miembro debe tener una dirección de correo electrónico no vacía. Los miembros de la lista de distribución pueden ser usuarios y contactos habilitados para correo, carpetas públicas y listas de distribución habilitadas para correo y grupos dinámicos.
   
-Las listas de distribución privadas se encuentran en la carpeta de contactos del buzón de un usuario. Las listas de distribución privadas no tienen direcciones de correo electrónico para que sus identificadores de elemento de almacén se usen en una solicitud de ExpandDL. Los miembros de una lista de distribución privada pueden ser usuarios con correo habilitado, contactos o listas de distribución de Active Directory, o de listas de distribución privadas o contactos de una carpeta de contactos de un usuario.
+Las listas de distribución privadas se encuentran en la carpeta Contactos del buzón de un usuario. Las listas de distribución privadas no tienen direcciones de correo electrónico, por lo que sus identificadores de elementos de almacén se usan en una solicitud ExpandDL. Los miembros de una lista de distribución privada pueden ser cualquier usuario habilitado para correo, contactos o listas de distribución de Active Directory, o contactos o listas de distribución privadas de la carpeta Contactos de un usuario.
   
-Para los contactos o listas de distribución privadas, los identificadores de elemento se devuelven en la respuesta. Se puede usar para obtener información sobre el objeto o para expandir la pertenencia a una lista de distribución privada.
+Para contactos o listas de distribución privadas, los identificadores de elementos se devuelven en la respuesta. Esto se puede usar para obtener información sobre el objeto o para expandir la pertenencia a una lista de distribución privada.
   
-## <a name="expanddl-private-distribution-list-request-example"></a>Ejemplo de solicitud de lista de distribución privada de ExpandDL
+## <a name="expanddl-private-distribution-list-request-example"></a>Ejemplo de solicitud de lista de distribución privada ExpandDL
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud ExpandDL muestra cómo crear una solicitud para expandir una lista de distribución privada.
+En el siguiente ejemplo de una solicitud ExpandDL se muestra cómo formar una solicitud para expandir una lista de distribución privada.
   
 ### <a name="code"></a>Código
 
@@ -82,13 +82,13 @@ El siguiente ejemplo de una solicitud ExpandDL muestra cómo crear una solicitud
 
 ### <a name="comments"></a>Comentarios
 
-Para expandir una lista de distribución privada, el elemento [Mailbox](mailbox.md) contendrá el elemento [Itemid](itemid.md) que identifica una lista de distribución privada en el buzón del usuario. 
+Para expandir una lista de distribución privada, el elemento [Mailbox](mailbox.md) contendrá el [elemento ItemId](itemid.md) que identifica una lista de distribución privada en el buzón del usuario. 
   
-## <a name="expanddl-public-distribution-list-request-example"></a>Ejemplo de solicitud de lista de distribución pública de ExpandDL
+## <a name="expanddl-public-distribution-list-request-example"></a>Ejemplo de solicitud de lista de distribución pública expandDL
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud ExpandDL muestra cómo crear una solicitud para expandir una lista de distribución pública. En el ejemplo se muestra el uso de un nombre para mostrar para expandir una lista de distribución.
+En el siguiente ejemplo de una solicitud ExpandDL se muestra cómo formar una solicitud para expandir una lista de distribución pública. En el ejemplo se muestra el uso de un nombre para mostrar para expandir una lista de distribución.
   
 ### <a name="code"></a>Código
 
@@ -109,38 +109,38 @@ El siguiente ejemplo de una solicitud ExpandDL muestra cómo crear una solicitud
 
 ### <a name="comments"></a>Comentarios
 
-La respuesta a esta solicitud contendrá elementos de **buzón** que identifican cada buzón de correo de la lista de distribución. Si una lista de distribución está contenida en una lista de distribución, debe realizarse una expansión de la lista de distribución independiente en la lista de distribución incrustada. Si la lista de distribución no tiene miembros o la lista de distribución solicitada no existe, el atributo **ResponseClass** contendrá un valor igual al correcto. 
+La respuesta a esta solicitud contendrá elementos **Mailbox** que identifican cada buzón de la lista de distribución. Si una lista de distribución está incluida en una lista de distribución, se debe realizar una expansión de lista de distribución independiente en la lista de distribución incrustada. Si la lista de distribución no tiene miembros o la lista de distribución solicitada no existe, el atributo **ResponseClass** contendrá un valor igual a Success. 
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [ExpandDL](expanddl.md)
     
 - [Buzón](mailbox.md)
     
-- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) se usa para identificar las listas de distribución públicas. El elemento [Itemid](itemid.md) se usa para identificar las listas de distribución privadas. 
+- [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) se usa para identificar listas de distribución públicas. El [elemento ItemId](itemid.md) se usa para identificar listas de distribución privadas. 
     
 > [!NOTE]
-> El esquema que describe estos elementos se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes. 
+> El esquema que describe estos elementos se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente. 
   
-## <a name="successful-expanddl-response-example"></a>Ejemplo de respuesta ExpandDL correcta
+## <a name="successful-expanddl-response-example"></a>Ejemplo de respuesta expandDL correcta
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una respuesta de ExpandDL muestra una respuesta a la solicitud descrita anteriormente. La expansión de la lista de distribución describe lo siguiente: 
+En el siguiente ejemplo de una respuesta ExpandDL se muestra una respuesta a la solicitud descrita anteriormente. La expansión de la lista de distribución describe lo siguiente: 
   
 - Número de miembros de la lista de distribución que se devuelven en la respuesta.
     
 - Si la respuesta contiene todos los miembros de la lista de distribución.
     
-- El nombre del buzón.
+- Nombre del buzón.
     
-- La dirección de correo electrónico del buzón.
+- Dirección de correo electrónico del buzón.
     
-- El tipo de enrutamiento para el buzón.
+- Tipo de enrutamiento para el buzón.
     
-- El tipo de buzón de correo.
+- El tipo de buzón.
     
 > [!NOTE]
 > El nombre de la lista de distribución no se incluye en la respuesta; por lo tanto, debe realizar un seguimiento del nombre de la solicitud. 
@@ -191,7 +191,7 @@ El siguiente ejemplo de una respuesta de ExpandDL muestra una respuesta a la sol
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -209,7 +209,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [Buzón](mailbox.md)
     
-- [Nombre (EmailAddressType)](name-emailaddresstype.md)
+- [Name (EmailAddressType)](name-emailaddresstype.md)
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
@@ -217,11 +217,11 @@ En la respuesta se usan los siguientes elementos:
     
 - [MailboxType](mailboxtype.md)
     
-Para buscar otras opciones para el mensaje de respuesta de la operación ExpandDL, explore la jerarquía del esquema. Empiece en el elemento [ExpandDLResponse](expanddlresponse.md) . 
+Para buscar otras opciones para el mensaje de respuesta de la operación ExpandDL, explore la jerarquía de esquema. Comience en el [elemento ExpandDLResponse.](expanddlresponse.md) 
   
-## <a name="expanddl-error-response"></a>Respuesta de error de ExpandDL
+## <a name="expanddl-error-response"></a>Respuesta de error expandDL
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
 En el ejemplo siguiente se muestra una respuesta de error a una solicitud ExpandDL.
   
@@ -255,7 +255,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud Expand
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -271,10 +271,10 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Para buscar otras opciones para el mensaje de respuesta de la operación ExpandDL, explore la jerarquía del esquema. Empiece en el elemento [ExpandDLResponse](expanddlresponse.md) . 
+Para buscar otras opciones para el mensaje de respuesta de la operación ExpandDL, explore la jerarquía de esquema. Comience en el [elemento ExpandDLResponse.](expanddlresponse.md) 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Operación ResolveNames](resolvenames-operation.md)
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

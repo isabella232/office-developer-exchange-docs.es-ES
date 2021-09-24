@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ff1b6b1c-3557-41d4-8aa6-9528fdb3a21a
 description: El elemento NewReminderTime especifica una nueva hora para un aviso.
-ms.openlocfilehash: a10f7e481b474501f33dba4c09060766568952b0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 9e6cb75396f35f606bcd974e374f24957ee5d1ec
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465957"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515449"
 ---
 # <a name="newremindertime"></a>NewReminderTime
 
-El elemento **NewReminderTime** especifica una nueva hora para un aviso. 
+El **elemento NewReminderTime** especifica una nueva hora para un aviso. 
   
 ```XML
 <NewReminderTime/>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **NewReminderTime** es una nueva hora para el aviso. El elemento **NewReminderTime** se utiliza cuando el elemento [ActionType](actiontype-reminderactiontype.md) se establece en **SNOOZE**para retrasar el aviso. El valor de **NewReminderTime** debe ser mayor que el valor de [ReminderTime](remindertime.md) devuelto por la [operación GetReminders](getreminders-operation.md).
+El valor de texto del **elemento NewReminderTime** es una nueva hora para el aviso. El **elemento NewReminderTime** se usa cuando el elemento [ActionType](actiontype-reminderactiontype.md) se establece en **Snooze**, para retrasar el aviso. El valor de **NewReminderTime** debe ser mayor que [el remindertime](remindertime.md) devuelto por la [operación GetReminders](getreminders-operation.md).
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,15 +56,15 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
 [ReminderItemAction](reminderitemaction.md)
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

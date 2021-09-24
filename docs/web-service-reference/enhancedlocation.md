@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4fdfb74f-f33c-46ae-a7c7-451a5b0c6a59
-description: El elemento EnhancedLocation especifica información de ubicación, como el nombre, la dirección y las notas opcionales de una ubicación.
-ms.openlocfilehash: 06ec800b763ef61af51da03ca8a340f6ac4d2a8e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento EnhancedLocation especifica información de ubicación, como el nombre, la dirección y las notas opcionales sobre una ubicación.
+ms.openlocfilehash: d73e98eee5d0f3a042ac7313862e8f35557ef085
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462960"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540072"
 ---
 # <a name="enhancedlocation"></a>EnhancedLocation
 
-El elemento **EnhancedLocation** especifica información de ubicación, como el nombre, la dirección y las notas opcionales de una ubicación. 
+El **elemento EnhancedLocation** especifica información de ubicación, como el nombre, la dirección y las notas opcionales sobre una ubicación. 
   
 ```XML
 <EnhancedLocation>
@@ -34,23 +34,23 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[DisplayName (cadena)](displayname-string.md) <br/> |Define el nombre para mostrar de una carpeta, un contacto, una lista de distribución, un usuario delegado, una ubicación o una regla.  <br/> |
-|[Anotación](annotation.md) <br/> |Contiene las notas opcionales agregadas por un usuario.  <br/> |
-|[PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md) <br/> |Especifica la dirección postal de un rol.  <br/> |
+|[DisplayName (cadena)](displayname-string.md) <br/> |Define el nombre para mostrar de una carpeta, contacto, lista de distribución, usuario delegado, ubicación o regla.  <br/> |
+|[Annotation](annotation.md) <br/> |Contiene notas opcionales agregadas por un usuario.  <br/> |
+|[PostalAddress (PersonaPostalAddressType)](postaladdress-personapostaladdresstype.md) <br/> |Especifica la dirección postal de una persona.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
-|[MeetingCancellation](meetingcancellation.md) <br/> |Representa una cancelación de reunión en el almacén de Exchange.  <br/> |
-|[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta a una reunión en el almacén de Exchange.  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Representa un Exchange de calendario.  <br/> |
+|[MeetingCancellation](meetingcancellation.md) <br/> |Representa una cancelación de reunión en el Exchange local.  <br/> |
+|[MeetingResponse](meetingresponse.md) <br/> |Representa una respuesta de reunión en Exchange almacén.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -64,12 +64,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5c414af9-34d0-41ce-bda9-0d4ca3f3be79
-description: El elemento YomiCompanyNames especifica una matriz de nombres de compañías fonéticas de japonés y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: 41b97998425926750a3ecc7e17233f2066759689
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento YomiCompanyNames especifica una matriz de nombres fonéticos de compañía japonesa y los identificadores de sus atribuciones de origen para la persona asociada.
+ms.openlocfilehash: c7ee24636f97bc0f568d34d862e9ea332e3204dc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457868"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540387"
 ---
 # <a name="yomicompanynames"></a>YomiCompanyNames
 
-El elemento **YomiCompanyNames** especifica una matriz de nombres de compañías fonéticas de japonés y los identificadores de sus atribuciones de origen para el rol asociado. 
+El **elemento YomiCompanyNames** especifica una matriz de nombres fonéticos de compañía japonesa y los identificadores de sus atribuciones de origen para la persona asociada. 
   
 ```XML
 <YomiCompanyNames>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

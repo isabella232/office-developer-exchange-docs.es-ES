@@ -1,27 +1,27 @@
 ---
-title: Acciones
+title: ActingAs
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ActingAs
 api_type:
 - schema
 ms.assetid: 3896afff-5c2c-4eaf-8621-c70e0371ea78
-description: El elemento Actuaas identifica quién envía el autor de la llamada.
-ms.openlocfilehash: 175a03018ee3529ec595dbe9afb7dc61ad6afc35
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ActingAs identifica a quién envía el autor de la llamada.
+ms.openlocfilehash: a470a7571e5f1b2ecc85014157d3fc4de291389e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529703"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540345"
 ---
-# <a name="actingas"></a>Acciones
+# <a name="actingas"></a>ActingAs
 
-El elemento **actuaas** identifica quién envía el autor de la llamada. 
+El **elemento ActingAs** identifica a quién envía el autor de la llamada. 
   
 ```xml
 <ActingAs>
@@ -37,24 +37,24 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Define la dirección del Protocolo simple de transferencia de correo (SMTP) de un usuario de buzón. Este elemento es opcional.  <br/> |
-|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Define la ruta que se usa para el buzón. El valor predeterminado es SMTP. Este elemento es opcional.  <br/> |
+|[EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md) <br/> |Define la dirección del Protocolo simple de transferencia de correo (SMTP) de un usuario de buzón de correo. Este elemento es opcional.  <br/> |
+|[RoutingType (EmailAddress)](routingtype-emailaddress.md) <br/> |Define el enrutamiento que se usa para el buzón. El valor predeterminado es SMTP. Este elemento es opcional.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetServiceConfiguration](getserviceconfiguration.md) <br/> |Define una solicitud de **GetServiceConfiguration** .  <br/> |
+|[GetServiceConfiguration](getserviceconfiguration.md) <br/> |Define una **solicitud GetServiceConfiguration.**  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Este elemento es opcional. Si este elemento no está presente, se supone que el usuario autenticado es el remitente. El elemento **actual** debe incluirse para solicitar sugerencias de remitente. Se puede devolver un error **ErrorInvalidArgument** en una respuesta si falta el elemento **actuaas** , no incluye un tipo de enrutamiento, no incluye una dirección de correo electrónico, contiene una dirección de correo electrónico no válida, no se resuelve como un usuario de los servicios de dominio de Active Directory (AD DS) o se resuelve en varios usuarios en AD DS. 
+Este elemento es opcional. Si este elemento no está presente, se supone que el usuario autenticado es el remitente. El **elemento ActingAs** debe incluirse para solicitar sugerencias de remitente. Un **error ErrorInvalidArgument** se puede devolver en una respuesta si falta el elemento **ActingAs,** no incluye un tipo de enrutamiento, no incluye una dirección de correo electrónico, contiene una dirección de correo electrónico no válida, no resuelve a un usuario de Servicios de dominio de Active Directory (AD DS) o resuelve a varios usuarios en AD DS. 
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -64,10 +64,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - TransitionsGroups
 api_type:
 - schema
 ms.assetid: ad0849f8-5158-4a23-9c36-a49f5be1d1e1
 description: El elemento TransitionsGroups representa una matriz de grupos de transición de zona horaria.
-ms.openlocfilehash: 35244e122ee31045359afd0833459bbb94fd0aa1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: cd394d0ec333f639542c44cef6c992b24b69f65c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467413"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515127"
 ---
 # <a name="transitionsgroups"></a>TransitionsGroups
 
-El elemento **TransitionsGroups** representa una matriz de grupos de transición de zona horaria. 
+El **elemento TransitionsGroups** representa una matriz de grupos de transición de zona horaria. 
   
 ```XML
 <TransitionsGroups>
@@ -36,7 +36,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -48,8 +48,8 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[StartTimeZone](starttimezone.md) <br/> |Define la zona horaria de la hora de inicio de un [CalendarItem](calendaritem.md) o [MeetingRequest](meetingrequest.md).  <br/> |
-|[EndTimeZone](endtimezone.md) <br/> |Define la zona horaria de la hora de finalización de [CalendarItem](calendaritem.md) o [MeetingRequest](meetingrequest.md).  <br/> |
+|[StartTimeZone](starttimezone.md) <br/> |Define la zona horaria para la hora de inicio de [un CalendarItem](calendaritem.md) o [MeetingRequest](meetingrequest.md).  <br/> |
+|[EndTimeZone](endtimezone.md) <br/> |Define la zona horaria para la hora de finalización de [un CalendarItem](calendaritem.md) o [MeetingRequest](meetingrequest.md).  <br/> |
 |[TimeZoneDefinition](timezonedefinition.md) <br/> |Define una zona horaria.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
@@ -62,12 +62,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

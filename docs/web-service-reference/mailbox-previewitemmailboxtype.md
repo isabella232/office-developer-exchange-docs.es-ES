@@ -1,23 +1,23 @@
 ---
-title: Buzón de correo (PreviewItemMailboxType)
+title: Mailbox (PreviewItemMailboxType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e898d737-b6e4-4403-9c2c-aec52a48a83d
-description: El elemento Mailbox contiene el identificador de buzón y la dirección principal del Protocolo simple de transferencia de correo (SMTP) del usuario.
-ms.openlocfilehash: 4dc5ee45c00945c30a699daa0158c96679189ab1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Mailbox contiene el identificador de buzón y la dirección SMTP (Protocolo simple de transferencia de correo) principal del usuario.
+ms.openlocfilehash: 1a2dcc08d3e1595aede21e6982b36a60e6efafb5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463898"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514301"
 ---
-# <a name="mailbox-previewitemmailboxtype"></a>Buzón de correo (PreviewItemMailboxType)
+# <a name="mailbox-previewitemmailboxtype"></a>Mailbox (PreviewItemMailboxType)
 
-El elemento **Mailbox** contiene el identificador de buzón y la dirección principal del Protocolo simple de transferencia de correo (SMTP) del usuario. 
+El **elemento Mailbox** contiene el identificador de buzón y la dirección SMTP (Protocolo simple de transferencia de correo) principal del usuario. 
   
 ```XML
 <Mailbox>
@@ -34,11 +34,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Se especifica mailboxid](mailboxid.md)  |  [PrimarySmtpAddress (cadena)](primarysmtpaddress-string.md)
+[MailboxId](mailboxid.md)  |  [PrimarySmtpAddress (cadena)](primarysmtpaddress-string.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

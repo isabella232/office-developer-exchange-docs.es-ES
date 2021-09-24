@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4a20c747-4fa2-4c8d-b439-816918e8ba02
-description: El elemento ClientIntent está destinado sólo para uso interno.
-ms.openlocfilehash: cf791a5ddba7c3455f5738bd4bede00dc7010f0e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ClientIntent está diseñado solo para uso interno.
+ms.openlocfilehash: 5168d23ec55b3c4c6dba116116f5747edf5053f7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462188"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515995"
 ---
 # <a name="clientintent"></a>ClientIntent
 
-El elemento **ClientIntent** está destinado sólo para uso interno. 
+El **elemento ClientIntent** está diseñado solo para uso interno. 
   
 ```XML
 <ClientIntent />
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -51,8 +51,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

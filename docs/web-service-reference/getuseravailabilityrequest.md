@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetUserAvailabilityRequest
 api_type:
 - schema
 ms.assetid: 7906711b-80a1-42ae-8b33-26eeac036a5a
 description: El elemento GetUserAvailabilityRequest contiene los argumentos usados para obtener información de disponibilidad del usuario. Se trata de un elemento raíz.
-ms.openlocfilehash: 6c2e2c5452b6379171e49cf6aea2d437152ecb9b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8c0e14dc27ce7a742aa052bb1d424706407de484
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459121"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515813"
 ---
 # <a name="getuseravailabilityrequest"></a>GetUserAvailabilityRequest
 
-El elemento **GetUserAvailabilityRequest** contiene los argumentos usados para obtener información de disponibilidad del usuario. Se trata de un elemento raíz. 
+El **elemento GetUserAvailabilityRequest** contiene los argumentos usados para obtener información de disponibilidad del usuario. Se trata de un elemento raíz. 
   
 ```xml
 <GetUserAvailabilityRequest>
@@ -39,16 +39,16 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Zona horaria (disponibilidad)](timezone-availability.md) <br/> |Contiene los elementos que identifican la información de la zona horaria. Este elemento también contiene información sobre la transición entre el horario estándar y el horario de verano.  <br/> |
+|[TimeZone (Availability)](timezone-availability.md) <br/> |Contiene elementos que identifican la información de zona horaria. Este elemento también contiene información sobre la transición entre la hora estándar y el horario de verano.  <br/> |
 |[MailboxDataArray](mailboxdataarray.md) <br/> |Contiene una lista de buzones para consultar la información de disponibilidad.  <br/> |
 |[FreeBusyViewOptions](freebusyviewoptions.md) <br/> |Especifica el tipo de información de disponibilidad devuelta en la respuesta.  <br/> |
-|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Contiene las opciones para obtener información sobre las sugerencias de la reunión.  <br/> |
+|[SuggestionsViewOptions](suggestionsviewoptions.md) <br/> |Contiene las opciones para obtener información sobre sugerencias de reunión.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -56,7 +56,7 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio/EWS/del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio /EWS/ del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="example"></a>Ejemplo
 
@@ -116,10 +116,10 @@ En el ejemplo siguiente se muestra una solicitud de información de disponibilid
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

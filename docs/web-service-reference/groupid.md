@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 656d9b9a-8a65-4a75-8466-5b0d96512dab
-description: El elemento GroupId identifica de forma exclusiva a un grupo.
-ms.openlocfilehash: 3b8de4d0fef95e2caff4db0d90bb303830022d36
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento GroupId identifica de forma única un grupo.
+ms.openlocfilehash: c0261153a0c64a2e54c053597bd3fdc1466480da
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530095"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539671"
 ---
 # <a name="groupid"></a>GroupId
 
-El elemento **GROUPID** identifica de forma exclusiva a un grupo. 
+El **elemento GroupId** identifica de forma única un grupo. 
   
 ```XML
 <GroupId Id="" ChangeKey=""/>
@@ -32,12 +32,12 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
-|Id  <br/> |El valor de texto del atributo **ID** es el identificador del grupo.  <br/> |
-|ChangeKey  <br/> |El valor de texto del atributo **changekey** es la clave de cambio del grupo.  <br/> |
+|Id  <br/> |El valor de texto del **atributo Id** es el identificador del grupo.  <br/> |
+|ChangeKey  <br/> |El valor de texto del **atributo ChangeKey** es la clave de cambio del grupo.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,8 +54,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 678dd5ce-8d9e-4939-bf1b-a8e148f4f449
 description: El elemento EmptyFolderResponseMessage contiene el estado y el resultado de una sola solicitud EmptyFolder.
-ms.openlocfilehash: fd69df45d7e1d6538a977b79711baa769413ea66
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 07484c05a769f1f6b83b410f334309a01c7e3eaf
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526217"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514707"
 ---
 # <a name="emptyfolderresponsemessage"></a>EmptyFolderResponseMessage
 
-El elemento **EmptyFolderResponseMessage** contiene el estado y el resultado de una sola solicitud [EmptyFolder](emptyfolder.md) . 
+El **elemento EmptyFolderResponseMessage** contiene el estado y el resultado de una sola [solicitud EmptyFolder.](emptyfolder.md) 
   
 ```XML
 <EmptyFolderResponseMessage ResponseClass="">
@@ -37,30 +37,30 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
-|**ResponseClass** <br/> | Describe el estado de una respuesta de [operación de EmptyFolder](emptyfolder-operation.md) .<br/><br/>Los siguientes valores son válidos para este atributo:<br/><br/>-Correcto  <br/>-ADVERTENCIA  <br/>-Error  <br/> |
+|**ResponseClass** <br/> | Describe el estado de una respuesta [de operación EmptyFolder.](emptyfolder-operation.md)<br/><br/>Los siguientes valores son válidos para este atributo:<br/><br/>- Éxito  <br/>- Advertencia  <br/>- Error  <br/> |
    
-#### <a name="responseclass-attribute-values"></a>Valores del atributo ResponseClass
+#### <a name="responseclass-attribute-values"></a>Valores de atributo ResponseClass
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|**Success** <br/> |Describe una solicitud que se ha completado.  <br/> |
-|**Advertencia** <br/> | Describe una solicitud que no se ha procesado. Se puede devolver una advertencia si se produjo un error al procesar un elemento de la solicitud y no se pudieron procesar los siguientes elementos.<br/><br/>Los siguientes son ejemplos de fuentes de advertencias:<br/><br/>-El almacén de Exchange se desconecta durante el lote.  <br/>-Servicios de dominio de Active Directory (AD DS) se desconecta.  <br/>-Se mueven los buzones.  <br/>-La base de datos de mensajes (MDB) se desconecta.  <br/>-Una contraseña ha expirado.  <br/>-Se ha superado la cuota.  <br/> |
-|**Error** <br/> | Describe una solicitud que no se puede cumplir.<br/><br/> Los siguientes son ejemplos de orígenes de errores:  <br/><br/>-Atributos o elementos no válidos  <br/>-Atributos o elementos que están fuera del intervalo  <br/>-Una etiqueta desconocida  <br/>-Un atributo o elemento que no es válido en el contexto  <br/>-Un intento de acceso no autorizado por parte de cualquier cliente  <br/>-Un error del servidor en respuesta a una llamada válida del lado cliente<br/><br/>  La información sobre el error se puede encontrar en los elementos [ResponseCode](responsecode.md) y [MessageText](messagetext.md) .  <br/> |
+|**Success** <br/> |Describe una solicitud que se ha cumplido.  <br/> |
+|**Advertencia** <br/> | Describe una solicitud que no se ha procesado. Se puede devolver una advertencia si se produjo un error mientras se procesaba un elemento de la solicitud y no se pudieron procesar los elementos posteriores.<br/><br/>A continuación se muestran ejemplos de orígenes de advertencias:<br/><br/>- El Exchange se desconecta durante el lote.  <br/>- Servicios de dominio de Active Directory (AD DS) se desconecta.  <br/>- Los buzones se mueven.  <br/>- La base de datos de mensajes (MDB) se desconecta.  <br/>- Una contraseña ha expirado.  <br/>- Se supera una cuota.  <br/> |
+|**Error** <br/> | Describe una solicitud que no se puede cumplir.<br/><br/> A continuación se muestran ejemplos de orígenes de errores:  <br/><br/>- Atributos o elementos no válidos  <br/>- Atributos o elementos que están fuera del intervalo  <br/>- Una etiqueta desconocida  <br/>- Un atributo o elemento que no es válido en el contexto  <br/>- Un intento de acceso no autorizado por cualquier cliente  <br/>- Un error del lado servidor en respuesta a una llamada válida del lado cliente<br/><br/>  Encontrará información sobre el error en los [elementos ResponseCode](responsecode.md) y [MessageText.](messagetext.md)  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
 |[MessageText](messagetext.md) <br/> |Proporciona una descripción de texto del estado de la respuesta.  <br/> |
-|[ResponseCode](responsecode.md) <br/> |Proporciona un código de error que identifica el error específico que ha encontrado la solicitud.  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Actualmente no se usa y está reservado para su uso en el futuro. Contiene el valor de 0.  <br/> |
-|[MessageXml](messagexml.md) <br/> |Proporciona información de respuesta de error adicional.  <br/> |
+|[ResponseCode](responsecode.md) <br/> |Proporciona un código de error que identifica el error específico que encontró la solicitud.  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Actualmente no se usa y está reservado para su uso futuro. Contiene el valor de 0.  <br/> |
+|[MessageXml](messagexml.md) <br/> |Proporciona información adicional de respuesta a errores.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta de una solicitud de servicios web Exchange.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta de una Exchange de servicios web.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -76,12 +76,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Operación EmptyFolder](emptyfolder-operation.md)
 - [Referencia EWS para Exchange](ews-reference-for-exchange.md) 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

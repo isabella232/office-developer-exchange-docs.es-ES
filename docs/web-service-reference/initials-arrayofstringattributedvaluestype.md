@@ -1,23 +1,23 @@
 ---
-title: Iniciales (ArrayOfStringAttributedValuesType)
+title: Initials (ArrayOfStringAttributedValuesType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 060c0cf1-c632-484c-87f5-f577017a7090
-description: El elemento initials especifica una matriz de valores de inicialización y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: 16133192fa1d9ef066e46a181f490248a8197e5b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Initials especifica una matriz de valores iniciales y los identificadores de sus atribuciones de origen para la persona asociada.
+ms.openlocfilehash: fb7362d467a4de37ce65cbe52a2c1f549a4a6e6f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458204"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515603"
 ---
-# <a name="initials-arrayofstringattributedvaluestype"></a>Iniciales (ArrayOfStringAttributedValuesType)
+# <a name="initials-arrayofstringattributedvaluestype"></a>Initials (ArrayOfStringAttributedValuesType)
 
-El elemento **initials** especifica una matriz de valores de inicialización y los identificadores de sus atribuciones de origen para el rol asociado. 
+El **elemento Initials** especifica una matriz de valores iniciales y los identificadores de sus atribuciones de origen para la persona asociada. 
   
 ```XML
 <Initials>
@@ -32,19 +32,19 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[StringAttributedValue](stringattributedvalue.md) <br/> |Especifica una instancia de una matriz de atributos asociada a un elemento de rol.  <br/> |
+|[StringAttributedValue](stringattributedvalue.md) <br/> |Especifica una instancia en una matriz de atributos asociados con un elemento persona.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud **GetPersona** .  <br/> |
+|[Rol](persona.md) <br/> |Especifica un conjunto de datos de persona devueltos por una **solicitud GetPersona.**  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -58,12 +58,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

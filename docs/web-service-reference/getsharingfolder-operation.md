@@ -5,27 +5,27 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetSharingFolder
 api_type:
 - schema
 ms.assetid: 75fee92a-a7f8-4a62-ad2b-17acbaada186
-description: La operación GetSharingFolder obtiene el identificador de la carpeta local de una carpeta compartida especificada.
-ms.openlocfilehash: cf66eb390b0287e89bb8402f26a2e728868a2b18
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación GetSharingFolder obtiene el identificador de carpeta local de una carpeta compartida especificada.
+ms.openlocfilehash: 20ee49b85d026ec2c14794599e0713b9939384eb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460515"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515827"
 ---
 # <a name="getsharingfolder-operation"></a>Operación GetSharingFolder
 
-La operación **GetSharingFolder** obtiene el identificador de la carpeta local de una carpeta compartida especificada. 
+La **operación GetSharingFolder** obtiene el identificador de carpeta local de una carpeta compartida especificada. 
   
 ## <a name="soap-headers"></a>Encabezados SOAP
 
-La operación **GetSharingFolder** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla. 
+La **operación GetSharingFolder** puede usar los encabezados SOAP que se enumeran y describen en la tabla siguiente. 
   
 |**Header**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
@@ -34,9 +34,9 @@ La operación **GetSharingFolder** puede usar los encabezados SOAP que se enumer
    
 ## <a name="getsharingfolder-request-example"></a>Ejemplo de solicitud GetSharingFolder
 
-### <a name="getting-the-local-folder-identifier-by-specifying-the-sharedfolderid-element-of-the-folder-being-shared"></a>Obtener el identificador de la carpeta local especificando el elemento SharedFolderId de la carpeta que se va a compartir
+### <a name="getting-the-local-folder-identifier-by-specifying-the-sharedfolderid-element-of-the-folder-being-shared"></a>Obtener el identificador de carpeta local especificando el elemento SharedFolderId de la carpeta que se comparte
 
-En el ejemplo de código siguiente se muestra cómo crear una solicitud para obtener el identificador de la carpeta local que corresponde a la carpeta que se está compartiendo. La carpeta que se comparte se identifica por la dirección SMTP del buzón de correo que contiene la carpeta compartida y por el elemento [SharedFolderId](sharedfolderid.md) que representa el identificador de dicha carpeta. En este ejemplo, la carpeta que se comparte es propiedad de user1@contoso.com. 
+En el siguiente ejemplo de código se muestra cómo formar una solicitud para obtener el identificador de la carpeta local que corresponde a la carpeta que se está compartindo. La carpeta que se comparte se identifica mediante la dirección SMTP del buzón que contiene la carpeta que se comparte y por el elemento [SharedFolderId](sharedfolderid.md) que representa el identificador de esa carpeta. En este ejemplo, la carpeta que se comparte es propiedad de user1@contoso.com. 
   
 ### <a name="code"></a>Código
 
@@ -59,9 +59,9 @@ En el ejemplo de código siguiente se muestra cómo crear una solicitud para obt
 </soap:Envelope>
 ```
 
-### <a name="getting-the-local-folder-identifier-by-specifying-the-datatype-element-of-the-folder-being-shared"></a>Obtener el identificador de la carpeta local especificando el elemento DataType de la carpeta que se va a compartir
+### <a name="getting-the-local-folder-identifier-by-specifying-the-datatype-element-of-the-folder-being-shared"></a>Obtener el identificador de carpeta local especificando el elemento DataType de la carpeta que se comparte
 
-En el ejemplo de código siguiente se muestra cómo crear una solicitud para obtener el identificador de la carpeta local que corresponde a la carpeta que se está compartiendo. La carpeta que se comparte se identifica por la dirección SMTP del buzón de correo que contiene la carpeta compartida y por el elemento [DataType](datatype.md) que representa el tipo de datos de esa carpeta. En este ejemplo, la carpeta que se comparte es la carpeta contactos que es propiedad de user1@contoso.com. 
+En el siguiente ejemplo de código se muestra cómo formar una solicitud para obtener el identificador de la carpeta local que corresponde a la carpeta que se está compartindo. La carpeta que se comparte se identifica mediante la dirección SMTP del buzón que contiene la carpeta que se está compartindo y por el elemento [DataType](datatype.md) que representa el tipo de datos de esa carpeta. En este ejemplo, la carpeta que se comparte es la carpeta Contactos que es propiedad de user1@contoso.com. 
   
 ### <a name="code"></a>Código
 
@@ -86,13 +86,13 @@ En el ejemplo de código siguiente se muestra cómo crear una solicitud para obt
 
 ### <a name="comments"></a>Comentarios
 
-Para obtener información sobre los valores posibles del elemento **DataType** , vea [DataType](datatype.md).
+Para obtener información sobre los valores posibles del **elemento DataType,** vea [DataType](datatype.md).
   
-## <a name="successful-getsharingfolder-response"></a>Respuesta GetSharingFolder correcta
+## <a name="successful-getsharingfolder-response"></a>Respuesta getSharingFolder correcta
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **GetSharingFolder** . El atributo **ID** del elemento [SharingFolderId](sharingfolderid.md) representa el identificador de la carpeta local en la relación de uso compartido. 
+En el ejemplo siguiente se muestra una respuesta correcta a una **solicitud GetSharingFolder.** El **atributo Id** del elemento [SharingFolderId](sharingfolderid.md) representa el identificador de la carpeta local en la relación de uso compartido. 
   
 ### <a name="code"></a>Código
 
@@ -121,11 +121,11 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **GetS
 </soap:Envelope>
 ```
 
-## <a name="getsharingfolder-error-response"></a>Respuesta de error de GetSharingFolder
+## <a name="getsharingfolder-error-response"></a>Respuesta de error getSharingFolder
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud **GetSharingFolder** . En este ejemplo, el error se produjo porque la solicitud especificó los elementos [SharingFolderId](sharingfolderid.md) y [DataType](datatype.md) . Tenga en cuenta que solo se puede especificar uno de estos dos elementos, pero no ambos. 
+En el ejemplo siguiente se muestra una respuesta de error a una **solicitud GetSharingFolder.** En este ejemplo, se produjo el error porque la solicitud especificaba los [elementos SharingFolderId](sharingfolderid.md) y [DataType.](datatype.md) Tenga en cuenta que solo se puede especificar uno u otro de esos dos elementos, pero no ambos. 
   
 ### <a name="code"></a>Código
 
@@ -155,7 +155,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud **GetS
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
@@ -168,7 +168,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud **GetS
 [GetSharingFolderResponseMessageType](https://msdn.microsoft.com/library/ExchangeWebServices.GetSharingFolderResponseMessageType.aspx)
 
 
-[Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
+[Operaciones ews en Exchange](ews-operations-in-exchange.md)
   
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

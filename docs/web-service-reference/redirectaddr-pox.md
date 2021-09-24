@@ -4,27 +4,27 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 0e9fa6b6-7991-4dc1-a59a-48e5f8e041e4
-description: El elemento RedirectAddr especifica la dirección de correo electrónico que se debe usar para una solicitud de detección automática subsiguiente.
-ms.openlocfilehash: 6bff28001851f421b4c7429770185401f2f0a743
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento RedirectAddr especifica la dirección de correo electrónico que se debe usar para una solicitud de detección automática posterior.
+ms.openlocfilehash: 75db62a84ccce743e73c812082ab9dbbc4fdb1cd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529878"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540597"
 ---
 # <a name="redirectaddr-pox"></a>RedirectAddr (POX)
 
-El elemento **RedirectAddr** especifica la dirección de correo electrónico que se debe usar para una solicitud de detección automática subsiguiente. 
+El **elemento RedirectAddr** especifica la dirección de correo electrónico que se debe usar para una solicitud de detección automática posterior. 
   
-[Detección automática (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[Respuesta (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[Cuenta (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
 [RedirectAddr (POX)](redirectaddr-pox.md)
   
@@ -38,27 +38,27 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de la cuenta del usuario.  <br/> |
+|[Account (POX)](account-pox.md) <br/> |Especifica la configuración de la cuenta para el usuario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa la dirección de correo electrónico que se debe usar para una solicitud de detección automática subsiguiente.
+El valor de texto representa la dirección de correo electrónico que se debe usar para una solicitud de detección automática posterior.
   
 ## <a name="remarks"></a>Comentarios
 
-Si este elemento está presente en la respuesta de detección automática, realice otra solicitud usando el valor de texto del elemento **RedirectAddr** . 
+Si este elemento está presente en la respuesta Detección automática, realice otra solicitud mediante el valor de texto del **elemento RedirectAddr.** 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 02c42828-0d52-4007-bbed-e6571fd31cbe
-description: El elemento OriginalPhoneString especifica el número de teléfono original de un contacto o un rol.
-ms.openlocfilehash: 172a69ec088440ece80a2807b97171ebf81b97d3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento OriginalPhoneString especifica el número de teléfono original de un contacto o persona.
+ms.openlocfilehash: 58a9b16a0cd1c747c8d9034ec81f63d91318e4dd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467042"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514217"
 ---
 # <a name="originalphonestring"></a>OriginalPhoneString
 
-El elemento **OriginalPhoneString** especifica el número de teléfono original de un contacto o un rol. 
+El **elemento OriginalPhoneString** especifica el número de teléfono original de un contacto o persona. 
   
 ```XML
 <OriginalPhoneString></OriginalPhoneString>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **OriginalPhoneString** es el número de teléfono original de un contacto o un rol. 
+El valor de texto del **elemento OriginalPhoneString** es el número de teléfono original de un contacto o persona. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

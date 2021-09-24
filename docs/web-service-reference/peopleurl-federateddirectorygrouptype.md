@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d0b9db28-f9f5-4793-be5c-edd5e4afb0bb
-description: El elemento PeopleUrl (FederatedDirectoryGroupType) está destinado exclusivamente para uso interno.
-ms.openlocfilehash: e6789fa0f683459f226660bdc3c8dbbe1ec206f9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento PeopleUrl (FederatedDirectoryGroupType) está diseñado solo para uso interno.
+ms.openlocfilehash: e329ffc21e78b6c6c461410747bd7e9e7658f626
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529962"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515323"
 ---
 # <a name="peopleurl-federateddirectorygrouptype"></a>PeopleUrl (FederatedDirectoryGroupType)
 
-El elemento **PeopleUrl (FederatedDirectoryGroupType)** está destinado exclusivamente para uso interno. 
+El **elemento PeopleUrl (FederatedDirectoryGroupType)** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,11 +25,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 

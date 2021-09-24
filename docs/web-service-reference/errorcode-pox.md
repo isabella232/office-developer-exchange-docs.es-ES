@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 064d73e4-45b7-4797-828e-9df590830db8
 description: El elemento ErrorCode contiene el código de error de una respuesta de detección automática de errores.
-ms.openlocfilehash: 9dcd681c00aefcfb88f1f8a58be3aa2ccd0bb72b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: e087860c5ca1e3d79c7bad34ae3754bdba6c9091
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460655"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539925"
 ---
 # <a name="errorcode-pox"></a>ErrorCode (POX)
 
-El elemento **ErrorCode** contiene el código de error de una respuesta de detección automática de errores. 
+El **elemento ErrorCode** contiene el código de error de una respuesta de detección automática de errores. 
   
 [Error (POX)](error-pox.md)
   
@@ -34,11 +34,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -48,9 +48,9 @@ Ninguna.
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa el código de error para una respuesta de detección automática de errores.
+El valor de texto representa el código de error de una respuesta de detección automática de errores.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

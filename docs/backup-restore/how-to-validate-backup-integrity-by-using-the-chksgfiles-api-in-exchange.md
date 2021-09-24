@@ -1,43 +1,43 @@
 ---
-title: Validar la integridad de la copia de seguridad mediante la API de CHKSGFILES en Exchange 2013
+title: Validar la integridad de copia de seguridad mediante la API CHKSGFILES en Exchange 2013
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 607cbeb9-0a02-4079-8a4d-34bdeb560224
-description: Descubra cómo usar la API CHKSGFILES para validar una copia de seguridad del almacén de Exchange en Exchange 2013.
-ms.openlocfilehash: c101413793cf3b952d3db3e0f792c8bcf2dd9fc9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Descubra cómo usar la API CHKSGFILES para validar una copia de seguridad del Exchange en Exchange 2013.
+ms.openlocfilehash: 7a12a0a8f66128970a782da50ba59f41767c60d3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44452863"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516233"
 ---
-# <a name="validate-backup-integrity-by-using-the-chksgfiles-api-in-exchange-2013"></a>Validar la integridad de la copia de seguridad mediante la API de CHKSGFILES en Exchange 2013
+# <a name="validate-backup-integrity-by-using-the-chksgfiles-api-in-exchange-2013"></a>Validar la integridad de copia de seguridad mediante la API CHKSGFILES en Exchange 2013
 
-Descubra cómo usar la API CHKSGFILES para validar una copia de seguridad del almacén de Exchange en Exchange 2013.
+Descubra cómo usar la API CHKSGFILES para validar una copia de seguridad del Exchange en Exchange 2013.
   
 **Se aplica a:** Exchange Server 2013 
   
-Durante las operaciones de copia de seguridad administradas por el servicio de instantáneas de volumen (VSS), Exchange Server 2013 no puede leer cada archivo de base de datos en su totalidad y comprobar su integridad de suma de comprobación. Por lo tanto, es posible que desee que la aplicación de copia de seguridad Compruebe la integridad del archivo de registro de transacciones y bases de datos. Se recomienda que la aplicación de copia de seguridad Compruebe la coherencia física del conjunto de instantáneas antes de informar al escritor de Exchange de que se ha completado la copia de seguridad. Después de una copia de seguridad correcta, el almacén de Exchange actualiza los encabezados de las bases de datos de copia de seguridad para reflejar los últimos tiempos de copia de seguridad correcta y quita los registros de transacciones del servidor que ya no son necesarios para revertir desde la última copia de seguridad correcta.
+Durante las operaciones de copia de seguridad administradas por el Servicio de instantáneas de volumen (VSS), Exchange Server 2013 no puede leer todos los archivos de base de datos en su totalidad y comprobar su integridad de suma de comprobación. Por lo tanto, es posible que desee que la aplicación de copia de seguridad compruebe la integridad de la base de datos y el archivo de registro de transacciones. Se recomienda que la aplicación de copia de seguridad compruebe la coherencia física del conjunto de instantáneas antes de informar al Exchange que la copia de seguridad se ha completado. Después de realizar una copia de seguridad correcta, el almacén de Exchange actualiza los encabezados de las bases de datos de copia de seguridad para reflejar los últimos tiempos de copia de seguridad correctos y quita los registros de transacciones del servidor que ya no son necesarios para avanzar desde la última copia de seguridad correcta.
   
-## <a name="prerequisites-for-validating-backup-integrity"></a>Requisitos previos para validar la integridad de la copia de seguridad
+## <a name="prerequisites-for-validating-backup-integrity"></a>Requisitos previos para validar la integridad de copia de seguridad
 
 Para que la aplicación pueda validar la integridad de la copia de seguridad, debe tener acceso a lo siguiente:
   
-- Archivos de la copia de seguridad del almacén de Exchange.
+- Archivos de la copia de seguridad Exchange almacén.
 - Una versión de Visual Studio a partir de Visual Studio 2010.
-- La biblioteca CHKSGFILES y los archivos de encabezado. Puede descargar los archivos de la biblioteca y los encabezados desde el [centro de descarga de Microsoft](https://www.microsoft.com/download/details.aspx?id=36802).
+- La biblioteca CHKSGFILES y los archivos de encabezado. Puede descargar los archivos de biblioteca y encabezado desde el [Centro de descarga de Microsoft](https://www.microsoft.com/download/details.aspx?id=36802).
     
-## <a name="validate-backup-integrity"></a>Validar la integridad de la copia de seguridad
+## <a name="validate-backup-integrity"></a>Validar integridad de copia de seguridad
 
-El siguiente procedimiento describe cómo validar la integridad de los datos en la aplicación de copia de seguridad y restauración.
+En el siguiente procedimiento se describe cómo validar la integridad de los datos en la aplicación de copia de seguridad y restauración.
   
-### <a name="to-validate-backup-integrity"></a>Para validar la integridad de la copia de seguridad
+### <a name="to-validate-backup-integrity"></a>Para validar la integridad de copia de seguridad
 
-1. Cree una nueva instancia de la clase **función cchksgfiles** . 
+1. Cree una nueva instancia de la **clase CChkSGFiles.** 
    
    ```cpp
    CCheckSGFiles::ERRerr = CCheckSGFiles::errSuccess;
@@ -51,9 +51,9 @@ El siguiente procedimiento describe cómo validar la integridad de los datos en 
    }
    ```
 
-   En las primeras líneas de código se crea un objeto error y se establece su valor inicial en correcto, y se crea un objeto que comprueba la validez de la base de datos. A continuación, la [función función cchksgfiles. New](cchksgfiles-new-function.md) crea una nueva instancia de la clase **función cchksgfiles** Una comprobación rápida del nuevo objeto indica si se produjeron problemas al crear la nueva instancia. 
+   Las primeras líneas de código crean un objeto de error y establecen su valor inicial en correcto y crean un objeto que comprueba la validez de la base de datos. A continuación, la función [CChkSGFiles.New](cchksgfiles-new-function.md) crea una nueva instancia de la **clase CChkSGFiles.** Una comprobación rápida del nuevo objeto indica si se produjeron problemas cuando se creó la nueva instancia. 
     
-2. Inicialice el objeto **función cchksgfiles** . 
+2. Inicializar **el objeto CChkSGFiles.** 
    
    ```cpp
    Call( pcchecksgfiles->ErrInit(
@@ -63,9 +63,9 @@ El siguiente procedimiento describe cómo validar la integridad de los datos en 
    wszBaseName ) );
    ```
    
-   Para obtener más información acerca de los parámetros, consulte [función función cchksgfiles. ErrInit](cchksgfiles-errinit-function.md).
+   Para obtener más información acerca de los parámetros, vea [la función CChkSGFiles.ErrInit](cchksgfiles-errinit-function.md).
    
-3. Use la [función función cchksgfiles. ErrCheckDbHeaders](cchksgfiles-errcheckdbheaders-function.md) para validar la integridad de la base de datos comprobando los encabezados de la base de datos.
+3. Use la [función CChkSGFiles.ErrCheckDbHeaders](cchksgfiles-errcheckdbheaders-function.md) para validar la integridad de la base de datos comprobando los encabezados de la base de datos.
    
    ```cpp
    err = pcchecksgfiles->ErrCheckDbHeaders(
@@ -86,19 +86,19 @@ El siguiente procedimiento describe cómo validar la integridad de los datos en 
    }
    ```
    
-   Para obtener más información acerca de los parámetros, consulte [función función cchksgfiles. ErrCheckDbHeaders](cchksgfiles-errcheckdbheaders-function.md).
+   Para obtener más información acerca de los parámetros, vea [la función CChkSGFiles.ErrCheckDbHeaders](cchksgfiles-errcheckdbheaders-function.md).
    
-4. Controle los errores y use la [función función cchksgfiles. Delete](cchksgfiles-delete-function.md) para quitar la clase **función cchksgfiles** de la memoria. 
+4. Controlar errores y usar la función [CChkSGFiles.Delete](cchksgfiles-delete-function.md) para quitar la clase **CChkSGFiles** de la memoria. 
    
    ```cpp
    HandleError:
    CCheckSGFiles::Delete( pcchecksgfiles );  
    ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Referencia de clase función cchksgfiles](cchksgfiles-class-reference.md)
-- [Creación de aplicaciones de copia de seguridad y restauración para Exchange 2013](build-backup-and-restore-applications-for-exchange-2013.md)
+- [Referencia de la clase CChkSGFiles](cchksgfiles-class-reference.md)
+- [Crear aplicaciones de copia de seguridad y restauración para Exchange 2013](build-backup-and-restore-applications-for-exchange-2013.md)
 - [Conceptos de copia de seguridad y restauración para Exchange 2013](backup-and-restore-concepts-for-exchange-2013.md)
     
 

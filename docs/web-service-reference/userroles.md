@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: be003e12-3496-468d-a61c-48af0b819654
-description: El elemento UserRoles especifica las funciones de usuario que el usuario que realiza la llamada o el usuario en el que actúa la aplicación de socio de llamada desea aplicar a la llamada actual.
-ms.openlocfilehash: 5155b82781321b16d1b58fdcaffe7b8cf2372717
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento UserRoles especifica los roles de usuario que el usuario que realiza la llamada o el usuario en el que actúa la aplicación de socio de llamada quiere aplicar a la llamada actual.
+ms.openlocfilehash: c861cda9a010e909c9ecc5303ddc637a14bcb824
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467133"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59514980"
 ---
 # <a name="userroles"></a>UserRoles
 
-El elemento **UserRoles** especifica las funciones de usuario que el usuario que realiza la llamada o el usuario en el que actúa la aplicación de socio de llamada desea aplicar a la llamada actual. 
+El **elemento UserRoles** especifica los roles de usuario que el usuario que realiza la llamada o el usuario en el que actúa la aplicación de socio de llamada quiere aplicar a la llamada actual. 
   
 ```XML
 <UserRoles>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

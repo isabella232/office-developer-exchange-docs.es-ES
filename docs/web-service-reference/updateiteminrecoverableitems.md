@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c49816b1-dbb5-4716-86c7-30790e86f30e
 description: El elemento UpdateItemInRecoverableItems especifica una solicitud para actualizar un elemento en elementos recuperables.
-ms.openlocfilehash: f3dae55097c613b84a80795185baad559e312b90
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8d3ffdd2d3f60e48514ae1a9d7cb4ca4e1bf06ac
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459787"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515022"
 ---
 # <a name="updateiteminrecoverableitems"></a>UpdateItemInRecoverableItems
 
-El elemento **UpdateItemInRecoverableItems** especifica una solicitud para actualizar un elemento en elementos recuperables. 
+El **elemento UpdateItemInRecoverableItems** especifica una solicitud para actualizar un elemento en elementos recuperables. 
   
 ```XML
 <UpdateItemInRecoverableItems>
@@ -35,11 +35,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Itemid](itemid.md)  |  [Actualizaciones (elemento)](updates-item.md)  |  [Datos adjuntos](attachments-ex15websvcsotherref.md)  |  [MakeItemImmutable](makeitemimmutable.md)
+[ItemId](itemid.md)  |  [Actualizaciones (elemento)](updates-item.md)  |  [Datos adjuntos](attachments-ex15websvcsotherref.md)  |  [MakeItemImmutable](makeitemimmutable.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

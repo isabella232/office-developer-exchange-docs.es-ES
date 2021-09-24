@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateItem
 api_type:
 - schema
 ms.assetid: 298fdd71-a83d-4407-9728-4f0a8e2d857c
-description: La operación UpdateItem se usa para actualizar las propiedades de los elementos de contacto en el almacén de Exchange.
-ms.openlocfilehash: 66e1b91ea3154d8a501339aed7b398970e8f5392
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación UpdateItem se usa para actualizar las propiedades del elemento de contacto en el Exchange almacén.
+ms.openlocfilehash: 3d9c42d941be45f9577efb53e30bc2c299370527
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459829"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515029"
 ---
 # <a name="updateitem-operation-contact"></a>Operación UpdateItem (contacto)
 
-La operación UpdateItem se usa para actualizar las propiedades de los elementos de contacto en el almacén de Exchange.
+La operación UpdateItem se usa para actualizar las propiedades del elemento de contacto en el Exchange almacén.
   
-## <a name="updateitem-contact-request-example"></a>Ejemplo de solicitud de UpdateItem (contact)
+## <a name="updateitem-contact-request-example"></a>Ejemplo de solicitud UpdateItem (Contact)
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-En el ejemplo de código siguiente se muestra cómo actualizar la dirección de correo electrónico de un contacto.
+En el siguiente ejemplo de código se muestra cómo actualizar la dirección de correo electrónico de un contacto.
   
 ### <a name="code"></a>Código
 
@@ -62,11 +62,11 @@ En el ejemplo de código siguiente se muestra cómo actualizar la dirección de 
 
 ### <a name="comments"></a>Comentarios
 
-El identificador de elemento se ha abreviado para preservar la legibilidad.
+El identificador del elemento se ha acortado para conservar la legibilidad.
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [UpdateItem](updateitem.md)
     
@@ -76,23 +76,23 @@ Los siguientes elementos se usan en la solicitud:
     
 - [ItemId](itemid.md)
     
-- [Actualizaciones (elemento)](updates-item.md)
+- [Updates (Elemento)](updates-item.md)
     
 - [SetItemField](setitemfield.md)
     
 - [IndexedFieldURI](indexedfielduri.md)
     
-- [Contacto](contact.md)
+- [Contact](contact.md)
     
 - [EmailAddresses](emailaddresses.md)
     
-- [Entrada (EmailAddress)](entry-emailaddress.md)
+- [Entry (EmailAddress)](entry-emailaddress.md)
     
-## <a name="successful-updateitem-contact-response"></a>Respuesta de UpdateItem (contacto) correcta
+## <a name="successful-updateitem-contact-response"></a>Respuesta correcta de UpdateItem (contacto)
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-En el ejemplo de código siguiente se muestra una respuesta UpdateItem correcta.
+En el siguiente ejemplo de código se muestra una respuesta UpdateItem correcta.
   
 ### <a name="code"></a>Código
 
@@ -126,9 +126,9 @@ En el ejemplo de código siguiente se muestra una respuesta UpdateItem correcta.
 
 ### <a name="comments"></a>Comentarios
 
-El identificador de elemento se ha abreviado para preservar la legibilidad.
+El identificador del elemento se ha acortado para conservar la legibilidad.
   
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -142,17 +142,17 @@ En la respuesta se usan los siguientes elementos:
     
 - [ResponseCode](responsecode.md)
     
-- [Elementos (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
-- [Contacto](contact.md)
+- [Contact](contact.md)
     
 - [ItemId](itemid.md)
     
-## <a name="invalid-updateitem-contact-request-example"></a>Ejemplo de solicitud de UpdateItem (contacto) no válida
+## <a name="invalid-updateitem-contact-request-example"></a>Ejemplo de solicitud UpdateItem (Contact) no válida
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-En el ejemplo de código siguiente se muestra una solicitud no válida.
+En el siguiente ejemplo de código se muestra una solicitud no válida.
   
 ### <a name="code"></a>Código
 
@@ -187,13 +187,13 @@ En el ejemplo de código siguiente se muestra una solicitud no válida.
 
 ### <a name="comments"></a>Comentarios
 
-El identificador de elemento se ha abreviado para preservar la legibilidad.
+El identificador del elemento se ha acortado para conservar la legibilidad.
   
-## <a name="updateitem-contact-error-response"></a>Respuesta de error de UpdateItem (contacto)
+## <a name="updateitem-contact-error-response"></a>Respuesta de error UpdateItem (Contacto)
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El siguiente ejemplo de código muestra una respuesta de error a una solicitud de UpdateItem (contacto).
+En el siguiente ejemplo de código se muestra una respuesta de error a una solicitud UpdateItem (Contact).
   
 ### <a name="code"></a>Código
 
@@ -220,9 +220,9 @@ El siguiente ejemplo de código muestra una respuesta de error a una solicitud d
 
 ### <a name="comments"></a>Comentarios
 
-Algunos elementos que se usan en el cuerpo SOAP de una respuesta de error debido a un error de validación de esquema no se definen en los esquemas de mensajes o tipos. El elemento **detail** contiene información sobre el error. El elemento [ResponseCode](responsecode.md) contiene el código de error. El elemento [Message](message-ex15websvcsotherref.md) contiene una explicación del error, si hay alguno disponible. El elemento **line** describe el número de línea en el que se produjo el error de validación de esquema. El elemento **Position** describe la posición desde el carácter más a la izquierda del documento XML. 
+Algunos elementos que se usan en el cuerpo SOAP de una respuesta de error causada por un error de validación de esquema no se definen en los esquemas de mensajes o tipos. El **elemento detail** contiene información sobre el error. El [elemento ResponseCode](responsecode.md) contiene el código de error. El [elemento Message](message-ex15websvcsotherref.md) contiene una explicación del error, si hay uno disponible. El **elemento Line** describe el número de línea donde se produjo el error de validación del esquema. El **elemento Position** describe la posición desde el carácter más a la izquierda del documento XML. 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

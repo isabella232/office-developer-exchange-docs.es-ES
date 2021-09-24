@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 3e5cf65c-8d0b-4fd9-8207-56c07f914acd
 description: El elemento ArrayOfUserResponse contiene una matriz de elementos UserResponse (SOAP).
-ms.openlocfilehash: fb14b6cd714a0561e9c8e17bd1779d955ba16dfc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f130d1c7c8e227ca295b1d99a023fb27e6995c63
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466013"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59540275"
 ---
 # <a name="arrayofuserresponse-soap"></a>ArrayOfUserResponse (SOAP)
 
-El elemento **ArrayOfUserResponse** contiene una matriz de elementos [UserResponse (SOAP)](userresponse-soap.md) . 
+El **elemento ArrayOfUserResponse** contiene una matriz [de elementos UserResponse (SOAP).](userresponse-soap.md) 
   
 ```XML
 <ArrayOfUserResponse>
@@ -33,7 +33,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -43,11 +43,11 @@ Ninguna.
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguna.
+Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguna.
+Ninguno.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -55,10 +55,10 @@ Ninguna.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Operación GetUserSettings (SOAP)](getusersettings-operation-soap.md)
 

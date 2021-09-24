@@ -1,23 +1,23 @@
 ---
-title: Token (cadena)
+title: Token (Cadena)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f77af99d-5c77-4f46-851e-261faa03f68a
-description: El elemento token contiene un token de refinador de búsqueda.
-ms.openlocfilehash: b4a819be260e9ba4eecf329011241c9c2b89f332
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Token contiene un token de refinador de búsqueda.
+ms.openlocfilehash: 8a0e2db3fbb19296573224a97bd78dd524a4ef39
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462825"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59515162"
 ---
-# <a name="token-string"></a>Token (cadena)
+# <a name="token-string"></a>Token (Cadena)
 
-El elemento **token** contiene un token de refinador de búsqueda. 
+El **elemento Token** contiene un token de refinador de búsqueda. 
   
 ```XML
 <Token></Token>
@@ -30,19 +30,19 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Refinador](refiner.md)
+[Refiner](refiner.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **token** es un token de refinador de búsqueda para una búsqueda de detección. 
+El valor de texto del **elemento Token** es un token de refinador de búsqueda para una búsqueda de detección. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 
