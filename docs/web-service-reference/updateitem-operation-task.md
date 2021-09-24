@@ -5,43 +5,43 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateItem
 api_type:
 - schema
 ms.assetid: b0a7f114-d040-40eb-a8f3-05ea6489e472
-description: La operación UpdateItem se usa para actualizar las propiedades de los elementos de tarea en el almacén de Exchange.
-ms.openlocfilehash: 0041af114d11fd9577037dd154e40b84e8483c35
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación UpdateItem se usa para actualizar las propiedades del elemento de tarea en el Exchange de tareas.
+ms.openlocfilehash: a268b4b281f149f14bc6c48a774fc9071093ebb5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459808"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510753"
 ---
 # <a name="updateitem-operation-task"></a>Operación UpdateItem (tarea)
 
-La operación UpdateItem se usa para actualizar las propiedades de los elementos de tarea en el almacén de Exchange.
+La operación UpdateItem se usa para actualizar las propiedades del elemento de tarea en el Exchange de tareas.
   
 ## <a name="remarks"></a>Comentarios
 
-No puede usar los servicios web Exchange para enviar solicitudes de tareas. Los servicios Web de Exchange pueden devolver solicitudes de tareas creadas por MicrosoftOfficeOutlook. Si ya se ha enviado una solicitud de tarea, una solicitud para actualizar la tarea devolverá un error.
+No puede usar Exchange Web Services para enviar solicitudes de tareas. Exchange Los servicios web pueden devolver solicitudes de tareas creadas por MicrosoftOfficeOutlook. Si ya se ha enviado una solicitud de tarea, una solicitud para actualizar la tarea devolverá un error.
   
-## <a name="updating-the-current-occurrence-of-a-recurring-task"></a>Actualización de la ocurrencia actual de una tarea recurrente
+## <a name="updating-the-current-occurrence-of-a-recurring-task"></a>Actualización de la repetición actual de una tarea periódica
 
-El resultado de una operación UpdateItem en tareas periódicas difiere del resultado de la operación UpdateItem en una sola tarea recurrente. Los cambios en una ocurrencia de una tarea repetitiva provocan que las tareas de uso único se generen cuando se realicen las siguientes actualizaciones:
+El resultado de una operación UpdateItem en tareas periódicas difiere del resultado de la operación UpdateItem en una sola tarea no recurrente. Los cambios en una repetición de una tarea periódica hacen que las tareas únicas se generen cuando se realicen las siguientes actualizaciones:
   
-1. La propiedad status de una tarea regenerada o nonregenerating recurrente se establece en **completada**.
+1. La propiedad status de una tarea recurrente regeneradora o no generadora se establece en **Completed**.
     
-2. Se cambia la fecha de inicio o la fecha de finalización de una tarea periódica nonregenerating.
+2. Se cambia la fecha de inicio o la fecha de finalización de una tarea recurrente no generadora.
     
-Por ejemplo, si una solicitud de **UpdateItem** establece el valor completado de una tarea recurrente en **true**, el **UpdateItemResponse** incluirá un nuevo identificador y changekey que representan una tarea de un solo uso recién creada. El identificador que se incluyó en la solicitud sigue siendo válido y la tarea recurrente representada por ese identificador se ha actualizado para representar la siguiente ocurrencia. La ChangeKey que se incluyó en la solicitud ya no es válida porque se ha actualizado la tarea repetitiva. 
+Por ejemplo, si una solicitud **UpdateItem** establece el valor Completado de una tarea periódica en **true**, **UpdateItemResponse** incluirá un nuevo Identificador y ChangeKey que representan una tarea única recién creada. El identificador que se incluyó en la solicitud sigue siendo válido y la tarea periódica representada por ese identificador se ha actualizado para representar la siguiente repetición. La clave de cambio que se incluyó en la solicitud ya no es válida porque se ha actualizado la tarea periódica. 
   
-Puede usar la [operación GetItem](getitem-operation.md) para obtener el último **changekey** de la tarea repetitiva. 
+Puede usar la operación [GetItem para](getitem-operation.md) obtener el **changekey** más reciente para la tarea periódica. 
   
-Para las tareas no periódicas o para la última repetición de una tarea repetitiva, la respuesta UpdateItem devuelve el mismo **identificador** que se pasó y devuelve el **changekey**actualizado asociado.
+Para las tareas no recurrentes o para la última aparición de una tarea periódica, la respuesta UpdateItem devuelve el mismo **identificador** que se le pasó y devuelve el changekey actualizado **asociado.**
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MovedEvent
 api_type:
 - schema
 ms.assetid: 572f8b40-dfa8-47bc-b0c1-e1a7138506fd
-description: El elemento MovedEvent representa un evento en el que se mueve un elemento o una carpeta de una carpeta principal a otra carpeta principal.
-ms.openlocfilehash: 1f8fb57dba7edb769fe0dd658d89c032dccf8c5f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento MovedEvent representa un evento en el que se mueve un elemento o carpeta de una carpeta primaria a otra carpeta primaria.
+ms.openlocfilehash: 4e0795fc3f335139e22fb51a4cf215a870ec62c6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530411"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518137"
 ---
 # <a name="movedevent"></a>MovedEvent
 
-El elemento **MovedEvent** representa un evento en el que se mueve un elemento o una carpeta de una carpeta principal a otra carpeta principal. 
+El **elemento MovedEvent** representa un evento en el que se mueve un elemento o carpeta de una carpeta primaria a otra carpeta primaria. 
   
 ```xml
 <MovedEvent>
@@ -54,19 +54,19 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Watermark](watermark.md) <br/> |Representa un marcador de eventos en la tabla de eventos del buzón.  <br/> |
-|[Marca](timestamp.md) <br/> |Representa la marca de hora de un evento de buzón de carpeta o elemento de movimiento.  <br/> |
+|[Watermark](watermark.md) <br/> |Representa un marcador de eventos en la tabla de eventos de buzón.  <br/> |
+|[TimeStamp](timestamp.md) <br/> |Representa la marca de tiempo de un evento de buzón de correo de elemento de movimiento o carpeta.  <br/> |
 |[FolderId](folderid.md) <br/> |Representa el identificador de la carpeta movida.  <br/> |
-|[ItemId](itemid.md) <br/> |Representa el identificador del elemento que se ha movido.  <br/> |
-|[ParentFolderId](parentfolderid.md) <br/> |Representa el identificador de la carpeta que contiene el elemento o la carpeta que se ha movido.  <br/> |
-|[OldFolderId](oldfolderid.md) <br/> |Contiene el identificador de la carpeta original antes de que se moviera o se copiara.  <br/> |
-|[OldItemId](olditemid.md) <br/> |Contiene el identificador único del elemento original antes de que se moviera.  <br/> |
+|[ItemId](itemid.md) <br/> |Representa el identificador del elemento movido.  <br/> |
+|[ParentFolderId](parentfolderid.md) <br/> |Representa el identificador de la carpeta que contiene el elemento o carpeta movido.  <br/> |
+|[OldFolderId](oldfolderid.md) <br/> |Contiene el identificador de carpeta de la carpeta original antes de moverla o copiarla.  <br/> |
+|[OldItemId](olditemid.md) <br/> |Contiene el identificador único del elemento original antes de moverlo.  <br/> |
 |[OldParentFolderId](oldparentfolderid.md) <br/> |Contiene el identificador de la carpeta principal original de un elemento o carpeta que se movió.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
@@ -77,20 +77,20 @@ Ninguna.
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Operación subscribe](subscribe-operation.md) 
+- [Operación de suscripción](subscribe-operation.md) 
 - [Operación GetEvents](getevents-operation.md) 
-- [Operación unsubscribe](unsubscribe-operation.md)
+- [Operación Darse de baja](unsubscribe-operation.md)
 

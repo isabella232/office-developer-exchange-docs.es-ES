@@ -1,30 +1,30 @@
 ---
-title: base64FolderId (servicio Web de mensajería unificada)
+title: base64FolderId (servicio web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - base64FolderId
 api_type:
 - schema
 ms.assetid: 662f8f2f-49a7-4c7a-9065-98a02a49cfcd
-description: El elemento base64FolderId contiene el identificador de la carpeta que se va a especificar como carpeta de correo electrónico predeterminada desde la que la mensajería unificada Lee los mensajes a través del teléfono en una solicitud SetTelephoneAccessFolderEmail (servicio Web de mensajería unificada).
-ms.openlocfilehash: ea31c7a0f93188e563bf95c4a3e6e91f0866746c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento base64FolderId contiene el identificador de la carpeta que se va a especificar como carpeta de correo electrónico predeterminada desde la que la mensajería unificada lee mensajes por teléfono en una solicitud de operación SetTelephoneAccessFolderEmail (servicio web de mensajería unificada).
+ms.openlocfilehash: 149ad55d0ab09f57b0dc3ace7eb0e17c96265e3f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458050"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518941"
 ---
-# <a name="base64folderid-um-web-service"></a>base64FolderId (servicio Web de mensajería unificada)
+# <a name="base64folderid-um-web-service"></a>base64FolderId (servicio web de mensajería unificada)
 
-El elemento **base64FolderId** contiene el identificador de la carpeta que se va a especificar como carpeta de correo electrónico predeterminada desde la que la mensajería unificada Lee los mensajes a través del teléfono en una solicitud [SetTelephoneAccessFolderEmail (servicio Web de mensajería unificada)](settelephoneaccessfolderemail-operation-um-web-service.md) . 
+El **elemento base64FolderId** contiene el identificador de la carpeta que se va a especificar como carpeta de correo electrónico predeterminada desde la que la mensajería unificada lee mensajes por teléfono en una solicitud de operación [SetTelephoneAccessFolderEmail (servicio web](settelephoneaccessfolderemail-operation-um-web-service.md) de mensajería unificada). 
   
-[SetTelephoneAccessFolderEmail (servicio Web de mensajería unificada)](settelephoneaccessfolderemail-um-web-service.md)
+[SetTelephoneAccessFolderEmail (servicio web de mensajería unificada)](settelephoneaccessfolderemail-um-web-service.md)
   
-[base64FolderId (servicio Web de mensajería unificada)](base64folderid-um-web-service.md)
+[base64FolderId (servicio web de mensajería unificada)](base64folderid-um-web-service.md)
   
 ```xml
 <base64FolderId/>
@@ -41,13 +41,13 @@ Ninguno
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SetTelephoneAccessFolderEmail (servicio Web de mensajería unificada)](settelephoneaccessfolderemail-um-web-service.md) <br/> |Define la solicitud para establecer la carpeta de correo electrónico de acceso telefónico.  <br/> |
+|[SetTelephoneAccessFolderEmail (servicio web de mensajería unificada)](settelephoneaccessfolderemail-um-web-service.md) <br/> |Define la solicitud para establecer la carpeta de correo electrónico de acceso telefónico.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -55,7 +55,7 @@ Se requiere un valor de texto. El valor de texto representa el identificador MAP
   
 ## <a name="remarks"></a>Comentarios
 
-Para establecer la carpeta de correo electrónico de acceso telefónico, use la [operación SetTelephoneAccessFolderEmail (servicio Web de mensajería unificada)](settelephoneaccessfolderemail-operation-um-web-service.md).
+Para establecer la carpeta de correo electrónico de acceso telefónico, use la [operación SetTelephoneAccessFolderEmail (servicio web de](settelephoneaccessfolderemail-operation-um-web-service.md)mensajería unificada).
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -63,16 +63,16 @@ Para establecer la carpeta de correo electrónico de acceso telefónico, use la 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-[SetTelephoneAccessFolderEmail (servicio Web de mensajería unificada)](settelephoneaccessfolderemail-um-web-service.md)
+[SetTelephoneAccessFolderEmail (servicio web de mensajería unificada)](settelephoneaccessfolderemail-um-web-service.md)
   
-[Operación SetTelephoneAccessFolderEmail (servicio Web de mensajería unificada)](settelephoneaccessfolderemail-operation-um-web-service.md)
+[Operación SetTelephoneAccessFolderEmail (servicio web de mensajería unificada)](settelephoneaccessfolderemail-operation-um-web-service.md)
   
 [Operación FindFolder](findfolder-operation.md)
   

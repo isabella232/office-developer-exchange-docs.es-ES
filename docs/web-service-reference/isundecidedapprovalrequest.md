@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 90841617-3b83-4124-8125-0293c9470f4a
 description: El elemento IsUndecidedApprovalRequest especifica si se ha actuado en un mensaje de solicitud de aprobación.
-ms.openlocfilehash: 0949cf64b8583c4b3fa5a1700475f01cc480f69f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 5204793490015bd2999322c0f029445c7df91e02
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458176"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511416"
 ---
 # <a name="isundecidedapprovalrequest"></a>IsUndecidedApprovalRequest
 
-El elemento **IsUndecidedApprovalRequest** especifica si se ha actuado en un mensaje de solicitud de aprobación. 
+El **elemento IsUndecidedApprovalRequest** especifica si se ha actuado en un mensaje de solicitud de aprobación. 
   
 ```XML
 <IsUndecidedApprovalRequest> true | false </IsUndecidedApprovalRequest>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **IsUndecidedApprovalRequest** es **true** si no se ha actuado en un mensaje de solicitud de aprobación. Un valor de **false** indica que se ha decidido la solicitud de aprobación. 
+El valor de texto del **elemento IsUndecidedApprovalRequest** es **true** si no se ha actuado en un mensaje de solicitud de aprobación. Un valor de **false** indica que se ha decidido la solicitud de aprobación. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,15 +56,15 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
 [ApprovalRequestData](approvalrequestdata.md)
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

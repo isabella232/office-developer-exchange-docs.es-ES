@@ -1,37 +1,37 @@
 ---
-title: Operación de UpdateInboxRules
+title: Operación UpdateInboxRules
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateInboxRules
 api_type:
 - schema
 ms.assetid: f982a237-471e-45c5-a2b5-468cfc53150b
-description: La operación UpdateInboxRules actualiza las reglas de la bandeja de entrada del usuario autenticado mediante la aplicación de las operaciones especificadas. UpdateInboxRules se usa para crear una regla de bandeja de entrada, para establecer una regla de bandeja de entrada o para eliminar una regla de bandeja de entrada.
-ms.openlocfilehash: a6ced4be25c6fe4649ad649ba01194791548bf67
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación UpdateInboxRules actualiza las reglas de la Bandeja de entrada del usuario autenticado aplicando las operaciones especificadas. UpdateInboxRules se usa para crear una regla de bandeja de entrada, para establecer una regla de bandeja de entrada o para eliminar una regla de bandeja de entrada.
+ms.openlocfilehash: 08f46219bcb01f5f1c9d69cfaa8b4934e82ff5bd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44531003"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510718"
 ---
-# <a name="updateinboxrules-operation"></a>Operación de UpdateInboxRules
+# <a name="updateinboxrules-operation"></a>Operación UpdateInboxRules
 
-La operación UpdateInboxRules actualiza las reglas de la bandeja de entrada del usuario autenticado mediante la aplicación de las operaciones especificadas. **UpdateInboxRules** se usa para crear una regla de bandeja de entrada, para establecer una regla de bandeja de entrada o para eliminar una regla de bandeja de entrada. 
+La operación UpdateInboxRules actualiza las reglas de la Bandeja de entrada del usuario autenticado aplicando las operaciones especificadas. **UpdateInboxRules** se usa para crear una regla de bandeja de entrada, para establecer una regla de bandeja de entrada o para eliminar una regla de bandeja de entrada. 
   
-Cuando se usa la operación **UpdateInboxRules** , servicios web Exchange elimina las reglas de envío del lado cliente. Las reglas de envío del lado cliente se almacenan en el cliente en el Mensaje de información asociada de carpetas (FAI) de la regla y en ningún otro lugar. EWS elimina este mensaje FAI de la regla de manera predeterminada, basándose en la expectativa de que Outlook volverá a crearlo. En cambio, Outlook no puede volver a crear reglas que tampoco existen como una regla extendida, y las reglas de envío del lado cliente no existen como reglas extendidas. Como resultado, estas reglas se pierden. Le sugerimos que considere esta posibilidad al diseñar su solución. 
+Cuando se usa la **operación UpdateInboxRules,** Exchange Web Services elimina las reglas de envío del lado cliente. Las reglas de envío del lado cliente se almacenan en el cliente en el Mensaje de información asociada de carpetas (FAI) de la regla y en ningún otro lugar. EWS elimina este mensaje FAI de la regla de manera predeterminada, basándose en la expectativa de que Outlook volverá a crearlo. En cambio, Outlook no puede volver a crear reglas que tampoco existen como una regla extendida, y las reglas de envío del lado cliente no existen como reglas extendidas. Como resultado, estas reglas se pierden. Le sugerimos que considere esta posibilidad al diseñar su solución. 
   
-## <a name="updateinboxrules-create-rule-request-example"></a>Ejemplo de solicitud UpdateInboxRules (Create Rule)
+## <a name="updateinboxrules-create-rule-request-example"></a>Ejemplo de solicitud UpdateInboxRules (Crear regla)
 
-Puede usar los servicios web Exchange para crear una regla de bandeja de entrada en el buzón de un usuario en el almacén de Exchange. Use el elemento [UpdateInboxRules](updateinboxrules.md) junto con el elemento [CreateRuleOperation](createruleoperation.md) para crear una regla. 
+Puede usar Exchange Web Services para crear una regla de bandeja de entrada en el buzón de un usuario en el Exchange almacén. Use el [elemento UpdateInboxRules](updateinboxrules.md) junto con el [elemento CreateRuleOperation](createruleoperation.md) para crear una regla. 
   
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El cliente crea el XML de la solicitud y lo envía al servidor.
+El cliente construye el XML de solicitud y lo envía al servidor.
   
 ### <a name="code"></a>Código
 
@@ -75,11 +75,11 @@ El cliente crea el XML de la solicitud y lo envía al servidor.
 
 ### <a name="comments"></a>Comentarios
 
-En este ejemplo se crea una regla que moverá un mensaje de correo electrónico a la carpeta correo electrónico no deseado si el asunto del correo electrónico contiene una cadena que es igual a "interesante".
+En este ejemplo se crea una regla que moverá un mensaje de correo electrónico a la carpeta correo no deseado si el asunto del correo electrónico contiene una cadena que es igual a "Interesante".
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-La solicitud **UpdateInboxRules** incluye los siguientes elementos: 
+La **solicitud UpdateInboxRules** incluye los siguientes elementos: 
   
 - [MailboxSmtpAddress](mailboxsmtpaddress.md)
     
@@ -87,13 +87,13 @@ La solicitud **UpdateInboxRules** incluye los siguientes elementos:
     
 - [Operations](operations.md)
     
-El elemento [Operations](operations.md) contiene el elemento [CreateRuleOperation](createruleoperation.md) para crear una regla. 
+El [elemento Operations](operations.md) contiene el elemento [CreateRuleOperation](createruleoperation.md) para crear una regla. 
   
-## <a name="updateinboxrules-create-rule-response-example"></a>Ejemplo de respuesta UpdateInboxRules (Create Rule)
+## <a name="updateinboxrules-create-rule-response-example"></a>Ejemplo de respuesta UpdateInboxRules (Crear regla)
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El siguiente ejemplo del cuerpo del Protocolo simple de acceso a objetos (SOAP) muestra una respuesta correcta a la solicitud **UpdateInboxRules** que crea una regla. 
+El siguiente ejemplo de cuerpo del Protocolo simple de acceso a objetos (SOAP) muestra una respuesta correcta a la solicitud **UpdateInboxRules** que crea una regla. 
   
 ### <a name="code"></a>Código
 
@@ -121,7 +121,7 @@ El siguiente ejemplo del cuerpo del Protocolo simple de acceso a objetos (SOAP) 
 
 ```
 
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -133,13 +133,13 @@ En la respuesta se usan los siguientes elementos:
     
 - [ResponseCode](responsecode.md)
     
-## <a name="updateinboxrules-set-rule-request-example"></a>Ejemplo de solicitud de UpdateInboxRules (Set Rule)
+## <a name="updateinboxrules-set-rule-request-example"></a>Ejemplo de solicitud UpdateInboxRules (Establecer regla)
 
-Puede usar los servicios web Exchange para modificar una regla de bandeja de entrada en el buzón de un usuario en el almacén de Exchange. Use el elemento [UpdateInboxRules](updateinboxrules.md) junto con el elemento [SetRuleOperation](setruleoperation.md) para modificar una regla. 
+Puede usar Exchange Web Services para modificar una regla de bandeja de entrada en el buzón de un usuario en el Exchange almacén. Use el [elemento UpdateInboxRules](updateinboxrules.md) junto con el [elemento SetRuleOperation](setruleoperation.md) para modificar una regla. 
   
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El cliente crea el XML de la solicitud y lo envía al servidor.
+El cliente construye el XML de solicitud y lo envía al servidor.
   
 ### <a name="code"></a>Código
 
@@ -183,14 +183,14 @@ El cliente crea el XML de la solicitud y lo envía al servidor.
 
 ### <a name="comments"></a>Comentarios
 
-En este ejemplo se cambia el nombre para mostrar por "(modificado) se trata de correo no deseado".
+En este ejemplo se cambia el nombre para mostrar a "(Modified) This is Junk".
   
 > [!NOTE]
-> Los valores de los atributos **ID** y **changekey** del elemento [FolderId](folderid.md) se han abreviado para facilitar su lectura. 
+> Los valores de los **atributos Id** y **ChangeKey** del [elemento FolderId](folderid.md) se han acortado para mejorar la legibilidad. 
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-La solicitud **UpdateInboxRules** incluye los siguientes elementos: 
+La **solicitud UpdateInboxRules** incluye los siguientes elementos: 
   
 - [MailboxSmtpAddress](mailboxsmtpaddress.md)
     
@@ -198,13 +198,13 @@ La solicitud **UpdateInboxRules** incluye los siguientes elementos:
     
 - [Operations](operations.md)
     
-El elemento [Operations](operations.md) contiene el elemento [SetRuleOperation](setruleoperation.md) para modificar una regla. 
+El [elemento Operations](operations.md) contiene el elemento [SetRuleOperation](setruleoperation.md) para modificar una regla. 
   
 ## <a name="updateinboxrules-set-rule-response-example"></a>Ejemplo de respuesta UpdateInboxRules (Set Rule)
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El siguiente ejemplo del cuerpo del Protocolo simple de acceso a objetos (SOAP) muestra una respuesta correcta a la solicitud **UpdateInboxRules** que modifica una regla. 
+El siguiente ejemplo de cuerpo del Protocolo simple de acceso a objetos (SOAP) muestra una respuesta correcta a la solicitud **UpdateInboxRules** que modifica una regla. 
   
 ### <a name="code"></a>Código
 
@@ -233,7 +233,7 @@ El siguiente ejemplo del cuerpo del Protocolo simple de acceso a objetos (SOAP) 
 
 ```
 
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -245,13 +245,13 @@ En la respuesta se usan los siguientes elementos:
     
 - [ResponseCode](responsecode.md)
     
-## <a name="updateinboxrules-delete-rule-request-example"></a>Ejemplo de solicitud UpdateInboxRules (Delete Rule)
+## <a name="updateinboxrules-delete-rule-request-example"></a>Ejemplo de solicitud UpdateInboxRules (Eliminar regla)
 
-Puede usar los servicios web Exchange para eliminar una regla de bandeja de entrada en el buzón de un usuario en el almacén de Exchange. Use [UpdateInboxRules](updateinboxrules.md) junto con el elemento [DeleteRuleOperation](deleteruleoperation.md) para eliminar una regla. 
+Puede usar Exchange Web Services para eliminar una regla de bandeja de entrada en el buzón de un usuario en el Exchange almacén. Use [UpdateInboxRules](updateinboxrules.md) junto con el [elemento DeleteRuleOperation](deleteruleoperation.md) para eliminar una regla. 
   
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El cliente crea el XML de la solicitud y lo envía al servidor.
+El cliente construye el XML de solicitud y lo envía al servidor.
   
 ### <a name="code"></a>Código
 
@@ -282,9 +282,9 @@ El cliente crea el XML de la solicitud y lo envía al servidor.
 
 En este ejemplo se elimina la regla identificada existente.
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-La solicitud **UpdateInboxRules** incluye los siguientes elementos: 
+La **solicitud UpdateInboxRules** incluye los siguientes elementos: 
   
 - [MailboxSmtpAddress](mailboxsmtpaddress.md)
     
@@ -292,13 +292,13 @@ La solicitud **UpdateInboxRules** incluye los siguientes elementos:
     
 - [Operations](operations.md)
     
-El elemento [Operations](operations.md) contiene el elemento [DeleteRuleOperation](deleteruleoperation.md) para eliminar una regla. 
+El [elemento Operations](operations.md) contiene el elemento [DeleteRuleOperation](deleteruleoperation.md) para eliminar una regla. 
   
-## <a name="updateinboxrules-delete-rule-response-example"></a>Ejemplo de respuesta UpdateInboxRules (Delete Rule)
+## <a name="updateinboxrules-delete-rule-response-example"></a>Ejemplo de respuesta UpdateInboxRules (Eliminar regla)
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El siguiente ejemplo del cuerpo del Protocolo simple de acceso a objetos (SOAP) muestra una respuesta correcta a la solicitud **UpdateInboxRules** que elimina una regla. 
+El siguiente ejemplo de cuerpo del Protocolo simple de acceso a objetos (SOAP) muestra una respuesta correcta a la solicitud **UpdateInboxRules** que elimina una regla. 
   
 ### <a name="code"></a>Código
 
@@ -325,7 +325,7 @@ El siguiente ejemplo del cuerpo del Protocolo simple de acceso a objetos (SOAP) 
 
 ```
 
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -337,7 +337,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [ResponseCode](responsecode.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

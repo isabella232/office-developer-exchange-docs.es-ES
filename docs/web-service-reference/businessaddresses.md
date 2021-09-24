@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 828f8f62-7abf-44d4-8d58-f706d595a812
-description: El elemento BusinessAddresses especifica una matriz de direcciones de empresa y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: d314d0de679f8eabc51dc9ee3b2e9a57cd0b8da1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento BusinessAddresses especifica una matriz de direcciones de negocio y los identificadores de sus atribuciones de origen para la persona asociada.
+ms.openlocfilehash: 9410088643cf56b662c210b63ed43334b753f7c4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465929"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518928"
 ---
 # <a name="businessaddresses"></a>BusinessAddresses
 
-El elemento **BusinessAddresses** especifica una matriz de direcciones de empresa y los identificadores de sus atribuciones de origen para el rol asociado. 
+El **elemento BusinessAddresses** especifica una matriz de direcciones de negocio y los identificadores de sus atribuciones de origen para la persona asociada. 
   
 ```XML
 <BusinessAddresses>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -44,7 +44,7 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud **GetPersona** .  <br/> |
+|[Rol](persona.md) <br/> |Especifica un conjunto de datos de persona devueltos por una **solicitud GetPersona.**  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -58,12 +58,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

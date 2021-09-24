@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FindConversation
 api_type:
 - schema
 ms.assetid: 2384908a-c203-45b6-98aa-efd6a4c23aac
 description: La operación FindConversation enumera una lista de conversaciones en una carpeta.
-ms.openlocfilehash: ef768807431ff3e02c6af7277c1c2a750607ed92
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: e3fed534127a976897e33bd266188d01aff6354c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462657"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59530531"
 ---
 # <a name="findconversation-operation"></a>Operación FindConversation
 
-La operación **FindConversation** enumera una lista de conversaciones en una carpeta. 
+La **operación FindConversation** enumera una lista de conversaciones en una carpeta. 
   
 ## <a name="findconversation-request-example"></a>Ejemplo de solicitud FindConversation
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud **FindConversation** muestra cómo crear una solicitud para buscar la primera conversación en la carpeta Bandeja de entrada. 
+En el siguiente ejemplo de una **solicitud FindConversation** se muestra cómo formar una solicitud para buscar la primera conversación en la carpeta Bandeja de entrada. 
   
 ### <a name="code"></a>Código
 
@@ -52,9 +52,9 @@ El siguiente ejemplo de una solicitud **FindConversation** muestra cómo crear u
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [RequestServerVersion](requestserverversion.md)
     
@@ -70,7 +70,7 @@ Los siguientes elementos se usan en la solicitud:
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **FindConversation** . 
+En el siguiente ejemplo se muestra una respuesta correcta a una **solicitud FindConversation.** 
   
 ### <a name="code"></a>Código
 
@@ -148,9 +148,9 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **Find
 
 ### <a name="comment"></a>Comentario
 
-Los identificadores Item y Conversation del ejemplo se han abreviado para preservar la legibilidad.
+Los identificadores de elemento e conversación del ejemplo se han acortado para conservar la legibilidad.
   
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -160,7 +160,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [ResponseCode](responsecode.md)
     
-- [Conversación (ConversationType)](conversation-conversationtype.md)
+- [Conversation (ConversationType)](conversation-conversationtype.md)
     
 - [ConversationId](conversationid.md)
     
@@ -210,11 +210,11 @@ En la respuesta se usan los siguientes elementos:
     
 - [GlobalItemIds](globalitemids.md)
     
-## <a name="findconversation-error-response-example"></a>Ejemplo de respuesta de error FindConversation
+## <a name="findconversation-error-response-example"></a>Ejemplo de respuesta findConversation Error
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta de error a la solicitud **FindConversation** causada por un error de validación de esquema. 
+En el ejemplo siguiente se muestra una respuesta de error a la **solicitud FindConversation** causada por un error de validación de esquema. 
   
 ### <a name="code"></a>Código
 
@@ -241,13 +241,13 @@ En el ejemplo siguiente se muestra una respuesta de error a la solicitud **FindC
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
-- FaultCode
+- faultcode
     
 - faultstring
     
-- pormenorizada
+- detalle
     
 - [ResponseCode](responsecode.md)
     
@@ -261,16 +261,16 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - Infracción
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
 [Operación ApplyConversationAction](applyconversationaction-operation.md)
 
 
-[Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
+[Operaciones ews en Exchange](ews-operations-in-exchange.md)
   
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 
 
 [Conversaciones en EWS](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)

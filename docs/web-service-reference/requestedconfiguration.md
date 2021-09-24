@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RequestedConfiguration
 api_type:
 - schema
 ms.assetid: 24921387-f676-49e6-8d7a-ef3115024866
 description: El elemento RequestedConfiguration contiene las configuraciones de servicio solicitadas.
-ms.openlocfilehash: bbc503e6d6f7c56c785365924106bc2468965d0b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 90279503e9db6a7bfffc111489442d58f51f6538
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457154"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518998"
 ---
 # <a name="requestedconfiguration"></a>RequestedConfiguration
 
-El elemento **RequestedConfiguration** contiene las configuraciones de servicio solicitadas. 
+El **elemento RequestedConfiguration** contiene las configuraciones de servicio solicitadas. 
   
 ```XML
 <RequestedConfiguration>
@@ -36,7 +36,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -48,7 +48,7 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetServiceConfiguration](getserviceconfiguration.md) <br/> |Define una solicitud de GetServiceConfiguration.  <br/> |
+|[GetServiceConfiguration](getserviceconfiguration.md) <br/> |Define una solicitud GetServiceConfiguration.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -64,12 +64,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

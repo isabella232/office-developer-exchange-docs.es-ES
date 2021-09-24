@@ -5,40 +5,40 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7707aa6a-381d-43f7-a454-54f6343ed127
-description: Buscar información sobre la operación de EWS de UninstallApp.
-ms.openlocfilehash: 27931636ee13a251fb03fe804987d7b01a325230
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Busque información sobre la operación EWS UninstallApp.
+ms.openlocfilehash: 8a301360b2b4c38d85e8c5be2e80c79378d0fd97
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467154"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527149"
 ---
 # <a name="uninstallapp-operation"></a>Operación UninstallApp
 
-Buscar información sobre la operación de EWS de **UninstallApp** . 
+Busque información sobre la **operación EWS UninstallApp.** 
   
-La operación **UninstallApp** desinstala una aplicación de correo para Outlook. 
+La **operación UninstallApp** desinstala una aplicación de correo para Outlook. 
   
 Esta operación se introdujo en Exchange Server 2013.
   
 ## <a name="using-the-uninstallapp-operation"></a>Uso de la operación UninstallApp
 
-La operación **UninstallApp** toma un argumento en la solicitud que identifica la aplicación de correo que se va a desinstalar. 
+La **operación UninstallApp** toma un argumento en la solicitud que identifica la aplicación de correo que se va a desinstalar. 
   
-### <a name="uninstallapp-operation-soap-headers"></a>Encabezados SOAP de operación UninstallApp
+### <a name="uninstallapp-operation-soap-headers"></a>Encabezados SOAP de operación de UninstallApp
 
-La operación **UninstallApp** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
+La **operación UninstallApp** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
   
 |**Nombre de encabezado**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Este encabezado se aplica a una solicitud.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado se aplica a una respuesta.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Este encabezado es aplicable a una solicitud.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado es aplicable a una respuesta.  <br/> |
    
-## <a name="uninstallapp-operation-request-example-uninstall-a-mail-app-in-a-mailbox"></a>Ejemplo de solicitud de operación UninstallApp: desinstalar una aplicación de correo en un buzón de correo
+## <a name="uninstallapp-operation-request-example-uninstall-a-mail-app-in-a-mailbox"></a>Ejemplo de solicitud de operación UninstallApp: Desinstalar una aplicación de correo en un buzón
 
-El siguiente ejemplo de una solicitud de operación de **UninstallApp** muestra cómo desinstalar una aplicación de correo mediante el identificador de la aplicación. El identificador de la aplicación se puede encontrar en el manifiesto de la aplicación que es devuelto por la [operación GetAppManifests](getappmanifests-operation.md).
+En el siguiente ejemplo de una **solicitud de operación UninstallApp** se muestra cómo desinstalar una aplicación de correo mediante el identificador de la aplicación. El identificador de la aplicación se puede encontrar en el manifiesto de la aplicación que devuelve la [operación GetAppManifests](getappmanifests-operation.md).
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -60,11 +60,11 @@ El cuerpo SOAP de la solicitud contiene los siguientes elementos:
   
 - [UninstallApp](uninstallapp.md)
     
-- [ID (cadena)](id-string.md)
+- [ID (Cadena)](id-string.md)
     
-## <a name="successful-uninstallapp-operation-response"></a>Respuesta de operación UninstallApp correcta
+## <a name="successful-uninstallapp-operation-response"></a>Respuesta de operación de UninstallApp correcta
 
-En el siguiente ejemplo se muestra una respuesta correcta a una solicitud de operación de **UninstallApp** para desinstalar una aplicación de correo. 
+En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación **UninstallApp** para desinstalar una aplicación de correo. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -90,15 +90,15 @@ En el siguiente ejemplo se muestra una respuesta correcta a una solicitud de ope
 </s:Envelope>
 ```
 
-El cuerpo SOAP de respuesta contiene los siguientes elementos:
+El cuerpo SOAP de la respuesta contiene los siguientes elementos:
   
 - [UninstallAppResponse](uninstallappresponse.md)
     
 - [ResponseCode](responsecode.md)
     
-## <a name="uninstallapp-operation-error-response"></a>Respuesta de error de operación de UninstallApp
+## <a name="uninstallapp-operation-error-response"></a>Respuesta de error de operación uninstallApp
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **UninstallApp** . Se trata de una respuesta a una solicitud de desinstalación de una aplicación de correo que ya se ha desinstalado. 
+En el ejemplo siguiente se muestra una respuesta de error a una **solicitud de operación UninstallApp.** Esta es una respuesta a una solicitud para desinstalar una aplicación de correo que ya se ha desinstalado. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -126,7 +126,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
 </s:Envelope>
 ```
 
-El cuerpo SOAP de respuesta de error contiene los siguientes elementos:
+El cuerpo SOAP de la respuesta de error contiene los siguientes elementos:
   
 - [UninstallAppResponse](uninstallappresponse.md)
     
@@ -136,11 +136,11 @@ El cuerpo SOAP de respuesta de error contiene los siguientes elementos:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Para obtener los códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).
+Para obtener códigos de error adicionales genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
+- [Operaciones ews en Exchange](ews-operations-in-exchange.md)
     
 - [Operación InstallApp](installapp-operation.md)
     

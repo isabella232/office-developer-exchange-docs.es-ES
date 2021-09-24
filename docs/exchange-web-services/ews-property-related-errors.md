@@ -3,15 +3,15 @@ title: Errores relacionados con la propiedad EWS
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1c4c5969-7bdd-4021-be0e-cae99e86cf2c
 description: Descubra cómo tratar los errores relacionados con la propiedad en la aplicación de EWS.
-ms.openlocfilehash: 5863ab4e06bd968aa38b6fdec471e09c5e23f54a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 019a13116ae9a08c19381b78e1fd38c26f50c0d1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455411"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512271"
 ---
 # <a name="ews-property-related-errors"></a>Errores relacionados con la propiedad EWS
 
@@ -50,7 +50,7 @@ La mayoría de las aplicaciones de cliente EWS se usan propiedades, lo que signi
 |ErrorUnsupportedTypeForConversion  <br/> |Solicitar un tipo de propiedad que no puede convertirse en XML de EWS devolver en una respuesta.  <br/> |Actualizar el código para no solicitar la propiedad no compatible.  <br/> |
 |ErrorUpdatePropertyMismatch  <br/> |Actualizar un elemento o carpeta la descripción del cambio para que no coincide con la propiedad que se especifica para actualizarse.  <br/> |Cambiar el código para que la descripción del cambio coincide con el tipo de elemento o carpeta que se está actualizando.  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 - [Propiedades y propiedades extendidas de EWS en Exchange](properties-and-extended-properties-in-ews-in-exchange.md)

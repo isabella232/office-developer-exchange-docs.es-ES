@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dbd102b8-db70-4196-affe-d7ed66bf3371
-description: El elemento PersonName especifica el nombre de una persona encontrada por medio de la extracción de entidades.
-ms.openlocfilehash: 7784cf1abb9098c181450baeb80468faf46c7d99
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento PersonName especifica el nombre de un individuo encontrado mediante la extracción de entidades.
+ms.openlocfilehash: a3525559d409c6c06f85637fa622350156f10e06
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44434088"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528472"
 ---
 # <a name="personname"></a>PersonName
 
-El elemento **PersonName** especifica el nombre de una persona encontrada por medio de la extracción de entidades. 
+El **elemento PersonName** especifica el nombre de un individuo encontrado mediante la extracción de entidades. 
   
 ```XML
 <PersonName></PersonName>
@@ -30,19 +30,19 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Contacto (ContactType)](contact-contacttype.md)
+[Contact (ContactType)](contact-contacttype.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **PersonName** es el nombre de una persona que se ha encontrado como resultado de la extracción de entidades. 
+El valor de texto del **elemento PersonName** es el nombre de una persona encontrada como resultado de la extracción de entidades. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

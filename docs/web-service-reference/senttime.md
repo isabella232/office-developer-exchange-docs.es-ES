@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e74b4a03-45b0-469c-8889-c7cc5aa88a68
-description: El elemento SentTime especifica la hora en que se envió el elemento.
-ms.openlocfilehash: 51404b1fe12cf31f935740dd4afe3deaab0777de
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento SentTime especifica la hora a la que se envió el elemento.
+ms.openlocfilehash: dd7f80c51be9ceeabdd9bb648b27d3b4f2b7c77f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463170"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532128"
 ---
 # <a name="senttime"></a>SentTime
 
-El elemento **SentTime** especifica la hora en que se envió el elemento. 
+El **elemento SentTime** especifica la hora a la que se envió el elemento. 
   
 ```XML
 <SentTime></SentTime>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **SentTime** es la fecha y la hora en que se envió un elemento. 
+El valor de texto del **elemento SentTime** es la fecha y hora en que se envió un elemento. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

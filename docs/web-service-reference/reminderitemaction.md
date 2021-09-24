@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fe67512c-5b15-4f07-8628-74cf873c2d71
-description: El elemento ReminderItemAction especifica la acción para un elemento de recordatorio.
-ms.openlocfilehash: 60722235ed3e73e6a9923df8d3c63a6fc123599a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ReminderItemAction especifica la acción de un elemento de aviso.
+ms.openlocfilehash: 7cd6898bb44ecd442a02f162008225d904396ba0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466230"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512467"
 ---
 # <a name="reminderitemaction"></a>ReminderItemAction
 
-El elemento **ReminderItemAction** especifica la acción para un elemento de recordatorio. 
+El **elemento ReminderItemAction** especifica la acción de un elemento de aviso. 
   
 ```XML
 <ReminderItemAction>
@@ -34,11 +34,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[ActionType (ReminderActionType)](actiontype-reminderactiontype.md)  |  [Itemid](itemid.md)  |  [NewReminderTime](newremindertime.md)
+[ActionType (ReminderActionType)](actiontype-reminderactiontype.md)  |  [ItemId](itemid.md)  |  [NewReminderTime](newremindertime.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -56,15 +56,15 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
 [ReminderItemActions](reminderitemactions.md)
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

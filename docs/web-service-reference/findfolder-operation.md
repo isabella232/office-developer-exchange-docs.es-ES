@@ -5,51 +5,51 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FindFolder
 api_type:
 - schema
 ms.assetid: 7a9855aa-06cc-45ba-ad2a-645c15b7d031
-description: La operación FindFolder usa los servicios web Exchange para buscar subcarpetas de una carpeta identificada y devuelve un conjunto de propiedades que describen el conjunto de subcarpetas.
-ms.openlocfilehash: f1cc199bdaf684d8d74687ed7f064eb66fee48ff
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación FindFolder usa Exchange Web Services para buscar subcarpetas de una carpeta identificada y devuelve un conjunto de propiedades que describen el conjunto de subcarpetas.
+ms.openlocfilehash: 8c2776a9d60244fe77b6012a09ffbad230d86f63
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462587"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518473"
 ---
 # <a name="findfolder-operation"></a>Operación FindFolder
 
-La operación **FindFolder** usa los servicios web Exchange para buscar subcarpetas de una carpeta identificada y devuelve un conjunto de propiedades que describen el conjunto de subcarpetas. 
+La **operación FindFolder** usa Exchange Web Services para buscar subcarpetas de una carpeta identificada y devuelve un conjunto de propiedades que describen el conjunto de subcarpetas. 
   
 ## <a name="remarks"></a>Comentarios
 
-FindFolder devuelve solo los primeros 512 bytes de cualquier propiedad streamable. Para Unicode, devuelve los primeros 255 caracteres mediante una cadena Unicode terminada en NULL.
+FindFolder devuelve solo los primeros 512 bytes de cualquier propiedad que se puede transmitir. Para Unicode, devuelve los primeros 255 caracteres mediante una cadena Unicode terminada en null.
   
 Las consultas de recorrido profundo no se pueden realizar en carpetas públicas.
   
-Se permiten restricciones y solo deben usarse las propiedades de la carpeta, no las propiedades del elemento. La funcionalidad de ordenación no está disponible para las respuestas de **FindFolder** . Las consultas agrupadas no están disponibles para las consultas de **FindFolder** . 
+Las restricciones están permitidas y solo deben usarse las propiedades de la carpeta, no las propiedades del elemento. La funcionalidad de ordenación no está disponible para **las respuestas FindFolder.** Las consultas agrupadas no están disponibles para las **consultas FindFolder.** 
   
- **Nota:** La operación **FindFolder** también se usa para buscar carpetas administradas. 
+ **Nota** La **operación FindFolder** también se usa para buscar carpetas administradas. 
   
 ### <a name="soap-headers"></a>Encabezados SOAP
 
-La operación **FindFolder** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla. 
+La **operación FindFolder** puede usar los encabezados SOAP que se enumeran y se describen en la tabla siguiente. 
   
 |**Header**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente.  <br/> |
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural RFC3066 que se va a usar para obtener acceso al buzón.  <br/> |
+|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario al que la aplicación cliente está suplantando.  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural RFC3066 que se usará para tener acceso al buzón.  <br/> |
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud.  <br/> |
-|TimeZoneContext  <br/> |[TimeZoneContext](timezonecontext.md) <br/> |Identifica la zona horaria que se va a usar para todas las respuestas del servidor.  <br/> |
+|TimeZoneContext  <br/> |[TimeZoneContext](timezonecontext.md) <br/> |Identifica la zona horaria que se usará para todas las respuestas del servidor.  <br/> |
    
 ## <a name="findfolder-request-example"></a>Ejemplo de solicitud FindFolder
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud **FindFolder** muestra cómo crear una solicitud para buscar todas las carpetas que se encuentran en una bandeja de entrada. 
+En el siguiente ejemplo de una **solicitud FindFolder** se muestra cómo formar una solicitud para buscar todas las carpetas ubicadas en una Bandeja de entrada. 
   
 ### <a name="code"></a>Código
 
@@ -72,11 +72,11 @@ El siguiente ejemplo de una solicitud **FindFolder** muestra cómo crear una sol
 
 ### <a name="comments"></a>Comentarios
 
-Con el valor predeterminado de [BaseShape](baseshape.md), la respuesta devuelve el nombre de la carpeta, el identificador de la carpeta, el número de subcarpetas, el número de carpetas secundarias que se encuentran en la carpeta y el número de elementos no leídos.
+Con el valor Predeterminado de [BaseShape](baseshape.md), la respuesta devuelve el nombre de la carpeta, el identificador de carpeta, el número de subcarpetas, el número de carpetas secundarias encontradas en la carpeta y el recuento de elementos no leídos.
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Esta solicitud de **FindFolder** incluye los siguientes elementos: 
+Esta **solicitud FindFolder** incluye los siguientes elementos: 
   
 - [FindFolder](findfolder.md)
     
@@ -88,16 +88,16 @@ Esta solicitud de **FindFolder** incluye los siguientes elementos:
     
 - [DistinguishedFolderId](distinguishedfolderid.md)
     
- Para obtener más elementos de solicitud de **FindFolder** , vea el esquema. 
+ Para obtener **más elementos de solicitud FindFolder,** consulte el esquema. 
   
 ## <a name="findfolder-response-example"></a>Ejemplo de respuesta FindFolder
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo del cuerpo del Protocolo simple de acceso a objetos (SOAP) muestra una respuesta correcta a la solicitud **FindFolder** . La respuesta contiene los elementos que se devuelven cuando se usa el valor predeterminado para [BaseShape](baseshape.md) . 
+El siguiente ejemplo de cuerpo del Protocolo simple de acceso a objetos (SOAP) muestra una respuesta correcta a la **solicitud FindFolder.** La respuesta contiene los elementos que se devuelven cuando se usa el valor Predeterminado para [la BaseShape.](baseshape.md) 
   
 > [!NOTE]
-> El identificador de la carpeta y la clave de cambio se han abreviado para preservar la legibilidad. 
+> El identificador de carpeta y la clave de cambio se han acortado para conservar la legibilidad. 
   
 ### <a name="code"></a>Código
 
@@ -137,7 +137,7 @@ El siguiente ejemplo del cuerpo del Protocolo simple de acceso a objetos (SOAP) 
 
 ### <a name="response-elements"></a>Elementos de respuesta
 
-Las propiedades que se devuelven en la respuesta las determina [BaseShape](baseshape.md) y [AdditionalProperties](additionalproperties.md) si se usan. Una respuesta **FindFolder** correcta incluye los siguientes elementos: 
+Las propiedades que se devuelven en la respuesta están determinadas por [BaseShape](baseshape.md) y [AdditionalProperties](additionalproperties.md) si se usan. Una respuesta **FindFolder** correcta incluye los siguientes elementos: 
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -167,13 +167,13 @@ Las propiedades que se devuelven en la respuesta las determina [BaseShape](bases
     
 ### <a name="comments"></a>Comentarios
 
- **FindFolder** respuestas a una solicitud con la forma respuesta **AllProperties** no devolverán los elementos [totalCount](totalcount.md) y [UnreadCount](unreadcount.md) para las búsquedas de carpetas públicas. 
+ **Las respuestas FindFolder** a una solicitud con la forma de respuesta **AllProperties** no devolverán los elementos [TotalCount](totalcount.md) y [UnreadCount](unreadcount.md) para las búsquedas en carpetas públicas. 
   
 ## <a name="findfolder-error-response-example"></a>Ejemplo de respuesta de error FindFolder
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de cuerpo SOAP muestra una respuesta de error que se produce al buscar una carpeta identificada por un identificador de carpeta con formato incorrecto.
+En el siguiente ejemplo de cuerpo SOAP se muestra una respuesta de error que se produce cuando se busca una carpeta identificada por un identificador de carpeta malformada.
   
 ### <a name="code"></a>Código
 
@@ -218,13 +218,13 @@ La respuesta de error **FindFolder** incluye los siguientes elementos:
     
 ## <a name="additional-information"></a>Información adicional
 
-- El elemento de la carpeta [displayName (cadena)](displayname-string.md) siempre se incluye en la forma predeterminada. 
+- El elemento [DisplayName (cadena) de](displayname-string.md) la carpeta siempre se incluye en la forma predeterminada. 
     
-- El elemento [UnreadCount](unreadcount.md) se incluye en las carpetas de tareas y notas. 
+- El [elemento UnreadCount](unreadcount.md) se incluye en las carpetas Tareas y Notas. 
     
-- Use el valor **PropertyTag** de 0x672D con un tipo de propiedad de **entero** para identificar una carpeta administrada mediante el elemento [ExtendedFieldURI](extendedfielduri.md) . 
+- Use el **valor PropertyTag** de 0x672D con un tipo de propiedad **integer** para identificar una carpeta administrada mediante el [elemento ExtendedFieldURI.](extendedfielduri.md) 
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

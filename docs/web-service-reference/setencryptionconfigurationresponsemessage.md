@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bb0f0eec-be1e-42cc-9426-d98a491debec
-description: El elemento SetEncryptionConfigurationResponseMessage está destinado sólo para uso interno.
-ms.openlocfilehash: ad32b7f1da07e6f22a15e2571ec2b1cc5533e499
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento SetEncryptionConfigurationResponseMessage está diseñado solo para uso interno.
+ms.openlocfilehash: 65bbf119421f8332953002a8d3cc8743428c100e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530334"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510879"
 ---
 # <a name="setencryptionconfigurationresponsemessage"></a>SetEncryptionConfigurationResponseMessage
 
-El elemento **SetEncryptionConfigurationResponseMessage** está destinado sólo para uso interno. 
+El **elemento SetEncryptionConfigurationResponseMessage** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,11 +25,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 

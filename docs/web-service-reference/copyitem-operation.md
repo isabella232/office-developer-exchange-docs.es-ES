@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CopyItem
 api_type:
 - schema
 ms.assetid: bcc68f9e-d511-4c29-bba6-ed535524624a
-description: La operación CopyItem copia elementos y coloca los elementos en una carpeta diferente.
-ms.openlocfilehash: ec07700a5ebbdc8774aa2134919634b8dfd02406
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación CopyItem copia los elementos y los coloca en una carpeta diferente.
+ms.openlocfilehash: 62785d9acb784bcffe7d3279de8a80abc803adf4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462181"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518648"
 ---
 # <a name="copyitem-operation"></a>Operación CopyItem
 
-La operación **CopyItem** copia elementos y coloca los elementos en una carpeta diferente. 
+La **operación CopyItem** copia los elementos y los coloca en una carpeta diferente. 
   
 ## <a name="copyitem-request-example"></a>Ejemplo de solicitud CopyItem
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud **CopyItem** muestra cómo crear una solicitud para copiar un elemento en la bandeja de entrada. 
+En el siguiente ejemplo de una **solicitud CopyItem** se muestra cómo formar una solicitud para copiar un elemento en la Bandeja de entrada. 
   
 ### <a name="code"></a>Código
 
@@ -51,11 +51,11 @@ El siguiente ejemplo de una solicitud **CopyItem** muestra cómo crear una solic
 ### <a name="comments"></a>Comentarios
 
 > [!NOTE]
-> El identificador de la carpeta y la clave de cambio se han abreviado para preservar la legibilidad. 
+> El identificador de carpeta y la clave de cambio se han acortado para conservar la legibilidad. 
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [CopyItem](copyitem.md)
     
@@ -68,17 +68,17 @@ Los siguientes elementos se usan en la solicitud:
 - [ItemId](itemid.md)
     
 > [!NOTE]
-> El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor acceso de clientes. 
+> El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor Acceso de cliente. 
   
-Para buscar otras opciones para el mensaje de solicitud de la operación **CopyItem** , explore la jerarquía del esquema. Empiece en el elemento [CopyItem](copyitem.md) . 
+Para buscar otras opciones para el mensaje de solicitud de la **operación CopyItem,** explore la jerarquía de esquema. Comience en el [elemento CopyItem.](copyitem.md) 
   
-## <a name="successful-copyitem-response"></a>Respuesta CopyItem correcta
+## <a name="successful-copyitem-response"></a>Respuesta correcta de CopyItem
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **CopyItem** . 
+En el ejemplo siguiente se muestra una respuesta correcta a la **solicitud CopyItem.** 
   
-El identificador de elemento del nuevo elemento se devuelve en el mensaje de respuesta. Los identificadores de elemento no se devuelven en las respuestas para operaciones entre buzones de correo o buzones de correo en las operaciones de la carpeta pública **CopyItem** . 
+El identificador de elemento del nuevo elemento se devuelve en el mensaje de respuesta. Los identificadores de elementos no se devuelven en respuestas para las operaciones **copyItem** entre buzones o buzones de correo a la carpeta pública. 
   
 ### <a name="code"></a>Código
 
@@ -110,7 +110,7 @@ El identificador de elemento del nuevo elemento se devuelve en el mensaje de res
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -126,13 +126,13 @@ En la respuesta se usan los siguientes elementos:
     
 - [Items](items.md)
     
-Para buscar otras opciones para el mensaje de respuesta de la operación **CopyItem** , explore la jerarquía del esquema. Empiece en el elemento [CopyItemResponse](copyitemresponse.md) . 
+Para buscar otras opciones para el mensaje de respuesta de la **operación CopyItem,** explore la jerarquía de esquema. Comience en el [elemento CopyItemResponse.](copyitemresponse.md) 
   
-## <a name="copyitem-error-response"></a>Respuesta de error de CopyItem
+## <a name="copyitem-error-response"></a>Respuesta de error CopyItem
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud **CopyItem** . 
+En el ejemplo siguiente se muestra una respuesta de error a una **solicitud CopyItem.** 
   
 ### <a name="code"></a>Código
 
@@ -164,7 +164,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud **Copy
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -182,11 +182,11 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - [Items](items.md)
     
-Para buscar otras opciones para el mensaje de respuesta de error de la operación **CopyItem** , explore la jerarquía del esquema. Empiece en el elemento [CopyItemResponse](copyitemresponse.md) . 
+Para buscar otras opciones para el mensaje de respuesta de error de la **operación CopyItem,** explore la jerarquía de esquema. Comience en el [elemento CopyItemResponse.](copyitemresponse.md) 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

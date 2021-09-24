@@ -3,32 +3,32 @@ title: Agregar y quitar direcciones de correo electrónico de la lista de remite
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b88288ee-6af7-45b5-a55c-5929cd0c16f1
-description: Descubra cómo usar la API administrada de EWS o EWS para agregar direcciones de correo electrónico y quitarlas de la lista de remitentes bloqueados.
-ms.openlocfilehash: 270613a739acba165c7bac1bd2c1ef275b5d3aca
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Descubra cómo usar la API administrada ews o EWS para agregar direcciones de correo electrónico y quitarlas de la lista de remitentes bloqueados.
+ms.openlocfilehash: 4deacbfa6e146675e3248e3932734a1492645246
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528282"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512208"
 ---
 # <a name="add-and-remove-email-addresses-from-the-blocked-senders-list-by-using-ews-in-exchange"></a>Agregar y quitar direcciones de correo electrónico de la lista de remitentes bloqueados mediante el uso de EWS en Exchange
 
-Descubra cómo usar la API administrada de EWS o EWS para agregar direcciones de correo electrónico y quitarlas de la lista de remitentes bloqueados.
+Descubra cómo usar la API administrada ews o EWS para agregar direcciones de correo electrónico y quitarlas de la lista de remitentes bloqueados.
   
-La lista de remitentes bloqueados de las opciones de correo no deseado de un usuario proporciona una forma de mover todos los mensajes de correo electrónico de los remitentes especificados a la carpeta de correo no deseado. Puede habilitar la API administrada de EWS o la aplicación EWS para agregar direcciones de correo electrónico o quitarlas de la lista de remitentes bloqueados.
+La lista de remitentes bloqueados en las opciones de correo no deseado de un usuario proporciona una forma de mover todos los mensajes de correo electrónico de remitentes especificados a la carpeta Correo no deseado. Puede habilitar la API administrada ews o la aplicación EWS para agregar direcciones de correo electrónico o quitarlas de la lista de remitentes bloqueados.
   
-Tenga en cuenta que debe haber un mensaje de la dirección de correo electrónico en el buzón del usuario para poder agregar la dirección de correo electrónico o quitarla de la lista de remitentes bloqueados. El método de la API administrada de EWS [ExchangeService. MarkAsJunk](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx) y la operación de EWS [MarkAsJunk](https://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx) usan una colección de identificadores de elemento. Los identificadores de elemento de la colección indican los mensajes del buzón para el que se debe cambiar el estado del correo no deseado. 
+Tenga en cuenta que debe existir un mensaje de la dirección de correo electrónico en el buzón del usuario para poder agregar la dirección de correo electrónico o quitarla de la lista de remitentes bloqueados. El método de API administrada EWS [ExchangeService.MarkAsJunk](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx) y la [operación EWS MarkAsJunk](https://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx) usan una colección de IDs de elementos. Los IDs de elementos de la colección indican los mensajes del buzón para los que se debe cambiar el estado del correo no deseado. 
   
-Puede usar los cmdlets del shell de administración de Exchange [Get-MailboxJunkEmailConfiguration](https://technet.microsoft.com/library/dd979784%28v=exchg.150%29.aspx) y [set-MailboxJunkEmailConfiguration](https://technet.microsoft.com/library/dd979780%28v=exchg.150%29.aspx) directamente para acceder a la lista de remitentes bloqueados. 
+Puede usar los cmdlets [Get-MailboxJunkEmailConfiguration](https://technet.microsoft.com/library/dd979784%28v=exchg.150%29.aspx) y [Set-MailboxJunkEmailConfiguration](https://technet.microsoft.com/library/dd979780%28v=exchg.150%29.aspx) Exchange Shell de administración para obtener acceso directamente a la lista de remitentes bloqueados. 
   
-## <a name="add-an-email-address-to-or-remove-it-from-the-blocked-senders-list-by-using-the-ews-managed-api"></a>Agregar una dirección de correo electrónico o quitarla de la lista de remitentes bloqueados mediante la API administrada de EWS
+## <a name="add-an-email-address-to-or-remove-it-from-the-blocked-senders-list-by-using-the-ews-managed-api"></a>Agregar o quitar una dirección de correo electrónico de la lista de remitentes bloqueados mediante la API administrada de EWS
 <a name="bk_AddRemoveEWSMA"> </a>
 
-Para agregar el remitente de un mensaje de correo electrónico a la lista de remitentes bloqueados, use el método **MarkAsJunk** y establezca el parámetro **isJunk** en **true**. Para quitar el remitente de un mensaje de correo electrónico de la lista de remitentes bloqueados, establezca el parámetro **isJunk** en **false**.
+Para agregar el remitente de un mensaje de correo electrónico a la lista de remitentes bloqueados, use el **método MarkAsJunk** y establezca el **parámetro isJunk** en **true**. Para quitar el remitente de un mensaje de correo electrónico de la lista de remitentes bloqueados, establezca el **parámetro isJunk** en **false**.
   
-En el ejemplo siguiente se muestra cómo usar el método **MarkAsJunk** para cambiar el estado de correo no deseado de un mensaje. 
+En el ejemplo siguiente se muestra cómo usar el **método MarkAsJunk** para cambiar el estado de correo no deseado de un mensaje. 
   
 ```cs
 private static void MarkMessageAsJunk(ExchangeService service, ItemId messageId, bool isJunk, bool moveItem)
@@ -67,10 +67,10 @@ private static void MarkMessageAsJunk(ExchangeService service, ItemId messageId,
 }
 ```
 
-## <a name="add-an-email-address-to-or-remove-it-from-the-blocked-senders-list-by-using-ews"></a>Agregar una dirección de correo electrónico o quitarla de la lista de remitentes bloqueados mediante EWS
+## <a name="add-an-email-address-to-or-remove-it-from-the-blocked-senders-list-by-using-ews"></a>Agregar o quitar una dirección de correo electrónico de la lista de remitentes bloqueados mediante EWS
 <a name="bk_AddRemoveEWS"> </a>
 
-La siguiente solicitud SOAP de EWS marca un elemento como no deseado estableciendo el atributo **IsJunk** en el elemento [MarkAsJunk](https://msdn.microsoft.com/library/f06bafc6-7ee3-4b2b-9fd1-7c51328f4729%28Office.15%29.aspx) en **true**. También mueve el mensaje a la carpeta correo electrónico no deseado estableciendo el atributo **MoveItem** del elemento **MarkAsJunk** en **true**.
+La siguiente solicitud SOAP de EWS marca un elemento como correo no deseado estableciendo el atributo **IsJunk** en el [elemento MarkAsJunk](https://msdn.microsoft.com/library/f06bafc6-7ee3-4b2b-9fd1-7c51328f4729%28Office.15%29.aspx) en **true**. También mueve el mensaje a la carpeta Correo no deseado estableciendo el atributo **MoveItem** en el **elemento MarkAsJunk** en **true**.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -92,7 +92,7 @@ La siguiente solicitud SOAP de EWS marca un elemento como no deseado establecien
 </soap:Envelope>
 ```
 
-La siguiente respuesta SOAP de EWS muestra la respuesta correcta. El elemento [MovedItemId](https://msdn.microsoft.com/library/7d5425ab-1e75-43d1-b801-802ff5139df6%28Office.15%29.aspx) de la respuesta contiene el identificador de elemento del elemento después de su traslado. 
+La siguiente respuesta SOAP de EWS muestra la respuesta correcta. El [elemento MovedItemId](https://msdn.microsoft.com/library/7d5425ab-1e75-43d1-b801-802ff5139df6%28Office.15%29.aspx) de la respuesta contiene el identificador de elemento del elemento después de moverlo. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -122,7 +122,7 @@ La siguiente respuesta SOAP de EWS muestra la respuesta correcta. El elemento [M
 ## <a name="see-also"></a>Vea también
 
 - [Administración de la Bandeja de entrada y EWS en Exchange](inbox-management-and-ews-in-exchange.md)   
-- [ExchangeService. MarkAsJunk](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx)   
+- [ExchangeService.MarkAsJunk](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.markasjunk%28v=exchg.80%29.aspx)   
 - [Operación MarkAsJunk](https://msdn.microsoft.com/library/1f71f04d-56a9-4fee-a4e7-d1034438329e%28Office.15%29.aspx)   
 - [Get-MailboxJunkEmailConfiguration](https://technet.microsoft.com/library/dd979784%28v=exchg.150%29.aspx)   
 - [Set-MailboxJunkEmailConfiguration](https://technet.microsoft.com/library/dd979780%28v=exchg.150%29.aspx) 

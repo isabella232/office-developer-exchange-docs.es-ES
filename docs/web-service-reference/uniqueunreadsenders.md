@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UniqueUnreadSenders
 api_type:
 - schema
 ms.assetid: eb7d1274-ce2e-4ef8-b47f-e911174aab0c
-description: El elemento UniqueUnreadSenders contiene una lista de todas las personas que han enviado mensajes que actualmente no están leídos en esta conversación en la carpeta actual. Este elemento es de sólo lectura.
-ms.openlocfilehash: 0e45362e88be4930b8bc2f641c1fb00cc63c0605
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento UniqueUnreadSenders contiene una lista de todas las personas que han enviado mensajes que actualmente no están leídos en esta conversación en la carpeta actual. Este elemento es de solo lectura.
+ms.openlocfilehash: 6d4099a45d65ab01a12132417eeaa2fde1c1b174
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458855"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527011"
 ---
 # <a name="uniqueunreadsenders"></a>UniqueUnreadSenders
 
-El elemento **UniqueUnreadSenders** contiene una lista de todas las personas que han enviado mensajes que actualmente no están leídos en esta conversación en la carpeta actual. Este elemento es de sólo lectura. 
+El **elemento UniqueUnreadSenders** contiene una lista de todas las personas que han enviado mensajes que actualmente no están leídos en esta conversación en la carpeta actual. Este elemento es de solo lectura. 
   
 [FindConversationResponse](findconversationresponse.md)
   
 [Conversaciones](conversations-ex15websvcsotherref.md)
   
-[Conversación (ConversationType)](conversation-conversationtype.md)
+[Conversation (ConversationType)](conversation-conversationtype.md)
   
 [UniqueUnreadSenders](uniqueunreadsenders.md)
   
@@ -44,19 +44,19 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[String](string.md) <br/> |Contiene un remitente de una sola conversación.  <br/> |
+|[String](string.md) <br/> |Contiene un único remitente de conversación.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Conversación (ConversationType)](conversation-conversationtype.md) <br/> |Representa una sola conversación.  <br/> |
+|[Conversation (ConversationType)](conversation-conversationtype.md) <br/> |Representa una sola conversación.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -64,18 +64,18 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-Este elemento se introdujo en Exchange Server 2010 Service Pack 1 (SP1). El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda los servicios Web de Exchange.
+Este elemento se introdujo en Exchange Server 2010 Service Pack 1 (SP1). El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda Exchange Web Services.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

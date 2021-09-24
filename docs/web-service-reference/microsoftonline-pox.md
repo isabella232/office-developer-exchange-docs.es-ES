@@ -4,25 +4,25 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0b88f02a-9c50-44b3-841b-560b24e37af5
-description: El elemento MicrosoftOnline contiene un valor que indica si el buzón del usuario está hospedado en Exchange online o Exchange online como parte de Office 365.
-ms.openlocfilehash: f3144a673a4c98aad821e21c562141b0ae00f426
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento MicrosoftOnline contiene un valor que indica si el buzón del usuario está hospedado en Exchange Online o Exchange Online como parte de Office 365.
+ms.openlocfilehash: fbf230df18ca488babb1523cc7f689923eaeb55b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467987"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510949"
 ---
 # <a name="microsoftonline-pox"></a>MicrosoftOnline (POX)
 
-El elemento **MicrosoftOnline** contiene un valor que indica si el buzón del usuario está hospedado en Exchange online o Exchange online como parte de Office 365. 
+El **elemento MicrosoftOnline** contiene un valor que indica si el buzón del usuario está hospedado en Exchange Online o Exchange Online como parte de Office 365. 
   
-[Detección automática (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[Respuesta (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[Cuenta (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
 [MicrosoftOnline (POX)](microsoftonline-pox.md)
   
@@ -36,23 +36,23 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de la cuenta del usuario o contiene respuestas de error.  <br/> |
+|[Account (POX)](account-pox.md) <br/> |Especifica la configuración de la cuenta para el usuario o contiene respuestas de error.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El valor de texto indica si el buzón de correo del usuario está hospedado en Exchange Online. El valor es **true** si el buzón del usuario está hospedado en Exchange Online; de lo contrario, **false**.
+El valor de texto indica si el buzón del usuario está hospedado en Exchange Online. El valor es **true** si el buzón del usuario está hospedado en Exchange Online; de lo contrario, **false**.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

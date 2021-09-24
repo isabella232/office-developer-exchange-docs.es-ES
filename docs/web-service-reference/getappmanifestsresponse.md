@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 86cf88f4-09c4-436a-a100-ac5cba0c4388
 description: El elemento GetAppManifestsResponse define la respuesta para una solicitud de operación GetAppManifests.
-ms.openlocfilehash: a01f6265d6d534e2f7868b17acf19f0f5d52a01f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 06d814ddd7d8369cf54f156fd1bd493f8b933a25
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462967"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541206"
 ---
 # <a name="getappmanifestsresponse"></a>GetAppManifestsResponse
 
-El elemento **GetAppManifestsResponse** define la respuesta para una solicitud de operación **GetAppManifests** . 
+El **elemento GetAppManifestsResponse** define la respuesta para una solicitud **de operación GetAppManifests.** 
   
 ```xml
 <GetAppManifestsResponse>
@@ -41,7 +41,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -62,11 +62,11 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

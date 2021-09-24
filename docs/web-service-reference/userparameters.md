@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bad7311f-7ecd-4f0c-b8e7-dd8f7d378f55
 description: El elemento UserParameters contiene una lista de extensiones de cliente habilitadas y deshabilitadas.
-ms.openlocfilehash: 76bf858adfb6d2ef76a25c234117131752c60d7b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 1d93ec0f4e44b238fcb9aca23672c262795290a6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526756"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510732"
 ---
 # <a name="userparameters"></a>UserParameters
 
-El elemento **UserParameters** contiene una lista de extensiones de cliente habilitadas y deshabilitadas. 
+El **elemento UserParameters** contiene una lista de extensiones de cliente habilitadas y deshabilitadas. 
   
 ```XML
 <UserParameters UserId="" EnabledOnly="">
@@ -35,7 +35,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
-|UserId  <br/> |El valor de texto del atributo **userid** es el identificador del usuario.  <br/> |
+|UserId  <br/> |El valor de texto del **atributo UserId** es el identificador del usuario.  <br/> |
 |EnabledOnly  <br/> |El valor de texto de **EnabledOnly** indica si la respuesta solo contiene las extensiones habilitadas.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
@@ -57,8 +57,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

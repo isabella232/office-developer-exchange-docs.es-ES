@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8c11e6e6-cd58-4ac7-9649-c8b90cd7480c
-description: El elemento DisclaimerText (SetEncryptionConfigurationType) está destinado exclusivamente para uso interno.
-ms.openlocfilehash: 6a6d790e697bb6bef16af028dc66866b21438330
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento DisclaimerText (SetEncryptionConfigurationType) está diseñado solo para uso interno.
+ms.openlocfilehash: 991b98f0bc4a857fb3090061ab55f275468f21c4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44442447"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528832"
 ---
 # <a name="disclaimertext-setencryptionconfigurationtype"></a>DisclaimerText (SetEncryptionConfigurationType)
 
-El elemento **DisclaimerText (SetEncryptionConfigurationType)** está destinado exclusivamente para uso interno. 
+El **elemento DisclaimerText (SetEncryptionConfigurationType)** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,11 +25,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 

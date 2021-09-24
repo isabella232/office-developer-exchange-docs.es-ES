@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FlaggedForAction
 api_type:
 - schema
 ms.assetid: 6a08c48a-7b32-4754-8940-adbda55e8133
-description: El elemento FlaggedForAction especifica la marca para el valor de la acción que debe aparecer en los mensajes entrantes para que se aplique la condición o excepción.
-ms.openlocfilehash: f996dc4bcf30db32e1d73fb302ab137f0a6ad4d4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento FlaggedForAction especifica la marca del valor de acción que debe aparecer en los mensajes entrantes para que se aplique la condición o excepción.
+ms.openlocfilehash: 978d10286785f341437e3213ddbd3c296c4621fc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466244"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518382"
 ---
 # <a name="flaggedforaction"></a>FlaggedForAction
 
-El elemento **FlaggedForAction** especifica la marca para el valor de la acción que debe aparecer en los mensajes entrantes para que se aplique la condición o excepción. 
+El **elemento FlaggedForAction** especifica la marca del valor de acción que debe aparecer en los mensajes entrantes para que se aplique la condición o excepción. 
   
 ```XML
 <FlaggedForAction/>
@@ -34,11 +34,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -49,7 +49,7 @@ Ninguna.
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto. A continuación se muestran los valores de texto posibles para este elemento:
+Se requiere un valor de texto. Los siguientes son los valores de texto posibles para este elemento:
   
 - Cualquiera
     
@@ -57,7 +57,7 @@ Se requiere un valor de texto. A continuación se muestran los valores de texto 
     
 - DoNotForward
     
-- Realizar
+- FollowUp
     
 - FYI
     
@@ -83,12 +83,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

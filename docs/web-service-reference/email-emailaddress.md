@@ -1,23 +1,23 @@
 ---
-title: Correo electrónico (EmailAddress)
+title: Email (EmailAddress)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5c40a6b6-e2d1-44ba-b439-5720490cbd43
-description: El elemento email identifica a un asistente para una reunión.
-ms.openlocfilehash: 9457ff735f4f87f59cd091b504fb8807e1aa8fa6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Email identifica a un asistente a una reunión.
+ms.openlocfilehash: 6a5c1c2fb11e1f428c75b5c41d58c62c7b5976a5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459240"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528641"
 ---
-# <a name="email-emailaddress"></a>Correo electrónico (EmailAddress)
+# <a name="email-emailaddress"></a>Email (EmailAddress)
 
-El elemento **email** identifica a un asistente para una reunión. 
+El **elemento Email** identifica a un asistente a una reunión. 
   
 ```XML
 <Email></Email>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento email identifica a un asistente devuelto en una respuesta de operación **GetUserAvailability** . 
+El valor de texto del elemento Email identifica un asistente devuelto en una respuesta de operación **GetUserAvailability.** 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

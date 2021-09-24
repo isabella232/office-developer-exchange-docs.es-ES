@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4b806441-0429-44c4-90b7-1ae5c6ab9128
 description: El elemento SetImListMigrationCompleted representa una solicitud para indicar si el almacén de Exchange contiene los elementos de mensajería instantánea usados por los clientes de mensajería instantánea.
-ms.openlocfilehash: e5b16044ee72a9e931a2707d3f7823931f8a642a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 80ba542fac320a81fbcd044300bfed94f52c34f5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464829"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510886"
 ---
 # <a name="setimlistmigrationcompleted"></a>SetImListMigrationCompleted
 
-El elemento **SetImListMigrationCompleted** representa una solicitud para indicar si el almacén de Exchange contiene los elementos de mensajería instantánea usados por los clientes de mensajería instantánea. 
+El **elemento SetImListMigrationCompleted** representa una solicitud para indicar si el almacén de Exchange contiene los elementos de mensajería instantánea usados por los clientes de mensajería instantánea. 
   
 ```XML
 <SetImListMigrationCompleted>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

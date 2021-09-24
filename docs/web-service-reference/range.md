@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ee2891e4-3aa6-4258-9727-1f2ee9622508
 description: El elemento Range especifica un intervalo de repeticiones de elementos de calendario para un elemento de calendario que se repite.
-ms.openlocfilehash: b5fb41709905290326b47e2662383031c34fd9c9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0d16dad24dda48f084b3011d7b96eb719431d9da
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465313"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519103"
 ---
 # <a name="range"></a>Rango
 
-El elemento **Range** especifica un intervalo de repeticiones de elementos de calendario para un elemento de calendario que se repite. 
+El **elemento Range** especifica un intervalo de repeticiones de elementos de calendario para un elemento de calendario que se repite. 
   
 ```XML
 <Range Start="" End="" Count="" CompareOriginalStartTime=""/>
@@ -32,14 +32,14 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
-|**Start** <br/> |El valor de texto del atributo **Start** es la fecha de inicio del intervalo de elementos periódicos. Se trata de un valor de **fecha y hora** .  <br/> |
-|**End** <br/> |El valor de texto del atributo **final** es la fecha de finalización del intervalo de elementos periódicos. Se trata de un valor de **fecha y hora** .  <br/> |
-|**Count** <br/> |El valor de texto del atributo **Count** es el número de repeticiones del elemento periódico. Se trata de un valor **entero** .  <br/> |
-|**CompareOriginalStartTime** <br/> |El valor de texto de **true** para el atributo **CompareOriginalStartTime** indica que el cliente debe comparar la hora de inicio original con la nueva hora de inicio. Un valor de **false** indica que el cliente no tiene que comparar la hora de inicio original con la nueva hora de inicio.  <br/> |
+|**Start** <br/> |El valor de texto del **atributo Start** es la fecha de inicio del intervalo de elementos periódicos. Este es un **valor dateTime.**  <br/> |
+|**End** <br/> |El valor de texto del **atributo End** es la fecha de finalización del intervalo de elementos periódicos. Este es un **valor dateTime.**  <br/> |
+|**Count** <br/> |El valor de texto del **atributo Count** es el número de repeticiones del elemento periódico. Se trata de un **valor** entero.  <br/> |
+|**CompareOriginalStartTime** <br/> |El valor de texto **true** para el **atributo CompareOriginalStartTime** indica que el cliente debe comparar la hora de inicio original con la nueva hora de inicio. Un valor de **false** indica que el cliente no necesita comparar la hora de inicio original con la nueva hora de inicio.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

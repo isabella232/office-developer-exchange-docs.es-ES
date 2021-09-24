@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MailTips
 api_type:
 - schema
 ms.assetid: c1cba493-bccc-4b8e-be8e-bfa8a8b10882
-description: El elemento de sugerencias de correo electrónico representa los valores para varios tipos de sugerencias de correo.
-ms.openlocfilehash: 9bacdea7b4f3108f700ed102025445e01a73e69d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento MailTips representa valores para varios tipos de sugerencias de correo.
+ms.openlocfilehash: bf7ed542d51f2a8cb3172275be12cb72104bc5b2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44447599"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511141"
 ---
 # <a name="mailtips"></a>MailTips
 
-El elemento de **sugerencias** de correo electrónico representa los valores para varios tipos de sugerencias de correo. 
+El **elemento MailTips** representa valores para varios tipos de sugerencias de correo. 
   
 ```XML
 <MailTips>
@@ -46,23 +46,23 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
 |[RecipientAddress](recipientaddress.md) <br/> |Representa el buzón del destinatario.  <br/> |
-|[PendingMailTips](pendingmailtips.md) <br/> |Indica que las sugerencias de correo de este elemento no se pudieron evaluar antes de que se agote el tiempo de espera de procesamiento del servidor.  <br/> |
-|[Oficina](outofoffice.md) <br/> |Representa el mensaje de respuesta y una hora de duración para el envío del mensaje de respuesta.  <br/> |
+|[PendingMailTips](pendingmailtips.md) <br/> |Indica que las sugerencias de correo de este elemento no se pudieron evaluar antes de que expirara el tiempo de espera de procesamiento del servidor.  <br/> |
+|[OutOfOffice](outofoffice.md) <br/> |Representa el mensaje de respuesta y el tiempo de duración para enviar el mensaje de respuesta.  <br/> |
 |[MailboxFull](mailboxfull.md) <br/> |Indica si el buzón del destinatario está lleno.  <br/> |
-|[CustomMailTip](custommailtip.md) <br/> |Representa un mensaje personalizado de sugerencia de correo.  <br/> |
-|[TotalMemberCount](totalmembercount.md) <br/> |Representa el número de todos los miembros de un grupo.  <br/> |
-|[ExternalMemberCount](externalmembercount.md) <br/> |Representa el número de miembros externos de un grupo.  <br/> |
-|[MaxMessageSize](maxmessagesize.md) <br/> |Representa el tamaño máximo de mensaje que puede aceptar el destinatario.  <br/> |
+|[CustomMailTip](custommailtip.md) <br/> |Representa un mensaje de sugerencia de correo personalizado.  <br/> |
+|[TotalMemberCount](totalmembercount.md) <br/> |Representa el recuento de todos los miembros de un grupo.  <br/> |
+|[ExternalMemberCount](externalmembercount.md) <br/> |Representa el recuento de miembros externos de un grupo.  <br/> |
+|[MaxMessageSize](maxmessagesize.md) <br/> |Representa el tamaño máximo del mensaje que el destinatario puede aceptar.  <br/> |
 |[DeliveryRestricted](deliveryrestricted.md) <br/> |Indica si las restricciones de entrega impedirán que el mensaje del remitente llegue al destinatario.  <br/> |
-|[IsModerated](ismoderated.md) <br/> |Indica si el buzón del destinatario se modera.  <br/> |
-|[InvalidRecipient (sugerencias de correo)](invalidrecipient-mailtips.md) <br/> |Indica si el destinatario no es válido.  <br/> |
+|[IsModerated](ismoderated.md) <br/> |Indica si se está moderando el buzón del destinatario.  <br/> |
+|[InvalidRecipient (MailTips)](invalidrecipient-mailtips.md) <br/> |Indica si el destinatario no es válido.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -84,12 +84,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

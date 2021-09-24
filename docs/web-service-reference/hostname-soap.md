@@ -1,24 +1,24 @@
 ---
-title: Nombre de host (SOAP)
+title: Hostname (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 2ef2ab0d-ba70-46bd-80bb-c1e08da9e9bd
-description: El elemento hostname representa la parte del nombre de host del nombre de equipo completo del equipo.
-ms.openlocfilehash: 2c368e710dc192302bc63bd74bba35d84c5ab705
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Hostname representa la parte del nombre de host del nombre de equipo completo del equipo.
+ms.openlocfilehash: b607776940233f6df689256e50ba96970f6d033f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460816"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529889"
 ---
-# <a name="hostname-soap"></a>Nombre de host (SOAP)
+# <a name="hostname-soap"></a>Hostname (SOAP)
 
-El elemento **hostname** representa la parte del nombre de host del nombre de equipo completo del equipo. 
+El **elemento Hostname** representa la parte del nombre de host del nombre de equipo completo del equipo. 
   
 ```XML
 <Hostname/>
@@ -31,11 +31,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -45,7 +45,7 @@ Ninguna.
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **hostname** es la parte del nombre de host del nombre de equipo completo del equipo. 
+El valor de texto del elemento **Hostname** es la parte del nombre de host del nombre de equipo completo del equipo. 
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -53,7 +53,7 @@ El valor de texto del elemento **hostname** es la parte del nombre de host del n
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 

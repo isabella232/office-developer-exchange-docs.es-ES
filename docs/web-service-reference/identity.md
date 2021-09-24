@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ecb533ba-c24a-4940-a852-7988cb385113
-description: El elemento Identity solo está destinado a uso interno.
-ms.openlocfilehash: 62764947e90d3bc7db850774870937bff084fa25
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Identity está diseñado solo para uso interno.
+ms.openlocfilehash: 5ebad8f531539d4a26140759e6f6e734c12a796a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456475"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529868"
 ---
 # <a name="identity"></a>Identidad
 
-El elemento **Identity** solo está destinado a uso interno. 
+El **elemento Identity** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,11 +25,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 

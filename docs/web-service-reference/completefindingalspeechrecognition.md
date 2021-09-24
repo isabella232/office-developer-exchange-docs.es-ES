@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 31211d0b-da0e-450c-8df2-159571fa3a19
-description: El elemento CompleteFindInGALSpeechRecognition está destinado sólo para uso interno.
-ms.openlocfilehash: 11d8153f262ea115798e0f00b43bd47390b69688
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento CompleteFindInGALSpeechRecognition está diseñado solo para uso interno.
+ms.openlocfilehash: 13f05850174757c9d0a77875433fe4f54a49a052
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459044"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512054"
 ---
 # <a name="completefindingalspeechrecognition"></a>CompleteFindInGALSpeechRecognition
 
-El elemento **CompleteFindInGALSpeechRecognition** está destinado sólo para uso interno. 
+El **elemento CompleteFindInGALSpeechRecognition** está diseñado solo para uso interno. 
   
 ```XML
 <CompleteFindInGALSpeechRecognition />
@@ -29,11 +29,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -50,8 +50,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

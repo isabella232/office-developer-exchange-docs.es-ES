@@ -4,26 +4,26 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 2c0bc41c-2452-4fc8-a19c-0e85f9fdbc4a
-description: El elemento ServerVersion representa el número de versión del equipo que ejecuta Microsoft Exchange Server.
-ms.openlocfilehash: 3ef531a69d2dd00ee9784c9eb191684ce517e842
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ServerVersion representa el número de versión del equipo que se ejecuta Microsoft Exchange Server.
+ms.openlocfilehash: bc7f9daa62e628e41f7541a609550e90af211928
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461971"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527380"
 ---
 # <a name="serverversion-pox"></a>ServerVersion (POX)
 
-El elemento **ServerVersion** representa el número de versión del equipo que ejecuta Microsoft Exchange Server. 
+El **elemento ServerVersion** representa el número de versión del equipo que se ejecuta Microsoft Exchange Server. 
   
-- [Detección automática (POX)](autodiscover-pox.md) 
-- [Respuesta (POX)](response-pox.md)
-- [Cuenta (POX)](account-pox.md)
-- [Protocolo (POX)](protocol-pox.md)
+- [AutoDiscover (POX)](autodiscover-pox.md) 
+- [Response (POX)](response-pox.md)
+- [Account (POX)](account-pox.md)
+- [Protocol (POX)](protocol-pox.md)
 - [ServerVersion (POX)](serverversion-pox.md)
   
 ```xml
@@ -36,29 +36,29 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange que tiene instalado el rol de servidor acceso de clientes.  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange que tiene instalado el rol de servidor Acceso de cliente.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa el número de versión de Exchange Server.
+El valor de texto representa el número Exchange versión del servidor.
   
 ## <a name="remarks"></a>Comentarios
 
-El valor **ServerVersion** solo es válido si el elemento [Type (POX)](type-pox.md) es igual a EXCH o expr. El valor **ServerVersion** es un número hexadecimal que contiene el MajorVersion, MinorVersion y MajorBuildNumber del servidor. 
+El **valor de ServerVersion** solo es válido si el elemento [Type (POX)](type-pox.md) es igual a EXCH o EXPR. El **valor ServerVersion** es un número hexadecimal que contiene los valores MajorVersion, MinorVersion y MajorBuildNumber del servidor. 
   
 ## <a name="example"></a>Ejemplo
 
-En el siguiente ejemplo se muestran los valores de **ServerVersion** que se devuelven en una respuesta de detección automática para obtener y mostrar MajorVersion, MinorVersion y MajorBuildNumber. Este ejemplo permite escribir un valor hexadecimal para el valor **ServerVersion** . Si no se especifica ningún valor de **ServerVersion** , se usa un valor de **SERVERVERSION** predeterminado de 738180DA. 
+En el ejemplo siguiente se encubre un valor **ServerVersion** que se devuelve en una respuesta de detección automática para obtener y mostrar MajorVersion, MinorVersion y MajorBuildNumber. Este ejemplo permite escribir un valor hexadecimal para el **valor ServerVersion.** Si no se introduce ningún valor de **ServerVersion,** se usa un valor **predeterminado de ServerVersion** de 738180DA. 
   
 ```csharp
 static void Main(string[] args)
@@ -103,7 +103,7 @@ static void Main(string[] args)
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

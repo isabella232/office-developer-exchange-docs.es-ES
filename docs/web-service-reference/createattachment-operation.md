@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateAttachment
 api_type:
 - schema
 ms.assetid: e066db95-6963-4507-a8d0-8efad287f550
 description: La operación CreateAttachment crea un elemento o datos adjuntos de archivo y lo adjunta al elemento especificado.
-ms.openlocfilehash: 8028c56aa306774b54b39e5ee1ac0382b9113fa0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 0c75e8c73bf4352e2703a6ca6ac06e261e8f37c9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456573"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511884"
 ---
 # <a name="createattachment-operation"></a>Operación CreateAttachment
 
 La operación CreateAttachment crea un elemento o datos adjuntos de archivo y lo adjunta al elemento especificado.
   
-## <a name="file-createattachment-request-example"></a>Ejemplo de solicitud de CreateAttachment de archivo
+## <a name="file-createattachment-request-example"></a>Ejemplo de solicitud CreateAttachment de archivo
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud CreateAttachment muestra cómo crear un archivo adjunto.
+En el siguiente ejemplo de una solicitud CreateAttachment se muestra cómo crear datos adjuntos de archivo.
   
 ### <a name="code"></a>Código
 
@@ -57,27 +57,27 @@ El siguiente ejemplo de una solicitud CreateAttachment muestra cómo crear un ar
 Se debe proporcionar un nombre para los datos adjuntos.
   
 > [!NOTE]
-> El identificador de elemento primario y la clave de cambio se han abreviado para preservar la legibilidad. 
+> El identificador del elemento primario y la clave de cambio se han acortado para conservar la legibilidad. 
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [CreateAttachment](createattachment.md)
     
 - [ParentItemId](parentitemid.md)
     
-- [Datos adjuntos](attachments-ex15websvcsotherref.md)
+- [Adjuntos](attachments-ex15websvcsotherref.md)
     
 - [FileAttachment](fileattachment.md)
     
-- [Nombre (AttachmentType)](name-attachmenttype.md)
+- [Name (AttachmentType)](name-attachmenttype.md)
     
-- [Content](content.md)
+- [Contenido](content.md)
     
-## <a name="successful-file-createattachment-response-example"></a>Ejemplo de archivo con éxito CreateAttachment Response
+## <a name="successful-file-createattachment-response-example"></a>Ejemplo de respuesta CreateAttachment de archivo correcto
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateAttachment.
   
@@ -113,9 +113,9 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateA
 
 ### <a name="comment"></a>Comentario
 
-La respuesta contiene el identificador del archivo adjunto. También contiene el identificador y la clave de cambio del elemento raíz. Los identificadores de elemento y la clave de cambio se han abreviado para preservar la legibilidad.
+La respuesta contiene el identificador del archivo adjunto. También contiene el identificador y la clave de cambio del elemento raíz. Los identificadores de elemento y la clave de cambio se han acortado para conservar la legibilidad.
   
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -129,17 +129,17 @@ En la respuesta se usan los siguientes elementos:
     
 - [ResponseCode](responsecode.md)
     
-- [Datos adjuntos](attachments-ex15websvcsotherref.md)
+- [Adjuntos](attachments-ex15websvcsotherref.md)
     
 - [FileAttachment](fileattachment.md)
     
 - [AttachmentId](attachmentid.md)
     
-## <a name="item-createattachment-request-example"></a>Ejemplo de solicitud de CreateAttachment de elemento
+## <a name="item-createattachment-request-example"></a>Ejemplo de solicitud CreateAttachment item
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud CreateAttachment muestra cómo crear un elemento adjunto.
+En el siguiente ejemplo de una solicitud CreateAttachment se muestra cómo crear datos adjuntos de elementos.
   
 ### <a name="code"></a>Código
 
@@ -170,29 +170,29 @@ El siguiente ejemplo de una solicitud CreateAttachment muestra cómo crear un el
 
 Se debe proporcionar un nombre para los datos adjuntos.
   
- **Nota:** El identificador de elemento primario y la clave de cambio se han abreviado para preservar la legibilidad. 
+ **Nota** El identificador del elemento primario y la clave de cambio se han acortado para conservar la legibilidad. 
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [CreateAttachment](createattachment.md)
     
 - [ParentItemId](parentitemid.md)
     
-- [Datos adjuntos](attachments-ex15websvcsotherref.md)
+- [Adjuntos](attachments-ex15websvcsotherref.md)
     
 - [ItemAttachment](itemattachment.md)
     
-- [Nombre (AttachmentType)](name-attachmenttype.md)
+- [Name (AttachmentType)](name-attachmenttype.md)
     
-- [Message](message-ex15websvcsotherref.md)
+- [Mensaje](message-ex15websvcsotherref.md)
     
 - [Asunto](subject.md)
     
-## <a name="successful-item-createattachment-response-example"></a>Ejemplo de respuesta de CreateAttachment de elemento correcta
+## <a name="successful-item-createattachment-response-example"></a>Ejemplo de respuesta CreateAttachment de elemento correcto
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateAttachment.
   
@@ -228,9 +228,9 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateA
 
 ### <a name="comment"></a>Comentario
 
-La respuesta contiene el identificador de los datos adjuntos nuevos. También contiene el identificador y la clave de cambio del elemento raíz. El elemento raíz es el elemento que contiene los datos adjuntos. Los identificadores de elemento y la clave de cambio se han abreviado para preservar la legibilidad.
+La respuesta contiene el identificador de los nuevos datos adjuntos. También contiene el identificador y la clave de cambio del elemento raíz. El elemento raíz es el elemento que contiene los datos adjuntos. Los identificadores de elemento y la clave de cambio se han acortado para conservar la legibilidad.
   
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -244,7 +244,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [ResponseCode](responsecode.md)
     
-- [Datos adjuntos](attachments-ex15websvcsotherref.md)
+- [Adjuntos](attachments-ex15websvcsotherref.md)
     
 - [ItemAttachment](itemattachment.md)
     
@@ -252,9 +252,9 @@ En la respuesta se usan los siguientes elementos:
     
 ## <a name="createattachment-error-response-example"></a>Ejemplo de respuesta de error CreateAttachment
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta de error a la solicitud CreateAttachment. El error se debe a que no se ha especificado el nombre de los datos adjuntos.
+En el ejemplo siguiente se muestra una respuesta de error a la solicitud CreateAttachment. El error se debe a que no se especificó el nombre de los datos adjuntos.
   
 ### <a name="code"></a>Código
 
@@ -289,7 +289,7 @@ En el ejemplo siguiente se muestra una respuesta de error a la solicitud CreateA
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -309,13 +309,13 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - [ExceptionFieldURI](exceptionfielduri.md)
     
-- [Datos adjuntos](attachments-ex15websvcsotherref.md)
+- [Adjuntos](attachments-ex15websvcsotherref.md)
     
 ## <a name="remarks"></a>Comentarios
 
-Si se adjuntan varios datos adjuntos a un elemento en una sola acción de ida y vuelta, el RootItemChangeKey del último mensaje de respuesta es el que representa la nueva clave de cambio del elemento que tiene los datos adjuntos.
+Si se adjuntan varios datos adjuntos a un elemento en un solo recorrido de ida y vuelta, RootItemChangeKey en el último mensaje de respuesta es el que representa la nueva clave de cambio del elemento que tiene los datos adjuntos.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

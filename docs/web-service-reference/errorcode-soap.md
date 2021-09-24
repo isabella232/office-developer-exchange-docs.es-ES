@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 5e5ec861-0191-4ecb-a906-47ce8ed96381
 description: El elemento ErrorCode representa un código de error devuelto por el servicio de detección automática.
-ms.openlocfilehash: d66167e51733ffcaa3d62a985d3e03e2ac80b715
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fa40cb8b7a2ec80ecf752058f540969013748d39
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460095"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59530776"
 ---
 # <a name="errorcode-soap"></a>ErrorCode (SOAP)
 
-El elemento **ErrorCode** representa un código de error devuelto por el servicio de detección automática. 
+El **elemento ErrorCode** representa un código de error devuelto por el servicio de detección automática. 
   
 ```XML
 <ErrorCode/>
@@ -31,34 +31,34 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AutodiscoverResponse (SOAP)](autodiscoverresponse-soap.md) <br/> |Representa el tipo base para todas las respuestas que devuelve el servicio de detección automática.  <br/> |
+|[AutodiscoverResponse (SOAP)](autodiscoverresponse-soap.md) <br/> |Representa el tipo base de todas las respuestas que devuelve el servicio de detección automática.  <br/> |
 |[DomainResponse (SOAP)](domainresponse-soap.md) <br/> |Contiene la configuración solicitada para el dominio especificado.  <br/> |
-|[GetDomainSettingsResponse (SOAP)](getdomainsettingsresponse-soap.md) <br/> |Contiene la respuesta a una llamada de [operación de GetDomainSettings (SOAP)](getdomainsettings-operation-soap.md) para un dominio individual.  <br/> |
-|[GetFederationInformationResponse (SOAP)](getfederationinformationresponse-soap.md) <br/> |Contiene la respuesta a una solicitud de [operación de GetFederationInformation (SOAP)](getfederationinformation-operation-soap.md) .  <br/> |
-|[Respuesta (SOAP)](response-soap.md) <br/> |Contiene la respuesta a una solicitud de [operación de GetUserSettings (SOAP)](getusersettings-operation-soap.md).  <br/> |
+|[GetDomainSettingsResponse (SOAP)](getdomainsettingsresponse-soap.md) <br/> |Contiene la respuesta a una llamada de operación [GetDomainSettings (SOAP)](getdomainsettings-operation-soap.md) para un dominio individual.  <br/> |
+|[GetFederationInformationResponse (SOAP)](getfederationinformationresponse-soap.md) <br/> |Contiene la respuesta a una [solicitud de operación GetFederationInformation (SOAP).](getfederationinformation-operation-soap.md)  <br/> |
+|[Response (SOAP)](response-soap.md) <br/> |Contiene la respuesta a una [solicitud de operación GetUserSettings (SOAP).](getusersettings-operation-soap.md)  <br/> |
 |[UserSettingError (SOAP)](usersettingerror-soap.md) <br/> |Representa un error que se devuelve al recuperar una configuración de usuario.  <br/> |
-|[UserResponse (SOAP)](userresponse-soap.md) <br/> |Representa una respuesta a una solicitud de [operación de GetUserSettings (SOAP)](getusersettings-operation-soap.md) para un usuario individual.  <br/> |
+|[UserResponse (SOAP)](userresponse-soap.md) <br/> |Representa una respuesta a una [solicitud de operación GetUserSettings (SOAP)](getusersettings-operation-soap.md) para un usuario individual.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa el código de error de una respuesta de error de detección automática. En la siguiente tabla se enumeran los valores de texto posibles para el elemento **ErrorCode** . 
+El valor de texto representa el código de error de una respuesta de error de detección automática. En la tabla siguiente se enumeran los posibles valores de texto para el **elemento ErrorCode.** 
   
-|**Valor de texto del código de error**|**Descripción**|
+|**Valor de texto de código de error**|**Descripción**|
 |:-----|:-----|
 |NoError  <br/> |No hubo ningún error.  <br/> |
-|RedirectAddress  <br/> |La persona que llama debe seguir la redirección de la dirección de correo electrónico que ha devuelto la detección automática.  <br/> |
-|RedirectUrl  <br/> |La persona que llama debe seguir la redirección URL devuelta por la detección automática.  <br/> |
-|InvalidUser  <br/> |El usuario que se pasó en la solicitud no es válido.  <br/> |
+|RedirectAddress  <br/> |El autor de la llamada debe seguir el redireccionamiento de direcciones de correo electrónico devuelto por detección automática.  <br/> |
+|RedirectUrl  <br/> |El autor de la llamada debe seguir el redireccionamiento de dirección URL devuelto por Detección automática.  <br/> |
+|InvalidUser  <br/> |El usuario que se ha pasado en la solicitud no es válido.  <br/> |
 |InvalidRequest  <br/> |La solicitud no es válida.  <br/> |
 |InvalidSetting  <br/> |Una configuración especificada no es válida.  <br/> |
 |SettingIsNotAvailable  <br/> |Una configuración especificada no está disponible.  <br/> |
@@ -73,10 +73,10 @@ El valor de texto representa el código de error de una respuesta de error de de
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

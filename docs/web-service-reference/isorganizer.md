@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a31ac268-5061-4272-a433-ffaea2fbcfa9
 description: El elemento IsOrganizer especifica un valor booleano que indica si esta persona es el organizador de la reunión.
-ms.openlocfilehash: 45b7a66068dc00f6e60b7380240bea6836282fd4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: a60485146e333e69391dc1771b2c72ef25043a8b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466566"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518270"
 ---
 # <a name="isorganizer"></a>IsOrganizer
 
-El elemento **IsOrganizer** especifica un valor booleano que indica si esta persona es el organizador de la reunión. 
+El **elemento IsOrganizer** especifica un valor booleano que indica si esta persona es el organizador de la reunión. 
   
 ```XML
 <IsOrganizer>true | false</IsOrganizer>
@@ -30,22 +30,22 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Representa un Exchange de calendario.  <br/> |
 |[MeetingMessage](meetingmessage.md) <br/> |Representa un mensaje de reunión.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **IsOrganizer** indica que el elemento de calendario o el mensaje de reunión fue creado por el usuario. Un valor de **false** indica que no se ha creado el elemento de calendario o el mensaje de reunión BV al usuario. 
+Un valor de texto **de true** para el **elemento IsOrganizer** indica que el usuario creó el elemento de calendario o el mensaje de reunión. Un valor de **false** indica que el elemento de calendario o el mensaje de reunión no se creó bv el usuario. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -59,12 +59,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

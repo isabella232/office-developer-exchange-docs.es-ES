@@ -1,23 +1,23 @@
 ---
-title: Metadatos
+title: Metadata
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c1cc609b-65ff-4998-8d2b-545f0fdcb54c
-description: El elemento metadata contiene metadatos sobre la aplicación de correo.
-ms.openlocfilehash: b7dd13936a25a43394b9a2d5eea8808fe08b4eb6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Metadata contiene metadatos sobre la aplicación de correo.
+ms.openlocfilehash: 13ce14d197079702f0e19c815f413590f1a8d01b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460592"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510956"
 ---
-# <a name="metadata"></a>Metadatos
+# <a name="metadata"></a>Metadata
 
-El elemento **Metadata** contiene metadatos sobre la aplicación de correo. 
+El **elemento Metadata** contiene metadatos sobre la aplicación de correo. 
   
 ```XML
 <Metadata>
@@ -33,7 +33,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -41,7 +41,7 @@ Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[App](app.md)
+[Aplicación](app.md)
   
 ## <a name="remarks"></a>Comentarios
 
@@ -58,12 +58,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |No aplicable  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-[App](app.md)
+[Aplicación](app.md)
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

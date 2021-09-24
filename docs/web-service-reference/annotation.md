@@ -1,50 +1,50 @@
 ---
-title: Anotación
+title: Annotation
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e0392635-9d0f-46d5-84ef-0a8a3036479a
-description: El elemento Annotation contiene las notas opcionales agregadas por un usuario.
-ms.openlocfilehash: 291d875085f9bc13e92a14b844b66878f5e6eb2a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Annotation contiene notas opcionales agregadas por un usuario.
+ms.openlocfilehash: c34f19190003de218baf9e3d8923688224b1f804
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466118"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59531232"
 ---
-# <a name="annotation"></a>Anotación
+# <a name="annotation"></a>Annotation
 
-El elemento **Annotation** contiene las notas opcionales agregadas por un usuario. 
+El **elemento Annotation** contiene notas opcionales agregadas por un usuario. 
   
 ```XML
 <Annotation></Annotation>
 ```
 
- **XS: String**
+ **xs:string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[EnhancedLocation](enhancedlocation.md) <br/> |Especifica la información de ubicación, como el nombre, la dirección y las notas opcionales de una ubicación.  <br/> |
+|[EnhancedLocation](enhancedlocation.md) <br/> |Especifica información de ubicación, como el nombre, la dirección y las notas opcionales sobre una ubicación.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento Annotation es una nota agregada por el usuario acerca de una ubicación.
+El valor de texto del elemento Annotation es una nota agregada por el usuario sobre una ubicación.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -58,10 +58,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

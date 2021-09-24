@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: eb0a7897-c642-4c93-a238-be03128af54e
-description: El elemento SearchableMailboxes contiene una matriz de los buzones devueltos por una solicitud de GetSearchableMailboxes.
-ms.openlocfilehash: 5de15e1c2ae4a587052f836b189651450a1e7482
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento SearchableMailboxes contiene una matriz de buzones devueltos desde una solicitud GetSearchableMailboxes.
+ms.openlocfilehash: 5d8b1f19a4d4e2e78ab4d4a251d3c7538ccdd9ff
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467448"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510844"
 ---
 # <a name="searchablemailboxes"></a>SearchableMailboxes
 
-El elemento **SearchableMailboxes** contiene una matriz de los buzones devueltos por una solicitud de **GetSearchableMailboxes** . 
+El **elemento SearchableMailboxes** contiene una matriz de buzones devueltos desde una **solicitud GetSearchableMailboxes.** 
   
 ```XML
 <SearchableMailboxes>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

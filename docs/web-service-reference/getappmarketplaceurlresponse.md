@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dc3368ec-78c2-4f8d-8394-4891e90dafd2
 description: El elemento GetAppMarketplaceUrlResponse especifica la respuesta a una solicitud GetAppMarketplaceUrl.
-ms.openlocfilehash: 7ff000908a2f73f41575cae8a7795644dd60565d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 14ab39add46441080fc7ae88264c79ef1bc8d98f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530856"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59530005"
 ---
 # <a name="getappmarketplaceurlresponse"></a>GetAppMarketplaceUrlResponse
 
-El elemento **GetAppMarketplaceUrlResponse** especifica la respuesta a una solicitud **GetAppMarketplaceUrl** . 
+El **elemento GetAppMarketplaceUrlResponse** especifica la respuesta a una **solicitud GetAppMarketplaceUrl.** 
   
 ```XML
 <GetAppMarketplaceUrlResponse ResponseClass=" Success | Warning | Error ">
@@ -44,7 +44,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Correcto  <br/> |Indica que se ha realizado correctamente.  <br/> |
+|Correcto  <br/> |Indica que se ha correcto.  <br/> |
 |Advertencia  <br/> |Indica una advertencia.  <br/> |
 |Error  <br/> |Indica un error.  <br/> |
    
@@ -53,16 +53,16 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
 |[AppMarketplaceUrl](appmarketplaceurl.md) <br/> |Especifica la dirección URL de la aplicación.  <br/> |
-|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Actualmente no está en uso y reservado para uso futuro.  <br/> |
+|[DescriptiveLinkKey](descriptivelinkkey.md) <br/> |Actualmente no se usa y está reservado para uso futuro.  <br/> |
 |[MessageText](messagetext.md) <br/> |Proporciona una descripción de texto del estado de la respuesta.  <br/> |
-|[MessageXml](messagexml.md) <br/> |Proporciona información de respuesta de error adicional.  <br/> |
+|[MessageXml](messagexml.md) <br/> |Proporciona información adicional de respuesta a errores.  <br/> |
 |[ResponseCode](responsecode.md) <br/> |Proporciona información de estado sobre la solicitud.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta de una solicitud de servicios web Exchange.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta de una Exchange de servicios web.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -75,13 +75,13 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

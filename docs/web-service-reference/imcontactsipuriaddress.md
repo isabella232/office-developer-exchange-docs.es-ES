@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4a3d12a2-0736-4f60-b3b8-14586467df3c
-description: El elemento ImContactSipUriAddress contiene la dirección URI del SIP de un contacto que se agrega a un grupo de mensajería instantánea (mi).
-ms.openlocfilehash: 07eff4ef597b689f65241622677e4e4afc9300be
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ImContactSipUriAddress contiene la dirección URI sip de un contacto que se agrega a un grupo de mensajería instantánea (MI).
+ms.openlocfilehash: 3b062d4d9679dd96ce5a36b9b048c13a6beb1f0f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460711"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541150"
 ---
 # <a name="imcontactsipuriaddress"></a>ImContactSipUriAddress
 
-El elemento **ImContactSipUriAddress** contiene la dirección URI del SIP de un contacto que se agrega a un grupo de mensajería instantánea (mi). 
+El **elemento ImContactSipUriAddress** contiene la dirección URI sip de un contacto que se agrega a un grupo de mensajería instantánea (MI). 
   
 ```XML
 <ImContactSipUriAddress></ImContactSipUriAddress>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ImContactSipUriAddress** es la dirección URI del SIP de un contacto. 
+El valor de texto del **elemento ImContactSipUriAddress** es la dirección URI de SIP de un contacto. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
 

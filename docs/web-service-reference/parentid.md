@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bb7aaa46-3a04-4197-aebb-8881ff10603f
 description: El elemento ParentId especifica el identificador del elemento primario en una vista previa de búsqueda.
-ms.openlocfilehash: e09b5f9e463c7ecdfc595c87a84584f69cab3f2c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: cbef7b9419af8821f830a77a6f8e295375c975d5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529024"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519271"
 ---
 # <a name="parentid"></a>ParentId
 
-El elemento **parentId** especifica el identificador del elemento primario en una vista previa de búsqueda. 
+El **elemento ParentId** especifica el identificador del elemento primario en una vista previa de búsqueda. 
   
 ```XML
 <ParentId Id="" ChangeKey=""/>
@@ -33,12 +33,12 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
-|Id  <br/> |El valor de texto del atributo **ID** es el identificador del elemento primario.  <br/> |
-|ChangeKey  <br/> |El valor de texto del atributo **changekey** es la clave de cambio del elemento primario.  <br/> |
+|Id  <br/> |El valor de texto del **atributo Id** es el identificador del elemento primario.  <br/> |
+|ChangeKey  <br/> |El valor de texto del **atributo ChangeKey** es la clave de cambio del elemento primario.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |true  <br/> |
    
 

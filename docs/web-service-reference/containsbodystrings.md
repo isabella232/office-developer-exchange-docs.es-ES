@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ContainsBodyStrings
 api_type:
 - schema
 ms.assetid: 70639472-64bb-456a-8b40-dce727542443
 description: El elemento ContainsBodyStrings indica las cadenas que deben aparecer en el cuerpo de los mensajes entrantes para que se aplique la condición o excepción.
-ms.openlocfilehash: 008261ab94b1bed33cc72cacf7abe7aa58927d1a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: c34326db4dc1768758fb864535fa10d8994b00bb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463807"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518697"
 ---
 # <a name="containsbodystrings"></a>ContainsBodyStrings
 
-El elemento **ContainsBodyStrings** indica las cadenas que deben aparecer en el cuerpo de los mensajes entrantes para que se aplique la condición o excepción. 
+El **elemento ContainsBodyStrings** indica las cadenas que deben aparecer en el cuerpo de los mensajes entrantes para que se aplique la condición o excepción. 
   
 ```XML
 <ContainsBodyStrings>
@@ -36,7 +36,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -65,12 +65,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,23 +1,23 @@
 ---
-title: Buzones de correo (ArrayOfStringsType)
+title: Mailboxes (ArrayOfStringsType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 20596ebd-ed0f-4ad0-8631-e504220f1016
-description: El elemento mailboxes contiene una lista de buzones que se ven afectados por la retención.
-ms.openlocfilehash: 376bd1f007e4b3d27bc44076a7b09993c49bd416
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Mailboxes contiene una lista de buzones afectados por la retención.
+ms.openlocfilehash: d7eab2b3fb6566380f2ccc4d2419f5eb4a45460a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468162"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528533"
 ---
-# <a name="mailboxes-arrayofstringstype"></a>Buzones de correo (ArrayOfStringsType)
+# <a name="mailboxes-arrayofstringstype"></a>Mailboxes (ArrayOfStringsType)
 
-El elemento **mailboxes** contiene una lista de buzones que se ven afectados por la retención. 
+El **elemento Mailboxes** contiene una lista de buzones afectados por la retención. 
   
 ```XML
 <Mailboxes>
@@ -33,7 +33,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -54,8 +54,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

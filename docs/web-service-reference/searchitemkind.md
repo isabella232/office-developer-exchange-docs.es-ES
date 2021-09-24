@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 89513c26-b751-4619-a300-0ed8f55b0102
-description: El elemento SearchItemKind indica el tipo de elementos que se buscan en una operación de FindMailboxStatisticsByKeyword.
-ms.openlocfilehash: e0625ac169c3083702494c094da15d38d220fe67
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento SearchItemKind indica el tipo de elementos que se buscan para una operación FindMailboxStatisticsByKeyword.
+ms.openlocfilehash: 93803d181f32d88c30ab0fa9a72bb92f22907dde
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464003"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510864"
 ---
 # <a name="searchitemkind"></a>SearchItemKind
 
-El elemento **SearchItemKind** indica el tipo de elementos que se buscan en una operación de **FindMailboxStatisticsByKeyword** . 
+El **elemento SearchItemKind** indica el tipo de elementos que se buscan para una **operación FindMailboxStatisticsByKeyword.** 
   
 ```XML
 <SearchItemKind>Email | Meetings | Tasks | Notes | Docs | Journals | Contacts | Im | Voicemail | Faxes | Posts | Rssfeeds</SearchItemKind>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,31 +42,31 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **SearchItemKind** es el tipo de elemento en el que se buscan palabras clave. La lista siguiente contiene los valores de texto que se pueden usar en el elemento **SearchItemKind** . 
+El valor de texto del **elemento SearchItemKind** es el tipo de elemento en el que se buscan palabras clave. La siguiente lista contiene los valores de texto que se pueden usar en el **elemento SearchItemKind.** 
   
-- **Email** -indica que se buscan palabras clave en los mensajes de correo electrónico. 
+- **Correo** electrónico: indica que se buscan palabras clave en los mensajes de correo electrónico. 
     
-- **Reuniones** : indica que se buscan palabras clave en las reuniones. 
+- **Reuniones:** indica que se buscan palabras clave en las reuniones. 
     
-- **Tareas** : indica que se buscan palabras clave en las tareas. 
+- **Tareas:** indica que se buscan palabras clave en las tareas. 
     
-- **Notas** : indica que se buscan palabras clave en las notas. 
+- **Notas:** indica que se buscan palabras clave en las notas. 
     
-- **Docs** : indica que se buscan palabras clave en los documentos. 
+- **Docs:** indica que se buscan palabras clave en los documentos. 
     
-- **Diarios** : indica que se buscan palabras clave en los diarios. 
+- **Diarios:** indica que se buscan palabras clave en los diarios. 
     
-- **Contacts** : indica que se buscan palabras clave en los contactos. 
+- **Contactos:** indica que se buscan palabras clave en los contactos. 
     
-- **Mi** : indica que se buscan palabras clave en los mensajes instantáneos. 
+- **Im:** indica que se buscan palabras clave en los mensajes instantáneos. 
     
-- Correo **de voz: indica** que se buscan palabras clave en los correos de voz. 
+- **Correo** de voz: indica que se buscan palabras clave en los correos de voz. 
     
-- **Faxes** : indica que se buscan palabras clave en los faxes. 
+- **Faxes:** indica que se buscan palabras clave en los faxes. 
     
-- **Postes** : indica que se buscan palabras clave en las publicaciones. 
+- **Posts:** indica que se buscan palabras clave en las publicaciones. 
     
-- **RSSFeeds** : indica que se buscan palabras clave en las fuentes RSS. 
+- **Rssfeeds:** indica que se buscan palabras clave en fuentes RSS. 
     
 ## <a name="remarks"></a>Comentarios
 
@@ -79,8 +79,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

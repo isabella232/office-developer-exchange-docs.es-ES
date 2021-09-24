@@ -4,27 +4,27 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 08c6c5a2-a67a-4141-a8bd-1b5d560b90a7
-description: La respuesta de detección automática contiene una respuesta a una solicitud de detección automática que incluye una lista de direcciones URL que se usan para establecer un enlace con los servicios web Exchange (EWS).
-ms.openlocfilehash: 0d903d9829fa6dc1273d8b25a1eeb0b68700d5da
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La respuesta de detección automática contiene una respuesta a una solicitud de detección automática que incluye una lista de direcciones URL que se usan para establecer un enlace con Exchange Web Services (EWS).
+ms.openlocfilehash: 42705856a28a1b5e595e55ab3f77f78089a1ee21
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462286"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59527903"
 ---
 # <a name="pox-autodiscover-response-for-exchange"></a>Respuesta de detección automática de POX para Exchange
 
-La respuesta de detección automática contiene una respuesta a una solicitud de detección automática que incluye una lista de direcciones URL que se usan para establecer un enlace con los servicios web Exchange (EWS).
+La respuesta de detección automática contiene una respuesta a una solicitud de detección automática que incluye una lista de direcciones URL que se usan para establecer un enlace con Exchange Web Services (EWS).
   
 ## <a name="autodiscover-response-example"></a>Ejemplo de respuesta de detección automática
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta de detección automática correcta.
+En el ejemplo siguiente se muestra una respuesta correcta de detección automática.
   
 ### <a name="code"></a>Código
 
@@ -74,17 +74,17 @@ En el ejemplo siguiente se muestra una respuesta de detección automática corre
 
 ### <a name="comments"></a>Comentarios
 
-Para enlazar con los servicios Web de Exchange, use la dirección URL identificada por el elemento [ASUrl (POX)](asurl-pox.md) . 
+Para enlazar a Exchange Web Services, use la dirección URL identificada por el elemento [ASUrl (POX).](asurl-pox.md) 
   
 ### <a name="response-element"></a>Elemento Response
 
 Los siguientes elementos se usan en el cuerpo de la respuesta:
   
-- [Detección automática (POX)](autodiscover-pox.md)
+- [AutoDiscover (POX)](autodiscover-pox.md)
     
-- [Respuesta (POX)](response-pox.md)
+- [Response (POX)](response-pox.md)
     
-- [Usuario (POX)](user-pox.md)
+- [User (POX)](user-pox.md)
     
 - [DisplayName (POX)](displayname-pox.md)
     
@@ -92,17 +92,17 @@ Los siguientes elementos se usan en el cuerpo de la respuesta:
     
 - [DeploymentId (POX)](deploymentid-pox.md)
     
-- [Cuenta (POX)](account-pox.md)
+- [Account (POX)](account-pox.md)
     
 - [AccountType (POX)](accounttype-pox.md)
     
-- [Acción (POX)](action-pox.md)
+- [Action (POX)](action-pox.md)
     
-- [Protocolo (POX)](protocol-pox.md)
+- [Protocol (POX)](protocol-pox.md)
     
-- [Tipo (POX)](type-pox.md)
+- [Type (POX)](type-pox.md)
     
-- [Servidor (POX)](server-pox.md)
+- [Server (POX)](server-pox.md)
     
 - [ServerDN (POX)](serverdn-pox.md)
     
@@ -118,7 +118,7 @@ Los siguientes elementos se usan en el cuerpo de la respuesta:
     
 - [OABUrl (POX)](oaburl-pox.md)
     
-- [Interno (POX)](internal-pox.md)
+- [Internal (POX)](internal-pox.md)
     
 - [OWAUrl (POX)](owaurl-pox.md)
     
@@ -126,7 +126,7 @@ Los siguientes elementos se usan en el cuerpo de la respuesta:
 
 ### <a name="description"></a>Description
 
-En el siguiente ejemplo se muestra una respuesta de error de detección automática.
+En el ejemplo siguiente se muestra una respuesta de error de detección automática.
   
 ### <a name="code"></a>Código
 
@@ -147,21 +147,21 @@ En el siguiente ejemplo se muestra una respuesta de error de detección automát
 
 Los siguientes elementos se usan en el cuerpo de la respuesta:
   
-- [Detección automática (POX)](autodiscover-pox.md)
+- [AutoDiscover (POX)](autodiscover-pox.md)
     
-- [Respuesta (POX)](response-pox.md)
+- [Response (POX)](response-pox.md)
     
 - [Error (POX)](error-pox.md)
     
 - [ErrorCode (POX)](errorcode-pox.md)
     
-- [Mensaje (POX)](message-pox.md)
+- [Message (POX)](message-pox.md)
     
 - [DebugData (POX)](debugdata-pox.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Solicitud de detección automática de POX para Exchange](pox-autodiscover-request-for-exchange.md)
-- [Referencia de servicio Web de detección automática de POX para Exchange](pox-autodiscover-web-service-reference-for-exchange.md) 
+- [Solicitud de detección automática POX para Exchange](pox-autodiscover-request-for-exchange.md)
+- [Referencia del servicio web de detección automática de POX para Exchange](pox-autodiscover-web-service-reference-for-exchange.md) 
 - [Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

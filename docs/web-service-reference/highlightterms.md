@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ce4a2978-fd0c-41a4-ae65-aa6f5dc9a0f9
-description: El elemento HighlightTerms identifica los términos resaltados que se devuelven en una operación FindItem y una respuesta de operación FindConversation.
-ms.openlocfilehash: c55ffc010dc0cfb09403433aaf8a0809a26f71a3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento HighlightTerms identifica los términos resaltados devueltos en una operación FindItem y una respuesta de operación FindConversation.
+ms.openlocfilehash: 058c283ab4114f14b5bbffe20c6e953bd877f1e0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457637"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59511547"
 ---
 # <a name="highlightterms"></a>HighlightTerms
 
-El elemento **HighlightTerms** identifica los términos resaltados que se devuelven en una operación **FindItem** y una respuesta de operación **FindConversation** . 
+El **elemento HighlightTerms** identifica los términos resaltados devueltos en una **operación FindItem** y una respuesta de operación **FindConversation.** 
   
 ```XML
 <HighlightTerms>
@@ -32,11 +32,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Term
+Término
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

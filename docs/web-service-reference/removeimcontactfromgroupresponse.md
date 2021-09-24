@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cd97bd7f-55ed-4acb-b2e6-a69797b87a41
 description: El elemento RemoveImContactFromGroupResponse define una respuesta a una solicitud RemoveImContactFromGroup.
-ms.openlocfilehash: 71dc2deed8715dde802cb38c00b9c48ebce9462a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f5800953ca47a36685b4d5fac7cf9fb33c42c5df
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528709"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519075"
 ---
 # <a name="removeimcontactfromgroupresponse"></a>RemoveImContactFromGroupResponse
 
-El elemento **RemoveImContactFromGroupResponse** define una respuesta a una solicitud **RemoveImContactFromGroup** . 
+El **elemento RemoveImContactFromGroupResponse** define una respuesta a una **solicitud RemoveImContactFromGroup.** 
   
 ```XML
 <RemoveImContactFromGroupResponse>
@@ -35,7 +35,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

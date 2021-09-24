@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 04250f8d-1b83-43ae-8d2f-e052079bf2fc
-description: El elemento DisplayNamePrefixes especifica una matriz de prefijos de nombre para mostrar y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: 09e1e974cbe84ec8c7a4848c3367f2501269b797
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento DisplayNamePrefixes especifica una matriz de prefijos de nombre para mostrar y los identificadores de sus atribuciones de origen para la persona asociada.
+ms.openlocfilehash: d68965a3c002ddcc75ccf6e0895b9a452ff125f8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530750"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59518557"
 ---
 # <a name="displaynameprefixes"></a>DisplayNamePrefixes
 
-El elemento **DisplayNamePrefixes** especifica una matriz de prefijos de nombre para mostrar y los identificadores de sus atribuciones de origen para el rol asociado. 
+El **elemento DisplayNamePrefixes** especifica una matriz de prefijos de nombre para mostrar y los identificadores de sus atribuciones de origen para la persona asociada. 
   
 ```xml
 <DisplayNamePrefixes>
@@ -32,19 +32,19 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[StringAttributedValue](stringattributedvalue.md) <br/> |Especifica una instancia de una matriz de atributos asociada a un elemento de rol.  <br/> |
+|[StringAttributedValue](stringattributedvalue.md) <br/> |Especifica una instancia en una matriz de atributos asociados con un elemento persona.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud **GetPersona** .  <br/> |
+|[Rol](persona.md) <br/> |Especifica un conjunto de datos de persona devueltos por una **solicitud GetPersona.**  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -58,10 +58,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

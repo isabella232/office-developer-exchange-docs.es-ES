@@ -4,29 +4,29 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: c6666a42-a18f-4e4b-beb6-b25ff62cfcc5
-description: La operación GetFederationInformation proporciona información sobre el estado de Federación de la organización, como el URI de destino que se va a usar al solicitar tokens destinados a esta organización, y los otros dominios que la organización también ha federado.
-ms.openlocfilehash: 533b2f6d282e3287f4945df56b169f5bc93ff445
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación GetFederationInformation proporciona información sobre el estado de federación de la organización, como el URI de destino que se usará al solicitar tokens destinados a esta organización y los demás dominios que la organización también ha federado.
+ms.openlocfilehash: 915498440e4bc3d7262ed3a55350f7d3723d47d8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455628"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529957"
 ---
 # <a name="getfederationinformation-operation-soap"></a>Operación GetFederationInformation (SOAP)
 
-La operación **GetFederationInformation** proporciona información sobre el estado de Federación de la organización, como el URI de destino que se va a usar al solicitar tokens destinados a esta organización, y los otros dominios que la organización también ha federado. 
+La operación **GetFederationInformation** proporciona información sobre el estado de federación de la organización, como el URI de destino que se usará al solicitar tokens destinados a esta organización y los demás dominios que la organización también ha federado. 
   
-Solo las organizaciones federadas pueden compartir el calendario, los contactos y los mensajes con los usuarios externos.
+Solo las organizaciones federadas pueden compartir calendario, contactos y mensajes a usuarios externos.
   
 ## <a name="getfederationinformation-request-example"></a>Ejemplo de solicitud GetFederationInformation
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud **GetFederationInformation** muestra una solicitud de información de Federación de un usuario. El cliente envía esta solicitud al servidor. 
+En el siguiente ejemplo de una **solicitud GetFederationInformation** se muestra una solicitud de información de federación de un usuario. El cliente envía esta solicitud al servidor. 
   
 ### <a name="code"></a>Código
 
@@ -60,15 +60,15 @@ El siguiente ejemplo de una solicitud **GetFederationInformation** muestra una s
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [GetFederationInformationRequestMessage (SOAP)](getfederationinformationrequestmessage-soap.md)
     
-- [Solicitud (SOAP)](request-soap.md)
+- [Request (SOAP)](request-soap.md)
     
-- [Dominio (SOAP)](domain-soap.md)
+- [Domain (SOAP)](domain-soap.md)
     
 ## <a name="getfederationinformation-response-example"></a>Ejemplo de respuesta GetFederationInformation
 
@@ -111,7 +111,7 @@ En la respuesta se usan los siguientes elementos:
   
 - [GetFederationInformationResponseMessage (SOAP)](getfederationinformationresponsemessage-soap.md)
     
-- [Respuesta (SOAP)](response-soap.md)
+- [Response (SOAP)](response-soap.md)
     
 - [ErrorCode (SOAP)](errorcode-soap.md)
     
@@ -119,11 +119,11 @@ En la respuesta se usan los siguientes elementos:
     
 - [ApplicationUri (SOAP)](applicationuri-soap.md)
     
-- [Dominios (SOAP)](domains-soap.md)
+- [Domains (SOAP)](domains-soap.md)
     
-- [Dominio (SOAP)](domain-soap.md)
+- [Domain (SOAP)](domain-soap.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Operación GetUserSettings (SOAP)](getusersettings-operation-soap.md)
 - [Operación GetDomainSettings (SOAP)](getdomainsettings-operation-soap.md)

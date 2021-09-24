@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a62b0640-9800-45a6-a297-2105ff36881e
 description: El elemento RemoveImContactFromGroup define una solicitud para quitar un contacto de mensajería instantánea de un grupo de mensajería instantánea.
-ms.openlocfilehash: 379994ad5832b05e9f7da61d752f7660a6eec5ad
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 426129f6bb26b43374fcb706531af04aea3c1e20
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466965"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512411"
 ---
 # <a name="removeimcontactfromgroup"></a>RemoveImContactFromGroup
 
-El elemento **RemoveImContactFromGroup** define una solicitud para quitar un contacto de mensajería instantánea de un grupo de mensajería instantánea. 
+El **elemento RemoveImContactFromGroup** define una solicitud para quitar un contacto de mensajería instantánea de un grupo de mensajería instantánea. 
   
 ```XML
 <RemoveImContactFromGroup>
@@ -33,11 +33,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[ContactId](contactid.md)  |  [GROUPID](groupid.md)
+[ContactId](contactid.md)  |  [GroupId](groupid.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,8 +54,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

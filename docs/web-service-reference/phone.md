@@ -1,23 +1,23 @@
 ---
-title: Teléfono
+title: Phone
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: ITPro
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9381d8e0-b705-49fd-a822-00fb485bdbab
-description: El elemento Phone especifica un único número de teléfono que resulta de una extracción de entidad de contacto.
-ms.openlocfilehash: 7b0047eda90f2e2bb94fd7d0b8d317715ac5d2c9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El Teléfono especifica un único número de teléfono que resulta de una extracción de entidad de contacto.
+ms.openlocfilehash: fa9e0be88c2142b30304c3c5b758624fa73da7d1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459710"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59528363"
 ---
-# <a name="phone"></a>Teléfono
+# <a name="phone"></a>Phone
 
-El elemento **Phone** especifica un único número de teléfono que resulta de una extracción de entidad de contacto. 
+El **Teléfono** especifica un único número de teléfono que resulta de una extracción de entidad de contacto. 
   
 ```XML
 <Phone>
@@ -34,7 +34,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

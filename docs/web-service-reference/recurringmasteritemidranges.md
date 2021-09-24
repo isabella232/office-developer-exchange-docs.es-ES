@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5c9c89b5-4ce8-437b-a332-fa7ed35c8388
 description: El elemento RecurringMasterItemIdRanges especifica una matriz de intervalos de repeticiones.
-ms.openlocfilehash: 784676844c5c58c65b8cc6177843bf26d351b7d9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 582cbe27d468c1ff7ec22f03ba9f6976d244e234
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528758"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59529373"
 ---
 # <a name="recurringmasteritemidranges"></a>RecurringMasterItemIdRanges
 
-El elemento **RecurringMasterItemIdRanges** especifica una matriz de intervalos de repeticiones. 
+El **elemento RecurringMasterItemIdRanges** especifica una matriz de intervalos de repeticiones. 
   
 ```XML
 <RecurringMasterItemIdRanges Id="" ChangeKey="">
@@ -34,8 +34,8 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
-|**Id** <br/> |El valor de texto del atributo **ID** es un identificador único del elemento maestro periódico. Se trata de un valor de **cadena** .  <br/> |
-|**ChangeKey** <br/> |El valor de texto del atributo **changekey** es la clave de cambio periódico del elemento maestro. Se trata de un valor de **cadena** .  <br/> |
+|**Id** <br/> |El valor de texto del **atributo Id** es el identificador único de un elemento maestro periódico. Este es un **valor de** cadena.  <br/> |
+|**ChangeKey** <br/> |El valor de texto del **atributo ChangeKey** es la clave de cambio del elemento maestro periódico. Este es un **valor de** cadena.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -4,29 +4,29 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: f1b812c3-ae8b-4d89-92e2-41d2fe51e32f
-description: El elemento ServiceHome contiene la dirección URL de la Página principal del proveedor de servicios de Internet (ISP).
-ms.openlocfilehash: 1e4a40cbc97167dc2cf79ccbfcacff988794c3a0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ServiceHome contiene la dirección URL de la página principal del proveedor de servicios de Internet (ISP).
+ms.openlocfilehash: 2f57d715d029950520ff68ae2d75c808706d17f9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44439115"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510900"
 ---
 # <a name="servicehome-pox"></a>ServiceHome (POX)
 
-El elemento **ServiceHome** contiene la dirección URL de la Página principal del proveedor de servicios de Internet (ISP). 
+El **elemento ServiceHome** contiene la dirección URL de la página principal del proveedor de servicios de Internet (ISP). 
   
-[Detección automática (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[Respuesta (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[Cuenta (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
-[Imagen (POX)](image-pox.md)
+[Image (POX)](image-pox.md)
   
 ```xml
 <ServiceHome/>
@@ -38,23 +38,23 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de la cuenta del usuario.  <br/> |
+|[Account (POX)](account-pox.md) <br/> |Especifica la configuración de la cuenta para el usuario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa la dirección URL de la Página principal del ISP.
+El valor de texto representa la dirección URL de la página principal del ISP.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

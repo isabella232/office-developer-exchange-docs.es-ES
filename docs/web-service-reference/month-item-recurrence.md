@@ -1,27 +1,27 @@
 ---
-title: Month (periodicidad de elementos)
+title: Month (Item Recurrence)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Month
 api_type:
 - schema
 ms.assetid: d2352001-f959-436a-afd5-a0a07b8ae02a
-description: El elemento month describe el mes cuando se produce un elemento periódico anual.
-ms.openlocfilehash: d881c617374bc9545552ad77f2f2b355efdf2359
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Month describe el mes en el que se produce un elemento periódico anual.
+ms.openlocfilehash: 01d8874db3b539ba1f4c64b3fbd9b83b5b0828b6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468638"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510963"
 ---
-# <a name="month-item-recurrence"></a>Month (periodicidad de elementos)
+# <a name="month-item-recurrence"></a>Month (Item Recurrence)
 
-El elemento **Month** describe el mes cuando se produce un elemento periódico anual. 
+El **elemento Month** describe el mes en el que se produce un elemento periódico anual. 
   
 ```xml
 <Month/>
@@ -34,11 +34,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -49,17 +49,17 @@ Ninguna.
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto. A continuación se muestran los valores de texto posibles para este elemento:
+Se requiere un valor de texto. Los siguientes son los valores de texto posibles para este elemento:
   
 - Enero
     
 - Febrero
     
-- Abril
+- Marzo
     
 - Abril
     
-- Pueda
+- Mayo
     
 - Junio
     
@@ -69,28 +69,28 @@ Se requiere un valor de texto. A continuación se muestran los valores de texto 
     
 - Septiembre
     
-- Partir
+- Octubre
+    
+- Noviembre
     
 - Diciembre
     
-- 1-5
-    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 
