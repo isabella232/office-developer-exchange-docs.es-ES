@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateUserConfigurationResponse
 api_type:
 - schema
 ms.assetid: 115d4a5d-0c90-45d5-a3a3-4e61d80df78a
 description: El elemento CreateUserConfigurationResponse define una respuesta a una única solicitud CreateUserConfiguration.
-ms.openlocfilehash: d1b3e2a0ab156c5175f9c1e676866690c33ace9f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 2d97628f4907cc7c05b5ba4dc3b3f0a22533e54f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463772"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536172"
 ---
 # <a name="createuserconfigurationresponse"></a>CreateUserConfigurationResponse
 
-El elemento **CreateUserConfigurationResponse** define una respuesta a una única solicitud **CreateUserConfiguration** . 
+El **elemento CreateUserConfigurationResponse** define una respuesta a una única **solicitud CreateUserConfiguration.** 
   
 ```xml
 <CreateUserConfigurationResponse>
@@ -36,17 +36,17 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta de una solicitud de servicios web Exchange.  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta de una Exchange de servicios web.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguna.
+Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
@@ -62,12 +62,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

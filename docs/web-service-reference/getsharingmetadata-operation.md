@@ -5,27 +5,27 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetSharingMetadata
 api_type:
 - schema
 ms.assetid: eaf29427-ecf8-4a5e-9a54-db2e6414b35e
-description: La operación GetSharingMetadata obtiene un token de autenticación opaco que identifica una invitación de uso compartido.
-ms.openlocfilehash: 0390b9caa7b2e9847b1e8dcdc1b911a35e3c5864
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación GetSharingMetadata obtiene un token de autenticación opaco que identifica una invitación para compartir.
+ms.openlocfilehash: c7b2d021f618abe5e49022949e85aa212184800c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530186"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516905"
 ---
 # <a name="getsharingmetadata-operation"></a>Operación GetSharingMetadata
 
-La operación **GetSharingMetadata** obtiene un token de autenticación opaco que identifica una invitación de uso compartido. 
+La **operación GetSharingMetadata obtiene** un token de autenticación opaco que identifica una invitación para compartir. 
   
 ## <a name="soap-headers"></a>Encabezados SOAP
 
-La operación **GetSharingMetadata** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla. 
+La **operación GetSharingMetadata** puede usar los encabezados SOAP que se enumeran y se describen en la tabla siguiente. 
   
 |**Header**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
@@ -34,9 +34,9 @@ La operación **GetSharingMetadata** puede usar los encabezados SOAP que se enum
    
 ## <a name="getsharingmetadata-request-example"></a>Ejemplo de solicitud GetSharingMetadata
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-En el siguiente ejemplo se muestra cómo crear una solicitud para obtener un token de autenticación opaco que identifique una invitación de uso compartido. En este ejemplo, user1@contoso.com desea compartir la carpeta especificada por el elemento [IdOfFolderToShare](idoffoldertoshare.md) con user1@fabikam.com y user2@test.com. 
+En el ejemplo siguiente se muestra cómo formar una solicitud para obtener un token de autenticación opaco que identifique una invitación para compartir. En este ejemplo, user1@contoso.com desea compartir la carpeta especificada por el elemento [IdOfFolderToShare](idoffoldertoshare.md) con user1@fabikam.com y user2@test.com. 
   
 ### <a name="code"></a>Código
 
@@ -65,13 +65,13 @@ En el siguiente ejemplo se muestra cómo crear una solicitud para obtener un tok
 
 ### <a name="comments"></a>Comentarios
 
-El elemento [Recipients (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md) contiene un elemento [SmtpAddress](smtpaddress.md) para cada destinatario previsto de la invitación para uso compartido. 
+El [elemento Recipients (ArrayOfSmtpAddressType)](recipients-arrayofsmtpaddresstype.md) contiene un elemento [SmtpAddress](smtpaddress.md) por cada destinatario previsto de la invitación para compartir. 
   
-## <a name="successful-getsharingmetadata-response"></a>Respuesta GetSharingMetadata correcta
+## <a name="successful-getsharingmetadata-response"></a>Respuesta getSharingMetadata correcta
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **GetSharingMetadata** . En este ejemplo, se han especificado dos destinatarios en la solicitud **GetSharingMetadata** correspondiente: user1@fabrikam.com y user2@test.com. 
+En el ejemplo siguiente se muestra una respuesta correcta a una **solicitud GetSharingMetadata.** En este ejemplo, se especificaron dos destinatarios en la solicitud **GetSharingMetadata** correspondiente: user1@fabrikam.com y user2@test.com. 
   
 ### <a name="code"></a>Código
 
@@ -156,17 +156,17 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **GetS
 
 ### <a name="comments"></a>Comentarios
 
-La respuesta contiene un elemento [EncryptedSharedFolderData](encryptedsharedfolderdata.md) para cada organización representada por destinatarios válidos que se especifican en la solicitud **GetSharingMetadata** . 
+La respuesta contiene un [elemento EncryptedSharedFolderData](encryptedsharedfolderdata.md) para cada organización representada por destinatarios válidos especificados en la solicitud **GetSharingMetadata.** 
   
-La solicitud **GetSharingMetadata** se realizará correctamente incluso si se especifican destinatarios no válidos en la solicitud. El elemento [InvalidRecipients](invalidrecipients.md) contiene información sobre los destinatarios no válidos. Para obtener información sobre los motivos por los que un destinatario podría no ser válido, vea [ResponseCode (InvalidRecipientResponseCodeType)](responsecode-invalidrecipientresponsecodetype.md).
+La **solicitud GetSharingMetadata** se realizará correctamente incluso si se especifican destinatarios no válidos en la solicitud. El [elemento InvalidRecipients](invalidrecipients.md) contiene información sobre destinatarios no válidos. Para obtener información sobre los motivos por los que un destinatario puede no ser válido, vea [ResponseCode (InvalidRecipientResponseCodeType).](responsecode-invalidrecipientresponsecodetype.md)
   
-Si todos los destinatarios previstos no son válidos, el elemento [EncryptedSharedFolderDataCollection](encryptedsharedfolderdatacollection.md) estará vacío. 
+Si todos los destinatarios previstos no son válidos, el [elemento EncryptedSharedFolderDataCollection](encryptedsharedfolderdatacollection.md) estará vacío. 
   
-## <a name="getsharingmetadata-error-response"></a>Respuesta de error de GetSharingMetadata
+## <a name="getsharingmetadata-error-response"></a>Respuesta de error GetSharingMetadata
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud **GetSharingMetadata** . 
+En el ejemplo siguiente se muestra una respuesta de error a una **solicitud GetSharingMetadata.** 
   
 ### <a name="code"></a>Código
 
@@ -196,7 +196,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud **GetS
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
@@ -209,7 +209,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud **GetS
 [GetSharingMetadataResponseMessageType](https://msdn.microsoft.com/library/ExchangeWebServices.GetSharingMetadataResponseMessageType.aspx)
 
 
-[Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
+[Operaciones ews en Exchange](ews-operations-in-exchange.md)
   
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

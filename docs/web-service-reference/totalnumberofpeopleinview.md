@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f1037fef-628b-4e44-96e7-a701a9ca8404
-description: El elemento TotalNumberOfPeopleInView especifica el número total de roles devueltos en una respuesta FindPeople.
-ms.openlocfilehash: d89aa65d595814a7277f85e569ca10f9058c6aac
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento TotalNumberOfPeopleInView especifica el número total de personas devueltas en una respuesta FindPeople.
+ms.openlocfilehash: 350dcaf4a498a590350c7f2b72d542057ae6eb7b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467511"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523282"
 ---
 # <a name="totalnumberofpeopleinview"></a>TotalNumberOfPeopleInView
 
-El elemento **TotalNumberOfPeopleInView** especifica el número total de roles devueltos en una respuesta **FindPeople** . 
+El **elemento TotalNumberOfPeopleInView** especifica el número total de personas devueltas en una **respuesta FindPeople.** 
   
 ```XML
 <TotalNumberOfPeopleInView></TotalNumberOfPeopleInView>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **TotalNumberOfPeopleInView** es el número total de roles devueltos en una respuesta **FindPeople** . 
+El valor de texto del **elemento TotalNumberOfPeopleInView** es el número total de personas devueltas en una **respuesta FindPeople.** 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

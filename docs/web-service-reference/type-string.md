@@ -1,23 +1,23 @@
 ---
-title: Tipo (cadena)
+title: Type (cadena)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d5eea7a8-c40d-42a6-8e0d-67f3252496cf
-description: El elemento Type Especifica el tipo de dirección postal o número de teléfono, por ejemplo, HomeorBusiness.
-ms.openlocfilehash: 83dd6576e8a365be61c4e6d2f3afc8a59aba92a6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Type especifica el tipo de dirección postal o número de teléfono, por ejemplo, HomeorBusiness.
+ms.openlocfilehash: 341c79758c3cbf5133bb79a6986a676903a48ef0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465719"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523218"
 ---
-# <a name="type-string"></a>Tipo (cadena)
+# <a name="type-string"></a>Type (cadena)
 
-El elemento **Type** especifica el tipo de dirección postal o número de teléfono (por ejemplo, "Home" o "Business"). 
+El **elemento Type** especifica el tipo de dirección postal o número de teléfono, por ejemplo, "Home" o "Business". 
   
 ```XML
 <Type></Type>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **Type** es el tipo de una dirección postal o un número de teléfono. Por ejemplo, los valores "Home" o "Business" son valores esperados para el elemento **Type** . 
+El valor de texto del **elemento Type** es el tipo de una dirección postal o un número de teléfono. Por ejemplo, los valores "Home" o "Business" son valores esperados para el **elemento Type.** 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

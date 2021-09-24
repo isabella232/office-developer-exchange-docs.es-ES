@@ -5,47 +5,47 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateManagedFolder
 api_type:
 - schema
 ms.assetid: 60a668a2-b4e9-4db9-ac76-9b181e47b302
-description: La operación CreateManagedFolder crea una carpeta administrada en el almacén de Exchange.
-ms.openlocfilehash: 779c730b55b9b441644108a6837f9e22d39cc2f4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación CreateManagedFolder crea una carpeta administrada en el Exchange almacén.
+ms.openlocfilehash: 2b00691fbaba294950a091d5caafb8054f3e2073
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44444596"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536427"
 ---
 # <a name="createmanagedfolder-operation"></a>Operación CreateManagedFolder
 
-La operación CreateManagedFolder crea una carpeta administrada en el almacén de Exchange.
+La operación CreateManagedFolder crea una carpeta administrada en el Exchange almacén.
   
 ## <a name="using-the-createmanagedfolder-operation"></a>Uso de la operación CreateManagedFolder
 
-La operación CreateManagedFolder agrega una carpeta personalizada administrada al buzón de un usuario. Puede usar el cmdlet **Get-ManagedFolder** del shell de administración de Exchange para buscar las carpetas administradas que se pueden agregar. Aunque este cmdlet devuelve las carpetas personalizadas administradas y las carpetas predeterminadas administradas, solo se pueden agregar carpetas personalizadas administradas. Las carpetas personalizadas administradas se identifican mediante el tipo de carpeta ManagedCustomFolder. El espacio de nombres System. DirectoryServices también incluye tipos que se pueden usar para detectar los nombres de las carpetas administradas disponibles. 
+La operación CreateManagedFolder agrega una carpeta personalizada administrada al buzón de un usuario. Puede usar el cmdlet **Get-ManagedFolder** Exchange Shell de administración para buscar carpetas administradas disponibles para agregar. Aunque este cmdlet devuelve carpetas personalizadas administradas y carpetas predeterminadas administradas, solo se pueden agregar carpetas personalizadas administradas. Las carpetas personalizadas administradas se identifican mediante el tipo de carpeta ManagedCustomFolder. El espacio de nombres System.DirectoryServices también incluye tipos que se pueden usar para detectar los nombres de las carpetas administradas disponibles. 
   
 > [!NOTE]
-> No puede usar los servicios web Exchange para encontrar los nombres de las carpetas administradas disponibles para agregar a un buzón de correo. 
+> No puede usar Exchange Web Services para buscar los nombres de las carpetas administradas disponibles para agregar a un buzón. 
   
-Puede usar las operaciones FindFolder y GetFolder para tener acceso a las carpetas administradas. FindFolder se usa para buscar carpetas en una carpeta principal especificada. Esto puede usarse para que las carpetas administradas se puedan detectar en una carpeta antes de intentar agregar una carpeta personalizada administrada duplicada al mismo directorio. GetFolder se usa después de la operación FindFolder para obtener más información acerca de una carpeta administrada personalizada.
+Puede usar las operaciones FindFolder y GetFolder para obtener acceso a carpetas administradas. FindFolder se usa para buscar carpetas en una carpeta primaria especificada. Esto se puede usar para que las carpetas administradas se puedan detectar en una carpeta antes de intentar agregar una carpeta personalizada administrada duplicada al mismo directorio. GetFolder se usa después de la operación FindFolder para obtener más información sobre una carpeta personalizada administrada.
   
 ## <a name="remarks"></a>Comentarios
 
-Para obtener información acerca de cómo configurar la Directiva de administración de registros de mensajes (MRM), consulte [How to Create a Managed Folder Mailbox Policy](https://go.microsoft.com/fwlink/?LinkId=100975).
+Para obtener información sobre cómo configurar la directiva de administración de registros de mensajería (MRM), vea [How to Create a Managed Folder Mailbox Policy](https://go.microsoft.com/fwlink/?LinkId=100975).
   
-Para obtener información acerca de cómo quitar las carpetas personalizadas administradas de un buzón de correo, vea [Remove-ManagedFolder](https://go.microsoft.com/fwlink/?LinkId=100976).
+Para obtener información sobre cómo quitar carpetas personalizadas administradas de un buzón, vea [Remove-ManagedFolder](https://go.microsoft.com/fwlink/?LinkId=100976).
   
 ## <a name="createmanagedfolder-request-example"></a>Ejemplo de solicitud CreateManagedFolder
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud de CreateManagedFolder muestra cómo agregar una carpeta administrada llamada test Managed Folder a un buzón de correo.
+En el siguiente ejemplo de una solicitud CreateManagedFolder se muestra cómo agregar una carpeta administrada denominada Probar carpeta administrada a un buzón.
   
 > [!NOTE]
-> También puede usar acceso delegado para agregar carpetas administradas personalizadas. 
+> También puede usar el acceso delegado para agregar carpetas personalizadas administradas. 
   
 ### <a name="code"></a>Código
 
@@ -65,9 +65,9 @@ El siguiente ejemplo de una solicitud de CreateManagedFolder muestra cómo agreg
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [CreateManagedFolder](createmanagedfolder.md)
     
@@ -75,16 +75,16 @@ Los siguientes elementos se usan en la solicitud:
     
 - [FolderName](foldername.md)
     
-Para buscar otras opciones para el mensaje de solicitud de la operación CreateManagedFolder, explore la jerarquía del esquema. Empiece en el elemento [CreateManagedFolder](createmanagedfolder.md) . 
+Para buscar otras opciones para el mensaje de solicitud de la operación CreateManagedFolder, explore la jerarquía de esquema. Comience en el [elemento CreateManagedFolder.](createmanagedfolder.md) 
   
-## <a name="successful-createmanagedfolder-response"></a>Respuesta CreateManagedFolder correcta
+## <a name="successful-createmanagedfolder-response"></a>Respuesta correcta de CreateManagedFolder
 
 ### <a name="description"></a>Description
 
-En el ejemplo de código siguiente se muestra una respuesta correcta a una solicitud CreateManagedFolder.
+En el siguiente ejemplo de código se muestra una respuesta correcta a una solicitud CreateManagedFolder.
   
 > [!NOTE]
-> Los valores de atributo **ID** y **changekey** se han abreviado para preservar la legibilidad. 
+> Los **valores de** atributo Id y **ChangeKey** se han acortado para conservar la legibilidad. 
   
 ### <a name="code"></a>Código
 
@@ -116,7 +116,7 @@ En el ejemplo de código siguiente se muestra una respuesta correcta a una solic
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos: 
   
@@ -134,13 +134,13 @@ En la respuesta se usan los siguientes elementos:
     
 - [FolderId](folderid.md)
     
-Para buscar otras opciones de los mensajes de respuesta de la operación CreateManagedFolder, explore la jerarquía del esquema. Empiece en el elemento [CreateManagedFolderResponse](createmanagedfolderresponse.md) . 
+Para buscar otras opciones para los mensajes de respuesta de la operación CreateManagedFolder, explore la jerarquía de esquema. Comience en el [elemento CreateManagedFolderResponse.](createmanagedfolderresponse.md) 
   
-## <a name="createmanagedfolder-error-response"></a>Respuesta de error de CreateManagedFolder
+## <a name="createmanagedfolder-error-response"></a>Respuesta de error CreateManagedFolder
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de código muestra una respuesta de error a una solicitud CreateManagedFolder.
+En el siguiente ejemplo de código se muestra una respuesta de error a una solicitud CreateManagedFolder.
   
 ### <a name="code"></a>Código
 
@@ -172,7 +172,7 @@ El siguiente ejemplo de código muestra una respuesta de error a una solicitud C
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
 - [CreateManagedFolderResponse](createmanagedfolderresponse.md)
     
@@ -188,7 +188,7 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - [Folders](folders-ex15websvcsotherref.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
@@ -199,5 +199,5 @@ Los siguientes elementos se usan en la respuesta de error:
 
 [Buscar carpetas](https://msdn.microsoft.com/library/9124d868-017a-43f0-b915-5c0082cacec9%28Office.15%29.aspx)
   
-[Adición de carpetas administradas](https://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)
+[Agregar carpetas administradas](https://msdn.microsoft.com/library/846658c6-7043-40fb-8439-19f97c2a967f%28Office.15%29.aspx)
 

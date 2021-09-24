@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fedc04e0-cfd2-4652-a2a8-51de859ae847
-description: El elemento HasIrm especifica si al menos un mensaje de la conversación y la carpeta actual es un mensaje protegido con IRM.
-ms.openlocfilehash: 1596610ed5f6b2bac353900624fbec9140aaa693
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento HasIrm especifica si al menos un mensaje de la conversación y la carpeta actual es un mensaje protegido por IRM.
+ms.openlocfilehash: ef194c045bfd2b416e382c12381afd68ba56dcf3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462783"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516695"
 ---
 # <a name="hasirm"></a>HasIrm
 
-El elemento **HasIrm** especifica si al menos un mensaje de la conversación y la carpeta actual es un mensaje protegido con IRM. 
+El **elemento HasIrm** especifica si al menos un mensaje de la conversación y la carpeta actual es un mensaje protegido por IRM. 
   
 ```XML
 <HasIrm> true | false </HasIrm>
@@ -30,19 +30,19 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Conversación (ConversationType)](conversation-conversationtype.md)
+[Conversation (ConversationType)](conversation-conversationtype.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **HasIrm** es **true** si al menos un mensaje de la conversación y la carpeta actual tiene IRM. De lo contrario, el valor es **false**.
+El valor de texto del **elemento HasIrm** es **true** si al menos un mensaje de la conversación y la carpeta actual tiene IRM. De lo contrario, el valor es **false**.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,15 +56,15 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-[Conversación (ConversationType)](conversation-conversationtype.md)
+[Conversation (ConversationType)](conversation-conversationtype.md)
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

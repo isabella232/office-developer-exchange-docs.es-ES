@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetSharingFolder
 api_type:
 - schema
 ms.assetid: ed5bb61f-89c7-4baa-83ee-30f06a49ff9b
-description: El elemento GetSharingFolder define una solicitud para obtener el identificador de la carpeta local de una carpeta compartida especificada. Es el elemento base para la operación GetSharingFolder.
-ms.openlocfilehash: cb76c534d9b30d0a9d1b267396551eb2871e638a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento GetSharingFolder define una solicitud para obtener el identificador de carpeta local de una carpeta compartida especificada. Es el elemento base de la operación GetSharingFolder.
+ms.openlocfilehash: 5d6362dff3ff29b0dc5100780cc70b21ec9bee9d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460508"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509773"
 ---
 # <a name="getsharingfolder"></a>GetSharingFolder
 
-El elemento **GetSharingFolder** define una solicitud para obtener el identificador de la carpeta local de una carpeta compartida especificada. Es el elemento base para la [operación GetSharingFolder](getsharingfolder-operation.md).
+El **elemento GetSharingFolder** define una solicitud para obtener el identificador de carpeta local de una carpeta compartida especificada. Es el elemento base de la [operación GetSharingFolder](getsharingfolder-operation.md).
   
 ```xml
 <GetSharingFolder>   <SmtpAddress/>   <DataType/>   <SharedFolderId/></GetSharingFolder>
@@ -34,7 +34,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -50,9 +50,9 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-Un elemento GetSharingFolder debe contener un elemento [SmtpAddress](smtpaddress.md) . Un elemento GetSharingFolder también debe contener un elemento [DataType](datatype.md) o un elemento [SharedFolderId](sharedfolderid.md) , pero no puede contener ambos. 
+Un elemento GetSharingFolder debe contener un [elemento SmtpAddress.](smtpaddress.md) Un elemento GetSharingFolder también debe contener un [elemento DataType](datatype.md) o [un elemento SharedFolderId,](sharedfolderid.md) pero no puede contener ambos. 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda los servicios Web de Exchange del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda Exchange Servicios web del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -60,15 +60,15 @@ El esquema que describe este elemento se encuentra en el directorio virtual de I
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
 [Operación GetSharingFolder](getsharingfolder-operation.md)
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

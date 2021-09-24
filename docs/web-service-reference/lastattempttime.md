@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b4ffdf0f-1210-429d-8eea-665db2aad3bb
-description: El elemento LastAttemptTime contiene la fecha y hora en que se realizó el último intento de indizar el elemento.
-ms.openlocfilehash: 8ef7d8d436f7e12a5c1e6a1d0762fcf777a95d05
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento LastAttemptTime contiene la hora y la fecha en que se realizó el último intento de indizar el elemento.
+ms.openlocfilehash: 7bc0ffa9a0b7b6fd0079ce2430689d1b5f5f2f35
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459850"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509633"
 ---
 # <a name="lastattempttime"></a>LastAttemptTime
 
-El elemento **LastAttemptTime** contiene la fecha y hora en que se realizó el último intento de indizar el elemento. 
+El **elemento LastAttemptTime** contiene la hora y la fecha en que se realizó el último intento de indizar el elemento. 
   
 ```XML
 <LastAttemptTime></LastAttemptTime>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **LastAttemptTime** representa la hora y la fecha en que se realizó el último intento de indizar el elemento. 
+El valor de texto del **elemento LastAttemptTime** representa una hora y una fecha en las que se realizó el último intento de indizar el elemento. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

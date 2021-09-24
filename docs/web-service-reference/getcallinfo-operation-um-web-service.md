@@ -1,32 +1,32 @@
 ---
-title: Operación GetCallInfo (servicio Web de mensajería unificada)
+title: Operación GetCallInfo (servicio web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetCallInfo
 api_type:
 - schema
 ms.assetid: 6bccd418-caf7-4eb9-8a6f-410e56a635c3
-description: La operación GetCallInfo devuelve el estado de la llamada saliente especificada por CallId (servicio Web de mensajería unificada).
-ms.openlocfilehash: 6b5664dfe16f9c74cc7175098145141b815a6355
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación GetCallInfo devuelve el estado de la llamada saliente especificada por CallId (servicio web de mensajería unificada).
+ms.openlocfilehash: 0563190ab267b3a48d7ccacbdb1e136c6e3da0b4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461243"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509954"
 ---
-# <a name="getcallinfo-operation-um-web-service"></a>Operación GetCallInfo (servicio Web de mensajería unificada)
+# <a name="getcallinfo-operation-um-web-service"></a>Operación GetCallInfo (servicio web de mensajería unificada)
 
-La operación GetCallInfo devuelve el estado de la llamada saliente especificada por [CallId (servicio Web de mensajería unificada)](callid-um-web-service.md).
+La operación GetCallInfo devuelve el estado de la llamada saliente especificada por [CallId (servicio web de](callid-um-web-service.md)mensajería unificada).
   
 ## <a name="getcallinfo-request-example"></a>Ejemplo de solicitud GetCallInfo
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud GetCallInfo muestra cómo crear una solicitud para obtener información sobre una llamada saliente especificada.
+En el siguiente ejemplo de una solicitud GetCallInfo se muestra cómo formar una solicitud para obtener información sobre una llamada saliente especificada.
   
 ### <a name="code"></a>Código
 
@@ -41,11 +41,11 @@ El siguiente ejemplo de una solicitud GetCallInfo muestra cómo crear una solici
 </soap:Envelope>
 ```
 
-## <a name="successful-getcallinfo-response-example"></a>Ejemplo de respuesta GetCallInfo correcta
+## <a name="successful-getcallinfo-response-example"></a>Ejemplo de respuesta GetCallInfo correcto
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una respuesta de GetCallInfo muestra una respuesta a una solicitud de GetCallInfo.
+En el siguiente ejemplo de una respuesta GetCallInfo se muestra una respuesta a una solicitud GetCallInfo.
   
 ### <a name="code"></a>Código
 
@@ -63,17 +63,17 @@ El siguiente ejemplo de una respuesta de GetCallInfo muestra una respuesta a una
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-[GetCallInfo (servicio Web de mensajería unificada)](getcallinfo-um-web-service.md)
+[GetCallInfo (servicio web de mensajería unificada)](getcallinfo-um-web-service.md)
   
-[GetCallInfoResponse (servicio Web de mensajería unificada)](getcallinforesponse-um-web-service.md)
+[GetCallInfoResponse (servicio web de mensajería unificada)](getcallinforesponse-um-web-service.md)
   
-[CallId (servicio Web de mensajería unificada)](callid-um-web-service.md)
+[CallId (servicio web de mensajería unificada)](callid-um-web-service.md)
   
-[CallState (servicio Web de mensajería unificada)](callstate-um-web-service.md)
+[CallState (servicio web de mensajería unificada)](callstate-um-web-service.md)
   
-[EventCause (servicio Web de mensajería unificada)](eventcause-um-web-service.md)
+[EventCause (servicio web de mensajería unificada)](eventcause-um-web-service.md)
 

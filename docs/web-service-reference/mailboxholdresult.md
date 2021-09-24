@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: da03b877-37c6-4ecb-8549-c639f140302e
 description: El elemento MailboxHoldResult contiene el resultado de la solicitud GetHoldOnMailboxes.
-ms.openlocfilehash: 3895c1351587db45881c661809a19dad1929b4a9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f1b4fc6513269f56cf8a3d3f012d875cb99210ab
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466398"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522806"
 ---
 # <a name="mailboxholdresult"></a>MailboxHoldResult
 
-El elemento **MailboxHoldResult** contiene el resultado de la solicitud **GetHoldOnMailboxes** . 
+El **elemento MailboxHoldResult** contiene el resultado de la **solicitud GetHoldOnMailboxes.** 
   
 ```XML
 <MailboxHoldResult>
@@ -35,7 +35,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

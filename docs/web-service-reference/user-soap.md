@@ -1,24 +1,24 @@
 ---
-title: Usuario (SOAP)
+title: User (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: c6bc0031-bc1d-41bd-84e4-9074a5b77012
 description: El elemento User representa la identidad de un único usuario.
-ms.openlocfilehash: f151ffa8050a10cdbb4562471d815f8692596cc3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 545869e21726d60ecdd503106c743d66fc752414
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456349"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517381"
 ---
-# <a name="user-soap"></a>Usuario (SOAP)
+# <a name="user-soap"></a>User (SOAP)
 
-El elemento **User** representa la identidad de un único usuario. 
+El **elemento User** representa la identidad de un único usuario. 
   
 ```XML
 <User>
@@ -28,7 +28,7 @@ El elemento **User** representa la identidad de un único usuario.
 </User>
 ```
 
- **User**
+ **Usuario**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
@@ -41,19 +41,19 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[LegacyDN (SOAP)](legacydn-soap.md) <br/> |Representa el nombre distintivo heredado de buzón alternativo.  <br/> |
-|[Buzón de correo (SOAP)](mailbox-soap.md) <br/> |Contiene la dirección de correo electrónico del usuario que se va a detectar.  <br/> |
+|[LegacyDN (SOAP)](legacydn-soap.md) <br/> |Representa el nombre distintivo heredado del buzón alternativo.  <br/> |
+|[Mailbox (SOAP)](mailbox-soap.md) <br/> |Contiene la dirección de correo electrónico del usuario que se va a detectar.  <br/> |
 |[RequestedSettings (SOAP)](requestedsettings-soap.md) <br/> |Contiene los nombres de las opciones de configuración solicitadas.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Usuarios (SOAP)](users-soap.md) <br/> |Representa una colección de elementos **User** .  <br/> |
+|[Users (SOAP)](users-soap.md) <br/> |Representa una colección de **elementos User.**  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Ninguna.
+Ninguno.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -61,10 +61,10 @@ Ninguna.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

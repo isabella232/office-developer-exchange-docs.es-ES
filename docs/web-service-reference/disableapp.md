@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 42d2a888-fa62-4970-8306-9ddde4eeb1f0
 description: El elemento DisableApp especifica una solicitud para deshabilitar una aplicación.
-ms.openlocfilehash: e99464677dc34e011e45548083fb830b819649fa
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: d417a0913f01a6995bce10d2316f83bf18a7f01c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457826"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510123"
 ---
 # <a name="disableapp"></a>DisableApp
 
-El elemento **DisableApp** especifica una solicitud para deshabilitar una aplicación. 
+El **elemento DisableApp** especifica una solicitud para deshabilitar una aplicación. 
   
 ```XML
 <DisableApp>
@@ -33,14 +33,14 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ID (cadena)](id-string.md) <br/> |Especifica el identificador de un elemento.  <br/> |
-|[DisableReason](disablereason.md) <br/> |Especifica el motivo de la deshabilitación de una aplicación.  <br/> |
+|[ID (Cadena)](id-string.md) <br/> |Especifica el identificador de un elemento.  <br/> |
+|[DisableReason](disablereason.md) <br/> |Especifica el motivo para deshabilitar una aplicación.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -57,11 +57,11 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

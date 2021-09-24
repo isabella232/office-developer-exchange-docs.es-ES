@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FieldURIOrConstant
 api_type:
 - schema
 ms.assetid: 89d7a87e-7c93-49b8-83ec-8798e08c1052
-description: El elemento FieldURIOrConstant representa una propiedad o un valor constante que se utilizará al comparar con otra propiedad.
-ms.openlocfilehash: 8b5cb888a3bd2026b15e38fc8c005ab5ef5a2b11
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento FieldURIOrConstant representa una propiedad o un valor constante que se usará al comparar con otra propiedad.
+ms.openlocfilehash: bc7edb4542c68e02e9661ff0a4c7066362a04081
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461229"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535244"
 ---
 # <a name="fielduriorconstant"></a>FieldURIOrConstant
 
-El elemento **FieldURIOrConstant** representa una propiedad o un valor constante que se utilizará al comparar con otra propiedad. 
+El **elemento FieldURIOrConstant** representa una propiedad o un valor constante que se usará al comparar con otra propiedad. 
   
 ```xml
 <FieldURIOrConstant>
@@ -55,35 +55,35 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Constante](constant.md) <br/> |Identifica un valor constante en una restricción.  <br/> |
-|[FieldURI](fielduri.md) <br/> |Identifica las propiedades a las que se hace referencia con frecuencia mediante el URI.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifica a los miembros individuales de un diccionario.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifica las propiedades a las que se hace referencia con frecuencia mediante URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifica miembros individuales de un diccionario.  <br/> |
 |[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifica las propiedades MAPI.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[IsEqualTo](isequalto.md) <br/> |Representa una expresión de búsqueda que compara una propiedad con un valor constante u otra propiedad y evalúa en true si son iguales.  <br/> |
+|[IsEqualTo](isequalto.md) <br/> |Representa una expresión de búsqueda que compara una propiedad con un valor constante u otra propiedad y se evalúa como true si son iguales.  <br/> |
 |[IsGreaterThan](isgreaterthan.md) <br/> |Representa una expresión de búsqueda que compara una propiedad con un valor constante u otra propiedad y devuelve true si la primera propiedad es mayor.  <br/> |
 |[IsGreaterThanOrEqualTo](isgreaterthanorequalto.md) <br/> |Representa una expresión de búsqueda que compara una propiedad con un valor constante u otra propiedad y devuelve true si la primera propiedad es mayor o igual que el segundo valor o propiedad.  <br/> |
 |[IsLessThan](islessthan.md) <br/> |Representa una expresión de búsqueda que compara una propiedad con un valor constante u otra propiedad y devuelve true si la primera propiedad es menor que el segundo valor o propiedad.  <br/> |
-|[IsLessThanOrEqualTo](islessthanorequalto.md) <br/> |Representa una expresión de búsqueda que compara una propiedad con un valor constante u otra propiedad y devuelve true si la primera propiedad es menor o igual que el segundo valor o propiedad.  <br/> |
+|[IsLessThanOrEqualTo](islessthanorequalto.md) <br/> |Representa una expresión de búsqueda que compara una propiedad con un valor de constante u otra propiedad y devuelve true si la primera propiedad es menor o igual que el segundo valor o propiedad.  <br/> |
 |[IsNotEqualTo](isnotequalto.md) <br/> |Representa una expresión de búsqueda que compara una propiedad con un valor constante u otra propiedad y devuelve true si los valores no son los mismos.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="example"></a>Ejemplo
 
-El siguiente ejemplo de XML muestra el elemento FieldURIOrConstant usado con una constante y un URI de campo.
+En el siguiente ejemplo XML se muestra el elemento FieldURIOrConstant usado con un URI de constante y de campo.
   
 ```xml
 <Restriction>
@@ -110,10 +110,10 @@ El siguiente ejemplo de XML muestra el elemento FieldURIOrConstant usado con una
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetUserConfiguration
 api_type:
 - schema
 ms.assetid: 71d50e3c-92bd-435f-8118-b28bb85f8138
 description: La operación GetUserConfiguration obtiene un objeto de configuración de usuario de una carpeta.
-ms.openlocfilehash: fb28e88d1a47b0ea8f63ed33b1efacae8538e1c8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: be6c662cf49a7c2441f94084dd909e86fe703e20
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458211"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516849"
 ---
 # <a name="getuserconfiguration-operation"></a>Operación GetUserConfiguration
 
-La operación **GetUserConfiguration** obtiene un objeto de configuración de usuario de una carpeta. 
+La **operación GetUserConfiguration** obtiene un objeto de configuración de usuario de una carpeta. 
   
 ## <a name="getuserconfiguration-request-example"></a>Ejemplo de solicitud GetUserConfiguration
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud **GetUserConfiguration** muestra cómo crear una solicitud para obtener un objeto de configuración de usuario en la carpeta Borradores. 
+En el siguiente ejemplo de una **solicitud GetUserConfiguration** se muestra cómo formar una solicitud para obtener un objeto de configuración de usuario en la carpeta Borradores. 
   
 ### <a name="code"></a>Código
 
@@ -54,9 +54,9 @@ El siguiente ejemplo de una solicitud **GetUserConfiguration** muestra cómo cre
 
 ## <a name="getuserconfiguration-response-example"></a>Ejemplo de respuesta GetUserConfiguration
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **GetUserConfiguration** . 
+En el ejemplo siguiente se muestra una respuesta correcta a la **solicitud GetUserConfiguration.** 
   
 ### <a name="code"></a>Código
 
@@ -106,11 +106,11 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **GetUs
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-[Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
+[Operaciones ews en Exchange](ews-operations-in-exchange.md)
   
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

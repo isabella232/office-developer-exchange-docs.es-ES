@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 593e0c79-9ec2-4040-a6a3-3c5c61cbdf7c
-description: El elemento NonIndexableItemStatistic contiene una única estadística para un elemento que no se pudo indizar
-ms.openlocfilehash: cc7bee9fd2759a16dd16538d6712e40ceb005fec
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento NonIndexableItemStatistic contiene una sola estadística para un elemento que no se pudo indizar
+ms.openlocfilehash: 93bdaad2f10adf52ef99f51106596f155af2f18c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462685"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509555"
 ---
 # <a name="nonindexableitemstatistic"></a>NonIndexableItemStatistic
 
-El elemento **NonIndexableItemStatistic** contiene una única estadística para un elemento que no se pudo indizar 
+El **elemento NonIndexableItemStatistic** contiene una sola estadística para un elemento que no se pudo indizar 
   
 ```XML
 <NonIndexableItemStatistic>
@@ -34,11 +34,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Mailbox (cadena)](mailbox-string.md)  |  [ItemCount](itemcount.md)  |  [ErrorMessage](errormessage.md)
+[Buzón (cadena)](mailbox-string.md)  |  [ItemCount](itemcount.md)  |  [ErrorMessage](errormessage.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
 

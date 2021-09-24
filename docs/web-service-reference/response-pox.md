@@ -1,30 +1,30 @@
 ---
-title: Respuesta (POX)
+title: Response (POX)
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 002b72f2-f94d-467c-8e6c-b3818f7e51dc
 description: 'Se aplica a:'
-ms.openlocfilehash: 30f6a5c2c6e3034fde8849ab1fced3519029b1f9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: d613bbb1d8573c1eb60c053ddc064f564676a7c4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44448978"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523485"
 ---
-# <a name="response-pox"></a>Respuesta (POX)
+# <a name="response-pox"></a>Response (POX)
 
 
   
-El elemento **Response** contiene la respuesta del servicio de detección automática. 
+El **elemento Response** contiene la respuesta del servicio Detección automática. 
   
-[Detección automática (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[Respuesta (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
 ```xml
 <Response>
@@ -39,22 +39,22 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Usuario (POX)](user-pox.md) <br/> |Proporciona información específica del usuario. Este elemento es opcional.  <br/> |
-|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de la cuenta del usuario.  <br/> |
+|[User (POX)](user-pox.md) <br/> |Proporciona información específica del usuario. Este elemento es opcional.  <br/> |
+|[Account (POX)](account-pox.md) <br/> |Especifica la configuración de la cuenta para el usuario.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Detección automática (POX)](autodiscover-pox.md) <br/> |El elemento raíz de una respuesta de detección automática.  <br/> |
+|[AutoDiscover (POX)](autodiscover-pox.md) <br/> |El elemento raíz de una respuesta de detección automática.  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

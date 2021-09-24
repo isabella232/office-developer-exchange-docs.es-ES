@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3b647d88-6feb-40d7-9299-b2ca47b707db
-description: El elemento ExternalUrl contiene la dirección URL para conectar un cliente al servidor de la libreta de direcciones o al buzón de un usuario desde fuera de la organización del usuario mediante el protocolo MAPI/HTTP.
-ms.openlocfilehash: 94265051be68ed06d1dab8d46dd4ce29d8694c93
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ExternalUrl contiene la dirección URL para conectar un cliente al servidor de libreta de direcciones o al buzón de un usuario desde fuera de la organización del usuario mediante el protocolo MAPI/HTTP.
+ms.openlocfilehash: 90aaf9cabedba4ea89e0ed47da010245006407ba
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457959"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510080"
 ---
 # <a name="externalurl-pox"></a>ExternalUrl (POX)
 
-El elemento **ExternalUrl** contiene la dirección URL para conectar un cliente al servidor de la libreta de direcciones o al buzón de un usuario desde fuera de la organización del usuario mediante el protocolo MAPI/http. 
+El **elemento ExternalUrl** contiene la dirección URL para conectar un cliente al servidor de libreta de direcciones o al buzón de un usuario desde fuera de la organización del usuario mediante el protocolo MAPI/HTTP. 
   
 ```XML
 <ExternalUrl/>
@@ -28,30 +28,30 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
 |[AddressBook (POX)](addressbook-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al servidor de libreta de direcciones mediante el protocolo MAPI/HTTP.  <br/> |
-|[MailStore (POX)](mailstore-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al buzón de correo del usuario mediante el protocolo MAPI/HTTP.  <br/> |
+|[MailStore (POX)](mailstore-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al buzón del usuario mediante el protocolo MAPI/HTTP.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa una dirección URL que puede usarse para obtener acceso a un servidor de libreta de direcciones o a un buzón de correo del usuario desde fuera de la organización del usuario.
+El valor de texto representa una dirección URL que se puede usar para obtener acceso a un servidor de libreta de direcciones o al buzón del usuario desde fuera de la organización del usuario.
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento **ExternalUrl** puede estar presente en una respuesta que tiene un elemento [Protocol (POX)](protocol-pox.md) con un valor de atributo de **tipo** de "mapiHttp". 
+El **elemento ExternalUrl** puede estar presente en una respuesta que tiene un elemento [Protocol (POX)](protocol-pox.md) con un valor de atributo **Type** de "mapiHttp". 
   
-El elemento **ExternalUrl** está disponible para los clientes que implementan el protocolo MAPI/http y tienen como objetivo Exchange Online, Exchange online como parte de Office 365 y las versiones locales de Exchange a partir de Build 15.00.0847.032 (exchange Server 2013 SP1). 
+El **elemento ExternalUrl** está disponible para clientes que implementan el protocolo MAPI/HTTP y el Exchange Online de destino, Exchange Online como parte de Office 365 y versiones locales de Exchange a partir de la compilación 15.00.0847.032 (Exchange Server 2013 SP1). 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

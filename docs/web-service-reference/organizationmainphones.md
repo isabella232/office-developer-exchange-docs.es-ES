@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8e69ae44-0e6d-4fb8-97c6-37cf23577c38
-description: El elemento OrganizationMainPhones especifica una matriz de números de teléfono de la organización y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: 792cd20a361d038e797e64b461c565f85cada251
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento OrganizationMainPhones especifica una matriz de números de teléfono principales de la organización y los identificadores de sus atribuciones de origen para la persona asociada.
+ms.openlocfilehash: bdee726138ef6a433bfd0b9827f54eb6f89c1461
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462468"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534975"
 ---
 # <a name="organizationmainphones"></a>OrganizationMainPhones
 
-El elemento **OrganizationMainPhones** especifica una matriz de números de teléfono de la organización y los identificadores de sus atribuciones de origen para el rol asociado. 
+El **elemento OrganizationMainPhones** especifica una matriz de números de teléfono principales de la organización y los identificadores de sus atribuciones de origen para la persona asociada. 
   
 ```XML
 <OrganizationMainPhones>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

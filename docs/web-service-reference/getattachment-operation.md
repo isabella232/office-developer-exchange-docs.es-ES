@@ -5,27 +5,27 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetAttachment
 api_type:
 - schema
 ms.assetid: 24d10a15-b942-415e-9024-a6375708f326
-description: La operación GetAttachment se usa para recuperar datos adjuntos existentes en los elementos del almacén de Exchange.
-ms.openlocfilehash: ac7eafd61c62b077a8d20e5fd8d004924bf06cf1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación GetAttachment se usa para recuperar datos adjuntos existentes en los elementos del Exchange almacén.
+ms.openlocfilehash: 44a9e1988deb513039f7700e11c645c366641519
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461292"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509949"
 ---
 # <a name="getattachment-operation"></a>Operación GetAttachment
 
-La operación GetAttachment se usa para recuperar datos adjuntos existentes en los elementos del almacén de Exchange.
+La operación GetAttachment se usa para recuperar datos adjuntos existentes en los elementos del Exchange almacén.
   
 ## <a name="getattachment-request-example"></a>Ejemplo de solicitud GetAttachment
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
 El siguiente ejemplo de solicitud GetAttachment muestra cómo obtener datos adjuntos.
   
@@ -51,28 +51,28 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
 
 ### <a name="comments"></a>Comentarios
 
-El elemento [AttachmentShape](attachmentshape.md) permite especificar qué información de archivos adjuntos se debe devolver. Un elemento [AttachmentShape](attachmentshape.md) vacío es válido y representará los datos adjuntos sin contenido MIME para los datos adjuntos de elemento, con un tipo de cuerpo de texto y sin propiedades adicionales. 
+El [elemento AttachmentShape](attachmentshape.md) permite especificar qué información de datos adjuntos se debe devolver. Un elemento [AttachmentShape](attachmentshape.md) vacío es válido y representará los datos adjuntos sin contenido MIME para los datos adjuntos de elementos, con un tipo de cuerpo de texto y sin propiedades adicionales. 
   
-La colección [identificadores](attachmentids.md) permite especificar uno o más identificadores de datos adjuntos que se van a devolver. Tenga en cuenta que son de tipo RequestAttachmentIdType, por lo que cualquier identificadores que reciba de **CreateAttachment** debe tener los atributos **RootItemId** y **RootItemChangeKey** antes de pasarlos a **GetAttachment**.
+La [colección AttachmentIds](attachmentids.md) permite especificar uno o más identificadores de datos adjuntos que se devolverán. Tenga en cuenta que estos son de tipo RequestAttachmentIdType, por lo que cualquier AttachmentIds que reciba de **CreateAttachment** debe tener los atributos **RootItemId** y **RootItemChangeKey** quitados antes de pasarlos a **GetAttachment**.
   
 > [!NOTE]
-> El identificador de los datos adjuntos y la clave de cambio se han abreviado para preservar la legibilidad. 
+> El identificador de datos adjuntos y la clave de cambio se han acortado para conservar la legibilidad. 
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [GetAttachment](getattachment.md)
     
 - [AttachmentShape](attachmentshape.md)
     
-- [Identificadores](attachmentids.md)
+- [AttachmentIds](attachmentids.md)
     
-- [AttachmentId (GetAttachment y DeleteAttachment)](attachmentid-getattachment-and-deleteattachment.md)
+- [AttachmentId (GetAttachment and DeleteAttachment)](attachmentid-getattachment-and-deleteattachment.md)
     
 ## <a name="getattachment-response-example"></a>Ejemplo de respuesta GetAttachment
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
 En el ejemplo siguiente se muestra una respuesta correcta a una solicitud GetAttachment. En este ejemplo se devuelven datos adjuntos de archivo.
   
@@ -110,9 +110,9 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud GetAtt
 
 ### <a name="comments"></a>Comentarios
 
-Los mensajes de respuesta para GetAttachment siempre contendrán los datos adjuntos completos; es decir, siempre se incluirán todas las propiedades. Para los datos adjuntos, esas propiedades son [Name (AttachmentType)](name-attachmenttype.md), [ContentType](contenttype.md), [contentid](contentid.md), [ContentLocation](contentlocation.md)y [Content](content.md). Para los datos adjuntos de elementos, esas propiedades son [nombre (AttachmentType)](name-attachmenttype.md), [ContentType](contenttype.md), [contentid](contentid.md), [ContentLocation](contentlocation.md) y todas las propiedades del elemento, como si la forma **AllProperties** se hubiera usado en una llamada GetItem. El elemento [AttachmentShape](attachmentshape.md) , si está presente, permitirá que una aplicación de consumidor solicite propiedades extendidas adicionales para los datos adjuntos de elementos. 
+Los mensajes de respuesta de GetAttachment siempre contendrán los datos adjuntos completos; es decir, todas las propiedades siempre se incluirán. Para los datos adjuntos de archivos, estas propiedades [son Name (AttachmentType),](name-attachmenttype.md) [ContentType](contenttype.md), [ContentId](contentid.md), [ContentLocation](contentlocation.md)y [Content](content.md). Para los datos adjuntos de elementos, estas propiedades son [Name (AttachmentType),](name-attachmenttype.md) [ContentType](contenttype.md), [ContentId](contentid.md), [ContentLocation](contentlocation.md) y todas las propiedades del elemento, como si la forma **AllProperties** se hubiera usado en una llamada a GetItem. El [elemento AttachmentShape,](attachmentshape.md) si está presente, permitirá a una aplicación de consumidor solicitar propiedades extendidas adicionales para los datos adjuntos de elementos. 
   
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -126,17 +126,17 @@ En la respuesta se usan los siguientes elementos:
     
 - [ResponseCode](responsecode.md)
     
-- [Datos adjuntos](attachments-ex15websvcsotherref.md)
+- [Adjuntos](attachments-ex15websvcsotherref.md)
     
 - [FileAttachment](fileattachment.md)
     
-- [AttachmentId (GetAttachment y DeleteAttachment)](attachmentid-getattachment-and-deleteattachment.md)
+- [AttachmentId (GetAttachment and DeleteAttachment)](attachmentid-getattachment-and-deleteattachment.md)
     
-- [Nombre (AttachmentType)](name-attachmenttype.md)
+- [Name (AttachmentType)](name-attachmenttype.md)
     
-- [Content](content.md)
+- [Contenido](content.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

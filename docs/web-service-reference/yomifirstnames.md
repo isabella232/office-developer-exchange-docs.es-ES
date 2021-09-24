@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 415dfa18-7ad1-435f-beaf-d89de9291edc
-description: El elemento YomiFirstNames especifica una matriz de nombres de primer idioma fonético japonés y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: b1c27fbca0b7dafffb281aab3489ac4f6e08c742
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento YomiFirstNames especifica una matriz de nombres fonéticos en japonés y los identificadores de sus atribuciones de origen para la persona asociada.
+ms.openlocfilehash: 77bea9ce9d2050491a24571c70536c0274216e13
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465124"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509276"
 ---
 # <a name="yomifirstnames"></a>YomiFirstNames
 
-El elemento **YomiFirstNames** especifica una matriz de nombres de primer idioma fonético japonés y los identificadores de sus atribuciones de origen para el rol asociado. 
+El **elemento YomiFirstNames** especifica una matriz de nombres fonéticos en japonés y los identificadores de sus atribuciones de origen para la persona asociada. 
   
 ```XML
 <YomiFirstNames>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

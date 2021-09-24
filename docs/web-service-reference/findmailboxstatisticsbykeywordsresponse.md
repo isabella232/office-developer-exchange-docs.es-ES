@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: af1dd9bf-df47-473d-a2ce-ab9a01a37606
 description: El elemento FindMailboxStatisticsByKeywordsResponse especifica la respuesta a una solicitud FindMailboxStatisticsByKeywords.
-ms.openlocfilehash: a0595ec9ee0cedf5150852dc39eca50b598e15aa
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8b4b5ebed303382aa4accb9176a09d77150e53e0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460991"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510109"
 ---
 # <a name="findmailboxstatisticsbykeywordsresponse"></a>FindMailboxStatisticsByKeywordsResponse
 
-El elemento **FindMailboxStatisticsByKeywordsResponse** especifica la respuesta a una solicitud **FindMailboxStatisticsByKeywords** . 
+El **elemento FindMailboxStatisticsByKeywordsResponse** especifica la respuesta a una solicitud **FindMailboxStatisticsByKeywords.** 
   
 ```XML
 <FindMailboxStatisticsByKeywordsResponse>
@@ -32,13 +32,13 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta para una solicitud de servicios Web de Exchange (EWS).  <br/> |
+|[ResponseMessages](responsemessages.md) <br/> |Contiene los mensajes de respuesta de una Exchange de servicios web (EWS).  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -53,13 +53,13 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

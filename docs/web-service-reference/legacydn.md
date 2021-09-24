@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 72cec5ec-8485-431c-95b7-b9c2247669d6
 description: El elemento LegacyDN identifica un buzón por su nombre distintivo heredado.
-ms.openlocfilehash: b5eb23d285925f97cc25f53b56bca669bbbb5840
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: c40f76ec37407a0ac6db27bcccad0c5b9d5924b9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463240"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509626"
 ---
 # <a name="legacydn"></a>LegacyDN
 
-El elemento **LegacyDN** identifica un buzón por su nombre distintivo heredado. 
+El **elemento LegacyDN** identifica un buzón por su nombre distintivo heredado. 
   
 ```XML
 <LegacyDN></LegacyDN>
@@ -31,19 +31,19 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Buzones de correo (NonEmptyArrayOfLegacyDNsType)](mailboxes-nonemptyarrayoflegacydnstype.md)
+[Mailboxes (NonEmptyArrayOfLegacyDNsType)](mailboxes-nonemptyarrayoflegacydnstype.md)
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **LegacyDN** es el nombre distintivo heredado del buzón de destino. 
+El valor de texto del **elemento LegacyDN** es el nombre distintivo heredado del buzón de destino. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

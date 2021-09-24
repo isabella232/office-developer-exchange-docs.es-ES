@@ -1,33 +1,33 @@
 ---
-title: Operación unsubscribe
+title: Operación Unsubscribe
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Unsubscribe
 api_type:
 - schema
 ms.assetid: 994a9d2b-1501-4804-90f0-12bd914496ec
-description: La operación unsubscribe se usa para finalizar una suscripción de notificación de extracción. Use esta operación en lugar de permitir un tiempo de espera de suscripción. Esta operación solo es válida para las notificaciones de extracción.
-ms.openlocfilehash: 054f89af1ba5c780c7de5016a6dfe34086c97f02
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación Cancelar suscripción se usa para finalizar una suscripción de notificación de extracción. Use esta operación en lugar de dejar que se agote el tiempo de espera de una suscripción. Esta operación solo es válida para las notificaciones de extracción.
+ms.openlocfilehash: 96d30bcd585b07a7ed0497a4a4c723485e8626ab
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468029"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517507"
 ---
-# <a name="unsubscribe-operation"></a>Operación unsubscribe
+# <a name="unsubscribe-operation"></a>Operación Unsubscribe
 
-La operación unsubscribe se usa para finalizar una suscripción de notificación de extracción. Use esta operación en lugar de permitir un tiempo de espera de suscripción. Esta operación solo es válida para las notificaciones de extracción.
+La operación Cancelar suscripción se usa para finalizar una suscripción de notificación de extracción. Use esta operación en lugar de dejar que se agote el tiempo de espera de una suscripción. Esta operación solo es válida para las notificaciones de extracción.
   
 ## <a name="unsubscribe-request-example"></a>Ejemplo de solicitud de cancelación de suscripción
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra el mensaje XML de SOAP que se envía para cancelar la suscripción de un cliente desde el servicio de notificación.
+En el ejemplo siguiente se muestra el mensaje XML SOAP que se envía para cancelar la suscripción de un cliente del servicio de notificación.
   
 ### <a name="code"></a>Código
 
@@ -43,15 +43,15 @@ En el ejemplo siguiente se muestra el mensaje XML de SOAP que se envía para can
 </soap:Envelope>
 ```
 
-### <a name="unsubscribe-request-elements"></a>Elementos de solicitud de cancelación de suscripción
+### <a name="unsubscribe-request-elements"></a>Cancelar suscripción a elementos de solicitud
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [Unsubscribe](unsubscribe.md)
     
 - [SubscriptionId (GetEvents)](subscriptionid-getevents.md)
     
-## <a name="successful-unsubscribe-response-example"></a>Ejemplo de respuesta de cancelación de suscripción correcta
+## <a name="successful-unsubscribe-response-example"></a>Ejemplo de respuesta Cancelar suscripción correcta
 
 ### <a name="description"></a>Description
 
@@ -82,7 +82,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de can
 </soap:Envelope>
 ```
 
-### <a name="unsubscribe-response-elements"></a>Elementos de respuesta unsubscribe
+### <a name="unsubscribe-response-elements"></a>Cancelar suscripción a elementos de respuesta
 
 En la respuesta se usan los siguientes elementos:
   
@@ -96,11 +96,11 @@ En la respuesta se usan los siguientes elementos:
     
 - [ResponseCode](responsecode.md)
     
-## <a name="unsubscribe-error-response-example"></a>Ejemplo de respuesta de error de cancelación de suscripción
+## <a name="unsubscribe-error-response-example"></a>Ejemplo de respuesta Error de cancelación de suscripción
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de respuesta de error de cancelación de suscripción se produce en respuesta a un intento de cancelar la suscripción mediante un identificador de suscripción que no se encuentra en el almacén de Exchange.
+El siguiente ejemplo de una respuesta de error Cancelar suscripción se produce en respuesta a un intento de cancelar la suscripción mediante un identificador de suscripción que no se puede encontrar en el Exchange almacén.
   
 ### <a name="code"></a>Código
 
@@ -129,9 +129,9 @@ El siguiente ejemplo de respuesta de error de cancelación de suscripción se pr
 </soap:Envelope>
 ```
 
-### <a name="unsubscribe-error-response-elements"></a>Elementos de respuesta de error de cancelación de suscripción
+### <a name="unsubscribe-error-response-elements"></a>Cancelar suscripción Elementos de respuesta de error
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -147,9 +147,9 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Operación subscribe](subscribe-operation.md)
+- [Operación de suscripción](subscribe-operation.md)
 - [Operación GetEvents](getevents-operation.md)
 - [Uso de suscripciones de extracción](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
 

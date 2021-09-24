@@ -5,40 +5,40 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 211731a3-2470-49af-bda3-1ddfc15a8e46
-description: Buscar información sobre la operación de EWS de DisableApp.
-ms.openlocfilehash: 8e1f3a257a70c042a01ed70da97cfa0573a2d454
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Busque información sobre la operación DE EWS DisableApp.
+ms.openlocfilehash: 7a4d3a13351042cc1a192388416381ebe28206bd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462069"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510158"
 ---
 # <a name="disableapp-operation"></a>Operación DisableApp
 
-Buscar información sobre la operación de EWS de **DisableApp** . 
+Busque información sobre la operación DE EWS **DisableApp.** 
   
-La operación **DisableApp** deshabilita una aplicación de correo para Outlook. 
+La **operación DisableApp** deshabilita una aplicación de correo para Outlook. 
   
 Esta operación se introdujo en Exchange Server 2013.
   
 ## <a name="using-the-disableapp-operation"></a>Uso de la operación DisableApp
 
-La operación **DisableApp** toma dos argumentos en la solicitud que identifican la aplicación de correo que se va a deshabilitar y el motivo por el que se ha deshabilitado. 
+La **operación DisableApp** toma dos argumentos en la solicitud que identifican la aplicación de correo que se va a deshabilitar y el motivo por el que se deshabilitó. 
   
-### <a name="disableapp-operation-soap-headers"></a>Encabezados SOAP de operación DisableApp
+### <a name="disableapp-operation-soap-headers"></a>Encabezados SOAP de la operación DisableApp
 
-La operación **DisableApp** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
+La **operación DisableApp** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
   
 |**Nombre de encabezado**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Este encabezado se aplica a una solicitud.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado se aplica a una respuesta.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Este encabezado es aplicable a una solicitud.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado es aplicable a una respuesta.  <br/> |
    
-## <a name="disableapp-operation-request-example-disable-a-mail-app-installed-in-a-mailbox"></a>Ejemplo de solicitud de operación DisableApp: deshabilitar una aplicación de correo instalada en un buzón
+## <a name="disableapp-operation-request-example-disable-a-mail-app-installed-in-a-mailbox"></a>Ejemplo de solicitud de operación DisableApp: Deshabilitar una aplicación de correo instalada en un buzón
 
-El siguiente ejemplo de una solicitud de operación de **DisableApp** muestra cómo deshabilitar una aplicación de correo. El identificador de la aplicación se puede encontrar en el manifiesto de la aplicación que se devuelve en una respuesta de [operación GetAppManifests](getappmanifests-operation.md) . 
+En el siguiente ejemplo de una **solicitud de operación DisableApp** se muestra cómo deshabilitar una aplicación de correo. El identificador de la aplicación se puede encontrar en el manifiesto de la aplicación que se devuelve en una respuesta de [operación GetAppManifests.](getappmanifests-operation.md) 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -65,13 +65,13 @@ El cuerpo SOAP de la solicitud contiene los siguientes elementos:
   
 - [DisableApp](disableapp.md)
     
-- [ID (cadena)](id-string.md)
+- [ID (Cadena)](id-string.md)
     
 - [DisableReason](disablereason.md)
     
-## <a name="successful-disableapp-operation-response"></a>Respuesta de operación DisableApp correcta
+## <a name="successful-disableapp-operation-response"></a>Respuesta correcta de la operación DisableApp
 
-En el siguiente ejemplo se muestra una respuesta correcta a una solicitud de operación de **DisableApp** para deshabilitar una aplicación de correo. 
+En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación **DisableApp** para deshabilitar una aplicación de correo. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -97,15 +97,15 @@ En el siguiente ejemplo se muestra una respuesta correcta a una solicitud de ope
 </s:Envelope>
 ```
 
-El cuerpo SOAP de respuesta contiene los siguientes elementos:
+El cuerpo SOAP de la respuesta contiene los siguientes elementos:
   
 - [DisableAppResponse](disableappresponse.md)
     
 - [ResponseCode](responsecode.md)
     
-## <a name="disableapp-operation-error-response"></a>Respuesta de error de operación de DisableApp
+## <a name="disableapp-operation-error-response"></a>Respuesta de error de operación DisableApp
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **DisableApp** . Se trata de una respuesta a una solicitud para deshabilitar una aplicación de correo que no está instalada en un buzón. 
+En el ejemplo siguiente se muestra una respuesta de error a una **solicitud de operación DisableApp.** Esta es una respuesta a una solicitud para deshabilitar una aplicación de correo que no está instalada en un buzón. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -123,7 +123,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
 </s:Envelope>
 ```
 
-El cuerpo SOAP de respuesta de error contiene los siguientes elementos:
+El cuerpo SOAP de la respuesta de error contiene los siguientes elementos:
   
 - [DisableAppResponse](disableappresponse.md)
     
@@ -133,11 +133,11 @@ El cuerpo SOAP de respuesta de error contiene los siguientes elementos:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Para obtener los códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).
+Para obtener códigos de error adicionales genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)   
+- [Operaciones ews en Exchange](ews-operations-in-exchange.md)   
 - [Operación InstallApp](installapp-operation.md)   
 - [Operación UninstallApp](uninstallapp-operation.md)   
 - [GetAppManifests](getappmanifests.md)   

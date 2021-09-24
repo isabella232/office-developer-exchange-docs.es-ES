@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5c8a35b8-a940-4b3e-8768-9ba95766fd79
 description: El elemento ConversationNodes especifica una colección de nodos de conversación.
-ms.openlocfilehash: 39ffb97f1004535e2fc70b58f8d56afe129e8ee2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8bacbc83676d9642ae8f842affbc11338cbdff0c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461397"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536627"
 ---
 # <a name="conversationnodes"></a>ConversationNodes
 
-El elemento **ConversationNodes** especifica una colección de nodos de conversación. 
+El **elemento ConversationNodes** especifica una colección de nodos de conversación. 
   
 ```XML
 <ConversationNodes>
@@ -32,19 +32,19 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ConversationNode](conversationnode.md) <br/> |Especifica un nodo de una conversación.  <br/> |
+|[ConversationNode](conversationnode.md) <br/> |Especifica un nodo en una conversación.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Conversación (ConversationResponseType)](conversation-conversationresponsetype.md) <br/> |Representa una única conversación devuelta en una respuesta **GetConversationItems** .  <br/> |
+|[Conversation (ConversationResponseType)](conversation-conversationresponsetype.md) <br/> |Representa una sola conversación devuelta en una **respuesta GetConversationItems.**  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -58,12 +58,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

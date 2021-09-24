@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 38f0b7f4-2338-4e90-af67-e0951e8edfa3
 description: El elemento RightsManagementLicenseData especifica información sobre la licencia de administración de derechos de un elemento.
-ms.openlocfilehash: 892edfd6775838b1e6329e8db0ee9bb8e3c519ff
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8875e9bad425224f86b6de5149f87a36c2a2581e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463191"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523471"
 ---
 # <a name="rightsmanagementlicensedata"></a>RightsManagementLicenseData
 
-El elemento **RightsManagementLicenseData** especifica información sobre la licencia de administración de derechos de un elemento. 
+El **elemento RightsManagementLicenseData** especifica información sobre la licencia de administración de derechos de un elemento. 
   
 ```XML
 <RightsManagementLicenseData>
@@ -47,7 +47,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -55,7 +55,7 @@ Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Elemento](item.md)  |  [Mensaje de error](message-ex15websvcsotherref.md)  |  [MeetingMessage](meetingmessage.md)  |  Propiedad [MeetingRequest](meetingrequest.md)  |  [MeetingResponse](meetingresponse.md)  |  [MeetingCancellation](meetingcancellation.md)  |  [Tarea](task.md)  |  [PostItem](postitem.md)  |  [CalendarItem](calendaritem.md)  |  [Contacto](contact.md)  |  [DistributionList](distributionlist.md)
+[Elemento](item.md)  |  [Mensaje](message-ex15websvcsotherref.md)  |  [MeetingMessage](meetingmessage.md)  |  [MeetingRequest](meetingrequest.md)  |  [MeetingResponse](meetingresponse.md)  |  [MeetingCancellation](meetingcancellation.md)  |  [Tarea](task.md)  |  [PostItem](postitem.md)  |  [CalendarItem](calendaritem.md)  |  [Contacto](contact.md)  |  [DistributionList](distributionlist.md)
   
 ## <a name="remarks"></a>Comentarios
 
@@ -68,8 +68,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

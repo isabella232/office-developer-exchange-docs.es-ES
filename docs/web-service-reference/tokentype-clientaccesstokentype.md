@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 96103f15-a3e0-497c-af21-90adbf9a4b14
 description: El elemento TokenType identifica el tipo de token de acceso de cliente que se devolverá en la respuesta GetClientAccessToken.
-ms.openlocfilehash: 49ba2973967b12396e0c7f56129c89c40ccbcf97
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 967d64796799147876ef6443b40b16154b55c01a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466055"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523359"
 ---
 # <a name="tokentype-clientaccesstokentype"></a>TokenType (ClientAccessTokenType)
 
-El elemento **tokentype** identifica el tipo de token de acceso de cliente que se devolverá en la respuesta **GetClientAccessToken** . 
+El **elemento TokenType** identifica el tipo de token de acceso de cliente que se devolverá en la **respuesta GetClientAccessToken.** 
   
 ```XML
 <TokenType>CallerIdentity | ExtensionCallback | ScopedToken</TokenType>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **CallerIdentity** significa que se devuelve un token de acceso de cliente de identidad de autor de llamada. Un valor de texto de **ExtensionCallback** indica que se ha devuelto un token de acceso de cliente de devolución de llamada de extensión. Un valor de texto de **ScopedToken** indica que el token de acceso de cliente es un token con ámbito. 
+Un valor de texto de **CallerIdentity** significa que se devuelve un token de acceso de cliente de identidad de autor de la llamada. Un valor de texto de **ExtensionCallback** indica que se devuelve un token de acceso de cliente de devolución de llamada de extensión. Un valor de texto **de ScopedToken** indica que el token de acceso de cliente es un token con ámbito. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateItem
 api_type:
 - schema
 ms.assetid: fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1
 description: La operación CreateItem se usa para crear mensajes de correo electrónico.
-ms.openlocfilehash: 384ed8ff653029c2b7db0b36986d85842b0a06cf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 74784d72ed14fa139c616cd11740a62efd17b338
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457119"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536471"
 ---
 # <a name="createitem-operation-email-message"></a>Operación CreateItem (mensaje de correo electrónico)
 
@@ -27,7 +27,7 @@ La operación CreateItem se usa para crear mensajes de correo electrónico.
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud CreateItem muestra cómo crear un nuevo mensaje de correo electrónico, enviar el mensaje y guardar una copia en la carpeta Borradores.
+En el siguiente ejemplo de una solicitud CreateItem se muestra cómo crear un nuevo mensaje de correo electrónico, enviar el mensaje y guardar una copia de él en la carpeta borradores.
   
 ### <a name="code"></a>Código
 
@@ -58,23 +58,23 @@ El siguiente ejemplo de una solicitud CreateItem muestra cómo crear un nuevo me
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud: 
+En la solicitud se usan los siguientes elementos: 
   
 - [CreateItem](createitem.md)
     
 - [SavedItemFolderId](saveditemfolderid.md)
     
-- [Elementos (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
-- [Message](message-ex15websvcsotherref.md)
+- [Mensaje](message-ex15websvcsotherref.md)
     
 - [ItemClass](itemclass.md)
     
 - [Asunto](subject.md)
     
-- [Body](body.md)
+- [Cuerpo](body.md)
     
 - [ToRecipients](torecipients.md)
     
@@ -84,9 +84,9 @@ Los siguientes elementos se usan en la solicitud:
     
 - [IsRead](isread.md)
     
-Para buscar otras opciones para el mensaje de solicitud de la operación CreateItem, explore la jerarquía del esquema. Comience en el elemento [CreateItem](createitem.md) . 
+Para buscar otras opciones para el mensaje de solicitud de la operación CreateItem, explore la jerarquía de esquema. Comience en el [elemento CreateItem.](createitem.md) 
   
-## <a name="successful-createitem-response"></a>Respuesta de CreateItem correcta
+## <a name="successful-createitem-response"></a>Respuesta correcta de CreateItem
 
 ### <a name="description"></a>Description
 
@@ -117,7 +117,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateI
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se incluyen los siguientes elementos: 
   
@@ -131,7 +131,7 @@ En la respuesta se incluyen los siguientes elementos:
     
 - [Items](items.md)
     
-Para buscar otras opciones para el mensaje de respuesta de la operación CreateItem, explore la jerarquía del esquema. Empiece en el elemento [CreateItemResponse](createitemresponse.md) . 
+Para buscar otras opciones para el mensaje de respuesta de la operación CreateItem, explore la jerarquía de esquema. Comience en el [elemento CreateItemResponse.](createitemresponse.md) 
   
 ## <a name="error-createitem-response"></a>Error CreateItem Response
 
@@ -168,7 +168,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud Create
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-Los siguientes elementos se usan en la respuesta de error: 
+En la respuesta de error se usan los siguientes elementos: 
   
 - [CreateItemResponse](createitemresponse.md)
     
@@ -184,9 +184,9 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - [Items](items.md)
     
-Para buscar otras opciones para el mensaje de respuesta de error de la operación CreateItem, explore la jerarquía del esquema. Empiece en el elemento [CreateItemResponse](createitemresponse.md) . 
+Para buscar otras opciones para el mensaje de respuesta de error de la operación CreateItem, explore la jerarquía de esquema. Comience en el [elemento CreateItemResponse.](createitemresponse.md) 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

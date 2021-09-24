@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsEncrypted
 api_type:
 - schema
 ms.assetid: 68a30e92-c2b1-4af5-bb16-ba38afb80c43
-description: El elemento IsEncrypted indica si los mensajes entrantes deben ser cifrados con S/MIME para que se aplique la condición o excepción.
-ms.openlocfilehash: 7470fa3163596f87badfda2ca698b096e02f1196
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento IsEncrypted indica si los mensajes entrantes deben estar cifrados S/MIME para que se aplique la condición o excepción.
+ms.openlocfilehash: 54e0be5262ab14bac72152028091fe56b37f90a3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455306"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509766"
 ---
 # <a name="isencrypted"></a>IsEncrypted
 
-El elemento **IsEncrypted** indica si los mensajes entrantes deben ser cifrados con S/MIME para que se aplique la condición o excepción. 
+El **elemento IsEncrypted** indica si los mensajes entrantes deben estar cifrados S/MIME para que se aplique la condición o excepción. 
   
 ```XML
 <IsEncrypted>true | false</IsEncrypted>
@@ -34,11 +34,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -49,7 +49,7 @@ Ninguna.
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** indica que el mensaje debe estar cifrado con S/MIME para que se aplique la condición o excepción. Un valor de **false** indica que el mensaje no tiene que ser S/MIME para que se aplique la condición o excepción. 
+Un valor de texto **de true** indica que el mensaje debe estar cifrado S/MIME para que se aplique la condición o excepción. Un valor **de false** indica que el mensaje no tiene que ser S/MIME para que se aplique la condición o excepción. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -61,12 +61,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

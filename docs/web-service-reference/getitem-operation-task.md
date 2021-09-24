@@ -5,33 +5,33 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetItem
 api_type:
 - schema
 ms.assetid: 8265dd06-1752-4470-8074-5f0e3e970f52
-description: La operación GetItem se usa para obtener tareas del almacén de Exchange.
-ms.openlocfilehash: 17a23d4c2a35761e831610f3514c980a5a67e12b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación GetItem se usa para obtener tareas del Exchange almacén.
+ms.openlocfilehash: 36e7b5ecc37c05f64c3b6617f45396805be0e532
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463338"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509843"
 ---
 # <a name="getitem-operation-task"></a>Operación GetItem (tarea)
 
-La operación GetItem se usa para obtener tareas del almacén de Exchange.
+La operación GetItem se usa para obtener tareas del Exchange almacén.
   
 ## <a name="remarks"></a>Comentarios
 
-El formato de la solicitud GetItem para tareas es el mismo que GetItem para cualquier otro tipo de elemento. La única diferencia es que se pueden solicitar propiedades adicionales dentro de la forma de respuesta. Estas propiedades adicionales deben ser propiedades relacionadas con tareas o propiedades extendidas.
+El formato de la solicitud GetItem para tareas es el mismo que GetItem para cualquier otro tipo de elemento. La única diferencia es en qué propiedades adicionales se pueden solicitar dentro de la forma de respuesta. Estas propiedades adicionales deben ser propiedades relacionadas con tareas o propiedades extendidas.
   
-## <a name="task-getitem-request-example"></a>Ejemplo de solicitud GetItem de tarea
+## <a name="task-getitem-request-example"></a>Ejemplo de solicitud Task GetItem
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud GetItem muestra cómo obtener un elemento de tarea.
+En el siguiente ejemplo de una solicitud GetItem se muestra cómo obtener un elemento de tarea.
   
 ### <a name="code"></a>Código
 
@@ -58,11 +58,11 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
 ### <a name="comments"></a>Comentarios
 
 > [!NOTE]
-> El identificador de elemento y la clave de cambio se han abreviado para preservar la legibilidad. 
+> El identificador del elemento y la clave de cambio se han acortado para conservar la legibilidad. 
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [GetItem](getitem.md)
     
@@ -74,9 +74,9 @@ Los siguientes elementos se usan en la solicitud:
     
 - [ItemId](itemid.md)
     
-## <a name="task-getitem-response-example"></a>Ejemplo de respuesta GetItem de tarea
+## <a name="task-getitem-response-example"></a>Ejemplo de respuesta de Task GetItem
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
 En el ejemplo siguiente se muestra una respuesta correcta a una solicitud GetItem.
   
@@ -136,9 +136,9 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud GetIte
 ### <a name="comments"></a>Comentarios
 
 > [!NOTE]
-> Los identificadores de elemento y carpeta y las claves de cambio se han abreviado para preservar la legibilidad. 
+> Los identificadores de elementos y carpetas y las claves de cambio se han acortado para conservar la legibilidad. 
   
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -166,7 +166,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [Sensitivity](sensitivity.md)
     
-- [Body](body.md)
+- [Cuerpo](body.md)
     
 - [DateTimeReceived](datetimereceived.md)
     
@@ -204,7 +204,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [StatusDescription](statusdescription.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
@@ -213,7 +213,7 @@ En la respuesta se usan los siguientes elementos:
 
 [Creación de tareas](https://msdn.microsoft.com/library/0ef97334-e8a0-4f67-a23a-dd9e2bbad49f%28Office.15%29.aspx)
   
-[Actualización de tareas](https://msdn.microsoft.com/library/0a1bf360-d40c-4a99-929b-4c73a14394d5%28Office.15%29.aspx)
+[Actualizar tareas](https://msdn.microsoft.com/library/0a1bf360-d40c-4a99-929b-4c73a14394d5%28Office.15%29.aspx)
   
 [Eliminación de tareas](https://msdn.microsoft.com/library/a3d7e25f-8a35-4901-b1d9-d31f418ab340%28Office.15%29.aspx)
 

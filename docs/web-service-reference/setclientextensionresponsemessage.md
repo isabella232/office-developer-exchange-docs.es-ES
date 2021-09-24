@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3365e58c-adb3-4d92-92cc-acc95ce36cca
-description: El elemento SetClientExtensionResponseMessage especifica el mensaje de respuesta para una solicitud de SetClientExtension.
-ms.openlocfilehash: 3743d2f1643bece044ff7b7c8ccac95bbd7401ea
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento SetClientExtensionResponseMessage especifica el mensaje de respuesta de una solicitud SetClientExtension.
+ms.openlocfilehash: 0d0dbb0ba92760f36a0aeffe0089f82651bfb122
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468722"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517710"
 ---
 # <a name="setclientextensionresponsemessage"></a>SetClientExtensionResponseMessage
 
-El elemento **SetClientExtensionResponseMessage** especifica el mensaje de respuesta para una solicitud de **SetClientExtension** . 
+El **elemento SetClientExtensionResponseMessage** especifica el mensaje de respuesta de una **solicitud SetClientExtension.** 
   
 ```XML
 <SetClientExtensionResponseMessage>
@@ -35,7 +35,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

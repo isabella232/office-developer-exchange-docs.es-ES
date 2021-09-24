@@ -1,23 +1,23 @@
 ---
-title: Valor (PersonaPostalAddressType)
+title: Value (PersonaPostalAddressType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: be838fc2-cfcb-4856-b095-a8e5366bb6c6
-description: El elemento Value especifica información asociada con una dirección postal.
-ms.openlocfilehash: 2d644ff45fe89061ccd90279773f3a5a5b7fe7cc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Value especifica la información asociada a una dirección postal.
+ms.openlocfilehash: 2f017cfc513b9c22d65f8437565646506f3be1ab
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466475"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517346"
 ---
-# <a name="value-personapostaladdresstype"></a>Valor (PersonaPostalAddressType)
+# <a name="value-personapostaladdresstype"></a>Value (PersonaPostalAddressType)
 
-El elemento **Value** especifica información asociada con una dirección postal. 
+El **elemento Value** especifica la información asociada a una dirección postal. 
   
 ```XML
 <Value>
@@ -47,11 +47,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Calle](street.md)  |  [City](city.md)  |  [Provincia o estado](state-ex15websvcsotherref.md)  |  [País](country.md)  |  [CódigoPostal](postalcode.md)  |  [PostOfficeBox](postofficebox.md)  |  [Tipo (cadena)](type-string.md)  |  [Latitud](latitude.md)  |  [Longitud](longitude.md)  |  [Precisión](accuracy.md)  |  [Altitud](altitude.md)  |  [AltitudeAccuracy](altitudeaccuracy.md)  |  [FormattedAddress](formattedaddress.md)  |  [LocationUri](locationuri.md)  |  [LocationSource](locationsource.md)
+[Calle](street.md)  |  [Ciudad](city.md)  |  [Estado](state-ex15websvcsotherref.md)  |  [País](country.md)  |  [PostalCode](postalcode.md)  |  [PostOfficeBox](postofficebox.md)  |  [Tipo (cadena)](type-string.md)  |  [Latitud](latitude.md)  |  [Longitud](longitude.md)  |  [Precisión](accuracy.md)  |  [Altitud](altitude.md)  |  [AltitudeAccuracy](altitudeaccuracy.md)  |  [FormattedAddress](formattedaddress.md)  |  [LocationUri](locationuri.md)  |  [LocationSource](locationsource.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -68,8 +68,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

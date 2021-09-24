@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b7f7acd3-ed65-441e-9976-8b4ed5f12c0b
-description: El elemento ConversationNode especifica un nodo en una conversación.
-ms.openlocfilehash: 074209c1b5669db8dd1ea4ba7f9dea064628afbd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ConversationNode especifica un nodo de una conversación.
+ms.openlocfilehash: 2668d3cfaa8b43812a4a20ab8d92f419d636e368
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462706"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510361"
 ---
 # <a name="conversationnode"></a>ConversationNode
 
-El elemento **ConversationNode** especifica un nodo en una conversación. 
+El **elemento ConversationNode** especifica un nodo de una conversación. 
   
 ```XML
 <ConversationNode>
@@ -34,15 +34,15 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
 |[InternetMessageId](internetmessageid.md) <br/> |Representa el identificador de mensaje de Internet de un elemento.  <br/> |
-|[ParentInternetMessageId](parentinternetmessageid.md) <br/> |Especifica el identificador del mensaje de Internet primario.  <br/> |
-|[ItemIds (NonEmptyArrayOfItemIdsType)](itemids-nonemptyarrayofitemidstype.md) <br/> |Especifica todos los elementos en el nodo de conversación.  <br/> |
+|[ParentInternetMessageId](parentinternetmessageid.md) <br/> |Especifica el identificador del mensaje primario de Internet.  <br/> |
+|[ItemIds (NonEmptyArrayOfItemIdsType)](itemids-nonemptyarrayofitemidstype.md) <br/> |Especifica todos los elementos del nodo de conversación.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -62,12 +62,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

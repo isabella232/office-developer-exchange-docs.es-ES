@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CopiedEvent
 api_type:
 - schema
 ms.assetid: 82f2fcac-deaa-4ff8-801f-4fe28d8a19f5
-description: El elemento CopiedEvent representa un evento en el que se copia un elemento o una carpeta.
-ms.openlocfilehash: 928910ddbe0bf1e48549d1665ab373f7382366d1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento CopiedEvent representa un evento en el que se copia un elemento o carpeta.
+ms.openlocfilehash: bc4902eb1e62344a7d5980ec573ac13b1bb084ee
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529248"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536596"
 ---
 # <a name="copiedevent"></a>CopiedEvent
 
-El elemento **CopiedEvent** representa un evento en el que se copia un elemento o una carpeta. 
+El **elemento CopiedEvent** representa un evento en el que se copia un elemento o carpeta. 
   
 ```xml
 <CopiedEvent>
@@ -40,7 +40,7 @@ El elemento **CopiedEvent** representa un evento en el que se copia un elemento 
    <TimeStamp/>
    <ItemId/>
    <ParentFolderId/>
-   <OldFolderId/>
+   <OldItemId/>
    <OldParentFolderId/>
 </CopiedEvent>
 ```
@@ -53,20 +53,20 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Watermark](watermark.md) <br/> |Representa un marcador de eventos en la tabla de eventos del buzón.  <br/> |
-|[Marca](timestamp.md) <br/> |Representa la marca de hora de un evento de copia de elemento/buzón de carpeta.  <br/> |
+|[Watermark](watermark.md) <br/> |Representa un marcador de eventos en la tabla de eventos de buzón.  <br/> |
+|[TimeStamp](timestamp.md) <br/> |Representa la marca de tiempo de un evento de buzón de correo de copia o carpeta.  <br/> |
 |[FolderId](folderid.md) <br/> |Representa el identificador de la carpeta.  <br/> |
 |[ItemId](itemid.md) <br/> |Representa el identificador del elemento.  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |Representa el identificador de la carpeta que contiene la copia.  <br/> |
-|[OldFolderId](oldfolderid.md) <br/> |Representa el identificador de la carpeta original antes de que se copiara.  <br/> |
+|[OldFolderId](oldfolderid.md) <br/> |Representa el identificador de carpeta de la carpeta original antes de copiarla.  <br/> |
 |[OldItemId](olditemid.md) <br/> |Contiene el identificador único del elemento original antes de copiarlo.  <br/> |
-|[OldParentFolderId](oldparentfolderid.md) <br/> |Contiene el identificador de la carpeta principal original de un elemento o carpeta que se ha copiado.  <br/> |
+|[OldParentFolderId](oldparentfolderid.md) <br/> |Contiene el identificador de la carpeta principal original de un elemento o carpeta que se copió.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -76,22 +76,22 @@ Ninguna.
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Operación subscribe](subscribe-operation.md) 
+- [Operación de suscripción](subscribe-operation.md) 
 - [Operación GetEvents](getevents-operation.md) 
-- [Operación unsubscribe](unsubscribe-operation.md)
+- [Operación Darse de baja](unsubscribe-operation.md)
 - [Uso de suscripciones de extracción](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx) 
-- [Aplicación de ejemplo de notificación de inserción](https://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx)
+- [Solicitud de muestra de notificación de inserción](https://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx)
 

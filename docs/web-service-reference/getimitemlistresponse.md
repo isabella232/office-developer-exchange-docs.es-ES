@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 00422885-0e7b-4b50-a9ca-01f24ff9858f
 description: El elemento GetImItemListResponse define una respuesta a una solicitud GetImItemList.
-ms.openlocfilehash: e1e6e30bc1304cf4898b125d3a041c1f0a8a9ab6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 68631bbcdeaec55654872376a106fb3aab397cc8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456055"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509878"
 ---
 # <a name="getimitemlistresponse"></a>GetImItemListResponse
 
-El elemento **GetImItemListResponse** define una respuesta a una solicitud **GetImItemList** . 
+El **elemento GetImItemListResponse** define una respuesta a una **solicitud GetImItemList.** 
   
 ```XML
 <GetImItemListResponse>
@@ -36,7 +36,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -57,8 +57,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

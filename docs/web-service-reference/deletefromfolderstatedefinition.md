@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3aba59a0-f12a-48b5-842b-11cf4530dd51
 description: El elemento DeleteFromFolderStateDefinition especifica el estado cuando se elimina un elemento de una carpeta.
-ms.openlocfilehash: 0ea8c61a6839790869781d5d87ca81772b2e38d6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 270edfc0b7abd70b74ff8c8b4353140ec5fbe27b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455726"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510242"
 ---
 # <a name="deletefromfolderstatedefinition"></a>DeleteFromFolderStateDefinition
 
-El elemento **DeleteFromFolderStateDefinition** especifica el estado cuando se elimina un elemento de una carpeta. 
+El **elemento DeleteFromFolderStateDefinition** especifica el estado cuando se elimina un elemento de una carpeta. 
   
 ```XML
 <DeleteFromFolderStateDefinition>
@@ -33,14 +33,14 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Aparición (transición de zona horaria)](occurrence-time-zone-transition.md) <br/> |Especifica la fecha de la ocurrencia de un elemento de calendario.  <br/> |
-|[IsOccurrencePresent](isoccurrencepresent.md) <br/> |Especifica un valor booleano que indica si existe una ocurrencia del elemento de calendario.  <br/> |
+|[Occurrence (Time Zone Transition)](occurrence-time-zone-transition.md) <br/> |Especifica la fecha de la aparición de un elemento de calendario.  <br/> |
+|[IsOccurrencePresent](isoccurrencepresent.md) <br/> |Especifica un valor booleano que indica si hay una aparición del elemento de calendario.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -60,10 +60,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

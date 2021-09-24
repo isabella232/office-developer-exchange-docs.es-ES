@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c8294eee-6588-4e42-965d-c8261a4770c9
 description: El elemento UserDisabledExtensions enumera las aplicaciones deshabilitadas.
-ms.openlocfilehash: 42fd16f342e8c5a4f7a5526cb7513cf77ba8246f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: e18eb1a7e53eab83c72fb6d974e25e7efbe2dd9c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44433682"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517374"
 ---
 # <a name="userdisabledextensions"></a>UserDisabledExtensions
 
-El elemento **UserDisabledExtensions** enumera las aplicaciones deshabilitadas. 
+El **elemento UserDisabledExtensions** enumera las aplicaciones deshabilitadas. 
   
 ```XML
 <UserDisabledExtensions>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -1,33 +1,33 @@
 ---
-title: Operación reproducir (EWS)
+title: Operación PlayOnPhone (EWS)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PlayOnPhone
 api_type:
 - schema
 ms.assetid: 70e6ef33-2046-4eb8-9987-e106009be04b
-description: La operación reproducir inicia una llamada saliente y reproduce un mensaje a través del teléfono.
-ms.openlocfilehash: 18af810160e72856599f296c4faa83cf9c73c393
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación PlayOnPhone inicia una llamada saliente y reproduce un mensaje por teléfono.
+ms.openlocfilehash: f6f5ef30849e1ed536316fe48a8dd29d3d68b230
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467959"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516565"
 ---
-# <a name="playonphone-operation-ews"></a>Operación reproducir (EWS)
+# <a name="playonphone-operation-ews"></a>Operación PlayOnPhone (EWS)
 
-La operación **reproducir** inicia una llamada saliente y reproduce un mensaje a través del teléfono. 
+La **operación PlayOnPhone** inicia una llamada saliente y reproduce un mensaje por teléfono. 
   
-## <a name="playonphone-request-example"></a>Ejemplo de solicitud reproducir
+## <a name="playonphone-request-example"></a>Ejemplo de solicitud de PlayOnPhone
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud **reproducir** muestra cómo crear una solicitud para reproducir un mensaje en un teléfono. 
+En el siguiente ejemplo de una **solicitud de PlayOnPhone** se muestra cómo formar una solicitud para reproducir un mensaje en un teléfono. 
   
 ### <a name="code"></a>Código
 
@@ -50,11 +50,11 @@ El siguiente ejemplo de una solicitud **reproducir** muestra cómo crear una sol
 </soap:Envelope>
 ```
 
-## <a name="playonphone-response-example"></a>Ejemplo de respuesta reproducir
+## <a name="playonphone-response-example"></a>Ejemplo de respuesta de PlayOnPhone
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **reproducir** . 
+En el siguiente ejemplo se muestra una respuesta correcta a la **solicitud PlayOnPhone.** 
   
 ### <a name="code"></a>Código
 
@@ -83,8 +83,8 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **repro
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Operaciones ews en Exchange](ews-operations-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

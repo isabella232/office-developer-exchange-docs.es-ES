@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 54fd2192-54ca-4e42-b630-a3fbdd8e4239
 description: El elemento PhoneString especifica el número de teléfono de un contacto extraído.
-ms.openlocfilehash: cc528b74034d1fd76c19247e72bb5ac00e7734d9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 569522337c681ce445309182c1c8010d494564e3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528893"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516654"
 ---
 # <a name="phonestring"></a>PhoneString
 
-El elemento **PhoneString** especifica el número de teléfono de un contacto extraído. 
+El **elemento PhoneString** especifica el número de teléfono de un contacto extraído. 
   
 ```XML
 <PhoneString></PhoneString>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **PhoneSting** es el número de teléfono de un contacto extraído. 
+El valor de texto del **elemento PhoneSting** es el número de teléfono de un contacto extraído. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -5,32 +5,32 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteUserConfiguration
 api_type:
 - schema
 ms.assetid: 93e44690-be2d-4fdb-96a8-4ded3c193aed
 description: La operación DeleteUserConfiguration elimina un objeto de configuración de usuario en una carpeta.
-ms.openlocfilehash: 064e1ace2c2f51783431ce42670b2a4fd8146b54
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 4332515a91d9207f3ef8f9905edd2b9155042d65
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44451470"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510179"
 ---
 # <a name="deleteuserconfiguration-operation"></a>Operación DeleteUserConfiguration
 
-La operación **DeleteUserConfiguration** elimina un objeto de configuración de usuario en una carpeta. 
+La **operación DeleteUserConfiguration** elimina un objeto de configuración de usuario en una carpeta. 
   
 > [!IMPORTANT]
-> La operación **DeleteUserConfiguration** desencadenará un evento Move para el sistema de notificación de eventos. El objeto de configuración de usuario se moverá al contenedor. 
+> La **operación DeleteUserConfiguration** desencadenará un evento move para el sistema de notificación de eventos. El objeto de configuración de usuario se desplazará al contenedor. 
   
 ## <a name="deleteuserconfiguration-request-example"></a>Ejemplo de solicitud DeleteUserConfiguration
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud **DeleteUserConfiguration** muestra cómo crear una solicitud para eliminar un objeto de configuración de usuario de la carpeta Borradores. 
+En el siguiente ejemplo de una **solicitud DeleteUserConfiguration** se muestra cómo formar una solicitud para eliminar un objeto de configuración de usuario en la carpeta Borradores. 
   
 ### <a name="code"></a>Código
 
@@ -56,9 +56,9 @@ El siguiente ejemplo de una solicitud **DeleteUserConfiguration** muestra cómo 
 
 ## <a name="deleteuserconfiguration-response-example"></a>Ejemplo de respuesta DeleteUserConfiguration
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **DeleteUserConfiguration** . 
+En el ejemplo siguiente se muestra una respuesta correcta a la **solicitud DeleteUserConfiguration.** 
   
 ### <a name="code"></a>Código
 
@@ -90,8 +90,8 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **Delet
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Operaciones de EWS en Exchange](ews-operations-in-exchange.md) 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Operaciones ews en Exchange](ews-operations-in-exchange.md) 
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,23 +1,23 @@
 ---
-title: Roles
+title: Personas
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a7d2bbd6-5fb8-44d3-8d0d-ad623a117870
-description: El elemento roles especifica una matriz de roles devueltos por las operaciones GetImItems y GetImItemList.
-ms.openlocfilehash: 4ac2ffb68e5328fb99b9bda25ef21762e446e90b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Personas especifica una matriz de personas devuelta de las operaciones GetImItems y GetImItemList.
+ms.openlocfilehash: a48e147ea2c0e7d67ad56fb1e41febd3c7e7a4f6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465663"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534680"
 ---
-# <a name="personas"></a>Roles
+# <a name="personas"></a>Personas
 
-El elemento **roles** especifica una matriz de roles devueltos por las operaciones **GetImItems** y **GetImItemList** . 
+El **elemento Personas** especifica una matriz de personas devuelta de las operaciones **GetImItems** y **GetImItemList.** 
   
 ```XML
 <Personas>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

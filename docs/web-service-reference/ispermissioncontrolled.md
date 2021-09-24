@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsPermissionControlled
 api_type:
 - schema
 ms.assetid: a2fd0340-f31f-4389-a1cd-7e93b40bb3c6
-description: El elemento IsPermissionControlled indica si los mensajes entrantes deben ser controlados por permisos (protegido por RMS) para que se aplique la condición o excepción.
-ms.openlocfilehash: 5fba06c1c56512f4a362f773f119ea346a4c0d2b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento IsPermissionControlled indica si los mensajes entrantes deben estar controlados por permisos (protegidos por RMS) para que se aplique la condición o excepción.
+ms.openlocfilehash: d43badedd3ee95b832357cca62937388bd24b751
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460389"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509753"
 ---
 # <a name="ispermissioncontrolled"></a>IsPermissionControlled
 
-El elemento **IsPermissionControlled** indica si los mensajes entrantes deben ser controlados por permisos (protegido por RMS) para que se aplique la condición o excepción. 
+El **elemento IsPermissionControlled** indica si los mensajes entrantes deben estar controlados por permisos (protegidos por RMS) para que se aplique la condición o excepción. 
   
 ```XML
 <IsPermissionControlled>true | false</IsPermissionControlled>
@@ -34,11 +34,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -49,7 +49,7 @@ Ninguna.
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** indica que el mensaje debe estar protegido por RMS para que se aplique la condición o excepción. Un valor de **false** indica que el mensaje no debe estar protegido con RMS para que se aplique la condición o excepción. 
+Un valor de texto **de true** indica que el mensaje debe estar protegido por RMS para que se aplique la condición o excepción. Un valor **de false** indica que el mensaje no debe estar protegido por RMS para que se aplique la condición o excepción. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -61,12 +61,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

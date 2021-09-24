@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsModerated
 api_type:
 - schema
 ms.assetid: a7562256-feb9-41a1-857e-b5d41cbed680
-description: El elemento IsModerated indica si el buzón de correo del destinatario está moderado.
-ms.openlocfilehash: 930d5a7e09712f35d22850a93462d051a34785a1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento IsModerated indica si se está moderando el buzón del destinatario.
+ms.openlocfilehash: e06e7e01e08cb8418adafaae09cae94ceb5c3b2c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44435488"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522904"
 ---
 # <a name="ismoderated"></a>IsModerated
 
-El elemento **IsModerated** indica si el buzón de correo del destinatario está moderado. 
+El **elemento IsModerated** indica si se está moderando el buzón del destinatario. 
   
 ```XML
 <IsModerated>true | false</IsModerated>
@@ -34,21 +34,21 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Sugerencias de correo electrónico](mailtips.md) <br/> |Representa los valores de distintos tipos de sugerencias de correo.  <br/> |
+|[Sugerencias de correo electrónico](mailtips.md) <br/> |Representa los valores de varios tipos de sugerencias de correo.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto de este elemento es **true** si el buzón de correo del destinatario se modera. El valor es **false** si el buzón del destinatario no se modera. 
+El valor de texto de este elemento es **true** si se está moderando el buzón del destinatario. El valor es **false** si el buzón del destinatario no se está moderando. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -60,12 +60,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

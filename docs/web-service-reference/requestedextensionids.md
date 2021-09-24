@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bfd516a4-15f5-4303-b695-820537636b11
 description: El elemento RequestedExtensionIds contiene una matriz de identificadores de extensión.
-ms.openlocfilehash: 8cae575f739803b847ac2d3df471cb9147d5412a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 398ab39f8d6ce38b30ed0d40a2aef839bf7ad6f1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467665"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523604"
 ---
 # <a name="requestedextensionids"></a>RequestedExtensionIds
 
-El elemento **RequestedExtensionIds** contiene una matriz de identificadores de extensión. 
+El **elemento RequestedExtensionIds** contiene una matriz de identificadores de extensión. 
   
 ```XML
 <RequestedExtensionIds>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

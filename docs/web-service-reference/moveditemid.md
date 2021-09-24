@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7d5425ab-1e75-43d1-b801-802ff5139df6
-description: El elemento MovedItemId especifica el identificador del elemento movido por la operación MarkAsJunk.
-ms.openlocfilehash: 5cf8800ec672278691348bbcd8c6c8cc7a12905b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento MovedItemId especifica el identificador del elemento que se movió mediante la operación MarkAsJunk.
+ms.openlocfilehash: 0775aaed119242fc2a2057fb20807d5be30692e5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468617"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509598"
 ---
 # <a name="moveditemid"></a>MovedItemId
 
-El elemento **MovedItemId** especifica el identificador del elemento movido por la operación **MarkAsJunk** . 
+El **elemento MovedItemId** especifica el identificador del elemento que se movió mediante la **operación MarkAsJunk.** 
   
 ```XML
 <MovedItemId Id="" ChangeKey=""/>
@@ -32,12 +32,12 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
-|Id  <br/> |El valor del atributo **ID** es el identificador de elemento del elemento que se mueve mediante la operación **MarkAsJunk** . El identificador de elemento permanecerá igual después del movimiento.  <br/> |
-|ChangeKey  <br/> |El valor del atributo **changekey** es la clave de cambio del elemento que se ha movido. La clave de cambio cambia después de que la operación **MarkAsJunk** mueva el elemento.  <br/> |
+|Id  <br/> |El valor del atributo **Id** es el identificador de elemento del elemento que se mueve mediante la **operación MarkAsJunk.** El identificador del elemento seguirá siendo el mismo después del movimiento.  <br/> |
+|ChangeKey  <br/> |El valor del atributo **ChangeKey** es la clave de cambio del elemento movido. La clave de cambio cambia después de mover el elemento mediante la **operación MarkAsJunk.**  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,8 +54,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

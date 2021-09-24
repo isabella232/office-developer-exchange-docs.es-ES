@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ca21028a-fe15-4cf4-a70f-05b0ed7b7480
-description: El elemento ExternalDirectoryObjectId (FederatedDirectoryGroupType) está destinado exclusivamente para uso interno.
-ms.openlocfilehash: 961db2f9e0d4fead42b8fc78e30f6d0231b5cda5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ExternalDirectoryObjectId (FederatedDirectoryGroupType) está diseñado solo para uso interno.
+ms.openlocfilehash: d45315609effc402ee5d7db2681a8822024bce93
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526028"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535376"
 ---
 # <a name="externaldirectoryobjectid-federateddirectorygrouptype"></a>ExternalDirectoryObjectId (FederatedDirectoryGroupType)
 
-El elemento **ExternalDirectoryObjectId (FederatedDirectoryGroupType)** está destinado exclusivamente para uso interno. 
+El **elemento ExternalDirectoryObjectId (FederatedDirectoryGroupType)** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,11 +25,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Children
 api_type:
 - schema
 ms.assetid: ceaffddd-f9bc-43ea-b348-a20fdade738f
 description: El elemento Children contiene los nombres de los elementos secundarios de un contacto.
-ms.openlocfilehash: de398c93590a4a9ae93b6aa46994c9295d051b84
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6090dc1a2b684ddff4ab0964de3308ceed25b876
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460228"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59536909"
 ---
 # <a name="children"></a>Children
 
-El elemento **Children** contiene los nombres de los elementos secundarios de un contacto. 
+El **elemento Children** contiene los nombres de los elementos secundarios de un contacto. 
   
 ```xml
 <Children>
@@ -36,7 +36,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -48,24 +48,24 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Contacto](contact.md) <br/> |Representa un contacto en el almacén de Exchange.  <br/> |
+|[Contact](contact.md) <br/> |Representa un contacto en el Exchange almacén.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

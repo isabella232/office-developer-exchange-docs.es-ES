@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: d49329d7-e095-474f-8391-c3d61cac2e95
-description: El elemento WebClientUrlCollectionSetting (SOAP) representa una configuración de usuario que es una colección de direcciones URL de cliente web de Exchange.
-ms.openlocfilehash: 5cfa82517ebfa7f6c019ad179fb8b2def8a35265
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento WebClientUrlCollectionSetting (SOAP) representa una configuración de usuario que es una colección de direcciones URL Exchange cliente web.
+ms.openlocfilehash: 622c3fe49a89eb2288d3bd56a6a452e656a25e9b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464969"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517269"
 ---
 # <a name="webclienturlcollectionsetting-soap"></a>WebClientUrlCollectionSetting (SOAP)
 
-El elemento [WebClientUrlCollectionSetting (SOAP)](webclienturlcollectionsetting-soap.md) representa una configuración de usuario que es una colección de direcciones URL de cliente web de Exchange. 
+El [elemento WebClientUrlCollectionSetting (SOAP)](webclienturlcollectionsetting-soap.md) representa una configuración de usuario que es una colección de direcciones URL Exchange cliente web. 
   
 [WebClientUrlCollectionSetting (SOAP)](webclienturlcollectionsetting-soap.md)
   
@@ -35,21 +35,21 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[WebClientUrl (SOAP)](webclienturl-soap.md) <br/> |Representa la dirección URL de un cliente web de Exchange.  <br/> |
+|[WebClientUrl (SOAP)](webclienturl-soap.md) <br/> |Representa la dirección URL de un Exchange web.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguna.
+Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguna.
+Ninguno.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -57,7 +57,7 @@ Ninguna.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 

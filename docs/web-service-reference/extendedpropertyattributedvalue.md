@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 90f3c5c5-f612-4e1b-b1f5-f92dd8524179
-description: El elemento ExtendedPropertyAttributedValue especifica propiedades extendidas para un rol.
-ms.openlocfilehash: 5c2ad5918d7ac666d5e26af6597b2c4c3dde6202
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ExtendedPropertyAttributedValue especifica propiedades extendidas para una persona.
+ms.openlocfilehash: 338c2a12d89cd7b1305be2fc75692782b1b3a466
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460130"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535383"
 ---
 # <a name="extendedpropertyattributedvalue"></a>ExtendedPropertyAttributedValue
 
-El elemento **ExtendedPropertyAttributedValue** especifica propiedades extendidas para un rol. 
+El **elemento ExtendedPropertyAttributedValue** especifica propiedades extendidas para una persona. 
   
 ```XML
 <ExtendedPropertyAttributedValue>
@@ -33,20 +33,20 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Valor (ExtendedPropertyType)](value-extendedpropertytype.md) <br/> |Especifica una matriz de propiedades extendidas para un rol.  <br/> |
-|[Atribuciones (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md) <br/> |Especifica una matriz de atribuciones para su elemento de **valor** asociado.  <br/> |
+|[Value (ExtendedPropertyType)](value-extendedpropertytype.md) <br/> |Especifica una matriz de propiedades extendidas para una persona.  <br/> |
+|[Attributions (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md) <br/> |Especifica una matriz de atribuciones para su elemento **Value** asociado.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ExtendedProperties (ArrayOfExtendedPropertyAttributedValueType)](extendedproperties-arrayofextendedpropertyattributedvaluetype.md) <br/> |Contiene las propiedades extendidas usadas para las operaciones de almacenamiento de contactos unificadas.  <br/> |
+|[ExtendedProperties (ArrayOfExtendedPropertyAttributedValueType)](extendedproperties-arrayofextendedpropertyattributedvaluetype.md) <br/> |Contiene las propiedades extendidas usadas para las operaciones del Almacén de contactos unificado.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -60,12 +60,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

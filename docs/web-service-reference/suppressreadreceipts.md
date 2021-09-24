@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f0805560-7a2f-455b-94d2-ec4f1e3652c3
 description: El elemento SuppressReadReceipts indica si se deben suprimir las confirmaciones de lectura.
-ms.openlocfilehash: aa604d4907582bd73727ba664958a589a222f9cb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 1f63f46f4e74a3123661caba39b737910bc2ef30
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455936"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517654"
 ---
 # <a name="suppressreadreceipts"></a>SuppressReadReceipts
 
-El elemento **SuppressReadReceipts** indica si se deben suprimir las confirmaciones de lectura. 
+El **elemento SuppressReadReceipts** indica si se deben suprimir las confirmaciones de lectura. 
   
 ```XML
 <SuppressReadReceipts>true | false</SuppressReadReceipts>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **SuppressReadReciepts** indica que se eliminan las confirmaciones de lectura. Un valor de **false** indica que las confirmaciones de lectura se enviarán al remitente. 
+Un valor de texto **de true** para el **elemento SuppressReadReciepts** indica que se suprimen las confirmaciones de lectura. Un valor de **false** indica que se enviarán recibos de lectura al remitente. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

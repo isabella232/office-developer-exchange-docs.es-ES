@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 287d7fcb-b871-454c-a436-c8e3c95f413a
-description: El elemento UpdateMailboxAssociation está destinado sólo para uso interno.
-ms.openlocfilehash: 4aeb5220785c7b750b2798737e0cd6fb9bb2a173
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento UpdateMailboxAssociation está diseñado solo para uso interno.
+ms.openlocfilehash: 7c8710f89ce29ddc737b332ddea0a7f090c3cf45
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457917"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517486"
 ---
 # <a name="updatemailboxassociation"></a>UpdateMailboxAssociation
 
-El elemento **UpdateMailboxAssociation** está destinado sólo para uso interno. 
+El **elemento UpdateMailboxAssociation** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,11 +25,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 

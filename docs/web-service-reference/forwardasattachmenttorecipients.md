@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ForwardAsAttachmentToRecipients
 api_type:
 - schema
 ms.assetid: 8649ea14-672f-43c9-b10a-a2b02efd5867
-description: El elemento ForwardAsAttachmentToRecipients indica las direcciones de correo electrónico a las que se deben reenviar los mensajes como datos adjuntos.
-ms.openlocfilehash: bf8c3563460eea811602074bf16f9253b4610832
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ForwardAsAttachmentToRecipients indica las direcciones de correo electrónico a las que se reenviarán los mensajes como datos adjuntos.
+ms.openlocfilehash: 3063ffd9080e29020520095d71b354f32ec63a54
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44453339"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59509942"
 ---
 # <a name="forwardasattachmenttorecipients"></a>ForwardAsAttachmentToRecipients
 
-El elemento **ForwardAsAttachmentToRecipients** indica las direcciones de correo electrónico a las que se deben reenviar los mensajes como datos adjuntos. 
+El **elemento ForwardAsAttachmentToRecipients** indica las direcciones de correo electrónico a las que se reenviarán los mensajes como datos adjuntos. 
   
 ```XML
 <ForwardAsAttachmentToRecipients>
@@ -36,19 +36,19 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Dirección (EmailAddressType)](address-emailaddresstype.md) <br/> |Representa una dirección de correo electrónico completamente resuelta.  <br/> |
+|[Address (EmailAddressType)](address-emailaddresstype.md) <br/> |Representa una dirección de correo electrónico totalmente resuelta.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Actions](actions.md) <br/> |Representa el conjunto de acciones que se pueden realizar en un mensaje cuando se cumplen las condiciones.  <br/> |
+|[Actions](actions.md) <br/> |Representa el conjunto de acciones que están disponibles para realizarse en un mensaje cuando se cumplan las condiciones.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -64,12 +64,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

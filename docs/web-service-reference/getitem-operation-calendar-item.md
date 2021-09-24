@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetItem
 api_type:
 - schema
 ms.assetid: a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8
-description: La operación GetItem obtiene los elementos de calendario del almacén de Exchange.
-ms.openlocfilehash: 09fe92af12f03ce4cebd1e98f4e01c087ace64f9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación GetItem obtiene elementos de calendario del Exchange almacén.
+ms.openlocfilehash: ff118be17e3e084a11dd74a0434db3f6c0e8bd8d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460620"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516968"
 ---
 # <a name="getitem-operation-calendar-item"></a>Operación GetItem (elemento de calendario)
 
-La operación GetItem obtiene los elementos de calendario del almacén de Exchange.
+La operación GetItem obtiene elementos de calendario del Exchange almacén.
   
 ## <a name="getitem-request-example"></a>Ejemplo de solicitud GetItem
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud GetItem muestra cómo crear una solicitud para obtener la identidad y el asunto de un elemento.
+En el siguiente ejemplo de una solicitud GetItem se muestra cómo formar una solicitud para obtener la identidad y el asunto de un elemento.
   
 ### <a name="code"></a>Código
 
@@ -51,9 +51,9 @@ El siguiente ejemplo de una solicitud GetItem muestra cómo crear una solicitud 
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [GetItem](getitem.md)
     
@@ -70,18 +70,18 @@ Los siguientes elementos se usan en la solicitud:
 - [ItemId](itemid.md)
     
 > [!NOTE]
-> El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes. 
+> El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente. 
   
-Para buscar otras opciones para el mensaje de solicitud de la operación GetItem, explore la jerarquía del esquema. Comienza en el elemento [GetItem](getitem.md) . 
+Para buscar otras opciones para el mensaje de solicitud de la operación GetItem, explore la jerarquía de esquema. Comience en el [elemento GetItem.](getitem.md) 
   
-## <a name="successful-getitem-response"></a>Respuesta GetItem correcta
+## <a name="successful-getitem-response"></a>Respuesta getitem correcta
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud GetItem. La solicitud que creó esta respuesta usó la IdOnly baseshape. En este ejemplo, la respuesta devuelve solo el identificador del elemento. 
+En el siguiente ejemplo se muestra una respuesta correcta a la solicitud GetItem. La solicitud que creó esta respuesta usó la forma base IdOnly. En este ejemplo, la respuesta devuelve solo el identificador del elemento. 
   
 > [!NOTE]
-> El identificador de elemento y la clave de cambio se han abreviado para preservar la legibilidad. 
+> El identificador de elemento y la clave de cambio se han acortado para conservar la legibilidad. 
   
 ### <a name="code"></a>Código
 
@@ -115,10 +115,10 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud GetItem
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud GetItem. La solicitud que creó esta respuesta usó el valor predeterminado de baseshape. En este ejemplo, la respuesta devuelve la forma predeterminada para un elemento de calendario.
+En el siguiente ejemplo se muestra una respuesta correcta a la solicitud GetItem. La solicitud que creó esta respuesta usó la forma base Predeterminada. En este ejemplo, la respuesta devuelve la forma Predeterminada de un elemento de calendario.
   
 > [!NOTE]
-> El identificador de elemento y la clave de cambio se han abreviado para preservar la legibilidad. 
+> El identificador de elemento y la clave de cambio se han acortado para conservar la legibilidad. 
   
 ### <a name="code"></a>Código
 
@@ -166,7 +166,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud GetItem
 
 ### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud GetItem. La solicitud que creó esta respuesta usó la AllProperties baseshape. En este ejemplo, la respuesta devuelve la forma AllProperties para un elemento de calendario.
+En el siguiente ejemplo se muestra una respuesta correcta a la solicitud GetItem. La solicitud que creó esta respuesta usó la forma base AllProperties. En este ejemplo, la respuesta devuelve la forma AllProperties de un elemento de calendario.
   
 ### <a name="code"></a>Código
 
@@ -265,9 +265,9 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud GetItem
 
 ### <a name="comments"></a>Comentarios
 
-Para buscar otras opciones para el mensaje de respuesta de la operación GetItem, explore la jerarquía del esquema. Empiece en el elemento [GetItemResponse](getitemresponse.md) . 
+Para buscar otras opciones para el mensaje de respuesta de la operación GetItem, explore la jerarquía de esquema. Comience en el [elemento GetItemResponse.](getitemresponse.md) 
   
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -293,7 +293,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [Sensitivity](sensitivity.md)
     
-- [Body](body.md)
+- [Cuerpo](body.md)
     
 - [DateTimeReceived](datetimereceived.md)
     
@@ -335,7 +335,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [Start](start.md)
     
-- [Centraliza](end-ex15websvcsotherref.md)
+- [Fin ](end-ex15websvcsotherref.md)
     
 - [IsAllDayEvent](isalldayevent.md)
     
@@ -357,7 +357,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [Buzón](mailbox.md)
     
-- [Nombre (EmailAddressType)](name-emailaddresstype.md)
+- [Name (EmailAddressType)](name-emailaddresstype.md)
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
@@ -369,17 +369,17 @@ En la respuesta se usan los siguientes elementos:
     
 - [ConflictingMeetings](conflictingmeetings.md)
     
-- [Ubicación](location.md)
+- [Location](location.md)
     
-- [Duración (elementos)](duration-items.md)
+- [Duration (Items)](duration-items.md)
     
-- [TimeZone (elemento)](timezone-item.md)
+- [TimeZone (Item)](timezone-item.md)
     
 - [AppointmentSequenceNumber](appointmentsequencenumber.md)
     
 - [AppointmentState](appointmentstate.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

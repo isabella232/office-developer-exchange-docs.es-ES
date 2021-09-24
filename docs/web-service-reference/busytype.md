@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - BusyType
 api_type:
 - schema
 ms.assetid: 26d4fae0-8c78-4705-b5e8-d6033712c41e
-description: El elemento BusyType representa el estado de disponibilidad establecido para un evento de calendario.
-ms.openlocfilehash: 7c2d18c21156a8603d3caeeb796a56c5d8afcba5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento BusyType representa el conjunto de estado de disponibilidad de un evento de calendario.
+ms.openlocfilehash: eedea1e98ec84342d79dda2107adb050c2216401
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459086"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537140"
 ---
 # <a name="busytype"></a>BusyType
 
-El elemento **BusyType** representa el estado de disponibilidad establecido para un evento de calendario. 
+El **elemento BusyType** representa el conjunto de estado de disponibilidad de un evento de calendario. 
   
 ```xml
 <BusyType>Free or Tentative or Busy or OOF or NoData</BusyType>
@@ -34,22 +34,22 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[IndividualAttendeeConflictData](individualattendeeconflictdata.md) <br/> |Contiene el estado de disponibilidad de un usuario o contacto para una ventana de tiempo que se produce al mismo tiempo que la hora de reunión sugerida.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray/IndividualAttendeeConflictData` <br/> |
-|[CalendarEvent](calendarevent.md) <br/> |Representa una ocurrencia única del elemento de calendario.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]` <br/> |
+|[IndividualAttendeeConflictData](individualattendeeconflictdata.md) <br/> |Contiene el estado de disponibilidad de un usuario o contacto para una ventana de tiempo que se produce al mismo tiempo que la hora de reunión sugerida.  <br/> A continuación se muestra la expresión XPath de este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray/IndividualAttendeeConflictData` <br/> |
+|[CalendarEvent](calendarevent.md) <br/> |Representa una repetición de elemento de calendario única.  <br/> A continuación se muestra la expresión XPath de este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto para este elemento. El valor es un tipo de cadena. A continuación se muestran los valores posibles para el elemento [BusyType](busytype.md) : 
+Se requiere un valor de texto para este elemento. El valor es un tipo de cadena. Los siguientes son los valores posibles para el [elemento BusyType:](busytype.md) 
   
 - Libre
     
@@ -57,13 +57,13 @@ Se requiere un valor de texto para este elemento. El valor es un tipo de cadena.
     
 - Ocupado
     
-- Oficina
+- OOF
     
 - NoData
     
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -71,10 +71,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

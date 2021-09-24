@@ -1,23 +1,23 @@
 ---
-title: Valor (ExtendedPropertyType)
+title: Value (ExtendedPropertyType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7a210393-0e8e-4f43-9360-4512b6dcba35
-description: El elemento Value especifica una matriz de propiedades extendidas para un rol.
-ms.openlocfilehash: 1a658a6fb2e7987a64b7a6e826bac77190964844
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Value especifica una matriz de propiedades extendidas para una persona.
+ms.openlocfilehash: 30cc8e0907eccc88c029a7eb929b34c849a2977a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467588"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510648"
 ---
-# <a name="value-extendedpropertytype"></a>Valor (ExtendedPropertyType)
+# <a name="value-extendedpropertytype"></a>Value (ExtendedPropertyType)
 
-El elemento **Value** especifica una matriz de propiedades extendidas para un rol. 
+El **elemento Value** especifica una matriz de propiedades extendidas para una persona. 
   
 ```XML
 <Value>
@@ -35,11 +35,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[ExtendedFieldURI](extendedfielduri.md)  |  [Valor](value.md)  |  de [Valores](values.md)
+[ExtendedFieldURI](extendedfielduri.md)  |  [Valor](value.md)  |  [Valores](values.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c9778823-f290-4827-ba19-5f391ed4f877
-description: El elemento MailboxScope identifica si una búsqueda o búsqueda para una conversación debe abarcar el buzón principal, el buzón de archivo o bien el buzón de archivo y el principal.
-ms.openlocfilehash: 92823c06d4fe186917c3cfb532eda821bd6a95a7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento MailboxScope identifica si una búsqueda o captura de una conversación debe abarcar el buzón principal, el buzón de archivo o el buzón principal y el buzón de archivo.
+ms.openlocfilehash: 705c72ae2aefbb16599f392eb712d080668490b0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455376"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522883"
 ---
 # <a name="mailboxscope"></a>MailboxScope
 
-El elemento **MailboxScope** identifica si una búsqueda o búsqueda para una conversación debe abarcar el buzón principal, el buzón de archivo o bien el buzón de archivo y el principal. 
+El **elemento MailboxScope** identifica si una búsqueda o captura de una conversación debe abarcar el buzón principal, el buzón de archivo o el buzón principal y el buzón de archivo. 
   
 ```XML
 <MailboxScope> PrimaryOnly | ArchiveOnly | All </MailboxScope>
@@ -31,11 +31,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -43,7 +43,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **MailboxScope** es el ámbito para buscar u obtener elementos en una conversación en buzones de correo principales, buzones de correo de archivo o tanto en buzones de correo principales como de archivo. Un valor de texto de **PrimaryOnly** indica un ámbito que tiene como destino el buzón principal de un usuario. Un valor de texto de **ArchiveOnly** indica un ámbito que tiene como destino el buzón de archivo de un usuario. Un valor de texto de **All** indica un ámbito que tiene como destino el buzón principal y el buzón de archivo. 
+El valor de texto del **elemento MailboxScope** es el ámbito para buscar o obtener elementos en una conversación en buzones principales, buzones de archivo o buzones de correo principales y de archivo. Un valor de texto **de PrimaryOnly** indica un ámbito que está dirigido al buzón principal de un usuario. Un valor de texto **de ArchiveOnly** indica un ámbito que está dirigido al buzón de archivo de un usuario. Un valor de texto de **All** indica un ámbito dirigido tanto al buzón principal como al buzón de archivo. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

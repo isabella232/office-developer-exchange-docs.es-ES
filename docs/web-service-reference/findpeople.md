@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 12c70441-77b9-4619-8e66-1b7e3a63ba48
-description: 'El elemento FindPeople especifica un conjunto de datos que se usa en una solicitud de FindPeople. Los datos incluyen cero o más de los siguientes elementos: una forma persona (opcional), una vista de elemento de página indizada, una restricción (opcional), una restricción de agregación (opcional), un criterio de ordenación (opcional), un identificador de carpeta principal y una cadena de consulta (opcional).'
-ms.openlocfilehash: 4777601b7146ec857b5c79fa9d4ced59a7247889
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: 'El elemento FindPeople especifica un conjunto de datos usados en una solicitud FindPeople. Los datos incluyen cero o más de los siguientes elementos: una forma de persona (opcional), una vista de elemento de página indizada, una restricción (opcional), una restricción de agregación (opcional), un criterio de ordenación (opcional), un identificador de carpeta principal y una cadena de consulta (opcional).'
+ms.openlocfilehash: 44070c79ad5d1615929a6169d1808cf365b7cab4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462904"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59535166"
 ---
 # <a name="findpeople"></a>FindPeople
 
-El elemento **FindPeople** especifica un conjunto de datos que se usa en una solicitud de FindPeople. Los datos incluyen cero o más de los siguientes elementos: una forma persona (opcional), una vista de elemento de página indizada, una restricción (opcional), una restricción de agregación (opcional), un criterio de ordenación (opcional), un identificador de carpeta principal y una cadena de consulta (opcional). 
+El **elemento FindPeople** especifica un conjunto de datos usados en una solicitud FindPeople. Los datos incluyen cero o más de los siguientes elementos: una forma de persona (opcional), una vista de elemento de página indizada, una restricción (opcional), una restricción de agregación (opcional), un criterio de ordenación (opcional), un identificador de carpeta principal y una cadena de consulta (opcional). 
   
 ```XML
 <FindPeople>
@@ -38,7 +38,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -59,8 +59,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

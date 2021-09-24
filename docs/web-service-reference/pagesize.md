@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 61c87c48-eed0-45b5-b5a7-c9da0dec71ec
-description: El elemento PageSize contiene el número de elementos que se devuelven en una sola página para un resultado de búsqueda.
-ms.openlocfilehash: efdca920d3ff0da5b10d3a343e86dfe9a2c7ed30
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento PageSize contiene el número de elementos que se devolverán en una sola página para un resultado de búsqueda.
+ms.openlocfilehash: 4e285e91e60eda71cb3a35a4af98e98454774ced
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467735"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534901"
 ---
 # <a name="pagesize"></a>PageSize
 
-El elemento **pageSize** contiene el número de elementos que se devuelven en una sola página para un resultado de búsqueda. 
+El **elemento PageSize** contiene el número de elementos que se devolverán en una sola página para un resultado de búsqueda. 
   
 ```XML
 <PageSize></PageSize>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **pageSize** es el número de elementos devueltos en una sola página de un conjunto de resultados de búsqueda. 
+El valor de texto del **elemento PageSize** es el número de elementos devueltos en una sola página de un conjunto de resultados de búsqueda. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

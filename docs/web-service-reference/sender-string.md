@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2c4c94b7-2d81-4585-b7b5-38646f990594
 description: El elemento Sender especifica la dirección de correo electrónico de la persona que envió un elemento.
-ms.openlocfilehash: 530b875729e860d2b4f2069fb4e07fb5b3236d7a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 064f5ec3bad13ed8dafc05501327014451fb6d15
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455320"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523408"
 ---
 # <a name="sender-string"></a>Sender (cadena)
 
-El elemento **Sender** especifica la dirección de correo electrónico de la persona que envió un elemento. 
+El **elemento Sender** especifica la dirección de correo electrónico de la persona que envió un elemento. 
   
 ```XML
 <Sender></Sender>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **Sender** es el remitente de un correo electrónico que se encuentra realizando una búsqueda de detección. 
+El valor de texto del **elemento Sender** es el remitente de un correo electrónico que se encuentra realizando una búsqueda de detección. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

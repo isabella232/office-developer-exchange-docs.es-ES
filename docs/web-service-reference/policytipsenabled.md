@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 16409652-21e4-4bd3-9373-67e1882236b4
 description: El elemento PolicyTipsEnabled indica si las sugerencias de directiva están habilitadas.
-ms.openlocfilehash: 26a527022d60dd4b98f70c2b3bf020b649066057
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: de0fdc224f2e4a94d5270e0f1920eb28b0f29405
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468519"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516513"
 ---
 # <a name="policytipsenabled"></a>PolicyTipsEnabled
 
-El elemento **PolicyTipsEnabled** indica si las sugerencias de directiva están habilitadas. 
+El **elemento PolicyTipsEnabled** indica si las sugerencias de directiva están habilitadas. 
   
 ```XML
 <PolicyTipsEnabled> true | false </PolicyTipsEnabled>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **PolicyTipsEnabled** indica que las sugerencias de directiva están habilitadas para un buzón de correo. Un valor de **false** indica que las sugerencias de Directiva no están habilitadas para un buzón de correo. 
+Un valor de texto **de true** para el **elemento PolicyTipsEnabled** indica que las sugerencias de directiva están habilitadas para un buzón. Un valor de **false** indica que las sugerencias de directiva no están habilitadas para un buzón. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

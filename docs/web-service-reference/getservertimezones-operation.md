@@ -5,39 +5,39 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetServerTimeZones
 api_type:
 - schema
 ms.assetid: 680173e1-e916-466b-b573-5a3182316345
-description: La operación GetServerTimeZones devuelve información de las definiciones de zona horaria que están disponibles en un servidor de Exchange.
-ms.openlocfilehash: 1afe7fe13501af4a14f72c731703fe41e1f33049
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación GetServerTimeZones devuelve información de definiciones de zona horaria que están disponibles en un Exchange servidor.
+ms.openlocfilehash: f46222251729d5e82042f267d4b6293afb16de00
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460543"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516954"
 ---
 # <a name="getservertimezones-operation"></a>Operación GetServerTimeZones
 
-La operación **GetServerTimeZones** devuelve información de las definiciones de zona horaria que están disponibles en un servidor de Exchange. 
+La **operación GetServerTimeZones** devuelve información de definiciones de zona horaria que están disponibles en un Exchange servidor. 
   
 ## <a name="soap-headers"></a>Encabezados SOAP
 
-La operación **GetServerTimeZones** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla. 
+La **operación GetServerTimeZones** puede usar los encabezados SOAP que se enumeran y se describen en la tabla siguiente. 
   
 |**Header**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural RFC3066 que se va a usar para obtener acceso al buzón.  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural RFC3066 que se usará para tener acceso al buzón.  <br/> |
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud.  <br/> |
    
-## <a name="getservertimezones-request-examples"></a>Ejemplos de solicitudes de GetServerTimeZones
+## <a name="getservertimezones-request-examples"></a>Ejemplos de solicitud GetServerTimeZones
 
 ### <a name="getting-the-name-and-identifier-of-each-time-zone"></a>Obtener el nombre y el identificador de cada zona horaria
 
-En el ejemplo de código siguiente se muestra cómo recuperar el nombre y el identificador de la hora estándar del este y las zonas horarias horarias estándar del Pacífico.
+En el siguiente ejemplo de código se muestra cómo recuperar el nombre y el identificador de las zonas horarias De hora estándar oriental y Hora estándar del Pacífico.
   
 ### <a name="code"></a>Código
 
@@ -63,11 +63,11 @@ En el ejemplo de código siguiente se muestra cómo recuperar el nombre y el ide
 
 ### <a name="comments"></a>Comentarios
 
-Cada elemento de [identificador (TimeZone)](id-timezone.md) contiene el identificador de una definición de zona horaria que se está solicitando. Para solicitar información de todas las zonas horarias, omita el elemento [IDS](ids.md) de la solicitud. 
+Cada [elemento Id (TimeZone)](id-timezone.md) contiene el identificador de una definición de zona horaria que se está solicitando. Para solicitar información para todas las zonas horarias, omita el [elemento Ids](ids.md) de la solicitud. 
   
-### <a name="getting-the-full-definition-of-each-time-zone"></a>Obtención de la definición completa de cada zona horaria
+### <a name="getting-the-full-definition-of-each-time-zone"></a>Obtener la definición completa de cada zona horaria
 
-En el ejemplo de código siguiente se muestra cómo recuperar la definición de la zona horaria completa para la zona horaria estándar del este.
+En el siguiente ejemplo de código se muestra cómo recuperar la definición de zona horaria completa para la zona horaria estándar oriental.
   
 ### <a name="code"></a>Código
 
@@ -92,13 +92,13 @@ En el ejemplo de código siguiente se muestra cómo recuperar la definición de 
 
 ### <a name="comments"></a>Comentarios
 
-Cada elemento de [identificador (TimeZone)](id-timezone.md) contiene el identificador de una definición de zona horaria que se está solicitando. Para solicitar información de todas las zonas horarias, omita el elemento [IDS](ids.md) de la solicitud. 
+Cada [elemento Id (TimeZone)](id-timezone.md) contiene el identificador de una definición de zona horaria que se está solicitando. Para solicitar información para todas las zonas horarias, omita el [elemento Ids](ids.md) de la solicitud. 
   
 ## <a name="getservertimezones-response-examples"></a>Ejemplos de respuesta de GetServerTimeZones
 
-### <a name="receiving-the-time-zone-name-and-identifier-only"></a>Recepción del nombre y el identificador de la zona horaria solamente
+### <a name="receiving-the-time-zone-name-and-identifier-only"></a>Recibir el nombre de zona horaria y el identificador solamente
 
-El siguiente ejemplo de una respuesta de **GetServerTimeZones** muestra una respuesta correcta a una solicitud de **GetServerTimeZones** en la que el atributo **ReturnFullTimeZoneData** se estableció en **false**. La respuesta contiene el nombre y el identificador de la hora estándar del este y las zonas horarias horarias estándar.
+En el siguiente ejemplo de una respuesta **GetServerTimeZones** se muestra una respuesta correcta a una solicitud **GetServerTimeZones** en la que el atributo **ReturnFullTimeZoneData** se estableció en **false**. La respuesta contiene el nombre y el identificador de las zonas horarias Hora estándar oriental y Hora estándar del Pacífico.
   
 ### <a name="code"></a>Código
 
@@ -132,9 +132,9 @@ El siguiente ejemplo de una respuesta de **GetServerTimeZones** muestra una resp
 </soap:Envelope>
 ```
 
-### <a name="receiving-a-full-time-zone-definition"></a>Recibir una definición de zona horaria completa
+### <a name="receiving-a-full-time-zone-definition"></a>Recepción de una definición de zona horaria completa
 
-El siguiente ejemplo de una respuesta de **GetServerTimeZones** muestra una respuesta correcta a una solicitud de **GetServerTimeZones** en la que el atributo **ReturnFullTimeZoneData** se estableció en **true**. La respuesta contiene la definición de la zona horaria completa para la zona horaria estándar del este.
+El ejemplo siguiente de una respuesta **GetServerTimeZones** muestra una respuesta correcta a una solicitud **GetServerTimeZones** en la que el atributo **ReturnFullTimeZoneData** se estableció en **true**. La respuesta contiene la definición de zona horaria completa para la zona horaria estándar oriental.
   
 ### <a name="code"></a>Código
 
@@ -217,7 +217,7 @@ El siguiente ejemplo de una respuesta de **GetServerTimeZones** muestra una resp
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
@@ -228,7 +228,7 @@ El siguiente ejemplo de una respuesta de **GetServerTimeZones** muestra una resp
  **GetServerTimeZonesType**
 
 
-[Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
+[Operaciones ews en Exchange](ews-operations-in-exchange.md)
   
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

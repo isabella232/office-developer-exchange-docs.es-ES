@@ -1,23 +1,23 @@
 ---
-title: Acción (SetClientExtensionActionType)
+title: Action (SetClientExtensionActionType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c5624a87-3436-40ce-8d6b-cc01eecab64d
-description: El elemento Action contiene la acción que el servidor Exchange debe realizar en una aplicación.
-ms.openlocfilehash: 29579e26377edacb5fb0bb8406144eeb116b8d15
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Action contiene la acción que el Exchange debe realizar en una aplicación.
+ms.openlocfilehash: a0f5c2743ef976db2faddbb7509a8a015ef4dd8f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529689"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510382"
 ---
-# <a name="action-setclientextensionactiontype"></a>Acción (SetClientExtensionActionType)
+# <a name="action-setclientextensionactiontype"></a>Action (SetClientExtensionActionType)
 
-El elemento **Action** contiene la acción que el servidor Exchange debe realizar en una aplicación. 
+El **elemento Action** contiene la acción que el Exchange debe realizar en una aplicación. 
   
 ```XML
 <Action ActionId="" ExtensionId="">
@@ -43,19 +43,19 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 |:-----|:-----|
 |Configurar  <br/> |Indica una acción de configuración.  <br/> |
 |Instalar  <br/> |Indica una acción de instalación.  <br/> |
-|Uninstall  <br/> |Indica una acción de desinstalación.  <br/> |
+|Desinstalar  <br/> |Indica una acción de desinstalación.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ClientExtension](clientextension.md) <br/> |Contiene la información de usuario y configuración de una aplicación.  <br/> |
+|[ClientExtension](clientextension.md) <br/> |Contiene información de usuario y configuración sobre una aplicación.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Acciones (ArrayOfSetClientExtensionActionsType)](actions-arrayofsetclientextensionactionstype.md) <br/> |Especifica una matriz de elementos **Action** .  <br/> |
+|[Actions (ArrayOfSetClientExtensionActionsType)](actions-arrayofsetclientextensionactionstype.md) <br/> |Especifica una matriz de **elementos Action.**  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -69,10 +69,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IdOfFolderToShare
 api_type:
 - schema
 ms.assetid: 199d1839-f061-4070-a977-874b0c08e5be
-description: El elemento IdOfFolderToShare representa el identificador de la carpeta en el servidor que se va a compartir.
-ms.openlocfilehash: 93a4740d9adefbb35aae071f0a6bfcb4b2021b4d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento IdOfFolderToShare representa el identificador de la carpeta en el servidor que se compartirá.
+ms.openlocfilehash: fdacd9c5f9e3c5c2ad55164bcd3abedeb1650f3d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457630"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59516702"
 ---
 # <a name="idoffoldertoshare"></a>IdOfFolderToShare
 
-El elemento **IdOfFolderToShare** representa el identificador de la carpeta en el servidor que se va a compartir. 
+El **elemento IdOfFolderToShare** representa el identificador de la carpeta en el servidor que se compartirá. 
   
 ```
 <IdOfFolderToShare Id="" ChangeKey="" />
@@ -36,12 +36,12 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
-|Id  <br/> |Contiene una cadena que identifica una carpeta en el almacén de Exchange. Este atributo es obligatorio.  <br/> |
-|ChangeKey  <br/> |Contiene una cadena que identifica una versión de una carpeta identificada por el atributo id. Este atributo es opcional. Use este atributo para asegurarse de que se usa la versión correcta de una carpeta.  <br/> |
+|Id  <br/> |Contiene una cadena que identifica una carpeta en el Exchange almacén. Este atributo es obligatorio.  <br/> |
+|ChangeKey  <br/> |Contiene una cadena que identifica una versión de una carpeta identificada por el atributo Id. Este atributo es opcional. Use este atributo para asegurarse de que se usa la versión correcta de una carpeta.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -51,7 +51,7 @@ Ninguna.
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda los servicios Web de Exchange del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual de IIS que hospeda Exchange Servicios web del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -59,15 +59,15 @@ El esquema que describe este elemento se encuentra en el directorio virtual de I
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
 [Operación GetSharingMetadata](getsharingmetadata-operation.md)
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

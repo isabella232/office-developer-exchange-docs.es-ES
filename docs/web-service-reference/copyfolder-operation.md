@@ -5,36 +5,36 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CopyFolder
 api_type:
 - schema
 ms.assetid: c7ea0d68-9793-4144-b378-d99536776db9
-description: La operación CopyFolder copia carpetas en un buzón.
-ms.openlocfilehash: 1f9a7a3f3ede2d3cf8f9d41677d8ce0487266f17
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación CopyFolder copia carpetas de un buzón.
+ms.openlocfilehash: 7bfe9c85f3782f751e23b79afe193c9369a4720c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468897"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59510345"
 ---
 # <a name="copyfolder-operation"></a>Operación CopyFolder
 
-La operación CopyFolder copia carpetas en un buzón.
+La operación CopyFolder copia carpetas de un buzón.
   
 ## <a name="using-the-copyfolder-operation"></a>Uso de la operación CopyFolder
 
-La operación CopyFolder es similar a la [operación MoveFolder](movefolder-operation.md). Copia las carpetas identificadas y devuelve el **identificador** y la **changekey** de las carpetas que se han copiado. 
+La operación CopyFolder es similar a la [operación MoveFolder](movefolder-operation.md). Copia las carpetas identificadas y devuelve el **identificador** **y changekey** de las carpetas copiadas. 
   
 ## <a name="copyfolder-request-example"></a>Ejemplo de solicitud CopyFolder
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-El siguiente ejemplo de una solicitud CopyFolder muestra cómo copiar carpetas en la carpeta Bandeja de entrada.
+En el siguiente ejemplo de una solicitud CopyFolder se muestra cómo copiar carpetas en la carpeta Bandeja de entrada.
   
 > [!NOTE]
-> El valor del atributo **ID** del elemento [FolderId](folderid.md) se ha abreviado para facilitar su lectura. 
+> El valor del atributo **Id** del [elemento FolderId](folderid.md) se ha acortado para su legibilidad. 
   
 ### <a name="code"></a>Código
 
@@ -58,11 +58,11 @@ El siguiente ejemplo de una solicitud CopyFolder muestra cómo copiar carpetas e
 
 ### <a name="comments"></a>Comentarios
 
-Las carpetas pueden identificarse mediante el elemento [DistinguishedFolderId](distinguishedfolderid.md) o el elemento [FolderId](folderid.md) para su uso en los elementos [ToFolderId](tofolderid.md) o [FolderIds](folderids.md) . 
+Las carpetas se pueden identificar mediante el elemento [DistinguishedFolderId](distinguishedfolderid.md) o [el elemento FolderId](folderid.md) para su uso en los elementos [ToFolderId](tofolderid.md) o [FolderIds.](folderids.md) 
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [CopyFolder](copyfolder.md)
     
@@ -75,18 +75,18 @@ Los siguientes elementos se usan en la solicitud:
 - [FolderId](folderid.md)
     
 > [!NOTE]
-> El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes. 
+> El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente. 
   
-Para buscar otras opciones para el mensaje de solicitud de la operación CopyFolder, explore la jerarquía del esquema. Empiece en el elemento [CopyFolder](copyfolder.md) . 
+Para buscar otras opciones para el mensaje de solicitud de la operación CopyFolder, explore la jerarquía de esquema. Comience en el [elemento CopyFolder.](copyfolder.md) 
   
-## <a name="successful-copyfolder-response"></a>Respuesta CopyFolder correcta
+## <a name="successful-copyfolder-response"></a>Respuesta correcta de CopyFolder
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
 En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CopyFolder. 
   
 > [!NOTE]
-> El identificador de la carpeta y la clave de cambio se han abreviado para preservar la legibilidad. 
+> El identificador de carpeta y la clave de cambio se han acortado para conservar la legibilidad. 
   
 ### <a name="code"></a>Código
 
@@ -120,7 +120,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CopyFol
 
 ### <a name="comment"></a>Comentario
 
-El elemento [FolderId](folderid.md) que se devuelve en la respuesta representa la carpeta que se copió en la nueva ubicación de la carpeta. 
+El [elemento FolderId](folderid.md) que se devuelve en la respuesta representa la carpeta que se copió en la nueva ubicación de carpeta. 
   
 ### <a name="response-elements"></a>Elementos de respuesta
 
@@ -142,11 +142,11 @@ En la respuesta se usan los siguientes elementos:
     
 - [FolderId](folderid.md)
     
-Para buscar otras opciones para el mensaje de respuesta de la operación CopyFolder, explore la jerarquía del esquema. Empiece en el elemento [CopyFolderResponse](copyfolderresponse.md) . 
+Para buscar otras opciones para el mensaje de respuesta de la operación CopyFolder, explore la jerarquía de esquema. Comience en el [elemento CopyFolderResponse.](copyfolderresponse.md) 
   
-## <a name="copyfolder-error-response"></a>Respuesta de error de CopyFolder
+## <a name="copyfolder-error-response"></a>Respuesta de error CopyFolder
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
 En el ejemplo siguiente se muestra una respuesta de error a una solicitud CopyFolder. El error se produjo porque ya existe una carpeta con el mismo nombre para mostrar.
   
@@ -180,7 +180,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud CopyFo
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
 - [CopyFolderResponse](copyfolderresponse.md)
     
@@ -196,10 +196,10 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - [Folders](folders-ex15websvcsotherref.md)
     
-Para buscar otras opciones para el mensaje de respuesta de error de la operación CopyFolder, explore la jerarquía del esquema. Empiece en el elemento [CopyFolderResponse](copyfolderresponse.md) . 
+Para buscar otras opciones para el mensaje de respuesta de error de la operación CopyFolder, explore la jerarquía de esquema. Comience en el [elemento CopyFolderResponse.](copyfolderresponse.md) 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Operación MoveFolder](movefolder-operation.md)
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 
