@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 394f6015-721b-4800-9286-039d430f09b3
-description: El elemento DocumentSharingLocations contiene una lista de información de ubicación y metadatos para una ubicación de uso compartido de documentos.
-ms.openlocfilehash: af8b076c7a3bd26355a53457a43f4a5f86bf517e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento DocumentSharingLocations contiene una lista de la ubicación y la información de metadatos de una ubicación de uso compartido de documentos.
+ms.openlocfilehash: 179ad59e51b0519fa95b4031f5c9df52a44dba1a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457042"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538341"
 ---
 # <a name="documentsharinglocations-soap"></a>DocumentSharingLocations (SOAP)
 
-El elemento **DocumentSharingLocations** contiene una lista de información de ubicación y metadatos para una ubicación de uso compartido de documentos. 
+El **elemento DocumentSharingLocations** contiene una lista de la ubicación y la información de metadatos de una ubicación de uso compartido de documentos. 
   
 ```XML
 <DocumentSharingLocations>
@@ -31,7 +31,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -51,12 +51,12 @@ Ninguna.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Operación GetUserSettings (SOAP)](getusersettings-operation-soap.md)
 - [Referencia del servicio web de Detección automática para Exchange](autodiscover-web-service-reference-for-exchange.md)
-- [Elementos XML de detección automática de SOAP para Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+- [Elementos XML de detección automática soap para Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

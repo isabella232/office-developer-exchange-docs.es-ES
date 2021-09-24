@@ -5,28 +5,28 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 98161486-e2f2-480f-8d5d-708ba81b208a
-description: La operación EmptyFolder vacía carpetas en un buzón. Opcionalmente, esta operación permite eliminar las subcarpetas de la carpeta especificada. Cuando se elimina una subcarpeta, se eliminan la subcarpeta y los mensajes dentro de la subcarpeta.
-ms.openlocfilehash: 1913db74d33f1e6750cd158df5870f257d0e7839
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación EmptyFolder vacía carpetas en un buzón. Opcionalmente, esta operación permite eliminar las subcarpetas de la carpeta especificada. Cuando se elimina una subcarpeta, se eliminan la subcarpeta y los mensajes de la subcarpeta.
+ms.openlocfilehash: 8191dc7ecea7038a6d885f30d08fe561a59c4ed2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530687"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519670"
 ---
 # <a name="emptyfolder-operation"></a>Operación EmptyFolder
 
-La operación **EmptyFolder** vacía carpetas en un buzón. Opcionalmente, esta operación permite eliminar las subcarpetas de la carpeta especificada. Cuando se elimina una subcarpeta, se eliminan la subcarpeta y los mensajes dentro de la subcarpeta. 
+La **operación EmptyFolder** vacía carpetas en un buzón. Opcionalmente, esta operación permite eliminar las subcarpetas de la carpeta especificada. Cuando se elimina una subcarpeta, se eliminan la subcarpeta y los mensajes de la subcarpeta. 
   
 ## <a name="emptyfolder-request-example"></a>Ejemplo de solicitud EmptyFolder
 
 ### <a name="description"></a>Description
 
-En el siguiente ejemplo de una solicitud de **EmptyFolder** se muestra cómo crear una solicitud para vaciar una carpeta. En este ejemplo se eliminan todas las subcarpetas de la carpeta identificada. 
+En este ejemplo siguiente de **una solicitud EmptyFolder** se muestra cómo formar una solicitud para vaciar una carpeta. En este ejemplo se eliminan todas las subcarpetas de la carpeta identificada. 
   
 > [!NOTE]
-> Los valores de los atributos **ID** y **changekey** del elemento [FolderId](folderid.md) se han abreviado para facilitar su lectura. 
+> Los valores de los **atributos Id** y **ChangeKey** del [elemento FolderId](folderid.md) se han acortado para mejorar la legibilidad. 
   
 ### <a name="code"></a>Código
 
@@ -51,13 +51,13 @@ En el siguiente ejemplo de una solicitud de **EmptyFolder** se muestra cómo cre
 
 ### <a name="comments"></a>Comentarios
 
-En este ejemplo se realiza una eliminación de disco duro en la carpeta.
+En este ejemplo se realiza una eliminación permanente en la carpeta.
   
-Las carpetas pueden identificarse mediante el elemento [DistinguishedFolderId](distinguishedfolderid.md) o el elemento [FolderId](folderid.md) para su uso en el elemento [FolderIds](folderids.md) . 
+Las carpetas se pueden identificar mediante el [elemento DistinguishedFolderId](distinguishedfolderid.md) o [el elemento FolderId](folderid.md) para su uso en el [elemento FolderIds.](folderids.md) 
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [EmptyFolder](emptyfolder.md)
     
@@ -65,11 +65,11 @@ Los siguientes elementos se usan en la solicitud:
     
 - [FolderId](folderid.md)
     
-## <a name="successful-emptyfolder-response"></a>Respuesta EmptyFolder correcta
+## <a name="successful-emptyfolder-response"></a>Respuesta emptyFolder correcta
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **EmptyFolder** . 
+En el ejemplo siguiente se muestra una respuesta correcta a la **solicitud EmptyFolder.** 
   
 ### <a name="code"></a>Código
 
@@ -102,7 +102,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **Empty
 
 ```
 
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -116,11 +116,11 @@ En la respuesta se usan los siguientes elementos:
     
 - [ResponseCode](responsecode.md)
     
-## <a name="emptyfolder-error-response"></a>Respuesta de error de EmptyFolder
+## <a name="emptyfolder-error-response"></a>Respuesta de error EmptyFolder
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud **Emptyfolder** . El error se creó porque la operación intentó vaciar una carpeta que no se encontró en el almacén de Exchange. 
+En el ejemplo siguiente se muestra una respuesta de error a una **solicitud Emptyfolder.** El error se creó porque la operación intentó vaciar una carpeta que no se encontró en el Exchange almacén. 
   
 ### <a name="code"></a>Código
 
@@ -176,7 +176,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [Folders](folders-ex15websvcsotherref.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

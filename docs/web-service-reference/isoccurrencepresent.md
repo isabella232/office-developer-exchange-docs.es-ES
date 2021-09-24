@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2c738518-d99e-4043-bbf0-463085b58eb0
-description: El elemento IsOccurrencePresent está destinado sólo para uso interno.
-ms.openlocfilehash: 3077179db89c9a9908b16199717cc5c110c195b5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento IsOccurrencePresent está diseñado solo para uso interno.
+ms.openlocfilehash: b07224c9936951583d1ddcaee96409da9df90fa1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460424"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532737"
 ---
 # <a name="isoccurrencepresent"></a>IsOccurrencePresent
 
-El elemento **IsOccurrencePresent** está destinado sólo para uso interno. 
+El **elemento IsOccurrencePresent** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,11 +25,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 60cc7094-2e31-49d2-8598-181bcfb5f130
-description: El elemento MemberCorrelationKey especifica los identificadores de los contactos que forman parte del grupo de mensajería instantánea (mi).
-ms.openlocfilehash: 8aad013e978f9ddb4fcc31f100010c94f49af139
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento MemberCorrelationKey especifica los identificadores de los contactos que forman parte del grupo de mensajería instantánea (MI).
+ms.openlocfilehash: df8ab00f7ddbf2d558d5511b53ad6346f7d5da63
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530446"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532407"
 ---
 # <a name="membercorrelationkey"></a>MemberCorrelationKey
 
-El elemento **MemberCorrelationKey** especifica los identificadores de los contactos que forman parte del grupo de mensajería instantánea (mi). 
+El **elemento MemberCorrelationKey** especifica los identificadores de los contactos que forman parte del grupo de mensajería instantánea (MI). 
   
 ```XML
 <MemberCorrelationKey>
@@ -33,7 +33,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -41,7 +41,7 @@ Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Desagrupo](imgroup.md)
+[ImGroup](imgroup.md)
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,8 +54,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

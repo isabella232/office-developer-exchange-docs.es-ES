@@ -1,23 +1,23 @@
 ---
-title: Grupo (MailboxAssociationType)
+title: Group (MailboxAssociationType)
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dbf1499c-90ff-4649-a80e-f36bebb0c136
-description: El elemento Group (MailboxAssociationType) está pensado solo para uso interno.
-ms.openlocfilehash: 468cf8e6a099fb572fb14677db06f282abba3a41
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Group (MailboxAssociationType) está diseñado solo para uso interno.
+ms.openlocfilehash: c27765ad2bab0cb6c9b011ed75505d9292155d3c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458666"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537922"
 ---
-# <a name="group-mailboxassociationtype"></a>Grupo (MailboxAssociationType)
+# <a name="group-mailboxassociationtype"></a>Group (MailboxAssociationType)
 
-El elemento **Group (MailboxAssociationType)** está pensado solo para uso interno. 
+El **elemento Group (MailboxAssociationType)** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,11 +25,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 

@@ -5,27 +5,27 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RefreshSharingFolder
 api_type:
 - schema
 ms.assetid: 1b047e34-40f0-459f-ac9e-e9f8e7349479
-description: La operación RefreshSharingFolder actualiza la carpeta local especificada con los datos más recientes de la carpeta que se comparte.
-ms.openlocfilehash: dd7136ae82353841db09497d23eabe450c1c8b13
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación RefreshSharingFolder actualiza la carpeta local especificada con los datos más recientes de la carpeta que se está compartiendo.
+ms.openlocfilehash: 4bf30132d84c4288123c91247afa8bd13a05348c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456772"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512544"
 ---
 # <a name="refreshsharingfolder-operation"></a>Operación RefreshSharingFolder
 
-La operación **RefreshSharingFolder** actualiza la carpeta local especificada con los datos más recientes de la carpeta que se comparte. 
+La **operación RefreshSharingFolder** actualiza la carpeta local especificada con los datos más recientes de la carpeta que se está compartiendo. 
   
 ## <a name="soap-headers"></a>Encabezados SOAP
 
-La operación **RefreshSharingFolder** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla. 
+La **operación RefreshSharingFolder** puede usar los encabezados SOAP que se enumeran y se describen en la tabla siguiente. 
   
 |**Header**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
@@ -34,9 +34,9 @@ La operación **RefreshSharingFolder** puede usar los encabezados SOAP que se en
    
 ## <a name="refreshsharingfolder-request-example"></a>Ejemplo de solicitud RefreshSharingFolder
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-En el siguiente ejemplo, se muestra cómo crear una solicitud para actualizar la carpeta local especificada con los datos más recientes de la carpeta que se está compartiendo. El elemento [SharingFolderId](sharingfolderid.md) especifica el identificador de la carpeta local que se va a actualizar. 
+En el ejemplo siguiente se muestra cómo formar una solicitud para actualizar la carpeta local especificada con los datos más recientes de la carpeta que se está compartindo. El [elemento SharingFolderId](sharingfolderid.md) especifica el identificador de la carpeta local que se va a actualizar. 
   
 ### <a name="code"></a>Código
 
@@ -58,9 +58,9 @@ En el siguiente ejemplo, se muestra cómo crear una solicitud para actualizar la
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [RequestServerVersion](requestserverversion.md)
     
@@ -68,11 +68,11 @@ Los siguientes elementos se usan en la solicitud:
     
 - [SharingFolderId](sharingfolderid.md)
     
-## <a name="successful-refreshsharingfolder-response"></a>Respuesta RefreshSharingFolder correcta
+## <a name="successful-refreshsharingfolder-response"></a>Respuesta refreshSharingFolder correcta
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **RefreshSharingFolder** . 
+En el ejemplo siguiente se muestra una respuesta correcta a una **solicitud RefreshSharingFolder.** 
   
 ### <a name="code"></a>Código
 
@@ -100,7 +100,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **Refr
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -110,11 +110,11 @@ En la respuesta se usan los siguientes elementos:
     
 - [ResponseCode](responsecode.md)
     
-## <a name="refreshsharingfolder-error-response"></a>Respuesta de error de RefreshSharingFolder
+## <a name="refreshsharingfolder-error-response"></a>Respuesta de error RefreshSharingFolder
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descripción
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud **RefreshSharingFolder** . En este ejemplo, se produjo un error en la solicitud **RefreshSharingFolder** porque no se encontró una suscripción que corresponde a la carpeta local especificada. 
+En el ejemplo siguiente se muestra una respuesta de error a una **solicitud RefreshSharingFolder.** En este ejemplo, se ha producido un error en la solicitud **RefreshSharingFolder** porque no se encontró una suscripción que corresponda a la carpeta local especificada. 
   
 ### <a name="code"></a>Código
 
@@ -149,7 +149,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud **Refr
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -163,7 +163,7 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - [MessageXml](messagexml.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
@@ -176,7 +176,7 @@ Los siguientes elementos se usan en la respuesta de error:
 [RefreshSharingFolderResponseMessageType](https://msdn.microsoft.com/library/ExchangeWebServices.RefreshSharingFolderResponseMessageType.aspx)
 
 
-[Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
+[Operaciones ews en Exchange](ews-operations-in-exchange.md)
   
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

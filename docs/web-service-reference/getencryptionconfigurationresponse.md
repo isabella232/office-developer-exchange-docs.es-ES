@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6e80af47-6ec4-48f6-9c5d-10bf1324510e
-description: El elemento GetEncryptionConfigurationResponse está destinado sólo para uso interno.
-ms.openlocfilehash: 93a4d3a6b6bba53e508468c2114447384b34f4ef
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento GetEncryptionConfigurationResponse está diseñado solo para uso interno.
+ms.openlocfilehash: 7484ab024f4425c798e86264bf2e995ddf4c4043
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461831"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538127"
 ---
 # <a name="getencryptionconfigurationresponse"></a>GetEncryptionConfigurationResponse
 
-El elemento **GetEncryptionConfigurationResponse** está destinado sólo para uso interno. 
+El **elemento GetEncryptionConfigurationResponse** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,11 +25,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 

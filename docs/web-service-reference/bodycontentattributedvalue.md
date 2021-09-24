@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f99e9590-8388-4203-ac30-1ea394f351a6
 description: El elemento BodyContentAttributedValue especifica el contenido del cuerpo de un elemento.
-ms.openlocfilehash: 3550d9307e9bd652afc217f72610379a0a5b2f68
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 294bb0baf4915180a34701775a45e9dafbd99753
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527400"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520027"
 ---
 # <a name="bodycontentattributedvalue"></a>BodyContentAttributedValue
 
-El elemento **BodyContentAttributedValue** especifica el contenido del cuerpo de un elemento. 
+El **elemento BodyContentAttributedValue** especifica el contenido del cuerpo de un elemento. 
   
 ```XML
 <BodyContentAttributedValue>
@@ -33,20 +33,20 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Valor (BodyContentType)](value-bodycontenttype.md) <br/> |Especifica el valor de un elemento **BodyContentAttributedValue** .  <br/> |
-|[Atribuciones (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md) <br/> |Especifica una matriz de información de atribución de uno o varios de los contactos o de los destinatarios de Active Directory agregados al rol asociado.  <br/> |
+|[Value (BodyContentType)](value-bodycontenttype.md) <br/> |Especifica el valor de un **elemento BodyContentAttributedValue.**  <br/> |
+|[Attributions (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md) <br/> |Especifica una matriz de información de atribución para uno o varios de los contactos o destinatarios de Active Directory agregados a la persona asociada.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Los](bodies.md) <br/> |Especifica una matriz de elementos **BodyContentAttributedValue** .  <br/> |
+|[Bodies](bodies.md) <br/> |Especifica una matriz de **elementos BodyContentAttributedValue.**  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -60,12 +60,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

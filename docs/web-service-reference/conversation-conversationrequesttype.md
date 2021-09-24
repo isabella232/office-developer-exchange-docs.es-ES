@@ -1,23 +1,23 @@
 ---
-title: Conversación (ConversationRequestType)
+title: Conversation (ConversationRequestType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0308b71c-d4ff-44a8-b9ca-d5965291ee1d
-description: El elemento Conversation representa una única conversación devuelta en una respuesta GetConversationItems.
-ms.openlocfilehash: 925fd6fce83cad36f4a0e95bb6228ba65e4e9c43
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Conversation representa una sola conversación devuelta en una respuesta GetConversationItems.
+ms.openlocfilehash: 9c7faf9c06c1476bca688e831f452e711a89f10f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466783"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533896"
 ---
-# <a name="conversation-conversationrequesttype"></a>Conversación (ConversationRequestType)
+# <a name="conversation-conversationrequesttype"></a>Conversation (ConversationRequestType)
 
-El elemento **Conversation** representa una única conversación devuelta en una respuesta **GetConversationItems** . 
+El **elemento Conversation** representa una sola conversación devuelta en una respuesta **GetConversationItems.** 
   
 ```XML
 <Conversation>
@@ -33,7 +33,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -54,8 +54,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

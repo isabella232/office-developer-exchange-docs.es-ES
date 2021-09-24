@@ -1,23 +1,23 @@
 ---
-title: Contacto
+title: ContactId
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 86f66275-1e39-48ed-bd89-ac3bffc465a7
 description: El elemento ContactId identifica de forma única un contacto.
-ms.openlocfilehash: 17e8012283078d5d6e2cd1d2e88eef37b008be42
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6b00d2f83c31905b5901a9d0dec2994c23fcb21d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463184"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533903"
 ---
-# <a name="contactid"></a>Contacto
+# <a name="contactid"></a>ContactId
 
-El elemento **ContactId** identifica de forma única un contacto. 
+El **elemento ContactId** identifica de forma única un contacto. 
   
 ```XML
 <ContactId Id="" ChangeKey=""/>
@@ -32,12 +32,12 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
-|Id  <br/> |El valor de texto del atributo **ID** es el identificador del elemento de contacto.  <br/> |
-|ChangeKey  <br/> |El valor de texto del atributo **changekey** es la clave de cambio del elemento de contacto.  <br/> |
+|Id  <br/> |El valor de texto del **atributo Id** es el identificador del elemento de contacto.  <br/> |
+|ChangeKey  <br/> |El valor de texto del **atributo ChangeKey** es la clave de cambio del elemento de contacto.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,8 +54,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

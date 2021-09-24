@@ -3,34 +3,34 @@ title: Procesar elementos de calendario en lotes en Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fb2952e2-cbfe-43ac-b746-f071faa7665c
-description: Obtenga información sobre cómo crear, obtener, actualizar o eliminar lotes de elementos de calendario en una sola llamada usando la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: 10c5c28e4dda27c9ac9770088db122f0a8e8c101
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Obtenga información sobre cómo crear, obtener, actualizar o eliminar lotes de elementos de calendario en una sola llamada mediante la API administrada ews o EWS en Exchange.
+ms.openlocfilehash: 1c4431ab86088d4a8a5d8e2e8378e392786fa8b5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527904"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513111"
 ---
 # <a name="process-calendar-items-in-batches-in-exchange"></a>Procesar elementos de calendario en lotes en Exchange
 
-Obtenga información sobre cómo crear, obtener, actualizar o eliminar lotes de elementos de calendario en una sola llamada usando la API administrada de EWS o EWS en Exchange.
+Obtenga información sobre cómo crear, obtener, actualizar o eliminar lotes de elementos de calendario en una sola llamada mediante la API administrada ews o EWS en Exchange.
 
-Puede usar la API administrada de EWS o EWS para trabajar con lotes de citas y reuniones para reducir el número de llamadas que un cliente realiza a un servidor de Exchange. Cuando se usa la API administrada de EWS para crear, obtener, actualizar y eliminar un lote de elementos de calendario, se usan los métodos del objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) , mientras que cuando se trabaja con elementos de calendario únicos, se usan los métodos del objeto [appointment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) . Si usa EWS, use la misma operación para llamadas por lotes que use para llamadas únicas.
+Puede usar la API administrada ews o EWS para trabajar con lotes de citas y reuniones para reducir el número de llamadas que un cliente realiza a un Exchange servidor. Cuando se usa la API administrada ews para crear, obtener, actualizar y eliminar un lote de elementos de calendario, se usan métodos de objeto [ExchangeService,](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) mientras que cuando se trabaja con elementos de calendario único, se usan métodos de objeto [Appointment.](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) Si usa EWS, use la misma operación para las llamadas por lotes que use para llamadas individuales.
 
-**Tabla 1. Métodos de API administrada de EWS y operaciones EWS para trabajar con lotes de elementos de calendario**
+**Tabla 1. Métodos de API administrada ews y operaciones EWS para trabajar con lotes de elementos de calendario**
 
-|**Para**|**Usar este método de API administrada de EWS**|**Usar esta operación de EWS**|
+|**Para**|**Usar este método de API administrada ews**|**Usar esta operación EWS**|
 |:-----|:-----|:-----|
 |Crear elementos de calendario en lotes  <br/> |[CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) <br/> |[CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) <br/> |
 |Obtener elementos de calendario en lotes  <br/> |[BindToItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) <br/> |
 |Actualizar elementos de calendario en lotes  <br/> |[UpdateItems](https://msdn.microsoft.com/library/dd634705%28v=exchg.80%29.aspx) <br/> |[UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
 |Eliminar elementos de calendario en lotes  <br/> |[DeleteItems](https://msdn.microsoft.com/library/dd635460%28v=exchg.80%29.aspx) <br/> |[DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
 
-En este artículo, aprenderá a completar tareas básicas para lotes de elementos de calendario mediante la API administrada de EWS o EWS.
+En este artículo, aprenderá a completar tareas básicas para lotes de elementos de calendario mediante la API administrada ews o EWS.
 
-Tenga en cuenta que en los ejemplos de la API administrada de EWS de este artículo, si los métodos se llaman secuencialmente, puede crear, obtener, actualizar y eliminar un lote de elementos de calendario.
+Tenga en cuenta que en los ejemplos de API administrada ews de este artículo, si se llama a los métodos secuencialmente, puede crear, obtener, actualizar y, a continuación, eliminar un lote de elementos de calendario.
 
 ```cs
 Collection<ItemId> itemIds = BatchCreateCalendarItems(service);
@@ -43,9 +43,9 @@ BatchDeleteCalendarItemsTwice(service, itemIds);
 ## <a name="create-calendar-items-in-batches-by-using-the-ews-managed-api"></a>Crear elementos de calendario en lotes mediante la API administrada de EWS
 <a name="bk_createewsma"> </a>
 
-Puede crear elementos de calendario en lotes con el método de la API administrada de EWS de [CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) , como se muestra en el ejemplo siguiente. En este ejemplo se crean tres objetos de [cita](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) (una cita de instancia única, una cita periódica y una reunión) y, a continuación, se agregan a una colección.
+Puede crear elementos de calendario en lotes mediante el método [CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) EWS Managed API, como se muestra en el ejemplo siguiente. En este ejemplo se crean tres [objetos Appointment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) (una cita de instancia única, una cita periódica y una reunión) y, a continuación, se agregan a una colección.
 
-En este ejemplo se supone que se ha autenticado en un servidor de Exchange y que se ha adquirido un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) denominado **Service**.
+En este ejemplo se supone que se ha autenticado en un servidor Exchange y que ha adquirido un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) denominado **service**.
 
 ```cs
 public static Collection<ItemId> BatchCreateCalendarItems(ExchangeService service)
@@ -122,12 +122,12 @@ return itemIds;
 
 ```
 
-Los objetos de [cita](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) de la colección pueden ser citas o reuniones, así como instancias únicas o una serie periódica de cualquiera de los dos.
+Los [objetos Appointment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) de la colección pueden ser citas o reuniones, así como instancias únicas o una serie periódica de cualquiera de las dos.
 
 ## <a name="create-calendar-items-in-batches-by-using-ews"></a>Crear elementos de calendario en lotes mediante EWS
 <a name="bk_createews"> </a>
 
-Puede crear elementos de calendario en lotes mediante la operación de EWS del [CreateItem](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) , como se muestra en el siguiente ejemplo de código. También es la solicitud XML que la API administrada de EWS envía cuando usa la API administrada de EWS para [crear elementos de calendario en lotes](#bk_createewsma).
+Puede crear elementos de calendario en lotes mediante la [operación EWS CreateItem,](https://msdn.microsoft.com/library/fe6bb7fc-8918-4e6e-b0a1-b7e0ef44c3d1%28Office.15%29.aspx) como se muestra en el siguiente ejemplo de código. También es la solicitud XML que envía la API administrada ews cuando se usa la API administrada ews para crear elementos de calendario [en lotes.](#bk_createewsma)
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -206,11 +206,11 @@ Puede crear elementos de calendario en lotes mediante la operación de EWS del [
 
 ```
 
-El servidor responde a la solicitud **CreateItem** con un mensaje [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError** para cada uno de los nuevos elementos del calendario, lo que indica que cada elemento del calendario se ha creado correctamente.
+El servidor responde a la solicitud **CreateItem** con un mensaje [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError** para cada uno de los nuevos elementos del calendario, lo que indica que cada elemento del calendario se creó correctamente.
 
-Tenga en cuenta que los elementos de calendario son reuniones o citas, o instancias únicas o una serie periódica, de acuerdo con los valores de los elementos de cada elemento de calendario que se pasa al servidor Exchange.
+Tenga en cuenta que los elementos del calendario son reuniones o citas, o instancias únicas o una serie periódica, según los valores de elemento de cada elemento de calendario pasado al servidor Exchange calendario.
 
-La siguiente es la respuesta del servidor. Los atributos **Itemid** y **changekey** se acortan para facilitar la legibilidad.
+La siguiente es la respuesta del servidor. Los **atributos ItemId** y **ChangeKey** se acortan para mejorar la legibilidad.
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -259,9 +259,9 @@ La siguiente es la respuesta del servidor. Los atributos **Itemid** y **changeke
 ## <a name="get-calendar-items-in-batches-by-using-the-ews-managed-api"></a>Obtener elementos de calendario en lotes mediante la API administrada de EWS
 <a name="bk_getewsma"> </a>
 
-Puede obtener elementos de calendario en lotes con el método de la API administrada de EWS de [BindToItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) , como se muestra en el ejemplo siguiente.
+Puede obtener elementos de calendario en lotes mediante el método [BindToItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.bindtoitems%28v=exchg.80%29.aspx) EWS Managed API, como se muestra en el ejemplo siguiente.
 
-En este ejemplo se supone que se ha autenticado en un servidor de Exchange y que se ha adquirido un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) denominado **Service**.
+En este ejemplo se supone que se ha autenticado en un servidor Exchange y que ha adquirido un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) denominado **service**.
 
 ```cs
 public static Collection<Appointment> BatchGetCalendarItems(ExchangeService service, Collection<ItemId> itemIds)
@@ -313,9 +313,9 @@ public static Collection<Appointment> BatchGetCalendarItems(ExchangeService serv
 ## <a name="get-calendar-items-in-batches-by-using-ews"></a>Obtener elementos de calendario en lotes mediante EWS
 <a name="bk_getews"> </a>
 
-Puede obtener los elementos de calendario en lotes mediante la operación de EWS de [GetItem](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) , como se muestra en el ejemplo siguiente. También es la solicitud XML que la API administrada de EWS envía cuando usa la API administrada de EWS para [obtener elementos de calendario en lotes](#bk_getewsma).
+Puede obtener elementos de calendario en lotes mediante la operación [EWS GetItem,](https://msdn.microsoft.com/library/e8492e3b-1c8d-4b14-8070-9530f8306edd%28Office.15%29.aspx) como se muestra en el ejemplo siguiente. Esta es también la solicitud XML que envía la API administrada ews cuando se usa la API administrada ews para obtener elementos de calendario [en lotes.](#bk_getewsma)
 
-Los atributos **Itemid** y **changekey** se acortan para facilitar la legibilidad.
+Los **atributos ItemId** y **ChangeKey** se acortan para mejorar la legibilidad.
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -355,7 +355,7 @@ Los atributos **Itemid** y **changekey** se acortan para facilitar la legibilida
 
 ```
 
-El servidor responde a la solicitud **GetItem** con un mensaje [GetItemResponse](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) con las propiedades solicitadas para cada elemento, tal como se muestra en el ejemplo siguiente.
+El servidor responde a la solicitud **GetItem** con un mensaje [GetItemResponse](https://msdn.microsoft.com/library/8b66de1b-26a6-476c-9585-a96059125716%28Office.15%29.aspx) con las propiedades solicitadas para cada elemento, como se muestra en el ejemplo siguiente.
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -477,9 +477,9 @@ El servidor responde a la solicitud **GetItem** con un mensaje [GetItemResponse]
 ## <a name="update-calendar-items-in-batches-by-using-the-ews-managed-api"></a>Actualizar elementos de calendario en lotes mediante la API administrada de EWS
 <a name="bk_updateewsma"> </a>
 
-Puede actualizar las propiedades de los elementos de calendario en lotes con el método de la API administrada de EWS de [UpdateItems](https://msdn.microsoft.com/library/dd634705%28v=exchg.80%29.aspx) , como se muestra en el ejemplo siguiente.
+Puede actualizar las propiedades del elemento de calendario en lotes mediante el método de API administrada EWS [UpdateItems,](https://msdn.microsoft.com/library/dd634705%28v=exchg.80%29.aspx) como se muestra en el ejemplo siguiente.
 
-En este ejemplo se supone que se ha autenticado en un servidor de Exchange y que se ha adquirido un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) denominado **Service**.
+En este ejemplo se supone que se ha autenticado en un servidor Exchange y que ha adquirido un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) denominado **service**.
 
 ```cs
 public static Collection<ItemId> BatchUpdateCalendarItems(ExchangeService service, Collection<Appointment> calendarItems)
@@ -530,7 +530,7 @@ public static Collection<ItemId> BatchUpdateCalendarItems(ExchangeService servic
 ## <a name="update-calendar-items-in-batches-by-using-ews"></a>Actualizar elementos de calendario en lotes mediante EWS
 <a name="bk_updateews"> </a>
 
-Puede actualizar varios elementos de calendario mediante la operación de EWS de [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) , como se muestra en el siguiente ejemplo de código. También es la solicitud XML que la API administrada de EWS envía cuando usa la API administrada de EWS para [actualizar elementos de calendario en lotes](#bk_updateewsma).
+Puede actualizar varios elementos de calendario mediante la [operación EWS UpdateItem,](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) como se muestra en el siguiente ejemplo de código. También es la solicitud XML que envía la API administrada ews cuando se usa la API administrada ews para actualizar elementos de calendario [en lotes.](#bk_updateewsma)
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -592,7 +592,7 @@ Puede actualizar varios elementos de calendario mediante la operación de EWS de
 
 ```
 
-El servidor responde a la solicitud **UpdateItem** con un mensaje [UpdateItemResponse](https://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) que incluye un [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) valor de **NoError**, lo que indica que cada una de las actualizaciones se guardaron correctamente en el servidor. Los conflictos se notifican en el elemento [ConflictResult](https://msdn.microsoft.com/library/08cdd547-4de7-4c7a-b60f-e618dc217d20%28Office.15%29.aspx) .
+El servidor responde a la solicitud **UpdateItem** con un mensaje [UpdateItemResponse](https://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, que indica que cada una de las actualizaciones se guardó correctamente en el servidor. Los conflictos se notifican en el [elemento ConflictResult.](https://msdn.microsoft.com/library/08cdd547-4de7-4c7a-b60f-e618dc217d20%28Office.15%29.aspx)
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -650,9 +650,9 @@ El servidor responde a la solicitud **UpdateItem** con un mensaje [UpdateItemRes
 ## <a name="delete-calendar-items-in-batches-by-using-the-ews-managed-api"></a>Eliminar elementos de calendario en lotes mediante la API administrada de EWS
 <a name="bk_deleteewsma"> </a>
 
-Puede eliminar elementos de calendario en lotes con el método de la API administrada de EWS de [DeleteItems](https://msdn.microsoft.com/library/dd635460%28v=exchg.80%29.aspx) , como se muestra en el ejemplo siguiente. En este ejemplo se hace una segunda vez la solicitud de eliminación para mostrar que no se produce ninguna excepción, pero que el servidor devolverá un error **ErrorItemNotFound** para indicar que los elementos que se van a eliminar no se encuentran en la tienda cuando se realizó la llamada. Este error se devuelve si ya se ha eliminado el elemento o si se pasa un identificador de elemento incorrecto al servidor.
+Puede eliminar elementos de calendario en lotes mediante el método [deleteItems](https://msdn.microsoft.com/library/dd635460%28v=exchg.80%29.aspx) EWS Managed API, como se muestra en el ejemplo siguiente. En este ejemplo, la solicitud de eliminación se realiza por segunda vez para mostrar que no se produce ninguna excepción, sino que el servidor devolverá un **error ErrorItemNotFound** para indicar que los elementos que se van a eliminar no estaban en el almacén cuando se realizó la llamada. Este error se devuelve si el elemento ya se ha eliminado o si se pasa un identificador de elemento malo al servidor.
 
-En este ejemplo se supone que se ha autenticado en un servidor de Exchange y que se ha adquirido un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) denominado **Service**.
+En este ejemplo se supone que se ha autenticado en un servidor Exchange y que ha adquirido un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) denominado **service**.
 
 ```cs
 public static void BatchDeleteCalendarItemsTwice(ExchangeService service, Collection<ItemId> itemIds)
@@ -693,14 +693,14 @@ public static void BatchDeleteCalendarItemsTwice(ExchangeService service, Collec
 
 ```
 
-Cuando se llama al método **DeleteItems** la segunda vez, no se produce ninguna excepción, pero el servidor devuelve un error **ErrorItemNotFound** en el resultado.
+Cuando se **llama al método DeleteItems** por segunda vez, no se produce ninguna excepción, pero el servidor devuelve un **error ErrorItemNotFound** en el resultado.
 
 ## <a name="delete-calendar-items-in-batches-by-using-ews"></a>Eliminar elementos de calendario en lotes mediante EWS
 <a name="bk_deleteews"> </a>
 
-Puede eliminar elementos de calendario en lotes mediante la operación de EWS [DeleteItem](../web-service-reference/deleteitem-operation.md) , tal como se muestra en el siguiente ejemplo de código. También es la solicitud XML que la API administrada de EWS envía cuando usa la API administrada de EWS para [eliminar elementos de calendario en lotes](#bk_deleteewsma).
+Puede eliminar elementos de calendario en lotes mediante la [operación EWS DeleteItem,](../web-service-reference/deleteitem-operation.md) como se muestra en el siguiente ejemplo de código. También es la solicitud XML que envía la API administrada ews cuando se usa la API administrada ews para eliminar elementos de calendario [en lotes.](#bk_deleteewsma)
 
-Los atributos **Itemid** y **changekey** se acortan para facilitar la legibilidad.
+Los **atributos ItemId** y **ChangeKey** se acortan para mejorar la legibilidad.
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -729,7 +729,7 @@ Los atributos **Itemid** y **changekey** se acortan para facilitar la legibilida
 
 ```
 
-El servidor responde a la solicitud **DeleteItem** con un mensaje [DeleteItemResponse](https://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError** para cada elemento que se ha quitado.
+El servidor responde a la solicitud **DeleteItem** con un mensaje [DeleteItemResponse](https://msdn.microsoft.com/library/86463d66-fe47-4a19-a81b-e24841e816ab%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError** para cada elemento que se quitó.
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -761,7 +761,7 @@ El servidor responde a la solicitud **DeleteItem** con un mensaje [DeleteItemRes
 
 ```
 
-Tenga en cuenta que si se realiza la solicitud **DeleteItem** cuando los elementos asociados ya se han eliminado, no se producirá ninguna excepción, pero el servidor devolverá un error **ErrorItemNotFound** en el resultado. En el ejemplo siguiente se muestra la respuesta del servidor a una solicitud **DeleteItem** cuando ya se han eliminado los elementos asociados.
+Tenga en cuenta que si la solicitud **DeleteItem** se realiza cuando los elementos asociados ya se han eliminado, no se producirá ninguna excepción, pero el servidor devolverá un **error ErrorItemNotFound** en el resultado. En el ejemplo siguiente se muestra la respuesta del servidor a una **solicitud DeleteItem** cuando los elementos asociados ya se han eliminado.
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -799,12 +799,12 @@ Tenga en cuenta que si se realiza la solicitud **DeleteItem** cuando los element
 
 ```
 
-## <a name="verifying-that-a-batch-process-completed-successfully"></a>Comprobación de la finalización correcta de un proceso por lotes
+## <a name="verifying-that-a-batch-process-completed-successfully"></a>Comprobar que un proceso por lotes se completó correctamente
 <a name="bk_successful"> </a>
 
-Cuando uno o varios elementos de calendario de una solicitud por lotes no se pueden procesar como se solicitan, se devuelve un error para cada elemento de calendario en el que se ha producido un error y el resto de los elementos del calendario del lote se procesan como se esperaba. Los errores en el procesamiento por lotes pueden producirse si el elemento se eliminó y, por lo tanto, no se puede enviar, recuperar o actualizar, o si el elemento se movió a una carpeta diferente y, por lo tanto, tiene un identificador de elemento nuevo y no se puede modificar con el identificador de elemento enviado. La información de esta sección muestra cómo obtener detalles de error sobre errores en el procesamiento por lotes de elementos de calendario.
+Cuando uno o varios elementos de calendario de una solicitud por lotes no se pueden procesar como se solicitó, se devuelve un error para cada elemento de calendario que falló y el resto de los elementos del calendario del lote se procesan según lo esperado. Los errores en el procesamiento por lotes pueden producirse si el elemento se eliminó y, por lo tanto, no se puede enviar, recuperar o actualizar, o si el elemento se movió a una carpeta diferente y, por lo tanto, tiene un nuevo identificador de elemento y no se puede modificar con el identificador de elemento enviado. La información de esta sección muestra cómo obtener detalles de error sobre errores en el procesamiento por lotes de elementos de calendario.
 
-Para comprobar que el proceso por lotes se ha realizado correctamente mediante la API administrada de EWS, puede comprobar que la propiedad [OverallResult](https://msdn.microsoft.com/library/dd634515%28v=exchg.80%29.aspx) de [ServiceResponseCollection](https://msdn.microsoft.com/library/dd633715%28v=exchg.80%29.aspx) es igual a [ServiceResult. Success](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx). Si es así, todos los elementos del calendario se procesaron correctamente. Si **OverallResult** no es igual a **ServiceResult. Success**, no se procesaron correctamente uno o varios de los elementos del calendario. Cada uno de los objetos devueltos en **ServiceResponseCollection** contiene las siguientes propiedades:
+Para comprobar el éxito de un proceso por lotes mediante la API administrada ews, puede comprobar que la propiedad [OverallResult](https://msdn.microsoft.com/library/dd634515%28v=exchg.80%29.aspx) de [ServiceResponseCollection](https://msdn.microsoft.com/library/dd633715%28v=exchg.80%29.aspx) es igual a [ServiceResult.Success](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresult%28v=exchg.80%29.aspx). Si es así, todos los elementos del calendario se procesaron correctamente. Si **OverallResult** no es igual a **ServiceResult.Success**, uno o varios de los elementos del calendario no se procesaron correctamente. Cada uno de los objetos devueltos en **ServiceResponseCollection** contiene las siguientes propiedades:
 
 - [ErrorCode](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.serviceresponse.errorcode%28v=exchg.80%29.aspx)
 
@@ -816,9 +816,9 @@ Para comprobar que el proceso por lotes se ha realizado correctamente mediante l
 
 - [Resultado](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.serviceresponse.result%28v=exchg.80%29.aspx)
 
-Estas propiedades contienen información sobre por qué no se pudieron procesar los elementos del calendario como se solicitó. Los ejemplos de este artículo imprimen el **resultado**, **ErrorCode**y **errorMessage** para cada elemento con error. Puede usar estos resultados para investigar el problema.
+Estas propiedades contienen información sobre por qué los elementos del calendario no se pudieron procesar como se solicitó. En los ejemplos de este artículo se **imprimen Los resultados,** **ErrorCode** y **ErrorMessage** para cada elemento con errores. Puede usar estos resultados para investigar el problema.
 
-Para EWS, para comprobar que el proceso por lotes se ha realizado correctamente, compruebe el atributo [ResponseClass](https://msdn.microsoft.com/library/bf57265a-d354-4cd7-bbfc-d93e19cbede6%28Office.15%29.aspx) para cada elemento que se está procesando. La siguiente es la estructura básica de **ResponseMessageType**, el tipo base del que se derivan todos los mensajes de respuesta.
+Para EWS, para comprobar el éxito de un proceso por lotes, compruebe el atributo [ResponseClass](https://msdn.microsoft.com/library/bf57265a-d354-4cd7-bbfc-d93e19cbede6%28Office.15%29.aspx) para cada elemento que se está procesando. A continuación se muestra la estructura básica de **ResponseMessageType**, el tipo base del que se derivan todos los mensajes de respuesta.
 
 ```XML
 <ResponseMessage ResponseClass="Success | Warning | Error">
@@ -829,19 +829,19 @@ Para EWS, para comprobar que el proceso por lotes se ha realizado correctamente,
 </ResponseMessage>
 ```
 
-El atributo **ResponseClass** se establece en **Success** si el elemento de calendario se procesó correctamente, o **error** si no se procesó correctamente. Para los elementos de calendario, no encontrará ninguna **ADVERTENCIA** durante el procesamiento por lotes. Si el **ResponseClass** es **correcto**, el elemento [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) que sigue también se establece siempre en **NoError**. Si el **ResponseClass** es **error**, debe comprobar los valores de los elementos [MessageText](https://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx), **ResponseCode**y [MessageXml](https://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx) para determinar la causa del problema. [DescriptiveLinkKey](https://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx) actualmente no está en uso.
+El **atributo ResponseClass** se establece en **Success** si el elemento de calendario se procesó correctamente o **Error** si no se procesó correctamente. Para los elementos de calendario, no encontrará una **advertencia durante** el procesamiento por lotes. Si **ResponseClass** es **Success**, el [elemento ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) siguiente también siempre se establece en **NoError**. Si **ResponseClass** es **Error**, debe comprobar los valores de los elementos [MessageText](https://msdn.microsoft.com/library/59a23bdc-0d9a-4942-8b3c-9cdb11db1ab1%28Office.15%29.aspx), **ResponseCode** y [MessageXml](https://msdn.microsoft.com/library/bcaf9e35-d351-48f3-baad-f90c633cba8a%28Office.15%29.aspx) para determinar qué causó el problema. [DescriptiveLinkKey](https://msdn.microsoft.com/library/f7f36749-00f3-4915-b17c-e3caa0af6e67%28Office.15%29.aspx) está actualmente sin usar.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 - [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)
 
 - [Obtener citas y reuniones mediante EWS en Exchange](how-to-get-appointments-and-meetings-by-using-ews-in-exchange.md)
 
-- [Actualizar citas y reuniones mediante EWS en Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
+- [Actualice las citas y reuniones mediante EWS en Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
 
 - [Eliminar citas y cancelar reuniones mediante EWS en Exchange](how-to-delete-appointments-and-cancel-meetings-by-using-ews-in-exchange.md)
 
 - [Procesar elementos de calendario en lotes en Exchange](how-to-process-calendar-items-in-batches-in-exchange.md)
 
-- [Implicaciones de limitación de solicitudes por lotes de EWS](ews-throttling-in-exchange.md#throttling-implications-for-ews-batch-requests)
+- [Implicaciones de limitación para solicitudes por lotes ews](ews-throttling-in-exchange.md#throttling-implications-for-ews-batch-requests)

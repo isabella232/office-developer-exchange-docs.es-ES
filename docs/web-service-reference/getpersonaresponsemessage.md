@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a5bf44c6-c46b-442d-98d4-8b49fdf14b30
-description: GetPersonaResponseMessage contiene los datos de respuesta resultantes de una solicitud de GetPersona.
-ms.openlocfilehash: 6391e1b6682180e292d03c5db651e8edc6f46b52
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: GetPersonaResponseMessage contiene los datos de respuesta resultantes de una solicitud GetPersona.
+ms.openlocfilehash: 3f59aa924b6a4d42e4d661bcb3f4b1cf905b86a0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458330"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533563"
 ---
 # <a name="getpersonaresponsemessage"></a>GetPersonaResponseMessage
 
-**GetPersonaResponseMessage** contiene los datos de respuesta resultantes de una solicitud de **GetPersona** . 
+**GetPersonaResponseMessage** contiene los datos de respuesta resultantes de una **solicitud GetPersona.** 
   
 ```XML
 <GetPersonaResponseMessage>
@@ -36,7 +36,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -57,8 +57,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

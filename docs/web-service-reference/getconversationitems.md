@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4f7bcd0f-140c-4cbc-a5ed-daeffded1df1
-description: El elemento GetConversationItems define una solicitud para obtener un conjunto de elementos que están relacionados por estar en la misma conversación.
-ms.openlocfilehash: cde4bc2c39ccbc51b7436c87c4bc06e3b8d7e52c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento GetConversationItems define una solicitud para obtener un conjunto de elementos relacionados al estar en la misma conversación.
+ms.openlocfilehash: 0bd792553cbab0c03a6c2cd5bfdbc18dfeba4273
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457749"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538120"
 ---
 # <a name="getconversationitems"></a>GetConversationItems
 
-El elemento **GetConversationItems** define una solicitud para obtener un conjunto de elementos que están relacionados por estar en la misma conversación. 
+El **elemento GetConversationItems** define una solicitud para obtener un conjunto de elementos relacionados al estar en la misma conversación. 
   
 ```XML
 <GetConversationItems>
@@ -37,7 +37,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -58,8 +58,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

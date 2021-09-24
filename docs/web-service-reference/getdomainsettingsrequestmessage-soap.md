@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 34913595-794c-4c62-9622-877f30931c73
-description: El elemento GetDomainSettingsRequestMessage representa una solicitud de operación de GetDomainSettings (SOAP).
-ms.openlocfilehash: 71648e3df609edfce73ebccf372a82311c03d49d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento GetDomainSettingsRequestMessage representa una solicitud de operación de operación GetDomainSettings (SOAP).
+ms.openlocfilehash: 78ddc0a904a0a23e0ed0499f014bcb531e7cb99b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462034"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512985"
 ---
 # <a name="getdomainsettingsrequestmessage-soap"></a>GetDomainSettingsRequestMessage (SOAP)
 
-El elemento **GetDomainSettingsRequestMessage** representa una solicitud de operación de [GetDomainSettings (SOAP)](getdomainsettings-operation-soap.md) . 
+El **elemento GetDomainSettingsRequestMessage** representa una solicitud de operación de operación [GetDomainSettings (SOAP).](getdomainsettings-operation-soap.md) 
   
 ```XML
 <GetDomainSettingsRequestMessage>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -42,11 +42,11 @@ Ninguna.
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguna.
+Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguna.
+Ninguno.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -54,10 +54,10 @@ Ninguna.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

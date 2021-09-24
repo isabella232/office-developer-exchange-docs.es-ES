@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 21761cb0-4514-4adb-a659-59a3f2f0a6e1
-description: El elemento HomeCitySortKey representa la clave de ordenación para la ciudad de origen.
-ms.openlocfilehash: 8a6c96f7de8915259d1151fc4ddb9b6148a864b6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento HomeCitySortKey representa la clave de ordenación de la ciudad principal.
+ms.openlocfilehash: bbb5cd196f595a042e5b2f62f41511a05f3b7edb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460865"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519544"
 ---
 # <a name="homecitysortkey"></a>HomeCitySortKey
 
-El elemento **HomeCitySortKey** representa la clave de ordenación para la ciudad de origen. 
+El **elemento HomeCitySortKey** representa la clave de ordenación de la ciudad principal. 
   
 ```XML
 <HomeCitySortKey></HomeCitySortKey>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **HomeCitySortKey** es la clave de ordenación para el nombre de la ciudad principal del rol. 
+El valor de texto del **elemento HomeCitySortKey** es la clave de ordenación del nombre de la ciudad principal de la persona. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

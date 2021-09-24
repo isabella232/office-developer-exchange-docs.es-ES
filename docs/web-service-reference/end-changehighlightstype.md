@@ -1,23 +1,23 @@
 ---
-title: Fin (ChangeHighlightsType)
+title: End (ChangeHighlightsType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 62b7d14c-8d71-4f28-b93e-8fe42d99022b
-description: El elemento end especifica los cambios realizados en la hora de finalización de una reunión cuando se produce una actualización de reunión.
-ms.openlocfilehash: 61d8c46af1999a506258dfa0cebf3a712962772a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento End especifica los cambios realizados en una hora de finalización de la reunión cuando se produce una actualización de reunión.
+ms.openlocfilehash: 584ddbe4aea23e7940506fc4ce46ffa9e8cb5683
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526203"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520706"
 ---
-# <a name="end-changehighlightstype"></a>Fin (ChangeHighlightsType)
+# <a name="end-changehighlightstype"></a>End (ChangeHighlightsType)
 
-El elemento **End** especifica los cambios realizados en la hora de finalización de una reunión cuando se produce una actualización de reunión. 
+El **elemento End** especifica los cambios realizados en una hora de finalización de la reunión cuando se produce una actualización de reunión. 
   
 ```XML
 <End></End>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **final** es la nueva hora de finalización de una reunión. 
+El valor de texto del **elemento End** es la nueva hora de finalización de una reunión. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

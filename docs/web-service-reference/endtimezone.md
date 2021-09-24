@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - EndTimeZone
 api_type:
 - schema
 ms.assetid: 6c53c337-be60-4d22-9e9e-a0c140c5e913
-description: El elemento EndTimeZone define la zona horaria para la hora de finalización de CalendarItem o MeetingRequest.
-ms.openlocfilehash: 83ab2ab90e2bed7658fe83ed33a72b60d5f10135
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento EndTimeZone define la zona horaria para la hora de finalización de un CalendarItem o MeetingRequest.
+ms.openlocfilehash: 6d34afdedfb8e4886526317afea6abc324bde3c8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462988"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520699"
 ---
 # <a name="endtimezone"></a>EndTimeZone
 
-El elemento **EndTimeZone** define la zona horaria para la hora de finalización de [CalendarItem](calendaritem.md) o [MeetingRequest](meetingrequest.md).
+El **elemento EndTimeZone** define la zona horaria para la hora de finalización de [un CalendarItem](calendaritem.md) o [MeetingRequest](meetingrequest.md).
   
 ```xml
 <EndTimeZone Id="" Name="">
@@ -41,26 +41,26 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
 |Id  <br/> |Representa el identificador único de la definición de zona horaria.  <br/> |
-|Nombre  <br/> |Representa el nombre descriptivo de la definición de la zona horaria.  <br/> |
+|Nombre  <br/> |Representa el nombre descriptivo de la definición de zona horaria.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Períodos](periods.md) <br/> |Representa una matriz de elementos [period](period.md) que define el desplazamiento de tiempo en diferentes etapas de la zona horaria.  <br/> |
-|[TransitionsGroups](transitionsgroups.md) <br/> |Representa una matriz de elementos [TransitionsGroup](transitionsgroup.md) que especifican las transiciones de la zona horaria.  <br/> |
-|[Transiciones](transitions.md) <br/> |Representa una matriz de transiciones de zona horaria.  <br/> |
+|[Periods](periods.md) <br/> |Representa una matriz de [elementos Period](period.md) que definen el desplazamiento de hora en distintas fases de la zona horaria.  <br/> |
+|[TransitionsGroups](transitionsgroups.md) <br/> |Representa una matriz de [elementos TransitionsGroup](transitionsgroup.md) que especifican transiciones de zona horaria.  <br/> |
+|[Transitions](transitions.md) <br/> |Representa una matriz de transiciones de zona horaria.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |Representa una convocatoria de reunión en el almacén de Exchange.  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Representa un Exchange de calendario.  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |Representa una solicitud de reunión en Exchange almacén.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -68,12 +68,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

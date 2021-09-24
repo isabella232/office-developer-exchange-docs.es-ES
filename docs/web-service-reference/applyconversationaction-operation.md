@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ApplyConversationAction
 api_type:
 - schema
 ms.assetid: 73d7943d-d361-4f8b-9948-d85f886efa1a
-description: La operación ApplyConversationAction establece una acción de una vez o de seguimiento en todos los elementos de una conversación. La operación ApplyConversationAction permite categorizar, mover, copiar, eliminar y establecer el estado de lectura en todos los elementos de una conversación. Las acciones también se pueden establecer para nuevos mensajes en una conversación.
-ms.openlocfilehash: cdab239a5b0b1406d2ce31f4604e4737d037cd7e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación ApplyConversationAction establece una acción única o de seguimiento en todos los elementos de una conversación. La operación ApplyConversationAction permite clasificar, mover, copiar, eliminar y establecer el estado de lectura en todos los elementos de una conversación. También se pueden establecer acciones para nuevos mensajes en una conversación.
+ms.openlocfilehash: ed3ed02dc045a095bcc86124b8d3e1c5a65dae84
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463506"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520104"
 ---
 # <a name="applyconversationaction-operation"></a>Operación ApplyConversationAction
 
-La operación **ApplyConversationAction** establece una acción de una vez o de seguimiento en todos los elementos de una conversación. La operación **ApplyConversationAction** permite categorizar, mover, copiar, eliminar y establecer el estado de lectura en todos los elementos de una conversación. Las acciones también se pueden establecer para nuevos mensajes en una conversación. 
+La **operación ApplyConversationAction** establece una acción única o de seguimiento en todos los elementos de una conversación. La **operación ApplyConversationAction** permite clasificar, mover, copiar, eliminar y establecer el estado de lectura en todos los elementos de una conversación. También se pueden establecer acciones para nuevos mensajes en una conversación. 
   
 ## <a name="applyconversationaction-request-example"></a>Ejemplo de solicitud ApplyConversationAction
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud **ApplyConversationAction** muestra cómo mover los elementos de la conversación especificada a otra carpeta. Los elementos que se agregan a la conversación también se moverán a la carpeta especificada. 
+En el siguiente ejemplo de una **solicitud ApplyConversationAction** se muestra cómo mover los elementos de la conversación especificada a otra carpeta. Los elementos que se agregan a la conversación también se mueven a la carpeta especificada. 
   
 ### <a name="code"></a>Código
 
@@ -59,13 +59,13 @@ El siguiente ejemplo de una solicitud **ApplyConversationAction** muestra cómo 
 
 ### <a name="remarks"></a>Comentarios
 
-Los identificadores de conversación y carpeta se han abreviado para preservar la legibilidad.
+Los identificadores de conversación y carpeta se han acortado para conservar la legibilidad.
   
 ## <a name="applyconversationaction-response-example"></a>Ejemplo de respuesta ApplyConversationAction
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **ApplyConversationAction** . 
+En el ejemplo siguiente se muestra una respuesta correcta a una **solicitud ApplyConversationAction.** 
   
 ### <a name="code"></a>Código
 
@@ -97,10 +97,10 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **Appl
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Operación ApplyConversationAction](applyconversationaction-operation.md)
-- [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Operaciones ews en Exchange](ews-operations-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 - [Conversaciones en EWS](https://msdn.microsoft.com/library/91e64629-db6c-4c94-9dcb-d386232e8467%28Office.15%29.aspx)
 

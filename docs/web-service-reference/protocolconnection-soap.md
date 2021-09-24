@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 6eef2188-6194-48f1-ad7e-46104aecdf56
 description: El elemento ProtocolConnection representa la conexión de protocolo del cliente web del servidor.
-ms.openlocfilehash: b9df3febe36db53d7c5bf0610ba857f13aa96abc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: a4f48a12981a83206aff266700708745e9d3c1bb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528863"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512586"
 ---
 # <a name="protocolconnection-soap"></a>ProtocolConnection (SOAP)
 
-El elemento **ProtocolConnection** representa la conexión de protocolo del cliente web del servidor. 
+El **elemento ProtocolConnection** representa la conexión de protocolo del cliente web del servidor. 
   
 ```XML
 <ProtocolConnection>
@@ -35,14 +35,14 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Nombre de host (SOAP)](hostname-soap.md) <br/> |Representa la parte de nombre de host del nombre de equipo completo del equipo.  <br/> |
-|[Puerto (SOAP)](port-soap.md) <br/> |Representa el número de puerto que se va a usar para el protocolo.  <br/> |
+|[Hostname (SOAP)](hostname-soap.md) <br/> |Representa la parte del nombre de host del nombre de equipo completo del equipo.  <br/> |
+|[Port (SOAP)](port-soap.md) <br/> |Representa el número de puerto que se usará para el protocolo.  <br/> |
 |[EncryptionMethod (SOAP)](encryptionmethod-soap.md) <br/> |Representa el método criptográfico que se usa para los protocolos POP, IMAP y SMTP.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
@@ -53,7 +53,7 @@ Ninguna.
    
 ## <a name="text-value"></a>Valor de texto
 
-Ninguna.
+Ninguno.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -61,10 +61,10 @@ Ninguna.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

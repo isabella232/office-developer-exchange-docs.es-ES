@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3b1bc531-6988-41c3-9aad-3f5ad5b732a9
-description: El elemento State contiene el estado del ciclo de vida que se establece en un buzón del sitio.
-ms.openlocfilehash: 597946b48649d997f8dd57823b4e0fcc091a6f84
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento State contiene el estado de ciclo de vida que se establece en un buzón de sitio.
+ms.openlocfilehash: 5189ee8573fd33d2265fd60c47bb40d17b16b8fe
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465166"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538971"
 ---
 # <a name="state-teammailboxlifecyclestatetype"></a>State (TeamMailboxLifecycleStateType)
 
-El elemento **State** contiene el estado del ciclo de vida que se establece en un buzón del sitio. 
+El **elemento State** contiene el estado de ciclo de vida que se establece en un buzón de sitio. 
   
 ```XML
 <State> Active | Closed | Unlinked | PendingDelete </State>
@@ -31,11 +31,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -43,7 +43,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento de **Estado** es el estado de ciclo de vida que se establece en un buzón de sitio. Un valor de texto **activo** indica que un buzón de sitio está en uso. Un valor de texto de **Closed** indica que se ha cerrado un buzón de sitio y no está en uso activo. Un valor de texto de **unlinkd** indica que un buzón de sitio no está vinculado a un entorno de colaboración basado en Web. Los valores **Active**, **Closed**y **PendingDelete** se excluyen mutuamente, pero el valor **desvinculado** no se excluye mutuamente de los demás valores. Un valor de texto de **PendingDelete** indica que hay un buzón de sitio pendiente de eliminación. Un buzón de sitio tiene que cerrarse antes de que se pueda establecer como **PendingDelete**.
+El valor de texto del **elemento State** es el estado de ciclo de vida que se establece en un buzón de sitio. Un valor de texto **de Active** indica que un buzón de sitio está en uso activo. Un valor de texto **de Closed** indica que un buzón de sitio se ha cerrado y no está en uso activo. Un valor de texto **de Unlinked** indica que un buzón de sitio no está vinculado a un entorno de colaboración basado en web. Los **valores Active**, **Closed** y **PendingDelete** son mutuamente excluyentes, pero el valor **Unlinked** no es mutuamente excluyente de los otros valores. Un valor de texto de **PendingDelete** indica que un buzón de sitio está pendiente de eliminación. Un buzón de sitio debe cerrarse para poder establecerse como **PendingDelete**.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Resolution
 api_type:
 - schema
 ms.assetid: 573bed4b-d7b1-4baf-b16f-0795cdebf1a7
 description: El elemento Resolution contiene una única entidad resuelta.
-ms.openlocfilehash: 63c80f3c8d7dabf7e6dc1494df04c0be821b28bf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 41e37c7224ca269bbd7c37b084806e9b8ecc67f3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468288"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539083"
 ---
 # <a name="resolution"></a>Solución
 
-El elemento **Resolution** contiene una única entidad resuelta. 
+El **elemento Resolution** contiene una única entidad resuelta. 
   
 [ResolveNamesResponse](resolvenamesresponse.md)
   
@@ -47,14 +47,14 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Buzón](mailbox.md) <br/> |Identifica un objeto de servicio de directorio de Active Directory habilitado para correo.  <br/> |
-|[Contacto](contact.md) <br/> |Representa un elemento de contacto de Exchange.  <br/> |
+|[Contact](contact.md) <br/> |Representa un Exchange de contacto.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -64,18 +64,18 @@ Ninguna.
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

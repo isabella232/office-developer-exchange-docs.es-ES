@@ -4,29 +4,29 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: c55b7bf5-3702-4923-b7c9-b0928cde1de2
-description: El elemento UMUrl especifica la dirección URL de la mejor instancia del servicio Web de mensajería unificada para un usuario habilitado para correo.
-ms.openlocfilehash: c80f874e13ac3909ee51bbc63dded100a1e41524
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento UMUrl especifica la dirección URL de la mejor instancia del servicio web de mensajería unificada para un usuario habilitado para correo.
+ms.openlocfilehash: 9e4612d7c92ae7796d9f19573dbf096b3f4de250
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463030"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538698"
 ---
 # <a name="umurl-pox"></a>UMUrl (POX)
 
-El elemento **UMUrl** especifica la dirección URL de la mejor instancia del servicio Web de mensajería unificada para un usuario habilitado para correo. 
+El **elemento UMUrl** especifica la dirección URL de la mejor instancia del servicio web de mensajería unificada para un usuario habilitado para correo. 
   
-[Detección automática (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[Respuesta (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[Cuenta (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
-[Protocolo (POX)](protocol-pox.md)
+[Protocol (POX)](protocol-pox.md)
   
 [UMUrl (POX)](umurl-pox.md)
   
@@ -40,23 +40,23 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que se ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto especifica la dirección URL del servidor de Exchange que tiene instalada la función de servidor de mensajería unificada para una topología de Exchange.
+El valor de texto especifica la dirección URL del servidor Exchange que tiene instalado el rol de servidor Mensajería unificada para una topología Exchange usuario.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

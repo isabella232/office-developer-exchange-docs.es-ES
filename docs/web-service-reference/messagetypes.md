@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fac1cfe0-8e7b-4196-b3ad-4e86043d9c9b
 description: El elemento MessageTypes especifica una matriz de mensajes para buscar.
-ms.openlocfilehash: 2cfca82ea060792d59088ee8755530d82f7f77f6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 9ee57f73ae0b574ad5aebe742376a333c43b3ffb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468666"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512899"
 ---
 # <a name="messagetypes"></a>MessageTypes
 
-El elemento **MessageTypes** especifica una matriz de mensajes para buscar. 
+El **elemento MessageTypes** especifica una matriz de mensajes para buscar. 
   
 ```XML
 <MessageTypes>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

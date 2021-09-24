@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8f7276aa-e354-40e4-b9cb-950fad46ac93
-description: El elemento UniqueBodyType especifica si el cuerpo único se devuelve en formato de texto o HTML.
-ms.openlocfilehash: 7e6c4631ef589555ce4d5da747c200ffe956f3a1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento UniqueBodyType especifica si el cuerpo único se devuelve en formato HTML o texto.
+ms.openlocfilehash: a0149e41da24646fdf38a465434bfad3557ece22
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459443"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520272"
 ---
 # <a name="uniquebodytype"></a>UniqueBodyType
 
-El elemento **UniqueBodyType** especifica si el cuerpo único se devuelve en formato de texto o HTML. 
+El **elemento UniqueBodyType** especifica si el cuerpo único se devuelve en formato HTML o texto. 
   
 ```XML
 <UniqueBodyType> Best | HTML | Text </UniqueBodyType>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,13 +42,13 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **UniqueBodyType** indica el formato en el que se devuelve el cuerpo único. En la siguiente tabla se enumeran los valores posibles para este elemento. 
+El valor de texto del **elemento UniqueBodyType** indica el formato en el que se devuelve el cuerpo único. En la tabla siguiente se enumeran los valores posibles para este elemento. 
   
 ****
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Procedimientos  <br/> |La respuesta devolverá el contenido más enriquecido disponible del texto del cuerpo. Esto es útil si es desconocido si el contenido es de texto o HTML.  <br/> El cuerpo devuelto será Text si el cuerpo almacenado es texto sin formato. De lo contrario, la respuesta devolverá HTML si el cuerpo almacenado está en formato HTML o RTF.  <br/> Este es el valor predeterminado.  <br/> |
+|Procedimientos  <br/> |La respuesta devolverá el contenido más completo disponible del texto del cuerpo. Esto es útil si se desconoce si el contenido es texto o HTML.  <br/> El cuerpo devuelto será texto si el cuerpo almacenado es texto sin formato. De lo contrario, la respuesta devolverá HTML si el cuerpo almacenado está en formato HTML o RTF.  <br/> Este es el valor predeterminado.  <br/> |
 |HTML  <br/> |La respuesta devolverá un cuerpo único como HTML.  <br/> |
 |Texto  <br/> |La respuesta devolverá un cuerpo único como texto sin formato.  <br/> |
    
@@ -64,15 +64,15 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
 [ItemShape](itemshape.md)
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,27 +1,27 @@
 ---
-title: Entrada (EmailAddress)
+title: Entry (EmailAddress)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Entry
 api_type:
 - schema
 ms.assetid: b028c5c7-3494-4ecd-96d1-78783daa660f
-description: El elemento entry representa una sola dirección de correo electrónico de un contacto.
-ms.openlocfilehash: 766d67cda10b02c07a7677e541fddfc38a4285cf
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Entry representa una única dirección de correo electrónico para un contacto.
+ms.openlocfilehash: 96351a82e113f2c4aa73776e89e1eb7e7a683433
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459647"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520671"
 ---
-# <a name="entry-emailaddress"></a>Entrada (EmailAddress)
+# <a name="entry-emailaddress"></a>Entry (EmailAddress)
 
-El elemento **entry** representa una sola dirección de correo electrónico de un contacto. 
+El **elemento Entry** representa una única dirección de correo electrónico para un contacto. 
   
 ```XML
 <Entry Key="" Name="" RoutingType="" MailboxType="" />
@@ -37,20 +37,20 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
-|**Key** <br/> | Identifica la dirección de correo electrónico.<br/><br/>A continuación se muestran los valores posibles para este atributo:<br/><br/>- EmailAddress1  <br/>- EmailAddress2  <br/>- EmailAddress3 <br/><br/>  Este atributo es obligatorio.  <br/> |
-|**Nombre** <br/> |Define el nombre del usuario del buzón de correo. Este atributo es opcional.  <br/> |
-|**RoutingType** <br/> |Define la ruta que se usa para el buzón. El valor predeterminado es SMTP. Este atributo es opcional.  <br/> |
-|**MailboxType** <br/> |Define el tipo de buzón de un usuario de buzón. Este atributo es opcional.  <br/> |
+|**Clave** <br/> | Identifica la dirección de correo electrónico.<br/><br/>Estos son los valores posibles para este atributo:<br/><br/>- EmailAddress1  <br/>- EmailAddress2  <br/>- EmailAddress3 <br/><br/>  Este atributo es obligatorio.  <br/> |
+|**Nombre** <br/> |Define el nombre del usuario del buzón. Este atributo es opcional.  <br/> |
+|**RoutingType** <br/> |Define el enrutamiento que se usa para el buzón. El valor predeterminado es SMTP. Este atributo es opcional.  <br/> |
+|**MailboxType** <br/> |Define el tipo de buzón de correo de un usuario de buzón. Este atributo es opcional.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[EmailAddresses](emailaddresses.md) <br/> |Representa una colección de direcciones de correo electrónico de un contacto.  <br/> |
+|[EmailAddresses](emailaddresses.md) <br/> |Representa una colección de direcciones de correo electrónico para un contacto.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -63,11 +63,11 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 268805b5-baf7-4826-b92e-cb9f9f5792ea
-description: El elemento DomainStringSetting representa una configuración de dominio cuyo valor es de tipo String.
-ms.openlocfilehash: 791c4598d9f1ed471c3ce3b6083498b5da0f2b72
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento DomainStringSetting representa un dominio que establece el valor de la cadena de tipo.
+ms.openlocfilehash: 80ea8665a91bbc35fd00b6e951a585dc0ea6ca0f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463590"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520797"
 ---
 # <a name="domainstringsetting-soap"></a>DomainStringSetting (SOAP)
 
-El elemento **DomainStringSetting** representa una configuración de dominio cuyo valor es de tipo String. 
+El **elemento DomainStringSetting** representa un dominio que establece el valor de la cadena de tipo. 
   
 ```XML
 <DomainStringSetting>
@@ -34,22 +34,22 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Name (SOAP)](name-soap.md) <br/> |Representa el nombre de una configuración.  <br/> |
-|[Valor (SOAP)](value-soap.md) <br/> |Representa un valor de configuración de usuario.  <br/> |
+|[Value (SOAP)](value-soap.md) <br/> |Representa un valor de configuración de usuario.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguna.
+Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguna.
+Ninguno.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -57,10 +57,10 @@ Ninguna.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Operación GetDomainSettings (SOAP)](getdomainsettings-operation-soap.md)
 

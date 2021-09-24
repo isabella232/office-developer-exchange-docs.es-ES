@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9d963e6c-e94d-462b-8c44-95d55c848fb2
 description: El elemento GetDiscoverySearchConfigurationResponse especifica la respuesta a una solicitud GetDiscoverySearchConfiguration.
-ms.openlocfilehash: 98393943434b5e3460485b7d75c2b5285983f597
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 978d3a8a2081da3837b9e58f1efab3e9d6afccd5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460984"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512992"
 ---
 # <a name="getdiscoverysearchconfigurationresponse"></a>GetDiscoverySearchConfigurationResponse
 
-El elemento **GetDiscoverySearchConfigurationResponse** especifica la respuesta a una solicitud **GetDiscoverySearchConfiguration** . 
+El **elemento GetDiscoverySearchConfigurationResponse** especifica la respuesta a una **solicitud GetDiscoverySearchConfiguration.** 
   
 ```XML
 <GetDiscoverySearchConfigurationResponse>
@@ -36,7 +36,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -57,8 +57,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

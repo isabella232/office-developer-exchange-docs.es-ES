@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3f25e673-0df0-4285-bf03-a083a395cdab
 description: El elemento ModifyRecipientsAllowed especifica si la modificación de los destinatarios está habilitada.
-ms.openlocfilehash: 3154ec3aceb2da7911002d505e0c452bf920d71f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 4366f9ed0a6843f9a297718cb999fb8c3a02ee17
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465698"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520398"
 ---
 # <a name="modifyrecipientsallowed"></a>ModifyRecipientsAllowed
 
-El elemento **ModifyRecipientsAllowed** especifica si la modificación de los destinatarios está habilitada. 
+El **elemento ModifyRecipientsAllowed** especifica si la modificación de los destinatarios está habilitada. 
   
 ```XML
 <ModifyRecipientsAllowed> true | false </ModifyRecipientsAllowed>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **ModifyRecipientsAllowed** indica que la lista de destinatarios de elementos es modificable para un elemento con Rights Management habilitada. Un valor de **false** indica que la lista de destinatarios no es modificable. 
+Un valor de texto **de true** para el elemento **ModifyRecipientsAllowed** indica que la lista de destinatarios del elemento es modificable para un elemento con administración de derechos habilitada en él. Un valor de **false** indica que la lista de destinatarios no es modificable. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

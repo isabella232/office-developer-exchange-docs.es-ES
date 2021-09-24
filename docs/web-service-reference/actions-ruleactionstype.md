@@ -1,23 +1,23 @@
 ---
-title: Acciones (RuleActionsType)
+title: Actions (RuleActionsType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2afba70c-65f7-458c-a4e6-a2cd9bccc0f9
-description: El elemento Actions contiene una lista de acciones asociadas con las reglas de la bandeja de entrada.
-ms.openlocfilehash: fbef3b69b1688d7c612af018d6a19f9ec1728066
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Actions contiene una lista de acciones asociadas con las reglas de la Bandeja de entrada.
+ms.openlocfilehash: d91a76889778b363ea931afb98ae9817e3b7c3c1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529682"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520181"
 ---
-# <a name="actions-ruleactionstype"></a>Acciones (RuleActionsType)
+# <a name="actions-ruleactionstype"></a>Actions (RuleActionsType)
 
-El elemento **Actions** contiene una lista de acciones asociadas con las reglas de la bandeja de entrada. 
+El **elemento Actions** contiene una lista de acciones asociadas con las reglas de la Bandeja de entrada. 
   
 ```XML
 <Actions>
@@ -44,7 +44,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,7 +52,7 @@ Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Regla (RuleType)](rule-ruletype.md)
+[Rule (RuleType)](rule-ruletype.md)
   
 ## <a name="remarks"></a>Comentarios
 
@@ -65,8 +65,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

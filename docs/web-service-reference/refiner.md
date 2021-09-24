@@ -1,23 +1,23 @@
 ---
-title: Refinador
+title: Refiner
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8395b45f-3b94-4473-82ac-2a12c4309170
-description: El elemento refiner especifica un refinador de búsqueda.
-ms.openlocfilehash: 5be73cfd0a5005f79651e9de76fd5aaf18ba0119
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Refiner especifica un refinador de búsqueda.
+ms.openlocfilehash: 4338a3aa1c7551663b657cd082b159c9e81935be
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456766"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512543"
 ---
-# <a name="refiner"></a>Refinador
+# <a name="refiner"></a>Refiner
 
-El elemento **refiner** especifica un refinador de búsqueda. 
+El **elemento Refiner** especifica un refinador de búsqueda. 
   
 ```XML
 <Refiner>
@@ -35,11 +35,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Name (cadena)](name-string.md)  |  [Valor](value.md)  |  de [Número](count.md)  |  de [Token (cadena)](token-string.md)
+[Nombre (cadena)](name-string.md)  |  [Valor](value.md)  |  [Recuento](count.md)  |  [Token (cadena)](token-string.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

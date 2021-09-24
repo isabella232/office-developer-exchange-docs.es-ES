@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 54e3ba52-08a6-4d48-8a44-6fd5fdbffb25
-description: El elemento RelativeFolderPath contiene una matriz de carpetas que indican la ruta de acceso de la carpeta relativa a la ruta de acceso a la carpeta que se va a crear.
-ms.openlocfilehash: 8a0fc0020943afdbe6cd4c79d51d61337f8dd329
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento RelativeFolderPath contiene una matriz de carpetas que indican la ruta de acceso relativa de la carpeta que se va a crear.
+ms.openlocfilehash: f9a1f193678e9dbd7686376c630ab2fbd0eaf1bd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457161"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513461"
 ---
 # <a name="relativefolderpath"></a>RelativeFolderPath
 
-El elemento **RelativeFolderPath** contiene una matriz de carpetas que indican la ruta de acceso de la carpeta relativa a la ruta de acceso a la carpeta que se va a crear. 
+El **elemento RelativeFolderPath** contiene una matriz de carpetas que indican la ruta de acceso relativa de la carpeta que se va a crear. 
   
 ```XML
 <RelativeFolderPath>
@@ -36,11 +36,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Carpeta](folder.md)  |  [Hubiera](calendarfolder.md)  |  [Hubiera](contactsfolder.md)  |  [SearchFolder](searchfolder.md)  |  [Hubiera](tasksfolder.md)
+[Carpeta](folder.md)  |  [CalendarFolder](calendarfolder.md)  |  [ContactsFolder](contactsfolder.md)  |  [SearchFolder](searchfolder.md)  |  [TasksFolder](tasksfolder.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -57,8 +57,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

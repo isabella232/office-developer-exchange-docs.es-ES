@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cee14262-7153-44da-bb42-b856e380c4d0
-description: El elemento PerformReminderAction especifica una solicitud para realizar una acción de recordatorio.
-ms.openlocfilehash: 915b15d3fd0663eb554eb1543845f670a2ae0772
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento PerformReminderAction especifica una solicitud para realizar una acción de aviso.
+ms.openlocfilehash: 800580fcfb60e03c88c67aed40593571d79e30b6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529003"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512922"
 ---
 # <a name="performreminderaction"></a>PerformReminderAction
 
-El elemento **PerformReminderAction** especifica una solicitud para realizar una acción de recordatorio. 
+El **elemento PerformReminderAction** especifica una solicitud para realizar una acción de aviso. 
   
 ```XML
 <PerformReminderAction>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -54,12 +54,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

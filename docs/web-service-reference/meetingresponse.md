@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MeetingResponse
 api_type:
 - schema
 ms.assetid: 9f798e79-dafd-4d4d-9967-95fd8e5c0502
 description: El elemento MeetingResponse representa una respuesta de reunión en Exchange almacén.
-ms.openlocfilehash: 5f1e8b4c220f2b93d339d50541c266a11cb5262b
-ms.sourcegitcommit: 357b882a02e37b380a23b8a45b15f9c006a40b02
+ms.openlocfilehash: 7fa4c8d618291e69a668fcc2f9ddcd72e9ca28bc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58764626"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532618"
 ---
 # <a name="meetingresponse"></a>MeetingResponse
 
@@ -99,12 +99,12 @@ Ninguno.
 |[ItemId](itemid.md) <br/> |Contiene el identificador único y la clave de cambio de un elemento en el Exchange almacén. Esta propiedad es de sólo lectura.  <br/> |
 |[ParentFolderId](parentfolderid.md) <br/> |Representa el identificador de la carpeta primaria que contiene el elemento o la carpeta. Esta propiedad es de sólo lectura.  <br/> |
 |[ItemClass](itemclass.md) <br/> |Representa la clase de mensaje de un elemento.  <br/> |
-|[Subject](subject.md) <br/> |Representa el asunto de los Exchange almacenar y los objetos de respuesta. El asunto está limitado a 255 caracteres.  <br/> |
+|[Asunto](subject.md) <br/> |Representa el asunto de los Exchange almacenar y los objetos de respuesta. El asunto está limitado a 255 caracteres.  <br/> |
 |[Sensitivity](sensitivity.md) <br/> |Indica el nivel de confidencialidad de un elemento.  <br/> |
-|[Body](body.md) <br/> |Representa el contenido real del cuerpo de un mensaje.  <br/> |
-|[Attachments](attachments-ex15websvcsotherref.md) <br/> |Contiene los elementos o archivos adjuntos a un elemento del Exchange almacén.  <br/> |
+|[Cuerpo](body.md) <br/> |Representa el contenido real del cuerpo de un mensaje.  <br/> |
+|[Adjuntos](attachments-ex15websvcsotherref.md) <br/> |Contiene los elementos o archivos adjuntos a un elemento del Exchange almacén.  <br/> |
 |[DateTimeReceived](datetimereceived.md) <br/> |Representa los datos y la hora en que se recibió un elemento de un buzón.  <br/> |
-|[Size](size.md) <br/> |Representa el tamaño en bytes de un elemento. Esta propiedad es de sólo lectura.  <br/> |
+|[Tamaño](size.md) <br/> |Representa el tamaño en bytes de un elemento. Esta propiedad es de sólo lectura.  <br/> |
 |[Categories](categories-ex15websvcsotherref.md) <br/> |Representa una colección de cadenas que identifican a qué categorías pertenece un elemento del buzón.  <br/> |
 |[Importance](importance.md) <br/> |Describe la importancia de un elemento.  <br/> |
 |[InReplyTo](inreplyto.md) <br/> |Representa el identificador del elemento al que este elemento es una respuesta.  <br/> |
@@ -180,7 +180,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual EWS 
 |Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

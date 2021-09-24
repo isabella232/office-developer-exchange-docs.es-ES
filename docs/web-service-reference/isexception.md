@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsException
 api_type:
 - schema
 ms.assetid: e7bd8ae2-2643-411e-ae08-358bac445800
-description: El elemento IsException indica si una instancia de un elemento de calendario periódico se cambia desde el patrón.
-ms.openlocfilehash: f2e45e0f1010449d4a494f5e15ecd0b22dc598e4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento IsException indica si se cambia una instancia de un elemento de calendario periódico desde el patrón.
+ms.openlocfilehash: 1c96808f061e9b7b807f2fb1cd16c487592d0f2b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457588"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520371"
 ---
 # <a name="isexception"></a>IsException
 
-El elemento **IsException** indica si una instancia de un elemento de calendario periódico se cambia desde el patrón. 
+El **elemento IsException** indica si se cambia una instancia de un elemento de calendario periódico desde el patrón. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -50,25 +50,25 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarEventDetails](calendareventdetails.md) <br/> |Proporciona información adicional acerca de un evento de calendario.  <br/> La siguiente es la expresión XPath 2,0 a este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
+|[CalendarEventDetails](calendareventdetails.md) <br/> |Proporciona información adicional sobre un evento de calendario.  <br/> A continuación se muestra la expresión XPath 2.0 para este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Es necesario un valor de texto si este elemento se devuelve en la respuesta. Este elemento es obligatorio si se usa el elemento [CalendarEventDetails](calendareventdetails.md) . 
+Se requiere un valor de texto si este elemento se devuelve en la respuesta. Este elemento es necesario si se usa el elemento [CalendarEventDetails.](calendareventdetails.md) 
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -76,10 +76,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

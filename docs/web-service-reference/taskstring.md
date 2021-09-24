@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4f2c8e66-698c-4313-98d0-24d7298489f6
 description: El elemento TaskString contiene una tarea sugerida.
-ms.openlocfilehash: a48a47917dd2ec47678b53f04f00c99887eec0b5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 74bb36ac96803bbc2db0173f61af85442b95e576
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530877"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538914"
 ---
 # <a name="taskstring"></a>TaskString
 
-El elemento **TaskString** contiene una tarea sugerida. 
+El **elemento TaskString** contiene una tarea sugerida. 
   
 ```XML
 <TaskString></TaskString>
@@ -31,11 +31,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -43,7 +43,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **TaskString** es la tarea sugerida como resultado de una entidad de tarea extraída de un elemento en el buzón de correo. 
+El valor de texto del **elemento TaskString** es la tarea sugerida resultante de una entidad de tarea extraída de un elemento del buzón. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4d32cb3b-eb84-4816-89cd-26dcf5131bc8
 description: El elemento GroupIds identifica una matriz de identificadores de grupo de mensajería instantánea.
-ms.openlocfilehash: 7583a197413063289739f0f32d9410047fc2f23d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 102486512e9827688e4a70b9e02e0f1a4f6c2e98
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530088"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519565"
 ---
 # <a name="groupids"></a>GroupIds
 
-El elemento **GroupIds** identifica una matriz de identificadores de grupo de mensajería instantánea. 
+El **elemento GroupIds** identifica una matriz de identificadores de grupo de mensajería instantánea. 
   
 ```XML
 <GroupIds>
@@ -35,11 +35,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Itemid](itemid.md)  |  [OccurrenceItemId](occurrenceitemid.md)  |  [RecurringMasterItemId](recurringmasteritemid.md)  |  [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
+[ItemId](itemid.md)  |  [OccurrenceItemId](occurrenceitemid.md)  |  [RecurringMasterItemId](recurringmasteritemid.md)  |  [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

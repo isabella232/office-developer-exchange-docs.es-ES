@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 15cdadfb-2636-44d6-84b7-d83ccad56fd7
 description: El elemento ToDate especifica la fecha en que se recibió el mensaje.
-ms.openlocfilehash: 1efff3d9484aa39562ad3d1e8ab01479999dda8a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 2c51fff71592a3094a085082104b993c34ce4f57
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468785"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520383"
 ---
 # <a name="todate"></a>ToDate
 
-El elemento **ToDate** especifica la fecha en que se recibió el mensaje. 
+El **elemento ToDate** especifica la fecha en que se recibió el mensaje. 
   
 ```XML
 <ToDate></ToDate>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ToDate** es la fecha en que se recibió el mensaje. 
+El valor de texto del **elemento ToDate** es la fecha en que se recibió el mensaje. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,9 +54,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 
 |||
 |:-----|:-----|
-|Espacio de nombres  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

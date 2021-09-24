@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - TotalMemberCount
 api_type:
 - schema
 ms.assetid: fa86bfa6-10aa-4736-938c-9a23525aef8d
-description: El elemento TotalMemberCount representa el número de todos los miembros de un grupo.
-ms.openlocfilehash: 3a489dff1e2352a16367238be7b20b204cbc547f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento TotalMemberCount representa el recuento de todos los miembros de un grupo.
+ms.openlocfilehash: 2f5bcf805d5bb20e4f04fb7530ddbdc5a76cbd4b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467518"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538768"
 ---
 # <a name="totalmembercount"></a>TotalMemberCount
 
-El elemento **TotalMemberCount** representa el número de todos los miembros de un grupo. 
+El **elemento TotalMemberCount** representa el recuento de todos los miembros de un grupo. 
   
 ```XML
 <TotalMemberCount/>
@@ -34,17 +34,17 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Sugerencias de correo electrónico](mailtips.md) <br/> |Representa los valores de distintos tipos de sugerencias de correo.  <br/> |
+|[Sugerencias de correo electrónico](mailtips.md) <br/> |Representa los valores de varios tipos de sugerencias de correo.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -60,12 +60,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

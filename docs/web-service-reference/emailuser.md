@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dc8133ff-c34e-4921-bb56-06e79aee0a8a
 description: El elemento EmailUser especifica un destinatario de correo electrónico.
-ms.openlocfilehash: c090106a536f4f40908d364cc3c9c43f6fe42beb
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: d3c1657938f8b4b21123b2f7cb67252e31f3d7b2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456538"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538212"
 ---
 # <a name="emailuser"></a>EmailUser
 
-El elemento **EmailUser** especifica un destinatario de correo electrónico. 
+El **elemento EmailUser** especifica un destinatario de correo electrónico. 
   
 ```XML
 <EmailUser>
@@ -33,7 +33,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -60,12 +60,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

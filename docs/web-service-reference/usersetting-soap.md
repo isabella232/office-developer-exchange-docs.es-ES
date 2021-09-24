@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: aac6dc31-edd2-49d7-b845-1df4d77da58c
-description: El elemento UserSetting (SOAP) representa una configuración de usuario individual.
-ms.openlocfilehash: 8b9bb41e460c0c9d15c9823acb509b0f837eef32
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento UserSetting (SOAP) representa una única configuración de usuario.
+ms.openlocfilehash: e59f997f925f7d9885fab27df618d474269eacac
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459773"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538495"
 ---
 # <a name="usersetting-soap"></a>UserSetting (SOAP)
 
-El elemento [UserSetting (SOAP)](usersetting-soap.md) representa una configuración de usuario individual. 
+El [elemento UserSetting (SOAP)](usersetting-soap.md) representa una única configuración de usuario. 
   
 ```XML
 <UserSetting>
@@ -33,13 +33,13 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Name (SOAP)](name-soap.md) <br/> |Representa el nombre de la configuración del usuario.  <br/> |
+|[Name (SOAP)](name-soap.md) <br/> |Representa el nombre de la configuración de usuario.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -49,7 +49,7 @@ Ninguna.
    
 ## <a name="text-value"></a>Valor de texto
 
-Ninguna.
+Ninguno.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -57,7 +57,7 @@ Ninguna.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
 

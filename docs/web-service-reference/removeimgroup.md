@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7121ba52-726f-48c1-9b32-8c8a4468d9f0
 description: El elemento RemoveImGroup representa una solicitud para quitar un grupo de mensajería instantánea.
-ms.openlocfilehash: 08b13d5474b2da52f8a56a2c2ee4434462a17dbd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 95e9324c97717e03363fea10f0a8924d2326e150
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460018"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513384"
 ---
 # <a name="removeimgroup"></a>RemoveImGroup
 
-El elemento **RemoveImGroup** representa una solicitud para quitar un grupo de mensajería instantánea. 
+El **elemento RemoveImGroup** representa una solicitud para quitar un grupo de mensajería instantánea. 
   
 ```XML
 <RemoveImGroup>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

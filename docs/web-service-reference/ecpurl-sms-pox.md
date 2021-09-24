@@ -1,32 +1,32 @@
 ---
-title: EcpUrl-SMS (POX)
+title: EcpUrl-sms (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f5e5e589-ee16-42a8-9cd4-ae3909fc869b
-description: El elemento EcpUrl-SMS especifica una dirección URL parcial que se puede combinar con el valor del elemento EcpUrl (POX) para generar una dirección URL que se puede usar para obtener acceso a la configuración del servicio de mensajes cortos (SMS) para un usuario habilitado para correo.
-ms.openlocfilehash: 24f475e7f2d54fa565cc90796a983c0bd842e4da
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento EcpUrl-sms especifica una dirección URL parcial que se puede combinar con el valor del elemento EcpUrl (POX) para generar una dirección URL que se puede usar para tener acceso a la configuración del servicio de mensajes cortos (SMS) para un usuario habilitado para correo.
+ms.openlocfilehash: b3926e1d8b4e15e72827e9cf0458bd64a02bd793
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458687"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538257"
 ---
-# <a name="ecpurl-sms-pox"></a>EcpUrl-SMS (POX)
+# <a name="ecpurl-sms-pox"></a>EcpUrl-sms (POX)
 
-El elemento **EcpUrl-SMS** especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para obtener acceso a la configuración del servicio de mensajes cortos (SMS) para un usuario habilitado para correo. 
+El **elemento EcpUrl-sms** especifica una dirección URL parcial que se puede combinar con el valor del elemento [EcpUrl (POX)](ecpurl-pox.md) para generar una dirección URL que se puede usar para tener acceso a la configuración del servicio de mensajes cortos (SMS) para un usuario habilitado para correo. 
   
-[Detección automática (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[Respuesta (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[Cuenta (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
-[Protocolo (POX)](protocol-pox.md)
+[Protocol (POX)](protocol-pox.md)
   
-[EcpUrl-SMS (POX)](ecpurl-sms-pox.md)
+[EcpUrl-sms (POX)](ecpurl-sms-pox.md)
   
 ```XML
 <EcpUrl-sms/>
@@ -38,17 +38,17 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor Acceso de cliente.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -56,9 +56,9 @@ El valor de texto representa una dirección URL parcial que se puede combinar co
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento **EcpUrl-SMS** es un elemento secundario opcional del elemento **Protocol** . 
+El **elemento EcpUrl-sms** es un elemento secundario opcional del **elemento Protocol.** 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

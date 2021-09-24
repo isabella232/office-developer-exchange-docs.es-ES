@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ade9ea3b-bdf1-4999-ac7d-44c6452cef36
-description: El elemento TaskSuggestion contiene una sugerencia de tarea que resulta de una entidad extraída de un elemento.
-ms.openlocfilehash: 49564c246596dabbf7fbacf2924eeb877698ea1a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento TaskSuggestion contiene una sugerencia de tarea resultante de una entidad extraída de un elemento.
+ms.openlocfilehash: a7d74523b57825b97c6c6d9c2194d84af3f38d5b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468127"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538880"
 ---
 # <a name="tasksuggestion"></a>TaskSuggestion
 
-El elemento **TaskSuggestion** contiene una sugerencia de tarea que resulta de una entidad extraída de un elemento. 
+El **elemento TaskSuggestion** contiene una sugerencia de tarea resultante de una entidad extraída de un elemento. 
   
 ```XML
 <TaskSuggestion>
@@ -35,11 +35,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Posición](position.md)  |  [TaskString](taskstring.md)  |  Usuarios [asignados](assignees.md)
+[Posición](position.md)  |  [TaskString](taskstring.md)  |  [Assignees](assignees.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

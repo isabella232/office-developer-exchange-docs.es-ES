@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6081777a-ae91-43d2-bf83-f3742030aa70
 description: El elemento ReminderTime especifica la hora para que se produzca el aviso.
-ms.openlocfilehash: e5a1194af43e038a608bf928313909519e7d44e7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 5fe4167d901f84c21273071ec14fbc48a7bee2ac
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460032"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513405"
 ---
 # <a name="remindertime"></a>ReminderTime
 
-El elemento **ReminderTime** especifica la hora para que se produzca el aviso. 
+El **elemento ReminderTime** especifica la hora para que se produzca el aviso. 
   
 ```XML
 <ReminderTime/>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ReminderTime** es la hora para que se produzca el aviso. 
+El valor de texto del **elemento ReminderTime** es la hora para que se produzca el aviso. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,15 +56,15 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
 [Aviso](reminder.md)
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

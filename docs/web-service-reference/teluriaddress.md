@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 468bfdd7-d5df-4bca-8f76-34bd5fb722bb
-description: El elemento TelUriAddress contiene el identificador uniforme de recursos (URI) de Tel de un contacto.
-ms.openlocfilehash: 967d21974ef789dec1d252e650c6391a07b6ac0e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento TelUriAddress contiene el identificador uniforme de recursos (URI) de tel para un contacto.
+ms.openlocfilehash: 2bdbf499491322f6654e0ae24f3a079334c8b4a0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468841"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59534204"
 ---
 # <a name="teluriaddress"></a>TelUriAddress
 
-El elemento **TelUriAddress** contiene el identificador uniforme de recursos (URI) de Tel de un contacto. 
+El **elemento TelUriAddress** contiene el identificador uniforme de recursos (URI) de tel para un contacto. 
   
 ```XML
 <TelUriAddress></TelUriAddress>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **TelUriAddress** es el URI de Tel de un contacto. 
+El valor de texto del **elemento TelUriAddress** es el URI de tel para un contacto. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

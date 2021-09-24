@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MonthlyRegeneration
 api_type:
 - schema
 ms.assetid: 9a52ca97-a663-41fe-b61a-61d8c53833ca
-description: El elemento MonthlyRegeneration describe la frecuencia, en meses, de la tarea que se regenera.
-ms.openlocfilehash: c941bc2606790646d2797df27c854996901c0bc6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento MonthlyRegeneration describe la frecuencia, en meses, de la que se regenera la tarea.
+ms.openlocfilehash: bd69c7fa03959e1fb6657ef8d94f61bcdf4e2b82
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462741"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520393"
 ---
 # <a name="monthlyregeneration"></a>MonthlyRegeneration
 
-El elemento **MonthlyRegeneration** describe la frecuencia, en meses, de la tarea que se regenera. 
+El **elemento MonthlyRegeneration** describe la frecuencia, en meses, de la que se regenera la tarea. 
   
 ```xml
 <MonthlyRegeneration>
@@ -36,7 +36,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -48,24 +48,24 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Periodicidad (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Contiene información de periodicidad para tareas periódicas.  <br/> |
+|[Recurrence (TaskRecurrenceType)](recurrence-taskrecurrencetype.md) <br/> |Contiene información de periodicidad para tareas periódicas.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

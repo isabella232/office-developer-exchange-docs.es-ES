@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: afcacecd-f081-4419-a6d5-e45070839f9a
 description: El elemento ProtocolConnections contiene cero o más conexiones de protocolo.
-ms.openlocfilehash: 6272bdf3aec8ba6572b07659416413c393954d93
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8f4fdc18c0c9b3e5b39424e6360641b51890c602
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457763"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532292"
 ---
 # <a name="protocolconnections-soap"></a>ProtocolConnections (SOAP)
 
-El elemento **ProtocolConnections** contiene cero o más conexiones de protocolo. 
+El **elemento ProtocolConnections** contiene cero o más conexiones de protocolo. 
   
 ```XML
 <ProtocolConnections>
@@ -33,7 +33,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -45,11 +45,11 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ProtocolConnectionCollectionSetting (SOAP)](protocolconnectioncollectionsetting-soap.md) <br/> |Representa una colección de opciones de configuración de conexión del Protocolo de servidor.  <br/> |
+|[ProtocolConnectionCollectionSetting (SOAP)](protocolconnectioncollectionsetting-soap.md) <br/> |Representa una colección de opciones de conexión de protocolo de servidor.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Ninguna.
+Ninguno.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -57,10 +57,10 @@ Ninguna.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

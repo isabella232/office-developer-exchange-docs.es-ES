@@ -1,30 +1,30 @@
 ---
-title: Crear grupos de contactos con EWS en Exchange
+title: Crear grupos de contactos mediante EWS en Exchange
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: acec6e73-c016-419d-be1a-8ec5d993addb
-description: Obtenga información sobre cómo crear un grupo de contactos con la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: 1da876bbda72f5bea08fd9855aa3f554135d54aa
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Obtenga información sobre cómo crear un grupo de contactos mediante la API administrada ews o EWS en Exchange.
+ms.openlocfilehash: ade7fa68b00b055268cd5f0c34a75e0abbdb18ee
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528142"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513223"
 ---
-# <a name="create-contact-groups-by-using-ews-in-exchange"></a>Crear grupos de contactos con EWS en Exchange
+# <a name="create-contact-groups-by-using-ews-in-exchange"></a>Crear grupos de contactos mediante EWS en Exchange
 
-Obtenga información sobre cómo crear un grupo de contactos con la API administrada de EWS o EWS en Exchange.
+Obtenga información sobre cómo crear un grupo de contactos mediante la API administrada ews o EWS en Exchange.
   
-Puede crear un grupo de contactos, que es un [grupo de distribución](distribution-groups-and-ews-in-exchange.md)privado, mediante la API administrada de EWS o EWS. Para crear grupos de contactos, use los métodos de la clase API administrada de EWS de [ContactGroup](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.contactgroup%28v=exchg.80%29.aspx) o use la operación de EWS del [CreateItem](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) . 
+Puede crear un grupo de contactos, que es un grupo de [distribución privado,](distribution-groups-and-ews-in-exchange.md)mediante la API administrada ews o EWS. Para crear grupos de contactos, use los métodos de la clase de API administrada EWS [contactGroup](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.contactgroup%28v=exchg.80%29.aspx) o use la [operación EWS CreateItem.](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) 
   
-Tenga en cuenta que no puede usar la API administrada de EWS o EWS para crear un grupo de distribución universal o un grupo de seguridad. Para crear un grupo de distribución universal o un grupo de seguridad, puede usar el cmdlet [New-DistributionGroup Shell de](https://technet.microsoft.com/library/aa998856%28v=exchg.150%29.aspx)[Administración de Exchange](https://msdn.microsoft.com/library/ff326159%28v=exchg.140%29.aspx). 
+Tenga en cuenta que no puede usar la API administrada ews o EWS para crear un grupo de distribución universal o un grupo de seguridad. Para crear un grupo de distribución universal o un grupo de seguridad, puede usar el cmdlet [New-DistributionGroup](https://technet.microsoft.com/library/aa998856%28v=exchg.150%29.aspx)[Exchange Shell de administración](https://msdn.microsoft.com/library/ff326159%28v=exchg.140%29.aspx). 
   
 ## <a name="create-a-contact-group-by-using-the-ews-managed-api"></a>Crear un grupo de contactos mediante la API administrada de EWS
 <a name="bk_EWSMA"> </a>
 
-Para crear un grupo de contactos, solo necesitará un par de datos: un nombre para el grupo y los miembros que se agregarán al grupo. En el ejemplo siguiente se muestra cómo crear un grupo de contactos sencillo que contiene un par de miembros del grupo.
+Para crear un grupo de contactos, solo necesita un par de elementos de información: un nombre para el grupo y los miembros que se agregarán al grupo. En el ejemplo siguiente se muestra cómo crear un grupo de contactos simple que contenga un par de miembros del grupo.
   
 ```cs
 // Create a new contact group object.
@@ -39,10 +39,10 @@ myContactGroup.Save();
 
 ```
 
-## <a name="create-a-contact-group-by-using-ews"></a>Crear un grupo de contactos con EWS
+## <a name="create-a-contact-group-by-using-ews"></a>Crear un grupo de contactos mediante EWS
 <a name="bk_EWSMA"> </a>
 
-Es posible que se necesiten varias líneas de código, pero se puede crear un grupo de contactos mediante la operación EWS del [CreateItem](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) . El siguiente ejemplo de solicitud XML muestra cómo se puede crear un grupo de contactos. Esta es también la solicitud XML que se envía cuando se [usa la API administrada de EWS para crear un grupo de contactos](#bk_EWSMA).
+Puede que se necesiten algunas líneas de código más, pero puede crear un grupo de contactos mediante la [operación EWS CreateItem.](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) En el siguiente ejemplo de solicitud XML se muestra cómo crear un grupo de contactos. Esta es también la solicitud XML que se envía cuando se usa la API administrada [ews para crear un grupo de contactos.](#bk_EWSMA)
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -74,7 +74,7 @@ MessageDisposition="SaveOnly">
    </CreateItem>
 ```
 
-El siguiente es un ejemplo de una respuesta XML correcta para la solicitud. Observe que los valores devueltos incluyen un identificador de elemento para el nuevo grupo de contactos y una clave de cambio que puede usar en otro código para modificar el grupo de contactos o expandir el grupo para ver los miembros. El identificador de elemento se acorta para facilitar la legibilidad.
+A continuación se muestra un ejemplo de una respuesta XML correcta a la solicitud. Tenga en cuenta que los valores devueltos incluyen un identificador de elemento para el nuevo grupo de contactos y una clave de cambio que puede usar en otro código para modificar el grupo de contactos o expandir el grupo para ver los miembros. El identificador del elemento se abrevia para que sea legible.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -97,7 +97,7 @@ El siguiente es un ejemplo de una respuesta XML correcta para la solicitud. Obse
    </CreateItemResponse>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 - [Grupos de distribución y EWS en Exchange](distribution-groups-and-ews-in-exchange.md)

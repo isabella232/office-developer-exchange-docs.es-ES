@@ -5,46 +5,46 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c228877b-5a0e-49b7-b82e-043bc786c80f
-description: El elemento AppMarketplaceUrl especifica la dirección URL del Marketplace de la aplicación.
-ms.openlocfilehash: 7e924edcf49d1716f4d9dc251c1294f595d27525
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento AppMarketplaceUrl especifica la dirección URL del marketplace de aplicaciones.
+ms.openlocfilehash: 7f77272b44c1a06a5d3f5f3a7d5919b20a860dab
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466041"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520069"
 ---
 # <a name="appmarketplaceurl"></a>AppMarketplaceUrl
 
-El elemento **AppMarketplaceUrl** especifica la dirección URL del Marketplace de la aplicación. 
+El **elemento AppMarketplaceUrl** especifica la dirección URL del marketplace de aplicaciones. 
   
 ```XML
 <AppMarketplaceUrl></AppMarketplaceUrl>
 ```
 
- **XS: String**
+ **xs:string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetAppMarketplaceUrlResponse](getappmarketplaceurlresponse.md) <br/> |Especifica el mensaje de respuesta para una solicitud de **GetAppMarketplaceUrl** .  <br/> |
+|[GetAppMarketplaceUrlResponse](getappmarketplaceurlresponse.md) <br/> |Especifica el mensaje de respuesta de una **solicitud GetAppMarketplaceUrl.**  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **AppMarketplaceUrl** es la dirección URL del Marketplace de la aplicación. 
+El valor de texto del **elemento AppMarketplaceUrl** es la dirección URL del mercado de aplicaciones. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -57,11 +57,11 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

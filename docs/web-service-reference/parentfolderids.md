@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ParentFolderIds
 api_type:
 - schema
 ms.assetid: e7998023-e5e0-465c-91fa-2aa6d1559f64
-description: El elemento ParentFolderIds identifica las carpetas para las operaciones FindItem y FindFolder que se van a buscar.
-ms.openlocfilehash: 6bc4b9cfe96c6c83cbeb623ec176e33177356bbc
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ParentFolderIds identifica las carpetas de las operaciones FindItem y FindFolder que se buscarán.
+ms.openlocfilehash: e9e0f14651b205ad64be04dbe1d0707a109f3edc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465432"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512920"
 ---
 # <a name="parentfolderids"></a>ParentFolderIds
 
-El elemento **ParentFolderIds** identifica las carpetas para las operaciones FindItem y FindFolder que se van a buscar. 
+El **elemento ParentFolderIds** identifica las carpetas de las operaciones FindItem y FindFolder que se buscarán. 
   
 ```xml
 <ParentFolderIds>
@@ -43,26 +43,26 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Contiene el identificador y la clave de cambio de una carpeta. El elemento **ParentFolderIds** debe usar este elemento o el elemento [DistinguishedFolderId](distinguishedfolderid.md) .  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifica las carpetas de Microsoft Exchange Server 2007 a las que se puede hacer referencia por su nombre. El elemento **ParentFolderIds** debe usar este elemento o el elemento [FolderId](folderid.md) .  <br/> |
+|[FolderId](folderid.md) <br/> |Contiene el identificador y la clave de cambio de una carpeta. El **elemento ParentFolderIds** debe usar este elemento o [el elemento DistinguishedFolderId.](distinguishedfolderid.md)  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifica Microsoft Exchange Server carpetas de 2007 a las que se puede hacer referencia por su nombre. El **elemento ParentFolderIds** debe usar este elemento o [el elemento FolderId.](folderid.md)  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FindFolder](findfolder.md) <br/> |Define una solicitud para identificar las carpetas en un buzón.  <br/> |
+|[FindFolder](findfolder.md) <br/> |Define una solicitud para identificar carpetas de un buzón.  <br/> |
 |[FindItem](finditem.md) <br/> |Define una solicitud para buscar elementos en un buzón.  <br/> |
 |[ResolveNames](resolvenames.md) <br/> |Define una solicitud para resolver nombres ambiguos.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El elemento **ParentFolderIds** debe usar el elemento [FolderId](folderid.md) o [DistinguishedFolderId](distinguishedfolderid.md) . Se puede definir un número ilimitado de carpetas para la búsqueda. 
+El **elemento ParentFolderIds** debe usar el [elemento FolderId](folderid.md) o [distinguishedFolderId.](distinguishedfolderid.md) Se puede definir un número ilimitado de carpetas para la búsqueda. 
   
 ## <a name="example"></a>Ejemplo
 
@@ -89,10 +89,10 @@ El elemento **ParentFolderIds** debe usar el elemento [FolderId](folderid.md) o 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Operación FindFolder](findfolder-operation.md)  
 - [Operación FindItem](finditem-operation.md) 

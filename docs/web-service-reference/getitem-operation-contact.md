@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetItem
 api_type:
 - schema
 ms.assetid: 6b96dace-1260-4b83-869a-7c31c5583daa
-description: La operación GetItem se usa para obtener los elementos de contacto del almacén de Exchange.
-ms.openlocfilehash: 93e8dbe28e130ab64d4b8d12d2befde1f77ae8fa
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación GetItem se usa para obtener elementos de contacto del Exchange almacén.
+ms.openlocfilehash: 1a055791f1b6dd5085ae914c1f7b2ae7e97d6090
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460025"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520538"
 ---
 # <a name="getitem-operation-contact"></a>Operación GetItem (contacto)
 
-La operación GetItem se usa para obtener los elementos de contacto del almacén de Exchange.
+La operación GetItem se usa para obtener elementos de contacto del Exchange almacén.
   
-## <a name="getitem-contact-request-example"></a>Ejemplo de solicitud GetItem (contacto)
+## <a name="getitem-contact-request-example"></a>Ejemplo de solicitud GetItem (Contact)
 
 ### <a name="description"></a>Description
 
-En el siguiente ejemplo, se muestra cómo obtener un elemento del almacén de Exchange.
+En el siguiente ejemplo se muestra cómo obtener un elemento de la Exchange almacén.
   
 ### <a name="code"></a>Código
 
@@ -51,14 +51,14 @@ En el siguiente ejemplo, se muestra cómo obtener un elemento del almacén de Ex
 
 ### <a name="comments"></a>Comentarios
 
-La solicitud para obtener un elemento del almacén de Exchange toma el mismo formulario para todos los tipos de elementos. Las respuestas a las solicitudes de los distintos elementos serán diferentes porque los distintos elementos devuelven información diferente en función de las formas de respuesta.
+La solicitud para obtener un elemento del almacén Exchange tiene el mismo formulario para todos los tipos de elementos. Las respuestas a las solicitudes de elementos diferentes serán diferentes porque los distintos elementos devuelven información diferente en función de las formas de respuesta.
   
 > [!NOTE]
-> El identificador de elemento se ha abreviado para preservar la legibilidad. 
+> El identificador del elemento se ha acortado para conservar la legibilidad. 
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [GetItem](getitem.md)
     
@@ -70,11 +70,11 @@ Los siguientes elementos se usan en la solicitud:
     
 - [ItemId](itemid.md)
     
-## <a name="successful-getitem-contact-response"></a>Respuesta GetItem (contacto) correcta
+## <a name="successful-getitem-contact-response"></a>Respuesta getitem (contacto) correcta
 
 ### <a name="description"></a>Description
 
-En el ejemplo de código siguiente se muestra una respuesta GetItem correcta para el **AllProperties**[BaseShape](baseshape.md).
+En el siguiente ejemplo de código se muestra una respuesta GetItem correcta para **la BaseShape AllProperties**[](baseshape.md).
   
 ### <a name="code"></a>Código
 
@@ -153,11 +153,11 @@ En el ejemplo de código siguiente se muestra una respuesta GetItem correcta par
 
 ### <a name="comments"></a>Comentarios
 
-El identificador de elemento se ha abreviado para preservar la legibilidad.
+El identificador del elemento se ha acortado para conservar la legibilidad.
   
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
-Los siguientes elementos se usan en la respuesta de una solicitud GetItem con una forma de respuesta de **AllProperties** para un elemento de contacto. 
+Los siguientes elementos se usan en la respuesta de una solicitud GetItem con una forma de respuesta **de AllProperties** para un elemento de contacto. 
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -171,7 +171,7 @@ Los siguientes elementos se usan en la respuesta de una solicitud GetItem con un
     
 - [Items](items.md)
     
-- [Contacto](contact.md)
+- [Contact](contact.md)
     
 - [ItemId](itemid.md)
     
@@ -181,7 +181,7 @@ Los siguientes elementos se usan en la respuesta de una solicitud GetItem con un
     
 - [Sensitivity](sensitivity.md)
     
-- [Body](body.md)
+- [Cuerpo](body.md)
     
 - [DateTimeReceived](datetimereceived.md)
     
@@ -229,33 +229,33 @@ Los siguientes elementos se usan en la respuesta de una solicitud GetItem con un
     
 - [EmailAddresses](emailaddresses.md)
     
-- [Entrada (EmailAddress)](entry-emailaddress.md)
+- [Entry (EmailAddress)](entry-emailaddress.md)
     
 - [PhysicalAddresses](physicaladdresses.md)
     
-- [Entrada (PhysicalAddress)](entry-physicaladdress.md)
+- [Entry (PhysicalAddress)](entry-physicaladdress.md)
     
-- [Drogas](street.md)
+- [Calle](street.md)
     
 - [Ciudad](city.md)
     
-- [State](state-ex15websvcsotherref.md)
+- [Estado](state-ex15websvcsotherref.md)
     
 - [CountryOrRegion](countryorregion.md)
     
 - [PhoneNumbers](phonenumbers.md)
     
-- [Entrada (PhoneNumber)](entry-phonenumber.md)
+- [Entry (PhoneNumber)](entry-phonenumber.md)
     
 - [JobTitle](jobtitle.md)
     
 - [Apellido](surname.md)
     
-## <a name="invalid-getitem-contact-request-example"></a>Ejemplo de solicitud de GetItem (contacto) no válido
+## <a name="invalid-getitem-contact-request-example"></a>Ejemplo de solicitud GetItem (Contact) no válida
 
 ### <a name="description"></a>Description
 
-En el ejemplo de código siguiente se muestra una solicitud no válida.
+En el siguiente ejemplo de código se muestra una solicitud no válida.
   
 ### <a name="code"></a>Código
 
@@ -280,13 +280,13 @@ En el ejemplo de código siguiente se muestra una solicitud no válida.
 
 ### <a name="comments"></a>Comentarios
 
-Los identificadores de elemento se han abreviado para preservar la legibilidad.
+Los identificadores de elementos se han acortado para conservar la legibilidad.
   
-## <a name="getitem-contact-error-response"></a>Respuesta de error de GetItem (contacto)
+## <a name="getitem-contact-error-response"></a>Respuesta de error getitem (contacto)
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de código muestra una respuesta de error a una solicitud GetItem (contacto).
+En el siguiente ejemplo de código se muestra una respuesta de error a una solicitud GetItem (Contact).
   
 ### <a name="code"></a>Código
 
@@ -318,7 +318,7 @@ El siguiente ejemplo de código muestra una respuesta de error a una solicitud G
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -336,12 +336,12 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - [Items](items.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
 [Operación GetItem](getitem-operation.md)
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

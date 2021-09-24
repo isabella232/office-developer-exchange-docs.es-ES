@@ -1,28 +1,28 @@
 ---
-title: SetOofStatusResponse (servicio Web de mensajería unificada)
+title: SetOofStatusResponse (servicio web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetOofStatusResponse
 api_type:
 - schema
 ms.assetid: 8985e353-8d5e-48f6-bf1e-9a5ceadd3ce4
-description: El elemento SetOofStatusResponse define una respuesta a una solicitud de SetOofStatus (servicio Web de mensajería unificada).
-ms.openlocfilehash: 2a1db932c2b801f81216f1af57272ca458ab29d3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento SetOofStatusResponse define una respuesta a una solicitud de operación SetOofStatus (servicio web de mensajería unificada).
+ms.openlocfilehash: 3c550cf2408787ab3b5dfd4581f0ec3710f7760d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466790"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539076"
 ---
-# <a name="setoofstatusresponse-um-web-service"></a>SetOofStatusResponse (servicio Web de mensajería unificada)
+# <a name="setoofstatusresponse-um-web-service"></a>SetOofStatusResponse (servicio web de mensajería unificada)
 
-El elemento **SetOofStatusResponse** define una respuesta a una solicitud de [SetOofStatus (servicio Web de mensajería unificada)](setoofstatus-operation-um-web-service.md) . 
+El **elemento SetOofStatusResponse** define una respuesta a una solicitud de [operación SetOofStatus (servicio web de](setoofstatus-operation-um-web-service.md) mensajería unificada). 
   
-[SetOofStatusResponse (servicio Web de mensajería unificada)](setoofstatusresponse-um-web-service.md)
+[SetOofStatusResponse (servicio web de mensajería unificada)](setoofstatusresponse-um-web-service.md)
   
 ```xml
 <SetOofStatusResponse />
@@ -35,7 +35,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -43,11 +43,11 @@ Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguna.
+Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguna.
+Ninguno.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -55,12 +55,12 @@ Ninguna.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-[Operación SetOofStatus (servicio Web de mensajería unificada)](setoofstatus-operation-um-web-service.md)
+[Operación SetOofStatus (servicio web de mensajería unificada)](setoofstatus-operation-um-web-service.md)
 

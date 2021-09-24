@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 81c157f0-16ae-4cd5-abf3-6aaf22ca8c70
-description: El elemento PersonaType especifica el tipo de rol, por ejemplo, una persona o una lista de distribución.
-ms.openlocfilehash: 9b62d2b8f1545e84a5b726fec0085dd7c9c898f5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento PersonaType especifica el tipo de persona, por ejemplo, una persona o una lista de distribución.
+ms.openlocfilehash: 8662da90bd0d0ab07bebf623fe4daa442a4d5b78
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457567"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59539132"
 ---
 # <a name="personatype"></a>PersonaType
 
-El elemento **PersonaType** especifica el tipo de rol, por ejemplo, una persona o una lista de distribución. 
+El **elemento PersonaType** especifica el tipo de persona, por ejemplo, una persona o una lista de distribución. 
   
 ```XML
 <PersonaType></PersonaType>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **PersonaType** es el tipo de rol. 
+El valor de texto del **elemento PersonaType** es el tipo de persona. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

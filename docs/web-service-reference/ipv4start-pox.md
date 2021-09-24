@@ -4,29 +4,29 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 3e3a47b8-22fa-4b07-a3ef-0b92ac69d36c
 description: El elemento IPv4Start identifica el inicio de un intervalo de direcciones IP versión 4 (IPv4) que se usan para identificar un equipo en una red.
-ms.openlocfilehash: 6bba98ce55e67aed7c301c87f98559688d41b5e5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: c6b45ed6cca5c20a0de955286f9f058eb25e7164
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466412"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512978"
 ---
 # <a name="ipv4start-pox"></a>IPv4Start (POX)
 
-El elemento **IPv4Start** identifica el inicio de un intervalo de direcciones IP versión 4 (IPv4) que se usan para identificar un equipo en una red. 
+El **elemento IPv4Start** identifica el inicio de un intervalo de direcciones IP versión 4 (IPv4) que se usan para identificar un equipo en una red. 
   
-[Detección automática (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[Respuesta (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[Cuenta (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
-[Protocolo (POX)](protocol-pox.md)
+[Protocol (POX)](protocol-pox.md)
   
 [NetworkRequirements (POX)](networkrequirements-pox.md)
   
@@ -42,23 +42,23 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[NetworkRequirements (POX)](networkrequirements-pox.md) <br/> |Contiene los criterios que se usan para determinar si el equipo cliente está en una red que cumple con los requisitos del proveedor de servicios de Internet (ISP) para conectarse al servidor.  <br/> |
+|[NetworkRequirements (POX)](networkrequirements-pox.md) <br/> |Contiene los criterios que se usan para determinar si el equipo cliente está en una red que cumple los requisitos del proveedor de servicios de Internet (ISP) para conectarse al servidor.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
 El valor de texto representa una dirección IPv4.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - EndTimeInMinutes
 api_type:
 - schema
 ms.assetid: ef05bdda-7a66-44db-bb73-a2ce8316c257
-description: El elemento EndTimeInMinutes representa el final del día laborable de un usuario de buzón de correo.
-ms.openlocfilehash: cb564f9de944848734749a30c813a94d6b5c4187
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento EndTimeInMinutes representa el final del día laborable para un usuario de buzón.
+ms.openlocfilehash: 32d386969dd1f918de5f88c570f2e3e3bc97c82f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459654"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520685"
 ---
 # <a name="endtimeinminutes"></a>EndTimeInMinutes
 
-El elemento **EndTimeInMinutes** representa el final del día laborable de un usuario de buzón de correo. 
+El **elemento EndTimeInMinutes** representa el final del día laborable para un usuario de buzón. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -50,27 +50,27 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[WorkingPeriod](workingperiod.md) <br/> |Contiene la semana laboral días y horas del usuario del buzón de correo.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/WorkingPeriodArray/WorkingPeriod[i]` <br/> |
+|[WorkingPeriod](workingperiod.md) <br/> |Contiene los días y horas de la semana laboral del usuario del buzón.  <br/> A continuación se muestra la expresión XPath de este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/WorkingPeriodArray/WorkingPeriod[i]` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto. El valor de texto representa el final del día laborable por el número de minutos que han transcurrido desde que comenzó el día. Por ejemplo, una hora de finalización de 6 P.M. se representa por 1080 minutos.
+Se requiere un valor de texto. El valor de texto representa el final del día laborable según el número de minutos transcurridos desde que comenzó el día. Por ejemplo, una hora de finalización de 6 p.m. se representa mediante 1080 minutos.
   
 El intervalo de valores posibles para este elemento es de 0 a 1440.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -78,10 +78,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

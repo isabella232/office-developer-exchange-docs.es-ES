@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ea5b3ce2-40db-41e8-a8cd-934e8f72e782
-description: El elemento GetPersona contiene la solicitud para obtener un rol.
-ms.openlocfilehash: 8e31e2688b9313d7db6c73e2d1f92e8d7cf4f246
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento GetPersona contiene la solicitud para obtener una persona.
+ms.openlocfilehash: 401a1a302a4894e5e7e6a908c2912d5322195e53
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455614"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533549"
 ---
 # <a name="getpersona"></a>GetPersona
 
-El elemento **GetPersona** contiene la solicitud para obtener un rol. 
+El **elemento GetPersona** contiene la solicitud para obtener una persona. 
   
 ```XML
 <GetPersona>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

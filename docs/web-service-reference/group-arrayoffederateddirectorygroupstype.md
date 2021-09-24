@@ -1,23 +1,23 @@
 ---
-title: Grupo (ArrayOfFederatedDirectoryGroupsType)
+title: Group (ArrayOfFederatedDirectoryGroupsType)
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0474a5b4-1a48-4df6-a094-baf35d9a1083
-description: El elemento Group (ArrayOfFederatedDirectoryGroupsType) está pensado solo para uso interno.
-ms.openlocfilehash: 7938b571f7cc48dd60b14429b8e21bad1eb26300
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Group (ArrayOfFederatedDirectoryGroupsType) está diseñado solo para uso interno.
+ms.openlocfilehash: 0e5d11b82fa14ab84043067a15da57a964723bfc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462832"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537929"
 ---
-# <a name="group-arrayoffederateddirectorygroupstype"></a>Grupo (ArrayOfFederatedDirectoryGroupsType)
+# <a name="group-arrayoffederateddirectorygroupstype"></a>Group (ArrayOfFederatedDirectoryGroupsType)
 
-El elemento **Group (ArrayOfFederatedDirectoryGroupsType)** está pensado solo para uso interno. 
+El **elemento Group (ArrayOfFederatedDirectoryGroupsType)** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,11 +25,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 

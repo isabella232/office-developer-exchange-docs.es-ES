@@ -4,27 +4,27 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: c54f310f-8c99-4c37-8e73-ac87722b6229
-description: El elemento RedirectUrl contiene la dirección URL del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes que se debe usar para obtener la configuración de detección automática.
-ms.openlocfilehash: 5400b1e7a4bb7ebebc58b6a0f1fc9bf37f5a2e22
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento RedirectUrl contiene la dirección URL del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente que debe usarse para obtener la configuración de detección automática.
+ms.openlocfilehash: d515f3f79f2370dc496614bab0a3f77300ad4e30
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468092"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513531"
 ---
 # <a name="redirecturl-pox"></a>RedirectUrl (POX)
 
-El elemento **RedirectURL** contiene la dirección URL del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes que se debe usar para obtener la configuración de detección automática. 
+El **elemento RedirectUrl** contiene la dirección URL del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente que debe usarse para obtener la configuración de detección automática. 
   
-[Detección automática (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[Respuesta (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[Cuenta (POX)](account-pox.md)
+[Account (POX)](account-pox.md)
   
 [RedirectUrl (POX)](redirecturl-pox.md)
   
@@ -38,17 +38,17 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Cuenta (POX)](account-pox.md) <br/> |Especifica la configuración de la cuenta del usuario.  <br/> |
+|[Account (POX)](account-pox.md) <br/> |Especifica la configuración de la cuenta para el usuario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -56,9 +56,9 @@ El valor de texto representa la dirección URL del servidor de acceso de cliente
   
 ## <a name="remarks"></a>Comentarios
 
-La aplicación cliente debe dejar de redirigir después de 10 redirecciones.
+La aplicación cliente debe dejar de redirigir después de 10 redireccionamientos.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

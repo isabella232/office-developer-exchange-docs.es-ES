@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cc8f8caa-fced-49b6-9861-d112590b218a
-description: El elemento TTL indica el valor de tiempo para Live para el token.
-ms.openlocfilehash: 0275e97ce02e41cc377f4003aee12c6fff0995e2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento TTL indica el tiempo de vida del valor del token.
+ms.openlocfilehash: 9f8fa983a4cbe1fd7f9f1862eeca1030a7446916
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467392"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538747"
 ---
 # <a name="ttl-clientaccesstokentypetype"></a>TTL (ClientAccessTokenTypeType)
 
-El elemento **TTL** indica el valor de tiempo para Live para el token. 
+El **elemento TTL** indica el tiempo de vida del valor del token. 
   
 ```XML
 <TTL></TTL>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **TTL** indica el tiempo que el token sigue siendo válido. 
+El valor de texto del **elemento TTL** indica cuánto tiempo permanece válido el token. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

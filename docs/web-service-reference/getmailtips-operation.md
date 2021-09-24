@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetMailTips
 api_type:
 - schema
 ms.assetid: 025483ec-a9f3-4735-8a95-d26e30ea7974
 description: La operación GetMailTips obtiene la información de sugerencias de correo para el buzón especificado.
-ms.openlocfilehash: 41a4bb99ee7ae4e416ec8a106968bb7869e60345
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: ec139f7a1a464aa8c30d8dd2043f441874231dc2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458659"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533797"
 ---
 # <a name="getmailtips-operation"></a>Operación GetMailTips
 
-La operación **GetMailTips** obtiene la información de sugerencias de correo para el buzón especificado. 
+La **operación GetMailTips** obtiene la información de sugerencias de correo para el buzón especificado. 
   
 ## <a name="getmailtips-request-example"></a>Ejemplo de solicitud GetMailTips
 
 ### <a name="description"></a>Description
 
-El cliente crea el XML de la solicitud y lo envía al servidor. La solicitud identifica quién envía el cliente como, el buzón para el que se recuperan las sugerencias de correo y qué sugerencias de correo se solicitan. En este ejemplo, el cliente solicita que se devuelvan todas las sugerencias de correo para el buzón seleccionado.
+El cliente construye el XML de solicitud y lo envía al servidor. La solicitud identifica a quién envía el cliente, el buzón para el que se van a recuperar las sugerencias de correo y qué sugerencias de correo se solicitan. En este ejemplo, el cliente solicita que se devuelvan todas las sugerencias de correo para el buzón seleccionado.
   
 ### <a name="code"></a>Código
 
@@ -58,13 +58,13 @@ El cliente crea el XML de la solicitud y lo envía al servidor. La solicitud ide
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se incluyen en la solicitud:
+En la solicitud se incluyen los siguientes elementos:
   
 - [GetMailTips](getmailtips.md)
     
-- [Envíoas](sendingas.md)
+- [SendingAs](sendingas.md)
     
 - [Recipients (ArrayOfRecipientsType)](recipients-arrayofrecipientstype.md)
     
@@ -74,7 +74,7 @@ Los siguientes elementos se incluyen en la solicitud:
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo del cuerpo del Protocolo simple de acceso a objetos (SOAP) muestra una respuesta correcta a la solicitud **GetMailTips** . 
+El siguiente ejemplo de cuerpo del Protocolo simple de acceso a objetos (SOAP) muestra una respuesta correcta a la **solicitud GetMailTips.** 
   
 ### <a name="code"></a>Código
 
@@ -130,11 +130,11 @@ En la respuesta se incluyen los siguientes elementos:
     
 - [Sugerencias de correo electrónico](mailtips.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-[Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
+[Operaciones ews en Exchange](ews-operations-in-exchange.md)
   
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

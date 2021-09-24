@@ -1,27 +1,27 @@
 ---
-title: Kilometraje
+title: Mileage
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Mileage
 api_type:
 - schema
 ms.assetid: 461ba447-1b04-4115-9919-dc378fd3bf24
-description: El elemento Mileage representa el kilometraje para un elemento de contacto o tarea.
-ms.openlocfilehash: 20cbed08d41599a433f3e2aa6e4a662018fbdc48
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Mileage representa el kilometraje de una tarea o elemento de contacto.
+ms.openlocfilehash: d16366eec875c1ea28241a942c35797280461d8d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465782"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512915"
 ---
-# <a name="mileage"></a>Kilometraje
+# <a name="mileage"></a>Mileage
 
-El elemento **Mileage** representa el kilometraje para un elemento de contacto o tarea. 
+El **elemento Mileage** representa el kilometraje de una tarea o elemento de contacto. 
   
 ```xml
 <Mileage/>
@@ -34,39 +34,39 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Contacto](contact.md) <br/> |Representa un elemento de contacto en el almacén de Exchange.  <br/> |
-|[Tarea](task.md) <br/> |Representa una tarea del almacén de Exchange.  <br/> |
+|[Contact](contact.md) <br/> |Representa un elemento de contacto en el Exchange almacén.  <br/> |
+|[Tarea](task.md) <br/> |Representa una tarea en el Exchange almacén.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Es necesario un valor de texto si se usa este elemento.
+Si se usa este elemento, se requiere un valor de texto.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

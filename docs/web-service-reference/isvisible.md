@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 403acdd5-3b79-46f4-9894-ba57e10085e4
-description: El elemento IsVisible indica si la Directiva de retención es visible para los usuarios.
-ms.openlocfilehash: 8cb8e99cef0f89d7ba6435690bd6d57b79a45bc8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento IsVisible indica si la directiva de retención es visible para los usuarios.
+ms.openlocfilehash: c041c4959661bdedfc34bfdee0f6bae73ee90426
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458148"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59537803"
 ---
 # <a name="isvisible"></a>IsVisible
 
-El elemento **IsVisible** indica si la Directiva de retención es visible para los usuarios. 
+El **elemento IsVisible** indica si la directiva de retención es visible para los usuarios. 
   
 ```XML
 <IsVisible> true | false</IsVisible>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **IsVisible** indica que la Directiva de retención es visible para un usuario. Un valor de **false** indica que la Directiva de retención no es visible para los usuarios. 
+Un valor de texto **de true** para el **elemento IsVisible** indica que la directiva de retención es visible para un usuario. Un valor de **false** indica que la directiva de retención no es visible para los usuarios. 
   
 ## <a name="remarks"></a>Comentarios
 

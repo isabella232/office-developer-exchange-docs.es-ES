@@ -5,45 +5,45 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetUserOofSettings
 api_type:
 - schema
 ms.assetid: 153e4440-495b-4972-9811-2fbea740142a
-description: La operación GetUserOofSettings obtiene los mensajes y la configuración de fuera de la oficina (OOF) del usuario de un buzón.
-ms.openlocfilehash: 622faa622b0ea231a6331ff62631885d4252c1f5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación GetUserOofSettings obtiene la configuración y los mensajes fuera de Office (OOF) de un usuario de buzón.
+ms.openlocfilehash: 9298681bff1cce5be37e8bee978ddeb0431bacdc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457700"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59533413"
 ---
 # <a name="getuseroofsettings-operation"></a>Operación GetUserOofSettings
 
-La operación **GetUserOofSettings** obtiene los mensajes y la configuración de fuera de la oficina (OOF) del usuario de un buzón. 
+La **operación GetUserOofSettings** obtiene la configuración y los mensajes fuera de Office (OOF) de un usuario de buzón. 
   
 ## <a name="soap-headers"></a>Encabezados SOAP
 
-La operación **GetUserOofSettings** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla. 
+La **operación GetUserOofSettings** puede usar los encabezados SOAP que se enumeran y se describen en la tabla siguiente. 
   
 |**Header**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente.  <br/> |
+|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario al que la aplicación cliente está suplantando.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud.  <br/> |
    
 ## <a name="using-the-getuseroofsettings-operation"></a>Uso de la operación GetUserOofSettings
 
-La operación **GetUserOofSettings** proporciona acceso a la configuración OOF de un usuario. Un usuario se identifica mediante la dirección de correo electrónico del usuario. Si el mensaje OOF es nulo y OOF está habilitado, no se enviará ningún mensaje OOF. 
+La **operación GetUserOofSettings** proporciona acceso a la configuración de OOF de un usuario. Un usuario se identifica mediante la dirección de correo electrónico del usuario. Si el mensaje OOF es null y OOF está habilitado, no se envía ningún mensaje OOF. 
   
 > [!IMPORTANT]
-> Si los mensajes OOF están establecidos por MicrosoftOfficeOutlook, esta operación devolverá los mensajes OOF en formato HTML. 
+> Si MicrosoftOfficeOutlook establece los mensajes OOF, esta operación devolverá los mensajes OOF en formato HTML. 
   
 ## <a name="getuseroofsettings-request-example"></a>Ejemplo de solicitud GetUserOofSettings
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una solicitud de **GetUserOofSettings** que obtiene la información de OOF de un solo usuario. 
+En el ejemplo siguiente se **muestra una solicitud GetUserOofSettings** que obtiene la información de OOF de un solo usuario. 
   
 ### <a name="code"></a>Código
 
@@ -62,21 +62,21 @@ En el ejemplo siguiente se muestra una solicitud de **GetUserOofSettings** que o
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [GetUserOofSettingsRequest](getuseroofsettingsrequest.md)
     
-- [Buzón de correo (disponibilidad)](mailbox-availability.md)
+- [Mailbox (Availability)](mailbox-availability.md)
     
 - [Address (cadena)](address-string.md)
     
-## <a name="successful-getuseroofsettings-response-example"></a>Ejemplo de respuesta GetUserOofSettings correcta
+## <a name="successful-getuseroofsettings-response-example"></a>Ejemplo de respuesta GetUserOofSettings correcto
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra un estado de OOF deshabilitado con los mensajes OOF.
+En el ejemplo siguiente se muestra un estado de OOF deshabilitado con los mensajes de OOF.
   
 ### <a name="code"></a>Código
 
@@ -132,7 +132,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [ExternalAudience](externalaudience.md)
     
-- [Duración (UserOofSettings)](duration-useroofsettings.md)
+- [Duration (UserOofSettings)](duration-useroofsettings.md)
     
 - [StartTime](starttime.md)
     
@@ -142,7 +142,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [ExternalReply](externalreply.md)
     
-- [Message](message-ex15websvcsotherref.md)
+- [Mensaje](message-ex15websvcsotherref.md)
     
 - [AllowExternalOof](allowexternaloof.md)
     
@@ -150,7 +150,7 @@ En la respuesta se usan los siguientes elementos:
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta de error causada por un intento de acceder a la información de OOF de otro usuario.
+En el ejemplo siguiente se muestra una respuesta de error causada por un intento de obtener acceso a la información de OOF de otro usuario.
   
 ### <a name="code"></a>Código
 
@@ -176,9 +176,9 @@ En el ejemplo siguiente se muestra una respuesta de error causada por un intento
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

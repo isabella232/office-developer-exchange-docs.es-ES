@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 052055b5-4630-40ed-9b24-9e7f4bf7ba1d
-description: El elemento EmailAddress (GetPersonaType) especifica la dirección de correo electrónico asociada con el rol.
-ms.openlocfilehash: b58f61202cd94ff282b21138b47b40887b38752a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento EmailAddress (GetPersonaType) especifica la dirección de correo electrónico asociada a la persona.
+ms.openlocfilehash: 7d024234c66c2b90bdd5d04f25d67db54770bdb5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463457"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520811"
 ---
 # <a name="emailaddress-getpersonatype"></a>EmailAddress (GetPersonaType)
 
-El elemento **EmailAddress (GetPersonaType)** especifica la dirección de correo electrónico asociada con el rol. 
+El **elemento EmailAddress (GetPersonaType)** especifica la dirección de correo electrónico asociada a la persona. 
   
 ```XML
 <EmailAddress>
@@ -37,11 +37,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Name (cadena)](name-string.md)  |  [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)  |  [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)  |  [MailboxType](mailboxtype.md)  |  [Itemid](itemid.md)  |  [OriginalDisplayName](originaldisplayname.md)
+[Nombre (cadena)](name-string.md)  |  [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)  |  [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)  |  [MailboxType](mailboxtype.md)  |  [ItemId](itemid.md)  |  [OriginalDisplayName](originaldisplayname.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -59,11 +59,11 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [GetPersona](getpersona.md)
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

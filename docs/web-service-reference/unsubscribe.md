@@ -1,27 +1,27 @@
 ---
-title: Cancelar suscripción
+title: Unsubscribe
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Unsubscribe
 api_type:
 - schema
 ms.assetid: 5584db5f-553a-47ce-85fb-f9902c9990ab
-description: El elemento unsubscribe contiene las propiedades que se usan para cancelar la suscripción de una suscripción.
-ms.openlocfilehash: d3d9c3bf9ad97cc0fdabf574c6505c797583838a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Unsubscribe contiene las propiedades usadas para cancelar la suscripción a una suscripción.
+ms.openlocfilehash: 9d3c7c7067138c75297d9576f3c14b4c3c921265
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467217"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538635"
 ---
-# <a name="unsubscribe"></a>Cancelar suscripción
+# <a name="unsubscribe"></a>Unsubscribe
 
-El elemento **unsubscribe** contiene las propiedades que se usan para cancelar la suscripción de una suscripción. 
+El **elemento Unsubscribe** contiene las propiedades usadas para cancelar la suscripción a una suscripción. 
   
 [Unsubscribe](unsubscribe.md)
   
@@ -38,7 +38,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -52,24 +52,24 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-[Operación subscribe](subscribe-operation.md)
+[Operación de suscripción](subscribe-operation.md)
   
 [Operación GetEvents](getevents-operation.md)
   
-[Operación unsubscribe](unsubscribe-operation.md)
+[Operación Darse de baja](unsubscribe-operation.md)
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetUserOofSettingsRequest
 api_type:
 - schema
 ms.assetid: 15dea99c-7f5d-4af1-82ff-4255127fe567
-description: El elemento GetUserOofSettingsRequest es el elemento raíz que contiene los argumentos usados para obtener la configuración de fuera de la oficina (OOF) del usuario de un buzón.
-ms.openlocfilehash: f515e8cf016d3aff6c652ae92a0da71a8f0a5f6b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento GetUserOofSettingsRequest es el elemento raíz que contiene los argumentos usados para obtener la configuración fuera de Office (OOF) de un usuario de buzón.
+ms.openlocfilehash: ea14636dbcf3042a0286ac64fa4fc701144e4920
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457833"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519684"
 ---
 # <a name="getuseroofsettingsrequest"></a>GetUserOofSettingsRequest
 
-El elemento **GetUserOofSettingsRequest** es el elemento raíz que contiene los argumentos usados para obtener la configuración de fuera de la oficina (OOF) del usuario de un buzón. 
+El **elemento GetUserOofSettingsRequest** es el elemento raíz que contiene los argumentos usados para obtener la configuración fuera de Office (OOF) de un usuario de buzón. 
   
 ```xml
 <GetUserOofSettingsRequest>
@@ -36,13 +36,13 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Buzón de correo (disponibilidad)](mailbox-availability.md) <br/> |Identifica al usuario del buzón de correo para una solicitud de SetUserOofSettings o GetUserOofSettings.  <br/> |
+|[Mailbox (Availability)](mailbox-availability.md) <br/> |Identifica al usuario del buzón para una solicitud SetUserOofSettings o GetUserOofSettings.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -50,11 +50,11 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="example"></a>Ejemplo
 
-El siguiente es un ejemplo de una solicitud de GetUserOofSettings que obtiene la información de OOF de un solo usuario.
+A continuación se muestra un ejemplo de una solicitud GetUserOofSettings que obtiene la información de OOF de un solo usuario.
   
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -77,10 +77,10 @@ El siguiente es un ejemplo de una solicitud de GetUserOofSettings que obtiene la
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

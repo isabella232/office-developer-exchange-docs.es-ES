@@ -1,23 +1,23 @@
 ---
-title: FieldUri (regla)
+title: FieldUri (Rule)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cecdea78-de9c-48be-ae31-03877feafeec
-description: El elemento FieldURI especifica el URI al campo de regla que causó el error de validación.
-ms.openlocfilehash: 3d88efdf951af580f81b5e2e7a544dcdf70ea830
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento FieldURI especifica el URI en el campo de regla que provocó el error de validación.
+ms.openlocfilehash: c1390f6643614216fa86053368ba012cd0883ff7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461250"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513734"
 ---
-# <a name="fielduri-rule"></a>FieldUri (regla)
+# <a name="fielduri-rule"></a>FieldUri (Rule)
 
-El elemento **FieldURI** especifica el URI al campo de regla que causó el error de validación. 
+El **elemento FieldURI** especifica el URI en el campo de regla que provocó el error de validación. 
   
 ```XML
 <FieldURI/>
@@ -30,193 +30,193 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Error](error.md) <br/> |Representa un error de validación único en un valor de propiedad de regla, un valor de propiedad de predicado o un valor de propiedad de acción específicos.  <br/> |
+|[Error](error.md) <br/> |Representa un único error de validación en un valor de propiedad de regla determinado, un valor de propiedad de predicado o un valor de propiedad action.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto de este elemento está restringido a una de las siguientes cadenas:
+El valor de texto de este elemento está restringido a una de las cadenas siguientes:
   
 - RuleId
     
 - DisplayName
     
-- Priority
+- Prioridad
     
 - IsNotSupported
     
 - Acciones
     
-- Condición: categorías
+- Condition:Categories
     
-- Condición: ContainsBodyStrings
+- Condition:ContainsBodyStrings
     
-- Condición: ContainsHeaderStrings
+- Condition:ContainsHeaderStrings
     
-- Condición: ContainsRecipientStrings
+- Condition:ContainsRecipientStrings
     
-- Condición: ContainsSenderStrings
+- Condition:ContainsSenderStrings
     
-- Condición: ContainsSubjectOrBodyStrings
+- Condition:ContainsSubjectOrBodyStrings
     
-- Condición: ContainsSubjectStrings
+- Condition:ContainsSubjectStrings
     
-- Condición: FlaggedForAction
+- Condition:FlaggedForAction
     
-- Condición: FromAddresses
+- Condition:FromAddresses
     
-- Condición: FromConnectedAccounts
+- Condition:FromConnectedAccounts
     
-- Condición: HasAttachments
+- Condition:HasAttachments
     
-- Condición: importancia
+- Condition:Importance
     
-- Condición: IsApprovalRequest
+- Condition:IsApprovalRequest
     
-- Condición: IsAutomaticForward
+- Condition:IsAutomaticForward
     
-- Condición: IsAutomaticReply
+- Condition:IsAutomaticReply
     
-- Condición: IsEncrypted
+- Condition:IsEncrypted
     
-- Condición: IsMeetingRequest
+- Condition:IsMeetingRequest
     
-- Condición: IsMeetingResponse
+- Condition:IsMeetingResponse
     
-- Condición: IsNDR
+- Condition:IsNDR
     
-- Condición: IsPermissionControlled
+- Condition:IsPermissionControlled
     
-- Condición: IsReadReceipt
+- Condition:IsReadReceipt
     
-- Condición: IsSigned
+- Condition:IsSigned
     
-- Condición: IsVoicemail
+- Condition:IsVoicemail
     
-- Condición: ItemClasses
+- Condition:ItemClasses
     
-- Condición: MessageClassifications
+- Condition:MessageClassifications
     
-- Condición: NotSentToMe
+- Condition:NotSentToMe
     
-- Condición: SentCcMe
+- Condition:SentCcMe
     
-- Condición: SentOnlyToMe
+- Condition:SentOnlyToMe
     
-- Condición: SentToAddresses
+- Condition:SentToAddresses
     
-- Condición: SentToMe
+- Condition:SentToMe
     
-- Condición: SentToOrCcMe
+- Condition:SentToOrCcMe
     
-- Condición: confidencialidad
+- Condition:Sensitivity
     
-- Condición: WithinDateRange
+- Condition:WithinDateRange
     
-- Condición: WithinSizeRange
+- Condition:WithinSizeRange
     
-- Excepción: categorías
+- Exception:Categories
     
-- Excepción: ContainsBodyStrings
+- Exception:ContainsBodyStrings
     
-- Excepción: ContainsHeaderStrings
+- Exception:ContainsHeaderStrings
     
-- Excepción: ContainsRecipientStrings
+- Exception:ContainsRecipientStrings
     
-- Excepción: ContainsSenderStrings
+- Exception:ContainsSenderStrings
     
-- Excepción: ContainsSubjectOrBodyStrings
+- Exception:ContainsSubjectOrBodyStrings
     
-- Excepción: ContainsSubjectStrings
+- Exception:ContainsSubjectStrings
     
-- Excepción: FlaggedForAction
+- Exception:FlaggedForAction
     
-- Excepción: FromAddresses
+- Exception:FromAddresses
     
-- Excepción: FromConnectedAccounts
+- Exception:FromConnectedAccounts
     
-- Excepción: HasAttachments
+- Exception:HasAttachments
     
-- Excepción: importancia
+- Exception:Importance
     
-- Excepción: IsApprovalRequest
+- Exception:IsApprovalRequest
     
-- Excepción: IsAutomaticForward
+- Exception:IsAutomaticForward
     
-- Excepción: IsAutomaticReply
+- Exception:IsAutomaticReply
     
-- Excepción: IsEncrypted
+- Exception:IsEncrypted
     
-- Excepción: IsMeetingRequest
+- Exception:IsMeetingRequest
     
-- Excepción: IsMeetingResponse
+- Exception:IsMeetingResponse
     
-- Excepción: IsNDR
+- Exception:IsNDR
     
-- Excepción: IsPermissionControlled
+- Exception:IsPermissionControlled
     
-- Excepción: IsReadReceipt
+- Exception:IsReadReceipt
     
-- Excepción: IsSigned
+- Exception:IsSigned
     
-- Excepción: IsVoicemail
+- Exception:IsVoicemail
     
-- Excepción: ItemClasses
+- Exception:ItemClasses
     
-- Excepción: MessageClassifications
+- Exception:MessageClassifications
     
-- Excepción: NotSentToMe
+- Exception:NotSentToMe
     
-- Excepción: SentCcMe
+- Exception:SentCcMe
     
-- Excepción: SentOnlyToMe
+- Exception:SentOnlyToMe
     
-- Excepción: SentToAddresses
+- Exception:SentToAddresses
     
-- Excepción: SentToMe
+- Exception:SentToMe
     
-- Excepción: SentToOrCcMe
+- Exception:SentToOrCcMe
     
-- Excepción: confidencialidad
+- Exception:Sensitivity
     
-- Excepción: WithinDateRange
+- Exception:WithinDateRange
     
-- Excepción: WithinSizeRange
+- Exception:WithinSizeRange
     
-- Acción: AssignCategories
+- Action:AssignCategories
     
-- Acción: CopyToFolder
+- Action:CopyToFolder
     
-- Acción: eliminar
+- Action:Delete
     
-- Acción: ForwardAsAttachmentToRecipients
+- Action:ForwardAsAttachmentToRecipients
     
-- Acción: ForwardToRecipients
+- Action:ForwardToRecipients
     
-- Acción: MarkImportance
+- Action:MarkImportance
     
-- Acción: MarkAsRead
+- Action:MarkAsRead
     
-- Acción: MoveToFolder
+- Action:MoveToFolder
     
-- Acción: PermanentDelete
+- Action:PermanentDelete
     
-- Acción: RedirectToRecipients
+- Action:RedirectToRecipients
     
-- Acción: SendSMSAlertToRecipients
+- Action:SendSMSAlertToRecipients
     
-- Acción: ServerReplyWithMessage
+- Action:ServerReplyWithMessage
     
-- Acción: StopProcessingRules
+- Action:StopProcessingRules
     
 - IsEnabled
     
@@ -236,12 +236,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

@@ -1,23 +1,23 @@
 ---
-title: Teléfonos
+title: RadioPhones
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ea650c84-0b3e-4099-bb76-9619949b4092
-description: El elemento radiophones especifica una matriz de números de teléfono de radio y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: d77980c40e3b87bab9a3d82ead079cc5dd651d33
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento RadioPhones especifica una matriz de números de teléfono de radio y los identificadores de sus atribuciones de origen para la persona asociada.
+ms.openlocfilehash: 1253016c12e2db0e41f9b2742cbf31bdeb5e0d31
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461635"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59512554"
 ---
-# <a name="radiophones"></a>Teléfonos
+# <a name="radiophones"></a>RadioPhones
 
-El elemento **Radiophones** especifica una matriz de números de teléfono de radio y los identificadores de sus atribuciones de origen para el rol asociado. 
+El **elemento RadioPhones** especifica una matriz de números de teléfono de radio y los identificadores de sus atribuciones de origen para la persona asociada. 
   
 ```XML
 <RadioPhones>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

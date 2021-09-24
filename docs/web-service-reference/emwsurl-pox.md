@@ -4,24 +4,24 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cad0fa91-8d75-4dde-a484-518c837ae063
-description: El elemento EmwsUrl especifica la dirección URL de la mejor instancia de punto de conexión para los servicios web Exchange (EWS) para un usuario habilitado para correo.
-ms.openlocfilehash: 19e1078ae8d08513e85d75d87e960a910986f727
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento EmwsUrl especifica la dirección URL de la mejor instancia de extremo para Exchange Web Services (EWS) para un usuario habilitado para correo.
+ms.openlocfilehash: d46438f600e226bce95c5e479aca91bfa942535e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530673"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59538178"
 ---
 # <a name="emwsurl-pox"></a>EmwsUrl (POX)
 
-El elemento **EmwsUrl** especifica la dirección URL de la mejor instancia de punto de conexión para los servicios web Exchange (EWS) para un usuario habilitado para correo. 
+El **elemento EmwsUrl** especifica la dirección URL de la mejor instancia de extremo para Exchange Web Services (EWS) para un usuario habilitado para correo. 
   
-- [Detección automática (POX)](autodiscover-pox.md) 
-- [Respuesta (POX)](response-pox.md) 
-- [Cuenta (POX)](account-pox.md) 
-- [Protocolo (POX)](protocol-pox.md) 
+- [AutoDiscover (POX)](autodiscover-pox.md) 
+- [Response (POX)](response-pox.md) 
+- [Account (POX)](account-pox.md) 
+- [Protocol (POX)](protocol-pox.md) 
 - [EmwsUrl (POX)](emwsurl-pox.md)
   
 ```XML
@@ -34,27 +34,27 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Protocolo (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.  <br/> |
+|[Protocol (POX)](protocol-pox.md) <br/> |Contiene las especificaciones para conectar un cliente al equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor Acceso de cliente.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa la dirección URL del extremo de EWS para el usuario. Es equivalente al elemento [EwsUrl (POX)](ewsurl-pox.md) . 
+El valor de texto representa la dirección URL del extremo EWS para el usuario. Es equivalente al elemento [EwsUrl (POX).](ewsurl-pox.md) 
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento **EmwsUrl** es un elemento secundario opcional del elemento **Protocol** . 
+El **elemento EmwsUrl** es un elemento secundario opcional del **elemento Protocol.** 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

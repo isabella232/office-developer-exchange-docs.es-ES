@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MergedFreeBusyIntervalInMinutes
 api_type:
 - schema
 ms.assetid: 481cdbc6-d5aa-49fa-a3fa-9d119d3dca99
 description: El elemento MergedFreeBusyIntervalInMinutes representa la diferencia de tiempo entre dos ranuras sucesivas en la vista FreeBusyMerged.
-ms.openlocfilehash: 6228ee5b66202634e6bb3b6c1ad6b8897a109d58
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 543a631ffe85e50e3efe84fb8109b190a276ed8f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468792"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532393"
 ---
 # <a name="mergedfreebusyintervalinminutes"></a>MergedFreeBusyIntervalInMinutes
 
-El elemento **MergedFreeBusyIntervalInMinutes** representa la diferencia de tiempo entre dos ranuras sucesivas en la vista **FreeBusyMerged** . 
+El **elemento MergedFreeBusyIntervalInMinutes** representa la diferencia de tiempo entre dos ranuras sucesivas en la **vista FreeBusyMerged.** 
   
 [GetUserAvailabilityRequest](getuseravailabilityrequest.md)
   
@@ -40,17 +40,17 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FreeBusyViewOptions](freebusyviewoptions.md) <br/> |Especifica el tipo de información de disponibilidad devuelta en la respuesta.  <br/> A continuación se encuentra la expresión XPath de este elemento:  <br/>  `/GetUserAvailabilityRequest/FreeBusyViewOptions` <br/> |
+|[FreeBusyViewOptions](freebusyviewoptions.md) <br/> |Especifica el tipo de información de disponibilidad devuelta en la respuesta.  <br/> A continuación se muestra XPath a este elemento:  <br/>  `/GetUserAvailabilityRequest/FreeBusyViewOptions` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -58,7 +58,7 @@ Se requiere un valor de texto. El valor de texto representa el tiempo en minutos
   
 ## <a name="remarks"></a>Comentarios
 
-Este valor solo se usa si el elemento [RequestedView](requestedview.md) es igual a **MergedOnly**, **FreeBusyMerged**o **DetailedMerge**. Se trata de un tipo de datos Integer. La secuencia que contiene los intervalos definidos por este elemento se devuelve en el elemento [MergedFreeBusy](mergedfreebusy.md) . 
+Este valor solo se usa si el [elemento RequestedView](requestedview.md) es igual a **MergedOnly**, **FreeBusyMerged** o **DetailedMerge**. Se trata de un tipo de datos entero. La secuencia que contiene los intervalos definidos por este elemento se devuelve en el [elemento MergedFreeBusy.](mergedfreebusy.md) 
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -66,10 +66,10 @@ Este valor solo se usa si el elemento [RequestedView](requestedview.md) es igual
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

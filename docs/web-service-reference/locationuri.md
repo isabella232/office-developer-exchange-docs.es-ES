@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0480b7f5-9312-4efe-bb37-9fffcd7e7a9d
 description: El elemento LocationUri contiene una cadena que especifica un identificador uniforme de recursos (URI) de la dirección postal asociada.
-ms.openlocfilehash: 1cf857e29b67fdacdb73fc5bd921973d7dbd481e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 443df5d79fb958ebb9576f7fe169602a3be39f0e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467098"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513552"
 ---
 # <a name="locationuri"></a>LocationUri
 
-El elemento **LocationUri** contiene una cadena que especifica un identificador uniforme de recursos (URI) de la dirección postal asociada. 
+El **elemento LocationUri** contiene una cadena que especifica un identificador uniforme de recursos (URI) de la dirección postal asociada. 
   
 ```XML
 <LocationUri></LocationUri>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **LocationUri** es una cadena que especifica un identificador URI a información sobre una dirección postal. 
+El valor de texto del **elemento LocationUri** es una cadena que especifica un URI para obtener información sobre una dirección postal. 
   
 ## <a name="remarks"></a>Comentarios
 

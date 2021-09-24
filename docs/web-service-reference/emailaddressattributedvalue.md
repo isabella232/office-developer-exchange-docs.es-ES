@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ebdf224d-3796-4179-aa0a-87942e7585ff
 description: El elemento EmailAddressAttributedValue especifica una instancia de una matriz de direcciones de correo electrónico y sus atribuciones asociadas.
-ms.openlocfilehash: 09fdd5921cef3d70a6da4b6d4d38f08834c5d482
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 2b5e9b431b6a62c63e815bfee190c923f454c867
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530694"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519768"
 ---
 # <a name="emailaddressattributedvalue"></a>EmailAddressAttributedValue
 
-El elemento **EmailAddressAttributedValue** especifica una instancia de una matriz de direcciones de correo electrónico y sus atribuciones asociadas. 
+El **elemento EmailAddressAttributedValue** especifica una instancia de una matriz de direcciones de correo electrónico y sus atribuciones asociadas. 
   
 ```XML
 <EmailAddressAttributedValue>
@@ -33,22 +33,22 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Valor (EmailAddressType)](value-emailaddresstype.md) <br/> |Especifica el valor de una **EmailAddress** asociada a una matriz de atribuciones.  <br/> |
-|[Atribuciones (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md) <br/> |Especifica una matriz de atribuciones para su elemento de **valor** asociado.  <br/> |
+|[Value (EmailAddressType)](value-emailaddresstype.md) <br/> |Especifica el valor de un **EmailAddress asociado** a una matriz de atribuciones.  <br/> |
+|[Attributions (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md) <br/> |Especifica una matriz de atribuciones para su elemento **Value** asociado.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Emails1](emails1.md) <br/> |Especifica una matriz de valores de correo electrónico y los identificadores de sus atribuciones de origen para el rol asociado.  <br/> |
-|[Emails2](emails2.md) <br/> |Especifica una matriz de valores de correo electrónico y los identificadores de sus atribuciones de origen para el rol asociado.  <br/> |
-|[Emails3](emails3.md) <br/> |Especifica una matriz de valores de correo electrónico y los identificadores de sus atribuciones de origen para el rol asociado.  <br/> |
+|[Emails1](emails1.md) <br/> |Especifica una matriz de valores de correo electrónico y los identificadores de sus atribuciones de origen para la persona asociada.  <br/> |
+|[Emails2](emails2.md) <br/> |Especifica una matriz de valores de correo electrónico y los identificadores de sus atribuciones de origen para la persona asociada.  <br/> |
+|[Emails3](emails3.md) <br/> |Especifica una matriz de valores de correo electrónico y los identificadores de sus atribuciones de origen para la persona asociada.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -62,12 +62,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

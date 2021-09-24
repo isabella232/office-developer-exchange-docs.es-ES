@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IndividualAttendeeConflictData
 api_type:
 - schema
 ms.assetid: d45d3c34-abe1-40da-afd3-23bc5c3ef474
-description: El elemento IndividualAttendeeConflictData contiene el estado de disponibilidad de un usuario o contacto para una ventana de tiempo que se produce al mismo tiempo que la hora de reunión sugerida identificada en el elemento de sugerencia.
-ms.openlocfilehash: 55210230259b78e5ed9c4f0744aae003cf2e7ae5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento IndividualAttendeeConflictData contiene el estado de disponibilidad de un usuario o contacto para una ventana de tiempo que se produce al mismo tiempo que la hora de reunión sugerida identificada en el elemento Suggestion.
+ms.openlocfilehash: e7308ca951e906edf4e4606c058f5e0e7a61fd5c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459317"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532992"
 ---
 # <a name="individualattendeeconflictdata"></a>IndividualAttendeeConflictData
 
-El elemento **IndividualAttendeeConflictData** contiene el estado de disponibilidad de un usuario o contacto para una ventana de tiempo que se produce al mismo tiempo que la hora de reunión sugerida identificada en el elemento de [sugerencia](suggestion.md) . 
+El **elemento IndividualAttendeeConflictData** contiene el estado de disponibilidad de un usuario o contacto para una ventana de tiempo que se produce al mismo tiempo que la hora de reunión sugerida identificada en el elemento [Suggestion.](suggestion.md) 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -33,7 +33,7 @@ El elemento **IndividualAttendeeConflictData** contiene el estado de disponibili
   
 [SuggestionArray](suggestionarray.md)
   
-[Alguna](suggestion.md)
+[Sugerencia](suggestion.md)
   
 [AttendeeConflictDataArray](attendeeconflictdataarray.md)
   
@@ -52,23 +52,23 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[BusyType](busytype.md) <br/> |Representa el estado de disponibilidad de un usuario para una hora de reunión sugerida.  <br/> |
+|[BusyType](busytype.md) <br/> |Representa el estado de disponibilidad de un usuario durante una hora de reunión sugerida.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[AttendeeConflictDataArray](attendeeconflictdataarray.md) <br/> |Contiene una matriz de datos conflictivos para los asistentes identificados en el [GetUserAvailabilityRequest](getuseravailabilityrequest.md).  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray` <br/> |
+|[AttendeeConflictDataArray](attendeeconflictdataarray.md) <br/> |Contiene una matriz de datos de conflicto para los asistentes identificados en [GetUserAvailabilityRequest](getuseravailabilityrequest.md).  <br/> A continuación se muestra la expresión XPath de este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]/SuggestionArray/Suggestion[i]/AttendeeConflictDataArray` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -76,10 +76,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

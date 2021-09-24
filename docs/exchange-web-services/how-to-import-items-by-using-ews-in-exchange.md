@@ -3,52 +3,52 @@ title: Importar elementos mediante EWS en Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dd3d3221-c98e-4fa0-81f0-77f733d2f432
-description: Obtenga información sobre cómo importar citas, mensajes de correo electrónico, contactos, tareas y otros elementos mediante la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: bc874c667c31beb4e59a305626247488cb1a1781
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Obtenga información sobre cómo importar citas, correos electrónicos, contactos, tareas y otros elementos mediante la API administrada ews o EWS en Exchange.
+ms.openlocfilehash: 1e111a03f43c7c6ea30ab0dedf5cc0bb5c6a41f8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527988"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59513167"
 ---
 # <a name="import-items-by-using-ews-in-exchange"></a>Importar elementos mediante EWS en Exchange
 
-Obtenga información sobre cómo importar citas, mensajes de correo electrónico, contactos, tareas y otros elementos mediante la API administrada de EWS o EWS en Exchange.
+Obtenga información sobre cómo importar citas, correos electrónicos, contactos, tareas y otros elementos mediante la API administrada ews o EWS en Exchange.
   
-Muchos sistemas contienen citas, mensajes de correo electrónico, contactos y tareas, y puede importar dichos elementos a Exchange de varias formas. La importación de elementos en Exchange es sencilla cuando no se mantienen relaciones con los buzones en estos elementos. Puede usar el método [Item. Save](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.item.save%28v=exchg.80%29.aspx) de la API administrada de EWS o la operación de EWS de [CreateItem](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) para crear los elementos en un buzón de Exchange. Sin embargo, el enfoque sencillo no es compatible con todos los escenarios; por ejemplo: 
+Muchos sistemas contienen citas, correos electrónicos, contactos y tareas, y puede importar esos elementos Exchange de varias maneras diferentes. Importar elementos a Exchange es sencillo cuando las relaciones de buzones no se mantienen en esos elementos. Puede usar el método de API administrada de EWS [Item.Save](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.item.save%28v=exchg.80%29.aspx) o la operación [EWS CreateItem](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) para crear los elementos en un buzón Exchange correo. Sin embargo, el enfoque simple no admite todos los escenarios; por ejemplo: 
   
-- No se puede mantener la relación entre los organizadores y los asistentes al importar citas con asistentes (reuniones). Esto significa que el organizador de la reunión tendrá que volver a enviar las invitaciones de reunión a los asistentes para restablecer la relación entre el organizador y los asistentes. Si la cita se importó en el calendario de un asistente, la cita no estará relacionada con la cita del organizador de la reunión. Los asistentes deberán aceptar la invitación a la reunión que se ha reenviado desde el organizador para restablecer la relación de organizador-asistente.
+- No puede mantener la relación entre organizadores y asistentes al importar citas con asistentes (reuniones). Esto significa que el organizador de la reunión tendrá que volver a enviar invitaciones a reuniones a los asistentes para restablecer la relación entre el organizador y los asistentes. Si la cita se importó en el calendario de un asistente, la cita no estará relacionada con la cita del organizador de la reunión. Los asistentes tendrán que aceptar la invitación de reunión resentida del organizador para restablecer la relación organizador-asistente.
     
-- La información sobre los usuarios a los que se asignan no se conserva cuando se importan las tareas asignadas.
+- La información sobre los usuarios asignados no se conserva cuando se importan las tareas asignadas.
     
-Todas las opciones de importación se pueden usar para importar elementos por lotes a Exchange.
+Todas las opciones de importación se pueden usar para importar elementos por lotes en Exchange.
   
-## <a name="use-ews-managed-api-or-ews-item-types-to-import-an-item"></a>Usar la API administrada de EWS o los tipos de elemento EWS para importar un elemento
+## <a name="use-ews-managed-api-or-ews-item-types-to-import-an-item"></a>Usar tipos de elementos EWS o API administrada ews para importar un elemento
 <a name="bk_importproperties"> </a>
 
-Puede usar la API administrada de EWS o EWS para importar correos electrónicos, contactos, citas o tareas desde otros sistemas. Solo tiene que establecer las [propiedades](properties-and-extended-properties-in-ews-in-exchange.md) del formato de origen en cualquiera de los objetos siguientes, en función de lo que esté importando. 
+Puede usar la API administrada ews o EWS para importar correos electrónicos, contactos, citas o tareas de otros sistemas. Solo tienes que [establecer las ](properties-and-extended-properties-in-ews-in-exchange.md) propiedades del formato de origen en cualquiera de los siguientes objetos, en función de lo que importes. 
   
-**Tabla 1. Objetos de la API administrada de EWS y elementos EWS**
+**Tabla 1. Objetos de API administrada EWS y elementos EWS**
 
-|**Objeto de API administrada de EWS**|**Elemento EWS**|
+|**Objeto de API administrada ews**|**Elemento EWS**|
 |:-----|:-----|
-|[EmailMessage](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) <br/> |[Message](https://msdn.microsoft.com/library/2400b33c-43b2-4fc2-b6fb-275a99e0e810%28Office.15%29.aspx) <br/> |
-|[Contacto](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contact%28v=exchg.80%29.aspx) <br/> |[Contacto](https://msdn.microsoft.com/library/66bfff50-7a91-4d81-b6a0-610b9962f677%28Office.15%29.aspx) <br/> |
+|[EmailMessage](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx) <br/> |[Mensaje](https://msdn.microsoft.com/library/2400b33c-43b2-4fc2-b6fb-275a99e0e810%28Office.15%29.aspx) <br/> |
+|[Contact](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.contact%28v=exchg.80%29.aspx) <br/> |[Contact](https://msdn.microsoft.com/library/66bfff50-7a91-4d81-b6a0-610b9962f677%28Office.15%29.aspx) <br/> |
 |[Appointment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) <br/> |[CalendarItem](https://msdn.microsoft.com/library/b0c1fd27-b6da-46e5-88b8-88f00c71ba80%28Office.15%29.aspx) <br/> |
 |[Tarea](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.task%28v=exchg.80%29.aspx) <br/> |[Tarea](https://msdn.microsoft.com/library/7c84927e-db28-4c5d-b0b5-cbcc2b88d869%28Office.15%29.aspx) <br/> |
    
-Use el método de la API administrada de EWS [Item. Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.save%28v=exchg.80%29.aspx) o la operación de EWS de [CreateItem](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) para realizar la importación de elementos. Se recomienda este método cuando se importan elementos de otros sistemas, ya que se tiene control sobre las propiedades que se van a importar. Para obtener más información sobre cómo establecer propiedades en elementos y, a continuación, guardar el elemento, vea [crear un elemento mediante la API administrada de EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_createewsma) o [crear un elemento mediante EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_createews).
+Use el método de LA API administrada de EWS [Item.Save](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.save%28v=exchg.80%29.aspx) o [la operación EWS CreateItem](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) para realizar la importación de elementos. Se recomienda este enfoque al importar elementos de otros sistemas porque tiene control sobre las propiedades que se importan. Para obtener más información acerca de cómo establecer propiedades en los elementos y, a continuación, guardar el elemento, vea Create [an item by using the EWS Managed API](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_createewsma) or Create an item by using [EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_createews).
   
-## <a name="import-items-with-full-fidelity"></a>Importación de elementos con total fidelidad
+## <a name="import-items-with-full-fidelity"></a>Importar elementos con total fidelidad
 <a name="bk_importproperties"> </a>
 
-Puede usar la operación de EWS de [UploadItems](https://msdn.microsoft.com/library/a88cbe99-7968-454d-a545-4f92c330909f%28Office.15%29.aspx) para cargar un elemento como una secuencia de datos. Esta representación de secuencia de datos de un elemento tiene que provenir de los resultados de una llamada a la operación [ExportItems](https://msdn.microsoft.com/library/e2846abb-0b16-4732-bbd8-038a674672f6%28Office.15%29.aspx) . Debido a que la API administrada de EWS no implementa la operación **UploadItems** , si usa la API administrada de EWS, tendrá que escribir una rutina para enviar las solicitudes Web. 
+Puede usar la operación [EWS UploadItems](https://msdn.microsoft.com/library/a88cbe99-7968-454d-a545-4f92c330909f%28Office.15%29.aspx) para cargar un elemento como secuencia de datos. Esta representación de secuencia de datos de un elemento tiene que venir de los resultados de una llamada de [operación ExportItems.](https://msdn.microsoft.com/library/e2846abb-0b16-4732-bbd8-038a674672f6%28Office.15%29.aspx) Dado que la API administrada ews no implementa la operación **UploadItems,** si usa la API administrada de EWS, deberá escribir una rutina para enviar las solicitudes web. 
   
-Esta es la forma más sencilla de importar elementos que se han exportado desde otro servidor de Exchange.
+Esta es la forma más sencilla de importar elementos que se han exportado desde otro Exchange servidor.
   
-En el siguiente ejemplo, los identificadores y el contenido del elemento de **datos** se acortan para facilitar su lectura. 
+En el siguiente ejemplo, los identificadores y el contenido del elemento **Data** se acortan para mejorar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -73,16 +73,16 @@ En el siguiente ejemplo, los identificadores y el contenido del elemento de **da
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud **UploadItems** con un elemento [UploadItemsResponse](https://msdn.microsoft.com/library/93044d39-4489-456a-8cce-b6d69873348f%28Office.15%29.aspx) que incluye un valor de elemento [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, lo que indica que el elemento se cargó correctamente. La respuesta también incluye el identificador de elemento del elemento cargado. 
+El servidor responde a la solicitud **UploadItems** con un elemento [UploadItemsResponse](https://msdn.microsoft.com/library/93044d39-4489-456a-8cce-b6d69873348f%28Office.15%29.aspx) que incluye un valor de elemento [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, lo que indica que el elemento se ha cargado correctamente. La respuesta también incluye el identificador de elemento del elemento cargado. 
   
-## <a name="use-the-mime-stream-to-import-from-common-file-formats"></a>Usar el flujo MIME para importar desde formatos de archivo comunes
+## <a name="use-the-mime-stream-to-import-from-common-file-formats"></a>Usar la secuencia MIME para importar desde formatos de archivo comunes
 <a name="bk_importproperties"> </a>
 
-EWS puede importar archivos EML (. eml) e iCal (. ICS). Querrá probar el contenido MIME para ver cómo el analizador MIME de Exchange controla el contenido de la secuencia MIME. Aunque el uso de la secuencia MIME es conveniente, suele ser mejor [usar la API administrada de EWS o los tipos de elemento EWS para importar un elemento](#bk_importproperties). A continuación, se muestra un ejemplo de cómo [importar una vCard](https://code.msdn.microsoft.com/How-to-Import-vCard-Files-ffa0ff50).
+EWS puede importar archivos EML (.eml) e iCal (.ics). You'll want to test your MIME content to see how the Exchange MIME parser handles the content of your MIME stream. Aunque el uso de la secuencia MIME es conveniente, normalmente es mejor usar tipos de elementos EWS o API administrada EWS para [importar un elemento.](#bk_importproperties) Este es un ejemplo de cómo [importar un vCard](https://code.msdn.microsoft.com/How-to-Import-vCard-Files-ffa0ff50).
   
-### <a name="use-the-ews-managed-api-to-import-an-email-from-an-eml-file-by-using-the-mime-stream"></a>Usar la API administrada de EWS para importar un correo electrónico de un archivo EML mediante el flujo MIME
+### <a name="use-the-ews-managed-api-to-import-an-email-from-an-eml-file-by-using-the-mime-stream"></a>Usar la API administrada ews para importar un correo electrónico desde un archivo EML mediante la secuencia MIME
 
-En el ejemplo siguiente se muestra cómo establecer la propiedad [MimeContent](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) con el contenido de un archivo eml y, a continuación, importar el correo electrónico a un buzón. En este ejemplo también se muestra cómo establecer la propiedad extendida [PidTagMessageFlags (0x0E07)](https://msdn.microsoft.com/library/office/cc839733%28v=office.15%29.aspx) en un correo electrónico importado para que no aparezca en el buzón como elemento de borrador. En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario puede autenticarse en un servidor Exchange. 
+En el ejemplo siguiente se muestra cómo establecer la [propiedad MimeContent](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.mimecontent%28v=exchg.80%29.aspx) con el contenido de un archivo EML y, a continuación, importar el correo electrónico a un buzón. En este ejemplo también se muestra cómo establecer la propiedad extendida [PidTagMessageFlags (0x0E07)](https://msdn.microsoft.com/library/office/cc839733%28v=office.15%29.aspx) en un correo electrónico importado para que no aparezca en el buzón como un elemento borrador. En este ejemplo se supone que **el servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario puede autenticarse en un Exchange servidor. 
   
 ```cs
 private static void UploadMIMEEmail(ExchangeService service)
@@ -116,11 +116,11 @@ private static void UploadMIMEEmail(ExchangeService service)
 }
 ```
 
-### <a name="use-the-ews-managed-api-to-import-an-appointment-from-an-ical-file-by-using-the-mime-stream"></a>Usar la API administrada de EWS para importar una cita de un archivo iCal mediante el flujo MIME
+### <a name="use-the-ews-managed-api-to-import-an-appointment-from-an-ical-file-by-using-the-mime-stream"></a>Usar la API administrada ews para importar una cita de un archivo iCal mediante la secuencia MIME
 
-Puede importar citas simples en forma de archivos de iCalendar mediante la secuencia MIME. No puede importar reuniones, que son citas con asistentes, porque la relación entre los organizadores de reuniones y los asistentes tiene que establecerse como parte del flujo de trabajo de [calendario de Exchange](calendars-and-ews-in-exchange.md) . No se pueden capturar los asistentes en la secuencia MIME. 
+Puede importar citas sencillas en forma de archivos iCalendar mediante la secuencia MIME. No se pueden importar reuniones, que son citas con asistentes, ya que la relación entre los organizadores de la reunión y los asistentes debe establecerse como parte del flujo de trabajo de calendario Exchange [de](calendars-and-ews-in-exchange.md) calendario. Los asistentes no se pueden capturar en la secuencia MIME. 
   
-El siguiente ejemplo de código muestra cómo importar un archivo. ICS sencillo en el buzón de un usuario.
+En el siguiente ejemplo de código se muestra cómo importar un archivo .ics simple en el buzón de un usuario.
   
 ```cs
 private static void UploadMIMEAppointment(ExchangeService service)
@@ -150,7 +150,7 @@ private static void UploadMIMEAppointment(ExchangeService service)
 
 ### <a name="use-ews-to-import-an-item-by-using-the-mime-stream"></a>Usar EWS para importar un elemento mediante la secuencia MIME
 
-Puede usar la operación EWS de [CreateItem](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) para importar los elementos eml y iCal mediante su secuencia MIME. 
+Puede usar la operación [EWS CreateItem](https://msdn.microsoft.com/library/78a52120-f1d0-4ed7-8748-436e554f75b6%28Office.15%29.aspx) para importar elementos EML e iCal mediante su secuencia MIME. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -178,20 +178,20 @@ Puede usar la operación EWS de [CreateItem](https://msdn.microsoft.com/library/
 </soap:Envelope>
 ```
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 <a name="bk_importproperties"> </a>
 
-Después de importar elementos en un buzón de correo, es posible que desee [crear una carpeta personalizada para almacenar los elementos importados](how-to-work-with-folders-by-using-ews-in-exchange.md)o [sincronizar los elementos de cliente y de buzón](mailbox-synchronization-and-ews-in-exchange.md).
+Después de importar elementos en un buzón, es posible que desee crear una carpeta personalizada para almacenar los elementos importados [o](how-to-work-with-folders-by-using-ews-in-exchange.md)sincronizar los elementos de cliente y buzón de [correo.](mailbox-synchronization-and-ews-in-exchange.md)
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
-- [Exportación e importación de elementos mediante EWS en Exchange](exporting-and-importing-items-by-using-ews-in-exchange.md)
+- [Exportar e importar elementos mediante EWS en Exchange](exporting-and-importing-items-by-using-ews-in-exchange.md)
     
 - [Exportar elementos mediante EWS en Exchange](how-to-export-items-by-using-ews-in-exchange.md)
     
 - [Carpetas y elementos de EWS en Exchange](folders-and-items-in-ews-in-exchange.md)
     
-- [Sincronización de buzones de correo y EWS en Exchange](mailbox-synchronization-and-ews-in-exchange.md)
+- [Sincronización del buzón y EWS en Exchange](mailbox-synchronization-and-ews-in-exchange.md)
     
 

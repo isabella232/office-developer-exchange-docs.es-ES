@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MeetingTimeZone
 api_type:
 - schema
 ms.assetid: 413b47d9-8126-462c-9a4f-4e771a5e8889
 description: El elemento MeetingTimeZone representa la zona horaria de la ubicación donde se hospeda la reunión.
-ms.openlocfilehash: aef4ac4e7571ded6920cbaf90e2895d421068f55
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 5920e05b09ff02fafe58f38e94e3671a8234fd21
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465474"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532451"
 ---
 # <a name="meetingtimezone"></a>MeetingTimeZone
 
-El elemento **MeetingTimeZone** representa la zona horaria de la ubicación donde se hospeda la reunión. 
+El **elemento MeetingTimeZone** representa la zona horaria de la ubicación donde se hospeda la reunión. 
   
 ```xml
 <MeetingTimeZone>
@@ -46,20 +46,20 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[BaseOffset](baseoffset.md) <br/> |Representa la desviación por horas respecto a la hora UTC de la zona horaria actual.  <br/> |
-|[Estándar](standard.md) <br/> |Representa la fecha y la hora en que cambia el horario de verano a la hora estándar.  <br/> |
-|[Horario](daylight.md) <br/> |Representa la fecha y hora en que la hora cambia de la hora estándar al horario de verano.  <br/> |
+|[BaseOffset](baseoffset.md) <br/> |Representa el desplazamiento por hora desde UTC para la zona horaria actual.  <br/> |
+|[Estándar](standard.md) <br/> |Representa la fecha y hora en que la hora cambia del horario de verano a la hora estándar.  <br/> |
+|[Daylight](daylight.md) <br/> |Representa la fecha y la hora en que la hora cambia de la hora estándar al horario de verano.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |Representa una convocatoria de reunión en el almacén de Exchange.  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Representa un Exchange de calendario.  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |Representa una solicitud de reunión en Exchange almacén.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -67,12 +67,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

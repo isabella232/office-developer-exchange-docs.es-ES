@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 409c7893-7b69-4b0b-9d5b-112a0dfacde7
 description: El elemento ErrorDescription describe el error que se devuelve en información sobre un elemento que no se puede indizar.
-ms.openlocfilehash: d12e8b3dfc377097f649ef6f863bc59c1a59df9a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 22910f02bf31a85606ed2f68c3fadefa681b7691
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460074"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520657"
 ---
 # <a name="errordescription"></a>ErrorDescription
 
-El elemento **ErrorDescription** describe el error que se devuelve en información sobre un elemento que no se puede indizar. 
+El **elemento ErrorDescription** describe el error que se devuelve en información sobre un elemento que no se puede indizar. 
   
 ```XML
 <ErrorDescription></ErrorDescription>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ErrorDescription** contiene una descripción de un error de nivel de elemento. 
+El valor de texto del **elemento ErrorDescription** contiene una descripción de un error de nivel de elemento. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

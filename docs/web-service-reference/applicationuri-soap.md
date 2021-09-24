@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 02a213ac-ceb3-456c-8347-f1dbddf64d4f
 description: El elemento ApplicationUri define la ubicación de una aplicación.
-ms.openlocfilehash: dd2c0242df416c4f69f9b8202d81fe0fab0da7e0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 262e3738dccca68e978d7f9b650644a55eb757e2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460354"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520111"
 ---
 # <a name="applicationuri-soap"></a>ApplicationUri (SOAP)
 
-El elemento **ApplicationUri** define la ubicación de una aplicación. 
+El **elemento ApplicationUri** define la ubicación de una aplicación. 
   
 ```XML
 <ApplicationUri/>
@@ -31,17 +31,17 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Response (GetFederationInformation) (SOAP)](response-getfederationinformationsoap.md) <br/> |Contiene la información de respuesta GetFederation.  <br/> |
+|[Response (GetFederationInformation) (SOAP)](response-getfederationinformationsoap.md) <br/> |Contiene la información de respuesta getfederation.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -53,10 +53,10 @@ El valor de texto representa el URI de la aplicación.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Mssages. xsd  <br/> |
+|Archivo de validación  <br/> |Mssages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Operación GetFederationInformation (SOAP)](getfederationinformation-operation-soap.md)
 

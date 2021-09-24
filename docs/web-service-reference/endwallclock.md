@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bc04e44e-e6d1-4355-a2b1-feb6663dc647
 description: El elemento EndWallClock especifica la hora de finalización de una reunión en la zona horaria de la ubicación en la que tiene lugar la reunión.
-ms.openlocfilehash: 48b762d0bfe367b966b6f1790230f6a2118c3fd6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: e54999046fd586a755340f5a4597b750aa9a5baa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462974"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520692"
 ---
 # <a name="endwallclock"></a>EndWallClock
 
-El elemento **EndWallClock** especifica la hora de finalización de una reunión en la zona horaria de la ubicación en la que tiene lugar la reunión. 
+El **elemento EndWallClock** especifica la hora de finalización de una reunión en la zona horaria de la ubicación en la que tiene lugar la reunión. 
   
 ```XML
 <EndWallClock></EndWallClock>
@@ -30,21 +30,21 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud **GetPersona** .  <br/> |
+|[Rol](persona.md) <br/> |Especifica un conjunto de datos de persona devueltos por una **solicitud GetPersona.**  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **EndWallClock** es un valor de cadena que especifica el identificador de la zona horaria. 
+El valor de texto del **elemento EndWallClock** es un valor de cadena que especifica el identificador de zona horaria. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -58,12 +58,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

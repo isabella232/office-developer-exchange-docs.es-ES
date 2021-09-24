@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b676d5be-07f8-4b0b-80bc-28a79a4a7cf4
-description: El elemento ErrorMessage contiene el mensaje de error que describe por qué un elemento no es Indizable.
-ms.openlocfilehash: f476793d647554f7e4be2d8d2dd415717674597c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ErrorMessage contiene el mensaje de error que describe por qué un elemento no se puede indizar.
+ms.openlocfilehash: dbad5f17b7e94bbafe3a819ef03dfec7281006c7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460067"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520650"
 ---
 # <a name="errormessage-nonindexableitemstatistictype"></a>ErrorMessage (NonIndexableItemStatisticType)
 
-El elemento **errorMessage** contiene el mensaje de error que describe por qué un elemento no es Indizable. 
+El **elemento ErrorMessage** contiene el mensaje de error que describe por qué un elemento no se puede indizar. 
   
 ```XML
 <ErrorMessage></ErrorMessage>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **errorMessage** es un mensaje de error que describe por qué un elemento no es Indizable. 
+El valor de texto del **elemento ErrorMessage** es un mensaje de error que describe por qué un elemento no se puede indizar. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
 

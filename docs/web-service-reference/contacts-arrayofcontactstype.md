@@ -1,23 +1,23 @@
 ---
-title: Contactos (ArrayOfContactsType)
+title: Contacts (ArrayOfContactsType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a2c1e833-5f8c-438d-bad7-bb5dcc29ca9e
 description: El elemento Contacts especifica una matriz de contactos.
-ms.openlocfilehash: eeb202f41fcf5ec7aad12a8a2b8e6dd539b3dba4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: dedae597acf86c70e215382140a9d2312a7fc615
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529444"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519936"
 ---
-# <a name="contacts-arrayofcontactstype"></a>Contactos (ArrayOfContactsType)
+# <a name="contacts-arrayofcontactstype"></a>Contacts (ArrayOfContactsType)
 
-El elemento **Contacts** especifica una matriz de contactos. 
+El **elemento Contacts** especifica una matriz de contactos. 
   
 ```XML
 <Contacts>
@@ -32,19 +32,19 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Contacto (ContactType)](contact-contacttype.md) <br/> |Especifica un contacto en el almacén de contactos unificados.  <br/> |
+|[Contact (ContactType)](contact-contacttype.md) <br/> |Especifica un contacto en el Almacén de contactos unificado.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[EntityExtractionResult](entityextractionresult.md) <br/> |Especifica la propiedad **EntityExtractionResult** de un elemento.  <br/> |
+|[EntityExtractionResult](entityextractionresult.md) <br/> |Especifica la **propiedad EntityExtractionResult** de un elemento.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -58,12 +58,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

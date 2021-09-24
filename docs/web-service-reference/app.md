@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 92b776b5-fec6-4443-a606-51ccb06f7afd
 description: El elemento App contiene información sobre un archivo de manifiesto XML para una aplicación de correo que está instalada en un buzón.
-ms.openlocfilehash: b5870164b059d2e50930ee33c09cbd030501f171
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 548df0f5547c4d7bf3ffacd32308be6824fadaf2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460361"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520125"
 ---
 # <a name="app"></a>Aplicación
 
-El elemento **App** contiene información sobre un archivo de manifiesto XML para una aplicación de correo que está instalada en un buzón. 
+El **elemento App** contiene información sobre un archivo de manifiesto XML para una aplicación de correo que está instalada en un buzón. 
   
 ```XML
 <App>
@@ -32,11 +32,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Los [metadatos](metadata-ex15websvcsotherref.md)  |  [Manifiesto](manifest.md)
+[Metadatos](metadata-ex15websvcsotherref.md)  |  [Manifiesto](manifest.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -57,10 +57,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |No aplicable  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Aplicaciones](apps.md)
 - [Metadatos](metadata-ex15websvcsotherref.md)
 - [Manifiesto](manifest.md)
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

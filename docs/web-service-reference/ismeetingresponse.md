@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsMeetingResponse
 api_type:
 - schema
 ms.assetid: 85090943-81c6-4fbe-a2db-007dced6a4cf
-description: El elemento IsMeetngResponsequest indica si los mensajes entrantes deben ser una respuesta a la reunión para que se aplique la condición o excepción.
-ms.openlocfilehash: 40714b7e926768f55207d870b79f21f07163bb37
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento IsMeetngResponsequest indica si los mensajes entrantes deben ser una respuesta de reunión para que se aplique la condición o excepción.
+ms.openlocfilehash: ff6008eef7ae5198738e68db62303b06a619e41d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465936"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59532754"
 ---
 # <a name="ismeetingresponse"></a>IsMeetingResponse
 
-El elemento **IsMeetngResponsequest** indica si los mensajes entrantes deben ser una respuesta a la reunión para que se aplique la condición o excepción. 
+El **elemento IsMeetngResponsequest** indica si los mensajes entrantes deben ser una respuesta de reunión para que se aplique la condición o excepción. 
   
 ```XML
 <IsMeetingResponse/>true | false</IsMeetingResponse>
@@ -34,11 +34,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -49,7 +49,7 @@ Ninguna.
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** indica que el mensaje debe ser una respuesta de reunión para que se aplique la condición o excepción. Un valor de texto de **false** indica que el mensaje no debe ser una respuesta de reunión para que se aplique la condición o excepción. 
+Un valor de texto **de true** indica que el mensaje debe ser una respuesta de reunión para que se aplique la condición o excepción. Un valor de texto **de false** indica que el mensaje no debe ser una respuesta de reunión para que se aplique la condición o excepción. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -61,12 +61,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

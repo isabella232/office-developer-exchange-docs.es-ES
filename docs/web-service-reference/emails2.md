@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6ad95936-f61b-431a-9d86-df160b5d4b2d
-description: El elemento Emails2 contiene una matriz de valores de EmailAddressAttributedValue y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: b9445dfdc556ade1ad96d6e56c35ec1e56627e8c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Emails2 contiene una matriz de valores EmailAddressAttributedValue y los identificadores de sus atribuciones de origen para la persona asociada.
+ms.openlocfilehash: 4f72dc160607bc2b92d25c9e62ea5a73d5f8fc6a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463415"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59520790"
 ---
 # <a name="emails2"></a>Emails2
 
-El elemento **Emails2** contiene una matriz de valores de **EmailAddressAttributedValue** y los identificadores de sus atribuciones de origen para el rol asociado. 
+El **elemento Emails2** contiene una matriz de **valores EmailAddressAttributedValue** y los identificadores de sus atribuciones de origen para la persona asociada. 
   
 ```XML
 <Emails2>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -44,7 +44,7 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud **GetPersona** .  <br/> |
+|[Rol](persona.md) <br/> |Especifica un conjunto de datos de persona devueltos por una **solicitud GetPersona.**  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -58,12 +58,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

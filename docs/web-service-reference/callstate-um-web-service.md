@@ -1,30 +1,30 @@
 ---
-title: CallState (servicio Web de mensajería unificada)
+title: CallState (servicio web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CallState
 api_type:
 - schema
 ms.assetid: 88670707-12f7-41c5-ac81-dda0c354a2cb
 description: El elemento CallState contiene un valor que indica el estado de una llamada.
-ms.openlocfilehash: 44614c460286ff49ebc2373263c1827c6be5cc08
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 9435124e98cfb75beab5917c1e832096ca193e0c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44454613"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59519971"
 ---
-# <a name="callstate-um-web-service"></a>CallState (servicio Web de mensajería unificada)
+# <a name="callstate-um-web-service"></a>CallState (servicio web de mensajería unificada)
 
-El elemento **CallState** contiene un valor que indica el estado de una llamada. 
+El **elemento CallState** contiene un valor que indica el estado de una llamada. 
   
-[GetCallInfoResponse (servicio Web de mensajería unificada)](getcallinforesponse-um-web-service.md)
+[GetCallInfoResponse (servicio web de mensajería unificada)](getcallinforesponse-um-web-service.md)
   
-[CallState (servicio Web de mensajería unificada)](callstate-um-web-service.md)
+[CallState (servicio web de mensajería unificada)](callstate-um-web-service.md)
   
 ```xml
 <CallState/>
@@ -37,33 +37,33 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GetCallInfoResponse (servicio Web de mensajería unificada)](getcallinforesponse-um-web-service.md) <br/> |Define una respuesta a una [operación de GetCallInfo (servicio Web de mensajería unificada)](getcallinfo-operation-um-web-service.md).  <br/> |
+|[GetCallInfoResponse (servicio web de mensajería unificada)](getcallinforesponse-um-web-service.md) <br/> |Define una respuesta a una [operación GetCallInfo (servicio web de mensajería unificada).](getcallinfo-operation-um-web-service.md)  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
 Se requiere un valor de texto. Los valores posibles son los siguientes:
   
-- Usado
+- Inactivo
     
 - Conectando
     
-- Alertas
+- Alertado
     
-- Conectado
+- Conectados
     
 - Desconectado
     
-- Entra
+- Entrante
     
 - Transferencia
     
@@ -75,14 +75,14 @@ Se requiere un valor de texto. Los valores posibles son los siguientes:
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/message  <br/> |
 |Nombre de esquema  <br/> |Mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-[Operación GetCallInfo (servicio Web de mensajería unificada)](getcallinfo-operation-um-web-service.md)
+[Operación GetCallInfo (servicio web de mensajería unificada)](getcallinfo-operation-um-web-service.md)
   
-[GetCallInfoResponse (servicio Web de mensajería unificada)](getcallinforesponse-um-web-service.md)
+[GetCallInfoResponse (servicio web de mensajería unificada)](getcallinforesponse-um-web-service.md)
 
