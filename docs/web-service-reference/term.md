@@ -1,23 +1,23 @@
 ---
-title: Term
+title: Término
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1a796535-7e83-4aa8-850a-d217059050f8
-description: El elemento term especifica un término resaltado en una respuesta FindConversation o FindItem.
-ms.openlocfilehash: fb102e21d6e7866110735cacd60cd2c3c68a9675
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Term especifica un término resaltado en una respuesta FindConversation o FindItem.
+ms.openlocfilehash: 12aba499ebfcad392a4e72b29a8cb3522a4f964f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459493"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522541"
 ---
-# <a name="term"></a>Term
+# <a name="term"></a>Término
 
-El elemento **term** especifica un término resaltado en una respuesta **FindConversation** o **FindItem** . 
+El **elemento Term** especifica un término resaltado en una respuesta **FindConversation** o **FindItem.** 
   
 ```XML
 <Term>
@@ -33,11 +33,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Ámbito (HighlightTermType)](scope-highlighttermtype.md)  |  [Valor](value.md) de
+[Ámbito (HighlightTermType)](scope-highlighttermtype.md)  |  [Valor](value.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,8 +54,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

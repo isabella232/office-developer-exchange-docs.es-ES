@@ -5,32 +5,32 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetRoomLists
 api_type:
 - schema
 ms.assetid: 55d451f9-547f-44ac-872e-9cb220ea7b7c
-description: La operación GetRoomLists obtiene las listas de salas disponibles dentro de la organización de Exchange.
-ms.openlocfilehash: d1393a6a5e99b7e0a7e354d2b7dd035d04356ec2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación GetRoomLists obtiene las listas de salas que están disponibles en la Exchange organización.
+ms.openlocfilehash: 017936dd7d36ffc4c69183380f95e14f7a529913
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458281"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521945"
 ---
 # <a name="getroomlists-operation"></a>Operación GetRoomLists
 
-La operación **GetRoomLists** obtiene las listas de salas disponibles dentro de la organización de Exchange. 
+La **operación GetRoomLists** obtiene las listas de salas que están disponibles en la Exchange organización. 
   
 ## <a name="soap-headers"></a>Encabezados SOAP
 
-La operación **GetRoomLists** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla. 
+La **operación GetRoomLists** puede usar los encabezados SOAP que se enumeran y se describen en la tabla siguiente. 
   
 |**Header**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente.  <br/> |
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural RFC3066 que se va a usar para obtener acceso al buzón.  <br/> |
+|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario al que la aplicación cliente está suplantando.  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural RFC3066 que se usará para tener acceso al buzón.  <br/> |
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud.  <br/> |
    
@@ -38,7 +38,7 @@ La operación **GetRoomLists** puede usar los encabezados SOAP que se enumeran y
 
 ### <a name="description"></a>Description
 
-El siguiente es un ejemplo de una solicitud de **GetRoomLists** que devuelve las listas de salas que están disponibles en el servidor. 
+A continuación se muestra un ejemplo de una **solicitud GetRoomLists** que devuelve las listas de salas que están disponibles en el servidor. 
   
 ### <a name="code"></a>Código
 
@@ -58,17 +58,17 @@ El siguiente es un ejemplo de una solicitud de **GetRoomLists** que devuelve las
 
 ```
 
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-El siguiente elemento se usa en la solicitud:
+En la solicitud se usa el siguiente elemento:
   
 - [GetRoomLists](getroomlists.md)
     
-## <a name="successful-getroomlists-response-example"></a>Ejemplo de respuesta GetRoomLists correcta
+## <a name="successful-getroomlists-response-example"></a>Ejemplo de respuesta GetRoomLists correcto
 
 ### <a name="description"></a>Description
 
-El siguiente es un ejemplo de respuesta a una solicitud de **GetRoomLists** . Esta respuesta muestra una lista de salas en el servidor. 
+A continuación se muestra un ejemplo de una respuesta a una **solicitud GetRoomLists.** Esta respuesta muestra una lista de sala en el servidor. 
   
 ### <a name="code"></a>Código
 
@@ -117,7 +117,7 @@ En la respuesta se usan los siguientes elementos:
 
 #### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra la respuesta a un intento de obtener listas de salas de un servidor que no tiene definida ninguna lista de salas.
+En el ejemplo siguiente se muestra la respuesta a un intento de obtener listas de sala de un servidor que no tiene definida ninguna lista de sala.
   
 #### <a name="code"></a>Código
 
@@ -137,9 +137,9 @@ En el ejemplo siguiente se muestra la respuesta a un intento de obtener listas d
 
 ```
 
-#### <a name="getroomlists-error-response-elements"></a>Elementos de respuesta de error de GetRoomLists
+#### <a name="getroomlists-error-response-elements"></a>Elementos de respuesta de error GetRoomLists
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -149,11 +149,11 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - [RoomLists](roomlists.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-[Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
+[Operaciones ews en Exchange](ews-operations-in-exchange.md)
   
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

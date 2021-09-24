@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 35d2e592-38c1-4861-8293-f7fba3328f4e
-description: El elemento RemoveDistributionGroupFromImList representa una solicitud para quitar un grupo específico de lista de distribución de mensajería instantánea.
-ms.openlocfilehash: 0dff549c62c305a86464eaeac165d5f5bc01c9f5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento RemoveDistributionGroupFromImList representa una solicitud para quitar un grupo de lista de distribución de mensajería instantánea específico.
+ms.openlocfilehash: c52be9a0da5f9442c2da0f81cf24a28736524efa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459598"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517969"
 ---
 # <a name="removedistributiongroupfromimlist"></a>RemoveDistributionGroupFromImList
 
-El elemento **RemoveDistributionGroupFromImList** representa una solicitud para quitar un grupo específico de lista de distribución de mensajería instantánea. 
+El **elemento RemoveDistributionGroupFromImList** representa una solicitud para quitar un grupo de lista de distribución de mensajería instantánea específico. 
   
 ```XML
 <RemoveDistributionGroupFromImList>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 93c72a15-2e1d-473c-a6f7-c1c8c7f78758
-description: El elemento JoinDate está destinado sólo para uso interno.
-ms.openlocfilehash: 427764929525b68bde139c838bc1f369b9d25689
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento JoinDate está diseñado solo para uso interno.
+ms.openlocfilehash: 8ab6320f2be0069cfdc5661299ae217eb6959334
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466426"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524115"
 ---
 # <a name="joindate"></a>JoinDate
 
-El elemento **JoinDate** está destinado sólo para uso interno. 
+El **elemento JoinDate** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,11 +25,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8ed4a48a-d510-4cbe-a172-145c33ffb297
-description: El elemento RetentionPolicyTags contiene una lista de etiquetas de retención devueltas en la respuesta de la operación WSDL de GetUserRetentionPolicyTags.
-ms.openlocfilehash: c3a5a165db242092132b4ff0b322dbad2029da36
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento RetentionPolicyTags contiene una lista de etiquetas de retención devueltas en la respuesta de la operación WSDL GetUserRetentionPolicyTags.
+ms.openlocfilehash: 9bd41a0826aff38e8fc2420553d4c7527c5a8e33
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462881"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524535"
 ---
 # <a name="retentionpolicytags"></a>RetentionPolicyTags
 
-El elemento **RetentionPolicyTags** contiene una lista de etiquetas de retención devueltas en la respuesta de la operación WSDL de **GetUserRetentionPolicyTags** . 
+El **elemento RetentionPolicyTags** contiene una lista de etiquetas de retención devueltas en la respuesta de la operación WSDL **GetUserRetentionPolicyTags.** 
   
 ```XML
 <RetentionPolicyTags>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

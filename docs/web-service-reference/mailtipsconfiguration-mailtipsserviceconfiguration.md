@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MailTipsConfiguration
 api_type:
 - schema
 ms.assetid: 9a34515e-815b-4c61-b118-d5f66b80238f
-description: El elemento MailTipsConfiguration contiene información de configuración del servicio para el servicio de sugerencias de correo.
-ms.openlocfilehash: 9128ee99545066899c3b27b624f10a9f1bd36c9d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento MailTipsConfiguration contiene información de configuración del servicio de sugerencias de correo.
+ms.openlocfilehash: eb86291572f6854710d01badcee2db24406844c6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467791"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524038"
 ---
 # <a name="mailtipsconfiguration-mailtipsserviceconfiguration"></a>MailTipsConfiguration (MailTipsServiceConfiguration)
 
-El elemento **MailTipsConfiguration** contiene información de configuración del servicio para el servicio de sugerencias de correo. 
+El **elemento MailTipsConfiguration** contiene información de configuración del servicio de sugerencias de correo. 
   
 ```XML
 <MailTipsConfiguration>
@@ -41,7 +41,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -49,16 +49,16 @@ Ninguna.
 |:-----|:-----|
 |[MailTipsEnabled](mailtipsenabled.md) <br/> |Indica si el servicio de sugerencias de correo está disponible. Se requiere este elemento.  <br/> |
 |[MaxRecipientsPerGetMailTipsRequest](maxrecipientspergetmailtipsrequest.md) <br/> |Indica el número máximo de destinatarios que se pueden pasar a la [operación GetMailTips](getmailtips-operation.md). Se requiere este elemento.  <br/> |
-|[MaxMessageSize](maxmessagesize.md) <br/> |Representa el tamaño máximo de mensaje que puede aceptar un destinatario. Se requiere este elemento.  <br/> |
-|[LargeAudienceThreshold](largeaudiencethreshold.md) <br/> |Representa el umbral de gran audiencia para un cliente. Se requiere este elemento.  <br/> |
-|[ShowExternalRecipientCount](showexternalrecipientcount.md) <br/> |Indica si los consumidores de la [operación GetMailTips](getmailtips-operation.md) tienen que Mostrar sugerencias de correo que indican el número de destinatarios externos a los que se dirige un mensaje. Se requiere este elemento.  <br/> |
+|[MaxMessageSize](maxmessagesize.md) <br/> |Representa el tamaño máximo de mensaje que un destinatario puede aceptar. Se requiere este elemento.  <br/> |
+|[LargeAudienceThreshold](largeaudiencethreshold.md) <br/> |Representa el umbral de audiencia grande para un cliente. Se requiere este elemento.  <br/> |
+|[ShowExternalRecipientCount](showexternalrecipientcount.md) <br/> |Indica si los consumidores de la operación [GetMailTips](getmailtips-operation.md) deben mostrar sugerencias de correo que indiquen el número de destinatarios externos a los que se dirige un mensaje. Se requiere este elemento.  <br/> |
 |[InternalDomains (SmtpDomainList)](internaldomains-smtpdomainlist.md) <br/> |Identifica la lista de dominios SMTP internos de la organización. Se requiere este elemento.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |Contiene las opciones de configuración del servicio.  <br/> |
+|[ServiceConfigurationResponseMessageType](serviceconfigurationresponsemessagetype.md) <br/> |Contiene opciones de configuración de servicio.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -74,12 +74,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

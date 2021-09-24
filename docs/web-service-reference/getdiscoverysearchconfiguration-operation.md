@@ -5,47 +5,47 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8a54a6dc-110c-4972-a8bc-5ddb43c4b857
-description: Buscar información sobre la operación de EWS de GetDiscoverySearchConfiguration.
-ms.openlocfilehash: 4db435988a9954b921e7851986b6f92ffedbad94
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Busque información sobre la operación EWS GetDiscoverySearchConfiguration.
+ms.openlocfilehash: 62cadc818219e13199aa246e87066571d78c4e3d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461026"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525081"
 ---
 # <a name="getdiscoverysearchconfiguration-operation"></a>Operación GetDiscoverySearchConfiguration
 
-Buscar información sobre la operación de EWS de **GetDiscoverySearchConfiguration** . 
+Busque información sobre la **operación EWS GetDiscoverySearchConfiguration.** 
   
-La operación **GetDiscoverySearchConfiguration** devuelve información de configuración para las suspensiones locales, las búsquedas de detección guardadas y los buzones que están habilitados para la búsqueda de detección. 
+La **operación GetDiscoverySearchConfiguration** devuelve información de configuración para las retenciones locales, las búsquedas de detección guardadas y los buzones habilitados para la búsqueda de detección. 
   
 Esta operación se introdujo en Exchange Server 2013.
   
 ## <a name="using-the-getdiscoverysearchconfiguration-operation"></a>Uso de la operación GetDiscoverySearchConfiguration
 
-La operación **GetDiscoverySearchConfiguration** proporciona información de configuración para la búsqueda de detección. Las solicitudes pueden contener uno o varios de los siguientes argumentos: 
+La **operación GetDiscoverySearchConfiguration** proporciona información de configuración para la búsqueda de detección. Las solicitudes pueden contener uno o varios de los argumentos siguientes: 
   
-1. [SearchId](searchid.md) : identifica una búsqueda de detección guardada. Si se envía este argumento en la solicitud, se omiten los valores de los demás argumentos. 
+1. [SearchId:](searchid.md) identifica una búsqueda de detección guardada. Si este argumento se envía en la solicitud, se omiten los valores de los otros argumentos. 
     
-2. [ExpandGroupMembership](expandgroupmembership.md) : indica si la pertenencia al grupo se expande en la respuesta. Un valor de **true** indica que la pertenencia a grupos se expande para que todos los buzones de correo que se pueden buscar se devuelvan en la respuesta. Un valor de **false** indica que solo se devuelve el grupo en la respuesta. 
+2. [ExpandGroupMembership:](expandgroupmembership.md) indica si la pertenencia a grupos se expande en la respuesta. Un valor de **true** indica que la pertenencia a grupos se expande para que todos los buzones de correo que se puedan buscar se devuelvan en la respuesta. Un valor de **false** indica que solo se devuelve el grupo en la respuesta. 
     
-3. [InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md) : indica si todos los buzones de correo que se pueden buscar se devuelven además de la configuración de conservación local. Un valor de **true** indica que solo se devuelven las configuraciones de conservación local. Un valor de **false** indica que se devuelven todos los identificadores de buzones de correo que se pueden buscar, además de los identificadores de retención local. Si este elemento no está presente, el comportamiento predeterminado es el equivalente del valor **false**. 
+3. [InPlaceHoldConfigurationOnly:](inplaceholdconfigurationonly.md) indica si se devuelven todos los buzones de correo que se pueden buscar además de la configuración de retención local. Un valor de **true** indica que solo se devuelven las configuraciones de retención locales. Un valor de **false** indica que se devuelven todos los identificadores de buzón de correo que se pueden buscar además de los identificadores de retención locales. Si este elemento no está presente, el comportamiento predeterminado es el equivalente del valor **false**. 
     
-### <a name="getdiscoverysearchconfiguration-operation-soap-headers"></a>Encabezados SOAP de operación GetDiscoverySearchConfiguration
+### <a name="getdiscoverysearchconfiguration-operation-soap-headers"></a>Encabezados SOAP de la operación GetDiscoverySearchConfiguration
 
-La operación **GetDiscoverySearchConfiguration** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
+La **operación GetDiscoverySearchConfiguration** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
   
 |**Nombre de encabezado**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Identifica los roles de servidor que son necesarios para que el autor de la llamada realice la solicitud. Este encabezado se aplica a una solicitud.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Este encabezado se aplica a una solicitud.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado se aplica a una respuesta.  <br/> |
+|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Identifica los roles de servidor necesarios para que el autor de la llamada realice la solicitud. Este encabezado es aplicable a una solicitud.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Este encabezado es aplicable a una solicitud.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado es aplicable a una respuesta.  <br/> |
    
-## <a name="getdiscoverysearchconfiguration-operation-request-example-get-the-discovery-search-configuration-for-a-saved-search"></a>Ejemplo de solicitud de operación GetDiscoverySearchConfiguration: obtener la configuración de búsqueda de detección para una búsqueda guardada
+## <a name="getdiscoverysearchconfiguration-operation-request-example-get-the-discovery-search-configuration-for-a-saved-search"></a>Ejemplo de solicitud de operación GetDiscoverySearchConfiguration: Obtener la configuración de búsqueda de detección para una búsqueda guardada
 
-El siguiente ejemplo de una solicitud de operación de **GetDiscoverySearchConfiguration** muestra cómo solicitar la configuración de una búsqueda guardada denominada "MyDiscSearchFor-sbrown". Se omiten los argumentos de los elementos [ExpandGroupMembership](expandgroupmembership.md) y [InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md) . 
+En el siguiente ejemplo de una solicitud de operación **GetDiscoverySearchConfiguration** se muestra cómo solicitar la configuración de una búsqueda guardada denominada "MyDiscSearchFor-sbrown". Se omiten los argumentos de los [elementos ExpandGroupMembership](expandgroupmembership.md) [e InPlaceHoldConfigurationOnly.](inplaceholdconfigurationonly.md) 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -76,7 +76,7 @@ El cuerpo SOAP de la solicitud contiene los siguientes elementos:
     
 - [InPlaceHoldConfigurationOnly](inplaceholdconfigurationonly.md)
     
-## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-a-single-saved-search"></a>Respuesta de operación GetDiscoverySearchConfiguration correcta: solicitud de una búsqueda guardada única
+## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-a-single-saved-search"></a>Respuesta correcta de la operación GetDiscoverySearchConfiguration: solicitud de una única búsqueda guardada
 
 En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación **GetDiscoverySearchConfiguration** para obtener la configuración de una búsqueda guardada denominada "MyDiscSearchFor-sbrown". 
   
@@ -111,7 +111,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
 </s:Envelope>
 ```
 
-El cuerpo SOAP de respuesta contiene los siguientes elementos:
+El cuerpo SOAP de la respuesta contiene los siguientes elementos:
   
 - [GetDiscoverySearchConfigurationResponse](getdiscoverysearchconfigurationresponse.md)
     
@@ -145,7 +145,7 @@ El cuerpo SOAP de respuesta contiene los siguientes elementos:
     
 ## <a name="successful-getdiscoverysearchconfiguration-operation-response-request-for-in-place-holds"></a>Respuesta de operación GetDiscoverySearchConfiguration correcta: solicitud de retenciones locales
 
-En el siguiente ejemplo se muestra una respuesta correcta a una solicitud de operación **GetDiscoverySearchConfiguration** para obtener solo las suspensiones locales. 
+En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación **GetDiscoverySearchConfiguration** para obtener solo las retenciones locales. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -186,7 +186,7 @@ En el siguiente ejemplo se muestra una respuesta correcta a una solicitud de ope
 
 ```
 
-El cuerpo SOAP de respuesta contiene los siguientes elementos:
+El cuerpo SOAP de la respuesta contiene los siguientes elementos:
   
 - [GetDiscoverySearchConfigurationResponse](getdiscoverysearchconfigurationresponse.md)
     
@@ -273,7 +273,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
 </s:Envelope>
 ```
 
-El cuerpo SOAP de respuesta contiene los siguientes elementos:
+El cuerpo SOAP de la respuesta contiene los siguientes elementos:
   
 - [GetDiscoverySearchConfigurationResponse](getdiscoverysearchconfigurationresponse.md)
     
@@ -305,9 +305,9 @@ El cuerpo SOAP de respuesta contiene los siguientes elementos:
     
 - [ReferenceId](referenceid.md)
     
-## <a name="getdiscoverysearchconfiguration-operation-error-response"></a>Respuesta de error de operación de GetDiscoverySearchConfiguration
+## <a name="getdiscoverysearchconfiguration-operation-error-response"></a>Respuesta de error de operación GetDiscoverySearchConfiguration
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **GetDiscoverySearchConfiguration** . Se trata de una respuesta a una solicitud para obtener una búsqueda guardada que no se encuentra en el servidor. 
+En el ejemplo siguiente se muestra una respuesta de error a una **solicitud de operación GetDiscoverySearchConfiguration.** Esta es una respuesta a una solicitud para obtener una búsqueda guardada que no se encuentra en el servidor. 
   
 ```XML
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -336,7 +336,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
 
 ```
 
-El cuerpo SOAP de respuesta de error contiene los siguientes elementos:
+El cuerpo SOAP de la respuesta de error contiene los siguientes elementos:
   
 - [GetDiscoverySearchConfigurationResponse](getdiscoverysearchconfigurationresponse.md)
     
@@ -348,11 +348,11 @@ El cuerpo SOAP de respuesta de error contiene los siguientes elementos:
     
 - [DiscoverySearchConfigurations](discoverysearchconfigurations.md)
     
-Para obtener los códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).
+Para obtener códigos de error adicionales genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
+- [Operaciones ews en Exchange](ews-operations-in-exchange.md)
     
 - [GetSearchableMailboxes](getsearchablemailboxes.md)
     

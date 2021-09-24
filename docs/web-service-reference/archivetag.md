@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c4cb0718-37cd-41aa-86e7-b492c4bb86aa
 description: El elemento ArchiveTag especifica el identificador de retención de la etiqueta de archivo establecida en un elemento o carpeta.
-ms.openlocfilehash: 23167f3c96a6756fe4c6d915a4de91e815e620d9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: c3545b505dc0596d7465154e0be7d6c758b24ec9
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464766"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525242"
 ---
 # <a name="archivetag"></a>ArchiveTag
 
-El elemento **ArchiveTag** especifica el identificador de retención de la etiqueta de archivo establecida en un elemento o carpeta. 
+El **elemento ArchiveTag** especifica el identificador de retención de la etiqueta de archivo establecida en un elemento o carpeta. 
   
 ```XML
 <ArchiveTag IsExplicit=""></ArchiveTag>
@@ -32,32 +32,32 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
-|**IsExplicit** <br/> |Especifica si la Directiva de retención se establece explícitamente en un elemento o una carpeta o si se hereda de una carpeta principal.  <br/> |
+|**IsExplicit** <br/> |Especifica si la directiva de retención se establece explícitamente en un elemento o carpeta o si se hereda de una carpeta primaria.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Hubiera](calendarfolder.md) <br/> |Representa una carpeta que contiene principalmente elementos de calendario.  <br/> |
-|[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
-|[Contacto](contact.md) <br/> |Representa un elemento de contacto en el almacén de Exchange.  <br/> |
-|[Hubiera](contactsfolder.md) <br/> |Representa una carpeta de contactos contenida en un buzón.  <br/> |
+|[CalendarFolder](calendarfolder.md) <br/> |Representa una carpeta que contiene principalmente elementos de calendario.  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Representa un Exchange de calendario.  <br/> |
+|[Contact](contact.md) <br/> |Representa un elemento de contacto en el Exchange almacén.  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |Representa una carpeta de contactos que se encuentra en un buzón.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Representa una lista de distribución.  <br/> |
 |[Folder](folder.md) <br/> |Define una carpeta para crear, obtener, buscar, sincronizar o actualizar.  <br/> |
-|[Elemento](item.md) <br/> |Representa un elemento genérico del almacén de Exchange.  <br/> |
-|[Message](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo electrónico de Microsoft Exchange.  <br/> |
-|[PostItem](postitem.md) <br/> |Representa un elemento post en el almacén de Exchange.  <br/> |
-|[SearchFolder](searchfolder.md) <br/> |Representa una carpeta de búsqueda contenida en un buzón.  <br/> |
-|[Tarea](task.md) <br/> |Representa una tarea del almacén de Exchange.  <br/> |
-|[Hubiera](tasksfolder.md) <br/> |Representa una carpeta de tareas contenida en un buzón.  <br/> |
+|[Elemento](item.md) <br/> |Representa un elemento genérico en el Exchange almacén.  <br/> |
+|[Mensaje](message-ex15websvcsotherref.md) <br/> |Representa un mensaje de correo Exchange microsoft.  <br/> |
+|[PostItem](postitem.md) <br/> |Representa un elemento de publicación en el Exchange almacén.  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |Representa una carpeta de búsqueda que se encuentra en un buzón.  <br/> |
+|[Tarea](task.md) <br/> |Representa una tarea en el Exchange almacén.  <br/> |
+|[TasksFolder](tasksfolder.md) <br/> |Representa una carpeta de tareas que se encuentra en un buzón.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ArchiveTag** es un GUID que identifica la Directiva de retención. 
+El valor de texto del **elemento ArchiveTag** es un GUID que identifica la directiva de retención. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -71,10 +71,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

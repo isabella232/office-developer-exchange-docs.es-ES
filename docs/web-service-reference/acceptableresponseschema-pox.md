@@ -4,25 +4,25 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 2f0f77bd-4cbe-4c02-880d-a93b387141d9
 description: El elemento AcceptableResponseSchema identifica el esquema de una respuesta de detección automática.
-ms.openlocfilehash: ffc06f33144af7c8f06e81a12bcb5077719b15b8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 96a3957683879897377c3182bc8b5a95d6c7a2b5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460410"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522274"
 ---
 # <a name="acceptableresponseschema-pox"></a>AcceptableResponseSchema (POX)
 
-El elemento **AcceptableResponseSchema** identifica el esquema de una respuesta de detección automática. 
+El **elemento AcceptableResponseSchema** identifica el esquema de una respuesta de detección automática. 
   
-- [Detección automática (POX)](autodiscover-pox.md)
+- [AutoDiscover (POX)](autodiscover-pox.md)
   
-- [Solicitud (POX)](request-pox.md)
+- [Request (POX)](request-pox.md)
   
 - [AcceptableResponseSchema (POX)](acceptableresponseschema-pox.md)
   
@@ -36,7 +36,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -46,13 +46,13 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Solicitud (POX)](request-pox.md) <br/> |Contiene la solicitud al servicio Detección automática.  <br/> |
+|[Request (POX)](request-pox.md) <br/> |Contiene la solicitud al servicio de detección automática.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto identifica la ubicación del esquema de respuesta de detección automática.
+El valor de texto identifica la ubicación del esquema de respuesta Detección automática.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

@@ -1,26 +1,26 @@
 ---
-title: IsUMEnabled (servicio Web de mensajería unificada)
+title: IsUMEnabled (servicio web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsUMEnabled
 api_type:
 - schema
 ms.assetid: 33810bbd-837f-4a71-9ed9-cb4b8c52186d
-description: El elemento IsUMEnabled indica si un buzón está habilitado para mensajería unificada.
-ms.openlocfilehash: ea5bde677c62664acad8afd5c8142e96d82b7a74
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento IsUMEnabled indica si un buzón está habilitado para la mensajería unificada.
+ms.openlocfilehash: 43632c28c5fb0c526dcf2ad936784953b00cc14a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458232"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524122"
 ---
-# <a name="isumenabled-um-web-service"></a>IsUMEnabled (servicio Web de mensajería unificada)
+# <a name="isumenabled-um-web-service"></a>IsUMEnabled (servicio web de mensajería unificada)
 
-El elemento **IsUMEnabled** indica si un buzón está habilitado para mensajería unificada. 
+El **elemento IsUMEnabled** indica si un buzón está habilitado para la mensajería unificada. 
   
 ```xml
 <IsUMEnabled/>
@@ -33,23 +33,23 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-Ninguna.
+Ninguno.
   
 ## <a name="text-value"></a>Valor de texto
 
-Si se incluye este elemento, es necesario un valor de texto que represente un valor booleano. Un valor de **true** indica que el buzón de correo está habilitado para mensajería unificada. Un valor de **false** significa que el buzón de correo no está habilitado para mensajería unificada. 
+Si se incluye este elemento, se requiere un valor de texto que represente un valor booleano. Un valor **true** indica que el buzón está habilitado para la mensajería unificada. Un valor de **false** significa que el buzón no está habilitado para la mensajería unificada. 
   
 ## <a name="remarks"></a>Comentarios
 
-Para determinar si un buzón está habilitado para mensajería unificada, use la [operación IsUMEnabled (servicio Web de mensajería unificada)](isumenabled-operation-um-web-service.md).
+Para determinar si un buzón está habilitado para la mensajería unificada, use la operación [IsUMEnabled (servicio web de](isumenabled-operation-um-web-service.md)mensajería unificada).
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -57,15 +57,15 @@ Para determinar si un buzón está habilitado para mensajería unificada, use la
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-[Operación IsUMEnabled (servicio Web de mensajería unificada)](isumenabled-operation-um-web-service.md)
+[Operación IsUMEnabled (servicio web de mensajería unificada)](isumenabled-operation-um-web-service.md)
 
 
-[Elementos XML de servicio Web de mensajería unificada para Exchange](unified-messaging-web-service-xml-elements-for-exchange.md)
+[Elementos XML del servicio web de mensajería unificada para Exchange](unified-messaging-web-service-xml-elements-for-exchange.md)
 

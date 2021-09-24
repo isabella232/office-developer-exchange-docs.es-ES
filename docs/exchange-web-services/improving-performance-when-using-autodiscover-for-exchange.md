@@ -3,15 +3,15 @@ title: Mejorar el rendimiento cuando se utiliza la detección automática de Exc
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e65ff6b2-3810-43ad-9728-27308891b193
 description: Obtenga información sobre maneras de mejorar el rendimiento del proceso de detección automática en la aplicación.
-ms.openlocfilehash: 844b56084b4f0b5e49b4ee095688d58ce469baca
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: c0920f71c230f63658dfa8d29b34ca75bb796db0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456335"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521000"
 ---
 # <a name="improving-performance-when-using-autodiscover-for-exchange"></a>Mejorar el rendimiento cuando se utiliza la detección automática de Exchange
 
@@ -49,7 +49,7 @@ Si usa el método **ExchangeService.AutodiscoverUrl** en la API administrada de 
   
 Si usa el servicio de detección automática de POX, [no puede solicitar propiedades específicas](autodiscover-for-exchange.md#bk_Options).
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 - [Detección automática en Exchange](autodiscover-for-exchange.md)

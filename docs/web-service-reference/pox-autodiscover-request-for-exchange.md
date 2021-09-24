@@ -1,22 +1,22 @@
 ---
-title: Solicitud de detección automática de POX para Exchange
+title: Solicitud de detección automática POX para Exchange
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 75671b1d-f35b-497b-8d8c-706f3f2535fd
 description: La solicitud de detección automática contiene una consulta para la configuración de acceso de cliente de un usuario.
-ms.openlocfilehash: b2138f9813c7b75aef9afb90089b9b874aac7532
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8a0960dcff21276baf723512befacc4eca35950f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461670"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523870"
 ---
-# <a name="pox-autodiscover-request-for-exchange"></a>Solicitud de detección automática de POX para Exchange
+# <a name="pox-autodiscover-request-for-exchange"></a>Solicitud de detección automática POX para Exchange
 
 La solicitud de detección automática contiene una consulta para la configuración de acceso de cliente de un usuario.
   
@@ -24,7 +24,7 @@ La solicitud de detección automática contiene una consulta para la configuraci
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de XML muestra un cuerpo de solicitud de detección automática.
+En el siguiente ejemplo XML se muestra un cuerpo de solicitud de detección automática.
   
 ### <a name="code"></a>Código
 
@@ -45,45 +45,45 @@ Los siguientes encabezados HTTP son opcionales al enviar solicitudes de detecci�
 
 |**Header**|**Descripción**|
 |:-----|:-----|
-|X-MapiHttpCapability  <br/> |Si está presente y se establece en "1", indica que el cliente está solicitando información que se puede usar para conectarse al servidor mediante el protocolo MAPI/HTTP. Este encabezado se aplica a los clientes que implementan el protocolo MAPI/HTTP.  <br/> |
-|X-ClientCanHandle  <br/> |Este encabezado contiene una lista delimitada por comas de las funciones que admite el cliente. Los valores posibles se especifican en la tabla 2.  <br/> |
+|X-MapiHttpCapability  <br/> |Si está presente y se establece en "1", indica que el cliente solicita información que se puede usar para conectarse al servidor mediante el protocolo MAPI/HTTP. Este encabezado es aplicable a los clientes que implementan el protocolo MAPI/HTTP.  <br/> |
+|X-ClientCanHandle  <br/> |Este encabezado contiene una lista delimitada por comas de funcionalidades que admite el cliente. Los valores posibles se especifican en la tabla 2.  <br/> |
    
-**Tabla 2. Valores del encabezado X-ClientCanHandle**
+**Tabla 2. Valores de encabezado X-ClientCanHandle**
 
-|**Valor X-ClientCanHandle (sin distinción entre mayúsculas y minúsculas)**|**Versión mínima del servidor**|**Descripción**|
+|**Valor X-ClientCanHandle (no tiene mayúsculas de minúsculas)**|**Versión mínima del servidor**|**Descripción**|
 |:-----|:-----|:-----|
-|Negociar  <br/> |15.00.0995.014  <br/> |Si este valor está presente, el servidor devolverá un valor de "Negotiate" en el elemento [AuthPackage (POX)](authpackage-pox.md) si el servidor está configurado para aceptar la autenticación Negotiate. Si este valor no está presente, el servidor no devolverá un valor de "Negotiate" en el elemento **AuthPackage** .  <br/> |
-|ExHttpInfo  <br/> |15.00.0995.014  <br/> |Si este valor está presente, el servidor devolverá un elemento de [Protocolo (POX)](protocol-pox.md) con un elemento [Type (POX)](type-pox.md) establecido en "exhttp" si el servidor está configurado para aceptar conexiones RPC/HTTP. Si este valor no está presente, el servidor no devolverá un elemento **Protocol** con un elemento **Type** establecido en "exhttp".  <br/> |
+|Negociar  <br/> |15.00.0995.014  <br/> |Si este valor está presente, el servidor devolverá un valor de "Negociar" en el elemento [AuthPackage (POX)](authpackage-pox.md) si el servidor está configurado para aceptar la autenticación Negotiate. Si este valor no está presente, el servidor no devolverá un valor de "Negotiate" en el **elemento AuthPackage.**  <br/> |
+|ExHttpInfo  <br/> |15.00.0995.014  <br/> |Si este valor está presente, el servidor devolverá un elemento [Protocol (POX)](protocol-pox.md) con un elemento [Type (POX)](type-pox.md) establecido en "EXHTTP" si el servidor está configurado para aceptar conexiones RPC/HTTP. Si este valor no está presente, el servidor no devolverá un **elemento Protocol** con un **elemento Type** establecido en "EXHTTP".  <br/> |
    
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
 Los siguientes elementos se usan en el cuerpo de la solicitud:
   
-- [Detección automática (POX)](autodiscover-pox.md)
+- [AutoDiscover (POX)](autodiscover-pox.md)
     
-- [Solicitud (POX)](request-pox.md)
+- [Request (POX)](request-pox.md)
     
 - [AcceptableResponseSchema (POX)](acceptableresponseschema-pox.md)
     
 - [EMailAddress (POX)](emailaddress-pox.md)
     
 > [!NOTE]
-> El elemento [LegacyDN (POX)](legacydn-pox.md) se puede usar en vez del elemento [EmailAddress (POX)](emailaddress-pox.md) . 
+> El [elemento LegacyDN (POX)](legacydn-pox.md) se puede usar en lugar del elemento [EMailAddress (POX).](emailaddress-pox.md) 
   
 ### <a name="version-differences"></a>Diferencias de versión
 
-El encabezado X-MapiHttpCapability está disponible en Office 365, Exchange Online y las versiones locales de Exchange a partir de la compilación 15.00.0847.032 (Exchange Server 2013 SP1).
+El encabezado X-MapiHttpCapability está disponible en las versiones Office 365, Exchange Online y local de Exchange a partir de la compilación 15.00.0847.032 (Exchange Server 2013 SP1).
   
-El encabezado X-ClientCanHandle está disponible en Office 365, Exchange Online y las versiones locales de Exchange a partir de la compilación 15.00.0995.014.
+El encabezado X-ClientCanHandle está disponible en las versiones Office 365, Exchange Online y local de Exchange a partir de la compilación 15.00.0995.014.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
 [Respuesta de detección automática de POX para Exchange](pox-autodiscover-response-for-exchange.md)
 
 
-[Referencia de servicio Web de detección automática de POX para Exchange](pox-autodiscover-web-service-reference-for-exchange.md)
+[Referencia del servicio web de detección automática de POX para Exchange](pox-autodiscover-web-service-reference-for-exchange.md)
   
 [Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

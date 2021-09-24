@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e70f1a3d-03cf-4252-804f-3eef0ce4a1a9
-description: El elemento ApprovalDecisionTime especifica la hora en que se ha tomado la decisión de aprobación.
-ms.openlocfilehash: 2c76d949d366050139978586cd9e784f2728d767
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ApprovalDecisionTime especifica el momento en que se tomó la decisión de aprobación.
+ms.openlocfilehash: 5e3dbe51a9301a5b23e73c563dcac7271e11d532
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464787"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525311"
 ---
 # <a name="approvaldecisiontime"></a>ApprovalDecisionTime
 
-El elemento **ApprovalDecisionTime** especifica la hora en que se ha tomado la decisión de aprobación. 
+El **elemento ApprovalDecisionTime** especifica el momento en que se tomó la decisión de aprobación. 
   
 ```XML
 <ApprovalDecisionTime />
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ApprovalDecisionTime** representa la fecha y hora en que se ha tomado la decisión de aprobación. 
+El valor de texto del **elemento ApprovalDecisionTime** representa la hora y la fecha en que se tomó la decisión de aprobación. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,11 +56,11 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [ApprovalRequestData](approvalrequestdata.md)
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

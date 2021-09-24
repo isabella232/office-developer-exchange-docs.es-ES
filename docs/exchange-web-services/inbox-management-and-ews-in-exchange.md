@@ -3,15 +3,15 @@ title: Administración de la Bandeja de entrada y EWS en Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3dfa0fc9-64bb-4d18-bff7-bf6b3bed4a0d
-description: Descubra cómo administrar su bandeja de entrada en la API administrada EWS o aplicación EWS por medio de reglas de bandeja de entrada y de la lista de remitentes bloqueados.
-ms.openlocfilehash: 7c88015386dc882f14184765e0046a866e8c0e10
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Descubra cómo administrar su Bandeja de entrada en la API administrada EWS o aplicación EWS por medio de reglas de bandeja de entrada y de la lista de remitentes bloqueados.
+ms.openlocfilehash: 6dddb8d462276c4983fd04a0206d4d4a9be32df8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456319"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522218"
 ---
 # <a name="inbox-management-and-ews-in-exchange"></a>Administración de la Bandeja de entrada y EWS en Exchange
 
@@ -71,7 +71,7 @@ La siguiente figura muestra el proceso que sigue el motor de reglas.
 ### <a name="putting-the-pieces-together---parts-of-a-rule"></a>Ensamblaje de piezas: partes de una regla
 <a name="bk_Pieces"> </a>
 
-Las partes de una regla se pueden visualizar como instrucciones que se le dan a alguien que se encarga de organizar el correo electrónico entrante. Puede que le diga a esta persona: "cuando llegue un mensaje \<insert conditions here\> , haga \<insert actions here\> , a menos que el mensaje \<insert exceptions here\> . Veamos cada parte con más detalle.
+Las partes de una regla se pueden visualizar como instrucciones que se le dan a alguien que se encarga de organizar el correo electrónico entrante. Puede que le diga a esta persona: "Cuando llegue un mensaje que , haga , a menos \<insert conditions here\> \<insert actions here\> que el mensaje \<insert exceptions here\> . Veamos cada parte con más detalle.
   
 #### <a name="conditions"></a>Condiciones
 <a name="bk_Conditions"> </a>
@@ -135,7 +135,7 @@ Aunque puede crear una regla que mueva todo el correo de un remitente específic
 ## <a name="see-also"></a>Vea también
 
 
-- [Desarrollar clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
+- [Desarrollo de clientes de servicios web de Exchange](develop-web-service-clients-for-exchange.md)
     
 - [Operación de GetInboxRules](https://msdn.microsoft.com/library/b4b2701a-4a23-4acc-8c75-19f7955ad7ae%28Office.15%29.aspx)
     

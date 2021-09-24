@@ -5,33 +5,33 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateItem
 api_type:
 - schema
 ms.assetid: fe136881-a804-456a-8552-8a1bea5eb9c8
-description: La operación CreateItem se usa para responder a las convocatorias de reunión.
-ms.openlocfilehash: f9e6bd1742e6a30d08736ea67c0ff80b7a18e88a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación CreateItem se usa para responder a las solicitudes de reunión.
+ms.openlocfilehash: de845271bc47f08e60a1b4943a00551a42056388
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457112"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524374"
 ---
 # <a name="createitem-operation-meeting-request"></a>Operación CreateItem (convocatoria de reunión)
 
-La operación CreateItem se usa para responder a las convocatorias de reunión.
+La operación CreateItem se usa para responder a las solicitudes de reunión.
   
 ## <a name="remarks"></a>Comentarios
 
-La operación CreateItem proporciona tres opciones para responder a una convocatoria de reunión: aceptar, aceptar provisionalmente o rechazar. 
+La operación CreateItem proporciona tres opciones para responder a una solicitud de reunión: aceptar, aceptar provisionalmente o rechazar. 
   
-## <a name="accept-meeting-request-example"></a>Ejemplo de convocatoria de reunión aceptada
+## <a name="accept-meeting-request-example"></a>Ejemplo de aceptación de solicitud de reunión
 
 ### <a name="description"></a>Description
 
-En el siguiente ejemplo, se muestra cómo aceptar una invitación a convocatoria de reunión.
+En el ejemplo siguiente se muestra cómo aceptar una invitación a una convocatoria de reunión.
   
 ### <a name="code"></a>Código
 
@@ -55,23 +55,23 @@ En el siguiente ejemplo, se muestra cómo aceptar una invitación a convocatoria
 
 ### <a name="comments"></a>Comentarios
 
-Para aceptar provisionalmente o para rechazar la convocatoria de reunión, use los elementos [TentativelyAcceptItem](tentativelyacceptitem.md) o [DeclineItem](declineitem.md) en vez del elemento [AcceptItem](acceptitem.md) . 
+Para aceptar o rechazar provisionalmente la solicitud de reunión, use los elementos [TentativelyAcceptItem](tentativelyacceptitem.md) o [DeclineItem](declineitem.md) en lugar del [elemento AcceptItem.](acceptitem.md) 
   
-El identificador de elemento y la clave de cambio se han abreviado para preservar la legibilidad.
+El identificador del elemento y la clave de cambio se han acortado para conservar la legibilidad.
   
-### <a name="accepting-meeting-request-elements"></a>Aceptar elementos de convocatoria de reunión
+### <a name="accepting-meeting-request-elements"></a>Aceptar elementos de solicitud de reunión
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [CreateItem](createitem.md)
     
-- [Elementos (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
+- [Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md)
     
 - [AcceptItem](acceptitem.md)
     
 - [ReferenceItemId](referenceitemid.md)
     
-## <a name="successful-accept-meeting-response-example"></a>Ejemplo de respuesta de aceptación de reunión correcta
+## <a name="successful-accept-meeting-response-example"></a>Ejemplo de respuesta aceptar correctamente reunión
 
 ### <a name="description"></a>Description
 
@@ -103,7 +103,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud CreateI
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -119,11 +119,11 @@ En la respuesta se usan los siguientes elementos:
     
 - [Items](items.md)
     
-## <a name="accept-meeting-error-response-example"></a>Ejemplo de respuesta de error de aceptación de reunión
+## <a name="accept-meeting-error-response-example"></a>Ejemplo de respuesta Aceptar error de reunión
 
 ### <a name="description"></a>Description
 
-El ejemplo siguiente muestra una respuesta de error a la solicitud CreateItem. El error se debe a un intento de aceptar una convocatoria de reunión que no se encuentra en el almacén de Exchange.
+En el ejemplo siguiente se muestra una respuesta de error a la solicitud CreateItem. El error se debe a un intento de aceptar una solicitud de reunión que no se puede encontrar en el Exchange almacén.
   
 ### <a name="code"></a>Código
 
@@ -155,7 +155,7 @@ El ejemplo siguiente muestra una respuesta de error a la solicitud CreateItem. E
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -173,7 +173,7 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - [Items](items.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

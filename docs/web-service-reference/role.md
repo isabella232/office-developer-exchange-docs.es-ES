@@ -1,23 +1,23 @@
 ---
-title: Role
+title: Rol
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0718d2cc-8b70-4569-9008-b3e19857327e
-description: El elemento role especifica una cadena que representa una función de administración.
-ms.openlocfilehash: d7649d5b885d4d36ea0ee36dd3b17598e305c35f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Role especifica una cadena que representa un rol de administración.
+ms.openlocfilehash: dbc30cee18e88d00b54ba9f7a9f766cf3058e815
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460564"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525570"
 ---
-# <a name="role"></a>Role
+# <a name="role"></a>Rol
 
-El elemento **role** especifica una cadena que representa una función de administración. 
+El **elemento Role** especifica una cadena que representa un rol de administración. 
   
 ```XML
 <Role></Role>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **role** es el nombre de la función. 
+El valor de texto del **elemento Role** es el nombre del rol. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

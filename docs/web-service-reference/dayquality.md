@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DayQuality
 api_type:
 - schema
 ms.assetid: cd0eb239-6e7f-4a5a-b245-659f170550b7
-description: El elemento DayQuality representa la calidad del día para contener horas de reunión sugeridas de calidad.
-ms.openlocfilehash: 41cc8313dccb1a5172fefc167e6ed90a21109ec5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento DayQuality representa la calidad del día para contener las horas de reunión sugeridas de calidad.
+ms.openlocfilehash: 849ce4bef88c8c77223b03ce209ca31d857c906c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455117"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525123"
 ---
 # <a name="dayquality"></a>DayQuality
 
-El elemento **DayQuality** representa la calidad del día para contener horas de reunión sugeridas de calidad. 
+El **elemento DayQuality** representa la calidad del día para contener las horas de reunión sugeridas de calidad. 
   
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)  
 - [SuggestionsResponse](suggestionsresponse.md) 
@@ -41,30 +41,30 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SuggestionDayResult](suggestiondayresult.md) <br/> |Representa un solo día que contiene las horas de reunión sugeridas.  <br/><br/>La siguiente es la expresión XPath 2,0 a este elemento:<br/><br/>`/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]` <br/> |
+|[SuggestionDayResult](suggestiondayresult.md) <br/> |Representa un solo día que contiene las horas de reunión sugeridas.  <br/><br/>A continuación se muestra la expresión XPath 2.0 para este elemento:<br/><br/>`/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray/SuggestionDayResult[i]` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto. A continuación se muestran los valores posibles para este elemento:
+Se requiere un valor de texto. Estos son los valores posibles para este elemento:
   
 - **Excelente**   
 - **Good**    
-- **Imparcial**    
+- **Feria**    
 - **Deficiente**
     
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -72,10 +72,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)  
 - [GetUserAvailabilityResponse](getuseravailabilityresponse.md)

@@ -1,32 +1,32 @@
 ---
-title: Operación Disconnect (servicio Web de mensajería unificada)
+title: Operación Disconnect (servicio web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Disconnect
 api_type:
 - schema
 ms.assetid: a987000b-d6e6-49d7-944c-e9c278d0236f
-description: La operación de desconexión finaliza la llamada identificada por el CallId (servicio Web de mensajería unificada) especificado.
-ms.openlocfilehash: a1268f9ea3d879f472e019bf1847fc13d65d1819
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación Disconnect termina la llamada identificada por el CallId (servicio web de mensajería unificada) especificado.
+ms.openlocfilehash: 42e069233fbfc255d43983571c0bb28475a1fe90
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529073"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522015"
 ---
-# <a name="disconnect-operation-um-web-service"></a>Operación Disconnect (servicio Web de mensajería unificada)
+# <a name="disconnect-operation-um-web-service"></a>Operación Disconnect (servicio web de mensajería unificada)
 
-La operación de desconexión finaliza la llamada identificada por el [CallId (servicio Web de mensajería unificada)](callid-um-web-service.md)especificado.
+La operación Disconnect termina la llamada identificada por el [CallId especificado (servicio web de mensajería unificada).](callid-um-web-service.md)
   
-## <a name="disconnect-request-example"></a>Ejemplo de solicitud Disconnect
+## <a name="disconnect-request-example"></a>Ejemplo de solicitud disconnect
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud de desconexión muestra cómo crear una solicitud para desconectar una llamada.
+En el siguiente ejemplo de una solicitud Disconnect se muestra cómo formar una solicitud para desconectar una llamada.
   
 ### <a name="code"></a>Código
 
@@ -41,11 +41,11 @@ El siguiente ejemplo de una solicitud de desconexión muestra cómo crear una so
 </soap:Envelope>
 ```
 
-## <a name="successful-disconnect-response-example"></a>Ejemplo de respuesta de desconexión correcta
+## <a name="successful-disconnect-response-example"></a>Ejemplo de respuesta disconnect correcta
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una respuesta de desconexión muestra una respuesta a la solicitud de desconexión.
+En el siguiente ejemplo de una respuesta Disconnect se muestra una respuesta a la solicitud Disconnect.
   
 ### <a name="code"></a>Código
 
@@ -58,9 +58,9 @@ El siguiente ejemplo de una respuesta de desconexión muestra una respuesta a la
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-- [Disconnect (servicio Web de mensajería unificada)](disconnect-um-web-service.md) 
-- [DisconnectResponse (servicio Web de mensajería unificada)](disconnectresponse-um-web-service.md) 
-- [CallId (servicio Web de mensajería unificada)](callid-um-web-service.md)
+- [Disconnect (servicio web de mensajería unificada)](disconnect-um-web-service.md) 
+- [DisconnectResponse (servicio web de mensajería unificada)](disconnectresponse-um-web-service.md) 
+- [CallId (servicio web de mensajería unificada)](callid-um-web-service.md)
 

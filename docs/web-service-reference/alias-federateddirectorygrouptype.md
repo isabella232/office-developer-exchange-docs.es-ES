@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 38bf6de4-1522-4c59-bcb2-1912dca287e2
-description: El elemento alias (FederatedDirectoryGroupType) está pensado solo para uso interno.
-ms.openlocfilehash: 19e6bccabeb781f30f9802cba7b9e8a16e771b3f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Alias (FederatedDirectoryGroupType) está diseñado solo para uso interno.
+ms.openlocfilehash: 4aa292e0abd9dbe8cea2207dfaeb150508342e25
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463520"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522176"
 ---
 # <a name="alias-federateddirectorygrouptype"></a>Alias (FederatedDirectoryGroupType)
 
-El elemento **alias (FederatedDirectoryGroupType)** está pensado solo para uso interno. 
+El **elemento Alias (FederatedDirectoryGroupType)** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,11 +25,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 

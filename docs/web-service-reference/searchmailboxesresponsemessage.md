@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6f1bcbfb-d7f6-4fa0-b6f8-681a0b067007
-description: El elemento SearchMailboxesResponseMessage especifica el mensaje de respuesta para una solicitud de SearchMailboxes.
-ms.openlocfilehash: 342223b9a8cc7e91b97d637cb104f7bb160b7d5a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento SearchMailboxesResponseMessage especifica el mensaje de respuesta de una solicitud SearchMailboxes.
+ms.openlocfilehash: d37fd5b194e35a2c163499096686decbab45458c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44448425"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517871"
 ---
 # <a name="searchmailboxesresponsemessage"></a>SearchMailboxesResponseMessage
 
-El elemento **SearchMailboxesResponseMessage** especifica el mensaje de respuesta para una solicitud de **SearchMailboxes** . 
+El **elemento SearchMailboxesResponseMessage** especifica el mensaje de respuesta de una **solicitud SearchMailboxes.** 
   
 ```XML
 <SearchMailboxesResponseMessage>
@@ -36,7 +36,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -57,8 +57,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

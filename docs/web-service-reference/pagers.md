@@ -1,23 +1,23 @@
 ---
-title: Buscapersonas
+title: Pagers
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fde3caef-ebbe-4a0b-a839-b1fb8157dcb4
-description: El elemento pagers especifica una matriz de números de teléfono de localizador y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: 196fae886d5a12bc03e0688c2be15e4fbd22e443
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Pagers especifica una matriz de números de teléfono de paginación y los identificadores de sus atribuciones de origen para la persona asociada.
+ms.openlocfilehash: 517e7bf4318e6d48b6c6a2177a7d14aacb236a03
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462328"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521742"
 ---
-# <a name="pagers"></a>Buscapersonas
+# <a name="pagers"></a>Pagers
 
-El elemento **pagers** especifica una matriz de números de teléfono de localizador y los identificadores de sus atribuciones de origen para el rol asociado. 
+El **elemento Pagers** especifica una matriz de números de teléfono de paginación y los identificadores de sus atribuciones de origen para la persona asociada. 
   
 ```XML
 <Pagers>
@@ -33,7 +33,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -54,8 +54,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ccb4cd62-9779-4ca7-a4fe-5a96e6af8f48
 description: El elemento Query contiene la consulta de búsqueda para la retención.
-ms.openlocfilehash: 52b7f58ee0304621d37fc592a0377f5fd82cea29
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: a9e66a0861a07336aa3a02eaca5b65ab97a3d6cd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468862"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59523793"
 ---
 # <a name="query"></a>Consulta
 
-El elemento **query** contiene la consulta de búsqueda para la retención. 
+El **elemento Query** contiene la consulta de búsqueda para la retención. 
   
 ```XML
 <Query></Query>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **query** es la cadena de consulta de búsqueda de una búsqueda de detección. 
+El valor de texto del **elemento Query** es la cadena de consulta de búsqueda de una búsqueda de detección. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

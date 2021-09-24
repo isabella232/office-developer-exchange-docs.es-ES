@@ -3,48 +3,48 @@ title: Trabajar con conversaciones mediante EWS en Exchange
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7750528c-acb2-43e5-a1e1-ee201c0e1730
-description: Obtenga información sobre cómo buscar conversaciones, aplicar acciones a conversaciones y obtener elementos en conversaciones mediante la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: 2dc66195f8d37836c32fc33737728c61fc5444ae
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Obtenga información sobre cómo buscar conversaciones, aplicar acciones a las conversaciones y obtener elementos en las conversaciones mediante la API administrada ews o EWS en Exchange.
+ms.openlocfilehash: b2cf00b1f6f69ec1a1989d3f452ff6c0102dc95e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456791"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521097"
 ---
 # <a name="work-with-conversations-by-using-ews-in-exchange"></a>Trabajar con conversaciones mediante EWS en Exchange
 
-Obtenga información sobre cómo buscar conversaciones, aplicar acciones a conversaciones y obtener elementos en conversaciones mediante la API administrada de EWS o EWS en Exchange.
+Obtenga información sobre cómo buscar conversaciones, aplicar acciones a las conversaciones y obtener elementos en las conversaciones mediante la API administrada ews o EWS en Exchange.
   
-En el contexto de Exchange, las conversaciones son una forma de agrupar y administrar un conjunto relacionado de mensajes de correo electrónico. También pueden proporcionar una forma de ver los mensajes relacionados. Exchange define conversaciones basadas en el valor **Message-ID** del primer mensaje de correo electrónico de un hilo. Todas las respuestas y los mensajes relacionados hacen referencia al encabezado de **identificador de mensaje** del mensaje original en sus encabezados de **referencia** y **de respuesta** . 
+En el contexto de Exchange, las conversaciones son una forma de agrupar y administrar un conjunto relacionado de mensajes de correo electrónico. También pueden proporcionar una forma de ver mensajes relacionados. Exchange define las conversaciones en función del valor **id. de** mensaje del primer mensaje de correo electrónico de un subproceso. Todas las respuestas y mensajes relacionados hacen referencia al encabezado **Message-ID** del mensaje original en sus encabezados **References** y **In-Reply-To.** 
   
-Además, dentro del envoltorio SOAP, para cada mensaje recibido en un buzón de correo, Exchange establece propiedades y elementos específicos.
+Además, dentro del sobre SOAP, para cada mensaje recibido en un buzón, Exchange establece propiedades y elementos específicos.
   
 **Tabla 1. Propiedades y elementos de conversación establecidos en todos los mensajes de correo electrónico**
 
-|**Propiedad de la API administrada EWS**|**Elemento EWS**|**Descripción**|
+|**Propiedad de API administrada ews**|**Elemento EWS**|**Descripción**|
 |:-----|:-----|:-----|
-|[ConversationTopic](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.conversationtopic%28v=exchg.80%29.aspx) <br/> |[ConversationTopic](https://msdn.microsoft.com/library/46cacf42-4039-4c8a-9b20-c42cdd9f2760%28Office.15%29.aspx) <br/> |Contiene una forma normalizada del valor de asunto que se estableció en el mensaje original. Es el mismo que el encabezado **de mensaje de tema de subproceso** . Este valor es de sólo lectura.  <br/> |
-|[ConversationIndex](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.conversationindex%28v=exchg.80%29.aspx) <br/> |[ConversationIndex](https://msdn.microsoft.com/library/fdf47e22-8d93-4ae4-883b-0c9f07f48724%28Office.15%29.aspx) <br/> |Representa la posición del elemento en la conversación. Es el mismo que el encabezado del mensaje del **Índice de subprocesos** . Este valor es de sólo lectura.  <br/> |
+|[ConversationTopic](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.conversationtopic%28v=exchg.80%29.aspx) <br/> |[ConversationTopic](https://msdn.microsoft.com/library/46cacf42-4039-4c8a-9b20-c42cdd9f2760%28Office.15%29.aspx) <br/> |Contiene una forma normalizada del valor de asunto que se estableció en el mensaje original. Esto es lo mismo que el **encabezado del mensaje Thread-Topic.** Este valor es de solo lectura.  <br/> |
+|[ConversationIndex](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.conversationindex%28v=exchg.80%29.aspx) <br/> |[ConversationIndex](https://msdn.microsoft.com/library/fdf47e22-8d93-4ae4-883b-0c9f07f48724%28Office.15%29.aspx) <br/> |Representa la posición del elemento en la conversación. Esto es lo mismo que el **encabezado del mensaje Thread-Index.** Este valor es de solo lectura.  <br/> |
    
-Exchange aplica el mismo valor de **ConversationTopic** para responder al primer mensaje y, a continuación, actualiza el valor **ConversationIndex** para representar la posición del mensaje en relación con el mensaje original. Si el asunto del subproceso de correo electrónico cambia, Exchange aplica un nuevo valor de **ConversationTopic** y nuevos valores de **ConversationIndex** a la nueva conversación. 
+Exchange aplica el mismo valor **ConversationTopic** a las respuestas al primer mensaje y, a continuación, actualiza el valor **ConversationIndex** para representar la posición del mensaje con respecto al mensaje original. Si el asunto del subproceso de correo electrónico cambia, Exchange aplica un nuevo valor **ConversationTopic** y nuevos valores **conversationIndex** a la nueva conversación. 
   
-**Tabla 2. Métodos de API administrada de EWS y operaciones EWS para trabajar con conversaciones**
+**Tabla 2. Métodos de API administrada ews y operaciones ews para trabajar con conversaciones**
 
-|**Para**|**Usar este método o métodos de la API administrada de EWS**|**Usar esta operación de EWS**|
+|**Para**|**Usar este método o métodos de la API administrada ews**|**Usar esta operación EWS**|
 |:-----|:-----|:-----|
-|Buscar conversaciones  <br/> |[ExchangeService. FindConversation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findconversation%28v=exchg.80%29.aspx) <br/> |[FindConversation](https://msdn.microsoft.com/library/2384908a-c203-45b6-98aa-efd6a4c23aac%28Office.15%29.aspx) <br/> |
-|Aplicar acciones de conversación  <br/> |[Conversation. EnableAlwaysCategorizeItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.conversation.enablealwayscategorizeitems%28v=exchg.80%29.aspx) <br/> [Conversation. EnableAlwaysDeleteItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.conversation.enablealwaysdeleteitems%28v=exchg.80%29.aspx) <br/> [Conversation. EnableAlwaysMoveItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.conversation.enablealwaysmoveitems%28v=exchg.80%29.aspx) <br/> [ExchangeService. CopyItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.copyitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService. DeleteItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.deleteitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService. DisableAlwaysCategorizeItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.disablealwayscategorizeitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService. DisableAlwaysDeleteItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.disablealwaysdeleteitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService. DisableAlwaysMoveItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.disablealwaysmoveitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService. EnableAlwaysCategorizeItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.enablealwayscategorizeitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService. EnableAlwaysDeleteItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.enablealwaysdeleteitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService. EnableAlwaysMoveItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.enablealwaysmoveitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService. MoveItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.moveitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService. SetFlagStatusForItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.setflagstatusforitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService. SetReadStateForItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.setreadstateforitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService. SetRetentionPolicyForItemsInConversations](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.setretentionpolicyforitemsinconversations%28v=exchg.80%29.aspx) <br/> |[ApplyConversationAction](https://msdn.microsoft.com/library/73d7943d-d361-4f8b-9948-d85f886efa1a%28Office.15%29.aspx) <br/> |
-|Obtener elementos en una o más conversaciones  <br/> |[ExchangeService. GetConversationItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getconversationitems%28v=exchg.80%29.aspx) <br/> |[GetConversationItems](https://msdn.microsoft.com/library/8ae00a99-b37b-4194-829c-fe300db6ab99%28Office.15%29.aspx) <br/> |
+|Buscar conversaciones  <br/> |[ExchangeService.FindConversation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findconversation%28v=exchg.80%29.aspx) <br/> |[FindConversation](https://msdn.microsoft.com/library/2384908a-c203-45b6-98aa-efd6a4c23aac%28Office.15%29.aspx) <br/> |
+|Aplicar acciones de conversación  <br/> |[Conversation.EnableAlwaysCategorizeItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.conversation.enablealwayscategorizeitems%28v=exchg.80%29.aspx) <br/> [Conversation.EnableAlwaysDeleteItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.conversation.enablealwaysdeleteitems%28v=exchg.80%29.aspx) <br/> [Conversation.EnableAlwaysMoveItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.conversation.enablealwaysmoveitems%28v=exchg.80%29.aspx) <br/> [ExchangeService.CopyItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.copyitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.DeleteItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.deleteitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.DisableAlwaysCategorizeItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.disablealwayscategorizeitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.DisableAlwaysDeleteItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.disablealwaysdeleteitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.DisableAlwaysMoveItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.disablealwaysmoveitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.EnableAlwaysCategorizeItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.enablealwayscategorizeitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.EnableAlwaysDeleteItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.enablealwaysdeleteitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.EnableAlwaysMoveItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.enablealwaysmoveitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.MoveItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.moveitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.SetFlagStatusForItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.setflagstatusforitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.SetReadStateForItemsInConversations](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.setreadstateforitemsinconversations%28v=exchg.80%29.aspx) <br/> [ExchangeService.SetRetentionPolicyForItemsInConversations](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.setretentionpolicyforitemsinconversations%28v=exchg.80%29.aspx) <br/> |[ApplyConversationAction](https://msdn.microsoft.com/library/73d7943d-d361-4f8b-9948-d85f886efa1a%28Office.15%29.aspx) <br/> |
+|Obtener elementos en una o más conversaciones  <br/> |[ExchangeService.GetConversationItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getconversationitems%28v=exchg.80%29.aspx) <br/> |[GetConversationItems](https://msdn.microsoft.com/library/8ae00a99-b37b-4194-829c-fe300db6ab99%28Office.15%29.aspx) <br/> |
 
 <a name="bk_findewsma"> </a>
 
 ## <a name="find-a-conversation-by-using-the-ews-managed-api"></a>Buscar una conversación mediante la API administrada de EWS
 
-Puede encontrar conversaciones con el método de la API administrada de EWS [ExchangeService. FindConversation](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findconversation%28v=exchg.80%29.aspx) , como se muestra en el ejemplo siguiente. En este ejemplo se obtienen las 10 primeras conversaciones de la carpeta Bandeja de entrada que tienen un asunto que contiene la palabra "News". A continuación, el ejemplo escribe el tema de conversación, la hora de la última entrega y la lista de destinatarios únicos globales en la ventana de la consola. 
+Puede encontrar conversaciones mediante el método de api administrada EWS [ExchangeService.FindConversation,](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.findconversation%28v=exchg.80%29.aspx) como se muestra en el ejemplo siguiente. En este ejemplo se obtienen las primeras 10 conversaciones de la carpeta Bandeja de entrada que tienen un asunto que contiene la palabra "news". A continuación, el ejemplo escribe el tema de conversación, el último tiempo de entrega y la lista global de destinatarios únicos en la ventana de la consola. 
   
-En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un servidor de Exchange. 
+En este ejemplo se supone que **el servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un Exchange servidor. 
   
 ```cs
 static void FindConversation(ExchangeService service)
@@ -73,9 +73,9 @@ static void FindConversation(ExchangeService service)
 
 <a name="bk_findews"> </a>
 
-## <a name="find-a-conversation-by-using-ews"></a>Buscar una conversación mediante EWS
+## <a name="find-a-conversation-by-using-ews"></a>Buscar una conversación con EWS
 
-Puede encontrar conversaciones mediante la operación de EWS de [FindConversation](https://msdn.microsoft.com/library/2384908a-c203-45b6-98aa-efd6a4c23aac%28Office.15%29.aspx) , como se muestra en el ejemplo siguiente. En este ejemplo se obtienen las diez primeras conversaciones de la carpeta Bandeja de entrada que tienen un asunto que contiene la palabra "News". También es la solicitud XML que la API administrada de EWS envía cuando usa la API administrada de EWS para [buscar una conversación](#bk_findewsma).
+Puede encontrar conversaciones mediante la operación [EWS FindConversation,](https://msdn.microsoft.com/library/2384908a-c203-45b6-98aa-efd6a4c23aac%28Office.15%29.aspx) como se muestra en el ejemplo siguiente. En este ejemplo se obtienen las primeras diez conversaciones de la carpeta Bandeja de entrada que tienen un asunto que contiene la palabra "news". Esta es también la solicitud XML que envía la API administrada ews cuando se usa la API administrada ews para [buscar una conversación](#bk_findewsma).
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -101,9 +101,9 @@ Puede encontrar conversaciones mediante la operación de EWS de [FindConversatio
 
 ```
 
-El servidor responde a la solicitud **FindConversation** con un mensaje [FindConversationResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError** para indicar que la operación se completó correctamente. La respuesta también incluye la única conversación en el buzón que tiene un asunto que contiene la palabra "News". 
+El servidor responde a la solicitud **FindConversation** con un mensaje [FindConversationResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError** para indicar que la operación se completó correctamente. La respuesta también incluye la única conversación en el buzón que tiene un asunto que contiene la palabra "noticias". 
   
-Los elementos **Itemid**, **changekey**y **ConversationId** se han abreviado para facilitar su lectura. 
+Los **elementos ItemId,** **ChangeKey** y **ConversationId** se han acortado para mejorar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -190,11 +190,11 @@ Los elementos **Itemid**, **changekey**y **ConversationId** se han abreviado par
 
 ## <a name="apply-conversation-actions-by-using-the-ews-managed-api"></a>Aplicar acciones de conversación mediante la API administrada de EWS
 
-Puede aplicar acciones de conversación a una conversación con una serie de métodos de la API administrada de EWS, como se muestra en el ejemplo siguiente. En este ejemplo se agregan categorías a los elementos existentes en una conversación y se aplican las mismas categorías a los elementos futuros de la conversación. También se muestra cómo habilitar la transferencia automática de elementos en la conversación a una carpeta. En este ejemplo, los elementos se mueven a la carpeta Borradores.
+Puede aplicar acciones de conversación a una conversación mediante varios métodos de LA API administrada ews, como se muestra en el ejemplo siguiente. En este ejemplo se agregan categorías a elementos existentes de una conversación y se aplican las mismas categorías a los elementos futuros de la conversación. También muestra cómo habilitar el movimiento automático de elementos de la conversación a una carpeta. En este ejemplo, los elementos se mueven a la carpeta Borradores.
   
-En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un servidor de Exchange. 
+En este ejemplo se supone que **el servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un Exchange servidor. 
   
-Para obtener una lista completa de los métodos que aplican acciones de conversación, consulte la tabla 2.
+Para obtener una lista completa de los métodos que aplican acciones de conversación, vea la tabla 2.
   
 ```cs
 static void ApplyConversationActions(ExchangeService service, Conversation conversation)
@@ -219,9 +219,9 @@ static void ApplyConversationActions(ExchangeService service, Conversation conve
 
 ## <a name="apply-conversation-actions-by-using-ews"></a>Aplicar acciones de conversación mediante EWS
 
-Puede aplicar acciones de conversación, como clasificar, eliminar y mover mediante la operación [ApplyConversationAction](https://msdn.microsoft.com/library/73d7943d-d361-4f8b-9948-d85f886efa1a%28Office.15%29.aspx) , como se muestra en el ejemplo siguiente. En este ejemplo se agregan categorías a los elementos existentes en una conversación y se aplican las mismas categorías a los elementos futuros de la conversación. También se muestra cómo habilitar la transferencia automática de elementos en la conversación a una carpeta; en este ejemplo, los elementos se mueven a la carpeta Borradores. También es la solicitud XML que la API administrada de EWS envía cuando usa la API administrada de EWS para [aplicar acciones de conversación](#bk_applyewsma).
+Puede aplicar acciones de conversación, como clasificar, eliminar y mover, mediante la [operación ApplyConversationAction,](https://msdn.microsoft.com/library/73d7943d-d361-4f8b-9948-d85f886efa1a%28Office.15%29.aspx) como se muestra en el ejemplo siguiente. En este ejemplo se agregan categorías a elementos existentes de una conversación y se aplican las mismas categorías a los elementos futuros de la conversación. También muestra cómo habilitar el movimiento automático de elementos de la conversación a una carpeta; en este ejemplo, los elementos se mueven a la carpeta Borradores. Esta es también la solicitud XML que envía la API administrada ews cuando se usa la API administrada ews para [aplicar acciones de conversación.](#bk_applyewsma)
   
-El elemento **ConversationId** se ha abreviado para facilitar la legibilidad. 
+El **elemento ConversationId** se ha acortado para mejorar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -249,17 +249,17 @@ El elemento **ConversationId** se ha abreviado para facilitar la legibilidad.
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud **ApplyConversationAction** con un mensaje [ApplyConversationActionResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError** para indicar que la operación se completó correctamente. 
+El servidor responde a la **solicitud ApplyConversationAction** con un mensaje [ApplyConversationActionResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError** para indicar que la operación se completó correctamente. 
 
 <a name="bk_getitemssingleewsma"> </a>
 
-## <a name="get-items-in-a-single-conversation-by-using-the-conversation-identifier-in-the-ews-managed-api"></a>Obtener elementos en una sola conversación con el identificador de conversación en la API administrada de EWS
+## <a name="get-items-in-a-single-conversation-by-using-the-conversation-identifier-in-the-ews-managed-api"></a>Obtener elementos en una sola conversación mediante el identificador de conversación en la API administrada de EWS
 
-Puede obtener los elementos de una conversación mediante el método de la API administrada de EWS [ExchangeService. GetConversationItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getconversationitems%28v=exchg.80%29.aspx) . En este ejemplo se proporciona el conjunto de nodos de conversación para la primera conversación de la bandeja de entrada. El identificador del elemento, el asunto y la hora de recepción de cada elemento se devuelven en la respuesta, junto con las propiedades índice de la conversación y índice de conversación primario. Puede usar las propiedades del índice de conversación para reconstruir la jerarquía de nodos. 
+Puede obtener elementos en una conversación mediante el método de api administrada EWS [ExchangeService.GetConversationItems.](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getconversationitems%28v=exchg.80%29.aspx) En este ejemplo se proporciona el conjunto de nodos de conversación de la primera conversación de la Bandeja de entrada. El identificador de elemento, el asunto y el tiempo recibido para cada elemento se devuelven en la respuesta, junto con el índice de conversación y las propiedades del índice de conversación principal. Puede usar las propiedades del índice de conversación para reconstruir la jerarquía de nodos. 
   
-En este ejemplo, se omiten todos los elementos de conversación de las carpetas elementos eliminados y borradores predeterminados.
+En este ejemplo, se omiten todos los elementos de conversación de las carpetas Elementos eliminados y Borradores predeterminados.
   
-En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un servidor de Exchange. 
+En este ejemplo se supone que **el servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un Exchange servidor. 
   
 ```cs
 static void GetConversationItemsSingleConversation(ExchangeService service)
@@ -315,17 +315,17 @@ static void GetConversationItemsSingleConversation(ExchangeService service)
 
 ```
 
-Le recomendamos que almacene en caché la propiedad **SyncState** de las siguientes solicitudes para obtener los elementos de la conversación. 
+Se recomienda almacenar en caché la **propiedad SyncState** para las solicitudes posteriores para obtener elementos en la conversación. 
 
 <a name="bk_getitemsmanyewsma"> </a>
 
 ## <a name="get-items-in-many-conversations-by-using-the-conversationrequest-object-in-the-ews-managed-api"></a>Obtener elementos en muchas conversaciones mediante el objeto ConversationRequest en la API administrada de EWS
 
-Puede usar el objeto [ConversationRequest](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.conversationrequest%28v=exchg.80%29.aspx) y el método [ExchangeService. GETCONVERSATIONITEMS](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getconversationitems%28v=exchg.80%29.aspx) de la API administrada de EWS para obtener elementos de dos o más conversaciones. En este ejemplo se proporciona un conjunto de nodos de conversación para las dos primeras conversaciones de la bandeja de entrada. El identificador del elemento, el asunto y la hora de recepción de cada elemento se devolverán en la respuesta, junto con las propiedades índice de la conversación y índice de conversación primario. Puede usar las propiedades del índice de conversación para reconstruir la jerarquía de nodos. En este ejemplo se supone que los dos primeros elementos de la bandeja de entrada son de distintas conversaciones. 
+Puede usar el [objeto ConversationRequest](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.conversationrequest%28v=exchg.80%29.aspx) y el método de api administrada EWS [ExchangeService.GetConversationItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.getconversationitems%28v=exchg.80%29.aspx) para obtener elementos de dos o más conversaciones. En este ejemplo se proporciona un conjunto de nodos de conversación para las dos primeras conversaciones de la Bandeja de entrada. El identificador de elemento, el asunto y el tiempo recibido para cada elemento se devolverán en la respuesta, junto con el índice de conversación y las propiedades del índice de conversación principal. Puede usar las propiedades del índice de conversación para reconstruir la jerarquía de nodos. En este ejemplo se supone que los dos primeros elementos de la Bandeja de entrada son de conversaciones diferentes. 
   
-En este ejemplo, se omiten todos los elementos de conversación de las carpetas elementos eliminados y borradores predeterminados.
+En este ejemplo, se omiten todos los elementos de conversación de las carpetas Elementos eliminados y Borradores predeterminados.
   
-En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un servidor de Exchange. 
+En este ejemplo se supone que **el servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido y que el usuario se ha autenticado en un Exchange servidor. 
   
 ```cs
 static void GetConversationItemsManyConversations(ExchangeService service)
@@ -390,19 +390,19 @@ static void GetConversationItemsManyConversations(ExchangeService service)
 
 ```
 
-Como procedimiento recomendado, se recomienda devolver solo las propiedades que requiera la aplicación cliente, en lugar de usar la opción **FirstClassProperties** para la clase **BasePropertySet** . Le recomendamos que almacene en caché la propiedad **SyncState** de las siguientes solicitudes para obtener los elementos de la conversación. 
+Como procedimiento recomendado, se recomienda devolver solo las propiedades que requiere la aplicación cliente, en lugar de usar la opción **FirstClassProperties** para la **clase BasePropertySet.** Se recomienda almacenar en caché la **propiedad SyncState** para las solicitudes posteriores para obtener elementos en la conversación. 
 
 <a name="bk_getitemsews"> </a>
 
 ## <a name="get-items-in-conversations-by-using-the-conversation-identifier-in-ews"></a>Obtener elementos en conversaciones mediante el identificador de conversación en EWS
 
-Puede obtener los elementos de una conversación mediante la operación de EWS de [GetConversationItems](https://msdn.microsoft.com/library/8ae00a99-b37b-4194-829c-fe300db6ab99%28Office.15%29.aspx) . En este ejemplo se proporciona un conjunto de nodos de conversación para la primera conversación de la bandeja de entrada. El identificador del elemento, el asunto y la hora de recepción de cada elemento se devuelven en la respuesta, junto con las propiedades índice de la conversación y índice de conversación primario. Puede usar las propiedades del índice de conversación para reconstruir la jerarquía de nodos. 
+Puede obtener elementos en una conversación mediante la operación [EWS GetConversationItems.](https://msdn.microsoft.com/library/8ae00a99-b37b-4194-829c-fe300db6ab99%28Office.15%29.aspx) En este ejemplo se proporciona un conjunto de nodos de conversación para la primera conversación de la Bandeja de entrada. El identificador de elemento, el asunto y el tiempo recibido para cada elemento se devuelven en la respuesta, junto con el índice de conversación y las propiedades del índice de conversación principal. Puede usar las propiedades del índice de conversación para reconstruir la jerarquía de nodos. 
   
-En este ejemplo, se omiten todos los elementos de conversación de las carpetas elementos eliminados y borradores predeterminados.
+En este ejemplo, se omiten todos los elementos de conversación de las carpetas Elementos eliminados y Borradores predeterminados.
   
-El elemento **ConversationId** se ha abreviado para facilitar la legibilidad. 
+El **elemento ConversationId** se ha acortado para mejorar la legibilidad. 
   
-Para obtener elementos de más de una conversación, incluya elementos de **conversación** adicionales. 
+Para obtener elementos de más de una conversación, incluya elementos **de conversación adicionales.** 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -437,9 +437,9 @@ Para obtener elementos de más de una conversación, incluya elementos de **conv
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud **GetConversationItems** con un mensaje [GetConversationItemsResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError** para indicar que la operación se completó correctamente. La respuesta también incluye [ConversationNodes](https://msdn.microsoft.com/library/5c8a35b8-a940-4b3e-8768-9ba95766fd79%28Office.15%29.aspx) en la conversación. 
+El servidor responde a la solicitud **GetConversationItems** con un mensaje [GetConversationItemsResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError** para indicar que la operación se completó correctamente. La respuesta también incluye [los ConversationNodes](https://msdn.microsoft.com/library/5c8a35b8-a940-4b3e-8768-9ba95766fd79%28Office.15%29.aspx) en la conversación. 
   
-Los elementos **Itemid**, **SyncState**y **ConversationId** se han abreviado para facilitar su lectura. 
+Los **elementos ItemId,** **SyncState** y **ConversationId** se han acortado para mejorar la legibilidad. 
   
 ```XML
 <s:Envelope xmlns:s="https://schemas.xmlsoap.org/soap/envelope/">
@@ -563,23 +563,23 @@ Los elementos **Itemid**, **SyncState**y **ConversationId** se han abreviado par
 
 ## <a name="version-differences"></a>Diferencias de versión
 
-Cuando se usa el Service Pack 1 (SP1) de Exchange Server 2010, el método [FindConversation](https://msdn.microsoft.com/library/office/jj220668%28v=exchg.80%29.aspx) tiene menos opciones disponibles y la operación [FindConversation](https://msdn.microsoft.com/library/2384908a-c203-45b6-98aa-efd6a4c23aac%28Office.15%29.aspx) tiene menos elementos en la solicitud. 
+Cuando usa Exchange Server 2010 Service Pack 1 (SP1), el método [FindConversation](https://msdn.microsoft.com/library/office/jj220668%28v=exchg.80%29.aspx) tiene menos opciones disponibles y la operación [FindConversation](https://msdn.microsoft.com/library/2384908a-c203-45b6-98aa-efd6a4c23aac%28Office.15%29.aspx) tiene menos elementos en la solicitud. 
   
-**Tabla 3. Exchange 2010 SP1 versión compatible con FindConversation**
+**Tabla 3. Exchange versión de 2010 SP1 para FindConversation**
 
 |**Método de la API administrada de EWS**|**Elementos EWS**|
 |:-----|:-----|
 |[FindConversation (ViewBase, FolderId)](https://msdn.microsoft.com/library/office/jj220668%28v=exchg.80%29.aspx) <br/> |[IndexedPageItemView](https://msdn.microsoft.com/library/6d1b0b04-cc35-4a57-bd7a-824136d14fda%28Office.15%29.aspx) <br/> [SortOrder](https://msdn.microsoft.com/library/c2413f0b-8c03-46ae-9990-13338b3c53a6%28Office.15%29.aspx) <br/> [ParentFolderId](https://msdn.microsoft.com/library/0e3e6e5f-06d0-499b-8ca4-d36036521658%28Office.15%29.aspx) <br/> |
    
-El método de la API administrada de EWS de [GetConversationItems](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.getconversationitems%28v=exchg.80%29.aspx) y la operación de EWS [GetConversationItems](https://msdn.microsoft.com/library/8ae00a99-b37b-4194-829c-fe300db6ab99%28Office.15%29.aspx) se introdujeron en Exchange Server 2013. Las aplicaciones destinadas a versiones anteriores de Exchange solo pueden aplicar acciones de conversación a conversaciones, como se muestra en la tabla 2. 
+El método de API administrada EWS [GetConversationItems](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.exchangeservice.getconversationitems%28v=exchg.80%29.aspx) y la operación EWS [GetConversationItems](https://msdn.microsoft.com/library/8ae00a99-b37b-4194-829c-fe300db6ab99%28Office.15%29.aspx) se introdujeron en Exchange Server 2013. Las aplicaciones destinadas a versiones anteriores de Exchange solo pueden aplicar acciones de conversación a las conversaciones, como se muestra en la tabla 2. 
   
-El método de la API administrada de EWS de **FindConversation** y el método EWS de **FindConversation** no están disponibles en la versión de lanzamiento inicial de Exchange 2010 o en Exchange 2007. 
+El método de la API administrada ews **FindConversation** y el método **EWS FindConversation** no están disponibles en la versión de lanzamiento inicial de Exchange 2010 o en Exchange 2007. 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Correo electrónico y EWS en Exchange](email-and-ews-in-exchange.md)
 - [Usar filtros de búsqueda con EWS en Exchange](how-to-use-search-filters-with-ews-in-exchange.md)   
-- [Exchange 2013: buscar conversaciones en buzones de correo mediante programación](https://code.msdn.microsoft.com/exchange/Exchange-2013-Find-d4b6b3af)    
-- [Exchange 2013: aplicar acciones para administrar conversaciones en un buzón de correo](https://code.msdn.microsoft.com/exchange/Exchange-2013-Apply-accde0b5)
+- [Exchange 2013: Buscar conversaciones en buzones mediante programación](https://code.msdn.microsoft.com/exchange/Exchange-2013-Find-d4b6b3af)    
+- [Exchange 2013: Aplicar acciones para administrar conversaciones en un buzón](https://code.msdn.microsoft.com/exchange/Exchange-2013-Apply-accde0b5)
     
 

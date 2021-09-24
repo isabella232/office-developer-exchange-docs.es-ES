@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2ae9ff27-8b26-49e5-bbae-01f76cf061d9
-description: El elemento DisplayName (FederatedDirectoryGroupType) está pensado solo para uso interno.
-ms.openlocfilehash: 0c3b359b8fa0dc65d366d3703fe4ab0982998989
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento DisplayName (FederatedDirectoryGroupType) está diseñado solo para uso interno.
+ms.openlocfilehash: aa9bc289830d5940c2aa2351e4e948fbc63cd064
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461369"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522113"
 ---
 # <a name="displayname-federateddirectorygrouptype"></a>DisplayName (FederatedDirectoryGroupType)
 
-El elemento **displayName (FederatedDirectoryGroupType)** está pensado solo para uso interno. 
+El **elemento DisplayName (FederatedDirectoryGroupType)** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,11 +25,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 

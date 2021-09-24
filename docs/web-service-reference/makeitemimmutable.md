@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: de1d2a60-aeeb-4625-8b11-23c42e1e7bae
-description: El elemento MakeItemImmutable especifica un valor booleano que indica si un elemento se debe establecer como de solo lectura.
-ms.openlocfilehash: 05c6e3343b8ba892048174ad98c9d31fe8da685b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento MakeItemImmutable especifica un valor booleano que indica si un elemento debe hacerse de solo lectura.
+ms.openlocfilehash: 0e1d28f19492bb6dc013957aa5957b59e791b24b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465866"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524829"
 ---
 # <a name="makeitemimmutable"></a>MakeItemImmutable
 
-El elemento **MakeItemImmutable** especifica un valor booleano que indica si un elemento se debe establecer como de solo lectura. 
+El **elemento MakeItemImmutable** especifica un valor booleano que indica si un elemento debe hacerse de solo lectura. 
   
 ```XML
 <MakeItemImmutable>true | false</MakeItemImmutable>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **MakeItemImmutable** indica que el elemento se debe establecer como de solo lectura. Un valor de **false** indica que el elemento permite el acceso de lectura y escritura. 
+Un valor de texto **de true** para el **elemento MakeItemImmutable** indica que el elemento debe hacerse de solo lectura. Un valor de **false** indica que el elemento permite el acceso de lectura y escritura. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

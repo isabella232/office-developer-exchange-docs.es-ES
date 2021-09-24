@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0ffcdcf4-8ea3-483c-bb7f-0cd84126120c
-description: El elemento ActionType especifica la acción que se llevará a cabo en el aviso.
-ms.openlocfilehash: 5c62b2dd945b23a5ff2bb824385c45dbc617a5a5
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ActionType especifica la acción que se debe realizar en el aviso.
+ms.openlocfilehash: d78725c75ad13a71d69d7749f0a71cd99d606929
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465061"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522260"
 ---
 # <a name="actiontype-reminderactiontype"></a>ActionType (ReminderActionType)
 
-El elemento **ActionType** especifica la acción que se llevará a cabo en el aviso. 
+El **elemento ActionType** especifica la acción que se debe realizar en el aviso. 
   
 ```XML
 <ActionType> Dismiss | Snooze </ActionType>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ActionType** especifica la acción que se llevará a cabo en el aviso. El valor de texto **descartado** indica que el aviso debe descartarse. El valor de texto de **SNOOZE** indica que el aviso debe retrasarse hasta el tiempo especificado por el elemento [NewReminderTime](newremindertime.md) . 
+El valor de texto del **elemento ActionType** especifica la acción que se debe realizar en el aviso. El valor de texto **de Dismiss** indica que se debe descartar el aviso. El valor de texto **de Snooze** indica que el aviso debe retrasarse hasta la hora especificada por el [elemento NewReminderTime.](newremindertime.md) 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,11 +56,11 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [ReminderItemAction](reminderitemaction.md)
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

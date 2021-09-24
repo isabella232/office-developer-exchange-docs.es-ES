@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3bdf5955-1212-48a1-b3b5-743086866c91
-description: El elemento RetentionAction especifica la acción que se realiza en los elementos con la etiqueta de retención.
-ms.openlocfilehash: c16988413e732ddc3cd6ebc355cb73c4d96550c7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento RetentionAction especifica la acción realizada en los elementos con la etiqueta de retención.
+ms.openlocfilehash: ecea4326f0e50460635966991cd55badf8946993
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465236"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517948"
 ---
 # <a name="retentionaction"></a>RetentionAction
 
-El elemento **RetentionAction** especifica la acción que se realiza en los elementos con la etiqueta de retención. 
+El **elemento RetentionAction** especifica la acción realizada en los elementos con la etiqueta de retención. 
   
 ```XML
 <RetentionAction> None | MoveToDeletedItems | MoveToFolder | DeleteAndAllowRecovery | PermanentlyDelete | MarkAsPastRetentionLimit | MoveToArchive <RetentionAction>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,21 +42,21 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **RetentionAction** es la acción que se realiza en los elementos. La lista siguiente contiene los valores de texto para el elemento **RetentionAction** . 
+El valor de texto del **elemento RetentionAction** es la acción realizada en los elementos. La siguiente lista contiene los valores de texto del **elemento RetentionAction.** 
   
-> **None** : no se realiza ninguna acción en el elemento. 
+> **Ninguno:** no se realiza ninguna acción en el elemento. 
     
-> **MoveToDeletedItems** : el elemento se mueve a la carpeta elementos eliminados de forma predeterminada. 
+> **MoveToDeletedItems:** el elemento se mueve a la carpeta elementos eliminados predeterminada. 
     
-> **MoveToFolder** : el elemento se mueve a una carpeta especificada. 
+> **MoveToFolder:** el elemento se mueve a una carpeta especificada. 
     
-> **DeleteAndAllowRecovery** : el elemento se elimina y se coloca en el contenedor. 
+> **DeleteAndAllowRecovery:** el elemento se elimina y se coloca en el contenedor. 
     
-> **PermanentlyDelete** : el elemento se elimina de forma permanente del buzón de correo. 
+> **PermanentlyDelete:** el elemento se elimina permanentemente del buzón. 
     
-> **MarkAsPastRetentionLimit** : el elemento se marca como superado el límite de tiempo de retención. 
+> **MarkAsPastRetentionLimit:** el elemento se marca como que ha superado el límite de tiempo de retención. 
     
-> **MoveToArchive** : el elemento se mueve al buzón de archivo. 
+> **MoveToArchive:** el elemento se mueve al buzón de archivo. 
     
 ## <a name="remarks"></a>Comentarios
 
@@ -69,8 +69,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

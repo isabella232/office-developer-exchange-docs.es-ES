@@ -1,23 +1,23 @@
 ---
-title: Usuario (MailboxAssociationType)
+title: User (MailboxAssociationType)
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d6e2677b-2b60-4def-8566-015a50da8605
-description: El elemento User (MailboxAssociationType) está destinado exclusivamente para uso interno.
-ms.openlocfilehash: 65bc95aa6645b2824bcb126d30e53bb5b7b102d9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento User (MailboxAssociationType) está diseñado solo para uso interno.
+ms.openlocfilehash: 3a50e9927121fc9ddc010a47706587487634d708
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530228"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522435"
 ---
-# <a name="user-mailboxassociationtype"></a>Usuario (MailboxAssociationType)
+# <a name="user-mailboxassociationtype"></a>User (MailboxAssociationType)
 
-El elemento **User (MailboxAssociationType)** está destinado exclusivamente para uso interno. 
+El **elemento User (MailboxAssociationType)** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,11 +25,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 

@@ -3,40 +3,40 @@ title: Obtener acceso al correo electrónico como delegado mediante EWS en Excha
 manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a8123604-c7c0-405d-a0ed-7a9b4a431bfd
-description: Obtenga información sobre cómo acceder al correo electrónico como delegado mediante la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: 0c26f69042c568fe7d877778c7d8f1e689e5b372
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Obtenga información sobre cómo obtener acceso al correo electrónico como delegado mediante la API administrada ews o EWS en Exchange.
+ms.openlocfilehash: aa921bc36004b3a26caa514390e52249021b304f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44528289"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521217"
 ---
 # <a name="access-email-as-a-delegate-by-using-ews-in-exchange"></a>Obtener acceso al correo electrónico como delegado mediante EWS en Exchange
 
-Obtenga información sobre cómo acceder al correo electrónico como delegado mediante la API administrada de EWS o EWS en Exchange.
+Obtenga información sobre cómo obtener acceso al correo electrónico como delegado mediante la API administrada ews o EWS en Exchange.
   
-Puede usar la API administrada de EWS o EWS para conceder a un usuario acceso delegado a la carpeta Bandeja de entrada de un propietario de buzón. A continuación, el delegado puede crear convocatorias de reunión en nombre del propietario del buzón, buscar correo electrónico y recuperar, actualizar y eliminar correo electrónico de la carpeta Bandeja de entrada del propietario del buzón, en función de sus permisos.
+Puede usar la API administrada ews o EWS para proporcionar a un usuario acceso delegado a la carpeta Bandeja de entrada del propietario de un buzón. A continuación, el delegado puede crear solicitudes de reunión en nombre del propietario del buzón, buscar correo electrónico y recuperar, actualizar y eliminar correo electrónico de la carpeta Bandeja de entrada del propietario del buzón, según sus permisos.
   
-Como delegado, se usan los mismos métodos y operaciones para tener acceso a la carpeta Bandeja de entrada de un propietario del buzón que se usa para obtener acceso a una carpeta Bandeja de entrada sin acceso delegado. La principal diferencia es que tiene que usar el [acceso explícito](delegate-access-and-ews-in-exchange.md#bk_explicit) para buscar o crear un elemento de correo electrónico y, después, después de identificar el identificador de elemento, puede usar el [acceso implícito](delegate-access-and-ews-in-exchange.md#bk_implicit) para obtener, actualizar o eliminar el elemento. 
+Como delegado, usa los mismos métodos y operaciones para tener acceso a la carpeta Bandeja de entrada del propietario de un buzón que se usa para obtener acceso a una carpeta bandeja de entrada sin acceso delegado. La diferencia principal es que [](delegate-access-and-ews-in-exchange.md#bk_explicit) debe usar el acceso explícito para buscar o crear un elemento [](delegate-access-and-ews-in-exchange.md#bk_implicit) de correo electrónico y, después de identificar el identificador del elemento, puede usar el acceso implícito para obtener, actualizar o eliminar el elemento. 
   
-**Tabla 1. Métodos de la API administrada de EWS y operaciones EWS para obtener acceso al correo electrónico como delegado**
+**Tabla 1. Métodos de API administrada EWS y operaciones EWS para obtener acceso al correo electrónico como delegado**
 
-|**Si quiere...**|**Use este método de API administrada de EWS...**|**Usar esta operación de EWS...**|
+|**Si quiere...**|**Use este método de LA API administrada de EWS...**|**Use esta operación EWS...**|
 |:-----|:-----|:-----|
-|Crear y enviar un correo electrónico como delegado  <br/> |[EmailMessage. Save](https://msdn.microsoft.com/library/dd635209%28v=exchg.80%29.aspx) donde el parámetro [FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) proporciona [acceso explícito](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) a la carpeta Borradores del propietario del buzón de correo  <br/> [EmailMessage. SendAndSaveCopy](https://msdn.microsoft.com/library/dd634248%28v=exchg.80%29.aspx) donde el parámetro [FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) proporciona [acceso explícito](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) a la carpeta elementos enviados del propietario del buzón.  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) donde el elemento [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) especifica el [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) del propietario del buzón de correo  <br/> [SendItem](https://msdn.microsoft.com/library/a966da19-b05a-4504-ac98-91acc1667b9a%28Office.15%29.aspx) donde el elemento [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) especifica el [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) del propietario del buzón  <br/> |
-|Crear varios mensajes de correo electrónico como delegado  <br/> |[ExchangeService. CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) donde el parámetro **FolderId** proporciona [acceso explícito](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) a la carpeta Bandeja de entrada del propietario del buzón  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) donde el elemento [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) especifica el [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) del propietario del buzón de correo  <br/> |
-|Buscar o buscar un correo electrónico como delegado  <br/> |[ExchangeService. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) donde el parámetro **FolderId** proporciona [acceso explícito](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) a la carpeta Bandeja de entrada del propietario del buzón  <br/> |[FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) donde el elemento [Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) especifica el [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) del propietario del buzón.  <br/> |
-|Obtener un correo electrónico como delegado  <br/> |[EmailMessage. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |
-|Actualizar un correo electrónico como delegado  <br/> |[EmailMessage. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) seguido de [EmailMessage. Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) seguido de [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
-|Eliminar un correo electrónico como delegado  <br/> |[EmailMessage. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) seguido de [EmailMessage. Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.delete%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) seguido de [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
+|Crear y enviar un correo electrónico como delegado  <br/> |[EmailMessage.Save donde](https://msdn.microsoft.com/library/dd635209%28v=exchg.80%29.aspx) el [parámetro FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) proporciona [acceso explícito](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) a la carpeta Borradores del propietario del buzón  <br/> [EmailMessage.SendAndSaveCopy](https://msdn.microsoft.com/library/dd634248%28v=exchg.80%29.aspx) donde el parámetro [FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) proporciona acceso [explícito](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) a la carpeta Elementos enviados del propietario del buzón  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) donde el [elemento Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) especifica el [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) del propietario del buzón  <br/> [SendItem](https://msdn.microsoft.com/library/a966da19-b05a-4504-ac98-91acc1667b9a%28Office.15%29.aspx) donde el [elemento Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) especifica el [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) del propietario del buzón  <br/> |
+|Crear varios mensajes de correo electrónico como delegado  <br/> |[ExchangeService.CreateItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.createitems%28v=exchg.80%29.aspx) donde el parámetro **FolderId** proporciona [acceso explícito](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) a la carpeta Bandeja de entrada del propietario del buzón  <br/> |[CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) donde el [elemento Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) especifica el [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) del propietario del buzón  <br/> |
+|Buscar o buscar un correo electrónico como delegado  <br/> |[ExchangeService.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) donde el parámetro **FolderId** proporciona [acceso explícito](delegate-access-and-ews-in-exchange.md#bk_explicitewsma) a la carpeta Bandeja de entrada del propietario del buzón  <br/> |[FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) donde el [elemento Mailbox](https://msdn.microsoft.com/library/befc70fd-51cb-4258-884c-80c9050f0e82%28Office.15%29.aspx) especifica el [EmailAddress](https://msdn.microsoft.com/library/922c8b21-04a9-4229-b48c-187c3095422e%28Office.15%29.aspx) del propietario del buzón  <br/> |
+|Obtener un correo electrónico como delegado  <br/> |[EmailMessage.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |
+|Actualizar un correo electrónico como delegado  <br/> |[EmailMessage.Bind seguido](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) de [EmailMessage.Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) <br/> |[GetItem seguido](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) de [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |
+|Eliminar un correo electrónico como delegado  <br/> |[EmailMessage.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) seguido de [EmailMessage.Delete](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.delete%28v=exchg.80%29.aspx) <br/> |[GetItem seguido](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) de [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |
    
-Tenga en cuenta lo siguiente cuando trabaje con correo electrónico como delegado:
+Tenga en cuenta lo siguiente al trabajar con correos electrónicos como delegado:
   
-- Si un delegado solo necesita trabajar con convocatorias de reunión y respuestas, el delegado no necesita acceso a la carpeta Bandeja de entrada. Para obtener más información, vea [tareas de requisitos previos para obtener acceso a los calendarios como delegado](how-to-access-a-calendar-as-a-delegate-by-using-ews-in-exchange.md#bk_prereq).
+- Si un delegado solo necesita trabajar con las solicitudes de reunión y las respuestas, el delegado no necesita acceso a la carpeta Bandeja de entrada. Para obtener más información, vea [tareas de requisitos previos para obtener acceso a calendarios como delegado.](how-to-access-a-calendar-as-a-delegate-by-using-ews-in-exchange.md#bk_prereq)
     
-- Cuando un destinatario recibe un mensaje que se ha enviado en nombre de un propietario del buzón, el remitente aparece como " *delegado* en nombre de *buzón propietario* ". 
+- Cuando un destinatario recibe un mensaje que se envió en nombre del propietario de un buzón de correo, el remitente aparece como *"Delegado*  en nombre del propietario  *del*  buzón". 
     
 > [!NOTE]
 > En los ejemplos de código de este artículo, primary@contoso.com es el propietario del buzón. 
@@ -44,14 +44,14 @@ Tenga en cuenta lo siguiente cuando trabaje con correo electrónico como delegad
 ## <a name="prerequisite-tasks"></a>Tareas de requisitos previos
 <a name="bk_prereq"> </a>
 
-Para que un usuario pueda tener acceso a la carpeta Bandeja de entrada del propietario del buzón como delegado, el usuario debe [agregarse como delegado con permisos](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md) para la carpeta Bandeja de entrada del propietario del buzón. 
+Para que un usuario pueda tener acceso a la carpeta Bandeja de entrada del propietario del buzón como delegado, el usuario debe agregarse como delegado con permisos [a](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md) la carpeta Bandeja de entrada del propietario del buzón. 
   
 ## <a name="create-and-send-an-email-as-a-delegate-by-using-the-ews-managed-api"></a>Crear y enviar un correo electrónico como delegado mediante la API administrada de EWS
 <a name="bk_createewsma"> </a>
 
-La API administrada de EWS permite usar el objeto de servicio para que el usuario delegado cree y envíe correo electrónico en nombre del propietario del buzón. En este ejemplo se muestra cómo usar el método [Save](https://msdn.microsoft.com/library/dd635209%28v=exchg.80%29.aspx) para guardar el mensaje en la carpeta Borradores del propietario del buzón y, a continuación, el método [SendAndSaveCopy](https://msdn.microsoft.com/library/dd634248%28v=exchg.80%29.aspx) para enviar el correo y guardar el mensaje en la carpeta elementos enviados del propietario del buzón. 
+La API administrada ews permite usar el objeto de servicio para que el usuario delegado cree y envíe correo electrónico en nombre del propietario del buzón. En este ejemplo se muestra cómo usar el método [Save](https://msdn.microsoft.com/library/dd635209%28v=exchg.80%29.aspx) para guardar el mensaje en la carpeta Borradores del propietario del buzón y, a continuación, el método [SendAndSaveCopy](https://msdn.microsoft.com/library/dd634248%28v=exchg.80%29.aspx) para enviar el correo y guardar el mensaje en la carpeta Elementos enviados del propietario del buzón. 
   
-En este ejemplo se supone que el **servicio** es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido para el delegado y que se han concedido al delegado los [permisos adecuados para la bandeja de entrada, borradores y carpeta elementos enviados del propietario del buzón](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md).
+En este ejemplo se supone que **el** servicio es un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) válido para el delegado y que al delegado se le han concedido los permisos adecuados para la carpeta Bandeja de entrada, Borradores y Elementos enviados del propietario del [buzón.](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md)
   
 ```cs
 public static void DelegateAccessCreateEmail(ExchangeService service)
@@ -83,9 +83,9 @@ public static void DelegateAccessCreateEmail(ExchangeService service)
 ## <a name="create-and-send-an-email-as-a-delegate-by-using-ews"></a>Crear y enviar un correo electrónico como delegado mediante EWS
 <a name="bk_createews"> </a>
 
-EWS permite usar el objeto de servicio para que el usuario delegado cree y envíe correo electrónico en nombre del propietario del buzón. En este ejemplo se muestra cómo usar la operación [CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) para crear un correo electrónico y la operación [SendItem](https://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) para enviar la hora y guardarla en la carpeta elementos enviados del propietario del buzón. 
+EWS permite usar el objeto de servicio para que el usuario delegado cree y envíe correo electrónico en nombre del propietario del buzón. En este ejemplo se muestra cómo usar la operación [CreateItem](https://msdn.microsoft.com/library/aa4a7c94-f668-4bd2-8079-c855f6ab17e1%28Office.15%29.aspx) para crear un correo electrónico y la operación [SendItem](https://msdn.microsoft.com/library/337b89ef-e1b7-45ed-92f3-8abe4200e4c7%28Office.15%29.aspx) para enviar la hora y guardarla en la carpeta Elementos enviados del propietario del buzón. 
   
-También es la primera solicitud XML que la API administrada de EWS envía cuando se usa el método **Save** para [crear y enviar un correo electrónico](#bk_createewsma).
+También es la primera solicitud XML que envía la API administrada ews cuando se usa el **método Save** para crear y enviar un [correo electrónico](#bk_createewsma).
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -121,9 +121,9 @@ También es la primera solicitud XML que la API administrada de EWS envía cuand
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud **CreateItem** con un mensaje [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor de elemento [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, que indica que el correo electrónico se ha creado y guardado correctamente. La respuesta también contiene el identificador de elemento del correo electrónico recién creado.
+El servidor responde a la solicitud **CreateItem** con un mensaje [CreateItemResponse](https://msdn.microsoft.com/library/742a46a0-2475-45a0-b44f-90639a3f5a43%28Office.15%29.aspx) que incluye un valor de elemento [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, que indica que el correo electrónico se creó y guardó correctamente. La respuesta también contiene el identificador de elemento del correo electrónico recién creado.
   
-El valor de **Itemid** se ha abreviado para facilitar su lectura. 
+El **valor ItemId** se ha acortado para mejorar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -158,9 +158,9 @@ El valor de **Itemid** se ha abreviado para facilitar su lectura.
 </s:Envelope>
 ```
 
-A continuación, use la operación **SendItem** para enviar el mensaje en nombre del propietario del buzón y guárdelo en la carpeta elementos enviados del propietario del buzón. 
+A continuación, use la **operación SendItem** para enviar el mensaje en nombre del propietario del buzón y guardarlo en la carpeta Elementos enviados del propietario del buzón. 
   
-El valor de **Itemid** se ha abreviado para facilitar su lectura. 
+El **valor ItemId** se ha acortado para mejorar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -189,7 +189,7 @@ El valor de **Itemid** se ha abreviado para facilitar su lectura.
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud **SendItem** con un mensaje [SendItemResponse](https://msdn.microsoft.com/library/26ac41c7-57d9-473e-ab7a-bae93e1d2aba%28Office.15%29.aspx) que incluye el valor de un elemento [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, lo que indica que el correo electrónico se envió y se guardó correctamente en la carpeta elementos enviados del propietario del buzón.
+El servidor responde a la solicitud **SendItem** con un mensaje [SendItemResponse](https://msdn.microsoft.com/library/26ac41c7-57d9-473e-ab7a-bae93e1d2aba%28Office.15%29.aspx) que incluye un valor de elemento [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, que indica que el correo electrónico se envió y guardó correctamente en la carpeta Elementos enviados del propietario del buzón.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -221,7 +221,7 @@ El servidor responde a la solicitud **SendItem** con un mensaje [SendItemRespons
 ## <a name="search-for-an-email-as-a-delegate-by-using-the-ews-managed-api"></a>Buscar un correo electrónico como delegado mediante la API administrada de EWS
 <a name="bk_searchewsma"> </a>
 
-Para buscar un correo electrónico, debe usar uno de los métodos [ExchangeService. FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) que incluya un parámetro [FolderId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) , de modo que pueda especificar la carpeta Bandeja de entrada del propietario del buzón. 
+Para buscar un correo electrónico, debe usar uno de los [métodos ExchangeService.FindItems](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice.finditems%28v=exchg.80%29.aspx) que incluye un parámetro [FolderId,](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.folderid%28v=exchg.80%29.aspx) de modo que pueda especificar la carpeta Bandeja de entrada del propietario del buzón. 
   
 ```cs
 static void DelegateAccessSearchEmailWithFilter(ExchangeService service)
@@ -265,14 +265,14 @@ static void DelegateAccessSearchEmailWithFilter(ExchangeService service)
 }
 ```
 
-Una vez que la llamada de **FindItems** devuelve una respuesta con un identificador, puede obtener, actualizar o eliminar ese correo electrónico con el identificador y el [acceso implícito](delegate-access-and-ews-in-exchange.md#bk_implicit) , y no es necesario especificar la dirección SMTP del propietario del buzón. 
+Después de que la llamada **FindItems** devuelva una respuesta con un identificador, [](delegate-access-and-ews-in-exchange.md#bk_implicit) puede obtener, actualizar o eliminar ese correo electrónico mediante el identificador y el acceso implícito, y no es necesario especificar la dirección SMTP del propietario del buzón. 
   
 ## <a name="search-for-an-email-as-a-delegate-by-using-ews"></a>Buscar un correo electrónico como delegado mediante EWS
 <a name="bk_searchews"> </a>
 
-EWS permite usar el objeto de servicio para que el usuario delegado busque los correos electrónicos que cumplen con un conjunto de criterios de búsqueda. En este ejemplo se muestra cómo usar la operación [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) para buscar mensajes en la carpeta Bandeja de entrada del propietario que contengan la palabra "fútbol" en el asunto. 
+EWS permite usar el objeto de servicio para que el usuario delegado busque correos electrónicos que cumplan un conjunto de criterios de búsqueda. En este ejemplo se muestra cómo usar la operación [FindItem](https://msdn.microsoft.com/library/ebad6aae-16e7-44de-ae63-a95b24539729%28Office.15%29.aspx) para buscar mensajes en la carpeta Bandeja de entrada del propietario que contengan la palabra "fútbol" en el asunto. 
   
-También es la solicitud XML que la API administrada de EWS envía cuando [busca un correo electrónico](#bk_searchewsma).
+Esta es también la solicitud XML que la API administrada ews envía al [buscar un correo electrónico](#bk_searchewsma).
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -320,9 +320,9 @@ También es la solicitud XML que la API administrada de EWS envía cuando [busca
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud **FindItem** con un mensaje [FindItemResponse](https://msdn.microsoft.com/library/c8b316df-d4ab-49b8-96d4-8e9a016730ef%28Office.15%29.aspx) que incluye un valor de elemento [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, lo que indica que la búsqueda se ha completado correctamente. La respuesta contiene un elemento [Message](https://msdn.microsoft.com/library/2400b33c-43b2-4fc2-b6fb-275a99e0e810%28Office.15%29.aspx) para todos los correos electrónicos que cumplen los criterios de búsqueda. En este caso, solo se encuentra un mensaje de correo electrónico. 
+El servidor responde a la solicitud **FindItem** con un mensaje [FindItemResponse](https://msdn.microsoft.com/library/c8b316df-d4ab-49b8-96d4-8e9a016730ef%28Office.15%29.aspx) que incluye un valor de elemento [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, que indica que la búsqueda se completó correctamente. La respuesta contiene un [elemento Message](https://msdn.microsoft.com/library/2400b33c-43b2-4fc2-b6fb-275a99e0e810%28Office.15%29.aspx) para cualquier correo electrónico que cumpla los criterios de búsqueda. En este caso, solo se encuentra un correo electrónico. 
   
-El valor del elemento [Itemid](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) se ha abreviado para facilitar su lectura. 
+El valor del [elemento ItemId](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) se ha acortado para mejorar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -364,39 +364,39 @@ El valor del elemento [Itemid](https://msdn.microsoft.com/library/3350b597-57a0-
 </s:Envelope>
 ```
 
-Ahora que tiene el **Itemid** para el correo electrónico que cumple con los criterios, puede obtener, actualizar o eliminar el correo electrónico con el **Itemid** y el [acceso implícito](delegate-access-and-ews-in-exchange.md#bk_implicit) , y no es necesario especificar la dirección SMTP del propietario del buzón. 
+Ahora que tiene **el ItemId** para el correo electrónico que cumple sus criterios, puede obtener, actualizar o eliminar ese correo electrónico mediante **el ItemId** y el acceso implícito, y no es necesario especificar la dirección SMTP del propietario del buzón. [](delegate-access-and-ews-in-exchange.md#bk_implicit) 
   
 ## <a name="get-update-or-delete-email-items-as-a-delegate-by-using-the-ews-managed-api"></a>Obtener, actualizar o eliminar elementos de correo electrónico como delegado mediante la API administrada de EWS
 <a name="bk_geteswma"> </a>
 
-Puede usar la API administrada de EWS para obtener, actualizar o eliminar un correo electrónico de la misma forma que realiza estas acciones cuando no está usando acceso delegado. La única diferencia es que el objeto **ExchangeService** es para el usuario delegado. El identificador de elemento incluido en la llamada al método **BIND** identifica de forma única el elemento en el almacén de buzones, en la carpeta Bandeja de entrada del propietario del buzón. 
+Puede usar la API administrada de EWS para obtener, actualizar o eliminar un correo electrónico del mismo modo que realiza estas acciones cuando no usa el acceso delegado. La única diferencia es que el **objeto ExchangeService** es para el usuario delegado. El identificador de elemento incluido en la llamada al método **Bind** identifica de forma exclusiva el elemento en el almacén de buzones, en la carpeta Bandeja de entrada del propietario del buzón. 
   
-**Tabla 2. Métodos de la API administrada de EWS trabajar con correo electrónico como delegado**
+**Tabla 2. Métodos de API administrada ews que trabajan con el correo electrónico como delegado**
 
 |**Tarea**|**Método de la API administrada de EWS**|**Ejemplo de código**|
 |:-----|:-----|:-----|
-|Obtener un correo electrónico  <br/> |[BIND](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) <br/> |[Obtener un elemento mediante la API administrada de EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getewsma) <br/> |
+|Obtener un correo electrónico  <br/> |[Enlazar](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) <br/> |[Obtener un elemento mediante la API administrada de EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getewsma) <br/> |
 |Actualizar un correo electrónico  <br/> |[Enlazar](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) seguido de [Update](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.update%28v=exchg.80%29.aspx) <br/> |[Actualizar un elemento mediante la API administrada de EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_updateewsma) <br/> |
-|Eliminar un correo electrónico  <br/> |[Enlazar](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) seguida de [eliminar](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.delete%28v=exchg.80%29.aspx) <br/> |[Eliminar un elemento mediante la API administrada de EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_deleteewsma) <br/> |
+|Eliminar un correo electrónico  <br/> |[Enlazar](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.bind%28v=exchg.80%29.aspx) seguido de [Eliminar](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.emailmessage.delete%28v=exchg.80%29.aspx) <br/> |[Eliminar un elemento mediante la API administrada de EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_deleteewsma) <br/> |
    
 ## <a name="get-update-or-delete-email-items-as-a-delegate-by-using-ews"></a>Obtener, actualizar o eliminar elementos de correo electrónico como delegado mediante EWS
 <a name="bk_getews"> </a>
 
-Puede usar la API administrada de EWS para obtener, actualizar o eliminar un correo electrónico de la misma forma que realiza estas acciones cuando no está usando acceso delegado. La única diferencia es que el objeto de servicio es para el usuario delegado. El identificador de elemento incluido en la solicitud **GetItem** identifica de forma única el elemento en el almacén de buzones, en la carpeta Bandeja de entrada del propietario del buzón. 
+Puede usar la API administrada de EWS para obtener, actualizar o eliminar un correo electrónico del mismo modo que realiza estas acciones cuando no usa el acceso delegado. La única diferencia es que el objeto de servicio es para el usuario delegado. El identificador de elemento incluido en la **solicitud GetItem** identifica de forma única el elemento en el almacén de buzones, en la carpeta Bandeja de entrada del propietario del buzón. 
   
-**Tabla 3. Operaciones de EWS para trabajar con correo electrónico como delegado**
+**Tabla 3. Operaciones ews para trabajar con correo electrónico como delegado**
 
 |**Tarea**|**Operación de EWS**|**Ejemplo de código**|
 |:-----|:-----|:-----|
 |Obtener un correo electrónico  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) <br/> |[Obtener un elemento mediante EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_getews) <br/> |
-|Actualizar un correo electrónico  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) seguido de [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |[Actualizar un elemento mediante EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_updateews) <br/> |
-|Eliminar un correo electrónico  <br/> |[GetItem](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) seguido de [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |[Eliminar un elemento mediante EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_deleteews) <br/> |
+|Actualizar un correo electrónico  <br/> |[GetItem seguido](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) de [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) <br/> |[Actualizar un elemento mediante EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_updateews) <br/> |
+|Eliminar un correo electrónico  <br/> |[GetItem seguido](https://msdn.microsoft.com/library/a41c29c9-c4e6-4aa4-8e28-ccb0b478fee8%28Office.15%29.aspx) de [DeleteItem](../web-service-reference/deleteitem-operation.md) <br/> |[Eliminar un elemento mediante EWS](how-to-work-with-exchange-mailbox-items-by-using-ews-in-exchange.md#bk_deleteews) <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Acceso delegado y EWS en Exchange](delegate-access-and-ews-in-exchange.md)    
 - [Agregar y quitar delegados mediante EWS en Exchange](how-to-add-and-remove-delegates-by-using-ews-in-exchange.md)    
-- [Establecer los permisos de carpeta para otro usuario mediante EWS en Exchange](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md)    
+- [Establecer permisos de carpeta para otro usuario mediante EWS en Exchange](how-to-set-folder-permissions-for-another-user-by-using-ews-in-exchange.md)    
 - [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)
     
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8f68b73c-d6b0-4bb5-b89a-fd398d09346c
 description: El elemento GetNonIndexableItemStatisticsResponse especifica la respuesta a una solicitud GetNonIndexableItemStatistics.
-ms.openlocfilehash: 2535ef43228c8ecca958da88178cfb2cb6584ad3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 4c3f3c878e1d43545c82766ef7fc1eeaf8a54f85
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44452786"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524262"
 ---
 # <a name="getnonindexableitemstatisticsresponse"></a>GetNonIndexableItemStatisticsResponse
 
-El elemento **GetNonIndexableItemStatisticsResponse** especifica la respuesta a una solicitud **GetNonIndexableItemStatistics** . 
+El **elemento GetNonIndexableItemStatisticsResponse** especifica la respuesta a una **solicitud GetNonIndexableItemStatistics.** 
   
 ```XML
 <GetNonIndexableItemStatisticsResponse>
@@ -36,7 +36,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -57,8 +57,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

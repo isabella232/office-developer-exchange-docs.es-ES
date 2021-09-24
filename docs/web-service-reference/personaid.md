@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: eec3a468-afd5-4d72-a61e-cd1964fb686c
-description: El elemento PersonaId especifica el identificador del rol asociado.
-ms.openlocfilehash: 3d7315097a14fb1eed5f378422cba80414601675
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento PersonaId especifica el identificador de persona para la persona asociada.
+ms.openlocfilehash: fe6416332c20ea2506cf8b2a29234bfc6058246a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457245"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524577"
 ---
 # <a name="personaid"></a>PersonaId
 
-El elemento **PersonaId** especifica el identificador del rol asociado. 
+El **elemento PersonaId** especifica el identificador de persona para la persona asociada. 
   
 ```XML
 <PersonaId Id="" ChangeKey=""/>
@@ -32,12 +32,12 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
-|Id  <br/> |El valor de texto del atributo **ID** es el identificador del rol.  <br/> |
-|ChangeKey  <br/> |El valor de texto del atributo **changekey** es la clave de cambio del rol.  <br/> |
+|Id  <br/> |El valor de texto del **atributo Id** es el identificador de la persona.  <br/> |
+|ChangeKey  <br/> |El valor de texto del **atributo ChangeKey** es la clave de cambio de la persona.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,8 +54,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

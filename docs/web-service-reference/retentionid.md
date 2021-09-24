@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 07be3c51-6537-49b5-b25d-ff51759aba1f
-description: El elemento RetentionId especifica el identificador de la etiqueta de retención.
-ms.openlocfilehash: f32fa0ceb301fca88cb0275e99ee9417dea87d2e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento RetentionId especifica el identificador de etiqueta de retención.
+ms.openlocfilehash: 5dc0a7ea5f8649f4b4f17d8dd4090e891f28181c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465222"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517927"
 ---
 # <a name="retentionid"></a>RetentionId
 
-El elemento **RetentionId** especifica el identificador de la etiqueta de retención. 
+El **elemento RetentionId** especifica el identificador de etiqueta de retención. 
   
 ```XML
 <RetentionId></RetentionId>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **RetentionId** es el identificador de la etiqueta de retención en forma de GUID. 
+El valor de texto del **elemento RetentionId** es el identificador de etiqueta de retención en forma GUID. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

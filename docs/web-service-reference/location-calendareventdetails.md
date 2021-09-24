@@ -1,27 +1,27 @@
 ---
-title: Ubicación (CalendarEventDetails)
+title: Location (CalendarEventDetails)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Location
 api_type:
 - schema
 ms.assetid: 883cce6e-66b8-4dbc-935c-83ef5100a953
 description: El elemento Location representa el campo de ubicación del elemento de calendario.
-ms.openlocfilehash: 4a590c315d2211ce9128305a514e68f1c785596c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 7264d086b295b442b51376ac0a4e2b1b03521249
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468001"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524906"
 ---
-# <a name="location-calendareventdetails"></a>Ubicación (CalendarEventDetails)
+# <a name="location-calendareventdetails"></a>Location (CalendarEventDetails)
 
-El elemento **Location** representa el campo de ubicación del elemento de calendario. 
+El **elemento Location** representa el campo de ubicación del elemento de calendario. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -37,7 +37,7 @@ El elemento **Location** representa el campo de ubicación del elemento de calen
   
 [CalendarEventDetails](calendareventdetails.md)
   
-[Ubicación (CalendarEventDetails)](location-calendareventdetails.md)
+[Location (CalendarEventDetails)](location-calendareventdetails.md)
   
 ```xml
 <Location/>
@@ -50,27 +50,27 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarEventDetails](calendareventdetails.md) <br/> |Proporciona información adicional para un evento de calendario.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
+|[CalendarEventDetails](calendareventdetails.md) <br/> |Proporciona información adicional para un evento de calendario.  <br/> A continuación se muestra la expresión XPath de este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Es necesario un valor de texto si este elemento se devuelve en la respuesta. Este elemento puede contener una cadena vacía. Este elemento es opcional si se usa el elemento [CalendarEventDetails](calendareventdetails.md) . 
+Se requiere un valor de texto si este elemento se devuelve en la respuesta. Este elemento puede contener una cadena vacía. Este elemento es opcional si se usa el elemento [CalendarEventDetails.](calendareventdetails.md) 
   
 ## <a name="remarks"></a>Comentarios
 
-Este elemento se asigna a un PR_Location propiedad con nombre de MAPI.
+Este elemento se asigna a una PR_Location con nombre MAPI.
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -78,10 +78,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

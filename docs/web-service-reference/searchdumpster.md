@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ddb62dce-c87a-4714-8023-a6b697a29699
-description: El elemento SearchDumpster especifica si se debe buscar en el contenedor de Exchange.
-ms.openlocfilehash: 067bf8ea3e589aa392c6b8ba6d4dc10b430c1f28
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento SearchDumpster especifica si se va a buscar en el Exchange dumpster.
+ms.openlocfilehash: 4d8f05393691e38e3a4154e955d03c8591064a1a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460494"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521693"
 ---
 # <a name="searchdumpster"></a>SearchDumpster
 
-El elemento **SearchDumpster** especifica si se debe buscar en el contenedor de Exchange. 
+El **elemento SearchDumpster** especifica si se va a buscar en el Exchange dumpster. 
   
 ```XML
 <SearchDumpster> true | false </SearchDumpster>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **SearchDumpster** indica que la búsqueda de estadísticas de buzón incluye el contenedor de Exchange. Un valor de **false** indica que no se busca en el contenedor de Exchange. 
+Un valor de texto **de true** para el **elemento SearchDumpster** indica que la búsqueda de estadísticas de buzones incluye Exchange Dumpster. Un valor de **false** indica que no se busca Exchange dumpster. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

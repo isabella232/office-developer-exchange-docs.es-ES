@@ -5,32 +5,32 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RemoveDelegate
 api_type:
 - schema
 ms.assetid: 1d42d5ff-8fde-4f8a-b18d-57b1ef7a946a
-description: La operación RemoveDelegate quita uno o más delegados del buzón de un usuario.
-ms.openlocfilehash: b2e342225e7e79c44dcd86b76b4b7d47b16b860b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación RemoveDelegate quita uno o varios delegados del buzón de un usuario.
+ms.openlocfilehash: 1e18b1122ac24e0463fc487a2a3e51fb44aab54b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466601"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59517983"
 ---
 # <a name="removedelegate-operation"></a>Operación RemoveDelegate
 
-La operación **RemoveDelegate** quita uno o más delegados del buzón de un usuario. 
+La **operación RemoveDelegate** quita uno o varios delegados del buzón de un usuario. 
   
 ## <a name="soap-headers"></a>Encabezados SOAP
 
-La operación **RemoveDelegate** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla. 
+La **operación RemoveDelegate** puede usar los encabezados SOAP que se enumeran y se describen en la tabla siguiente. 
   
 |**Header**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente.  <br/> |
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural RFC3066 que se va a usar para obtener acceso al buzón.  <br/> |
+|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario al que la aplicación cliente está suplantando.  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural RFC3066 que se usará para tener acceso al buzón.  <br/> |
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud.  <br/> |
    
@@ -38,7 +38,7 @@ La operación **RemoveDelegate** puede usar los encabezados SOAP que se enumeran
 
 ### <a name="description"></a>Description
 
-En el ejemplo de código siguiente se muestra cómo quitar dos delegados del buzón de correo de Usuario1. En este ejemplo, se quita un delegado mediante la dirección SMTP principal del delegado y el otro se quita mediante el identificador de seguridad (SID) del delegado.
+En el siguiente ejemplo de código se muestra cómo quitar dos delegados del buzón de usuario1. En este ejemplo, se quita un delegado mediante la dirección SMTP principal del delegado y el otro se quita mediante el identificador de seguridad (SID) del delegado.
   
 ### <a name="code"></a>Código
 
@@ -70,13 +70,13 @@ En el ejemplo de código siguiente se muestra cómo quitar dos delegados del buz
 
 ### <a name="comments"></a>Comentarios
 
-La operación **RemoveDelegate** no requiere que el usuario delegado especificado tenga un buzón de correo o exista en el servicio de directorio de Active Directory. La operación **RemoveDelegate** se realizará correctamente si la entrada de delegado está huérfana. 
+La **operación RemoveDelegate** no requiere que el usuario delegado especificado tenga un buzón o que exista en el servicio de directorio de Active Directory. La **operación RemoveDelegate** se realizará correctamente si la entrada de delegado está huérfana. 
   
 ## <a name="removedelegate-response-example"></a>Ejemplo de respuesta RemoveDelegate
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una respuesta de **RemoveDelegate** muestra una respuesta correcta a una solicitud de **RemoveDelegate** . La respuesta contiene un elemento **DelegateUserResponseMessageType** para cada delegado que se quita del buzón. 
+En el siguiente ejemplo de una **respuesta RemoveDelegate** se muestra una respuesta correcta a una **solicitud RemoveDelegate.** La respuesta contiene un **elemento DelegateUserResponseMessageType** para cada delegado que se quita del buzón. 
   
 ### <a name="code"></a>Código
 
@@ -115,7 +115,7 @@ El siguiente ejemplo de una respuesta de **RemoveDelegate** muestra una respuest
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una respuesta de error **RemoveDelegate** muestra los resultados de una solicitud para quitar un delegado que no existe. 
+En el siguiente ejemplo de una respuesta de error **RemoveDelegate** se muestran los resultados de una solicitud para quitar un delegado que no existe. 
   
 ### <a name="code"></a>Código
 
@@ -149,9 +149,9 @@ El siguiente ejemplo de una respuesta de error **RemoveDelegate** muestra los re
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

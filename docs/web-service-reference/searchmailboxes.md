@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5d8c367a-67e9-43b3-8be0-6362d2152431
 description: El elemento SearchMailboxes indica el principio de la solicitud SearchMailboxes.
-ms.openlocfilehash: 7ccc94157ef6bde7b6ba86e70c16ef6e90d712fa
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 3c734e49869a17fa58252668ddae606d702f3047
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456804"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521607"
 ---
 # <a name="searchmailboxes"></a>SearchMailboxes
 
-El elemento **SearchMailboxes** indica el principio de la solicitud **SearchMailboxes** . 
+El **elemento SearchMailboxes** indica el principio de la **solicitud SearchMailboxes.** 
   
 ```XML
 <SearchMailboxes>
@@ -40,7 +40,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -61,8 +61,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

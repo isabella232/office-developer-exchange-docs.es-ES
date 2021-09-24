@@ -4,19 +4,19 @@ ms.date: 7/7/2016
 ms.audience: ITPro
 ms.topic: article
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b9bde862-6b75-4a81-8033-00a47be4dc2f
 description: El elemento ReferenceAttachment especifica XXX.
-ms.openlocfilehash: a5e4445b24395f1530e072f8aa9b5a9eed02f671
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 76290b5b0d42f027029a85e3fc5fb0b74a534228
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468743"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525634"
 ---
 # <a name="referenceattachment"></a>ReferenceAttachment
 
-El elemento **ReferenceAttachment** especifica xxx. 
+El **elemento ReferenceAttachment** especifica XXX. 
   
 ```XML
 <RecurringMasterItemIdRanges Id="" ChangeKey="">
@@ -33,8 +33,8 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
-|**Id** <br/> |El valor de texto del atributo **ID** es un identificador único del elemento maestro periódico. Se trata de un valor de **cadena** .  <br/> |
-|**ChangeKey** <br/> |El valor de texto del atributo **changekey** es la clave de cambio periódico del elemento maestro. Se trata de un valor de **cadena** .  <br/> |
+|**Id** <br/> |El valor de texto del **atributo Id** es el identificador único de un elemento maestro periódico. Este es un **valor de** cadena.  <br/> |
+|**ChangeKey** <br/> |El valor de texto del **atributo ChangeKey** es la clave de cambio del elemento maestro periódico. Este es un **valor de** cadena.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -42,7 +42,7 @@ Rangos
   
 ### <a name="parent-elements"></a>Elementos principales
 
-ItemIds | GlobalItemIds | DraftItemIds | ContactIds | GroupIds
+ItemIds | GlobalItemIds | DraftItemIds| ContactIds | GroupIds
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

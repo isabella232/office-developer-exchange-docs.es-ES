@@ -1,30 +1,30 @@
 ---
-title: Usuario (POX)
+title: User (POX)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 7c42b516-77f6-4aee-99d8-b866d82d793a
 description: El elemento User proporciona información específica del usuario.
-ms.openlocfilehash: 8f53319bcf34595305748adafc9aa1e25283611e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 832e0a63e75a08406b3aa397ac29ad5aa300cfe0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530221"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522413"
 ---
-# <a name="user-pox"></a>Usuario (POX)
+# <a name="user-pox"></a>User (POX)
 
-El elemento **User** proporciona información específica del usuario. 
+El **elemento User** proporciona información específica del usuario. 
   
-[Detección automática (POX)](autodiscover-pox.md)
+[AutoDiscover (POX)](autodiscover-pox.md)
   
-[Respuesta (POX)](response-pox.md)
+[Response (POX)](response-pox.md)
   
-[Usuario (POX)](user-pox.md)
+[User (POX)](user-pox.md)
   
 ```xml
 <User>
@@ -41,28 +41,28 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
 |[DisplayName (cadena)](displayname-string.md) <br/> |Representa el nombre para mostrar del usuario.  <br/> |
-|[LegacyDN (POX)](legacydn-pox.md) <br/> |Identifica el buzón de un usuario mediante el nombre distintivo heredado.  <br/> |
-|[DeploymentId (POX)](deploymentid-pox.md) <br/> |Identifica de forma exclusiva el bosque de Exchange.  <br/> |
+|[LegacyDN (POX)](legacydn-pox.md) <br/> |Identifica el buzón de un usuario por nombre distintivo heredado.  <br/> |
+|[DeploymentId (POX)](deploymentid-pox.md) <br/> |Identifica de forma única el Exchange bosque.  <br/> |
 |[AutoDiscoverSMTPAddress (POX)](autodiscoversmtpaddress-pox.md) <br/> |Contiene la dirección SMTP del usuario que se usa para el proceso de detección automática.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Respuesta (POX)](response-pox.md) <br/> |Contiene la respuesta del servicio Detección automática.  <br/> |
+|[Response (POX)](response-pox.md) <br/> |Contiene la respuesta del servicio de detección automática.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Las solicitudes y respuestas de detección automática deben tener codificación UTF-8.
+Las solicitudes y respuestas de detección automática deben estar codificadas en UTF-8.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

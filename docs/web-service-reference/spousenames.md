@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e18f46fe-ab83-4df1-b1a5-9c8e73173ccf
-description: El elemento SpouseNames especifica una matriz de nombres de cónyuge o pareja y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: 9b7960e7aee8652d16561f8dd2eb3d891fb8d694
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento SpouseNames especifica una matriz de nombres de cónyuge o socio y los identificadores de sus atribuciones de origen para la persona asociada.
+ms.openlocfilehash: 6856674db8ef1e636631c2b381f5b21bbc857495
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467630"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521308"
 ---
 # <a name="spousenames"></a>SpouseNames
 
-El elemento **SpouseNames** especifica una matriz de nombres de cónyuge o pareja y los identificadores de sus atribuciones de origen para el rol asociado. 
+El **elemento SpouseNames** especifica una matriz de nombres de cónyuge o socio y los identificadores de sus atribuciones de origen para la persona asociada. 
   
 ```XML
 <SpouseNames>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -3,37 +3,37 @@ title: Actualizar una serie periódica mediante EWS
 manager: sethgros
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7e61bee9-4840-4773-a0a7-47b11e1fdf59
-description: Obtenga información sobre cómo modificar citas en una serie periódica mediante la API administrada de EWS o EWS en Exchange.
-ms.openlocfilehash: eb40dd60f28a6acf4395d3149744ce7321c34999
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Obtenga información sobre cómo modificar citas en una serie periódica mediante la API administrada ews o EWS en Exchange.
+ms.openlocfilehash: 3b9260bf271581a9a47fcad36d35f48e9845eb91
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455852"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521095"
 ---
 # <a name="update-a-recurring-series-by-using-ews"></a>Actualizar una serie periódica mediante EWS
 
-Obtenga información sobre cómo modificar citas en una serie periódica mediante la API administrada de EWS o EWS en Exchange.
+Obtenga información sobre cómo modificar citas en una serie periódica mediante la API administrada ews o EWS en Exchange.
   
-Puede usar la API administrada de EWS o EWS para actualizar una serie periódica [actualizando la serie completa](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)o actualizando una sola ocurrencia. En este artículo trataremos cómo actualizar una sola ocurrencia.
+Puede usar la API administrada ews o EWS para actualizar una serie periódica actualizando toda la [serie](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)o actualizando una única repetición. En este artículo trataremos cómo actualizar una única repetición.
   
-Modificar una única cita en una serie es muy similar a [modificar una cita de instancia única](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md). Se usan los mismos métodos y operaciones, pero se usa el identificador de elemento de la repetición que se desea cambiar.
+Modificar una sola cita de una serie es muy similar [a modificar una cita de instancia única.](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md) Se usan los mismos métodos y operaciones, pero se usa el identificador de elemento de la repetición que desea cambiar.
   
-Cuando se cambia una sola ocurrencia en una serie, esa repetición se agrega a una matriz de citas modificadas asociadas con el patrón recurrente de la serie. Puede usar la propiedad [appointment. ModifiedOccurrences](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.modifiedoccurrences%28v=exchg.80%29.aspx) de la API administrada EWS o el elemento EWS [ModifiedOccurrences](https://msdn.microsoft.com/library/552932fc-b3b4-486e-8d73-32c0bb10bd68%28Office.15%29.aspx) para tener acceso a todas las citas de una serie que se han modificado. 
+Cuando se cambia una sola repetición de una serie, esa repetición se agrega a una matriz de citas modificadas asociadas con el patrón periódico de la serie. Puede usar la propiedad DE API administrada EWS [Appointment.ModifiedOccurrences](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.modifiedoccurrences%28v=exchg.80%29.aspx) o el elemento EWS [ModifiedOccurrences](https://msdn.microsoft.com/library/552932fc-b3b4-486e-8d73-32c0bb10bd68%28Office.15%29.aspx) para tener acceso a todas las citas de una serie que se han modificado. 
   
-## <a name="modify-a-single-occurrence-in-a-series-by-using-the-ews-managed-api"></a>Modificar una única ocurrencia en una serie mediante la API administrada de EWS
+## <a name="modify-a-single-occurrence-in-a-series-by-using-the-ews-managed-api"></a>Modificar una única repetición de una serie mediante la API administrada de EWS
 
-Para modificar una única instancia de una serie, puede:
+Para modificar una sola instancia de una serie, debe:
   
-1. Enlace a la ocurrencia que desea modificar mediante el método [appointment. BindToOccurrence](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.appointment.bindtooccurrence%28v=exchg.80%29.aspx) con el valor de índice del elemento o el método [appointment. bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) con el identificador de la ocurrencia. Este identificador se obtiene de la propiedad [ID](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) de un objeto [appointment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) que corresponde a la ocurrencia, o bien de la propiedad [Itemid](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.occurrenceinfo.itemid%28v=exchg.80%29.aspx) del objeto [OccurrenceInfo](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.occurrenceinfo%28v=exchg.80%29.aspx) que corresponde a la ocurrencia. 
+1. Enlazar a la repetición que desea modificar mediante el método [Appointment.BindToOccurrence](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.appointment.bindtooccurrence%28v=exchg.80%29.aspx) con el valor de índice del elemento o el método [Appointment.Bind](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment.bind%28v=exchg.80%29.aspx) con el identificador de la repetición. Este identificador se obtiene de la propiedad [Id](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.item.id%28v=exchg.80%29.aspx) de un [objeto Appointment](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.appointment%28v=exchg.80%29.aspx) que corresponde a la ocurrencia o de la [propiedad ItemId](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.occurrenceinfo.itemid%28v=exchg.80%29.aspx) del objeto [OccurrenceInfo](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.occurrenceinfo%28v=exchg.80%29.aspx) que corresponde a la repetición. 
     
-2. Actualice las propiedades del objeto de cita de la ocurrencia.
+2. Actualice las propiedades del objeto Appointment de la ocurrencia.
     
-3. Guarde los cambios realizados en el objeto de cita de la ocurrencia mediante el método [appointment. Save](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) . 
+3. Guarde los cambios en el objeto de cita de la aparición mediante el [método Appointment.Save.](https://msdn.microsoft.com/library/office/microsoft.exchange.webservices.data.appointment.save%28v=exchg.80%29.aspx) 
     
-En el siguiente ejemplo se actualiza una cita en una serie periódica y se comprueba que la cita modificada esté actualizada en el maestro periódico. En este ejemplo se supone que se ha autenticado en un servidor de Exchange y que se ha adquirido un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) denominado **Service**. El `recurrenceMasterId` parámetro es un identificador asociado con el maestro periódico para la repetición que se va a modificar. 
+En el ejemplo siguiente se actualiza una cita de una serie periódica y se comprueba que la cita modificada se actualiza en el patrón periódico. En este ejemplo se supone que se ha autenticado en un servidor Exchange y que ha adquirido un objeto [ExchangeService](https://msdn.microsoft.com/library/microsoft.exchange.webservices.data.exchangeservice%28v=exchg.80%29.aspx) denominado **service**. El  `recurrenceMasterId` parámetro es un identificador asociado con el patrón periódico para la repetición que se va a modificar. 
   
 ```cs
 public static ItemId ModifyARecurringSeries(ExchangeService service, ItemId recurrenceMasterId)
@@ -91,11 +91,11 @@ public static ItemId ModifyARecurringSeries(ExchangeService service, ItemId recu
 
 ```
 
-## <a name="modify-a-single-occurrence-in-a-series-by-using-ews"></a>Modificación de una sola ocurrencia en una serie mediante EWS
+## <a name="modify-a-single-occurrence-in-a-series-by-using-ews"></a>Modificar una única repetición de una serie mediante EWS
 
-La modificación de una única instancia en una serie es básicamente lo mismo que modificar una cita de instancia única. Puede especificar la repetición que se debe cambiar mediante un elemento [Itemid](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) o un elemento [OccurrenceItemId](https://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) . 
+Modificar una sola instancia de una serie es básicamente lo mismo que modificar una cita de instancia única. Puede especificar la repetición que se va a cambiar mediante un [elemento ItemId](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) o [occurrenceItemId.](https://msdn.microsoft.com/library/4a15bbc3-5b93-4193-b9ec-da32f0a9a552%28Office.15%29.aspx) 
   
-En el ejemplo siguiente se muestra el XML de la solicitud cuando se usa la operación [UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) para actualizar una ocurrencia en una serie de citas periódicas. Los **Itemid** y **changekey** se acortan para facilitar la legibilidad. 
+En el ejemplo siguiente se muestra el XML de solicitud cuando se usa la [operación UpdateItem](https://msdn.microsoft.com/library/5d027523-e0bc-4da2-b60b-0cb9fc1fdfe4%28Office.15%29.aspx) para actualizar una repetición en una serie periódica de citas. ItemId **y** **ChangeKey** se acortan para que sean legibles. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -190,14 +190,14 @@ En el ejemplo siguiente se muestra el XML de la solicitud cuando se usa la opera
 </soap:Envelope>
 ```
 
-El servidor responde a la solicitud **UpdateItem** con un mensaje [UpdateItemResponse](https://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) que incluye un [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) valor de **NoError**, lo que indica que la ocurrencia se actualizó correctamente y el [Itemid](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) de la cita actualizada. 
+El servidor responde a la solicitud **UpdateItem** con un mensaje [UpdateItemResponse](https://msdn.microsoft.com/library/023b79b4-c675-4669-9112-d85499ec4fc4%28Office.15%29.aspx) que incluye un valor [ResponseCode](https://msdn.microsoft.com/library/4b84d670-74c9-4d6d-84e7-f0a9f76f0d93%28Office.15%29.aspx) de **NoError**, que indica que la repetición se actualizó correctamente y el [ItemId](https://msdn.microsoft.com/library/3350b597-57a0-4961-8f44-8624946719b4%28Office.15%29.aspx) de la cita actualizada. 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 - [Calendarios y EWS en Exchange](calendars-and-ews-in-exchange.md)
     
-- [Actualizar citas y reuniones mediante EWS en Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
+- [Actualice las citas y reuniones mediante EWS en Exchange](how-to-update-appointments-and-meetings-by-using-ews-in-exchange.md)
     
 - [Patrones de periodicidad y EWS](recurrence-patterns-and-ews.md)
     
@@ -207,6 +207,6 @@ El servidor responde a la solicitud **UpdateItem** con un mensaje [UpdateItemRes
     
 - [Eliminar citas en una serie periódica mediante EWS en Exchange](how-to-delete-appointments-in-a-recurring-series-by-using-ews-in-exchange.md)
     
-- [Actualizar una serie periódica mediante EWS en Exchange](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
+- [Actualice una serie periódica mediante EWS en Exchange](how-to-update-a-recurring-series-by-using-ews-in-exchange.md)
     
 

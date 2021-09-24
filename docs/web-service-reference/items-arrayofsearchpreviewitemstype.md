@@ -1,23 +1,23 @@
 ---
-title: Elementos (ArrayOfSearchPreviewItemsType)
+title: Items (ArrayOfSearchPreviewItemsType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6b860638-d655-4a49-91c4-60e59b596b48
-description: El elemento items especifica una lista de elementos disponibles para su vista previa como resultado de una operación SearchMailboxes.
-ms.openlocfilehash: 99d8af67370b75774def0db3b6c274c65a432aab
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Items especifica una lista de elementos disponibles para la vista previa como resultados de una operación SearchMailboxes.
+ms.openlocfilehash: 6df2c8c9c1072c6cc85fdf88e72c54e303b37e8e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459864"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524101"
 ---
-# <a name="items-arrayofsearchpreviewitemstype"></a>Elementos (ArrayOfSearchPreviewItemsType)
+# <a name="items-arrayofsearchpreviewitemstype"></a>Items (ArrayOfSearchPreviewItemsType)
 
-El elemento **Items** especifica una lista de elementos disponibles para su vista previa como resultado de una operación **SearchMailboxes** . 
+El **elemento Items** especifica una lista de elementos disponibles para la vista previa como resultados de una operación **SearchMailboxes.** 
   
 ```XML
 <Items>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 

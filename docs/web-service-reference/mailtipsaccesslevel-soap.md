@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 730e349e-8250-4236-af53-cd9039c74d8f
 description: El elemento MailTipsAccessLevel representa la propiedad MailTipsAccessLevel. El elemento MailTipsAccessLevel es solo para uso interno. Los clientes no usan este elemento.
-ms.openlocfilehash: 8e3a467f7aa8484fc8a4bfb23f8b4ac4c138ccad
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 275bdab1be5a754aa0cfa57eea232175e3d39ff3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458071"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524045"
 ---
 # <a name="mailtipsaccesslevel-soap"></a>MailTipsAccessLevel (SOAP)
 
-El elemento **MailTipsAccessLevel** representa la propiedad **MailTipsAccessLevel** . El elemento **MailTipsAccessLevel** es solo para uso interno. Los clientes no usan este elemento. 
+El **elemento MailTipsAccessLevel** representa la **propiedad MailTipsAccessLevel.** El **elemento MailTipsAccessLevel** es solo para uso interno. Los clientes no usan este elemento. 
   
 ```XML
 <MailTipsAccessLevel/>
@@ -29,11 +29,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -43,7 +43,7 @@ Ninguna.
    
 ## <a name="remarks"></a>Comentarios
 
-Este elemento especifica la cantidad máxima de detalles de sugerencias de correo que se devolverá en la respuesta.
+Este elemento especifica la cantidad máxima de detalles de sugerencias de correo que se devolverán en la respuesta.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -51,10 +51,10 @@ Este elemento especifica la cantidad máxima de detalles de sugerencias de corre
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

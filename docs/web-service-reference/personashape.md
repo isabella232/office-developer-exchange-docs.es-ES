@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 61d87cd5-3270-40d1-bab7-d0d5bf938607
-description: El elemento PersonaShape especifica el conjunto de propiedades de rol que se devolverán desde una solicitud de FindPeople.
-ms.openlocfilehash: 49cbae714a3b854496dc91ea6102f4b676623690
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento PersonaShape especifica el conjunto de propiedades de persona que se devolverán desde una solicitud FindPeople.
+ms.openlocfilehash: 41c37be586a033965f5102e7e14af7d7fe205e8f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457574"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524584"
 ---
 # <a name="personashape"></a>PersonaShape
 
-El elemento **PersonaShape** especifica el conjunto de propiedades de rol que se devolverán desde una solicitud de **FindPeople** . 
+El **elemento PersonaShape** especifica el conjunto de propiedades de persona que se devolverán desde una **solicitud FindPeople.** 
   
 ```XML
 <PersonaShape>
@@ -33,7 +33,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -54,8 +54,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

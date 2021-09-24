@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ServerReplyWithMessage
 api_type:
 - schema
 ms.assetid: 113c6ff2-9592-44f0-b542-54e4d5122ccb
-description: El elemento ServerReplyWithMessage indica el identificador del mensaje de plantilla que se va a enviar como respuesta a los mensajes entrantes.
-ms.openlocfilehash: faaa054018a17be3ff59b9fc385b3d846d39c3f1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ServerReplyWithMessage indica el identificador del mensaje de plantilla que se enviará como respuesta a los mensajes entrantes.
+ms.openlocfilehash: a6d207af4c58f9531cc52312111f3a2a53f450a6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461978"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521462"
 ---
 # <a name="serverreplywithmessage"></a>ServerReplyWithMessage
 
-El elemento **ServerReplyWithMessage** indica el identificador del mensaje de plantilla que se va a enviar como respuesta a los mensajes entrantes. 
+El **elemento ServerReplyWithMessage** indica el identificador del mensaje de plantilla que se enviará como respuesta a los mensajes entrantes. 
   
 ```XML
 <ServerReplyWithMessage>
@@ -36,7 +36,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -48,7 +48,7 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Actions](actions.md) <br/> |Representa el conjunto de acciones que se pueden realizar en un mensaje cuando se cumplen las condiciones.  <br/> |
+|[Actions](actions.md) <br/> |Representa el conjunto de acciones que están disponibles para realizarse en un mensaje cuando se cumplan las condiciones.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -64,10 +64,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

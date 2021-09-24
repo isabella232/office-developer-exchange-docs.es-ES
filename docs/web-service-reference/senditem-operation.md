@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SendItem
 api_type:
 - schema
 ms.assetid: 337b89ef-e1b7-45ed-92f3-8abe4200e4c7
-description: La operación SendItem se usa para enviar mensajes de correo electrónico que se encuentran en el almacén de Exchange.
-ms.openlocfilehash: 9136379e50723211fe5a483c7f113da4fa125fc1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación SendItem se usa para enviar mensajes de correo electrónico que se encuentran en el Exchange almacén.
+ms.openlocfilehash: d1e43cdceb3a594c3fa2f028502a3bfedbbf85a1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530341"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521596"
 ---
 # <a name="senditem-operation"></a>Operación SendItem
 
-La operación SendItem se usa para enviar mensajes de correo electrónico que se encuentran en el almacén de Exchange.
+La operación SendItem se usa para enviar mensajes de correo electrónico que se encuentran en el Exchange almacén.
   
-## <a name="senditem-e-mail-message-request-example"></a>Ejemplo de solicitud de SendItem (mensaje de correo electrónico)
+## <a name="senditem-e-mail-message-request-example"></a>Ejemplo de solicitud SendItem (mensaje de correo electrónico)
 
 ### <a name="description"></a>Description
 
-En el siguiente ejemplo, se muestra cómo enviar un mensaje de correo electrónico.
+En el ejemplo siguiente se muestra cómo enviar un mensaje de correo electrónico.
   
 ### <a name="code"></a>Código
 
@@ -49,11 +49,11 @@ En el siguiente ejemplo, se muestra cómo enviar un mensaje de correo electróni
 
 ### <a name="comments"></a>Comentarios
 
-El identificador de elemento se ha abreviado para preservar la legibilidad.
+El identificador del elemento se ha acortado para conservar la legibilidad.
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [SendItem](senditem.md)
     
@@ -61,7 +61,7 @@ Los siguientes elementos se usan en la solicitud:
     
 - [ItemId](itemid.md)
     
-## <a name="successful-senditem-e-mail-message-response"></a>Respuesta SendItem (mensaje de correo electrónico) correcta
+## <a name="successful-senditem-e-mail-message-response"></a>Respuesta correcta de SendItem (mensaje de correo electrónico)
 
 ### <a name="description"></a>Description
 
@@ -92,7 +92,7 @@ En el ejemplo siguiente se muestra una respuesta SendItem correcta.
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -108,11 +108,11 @@ En la respuesta se usan los siguientes elementos:
     
 ### <a name="comments"></a>Comentarios
 
-Un delegado que intenta enviar un mensaje de correo electrónico que se encuentra en la carpeta de borradores de la entidad de identidad con la opción SendAndSaveCopy establecida para guardar una copia en la carpeta completa de elementos enviados no podrá mover una copia del elemento enviado a la carpeta de elementos enviados. El elemento permanecerá en la carpeta Borradores de la entidad de identidad. La solución para este problema es especificar el buzón de la entidad de identidad en el elemento [DistinguishedFolderId](distinguishedfolderid.md) . 
+Un delegado que intente enviar un mensaje de correo electrónico que se encuentra en la carpeta Borradores de la entidad de seguridad con la opción SendAndSaveCopy establecida para guardar una copia en la carpeta distinguida Elementos enviados no moverá silenciosamente una copia del elemento enviado a la carpeta distinguida Elementos enviados. El elemento permanecerá en la carpeta Borradores de la entidad de seguridad. La solución alternativa para este problema es especificar el buzón de la entidad de seguridad en [el elemento DistinguishedFolderId.](distinguishedfolderid.md) 
   
-Un escenario adicional que se debe considerar es cuando un delegado crea un mensaje de correo electrónico y lo guarda en la carpeta Borradores del buzón de correo del delegado. Si el delegado intenta enviar el elemento y guardar una copia en la carpeta de elementos enviados de la entidad de la identidad, el mensaje se envía correctamente, el borrador permanece en la carpeta Borradores del delegado, el mensaje enviado no aparece en la carpeta elementos enviados del delegado o del principal, y la respuesta es un éxito.
+Un escenario adicional a tener en cuenta es cuando un delegado crea un mensaje de correo electrónico y lo guarda en la carpeta Borradores del buzón del delegado. Si el delegado intenta enviar el elemento y guardar una copia en la carpeta distinguida Elementos enviados de la entidad de seguridad, el mensaje se envía correctamente, el borrador del mensaje permanece en la carpeta Borradores del delegado, el mensaje enviado no aparece en la carpeta Elementos enviados del delegado o de la entidad de seguridad y la respuesta es correcta.
   
-## <a name="invalid-senditem-e-mail-message-request-example"></a>Ejemplo de solicitud de SendItem (mensaje de correo electrónico) no válido
+## <a name="invalid-senditem-e-mail-message-request-example"></a>Ejemplo de solicitud SendItem (mensaje de correo electrónico) no válido
 
 ### <a name="description"></a>Description
 
@@ -136,7 +136,7 @@ En el ejemplo de código siguiente se muestra un ejemplo de una solicitud con un
 </soap:Envelope>
 ```
 
-## <a name="senditem-e-mail-message-error-response"></a>Respuesta de error de SendItem (mensaje de correo electrónico)
+## <a name="senditem-e-mail-message-error-response"></a>Respuesta de error SendItem (mensaje de correo electrónico)
 
 ### <a name="description"></a>Description
 
@@ -171,7 +171,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud SendIt
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -187,7 +187,7 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
@@ -196,5 +196,5 @@ Los siguientes elementos se usan en la respuesta de error:
  **SendItemType**
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

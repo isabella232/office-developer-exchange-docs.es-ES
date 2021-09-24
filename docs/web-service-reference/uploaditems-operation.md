@@ -5,32 +5,32 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UploadItems
 api_type:
 - schema
 ms.assetid: a88cbe99-7968-454d-a545-4f92c330909f
-description: La operación UploadItems carga una secuencia de elementos en un buzón de Exchange.
-ms.openlocfilehash: 57e722c7775baa090736875077781cee869c3b01
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación UploadItems carga una secuencia de elementos en un buzón Exchange correo.
+ms.openlocfilehash: 333b72eb93395bb1fc0b97a90951ae68285794b3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468505"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522434"
 ---
 # <a name="uploaditems-operation"></a>Operación UploadItems
 
-La operación **UploadItems** carga una secuencia de elementos en un buzón de Exchange. 
+La **operación UploadItems** carga una secuencia de elementos en un buzón Exchange correo. 
   
 > [!IMPORTANT]
-> La operación **UploadItems** está restringida en MicrosoftExchange Server 2010 Service Pack 1 (SP1) a una carga máxima de importación de 25 MB de datos codificados con Base64. La configuración se puede modificar en el archivo Web. config. 
+> La **operación UploadItems** está restringida en MicrosoftExchange Server 2010 Service Pack 1 (SP1) a una carga máxima de importación de 25 MB de datos codificados en base64. La configuración se puede modificar en el web.config archivo. 
   
 ## <a name="uploaditems-request-example"></a>Ejemplo de solicitud UploadItems
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud **UploadItems** muestra cómo cargar dos elementos en un buzón. El primer elemento es un nuevo elemento. El segundo elemento es una versión actualizada de un elemento existente en el buzón. 
+En el siguiente ejemplo de una **solicitud UploadItems** se muestra cómo cargar dos elementos en un buzón. El primer elemento es un elemento nuevo. El segundo elemento es una versión actualizada de un elemento existente en el buzón. 
   
 ### <a name="code"></a>Código
 
@@ -80,23 +80,23 @@ El siguiente ejemplo de una solicitud **UploadItems** muestra cómo cargar dos e
 
 ### <a name="comments"></a>Comentarios
 
-Los identificadores y los datos de elemento se acortan para preservar la legibilidad.
+Los identificadores y los datos del elemento se han acortado para conservar la legibilidad.
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [RequestServerVersion](requestserverversion.md)
     
 - [UploadItems](uploaditems.md)
     
-- [Elementos (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md)
+- [Items (NonEmptyArrayOfUploadItemsType)](items-nonemptyarrayofuploaditemstype.md)
     
 - [Item (UploadItemType)](item-uploaditemtype.md)
     
 - [ParentFolderId](parentfolderid.md)
     
-- [Datos (base64Binary)](data-base64binary.md)
+- [Data (base64Binary)](data-base64binary.md)
     
 - [ItemId](itemid.md)
     
@@ -104,7 +104,7 @@ Los siguientes elementos se usan en la solicitud:
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **UploadItems** . 
+En el ejemplo siguiente se muestra una respuesta correcta a la **solicitud UploadItems.** 
   
 ### <a name="code"></a>Código
 
@@ -143,7 +143,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **Uploa
 
 ### <a name="comments"></a>Comentarios
 
-Los identificadores de elemento se han abreviado para preservar la legibilidad.
+Los identificadores de elementos se han acortado para conservar la legibilidad.
   
 ### <a name="response-elements"></a>Elementos de respuesta
 
@@ -165,7 +165,7 @@ En la respuesta se usan los siguientes elementos:
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta a la solicitud **UploadItems** que contiene un error provocado por un intento de actualizar un elemento que no se encuentra en el buzón de correo. 
+En el ejemplo siguiente se muestra una respuesta a la solicitud **UploadItems** que contiene un error causado por un intento de actualizar un elemento que no se encuentra en el buzón. 
   
 ### <a name="code"></a>Código
 
@@ -201,7 +201,7 @@ En el ejemplo siguiente se muestra una respuesta a la solicitud **UploadItems** 
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -217,14 +217,14 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
 [Operación ExportItems](exportitems-operation.md)
 
 
-[Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
+[Operaciones ews en Exchange](ews-operations-in-exchange.md)
   
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

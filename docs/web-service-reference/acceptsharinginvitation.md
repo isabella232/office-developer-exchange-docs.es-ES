@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AcceptSharingInvitation
 api_type:
 - schema
 ms.assetid: 3c2a47d6-490d-425b-8893-089a4f8882cd
-description: El elemento AcceptSharingInvitation se usa para aceptar una invitación que permite obtener acceso a los datos de contactos o calendario de otro usuario.
-ms.openlocfilehash: c8cdae707bd122e74fa0e284163d1540d857c3de
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento AcceptSharingInvitation se usa para aceptar una invitación que permite el acceso a los datos de calendario o contactos de otro usuario.
+ms.openlocfilehash: 76b7bedccb4135a51104bea99d3844f384870db0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44461712"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525438"
 ---
 # <a name="acceptsharinginvitation"></a>AcceptSharingInvitation
 
-El elemento **AcceptSharingInvitation** se usa para aceptar una invitación que permite obtener acceso a los datos de contactos o calendario de otro usuario. 
+El **elemento AcceptSharingInvitation** se usa para aceptar una invitación que permite el acceso a los datos de calendario o contactos de otro usuario. 
   
 ```xml
 <AcceptSharingInvitation>
@@ -36,7 +36,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -48,8 +48,8 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ResponseObjects](responseobjects.md) <br/> |Contiene una colección de todos los objetos de respuesta que están asociados a un elemento en el almacén de Exchange.  <br/> |
-|[Elementos (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md) <br/> |Contiene una matriz de elementos que se van a crear en la carpeta identificada por el elemento [ParentFolderId (TargetFolderIdType)](parentfolderid-targetfolderidtype.md) .  <br/> |
+|[ResponseObjects](responseobjects.md) <br/> |Contiene una colección de todos los objetos de respuesta asociados con un elemento del Exchange almacén.  <br/> |
+|[Items (NonEmptyArrayOfAllItemsType)](items-nonemptyarrayofallitemstype.md) <br/> |Contiene una matriz de elementos para crear en la carpeta identificada por el [elemento ParentFolderId (TargetFolderIdType).](parentfolderid-targetfolderidtype.md)  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -61,11 +61,11 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [CreateItem (AcceptSharingInvitation)](createitem-acceptsharinginvitation.md)
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

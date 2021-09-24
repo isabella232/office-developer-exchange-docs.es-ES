@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f46679d0-9236-41e2-8624-72300079c67c
-description: El elemento RetentionPolicyTag especifica la Directiva de retención de un elemento de buzón.
-ms.openlocfilehash: 3ece841e14e6cf11ab15e4a4d8b83a778ae32e46
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento RetentionPolicyTag especifica la directiva de retención de un elemento de buzón.
+ms.openlocfilehash: 58ca3016bed0be625b213a57e5ead1b38a301bfa
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465180"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524549"
 ---
 # <a name="retentionpolicytag"></a>RetentionPolicyTag
 
-El elemento **RetentionPolicyTag** especifica la Directiva de retención de un elemento de buzón. 
+El **elemento RetentionPolicyTag** especifica la directiva de retención de un elemento de buzón. 
   
 ```XML
 <RetentionPolicyTag>
@@ -40,7 +40,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -61,8 +61,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1354c86e-7740-42c4-9e63-b372b3906846
-description: El elemento PersonaObjectStatus especifica si la información del rol asociado es completa o parcial.
-ms.openlocfilehash: 66dbe30cebb0aa5845d9580ad057d1cf5ab9b037
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento PersonaObjectStatus especifica si la información de la persona asociada es completa o parcial.
+ms.openlocfilehash: db50ea8e9b308e670f557e6bc162793a265a8855
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457238"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524591"
 ---
 # <a name="personaobjectstatus"></a>PersonaObjectStatus
 
-El elemento **PersonaObjectStatus** especifica si la información del rol asociado es completa o parcial. 
+El **elemento PersonaObjectStatus** especifica si la información de la persona asociada es completa o parcial. 
   
 ```XML
 <PersonaObjectStatus></PersonaObjectStatus>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **PersonaObjectStatus** indica si el rol es completo o parcial. 
+El valor de texto del **elemento PersonaObjectStatus** indica si la persona es completa o parcial. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

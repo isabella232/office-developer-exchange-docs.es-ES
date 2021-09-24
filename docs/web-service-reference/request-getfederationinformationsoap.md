@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: beeb5371-f57b-4346-9753-035dd42c6bee
-description: El elemento request representa una solicitud GetFederationInformationRequest (SOAP).
-ms.openlocfilehash: dbd88537d03f6325cf0025d08c63ae486544d705
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Request representa una solicitud GetFederationInformationRequest (SOAP).
+ms.openlocfilehash: 77ea1f14e98ed09a2a60efed4045ef8d903b3b05
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459584"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525585"
 ---
 # <a name="request-getfederationinformation-soap"></a>Request (GetFederationInformation) (SOAP)
 
-El elemento **request** representa una solicitud [GetFederationInformationRequest (SOAP)](getfederationinformationrequest-soap.md) . 
+El **elemento Request** representa una solicitud [GetFederationInformationRequest (SOAP).](getfederationinformationrequest-soap.md) 
   
 ```XML
 <Request>
@@ -33,13 +33,13 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Dominio (GetFederationInformation) (SOAP)](domain-getfederationinformationsoap.md) <br/> |Identifica el dominio que tiene una confianza de Federación.  <br/> |
+|[Domain (GetFederationInformation) (SOAP)](domain-getfederationinformationsoap.md) <br/> |Identifica el dominio que tiene una confianza de federación.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -53,10 +53,10 @@ Ninguna.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

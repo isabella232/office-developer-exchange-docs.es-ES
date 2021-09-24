@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3ba567bf-2c6c-4a6b-9ae8-3eea22d849de
-description: El elemento YomiCompanyName especifica el nombre de la compañía fonética de japonés del rol asociado.
-ms.openlocfilehash: 52966aaec8e0ea0ec0f89c15c0ff0dc83521881d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento YomiCompanyName especifica el nombre fonético de la compañía japonesa de la persona asociada.
+ms.openlocfilehash: 0b98b4b9a9cdf65b409914562f0f2b48f5ff21fd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467119"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521210"
 ---
 # <a name="yomicompanyname"></a>YomiCompanyName
 
-El elemento **YomiCompanyName** especifica el nombre de la compañía fonética de japonés del rol asociado. 
+El **elemento YomiCompanyName** especifica el nombre fonético de la compañía japonesa de la persona asociada. 
   
 ```XML
 <YomiCompanyName></YomiCompanyName>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **YomiCompanyName** es el nombre de la compañía fonética de japonés del rol asociado. 
+El valor de texto del **elemento YomiCompanyName** es el nombre fonético de la compañía japonesa de la persona asociada. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

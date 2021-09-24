@@ -1,23 +1,23 @@
 ---
-title: Gerentes
+title: Managers
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9be5f734-af42-4bf1-9eb4-f3e4f0917640
-description: El elemento Managers especifica una matriz de nombres de administrador y los identificadores de sus atribuciones de origen para un rol.
-ms.openlocfilehash: 49fccb4e6e4b920887d6f8fbc41c5ccdba1cbbe2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Managers especifica una matriz de nombres de administrador y los identificadores de sus atribuciones de origen para una persona.
+ms.openlocfilehash: a36b85ccefa7e13f9bdc482d5d613044532c7347
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530898"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524010"
 ---
-# <a name="managers"></a>Gerentes
+# <a name="managers"></a>Managers
 
-El **elemento** Managers especifica una matriz de nombres de administrador y los identificadores de sus atribuciones de origen para un rol. 
+El **elemento Managers** especifica una matriz de nombres de administrador y los identificadores de sus atribuciones de origen para una persona. 
   
 ```XML
 <Managers>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7e9ab484-7100-422d-ab22-d8ddb97098c1
 description: El elemento SetImListMigrationCompletedResponse representa una respuesta a una solicitud SetImListMigrationCompleted.
-ms.openlocfilehash: 66d85362319df1c88064130e99bba98f21b50db7
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 6bb75e9e14f19a98553976fd1e94e59e71a0522e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464822"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521427"
 ---
 # <a name="setimlistmigrationcompletedresponse"></a>SetImListMigrationCompletedResponse
 
-El elemento **SetImListMigrationCompletedResponse** representa una respuesta a una solicitud **SetImListMigrationCompleted** . 
+El **elemento SetImListMigrationCompletedResponse** representa una respuesta a una **solicitud SetImListMigrationCompleted.** 
   
 ```XML
 <SetImListMigrationCompletedResponse>
@@ -35,7 +35,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

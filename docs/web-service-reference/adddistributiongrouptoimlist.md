@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: adbffbfc-e436-4620-acfc-5dfd41a88cb8
 description: El elemento AddDistributionGroupToImList define una solicitud para agregar una lista de distribución a una lista de mensajes instantáneos.
-ms.openlocfilehash: 90a84b23678fb0740158f601967905a8847286fd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8b2425a05d184b203f8b65f74a6119d5b6d09946
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460382"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59525417"
 ---
 # <a name="adddistributiongrouptoimlist"></a>AddDistributionGroupToImList
 
-El elemento **AddDistributionGroupToImList** define una solicitud para agregar una lista de distribución a una lista de mensajes instantáneos. 
+El **elemento AddDistributionGroupToImList** define una solicitud para agregar una lista de distribución a una lista de mensajes instantáneos. 
   
 ```XML
 <AddDistributionGroupToImList>
@@ -33,7 +33,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -54,8 +54,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

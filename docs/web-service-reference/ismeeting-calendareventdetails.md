@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IsMeeting
 api_type:
 - schema
 ms.assetid: dd6900e4-e4a3-471a-909d-7240ebec501b
-description: El elemento IsMeeting indica si el evento del calendario es una reunión o una cita.
-ms.openlocfilehash: b75dfba203177d6451f3847bf8d1f68014612e1c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento IsMeeting indica si el evento de calendario es una reunión o una cita.
+ms.openlocfilehash: 6d398397de9147e0c9c8b0977a8a9f46a9da3ebd
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465999"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524164"
 ---
 # <a name="ismeeting-calendareventdetails"></a>IsMeeting (CalendarEventDetails)
 
-El elemento **IsMeeting** indica si el evento del calendario es una reunión o una cita. 
+El **elemento IsMeeting** indica si el evento de calendario es una reunión o una cita. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -50,27 +50,27 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarEventDetails](calendareventdetails.md) <br/> |Proporciona información adicional para un evento de calendario.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
+|[CalendarEventDetails](calendareventdetails.md) <br/> |Proporciona información adicional para un evento de calendario.  <br/> A continuación se muestra la expresión XPath de este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/CalendarEventArray/CalendarEvent[i]/CalendarEventDetails` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Es necesario un valor de texto si este elemento se devuelve en la respuesta. Este elemento es obligatorio si se usa el elemento [CalendarEventDetails](calendareventdetails.md) . 
+Se requiere un valor de texto si este elemento se devuelve en la respuesta. Este elemento es necesario si se usa el elemento [CalendarEventDetails.](calendareventdetails.md) 
   
 ## <a name="remarks"></a>Comentarios
 
 La diferencia entre una reunión y una cita es que una reunión es un elemento de calendario que incluye asistentes; una cita es un elemento de calendario que no incluye asistentes.
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -78,10 +78,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 

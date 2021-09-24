@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 79b24034-6456-4c9c-adf6-03d06024c4e8
-description: El elemento KeywordStats especifica una lista de uno o más elementos KeywordStat.
-ms.openlocfilehash: bf471c1712a96b44dbc533a2cb26e32546a6db38
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento KeywordStats especifica una lista de uno o varios elementos KeywordStat.
+ms.openlocfilehash: cca29bf94b7f5991488db81c0006817a91958204
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463296"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59524129"
 ---
 # <a name="keywordstats"></a>KeywordStats
 
-El elemento **KeywordStats** especifica una lista de uno o más elementos **KeywordStat** . 
+El **elemento KeywordStats** especifica una lista de uno o varios **elementos KeywordStat.** 
   
 ```XML
 <KeywordStats>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 

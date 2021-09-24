@@ -5,19 +5,19 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9697f2e5-a5f7-471a-a052-ae79e06eb09d
-description: El elemento ActionUrl identifica la dirección URL a la que el usuario debe navegar para corregir un problema indicado por el elemento AppStatus.
-ms.openlocfilehash: 2335595b4be6452f41c25f15d359e6939609c9b9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ActionUrl identifica la dirección URL a la que el usuario debe navegar para solucionar un problema indicado por el elemento AppStatus.
+ms.openlocfilehash: 21bffd1d9300488dad5eec5f0eb67b8a48ec3f00
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529675"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59522197"
 ---
 # <a name="actionurl"></a>ActionUrl
 
-El elemento **ActionUrl** identifica la dirección URL a la que el usuario debe navegar para corregir un problema indicado por el elemento [AppStatus](appstatus-ex15websvcsotherref.md) . 
+El **elemento ActionUrl** identifica la dirección URL a la que el usuario debe navegar para solucionar un problema indicado por el [elemento AppStatus.](appstatus-ex15websvcsotherref.md) 
   
 ```XML
 <ActionUrl/>
@@ -30,11 +30,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **ActionUrl** identifica la dirección URL a la que debe navegar el usuario para corregir un problema indicado por el elemento **AppStatus** . 
+El valor de texto del **elemento ActionUrl** identifica la dirección URL a la que el usuario debe navegar para corregir un problema indicado por el **elemento AppStatus.** 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -59,8 +59,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Archivo de validación  <br/> |No aplicable  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Metadatos](metadata-ex15websvcsotherref.md)
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

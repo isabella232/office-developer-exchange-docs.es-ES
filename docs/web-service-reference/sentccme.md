@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SentCcMe
 api_type:
 - schema
 ms.assetid: bf5044e4-cbdf-4e24-a16f-b6454a51fcd5
-description: El elemento SentCcMe indica si el propietario del buzón tiene que estar en la propiedad CcRecipients de los mensajes entrantes para que se aplique la condición o excepción.
-ms.openlocfilehash: 1fae56a8e7d4e56c56884e5fff051ecd9f138a6d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento SentCcMe indica si el propietario del buzón debe estar en la propiedad CcRecipients de los mensajes entrantes para que se aplique la condición o excepción.
+ms.openlocfilehash: 82123a44cccf953bf1db6dfaf916d4ebf851851e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465481"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521525"
 ---
 # <a name="sentccme"></a>SentCcMe
 
-El elemento **SentCcMe** indica si el propietario del buzón tiene que estar en la propiedad **CcRecipients** de los mensajes entrantes para que se aplique la condición o excepción. 
+El **elemento SentCcMe** indica si el propietario del buzón debe estar en la **propiedad CcRecipients** de los mensajes entrantes para que se aplique la condición o excepción. 
   
 ```XML
 <SentCcMe>true | false</SentCcMe>
@@ -34,11 +34,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -49,7 +49,7 @@ Ninguna.
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** indica que el propietario del buzón debe estar en la propiedad **CcRecipients** de los mensajes entrantes para que se aplique la condición o excepción. Un valor de **false** indica que el propietario del buzón no debe estar en la propiedad **CcRecipients** de los mensajes entrantes para que se aplique la condición o excepción. 
+Un valor de texto de **true** indica que el propietario del buzón debe estar en la **propiedad CcRecipients** de los mensajes entrantes para que se aplique la condición o excepción. Un valor **de false** indica que el propietario del buzón no debe estar en la propiedad **CcRecipients** de los mensajes entrantes para que se aplique la condición o excepción. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -61,12 +61,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

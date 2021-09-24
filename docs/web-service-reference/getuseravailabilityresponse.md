@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetUserAvailabilityResponse
 api_type:
 - schema
 ms.assetid: 6999510a-d60e-43da-8964-57b5fb3e9d11
-description: El elemento GetUserAvailabilityResponse es el elemento raíz que contiene las propiedades que definen la información de disponibilidad de usuario o la información de hora de reunión sugerida.
-ms.openlocfilehash: ceb24bc8b31a7d7313add213c26bef5efd3c89ae
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento GetUserAvailabilityResponse es el elemento raíz que contiene las propiedades que definen la información de disponibilidad del usuario o la información de hora de reunión sugerida.
+ms.openlocfilehash: 16a6f79f6ccc930e3847867a560bc042657f12a3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458218"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59521916"
 ---
 # <a name="getuseravailabilityresponse"></a>GetUserAvailabilityResponse
 
-El elemento **GetUserAvailabilityResponse** es el elemento raíz que contiene las propiedades que definen la información de disponibilidad de usuario o la información de hora de reunión sugerida. 
+El **elemento GetUserAvailabilityResponse** es el elemento raíz que contiene las propiedades que definen la información de disponibilidad del usuario o la información de hora de reunión sugerida. 
   
 ```xml
 <GetUserAvailabilityResponse>
@@ -37,14 +37,14 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FreeBusyResponseArray](freebusyresponsearray.md) <br/> |Contiene la información de disponibilidad de los usuarios solicitados y el estado de la respuesta.  <br/> |
-|[SuggestionsResponse](suggestionsresponse.md) <br/> |Contiene información del estado de respuesta y datos de sugerencia para las sugerencias de reunión solicitadas.  <br/> |
+|[FreeBusyResponseArray](freebusyresponsearray.md) <br/> |Contiene la información de disponibilidad de los usuarios solicitados y el estado de respuesta.  <br/> |
+|[SuggestionsResponse](suggestionsresponse.md) <br/> |Contiene información de estado de respuesta y datos de sugerencias para sugerencias de reunión solicitadas.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -52,11 +52,11 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="example"></a>Ejemplo
 
-El siguiente ejemplo de una respuesta de GetUserAvailability muestra una respuesta a una solicitud de GetUserAvailability.
+En el siguiente ejemplo de una respuesta GetUserAvailability se muestra una respuesta a una solicitud GetUserAvailability.
   
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -118,7 +118,7 @@ El siguiente ejemplo de una respuesta de GetUserAvailability muestra una respues
 </GetUserAvailabilityResponse>
 ```
 
-El contenido del elemento [ID](id.md) se ha abreviado para preservar la legibilidad. 
+El [contenido del](id.md) elemento ID se acortó para conservar la legibilidad. 
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -126,10 +126,10 @@ El contenido del elemento [ID](id.md) se ha abreviado para preservar la legibili
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 
 
