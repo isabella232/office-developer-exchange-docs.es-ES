@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ProxySecurityContext
 api_type:
 - schema
 ms.assetid: 40381d8e-e9dc-403f-9d78-87a09ad09d58
-description: El proxy HTTP del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes y que no se usa en las operaciones de servicios Web de Exchange usa el elemento ProxySecurityContext. Este elemento se introdujo en Exchange Server 2007 Service Pack 1 (SP1).
-ms.openlocfilehash: 1566a8b22fd285f8c56d2a6579006ba906dd899c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ProxySecurityContext lo usa el proxy HTTP del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente y no lo usa Exchange operaciones de servicios web. Este elemento se introdujo en Exchange Server 2007 Service Pack 1 (SP1).
+ms.openlocfilehash: dcd0b12419a5c24abbb6dbd0131288afb5d5c7c3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468512"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542977"
 ---
 # <a name="proxysecuritycontext"></a>ProxySecurityContext
 
-El proxy HTTP del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes y que no se usa en las operaciones de servicios Web de Exchange usa el elemento **ProxySecurityContext** . Este elemento se introdujo en Exchange Server 2007 Service Pack 1 (SP1). 
+El **elemento ProxySecurityContext** lo usa el proxy HTTP del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente y no lo usa Exchange operaciones de servicios web. Este elemento se introdujo en Exchange Server 2007 Service Pack 1 (SP1). 
   
 ```xml
 <ProxySecurityContext/>
@@ -34,11 +34,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -46,7 +46,7 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -54,12 +54,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

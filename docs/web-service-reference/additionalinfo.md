@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 50bebbab-2fef-4a27-a5a9-32d7200820b6
-description: El elemento AdditionalInfo especifica información adicional sobre el estado de conservación de un buzón.
-ms.openlocfilehash: 1911ff3ac0baf7a8854c0609e08959a54cc27b6d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento AdditionalInfo especifica información adicional sobre el estado de retención de un buzón.
+ms.openlocfilehash: d8b707fb04ffe91d5c7aa793c6b56c8bb048f160
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455824"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544321"
 ---
 # <a name="additionalinfo"></a>AdditionalInfo
 
-El elemento **AdditionalInfo** especifica información adicional sobre el estado de conservación de un buzón. 
+El **elemento AdditionalInfo** especifica información adicional sobre el estado de retención de un buzón. 
   
 ```XML
 <AdditionalInfo></AdditionalInfo>
 ```
 
- **XS: String**
+ **xs:string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
@@ -40,12 +40,12 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[MailboxHoldStatus](mailboxholdstatus.md) <br/> |Especifica el estado de suspensión del buzón.  <br/> |
+|[MailboxHoldStatus](mailboxholdstatus.md) <br/> |Especifica el estado de retención del buzón.  <br/> |
 |[NonIndexableItemDetail](nonindexableitemdetail.md) <br/> |Especifica los detalles de un elemento que no se puede indizar.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento AdditionalInfo es información adicional sobre el estado de conservación de un buzón.
+El valor de texto del elemento AdditionalInfo es información adicional sobre el estado de retención de un buzón.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -61,10 +61,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

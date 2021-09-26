@@ -1,28 +1,28 @@
 ---
-title: SetPlayOnPhoneDialStringResponse (servicio Web de mensajería unificada)
+title: SetPlayOnPhoneDialStringResponse (servicio web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetPlayOnPhoneDialStringResponse
 api_type:
 - schema
 ms.assetid: 88c1960a-0b9e-405d-a634-0d6a66524c1e
-description: El elemento SetPlayOnPhoneDialStringResponse define una respuesta a una solicitud de SetPlayOnPhoneDialString (servicio Web de mensajería unificada).
-ms.openlocfilehash: f0395945927fa99c03278ee965e8d423bcb64360
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento SetPlayOnPhoneDialStringResponse define una respuesta a una solicitud de operación SetPlayOnPhoneDialString (servicio web de mensajería unificada).
+ms.openlocfilehash: b383f2ac2247fca8729723a678d099deaa445bdf
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458624"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545968"
 ---
-# <a name="setplayonphonedialstringresponse-um-web-service"></a>SetPlayOnPhoneDialStringResponse (servicio Web de mensajería unificada)
+# <a name="setplayonphonedialstringresponse-um-web-service"></a>SetPlayOnPhoneDialStringResponse (servicio web de mensajería unificada)
 
-El elemento **SetPlayOnPhoneDialStringResponse** define una respuesta a una solicitud de [SetPlayOnPhoneDialString (servicio Web de mensajería unificada)](setplayonphonedialstring-operation-um-web-service.md) . 
+El **elemento SetPlayOnPhoneDialStringResponse** define una respuesta a una solicitud [de operación SetPlayOnPhoneDialString (servicio web](setplayonphonedialstring-operation-um-web-service.md) de mensajería unificada). 
   
-[SetPlayOnPhoneDialStringResponse (servicio Web de mensajería unificada)](setplayonphonedialstringresponse-um-web-service.md)
+[SetPlayOnPhoneDialStringResponse (servicio web de mensajería unificada)](setplayonphonedialstringresponse-um-web-service.md)
   
 ```xml
 <SetPlayOnPhoneDialStringResponse />
@@ -35,7 +35,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -47,7 +47,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Ninguna.
+Ninguno.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -55,12 +55,12 @@ Ninguna.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
-[Operación SetPlayOnPhoneDialString (servicio Web de mensajería unificada)](setplayonphonedialstring-operation-um-web-service.md)
+[Operación SetPlayOnPhoneDialString (servicio web de mensajería unificada)](setplayonphonedialstring-operation-um-web-service.md)
 

@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ExportItems
 api_type:
 - schema
 ms.assetid: e2846abb-0b16-4732-bbd8-038a674672f6
-description: La operación ExportItems exporta los elementos de un buzón de correo.
-ms.openlocfilehash: 547a490a27d2414d2eda1d89cdac036a34eddccd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación ExportItems exporta elementos de un buzón.
+ms.openlocfilehash: b53761f91b15053b0fb79a3c1068a50bce665a67
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526049"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542333"
 ---
 # <a name="exportitems-operation"></a>Operación ExportItems
 
-La operación **ExportItems** exporta los elementos de un buzón de correo. 
+La **operación ExportItems** exporta elementos de un buzón. 
   
 ## <a name="exportitems-request-example"></a>Ejemplo de solicitud ExportItems
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud **ExportItems** muestra cómo crear una solicitud para obtener tres elementos exportados desde un buzón. 
+En el siguiente ejemplo de una **solicitud ExportItems** se muestra cómo formar una solicitud para obtener tres elementos exportados desde un buzón. 
   
 ### <a name="code"></a>Código
 
@@ -55,11 +55,11 @@ El siguiente ejemplo de una solicitud **ExportItems** muestra cómo crear una so
 
 ### <a name="comment"></a>Comentario
 
-Los identificadores de elemento del ejemplo se han abreviado para preservar la legibilidad.
+Los identificadores de elementos del ejemplo se han acortado para conservar la legibilidad.
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [RequestServerVersion](requestserverversion.md)
     
@@ -69,11 +69,11 @@ Los siguientes elementos se usan en la solicitud:
     
 - [ItemId](itemid.md)
     
-## <a name="successful-exportitems-response-example"></a>Ejemplo de respuesta ExportItems correcta
+## <a name="successful-exportitems-response-example"></a>Ejemplo de respuesta ExportItems correcto
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **ExportItems** . 
+En el ejemplo siguiente se muestra una respuesta correcta a una **solicitud ExportItems.** 
   
 ### <a name="code"></a>Código
 
@@ -149,7 +149,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **Expo
 
 ### <a name="comment"></a>Comentario
 
-Los identificadores de elemento y las claves de cambio del ejemplo se han abreviado para preservar la legibilidad.
+Los identificadores de elementos y las claves de cambio del ejemplo se han acortado para conservar la legibilidad.
   
 ### <a name="response-elements"></a>Elementos de respuesta
 
@@ -167,13 +167,13 @@ En la respuesta se usan los siguientes elementos:
     
 - [ItemId](itemid.md)
     
-- [Datos (base64Binary)](data-base64binary.md)
+- [Data (base64Binary)](data-base64binary.md)
     
 ## <a name="exportitems-error-response-example"></a>Ejemplo de respuesta de error ExportItems
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta a la solicitud **ExportItems** que contiene dos errores y un elemento exportado correctamente. El primer elemento del ejemplo se ha exportado correctamente. El segundo elemento contiene una clave de cambio incorrecta. El tercer elemento representa un intento de exportar un elemento del buzón incorrecto. 
+En el ejemplo siguiente se muestra una respuesta a la **solicitud ExportItems** que contiene dos errores y un elemento exportado correctamente. El primer elemento del ejemplo se exporta correctamente. El segundo elemento contiene una clave de cambio incorrecta. El tercer elemento representa un intento de exportar un elemento desde el buzón incorrecto. 
   
 ### <a name="code"></a>Código
 
@@ -229,11 +229,11 @@ En el ejemplo siguiente se muestra una respuesta a la solicitud **ExportItems** 
 
 ### <a name="comments"></a>Comentarios
 
-Los identificadores de elemento, las claves de cambio y los datos del ejemplo se han abreviado para preservar la legibilidad.
+Los identificadores de elementos, las claves de cambio y los datos del ejemplo se han acortado para conservar la legibilidad.
   
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -247,7 +247,7 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - [ItemId](itemid.md)
     
-- [Datos (base64Binary)](data-base64binary.md)
+- [Data (base64Binary)](data-base64binary.md)
     
 - [MessageText](messagetext.md)
     
@@ -258,16 +258,16 @@ Los siguientes elementos se usan en la respuesta de error:
 - **Valor**
     
 > [!NOTE]
-> El elemento **Value** no existe en el esquema. Este elemento es válido porque el elemento [MessageXml](messagexml.md) , en el que se produce el elemento de instancia de **valor** , puede contener cualquier XML con formato correcto. 
+> El **elemento Value** no existe en el esquema. Este elemento es válido porque el [elemento MessageXml,](messagexml.md) en el que se produce el elemento de instancia **Value,** puede contener cualquier XML bien formado. 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
 [Operación UploadItems](uploaditems-operation.md)
 
 
-[Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
+[Operaciones ews en Exchange](ews-operations-in-exchange.md)
   
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

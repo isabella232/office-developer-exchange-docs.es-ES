@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7b9e2fdd-5678-4178-9297-7f12a3ca9d64
 description: El elemento BaseShape especifica la vista previa predeterminada con todas las propiedades devueltas o una vista previa compacta con menos propiedades devueltas.
-ms.openlocfilehash: 29f008840d649f97dfb299fee8e7bf5aaa573404
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: b30922a5f8e11200679ffe5aa813d3a0e5f4578e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44527421"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545695"
 ---
 # <a name="baseshape-previewitembaseshapetype"></a>BaseShape (PreviewItemBaseShapeType)
 
-El elemento **BaseShape** especifica la vista previa predeterminada con todas las propiedades devueltas o una vista previa compacta con menos propiedades devueltas. 
+El **elemento BaseShape** especifica la vista previa predeterminada con todas las propiedades devueltas o una vista previa compacta con menos propiedades devueltas. 
   
 ```XML
 <BaseShape> Default | Compact</BaseShape>
@@ -49,7 +49,7 @@ Ninguna.
 |**Valor**|**Descripción**|
 |:-----|:-----|
 |Predeterminado  <br/> |Indica que se muestran todas las propiedades.  <br/> |
-|Compacto  <br/> |Indica que solo se muestran las propiedades seleccionadas.  <br/> |
+|Compact  <br/> |Indica que solo se muestran las propiedades seleccionadas.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -63,12 +63,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

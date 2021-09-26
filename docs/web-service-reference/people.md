@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 65312428-548c-4fe9-971a-d0dab3be5ddf
-description: El elemento People especifica una matriz de datos de roles devueltos como resultado de una solicitud FindPeople.
-ms.openlocfilehash: b3920ca5cdf1d219c5fe119caeaaaf4965c39794
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento People especifica una matriz de datos de persona devueltos como resultado de una solicitud FindPeople.
+ms.openlocfilehash: 35af1da4e72829004ec054b27a5304012ebb996c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467189"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543152"
 ---
 # <a name="people"></a>Personas
 
-El elemento **People** especifica una matriz de datos de roles devueltos como resultado de una solicitud **FindPeople** . 
+El **elemento People** especifica una matriz de datos de persona devueltos como resultado de una solicitud **FindPeople.** 
   
 ```XML
 <People>
@@ -54,8 +54,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -1,33 +1,33 @@
 ---
-title: Operación de GetInboxRules
+title: Operación GetInboxRules
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - GetInboxRules
 api_type:
 - schema
 ms.assetid: b4b2701a-4a23-4acc-8c75-19f7955ad7ae
-description: La operación GetInboxRules usa los servicios web Exchange para recuperar las reglas de la bandeja de entrada en el buzón del usuario identificado.
-ms.openlocfilehash: f4c4c03f55c9f32be4a067024f4387888edd5fe9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación GetInboxRules usa Exchange Web Services para recuperar reglas de bandeja de entrada en el buzón del usuario identificado.
+ms.openlocfilehash: 3e312ed08494b92c212595d081454b5f2ca6117e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457938"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546255"
 ---
-# <a name="getinboxrules-operation"></a>Operación de GetInboxRules
+# <a name="getinboxrules-operation"></a>Operación GetInboxRules
 
-La operación **GetInboxRules** usa los servicios web Exchange para recuperar las reglas de la bandeja de entrada en el buzón del usuario identificado. 
+La **operación GetInboxRules** usa Exchange Web Services para recuperar reglas de bandeja de entrada en el buzón del usuario identificado. 
   
 ## <a name="getinboxrules-request-example"></a>Ejemplo de solicitud GetInboxRules
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra el XML de la solicitud que el cliente envía al servidor. La solicitud identifica al usuario en el elemento [MailboxSmtpAddress](mailboxsmtpaddress.md) . Todas las reglas de la bandeja de entrada para el usuario identificado deben devolverse en la respuesta. 
+En el ejemplo siguiente se muestra el XML de solicitud que el cliente envía al servidor. La solicitud identifica al usuario en el [elemento MailboxSmtpAddress.](mailboxsmtpaddress.md) Todas las reglas de la Bandeja de entrada para el usuario identificado deben devolverse en la respuesta. 
   
 ### <a name="code"></a>Código
 
@@ -48,20 +48,20 @@ En el ejemplo siguiente se muestra el XML de la solicitud que el cliente envía 
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
 La solicitud incluye el siguiente elemento opcional:
   
 - [MailboxSmtpAddress](mailboxsmtpaddress.md)
     
-## <a name="successful-getinboxrules-response-example"></a>Ejemplo de respuesta GetInboxRules correcta
+## <a name="successful-getinboxrules-response-example"></a>Ejemplo de respuesta GetInboxRules correcto
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo del cuerpo del Protocolo simple de acceso a objetos (SOAP) muestra una respuesta correcta a la solicitud **GetInboxRules** . En este ejemplo, la respuesta incluye una regla. 
+El siguiente ejemplo de cuerpo del Protocolo simple de acceso a objetos (SOAP) muestra una respuesta correcta a la **solicitud GetInboxRules.** En este ejemplo, la respuesta incluye una regla. 
   
 > [!NOTE]
-> Los valores de los atributos **ID** y **changekey** del elemento [FolderId](folderid.md) se han abreviado para preservar la legibilidad. 
+> Los valores de los **atributos Id** y **ChangeKey** del [elemento FolderId](folderid.md) se han acortado para conservar la legibilidad. 
   
 ### <a name="code"></a>Código
 
@@ -119,7 +119,7 @@ En la respuesta se incluyen los siguientes elementos:
     
 - [InboxRules](inboxrules.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 

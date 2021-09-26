@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1034b013-ef34-4e72-99b3-38bff475b3e8
-description: El elemento UnpinTeamMailbox contiene la solicitud de desanclar un buzón de sitio del cliente quitándolo de la respuesta de detección automática.
-ms.openlocfilehash: a6b01bfa9c5908765ff04ef7f5edbef0b99a9be2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento UnpinTeamMailbox contiene la solicitud para desanclar un buzón de sitio del cliente quitándoselo de la respuesta de detección automática.
+ms.openlocfilehash: 520d201f8ba618d085ef5b190184fceaf66b4170
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467245"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541829"
 ---
 # <a name="unpinteammailbox"></a>UnpinTeamMailbox
 
-El elemento **UnpinTeamMailbox** contiene la solicitud de desanclar un buzón de sitio del cliente quitándolo de la respuesta de **detección automática** . 
+El **elemento UnpinTeamMailbox** contiene la solicitud para desanclar un buzón de sitio del cliente quitándoselo de la **respuesta de** detección automática. 
   
 ```XML
 <UnpinTeamMailbox>
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ExternalReply
 api_type:
 - schema
 ms.assetid: cbcfa469-242c-4f98-8f4f-2c9bcbe69f5a
-description: El elemento ExternalReply contiene la respuesta de fuera de la oficina (OOF) que se envía a las direcciones fuera del dominio del destinatario o de los dominios de confianza.
-ms.openlocfilehash: c3381979e5e6aad51f9ae2bb3e661003ef793be6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ExternalReply contiene la respuesta de fuera de la oficina (OOF) que se envía a direcciones fuera del dominio del destinatario o dominios de confianza.
+ms.openlocfilehash: b09e7136c1be7f30bae42585b12d203cf404d2c4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458764"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545128"
 ---
 # <a name="externalreply"></a>ExternalReply
 
-El elemento **ExternalReply** contiene la respuesta de fuera de la oficina (OOF) que se envía a las direcciones fuera del dominio del destinatario o de los dominios de confianza. 
+El **elemento ExternalReply** contiene la respuesta de fuera de la oficina (OOF) que se envía a direcciones fuera del dominio del destinatario o dominios de confianza. 
   
 ```XML
 <ExternalReply>
@@ -38,20 +38,20 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
-|XML: lang  <br/> |Especifica el idioma usado en el mensaje **ExternalReply** . Los valores posibles para este atributo los define el documento RFC 3066 de IETF.  <br/> |
+|xml:lang  <br/> |Especifica el idioma usado en el **mensaje ExternalReply.** Los valores posibles para este atributo se definen mediante IETF RFC 3066.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Mensaje (disponibilidad)](message-availability.md) <br/> |Contiene la respuesta OOF.  <br/> |
+|[Message (Availability)](message-availability.md) <br/> |Contiene la respuesta de OOF.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UserOofSettings](useroofsettings.md) <br/> |Especifica la configuración de OOF.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
-|[OofSettings](oofsettings.md) <br/> |Contiene la configuración de OOF.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |Especifica la configuración de OOF.  <br/> A continuación se muestra la expresión XPath de este elemento:  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[OofSettings](oofsettings.md) <br/> |Contiene la configuración de OOF.  <br/> A continuación se muestra la expresión XPath de este elemento:  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -59,7 +59,7 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
   
 ## <a name="example"></a>Ejemplo
 
-El siguiente ejemplo de una solicitud SetUserOofSettings establece la [OofState](oofstate.md) en **habilitada**, establece la duración de OOF en 10 días y establece los mensajes internos y externos de OOF.
+En el siguiente ejemplo de una solicitud SetUserOofSettings se establece [OofState](oofstate.md) en **Enabled**, se establece la duración de OOF en 10 días y se establecen los mensajes OOF internos y externos.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -96,10 +96,10 @@ El siguiente ejemplo de una solicitud SetUserOofSettings establece la [OofState]
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 

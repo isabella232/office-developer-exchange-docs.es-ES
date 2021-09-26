@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 51116adc-1f59-429b-b1a7-e9ada92c366f
-description: El elemento Master solo está destinado a uso interno.
-ms.openlocfilehash: 38d33770d7b2222d4b852521a680eec185f54321
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Master está diseñado solo para uso interno.
+ms.openlocfilehash: 2befb213d0508ba2ae5775a71c33523f02d5706c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530526"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544041"
 ---
 # <a name="master"></a>Master
 
-El elemento **Master** solo está destinado a uso interno. 
+El **elemento Master** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,7 +25,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 

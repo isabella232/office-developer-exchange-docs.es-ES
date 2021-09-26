@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CopyToFolder
 api_type:
 - schema
 ms.assetid: 6fd8a6b8-d813-43ff-991b-0e9e782fe00e
-description: El elemento CopyToFolder especifica el identificador de la carpeta en la que se pueden copiar los elementos de correo electrónico.
-ms.openlocfilehash: 7cdda0f9769f909255c9b76f78ac7094a8dfc8f8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento CopyToFolder especifica el identificador de la carpeta a la que se pueden copiar los elementos de correo electrónico.
+ms.openlocfilehash: a26072f6f316df1734d32cab24a0108ab3c513b3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463177"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543467"
 ---
 # <a name="copytofolder"></a>CopyToFolder
 
-El elemento **CopyToFolder** especifica el identificador de la carpeta en la que se pueden copiar los elementos de correo electrónico. 
+El **elemento CopyToFolder** especifica el identificador de la carpeta a la que se pueden copiar los elementos de correo electrónico. 
   
 ```XML
 <CopyToFolder>
@@ -43,14 +43,14 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FolderId](folderid.md) <br/> |Contiene el identificador de una carpeta de destino para un elemento o carpeta que se ha copiado o movido.  <br/> |
-|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifica una carpeta de destino con nombre para un elemento o carpeta que se ha copiado o movido.  <br/> |
+|[FolderId](folderid.md) <br/> |Contiene el identificador de una carpeta de destino para un elemento o carpeta copiados o movidos.  <br/> |
+|[DistinguishedFolderId](distinguishedfolderid.md) <br/> |Identifica una carpeta de destino con nombre para un elemento o carpeta copiados o movidos.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Actions](actions.md) <br/> |Representa el conjunto de acciones que se pueden realizar en un mensaje cuando se cumplen las condiciones.  <br/> |
+|[Actions](actions.md) <br/> |Representa el conjunto de acciones que están disponibles para realizarse en un mensaje cuando se cumplan las condiciones.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -66,15 +66,15 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
 [MoveToFolder](movetofolder.md)
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

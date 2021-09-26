@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - OriginalRecipients
 api_type:
 - schema
 ms.assetid: e4af86a5-85af-4239-8055-e29f0acf77c1
 description: El elemento OriginalRecipients representa una lista de direcciones de correo electrónico de los destinatarios del primer mensaje.
-ms.openlocfilehash: 7385b1fd62313ee09c94cd04f3f669215e6cd497
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 38066a14cbac02ead7e56cef3d448509302d545d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467182"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546143"
 ---
 # <a name="originalrecipients"></a>OriginalRecipients
 
-El elemento **OriginalRecipients** representa una lista de direcciones de correo electrónico de los destinatarios del primer mensaje. 
+El **elemento OriginalRecipients** representa una lista de direcciones de correo electrónico de los destinatarios del primer mensaje. 
   
 ```XML
 <OriginalRecipients>
@@ -42,13 +42,13 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Dirección (EmailAddressType)](address-emailaddresstype.md) <br/> |Contiene una dirección de correo electrónico completamente resuelta.  <br/> |
+|[Address (EmailAddressType)](address-emailaddresstype.md) <br/> |Contiene una dirección de correo electrónico totalmente resuelta.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[MessageTrackingReport](messagetrackingreport.md) <br/> |Contiene un solo mensaje que se devuelve en una [operación GetMessageTrackingReport](getmessagetrackingreport-operation.md).  <br/> |
+|[MessageTrackingReport](messagetrackingreport.md) <br/> |Contiene un único mensaje que se devuelve en una [operación GetMessageTrackingReport](getmessagetrackingreport-operation.md).  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -60,15 +60,15 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
 [Operación GetMessageTrackingReport](getmessagetrackingreport-operation.md)
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

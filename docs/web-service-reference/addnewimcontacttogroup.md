@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d5913619-0c13-429d-b9d2-057e8af220f1
 description: El elemento AddNewImContactToGroup define una solicitud para agregar un nuevo contacto de mensajería instantánea a un grupo de mensajería instantánea.
-ms.openlocfilehash: c493ba81b23832a462acd425eb60297801f8768f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 48d4fe37964a2851a32398425ed4fbd5d5d4f77d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463653"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541570"
 ---
 # <a name="addnewimcontacttogroup"></a>AddNewImContactToGroup
 
-El elemento **AddNewImContactToGroup** define una solicitud para agregar un nuevo contacto de mensajería instantánea a un grupo de mensajería instantánea. 
+El **elemento AddNewImContactToGroup** define una solicitud para agregar un nuevo contacto de mensajería instantánea a un grupo de mensajería instantánea. 
   
 ```XML
 <AddNewImContactToGroup>
@@ -38,7 +38,7 @@ Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[IMAddress (NonEmptyStringType)](imaddress-nonemptystringtype.md)  |  [DisplayName (NonEmptyStringType)](displayname-nonemptystringtype.md)  |  [GROUPID](groupid.md)
+[ImAddress (NonEmptyStringType)](imaddress-nonemptystringtype.md)  |  [DisplayName (NonEmptyStringType)](displayname-nonemptystringtype.md)  |  [GroupId](groupid.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

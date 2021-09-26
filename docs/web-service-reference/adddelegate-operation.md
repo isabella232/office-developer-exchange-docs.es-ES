@@ -5,32 +5,32 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AddDelegate
 api_type:
 - schema
 ms.assetid: 012d8cc5-648c-4ba0-a155-15c422b1e994
-description: La operación AddDelegate agrega uno o más delegados al buzón de una entidad de identidad y establece permisos de acceso específicos.
-ms.openlocfilehash: 80adbe71d69be1025dc9593c6a9002bc68fdcb76
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación AddDelegate agrega uno o varios delegados al buzón de una entidad de seguridad y establece permisos de acceso específicos.
+ms.openlocfilehash: 687080c58a0dbde2ddb0f0049b96d543204c6018
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466517"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543817"
 ---
 # <a name="adddelegate-operation"></a>Operación AddDelegate
 
-La operación **AddDelegate** agrega uno o más delegados al buzón de una entidad de identidad y establece permisos de acceso específicos. 
+La **operación AddDelegate** agrega uno o varios delegados al buzón de una entidad de seguridad y establece permisos de acceso específicos. 
   
 ## <a name="soap-headers"></a>Encabezados SOAP
 
-La operación **AddDelegate** puede usar los encabezados SOAP que se enumeran y describen en la siguiente tabla. 
+La **operación AddDelegate** puede usar los encabezados SOAP que se enumeran y se describen en la tabla siguiente. 
   
 |**Header**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente.  <br/> |
-|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural RFC3066 que se va a usar para obtener acceso al buzón.  <br/> |
+|Suplantación  <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario al que la aplicación cliente está suplantando.  <br/> |
+|MailboxCulture  <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural RFC3066 que se usará para tener acceso al buzón.  <br/> |
 |RequestVersion  <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación.  <br/> |
 |ServerVersion  <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud.  <br/> |
    
@@ -38,7 +38,7 @@ La operación **AddDelegate** puede usar los encabezados SOAP que se enumeran y 
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud **AddDelegate** muestra un intento de conceder a user1 permisos delegar en carpetas que son propiedad del usuario2. User1 tiene permisos de autor para user2's la carpeta calendario y los permisos de nivel de revisor en la carpeta contactos de user2's. User1 no recibirá copias de los mensajes de reunión y no podrá ver los elementos privados en el buzón de user2's. Las convocatorias de reunión se enviarán tanto a user1 como a usuario2. 
+En el siguiente ejemplo de una **solicitud AddDelegate** se muestra un intento de conceder permisos de delegado de user1 en carpetas que son propiedad de user2. User1 tiene permisos de nivel de autor para la carpeta Calendario de user2 y permisos de nivel revisor para la carpeta Contactos de user2. User1 no recibirá copias de mensajes de reunión y no podrá ver elementos privados en el buzón de usuario2. Las solicitudes de reunión se enviarán tanto a user1 como a user2. 
   
 ### <a name="code"></a>Código
 
@@ -77,7 +77,7 @@ El siguiente ejemplo de una solicitud **AddDelegate** muestra un intento de conc
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una respuesta de **AddDelegate** muestra una respuesta correcta a una solicitud de **AddDelegate** . 
+En el siguiente ejemplo de una **respuesta AddDelegate** se muestra una respuesta correcta a una **solicitud AddDelegate.** 
   
 ### <a name="code"></a>Código
 
@@ -122,7 +122,7 @@ El siguiente ejemplo de una respuesta de **AddDelegate** muestra una respuesta c
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra la respuesta a una solicitud para agregar un delegado que ya se ha agregado al buzón de la entidad de la identidad.
+En el ejemplo siguiente se muestra la respuesta a una solicitud para agregar un delegado que ya se ha agregado al buzón de la entidad de seguridad.
   
 ### <a name="code"></a>Código
 
@@ -158,9 +158,9 @@ En el ejemplo siguiente se muestra la respuesta a una solicitud para agregar un 
 
 ### <a name="comments"></a>Comentarios
 
-Si se devuelve el código de respuesta ErrorDelegateAlreadyExists al intentar agregar un delegado, use la [operación GetDelegate](getdelegate-operation.md) para obtener todos los permisos actuales para el delegado y, a continuación, use la [operación UpdateDelegate](updatedelegate-operation.md) para establecer los nuevos permisos. 
+Si se devuelve el código de respuesta ErrorDelegateAlreadyExists al intentar agregar un delegado, use la operación [GetDelegate](getdelegate-operation.md) para obtener todos los permisos actuales para el delegado y, a continuación, use la operación [UpdateDelegate](updatedelegate-operation.md) para establecer los nuevos permisos. 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Adición de delegados](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
+- [Agregar delegados](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

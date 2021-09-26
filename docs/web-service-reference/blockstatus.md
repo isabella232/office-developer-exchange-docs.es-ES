@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 08556ee9-0923-437c-99a4-bb630f04e973
-description: El elemento BlockStatus especifica el estado de bloqueo de un elemento.
-ms.openlocfilehash: e88236274bfa70216e872025c2a94231f837df1f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento BlockStatus especifica el estado del bloque de un elemento.
+ms.openlocfilehash: e26562ddaecaf49102f6646f004d86b07383888b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462279"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545611"
 ---
 # <a name="blockstatus"></a>BlockStatus
 
-El elemento **BlockStatus** especifica el estado de bloqueo de un elemento. 
+El **elemento BlockStatus** especifica el estado del bloque de un elemento. 
   
 ```XML
 <BlockStatus> true | false </BlockStatus
@@ -40,14 +40,14 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
-|[Contacto](contact.md) <br/> |Representa un elemento de contacto en el almacén de Exchange.  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Representa un Exchange de calendario.  <br/> |
+|[Contact](contact.md) <br/> |Representa un elemento de contacto en el Exchange almacén.  <br/> |
 |[DistributionList](distributionlist.md) <br/> |Representa una lista de distribución.  <br/> |
-|[Elemento](item.md) <br/> |Representa un elemento genérico del almacén de Exchange.  <br/> |
+|[Elemento](item.md) <br/> |Representa un elemento genérico en el Exchange almacén.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **BlockStatus** indica que un elemento está bloqueado. Un valor de **false** indica que no se bloquea un elemento. 
+Un valor de texto **de true** para el **elemento BlockStatus** indica que un elemento está bloqueado. Un valor de **false** indica que un elemento no está bloqueado. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -61,12 +61,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

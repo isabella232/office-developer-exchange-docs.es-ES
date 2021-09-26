@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 09475586-00fa-4e82-a915-5ca263ab4d1c
 description: El elemento AccessLevel especifica el nivel de acceso para una reunión en línea.
-ms.openlocfilehash: 3c1375ef37ea666c6c4fafce7daa46ae0d0a2696
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f1c85579affe7d1142b22a890808bceeb8f82d38
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462342"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544419"
 ---
 # <a name="accesslevel"></a>AccessLevel
 
-El elemento **AccessLevel** especifica el nivel de acceso para una reunión en línea. 
+El **elemento AccessLevel** especifica el nivel de acceso para una reunión en línea. 
   
 ```XML
 <AccessLevel/>
@@ -44,7 +44,7 @@ Ninguna.
    
 ## <a name="text-value"></a>Valor de texto
 
-En la siguiente tabla se enumeran los valores de texto para el elemento **AccessLevel** . 
+En la tabla siguiente se enumeran los valores de texto del **elemento AccessLevel.** 
   
 **Valores de texto del elemento AccessLevel**
 
@@ -52,7 +52,7 @@ En la siguiente tabla se enumeran los valores de texto para el elemento **Access
 |:-----|:-----|
 |Todos  <br/> |El nivel de acceso está abierto a todos.  <br/> |
 |Interno  <br/> |El nivel de acceso es solo interno.  <br/> |
-|Invitado  <br/> |El nivel de acceso solo es participante invitado.  <br/> |
+|Invitado  <br/> |El nivel de acceso es solo para participantes invitados.  <br/> |
 |Bloqueado  <br/> |El nivel de acceso está bloqueado.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
@@ -66,11 +66,11 @@ Este elemento se introdujo en Exchange Server 2013.
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipo  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

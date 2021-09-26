@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RequestType
 api_type:
 - schema
 ms.assetid: 4e657e57-528f-4250-a99c-f9850bbbcec5
 description: El elemento RequestType identifica si una solicitud de proxy es una solicitud entre sitios o entre bosques.
-ms.openlocfilehash: 278a65a1f2ce4cb433ae8099703d70d0a2cafa3b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 3390381b903c7a39a1d2ea6cae80b3fbc07eba43
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455971"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541857"
 ---
 # <a name="requesttype"></a>RequestType
 
-El elemento **RequestType** identifica si una solicitud de proxy es una solicitud entre sitios o entre bosques. 
+El **elemento RequestType** identifica si una solicitud de proxy es una solicitud entre sitios o entre bosques. 
   
 ```xml
 <RequestType>CrossSite or CrossForest</RequestType>
@@ -57,13 +57,13 @@ Se requiere un valor de texto para este elemento. Los valores posibles son los s
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

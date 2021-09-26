@@ -5,44 +5,44 @@ ms.date: 01/24/2020
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9015a0d8-3495-461b-aa79-797d23169585
-description: Buscar información sobre la operación de EWS de SetHoldOnMailboxes.
-ms.openlocfilehash: 4d79ba9f616974b9415ae9eae23b8f5fdb0ab205
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Busque información sobre la operación EWS SetHoldOnMailboxes.
+ms.openlocfilehash: d4774af88e94a14103aa883774f193e84338c9f1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44448397"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542795"
 ---
 # <a name="setholdonmailboxes-operation"></a>Operación SetHoldOnMailboxes
 
 > [!IMPORTANT]
-> A partir del 1 de abril de 2020, la operación SetHoldOnMailboxes ya no estará disponible en Exchange Online. Esta operación no se verá afectada en las versiones locales de Exchange Server. Para obtener más información, vea [jubilación de las herramientas de eDiscovery heredadas en Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/legacy-ediscovery-retirement#getsearchablemailboxes-setholdonmailboxes-and-getholdonmailboxes-operations-in-the-ews-api).
+> A partir del 1 de abril de 2020, la operación SetHoldOnMailboxes ya no estará disponible en Exchange Online. Esta operación no se verá afectada en las versiones locales de Exchange Server. Para obtener más información, vea [Retirement of legacy eDiscovery tools in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/legacy-ediscovery-retirement#getsearchablemailboxes-setholdonmailboxes-and-getholdonmailboxes-operations-in-the-ews-api).
 
-Buscar información sobre la operación de EWS de **SetHoldOnMailboxes** . 
+Busque información sobre la **operación EWS SetHoldOnMailboxes.** 
   
-La operación **SetHoldOnMailboxes** establece una directiva de retención de buzones en buzones. 
+La **operación SetHoldOnMailboxes** establece una directiva de retención de buzones en los buzones. 
   
 Esta operación se introdujo en Exchange Server 2013.
   
 ## <a name="using-the-setholdonmailboxes-operation"></a>Uso de la operación SetHoldOnMailboxes
 
-La operación **SetHoldOnMailboxes** establece una retención de buzón en uno o más buzones. 
+La **operación SetHoldOnMailboxes** establece una retención de buzones en uno o más buzones. 
   
 ### <a name="setholdonmailboxes-operation-soap-headers"></a>Encabezados SOAP de operación SetHoldOnMailboxes
 
-La operación **SetHoldOnMailboxes** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
+La **operación SetHoldOnMailboxes** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
   
 |**Nombre de encabezado**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Identifica los roles de servidor que son necesarios para que el autor de la llamada realice la solicitud. Este encabezado se aplica a una solicitud.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Este encabezado se aplica a una solicitud.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado se aplica a una respuesta.  <br/> |
+|**ManagementRole** <br/> |[ManagementRole](managementrole.md) <br/> |Identifica los roles de servidor necesarios para que el autor de la llamada realice la solicitud. Este encabezado es aplicable a una solicitud.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Este encabezado es aplicable a una solicitud.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado es aplicable a una respuesta.  <br/> |
    
-## <a name="setholdonmailboxes-operation-request-example-apply-a-hold-on-a-mailbox"></a>Ejemplo de solicitud de operación SetHoldOnMailboxes: aplicar una retención en un buzón
+## <a name="setholdonmailboxes-operation-request-example-apply-a-hold-on-a-mailbox"></a>Ejemplo de solicitud de operación SetHoldOnMailboxes: Aplicar una retención en un buzón
 
-El siguiente ejemplo de una solicitud de operación de **SetHoldOnMailboxes** muestra cómo aplicar una retención en dos buzones. La retención de buzones se creó con el comando [New-MailboxSearch](https://technet.microsoft.com/library/dd298064.aspx) . 
+En el siguiente ejemplo de una **solicitud de operación SetHoldOnMailboxes** se muestra cómo aplicar una retención en dos buzones. La retención del buzón se creó mediante el [comando New-MailboxSearch.](https://technet.microsoft.com/library/dd298064.aspx) 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -80,7 +80,7 @@ El cuerpo SOAP de la solicitud contiene los siguientes elementos:
     
 - [Query](query.md)
     
-- [Buzones de correo (ArrayOfStringsType)](mailboxes-arrayofstringstype.md)
+- [Mailboxes (ArrayOfStringsType)](mailboxes-arrayofstringstype.md)
     
 - [String](string.md)
     
@@ -88,11 +88,11 @@ El cuerpo SOAP de la solicitud contiene los siguientes elementos:
     
 - [IncludeNonIndexableItems](includenonindexableitems.md)
     
-- [Desduplicación](deduplication.md)
+- [Deduplication](deduplication.md)
     
 ## <a name="successful-setholdonmailboxes-operation-response"></a>Respuesta de operación SetHoldOnMailboxes correcta
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación de **SetHoldOnMailboxes** para poner dos buzones en retención. 
+En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación **SetHoldOnMailboxes** para poner dos buzones en espera. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -135,7 +135,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
 
 ```
 
-El cuerpo SOAP de respuesta contiene los siguientes elementos:
+El cuerpo SOAP de la respuesta contiene los siguientes elementos:
   
 - [SetHoldOnMailboxesResponse](setholdonmailboxesresponse.md)
     
@@ -153,13 +153,13 @@ El cuerpo SOAP de respuesta contiene los siguientes elementos:
     
 - [Mailbox (cadena)](mailbox-string.md)
     
-- [Estado (HoldStatusType)](status-holdstatustype.md)
+- [Status (HoldStatusType)](status-holdstatustype.md)
     
 - [AdditionalInfo](additionalinfo.md)
     
-## <a name="setholdonmailboxes-operation-error-response"></a>Respuesta de error de operación de SetHoldOnMailboxes
+## <a name="setholdonmailboxes-operation-error-response"></a>Respuesta de error de operación SetHoldOnMailboxes
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **SetHoldOnMailboxes** . Se trata de una respuesta a una solicitud que contiene un identificador de buzón de correo especificado incorrectamente. 
+En el ejemplo siguiente se muestra una respuesta de error a una **solicitud de operación SetHoldOnMailboxes.** Esta es una respuesta a una solicitud que contiene un identificador de buzón especificado incorrectamente. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -188,7 +188,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
 
 ```
 
-El cuerpo SOAP de respuesta de error contiene los siguientes elementos:
+El cuerpo SOAP de la respuesta de error contiene los siguientes elementos:
   
 - [SetHoldOnMailboxesResponse](setholdonmailboxesresponse.md)
     
@@ -198,11 +198,11 @@ El cuerpo SOAP de respuesta de error contiene los siguientes elementos:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Para obtener los códigos de error adicionales que son genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).
+Para obtener códigos de error adicionales genéricos para EWS y específicos de esta operación, vea [ResponseCode](responsecode.md).
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
+- [Operaciones ews en Exchange](ews-operations-in-exchange.md)
     
 - [Operación GetSearchableMailboxes](getsearchablemailboxes-operation.md)
     

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PermissionSet
 api_type:
 - schema
 ms.assetid: 6ac1bd17-a089-46bb-b9e6-f5b1dfe1076d
-description: El elemento PermissionSet contiene todos los permisos que se configuran para una carpeta.
-ms.openlocfilehash: 5639ee8ba64742f39c0274f4e3aaa76d75bea42b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento PermissionSet contiene todos los permisos configurados para una carpeta.
+ms.openlocfilehash: b18fef33d3be6cb8c525f731a264860c3a83afdc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468134"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543145"
 ---
 # <a name="permissionset-permissionsettype"></a>PermissionSet (PermissionSetType)
 
-El elemento **PermissionSet** contiene todos los permisos que se configuran para una carpeta. 
+El **elemento PermissionSet** contiene todos los permisos configurados para una carpeta. 
   
 ```XML
 <PermissionSet>
@@ -43,17 +43,17 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Permisos](permissions.md) <br/> |Contiene la colección de permisos para una carpeta. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
-|[UnknownEntries](unknownentries.md) <br/> |Contiene una matriz de entradas desconocidas que no se pueden resolver contra el servicio de directorio de Active Directory. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
+|[Permisos](permissions.md) <br/> |Contiene la colección de permisos de una carpeta. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
+|[UnknownEntries](unknownentries.md) <br/> |Contiene una matriz de entradas desconocidas que no se pueden resolver en el servicio de directorio de Active Directory. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
 |[Folder](folder.md) <br/> |Define una carpeta para crear, obtener, buscar, sincronizar o actualizar.  <br/> |
-|[SearchFolder](searchfolder.md) <br/> |Representa una carpeta de búsqueda contenida en un buzón.  <br/> |
-|[Hubiera](contactsfolder.md) <br/> |Representa una carpeta de contactos contenida en un buzón.  <br/> |
-|[Hubiera](tasksfolder.md) <br/> |Representa una carpeta de tareas contenida en un buzón.  <br/> |
+|[SearchFolder](searchfolder.md) <br/> |Representa una carpeta de búsqueda que se encuentra en un buzón.  <br/> |
+|[ContactsFolder](contactsfolder.md) <br/> |Representa una carpeta de contactos que se encuentra en un buzón.  <br/> |
+|[TasksFolder](tasksfolder.md) <br/> |Representa una carpeta de tareas que se encuentra en un buzón.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
@@ -63,7 +63,7 @@ Este elemento se introdujo en Exchange Server 2007 Service Pack 1 (SP1).
   
 ### <a name="version-differences"></a>Diferencias de versión
 
-Para las aplicaciones dirigidas a Exchange Online, Exchange online como parte de Office 365 o a una versión local de Exchange a partir de Exchange 2013, no se devuelven permisos de carpeta cuando el elemento [BaseShape](baseshape.md) tiene un valor de **AllProperties** en la solicitud de operación [GetFolder](getfolder-operation.md) . Para recuperar los permisos de carpeta, agregue el elemento [PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) al elemento [AdditionalProperties](additionalproperties.md) en la solicitud **GetFolder** . 
+Para las aplicaciones de destino Exchange Online, Exchange Online como parte de Office 365 o una versión local de Exchange a partir de Exchange 2013, los permisos de carpeta no se devuelven cuando el elemento [BaseShape](baseshape.md) tiene un valor de **AllProperties** en [GetFolder](getfolder-operation.md) solicitud de operación. Para recuperar los permisos de carpeta, agregue el [elemento PermissionSet (PermissionSetType)](permissionset-permissionsettype.md) al [elemento AdditionalProperties](additionalproperties.md) en la **solicitud GetFolder.** 
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -71,15 +71,15 @@ Para las aplicaciones dirigidas a Exchange Online, Exchange online como parte de
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 
 
-[Configuración de permisos de nivel de carpeta](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
+[Configuración Folder-Level permisos](https://msdn.microsoft.com/library/c7530e86-5112-401c-b10a-9c054ae59f07%28Office.15%29.aspx)
 

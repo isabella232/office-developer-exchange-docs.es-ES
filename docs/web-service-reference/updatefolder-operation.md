@@ -5,45 +5,45 @@ ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateFolder
 api_type:
 - schema
 ms.assetid: 3494c996-b834-4813-b1ca-d99642d8b4e7
-description: 'La operación UpdateFolder se usa para modificar las propiedades de un elemento existente en el almacén de Exchange. Cada operación UpdateFolder consta de lo siguiente:'
-ms.openlocfilehash: fb894d9f42358b67f81e9fe8ae41ba61e6f46460
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: 'La operación UpdateFolder se usa para modificar las propiedades de un elemento existente en el Exchange almacén. Cada operación UpdateFolder consta de lo siguiente:'
+ms.openlocfilehash: be8e39e13681cea34e312158c348c60a94374bec
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467364"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541766"
 ---
 # <a name="updatefolder-operation"></a>Operación UpdateFolder
 
-La operación UpdateFolder se usa para modificar las propiedades de un elemento existente en el almacén de Exchange. Cada operación UpdateFolder consta de lo siguiente:
+La operación UpdateFolder se usa para modificar las propiedades de un elemento existente en el Exchange almacén. Cada operación UpdateFolder consta de lo siguiente:
   
-- Un elemento [FolderId](folderid.md) que especifica la carpeta que se va a actualizar. 
+- Elemento [FolderId](folderid.md) que especifica una carpeta que se debe actualizar. 
     
-- Ruta de acceso interna de un elemento de la carpeta, como se especifica en la forma Folder, que especifica los datos que se van a actualizar.
+- Una ruta de acceso interna de un elemento de la carpeta, como especifica la forma de la carpeta, que especifica los datos que se actualizarán.
     
-- Una carpeta que contiene el nuevo valor del campo actualizado, si la actualización no es una eliminación.
+- Carpeta que contiene el nuevo valor del campo actualizado, si la actualización no es una eliminación.
     
 ## <a name="remarks"></a>Comentarios
 
-Se pueden realizar tres acciones de actualización básicas en un elemento. Estas acciones se enumeran en la tabla siguiente.
+Se pueden realizar tres acciones básicas de actualización en un elemento. Estas acciones se enumeran en la tabla siguiente.
   
 |**Action**|**Descripción**|
 |:-----|:-----|
-|Anexar  <br/> |La acción Append agrega datos a una propiedad existente. Conserva los datos que hay actualmente. Append no es aplicable a todas las propiedades.  <br/> |
-|Set  <br/> |La acción Set reemplaza los datos de una propiedad si contiene datos o crea la propiedad y establece su valor si no existe. La acción Set solo es aplicable a las propiedades modificables.  <br/> |
-|Eliminar  <br/> |La acción eliminar quita una propiedad de una carpeta. No es lo mismo que establecerlo en un valor vacío. Una vez completada, la propiedad no existe para la carpeta. Delete solo se aplica a propiedades modificables.  <br/> |
+|Anexar  <br/> |La acción append agrega datos a una propiedad existente. Conserva los datos que hay actualmente. Append no es aplicable a todas las propiedades.  <br/> |
+|Set  <br/> |La acción set reemplaza los datos de una propiedad si contiene datos o crea la propiedad y establece su valor si no existe. La acción set solo se aplica a las propiedades que se pueden escribir.  <br/> |
+|Eliminar  <br/> |La acción eliminar quita una propiedad de una carpeta. Esto es diferente de establecerlo en un valor vacío. Cuando se completa, la propiedad no existe para la carpeta. Eliminar solo se aplica a las propiedades que se pueden escribir.  <br/> |
    
 ## <a name="updatefolder-request-example"></a>Ejemplo de solicitud UpdateFolder
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud UpdateFolder muestra cómo actualizar un nombre para mostrar de la carpeta. 
+En el siguiente ejemplo de una solicitud UpdateFolder se muestra cómo actualizar un nombre para mostrar de carpeta. 
   
 ### <a name="code"></a>Código
 
@@ -77,11 +77,11 @@ El siguiente ejemplo de una solicitud UpdateFolder muestra cómo actualizar un n
 En este ejemplo se cambia el nombre para mostrar de la carpeta a NewFolderName.
   
 > [!NOTE]
-> Los valores de los atributos **ID** y **changekey** del elemento [FolderId](folderid.md) se han abreviado para facilitar su lectura. 
+> Los valores de los **atributos Id** y **ChangeKey** del [elemento FolderId](folderid.md) se han acortado para mejorar la legibilidad. 
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [UpdateFolder](updatefolder.md)
     
@@ -91,7 +91,7 @@ Los siguientes elementos se usan en la solicitud:
     
 - [FolderId](folderid.md)
     
-- [Updates (carpeta)](updates-folder.md)
+- [Updates (Carpeta)](updates-folder.md)
     
 - [SetFolderField](setfolderfield.md)
     
@@ -101,10 +101,10 @@ Los siguientes elementos se usan en la solicitud:
     
 - [DisplayName (cadena)](displayname-string.md)
     
-Vea el esquema para ver los elementos adicionales que puede usar para formar una solicitud de UpdateFolder.
+Consulte el esquema para ver los elementos adicionales que puede usar para formar una solicitud UpdateFolder.
   
 > [!NOTE]
-> La ubicación predeterminada del esquema está en el directorio virtual de EWS en el equipo que tiene instalado el rol de servidor acceso de clientes. 
+> La ubicación predeterminada del esquema se encuentra en el directorio virtual EWS del equipo que tiene instalado el rol de servidor Acceso de cliente. 
   
 ## <a name="updatefolder-response-example"></a>Ejemplo de respuesta UpdateFolder
 
@@ -145,11 +145,11 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud UpdateF
 ### <a name="comments"></a>Comentarios
 
 > [!NOTE]
-> El identificador de la carpeta y la clave de cambio se han abreviado para preservar la legibilidad. 
+> El identificador de carpeta y la clave de cambio se han acortado para conservar la legibilidad. 
   
 El identificador de carpeta que se devuelve en la respuesta representa la carpeta actualizada.
   
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -173,7 +173,7 @@ En la respuesta se usan los siguientes elementos:
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud UpdateFolder.
+En el siguiente ejemplo se muestra una respuesta de error a una solicitud UpdateFolder.
   
 ### <a name="code"></a>Código
 
@@ -205,11 +205,11 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud Update
 
 ### <a name="comments"></a>Comentarios
 
-En este ejemplo se muestra una respuesta de error causada por un atributo **changekey** no válido en la solicitud. 
+En este ejemplo se muestra una respuesta de error causada por un atributo **ChangeKey** no válido en la solicitud. 
   
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -227,9 +227,9 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - [Folders](folders-ex15websvcsotherref.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

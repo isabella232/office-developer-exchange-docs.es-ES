@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ExternalAudience
 api_type:
 - schema
 ms.assetid: 79dc2a4c-f7dd-46d1-8f31-149116e1f76e
-description: El elemento ExternalAudience establece o contiene un valor que determina a quién se envían los mensajes externos de fuera de la oficina (OOF).
-ms.openlocfilehash: b3fcebd9042b07bb9a8294196799ef2a13d78bdd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ExternalAudience establece o contiene un valor que determina a quién se envían los mensajes externos fuera de Office (OOF).
+ms.openlocfilehash: da318bfcf4a43d880b86379364c6e40aa9861f83
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530603"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545142"
 ---
 # <a name="externalaudience"></a>ExternalAudience
 
-El elemento **ExternalAudience** establece o contiene un valor que determina a quién se envían los mensajes externos de fuera de la oficina (OOF). 
+El **elemento ExternalAudience** establece o contiene un valor que determina a quién se envían los mensajes externos fuera de Office (OOF). 
   
 ```xml
 <ExternalAudience>None or Known or All</ExternalAudience>
@@ -44,28 +44,28 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UserOofSettings](useroofsettings.md) <br/> |Especifica la configuración de OOF.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
-|[OofSettings](oofsettings.md) <br/> |Contiene la configuración de OOF.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |Especifica la configuración de OOF.  <br/> A continuación se muestra la expresión XPath de este elemento:  <br/>  `/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[OofSettings](oofsettings.md) <br/> |Contiene la configuración de OOF.  <br/> A continuación se muestra la expresión XPath de este elemento:  <br/>  `/GetUserOofSettingsResponse/OofSettings` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Se requiere un valor de texto para este elemento. En la siguiente tabla se enumeran los valores posibles para este elemento.
+Se requiere un valor de texto para este elemento. En la tabla siguiente se enumeran los valores posibles para este elemento.
   
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|**Ninguno** <br/> |Los remitentes de correo electrónico que se encuentran fuera de la organización del usuario del buzón que envían mensajes al usuario no recibirán una respuesta de mensaje OOF externa.  <br/> |
-|**Válida** <br/> |Los remitentes de correo electrónico que se encuentran fuera de la organización del usuario del buzón de correo que envían mensajes al usuario solo recibirán una respuesta de mensaje de OOF externa si el remitente está en la lista de contactos del almacén de Exchange del usuario.  <br/> |
-|**All** <br/> |Los remitentes de correo electrónico que se encuentran fuera de la organización del usuario del buzón de correo que envían mensajes al usuario recibirán una respuesta de mensaje OOF externa.  <br/> |
+|**Ninguno** <br/> |Los remitentes de correo electrónico fuera de la organización del usuario del buzón que envían mensajes al usuario no recibirán una respuesta de mensaje OOF externa.  <br/> |
+|**Conocido** <br/> |Los remitentes de correo electrónico fuera de la organización del usuario del buzón que envían mensajes al usuario solo recibirán una respuesta de mensaje OOF externo si el remitente está en la lista de contactos del almacén Exchange del usuario.  <br/> |
+|**Todo** <br/> |Los remitentes de correo electrónico fuera de la organización del usuario del buzón que envían mensajes al usuario recibirán una respuesta de mensaje OOF externa.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Este elemento comparte el mismo tipo que el elemento [AllowExternalOof](allowexternaloof.md) . 
+Este elemento comparte el mismo tipo que el [elemento AllowExternalOof.](allowexternaloof.md) 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="example"></a>Ejemplo
 
-En el siguiente ejemplo de una solicitud de SetUserOofSettings se establece el OoFState en **habilitado**, se establece la audiencia externa en **todos**, se establece la duración de OOF en 10 días y se establecen los mensajes OOF internos y externos.
+El siguiente ejemplo de una solicitud SetUserOofSettings establece OoFState en **Enabled**, establece la audiencia externa en **All**, establece la duración de OOF en 10 días y establece los mensajes OOF internos y externos.
   
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -102,10 +102,10 @@ En el siguiente ejemplo de una solicitud de SetUserOofSettings se establece el O
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 

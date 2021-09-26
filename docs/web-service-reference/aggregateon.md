@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AggregateOn
 api_type:
 - schema
 ms.assetid: 9b0a03f2-3282-46e1-b1a0-cbb9a0fbe9bb
-description: El elemento AggregateOn representa la propiedad que se usa para determinar el orden de los elementos agrupados de un conjunto de resultados FindItem agrupados.
-ms.openlocfilehash: 04359c187ef11538d64f8f0d3ea2fe84bc3d048b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento AggregateOn representa la propiedad que se usa para determinar el orden de los elementos agrupados para un conjunto de resultados FindItem agrupado.
+ms.openlocfilehash: 4fa46837cc794bc6c4b23a6b5627d95509d60d70
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463569"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541556"
 ---
 # <a name="aggregateon"></a>AggregateOn
 
-El elemento **AggregateOn** representa la propiedad que se usa para determinar el orden de los elementos agrupados de un conjunto de resultados FindItem agrupados. 
+El **elemento AggregateOn** representa la propiedad que se usa para determinar el orden de los elementos agrupados para un conjunto de resultados FindItem agrupado. 
   
 - [FindItem](finditem.md)  
 - [GroupBy](groupby.md)
@@ -55,39 +55,39 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
-|**Aggregate** <br/> | Indica el valor máximo o mínimo de la propiedad identificada por el elemento [FieldURI](fielduri.md) que se usa para ordenar los grupos de elementos.<br/><br/>Los valores posibles son los siguientes:  <br/><br/>-Mínimo  <br/>-Máximo  <br/> |
+|**Aggregate** <br/> | Indica el valor máximo o mínimo de la propiedad identificada por el [elemento FieldURI](fielduri.md) que se usa para ordenar los grupos de elementos.<br/><br/>Los valores posibles son los siguientes:  <br/><br/>- Mínimo  <br/>- Máximo  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FieldURI](fielduri.md) <br/> |Identifica las propiedades a las que se hace referencia con frecuencia mediante el URI.  <br/> |
-|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifica a los miembros individuales de un diccionario.  <br/> |
+|[FieldURI](fielduri.md) <br/> |Identifica las propiedades a las que se hace referencia con frecuencia mediante URI.  <br/> |
+|[IndexedFieldURI](indexedfielduri.md) <br/> |Identifica miembros individuales de un diccionario.  <br/> |
 |[ExtendedFieldURI](extendedfielduri.md) <br/> |Identifica las propiedades MAPI extendidas para obtener, establecer o crear.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[GroupBy](groupby.md) <br/> |Especifica agrupaciones arbitrarias para consultas FindItem.  <br/> La siguiente es la expresión XPath a este elemento:`/FindItem/GroupBy` <br/> |
+|[GroupBy](groupby.md) <br/> |Especifica agrupaciones arbitrarias para las consultas FindItem.  <br/> A continuación se muestra la expresión XPath de este elemento:  `/FindItem/GroupBy` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-La [operación FindItem](finditem-operation.md) puede devolver resultados agrupados. Dentro de los resultados agrupados, todos los elementos que tienen el mismo valor para una determinada propiedad de agrupación se reúnen y presentan como elementos secundarios de ese grupo. Por ejemplo, si agrupa por remitente, todos los mensajes de correo electrónico se organizan en grupos separados en función de si son del remitente A, del remitente B, etc. Estos grupos son elementos secundarios del grupo de remitentes. 
+La [operación FindItem](finditem-operation.md) puede devolver resultados agrupados. Dentro de los resultados agrupados, todos los elementos que tienen el mismo valor para una determinada propiedad de agrupación se recopilan y se presentan como elementos secundarios de ese grupo. Por ejemplo, si agrupa por remitente, todos los correos electrónicos se organizan en grupos independientes en función de si son del remitente A, el remitente B, y así sucesivamente. Estos grupos son secundarios del grupo de remitentes. 
   
-Cada uno de los grupos dentro del grupo de remitentes contiene una colección de elementos, como los correos electrónicos reales que provienen de cada remitente. Puede usar el elemento [SortOrder](sortorder.md) para ordenar los elementos dentro de un grupo. Sin embargo, para ordenar los grupos según los valores de propiedad de un elemento, debe usar agregación. 
+Cada uno de los grupos del grupo de remitentes contiene una colección de elementos, como los correos electrónicos reales que provenían de cada remitente. Puede usar el elemento [SortOrder](sortorder.md) para ordenar los elementos dentro de un grupo. Sin embargo, para ordenar los grupos en función de los valores de propiedad de un elemento, debe usar la agregación. 
   
-Con agregación, el orden de los grupos se basa en una propiedad específica de los elementos dentro del grupo. Cuando se usa la agregación para ordenar elementos dentro de un grupo, se debe identificar una propiedad representativa mediante la que se ordenan los grupos. Puede usar el elemento **AggregateOn** para especificar la propiedad Representative. 
+Con la agregación, el orden de los grupos se basa en una propiedad específica de los elementos del grupo. Al usar la agregación para ordenar elementos dentro de un grupo, debe identificar una propiedad representativa por la que ordenar los grupos. Puede usar el elemento **AggregateOn** para especificar la propiedad representativa. 
   
-Cuando se identifica una propiedad representativa, se utiliza el atributo **Aggregate** para indicar si los grupos se ordenan según el valor máximo o mínimo de la propiedad identificada. Si el atributo **Aggregate** se establece en Maximum, los grupos se ordenan comenzando por el valor mayor de la propiedad **AggregateOn** . Si el atributo **Aggregate** se establece en Minimum, los grupos se ordenan comenzando por el valor menor de la propiedad **AggregateOn** . 
+Cuando se identifica una propiedad representativa, se usa el atributo **Aggregate** para indicar si los grupos se ordenan según el valor máximo o mínimo de la propiedad identificada. Si el **atributo Aggregate** se establece en Maximum, los grupos se ordenan a partir del valor más grande de la **propiedad AggregateOn.** Si el **atributo Aggregate** se establece en Minimum, los grupos se ordenan a partir del valor más pequeño de la **propiedad AggregateOn.** 
   
-Por ejemplo, si desea emitir una consulta agrupada de FindItem, agrupando por remitente, pero desea ordenar los grupos para que el grupo con el mensaje de correo electrónico más reciente esté en la parte superior, puede agrupar por remitente y agregado por fecha y hora recibidas con un atributo **agregado** de máximo. 
+Por ejemplo, si desea emitir una consulta agrupada FindItem, agrupando por remitente, pero desea ordenar los grupos para que el grupo con el mensaje de correo electrónico más reciente esté en la parte superior, puede agrupar por remitente y agregar la fecha y hora recibidas con un atributo **Aggregate** de Maximum. 
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="example"></a>Ejemplo
 
-En el siguiente ejemplo se muestra una solicitud FindItem y una respuesta agrupadas. En el ejemplo se muestra una solicitud para devolver los elementos agrupados por la propiedad **ConversationTopic** . Dos grupos, A y B, se devuelven en orden descendente según el valor máximo de la propiedad [DateTimeReceived](datetimereceived.md) . 
+En el ejemplo siguiente se muestra una solicitud y una respuesta de FindItem agrupadas. En el ejemplo se muestra una solicitud para devolver elementos agrupados por la **propiedad ConversationTopic.** Dos grupos, A y B, se devuelven en orden descendente en función del valor máximo de la [propiedad DateTimeReceived.](datetimereceived.md) 
   
 ```XML
 <!-- EXAMPLE REQUEST -->
@@ -187,10 +187,10 @@ En el siguiente ejemplo se muestra una solicitud FindItem y una respuesta agrupa
 </soap:Envelope>
 ```
 
-Para ordenar los elementos de un grupo, use el elemento [SortOrder](sortorder.md) . 
+Para ordenar los elementos de un grupo, use el [elemento SortOrder.](sortorder.md) 
   
 > [!NOTE]
-> Los identificadores de elemento y las claves de cambio se han abreviado para preservar la legibilidad. 
+> Los identificadores de elementos y las claves de cambio se han acortado para conservar la legibilidad. 
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -198,12 +198,12 @@ Para ordenar los elementos de un grupo, use el elemento [SortOrder](sortorder.md
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Operación FindItem](finditem-operation.md)
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 - [Buscar elementos](https://msdn.microsoft.com/library/63af1f9c-464b-4fca-9ae3-3d60f24ca93c%28Office.15%29.aspx)
 

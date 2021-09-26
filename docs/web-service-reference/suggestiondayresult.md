@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SuggestionDayResult
 api_type:
 - schema
 ms.assetid: 916b1cbb-f2e3-471d-84b0-e33467616652
 description: El elemento SuggestionDayResult representa un solo día que contiene las horas de reunión sugeridas.
-ms.openlocfilehash: af907b62acefb4913814907722b98d326bd0535b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fb24a8ce27b1f21448acc70a6c9b11927c77b8cc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457994"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543964"
 ---
 # <a name="suggestiondayresult"></a>SuggestionDayResult
 
-El elemento **SuggestionDayResult** representa un solo día que contiene las horas de reunión sugeridas. 
+El **elemento SuggestionDayResult** representa un solo día que contiene las horas de reunión sugeridas. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -46,7 +46,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -60,11 +60,11 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SuggestionDayResultArray](suggestiondayresultarray.md) <br/> |Contiene una matriz de sugerencias de reunión organizadas por fecha.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray` <br/> |
+|[SuggestionDayResultArray](suggestiondayresultarray.md) <br/> |Contiene una matriz de sugerencias de reunión organizadas por fecha.  <br/> A continuación se muestra la expresión XPath de este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse/SuggestionDayResultArray` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -72,10 +72,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 

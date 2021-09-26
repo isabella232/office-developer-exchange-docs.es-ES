@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateInboxRules
 api_type:
 - schema
 ms.assetid: d220064f-ff4d-4537-8077-adf94f2cbdbd
-description: El elemento UpdateInboxRules define una solicitud para actualizar las reglas de la bandeja de entrada en un buzón de correo en el almacén del servidor.
-ms.openlocfilehash: d604604d582d28c07eaa75d3239082d1b6735e65
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento UpdateInboxRules define una solicitud para actualizar las reglas de la Bandeja de entrada en un buzón del almacén de servidores.
+ms.openlocfilehash: 823763efc9f9dfe621ccf05356f7e0f3c7bace14
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456363"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541716"
 ---
 # <a name="updateinboxrules"></a>UpdateInboxRules
 
-El elemento **UpdateInboxRules** define una solicitud para actualizar las reglas de la bandeja de entrada en un buzón de correo en el almacén del servidor. 
+El **elemento UpdateInboxRules** define una solicitud para actualizar las reglas de la Bandeja de entrada en un buzón del almacén de servidores. 
   
 ```XML
 <UpdateInboxRules>
@@ -44,9 +44,9 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[MailboxSmtpAddress](mailboxsmtpaddress.md) <br/> |Representa la dirección SMTP del usuario cuyas reglas de la bandeja de entrada se van a crear, modificar o eliminar.  <br/> |
-|[RemoveOutlookRuleBlob](removeoutlookruleblob.md) <br/> |Indica si se quita el BLOB de reglas de Microsoft Outlook.  <br/> |
-|[Operations](operations.md) <br/> |Contiene una matriz de operaciones de regla que se pueden realizar en una bandeja de entrada.  <br/> |
+|[MailboxSmtpAddress](mailboxsmtpaddress.md) <br/> |Representa la dirección SMTP del usuario cuyas reglas de bandeja de entrada deben crearse, modificarse o eliminarse.  <br/> |
+|[RemoveOutlookRuleBlob](removeoutlookruleblob.md) <br/> |Indica si se va a quitar el blob de Outlook microsoft.  <br/> |
+|[Operations](operations.md) <br/> |Contiene una matriz de operaciones de regla que se pueden realizar en una Bandeja de entrada.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -66,15 +66,15 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
 [Operación de UpdateInboxRules](updateinboxrules-operation.md)
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

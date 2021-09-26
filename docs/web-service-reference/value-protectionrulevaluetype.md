@@ -1,27 +1,27 @@
 ---
-title: Valor (ProtectionRuleValueType)
+title: Value (ProtectionRuleValueType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Value
 api_type:
 - schema
 ms.assetid: b039bd6e-2198-47cf-9c78-a5e8b9d51c98
-description: El elemento Value identifica un único destinatario o departamento de remitentes.
-ms.openlocfilehash: 908ea451800abc343fb6e4d4a4ed98d57223bd23
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Value identifica un único destinatario o departamento de remitente.
+ms.openlocfilehash: 2c4bbdcb3364f0ef8f608469f0dc1b289c4eeaf6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465243"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541626"
 ---
-# <a name="value-protectionrulevaluetype"></a>Valor (ProtectionRuleValueType)
+# <a name="value-protectionrulevaluetype"></a>Value (ProtectionRuleValueType)
 
-El elemento **Value** identifica un único destinatario o departamento de remitentes. 
+El **elemento Value** identifica un único destinatario o departamento de remitente. 
   
 ```XML
 <Value/>
@@ -45,12 +45,12 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Destinatarioes](recipientis.md) <br/> |Especifica que cualquier destinatario del mensaje de correo electrónico coincide con cualquiera de los destinatarios especificados en los elementos secundarios de **valor** .  <br/> |
-|[SenderDepartments](senderdepartments.md) <br/> |Especifica que el Departamento del remitente coincide con cualquiera de los departamentos especificados en los elementos secundarios de **valor** .  <br/> |
+|[RecipientIs](recipientis.md) <br/> |Especifica que cualquier destinatario del mensaje de correo electrónico coincide con cualquiera de los destinatarios especificados en los elementos **Value** secundarios.  <br/> |
+|[SenderDepartments](senderdepartments.md) <br/> |Especifica que el departamento del remitente coincide con cualquiera de los departamentos especificados en los elementos **Value** secundarios.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Este elemento debe contener un valor de cadena no vacío.
+Este elemento debe contener un valor de cadena ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -62,10 +62,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

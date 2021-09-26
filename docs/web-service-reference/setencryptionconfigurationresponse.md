@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cdf3a923-cd82-485b-b2ca-757ec8727134
-description: El elemento SetEncryptionConfigurationResponse está destinado sólo para uso interno.
-ms.openlocfilehash: 4a16e8fba9f4fd9df5fd1147ae2dc2f0bc7f8c17
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento SetEncryptionConfigurationResponse está diseñado solo para uso interno.
+ms.openlocfilehash: f64915c1ed8b7e3d808f0c95905140c5722a3fef
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530561"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546010"
 ---
 # <a name="setencryptionconfigurationresponse"></a>SetEncryptionConfigurationResponse
 
-El elemento **SetEncryptionConfigurationResponse** está destinado sólo para uso interno. 
+El **elemento SetEncryptionConfigurationResponse** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,7 +25,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 

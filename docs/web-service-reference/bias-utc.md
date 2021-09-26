@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Bias
 api_type:
 - schema
 ms.assetid: 15790d5a-5134-457b-8f2b-d9dee1f807a2
-description: El elemento bias representa el desplazamiento general desde la hora universal coordinada (UTC). Este valor está en minutos.
-ms.openlocfilehash: d95284aa28e59542d1a1ee40686163138b015702
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Bias representa el desplazamiento general de la hora universal coordinada (UTC). Este valor está en minutos.
+ms.openlocfilehash: c7dc50d13eecab72d06927ce02762e57ec2f8a3e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460249"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543656"
 ---
 # <a name="bias-utc"></a>Bias (UTC)
 
-El elemento **Bias** representa el desplazamiento general desde la hora universal coordinada (UTC). Este valor está en minutos. 
+El **elemento Bias** representa el desplazamiento general de la hora universal coordinada (UTC). Este valor está en minutos. 
   
 ```xml
 <TimeZone>
@@ -37,17 +37,17 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Zona horaria (disponibilidad)](timezone-availability.md) <br/> | Contenedor que identifica la información de fecha y hora de la solicitud. Este elemento contiene información sobre la transición entre el horario estándar y el horario de verano.  <br/><br/>Las siguientes son las expresiones XPath de este elemento:<br/><br/>   `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone` <br/><br/>`/GetUserAvailabilityRequest/TimeZone` <br/> |
+|[TimeZone (Availability)](timezone-availability.md) <br/> | Contenedor que identifica la información de fecha y hora de la solicitud. Este elemento contiene información sobre la transición entre la hora estándar y el horario de verano.  <br/><br/>Las siguientes son las expresiones XPath de este elemento:<br/><br/>   `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse/FreeBusyView/WorkingHours/TimeZone` <br/><br/>`/GetUserAvailabilityRequest/TimeZone` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
@@ -55,11 +55,11 @@ Se requiere un valor de texto. El valor de texto representa un número entero.
   
 ## <a name="remarks"></a>Comentarios
 
-Un segundo elemento [Bias](bias.md) en el esquema representa el desplazamiento con respecto a la hora universal coordinada (UTC). 
+Un segundo [elemento Bias](bias.md) del esquema representa el desplazamiento del desplazamiento de hora universal coordinada (UTC). 
   
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestra parte de una solicitud XML que identifica un desplazamiento de 8 horas a partir de UTC en la aplicación cliente.
+En el ejemplo siguiente se muestra parte de una solicitud XML que identifica un desplazamiento de 8 horas desde UTC en la aplicación cliente.
   
 ```xml
 <TimeZone xmlns="https://schemas.microsoft.com/exchange/services/2006/types">
@@ -87,10 +87,10 @@ En el ejemplo siguiente se muestra parte de una solicitud XML que identifica un 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Operación GetUserAvailability](getuseravailability-operation.md)  
 - [Sesgo](bias.md)

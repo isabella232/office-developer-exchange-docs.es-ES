@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DayOfWeekIndex
 api_type:
 - schema
 ms.assetid: 82420338-a1f7-4887-b338-b2d93b2c2bf1
-description: El elemento DayOfWeekIndex describe qué semana de un mes se usa en un patrón de periodicidad relativo.
-ms.openlocfilehash: c9235d83a944f9c8883439dd2adf190b88977f16
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento DayOfWeekIndex describe qué semana en un mes se usa en un patrón de periodicidad relativo.
+ms.openlocfilehash: 3b9af396bbd5c51b365da6a95b40b00718d47c3b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529213"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542522"
 ---
 # <a name="dayofweekindex"></a>DayOfWeekIndex
 
-El elemento **DayOfWeekIndex** describe qué semana de un mes se usa en un patrón de periodicidad relativo. 
+El **elemento DayOfWeekIndex** describe qué semana en un mes se usa en un patrón de periodicidad relativo. 
   
 ```xml
 <DayOfWeekIndex/>
@@ -60,20 +60,20 @@ Se requiere un valor de texto. Los valores posibles son los siguientes:
     
 ## <a name="remarks"></a>Comentarios
 
-Por ejemplo, el segundo lunes de un mes puede producirse la tercera semana de ese mes. Si un mes comienza un viernes, la primera semana del mes solo contiene unos días y no contiene un lunes. Por lo tanto, el primer lunes tendría que producirse la segunda semana.
+Por ejemplo, el segundo lunes de un mes puede ocurrir en la tercera semana de ese mes. Si un mes comienza un viernes, la primera semana del mes solo contiene unos pocos días y no contiene un lunes. Por lo tanto, el primer lunes tendría que ocurrir en la segunda semana.
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

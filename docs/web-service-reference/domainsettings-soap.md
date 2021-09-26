@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: f3d37f5a-c9ea-4ed9-a011-94d33bda64d1
-description: El elemento DomainSettings representa la configuración de dominio que se ha enviado en una solicitud de detección automática o devuelta por una respuesta de detección automática.
-ms.openlocfilehash: 67e3753b0cf5c7c653664ff087f697ce7ae2b7a4
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento DomainSettings representa la configuración del dominio enviada en una solicitud de detección automática o devuelta por una respuesta de detección automática.
+ms.openlocfilehash: 9024421eed20b9a9e642b3b0147699c57fcaaa79
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530701"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544181"
 ---
 # <a name="domainsettings-soap"></a>DomainSettings (SOAP)
 
-El elemento **DomainSettings** representa la configuración de dominio que se ha enviado en una solicitud de detección automática o devuelta por una respuesta de detección automática. 
+El **elemento DomainSettings** representa la configuración del dominio enviada en una solicitud de detección automática o devuelta por una respuesta de detección automática. 
   
 ```XML
 <DomainSettings>
@@ -39,7 +39,7 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[DomainSetting (SOAP)](domainsetting-soap.md) <br/> |Contiene la configuración de dominio devuelta por una solicitud de [operación de GetDomainSettings (SOAP)](getdomainsettings-operation-soap.md) .  <br/> |
+|[DomainSetting (SOAP)](domainsetting-soap.md) <br/> |Contiene la configuración de dominio que devuelve una [solicitud de operación GetDomainSettings (SOAP).](getdomainsettings-operation-soap.md)  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -49,7 +49,7 @@ Ninguna.
    
 ## <a name="text-value"></a>Valor de texto
 
-Ninguna.
+Ninguno.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -57,10 +57,10 @@ Ninguna.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Operación GetDomainSettings (SOAP)](getdomainsettings-operation-soap.md)
 

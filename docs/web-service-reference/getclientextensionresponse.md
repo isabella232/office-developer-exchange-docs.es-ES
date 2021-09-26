@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ef4b1aba-a55d-4d64-ac80-5d4e6c4e72bd
-description: El elemento GetClientExtensionResponse contiene la respuesta para obtener información sobre la configuración de una aplicación.
-ms.openlocfilehash: 65c1995fe75b3894607d27ed65548fbbdce0664a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento GetClientExtensionResponse contiene la respuesta para obtener información de configuración sobre una aplicación.
+ms.openlocfilehash: 6a29ad81bb69a8d1f959b2e17d5cbf48faeca516
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459521"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546346"
 ---
 # <a name="getclientextensionresponse"></a>GetClientExtensionResponse
 
-El elemento **GetClientExtensionResponse** contiene la respuesta para obtener información sobre la configuración de una aplicación. 
+El **elemento GetClientExtensionResponse** contiene la respuesta para obtener información de configuración sobre una aplicación. 
   
 ```XML
 <GetClientExtensionResponse>
@@ -58,8 +58,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

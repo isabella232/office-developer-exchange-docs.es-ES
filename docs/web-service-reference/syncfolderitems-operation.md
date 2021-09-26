@@ -5,35 +5,35 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SyncFolderItems
 api_type:
 - schema
 ms.assetid: 7f0de089-8876-47ec-a871-df118ceae75d
-description: La operación SyncFolderItems sincroniza los elementos entre el servidor de Exchange y el cliente.
-ms.openlocfilehash: 1a28d895eda11dd43f77ec2662a60a426cfc463c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación SyncFolderItems sincroniza elementos entre el servidor Exchange y el cliente.
+ms.openlocfilehash: 07915f5f9f7ae1fc6f5a743f2e0480a32cb808a7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468148"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545835"
 ---
 # <a name="syncfolderitems-operation"></a>Operación SyncFolderItems
 
-La operación SyncFolderItems sincroniza los elementos entre el servidor de Exchange y el cliente.
+La operación SyncFolderItems sincroniza elementos entre el servidor Exchange y el cliente.
   
 ## <a name="remarks"></a>Comentarios
 
-La operación SyncFolderItems devolverá un máximo de 512 cambios. Las siguientes solicitudes de SyncFolderItems deben realizarse para obtener cambios adicionales. 
+La operación SyncFolderItems devolverá un máximo de 512 cambios. Las solicitudes SyncFolderItems posteriores deben realizarse para obtener cambios adicionales. 
   
-SyncFolderItems es similar a la operación FindItem en que no puede devolver propiedades como Body o Attachments. Si la operación SyncFolderItems no devuelve las propiedades que necesita, puede usar la [operación GetItem](getitem-operation.md) para obtener un conjunto específico de propiedades para cada elemento devuelto por SyncFolderItems. 
+SyncFolderItems es similar a la operación FindItem, ya que no puede devolver propiedades como Body o Attachments. Si la operación SyncFolderItems no devuelve las propiedades que necesita, puede usar la operación [GetItem](getitem-operation.md) para obtener un conjunto específico de propiedades para cada elemento devuelto por SyncFolderItems. 
   
 ## <a name="syncfolderitems-request-example"></a>Ejemplo de solicitud SyncFolderItems
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud SyncFolderItems muestra cómo sincronizar elementos de una carpeta. En este ejemplo se muestra la sincronización de un elemento de carpeta que no es la primera sincronización que se ha producido para la carpeta elementos enviados. El elemento [SyncState](syncstate-ex15websvcsotherref.md) no se incluye en la solicitud para el primer intento de sincronizar un cliente con el servidor Exchange. El primer intento de sincronizar los elementos de una jerarquía de carpetas devolverá todos los elementos del buzón, excepto los elementos identificados en el elemento [Ignore](ignore.md) . Esta solicitud de SyncFolderItems intentará sincronizar todos los cambios en los elementos de la carpeta desde la última sincronización. Esta solicitud pasará por alto el intento de sincronizar el elemento identificado en el elemento [Ignore](ignore.md) . 
+En el siguiente ejemplo de una solicitud SyncFolderItems se muestra cómo sincronizar elementos de una carpeta. En este ejemplo se muestra la sincronización de un elemento de carpeta que no es la primera sincronización que se ha producido para la carpeta Elementos enviados. El [elemento SyncState](syncstate-ex15websvcsotherref.md) no se incluye en la solicitud para el primer intento de sincronizar un cliente con el Exchange servidor. El primer intento de sincronizar los elementos de una jerarquía de carpetas devolverá todos los elementos del buzón, excluyendo los elementos que se identifican en el [elemento Ignore.](ignore.md) Esta solicitud SyncFolderItems intentará sincronizar todos los cambios realizados en los elementos de carpeta desde la última sincronización. Esta solicitud omitirá el intento de sincronizar el único elemento que se identifica en el [elemento Ignore.](ignore.md) 
   
 ### <a name="code"></a>Código
 
@@ -61,11 +61,11 @@ El siguiente ejemplo de una solicitud SyncFolderItems muestra cómo sincronizar 
 
 ### <a name="comments"></a>Comentarios
 
-Los datos codificados en base64 del elemento [SyncState](syncstate-ex15websvcsotherref.md) y el atributo **ID** del elemento [Itemid](itemid.md) se han abreviado para preservar la legibilidad. 
+Los [datos codificados](syncstate-ex15websvcsotherref.md) en base64 del elemento  SyncState y el atributo Id del [elemento ItemId](itemid.md) se han acortado para conservar la legibilidad. 
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [SyncFolderItems](syncfolderitems.md)
     
@@ -85,11 +85,11 @@ Los siguientes elementos se usan en la solicitud:
     
 - [MaxChangesReturned](maxchangesreturned.md)
     
-## <a name="successful-syncfolderitems-response"></a>Respuesta SyncFolderItems correcta
+## <a name="successful-syncfolderitems-response"></a>Respuesta correcta de SyncFolderItems
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud SyncFolderItems. En este ejemplo, se sincroniza una convocatoria de reunión desde la carpeta elementos enviados.
+En el ejemplo siguiente se muestra una respuesta correcta a la solicitud SyncFolderItems. En este ejemplo, se sincroniza una solicitud de reunión desde la carpeta Elementos enviados.
   
 ### <a name="code"></a>Código
 
@@ -144,9 +144,9 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud SyncFol
 
 ### <a name="comments"></a>Comentarios
 
-Los datos codificados en base64 del elemento [SyncState](syncstate-ex15websvcsotherref.md) y el atributo **ID** del elemento [Itemid](itemid.md) se han abreviado para preservar la legibilidad. 
+Los [datos codificados](syncstate-ex15websvcsotherref.md) en base64 del elemento  SyncState y el atributo Id del [elemento ItemId](itemid.md) se han acortado para conservar la legibilidad. 
   
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -164,9 +164,9 @@ En la respuesta se usan los siguientes elementos:
     
 - [IncludesLastItemInRange](includeslastiteminrange.md)
     
-- [Cambios (elementos)](changes-items.md)
+- [Changes (Items)](changes-items.md)
     
-- [Crear (ItemSync)](create-itemsync.md)
+- [Create (ItemSync)](create-itemsync.md)
     
 - [MeetingRequest](meetingrequest.md)
     
@@ -186,25 +186,25 @@ En la respuesta se usan los siguientes elementos:
     
 - [Start](start.md)
     
-- [Centraliza](end-ex15websvcsotherref.md)
+- [Fin ](end-ex15websvcsotherref.md)
     
-- [Ubicación](location.md)
+- [Location](location.md)
     
 - [Organizador](organizer.md)
     
 - [Buzón](mailbox.md)
     
-- [Nombre (EmailAddressType)](name-emailaddresstype.md)
+- [Name (EmailAddressType)](name-emailaddresstype.md)
     
 - [EmailAddress (NonEmptyStringType)](emailaddress-nonemptystringtype.md)
     
 - [RoutingType (EmailAddressType)](routingtype-emailaddresstype.md)
     
-## <a name="syncfolderitems-error-response"></a>Respuesta de error de SyncFolderItems
+## <a name="syncfolderitems-error-response"></a>Respuesta de error SyncFolderItems
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud SyncFolderItems. Este error se debió a un SyncState no válido.
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud SyncFolderItems. Este error fue causado por un SyncState no válido.
   
 ### <a name="code"></a>Código
 
@@ -238,7 +238,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud SyncFo
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -258,9 +258,9 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - [IncludesLastItemInRange](includeslastiteminrange.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

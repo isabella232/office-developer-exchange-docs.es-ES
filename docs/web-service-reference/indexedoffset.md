@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 951ee079-417f-45a2-b47f-633e8cd6b520
-description: El elemento IndexedOffset indica el desplazamiento de índice para una respuesta de FindConversation paginada.
-ms.openlocfilehash: 15faef8d214f289dd79d03bba7db09427955564e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento IndexedOffset indica el desplazamiento del índice de una respuesta FindConversation paginada.
+ms.openlocfilehash: e129f4bf9270db666f74255ca0b596a53feabf9c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467014"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542221"
 ---
 # <a name="indexedoffset"></a>IndexedOffset
 
-El elemento **IndexedOffset** indica el desplazamiento de índice para una respuesta de **FindConversation** paginada. 
+El **elemento IndexedOffset** indica el desplazamiento del índice de una **respuesta FindConversation paginada.** 
   
 ```XML
 <IndexedOffset></IndexedOffset>
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **IndexedOffset** es el desplazamiento de índice de página para las respuestas **FindConversation** . 
+El valor de texto del **elemento IndexedOffset** es el desplazamiento del índice de página para **las respuestas FindConversation.** 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

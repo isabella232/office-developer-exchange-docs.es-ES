@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fc4d77d5-6200-4cf3-848a-1088fec0e0d6
-description: El elemento LocationSource especifica información sobre el origen de la dirección postal asociada, por ejemplo, un contacto o una libreta de teléfonos.
-ms.openlocfilehash: ceba52c43d1c798bb8f5492b779c7c45d7d00b0b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento LocationSource especifica información sobre el origen de la dirección postal asociada, por ejemplo, un contacto o una libreta de teléfono.
+ms.openlocfilehash: f3569494d3e662fbc46060944c8bd399b62d656b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467105"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543264"
 ---
 # <a name="locationsource"></a>LocationSource
 
-El elemento **LocationSource** especifica información sobre el origen de la dirección postal asociada, por ejemplo, un contacto o una libreta de teléfonos. 
+El **elemento LocationSource** especifica información sobre el origen de la dirección postal asociada, por ejemplo, un contacto o una libreta de teléfono. 
   
 ```XML
 <LocationSource> None | LocationServices | PhonebookServices | Device | Contact | Resource </LocationSource>
@@ -42,18 +42,18 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-En la tabla siguiente se enumeran los valores de texto para el elemento **LocationSource** : 
+Los valores de texto del **elemento LocationSource** se enumeran en la tabla siguiente: 
   
 **Valores de texto del elemento LocationSource**
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|Ninguno  <br/> |No hay origen de la ubicación.  <br/> |
+|Ninguno  <br/> |No hay ningún origen de ubicación.  <br/> |
 |LocationServices  <br/> |La información se obtuvo de los servicios de ubicación.  <br/> |
 |PhonebookServices  <br/> |La información se obtuvo de los servicios de la libreta de teléfonos.  <br/> |
 |Dispositivo  <br/> |La información se obtuvo del dispositivo.  <br/> |
 |Contacto  <br/> |La información se obtuvo de un contacto.  <br/> |
-|Resource  <br/> |La información se obtuvo de un recurso.  <br/> |
+|Recurso  <br/> |La información se obtuvo de un recurso.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 

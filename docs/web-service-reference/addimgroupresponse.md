@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2fca9474-f5f8-44e8-975d-145fc7696edf
-description: AddImGroupResponse define una respuesta a una solicitud de AddImGroup.
-ms.openlocfilehash: 1c3873d46c6f55cee9b7ab10114f26e6fb322b30
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: AddImGroupResponse define una respuesta a una solicitud AddImGroup.
+ms.openlocfilehash: 5e5cda41e48579d4ed0d0cb7051ec49eeed60de8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462776"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544356"
 ---
 # <a name="addimgroupresponse"></a>AddImGroupResponse
 
-**AddImGroupResponse** define una respuesta a una solicitud de **AddImGroup** . 
+**AddImGroupResponse** define una respuesta a una **solicitud AddImGroup.** 
   
 ```XML
 <AddImGroupResponse>
@@ -40,7 +40,7 @@ Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)  |  [Desagrupo](imgroup.md)
+[MessageText](messagetext.md)  |  [ResponseCode](responsecode.md)  |  [DescriptiveLinkKey](descriptivelinkkey.md)  |  [MessageXml](messagexml.md)  |  [ImGroup](imgroup.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -57,8 +57,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

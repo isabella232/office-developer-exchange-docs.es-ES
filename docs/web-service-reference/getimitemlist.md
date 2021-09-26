@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2a243852-362f-4bde-95ab-fe42ead61a85
 description: El elemento GetImItemList define una solicitud para obtener una lista de contactos y grupos de mensajería instantánea.
-ms.openlocfilehash: 435bacdc292eb8e7ea8a7822a2a4cd592598cb03
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 593c0edc4b43c0da3b811e05922198149cffbe50
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456062"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546276"
 ---
 # <a name="getimitemlist"></a>GetImItemList
 
-El elemento **GetImItemList** define una solicitud para obtener una lista de contactos y grupos de mensajería instantánea. 
+El **elemento GetImItemList** define una solicitud para obtener una lista de contactos y grupos de mensajería instantánea. 
   
 ```XML
 <GetImItemList>
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> |true  <br/> |
    
 

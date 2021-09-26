@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a5365d3e-c450-4881-836c-0f18e76b87d4
-description: El elemento NextPredictedAction (ItemType) solo está destinado a uso interno.
-ms.openlocfilehash: 7c5aa2d0722e7965be6d43d6c890fd9bb2d59632
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento NextPredictedAction (ItemType) está diseñado solo para uso interno.
+ms.openlocfilehash: de76b24fcc25487510fefebc20946f3ec98e7c82
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466811"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543250"
 ---
 # <a name="nextpredictedaction-itemtype"></a>NextPredictedAction (ItemType)
 
-El elemento **NextPredictedAction (ItemType)** solo está destinado a uso interno. 
+El **elemento NextPredictedAction (ItemType)** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,7 +25,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 

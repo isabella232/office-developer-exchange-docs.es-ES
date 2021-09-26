@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 03/9/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0115a740-9264-4e57-a410-197bb39e6c81
 description: El elemento TargetSharingEpr representa la propiedad TargetSharingEpr. El elemento TargetSharingEpr es solo para uso interno.
-ms.openlocfilehash: 8cb8d114ae43dfc8ad76aebe87e0e920c16477f2
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f0cd15963ef9f2f89bcc7c022c4d4b6beaaee3d1
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457084"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545765"
 ---
 # <a name="targetsharingepr-soap"></a>TargetSharingEpr (SOAP)
  
-El elemento **TargetSharingEpr** representa la propiedad **TargetSharingEpr** . El elemento **TargetSharingEpr** es solo para uso interno. Los clientes no usan este elemento. 
+El **elemento TargetSharingEpr** representa la **propiedad TargetSharingEpr.** El **elemento TargetSharingEpr** es solo para uso interno. Los clientes no usan este elemento. 
   
 ```XML
 <TargetSharingEpr/>
@@ -34,7 +34,7 @@ Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -52,10 +52,10 @@ Este elemento especifica la dirección URL del servidor de destino para la organ
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Operación GetOrganizationRelationshipSettings (SOAP)](getorganizationrelationshipsettings-operation-soap.md)
 

@@ -1,23 +1,23 @@
 ---
-title: Profesiones
+title: Professions
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d82d0d47-6bc2-4bc8-a796-b770adfdfeb6
-description: El elemento profesiones especifica una matriz de valores de profesión y los identificadores de sus atribuciones de origen para el rol asociado.
-ms.openlocfilehash: b9e3c4d112bad610641585024ea9282d835b3bd8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Professions especifica una matriz de valores Profession y los identificadores de sus atribuciones de origen para la persona asociada.
+ms.openlocfilehash: 73ee0a105ba96aaa18d80ff226ac837ce9297d19
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458015"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542991"
 ---
-# <a name="professions"></a>Profesiones
+# <a name="professions"></a>Professions
 
-El elemento **profesiones** especifica una matriz de valores de **profesión** y los identificadores de sus atribuciones de origen para el rol asociado. 
+El **elemento Professions** especifica una matriz de valores **Profession** y los identificadores de sus atribuciones de origen para la persona asociada. 
   
 ```XML
 <Professions>
@@ -40,7 +40,7 @@ Ninguna.
   
 ### <a name="parent-elements"></a>Elementos principales
 
-Rol
+Persona
   
 ## <a name="remarks"></a>Comentarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

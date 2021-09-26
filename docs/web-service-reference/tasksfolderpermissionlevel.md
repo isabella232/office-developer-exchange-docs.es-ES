@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - TasksFolderPermissionLevel
 api_type:
 - schema
 ms.assetid: 0f70b79b-3443-4048-b410-692d4e2464fc
-description: El elemento TasksFolderPermissionLevel contiene los permisos para la carpeta tareas predeterminada. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).
-ms.openlocfilehash: 6e3988698575f0c1f935922d1642829a1f1addf9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento TasksFolderPermissionLevel contiene los permisos de la carpeta Tasks predeterminada. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1).
+ms.openlocfilehash: 991b13f9a9f95805b13312712b1f6c5941033c46
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465334"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543873"
 ---
 # <a name="tasksfolderpermissionlevel"></a>TasksFolderPermissionLevel
 
-El elemento **TasksFolderPermissionLevel** contiene los permisos para la carpeta tareas predeterminada. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1). 
+El **elemento TasksFolderPermissionLevel** contiene los permisos de la carpeta Tasks predeterminada. Este elemento se introdujo en Microsoft Exchange Server 2007 Service Pack 1 (SP1). 
   
 ```xml
 <TasksFolderPermissionLevel>
@@ -37,35 +37,35 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[DelegatePermissions](delegatepermissions.md) <br/> |Contiene la configuración del nivel de permisos de delegado de un usuario. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
+|[DelegatePermissions](delegatepermissions.md) <br/> |Contiene la configuración del nivel de permiso delegado para un usuario. Este elemento se introdujo en Exchange 2007 SP1.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-En la siguiente tabla se enumeran los valores de texto que representan los niveles de permisos.
+En la tabla siguiente se enumeran los valores de texto que representan los niveles de permisos.
   
-**Valores de texto de nivel de permisos**
+**Valores de texto de nivel de permiso**
 
 |**Nivel de permisos**|**Descripción**|
 |:-----|:-----|
-|Ninguno  <br/> |El usuario delegado no tiene permisos de acceso a la carpeta tareas.  <br/> |
-|Reviewer  <br/> |El usuario delegado puede leer los elementos de la carpeta tareas.  <br/> |
-|Autor  <br/> |El usuario delegado puede leer y crear elementos en la carpeta tareas.  <br/> |
-|Editor  <br/> |El usuario delegado puede leer, crear y modificar los elementos de la carpeta tareas.  <br/> |
-|Personalizado  <br/> |El usuario delegado tiene permisos de acceso personalizados a la carpeta tareas.  <br/> |
+|Ninguno  <br/> |El usuario delegado no tiene permisos de acceso a la carpeta Tareas.  <br/> |
+|Reviewer  <br/> |El usuario delegado puede leer elementos en la carpeta Tareas.  <br/> |
+|Autor  <br/> |El usuario delegado puede leer y crear elementos en la carpeta Tareas.  <br/> |
+|Editor  <br/> |El usuario delegado puede leer, crear y modificar elementos de la carpeta Tareas.  <br/> |
+|Personalizado  <br/> |El usuario delegado tiene permisos de acceso personalizados a la carpeta Tareas.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -73,13 +73,13 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Operación AddDelegate](adddelegate-operation.md)
 - [Operación UpdateDelegate](updatedelegate-operation.md)
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
-- [Adición de delegados](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
+- [Agregar delegados](https://msdn.microsoft.com/library/3a744150-66a3-4a13-9433-793603ba5038%28Office.15%29.aspx)
 

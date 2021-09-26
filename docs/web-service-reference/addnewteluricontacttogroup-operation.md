@@ -5,45 +5,45 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c9688ce8-2465-45bb-8bd2-94b32ed4885c
-description: Busque información sobre cómo usar la operación de EWS de AddNewTelUriContactToGroup.
-ms.openlocfilehash: 91228ec627ad928d2f1837c135af24846f811b1c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Encuentre información sobre cómo usar la operación EWS AddNewTelUriContactToGroup.
+ms.openlocfilehash: 2ad0f55c044e92e2f18a1705ab53be467a804091
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464948"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544300"
 ---
 # <a name="addnewteluricontacttogroup-operation"></a>Operación AddNewTelUriContactToGroup
 
-Busque información sobre cómo usar la operación de EWS de **AddNewTelUriContactToGroup** . 
+Encuentre información sobre cómo usar la **operación EWS AddNewTelUriContactToGroup.** 
   
-La operación **AddNewTelUriContactToGroup** agrega un nuevo contacto a un grupo basado en el número de teléfono de un contacto. 
+La **operación AddNewTelUriContactToGroup** agrega un nuevo contacto a un grupo en función del número de teléfono de un contacto. 
   
 Esta operación se introdujo en Exchange Server 2013.
   
 ## <a name="using-the-addnewteluricontacttogroup-operation"></a>Uso de la operación AddNewTelUriContactToGroup
 
-Una solicitud de operación **AddNewTelUriContactToGroup** envía el URI de Tel de un contacto, el URI de SIP, el número de teléfono y el grupo al que se va a agregar el contacto. Una respuesta de operación **AddNewTelUriContactToGroup** crea un rol para el nuevo contacto. Esta operación permite a los clientes agregar un nuevo contacto incluso si el contacto no tiene un nombre. 
+Una **solicitud de operación AddNewTelUriContactToGroup** envía el URI tel. de un contacto, uri de SIP, número de teléfono y el grupo al que se va a agregar el contacto. Una **respuesta de operación AddNewTelUriContactToGroup** crea una persona para el nuevo contacto. Esta operación permite a los clientes agregar un nuevo contacto incluso si el contacto no tiene un nombre. 
   
-### <a name="addnewteluricontacttogroup-operation-soap-headers"></a>Encabezados SOAP de operación AddNewTelUriContactToGroup
+### <a name="addnewteluricontacttogroup-operation-soap-headers"></a>Encabezados SOAP de la operación AddNewTelUriContactToGroup
 
-La operación **AddNewTelUriContactToGroup** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
+La **operación AddNewTelUriContactToGroup** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
   
 |**Nombre de encabezado**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente. Este encabezado se aplica a una solicitud.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural, tal y como se define en RFC 3066, "etiquetas para la identificación de idiomas", que se va a usar para obtener acceso al buzón. Este encabezado se aplica a una solicitud.  <br/> |
-|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Este encabezado se aplica a una solicitud.  <br/> |
-|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado se aplica a una respuesta.  <br/> |
+|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario al que la aplicación cliente está suplantando. Este encabezado es aplicable a una solicitud.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural, tal como se define en RFC 3066, "Etiquetas para la identificación de idiomas", que se usará para tener acceso al buzón. Este encabezado es aplicable a una solicitud.  <br/> |
+|**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Este encabezado es aplicable a una solicitud.  <br/> |
+|**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Este encabezado es aplicable a una respuesta.  <br/> |
    
-## <a name="addnewteluricontacttogroup-operation-request-example-add-a-new-contact-to-a-group"></a>Ejemplo de solicitud de operación AddNewTelUriContactToGroup: agregar un nuevo contacto a un grupo
+## <a name="addnewteluricontacttogroup-operation-request-example-add-a-new-contact-to-a-group"></a>Ejemplo de solicitud de operación AddNewTelUriContactToGroup: Agregar un nuevo contacto a un grupo
 
-En el siguiente ejemplo de una solicitud de operación de **AddNewTelUriContactToGroup** se muestra cómo crear un nuevo contacto y agregar el nuevo contacto a un grupo de mensajería instantánea (mi) mediante los URI de teléfono y SIP del contacto. 
+En el siguiente ejemplo de una solicitud de operación **AddNewTelUriContactToGroup** se muestra cómo crear un nuevo contacto y agregar el nuevo contacto a un grupo de mensajería instantánea (MI) mediante los URI de TEL y SIP del contacto. 
   
 > [!NOTE]
-> Todos los identificadores de elemento y las claves de cambio de este artículo se han reducido para preservar la legibilidad. 
+> Todos los identificadores de elementos y las claves de cambio de este artículo se han acortado para conservar la legibilidad. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -79,7 +79,7 @@ El cuerpo SOAP de la solicitud contiene los siguientes elementos:
     
 ## <a name="successful-addnewteluricontacttogroup-operation-response"></a>Respuesta de operación AddNewTelUriContactToGroup correcta
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación de **AddNewTelUriContactToGroup** para crear un contacto. La respuesta contiene el identificador de rol asociado del contacto, el nombre para mostrar del rol, que en este caso se basa en el número de teléfono del contacto y el identificador de elemento del contacto, que se muestra como parte de la atribución del identificador de origen. 
+En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de **operación AddNewTelUriContactToGroup** para crear un contacto. La respuesta contiene el identificador de persona asociado para el contacto, el nombre para mostrar de la persona, que en este caso se basa en el número de teléfono del contacto y el identificador de elemento del contacto, que se muestra como parte de la atribución del identificador de origen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -145,7 +145,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
 </s:Envelope>
 ```
 
-El cuerpo SOAP de respuesta contiene los siguientes elementos:
+El cuerpo SOAP de la respuesta contiene los siguientes elementos:
   
 - [AddNewTelUriContactToGroupResponse](addnewteluricontacttogroupresponse.md)
     
@@ -171,11 +171,11 @@ El cuerpo SOAP de respuesta contiene los siguientes elementos:
     
 - [RelevanceScore](relevancescore.md)
     
-- [Atribuciones (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
+- [Attributions (ArrayOfPersonaAttributionsType)](attributions-arrayofpersonaattributionstype.md)
     
-- [Atribución (PersonaAttributionType)](attribution-personaattributiontype.md)
+- [Attribution (PersonaAttributionType)](attribution-personaattributiontype.md)
     
-- [ID (cadena)](id-string.md)
+- [ID (Cadena)](id-string.md)
     
 - [SourceId](sourceid.md)
     
@@ -193,9 +193,9 @@ El cuerpo SOAP de respuesta contiene los siguientes elementos:
     
 - [Valor](value.md)
     
-- [Atribuciones (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
+- [Attributions (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
     
-- [Atribución (cadena)](attribution-string.md)
+- [Attribution (cadena)](attribution-string.md)
     
 - [OtherTelephones](othertelephones.md)
     
@@ -207,13 +207,13 @@ El cuerpo SOAP de respuesta contiene los siguientes elementos:
     
 - [Tipo (cadena)](type-string.md)
     
-- [Atribuciones (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
+- [Attributions (ArrayOfValueAttributionsType)](attributions-arrayofvalueattributionstype.md)
     
-- [Atribución (cadena)](attribution-string.md)
+- [Attribution (cadena)](attribution-string.md)
     
 ## <a name="addnewteluricontacttogroup-operation-error-response-example"></a>Ejemplo de respuesta de error de operación AddNewTelUriContactToGroup
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **AddNewTelUriContactToGroup** cuando el identificador de grupo contiene un valor bien formado que no identifica a un grupo en el buzón. 
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **AddNewTelUriContactToGroup** cuando el identificador de grupo contiene un valor bien formado que no identifica un grupo en el buzón. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -242,7 +242,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
 
 ```
 
-El cuerpo SOAP de respuesta de error contiene los siguientes elementos:
+El cuerpo SOAP de la respuesta de error contiene los siguientes elementos:
   
 - [AddNewTelUriContactToGroupResponse](addnewteluricontacttogroupresponse.md)
     
@@ -252,9 +252,9 @@ El cuerpo SOAP de respuesta de error contiene los siguientes elementos:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
+- [Operaciones ews en Exchange](ews-operations-in-exchange.md)
     
 - [Personas y contactos de EWS en Exchange](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     

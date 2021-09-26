@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MessageClassifications
 api_type:
 - schema
 ms.assetid: 041b3d48-8f43-47f3-869f-72b66bef372a
 description: El elemento MessageClassifications representa las clasificaciones de mensajes que se deben marcar en los mensajes entrantes para que se aplique la condición o excepción.
-ms.openlocfilehash: 63481aa8903c4e9637870130eb9154118471c3b0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 88ccd4be40d66de2fec859de67aa0e365f451bd4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467973"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542088"
 ---
 # <a name="messageclassifications"></a>MessageClassifications
 
-El elemento **MessageClassifications** representa las clasificaciones de mensajes que se deben marcar en los mensajes entrantes para que se aplique la condición o excepción. 
+El **elemento MessageClassifications** representa las clasificaciones de mensajes que se deben marcar en los mensajes entrantes para que se aplique la condición o excepción. 
   
 ```XML
 <MessageClassifications>
@@ -42,7 +42,7 @@ Ninguno
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[String](string.md) <br/> |Representa una clasificación de mensaje.  <br/> |
+|[String](string.md) <br/> |Representa una clasificación de mensajes.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -65,12 +65,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

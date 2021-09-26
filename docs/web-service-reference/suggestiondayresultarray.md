@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SuggestionDayResultArray
 api_type:
 - schema
 ms.assetid: eeba9eff-5eca-4002-b5a5-8fb794feaba1
 description: El elemento SuggestionDayResultArray contiene una matriz de sugerencias de reunión organizadas por fecha.
-ms.openlocfilehash: 277d4cf71c31aba26cbff6f598eaa62769cae552
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 4ce2b7a7ff2c90ef1876b2d71a528b42f0951598
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457987"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543950"
 ---
 # <a name="suggestiondayresultarray"></a>SuggestionDayResultArray
 
-El elemento **SuggestionDayResultArray** contiene una matriz de sugerencias de reunión organizadas por fecha. 
+El **elemento SuggestionDayResultArray** contiene una matriz de sugerencias de reunión organizadas por fecha. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -54,11 +54,11 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SuggestionsResponse](suggestionsresponse.md) <br/> |Contiene información de respuesta y datos de sugerencias para las sugerencias de reunión solicitadas  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse` <br/> |
+|[SuggestionsResponse](suggestionsresponse.md) <br/> |Contiene información de respuesta y datos de sugerencias para sugerencias de reunión solicitadas  <br/> A continuación se muestra la expresión XPath de este elemento:  <br/>  `/GetUserAvailabilityResponse/SuggestionsResponse` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -66,10 +66,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 

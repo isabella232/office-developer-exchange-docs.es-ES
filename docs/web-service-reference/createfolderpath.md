@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 282576cb-a921-49f7-8748-64158fd50c41
-description: El elemento CreateFolderPath se usa para crear una ruta de acceso de carpeta e incluye un identificador de carpeta principal y una ruta de acceso de carpeta relativa.
-ms.openlocfilehash: e6ce6c9b6e12a6a0fb6792b63368a79c87d06f07
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento CreateFolderPath se usa para crear una ruta de acceso de carpeta e incluye un identificador de carpeta principal y una ruta de carpeta relativa.
+ms.openlocfilehash: 603bdd0d7a36c169dfe48db02c3db0591fbe253b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457539"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543437"
 ---
 # <a name="createfolderpath"></a>CreateFolderPath
 
-El elemento **CreateFolderPath** se usa para crear una ruta de acceso de carpeta e incluye un identificador de carpeta principal y una ruta de acceso de carpeta relativa. 
+El **elemento CreateFolderPath** se usa para crear una ruta de acceso de carpeta e incluye un identificador de carpeta principal y una ruta de carpeta relativa. 
   
 ```XML
 <CreateFolderPath>
@@ -54,8 +54,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

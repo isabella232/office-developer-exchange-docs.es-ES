@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e75f8da2-d0a4-44f4-a597-1554757fdf55
 description: El elemento AddImContactToGroupResponse define una respuesta a una solicitud AddImContactToGroup.
-ms.openlocfilehash: 1d186c89a7fdfd978fb8f713908a4f2ebfbddfa9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 99ea8b5bef1370493a116ba4f5724b01a62f2d8a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463688"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543810"
 ---
 # <a name="addimcontacttogroupresponse"></a>AddImContactToGroupResponse
 
-El elemento **AddImContactToGroupResponse** define una respuesta a una solicitud **AddImContactToGroup** . 
+El **elemento AddImContactToGroupResponse** define una respuesta a una **solicitud AddImContactToGroup.** 
   
 ```XML
 <AddImContactToGroupResponse>
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

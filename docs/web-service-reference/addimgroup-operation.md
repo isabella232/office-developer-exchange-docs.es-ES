@@ -5,44 +5,44 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6df6e504-b7c8-4773-b10f-ffa5defac229
-description: Buscar información sobre la operación de EWS de AddImGroup.
-ms.openlocfilehash: 38ed12a741d46fe998dc0079ed13973ce9edf5ac
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Busque información sobre la operación EWS AddImGroup.
+ms.openlocfilehash: 9aba6a22502c1006da06ce4a9bc925f13b5b5100
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462818"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544363"
 ---
 # <a name="addimgroup-operation"></a>Operación AddImGroup
 
-Buscar información sobre la operación de EWS de **AddImGroup** . 
+Busque información sobre la **operación EWS AddImGroup.** 
   
-La operación de servicios web Exchange de **AddImGroup** (EWS) agrega un nuevo grupo de mensajería instantánea (mi) a un buzón. 
+La **operación AddImGroup** Exchange Web Services (EWS) agrega un nuevo grupo de mensajería instantánea (MI) a un buzón. 
   
 Esta operación se introdujo en Exchange Server 2013.
   
 ## <a name="using-the-addimgroup-operation"></a>Uso de la operación AddImGroup
 
-La operación **AddImGroup** sólo toma un único argumento nombre para mostrar. 
+La **operación AddImGroup** solo toma un único argumento de nombre para mostrar. 
   
-Esta operación devuelve el nombre para mostrar, el tipo de grupo y el identificador del almacén de Exchange del nuevo grupo.
+Esta operación devuelve el nombre para mostrar, el tipo de grupo y el Exchange de almacén del nuevo grupo.
   
-La operación **AddImGroup** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
+La **operación AddImGroup** puede usar los encabezados SOAP que se enumeran en la tabla siguiente. 
   
 **Tabla 1. Encabezados SOAP de operación AddImGroup**
 
 |**Nombre de encabezado**|**Elemento**|**Descripción**|
 |:-----|:-----|:-----|
-|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica al usuario que está suplantando la aplicación cliente. Esto es aplicable a una solicitud.  <br/> |
-|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural, tal y como se define en RFC 3066, "etiquetas para la identificación de idiomas", que se va a usar para obtener acceso al buzón. Esto es aplicable a una solicitud.  <br/> |
+|**Suplantación** <br/> |[ExchangeImpersonation](exchangeimpersonation.md) <br/> |Identifica el usuario al que la aplicación cliente está suplantando. Esto es aplicable a una solicitud.  <br/> |
+|**MailboxCulture** <br/> |[MailboxCulture](mailboxculture.md) <br/> |Identifica la referencia cultural, tal como se define en RFC 3066, "Etiquetas para la identificación de idiomas", que se usará para tener acceso al buzón. Esto es aplicable a una solicitud.  <br/> |
 |**RequestVersion** <br/> |[RequestServerVersion](requestserverversion.md) <br/> |Identifica la versión del esquema para la solicitud de operación. Esto es aplicable a una solicitud.  <br/> |
 |**ServerVersion** <br/> |[ServerVersionInfo](serverversioninfo.md) <br/> |Identifica la versión del servidor que respondió a la solicitud. Esto es aplicable a una respuesta.  <br/> |
    
-## <a name="addimgroup-operation-request-example-create-a-new-im-group"></a>Ejemplo de solicitud de operación AddImGroup: crear un nuevo grupo de mensajería instantánea
+## <a name="addimgroup-operation-request-example-create-a-new-im-group"></a>Ejemplo de solicitud de operación AddImGroup: Crear un nuevo grupo de mensajería instantánea
 
-El siguiente ejemplo de una solicitud de operación de **AddImGroup** muestra cómo crear un grupo de mensajería instantánea denominado MyCustomerGroup. 
+En el siguiente ejemplo de una **solicitud de operación AddImGroup** se muestra cómo crear un grupo de mensajería instantánea denominado MyCustomerGroup. 
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -67,9 +67,9 @@ El cuerpo SOAP de la solicitud contiene los siguientes elementos:
     
 - [DisplayName (cadena)](displayname-string.md)
     
-## <a name="successful-addimgroup-operation-response"></a>Respuesta de operación AddImGroup correcta
+## <a name="successful-addimgroup-operation-response"></a>Respuesta de operación addImGroup correcta
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de operación **AddImGroup** . 
+En el ejemplo siguiente se muestra una respuesta correcta a una **solicitud de operación AddImGroup.** 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -102,13 +102,13 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud de ope
 </s:Envelope>
 ```
 
-El cuerpo SOAP de respuesta contiene los siguientes elementos:
+El cuerpo SOAP de la respuesta contiene los siguientes elementos:
   
 - [AddImGroupResponse](addimgroupresponse.md)
     
 - [ResponseCode](responsecode.md)
     
-- [Desagrupo](imgroup.md)
+- [ImGroup](imgroup.md)
     
 - [DisplayName (cadena)](displayname-string.md)
     
@@ -116,9 +116,9 @@ El cuerpo SOAP de respuesta contiene los siguientes elementos:
     
 - [ExchangeStoreId](exchangestoreid.md)
     
-## <a name="addimgroup-operation-error-response"></a>Respuesta de error de operación de AddImGroup
+## <a name="addimgroup-operation-error-response"></a>Respuesta de error de operación AddImGroup
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud de operación **AddImGroup** . Se trata de una respuesta a una solicitud que contiene un carácter que no se puede usar en un nombre para mostrar. Tenga en cuenta que se trata de un error de SOAP y no de un mensaje de error basado en esquema. El nombre para mostrar enviado en la solicitud es ~! @ # $% ^ &amp; y el error se produce en el &amp; personaje. El &amp; carácter se produjo en la undécimo línea y el carácter 33 en la carga de la solicitud. Se devolvió la respuesta con un código HTTP 500. 
+En el ejemplo siguiente se muestra una respuesta de error a una **solicitud de operación AddImGroup.** Esta es una respuesta a una solicitud que contiene un carácter que no se puede usar en un nombre para mostrar. Tenga en cuenta que se trata de un error SOAP y no un mensaje de error basado en esquema. El nombre para mostrar enviado en la solicitud es ~!@#$%^ y el &amp; error se produce en el &amp; carácter. El &amp; carácter se produjo en la línea 11 y el carácter 33 en la carga de la solicitud. La respuesta se devolvió con un código HTTP 500. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -141,7 +141,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud de ope
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Personas y contactos de EWS en Exchange](https://msdn.microsoft.com/library/043c33be-a0d1-4bad-a840-85715eda4813%28Office.15%29.aspx)
     

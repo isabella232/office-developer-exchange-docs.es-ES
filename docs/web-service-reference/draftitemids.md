@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c228f7e7-6dc8-476d-9b8c-99cd5b6f9f0c
-description: El elemento DraftItemIds contiene una matriz de identificadores de elemento a los elementos de borrador de una conversación.
-ms.openlocfilehash: 5e635e354c9d2d768bab5efaafafde272fe568d3
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento DraftItemIds contiene una matriz de identificadores de elementos para redactar elementos de una conversación.
+ms.openlocfilehash: 9c114e509418138d442ae2cf20278cda410bf9dc
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463576"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541444"
 ---
 # <a name="draftitemids"></a>DraftItemIds
 
-El elemento **DraftItemIds** contiene una matriz de identificadores de elemento a los elementos de borrador de una conversación. 
+El **elemento DraftItemIds** contiene una matriz de identificadores de elementos para redactar elementos de una conversación. 
   
 ```XML
 <DraftItemIds>
@@ -35,15 +35,15 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Itemid](itemid.md)  |  [OccurrenceItemId](occurrenceitemid.md)  |  [RecurringMasterItemId](recurringmasteritemid.md)  |  [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
+[ItemId](itemid.md)  |  [OccurrenceItemId](occurrenceitemid.md)  |  [RecurringMasterItemId](recurringmasteritemid.md)  |  [RecurringMasterItemIdRanges](recurringmasteritemidranges.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Conversación (ConversationType)](conversation-conversationtype.md)
+[Conversation (ConversationType)](conversation-conversationtype.md)
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

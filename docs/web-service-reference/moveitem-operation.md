@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MoveItem
 api_type:
 - schema
 ms.assetid: dcf40fa7-7796-4a5c-bf5b-7a509a18d208
-description: La operación MoveItem se usa para mover uno o más elementos a una única carpeta de destino.
-ms.openlocfilehash: 6a455e483ad2e5c84b91cfaa7562f4f1ec46a112
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación MoveItem se usa para mover uno o varios elementos a una sola carpeta de destino.
+ms.openlocfilehash: 2d86d06e522e0d42815971c92e754308224f5e8f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465684"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544853"
 ---
 # <a name="moveitem-operation"></a>Operación MoveItem
 
-La operación **MoveItem** se usa para mover uno o más elementos a una única carpeta de destino. 
+La **operación MoveItem** se usa para mover uno o varios elementos a una sola carpeta de destino. 
   
 ## <a name="moveitem-request-example"></a>Ejemplo de solicitud MoveItem
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud **MoveItem** muestra cómo mover un elemento a la carpeta Borradores. 
+En el siguiente ejemplo de una **solicitud MoveItem** se muestra cómo mover un elemento a la carpeta Borradores. 
   
 ### <a name="code"></a>Código
 
@@ -36,10 +36,10 @@ El siguiente ejemplo de una solicitud **MoveItem** muestra cómo mover un elemen
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
+xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
   <soap:Body>
-    <MoveItem xmlns="https://schemas.microsoft.com/exchange/services/2006/messages"
-    xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
+    <MoveItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
+    xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
       <ToFolderId>
         <t:DistinguishedFolderId Id="drafts"/>
       </ToFolderId>
@@ -53,14 +53,14 @@ xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types">
 
 ### <a name="comments"></a>Comentarios
 
-El elemento [ToFolderId](tofolderid.md) especifica la carpeta a la que se moverán los elementos. Tenga en cuenta que todos los elementos que aparecen en la colección [ItemIds](itemids.md) terminarán en la carpeta de destino. Debe realizar llamadas distintas de **MoveItem** para poner elementos en diferentes carpetas de destino. 
+El [elemento ToFolderId](tofolderid.md) especifica la carpeta a la que se van a mover los elementos. Tenga en cuenta que todos los elementos enumerados en [la colección ItemIds](itemids.md) terminarán en la carpeta de destino. Debe realizar llamadas **a MoveItem independientes** para colocar elementos en carpetas de destino diferentes. 
   
 > [!NOTE]
-> El identificador de elemento y la clave de cambio se han abreviado para preservar la legibilidad. 
+> El identificador del elemento y la clave de cambio se han acortado para conservar la legibilidad. 
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [MoveItem](moveitem.md)
     
@@ -76,9 +76,9 @@ Los siguientes elementos se usan en la solicitud:
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **MoveItem** . 
+En el ejemplo siguiente se muestra una respuesta correcta a una **solicitud MoveItem.** 
   
-El identificador de elemento del nuevo elemento se devuelve en el mensaje de respuesta. Los identificadores de elemento no se devuelven en las respuestas de las operaciones **MoveItem** de buzón o buzón entre buzones de correo y carpetas públicas. 
+El identificador de elemento del nuevo elemento se devuelve en el mensaje de respuesta. Los identificadores de elementos no se devuelven en respuestas para las operaciones **MoveItem** entre buzones o buzones de correo a la carpeta pública. 
   
 ### <a name="code"></a>Código
 
@@ -89,12 +89,12 @@ El identificador de elemento del nuevo elemento se devuelve en el mensaje de res
                xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <soap:Header>
     <t:ServerVersionInfo MajorVersion="8" MinorVersion="0" MajorBuildNumber="662" MinorBuildNumber="0" 
-                         xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types"/>
+                         xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"/>
   </soap:Header>
   <soap:Body>
-    <MoveItemResponse xmlns:m="https://schemas.microsoft.com/exchange/services/2006/messages" 
-                      xmlns:t="https://schemas.microsoft.com/exchange/services/2006/types" 
-                      xmlns="https://schemas.microsoft.com/exchange/services/2006/messages">
+    <MoveItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
+                      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+                      xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
       <m:ResponseMessages>
         <m:MoveItemResponseMessage ResponseClass="Success">
           <m:ResponseCode>NoError</m:ResponseCode>
@@ -112,9 +112,9 @@ El identificador de elemento del nuevo elemento se devuelve en el mensaje de res
 
 ### <a name="comments"></a>Comentarios
 
-La operación **MoveItem** indicará que se ha realizado correctamente si el movimiento se ha realizado correctamente. 
+La **operación MoveItem** indicará si el movimiento se ha realizado correctamente. 
   
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -130,9 +130,9 @@ En la respuesta se usan los siguientes elementos:
     
 - [Items](items.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

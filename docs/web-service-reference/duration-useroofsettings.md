@@ -1,27 +1,27 @@
 ---
-title: Duración (UserOofSettings)
+title: Duration (UserOofSettings)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Duration
 api_type:
 - schema
 ms.assetid: 01d67af3-658e-4acd-93e3-441ae827fdd3
-description: El elemento Duration especifica la duración del estado de fuera de la oficina (OOF) si el elemento OofState está establecido en programado.
-ms.openlocfilehash: 0ba0f1ea7498781c0cccb072c7ea0fa05414764c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Duration especifica la duración que el estado de fuera de la oficina (OOF) está habilitado si el elemento OofState está establecido en Programado.
+ms.openlocfilehash: cb6529bfe3799ff41550d7fe3ce2c79b8a4197e2
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457301"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544160"
 ---
-# <a name="duration-useroofsettings"></a>Duración (UserOofSettings)
+# <a name="duration-useroofsettings"></a>Duration (UserOofSettings)
 
-El elemento **Duration** especifica la duración del estado de fuera de la oficina (OOF) si el elemento [OofState](oofstate.md) está establecido en **programado**.
+El **elemento Duration** especifica la duración que el estado de fuera de la oficina (OOF) está habilitado si el elemento [OofState](oofstate.md) está establecido en **Scheduled**.
   
 ```XML
 <Duration>
@@ -30,7 +30,7 @@ El elemento **Duration** especifica la duración del estado de fuera de la ofici
 </Duration>
 ```
 
- **Duración**
+ **Duration**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
@@ -43,26 +43,26 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[StartTime](starttime.md) <br/> |Representa el inicio del intervalo de tiempo establecido con un estado de OOF. Se requiere este elemento.  <br/> |
-|[EndTime](endtime.md) <br/> |Representa el final del intervalo de tiempo establecido con un estado de OOF. Se requiere este elemento.  <br/> |
+|[StartTime](starttime.md) <br/> |Representa el inicio del intervalo de tiempo establecido con un estado OOF. Se requiere este elemento.  <br/> |
+|[EndTime](endtime.md) <br/> |Representa el final del intervalo de tiempo establecido con un estado OOF. Se requiere este elemento.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[UserOofSettings](useroofsettings.md) <br/> |Especifica la configuración de OOF.  <br/><br/>La siguiente es la expresión XPath a este elemento:<br/><br/>`/SetUserOofSettingsRequest/UserOofSettings` <br/> |
-|[OofSettings](oofsettings.md) <br/> |Contiene la configuración de OOF.<br/><br/>La siguiente es la expresión XPath a este elemento:<br/><br/>`/GetUserOofSettingsResponse/OofSettings` <br/> |
-|[Oficina](outofoffice.md) <br/> |Define el mensaje de respuesta de fuera de la oficina (OOF) y un tiempo de duración para enviar el mensaje de respuesta para un buzón de correo.  <br/> |
+|[UserOofSettings](useroofsettings.md) <br/> |Especifica la configuración de OOF.  <br/><br/>A continuación se muestra la expresión XPath de este elemento:<br/><br/>`/SetUserOofSettingsRequest/UserOofSettings` <br/> |
+|[OofSettings](oofsettings.md) <br/> |Contiene la configuración de OOF.<br/><br/>A continuación se muestra la expresión XPath de este elemento:<br/><br/>`/GetUserOofSettingsResponse/OofSettings` <br/> |
+|[OutOfOffice](outofoffice.md) <br/> |Define el mensaje de respuesta Office (OOF) y un tiempo de duración para enviar el mensaje de respuesta para un buzón.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El tipo **Duration** también es el tipo para los elementos [DetailedSuggestionsWindow](detailedsuggestionswindow.md), [TimeWindow](timewindow.md)y [Oficina](outofoffice.md) . 
+El **tipo** Duration también es el tipo de los elementos [DetailedSuggestionsWindow](detailedsuggestionswindow.md), [TimeWindow](timewindow.md)y [OutOfOffice.](outofoffice.md) 
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
 ## <a name="example"></a>Ejemplo
 
-El siguiente ejemplo de una solicitud de [operación SetUserOofSettings](setuseroofsettings-operation.md) establece el [OofState](oofstate.md) en **habilitado**, los mensajes internos y externos OOF y establece la duración de OOF durante 10 días.
+En el siguiente ejemplo de una solicitud de operación [SetUserOofSettings](setuseroofsettings-operation.md) se establece [OofState](oofstate.md) en **Enabled**, los mensajes OOF internos y externos y se establece la duración de OOF durante 10 días.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -100,10 +100,10 @@ El siguiente ejemplo de una solicitud de [operación SetUserOofSettings](setuser
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Operación GetUserOofSettings](getuseroofsettings-operation.md)  
 - [Operación SetUserOofSettings](setuseroofsettings-operation.md)

@@ -1,23 +1,23 @@
 ---
-title: IMAddress (NonEmptyStringType)
+title: ImAddress (NonEmptyStringType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 13c7b0cc-f506-490b-adaa-3d01fc2400eb
-description: El elemento IMAddress contiene la dirección de mensajería instantánea de un nuevo contacto que se agregará a un grupo de mensajería instantánea.
-ms.openlocfilehash: eac3b6494f3f52dec007171462a95f9d7306530e
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ImAddress contiene la dirección de mensajería instantánea de un nuevo contacto que se agregará a un grupo de mensajería instantánea.
+ms.openlocfilehash: 241ff33369a10f493d63da48e4ab80974780de0e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457609"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542249"
 ---
-# <a name="imaddress-nonemptystringtype"></a>IMAddress (NonEmptyStringType)
+# <a name="imaddress-nonemptystringtype"></a>ImAddress (NonEmptyStringType)
 
-El elemento **IMAddress** contiene la dirección de mensajería instantánea de un nuevo contacto que se agregará a un grupo de mensajería instantánea. 
+El **elemento ImAddress** contiene la dirección de mensajería instantánea de un nuevo contacto que se agregará a un grupo de mensajería instantánea. 
   
 ```XML
 <ImAddress></ImAddress>
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **IMAddress** es una dirección de mensajería instantánea. 
+El valor de texto del **elemento ImAddress** es una dirección de mensajería instantánea. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

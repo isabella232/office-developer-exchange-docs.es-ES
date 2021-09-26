@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteFolder
 api_type:
 - schema
 ms.assetid: e37963f4-af9e-4481-b389-16175711e66d
-description: El elemento DeleteFolder define una solicitud para eliminar carpetas de un buzón de correo en el almacén de Exchange.
-ms.openlocfilehash: eb705a47b78b19c79b2e87561ba3696ed40e09cd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento DeleteFolder define una solicitud para eliminar carpetas de un buzón del Exchange almacén.
+ms.openlocfilehash: d1d64b84604acec54d9153144e5bfd7abaece94c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458771"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542480"
 ---
 # <a name="deletefolder"></a>DeleteFolder
 
-El elemento **DeleteFolder** define una solicitud para eliminar carpetas de un buzón de correo en el almacén de Exchange. 
+El **elemento DeleteFolder** define una solicitud para eliminar carpetas de un buzón del Exchange almacén. 
   
 ```XML
 <DeleteFolder DeleteType="">
@@ -44,9 +44,9 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|HardDelete  <br/> |Una carpeta se quita permanentemente de la tienda.  <br/> |
+|HardDelete  <br/> |Una carpeta se quita permanentemente del almacén.  <br/> |
 |SoftDelete  <br/> |Si el contenedor está habilitado, se mueve una carpeta al contenedor.  <br/> |
-|MoveToDeletedItems  <br/> |Se mueve una carpeta a la carpeta elementos eliminados.  <br/> |
+|MoveToDeletedItems  <br/> |Se mueve una carpeta a la carpeta Elementos eliminados.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -64,7 +64,7 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-Las opciones **MoveToDeletedItems** y **HardDelete** son transaccionales, lo que significa que cuando se completa una llamada de servicio Web, la base de datos movió el elemento a la carpeta elementos eliminados o quitó permanentemente el elemento de la base de datos de Exchange. Este comportamiento es el mismo para MicrosoftExchange Server 2007 y Exchange Server 2010. 
+Las **opciones MoveToDeletedItems** y **HardDelete** son transaccionales, lo que significa que cuando finaliza una llamada de servicio web, la base de datos ha movido el elemento a la carpeta Elementos eliminados o ha quitado permanentemente el elemento de la base de datos Exchange. Este comportamiento es el mismo para MicrosoftExchange Server 2007 y Exchange Server 2010. 
   
 El esquema que describe este elemento se encuentra en el directorio virtual IIS que hospeda los servicios Web Exchange.
   
@@ -73,11 +73,11 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Operación DeleteFolder](deletefolder-operation.md)
 

@@ -1,24 +1,24 @@
 ---
-title: Versión (SOAP)
+title: Version (SOAP)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 47c9216e-6bfe-48c8-a27a-26f70db8e8d5
-description: El elemento version representa una descripción de la versión del producto del servidor.
-ms.openlocfilehash: d7e6983c837b2818b7d11e1777015ec583968242
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Version representa una descripción de la versión del producto del servidor.
+ms.openlocfilehash: 67935bb97ce5a6faab3ae26ec03a842794d539e0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44531031"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541633"
 ---
-# <a name="version-soap"></a>Versión (SOAP)
+# <a name="version-soap"></a>Version (SOAP)
 
-El elemento **version** representa una descripción de la versión del producto del servidor. 
+El **elemento Version** representa una descripción de la versión del producto del servidor. 
   
 ```XML
 <Version/>
@@ -41,15 +41,15 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |Contiene la versión del servidor que ha procesado la solicitud.  <br/> |
+|[ServerVersionInfo (SOAP)](serverversioninfo-soap.md) <br/> |Contiene la versión del servidor que procesó la solicitud.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor del elemento **version** es una descripción de la versión del producto del servidor. 
+El valor del elemento **Version** es una descripción de la versión del producto del servidor. 
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento **version** se incluye en el encabezado SOAP de una respuesta. 
+El **elemento Version** se encuentra en el encabezado SOAP de una respuesta. 
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -57,10 +57,10 @@ El elemento **version** se incluye en el encabezado SOAP de una respuesta.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 

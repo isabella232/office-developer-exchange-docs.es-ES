@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dd16d1fb-d82d-42e5-b64a-bc6c19c48fa8
-description: El elemento GetNonIndexableItemStatistics especifica una solicitud para recuperar las estadísticas de elementos no indizables.
-ms.openlocfilehash: 4b605379f20f5558566f1cfbad9ef1aa33b6fce6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento GetNonIndexableItemStatistics especifica una solicitud para recuperar estadísticas de elementos no indexables.
+ms.openlocfilehash: 7e5b7b586a4fd6a293e62bdc9b7229eeb9f9476f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44452793"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546206"
 ---
 # <a name="getnonindexableitemstatistics"></a>GetNonIndexableItemStatistics
 
-El elemento **GetNonIndexableItemStatistics** especifica una solicitud para recuperar las estadísticas de elementos no indizables. 
+El **elemento GetNonIndexableItemStatistics** especifica una solicitud para recuperar estadísticas de elementos no indexables. 
   
 ```XML
 <GetNonIndexableItemStatistics>
@@ -38,7 +38,7 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Buzones de correo (NonEmptyArrayOfLegacyDNsType)](mailboxes-nonemptyarrayoflegacydnstype.md) <br/> |Especifica una matriz de elementos **Mailbox** .  <br/> |
+|[Mailboxes (NonEmptyArrayOfLegacyDNsType)](mailboxes-nonemptyarrayoflegacydnstype.md) <br/> |Especifica una matriz de **elementos Mailbox.**  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -55,13 +55,13 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre de esquema  <br/> |Esquema de mensaje  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

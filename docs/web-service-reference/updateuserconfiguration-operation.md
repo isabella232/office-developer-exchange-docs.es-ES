@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - UpdateUserConfiguration
 api_type:
 - schema
 ms.assetid: eda73b62-6a3a-43ae-8fd9-f30892811f27
 description: La operación UpdateUserConfiguration actualiza un objeto de configuración de usuario en una carpeta.
-ms.openlocfilehash: 95fe6518fa30104463ec7f0aec8f786183eb513b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 18caad56d3add618c4f426af824e61ce54c15bc7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468547"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541703"
 ---
 # <a name="updateuserconfiguration-operation"></a>Operación UpdateUserConfiguration
 
-La operación **UpdateUserConfiguration** actualiza un objeto de configuración de usuario en una carpeta. 
+La **operación UpdateUserConfiguration** actualiza un objeto de configuración de usuario en una carpeta. 
   
 ## <a name="updateuserconfiguration-request-example"></a>Ejemplo de solicitud UpdateUserConfiguration
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud **UpdateUserConfiguration** muestra cómo crear una solicitud para actualizar un objeto de configuración de usuario en la carpeta Borradores. 
+En el siguiente ejemplo de una **solicitud UpdateUserConfiguration** se muestra cómo formar una solicitud para actualizar un objeto de configuración de usuario en la carpeta Borradores. 
   
 ### <a name="code"></a>Código
 
@@ -69,7 +69,7 @@ El siguiente ejemplo de una solicitud **UpdateUserConfiguration** muestra cómo 
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **UpdateUserConfiguration** . 
+En el ejemplo siguiente se muestra una respuesta correcta a la **solicitud UpdateUserConfiguration.** 
   
 ### <a name="code"></a>Código
 
@@ -101,11 +101,11 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **Updat
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
-[Operaciones de EWS en Exchange](ews-operations-in-exchange.md)
+[Operaciones ews en Exchange](ews-operations-in-exchange.md)
   
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

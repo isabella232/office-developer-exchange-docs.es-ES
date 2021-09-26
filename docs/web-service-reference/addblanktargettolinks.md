@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 30180298-2501-4369-9b8f-2f7663f02336
-description: El elemento AddBlankTargetToLinks especifica que el atributo de destino en vínculos HTML está configurado para abrir una nueva ventana.
-ms.openlocfilehash: 1d4d36c1f4b98ebee96baea683c40527d2a9ec27
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento AddBlankTargetToLinks especifica que el atributo de destino de los vínculos HTML se establece para abrir una nueva ventana.
+ms.openlocfilehash: c8d7a5973e60e43638472b0da29842ce1caacc98
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465046"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543831"
 ---
 # <a name="addblanktargettolinks"></a>AddBlankTargetToLinks
 
-El elemento **AddBlankTargetToLinks** especifica que el atributo de destino en vínculos HTML está configurado para abrir una nueva ventana. 
+El **elemento AddBlankTargetToLinks** especifica que el atributo de destino de los vínculos HTML se establece para abrir una nueva ventana. 
   
 ```XML
 <AddBlankTargetToLinks> true | false </AddBlankTargetToLinks>
 ```
 
-**XS: Boolean**
+**xs:Boolean**
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -41,11 +41,11 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[ItemShape](itemshape.md) <br/> | Identifica las propiedades de elemento y el contenido que se incluirá en una respuesta de **GetItem**, **FindItem**, **GetConversationItems** o **SyncFolderItems** .<br/><br/>  Las siguientes son las expresiones XPath de este elemento:<br/><br/>  `/GetItem/ItemShape` <br/>  `/FindItem/ItemShape` <br/>  `/SyncFolderItems/ItemShape` <br/>  `/GetConversationItems/ItemShape` <br/> |
+|[ItemShape](itemshape.md) <br/> | Identifica las propiedades y el contenido del elemento que se incluirán en una respuesta **GetItem**, **FindItem**, **GetConversationItems** o **SyncFolderItems.**<br/><br/>  Las siguientes son las expresiones XPath de este elemento:<br/><br/>  `/GetItem/ItemShape` <br/>  `/FindItem/ItemShape` <br/>  `/SyncFolderItems/ItemShape` <br/>  `/GetConversationItems/ItemShape` <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **AddBlankTargetToLinks** indica que se establecerán todos los vínculos HTML para abrir una nueva ventana. Un valor de **false** indica que los vínculos HTML se abrirán en la ventana actual. 
+Un valor de texto **de true** para el **elemento AddBlankTargetToLinks** indica que todos los vínculos HTML se establecerán para abrir una nueva ventana. Un valor de **false** indica que los vínculos HTML se abrirán en la ventana actual. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -61,10 +61,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

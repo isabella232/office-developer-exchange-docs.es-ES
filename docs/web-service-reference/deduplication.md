@@ -1,23 +1,23 @@
 ---
-title: Desduplicación
+title: Deduplication
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a38acc3d-29a8-4466-81a4-73cb30fe5e80
-description: El elemento de desduplicación indica si el resultado de la búsqueda debe quitar elementos duplicados.
-ms.openlocfilehash: c39f980658aba7036cfabb3b51af5a41005f97b6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Deduplication indica si el resultado de la búsqueda debe quitar elementos duplicados.
+ms.openlocfilehash: 6178502d102b8c24b39d7276352c31740c62352c
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463716"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543411"
 ---
-# <a name="deduplication"></a>Desduplicación
+# <a name="deduplication"></a>Deduplication
 
-El elemento de **desduplicación** indica si el resultado de la búsqueda debe quitar elementos duplicados. 
+El **elemento Deduplication** indica si el resultado de la búsqueda debe quitar elementos duplicados. 
   
 ```XML
 <Deduplication> true | false </Deduplication>
@@ -43,7 +43,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento de desduplicación indica que los resultados de la búsqueda no pueden contener elementos duplicados. Un valor de **false** indica que los resultados de la búsqueda pueden contener elementos duplicados. 
+Un valor de texto **de true** para el elemento Deduplication indica que es posible que los resultados de la búsqueda no contengan elementos duplicados. Un valor de **false** indica que los resultados de la búsqueda pueden contener elementos duplicados. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

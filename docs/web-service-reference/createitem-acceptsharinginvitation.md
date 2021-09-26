@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateItem
 api_type:
 - schema
 ms.assetid: 710c893a-3037-4f04-b336-aefedd36c406
-description: La operación CreateItem se usa para aceptar una invitación para compartir los datos de contactos o calendario de otro usuario.
-ms.openlocfilehash: eda846b72f42fe886497b355d9cddade7c5f4044
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación CreateItem se usa para aceptar una invitación para compartir datos de calendario o contactos de otro usuario.
+ms.openlocfilehash: 37068657e77f4ceb35f9cb9601863fcae520c018
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457518"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543439"
 ---
 # <a name="createitem-acceptsharinginvitation"></a>CreateItem (AcceptSharingInvitation)
 
-La operación **CreateItem** se usa para aceptar una invitación para compartir los datos de contactos o calendario de otro usuario. 
+La **operación CreateItem** se usa para aceptar una invitación para compartir datos de calendario o contactos de otro usuario. 
   
-## <a name="accept-sharing-invitation-request-example"></a>Ejemplo de solicitud para aceptar una invitación de uso compartido
+## <a name="accept-sharing-invitation-request-example"></a>Ejemplo de solicitud Aceptar invitación para uso compartido
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra cómo aceptar una invitación de uso compartido.
+En el ejemplo siguiente se muestra cómo aceptar una invitación para compartir.
   
 ### <a name="code"></a>Código
 
@@ -47,9 +47,9 @@ En el ejemplo siguiente se muestra cómo aceptar una invitación de uso comparti
 </soap:Envelope>
 ```
 
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [CreateItem](createitem.md)
     
@@ -61,13 +61,13 @@ Los siguientes elementos se usan en la solicitud:
     
 ### <a name="comments"></a>Comentarios
 
-El identificador de elemento y la clave de cambio se han abreviado para preservar la legibilidad.
+El identificador del elemento y la clave de cambio se han acortado para conservar la legibilidad.
   
-## <a name="successful-accept-sharing-invitation-response-example"></a>Ejemplo de respuesta de invitación para uso compartido aceptada correctamente
+## <a name="successful-accept-sharing-invitation-response-example"></a>Ejemplo de respuesta Aceptar invitación para compartir correctamente
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **CreateItem** . 
+En el ejemplo siguiente se muestra una respuesta correcta a una **solicitud CreateItem.** 
   
 ### <a name="code"></a>Código
 
@@ -99,7 +99,7 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud **Crea
 </soap:Envelope>
 ```
 
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -115,11 +115,11 @@ En la respuesta se usan los siguientes elementos:
     
 - [Items](items.md)
     
-## <a name="accept-sharing-invitation-error-response-example"></a>Ejemplo de respuesta de error de aceptación de uso compartido
+## <a name="accept-sharing-invitation-error-response-example"></a>Ejemplo de respuesta Aceptar error de invitación para compartir
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud **CreateItem** . El error se debe a un intento de aceptar una invitación para compartir que no se encuentra en el almacén de Exchange. 
+En el ejemplo siguiente se muestra una respuesta de error a una **solicitud CreateItem.** El error se debe a un intento de aceptar una invitación para compartir que no se puede encontrar en el Exchange tienda. 
   
 ### <a name="code"></a>Código
 
@@ -155,7 +155,7 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud **Crea
 
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -173,7 +173,7 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - [Items](items.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 

@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - RestrictedGroupIdentifier
 api_type:
 - schema
 ms.assetid: a3ea3c81-9f99-4836-8cb4-2384ea63f093
-description: El elemento RestrictGroupIdentifier representa el identificador de seguridad (SID) de grupo y los atributos de un grupo restringido dentro de un token de usuario.
-ms.openlocfilehash: c95af4e09324e96f4551a05490dc200aec0cbd46
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento RestrictGroupIdentifier representa el identificador de seguridad de grupo (SID) y los atributos de un grupo restringido dentro de un token de usuario.
+ms.openlocfilehash: 65b356f4a8195979d751a3f5288940b391f51939
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465369"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544783"
 ---
 # <a name="restrictedgroupidentifier"></a>RestrictedGroupIdentifier
 
-El elemento **RestrictGroupIdentifier** representa el identificador de seguridad (SID) de grupo y los atributos de un grupo restringido dentro de un token de usuario. 
+El **elemento RestrictGroupIdentifier** representa el identificador de seguridad de grupo (SID) y los atributos de un grupo restringido dentro de un token de usuario. 
   
 ```xml
 <RestrictedGroupIdentifier Attributes="">
@@ -38,13 +38,13 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
-|**Atributos** <br/> |Contiene los atributos de grupo.  <br/> |
+|**Atributos** <br/> |Contiene atributos de grupo.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[SecurityIdentifier](securityidentifier.md) <br/> |Representa el formato de lenguaje de definición de descriptores de seguridad (SDDL) de un identificador de seguridad.  <br/> |
+|[SecurityIdentifier](securityidentifier.md) <br/> |Representa el formato de lenguaje de definición de descriptor de seguridad (SDDL) de un identificador de seguridad.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,7 +54,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta Microsoft Exchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -62,12 +62,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

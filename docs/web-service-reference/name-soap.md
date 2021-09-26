@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: dce6d823-dc33-4a47-babe-6370a15ac7b4
 description: El elemento Name representa el nombre de una configuración.
-ms.openlocfilehash: 74e6d6b59d972d7230c23b38cd3f4a8591401bbd
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 39bb2b6bbf7e29dedb13a9bf828f130c076dfb6b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466888"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541997"
 ---
 # <a name="name-soap"></a>Name (SOAP)
 
-El elemento **Name** representa el nombre de una configuración. 
+El **elemento Name** representa el nombre de una configuración. 
   
 ```XML
 <Name/>
@@ -42,18 +42,18 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[DomainSetting (SOAP)](domainsetting-soap.md) <br/> |Contiene la configuración de dominio que devuelve la solicitud de [operación GetDomainSettings (SOAP)](getdomainsettings-operation-soap.md) .  <br/> |
-|[DomainStringSetting (SOAP)](domainstringsetting-soap.md) <br/> |Representa una configuración de dominio cuyo valor es de tipo String.  <br/> |
+|[DomainSetting (SOAP)](domainsetting-soap.md) <br/> |Contiene la configuración de dominio que devuelve la [solicitud de operación GetDomainSettings (SOAP).](getdomainsettings-operation-soap.md)  <br/> |
+|[DomainStringSetting (SOAP)](domainstringsetting-soap.md) <br/> |Representa un dominio que establece el valor del cual es de tipo string.  <br/> |
 |[OrganizationRelationshipSettings (SOAP)](organizationrelationshipsettings-soap.md) <br/> |Representa una lista de relaciones de organización para una sola organización.  <br/> |
-|[UserSetting (SOAP)](usersetting-soap.md) <br/> |Representa una configuración de usuario individual.  <br/> |
-|[ProtocolConnectionCollectionSetting (SOAP)](protocolconnectioncollectionsetting-soap.md) <br/> |Representa una colección de opciones de configuración de conexión del Protocolo de servidor.  <br/> |
-|[StringSetting (SOAP)](stringsetting-soap.md) <br/> |Representa un usuario que establece el valor para el que es de tipo String.  <br/> |
-|[WebClientUrlCollectionSetting (SOAP)](webclienturlcollectionsetting-soap.md) <br/> |Representa una configuración de usuario que es una colección de direcciones URL de cliente web de Exchange.  <br/> |
-|[AlternateMailboxCollectionSetting (SOAP)](alternatemailboxcollectionsetting-soap.md) <br/> |Contiene una colección de configuraciones de buzón de correo alternativas.  <br/> |
+|[UserSetting (SOAP)](usersetting-soap.md) <br/> |Representa una configuración de usuario único.  <br/> |
+|[ProtocolConnectionCollectionSetting (SOAP)](protocolconnectioncollectionsetting-soap.md) <br/> |Representa una colección de opciones de conexión de protocolo de servidor.  <br/> |
+|[StringSetting (SOAP)](stringsetting-soap.md) <br/> |Representa un usuario que establece el valor para el que es de tipo string.  <br/> |
+|[WebClientUrlCollectionSetting (SOAP)](webclienturlcollectionsetting-soap.md) <br/> |Representa una configuración de usuario que es una colección de direcciones URL Exchange cliente web.  <br/> |
+|[AlternateMailboxCollectionSetting (SOAP)](alternatemailboxcollectionsetting-soap.md) <br/> |Contiene una colección de opciones alternativas de buzón.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **Name** es el nombre de una configuración. 
+El valor de texto del **elemento Name** es el nombre de una configuración. 
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -61,10 +61,10 @@ El valor de texto del elemento **Name** es el nombre de una configuración.
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Operación GetDomainSettings (SOAP)](getdomainsettings-operation-soap.md)
 - [Operación GetUserSettings (SOAP)](getusersettings-operation-soap.md)

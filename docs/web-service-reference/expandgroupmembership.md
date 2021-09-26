@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8989e96b-8fa1-4858-93b2-2cbdb30b9ca9
-description: El elemento ExpandGroupMembership indica si se debe expandir la pertenencia del grupo devuelto desde una solicitud GetSearchableMailboxes.
-ms.openlocfilehash: 8a94aa3da165ecc13282127e75c8d166f3972ead
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento ExpandGroupMembership indica si se expande la pertenencia al grupo devuelto desde una solicitud GetSearchableMailboxes.
+ms.openlocfilehash: fb835f8f1fa9fb957c6b3bf3ddef80e68d9c049f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456909"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59541402"
 ---
 # <a name="expandgroupmembership"></a>ExpandGroupMembership
 
-El elemento **ExpandGroupMembership** indica si se debe expandir la pertenencia del grupo devuelto desde una solicitud **GetSearchableMailboxes** . 
+El **elemento ExpandGroupMembership** indica si se expande la pertenencia al grupo devuelto desde una **solicitud GetSearchableMailboxes.** 
   
 ```XML
 <ExpandGroupMembership>true | false</ExpandGroupMembership>
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-Un valor de texto de **true** para el elemento **ExpandGroupElement** indica que la pertenencia a grupos está expandida. Un valor de **false** indica que la pertenencia al grupo no se expande para mostrar los miembros del grupo. 
+Un valor de texto **de true** para el **elemento ExpandGroupElement** indica que se expande la pertenencia a grupos. Un valor de **false** indica que la pertenencia al grupo no se expande para mostrar los miembros del grupo. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

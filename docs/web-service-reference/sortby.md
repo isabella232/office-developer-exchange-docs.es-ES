@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3dc4ab23-26b0-42b3-8930-f1c7eefecdeb
-description: El elemento SortBy contiene una propiedad de elemento usada para ordenar los resultados de búsqueda.
-ms.openlocfilehash: cf2b1e633bc66e526028078833afade363e4c5e0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento SortBy contiene una propiedad item usada para ordenar el resultado de la búsqueda.
+ms.openlocfilehash: 8718bad3749a0409be2715b0e03001b97a4fb87e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468400"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544692"
 ---
 # <a name="sortby"></a>SortBy
 
-El elemento **sortBy** contiene una propiedad de elemento usada para ordenar los resultados de búsqueda. 
+El **elemento SortBy** contiene una propiedad item usada para ordenar el resultado de la búsqueda. 
   
 ```XML
 <SortBy Order="">
@@ -35,7 +35,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
-|Order  <br/> |El valor de texto del atributo **Order** es el criterio de ordenación. Un valor de texto **ascendente** indica que los resultados están en orden ascendente. Un valor de texto **descendente** indica que los resultados están en orden descendente.  <br/> |
+|Order  <br/> |El valor de texto del **atributo Order** es el criterio de ordenación. Un valor de texto **de Ascendente** indica que los resultados están en orden ascendente. Un valor de texto **de Descendente** indica que los resultados están en orden descendente.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -56,8 +56,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

@@ -4,21 +4,21 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: bf614551-f5b0-4f80-bdac-628f685faee9
-description: El elemento DebugData contiene los datos de depuración para una respuesta de error de detección automática.
-ms.openlocfilehash: 79b5f4d3fa1379b7052dcd03053bc8bac6430017
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento DebugData contiene los datos de depuración de una respuesta de error de detección automática.
+ms.openlocfilehash: ff339e6e92eb8dd9d3d0c1b96c0e4f733a383dc3
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44526952"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59543418"
 ---
 # <a name="debugdata-pox"></a>DebugData (POX)
 
-El elemento **DebugData** contiene los datos de depuración para una respuesta de error de detección automática. 
+El **elemento DebugData** contiene los datos de depuración de una respuesta de error de detección automática. 
   
 - [Error (POX)](error-pox.md) 
 - [DebugData (POX)](debugdata-pox.md)
@@ -33,11 +33,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -47,9 +47,9 @@ Ninguna.
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa los datos de depuración para una respuesta de error de detección automática.
+El valor de texto representa los datos de depuración de una respuesta de error de detección automática.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 

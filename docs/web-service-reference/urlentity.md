@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4609903b-c071-4a16-98d2-05686828cc56
-description: El elemento UrlEntity identifica una única entidad URL extraída.
-ms.openlocfilehash: 2990d99009a18af8ba588244b055eb4e2d461b9c
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento UrlEntity identifica una única entidad url extraída.
+ms.openlocfilehash: f193b849e7e7c3395169f653673842dbd127ba5b
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44465018"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542725"
 ---
 # <a name="urlentity"></a>UrlEntity
 
-El elemento **UrlEntity** identifica una única entidad URL extraída. 
+El **elemento UrlEntity** identifica una única entidad url extraída. 
   
 ```XML
 <UrlEntity>
@@ -37,11 +37,11 @@ Ninguna.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-[Posición](position.md)  |  [Dirección URL](url-ex15websvcsotherref.md)
+[Posición](position.md)  |  [Url](url-ex15websvcsotherref.md)
   
 ### <a name="parent-elements"></a>Elementos principales
 
-[Direcciones URL (ArrayOfUrlEntitiesType)](urls-arrayofurlentitiestype.md)
+[Urls (ArrayOfUrlEntitiesType)](urls-arrayofurlentitiestype.md)
   
 ## <a name="remarks"></a>Comentarios
 
@@ -54,8 +54,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |false  <br/> |
    
 

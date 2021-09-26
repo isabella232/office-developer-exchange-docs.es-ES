@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteFolder
 api_type:
 - schema
 ms.assetid: b0f92682-4895-4bcf-a4a1-e4c2e8403979
 description: La operación DeleteFolder elimina carpetas de un buzón.
-ms.openlocfilehash: e9bb9199027c2af2cbbb664ef7ad4fa70b7ef718
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: fdd8519adbf9e0112f5fdd6a411dd6e7710f7d37
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44455747"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545436"
 ---
 # <a name="deletefolder-operation"></a>Operación DeleteFolder
 
-La operación **DeleteFolder** elimina carpetas de un buzón. 
+La **operación DeleteFolder** elimina carpetas de un buzón. 
   
 ## <a name="deletefolder-request-example"></a>Ejemplo de solicitud DeleteFolder
 
 ### <a name="description"></a>Description
 
-En el siguiente ejemplo de una solicitud de **DeleteFolder** se muestra cómo crear una solicitud para eliminar una carpeta. 
+En este ejemplo siguiente de **una solicitud DeleteFolder** se muestra cómo formar una solicitud para eliminar una carpeta. 
   
 ### <a name="code"></a>Código
 
@@ -49,14 +49,14 @@ En el siguiente ejemplo de una solicitud de **DeleteFolder** se muestra cómo cr
 
 ### <a name="comments"></a>Comentarios
 
-En este ejemplo se realiza una eliminación de disco duro en la carpeta.
+En este ejemplo se realiza una eliminación permanente en la carpeta.
   
 > [!NOTE]
-> El identificador de la carpeta se ha abreviado para preservar la legibilidad. 
+> El identificador de carpeta se ha acortado para conservar la legibilidad. 
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [DeleteFolder](deletefolder.md)
     
@@ -65,15 +65,15 @@ Los siguientes elementos se usan en la solicitud:
 - [FolderId](folderid.md)
     
 > [!NOTE]
-> El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor acceso de clientes. 
+> El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor Acceso de cliente. 
   
-Para buscar otras opciones para el mensaje de solicitud de la operación **DeleteFolder** , explore la jerarquía del esquema. Empiece en el elemento [DeleteFolder](deletefolder.md) . 
+Para buscar otras opciones para el mensaje de solicitud de la **operación DeleteFolder,** explore la jerarquía de esquema. Comience en el [elemento DeleteFolder.](deletefolder.md) 
   
-## <a name="successful-deletefolder-response"></a>Respuesta DeleteFolder correcta
+## <a name="successful-deletefolder-response"></a>Respuesta correcta de DeleteFolder
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **DeleteFolder** . 
+En el ejemplo siguiente se muestra una respuesta correcta a la **solicitud DeleteFolder.** 
   
 ### <a name="code"></a>Código
 
@@ -114,13 +114,13 @@ En la respuesta se usan los siguientes elementos:
     
 - [ResponseCode](responsecode.md)
     
-Para buscar otras opciones para el mensaje de respuesta de la operación **DeleteFolder** , explore la jerarquía del esquema. Empiece en el elemento [DeleteFolderResponse](deletefolderresponse.md) . 
+Para buscar otras opciones para el mensaje de respuesta de **la operación DeleteFolder,** explore la jerarquía de esquema. Comience en el [elemento DeleteFolderResponse.](deletefolderresponse.md) 
   
-## <a name="deletefolder-error-response"></a>Respuesta de error de DeleteFolder
+## <a name="deletefolder-error-response"></a>Respuesta de error DeleteFolder
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud **DeleteFolder** . El error se ha producido por una solicitud para eliminar una carpeta que no estaba presente en el buzón. 
+En el ejemplo siguiente se muestra una respuesta de error a una **solicitud DeleteFolder.** El error se produjo por una solicitud para eliminar una carpeta que no estaba presente en el buzón. 
   
 ### <a name="code"></a>Código
 
@@ -151,11 +151,11 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud **Dele
 
 ### <a name="comments"></a>Comentarios
 
-La operación **DeleteFolder** no se puede usar en carpetas completas. 
+La **operación DeleteFolder** no se puede usar en carpetas distinguidas. 
   
 ### <a name="error-response-elements"></a>Elementos de respuesta de error
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -171,10 +171,10 @@ Los siguientes elementos se usan en la respuesta de error:
     
 - [DescriptiveLinkKey](descriptivelinkkey.md)
     
-Para buscar otras opciones para el mensaje de respuesta de error de la operación **DeleteFolder** , explore la jerarquía del esquema. Empiece en el elemento [DeleteFolderResponse](deletefolderresponse.md) . 
+Para buscar otras opciones para el mensaje de respuesta de error de la **operación DeleteFolder,** explore la jerarquía de esquema. Comience en el [elemento DeleteFolderResponse.](deletefolderresponse.md) 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
-- [Eliminar carpetas](https://msdn.microsoft.com/library/1958add5-5071-4239-adb2-40f7a7d74aee%28Office.15%29.aspx)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
+- [Eliminación de carpetas](https://msdn.microsoft.com/library/1958add5-5071-4239-adb2-40f7a7d74aee%28Office.15%29.aspx)
 

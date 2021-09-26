@@ -1,33 +1,33 @@
 ---
-title: Operación subscribe
+title: Operación Subscribe
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - Subscribe
 api_type:
 - schema
 ms.assetid: f17c3d08-c79e-41f1-ba31-6e41e7aafd87
-description: La operación subscribe se usa para suscribir las aplicaciones cliente a las notificaciones de inserción o extracción. Es importante tener en cuenta que la estructura de los mensajes y respuestas de la solicitud es diferente en función del tipo de notificación de eventos.
-ms.openlocfilehash: c40e0e434f698c6535ff5d03fd4d45a453959dd6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación Subscribe se usa para suscribir aplicaciones cliente a notificaciones de inserción o extracción. Es importante tener en cuenta que la estructura de los mensajes de solicitud y las respuestas es diferente según el tipo de notificación de evento.
+ms.openlocfilehash: 546f7ab252c7d3a201130cd48e2b30ca52d00088
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467049"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544538"
 ---
-# <a name="subscribe-operation"></a>Operación subscribe
+# <a name="subscribe-operation"></a>Operación Subscribe
 
-La operación subscribe se usa para suscribir las aplicaciones cliente a las notificaciones de inserción o extracción. Es importante tener en cuenta que la estructura de los mensajes y respuestas de la solicitud es diferente en función del tipo de notificación de eventos. 
+La operación Subscribe se usa para suscribir aplicaciones cliente a notificaciones de inserción o extracción. Es importante tener en cuenta que la estructura de los mensajes de solicitud y las respuestas es diferente según el tipo de notificación de evento. 
   
-## <a name="pull-subscription-subscribe-request-example"></a>Ejemplo de solicitud subscribe de suscripción de extracción
+## <a name="pull-subscription-subscribe-request-example"></a>Ejemplo de solicitud de suscripción de extracción
 
 ### <a name="description"></a>Description
 
-En el ejemplo de código siguiente se muestra cómo suscribirse a una suscripción de notificación de evento de extracción. La suscripción informa a la aplicación cliente si se agrega correo nuevo a la bandeja de entrada y si un elemento se elimina de la bandeja de entrada. Se agotará el tiempo de espera de la suscripción si el cliente no solicita información sobre los eventos en 10 minutos. Si la suscripción expira, se debe establecer una nueva suscripción para seguir solicitando notificaciones.
+En el siguiente ejemplo de código se muestra cómo suscribirse a una suscripción de notificación de eventos de extracción. La suscripción informa a la aplicación cliente si se agrega nuevo correo a la Bandeja de entrada y si se elimina un elemento de la Bandeja de entrada. La suscripción dará tiempo de espera si el cliente no solicita información sobre eventos en un plazo de diez minutos. Si la suscripción expira, se debe establecer una nueva suscripción para continuar solicitando notificaciones.
   
 ### <a name="code"></a>Código
 
@@ -52,11 +52,11 @@ En el ejemplo de código siguiente se muestra cómo suscribirse a una suscripci�
 </soap:Envelope>
 ```
 
-### <a name="pull-subscription-subscribe-request-elements"></a>Elementos de solicitud subscribe de suscripción de extracción
+### <a name="pull-subscription-subscribe-request-elements"></a>Extraer elementos de solicitud de suscripción
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
-- [Suscribirse](subscribe.md)
+- [Subscribe](subscribe.md)
     
 - [PullSubscriptionRequest](pullsubscriptionrequest.md)
     
@@ -70,13 +70,13 @@ Los siguientes elementos se usan en la solicitud:
     
 - [Timeout](timeout.md)
     
-Para buscar otras opciones para el mensaje de solicitud de la operación de suscripción, explore la jerarquía del esquema. Empiece en el elemento [PullSubscriptionRequest](pullsubscriptionrequest.md) . 
+Para buscar otras opciones para el mensaje de solicitud de la operación Subscribe, explore la jerarquía de esquema. Comience en el [elemento PullSubscriptionRequest.](pullsubscriptionrequest.md) 
   
-## <a name="successful-pull-subscription-subscribe-response-example"></a>Ejemplo de respuesta de suscripción de suscripción de extracción correcta
+## <a name="successful-pull-subscription-subscribe-response-example"></a>Ejemplo de respuesta suscribirse a una suscripción de extracción correcta
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta de suscripción de extracción correcta. La respuesta contiene el identificador y la marca de agua de la suscripción que se usa para obtener la matriz de eventos asociados a una suscripción. El identificador de suscripción también se usa para cancelar la suscripción de un cliente desde una suscripción.
+En el siguiente ejemplo se muestra una respuesta correcta de la suscripción de extracción. La respuesta contiene el identificador de suscripción y la marca de agua que se usa para obtener la matriz de eventos asociados a una suscripción. El identificador de suscripción también se usa para cancelar la suscripción a un cliente.
   
 ### <a name="code"></a>Código
 
@@ -105,7 +105,7 @@ En el ejemplo siguiente se muestra una respuesta de suscripción de extracción 
 </soap:Envelope>
 ```
 
-### <a name="pull-subscription-subscribe-response-elements"></a>Elementos de respuesta subscribe de suscripción de extracción
+### <a name="pull-subscription-subscribe-response-elements"></a>Extraer elementos de respuesta Suscripción a suscripción
 
 En la respuesta se usan los siguientes elementos:
   
@@ -123,11 +123,11 @@ En la respuesta se usan los siguientes elementos:
     
 - [Watermark](watermark.md)
     
-## <a name="pull-subscription-subscribe-error-response-example"></a>Ejemplo de respuesta de error suscribirse a suscripción de extracción
+## <a name="pull-subscription-subscribe-error-response-example"></a>Ejemplo de respuesta de error de suscripción de extracción
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta de error a una solicitud subscribe. El error se produce al intentar suscribirse a las notificaciones mediante el acceso delegado.
+En el ejemplo siguiente se muestra una respuesta de error a una solicitud Subscribe. El error se debe a un intento de suscribirse a las notificaciones mediante el acceso delegado.
   
 ### <a name="code"></a>Código
 
@@ -156,9 +156,9 @@ En el ejemplo siguiente se muestra una respuesta de error a una solicitud subscr
 </soap:Envelope>
 ```
 
-### <a name="pull-subscription-error-response-elements"></a>Elementos de respuesta de error de suscripción de extracción
+### <a name="pull-subscription-error-response-elements"></a>Extraer elementos de respuesta de error de suscripción
 
-Los siguientes elementos se usan en la respuesta de error:
+En la respuesta de error se usan los siguientes elementos:
   
 - [ServerVersionInfo](serverversioninfo.md)
     
@@ -178,7 +178,7 @@ Los siguientes elementos se usan en la respuesta de error:
 
 ### <a name="description"></a>Description
 
-En el ejemplo de código siguiente se muestra cómo suscribirse a una suscripción de notificación de evento de inserción. La solicitud identifica las carpetas que se van a supervisar, los tipos de eventos que se van a supervisar, la frecuencia de las notificaciones de estado y la dirección URL del servicio Web de cliente que escucha las notificaciones de inserción.
+En el siguiente ejemplo de código se muestra cómo suscribirse a una suscripción de notificación de evento de inserción. La solicitud identifica las carpetas que se supervisarán, los tipos de eventos que se supervisarán, la frecuencia de las notificaciones de estado y la dirección URL del servicio web cliente que escucha las notificaciones de inserción.
   
 ### <a name="code"></a>Código
 
@@ -211,15 +211,15 @@ En el ejemplo de código siguiente se muestra cómo suscribirse a una suscripci�
 
 ### <a name="comments"></a>Comentarios
 
-El servicio Web de cliente debe estar configurado antes de que se envíe la solicitud subscribe de notificaciones de inserción; de lo contrario, la primera notificación no se enviará a un extremo válido y se producirá un error en la notificación de inserción. Para obtener más información, vea [aplicación de ejemplo de notificación de inserción](https://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx).
+El servicio web cliente debe configurarse antes de enviar la solicitud de suscripción de notificación de inserción; de lo contrario, la primera notificación no se enviará a un extremo válido y se producirá un error en la notificación de inserción. Para obtener más información, vea [Aplicación de ejemplo de notificación de inserción](https://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx).
   
-Se crea un nuevo [SubscriptionId (GetEvents)](subscriptionid-getevents.md) cuando se resuscribe. Use la marca de agua de una suscripción anterior para resuscribirse en el punto en el que finalizó la suscripción anterior. 
+Al volver a [suscribirse, se crea un nuevo SubscriptionId (GetEvents).](subscriptionid-getevents.md) Usa la marca de agua de una suscripción anterior para volver a suscribirse en el punto donde finalizó la suscripción anterior. 
   
 ### <a name="push-subscription-request-elements"></a>Elementos de solicitud de suscripción de inserción
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
-- [Suscribirse](subscribe.md)
+- [Subscribe](subscribe.md)
     
 - [PushSubscriptionRequest](pushsubscriptionrequest.md)
     
@@ -233,7 +233,7 @@ Los siguientes elementos se usan en la solicitud:
     
 - [StatusFrequency](statusfrequency.md)
     
-- [Dirección URL](url-ex15websvcsotherref.md)
+- [Url ](url-ex15websvcsotherref.md)
     
 ## <a name="successful-push-subscription-response-example"></a>Ejemplo de respuesta de suscripción de inserción correcta
 
@@ -268,7 +268,7 @@ En el ejemplo siguiente se muestra una respuesta de suscripción de inserción c
 </soap:Envelope>
 ```
 
-### <a name="push-subscription-response-elements"></a>Elementos de respuesta de suscripción de inserción
+### <a name="push-subscription-response-elements"></a>Elementos de respuesta push subscription
 
 En la respuesta se usan los siguientes elementos:
   
@@ -286,16 +286,16 @@ En la respuesta se usan los siguientes elementos:
     
 - [Watermark](watermark.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
-[Operación unsubscribe](unsubscribe-operation.md)
+[Operación Darse de baja](unsubscribe-operation.md)
   
 [Operación GetEvents](getevents-operation.md)
 
 
 [Uso de suscripciones de extracción](https://msdn.microsoft.com/library/f956bc0e-2b25-4613-966b-54c65456897c%28Office.15%29.aspx)
   
-[Aplicación de ejemplo de notificación de inserción](https://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx)
+[Solicitud de muestra de notificación de inserción](https://msdn.microsoft.com/library/db1f8523-fa44-483f-bdb6-ab5939b52eee%28Office.15%29.aspx)
 

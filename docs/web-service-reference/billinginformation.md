@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - BillingInformation
 api_type:
 - schema
 ms.assetid: 35aec4d1-5264-4b25-8b8f-cdee886da109
 description: El elemento BillingInformation contiene información de facturación para una tarea.
-ms.openlocfilehash: 6a3cd1ef402a67e896c2ed3afcca6c7c126d3e1b
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: dc83170900753d1e52d06d55ca8931ea1b283bc5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44462769"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545688"
 ---
 # <a name="billinginformation"></a>BillingInformation
 
-El elemento **BillingInformation** contiene información de facturación para una tarea. 
+El **elemento BillingInformation** contiene información de facturación para una tarea. 
   
 ```xml
 <BillingInformation/>
@@ -44,28 +44,28 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Tarea](task.md) <br/> |Representa una tarea del almacén de Exchange.  <br/> |
+|[Tarea](task.md) <br/> |Representa una tarea en el Exchange almacén.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa la información de facturación relacionada con la tarea.
+El valor de texto representa la información de facturación relacionada con tareas.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

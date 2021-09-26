@@ -4,19 +4,19 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fdb9cc7a-cf0a-431b-9f6f-5f1db1792db7
 description: El elemento TargetAutodiscoverEpr representa la propiedad TargetAutodiscoverEpr. El elemento TargetAutodiscoverEpr es solo para uso interno. Los clientes no usan este elemento.
-ms.openlocfilehash: f8609f61021d5701f7a8fa2590a85824caf296c6
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: f49d7b0acc59d638f2fca993ec7d8f182cd7380a
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530292"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59545807"
 ---
 # <a name="targetautodiscoverepr-soap"></a>TargetAutodiscoverEpr (SOAP)
 
-El elemento **TargetAutodiscoverEpr** representa la propiedad **TargetAutodiscoverEpr** . El elemento **TargetAutodiscoverEpr** es solo para uso interno. Los clientes no usan este elemento. 
+El **elemento TargetAutodiscoverEpr** representa la **propiedad TargetAutodiscoverEpr.** El **elemento TargetAutodiscoverEpr** es solo para uso interno. Los clientes no usan este elemento. 
   
 ```XML
 <TargetAutodiscoverEpr/>
@@ -29,7 +29,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -55,10 +55,10 @@ Este elemento especifica la dirección URL de detección automática del servido
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/2010/Autodiscover  <br/> |
 |Nombre de esquema  <br/> |Esquema de detección automática  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Verdadero  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 

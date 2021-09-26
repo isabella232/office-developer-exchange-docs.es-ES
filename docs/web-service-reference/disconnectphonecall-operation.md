@@ -5,29 +5,29 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DisconnectPhoneCall
 api_type:
 - schema
 ms.assetid: b42fb512-2ae4-4072-906a-ccebb85edb84
 description: La operación DisconnectPhoneCall finaliza la llamada telefónica.
-ms.openlocfilehash: e337185bc2d5c4d2d4e010605816eacea8dfa0ee
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 8f445b7e5c6f2f6343ad5b4d2fbff486ca1ab3d8
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44529066"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59542361"
 ---
 # <a name="disconnectphonecall-operation"></a>Operación DisconnectPhoneCall
 
-La operación **DisconnectPhoneCall** finaliza la llamada telefónica. 
+La **operación DisconnectPhoneCall** finaliza la llamada telefónica. 
   
 ## <a name="disconnectphonecall-request-example"></a>Ejemplo de solicitud DisconnectPhoneCall
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud de **DisconnectPhoneCall** muestra cómo crear una solicitud para desconectar una llamada telefónica. 
+En el siguiente ejemplo de una **solicitud DisconnectPhoneCall** se muestra cómo formar una solicitud para desconectar una llamada telefónica. 
   
 ### <a name="code"></a>Código
 
@@ -53,7 +53,7 @@ El siguiente ejemplo de una solicitud de **DisconnectPhoneCall** muestra cómo c
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **DisconnectPhoneCall** . 
+En el ejemplo siguiente se muestra una respuesta correcta a la **solicitud DisconnectPhoneCall.** 
   
 ### <a name="code"></a>Código
 
@@ -81,8 +81,8 @@ En el ejemplo siguiente se muestra una respuesta correcta a la solicitud **Disco
 </s:Envelope>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Operaciones de EWS en Exchange](ews-operations-in-exchange.md) 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Operaciones ews en Exchange](ews-operations-in-exchange.md) 
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

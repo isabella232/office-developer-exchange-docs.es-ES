@@ -1,32 +1,32 @@
 ---
-title: Operación SetTelephoneAccessFolderEmail (servicio Web de mensajería unificada)
+title: Operación SetTelephoneAccessFolderEmail (servicio web de mensajería unificada)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetTelephoneAccessFolderEmail
 api_type:
 - schema
 ms.assetid: 2c92d914-bdee-4337-b3ea-0655fdb658e9
-description: La operación SetTelephoneAccessFolderEmail establece la carpeta desde la que la mensajería unificada va a leer los mensajes al usuario por teléfono.
-ms.openlocfilehash: a2bb630f812ca811b4cbe68db1308dc18e5d3ba0
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación SetTelephoneAccessFolderEmail establece la carpeta desde la que la mensajería unificada leerá los mensajes al usuario por teléfono.
+ms.openlocfilehash: cf8e80e021d6467ba3a724cc0d04e165e00e8397
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44467336"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59544720"
 ---
-# <a name="settelephoneaccessfolderemail-operation-um-web-service"></a>Operación SetTelephoneAccessFolderEmail (servicio Web de mensajería unificada)
+# <a name="settelephoneaccessfolderemail-operation-um-web-service"></a>Operación SetTelephoneAccessFolderEmail (servicio web de mensajería unificada)
 
-La operación SetTelephoneAccessFolderEmail establece la carpeta desde la que la mensajería unificada va a leer los mensajes al usuario por teléfono.
+La operación SetTelephoneAccessFolderEmail establece la carpeta desde la que la mensajería unificada leerá los mensajes al usuario por teléfono.
   
 ## <a name="settelephoneaccessfolderemail-request-example"></a>Ejemplo de solicitud SetTelephoneAccessFolderEmail
 
 ### <a name="description"></a>Description
 
-En el siguiente ejemplo de una solicitud de SetTelephoneAccessFolderEmail se muestra cómo realizar una solicitud para establecer la carpeta desde la que se leerá la mensajería unificada al usuario por teléfono.
+En el siguiente ejemplo de una solicitud SetTelephoneAccessFolderEmail se muestra cómo formar una solicitud para establecer la carpeta desde la que la mensajería unificada leerá de nuevo al usuario por teléfono.
   
 ### <a name="code"></a>Código
 
@@ -41,11 +41,11 @@ En el siguiente ejemplo de una solicitud de SetTelephoneAccessFolderEmail se mue
 </soap:Envelope>
 ```
 
-## <a name="successful-settelephoneaccessfolderemail-response-example"></a>Ejemplo de respuesta SetTelephoneAccessFolderEmail correcta
+## <a name="successful-settelephoneaccessfolderemail-response-example"></a>Ejemplo de respuesta SetTelephoneAccessFolderEmail correcto
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una respuesta de SetTelephoneAccessFolderEmail muestra una respuesta a la solicitud SetTelephoneAccessFolderEmail.
+En el siguiente ejemplo de una respuesta SetTelephoneAccessFolderEmail se muestra una respuesta a la solicitud SetTelephoneAccessFolderEmail.
   
 ### <a name="code"></a>Código
 
@@ -58,13 +58,13 @@ El siguiente ejemplo de una respuesta de SetTelephoneAccessFolderEmail muestra u
 </soap:Envelope>
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
-[SetTelephoneAccessFolderEmail (servicio Web de mensajería unificada)](settelephoneaccessfolderemail-um-web-service.md)
+[SetTelephoneAccessFolderEmail (servicio web de mensajería unificada)](settelephoneaccessfolderemail-um-web-service.md)
   
-[SetTelephoneAccessFolderEmailResponse (servicio Web de mensajería unificada)](settelephoneaccessfolderemailresponse-um-web-service.md)
+[SetTelephoneAccessFolderEmailResponse (servicio web de mensajería unificada)](settelephoneaccessfolderemailresponse-um-web-service.md)
   
-[base64FolderId (servicio Web de mensajería unificada)](base64folderid-um-web-service.md)
+[base64FolderId (servicio web de mensajería unificada)](base64folderid-um-web-service.md)
 
