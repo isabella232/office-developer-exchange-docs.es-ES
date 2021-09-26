@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - AdjacentMeetings
 api_type:
 - schema
 ms.assetid: 50a9c381-9166-476e-8421-29e51b94499b
 description: El elemento AdjacentMeetings identifica todos los elementos de calendario adyacentes a una hora de reunión.
-ms.openlocfilehash: 7c89095e24af799df22a848be06a0fd65d53be7f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 9ce022da9cc9ca2c6a5d7866a20b749d72fb0537
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463583"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546786"
 ---
 # <a name="adjacentmeetings"></a>AdjacentMeetings
 
-El elemento **AdjacentMeetings** identifica todos los elementos de calendario adyacentes a una hora de reunión. 
+El **elemento AdjacentMeetings** identifica todos los elementos de calendario adyacentes a una hora de reunión. 
   
 ```xml
 <AdjacentMeetings>
@@ -42,21 +42,21 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Representa un Exchange de calendario.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[CalendarItem](calendaritem.md) <br/> |Representa un elemento de calendario de Exchange.  <br/> |
-|[MeetingRequest](meetingrequest.md) <br/> |Representa una convocatoria de reunión en el almacén de Exchange.  <br/> |
+|[CalendarItem](calendaritem.md) <br/> |Representa un Exchange de calendario.  <br/> |
+|[MeetingRequest](meetingrequest.md) <br/> |Representa una solicitud de reunión en Exchange almacén.  <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta Microsoft Exchange Server 2010 que tiene instalado el rol de servidor Acceso de cliente.
   
 > [!NOTE]
-> Aunque los elementos secundarios adicionales son válidos para cada esquema, el elemento [CalendarItem](calendaritem.md) es el único elemento secundario que los servicios web Exchange (EWS) devolverán dentro del elemento **AdjacentMeetings** . En este tema no se enumeran los elementos secundarios que son válidos para cada esquema, pero que no se devolverán con EWS. 
+> Aunque los elementos secundarios adicionales son válidos para el esquema, el elemento [CalendarItem](calendaritem.md) es el único elemento secundario que Exchange Web Services (EWS) devolverá dentro del **elemento AdjacentMeetings.** En este tema no se enumeran los elementos secundarios que son válidos para el esquema pero que EWS no devolverá. 
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -64,10 +64,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

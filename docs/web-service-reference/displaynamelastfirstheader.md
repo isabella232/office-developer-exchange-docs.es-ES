@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ca77431e-2d6c-48e0-a20e-e8616c6fa157
-description: El elemento DisplayNameLastFirstHeader especifica el encabezado del nombre para mostrar, primero el apellido.
-ms.openlocfilehash: 4987ace53b3ad6ecabed7644071436777fb3b926
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento DisplayNameLastFirstHeader especifica el encabezado del nombre para mostrar, el apellido primero.
+ms.openlocfilehash: eec9fe4de3a145b36423f123944972ea241e00d4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463149"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547522"
 ---
 # <a name="displaynamelastfirstheader"></a>DisplayNameLastFirstHeader
 
-El elemento **DisplayNameLastFirstHeader** especifica el encabezado del nombre para mostrar, primero el apellido. 
+El **elemento DisplayNameLastFirstHeader** especifica el encabezado del nombre para mostrar, el apellido primero. 
   
 ```xml
 <DisplayNameLastFirstHeader></DisplayNameLastFirstHeader>
@@ -40,11 +40,11 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Rol](persona.md) <br/> |Especifica un conjunto de datos de rol devueltos por una solicitud **GetPersona** .  <br/> |
+|[Rol](persona.md) <br/> |Especifica un conjunto de datos de persona devueltos por una **solicitud GetPersona.**  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **DisplayNameLastFirstHeader** es un valor de cadena que especifica primero el nombre para mostrar, apellido. 
+El valor de texto del **elemento DisplayNameLastFirstHeader** es un valor de cadena que especifica primero el nombre para mostrar, el apellido. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -58,10 +58,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

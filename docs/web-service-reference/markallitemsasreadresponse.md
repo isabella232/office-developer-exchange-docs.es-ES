@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 07dedaa8-17aa-4553-b8e2-e3f82c40ae1e
 description: El elemento MarkAllItemsAsReadResponse especifica la respuesta a una solicitud MarkAllItemsAsRead.
-ms.openlocfilehash: 011aa34886b4f50542c68661d9b61be3a3ce3a1f
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 1d2900938e63bff47f561646c0fc2a7c280c762e
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44463891"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547130"
 ---
 # <a name="markallitemsasreadresponse"></a>MarkAllItemsAsReadResponse
 
-El elemento **MarkAllItemsAsReadResponse** especifica la respuesta a una solicitud **MarkAllItemsAsRead** . 
+El **elemento MarkAllItemsAsReadResponse** especifica la respuesta a una **solicitud MarkAllItemsAsRead.** 
   
 ```XML
 <MarkAllItemsAsReadResponse>
@@ -32,7 +32,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -53,8 +53,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

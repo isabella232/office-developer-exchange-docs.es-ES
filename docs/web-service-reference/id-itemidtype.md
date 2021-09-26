@@ -1,23 +1,23 @@
 ---
-title: IDENTIFICADOR (ItemIdType)
+title: ID (ItemIdType)
 manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a9909ed2-fdc5-4b1f-b7db-1f517add8eb3
-description: El elemento id especifica el identificador de un elemento.
-ms.openlocfilehash: bc4ffa91f9375b33e89fa4e03b2a1d6a7974dc44
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento Id especifica el identificador de un elemento.
+ms.openlocfilehash: 5b153dbd62fc0231470b70087047700e8eab92cf
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44459324"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547270"
 ---
-# <a name="id-itemidtype"></a>IDENTIFICADOR (ItemIdType)
+# <a name="id-itemidtype"></a>ID (ItemIdType)
 
-El elemento **ID** especifica el identificador de un elemento. 
+El **elemento Id** especifica el identificador de un elemento. 
   
 ```XML
 <Id Id="" ChangeKey=""/>
@@ -32,12 +32,12 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
 
 |**Atributo**|**Descripción**|
 |:-----|:-----|
-|Id  <br/> |El valor de texto del atributo **ID** es el identificador del elemento.  <br/> |
-|ChangeKey  <br/> |El valor de texto del atributo **changekey** es la clave de cambio del elemento.  <br/> |
+|Id  <br/> |El valor de texto del **atributo Id** es el identificador del elemento.  <br/> |
+|ChangeKey  <br/> |El valor de texto del **atributo ChangeKey** es la clave de cambio del elemento.  <br/> |
    
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -54,8 +54,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

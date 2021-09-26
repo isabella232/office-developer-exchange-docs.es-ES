@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - EventDescription
 api_type:
 - schema
 ms.assetid: 7642cb03-71b1-4773-9508-4fbe3a5dcdf4
-description: El elemento EventDescription
-ms.openlocfilehash: 5f61a4eea945193d672afbcd2c693502ccf3e4e1
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: Elemento EventDescription
+ms.openlocfilehash: 324bf763575c551d594873052c37335de63325e0
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530638"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546556"
 ---
 # <a name="eventdescription"></a>EventDescription
 
-El elemento **EventDescription** 
+Elemento **EventDescription** 
   
 ```xml
 <EventDescription/>
@@ -48,7 +48,7 @@ Ninguna.
    
 ## <a name="text-value"></a>Valor de texto
 
-En la siguiente tabla se enumeran los valores posibles para el elemento **EventDescription** . 
+En la tabla siguiente se enumeran los valores posibles para **el elemento EventDescription.** 
   
 **Valores del elemento EventDescription**
 
@@ -57,7 +57,7 @@ En la siguiente tabla se enumeran los valores posibles para el elemento **EventD
 |Submitted  <br/> ||
 |Resuelto  <br/> ||
 |Expanded  <br/> ||
-|Pronuncia  <br/> ||
+|Entregado  <br/> ||
 |MovedToFolderByInboxRule  <br/> ||
 |RulesCc  <br/> ||
 |FailedGeneral  <br/> ||
@@ -68,7 +68,7 @@ En la siguiente tabla se enumeran los valores posibles para el elemento **EventD
 |SmtpSendCrossForest  <br/> ||
 |SmtpReceive  <br/> ||
 |Reenviado  <br/> ||
-|Pending  <br/> ||
+|Pendiente  <br/> ||
 |PendingModeration  <br/> ||
 |ApprovedModeration  <br/> ||
 |QueueRetry  <br/> ||
@@ -79,11 +79,11 @@ En la siguiente tabla se enumeran los valores posibles para el elemento **EventD
 |TransferredToLegacyExchangeServer  <br/> ||
 |DelayedAfterTransferToPartnerOrg  <br/> ||
 |Read  <br/> ||
-|Nohuella  <br/> ||
+|NotRead  <br/> ||
    
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta Microsoft Exchange Server que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -91,12 +91,12 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

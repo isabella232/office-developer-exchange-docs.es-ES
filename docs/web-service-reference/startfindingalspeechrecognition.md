@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fcbc9f67-a211-4a6a-b816-0a9b0a81a283
-description: El elemento StartFindInGALSpeechRecognition está destinado sólo para uso interno.
-ms.openlocfilehash: 2ed598516aa49f10ccc20964577f5929aaf6af5a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento StartFindInGALSpeechRecognition está diseñado únicamente para uso interno.
+ms.openlocfilehash: 434ec02d6a5689964a12c6a3c79e4f333188a666
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44530313"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546955"
 ---
 # <a name="startfindingalspeechrecognition"></a>StartFindInGALSpeechRecognition
 
-El elemento **StartFindInGALSpeechRecognition** está destinado sólo para uso interno. 
+El **elemento StartFindInGALSpeechRecognition** está diseñado únicamente para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,11 +25,11 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
@@ -46,8 +46,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
-|Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de mensajes  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

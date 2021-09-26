@@ -4,27 +4,27 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - schema
 ms.assetid: 758d965c-ef63-4de4-9120-e293abf14ff8
 description: La operación GetUserSettings contiene una consulta para la configuración de acceso de cliente de los usuarios.
-ms.openlocfilehash: e274fd4e1ca954ea25ea91a52e363c9a434b290a
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: 79e9d5827cbcc4885c99cf5a497868284dda4494
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466146"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547410"
 ---
 # <a name="getusersettings-operation-soap"></a>Operación GetUserSettings (SOAP)
 
-La operación **GetUserSettings** contiene una consulta para la configuración de acceso de cliente de los usuarios. 
+La **operación GetUserSettings** contiene una consulta para la configuración de acceso de cliente de los usuarios. 
   
 ## <a name="getusersettings-request-example"></a>Ejemplo de solicitud GetUserSettings
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de XML muestra un cuerpo de solicitud de detección automática que solicita el nombre para mostrar, el nombre distintivo, el identificador de implementación, el servidor de buzones, el nombre distintivo de buzón, el servidor de Active Directory, la versión del servidor de acceso de cliente y los esquemas de servicios Web de Exchange admitidos del usuario.
+En el siguiente ejemplo XML se muestra un cuerpo de solicitud de detección automática que solicita el nombre para mostrar, el nombre distintivo, el identificador de implementación, el servidor de buzones de correo, el nombre distintivo del buzón, el servidor de Active Directory, la versión del servidor de acceso de cliente y los esquemas de servicios web Exchange compatibles.
   
 ### <a name="code"></a>Código
 
@@ -64,25 +64,25 @@ El siguiente ejemplo de XML muestra un cuerpo de solicitud de detección automá
 
 ```
 
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
 Los siguientes elementos se usan en el cuerpo de la solicitud:
   
 - [GetUserSettingsRequestMessage (SOAP)](getusersettingsrequestmessage-soap.md)
     
-- [Buzón de correo (SOAP)](mailbox-soap.md)
+- [Mailbox (SOAP)](mailbox-soap.md)
     
-- [Solicitud (SOAP)](request-soap.md)
+- [Request (SOAP)](request-soap.md)
     
 - [RequestedServerVersion (SOAP)](requestedserverversion-soap.md)
     
 - [RequestedSettings (SOAP)](requestedsettings-soap.md)
     
-- [Configuración (SOAP)](setting-soap.md)
+- [Setting (SOAP)](setting-soap.md)
     
-- [Usuario (SOAP)](user-soap.md)
+- [User (SOAP)](user-soap.md)
     
-- [Usuarios (SOAP)](users-soap.md)
+- [Users (SOAP)](users-soap.md)
     
 ## <a name="getusersettings-response-example"></a>Ejemplo de respuesta GetUserSettings
 
@@ -164,7 +164,7 @@ Los siguientes elementos se usan en el cuerpo de la respuesta:
     
 - [RedirectTarget (SOAP)](redirecttarget-soap.md)
     
-- [Respuesta (SOAP)](response-soap.md)
+- [Response (SOAP)](response-soap.md)
     
 - [UserResponse (SOAP)](userresponse-soap.md)
     
@@ -176,9 +176,9 @@ Los siguientes elementos se usan en el cuerpo de la respuesta:
     
 - [UserSettings (SOAP)](usersettings-soap.md)
     
-- [Valor (SOAP)](value-soap.md)
+- [Value (SOAP)](value-soap.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 
@@ -187,5 +187,5 @@ Los siguientes elementos se usan en el cuerpo de la respuesta:
 [Operación GetFederationInformation (SOAP)](getfederationinformation-operation-soap.md)
 
 
-[Elementos XML de detección automática de SOAP para Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
+[Elementos XML de detección automática soap para Exchange 2013](soap-autodiscover-xml-elements-for-exchange-2013.md)
 

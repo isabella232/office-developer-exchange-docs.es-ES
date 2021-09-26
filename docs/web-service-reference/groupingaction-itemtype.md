@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 655175bd-8a3b-4dfc-8881-84e4927c1df1
-description: El elemento GroupingAction (ItemType) solo está destinado a uso interno.
-ms.openlocfilehash: a442800f98ca3f7691d801d33e5d28d706a34b26
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento GroupingAction (ItemType) está diseñado solo para uso interno.
+ms.openlocfilehash: af05c5cdf8817451b89896589b93107ab2a2a0a5
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460480"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547326"
 ---
 # <a name="groupingaction-itemtype"></a>GroupingAction (ItemType)
 
-El elemento **GroupingAction (ItemType)** solo está destinado a uso interno. 
+El **elemento GroupingAction (ItemType)** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,7 +25,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 

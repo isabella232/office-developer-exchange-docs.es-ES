@@ -5,19 +5,19 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 18f8c676-0fc0-49ff-9a90-5fd43e7e7e39
-description: El elemento DisplayNameFirstLastSortKey contiene la clave de ordenación para un nombre para mostrar en el nombre, el orden de los apellidos.
-ms.openlocfilehash: 1cc0241f5e2d0b0d02bc14011e770c95bdc1d6e8
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento DisplayNameFirstLastSortKey contiene la clave de ordenación de un nombre para mostrar en nombre y apellidos.
+ms.openlocfilehash: 94528e72af8b5f4a978ee0bcf2564b250d6195b7
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456209"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546633"
 ---
 # <a name="displaynamefirstlastsortkey"></a>DisplayNameFirstLastSortKey
 
-El elemento **DisplayNameFirstLastSortKey** contiene la clave de ordenación para un nombre para mostrar en el nombre, el orden de los apellidos. 
+El **elemento DisplayNameFirstLastSortKey** contiene la clave de ordenación de un nombre para mostrar en nombre y apellidos. 
   
 ```XML
 <DisplayNameFirstLastSortKey></DisplayNameFirstLastSortKey>
@@ -42,7 +42,7 @@ Ninguna.
   
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento **DisplayNameFirstLastSortKey** es la clave de ordenación para el nombre para mostrar de un rol, en el nombre, el orden de los apellidos. 
+El valor de texto del **elemento DisplayNameFirstLastSortKey** es la clave de ordenación del nombre para mostrar de una persona, en nombre y apellidos. 
   
 ## <a name="remarks"></a>Comentarios
 
@@ -55,8 +55,8 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |||
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
-|Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Nombre del esquema  <br/> |Esquema de tipos  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
 

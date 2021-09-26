@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - SetUserOofSettingsRequest
 api_type:
 - schema
 ms.assetid: 628acf0b-3ebc-42f1-8ce2-7a02b4c8141f
-description: El elemento SetUserOofSettingsRequest contiene los argumentos usados para establecer la configuración de fuera de la oficina (OOF) de un usuario de buzón.
-ms.openlocfilehash: 10edc9809fd72f80c316de1c6688eaedec4f93df
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento SetUserOofSettingsRequest contiene los argumentos usados para establecer la configuración fuera de Office (OOF) de un usuario de buzón.
+ms.openlocfilehash: c6df61eb89e32e7d9b50a8d6ee2918d7283ce4cb
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44466153"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547081"
 ---
 # <a name="setuseroofsettingsrequest"></a>SetUserOofSettingsRequest
 
-El elemento **SetUserOofSettingsRequest** contiene los argumentos usados para establecer la configuración de fuera de la oficina (OOF) de un usuario de buzón. 
+El **elemento SetUserOofSettingsRequest** contiene los argumentos usados para establecer la configuración fuera de Office (OOF) de un usuario de buzón. 
   
 ```xml
 <SetUserOofSettingsRequest>
@@ -43,7 +43,7 @@ Ninguna.
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[Buzón de correo (disponibilidad)](mailbox-availability.md) <br/> |Identifica al usuario del buzón de correo para una solicitud de SetUserOofSettings o GetUserOofSettings.  <br/> |
+|[Mailbox (Availability)](mailbox-availability.md) <br/> |Identifica al usuario del buzón para una solicitud SetUserOofSettings o GetUserOofSettings.  <br/> |
 |[UserOofSettings](useroofsettings.md) <br/> |Especifica la configuración de OOF.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
@@ -52,11 +52,11 @@ Ninguno.
   
 ## <a name="remarks"></a>Comentarios
 
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="example"></a>Ejemplo
 
-El siguiente ejemplo de una solicitud SetUserOofSettings establece un valor OOF para diez días.
+En el siguiente ejemplo de una solicitud SetUserOofSettings se establece una configuración de OOF durante diez días.
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -93,10 +93,10 @@ El siguiente ejemplo de una solicitud SetUserOofSettings establece un valor OOF 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
-|Archivo de validación  <br/> |Messages. xsd  <br/> |
+|Archivo de validación  <br/> |Messages.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 

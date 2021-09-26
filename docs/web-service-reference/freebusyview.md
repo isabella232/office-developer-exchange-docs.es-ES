@@ -5,23 +5,23 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FreeBusyView
 api_type:
 - schema
 ms.assetid: cb18434f-5f41-4e05-a5ce-d921b2721a8c
-description: El elemento FreeBusyView contiene información de disponibilidad de un usuario específico.
-ms.openlocfilehash: e5cc3bea6b57d5c400dd9be44bf9f9aaf9e43eb9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento FreeBusyView contiene información de disponibilidad para un usuario específico.
+ms.openlocfilehash: c662e8a44118f61b4c8be642d9ac862051c3a15d
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44456104"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546416"
 ---
 # <a name="freebusyview"></a>FreeBusyView
 
-El elemento **FreeBusyView** contiene información de disponibilidad de un usuario específico. 
+El **elemento FreeBusyView** contiene información de disponibilidad para un usuario específico. 
   
 [GetUserAvailabilityResponse](getuseravailabilityresponse.md)
   
@@ -47,7 +47,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
@@ -55,20 +55,20 @@ Ninguna.
 |:-----|:-----|
 |[FreeBusyViewType](freebusyviewtype.md) <br/> |Representa el tipo de información de disponibilidad solicitada devuelta en la respuesta.  <br/> |
 |[MergedFreeBusy](mergedfreebusy.md) <br/> |Contiene la secuencia de datos de disponibilidad combinada.  <br/> |
-|[CalendarEventArray](calendareventarray.md) <br/> |Contiene un conjunto de ocurrencias de elemento de calendario únicas que representan la disponibilidad del usuario solicitado.  <br/> |
-|[WorkingHours](workinghours-ex15websvcsotherref.md) <br/> |Representa la configuración de la zona horaria y el horario laboral del usuario del buzón solicitado.  <br/> |
+|[CalendarEventArray](calendareventarray.md) <br/> |Contiene un conjunto de repeticiones de elementos de calendario únicos que representan la disponibilidad del usuario solicitado.  <br/> |
+|[WorkingHours](workinghours-ex15websvcsotherref.md) <br/> |Representa la configuración de zona horaria y el horario laboral del usuario del buzón solicitado.  <br/> |
    
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[FreeBusyResponse](freebusyresponse.md) <br/> |Contiene la información de disponibilidad de un único usuario de buzón de correo.  <br/> La siguiente es la expresión XPath a este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse` <br/> |
+|[FreeBusyResponse](freebusyresponse.md) <br/> |Contiene la información de disponibilidad de un único usuario de buzón.  <br/> A continuación se muestra la expresión XPath de este elemento:  <br/>  `/GetUserAvailabilityResponse/FreeBusyResponseArray/FreeBusyResponse` <br/> |
    
 ## <a name="remarks"></a>Comentarios
 
-Todos los elementos secundarios se enumeran en la secuencia en que se producen. El nivel de detalle proporcionado por este elemento depende de los permisos concedidos al solicitante.
+Todos los elementos secundarios se enumeran en la secuencia en la que se producen. El nivel de detalle proporcionado por este elemento depende de los permisos concedidos al solicitante.
   
-El esquema que describe este elemento se encuentra en el directorio virtual de EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor acceso de clientes.
+El esquema que describe este elemento se encuentra en el directorio virtual EWS del equipo que ejecuta MicrosoftExchange Server 2007 que tiene instalado el rol de servidor Acceso de cliente.
   
 ## <a name="element-information"></a>Información del elemento
 
@@ -76,10 +76,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual de E
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipos  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |Types.xsd  <br/> |
 |Puede estar vacío  <br/> |Falso  <br/> |
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 
 

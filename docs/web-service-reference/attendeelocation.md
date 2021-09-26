@@ -5,25 +5,25 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1344a087-88ea-472a-bebf-9b45245592fb
 description: El elemento AttendeeLocation especifica la ubicación de un asistente para un elemento de calendario.
-ms.openlocfilehash: 34a4ee8ea5f4c59cce6eebd8977bd4733f7c7134
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: a6b1da631b6f26a24f6a908f63e1292d8f95984f
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44460347"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547557"
 ---
 # <a name="attendeelocation"></a>AttendeeLocation
 
-El elemento **AttendeeLocation** especifica la ubicación de un asistente para un elemento de calendario. 
+El **elemento AttendeeLocation** especifica la ubicación de un asistente para un elemento de calendario. 
   
 ```XML
 <AttendeeLocation></AttendeeLocation>
 ```
 
- **XS: String**
+ **xs:string**
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
 En las siguientes secciones se describen los atributos, elementos secundarios y elementos primarios.
@@ -44,7 +44,7 @@ Ninguna.
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto del elemento AttendeeLocation es la ubicación de asistente.
+El valor de texto del elemento AttendeeLocation es la ubicación del asistente.
   
 ## <a name="remarks"></a>Comentarios
 
@@ -58,10 +58,10 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |:-----|:-----|
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/types  <br/> |
 |Nombre de esquema  <br/> |Esquema de tipo  <br/> |
-|Archivo de validación  <br/> |Types. xsd  <br/> |
+|Archivo de validación  <br/> |types.xsd  <br/> |
 |Puede estar vacío  <br/> ||
    
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Elementos XML de EWS en Exchange](ews-xml-elements-in-exchange.md)
+- [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 

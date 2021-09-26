@@ -5,25 +5,25 @@ ms.date: 4/18/2016
 ms.audience: ITPro
 ms.topic: article
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 00e40197-5794-4268-b937-bd65aa044890
 description: La operación AddEntityFeedback devuelve información de error correspondiente a problemas del lado servidor.
-ms.openlocfilehash: a1027a0a1ee06cf3e83833b1d84c13d77b07c0b9
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+ms.openlocfilehash: d4322bcc075c8c68b1f3d5f2ae22badea02be452
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44458442"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546829"
 ---
 # <a name="addentityfeedback-operation"></a>Operación AddEntityFeedback
 
-La operación **AddEntityFeedback** devuelve información de error correspondiente a problemas del lado servidor. 
+La **operación AddEntityFeedback** devuelve información de error correspondiente a problemas del lado servidor. 
   
-Esta operación depende del tipo de evento que se está registrando. Uno de los eventos más importantes es **EntityAdded**, que corresponde a una entidad seleccionada. Esta operación es un lote, por lo que se puede usar para registrar lotes de entradas en una sola solicitud. 
+Esta operación se basa en el tipo de evento que se está registrando. Uno de los eventos más importantes es **EntityAdded**, que corresponde a una entidad que se está seleccionando. Esta operación es por lotes, por lo que se puede usar para registrar lotes de entradas en una sola solicitud. 
   
-## <a name="findpeople-request-examples"></a>Ejemplos de solicitudes de FindPeople
+## <a name="findpeople-request-examples"></a>Ejemplos de solicitud FindPeople
 
-La operación **AddEntityFeedback** proporciona un medio para que los clientes registren detalles de interacción con entidades devueltas por el servicio. Esto puede usarse como una señal para mejorar la relevancia en segundo plano para cada cliente. Por ejemplo, los clientes pueden usar esta operación para enviar comentarios sobre entidades de personas devueltas desde **FindPeople**.
+La **operación AddEntityFeedback** proporciona una forma de que los clientes registren detalles de interacción con entidades devueltas por el servicio. Esto puede usarse como señal para mejorar la relevancia entre bastidores de cada cliente. Por ejemplo, los clientes pueden usar esta operación para proporcionar comentarios sobre las entidades de personas devueltas desde **FindPeople**.
   
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -58,25 +58,25 @@ La operación **AddEntityFeedback** proporciona un medio para que los clientes r
 
 ```
 
-### <a name="the-request-soap-body-contents"></a>El contenido del cuerpo SOAP de la solicitud
+### <a name="the-request-soap-body-contents"></a>Contenido del cuerpo SOAP de la solicitud
 
-La solicitud SOAP contiene un elemento único **EntityFeedbackEntries**. Esto, a su vez, contiene una matriz de objetos **EntityFeedbackEntry** . Cada entrada de la matriz puede contener los siguientes elementos. 
+La solicitud soap contiene un único **elemento EntityFeedbackEntries**. Esto a su vez contiene una matriz **de objetos EntityFeedbackEntry.** Cada entrada de la matriz puede contener los siguientes elementos. 
   
 |**Parámetros de solicitud**|**Obligatorio**|**Descripción**|**Tipo**|
 |:-----|:-----|:-----|:-----|
-|**ClientEventTimeUtc** <br/> |Sí  <br/> |La hora UTC en que se produjo el evento en el lado cliente.  <br/> |DateTime  <br/> |
-|**ClientEventTimeLocal** <br/> |Sí  <br/> |La hora local en la que se produjo el evento en el lado cliente.  <br/> |DateTime  <br/> |
-|**ClientId** <br/> |Sí  <br/> |Tipo de cliente (por ejemplo, Outlook, OWA, etc.).  <br/> |Enumeración ClientIDType  <br/> |
-|**ClientSessionId** <br/> |Sí  <br/> |GUID que identifica el identificador de sesión. Se genera en el cliente.  <br/> |GUID  <br/> |
+|**ClientEventTimeUtc** <br/> |Sí  <br/> |Hora UTC en la que se produjo el evento en el lado cliente.  <br/> |DateTime  <br/> |
+|**ClientEventTimeLocal** <br/> |Sí  <br/> |Hora local en la que se produjo el evento en el lado cliente.  <br/> |DateTime  <br/> |
+|**ClientId** <br/> |Sí  <br/> |Tipo de cliente (por ejemplo, Outlook, OWA, etc.).  <br/> |ClientIDType (enumeración)  <br/> |
+|**ClientSessionId** <br/> |Sí  <br/> |GUID Que identifica el identificador de sesión. Se genera en el cliente.  <br/> |GUID  <br/> |
 |**ClientVersion** <br/> |Sí  <br/> |Versión del cliente (por ejemplo, 15.01.0101.000).  <br/> |Cadena  <br/> |
-|**EntityAddSource** <br/> |No  <br/> |Origen para EntityAded (por ejemplo, EntityRelevanceAPI, Types, pegados).  <br/> |Enumeración EntityAddSource  <br/> |
-|**EntrySequenceNumber** <br/> |Sí  <br/> |Entero incremental por sesión de cliente. Se usa para detectar la pérdida de datos.  <br/> |Int  <br/> |
-|**EventType** <br/> |Sí  <br/> |Tipo de evento (por ejemplo, entidad agregada, entidad eliminada).  <br/> |Cadena  <br/> |
-|**JSONPropertyBag** <br/> |No  <br/> |Propiedades adicionales asociadas con el evento (objeto binario JSON de pares clave-valor).  <br/> |BLOB de JSON  <br/> |
+|**EntityAddSource** <br/> |No  <br/> |Origen de EntityAded (por ejemplo, EntityRelevanceAPI, tipos, pegada).  <br/> |EntityAddSource (enumeración)  <br/> |
+|**EntrySequenceNumber** <br/> |Sí  <br/> |Un entero incremental por sesión de cliente. Se usa para detectar la pérdida de datos.  <br/> |Int  <br/> |
+|**EventType** <br/> |Sí  <br/> |Tipo de evento (por ejemplo, Entity Added, Entity Removed).  <br/> |Cadena  <br/> |
+|**JSONPropertyBag** <br/> |No  <br/> |Propiedades adicionales asociadas con el evento (blob JSON de pares clave/valor).  <br/> |JSON Blob  <br/> |
 |**TargetEntityList** <br/> |No  <br/> |Lista de entidades asociadas al evento.  <br/> |Cadena JSON  <br/> |
-|**TransactionId** <br/> |No  <br/> |IDENTIFICADOR (GUID) que correlaciona el identificador en los registros de consulta.  <br/> |Cadena  <br/> |
+|**TransactionId** <br/> |No  <br/> |Identificador (GUID) que correlaciona el identificador en los registros de consulta.  <br/> |Cadena  <br/> |
    
-### <a name="successful-addentityfeedback-operation-response"></a>Respuesta de operación AddEntityFeedback correcta
+### <a name="successful-addentityfeedback-operation-response"></a>Respuesta correcta de operación AddEntityFeedback
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -105,51 +105,51 @@ La solicitud SOAP contiene un elemento único **EntityFeedbackEntries**. Esto, a
 
 ```
 
-### <a name="the-response-soap-body-contains-the-following-elements"></a>El cuerpo SOAP de respuesta contiene los siguientes elementos
+### <a name="the-response-soap-body-contains-the-following-elements"></a>El cuerpo SOAP de la respuesta contiene los siguientes elementos
 
 #### <a name="errors"></a>Errores 
   
-La API puede registrar un lote de entradas de comentarios, se registra todo lo que podemos. Este campo representa el número de entradas de error que no se registraron.
+La API puede registrar un lote de entradas de comentarios, registramos todo lo que podemos. Este campo representa el número de entradas de error que no se registraron.
     
 #### <a name="errordetails"></a>ErrorDetails
   
-Detalles relativos a los errores anteriores separa por `;` .
+Los detalles relativos a los errores anteriores se separan por `;` .
     
-### <a name="currently-supported-values"></a>Valores actualmente admitidos
+### <a name="currently-supported-values"></a>Valores admitidos actualmente
 
-|**Enumeración ClientIdType**|
+|**ClientIdType (enumeración)**|
 |:-----|
-|Desktop  <br/> |
+|Escritorio  <br/> |
 |Exchange  <br/> |
 |IMAP4  <br/> |
-|2015  <br/> |
+|Lync  <br/> |
 |MacMail  <br/> |
 |MacOutlook  <br/> |
-|Mobile  <br/> |
-|Otros  <br/> |
+|Móvil  <br/> |
+|Otro  <br/> |
 |Outlook  <br/> |
 |OutlookService  <br/> |
 |POP3  <br/> |
 |Tablet  <br/> |
 |Web  <br/> |
    
-|**Enumeración EntityAddSource**|
+|**EntityAddSource (enumeración)**|
 |:-----|
-|Directory  <br/> |
+|ActiveDirectory  <br/> |
 |EntityRelevanceApi  <br/> |
 |EntityRelevanceApiCache  <br/> |
 |ExplicitTyping  <br/> |
 |LocalCache  <br/> |
 |LocalCacheAndEntityRelevanceAPI  <br/> |
 |Ninguno  <br/> |
-|Otros  <br/> |
+|Otro  <br/> |
 |Paste  <br/> |
    
-### <a name="addentityfeedback-operation-error-response"></a>Respuesta de error de operación de AddEntityFeedback
+### <a name="addentityfeedback-operation-error-response"></a>Respuesta de error de operación AddEntityFeedback
 
-Para los códigos de error que son genéricos para EWS, vea [ResponseCode](responsecode.md).
+Para obtener códigos de error genéricos para EWS, vea [ResponseCode](responsecode.md).
   
-### <a name="example-of-addentityfeedback-in-conjunction-with-findpeople"></a>Ejemplo de AddEntityFeedback en combinación con FindPeople
+### <a name="example-of-addentityfeedback-in-conjunction-with-findpeople"></a>Ejemplo de AddEntityFeedback junto con FindPeople
 
 #### <a name="findpeople-request"></a>Solicitud FindPeople
   
@@ -172,7 +172,7 @@ Para los códigos de error que son genéricos para EWS, vea [ResponseCode](respo
     
 ```
 
-#### <a name="findpeople-response"></a>Respuesta FindPeople
+#### <a name="findpeople-response"></a>Respuesta de FindPeople
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -235,7 +235,7 @@ Para los códigos de error que son genéricos para EWS, vea [ResponseCode](respo
 ```
 
 > [!NOTE]
-> Mediante FindPeople Response ID Transaction como el identificador de transacción de solicitud AddEntityFeedback. 
+> Usar el identificador de transacción de respuesta FindPeople como identificador de transacción de solicitud AddEntityFeedback. 
   
 #### <a name="addentityfeedback-response"></a>Respuesta AddEntityFeedback
 

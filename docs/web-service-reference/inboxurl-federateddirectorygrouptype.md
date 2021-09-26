@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fb2e8ad9-bcc9-4137-acbd-7b75a556e411
-description: El elemento InboxUrl (FederatedDirectoryGroupType) está destinado exclusivamente para uso interno.
-ms.openlocfilehash: 3030be5b4da798e58f696f23a8a22f296a3c638d
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento InboxUrl (FederatedDirectoryGroupType) está diseñado solo para uso interno.
+ms.openlocfilehash: 0e92d7dfae0d17fa8a198681d76e764fa9273f14
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44464864"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59547228"
 ---
 # <a name="inboxurl-federateddirectorygrouptype"></a>InboxUrl (FederatedDirectoryGroupType)
 
-El elemento **InboxUrl (FederatedDirectoryGroupType)** está destinado exclusivamente para uso interno. 
+El **elemento InboxUrl (FederatedDirectoryGroupType)** está diseñado solo para uso interno. 
 
 ## <a name="attributes-and-elements"></a>Atributos y elementos
 
@@ -25,7 +25,7 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 

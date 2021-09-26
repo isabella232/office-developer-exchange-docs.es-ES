@@ -5,33 +5,33 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - DeleteAttachment
 api_type:
 - schema
 ms.assetid: 4d48e595-b98c-48e7-bbeb-cacf91d12a78
-description: La operación DeleteAttachment se usa para eliminar archivos y datos adjuntos de un elemento existente en el almacén de Exchange.
-ms.openlocfilehash: 1d34ce4c5ba1d955989a35dafb8ab3c5d229d505
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: La operación DeleteAttachment se usa para eliminar datos adjuntos de archivos y elementos de un elemento existente en el Exchange almacén.
+ms.openlocfilehash: bd08776e1f4e75204819ef5463e297e3770a34a4
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44457336"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546689"
 ---
 # <a name="deleteattachment-operation"></a>Operación DeleteAttachment
 
-La operación DeleteAttachment se usa para eliminar archivos y datos adjuntos de un elemento existente en el almacén de Exchange.
+La operación DeleteAttachment se usa para eliminar datos adjuntos de archivos y elementos de un elemento existente en el Exchange almacén.
   
 ## <a name="remarks"></a>Comentarios
 
-Esta operación permite eliminar uno o más datos adjuntos por identificador.
+Esta operación permite eliminar uno o varios datos adjuntos por identificador.
   
 ## <a name="deleteattachment-request-example"></a>Ejemplo de solicitud DeleteAttachment
 
 ### <a name="description"></a>Description
 
-El siguiente ejemplo de una solicitud DeleteAttachment muestra cómo eliminar un elemento adjunto.
+En el siguiente ejemplo de una solicitud DeleteAttachment se muestra cómo eliminar los datos adjuntos de un elemento.
   
 ### <a name="code"></a>Código
 
@@ -54,15 +54,15 @@ El siguiente ejemplo de una solicitud DeleteAttachment muestra cómo eliminar un
 
 ### <a name="comments"></a>Comentarios
 
-El identificador de datos adjuntos se ha abreviado para preservar la legibilidad.
+El identificador de datos adjuntos se ha acortado para conservar la legibilidad.
   
-### <a name="request-elements"></a>Elementos de solicitud
+### <a name="request-elements"></a>Elementos Request
 
-Los siguientes elementos se usan en la solicitud:
+En la solicitud se usan los siguientes elementos:
   
 - [DeleteAttachment](deleteattachment.md)
     
-- [Identificadores](attachmentids.md)
+- [AttachmentIds](attachmentids.md)
     
 - [AttachmentId](attachmentid.md)
     
@@ -70,7 +70,7 @@ Los siguientes elementos se usan en la solicitud:
 
 ### <a name="description"></a>Description
 
-En el ejemplo siguiente se muestra una respuesta correcta a una solicitud DeleteAttachment.
+En el siguiente ejemplo se muestra una respuesta correcta a una solicitud DeleteAttachment.
   
 ### <a name="code"></a>Código
 
@@ -100,14 +100,14 @@ En el ejemplo siguiente se muestra una respuesta correcta a una solicitud Delete
 
 ### <a name="comments"></a>Comentarios
 
-La operación CreateAttachment devuelve un elemento de tipo AttachmentIdType que incluye un **RootItemId** y **RootItemChangeKey**. Estos atributos no se permiten para los identificadores dentro de una solicitud DeleteAttachment. DeleteAttachment usa elementos de tipo RequestAttachmentIdType, que no incluyen estos atributos.
+La operación CreateAttachment devuelve un elemento del tipo AttachmentIdType que incluye **rootitemid** y **rootitemchangekey**. Estos atributos no están permitidos para identificadores dentro de una solicitud DeleteAttachment. DeleteAttachment usa elementos del tipo RequestAttachmentIdType, que no incluye estos atributos.
   
 La respuesta DeleteAttachment incluye el identificador del elemento primario. Cuando se quitan datos adjuntos de un elemento, se modifica la clave de cambio del elemento. La nueva clave de cambio de elemento se puede obtener de la respuesta DeleteAttachment.
   
 > [!NOTE]
-> El identificador [RootItemId](rootitemid.md) y changekey se han abreviado para preservar la legibilidad. 
+> El [identificador RootItemId](rootitemid.md) y ChangeKey se han acortado para conservar la legibilidad. 
   
-### <a name="successful-response-elements"></a>Elementos Response correcto
+### <a name="successful-response-elements"></a>Elementos de respuesta correctos
 
 En la respuesta se usan los siguientes elementos:
   
@@ -123,7 +123,7 @@ En la respuesta se usan los siguientes elementos:
     
 - [RootItemId](rootitemid.md)
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Operación CreateAttachment](createattachment-operation.md) 
 - [Operación GetAttachment](getattachment-operation.md)

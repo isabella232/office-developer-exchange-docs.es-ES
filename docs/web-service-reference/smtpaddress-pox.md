@@ -4,25 +4,25 @@ manager: sethgros
 ms.date: 09/17/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 984ccd97-c337-47b6-ba42-3405a8b55a71
-description: El elemento SmtpAddress contiene la dirección SMTP asignada al almacén de mensajes de carpeta pública configurado para el usuario.
-ms.openlocfilehash: 48703a11fb056967c6c76073c2e928d5f6efa264
-ms.sourcegitcommit: 88ec988f2bb67c1866d06b361615f3674a24e795
+description: El elemento SmtpAddress contiene la dirección SMTP asignada al almacén de mensajes de carpetas públicas configurado para el usuario.
+ms.openlocfilehash: d257b193a3254afceaa72d396a8c2724bb3165c6
+ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44468645"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59546990"
 ---
 # <a name="smtpaddress-pox"></a>SmtpAddress (POX)
 
-El elemento **SmtpAddress** contiene la dirección SMTP asignada al almacén de mensajes de carpeta pública configurado para el usuario. 
+El **elemento SmtpAddress** contiene la dirección SMTP asignada al almacén de mensajes de carpetas públicas configurado para el usuario. 
   
-- [Detección automática (POX)](autodiscover-pox.md)
+- [AutoDiscover (POX)](autodiscover-pox.md)
   
-- [Respuesta (POX)](response-pox.md)
+- [Response (POX)](response-pox.md)
   
-- [Cuenta (POX)](account-pox.md)
+- [Account (POX)](account-pox.md)
   
 - [PublicFolderInformation (POX)](publicfolderinformation-pox.md)
   
@@ -38,27 +38,27 @@ En las siguientes secciones se describen los atributos, elementos secundarios y 
   
 ### <a name="attributes"></a>Atributos
 
-Ninguna.
+Ninguno.
   
 ### <a name="child-elements"></a>Elementos secundarios
 
-Ninguna.
+Ninguno.
   
 ### <a name="parent-elements"></a>Elementos principales
 
 |**Elemento**|**Descripción**|
 |:-----|:-----|
-|[PublicFolderInformation (POX)](publicfolderinformation-pox.md) <br/> |Contiene información que los clientes pueden usar para enviar una solicitud de detección automática para detectar la información de las carpetas públicas del usuario.  <br/> |
+|[PublicFolderInformation (POX)](publicfolderinformation-pox.md) <br/> |Contiene información que los clientes pueden usar para enviar una solicitud de detección automática para detectar información de carpetas públicas para el usuario.  <br/> |
    
 ## <a name="text-value"></a>Valor de texto
 
-El valor de texto representa la dirección SMTP asignada al almacén de carpetas públicas configurado para el usuario. Esta dirección SMTP puede usarse en el elemento [EmailAddress (POX)](emailaddress-pox.md) de una solicitud de detección automática para detectar la configuración de las carpetas públicas. 
+El valor de texto representa la dirección SMTP asignada al almacén de carpetas públicas configurado para el usuario. Esta dirección SMTP se puede usar en el elemento [EMailAddress (POX)](emailaddress-pox.md) de una solicitud de detección automática para detectar la configuración de carpetas públicas. 
   
 ## <a name="remarks"></a>Comentarios
 
-El elemento **SmtpAddress** es un elemento secundario necesario del elemento **PublicFolderInformation** . 
+El **elemento SmtpAddress** es un elemento secundario necesario del **elemento PublicFolderInformation.** 
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Elementos XML de detección automática de POX para Exchange](pox-autodiscover-xml-elements-for-exchange.md)
 
