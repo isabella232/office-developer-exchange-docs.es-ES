@@ -12,12 +12,12 @@ api_type:
 - schema
 ms.assetid: 4b84d670-74c9-4d6d-84e7-f0a9f76f0d93
 description: El elemento ResponseCode proporciona información de estado sobre la solicitud.
-ms.openlocfilehash: 9d662ee93870c2aabe045d801222deb881d0a28b
-ms.sourcegitcommit: 54f6cd5a704b36b76d110ee53a6d6c1c3e15f5a9
+ms.openlocfilehash: fc328ffde3a21add77ce6870a87bc7092f3f46ab
+ms.sourcegitcommit: f13a3a4a61fa23ca6414b7c96ddf087adbe3dc9e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59512390"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60262221"
 ---
 # <a name="responsecode"></a>ResponseCode
 
@@ -180,6 +180,7 @@ Si se usa este elemento, se requiere un valor de texto. En la tabla siguiente se
 |ErrorClientIntentInvalidStateDefinition  <br/> |Este error está diseñado solo para uso interno.  <br/> |
 |ErrorClientIntentNotFound  <br/> |Este error está diseñado solo para uso interno.  <br/> |
 |ErrorConnectionFailed  <br/> |Este error se produce cuando Exchange Web Services no se puede conectar al buzón.  <br/> |
+|ErrorConnectionFailedTransientError  <br/> |Este error se produce cuando Exchange Web Services no se puede conectar al buzón. Este código de error indica un error transitorio. Los clientes pueden volver a intentar conectarse al servidor cuando se recibe este error. <br/> |
 |ErrorContainsFilterWrongType  <br/> |Este error indica que la propiedad que se ha inspeccionado para un filtro Contains no es un tipo de cadena.  <br/> |
 |ErrorContentConversionFailed  <br/> |La **operación GetItem** devuelve este error cuando Exchange Web Services no puede recuperar el contenido MIME del elemento solicitado. <br/><br/>La **operación CreateItem** devuelve este error cuando Exchange Web Services no puede crear el elemento a partir del contenido MIME proporcionado. Por lo general, esto indica que la propiedad item está dañada o truncada.  <br/> |
 |ErrorContentIndexingNotEnabled  <br/> |Este error se produce cuando se realiza una solicitud de búsqueda mediante la opción QueryString y la indización de contenido no está habilitada para el buzón de destino.  <br/> |
@@ -599,9 +600,9 @@ El esquema que describe este elemento se encuentra en el directorio virtual IIS 
 |Namespace  <br/> |https://schemas.microsoft.com/exchange/services/2006/messages  <br/> |
 |Nombre de esquema  <br/> |Esquema de mensajes  <br/> |
 |Archivo de validación  <br/> |Messages.xsd  <br/> |
-|Puede estar vacío  <br/> |Falso  <br/> |
+|Puede estar vacío  <br/> |False  <br/> |
    
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Elementos XML ews en Exchange](ews-xml-elements-in-exchange.md)
 
